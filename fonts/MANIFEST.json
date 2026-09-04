@@ -1,0 +1,16 @@
+[
+  {
+    "file": "fonts\\NotoSerifDevanagari.ttf",
+    "source_repo": "https://github.com/google/fonts",
+    "source_git_blob": "3d90da279fe70b5017d9b51f58772f0c9ea4146e",
+    "bytes": 757692,
+    "sha256": "1191e07bfeb062d80e252eb85b0eafdfbda1e350707a2a60628668e8f677dbbb"
+  },
+  {
+    "file": "fonts\\OFL.txt",
+    "source_repo": "https://github.com/google/fonts",
+    "source_git_blob": "cd2cc5c94b4151933eba6ee508e3975274d6fa07",
+    "bytes": 4386,
+    "sha256": "a216f6f8d85c7228093e0ee5e258d9d377e6671f68acb4db1930b29583d0f331"
+  }
+]

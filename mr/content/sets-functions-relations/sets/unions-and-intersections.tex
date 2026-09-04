@@ -1,0 +1,177 @@
+% Part: sets-functions-relations
+% Chapter: sets
+% Section: unions-and-intersections
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{set}{uni}
+\olsection{संयोग आणि छेद}
+
+\begin{explain}
+\olref[sfr][set][bas]{sec} मध्ये आपण गुणधर्मानुसार संचांची व्याख्या करणे,
+म्हणजे $\Setabs{x}{\phi(x)}$ या आकाराची व्याख्या करणे, पाहिले.
+येथे आपण एखादा $\phi$ गुणधर्म वापरतो; या गुणधर्मात आधीच व्याख्या केलेल्या
+संचांचा उल्लेख असू शकतो. उदाहरणार्थ, $A$ आणि $B$ हे संच असतील,
+तर $\Setabs{x}{x \in A \lor x \in B}$ या संचात $A$ किंवा $B$ मधील
+!!{element}s असणाऱ्या सर्व वस्तू येतात. म्हणजेच, $A$ आणि $B$ मधील
+!!{element}s एकत्र करणारा हा संच आहे. \olref{fig:union} मध्ये
+दाखवल्याप्रमाणे त्याचे चित्र काढता येते; ठळक केलेला भाग $A$ आणि $B$
+या दोन संचांतील !!{element}s एकत्र दर्शवतो.
+
+\begin{figure}
+  \olasset{assets/diagrams/union.tikz}
+  \caption{दोन संचांचा संयोग $A \cup B$ म्हणजे $A$ मधील आणि $B$ मधील
+    !!{element}s एकत्र घेऊन बनणारा संच.}
+  \ollabel{fig:union}
+\end{figure}
+
+संच एकत्र करणारी ही क्रिया अतिशय उपयुक्त आहे आणि वारंवार वापरली जाते.
+म्हणून तिला आपण आकारिक नाव आणि चिन्ह देतो.
+\end{explain}
+
+\begin{defn}[संयोग]
+$A$ आणि $B$ या दोन संचांचा \emph{संयोग} $A \cup B$ असा लिहितात.
+तो $A$, $B$ किंवा दोन्ही संचांतील !!{element}s असणाऱ्या सर्व वस्तूंचा संच आहे.
+\[
+A \cup B = \Setabs{x}{x \in A \lor x \in B}
+\]
+\end{defn}
+
+\begin{ex}
+तेच !!{element}s किती वेळा आले आहेत याला महत्त्व नसल्याने, दोन संचांत
+सामाईक !!a{element} असेल, तर त्यांच्या संयोगात तो !!{element} एकदाच येतो.
+उदाहरणार्थ, $\{ a, b, c\} \cup \{ a, 0, 1\} = \{a, b, c, 0, 1\}$.
+
+संच आणि त्याचा एखादा उपसंच यांचा संयोग म्हणजे मोठा संचच:
+$\{a,
+b, c \} \cup \{a \} = \{a, b, c\}$.
+
+संचाचा रिक्त संचाशी संयोग हा मूळ संचाशी समान असतो:
+$\{a,
+b, c \} \cup \emptyset = \{a, b, c \}$.
+\end{ex}
+
+\begin{prob}
+$A \subseteq B$ असेल, तर $A \cup B = B$ हे सिद्ध करा.
+\end{prob}
+
+\begin{explain}
+संयोगाच्या ``द्वैत'' क्रियेचाही विचार करता येतो. या क्रियेत असे सर्व
+!!{element}s घेतले जातात की जे $A$ मधील !!{element}s आणि
+$B$ मधीलही !!{element}s आहेत, आणि त्यांचा संच बनवला जातो.
+या क्रियेला \emph{छेद} म्हणतात. तिचे चित्र \olref{fig:intersection} प्रमाणे काढता येते.
+\begin{figure}
+  \olasset{assets/diagrams/intersection.tikz}
+  \caption{दोन संचांचा छेद $A \cap B$ म्हणजे त्यांतील सामाईक
+    !!{element}s यांचा संच.}
+  \ollabel{fig:intersection}
+\end{figure}
+\end{explain}
+
+\begin{defn}[छेद]
+$A$ आणि $B$ या दोन संचांचा \emph{छेद} $A \cap B$ असा लिहितात.
+तो $A$ आणि $B$ या दोन्ही संचांतील !!{element}s असणाऱ्या सर्व वस्तूंचा संच आहे.
+\[
+A \cap B = \Setabs{x}{x \in A \land x \in B}
+\]
+दोन संचांचा छेद रिक्त असेल, तर त्यांना \emph{विभक्त} म्हणतात.
+याचा अर्थ, त्यांच्यात सामाईक !!{element}s नसतात.
+\end{defn}
+
+\begin{ex}
+दोन संचांत सामाईक !!{element}s नसतील, तर त्यांचा छेद रिक्त असतो:
+$\{ a, b, c\} \cap \{ 0, 1\} = \emptyset$.
+
+दोन संचांत सामाईक !!{element}s असतील, तर त्यांचा छेद म्हणजे त्या सर्वांचा संच:
+$\{a, b, c \} \cap \{a, b, d \} = \{a, b\}$.
+
+संच आणि त्याचा एखादा उपसंच यांचा छेद म्हणजे लहान संचच:
+$\{a, b, c\} \cap \{a, b\} = \{a, b\}$.
+
+कोणत्याही संचाचा रिक्त संचाशी छेद रिक्त असतो:
+$\{a, b, c \}
+\cap \emptyset = \emptyset$.
+\end{ex}
+
+\begin{prob}
+$A \subseteq B$ असेल, तर $A \cap B = A$ हे काटेकोरपणे सिद्ध करा.
+\end{prob}
+
+\begin{explain}
+दोनपेक्षा अधिक संचांचा संयोग किंवा छेदही बनवता येतो.
+हे सर्वसाधारणपणे हाताळण्याची एक सुटसुटीत पद्धत पुढीलप्रमाणे आहे:
+ज्या सर्व संचांचा संयोग (किंवा छेद) करायचा आहे, ते सर्व एका संचात एकत्र केले आहेत असे समजा.
+मग या संचाच्या किमान एका !!{element} मध्ये असणाऱ्या सर्व वस्तूंचा संच
+म्हणजे मूळ सर्व संचांचा संयोग अशी व्याख्या करता येते.
+तसेच, या संचाच्या प्रत्येक !!{element} मध्ये असणाऱ्या सर्व वस्तूंचा संच
+म्हणजे त्यांचा छेद अशी व्याख्या करता येते.
+\end{explain}
+
+\begin{defn}
+$A$ हा संचांचा संच असेल, तर $\bigcup A$ म्हणजे $A$ मधील
+!!{element}s यांत असणाऱ्या !!{element}s यांचा संच:
+\begin{align*}
+\bigcup A & = \Setabs{x}{x \text{ ही पुढील संचाच्या एका !!a{element}ात असते: } A},
+\text{ म्हणजे,}\\
+& = \Setabs{x}{\text{असा } B \in A
+  \text{ असतो की } x \in B}
+\end{align*}
+\end{defn}
+
+\begin{defn}
+$A$ हा संचांचा संच असेल, तर $\bigcap A$ म्हणजे $A$ मधील सर्व घटकांत
+सामाईक असणाऱ्या वस्तूंचा संच:
+\begin{align*}
+\bigcap A & = \Setabs{x}{x \text{ ही पुढील संचाच्या प्रत्येक !!{element}ात असते: } A},
+\text{ म्हणजे,}\\
+ & = \Setabs{x}{\text{प्रत्येक } B \in A, x \in B}
+\end{align*}
+\end{defn}
+
+\begin{ex}
+$A = \{ \{ a, b \}, \{ a, d, e \}, \{ a, d \} \}$ असे समजा.
+मग $\bigcup A = \{ a, b, d, e \}$ आणि $\bigcap A = \{ a \}$.
+\end{ex}
+\begin{prob}
+	$A$ हा संच असेल आणि $A \in B$ असेल, तर $A \subseteq \bigcup B$ हे दाखवा.
+\end{prob}
+
+$A_1$, $A_2$, \dots या संचांच्या अनुक्रमासाठीही हेच करता येईल:
+\begin{align*}
+\bigcup_i A_i & = \Setabs{x}{x \text{ ही पुढीलपैकी एखाद्या संचात असते: } A_i}\\
+\bigcap_i A_i & = \Setabs{x}{x \text{ ही पुढील प्रत्येक संचात असते: } A_i}.
+\end{align*}
+
+संचांसाठी \emph{निर्देशांक संच} दिलेला असेल, म्हणजे एखादा $I$ संच असा असेल की,
+प्रत्येक $i \in I$ साठी आपण $A_i$ चा विचार करत असू, तर पुढील संक्षिप्त
+रूपेही वापरता येतात:
+\begin{align*}
+	\bigcup_{i \in I} A_i & = \bigcup \Setabs{A_i }{i \in I}\\
+	\bigcap_{i \in I} A_i & = \bigcap\Setabs{A_i}{i \in I}
+\end{align*}
+
+शेवटी, $A$ मध्ये असणारे पण $B$ मध्ये नसणारे सर्व !!{element}s यांच्या
+संचाचा विचार करायचा असू शकतो. त्याचे चित्र \olref{difference} प्रमाणे काढता येते.
+
+\begin{figure}
+  \olasset{assets/diagrams/difference.tikz}
+  \caption{दोन संचांचा फरक $A \setminus B$ म्हणजे $A$ मधील असे
+    !!{element}s की जे $B$ मधील !!{element}s नाहीत, यांचा संच.}
+  \ollabel{difference}
+\end{figure}
+
+\begin{defn}[फरक]
+\emph{संचांचा फरक} $A \setminus B$ म्हणजे $A$ मधील असे सर्व
+!!{element}s की जे $B$ मधील !!{element}s नाहीत, यांचा संच. म्हणजेच,
+\[
+A\setminus B = \Setabs{x}{x\in A \text{ आणि } x \notin B}.
+\]
+\end{defn}
+
+\begin{prob}
+	$A \subsetneq B$ असेल, तर $B \setminus A \neq \emptyset$ हे सिद्ध करा.
+\end{prob}
+
+\end{document}

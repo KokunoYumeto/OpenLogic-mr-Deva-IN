@@ -1,0 +1,2 @@
+90c42c97a132f68cc1ec3df78fae1c00c7fb298e62f8397ce9598d1d5c153f05  openlogic-mr-sets.pdf
+f221c6d26a657b3530a157860c812cd2c1e53f923057569130937c4a92b55ca2  openlogic-mr-sets-editable-sources.zip

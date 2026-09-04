@@ -1,0 +1,11 @@
+{
+  "schema": "openlogic-reproducibility/1",
+  "input_tex_sha256": "2280621f680ec04219487d1fde3c6103e813ca13dcf5ba13ea421f1ab797b968",
+  "source_date_epoch": "1788480000",
+  "first_run_receipt": "repo/build/sets/TEX_BUILD_20260904T150023105.json",
+  "replay_receipt": "repo/build/sets/TEX_SUCCESS_RECEIPT.json",
+  "pdf_bytes_each": 84751,
+  "pdf_sha256_each": "90c42c97a132f68cc1ec3df78fae1c00c7fb298e62f8397ce9598d1d5c153f05",
+  "identical_pdf_bytes": true,
+  "scope": "Repeated two-pass guarded build on this host using pinned inputs and fixed SOURCE_DATE_EPOCH; cross-platform byte identity not claimed."
+}
