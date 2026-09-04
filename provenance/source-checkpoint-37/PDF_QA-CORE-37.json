@@ -1,0 +1,87 @@
+{
+  "schema": "openlogic-pdf-qa/1",
+  "artifact": "build/core/openlogic-mr-core.pdf",
+  "scope": {
+    "translation_source_units": 37,
+    "reader_sections": 33,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0040",
+    "released": false
+  },
+  "build": {
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "tex_input_sha256": "fc45be204b3fbfa3e4a006f860b929ce71ca348b0a8a8882bb7f4e41024ef8f4",
+    "source_date_epoch": "1788480000",
+    "passes_per_build": 2,
+    "first_success_result": "built-log-clean",
+    "first_success_receipt": "TEX_BUILD_20260904T214547752.json",
+    "first_success_receipt_sha256": "30d2cdb699688c00d41678b114278da4e831603d1a5a8d9861e9d2160cd68975",
+    "first_success_final_log_sha256": "97de2c29998a98af4796ae6431bc27fdd4f207bc580158f7c591e1549090eb0e",
+    "second_success_result": "built-log-clean",
+    "second_success_receipt": "TEX_BUILD_20260904T214554778.json",
+    "second_success_receipt_sha256": "11d6f0ab25fe40611313464103dd8f28bbfaf237c39eee5be623dd118e435833",
+    "second_build_final_log_sha256": "97de2c29998a98af4796ae6431bc27fdd4f207bc580158f7c591e1549090eb0e",
+    "reproducible_pdf_bytes": true
+  },
+  "prepared_tex": {
+    "bytes": 299009,
+    "sha256": "fc45be204b3fbfa3e4a006f860b929ce71ca348b0a8a8882bb7f4e41024ef8f4",
+    "sections": 33,
+    "trailing_space_lines": 0,
+    "unresolved_token_or_reference_markers": 0
+  },
+  "pdf": {
+    "bytes": 297522,
+    "sha256": "a5f349b38e5e427f7c8dae4390566615077eca0b55915ba76fa5df362b24a045",
+    "pages": 52,
+    "page_size": "A4",
+    "encrypted": false,
+    "javascript": false,
+    "title": "मुक्त तर्कशास्त्र: संच, संबंध, फलने आणि संचांचे आकारमान",
+    "author": "Open Logic Project; Marathi machine translation by Codex"
+  },
+  "visual_review": {
+    "performed_utc": "2026-09-04T21:46:18.7658171Z",
+    "renderer": "Poppler pdftoppm",
+    "resolution_dpi": 96,
+    "all_pages_rendered": 52,
+    "all_pages_reviewed_in_contact_sheets": true,
+    "contact_sheets": 4,
+    "detail_pages_reviewed": [43, 44, 45, 46, 47, 48, 49, 50, 51, 52],
+    "new_sections_reviewed_at_readable_scale": true,
+    "tables_and_formula_layout": "passed",
+    "marathi_shaping": "passed",
+    "headings_headers_footers_and_page_numbers": "passed",
+    "source_correction_notes_and_references": "passed",
+    "clipping_overlap_black_boxes_or_unreadable_glyphs": 0,
+    "note": "A trailing-space-only prepared-TeX normalization produced identical PDF bytes, so the rendered-page review remains exact for the final PDF hash."
+  },
+  "font_review": {
+    "font_programs": 19,
+    "all_embedded": true,
+    "all_subset": true,
+    "marathi_fonts_have_unicode_maps": true,
+    "standard_computer_modern_symbol_fonts_without_unicode_maps": 2
+  },
+  "text_extraction": {
+    "tool": "Poppler pdftotext",
+    "utf8_bytes": 282518,
+    "characters": 124046,
+    "form_feeds": 52,
+    "replacement_characters": 0,
+    "unexpanded_glossary_tokens": 0,
+    "reader_note_literals": 0,
+    "todo_tbd_or_placeholder_hits": 0,
+    "rendered_source_correction_headings": 19,
+    "olsiz_008_mentions": 1,
+    "olsiz_009_mentions": 1,
+    "olsiz_010_mentions": 2,
+    "olsiz_011_retraction_mentions": 1
+  },
+  "accessibility": {
+    "pdf_tagged": false,
+    "development_reader_only": true,
+    "disposition": "Do not publish this development PDF as the final accessible edition. A useful accessible HTML companion remains required for the complete release."
+  },
+  "result": "passed_for_unreleased_cumulative_reader_checkpoint"
+}

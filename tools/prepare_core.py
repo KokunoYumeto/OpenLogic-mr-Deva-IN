@@ -4,7 +4,7 @@ from pathlib import Path
 P=Path(__file__).resolve().parents[1];B=P/'build/core';B.mkdir(parents=True,exist_ok=True)
 subprocess.run([sys.executable,str(P/'tools/prepare_foundations.py')],check=True,capture_output=True)
 base=(P/'build/foundations/openlogic-mr-foundations.tex').read_text(encoding='utf-8')
-base=base.replace('संच आणि संबंध','संच, संबंध, फलने आणि संचांचे आकारमान').replace('दोन संपूर्ण प्रकरणे','तीन संपूर्ण प्रकरणे आणि चौथ्या प्रकरणाचे दहा विभाग').replace('OLP-0019, एकूण 16 विभाग. उर्वरित 706','OLP-0037, एकूण 34 स्रोत-एकके आणि 30 वाचक-विभाग. उर्वरित 688')
+base=base.replace('संच आणि संबंध','संच, संबंध, फलने आणि संचांचे आकारमान').replace('दोन संपूर्ण प्रकरणे','चार संपूर्ण प्रकरणे').replace('OLP-0019, एकूण 16 विभाग. उर्वरित 706','OLP-0040, एकूण 37 स्रोत-एकके आणि 33 वाचक-विभाग. उर्वरित 685')
 extra=r'''\newcommand{\dom}[1]{\mathrm{dom}(#1)}
 \newtheorem{cor}[defn]{निष्कर्ष}
 \newcommand{\ran}[1]{\mathrm{ran}(#1)}
@@ -36,7 +36,8 @@ groups=[
     ]),
     ('संचांचे आकारमान','sfr:siz::chap',P/'mr/content/sets-functions-relations/size-of-sets',[
         'introduction','enumerability','zig-zag','pairing','pairing-alt','non-enumerability',
-        'reduction','equinumerous-sets','comparing-size','schroder-bernstein'
+        'reduction','equinumerous-sets','comparing-size','schroder-bernstein',
+        'enumerability-alt','non-enumerability-alt','reduction-alt'
     ]),
 ]
 raw=[]
@@ -46,7 +47,7 @@ available=set(re.findall(r'\\label\{([^}]+)\}',before))
 for t in raw:
     m=re.search(r'\\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}',t);prefix=':'.join(m.groups());available.add(prefix+':sec')
     available.update(prefix+':'+k for k in re.findall(r'\\ollabel\{([^}]+)\}',t))
-absent={'sth:choice::chap','sfr:siz:enm-alt:sec','sfr:siz:nen-alt:thm:nonenum-pownat','sfr:cardinals:card-sb:sec'};decisions=[]
+absent={'sth:choice::chap','sfr:cardinals:card-sb:sec','sfr:card-arithmetic:card-opps:sec'};decisions=[]
 def conditionals(t):
     while '\\oliflabeldef' in t:
         a=t.index('\\oliflabeldef');j=a+len('\\oliflabeldef');args=[]
@@ -63,6 +64,7 @@ def reader_note(value):
     return value.replace('_',r'\_')
 chunks=[]
 words={'element':'घटक','surjective':'आच्छादक','surjection':'आच्छादन','injective':'एकास-एक','injection':'एकास-एक फलन','bijective':'एकास-एक व आच्छादक','bijection':'एकास-एक आच्छादन','enumerable':'गणनीय','nonenumerable':'अगणनीय'}
+plural_words={'element':'घटक','surjection':'आच्छादक फलने','bijection':'एकास-एक आच्छादने'}
 raw_index=0
 for chapter,chapter_label,_,names in groups:
     chunks.append('\\chapter{'+chapter+'}\\label{'+chapter_label+'}')
@@ -87,14 +89,15 @@ for chapter,chapter_label,_,names in groups:
             return '\\ref{'+key+'}' if key in available else 'पर्यायी विभाग'
         t=re.sub(r'\\olref((?:\[[^]]*\])*)\{([^}]+)\}',ref,t)
         t=re.sub(r'\\cref\{([^}]+)\}',r'\\ref{\1}',t)
-        for key,word in words.items():t=re.sub(r'!!\^?a?\{'+key+r'\}s?',word,t)
+        for key,word in plural_words.items():t=re.sub(r'!!\^?a?\{'+key+r'\}s',word,t)
+        for key,word in words.items():t=re.sub(r'!!\^?a?\{'+key+r'\}',word,t)
         assert '!!' not in t and '\\oliflabeldef' not in t and '\\olref' not in t and '\\cref' not in t
         chunks.append(t)
 newnotes=r'''\item फलन प्रकरणातील OLFUN-001 ते OLFUN-005 या पाच
 गोठवलेल्या-स्रोत निष्कर्षांची दुरुस्ती संबंधित परिच्छेदांलगत स्वतंत्र
 ``स्रोतदुरुस्ती'' नोंदींमध्ये दिली आहे. मूळ इंग्रजी बाइट्स बदललेले नाहीत.
-\item संचांच्या आकारमानाच्या अपूर्ण प्रकरणातील OLSIZ-001 ते OLSIZ-007
-या सात सामायिक गोठवलेल्या-स्रोत निष्कर्षांची आणि MRSIZ-001 ते MRSIZ-004
+\item संचांच्या आकारमानाच्या प्रकरणातील OLSIZ-001 ते OLSIZ-010
+या दहा सामायिक गोठवलेल्या-स्रोत निष्कर्षांची आणि MRSIZ-001 ते MRSIZ-004
 या चार स्थानिक निरीक्षणांची नोंद संबंधित परिच्छेदांलगत दिली आहे. मूळ
 इंग्रजी बाइट्स बदललेले नाहीत.
 \item सामायिक OLSIZ-011 सूचना अचूक बाइट-पुनर्तपासणीनंतर चुकीची ठरून
@@ -115,11 +118,12 @@ Oxford University Press.
 '''
 notes=notes.replace(r'\end{document}',newreferences+r'\end{document}',1)
 out=before+'\n'.join(chunks)+'\n'+notes
-assert 'एकूण 34 स्रोत-एकके आणि 30 वाचक-विभाग' in out and out.count(r'\section{')==30
+out='\n'.join(line.rstrip() for line in out.splitlines())+'\n'
+assert 'एकूण 37 स्रोत-एकके आणि 33 वाचक-विभाग' in out and out.count(r'\section{')==33
 (B/'openlogic-mr-core.tex').write_text(out,encoding='utf-8',newline='\n')
 manifest=[json.loads(x) for x in (P/'provenance/SOURCE_MANIFEST.jsonl').read_text(encoding='utf-8').splitlines()]
 inputs=[]
-for r in manifest[3:37]:
+for r in manifest[3:40]:
     p=P/'mr'/r['source_path'];inputs.append({'unit_id':r['unit_id'],'path':p.relative_to(P).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
-(B/'INPUTS.json').write_text(json.dumps({'input_units':inputs,'scope':'34 source units, 30 reader sections, three complete chapters plus ten sections of Size of Sets','conditional_decisions':decisions,'source_issues':'Three Relations and five Functions notes; seven shared Size of Sets corrections and four Marathi-lane observations; one manager false positive retracted before application; aligned English source is unchanged','notation':'Function and cardinal-comparison macros copied from frozen upstream/open-logic-config.sty; composition applies first argument then second'},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print(json.dumps({'prepared':'build/core/openlogic-mr-core.tex','units':len(inputs),'sections':30,'sha256':hashlib.sha256(out.encode()).hexdigest()}))
+(B/'INPUTS.json').write_text(json.dumps({'input_units':inputs,'scope':'37 source units, 33 reader sections, four complete chapters','conditional_decisions':decisions,'source_issues':'Three Relations and five Functions notes; ten shared Size of Sets corrections and four Marathi-lane observations; one manager false positive retracted before application; aligned English source is unchanged','notation':'Function and cardinal-comparison macros copied from frozen upstream/open-logic-config.sty; composition applies first argument then second'},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print(json.dumps({'prepared':'build/core/openlogic-mr-core.tex','units':len(inputs),'sections':33,'sha256':hashlib.sha256(out.encode()).hexdigest()}))
