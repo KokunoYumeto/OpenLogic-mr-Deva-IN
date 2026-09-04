@@ -9,6 +9,6 @@
   "confirmed_three_backslash_runs": 5,
   "public_provenance_sha256": "54b4c2c5627e493cceeb4a82a3dbc28a826e27ddaa0a56699ab7ff8ea0688ac6",
   "source_issues_sha256": "030be40e3a061b27840f1e5cda4ad26307d209bf888b716a28bae344036fcd6d",
-  "qa_b004_sha256": "28213614b80ed124d7c8ea87cf9cb81d347cc633b87bc353f3280b247bc1da71",
-  "checkpoint_sha256": "66ab9b94583537f16db0a1c82814bcdf2c2c5693b251ad36a1251af1b037e710"
+  "qa_b004_sha256": "23fbe0345286923747aba9c5938f1674f6675b5f4b0cdf5421be085f7173ed86",
+  "checkpoint_sha256": "c9a39ab95e959494a214dd7c68b7e6332c6d5d854c7b7018384d929109c7678c"
 }
