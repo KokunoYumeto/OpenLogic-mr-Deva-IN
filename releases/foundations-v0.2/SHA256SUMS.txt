@@ -1,0 +1,3 @@
+56322181390cfbf164ce5b7a8431e30db7b6ae5ddf6100df13c8ab5464022754  openlogic-mr-foundations.pdf
+ae25b02bbb1a742ba0eec7d95a18164ebd354af14f9cad2ea597ee9ce7ace5fa  openlogic-mr-foundations-html.zip
+3480fdd18a164123474d92fea61b5b03ec96bbe85b020efcd2578b26798d5577  openlogic-mr-foundations-editable-sources.zip

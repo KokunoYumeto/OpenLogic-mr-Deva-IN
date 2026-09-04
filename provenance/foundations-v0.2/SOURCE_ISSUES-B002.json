@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-source-issues/1",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "policy": "Preserve frozen English and source-aligned Marathi notation; explain high-confidence source defects in a separate reader editorial note. Do not silently repair formulas.",
+  "issues": [
+    {
+      "id": "MR-SI001",
+      "unit_id": "OLP-0012",
+      "source_sha256": "2a67c6fb4846155e8e7cd8172fd1fb8214db96d508ceae5d70dec95d5dfcc1ff",
+      "locator": "Example relations; K=L union I and H=G union I",
+      "finding": "I is used without an explicit local assignment, after defining Id(A). The preceding diagonal discussion indicates that I means Id(Nat).",
+      "confidence": "high contextual interpretation",
+      "reader_note": "Explain I as the preceding diagonal identity relation, without replacing the source formula."
+    },
+    {
+      "id": "MR-SI002",
+      "unit_id": "OLP-0018",
+      "source_sha256": "a158f1ce5b84c8c3f681dd6347b22491d1b67a91e110138b9cb6833e3d9dc23c",
+      "locator": "Branches definition: z in X minus B",
+      "finding": "Ambient tree set was A; X has no definition here. Intended domain is A minus B.",
+      "confidence": "high local notation defect",
+      "reader_note": "Explain the likely intended A domain while preserving X in aligned source."
+    },
+    {
+      "id": "MR-SI003",
+      "unit_id": "OLP-0018",
+      "source_sha256": "a158f1ce5b84c8c3f681dd6347b22491d1b67a91e110138b9cb6833e3d9dc23c",
+      "locator": "Subtree example: every prefix-closed A subset Nat*",
+      "finding": "A rooted tree is required to have a unique least element, so the empty prefix-closed subset does not meet the earlier tree definition. This example requires nonempty A under that convention.",
+      "confidence": "high boundary case",
+      "reader_note": "State the nonempty qualification for consistency with the given rooted-tree definition."
+    }
+  ]
+}

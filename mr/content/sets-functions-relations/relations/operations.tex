@@ -1,0 +1,73 @@
+% Part: sets-functions-relations
+% Chapter: relations
+% Section: operations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{rel}{ops}
+\olsection{संबंधांवरील क्रिया}
+
+संबंधांत बदल करणे किंवा त्यांना एकत्र करणे अनेकदा उपयोगी पडते.
+\olref[sfr][rel][ord]{prop:stricttopartial} मध्ये आपण संबंधांचा
+\emph{संयोग} पाहिला; तो म्हणजे दोन संबंधांकडे जोड्यांचे संच म्हणून
+पाहिल्यावर त्यांचा संयोग. त्याचप्रमाणे,
+\olref[sfr][rel][ord]{prop:partialtostrict} मध्ये संबंधांचा सापेक्ष फरक
+पाहिला. संबंधांवर करता येणाऱ्या आणखी काही क्रिया पुढीलप्रमाणे आहेत.
+
+\begin{defn}\ollabel{relationoperations}
+$R$, $S$ हे संबंध आणि $A$ हा कोणताही संच असू द्या.
+
+$R$ चा \emph{व्युत्क्रम} म्हणजे $R^{-1} = \Setabs{\tuple{y, x}}{\tuple{x,
+    y} \in R}$.
+
+$R$ आणि $S$ यांचा \emph{सापेक्ष गुणाकार} म्हणजे $(R \mid S) =
+\{\tuple{x, z} : \exists y(Rxy \land Syz)\}$.
+
+$R$ चे $A$ वरील \emph{मर्यादन} म्हणजे $\funrestrictionto{R}{A}= R
+\cap A^2$.
+
+$R$ चा $A$ वर \emph{प्रयोग} म्हणजे $\funimage{R}{A} = \{y :
+(\exists x \in A)Rxy\}$
+\end{defn}
+
+\begin{ex}
+$S \subseteq \Int^2$ हा $\Int$ वरील उत्तरवर्ती संबंध असू द्या, म्हणजे
+$S = \Setabs{\tuple{x, y} \in \Int^2}{x + 1 = y}$; त्यामुळे $Sxy$
+तेव्हा आणि केवळ तेव्हाच, जेव्हा $x + 1 = y$.
+
+$S^{-1}$ हा $\Int$ वरील पूर्ववर्ती संबंध आहे, म्हणजे
+$\Setabs{\tuple{x,y}\in\Int^2}{x -1 =y}$.
+
+$S\mid S$ म्हणजे
+$ \Setabs{\tuple{x,y}\in\Int^2}{x + 2 =y}$
+
+$\funrestrictionto{S}{\Nat}$ हा $\Nat$ वरील उत्तरवर्ती संबंध आहे.
+
+$\funimage{S}{\{1,2,3\}}$ म्हणजे $\{2, 3, 4\}$.
+\end{ex}
+
+\begin{defn}[संक्रमक संवरण] $R \subseteq A^2$ हा द्विपदी संबंध असू द्या.
+
+$R$ चे \emph{संक्रमक संवरण} म्हणजे $R^+ = \bigcup_{0 < n \in
+\Nat} R^n$, जेथे $R^1 = R$ आणि $R^{n+1} = R^n \mid R$ अशी पुनरावर्ती
+व्याख्या करतो.
+
+$R$ चे \emph{परावर्ती संक्रमक संवरण} म्हणजे $R^* = R^+ \cup \Id{A}$.
+\end{defn}
+
+\begin{ex}
+$S \subseteq \Int^2$ हा उत्तरवर्ती संबंध घ्या. $S^2xy$ तेव्हा आणि केवळ
+तेव्हाच, जेव्हा $x + 2 = y$; $S^3xy$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$x + 3 = y$; इत्यादी. म्हणून $S^+xy$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+एखाद्या $n \geq 1$ साठी $x + n = y$. दुसऱ्या शब्दांत, $S^+xy$ तेव्हा
+आणि केवळ तेव्हाच, जेव्हा $x < y$; आणि $S^*xy$ तेव्हा आणि केवळ तेव्हाच,
+जेव्हा $x \le y$.
+\end{ex}
+
+\begin{prob}
+$R$ चे संक्रमक संवरण खरोखर संक्रमक आहे, हे दाखवा.
+\end{prob}
+
+\end{document}

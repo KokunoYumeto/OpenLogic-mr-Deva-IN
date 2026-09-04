@@ -1,7 +1,8 @@
-param([int]$SlotTimeoutMilliseconds = 1500)
+param([int]$SlotTimeoutMilliseconds = 1500, [ValidateSet('sets','foundations')][string]$Target='sets')
 $ErrorActionPreference = 'Stop'
 $repoPath = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
-$buildPath = [IO.Path]::GetFullPath((Join-Path $repoPath 'build\sets'))
+$buildPath = [IO.Path]::GetFullPath((Join-Path $repoPath ('build\'+$Target)))
+$documentName = 'openlogic-mr-'+$Target
 if (-not $buildPath.StartsWith($repoPath + [IO.Path]::DirectorySeparatorChar)) { throw 'Build path outside edition' }
 $receiptPath = Join-Path $buildPath 'TEX_BUILD_RECEIPT.json'
 $receiptHistory = Join-Path $buildPath ('TEX_BUILD_' + [DateTime]::UtcNow.ToString('yyyyMMddTHHmmssfff') + '.json')
@@ -56,21 +57,21 @@ try {
   try { $held = $mutex.WaitOne($SlotTimeoutMilliseconds) } catch [Threading.AbandonedMutexException] { $held=$true; $receipt.abandonedRecovery=$true }
   if (-not $held) { $receipt.result='slot-occupied'; return }
   $receipt.acquired=$true
-  $receipt['texInputSha256']=(Get-FileHash -LiteralPath (Join-Path $buildPath 'openlogic-mr-sets.tex') -Algorithm SHA256).Hash.ToLower()
+  $receipt['texInputSha256']=(Get-FileHash -LiteralPath (Join-Path $buildPath ($documentName+'.tex')) -Algorithm SHA256).Hash.ToLower()
   $env:SOURCE_DATE_EPOCH='1788480000'
   $receipt['sourceDateEpoch']='1788480000'
   $engine = (Get-Command xelatex.exe -ErrorAction Stop).Source
   for ($pass=1; $pass -le 2; $pass++) {
-    $code=[EditionTexTree]::Run($engine,'-no-shell-escape -interaction=nonstopmode -halt-on-error -file-line-error openlogic-mr-sets.tex',$buildPath,240000)
-    $logPath=Join-Path $buildPath 'openlogic-mr-sets.log'
+    $code=[EditionTexTree]::Run($engine,('-no-shell-escape -interaction=nonstopmode -halt-on-error -file-line-error '+$documentName+'.tex'),$buildPath,240000)
+    $logPath=Join-Path $buildPath ($documentName+'.log')
     $log=if(Test-Path -LiteralPath $logPath){Get-Content -LiteralPath $logPath -Raw}else{''}
     $receipt.passes+=@{pass=$pass;exitCode=$code;logSha256=if($log){(Get-FileHash -LiteralPath $logPath -Algorithm SHA256).Hash.ToLower()}else{$null}}
     if ($code -ne 0) { $receipt.result='tex-failed'; Write-Output (($log -split "`n" | Select-Object -Last 24) -join "`n"); return }
   }
   $warnings=@($log -split "`n" | Where-Object { $_ -match 'Missing character|Overfull|undefined references|Undefined control sequence|LaTeX Error' })
   $receipt['warnings']=$warnings
-  $pdf=Join-Path $buildPath 'openlogic-mr-sets.pdf'
-  $receipt['pdf']=@{name='openlogic-mr-sets.pdf';bytes=(Get-Item -LiteralPath $pdf).Length;sha256=(Get-FileHash -LiteralPath $pdf -Algorithm SHA256).Hash.ToLower()}
+  $pdf=Join-Path $buildPath ($documentName+'.pdf')
+  $receipt['pdf']=@{name=($documentName+'.pdf');bytes=(Get-Item -LiteralPath $pdf).Length;sha256=(Get-FileHash -LiteralPath $pdf -Algorithm SHA256).Hash.ToLower()}
   $receipt.result=if($warnings.Count){'built-with-defects'}else{'built-log-clean'}
 } finally {
   $receipt | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath $receiptPath -Encoding utf8

@@ -1,0 +1,85 @@
+{
+  "schema": "openlogic-html-build/1",
+  "source_tex_sha256": "6744d3bc3d3b8692288b28701e62b3cf1e9aeeaa8d66690edfdf9d6bc7e2df6f",
+  "source_pdf_sha256": "56322181390cfbf164ce5b7a8431e30db7b6ae5ddf6100df13c8ab5464022754",
+  "html_sha256": "67b29e68a3dae1c5abc9af3b63dcb5e39457306720eb848c21d245f01aec6cae",
+  "html_bytes": 336194,
+  "diagram_assets": [
+    {
+      "filename": "assets/union.svg",
+      "sha256": "19679f571bc4203ccf82eaa04746a8db0ecae6306d95a30bd4473306852c15e7",
+      "source_pdf_page": 7,
+      "source_pdf_crop": [
+        176,
+        131,
+        417,
+        328
+      ],
+      "alt": "दोन्ही संचांतील सर्व घटकांचा संयोग; दोन्ही आकृत्यांचा संपूर्ण भाग चिन्हांकित."
+    },
+    {
+      "filename": "assets/intersection.svg",
+      "sha256": "f362bfc3ccf2f4c341e492637b17291d3de920c5d4c839cdea99ef08e0b74f28",
+      "source_pdf_page": 7,
+      "source_pdf_crop": [
+        176,
+        485,
+        417,
+        682
+      ],
+      "alt": "दोन्ही संचांचा छेद; फक्त सामाईक भाग चिन्हांकित."
+    },
+    {
+      "filename": "assets/difference.svg",
+      "sha256": "3af89dd5bc0878d15b1fe24abcf0fbd255b7aee97e8b7e6db794d6610bf6bee8",
+      "source_pdf_page": 9,
+      "source_pdf_crop": [
+        176,
+        68,
+        417,
+        264
+      ],
+      "alt": "A मधील पण B मध्ये नसलेला भाग; सामाईक भाग वगळलेला."
+    },
+    {
+      "filename": "assets/graph-four.svg",
+      "sha256": "ec85955f687dc2bb89eb98116319c85a3912b67a5582ba19b579eadad504afb9",
+      "source_pdf_page": 18,
+      "source_pdf_crop": [
+        227,
+        207,
+        368,
+        305
+      ],
+      "alt": "शिखरे 1, 2, 3, 4. दिशित कडा 1 ते 1, 1 ते 2, 1 ते 3, 2 ते 3. शिखर 4 एकाकी."
+    },
+    {
+      "filename": "assets/graph-three.svg",
+      "sha256": "b6ee476f2a50673a382e6f40031053a38da2d6615e52557b98bce25df2f3e5c6",
+      "source_pdf_page": 18,
+      "source_pdf_crop": [
+        227,
+        340,
+        312,
+        439
+      ],
+      "alt": "शिखरे 1, 2, 3. दिशित कडा 1 ते 1, 1 ते 2, 1 ते 3, 2 ते 3. पहिल्या आलेखातील एकाकी शिखर 4 येथे नाही."
+    },
+    {
+      "filename": "assets/tree.svg",
+      "sha256": "b44f3a3ed610fa13f847b35d5d3bd70c49caba3c43c0d1d1554ba9c13931ac31",
+      "source_pdf_page": 18,
+      "source_pdf_crop": [
+        241,
+        662,
+        354,
+        776
+      ],
+      "alt": "मूळ r खाली आहे. r ची अपत्ये a आणि b. a ची अपत्ये c, d आणि e. कडा वरच्या दिशेने वाचल्यास पूर्वज संबंध मिळतो."
+    }
+  ],
+  "mathml_count": 846,
+  "warnings": "",
+  "validation": "Build complete; browser/math/coverage verification still required",
+  "network_dependencies": []
+}

@@ -1,0 +1,436 @@
+{
+  "schema": "openlogic-cumulative-qa/1",
+  "release": "foundations-v0.2",
+  "translated_units": 16,
+  "remaining_units": 706,
+  "full_corpus_complete": false,
+  "units": [
+    {
+      "unit_id": "OLP-0004",
+      "source_path": "content/sets-functions-relations/sets/sets.tex",
+      "source_sha256": "98a8964a95d72ab3004decdef3ee74f1dd1f221dd06dfc0e6d44eff52104f277",
+      "translation_sha256": "21784c3a578849ff1a59ceba2e9a264c956947c2b829c3cd55d07ba39b768bfa",
+      "translation_bytes": 361,
+      "segments": 1,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0005",
+      "source_path": "content/sets-functions-relations/sets/basics.tex",
+      "source_sha256": "232ff51f51e74fcfee836650f3c597b54bf10ba5363c648a0c05fe8222e4a865",
+      "translation_sha256": "cc9e7f18fe9b56a3213c5356d21a861038bd1fd965026d136acc6c619b020a3f",
+      "translation_bytes": 8205,
+      "segments": 11,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0006",
+      "source_path": "content/sets-functions-relations/sets/subsets.tex",
+      "source_sha256": "63d819c246577b3bfd8ba2a933f114b58c6549bdc4fa6ea8ffa8ab07c7fed4b7",
+      "translation_sha256": "17d44644566ff3fa483a08d8ec126d8bc882be80ab18402276c138daa06ac439",
+      "translation_bytes": 6958,
+      "segments": 15,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0007",
+      "source_path": "content/sets-functions-relations/sets/important-sets.tex",
+      "source_sha256": "ec2115fa48ea6c6684a65bdf2f504102ca0a74b40cf88293dfc12f4ab97ada02",
+      "translation_sha256": "2b2826771aee726d61b447519dafa3bc86267ae5d31e701b2fb570bd25e471b6",
+      "translation_bytes": 4918,
+      "segments": 6,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0008",
+      "source_path": "content/sets-functions-relations/sets/unions-and-intersections.tex",
+      "source_sha256": "e556ac6add69b1e6d41123eb05be4adb15f2dc120a3782a721caeab42dbc4529",
+      "translation_sha256": "3b9cdaa40936cf4bbaad21f7ac3207b87734fa413fdc5a60d150086753827e1c",
+      "translation_bytes": 10460,
+      "segments": 26,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0009",
+      "source_path": "content/sets-functions-relations/sets/pairs-and-products.tex",
+      "source_sha256": "935f1e0e90dc783a1d5cb3298a38aa8df49af8b424e7282b27dc2ab4e9d85610",
+      "translation_sha256": "c0f55492bdffe4c5fd56d7b5fd3c7705067f3b5fea94ef2ef26eef6f9f838ab4",
+      "translation_bytes": 8322,
+      "segments": 16,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0010",
+      "source_path": "content/sets-functions-relations/sets/russells-paradox.tex",
+      "source_sha256": "aa8e94675f56112d8952b81d17968545b54c33393bfc466745edcaca30f4453a",
+      "translation_sha256": "1a90616118306c08155762475539a3eb184ac64429242d41cbb25083b666c9ab",
+      "translation_bytes": 8228,
+      "segments": 11,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0011",
+      "source_path": "content/sets-functions-relations/relations/relations-complete.tex",
+      "source_sha256": "9720780fcf56a05f8f18c26234d7bebc24024116bb6549a151e0905845b41ef5",
+      "translation_sha256": "b046b80ac5e8d80f4592ae5b542423926a24d6aa9dfc80654f32667155937771",
+      "translation_bytes": 416,
+      "segments": 1,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0012",
+      "source_path": "content/sets-functions-relations/relations/relations-as-sets.tex",
+      "source_sha256": "2a67c6fb4846155e8e7cd8172fd1fb8214db96d508ceae5d70dec95d5dfcc1ff",
+      "translation_sha256": "79011c7103c94d7589e71db510f7fc66d0e20ce60a10e5015ea78a8e4a5d182b",
+      "translation_bytes": 9853,
+      "segments": 9,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0013",
+      "source_path": "content/sets-functions-relations/relations/reflections.tex",
+      "source_sha256": "75047e8806a58c0a0c07ae2e55554d9ad2affb9d5297b1d5585ebe0b2f3de651",
+      "translation_sha256": "71df76f45bb3914cd3ab727b23b16906877bdbd242626163969313d6ca88fc27",
+      "translation_bytes": 8190,
+      "segments": 6,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0014",
+      "source_path": "content/sets-functions-relations/relations/special-properties.tex",
+      "source_sha256": "006f2ea0d65e5069ef1509de94dd35a477ea835c19962da22f4bef48caffbee7",
+      "translation_sha256": "84cac360ba896f06ed6579fad40e396d79999f09f78970a4b217e7b3785ed13a",
+      "translation_bytes": 5924,
+      "segments": 12,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0015",
+      "source_path": "content/sets-functions-relations/relations/equivalence-relations.tex",
+      "source_sha256": "d9531aa5cd774c12090fbd5c9fb289181e93cf7e9a96ecf7d4fd3fcdf5d250c7",
+      "translation_sha256": "c6022f25bc5fdc6fa07aeff03fe8d53f822b67a147d9dc63537819c68f843f9f",
+      "translation_bytes": 6261,
+      "segments": 11,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0016",
+      "source_path": "content/sets-functions-relations/relations/orders.tex",
+      "source_sha256": "79593789022fef31c0609b9c94856e2aef5cd5e88e92864e782bb6e6e5f4bce4",
+      "translation_sha256": "c609fb91d21b9873cd04725fb20cd8ba18b3ced66b9e3026af24dd6f1863ea36",
+      "translation_bytes": 11424,
+      "segments": 26,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0017",
+      "source_path": "content/sets-functions-relations/relations/graphs.tex",
+      "source_sha256": "dec624ef4e71903b72a9f0b5fcc6a15a2e0f897f9ebe881dd9c9e21333aeee75",
+      "translation_sha256": "f74cf58294abdca142b56bf8d1889c845426261fb983057323e10360c16c2537",
+      "translation_bytes": 5045,
+      "segments": 6,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0018",
+      "source_path": "content/sets-functions-relations/relations/trees.tex",
+      "source_sha256": "a158f1ce5b84c8c3f681dd6347b22491d1b67a91e110138b9cb6833e3d9dc23c",
+      "translation_sha256": "0fc33d52ebb3680000d5d917d5fc11ffb4f2db585fb20647768da815b2b10c22",
+      "translation_bytes": 10061,
+      "segments": 16,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0019",
+      "source_path": "content/sets-functions-relations/relations/operations.tex",
+      "source_sha256": "73c8bdb301aca93f687a06a045533d75d30088ae711f5e1dfd577b7864f8d3d5",
+      "translation_sha256": "cd39ee393a24d7005bbb18ea0ea2b6d6d5751e791462412a13a234cb33d28ba4",
+      "translation_bytes": 3983,
+      "segments": 17,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    }
+  ],
+  "segments_with_canon": 190,
+  "failures": [],
+  "visual_review": {
+    "schema": "openlogic-visual-review/1",
+    "pdf_sha256": "56322181390cfbf164ce5b7a8431e30db7b6ae5ddf6100df13c8ab5464022754",
+    "passed": true,
+    "method": "Same-agent visual inspection of all 22 final pages on six contact sheets, with individual full-resolution inspection of pages 14, 18 and 19.",
+    "inspected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "render_manifest_sha256": "430132e1d34ae24c030598e68b25869891e0617c1b8e64643956c61be3b57eb2",
+    "findings": [
+      "Readable Devanagari and math boundaries; no visible text overlaps or clipped body content.",
+      "All six diagrams, captions, exercises, section transitions and bibliography are present.",
+      "Source notation concerns are explained in separate editorial notes."
+    ],
+    "limits": "Visual inspection is not an independent linguistic certification."
+  },
+  "reproducibility": {
+    "schema": "openlogic-reproducibility/1",
+    "input_tex_sha256": "6744d3bc3d3b8692288b28701e62b3cf1e9aeeaa8d66690edfdf9d6bc7e2df6f",
+    "source_date_epoch": "1788480000",
+    "run_receipts": [
+      {
+        "filename": "TEX_BUILD_20260904T155618205.json",
+        "sha256": "233b62d70f307759d2dcdffcc4a5501529e9a03d61bc7b2259aaacac67be97f3"
+      },
+      {
+        "filename": "TEX_BUILD_20260904T155808251.json",
+        "sha256": "d16fa95bc025d20040e0ba8fcfbb3301814c201b5d57348b8477b0f5df5f76a6"
+      }
+    ],
+    "pdf_bytes_each": 135836,
+    "pdf_sha256_each": "56322181390cfbf164ce5b7a8431e30db7b6ae5ddf6100df13c8ab5464022754",
+    "identical_pdf_bytes": true,
+    "scope": "Two separate guarded two-pass runs on the same host; cross-platform byte identity is untested."
+  },
+  "html_qa": {
+    "schema": "openlogic-html-qa/1",
+    "passed": true,
+    "html_sha256": "67b29e68a3dae1c5abc9af3b63dcb5e39457306720eb848c21d245f01aec6cae",
+    "source_tex_sha256": "6744d3bc3d3b8692288b28701e62b3cf1e9aeeaa8d66690edfdf9d6bc7e2df6f",
+    "source_pdf_sha256": "56322181390cfbf164ce5b7a8431e30db7b6ae5ddf6100df13c8ab5464022754",
+    "source_to_adapted_prose_tokens_exact": 5595,
+    "source_to_html_math_annotations_exact": 846,
+    "ordinary_prose_characters_exact_ignoring_generated_numbering": 27540,
+    "internal_links_valid": 35,
+    "pdf_numbered_references_matched": [
+      "sfr:set:bas:sec",
+      "sfr:set:uni:fig:union",
+      "sfr:set:uni:fig:intersection",
+      "sfr:set:uni:difference",
+      "sfr:set:pai:wienerkuratowski",
+      "sfr:set:imp:sec",
+      "sfr:set:pai:sec",
+      "sfr:rel:set:sec",
+      "sfr:rel:set:sec",
+      "sfr:set:pai:wienerkuratowski",
+      "sfr:rel:ord:prop:partialtostrict",
+      "sfr:rel:ord:prop:stricttopartial",
+      "sfr:rel:ord:prop:partialtostrict",
+      "sfr:rel:set:sec",
+      "sfr:rel:tre:sec"
+    ],
+    "sections": 14,
+    "diagrams": 6,
+    "assets": [
+      {
+        "filename": "reader.css",
+        "bytes": 1346,
+        "sha256": "c2113672e4fcf59cf4b50d09ff08f33055edf4d6018bd0f62f426f675b63938f"
+      },
+      {
+        "filename": "assets/union.svg",
+        "bytes": 85137,
+        "sha256": "19679f571bc4203ccf82eaa04746a8db0ecae6306d95a30bd4473306852c15e7"
+      },
+      {
+        "filename": "assets/intersection.svg",
+        "bytes": 85053,
+        "sha256": "f362bfc3ccf2f4c341e492637b17291d3de920c5d4c839cdea99ef08e0b74f28"
+      },
+      {
+        "filename": "assets/difference.svg",
+        "bytes": 359786,
+        "sha256": "3af89dd5bc0878d15b1fe24abcf0fbd255b7aee97e8b7e6db794d6610bf6bee8"
+      },
+      {
+        "filename": "assets/graph-four.svg",
+        "bytes": 322964,
+        "sha256": "ec85955f687dc2bb89eb98116319c85a3912b67a5582ba19b579eadad504afb9"
+      },
+      {
+        "filename": "assets/graph-three.svg",
+        "bytes": 323033,
+        "sha256": "b6ee476f2a50673a382e6f40031053a38da2d6615e52557b98bce25df2f3e5c6"
+      },
+      {
+        "filename": "assets/tree.svg",
+        "bytes": 323081,
+        "sha256": "b44f3a3ed610fa13f847b35d5d3bd70c49caba3c43c0d1d1554ba9c13931ac31"
+      }
+    ],
+    "accessibility_checks": [
+      "Marathi document language",
+      "main landmark and skip link",
+      "hierarchical headings and linked table of contents",
+      "native MathML with TeX annotations",
+      "six detailed Marathi image alternatives",
+      "offline fonts and responsive CSS"
+    ],
+    "browser_layout_review": {
+      "status": "unavailable",
+      "reason": "Browser URL security policy denied local file; no alternate browser route attempted."
+    },
+    "limitations": [
+      "Static checks do not establish browser rendering or assistive-technology behavior.",
+      "No independent human linguistic review."
+    ]
+  },
+  "semantic_reviews": [
+    {
+      "filename": "SEMANTIC_REVIEW-B001.json",
+      "sha256": "8beb2088fa0d9e8f53318cb0e13e30716b98743ba596fe26a136b71c5fda971e",
+      "samples": 12
+    },
+    {
+      "filename": "SEMANTIC_REVIEW-B002.json",
+      "sha256": "ebdc5b23cb0fcc34bc3f5ff80d48ca720f13cd55408d18f98a9d5353ba1ee846",
+      "samples": 9
+    }
+  ],
+  "release_ready": true,
+  "publication_status": "pending"
+}
