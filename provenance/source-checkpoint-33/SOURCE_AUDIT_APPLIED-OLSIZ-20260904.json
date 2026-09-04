@@ -30,10 +30,10 @@
     "content/sets-functions-relations/size-of-sets/pairing.tex": "d6b49a8d690c26368bb8858a2dea07f9b29cdbdaf4a2a942d5ae0b47a652bf98",
     "content/sets-functions-relations/size-of-sets/pairing-alt.tex": "85c21ae38ea5c88e81b57aa0f6e8e6f8ffd007df768ddaa32fbf984c706ff44b",
     "content/sets-functions-relations/size-of-sets/reduction.tex": "8cf90f2eef20f7555a392cd8c270d55a54d4804b4f343471ec4cb8dcc3cc45c1",
-    "content/sets-functions-relations/size-of-sets/equinumerous-sets.tex": "28774d0ecd775b3f53ba73b987b25d04f872ff2bc8b67dc2967b6aed2951ebe5",
-    "content/sets-functions-relations/size-of-sets/comparing-size.tex": "1aba213b94caf8d2b3b0096f02ed668049ca8cd7cd94753d521394461578fdb2"
+    "content/sets-functions-relations/size-of-sets/equinumerous-sets.tex": "72ddf6826f31f582b29b4e05f5fdc70d56b3d92cd004b6e788f514524ce7b040",
+    "content/sets-functions-relations/size-of-sets/comparing-size.tex": "daf301e108adf21bcc4b4d90b7f4dd77d550bdbc494656605d9f9f96029b6c71"
   },
-  "qa_b004_sha256": "ee70e3699aa488ec0363399581e5720f4aabfd27231736a78d5be9f814ea65f7",
+  "qa_b004_sha256": "791c84d78834d777f58a0cc384ae2d57db7cf5cfc994de2f05ae2471c6458c59",
   "source_issues_sha256": "6407926e5cec4ebb5751fdca6c714ee36a08fa536f181f943cc502ef819b6cae",
   "segment_records": 410,
   "all_documented_projection_checks_passed": true

@@ -140,8 +140,8 @@
     },
     {
       "unit_id": "OLP-0035",
-      "translation_sha256": "28774d0ecd775b3f53ba73b987b25d04f872ff2bc8b67dc2967b6aed2951ebe5",
-      "translation_bytes": 8981,
+      "translation_sha256": "72ddf6826f31f582b29b4e05f5fdc70d56b3d92cd004b6e788f514524ce7b040",
+      "translation_bytes": 8980,
       "segments": 14,
       "checks": {
         "formula_multiset_parity_after_documented_source_correction_projection": true,
@@ -159,8 +159,8 @@
     },
     {
       "unit_id": "OLP-0036",
-      "translation_sha256": "1aba213b94caf8d2b3b0096f02ed668049ca8cd7cd94753d521394461578fdb2",
-      "translation_bytes": 13610,
+      "translation_sha256": "daf301e108adf21bcc4b4d90b7f4dd77d550bdbc494656605d9f9f96029b6c71",
+      "translation_bytes": 13609,
       "segments": 14,
       "checks": {
         "formula_multiset_parity_after_documented_source_correction_projection": true,

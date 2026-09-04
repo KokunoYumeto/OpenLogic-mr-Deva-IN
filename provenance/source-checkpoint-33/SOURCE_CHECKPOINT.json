@@ -202,14 +202,14 @@
     {
       "unit_id": "OLP-0035",
       "path": "mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex",
-      "bytes": 8981,
-      "sha256": "28774d0ecd775b3f53ba73b987b25d04f872ff2bc8b67dc2967b6aed2951ebe5"
+      "bytes": 8980,
+      "sha256": "72ddf6826f31f582b29b4e05f5fdc70d56b3d92cd004b6e788f514524ce7b040"
     },
     {
       "unit_id": "OLP-0036",
       "path": "mr/content/sets-functions-relations/size-of-sets/comparing-size.tex",
-      "bytes": 13610,
-      "sha256": "1aba213b94caf8d2b3b0096f02ed668049ca8cd7cd94753d521394461578fdb2"
+      "bytes": 13609,
+      "sha256": "daf301e108adf21bcc4b4d90b7f4dd77d550bdbc494656605d9f9f96029b6c71"
     }
   ],
   "evidence_files": [
@@ -230,18 +230,18 @@
     },
     {
       "path": "QA-B003.json",
-      "bytes": 3913,
-      "sha256": "788b515cd47b801b13997fe50c375b21a331124ae2b06395e47fedf51ed219f1"
+      "bytes": 3795,
+      "sha256": "8dbe25bc4a2e9ebc348b434a39ff2f2c8f6b5a502ea9275358c9f3f4562283f5"
     },
     {
       "path": "QA-B004.json",
       "bytes": 7369,
-      "sha256": "ee70e3699aa488ec0363399581e5720f4aabfd27231736a78d5be9f814ea65f7"
+      "sha256": "791c84d78834d777f58a0cc384ae2d57db7cf5cfc994de2f05ae2471c6458c59"
     },
     {
       "path": "SEGMENT_CANON_USE.jsonl",
-      "bytes": 632960,
-      "sha256": "5185a16dad2487d1556e0302d43f59cbf91dc34e8ed20284a9246349effcdac3"
+      "bytes": 654576,
+      "sha256": "d4eaa17affffdfe1a5b5dd50af5b2994bfc2d68fd1a41dc43a2ca602e8690c98"
     },
     {
       "path": "SEMANTIC_REVIEW-B004.json",
@@ -286,7 +286,7 @@
     {
       "path": "SOURCE_AUDIT_APPLIED-OLSIZ-20260904.json",
       "bytes": 1821,
-      "sha256": "2f1530c0f645eded2054264f301eb8c4449d5f11d1e63c17b52beb8b398ecca3"
+      "sha256": "f7d1b338af76ba87117e19c6b3c16c9c89ac15504486ea3c7f1c6acc01247a9f"
     },
     {
       "path": "SOURCE_ISSUES-B004.json",
@@ -295,8 +295,8 @@
     },
     {
       "path": "SOURCE_MANIFEST.jsonl",
-      "bytes": 356467,
-      "sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155"
+      "bytes": 355745,
+      "sha256": "f243d399ca5d8a572a58de7e9b0ad0d7243283a8f92983b1058bfe01ade39c3b"
     },
     {
       "path": "TERM_DECISIONS.jsonl",
@@ -305,14 +305,18 @@
     },
     {
       "path": "TRANSLATION_CHECKPOINT-B003.json",
-      "bytes": 4195,
-      "sha256": "3c30ee9fa54df71be2c036d0289cd27cdd9dee9b9d5434b670e9ef3ba1914027"
+      "bytes": 4078,
+      "sha256": "54d8cac6d50b5bba9a68bf5ce1dcc7b6871a5705c557501f48bbc0f9ee6ff2cb"
     },
     {
       "path": "TRANSLATION_CHECKPOINT-B004.json",
       "bytes": 7485,
-      "sha256": "b20ad095d1a487adceb581aafc225c2ebd3b2154c2370a291844aa4b8d4daaa7"
+      "sha256": "e4814116acf3b75827c1beaee7f908d766286699e6362fda7ab401814fa4ef70"
     }
+  ],
+  "evidence_manifest_excludes": [
+    "SOURCE_CHECKPOINT.json (self-referential receipt)",
+    "README.md (human-readable guide)"
   ],
   "canon": {
     "sources": 22,
