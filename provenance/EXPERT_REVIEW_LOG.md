@@ -2,7 +2,7 @@
 
 This ledger accompanies the Marathi OpenLogic translation at frozen upstream revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. It is maintained for specialist review and correction; review is welcome but is not a completion or publication gate.
 
-The current editable-source coverage is **26/722 units** (OLP-0004–OLP-0029, 314 aligned translated content blocks). The current released reader remains the 16/722-unit `foundations-v0.2` tranche. Decisions without an applied location are pre-adjudications for later units. This is partial coverage and makes no full-corpus claim.
+The current editable-source coverage is **30/722 units** (OLP-0004–OLP-0033, 365 aligned translated content blocks). The current released reader remains the 16/722-unit `foundations-v0.2` tranche. Decisions without an applied location are pre-adjudications for later units. This is partial coverage and makes no full-corpus claim.
 
 For T001–T044, the rationale provenance is explicitly a **retrospective reconstruction** from the durable decision records and current aligned files. It is not represented as an original contemporaneous motive. T045 onward were recorded with their first current use. Aligned block scopes are exact locations governed by a unit-level decision index; they do not claim that the literal headword occurs in every listed block. Literal line hits are listed separately when found.
 
@@ -36,8 +36,11 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
   - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
   - OLP-0029 B005–B009, B011, B013–B016, B021–B023, B028–B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:1, 13, 33, 35, 71–72, 74`; `upstream/content/sets-functions-relations/relations/graphs.tex:1, 25–26, 30–31, 35, 37, 40, 73`; `upstream/content/sets-functions-relations/relations/operations.tex:1, 15, 20`; `upstream/content/sets-functions-relations/relations/orders.tex:1, 54–55, 73`; `upstream/content/sets-functions-relations/relations/reflections.tex:1, 12, 17–18, 21, 38, 42–46, 48, 50, 52–55, 57, 61–62, 65–66, 71, 75`; `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:1, 3, 9–10, 13, 15–16, 21, 23, 27, 29–31, 34–35, 45, 49, 56, 63, 85, 113, 121`; `upstream/content/sets-functions-relations/relations/special-properties.tex:1, 66`; `upstream/content/sets-functions-relations/relations/trees.tex:1, 22, 43–44, 46, 50, 53, 85, 92, 97, 111`; `upstream/content/sets-functions-relations/sets/basics.tex:1–2, 9, 12–16, 20, 27, 34, 36, 41, 48, 50, 52, 58, 62, 84, 86, 88, 90, 94, 99–100`; `upstream/content/sets-functions-relations/sets/important-sets.tex:1–3, 9–10, 13–14, 18, 20, 22, 24, 26, 29, 40–41, 47, 63`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:1–2, 9, 13, 19, 25, 34, 40, 49, 53, 69–71, 116, 123`; `upstream/content/sets-functions-relations/sets/russells-paradox.tex:1–2, 10, 14, 16–18, 23, 27–31, 33–34, 38, 46, 57–59, 67, 73, 77, 79–82`; `upstream/content/sets-functions-relations/sets/sets.tex:1–2, 8, 14`; `upstream/content/sets-functions-relations/sets/subsets.tex:1–2, 9–10, 13–14, 20, 28–29, 35–36, 38, 42, 50, 72–73, 75–77, 86`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:1–2, 9, 13, 16–17, 19, 21, 25, 30, 35–36, 44, 47, 50, 60, 65, 72–73, 77, 82, 85, 88–89, 91, 101–106, 110, 121, 135, 138, 144, 152, 157, 163`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:1–2, 11, 14, 22, 24, 28, 44, 46, 49, 64, 84, 88, 95, 115, 143, 182, 187, 209, 213, 225, 253, 269, 271–272`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/equivalence-relations.tex:13, 31–33, 70–71, 73`; `mr/content/sets-functions-relations/relations/graphs.tex:24–25, 29, 33, 35–36, 70`; `mr/content/sets-functions-relations/relations/operations.tex:14, 20`; `mr/content/sets-functions-relations/relations/orders.tex:51, 69`; `mr/content/sets-functions-relations/relations/reflections.tex:12, 18, 36, 40–43, 46, 49–50, 52–53, 56, 59–60, 63–64, 68, 71`; `mr/content/sets-functions-relations/relations/relations-as-sets.tex:10, 13–14, 16, 20, 26, 28–29, 31, 33–35, 44, 47, 49, 55, 63, 79, 84–85, 91, 109, 111, 119`; `mr/content/sets-functions-relations/relations/special-properties.tex:61`; `mr/content/sets-functions-relations/relations/trees.tex:21, 41, 43, 45, 49, 52, 72–73, 83, 91, 96, 111`; `mr/content/sets-functions-relations/sets/basics.tex:12–16, 19, 26, 33–34, 39, 44–45, 47, 49, 55–56, 58, 62, 82–84, 87, 91, 96–97`; `mr/content/sets-functions-relations/sets/important-sets.tex:10, 13–14, 18, 20, 22, 24, 26, 28, 39–40, 47, 61–62`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:13, 20, 26, 40, 50, 54, 70, 72, 119, 127`; `mr/content/sets-functions-relations/sets/russells-paradox.tex:14, 16–18, 20–22, 25–31, 34–35, 40, 43, 55, 57, 65, 73–74, 77–80`; `mr/content/sets-functions-relations/sets/sets.tex:8`; `mr/content/sets-functions-relations/sets/subsets.tex:10, 13–14, 19–22, 24, 28–29, 32, 36–38, 43, 45, 50, 58, 75–76, 78–80, 87, 89, 98`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:13, 16–17, 19, 21, 25–26, 30, 35–36, 43, 47, 51, 63, 67–68, 74–75, 79, 84, 87, 90, 93, 103, 105–108, 113–114, 116, 124–125, 127, 138, 141, 143–144, 147, 156, 160–161, 166–167`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:11, 14, 23–24, 29, 44, 46, 49, 63, 81, 86, 93, 112, 140, 184, 189, 212, 216, 228, 262, 282, 285–286`.
+  - OLP-0030 B006–B007, B009: [English](../upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/zig-zag.tex)
+  - OLP-0031 B007–B008, B010, B013–B017: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0033 B007–B009, B021–B025: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:1, 13, 33, 35, 71–72, 74`; `upstream/content/sets-functions-relations/relations/graphs.tex:1, 25–26, 30–31, 35, 37, 40, 73`; `upstream/content/sets-functions-relations/relations/operations.tex:1, 15, 20`; `upstream/content/sets-functions-relations/relations/orders.tex:1, 54–55, 73`; `upstream/content/sets-functions-relations/relations/reflections.tex:1, 12, 17–18, 21, 38, 42–46, 48, 50, 52–55, 57, 61–62, 65–66, 71, 75`; `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:1, 3, 9–10, 13, 15–16, 21, 23, 27, 29–31, 34–35, 45, 49, 56, 63, 85, 113, 121`; `upstream/content/sets-functions-relations/relations/special-properties.tex:1, 66`; `upstream/content/sets-functions-relations/relations/trees.tex:1, 22, 43–44, 46, 50, 53, 85, 92, 97, 111`; `upstream/content/sets-functions-relations/sets/basics.tex:1–2, 9, 12–16, 20, 27, 34, 36, 41, 48, 50, 52, 58, 62, 84, 86, 88, 90, 94, 99–100`; `upstream/content/sets-functions-relations/sets/important-sets.tex:1–3, 9–10, 13–14, 18, 20, 22, 24, 26, 29, 40–41, 47, 63`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:1–2, 9, 13, 19, 25, 34, 40, 49, 53, 69–71, 116, 123`; `upstream/content/sets-functions-relations/sets/russells-paradox.tex:1–2, 10, 14, 16–18, 23, 27–31, 33–34, 38, 46, 57–59, 67, 73, 77, 79–82`; `upstream/content/sets-functions-relations/sets/sets.tex:1–2, 8, 14`; `upstream/content/sets-functions-relations/sets/subsets.tex:1–2, 9–10, 13–14, 20, 28–29, 35–36, 38, 42, 50, 72–73, 75–77, 86`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:1–2, 9, 13, 16–17, 19, 21, 25, 30, 35–36, 44, 47, 50, 60, 65, 72–73, 77, 82, 85, 88–89, 91, 101–106, 110, 121, 135, 138, 144, 152, 157, 163`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:1–2, 11, 14, 22, 24, 28, 44, 46, 49, 64, 84, 88, 95, 115, 143, 182, 187, 209, 213, 225, 253, 269, 271–272`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:1–2, 11, 20–23, 26–27, 33, 43, 142, 159, 164, 182, 184, 195, 207`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:1–2, 47, 67, 83, 87–88, 93–94, 100–101`; `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:1–2, 15–17, 80`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/equivalence-relations.tex:13, 31–33, 70–71, 73`; `mr/content/sets-functions-relations/relations/graphs.tex:24–25, 29, 33, 35–36, 70`; `mr/content/sets-functions-relations/relations/operations.tex:14, 20`; `mr/content/sets-functions-relations/relations/orders.tex:51, 69`; `mr/content/sets-functions-relations/relations/reflections.tex:12, 18, 36, 40–43, 46, 49–50, 52–53, 56, 59–60, 63–64, 68, 71`; `mr/content/sets-functions-relations/relations/relations-as-sets.tex:10, 13–14, 16, 20, 26, 28–29, 31, 33–35, 44, 47, 49, 55, 63, 79, 84–85, 91, 109, 111, 119`; `mr/content/sets-functions-relations/relations/special-properties.tex:61`; `mr/content/sets-functions-relations/relations/trees.tex:21, 41, 43, 45, 49, 52, 72–73, 83, 91, 96, 111`; `mr/content/sets-functions-relations/sets/basics.tex:12–16, 19, 26, 33–34, 39, 44–45, 47, 49, 55–56, 58, 62, 82–84, 87, 91, 96–97`; `mr/content/sets-functions-relations/sets/important-sets.tex:10, 13–14, 18, 20, 22, 24, 26, 28, 39–40, 47, 61–62`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:13, 20, 26, 40, 50, 54, 70, 72, 119, 127`; `mr/content/sets-functions-relations/sets/russells-paradox.tex:14, 16–18, 20–22, 25–31, 34–35, 40, 43, 55, 57, 65, 73–74, 77–80`; `mr/content/sets-functions-relations/sets/sets.tex:8`; `mr/content/sets-functions-relations/sets/subsets.tex:10, 13–14, 19–22, 24, 28–29, 32, 36–38, 43, 45, 50, 58, 75–76, 78–80, 87, 89, 98`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:13, 16–17, 19, 21, 25–26, 30, 35–36, 43, 47, 51, 63, 67–68, 74–75, 79, 84, 87, 90, 93, 103, 105–108, 113–114, 116, 124–125, 127, 138, 141, 143–144, 147, 156, 160–161, 166–167`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:11, 14, 23–24, 29, 44, 46, 49, 63, 81, 86, 93, 112, 140, 184, 189, 212, 216, 228, 262, 282, 285–286`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:11, 20–22, 24–26, 31, 42, 140, 149–151, 155, 161, 178, 180, 194, 203`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:46, 66, 83, 87, 92, 95–96, 100–101, 110`; `mr/content/sets-functions-relations/size-of-sets/zig-zag.tex:15, 81`.
 - **Authorities actually checked:**
 
   - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
@@ -69,8 +72,11 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
   - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
   - OLP-0029 B007–B009, B011, B014–B015, B024, B029–B032: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:19, 71, 80`; `upstream/content/sets-functions-relations/relations/orders.tex:41`; `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:15, 25, 27, 41, 113, 121`; `upstream/content/sets-functions-relations/relations/trees.tex:44–45, 47, 51, 75, 107`; `upstream/content/sets-functions-relations/sets/basics.tex:13–14, 16, 21–22, 28, 34, 42, 52–53, 58, 61, 100`; `upstream/content/sets-functions-relations/sets/important-sets.tex:13, 27, 48, 64, 66`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:14, 21, 43, 80, 84–85, 89, 94, 96, 112, 117–118, 121`; `upstream/content/sets-functions-relations/sets/russells-paradox.tex:16, 27, 29–30, 33, 37, 39, 58, 60, 62, 67–68`; `upstream/content/sets-functions-relations/sets/subsets.tex:20, 35, 37, 43, 45–48, 58–59, 99–100`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:18–19, 21, 25, 36, 43–44, 60–61, 66, 73, 78, 82, 85, 105–106, 110–111, 113, 122, 124, 152, 158, 163–164`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:22, 24, 29, 38–43, 45, 57, 75–76, 78, 98–99, 104, 106–107, 186–187, 189, 213, 217, 219, 222, 237, 239–240, 244`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/equivalence-relations.tex:49, 78`; `mr/content/sets-functions-relations/relations/reflections.tex:41, 53, 57, 64`; `mr/content/sets-functions-relations/relations/relations-as-sets.tex:24, 26, 40, 112`; `mr/content/sets-functions-relations/relations/special-properties.tex:14`; `mr/content/sets-functions-relations/relations/trees.tex:43, 45, 51, 74, 105`; `mr/content/sets-functions-relations/sets/basics.tex:13`; `mr/content/sets-functions-relations/sets/important-sets.tex:47`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:10, 13, 21, 44, 48, 50, 87, 121`; `mr/content/sets-functions-relations/sets/russells-paradox.tex:16, 27, 33, 65`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:124`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:38, 41, 252`.
+  - OLP-0030 B006, B009: [English](../upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/zig-zag.tex)
+  - OLP-0031 B009, B014–B015: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0033 B007–B009, B012–B013, B015–B017, B019, B022–B024: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:19, 71, 80`; `upstream/content/sets-functions-relations/relations/orders.tex:41`; `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:15, 25, 27, 41, 113, 121`; `upstream/content/sets-functions-relations/relations/trees.tex:44–45, 47, 51, 75, 107`; `upstream/content/sets-functions-relations/sets/basics.tex:13–14, 16, 21–22, 28, 34, 42, 52–53, 58, 61, 100`; `upstream/content/sets-functions-relations/sets/important-sets.tex:13, 27, 48, 64, 66`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:14, 21, 43, 80, 84–85, 89, 94, 96, 112, 117–118, 121`; `upstream/content/sets-functions-relations/sets/russells-paradox.tex:16, 27, 29–30, 33, 37, 39, 58, 60, 62, 67–68`; `upstream/content/sets-functions-relations/sets/subsets.tex:20, 35, 37, 43, 45–48, 58–59, 99–100`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:18–19, 21, 25, 36, 43–44, 60–61, 66, 73, 78, 82, 85, 105–106, 110–111, 113, 122, 124, 152, 158, 163–164`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:22, 24, 29, 38–43, 45, 57, 75–76, 78, 98–99, 104, 106–107, 186–187, 189, 213, 217, 219, 222, 237, 239–240, 244`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:29–30, 35, 37, 39–40, 54, 56, 62, 75, 77, 87, 92, 107, 111, 114, 127, 133, 173, 175, 183`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:60, 95`; `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:39`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/equivalence-relations.tex:49, 78`; `mr/content/sets-functions-relations/relations/reflections.tex:41, 53, 57, 64`; `mr/content/sets-functions-relations/relations/relations-as-sets.tex:24, 26, 40, 112`; `mr/content/sets-functions-relations/relations/special-properties.tex:14`; `mr/content/sets-functions-relations/relations/trees.tex:43, 45, 51, 74, 105`; `mr/content/sets-functions-relations/sets/basics.tex:13`; `mr/content/sets-functions-relations/sets/important-sets.tex:47`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:10, 13, 21, 44, 48, 50, 87, 121`; `mr/content/sets-functions-relations/sets/russells-paradox.tex:16, 27, 33, 65`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:124`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:38, 41, 252`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:28, 33, 35, 39, 54, 59, 107, 110`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:59`; `mr/content/sets-functions-relations/size-of-sets/zig-zag.tex:39, 75, 81`.
 - **Authorities actually checked:**
 
   - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
@@ -145,8 +151,10 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
   - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
   - OLP-0029 B022: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:48, 56, 78, 85, 91, 111`; `upstream/content/sets-functions-relations/relations/trees.tex:47, 74`; `upstream/content/sets-functions-relations/sets/subsets.tex:3, 10, 19, 21–22, 24, 28–29, 31, 36–37, 44, 50, 57, 73, 76, 84, 86, 95`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:47, 88`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/relations-as-sets.tex:47, 55, 79, 85, 91, 109`; `mr/content/sets-functions-relations/relations/trees.tex:45, 73`; `mr/content/sets-functions-relations/sets/subsets.tex:10, 19, 21–22, 24, 28–29, 32, 37–38, 45, 50, 58, 76, 79, 87, 89, 98`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:47, 90`.
+  - OLP-0031 B014–B015: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0033 B022, B024: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:48, 56, 78, 85, 91, 111`; `upstream/content/sets-functions-relations/relations/trees.tex:47, 74`; `upstream/content/sets-functions-relations/sets/subsets.tex:3, 10, 19, 21–22, 24, 28–29, 31, 36–37, 44, 50, 57, 73, 76, 84, 86, 95`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:47, 88`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:153–155`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:87, 92, 95`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/relations-as-sets.tex:47, 55, 79, 85, 91, 109`; `mr/content/sets-functions-relations/relations/trees.tex:45, 73`; `mr/content/sets-functions-relations/sets/subsets.tex:10, 19, 21–22, 24, 28–29, 32, 37–38, 45, 50, 58, 76, 79, 87, 89, 98`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:47, 90`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:149–151`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:87, 92, 95`.
 - **Authorities actually checked:**
 
   - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P005, MR-C001, उपसंच, definition and first example, printed page 7. visually-read-page-image
@@ -184,6 +192,7 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
 
   - OLP-0006 B004–B018: [English](../upstream/content/sets-functions-relations/sets/subsets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/subsets.tex)
   - OLP-0010 B004–B014: [English](../upstream/content/sets-functions-relations/sets/russells-paradox.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/russells-paradox.tex)
+  - OLP-0033 B006, B021–B022, B025: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
 - **Literal English line hits:** `upstream/content/sets-functions-relations/sets/russells-paradox.tex:27`; `upstream/content/sets-functions-relations/sets/subsets.tex:10, 75, 77`.
 - **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/russells-paradox.tex:25`; `mr/content/sets-functions-relations/sets/subsets.tex:10, 78, 80`.
 - **Authorities actually checked:**
@@ -207,8 +216,12 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - OLP-0007 B004–B009: [English](../upstream/content/sets-functions-relations/sets/important-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/important-sets.tex)
   - OLP-0021 B004–B020: [English](../upstream/content/sets-functions-relations/functions/function-basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-basics.tex)
   - OLP-0029 B006, B017, B020, B024–B026, B028, B033–B034: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/function-basics.tex:58–59, 66, 95, 104–105`; `upstream/content/sets-functions-relations/sets/important-sets.tex:18`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:121, 188`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/function-basics.tex:56–57, 63, 65, 71, 92–93, 102–103, 132–133`; `mr/content/sets-functions-relations/sets/important-sets.tex:18, 30, 33, 40`; `mr/content/sets-functions-relations/sets/subsets.tex:29`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:118, 191`.
+  - OLP-0030 B006–B012: [English](../upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/zig-zag.tex)
+  - OLP-0031 B005–B006, B009, B011, B013, B015, B017–B018: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0032 B006–B010: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex)
+  - OLP-0033 B008, B012, B015, B018, B021–B026: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/function-basics.tex:58–59, 66, 95, 104–105`; `upstream/content/sets-functions-relations/sets/important-sets.tex:18`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:121, 188`; `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:91, 102`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:34, 59`; `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:80`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/function-basics.tex:56–57, 63, 65, 71, 92–93, 102–103, 132–133`; `mr/content/sets-functions-relations/sets/important-sets.tex:18, 30, 33, 40`; `mr/content/sets-functions-relations/sets/subsets.tex:29`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:118, 191`; `mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:97, 109`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:34, 58, 111`; `mr/content/sets-functions-relations/size-of-sets/zig-zag.tex:15, 112`.
 - **Authorities actually checked:**
 
   - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
@@ -236,14 +249,16 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
 ## T010 — truth / truth value
 
 - **Chosen wording:** सत्यता / सत्यतामूल्य
-- **Coverage:** pre-adjudicated; not yet applied in a translated unit.
+- **Coverage:** applied in current partial source coverage.
 - **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
 - **Status/uncertainty:** adopted-primary-textbook. This choice remains open to correction.
 - **Rationale:** Apply to statements under interpretations; not synonym for validity.
 - **Alternatives considered:** सत्य; सत्यमूल्य.
-- **Exact aligned source/target scopes:** none yet; the term has not been applied in current translated units.
-- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
-- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0031 B013: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:80–81, 83`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/pairing.tex:81, 83`.
 - **Authorities actually checked:**
 
   - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P019, MR-C011, Decision procedure, sections 1.1–1.2, printed page 1. visually-read-page-image; legacy-font text extraction not used as Unicode authority
@@ -333,8 +348,9 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
 
   - OLP-0005 B004–B014: [English](../upstream/content/sets-functions-relations/sets/basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/basics.tex)
   - OLP-0006 B004–B018: [English](../upstream/content/sets-functions-relations/sets/subsets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/subsets.tex)
-- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
-- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+  - OLP-0033 B020: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:51, 137, 140, 152, 177, 180`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:137`.
 - **Authorities actually checked:**
 
   - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
@@ -355,8 +371,10 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - OLP-0006 B004–B018: [English](../upstream/content/sets-functions-relations/sets/subsets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/subsets.tex)
   - OLP-0021 B004–B020: [English](../upstream/content/sets-functions-relations/functions/function-basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-basics.tex)
   - OLP-0029 B016, B025, B028, B033–B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+  - OLP-0031 B015: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0033 B018, B022–B023: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
 - **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/basics.tex:26`; `mr/content/sets-functions-relations/sets/subsets.tex:43, 48, 50, 54, 71`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:112, 212, 262, 269, 271, 275, 283, 286, 289`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/basics.tex:26`; `mr/content/sets-functions-relations/sets/subsets.tex:43, 48, 50, 54, 71`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:112, 212, 262, 269, 271, 275, 283, 286, 289`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:115, 156, 167, 169`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:94`.
 - **Authorities actually checked:**
 
   - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P004, MR-C001, समान संच, opening criterion and examples, printed page 6. visually-read-page-image
@@ -376,8 +394,9 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - OLP-0008 B004–B029: [English](../upstream/content/sets-functions-relations/sets/unions-and-intersections.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/unions-and-intersections.tex)
   - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
   - OLP-0029 B021, B023: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/operations.tex:13–14`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:3, 10, 20, 24–25, 27, 34–35, 43, 47, 50, 59, 100, 102–103`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/operations.tex:14–15`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:10, 25, 34–35, 44, 47, 51, 61, 103, 105, 107`.
+  - OLP-0031 B016: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/operations.tex:13–14`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:3, 10, 20, 24–25, 27, 34–35, 43, 47, 50, 59, 100, 102–103`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:100, 102`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/operations.tex:14–15`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:10, 25, 34–35, 44, 47, 51, 61, 103, 105, 107`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:100, 102`.
 - **Authorities actually checked:**
 
   - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P016, MR-C001, दोन संचांचा संयोग, definition and examples, printed page 13. visually-read-page-image
@@ -436,8 +455,11 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - OLP-0012 B004–B012: [English](../upstream/content/sets-functions-relations/relations/relations-as-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/relations-as-sets.tex)
   - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
   - OLP-0023 B005–B016: [English](../upstream/content/sets-functions-relations/functions/functions-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/functions-relations.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:24, 27, 31`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:15–16, 19–20, 25, 29, 39, 43–44, 49`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/relations-as-sets.tex:23`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:15–16, 29, 40, 44`.
+  - OLP-0030 B006, B008–B009: [English](../upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/zig-zag.tex)
+  - OLP-0031 B005–B009: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0032 B006–B008: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:24, 27, 31`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:15–16, 19–20, 25, 29, 39, 43–44, 49`; `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:21, 37`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/relations-as-sets.tex:23`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:15–16, 29, 40, 44`; `mr/content/sets-functions-relations/size-of-sets/zig-zag.tex:37`.
 - **Authorities actually checked:**
 
   - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
@@ -455,8 +477,10 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
 
   - OLP-0009 B004–B019: [English](../upstream/content/sets-functions-relations/sets/pairs-and-products.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/pairs-and-products.tex)
   - OLP-0012 B004–B012: [English](../upstream/content/sets-functions-relations/relations/relations-as-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/relations-as-sets.tex)
+  - OLP-0030 B006, B009: [English](../upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/zig-zag.tex)
+  - OLP-0031 B017: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
 - **Literal English line hits:** `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:10, 52–53`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/relations-as-sets.tex:27`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:10, 53–54`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/relations-as-sets.tex:27`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:10, 53–54`; `mr/content/sets-functions-relations/size-of-sets/zig-zag.tex:87`.
 - **Authorities actually checked:**
 
   - [MR-C010](https://marathivishwakosh.org/21954/) — MR-P018, MR-C010, कार्तीय गुणाकार (Cartesian product), web lines 74–82. primary article tool text read and exact response preserved; displayed formula omissions preclude using extracted formula as authority
@@ -475,7 +499,9 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
 
   - OLP-0009 B004–B019: [English](../upstream/content/sets-functions-relations/sets/pairs-and-products.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/pairs-and-products.tex)
   - OLP-0023 B005–B016: [English](../upstream/content/sets-functions-relations/functions/functions-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/functions-relations.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/functions-relations.tex:28, 46, 68, 84`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:10, 15, 17, 23, 30, 34–35, 41–42, 44–47, 49, 56, 63–64, 70–71, 90–92, 99–100, 102, 117, 119`.
+  - OLP-0030 B009: [English](../upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/zig-zag.tex)
+  - OLP-0031 B018: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/functions-relations.tex:28, 46, 68, 84`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:10, 15, 17, 23, 30, 34–35, 41–42, 44–47, 49, 56, 63–64, 70–71, 90–92, 99–100, 102, 117, 119`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:16, 21–24, 26, 40, 44, 55`; `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:19, 26, 28, 30, 32, 38, 62–63, 74, 82, 88, 98, 100, 102, 104`.
 - **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/functions-relations.tex:66`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:10`.
 - **Authorities actually checked:**
 
@@ -493,8 +519,11 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
 - **Exact aligned source/target scopes:**
 
   - OLP-0009 B004–B019: [English](../upstream/content/sets-functions-relations/sets/pairs-and-products.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/pairs-and-products.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:40, 116–117, 119–120, 122–123`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/pairs-and-products.tex:42, 119–122, 124–127`.
+  - OLP-0030 B012: [English](../upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/zig-zag.tex)
+  - OLP-0031 B012: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0033 B010–B019: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:40, 116–117, 119–120, 122–123`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:44, 55–57, 62, 74, 76, 78, 80, 83–84, 104–105, 110, 113, 118, 129–131, 134–135`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:60, 81`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/pairs-and-products.tex:42, 119–122, 124–127`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:42, 53–54, 59, 71–73, 77, 79–80, 100–102, 106, 109, 114, 126–128, 131–132`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:81`.
 - **Authorities actually checked:**
 
   - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
@@ -531,6 +560,7 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
 - **Exact aligned source/target scopes:**
 
   - OLP-0010 B004–B014: [English](../upstream/content/sets-functions-relations/sets/russells-paradox.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/russells-paradox.tex)
+  - OLP-0033 B022: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
 - **Literal English line hits:** `upstream/content/sets-functions-relations/sets/russells-paradox.tex:22`.
 - **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/russells-paradox.tex:20`.
 - **Authorities actually checked:**
@@ -550,8 +580,9 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
 - **Exact aligned source/target scopes:**
 
   - OLP-0010 B004–B014: [English](../upstream/content/sets-functions-relations/sets/russells-paradox.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/russells-paradox.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/russells-paradox.tex:3, 11, 24–25, 36, 45, 51, 62, 64–65, 74, 85`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/russells-paradox.tex:11, 22–23, 34, 42, 48, 60, 62–63, 72, 82`.
+  - OLP-0033 B012, B018–B019: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/russells-paradox.tex:3, 11, 24–25, 36, 45, 51, 62, 64–65, 74, 85`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:52, 136`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/russells-paradox.tex:11, 22–23, 34, 42, 48, 60, 62–63, 72, 82`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:50, 132`.
 - **Authorities actually checked:**
 
   - [MR-C005](https://vishwakosh.marathi.gov.in/32772/) — MR-P012, MR-C005, paragraph beginning आकारिक तर्कशास्त्र आणि गणित, after Grelling discussion. Do not treat observation hash as source-byte hash or claim full original archived.
@@ -966,8 +997,12 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - OLP-0027 B004–B005, B016: [English](../upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex)
   - OLP-0028 B005–B007: [English](../upstream/content/sets-functions-relations/size-of-sets/introduction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/introduction.tex)
   - OLP-0029 B006, B013–B015, B017–B018, B020–B022, B024–B026, B028–B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:1–2, 10, 14–16, 20, 24, 26, 29–30, 34, 40, 46`; `upstream/content/sets-functions-relations/functions/function-basics.tex:1–2, 13, 15, 18–19, 21, 23, 28–29, 43–45, 50–51, 54, 65, 67, 76, 78, 83–84, 86, 94, 104, 111–112, 115–116, 124, 134–135`; `upstream/content/sets-functions-relations/functions/function-kinds.tex:1–2, 10, 14, 16–18, 23, 29–30, 36, 44–45, 47, 52–54, 58, 64–65, 67, 77, 80, 83, 86, 98–100, 106, 113–114`; `upstream/content/sets-functions-relations/functions/functions-relations.tex:1–3, 12, 15, 19, 21, 24, 33, 35, 39, 42, 49, 61, 64–67, 71–72, 74, 79, 82, 94, 97`; `upstream/content/sets-functions-relations/functions/functions.tex:1–2, 8, 10, 12, 14, 20, 22`; `upstream/content/sets-functions-relations/functions/inverses.tex:1–2, 10, 13–16, 19, 21, 24, 28, 36, 45, 55, 58, 123, 129, 139, 146, 168`; `upstream/content/sets-functions-relations/functions/partial-functions.tex:1–3, 12, 15–17, 21, 26, 31–34, 38, 43, 50–51, 61`; `upstream/content/sets-functions-relations/relations/operations.tex:1`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:1, 89, 95–96, 100, 105, 108, 110, 119–121, 125, 132, 141–142, 166, 168, 174–175, 191, 210, 216, 218, 234, 238, 242, 244, 261, 273–274`; `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:1`; `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:1, 46`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/composition.tex:10, 14–17, 19, 25–26, 29–30, 34, 40, 46, 53, 59`; `mr/content/sets-functions-relations/functions/function-basics.tex:14–15, 18, 20–21, 23, 28–30, 42–43, 49–50, 63, 66, 68, 75, 77, 81–82, 84, 93, 103, 111, 113–114, 123, 132–133`; `mr/content/sets-functions-relations/functions/function-kinds.tex:10, 13, 16–17, 22–23, 28–29, 36, 43–44, 46, 51–52, 56, 62–63, 65, 76, 79, 82, 85, 98–100, 104, 111, 113`; `mr/content/sets-functions-relations/functions/functions-relations.tex:12, 15–16, 19–20, 23, 32–33, 35, 37, 48, 59, 63–65, 69, 71, 77, 81, 90, 93–94, 101`; `mr/content/sets-functions-relations/functions/functions.tex:8`; `mr/content/sets-functions-relations/functions/inverses.tex:10, 13–15, 19–20, 23, 28, 35–36, 43, 52–53, 56, 66, 75, 128, 133, 143, 150, 172`; `mr/content/sets-functions-relations/functions/partial-functions.tex:12, 15–17, 21, 26, 32–35, 39, 44, 51–52, 62`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:87, 93–94, 98, 102, 106–107, 117–119, 124, 130, 139, 141, 166, 168, 175, 177, 194, 213, 219, 223, 239, 245, 250, 252, 272, 287–288`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:46`.
+  - OLP-0030 B006, B008–B009: [English](../upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/zig-zag.tex)
+  - OLP-0031 B005–B006, B008–B009, B013, B017–B018: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0032 B005–B007, B009–B010: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex)
+  - OLP-0033 B008–B009, B026: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:1–2, 10, 14–16, 20, 24, 26, 29–30, 34, 40, 46`; `upstream/content/sets-functions-relations/functions/function-basics.tex:1–2, 13, 15, 18–19, 21, 23, 28–29, 43–45, 50–51, 54, 65, 67, 76, 78, 83–84, 86, 94, 104, 111–112, 115–116, 124, 134–135`; `upstream/content/sets-functions-relations/functions/function-kinds.tex:1–2, 10, 14, 16–18, 23, 29–30, 36, 44–45, 47, 52–54, 58, 64–65, 67, 77, 80, 83, 86, 98–100, 106, 113–114`; `upstream/content/sets-functions-relations/functions/functions-relations.tex:1–3, 12, 15, 19, 21, 24, 33, 35, 39, 42, 49, 61, 64–67, 71–72, 74, 79, 82, 94, 97`; `upstream/content/sets-functions-relations/functions/functions.tex:1–2, 8, 10, 12, 14, 20, 22`; `upstream/content/sets-functions-relations/functions/inverses.tex:1–2, 10, 13–16, 19, 21, 24, 28, 36, 45, 55, 58, 123, 129, 139, 146, 168`; `upstream/content/sets-functions-relations/functions/partial-functions.tex:1–3, 12, 15–17, 21, 26, 31–34, 38, 43, 50–51, 61`; `upstream/content/sets-functions-relations/relations/operations.tex:1`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:1, 89, 95–96, 100, 105, 108, 110, 119–121, 125, 132, 141–142, 166, 168, 174–175, 191, 210, 216, 218, 234, 238, 242, 244, 261, 273–274`; `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:1`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:1, 27–29, 34, 38, 207, 209`; `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:1, 11, 81, 87, 91, 104, 107, 111`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:1, 10, 36, 47–48, 51–53, 59, 62, 81–83, 107, 112`; `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:1, 46`; `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:1`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/composition.tex:10, 14–17, 19, 25–26, 29–30, 34, 40, 46, 53, 59`; `mr/content/sets-functions-relations/functions/function-basics.tex:14–15, 18, 20–21, 23, 28–30, 42–43, 49–50, 63, 66, 68, 75, 77, 81–82, 84, 93, 103, 111, 113–114, 123, 132–133`; `mr/content/sets-functions-relations/functions/function-kinds.tex:10, 13, 16–17, 22–23, 28–29, 36, 43–44, 46, 51–52, 56, 62–63, 65, 76, 79, 82, 85, 98–100, 104, 111, 113`; `mr/content/sets-functions-relations/functions/functions-relations.tex:12, 15–16, 19–20, 23, 32–33, 35, 37, 48, 59, 63–65, 69, 71, 77, 81, 90, 93–94, 101`; `mr/content/sets-functions-relations/functions/functions.tex:8`; `mr/content/sets-functions-relations/functions/inverses.tex:10, 13–15, 19–20, 23, 28, 35–36, 43, 52–53, 56, 66, 75, 128, 133, 143, 150, 172`; `mr/content/sets-functions-relations/functions/partial-functions.tex:12, 15–17, 21, 26, 32–35, 39, 44, 51–52, 62`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:87, 93–94, 98, 102, 106–107, 117–119, 124, 130, 139, 141, 166, 168, 175, 177, 194, 213, 219, 223, 239, 245, 250, 252, 272, 287–288`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:26, 28, 32, 36, 203, 205`; `mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:11, 86, 89, 93, 97, 111, 114, 118`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:10, 36, 46–47, 50, 52, 58, 60, 81–83, 107, 109, 111, 115`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:46`; `mr/content/sets-functions-relations/size-of-sets/zig-zag.tex:76`.
 - **Authorities actually checked:**
 
   - [फलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/27548/) — MR-P029, MR-C018, Opening paragraph, current web-search extraction personally read 2026-09-04. Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
@@ -989,8 +1024,9 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - OLP-0023 B005–B016: [English](../upstream/content/sets-functions-relations/functions/functions-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/functions-relations.tex)
   - OLP-0024 B004–B027: [English](../upstream/content/sets-functions-relations/functions/inverses.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/inverses.tex)
   - OLP-0026 B005–B013: [English](../upstream/content/sets-functions-relations/functions/partial-functions.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/partial-functions.tex)
+  - OLP-0031 B017: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
 - **Literal English line hits:** `upstream/content/sets-functions-relations/functions/function-basics.tex:32, 38, 44–47, 53, 60, 97, 99, 120`; `upstream/content/sets-functions-relations/functions/function-kinds.tex:17, 24, 31, 41, 72, 103, 107`; `upstream/content/sets-functions-relations/functions/functions-relations.tex:36`; `upstream/content/sets-functions-relations/functions/inverses.tex:22`; `upstream/content/sets-functions-relations/functions/partial-functions.tex:26`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/function-basics.tex:32, 37, 43–45, 50–51, 57–58, 95, 97, 119`; `mr/content/sets-functions-relations/functions/function-kinds.tex:16, 22, 30, 40, 70, 100–101, 104`; `mr/content/sets-functions-relations/functions/functions-relations.tex:34`; `mr/content/sets-functions-relations/functions/inverses.tex:21`; `mr/content/sets-functions-relations/functions/partial-functions.tex:26`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/function-basics.tex:32, 37, 43–45, 50–51, 57–58, 95, 97, 119`; `mr/content/sets-functions-relations/functions/function-kinds.tex:16, 22, 30, 40, 70, 100–101, 104`; `mr/content/sets-functions-relations/functions/functions-relations.tex:34`; `mr/content/sets-functions-relations/functions/inverses.tex:21`; `mr/content/sets-functions-relations/functions/partial-functions.tex:26`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:109`.
 - **Authorities actually checked:**
 
   - [फलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/27548/) — MR-P029, MR-C018, Opening paragraph, current web-search extraction personally read 2026-09-04. Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
@@ -1034,8 +1070,11 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - OLP-0027 B004–B005, B016: [English](../upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex)
   - OLP-0028 B005–B007: [English](../upstream/content/sets-functions-relations/size-of-sets/introduction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/introduction.tex)
   - OLP-0029 B006, B013–B015, B018, B021–B022, B024–B026, B028–B030, B032, B034–B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:59`; `upstream/content/sets-functions-relations/functions/function-kinds.tex:18–19, 22–23, 25, 29–30, 36, 40, 44, 48, 78, 81, 84, 94, 99, 114`; `upstream/content/sets-functions-relations/functions/inverses.tex:52, 92, 98–99, 101, 103, 118, 146`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:15, 89, 95, 97, 105, 108, 110, 133, 166–167, 169, 174–176, 190, 195–196, 200, 202, 210, 224, 228, 244–245, 259, 270, 276`; `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:13, 46`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:15, 19`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:13, 15, 46, 48`.
+  - OLP-0031 B017: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0032 B009: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex)
+  - OLP-0033 B008–B009: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:59`; `upstream/content/sets-functions-relations/functions/function-kinds.tex:18–19, 22–23, 25, 29–30, 36, 40, 44, 48, 78, 81, 84, 94, 99, 114`; `upstream/content/sets-functions-relations/functions/inverses.tex:52, 92, 98–99, 101, 103, 118, 146`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:15, 89, 95, 97, 105, 108, 110, 133, 166–167, 169, 174–176, 190, 195–196, 200, 202, 210, 224, 228, 244–245, 259, 270, 276`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:27, 34, 38`; `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:103`; `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:13, 46`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:15, 19`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:32`; `mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:110`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:108, 111`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:13, 15, 46, 48`.
 - **Authorities actually checked:**
 
   - [फलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/27548/) — MR-P029, MR-C018, Opening paragraph, current web-search extraction personally read 2026-09-04. Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
@@ -1056,8 +1095,10 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - OLP-0025 B004–B011: [English](../upstream/content/sets-functions-relations/functions/composition.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/composition.tex)
   - OLP-0026 B005–B013: [English](../upstream/content/sets-functions-relations/functions/partial-functions.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/partial-functions.tex)
   - OLP-0029 B014, B029, B032, B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:54`; `upstream/content/sets-functions-relations/functions/function-kinds.tex:54–55, 57–58, 60, 64–65, 67, 71, 78, 81, 84, 94, 99, 114`; `upstream/content/sets-functions-relations/functions/inverses.tex:51, 63, 69, 71, 88, 148`; `upstream/content/sets-functions-relations/functions/partial-functions.tex:46`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:101, 223, 247, 272, 274`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/function-kinds.tex:100`; `mr/content/sets-functions-relations/functions/inverses.tex:66`; `mr/content/sets-functions-relations/functions/partial-functions.tex:47`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:19`.
+  - OLP-0031 B008, B017: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0032 B007, B010: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:54`; `upstream/content/sets-functions-relations/functions/function-kinds.tex:54–55, 57–58, 60, 64–65, 67, 71, 78, 81, 84, 94, 99, 114`; `upstream/content/sets-functions-relations/functions/inverses.tex:51, 63, 69, 71, 88, 148`; `upstream/content/sets-functions-relations/functions/partial-functions.tex:46`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:101, 223, 247, 272, 274`; `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:111`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:53`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/function-kinds.tex:100`; `mr/content/sets-functions-relations/functions/inverses.tex:66`; `mr/content/sets-functions-relations/functions/partial-functions.tex:47`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:19`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:51, 111`.
 - **Authorities actually checked:**
 
   - [अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/26597/) — MR-P030, MR-C019, Function discussion: domain, codomain and range paragraph; current search extraction personally read 2026-09-04. Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
@@ -1118,8 +1159,10 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
 - **Exact aligned source/target scopes:**
 
   - OLP-0024 B004–B027: [English](../upstream/content/sets-functions-relations/functions/inverses.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/inverses.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/inverses.tex:3, 10, 24, 28, 33, 36–37, 57, 59, 64, 87, 93, 117, 123–124, 127, 138, 140, 145, 149–151, 155–156, 167–168, 172–173`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/inverses.tex:10, 23, 29, 32, 35–36, 55, 57, 63, 66, 89, 95, 121, 127, 143, 149, 154–155, 159, 172, 176–177`.
+  - OLP-0031 B005–B007, B009, B017: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0032 B006, B009: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/inverses.tex:3, 10, 24, 28, 33, 36–37, 57, 59, 64, 87, 93, 117, 123–124, 127, 138, 140, 145, 149–151, 155–156, 167–168, 172–173`; `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:15, 104`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:18, 47, 61, 108`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/inverses.tex:10, 23, 29, 32, 35–36, 55, 57, 63, 66, 89, 95, 121, 127, 143, 149, 154–155, 159, 172, 176–177`; `mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:14, 110`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:18, 46, 60, 108–109, 111`.
 - **Authorities actually checked:**
 
   - [अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/26597/) — MR-P030, MR-C019, Function discussion: domain, codomain and range paragraph; current search extraction personally read 2026-09-04. Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
@@ -1137,8 +1180,9 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
 
   - OLP-0025 B004–B011: [English](../upstream/content/sets-functions-relations/functions/composition.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/composition.tex)
   - OLP-0026 B005–B013: [English](../upstream/content/sets-functions-relations/functions/partial-functions.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/partial-functions.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:3, 10, 15, 23–25, 33–35, 39, 41, 48`; `upstream/content/sets-functions-relations/functions/partial-functions.tex:3, 12, 17, 21, 26, 31, 38, 43, 50–51, 60`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/composition.tex:10, 15–16, 23, 25, 34, 39, 41, 49`; `mr/content/sets-functions-relations/functions/partial-functions.tex:12, 17, 21, 26, 32–33, 39, 44, 51–52, 62`.
+  - OLP-0032 B009: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:3, 10, 15, 23–25, 33–35, 39, 41, 48`; `upstream/content/sets-functions-relations/functions/partial-functions.tex:3, 12, 17, 21, 26, 31, 38, 43, 50–51, 60`; `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:104`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/composition.tex:10, 15–16, 23, 25, 34, 39, 41, 49`; `mr/content/sets-functions-relations/functions/partial-functions.tex:12, 17, 21, 26, 32–33, 39, 44, 51–52, 62`; `mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:111`.
 - **Authorities actually checked:**
 
   - [फलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/27548/) — MR-P029, MR-C018, Opening paragraph, current web-search extraction personally read 2026-09-04. Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
@@ -1190,8 +1234,12 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - OLP-0027 B004–B005, B016: [English](../upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex)
   - OLP-0028 B005–B007: [English](../upstream/content/sets-functions-relations/size-of-sets/introduction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/introduction.tex)
   - OLP-0029 B005–B024, B029–B032, B034–B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:3, 11, 14, 17, 27–28, 31, 35–37, 42, 44, 46, 48–49, 52, 55–56, 60, 65, 69, 74, 76–77, 84, 87–88, 95–96, 104, 115, 131–132, 137, 143, 190, 215, 228, 240`; `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:21`; `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11, 13–14`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:11, 14, 17, 28–29, 32, 36, 40, 42, 44, 46, 48–52, 54–56, 59, 63, 68, 72–73, 75, 81, 85–86, 93–94, 101, 113, 117, 119, 129–130, 135, 193, 217, 233, 247`; `mr/content/sets-functions-relations/size-of-sets/introduction.tex:22`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11–12, 14`.
+  - OLP-0030 B006, B009: [English](../upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/zig-zag.tex)
+  - OLP-0031 B005–B007, B010–B012, B017: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0032 B006, B008: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex)
+  - OLP-0033 B006–B009, B012, B020, B026: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:3, 11, 14, 17, 27–28, 31, 35–37, 42, 44, 46, 48–49, 52, 55–56, 60, 65, 69, 74, 76–77, 84, 87–88, 95–96, 104, 115, 131–132, 137, 143, 190, 215, 228, 240`; `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:21`; `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:14, 16, 23, 40, 49, 71, 95`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:18, 27, 32, 47, 67, 76, 108`; `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11, 13–14`; `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:14, 59, 80, 91–93, 110–111`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:11, 14, 17, 28–29, 32, 36, 40, 42, 44, 46, 48–52, 54–56, 59, 63, 68, 72–73, 75, 81, 85–86, 93–94, 101, 113, 117, 119, 129–130, 135, 193, 217, 233, 247`; `mr/content/sets-functions-relations/size-of-sets/introduction.tex:22`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:33`; `mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:14–15, 24, 45, 54, 75, 102`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:18, 26, 32, 46, 66, 76, 108, 111`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11–12, 14`; `mr/content/sets-functions-relations/size-of-sets/zig-zag.tex:14, 60, 93–95, 112–113`.
 - **Authorities actually checked:**
 
   - [भौतिकशास्त्र पारिभाषिक शब्दावली — enumeration](https://shabdakosh.marathi.gov.in/ananya-glossary/33/e) — MR-P033, MR-C021, Entries enumeration and enumerate, personally read in current web-search extraction 2026-09-04. Short indexed lexical observation; no original HTML hash, no independent attestation of effective enumeration.
@@ -1210,8 +1258,11 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - OLP-0027 B004–B005, B016: [English](../upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex)
   - OLP-0028 B005–B007: [English](../upstream/content/sets-functions-relations/size-of-sets/introduction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/introduction.tex)
   - OLP-0029 B005, B008–B009, B012, B016, B021–B023, B028, B033, B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
-- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:11, 31, 64, 84, 114–115, 165, 173, 181–182, 209, 253, 259, 269–272`; `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:24, 26`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:63, 166, 175, 183, 185, 282, 286`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11, 45`.
+  - OLP-0030 B007, B010–B012: [English](../upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/zig-zag.tex)
+  - OLP-0031 B011, B013–B017: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0033 B005–B009, B011–B012, B019–B022, B025–B026: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:11, 31, 64, 84, 114–115, 165, 173, 181–182, 209, 253, 259, 269–272`; `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:24, 26`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:22, 26, 53, 143, 149`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:71, 83, 88, 96, 100–103`; `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:69, 115, 119, 123`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:63, 166, 175, 183, 185, 282, 286`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:15`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:13, 83, 110`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11, 45`.
 - **Authorities actually checked:**
 
   - [MR-C004](https://vishwakosh.marathi.gov.in/34075/) — MR-P032, MR-C004, Current search extraction, personally read 2026-09-04: paragraphs headed infinite sets and cardinality. Same previously indexed source, new actual consultation. The witness's positive-natural-number convention and its restriction to infinite countable sets do not replace OpenLogic conventions. Missing/corrupt mathematical glyphs and source historical assertions are not imported. Original HTML remains unavailable.
@@ -1319,6 +1370,194 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
   - [भौतिकशास्त्र पारिभाषिक शब्दावली — enumeration](https://shabdakosh.marathi.gov.in/ananya-glossary/33/e) — MR-P033, MR-C021, Entries enumeration and enumerate, personally read in current web-search extraction 2026-09-04. Short indexed lexical observation; no original HTML hash, no independent attestation of effective enumeration.
 - **Precise review question:** Are पुनरुक्ती असलेले and पुनरुक्ती नसलेले the clearest qualifiers for enumerations with and without repeated values?
 
+## T064 — Cantor's zig-zag method
+
+- **Chosen wording:** कँटर यांची नागमोडी पद्धत
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional descriptive extension; open to correction. This choice remains open to correction.
+- **Rationale:** Cantor's surname follows the existing Marathi chapter spelling. नागमोडी is a provisional descriptive rendering of the diagonal traversal pattern; MR-P032 supports Cantor/set-theory register but does not attest this method name.
+- **Alternatives considered:** कँटर यांची तिरपी प्रगणन पद्धत; कँटर यांची कर्णरेषीय पद्धत.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0030 B005–B006, B008–B009: [English](../upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/zig-zag.tex)
+  - OLP-0031 B005–B006: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0032 B006: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:13`; `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:11, 59, 109`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/zig-zag.tex:11, 59`.
+- **Authorities actually checked:**
+
+  - [MR-C004](https://vishwakosh.marathi.gov.in/34075/) — MR-P032, MR-C004, Current search extraction, personally read 2026-09-04: paragraphs headed infinite sets and cardinality. Same previously indexed source, new actual consultation. The witness's positive-natural-number convention and its restriction to infinite countable sets do not replace OpenLogic conventions. Missing/corrupt mathematical glyphs and source historical assertions are not imported. Original HTML remains unavailable.
+- **Precise review question:** Does नागमोडी पद्धत naturally identify Cantor's diagonal zig-zag traversal, or would a term built from तिरपी or कर्णरेषीय make the mathematical path clearer?
+
+## T065 — array / row / column / axis
+
+- **Chosen wording:** सरणी / ओळ / स्तंभ / अक्ष
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional compositional vocabulary; open to correction. This choice remains open to correction.
+- **Rationale:** Provisional mathematical-layout vocabulary. स्तंभ and अक्ष are established general mathematical terms; सरणी and ओळ are chosen for the displayed two-dimensional arrangement. The witness supports mathematical register but was not checked for the exact array phrase.
+- **Alternatives considered:** मांडणी / पंक्ती / रकाना / दिशा; द्विमितीय सारणी / पंक्ती / स्तंभ / अक्ष.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0030 B006, B008–B009: [English](../upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/zig-zag.tex)
+  - OLP-0031 B005–B006: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0032 B006: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex)
+  - OLP-0033 B013, B020, B024: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:63, 65, 72, 89, 106, 141–143, 182–183, 185, 187, 193, 197`; `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:16, 25, 28, 33, 37, 42, 46, 48, 52, 68, 70, 72, 74, 76`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:14–15, 30–32, 43`; `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:21, 23, 35, 38–40, 43, 57, 75, 91–92, 95, 107`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:59, 85, 101, 137, 139, 179–180, 182, 193`; `mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:15, 54`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:14–15, 30–31, 42`; `mr/content/sets-functions-relations/size-of-sets/zig-zag.tex:21, 37, 39–40, 73–74, 93–94`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
+- **Precise review question:** In the displayed grid and higher-dimensional generalization, are सरणी, ओळ, स्तंभ and अक्ष the standard mutually distinct Marathi layout terms?
+
+## T066 — rational number / non-negative rational number
+
+- **Chosen wording:** परिमेय संख्या / ऋणेतर परिमेय संख्या
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested headword with compositional qualifier; open to correction. This choice remains open to correction.
+- **Rationale:** परिमेय संख्या is directly present in the inspected mathematics page. ऋणेतर is the already adopted zero-inclusive modifier and preserves the exercise's non-negative scope.
+- **Alternatives considered:** परिमेय अंक / अऋण परिमेय संख्या.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0031 B010–B011: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:67, 71`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/pairing.tex:66, 70`.
+- **Authorities actually checked:**
+
+  - [गणित, इयत्ता आठवी](https://books.ebalbharati.in/pdfs/801020004.pdf) — MR-P027, MR-C017, PDF page 12, printed page 2. Personally read recovered OCR and actual page image; historical consultation not adopted
+- **Precise review question:** Is ऋणेतर the clearest zero-inclusive modifier for non-negative rationals in current Marathi mathematics usage?
+
+## T067 — pairing function / encode / code / decode
+
+- **Chosen wording:** जोडीकरण फलन / सांकेतीकरण करणे / संकेतांक / विसांकेतीकरण करणे
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional compositional vocabulary; open to correction. This choice remains open to correction.
+- **Rationale:** जोडी and फलन are evidence-backed components; the coding forms are provisional transparent extensions for an injective numeric representation, not cryptographic encryption. The source definition governs injectivity and inverse-domain qualifications.
+- **Alternatives considered:** युग्मीकरण फलन / कूटबद्ध करणे / कूट / उकल करणे; पेअरिंग फलन / एन्कोड / कोड / डीकोड.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0031 B004–B009, B017–B018: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+  - OLP-0032 B005–B010: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:11, 91, 96–98, 102`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:10, 48, 51, 53–55, 59, 62, 107, 112`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:11, 97, 103–105`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:10, 47, 50, 52, 54, 58, 60, 107, 111`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
+  - [फलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/27548/) — MR-P029, MR-C018, Opening paragraph, current web-search extraction personally read 2026-09-04. Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- **Precise review question:** Do जोडीकरण, सांकेतीकरण, संकेतांक and विसांकेतीकरण clearly describe an injective numerical coding without suggesting cryptography, and is the partial inverse qualification natural?
+
+## T068 — cofinite / complement
+
+- **Chosen wording:** सांत-पूरक / पूरक संच
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional definition-controlled term; open to correction. This choice remains open to correction.
+- **Rationale:** सांत-पूरक is a provisional definition-transparent compound: the complement in Nat is finite. Checked set sources support finite-set and subset grammar but do not attest the exact cofinite label.
+- **Alternatives considered:** सांतपूरक / संचपूरक; सहसांत / पूरक.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0031 B015: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:92–95`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/pairing.tex:93, 95`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P003, MR-C001, संचांचे प्रकार table, empty/finite/infinite rows, printed page 4. visually-read-page-image
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P005, MR-C001, उपसंच, definition and first example, printed page 7. visually-read-page-image
+- **Precise review question:** Is सांत-पूरक an established or readily intelligible term for a set whose complement in the ambient set is finite, and should the hyphen be retained?
+
+## T069 — truth table / truth function
+
+- **Chosen wording:** सत्यताकोष्टक / सत्यता-फलन
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested register with provisional compound; open to correction. This choice remains open to correction.
+- **Rationale:** The inspected logic textbook directly supports truth-table and truth-value register. सत्यता-फलन is a compositional extension for functions from binary rows to a truth value; validity terminology remains separate.
+- **Alternatives considered:** सत्यतासारणी / सत्यफलन; सत्य-मूल्य कोष्टक / सत्य-मूल्य फलन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0031 B013: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:81, 83`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/pairing.tex:81, 83`.
+- **Authorities actually checked:**
+
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P020, MR-C011, Short truth table, section 1.3 continuation and 1.4, printed page 2. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- **Precise review question:** Should truth table and truth function share the सत्यता stem, and is कोष्टक preferable to सारणी in contemporary Marathi logic teaching?
+
+## T070 — enumerable union of enumerable sets
+
+- **Chosen wording:** गणनीय इतक्या गणनीय संचांचा संयोग
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional ambiguity-avoiding paraphrase; open to correction. This choice remains open to correction.
+- **Rationale:** Expanded wording avoids reading enumerable as a property only of the member sets: both the index family and each set are countable. The union term is attested; the full phrase is source-defined and provisional.
+- **Alternatives considered:** गणनीय संचकुलाचा गणनीय संयोग; गणनीय संयोग.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0031 B016: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [MR-C004](https://vishwakosh.marathi.gov.in/34075/) — MR-P032, MR-C004, Current search extraction, personally read 2026-09-04: paragraphs headed infinite sets and cardinality. Same previously indexed source, new actual consultation. The witness's positive-natural-number convention and its restriction to infinite countable sets do not replace OpenLogic conventions. Missing/corrupt mathematical glyphs and source historical assertions are not imported. Original HTML remains unavailable.
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P016, MR-C001, दोन संचांचा संयोग, definition and examples, printed page 13. visually-read-page-image
+- **Precise review question:** Does गणनीय इतक्या गणनीय संचांचा संयोग unambiguously state that both the index set and every indexed set are countable?
+
+## T071 — triangular number
+
+- **Chosen wording:** त्रिकोणी संख्या
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional compositional term; open to correction. This choice remains open to correction.
+- **Rationale:** Provisional transparent geometric compound for the source-defined sums 0, 1, 3, 6 and k(k+1)/2. The checked mathematics page supports native number exposition but was not checked for this exact specialist label.
+- **Alternatives considered:** त्रिकोण संख्या; त्रिभुजी संख्या.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0031 B006: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:32–33`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/pairing.tex:33–34`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
+- **Precise review question:** Is त्रिकोणी संख्या the established Marathi name for k(k+1)/2, or is another geometric form more idiomatic?
+
+## T072 — positive / odd / even / factor / power / exponent
+
+- **Chosen wording:** धन / विषम / सम / गुणक / घात / घातांक
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional source-controlled mathematical vocabulary; open to correction. This choice remains open to correction.
+- **Rationale:** Source-defined elementary number vocabulary used in the alternative pairing construction. The formulas determine the odd-number, factor and exponent senses. No exact Marathi authority was newly checked for this grouped vocabulary before current use, so it remains explicitly open to correction.
+- **Alternatives considered:** धन / विषम / सम / अवयव / घात / घातांक; सकारात्मक / विषम / सम / गुणनखंड / कोटी / घातांक.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0032 B006, B010: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex)
+  - OLP-0033 B007–B008: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:20, 31, 143, 164`; `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:17, 70, 73, 75–76, 78–79, 81`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:50, 132`; `mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:75, 77, 79, 81–82, 84–85`.
+- **Authorities actually checked:** none for this exact label before current use; this absence is recorded rather than treated as a hold.
+- **Precise review question:** In this elementary number-theory context, are धन, विषम, सम, गुणक, घात and घातांक the clearest mutually distinct Marathi labels, especially for factor versus exponent?
+
+## T073 — Cantor's diagonal method / diagonalization / diagonal argument
+
+- **Chosen wording:** कँटर यांची कर्णरेषीय पद्धत / कर्णीकरण / कर्णरेषीय युक्तिवाद
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional descriptive extension; open to correction. This choice remains open to correction.
+- **Rationale:** The three forms distinguish the named method, the general proof technique and an instance of its argument. MR-P032 supports Cantor and Marathi set-theory register but does not attest these exact diagonalization labels; the two explicit OpenLogic constructions govern their meaning.
+- **Alternatives considered:** कँटर यांची विकर्ण पद्धत / विकर्णीकरण / विकर्ण युक्तिवाद; कँटर यांची तिरपी पद्धत / तिरपीकरण.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0033 B009, B015, B020, B022, B024–B026: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:140–141, 203, 208`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:137–138, 199, 204`.
+- **Authorities actually checked:**
+
+  - [MR-C004](https://vishwakosh.marathi.gov.in/34075/) — MR-P032, MR-C004, Current search extraction, personally read 2026-09-04: paragraphs headed infinite sets and cardinality. Same previously indexed source, new actual consultation. The witness's positive-natural-number convention and its restriction to infinite countable sets do not replace OpenLogic conventions. Missing/corrupt mathematical glyphs and source historical assertions are not imported. Original HTML remains unavailable.
+- **Precise review question:** Does कर्णरेषीय पद्धत / कर्णीकरण clearly name Cantor's diagonal construction in Marathi logic, or is विकर्ण the established technical stem?
+
 # Source corrections and difficult source decisions
 
 ## MR-SI001 — OLP-0012
@@ -1420,3 +1659,33 @@ The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next s
 - **Alternatives considered:** Normalize both occurrences to one endpoint convention; Leave the harmless reindexing implicit.
 - **Uncertainty:** No mathematical uncertainty; only the preferred expository convention is open.
 - **Precise review question:** Is the Marathi clarification sufficient, or would explicitly renaming one parameter make the proof easier without obscuring source fidelity?
+
+## OLSIZ-003 — OLP-0031
+
+- **Source location:** `content/sets-functions-relations/size-of-sets/pairing.tex:107-108`.
+- **Target location:** `mr/content/sets-functions-relations/size-of-sets/pairing.tex:106-111`.
+- **Finding:** A pairing function is defined as an injection A×B to Nat. Its inverse is therefore generally only a partial function on Nat, so the inverse itself is not an enumeration unless the pairing function is also surjective.
+- **Chosen action:** The Marathi exercise handles the surjective case directly and asks in the general case to use the range-restricted inverse to prove A×B enumerable; an adjacent reader note explains the correction. Frozen English remains unchanged.
+- **Alternatives considered:** Strengthen the earlier pairing-function definition to bijection; Add surjectivity only to the exercise and omit the general injective case; Preserve the false exercise silently.
+- **Uncertainty:** No mathematical uncertainty; only the preferred pedagogical repair remains open.
+- **Precise review question:** Is the two-part Marathi repair the clearest way to retain the useful general injection result, or should the exercise simply assume a bijective pairing function?
+
+## OLSIZ-004 — OLP-0032
+
+- **Source location:** `content/sets-functions-relations/size-of-sets/pairing-alt.tex:39`.
+- **Target location:** `mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:42-46`.
+- **Finding:** After processing pairs with first coordinates 0 and 1, the source says to enter pairs 〈2,m〉, 〈2,m〉, etc. The completed table contains 〈2,0〉 and then 〈3,0〉, so the second family must advance to first coordinate 3 and continue upward.
+- **Chosen action:** The Marathi prose states that the first coordinate increases through 3, 4, and so on, while retaining both frozen formula occurrences and adding an adjacent stable reader note.
+- **Alternatives considered:** Silently change the second displayed 〈2,m〉 formula to 〈3,m〉; Preserve the duplicate without explanation.
+- **Uncertainty:** Very low about the intended progression; only the preferred editorial presentation remains open.
+- **Precise review question:** Should a future source-authorized edition replace the second 〈2,m〉 with 〈3,m〉, or retain the formula-preserving correction note used here?
+
+## OLSIZ-005 — OLP-0032
+
+- **Source location:** `content/sets-functions-relations/size-of-sets/pairing-alt.tex:20-27`.
+- **Target location:** `mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:18-26`.
+- **Finding:** The prose calls 〈0,2〉 the second pair placed after 〈0,0〉, but the immediately following table places 〈0,1〉 in that position and 〈0,2〉 only in the third occupied cell.
+- **Chosen action:** The Marathi prose identifies 〈0,1〉 as intended, preserves the frozen 〈0,2〉 formula as an explicitly identified source reading, and adds an adjacent stable reader note.
+- **Alternatives considered:** Silently replace the displayed 〈0,2〉 formula with 〈0,1〉; Translate the inconsistency without explanation.
+- **Uncertainty:** Very low because the table and the indexed sequence agree; only correction style remains open.
+- **Precise review question:** Should a future source-authorized edition directly replace the prose's 〈0,2〉 with 〈0,1〉, or retain the formula-preserving explanation?

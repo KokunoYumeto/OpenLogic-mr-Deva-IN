@@ -1,0 +1,128 @@
+% Part:sets-functions-relations
+% Chapter: size-of-sets
+% Section: zig-zag
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{zigzag}
+
+\olsection{कँटर यांची नागमोडी पद्धत}
+
+\begin{explain}
+काही ``सोप्या'' प्रगणनांचा आपण आधीच विचार केला आहे. आता जरा कठीण
+उदाहरण पाहू. नैसर्गिक संख्यांच्या जोड्यांचा संच विचारात घ्या
+\oliflabeldef{sfr:set:pai:sec}{; त्याची व्याख्या आपण
+\olref[set][pai]{sec} मध्ये पुढीलप्रमाणे केली:}{; त्याची व्याख्या पुढीलप्रमाणे आहे:}
+\[
+\Nat \times \Nat = \Setabs{\tuple{n,m}}{n,m \in \Nat}
+\]
+या क्रमित जोड्या आपण पुढीलप्रमाणे एका \emph{सरणीत} मांडू शकतो:
+\[
+\begin{array}{ c | c | c | c | c | c}
+& \mathbf 0 & \mathbf 1 & \mathbf 2 & \mathbf 3 & \dots \\
+\hline
+\mathbf 0 & \tuple{0,0} & \tuple{0,1} & \tuple{0,2} & \tuple{0,3} & \dots \\
+\hline
+\mathbf 1 & \tuple{1,0} & \tuple{1,1} & \tuple{1,2} & \tuple{1,3} & \dots \\
+\hline
+\mathbf 2 & \tuple{2,0} & \tuple{2,1} & \tuple{2,2} & \tuple{2,3} & \dots \\
+\hline
+\mathbf 3 & \tuple{3,0} & \tuple{3,1} & \tuple{3,2} & \tuple{3,3} & \dots \\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots\\
+\end{array}
+\]
+$\Nat \times \Nat$ मधील प्रत्येक क्रमित जोडी या सरणीत नेमकी एकदाच
+येईल, हे स्पष्ट आहे. विशेषतः, $\tuple{n,m}$ ही जोडी $n$ व्या ओळीत
+आणि $m$ व्या स्तंभात येईल. पण अशा सरणीतील घटकांची ``एकमितीय'' यादी
+कशी करायची? पुढील सरणीतील नमुना ती करण्याचा एक मार्ग दाखवतो
+(अर्थातच इतर अनेक मार्गही आहेत):
+\[
+\begin{array}{ c | c | c | c | c | c | c}
+& \mathbf 0 & \mathbf 1 & \mathbf 2 & \mathbf 3 & \mathbf 4 &\dots \\
+\hline
+\mathbf 0 & 0  & 1& 3 & 6& 10 &\ldots \\
+\hline
+\mathbf 1 &2 & 4& 7 & 11 & \dots &\ldots \\
+\hline
+\mathbf 2 & 5 & 8 & 12 & \ldots & \dots&\ldots \\
+\hline
+\mathbf 3 & 9 & 13 & \ldots & \ldots & \dots & \ldots \\
+\hline
+\mathbf 4 & 14 & \ldots & \ldots & \ldots & \dots & \ldots \\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots&\ldots & \ddots\\
+\end{array}
+\]\noindent
+या नमुन्याला \emph{कँटर यांची नागमोडी पद्धत} म्हणतात. तो
+$\Nat \times \Nat$ चे पुढीलप्रमाणे प्रगणन करतो:
+\[
+\tuple{0,0}, \tuple{0,1}, \tuple{1,0}, \tuple{0,2}, \tuple{1,1},
+\tuple{2,0}, \tuple{0,3}, \tuple{1,2}, \tuple{2,1}, \tuple{3,0}, \dots
+\]
+यावरून पुढील विधान सिद्ध होते:
+\end{explain}
+
+\begin{prop}\ollabel{natsquaredenumerable}
+$\Nat \times \Nat$ हा !!{enumerable} आहे.
+\end{prop}
+
+\begin{proof}
+प्रत्येक $k \in \Nat$ ला कँटर यांच्या नागमोडी सरणीतील ज्या $n$ व्या
+ओळीच्या आणि $m$ व्या स्तंभाच्या जागेचे मूल्य $k$ आहे, त्या
+$\tuple{n,m} \in \Nat \times \Nat$ या क्रमित घटकाशी जोडणारे
+$f \colon \Nat \to \Nat\times\Nat$ असे फलन घ्या.
+\end{proof}
+
+\begin{explain}
+ही पद्धत अधिक व्यापक बाबतीतही सहज लागू होते. उदाहरणार्थ, नैसर्गिक
+संख्यांच्या क्रमित तीन-घटकसमूहांचा पुढील संच प्रगणित करण्यासाठी ती
+वापरता येते:
+\[
+\Nat \times \Nat \times \Nat = \Setabs{\tuple{n,m,k}}{n,m,k \in \Nat}
+\]
+$\Nat \times \Nat \times \Nat$ हा $\Nat \times \Nat$ आणि $\Nat$
+यांचा कार्तीय गुणाकार आहे असे आपण मानतो; म्हणजे,
+\[
+\Nat^3 = (\Nat \times \Nat) \times \Nat =
+\Setabs{\tuple{\tuple{n,m},k}}{n, m, k
+  \in \Nat }
+\]
+म्हणून एका अक्षाला $\Nat$ चे प्रगणन आणि दुसऱ्या अक्षाला $\Nat^2$
+चे प्रगणन अशी नावे देऊन, एका सरणीच्या साहाय्याने $\Nat^3$ चे
+प्रगणन करता येते:
+\[
+\begin{array}{ c | c | c | c | c | c}
+& \mathbf 0 & \mathbf 1 & \mathbf 2 & \mathbf 3 & \dots \\
+\hline
+\mathbf{\tuple{0,0}} & \tuple{0,0,0} & \tuple{0,0,1} & \tuple{0,0,2} & \tuple{0,0,3} & \dots \\
+\hline
+\mathbf{\tuple{0,1}} & \tuple{0,1,0} & \tuple{0,1,1} & \tuple{0,1,2} & \tuple{0,1,3} & \dots \\
+\hline
+\mathbf{\tuple{1,0}} & \tuple{1,0,0} & \tuple{1,0,1} & \tuple{1,0,2} & \tuple{1,0,3} & \dots \\
+\hline
+\mathbf{\tuple{0,2}} & \tuple{0,2,0} & \tuple{0,2,1} & \tuple{0,2,2} & \tuple{0,2,3} & \dots\\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots \\
+\end{array}
+\]
+अशा रीतीने कँटर यांच्या नागमोडी पद्धतीसारखी पद्धत वापरून $\Nat^3$
+चे प्रगणन मिळते. ही प्रक्रिया पुढे चालू ठेवून, प्रत्येक नैसर्गिक संख्या
+$n$ साठी $\Nat^n$ चे प्रगणन मिळवता येते. म्हणून पुढील विधान मिळते:
+\end{explain}
+
+\begin{prop}
+प्रत्येक $n \in \Nat$ साठी $\Nat^n$ हा !!{enumerable} आहे.
+\end{prop}
+
+\begin{prob}\label{sfr:siz:zigzag:prob:posint-n}
+प्रत्येक $n \in \Nat$ साठी $(\PosInt)^n$ हा !!{enumerable} आहे, हे दाखवा.
+\end{prob}
+
+\begin{prob}\label{sfr:siz:zigzag:prob:posint-star}
+  $(\PosInt)^*$ हा !!{enumerable} आहे, हे दाखवा. तुम्ही \cref{sfr:siz:zigzag:prob:posint-n} गृहीत धरू शकता.
+\end{prob}
+
+\end{document}

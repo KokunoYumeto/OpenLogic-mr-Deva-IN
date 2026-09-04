@@ -12,9 +12,9 @@ commission covers all 722 content TeX units at upstream revision
 `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. The cumulative release covers 16/722
 units (190 content segments). Source IDs and paths remain aligned to the frozen corpus.
 
-Editable work on the main branch has progressed through OLP-0029: **26/722 units**
-and 314 aligned content blocks. The Functions chapter is complete in source form;
-Size of Sets is in progress. These ten additional units are not yet represented as
+Editable work on the main branch has progressed through OLP-0033: **30/722 units**
+and 365 aligned content blocks. The Functions chapter is complete in source form;
+the first six reader sections of Size of Sets are translated. These fourteen additional units are not yet represented as
 a rendered or released cumulative reader.
 
 - **Current release:** [संच आणि संबंध — PDF, offline HTML and sources](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/foundations-v0.2).
@@ -40,7 +40,7 @@ precedence over conventions in language witnesses: in particular, OpenLogic's
 natural numbers include zero.
 
 The two published chapters have 190 aligned content segments with consultation
-records. Current editable source has 314 such records across 26 units.
+records. Current editable source has 365 such records across 30 units.
 Deterministic checks compare formulas, token identities, macro inventories,
 labels, citations, links and source file references.
 Visual, structural and semantic checks are documented in
@@ -58,7 +58,7 @@ assistive-technology behavior remain unverified because the available browser's
 URL security policy denied local-file access. Static checks are not represented
 as a browser test. Three inherited source notation issues in the published reader
 are explained in a separate editorial section. The current expert-review ledger
-also records five Functions corrections and two Size of Sets observations;
+also records five Functions corrections and five Size of Sets observations;
 frozen English bytes remain unchanged.
 
 Canon originals are local research evidence. They are **not redistributed here**.
@@ -77,6 +77,13 @@ python tools/prepare_foundations.py
 ./tools/build_guarded.ps1 -Target foundations
 python tools/prepare_html.py
 python tools/qa_html.py
+```
+
+The in-progress four-chapter reader can be prepared and built through OLP-0033 with:
+
+```powershell
+python tools/prepare_core.py
+./tools/build_guarded.ps1 -Target core
 ```
 
 The guarded builder reserves `Global\InterlanguageTeXSlotV1` with one bounded
