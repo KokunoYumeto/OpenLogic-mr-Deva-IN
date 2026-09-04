@@ -1,0 +1,101 @@
+{
+  "github": {
+    "schema": "openlogic-public-byte-verification/1",
+    "verified_utc": "2026-09-04T16:16:28.560186+00:00",
+    "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+    "public": true,
+    "commit": "5571e5008ee82e8f0b58c752f330be9f2318c28e",
+    "release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/foundations-v0.2",
+    "release_assets": [
+      {
+        "filename": "openlogic-mr-foundations.pdf",
+        "bytes": 135836,
+        "sha256": "56322181390cfbf164ce5b7a8431e30db7b6ae5ddf6100df13c8ab5464022754",
+        "public_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/foundations-v0.2/openlogic-mr-foundations.pdf",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-foundations-html.zip",
+        "bytes": 620642,
+        "sha256": "ae25b02bbb1a742ba0eec7d95a18164ebd354af14f9cad2ea597ee9ce7ace5fa",
+        "public_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/foundations-v0.2/openlogic-mr-foundations-html.zip",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-foundations-editable-sources.zip",
+        "bytes": 3407220,
+        "sha256": "3480fdd18a164123474d92fea61b5b03ec96bbe85b020efcd2578b26798d5577",
+        "public_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/foundations-v0.2/openlogic-mr-foundations-editable-sources.zip",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "SHA256SUMS.txt",
+        "bytes": 310,
+        "sha256": "f899797fb91f2ee3ff87b0aec54238a65d8ee484e47458580c38500133605953",
+        "public_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/foundations-v0.2/SHA256SUMS.txt",
+        "verified_anonymously": true
+      }
+    ],
+    "archive": {
+      "url": "https://api.github.com/repos/KokunoYumeto/OpenLogic-mr-Deva-IN/zipball/5571e5008ee82e8f0b58c752f330be9f2318c28e",
+      "bytes": 10098695,
+      "sha256": "1226d35df17d877c2d170ea65983bbcd12d54c80471936dfd08df66e32601e6c",
+      "verified_source_files": 859,
+      "manifest_bytes_match": true
+    },
+    "source_package_files_verified": 860,
+    "html_package_files_verified": 11,
+    "hub_reciprocal_link_present": true,
+    "hub_readme_sha256": "f37120073e3743267d27426a89aead20fbbccf00ff984088bcc8d77e866f1095",
+    "authentication": "None; urllib without Authorization or cookies"
+  },
+  "zenodo": {
+    "schema": "openlogic-zenodo-public-readback/1",
+    "verified_utc": "2026-09-04T16:21:26.999466+00:00",
+    "record_id": 22307961,
+    "record_url": "https://zenodo.org/records/22307961",
+    "doi": "10.5281/zenodo.22307961",
+    "conceptdoi": "10.5281/zenodo.22307960",
+    "access": "open",
+    "metadata_title": "OpenLogic in Marathi (mr-Deva-IN): Sets and Relations — foundations v0.2, 16 of 722 source units",
+    "files": [
+      {
+        "filename": "openlogic-mr-foundations.pdf",
+        "bytes": 135836,
+        "sha256": "56322181390cfbf164ce5b7a8431e30db7b6ae5ddf6100df13c8ab5464022754",
+        "public_url": "https://zenodo.org/api/records/22307961/files/openlogic-mr-foundations.pdf/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-foundations-html.zip",
+        "bytes": 620642,
+        "sha256": "ae25b02bbb1a742ba0eec7d95a18164ebd354af14f9cad2ea597ee9ce7ace5fa",
+        "public_url": "https://zenodo.org/api/records/22307961/files/openlogic-mr-foundations-html.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-foundations-editable-sources.zip",
+        "bytes": 3407220,
+        "sha256": "3480fdd18a164123474d92fea61b5b03ec96bbe85b020efcd2578b26798d5577",
+        "public_url": "https://zenodo.org/api/records/22307961/files/openlogic-mr-foundations-editable-sources.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "SHA256SUMS.txt",
+        "bytes": 310,
+        "sha256": "f899797fb91f2ee3ff87b0aec54238a65d8ee484e47458580c38500133605953",
+        "public_url": "https://zenodo.org/api/records/22307961/files/SHA256SUMS.txt/content",
+        "verified_anonymously": true
+      }
+    ],
+    "metadata_response_sha256": "8e6cd1249fa6ace866d266852618c8521db2973d6b0b59345c7f714430b8d4d8",
+    "authentication": "None; urllib without Authorization header or cookies"
+  },
+  "coverage": {
+    "translated_units": 16,
+    "total_units": 722,
+    "remaining_units": 706,
+    "content_segments": 190
+  },
+  "lineage": "Public and authenticated narrow searches found no matching Marathi OpenLogic record. One edition concept was created; later versions will reuse it."
+}

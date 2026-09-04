@@ -13,6 +13,7 @@ commission covers all 722 content TeX units at upstream revision
 units (190 content segments). Source IDs and paths remain aligned to the frozen corpus.
 
 - **Current release:** [संच आणि संबंध — PDF, offline HTML and sources](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/foundations-v0.2).
+- **DOI mirror:** [10.5281/zenodo.22307961](https://doi.org/10.5281/zenodo.22307961); [edition concept DOI](https://doi.org/10.5281/zenodo.22307960) for future versions.
 - **PDF:** [22-page cumulative reader](releases/foundations-v0.2/openlogic-mr-foundations.pdf).
 - **Offline HTML:** download and extract `openlogic-mr-foundations-html.zip`, then open `index.html`.
 - **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/) and [relations](mr/content/sets-functions-relations/relations/).
