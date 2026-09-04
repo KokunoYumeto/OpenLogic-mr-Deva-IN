@@ -1,0 +1,227 @@
+{
+  "input_units": [
+    {
+      "unit_id": "OLP-0004",
+      "path": "mr/content/sets-functions-relations/sets/sets.tex",
+      "sha256": "21784c3a578849ff1a59ceba2e9a264c956947c2b829c3cd55d07ba39b768bfa"
+    },
+    {
+      "unit_id": "OLP-0005",
+      "path": "mr/content/sets-functions-relations/sets/basics.tex",
+      "sha256": "cc9e7f18fe9b56a3213c5356d21a861038bd1fd965026d136acc6c619b020a3f"
+    },
+    {
+      "unit_id": "OLP-0006",
+      "path": "mr/content/sets-functions-relations/sets/subsets.tex",
+      "sha256": "17d44644566ff3fa483a08d8ec126d8bc882be80ab18402276c138daa06ac439"
+    },
+    {
+      "unit_id": "OLP-0007",
+      "path": "mr/content/sets-functions-relations/sets/important-sets.tex",
+      "sha256": "2b2826771aee726d61b447519dafa3bc86267ae5d31e701b2fb570bd25e471b6"
+    },
+    {
+      "unit_id": "OLP-0008",
+      "path": "mr/content/sets-functions-relations/sets/unions-and-intersections.tex",
+      "sha256": "3b9cdaa40936cf4bbaad21f7ac3207b87734fa413fdc5a60d150086753827e1c"
+    },
+    {
+      "unit_id": "OLP-0009",
+      "path": "mr/content/sets-functions-relations/sets/pairs-and-products.tex",
+      "sha256": "c0f55492bdffe4c5fd56d7b5fd3c7705067f3b5fea94ef2ef26eef6f9f838ab4"
+    },
+    {
+      "unit_id": "OLP-0010",
+      "path": "mr/content/sets-functions-relations/sets/russells-paradox.tex",
+      "sha256": "1a90616118306c08155762475539a3eb184ac64429242d41cbb25083b666c9ab"
+    },
+    {
+      "unit_id": "OLP-0011",
+      "path": "mr/content/sets-functions-relations/relations/relations-complete.tex",
+      "sha256": "b046b80ac5e8d80f4592ae5b542423926a24d6aa9dfc80654f32667155937771"
+    },
+    {
+      "unit_id": "OLP-0012",
+      "path": "mr/content/sets-functions-relations/relations/relations-as-sets.tex",
+      "sha256": "79011c7103c94d7589e71db510f7fc66d0e20ce60a10e5015ea78a8e4a5d182b"
+    },
+    {
+      "unit_id": "OLP-0013",
+      "path": "mr/content/sets-functions-relations/relations/reflections.tex",
+      "sha256": "71df76f45bb3914cd3ab727b23b16906877bdbd242626163969313d6ca88fc27"
+    },
+    {
+      "unit_id": "OLP-0014",
+      "path": "mr/content/sets-functions-relations/relations/special-properties.tex",
+      "sha256": "84cac360ba896f06ed6579fad40e396d79999f09f78970a4b217e7b3785ed13a"
+    },
+    {
+      "unit_id": "OLP-0015",
+      "path": "mr/content/sets-functions-relations/relations/equivalence-relations.tex",
+      "sha256": "c6022f25bc5fdc6fa07aeff03fe8d53f822b67a147d9dc63537819c68f843f9f"
+    },
+    {
+      "unit_id": "OLP-0016",
+      "path": "mr/content/sets-functions-relations/relations/orders.tex",
+      "sha256": "c609fb91d21b9873cd04725fb20cd8ba18b3ced66b9e3026af24dd6f1863ea36"
+    },
+    {
+      "unit_id": "OLP-0017",
+      "path": "mr/content/sets-functions-relations/relations/graphs.tex",
+      "sha256": "f74cf58294abdca142b56bf8d1889c845426261fb983057323e10360c16c2537"
+    },
+    {
+      "unit_id": "OLP-0018",
+      "path": "mr/content/sets-functions-relations/relations/trees.tex",
+      "sha256": "0fc33d52ebb3680000d5d917d5fc11ffb4f2db585fb20647768da815b2b10c22"
+    },
+    {
+      "unit_id": "OLP-0019",
+      "path": "mr/content/sets-functions-relations/relations/operations.tex",
+      "sha256": "cd39ee393a24d7005bbb18ea0ea2b6d6d5751e791462412a13a234cb33d28ba4"
+    },
+    {
+      "unit_id": "OLP-0020",
+      "path": "mr/content/sets-functions-relations/functions/functions.tex",
+      "sha256": "0df2102f15775d3bc62db5d05efea78f6e2f77d2e734f7d85a29ca02de88075b"
+    },
+    {
+      "unit_id": "OLP-0021",
+      "path": "mr/content/sets-functions-relations/functions/function-basics.tex",
+      "sha256": "c565a8b3f0fe6ee11f96d4e75a85dbb68a0af19c40e36abddeb192820c3f5b58"
+    },
+    {
+      "unit_id": "OLP-0022",
+      "path": "mr/content/sets-functions-relations/functions/function-kinds.tex",
+      "sha256": "64476fe81c8f88f7b271faca2f1ba66db83e180a148c31d93df96cb4c60ecf0f"
+    },
+    {
+      "unit_id": "OLP-0023",
+      "path": "mr/content/sets-functions-relations/functions/functions-relations.tex",
+      "sha256": "310740da7515c2eb429b3a7240bd0ec8750b07a0e7518d7d442c8d7676b03c8c"
+    },
+    {
+      "unit_id": "OLP-0024",
+      "path": "mr/content/sets-functions-relations/functions/inverses.tex",
+      "sha256": "a8e61fab02682fad503a3a228e22bf456f4e3f99ea222999d476ac3cd33454a7"
+    },
+    {
+      "unit_id": "OLP-0025",
+      "path": "mr/content/sets-functions-relations/functions/composition.tex",
+      "sha256": "10d0d4dca6c74c38a25232501999a64f5f3f8d5f2511f4f5fc116eb5aa30a337"
+    },
+    {
+      "unit_id": "OLP-0026",
+      "path": "mr/content/sets-functions-relations/functions/partial-functions.tex",
+      "sha256": "d0c4479b94016825ed5e76028878dfdfa53b598801b0b7123240410d97048026"
+    },
+    {
+      "unit_id": "OLP-0027",
+      "path": "mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex",
+      "sha256": "aa9d482149441ac42305ae1b4de1a65854019e0e15735f77e65a0864593585c4"
+    },
+    {
+      "unit_id": "OLP-0028",
+      "path": "mr/content/sets-functions-relations/size-of-sets/introduction.tex",
+      "sha256": "827d7fc9a9f834cc4b7e0c46578b06d59fa0e5ed53a1c2028ba93a3a90b1b827"
+    },
+    {
+      "unit_id": "OLP-0029",
+      "path": "mr/content/sets-functions-relations/size-of-sets/enumerability.tex",
+      "sha256": "ae0660be31b32a915f2ce98618a49dd79f6780d89af632430cce224e4a7eca28"
+    },
+    {
+      "unit_id": "OLP-0030",
+      "path": "mr/content/sets-functions-relations/size-of-sets/zig-zag.tex",
+      "sha256": "31aa9da1c54210a75a88d57c21dd195c1680780817ae589cb79a0ef3ef0465c7"
+    },
+    {
+      "unit_id": "OLP-0031",
+      "path": "mr/content/sets-functions-relations/size-of-sets/pairing.tex",
+      "sha256": "d6b49a8d690c26368bb8858a2dea07f9b29cdbdaf4a2a942d5ae0b47a652bf98"
+    },
+    {
+      "unit_id": "OLP-0032",
+      "path": "mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex",
+      "sha256": "85c21ae38ea5c88e81b57aa0f6e8e6f8ffd007df768ddaa32fbf984c706ff44b"
+    },
+    {
+      "unit_id": "OLP-0033",
+      "path": "mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex",
+      "sha256": "a675f557f99fd70baa66f1c7954230cd987e6bb5a914aacf096d734ff7b63cdf"
+    },
+    {
+      "unit_id": "OLP-0034",
+      "path": "mr/content/sets-functions-relations/size-of-sets/reduction.tex",
+      "sha256": "8cf90f2eef20f7555a392cd8c270d55a54d4804b4f343471ec4cb8dcc3cc45c1"
+    },
+    {
+      "unit_id": "OLP-0035",
+      "path": "mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex",
+      "sha256": "72ddf6826f31f582b29b4e05f5fdc70d56b3d92cd004b6e788f514524ce7b040"
+    },
+    {
+      "unit_id": "OLP-0036",
+      "path": "mr/content/sets-functions-relations/size-of-sets/comparing-size.tex",
+      "sha256": "daf301e108adf21bcc4b4d90b7f4dd77d550bdbc494656605d9f9f96029b6c71"
+    },
+    {
+      "unit_id": "OLP-0037",
+      "path": "mr/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex",
+      "sha256": "732dfacfd9a78c49cb4dbdbc606032c567d8f63c43dd3c036dc8ca74054381cc"
+    }
+  ],
+  "scope": "34 source units, 30 reader sections, three complete chapters plus ten sections of Size of Sets",
+  "conditional_decisions": [
+    {
+      "label": "sfr:rel:ref:sec",
+      "branch": "true"
+    },
+    {
+      "label": "sfr:rel:ops:sec",
+      "branch": "true"
+    },
+    {
+      "label": "sth:choice::chap",
+      "branch": "false"
+    },
+    {
+      "label": "sfr:fun:inv:sec",
+      "branch": "true"
+    },
+    {
+      "label": "sfr:rel:ops:sec",
+      "branch": "true"
+    },
+    {
+      "label": "sfr:set:pai:sec",
+      "branch": "true"
+    },
+    {
+      "label": "sfr:siz:enm:defn:enumerable",
+      "branch": "true"
+    },
+    {
+      "label": "sfr:siz:nen-alt:thm:nonenum-pownat",
+      "branch": "false"
+    },
+    {
+      "label": "sfr:siz:nen:sec",
+      "branch": "true"
+    },
+    {
+      "label": "sfr:siz:nen:thm:nonenum-pownat",
+      "branch": "true"
+    },
+    {
+      "label": "sfr:siz:nen-alt:thm:nonenum-pownat",
+      "branch": "false"
+    },
+    {
+      "label": "sfr:cardinals:card-sb:sec",
+      "branch": "false"
+    }
+  ],
+  "source_issues": "Three Relations and five Functions notes; seven shared Size of Sets corrections and four Marathi-lane observations; one manager false positive retracted before application; aligned English source is unchanged",
+  "notation": "Function and cardinal-comparison macros copied from frozen upstream/open-logic-config.sty; composition applies first argument then second"
+}

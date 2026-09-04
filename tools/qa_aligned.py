@@ -28,3 +28,51 @@ def identifiers(t):
     return collections.Counter(keys)
 def check(a,b):
     return {'formula_multiset_parity':maths(a)==maths(b),'macro_multiset_parity':macros(a)==macros(b),'token_identity_parity':tokens(a)==tokens(b),'identifier_and_ref_option_parity':identifiers(a)==identifiers(b),'no_replacement_character':'\ufffd' not in b,'no_placeholder':not bool(re.search(r'\b(TODO|TBD|PLACEHOLDER)\b',b)),'nfc':unicodedata.normalize('NFC',b)==b}
+
+
+_DOCUMENTED_PROJECTIONS = {
+    'OLP-0029': [
+        ('0 & 1 & -1 & 2 & -2 & 3 & -3 & \\dots',
+         '0 & 1 & -1 & 2 & -2 & 3 & \\dots'),
+    ],
+    'OLP-0032': [
+        ('$\\tuple{3,m}$ जोड्या', '$\\tuple{2,m}$ जोड्या'),
+    ],
+    'OLP-0034': [
+        ('अनुक्रम~$s$ असू द्या', 'अनुक्रम~$s_{k}$ असू द्या'),
+        ('$s(n) = 1$', '$s_{k}(n) = 1$'),
+        ('$s(n) = 0$', '$s_k(n) = 0$'),
+        ('h(n) = \\underbrace{000\\dots0}_{\\text{$n$ वेळा $0$}}111\\dots',
+         'h(n) = \\underbrace{000\\dots0}_{\\text{$n$ वेळा $0$}}'),
+    ],
+    'OLP-0035': [
+        ('$f(x) = y$ अशी पूर्वप्रतिमा', '$g(x) = y$ अशी पूर्वप्रतिमा'),
+    ],
+    'OLP-0036': [
+        ('प्रत्येक $x \\in A$ साठी $x \\in g(x)$',
+         'प्रत्येक $x \\in \\overline{A}$ साठी $x \\in g(x)$'),
+    ],
+}
+
+
+def project_documented_source_corrections(unit_id, text):
+    projected = text
+    applied = []
+    for corrected, frozen in _DOCUMENTED_PROJECTIONS.get(unit_id, []):
+        if corrected in projected:
+            projected = projected.replace(corrected, frozen)
+            applied.append((corrected, frozen))
+    return projected, applied
+
+
+def check_with_documented_source_corrections(unit_id, source, target):
+    projected, applied = project_documented_source_corrections(unit_id, target)
+    result = check(source, projected)
+    if applied:
+        result = {
+            'formula_multiset_parity_after_documented_source_correction_projection': result.pop('formula_multiset_parity'),
+            'macro_multiset_parity_after_documented_source_correction_projection': result.pop('macro_multiset_parity'),
+            **result,
+            'documented_source_correction_projection_applied': True,
+        }
+    return result

@@ -12,11 +12,12 @@ commission covers all 722 content TeX units at upstream revision
 `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. The cumulative release covers 16/722
 units (190 content segments). Source IDs and paths remain aligned to the frozen corpus.
 
-Editable work on the main branch has progressed through OLP-0036: **33/722 units**
-and 410 aligned translated content blocks. The Functions chapter is complete in
-source form, and Size of Sets has progressed through `comparing-size.tex`. These
-seventeen additional units are a verified source checkpoint; they are not yet
-represented as a rendered or released cumulative reader.
+Editable work on the main branch has progressed through OLP-0037: **34/722 units**
+and 416 aligned translated content blocks. The Functions chapter is complete in
+source form, and Size of Sets has progressed through `schroder-bernstein.tex`.
+These eighteen additional units form a verified source checkpoint. A clean
+48-page development reader was built twice to identical bytes and visually
+inspected, but it is not yet a released cumulative PDF/HTML reader.
 
 - **Current release:** [संच आणि संबंध — PDF, offline HTML and sources](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/foundations-v0.2).
 - **DOI mirror:** [10.5281/zenodo.22307961](https://doi.org/10.5281/zenodo.22307961); [edition concept DOI](https://doi.org/10.5281/zenodo.22307960) for future versions.
@@ -25,7 +26,7 @@ represented as a rendered or released cumulative reader.
 - **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/) and the [in-progress Size of Sets chapter](mr/content/sets-functions-relations/size-of-sets/).
 - **Terminology and expert review:** [human-readable ledger](provenance/EXPERT_REVIEW_LOG.md) and [machine-readable decisions](provenance/EXPERT_REVIEW_DECISIONS.jsonl). It records provisional choices and precise questions without making review a completion gate.
 - **Pristine English:** `upstream/`; this is source evidence, not translated coverage.
-- **Current source-checkpoint evidence:** `provenance/source-checkpoint-33/`.
+- **Current source-checkpoint evidence:** `provenance/source-checkpoint-34/`.
 - **Released-reader evidence:** `provenance/foundations-v0.2/`; root-level provenance remains the historical first release snapshot.
 - **Earlier release:** [sets-v0.1](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/sets-v0.1), preserved unchanged.
 - **International hub:** [OpenLogic translations](https://github.com/KokunoYumeto/OpenLogic-translations).
@@ -42,7 +43,7 @@ precedence over conventions in language witnesses: in particular, OpenLogic's
 natural numbers include zero.
 
 The two published chapters have 190 aligned content segments with consultation
-records. Current editable source has 410 such records across 33 units.
+records. Current editable source has 416 such records across 34 units.
 Deterministic checks compare formulas, token identities, macro inventories,
 labels, citations, links and source file references.
 Visual, structural and semantic checks are documented in
@@ -61,7 +62,9 @@ URL security policy denied local-file access. Static checks are not represented
 as a browser test. Three inherited source notation issues in the published reader
 are explained in a separate editorial section. The current expert-review ledger
 also records Functions and Size of Sets corrections and observations; frozen
-English bytes remain unchanged. The current source-checkpoint evidence explicitly
+English bytes remain unchanged. It also preserves the formal retraction of a
+shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The current
+source-checkpoint evidence explicitly
 distinguishes preserved original pages from hash-pinned short web observations
 whose origin HTML bytes were unavailable.
 
@@ -83,7 +86,7 @@ python tools/prepare_html.py
 python tools/qa_html.py
 ```
 
-The in-progress four-chapter reader can be prepared and built through OLP-0036 with:
+The in-progress four-chapter reader can be prepared and built through OLP-0037 with:
 
 ```powershell
 python tools/prepare_core.py
@@ -94,9 +97,10 @@ The guarded builder reserves `Global\InterlanguageTeXSlotV1` with one bounded
 timeout, captures its TeX process tree in a Windows job, holds the mutex through
 both passes and log checks, and releases it in `finally`. A busy slot launches
 no TeX. `SOURCE_DATE_EPOCH` is set for the child build and restored afterward.
-The adapter includes all novice, mathematics and computing passages. Two original
-cross-chapter conditionals take their original false branch in this chapter-only
-reader; the complete translated TeX retains both original branches. The HTML
+The adapter includes all novice, mathematics and computing passages. Four
+conditional occurrences whose referenced sections are not yet included take their
+original false branches in this partial reader; the complete translated TeX retains
+both original branches. The HTML
 diagram crops are pinned to this 22-page PDF layout and must be reinspected if
 pagination changes. The earlier sets-only build remains available through
 `prepare_sets.py` and the builder's default `sets` target.

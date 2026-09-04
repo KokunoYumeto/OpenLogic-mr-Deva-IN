@@ -1,0 +1,69 @@
+{
+  "schema": "openlogic-pdf-qa/1",
+  "artifact": "build/core/openlogic-mr-core.pdf",
+  "scope": {
+    "translation_source_units": 34,
+    "reader_sections": 30,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0037",
+    "released": false
+  },
+  "build": {
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "tex_input_sha256": "3931021c058f6157e26b061ee23ef9ed8eae156d61054e32a25347448d188e4d",
+    "source_date_epoch": "1788480000",
+    "passes_per_build": 2,
+    "first_success_result": "built-log-clean",
+    "first_success_receipt_sha256": "42717f166864fd6f87329066b838b24c9278bf98e51b95e51f27963de87c7ac0",
+    "first_success_final_log_sha256": "8e98fa1b61962a247a63ed88d34afc96ba71a1daadd0fb4c9933fd87b60f040a",
+    "second_success_result": "built-log-clean",
+    "second_success_receipt_sha256": "736c2ade96fd1fb38dc929610e885aabfcc49b1ba9218e390ba897ef70b9887c",
+    "reproducible_pdf_bytes": true,
+    "second_build_final_log_sha256": "8e98fa1b61962a247a63ed88d34afc96ba71a1daadd0fb4c9933fd87b60f040a"
+  },
+  "pdf": {
+    "bytes": 275082,
+    "sha256": "5eb661287a613c4a3d9051da5400471985fd2bfe51664d78acebea1b8989be91",
+    "pages": 48,
+    "page_size": "A4",
+    "encrypted": false,
+    "javascript": false,
+    "title": "मुक्त तर्कशास्त्र: संच, संबंध, फलने आणि संचांचे आकारमान",
+    "author": "Open Logic Project; Marathi machine translation by Codex"
+  },
+  "visual_review": {
+    "renderer": "Poppler pdftoppm",
+    "resolution_dpi": 96,
+    "all_pages_reviewed_in_contact_sheets": true,
+    "contact_sheets": 3,
+    "detail_pages_reviewed": [35, 38, 39, 43, 44, 45, 46, 47, 48],
+    "tables_and_formula_layout": "passed",
+    "marathi_shaping": "passed",
+    "headings_headers_footers_and_page_numbers": "passed",
+    "editorial_notes_and_references": "passed",
+    "clipping_overlap_black_boxes_or_unreadable_glyphs": 0
+  },
+  "font_review": {
+    "font_programs": 19,
+    "all_embedded": true,
+    "all_subset": true,
+    "marathi_fonts_have_unicode_maps": true,
+    "standard_computer_modern_symbol_fonts_without_unicode_maps": 2
+  },
+  "text_extraction": {
+    "tool": "Poppler pdftotext",
+    "utf8_bytes": 252949,
+    "characters": 113319,
+    "form_feeds": 48,
+    "replacement_characters": 0,
+    "unexpanded_glossary_tokens": 0,
+    "reader_note_literals": 0,
+    "todo_tbd_or_placeholder_hits": 0
+  },
+  "accessibility": {
+    "pdf_tagged": false,
+    "development_reader_only": true,
+    "disposition": "Do not publish this development PDF as the final accessible edition. A useful accessible HTML companion remains required for the complete release."
+  },
+  "result": "passed_for_unreleased_cumulative_reader_checkpoint"
+}

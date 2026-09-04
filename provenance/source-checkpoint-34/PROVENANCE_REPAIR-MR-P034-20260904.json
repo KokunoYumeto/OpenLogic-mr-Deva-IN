@@ -1,0 +1,73 @@
+{
+  "schema": "openlogic-provenance-repair/1",
+  "repair_id": "MR-P034-reduction-lexical-attestation",
+  "status": "applied_and_replayed",
+  "applied_utc": "2026-09-04T19:54:53.579139+00:00",
+  "trigger": "Independent manager audit found OLP-0034-B005 had no canon passage and T074 explicitly lacked attestation while aggregate QA still reported all 410 segments as having canon evidence.",
+  "authority": {
+    "url": "https://shabdakosh.marathi.gov.in/ananya-glossary/41/r",
+    "locator": "web-open lines 1479-1483",
+    "observed": "reduction — न्यूनीकरण",
+    "raw_origin_bytes_preserved": false,
+    "limitation": "The local curl attempt failed at DNS resolution; this repair makes no origin-byte claim and treats the evidence as a hash-pinned short observation."
+  },
+  "created_source_id": "MR-C022",
+  "created_passage_id": "MR-P034",
+  "observation": {
+    "bytes": 939,
+    "sha256": "3dc3c6d8871be2a0fc280ea61f28e3f7e914e8e25a8b0a62d0f579504086eda2"
+  },
+  "affected_segments": [
+    "OLP-0034-B005",
+    "OLP-0034-B006",
+    "OLP-0034-B007",
+    "OLP-0034-B008",
+    "OLP-0034-B009",
+    "OLP-0034-B010",
+    "OLP-0034-B011",
+    "OLP-0034-B014",
+    "OLP-0034-B015",
+    "OLP-0034-B016",
+    "OLP-0034-B017",
+    "OLP-0034-B018",
+    "OLP-0034-B019"
+  ],
+  "affected_segment_count": 13,
+  "translation_bytes_changed": false,
+  "before": {
+    "CANON_SOURCES.jsonl": {
+      "bytes": 11408,
+      "sha256": "b31621afb4d960b6c0f8ab7e39c1a406372df8a89460cbe1798efb01fd4e9b32"
+    },
+    "CANON_PASSAGES.jsonl": {
+      "bytes": 26251,
+      "sha256": "209e3746466d1177fee7474755002c73cdb85ebcc6ae73a895b7d15d5f53f923"
+    },
+    "TERM_DECISIONS.jsonl": {
+      "bytes": 36751,
+      "sha256": "6cf9c1e2635b3360c6de19dca2892a5df3569d1d29f615b6d8213ee200bc8bc9"
+    },
+    "SEGMENT_CANON_USE.jsonl": {
+      "bytes": 653746,
+      "sha256": "8c848d41b1fe3345c643545c8c53b3127007ab3c861e94f2aadd379ff6319f46"
+    }
+  },
+  "after": {
+    "CANON_SOURCES.jsonl": {
+      "bytes": 11909,
+      "sha256": "d94b06aebe21eea7022be9552de8d90423a479d98a02330f9260cb8a9b7ee99f"
+    },
+    "CANON_PASSAGES.jsonl": {
+      "bytes": 26417,
+      "sha256": "28be3b16dbdf5ea1143d37837e9546bd7d069adabb21afb54d51067f873c7c37"
+    },
+    "TERM_DECISIONS.jsonl": {
+      "bytes": 35498,
+      "sha256": "e1213df6f8b4e58ccd05469b1e0535da497465be2b3a133f5bcb67c7dc9f2a39"
+    },
+    "SEGMENT_CANON_USE.jsonl": {
+      "bytes": 632960,
+      "sha256": "5185a16dad2487d1556e0302d43f59cbf91dc34e8ed20284a9246349effcdac3"
+    }
+  }
+}

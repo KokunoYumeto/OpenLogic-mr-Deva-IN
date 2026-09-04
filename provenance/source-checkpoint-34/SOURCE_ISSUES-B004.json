@@ -1,0 +1,245 @@
+{
+  "schema": "openlogic-source-observations/1",
+  "batch": "MR-B004",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "policy": "Frozen English bytes remain untouched. Deterministic defects confirmed by the shared audit are repaired in Marathi bodies, carry adjacent stable keyed notes, and are verified by projecting only the documented deltas back to the frozen formula structure. Additional MRSIZ findings remain separately identified.",
+  "audit": {
+    "audit_id": "OLSIZ-20260904",
+    "findings_sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07",
+    "review_sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9",
+    "consultation_stage": "Exact frozen source and each immediately controlling formula, table, definition or proof scope were read; OLSIZ-001 through OLSIZ-007 are applied, while OLSIZ-008 through OLSIZ-010 are reserved for OLP-0039 and OLP-0040.",
+    "retractions": [
+      {
+        "retraction_id": "OLSIZ-011-RETRACTION-20260904",
+        "void_shared_identifier": "OLSIZ-011",
+        "retraction_sha256": "b495d66165f3c7f0b32d61b0b106c402badcc6e4e6a130442734c8f883dd5adc",
+        "tombstone_sha256": "b1b9f8ad296bc8d718a17514cdb91c61a8c1ea537a1231604f862551406b35bf",
+        "source_sha256": "a075f6c63879101314fb20fa493acfb38d78ff24095bb55914f2af4527e1ad3e",
+        "status": "false_positive_not_applied",
+        "public_provenance": "provenance/SOURCE_AUDIT_RETRACTIONS.json"
+      }
+    ]
+  },
+  "issues": [
+    {
+      "id": "OLSIZ-001",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-001",
+      "unit_id": "OLP-0029",
+      "source_locator": "content/sets-functions-relations/size-of-sets/enumerability.tex:145-153",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/enumerability.tex:145-153",
+      "classification": "confirmed_tabular_value_omission",
+      "finding": "The header and formula rows include f(7), whose value is -3, but the final value row stops at 3 and omits -3.",
+      "action": "Inserted the missing -3 beneath f(7) in the Marathi table and added the adjacent keyed note; frozen English bytes remain unchanged.",
+      "alternatives": [
+        "Leave the omission and annotate only",
+        "Change the frozen English table"
+      ],
+      "uncertainty": "None about the value; the controlling formula gives -3.",
+      "review_question": "Is the inserted -3 cell and adjacent Marathi source note the clearest correction?",
+      "required_translation_handling": "Add -3 in the value row and an adjacent OLSIZ-001 source-correction note.",
+      "mathematical_delta": {
+        "display_value_added": "-3"
+      }
+    },
+    {
+      "id": "MRSIZ-001",
+      "unit_id": "OLP-0029",
+      "source_locator": "content/sets-functions-relations/size-of-sets/enumerability.tex:252-265",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/enumerability.tex:278",
+      "classification": "mathematically equivalent but implicit reindexing",
+      "finding": "The statement uses the finite initial segment 0 through n while the proof obtains 0 through n-1; the parameter is implicitly renamed.",
+      "action": "Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.",
+      "alternatives": [
+        "Normalize both endpoints",
+        "Leave the reindexing implicit"
+      ],
+      "uncertainty": "No mathematical uncertainty; this is a Marathi-lane explanatory observation outside the shared deterministic-defect list.",
+      "review_question": "Would an explicit parameter renaming be clearer than the current adjacent note?"
+    },
+    {
+      "id": "OLSIZ-002",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-002",
+      "unit_id": "OLP-0031",
+      "source_locator": "content/sets-functions-relations/size-of-sets/pairing.tex:91-96",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/pairing.tex:91-95",
+      "classification": "confirmed_grammatical_defect_clarified_by_following_formula",
+      "finding": "The phrase 'complement of a finite set Nat' is malformed and omits the relation between the finite set and Nat.",
+      "action": "Rendered the body as the complement in Nat of a finite subset of Nat and added the adjacent keyed note.",
+      "alternatives": [
+        "Translate the malformed phrase literally",
+        "Rely on the following equivalence without a note"
+      ],
+      "uncertainty": "None about the intended relation; the following formula controls it.",
+      "review_question": "Does the Marathi wording state both the ambient Nat and the finite-subset relation without redundancy?",
+      "required_translation_handling": "State 'the complement in Nat of a finite subset of Nat' (or an exact language-equivalent) and add an adjacent OLSIZ-002 note.",
+      "mathematical_delta": null
+    },
+    {
+      "id": "MRSIZ-002",
+      "unit_id": "OLP-0031",
+      "source_locator": "content/sets-functions-relations/size-of-sets/pairing.tex:107-108",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/pairing.tex:112",
+      "classification": "confirmed mathematical defect caused by injective-versus-bijective mismatch",
+      "finding": "A pairing function is defined only as an injection A×B→Nat, so its inverse is generally partial and is not an enumeration unless the pairing function is surjective.",
+      "action": "Separated the surjective case from the general range-restricted inverse argument and added an adjacent note.",
+      "alternatives": [
+        "Strengthen the definition to bijection",
+        "Assume surjectivity only in the exercise",
+        "Preserve the false claim"
+      ],
+      "uncertainty": "No mathematical uncertainty; this is an additional Marathi-lane finding outside the shared audit.",
+      "review_question": "Should the exercise retain both cases or simply assume a bijective pairing function?"
+    },
+    {
+      "id": "OLSIZ-003",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-003",
+      "unit_id": "OLP-0032",
+      "source_locator": "content/sets-functions-relations/size-of-sets/pairing-alt.tex:39-45",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:41-45",
+      "classification": "confirmed_typographical_duplication",
+      "finding": "The prose repeats the family (2,m) where it is enumerating successive rows.",
+      "action": "Replaced the second (2,m) occurrence by (3,m) in the Marathi body and added the adjacent keyed note.",
+      "alternatives": [
+        "Retain both (2,m) occurrences and explain in prose",
+        "Change the frozen English source"
+      ],
+      "uncertainty": "None; the following table fixes the intended row family.",
+      "review_question": "Is the direct (3,m) correction and note preferable to retaining the duplicated displayed family?",
+      "required_translation_handling": "Replace the second (2,m) by (3,m) and add an adjacent OLSIZ-003 note.",
+      "mathematical_delta": {
+        "removed": "\\tuple{2,m}",
+        "added": "\\tuple{3,m}"
+      }
+    },
+    {
+      "id": "MRSIZ-003",
+      "unit_id": "OLP-0032",
+      "source_locator": "content/sets-functions-relations/size-of-sets/pairing-alt.tex:20-27",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:26",
+      "classification": "high-confidence incorrect second-pair label",
+      "finding": "The prose calls (0,2) the second pair after (0,0), but the table places (0,1) in that position.",
+      "action": "Identified (0,1) as intended in prose while retaining the frozen formula occurrence and adding an adjacent note.",
+      "alternatives": [
+        "Directly replace the formula by (0,1)",
+        "Preserve the inconsistency silently"
+      ],
+      "uncertainty": "Very low; this is an additional Marathi-lane finding outside the shared audit.",
+      "review_question": "Should the displayed prose formula also be directly corrected to (0,1) in a future source-authorized edition?"
+    },
+    {
+      "id": "OLSIZ-004",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-004",
+      "unit_id": "OLP-0034",
+      "source_locator": "content/sets-functions-relations/size-of-sets/reduction.tex:47-69",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/reduction.tex:50-60",
+      "classification": "confirmed_undefined_index_in_function_definition",
+      "finding": "The definition calls f(Z) the sequence s_k although k is never bound or determined.",
+      "action": "Replaced the unbound s_k and s_k(n) forms by one bound output name s and s(n), and added the adjacent keyed note.",
+      "alternatives": [
+        "Use s_Z",
+        "Define a numerical k from Z",
+        "Retain the unbound subscript"
+      ],
+      "uncertainty": "No semantic uncertainty; an unsubscripted s was selected for the corrected notation.",
+      "review_question": "Would s_Z communicate dependence on Z more clearly than the chosen bound name s?",
+      "required_translation_handling": "Use one bound output name, such as s, consistently in the characteristic-sequence definition and add an adjacent OLSIZ-004 note.",
+      "mathematical_delta": {
+        "removed": [
+          "s_k",
+          "s_k(n)"
+        ],
+        "added": [
+          "s",
+          "s(n)"
+        ]
+      }
+    },
+    {
+      "id": "OLSIZ-005",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-005",
+      "unit_id": "OLP-0034",
+      "source_locator": "content/sets-functions-relations/size-of-sets/reduction.tex:85-100",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/reduction.tex:96-106",
+      "classification": "confirmed_codomain_error_finite_string_used_as_infinite_sequence",
+      "finding": "The displayed h(n) is explicitly a finite string of n zeros, but h is declared to map into the set of infinite binary sequences.",
+      "action": "Appended an explicit infinite tail of ones after the n initial zeros, making every displayed value an element of Bin^omega, and added the adjacent keyed note.",
+      "alternatives": [
+        "Use a constant all-zero sequence",
+        "Use n zeros followed by an alternating infinite tail",
+        "Retain the finite string"
+      ],
+      "uncertainty": "No codomain uncertainty; the chosen eventually-one family is one of several valid non-surjective examples.",
+      "review_question": "Is the n-zeros-then-ones family the clearest corrected non-surjective map for this warning?",
+      "required_translation_handling": "Use a valid infinite binary output and add an adjacent OLSIZ-005 note.",
+      "mathematical_delta": {
+        "display_tail_added": "an explicit infinite tail"
+      }
+    },
+    {
+      "id": "OLSIZ-006",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-006",
+      "unit_id": "OLP-0035",
+      "source_locator": "content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:68-94",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:72-100",
+      "classification": "confirmed_undefined_function_in_empty_set_branch",
+      "finding": "Two conditional variants refer to g(x)=y before g is introduced, although the bijection in scope is f.",
+      "action": "Replaced both premature g(x)=y occurrences by f(x)=y in the Marathi conditional branches and added one adjacent keyed note.",
+      "alternatives": [
+        "Avoid a named equation",
+        "Retain g and explain the typo"
+      ],
+      "uncertainty": "None; f is the only bijection in scope in both empty-set branches.",
+      "review_question": "Is the direct two-occurrence replacement by f(x)=y sufficiently clear in both retained branches?",
+      "required_translation_handling": "Replace both premature g(x)=y occurrences by f(x)=y and add an adjacent OLSIZ-006 note.",
+      "mathematical_delta": {
+        "occurrences": 2,
+        "removed": "g(x)=y",
+        "added": "f(x)=y"
+      }
+    },
+    {
+      "id": "MRSIZ-004",
+      "unit_id": "OLP-0035",
+      "source_locator": "content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:87-94",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:101",
+      "classification": "terminological inconsistency within alternative proof branch",
+      "finding": "The same finite domain is first called an initial sequence and later an initial segment; the preceding definition uses initial segment.",
+      "action": "Used आरंभीचा खंड consistently and added an adjacent note.",
+      "alternatives": [
+        "Translate the two English labels differently",
+        "Normalize silently"
+      ],
+      "uncertainty": "Very low; this is an additional Marathi-lane observation outside the shared audit.",
+      "review_question": "Should the frozen source normalize initial sequence to initial segment?"
+    },
+    {
+      "id": "OLSIZ-007",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-007",
+      "unit_id": "OLP-0036",
+      "source_locator": "content/sets-functions-relations/size-of-sets/comparing-size.tex:74-90",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:81-109",
+      "classification": "confirmed_wrong_domain_in_arbitrary_element_conclusion",
+      "finding": "After choosing arbitrary x in A, the source says the conclusion holds for each x in overline(A).",
+      "action": "Changed the Marathi conclusion to quantify over every x∈A and added the adjacent keyed note.",
+      "alternatives": [
+        "Rewrite the two cases without a displayed equivalence",
+        "Retain the too-narrow scope and explain it"
+      ],
+      "uncertainty": "None; excluding every possible input x∈A is required to prove the diagonal set is outside the range.",
+      "review_question": "Is the corrected universal scope over A sufficiently explicit in the Marathi proof?",
+      "required_translation_handling": "Quantify the conclusion over x in A and add an adjacent OLSIZ-007 note.",
+      "mathematical_delta": {
+        "removed": "x in overline(A)",
+        "added": "x in A"
+      }
+    }
+  ],
+  "external_upstream_report_submitted": false
+}
