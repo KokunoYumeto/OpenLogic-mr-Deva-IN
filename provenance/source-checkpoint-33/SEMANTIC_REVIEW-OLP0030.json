@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0030",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase; not independent or human review.",
+  "scope": "All eight translated content blocks of Cantor's zig-zag method, including both arrays, proof and exercises.",
+  "samples": [
+    {
+      "reverse_paraphrase": "Every ordered pair of naturals occupies exactly one row-column cell; following finite diagonals turns the two-dimensional array into a one-dimensional list.",
+      "checks": "Coordinates, zero-based row and column labels, cell numbers and traversal order remain unchanged."
+    },
+    {
+      "reverse_paraphrase": "The function sends each natural number k to the unique pair at the array cell labelled k, proving Nat squared enumerable.",
+      "checks": "Function direction is Nat to Nat×Nat; k is the cell value, not a coordinate."
+    },
+    {
+      "reverse_paraphrase": "Nat cubed is viewed as (Nat×Nat)×Nat; one array axis uses an enumeration of Nat and the other one of Nat squared.",
+      "checks": "Nested tuple association, all displayed triples and axis roles retained."
+    },
+    {
+      "reverse_paraphrase": "The method extends to every finite natural power; exercises ask for positive-integer powers and all finite positive-integer strings.",
+      "checks": "Both exact labels and cross-reference preserved; no solution added to an exercise."
+    }
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "T064 and T065 are provisional and have no exact specialist-label attestation.",
+    "The source leaves the n=0 power convention implicit; the translation preserves that scope without adding a new theorem claim."
+  ]
+}

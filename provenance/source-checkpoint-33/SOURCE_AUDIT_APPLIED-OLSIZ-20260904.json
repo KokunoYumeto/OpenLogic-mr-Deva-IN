@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-shared-source-audit-application/1",
+  "audit_id": "OLSIZ-20260904",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "findings_sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07",
+  "review_sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9",
+  "frozen_english_hashes_preserved": true,
+  "applied_findings": [
+    "OLSIZ-001",
+    "OLSIZ-002",
+    "OLSIZ-003",
+    "OLSIZ-004",
+    "OLSIZ-005",
+    "OLSIZ-006",
+    "OLSIZ-007"
+  ],
+  "reserved_findings": [
+    "OLSIZ-008",
+    "OLSIZ-009",
+    "OLSIZ-010"
+  ],
+  "additional_lane_findings": [
+    "MRSIZ-001",
+    "MRSIZ-002",
+    "MRSIZ-003",
+    "MRSIZ-004"
+  ],
+  "target_files": {
+    "content/sets-functions-relations/size-of-sets/enumerability.tex": "ae0660be31b32a915f2ce98618a49dd79f6780d89af632430cce224e4a7eca28",
+    "content/sets-functions-relations/size-of-sets/pairing.tex": "d6b49a8d690c26368bb8858a2dea07f9b29cdbdaf4a2a942d5ae0b47a652bf98",
+    "content/sets-functions-relations/size-of-sets/pairing-alt.tex": "85c21ae38ea5c88e81b57aa0f6e8e6f8ffd007df768ddaa32fbf984c706ff44b",
+    "content/sets-functions-relations/size-of-sets/reduction.tex": "8cf90f2eef20f7555a392cd8c270d55a54d4804b4f343471ec4cb8dcc3cc45c1",
+    "content/sets-functions-relations/size-of-sets/equinumerous-sets.tex": "28774d0ecd775b3f53ba73b987b25d04f872ff2bc8b67dc2967b6aed2951ebe5",
+    "content/sets-functions-relations/size-of-sets/comparing-size.tex": "1aba213b94caf8d2b3b0096f02ed668049ca8cd7cd94753d521394461578fdb2"
+  },
+  "qa_b004_sha256": "ee70e3699aa488ec0363399581e5720f4aabfd27231736a78d5be9f814ea65f7",
+  "source_issues_sha256": "6407926e5cec4ebb5751fdca6c714ee36a08fa536f181f943cc502ef819b6cae",
+  "segment_records": 410,
+  "all_documented_projection_checks_passed": true
+}

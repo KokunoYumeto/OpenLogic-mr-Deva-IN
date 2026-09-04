@@ -1,0 +1,119 @@
+% Part:sets-functions-relations
+% Chapter: size-of-sets
+% Section: equinumerous-sets
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{equ}
+
+\olsection{तुल्यबलता}
+
+संचांच्या ``आकारमाना''ची एक अंतःप्रज्ञ कल्पना आपल्याकडे आहे आणि ती
+सांत संचांसाठी व्यवस्थित चालते. पण अनंत संचांचे काय? \emph{कोणत्याही}
+आकारमानाच्या दोन संचांच्या आकारमानांची औपचारिक रीतीने तुलना करायची
+असेल, तर दोन संच एकाच आकारमानाचे कधी असतात याची व्याख्या प्रथम करणे
+योग्य ठरते. फ्रेगे यांचे पुढील उदाहरण पाहा:
+\begin{quote}
+  उपाहारगृहातील कर्मचाऱ्याला मेजावर ताटांइतक्याच सुऱ्या मांडल्या आहेत
+  याची खात्री करायची असेल, तर प्रत्येक ताटाच्या उजवीकडे एक सुरी ठेवून
+  आणि मेजावरील प्रत्येक सुरी कोणत्या तरी ताटाच्या उजवीकडे येईल असे
+  केल्यास त्याला ताटे किंवा सुऱ्या मोजण्याची गरज नसते. अशा प्रकारे
+  ताटे आणि सुऱ्या एकास-एक संगतीने परस्परांशी जोडली जातात, आणि तीही
+  त्याच अवकाशीय संबंधाने. \citep[\S70]{Frege1884}
+\end{quote}
+या उताऱ्यातील अंतर्दृष्टी पुढील औपचारिक व्याख्येत मांडता येते:
+
+\begin{defn}\ollabel{comparisondef}
+  $A$ हा $B$ शी \emph{तुल्यबल} असतो, आणि ते $\cardeq{A}{B}$ असे लिहितो,
+  तेव्हा आणि केवळ तेव्हाच, जेव्हा $f \colon A \to B$ असे
+  !!a{bijection} असते.
+\end{defn}
+
+\begin{prop}\ollabel{equinumerosityisequi}
+तुल्यबलता हा तुल्यता संबंध आहे.
+\end{prop}
+
+\begin{proof} 
+तुल्यबलता परावर्ती, सममित आणि संक्रमक आहे, हे दाखवावे लागेल. $A, B$
+आणि $C$ हे संच असू द्या.
+
+\emph{परावर्तिता.} प्रत्येक $x \in A$ साठी $\Id{A} (x) = x$ असे
+असलेले एकरूपता फलन $\Id{A} \colon A \to A$ हे !!a{bijection} आहे.
+म्हणून $\cardeq{A}{A}$.
+
+\emph{सममितता.} $\cardeq{A}{B}$ आहे, म्हणजे $f\colon A \to B$ असे
+!!a{bijection} आहे, असे समजा. $f$ हे !!{bijective} असल्याने त्याचे
+व्युत्क्रम $f^{-1}$ अस्तित्वात आहे आणि तेही !!{bijective} आहे. म्हणून
+$f^{-1}\colon B \to A$ हे !!a{bijection} आहे; त्यामुळे
+$\cardeq{B}{A}$.
+
+\emph{संक्रमकता.} $\cardeq{A}{B}$ आणि $\cardeq{B}{C}$ आहे, म्हणजे
+$f\colon A \to B$ आणि $g\colon B \to
+C$ अशी !!{bijection}s आहेत, असे समजा. मग संयोजन
+$\comp{f}{g}\colon A \to C$ हे !!{bijective} आहे; म्हणून
+$\cardeq{A}{C}$.
+\end{proof}
+
+\begin{prop}
+$\cardeq{A}{B}$ असेल, तर $A$ हा !!{enumerable} असतो तेव्हा आणि केवळ
+तेव्हाच $B$ तसा असतो.
+\end{prop}
+
+\begin{editorial}
+पुढील सिद्धतेत \olref[enm]{sec} समाविष्ट असेल, तर
+\olref[enm]{defn:enumerable} वापरली जाते; अन्यथा
+\olref[enm-alt]{defn:enumerable} वापरली जाते.
+\end{editorial}
+
+\begin{proof}
+$\cardeq{A}{B}$ आहे, म्हणून $f \colon A
+\to B$ असे काही !!{bijection} आहे, आणि $A$ हा !!{enumerable} आहे,
+असे समजा.
+\oliflabeldef{sfr:siz:enm:defn:enumerable}{
+  मग एकतर $A = \emptyset$ असतो, किंवा $g\colon \PosInt \to A$ असे
+  !!a{surjective} फलन असते. $A = \emptyset$ असेल, तर $B = \emptyset$
+  सुद्धा असतो (अन्यथा एखादा !!a{element}~$y \in B$ असेल,
+  पण $x \in A$ असा कोणताही घटक नसल्याने $f(x) = y$ अशी पूर्वप्रतिमा
+  मिळणार नाही). दुसरीकडे, $g\colon \PosInt \to A$ हे !!{surjective}
+  असेल, तर $\comp{g}{f} \colon \PosInt \to B$ हे !!{surjective} आहे.
+  हे पाहण्यासाठी $y \in B$ असू द्या. $f$ हे !!{surjective} असल्याने
+  $f(x) = y$ असा एखादा $x \in A$ घटक असतो. $g$ हे !!{surjective}
+  असल्याने $g(n) =
+  x$ अशी एखादी $n \in \PosInt$ संख्या असते. त्यामुळे
+\[
+(\comp{g}{f})(n) = f(g(n)) = f(x) = y
+\]
+  आणि म्हणून $\comp{g}{f}$ हे !!{surjective} आहे. $\comp{g}{f}$ हे~$B$
+  चे प्रगणन आहे; त्यामुळे $B$ हा !!{enumerable} आहे.}
+{
+  मग एकतर $A  = \emptyset$ असतो, किंवा ज्याची व्याप्ती $A$ आहे आणि
+  ज्याचा प्रांत $\Nat$ किंवा नैसर्गिक संख्यांचा आरंभीचा खंड आहे असे
+  !!a{bijection}~$g$ असते. $A = \emptyset$ असेल, तर $B =
+  \emptyset$ सुद्धा असतो (अन्यथा एखादा~$y \in B$ असेल, पण $x
+  \in A$ असा कोणताही घटक नसल्याने $f(x) = y$ अशी पूर्वप्रतिमा मिळणार
+  नाही). म्हणून आपल्याकडे !!{bijection}~$g$ आहे असे समजा. मग
+  $\comp{g}{f}$ हे !!a{bijection} आहे; त्याची व्याप्ती~$B$ आहे आणि
+  त्याचा प्रांत~$g$ च्या प्रांतासारखाच आहे (म्हणजे $\Nat$ किंवा त्याचा
+  आरंभीचा खंड). म्हणून $B$ हा !!{enumerable} आहे.}
+%READERNOTE{OLSIZ-006: गोठवलेल्या इंग्रजी सिद्धतेच्या दोन्ही पर्यायी शाखांतील रिक्त-संच प्रकरणात g(x)=y असे लिहिले आहे. त्या शाखेत g अजून अस्तित्वात नसते; A पासून B पर्यंतचे आधी दिलेले द्विएक फलन f वापरूनच B रिक्त असल्याचा निष्कर्ष मिळतो. मराठी मजकुरात दोन्ही ठिकाणी f(x)=y केले आहे.}
+%READERNOTE{MRSIZ-004: गोठवलेल्या पर्यायी शाखेत एकाच प्रांताला आधी “initial sequence of natural numbers” आणि नंतर “initial segment” म्हटले आहे. आधीच्या औपचारिक व्याख्येशी सुसंगत म्हणून मराठीत दोन्हीकडे “आरंभीचा खंड” वापरला आहे.}
+
+$B$ हा !!{enumerable} असेल, तर~$f$ ऐवजी
+!!{bijection} $f^{-1}\colon B \to A$ घेऊन तोच युक्तिवाद पुन्हा केल्यास
+$A$ हा !!{enumerable} आहे, हे मिळते.
+\end{proof}
+
+\begin{prob}
+$\cardeq{A}{C}$ आणि $\cardeq{B}{D}$ असेल, आणि $A \cap B =
+C \cap D = \emptyset$ असेल, तर $\cardeq{A \cup B}{C \cup D}$ आहे,
+हे दाखवा.
+\end{prob}
+
+\begin{prob}
+$A$ हा अनंत आणि !!{enumerable} असेल, तर $\cardeq{A}{\Nat}$ आहे, हे
+दाखवा.
+\end{prob}
+
+\end{document}

@@ -1,0 +1,117 @@
+{
+  "schema": "openlogic-translation-checkpoint/1",
+  "batch": "MR-B003",
+  "units": [
+    {
+      "unit_id": "OLP-0020",
+      "translation_bytes": 402,
+      "translation_sha256": "0df2102f15775d3bc62db5d05efea78f6e2f77d2e734f7d85a29ca02de88075b",
+      "segments": 1,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0021",
+      "translation_bytes": 12736,
+      "translation_sha256": "c565a8b3f0fe6ee11f96d4e75a85dbb68a0af19c40e36abddeb192820c3f5b58",
+      "segments": 17,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0022",
+      "translation_bytes": 6721,
+      "translation_sha256": "64476fe81c8f88f7b271faca2f1ba66db83e180a148c31d93df96cb4c60ecf0f",
+      "segments": 16,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0023",
+      "translation_bytes": 8665,
+      "translation_sha256": "310740da7515c2eb429b3a7240bd0ec8750b07a0e7518d7d442c8d7676b03c8c",
+      "segments": 12,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0024",
+      "translation_bytes": 13418,
+      "translation_sha256": "a8e61fab02682fad503a3a228e22bf456f4e3f99ea222999d476ac3cd33454a7",
+      "segments": 24,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0025",
+      "translation_bytes": 4160,
+      "translation_sha256": "10d0d4dca6c74c38a25232501999a64f5f3f8d5f2511f4f5fc116eb5aa30a337",
+      "segments": 8,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0026",
+      "translation_bytes": 4978,
+      "translation_sha256": "d0c4479b94016825ed5e76028878dfdfa53b598801b0b7123240410d97048026",
+      "segments": 9,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    }
+  ],
+  "total_translated_units": 23,
+  "total_segments": 283,
+  "remaining_units": 699,
+  "qa_sha256": "788b515cd47b801b13997fe50c375b21a331124ae2b06395e47fedf51ed219f1",
+  "reader_status": "pending",
+  "next_action": "Build cumulative Sets, Relations and Functions reader with all 23 translated source units and all diagrams. Add three separate Functions source-issue notes; preserve conditions and math macros. Use the global TeX mutex. Verify final PDF visually and reproducibly, update accessible HTML and publish the next worthwhile tranche in existing GitHub and Zenodo lineages; then continue OLP-0027 onward."
+}
