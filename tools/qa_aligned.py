@@ -12,11 +12,9 @@ def mask_text(t):
             elif t[j]=='}' and t[j-1]!='\\':depth-=1
             j+=1
         assert depth==0
-        if m.group(1)=='intertext':
-            body=t[start+m.end():j-1]
-            inner=sorted(re.sub(r'\s+','',s) for s in re.findall(r'(?<!\\)\$(.*?)(?<!\\)\$',body,re.S))
-            out+=t[start:a]+r'\intertext{TEXT MATH '+repr(inner)+'}'
-        else:out+=t[start:a]+r'\text{TEXT}'
+        body=t[start+m.end():j-1]
+        inner=sorted(re.sub(r'\s+','',s) for s in re.findall(r'(?<!\\)\$(.*?)(?<!\\)\$',body,re.S))
+        out+=t[start:a]+'\\'+m.group(1)+'{TEXT MATH '+repr(inner)+'}'
         start=j
 def maths(t):
     parts=re.findall(r'(?<!\\)\$(.*?)(?<!\\)\$|\\\[(.*?)\\\]|\\begin\{(?:align\*|multline\*)\}(.*?)\\end\{(?:align\*|multline\*)\}',t,re.S)

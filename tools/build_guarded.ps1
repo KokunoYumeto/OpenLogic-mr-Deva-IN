@@ -1,4 +1,4 @@
-param([int]$SlotTimeoutMilliseconds = 1500, [ValidateSet('sets','foundations')][string]$Target='sets')
+param([int]$SlotTimeoutMilliseconds = 1500, [ValidateSet('sets','foundations','core')][string]$Target='sets')
 $ErrorActionPreference = 'Stop'
 $repoPath = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $buildPath = [IO.Path]::GetFullPath((Join-Path $repoPath ('build\'+$Target)))

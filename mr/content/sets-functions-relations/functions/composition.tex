@@ -1,0 +1,69 @@
+% Part: sets-functions-relations
+% Chapter: functions
+% Section: composition
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{fun}{cmp}
+\olsection{फलनांचे संयोजन}
+
+\begin{explain}
+\oliflabeldef{sfr:fun:inv:sec}{\olref[inv]{sec} मध्ये आपण पाहिले की
+!!a{bijection}~$f$ चा व्युत्क्रम~$f^{-1}$ हाही एक फलन असतो.
+फलनांवरील आणखी एक क्रिया म्हणजे संयोजन: }{}$f$ आणि~$g$ या दोन
+फलनांचे संयोजन करून, म्हणजे आधी $f$ आणि मग~$g$ उपयोजून,
+एक नवे फलन परिभाषित करता येते. अर्थात, व्याप्ती आणि प्रांत यांचा मेळ
+असेल तेव्हाच हे शक्य असते; म्हणजे~$f$ ची व्याप्ती ही~$g$ च्या प्रांताचा
+उपसंच असली पाहिजे. \oliflabeldef{sfr:rel:ops:sec}{फलनांवरील ही क्रिया
+\olref[rel][ops]{sec} मधील संबंधांवरील सापेक्ष गुणाकाराच्या क्रियेशी
+समांतर आहे.}{}
+
+संयोजनाची कल्पना स्पष्ट करण्यासाठी आकृती उपयोगी पडू शकते.
+\olref{fig:composition} मध्ये $f \colon A \to B$ आणि $g \colon B \to C$
+ही दोन फलने आणि त्यांचे संयोजन~$(\comp{f}{g})$ दाखवले आहे.
+$(\comp{f}{g}) \colon A \to C$ हे फलन~$A$ मधील प्रत्येक !!{element}
+शी~$C$ मधील !!a{element} जोडते. $A$ मधील !!a{element} शी~$C$
+मधील कोणता !!{element} जोडायचा हे असे ठरवतो: आदान $x \in A$
+दिले असता, प्रथम~$x$ वर फलन $f$ उपयोजा. त्यामुळे काही
+$f(x) = y \in B$ हे प्रदान मिळेल. मग~$y$ वर फलन $g$ उपयोजा.
+त्यामुळे काही $g(f(x)) = g(y) = z \in C$ हे प्रदान मिळेल.
+\begin{figure}
+  \olasset[2\olphotowidth]{assets/diagrams/composition.tikz}
+  \caption{$f$ आणि~$g$ या दोन फलनांचे संयोजन $g \circ f$.}
+  \ollabel{fig:composition}
+\end{figure}
+\end{explain}
+
+\begin{defn}[संयोजन]
+$f\colon A \to B$ आणि $g\colon B \to C$ ही फलने असू द्या.
+$f$ चे~$g$ बरोबरचे \emph{संयोजन} म्हणजे $\comp{f}{g} \colon A \to C$,
+जेथे $(\comp{f}{g})(x) = g(f(x))$.
+\end{defn}
+
+\begin{ex}
+$f(x) = x + 1$ आणि $g(x) = 2x$ ही फलने विचारात घ्या.
+$(\comp{f}{g})(x) = g(f(x))$ असल्यामुळे प्रत्येक आदान~$x$ साठी
+प्रथम त्याची उत्तरवर्ती संख्या घेऊन नंतर तिला दोनने गुणले पाहिजे.
+म्हणून त्यांचे संयोजन $(\comp{f}{g})(x) = 2(x+1)$ असे मिळते.
+\end{ex}
+
+\begin{prob}
+$f \colon A \to B$ आणि $g \colon B \to C$ ही दोन्ही फलने
+!!{injective} असल्यास $\comp{f}{g}\colon A \to C$ हे
+!!{injective} असते, हे दाखवा.
+\end{prob}
+
+\begin{prob}
+$f \colon A \to B$ आणि $g \colon B \to C$ ही दोन्ही फलने
+!!{surjective} असल्यास $\comp{f}{g}\colon A \to C$ हे
+!!{surjective} असते, हे दाखवा.
+\end{prob}
+
+\begin{prob}
+$f \colon A \to B$ आणि $g \colon B \to C$ असे समजा.
+$\comp{f}{g}$ चा आलेख $R_f \mid R_g$ आहे हे दाखवा.
+\end{prob}
+
+\end{document}

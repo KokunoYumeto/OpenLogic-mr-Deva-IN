@@ -1,0 +1,1422 @@
+# Terminology and expert-review ledger
+
+This ledger accompanies the Marathi OpenLogic translation at frozen upstream revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. It is maintained for specialist review and correction; review is welcome but is not a completion or publication gate.
+
+The current editable-source coverage is **26/722 units** (OLP-0004–OLP-0029, 314 aligned translated content blocks). The current released reader remains the 16/722-unit `foundations-v0.2` tranche. Decisions without an applied location are pre-adjudications for later units. This is partial coverage and makes no full-corpus claim.
+
+For T001–T044, the rationale provenance is explicitly a **retrospective reconstruction** from the durable decision records and current aligned files. It is not represented as an original contemporaneous motive. T045 onward were recorded with their first current use. Aligned block scopes are exact locations governed by a unit-level decision index; they do not claim that the literal headword occurs in every listed block. Literal line hits are listed separately when found.
+
+Authorities below are only those actually consulted. A missing authority is stated as not checked/not found; no evidence is inferred from an unavailable dictionary or expert. The frozen English mathematics governs theorem meaning. All provisional choices remain open to correction.
+
+The public DOI record `10.5281/zenodo.22307961` predates this ledger. The next substantive, nonduplicative release will include it under the existing concept DOI `10.5281/zenodo.22307960`; no ledger-only release is created.
+
+## T001 — set
+
+- **Chosen wording:** संच
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted. This choice remains open to correction.
+- **Rationale:** Native mathematical and university usage; object collection meaning.
+- **Alternatives considered:** समुच्चय.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0004 B004: [English](../upstream/content/sets-functions-relations/sets/sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/sets.tex)
+  - OLP-0005 B004–B014: [English](../upstream/content/sets-functions-relations/sets/basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/basics.tex)
+  - OLP-0006 B004–B018: [English](../upstream/content/sets-functions-relations/sets/subsets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/subsets.tex)
+  - OLP-0007 B004–B009: [English](../upstream/content/sets-functions-relations/sets/important-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/important-sets.tex)
+  - OLP-0008 B004–B029: [English](../upstream/content/sets-functions-relations/sets/unions-and-intersections.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/unions-and-intersections.tex)
+  - OLP-0009 B004–B019: [English](../upstream/content/sets-functions-relations/sets/pairs-and-products.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/pairs-and-products.tex)
+  - OLP-0010 B004–B014: [English](../upstream/content/sets-functions-relations/sets/russells-paradox.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/russells-paradox.tex)
+  - OLP-0012 B004–B012: [English](../upstream/content/sets-functions-relations/relations/relations-as-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/relations-as-sets.tex)
+  - OLP-0013 B003–B008: [English](../upstream/content/sets-functions-relations/relations/reflections.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/reflections.tex)
+  - OLP-0014 B004–B015: [English](../upstream/content/sets-functions-relations/relations/special-properties.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/special-properties.tex)
+  - OLP-0015 B005–B015: [English](../upstream/content/sets-functions-relations/relations/equivalence-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/equivalence-relations.tex)
+  - OLP-0016 B004–B029: [English](../upstream/content/sets-functions-relations/relations/orders.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/orders.tex)
+  - OLP-0017 B004–B009: [English](../upstream/content/sets-functions-relations/relations/graphs.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/graphs.tex)
+  - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
+  - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
+  - OLP-0029 B005–B009, B011, B013–B016, B021–B023, B028–B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:1, 13, 33, 35, 71–72, 74`; `upstream/content/sets-functions-relations/relations/graphs.tex:1, 25–26, 30–31, 35, 37, 40, 73`; `upstream/content/sets-functions-relations/relations/operations.tex:1, 15, 20`; `upstream/content/sets-functions-relations/relations/orders.tex:1, 54–55, 73`; `upstream/content/sets-functions-relations/relations/reflections.tex:1, 12, 17–18, 21, 38, 42–46, 48, 50, 52–55, 57, 61–62, 65–66, 71, 75`; `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:1, 3, 9–10, 13, 15–16, 21, 23, 27, 29–31, 34–35, 45, 49, 56, 63, 85, 113, 121`; `upstream/content/sets-functions-relations/relations/special-properties.tex:1, 66`; `upstream/content/sets-functions-relations/relations/trees.tex:1, 22, 43–44, 46, 50, 53, 85, 92, 97, 111`; `upstream/content/sets-functions-relations/sets/basics.tex:1–2, 9, 12–16, 20, 27, 34, 36, 41, 48, 50, 52, 58, 62, 84, 86, 88, 90, 94, 99–100`; `upstream/content/sets-functions-relations/sets/important-sets.tex:1–3, 9–10, 13–14, 18, 20, 22, 24, 26, 29, 40–41, 47, 63`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:1–2, 9, 13, 19, 25, 34, 40, 49, 53, 69–71, 116, 123`; `upstream/content/sets-functions-relations/sets/russells-paradox.tex:1–2, 10, 14, 16–18, 23, 27–31, 33–34, 38, 46, 57–59, 67, 73, 77, 79–82`; `upstream/content/sets-functions-relations/sets/sets.tex:1–2, 8, 14`; `upstream/content/sets-functions-relations/sets/subsets.tex:1–2, 9–10, 13–14, 20, 28–29, 35–36, 38, 42, 50, 72–73, 75–77, 86`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:1–2, 9, 13, 16–17, 19, 21, 25, 30, 35–36, 44, 47, 50, 60, 65, 72–73, 77, 82, 85, 88–89, 91, 101–106, 110, 121, 135, 138, 144, 152, 157, 163`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:1–2, 11, 14, 22, 24, 28, 44, 46, 49, 64, 84, 88, 95, 115, 143, 182, 187, 209, 213, 225, 253, 269, 271–272`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/equivalence-relations.tex:13, 31–33, 70–71, 73`; `mr/content/sets-functions-relations/relations/graphs.tex:24–25, 29, 33, 35–36, 70`; `mr/content/sets-functions-relations/relations/operations.tex:14, 20`; `mr/content/sets-functions-relations/relations/orders.tex:51, 69`; `mr/content/sets-functions-relations/relations/reflections.tex:12, 18, 36, 40–43, 46, 49–50, 52–53, 56, 59–60, 63–64, 68, 71`; `mr/content/sets-functions-relations/relations/relations-as-sets.tex:10, 13–14, 16, 20, 26, 28–29, 31, 33–35, 44, 47, 49, 55, 63, 79, 84–85, 91, 109, 111, 119`; `mr/content/sets-functions-relations/relations/special-properties.tex:61`; `mr/content/sets-functions-relations/relations/trees.tex:21, 41, 43, 45, 49, 52, 72–73, 83, 91, 96, 111`; `mr/content/sets-functions-relations/sets/basics.tex:12–16, 19, 26, 33–34, 39, 44–45, 47, 49, 55–56, 58, 62, 82–84, 87, 91, 96–97`; `mr/content/sets-functions-relations/sets/important-sets.tex:10, 13–14, 18, 20, 22, 24, 26, 28, 39–40, 47, 61–62`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:13, 20, 26, 40, 50, 54, 70, 72, 119, 127`; `mr/content/sets-functions-relations/sets/russells-paradox.tex:14, 16–18, 20–22, 25–31, 34–35, 40, 43, 55, 57, 65, 73–74, 77–80`; `mr/content/sets-functions-relations/sets/sets.tex:8`; `mr/content/sets-functions-relations/sets/subsets.tex:10, 13–14, 19–22, 24, 28–29, 32, 36–38, 43, 45, 50, 58, 75–76, 78–80, 87, 89, 98`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:13, 16–17, 19, 21, 25–26, 30, 35–36, 43, 47, 51, 63, 67–68, 74–75, 79, 84, 87, 90, 93, 103, 105–108, 113–114, 116, 124–125, 127, 138, 141, 143–144, 147, 156, 160–161, 166–167`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:11, 14, 23–24, 29, 44, 46, 49, 63, 81, 86, 93, 112, 140, 184, 189, 212, 216, 228, 262, 282, 285–286`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P007, MR-C006, विधेय / संख्यापनीय तर्कशास्त्र आणि संच उपपत्ती, topics 1 and 4, printed page 14. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “संच” remain, or should one of “समुच्चय” replace it? Does the chosen wording preserve the technical sense of set without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T002 — element/member
+
+- **Chosen wording:** घटक / सदस्य
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted. This choice remains open to correction.
+- **Rationale:** Default token घटक; सदस्य as synonym when English introduces it; never confuse membership with subset.
+- **Alternatives considered:** अवयव.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0005 B004–B014: [English](../upstream/content/sets-functions-relations/sets/basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/basics.tex)
+  - OLP-0006 B004–B018: [English](../upstream/content/sets-functions-relations/sets/subsets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/subsets.tex)
+  - OLP-0007 B004–B009: [English](../upstream/content/sets-functions-relations/sets/important-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/important-sets.tex)
+  - OLP-0008 B004–B029: [English](../upstream/content/sets-functions-relations/sets/unions-and-intersections.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/unions-and-intersections.tex)
+  - OLP-0009 B004–B019: [English](../upstream/content/sets-functions-relations/sets/pairs-and-products.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/pairs-and-products.tex)
+  - OLP-0010 B004–B014: [English](../upstream/content/sets-functions-relations/sets/russells-paradox.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/russells-paradox.tex)
+  - OLP-0012 B004–B012: [English](../upstream/content/sets-functions-relations/relations/relations-as-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/relations-as-sets.tex)
+  - OLP-0013 B003–B008: [English](../upstream/content/sets-functions-relations/relations/reflections.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/reflections.tex)
+  - OLP-0014 B004–B015: [English](../upstream/content/sets-functions-relations/relations/special-properties.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/special-properties.tex)
+  - OLP-0015 B005–B015: [English](../upstream/content/sets-functions-relations/relations/equivalence-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/equivalence-relations.tex)
+  - OLP-0016 B004–B029: [English](../upstream/content/sets-functions-relations/relations/orders.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/orders.tex)
+  - OLP-0017 B004–B009: [English](../upstream/content/sets-functions-relations/relations/graphs.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/graphs.tex)
+  - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
+  - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
+  - OLP-0029 B007–B009, B011, B014–B015, B024, B029–B032: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:19, 71, 80`; `upstream/content/sets-functions-relations/relations/orders.tex:41`; `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:15, 25, 27, 41, 113, 121`; `upstream/content/sets-functions-relations/relations/trees.tex:44–45, 47, 51, 75, 107`; `upstream/content/sets-functions-relations/sets/basics.tex:13–14, 16, 21–22, 28, 34, 42, 52–53, 58, 61, 100`; `upstream/content/sets-functions-relations/sets/important-sets.tex:13, 27, 48, 64, 66`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:14, 21, 43, 80, 84–85, 89, 94, 96, 112, 117–118, 121`; `upstream/content/sets-functions-relations/sets/russells-paradox.tex:16, 27, 29–30, 33, 37, 39, 58, 60, 62, 67–68`; `upstream/content/sets-functions-relations/sets/subsets.tex:20, 35, 37, 43, 45–48, 58–59, 99–100`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:18–19, 21, 25, 36, 43–44, 60–61, 66, 73, 78, 82, 85, 105–106, 110–111, 113, 122, 124, 152, 158, 163–164`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:22, 24, 29, 38–43, 45, 57, 75–76, 78, 98–99, 104, 106–107, 186–187, 189, 213, 217, 219, 222, 237, 239–240, 244`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/equivalence-relations.tex:49, 78`; `mr/content/sets-functions-relations/relations/reflections.tex:41, 53, 57, 64`; `mr/content/sets-functions-relations/relations/relations-as-sets.tex:24, 26, 40, 112`; `mr/content/sets-functions-relations/relations/special-properties.tex:14`; `mr/content/sets-functions-relations/relations/trees.tex:43, 45, 51, 74, 105`; `mr/content/sets-functions-relations/sets/basics.tex:13`; `mr/content/sets-functions-relations/sets/important-sets.tex:47`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:10, 13, 21, 44, 48, 50, 87, 121`; `mr/content/sets-functions-relations/sets/russells-paradox.tex:16, 27, 33, 65`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:124`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:38, 41, 252`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
+  - [MR-C004](https://vishwakosh.marathi.gov.in/34075/) — MR-P011, MR-C004, संचांचे प्रकार, proper-subset paragraph. Do not treat observation hash as source-byte hash or claim full original archived.
+- **Precise review question:** In the listed formal contexts, should “घटक / सदस्य” remain, or should one of “अवयव” replace it? Does the chosen wording preserve the technical sense of element/member without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T003 — empty set
+
+- **Chosen wording:** रिक्त संच
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted. This choice remains open to correction.
+- **Rationale:** No elements; preserve upstream emptyset symbol rather than witness typography.
+- **Alternatives considered:** शून्य संच.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0005 B004–B014: [English](../upstream/content/sets-functions-relations/sets/basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/basics.tex)
+  - OLP-0006 B004–B018: [English](../upstream/content/sets-functions-relations/sets/subsets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/subsets.tex)
+  - OLP-0007 B004–B009: [English](../upstream/content/sets-functions-relations/sets/important-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/important-sets.tex)
+  - OLP-0008 B004–B029: [English](../upstream/content/sets-functions-relations/sets/unions-and-intersections.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/unions-and-intersections.tex)
+  - OLP-0012 B004–B012: [English](../upstream/content/sets-functions-relations/relations/relations-as-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/relations-as-sets.tex)
+  - OLP-0016 B004–B029: [English](../upstream/content/sets-functions-relations/relations/orders.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/orders.tex)
+  - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
+  - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
+  - OLP-0029 B009, B015–B016, B021–B022, B028, B033–B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/basics.tex:99`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:50, 91`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:64`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/basics.tex:96`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:51, 93`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:63`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P003, MR-C001, संचांचे प्रकार table, empty/finite/infinite rows, printed page 4. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “रिक्त संच” remain, or should one of “शून्य संच” replace it? Does the chosen wording preserve the technical sense of empty set without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T004 — extensionality
+
+- **Chosen wording:** विस्तारात्मकता
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-attested-label. This choice remains open to correction.
+- **Rationale:** Lexical label from government logic glossary observed in tool text; full origin unavailable. Two-way membership concept and prose independently verified in Balbharati. Not dictionary-only semantic evidence.
+- **Alternatives considered:** विस्तारता; बहिरंगता.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0005 B004–B014: [English](../upstream/content/sets-functions-relations/sets/basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/basics.tex)
+  - OLP-0006 B004–B018: [English](../upstream/content/sets-functions-relations/sets/subsets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/subsets.tex)
+  - OLP-0021 B004–B020: [English](../upstream/content/sets-functions-relations/functions/function-basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-basics.tex)
+  - OLP-0023 B005–B016: [English](../upstream/content/sets-functions-relations/functions/functions-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/functions-relations.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/function-basics.tex:116`; `upstream/content/sets-functions-relations/functions/functions-relations.tex:33–35`; `upstream/content/sets-functions-relations/sets/basics.tex:10, 26, 32, 35–36, 52, 80, 87, 89, 94`; `upstream/content/sets-functions-relations/sets/subsets.tex:42, 49`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/functions-relations.tex:33`; `mr/content/sets-functions-relations/sets/basics.tex:10, 25, 85`.
+- **Authorities actually checked:**
+
+  - [MR-C007](https://shabdakosh.marathi.gov.in/ananya-glossary/7/e) — MR-P008, MR-C007, extensionality. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P004, MR-C001, समान संच, opening criterion and examples, printed page 6. visually-read-page-image
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P002, MR-C001, संच लिहिण्याच्या पद्धती, listing and property methods, printed page 2. visually-read-page-image
+- **Precise review question:** Does विस्तारात्मकता carry the precise set-theoretic dependence-on-membership sense, without suggesting geometric extension?
+
+## T005 — subset
+
+- **Chosen wording:** उपसंच
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted. This choice remains open to correction.
+- **Rationale:** Inclusion direction verified from actual page.
+- **Alternatives considered:** अंतःसंच.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0006 B004–B018: [English](../upstream/content/sets-functions-relations/sets/subsets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/subsets.tex)
+  - OLP-0008 B004–B029: [English](../upstream/content/sets-functions-relations/sets/unions-and-intersections.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/unions-and-intersections.tex)
+  - OLP-0010 B004–B014: [English](../upstream/content/sets-functions-relations/sets/russells-paradox.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/russells-paradox.tex)
+  - OLP-0012 B004–B012: [English](../upstream/content/sets-functions-relations/relations/relations-as-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/relations-as-sets.tex)
+  - OLP-0015 B005–B015: [English](../upstream/content/sets-functions-relations/relations/equivalence-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/equivalence-relations.tex)
+  - OLP-0016 B004–B029: [English](../upstream/content/sets-functions-relations/relations/orders.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/orders.tex)
+  - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
+  - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
+  - OLP-0029 B022: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:48, 56, 78, 85, 91, 111`; `upstream/content/sets-functions-relations/relations/trees.tex:47, 74`; `upstream/content/sets-functions-relations/sets/subsets.tex:3, 10, 19, 21–22, 24, 28–29, 31, 36–37, 44, 50, 57, 73, 76, 84, 86, 95`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:47, 88`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/relations-as-sets.tex:47, 55, 79, 85, 91, 109`; `mr/content/sets-functions-relations/relations/trees.tex:45, 73`; `mr/content/sets-functions-relations/sets/subsets.tex:10, 19, 21–22, 24, 28–29, 32, 37–38, 45, 50, 58, 76, 79, 87, 89, 98`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:47, 90`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P005, MR-C001, उपसंच, definition and first example, printed page 7. visually-read-page-image
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P007, MR-C006, विधेय / संख्यापनीय तर्कशास्त्र आणि संच उपपत्ती, topics 1 and 4, printed page 14. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “उपसंच” remain, or should one of “अंतःसंच” replace it? Does the chosen wording preserve the technical sense of subset without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T006 — proper subset
+
+- **Chosen wording:** उचित उपसंच
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-origin-preservation. This choice remains open to correction.
+- **Rationale:** Specialized label observed in Vishwakosh and concept distinguished from equality; subset component verified in textbook. Preserve upstream subsetneq.
+- **Alternatives considered:** काटेकोर उपसंच.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0006 B004–B018: [English](../upstream/content/sets-functions-relations/sets/subsets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/subsets.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/subsets.tex:24`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/subsets.tex:24`.
+- **Authorities actually checked:**
+
+  - [MR-C004](https://vishwakosh.marathi.gov.in/34075/) — MR-P011, MR-C004, संचांचे प्रकार, proper-subset paragraph. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P005, MR-C001, उपसंच, definition and first example, printed page 7. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “उचित उपसंच” remain, or should one of “काटेकोर उपसंच” replace it? Does the chosen wording preserve the technical sense of proper subset without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T007 — power set
+
+- **Chosen wording:** घातसंच
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-origin-preservation. This choice remains open to correction.
+- **Rationale:** Vishwakosh has घात-संच and all-subsets description. Orthography normalized without hyphen. Original raw HTML unavailable; source theorem remains authoritative.
+- **Alternatives considered:** शक्तिसंच.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0006 B004–B018: [English](../upstream/content/sets-functions-relations/sets/subsets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/subsets.tex)
+  - OLP-0010 B004–B014: [English](../upstream/content/sets-functions-relations/sets/russells-paradox.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/russells-paradox.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/russells-paradox.tex:27`; `upstream/content/sets-functions-relations/sets/subsets.tex:10, 75, 77`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/russells-paradox.tex:25`; `mr/content/sets-functions-relations/sets/subsets.tex:10, 78, 80`.
+- **Authorities actually checked:**
+
+  - [MR-C005](https://vishwakosh.marathi.gov.in/32772/) — MR-P012, MR-C005, paragraph beginning आकारिक तर्कशास्त्र आणि गणित, after Grelling discussion. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P005, MR-C001, उपसंच, definition and first example, printed page 7. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “घातसंच” remain, or should one of “शक्तिसंच” replace it? Does the chosen wording preserve the technical sense of power set without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T008 — natural numbers
+
+- **Chosen wording:** नैसर्गिक संख्या
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted-domain-caveat. This choice remains open to correction.
+- **Rationale:** Balbharati starts N at 1; OpenLogic starts Nat at 0. Translate the term but preserve OpenLogic convention.
+- **Alternatives considered:** मोजणी संख्या; परंतु OpenLogic मधील शून्याचा समावेश स्पष्ट करावा.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0005 B004–B014: [English](../upstream/content/sets-functions-relations/sets/basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/basics.tex)
+  - OLP-0006 B004–B018: [English](../upstream/content/sets-functions-relations/sets/subsets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/subsets.tex)
+  - OLP-0007 B004–B009: [English](../upstream/content/sets-functions-relations/sets/important-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/important-sets.tex)
+  - OLP-0021 B004–B020: [English](../upstream/content/sets-functions-relations/functions/function-basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-basics.tex)
+  - OLP-0029 B006, B017, B020, B024–B026, B028, B033–B034: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/function-basics.tex:58–59, 66, 95, 104–105`; `upstream/content/sets-functions-relations/sets/important-sets.tex:18`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:121, 188`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/function-basics.tex:56–57, 63, 65, 71, 92–93, 102–103, 132–133`; `mr/content/sets-functions-relations/sets/important-sets.tex:18, 30, 33, 40`; `mr/content/sets-functions-relations/sets/subsets.tex:29`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:118, 191`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
+- **Precise review question:** Does the Marathi wording make OpenLogic's inclusion of zero unmistakable despite the checked school source starting natural numbers at one?
+
+## T009 — formal validity
+
+- **Chosen wording:** वैधता
+- **Coverage:** pre-adjudicated; not yet applied in a translated unit.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted-primary-textbook. This choice remains open to correction.
+- **Rationale:** Preserved Marathi logic textbook explicitly distinguishes argument वैधता from truth of statements; युक्तता and आकारिक प्रामाण्य recorded as attested alternatives. Adopt वैधता consistently in formal truth-preservation sense, not legal legitimacy; keep soundness separate.
+- **Alternatives considered:** युक्तता; आकारिक प्रामाण्य.
+- **Exact aligned source/target scopes:** none yet; the term has not been applied in current translated units.
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P019, MR-C011, Decision procedure, sections 1.1–1.2, printed page 1. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P020, MR-C011, Short truth table, section 1.3 continuation and 1.4, printed page 2. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [MR-C002](https://vishwakosh.marathi.gov.in/20027/) — MR-P010, MR-C002, opening definition and first argument-form discussion; truth-value discussion. Do not treat observation hash as source-byte hash or claim full original archived.
+- **Precise review question:** Which Marathi term most clearly names truth-preservation of an argument and cannot be mistaken for the truth of its premises or conclusion?
+
+## T010 — truth / truth value
+
+- **Chosen wording:** सत्यता / सत्यतामूल्य
+- **Coverage:** pre-adjudicated; not yet applied in a translated unit.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted-primary-textbook. This choice remains open to correction.
+- **Rationale:** Apply to statements under interpretations; not synonym for validity.
+- **Alternatives considered:** सत्य; सत्यमूल्य.
+- **Exact aligned source/target scopes:** none yet; the term has not been applied in current translated units.
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P019, MR-C011, Decision procedure, sections 1.1–1.2, printed page 1. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P020, MR-C011, Short truth table, section 1.3 continuation and 1.4, printed page 2. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [MR-C002](https://vishwakosh.marathi.gov.in/20027/) — MR-P010, MR-C002, opening definition and first argument-form discussion; truth-value discussion. Do not treat observation hash as source-byte hash or claim full original archived.
+- **Precise review question:** Are सत्यता and सत्यतामूल्य sufficiently distinct from argument validity in every formal context?
+
+## T011 — syntax
+
+- **Chosen wording:** विन्यासमीमांसा
+- **Coverage:** pre-adjudicated; not yet applied in a translated unit.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-concept-extension. This choice remains open to correction.
+- **Rationale:** Government logic glossary label observed; compound spacing normalized. OpenLogic formal formation rules define sense. University symbolic-formation topics are supporting context, not full semantic attestation.
+- **Alternatives considered:** वाक्यरचना.
+- **Exact aligned source/target scopes:** none yet; the term has not been applied in current translated units.
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P009, MR-C008, syntax; semantics; satisfaction. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+- **Precise review question:** Is विन्यासमीमांसा established enough for formal syntax, or would वाक्यरचना be clearer without narrowing the concept to grammar?
+
+## T012 — semantics
+
+- **Chosen wording:** चिन्हार्थमीमांसा
+- **Coverage:** pre-adjudicated; not yet applied in a translated unit.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-concept-extension. This choice remains open to correction.
+- **Rationale:** Logical interpretation and truth conditions; distinguish ordinary linguistic meaning. Full model-theoretic prose attestation still unresolved.
+- **Alternatives considered:** अर्थमीमांसा.
+- **Exact aligned source/target scopes:** none yet; the term has not been applied in current translated units.
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P009, MR-C008, syntax; semantics; satisfaction. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [MR-C002](https://vishwakosh.marathi.gov.in/20027/) — MR-P010, MR-C002, opening definition and first argument-form discussion; truth-value discussion. Do not treat observation hash as source-byte hash or claim full original archived.
+- **Precise review question:** Is चिन्हार्थमीमांसा suitable for model-theoretic semantics, or does अर्थमीमांसा better avoid an unintended merely lexical sense?
+
+## T013 — model (model theory)
+
+- **Chosen wording:** प्रतिमान
+- **Coverage:** pre-adjudicated; not yet applied in a translated unit.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-sparse-evidence. This choice remains open to correction.
+- **Rationale:** No verified Marathi model-theory passage yet. Evidence role of P009 only semantic context; it does not attest प्रतिमान. Candidate chosen for mathematical structure satisfying a theory, to be defined from OpenLogic and revisited before first use.
+- **Alternatives considered:** प्रारूप; मॉडेल.
+- **Exact aligned source/target scopes:** none yet; the term has not been applied in current translated units.
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P009, MR-C008, syntax; semantics; satisfaction. Do not treat observation hash as source-byte hash or claim full original archived.
+- **Precise review question:** For a structure satisfying a theory, should प्रतिमान, प्रारूप or मॉडेल be preferred in current Marathi logic scholarship?
+
+## T014 — perfect number
+
+- **Chosen wording:** परिपूर्ण संख्या
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-sparse-evidence. This choice remains open to correction.
+- **Rationale:** No specialized Marathi attestation verified yet. Compositional label with explicit source definition using proper divisors; textbook evidence supports native number grammar, not this technical name.
+- **Alternatives considered:** पूर्ण संख्या.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0005 B004–B014: [English](../upstream/content/sets-functions-relations/sets/basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/basics.tex)
+  - OLP-0007 B004–B009: [English](../upstream/content/sets-functions-relations/sets/important-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/important-sets.tex)
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/basics.tex:74, 76, 79, 81`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P004, MR-C001, समान संच, opening criterion and examples, printed page 6. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “परिपूर्ण संख्या” remain, or should one of “पूर्ण संख्या” replace it? Does the chosen wording preserve the technical sense of perfect number without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T015 — proof
+
+- **Chosen wording:** सिद्धता
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted. This choice remains open to correction.
+- **Rationale:** University curricular usage distinguishes proof/inference and quantification.
+- **Alternatives considered:** पुरावा.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0005 B004–B014: [English](../upstream/content/sets-functions-relations/sets/basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/basics.tex)
+  - OLP-0006 B004–B018: [English](../upstream/content/sets-functions-relations/sets/subsets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/subsets.tex)
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P007, MR-C006, विधेय / संख्यापनीय तर्कशास्त्र आणि संच उपपत्ती, topics 1 and 4, printed page 14. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “सिद्धता” remain, or should one of “पुरावा” replace it? Does the chosen wording preserve the technical sense of proof without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T016 — if and only if
+
+- **Chosen wording:** तेव्हा आणि केवळ तेव्हाच
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted-compositional. This choice remains open to correction.
+- **Rationale:** Both implications explicitly preserved; source formulas govern biconditional strength.
+- **Alternatives considered:** जर आणि तर; स्वतंत्रपणे घेतल्यास द्विशर्त अस्पष्ट होऊ शकते.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0005 B004–B014: [English](../upstream/content/sets-functions-relations/sets/basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/basics.tex)
+  - OLP-0006 B004–B018: [English](../upstream/content/sets-functions-relations/sets/subsets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/subsets.tex)
+  - OLP-0021 B004–B020: [English](../upstream/content/sets-functions-relations/functions/function-basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-basics.tex)
+  - OLP-0029 B016, B025, B028, B033–B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/basics.tex:26`; `mr/content/sets-functions-relations/sets/subsets.tex:43, 48, 50, 54, 71`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:112, 212, 262, 269, 271, 275, 283, 286, 289`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P004, MR-C001, समान संच, opening criterion and examples, printed page 6. visually-read-page-image
+  - [MR-C002](https://vishwakosh.marathi.gov.in/20027/) — MR-P010, MR-C002, opening definition and first argument-form discussion; truth-value discussion. Do not treat observation hash as source-byte hash or claim full original archived.
+- **Precise review question:** In the listed formal contexts, should “तेव्हा आणि केवळ तेव्हाच” remain, or should one of “जर आणि तर; स्वतंत्रपणे घेतल्यास द्विशर्त अस्पष्ट होऊ शकते” replace it? Does the chosen wording preserve the technical sense of if and only if without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T017 — union
+
+- **Chosen wording:** संयोग
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted. This choice remains open to correction.
+- **Rationale:** Balbharati संयोग selected over syllabus युती; use consistently for binary and indexed operation.
+- **Alternatives considered:** संघ; युती.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0008 B004–B029: [English](../upstream/content/sets-functions-relations/sets/unions-and-intersections.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/unions-and-intersections.tex)
+  - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
+  - OLP-0029 B021, B023: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/operations.tex:13–14`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:3, 10, 20, 24–25, 27, 34–35, 43, 47, 50, 59, 100, 102–103`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/operations.tex:14–15`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:10, 25, 34–35, 44, 47, 51, 61, 103, 105, 107`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P016, MR-C001, दोन संचांचा संयोग, definition and examples, printed page 13. visually-read-page-image
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P007, MR-C006, विधेय / संख्यापनीय तर्कशास्त्र आणि संच उपपत्ती, topics 1 and 4, printed page 14. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “संयोग” remain, or should one of “संघ / युती” replace it? Does the chosen wording preserve the technical sense of union without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T018 — intersection
+
+- **Chosen wording:** छेद
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted. This choice remains open to correction.
+- **Rationale:** Shared-element set; छेदसंच when noun requires explicit set.
+- **Alternatives considered:** संगम.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0008 B004–B029: [English](../upstream/content/sets-functions-relations/sets/unions-and-intersections.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/unions-and-intersections.tex)
+  - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:3, 10, 62, 64–65, 67, 71–72, 77, 82, 85, 88, 91, 100, 103, 105`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:10, 64, 67, 73–74, 79, 84, 87, 90, 93, 103, 105, 109`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P014, MR-C001, संचांवरील क्रिया, intersection definition, printed page 11. visually-read-page-image
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P007, MR-C006, विधेय / संख्यापनीय तर्कशास्त्र आणि संच उपपत्ती, topics 1 and 4, printed page 14. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “छेद” remain, or should one of “संगम” replace it? Does the chosen wording preserve the technical sense of intersection without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T019 — disjoint
+
+- **Chosen wording:** विभक्त
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted. This choice remains open to correction.
+- **Rationale:** Prefer विभक्त over various/different implication of विभिन्न; no common elements.
+- **Alternatives considered:** विसंयुक्त.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0008 B004–B029: [English](../upstream/content/sets-functions-relations/sets/unions-and-intersections.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/unions-and-intersections.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:77`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:79`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P015, MR-C001, विभिन्न संच, definition and figures, printed page 12. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “विभक्त” remain, or should one of “विसंयुक्त” replace it? Does the chosen wording preserve the technical sense of disjoint without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T020 — ordered pair
+
+- **Chosen wording:** क्रमित जोडी
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted. This choice remains open to correction.
+- **Rationale:** Actual numeric-order example supports native usage; upstream Wiener–Kuratowski encoding preserved.
+- **Alternatives considered:** सुव्यवस्थित जोडी.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0009 B004–B019: [English](../upstream/content/sets-functions-relations/sets/pairs-and-products.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/pairs-and-products.tex)
+  - OLP-0012 B004–B012: [English](../upstream/content/sets-functions-relations/relations/relations-as-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/relations-as-sets.tex)
+  - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
+  - OLP-0023 B005–B016: [English](../upstream/content/sets-functions-relations/functions/functions-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/functions-relations.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:24, 27, 31`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:15–16, 19–20, 25, 29, 39, 43–44, 49`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/relations-as-sets.tex:23`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:15–16, 29, 40, 44`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “क्रमित जोडी” remain, or should one of “सुव्यवस्थित जोडी” replace it? Does the chosen wording preserve the technical sense of ordered pair without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T021 — Cartesian product
+
+- **Chosen wording:** कार्तीय गुणाकार
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** adopted-observation-backed. This choice remains open to correction.
+- **Rationale:** Named concept and six-pair example in official encyclopedia; origin hash pending.
+- **Alternatives considered:** कार्तेशियन गुणाकार.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0009 B004–B019: [English](../upstream/content/sets-functions-relations/sets/pairs-and-products.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/pairs-and-products.tex)
+  - OLP-0012 B004–B012: [English](../upstream/content/sets-functions-relations/relations/relations-as-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/relations-as-sets.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:10, 52–53`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/relations-as-sets.tex:27`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:10, 53–54`.
+- **Authorities actually checked:**
+
+  - [MR-C010](https://marathivishwakosh.org/21954/) — MR-P018, MR-C010, कार्तीय गुणाकार (Cartesian product), web lines 74–82. primary article tool text read and exact response preserved; displayed formula omissions preclude using extracted formula as authority
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “कार्तीय गुणाकार” remain, or should one of “कार्तेशियन गुणाकार” replace it? Does the chosen wording preserve the technical sense of Cartesian product without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T022 — tuple
+
+- **Chosen wording:** क्रमित घटकसमूह
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-sparse-evidence. This choice remains open to correction.
+- **Rationale:** Descriptive extension from verified ordered-pair usage. n-tuple is क्रमित n-घटकसमूह, never बहुपद (polynomial). No specialized tuple attestation claimed.
+- **Alternatives considered:** n-घटक क्रम; बहुपद — नाकारले; polynomial असा चुकीचा अर्थ होतो.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0009 B004–B019: [English](../upstream/content/sets-functions-relations/sets/pairs-and-products.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/pairs-and-products.tex)
+  - OLP-0023 B005–B016: [English](../upstream/content/sets-functions-relations/functions/functions-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/functions-relations.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/functions-relations.tex:28, 46, 68, 84`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:10, 15, 17, 23, 30, 34–35, 41–42, 44–47, 49, 56, 63–64, 70–71, 90–92, 99–100, 102, 117, 119`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/functions-relations.tex:66`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:10`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
+- **Precise review question:** Is क्रमित घटकसमूह natural for an n-tuple, and is there an attested alternative that cannot be confused with a polynomial?
+
+## T023 — sequence/string/word
+
+- **Chosen wording:** अनुक्रम / चिन्हमाला / शब्द
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-sparse-evidence. This choice remains open to correction.
+- **Rationale:** Define from source finite ordered symbols; शब्द formal combinatorial sense distinct from ordinary-language word.
+- **Alternatives considered:** मालिका; स्ट्रिंग.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0009 B004–B019: [English](../upstream/content/sets-functions-relations/sets/pairs-and-products.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/pairs-and-products.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:40, 116–117, 119–120, 122–123`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/pairs-and-products.tex:42, 119–122, 124–127`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “अनुक्रम / चिन्हमाला / शब्द” remain, or should one of “मालिका / स्ट्रिंग” replace it? Does the chosen wording preserve the technical sense of sequence/string/word without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T024 — set difference
+
+- **Chosen wording:** संचांचा फरक
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-compositional. This choice remains open to correction.
+- **Rationale:** Source defines A members not in B; no subtraction of cardinalities.
+- **Alternatives considered:** संचवजाबाकी.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0008 B004–B029: [English](../upstream/content/sets-functions-relations/sets/unions-and-intersections.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/unions-and-intersections.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:163`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:160, 166`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P014, MR-C001, संचांवरील क्रिया, intersection definition, printed page 11. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “संचांचा फरक” remain, or should one of “संचवजाबाकी” replace it? Does the chosen wording preserve the technical sense of set difference without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T025 — comprehension
+
+- **Chosen wording:** गुणधर्माधारित संचरचना
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-compositional. This choice remains open to correction.
+- **Rationale:** Explicitly denotes forming sets by predicates; not ordinary understanding.
+- **Alternatives considered:** संचग्रहण.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0010 B004–B014: [English](../upstream/content/sets-functions-relations/sets/russells-paradox.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/russells-paradox.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/russells-paradox.tex:22`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/russells-paradox.tex:20`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P002, MR-C001, संच लिहिण्याच्या पद्धती, listing and property methods, printed page 2. visually-read-page-image
+  - [MR-C005](https://vishwakosh.marathi.gov.in/32772/) — MR-P012, MR-C005, paragraph beginning आकारिक तर्कशास्त्र आणि गणित, after Grelling discussion. Do not treat observation hash as source-byte hash or claim full original archived.
+- **Precise review question:** In the listed formal contexts, should “गुणधर्माधारित संचरचना” remain, or should one of “संचग्रहण” replace it? Does the chosen wording preserve the technical sense of comprehension without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T026 — contradiction/paradox
+
+- **Chosen wording:** व्याघात / विरोधापत्ती
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-origin-preservation. This choice remains open to correction.
+- **Rationale:** Keep incompatible assertions distinct from paradox construction.
+- **Alternatives considered:** विरोधाभास.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0010 B004–B014: [English](../upstream/content/sets-functions-relations/sets/russells-paradox.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/russells-paradox.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/sets/russells-paradox.tex:3, 11, 24–25, 36, 45, 51, 62, 64–65, 74, 85`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/russells-paradox.tex:11, 22–23, 34, 42, 48, 60, 62–63, 72, 82`.
+- **Authorities actually checked:**
+
+  - [MR-C005](https://vishwakosh.marathi.gov.in/32772/) — MR-P012, MR-C005, paragraph beginning आकारिक तर्कशास्त्र आणि गणित, after Grelling discussion. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “व्याघात / विरोधापत्ती” remain, or should one of “विरोधाभास” replace it? Does the chosen wording preserve the technical sense of contradiction/paradox without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T027 — mathematical induction
+
+- **Chosen wording:** गणिती विगमन
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-sparse-evidence. This choice remains open to correction.
+- **Rationale:** Qualifier and source proof task distinguish mathematical induction from empirical inductive inference. Specific term requires further attestation.
+- **Alternatives considered:** गणितीय आगमन; इंडक्शन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0010 B004–B014: [English](../upstream/content/sets-functions-relations/sets/russells-paradox.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/russells-paradox.tex)
+  - OLP-0029 B023: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+- **Precise review question:** Does गणिती विगमन unambiguously mean mathematical induction rather than empirical induction?
+
+## T028 — continuum
+
+- **Chosen wording:** सांतत्य
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-sparse-evidence. This choice remains open to correction.
+- **Rationale:** Name for real-number continuum in source; not continuity property. Not attested by numeric-set page.
+- **Alternatives considered:** सातत्यक.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0010 B004–B014: [English](../upstream/content/sets-functions-relations/sets/russells-paradox.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/russells-paradox.tex)
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “सांतत्य” remain, or should one of “सातत्यक” replace it? Does the chosen wording preserve the technical sense of continuum without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T029 — axiom
+
+- **Chosen wording:** स्वयंसिद्धक
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-sparse-evidence. This choice remains open to correction.
+- **Rationale:** Explicit postulates of set theory; not claim of self-evidence or factual certainty.
+- **Alternatives considered:** स्वयंसिद्ध.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0010 B004–B014: [English](../upstream/content/sets-functions-relations/sets/russells-paradox.tex) ↔ [Marathi](../mr/content/sets-functions-relations/sets/russells-paradox.tex)
+  - OLP-0024 B004–B027: [English](../upstream/content/sets-functions-relations/functions/inverses.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/inverses.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/inverses.tex:106–107, 110`; `upstream/content/sets-functions-relations/sets/russells-paradox.tex:76`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/inverses.tex:108–109, 112`; `mr/content/sets-functions-relations/sets/russells-paradox.tex:75`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “स्वयंसिद्धक” remain, or should one of “स्वयंसिद्ध” replace it? Does the chosen wording preserve the technical sense of axiom without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T030 — relation / binary relation
+
+- **Chosen wording:** संबंध / द्विपदी संबंध
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** evidence-based-provisional; attestation limits in reason. This choice remains open to correction.
+- **Rationale:** Relation label attested in mathematics dictionary and logic prose. Binary qualifier is compositional: ordered pairs, not binary numeral base.
+- **Alternatives considered:** नाते; द्विपद संबंध.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0011 B004: [English](../upstream/content/sets-functions-relations/relations/relations-complete.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/relations-complete.tex)
+  - OLP-0012 B004–B012: [English](../upstream/content/sets-functions-relations/relations/relations-as-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/relations-as-sets.tex)
+  - OLP-0013 B003–B008: [English](../upstream/content/sets-functions-relations/relations/reflections.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/reflections.tex)
+  - OLP-0014 B004–B015: [English](../upstream/content/sets-functions-relations/relations/special-properties.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/special-properties.tex)
+  - OLP-0015 B005–B015: [English](../upstream/content/sets-functions-relations/relations/equivalence-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/equivalence-relations.tex)
+  - OLP-0016 B004–B029: [English](../upstream/content/sets-functions-relations/relations/orders.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/orders.tex)
+  - OLP-0017 B004–B009: [English](../upstream/content/sets-functions-relations/relations/graphs.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/graphs.tex)
+  - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
+  - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
+  - OLP-0023 B005–B016: [English](../upstream/content/sets-functions-relations/functions/functions-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/functions-relations.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/functions-relations.tex:1, 3, 12, 16, 20–21, 25, 39, 61–62, 67, 74, 97`; `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:1–3, 11, 13–14, 17–19, 23–24, 32, 43, 50, 64, 68, 79`; `upstream/content/sets-functions-relations/relations/graphs.tex:1–2, 22, 31, 34, 37, 39, 73`; `upstream/content/sets-functions-relations/relations/operations.tex:1–2, 10, 12, 14, 16–17, 20, 36, 39, 45, 50, 61`; `upstream/content/sets-functions-relations/relations/orders.tex:1–2, 15–16, 23, 39, 41, 46, 54, 62, 67, 73, 78, 83`; `upstream/content/sets-functions-relations/relations/reflections.tex:1–2, 12, 16, 28, 34, 36, 41–42, 54, 57, 59, 65–66, 71, 74`; `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:1–3, 10, 15, 17, 19–21, 34, 46, 49–50, 55–57, 62, 83–84, 91, 97, 99–101, 104, 109, 111–115, 117, 121`; `upstream/content/sets-functions-relations/relations/relations-complete.tex:1–2, 8, 10, 16`; `upstream/content/sets-functions-relations/relations/special-properties.tex:1–2, 10, 13, 17–18, 20, 24, 29, 34, 39, 45–46, 49–50, 52, 54, 58, 63, 66, 70, 75, 79–80, 83`; `upstream/content/sets-functions-relations/relations/trees.tex:1–2, 38, 42, 104, 112`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/functions-relations.tex:12, 16–17, 19–20, 24, 37, 41, 61–62, 64, 66, 71, 74, 93, 95, 101`; `mr/content/sets-functions-relations/relations/equivalence-relations.tex:11, 13–14, 16–18, 22, 24, 29, 40, 47, 62, 68, 77`; `mr/content/sets-functions-relations/relations/graphs.tex:15, 20–21, 29, 33, 35, 37, 70`; `mr/content/sets-functions-relations/relations/operations.tex:10, 12–14, 16–17, 20, 36, 40, 46, 51, 61`; `mr/content/sets-functions-relations/relations/orders.tex:15, 22, 36, 38, 43, 59, 63, 69, 74, 80`; `mr/content/sets-functions-relations/relations/reflections.tex:12, 16, 27, 34–35, 40–41, 53–54, 56–57, 63–64, 68, 71`; `mr/content/sets-functions-relations/relations/relations-as-sets.tex:10, 15–19, 33–34, 40, 45, 47, 49–50, 54–56, 83, 90, 96, 98, 100–103, 108–109, 111–113, 115, 119`; `mr/content/sets-functions-relations/relations/relations-complete.tex:8`; `mr/content/sets-functions-relations/relations/special-properties.tex:10, 13, 16, 18, 22, 27, 32, 37, 43–44, 47, 49–50, 54, 59, 62, 66, 71, 76–78`; `mr/content/sets-functions-relations/relations/trees.tex:22, 38, 41, 102, 111`.
+- **Authorities actually checked:**
+
+  - [गणितशास्त्र परिभाषा कोश](https://shabdakosh.marathi.gov.in/ananya-glossary/9/r) — MR-P023, MR-C013, relation, web lines 365–369. short primary-source observation read; source bytes not preserved
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P005, MR-C001, उपसंच, definition and first example, printed page 7. visually-read-page-image
+- **Precise review question:** In the listed formal contexts, should “संबंध / द्विपदी संबंध” remain, or should one of “नाते / द्विपद संबंध” replace it? Does the chosen wording preserve the technical sense of relation / binary relation without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T031 — identity relation
+
+- **Chosen wording:** एकरूपता संबंध
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** evidence-based-provisional; attestation limits in reason. This choice remains open to correction.
+- **Rationale:** Every object related only to itself; distinguish from structural isomorphism. Provisional phrase guided by explicit source definition.
+- **Alternatives considered:** तादात्म्य संबंध.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0012 B004–B012: [English](../upstream/content/sets-functions-relations/relations/relations-as-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/relations-as-sets.tex)
+  - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:83`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/relations-as-sets.tex:83`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P004, MR-C001, समान संच, opening criterion and examples, printed page 6. visually-read-page-image
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- **Precise review question:** In the listed formal contexts, should “एकरूपता संबंध” remain, or should one of “तादात्म्य संबंध” replace it? Does the chosen wording preserve the technical sense of identity relation without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T032 — reflexive / irreflexive
+
+- **Chosen wording:** परावर्ती / अपरावर्ती
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** evidence-based-provisional; attestation limits in reason. This choice remains open to correction.
+- **Rationale:** Reflexive label attested; irreflexive extension provisional. Every x Rxx versus every x not Rxx, not merely failure of reflexivity. Empty domain treated by source quantifiers.
+- **Alternatives considered:** स्वसंबंधी / अस्वसंबंधी.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0012 B004–B012: [English](../upstream/content/sets-functions-relations/relations/relations-as-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/relations-as-sets.tex)
+  - OLP-0014 B004–B015: [English](../upstream/content/sets-functions-relations/relations/special-properties.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/special-properties.tex)
+  - OLP-0015 B005–B015: [English](../upstream/content/sets-functions-relations/relations/equivalence-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/equivalence-relations.tex)
+  - OLP-0016 B004–B029: [English](../upstream/content/sets-functions-relations/relations/orders.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/orders.tex)
+  - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:13, 18, 58`; `upstream/content/sets-functions-relations/relations/operations.tex:56`; `upstream/content/sets-functions-relations/relations/orders.tex:23, 40, 48, 83, 100, 112–113, 115, 164`; `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:104`; `upstream/content/sets-functions-relations/relations/special-properties.tex:24, 49, 51, 63–65, 70, 79–80, 82`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/equivalence-relations.tex:13, 17, 55`; `mr/content/sets-functions-relations/relations/operations.tex:57`; `mr/content/sets-functions-relations/relations/orders.tex:22, 36, 45, 80, 95, 106–107, 109, 158`; `mr/content/sets-functions-relations/relations/relations-as-sets.tex:103`; `mr/content/sets-functions-relations/relations/special-properties.tex:22, 47, 59–61, 66, 75–78`.
+- **Authorities actually checked:**
+
+  - [मराठी विश्वकोश शब्दसंग्रह](https://shabdakosh.marathi.gov.in/ananya-glossary/41/r) — MR-P025, MR-C015, reflexive / reflexivity. short primary-source observation read; source bytes not preserved
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- **Precise review question:** In the listed formal contexts, should “परावर्ती / अपरावर्ती” remain, or should one of “स्वसंबंधी / अस्वसंबंधी” replace it? Does the chosen wording preserve the technical sense of reflexive / irreflexive without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T033 — transitive
+
+- **Chosen wording:** संक्रमक
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** evidence-based-provisional; attestation limits in reason. This choice remains open to correction.
+- **Rationale:** Use specific logic dictionary spelling संक्रमक, not संक्रामक from broader senses. Two-step relation entails direct relation, not temporal change.
+- **Alternatives considered:** संक्रामी; संक्रामक — नाकारले; सामान्य संसर्गाचा अर्थ येतो.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0012 B004–B012: [English](../upstream/content/sets-functions-relations/relations/relations-as-sets.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/relations-as-sets.tex)
+  - OLP-0014 B004–B015: [English](../upstream/content/sets-functions-relations/relations/special-properties.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/special-properties.tex)
+  - OLP-0015 B005–B015: [English](../upstream/content/sets-functions-relations/relations/equivalence-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/equivalence-relations.tex)
+  - OLP-0016 B004–B029: [English](../upstream/content/sets-functions-relations/relations/orders.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/orders.tex)
+  - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:14, 19, 51`; `upstream/content/sets-functions-relations/relations/operations.tex:50, 52, 56, 68`; `upstream/content/sets-functions-relations/relations/orders.tex:23, 40, 48, 84, 112–113, 126, 130`; `upstream/content/sets-functions-relations/relations/special-properties.tex:29, 64–66`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/equivalence-relations.tex:13, 17, 48`; `mr/content/sets-functions-relations/relations/operations.tex:51, 53, 57, 70`; `mr/content/sets-functions-relations/relations/orders.tex:22, 37, 45, 80, 106–107, 118, 120, 124`; `mr/content/sets-functions-relations/relations/special-properties.tex:26–27, 60–61`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश](https://shabdakosh.marathi.gov.in/ananya-glossary/7/t) — MR-P024, MR-C014, transitive relation / transitivity of equivalence. short primary-source observation read; source bytes not preserved
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- **Precise review question:** Is संक्रमक the standard relation-theory spelling, and does it avoid the infectious/common sense carried by संक्रामक?
+
+## T034 — symmetric / anti-symmetric / asymmetric
+
+- **Chosen wording:** सममित / प्रतिसममित / असममित
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** evidence-based-provisional; attestation limits in reason. This choice remains open to correction.
+- **Rationale:** Compositional technical distinctions, definitions governed by source. Anti-symmetry permits a two-way relation only at equality; asymmetry forbids every two-way pair. Not-symmetric kept as सममित नसलेला, not used as synonym for either.
+- **Alternatives considered:** सममितीय / प्रतिसममितीय / विषममितीय.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0014 B004–B015: [English](../upstream/content/sets-functions-relations/relations/special-properties.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/special-properties.tex)
+  - OLP-0015 B005–B015: [English](../upstream/content/sets-functions-relations/relations/equivalence-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/equivalence-relations.tex)
+  - OLP-0016 B004–B029: [English](../upstream/content/sets-functions-relations/relations/orders.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/orders.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:13, 18, 51`; `upstream/content/sets-functions-relations/relations/orders.tex:28, 42, 49, 68, 83, 112–113, 118, 122`; `upstream/content/sets-functions-relations/relations/special-properties.tex:34, 45–46, 49–53, 63–65, 75, 80–83`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/equivalence-relations.tex:13, 17, 48`; `mr/content/sets-functions-relations/relations/orders.tex:26, 38, 46, 64, 80, 106–107, 112, 115`; `mr/content/sets-functions-relations/relations/special-properties.tex:31–32, 36, 43–44, 46–49, 59–61, 70–71, 76, 78`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P004, MR-C001, समान संच, opening criterion and examples, printed page 6. visually-read-page-image
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P022, MR-C011, Predicate logic continuation and section 3.2, printed page 20. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- **Precise review question:** Do प्रतिसममित and असममित preserve the formal difference between antisymmetry and asymmetry?
+
+## T035 — connected (relation)
+
+- **Chosen wording:** संयोजित
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** evidence-based-provisional; attestation limits in reason. This choice remains open to correction.
+- **Rationale:** Provisional label: each distinct pair comparable in one direction. Keep graph path-connectivity separately defined; no claim that the terms imply identical conditions.
+- **Alternatives considered:** संलग्न; तुलनीय.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0014 B004–B015: [English](../upstream/content/sets-functions-relations/relations/special-properties.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/special-properties.tex)
+  - OLP-0016 B004–B029: [English](../upstream/content/sets-functions-relations/relations/orders.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/orders.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/orders.tex:33, 48, 88, 132, 135, 165`; `upstream/content/sets-functions-relations/relations/special-properties.tex:58`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/orders.tex:30, 45, 84, 126, 129, 159`; `mr/content/sets-functions-relations/relations/special-properties.tex:53–54`.
+- **Authorities actually checked:**
+
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P022, MR-C011, Predicate logic continuation and section 3.2, printed page 20. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- **Precise review question:** Does संयोजित convey pairwise comparability here without being confused with graph path-connectedness?
+
+## T036 — order / strict order
+
+- **Chosen wording:** क्रम / काटेकोर क्रम
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** evidence-based-provisional; attestation limits in reason. This choice remains open to correction.
+- **Rationale:** Ordered-pair usage supports sequence sense, not full order axioms. Exact source properties control mathematical meaning.
+- **Alternatives considered:** कठोर क्रम.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0016 B004–B029: [English](../upstream/content/sets-functions-relations/relations/orders.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/orders.tex)
+  - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/orders.tex:3, 10, 15–16, 27, 29, 32–34, 38, 42, 49, 54–55, 63, 65–66, 78, 82–83, 87–89, 93–95, 98, 101, 105–107, 111, 139–141, 152, 156`; `upstream/content/sets-functions-relations/relations/trees.tex:12, 19, 42, 44, 46, 51, 53, 74, 103`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/orders.tex:10, 14–15, 21–22, 25–26, 29–30, 35, 37, 39, 45–46, 51–52, 59, 62, 64, 69, 71, 74, 79–80, 83–85, 89–90, 93–96, 99–101, 105–107, 118, 120, 124, 133–135, 146, 150`; `mr/content/sets-functions-relations/relations/trees.tex:12, 41, 43, 46, 50, 52, 73, 101–102, 106, 110`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [गणित, इयत्ता आठवी](https://books.ebalbharati.in/pdfs/801020004.pdf) — MR-P027, MR-C017, PDF page 12, printed page 2. Personally read recovered OCR and actual page image; historical consultation not adopted
+- **Precise review question:** In the listed formal contexts, should “क्रम / काटेकोर क्रम” remain, or should one of “कठोर क्रम” replace it? Does the chosen wording preserve the technical sense of order / strict order without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T037 — equivalence relation / class / quotient
+
+- **Chosen wording:** तुल्यता संबंध / तुल्यतावर्ग / भागाकारसंच
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** evidence-based-provisional; attestation limits in reason. This choice remains open to correction.
+- **Rationale:** Equivalence label observed in native group-theory use; class and quotient compounds provisional. Quotient is a set of classes, not numeric division.
+- **Alternatives considered:** समतुल्यता संबंध / समतुल्यतावर्ग / भागसंच.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0015 B005–B015: [English](../upstream/content/sets-functions-relations/relations/equivalence-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/equivalence-relations.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:11, 17, 19, 23–24, 32–34, 36, 39–40, 43, 50, 64, 68–69, 79`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/equivalence-relations.tex:11, 16, 18, 22, 29–30, 32–33, 36, 40, 62, 68, 77`.
+- **Authorities actually checked:**
+
+  - [गट सिद्धांत](https://vishwakosh.marathi.gov.in/21196/) — MR-P026, MR-C016, representation isomorphism discussion, primary search observation. short primary-source observation read; source bytes not preserved
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P005, MR-C001, उपसंच, definition and first example, printed page 7. visually-read-page-image
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P004, MR-C001, समान संच, opening criterion and examples, printed page 6. visually-read-page-image
+- **Precise review question:** Are तुल्यतावर्ग and भागाकारसंच standard, and does भागाकारसंच avoid suggesting numerical division?
+
+## T038 — metaphysical identity / set-theoretic reductionism
+
+- **Chosen wording:** सत्तामीमांसक एकरूपता / संचसैद्धान्तिक न्यूनीकरणवाद
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** evidence-based-provisional; attestation limits in reason. This choice remains open to correction.
+- **Rationale:** Provisional philosophical compounds; no exact-label attestation claimed. Preserve source distinction between convenient representation and an ontological identity discovery. Predicate/name distinction from native predicate-logic prose.
+- **Alternatives considered:** तात्त्विक एकरूपता / संचसैद्धान्तिक न्यूनतावाद.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0013 B003–B008: [English](../upstream/content/sets-functions-relations/relations/reflections.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/reflections.tex)
+  - OLP-0023 B005–B016: [English](../upstream/content/sets-functions-relations/functions/functions-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/functions-relations.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/reflections.tex:15, 38, 73`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/reflections.tex:36`.
+- **Authorities actually checked:**
+
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P022, MR-C011, Predicate logic continuation and section 3.2, printed page 20. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [MR-C002](https://vishwakosh.marathi.gov.in/20027/) — MR-P010, MR-C002, opening definition and first argument-form discussion; truth-value discussion. Do not treat observation hash as source-byte hash or claim full original archived.
+- **Precise review question:** Do the philosophical compounds preserve the source's distinction between representation and ontological identity?
+
+## T039 — preorder / partial order / linear order
+
+- **Chosen wording:** पूर्वक्रम / अंशतः क्रम / रेषीय क्रम
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-sparse-evidence. This choice remains open to correction.
+- **Rationale:** Provisional order compounds, defined from exact OpenLogic properties; total means every distinct pair comparable, not completeness of a theory.
+- **Alternatives considered:** पूर्वक्रम / आंशिक क्रम / पूर्ण क्रम.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0016 B004–B029: [English](../upstream/content/sets-functions-relations/relations/orders.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/orders.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/orders.tex:22, 24, 27–29, 32–34, 38–40, 42, 48–49, 54–55, 63, 65–66, 68, 78, 87, 89, 93–94, 98, 101, 106–107, 139–141, 152, 156`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/orders.tex:21–22, 25–26, 29–30, 35, 37, 39, 45–46, 51–52, 59, 62, 64, 74, 83, 85, 89–90, 94–95, 100, 133–135, 146, 150`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश](https://shabdakosh.marathi.gov.in/ananya-glossary/7/t) — MR-P024, MR-C014, transitive relation / transitivity of equivalence. short primary-source observation read; source bytes not preserved
+  - [मराठी विश्वकोश शब्दसंग्रह](https://shabdakosh.marathi.gov.in/ananya-glossary/41/r) — MR-P025, MR-C015, reflexive / reflexivity. short primary-source observation read; source bytes not preserved
+- **Precise review question:** In the listed formal contexts, should “पूर्वक्रम / अंशतः क्रम / रेषीय क्रम” remain, or should one of “पूर्वक्रम / आंशिक क्रम / पूर्ण क्रम” replace it? Does the chosen wording preserve the technical sense of preorder / partial order / linear order without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T040 — graph / directed graph / vertex / edge
+
+- **Chosen wording:** आलेख / दिशित आलेख / शिखर / कड
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-sparse-evidence. This choice remains open to correction.
+- **Rationale:** Provisional graph-theory extension using native mathematical and spatial nouns. Directed-edge relation is not an ordinary function plot; isolated vertices remain part of graph identity.
+- **Alternatives considered:** ग्राफ / शीर्ष / धार.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0017 B004–B009: [English](../upstream/content/sets-functions-relations/relations/graphs.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/graphs.tex)
+  - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
+  - OLP-0023 B005–B016: [English](../upstream/content/sets-functions-relations/functions/functions-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/functions-relations.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/functions-relations.tex:24–25, 33, 39, 42, 49, 61, 64, 66`; `upstream/content/sets-functions-relations/relations/graphs.tex:3, 10, 12–13, 18–22, 24–26, 30–31, 33, 35–36, 38–39, 44, 58, 74`; `upstream/content/sets-functions-relations/relations/trees.tex:23, 40`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/functions-relations.tex:23–24, 32, 37, 48, 59, 63–65, 101`; `mr/content/sets-functions-relations/relations/graphs.tex:10, 12–14, 17–20, 23–24, 29–36, 43, 55–56, 71`; `mr/content/sets-functions-relations/relations/trees.tex:21, 36–37`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
+  - [गणितशास्त्र परिभाषा कोश](https://shabdakosh.marathi.gov.in/ananya-glossary/9/r) — MR-P023, MR-C013, relation, web lines 365–369. short primary-source observation read; source bytes not preserved
+- **Precise review question:** In the listed formal contexts, should “आलेख / दिशित आलेख / शिखर / कड” remain, or should one of “ग्राफ / शीर्ष / धार” replace it? Does the chosen wording preserve the technical sense of graph / directed graph / vertex / edge without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T041 — tree / root / branch / chain
+
+- **Chosen wording:** वृक्ष / मूळ / शाखा / शृंखला
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-sparse-evidence. This choice remains open to correction.
+- **Rationale:** Provisional descriptive mathematical metaphor. Definitions distinguish maximal chain from merely long path and finitely branching from finite total size.
+- **Alternatives considered:** तरू / मूल / फांदी / साखळी.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/trees.tex:3, 10, 13, 15–16, 18, 22–23, 37, 42, 49–50, 52, 57, 67, 84, 87, 90–92, 97, 101–102, 106–107, 113, 117, 122–123, 128`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/trees.tex:10, 12–14, 16, 19, 21–22, 36, 41, 48–49, 51, 56, 66, 83, 86, 89–91, 96, 100–101, 104, 106, 111, 115–117, 121–122, 127`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P005, MR-C001, उपसंच, definition and first example, printed page 7. visually-read-page-image
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- **Precise review question:** In the listed formal contexts, should “वृक्ष / मूळ / शाखा / शृंखला” remain, or should one of “तरू / मूल / फांदी / साखळी” replace it? Does the chosen wording preserve the technical sense of tree / root / branch / chain without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T042 — least / well-ordered / predecessor / successor
+
+- **Chosen wording:** लघुतम / सुक्रमित / पूर्ववर्ती / उत्तरवर्ती
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-sparse-evidence. This choice remains open to correction.
+- **Rationale:** Provisional extension; least is below every element, not merely minimal. Successor/predecessor here is immediate, unlike arbitrary descendant/ancestor.
+- **Alternatives considered:** न्यूनतम / सुव्यवस्थित / पूर्वज / उत्तरज.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0016 B004–B029: [English](../upstream/content/sets-functions-relations/relations/orders.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/orders.tex)
+  - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/trees.tex:44, 46–47, 51, 53, 56, 59, 62–63, 68, 74, 80, 86, 107, 114`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/trees.tex:43, 45–46, 50, 52, 55, 58, 61–62, 67, 73, 78, 85, 105, 113`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P005, MR-C001, उपसंच, definition and first example, printed page 7. visually-read-page-image
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- **Precise review question:** Does लघुतम clearly mean below every element, rather than merely minimal?
+
+## T043 — closure / inverse / restriction / relative product
+
+- **Chosen wording:** संवरण / व्युत्क्रम / मर्यादन / सापेक्ष गुणाकार
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-sparse-evidence. This choice remains open to correction.
+- **Rationale:** Provisional relation-operation compounds. Source defines inverse by swapping coordinates, restriction to both coordinates in A, product R then S, and transitive closure with positive lengths.
+- **Alternatives considered:** बंदता / प्रतिलोम / निर्बंध / संबंधगुणाकार.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0016 B004–B029: [English](../upstream/content/sets-functions-relations/relations/orders.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/orders.tex)
+  - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
+  - OLP-0023 B005–B016: [English](../upstream/content/sets-functions-relations/functions/functions-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/functions-relations.tex)
+  - OLP-0025 B004–B011: [English](../upstream/content/sets-functions-relations/functions/composition.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/composition.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:14, 20`; `upstream/content/sets-functions-relations/functions/functions-relations.tex:81, 98`; `upstream/content/sets-functions-relations/relations/operations.tex:22, 25, 28, 50, 52, 56, 68`; `upstream/content/sets-functions-relations/relations/orders.tex:100`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/composition.tex:14, 20`; `mr/content/sets-functions-relations/functions/functions-relations.tex:79, 94–95, 97, 101`; `mr/content/sets-functions-relations/relations/operations.tex:22, 25, 28, 51, 53, 57, 70`; `mr/content/sets-functions-relations/relations/orders.tex:95`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P014, MR-C001, संचांवरील क्रिया, intersection definition, printed page 11. visually-read-page-image
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P016, MR-C001, दोन संचांचा संयोग, definition and examples, printed page 13. visually-read-page-image
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
+  - [गणितशास्त्र परिभाषा कोश](https://shabdakosh.marathi.gov.in/ananya-glossary/9/r) — MR-P023, MR-C013, relation, web lines 365–369. short primary-source observation read; source bytes not preserved
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश](https://shabdakosh.marathi.gov.in/ananya-glossary/7/t) — MR-P024, MR-C014, transitive relation / transitivity of equivalence. short primary-source observation read; source bytes not preserved
+- **Precise review question:** In the listed formal contexts, should “संवरण / व्युत्क्रम / मर्यादन / सापेक्ष गुणाकार” remain, or should one of “बंदता / प्रतिलोम / निर्बंध / संबंधगुणाकार” replace it? Does the chosen wording preserve the technical sense of closure / inverse / restriction / relative product without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T044 — computability / formula / derivation
+
+- **Chosen wording:** संगणनीयता / सूत्र / निष्पत्ती
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
+- **Status/uncertainty:** provisional-sparse-evidence. This choice remains open to correction.
+- **Rationale:** Provisional formal-system senses; university proof and predicate-logic context supports grammar but not all exact labels. Distinguish computability संगणनीयता from countability गणनीयता before latter first use.
+- **Alternatives considered:** गणनक्षमता / व्युत्पादन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/trees.tex:14–16, 126`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/trees.tex:125`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P007, MR-C006, विधेय / संख्यापनीय तर्कशास्त्र आणि संच उपपत्ती, topics 1 and 4, printed page 14. visually-read-page-image
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P022, MR-C011, Predicate logic continuation and section 3.2, printed page 20. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- **Precise review question:** Is संगणनीयता the best way to keep computability distinct from गणनीयता for countability?
+
+## T045 — function / mapping
+
+- **Chosen wording:** फलन / संगती
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested core or explicitly provisional extension; see reason. This choice remains open to correction.
+- **Rationale:** Attested native exposition; function means exactly one value for every domain element, independent of computation method.
+- **Alternatives considered:** प्रतिचित्रण; मॅप.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0019 B004–B020: [English](../upstream/content/sets-functions-relations/relations/operations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/operations.tex)
+  - OLP-0020 B004: [English](../upstream/content/sets-functions-relations/functions/functions.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/functions.tex)
+  - OLP-0021 B004–B020: [English](../upstream/content/sets-functions-relations/functions/function-basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-basics.tex)
+  - OLP-0022 B004–B019: [English](../upstream/content/sets-functions-relations/functions/function-kinds.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-kinds.tex)
+  - OLP-0023 B005–B016: [English](../upstream/content/sets-functions-relations/functions/functions-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/functions-relations.tex)
+  - OLP-0024 B004–B027: [English](../upstream/content/sets-functions-relations/functions/inverses.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/inverses.tex)
+  - OLP-0025 B004–B011: [English](../upstream/content/sets-functions-relations/functions/composition.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/composition.tex)
+  - OLP-0026 B005–B013: [English](../upstream/content/sets-functions-relations/functions/partial-functions.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/partial-functions.tex)
+  - OLP-0027 B004–B005, B016: [English](../upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex)
+  - OLP-0028 B005–B007: [English](../upstream/content/sets-functions-relations/size-of-sets/introduction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/introduction.tex)
+  - OLP-0029 B006, B013–B015, B017–B018, B020–B022, B024–B026, B028–B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:1–2, 10, 14–16, 20, 24, 26, 29–30, 34, 40, 46`; `upstream/content/sets-functions-relations/functions/function-basics.tex:1–2, 13, 15, 18–19, 21, 23, 28–29, 43–45, 50–51, 54, 65, 67, 76, 78, 83–84, 86, 94, 104, 111–112, 115–116, 124, 134–135`; `upstream/content/sets-functions-relations/functions/function-kinds.tex:1–2, 10, 14, 16–18, 23, 29–30, 36, 44–45, 47, 52–54, 58, 64–65, 67, 77, 80, 83, 86, 98–100, 106, 113–114`; `upstream/content/sets-functions-relations/functions/functions-relations.tex:1–3, 12, 15, 19, 21, 24, 33, 35, 39, 42, 49, 61, 64–67, 71–72, 74, 79, 82, 94, 97`; `upstream/content/sets-functions-relations/functions/functions.tex:1–2, 8, 10, 12, 14, 20, 22`; `upstream/content/sets-functions-relations/functions/inverses.tex:1–2, 10, 13–16, 19, 21, 24, 28, 36, 45, 55, 58, 123, 129, 139, 146, 168`; `upstream/content/sets-functions-relations/functions/partial-functions.tex:1–3, 12, 15–17, 21, 26, 31–34, 38, 43, 50–51, 61`; `upstream/content/sets-functions-relations/relations/operations.tex:1`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:1, 89, 95–96, 100, 105, 108, 110, 119–121, 125, 132, 141–142, 166, 168, 174–175, 191, 210, 216, 218, 234, 238, 242, 244, 261, 273–274`; `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:1`; `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:1, 46`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/composition.tex:10, 14–17, 19, 25–26, 29–30, 34, 40, 46, 53, 59`; `mr/content/sets-functions-relations/functions/function-basics.tex:14–15, 18, 20–21, 23, 28–30, 42–43, 49–50, 63, 66, 68, 75, 77, 81–82, 84, 93, 103, 111, 113–114, 123, 132–133`; `mr/content/sets-functions-relations/functions/function-kinds.tex:10, 13, 16–17, 22–23, 28–29, 36, 43–44, 46, 51–52, 56, 62–63, 65, 76, 79, 82, 85, 98–100, 104, 111, 113`; `mr/content/sets-functions-relations/functions/functions-relations.tex:12, 15–16, 19–20, 23, 32–33, 35, 37, 48, 59, 63–65, 69, 71, 77, 81, 90, 93–94, 101`; `mr/content/sets-functions-relations/functions/functions.tex:8`; `mr/content/sets-functions-relations/functions/inverses.tex:10, 13–15, 19–20, 23, 28, 35–36, 43, 52–53, 56, 66, 75, 128, 133, 143, 150, 172`; `mr/content/sets-functions-relations/functions/partial-functions.tex:12, 15–17, 21, 26, 32–35, 39, 44, 51–52, 62`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:87, 93–94, 98, 102, 106–107, 117–119, 124, 130, 139, 141, 166, 168, 175, 177, 194, 213, 219, 223, 239, 245, 250, 252, 272, 287–288`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:46`.
+- **Authorities actually checked:**
+
+  - [फलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/27548/) — MR-P029, MR-C018, Opening paragraph, current web-search extraction personally read 2026-09-04. Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+  - [अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/26597/) — MR-P030, MR-C019, Function discussion: domain, codomain and range paragraph; current search extraction personally read 2026-09-04. Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- **Precise review question:** In the listed formal contexts, should “फलन / संगती” remain, or should one of “प्रतिचित्रण / मॅप” replace it? Does the chosen wording preserve the technical sense of function / mapping without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T046 — domain / codomain / range
+
+- **Chosen wording:** प्रांत / सहप्रांत / व्याप्ती
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested core or explicitly provisional extension; see reason. This choice remains open to correction.
+- **Rationale:** All three senses directly distinguished. Choose व्याप्ती consistently; कक्षा is an attested alternative, not an additional set.
+- **Alternatives considered:** परिभाषाक्षेत्र / लक्ष्यक्षेत्र / कक्षा.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0021 B004–B020: [English](../upstream/content/sets-functions-relations/functions/function-basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-basics.tex)
+  - OLP-0022 B004–B019: [English](../upstream/content/sets-functions-relations/functions/function-kinds.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-kinds.tex)
+  - OLP-0023 B005–B016: [English](../upstream/content/sets-functions-relations/functions/functions-relations.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/functions-relations.tex)
+  - OLP-0024 B004–B027: [English](../upstream/content/sets-functions-relations/functions/inverses.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/inverses.tex)
+  - OLP-0026 B005–B013: [English](../upstream/content/sets-functions-relations/functions/partial-functions.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/partial-functions.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/function-basics.tex:32, 38, 44–47, 53, 60, 97, 99, 120`; `upstream/content/sets-functions-relations/functions/function-kinds.tex:17, 24, 31, 41, 72, 103, 107`; `upstream/content/sets-functions-relations/functions/functions-relations.tex:36`; `upstream/content/sets-functions-relations/functions/inverses.tex:22`; `upstream/content/sets-functions-relations/functions/partial-functions.tex:26`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/function-basics.tex:32, 37, 43–45, 50–51, 57–58, 95, 97, 119`; `mr/content/sets-functions-relations/functions/function-kinds.tex:16, 22, 30, 40, 70, 100–101, 104`; `mr/content/sets-functions-relations/functions/functions-relations.tex:34`; `mr/content/sets-functions-relations/functions/inverses.tex:21`; `mr/content/sets-functions-relations/functions/partial-functions.tex:26`.
+- **Authorities actually checked:**
+
+  - [फलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/27548/) — MR-P029, MR-C018, Opening paragraph, current web-search extraction personally read 2026-09-04. Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+  - [अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/26597/) — MR-P030, MR-C019, Function discussion: domain, codomain and range paragraph; current search extraction personally read 2026-09-04. Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- **Precise review question:** Are प्रांत, सहप्रांत and व्याप्ती the clearest mutually distinct domain, codomain and range labels, and should कक्षा replace व्याप्ती?
+
+## T047 — argument / input / output / value
+
+- **Chosen wording:** फलसाधक / आदान / प्रदान / मूल्य
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested core or explicitly provisional extension; see reason. This choice remains open to correction.
+- **Rationale:** फलसाधक is explicitly mathematical in the dictionary. Input/output renderings are provisional explanatory vocabulary; not logical युक्तिवाद.
+- **Alternatives considered:** चल / निविष्ट / निर्गत.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0021 B004–B020: [English](../upstream/content/sets-functions-relations/functions/function-basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-basics.tex)
+  - OLP-0022 B004–B019: [English](../upstream/content/sets-functions-relations/functions/function-kinds.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-kinds.tex)
+  - OLP-0025 B004–B011: [English](../upstream/content/sets-functions-relations/functions/composition.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/composition.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:28–30, 47`; `upstream/content/sets-functions-relations/functions/function-basics.tex:18–19, 24–25, 33–35, 39, 46–47, 52–53, 58–59, 65–66, 84, 86–88, 95–96, 105, 133, 135`; `upstream/content/sets-functions-relations/functions/function-kinds.tex:17, 24, 41–42, 52–54, 59`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/composition.tex:28, 30–31, 47`; `mr/content/sets-functions-relations/functions/function-basics.tex:18–19, 21, 23–24, 33–35, 38, 44–45, 50–51, 56, 63–64, 81–83, 85, 92–93, 102, 107, 132, 134`; `mr/content/sets-functions-relations/functions/function-kinds.tex:16, 23, 41, 51–52, 56–57`.
+- **Authorities actually checked:**
+
+  - [फलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/27548/) — MR-P029, MR-C018, Opening paragraph, current web-search extraction personally read 2026-09-04. Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+  - [argument — मराठी शब्दकोश](https://shabdakosh.marathi.gov.in/node/326273) — MR-P031, MR-C020, Sense 2 Math., distinct from reason/argument and Fregean predicate senses; current search extraction personally read 2026-09-04. Short indexed dictionary observation, not an original-byte source. No claim that this attests all input/output vocabulary.
+- **Precise review question:** In the listed formal contexts, should “फलसाधक / आदान / प्रदान / मूल्य” remain, or should one of “चल / निविष्ट / निर्गत” replace it? Does the chosen wording preserve the technical sense of argument / input / output / value without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T048 — surjective / surjection
+
+- **Chosen wording:** आच्छादक / आच्छादन
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested core or explicitly provisional extension; see reason. This choice remains open to correction.
+- **Rationale:** Adjective directly attested; nominal form is a documented extension. Every codomain point attained.
+- **Alternatives considered:** ऑन्टू; अधिच्छादक.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0022 B004–B019: [English](../upstream/content/sets-functions-relations/functions/function-kinds.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-kinds.tex)
+  - OLP-0024 B004–B027: [English](../upstream/content/sets-functions-relations/functions/inverses.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/inverses.tex)
+  - OLP-0025 B004–B011: [English](../upstream/content/sets-functions-relations/functions/composition.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/composition.tex)
+  - OLP-0027 B004–B005, B016: [English](../upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex)
+  - OLP-0028 B005–B007: [English](../upstream/content/sets-functions-relations/size-of-sets/introduction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/introduction.tex)
+  - OLP-0029 B006, B013–B015, B018, B021–B022, B024–B026, B028–B030, B032, B034–B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:59`; `upstream/content/sets-functions-relations/functions/function-kinds.tex:18–19, 22–23, 25, 29–30, 36, 40, 44, 48, 78, 81, 84, 94, 99, 114`; `upstream/content/sets-functions-relations/functions/inverses.tex:52, 92, 98–99, 101, 103, 118, 146`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:15, 89, 95, 97, 105, 108, 110, 133, 166–167, 169, 174–176, 190, 195–196, 200, 202, 210, 224, 228, 244–245, 259, 270, 276`; `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:13, 46`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:15, 19`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:13, 15, 46, 48`.
+- **Authorities actually checked:**
+
+  - [फलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/27548/) — MR-P029, MR-C018, Opening paragraph, current web-search extraction personally read 2026-09-04. Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- **Precise review question:** Is आच्छादक / आच्छादन standard and morphologically natural for surjective / surjection?
+
+## T049 — injective / injection
+
+- **Chosen wording:** एकास-एक / एकास-एक फलन
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested core or explicitly provisional extension; see reason. This choice remains open to correction.
+- **Rationale:** Provisional sense-controlled use: no two different arguments share a value. The broader witness correspondence wording does not itself prove injectivity versus bijectivity.
+- **Alternatives considered:** इंजेक्टिव्ह; अंतःक्षेपी.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0022 B004–B019: [English](../upstream/content/sets-functions-relations/functions/function-kinds.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-kinds.tex)
+  - OLP-0024 B004–B027: [English](../upstream/content/sets-functions-relations/functions/inverses.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/inverses.tex)
+  - OLP-0025 B004–B011: [English](../upstream/content/sets-functions-relations/functions/composition.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/composition.tex)
+  - OLP-0026 B005–B013: [English](../upstream/content/sets-functions-relations/functions/partial-functions.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/partial-functions.tex)
+  - OLP-0029 B014, B029, B032, B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:54`; `upstream/content/sets-functions-relations/functions/function-kinds.tex:54–55, 57–58, 60, 64–65, 67, 71, 78, 81, 84, 94, 99, 114`; `upstream/content/sets-functions-relations/functions/inverses.tex:51, 63, 69, 71, 88, 148`; `upstream/content/sets-functions-relations/functions/partial-functions.tex:46`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:101, 223, 247, 272, 274`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/function-kinds.tex:100`; `mr/content/sets-functions-relations/functions/inverses.tex:66`; `mr/content/sets-functions-relations/functions/partial-functions.tex:47`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:19`.
+- **Authorities actually checked:**
+
+  - [अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/26597/) — MR-P030, MR-C019, Function discussion: domain, codomain and range paragraph; current search extraction personally read 2026-09-04. Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- **Precise review question:** Does एकास-एक reliably express injectivity without being read as bijectivity in these contexts?
+
+## T050 — bijective / bijection / one-to-one correspondence
+
+- **Chosen wording:** एकास-एक व आच्छादक / एकास-एक आच्छादन / एकास-एक संगती
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested core or explicitly provisional extension; see reason. This choice remains open to correction.
+- **Rationale:** Transparent conjunction of injectivity and surjectivity; avoid claiming that a unique specialized noun was attested.
+- **Alternatives considered:** द्विएक; बायजेक्शन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0022 B004–B019: [English](../upstream/content/sets-functions-relations/functions/function-kinds.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-kinds.tex)
+  - OLP-0024 B004–B027: [English](../upstream/content/sets-functions-relations/functions/inverses.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/inverses.tex)
+  - OLP-0025 B004–B011: [English](../upstream/content/sets-functions-relations/functions/composition.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/composition.tex)
+  - OLP-0027 B004–B005, B016: [English](../upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex)
+  - OLP-0028 B005–B007: [English](../upstream/content/sets-functions-relations/size-of-sets/introduction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/introduction.tex)
+  - OLP-0029 B006, B029–B030, B033–B034: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:14`; `upstream/content/sets-functions-relations/functions/function-kinds.tex:100–102, 105–106, 108, 112–113, 115`; `upstream/content/sets-functions-relations/functions/inverses.tex:109–110, 123, 127–128, 138, 148–149`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:18, 224, 229, 253, 261, 264`; `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:14, 44`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/function-kinds.tex:100`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:19`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:15`.
+- **Authorities actually checked:**
+
+  - [फलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/27548/) — MR-P029, MR-C018, Opening paragraph, current web-search extraction personally read 2026-09-04. Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+  - [अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/26597/) — MR-P030, MR-C019, Function discussion: domain, codomain and range paragraph; current search extraction personally read 2026-09-04. Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- **Precise review question:** Is the transparent phrase एकास-एक व आच्छादक preferable to a specialist noun such as द्विएक?
+
+## T051 — identity / constant function
+
+- **Chosen wording:** एकरूपता फलन / स्थिर फलन
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested core or explicitly provisional extension; see reason. This choice remains open to correction.
+- **Rationale:** Constant directly attested. Identity extends the existing relation terminology to x mapped to x.
+- **Alternatives considered:** परिचय फलन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0021 B004–B020: [English](../upstream/content/sets-functions-relations/functions/function-basics.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-basics.tex)
+  - OLP-0022 B004–B019: [English](../upstream/content/sets-functions-relations/functions/function-kinds.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/function-kinds.tex)
+  - OLP-0029 B017: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/function-kinds.tex:77, 80`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:120`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/function-kinds.tex:76, 79`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:118`.
+- **Authorities actually checked:**
+
+  - [अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/26597/) — MR-P030, MR-C019, Function discussion: domain, codomain and range paragraph; current search extraction personally read 2026-09-04. Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- **Precise review question:** In the listed formal contexts, should “एकरूपता फलन / स्थिर फलन” remain, or should one of “परिचय फलन” replace it? Does the chosen wording preserve the technical sense of identity / constant function without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T052 — inverse / left inverse / right inverse
+
+- **Chosen wording:** व्युत्क्रम / डावा व्युत्क्रम / उजवा व्युत्क्रम
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested core or explicitly provisional extension; see reason. This choice remains open to correction.
+- **Rationale:** Retain earlier inverse-relation term. Left/right composition definitions follow English; not inferred from witness inverse prose.
+- **Alternatives considered:** प्रतिलोम.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0024 B004–B027: [English](../upstream/content/sets-functions-relations/functions/inverses.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/inverses.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/inverses.tex:3, 10, 24, 28, 33, 36–37, 57, 59, 64, 87, 93, 117, 123–124, 127, 138, 140, 145, 149–151, 155–156, 167–168, 172–173`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/inverses.tex:10, 23, 29, 32, 35–36, 55, 57, 63, 66, 89, 95, 121, 127, 143, 149, 154–155, 159, 172, 176–177`.
+- **Authorities actually checked:**
+
+  - [अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/26597/) — MR-P030, MR-C019, Function discussion: domain, codomain and range paragraph; current search extraction personally read 2026-09-04. Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- **Precise review question:** Do डावा and उजवा व्युत्क्रम keep composition order clear in Marathi prose?
+
+## T053 — composition / partial / total function
+
+- **Chosen wording:** संयोजन / अंशतः फलन / सर्वत्र परिभाषित फलन
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested core or explicitly provisional extension; see reason. This choice remains open to correction.
+- **Rationale:** Provisional descriptive vocabulary. Full definitions govern composition order and the difference between missing values and multiple values.
+- **Alternatives considered:** संघटन / आंशिक फलन / पूर्ण फलन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0025 B004–B011: [English](../upstream/content/sets-functions-relations/functions/composition.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/composition.tex)
+  - OLP-0026 B005–B013: [English](../upstream/content/sets-functions-relations/functions/partial-functions.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/partial-functions.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/composition.tex:3, 10, 15, 23–25, 33–35, 39, 41, 48`; `upstream/content/sets-functions-relations/functions/partial-functions.tex:3, 12, 17, 21, 26, 31, 38, 43, 50–51, 60`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/composition.tex:10, 15–16, 23, 25, 34, 39, 41, 49`; `mr/content/sets-functions-relations/functions/partial-functions.tex:12, 17, 21, 26, 32–33, 39, 44, 51–52, 62`.
+- **Authorities actually checked:**
+
+  - [फलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/27548/) — MR-P029, MR-C018, Opening paragraph, current web-search extraction personally read 2026-09-04. Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+  - [अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/26597/) — MR-P030, MR-C019, Function discussion: domain, codomain and range paragraph; current search extraction personally read 2026-09-04. Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- **Precise review question:** Is संयोजन preferable to संघटन for function composition, and are the partial/total labels idiomatic without losing the definedness distinction?
+
+## T054 — serial relation
+
+- **Chosen wording:** प्रत्येक आदानाशी किमान एक प्रदान जोडणारा
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested core or explicitly provisional extension; see reason. This choice remains open to correction.
+- **Rationale:** Source-defined descriptive rendering, not an attested technical noun. For every x in A, at least one y in B is R-related; does not require uniqueness.
+- **Alternatives considered:** क्रमिक संबंध; ‘serial’ च्या सामान्य अर्थामुळे संदिग्धता संभवते.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0026 B005–B013: [English](../upstream/content/sets-functions-relations/functions/partial-functions.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/partial-functions.tex)
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/partial-functions.tex:64`.
+- **Authorities actually checked:** none for this exact label before current use; this absence is recorded rather than treated as a hold.
+- **Precise review question:** Should the edition keep the explicit quantified paraphrase for serial relation, or is there a well-attested concise Marathi technical term?
+
+## T055 — Axiom of Choice
+
+- **Chosen wording:** निवडीचे स्वयंसिद्धक
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested core or explicitly provisional extension; see reason. This choice remains open to correction.
+- **Rationale:** Provisional transparent extension of the existing axiom decision. Full English footnote governs the arbitrary family of nonempty fibers and the special cases where choice is unnecessary.
+- **Alternatives considered:** चयन स्वयंसिद्ध.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0024 B004–B027: [English](../upstream/content/sets-functions-relations/functions/inverses.tex) ↔ [Marathi](../mr/content/sets-functions-relations/functions/inverses.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/functions/inverses.tex:110`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/functions/inverses.tex:109, 112`.
+- **Authorities actually checked:** none for this exact label before current use; this absence is recorded rather than treated as a hold.
+- **Precise review question:** In the listed formal contexts, should “निवडीचे स्वयंसिद्धक” remain, or should one of “चयन स्वयंसिद्ध” replace it? Does the chosen wording preserve the technical sense of Axiom of Choice without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
+
+## T056 — enumeration / enumerate
+
+- **Chosen wording:** प्रगणन / प्रगणन करणे
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** Attested core or explicit descriptive extension. This choice remains open to correction.
+- **Rationale:** Attested label with source-defined meaning. Arbitrary listing need not be computable.
+- **Alternatives considered:** परिगणन; यादीकरण.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0027 B004–B005, B016: [English](../upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex)
+  - OLP-0028 B005–B007: [English](../upstream/content/sets-functions-relations/size-of-sets/introduction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/introduction.tex)
+  - OLP-0029 B005–B024, B029–B032, B034–B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:3, 11, 14, 17, 27–28, 31, 35–37, 42, 44, 46, 48–49, 52, 55–56, 60, 65, 69, 74, 76–77, 84, 87–88, 95–96, 104, 115, 131–132, 137, 143, 190, 215, 228, 240`; `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:21`; `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11, 13–14`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:11, 14, 17, 28–29, 32, 36, 40, 42, 44, 46, 48–52, 54–56, 59, 63, 68, 72–73, 75, 81, 85–86, 93–94, 101, 113, 117, 119, 129–130, 135, 193, 217, 233, 247`; `mr/content/sets-functions-relations/size-of-sets/introduction.tex:22`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11–12, 14`.
+- **Authorities actually checked:**
+
+  - [भौतिकशास्त्र पारिभाषिक शब्दावली — enumeration](https://shabdakosh.marathi.gov.in/ananya-glossary/33/e) — MR-P033, MR-C021, Entries enumeration and enumerate, personally read in current web-search extraction 2026-09-04. Short indexed lexical observation; no original HTML hash, no independent attestation of effective enumeration.
+- **Precise review question:** Does प्रगणन naturally cover arbitrary mathematical listings that need not be computable, or would परिगणन be less misleading?
+
+## T057 — enumerable / countable / uncountable
+
+- **Chosen wording:** गणनीय / गणनीय / अगणनीय
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** Attested core or explicit descriptive extension. This choice remains open to correction.
+- **Rationale:** In this edition, गणनीय includes finite and empty sets as specified by OpenLogic. Native witness discusses the infinite case; do not import that narrower convention.
+- **Alternatives considered:** मोजता येण्याजोगा; काउंटेबल.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0027 B004–B005, B016: [English](../upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex)
+  - OLP-0028 B005–B007: [English](../upstream/content/sets-functions-relations/size-of-sets/introduction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/introduction.tex)
+  - OLP-0029 B005, B008–B009, B012, B016, B021–B023, B028, B033, B035: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:11, 31, 64, 84, 114–115, 165, 173, 181–182, 209, 253, 259, 269–272`; `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:24, 26`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:63, 166, 175, 183, 185, 282, 286`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11, 45`.
+- **Authorities actually checked:**
+
+  - [MR-C004](https://vishwakosh.marathi.gov.in/34075/) — MR-P032, MR-C004, Current search extraction, personally read 2026-09-04: paragraphs headed infinite sets and cardinality. Same previously indexed source, new actual consultation. The witness's positive-natural-number convention and its restriction to infinite countable sets do not replace OpenLogic conventions. Missing/corrupt mathematical glyphs and source historical assertions are not imported. Original HTML remains unavailable.
+- **Precise review question:** Can गणनीय include finite and empty sets here without readers importing the checked witness's narrower countably-infinite convention?
+
+## T058 — size / cardinality / equinumerous
+
+- **Chosen wording:** आकारमान / संचांक / तुल्यबल
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** Attested core or explicit descriptive extension. This choice remains open to correction.
+- **Rationale:** Cardinality and equinumerosity are attested; आकारमान is a contextual size rendering, not geometric shape.
+- **Alternatives considered:** प्रमाण / कार्डिनॅलिटी / समसंख्य.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0027 B004–B005, B016: [English](../upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex)
+  - OLP-0028 B005–B007: [English](../upstream/content/sets-functions-relations/size-of-sets/introduction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/introduction.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:2, 16`; `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:2, 8, 31, 33`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/introduction.tex:16`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8`.
+- **Authorities actually checked:**
+
+  - [MR-C004](https://vishwakosh.marathi.gov.in/34075/) — MR-P032, MR-C004, Current search extraction, personally read 2026-09-04: paragraphs headed infinite sets and cardinality. Same previously indexed source, new actual consultation. The witness's positive-natural-number convention and its restriction to infinite countable sets do not replace OpenLogic conventions. Missing/corrupt mathematical glyphs and source historical assertions are not imported. Original HTML remains unavailable.
+- **Precise review question:** Are आकारमान, संचांक and तुल्यबल standard and sufficiently distinct in the listed contexts?
+
+## T059 — actual infinity
+
+- **Chosen wording:** प्रत्यक्ष अस्तित्वातील अनंतता
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** Attested core or explicit descriptive extension. This choice remains open to correction.
+- **Rationale:** Provisional descriptive rendering of the historical philosophical distinction; not a claim about real-valued quantities.
+- **Alternatives considered:** वास्तविक अनंत.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0027 B004–B005, B016: [English](../upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex)
+  - OLP-0028 B005–B007: [English](../upstream/content/sets-functions-relations/size-of-sets/introduction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/introduction.tex)
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/introduction.tex:15`.
+- **Authorities actually checked:** none for this exact label before current use; this absence is recorded rather than treated as a hold.
+- **Precise review question:** Does प्रत्यक्ष अस्तित्वातील अनंतता accurately name actual infinity without suggesting real-number infinity?
+
+## T060 — ceiling function
+
+- **Chosen wording:** ऊर्ध्व पूर्णांक फलन
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional-not-attested; open to correction. This choice remains open to correction.
+- **Rationale:** Provisional descriptive rendering. The accompanying OpenLogic definition—least integer not below x—governs the sense. No Marathi specialist source was checked or found for this exact label before first use.
+- **Alternatives considered:** लघुतम उच्च पूर्णांक फलन; सीलिंग फलन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0029 B020: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:141`.
+- **Authorities actually checked:** none for this exact label before current use; this absence is recorded rather than treated as a hold.
+- **Precise review question:** Is ऊर्ध्व पूर्णांक फलन an idiomatic name for the least-integer-not-below-x function, or is लघुतम उच्च पूर्णांक फलन preferable?
+
+## T061 — recursive / recursively defined
+
+- **Chosen wording:** पुनरावर्ती / पुनरावर्ती रीतीने परिभाषित
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional-not-attested; open to correction. This choice remains open to correction.
+- **Rationale:** Provisional compositional rendering for a definition whose next value is selected from earlier values. No exact Marathi recursion terminology source was checked before first use; the frozen construction governs meaning.
+- **Alternatives considered:** पुनरावृत्तीने परिभाषित; आवर्ती व्याख्या.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0029 B031: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:239`.
+- **Authorities actually checked:** none for this exact label before current use; this absence is recorded rather than treated as a hold.
+- **Precise review question:** Does पुनरावर्ती describe recursive definition here without being mistaken for periodic recurrence?
+
+## T062 — initial segment
+
+- **Chosen wording:** आरंभीचा खंड / सांत आरंभीचा खंड
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional-not-attested; open to correction. This choice remains open to correction.
+- **Rationale:** Provisional descriptive rendering for Nat or a finite set beginning at its least endpoint. No exact specialist Marathi attestation was checked before first use; displayed domains preserve the mathematical meaning.
+- **Alternatives considered:** प्रारंभिक खंड; आरंभखंड.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0029 B006, B030–B031, B033–B034: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:18`.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:** none for this exact label before current use; this absence is recorded rather than treated as a hold.
+- **Precise review question:** Is आरंभीचा खंड standard for an initial segment of the natural numbers?
+
+## T063 — enumeration with/without repetitions; redundant enumeration
+
+- **Chosen wording:** पुनरुक्ती असलेले / पुनरुक्ती नसलेले प्रगणन
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** attested headword with provisional descriptive qualifiers; open to correction. This choice remains open to correction.
+- **Rationale:** The headword प्रगणन is attested; the repetition qualifiers are transparent descriptive extensions. The construction allows repeated values unless injectivity is explicitly required.
+- **Alternatives considered:** पुनरावृत्तीसह / पुनरावृत्तीविना प्रगणन; अतिरिक्त नोंदी असलेले प्रगणन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0029 B009–B011, B014, B029: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
+- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:48, 69, 214, 221`.
+- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:68`.
+- **Authorities actually checked:**
+
+  - [भौतिकशास्त्र पारिभाषिक शब्दावली — enumeration](https://shabdakosh.marathi.gov.in/ananya-glossary/33/e) — MR-P033, MR-C021, Entries enumeration and enumerate, personally read in current web-search extraction 2026-09-04. Short indexed lexical observation; no original HTML hash, no independent attestation of effective enumeration.
+- **Precise review question:** Are पुनरुक्ती असलेले and पुनरुक्ती नसलेले the clearest qualifiers for enumerations with and without repeated values?
+
+# Source corrections and difficult source decisions
+
+## MR-SI001 — OLP-0012
+
+- **Source location:** `content/sets-functions-relations/relations/relations-as-sets.tex:83-100`.
+- **Target location:** `mr/content/sets-functions-relations/relations/relations-as-sets.tex:83-100`.
+- **Finding:** I is used without an explicit local assignment, after defining Id(A). The preceding diagonal discussion indicates that I means Id(Nat).
+- **Chosen action:** Explain I as the preceding diagonal identity relation, without replacing the source formula.
+- **Alternatives considered:** Preserve source silently; Change aligned mathematical content directly.
+- **Uncertainty:** high contextual interpretation
+- **Precise review question:** Is the current source-preserving note mathematically precise and natural in Marathi, or should a different visible correction be used?
+
+## MR-SI002 — OLP-0018
+
+- **Source location:** `content/sets-functions-relations/relations/trees.tex:90-95`.
+- **Target location:** `mr/content/sets-functions-relations/relations/trees.tex:89-94`.
+- **Finding:** Ambient tree set was A; X has no definition here. Intended domain is A minus B.
+- **Chosen action:** Explain the likely intended A domain while preserving X in aligned source.
+- **Alternatives considered:** Preserve source silently; Change aligned mathematical content directly.
+- **Uncertainty:** high local notation defect
+- **Precise review question:** Is the current source-preserving note mathematically precise and natural in Marathi, or should a different visible correction be used?
+
+## MR-SI003 — OLP-0018
+
+- **Source location:** `content/sets-functions-relations/relations/trees.tex:110-118`.
+- **Target location:** `mr/content/sets-functions-relations/relations/trees.tex:109-117`.
+- **Finding:** A rooted tree is required to have a unique least element, so the empty prefix-closed subset does not meet the earlier tree definition. This example requires nonempty A under that convention.
+- **Chosen action:** State the nonempty qualification for consistency with the given rooted-tree definition.
+- **Alternatives considered:** Preserve source silently; Change aligned mathematical content directly.
+- **Uncertainty:** high boundary case
+- **Precise review question:** Is the current source-preserving note mathematically precise and natural in Marathi, or should a different visible correction be used?
+
+## OLFUN-001 — OLP-0024
+
+- **Source location:** `content/sets-functions-relations/functions/inverses.tex:62-84`.
+- **Target location:** `mr/content/sets-functions-relations/functions/inverses.tex:66`.
+- **Finding:** An injection f:A to B has a left inverse iff A is nonempty or B is empty.
+- **Chosen action:** Added A nonempty to the translated theorem and proof; formulas unchanged.
+- **Alternatives considered:** Preserve source silently; Change aligned mathematical content directly.
+- **Uncertainty:** confirmed mathematical defect
+- **Precise review question:** Is the Marathi distinction between the simple repaired theorem and the exact empty-set condition completely unambiguous?
+
+## OLFUN-002 — OLP-0021
+
+- **Source location:** `content/sets-functions-relations/functions/function-basics.tex:64-71; content/sets-functions-relations/sets/important-sets.tex:17`.
+- **Target location:** `mr/content/sets-functions-relations/functions/function-basics.tex:71`.
+- **Finding:** The source calls the selected square root positive on all natural-number inputs, but OpenLogic includes zero and the selected root at zero is zero, hence nonnegative rather than positive.
+- **Chosen action:** Used ऋणेतर (प्रधान) वर्गमूळ for the selector on all natural numbers; display and preceding positive-integer two-root claim unchanged.
+- **Alternatives considered:** Preserve source silently; Change aligned mathematical content directly.
+- **Uncertainty:** confirmed wording defect
+- **Precise review question:** Is प्रधान वर्गमूळ the clearest Marathi modifier here, or should the body keep only ऋणेतर वर्गमूळ?
+
+## OLFUN-003 — OLP-0021
+
+- **Source location:** `content/sets-functions-relations/functions/function-basics.tex:103-107`.
+- **Target location:** `mr/content/sets-functions-relations/functions/function-basics.tex:107`.
+- **Finding:** The source changes the input variable from n to x within one example even though its displayed function is defined in x.
+- **Chosen action:** Used x consistently in the translated prose; mathematical formula unchanged.
+- **Alternatives considered:** Preserve source silently; Change aligned mathematical content directly.
+- **Uncertainty:** confirmed typographical inconsistency
+- **Precise review question:** Does the repaired prose read naturally without suggesting a change to the source function definition?
+
+## OLFUN-004 — OLP-0023
+
+- **Source location:** `content/sets-functions-relations/functions/functions-relations.tex:24-30,61-64; content/sets-functions-relations/relations/relations-as-sets.tex:55-58`.
+- **Target location:** `mr/content/sets-functions-relations/functions/functions-relations.tex:74`.
+- **Finding:** Calling the graph a relation on A×B conflicts with the book's own definition: the graph is a relation between A and B, hence a subset of A×B.
+- **Chosen action:** Said relation between A and B contained in A×B, avoiding the project-defined but incorrect literal relation on A×B wording.
+- **Alternatives considered:** Preserve source silently; Change aligned mathematical content directly.
+- **Uncertainty:** confirmed terminology imprecision
+- **Precise review question:** Is the chosen Marathi wording standard and concise for a heterogeneous binary relation?
+
+## OLFUN-005 — OLP-0023
+
+- **Source location:** `content/sets-functions-relations/functions/functions-relations.tex:78-100; content/sets-functions-relations/relations/operations.tex:20-32`.
+- **Target location:** `mr/content/sets-functions-relations/functions/functions-relations.tex:101`.
+- **Finding:** Function restriction limits the domain coordinate only, while the earlier relation restriction R∩C² limits both coordinates; they are analogous operations but not literally identical.
+- **Chosen action:** Kept domain-only function restriction and qualified the analogy: relation restriction to C limits both coordinates, so the operations are analogous but not identical.
+- **Alternatives considered:** Preserve source silently; Change aligned mathematical content directly.
+- **Uncertainty:** confirmed explanatory inconsistency; explicit definition correct
+- **Precise review question:** Would Marathi readers benefit from displaying the counterexample in the main reader, or is the concise adjacent distinction sufficient?
+
+## OLSIZ-001 — OLP-0029
+
+- **Source location:** `content/sets-functions-relations/size-of-sets/enumerability.tex:141-152`.
+- **Target location:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:153`.
+- **Finding:** The header and formula rows include f(7), but the final value row jumps from f(6)=3 to an ellipsis. The displayed formula gives f(7)=-3.
+- **Chosen action:** Preserved the frozen table exactly and added an adjacent Marathi reader note stating the expected omitted value.
+- **Alternatives considered:** Insert -3 into the table and thereby change displayed source structure; Leave the omission unexplained.
+- **Uncertainty:** Very low about the expected value; editorial preference about correcting versus annotating remains open.
+- **Precise review question:** Should a future source-authorized edition insert the missing -3 cell, or retain the exact table with the current explanatory note?
+
+## OLSIZ-002 — OLP-0029
+
+- **Source location:** `content/sets-functions-relations/size-of-sets/enumerability.tex:252-265`.
+- **Target location:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:278`.
+- **Finding:** The corollary parametrizes a finite initial segment as 0 through n, while its proof obtains 0 through n-1 from a preceding 1-through-n domain. These describe the same family after renaming the natural-number parameter, but the shift is not explained.
+- **Chosen action:** Preserved both endpoints exactly and added an adjacent Marathi clarification that the parameter names differ.
+- **Alternatives considered:** Normalize both occurrences to one endpoint convention; Leave the harmless reindexing implicit.
+- **Uncertainty:** No mathematical uncertainty; only the preferred expository convention is open.
+- **Precise review question:** Is the Marathi clarification sufficient, or would explicitly renaming one parameter make the proof easier without obscuring source fidelity?

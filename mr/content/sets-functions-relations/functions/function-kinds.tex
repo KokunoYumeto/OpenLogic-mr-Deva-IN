@@ -1,0 +1,117 @@
+% Part: sets-functions-relations
+% Chapter: functions
+% Section: kinds
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{fun}{kin}
+\olsection{फलनांचे प्रकार}
+
+\begin{explain}
+आपल्याला वारंवार भेटणाऱ्या फलनांच्या काही प्रकारांचे वर्गीकरण करून
+घेणे उपयोगी ठरेल.
+
+सुरुवातीला, सहप्रांतातील प्रत्येक सदस्य फलनाचे मूल्य असतो असा गुणधर्म
+असलेल्या फलनांचा विचार करू. अशा फलनांना !!{surjective} म्हणतात.
+त्यांची आकृती \olref{fig:surjective} प्रमाणे काढता येते.
+
+\begin{figure}
+  \olasset{assets/diagrams/surjective.tikz}
+  \caption{!!^a{surjective} फलनात सहप्रांतातील प्रत्येक !!{element}
+    हे फलनाचे मूल्य असते.}
+  \ollabel{fig:surjective}
+\end{figure}
+\end{explain}
+
+\begin{defn}[!!^{surjective} फलन]
+$f \colon A \rightarrow B$ हे फलन \emph{!!{surjective}} असते तेव्हा
+आणि केवळ तेव्हाच, जेव्हा $B$ हा~$f$ ची व्याप्तीही असतो. म्हणजे,
+प्रत्येक $y \in B$ साठी~$f(x) = y$ असणारा किमान एक $x \in A$
+असतो. चिन्हांत:
+\[
+  (\forall y \in B)(\exists x \in A)f(x) = y.
+\]
+अशा फलनाला $A$ पासून $B$ पर्यंतचे !!a{surjection} म्हणतो.
+\end{defn}
+
+\begin{explain}
+$f$ हे !!a{surjection} आहे असे दाखवायचे असल्यास, $f$ च्या सहप्रांतातील
+प्रत्येक वस्तू कोणत्या तरी आदान $x$ साठी $f(x)$ चे मूल्य आहे असे दाखवावे लागते.
+
+कोणत्याही फलनापासून एक !!a{surjection} \emph{निर्माण होते}, हे लक्षात घ्या.
+कारण $f \colon A \to B$ हे फलन दिले असल्यास, $f' \colon A \to \ran{f}$
+ची व्याख्या $f'(x) = f(x)$ अशी करू. $\ran{f}$ ची \emph{व्याख्याच}
+$\Setabs{f(x) \in B}{x \in A}$ अशी असल्यामुळे हे फलन $f'$ निश्चितच
+!!a{surjection} असते.
+\end{explain}
+
+\begin{explain}
+कोणतेही फलन प्रत्येक शक्य आदानाशी एकमेव प्रदान जोडते. पण वेगवेगळ्या
+आदानांशी कधीच एकच प्रदान न जोडणारी फलनेही असतात. अशा फलनांना
+!!{injective} म्हणतात. त्यांची आकृती \olref{fig:injective} प्रमाणे काढता येते.
+\begin{figure}
+  \olasset{assets/diagrams/injective.tikz}
+  \caption{!!^a{injective} फलन कधीच दोन वेगवेगळ्या फलसाधकांशी
+    एकच मूल्य जोडत नाही.}
+  \ollabel{fig:injective}
+\end{figure}
+\end{explain}
+
+\begin{defn}[!!^{injective} फलन]
+$f \colon A \rightarrow B$ हे फलन \emph{!!{injective}} असते तेव्हा
+आणि केवळ तेव्हाच, जेव्हा प्रत्येक $y \in B$ साठी~$f(x) = y$ असणारा
+जास्तीत जास्त एक $x \in A$ असतो. अशा फलनाला $A$ पासून~$B$ पर्यंतचे
+!!a{injection} म्हणतो.
+\end{defn}
+
+\begin{explain}
+$f$ हे !!a{injection} आहे असे दाखवायचे असल्यास, $f$ च्या प्रांतातील
+कोणत्याही !!{element}s $x$ आणि $y$ साठी $f(x)=f(y)$ असल्यास $x=y$
+असते असे दाखवावे लागते.
+\end{explain}
+
+\begin{ex}
+$f(x) = 1$ ने दिलेले स्थिर फलन $f\colon \Nat \to \Nat$ हे
+!!{injective} ही नाही आणि !!{surjective} ही नाही.
+
+$f(x) = x$ ने दिलेले एकरूपता फलन $f\colon \Nat \to \Nat$ हे
+!!{injective} आणि !!{surjective} दोन्ही आहे.
+
+$f(x) = x+1$ ने दिलेले उत्तरवर्ती फलन $f \colon \Nat \to \Nat$
+हे !!{injective} आहे, पण !!{surjective} नाही.
+
+पुढीलप्रमाणे व्याख्या केलेले फलन $f \colon \Nat \to \Nat$:
+\[
+  f(x) =
+  \begin{cases}
+    \frac{x}{2} & \text{जर $x$ सम असेल} \\
+    \frac{x+1}{2} & \text{जर $x$ विषम असेल.}
+  \end{cases}
+\]
+हे !!{surjective} आहे, पण !!{injective} नाही.
+\end{ex}
+
+\begin{explain}
+अनेकदा !!{injective} आणि !!{surjective} हे दोन्ही गुणधर्म असलेल्या
+फलनांचा विचार करायचा असतो. अशा फलनांना !!{bijective} म्हणतो.
+ती \olref{fig:bijective} मधील फलनासारखी दिसतात. !!^{bijection}s ना
+कधी कधी \emph{एकास-एक संगती} असेही म्हणतात, कारण ती सहप्रांतातील
+घटकांची प्रांतातील घटकांशी एकमेव जोडी लावतात.
+\begin{figure}
+  \olasset{assets/diagrams/bijective.tikz}
+  \caption{!!^a{bijective} फलन सहप्रांतातील घटकांची प्रांतातील
+    घटकांशी एकमेव जोडी लावते.}
+  \ollabel{fig:bijective}
+\end{figure}
+\end{explain}
+
+\begin{defn}[!!^{bijection}]
+$f \colon A \to B$ हे फलन \emph{!!{bijective}} असते तेव्हा आणि
+केवळ तेव्हाच, जेव्हा ते !!{surjective} आणि !!{injective} दोन्ही असते.
+अशा फलनाला $A$ पासून~$B$ पर्यंतचे (किंवा $A$ आणि~$B$ यांमधील)
+!!a{bijection} म्हणतो.
+\end{defn}
+
+\end{document}

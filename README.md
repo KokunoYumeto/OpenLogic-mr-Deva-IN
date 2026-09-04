@@ -12,11 +12,17 @@ commission covers all 722 content TeX units at upstream revision
 `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. The cumulative release covers 16/722
 units (190 content segments). Source IDs and paths remain aligned to the frozen corpus.
 
+Editable work on the main branch has progressed through OLP-0029: **26/722 units**
+and 314 aligned content blocks. The Functions chapter is complete in source form;
+Size of Sets is in progress. These ten additional units are not yet represented as
+a rendered or released cumulative reader.
+
 - **Current release:** [संच आणि संबंध — PDF, offline HTML and sources](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/foundations-v0.2).
 - **DOI mirror:** [10.5281/zenodo.22307961](https://doi.org/10.5281/zenodo.22307961); [edition concept DOI](https://doi.org/10.5281/zenodo.22307960) for future versions.
 - **PDF:** [22-page cumulative reader](releases/foundations-v0.2/openlogic-mr-foundations.pdf).
 - **Offline HTML:** download and extract `openlogic-mr-foundations-html.zip`, then open `index.html`.
-- **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/) and [relations](mr/content/sets-functions-relations/relations/).
+- **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/) and the [in-progress Size of Sets chapter](mr/content/sets-functions-relations/size-of-sets/).
+- **Terminology and expert review:** [human-readable ledger](provenance/EXPERT_REVIEW_LOG.md) and [machine-readable decisions](provenance/EXPERT_REVIEW_DECISIONS.jsonl). It records provisional choices and precise questions without making review a completion gate.
 - **Pristine English:** `upstream/`; this is source evidence, not translated coverage.
 - **Current evidence:** `provenance/foundations-v0.2/`; root-level provenance remains the historical first release snapshot.
 - **Earlier release:** [sets-v0.1](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/sets-v0.1), preserved unchanged.
@@ -33,7 +39,8 @@ provisional extensions where evidence is sparse. Source mathematics takes
 precedence over conventions in language witnesses: in particular, OpenLogic's
 natural numbers include zero.
 
-The two chapters have 190 aligned content segments with consultation records.
+The two published chapters have 190 aligned content segments with consultation
+records. Current editable source has 314 such records across 26 units.
 Deterministic checks compare formulas, token identities, macro inventories,
 labels, citations, links and source file references.
 Visual, structural and semantic checks are documented in
@@ -49,8 +56,10 @@ keyboard-focusable formula regions. Exact conversion checks preserve prose and
 formula content; internal references match PDF numbering. Browser layout and
 assistive-technology behavior remain unverified because the available browser's
 URL security policy denied local-file access. Static checks are not represented
-as a browser test. Three inherited source notation issues are explained in a
-separate editorial section; aligned source formulas remain unchanged.
+as a browser test. Three inherited source notation issues in the published reader
+are explained in a separate editorial section. The current expert-review ledger
+also records five Functions corrections and two Size of Sets observations;
+frozen English bytes remain unchanged.
 
 Canon originals are local research evidence. They are **not redistributed here**.
 Some government-site originals could not be downloaded; the index distinguishes
