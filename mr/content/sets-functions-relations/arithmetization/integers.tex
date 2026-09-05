@@ -1,0 +1,87 @@
+% Part: sets-functions-relations
+% Chapter: arithmetization
+% Section: From N to Z
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+
+\begin{document}
+
+\olfileid{sfr}{arith}{int}
+\olsection{$\Nat$ पासून $\Int$ कडे}
+
+येथे दोन मूलभूत निरीक्षणे आहेत:
+	\begin{enumerate}
+		\item प्रत्येक पूर्णांक $n - m$ या रूपात लिहिता येतो, जेथे $n, m \in\Nat$.
+		\item $n - m$ या व्यंजकात सांकेतिक केलेली माहिती $\tuple{n, m}$ या क्रमित जोडीद्वारेही तितकीच सांकेतिक करता येते.
+	\end{enumerate}
+नैसर्गिक संख्यांच्या क्रमित जोड्या $\Nat^2$ चे !!{element}s आहेत हे आपल्याला आधीच माहीत आहे. आणि आपण $\Nat$ समजतो असे गृहीत धरत आहोत. त्यामुळे या दोन निरीक्षणांवर आधारलेली एक भोळी सूचना पुढे करता येईल: \emph{नैसर्गिक संख्यांच्या क्रमित जोड्यांना पूर्णांक म्हणून हाताळू या}.
+
+प्रत्यक्षात ही सूचना अतिशय भोळी आहे. अर्थात, $0- 2 = 4 - 6$ असले पाहिजे असे आपल्याला हवे आहे. पण स्पष्टपणे $\tuple{0, 2 }\neq \tuple{4, 6}$. त्यामुळे $\Nat^2$ हाच पूर्णांकांचा संच आहे असे सरळ म्हणता येत नाही.
+
+मागील अडचणीचे सामान्यीकरण केल्यास आपल्याला पुढील अट हवी आहे:
+	$$a - b = c - d \text{ तेव्हा आणि केवळ तेव्हाच }a + d = c + b$$
+(पूर्णांकांचे वर्तन \emph{असेच अभिप्रेत} आहे हे स्पष्ट असावे: दोन्ही बाजूंना फक्त $b$ आणि $d$ मिळवा.) हे वर्तन निश्चित करण्याचा सोपा मार्ग म्हणजे क्रमित जोड्यांमधील $\Intequiv$ हा तुल्यता संबंध पुढीलप्रमाणे व्याख्यायित करणे:
+$$\tuple{ a, b } \Intequiv \tuple{c, d}\text{ तेव्हा आणि केवळ तेव्हाच }a + d = c + b$$
+आता हा तुल्यता संबंध आहे हे दाखवावे लागेल.
+\begin{prop} $\Intequiv$ हा तुल्यता संबंध आहे.
+\end{prop}
+	\begin{proof}
+	$\Intequiv$ परावर्ती, सममित आणि संक्रमक आहे हे दाखवले पाहिजे.
+
+	\emph{परावर्तिता:} $a + b = b + a$ असल्यामुळे स्पष्टपणे $\tuple{a, b} \Intequiv \tuple{a, b}$.
+
+	\emph{सममितता:} $\tuple{a, b} \Intequiv \tuple{c, d}$ असे समजा; म्हणजे $a + d = c + b$. मग $c + b = a + d$, त्यामुळे $\tuple{c, d} \Intequiv \tuple{a, b}$.
+
+	\emph{संक्रमकता:} $\tuple{a, b} \Intequiv \tuple{c, d}\Intequiv \tuple{m, n}$ असे समजा. त्यामुळे $a + d = c + b$ आणि $c + n = m + d$. म्हणून $a + d + c + n = c + b + m + d$, व म्हणून $a + n = m + b$. परिणामी $\tuple{a, b } \Intequiv \tuple{m, n}$.
+\end{proof}
+
+आता या तुल्यता संबंधाचा वापर करून तुल्यतावर्ग घेता येतात:
+
+\begin{defn}
+		नैसर्गिक संख्यांच्या क्रमित जोड्यांचे $\Intequiv$ अंतर्गत तुल्यतावर्ग म्हणजे पूर्णांक; म्हणजेच $\Int = \equivclass{\Nat^2}{\Intequiv}$.
+\end{defn}
+
+या संकेतजनक व्याख्येबद्दल अनेक निरनिराळ्या \emph{तात्त्विक} प्रतिक्रिया असू शकतात. त्या प्रतिक्रियांचा विचार करण्यापूर्वी मात्र काही तांत्रिक तपशील पुढे नेणे उपयुक्त ठरेल.
+
+पूर्णांक म्हणजे काय हे ठरवल्यावर त्यांच्यावरील मूलभूत फलने आणि संबंध व्याख्यायित करावे लागतील. ज्या $\Intequiv$ अंतर्गत तुल्यतावर्गात $\tuple{m, n}$ हा !!a{element} आहे, त्या वर्गासाठी $\equivrep{m, n}{\Intequiv}$ असे लिहू या.\footnote{टीप: \olref[sfr][rel][eqv]{def:equivalenceclass} मध्ये दिलेले संकेतन वापरल्यास त्याच वर्गासाठी आपण $\equivrep{\tuple{m,n}}{\Intequiv}$ असे लिहिले असते. पण ते वाचायला जरा कठीण आहे.} म्हणजे:
+	$$\equivrep{m, n}{\Intequiv} = \Setabs{\tuple{a, b} \in \Nat^2}{\tuple{a, b}\Intequiv \tuple{m, n}}$$
+आता काही व्याख्या देऊ:
+	\begin{align*}
+		\equivrep{a, b}{\Intequiv} + \equivrep{c, d}{\Intequiv} &= \equivrep{a + c, b + d}{\Intequiv}\\
+		\equivrep{a, b}{\Intequiv} \times \equivrep{c, d}{\Intequiv} &= \equivrep{a c + b  d, a  d + b c}{\Intequiv}\\
+		\equivrep{a, b}{\Intequiv} \leq \equivrep{c, d}{\Intequiv} &\text{ तेव्हा आणि केवळ तेव्हाच }a + d \leq b + c
+	\end{align*}
+(प्रथेप्रमाणे, स्वयंसिद्धे वाचायला सोपी व्हावीत म्हणून मी `$(a \times b)$' या अर्थी `$ab$' लिहित आहे.) आता या व्याख्या \emph{अपेक्षेप्रमाणे} वागतात याची खात्री केली पाहिजे. याचा नेमका अर्थ उलगडून संपूर्ण पडताळणी करणे बरेच कष्टाचे आहे; तपशील आपण \olref[check]{sec} कडे सोपवतो. पण थोडक्यात: सर्व काही व्यवस्थित चालते!
+
+आता फक्त एक गोष्ट उरते. आपण नैसर्गिक संख्यांच्या साहाय्याने
+पूर्णांकांची रचना केली आहे. पण त्यामुळे नैसर्गिक संख्या \emph{स्वतः
+पूर्णांक नसतील}. याचे तात्त्विक महत्त्व आपण \olref[ref]{sec} मध्ये
+पुन्हा पाहू. मात्र पूर्णपणे तांत्रिक दृष्टीने, नैसर्गिक संख्यांना
+पूर्णांक \emph{म्हणून} हाताळण्याची काही पद्धत आपल्याला हवी. कल्पना अगदी
+सोपी आहे: प्रत्येक $n \in \Nat$ साठी $n_\Int = \equivrep{n, 0}{\Intequiv}$
+असे आपण ठरवतो. ही व्याख्या सुयोग्य रीतीने वागते याची, म्हणजे कोणत्याही
+$m, n \in \Nat$ साठी पुढील अटी पूर्ण होतात याची खात्री केली पाहिजे:
+\begin{align*}
+	(m + n)_\Int &= m_\Int + n_\Int\\
+	(m \times n)_\Int &= m_\Int \times n_\Int\\
+	m \leq n &\liff m_\Int \leq n_\Int
+\end{align*}
+ही सर्व पडताळणी अगदी सरळ आहे. उदाहरणार्थ, दुसरी अट खरी आहे हे
+दाखवताना नैसर्गिक संख्यांच्या परिचित वर्तनाचा थेट वापर करून पुढीलप्रमाणे
+युक्तिवाद करता येतो:
+%\begin{proof}
+%	नैसर्गिक संख्यांच्या परिचित वर्तनाचा वापर केल्यास स्पष्टपणे:
+	\begin{align*}
+%		(m + n)_\Int  = \equivrep{m + n, 0}{\Intequiv} = \equivrep{m + n, 0 + 0}{\Intequiv} = \equivrep{m, 0}{\Intequiv} + \equivrep{n, 0}{\Intequiv} = m_\Int + n_\Int\\
+		(m \times n)_\Int  &= \equivrep{m \times n, 0}{\Intequiv} \\
+		&= \equivrep{m \times n + 0 \times 0, m \times 0 + 0 \times n}{\Intequiv} \\
+		&= \equivrep{m, 0}{\Intequiv} \times \equivrep{n, 0}{\Intequiv} \\
+		&= m_\Int \times n_\Int
+	\end{align*}
+%\end{proof}
+इतर दोन अटी पडताळण्याचे काम सरावासाठी सोडतो.
+\begin{prob}
+	कोणत्याही $m, n \in \Nat$ साठी $(m + n)_\Int = m_\Int + n_\Int$ आणि $m \leq n \liff m_\Int \leq n_\Int$ हे दाखवा.
+\end{prob}
+\end{document}

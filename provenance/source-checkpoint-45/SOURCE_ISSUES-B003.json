@@ -1,0 +1,64 @@
+{
+  "schema": "openlogic-source-corrections/2",
+  "batch": "MR-B003",
+  "policy": "Frozen English bytes remain untouched. The Marathi body repairs five confirmed source defects or imprecisions and the cumulative reader shows a separated adjacent source-correction note with the stable OLFUN identifier.",
+  "audit": {
+    "audit_id": "OLFUN-20260904",
+    "review_path": "[local research path omitted]",
+    "review_sha256": "bc183d34b6ac57cc00e2df76d00277cdd2fabee293d12beb142d2e27344f8d24",
+    "findings_path": "[local research path omitted]",
+    "findings_sha256": "eee57facbea44f65a19a816fb12cbc86be0b18e21dcffeeed943f52f7e332960",
+    "consultation_stage": "Post-translation source audit; not a retrospective claim that the audit guided the first draft."
+  },
+  "issues": [
+    {
+      "id": "OLFUN-001",
+      "unit_id": "OLP-0024",
+      "source_locator": "content/sets-functions-relations/functions/inverses.tex:62-84",
+      "target_path": "mr/content/sets-functions-relations/functions/inverses.tex",
+      "classification": "confirmed mathematical defect",
+      "body_action": "Added A nonempty to the translated theorem and proof; formulas unchanged.",
+      "reader_note": "Adjacent generated source-correction note includes the empty-to-nonempty counterexample and exact condition.",
+      "exact_condition": "An injection f:A to B has a left inverse iff A is nonempty or B is empty.",
+      "review_question": "Is the Marathi distinction between the simple repaired theorem and the exact empty-set condition completely unambiguous?"
+    },
+    {
+      "id": "OLFUN-002",
+      "unit_id": "OLP-0021",
+      "source_locator": "content/sets-functions-relations/functions/function-basics.tex:64-71; content/sets-functions-relations/sets/important-sets.tex:17",
+      "target_path": "mr/content/sets-functions-relations/functions/function-basics.tex",
+      "classification": "confirmed wording defect",
+      "body_action": "Used ऋणेतर (प्रधान) वर्गमूळ for the selector on all natural numbers; display and preceding positive-integer two-root claim unchanged.",
+      "review_question": "Is प्रधान वर्गमूळ the clearest Marathi modifier here, or should the body keep only ऋणेतर वर्गमूळ?"
+    },
+    {
+      "id": "OLFUN-003",
+      "unit_id": "OLP-0021",
+      "source_locator": "content/sets-functions-relations/functions/function-basics.tex:103-107",
+      "target_path": "mr/content/sets-functions-relations/functions/function-basics.tex",
+      "classification": "confirmed typographical inconsistency",
+      "body_action": "Used x consistently in the translated prose; mathematical formula unchanged.",
+      "review_question": "Does the repaired prose read naturally without suggesting a change to the source function definition?"
+    },
+    {
+      "id": "OLFUN-004",
+      "unit_id": "OLP-0023",
+      "source_locator": "content/sets-functions-relations/functions/functions-relations.tex:24-30,61-64; content/sets-functions-relations/relations/relations-as-sets.tex:55-58",
+      "target_path": "mr/content/sets-functions-relations/functions/functions-relations.tex",
+      "classification": "confirmed terminology imprecision",
+      "body_action": "Said relation between A and B contained in A×B, avoiding the project-defined but incorrect literal relation on A×B wording.",
+      "review_question": "Is the chosen Marathi wording standard and concise for a heterogeneous binary relation?"
+    },
+    {
+      "id": "OLFUN-005",
+      "unit_id": "OLP-0023",
+      "source_locator": "content/sets-functions-relations/functions/functions-relations.tex:78-100; content/sets-functions-relations/relations/operations.tex:20-32",
+      "target_path": "mr/content/sets-functions-relations/functions/functions-relations.tex",
+      "classification": "confirmed explanatory inconsistency; explicit definition correct",
+      "body_action": "Kept domain-only function restriction and qualified the analogy: relation restriction to C limits both coordinates, so the operations are analogous but not identical.",
+      "counterexample": "A={0}, B={1}, f(0)=1, C={0}: the function-restriction graph is {(0,1)}, while R_f∩C² is empty.",
+      "review_question": "Would Marathi readers benefit from displaying the counterexample in the main reader, or is the concise adjacent distinction sufficient?"
+    }
+  ],
+  "external_upstream_report_submitted": false
+}

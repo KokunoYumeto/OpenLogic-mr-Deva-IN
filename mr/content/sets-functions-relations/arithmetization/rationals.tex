@@ -1,0 +1,72 @@
+% Part: sets-functions-relations
+% Chapter: arithmetization
+% Section: rationals
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{arith}{rat}
+\olsection{$\Int$ पासून $\Rat$ कडे}
+
+अनौपचारिक संचसिद्धान्त वापरून नैसर्गिक संख्यांपासून पूर्णांकांची रचना कशी
+करायची हे आपण नुकतेच पाहिले. आता अगदी त्याच प्रकारे पूर्णांकांपासून
+परिमेय संख्यांची रचना कशी करायची ते पाहू. सुरुवातीची निरीक्षणे अशी:
+\begin{enumerate}
+	\item प्रत्येक परिमेय संख्या $\nicefrac{i}{j}$ या रूपात लिहिता येते,
+	जेथे $i$ आणि $j$ दोन्ही पूर्णांक असतात, पण $j$ शून्येतर असतो.
+	\item $\nicefrac{i}{j}$ या व्यंजकात सांकेतिक केलेली माहिती
+	$\tuple{ i, j}$ या क्रमित जोडीद्वारेही तितकीच सांकेतिक करता येते.
+\end{enumerate}
+यावरून परिमेय संख्यांकडे $\Int \times (\Int \setminus \{0_\Int\})$
+मधून घेतलेल्या क्रमित जोड्या \emph{म्हणून} पाहणे हा स्वाभाविक मार्ग
+वाटेल. मात्र आधीप्रमाणे ही कल्पना जरा अतिभोळी ठरेल, कारण आपल्याला
+$\nicefrac{3}{2} = \nicefrac{6}{4}$ हवे आहे, पण $\tuple{ 3, 2}\neq \tuple{ 6,
+4}$. अधिक सर्वसाधारणपणे आपल्याला पुढील अट हवी:
+\[
+	\nicefrac{a}{b} = \nicefrac{c}{d} \text{ तेव्हा आणि केवळ तेव्हाच } a \times d = b \times c
+\]
+ही अट मिळवण्यासाठी $\Int \times (\Int \setminus \{0_\Int\})$ वरील
+{तुल्यता संबंध} आपण पुढीलप्रमाणे व्याख्यायित करतो:
+\[
+	\tuple{ a, b }\Ratequiv \tuple{ c, d} \text{ तेव्हा आणि केवळ तेव्हाच }a \times d = b \times c
+\]
+हा तुल्यता संबंध आहे हे तपासले पाहिजे. ही तपासणी बरीचशी $\Intequiv$
+च्या प्रकरणासारखीच आहे आणि ती आपण सरावासाठी सोडू.
+\begin{prob}
+$\Ratequiv$ हा तुल्यता संबंध आहे हे दाखवा.
+\end{prob}
+त्यामुळे पुढील व्याख्या देता येते:
+\begin{defn}
+दुसरा घटक शून्येतर असलेल्या पूर्णांकांच्या जोड्यांचे $\Ratequiv$ अंतर्गत
+तुल्यतावर्ग म्हणजे परिमेय संख्या. म्हणजेच $\Rat =
+\equivclass{(\Int \times (\Int\setminus \{0_\Int\}))}{\Ratequiv}$.
+\end{defn}
+
+पूर्णांकांप्रमाणे येथेही काही मूलभूत क्रिया व्याख्यायित करायच्या आहेत.
+$\tuple{i, j}$ हा !!a{element} असलेला $\Ratequiv$ अंतर्गत तुल्यतावर्ग
+$\equivrep{i,j}{\Ratequiv}$ असेल, तर आपण पुढील व्याख्या करतो:
+\begin{align*}
+	\equivrep{a, b}{\Ratequiv} + \equivrep{c, d}{\Ratequiv} &= \equivrep{ad + bc,  bd}{\Ratequiv}\\
+	\equivrep{a, b}{\Ratequiv} \times \equivrep{c, d}{\Ratequiv} &= \equivrep{a  c, b d}{\Ratequiv}.
+\intertext{या परिमेय संख्यांवर $r \leq s$ ची व्याख्या करण्यासाठी आपण पुढील तथ्य वापरतो: $r \le s$ तेव्हा आणि केवळ तेव्हाच $s - r$ हा फरक ऋण नसतो; म्हणजे $s - r$ हा $\nicefrac{i}{j}$ या रूपात लिहिता येतो, जेथे $i$ ऋणेतर आणि $j$~धन असतो:}
+	\equivrep{a, b}{\Ratequiv} \leq \equivrep{c, d}{\Ratequiv} &\text{ तेव्हा आणि केवळ तेव्हाच }
+	\equivrep{c, d}{\Ratequiv} - \equivrep{a, b}{\Ratequiv} =
+	\equivrep{i_\Int, j_\Int}{\Ratequiv}
+\end{align*}
+%READERNOTE{MRARITH-001: गोठवलेल्या इंग्रजी स्पष्टीकरणात “s-r is not negative” नंतर चुकून r-s ला ऋणेतर अपूर्णांकाच्या रूपात लिहिले आहे. लगेचची प्रदर्शित व्याख्या पुन्हा s-r वापरते. मराठी मजकुरात या दोन्ही नियंत्रक ठिकाणांशी सुसंगत s-r वापरले आहे.}
+असे काही $i \in \Nat$ आणि $0 \neq j \in \Nat$ असले पाहिजेत.
+
+त्यानंतर या व्याख्या \emph{अपेक्षेप्रमाणे} वागतात हे तपासावे लागेल;
+ही तपासणी आपण \olref[check]{sec} कडे सोपवतो. आणि त्या खरोखर तशाच
+वागतात!{} शेवटी, पूर्णांकांना परिमेय संख्या \emph{म्हणून} हाताळण्याची
+काही पद्धत हवी; म्हणून प्रत्येक $i \in \Int$ साठी $i_\Rat =
+\equivrep{i, 1_\Int}{\Ratequiv}$ असे आपण ठरवतो. हे सर्व सुयोग्य रीतीने
+वागते याची तपासणीही आपण \olref[check]{sec} मध्ये करतो.
+
+\begin{prob}
+कोणत्याही $i, j \in \Int$ साठी $(i + j)_\Rat = i_\Rat+ j_\Rat$ आणि $(i \times j)_\Rat =
+i_\Rat \times j_\Rat$ आणि $i \leq j \liff i_\Rat \leq j_\Rat$ हे दाखवा.
+\end{prob}
+
+\end{document}

@@ -1,0 +1,121 @@
+% Part: sets-functions-relations
+% Chapter: arithmetization
+% Section: cuts
+%
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{arith}{cuts}
+\olsection{$\Rat$ पासून $\Real$ कडे}
+
+मूलतः, संपूर्णता गुणधर्म असे दाखवतो की वास्तव संख्या-रेषेवरील कोणताही
+$\alpha$ बिंदू त्या रेषेचे अचूक दोन भाग करतो: खालच्या भागाचा $\alpha$
+हा लघुतम ऊर्ध्वबंध असतो आणि वरच्या भागाचा $\alpha$ हा महत्तम निम्नबंध
+असतो. परिमेय संख्यांपासून वास्तव संख्यांची \emph{रचना} करण्यासाठी
+डेडेकिंड यांनी वास्तव संख्यांना परिमेय संख्यांचे विभाजन करणारे
+\emph{छेद} मानण्याची सूचना केली. म्हणजेच, $< \sqrt{2}$ असलेल्या परिमेय
+संख्यांना $> \sqrt{2}$ असलेल्या परिमेय संख्यांपासून वेगळे करणाऱ्या
+\emph{छेदाशी} आपण $\sqrt{2}$ ची एकरूपता मानतो.
+
+ही मांडणी नीट नेमकी करू या. परिमेय संख्यांचे दोन भाग केले, तर आपण केलेले
+विभाजन केवळ त्याचा \emph{खालचा} भाग विचारात घेऊन अनन्यपणे ओळखता येते.
+म्हणून नेमकी पुढील व्याख्या देऊ:
+
+\begin{defn}[छेद]
+\emph{छेद} $\alpha$ म्हणजे परिमेय संख्यांचा असा कोणताही अरिक्त उचित
+आरंभीचा खंड ज्याला महत्तम घटक नाही. म्हणजे $\alpha$ हा छेद तेव्हा आणि
+केवळ तेव्हाच असतो, जेव्हा:
+\begin{enumerate}
+	\item \emph{अरिक्त, उचित}: $\emptyset \neq \alpha \subsetneq \Rat$
+	\item \emph{आरंभीचा}: सर्व $p,q \in \Rat$ साठी: $p < q \in \alpha$ असेल, तर $p \in \alpha$
+	\item \emph{महत्तम घटक नाही}: प्रत्येक $p \in \alpha$ साठी $p < q$ असे काही $q \in \alpha$ असते
+\end{enumerate}
+मग $\Real$ हा छेदांचा संच आहे.
+\end{defn}
+
+आता $\sqrt{2} = \Setabs{p \in \Rat}{p^2 < 2\text{
+किंवा }p < 0}$ असे म्हणता येते. अर्थात, हा खरोखर \emph{छेद} आहे हे
+तपासले पाहिजे; ती तपासणी आपण \olref[check]{sec} कडे सोपवतो.
+
+आधीप्रमाणेच, काही वस्तूंची व्याख्या केल्यानंतर त्यांच्यावरील मूलभूत
+फलने आणि संबंध व्याख्यायित करावे लागतात. एका सोप्या व्याख्येपासून सुरुवात करू:
+\begin{align*}
+	\alpha \leq \beta \text{ तेव्हा आणि केवळ तेव्हाच }\alpha \subseteq \beta
+\end{align*}
+क्रमाची ही व्याख्या छेदांच्या संचाला संपूर्णता गुणधर्म आहे हा मध्यवर्ती
+निष्कर्ष \emph{मांडू} देते. पूर्णपणे उलगडल्यास विधानाचे रूप असे आहे.
+$S$ हा ऊर्ध्वबंध असलेला छेदांचा अरिक्त संच असेल, तर $S$ ला लघुतम
+ऊर्ध्वबंध असतो. अधिक तपशीलाने: $S$ चा ऊर्ध्वबंध असणारा $\lambda$ हा छेद
+असतो, म्हणजे $(\forall \alpha \in S)\alpha \subseteq \lambda$, आणि
+$\lambda$ हा अशा छेदांपैकी लघुतम असतो, म्हणजे $(\forall \beta \in \Real)((\forall \alpha \in S)\alpha \subseteq \beta \lif \lambda \subseteq \beta)$. आता या निष्कर्षाची सिद्धता पाहा:
+
+\begin{thm}\ollabel{realcompleteness}
+छेदांच्या संचाला संपूर्णता गुणधर्म आहे.
+\end{thm}
+
+\begin{proof}
+$S$ हा ऊर्ध्वबंध असलेला छेदांचा कोणताही अरिक्त संच असू द्या. $\lambda
+= \bigcup S$ असे ठरवू.
+%\Setabs{p \in \Rat}{(\exists \alpha \in S)p \in \alpha}$$
+प्रथम $\lambda$ हा छेद आहे असा दावा करू:
+\begin{enumerate}
+\item $S$ अरिक्त असल्यामुळे $S$ मध्ये किमान एक छेद आहे, म्हणून
+$\emptyset \neq \lambda$. $S$ हा छेदांचा संच असल्यामुळे $\lambda
+\subseteq \Rat$. $S$ ला ऊर्ध्वबंध असल्यामुळे प्रत्येक $\alpha \in S$
+मधून अनुपस्थित असलेली अशी काही $p \in \Rat$ आहे. म्हणून $p\notin \lambda$,
+आणि परिणामी $\lambda \subsetneq \Rat$.
+%READERNOTE{MRARITH-004: गोठवलेल्या इंग्रजी सिद्धतेत λ अरिक्त असल्याचे पहिले कारण चुकून “S has an upper bound” असे दिले आहे. आवश्यक आणि आधीच गृहीत असलेले कारण S अरिक्त असणे हे आहे; मराठी सिद्धतेत तेच वापरले आहे. पुढील उचित-उपसंच युक्तिवादासाठी मात्र ऊर्ध्वबंधाचे गृहीतक योग्य आहे.}
+\item $p < q \in \lambda$ असे समजा. मग $q \in \alpha$ असे काही
+$\alpha \in S$ आहे. $\alpha$ हा छेद असल्यामुळे $p \in \alpha$.
+म्हणून $p \in \lambda$.
+\item $p \in \lambda$ असे समजा. मग $p \in \alpha$ असे काही
+$\alpha \in S$ आहे. $\alpha$ हा छेद असल्यामुळे $p < q$ असे काही
+$q \in \alpha$ आहे. म्हणून $q \in \lambda$.
+\end{enumerate}
+यावरून दावा सिद्ध होतो. शिवाय, स्पष्टपणे $(\forall \alpha \in S)\alpha
+\subseteq \bigcup S = \lambda$, म्हणजे $\lambda$ हा $S$ चा ऊर्ध्वबंध
+आहे. आता $\beta \in \mathbb{R}$ हाही ऊर्ध्वबंध आहे असे समजा, म्हणजे
+$(\forall \alpha \in S)\alpha \subseteq \beta$. कोणत्याही $p \in \Rat$
+साठी, $p \in \lambda$ असेल तर $p \in \alpha$ असे काही $\alpha \in S$
+आहे, आणि त्यामुळे $p \in \beta$. सार्वत्रिकीकरण केल्यास $\lambda
+\subseteq \beta$. म्हणून $\lambda$ हा $S$ चा \emph{लघुतम} ऊर्ध्वबंध आहे.
+\end{proof}
+
+म्हणून आपल्याकडे संपूर्णता गुणधर्म पूर्ण करणाऱ्या अनेक वस्तू आहेत.
+हे सांगण्याचा एक मार्ग असा: आपल्या छेदांमध्ये ``पोकळ्या'' नाहीत.
+(त्यामुळे परिमेय संख्यांऐवजी वास्तव संख्यांचे आणखी ``छेद'' घेतल्यास
+काही रोचक नवी वस्तू मिळणार नाही.)
+
+पुढे वास्तव संख्यांवरील काही क्रिया व्याख्यायित केल्या पाहिजेत. प्रत्येक
+$p \in \Rat$ साठी $p_\Real = \Setabs{q \in \Rat}{q < p}$ असे ठरवून
+परिमेय संख्यांना वास्तव संख्यांत अंतःस्थापित करण्यापासून सुरुवात करू.
+मग पुढील व्याख्या करतो:
+\begin{align*}
+	\alpha + \beta &= \Setabs{p + q}{p \in \alpha \land q \in \beta}\\
+%	\alpha - \beta &\defis \Setabs{p - q}{p \in \alpha \land q \in \Rat \setminus \beta}\\
+	\alpha \times \beta &=
+	\Setabs{p \times q}{0 \leq p \in \alpha \land 0 \leq q \in \beta} \cup 0_\Real & \text{जर }\alpha, \beta \geq 0_\Real
+%	\alpha \div \beta &\defis
+%	\Setabs{\nicefrac{p}{q}}{p \in \alpha \land q \in \Rat \setminus \beta}  & \text{जर }\alpha \geq 0_\Real, \beta > 0_\Real
+\end{align*}
+%READERNOTE{MRARITH-005: गोठवलेल्या इंग्रजी गुणाकार-व्याख्येत शून्याचा छेद एकदाच 0^R असा विसंगत ऊर्ध्वनिर्देशांक वापरून लिहिला आहे; त्याच परिच्छेदातील सर्व नियंत्रक संकेतन 0_R वापरते. मराठी सूत्रात 0_R वापरले आहे.}
+गुणाकाराची इतर प्रकरणे हाताळण्यासाठी प्रथम $0_\Real \times \alpha = 0_\Real = \alpha \times 0_\Real$ असे ठरवू आणि पुढील व्याख्या करू:
+%READERNOTE{MRARITH-006: गोठवलेल्या इंग्रजी स्रोताने शून्यासोबतच्या गुणाकाराची ही आवश्यक व्याख्या त्याच ओळीवर निष्क्रिय केली आहे; त्यामुळे एक घटक ऋण व दुसरा शून्य असलेली प्रकरणे पुढील प्रकरणनिहाय व्याख्येत येत नाहीत. स्रोताच्याच निष्क्रिय सूत्राला मराठीत सक्रिय केले आहे.}
+\begin{align*}
+	-\alpha &= \Setabs{p - q}{p < 0 \land q \notin \alpha}
+\end{align*}
+आणि मग पुढीलप्रमाणे ठरवू:
+\begin{align*}
+	\alpha \times \beta &\defis
+	\begin{cases}
+		\mathord{-}\alpha \times \mathord{-}\beta &\text{जर }\alpha < 0_\Real\text{ आणि }\beta < 0_\Real\\
+		\mathord{-}(\mathord{-}\alpha \times \beta) &\text{जर }\alpha < 0_\Real \text{ आणि }\beta > 0_\Real\\
+		\mathord{-}(\alpha \times \mathord{-}\beta) &\text{जर }\alpha > 0_\Real \text{ आणि }\beta < 0_\Real
+	\end{cases}
+\end{align*}
+यानंतर यांपैकी प्रत्येक व्याख्येतून नेहमी छेदच मिळतो हे तपासावे लागेल.
+आणि शेवटी, अशा प्रकारे व्याख्यायित केलेले छेद अपेक्षेप्रमाणेच वागतात
+हे दाखवणारी सोपी (पण लांबलचक) सिद्धता पूर्ण केली पाहिजे. मात्र हे सर्व
+आपण \olref[check]{sec} कडे सोपवतो.
+\end{document}

@@ -1,10 +1,10 @@
-"""Prepare Sets, Relations and Functions without launching TeX."""
+"""Prepare the five completed Sets, Relations and Functions chapters without launching TeX."""
 import hashlib,json,re,subprocess,sys
 from pathlib import Path
 P=Path(__file__).resolve().parents[1];B=P/'build/core';B.mkdir(parents=True,exist_ok=True)
 subprocess.run([sys.executable,str(P/'tools/prepare_foundations.py')],check=True,capture_output=True)
 base=(P/'build/foundations/openlogic-mr-foundations.tex').read_text(encoding='utf-8')
-base=base.replace('संच आणि संबंध','संच, संबंध, फलने आणि संचांचे आकारमान').replace('दोन संपूर्ण प्रकरणे','चार संपूर्ण प्रकरणे').replace('OLP-0019, एकूण 16 विभाग. उर्वरित 706','OLP-0040, एकूण 37 स्रोत-एकके आणि 33 वाचक-विभाग. उर्वरित 685')
+base=base.replace('संच आणि संबंध','संच, संबंध, फलने, संचांचे आकारमान आणि अंकगणितीकरण').replace('दोन संपूर्ण प्रकरणे','पाच संपूर्ण प्रकरणे').replace('OLP-0019, एकूण 16 विभाग. उर्वरित 706','OLP-0048, एकूण 45 स्रोत-एकके आणि 40 वाचक-विभाग. उर्वरित 677')
 extra=r'''\newcommand{\dom}[1]{\mathrm{dom}(#1)}
 \newtheorem{cor}[defn]{निष्कर्ष}
 \newcommand{\ran}[1]{\mathrm{ran}(#1)}
@@ -16,6 +16,10 @@ extra=r'''\newcommand{\dom}[1]{\mathrm{dom}(#1)}
 \newcommand{\cardless}[2]{#1 \prec #2}
 \newcommand{\cardeq}[2]{#1 \approx #2}
 \newcommand{\cardneq}[2]{#1 \not\approx #2}
+\newcommand{\Intequiv}{\sim}
+\newcommand{\Ratequiv}{\backsim}
+\newcommand{\Realequiv}{\Bumpeq}
+\newcommand{\defis}{=}
 \newenvironment{editorial}{\begin{quote}\small\itshape}{\end{quote}}
 \definecolor{oldiagcolorD}{HTML}{1973ba}
 \newlength{\olphotowidth}\setlength{\olphotowidth}{0.35\textwidth}
@@ -33,15 +37,18 @@ def balanced(t,i):
 groups=[
     ('फलने','sfr:fun::chap',P/'mr/content/sets-functions-relations/functions',[
         'function-basics','function-kinds','functions-relations','inverses','composition','partial-functions'
-    ]),
+    ],None),
     ('संचांचे आकारमान','sfr:siz::chap',P/'mr/content/sets-functions-relations/size-of-sets',[
         'introduction','enumerability','zig-zag','pairing','pairing-alt','non-enumerability',
         'reduction','equinumerous-sets','comparing-size','schroder-bernstein',
         'enumerability-alt','non-enumerability-alt','reduction-alt'
-    ]),
+    ],None),
+    ('अंकगणितीकरण','sfr:arith::chap',P/'mr/content/sets-functions-relations/arithmetization',[
+        'integers','rationals','reals','cuts','reflections','checking-details','cauchy'
+    ],'arithmetization'),
 ]
 raw=[]
-for _,_,directory,names in groups:
+for _,_,directory,names,_ in groups:
     raw.extend((directory/(name+'.tex')).read_text(encoding='utf-8') for name in names)
 available=set(re.findall(r'\\label\{([^}]+)\}',before))
 for t in raw:
@@ -61,24 +68,35 @@ def conditionals(t):
 def reader_note(value):
     value=re.sub('〈([^〉]+)〉',lambda m:r'$\langle '+m[1]+r'\rangle$',value)
     value=value.replace('x∈A',r'$x\in A$')
+    value=value.replace('√2',r'$\sqrt{2}$').replace('λ',r'$\lambda$')
+    value=re.sub(r'\b0\^R\b',r'$0^R$',value)
     return value.replace('_',r'\_')
 chunks=[]
 words={'element':'घटक','surjective':'आच्छादक','surjection':'आच्छादन','injective':'एकास-एक','injection':'एकास-एक फलन','bijective':'एकास-एक व आच्छादक','bijection':'एकास-एक आच्छादन','enumerable':'गणनीय','nonenumerable':'अगणनीय'}
 plural_words={'element':'घटक','surjection':'आच्छादक फलने','bijection':'एकास-एक आच्छादने'}
 raw_index=0
-for chapter,chapter_label,_,names in groups:
+for chapter,chapter_label,directory,names,preface in groups:
     chunks.append('\\chapter{'+chapter+'}\\label{'+chapter_label+'}')
+    if preface:
+        driver=(directory/(preface+'.tex')).read_text(encoding='utf-8')
+        driver_preface=re.search(r'\\begin\{editorial\}.*?\\end\{editorial\}',driver,re.S)
+        assert driver_preface
+        chunks.append(driver_preface.group())
     for _ in names:
         t=raw[raw_index];raw_index+=1
         t=re.sub(r'(?m)^[ \t]*%READERNOTE\{(.*)\}$',lambda m:'\\begin{quote}\\small\\textbf{स्रोतदुरुस्ती.} '+reader_note(m[1])+'\\end{quote}',t)
         t=re.sub('〈([^〉]+)〉',lambda m:r'$\langle '+m[1]+r'\rangle$',t)
-        t=re.sub(r'(?m)^%.*$','',t);t=re.sub(r'\\documentclass[^\n]*\n','',t);t=t.replace('\\begin{document}','').replace('\\end{document}','')
+        t=re.sub(r'(?m)^[ \t]*%[^\n]*(?:\n|$)','',t);t=re.sub(r'\\documentclass[^\n]*\n','',t);t=t.replace('\\begin{document}','').replace('\\end{document}','')
         m=re.search(r'\\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}',t);prefix=list(m.groups());t=t[:m.start()]+t[m.end():]
         t=conditionals(t)
         t=t.replace(r'\[\small',r'\[')
         t=t.replace(r'\citep[\S70]{Frege1884}',r'(Frege, 1884, \S70)')
         t=t.replace(r'\citet[pp.~165--6]{Potter2004}',r'Potter (2004, pp.~165--6)')
         t=t.replace(r'\citet{Cantor1892}',r'Cantor (1892)')
+        t=t.replace(r'\cite{Conway2006}',r'Conway (2006)')
+        t=t.replace(r'\citealt{Benacerraf1965}',r'Benacerraf (1965)')
+        t=t.replace(r'\citeauthor{OConnorRobertson:RN} \citeyear{OConnorRobertson:RN}',r"O'Connor आणि Robertson (2005) यांचा लेख")
+        t=t.replace(r'\citealt{KatzKatz2012}',r'Katz आणि Katz (2012)')
         t=t.replace(r'\printtoken{S}{nonenumerable}','अगणनीय').replace(r'\usetoken{S}{enumerable}','गणनीय')
         t=re.sub(r'\\olsection\{([^}]+)\}',lambda m:'\\section{'+m[1]+'}\\label{'+':'.join(prefix)+':sec}',t)
         t=re.sub(r'\\ollabel\{([^}]+)\}',lambda m:'\\label{'+':'.join(prefix)+':'+m[1]+'}',t)
@@ -92,6 +110,7 @@ for chapter,chapter_label,_,names in groups:
         for key,word in plural_words.items():t=re.sub(r'!!\^?a?\{'+key+r'\}s',word,t)
         for key,word in words.items():t=re.sub(r'!!\^?a?\{'+key+r'\}',word,t)
         assert '!!' not in t and '\\oliflabeldef' not in t and '\\olref' not in t and '\\cref' not in t
+        assert not re.search(r'\\cite(?:author|year|alt|p|t)?(?:\[[^]]*\])?\{',t)
         chunks.append(t)
 newnotes=r'''\item फलन प्रकरणातील OLFUN-001 ते OLFUN-005 या पाच
 गोठवलेल्या-स्रोत निष्कर्षांची दुरुस्ती संबंधित परिच्छेदांलगत स्वतंत्र
@@ -102,6 +121,10 @@ newnotes=r'''\item फलन प्रकरणातील OLFUN-001 ते OLF
 इंग्रजी बाइट्स बदललेले नाहीत.
 \item सामायिक OLSIZ-011 सूचना अचूक बाइट-पुनर्तपासणीनंतर चुकीची ठरून
 मागे घेण्यात आली; तिच्यावर आधारित कोणतीही मराठी दुरुस्ती केलेली नाही.
+\item अंकगणितीकरण प्रकरणातील MRARITH-001 ते MRARITH-012 या बारा
+गोठवलेल्या-स्रोत निरीक्षणांतील दुरुस्त्या किंवा स्पष्ट खुलासे संबंधित
+परिच्छेदांलगत स्वतंत्र ``स्रोतदुरुस्ती'' नोंदींमध्ये दिले आहेत. मूळ
+इंग्रजी बाइट्स बदललेले नाहीत.
 '''
 notes=notes.replace(r'\end{enumerate}',newnotes+r'\end{enumerate}',1)
 newreferences=r'''\par\medskip
@@ -115,15 +138,26 @@ Mathematiker-Vereinigung}, 1, 75--78.
 Michael Potter (2004). \textit{Set Theory and its Philosophy}.
 Oxford University Press.
 
+John Conway (2006). ``The Power of Mathematics.'' In Alan Blackwell
+and David MacKay (eds.), \textit{Power}, Darwin College Lectures.
+Cambridge University Press.
+
+John J. O'Connor and Edmund F. Robertson (2005). ``The real numbers:
+Stevin to Hilbert.''
+\url{http://www-history.mcs.st-and.ac.uk/HistTopics/Real_numbers_2.html}.
+
+Karin Usadi Katz and Mikhail G. Katz (2012). ``Stevin Numbers and
+Reality.'' \textit{Foundations of Science}, 17(2), 109--123.
+
 '''
 notes=notes.replace(r'\end{document}',newreferences+r'\end{document}',1)
 out=before+'\n'.join(chunks)+'\n'+notes
 out='\n'.join(line.rstrip() for line in out.splitlines())+'\n'
-assert 'एकूण 37 स्रोत-एकके आणि 33 वाचक-विभाग' in out and out.count(r'\section{')==33
+assert 'एकूण 45 स्रोत-एकके आणि 40 वाचक-विभाग' in out and out.count(r'\section{')==40
 (B/'openlogic-mr-core.tex').write_text(out,encoding='utf-8',newline='\n')
 manifest=[json.loads(x) for x in (P/'provenance/SOURCE_MANIFEST.jsonl').read_text(encoding='utf-8').splitlines()]
 inputs=[]
-for r in manifest[3:40]:
+for r in manifest[3:48]:
     p=P/'mr'/r['source_path'];inputs.append({'unit_id':r['unit_id'],'path':p.relative_to(P).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
-(B/'INPUTS.json').write_text(json.dumps({'input_units':inputs,'scope':'37 source units, 33 reader sections, four complete chapters','conditional_decisions':decisions,'source_issues':'Three Relations and five Functions notes; ten shared Size of Sets corrections and four Marathi-lane observations; one manager false positive retracted before application; aligned English source is unchanged','notation':'Function and cardinal-comparison macros copied from frozen upstream/open-logic-config.sty; composition applies first argument then second'},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print(json.dumps({'prepared':'build/core/openlogic-mr-core.tex','units':len(inputs),'sections':33,'sha256':hashlib.sha256(out.encode()).hexdigest()}))
+(B/'INPUTS.json').write_text(json.dumps({'input_units':inputs,'scope':'45 source units, 40 reader sections, five complete chapters','conditional_decisions':decisions,'source_issues':'Three Relations and five Functions notes; ten shared Size of Sets corrections and four Marathi-lane observations; twelve Arithmetization corrections or disclosures; one manager false positive retracted before application; aligned English source is unchanged','notation':'Function, cardinal-comparison and arithmetization equivalence-relation macros copied from frozen upstream/open-logic-config.sty; composition applies first argument then second'},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print(json.dumps({'prepared':'build/core/openlogic-mr-core.tex','units':len(inputs),'sections':40,'sha256':hashlib.sha256(out.encode()).hexdigest()}))

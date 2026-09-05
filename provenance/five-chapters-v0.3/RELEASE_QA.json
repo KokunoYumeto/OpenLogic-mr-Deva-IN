@@ -1,0 +1,59 @@
+{
+  "schema": "openlogic-cumulative-release-qa/1",
+  "release": "five-chapters-v0.3",
+  "scope": {
+    "translated_source_units": 45,
+    "total_source_units": 722,
+    "remaining_source_units": 677,
+    "aligned_content_segments": 559,
+    "reader_sections": 40,
+    "complete_chapters": 5,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0048",
+    "complete_edition": false
+  },
+  "pdf": {
+    "filename": "openlogic-mr-five-chapters.pdf",
+    "pages": 66,
+    "bytes": 364560,
+    "sha256": "be37d13d3a9706975d03f52a5fa4af88a87011247527c27da31ae0b6e9d1a743",
+    "two_clean_guarded_builds_byte_identical": true,
+    "all_pages_visually_reviewed": true,
+    "tagged_pdf": false
+  },
+  "accessible_html": {
+    "entrypoint": "reader/five-chapters/index.html",
+    "bytes": 1189711,
+    "sha256": "7c06c92a4cf38f7b8fbf1fd0844e1d93098200cc9d69cfa879a23c8a40645f59",
+    "native_mathml": 2778,
+    "figures_with_detailed_marathi_alternatives": 12,
+    "internal_links_valid": 150,
+    "desktop_browser_layout": "passed at 1280x720 CSS pixels",
+    "mobile_browser_layout": "passed at 390x844 CSS pixels",
+    "page_level_horizontal_overflow": false,
+    "console_errors": 0,
+    "network_dependencies": 0
+  },
+  "translation_decisions": {
+    "canonical_decisions_with_occurrences": 127,
+    "legacy_decisions": 131,
+    "occurrences": 3743,
+    "high_priority_occurrences": 473,
+    "schema_errors": 0,
+    "canonical_json_sha256": "b042e58f1f89e2664af8ce14eb57c69a42d7b24e8cfa0d0b11355ad395e20c3f",
+    "schema_sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
+  },
+  "source_checkpoint": {
+    "path": "provenance/source-checkpoint-45/SOURCE_CHECKPOINT.json",
+    "bytes": 22877,
+    "sha256": "40cff2054d7d8fd306732e2a6aaec35e5086c64984f9797031450e0e83926da0"
+  },
+  "validators": {
+    "aligned_source_formula_macro_token_identifier": "passed",
+    "owner_state": "passed",
+    "expert_review_ledger": "passed",
+    "shared_translation_decision_schema": "passed"
+  },
+  "review": "Codex machine translation and same-agent bilingual review; no independent human review claimed",
+  "release_ready": true
+}

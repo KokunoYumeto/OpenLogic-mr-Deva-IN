@@ -1,0 +1,79 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "MR-B003",
+  "method": "Same-agent source/translation close reading and reverse paraphrase; not independent or human review.",
+  "scope": "All seven functions source units OLP-0020–0026, including captions, cases, exercises, proof prompts and both branches of conditionals.",
+  "samples": [
+    {
+      "unit": "OLP-0021",
+      "reverse_paraphrase": "Every domain argument has exactly one value; the codomain may contain values not attained. A function is determined by its correspondence rather than its calculation method.",
+      "checks": "Separate domain/codomain/range; mathematical argument uses फलसाधक rather than a logical argument term."
+    },
+    {
+      "unit": "OLP-0021",
+      "reverse_paraphrase": "Two different equations define the same function if all outputs agree and the domain and codomain agree.",
+      "checks": "Both domain and codomain qualification retained; no intensional equality claim."
+    },
+    {
+      "unit": "OLP-0021",
+      "reverse_paraphrase": "A definition by cases must assign every input to exactly one case.",
+      "checks": "Exhaustiveness and exclusivity both retained; even/odd cases use the unchanged formulas."
+    },
+    {
+      "unit": "OLP-0022",
+      "reverse_paraphrase": "Surjectivity means every codomain element is attained; injectivity means any such element has at most one preimage.",
+      "checks": "At least one versus at most one remains distinct. Bijection requires both; injectivity does not require every output to be attained."
+    },
+    {
+      "unit": "OLP-0022",
+      "reverse_paraphrase": "Changing a function's codomain to its range induces a surjection; it does not prove that the original function was surjective.",
+      "checks": "f and f prime, their target sets and the defining equality preserved."
+    },
+    {
+      "unit": "OLP-0023",
+      "reverse_paraphrase": "A relation is the graph of a function if each input has a value and no input has two distinct values.",
+      "checks": "Existence and uniqueness conditions both retained; extensional identification is practical, not a metaphysical discovery."
+    },
+    {
+      "unit": "OLP-0023",
+      "reverse_paraphrase": "Restriction changes the permitted input set, while image collects output values for that input subset.",
+      "checks": "No inversion of domain restriction versus image; all relation-operation references retained."
+    },
+    {
+      "unit": "OLP-0024",
+      "reverse_paraphrase": "A left inverse undoes f after f acts; a right inverse is undone by f. Their formulas are g(f(x))=x and f(h(y))=y respectively.",
+      "checks": "Composition order and quantifier domains unchanged."
+    },
+    {
+      "unit": "OLP-0024",
+      "reverse_paraphrase": "Constructing a right inverse of a general surjection chooses one preimage for each output; the source explicitly invokes Choice and states exceptions.",
+      "checks": "Complete footnote retained, including finite/natural domains, bijections, no-choice singleton explanation and the later-chapter conditional."
+    },
+    {
+      "unit": "OLP-0024",
+      "reverse_paraphrase": "A bijection has an inverse; a left and a right inverse of one function coincide; every function has at most one inverse.",
+      "checks": "Source exercise-only proof prompts remain explicit exercises. At-most-one is not replaced by existence. Empty-domain defect belongs to the earlier injective proposition and is separately documented."
+    },
+    {
+      "unit": "OLP-0025",
+      "reverse_paraphrase": "Composition applies f first, then g; its value is g(f(x)), and the graph follows Rf then Rg.",
+      "checks": "No reversal of source comp macro or relation product; range/domain compatibility and diagram caption retained."
+    },
+    {
+      "unit": "OLP-0026",
+      "reverse_paraphrase": "A partial function may lack a value but cannot have two values at one input. Its actual domain consists of defined inputs, and totality means all of A is defined.",
+      "checks": "Nominal input set A is not silently equated with the actual domain. The plain-language rendering of serial is existential for every input."
+    }
+  ],
+  "legitimate_exceptions": [
+    "TeX commands, token keys, identifiers, comments and diagram asset paths remain source-language code.",
+    "Source proof texts reading Exercise are translated as explicit exercise prompts, not classified as missing proofs."
+  ],
+  "source_issues": "SOURCE_ISSUES-B003.json; post-draft OLFUN-20260904 audit applied to Marathi body and adjacent reader notes without changing frozen English or formulas.",
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "The source has five documented Function findings; the corrected Marathi body requires successful reader rendering of its five adjacent notes.",
+    "Advanced terminology is partly provisional; no independent linguistic certification.",
+    "Reader rendering, diagram integration and publication remain pending."
+  ]
+}

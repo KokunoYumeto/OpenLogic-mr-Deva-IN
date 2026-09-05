@@ -1,0 +1,43 @@
+{
+  "schema": "openlogic-expert-review-occurrence-checkpoint/1",
+  "coverage": {
+    "translated_units": 45,
+    "total_units": 722,
+    "aligned_segments": 559,
+    "complete": false
+  },
+  "occurrence_granularity": "one decision-governed aligned segment or one durable source issue",
+  "decisions_with_occurrences": 127,
+  "occurrences": 3743,
+  "priority_counts": {
+    "high": 473,
+    "medium": 1572,
+    "routine": 1698
+  },
+  "script": "Deva",
+  "locale": "mr-IN",
+  "edition_language_tag": "mr-Deva-IN",
+  "reader_pdf": {
+    "status": "unreleased development checkpoint",
+    "pages": 66,
+    "sha256": "be37d13d3a9706975d03f52a5fa4af88a87011247527c27da31ae0b6e9d1a743"
+  },
+  "surfaces": {
+    "provenance/EXPERT_REVIEW_OCCURRENCES.md": {
+      "bytes": 1602949,
+      "sha256": "05511420ca4f31da160f1203ff250b55d13f09332ddefc534cc9f8b038c0b5a9"
+    },
+    "provenance/EXPERT_REVIEW_PRIORITY.md": {
+      "bytes": 10367,
+      "sha256": "60e7008570a233f9d3b6082dbad37dae16565fc4f348bb10a133c6867c48e05e"
+    },
+    "provenance/EXPERT_REVIEW_OCCURRENCES.csv": {
+      "bytes": 4330527,
+      "sha256": "6cefd7aaf4fec2b0b13868c876f6a7805b89322a16ffefa9a32fb9f2f12f661d"
+    },
+    "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl": {
+      "bytes": 8580243,
+      "sha256": "daf1019becb861cfcc6730343c001879e7cb559582e923830d6c8182e56ed4b9"
+    }
+  }
+}

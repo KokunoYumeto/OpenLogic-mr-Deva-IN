@@ -4,7 +4,7 @@ def blocks(t):return re.split(r'\n\s*\n',t.strip())
 def mask_text(t):
     out='';start=0
     while True:
-        m=re.search(r'\\(text|intertext)\{',t[start:])
+        m=re.search(r'\\(text|intertext|emph)\{',t[start:])
         if not m:return out+t[start:]
         a=start+m.start();j=start+m.end();depth=1
         while depth and j<len(t):
@@ -62,6 +62,17 @@ _DOCUMENTED_PROJECTIONS = {
         ('चिन्हमाला~$s$ असू द्या', 'चिन्हमाला~$s_{k}$ असू द्या'),
         ('$s(n) = 1$', '$s_{k}(n) = 1$'),
         ('$s(n) = 0$', '$s_k(n) = 0$'),
+    ],
+    'OLP-0043': [
+        ('म्हणजे $s - r$ हा', 'म्हणजे $r - s$ हा'),
+    ],
+    'OLP-0045': [
+        ('\\Setabs{p \\times q}{0 \\leq p \\in \\alpha \\land 0 \\leq q \\in \\beta} \\cup 0_\\Real &',
+         '\\Setabs{p \\times q}{0 \\leq p \\in \\alpha \\land 0 \\leq q \\in \\beta} \\cup 0^\\mathbb{R} &'),
+    ],
+    'OLP-0048': [
+        ('\\equivrep{f}{}\\neq 0_\\Real',
+         '\\equivrep{f}{}\\neq 0_\\Rat'),
     ],
 }
 

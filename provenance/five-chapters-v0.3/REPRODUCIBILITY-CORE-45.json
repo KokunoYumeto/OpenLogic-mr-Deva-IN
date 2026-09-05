@@ -1,0 +1,24 @@
+{
+  "schema": "openlogic-reproducibility/1",
+  "input_tex_sha256": "1df3af1843a40aa28af504965bd0b7d77b1e5c04b8343754fb2992fb935ed000",
+  "inputs_manifest_sha256": "416017711981b85e9d86e0c1e7666000f0fa02e08281c638c7c335905932c25f",
+  "source_date_epoch": "1788480000",
+  "run_receipts": [
+    {
+      "filename": "TEX_BUILD_20260905T021548335.json",
+      "sha256": "9a3c62f3bf60c79c857b0b063f0a8459a5b5c9051c894ddade570f5b272bcda2",
+      "final_log_sha256": "355e53b404a810af69fe653c34dace47d403313dddf99ca79eb5a3a8e0031ba5",
+      "result": "built-log-clean"
+    },
+    {
+      "filename": "TEX_BUILD_20260905T021614672.json",
+      "sha256": "20c4dbde81c0ce4ba8001afeb6a033113a230d3e45ea65b6e7e21f35a3ece7ec",
+      "final_log_sha256": "47128e7b156cd37a6777f4f89d7dd887084ddcfe938002bc0de0e7caad813a8f",
+      "result": "built-log-clean"
+    }
+  ],
+  "pdf_bytes_each": 364560,
+  "pdf_sha256_each": "be37d13d3a9706975d03f52a5fa4af88a87011247527c27da31ae0b6e9d1a743",
+  "identical_pdf_bytes": true,
+  "scope": "Two consecutive guarded two-pass runs from settled auxiliary state on the same host; cross-platform byte identity is untested."
+}

@@ -2,32 +2,34 @@
 
 मुक्त तर्कशास्त्राची मराठी आवृत्ती. संपूर्ण 722 स्रोत-विभागांच्या अनुवादाचे काम सुरू आहे.
 
-सध्याच्या प्रकाशनात **संच आणि संबंध ही दोन संपूर्ण प्रकरणे** आहेत:
-OLP-0004–OLP-0019, एकूण 16 स्रोत-विभाग, 14 मुख्य विभाग, सर्व उदाहरणे,
-आकृत्यांचे मथळे आणि सराव. उर्वरित **706 विभागांचा अनुवाद अद्याप पूर्ण झालेला नाही**.
+सध्याच्या प्रकाशनात **संच, संबंध, फलने, संचांचे आकारमान आणि अंकगणितीकरण ही पाच संपूर्ण प्रकरणे** आहेत:
+OLP-0004–OLP-0048, एकूण 45 स्रोत-विभाग, 40 मुख्य विभाग, सर्व उदाहरणे,
+आकृत्यांचे मथळे आणि सराव. उर्वरित **677 विभागांचा अनुवाद अद्याप पूर्ण झालेला नाही**.
 हे संपूर्ण ग्रंथाचे प्रकाशन नाही.
 
 This is an independent Marathi edition of *The Open Logic Text*. The finite
 commission covers all 722 content TeX units at upstream revision
-`9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. The cumulative release covers 16/722
-units (190 content segments). Source IDs and paths remain aligned to the frozen corpus.
+`9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. The cumulative release covers 45/722
+units (559 content segments). Source IDs and paths remain aligned to the frozen corpus.
 
-Editable work on the main branch has progressed through OLP-0040: **37/722 units**
-and 464 aligned translated content blocks. The Sets, Relations, Functions, and
-Size of Sets chapters are complete in source form. These twenty-one additional
-units form a verified source checkpoint. A clean 52-page development reader was
-built twice to identical bytes and visually
-inspected, but it is not yet a released cumulative PDF/HTML reader.
+Editable work has progressed through OLP-0048: **45/722 units** and 559 aligned
+translated content blocks. The Sets, Relations, Functions, Size of Sets, and
+Arithmetization chapters are complete in source and reader form. The 66-page PDF
+was built twice to identical bytes and every page was inspected. Its offline HTML
+companion passed exact source-conversion, structure, asset and desktop/mobile
+browser checks.
 
-- **Current release:** [संच आणि संबंध — PDF, offline HTML and sources](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/foundations-v0.2).
-- **DOI mirror:** [10.5281/zenodo.22307961](https://doi.org/10.5281/zenodo.22307961); [edition concept DOI](https://doi.org/10.5281/zenodo.22307960) for future versions.
-- **PDF:** [22-page cumulative reader](releases/foundations-v0.2/openlogic-mr-foundations.pdf).
-- **Offline HTML:** download and extract `openlogic-mr-foundations-html.zip`, then open `index.html`.
-- **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/) and the [in-progress Size of Sets chapter](mr/content/sets-functions-relations/size-of-sets/).
-- **Terminology and expert review:** [human-readable ledger](provenance/EXPERT_REVIEW_LOG.md) and [machine-readable decisions](provenance/EXPERT_REVIEW_DECISIONS.jsonl). It records provisional choices and precise questions without making review a completion gate.
+- **Current release:** [पाच प्रकरणे — PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/five-chapters-v0.3).
+- **DOI mirror:** [edition concept DOI 10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960), which resolves to the latest version.
+- **PDF:** [66-page cumulative reader](releases/five-chapters-v0.3/openlogic-mr-five-chapters.pdf).
+- **Offline HTML:** download and extract `openlogic-mr-five-chapters-html.zip`, then open `index.html`.
+- **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/), [size of sets](mr/content/sets-functions-relations/size-of-sets/), and [arithmetization](mr/content/sets-functions-relations/arithmetization/).
+- **Terminology and expert review:** begin with the [shared-schema review guide](provenance/translation-decisions/START_HERE.md), then use the [full applied-decision index](provenance/translation-decisions/TRANSLATION_DECISIONS_FULL.md), [priority review](provenance/translation-decisions/PRIORITY_REVIEW.md), [one-row-per-occurrence CSV](provenance/translation-decisions/DECISION_OCCURRENCES.csv), or [canonical JSON](provenance/translation-decisions/DECISIONS.json). The backward-compatible [decision ledger](provenance/EXPERT_REVIEW_LOG.md) and occurrence JSONL remain available. These surfaces record exact source/target scopes, current PDF page ranges, reversible choices and plain review questions without making review a completion gate.
 - **Pristine English:** `upstream/`; this is source evidence, not translated coverage.
-- **Current source-checkpoint evidence:** `provenance/source-checkpoint-37/`.
+- **Current source-checkpoint evidence:** `provenance/source-checkpoint-45/`.
+- **Current reader evidence:** `provenance/five-chapters-v0.3/`.
 - **Released-reader evidence:** `provenance/foundations-v0.2/`; root-level provenance remains the historical first release snapshot.
+- **Earlier cumulative release:** [foundations-v0.2](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/foundations-v0.2), preserved unchanged.
 - **Earlier release:** [sets-v0.1](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/sets-v0.1), preserved unchanged.
 - **International hub:** [OpenLogic translations](https://github.com/KokunoYumeto/OpenLogic-translations).
 - **Original project and contributors:** [Open Logic Project](https://openlogicproject.org/people/),
@@ -42,27 +44,26 @@ provisional extensions where evidence is sparse. Source mathematics takes
 precedence over conventions in language witnesses: in particular, OpenLogic's
 natural numbers include zero.
 
-The two published chapters have 190 aligned content segments with consultation
-records. Current editable source has 416 such records across 34 units.
+The five published chapters have 559 aligned content segments with consultation
+records across 45 units.
 Deterministic checks compare formulas, token identities, macro inventories,
 labels, citations, links and source file references.
 Visual, structural and semantic checks are documented in
-`provenance/foundations-v0.2/QA-FOUNDATIONS-v0.2.json` and its review records.
+`provenance/five-chapters-v0.3/` and the 45-unit source checkpoint.
 Such checks do not establish the absence
 of every possible translation error.
 Two guarded builds on the same host produced identical PDF bytes with fixed
 `SOURCE_DATE_EPOCH`; cross-platform byte identity has not been tested.
 
-The offline HTML includes 846 MathML expressions with original TeX annotations,
-six diagrams with Marathi alternatives, local fonts, a linked contents list and
-keyboard-focusable formula regions. Exact conversion checks preserve prose and
-formula content; internal references match PDF numbering. Browser layout and
-assistive-technology behavior remain unverified because the available browser's
-URL security policy denied local-file access. Static checks are not represented
-as a browser test. Three inherited source notation issues in the published reader
-are explained in a separate editorial section. The current expert-review ledger
-also records Functions and Size of Sets corrections and observations; frozen
-English bytes remain unchanged. It also preserves the formal retraction of a
+The offline HTML includes 2,778 MathML expressions with original TeX annotations,
+twelve diagrams with detailed Marathi alternatives, local fonts, a linked contents
+list and keyboard-focusable formula regions. Exact conversion checks preserve
+ordinary prose, footnotes and formulas; internal references match PDF numbering.
+Browser inspection passed at 1280 × 720 and 390 × 844 CSS pixels with no page-level
+horizontal overflow, all twelve figures loaded and no console errors. Assistive-
+technology behavior is not independently certified. Inherited source issues are
+explained in a separate editorial section; frozen English bytes remain unchanged.
+The evidence also preserves the formal retraction of a
 shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The current
 source-checkpoint evidence explicitly
 distinguishes preserved original pages from hash-pinned short web observations
@@ -86,11 +87,13 @@ python tools/prepare_html.py
 python tools/qa_html.py
 ```
 
-The four-chapter development reader can be prepared and built through OLP-0040 with:
+The five-chapter development reader can be prepared and built through OLP-0048 with:
 
 ```powershell
 python tools/prepare_core.py
 ./tools/build_guarded.ps1 -Target core
+python tools/prepare_core_html.py
+python tools/qa_core_html.py
 ```
 
 The guarded builder reserves `Global\InterlanguageTeXSlotV1` with one bounded
@@ -100,8 +103,7 @@ no TeX. `SOURCE_DATE_EPOCH` is set for the child build and restored afterward.
 The adapter includes all novice, mathematics and computing passages. Four
 conditional occurrences whose referenced sections are not yet included take their
 original false branches in this partial reader; the complete translated TeX retains
-both original branches. The HTML
-diagram crops are pinned to this 22-page PDF layout and must be reinspected if
+both original branches. The HTML diagram crops are pinned to this 66-page PDF layout and must be reinspected if
 pagination changes. The earlier sets-only build remains available through
 `prepare_sets.py` and the builder's default `sets` target.
 
