@@ -1,0 +1,540 @@
+{
+  "schema": "openlogic-source-observations/1",
+  "batch": "MR-B004",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "policy": "Frozen English bytes remain untouched. Deterministic defects confirmed by the shared audit or by same-agent comparison with immediately controlling formulas are repaired in Marathi bodies, carry adjacent stable keyed notes, and are verified by projecting only documented deltas back to the frozen structure. Shared findings and Marathi-lane findings retain distinct IDs.",
+  "audit": {
+    "audit_id": "OLSIZ-20260904",
+    "findings_sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07",
+    "review_sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9",
+    "consultation_stage": "Exact frozen source and each immediately controlling formula, table, definition or proof scope were read; every authoritative finding OLSIZ-001 through OLSIZ-010 is applied. The later identifier OLSIZ-011 is a retracted false positive and remains unapplied.",
+    "retractions": [
+      {
+        "retraction_id": "OLSIZ-011-RETRACTION-20260904",
+        "void_shared_identifier": "OLSIZ-011",
+        "retraction_sha256": "b495d66165f3c7f0b32d61b0b106c402badcc6e4e6a130442734c8f883dd5adc",
+        "tombstone_sha256": "b1b9f8ad296bc8d718a17514cdb91c61a8c1ea537a1231604f862551406b35bf",
+        "source_sha256": "a075f6c63879101314fb20fa493acfb38d78ff24095bb55914f2af4527e1ad3e",
+        "status": "false_positive_not_applied",
+        "public_provenance": "provenance/SOURCE_AUDIT_RETRACTIONS.json"
+      }
+    ]
+  },
+  "issues": [
+    {
+      "id": "OLSIZ-001",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-001",
+      "unit_id": "OLP-0029",
+      "source_locator": "content/sets-functions-relations/size-of-sets/enumerability.tex:145-153",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/enumerability.tex:145-153",
+      "classification": "confirmed_tabular_value_omission",
+      "finding": "The header and formula rows include f(7), whose value is -3, but the final value row stops at 3 and omits -3.",
+      "action": "Inserted the missing -3 beneath f(7) in the Marathi table and added the adjacent keyed note; frozen English bytes remain unchanged.",
+      "alternatives": [
+        "Leave the omission and annotate only",
+        "Change the frozen English table"
+      ],
+      "uncertainty": "None about the value; the controlling formula gives -3.",
+      "review_question": "Is the inserted -3 cell and adjacent Marathi source note the clearest correction?",
+      "required_translation_handling": "Add -3 in the value row and an adjacent OLSIZ-001 source-correction note.",
+      "mathematical_delta": {
+        "display_value_added": "-3"
+      }
+    },
+    {
+      "id": "MRSIZ-001",
+      "unit_id": "OLP-0029",
+      "source_locator": "content/sets-functions-relations/size-of-sets/enumerability.tex:252-265",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/enumerability.tex:278",
+      "classification": "mathematically equivalent but implicit reindexing",
+      "finding": "The statement uses the finite initial segment 0 through n while the proof obtains 0 through n-1; the parameter is implicitly renamed.",
+      "action": "Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.",
+      "alternatives": [
+        "Normalize both endpoints",
+        "Leave the reindexing implicit"
+      ],
+      "uncertainty": "No mathematical uncertainty; this is a Marathi-lane explanatory observation outside the shared deterministic-defect list.",
+      "review_question": "Would an explicit parameter renaming be clearer than the current adjacent note?"
+    },
+    {
+      "id": "OLSIZ-002",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-002",
+      "unit_id": "OLP-0031",
+      "source_locator": "content/sets-functions-relations/size-of-sets/pairing.tex:91-96",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/pairing.tex:91-95",
+      "classification": "confirmed_grammatical_defect_clarified_by_following_formula",
+      "finding": "The phrase 'complement of a finite set Nat' is malformed and omits the relation between the finite set and Nat.",
+      "action": "Rendered the body as the complement in Nat of a finite subset of Nat and added the adjacent keyed note.",
+      "alternatives": [
+        "Translate the malformed phrase literally",
+        "Rely on the following equivalence without a note"
+      ],
+      "uncertainty": "None about the intended relation; the following formula controls it.",
+      "review_question": "Does the Marathi wording state both the ambient Nat and the finite-subset relation without redundancy?",
+      "required_translation_handling": "State 'the complement in Nat of a finite subset of Nat' (or an exact language-equivalent) and add an adjacent OLSIZ-002 note.",
+      "mathematical_delta": null
+    },
+    {
+      "id": "MRSIZ-002",
+      "unit_id": "OLP-0031",
+      "source_locator": "content/sets-functions-relations/size-of-sets/pairing.tex:107-108",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/pairing.tex:112",
+      "classification": "confirmed mathematical defect caused by injective-versus-bijective mismatch",
+      "finding": "A pairing function is defined only as an injection A×B→Nat, so its inverse is generally partial and is not an enumeration unless the pairing function is surjective.",
+      "action": "Separated the surjective case from the general range-restricted inverse argument and added an adjacent note.",
+      "alternatives": [
+        "Strengthen the definition to bijection",
+        "Assume surjectivity only in the exercise",
+        "Preserve the false claim"
+      ],
+      "uncertainty": "No mathematical uncertainty; this is an additional Marathi-lane finding outside the shared audit.",
+      "review_question": "Should the exercise retain both cases or simply assume a bijective pairing function?"
+    },
+    {
+      "id": "OLSIZ-003",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-003",
+      "unit_id": "OLP-0032",
+      "source_locator": "content/sets-functions-relations/size-of-sets/pairing-alt.tex:39-45",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:41-45",
+      "classification": "confirmed_typographical_duplication",
+      "finding": "The prose repeats the family (2,m) where it is enumerating successive rows.",
+      "action": "Replaced the second (2,m) occurrence by (3,m) in the Marathi body and added the adjacent keyed note.",
+      "alternatives": [
+        "Retain both (2,m) occurrences and explain in prose",
+        "Change the frozen English source"
+      ],
+      "uncertainty": "None; the following table fixes the intended row family.",
+      "review_question": "Is the direct (3,m) correction and note preferable to retaining the duplicated displayed family?",
+      "required_translation_handling": "Replace the second (2,m) by (3,m) and add an adjacent OLSIZ-003 note.",
+      "mathematical_delta": {
+        "removed": "\\tuple{2,m}",
+        "added": "\\tuple{3,m}"
+      }
+    },
+    {
+      "id": "MRSIZ-003",
+      "unit_id": "OLP-0032",
+      "source_locator": "content/sets-functions-relations/size-of-sets/pairing-alt.tex:20-27",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:26",
+      "classification": "high-confidence incorrect second-pair label",
+      "finding": "The prose calls (0,2) the second pair after (0,0), but the table places (0,1) in that position.",
+      "action": "Identified (0,1) as intended in prose while retaining the frozen formula occurrence and adding an adjacent note.",
+      "alternatives": [
+        "Directly replace the formula by (0,1)",
+        "Preserve the inconsistency silently"
+      ],
+      "uncertainty": "Very low; this is an additional Marathi-lane finding outside the shared audit.",
+      "review_question": "Should the displayed prose formula also be directly corrected to (0,1) in a future source-authorized edition?"
+    },
+    {
+      "id": "OLSIZ-004",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-004",
+      "unit_id": "OLP-0034",
+      "source_locator": "content/sets-functions-relations/size-of-sets/reduction.tex:47-69",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/reduction.tex:50-60",
+      "classification": "confirmed_undefined_index_in_function_definition",
+      "finding": "The definition calls f(Z) the sequence s_k although k is never bound or determined.",
+      "action": "Replaced the unbound s_k and s_k(n) forms by one bound output name s and s(n), and added the adjacent keyed note.",
+      "alternatives": [
+        "Use s_Z",
+        "Define a numerical k from Z",
+        "Retain the unbound subscript"
+      ],
+      "uncertainty": "No semantic uncertainty; an unsubscripted s was selected for the corrected notation.",
+      "review_question": "Would s_Z communicate dependence on Z more clearly than the chosen bound name s?",
+      "required_translation_handling": "Use one bound output name, such as s, consistently in the characteristic-sequence definition and add an adjacent OLSIZ-004 note.",
+      "mathematical_delta": {
+        "removed": [
+          "s_k",
+          "s_k(n)"
+        ],
+        "added": [
+          "s",
+          "s(n)"
+        ]
+      }
+    },
+    {
+      "id": "OLSIZ-005",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-005",
+      "unit_id": "OLP-0034",
+      "source_locator": "content/sets-functions-relations/size-of-sets/reduction.tex:85-100",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/reduction.tex:96-106",
+      "classification": "confirmed_codomain_error_finite_string_used_as_infinite_sequence",
+      "finding": "The displayed h(n) is explicitly a finite string of n zeros, but h is declared to map into the set of infinite binary sequences.",
+      "action": "Appended an explicit infinite tail of ones after the n initial zeros, making every displayed value an element of Bin^omega, and added the adjacent keyed note.",
+      "alternatives": [
+        "Use a constant all-zero sequence",
+        "Use n zeros followed by an alternating infinite tail",
+        "Retain the finite string"
+      ],
+      "uncertainty": "No codomain uncertainty; the chosen eventually-one family is one of several valid non-surjective examples.",
+      "review_question": "Is the n-zeros-then-ones family the clearest corrected non-surjective map for this warning?",
+      "required_translation_handling": "Use a valid infinite binary output and add an adjacent OLSIZ-005 note.",
+      "mathematical_delta": {
+        "display_tail_added": "an explicit infinite tail"
+      }
+    },
+    {
+      "id": "OLSIZ-006",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-006",
+      "unit_id": "OLP-0035",
+      "source_locator": "content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:68-94",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:72-100",
+      "classification": "confirmed_undefined_function_in_empty_set_branch",
+      "finding": "Two conditional variants refer to g(x)=y before g is introduced, although the bijection in scope is f.",
+      "action": "Replaced both premature g(x)=y occurrences by f(x)=y in the Marathi conditional branches and added one adjacent keyed note.",
+      "alternatives": [
+        "Avoid a named equation",
+        "Retain g and explain the typo"
+      ],
+      "uncertainty": "None; f is the only bijection in scope in both empty-set branches.",
+      "review_question": "Is the direct two-occurrence replacement by f(x)=y sufficiently clear in both retained branches?",
+      "required_translation_handling": "Replace both premature g(x)=y occurrences by f(x)=y and add an adjacent OLSIZ-006 note.",
+      "mathematical_delta": {
+        "occurrences": 2,
+        "removed": "g(x)=y",
+        "added": "f(x)=y"
+      }
+    },
+    {
+      "id": "MRSIZ-004",
+      "unit_id": "OLP-0035",
+      "source_locator": "content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:87-94",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:101",
+      "classification": "terminological inconsistency within alternative proof branch",
+      "finding": "The same finite domain is first called an initial sequence and later an initial segment; the preceding definition uses initial segment.",
+      "action": "Used आरंभीचा खंड consistently and added an adjacent note.",
+      "alternatives": [
+        "Translate the two English labels differently",
+        "Normalize silently"
+      ],
+      "uncertainty": "Very low; this is an additional Marathi-lane observation outside the shared audit.",
+      "review_question": "Should the frozen source normalize initial sequence to initial segment?"
+    },
+    {
+      "id": "OLSIZ-007",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-007",
+      "unit_id": "OLP-0036",
+      "source_locator": "content/sets-functions-relations/size-of-sets/comparing-size.tex:74-90",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:81-109",
+      "classification": "confirmed_wrong_domain_in_arbitrary_element_conclusion",
+      "finding": "After choosing arbitrary x in A, the source says the conclusion holds for each x in overline(A).",
+      "action": "Changed the Marathi conclusion to quantify over every x∈A and added the adjacent keyed note.",
+      "alternatives": [
+        "Rewrite the two cases without a displayed equivalence",
+        "Retain the too-narrow scope and explain it"
+      ],
+      "uncertainty": "None; excluding every possible input x∈A is required to prove the diagonal set is outside the range.",
+      "review_question": "Is the corrected universal scope over A sufficiently explicit in the Marathi proof?",
+      "required_translation_handling": "Quantify the conclusion over x in A and add an adjacent OLSIZ-007 note.",
+      "mathematical_delta": {
+        "removed": "x in overline(A)",
+        "added": "x in A"
+      }
+    },
+    {
+      "id": "OLSIZ-008",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-008",
+      "unit_id": "OLP-0039",
+      "source_locator": "content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:61-75",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:60-64",
+      "classification": "confirmed_reversed_index_description_vs_array",
+      "finding": "The prose calls s_n(m) the nth digit of the mth string, reversing the indices.",
+      "action": "Described s_n(m) as the mth digit of the nth string, consistent with row n and column m, and added the adjacent keyed note.",
+      "alternatives": [
+        "Translate the reversed index description literally",
+        "Rely on the following row/column sentence without a note"
+      ],
+      "uncertainty": "None; the immediately following sentence and array fix the intended index order.",
+      "review_question": "Is the corrected nth-string/mth-digit wording the clearest match to the array?",
+      "required_translation_handling": "Use the row/column-consistent description and add an adjacent OLSIZ-008 note.",
+      "mathematical_delta": null
+    },
+    {
+      "id": "OLSIZ-009",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-009",
+      "unit_id": "OLP-0039",
+      "source_locator": "content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:77-84",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:77-82",
+      "classification": "confirmed_duplicated_bit_flip_instruction",
+      "finding": "The intuitive diagonal instruction says to change every 1 to 0 twice.",
+      "action": "Stated both complementary bit flips, 1 to 0 and 0 to 1, and added the adjacent keyed note.",
+      "alternatives": [
+        "Repeat the defective 1-to-0 instruction literally",
+        "Omit the intuitive prose and rely only on the cases formula"
+      ],
+      "uncertainty": "None; the immediately following cases formula determines both flips.",
+      "review_question": "Does the repaired two-way bit-flip sentence align transparently with the cases formula?",
+      "required_translation_handling": "State both complementary bit flips and add an adjacent OLSIZ-009 note.",
+      "mathematical_delta": {
+        "missing_prose_case_added": "0 to 1"
+      }
+    },
+    {
+      "id": "OLSIZ-010",
+      "shared_audit_id": "OLSIZ-20260904",
+      "shared_finding_id": "OLSIZ-010",
+      "unit_id": "OLP-0040",
+      "source_locator": "content/sets-functions-relations/size-of-sets/reduction-alt.tex:48-58",
+      "target_locator": "mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:52-56",
+      "classification": "confirmed_undefined_index_in_function_definition",
+      "finding": "The alternate proof again calls f(N) the string s_k although k is never bound or determined.",
+      "action": "Replaced the unbound s_k and s_k(n) forms by one bound output name s and s(n), and added the adjacent keyed note.",
+      "alternatives": [
+        "Use s_N",
+        "Define an index k from N",
+        "Retain the unbound subscript"
+      ],
+      "uncertainty": "No semantic uncertainty; unsubscripted s was chosen as the bound output name.",
+      "review_question": "Would s_N communicate dependence on N more clearly than the chosen bound name s?",
+      "required_translation_handling": "Use one bound output name consistently and add an adjacent OLSIZ-010 note.",
+      "mathematical_delta": {
+        "removed": [
+          "s_k",
+          "s_k(n)"
+        ],
+        "added": [
+          "s",
+          "s(n)"
+        ]
+      }
+    },
+    {
+      "id": "MRARITH-001",
+      "unit_id": "OLP-0043",
+      "source_locator": "content/sets-functions-relations/arithmetization/rationals.tex:52-60",
+      "target_locator": "mr/content/sets-functions-relations/arithmetization/rationals.tex:54-58",
+      "classification": "confirmed_sign_reversal_in_explanatory_prose",
+      "finding": "After correctly stating that r≤s exactly when s−r is not negative, the next English phrase says r−s can be written with nonnegative numerator and positive denominator. The following displayed definition again uses s−r, so the middle occurrence reverses the sign.",
+      "action": "Used s−r consistently in the Marathi explanatory sentence and displayed definition, added the adjacent MRARITH-001 note, and left the frozen English bytes unchanged.",
+      "alternatives": [
+        "Translate the reversed r−s phrase literally and annotate it",
+        "Omit the explanatory equivalence and rely on the displayed definition"
+      ],
+      "uncertainty": "None about the intended expression; both the immediately preceding clause and immediately following displayed equation use s−r.",
+      "review_question": "Does the direct s−r correction plus adjacent note make the order definition clear without interrupting the derivation?",
+      "required_translation_handling": "Replace the isolated explanatory r−s by s−r and add an adjacent MRARITH-001 source-correction note.",
+      "mathematical_delta": {
+        "removed": "r - s in explanatory prose",
+        "added": "s - r"
+      }
+    },
+    {
+      "id": "MRARITH-002",
+      "unit_id": "OLP-0044",
+      "source_locator": "content/sets-functions-relations/arithmetization/reals.tex:24",
+      "target_locator": "mr/content/sets-functions-relations/arithmetization/reals.tex:24-25",
+      "classification": "confirmed_false_radical_convention_in_disabled_footnote",
+      "finding": "The commented-out English footnote says the symbol √2 refers equally to positive and negative roots. Under the standard radical convention used by the theorem, √2 denotes the principal nonnegative root; the two roots of x²=2 are ±√2.",
+      "action": "Corrected the Marathi version of the inactive footnote, added the adjacent MRARITH-002 note, and made no change to active reader content or frozen English bytes.",
+      "alternatives": [
+        "Translate the false inactive footnote literally",
+        "Omit the inactive footnote from the editable Marathi source"
+      ],
+      "uncertainty": "None under the standard real radical convention used throughout the section.",
+      "review_question": "Should the inactive corrected footnote remain for source parity, or should a future upstream-authorized edition remove the obsolete comment entirely?",
+      "required_translation_handling": "Keep the footnote inactive, correct the conventional meaning of √2 and attach MRARITH-002.",
+      "mathematical_delta": {
+        "removed": "√2 denotes both roots",
+        "added": "√2 denotes the principal nonnegative root"
+      }
+    },
+    {
+      "id": "MRARITH-003",
+      "unit_id": "OLP-0044",
+      "source_locator": "content/sets-functions-relations/arithmetization/reals.tex:72",
+      "target_locator": "mr/content/sets-functions-relations/arithmetization/reals.tex:74-77",
+      "classification": "confirmed_biographical_year_error",
+      "finding": "The frozen English gives Stanley Tennenbaum's lifespan as 1927–2006; his memorial biography records that he died on 4 May 2005.",
+      "action": "Used 1927–2005 in Marathi and added the adjacent MRARITH-003 note; frozen English bytes remain unchanged.",
+      "alternatives": [
+        "Preserve 2006 silently",
+        "Omit the parenthetical dates"
+      ],
+      "uncertainty": "Birth-year sources vary between 1927 and 1928, so the frozen 1927 start is retained; the memorial gives an exact 2005 death date.",
+      "review_question": "Should a future upstream-authorized edition use 1927/28–2005, or retain the source's 1927 start while correcting only the certain death year?",
+      "verification_source": "https://stanleytennenbaumamericanoriginal.com/memorial/",
+      "verification_observed": "Stanley Tennenbaum died on 04 May 2005, age 78.",
+      "required_translation_handling": "Replace the certain death-year error 2006 by 2005 and attach MRARITH-003.",
+      "mathematical_delta": null
+    },
+    {
+      "id": "MRARITH-004",
+      "unit_id": "OLP-0045",
+      "source_locator": "content/sets-functions-relations/arithmetization/cuts.tex:58-68",
+      "target_locator": "mr/content/sets-functions-relations/arithmetization/cuts.tex:57-68",
+      "classification": "confirmed_invalid_implication_in_proof",
+      "finding": "The proof says that S having an upper bound implies at least one cut belongs to S. An empty family can have upper bounds; λ is nonempty because the theorem separately assumes S is nonempty.",
+      "action": "Used the explicit nonemptiness assumption to prove λ nonempty, retained the upper-bound assumption for the common omitted rational needed to prove λ proper, and added the adjacent MRARITH-004 note.",
+      "alternatives": [
+        "Translate the invalid implication literally",
+        "Reorder the proof to select an element of S before defining λ"
+      ],
+      "uncertainty": "None; nonemptiness is an explicit theorem hypothesis and is exactly what supplies a member of S.",
+      "review_question": "Does the corrected first sentence make clear that nonemptiness and boundedness serve separate parts of the cut proof?",
+      "required_translation_handling": "Use S being nonempty, rather than merely upper-bounded, to infer that S contains a cut and attach MRARITH-004.",
+      "mathematical_delta": {
+        "removed_reason": "S has an upper bound",
+        "added_reason": "S is nonempty"
+      }
+    },
+    {
+      "id": "MRARITH-005",
+      "unit_id": "OLP-0045",
+      "source_locator": "content/sets-functions-relations/arithmetization/cuts.tex:91-95",
+      "target_locator": "mr/content/sets-functions-relations/arithmetization/cuts.tex:94-102",
+      "classification": "confirmed_notational_inconsistency",
+      "finding": "The positive-product formula writes the zero cut once as 0^mathbb{R}, while the surrounding definitions consistently use 0_Real. The superscript form is inconsistent with the established embedding notation.",
+      "action": "Used 0_Real in the Marathi formula, added the adjacent MRARITH-005 note, and registered the exact projection in tools/qa_aligned.py.",
+      "alternatives": [
+        "Preserve the isolated superscript form",
+        "Rewrite every zero-cut occurrence with a verbose set-builder"
+      ],
+      "uncertainty": "None; the immediately following source comment and every case condition use 0_Real.",
+      "review_question": "Is the direct 0_Real normalization preferable to preserving the isolated source typo in display?",
+      "required_translation_handling": "Replace the isolated 0^mathbb{R} by 0_Real and attach MRARITH-005.",
+      "mathematical_delta": {
+        "removed": "0^mathbb{R}",
+        "added": "0_Real"
+      }
+    },
+    {
+      "id": "MRARITH-006",
+      "unit_id": "OLP-0045",
+      "source_locator": "content/sets-functions-relations/arithmetization/cuts.tex:96-108",
+      "target_locator": "mr/content/sets-functions-relations/arithmetization/cuts.tex:103-116",
+      "classification": "confirmed_missing_zero_product_case_due_disabled_clause",
+      "finding": "The source says ‘first let:’ but comments out the zero-product equation on the same line. The remaining strict-sign cases omit products where either factor is zero, leaving multiplication incompletely defined.",
+      "action": "Activated the source's own zero-product equation in Marathi before the negative cases and added the adjacent MRARITH-006 note. The formula tokens remain source-identical because the frozen source still contains them in its comment.",
+      "alternatives": [
+        "Keep the equation disabled and leave zero cases undefined",
+        "Add zero branches to the later cases display"
+      ],
+      "uncertainty": "None; the later cases use strict inequalities and cannot cover a zero factor.",
+      "review_question": "Should a future upstream-authorized edition restore the zero-product equation as active source text exactly where the Marathi edition does?",
+      "required_translation_handling": "Activate the source's zero-product equation before the strict-sign cases and attach MRARITH-006.",
+      "mathematical_delta": {
+        "activated": "0_Real × alpha = 0_Real = alpha × 0_Real"
+      }
+    },
+    {
+      "id": "MRARITH-007",
+      "unit_id": "OLP-0047",
+      "source_locator": "content/sets-functions-relations/arithmetization/checking-details.tex:145-151",
+      "target_locator": "mr/content/sets-functions-relations/arithmetization/checking-details.tex:143-148",
+      "classification": "confirmed_missing_noun_in_source_sentence",
+      "finding": "The English phrase ‘run through the (tedious) of checking’ is grammatically incomplete because the noun after ‘tedious’ is missing.",
+      "action": "Rendered the intended phrase as ‘the tedious checking’ in Marathi and added the adjacent MRARITH-007 note; frozen English bytes remain unchanged.",
+      "alternatives": [
+        "Mirror the broken syntax",
+        "Omit the parenthetical adjective"
+      ],
+      "uncertainty": "None about the intended meaning; the sentence explicitly says what remains to be checked.",
+      "review_question": "Is the concise Marathi repair preferable to supplying a more specific missing noun such as task or process?",
+      "required_translation_handling": "Supply the missing generic checking/task noun and attach MRARITH-007.",
+      "mathematical_delta": null
+    },
+    {
+      "id": "MRARITH-008",
+      "unit_id": "OLP-0047",
+      "source_locator": "content/sets-functions-relations/arithmetization/cuts.tex:90-96; content/sets-functions-relations/arithmetization/checking-details.tex:170-173",
+      "target_locator": "mr/content/sets-functions-relations/arithmetization/checking-details.tex:167-171",
+      "classification": "confirmed_reference_to_inactive_operation_definitions",
+      "finding": "The appendix asks the reader to check that real subtraction and division yield cuts, but the preceding frozen cuts section leaves both corresponding formulas in comments. Thus the active source text has not supplied the definitions that this exercise presupposes.",
+      "action": "Preserved the exercise claim and formulas in Marathi, added an adjacent MRARITH-008 note, and did not invent or activate a potentially incomplete division construction.",
+      "alternatives": [
+        "Activate the commented formulas without proving they define the intended operations",
+        "Delete subtraction and division from the exercise"
+      ],
+      "uncertainty": "The intended high-level operations are clear, but the commented division formula is not sufficiently supported to promote as a source correction without a fuller reconstruction.",
+      "review_question": "Should a future upstream-authorized mathematical revision supply and prove complete subtraction and reciprocal definitions before retaining this exercise?",
+      "required_translation_handling": "Preserve the claim, disclose that its definitions are inactive upstream, and attach MRARITH-008.",
+      "mathematical_delta": null
+    },
+    {
+      "id": "MRARITH-009",
+      "unit_id": "OLP-0048",
+      "source_locator": "content/sets-functions-relations/arithmetization/cauchy.tex:109-125",
+      "target_locator": "mr/content/sets-functions-relations/arithmetization/cauchy.tex:102-123",
+      "classification": "confirmed_relation_class_category_error",
+      "finding": "The frozen sentence says to identify real numbers with equivalence relations, while the construction immediately and correctly defines them as equivalence classes under one equivalence relation.",
+      "action": "Rendered the intended object as तुल्यतावर्ग in Marathi and added the adjacent MRARITH-009 note; frozen English bytes remain unchanged.",
+      "alternatives": [
+        "Mirror equivalence relations literally",
+        "Delete the mistaken identification sentence"
+      ],
+      "uncertainty": "None; the following definition explicitly names equivalence classes as the reals.",
+      "review_question": "Does the direct equivalence-class correction align cleanly with the immediately following construction?",
+      "required_translation_handling": "Use equivalence classes and attach MRARITH-009.",
+      "mathematical_delta": {
+        "removed": "equivalence relations",
+        "added": "equivalence classes"
+      }
+    },
+    {
+      "id": "MRARITH-010",
+      "unit_id": "OLP-0048",
+      "source_locator": "content/sets-functions-relations/arithmetization/cauchy.tex:149-154",
+      "target_locator": "mr/content/sets-functions-relations/arithmetization/cauchy.tex:145-153",
+      "classification": "confirmed_number_system_mismatch_in_zero_symbol",
+      "finding": "The positivity definition compares a real equivalence class with rational zero 0_Rat even though the preceding embedding defines real zero as 0_Real.",
+      "action": "Changed only this occurrence to 0_Real in Marathi, added MRARITH-010, and registered a narrow exact-QA projection back to the frozen symbol.",
+      "alternatives": [
+        "Keep 0_Rat and rely on implicit embedding",
+        "Rewrite the definition without a named zero"
+      ],
+      "uncertainty": "None; both sides of the inequality and equality are elements of the constructed real field.",
+      "review_question": "Is the direct 0_Real correction the clearest type-consistent notation?",
+      "required_translation_handling": "Use 0_Real, attach MRARITH-010, and project this exact documented delta for structural QA.",
+      "mathematical_delta": {
+        "removed": "0_\\Rat",
+        "added": "0_\\Real"
+      }
+    },
+    {
+      "id": "MRARITH-011",
+      "unit_id": "OLP-0048",
+      "source_locator": "content/sets-functions-relations/arithmetization/cauchy.tex:161-185",
+      "target_locator": "mr/content/sets-functions-relations/arithmetization/cauchy.tex:159-186",
+      "classification": "confirmed_shorthand_conflating_sequences_and_equivalence_classes",
+      "finding": "The theorem, exercise and completeness statement say Cauchy sequences constitute an ordered field, although the operations and order were defined on their equivalence classes; the proof also occasionally applies real order directly to a sequence representative.",
+      "action": "Named the equivalence classes explicitly in the theorem, exercise and completeness statement, and added MRARITH-011 to state the representative-class convention used by the preserved proof formulas.",
+      "alternatives": [
+        "Retain the shorthand without explanation",
+        "Rewrite every later formula to wrap representatives in equivalence-class notation"
+      ],
+      "uncertainty": "None about the field's carrier; fully normalizing every proof formula would create a larger mathematical rewrite.",
+      "review_question": "Does the adjacent convention make the preserved proof notation readable while keeping the field carrier exact?",
+      "required_translation_handling": "State the field carrier as equivalence classes and attach MRARITH-011.",
+      "mathematical_delta": null
+    },
+    {
+      "id": "MRARITH-012",
+      "unit_id": "OLP-0048",
+      "source_locator": "content/sets-functions-relations/arithmetization/cauchy.tex:133-147",
+      "target_locator": "mr/content/sets-functions-relations/arithmetization/cauchy.tex:126-143",
+      "classification": "confirmed_missing_representative_independence_check",
+      "finding": "After defining addition and multiplication on equivalence classes, the source asks only for closure of pointwise sum, difference and product under the Cauchy property. It omits the separate proof that changing representatives does not change the resulting class.",
+      "action": "Preserved the operations and assigned closure check, then added MRARITH-012 disclosing the additional well-definedness obligation without inventing a proof.",
+      "alternatives": [
+        "Supply an unrequested proof",
+        "Leave the missing obligation implicit"
+      ],
+      "uncertainty": "None that representative independence is required for operations on quotient classes.",
+      "review_question": "Is the adjacent disclosure sufficient until a source-authorized proof is supplied?",
+      "required_translation_handling": "Preserve the definitions, disclose the missing representative-independence check, and attach MRARITH-012.",
+      "mathematical_delta": null
+    }
+  ],
+  "external_upstream_report_submitted": false
+}

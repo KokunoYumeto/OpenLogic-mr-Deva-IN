@@ -1,0 +1,123 @@
+% Part: sets-functions-relations
+% Chapter: infinite
+% Section: dedekind
+%
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{infinite}{dedekind}
+\olsection{डेडेकिंड बीजसंरचना}
+
+नैसर्गिक संख्या केवळ अनंत असाव्यात असेच आपल्याला वाटत नाही; त्यांना काही
+(बीजगणितीय) गुणधर्म असावेत असेही आपल्याला वाटते: बेरीज, गुणाकार इत्यादी
+क्रियांखाली त्यांनी योग्य रीतीने वागले पाहिजे.
+
+\emph{उत्तरवर्ती फलनाची} कल्पना मूलभूत मानून, पुढील गुणधर्म असलेल्या
+वस्तू म्हणजे संख्या असे त्यांचे वैशिष्ट्य सांगावे, ही डेडेकिंड यांची
+कल्पना होती:
+\begin{enumerate}
+	\item अशी $0$ ही संख्या आहे जी कोणत्याही संख्येची उत्तरवर्ती नाही
+	\\म्हणजे, $0 \notin \ran{s}$
+	\\म्हणजे, $\forall x\ s(x) \neq 0$
+	\item भिन्न संख्यांच्या उत्तरवर्ती संख्या भिन्न असतात
+	\\म्हणजे, $s$ हे !!a{injection} आहे
+	\\म्हणजे, $\forall x \forall y (s(x) = s(y) \lif x = y)$
+	\item\ollabel{repeatedapplication} प्रत्येक संख्या $0$ पासून
+	उत्तरवर्ती फलन वारंवार लावून मिळते.
+\end{enumerate}
+पहिल्या दोन अटी प्रथम-क्रम तर्कशास्त्र वापरून सहज हाताळता येतात (वर
+पाहा). पण केवळ प्रथम-क्रम तर्कशास्त्र वापरून \olref{repeatedapplication}
+ही अट हाताळता येत नाही. \olref{repeatedapplication} ही अट पुढीलप्रमाणे
+संचसैद्धान्तिक रूपात पुन्हा मांडणे ही डेडेकिंड यांची निर्णायक कामगिरी होती:
+\begin{enumerate}
+	\item[3$'$.] नैसर्गिक संख्यांचा संच हा \emph{उत्तरवर्ती फलनाखाली
+	बंद} असलेला लघुतम संच आहे: म्हणजे, संचातील कोणत्याही !!{element} वर
+	$s$ लावल्यास संचातीलच दुसरा !!{element} मिळतो.
+\end{enumerate}
+पण हे आपल्याला सावकाश आणि स्पष्टपणे मांडावे लागेल.
+
+\begin{defn}\ollabel{Closure}
+	कोणत्याही फलन $f$ साठी, संच $X$ हा $f$-\emph{बंद} असतो जर आणि तरच
+	$(\forall x \in X)f(x) \in X$. आता कोणत्याही $o$ साठी अशी व्याख्या करू:
+	$$\closureofunder{f}{o} = \bigcap\Setabs{X}{o \in X\text{ आणि }X
+\text{ हा $f$-बंद आहे}}$$
+\end{defn}
+
+म्हणून $\closureofunder{f}{o}$ हा $o$ हा !!a{element} असलेल्या सर्व
+$f$-बंद संचांचा छेद आहे. त्यामुळे सहजज्ञानानुसार,
+$\closureofunder{f}{o}$ हा $o$ हा !!a{element} असलेला \emph{लघुतम}
+$f$-बंद संच आहे. पुढील निष्कर्ष हे सहजज्ञान नेमकेपणाने मांडतो:
+\begin{lem}\ollabel{closureproperties}
+	कोणतेही फलन $f$ आणि कोणतेही $o \in A$ यांसाठी:
+	\begin{enumerate}
+		\item\ollabel{closurehaselem} $o \in \closureofunder{f}{o}$; आणि
+		\item\ollabel{closureclosed} $\closureofunder{f}{o}$ हा $f$-बंद आहे; आणि
+		\item\ollabel{closuresmallest} $X$ हा $f$-बंद असून $o \in
+		X$ असेल, तर $\closureofunder{f}{o} \subseteq X$
+	\end{enumerate}
+\end{lem}
+
+\begin{proof}
+$o$ हा !!a{element} असलेला किमान एक $f$-बंद संच आहे, हे लक्षात घ्या;
+तो म्हणजे $\ran{f}\cup \{o\}$. म्हणून अशा \emph{सर्व} संचांचा छेद
+$\closureofunder{f}{o}$ अस्तित्वात आहे. आता आपल्याला
+\olref{closurehaselem}--\olref{closuresmallest} तपासावे लागतील.
+
+\olref{closurehaselem} बाबत: छेदातील सर्व संचांत $o$ हा !!a{element}
+असल्यामुळे $o \in \closureofunder{f}{o}$.
+
+\olref{closureclosed} बाबत: $x \in \closureofunder{f}{o}$ असे समजा.
+म्हणून $o \in X$ आणि $X$ हा $f$-बंद असेल, तर $x \in X$; आणि $X$ हा
+$f$-बंद असल्यामुळे $f(x) \in X$. म्हणून
+$f(x) \in \closureofunder{f}{o}$.
+
+\olref{closuresmallest} बाबत: सर्वसाधारणपणे, $X \in C$ असेल, तर
+$\bigcap C \subseteq X$.
+\end{proof}
+
+याचा उपयोग करून आपण असे म्हणू शकतो:
+
+\begin{defn}
+संच $A$, फलन $f \colon A \to A$ आणि असा काही $o \in A$ यांनी मिळून
+\emph{डेडेकिंड बीजसंरचना} बनते, जर:
+	\begin{enumerate}
+		\item \ollabel{ded:proper} $o \notin \ran{f}$
+		\item \ollabel{ded:injection} $f$ हे !!a{injection} आहे
+		\item \ollabel{ded:closure} $A = \closureofunder{f}{o}$
+	\end{enumerate}
+\end{defn}
+
+$A = \closureofunder{f}{o}$ असल्यामुळे, आधीच्या निष्कर्षावरून $A$ हा
+$o$ हा !!a{element} असलेला लघुतम $f$-बंद संच आहे. डेडेकिंड बीजसंरचना
+स्पष्टपणे डेडेकिंड-अनंत असते; व्याख्येतील \olref{ded:proper} आणि
+\olref{ded:injection} ही कलमे पाहा. पण कोणत्याही डेडेकिंड-अनंत संचाचे
+डेडेकिंड बीजसंरचनेत रूपांतर करता येते, ही अधिक रोचक गोष्ट आहे.
+
+\begin{thm}\ollabel{thm:DedekindInfiniteAlgebra}
+डेडेकिंड-अनंत संच अस्तित्वात असेल, तर डेडेकिंड बीजसंरचना अस्तित्वात असते.
+\end{thm}
+
+\begin{proof}
+$D$ हा डेडेकिंड-अनंत असू द्या. मग एकास-एक फलन $g \colon D \to D$
+आणि घटक $o  \in D \setminus \ran{g}$ अस्तित्वात आहेत. आता $A =
+\closureofunder{g}{o}$ असे मानू; \olref{closureproperties} नुसार $A$
+अस्तित्वात आहे आणि $o \in A$. $f = \funrestrictionto{g}{A}$ असे मानू.
+$A, f, o$ हे मिळून डेडेकिंड बीजसंरचना बनतात, हे आपण दाखवू.
+
+\olref{ded:proper} बाबत: $o \notin \ran{g}$ आणि $\ran{f}
+\subseteq \ran{g}$, म्हणून $o\notin \ran{f}$.
+
+\olref{ded:injection} बाबत: $g$ हे $D$ वरील एकास-एक फलन आहे; म्हणून
+$f \subseteq g$ हेही एकास-एक फलन असले पाहिजे.
+
+\olref{ded:closure} बाबत: \olref{closureproperties} नुसार $A$ हा
+$g$-बंद आहे; त्यामुळे विशेषतः $A$ हा $f$-बंद आहे. म्हणून
+\olref{closureproperties} नुसार $\closureofunder{f}{o} \subseteq A$.
+तसेच $\closureofunder{f}{o}$ हा $f$-बंद आहे आणि
+$f = \funrestrictionto{g}{A}$ असल्यामुळे $\closureofunder{f}{o}$ हा
+$g$-बंद आहे. म्हणून \olref{closureproperties} नुसार
+$A \subseteq \closureofunder{f}{o}$.
+\end{proof}
+
+\end{document}

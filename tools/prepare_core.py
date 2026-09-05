@@ -1,10 +1,10 @@
-"""Prepare the five completed Sets, Relations and Functions chapters without launching TeX."""
+"""Prepare the completed six-chapter reader through OLP-0054 without launching TeX."""
 import hashlib,json,re,subprocess,sys
 from pathlib import Path
 P=Path(__file__).resolve().parents[1];B=P/'build/core';B.mkdir(parents=True,exist_ok=True)
 subprocess.run([sys.executable,str(P/'tools/prepare_foundations.py')],check=True,capture_output=True)
 base=(P/'build/foundations/openlogic-mr-foundations.tex').read_text(encoding='utf-8')
-base=base.replace('संच आणि संबंध','संच, संबंध, फलने, संचांचे आकारमान आणि अंकगणितीकरण').replace('दोन संपूर्ण प्रकरणे','पाच संपूर्ण प्रकरणे').replace('OLP-0019, एकूण 16 विभाग. उर्वरित 706','OLP-0048, एकूण 45 स्रोत-एकके आणि 40 वाचक-विभाग. उर्वरित 677')
+base=base.replace('संच आणि संबंध','संच, संबंध, फलने, संचांचे आकारमान, अंकगणितीकरण आणि अनंत संच').replace('दोन संपूर्ण प्रकरणे','सहा संपूर्ण प्रकरणे').replace('OLP-0019, एकूण 16 विभाग. उर्वरित 706','OLP-0054, एकूण 51 स्रोत-एकके आणि 45 वाचक-विभाग. उर्वरित 671')
 extra=r'''\newcommand{\dom}[1]{\mathrm{dom}(#1)}
 \newtheorem{cor}[defn]{निष्कर्ष}
 \newcommand{\ran}[1]{\mathrm{ran}(#1)}
@@ -20,6 +20,9 @@ extra=r'''\newcommand{\dom}[1]{\mathrm{dom}(#1)}
 \newcommand{\Ratequiv}{\backsim}
 \newcommand{\Realequiv}{\Bumpeq}
 \newcommand{\defis}{=}
+\newcommand{\closureofunder}[2]{\mathrm{clo}_{#1}(#2)}
+\newcommand{\Closureofunder}[2]{\mathrm{Clo}_{#1}(#2)}
+\newtheorem{lem}[defn]{सहायक प्रमेय}
 \newenvironment{editorial}{\begin{quote}\small\itshape}{\end{quote}}
 \definecolor{oldiagcolorD}{HTML}{1973ba}
 \newlength{\olphotowidth}\setlength{\olphotowidth}{0.35\textwidth}
@@ -46,15 +49,19 @@ groups=[
     ('अंकगणितीकरण','sfr:arith::chap',P/'mr/content/sets-functions-relations/arithmetization',[
         'integers','rationals','reals','cuts','reflections','checking-details','cauchy'
     ],'arithmetization'),
+    ('अनंत संच','sfr:infinite::chap',P/'mr/content/sets-functions-relations/infinite',[
+        'hilberts-hotel','dedekind-algebra','dedekind-induction','dedekinds-proof','card-sb'
+    ],'infinite'),
 ]
 raw=[]
 for _,_,directory,names,_ in groups:
     raw.extend((directory/(name+'.tex')).read_text(encoding='utf-8') for name in names)
 available=set(re.findall(r'\\label\{([^}]+)\}',before))
+available.update(chapter_label for _,chapter_label,_,_,_ in groups)
 for t in raw:
     m=re.search(r'\\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}',t);prefix=':'.join(m.groups());available.add(prefix+':sec')
     available.update(prefix+':'+k for k in re.findall(r'\\ollabel\{([^}]+)\}',t))
-absent={'sth:choice::chap','sfr:cardinals:card-sb:sec','sfr:card-arithmetic:card-opps:sec'};decisions=[]
+absent={'sth:choice::chap','sfr:cardinals:card-sb:sec','sfr:card-arithmetic:card-opps:sec','sth:::part','sth:ord-arithmetic::chap'};decisions=[]
 def conditionals(t):
     while '\\oliflabeldef' in t:
         a=t.index('\\oliflabeldef');j=a+len('\\oliflabeldef');args=[]
@@ -73,7 +80,7 @@ def reader_note(value):
     return value.replace('_',r'\_')
 chunks=[]
 words={'element':'घटक','surjective':'आच्छादक','surjection':'आच्छादन','injective':'एकास-एक','injection':'एकास-एक फलन','bijective':'एकास-एक व आच्छादक','bijection':'एकास-एक आच्छादन','enumerable':'गणनीय','nonenumerable':'अगणनीय'}
-plural_words={'element':'घटक','surjection':'आच्छादक फलने','bijection':'एकास-एक आच्छादने'}
+plural_words={'element':'घटक','surjection':'आच्छादक फलने','injection':'एकास-एक फलने','bijection':'एकास-एक आच्छादने'}
 raw_index=0
 for chapter,chapter_label,directory,names,preface in groups:
     chunks.append('\\chapter{'+chapter+'}\\label{'+chapter_label+'}')
@@ -97,8 +104,16 @@ for chapter,chapter_label,directory,names,preface in groups:
         t=t.replace(r'\citealt{Benacerraf1965}',r'Benacerraf (1965)')
         t=t.replace(r'\citeauthor{OConnorRobertson:RN} \citeyear{OConnorRobertson:RN}',r"O'Connor आणि Robertson (2005) यांचा लेख")
         t=t.replace(r'\citealt{KatzKatz2012}',r'Katz आणि Katz (2012)')
+        t=t.replace(r'\citealt[730]{EwaldSieg2013}',r'Ewald आणि Sieg (2013, p.~730)')
+        t=t.replace(r'\citeyear{Dedekind1888}',r'1888')
+        t=t.replace(r'\citealt[pp.~95--8]{Potter2004}',r'Potter (2004, pp.~95--8)')
+        t=re.sub(r'\\citeyear\[Theorems\s+132--3\]\{Dedekind1888\}',r'1888, प्रमेये 132--3',t)
+        t=t.replace(r'\citep[preface]{Dedekind1888}',r'(Dedekind, 1888, प्रस्तावना)')
+        t=t.replace(r'\citep[\S66]{Dedekind1888}',r'(Dedekind, 1888, \S66)')
+        t=t.replace(r'\citet[p.~23]{Potter2004}',r'Potter (2004, p.~23)')
+        t=t.replace(r'\citet[pp.~157--8]{Potter2004}',r'Potter (2004, pp.~157--8)')
         t=t.replace(r'\printtoken{S}{nonenumerable}','अगणनीय').replace(r'\usetoken{S}{enumerable}','गणनीय')
-        t=re.sub(r'\\olsection\{([^}]+)\}',lambda m:'\\section{'+m[1]+'}\\label{'+':'.join(prefix)+':sec}',t)
+        t=re.sub(r'\\olsection(?:\[[^]]*\])?\{([^}]+)\}',lambda m:'\\section{'+m[1]+'}\\label{'+':'.join(prefix)+':sec}',t)
         t=re.sub(r'\\ollabel\{([^}]+)\}',lambda m:'\\label{'+':'.join(prefix)+':'+m[1]+'}',t)
         def ref(m):
             options=re.findall(r'\[([^]]*)\]',m[1]);parts=prefix.copy()
@@ -125,6 +140,11 @@ newnotes=r'''\item फलन प्रकरणातील OLFUN-001 ते OLF
 गोठवलेल्या-स्रोत निरीक्षणांतील दुरुस्त्या किंवा स्पष्ट खुलासे संबंधित
 परिच्छेदांलगत स्वतंत्र ``स्रोतदुरुस्ती'' नोंदींमध्ये दिले आहेत. मूळ
 इंग्रजी बाइट्स बदललेले नाहीत.
+\item अनंत संच प्रकरणातील MRINF-001 ते MRINF-003 या तीन स्रोत-निरीक्षणांची
+नोंद ठेवली आहे. MRINF-001 मधील व्याकरणदोषाचा अभिप्रेत अर्थ थेट दिला आहे;
+MRINF-002 मधील अप्रकट आधारसंचाचे गृहीतक तज्ज्ञ-पुनरावलोकनासाठी राखले आहे;
+आणि MRINF-003 मधील विकृत निष्कर्ष संबंधित परिच्छेदालगत दुरुस्त केला आहे.
+मूळ इंग्रजी बाइट्स बदललेले नाहीत.
 '''
 notes=notes.replace(r'\end{enumerate}',newnotes+r'\end{enumerate}',1)
 newreferences=r'''\par\medskip
@@ -149,15 +169,22 @@ Stevin to Hilbert.''
 Karin Usadi Katz and Mikhail G. Katz (2012). ``Stevin Numbers and
 Reality.'' \textit{Foundations of Science}, 17(2), 109--123.
 
+Richard Dedekind (1888). \textit{Was sind und was sollen die Zahlen?}
+Vieweg, Braunschweig.
+
+David Hilbert (2013). \textit{David Hilbert's Lectures on the Foundations
+of Arithmetic and Logic 1917--1933}. William Bragg Ewald and Wilfried Sieg
+(eds.). Springer, Heidelberg.
+
 '''
 notes=notes.replace(r'\end{document}',newreferences+r'\end{document}',1)
 out=before+'\n'.join(chunks)+'\n'+notes
 out='\n'.join(line.rstrip() for line in out.splitlines())+'\n'
-assert 'एकूण 45 स्रोत-एकके आणि 40 वाचक-विभाग' in out and out.count(r'\section{')==40
+assert 'एकूण 51 स्रोत-एकके आणि 45 वाचक-विभाग' in out and out.count(r'\section{')==45
 (B/'openlogic-mr-core.tex').write_text(out,encoding='utf-8',newline='\n')
 manifest=[json.loads(x) for x in (P/'provenance/SOURCE_MANIFEST.jsonl').read_text(encoding='utf-8').splitlines()]
 inputs=[]
-for r in manifest[3:48]:
+for r in manifest[3:54]:
     p=P/'mr'/r['source_path'];inputs.append({'unit_id':r['unit_id'],'path':p.relative_to(P).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
-(B/'INPUTS.json').write_text(json.dumps({'input_units':inputs,'scope':'45 source units, 40 reader sections, five complete chapters','conditional_decisions':decisions,'source_issues':'Three Relations and five Functions notes; ten shared Size of Sets corrections and four Marathi-lane observations; twelve Arithmetization corrections or disclosures; one manager false positive retracted before application; aligned English source is unchanged','notation':'Function, cardinal-comparison and arithmetization equivalence-relation macros copied from frozen upstream/open-logic-config.sty; composition applies first argument then second'},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print(json.dumps({'prepared':'build/core/openlogic-mr-core.tex','units':len(inputs),'sections':40,'sha256':hashlib.sha256(out.encode()).hexdigest()}))
+(B/'INPUTS.json').write_text(json.dumps({'input_units':inputs,'scope':'51 source units, 45 reader sections, six complete chapters','conditional_decisions':decisions,'source_issues':'Three Relations and five Functions notes; ten shared Size of Sets corrections and four Marathi-lane observations; twelve Arithmetization corrections or disclosures; three Infinite Sets observations or corrections; one manager false positive retracted before application; aligned English source is unchanged','notation':'Function, cardinal-comparison, arithmetization equivalence-relation and generated-closure macros copied from frozen upstream/open-logic-config.sty; composition applies first argument then second'},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print(json.dumps({'prepared':'build/core/openlogic-mr-core.tex','units':len(inputs),'sections':45,'sha256':hashlib.sha256(out.encode()).hexdigest()}))

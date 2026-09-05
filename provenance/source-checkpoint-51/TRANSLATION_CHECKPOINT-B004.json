@@ -1,0 +1,775 @@
+{
+  "schema": "openlogic-translation-checkpoint/1",
+  "batch": "MR-B004-arithmetization-complete",
+  "units": [
+    {
+      "unit_id": "OLP-0027",
+      "translation_sha256": "aa9d482149441ac42305ae1b4de1a65854019e0e15735f77e65a0864593585c4",
+      "translation_bytes": 2486,
+      "segments": 3,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0028",
+      "translation_sha256": "827d7fc9a9f834cc4b7e0c46578b06d59fa0e5ed53a1c2028ba93a3a90b1b827",
+      "translation_bytes": 2379,
+      "segments": 3,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0029",
+      "translation_sha256": "ae0660be31b32a915f2ce98618a49dd79f6780d89af632430cce224e4a7eca28",
+      "translation_bytes": 23881,
+      "segments": 31,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      },
+      "documented_source_correction_ids": [
+        "OLSIZ-001"
+      ]
+    },
+    {
+      "unit_id": "OLP-0030",
+      "translation_sha256": "31aa9da1c54210a75a88d57c21dd195c1680780817ae589cb79a0ef3ef0465c7",
+      "translation_bytes": 6645,
+      "segments": 8,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0031",
+      "translation_sha256": "d6b49a8d690c26368bb8858a2dea07f9b29cdbdaf4a2a942d5ae0b47a652bf98",
+      "translation_bytes": 9683,
+      "segments": 15,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      },
+      "documented_source_correction_ids": [
+        "OLSIZ-002"
+      ]
+    },
+    {
+      "unit_id": "OLP-0032",
+      "translation_sha256": "85c21ae38ea5c88e81b57aa0f6e8e6f8ffd007df768ddaa32fbf984c706ff44b",
+      "translation_bytes": 9571,
+      "segments": 6,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      },
+      "documented_source_correction_ids": [
+        "OLSIZ-003"
+      ]
+    },
+    {
+      "unit_id": "OLP-0033",
+      "translation_sha256": "a675f557f99fd70baa66f1c7954230cd987e6bb5a914aacf096d734ff7b63cdf",
+      "translation_bytes": 17262,
+      "segments": 22,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0034",
+      "translation_sha256": "8cf90f2eef20f7555a392cd8c270d55a54d4804b4f343471ec4cb8dcc3cc45c1",
+      "translation_bytes": 12029,
+      "segments": 17,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      },
+      "documented_source_correction_ids": [
+        "OLSIZ-004",
+        "OLSIZ-005"
+      ]
+    },
+    {
+      "unit_id": "OLP-0035",
+      "translation_sha256": "72ddf6826f31f582b29b4e05f5fdc70d56b3d92cd004b6e788f514524ce7b040",
+      "translation_bytes": 8980,
+      "segments": 14,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      },
+      "documented_source_correction_ids": [
+        "OLSIZ-006"
+      ]
+    },
+    {
+      "unit_id": "OLP-0036",
+      "translation_sha256": "daf301e108adf21bcc4b4d90b7f4dd77d550bdbc494656605d9f9f96029b6c71",
+      "translation_bytes": 13609,
+      "segments": 14,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      },
+      "documented_source_correction_ids": [
+        "OLSIZ-007"
+      ]
+    },
+    {
+      "unit_id": "OLP-0037",
+      "translation_sha256": "732dfacfd9a78c49cb4dbdbc606032c567d8f63c43dd3c036dc8ca74054381cc",
+      "translation_bytes": 3695,
+      "segments": 6,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0038",
+      "translation_sha256": "7abf6ac32f053dcc857bfba066d00cc42e386e8c3fe6824e4611263e19ff6984",
+      "translation_bytes": 8969,
+      "segments": 15,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0039",
+      "translation_sha256": "627d280fd57bdf926d0cff74db0399c872c72dc87a125fdb438f53aca9ff2d0f",
+      "translation_bytes": 13009,
+      "segments": 14,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      },
+      "documented_source_correction_ids": [
+        "OLSIZ-008",
+        "OLSIZ-009"
+      ]
+    },
+    {
+      "unit_id": "OLP-0040",
+      "translation_sha256": "384bb2b6e916217d585ee77a3c73ece1a4dadaf218a74d9ef2d0e66faa848d44",
+      "translation_bytes": 11169,
+      "segments": 19,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      },
+      "documented_source_correction_ids": [
+        "OLSIZ-010"
+      ]
+    },
+    {
+      "unit_id": "OLP-0041",
+      "translation_sha256": "3aee51e027b6cf9f7d6f318d34b5fb092c9ab086cf8583bf6e81e43732a64034",
+      "translation_bytes": 755,
+      "segments": 2,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0042",
+      "translation_sha256": "6e7942cd702965eef4b1f685717897e597ce2cebbd1445e7f58310b0e8bd8e38",
+      "translation_bytes": 9827,
+      "segments": 12,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0043",
+      "translation_sha256": "4ccbff9aa4d27276fc582ad5e66b1ed7d103c6bbc9e4aff96a6266d29f6768be",
+      "translation_bytes": 6639,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      },
+      "documented_source_correction_ids": [
+        "MRARITH-001"
+      ]
+    },
+    {
+      "unit_id": "OLP-0044",
+      "translation_sha256": "57d749ed9ada1a9bffba484ca8d9227ceaaeb05e52da6f58fe790883362565da",
+      "translation_bytes": 10607,
+      "segments": 10,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      },
+      "documented_source_correction_ids": [
+        "MRARITH-002",
+        "MRARITH-003"
+      ]
+    },
+    {
+      "unit_id": "OLP-0045",
+      "translation_sha256": "66cbf58423d253f96089b4d3c34cf648a30e43fc14d19cd26f993e67c1381160",
+      "translation_bytes": 12294,
+      "segments": 10,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      },
+      "documented_source_correction_ids": [
+        "MRARITH-004",
+        "MRARITH-005",
+        "MRARITH-006"
+      ]
+    },
+    {
+      "unit_id": "OLP-0046",
+      "translation_sha256": "e0de4ac678b4e2e3391bcaa96c0e8aab5ce1fbd84620a8af0fea0d7dfe57b746",
+      "translation_bytes": 12279,
+      "segments": 11,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0047",
+      "translation_sha256": "e52823e92702f904bba6be3aaddf7e3bc8c3de4cd9afc137abfc1359947571c0",
+      "translation_bytes": 15478,
+      "segments": 26,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      },
+      "documented_source_correction_ids": [
+        "MRARITH-007",
+        "MRARITH-008"
+      ]
+    },
+    {
+      "unit_id": "OLP-0048",
+      "translation_sha256": "cb8c22d068cb3af77e72fccca58f6373e12ed378df88ba35eff628f9730d87fb",
+      "translation_bytes": 23798,
+      "segments": 19,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      },
+      "documented_source_correction_ids": [
+        "MRARITH-009",
+        "MRARITH-010",
+        "MRARITH-011",
+        "MRARITH-012"
+      ]
+    }
+  ],
+  "total_translated_units": 45,
+  "total_segments": 559,
+  "remaining_units": 677,
+  "qa_sha256": "b889f74a3f568af32f5b2c193227896c71e68d0233dee5f2d3d5f41e477ddfb7",
+  "semantic_review_sha256": "aa6b7c15393b66b9705561c0e824ad124b132d463f6d05d49c5b9bcf16ee3f63",
+  "source_issues_sha256": "035af4ed2275ac7a5e730b57b6f31bab7a6f7ccbc778d64ac200fe370eb40683",
+  "next_action": "Translate OLP-0049 with exact structural parity and current canon/decision provenance, run unit semantic and mechanical QA, and continue the corpus.",
+  "latest_semantic_review": "SEMANTIC_REVIEW-OLP0048.json",
+  "latest_semantic_review_sha256": "aa6b7c15393b66b9705561c0e824ad124b132d463f6d05d49c5b9bcf16ee3f63",
+  "shared_source_audit": {
+    "audit_id": "OLSIZ-20260904",
+    "findings_sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07",
+    "review_sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9",
+    "applied": [
+      "OLSIZ-001",
+      "OLSIZ-002",
+      "OLSIZ-003",
+      "OLSIZ-004",
+      "OLSIZ-005",
+      "OLSIZ-006",
+      "OLSIZ-007",
+      "OLSIZ-008",
+      "OLSIZ-009",
+      "OLSIZ-010"
+    ],
+    "reserved_for_future_units": [],
+    "retractions": [
+      {
+        "retraction_id": "OLSIZ-011-RETRACTION-20260904",
+        "void_shared_identifier": "OLSIZ-011",
+        "retraction_sha256": "b495d66165f3c7f0b32d61b0b106c402badcc6e4e6a130442734c8f883dd5adc",
+        "tombstone_sha256": "b1b9f8ad296bc8d718a17514cdb91c61a8c1ea537a1231604f862551406b35bf",
+        "status": "false_positive_not_applied"
+      }
+    ],
+    "status": "all_authoritative_findings_applied"
+  },
+  "publication": {
+    "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+    "branch": "main",
+    "content_commit": "172eab3efae86e36b40e1b56da3ce4372e94780d",
+    "current_commit": "172eab3efae86e36b40e1b56da3ce4372e94780d",
+    "coverage": {
+      "translated_units": 37,
+      "aligned_segments": 464,
+      "remaining_units": 685,
+      "last_unit": "OLP-0040",
+      "complete_chapters": 4
+    },
+    "source_checkpoint": "provenance/source-checkpoint-37/SOURCE_CHECKPOINT.json",
+    "source_checkpoint_sha256": "30666a4549fb6f1b80f4de5ad5930a2049c9ccf73bc7cedc82ee000c970f6534",
+    "public_readback": "PUBLIC_READBACK-WIP-172eab3.json",
+    "public_readback_sha256": "8890b838f4dc2c37ca3ae82c45297097541aacf717925985c2031183c5ec25be",
+    "public_readback_files": 41,
+    "anonymous_remote_bytes_match": true,
+    "development_reader": {
+      "released": false,
+      "pages": 52,
+      "bytes": 297522,
+      "sha256": "a5f349b38e5e427f7c8dae4390566615077eca0b55915ba76fa5df362b24a045",
+      "two_clean_builds_identical": true,
+      "all_pages_visually_reviewed": true
+    },
+    "source_audit": {
+      "audit_id": "OLSIZ-20260904",
+      "status": "all_authoritative_findings_applied",
+      "applied": [
+        "OLSIZ-001",
+        "OLSIZ-002",
+        "OLSIZ-003",
+        "OLSIZ-004",
+        "OLSIZ-005",
+        "OLSIZ-006",
+        "OLSIZ-007",
+        "OLSIZ-008",
+        "OLSIZ-009",
+        "OLSIZ-010"
+      ],
+      "reserved": [],
+      "retracted_false_positive": "OLSIZ-011",
+      "retraction_status": "not applied",
+      "retraction_receipt_sha256": "eb5f664916c23d39592ff0891593101399b55ac2dac3a6184596ccc0a3558487"
+    },
+    "github_release_updated": false,
+    "zenodo_updated": false,
+    "latest_public_reader": "foundations-v0.2",
+    "zenodo_concept_doi": "10.5281/zenodo.22307960"
+  },
+  "reader_qa": {
+    "status": "passed_for_publication_candidate",
+    "scope": {
+      "translation_source_units": 45,
+      "reader_sections": 40,
+      "complete_chapters": 5,
+      "last_unit": "OLP-0048"
+    },
+    "pdf": {
+      "pages": 66,
+      "bytes": 364560,
+      "sha256": "be37d13d3a9706975d03f52a5fa4af88a87011247527c27da31ae0b6e9d1a743"
+    },
+    "qa_receipt": "PDF_QA-CORE-45.json",
+    "qa_receipt_sha256": "b9a7d780fbf76c00087a15af05b75a658bcf585f3754e82b219f458391aec35a",
+    "reproducibility_receipt": "REPRODUCIBILITY-CORE-45.json",
+    "reproducibility_receipt_sha256": "402b60c9f595dc532dad7ee337ff7d693b8b0d06cbeb194dcf33a86bb467c040",
+    "two_consecutive_clean_builds_identical": true,
+    "all_pages_visually_reviewed": true,
+    "pdf_tagged": false,
+    "accessible_html_required_for_public_reader_release": false,
+    "accessible_html": {
+      "status": "passed",
+      "html": {
+        "filename": "index.html",
+        "bytes": 1189711,
+        "sha256": "7c06c92a4cf38f7b8fbf1fd0844e1d93098200cc9d69cfa879a23c8a40645f59"
+      },
+      "stylesheet_sha256": "c4d0ea2b2849c5e72ed30da130dfcfbf31c4185231b838cf2bca0bce1211821f",
+      "native_mathml": 2778,
+      "diagrams_with_detailed_marathi_alternatives": 12,
+      "internal_links_valid": 150,
+      "exact_source_prose_and_math_conversion": true,
+      "offline_network_dependencies": 0,
+      "browser_layout_review": "passed at 1280x720 and 390x844 with no page-level horizontal overflow",
+      "qa_receipt": "HTML_QA-CORE-45.json",
+      "qa_receipt_sha256": "dfc886e1adb23f4de4262ddc4b33837feb3c65bab7f9057fb22edef5f9657575",
+      "build_receipt": "HTML_BUILD-CORE-45.json",
+      "build_receipt_sha256": "3823adc2f30b86719906e5d6666802cf7442275a373c977f022342c28f35e120",
+      "browser_receipt": "HTML_BROWSER_QA-CORE-45.json",
+      "browser_receipt_sha256": "0448a30dabfc2a46b292bfc63342ee20d5343efe522bda9c3ade2715c7ca4057"
+    }
+  },
+  "expert_review_occurrences": {
+    "decision_records": 131,
+    "occurrences": 3743,
+    "high_priority_occurrences": 473,
+    "occurrence_checkpoint": "EXPERT_REVIEW_OCCURRENCES-CHECKPOINT.json",
+    "occurrence_checkpoint_sha256": "bf04cf8ca20259f64090f1d7fbe07521fcf4828dc6a4ca8d4c43c98f806bb36a",
+    "ledger_checkpoint": "EXPERT_REVIEW_LEDGER-CHECKPOINT.json",
+    "ledger_checkpoint_sha256": "bf2ae608dff140c1e05960e1bd9f9d34bcfd0cdbbc3c5ccc2fef9f632359cd7c",
+    "canonical_schema_bundle": {
+      "status": "passed",
+      "directory": "provenance/translation-decisions",
+      "canonical_schema_sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "decisions_with_occurrences": 127,
+      "legacy_decisions_total": 131,
+      "prospective_decisions_deferred_without_fabricated_occurrences": [
+        "T009",
+        "T011",
+        "T012",
+        "T013"
+      ],
+      "occurrences": 3743,
+      "high_priority_occurrences": 473,
+      "schema_validation_errors": 0,
+      "deterministic_second_run_identical": true,
+      "decisions_json_sha256": "b042e58f1f89e2664af8ce14eb57c69a42d7b24e8cfa0d0b11355ad395e20c3f",
+      "qa_sha256": "0adf74ea7356b38833cf20335f43223a04ef64f5c387f7c118fd520d8a44d12d",
+      "checkpoint": "TRANSLATION_DECISIONS-CHECKPOINT-45.json",
+      "checkpoint_sha256": "6d1cf7d897c0dd812f4bb516e4d80c2b80f9d1a269a03076005d33c40fac245a"
+    }
+  },
+  "release_candidate": {
+    "tag": "five-chapters-v0.3",
+    "status": "published-and-anonymously-verified-on-github-and-zenodo",
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/five-chapters-v0.3",
+    "github_commit": "cd6a7836b66ef120c71d56442da9291e3ca70aef",
+    "github_public_readback": "PUBLIC_READBACK-FIVE-CHAPTERS-v0.3.json",
+    "github_public_readback_sha256": "d271427eb2a24c7000d7f5888046daec206cec378418121fb5157355003c892a",
+    "zenodo_record": "https://zenodo.org/records/22356920",
+    "zenodo_doi": "10.5281/zenodo.22356920",
+    "zenodo_conceptdoi": "10.5281/zenodo.22307960",
+    "zenodo_publication_receipt": "ZENODO_PUBLICATION-45.json",
+    "zenodo_publication_receipt_sha256": "9173af6de0b6c86f64b64be11b080d564d3387dea0fdc8d3a37f5fe0df7773aa",
+    "zenodo_public_readback": "ZENODO_PUBLIC_READBACK-45.json",
+    "zenodo_public_readback_sha256": "de33577cf16e86d50ace0db6ef709ea95dbb68b615bbf078ed55cbc97f7db142",
+    "assets": [
+      {
+        "filename": "openlogic-mr-five-chapters.pdf",
+        "bytes": 364560,
+        "sha256": "be37d13d3a9706975d03f52a5fa4af88a87011247527c27da31ae0b6e9d1a743",
+        "public_url": "https://zenodo.org/api/records/22356920/files/openlogic-mr-five-chapters.pdf/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-five-chapters.tex",
+        "bytes": 388419,
+        "sha256": "1df3af1843a40aa28af504965bd0b7d77b1e5c04b8343754fb2992fb935ed000",
+        "public_url": "https://zenodo.org/api/records/22356920/files/openlogic-mr-five-chapters.tex/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-five-chapters-html.zip",
+        "bytes": 1252554,
+        "sha256": "399e16e3d3cf77a9fa4d515610f8f0899d6b32a4fa15f76aee9cf9dcdacb4247",
+        "public_url": "https://zenodo.org/api/records/22356920/files/openlogic-mr-five-chapters-html.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-five-chapters-review.zip",
+        "bytes": 3361031,
+        "sha256": "fb46a2d97fb9fb39fcecf0a3e6bc4ef9bbdee9a9376bf159fe83d7851f1d5c44",
+        "public_url": "https://zenodo.org/api/records/22356920/files/openlogic-mr-five-chapters-review.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-five-chapters-editable-sources.zip",
+        "bytes": 9377377,
+        "sha256": "4a3e07097e61fe1f9bb37010a99c7737ccf1a178ea965f512a3a5ce8eba28f62",
+        "public_url": "https://zenodo.org/api/records/22356920/files/openlogic-mr-five-chapters-editable-sources.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "RELEASE_MANIFEST.json",
+        "bytes": 1737,
+        "sha256": "c53721c4785bb4f6dcad219b58c4c29a2fb6c2332eb89510400e80cf9e032246",
+        "public_url": "https://zenodo.org/api/records/22356920/files/RELEASE_MANIFEST.json/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "SHA256SUMS.txt",
+        "bytes": 602,
+        "sha256": "214241ab60878ed257d594dcf189a0109a72f90c76dac673691e54bfafe2fb97",
+        "public_url": "https://zenodo.org/api/records/22356920/files/SHA256SUMS.txt/content",
+        "verified_anonymously": true
+      }
+    ]
+  },
+  "github_publication_verified": {
+    "schema": "openlogic-github-publication/1",
+    "recorded_utc": "2026-09-05T16:16:41.002791+00:00",
+    "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+    "release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/five-chapters-v0.3",
+    "tag": "five-chapters-v0.3",
+    "commit": "cd6a7836b66ef120c71d56442da9291e3ca70aef",
+    "coverage": {
+      "translated_units": 45,
+      "total_units": 722,
+      "remaining_units": 677,
+      "aligned_segments": 559,
+      "complete_chapters": 5,
+      "last_unit": "OLP-0048"
+    },
+    "release_assets": [
+      {
+        "filename": "openlogic-mr-five-chapters.pdf",
+        "bytes": 364560,
+        "sha256": "be37d13d3a9706975d03f52a5fa4af88a87011247527c27da31ae0b6e9d1a743",
+        "public_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/five-chapters-v0.3/openlogic-mr-five-chapters.pdf",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-five-chapters.tex",
+        "bytes": 388419,
+        "sha256": "1df3af1843a40aa28af504965bd0b7d77b1e5c04b8343754fb2992fb935ed000",
+        "public_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/five-chapters-v0.3/openlogic-mr-five-chapters.tex",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-five-chapters-html.zip",
+        "bytes": 1252554,
+        "sha256": "399e16e3d3cf77a9fa4d515610f8f0899d6b32a4fa15f76aee9cf9dcdacb4247",
+        "public_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/five-chapters-v0.3/openlogic-mr-five-chapters-html.zip",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-five-chapters-review.zip",
+        "bytes": 3361031,
+        "sha256": "fb46a2d97fb9fb39fcecf0a3e6bc4ef9bbdee9a9376bf159fe83d7851f1d5c44",
+        "public_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/five-chapters-v0.3/openlogic-mr-five-chapters-review.zip",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-five-chapters-editable-sources.zip",
+        "bytes": 9377377,
+        "sha256": "4a3e07097e61fe1f9bb37010a99c7737ccf1a178ea965f512a3a5ce8eba28f62",
+        "public_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/five-chapters-v0.3/openlogic-mr-five-chapters-editable-sources.zip",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "RELEASE_MANIFEST.json",
+        "bytes": 1737,
+        "sha256": "c53721c4785bb4f6dcad219b58c4c29a2fb6c2332eb89510400e80cf9e032246",
+        "public_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/five-chapters-v0.3/RELEASE_MANIFEST.json",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "SHA256SUMS.txt",
+        "bytes": 602,
+        "sha256": "214241ab60878ed257d594dcf189a0109a72f90c76dac673691e54bfafe2fb97",
+        "public_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/five-chapters-v0.3/SHA256SUMS.txt",
+        "verified_anonymously": true
+      }
+    ],
+    "public_readback": "PUBLIC_READBACK-FIVE-CHAPTERS-v0.3.json",
+    "public_readback_sha256": "d271427eb2a24c7000d7f5888046daec206cec378418121fb5157355003c892a",
+    "anonymous_remote_bytes_match": true,
+    "tag_commit_matches": true,
+    "repository_files_verified": 1078,
+    "editable_source_files_verified": 1079,
+    "offline_html_files_verified": 17,
+    "review_files_verified": 9,
+    "decision_occurrences_verified": 3743,
+    "hub_reciprocal_link_present": true,
+    "status": "published-and-anonymously-verified"
+  },
+  "zenodo_publication_verified": {
+    "schema": "openlogic-zenodo-publication/1",
+    "recorded_utc": "2026-09-05T16:20:31.212648+00:00",
+    "record_id": 22356920,
+    "record_url": "https://zenodo.org/records/22356920",
+    "doi": "10.5281/zenodo.22356920",
+    "conceptdoi": "10.5281/zenodo.22307960",
+    "source_version_record_id": 22307961,
+    "version": "five-chapters-v0.3",
+    "coverage": {
+      "translated_units": 45,
+      "total_units": 722,
+      "remaining_units": 677,
+      "aligned_segments": 559,
+      "complete_chapters": 5,
+      "last_unit": "OLP-0048"
+    },
+    "files": [
+      {
+        "filename": "openlogic-mr-five-chapters.pdf",
+        "bytes": 364560,
+        "sha256": "be37d13d3a9706975d03f52a5fa4af88a87011247527c27da31ae0b6e9d1a743",
+        "public_url": "https://zenodo.org/api/records/22356920/files/openlogic-mr-five-chapters.pdf/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-five-chapters.tex",
+        "bytes": 388419,
+        "sha256": "1df3af1843a40aa28af504965bd0b7d77b1e5c04b8343754fb2992fb935ed000",
+        "public_url": "https://zenodo.org/api/records/22356920/files/openlogic-mr-five-chapters.tex/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-five-chapters-html.zip",
+        "bytes": 1252554,
+        "sha256": "399e16e3d3cf77a9fa4d515610f8f0899d6b32a4fa15f76aee9cf9dcdacb4247",
+        "public_url": "https://zenodo.org/api/records/22356920/files/openlogic-mr-five-chapters-html.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-five-chapters-review.zip",
+        "bytes": 3361031,
+        "sha256": "fb46a2d97fb9fb39fcecf0a3e6bc4ef9bbdee9a9376bf159fe83d7851f1d5c44",
+        "public_url": "https://zenodo.org/api/records/22356920/files/openlogic-mr-five-chapters-review.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-five-chapters-editable-sources.zip",
+        "bytes": 9377377,
+        "sha256": "4a3e07097e61fe1f9bb37010a99c7737ccf1a178ea965f512a3a5ce8eba28f62",
+        "public_url": "https://zenodo.org/api/records/22356920/files/openlogic-mr-five-chapters-editable-sources.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "RELEASE_MANIFEST.json",
+        "bytes": 1737,
+        "sha256": "c53721c4785bb4f6dcad219b58c4c29a2fb6c2332eb89510400e80cf9e032246",
+        "public_url": "https://zenodo.org/api/records/22356920/files/RELEASE_MANIFEST.json/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "SHA256SUMS.txt",
+        "bytes": 602,
+        "sha256": "214241ab60878ed257d594dcf189a0109a72f90c76dac673691e54bfafe2fb97",
+        "public_url": "https://zenodo.org/api/records/22356920/files/SHA256SUMS.txt/content",
+        "verified_anonymously": true
+      }
+    ],
+    "transaction_receipt": "ZENODO_TRANSACTION-45.json",
+    "transaction_receipt_sha256": "a9584ac46d75998d7d02978b890b3a0be9a7be5ec0f11b327c2d8ebbd5ea2cac",
+    "public_readback": "ZENODO_PUBLIC_READBACK-45.json",
+    "public_readback_sha256": "de33577cf16e86d50ace0db6ef709ea95dbb68b615bbf078ed55cbc97f7db142",
+    "anonymous_remote_bytes_match": true,
+    "metadata_and_lineage_verified": true,
+    "status": "published-and-anonymously-verified"
+  }
+}

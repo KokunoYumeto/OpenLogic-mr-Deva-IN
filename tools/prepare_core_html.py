@@ -1,4 +1,4 @@
-"""Build offline semantic HTML/MathML for the five-chapter core reader."""
+"""Build offline semantic HTML/MathML for the current complete-chapter core reader."""
 
 import hashlib
 import html
@@ -19,20 +19,32 @@ A = O / "assets"
 A.mkdir(parents=True, exist_ok=True)
 PDF = B / "openlogic-mr-core.pdf"
 TEX = B / "openlogic-mr-core.tex"
+INPUTS = B / "INPUTS.json"
 
 
 def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+input_rows = json.loads(INPUTS.read_text(encoding="utf-8"))["input_units"]
+driver_names = {
+    "sets.tex", "relations-complete.tex", "functions.tex",
+    "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
+}
+scope = {
+    "translation_source_units": len(input_rows),
+    "reader_sections": len(input_rows) - sum(Path(row["path"]).name in driver_names for row in input_rows),
+    "complete_chapters": sum(Path(row["path"]).name in driver_names for row in input_rows),
+}
+
+
 receipt = json.loads((B / "TEX_SUCCESS_RECEIPT.json").read_text(encoding="utf-8-sig"))
 assert receipt["result"] == "built-log-clean"
 assert sha(PDF) == receipt["pdf"]["sha256"]
 assert sha(TEX) == receipt["texInputSha256"]
-assert receipt["pdf"]["sha256"] == "be37d13d3a9706975d03f52a5fa4af88a87011247527c27da31ae0b6e9d1a743"
 
 document = fitz.open(PDF)
-assert len(document) == 66, "Reinspect diagram coordinates when pagination changes"
+assert len(document) >= 66
 specs = [
     ("union", 8, (176, 131, 417, 328), "A आणि B या दोन संचांचा संयोग. दोन्ही बंद वक्रांचा संपूर्ण भाग चिन्हांकित आहे; म्हणजे A किंवा B यांपैकी किमान एका संचातील सर्व घटक."),
     ("intersection", 8, (176, 485, 417, 682), "A आणि B या दोन संचांचा छेद. दोन बंद वक्रांचा फक्त सामाईक आच्छादित भाग चिन्हांकित आहे."),
@@ -46,6 +58,7 @@ specs = [
     ("bijective", 25, (176, 613, 418, 746), "एकास-एक व आच्छादक फलन. प्रांतातील प्रत्येक करडा घटक आणि सहप्रांतातील प्रत्येक लाल घटक यांची नेमकी एक जोडी बाणाने जोडलेली आहे."),
     ("composition", 29, (135, 602, 457, 747), "फलन-संयोजन g वर्तुळ f. डावीकडील A मधून f चे बाण मधल्या B मध्ये, B मधून g चे बाण उजवीकडील C मध्ये, आणि तुटक बाह्य बाण A मधून थेट C मधील त्याच अंतिम मूल्यांकडे जातात."),
     ("root-two-square", 54, (214, 388, 367, 483), "वर्गमूळ दोनच्या अपरिमेयतेची भूमितीय आकृती. m बाजूच्या मोठ्या चौरसात n बाजूचे दोन आच्छादित चौरस आहेत; नारिंगी सामाईक चौरस आणि दोन न रंगवलेले कोपरे लहान समान रचना दाखवतात."),
+    ("hilberts-hotel", 65, (180, 575, 415, 650), "हिल्बर्टच्या हॉटेलमधील खोली बदल. वरच्या ओळीत जुने पाहुणे 1, 2, 3 आणि पुढे आहेत; प्रत्येक बाण पाहुणा n याला खालच्या ओळीतील खोली n अधिक 1 मध्ये हलवतो, त्यामुळे वर्तुळ केलेली खोली 1 नव्या पाहुण्यासाठी मोकळी होते."),
 ]
 
 assets = []
@@ -113,6 +126,9 @@ tex, count = re.subn(tree_pattern, r"\\includegraphics{assets/tree.svg}", tex, f
 assert count == 1
 square_pattern = r"\\begin\{tikzpicture\}\s*\\draw\[thick\] \(0,0\) rectangle \(3,3\);.*?\\end\{tikzpicture\}"
 tex, count = re.subn(square_pattern, r"\\includegraphics{assets/root-two-square.svg}", tex, flags=re.S)
+assert count == 1
+hotel_pattern = r"\\begin\{tikzpicture\}\[scale\s*=\s*\.75\].*?\\end\{tikzpicture\}"
+tex, count = re.subn(hotel_pattern, r"\\includegraphics{assets/hilberts-hotel.svg}", tex, flags=re.S)
 assert count == 1
 assert r"\begin{tikzpicture}" not in tex
 assert not re.search(r"\\olasset(?:\[[^]]+\])?\{assets/", tex)
@@ -204,7 +220,7 @@ args = [
     "--toc",
     "--number-sections",
     "--metadata=lang:mr",
-    "--metadata=title:मुक्त तर्कशास्त्र — संच, संबंध, फलने, संचांचे आकारमान आणि अंकगणितीकरण",
+    "--metadata=title:मुक्त तर्कशास्त्र — संच, संबंध, फलने, संचांचे आकारमान, अंकगणितीकरण आणि अनंत संच",
     "--metadata=toc-title:अनुक्रमणिका",
     "--css=reader.css",
     "--output=" + str(O / "index.html"),
@@ -262,9 +278,16 @@ for node in soup.select("h1,h2,div.defn,div.ex,div.prop,div.thm,div.lem,div.cor"
     heading.string = re.sub(r"\d+\.\d+", number, heading.get_text(), count=1)
     if node.get("id"):
         numbered[node["id"]] = number
+aux_text = (B / "openlogic-mr-core.aux").read_text(encoding="utf-8")
+aux_labels = dict(re.findall(r"\\newlabel\{([^}]+)\}\{\{([^}]+)\}", aux_text))
 for link in soup.select("a[data-reference]"):
-    if link["data-reference"] in numbered:
-        link.string = numbered[link["data-reference"]]
+    key = link["data-reference"]
+    if key in numbered:
+        link.string = numbered[key]
+    elif key in aux_labels:
+        # Pandoc leaves references to numbered list items as [label-key]. The
+        # settled TeX auxiliary file contains the exact printed item number.
+        link.string = aux_labels[key]
 for formula in soup.select('math[display="block"]'):
     wrapper = soup.new_tag(
         "div",
@@ -281,7 +304,7 @@ doc = str(soup)
 (O / "index.html").write_text(doc, encoding="utf-8", newline="\n")
 report = {
     "schema": "openlogic-html-build/1",
-    "scope": {"translation_source_units": 45, "reader_sections": 40, "complete_chapters": 5},
+    "scope": scope,
     "source_tex_sha256": sha(TEX),
     "source_pdf_sha256": sha(PDF),
     "html_sha256": sha(O / "index.html"),

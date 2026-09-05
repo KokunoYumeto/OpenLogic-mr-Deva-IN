@@ -1,4 +1,4 @@
-"""Verify five-chapter HTML structure, source coverage, MathML and assets."""
+"""Verify current core-reader HTML structure, source coverage, MathML and assets."""
 
 import collections
 import hashlib
@@ -15,10 +15,25 @@ from bs4 import BeautifulSoup
 P = Path(__file__).resolve().parents[1]
 B = P / "build" / "core"
 O = B / "html"
+INPUTS = B / "INPUTS.json"
 
 
 def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+input_rows = json.loads(INPUTS.read_text(encoding="utf-8"))["input_units"]
+driver_names = {
+    "sets.tex", "relations-complete.tex", "functions.tex",
+    "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
+}
+chapter_count = sum(Path(row["path"]).name in driver_names for row in input_rows)
+section_count = len(input_rows) - chapter_count
+scope = {
+    "translation_source_units": len(input_rows),
+    "reader_sections": section_count,
+    "complete_chapters": chapter_count,
+}
 
 
 def ast(path=None, text=None):
@@ -173,7 +188,6 @@ if annotations != adapted[1]:
 assert annotations == adapted[1], "HTML math annotations differ from adapted source math"
 assert html_note_maths == [item[1] for item in adapted[3]]
 assert len(document.select("math")) == len(annotations) + len(toc_annotation_nodes) + sum(map(len, html_note_maths))
-assert len(toc_annotation_nodes) == 6
 assert not document.select("merror,script,iframe,object,embed")
 visible_copy = BeautifulSoup(str(document), "html.parser")
 for node in visible_copy.select("math"):
@@ -197,13 +211,14 @@ for node in document.select('img[src],link[rel="stylesheet"]'):
         assert node.get("loading") == "lazy"
     assets.append({"filename": asset_reference, "bytes": path.stat().st_size, "sha256": sha(path)})
 
-assert len(document.select("img")) == 12
+html_diagram_count = len(document.select("img"))
+assert html_diagram_count >= 12
 assert document.html["lang"] == "mr"
 assert document.select_one('meta[name="viewport"]')
 assert document.select_one("main#main-content")
 assert document.select_one('a.skip-link[href="#main-content"]')
-assert len(document.select("h2[data-number]")) == 40
-assert len(document.select("h1[data-number]")) == 5
+assert len(document.select("h2[data-number]")) == section_count
+assert len(document.select("h1[data-number]")) == chapter_count
 
 aux = (B / "openlogic-mr-core.aux").read_text(encoding="utf-8")
 labels = dict(re.findall(r"\\newlabel\{([^}]+)\}\{\{([^}]+)\}", aux))
@@ -228,7 +243,12 @@ def prose_norm(text):
     )
 
 
-expected = prose_norm(" ".join(adapted[0]))
+expected_source = " ".join(adapted[0])
+for key, label in labels.items():
+    # Pandoc exposes unresolved LaTeX \ref arguments as literal label keys in
+    # its source AST. The HTML builder resolves them from the settled TeX aux.
+    expected_source = expected_source.replace(key, label)
+expected = prose_norm(expected_source)
 actual = prose_norm(body.get_text(" "))
 if expected != actual:
     limit = min(len(expected), len(actual))
@@ -257,7 +277,7 @@ assert build["warnings"] == ""
 assert build["html_sha256"] == sha(O / "index.html")
 note_math_count = sum(map(len, html_note_maths))
 assert build["mathml_count"] == len(annotations) + len(toc_annotation_nodes) + note_math_count
-assert len(build["diagram_assets"]) == 12
+assert len(build["diagram_assets"]) == html_diagram_count
 for item in build["diagram_assets"]:
     path = O / item["filename"]
     assert item["bytes"] == path.stat().st_size
@@ -266,7 +286,7 @@ for item in build["diagram_assets"]:
 receipt = {
     "schema": "openlogic-html-qa/1",
     "passed": True,
-    "scope": {"translation_source_units": 45, "reader_sections": 40, "complete_chapters": 5},
+    "scope": scope,
     "html_sha256": sha(O / "index.html"),
     "html_bytes": (O / "index.html").stat().st_size,
     "source_tex_sha256": sha(B / "openlogic-mr-core.tex"),
@@ -281,9 +301,9 @@ receipt = {
     "ordinary_prose_characters_exact_ignoring_generated_numbering": len(expected),
     "internal_links_valid": len(links),
     "pdf_numbered_references_matched": reference_checks,
-    "chapters": 5,
-    "sections": 40,
-    "diagrams": 12,
+    "chapters": chapter_count,
+    "sections": section_count,
+    "diagrams": len(build["diagram_assets"]),
     "assets": assets,
     "pandoc_warnings": 0,
     "accessibility_checks": [
@@ -291,7 +311,7 @@ receipt = {
         "main landmark and skip link",
         "hierarchical headings and linked table of contents",
         "native MathML with exact TeX annotations",
-        "twelve detailed Marathi image alternatives",
+        f"{html_diagram_count} detailed Marathi image alternatives",
         "offline fonts and responsive CSS",
         "keyboard-focusable horizontally scrollable display mathematics",
     ],

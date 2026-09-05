@@ -19,13 +19,17 @@ def mask_text(t):
 def maths(t):
     parts=re.findall(r'(?<!\\)\$(.*?)(?<!\\)\$|\\\[(.*?)\\\]|\\begin\{(?:align\*|multline\*)\}(.*?)\\end\{(?:align\*|multline\*)\}',t,re.S)
     return collections.Counter(re.sub(r'\s+','',mask_text(''.join(p))) for p in parts)
-def macros(t):return collections.Counter(re.findall(r'\\[A-Za-z@]+\*?',t))
+def macros(t):return collections.Counter(re.findall(r'(?<!\\)\\[A-Za-z@]+\*?',t))
 def tokens(t):return collections.Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',t))
 def identifiers(t):
     commands=r'(?:ol)?(?:label|ref|cref|Cref|eqref|pageref)|cite[A-Za-z]*|url|href|input|include|includegraphics|IfFileExists|olimport|oliflabeldef'
     keys=re.findall(r'\\('+commands+r')(\*?(?:\[[^\]]*\])*)\{([^{}]*)\}',t)
     keys+=re.findall(r'(\\olfileid)(\{[^{}]*\}\{[^{}]*\})(\{[^{}]*\})',t)
-    return collections.Counter(keys)
+    # Line-ending and indentation changes inside a command option do not alter
+    # the identifier, citation, or reference being preserved.
+    return collections.Counter(
+        tuple(re.sub(r'\s+', ' ', part).strip() for part in key) for key in keys
+    )
 def check(a,b):
     return {'formula_multiset_parity':maths(a)==maths(b),'macro_multiset_parity':macros(a)==macros(b),'token_identity_parity':tokens(a)==tokens(b),'identifier_and_ref_option_parity':identifiers(a)==identifiers(b),'no_replacement_character':'\ufffd' not in b,'no_placeholder':not bool(re.search(r'\b(TODO|TBD|PLACEHOLDER)\b',b)),'nfc':unicodedata.normalize('NFC',b)==b}
 
@@ -73,6 +77,10 @@ _DOCUMENTED_PROJECTIONS = {
     'OLP-0048': [
         ('\\equivrep{f}{}\\neq 0_\\Real',
          '\\equivrep{f}{}\\neq 0_\\Rat'),
+    ],
+    'OLP-0054': [
+        ('\\cardeq{B}{C}',
+         '\\cardeq{\\cardeq{A}{B}}{C}'),
     ],
 }
 

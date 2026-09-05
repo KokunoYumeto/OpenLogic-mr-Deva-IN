@@ -1,0 +1,68 @@
+{
+  "schema": "openlogic-html-browser-qa/1",
+  "reviewed_utc": "2026-09-05T17:31:10.482886Z",
+  "artifact": {
+    "filename": "index.html",
+    "bytes": 1296227,
+    "sha256": "b425b6aa49c95156d0bfb79447e12a82aa615b8056d1c833ed7a415afd1d2005",
+    "stylesheet_sha256": "c4d0ea2b2849c5e72ed30da130dfcfbf31c4185231b838cf2bca0bce1211821f"
+  },
+  "browser": "Chromium through Codex in-app browser",
+  "local_origin": "http://127.0.0.1:8765/",
+  "desktop": {
+    "viewport_css_pixels": [
+      1280,
+      720
+    ],
+    "document_client_width": 1265,
+    "document_scroll_width": 1265,
+    "body_client_width": 928,
+    "body_scroll_width": 928,
+    "page_level_horizontal_overflow": false
+  },
+  "mobile": {
+    "viewport_css_pixels": [
+      390,
+      844
+    ],
+    "measurement_method": "same-origin 390-by-844 iframe in the same Chromium engine; the temporary QA wrapper was removed after inspection",
+    "document_client_width": 375,
+    "document_scroll_width": 375,
+    "body_client_width": 375,
+    "body_scroll_width": 375,
+    "page_level_horizontal_overflow": false,
+    "focusable_display_math_regions": 112,
+    "wide_display_math_regions": 34,
+    "widest_region_client_width": 328,
+    "widest_region_scroll_width": 544,
+    "all_wide_regions_use_overflow_x_auto": true,
+    "horizontal_scroll_exercised": {
+      "region_index_zero_based": 94,
+      "scroll_left_before": 0,
+      "scroll_left_after": 216.44444274902344
+    }
+  },
+  "runtime_counts": {
+    "native_mathml": 2982,
+    "focusable_display_math_regions": 112,
+    "internal_fragment_links": 188,
+    "figure_assets": 13,
+    "desktop_figure_assets_loaded_successfully": 13,
+    "mobile_figure_assets_loaded_successfully": 13,
+    "duplicate_ids": 0,
+    "console_errors": 0
+  },
+  "visual_samples": [
+    "title and linked six-chapter contents",
+    "sets union, intersection and difference figures",
+    "relations graph and tree figures",
+    "functions, function kinds and composition figures",
+    "partial-function native MathML",
+    "square-root-two geometric proof figure",
+    "Hilbert's Hotel figure at desktop and mobile widths",
+    "editorial notes, references and final footnotes",
+    "widest mobile formula before and after horizontal scrolling"
+  ],
+  "result": "passed",
+  "notes": "Marathi shaping, native MathML, responsive figures, captions and local navigation rendered cleanly at both widths. Every lazy figure loaded, the document had no page-level horizontal overflow, and wide formula overflow remained inside keyboard-focusable labeled regions."
+}

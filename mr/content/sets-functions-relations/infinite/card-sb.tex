@@ -1,0 +1,106 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{infinite}{card-sb}
+
+\olsection{परिशिष्ट: श्रेडर--बर्नस्टाइनची सिद्धता}
+
+अनौपचारिक संचसिद्धान्ताचा निरोप घेण्यापूर्वी, आणखी एका अनौपचारिक
+(पण प्रगत!) सिद्धतेचा विचार करायचा आहे. ही श्रेडर--बर्नस्टाइनची सिद्धता
+आहे (\olref[sfr][siz][sb]{thm:schroder-bernstein}): जर
+$\cardle{A}{B}$ आणि $\cardle{B}{A}$, तर $\cardeq{A}{B}$; म्हणजे,
+!!{injection}s $f \colon A \to B$ आणि $g \colon B \to A$ दिली असता
+!!a{bijection} $h \colon A \to B$ असते.
+
+या प्रकरणात आपण डेडेकिंड यांच्या \emph{संवरणांच्या} संकल्पनेचा वापर
+केला. किंबहुना याच संकल्पनेचा उपयोग करून डेडेकिंड यांनी
+श्रेडर--बर्नस्टाइनची एक सुंदर सिद्धता दिली; ती येथे मांडू. ही सिद्धता
+\citet[pp.~157--8]{Potter2004} यांच्या विवेचनाला अगदी जवळून अनुसरते;
+तेथील मांडणी किंचित वेगळी पण मूलतः समान आहे. इंटरनेटवर थोडा शोध
+घेतल्यास असेही दिसेल की---$\sqrt{2}$ च्या अपरिमेयतेप्रमाणेच---या
+प्रमेयाच्या \emph{अनेक} रोचक आणि वेगवेगळ्या सिद्धता आहेत.
+
+\olref[sfr][infinite][dedekind]{Closure} मधील संकेतनासारखेच संकेतन
+वापरून, प्रत्येक संच $B$ आणि फलन~$f$ यांसाठी
+\[
+\Closureofunder{f}{B} = \bigcap \Setabs{X}{B \subseteq X
+\text{ आणि $X$ हा $f$-बंद आहे}}
+\]
+असे मानू. अशा रीतीने परिभाषित केलेला $\Closureofunder{f}{B}$ हा~$B$
+चा समावेश असलेला लघुतम $f$-बंद संच आहे; म्हणजे:
+
+\begin{lem}\ollabel{Closureprops}
+	कोणतेही फलन $f$ आणि कोणताही $B$ यांसाठी:
+	\begin{enumerate}
+		\item\ollabel{Closurehaselem} $B \subseteq \Closureofunder{f}{B}$; आणि
+		\item\ollabel{Closureclosed} $\Closureofunder{f}{B}$ हा $f$-बंद आहे; आणि
+		\item\ollabel{Closuresmallest} $X$ हा $f$-बंद असून $B
+		\subseteq X$ असेल, तर $\Closureofunder{f}{B} \subseteq X$.
+	\end{enumerate}
+\end{lem}
+
+\begin{proof}
+\olref[sfr][infinite][dedekind]{closureproperties} मधील सिद्धतेप्रमाणेच.
+\end{proof}
+
+श्रेडर--बर्नस्टाइनपर्यंत पोहोचण्यासाठी आपल्याला आणखी एका तथ्याची गरज आहे:
+
+\begin{prop}\ollabel{sbhelper}
+जर $A \subseteq B \subseteq C$ आणि $A \approx C$, तर $\cardeq{B}{C}$.
+\end{prop}
+%READERNOTE{MRINF-003: गोठवलेल्या इंग्रजी निष्कर्षात तुल्यबलता-उक्तीच पहिला संच म्हणून बसवली आहे. गृहीतके आणि पुढील उपयोग यांवरून B आणि C तुल्यबल आहेत हाच अनिवार्य निष्कर्ष मराठीत दिला आहे.}
+
+\begin{proof}
+!!a{bijection}  $f \colon C \to A$ दिले असता, $F =
+\Closureofunder{f}{C \setminus B}$ असे मानू आणि प्रांत $C$ असलेले फलन
+$g$ पुढीलप्रमाणे परिभाषित करू:
+\[
+	g(x) =
+	\begin{cases}
+			f(x) &\text{जर $x \in F$}\\
+			x & \text{अन्यथा}
+	\end{cases}
+\]
+$g$ हे $C \to B$ असे !!a{bijection} आहे, हे आपण दाखवू. त्यावरून
+$\comp{f^{-1}}{g} \colon A \to B$ हे !!a{bijection} आहे आणि सिद्धता
+पूर्ण होते.
+
+प्रथम आपला दावा असा आहे की $x \in F$ पण $y\notin F$ असेल, तर $g(x) \neq
+g(y)$. विरोधाभासाने सिद्ध करण्यासाठी तसे नाही असे समजा; मग $y = g(y) =
+g(x) = f(x)$. $x \in F$ आहे आणि \olref{Closureprops} नुसार $F$ हा
+$f$-बंद आहे, म्हणून $y = f(x) \in F$; हा विरोधाभास आहे.
+
+आता $g(x) = g(y)$ असे समजा. वरील दाव्यानुसार, $x \in F$ तेव्हा आणि
+केवळ तेव्हाच, जेव्हा $y \in F$. जर $x, y \in F$, तर $f(x) = g (x) =
+g(y) = f(y)$; आणि $f$ हे !!a{bijection} असल्यामुळे $x = y$. जर
+$x, y \notin F$, तर $x = g(x) = g(y) = y$. म्हणून $g$ हे
+!!a{injection} आहे.
+
+$\ran{g} = B$ हे दाखवणे उरते. म्हणून $x \in B \subseteq C$ स्थिर करू.
+जर $x \notin F$, तर $g(x) = x$. जर $x \in F$, तर कोणत्यातरी
+$y \in F$ साठी $x = f(y)$; कारण तसे नसते, तर $F \setminus \{x\}$ हा
+$f$-बंद संच असता आणि त्यात $C\setminus B$ चा समावेश असता; पण
+\olref{Closureprops} नुसार हे अशक्य आहे. आता $g(y) = f(y) = x$.
+\end{proof}
+
+शेवटी, मुख्य निष्कर्षाची सिद्धता पुढीलप्रमाणे. फलन $h$ आणि संच $D$ दिले
+असता आपण $\funimage{h}{D} = \Setabs{h(x)}{x \in D}$ अशी व्याख्या करतो,
+हे आठवा.
+
+\begin{proof}[श्रेडर--बर्नस्टाइनची सिद्धता] $f \colon A \to B$
+आणि $g \colon B \to A$ ही !!{injection}s असू द्या.
+$\funimage{f}{A} \subseteq B$ असल्यामुळे
+$\funimage{g}{\funimage{f}{A}} \subseteq g[B] \subseteq A$.
+तसेच, $\comp{f}{g} \colon A \to
+\funimage{g}{\funimage{f}{A}}$ हे !!{injection} आहे, कारण $g$ आणि
+$f$ दोन्ही तशी आहेत; आणि त्याचा सहप्रांत ज्या रीतीने परिभाषित केला आहे,
+त्यावरून $\comp{f}{g}$ हे खरे तर !!a{bijection} आहे. म्हणून
+$\cardeq{\funimage{g}{\funimage{f}{A}}}{A}$; आणि त्यामुळे
+\olref{sbhelper} नुसार $h \colon A \to \funimage{g}{B}$ असे
+!!a{bijection} आहे. शिवाय, $g^{-1}$ हे
+$\funimage{g}{B} \to B$ असे !!a{bijection} आहे. म्हणून
+$\comp{h}{g^{-1}} \colon A \to B$ हे !!a{bijection} आहे.
+\end{proof}
+
+\end{document}

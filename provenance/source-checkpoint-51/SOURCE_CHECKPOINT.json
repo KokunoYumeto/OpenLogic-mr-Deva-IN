@@ -1,0 +1,727 @@
+{
+  "schema": "openlogic-source-checkpoint/1",
+  "checkpoint_id": "mr-Deva-IN-source-51-20260905",
+  "parent_commit": "cd6a7836b66ef120c71d56442da9291e3ca70aef",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": {
+    "translation_source_units": 51,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0054",
+    "aligned_translated_segments": 617,
+    "reader_sections": 45,
+    "complete_chapters": 6,
+    "remaining_source_units": 671,
+    "complete_edition": false
+  },
+  "translation_files": [
+    {
+      "unit_id": "OLP-0004",
+      "path": "mr/content/sets-functions-relations/sets/sets.tex",
+      "bytes": 361,
+      "sha256": "21784c3a578849ff1a59ceba2e9a264c956947c2b829c3cd55d07ba39b768bfa"
+    },
+    {
+      "unit_id": "OLP-0005",
+      "path": "mr/content/sets-functions-relations/sets/basics.tex",
+      "bytes": 8205,
+      "sha256": "cc9e7f18fe9b56a3213c5356d21a861038bd1fd965026d136acc6c619b020a3f"
+    },
+    {
+      "unit_id": "OLP-0006",
+      "path": "mr/content/sets-functions-relations/sets/subsets.tex",
+      "bytes": 6958,
+      "sha256": "17d44644566ff3fa483a08d8ec126d8bc882be80ab18402276c138daa06ac439"
+    },
+    {
+      "unit_id": "OLP-0007",
+      "path": "mr/content/sets-functions-relations/sets/important-sets.tex",
+      "bytes": 4918,
+      "sha256": "2b2826771aee726d61b447519dafa3bc86267ae5d31e701b2fb570bd25e471b6"
+    },
+    {
+      "unit_id": "OLP-0008",
+      "path": "mr/content/sets-functions-relations/sets/unions-and-intersections.tex",
+      "bytes": 10460,
+      "sha256": "3b9cdaa40936cf4bbaad21f7ac3207b87734fa413fdc5a60d150086753827e1c"
+    },
+    {
+      "unit_id": "OLP-0009",
+      "path": "mr/content/sets-functions-relations/sets/pairs-and-products.tex",
+      "bytes": 8322,
+      "sha256": "c0f55492bdffe4c5fd56d7b5fd3c7705067f3b5fea94ef2ef26eef6f9f838ab4"
+    },
+    {
+      "unit_id": "OLP-0010",
+      "path": "mr/content/sets-functions-relations/sets/russells-paradox.tex",
+      "bytes": 8228,
+      "sha256": "1a90616118306c08155762475539a3eb184ac64429242d41cbb25083b666c9ab"
+    },
+    {
+      "unit_id": "OLP-0011",
+      "path": "mr/content/sets-functions-relations/relations/relations-complete.tex",
+      "bytes": 416,
+      "sha256": "b046b80ac5e8d80f4592ae5b542423926a24d6aa9dfc80654f32667155937771"
+    },
+    {
+      "unit_id": "OLP-0012",
+      "path": "mr/content/sets-functions-relations/relations/relations-as-sets.tex",
+      "bytes": 9853,
+      "sha256": "79011c7103c94d7589e71db510f7fc66d0e20ce60a10e5015ea78a8e4a5d182b"
+    },
+    {
+      "unit_id": "OLP-0013",
+      "path": "mr/content/sets-functions-relations/relations/reflections.tex",
+      "bytes": 8190,
+      "sha256": "71df76f45bb3914cd3ab727b23b16906877bdbd242626163969313d6ca88fc27"
+    },
+    {
+      "unit_id": "OLP-0014",
+      "path": "mr/content/sets-functions-relations/relations/special-properties.tex",
+      "bytes": 5924,
+      "sha256": "84cac360ba896f06ed6579fad40e396d79999f09f78970a4b217e7b3785ed13a"
+    },
+    {
+      "unit_id": "OLP-0015",
+      "path": "mr/content/sets-functions-relations/relations/equivalence-relations.tex",
+      "bytes": 6261,
+      "sha256": "c6022f25bc5fdc6fa07aeff03fe8d53f822b67a147d9dc63537819c68f843f9f"
+    },
+    {
+      "unit_id": "OLP-0016",
+      "path": "mr/content/sets-functions-relations/relations/orders.tex",
+      "bytes": 11424,
+      "sha256": "c609fb91d21b9873cd04725fb20cd8ba18b3ced66b9e3026af24dd6f1863ea36"
+    },
+    {
+      "unit_id": "OLP-0017",
+      "path": "mr/content/sets-functions-relations/relations/graphs.tex",
+      "bytes": 5045,
+      "sha256": "f74cf58294abdca142b56bf8d1889c845426261fb983057323e10360c16c2537"
+    },
+    {
+      "unit_id": "OLP-0018",
+      "path": "mr/content/sets-functions-relations/relations/trees.tex",
+      "bytes": 10061,
+      "sha256": "0fc33d52ebb3680000d5d917d5fc11ffb4f2db585fb20647768da815b2b10c22"
+    },
+    {
+      "unit_id": "OLP-0019",
+      "path": "mr/content/sets-functions-relations/relations/operations.tex",
+      "bytes": 3983,
+      "sha256": "cd39ee393a24d7005bbb18ea0ea2b6d6d5751e791462412a13a234cb33d28ba4"
+    },
+    {
+      "unit_id": "OLP-0020",
+      "path": "mr/content/sets-functions-relations/functions/functions.tex",
+      "bytes": 402,
+      "sha256": "0df2102f15775d3bc62db5d05efea78f6e2f77d2e734f7d85a29ca02de88075b"
+    },
+    {
+      "unit_id": "OLP-0021",
+      "path": "mr/content/sets-functions-relations/functions/function-basics.tex",
+      "bytes": 12736,
+      "sha256": "c565a8b3f0fe6ee11f96d4e75a85dbb68a0af19c40e36abddeb192820c3f5b58"
+    },
+    {
+      "unit_id": "OLP-0022",
+      "path": "mr/content/sets-functions-relations/functions/function-kinds.tex",
+      "bytes": 6721,
+      "sha256": "64476fe81c8f88f7b271faca2f1ba66db83e180a148c31d93df96cb4c60ecf0f"
+    },
+    {
+      "unit_id": "OLP-0023",
+      "path": "mr/content/sets-functions-relations/functions/functions-relations.tex",
+      "bytes": 8665,
+      "sha256": "310740da7515c2eb429b3a7240bd0ec8750b07a0e7518d7d442c8d7676b03c8c"
+    },
+    {
+      "unit_id": "OLP-0024",
+      "path": "mr/content/sets-functions-relations/functions/inverses.tex",
+      "bytes": 13418,
+      "sha256": "a8e61fab02682fad503a3a228e22bf456f4e3f99ea222999d476ac3cd33454a7"
+    },
+    {
+      "unit_id": "OLP-0025",
+      "path": "mr/content/sets-functions-relations/functions/composition.tex",
+      "bytes": 4160,
+      "sha256": "10d0d4dca6c74c38a25232501999a64f5f3f8d5f2511f4f5fc116eb5aa30a337"
+    },
+    {
+      "unit_id": "OLP-0026",
+      "path": "mr/content/sets-functions-relations/functions/partial-functions.tex",
+      "bytes": 4978,
+      "sha256": "d0c4479b94016825ed5e76028878dfdfa53b598801b0b7123240410d97048026"
+    },
+    {
+      "unit_id": "OLP-0027",
+      "path": "mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex",
+      "bytes": 2486,
+      "sha256": "aa9d482149441ac42305ae1b4de1a65854019e0e15735f77e65a0864593585c4"
+    },
+    {
+      "unit_id": "OLP-0028",
+      "path": "mr/content/sets-functions-relations/size-of-sets/introduction.tex",
+      "bytes": 2379,
+      "sha256": "827d7fc9a9f834cc4b7e0c46578b06d59fa0e5ed53a1c2028ba93a3a90b1b827"
+    },
+    {
+      "unit_id": "OLP-0029",
+      "path": "mr/content/sets-functions-relations/size-of-sets/enumerability.tex",
+      "bytes": 23881,
+      "sha256": "ae0660be31b32a915f2ce98618a49dd79f6780d89af632430cce224e4a7eca28"
+    },
+    {
+      "unit_id": "OLP-0030",
+      "path": "mr/content/sets-functions-relations/size-of-sets/zig-zag.tex",
+      "bytes": 6645,
+      "sha256": "31aa9da1c54210a75a88d57c21dd195c1680780817ae589cb79a0ef3ef0465c7"
+    },
+    {
+      "unit_id": "OLP-0031",
+      "path": "mr/content/sets-functions-relations/size-of-sets/pairing.tex",
+      "bytes": 9683,
+      "sha256": "d6b49a8d690c26368bb8858a2dea07f9b29cdbdaf4a2a942d5ae0b47a652bf98"
+    },
+    {
+      "unit_id": "OLP-0032",
+      "path": "mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex",
+      "bytes": 9571,
+      "sha256": "85c21ae38ea5c88e81b57aa0f6e8e6f8ffd007df768ddaa32fbf984c706ff44b"
+    },
+    {
+      "unit_id": "OLP-0033",
+      "path": "mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex",
+      "bytes": 17262,
+      "sha256": "a675f557f99fd70baa66f1c7954230cd987e6bb5a914aacf096d734ff7b63cdf"
+    },
+    {
+      "unit_id": "OLP-0034",
+      "path": "mr/content/sets-functions-relations/size-of-sets/reduction.tex",
+      "bytes": 12029,
+      "sha256": "8cf90f2eef20f7555a392cd8c270d55a54d4804b4f343471ec4cb8dcc3cc45c1"
+    },
+    {
+      "unit_id": "OLP-0035",
+      "path": "mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex",
+      "bytes": 8980,
+      "sha256": "72ddf6826f31f582b29b4e05f5fdc70d56b3d92cd004b6e788f514524ce7b040"
+    },
+    {
+      "unit_id": "OLP-0036",
+      "path": "mr/content/sets-functions-relations/size-of-sets/comparing-size.tex",
+      "bytes": 13609,
+      "sha256": "daf301e108adf21bcc4b4d90b7f4dd77d550bdbc494656605d9f9f96029b6c71"
+    },
+    {
+      "unit_id": "OLP-0037",
+      "path": "mr/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex",
+      "bytes": 3695,
+      "sha256": "732dfacfd9a78c49cb4dbdbc606032c567d8f63c43dd3c036dc8ca74054381cc"
+    },
+    {
+      "unit_id": "OLP-0038",
+      "path": "mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex",
+      "bytes": 8969,
+      "sha256": "7abf6ac32f053dcc857bfba066d00cc42e386e8c3fe6824e4611263e19ff6984"
+    },
+    {
+      "unit_id": "OLP-0039",
+      "path": "mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "bytes": 13009,
+      "sha256": "627d280fd57bdf926d0cff74db0399c872c72dc87a125fdb438f53aca9ff2d0f"
+    },
+    {
+      "unit_id": "OLP-0040",
+      "path": "mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex",
+      "bytes": 11169,
+      "sha256": "384bb2b6e916217d585ee77a3c73ece1a4dadaf218a74d9ef2d0e66faa848d44"
+    },
+    {
+      "unit_id": "OLP-0041",
+      "path": "mr/content/sets-functions-relations/arithmetization/arithmetization.tex",
+      "bytes": 755,
+      "sha256": "3aee51e027b6cf9f7d6f318d34b5fb092c9ab086cf8583bf6e81e43732a64034"
+    },
+    {
+      "unit_id": "OLP-0042",
+      "path": "mr/content/sets-functions-relations/arithmetization/integers.tex",
+      "bytes": 9827,
+      "sha256": "6e7942cd702965eef4b1f685717897e597ce2cebbd1445e7f58310b0e8bd8e38"
+    },
+    {
+      "unit_id": "OLP-0043",
+      "path": "mr/content/sets-functions-relations/arithmetization/rationals.tex",
+      "bytes": 6639,
+      "sha256": "4ccbff9aa4d27276fc582ad5e66b1ed7d103c6bbc9e4aff96a6266d29f6768be"
+    },
+    {
+      "unit_id": "OLP-0044",
+      "path": "mr/content/sets-functions-relations/arithmetization/reals.tex",
+      "bytes": 10607,
+      "sha256": "57d749ed9ada1a9bffba484ca8d9227ceaaeb05e52da6f58fe790883362565da"
+    },
+    {
+      "unit_id": "OLP-0045",
+      "path": "mr/content/sets-functions-relations/arithmetization/cuts.tex",
+      "bytes": 12294,
+      "sha256": "66cbf58423d253f96089b4d3c34cf648a30e43fc14d19cd26f993e67c1381160"
+    },
+    {
+      "unit_id": "OLP-0046",
+      "path": "mr/content/sets-functions-relations/arithmetization/reflections.tex",
+      "bytes": 12279,
+      "sha256": "e0de4ac678b4e2e3391bcaa96c0e8aab5ce1fbd84620a8af0fea0d7dfe57b746"
+    },
+    {
+      "unit_id": "OLP-0047",
+      "path": "mr/content/sets-functions-relations/arithmetization/checking-details.tex",
+      "bytes": 15478,
+      "sha256": "e52823e92702f904bba6be3aaddf7e3bc8c3de4cd9afc137abfc1359947571c0"
+    },
+    {
+      "unit_id": "OLP-0048",
+      "path": "mr/content/sets-functions-relations/arithmetization/cauchy.tex",
+      "bytes": 23798,
+      "sha256": "cb8c22d068cb3af77e72fccca58f6373e12ed378df88ba35eff628f9730d87fb"
+    },
+    {
+      "unit_id": "OLP-0049",
+      "path": "mr/content/sets-functions-relations/infinite/infinite.tex",
+      "bytes": 561,
+      "sha256": "1394b896c1cbaa9e71b493e0f0f41dec78d964bf0220b9acf14dba80718269df"
+    },
+    {
+      "unit_id": "OLP-0050",
+      "path": "mr/content/sets-functions-relations/infinite/hilberts-hotel.tex",
+      "bytes": 4795,
+      "sha256": "234776763623753925d5d10437b03a481def0671d10fe8a9cc34a5ac69cfec80"
+    },
+    {
+      "unit_id": "OLP-0051",
+      "path": "mr/content/sets-functions-relations/infinite/dedekind-algebra.tex",
+      "bytes": 8781,
+      "sha256": "7bd6671dc46e2000ede225b5b704269baebac8af18c1cd756fb5151aa5e30c6f"
+    },
+    {
+      "unit_id": "OLP-0052",
+      "path": "mr/content/sets-functions-relations/infinite/dedekind-induction.tex",
+      "bytes": 6280,
+      "sha256": "f4ea5d7b31a3aaa5d45ad2f6962023ea6fcc9aa731d0d0b129036b800f419e57"
+    },
+    {
+      "unit_id": "OLP-0053",
+      "path": "mr/content/sets-functions-relations/infinite/dedekinds-proof.tex",
+      "bytes": 13407,
+      "sha256": "86febf6e8cd8ea0691a16653b3de3aa69aeb6897ce0f7123691b3a9c452bb2fd"
+    },
+    {
+      "unit_id": "OLP-0054",
+      "path": "mr/content/sets-functions-relations/infinite/card-sb.tex",
+      "bytes": 7569,
+      "sha256": "241b515c789b9bff1cd4af17d1b5f677c7a624a0af098e967735ee134c5db3b6"
+    }
+  ],
+  "evidence_files": [
+    {
+      "path": "CANON_PASSAGES.jsonl",
+      "bytes": 49136,
+      "sha256": "e1ad706e69ae78d413a0a1398a5c2dfcac43632711a1ab10205120115428364c"
+    },
+    {
+      "path": "CANON_SOURCES.jsonl",
+      "bytes": 26575,
+      "sha256": "8d94bcb5461e5afb0f6a9374895dbf803bd42de43e902fd384aa537634d79665"
+    },
+    {
+      "path": "CORE_INPUTS.json",
+      "bytes": 12215,
+      "sha256": "8b51106330c41f8a9b5f37a44da2ce2ec1984340ad09eca6bd6ebe14f35b5aef"
+    },
+    {
+      "path": "CORE_TEX_BUILD_1.json",
+      "bytes": 752,
+      "sha256": "943441131eca29b7a40dbc763c412be4d6b45ec07650596b13c326d2d263d557"
+    },
+    {
+      "path": "CORE_TEX_BUILD_2.json",
+      "bytes": 752,
+      "sha256": "e86f1015954236327c97437ad6acc12dacd4028efed98125345ab5b04b4308e2"
+    },
+    {
+      "path": "CORE_TEX_SUCCESS_RECEIPT.json",
+      "bytes": 752,
+      "sha256": "e86f1015954236327c97437ad6acc12dacd4028efed98125345ab5b04b4308e2"
+    },
+    {
+      "path": "EXPERT_REVIEW_LEDGER-CHECKPOINT.json",
+      "bytes": 2301,
+      "sha256": "2cf9f888de46ec23c11d826b1e29d02169474639dde900a7a4cdf72a7d90e078"
+    },
+    {
+      "path": "EXPERT_REVIEW_OCCURRENCES-CHECKPOINT.json",
+      "bytes": 1355,
+      "sha256": "52968d606d1f90f21f73df0a32b8ea8e2a244b46e760df9afe283621506c9c10"
+    },
+    {
+      "path": "HTML_BROWSER_QA-CORE-51.json",
+      "bytes": 2554,
+      "sha256": "2b04f1ac081a27c1d1f2c083b3266f474c19dca40c3b1be98617e263f12b9f4a"
+    },
+    {
+      "path": "HTML_BUILD-CORE-51.json",
+      "bytes": 8550,
+      "sha256": "065a0f6e8e059b0e1e7d3feecde4cba64d936c0ecd4b68035177a135d63efdf0"
+    },
+    {
+      "path": "HTML_QA-CORE-51.json",
+      "bytes": 8663,
+      "sha256": "599dcdff71497eec58b396e64cd35ae225d8fc96edda02eb60a7f627078b0c53"
+    },
+    {
+      "path": "PDF_QA-CORE-51.json",
+      "bytes": 3839,
+      "sha256": "69ea8b5d2675d5a840a55ad97c9011241bbf7988bf43d0b022d44bf7f5109e88"
+    },
+    {
+      "path": "PROVENANCE_REPAIR-MR-P034-20260904.json",
+      "bytes": 2537,
+      "sha256": "5d7fd824fbc7ec4002ba5c88bd048c84438367c5461e0c93afd21b1885ad5b91"
+    },
+    {
+      "path": "QA-B003.json",
+      "bytes": 3795,
+      "sha256": "8dbe25bc4a2e9ebc348b434a39ff2f2c8f6b5a502ea9275358c9f3f4562283f5"
+    },
+    {
+      "path": "QA-B004.json",
+      "bytes": 28883,
+      "sha256": "b889f74a3f568af32f5b2c193227896c71e68d0233dee5f2d3d5f41e477ddfb7"
+    },
+    {
+      "path": "QA-B005.json",
+      "bytes": 7387,
+      "sha256": "a575b23a87d6a723aca15e0bd12d64f8f5fe00229003ff97f009ee607559ed1a"
+    },
+    {
+      "path": "REPRODUCIBILITY-CORE-51.json",
+      "bytes": 1159,
+      "sha256": "723504b11415ce86bc200ba571d884166b98015b73a21167d5dcdab0d2c77705"
+    },
+    {
+      "path": "SEGMENT_CANON_USE.jsonl",
+      "bytes": 953398,
+      "sha256": "0a0ac713b878b8be2a6ecd833182a4a83052075a4718bc6bda337c462b382778"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-B003.json",
+      "bytes": 5019,
+      "sha256": "e1f10dc16532b719fd78953e8dfb5ee13b01cd6c8eb512781b06c9da7f52b59b"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-B004.json",
+      "bytes": 3682,
+      "sha256": "868fe3671e10d0718a292a458bd407ca1e06f51ec29b1d6f6678d2483a509396"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0030.json",
+      "bytes": 1710,
+      "sha256": "a274d255cf0612d9fe05bfb842265e019b282c387a4b6b1bdd19f5ec11fd4600"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0031.json",
+      "bytes": 2365,
+      "sha256": "f0eec15c6b5ab931b2a5cb79e1bb45d9fda7096447690abb7902822152e2d9ea"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0032.json",
+      "bytes": 2387,
+      "sha256": "e186e24ff4fbf20677acae70ea6c9fd17848b84a3fef3f4850c1bff479b0836c"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0033.json",
+      "bytes": 2174,
+      "sha256": "a28a484eddce2eba02a7b5daef18f5d29426d6b8fd23c4e05d5da21ecd6e9ce3"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0034.json",
+      "bytes": 2514,
+      "sha256": "c23647e33e5bd3a994e0a2cfadb75a5e9f2b014a89ee083c18d321247c569d7e"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0035.json",
+      "bytes": 2429,
+      "sha256": "ec1b6de0a76587cc864c2cbdbfc24423bc875b87495ba631ec04341341b3d4b8"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0036.json",
+      "bytes": 2461,
+      "sha256": "fae914dd92f316abae3cd891bdf925f4f265e7010b1be86628cdd24773c830ae"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0037.json",
+      "bytes": 1833,
+      "sha256": "079fbda0176ef4392a0e61a88a6a7e531e367d89fbf62c0d068e9dd63956a03c"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0038.json",
+      "bytes": 2238,
+      "sha256": "0e93bc4dbc274faf2327e6dc19cc38adecef0067e5db339679cfa49a36e35bf7"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0039.json",
+      "bytes": 2315,
+      "sha256": "a8b03fe224952537083b86490c28f3201003ee8263018887931371023bca0469"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0040.json",
+      "bytes": 2375,
+      "sha256": "b0bae63618fb35cd655d82483630ffefc2f4f7aacb2413a36ce2db4231005bf5"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0041.json",
+      "bytes": 1279,
+      "sha256": "f9f4c8ffbd8a42e20ecaaf2063f20566f9b1f4054ee54469d03a1db0a6b5030d"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0042.json",
+      "bytes": 3421,
+      "sha256": "a3ab57bcdf1c98769bd368e6d068c2670608933105e671ad0ce8c5a8b06600d4"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0043.json",
+      "bytes": 2554,
+      "sha256": "f243411fcf483ec6dad4073c7db029b303dfd68002cc699fe2d79c6df67be065"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0044.json",
+      "bytes": 2928,
+      "sha256": "de8e6df9877e14bd339f746deab5fa38e28f6d7db0b622a01c3c720605488781"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0045.json",
+      "bytes": 2949,
+      "sha256": "20c7f8c0facc70ac37bd0eb1fa3945f15fc0843660e2a63d7c032076b13022ae"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0046.json",
+      "bytes": 2487,
+      "sha256": "6117df6f6509c591c4e1192ea039c1145392230eddc954bec99aa610d7c85e1e"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0047.json",
+      "bytes": 3399,
+      "sha256": "6c336fc6c3600208414e767e5879ee4a6983c8ca6341150c14e9c6c789578657"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0048.json",
+      "bytes": 4062,
+      "sha256": "aa6b7c15393b66b9705561c0e824ad124b132d463f6d05d49c5b9bcf16ee3f63"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0049.json",
+      "bytes": 836,
+      "sha256": "6e39956ce4f4408e85dabc870c3dae221b1640ae8e1e5171ebd2d0d5d6b3b600"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0050.json",
+      "bytes": 1854,
+      "sha256": "65f82b8f9515b3b4d1a52a6599e86a799428be1056748d227a9e8936eacf2c9a"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0051.json",
+      "bytes": 2721,
+      "sha256": "ca96c70c115e85689d4d0c0c8e9660cdbd03b483f4a36459a21511834410d6ab"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0052.json",
+      "bytes": 2195,
+      "sha256": "40da87a0a1ff774ca8390532dadd248cc228fd47daa712162f40010a14436807"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0053.json",
+      "bytes": 2389,
+      "sha256": "b96d75345d33053888993b4ebfa5748e5ddc4bacf801c9a460c2bbc5f02eb8ce"
+    },
+    {
+      "path": "SEMANTIC_REVIEW-OLP0054.json",
+      "bytes": 2831,
+      "sha256": "bc350c39a40aa346dd50724011f85f998bb826471d60ae3451637cbf5c537592"
+    },
+    {
+      "path": "SOURCE_AUDIT_APPLIED-OLSIZ-20260904.json",
+      "bytes": 2526,
+      "sha256": "577a48d9a9aa67fc6dab5ca69c6847a4dfccc64da67f27101863d7f6f84489e9"
+    },
+    {
+      "path": "SOURCE_AUDIT_RETRACTION-OLSIZ-011.json",
+      "bytes": 891,
+      "sha256": "eb5f664916c23d39592ff0891593101399b55ac2dac3a6184596ccc0a3558487"
+    },
+    {
+      "path": "SOURCE_AUDIT_RETRACTIONS.json",
+      "bytes": 1820,
+      "sha256": "54b4c2c5627e493cceeb4a82a3dbc28a826e27ddaa0a56699ab7ff8ea0688ac6"
+    },
+    {
+      "path": "SOURCE_ISSUES-B003.json",
+      "bytes": 4458,
+      "sha256": "c6389b6ac88b897ebf2e0aaa202c4e72e89dd279f7432e1c9b3397cea84610c9"
+    },
+    {
+      "path": "SOURCE_ISSUES-B004.json",
+      "bytes": 35016,
+      "sha256": "035af4ed2275ac7a5e730b57b6f31bab7a6f7ccbc778d64ac200fe370eb40683"
+    },
+    {
+      "path": "SOURCE_ISSUES-B005.json",
+      "bytes": 4133,
+      "sha256": "3b39322738ea4892c55d589f65ae30cb04b1642ba70d4eb54da0cb758542ce27"
+    },
+    {
+      "path": "SOURCE_MANIFEST.jsonl",
+      "bytes": 355745,
+      "sha256": "f243d399ca5d8a572a58de7e9b0ad0d7243283a8f92983b1058bfe01ade39c3b"
+    },
+    {
+      "path": "TERM_DECISIONS.jsonl",
+      "bytes": 63305,
+      "sha256": "e32083bee7410c1968b237caa1ed459519d51c3b85c12e12b47eb4d5b2bcfed3"
+    },
+    {
+      "path": "TRANSLATION_CHECKPOINT-B003.json",
+      "bytes": 4078,
+      "sha256": "54d8cac6d50b5bba9a68bf5ce1dcc7b6871a5705c557501f48bbc0f9ee6ff2cb"
+    },
+    {
+      "path": "TRANSLATION_CHECKPOINT-B004.json",
+      "bytes": 30702,
+      "sha256": "c16a415fe332ec2f35ff2a1865a94a8e55b424339afd5a7dfcf50200c6f130eb"
+    },
+    {
+      "path": "TRANSLATION_CHECKPOINT-B005.json",
+      "bytes": 7424,
+      "sha256": "1862e3616ecac2a8decf53e37de0a9fd3bc7632857354bc5db021cd83a2322e8"
+    },
+    {
+      "path": "TRANSLATION_DECISIONS-CHECKPOINT-51.json",
+      "bytes": 3174,
+      "sha256": "8508b56350972855c1caa1ba33d3c5fcc875ba52c56b2c9bc31036309ec70ba7"
+    },
+    {
+      "path": "TRANSLATION_DECISION_QA-CORE-51.json",
+      "bytes": 3398,
+      "sha256": "f545d2828f01778ae5f016dc16a11e0ecc3bf79b1fbf2c4e081918949807104a"
+    }
+  ],
+  "linked_translation_decision_bundle": [
+    {
+      "path": "provenance/translation-decisions/START_HERE.md",
+      "bytes": 1721,
+      "sha256": "e1bb4e51429e950dba8d2deceaa12e9fa3d857e89d0bcced000057889bcf6d1a"
+    },
+    {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISIONS_FULL.md",
+      "bytes": 1295932,
+      "sha256": "2ffbc2cd2452455afd502c350bf92a9659a64ea9232014b10e48d2dcf07797ab"
+    },
+    {
+      "path": "provenance/translation-decisions/PRIORITY_REVIEW.md",
+      "bytes": 70716,
+      "sha256": "37e1a98439a9387e206dd95839cd3a7fc3c4a760898655d32adaf743ff709fad"
+    },
+    {
+      "path": "provenance/translation-decisions/DECISION_OCCURRENCES.csv",
+      "bytes": 9696525,
+      "sha256": "2158d153c68b8911450ad60b2a0f39df802d4051aefb5016a7e6708b25718db6"
+    },
+    {
+      "path": "provenance/translation-decisions/DECISIONS.json",
+      "bytes": 18093955,
+      "sha256": "02c1f98c1fc20f5bf0163873646463eccac32300438d2bf2e1fc1c2283508644"
+    },
+    {
+      "path": "provenance/translation-decisions/translation-decision.schema.json",
+      "bytes": 10787,
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
+    },
+    {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "bytes": 3398,
+      "sha256": "f545d2828f01778ae5f016dc16a11e0ecc3bf79b1fbf2c4e081918949807104a"
+    }
+  ],
+  "evidence_manifest_excludes": [
+    "SOURCE_CHECKPOINT.json (self-referential receipt)",
+    "README.md (human-readable guide)"
+  ],
+  "canon": {
+    "sources": 47,
+    "passages": 64,
+    "term_decisions": 107,
+    "all_segments_have_resolved_canon_passages": true,
+    "segments_original_only": 96,
+    "segments_observation_only": 158,
+    "segments_mixed": 363,
+    "limitation": "Short web observations are hash-pinned research notes, not hashes of origin HTML. Restricted-reference originals and page images are not redistributed. OpenLogic governs mathematical definitions and notation."
+  },
+  "qa": {
+    "unit_segment_formula_macro_token_identifier_replay": "passed",
+    "owner_state_validator": "passed",
+    "expert_review_ledger_validator": "passed",
+    "canonical_decision_schema_validator": "passed",
+    "expert_review_ledger": {
+      "records": 144,
+      "occurrences": 3978,
+      "markdown_sha256": "37e61a40a4b6a7498b7aea58a0aa3a60b0a4b7cf706213eb4f379b23d5b7c86d",
+      "jsonl_sha256": "35fc2c45bd339b36c58ea01fd2a2863b8280fa40eec71bb4269017126de70f92"
+    },
+    "translation_decision_bundle": {
+      "applied_decisions": 140,
+      "occurrences": 3978,
+      "schema_errors": 0,
+      "schema_sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "decisions_json_sha256": "02c1f98c1fc20f5bf0163873646463eccac32300438d2bf2e1fc1c2283508644"
+    },
+    "reader": {
+      "pdf": {
+        "pages": 73,
+        "bytes": 394784,
+        "sha256": "583182e8b818a0ef37bd4bf5a99ed1bb9991a739c2f51309a72a23e402936791"
+      },
+      "two_clean_builds_byte_identical": true,
+      "all_pdf_pages_visually_reviewed": true,
+      "html": {
+        "bytes": 1296227,
+        "sha256": "b425b6aa49c95156d0bfb79447e12a82aa615b8056d1c833ed7a415afd1d2005"
+      },
+      "native_mathml": 2982,
+      "figures_with_marathi_alternatives": 13,
+      "internal_links_valid": 188,
+      "desktop_and_mobile_browser_layout_review": "passed",
+      "status": "release candidate"
+    },
+    "applied_shared_source_corrections": [
+      "OLSIZ-001",
+      "OLSIZ-002",
+      "OLSIZ-003",
+      "OLSIZ-004",
+      "OLSIZ-005",
+      "OLSIZ-006",
+      "OLSIZ-007",
+      "OLSIZ-008",
+      "OLSIZ-009",
+      "OLSIZ-010",
+      "MRINF-001",
+      "MRINF-003"
+    ],
+    "documented_source_observations": [
+      "MRINF-002"
+    ],
+    "retracted_false_positive": {
+      "identifier": "OLSIZ-011",
+      "status": "not applied"
+    },
+    "review": "Codex same-agent bilingual review; no independent human review claimed"
+  },
+  "publication_note": "This source checkpoint and the six-chapter PDF/HTML reader are staged for six-chapters-v0.4. Publication and anonymous public-byte verification are recorded separately after commit and release creation."
+}

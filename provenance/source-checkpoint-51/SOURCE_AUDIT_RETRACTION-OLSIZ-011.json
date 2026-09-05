@@ -1,0 +1,14 @@
+{
+  "schema": "openlogic-source-audit-retraction-receipt/1",
+  "retraction_id": "OLSIZ-011-RETRACTION-20260904",
+  "void_shared_identifier": "OLSIZ-011",
+  "status": "false_positive_not_applied",
+  "source_sha256": "a075f6c63879101314fb20fa493acfb38d78ff24095bb55914f2af4527e1ad3e",
+  "manager_retraction_sha256": "b495d66165f3c7f0b32d61b0b106c402badcc6e4e6a130442734c8f883dd5adc",
+  "manager_tombstone_sha256": "b1b9f8ad296bc8d718a17514cdb91c61a8c1ea537a1231604f862551406b35bf",
+  "confirmed_three_backslash_runs": 5,
+  "public_provenance_sha256": "54b4c2c5627e493cceeb4a82a3dbc28a826e27ddaa0a56699ab7ff8ea0688ac6",
+  "source_issues_sha256": "2aa581588e320986b529e097d16b51004ca8770602188f48a18a1af7912d963b",
+  "qa_b004_sha256": "88e0c1fc5dc4489ab764af67ce53e9e905cda7c7e09c4c9a46102611a1f314fb",
+  "checkpoint_sha256": "db48c30911dfcd23ae15554fa57dbb2cecf3e11b5c1cace6e55168b6f8c2652f"
+}

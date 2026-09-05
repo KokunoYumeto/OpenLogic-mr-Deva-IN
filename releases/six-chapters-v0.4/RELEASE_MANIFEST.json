@@ -1,0 +1,52 @@
+{
+  "schema": "openlogic-release-manifest/1",
+  "release": "six-chapters-v0.4",
+  "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_units": 51,
+    "total_units": 722,
+    "remaining_units": 671,
+    "aligned_segments": 617,
+    "complete_chapters": 6
+  },
+  "assets": [
+    {
+      "filename": "openlogic-mr-six-chapters.pdf",
+      "bytes": 394784,
+      "sha256": "583182e8b818a0ef37bd4bf5a99ed1bb9991a739c2f51309a72a23e402936791"
+    },
+    {
+      "filename": "openlogic-mr-six-chapters.tex",
+      "bytes": 431068,
+      "sha256": "bef45fb2ba90231186a2200c5a9cffd7842e32c216f8158c63cb38d0698d8147"
+    },
+    {
+      "filename": "openlogic-mr-six-chapters-html.zip",
+      "bytes": 1361990,
+      "sha256": "aa91a3c1b121f51e52797dcdce22e6d6aeedc470782c0e3fb0998306e12780ae"
+    },
+    {
+      "filename": "openlogic-mr-six-chapters-review.zip",
+      "bytes": 3632138,
+      "sha256": "906e1804f8e4ce8fb70b29c67883cdda8404b63b5aae162bd1463ed2bcb71d4e"
+    },
+    {
+      "filename": "openlogic-mr-six-chapters-editable-sources.zip",
+      "bytes": 11437511,
+      "sha256": "0ad8bdd001a92f1bfd2b7851b8d53b67dc33ad6c3ad66e4a7aa38708fa2f0601"
+    }
+  ],
+  "source_package_manifest": {
+    "path": "provenance/six-chapters-v0.4/EDITION_FILE_MANIFEST.json",
+    "files_listed": 1180,
+    "bytes": 222998,
+    "sha256": "fa34d20538ac1e5aea3c410cdf4b041da11dc643aa7058fb08fc7ef7051933dd"
+  },
+  "release_qa": {
+    "path": "provenance/six-chapters-v0.4/RELEASE_QA.json",
+    "bytes": 2135,
+    "sha256": "e5621b2c4b12a88cbdaadb5d7297c5a63d0119ac0360f29c1d84120284efddd3"
+  },
+  "full_edition_complete": false
+}

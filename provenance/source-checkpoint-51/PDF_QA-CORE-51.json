@@ -1,0 +1,104 @@
+{
+  "schema": "openlogic-pdf-qa/1",
+  "artifact": "build/core/openlogic-mr-core.pdf",
+  "scope": {
+    "translation_source_units": 51,
+    "reader_sections": 45,
+    "complete_chapters": 6,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0054",
+    "released": false
+  },
+  "build": {
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "tex_input_sha256": "bef45fb2ba90231186a2200c5a9cffd7842e32c216f8158c63cb38d0698d8147",
+    "inputs_manifest_sha256": "4503c05b5464a10523efb88af1147043906884aa0725ea810088759591174e25",
+    "source_date_epoch": "1788480000",
+    "passes_per_build": 2,
+    "matching_clean_runs": [
+      {
+        "filename": "TEX_BUILD_20260905T170524061.json",
+        "sha256": "e33d09dcedc93f44b046097af6dafd96cecb1bced114ccc9dafa0608de237654",
+        "final_log_sha256": "1dbbc978eca92f5fe8154828786500fc865026322c759a817c5d67dfef433693",
+        "result": "built-log-clean"
+      },
+      {
+        "filename": "TEX_BUILD_20260905T170927881.json",
+        "sha256": "85b6edfb5aab58be217a6a1b43ecc2908ab786fc21082be8ce3dec0afa7bb16b",
+        "final_log_sha256": "fea39b33510429dcf5ccb621fcdd4b7a63478491329b8e02e9740cfefb0d9341",
+        "result": "built-log-clean"
+      }
+    ],
+    "reproducible_pdf_bytes": true,
+    "stabilization_note": "The two successful acquired builds from settled auxiliary state produced identical PDF bytes. Intervening slot-occupied receipts launched no TeX process."
+  },
+  "prepared_tex": {
+    "bytes": 431068,
+    "sha256": "bef45fb2ba90231186a2200c5a9cffd7842e32c216f8158c63cb38d0698d8147",
+    "sections": 45,
+    "trailing_space_lines": 0,
+    "unresolved_token_or_reference_markers": 0
+  },
+  "pdf": {
+    "bytes": 394784,
+    "sha256": "583182e8b818a0ef37bd4bf5a99ed1bb9991a739c2f51309a72a23e402936791",
+    "pages": 73,
+    "page_size": "A4",
+    "encrypted": false,
+    "javascript": false,
+    "title": "मुक्त तर्कशास्त्र: संच, संबंध, फलने, संचांचे आकारमान, अंकगणितीकरण आणि अनंत संच",
+    "author": "Open Logic Project; Marathi machine translation by Codex"
+  },
+  "visual_review": {
+    "performed_utc": "2026-09-05T17:11:34.270759Z",
+    "renderer": "PyMuPDF",
+    "render_scale": 1.3,
+    "all_pages_rendered": 73,
+    "all_pages_reviewed_in_contact_sheets": true,
+    "contact_sheets": 19,
+    "detail_pages_reviewed": [
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73
+    ],
+    "new_chapter_reviewed_at_readable_scale": true,
+    "tables_diagrams_and_formula_layout": "passed",
+    "marathi_shaping": "passed",
+    "headings_headers_footers_contents_and_page_numbers": "passed",
+    "source_correction_notes_and_references": "passed",
+    "clipping_overlap_black_boxes_or_unreadable_glyphs": 0
+  },
+  "font_review": {
+    "font_programs": 20,
+    "all_embedded": true,
+    "all_subset": true,
+    "marathi_fonts_have_unicode_maps": true,
+    "standard_computer_modern_symbol_fonts_without_unicode_maps": 2
+  },
+  "text_extraction": {
+    "tool": "Poppler pdftotext",
+    "utf8_bytes": 407550,
+    "characters": 178134,
+    "form_feeds": 73,
+    "replacement_characters": 0,
+    "unexpanded_glossary_tokens": 0,
+    "reader_note_literals": 0,
+    "todo_tbd_or_placeholder_hits": 0,
+    "rendered_source_correction_headings": 32,
+    "mrarith_001_through_012_each_present": true,
+    "mrinf_001_through_003_each_present": true,
+    "olsiz_011_retraction_mentions": 1
+  },
+  "accessibility": {
+    "pdf_tagged": false,
+    "development_reader_only": true,
+    "disposition": "Do not publish this development PDF as the final accessible edition. A useful accessible HTML companion remains required for the complete release."
+  },
+  "result": "passed_for_unreleased_cumulative_reader_checkpoint"
+}

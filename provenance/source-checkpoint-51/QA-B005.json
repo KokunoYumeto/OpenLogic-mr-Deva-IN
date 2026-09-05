@@ -1,0 +1,189 @@
+{
+  "schema": "openlogic-mr-batch-qa/1",
+  "batch": "MR-B005-infinite-sets-complete",
+  "units": [
+    {
+      "unit_id": "OLP-0049",
+      "translation_sha256": "1394b896c1cbaa9e71b493e0f0f41dec78d964bf0220b9acf14dba80718269df",
+      "translation_bytes": 561,
+      "segments": 2,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0050",
+      "translation_sha256": "234776763623753925d5d10437b03a481def0671d10fe8a9cc34a5ac69cfec80",
+      "translation_bytes": 4795,
+      "segments": 4,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      },
+      "documented_source_correction_ids": [
+        "MRINF-001"
+      ]
+    },
+    {
+      "unit_id": "OLP-0051",
+      "translation_sha256": "7bd6671dc46e2000ede225b5b704269baebac8af18c1cd756fb5151aa5e30c6f",
+      "translation_bytes": 8781,
+      "segments": 17,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      },
+      "documented_source_observation_ids": [
+        "MRINF-002"
+      ]
+    },
+    {
+      "unit_id": "OLP-0052",
+      "translation_sha256": "f4ea5d7b31a3aaa5d45ad2f6962023ea6fcc9aa731d0d0b129036b800f419e57",
+      "translation_bytes": 6280,
+      "segments": 10,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0053",
+      "translation_sha256": "86febf6e8cd8ea0691a16653b3de3aa69aeb6897ce0f7123691b3a9c452bb2fd",
+      "translation_bytes": 13407,
+      "segments": 11,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0054",
+      "translation_sha256": "241b515c789b9bff1cd4af17d1b5f677c7a624a0af098e967735ee134c5db3b6",
+      "translation_bytes": 7569,
+      "segments": 14,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      },
+      "documented_source_correction_ids": [
+        "MRINF-003"
+      ]
+    }
+  ],
+  "segments_with_canon": 58,
+  "cumulative_segments_with_canon": 617,
+  "failures": [],
+  "source_issues_sha256": "3b39322738ea4892c55d589f65ae30cb04b1642ba70d4eb54da0cb758542ce27",
+  "chapter_complete": true,
+  "reader_status": "The 73-page cumulative reader through OLP-0054 passed two consecutive clean byte-identical guarded builds, full visual review, exact accessible-HTML conversion checks, and desktop/mobile browser layout review.",
+  "release_ready": false,
+  "full_corpus_complete": false,
+  "latest_semantic_review": "SEMANTIC_REVIEW-OLP0054.json",
+  "latest_semantic_review_sha256": "bc350c39a40aa346dd50724011f85f998bb826471d60ae3451637cbf5c537592",
+  "reader_qa": {
+    "status": "passed_for_publication_candidate",
+    "scope": {
+      "translation_source_units": 51,
+      "reader_sections": 45,
+      "complete_chapters": 6,
+      "last_unit": "OLP-0054"
+    },
+    "pdf": {
+      "pages": 73,
+      "bytes": 394784,
+      "sha256": "583182e8b818a0ef37bd4bf5a99ed1bb9991a739c2f51309a72a23e402936791"
+    },
+    "qa_receipt": "PDF_QA-CORE-51.json",
+    "qa_receipt_sha256": "69ea8b5d2675d5a840a55ad97c9011241bbf7988bf43d0b022d44bf7f5109e88",
+    "reproducibility_receipt": "REPRODUCIBILITY-CORE-51.json",
+    "reproducibility_receipt_sha256": "723504b11415ce86bc200ba571d884166b98015b73a21167d5dcdab0d2c77705",
+    "two_consecutive_clean_builds_identical": true,
+    "all_pages_visually_reviewed": true,
+    "pdf_tagged": false,
+    "accessible_html_required_for_public_reader_release": false,
+    "accessible_html": {
+      "status": "passed",
+      "html": {
+        "filename": "index.html",
+        "bytes": 1296227,
+        "sha256": "b425b6aa49c95156d0bfb79447e12a82aa615b8056d1c833ed7a415afd1d2005"
+      },
+      "stylesheet_sha256": "c4d0ea2b2849c5e72ed30da130dfcfbf31c4185231b838cf2bca0bce1211821f",
+      "native_mathml": 2982,
+      "diagrams_with_detailed_marathi_alternatives": 13,
+      "internal_links_valid": 188,
+      "exact_source_prose_and_math_conversion": true,
+      "offline_network_dependencies": 0,
+      "browser_layout_review": "passed at 1280x720 and 390x844 with no page-level horizontal overflow",
+      "qa_receipt": "HTML_QA-CORE-51.json",
+      "qa_receipt_sha256": "599dcdff71497eec58b396e64cd35ae225d8fc96edda02eb60a7f627078b0c53",
+      "build_receipt": "HTML_BUILD-CORE-51.json",
+      "build_receipt_sha256": "065a0f6e8e059b0e1e7d3feecde4cba64d936c0ecd4b68035177a135d63efdf0",
+      "browser_receipt": "HTML_BROWSER_QA-CORE-51.json",
+      "browser_receipt_sha256": "2b04f1ac081a27c1d1f2c083b3266f474c19dca40c3b1be98617e263f12b9f4a"
+    }
+  },
+  "expert_review_occurrences": {
+    "decision_records": 144,
+    "occurrences": 3978,
+    "high_priority_occurrences": 473,
+    "occurrence_checkpoint": "EXPERT_REVIEW_OCCURRENCES-CHECKPOINT.json",
+    "occurrence_checkpoint_sha256": "52968d606d1f90f21f73df0a32b8ea8e2a244b46e760df9afe283621506c9c10",
+    "ledger_checkpoint": "EXPERT_REVIEW_LEDGER-CHECKPOINT.json",
+    "ledger_checkpoint_sha256": "2cf9f888de46ec23c11d826b1e29d02169474639dde900a7a4cdf72a7d90e078",
+    "canonical_schema_bundle": {
+      "status": "passed",
+      "directory": "provenance/translation-decisions",
+      "canonical_schema_sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "decisions_with_occurrences": 140,
+      "legacy_decisions_total": 144,
+      "prospective_decisions_deferred_without_fabricated_occurrences": [
+        "T009",
+        "T011",
+        "T012",
+        "T013"
+      ],
+      "occurrences": 3978,
+      "high_priority_occurrences": 473,
+      "schema_validation_errors": 0,
+      "deterministic_second_run_identical": true,
+      "decisions_json_sha256": "02c1f98c1fc20f5bf0163873646463eccac32300438d2bf2e1fc1c2283508644",
+      "qa_sha256": "f545d2828f01778ae5f016dc16a11e0ecc3bf79b1fbf2c4e081918949807104a",
+      "checkpoint": "TRANSLATION_DECISIONS-CHECKPOINT-51.json",
+      "checkpoint_sha256": "8508b56350972855c1caa1ba33d3c5fcc875ba52c56b2c9bc31036309ec70ba7"
+    }
+  }
+}

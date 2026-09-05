@@ -18,18 +18,31 @@ SCHEMA_PATH = OUT / "translation-decision.schema.json"
 DECISION_INPUT = PROV / "EXPERT_REVIEW_DECISIONS.jsonl"
 OCCURRENCE_INPUT = PROV / "EXPERT_REVIEW_OCCURRENCES.jsonl"
 PDF = P / "build" / "core" / "openlogic-mr-core.pdf"
+INPUTS = P / "build" / "core" / "INPUTS.json"
 
 SCHEMA_SHA256 = "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
 SCHEMA_BYTES = 10787
 SOURCE_REVISION = "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
-PDF_SHA256 = "be37d13d3a9706975d03f52a5fa4af88a87011247527c27da31ae0b6e9d1a743"
-PDF_FILENAME = "openlogic-mr-five-chapters.pdf"
-GENERATED_UTC = "2026-09-05T15:52:00Z"
+PDF_FILENAME = PDF.name
+GENERATED_UTC = "2026-09-05T00:00:00Z"
 DEFERRED_IDS = ["T009", "T011", "T012", "T013"]
 
 
 def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+PDF_SHA256 = sha(PDF)
+input_rows = json.loads(INPUTS.read_text(encoding="utf-8"))["input_units"]
+SOURCE_UNITS = len(input_rows)
+LAST_UNIT = input_rows[-1]["unit_id"]
+driver_names = {
+    "sets.tex", "relations-complete.tex", "functions.tex",
+    "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
+}
+COMPLETE_CHAPTERS = sum(Path(row["path"]).name in driver_names for row in input_rows)
+PDF_PROFILE = f"{COMPLETE_CHAPTERS}-chapter cumulative reader through {LAST_UNIT}"
+RELEASE_TAG = f"development-through-{LAST_UNIT}"
 
 
 def jsonl(path):
@@ -100,6 +113,7 @@ CHAPTERS = {
     "3": "फलने",
     "4": "संचांचे आकारमान",
     "5": "अंकगणितीकरण",
+    "6": "अनंत संच",
 }
 
 
@@ -115,7 +129,7 @@ def reader_locator(legacy):
         "status": "available",
         "artifact_filename": PDF_FILENAME,
         "artifact_sha256": PDF_SHA256,
-        "profile": "five-chapter cumulative reader through OLP-0048",
+        "profile": PDF_PROFILE,
         "printed_page": legacy.get("reader_page_label"),
         "assembled_pdf_page": int(pages[0]),
         "provenance": (
@@ -294,9 +308,9 @@ assert sha(PDF) == PDF_SHA256
 
 legacy_decisions = jsonl(DECISION_INPUT)
 legacy_occurrences = jsonl(OCCURRENCE_INPUT)
-assert len(legacy_decisions) == 131
-assert len(legacy_occurrences) == 3743
-assert len({item["occurrence_id"] for item in legacy_occurrences}) == 3743
+legacy_decision_ids = [item.get("term_id") or item.get("issue_id") for item in legacy_decisions]
+assert len(legacy_decision_ids) == len(set(legacy_decision_ids))
+assert len({item["occurrence_id"] for item in legacy_occurrences}) == len(legacy_occurrences)
 
 occurrences_by_decision = defaultdict(list)
 for item in legacy_occurrences:
@@ -306,7 +320,7 @@ input_occurrence_ref = {
     "path_or_uri": "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl",
     "bytes": OCCURRENCE_INPUT.stat().st_size,
     "sha256": sha(OCCURRENCE_INPUT),
-    "version_or_ref": "five-chapter checkpoint through OLP-0048",
+    "version_or_ref": PDF_PROFILE,
 }
 
 confidence_rank = {"low": 0, "medium": 1, "high": 2}
@@ -409,32 +423,36 @@ for legacy in legacy_decisions:
         decision["recorded_utc"] = recorded_utc
     canonical_decisions.append(decision)
 
-assert len(canonical_decisions) == 127
-assert sum(len(item["occurrences"]) for item in canonical_decisions) == 3743
+assert len(canonical_decisions) == len(legacy_decisions) - len(DEFERRED_IDS)
+assert sum(len(item["occurrences"]) for item in canonical_decisions) == len(legacy_occurrences)
 assert [
     (item.get("term_id") or item.get("issue_id"))
     for item in legacy_decisions
     if not occurrences_by_decision[item.get("term_id") or item.get("issue_id")]
 ] == DEFERRED_IDS
 
+canonical_count = len(canonical_decisions)
+occurrence_count = len(legacy_occurrences)
+remaining_units = 722 - SOURCE_UNITS
+
 document = {
     "schema_version": "openlogic-translation-decisions/1.0.0",
     "edition_release": {
         "edition": dict(EDITION),
-        "release_tag": "five-chapters-v0.3",
+        "release_tag": RELEASE_TAG,
         "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
         "doi": None,
         "source_revision": SOURCE_REVISION,
         "coverage_state": "partial",
-        "source_units": 45,
-        "reader_units": 45,
+        "source_units": SOURCE_UNITS,
+        "reader_units": SOURCE_UNITS,
     },
     "generated_utc": GENERATED_UTC,
     "generator": {
         "path_or_uri": "tools/build_translation_decisions.py",
         "bytes": Path(__file__).stat().st_size,
         "sha256": sha(__file__),
-        "version_or_ref": "five-chapter schema adapter",
+        "version_or_ref": PDF_PROFILE + " schema adapter",
     },
     "decisions": canonical_decisions,
 }
@@ -445,10 +463,10 @@ write_json(decisions_path, document)
 start_lines = [
     "# Start here: Marathi translation decisions",
     "",
-    "This bundle is the expert-review entry point for the five-chapter Marathi ",
-    "OpenLogic checkpoint through OLP-0048. It covers 45/722 source units, five ",
-    "complete chapters, 127 applied decisions and 3,743 exact current occurrences. ",
-    "The remaining 677 units are untranslated.",
+    f"This bundle is the expert-review entry point for the {COMPLETE_CHAPTERS}-chapter Marathi ",
+    f"OpenLogic development checkpoint through {LAST_UNIT}. It covers {SOURCE_UNITS}/722 source units, ",
+    f"{COMPLETE_CHAPTERS} complete chapters, {canonical_count} applied decisions and ",
+    f"{occurrence_count:,} exact current occurrences. The remaining {remaining_units} units are untranslated.",
     "",
     "No independent human or native-speaker review is claimed. Every choice remains ",
     "reversible, and a review question is a request for useful evidence rather than ",
@@ -458,7 +476,7 @@ start_lines = [
     "",
     "- `TRANSLATION_DECISIONS_FULL.md` is the readable complete applied-decision index.",
     "- `PRIORITY_REVIEW.md` contains only urgent/high review items and their occurrences.",
-    "- `DECISION_OCCURRENCES.csv` has one UTF-8 row for each of 3,743 occurrences.",
+    f"- `DECISION_OCCURRENCES.csv` has one UTF-8 row for each of {occurrence_count:,} occurrences.",
     "- `DECISIONS.json` is the canonical machine record validated against the shared schema.",
     "- `translation-decision.schema.json` is the exact frozen shared schema.",
     "- `TRANSLATION_DECISION_QA.json` records validation, counts and hashes.",
@@ -468,7 +486,7 @@ start_lines = [
     "and target locators contain current file SHA-256 values, exact line spans, byte ",
     "spans and excerpts. Four prospective terminology records (`T009`, `T011`, ",
     "`T012`, `T013`) remain in the backward-compatible legacy ledger but are deferred ",
-    "from `DECISIONS.json` because they have no occurrence in the current 45-unit ",
+    f"from `DECISIONS.json` because they have no occurrence in the current {SOURCE_UNITS}-unit ",
     "coverage and the shared schema requires at least one real occurrence per decision.",
     "",
     "The full source-aligned Marathi edition remains the controlling deliverable. This ",
@@ -479,7 +497,7 @@ write_text(OUT / "START_HERE.md", "\n".join(start_lines) + "\n")
 full_lines = [
     "# Marathi OpenLogic translation decisions — full applied index",
     "",
-    "Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occurrences.",
+    f"Coverage: {SOURCE_UNITS}/722 source units through {LAST_UNIT}; {canonical_count} applied decisions; {occurrence_count:,} occurrences.",
     "",
 ]
 for decision in canonical_decisions:
@@ -706,16 +724,16 @@ for occurrence in all_occurrences:
 
 with csv_path.open("r", encoding="utf-8", newline="") as handle:
     csv_rows = list(csv.DictReader(handle))
-assert len(csv_rows) == 3743
-assert len({row["occurrence_id"] for row in csv_rows}) == 3743
+assert len(csv_rows) == occurrence_count
+assert len({row["occurrence_id"] for row in csv_rows}) == occurrence_count
 
 priority_counts = Counter(
     decision["review_priority"]
     for decision in canonical_decisions
     for _ in decision["occurrences"]
 )
-assert priority_counts == Counter({"low": 1698, "normal": 1572, "high": 473})
-assert len(priority_occurrences) == 473
+assert sum(priority_counts.values()) == occurrence_count
+assert len(priority_occurrences) == priority_counts.get("high", 0)
 
 artifact_names = [
     "START_HERE.md",
@@ -748,24 +766,30 @@ qa = {
         "instance_errors": 0,
     },
     "coverage": {
-        "source_units": 45,
+        "source_units": SOURCE_UNITS,
         "total_source_units": 722,
-        "complete_chapters": 5,
-        "canonical_decisions_with_occurrences": 127,
-        "legacy_decisions_total": 131,
+        "complete_chapters": COMPLETE_CHAPTERS,
+        "canonical_decisions_with_occurrences": canonical_count,
+        "legacy_decisions_total": len(legacy_decisions),
         "legacy_prospective_decisions_deferred_without_fabricated_occurrences": DEFERRED_IDS,
-        "occurrences": 3743,
-        "high_priority_occurrences": 473,
-        "normal_priority_occurrences": 1572,
-        "low_priority_occurrences": 1698,
-        "reader_locators_available": 3743,
-        "reader_locators_pending": 0,
+        "occurrences": occurrence_count,
+        "high_priority_occurrences": priority_counts.get("high", 0),
+        "normal_priority_occurrences": priority_counts.get("normal", 0),
+        "low_priority_occurrences": priority_counts.get("low", 0),
+        "reader_locators_available": sum(
+            occurrence["reader_locator"]["status"] == "available"
+            for occurrence in all_occurrences
+        ),
+        "reader_locators_pending": sum(
+            occurrence["reader_locator"]["status"] != "available"
+            for occurrence in all_occurrences
+        ),
     },
     "exactness_checks": {
         "globally_unique_occurrence_ids": True,
-        "source_file_hashes_recomputed": 3743,
-        "target_file_hashes_recomputed": 3743,
-        "line_and_utf8_byte_spans_reproduced_exact_excerpts": 7486,
+        "source_file_hashes_recomputed": occurrence_count,
+        "target_file_hashes_recomputed": occurrence_count,
+        "line_and_utf8_byte_spans_reproduced_exact_excerpts": 2 * occurrence_count,
         "csv_rows_equal_occurrences": True,
         "legacy_occurrence_ids_preserved": True,
         "unknown_pages_guessed": 0,
@@ -775,12 +799,12 @@ qa = {
         "provenance/EXPERT_REVIEW_DECISIONS.jsonl": {
             "bytes": DECISION_INPUT.stat().st_size,
             "sha256": sha(DECISION_INPUT),
-            "records": 131,
+            "records": len(legacy_decisions),
         },
         "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl": {
             "bytes": OCCURRENCE_INPUT.stat().st_size,
             "sha256": sha(OCCURRENCE_INPUT),
-            "records": 3743,
+            "records": occurrence_count,
         },
         "tools/build_translation_decisions.py": {
             "bytes": Path(__file__).stat().st_size,

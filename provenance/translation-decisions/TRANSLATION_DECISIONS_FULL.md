@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occurrences.
+Coverage: 51/722 source units through OLP-0054; 140 applied decisions; 3,978 occurrences.
 
 ## T001 — set
 
@@ -341,6 +341,39 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T001-OLP-0046-B012` | `OLP-0046` | 5.5 काही तात्त्विक चिंतन | `upstream/content/sets-functions-relations/arithmetization/reflections.tex:92-97` | `mr/content/sets-functions-relations/arithmetization/reflections.tex:87-92` | 57–58 |
 | `T001-OLP-0047-B006` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:23-36` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:22-38` | 58–61 |
 | `T001-OLP-0048-B007` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:21-36` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:21-36` | 61–64 |
+| `T001-OLP-0049-B004` | `OLP-0049` | 6 अनंत संच — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/infinite/infinite.tex:8-8` | `mr/content/sets-functions-relations/infinite/infinite.tex:8-8` | 65 |
+| `T001-OLP-0050-B004` | `OLP-0050` | 6.1 हिल्बर्ट यांचे हॉटेल | `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:12-23` | `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:12-24` | 65–66 |
+| `T001-OLP-0050-B006` | `OLP-0050` | 6.1 हिल्बर्ट यांचे हॉटेल | `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:60-64` | `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:60-64` | 65–66 |
+| `T001-OLP-0051-B005` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-39` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-38` | 66–67 |
+| `T001-OLP-0051-B006` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:41-46` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:40-45` | 66–67 |
+| `T001-OLP-0051-B007` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:48-61` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:47-59` | 66–67 |
+| `T001-OLP-0051-B008` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:63-67` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:61-65` | 66–67 |
+| `T001-OLP-0051-B009` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:69-70` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:67-68` | 66–67 |
+| `T001-OLP-0051-B010` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:72-73` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:70-73` | 66–67 |
+| `T001-OLP-0051-B011` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:75-77` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:75-77` | 66–67 |
+| `T001-OLP-0051-B013` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:81-89` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:81-89` | 66–67 |
+| `T001-OLP-0051-B014` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:91-96` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:91-95` | 66–67 |
+| `T001-OLP-0051-B015` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:98-100` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:97-99` | 66–67 |
+| `T001-OLP-0051-B016` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:102-107` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:101-106` | 66–67 |
+| `T001-OLP-0052-B005` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14` | 67–68 |
+| `T001-OLP-0052-B008` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:29-31` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:31-34` | 67–68 |
+| `T001-OLP-0052-B010` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:37-44` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:40-47` | 67–68 |
+| `T001-OLP-0053-B004` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:11-12` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:11-12` | 68–69 |
+| `T001-OLP-0053-B005` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-19` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-17` | 68–69 |
+| `T001-OLP-0053-B006` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:21-26` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:19-24` | 68–69 |
+| `T001-OLP-0053-B007` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:28-40` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:26-38` | 68–69 |
+| `T001-OLP-0053-B008` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:42-64` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:40-62` | 68–69 |
+| `T001-OLP-0053-B011` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:88-90` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:85-87` | 68–69 |
+| `T001-OLP-0053-B013` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:100-111` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:96-106` | 68–69 |
+| `T001-OLP-0053-B014` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108` | 68–69 |
+| `T001-OLP-0054-B005` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:9-14` | `mr/content/sets-functions-relations/infinite/card-sb.tex:9-14` | 69–71 |
+| `T001-OLP-0054-B007` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:25-33` | `mr/content/sets-functions-relations/infinite/card-sb.tex:24-31` | 69–71 |
+| `T001-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43` | `mr/content/sets-functions-relations/infinite/card-sb.tex:33-41` | 69–71 |
+| `T001-OLP-0054-B011` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53` | `mr/content/sets-functions-relations/infinite/card-sb.tex:49-52` | 69–71 |
+| `T001-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68` | `mr/content/sets-functions-relations/infinite/card-sb.tex:54-67` | 69–71 |
+| `T001-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83` | `mr/content/sets-functions-relations/infinite/card-sb.tex:80-85` | 69–71 |
+| `T001-OLP-0054-B016` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:85-87` | `mr/content/sets-functions-relations/infinite/card-sb.tex:87-89` | 69–71 |
+| `T001-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 69–71 |
 
 ## T002 — element/member
 
@@ -607,6 +640,7 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T002-OLP-0044-B012` | `OLP-0044` | 5.3 वास्तव संख्या-रेषा | `upstream/content/sets-functions-relations/arithmetization/reals.tex:76-80` | `mr/content/sets-functions-relations/arithmetization/reals.tex:86-96` | 54–55 |
 | `T002-OLP-0045-B006` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:26-36` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:25-35` | 55–57 |
 | `T002-OLP-0045-B010` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:58-78` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:57-83` | 55–57 |
+| `T002-OLP-0054-B016` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:85-87` | `mr/content/sets-functions-relations/infinite/card-sb.tex:87-89` | 69–71 |
 
 ## T003 — empty set
 
@@ -1034,6 +1068,16 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T005-OLP-0046-B011` | `OLP-0046` | 5.5 काही तात्त्विक चिंतन | `upstream/content/sets-functions-relations/arithmetization/reflections.tex:81-90` | `mr/content/sets-functions-relations/arithmetization/reflections.tex:77-85` | 57–58 |
 | `T005-OLP-0047-B024` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:158-168` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:155-165` | 58–61 |
 | `T005-OLP-0047-B028` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:184-206` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:182-204` | 58–61 |
+| `T005-OLP-0050-B006` | `OLP-0050` | 6.1 हिल्बर्ट यांचे हॉटेल | `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:60-64` | `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:60-64` | 65–66 |
+| `T005-OLP-0051-B011` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:75-77` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:75-77` | 66–67 |
+| `T005-OLP-0051-B016` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:102-107` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:101-106` | 66–67 |
+| `T005-OLP-0051-B017` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:109-110` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:108-109` | 66–67 |
+| `T005-OLP-0051-B018` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:112-113` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:111-112` | 66–67 |
+| `T005-OLP-0051-B019` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:115-116` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:114-121` | 66–67 |
+| `T005-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43` | `mr/content/sets-functions-relations/infinite/card-sb.tex:33-41` | 69–71 |
+| `T005-OLP-0054-B011` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53` | `mr/content/sets-functions-relations/infinite/card-sb.tex:49-52` | 69–71 |
+| `T005-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83` | `mr/content/sets-functions-relations/infinite/card-sb.tex:80-85` | 69–71 |
+| `T005-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 69–71 |
 
 ## T006 — proper subset
 
@@ -1077,6 +1121,7 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T006-OLP-0045-B010` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:58-78` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:57-83` | 55–57 |
 | `T006-OLP-0047-B024` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:158-168` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:155-165` | 58–61 |
 | `T006-OLP-0047-B028` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:184-206` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:182-204` | 58–61 |
+| `T006-OLP-0050-B006` | `OLP-0050` | 6.1 हिल्बर्ट यांचे हॉटेल | `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:60-64` | `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:60-64` | 65–66 |
 
 ## T007 — power set
 
@@ -1320,6 +1365,16 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T008-OLP-0047-B008` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:43-60` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:45-61` | 58–61 |
 | `T008-OLP-0047-B010` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:64-72` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:65-73` | 58–61 |
 | `T008-OLP-0048-B008` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:38-73` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:38-69` | 61–64 |
+| `T008-OLP-0050-B004` | `OLP-0050` | 6.1 हिल्बर्ट यांचे हॉटेल | `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:12-23` | `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:12-24` | 65–66 |
+| `T008-OLP-0051-B004` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:12-14` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:12-14` | 66–67 |
+| `T008-OLP-0051-B005` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-39` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-38` | 66–67 |
+| `T008-OLP-0052-B004` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:9-10` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:9-10` | 67–68 |
+| `T008-OLP-0052-B007` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:23-27` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:24-29` | 67–68 |
+| `T008-OLP-0053-B004` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:11-12` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:11-12` | 68–69 |
+| `T008-OLP-0053-B005` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-19` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-17` | 68–69 |
+| `T008-OLP-0053-B006` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:21-26` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:19-24` | 68–69 |
+| `T008-OLP-0053-B007` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:28-40` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:26-38` | 68–69 |
+| `T008-OLP-0053-B008` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:42-64` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:40-62` | 68–69 |
 
 ## T010 — truth / truth value
 
@@ -1457,6 +1512,14 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T015-OLP-0048-B017` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:169-171` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:169-171` | 61–64 |
 | `T015-OLP-0048-B022` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:215-224` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:216-227` | 61–64 |
 | `T015-OLP-0048-B023` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:226-227` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:229-237` | 61–64 |
+| `T015-OLP-0053-B011` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:88-90` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:85-87` | 68–69 |
+| `T015-OLP-0053-B012` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:92-98` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:89-94` | 68–69 |
+| `T015-OLP-0054-B004` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:7-7` | `mr/content/sets-functions-relations/infinite/card-sb.tex:7-7` | 69–71 |
+| `T015-OLP-0054-B005` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:9-14` | `mr/content/sets-functions-relations/infinite/card-sb.tex:9-14` | 69–71 |
+| `T015-OLP-0054-B006` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:16-23` | `mr/content/sets-functions-relations/infinite/card-sb.tex:16-22` | 69–71 |
+| `T015-OLP-0054-B009` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:45-47` | `mr/content/sets-functions-relations/infinite/card-sb.tex:43-45` | 69–71 |
+| `T015-OLP-0054-B010` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:49-49` | `mr/content/sets-functions-relations/infinite/card-sb.tex:47-47` | 69–71 |
+| `T015-OLP-0054-B013` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:70-73` | `mr/content/sets-functions-relations/infinite/card-sb.tex:69-72` | 69–71 |
 
 ## T016 — if and only if
 
@@ -1546,6 +1609,9 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T016-OLP-0036-B015` | `OLP-0036` | 4.9 वेगवेगळ्या आकारमानांचे संच आणि कँटर यांचे प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:107-124` | `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:112-131` | 44–45 |
 | `T016-OLP-0036-B016` | `OLP-0036` | 4.9 वेगवेगळ्या आकारमानांचे संच आणि कँटर यांचे प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:126-135` | `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:133-144` | 44–45 |
 | `T016-OLP-0045-B006` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:26-36` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:25-35` | 55–57 |
+| `T016-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43` | `mr/content/sets-functions-relations/infinite/card-sb.tex:33-41` | 69–71 |
+| `T016-OLP-0054-B011` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53` | `mr/content/sets-functions-relations/infinite/card-sb.tex:49-52` | 69–71 |
+| `T016-OLP-0054-B014` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78` | `mr/content/sets-functions-relations/infinite/card-sb.tex:74-78` | 69–71 |
 
 ## T017 — union
 
@@ -1689,6 +1755,14 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T018-OLP-0019-B019` | `OLP-0019` | 2.8 संबंधांवरील क्रिया | `upstream/content/sets-functions-relations/relations/operations.tex:60-65` | `mr/content/sets-functions-relations/relations/operations.tex:60-67` | 21 |
 | `T018-OLP-0019-B020` | `OLP-0019` | 2.8 संबंधांवरील क्रिया | `upstream/content/sets-functions-relations/relations/operations.tex:67-69` | `mr/content/sets-functions-relations/relations/operations.tex:69-71` | 21 |
 | `T018-OLP-0035-B017` | `OLP-0035` | 4.8 तुल्यबलता | `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:101-104` | `mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:108-112` | 43–44 |
+| `T018-OLP-0051-B006` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:41-46` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:40-45` | 66–67 |
+| `T018-OLP-0051-B007` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:48-61` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:47-59` | 66–67 |
+| `T018-OLP-0051-B008` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:63-67` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:61-65` | 66–67 |
+| `T018-OLP-0051-B009` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:69-70` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:67-68` | 66–67 |
+| `T018-OLP-0051-B011` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:75-77` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:75-77` | 66–67 |
+| `T018-OLP-0052-B005` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14` | 67–68 |
+| `T018-OLP-0054-B007` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:25-33` | `mr/content/sets-functions-relations/infinite/card-sb.tex:24-31` | 69–71 |
+| `T018-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43` | `mr/content/sets-functions-relations/infinite/card-sb.tex:33-41` | 69–71 |
 
 ## T019 — disjoint
 
@@ -2072,6 +2146,8 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T024-OLP-0008-B028` | `OLP-0008` | 1.4 संयोग आणि छेद | `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:162-168` | `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:165-171` | 7–9 |
 | `T024-OLP-0008-B029` | `OLP-0008` | 1.4 संयोग आणि छेद | `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:170-172` | `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:173-175` | 7–9 |
 | `T024-OLP-0045-B012` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:85-113` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:90-121` | 55–57 |
+| `T024-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68` | `mr/content/sets-functions-relations/infinite/card-sb.tex:54-67` | 69–71 |
+| `T024-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83` | `mr/content/sets-functions-relations/infinite/card-sb.tex:80-85` | 69–71 |
 
 ## T025 — comprehension
 
@@ -2110,6 +2186,7 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T025-OLP-0033-B022` | `OLP-0033` | 4.6 अगणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:152-168` | `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:148-164` | 38–41 |
 | `T025-OLP-0036-B014` | `OLP-0036` | 4.9 वेगवेगळ्या आकारमानांचे संच आणि कँटर यांचे प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:70-105` | `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:70-110` | 44–45 |
 | `T025-OLP-0036-B018` | `OLP-0036` | 4.9 वेगवेगळ्या आकारमानांचे संच आणि कँटर यांचे प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:142-148` | `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:151-158` | 44–45 |
+| `T025-OLP-0054-B016` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:85-87` | `mr/content/sets-functions-relations/infinite/card-sb.tex:87-89` | 69–71 |
 
 ## T026 — contradiction/paradox
 
@@ -2156,27 +2233,30 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T026-OLP-0036-B017` | `OLP-0036` | 4.9 वेगवेगळ्या आकारमानांचे संच आणि कँटर यांचे प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:137-140` | `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:146-149` | 44–45 |
 | `T026-OLP-0036-B018` | `OLP-0036` | 4.9 वेगवेगळ्या आकारमानांचे संच आणि कँटर यांचे प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:142-148` | `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:151-158` | 44–45 |
 | `T026-OLP-0048-B022` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:215-224` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:216-227` | 61–64 |
+| `T026-OLP-0053-B014` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108` | 68–69 |
+| `T026-OLP-0054-B013` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:70-73` | `mr/content/sets-functions-relations/infinite/card-sb.tex:69-72` | 69–71 |
 
-## T027 — mathematical induction
+## T027 — mathematical / arithmetical induction
 
-**Chosen rendering/action:** गणिती विगमन
+**Chosen rendering/action:** गणितीय विगमन / अंकगणितीय विगमन
 
-**Kind:** `terminology` · **recording:** `retrospective` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+**Kind:** `terminology` · **recording:** `retrospective` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
 
-**Intended sense:** Qualifier and source proof task distinguish mathematical induction from empirical inductive inference. Specific term requires further attestation.
+**Intended sense:** MR-P061 directly attests mathematical induction as गणितीय विगमन. अंकगणितीय विगमन preserves the source's narrower arithmetical qualifier while keeping the attested head term.
 
-**Rationale:** Qualifier and source proof task distinguish mathematical induction from empirical inductive inference. Specific term requires further attestation.
+**Rationale:** MR-P061 directly attests mathematical induction as गणितीय विगमन. अंकगणितीय विगमन preserves the source's narrower arithmetical qualifier while keeping the attested head term.
 
 **Authorities actually checked:**
 
 - `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P061` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — M glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/m (`checked_supports`): Primary Government of Maharashtra philosophy and logic glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the exact arithmetical-induction phrase is compositional.
 
 **Alternatives:**
 
 - गणितीय आगमन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
-- इंडक्शन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अंकगणितीय आगमन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
 
-**Please double-check:** Please double-check: Does गणिती विगमन unambiguously mean mathematical induction rather than empirical induction?
+**Please double-check:** Please double-check: Should the source's ‘arithmetical induction’ remain अंकगणितीय विगमन while general mathematical induction remains गणितीय विगमन?
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
@@ -2193,6 +2273,10 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T027-OLP-0010-B014` | `OLP-0010` | 1.6 रसेलची विरोधापत्ती | `upstream/content/sets-functions-relations/sets/russells-paradox.tex:79-86` | `mr/content/sets-functions-relations/sets/russells-paradox.tex:77-84` | 11–12 |
 | `T027-OLP-0029-B023` | `OLP-0029` | 4.2 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:179-184` | `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:181-187` | 31–34 |
 | `T027-OLP-0038-B019` | `OLP-0038` | 4.11 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:130-133` | `mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:128-132` | 46–47 |
+| `T027-OLP-0052-B005` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14` | 67–68 |
+| `T027-OLP-0052-B007` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:23-27` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:24-29` | 67–68 |
+| `T027-OLP-0052-B008` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:29-31` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:31-34` | 67–68 |
+| `T027-OLP-0052-B010` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:37-44` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:40-47` | 67–68 |
 
 ## T028 — continuum
 
@@ -3030,6 +3114,8 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T038-OLP-0046-B010` | `OLP-0046` | 5.5 काही तात्त्विक चिंतन | `upstream/content/sets-functions-relations/arithmetization/reflections.tex:62-79` | `mr/content/sets-functions-relations/arithmetization/reflections.tex:59-75` | 57–58 |
 | `T038-OLP-0046-B012` | `OLP-0046` | 5.5 काही तात्त्विक चिंतन | `upstream/content/sets-functions-relations/arithmetization/reflections.tex:92-97` | `mr/content/sets-functions-relations/arithmetization/reflections.tex:87-92` | 57–58 |
 | `T038-OLP-0046-B013` | `OLP-0046` | 5.5 काही तात्त्विक चिंतन | `upstream/content/sets-functions-relations/arithmetization/reflections.tex:99-102` | `mr/content/sets-functions-relations/arithmetization/reflections.tex:94-96` | 57–58 |
+| `T038-OLP-0053-B006` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:21-26` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:19-24` | 68–69 |
+| `T038-OLP-0053-B014` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108` | 68–69 |
 
 ## T039 — preorder / partial order / linear order
 
@@ -3250,6 +3336,12 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T042-OLP-0018-B019` | `OLP-0018` | 2.7 वृक्ष | `upstream/content/sets-functions-relations/relations/trees.tex:121-124` | `mr/content/sets-functions-relations/relations/trees.tex:120-123` | 19–21 |
 | `T042-OLP-0018-B020` | `OLP-0018` | 2.7 वृक्ष | `upstream/content/sets-functions-relations/relations/trees.tex:126-128` | `mr/content/sets-functions-relations/relations/trees.tex:125-127` | 19–21 |
 | `T042-OLP-0038-B013` | `OLP-0038` | 4.11 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:69-75` | `mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:67-72` | 46–47 |
+| `T042-OLP-0051-B005` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-39` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-38` | 66–67 |
+| `T042-OLP-0051-B007` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:48-61` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:47-59` | 66–67 |
+| `T042-OLP-0054-B007` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:25-33` | `mr/content/sets-functions-relations/infinite/card-sb.tex:24-31` | 69–71 |
+| `T042-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43` | `mr/content/sets-functions-relations/infinite/card-sb.tex:33-41` | 69–71 |
+| `T042-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68` | `mr/content/sets-functions-relations/infinite/card-sb.tex:54-67` | 69–71 |
+| `T042-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83` | `mr/content/sets-functions-relations/infinite/card-sb.tex:80-85` | 69–71 |
 
 ## T043 — closure / inverse / restriction / relative product
 
@@ -3340,6 +3432,12 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T043-OLP-0025-B009` | `OLP-0025` | 3.5 फलनांचे संयोजन | `upstream/content/sets-functions-relations/functions/composition.tex:52-55` | `mr/content/sets-functions-relations/functions/composition.tex:52-56` | 28–29 |
 | `T043-OLP-0025-B010` | `OLP-0025` | 3.5 फलनांचे संयोजन | `upstream/content/sets-functions-relations/functions/composition.tex:57-60` | `mr/content/sets-functions-relations/functions/composition.tex:58-62` | 28–29 |
 | `T043-OLP-0025-B011` | `OLP-0025` | 3.5 फलनांचे संयोजन | `upstream/content/sets-functions-relations/functions/composition.tex:62-65` | `mr/content/sets-functions-relations/functions/composition.tex:64-67` | 28–29 |
+| `T043-OLP-0051-B016` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:102-107` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:101-106` | 66–67 |
+| `T043-OLP-0051-B019` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:115-116` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:114-121` | 66–67 |
+| `T043-OLP-0054-B006` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:16-23` | `mr/content/sets-functions-relations/infinite/card-sb.tex:16-22` | 69–71 |
+| `T043-OLP-0054-B007` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:25-33` | `mr/content/sets-functions-relations/infinite/card-sb.tex:24-31` | 69–71 |
+| `T043-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43` | `mr/content/sets-functions-relations/infinite/card-sb.tex:33-41` | 69–71 |
+| `T043-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68` | `mr/content/sets-functions-relations/infinite/card-sb.tex:54-67` | 69–71 |
 
 ## T044 — computability / formula / derivation
 
@@ -3613,6 +3711,24 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T045-OLP-0048-B021` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:187-213` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:188-214` | 61–64 |
 | `T045-OLP-0048-B022` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:215-224` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:216-227` | 61–64 |
 | `T045-OLP-0048-B023` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:226-227` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:229-237` | 61–64 |
+| `T045-OLP-0051-B006` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:41-46` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:40-45` | 66–67 |
+| `T045-OLP-0051-B007` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:48-61` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:47-59` | 66–67 |
+| `T045-OLP-0051-B008` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:63-67` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:61-65` | 66–67 |
+| `T045-OLP-0051-B010` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:72-73` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:70-73` | 66–67 |
+| `T045-OLP-0051-B013` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:81-89` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:81-89` | 66–67 |
+| `T045-OLP-0051-B016` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:102-107` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:101-106` | 66–67 |
+| `T045-OLP-0052-B012` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:51-64` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:54-66` | 67–68 |
+| `T045-OLP-0052-B013` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:66-80` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:68-81` | 67–68 |
+| `T045-OLP-0053-B011` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:88-90` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:85-87` | 68–69 |
+| `T045-OLP-0054-B005` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:9-14` | `mr/content/sets-functions-relations/infinite/card-sb.tex:9-14` | 69–71 |
+| `T045-OLP-0054-B007` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:25-33` | `mr/content/sets-functions-relations/infinite/card-sb.tex:24-31` | 69–71 |
+| `T045-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43` | `mr/content/sets-functions-relations/infinite/card-sb.tex:33-41` | 69–71 |
+| `T045-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68` | `mr/content/sets-functions-relations/infinite/card-sb.tex:54-67` | 69–71 |
+| `T045-OLP-0054-B013` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:70-73` | `mr/content/sets-functions-relations/infinite/card-sb.tex:69-72` | 69–71 |
+| `T045-OLP-0054-B014` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78` | `mr/content/sets-functions-relations/infinite/card-sb.tex:74-78` | 69–71 |
+| `T045-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83` | `mr/content/sets-functions-relations/infinite/card-sb.tex:80-85` | 69–71 |
+| `T045-OLP-0054-B016` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:85-87` | `mr/content/sets-functions-relations/infinite/card-sb.tex:87-89` | 69–71 |
+| `T045-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 69–71 |
 
 ## T046 — domain / codomain / range
 
@@ -3722,6 +3838,15 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T046-OLP-0036-B015` | `OLP-0036` | 4.9 वेगवेगळ्या आकारमानांचे संच आणि कँटर यांचे प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:107-124` | `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:112-131` | 44–45 |
 | `T046-OLP-0036-B016` | `OLP-0036` | 4.9 वेगवेगळ्या आकारमानांचे संच आणि कँटर यांचे प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:126-135` | `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:133-144` | 44–45 |
 | `T046-OLP-0038-B009` | `OLP-0038` | 4.11 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:39-43` | `mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:38-42` | 46–47 |
+| `T046-OLP-0050-B006` | `OLP-0050` | 6.1 हिल्बर्ट यांचे हॉटेल | `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:60-64` | `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:60-64` | 65–66 |
+| `T046-OLP-0051-B008` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:63-67` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:61-65` | 66–67 |
+| `T046-OLP-0051-B013` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:81-89` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:81-89` | 66–67 |
+| `T046-OLP-0051-B014` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:91-96` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:91-95` | 66–67 |
+| `T046-OLP-0051-B016` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:102-107` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:101-106` | 66–67 |
+| `T046-OLP-0051-B017` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:109-110` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:108-109` | 66–67 |
+| `T046-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68` | `mr/content/sets-functions-relations/infinite/card-sb.tex:54-67` | 69–71 |
+| `T046-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83` | `mr/content/sets-functions-relations/infinite/card-sb.tex:80-85` | 69–71 |
+| `T046-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 69–71 |
 
 ## T047 — argument / input / output / value
 
@@ -4004,6 +4129,15 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T049-OLP-0037-B010` | `OLP-0037` | 4.10 आकारमानाची कल्पना आणि श्रेडर–बर्नस्टाइन प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:44-53` | `mr/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:43-51` | 45–46 |
 | `T049-OLP-0038-B014` | `OLP-0038` | 4.11 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:77-81` | `mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:74-79` | 46–47 |
 | `T049-OLP-0040-B010` | `OLP-0040` | 4.13 न्यूनीकरण | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:42-46` | `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:42-47` | 49–50 |
+| `T049-OLP-0050-B006` | `OLP-0050` | 6.1 हिल्बर्ट यांचे हॉटेल | `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:60-64` | `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:60-64` | 65–66 |
+| `T049-OLP-0051-B005` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-39` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-38` | 66–67 |
+| `T049-OLP-0051-B013` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:81-89` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:81-89` | 66–67 |
+| `T049-OLP-0051-B014` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:91-96` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:91-95` | 66–67 |
+| `T049-OLP-0051-B016` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:102-107` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:101-106` | 66–67 |
+| `T049-OLP-0051-B018` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:112-113` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:111-112` | 66–67 |
+| `T049-OLP-0054-B005` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:9-14` | `mr/content/sets-functions-relations/infinite/card-sb.tex:9-14` | 69–71 |
+| `T049-OLP-0054-B014` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78` | `mr/content/sets-functions-relations/infinite/card-sb.tex:74-78` | 69–71 |
+| `T049-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 69–71 |
 
 ## T050 — bijective / bijection / one-to-one correspondence
 
@@ -4108,6 +4242,11 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T050-OLP-0039-B006` | `OLP-0039` | 4.12 अगणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:13-18` | `mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:13-18` | 47–49 |
 | `T050-OLP-0039-B008` | `OLP-0039` | 4.12 अगणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:26-31` | `mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:27-32` | 47–49 |
 | `T050-OLP-0039-B009` | `OLP-0039` | 4.12 अगणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:33-41` | `mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:34-41` | 47–49 |
+| `T050-OLP-0054-B005` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:9-14` | `mr/content/sets-functions-relations/infinite/card-sb.tex:9-14` | 69–71 |
+| `T050-OLP-0054-B011` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53` | `mr/content/sets-functions-relations/infinite/card-sb.tex:49-52` | 69–71 |
+| `T050-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68` | `mr/content/sets-functions-relations/infinite/card-sb.tex:54-67` | 69–71 |
+| `T050-OLP-0054-B014` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78` | `mr/content/sets-functions-relations/infinite/card-sb.tex:74-78` | 69–71 |
+| `T050-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 69–71 |
 
 ## T051 — identity / constant function
 
@@ -4225,6 +4364,8 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T052-OLP-0035-B011` | `OLP-0035` | 4.8 तुल्यबलता | `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:46-49` | `mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:46-50` | 43–44 |
 | `T052-OLP-0035-B015` | `OLP-0035` | 4.8 तुल्यबलता | `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:68-94` | `mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:70-101` | 43–44 |
 | `T052-OLP-0035-B016` | `OLP-0035` | 4.8 तुल्यबलता | `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:96-99` | `mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:103-106` | 43–44 |
+| `T052-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68` | `mr/content/sets-functions-relations/infinite/card-sb.tex:54-67` | 69–71 |
+| `T052-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 69–71 |
 
 ## T053 — composition / partial / total function
 
@@ -4271,6 +4412,8 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T053-OLP-0035-B012` | `OLP-0035` | 4.8 तुल्यबलता | `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:51-55` | `mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:52-57` | 43–44 |
 | `T053-OLP-0035-B015` | `OLP-0035` | 4.8 तुल्यबलता | `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:68-94` | `mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:70-101` | 43–44 |
 | `T053-OLP-0040-B021` | `OLP-0040` | 4.13 न्यूनीकरण | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:123-128` | `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:125-131` | 49–50 |
+| `T053-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68` | `mr/content/sets-functions-relations/infinite/card-sb.tex:54-67` | 69–71 |
+| `T053-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 69–71 |
 
 ## T054 — serial relation
 
@@ -4638,6 +4781,9 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T058-OLP-0037-B007` | `OLP-0037` | 4.10 आकारमानाची कल्पना आणि श्रेडर–बर्नस्टाइन प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:23-27` | `mr/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:23-27` | 45–46 |
 | `T058-OLP-0037-B008` | `OLP-0037` | 4.10 आकारमानाची कल्पना आणि श्रेडर–बर्नस्टाइन प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:29-32` | `mr/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:29-32` | 45–46 |
 | `T058-OLP-0037-B010` | `OLP-0037` | 4.10 आकारमानाची कल्पना आणि श्रेडर–बर्नस्टाइन प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:44-53` | `mr/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:43-51` | 45–46 |
+| `T058-OLP-0054-B005` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:9-14` | `mr/content/sets-functions-relations/infinite/card-sb.tex:9-14` | 69–71 |
+| `T058-OLP-0054-B011` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53` | `mr/content/sets-functions-relations/infinite/card-sb.tex:49-52` | 69–71 |
+| `T058-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 69–71 |
 
 ## T059 — actual infinity
 
@@ -4698,27 +4844,28 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 
 **Chosen rendering/action:** पुनरावर्ती / पुनरावर्ती रीतीने परिभाषित
 
-**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
 
-**Intended sense:** Provisional compositional rendering for a definition whose next value is selected from earlier values. No exact Marathi recursion terminology source was checked before first use; the frozen construction governs meaning.
+**Intended sense:** MR-P060 directly attests प्रत्यावर्ती व्याख्या and प्रत्यावर्तनाने. The edition currently retains the already established पुनरावर्ती variant consistently; the official alternative is exposed for specialist review rather than silently mixing variants.
 
-**Rationale:** Provisional compositional rendering for a definition whose next value is selected from earlier values. No exact Marathi recursion terminology source was checked before first use; the frozen construction governs meaning.
+**Rationale:** MR-P060 directly attests प्रत्यावर्ती व्याख्या and प्रत्यावर्तनाने. The edition currently retains the already established पुनरावर्ती variant consistently; the official alternative is exposed for specialist review rather than silently mixing variants.
 
 **Authorities actually checked:**
 
-- `T061-NO-EXTERNAL-AUTHORITY` — No external Marathi authority is recorded for this exact label. (`not_checked`): No external Marathi authority was checked or found for this exact label before current use; the frozen English definition governs.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
 
 **Alternatives:**
 
-- पुनरावृत्तीने परिभाषित — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
-- आवर्ती व्याख्या — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रत्यावर्ती / प्रत्यावर्ती रीतीने परिभाषित — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रत्यावर्ती व्याख्या — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
 
-**Please double-check:** Please double-check: Does पुनरावर्ती describe recursive definition here without being mistaken for periodic recurrence?
+**Please double-check:** Please double-check: Should the edition globally normalize established पुनरावर्ती to the official glossary form प्रत्यावर्ती?
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T061-OLP-0029-B031` | `OLP-0029` | 4.2 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:233-242` | `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:238-250` | 31–34 |
 | `T061-OLP-0048-B021` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:187-213` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:188-214` | 61–64 |
+| `T061-OLP-0052-B012` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:51-64` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:54-66` | 67–68 |
 
 ## T062 — initial segment
 
@@ -5104,6 +5251,7 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T072-OLP-0048-B009` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:75-87` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:71-82` | 61–64 |
 | `T072-OLP-0048-B013` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:127-131` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:121-126` | 61–64 |
 | `T072-OLP-0048-B015` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:149-163` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:145-163` | 61–64 |
+| `T072-OLP-0052-B012` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:51-64` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:54-66` | 67–68 |
 
 ## T073 — Cantor's diagonal method / diagonalization / diagonal argument
 
@@ -5233,6 +5381,7 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T075-OLP-0037-B007` | `OLP-0037` | 4.10 आकारमानाची कल्पना आणि श्रेडर–बर्नस्टाइन प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:23-27` | `mr/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:23-27` | 45–46 |
 | `T075-OLP-0037-B010` | `OLP-0037` | 4.10 आकारमानाची कल्पना आणि श्रेडर–बर्नस्टाइन प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:44-53` | `mr/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:43-51` | 45–46 |
 | `T075-OLP-0044-B006` | `OLP-0044` | 5.3 वास्तव संख्या-रेषा | `upstream/content/sets-functions-relations/arithmetization/reals.tex:16-27` | `mr/content/sets-functions-relations/arithmetization/reals.tex:16-28` | 54–55 |
+| `T075-OLP-0054-B005` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:9-14` | `mr/content/sets-functions-relations/infinite/card-sb.tex:9-14` | 69–71 |
 
 ## T076 — Schröder–Bernstein theorem
 
@@ -5262,6 +5411,11 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T076-OLP-0037-B007` | `OLP-0037` | 4.10 आकारमानाची कल्पना आणि श्रेडर–बर्नस्टाइन प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:23-27` | `mr/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:23-27` | 45–46 |
 | `T076-OLP-0037-B009` | `OLP-0037` | 4.10 आकारमानाची कल्पना आणि श्रेडर–बर्नस्टाइन प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:34-42` | `mr/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:34-41` | 45–46 |
 | `T076-OLP-0037-B010` | `OLP-0037` | 4.10 आकारमानाची कल्पना आणि श्रेडर–बर्नस्टाइन प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:44-53` | `mr/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:43-51` | 45–46 |
+| `T076-OLP-0054-B004` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:7-7` | `mr/content/sets-functions-relations/infinite/card-sb.tex:7-7` | 69–71 |
+| `T076-OLP-0054-B005` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:9-14` | `mr/content/sets-functions-relations/infinite/card-sb.tex:9-14` | 69–71 |
+| `T076-OLP-0054-B006` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:16-23` | `mr/content/sets-functions-relations/infinite/card-sb.tex:16-22` | 69–71 |
+| `T076-OLP-0054-B010` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:49-49` | `mr/content/sets-functions-relations/infinite/card-sb.tex:47-47` | 69–71 |
+| `T076-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 69–71 |
 
 ## T077 — arithmetization
 
@@ -5289,6 +5443,8 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 |---|---|---|---|---|---|
 | `T077-OLP-0041-B004` | `OLP-0041` | 5 अंकगणितीकरण — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/arithmetization/arithmetization.tex:8-8` | `mr/content/sets-functions-relations/arithmetization/arithmetization.tex:8-8` | 51 |
 | `T077-OLP-0041-B005` | `OLP-0041` | 5 अंकगणितीकरण — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/arithmetization/arithmetization.tex:10-14` | `mr/content/sets-functions-relations/arithmetization/arithmetization.tex:10-13` | 51 |
+| `T077-OLP-0053-B004` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:11-12` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:11-12` | 68–69 |
+| `T077-OLP-0053-B008` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:42-64` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:40-62` | 68–69 |
 
 ## T078 — naive set theory
 
@@ -5316,6 +5472,10 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T078-OLP-0041-B005` | `OLP-0041` | 5 अंकगणितीकरण — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/arithmetization/arithmetization.tex:10-14` | `mr/content/sets-functions-relations/arithmetization/arithmetization.tex:10-13` | 51 |
 | `T078-OLP-0043-B005` | `OLP-0043` | 5.2 Z पासून Q कडे | `upstream/content/sets-functions-relations/arithmetization/rationals.tex:12-45` | `mr/content/sets-functions-relations/arithmetization/rationals.tex:12-44` | 53–54 |
 | `T078-OLP-0046-B012` | `OLP-0046` | 5.5 काही तात्त्विक चिंतन | `upstream/content/sets-functions-relations/arithmetization/reflections.tex:92-97` | `mr/content/sets-functions-relations/arithmetization/reflections.tex:87-92` | 57–58 |
+| `T078-OLP-0053-B007` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:28-40` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:26-38` | 68–69 |
+| `T078-OLP-0053-B008` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:42-64` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:40-62` | 68–69 |
+| `T078-OLP-0053-B014` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108` | 68–69 |
+| `T078-OLP-0054-B005` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:9-14` | `mr/content/sets-functions-relations/infinite/card-sb.tex:9-14` | 69–71 |
 
 ## T079 — number system
 
@@ -5341,6 +5501,8 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T079-OLP-0041-B005` | `OLP-0041` | 5 अंकगणितीकरण — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/arithmetization/arithmetization.tex:10-14` | `mr/content/sets-functions-relations/arithmetization/arithmetization.tex:10-13` | 51 |
+| `T079-OLP-0053-B005` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-19` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-17` | 68–69 |
+| `T079-OLP-0053-B014` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108` | 68–69 |
 
 ## T080 — integer / set of integers
 
@@ -5397,6 +5559,8 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T080-OLP-0047-B022` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:145-151` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:143-148` | 58–61 |
 | `T080-OLP-0048-B008` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:38-73` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:38-69` | 61–64 |
 | `T080-OLP-0048-B011` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:97-107` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:91-100` | 61–64 |
+| `T080-OLP-0053-B005` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-19` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-17` | 68–69 |
+| `T080-OLP-0053-B014` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108` | 68–69 |
 
 ## T081 — stipulative definition / stipulate
 
@@ -5424,6 +5588,8 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T081-OLP-0042-B013` | `OLP-0042` | 5.1 N पासून Z कडे | `upstream/content/sets-functions-relations/arithmetization/integers.tex:45-45` | `mr/content/sets-functions-relations/arithmetization/integers.tex:45-45` | 51–53 |
 | `T081-OLP-0042-B015` | `OLP-0042` | 5.1 N पासून Z कडे | `upstream/content/sets-functions-relations/arithmetization/integers.tex:57-88` | `mr/content/sets-functions-relations/arithmetization/integers.tex:57-87` | 51–53 |
 | `T081-OLP-0043-B007` | `OLP-0043` | 5.2 Z पासून Q कडे | `upstream/content/sets-functions-relations/arithmetization/rationals.tex:62-67` | `mr/content/sets-functions-relations/arithmetization/rationals.tex:60-65` | 53–54 |
+| `T081-OLP-0052-B012` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:51-64` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:54-66` | 67–68 |
+| `T081-OLP-0053-B006` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:21-26` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:19-24` | 68–69 |
 
 ## T082 — real number / real line
 
@@ -5491,6 +5657,10 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T082-OLP-0048-B020` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:181-185` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:181-186` | 61–64 |
 | `T082-OLP-0048-B022` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:215-224` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:216-227` | 61–64 |
 | `T082-OLP-0048-B023` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:226-227` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:229-237` | 61–64 |
+| `T082-OLP-0053-B005` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-19` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-17` | 68–69 |
+| `T082-OLP-0053-B006` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:21-26` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:19-24` | 68–69 |
+| `T082-OLP-0053-B008` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:42-64` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:40-62` | 68–69 |
+| `T082-OLP-0053-B014` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108` | 68–69 |
 
 ## T083 — irrational number
 
@@ -5526,6 +5696,7 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T083-OLP-0044-B013` | `OLP-0044` | 5.3 वास्तव संख्या-रेषा | `upstream/content/sets-functions-relations/arithmetization/reals.tex:82-82` | `mr/content/sets-functions-relations/arithmetization/reals.tex:98-101` | 54–55 |
 | `T083-OLP-0048-B007` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:21-36` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:21-36` | 61–64 |
 | `T083-OLP-0048-B008` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:38-73` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:38-69` | 61–64 |
+| `T083-OLP-0054-B006` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:16-23` | `mr/content/sets-functions-relations/infinite/card-sb.tex:16-22` | 69–71 |
 
 ## T084 — ordered field
 
@@ -5644,6 +5815,7 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T086-OLP-0047-B025` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:170-173` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:167-171` | 58–61 |
 | `T086-OLP-0047-B027` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:179-182` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:177-180` | 58–61 |
 | `T086-OLP-0047-B028` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:184-206` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:182-204` | 58–61 |
+| `T086-OLP-0053-B006` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:21-26` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:19-24` | 68–69 |
 
 ## T087 — greatest lower bound
 
@@ -5784,6 +5956,8 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | `T090-OLP-0047-B011` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:74-74` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:75-75` | 58–61 |
 | `T090-OLP-0047-B012` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:76-90` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:77-91` | 58–61 |
 | `T090-OLP-0047-B019` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:127-136` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:126-134` | 58–61 |
+| `T090-OLP-0051-B004` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:12-14` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:12-14` | 66–67 |
+| `T090-OLP-0052-B012` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:51-64` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:54-66` | 67–68 |
 
 ## T091 — trichotomy / trichotomic property
 
@@ -5979,6 +6153,313 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 |---|---|---|---|---|---|
 | `T097-OLP-0048-B014` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:133-147` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:128-143` | 61–64 |
 | `T097-OLP-0048-B015` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:149-163` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:145-163` | 61–64 |
+
+## T098 — infinite set / infinite
+
+**Chosen rendering/action:** अनंत संच / अनंत
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P003 directly lists अनंत संच among types of sets, and MR-P032 uses अनंत in native set-theoretic exposition. OpenLogic controls the definitions and later Dedekind characterization.
+
+**Rationale:** MR-P003 directly lists अनंत संच among types of sets, and MR-P032 uses अनंत in native set-theoretic exposition. OpenLogic controls the definitions and later Dedekind characterization.
+
+**Authorities actually checked:**
+
+- `MR-P003` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 4 (`checked_supports`): visually-read-page-image
+- `MR-P032` — MR-C004. https://vishwakosh.marathi.gov.in/34075/ (`checked_supports`): Consulted for this decision. Limitation: Same previously indexed source, new actual consultation. The witness's positive-natural-number convention and its restriction to infinite countable sets do not replace OpenLogic conventions. Missing/corrupt mathematical glyphs and source historical assertions are not imported. Original HTML remains unavailable.
+
+**Alternatives:**
+
+- अपरिमित संच — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- असीम संच — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is अनंत संच the clearest stable rendering across the Hilbert-hotel and Dedekind-infinity discussion?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T098-OLP-0049-B004` | `OLP-0049` | 6 अनंत संच — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/infinite/infinite.tex:8-8` | `mr/content/sets-functions-relations/infinite/infinite.tex:8-8` | 65 |
+| `T098-OLP-0050-B003` | `OLP-0050` | 6.1 हिल्बर्ट यांचे हॉटेल | `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:9-10` | `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:9-10` | 65–66 |
+| `T098-OLP-0050-B004` | `OLP-0050` | 6.1 हिल्बर्ट यांचे हॉटेल | `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:12-23` | `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:12-24` | 65–66 |
+| `T098-OLP-0050-B005` | `OLP-0050` | 6.1 हिल्बर्ट यांचे हॉटेल | `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:25-58` | `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:26-58` | 65–66 |
+| `T098-OLP-0051-B004` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:12-14` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:12-14` | 66–67 |
+| `T098-OLP-0051-B005` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-39` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-38` | 66–67 |
+| `T098-OLP-0053-B011` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:88-90` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:85-87` | 68–69 |
+| `T098-OLP-0053-B013` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:100-111` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:96-106` | 68–69 |
+
+## T099 — Dedekind infinite
+
+**Chosen rendering/action:** डेडेकिंड-अनंत
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The hyphenated rendering preserves Dedekind's name and the directly attested mathematical adjective अनंत. OpenLogic's injection-to-a-proper-subset definition fixes the technical sense; the checked sources support its component terms rather than the full eponymous phrase.
+
+**Rationale:** The hyphenated rendering preserves Dedekind's name and the directly attested mathematical adjective अनंत. OpenLogic's injection-to-a-proper-subset definition fixes the technical sense; the checked sources support its component terms rather than the full eponymous phrase.
+
+**Authorities actually checked:**
+
+- `MR-P003` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 4 (`checked_supports`): visually-read-page-image
+- `MR-P005` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 7 (`checked_supports`): visually-read-page-image
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P032` — MR-C004. https://vishwakosh.marathi.gov.in/34075/ (`checked_supports`): Consulted for this decision. Limitation: Same previously indexed source, new actual consultation. The witness's positive-natural-number convention and its restriction to infinite countable sets do not replace OpenLogic conventions. Missing/corrupt mathematical glyphs and source historical assertions are not imported. Original HTML remains unavailable.
+
+**Alternatives:**
+
+- डेडेकिंडच्या अर्थाने अनंत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- डेडेकिंड अनंत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the compact technical adjective remain डेडेकिंड-अनंत, or should later prose expand it as डेडेकिंडच्या अर्थाने अनंत?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T099-OLP-0050-B006` | `OLP-0050` | 6.1 हिल्बर्ट यांचे हॉटेल | `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:60-64` | `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:60-64` | 65–66 |
+| `T099-OLP-0051-B014` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:91-96` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:91-95` | 66–67 |
+| `T099-OLP-0051-B015` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:98-100` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:97-99` | 66–67 |
+| `T099-OLP-0051-B016` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:102-107` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:101-106` | 66–67 |
+| `T099-OLP-0052-B007` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:23-27` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:24-29` | 67–68 |
+| `T099-OLP-0053-B005` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-19` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-17` | 68–69 |
+| `T099-OLP-0053-B009` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:66-71` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:64-69` | 68–69 |
+| `T099-OLP-0053-B010` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:73-86` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:71-83` | 68–69 |
+| `T099-OLP-0053-B011` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:88-90` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:85-87` | 68–69 |
+
+## T100 — Dedekind algebra
+
+**Chosen rendering/action:** डेडेकिंड बीजसंरचना
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** बीजसंरचना marks an algebraic structure rather than the school subject बीजगणित. The checked sources attest its set/function and algebraic-property components; OpenLogic's displayed triple and clauses fix the specialized eponymous sense.
+
+**Rationale:** बीजसंरचना marks an algebraic structure rather than the school subject बीजगणित. The checked sources attest its set/function and algebraic-property components; OpenLogic's displayed triple and clauses fix the specialized eponymous sense.
+
+**Authorities actually checked:**
+
+- `MR-P001` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 2 (`checked_supports`): visually-read-page-image
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P048` — गणितशास्त्र परिभाषा कोश — A glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/a (`checked_supports`): Primary official Government of Maharashtra mathematics glossary read through web open. Limitation: Observation hash is not an origin-page hash.
+- `MR-P049` — गणितशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Primary official Government of Maharashtra mathematics glossary read in web-search extraction. Limitation: Observation hash is not an origin-page hash.
+- `MR-P050` — गणितशास्त्र परिभाषा कोश — D glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/d (`checked_supports`): Primary official Government of Maharashtra mathematics glossary read through web open. Limitation: Observation hash is not an origin-page hash.
+
+**Alternatives:**
+
+- डेडेकिंड बीजगणित — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- डेडेकिंड बीजीय संरचना — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does बीजसंरचना clearly denote the structured triple (A,f,o), rather than the discipline of algebra?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T100-OLP-0051-B003` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:9-10` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:9-10` | 66–67 |
+| `T100-OLP-0051-B013` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:81-89` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:81-89` | 66–67 |
+| `T100-OLP-0051-B014` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:91-96` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:91-95` | 66–67 |
+| `T100-OLP-0051-B015` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:98-100` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:97-99` | 66–67 |
+| `T100-OLP-0051-B016` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:102-107` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:101-106` | 66–67 |
+| `T100-OLP-0052-B004` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:9-10` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:9-10` | 67–68 |
+| `T100-OLP-0052-B005` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14` | 67–68 |
+| `T100-OLP-0052-B006` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:16-21` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:16-22` | 67–68 |
+| `T100-OLP-0052-B007` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:23-27` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:24-29` | 67–68 |
+| `T100-OLP-0052-B009` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:33-35` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:36-38` | 67–68 |
+| `T100-OLP-0052-B012` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:51-64` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:54-66` | 67–68 |
+| `T100-OLP-0053-B004` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:11-12` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:11-12` | 68–69 |
+| `T100-OLP-0053-B005` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-19` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-17` | 68–69 |
+| `T100-OLP-0053-B006` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:21-26` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:19-24` | 68–69 |
+| `T100-OLP-0053-B009` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:66-71` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:64-69` | 68–69 |
+| `T100-OLP-0053-B013` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:100-111` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:96-106` | 68–69 |
+
+## T101 — closed under a function / f-closed
+
+**Chosen rendering/action:** फलनाखाली बंद / f-बंद
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** A definition-controlled rendering states directly that applying the function stays inside the set. The sources attest the set and function vocabulary, while OpenLogic's quantified formula controls closure here; relation closure संवरण is kept distinct.
+
+**Rationale:** A definition-controlled rendering states directly that applying the function stays inside the set. The sources attest the set and function vocabulary, while OpenLogic's quantified formula controls closure here; relation closure संवरण is kept distinct.
+
+**Authorities actually checked:**
+
+- `MR-P001` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 2 (`checked_supports`): visually-read-page-image
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+
+**Alternatives:**
+
+- फलन-संवृत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- फलनाखाली संवृत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is फलनाखाली बंद sufficiently formal and clearly distinct from the relation-closure operator संवरण?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T101-OLP-0051-B005` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-39` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-38` | 66–67 |
+| `T101-OLP-0051-B006` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:41-46` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:40-45` | 66–67 |
+| `T101-OLP-0051-B007` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:48-61` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:47-59` | 66–67 |
+| `T101-OLP-0051-B008` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:63-67` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:61-65` | 66–67 |
+| `T101-OLP-0051-B010` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:72-73` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:70-73` | 66–67 |
+| `T101-OLP-0051-B013` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:81-89` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:81-89` | 66–67 |
+| `T101-OLP-0051-B014` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:91-96` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:91-95` | 66–67 |
+| `T101-OLP-0051-B016` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:102-107` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:101-106` | 66–67 |
+| `T101-OLP-0051-B019` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:115-116` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:114-121` | 66–67 |
+| `T101-OLP-0052-B005` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14` | 67–68 |
+| `T101-OLP-0052-B006` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:16-21` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:16-22` | 67–68 |
+| `T101-OLP-0054-B007` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:25-33` | `mr/content/sets-functions-relations/infinite/card-sb.tex:24-31` | 69–71 |
+| `T101-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43` | `mr/content/sets-functions-relations/infinite/card-sb.tex:33-41` | 69–71 |
+| `T101-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68` | `mr/content/sets-functions-relations/infinite/card-sb.tex:54-67` | 69–71 |
+| `T101-OLP-0054-B013` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:70-73` | `mr/content/sets-functions-relations/infinite/card-sb.tex:69-72` | 69–71 |
+| `T101-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83` | `mr/content/sets-functions-relations/infinite/card-sb.tex:80-85` | 69–71 |
+
+## T102 — first-order logic
+
+**Chosen rendering/action:** प्रथम-क्रम तर्कशास्त्र
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked university syllabus distinguishes propositional and quantified/predicate logic in Marathi. प्रथम-क्रम is a compositional qualifier for the precise OpenLogic fragment and does not collapse it into propositional logic.
+
+**Rationale:** The checked university syllabus distinguishes propositional and quantified/predicate logic in Marathi. प्रथम-क्रम is a compositional qualifier for the precise OpenLogic fragment and does not collapse it into propositional logic.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+
+**Alternatives:**
+
+- प्रथम कोटीचे तर्कशास्त्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रथम-स्तरीय तर्कशास्त्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is प्रथम-क्रम तर्कशास्त्र the clearest current Marathi specialist label for first-order logic?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T102-OLP-0051-B005` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-39` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:16-38` | 66–67 |
+| `T102-OLP-0053-B007` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:28-40` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:26-38` | 68–69 |
+| `T102-OLP-0053-B008` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:42-64` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:40-62` | 68–69 |
+| `T102-OLP-0053-B009` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:66-71` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:64-69` | 68–69 |
+
+## T103 — parameter (of a formula)
+
+**Chosen rendering/action:** प्राचल
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P059 directly attests parameter — प्राचल in the official mathematics glossary. OpenLogic governs the logical explanation using displayed free variables.
+
+**Rationale:** MR-P059 directly attests parameter — प्राचल in the official mathematics glossary. OpenLogic governs the logical explanation using displayed free variables.
+
+**Authorities actually checked:**
+
+- `MR-P059` — गणितशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/p (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash.
+
+**Alternatives:**
+
+- परामापी — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- परामूल्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does प्राचल remain clear when a formula parameter is an arbitrary object rather than a numerical coefficient?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T103-OLP-0052-B009` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:33-35` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:36-38` | 67–68 |
+| `T103-OLP-0052-B011` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:46-49` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:49-52` | 67–68 |
+
+## T104 — free variable
+
+**Chosen rendering/action:** मुक्त चर
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P007 directly uses मुक्त आणि बद्ध चरे in a university logic syllabus. The displayed OpenLogic formula fixes which variables are free.
+
+**Rationale:** MR-P007 directly uses मुक्त आणि बद्ध चरे in a university logic syllabus. The displayed OpenLogic formula fixes which variables are free.
+
+**Authorities actually checked:**
+
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+
+**Alternatives:**
+
+- स्वतंत्र चर — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is मुक्त चर preferable throughout the later syntax chapters to स्वतंत्र चर?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T104-OLP-0052-B011` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:46-49` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:49-52` | 67–68 |
+
+## T105 — isomorphic / isomorphism
+
+**Chosen rendering/action:** समरूपी / समरूपता
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P062 directly supplies समरूप and समरूपता/समरूपण for the isomorphism family. OpenLogic's Dedekind-algebra theorem controls the structure-preserving mathematical sense.
+
+**Rationale:** MR-P062 directly supplies समरूप and समरूपता/समरूपण for the isomorphism family. OpenLogic's Dedekind-algebra theorem controls the structure-preserving mathematical sense.
+
+**Authorities actually checked:**
+
+- `MR-P062` — मराठी विश्वकोश — indexed isomorphism entries. https://shabdakosh.marathi.gov.in/ananya-glossary/41?page=651 (`checked_supports`): Primary Government of Maharashtra terminology aggregation read in current web-search extraction. Limitation: The aggregated entry spans several disciplines and senses; observation hash is not an origin-page hash.
+
+**Alternatives:**
+
+- समाकृतिक / समाकृती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- समरूपण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: In abstract algebraic prose, are समरूपी and समरूपता preferable to समाकृतिक and समाकृती?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T105-OLP-0053-B006` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:21-26` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:19-24` | 68–69 |
+
+## T106 — structuralism / structuralist
+
+**Chosen rendering/action:** संरचनावाद / संरचनावादी
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P063 directly attests संरचनावाद. The adjectival form is a regular extension; OpenLogic supplies the philosophy-of-mathematics context.
+
+**Rationale:** MR-P063 directly attests संरचनावाद. The adjectival form is a regular extension; OpenLogic supplies the philosophy-of-mathematics context.
+
+**Authorities actually checked:**
+
+- `MR-P063` — लोकप्रशासन परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/26/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: The source is cross-disciplinary rather than a philosophy-of-mathematics exposition; observation hash is not an origin-page hash.
+
+**Alternatives:**
+
+- रचनावाद / रचनावादी — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does संरचनावादी best identify contemporary mathematical structuralists without suggesting only linguistic or administrative structuralism?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T106-OLP-0053-B006` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:21-26` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:19-24` | 68–69 |
+
+## T107 — embed / embedding a theory
+
+**Chosen rendering/action:** अंतःस्थापन करणे / अंतःस्थापन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P064 directly attests the embed verb. OpenLogic controls the technical claim that one theory is represented inside another rather than physically inserted.
+
+**Rationale:** MR-P064 directly attests the embed verb. OpenLogic controls the technical claim that one theory is represented inside another rather than physically inserted.
+
+**Authorities actually checked:**
+
+- `MR-P064` — Embed — मराठी शब्दकोश. https://shabdakosh.marathi.gov.in/node/99584 (`checked_supports`): Primary Government of Maharashtra dictionary entry read in current web-search extraction. Limitation: Generic rather than model-theoretic entry; observation hash is not an origin-page hash.
+
+**Alternatives:**
+
+- अंतस्थापन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- समाविष्ट करणे — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is अंतःस्थापन sufficiently clear for embedding a theory into set theory before formal interpretation maps are introduced?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T107-OLP-0053-B007` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:28-40` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:26-38` | 68–69 |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -6833,6 +7314,82 @@ Coverage: 45/722 source units through OLP-0048; 127 applied decisions; 3,743 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `MRARITH-012-OLP-0048` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:133-147` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:126-143` | 62 |
+
+## MRINF-001 — confirmed English grammatical omission
+
+**Chosen rendering/action:** The Marathi renders the evident intended claim directly; frozen English bytes remain unchanged.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The source says ‘must be characterize’ where the infinitive construction requires ‘must be to characterize’ or ‘must characterize.’
+
+**Rationale:** The source says ‘must be characterize’ where the infinitive construction requires ‘must be to characterize’ or ‘must characterize.’ Chosen action: The Marathi renders the evident intended claim directly; frozen English bytes remain unchanged.
+
+**Authorities actually checked:**
+
+- `MRINF-001-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for MRINF-001. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Mirror the malformed English syntax — `rejected`: Not chosen; the source finding and recorded action control.
+- Add an editorial note in the reader — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the direct Marathi repair preserve the intended methodological claim without needing a visible source note?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `MRINF-001-OLP-0050` | `OLP-0050` | 6.1 हिल्बर्ट यांचे हॉटेल | `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:14-14` | `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:14-14` | 65–66 |
+
+## MRINF-002 — underspecified ambient carrier in closure lemma
+
+**Chosen rendering/action:** Preserved the displayed statement and proof because all later applications explicitly use endofunctions g:D→D or f:A→A; recorded the hidden carrier assumption for expert review rather than inventing a formal repair.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The lemma quantifies ‘any function f and any o in A’ without introducing A, and its witness ran(f) union {o} is automatically f-closed only when the function is understood on an invariant ambient carrier containing o.
+
+**Rationale:** The lemma quantifies ‘any function f and any o in A’ without introducing A, and its witness ran(f) union {o} is automatically f-closed only when the function is understood on an invariant ambient carrier containing o. Chosen action: Preserved the displayed statement and proof because all later applications explicitly use endofunctions g:D→D or f:A→A; recorded the hidden carrier assumption for expert review rather than inventing a formal repair.
+
+**Authorities actually checked:**
+
+- `MRINF-002-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for MRINF-002. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Insert f:A→A into the lemma — `rejected`: Not chosen; the source finding and recorded action control.
+- Define f-closed only for subsets of dom(f) — `rejected`: Not chosen; the source finding and recorded action control.
+- Leave the ambient carrier implicit — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Should the lemma explicitly quantify an endofunction f:A→A and o∈A, and should its closure definition be restricted to subsets of A?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `MRINF-002-OLP-0051` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:54-65` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:52-64` | 66–67 |
+
+## MRINF-003 — confirmed malformed helper-proposition conclusion
+
+**Chosen rendering/action:** Used the mathematically forced B≈C conclusion in Marathi, added the adjacent MRINF-003 note, kept frozen English bytes unchanged, and registered a narrow exact-QA projection.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** Under A⊆B⊆C and A≈C, the source writes a nested cardinal-equality expression with A≈B in the first set position. The required conclusion is B≈C.
+
+**Rationale:** Under A⊆B⊆C and A≈C, the source writes a nested cardinal-equality expression with A≈B in the first set position. The required conclusion is B≈C. Chosen action: Used the mathematically forced B≈C conclusion in Marathi, added the adjacent MRINF-003 note, kept frozen English bytes unchanged, and registered a narrow exact-QA projection.
+
+**Authorities actually checked:**
+
+- `MRINF-003-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for MRINF-003. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Reproduce the malformed nested expression — `rejected`: Not chosen; the source finding and recorded action control.
+- Render B≈C without documenting the repair — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Confirm the source should read ‘then B≈C’ and that the repair needs no further qualification.
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `MRINF-003-OLP-0054` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:52-52` | `mr/content/sets-functions-relations/infinite/card-sb.tex:52-52` | 70 |
 
 ## Deferred prospective decisions
 
