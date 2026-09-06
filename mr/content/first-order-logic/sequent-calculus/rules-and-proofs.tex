@@ -1,0 +1,77 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{rul}}
+      {\olfileid{pl}{seq}{rul}}
+
+\olsection{नियम आणि \usetoken{P}{derivation}}
+
+पुढील मजकुरात, $\Gamma, \Delta, \Pi, \Lambda$ या !!{sentence}s च्या सांत
+क्रमिका दर्शवतील, असे मानू.
+
+\begin{defn}[क्रमवर्ती]
+\emph{क्रमवर्ती} म्हणजे पुढील रूपाची अभिव्यक्ती होय:
+\[
+\Gamma \Sequent \Delta
+\]
+येथे $\Gamma$ आणि $\Delta$ या $\Lang L$ भाषेतील !!{sentence}s च्या
+सांत (संभवतः रिक्त) क्रमिका आहेत. $\Gamma$ ला \emph{पूर्वांग}, तर
+$\Delta$ ला \emph{उत्तरांग} म्हणतात.
+\end{defn}
+
+\begin{explain}
+क्रमवर्तीमागील अंतःप्रेरित कल्पना अशी आहे: पूर्वांगातील सर्व !!{sentence}s
+सत्य असतील, तर उत्तरांगातील !!{sentence}s पैकी किमान एक सत्य असते. म्हणजे,
+$\Gamma = \tuple{!A_1, \dots, !A_m}$ आणि
+$\Delta = \tuple{!B_1, \dots, !B_n}$ असतील, तर $\Gamma \Sequent \Delta$
+तेव्हा आणि केवळ तेव्हाच सत्य असते, जेव्हा
+\[
+(!A_1 \land \cdots \land !A_m) \lif (!B_1 \lor \cdots \lor
+!B_n)
+\]
+सत्य असते. याची दोन विशेष प्रकरणे आहेत: $\Gamma$ रिक्त असण्याचे आणि
+$\Delta$~रिक्त असण्याचे. $\Gamma$ रिक्त असेल, म्हणजेच $m = 0$ असेल, तर
+$\quad \Sequent \Delta$ तेव्हा आणि केवळ तेव्हाच सत्य असते, जेव्हा
+$!B_1 \lor \dots \lor !B_n$ सत्य असते. $\Delta$ रिक्त असेल, म्हणजेच
+$n = 0$ असेल, तर $\Gamma \Sequent \quad$ तेव्हा आणि केवळ तेव्हाच सत्य
+असते, जेव्हा $\lnot(!A_1 \land \dots \land !A_m)$ सत्य असते. एखाद्या
+क्रमवर्तीला तेव्हा आणि केवळ तेव्हाच वैध म्हणतो, जेव्हा तिच्याशी संबंधित
+!!{sentence} वैध असते.
+\end{explain}
+
+$\Gamma$ ही !!{sentence}s ची क्रमिका असेल, तर $\Gamma$ च्या उजव्या टोकाला
+$!A$ जोडून मिळणाऱ्या क्रमिकेसाठी आपण $\Gamma, !A$ लिहितो (आणि $\Gamma$
+च्या डाव्या टोकाला $!A$ जोडून मिळणाऱ्या क्रमिकेसाठी $!A, \Gamma$
+लिहितो). $\Delta$ हीदेखील !!{sentence}s ची क्रमिका असेल, तर $\Gamma,
+\Delta$ ही त्या दोन क्रमिकांची जोडणी असते.
+
+\begin{defn}[आरंभीची क्रमवर्ती]
+\emph{आरंभीची क्रमवर्ती} म्हणजे, भाषेतील कोणत्याही !!{sentence}~$!A$ साठी,
+\iftag{prvFalse,prvTrue}{पुढीलपैकी एका रूपाची क्रमवर्ती होय:
+  \begin{enumerate}
+    \item $!A \Sequent !A$
+    \tagitem{prvTrue}{$\quad \Sequent \ltrue$}{}
+    \tagitem{prvFalse}{$\lfalse \Sequent \quad$}{}
+  \end{enumerate}}
+{$!A \Sequent !A$ या रूपाची क्रमवर्ती होय}.
+\end{defn}
+
+क्रमवर्ती कलनातील !!^{derivation}s हे क्रमवर्तींचे विशिष्ट वृक्ष असतात.
+त्यांतील सर्वांत वरच्या क्रमवर्ती आरंभीच्या क्रमवर्ती असतात; आणि एखादी
+क्रमवर्ती इतर एक किंवा दोन क्रमवर्तींच्या खाली असेल, तर ती निगमनाच्या
+एखाद्या नियमानुसार त्यांच्यापासून योग्य रीतीने निष्पन्न झाली पाहिजे.
+$\Log{LK}$ चे नियम दोन मुख्य प्रकारांत विभागले आहेत: \emph{तार्किक} नियम
+आणि \emph{संरचनात्मक} नियम. खालच्या क्रमवर्तीतील $!A$ आणि/किंवा $!B$
+असलेल्या !!{sentence} च्या !!{main
+  operator} वरून तार्किक नियमांना नावे दिली
+जातात. प्रत्येक नियमाच्या दोन आवृत्त्या असतात: !!{operator} असलेले
+!!{sentence} डावीकडे असणारी क्रमवर्ती निष्पन्न करण्यासाठी एक, आणि ते
+!!{sentence} उजवीकडे असणारी क्रमवर्ती निष्पन्न करण्यासाठी दुसरी.
+
+\end{document}

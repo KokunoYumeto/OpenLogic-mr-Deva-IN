@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occurrences.
+Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occurrences.
 
 ## T001 — set
 
@@ -1420,6 +1420,7 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 | `T009-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
 | `T009-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
 | `T009-OLP-0064-B010` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | 82–83 |
+| `T009-OLP-0070-B008` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | pending |
 
 ## T010 — truth / truth value
 
@@ -1476,6 +1477,7 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 | `T010-OLP-0066-B007` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | 84–85 |
 | `T010-OLP-0067-B006` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | 85–86 |
 | `T010-OLP-0067-B007` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | 85–86 |
+| `T010-OLP-0070-B008` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | pending |
 
 ## T011 — syntax
 
@@ -1779,6 +1781,7 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 | `T016-OLP-0066-B009` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | 84–85 |
 | `T016-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 85–86 |
 | `T016-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
+| `T016-OLP-0070-B008` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | pending |
 
 ## T017 — union
 
@@ -3487,6 +3490,7 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 | `T041-OLP-0067-B007` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | 85–86 |
 | `T041-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 85–86 |
 | `T041-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
+| `T041-OLP-0070-B011` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | pending |
 
 ## T042 — least / well-ordered / predecessor / successor
 
@@ -3803,6 +3807,8 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 | `T044-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 86–87 |
 | `T044-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
 | `T044-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
+| `T044-OLP-0070-B005` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:13-13` | pending |
+| `T044-OLP-0070-B011` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | pending |
 
 ## T045 — function / mapping
 
@@ -7504,6 +7510,11 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 | `T126-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
 | `T126-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 86–87 |
 | `T126-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
+| `T126-OLP-0070-B006` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:15-16` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:15-16` | pending |
+| `T126-OLP-0070-B007` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26` | pending |
+| `T126-OLP-0070-B008` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | pending |
+| `T126-OLP-0070-B009` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:46-50` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:48-52` | pending |
+| `T126-OLP-0070-B010` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:52-61` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:54-63` | pending |
 
 ## T127 — propositional constant
 
@@ -7665,6 +7676,7 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 | `T129-OLP-0058-B033` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | 74–75 |
 | `T129-OLP-0059-B007` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39` | 75–77 |
 | `T129-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T129-OLP-0070-B011` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | pending |
 
 ## T130 — abbreviation / abbreviates
 
@@ -7843,6 +7855,7 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 | `T134-OLP-0060-B007` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:20-34` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:19-33` | 77–78 |
 | `T134-OLP-0060-B014` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:114-118` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:110-114` | 77–78 |
 | `T134-OLP-0060-B016` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:126-151` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:122-147` | 77–78 |
+| `T134-OLP-0070-B009` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:46-50` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:48-52` | pending |
 
 ## T135 — preliminaries
 
@@ -8135,6 +8148,9 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 | `T144-OLP-0060-B012` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:103-108` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:99-104` | 77–78 |
 | `T144-OLP-0060-B016` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:126-151` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:122-147` | 77–78 |
 | `T144-OLP-0062-B009` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61` | 81 |
+| `T144-OLP-0070-B006` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:15-16` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:15-16` | pending |
+| `T144-OLP-0070-B007` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26` | pending |
+| `T144-OLP-0070-B009` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:46-50` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:48-52` | pending |
 
 ## T145 — evaluation / evaluation function
 
@@ -8345,6 +8361,8 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 | `T151-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
 | `T151-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 86–87 |
 | `T151-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
+| `T151-OLP-0070-B005` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:13-13` | pending |
+| `T151-OLP-0070-B011` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -8384,6 +8402,7 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 | `T152-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
 | `T152-OLP-0069-B004` | `OLP-0069` |  | `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:8-10` | `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:8-10` | pending |
 | `T152-OLP-0069-B005` | `OLP-0069` |  | `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | pending |
+| `T152-OLP-0070-B011` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | pending |
 
 ## T153 — truth tree / tableaux proof / resolution method and refutation
 
@@ -8536,6 +8555,10 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 | `T157-OLP-0065-B007` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | 83–84 |
 | `T157-OLP-0065-B008` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | 83–84 |
 | `T157-OLP-0065-B009` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | 83–84 |
+| `T157-OLP-0070-B007` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26` | pending |
+| `T157-OLP-0070-B008` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | pending |
+| `T157-OLP-0070-B010` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:52-61` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:54-63` | pending |
+| `T157-OLP-0070-B011` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | pending |
 
 ## T158 — proof by cases / indirect proof / conditional proof
 
@@ -8934,6 +8957,63 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T171-OLP-0069-B005` | `OLP-0069` |  | `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | pending |
+
+## T172 — sequent antecedent / succedent / initial sequent
+
+**Chosen rendering/action:** पूर्वांग / उत्तरांग / आरंभीची क्रमवर्ती
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The official logic glossary directly gives antecedent as पूर्वांग and consequent as उत्तरांग, while the official mathematics glossary attests क्रमिका and the Vishwakosh directly attests क्रमवर्ती कलन. No checked official entry names the proof-theoretic succedent or initial sequent. The target therefore uses the directly attested paired side labels and the transparent आरंभीची क्रमवर्ती, with the displayed source definition fixing the left sequence, right sequence and permitted initial forms exactly.
+
+**Rationale:** The official logic glossary directly gives antecedent as पूर्वांग and consequent as उत्तरांग, while the official mathematics glossary attests क्रमिका and the Vishwakosh directly attests क्रमवर्ती कलन. No checked official entry names the proof-theoretic succedent or initial sequent. The target therefore uses the directly attested paired side labels and the transparent आरंभीची क्रमवर्ती, with the displayed source definition fixing the left sequence, right sequence and permitted initial forms exactly.
+
+**Authorities actually checked:**
+
+- `MR-P079` — गणितशास्त्र परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P093` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — A glossary, antecedent observation. https://shabdakosh.marathi.gov.in/ananya-glossary/7/a (`checked_supports`): Primary Government of Maharashtra terminology page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the entry does not itself attest a sequent antecedent.
+- `MR-P094` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary, consequent observation. https://shabdakosh.marathi.gov.in/ananya-glossary/7/c (`checked_supports`): Primary Government of Maharashtra terminology page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; उत्तरांग is a definition-controlled extension from consequent to succedent.
+
+**Alternatives:**
+
+- पूर्वक्रमिका / उत्तरक्रमिका / प्रारंभिक क्रमवर्ती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- पूर्वपक्ष / उत्तरपक्ष / आद्य क्रमवर्ती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अँटिसिडेंट / सक्सिडेंट / इनिशियल सिक्वेंट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: In Marathi proof theory, are पूर्वांग and उत्तरांग sufficiently clear for the left and right sides of a sequent, and is आरंभीची क्रमवर्ती natural for initial sequent?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T172-OLP-0070-B007` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26` | pending |
+| `T172-OLP-0070-B008` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | pending |
+| `T172-OLP-0070-B010` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:52-61` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:54-63` | pending |
+
+## T173 — logical rule / structural rule (sequent calculus)
+
+**Chosen rendering/action:** तार्किक नियम / संरचनात्मक नियम
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The university and Vishwakosh sources directly establish inference-rule and sequent-calculus vocabulary. तार्किक and संरचनात्मक are transparent qualifiers; the frozen source defines their local contrast by whether a rule is named for a sentence's main operator or acts on sequent structure. No checked Marathi authority directly attested the full paired labels.
+
+**Rationale:** The university and Vishwakosh sources directly establish inference-rule and sequent-calculus vocabulary. तार्किक and संरचनात्मक are transparent qualifiers; the frozen source defines their local contrast by whether a rule is named for a sentence's main operator or acts on sequent structure. No checked Marathi authority directly attested the full paired labels.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- तर्कनियम / संरचना-नियम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- तार्किक निगमन नियम / रचनात्मक नियम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are तार्किक नियम and संरचनात्मक नियम the preferred Marathi labels for the logical/structural rule distinction in LK?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T173-OLP-0070-B011` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -9942,6 +10022,6 @@ Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occ
 
 ## Deferred prospective decisions
 
-The following legacy decisions have no occurrence in the current coverage and are not 
-fabricated into the canonical record: `T013`. They remain 
+The following legacy decisions have no occurrence in the current coverage and are not
+fabricated into the canonical record: `T013`. They remain
 available in `../EXPERT_REVIEW_DECISIONS.jsonl` until translated source creates a real locator.

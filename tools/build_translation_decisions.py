@@ -65,6 +65,11 @@ def jsonl(path):
 
 
 def write_text(path, text):
+    if Path(path).suffix == ".md":
+        had_final_newline = text.endswith("\n")
+        text = "\n".join(line.rstrip() for line in text.splitlines())
+        if had_final_newline:
+            text += "\n"
     Path(path).write_bytes(text.encode("utf-8"))
 
 
