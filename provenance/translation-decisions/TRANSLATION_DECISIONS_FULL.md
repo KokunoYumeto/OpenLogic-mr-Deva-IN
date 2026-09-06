@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occurrences.
+Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occurrences.
 
 ## T001 — set
 
@@ -376,6 +376,8 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T001-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 70–72 |
 | `T001-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
 | `T001-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
+| `T001-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
+| `T001-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
 
 ## T002 — element/member
 
@@ -643,6 +645,7 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T002-OLP-0045-B006` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:26-36` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:25-35` | 56–58 |
 | `T002-OLP-0045-B010` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:58-78` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:57-83` | 56–58 |
 | `T002-OLP-0054-B016` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:85-87` | `mr/content/sets-functions-relations/infinite/card-sb.tex:87-89` | 70–72 |
+| `T002-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
 
 ## T003 — empty set
 
@@ -1081,6 +1084,7 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T005-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83` | `mr/content/sets-functions-relations/infinite/card-sb.tex:80-85` | 70–72 |
 | `T005-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 70–72 |
 | `T005-OLP-0062-B009` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61` | 81 |
+| `T005-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
 
 ## T006 — proper subset
 
@@ -1465,6 +1469,8 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T010-OLP-0061-B020` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:186-188` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:188-191` | 78–81 |
 | `T010-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
 | `T010-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
+| `T010-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
+| `T010-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
 
 ## T011 — syntax
 
@@ -1534,6 +1540,7 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T012-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
 | `T012-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
 | `T012-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
+| `T012-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
 
 ## T014 — perfect number
 
@@ -1764,6 +1771,7 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T016-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
 | `T016-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
 | `T016-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
+| `T016-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
 
 ## T017 — union
 
@@ -3463,6 +3471,10 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T041-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
 | `T041-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
 | `T041-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
+| `T041-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
+| `T041-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
+| `T041-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
+| `T041-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
 
 ## T042 — least / well-ordered / predecessor / successor
 
@@ -3770,6 +3782,10 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T044-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
 | `T044-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
 | `T044-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
+| `T044-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
+| `T044-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
+| `T044-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
+| `T044-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
 
 ## T045 — function / mapping
 
@@ -6859,6 +6875,8 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T109-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
 | `T109-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
 | `T109-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
+| `T109-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
+| `T109-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -7085,6 +7103,7 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T115-OLP-0059-B019` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:76-79` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:79-83` | 75–77 |
 | `T115-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
 | `T115-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
+| `T115-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
 
 ## T116 — truth-functional
 
@@ -7289,6 +7308,7 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T121-OLP-0061-B022` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:194-196` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:197-199` | 78–81 |
 | `T121-OLP-0062-B007` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33` | 81 |
 | `T121-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
+| `T121-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
 
 ## T122 — tautology
 
@@ -7386,6 +7406,7 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T124-OLP-0062-B009` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61` | 81 |
 | `T124-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
 | `T124-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
+| `T124-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
 
 ## T125 — necessary / contingent
 
@@ -7431,6 +7452,7 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 - `MR-P022` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 20 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
 - `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
 - `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P086` — गणितशास्त्र परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Official Government of Maharashtra mathematics glossary read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary does not directly attest semantic-tableau terminology.
 
 **Alternatives:**
 
@@ -7449,6 +7471,8 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T126-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
 | `T126-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
 | `T126-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
+| `T126-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
+| `T126-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
 
 ## T127 — propositional constant
 
@@ -7568,6 +7592,8 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T128-OLP-0061-B018` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:173-175` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:175-177` | 78–81 |
 | `T128-OLP-0061-B019` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:177-184` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:179-186` | 78–81 |
 | `T128-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
+| `T128-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
+| `T128-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -8275,6 +8301,8 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T151-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
 | `T151-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
 | `T151-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
+| `T151-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
+| `T151-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -8311,6 +8339,7 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T152-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
 | `T152-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
 | `T152-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
+| `T152-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
 
 ## T153 — truth tree / tableaux proof / resolution method and refutation
 
@@ -8427,6 +8456,7 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | `T156-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
 | `T156-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
 | `T156-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
+| `T156-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -8513,6 +8543,9 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 |---|---|---|---|---|---|
 | `T159-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
 | `T159-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
+| `T159-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
+| `T159-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
+| `T159-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
 
 ## T160 — introduction rule / elimination rule
 
@@ -8620,6 +8653,94 @@ Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T163-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
+
+## T164 — tableau / tableau calculus / closed tableau / open branch
+
+**Chosen rendering/action:** टॅब्लो / टॅब्लो कलन / बंद टॅब्लो / खुली शाखा
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** T153 already established टॅब्लो सिद्धता as the recognizable loanword-based method name, and existing canon supports वृक्ष, शाखा and कलन. MR-P086 directly gives संवृत for a closed curve, but does not attest tableau logic. The target therefore uses the immediately defined and more transparent branch metaphor बंद/खुली; the frozen matching-pair condition fixes exactly what closure means.
+
+**Rationale:** T153 already established टॅब्लो सिद्धता as the recognizable loanword-based method name, and existing canon supports वृक्ष, शाखा and कलन. MR-P086 directly gives संवृत for a closed curve, but does not attest tableau logic. The target therefore uses the immediately defined and more transparent branch metaphor बंद/खुली; the frozen matching-pair condition fixes exactly what closure means.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P010` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P041` — गणितशास्त्र परिभाषा कोश — O glossary. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/9/o (`checked_supports`): Primary official Government of Maharashtra mathematics glossary read through web open. Limitation: Observation hash is not an origin-page hash.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P086` — गणितशास्त्र परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Official Government of Maharashtra mathematics glossary read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary does not directly attest semantic-tableau terminology.
+
+**Alternatives:**
+
+- सत्यता-वृक्ष / टॅब्लो कलन / संवृत टॅब्लो / विवृत शाखा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सार्थकता-वृक्ष / बंद वृक्ष / उघडी शाखा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: In Marathi formal logic, should closed tableau/open branch remain बंद टॅब्लो/खुली शाखा, or use the more Sanskritic संवृत टॅब्लो/विवृत शाखा?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T164-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
+| `T164-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
+| `T164-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
+| `T164-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
+| `T164-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
+
+## T165 — signed formula / truth-value sign / immediate subformula
+
+**Chosen rendering/action:** चिन्हांकित सूत्र / सत्यतामूल्याचे चिन्ह / तात्काळ उपसूत्र
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P086 directly establishes चिन्हांकित संख्या, चिन्हांकित मान and चिन्ह, while existing decisions establish सूत्र and सत्यतामूल्य. चिन्हांकित सूत्र and सत्यतामूल्याचे चिन्ह are therefore evidence-backed compositions. तात्काळ उपसूत्र is definition-controlled by the source rule that replaces a complex signed formula with its immediate constituent formulas.
+
+**Rationale:** MR-P086 directly establishes चिन्हांकित संख्या, चिन्हांकित मान and चिन्ह, while existing decisions establish सूत्र and सत्यतामूल्य. चिन्हांकित सूत्र and सत्यतामूल्याचे चिन्ह are therefore evidence-backed compositions. तात्काळ उपसूत्र is definition-controlled by the source rule that replaces a complex signed formula with its immediate constituent formulas.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P010` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P086` — गणितशास्त्र परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Official Government of Maharashtra mathematics glossary read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary does not directly attest semantic-tableau terminology.
+
+**Alternatives:**
+
+- चिन्हयुक्त सूत्र / सत्यता-चिन्ह / निकट उपसूत्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सचिन्ह सूत्र / सत्यमूल्य-चिन्ह / प्रत्यक्ष उपसूत्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are चिन्हांकित सूत्र and तात्काळ उपसूत्र the clearest Marathi labels for signed formula and immediate subformula in a tableau tree?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T165-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
+| `T165-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
+| `T165-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
+| `T165-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
+
+## T166 — Evert Beth / Jaakko Hintikka / Raymond Smullyan
+
+**Chosen rendering/action:** एव्हर्ट बेथ / याक्को हिंटिक्का / रेमंड स्मलियन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** Targeted searches of the official Marathi Vishwakosh and state glossaries found no direct Marathi form for these names. The target therefore uses conservative phonetic transliterations from the frozen source; MR-P082 supplies the neighboring Marathi proof-history register but does not attest the names themselves.
+
+**Rationale:** Targeted searches of the official Marathi Vishwakosh and state glossaries found no direct Marathi form for these names. The target therefore uses conservative phonetic transliterations from the frozen source; MR-P082 supplies the neighboring Marathi proof-history register but does not attest the names themselves.
+
+**Authorities actually checked:**
+
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- एवर्ट बेथ / याको हिंटिका / रेमंड स्मुलियन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- एव्हर्ट बेथ / याक्को हिंटिक्का / रेमण्ड स्मल्यन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are एव्हर्ट बेथ, याक्को हिंटिक्का and रेमंड स्मलियन the preferred Marathi spellings for the three tableau logicians?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T166-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
