@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occurrences.
+Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occurrences.
 
 ## T001 — set
 
@@ -374,6 +374,7 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 | `T001-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83` | `mr/content/sets-functions-relations/infinite/card-sb.tex:80-85` | 70–72 |
 | `T001-OLP-0054-B016` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:85-87` | `mr/content/sets-functions-relations/infinite/card-sb.tex:87-89` | 70–72 |
 | `T001-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 70–72 |
+| `T001-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
 
 ## T002 — element/member
 
@@ -1663,6 +1664,8 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 | `T015-OLP-0062-B016` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:88-90` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:89-91` | 81 |
 | `T015-OLP-0062-B017` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:92-94` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:93-95` | 81 |
 | `T015-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
+| `T015-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
+| `T015-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
 
 ## T016 — if and only if
 
@@ -1755,6 +1758,7 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 | `T016-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43` | `mr/content/sets-functions-relations/infinite/card-sb.tex:33-41` | 70–72 |
 | `T016-OLP-0054-B011` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53` | `mr/content/sets-functions-relations/infinite/card-sb.tex:49-52` | 70–72 |
 | `T016-OLP-0054-B014` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78` | `mr/content/sets-functions-relations/infinite/card-sb.tex:74-78` | 70–72 |
+| `T016-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
 
 ## T017 — union
 
@@ -2242,6 +2246,8 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 | `T023-OLP-0060-B007` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:20-34` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:19-33` | 77–78 |
 | `T023-OLP-0060-B014` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:114-118` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:110-114` | 77–78 |
 | `T023-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
+| `T023-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
+| `T023-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
 
 ## T024 — set difference
 
@@ -2548,6 +2554,7 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 | `T029-OLP-0024-B026` | `OLP-0024` | 3.4 फलनांचे व्युत्क्रम | `upstream/content/sets-functions-relations/functions/inverses.tex:167-169` | `mr/content/sets-functions-relations/functions/inverses.tex:171-173` | 27–29 |
 | `T029-OLP-0024-B027` | `OLP-0024` | 3.4 फलनांचे व्युत्क्रम | `upstream/content/sets-functions-relations/functions/inverses.tex:171-175` | `mr/content/sets-functions-relations/functions/inverses.tex:175-179` | 27–29 |
 | `T029-OLP-0064-B007` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | pending |
+| `T029-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
 
 ## T030 — relation / binary relation
 
@@ -3446,6 +3453,8 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 | `T041-OLP-0018-B019` | `OLP-0018` | 2.7 वृक्ष | `upstream/content/sets-functions-relations/relations/trees.tex:121-124` | `mr/content/sets-functions-relations/relations/trees.tex:120-123` | 20–22 |
 | `T041-OLP-0018-B020` | `OLP-0018` | 2.7 वृक्ष | `upstream/content/sets-functions-relations/relations/trees.tex:126-128` | `mr/content/sets-functions-relations/relations/trees.tex:125-127` | 20–22 |
 | `T041-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
+| `T041-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
+| `T041-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
 
 ## T042 — least / well-ordered / predecessor / successor
 
@@ -3745,6 +3754,10 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 | `T044-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
 | `T044-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
 | `T044-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
+| `T044-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
+| `T044-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
+| `T044-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
+| `T044-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
 
 ## T045 — function / mapping
 
@@ -6824,6 +6837,10 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 | `T109-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
 | `T109-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
 | `T109-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
+| `T109-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
+| `T109-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
+| `T109-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
+| `T109-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -7137,6 +7154,7 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T118-OLP-0057-B007` | `OLP-0057` | 7.1 परिचय | `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:37-50` | `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:38-51` | 73–74 |
+| `T118-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
 
 ## T119 — formation rule / inductive definition / uniquely readable
 
@@ -7404,6 +7422,8 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 | `T126-OLP-0058-B012` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:63-76` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:62-77` | 74–75 |
 | `T126-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
 | `T126-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+| `T126-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
+| `T126-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
 
 ## T127 — propositional constant
 
@@ -8225,6 +8245,8 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 |---|---|---|---|---|---|
 | `T151-OLP-0064-B007` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | pending |
 | `T151-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+| `T151-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
+| `T151-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -8252,6 +8274,9 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 |---|---|---|---|---|---|
 | `T152-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
 | `T152-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+| `T152-OLP-0065-B005` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:13-13` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:13-13` | pending |
+| `T152-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
+| `T152-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
 
 ## T153 — truth tree / tableaux proof / resolution method and refutation
 
@@ -8308,6 +8333,7 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 |---|---|---|---|---|---|
 | `T154-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
 | `T154-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
+| `T154-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
 
 ## T155 — soundness / sound / unsound (of a proof system)
 
@@ -8363,6 +8389,37 @@ Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T156-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
+| `T156-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
+
+## T157 — sequent (proof theory)
+
+**Chosen rendering/action:** क्रमवर्ती
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P082 directly attests the compound क्रमवर्ती कलन but not the standalone noun. The target cautiously nominalizes the attested adjective as क्रमवर्ती and immediately defines it as a pair of sentence sequences separated by the sequent symbol, so the frozen definition controls the exact proof-theoretic sense.
+
+**Rationale:** MR-P082 directly attests the compound क्रमवर्ती कलन but not the standalone noun. The target cautiously nominalizes the attested adjective as क्रमवर्ती and immediately defines it as a pair of sentence sequences separated by the sequent symbol, so the frozen definition controls the exact proof-theoretic sense.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- सिक्वेंट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- क्रमवर्ती अभिव्यक्ती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अनुक्रमिका — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is nominalized क्रमवर्ती natural and sufficiently distinct from an ordinary sequence when it names a sequent throughout the calculus chapters?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T157-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
+| `T157-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
+| `T157-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
+| `T157-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
