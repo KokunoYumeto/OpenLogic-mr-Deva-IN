@@ -2,10 +2,10 @@
   "schema": "openlogic-release-provenance-sync/1",
   "scope": {
     "source_manifest_units": 722,
-    "translated_units": 74,
+    "translated_units": 75,
     "first_translated_unit": "OLP-0004",
-    "last_translated_unit": "OLP-0077",
-    "aligned_segments": 819,
+    "last_translated_unit": "OLP-0078",
+    "aligned_segments": 832,
     "canon_sources": 75,
     "canon_passages": 98,
     "term_decisions": 184
@@ -17,9 +17,9 @@
       "sha256": "f243d399ca5d8a572a58de7e9b0ad0d7243283a8f92983b1058bfe01ade39c3b"
     },
     "SEGMENT_CANON_USE.jsonl": {
-      "records": 819,
-      "bytes": 1272909,
-      "sha256": "b28b48bff64ea847b0fa6388207e3136f4a1acea3319f7125f755e9d21f684b1"
+      "records": 832,
+      "bytes": 1291852,
+      "sha256": "3fec01505e4a7ad56541068e2f3c350e186ef1347bdfda15754a61f5f80e985f"
     },
     "CANON_SOURCES.jsonl": {
       "records": 75,

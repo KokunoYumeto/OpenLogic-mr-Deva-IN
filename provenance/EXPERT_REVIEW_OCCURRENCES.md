@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **74/722 source units**, 819 aligned translated blocks, 4956 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
+Current scope: **75/722 source units**, 832 aligned translated blocks, 5004 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -379,7 +379,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T002 — element/member</strong> (245 occurrences; routine priority)</summary>
+<summary><strong>T002 — element/member</strong> (247 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -628,6 +628,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T002-OLP-0054-B016 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:85-87](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L85) | [mr/content/sets-functions-relations/infinite/card-sb.tex:87-89](../mr/content/sets-functions-relations/infinite/card-sb.tex#L87) | 70–72 |
 | T002-OLP-0067-B009 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L65) | [mr/content/first-order-logic/proof-systems/tableaux.tex:63-67](../mr/content/first-order-logic/proof-systems/tableaux.tex#L63) | 85–86 |
 | T002-OLP-0068-B006 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | 86–87 |
+| T002-OLP-0078-B014 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:75-78](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L75) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:77-80](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L77) | not yet paginated |
+| T002-OLP-0078-B015 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L80) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L82) | not yet paginated |
 
 **Chosen rendering/action:** घटक / सदस्य
 
@@ -866,7 +868,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T005 — subset</strong> (167 occurrences; routine priority)</summary>
+<summary><strong>T005 — subset</strong> (172 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1037,6 +1039,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T005-OLP-0054-B017 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L89) | [mr/content/sets-functions-relations/infinite/card-sb.tex:91-104](../mr/content/sets-functions-relations/infinite/card-sb.tex#L91) | 70–72 |
 | T005-OLP-0062-B009 | OLP-0062 · 7.6 चिन्हार्थविषयक संकल्पना | [upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L45) | [mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L46) | 81 |
 | T005-OLP-0067-B008 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L44) | [mr/content/first-order-logic/proof-systems/tableaux.tex:42-61](../mr/content/first-order-logic/proof-systems/tableaux.tex#L42) | 85–86 |
+| T005-OLP-0078-B008 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:24-39](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L24) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:23-38](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L23) | not yet paginated |
+| T005-OLP-0078-B009 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:41-43](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L41) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:40-42](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L40) | not yet paginated |
+| T005-OLP-0078-B013 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:71-73](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L71) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:72-75](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L72) | not yet paginated |
+| T005-OLP-0078-B015 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L80) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L82) | not yet paginated |
+| T005-OLP-0078-B017 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L105) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L107) | not yet paginated |
 
 **Chosen rendering/action:** उपसंच
 
@@ -1630,7 +1637,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T017 — union</strong> (50 occurrences; routine priority)</summary>
+<summary><strong>T017 — union</strong> (55 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1684,6 +1691,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T017-OLP-0038-B018 | OLP-0038 · 4.11 प्रगणने आणि गणनीय संच | [upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:126-128](../upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex#L126) | [mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:123-126](../mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex#L123) | 47–48 |
 | T017-OLP-0038-B019 | OLP-0038 · 4.11 प्रगणने आणि गणनीय संच | [upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:130-133](../upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex#L130) | [mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:128-132](../mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex#L128) | 47–48 |
 | T017-OLP-0045-B010 | OLP-0045 · 5.4 Q पासून R कडे | [upstream/content/sets-functions-relations/arithmetization/cuts.tex:58-78](../upstream/content/sets-functions-relations/arithmetization/cuts.tex#L58) | [mr/content/sets-functions-relations/arithmetization/cuts.tex:57-83](../mr/content/sets-functions-relations/arithmetization/cuts.tex#L57) | 56–58 |
+| T017-OLP-0078-B008 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:24-39](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L24) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:23-38](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L23) | not yet paginated |
+| T017-OLP-0078-B009 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:41-43](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L41) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:40-42](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L40) | not yet paginated |
+| T017-OLP-0078-B013 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:71-73](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L71) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:72-75](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L72) | not yet paginated |
+| T017-OLP-0078-B016 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:100-103](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L100) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:102-105](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L102) | not yet paginated |
+| T017-OLP-0078-B017 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L105) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L107) | not yet paginated |
 
 **Chosen rendering/action:** संयोग
 
@@ -5808,7 +5820,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (6 occurrences; medium priority)</summary>
+<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (7 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5818,6 +5830,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T110-OLP-0068-B006 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | 86–87 |
 | T110-OLP-0068-B009 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L66) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L67) | 86–87 |
 | T110-OLP-0077-B007 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | not yet paginated |
+| T110-OLP-0078-B006 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:15-17](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L15) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:15-16](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** संपूर्णता / संपूर्णता प्रमेय / सत्यता-फलनात्मक संपूर्णता
 
@@ -6267,7 +6280,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (46 occurrences; medium priority)</summary>
+<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (54 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6317,6 +6330,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T128-OLP-0068-B006 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | 86–87 |
 | T128-OLP-0068-B008 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | 86–87 |
 | T128-OLP-0068-B009 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L66) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L67) | 86–87 |
+| T128-OLP-0078-B010 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:45-48](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L45) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:44-48](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L44) | not yet paginated |
+| T128-OLP-0078-B011 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:50-54](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L50) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:50-55](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L50) | not yet paginated |
+| T128-OLP-0078-B012 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:56-69](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L56) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:57-70](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L57) | not yet paginated |
+| T128-OLP-0078-B013 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:71-73](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L71) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:72-75](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L72) | not yet paginated |
+| T128-OLP-0078-B014 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:75-78](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L75) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:77-80](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L77) | not yet paginated |
+| T128-OLP-0078-B015 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L80) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L82) | not yet paginated |
+| T128-OLP-0078-B016 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:100-103](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L100) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:102-105](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L102) | not yet paginated |
+| T128-OLP-0078-B017 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L105) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L107) | not yet paginated |
 
 **Chosen rendering/action:** नकरण / संधियोग / विकल्पयोग / सशर्त (संकेतार्थक) / द्विसशर्त
 
@@ -6894,7 +6915,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (11 occurrences; routine priority)</summary>
+<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (23 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6909,6 +6930,18 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T156-OLP-0077-B020 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:139-141](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L139) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:141-143](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L141) | not yet paginated |
 | T156-OLP-0077-B022 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L147) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L149) | not yet paginated |
 | T156-OLP-0077-B023 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L157) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L159) | not yet paginated |
+| T156-OLP-0078-B005 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:13-13](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L13) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:13-13](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L13) | not yet paginated |
+| T156-OLP-0078-B007 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:19-22](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L19) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:18-21](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L18) | not yet paginated |
+| T156-OLP-0078-B008 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:24-39](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L24) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:23-38](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L23) | not yet paginated |
+| T156-OLP-0078-B009 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:41-43](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L41) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:40-42](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L40) | not yet paginated |
+| T156-OLP-0078-B010 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:45-48](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L45) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:44-48](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L44) | not yet paginated |
+| T156-OLP-0078-B011 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:50-54](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L50) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:50-55](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L50) | not yet paginated |
+| T156-OLP-0078-B012 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:56-69](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L56) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:57-70](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L57) | not yet paginated |
+| T156-OLP-0078-B013 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:71-73](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L71) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:72-75](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L72) | not yet paginated |
+| T156-OLP-0078-B014 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:75-78](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L75) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:77-80](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L77) | not yet paginated |
+| T156-OLP-0078-B015 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L80) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L82) | not yet paginated |
+| T156-OLP-0078-B016 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:100-103](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L100) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:102-105](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L102) | not yet paginated |
+| T156-OLP-0078-B017 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L105) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L107) | not yet paginated |
 
 **Chosen rendering/action:** सुसंगतता / विसंगतता / सुसंगत / विसंगत
 
@@ -7279,7 +7312,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)</strong> (16 occurrences; medium priority)</summary>
+<summary><strong>T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)</strong> (21 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7299,6 +7332,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T175-OLP-0076-B010 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:100-108](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L100) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:96-104](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L96) | not yet paginated |
 | T175-OLP-0077-B010 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:45-67](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L45) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:46-69](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L46) | not yet paginated |
 | T175-OLP-0077-B017 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-126](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L108) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:110-128](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L110) | not yet paginated |
+| T175-OLP-0078-B008 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:24-39](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L24) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:23-38](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L23) | not yet paginated |
+| T175-OLP-0078-B011 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:50-54](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L50) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:50-55](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L50) | not yet paginated |
+| T175-OLP-0078-B012 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:56-69](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L56) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:57-70](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L57) | not yet paginated |
+| T175-OLP-0078-B015 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L80) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L82) | not yet paginated |
+| T175-OLP-0078-B017 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L105) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L107) | not yet paginated |
 
 **Chosen rendering/action:** दुर्बलीकरण / आकुंचन / अदलाबदल / कट
 
@@ -7453,7 +7491,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T184 — derivability / provability relation</strong> (17 occurrences; medium priority)</summary>
+<summary><strong>T184 — derivability / provability relation</strong> (27 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7474,6 +7512,16 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T184-OLP-0077-B021 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:143-145](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L143) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:145-147](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L145) | not yet paginated |
 | T184-OLP-0077-B022 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L147) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L149) | not yet paginated |
 | T184-OLP-0077-B023 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L157) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L159) | not yet paginated |
+| T184-OLP-0078-B005 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:13-13](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L13) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:13-13](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L13) | not yet paginated |
+| T184-OLP-0078-B006 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:15-17](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L15) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:15-16](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L15) | not yet paginated |
+| T184-OLP-0078-B007 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:19-22](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L19) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:18-21](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L18) | not yet paginated |
+| T184-OLP-0078-B008 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:24-39](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L24) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:23-38](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L23) | not yet paginated |
+| T184-OLP-0078-B010 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:45-48](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L45) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:44-48](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L44) | not yet paginated |
+| T184-OLP-0078-B011 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:50-54](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L50) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:50-55](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L50) | not yet paginated |
+| T184-OLP-0078-B012 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:56-69](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L56) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:57-70](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L57) | not yet paginated |
+| T184-OLP-0078-B014 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:75-78](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L75) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:77-80](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L77) | not yet paginated |
+| T184-OLP-0078-B015 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L80) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L82) | not yet paginated |
+| T184-OLP-0078-B017 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L105) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L107) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धतायोग्यता / सिद्धतायोग्य
 

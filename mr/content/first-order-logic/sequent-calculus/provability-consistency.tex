@@ -1,0 +1,128 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{prv}}
+      {\olfileid{pl}{seq}{prv}}
+
+\olsection{\usetoken{S}{derivability} आणि सुसंगतता}
+
+आता आपण !!{derivability} संबंधाचे अनेक गुणधर्म सिद्ध करू. ते स्वतंत्रपणेही
+महत्त्वाचे आहेत, पण संपूर्णता प्रमेयाच्या सिद्धतेत प्रत्येकाची भूमिका असेल.
+
+\begin{prop}\ollabel{prop:provability-contr}
+  जर $\Gamma \Proves !A$ आणि $\Gamma \cup \{!A\}$ विसंगत असेल, तर
+  $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+अशी सांत $\Gamma_0$ आणि $\Gamma_1 \subseteq \Gamma$ असतात की
+$\Log{LK}$ !!{derive}s $\Gamma_0 \Sequent !A$ आणि $!A, \Gamma_1
+\Sequent \quad$. $\Gamma_0 \Sequent !A$ ची $\Log{LK}$-!!{derivation}
+~$\pi_0$ आणि $\Gamma_1, !A \Sequent \quad$ ची $\Log{LK}$-!!{derivation}
+~$\pi_1$ अशी नावे देऊ. मग आपण !!{derive} करू शकतो
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{$\pi_0$}
+\Deduce$ \Gamma_0 \fCenter !A $
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!A, \Gamma_1 \fCenter $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma_0,\Gamma_1 \fCenter $
+\end{prooftree}
+
+कारण $\Gamma_0 \subseteq \Gamma$ आणि $\Gamma_1 \subseteq \Gamma$,
+$\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$; म्हणून $\Gamma$ विसंगत आहे.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{\lnot !A\}$
+विसंगत असते.
+\end{prop}
+
+\begin{proof}
+प्रथम $\Gamma \Proves !A$ असे गृहीत धरा; म्हणजे $\Gamma \Sequent !A$ ची
+!!a{derivation}~$\pi_0$ आहे. $\LeftR{\lnot}$ नियम जोडल्यावर आपल्याला
+$\lnot !A, \Gamma
+\Sequent \quad$ ची !!a{derivation} मिळते; म्हणजे $\Gamma \cup \{\lnot !A\}$
+विसंगत आहे.
+
+जर $\Gamma \cup \{\lnot !A\}$ विसंगत असेल, तर $\lnot !A, \Gamma
+\Sequent \quad$ ची !!a{derivation}~$\pi_1$ असते. खालील $\Gamma \Sequent !A$
+ची !!a{derivation} आहे:
+\begin{prooftree}
+  \Axiom$!A \fCenter !A$
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\fCenter !A, \lnot !A$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\lnot !A, \Gamma \fCenter$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma \fCenter !A$
+\end{prooftree}
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves \lnot !A$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{!A\}$
+विसंगत असते, हे सिद्ध करा.
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  जर $\Gamma \Proves !A$ आणि $\lnot !A \in \Gamma$ असेल, तर $\Gamma$
+  विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+  समजा $\Gamma \Proves !A$ आणि $\lnot !A \in \Gamma$. मग $\Gamma_0 \Sequent
+  !A$ ची !!a{derivation}~$\pi$ असते. $\lnot !A, \Gamma_0 \Sequent \quad$
+  ही क्रमवर्तीही !!{derivable} आहे:
+  \begin{prooftree}
+    \AxiomC{}
+    \RightLabel{$\pi$}
+    \Deduce$\Gamma_0 \fCenter !A$
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot !A, !A \fCenter$
+    \RightLabel{\LeftR{\Exchange}}
+    \UnaryInf$!A, \lnot !A \fCenter$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma_0, \lnot !A \fCenter$
+  \end{prooftree}
+  कारण $\lnot !A \in \Gamma$ आणि $\Gamma_0 \subseteq \Gamma$, यावरून
+  $\Gamma$ विसंगत असल्याचे दिसते.
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  जर $\Gamma \cup \{!A\}$ आणि $\Gamma \cup \{\lnot !A\}$ दोन्ही
+  विसंगत असतील, तर $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+अशी सांत संच $\Gamma_0 \subseteq \Gamma$ आणि $\Gamma_1
+\subseteq \Gamma$, तसेच $\Log{LK}$-!!{derivation}s $\pi_0$ आणि $\pi_1$
+$!A, \Gamma_0 \Sequent \quad$ आणि $\lnot !A, \Gamma_1 \Sequent
+\quad$ यांचे अनुक्रमे, असतात. मग आपण !!{derive} करू शकतो
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{$\pi_0$}
+\Deduce$ !A, \Gamma_0 \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \Gamma_0 \fCenter \lnot !A$
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\lnot !A, \Gamma_1 \fCenter  $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma_0, \Gamma_1 \fCenter $
+\end{prooftree}
+कारण $\Gamma_0 \subseteq \Gamma$ आणि $\Gamma_1 \subseteq \Gamma$,
+$\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$. म्हणून $\Gamma$ विसंगत आहे.
+\end{proof}
+
+\end{document}
