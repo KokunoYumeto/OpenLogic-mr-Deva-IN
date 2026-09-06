@@ -1,0 +1,105 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: quantifier-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{qrl}
+
+\olsection{संख्यापकांचे नियम}
+
+\subsection{$\lforall$ साठीचे नियम}
+
+\begin{defish}
+\Axiom$ !A(t), \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$ \lforall[x][!A(x)],\Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A(a) $
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+\DisplayProof
+\end{defish}
+
+\LeftR{\lforall} मध्ये, $t$ हे बंद पद आहे (म्हणजे, चरे नसलेले पद).
+\RightR{\lforall} मध्ये, $a$~हा असा !!a{constant} आहे की तो
+\RightR{\lforall} नियमाच्या खालच्या क्रमवर्तीमध्ये कोठेही येता कामा नये.
+\RightR{\forall} अनुमानाचा $a$~हा \emph{आयगेन चर} आहे, असे आपण
+म्हणतो.\footnote{वरील नियमात $a$ हा !!a{constant} असला तरी आपण
+``आयगेन चर'' ही संज्ञा वापरतो. यामागे ऐतिहासिक कारणे आहेत.}
+
+\subsection{$\lexists$ साठीचे नियम}
+
+\begin{defish}
+\Axiom$ !A(a), \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][!A(x)], \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A(t) $
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lexists[x][!A(x)]$
+\DisplayProof
+\end{defish}
+
+पुन्हा, $t$~हे बंद पद आहे आणि $a$~हा असा !!a{constant} आहे की तो
+\LeftR{\lexists} नियमाच्या खालच्या क्रमवर्तीमध्ये येत नाही.
+\LeftR{\lexists} अनुमानाचा $a$~हा \emph{आयगेन चर} आहे, असे आपण म्हणतो.
+
+\RightR{\lforall} किंवा \LeftR{\lexists} अनुमानाच्या खालच्या
+क्रमवर्तीमध्ये आयगेन चर येत नसावा, या अटीला \emph{आयगेन चराची अट}
+म्हणतात.
+
+\begin{explain}
+ही प्रथा आठवा: $!A$ हे असे !!a{formula} असेल की त्यात
+!!{variable}~$x$ मुक्त असेल, तर हे आपण~$!A(x)$ असे लिहून दर्शवतो.
+त्याच संदर्भात, मग $!A(t)$ हा~$\Subst{!A}{t}{x}$ चा संक्षेप असतो.
+त्यामुळे \RightR{\lexists} नियम पुढीलप्रमाणेही लिहिता येईल:
+\begin{prooftree}
+  \Axiom$\Gamma \fCenter \Delta, \Subst{!A}{t}{x}$
+  \RightLabel{\RightR{\lexists}}
+  \UnaryInf$\Gamma \fCenter \Delta, \lexists[x][!A]$
+\end{prooftree}
+लक्षात घ्या की~$!A$ मध्ये $t$ आधीच येऊ शकते; उदा., $!A$ हे
+~$\Atom{\Obj P}{t,x}$ असू शकते. म्हणून,~$\Gamma \Sequent \Delta,
+\Atom{\Obj P}{t,t}$ पासून $\Gamma \Sequent \Delta,
+\lexists[x][\Atom{\Obj P}{t,x}]$ निष्पन्न करणे हा
+\RightR{\lexists} चा योग्य उपयोग आहे---आधारविधानातील~$t$ च्या एक किंवा
+अधिक आस्थितींच्या जागी बद्ध !!{variable}~$x$ घालता येतो; त्या
+आस्थितींपैकी सर्वच बदलणे आवश्यक नाही. परंतु
+\RightR{\lforall} आणि~\LeftR{\lexists} मधील आयगेन चराच्या अटींनुसार
+!!{constant}~$a$ हा~$!A$ मध्ये येता कामा नये. म्हणून,
+$\RightR{\lforall}$ वापरून $\Gamma \Sequent \Delta, \Atom{\Obj P}{a,a}$
+पासून $\Gamma \Sequent \Delta, \lforall[x][\Atom{\Obj P}{a,x}]$
+योग्य रीतीने निष्पन्न करता येत नाही.
+\end{explain}
+
+\begin{explain}
+\RightR{\lexists} आणि \LeftR{\lforall} मध्ये पद~$t$ वर कोणतेही
+निर्बंध नाहीत. याउलट, \LeftR{\lexists} आणि \RightR{\lforall}
+नियमांमध्ये आयगेन चराच्या अटीनुसार वरच्या क्रमवर्तीमध्ये~$!A(a)$ च्या
+बाहेर !!{constant}~$a$ कोठेही येता कामा नये. ही पद्धत निर्दोष आहे,
+म्हणजे ती केवळ वैध क्रमवर्तीच !!{derive}s करते, याची खात्री करण्यासाठी ही
+अट आवश्यक आहे. ही अट नसती, तर पुढील निष्पत्त्या अनुज्ञात असत्या:
+\begin{prooftree}
+  \Axiom$!A(a) \fCenter !A(a)$
+  \RightLabel{*\LeftR{\lexists}}
+  \UnaryInf$\lexists[x][!A(x)] \fCenter !A(a)$
+  \RightLabel{\RightR{\lforall}}
+  \UnaryInf$\lexists[x][!A(x)] \fCenter \lforall[x][!A(x)]$
+  \DisplayProof\bottomAlignProof
+  \qquad
+  \Axiom$!A(a) \fCenter !A(a)$
+  \RightLabel{*\RightR{\lforall}}
+  \UnaryInf$!A(a) \fCenter \lforall[x][!A(x)]$
+  \RightLabel{\LeftR{\lexists}}
+  \UnaryInf$\lexists[x][!A(x)] \fCenter \lforall[x][!A(x)]$
+\end{prooftree}
+परंतु $\lexists[x][!A(x)] \Sequent \lforall[x][!A(x)]$ ही क्रमवर्ती
+वैध नाही.
+\end{explain}
+
+\end{document}

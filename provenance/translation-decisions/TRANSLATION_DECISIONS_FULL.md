@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occurrences.
+Coverage: 69/722 source units through OLP-0072; 213 applied decisions; 4,771 occurrences.
 
 ## T001 — set
 
@@ -1421,6 +1421,7 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | `T009-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
 | `T009-OLP-0064-B010` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | 82–83 |
 | `T009-OLP-0070-B008` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | pending |
+| `T009-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:79-102` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:80-103` | pending |
 
 ## T010 — truth / truth value
 
@@ -3809,6 +3810,8 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | `T044-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
 | `T044-OLP-0070-B005` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:13-13` | pending |
 | `T044-OLP-0070-B011` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | pending |
+| `T044-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-77` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-78` | pending |
+| `T044-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:79-102` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:80-103` | pending |
 
 ## T045 — function / mapping
 
@@ -6746,6 +6749,7 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T104-OLP-0052-B011` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:46-49` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:49-52` | 68–69 |
+| `T104-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-77` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-78` | pending |
 
 ## T105 — isomorphic / isomorphism
 
@@ -6854,6 +6858,7 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | `T108-OLP-0058-B006` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:13-18` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:13-18` | 74–75 |
 | `T108-OLP-0058-B007` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:20-33` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:20-33` | 74–75 |
 | `T108-OLP-0058-B008` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:35-35` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:35-35` | 74–75 |
+| `T108-OLP-0071-B005` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:13-13` | pending |
 
 ## T109 — proof system / proof
 
@@ -7009,6 +7014,12 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 |---|---|---|---|---|---|
 | `T112-OLP-0055-B005` | `OLP-0055` | 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | `upstream/content/propositional-logic/propositional-logic.tex:9-18` | `mr/content/propositional-logic/propositional-logic.tex:9-18` | 73 |
 | `T112-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | 84–85 |
+| `T112-OLP-0072-B005` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:11-11` | pending |
+| `T112-OLP-0072-B006` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:13-13` | pending |
+| `T112-OLP-0072-B008` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-32` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-32` | pending |
+| `T112-OLP-0072-B009` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:34-34` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:34-34` | pending |
+| `T112-OLP-0072-B011` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-50` | pending |
+| `T112-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-77` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-78` | pending |
 
 ## T113 — classical logic / classical
 
@@ -7137,6 +7148,7 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | `T115-OLP-0066-B010` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | 84–85 |
 | `T115-OLP-0067-B007` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | 85–86 |
 | `T115-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T115-OLP-0071-B005` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:13-13` | pending |
 
 ## T116 — truth-functional
 
@@ -7201,6 +7213,7 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | `T117-OLP-0058-B032` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158-159` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:157-159` | 74–75 |
 | `T117-OLP-0058-B033` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | 74–75 |
 | `T117-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 86–87 |
+| `T117-OLP-0071-B012` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:73-73` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:73-73` | pending |
 
 ## T118 — theory / metatheory
 
@@ -7639,6 +7652,10 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | `T128-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
 | `T128-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
 | `T128-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 86–87 |
+| `T128-OLP-0071-B006` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:15-15` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:15-15` | pending |
+| `T128-OLP-0071-B008` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:29-29` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:29-29` | pending |
+| `T128-OLP-0071-B010` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:51-51` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:51-51` | pending |
+| `T128-OLP-0071-B012` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:73-73` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:73-73` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -7712,6 +7729,7 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | `T130-OLP-0058-B031` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:154-156` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:153-155` | 74–75 |
 | `T130-OLP-0058-B032` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158-159` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:157-159` | 74–75 |
 | `T130-OLP-0058-B033` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | 74–75 |
+| `T130-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-77` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-78` | pending |
 
 ## T131 — atomic formula
 
@@ -7970,6 +7988,7 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | `T138-OLP-0059-B021` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:91-98` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:96-105` | 75–77 |
 | `T138-OLP-0059-B022` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:100-112` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:107-120` | 75–77 |
 | `T138-OLP-0059-B023` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:114-117` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:122-125` | 75–77 |
+| `T138-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-77` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-78` | pending |
 
 ## T139 — occurrence (of a variable or formula)
 
@@ -7997,6 +8016,7 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 |---|---|---|---|---|---|
 | `T139-OLP-0059-B021` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:91-98` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:96-105` | 75–77 |
 | `T139-OLP-0061-B010` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:133-140` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134-142` | 78–81 |
+| `T139-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-77` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-78` | pending |
 
 ## T140 — inductive hypothesis
 
@@ -8363,6 +8383,18 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | `T151-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
 | `T151-OLP-0070-B005` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:13-13` | pending |
 | `T151-OLP-0070-B011` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | pending |
+| `T151-OLP-0071-B005` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:13-13` | pending |
+| `T151-OLP-0071-B006` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:15-15` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:15-15` | pending |
+| `T151-OLP-0071-B008` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:29-29` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:29-29` | pending |
+| `T151-OLP-0071-B010` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:51-51` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:51-51` | pending |
+| `T151-OLP-0071-B012` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:73-73` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:73-73` | pending |
+| `T151-OLP-0072-B006` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:13-13` | pending |
+| `T151-OLP-0072-B008` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-32` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-32` | pending |
+| `T151-OLP-0072-B009` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:34-34` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:34-34` | pending |
+| `T151-OLP-0072-B011` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-50` | pending |
+| `T151-OLP-0072-B012` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54` | pending |
+| `T151-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-77` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-78` | pending |
+| `T151-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:79-102` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:80-103` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -8493,6 +8525,7 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | `T155-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
 | `T155-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 82–83 |
 | `T155-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T155-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:79-102` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:80-103` | pending |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -8559,6 +8592,11 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | `T157-OLP-0070-B008` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | pending |
 | `T157-OLP-0070-B010` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:52-61` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:54-63` | pending |
 | `T157-OLP-0070-B011` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | pending |
+| `T157-OLP-0072-B008` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-32` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-32` | pending |
+| `T157-OLP-0072-B011` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-50` | pending |
+| `T157-OLP-0072-B012` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54` | pending |
+| `T157-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-77` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-78` | pending |
+| `T157-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:79-102` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:80-103` | pending |
 
 ## T158 — proof by cases / indirect proof / conditional proof
 
@@ -8672,6 +8710,7 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 |---|---|---|---|---|---|
 | `T161-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | 84–85 |
 | `T161-OLP-0066-B007` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | 84–85 |
+| `T161-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-77` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-78` | pending |
 
 ## T162 — proof-theoretic semantics
 
@@ -8988,6 +9027,10 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | `T172-OLP-0070-B007` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26` | pending |
 | `T172-OLP-0070-B008` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | pending |
 | `T172-OLP-0070-B010` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:52-61` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:54-63` | pending |
+| `T172-OLP-0072-B008` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-32` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-32` | pending |
+| `T172-OLP-0072-B011` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-50` | pending |
+| `T172-OLP-0072-B012` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54` | pending |
+| `T172-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:79-102` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:80-103` | pending |
 
 ## T173 — logical rule / structural rule (sequent calculus)
 
@@ -9014,6 +9057,40 @@ Coverage: 67/722 source units through OLP-0070; 212 applied decisions; 4,723 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T173-OLP-0070-B011` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | pending |
+
+## T174 — closed term / bound variable / eigenvariable / eigenvariable condition
+
+**Chosen rendering/action:** बंद पद / बद्ध चर / आयगेन चर / आयगेन चराची अट
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P007 directly attests बद्ध चर and संख्यापक, MR-P076 directly attests variable-occurrence vocabulary, and MR-P082 establishes the sequent-calculus register. MR-P095 shows that authoritative Marathi technical prose retains the German-derived modifier as आयगेन in आयगेन मूल्य and आयगेन फलन. No exact Marathi proof-theory occurrence was found in the bounded searches. The edition therefore uses the transparent बंद पद for a term with no variables and the reversible transliterated compound आयगेन चर. The frozen rules define its side condition exactly and preserve the source's historical point that the so-called variable is represented by a constant.
+
+**Rationale:** MR-P007 directly attests बद्ध चर and संख्यापक, MR-P076 directly attests variable-occurrence vocabulary, and MR-P082 establishes the sequent-calculus register. MR-P095 shows that authoritative Marathi technical prose retains the German-derived modifier as आयगेन in आयगेन मूल्य and आयगेन फलन. No exact Marathi proof-theory occurrence was found in the bounded searches. The edition therefore uses the transparent बंद पद for a term with no variables and the reversible transliterated compound आयगेन चर. The frozen rules define its side condition exactly and preserve the source's historical point that the so-called variable is represented by a constant.
+
+**Authorities actually checked:**
+
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P095` — पुंजयामिकी — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/20963/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not attest eigenvariable or proof theory.
+
+**Alternatives:**
+
+- आयगेनचर / आयगेनचराची अट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- आयगेन-चर / आयगेन-चर अट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- विशिष्ट चर / विशिष्ट-चर अट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- नवीन अचर / नवीन-अचर अट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should Marathi proof theory retain the recognizable आयगेन चर and आयगेन चराची अट, join or hyphenate the compound, or use an attested specialist alternative unavailable in the checked authorities?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T174-OLP-0072-B008` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-32` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-32` | pending |
+| `T174-OLP-0072-B011` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-50` | pending |
+| `T174-OLP-0072-B012` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54` | pending |
+| `T174-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-77` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:56-78` | pending |
+| `T174-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:79-102` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:80-103` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 

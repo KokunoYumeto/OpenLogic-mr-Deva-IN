@@ -19,11 +19,12 @@ form. The 89-page PDF was built twice to identical bytes and every page was
 inspected. Its offline HTML companion passed exact source-conversion, structure,
 asset, proof-display and desktop/mobile browser checks.
 
-Editable source after that release has progressed through OLP-0070: **67/722
-units** and 756 aligned content blocks. OLP-0069 is the Sequent Calculus chapter
-driver and OLP-0070 defines its sequents, initial sequents, derivation trees and
-rule classes. The remaining imported sections are in progress; these two units
-are not part of the v0.6 reader or release archive.
+Editable source after that release has progressed through OLP-0072: **69/722
+units** and 769 aligned content blocks. OLP-0069 is the Sequent Calculus chapter
+driver; OLP-0070 defines its sequents, initial sequents, derivation trees and rule
+classes; OLP-0071 and OLP-0072 give the propositional and quantifier rules. The
+remaining imported sections are in progress; these four units are not part of the
+v0.6 reader or release archive.
 
 - **Current release:** [आठ प्रकरणे — PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eight-chapters-v0.6).
 - **DOI mirror:** [edition concept DOI 10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960), which resolves to the latest version.
@@ -75,12 +76,12 @@ for proof tables, working skip navigation and no console errors. Assistive-
 technology behavior is not independently certified. Inherited source issues are
 explained in a separate editorial section; frozen English bytes remain unchanged.
 The evidence also preserves the formal retraction of a
-shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The current
-source-checkpoint evidence explicitly
-distinguishes preserved original pages from hash-pinned short web observations
-whose origin HTML bytes were unavailable. It also records one canon source, one
-passage and prospective term T171 researched for OLP-0069; the unaligned OLP-0069
-draft is excluded from the 65-unit checkpoint and release archive.
+shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The frozen
+65-unit source-checkpoint evidence explicitly distinguishes preserved original
+pages from hash-pinned short web observations whose origin HTML bytes were
+unavailable. The synchronized root provenance now covers the 69 translated units
+through OLP-0072; those later working records remain outside the v0.6 reader and
+release archive.
 
 Canon originals are local research evidence. They are **not redistributed here**.
 Some government-site originals could not be downloaded; the index distinguishes

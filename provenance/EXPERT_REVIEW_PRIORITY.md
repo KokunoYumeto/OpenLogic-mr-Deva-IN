@@ -2,7 +2,7 @@
 
 This view contains only high-priority Marathi choices: sparse or unattested evidence, preserved-origin uncertainty, ambiguity-avoiding paraphrases, or another low-confidence status. Review is welcome but is not a completion gate.
 
-High-priority decisions: **22**; governed occurrences: **606**. Script: Devanagari (Deva); locale: mr-IN; edition tag: mr-Deva-IN.
+High-priority decisions: **22**; governed occurrences: **608**. Script: Devanagari (Deva); locale: mr-IN; edition tag: mr-Deva-IN.
 
 | Decision | Source term/sense | Chosen Marathi | Occurrences | Current PDF page ranges | Please double-check |
 |---|---|---|---:|---|---|
@@ -19,7 +19,7 @@ High-priority decisions: **22**; governed occurrences: **606**. Script: Devanaga
 | T041 | tree / root / branch / chain | वृक्ष / मूळ / शाखा / शृंखला | 26 | 20–22, 82–86 | Please double-check: In the listed formal contexts, should “वृक्ष / मूळ / शाखा / शृंखला” remain, or should one of “तरू / मूल / फांदी / साखळी” replace it? Does the chosen wording preserve the technical sense of tree / root / branch / chain without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source. |
 | T042 | least / well-ordered / predecessor / successor | लघुतम / सुक्रमित / पूर्ववर्ती / उत्तरवर्ती | 49 | 18–22, 47–48, 67–68, 70–72 | Please double-check: Does लघुतम clearly mean below every element, rather than merely minimal? |
 | T043 | closure / inverse / restriction / relative product | संवरण / व्युत्क्रम / मर्यादन / सापेक्ष गुणाकार | 69 | 18–19, 22, 26–27, 29–30, 67–68, 70–72 | Please double-check: In the listed formal contexts, should “संवरण / व्युत्क्रम / मर्यादन / सापेक्ष गुणाकार” remain, or should one of “बंदता / प्रतिलोम / निर्बंध / संबंधगुणाकार” replace it? Does the chosen wording preserve the technical sense of closure / inverse / restriction / relative product without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source. |
-| T044 | computability / formula / derivation | संगणनीयता / सूत्र / निष्पत्ती | 120 | 20–22, 73–87 | Please double-check: Is संगणनीयता the best way to keep computability distinct from गणनीयता for countability? |
+| T044 | computability / formula / derivation | संगणनीयता / सूत्र / निष्पत्ती | 122 | 20–22, 73–87 | Please double-check: Is संगणनीयता the best way to keep computability distinct from गणनीयता for countability? |
 | T060 | ceiling function | ऊर्ध्व पूर्णांक फलन | 2 | 32–35, 47–48 | Please double-check: Is ऊर्ध्व पूर्णांक फलन an idiomatic name for the least-integer-not-below-x function, or is लघुतम उच्च पूर्णांक फलन preferable? |
 | T062 | initial segment | आरंभीचा खंड / सांत आरंभीचा खंड | 16 | 32–35, 44–45, 47–48, 56–62, 75–78 | Please double-check: Is आरंभीचा खंड standard for an initial segment of the natural numbers? |
 | T070 | enumerable union of enumerable sets | गणनीय इतक्या गणनीय संचांचा संयोग | 1 | 37–38 | Please double-check: Does गणनीय इतक्या गणनीय संचांचा संयोग unambiguously state that both the index set and every indexed set are countable? |
