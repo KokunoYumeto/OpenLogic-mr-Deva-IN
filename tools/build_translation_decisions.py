@@ -17,6 +17,7 @@ OUT = PROV / "translation-decisions"
 SCHEMA_PATH = OUT / "translation-decision.schema.json"
 DECISION_INPUT = PROV / "EXPERT_REVIEW_DECISIONS.jsonl"
 OCCURRENCE_INPUT = PROV / "EXPERT_REVIEW_OCCURRENCES.jsonl"
+SEGMENT_INPUT = PROV / "SEGMENT_CANON_USE.jsonl"
 PDF = P / "build" / "core" / "openlogic-mr-core.pdf"
 INPUTS = P / "build" / "core" / "INPUTS.json"
 
@@ -25,7 +26,7 @@ SCHEMA_BYTES = 10787
 SOURCE_REVISION = "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
 PDF_FILENAME = PDF.name
 GENERATED_UTC = "2026-09-06T00:00:00Z"
-DEFERRED_IDS = ["T009", "T013"]
+KNOWN_PROSPECTIVE_IDS = {"T009", "T013"}
 
 
 def sha(path):
@@ -39,7 +40,7 @@ READER_LAST_UNIT = input_rows[-1]["unit_id"]
 translated_unit_ids = sorted(
     {
         json.loads(line)["unit_id"]
-        for line in OCCURRENCE_INPUT.read_text(encoding="utf-8-sig").splitlines()
+        for line in SEGMENT_INPUT.read_text(encoding="utf-8-sig").splitlines()
         if line.strip() and json.loads(line).get("unit_id")
     }
 )
@@ -326,6 +327,13 @@ occurrences_by_decision = defaultdict(list)
 for item in legacy_occurrences:
     occurrences_by_decision[item["decision_id"]].append(item)
 
+deferred_ids = [
+    decision_id
+    for decision_id in legacy_decision_ids
+    if not occurrences_by_decision[decision_id]
+]
+assert set(deferred_ids) <= KNOWN_PROSPECTIVE_IDS
+
 input_occurrence_ref = {
     "path_or_uri": "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl",
     "bytes": OCCURRENCE_INPUT.stat().st_size,
@@ -342,7 +350,7 @@ for legacy in legacy_decisions:
     decision_id = legacy.get("term_id") or legacy.get("issue_id")
     old_occurrences = occurrences_by_decision[decision_id]
     if not old_occurrences:
-        assert decision_id in DEFERRED_IDS
+        assert decision_id in deferred_ids
         continue
     occurrences = [adapt_occurrence(item, input_occurrence_ref) for item in old_occurrences]
     confidence = min(
@@ -433,13 +441,13 @@ for legacy in legacy_decisions:
         decision["recorded_utc"] = recorded_utc
     canonical_decisions.append(decision)
 
-assert len(canonical_decisions) == len(legacy_decisions) - len(DEFERRED_IDS)
+assert len(canonical_decisions) == len(legacy_decisions) - len(deferred_ids)
 assert sum(len(item["occurrences"]) for item in canonical_decisions) == len(legacy_occurrences)
 assert [
     (item.get("term_id") or item.get("issue_id"))
     for item in legacy_decisions
     if not occurrences_by_decision[item.get("term_id") or item.get("issue_id")]
-] == DEFERRED_IDS
+] == deferred_ids
 
 canonical_count = len(canonical_decisions)
 occurrence_count = len(legacy_occurrences)
@@ -782,7 +790,7 @@ qa = {
         "complete_chapters": COMPLETE_CHAPTERS,
         "canonical_decisions_with_occurrences": canonical_count,
         "legacy_decisions_total": len(legacy_decisions),
-        "legacy_prospective_decisions_deferred_without_fabricated_occurrences": DEFERRED_IDS,
+        "legacy_prospective_decisions_deferred_without_fabricated_occurrences": deferred_ids,
         "occurrences": occurrence_count,
         "high_priority_occurrences": priority_counts.get("high", 0),
         "normal_priority_occurrences": priority_counts.get("normal", 0),
@@ -817,6 +825,15 @@ qa = {
             "sha256": sha(OCCURRENCE_INPUT),
             "records": occurrence_count,
         },
+        "provenance/SEGMENT_CANON_USE.jsonl": {
+            "bytes": SEGMENT_INPUT.stat().st_size,
+            "sha256": sha(SEGMENT_INPUT),
+            "records": sum(
+                1
+                for line in SEGMENT_INPUT.read_text(encoding="utf-8-sig").splitlines()
+                if line.strip()
+            ),
+        },
         "tools/build_translation_decisions.py": {
             "bytes": Path(__file__).stat().st_size,
             "sha256": sha(__file__),
@@ -843,7 +860,7 @@ print(
         {
             "result": "passed",
             "decisions": len(canonical_decisions),
-            "legacy_deferred": DEFERRED_IDS,
+            "legacy_deferred": deferred_ids,
             "occurrences": len(all_occurrences),
             "high_priority_occurrences": len(priority_occurrences),
             "schema_sha256": SCHEMA_SHA256,

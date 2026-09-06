@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occurrences.
+Coverage: 61/722 source units through OLP-0064; 194 applied decisions; 4,523 occurrences.
 
 ## T001 — set
 
@@ -1380,6 +1380,36 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | `T008-OLP-0053-B007` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:28-40` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:26-38` | 69–70 |
 | `T008-OLP-0053-B008` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:42-64` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:40-62` | 69–70 |
 
+## T009 — formal validity
+
+**Chosen rendering/action:** वैधता
+
+**Kind:** `terminology` · **recording:** `retrospective` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** Preserved Marathi logic textbook explicitly distinguishes argument वैधता from truth of statements; युक्तता and आकारिक प्रामाण्य recorded as attested alternatives. Adopt वैधता consistently in formal truth-preservation sense, not legal legitimacy; keep soundness separate.
+
+**Rationale:** Preserved Marathi logic textbook explicitly distinguishes argument वैधता from truth of statements; युक्तता and आकारिक प्रामाण्य recorded as attested alternatives. Adopt वैधता consistently in formal truth-preservation sense, not legal legitimacy; keep soundness separate.
+
+**Authorities actually checked:**
+
+- `MR-P019` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 1 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P020` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 2 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P010` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+
+**Alternatives:**
+
+- युक्तता — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- आकारिक प्रामाण्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Which Marathi term most clearly names truth-preservation of an argument and cannot be mistaken for the truth of its premises or conclusion?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T009-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
+| `T009-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+| `T009-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
+
 ## T010 — truth / truth value
 
 **Chosen rendering/action:** सत्यता / सत्यतामूल्य
@@ -1397,6 +1427,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 - `MR-P010` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
 - `MR-P066` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/t (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
 - `MR-P081` — शासन व्यवहार कोश — V glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/3/V (`checked_supports`): Primary Government of Maharashtra terminology extraction read in the current search. Limitation: The glossary entry is generic rather than model-theoretic; the OpenLogic definition controls the exact logical object.
+- `MR-P083` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/t (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash.
 
 **Alternatives:**
 
@@ -1430,6 +1461,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | `T010-OLP-0061-B010` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:133-140` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134-142` | 78–81 |
 | `T010-OLP-0061-B014` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:158-159` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:160-161` | 78–81 |
 | `T010-OLP-0061-B020` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:186-188` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:188-191` | 78–81 |
+| `T010-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
 
 ## T011 — syntax
 
@@ -1445,6 +1477,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 
 - `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
 - `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
 
 **Alternatives:**
 
@@ -1458,6 +1491,8 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | `T011-OLP-0057-B007` | `OLP-0057` | 7.1 परिचय | `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:37-50` | `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:38-51` | 73–74 |
 | `T011-OLP-0058-B034` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:167-171` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:167-172` | 74–75 |
 | `T011-OLP-0058-B035` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:173-180` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:174-180` | 74–75 |
+| `T011-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
+| `T011-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
 
 ## T012 — semantics
 
@@ -1474,6 +1509,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 - `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
 - `MR-P010` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
 - `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
 
 **Alternatives:**
 
@@ -1492,6 +1528,9 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | `T012-OLP-0062-B006` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:13-13` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:13-13` | 81 |
 | `T012-OLP-0062-B007` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33` | 81 |
 | `T012-OLP-0062-B015` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83-86` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:84-87` | 81 |
+| `T012-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
+| `T012-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+| `T012-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
 
 ## T014 — perfect number
 
@@ -1548,6 +1587,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 
 - `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
 - `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
 
 **Alternatives:**
 
@@ -1622,6 +1662,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | `T015-OLP-0062-B014` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:79-81` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:80-82` | 81 |
 | `T015-OLP-0062-B016` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:88-90` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:89-91` | 81 |
 | `T015-OLP-0062-B017` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:92-94` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:93-95` | 81 |
+| `T015-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
 
 ## T016 — if and only if
 
@@ -2200,6 +2241,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | `T023-OLP-0048-B010` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:89-95` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:84-89` | 62–65 |
 | `T023-OLP-0060-B007` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:20-34` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:19-33` | 77–78 |
 | `T023-OLP-0060-B014` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:114-118` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:110-114` | 77–78 |
+| `T023-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
 
 ## T024 — set difference
 
@@ -2460,6 +2502,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 **Authorities actually checked:**
 
 - `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
 
 **Alternatives:**
 
@@ -2504,6 +2547,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | `T029-OLP-0024-B025` | `OLP-0024` | 3.4 फलनांचे व्युत्क्रम | `upstream/content/sets-functions-relations/functions/inverses.tex:163-165` | `mr/content/sets-functions-relations/functions/inverses.tex:167-169` | 27–29 |
 | `T029-OLP-0024-B026` | `OLP-0024` | 3.4 फलनांचे व्युत्क्रम | `upstream/content/sets-functions-relations/functions/inverses.tex:167-169` | `mr/content/sets-functions-relations/functions/inverses.tex:171-173` | 27–29 |
 | `T029-OLP-0024-B027` | `OLP-0024` | 3.4 फलनांचे व्युत्क्रम | `upstream/content/sets-functions-relations/functions/inverses.tex:171-175` | `mr/content/sets-functions-relations/functions/inverses.tex:175-179` | 27–29 |
+| `T029-OLP-0064-B007` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | pending |
 
 ## T030 — relation / binary relation
 
@@ -3401,6 +3445,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | `T041-OLP-0018-B018` | `OLP-0018` | 2.7 वृक्ष | `upstream/content/sets-functions-relations/relations/trees.tex:110-119` | `mr/content/sets-functions-relations/relations/trees.tex:109-118` | 20–22 |
 | `T041-OLP-0018-B019` | `OLP-0018` | 2.7 वृक्ष | `upstream/content/sets-functions-relations/relations/trees.tex:121-124` | `mr/content/sets-functions-relations/relations/trees.tex:120-123` | 20–22 |
 | `T041-OLP-0018-B020` | `OLP-0018` | 2.7 वृक्ष | `upstream/content/sets-functions-relations/relations/trees.tex:126-128` | `mr/content/sets-functions-relations/relations/trees.tex:125-127` | 20–22 |
+| `T041-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
 
 ## T042 — least / well-ordered / predecessor / successor
 
@@ -3589,6 +3634,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 - `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
 - `MR-P022` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 20 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
 - `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
 
 **Alternatives:**
 
@@ -3691,6 +3737,14 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | `T044-OLP-0062-B008` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:34-43` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:35-44` | 81 |
 | `T044-OLP-0062-B009` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61` | 81 |
 | `T044-OLP-0062-B012` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:70-73` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:71-74` | 81 |
+| `T044-OLP-0063-B004` | `OLP-0063` |  | `upstream/content/first-order-logic/proof-systems/proof-systems.tex:8-10` | `mr/content/first-order-logic/proof-systems/proof-systems.tex:8-10` | pending |
+| `T044-OLP-0063-B005` | `OLP-0063` |  | `upstream/content/first-order-logic/proof-systems/proof-systems.tex:12-17` | `mr/content/first-order-logic/proof-systems/proof-systems.tex:12-17` | pending |
+| `T044-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
+| `T044-OLP-0064-B007` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | pending |
+| `T044-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
+| `T044-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+| `T044-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
+| `T044-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
 
 ## T045 — function / mapping
 
@@ -6749,6 +6803,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 **Authorities actually checked:**
 
 - `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
 
 **Alternatives:**
 
@@ -6763,6 +6818,12 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | `T109-OLP-0058-B009` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:37-47` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:37-47` | 74–75 |
 | `T109-OLP-0058-B010` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:49-59` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:49-58` | 74–75 |
 | `T109-OLP-0062-B015` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83-86` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:84-87` | 81 |
+| `T109-OLP-0063-B004` | `OLP-0063` |  | `upstream/content/first-order-logic/proof-systems/proof-systems.tex:8-10` | `mr/content/first-order-logic/proof-systems/proof-systems.tex:8-10` | pending |
+| `T109-OLP-0063-B005` | `OLP-0063` |  | `upstream/content/first-order-logic/proof-systems/proof-systems.tex:12-17` | `mr/content/first-order-logic/proof-systems/proof-systems.tex:12-17` | pending |
+| `T109-OLP-0064-B007` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | pending |
+| `T109-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
+| `T109-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+| `T109-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -6780,6 +6841,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 - `MR-P042` — गणितशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Primary official Government of Maharashtra mathematics glossary read in web-search extraction. Limitation: Observation hash is not an origin-page hash; the compound property label is contextual.
 - `MR-P066` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/t (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
 - `MR-P067` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
 
 **Alternatives:**
 
@@ -6794,6 +6856,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 |---|---|---|---|---|---|
 | `T110-OLP-0055-B005` | `OLP-0055` | 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | `upstream/content/propositional-logic/propositional-logic.tex:9-18` | `mr/content/propositional-logic/propositional-logic.tex:9-18` | 73 |
 | `T110-OLP-0055-B006` | `OLP-0055` | 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | `upstream/content/propositional-logic/propositional-logic.tex:20-23` | `mr/content/propositional-logic/propositional-logic.tex:20-23` | 73 |
+| `T110-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -6886,6 +6949,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T113-OLP-0055-B005` | `OLP-0055` | 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | `upstream/content/propositional-logic/propositional-logic.tex:9-18` | `mr/content/propositional-logic/propositional-logic.tex:9-18` | 73 |
+| `T113-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
 
 ## T114 — propositional variable
 
@@ -7184,6 +7248,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | `T121-OLP-0061-B020` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:186-188` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:188-191` | 78–81 |
 | `T121-OLP-0061-B022` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:194-196` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:197-199` | 78–81 |
 | `T121-OLP-0062-B007` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33` | 81 |
+| `T121-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
 
 ## T122 — tautology
 
@@ -7246,6 +7311,9 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | `T123-OLP-0062-B009` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61` | 81 |
 | `T123-OLP-0062-B012` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:70-73` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:71-74` | 81 |
 | `T123-OLP-0062-B015` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83-86` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:84-87` | 81 |
+| `T123-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
+| `T123-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+| `T123-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -7275,6 +7343,8 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | `T124-OLP-0062-B007` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33` | 81 |
 | `T124-OLP-0062-B008` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:34-43` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:35-44` | 81 |
 | `T124-OLP-0062-B009` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61` | 81 |
+| `T124-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
+| `T124-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
 
 ## T125 — necessary / contingent
 
@@ -7332,6 +7402,8 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 |---|---|---|---|---|---|
 | `T126-OLP-0057-B006` | `OLP-0057` | 7.1 परिचय | `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:13-35` | `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:13-36` | 73–74 |
 | `T126-OLP-0058-B012` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:63-76` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:62-77` | 74–75 |
+| `T126-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
+| `T126-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
 
 ## T127 — propositional constant
 
@@ -8067,6 +8139,7 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 |---|---|---|---|---|---|
 | `T148-OLP-0062-B007` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33` | 81 |
 | `T148-OLP-0062-B012` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:70-73` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:71-74` | 81 |
+| `T148-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
 
 ## T149 — monotonicity (of semantic entailment)
 
@@ -8125,6 +8198,171 @@ Coverage: 59/722 source units through OLP-0062; 187 applied decisions; 4,474 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T150-OLP-0062-B015` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83-86` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:84-87` | 81 |
+
+## T151 — axiomatic system / inference rule
+
+**Chosen rendering/action:** स्वयंसिद्धकीय पद्धत / निगमन नियम
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P082 directly uses स्वयंसिद्धकीय व्यवस्था and निगमन नियम in its proof-theory account. The target keeps the attested adjective and uses पद्धत to agree with the established proof-system umbrella.
+
+**Rationale:** MR-P082 directly uses स्वयंसिद्धकीय व्यवस्था and निगमन नियम in its proof-theory account. The target keeps the attested adjective and uses पद्धत to agree with the established proof-system umbrella.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- स्वयंसिद्धकीय व्यवस्था / अनुमान नियम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- स्वयंसिद्धकाधारित पद्धत / निष्कर्षण नियम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the textbook standardize on स्वयंसिद्धकीय पद्धत or retain the Vishwakosh noun व्यवस्था?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T151-OLP-0064-B007` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | pending |
+| `T151-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+
+## T152 — natural deduction / sequent calculus
+
+**Chosen rendering/action:** नैसर्गिक निगमन / क्रमवर्ती कलन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The Marathi Vishwakosh proof-theory article directly names both calculi and attributes their development to Jaśkowski and Gentzen.
+
+**Rationale:** The Marathi Vishwakosh proof-theory article directly names both calculi and attributes their development to Jaśkowski and Gentzen.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- नैसर्गिक निष्पत्ती / सिक्वेंट कलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- नैसर्गिक निगमन कलन / अनुक्रमिका कलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should later section headings retain the exact attested concise forms नैसर्गिक निगमन and क्रमवर्ती कलन?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T152-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
+| `T152-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+
+## T153 — truth tree / tableaux proof / resolution method and refutation
+
+**Chosen rendering/action:** सत्यता-वृक्ष / टॅब्लो सिद्धता / निराकरण पद्धत व निराकरण-खंडन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The tree, truth, proof and inference stems are established, while the frozen source's list fixes each method. No checked primary Marathi source directly attested the complete labels, so the edition uses transparent compounds and retains tableau as a recognizable loanword.
+
+**Rationale:** The tree, truth, proof and inference stems are established, while the frozen source's list fixes each method. No checked primary Marathi source directly attested the complete labels, so the edition uses transparent compounds and retains tableau as a recognizable loanword.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P010` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P041` — गणितशास्त्र परिभाषा कोश — O glossary. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/9/o (`checked_supports`): Primary official Government of Maharashtra mathematics glossary read through web open. Limitation: Observation hash is not an origin-page hash.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- सत्य-वृक्ष / सारणी-सिद्धता / रिझोल्यूशन पद्धत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सत्यता-वृक्ष / टॅब्लो प्रमाण / निराकरण रीती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are टॅब्लो सिद्धता and निराकरण-खंडन the clearest Marathi textbook labels for tableaux proofs and resolution refutations?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T153-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
+| `T153-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+
+## T154 — theorem
+
+**Chosen rendering/action:** प्रमेय
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The official philosophy and logic glossary directly gives प्रमेय, while its adjacent truth entries help preserve the source's distinction between being a theorem and being true or valid.
+
+**Rationale:** The official philosophy and logic glossary directly gives प्रमेय, while its adjacent truth entries help preserve the source's distinction between being a theorem and being true or valid.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P083` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/t (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash.
+
+**Alternatives:**
+
+- सिद्धांत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सिद्ध विधान — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does प्रमेय remain the preferred uniform noun for both mathematical results and formulas derivable without premises?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T154-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+| `T154-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
+
+## T155 — soundness / sound / unsound (of a proof system)
+
+**Chosen rendering/action:** निर्दोषता / निर्दोष / सदोष
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The official glossary lists निर्दोषता and दृढता as generic soundness equivalents. The target chooses निर्दोषता because OpenLogic immediately defines the property as admitting no derivability claim without semantic entailment, and keeps it separate from वैधता. No direct Marathi proof-theory attestation was found.
+
+**Rationale:** The official glossary lists निर्दोषता and दृढता as generic soundness equivalents. The target chooses निर्दोषता because OpenLogic immediately defines the property as admitting no derivability claim without semantic entailment, and keeps it separate from वैधता. No direct Marathi proof-theory attestation was found.
+
+**Authorities actually checked:**
+
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P010` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P084` — धातुशास्त्र परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/22/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: The source glossary is metallurgical, not logical; निर्दोषता is a provisional logic-domain extension.
+
+**Alternatives:**
+
+- दृढता / दृढ / अदृढ — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सुदृढता / सुदृढ / असुदृढ — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रामाण्य / प्रमाण / अप्रमाण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should proof-system soundness use निर्दोषता, दृढता, or a directly attested specialist term not found in the checked sources?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T155-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+| `T155-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
+
+## T156 — consistency / inconsistency / consistent / inconsistent
+
+**Chosen rendering/action:** सुसंगतता / विसंगतता / सुसंगत / विसंगत
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The Marathi Vishwakosh proof-theory article directly uses सुसंगतता and सुसंगत and explains both semantic and syntactic versions. विसंगतता and विसंगत are the transparent negatives used throughout current Marathi prose.
+
+**Rationale:** The Marathi Vishwakosh proof-theory article directly uses सुसंगतता and सुसंगत and explains both semantic and syntactic versions. विसंगतता and विसंगत are the transparent negatives used throughout current Marathi prose.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- अव्याघातित्व / व्याघात — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सुसंगती / विसंगती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the edition retain the directly attested सुसंगतता family or prefer the more explicitly contradiction-based अव्याघातित्व?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T156-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
