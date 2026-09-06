@@ -1,0 +1,127 @@
+% Part: propositional-logic
+% Chapter: propositional-logic
+% Section: preliminaries
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{pre}
+
+\olsection{पूर्वतयारी}
+
+\begin{thm}[\emph{!!{formula}s वरील विगमनाचे तत्त्व}]
+  \ollabel{thm:induction}  
+  एखादा गुणधर्म~$P$ सर्व आण्विक !!{formula}s साठी लागू होत असेल आणि
+  पुढील अटी पूर्ण करत असेल:
+  \begin{enumerate}
+    \tagitem{prvNot}{तो~$!A$ साठी लागू असताना $\lnot !A$ साठीही
+      लागू होतो;}{ }
+    \tagitem{prvAnd}{तो~$!A$ आणि~$!B$ यांच्यासाठी लागू असताना
+      $(!A \land !B)$ साठीही लागू होतो;}{ }
+    \tagitem{prvOr}{तो~$!A$ आणि~$!B$ यांच्यासाठी लागू असताना
+      $(!A \lor !B)$ साठीही लागू होतो;}{ }
+    \tagitem{prvIf}{तो~$!A$ आणि~$!B$ यांच्यासाठी लागू असताना
+      $(!A \lif !B)$ साठीही लागू होतो;}{ }
+    \tagitem{prvIff}{तो~$!A$ आणि~$!B$ यांच्यासाठी लागू असताना
+      $(!A \liff !B)$ साठीही लागू होतो;}{ }
+  \end{enumerate}
+  तर $P$ सर्व !!{formula}s साठी लागू होतो.
+\end{thm}
+
+\begin{proof}
+  गुणधर्म~$P$ असलेल्या सर्व !!{formula}s चा संग्रह~$S$ असू द्या.
+  स्पष्टपणे $S \subseteq \Frm[L_0]$. \olref[fml]{defn:formulas} मधील
+  सर्व अटी $S$~पूर्ण करतो: त्यात सर्व आण्विक !!{formula}s आहेत आणि
+  तो !!{operator}s खाली बंद आहे.  $\Frm[L_0]$ हा असा सर्वांत लहान
+  वर्ग आहे; म्हणून $\Frm[L_0] \subseteq S$. त्यामुळे $\Frm[L_0] = S$,
+  आणि प्रत्येक सूत्राला गुणधर्म~$P$ आहे.
+\end{proof}
+
+\begin{prop}\ollabel{prop:balanced}
+   $\Frm[L_0]$ मधील प्रत्येक !!{formula} \emph{संतुलित} आहे; म्हणजे
+   त्यात जेवढे डावे कंस आहेत तेवढेच उजवे कंस आहेत.
+\end{prop}
+
+\begin{prob}
+\olref[pl][syn][pre]{prop:balanced} सिद्ध करा.
+\end{prob}
+
+\begin{prop} \ollabel{prop:noinit}
+कोणत्याही !!a{formula} चा कोणताही उचित आरंभीचा खंड !!a{formula} नसतो.
+\end{prop}
+
+\begin{prob}
+  \olref[pl][syn][pre]{prop:noinit} सिद्ध करा.
+\end{prob}
+
+\begin{prop}[एकमेव वाचनीयता]
+$ \Frm[L_0]$ मधील कोणत्याही !!{formula}~$!A$ चे पुढीलपैकी नेमक्या एका
+रूपात रचनाविश्लेषण करता येते:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$.}{ }
+
+\tagitem{prvTrue}{$\ltrue$.}{ }
+
+\item एखाद्या $\Obj p_n \in  \PVar$ साठी $\Obj p_n$.
+  
+\tagitem{prvNot}{एखाद्या !!{formula}~$!B$ साठी $\lnot !B$.}{ }
+
+\tagitem{prvAnd}{काही !!{formula}s $!B$ आणि~$!C$ यांच्यासाठी
+  $(!B \land !C)$.}{ }
+
+\tagitem{prvOr}{काही !!{formula}s $!B$ आणि~$!C$ यांच्यासाठी
+  $(!B \lor !C)$.}{ }
+
+\tagitem{prvIf}{काही !!{formula}s $!B$ आणि~$!C$ यांच्यासाठी
+  $(!B \lif !C)$.}{ }
+
+\tagitem{prvIff}{काही !!{formula}s $!B$ आणि~$!C$ यांच्यासाठी
+  $(!B \liff !C)$.}{ }
+\end{enumerate}
+शिवाय, हे रचनाविश्लेषण \emph{एकमेव} असते.
+\end{prop}
+
+\begin{proof}
+$!A$ वरील विगमनाने सिद्ध करू. उदाहरणार्थ, $!A$ चे $(!B \lif !C)$ आणि
+$(!B' \lif !C')$ अशी दोन भिन्न रचनाविश्लेषणे आहेत असे समजा. मग $!B$
+आणि $!B'$ एकच असले पाहिजेत (अन्यथा त्यांपैकी एक हा दुसऱ्याचा उचित
+आरंभीचा खंड असेल); म्हणून $!A$ ची ही दोन रचनाविश्लेषणे भिन्न असतील,
+तर त्याचे कारण असेच असले पाहिजे की $!C$ आणि $!C'$ ही एकाच
+चिन्हमालेची भिन्न रचनाविश्लेषणे आहेत; पण विगमन गृहीतकानुसार ते अशक्य
+आहे.
+\end{proof}
+
+
+\begin{defn}[एकरूप आदेशन]
+$!A$ आणि $!B$ ही !!{formula}s असतील आणि $\Obj p_i$ हे !!{propositional
+variable} असेल, तर $!A$ मधील $\Obj p_i$ ची प्रत्येक
+आस्थिति $!B$ च्या एका आस्थितीने बदलल्यावर मिळणारा परिणाम
+$\Subst{!A}{!B}{\Obj p_i}$ ने दर्शवला जातो; त्याचप्रमाणे,
+$\Obj p_1$, \dots,~$\Obj p_n$ यांचे !!{formula}s $!B_1$,
+\dots,~$!B_n$ यांनी एकाच वेळी केलेले आदेशन
+$\SSubst{!A}{\subst{!B_1}{\Obj p_1},\dots,\subst{!B_n}{\Obj p_n}}$
+ने दर्शवले जाते.
+\end{defn}
+
+\begin{prob} खालील पाच !!{formula}s पैकी प्रत्येकासाठी, ते
+ !!{formula} \( \Subst{!A}{!B}{\Obj p_i} \) या आदेशनाच्या रूपात व्यक्त
+ करता येते का ते ठरवा; येथे \( !A \) हे अनुक्रमे (i) \( \Obj p_0 \);
+ (ii) \( ( \lnot \Obj p_0 \land \Obj p_1) \); आणि (iii)
+ \( ( ( \lnot \Obj p_0 \lif \Obj p_1 ) \land \Obj p_2 ) \) आहे.
+ प्रत्येक बाबतीत संबद्ध आदेशन स्पष्ट करा.
+  \begin{enumerate}
+    \item \( \Obj p_1 \) 
+    \item \( ( \lnot \Obj p_0 \land \Obj p_0 ) \)
+    \item \( ( ( \Obj p_0 \lor \Obj p_1 ) \land \Obj p_2 )  \)
+    \item \( \lnot ( ( \Obj p_0 \lif \Obj p_1 ) \land \Obj p_2 ) \)
+    \item \( (( \lnot ( \Obj p_0 \lif \Obj p_1 ) \lif ( \Obj p_0 \lor \Obj p_1 )) \land \lnot ( \Obj p_0 \land \Obj p_1 )) \)
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+$\Subst{!A}{!B}{p}$ ची विगमनाधारित, गणितीयदृष्ट्या काटेकोर व्याख्या
+द्या.
+\end{prob}
+
+\end{document}

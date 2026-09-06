@@ -23,12 +23,20 @@ def sha(path):
 
 
 input_rows = json.loads(INPUTS.read_text(encoding="utf-8"))["input_units"]
-driver_names = {
+section_driver_names = {
     "sets.tex", "relations-complete.tex", "functions.tex",
     "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
+    "propositional-logic.tex", "syntax-and-semantics.tex",
 }
-chapter_count = sum(Path(row["path"]).name in driver_names for row in input_rows)
-section_count = len(input_rows) - chapter_count
+chapter_driver_names = {
+    "sets.tex", "relations-complete.tex", "functions.tex",
+    "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
+    "syntax-and-semantics.tex",
+}
+chapter_count = sum(Path(row["path"]).name in chapter_driver_names for row in input_rows)
+section_count = len(input_rows) - sum(
+    Path(row["path"]).name in section_driver_names for row in input_rows
+)
 scope = {
     "translation_source_units": len(input_rows),
     "reader_sections": section_count,
@@ -68,7 +76,49 @@ def unwrap_command(text, command):
     return text
 
 
+def expand_logic_math_macros(text):
+    """Canonicalize source macros and Pandoc's applytofirst expansions."""
+    text = re.sub(
+        r"\\pSat/\{([A-Za-z])([^{}]*)\}\{([^{}]+)\}",
+        r"\\mathfrak{\1}\2\\nvDash \3",
+        text,
+    )
+    text = re.sub(
+        r"\\pSat\{([A-Za-z])([^{}]*)\}\{([^{}]+)\}",
+        r"\\mathfrak{\1}\2\\vDash \3",
+        text,
+    )
+    text = re.sub(
+        r"\\pValue\{([A-Za-z])([^{}]*)\}",
+        r"\\overline{\\mathfrak{\1}\2}",
+        text,
+    )
+    text = re.sub(r"\\pAssign\{([A-Za-z])([^{}]*)\}", r"\\mathfrak{\1}\2", text)
+    text = re.sub(
+        r"\\Frm\[([A-Za-z])([^][]*)\]",
+        r"\\mathrm{Frm}(\\mathcal{\1}\2)",
+        text,
+    )
+    text = re.sub(r"\\Lang\{([A-Za-z])([^{}]*)\}", r"\\mathcal{\1}\2", text)
+    text = re.sub(r"\\Lang\s+([A-Za-z])", r"\\mathcal{\1}", text)
+    text = re.sub(r"\\Struct\{([A-Za-z])([^{}]*)\}", r"\\mathfrak{\1}\2", text)
+    text = re.sub(r"\\Struct\s+([A-Za-z])", r"\\mathfrak{\1}", text)
+    text = re.sub(r"\\Entails\b", r"\\vDash", text)
+    text = re.sub(
+        r"\{\\mathfrak([A-Za-z])\s*(_\d+)?\s*\}",
+        lambda match: r"\mathfrak{" + match.group(1) + "}" + (match.group(2) or ""),
+        text,
+    )
+    text = re.sub(
+        r"\{\\mathcal([A-Za-z])\s*(_\d+)?\s*\}",
+        lambda match: r"\mathcal{" + match.group(1) + "}" + (match.group(2) or ""),
+        text,
+    )
+    return text
+
+
 def mathnorm(text):
+    text = expand_logic_math_macros(text)
     text = text.replace(r"\nicefrac", r"\frac")
     text = text.replace(r"\emph{", r"\text{")
     text = unwrap_command(text, "shoveleft")
@@ -152,6 +202,25 @@ def collect(root):
 source = collect(ast(B / "openlogic-mr-core.tex"))
 adapted = collect(ast(B / "html-input.tex"))
 assert source[0] == adapted[0], "Prose changed while adapting diagrams and MathML"
+if source[1] != adapted[1]:
+    limit = min(len(source[1]), len(adapted[1]))
+    mismatch = next(
+        (index for index in range(limit) if source[1][index] != adapted[1][index]),
+        limit,
+    )
+    print(
+        json.dumps(
+            {
+                "adapted_formula_mismatch_index": mismatch,
+                "source_formula_count": len(source[1]),
+                "adapted_formula_count": len(adapted[1]),
+                "source": source[1][mismatch] if mismatch < len(source[1]) else None,
+                "adapted": adapted[1][mismatch] if mismatch < len(adapted[1]) else None,
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+    )
 assert source[1] == adapted[1], "Formula changed while adapting diagrams and MathML"
 assert source[3] == adapted[3], "Footnote content changed while adapting HTML"
 

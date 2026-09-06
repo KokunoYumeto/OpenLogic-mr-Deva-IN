@@ -1,0 +1,62 @@
+{
+  "schema": "openlogic-cumulative-release-qa/1",
+  "release": "seven-chapters-v0.5",
+  "scope": {
+    "translated_source_units": 59,
+    "total_source_units": 722,
+    "remaining_source_units": 663,
+    "aligned_content_segments": 716,
+    "reader_sections": 51,
+    "complete_chapters": 7,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0062",
+    "complete_edition": false
+  },
+  "pdf": {
+    "filename": "openlogic-mr-seven-chapters.pdf",
+    "pages": 83,
+    "bytes": 433898,
+    "sha256": "f6ae9a94357502d022b16f71c2638b497dc61f67750575c731b7d8690bf6a2df",
+    "two_clean_guarded_builds_byte_identical": true,
+    "all_pages_visually_reviewed": true,
+    "tagged_pdf": false,
+    "accessible_html_companion_required": true
+  },
+  "accessible_html": {
+    "entrypoint": "reader/seven-chapters/index.html",
+    "bytes": 1460929,
+    "sha256": "54a0d151fec1ceb77d3561aff98534c5f0e922811c12de8eb33242347d0a7ef6",
+    "native_mathml": 3373,
+    "diagrams_with_detailed_marathi_alternatives": 13,
+    "diagram_pdf_crop_pages_corrected_and_guarded": true,
+    "internal_links_valid": 204,
+    "desktop_browser_layout": "passed at 1280x720 CSS pixels",
+    "mobile_browser_layout": "passed at 390x844 CSS pixels",
+    "page_level_horizontal_overflow": false,
+    "console_errors": 0,
+    "network_dependencies": 0
+  },
+  "translation_decisions": {
+    "canonical_decisions_with_occurrences": 187,
+    "legacy_decisions": 189,
+    "occurrences": 4474,
+    "high_priority_occurrences": 559,
+    "schema_errors": 0,
+    "canonical_json_sha256": "6db7ab157c15d06c4936535cc4bd372e6fe9e9e32f9a16a78b77982c47d4d84f",
+    "schema_sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
+  },
+  "source_checkpoint": {
+    "path": "provenance/source-checkpoint-59/SOURCE_CHECKPOINT.json",
+    "bytes": 31407,
+    "sha256": "0a9d1883272fdf94084e2a7c88eb7fa419d48a415935928bbe06c00572d85040"
+  },
+  "validators": {
+    "aligned_source_formula_macro_token_identifier": "passed",
+    "owner_state": "passed",
+    "expert_review_ledger": "passed",
+    "shared_translation_decision_schema": "passed with zero errors",
+    "cross_package_consistency": "passed on working tree and release packages"
+  },
+  "review": "Codex machine translation and same-agent bilingual review; no independent human review claimed",
+  "release_ready": true
+}

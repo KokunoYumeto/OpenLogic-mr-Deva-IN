@@ -1,0 +1,57 @@
+{
+  "schema": "openlogic-release-manifest/1",
+  "release": "seven-chapters-v0.5",
+  "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_units": 59,
+    "total_units": 722,
+    "remaining_units": 663,
+    "aligned_segments": 716,
+    "complete_chapters": 7
+  },
+  "assets": [
+    {
+      "filename": "openlogic-mr-seven-chapters.pdf",
+      "bytes": 433898,
+      "sha256": "f6ae9a94357502d022b16f71c2638b497dc61f67750575c731b7d8690bf6a2df"
+    },
+    {
+      "filename": "openlogic-mr-seven-chapters.tex",
+      "bytes": 482950,
+      "sha256": "0181224a7f10c7b8008f10f3b5fd79c678d56caab1439ca8e737fee49e28c89e"
+    },
+    {
+      "filename": "openlogic-mr-seven-chapters-html.zip",
+      "bytes": 1369025,
+      "sha256": "b74d666dfca6b7bb349e55eee027c7dc14aa102268273321307e97d26dedf524"
+    },
+    {
+      "filename": "openlogic-mr-seven-chapters-review.zip",
+      "bytes": 4089612,
+      "sha256": "afc644cea7ef826c432bbcebcd777df0e0acce86e0b648de7aaf664432081593"
+    },
+    {
+      "filename": "openlogic-mr-seven-chapters-editable-sources.zip",
+      "bytes": 13924645,
+      "sha256": "7814bea2e4084368e7c991e3837daddbe605dddc3d862e5ba3864d1ac26a772a"
+    }
+  ],
+  "source_package_manifest": {
+    "path": "provenance/seven-chapters-v0.5/EDITION_FILE_MANIFEST.json",
+    "files_listed": 1311,
+    "bytes": 247238,
+    "sha256": "2f19306f2705376e764540b39e3033c00ae1f3649f0c204cbdeb072f911be247"
+  },
+  "release_qa": {
+    "path": "provenance/seven-chapters-v0.5/RELEASE_QA.json",
+    "bytes": 2345,
+    "sha256": "5062c5f208f54773dd48b05a0fcd82379277bcb740126650a678a670bb8ad1ea"
+  },
+  "cross_package_qa": {
+    "path": "provenance/seven-chapters-v0.5/CROSS_PACKAGE_QA-RELEASE.json",
+    "bytes": 1308,
+    "sha256": "7edf848801ca7f7d3c0f9829389b0af18fdaf7de20c8aad12ce50d9da0ecd7f4"
+  },
+  "full_edition_complete": false
+}

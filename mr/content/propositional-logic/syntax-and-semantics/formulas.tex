@@ -1,0 +1,182 @@
+% Part: propositional-logic
+% Chapter: syntax-and-semantics
+% Section: formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{fml}
+
+\olsection{विधानीय \usetoken{P}{formula}}
+
+विधानीय तर्कशास्त्रातील !!^{formula}s ही
+\emph{!!{propositional
+    variable}s}\iftag{prvFalse}{\iftag{prvTrue}{,}{ आणि} विधानीय
+  स्थिर~$\lfalse$}{}\iftag{prvTrue}{\iftag{prvFalse}{
+    आणि}{} विधानीय स्थिर~$\ltrue$}{} यांपासून \emph{तार्किक
+  संयोजके} वापरून तयार होतात.
+
+\begin{enumerate}
+\item !!^a{denumerable} संच~$\PVar$: त्यातील !!{propositional variable}s
+  $\Obj p_0$, $\Obj p_1$, \dots
+\tagitem{prvFalse}{!!{falsity} साठीचे विधानीय स्थिर~$\lfalse$.}{}
+\tagitem{prvTrue}{!!{truth} साठीचे विधानीय स्थिर~$\ltrue$.}{}
+\item तार्किक संयोजके:
+  \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (नकरण)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (संधियोग)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (विकल्पयोग)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+\item विरामचिन्हे: (, ), आणि स्वल्पविराम.
+\end{enumerate}
+
+विधानीय तर्कशास्त्राची ही भाषा आपण $\Lang L_0$ ने दर्शवतो.
+
+\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%
+वर दिलेल्या आदिम संयोजकांबरोबर आपण पुढील \emph{परिभाषित} चिन्हेही
+वापरतो:
+\startycommalist
+  \iftag{defNot}{\ycomma $\lnot$ (नकरण)}{}%
+  \iftag{defAnd}{\ycomma $\land$ (संधियोग)}{}%
+  \iftag{defOr}{\ycomma $\lor$ (विकल्पयोग)}{}%
+  \iftag{defIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{defIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{defFalse}{\ycomma $\lfalse$ (!!{falsity})}{}%
+  \iftag{defTrue}{\ycomma $\ltrue$ (!!{truth})}}{}.
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+\begin{explain}
+परिभाषित चिन्ह हे अधिकृतपणे भाषेचा भाग नसते; त्याऐवजी, अनौपचारिक
+संक्षेप म्हणून त्याची ओळख करून दिली जाते. केवळ आदिम चिन्हे वापरल्यास
+बरीच लांब होणारी सूत्रे त्यामुळे संक्षेपाने लिहिता येतात. हा लाभ
+उघडच आहे. पण त्याहून मोठा लाभ असा की सिद्धता लहान होतात. एखादे चिन्ह
+आदिम असेल, तर सिद्धतांमध्ये त्याचा स्वतंत्रपणे विचार करावा लागतो.
+त्यामुळे आदिम चिन्हे जितकी अधिक, तितक्या आपल्या सिद्धता लांब होतात.
+\end{explain}
+\end{tagblock}
+
+% Alternate symbols
+
+\begin{intro}
+वर आपण वापरलेल्या संज्ञांपेक्षा आणि चिन्हांपेक्षा वेगळ्या संज्ञा व
+चिन्हे तुम्हाला परिचित असू शकतात. तर्कशास्त्राच्या ग्रंथांत (आणि
+अध्यापनात) ``नकरण'' यासाठी सामान्यतः $\sim$, $\neg$, आणि~!\ यांपैकी
+एखादे, तर ``संधियोग'' यासाठी $\wedge$, $\cdot$, आणि $\&$ यांपैकी
+एखादे चिन्ह वापरतात. ``सशर्त (संकेतार्थक)'' किंवा ``अभिव्यंजन'' यांसाठी
+$\rightarrow$, $\Rightarrow$, आणि $\supset$ ही चिन्हे सामान्यतः
+वापरली जातात.
+\iftag{prvIff,defIff}{``द्विसशर्त'', ``द्वि-अभिव्यंजन'' किंवा
+  ``(वास्तविक) सममूल्यता'' यांसाठी $\leftrightarrow$,
+  $\Leftrightarrow$, आणि $\equiv$ ही चिन्हे वापरतात.}{}
+\iftag{prvFalse,defFalse}{$\lfalse$ या चिन्हाला वेगवेगळ्या ठिकाणी
+  ``असत्यता'', ``फाल्सम'', ``विसंगती'' किंवा ``तळ'' म्हणतात.}{}
+\iftag{prvTrue,defTrue}{$\ltrue$ या चिन्हाला वेगवेगळ्या ठिकाणी
+  ``सत्यता'', ``वेरम'' किंवा ``शिखर'' म्हणतात.}{}
+\end{intro}
+
+\begin{defn}[सूत्र]
+\ollabel{defn:formulas}
+विधानीय तर्कशास्त्रातील \emph{!!{formula}s} चा संच~$\Frm[L_0]$
+पुढीलप्रमाणे विगमनाने परिभाषित केला जातो:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$ हे आण्विक !!{formula} आहे.}{}
+
+\tagitem{prvTrue}{$\ltrue$ हे आण्विक !!{formula} आहे.}{}
+
+\item प्रत्येक !!{propositional variable}~$\Obj p_i$ हे आण्विक
+  !!{formula} आहे.
+
+\tagitem{prvNot}{$!A$ हे !!a{formula} असेल, तर $\lnot !A$ हे
+  !!a{formula} आहे.}{}
+
+\tagitem{prvAnd}{$!A$ आणि $!B$ ही !!{formula}s असतील, तर $(!A \land
+  !B)$ हे !!a{formula} आहे.}{}
+
+\tagitem{prvOr}{$!A$ आणि $!B$ ही !!{formula}s असतील, तर $(!A \lor !B)$
+  हे !!a{formula} आहे.}{}
+
+\tagitem{prvIf}{$!A$ आणि $!B$ ही !!{formula}s असतील, तर $(!A \lif !B)$
+  हे !!a{formula} आहे.}{}
+
+\tagitem{prvIff}{$!A$ आणि $!B$ ही !!{formula}s असतील, तर $(!A \liff !B)$
+  हे !!a{formula} आहे.}{}
+
+\tagitem{limitClause}{इतर काहीही !!a{formula} नाही.}{}
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+!!{formula}s ची ही व्याख्या \emph{विगमनाधारित व्याख्या} आहे. मूलतः,
+आपण !!{formula}s चा संच अनंतपणे अनेक टप्प्यांत तयार करतो. आरंभीच्या
+टप्प्यात आपण सर्व आण्विक सूत्रांना सूत्रे घोषित करतो; हे व्याख्येतील
+पहिल्या काही बाबींशी, म्हणजे
+\iftag{prvTrue}{$\ltrue$, }{}%
+\iftag{prvFalse}{$\lfalse$, }{}%
+$\Obj p_i$ यांच्या बाबींशी जुळते. म्हणून ``आण्विक !!{formula}''
+म्हणजे या रूपातील कोणतेही !!{formula}.
+
+व्याख्येतील इतर बाबी आधीच तयार केलेल्या !!{formula}s पासून नवी
+!!{formula}s तयार करण्याचे नियम देतात. दुसऱ्या टप्प्यात या नियमांनी
+आण्विक !!{formula}s पासून !!{formula}s तयार करता येतात. तिसऱ्या
+टप्प्यात आण्विक सूत्रे आणि दुसऱ्या टप्प्यात मिळालेली सूत्रे यांपासून
+नवी सूत्रे तयार करतो, आणि ही प्रक्रिया पुढे चालू राहते. अशा एखाद्या
+टप्प्यात शेवटी तयार होणारी प्रत्येक गोष्ट !!{formula} असते; इतर
+काहीही सूत्र नसते.
+\end{explain}
+
+द्विस्थानी संयोजक~$\ast$ वापरून $!B$, $!C$ पासून तयार केलेले
+सूत्र $(!B \ast !C)$ लिहिताना आपण अनेकदा सर्वांत बाहेरची कंसांची
+जोडी वगळून केवळ~$!B \ast !C$ असे लिहू.
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+\begin{defn}
+परिभाषित कारके वापरून तयार केलेली सूत्रे पुढीलप्रमाणे समजायची:
+
+\begin{tagenumerate}{defTrue,defFalse,defNot,defOr,defAnd,defIf,defIff,defEx,defAll}
+
+\tagitem{defTrue}{$\ltrue$ हा
+  \iftag{prvFalse}{$\lnot\lfalse$}{$(!A \lor \lnot !A)$ (येथे~$!A$
+    हे एखादे निश्चित आण्विक !!{formula} आहे)} चा संक्षेप आहे.}{}
+
+\tagitem{defFalse}{$\lfalse$ हा
+  \iftag{prvTrue}{$\lnot\ltrue$}{$(!A \land \lnot !A)$ (येथे~$!A$
+    हे एखादे निश्चित आण्विक !!{formula} आहे)} चा संक्षेप आहे.}{}
+
+\tagitem{defNot}{$\lnot !A$ हा $!A \lif \lfalse$ चा संक्षेप आहे.}{}
+
+\tagitem{defOr}{$!A \lor !B$ हा
+  \iftag{prvAnd}{$\lnot(\lnot !A \land \lnot !B)$}{$\lnot !A \lif
+    !B$} चा संक्षेप आहे.}{}
+
+\tagitem{defAnd}{$!A \land !B$ हा
+  \iftag{prvOr}{$\lnot(\lnot !A \lor \lnot !B)$}{$\lnot (!A \lif
+    \lnot !B)$} चा संक्षेप आहे.}{}
+
+\tagitem{defIf}{$!A \lif !B$ हा
+  \iftag{prvOr}{$\lnot !A \lor !B$}{$\lnot (!A \land \lnot !B)$} चा संक्षेप आहे.}{}
+%READERNOTE{MRPL-001: गोठवलेल्या इंग्रजीतील पहिल्या संक्षेपात जुळणारा आरंभीचा कंस नसतानाही शेवटचा कंस आहे. मराठीत मानक नकार-विकल्पयोग सूत्र दिले असून इंग्रजी बाइट्स बदललेले नाहीत.}
+
+\tagitem{defIff}{$!A \liff !B$ हा $(!A \lif !B) \land (!B
+  \lif !A)$ चा संक्षेप आहे.}{}
+\end{tagenumerate}
+\end{defn}
+\end{tagblock}
+
+\begin{defn}[विन्यासात्मक अनन्यता]
+$\ident$ हे चिन्ह चिन्हमालांमधील विन्यासात्मक अनन्यता व्यक्त करते;
+म्हणजे $!A \ident !B$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $!A$ आणि $!B$
+या समान लांबीच्या चिन्हमाला असतात आणि प्रत्येक स्थानी त्यांच्यात तेच
+चिन्ह असते.
+\end{defn}
+
+$\ident$ या चिन्हाच्या दोन्ही बाजूंना जोडणीने मिळालेल्या चिन्हमाला
+येऊ शकतात. उदाहरणार्थ, $!A \ident (!B \lor !C)$ याचा अर्थ असा:
+आरंभीचा कंस, चिन्हमाला~$!B$, $\lor$ हे चिन्ह, चिन्हमाला~$!C$ आणि
+शेवटचा कंस या क्रमाने जोडून मिळणारी चिन्हमाला आणि चिन्हमाला~$!A$
+या एकच आहेत. असे असेल, तर $!A$ चे पहिले चिन्ह आरंभीचा कंस आहे;
+$!A$ मध्ये दुसऱ्या चिन्हापासून सुरू होणारी $!B$ ही उपचिन्हमाला आहे;
+तिच्यानंतर $\lor$ येते; इत्यादी बाबी आपल्याला माहीत होतात.
+
+\end{document}

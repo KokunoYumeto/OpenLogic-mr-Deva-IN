@@ -24,8 +24,8 @@ SCHEMA_SHA256 = "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f9
 SCHEMA_BYTES = 10787
 SOURCE_REVISION = "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
 PDF_FILENAME = PDF.name
-GENERATED_UTC = "2026-09-05T00:00:00Z"
-DEFERRED_IDS = ["T009", "T011", "T012", "T013"]
+GENERATED_UTC = "2026-09-06T00:00:00Z"
+DEFERRED_IDS = ["T009", "T013"]
 
 
 def sha(path):
@@ -34,14 +34,24 @@ def sha(path):
 
 PDF_SHA256 = sha(PDF)
 input_rows = json.loads(INPUTS.read_text(encoding="utf-8"))["input_units"]
-SOURCE_UNITS = len(input_rows)
-LAST_UNIT = input_rows[-1]["unit_id"]
+READER_UNITS = len(input_rows)
+READER_LAST_UNIT = input_rows[-1]["unit_id"]
+translated_unit_ids = sorted(
+    {
+        json.loads(line)["unit_id"]
+        for line in OCCURRENCE_INPUT.read_text(encoding="utf-8-sig").splitlines()
+        if line.strip() and json.loads(line).get("unit_id")
+    }
+)
+SOURCE_UNITS = len(translated_unit_ids)
+LAST_UNIT = translated_unit_ids[-1]
 driver_names = {
     "sets.tex", "relations-complete.tex", "functions.tex",
     "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
+    "syntax-and-semantics.tex",
 }
 COMPLETE_CHAPTERS = sum(Path(row["path"]).name in driver_names for row in input_rows)
-PDF_PROFILE = f"{COMPLETE_CHAPTERS}-chapter cumulative reader through {LAST_UNIT}"
+PDF_PROFILE = f"{COMPLETE_CHAPTERS}-chapter cumulative reader through {READER_LAST_UNIT}"
 RELEASE_TAG = f"development-through-{LAST_UNIT}"
 
 
@@ -445,7 +455,7 @@ document = {
         "source_revision": SOURCE_REVISION,
         "coverage_state": "partial",
         "source_units": SOURCE_UNITS,
-        "reader_units": SOURCE_UNITS,
+        "reader_units": READER_UNITS,
     },
     "generated_utc": GENERATED_UTC,
     "generator": {
@@ -463,10 +473,11 @@ write_json(decisions_path, document)
 start_lines = [
     "# Start here: Marathi translation decisions",
     "",
-    f"This bundle is the expert-review entry point for the {COMPLETE_CHAPTERS}-chapter Marathi ",
-    f"OpenLogic development checkpoint through {LAST_UNIT}. It covers {SOURCE_UNITS}/722 source units, ",
+    "This bundle is the expert-review entry point for the current Marathi ",
+    f"OpenLogic translation through {LAST_UNIT}. It covers {SOURCE_UNITS}/722 source units, ",
     f"{COMPLETE_CHAPTERS} complete chapters, {canonical_count} applied decisions and ",
     f"{occurrence_count:,} exact current occurrences. The remaining {remaining_units} units are untranslated.",
+    f"The paginated {COMPLETE_CHAPTERS}-chapter reader ends at {READER_LAST_UNIT}; later translated units use pending PDF locators.",
     "",
     "No independent human or native-speaker review is claimed. Every choice remains ",
     "reversible, and a review question is a request for useful evidence rather than ",
@@ -484,8 +495,8 @@ start_lines = [
     "The PDF page field is the current assembled-reader page or range. Unknown pages ",
     "must use schema status `pending`; none were guessed in this checkpoint. Source ",
     "and target locators contain current file SHA-256 values, exact line spans, byte ",
-    "spans and excerpts. Four prospective terminology records (`T009`, `T011`, ",
-    "`T012`, `T013`) remain in the backward-compatible legacy ledger but are deferred ",
+    "spans and excerpts. Two prospective terminology records (`T009`, `T013`) ",
+    "remain in the backward-compatible legacy ledger but are deferred ",
     f"from `DECISIONS.json` because they have no occurrence in the current {SOURCE_UNITS}-unit ",
     "coverage and the shared schema requires at least one real occurrence per decision.",
     "",

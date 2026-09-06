@@ -26,15 +26,52 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+def expand_logic_math_macros(text):
+    """Expand the xparse/applytofirst shorthands Pandoc cannot parse."""
+    text = re.sub(
+        r"\\pSat/\{([A-Za-z])([^{}]*)\}\{([^{}]+)\}",
+        r"\\mathfrak{\1}\2\\nvDash \3",
+        text,
+    )
+    text = re.sub(
+        r"\\pSat\{([A-Za-z])([^{}]*)\}\{([^{}]+)\}",
+        r"\\mathfrak{\1}\2\\vDash \3",
+        text,
+    )
+    text = re.sub(
+        r"\\pValue\{([A-Za-z])([^{}]*)\}",
+        r"\\overline{\\mathfrak{\1}\2}",
+        text,
+    )
+    text = re.sub(r"\\pAssign\{([A-Za-z])([^{}]*)\}", r"\\mathfrak{\1}\2", text)
+    text = re.sub(
+        r"\\Frm\[([A-Za-z])([^][]*)\]",
+        r"\\mathrm{Frm}(\\mathcal{\1}\2)",
+        text,
+    )
+    text = re.sub(r"\\Lang\{([A-Za-z])([^{}]*)\}", r"\\mathcal{\1}\2", text)
+    text = re.sub(r"\\Lang\s+([A-Za-z])", r"\\mathcal{\1}", text)
+    text = re.sub(r"\\Struct\{([A-Za-z])([^{}]*)\}", r"\\mathfrak{\1}\2", text)
+    text = re.sub(r"\\Struct\s+([A-Za-z])", r"\\mathfrak{\1}", text)
+    text = re.sub(r"\\Entails\b", r"\\vDash", text)
+    return text
+
+
 input_rows = json.loads(INPUTS.read_text(encoding="utf-8"))["input_units"]
-driver_names = {
+section_driver_names = {
     "sets.tex", "relations-complete.tex", "functions.tex",
     "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
+    "propositional-logic.tex", "syntax-and-semantics.tex",
+}
+chapter_driver_names = {
+    "sets.tex", "relations-complete.tex", "functions.tex",
+    "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
+    "syntax-and-semantics.tex",
 }
 scope = {
     "translation_source_units": len(input_rows),
-    "reader_sections": len(input_rows) - sum(Path(row["path"]).name in driver_names for row in input_rows),
-    "complete_chapters": sum(Path(row["path"]).name in driver_names for row in input_rows),
+    "reader_sections": len(input_rows) - sum(Path(row["path"]).name in section_driver_names for row in input_rows),
+    "complete_chapters": sum(Path(row["path"]).name in chapter_driver_names for row in input_rows),
 }
 
 
@@ -44,27 +81,40 @@ assert sha(PDF) == receipt["pdf"]["sha256"]
 assert sha(TEX) == receipt["texInputSha256"]
 
 document = fitz.open(PDF)
-assert len(document) >= 66
+assert len(document) >= 83
 specs = [
-    ("union", 8, (176, 131, 417, 328), "A आणि B या दोन संचांचा संयोग. दोन्ही बंद वक्रांचा संपूर्ण भाग चिन्हांकित आहे; म्हणजे A किंवा B यांपैकी किमान एका संचातील सर्व घटक."),
-    ("intersection", 8, (176, 485, 417, 682), "A आणि B या दोन संचांचा छेद. दोन बंद वक्रांचा फक्त सामाईक आच्छादित भाग चिन्हांकित आहे."),
-    ("difference", 10, (176, 68, 417, 264), "A वजा B हा संचफरक. A च्या वक्रातील B च्या बाहेर राहणारा भाग चिन्हांकित आहे; सामाईक भाग वगळलेला आहे."),
-    ("graph-four", 19, (227, 207, 368, 305), "दिशित आलेखाची चार शिखरे 1, 2, 3 आणि 4. कडा 1 ते 1, 1 ते 2, 1 ते 3 आणि 2 ते 3; शिखर 4 एकाकी आहे."),
-    ("graph-three", 19, (227, 340, 312, 439), "दिशित आलेखाची शिखरे 1, 2 आणि 3. कडा 1 ते 1, 1 ते 2, 1 ते 3 आणि 2 ते 3; आधीच्या आलेखातील एकाकी शिखर 4 येथे नाही."),
-    ("tree", 19, (241, 662, 354, 776), "सांत वृक्ष. सर्वांत खाली मूळ r; त्याची अपत्ये a आणि b; a ची अपत्ये c, d आणि e. पूर्वज संबंध कडांवरून वरच्या दिशेने वाचला जातो."),
-    ("function", 23, (176, 67, 417, 201), "फलनाची आकृती. डावीकडील प्रांतातील प्रत्येक फलसाधकापासून उजवीकडील सहप्रांतातील नेमक्या एका मूल्याकडे बाण जातो."),
-    ("surjective", 24, (176, 613, 418, 746), "आच्छादक फलन. सहप्रांतातील प्रत्येक लाल घटकाकडे प्रांतातील किमान एका करड्या घटकापासून बाण येतो."),
-    ("injective", 25, (176, 67, 417, 221), "एकास-एक फलन. वेगवेगळ्या करड्या फलसाधकांचे बाण वेगवेगळ्या लाल मूल्यांकडे जातात; सहप्रांतातील काही घटक मूल्य नसू शकतात."),
-    ("bijective", 25, (176, 613, 418, 746), "एकास-एक व आच्छादक फलन. प्रांतातील प्रत्येक करडा घटक आणि सहप्रांतातील प्रत्येक लाल घटक यांची नेमकी एक जोडी बाणाने जोडलेली आहे."),
-    ("composition", 29, (135, 602, 457, 747), "फलन-संयोजन g वर्तुळ f. डावीकडील A मधून f चे बाण मधल्या B मध्ये, B मधून g चे बाण उजवीकडील C मध्ये, आणि तुटक बाह्य बाण A मधून थेट C मधील त्याच अंतिम मूल्यांकडे जातात."),
-    ("root-two-square", 54, (214, 388, 367, 483), "वर्गमूळ दोनच्या अपरिमेयतेची भूमितीय आकृती. m बाजूच्या मोठ्या चौरसात n बाजूचे दोन आच्छादित चौरस आहेत; नारिंगी सामाईक चौरस आणि दोन न रंगवलेले कोपरे लहान समान रचना दाखवतात."),
-    ("hilberts-hotel", 65, (180, 575, 415, 650), "हिल्बर्टच्या हॉटेलमधील खोली बदल. वरच्या ओळीत जुने पाहुणे 1, 2, 3 आणि पुढे आहेत; प्रत्येक बाण पाहुणा n याला खालच्या ओळीतील खोली n अधिक 1 मध्ये हलवतो, त्यामुळे वर्तुळ केलेली खोली 1 नव्या पाहुण्यासाठी मोकळी होते."),
+    # These are physical PDF page numbers. The printed page number is one less
+    # because the unnumbered title page is part of the PDF page sequence.
+    ("union", 9, (176, 131, 417, 328), "A आणि B या दोन संचांचा संयोग. दोन्ही बंद वक्रांचा संपूर्ण भाग चिन्हांकित आहे; म्हणजे A किंवा B यांपैकी किमान एका संचातील सर्व घटक."),
+    ("intersection", 9, (176, 485, 417, 682), "A आणि B या दोन संचांचा छेद. दोन बंद वक्रांचा फक्त सामाईक आच्छादित भाग चिन्हांकित आहे."),
+    ("difference", 11, (176, 68, 417, 264), "A वजा B हा संचफरक. A च्या वक्रातील B च्या बाहेर राहणारा भाग चिन्हांकित आहे; सामाईक भाग वगळलेला आहे."),
+    ("graph-four", 20, (227, 207, 368, 305), "दिशित आलेखाची चार शिखरे 1, 2, 3 आणि 4. कडा 1 ते 1, 1 ते 2, 1 ते 3 आणि 2 ते 3; शिखर 4 एकाकी आहे."),
+    ("graph-three", 20, (227, 340, 312, 439), "दिशित आलेखाची शिखरे 1, 2 आणि 3. कडा 1 ते 1, 1 ते 2, 1 ते 3 आणि 2 ते 3; आधीच्या आलेखातील एकाकी शिखर 4 येथे नाही."),
+    ("tree", 20, (241, 662, 354, 776), "सांत वृक्ष. सर्वांत खाली मूळ r; त्याची अपत्ये a आणि b; a ची अपत्ये c, d आणि e. पूर्वज संबंध कडांवरून वरच्या दिशेने वाचला जातो."),
+    ("function", 24, (176, 67, 417, 201), "फलनाची आकृती. डावीकडील प्रांतातील प्रत्येक फलसाधकापासून उजवीकडील सहप्रांतातील नेमक्या एका मूल्याकडे बाण जातो."),
+    ("surjective", 25, (176, 613, 418, 746), "आच्छादक फलन. सहप्रांतातील प्रत्येक लाल घटकाकडे प्रांतातील किमान एका करड्या घटकापासून बाण येतो."),
+    ("injective", 26, (176, 67, 417, 221), "एकास-एक फलन. वेगवेगळ्या करड्या फलसाधकांचे बाण वेगवेगळ्या लाल मूल्यांकडे जातात; सहप्रांतातील काही घटक मूल्य नसू शकतात."),
+    ("bijective", 26, (176, 613, 418, 746), "एकास-एक व आच्छादक फलन. प्रांतातील प्रत्येक करडा घटक आणि सहप्रांतातील प्रत्येक लाल घटक यांची नेमकी एक जोडी बाणाने जोडलेली आहे."),
+    ("composition", 30, (135, 602, 457, 747), "फलन-संयोजन g वर्तुळ f. डावीकडील A मधून f चे बाण मधल्या B मध्ये, B मधून g चे बाण उजवीकडील C मध्ये, आणि तुटक बाह्य बाण A मधून थेट C मधील त्याच अंतिम मूल्यांकडे जातात."),
+    ("root-two-square", 55, (214, 388, 367, 483), "वर्गमूळ दोनच्या अपरिमेयतेची भूमितीय आकृती. m बाजूच्या मोठ्या चौरसात n बाजूचे दोन आच्छादित चौरस आहेत; नारिंगी सामाईक चौरस आणि दोन न रंगवलेले कोपरे लहान समान रचना दाखवतात."),
+    ("hilberts-hotel", 66, (180, 575, 415, 650), "हिल्बर्टच्या हॉटेलमधील खोली बदल. वरच्या ओळीत जुने पाहुणे 1, 2, 3 आणि पुढे आहेत; प्रत्येक बाण पाहुणा n याला खालच्या ओळीतील खोली n अधिक 1 मध्ये हलवतो, त्यामुळे वर्तुळ केलेली खोली 1 नव्या पाहुण्यासाठी मोकळी होते."),
 ]
 
 assets = []
 for name, page, rect, alt in specs:
     x0, y0, x1, y1 = rect
-    svg = document[page - 1].get_svg_image(text_as_path=True)
+    page_object = document[page - 1]
+    crop = fitz.Rect(rect)
+    crop_text_chars = len("".join(page_object.get_text("text", clip=crop).split()))
+    vector_drawing_count = sum(
+        fitz.Rect(item["rect"]).intersects(crop)
+        for item in page_object.get_drawings()
+    )
+    # A shifted page can still produce a valid SVG containing nearby prose.
+    # Require the crop to be drawing-dense and prose-light before accepting it.
+    assert vector_drawing_count >= 5, (name, page, vector_drawing_count)
+    assert crop_text_chars <= 64, (name, page, crop_text_chars)
+    svg = page_object.get_svg_image(text_as_path=True)
     svg = re.sub(
         r"<svg\b[^>]*>",
         (
@@ -87,6 +137,8 @@ for name, page, rect, alt in specs:
             "bytes": destination.stat().st_size,
             "source_pdf_page": page,
             "source_pdf_crop": rect,
+            "source_pdf_crop_text_chars": crop_text_chars,
+            "source_pdf_vector_drawing_count": vector_drawing_count,
             "alt": alt,
         }
     )
@@ -198,6 +250,17 @@ while re.search(r"\\shove(?:left|right)\{", tex):
         index += 1
     tex = tex[: match.start()] + tex[start : index - 1] + tex[index:]
 
+# Only the document body needs expansion. Retaining the original preamble keeps
+# the PDF source traceable while preventing substitutions inside definitions.
+preamble, document_marker, body = tex.partition(r"\begin{document}")
+assert document_marker
+body = expand_logic_math_macros(body)
+tex = preamble + document_marker + body
+assert not re.search(
+    r"\\(?:Struct|Lang|Frm|Entails|pAssign|pValue|pSat)/?(?:\b|\[|\{)",
+    body,
+)
+
 html_input = B / "html-input.tex"
 html_input.write_text(tex, encoding="utf-8", newline="\n")
 font_dir = O / "fonts"
@@ -220,7 +283,7 @@ args = [
     "--toc",
     "--number-sections",
     "--metadata=lang:mr",
-    "--metadata=title:मुक्त तर्कशास्त्र — संच, संबंध, फलने, संचांचे आकारमान, अंकगणितीकरण आणि अनंत संच",
+    "--metadata=title:मुक्त तर्कशास्त्र — संच, संबंध, फलने, संचांचे आकारमान, अंकगणितीकरण, अनंत संच आणि विधानीय तर्कशास्त्र",
     "--metadata=toc-title:अनुक्रमणिका",
     "--css=reader.css",
     "--output=" + str(O / "index.html"),

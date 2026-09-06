@@ -1,0 +1,97 @@
+% Part: propositional-logic
+% Chapter: syntax-and-semantics
+% Section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{sem}
+
+\olsection{चिन्हार्थविषयक संकल्पना}
+
+पुढील चिन्हार्थविषयक संकल्पना परिभाषित करू:
+
+\begin{defn} 
+\begin{enumerate}
+\item !!^a{formula}~$!A$ हे \emph{पूर्ततायोग्य} असते, जर एखाद्या
+  $\pAssign{v}$ साठी $\pSat{v}{!A}$; आणि कोणत्याही $\pAssign{v}$ साठी
+  $\pSat{v}{!A}$ नसल्यास ते \emph{अपूर्ततायोग्य} असते;
+\item सर्व !!{valuation}s~$\pAssign{v}$ साठी $\pSat{v}{!A}$ असेल, तर
+  !!^a{formula}~$!A$ हे \emph{सर्वतः सत्य सूत्र} असते;
+\item !!^a{formula}~$!A$ हे पूर्ततायोग्य असेल, पण सर्वतः सत्य सूत्र नसेल,
+  तर ते \emph{परिस्थितीवश} असते;
+\item $\Gamma$ हा !!{formula}s चा संच असेल, तर $\Gamma \Entails !A$
+  (``$\Gamma$ पासून $!A$ तार्किकरीत्या निष्पन्न होते'') तेव्हा आणि केवळ
+  तेव्हाच, जेव्हा $\pSat{v}{\Gamma}$ असलेल्या प्रत्येक
+  !!{valuation}~$\pAssign{v}$ साठी $\pSat{v}{!A}$.
+\item $\Gamma$ हा !!{formula}s चा संच असेल, तर एखाद्या
+  !!a{valuation}~$\pAssign{v}$ साठी $\pSat{v}{\Gamma}$ असल्यास $\Gamma$
+  हा \emph{पूर्ततायोग्य} असतो; अन्यथा $\Gamma$ हा
+  \emph{अपूर्ततायोग्य} असतो.
+\end{enumerate} 
+\end{defn}
+
+\begin{prob} 
+ पुढील चार !!{formula}s पैकी प्रत्येक सूत्र (a)~पूर्ततायोग्य,
+ (b)~सर्वतः सत्य सूत्र आणि (c)~परिस्थितीवश आहे की नाही ते ठरवा.
+\begin{enumerate}
+  \item \( ( \Obj p_0 \lif ( \lnot \Obj p_1 \lif \lnot \Obj p_0 ) ) \).
+  \item \( ( ( \Obj p_0 \land \lnot \Obj p_1 ) \lif ( \lnot \Obj p_0 \land \Obj p_2 )) \liff ( ( \Obj p_2 \lif \Obj p_0 ) \lif ( \Obj p_0 \lif \Obj p_1 )) \).
+  \item \( ( \Obj p_0 \liff \Obj p_1 ) \lif ( \Obj p_2 \liff \lnot \Obj p_1 ) \).
+  \item \( (( \Obj p_0 \liff ( \lnot \Obj p_1 \land \Obj p_2 )) \lor ( \Obj p_2 \lif ( \Obj p_0 \liff \Obj p_1 ))) \).
+\end{enumerate}
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:semanticalfacts} 
+\begin{enumerate} 
+\item $!A$ हे सर्वतः सत्य सूत्र तेव्हा आणि केवळ तेव्हाच असते, जेव्हा
+  $\emptyset \Entails !A$; 
+\item $\Gamma \Entails !A$ आणि $\Gamma \Entails !A \lif !B$ असल्यास
+  $\Gamma \Entails !B$;
+\item $\Gamma$ पूर्ततायोग्य असेल, तर $\Gamma$ चा प्रत्येक सांत उपसंचही
+  पूर्ततायोग्य असतो; 
+\item \ollabel{def:monotonicity} एकस्वनिकता: $\Gamma \subseteq \Delta$
+  आणि $\Gamma \Entails !A$ असल्यास $\Delta \Entails !A$ हेही असते;
+\item \ollabel{def:Cut} संक्रमकता: $\Gamma \Entails !A$ आणि
+  $\Delta \cup \{ !A\} \Entails !B$ असल्यास $\Gamma \cup \Delta \Entails
+  !B$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+सरावासाठी.
+\end{proof}
+
+\begin{prob}
+\olref[pl][syn][sem]{prop:semanticalfacts} सिद्ध करा.
+\end{prob}
+
+\begin{prop}\ollabel{prop:entails-unsat}
+  $\Gamma \Entails !A$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\Gamma \cup \{\lnot !A\}$ अपूर्ततायोग्य असतो.
+\end{prop}
+
+\begin{proof}
+सरावासाठी.
+\end{proof}
+
+\begin{prob}
+\olref[pl][syn][sem]{prop:entails-unsat} सिद्ध करा.
+\end{prob}
+
+\begin{thm}[चिन्हार्थविषयक निगमन प्रमेय]
+  \ollabel{thm:sem-deduction} $\Gamma \Entails !A \lif !B$ तेव्हा आणि केवळ
+  तेव्हाच, जेव्हा $\Gamma \cup \{!A\} \Entails !B$.
+\end{thm}
+
+\begin{proof}
+सरावासाठी.
+\end{proof}
+
+\begin{prob}
+\olref[pl][syn][sem]{thm:sem-deduction} सिद्ध करा.
+\end{prob}
+
+\end{document}

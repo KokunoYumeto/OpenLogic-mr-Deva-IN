@@ -2,7 +2,7 @@
 
 This ledger accompanies the Marathi OpenLogic translation at frozen upstream revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. It is maintained for specialist review and correction; review is welcome but is not a completion or publication gate.
 
-The current editable-source coverage is **51/722 units** (OLP-0004–OLP-0054, 617 aligned translated content blocks). The current public reader is the 45/722-unit `five-chapters-v0.3` checkpoint. Decisions without an applied location are pre-adjudications for later units. This is partial coverage and makes no full-corpus claim.
+The current editable-source coverage is **59/722 units** (OLP-0004–OLP-0062, 716 aligned translated content blocks). The current public reader is the 51/722-unit `six-chapters-v0.4` checkpoint. Decisions without an applied location are pre-adjudications for later units. This is partial coverage and makes no full-corpus claim.
 
 For T001–T044, the rationale provenance is explicitly a **retrospective reconstruction** from the durable decision records and current aligned files. It is not represented as an original contemporaneous motive. T045 onward were recorded with their first current use. Aligned block scopes are exact locations governed by a unit-level decision index; they do not claim that the literal headword occurs in every listed block. Literal line hits are listed separately when found.
 
@@ -10,7 +10,7 @@ Authorities below are only those actually consulted. A missing authority is stat
 
 Occurrence-level review surfaces add exact source/target lines and the current coherent-reader page range: [readable full occurrence index](EXPERT_REVIEW_OCCURRENCES.md), [priority view](EXPERT_REVIEW_PRIORITY.md), [one-row-per-occurrence CSV](EXPERT_REVIEW_OCCURRENCES.csv), and [machine JSONL](EXPERT_REVIEW_OCCURRENCES.jsonl).
 
-The current public DOI record `10.5281/zenodo.22356920` predates this development ledger. The next substantive, nonduplicative release will include it under the existing concept DOI `10.5281/zenodo.22307960`; no ledger-only release is created.
+The current public DOI record `10.5281/zenodo.22421680` predates this development ledger. The next substantive, nonduplicative release will include it under the existing concept DOI `10.5281/zenodo.22307960`; no ledger-only release is created.
 
 ## T001 — set
 
@@ -204,9 +204,10 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
   - OLP-0050 B006: [English](../upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/hilberts-hotel.tex)
   - OLP-0051 B011, B016–B019: [English](../upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/dedekind-algebra.tex)
   - OLP-0054 B008, B011, B015, B017: [English](../upstream/content/sets-functions-relations/infinite/card-sb.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/card-sb.tex)
-- **Occurrence records:** `T005-OLP-0006-B004`, `T005-OLP-0006-B005`, `T005-OLP-0006-B006`, `T005-OLP-0006-B007`, `T005-OLP-0006-B008`, `T005-OLP-0006-B009`, `T005-OLP-0006-B010`, `T005-OLP-0006-B011`, `T005-OLP-0006-B012`, `T005-OLP-0006-B013`, `T005-OLP-0006-B014`, `T005-OLP-0006-B015`, `T005-OLP-0006-B016`, `T005-OLP-0006-B017`, `T005-OLP-0006-B018`, `T005-OLP-0008-B004`, `T005-OLP-0008-B005`, `T005-OLP-0008-B006`, `T005-OLP-0008-B007`, `T005-OLP-0008-B008`, `T005-OLP-0008-B009`, `T005-OLP-0008-B010`, `T005-OLP-0008-B011`, `T005-OLP-0008-B012`, `T005-OLP-0008-B013`, `T005-OLP-0008-B014`, `T005-OLP-0008-B015`, `T005-OLP-0008-B016`, `T005-OLP-0008-B017`, `T005-OLP-0008-B018`, `T005-OLP-0008-B019`, `T005-OLP-0008-B020`, `T005-OLP-0008-B021`, `T005-OLP-0008-B022`, `T005-OLP-0008-B023`, `T005-OLP-0008-B024`, `T005-OLP-0008-B025`, `T005-OLP-0008-B026`, `T005-OLP-0008-B027`, `T005-OLP-0008-B028`, `T005-OLP-0008-B029`, `T005-OLP-0010-B004`, `T005-OLP-0010-B005`, `T005-OLP-0010-B006`, `T005-OLP-0010-B007`, `T005-OLP-0010-B008`, `T005-OLP-0010-B009`, `T005-OLP-0010-B010`, `T005-OLP-0010-B011`, `T005-OLP-0010-B012`, `T005-OLP-0010-B013`, `T005-OLP-0010-B014`, `T005-OLP-0012-B004`, `T005-OLP-0012-B005`, `T005-OLP-0012-B006`, `T005-OLP-0012-B007`, `T005-OLP-0012-B008`, `T005-OLP-0012-B009`, `T005-OLP-0012-B010`, `T005-OLP-0012-B011`, `T005-OLP-0012-B012`, `T005-OLP-0015-B005`, `T005-OLP-0015-B006`, `T005-OLP-0015-B007`, `T005-OLP-0015-B008`, `T005-OLP-0015-B009`, `T005-OLP-0015-B010`, `T005-OLP-0015-B011`, `T005-OLP-0015-B012`, `T005-OLP-0015-B013`, `T005-OLP-0015-B014`, `T005-OLP-0015-B015`, `T005-OLP-0016-B004`, `T005-OLP-0016-B005`, `T005-OLP-0016-B006`, `T005-OLP-0016-B007`, `T005-OLP-0016-B008`, `T005-OLP-0016-B009`, `T005-OLP-0016-B010`, `T005-OLP-0016-B011`, `T005-OLP-0016-B012`, `T005-OLP-0016-B013`, `T005-OLP-0016-B014`, `T005-OLP-0016-B015`, `T005-OLP-0016-B016`, `T005-OLP-0016-B017`, `T005-OLP-0016-B018`, `T005-OLP-0016-B019`, `T005-OLP-0016-B020`, `T005-OLP-0016-B021`, `T005-OLP-0016-B022`, `T005-OLP-0016-B023`, `T005-OLP-0016-B024`, `T005-OLP-0016-B025`, `T005-OLP-0016-B026`, `T005-OLP-0016-B027`, `T005-OLP-0016-B028`, `T005-OLP-0016-B029`, `T005-OLP-0018-B004`, `T005-OLP-0018-B005`, `T005-OLP-0018-B006`, `T005-OLP-0018-B008`, `T005-OLP-0018-B009`, `T005-OLP-0018-B010`, `T005-OLP-0018-B011`, `T005-OLP-0018-B012`, `T005-OLP-0018-B013`, `T005-OLP-0018-B014`, `T005-OLP-0018-B015`, `T005-OLP-0018-B016`, `T005-OLP-0018-B017`, `T005-OLP-0018-B018`, `T005-OLP-0018-B019`, `T005-OLP-0018-B020`, `T005-OLP-0019-B004`, `T005-OLP-0019-B005`, `T005-OLP-0019-B006`, `T005-OLP-0019-B007`, `T005-OLP-0019-B008`, `T005-OLP-0019-B009`, `T005-OLP-0019-B010`, `T005-OLP-0019-B011`, `T005-OLP-0019-B012`, `T005-OLP-0019-B013`, `T005-OLP-0019-B014`, `T005-OLP-0019-B015`, `T005-OLP-0019-B016`, `T005-OLP-0019-B017`, `T005-OLP-0019-B018`, `T005-OLP-0019-B019`, `T005-OLP-0019-B020`, `T005-OLP-0029-B022`, `T005-OLP-0031-B014`, `T005-OLP-0031-B015`, `T005-OLP-0033-B022`, `T005-OLP-0033-B024`, `T005-OLP-0034-B011`, `T005-OLP-0034-B012`, `T005-OLP-0036-B012`, `T005-OLP-0036-B014`, `T005-OLP-0036-B015`, `T005-OLP-0036-B016`, `T005-OLP-0036-B018`, `T005-OLP-0039-B012`, `T005-OLP-0039-B013`, `T005-OLP-0039-B016`, `T005-OLP-0039-B017`, `T005-OLP-0040-B013`, `T005-OLP-0040-B014`, `T005-OLP-0045-B008`, `T005-OLP-0045-B010`, `T005-OLP-0045-B012`, `T005-OLP-0046-B011`, `T005-OLP-0047-B024`, `T005-OLP-0047-B028`, `T005-OLP-0050-B006`, `T005-OLP-0051-B011`, `T005-OLP-0051-B016`, `T005-OLP-0051-B017`, `T005-OLP-0051-B018`, `T005-OLP-0051-B019`, `T005-OLP-0054-B008`, `T005-OLP-0054-B011`, `T005-OLP-0054-B015`, `T005-OLP-0054-B017`
-- **Literal English line hits:** `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:160`; `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:62`; `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:48, 56, 78, 85, 91, 111`; `upstream/content/sets-functions-relations/relations/trees.tex:47, 74`; `upstream/content/sets-functions-relations/sets/subsets.tex:3, 10, 19, 21–22, 24, 28–29, 31, 36–37, 44, 50, 57, 73, 76, 84, 86, 95`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:47, 88`; `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:74, 76, 82, 111, 129`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:62, 99, 119–121`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:153–155`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:87, 92, 95`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/arithmetization/checking-details.tex:157`; `mr/content/sets-functions-relations/arithmetization/cuts.tex:68`; `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:62`; `mr/content/sets-functions-relations/relations/relations-as-sets.tex:47, 55, 79, 85, 91, 109`; `mr/content/sets-functions-relations/relations/trees.tex:45, 73`; `mr/content/sets-functions-relations/sets/subsets.tex:10, 19, 21–22, 24, 28–29, 32, 37–38, 45, 50, 58, 76, 79, 87, 89, 98`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:47, 90`; `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:76, 78, 83, 116, 136`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:60, 99, 119–120`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:149–151`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:87, 92, 95–96`.
+  - OLP-0062 B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T005-OLP-0006-B004`, `T005-OLP-0006-B005`, `T005-OLP-0006-B006`, `T005-OLP-0006-B007`, `T005-OLP-0006-B008`, `T005-OLP-0006-B009`, `T005-OLP-0006-B010`, `T005-OLP-0006-B011`, `T005-OLP-0006-B012`, `T005-OLP-0006-B013`, `T005-OLP-0006-B014`, `T005-OLP-0006-B015`, `T005-OLP-0006-B016`, `T005-OLP-0006-B017`, `T005-OLP-0006-B018`, `T005-OLP-0008-B004`, `T005-OLP-0008-B005`, `T005-OLP-0008-B006`, `T005-OLP-0008-B007`, `T005-OLP-0008-B008`, `T005-OLP-0008-B009`, `T005-OLP-0008-B010`, `T005-OLP-0008-B011`, `T005-OLP-0008-B012`, `T005-OLP-0008-B013`, `T005-OLP-0008-B014`, `T005-OLP-0008-B015`, `T005-OLP-0008-B016`, `T005-OLP-0008-B017`, `T005-OLP-0008-B018`, `T005-OLP-0008-B019`, `T005-OLP-0008-B020`, `T005-OLP-0008-B021`, `T005-OLP-0008-B022`, `T005-OLP-0008-B023`, `T005-OLP-0008-B024`, `T005-OLP-0008-B025`, `T005-OLP-0008-B026`, `T005-OLP-0008-B027`, `T005-OLP-0008-B028`, `T005-OLP-0008-B029`, `T005-OLP-0010-B004`, `T005-OLP-0010-B005`, `T005-OLP-0010-B006`, `T005-OLP-0010-B007`, `T005-OLP-0010-B008`, `T005-OLP-0010-B009`, `T005-OLP-0010-B010`, `T005-OLP-0010-B011`, `T005-OLP-0010-B012`, `T005-OLP-0010-B013`, `T005-OLP-0010-B014`, `T005-OLP-0012-B004`, `T005-OLP-0012-B005`, `T005-OLP-0012-B006`, `T005-OLP-0012-B007`, `T005-OLP-0012-B008`, `T005-OLP-0012-B009`, `T005-OLP-0012-B010`, `T005-OLP-0012-B011`, `T005-OLP-0012-B012`, `T005-OLP-0015-B005`, `T005-OLP-0015-B006`, `T005-OLP-0015-B007`, `T005-OLP-0015-B008`, `T005-OLP-0015-B009`, `T005-OLP-0015-B010`, `T005-OLP-0015-B011`, `T005-OLP-0015-B012`, `T005-OLP-0015-B013`, `T005-OLP-0015-B014`, `T005-OLP-0015-B015`, `T005-OLP-0016-B004`, `T005-OLP-0016-B005`, `T005-OLP-0016-B006`, `T005-OLP-0016-B007`, `T005-OLP-0016-B008`, `T005-OLP-0016-B009`, `T005-OLP-0016-B010`, `T005-OLP-0016-B011`, `T005-OLP-0016-B012`, `T005-OLP-0016-B013`, `T005-OLP-0016-B014`, `T005-OLP-0016-B015`, `T005-OLP-0016-B016`, `T005-OLP-0016-B017`, `T005-OLP-0016-B018`, `T005-OLP-0016-B019`, `T005-OLP-0016-B020`, `T005-OLP-0016-B021`, `T005-OLP-0016-B022`, `T005-OLP-0016-B023`, `T005-OLP-0016-B024`, `T005-OLP-0016-B025`, `T005-OLP-0016-B026`, `T005-OLP-0016-B027`, `T005-OLP-0016-B028`, `T005-OLP-0016-B029`, `T005-OLP-0018-B004`, `T005-OLP-0018-B005`, `T005-OLP-0018-B006`, `T005-OLP-0018-B008`, `T005-OLP-0018-B009`, `T005-OLP-0018-B010`, `T005-OLP-0018-B011`, `T005-OLP-0018-B012`, `T005-OLP-0018-B013`, `T005-OLP-0018-B014`, `T005-OLP-0018-B015`, `T005-OLP-0018-B016`, `T005-OLP-0018-B017`, `T005-OLP-0018-B018`, `T005-OLP-0018-B019`, `T005-OLP-0018-B020`, `T005-OLP-0019-B004`, `T005-OLP-0019-B005`, `T005-OLP-0019-B006`, `T005-OLP-0019-B007`, `T005-OLP-0019-B008`, `T005-OLP-0019-B009`, `T005-OLP-0019-B010`, `T005-OLP-0019-B011`, `T005-OLP-0019-B012`, `T005-OLP-0019-B013`, `T005-OLP-0019-B014`, `T005-OLP-0019-B015`, `T005-OLP-0019-B016`, `T005-OLP-0019-B017`, `T005-OLP-0019-B018`, `T005-OLP-0019-B019`, `T005-OLP-0019-B020`, `T005-OLP-0029-B022`, `T005-OLP-0031-B014`, `T005-OLP-0031-B015`, `T005-OLP-0033-B022`, `T005-OLP-0033-B024`, `T005-OLP-0034-B011`, `T005-OLP-0034-B012`, `T005-OLP-0036-B012`, `T005-OLP-0036-B014`, `T005-OLP-0036-B015`, `T005-OLP-0036-B016`, `T005-OLP-0036-B018`, `T005-OLP-0039-B012`, `T005-OLP-0039-B013`, `T005-OLP-0039-B016`, `T005-OLP-0039-B017`, `T005-OLP-0040-B013`, `T005-OLP-0040-B014`, `T005-OLP-0045-B008`, `T005-OLP-0045-B010`, `T005-OLP-0045-B012`, `T005-OLP-0046-B011`, `T005-OLP-0047-B024`, `T005-OLP-0047-B028`, `T005-OLP-0050-B006`, `T005-OLP-0051-B011`, `T005-OLP-0051-B016`, `T005-OLP-0051-B017`, `T005-OLP-0051-B018`, `T005-OLP-0051-B019`, `T005-OLP-0054-B008`, `T005-OLP-0054-B011`, `T005-OLP-0054-B015`, `T005-OLP-0054-B017`, `T005-OLP-0062-B009`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:52`; `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:160`; `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:62`; `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:48, 56, 78, 85, 91, 111`; `upstream/content/sets-functions-relations/relations/trees.tex:47, 74`; `upstream/content/sets-functions-relations/sets/subsets.tex:3, 10, 19, 21–22, 24, 28–29, 31, 36–37, 44, 50, 57, 73, 76, 84, 86, 95`; `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:47, 88`; `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:74, 76, 82, 111, 129`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:62, 99, 119–121`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:153–155`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:87, 92, 95`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:53`; `mr/content/sets-functions-relations/arithmetization/checking-details.tex:157`; `mr/content/sets-functions-relations/arithmetization/cuts.tex:68`; `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:62`; `mr/content/sets-functions-relations/relations/relations-as-sets.tex:47, 55, 79, 85, 91, 109`; `mr/content/sets-functions-relations/relations/trees.tex:45, 73`; `mr/content/sets-functions-relations/sets/subsets.tex:10, 19, 21–22, 24, 28–29, 32, 37–38, 45, 50, 58, 76, 79, 87, 89, 98`; `mr/content/sets-functions-relations/sets/unions-and-intersections.tex:47, 90`; `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:76, 78, 83, 116, 136`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:60, 99, 119–120`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:149–151`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:87, 92, 95–96`.
 - **Authorities actually checked:**
 
   - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P005, MR-C001, उपसंच, definition and first example, printed page 7. visually-read-page-image
@@ -227,7 +228,9 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
   - OLP-0045 B006, B010: [English](../upstream/content/sets-functions-relations/arithmetization/cuts.tex) ↔ [Marathi](../mr/content/sets-functions-relations/arithmetization/cuts.tex)
   - OLP-0047 B024, B028: [English](../upstream/content/sets-functions-relations/arithmetization/checking-details.tex) ↔ [Marathi](../mr/content/sets-functions-relations/arithmetization/checking-details.tex)
   - OLP-0050 B006: [English](../upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/hilberts-hotel.tex)
-- **Occurrence records:** `T006-OLP-0006-B004`, `T006-OLP-0006-B005`, `T006-OLP-0006-B006`, `T006-OLP-0006-B007`, `T006-OLP-0006-B008`, `T006-OLP-0006-B009`, `T006-OLP-0006-B010`, `T006-OLP-0006-B011`, `T006-OLP-0006-B012`, `T006-OLP-0006-B013`, `T006-OLP-0006-B014`, `T006-OLP-0006-B015`, `T006-OLP-0006-B016`, `T006-OLP-0006-B017`, `T006-OLP-0006-B018`, `T006-OLP-0045-B006`, `T006-OLP-0045-B010`, `T006-OLP-0047-B024`, `T006-OLP-0047-B028`, `T006-OLP-0050-B006`
+  - OLP-0059 B010–B011: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+  - OLP-0060 B016: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+- **Occurrence records:** `T006-OLP-0006-B004`, `T006-OLP-0006-B005`, `T006-OLP-0006-B006`, `T006-OLP-0006-B007`, `T006-OLP-0006-B008`, `T006-OLP-0006-B009`, `T006-OLP-0006-B010`, `T006-OLP-0006-B011`, `T006-OLP-0006-B012`, `T006-OLP-0006-B013`, `T006-OLP-0006-B014`, `T006-OLP-0006-B015`, `T006-OLP-0006-B016`, `T006-OLP-0006-B017`, `T006-OLP-0006-B018`, `T006-OLP-0045-B006`, `T006-OLP-0045-B010`, `T006-OLP-0047-B024`, `T006-OLP-0047-B028`, `T006-OLP-0050-B006`, `T006-OLP-0059-B010`, `T006-OLP-0059-B011`, `T006-OLP-0060-B016`
 - **Literal English line hits:** `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:160`; `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:62`; `upstream/content/sets-functions-relations/sets/subsets.tex:24`.
 - **Literal Marathi line hits:** `mr/content/sets-functions-relations/arithmetization/checking-details.tex:157`; `mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:62`; `mr/content/sets-functions-relations/sets/subsets.tex:24`.
 - **Authorities actually checked:**
@@ -336,28 +339,37 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
 - **Exact aligned source/target scopes:**
 
   - OLP-0031 B013: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
-- **Occurrence records:** `T010-OLP-0031-B013`
-- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:80–81, 83`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/pairing.tex:81, 83`.
+  - OLP-0057 B006: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0058 B006–B010, B012, B025, B027–B033: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0061 B006–B010, B014, B020: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+- **Occurrence records:** `T010-OLP-0031-B013`, `T010-OLP-0057-B006`, `T010-OLP-0058-B006`, `T010-OLP-0058-B007`, `T010-OLP-0058-B008`, `T010-OLP-0058-B009`, `T010-OLP-0058-B010`, `T010-OLP-0058-B012`, `T010-OLP-0058-B025`, `T010-OLP-0058-B027`, `T010-OLP-0058-B028`, `T010-OLP-0058-B029`, `T010-OLP-0058-B030`, `T010-OLP-0058-B031`, `T010-OLP-0058-B032`, `T010-OLP-0058-B033`, `T010-OLP-0061-B006`, `T010-OLP-0061-B007`, `T010-OLP-0061-B008`, `T010-OLP-0061-B009`, `T010-OLP-0061-B010`, `T010-OLP-0061-B014`, `T010-OLP-0061-B020`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:24, 47, 75`; `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:17, 19–21, 23, 27, 30–33, 35, 37, 55–56, 60`; `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:14, 60, 130`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:80–81, 83`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:74, 76`; `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:19–22, 28, 30–31, 33–35, 38, 56, 58, 61, 67`; `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:14, 61, 131`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:81, 83`.
 - **Authorities actually checked:**
 
   - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P019, MR-C011, Decision procedure, sections 1.1–1.2, printed page 1. visually-read-page-image; legacy-font text extraction not used as Unicode authority
   - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P020, MR-C011, Short truth table, section 1.3 continuation and 1.4, printed page 2. visually-read-page-image; legacy-font text extraction not used as Unicode authority
   - [MR-C002](https://vishwakosh.marathi.gov.in/20027/) — MR-P010, MR-C002, opening definition and first argument-form discussion; truth-value discussion. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/t) — MR-P066, MR-C048, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [शासन व्यवहार कोश — V glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/3/V) — MR-P081, MR-C062, current web-search extraction personally read 2026-09-06. The glossary entry is generic rather than model-theoretic; the OpenLogic definition controls the exact logical object.
 - **Precise review question:** Are सत्यता and सत्यतामूल्य sufficiently distinct from argument validity in every formal context?
 
 ## T011 — syntax
 
 - **Chosen wording:** विन्यासमीमांसा
-- **Coverage:** pre-adjudicated; not yet applied in a translated unit.
+- **Coverage:** applied in current partial source coverage.
 - **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
 - **Status/uncertainty:** provisional-concept-extension. This choice remains open to correction.
 - **Rationale:** Government logic glossary label observed; compound spacing normalized. OpenLogic formal formation rules define sense. University symbolic-formation topics are supporting context, not full semantic attestation.
 - **Alternatives considered:** वाक्यरचना.
-- **Exact aligned source/target scopes:** none yet; the term has not been applied in current translated units.
-- **Occurrence records:** none yet.
-- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
-- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0056 B004: [English](../upstream/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex)
+  - OLP-0057 B007: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0058 B034–B035: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+- **Occurrence records:** `T011-OLP-0056-B004`, `T011-OLP-0057-B007`, `T011-OLP-0058-B034`, `T011-OLP-0058-B035`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:2`; `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:2, 38`; `upstream/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex:2, 8`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:39`; `mr/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex:8`.
 - **Authorities actually checked:**
 
   - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P009, MR-C008, syntax; semantics; satisfaction. Do not treat observation hash as source-byte hash or claim full original archived.
@@ -367,19 +379,24 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
 ## T012 — semantics
 
 - **Chosen wording:** चिन्हार्थमीमांसा
-- **Coverage:** pre-adjudicated; not yet applied in a translated unit.
+- **Coverage:** applied in current partial source coverage.
 - **Decision provenance:** retrospective reconstruction from durable decision record and aligned files.
 - **Status/uncertainty:** provisional-concept-extension. This choice remains open to correction.
 - **Rationale:** Logical interpretation and truth conditions; distinguish ordinary linguistic meaning. Full model-theoretic prose attestation still unresolved.
 - **Alternatives considered:** अर्थमीमांसा.
-- **Exact aligned source/target scopes:** none yet; the term has not been applied in current translated units.
-- **Occurrence records:** none yet.
-- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
-- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0056 B004: [English](../upstream/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex)
+  - OLP-0057 B006–B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0062 B005–B007, B015: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T012-OLP-0056-B004`, `T012-OLP-0057-B006`, `T012-OLP-0057-B007`, `T012-OLP-0057-B008`, `T012-OLP-0057-B009`, `T012-OLP-0062-B005`, `T012-OLP-0062-B006`, `T012-OLP-0062-B007`, `T012-OLP-0062-B015`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:2, 21, 38, 52–53, 75`; `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:2`; `upstream/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex:2, 8`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:22, 40`; `mr/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex:8`.
 - **Authorities actually checked:**
 
   - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P009, MR-C008, syntax; semantics; satisfaction. Do not treat observation hash as source-byte hash or claim full original archived.
   - [MR-C002](https://vishwakosh.marathi.gov.in/20027/) — MR-P010, MR-C002, opening definition and first argument-form discussion; truth-value discussion. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P069, MR-C008, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
 - **Precise review question:** Is चिन्हार्थमीमांसा suitable for model-theoretic semantics, or does अर्थमीमांसा better avoid an unintended merely lexical sense?
 
 ## T013 — model (model theory)
@@ -442,9 +459,15 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
   - OLP-0048 B013, B016–B017, B022–B023: [English](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex) ↔ [Marathi](../mr/content/sets-functions-relations/arithmetization/cauchy.tex)
   - OLP-0053 B011–B012: [English](../upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/dedekinds-proof.tex)
   - OLP-0054 B004–B006, B009–B010, B013: [English](../upstream/content/sets-functions-relations/infinite/card-sb.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/card-sb.tex)
-- **Occurrence records:** `T015-OLP-0005-B004`, `T015-OLP-0005-B005`, `T015-OLP-0005-B006`, `T015-OLP-0005-B007`, `T015-OLP-0005-B008`, `T015-OLP-0005-B009`, `T015-OLP-0005-B010`, `T015-OLP-0005-B011`, `T015-OLP-0005-B012`, `T015-OLP-0005-B013`, `T015-OLP-0005-B014`, `T015-OLP-0006-B004`, `T015-OLP-0006-B005`, `T015-OLP-0006-B006`, `T015-OLP-0006-B007`, `T015-OLP-0006-B008`, `T015-OLP-0006-B009`, `T015-OLP-0006-B010`, `T015-OLP-0006-B011`, `T015-OLP-0006-B012`, `T015-OLP-0006-B013`, `T015-OLP-0006-B014`, `T015-OLP-0006-B015`, `T015-OLP-0006-B016`, `T015-OLP-0006-B017`, `T015-OLP-0006-B018`, `T015-OLP-0033-B020`, `T015-OLP-0034-B010`, `T015-OLP-0036-B017`, `T015-OLP-0044-B006`, `T015-OLP-0044-B007`, `T015-OLP-0044-B008`, `T015-OLP-0044-B009`, `T015-OLP-0044-B010`, `T015-OLP-0045-B008`, `T015-OLP-0045-B010`, `T015-OLP-0046-B009`, `T015-OLP-0047-B008`, `T015-OLP-0047-B010`, `T015-OLP-0047-B012`, `T015-OLP-0048-B013`, `T015-OLP-0048-B016`, `T015-OLP-0048-B017`, `T015-OLP-0048-B022`, `T015-OLP-0048-B023`, `T015-OLP-0053-B011`, `T015-OLP-0053-B012`, `T015-OLP-0054-B004`, `T015-OLP-0054-B005`, `T015-OLP-0054-B006`, `T015-OLP-0054-B009`, `T015-OLP-0054-B010`, `T015-OLP-0054-B013`
-- **Literal English line hits:** `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:165, 167, 174, 181, 227`; `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:43, 60, 64, 72, 74, 76, 90, 156, 158, 168, 182, 184, 205`; `upstream/content/sets-functions-relations/arithmetization/cuts.tex:52, 58, 78`; `upstream/content/sets-functions-relations/arithmetization/reals.tex:29, 33, 37, 70, 72`; `upstream/content/sets-functions-relations/arithmetization/reflections.tex:44`; `upstream/content/sets-functions-relations/infinite/card-sb.tex:10, 17–18, 22, 45, 47, 55, 68, 83, 85, 89, 101`; `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:3, 11, 48–49, 85, 88, 93`; `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:60, 66–67, 105, 109, 127, 137`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:51, 137, 140, 152, 177, 180`; `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:21, 47, 83`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/arithmetization/cauchy.tex:142, 174`; `mr/content/sets-functions-relations/arithmetization/checking-details.tex:75, 153, 180`; `mr/content/sets-functions-relations/arithmetization/cuts.tex:51, 119`; `mr/content/sets-functions-relations/arithmetization/reals.tex:34, 38, 75`; `mr/content/sets-functions-relations/infinite/card-sb.tex:7, 10, 18, 22, 66, 87, 91`; `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:11–12, 81`; `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:66–67, 114–115, 134–135`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:137`; `mr/content/sets-functions-relations/size-of-sets/reduction.tex:22, 45, 48`.
+  - OLP-0055 B005: [English](../upstream/content/propositional-logic/propositional-logic.tex) ↔ [Marathi](../mr/content/propositional-logic/propositional-logic.tex)
+  - OLP-0056 B005: [English](../upstream/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex)
+  - OLP-0058 B009–B010: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0060 B013: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+  - OLP-0061 B022: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+  - OLP-0062 B010–B011, B013–B014, B016–B017: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T015-OLP-0005-B004`, `T015-OLP-0005-B005`, `T015-OLP-0005-B006`, `T015-OLP-0005-B007`, `T015-OLP-0005-B008`, `T015-OLP-0005-B009`, `T015-OLP-0005-B010`, `T015-OLP-0005-B011`, `T015-OLP-0005-B012`, `T015-OLP-0005-B013`, `T015-OLP-0005-B014`, `T015-OLP-0006-B004`, `T015-OLP-0006-B005`, `T015-OLP-0006-B006`, `T015-OLP-0006-B007`, `T015-OLP-0006-B008`, `T015-OLP-0006-B009`, `T015-OLP-0006-B010`, `T015-OLP-0006-B011`, `T015-OLP-0006-B012`, `T015-OLP-0006-B013`, `T015-OLP-0006-B014`, `T015-OLP-0006-B015`, `T015-OLP-0006-B016`, `T015-OLP-0006-B017`, `T015-OLP-0006-B018`, `T015-OLP-0033-B020`, `T015-OLP-0034-B010`, `T015-OLP-0036-B017`, `T015-OLP-0044-B006`, `T015-OLP-0044-B007`, `T015-OLP-0044-B008`, `T015-OLP-0044-B009`, `T015-OLP-0044-B010`, `T015-OLP-0045-B008`, `T015-OLP-0045-B010`, `T015-OLP-0046-B009`, `T015-OLP-0047-B008`, `T015-OLP-0047-B010`, `T015-OLP-0047-B012`, `T015-OLP-0048-B013`, `T015-OLP-0048-B016`, `T015-OLP-0048-B017`, `T015-OLP-0048-B022`, `T015-OLP-0048-B023`, `T015-OLP-0053-B011`, `T015-OLP-0053-B012`, `T015-OLP-0054-B004`, `T015-OLP-0054-B005`, `T015-OLP-0054-B006`, `T015-OLP-0054-B009`, `T015-OLP-0054-B010`, `T015-OLP-0054-B013`, `T015-OLP-0055-B005`, `T015-OLP-0056-B005`, `T015-OLP-0058-B009`, `T015-OLP-0058-B010`, `T015-OLP-0060-B013`, `T015-OLP-0061-B022`, `T015-OLP-0062-B010`, `T015-OLP-0062-B011`, `T015-OLP-0062-B013`, `T015-OLP-0062-B014`, `T015-OLP-0062-B016`, `T015-OLP-0062-B017`
+- **Literal English line hits:** `upstream/content/propositional-logic/propositional-logic.tex:12–13, 29`; `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:68, 95, 110, 112, 120, 151`; `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:55–57`; `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:62, 64, 75, 77, 88, 90`; `upstream/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex:12`; `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:142, 144, 190, 192`; `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:165, 167, 174, 181, 227`; `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:43, 60, 64, 72, 74, 76, 90, 156, 158, 168, 182, 184, 205`; `upstream/content/sets-functions-relations/arithmetization/cuts.tex:52, 58, 78`; `upstream/content/sets-functions-relations/arithmetization/reals.tex:29, 33, 37, 70, 72`; `upstream/content/sets-functions-relations/arithmetization/reflections.tex:44`; `upstream/content/sets-functions-relations/infinite/card-sb.tex:10, 17–18, 22, 45, 47, 55, 68, 83, 85, 89, 101`; `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:3, 11, 48–49, 85, 88, 93`; `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:60, 66–67, 105, 109, 127, 137`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:51, 137, 140, 152, 177, 180`; `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:21, 47, 83`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/propositional-logic.tex:12–13`; `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:54–56`; `mr/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex:12`; `mr/content/sets-functions-relations/arithmetization/cauchy.tex:142, 174`; `mr/content/sets-functions-relations/arithmetization/checking-details.tex:75, 153, 180`; `mr/content/sets-functions-relations/arithmetization/cuts.tex:51, 119`; `mr/content/sets-functions-relations/arithmetization/reals.tex:34, 38, 75`; `mr/content/sets-functions-relations/infinite/card-sb.tex:7, 10, 18, 22, 66, 87, 91`; `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:11–12, 81`; `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:66–67, 114–115, 134–135`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:137`; `mr/content/sets-functions-relations/size-of-sets/reduction.tex:22, 45, 48`.
 - **Authorities actually checked:**
 
   - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
@@ -645,13 +668,15 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
   - OLP-0039 B010, B012, B018: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex)
   - OLP-0040 B012–B015, B017–B018, B020–B021: [English](../upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex)
   - OLP-0048 B008, B010: [English](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex) ↔ [Marathi](../mr/content/sets-functions-relations/arithmetization/cauchy.tex)
-- **Occurrence records:** `T023-OLP-0009-B004`, `T023-OLP-0009-B005`, `T023-OLP-0009-B006`, `T023-OLP-0009-B007`, `T023-OLP-0009-B008`, `T023-OLP-0009-B009`, `T023-OLP-0009-B010`, `T023-OLP-0009-B011`, `T023-OLP-0009-B012`, `T023-OLP-0009-B013`, `T023-OLP-0009-B014`, `T023-OLP-0009-B015`, `T023-OLP-0009-B016`, `T023-OLP-0009-B017`, `T023-OLP-0009-B018`, `T023-OLP-0009-B019`, `T023-OLP-0030-B012`, `T023-OLP-0031-B012`, `T023-OLP-0033-B010`, `T023-OLP-0033-B011`, `T023-OLP-0033-B012`, `T023-OLP-0033-B013`, `T023-OLP-0033-B014`, `T023-OLP-0033-B015`, `T023-OLP-0033-B016`, `T023-OLP-0033-B017`, `T023-OLP-0033-B018`, `T023-OLP-0033-B019`, `T023-OLP-0034-B007`, `T023-OLP-0034-B011`, `T023-OLP-0034-B012`, `T023-OLP-0034-B013`, `T023-OLP-0034-B014`, `T023-OLP-0034-B015`, `T023-OLP-0034-B017`, `T023-OLP-0034-B018`, `T023-OLP-0034-B019`, `T023-OLP-0034-B020`, `T023-OLP-0036-B015`, `T023-OLP-0036-B016`, `T023-OLP-0039-B010`, `T023-OLP-0039-B012`, `T023-OLP-0039-B018`, `T023-OLP-0040-B012`, `T023-OLP-0040-B013`, `T023-OLP-0040-B014`, `T023-OLP-0040-B015`, `T023-OLP-0040-B017`, `T023-OLP-0040-B018`, `T023-OLP-0040-B020`, `T023-OLP-0040-B021`, `T023-OLP-0048-B008`, `T023-OLP-0048-B010`
-- **Literal English line hits:** `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:11, 15, 41, 48, 56, 58, 60, 70, 72–73, 84, 92, 98, 100–101, 103, 107, 110, 124, 129, 146, 162, 170, 177, 182, 210, 219, 226`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:40, 116–117, 119–120, 122–123`; `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:90`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:44, 49, 64–65, 77, 92`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:44, 55–57, 62, 74, 76, 78, 80, 83–84, 104–105, 110, 113, 118, 129–131, 134–135`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:60, 81`; `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:53, 59, 63, 65, 93–94, 119`; `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:22, 52, 56, 60, 62, 90–91, 115`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/sets/pairs-and-products.tex:42, 119–122, 124–127`; `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:94`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:44, 48, 62, 77, 94`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:42, 53–54, 59, 71–73, 77, 79–80, 100–102, 106, 109, 114, 126–128, 131–132`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:81, 95`; `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:54, 56, 65, 94–95, 121`; `mr/content/sets-functions-relations/size-of-sets/reduction.tex:21, 53, 57, 60, 62–63, 92–93, 104, 106, 121`.
+  - OLP-0060 B007, B014: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+- **Occurrence records:** `T023-OLP-0009-B004`, `T023-OLP-0009-B005`, `T023-OLP-0009-B006`, `T023-OLP-0009-B007`, `T023-OLP-0009-B008`, `T023-OLP-0009-B009`, `T023-OLP-0009-B010`, `T023-OLP-0009-B011`, `T023-OLP-0009-B012`, `T023-OLP-0009-B013`, `T023-OLP-0009-B014`, `T023-OLP-0009-B015`, `T023-OLP-0009-B016`, `T023-OLP-0009-B017`, `T023-OLP-0009-B018`, `T023-OLP-0009-B019`, `T023-OLP-0030-B012`, `T023-OLP-0031-B012`, `T023-OLP-0033-B010`, `T023-OLP-0033-B011`, `T023-OLP-0033-B012`, `T023-OLP-0033-B013`, `T023-OLP-0033-B014`, `T023-OLP-0033-B015`, `T023-OLP-0033-B016`, `T023-OLP-0033-B017`, `T023-OLP-0033-B018`, `T023-OLP-0033-B019`, `T023-OLP-0034-B007`, `T023-OLP-0034-B011`, `T023-OLP-0034-B012`, `T023-OLP-0034-B013`, `T023-OLP-0034-B014`, `T023-OLP-0034-B015`, `T023-OLP-0034-B017`, `T023-OLP-0034-B018`, `T023-OLP-0034-B019`, `T023-OLP-0034-B020`, `T023-OLP-0036-B015`, `T023-OLP-0036-B016`, `T023-OLP-0039-B010`, `T023-OLP-0039-B012`, `T023-OLP-0039-B018`, `T023-OLP-0040-B012`, `T023-OLP-0040-B013`, `T023-OLP-0040-B014`, `T023-OLP-0040-B015`, `T023-OLP-0040-B017`, `T023-OLP-0040-B018`, `T023-OLP-0040-B020`, `T023-OLP-0040-B021`, `T023-OLP-0048-B008`, `T023-OLP-0048-B010`, `T023-OLP-0060-B007`, `T023-OLP-0060-B014`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:3, 11, 18, 20, 22, 24, 45, 58, 65, 69–70, 72, 79, 82, 85, 88, 91, 94, 101, 105, 107, 116–117, 121–122, 126, 128–130, 144–145`; `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:11, 15, 41, 48, 56, 58, 60, 70, 72–73, 84, 92, 98, 100–101, 103, 107, 110, 124, 129, 146, 162, 170, 177, 182, 210, 219, 226`; `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:40, 116–117, 119–120, 122–123`; `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:90`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:44, 49, 64–65, 77, 92`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:44, 55–57, 62, 74, 76, 78, 80, 83–84, 104–105, 110, 113, 118, 129–131, 134–135`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:60, 81`; `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:53, 59, 63, 65, 93–94, 119`; `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:22, 52, 56, 60, 62, 90–91, 115`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:21, 70, 112, 117, 140`; `mr/content/sets-functions-relations/sets/pairs-and-products.tex:42, 119–122, 124–127`; `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:94`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:44, 48, 62, 77, 94`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:42, 53–54, 59, 71–73, 77, 79–80, 100–102, 106, 109, 114, 126–128, 131–132`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:81, 95`; `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:54, 56, 65, 94–95, 121`; `mr/content/sets-functions-relations/size-of-sets/reduction.tex:21, 53, 57, 60, 62–63, 92–93, 104, 106, 121`.
 - **Authorities actually checked:**
 
   - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P017, MR-C001, ordered-pair discussion, first half of page, printed page 81. visually-read-page-image
   - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P001, MR-C001, संच (Sets), opening definition and membership notation, printed page 2. visually-read-page-image
+  - [गणितशास्त्र परिभाषा कोश — S glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/9/s) — MR-P079, MR-C060, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
 - **Precise review question:** In the listed formal contexts, should “अनुक्रम / चिन्हमाला / शब्द” remain, or should one of “मालिका / स्ट्रिंग” replace it? Does the chosen wording preserve the technical sense of sequence/string/word without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source.
 
 ## T024 — set difference
@@ -739,13 +764,20 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
   - OLP-0029 B023: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
   - OLP-0038 B019: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex)
   - OLP-0052 B005, B007–B008, B010: [English](../upstream/content/sets-functions-relations/infinite/dedekind-induction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/dedekind-induction.tex)
-- **Occurrence records:** `T027-OLP-0010-B004`, `T027-OLP-0010-B005`, `T027-OLP-0010-B006`, `T027-OLP-0010-B007`, `T027-OLP-0010-B008`, `T027-OLP-0010-B009`, `T027-OLP-0010-B010`, `T027-OLP-0010-B011`, `T027-OLP-0010-B012`, `T027-OLP-0010-B013`, `T027-OLP-0010-B014`, `T027-OLP-0029-B023`, `T027-OLP-0038-B019`, `T027-OLP-0052-B005`, `T027-OLP-0052-B007`, `T027-OLP-0052-B008`, `T027-OLP-0052-B010`
+  - OLP-0056 B005: [English](../upstream/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex)
+  - OLP-0057 B007–B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0058 B013–B023: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0059 B006–B007, B020, B023: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+  - OLP-0060 B006, B010–B011, B016: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+  - OLP-0061 B007, B011, B021: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+- **Occurrence records:** `T027-OLP-0010-B004`, `T027-OLP-0010-B005`, `T027-OLP-0010-B006`, `T027-OLP-0010-B007`, `T027-OLP-0010-B008`, `T027-OLP-0010-B009`, `T027-OLP-0010-B010`, `T027-OLP-0010-B011`, `T027-OLP-0010-B012`, `T027-OLP-0010-B013`, `T027-OLP-0010-B014`, `T027-OLP-0029-B023`, `T027-OLP-0038-B019`, `T027-OLP-0052-B005`, `T027-OLP-0052-B007`, `T027-OLP-0052-B008`, `T027-OLP-0052-B010`, `T027-OLP-0056-B005`, `T027-OLP-0057-B007`, `T027-OLP-0057-B008`, `T027-OLP-0057-B009`, `T027-OLP-0058-B013`, `T027-OLP-0058-B014`, `T027-OLP-0058-B015`, `T027-OLP-0058-B016`, `T027-OLP-0058-B017`, `T027-OLP-0058-B018`, `T027-OLP-0058-B019`, `T027-OLP-0058-B020`, `T027-OLP-0058-B021`, `T027-OLP-0058-B022`, `T027-OLP-0058-B023`, `T027-OLP-0059-B006`, `T027-OLP-0059-B007`, `T027-OLP-0059-B020`, `T027-OLP-0059-B023`, `T027-OLP-0060-B006`, `T027-OLP-0060-B010`, `T027-OLP-0060-B011`, `T027-OLP-0060-B016`, `T027-OLP-0061-B007`, `T027-OLP-0061-B011`, `T027-OLP-0061-B021`
 - **Literal English line hits:** `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:10, 16`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:16`.
 - **Literal Marathi line hits:** `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:10, 16`.
 - **Authorities actually checked:**
 
   - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
   - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — M glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/m) — MR-P061, MR-C044, current web-search extraction personally read 2026-09-05. Observation hash is not an origin-page hash; the exact arithmetical-induction phrase is compositional.
+  - [गणितीय विगमन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/21278/) — MR-P080, MR-C061, section ‘सुक्रमण तत्त्व व सांतातीत विगमन’, current web extraction personally read 2026-09-06. The article describes but does not explicitly name strong induction; OpenLogic states the exact hypothesis.
 - **Precise review question:** Should the source's ‘arithmetical induction’ remain अंकगणितीय विगमन while general mathematical induction remains गणितीय विगमन?
 
 ## T028 — continuum
@@ -895,9 +927,10 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
   - OLP-0036 B008, B010: [English](../upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/comparing-size.tex)
   - OLP-0042 B007, B010: [English](../upstream/content/sets-functions-relations/arithmetization/integers.tex) ↔ [Marathi](../mr/content/sets-functions-relations/arithmetization/integers.tex)
   - OLP-0047 B015: [English](../upstream/content/sets-functions-relations/arithmetization/checking-details.tex) ↔ [Marathi](../mr/content/sets-functions-relations/arithmetization/checking-details.tex)
-- **Occurrence records:** `T033-OLP-0012-B004`, `T033-OLP-0012-B005`, `T033-OLP-0012-B006`, `T033-OLP-0012-B007`, `T033-OLP-0012-B008`, `T033-OLP-0012-B009`, `T033-OLP-0012-B010`, `T033-OLP-0012-B011`, `T033-OLP-0012-B012`, `T033-OLP-0014-B004`, `T033-OLP-0014-B005`, `T033-OLP-0014-B006`, `T033-OLP-0014-B007`, `T033-OLP-0014-B008`, `T033-OLP-0014-B009`, `T033-OLP-0014-B010`, `T033-OLP-0014-B011`, `T033-OLP-0014-B012`, `T033-OLP-0014-B013`, `T033-OLP-0014-B014`, `T033-OLP-0014-B015`, `T033-OLP-0015-B005`, `T033-OLP-0015-B006`, `T033-OLP-0015-B007`, `T033-OLP-0015-B008`, `T033-OLP-0015-B009`, `T033-OLP-0015-B010`, `T033-OLP-0015-B011`, `T033-OLP-0015-B012`, `T033-OLP-0015-B013`, `T033-OLP-0015-B014`, `T033-OLP-0015-B015`, `T033-OLP-0016-B004`, `T033-OLP-0016-B005`, `T033-OLP-0016-B006`, `T033-OLP-0016-B007`, `T033-OLP-0016-B008`, `T033-OLP-0016-B009`, `T033-OLP-0016-B010`, `T033-OLP-0016-B011`, `T033-OLP-0016-B012`, `T033-OLP-0016-B013`, `T033-OLP-0016-B014`, `T033-OLP-0016-B015`, `T033-OLP-0016-B016`, `T033-OLP-0016-B017`, `T033-OLP-0016-B018`, `T033-OLP-0016-B019`, `T033-OLP-0016-B020`, `T033-OLP-0016-B021`, `T033-OLP-0016-B022`, `T033-OLP-0016-B023`, `T033-OLP-0016-B024`, `T033-OLP-0016-B025`, `T033-OLP-0016-B026`, `T033-OLP-0016-B027`, `T033-OLP-0016-B028`, `T033-OLP-0016-B029`, `T033-OLP-0019-B004`, `T033-OLP-0019-B005`, `T033-OLP-0019-B006`, `T033-OLP-0019-B007`, `T033-OLP-0019-B008`, `T033-OLP-0019-B009`, `T033-OLP-0019-B010`, `T033-OLP-0019-B011`, `T033-OLP-0019-B012`, `T033-OLP-0019-B013`, `T033-OLP-0019-B014`, `T033-OLP-0019-B015`, `T033-OLP-0019-B016`, `T033-OLP-0019-B017`, `T033-OLP-0019-B018`, `T033-OLP-0019-B019`, `T033-OLP-0019-B020`, `T033-OLP-0035-B009`, `T033-OLP-0036-B008`, `T033-OLP-0036-B010`, `T033-OLP-0042-B007`, `T033-OLP-0042-B010`, `T033-OLP-0047-B015`
+  - OLP-0062 B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T033-OLP-0012-B004`, `T033-OLP-0012-B005`, `T033-OLP-0012-B006`, `T033-OLP-0012-B007`, `T033-OLP-0012-B008`, `T033-OLP-0012-B009`, `T033-OLP-0012-B010`, `T033-OLP-0012-B011`, `T033-OLP-0012-B012`, `T033-OLP-0014-B004`, `T033-OLP-0014-B005`, `T033-OLP-0014-B006`, `T033-OLP-0014-B007`, `T033-OLP-0014-B008`, `T033-OLP-0014-B009`, `T033-OLP-0014-B010`, `T033-OLP-0014-B011`, `T033-OLP-0014-B012`, `T033-OLP-0014-B013`, `T033-OLP-0014-B014`, `T033-OLP-0014-B015`, `T033-OLP-0015-B005`, `T033-OLP-0015-B006`, `T033-OLP-0015-B007`, `T033-OLP-0015-B008`, `T033-OLP-0015-B009`, `T033-OLP-0015-B010`, `T033-OLP-0015-B011`, `T033-OLP-0015-B012`, `T033-OLP-0015-B013`, `T033-OLP-0015-B014`, `T033-OLP-0015-B015`, `T033-OLP-0016-B004`, `T033-OLP-0016-B005`, `T033-OLP-0016-B006`, `T033-OLP-0016-B007`, `T033-OLP-0016-B008`, `T033-OLP-0016-B009`, `T033-OLP-0016-B010`, `T033-OLP-0016-B011`, `T033-OLP-0016-B012`, `T033-OLP-0016-B013`, `T033-OLP-0016-B014`, `T033-OLP-0016-B015`, `T033-OLP-0016-B016`, `T033-OLP-0016-B017`, `T033-OLP-0016-B018`, `T033-OLP-0016-B019`, `T033-OLP-0016-B020`, `T033-OLP-0016-B021`, `T033-OLP-0016-B022`, `T033-OLP-0016-B023`, `T033-OLP-0016-B024`, `T033-OLP-0016-B025`, `T033-OLP-0016-B026`, `T033-OLP-0016-B027`, `T033-OLP-0016-B028`, `T033-OLP-0016-B029`, `T033-OLP-0019-B004`, `T033-OLP-0019-B005`, `T033-OLP-0019-B006`, `T033-OLP-0019-B007`, `T033-OLP-0019-B008`, `T033-OLP-0019-B009`, `T033-OLP-0019-B010`, `T033-OLP-0019-B011`, `T033-OLP-0019-B012`, `T033-OLP-0019-B013`, `T033-OLP-0019-B014`, `T033-OLP-0019-B015`, `T033-OLP-0019-B016`, `T033-OLP-0019-B017`, `T033-OLP-0019-B018`, `T033-OLP-0019-B019`, `T033-OLP-0019-B020`, `T033-OLP-0035-B009`, `T033-OLP-0036-B008`, `T033-OLP-0036-B010`, `T033-OLP-0042-B007`, `T033-OLP-0042-B010`, `T033-OLP-0047-B015`, `T033-OLP-0062-B009`
 - **Literal English line hits:** `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:106`; `upstream/content/sets-functions-relations/arithmetization/integers.tex:30`; `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:14, 19, 51`; `upstream/content/sets-functions-relations/relations/operations.tex:50, 52, 56, 68`; `upstream/content/sets-functions-relations/relations/orders.tex:23, 40, 48, 84, 112–113, 126, 130`; `upstream/content/sets-functions-relations/relations/special-properties.tex:29, 64–66`; `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:31, 43`; `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:40`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/arithmetization/checking-details.tex:105`; `mr/content/sets-functions-relations/arithmetization/integers.tex:30, 36`; `mr/content/sets-functions-relations/relations/equivalence-relations.tex:13, 17, 48`; `mr/content/sets-functions-relations/relations/operations.tex:51, 53, 57, 70`; `mr/content/sets-functions-relations/relations/orders.tex:22, 37, 45, 80, 106–107, 118, 120, 124`; `mr/content/sets-functions-relations/relations/special-properties.tex:26–27, 60–61`; `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:32, 44`; `mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:39, 52`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:57`; `mr/content/sets-functions-relations/arithmetization/checking-details.tex:105`; `mr/content/sets-functions-relations/arithmetization/integers.tex:30, 36`; `mr/content/sets-functions-relations/relations/equivalence-relations.tex:13, 17, 48`; `mr/content/sets-functions-relations/relations/operations.tex:51, 53, 57, 70`; `mr/content/sets-functions-relations/relations/orders.tex:22, 37, 45, 80, 106–107, 118, 120, 124`; `mr/content/sets-functions-relations/relations/special-properties.tex:26–27, 60–61`; `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:32, 44`; `mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:39, 52`.
 - **Authorities actually checked:**
 
   - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश](https://shabdakosh.marathi.gov.in/ananya-glossary/7/t) — MR-P024, MR-C014, transitive relation / transitivity of equivalence. short primary-source observation read; source bytes not preserved
@@ -1161,15 +1194,23 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
 - **Exact aligned source/target scopes:**
 
   - OLP-0018 B004–B006, B008–B020: [English](../upstream/content/sets-functions-relations/relations/trees.tex) ↔ [Marathi](../mr/content/sets-functions-relations/relations/trees.tex)
-- **Occurrence records:** `T044-OLP-0018-B004`, `T044-OLP-0018-B005`, `T044-OLP-0018-B006`, `T044-OLP-0018-B008`, `T044-OLP-0018-B009`, `T044-OLP-0018-B010`, `T044-OLP-0018-B011`, `T044-OLP-0018-B012`, `T044-OLP-0018-B013`, `T044-OLP-0018-B014`, `T044-OLP-0018-B015`, `T044-OLP-0018-B016`, `T044-OLP-0018-B017`, `T044-OLP-0018-B018`, `T044-OLP-0018-B019`, `T044-OLP-0018-B020`
-- **Literal English line hits:** `upstream/content/sets-functions-relations/relations/trees.tex:14–16, 126`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/relations/trees.tex:125`.
+  - OLP-0056 B005: [English](../upstream/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex)
+  - OLP-0057 B006–B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0058 B005–B010, B013–B025, B027–B035: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0059 B006–B012, B014–B023: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+  - OLP-0060 B006–B011, B014–B016: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+  - OLP-0061 B006–B007, B010–B012, B014–B022: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+  - OLP-0062 B007–B009, B012: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T044-OLP-0018-B004`, `T044-OLP-0018-B005`, `T044-OLP-0018-B006`, `T044-OLP-0018-B008`, `T044-OLP-0018-B009`, `T044-OLP-0018-B010`, `T044-OLP-0018-B011`, `T044-OLP-0018-B012`, `T044-OLP-0018-B013`, `T044-OLP-0018-B014`, `T044-OLP-0018-B015`, `T044-OLP-0018-B016`, `T044-OLP-0018-B017`, `T044-OLP-0018-B018`, `T044-OLP-0018-B019`, `T044-OLP-0018-B020`, `T044-OLP-0056-B005`, `T044-OLP-0057-B006`, `T044-OLP-0057-B007`, `T044-OLP-0057-B008`, `T044-OLP-0057-B009`, `T044-OLP-0058-B005`, `T044-OLP-0058-B006`, `T044-OLP-0058-B007`, `T044-OLP-0058-B008`, `T044-OLP-0058-B009`, `T044-OLP-0058-B010`, `T044-OLP-0058-B013`, `T044-OLP-0058-B014`, `T044-OLP-0058-B015`, `T044-OLP-0058-B016`, `T044-OLP-0058-B017`, `T044-OLP-0058-B018`, `T044-OLP-0058-B019`, `T044-OLP-0058-B020`, `T044-OLP-0058-B021`, `T044-OLP-0058-B022`, `T044-OLP-0058-B023`, `T044-OLP-0058-B024`, `T044-OLP-0058-B025`, `T044-OLP-0058-B027`, `T044-OLP-0058-B028`, `T044-OLP-0058-B029`, `T044-OLP-0058-B030`, `T044-OLP-0058-B031`, `T044-OLP-0058-B032`, `T044-OLP-0058-B033`, `T044-OLP-0058-B034`, `T044-OLP-0058-B035`, `T044-OLP-0059-B006`, `T044-OLP-0059-B007`, `T044-OLP-0059-B008`, `T044-OLP-0059-B009`, `T044-OLP-0059-B010`, `T044-OLP-0059-B011`, `T044-OLP-0059-B012`, `T044-OLP-0059-B014`, `T044-OLP-0059-B015`, `T044-OLP-0059-B016`, `T044-OLP-0059-B017`, `T044-OLP-0059-B018`, `T044-OLP-0059-B019`, `T044-OLP-0059-B020`, `T044-OLP-0059-B021`, `T044-OLP-0059-B022`, `T044-OLP-0059-B023`, `T044-OLP-0060-B006`, `T044-OLP-0060-B007`, `T044-OLP-0060-B008`, `T044-OLP-0060-B009`, `T044-OLP-0060-B010`, `T044-OLP-0060-B011`, `T044-OLP-0060-B014`, `T044-OLP-0060-B015`, `T044-OLP-0060-B016`, `T044-OLP-0061-B006`, `T044-OLP-0061-B007`, `T044-OLP-0061-B010`, `T044-OLP-0061-B011`, `T044-OLP-0061-B012`, `T044-OLP-0061-B014`, `T044-OLP-0061-B015`, `T044-OLP-0061-B016`, `T044-OLP-0061-B017`, `T044-OLP-0061-B018`, `T044-OLP-0061-B019`, `T044-OLP-0061-B020`, `T044-OLP-0061-B021`, `T044-OLP-0061-B022`, `T044-OLP-0062-B007`, `T044-OLP-0062-B008`, `T044-OLP-0062-B009`, `T044-OLP-0062-B012`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:13–14, 17, 20, 25, 59, 65, 93–94, 98, 100, 148`; `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:3, 11, 13, 53, 78–80, 83, 85, 88, 90–91, 93–94, 96–97, 99–100, 102–103, 105, 110, 112–113, 117–118, 121–125, 129, 135, 142, 146`; `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:13, 18–19, 30, 40, 46, 57, 66, 69–72, 74`; `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:13, 15, 29, 33, 35–36, 38, 42, 51, 59, 68, 70, 72, 74, 76, 92, 96, 100–101`; `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:17, 20, 22, 24, 27, 35`; `upstream/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex:13, 18`; `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:138, 148, 182`; `upstream/content/sets-functions-relations/relations/trees.tex:14–16, 126`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:19, 24, 58, 95, 97`; `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:53, 79, 113, 123–124, 126, 130, 135, 159`; `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:69`; `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:38`; `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:21–22, 36–37, 49`; `mr/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex:11`; `mr/content/sets-functions-relations/relations/trees.tex:125`.
 - **Authorities actually checked:**
 
   - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
   - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P007, MR-C006, विधेय / संख्यापनीय तर्कशास्त्र आणि संच उपपत्ती, topics 1 and 4, printed page 14. visually-read-page-image
   - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
   - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P022, MR-C011, Predicate logic continuation and section 3.2, printed page 20. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/f) — MR-P076, MR-C057, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
 - **Precise review question:** Is संगणनीयता the best way to keep computability distinct from गणनीयता for countability?
 
 ## T045 — function / mapping
@@ -1531,12 +1572,14 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
   - OLP-0039 B005–B009, B011, B013–B015, B018: [English](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex)
   - OLP-0040 B006–B007, B010–B011, B016–B023: [English](../upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex)
   - OLP-0044 B006: [English](../upstream/content/sets-functions-relations/arithmetization/reals.tex) ↔ [Marathi](../mr/content/sets-functions-relations/arithmetization/reals.tex)
-- **Occurrence records:** `T057-OLP-0027-B004`, `T057-OLP-0027-B005`, `T057-OLP-0027-B016`, `T057-OLP-0028-B005`, `T057-OLP-0028-B006`, `T057-OLP-0028-B007`, `T057-OLP-0029-B005`, `T057-OLP-0029-B008`, `T057-OLP-0029-B009`, `T057-OLP-0029-B012`, `T057-OLP-0029-B016`, `T057-OLP-0029-B021`, `T057-OLP-0029-B022`, `T057-OLP-0029-B023`, `T057-OLP-0029-B028`, `T057-OLP-0029-B033`, `T057-OLP-0029-B035`, `T057-OLP-0030-B007`, `T057-OLP-0030-B010`, `T057-OLP-0030-B011`, `T057-OLP-0030-B012`, `T057-OLP-0031-B011`, `T057-OLP-0031-B013`, `T057-OLP-0031-B014`, `T057-OLP-0031-B015`, `T057-OLP-0031-B016`, `T057-OLP-0031-B017`, `T057-OLP-0033-B005`, `T057-OLP-0033-B006`, `T057-OLP-0033-B007`, `T057-OLP-0033-B008`, `T057-OLP-0033-B009`, `T057-OLP-0033-B011`, `T057-OLP-0033-B012`, `T057-OLP-0033-B019`, `T057-OLP-0033-B020`, `T057-OLP-0033-B021`, `T057-OLP-0033-B022`, `T057-OLP-0033-B025`, `T057-OLP-0033-B026`, `T057-OLP-0034-B006`, `T057-OLP-0034-B007`, `T057-OLP-0034-B009`, `T057-OLP-0034-B010`, `T057-OLP-0034-B014`, `T057-OLP-0034-B015`, `T057-OLP-0034-B016`, `T057-OLP-0034-B017`, `T057-OLP-0034-B018`, `T057-OLP-0034-B019`, `T057-OLP-0034-B020`, `T057-OLP-0034-B021`, `T057-OLP-0035-B013`, `T057-OLP-0035-B014`, `T057-OLP-0035-B015`, `T057-OLP-0035-B016`, `T057-OLP-0035-B018`, `T057-OLP-0036-B010`, `T057-OLP-0036-B013`, `T057-OLP-0036-B014`, `T057-OLP-0036-B015`, `T057-OLP-0036-B016`, `T057-OLP-0038-B005`, `T057-OLP-0038-B006`, `T057-OLP-0038-B007`, `T057-OLP-0038-B011`, `T057-OLP-0038-B012`, `T057-OLP-0038-B014`, `T057-OLP-0038-B018`, `T057-OLP-0038-B019`, `T057-OLP-0039-B005`, `T057-OLP-0039-B006`, `T057-OLP-0039-B007`, `T057-OLP-0039-B008`, `T057-OLP-0039-B009`, `T057-OLP-0039-B011`, `T057-OLP-0039-B013`, `T057-OLP-0039-B014`, `T057-OLP-0039-B015`, `T057-OLP-0039-B018`, `T057-OLP-0040-B006`, `T057-OLP-0040-B007`, `T057-OLP-0040-B010`, `T057-OLP-0040-B011`, `T057-OLP-0040-B016`, `T057-OLP-0040-B017`, `T057-OLP-0040-B018`, `T057-OLP-0040-B019`, `T057-OLP-0040-B020`, `T057-OLP-0040-B021`, `T057-OLP-0040-B022`, `T057-OLP-0040-B023`, `T057-OLP-0044-B006`
+  - OLP-0058 B006–B008, B013–B023: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+- **Occurrence records:** `T057-OLP-0027-B004`, `T057-OLP-0027-B005`, `T057-OLP-0027-B016`, `T057-OLP-0028-B005`, `T057-OLP-0028-B006`, `T057-OLP-0028-B007`, `T057-OLP-0029-B005`, `T057-OLP-0029-B008`, `T057-OLP-0029-B009`, `T057-OLP-0029-B012`, `T057-OLP-0029-B016`, `T057-OLP-0029-B021`, `T057-OLP-0029-B022`, `T057-OLP-0029-B023`, `T057-OLP-0029-B028`, `T057-OLP-0029-B033`, `T057-OLP-0029-B035`, `T057-OLP-0030-B007`, `T057-OLP-0030-B010`, `T057-OLP-0030-B011`, `T057-OLP-0030-B012`, `T057-OLP-0031-B011`, `T057-OLP-0031-B013`, `T057-OLP-0031-B014`, `T057-OLP-0031-B015`, `T057-OLP-0031-B016`, `T057-OLP-0031-B017`, `T057-OLP-0033-B005`, `T057-OLP-0033-B006`, `T057-OLP-0033-B007`, `T057-OLP-0033-B008`, `T057-OLP-0033-B009`, `T057-OLP-0033-B011`, `T057-OLP-0033-B012`, `T057-OLP-0033-B019`, `T057-OLP-0033-B020`, `T057-OLP-0033-B021`, `T057-OLP-0033-B022`, `T057-OLP-0033-B025`, `T057-OLP-0033-B026`, `T057-OLP-0034-B006`, `T057-OLP-0034-B007`, `T057-OLP-0034-B009`, `T057-OLP-0034-B010`, `T057-OLP-0034-B014`, `T057-OLP-0034-B015`, `T057-OLP-0034-B016`, `T057-OLP-0034-B017`, `T057-OLP-0034-B018`, `T057-OLP-0034-B019`, `T057-OLP-0034-B020`, `T057-OLP-0034-B021`, `T057-OLP-0035-B013`, `T057-OLP-0035-B014`, `T057-OLP-0035-B015`, `T057-OLP-0035-B016`, `T057-OLP-0035-B018`, `T057-OLP-0036-B010`, `T057-OLP-0036-B013`, `T057-OLP-0036-B014`, `T057-OLP-0036-B015`, `T057-OLP-0036-B016`, `T057-OLP-0038-B005`, `T057-OLP-0038-B006`, `T057-OLP-0038-B007`, `T057-OLP-0038-B011`, `T057-OLP-0038-B012`, `T057-OLP-0038-B014`, `T057-OLP-0038-B018`, `T057-OLP-0038-B019`, `T057-OLP-0039-B005`, `T057-OLP-0039-B006`, `T057-OLP-0039-B007`, `T057-OLP-0039-B008`, `T057-OLP-0039-B009`, `T057-OLP-0039-B011`, `T057-OLP-0039-B013`, `T057-OLP-0039-B014`, `T057-OLP-0039-B015`, `T057-OLP-0039-B018`, `T057-OLP-0040-B006`, `T057-OLP-0040-B007`, `T057-OLP-0040-B010`, `T057-OLP-0040-B011`, `T057-OLP-0040-B016`, `T057-OLP-0040-B017`, `T057-OLP-0040-B018`, `T057-OLP-0040-B019`, `T057-OLP-0040-B020`, `T057-OLP-0040-B021`, `T057-OLP-0040-B022`, `T057-OLP-0040-B023`, `T057-OLP-0044-B006`, `T057-OLP-0058-B006`, `T057-OLP-0058-B007`, `T057-OLP-0058-B008`, `T057-OLP-0058-B013`, `T057-OLP-0058-B014`, `T057-OLP-0058-B015`, `T057-OLP-0058-B016`, `T057-OLP-0058-B017`, `T057-OLP-0058-B018`, `T057-OLP-0058-B019`, `T057-OLP-0058-B020`, `T057-OLP-0058-B021`, `T057-OLP-0058-B022`, `T057-OLP-0058-B023`
 - **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:44`; `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:11, 58–59, 61, 65, 78, 80, 127, 132`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:11, 31, 64, 84, 114–115, 165, 173, 181–182, 209, 253, 259, 269–272`; `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:58, 63–64, 70–71, 85, 94, 96, 107`; `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:24, 26`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:22–24, 115`; `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:22, 26, 53, 143, 149`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:71, 83, 88, 96, 100–103`; `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:24–25, 49, 82–83, 103, 126`; `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:24–26, 48, 79–80, 100, 123`; `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:69, 115, 119, 123`.
 - **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:124, 130`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:63, 166, 175, 183, 185, 282, 286`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:15`; `mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex:15`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:13, 83, 111`; `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:14`; `mr/content/sets-functions-relations/size-of-sets/reduction.tex:14, 43`; `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11, 45`.
 - **Authorities actually checked:**
 
   - [MR-C004](https://vishwakosh.marathi.gov.in/34075/) — MR-P032, MR-C004, Current search extraction, personally read 2026-09-04: paragraphs headed infinite sets and cardinality. Same previously indexed source, new actual consultation. The witness's positive-natural-number convention and its restriction to infinite countable sets do not replace OpenLogic conventions. Missing/corrupt mathematical glyphs and source historical assertions are not imported. Original HTML remains unavailable.
+  - [गणितशास्त्र परिभाषा कोश — C glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/9/c) — MR-P074, MR-C055, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
 - **Precise review question:** Can गणनीय include finite and empty sets here without readers importing the checked witness's narrower countably-infinite convention?
 
 ## T058 — size / cardinality / equinumerous
@@ -1612,7 +1655,8 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
   - OLP-0029 B031: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
   - OLP-0048 B021: [English](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex) ↔ [Marathi](../mr/content/sets-functions-relations/arithmetization/cauchy.tex)
   - OLP-0052 B012: [English](../upstream/content/sets-functions-relations/infinite/dedekind-induction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/dedekind-induction.tex)
-- **Occurrence records:** `T061-OLP-0029-B031`, `T061-OLP-0048-B021`, `T061-OLP-0052-B012`
+  - OLP-0061 B007: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+- **Occurrence records:** `T061-OLP-0029-B031`, `T061-OLP-0048-B021`, `T061-OLP-0052-B012`, `T061-OLP-0061-B007`
 - **Literal English line hits:** `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:196–197`; `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:69`.
 - **Literal Marathi line hits:** `mr/content/sets-functions-relations/arithmetization/cauchy.tex:197`; `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:71`; `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:239`.
 - **Authorities actually checked:**
@@ -1635,9 +1679,11 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
   - OLP-0038 B006–B007, B009: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex)
   - OLP-0045 B006: [English](../upstream/content/sets-functions-relations/arithmetization/cuts.tex) ↔ [Marathi](../mr/content/sets-functions-relations/arithmetization/cuts.tex)
   - OLP-0047 B024, B028: [English](../upstream/content/sets-functions-relations/arithmetization/checking-details.tex) ↔ [Marathi](../mr/content/sets-functions-relations/arithmetization/checking-details.tex)
-- **Occurrence records:** `T062-OLP-0029-B006`, `T062-OLP-0029-B030`, `T062-OLP-0029-B031`, `T062-OLP-0029-B033`, `T062-OLP-0029-B034`, `T062-OLP-0035-B015`, `T062-OLP-0038-B006`, `T062-OLP-0038-B007`, `T062-OLP-0038-B009`, `T062-OLP-0045-B006`, `T062-OLP-0047-B024`, `T062-OLP-0047-B028`
-- **Literal English line hits:** `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:163, 185`; `upstream/content/sets-functions-relations/arithmetization/cuts.tex:28`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:18`; `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:94`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/arithmetization/checking-details.tex:160, 183`; `mr/content/sets-functions-relations/arithmetization/cuts.tex:27`; `mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:40`; `mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:92, 99, 101`.
+  - OLP-0059 B010–B011, B020: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+  - OLP-0060 B016: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+- **Occurrence records:** `T062-OLP-0029-B006`, `T062-OLP-0029-B030`, `T062-OLP-0029-B031`, `T062-OLP-0029-B033`, `T062-OLP-0029-B034`, `T062-OLP-0035-B015`, `T062-OLP-0038-B006`, `T062-OLP-0038-B007`, `T062-OLP-0038-B009`, `T062-OLP-0045-B006`, `T062-OLP-0047-B024`, `T062-OLP-0047-B028`, `T062-OLP-0059-B010`, `T062-OLP-0059-B011`, `T062-OLP-0059-B020`, `T062-OLP-0060-B016`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:51, 84`; `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:163, 185`; `upstream/content/sets-functions-relations/arithmetization/cuts.tex:28`; `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:18`; `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:94`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:51, 89`; `mr/content/sets-functions-relations/arithmetization/checking-details.tex:160, 183`; `mr/content/sets-functions-relations/arithmetization/cuts.tex:27`; `mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:40`; `mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:92, 99, 101`.
 - **Authorities actually checked:** none for this exact label before current use; this absence is recorded rather than treated as a hold.
 - **Precise review question:** Is आरंभीचा खंड standard for an initial segment of the natural numbers?
 
@@ -1652,12 +1698,14 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
 - **Exact aligned source/target scopes:**
 
   - OLP-0029 B009–B011, B014, B029: [English](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex)
-- **Occurrence records:** `T063-OLP-0029-B009`, `T063-OLP-0029-B010`, `T063-OLP-0029-B011`, `T063-OLP-0029-B014`, `T063-OLP-0029-B029`
+  - OLP-0060 B008: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+- **Occurrence records:** `T063-OLP-0029-B009`, `T063-OLP-0029-B010`, `T063-OLP-0029-B011`, `T063-OLP-0029-B014`, `T063-OLP-0029-B029`, `T063-OLP-0060-B008`
 - **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:48, 69, 214, 221`.
 - **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:68`.
 - **Authorities actually checked:**
 
   - [भौतिकशास्त्र पारिभाषिक शब्दावली — enumeration](https://shabdakosh.marathi.gov.in/ananya-glossary/33/e) — MR-P033, MR-C021, Entries enumeration and enumerate, personally read in current web-search extraction 2026-09-04. Short indexed lexical observation; no original HTML hash, no independent attestation of effective enumeration.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — R glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/r) — MR-P075, MR-C056, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
 - **Precise review question:** Are पुनरुक्ती असलेले and पुनरुक्ती नसलेले the clearest qualifiers for enumerations with and without repeated values?
 
 ## T064 — Cantor's zig-zag method
@@ -1778,17 +1826,21 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
 - **Coverage:** applied in current partial source coverage.
 - **Decision provenance:** contemporaneous durable decision at first current use.
 - **Status/uncertainty:** attested register with provisional compound; open to correction. This choice remains open to correction.
-- **Rationale:** The inspected logic textbook directly supports truth-table and truth-value register. सत्यता-फलन is a compositional extension for functions from binary rows to a truth value; validity terminology remains separate.
+- **Rationale:** MR-P066 directly attests सत्यता कोष्टक and सत्यता फलन, while the inspected university text supplies sustained truth-table usage. The edition joins the compound as सत्यताकोष्टक and keeps truth distinct from validity.
 - **Alternatives considered:** सत्यतासारणी / सत्यफलन; सत्य-मूल्य कोष्टक / सत्य-मूल्य फलन.
 - **Exact aligned source/target scopes:**
 
   - OLP-0031 B013: [English](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex) ↔ [Marathi](../mr/content/sets-functions-relations/size-of-sets/pairing.tex)
-- **Occurrence records:** `T069-OLP-0031-B013`
-- **Literal English line hits:** `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:81, 83`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/size-of-sets/pairing.tex:81, 83`.
+  - OLP-0057 B006, B008: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0058 B012: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0061 B008–B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+- **Occurrence records:** `T069-OLP-0031-B013`, `T069-OLP-0057-B006`, `T069-OLP-0057-B008`, `T069-OLP-0058-B012`, `T069-OLP-0061-B008`, `T069-OLP-0061-B009`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:33, 35, 60`; `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:60, 130`; `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:81, 83`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:21, 34–35, 38, 61`; `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:61, 131`; `mr/content/sets-functions-relations/size-of-sets/pairing.tex:81, 83`.
 - **Authorities actually checked:**
 
   - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P020, MR-C011, Short truth table, section 1.3 continuation and 1.4, printed page 2. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/t) — MR-P066, MR-C048, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
 - **Precise review question:** Should truth table and truth function share the सत्यता stem, and is कोष्टक preferable to सारणी in contemporary Marathi logic teaching?
 
 ## T070 — enumerable union of enumerable sets
@@ -2471,7 +2523,8 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
   - OLP-0051 B005–B008, B010, B013–B014, B016, B019: [English](../upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/dedekind-algebra.tex)
   - OLP-0052 B005–B006: [English](../upstream/content/sets-functions-relations/infinite/dedekind-induction.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/dedekind-induction.tex)
   - OLP-0054 B007–B008, B012–B013, B015: [English](../upstream/content/sets-functions-relations/infinite/card-sb.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/card-sb.tex)
-- **Occurrence records:** `T101-OLP-0051-B005`, `T101-OLP-0051-B006`, `T101-OLP-0051-B007`, `T101-OLP-0051-B008`, `T101-OLP-0051-B010`, `T101-OLP-0051-B013`, `T101-OLP-0051-B014`, `T101-OLP-0051-B016`, `T101-OLP-0051-B019`, `T101-OLP-0052-B005`, `T101-OLP-0052-B006`, `T101-OLP-0054-B007`, `T101-OLP-0054-B008`, `T101-OLP-0054-B012`, `T101-OLP-0054-B013`, `T101-OLP-0054-B015`
+  - OLP-0059 B007: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+- **Occurrence records:** `T101-OLP-0051-B005`, `T101-OLP-0051-B006`, `T101-OLP-0051-B007`, `T101-OLP-0051-B008`, `T101-OLP-0051-B010`, `T101-OLP-0051-B013`, `T101-OLP-0051-B014`, `T101-OLP-0051-B016`, `T101-OLP-0051-B019`, `T101-OLP-0052-B005`, `T101-OLP-0052-B006`, `T101-OLP-0054-B007`, `T101-OLP-0054-B008`, `T101-OLP-0054-B012`, `T101-OLP-0054-B013`, `T101-OLP-0054-B015`, `T101-OLP-0059-B007`
 - **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
 - **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
 - **Authorities actually checked:**
@@ -2492,9 +2545,10 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
 
   - OLP-0051 B005: [English](../upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/dedekind-algebra.tex)
   - OLP-0053 B007–B009: [English](../upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/dedekinds-proof.tex)
-- **Occurrence records:** `T102-OLP-0051-B005`, `T102-OLP-0053-B007`, `T102-OLP-0053-B008`, `T102-OLP-0053-B009`
-- **Literal English line hits:** `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:29, 31`.
-- **Literal Marathi line hits:** `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:29–30`.
+  - OLP-0055 B005: [English](../upstream/content/propositional-logic/propositional-logic.tex) ↔ [Marathi](../mr/content/propositional-logic/propositional-logic.tex)
+- **Occurrence records:** `T102-OLP-0051-B005`, `T102-OLP-0053-B007`, `T102-OLP-0053-B008`, `T102-OLP-0053-B009`, `T102-OLP-0055-B005`
+- **Literal English line hits:** `upstream/content/propositional-logic/propositional-logic.tex:14`; `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:29, 31`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/propositional-logic.tex:14`; `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:29–30`.
 - **Authorities actually checked:**
 
   - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
@@ -2595,6 +2649,921 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
 
   - [Embed — मराठी शब्दकोश](https://shabdakosh.marathi.gov.in/node/99584) — MR-P064, MR-C047, current web-search extraction personally read 2026-09-05. Generic rather than model-theoretic entry; observation hash is not an origin-page hash.
 - **Precise review question:** Is अंतःस्थापन sufficiently clear for embedding a theory into set theory before formal interpretation maps are introduced?
+
+## T108 — propositional logic
+
+- **Chosen wording:** विधानीय तर्कशास्त्र
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** adopted direct native logic attestation; open to correction. This choice remains open to correction.
+- **Rationale:** A Marathi university syllabus directly uses विधानीय तर्कशास्त्र, and the checked predicate-logic text contrasts it with विधेय तर्कशास्त्र. The rendering therefore preserves the logic-of-whole-propositions sense without importing first-order internal structure.
+- **Alternatives considered:** विधान तर्कशास्त्र; प्रस्तावनात्मक तर्कशास्त्र.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0055 B004–B005: [English](../upstream/content/propositional-logic/propositional-logic.tex) ↔ [Marathi](../mr/content/propositional-logic/propositional-logic.tex)
+  - OLP-0057 B006–B007: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0058 B005–B008: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+- **Occurrence records:** `T108-OLP-0055-B004`, `T108-OLP-0055-B005`, `T108-OLP-0057-B006`, `T108-OLP-0057-B007`, `T108-OLP-0058-B005`, `T108-OLP-0058-B006`, `T108-OLP-0058-B007`, `T108-OLP-0058-B008`
+- **Literal English line hits:** `upstream/content/propositional-logic/propositional-logic.tex:7, 10`; `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:13, 35, 80`; `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:13, 20, 22, 38, 53`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/propositional-logic.tex:7, 10`; `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:13, 35, 81`; `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:13, 23, 38`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/p) — MR-P068, MR-C050, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should विधानीय तर्कशास्त्र remain the edition-wide label for propositional logic, given the direct university attestation and its contrast with विधेय तर्कशास्त्र?
+
+## T109 — proof system / proof
+
+- **Chosen wording:** सिद्धता-पद्धती / सिद्धता
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional compound supported by direct native proof terminology; open to correction. This choice remains open to correction.
+- **Rationale:** The university source directly attests निगामी सिद्धता and अनुमानाचे नियम. सिद्धता-पद्धती is a transparent compound for a formal proof system; the source imports several distinct calculi under that collective label.
+- **Alternatives considered:** प्रमाण-पद्धती; औपचारिक सिद्धता-प्रणाली.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0055 B005: [English](../upstream/content/propositional-logic/propositional-logic.tex) ↔ [Marathi](../mr/content/propositional-logic/propositional-logic.tex)
+  - OLP-0058 B009–B010: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0062 B015: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T109-OLP-0055-B005`, `T109-OLP-0058-B009`, `T109-OLP-0058-B010`, `T109-OLP-0062-B015`
+- **Literal English line hits:** `upstream/content/propositional-logic/propositional-logic.tex:12–13, 29`; `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:55–57`; `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:62, 64, 75, 77, 88, 90`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/propositional-logic.tex:12–13`; `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:54–56`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+- **Precise review question:** Is सिद्धता-पद्धती the most natural umbrella term for sequent calculus, natural deduction, tableaux, and axiomatic deduction in formal Marathi logic?
+
+## T110 — logical completeness / completeness theorem / truth-functional completeness
+
+- **Chosen wording:** संपूर्णता / संपूर्णता प्रमेय / सत्यता-फलनात्मक संपूर्णता
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional logical-sense extension of an attested mathematical noun; open to correction. This choice remains open to correction.
+- **Rationale:** The official mathematics glossary directly attests संपूर्णता, while the official logic glossary directly attests सत्यता फलनात्मक and records पूर्णता as its completeness noun. The OpenLogic context fixes the logical sense; this decision remains separate from order completeness in T085.
+- **Alternatives considered:** पूर्णता प्रमेय; परिपूर्णता प्रमेय; सत्यता-फलनिक संपूर्णता; सत्य-कार्यात्मक संपूर्णता.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0055 B005–B006: [English](../upstream/content/propositional-logic/propositional-logic.tex) ↔ [Marathi](../mr/content/propositional-logic/propositional-logic.tex)
+- **Occurrence records:** `T110-OLP-0055-B005`, `T110-OLP-0055-B006`
+- **Literal English line hits:** `upstream/content/propositional-logic/propositional-logic.tex:22`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/propositional-logic.tex:13`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [गणितशास्त्र परिभाषा कोश — C glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/9/c) — MR-P042, MR-C027, current web-search extraction personally read 2026-09-05. Observation hash is not an origin-page hash; the compound property label is contextual.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/t) — MR-P066, MR-C048, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/c) — MR-P067, MR-C049, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Does संपूर्णता प्रमेय clearly signal proof-theoretic/semantic completeness here and remain distinct enough from the order-completeness property recorded in T085?
+
+## T111 — valuation (propositional semantics)
+
+- **Chosen wording:** सत्य-मूल्यांकन
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional descriptive logic term; expert review especially useful. This choice remains open to correction.
+- **Rationale:** The source object assigns truth values to propositional variables. MR-P081 directly supports मूल्यन and मूल्यांकन, while MR-P066 attests सत्यतामूल्य. सत्य-मूल्यांकन composes these to disambiguate the logical object from economic valuation.
+- **Alternatives considered:** मूल्यांकन; सत्य-मूल्यनिर्धारण; सत्यता-मूल्यांकन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0055 B005: [English](../upstream/content/propositional-logic/propositional-logic.tex) ↔ [Marathi](../mr/content/propositional-logic/propositional-logic.tex)
+  - OLP-0057 B008: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0061 B005–B010, B012, B014, B020: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+  - OLP-0062 B007: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T111-OLP-0055-B005`, `T111-OLP-0057-B008`, `T111-OLP-0061-B005`, `T111-OLP-0061-B006`, `T111-OLP-0061-B007`, `T111-OLP-0061-B008`, `T111-OLP-0061-B009`, `T111-OLP-0061-B010`, `T111-OLP-0061-B012`, `T111-OLP-0061-B014`, `T111-OLP-0061-B020`, `T111-OLP-0062-B007`
+- **Literal English line hits:** `upstream/content/propositional-logic/propositional-logic.tex:18`; `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:54, 56, 58, 67, 69, 71`; `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:21, 26, 28`; `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:3, 11, 13, 15, 22, 135, 149`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/propositional-logic.tex:18`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/t) — MR-P066, MR-C048, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [शासन व्यवहार कोश — V glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/3/V) — MR-P081, MR-C062, current web-search extraction personally read 2026-09-06. The glossary entry is generic rather than model-theoretic; the OpenLogic definition controls the exact logical object.
+- **Precise review question:** What is the best-attested Marathi specialist term for a propositional valuation: सत्य-मूल्यांकन, मूल्यांकन, or सत्य-मूल्यनिर्धारण?
+
+## T112 — predicate / term / quantifier
+
+- **Chosen wording:** विधेय / पद / संख्यापक
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** adopted from direct and closely adjacent native logic usage; open to correction. This choice remains open to correction.
+- **Rationale:** The checked university and logic-book pages directly distinguish विधेय logic and संख्यापक, and discuss the internal पद structure of statements. The coordinated list is used when explaining which first-order features disappear in the propositional fragment.
+- **Alternatives considered:** गुणधर्मवाचक / संज्ञा / परिमाणक; विधेय / संज्ञापद / संख्यापनीय चिन्ह.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0055 B005: [English](../upstream/content/propositional-logic/propositional-logic.tex) ↔ [Marathi](../mr/content/propositional-logic/propositional-logic.tex)
+- **Occurrence records:** `T112-OLP-0055-B005`
+- **Literal English line hits:** `upstream/content/propositional-logic/propositional-logic.tex:16`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/propositional-logic.tex:15–16`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P007, MR-C006, विधेय / संख्यापनीय तर्कशास्त्र आणि संच उपपत्ती, topics 1 and 4, printed page 14. visually-read-page-image
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P022, MR-C011, Predicate logic continuation and section 3.2, printed page 20. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- **Precise review question:** In the coordinated first-order feature list, are विधेय, पद, and संख्यापक the clearest mutually distinct Marathi technical labels?
+
+## T113 — classical logic / classical
+
+- **Chosen wording:** अभिजात तर्कशास्त्र / अभिजात
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional formal-register rendering; expert review welcome. This choice remains open to correction.
+- **Rationale:** अभिजात is a conventional formal-register rendering of classical and keeps the technical system distinct from merely traditional reasoning. The consulted Marathi logic sources support the surrounding register but do not directly attest this exact adjective in the checked passages.
+- **Alternatives considered:** पारंपरिक तर्कशास्त्र; क्लासिकल तर्कशास्त्र.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0055 B005: [English](../upstream/content/propositional-logic/propositional-logic.tex) ↔ [Marathi](../mr/content/propositional-logic/propositional-logic.tex)
+- **Occurrence records:** `T113-OLP-0055-B005`
+- **Literal English line hits:** `upstream/content/propositional-logic/propositional-logic.tex:10`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/propositional-logic.tex:10`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- **Precise review question:** Should the edition use अभिजात consistently for classical logic, or is पारंपरिक or a transliterated form better established in current Marathi logic teaching?
+
+## T114 — propositional variable
+
+- **Chosen wording:** विधानीय चल
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional harmonization of direct but differing native attestations; expert review useful. This choice remains open to correction.
+- **Rationale:** MR-P068 directly gives वैधानिक चल, while the preserved university logic sources establish विधानीय as the edition's propositional-logic adjective. विधानीय चल keeps that reader-facing system consistent; the exact glossary form remains visible as an alternative.
+- **Alternatives considered:** वैधानिक चल; विधान-चल; वाक्यचर.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0057 B006–B007: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0058 B006–B008, B013–B023: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0059 B014, B021–B022: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+  - OLP-0061 B006, B010: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+- **Occurrence records:** `T114-OLP-0057-B006`, `T114-OLP-0057-B007`, `T114-OLP-0058-B006`, `T114-OLP-0058-B007`, `T114-OLP-0058-B008`, `T114-OLP-0058-B013`, `T114-OLP-0058-B014`, `T114-OLP-0058-B015`, `T114-OLP-0058-B016`, `T114-OLP-0058-B017`, `T114-OLP-0058-B018`, `T114-OLP-0058-B019`, `T114-OLP-0058-B020`, `T114-OLP-0058-B021`, `T114-OLP-0058-B022`, `T114-OLP-0058-B023`, `T114-OLP-0059-B014`, `T114-OLP-0059-B021`, `T114-OLP-0059-B022`, `T114-OLP-0061-B006`, `T114-OLP-0061-B010`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:21, 87`; `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:14, 16, 18, 40, 55`; `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:17`.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P020, MR-C011, Short truth table, section 1.3 continuation and 1.4, printed page 2. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/p) — MR-P068, MR-C050, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should the recurring variable label follow the official glossary's वैधानिक चल or the university-backed system adjective in विधानीय चल?
+
+## T115 — propositional connective / logical connective
+
+- **Chosen wording:** विधानीय संयोजक / तार्किक संयोजक
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** adopted direct official head term with compositional qualifiers; open to correction. This choice remains open to correction.
+- **Rationale:** MR-P067 directly attests संयोजक for connective. विधानीय and तार्किक distinguish the local propositional inventory from the general category.
+- **Alternatives considered:** विधानीय संबंधक; तार्किक संबंधक.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0057 B006–B008: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0058 B006–B010, B012, B024–B025, B027–B033: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0059 B015–B019: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+- **Occurrence records:** `T115-OLP-0057-B006`, `T115-OLP-0057-B007`, `T115-OLP-0057-B008`, `T115-OLP-0058-B006`, `T115-OLP-0058-B007`, `T115-OLP-0058-B008`, `T115-OLP-0058-B009`, `T115-OLP-0058-B010`, `T115-OLP-0058-B012`, `T115-OLP-0058-B024`, `T115-OLP-0058-B025`, `T115-OLP-0058-B027`, `T115-OLP-0058-B028`, `T115-OLP-0058-B029`, `T115-OLP-0058-B030`, `T115-OLP-0058-B031`, `T115-OLP-0058-B032`, `T115-OLP-0058-B033`, `T115-OLP-0059-B015`, `T115-OLP-0059-B016`, `T115-OLP-0059-B017`, `T115-OLP-0059-B018`, `T115-OLP-0059-B019`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:25`; `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:14`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:25`; `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:13, 19, 61`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/c) — MR-P067, MR-C049, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [गणितशास्त्र परिभाषा कोश — C glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/9/c) — MR-P074, MR-C055, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should संयोजक be retained for both propositional and general logical connectives?
+
+## T116 — truth-functional
+
+- **Chosen wording:** सत्यता-फलनात्मक
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** adopted direct official logic attestation; normalized compound; open to correction. This choice remains open to correction.
+- **Rationale:** MR-P066 directly attests सत्यता फलनात्मक संयुक्त विधान, and MR-P020 supplies the textbook truth-value context. The edition hyphenates the technical compound for readability.
+- **Alternatives considered:** सत्यता-फलनिक; सत्य-कार्यात्मक.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0057 B006–B007: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+- **Occurrence records:** `T116-OLP-0057-B006`, `T116-OLP-0057-B007`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:37`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:21, 34–35, 38`.
+- **Authorities actually checked:**
+
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P020, MR-C011, Short truth table, section 1.3 continuation and 1.4, printed page 2. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/t) — MR-P066, MR-C048, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Is सत्यता-फलनात्मक the clearest consistent adjective for truth-functional connectives, semantics and completeness?
+
+## T117 — material conditional / material implication
+
+- **Chosen wording:** वास्तविक अभिव्यंजन
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** adopted direct official logic attestation; open to correction. This choice remains open to correction.
+- **Rationale:** MR-P065 directly attests वास्तविक अभिव्यंजन for material implication. The displayed truth-function connective fixes the conditional reading in OpenLogic.
+- **Alternatives considered:** भौतिक सशर्त; वास्तविक सशर्त; भौतिक अभिव्यंजन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0057 B006: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0058 B012, B025, B027–B033: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+- **Occurrence records:** `T117-OLP-0057-B006`, `T117-OLP-0058-B012`, `T117-OLP-0058-B025`, `T117-OLP-0058-B027`, `T117-OLP-0058-B028`, `T117-OLP-0058-B029`, `T117-OLP-0058-B030`, `T117-OLP-0058-B031`, `T117-OLP-0058-B032`, `T117-OLP-0058-B033`
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — M glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/m) — MR-P065, MR-C044, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should वास्तविक अभिव्यंजन be used throughout for the material conditional connective, including introductory prose?
+
+## T118 — theory / metatheory
+
+- **Chosen wording:** उपपत्ती / अधिउपपत्ती
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** direct core plus compositional meta-term; expert review useful. This choice remains open to correction.
+- **Rationale:** MR-P066 directly attests उपपत्ति for theory, while MR-P065 attests the अधि- pattern in meta-language and meta-theorem. Modern final-vowel spelling is normalized to उपपत्ती in the edition.
+- **Alternatives considered:** सिद्धांत / अधिसिद्धांत; उपपत्ति / अधिउपपत्ति.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0057 B007: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+- **Occurrence records:** `T118-OLP-0057-B007`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:37`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:38`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P007, MR-C006, विधेय / संख्यापनीय तर्कशास्त्र आणि संच उपपत्ती, topics 1 and 4, printed page 14. visually-read-page-image
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — M glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/m) — MR-P065, MR-C044, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/t) — MR-P066, MR-C048, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Is अधिउपपत्ती natural specialist Marathi for metatheory, and should modern long-final spelling be kept?
+
+## T119 — formation rule / inductive definition / uniquely readable
+
+- **Chosen wording:** रचनानियम / विगमनाधारित व्याख्या / एकमेव रीतीने वाचनीय
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional source-controlled compounds with exact alternative attestation; expert review useful. This choice remains open to correction.
+- **Rationale:** MR-P071 gives रचनासूत्र for formation rule and MR-P061 directly attests विगमन. The edition uses रचनानियम to avoid collision with सूत्र for formula; the remaining phrases closely state the source's formal properties.
+- **Alternatives considered:** रचनासूत्र; विगमनात्मक व्याख्या; अद्व्यर्थी वाचनीय.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0057 B007–B008: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0058 B013–B023: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0059 B006, B012: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+  - OLP-0060 B006, B010, B016: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+  - OLP-0061 B012: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+- **Occurrence records:** `T119-OLP-0057-B007`, `T119-OLP-0057-B008`, `T119-OLP-0058-B013`, `T119-OLP-0058-B014`, `T119-OLP-0058-B015`, `T119-OLP-0058-B016`, `T119-OLP-0058-B017`, `T119-OLP-0058-B018`, `T119-OLP-0058-B019`, `T119-OLP-0058-B020`, `T119-OLP-0058-B021`, `T119-OLP-0058-B022`, `T119-OLP-0058-B023`, `T119-OLP-0059-B006`, `T119-OLP-0059-B012`, `T119-OLP-0060-B006`, `T119-OLP-0060-B010`, `T119-OLP-0060-B016`, `T119-OLP-0061-B012`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:13`; `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:111`; `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:45, 48–50`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:13`; `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:111`; `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:46–47, 49–50`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — M glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/m) — MR-P061, MR-C044, current web-search extraction personally read 2026-09-05. Observation hash is not an origin-page hash; the exact arithmetical-induction phrase is compositional.
+  - [भाषाविज्ञान व वाङ्मयविद्या परिभाषा कोश — F glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/39/f) — MR-P071, MR-C052, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [वृत्तपत्र विद्या परिभाषा कोश — R glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/29/r) — MR-P077, MR-C058, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — A glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/a) — MR-P078, MR-C059, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Does रचनानियम best avoid the सूत्र/formula collision while remaining natural in formal-syntax prose?
+
+## T120 — Polish notation / parenthesis-free notation
+
+- **Chosen wording:** पोलिश संकेतपद्धती / कंसमुक्त चिन्हव्यवस्था
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** direct descriptive attestation plus transparent proper-name rendering; open to correction. This choice remains open to correction.
+- **Rationale:** MR-P068 directly attests कंसमुक्त चिन्हव्यवस्था. पोलिश संकेतपद्धती preserves the source's conventional proper name while the prose explains its defining parenthesis-free feature.
+- **Alternatives considered:** पोलिश संकेतन; पोलिश चिन्हव्यवस्था.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0057 B007: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0058 B012: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+- **Occurrence records:** `T120-OLP-0057-B007`, `T120-OLP-0058-B012`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:44`.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/p) — MR-P068, MR-C050, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should later mentions prefer पोलिश संकेतन or the current पोलिश संकेतपद्धती?
+
+## T121 — satisfaction / satisfaction relation
+
+- **Chosen wording:** पूर्ति / पूर्ति-संबंध
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** adopted direct official logic attestation with orthographic review flag. This choice remains open to correction.
+- **Rationale:** The official philosophy and logic glossary directly attests पूर्ति for satisfaction. The hyphenated compound names the displayed semantic relation without replacing its formal clause.
+- **Alternatives considered:** पूर्ती / पूर्ती-संबंध; समाधान-संबंध.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0057 B008–B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0061 B005, B012, B014–B020, B022: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+  - OLP-0062 B007: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T121-OLP-0057-B008`, `T121-OLP-0057-B009`, `T121-OLP-0061-B005`, `T121-OLP-0061-B012`, `T121-OLP-0061-B014`, `T121-OLP-0061-B015`, `T121-OLP-0061-B016`, `T121-OLP-0061-B017`, `T121-OLP-0061-B018`, `T121-OLP-0061-B019`, `T121-OLP-0061-B020`, `T121-OLP-0061-B022`, `T121-OLP-0062-B007`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:54, 61–62, 64, 73`; `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:11, 146–148`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:55, 59, 62, 66, 70, 73–74, 76–77`; `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:11, 148, 150`.
+- **Authorities actually checked:**
+
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P009, MR-C008, syntax; semantics; satisfaction. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P069, MR-C008, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should the edition retain the glossary spelling पूर्ति or normalize it to modern पूर्ती?
+
+## T122 — tautology
+
+- **Chosen wording:** सर्वतः सत्य सूत्र
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** adopted primary-textbook explanatory term; official alternative logged; expert review useful. This choice remains open to correction.
+- **Rationale:** The preserved Marathi logic textbook directly distinguishes सर्वतः सत्य from argument validity. The official glossary's उक्तवचन is retained as an alternative, while the explanatory phrase foregrounds the exact all-valuations condition for learners.
+- **Alternatives considered:** उक्तवचन; उक्तवाची विधान; सर्वसत्य सूत्र.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0057 B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0062 B007–B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T122-OLP-0057-B009`, `T122-OLP-0062-B007`, `T122-OLP-0062-B008`, `T122-OLP-0062-B009`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:65–66`; `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:20, 23, 36, 48`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:21–22, 37, 49`.
+- **Authorities actually checked:**
+
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P019, MR-C011, Decision procedure, sections 1.1–1.2, printed page 1. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/t) — MR-P066, MR-C048, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** For this didactic edition, should tautology remain the transparent सर्वतः सत्य सूत्र or use the shorter official glossary noun उक्तवचन?
+
+## T123 — entailment / entails
+
+- **Chosen wording:** तार्किक निष्पन्नता / तार्किकरीत्या निष्पन्न होणे
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional definition-controlled term with attested alternative; expert review especially useful. This choice remains open to correction.
+- **Rationale:** OpenLogic's all-valuations clause directly fixes model-theoretic consequence. तार्किक निष्पन्नता states that relation without suggesting a performed inference; MR-P070's explicitly logical अनिवार्य अनुमान remains an attested alternative.
+- **Alternatives considered:** अनिवार्य अनुमान; तार्किक परिणाम; अर्थानुगमन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0057 B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0062 B007, B009, B012, B015: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T123-OLP-0057-B009`, `T123-OLP-0062-B007`, `T123-OLP-0062-B009`, `T123-OLP-0062-B012`, `T123-OLP-0062-B015`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:66–67, 69`; `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:24–25, 49–51, 55–57, 70–71, 80, 84–85`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:67`.
+- **Authorities actually checked:**
+
+  - [MR-C002](https://vishwakosh.marathi.gov.in/20027/) — MR-P010, MR-C002, opening definition and first argument-form discussion; truth-value discussion. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P019, MR-C011, Decision procedure, sections 1.1–1.2, printed page 1. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [भाषाविज्ञान व वाङ्मयविद्या परिभाषा कोश — E glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/39/e) — MR-P070, MR-C051, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Which term most clearly distinguishes semantic entailment from a proof step: तार्किक निष्पन्नता or अनिवार्य अनुमान?
+
+## T124 — satisfiable / satisfiability
+
+- **Chosen wording:** पूर्ततायोग्य / पूर्ततायोग्यता
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional transparent derivation from direct official core; expert review especially useful. This choice remains open to correction.
+- **Rationale:** The productive compound is built from the directly attested semantic पूर्ति and the source's existence-of-a-satisfying-valuation clause. No exact satisfiability headword was found in the checked official logic page.
+- **Alternatives considered:** पूर्तियोग्य / पूर्तियोग्यता; समाधेय / समाधेयता.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0057 B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0062 B007–B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T124-OLP-0057-B009`, `T124-OLP-0062-B007`, `T124-OLP-0062-B008`, `T124-OLP-0062-B009`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:66, 71`; `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:17, 22, 28, 36, 52–53`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:67, 75`; `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:17, 19, 22, 30–31, 36, 53–54, 73`.
+- **Authorities actually checked:**
+
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P009, MR-C008, syntax; semantics; satisfaction. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P069, MR-C008, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Is पूर्ततायोग्यता idiomatic enough for repeated technical use, or should the edition adopt पूर्तियोग्यता?
+
+## T125 — necessary / contingent
+
+- **Chosen wording:** अनिवार्य / परिस्थितीवश
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional didactic rendering with official alternative; expert review useful. This choice remains open to correction.
+- **Rationale:** The introductory contrast is modal rather than probabilistic. अनिवार्य is established formal Marathi; परिस्थितीवश keeps contingent truth readable, while MR-P067's यादृच्छिक is recorded as the official glossary alternative.
+- **Alternatives considered:** आवश्यक / यादृच्छिक; अनिवार्य / आकस्मिक; अनिवार्य / घटनासापेक्ष.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0057 B006: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0062 B007–B008: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T125-OLP-0057-B006`, `T125-OLP-0062-B007`, `T125-OLP-0062-B008`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:22, 36`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:24–25`; `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:23, 37`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/c) — MR-P067, MR-C049, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** For modal truth, is परिस्थितीवश clearer than the official glossary's potentially random-sounding यादृच्छिक?
+
+## T126 — sentence / proposition / statement
+
+- **Chosen wording:** वाक्य / विधान
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** adopted direct official logic attestations; context-controlled. This choice remains open to correction.
+- **Rationale:** The official logic glossary directly gives sentence as वाक्य and proposition as विधान; the preserved textbook uses statement-form vocabulary in the same truth-value setting. Context selects between the linguistic carrier and its asserted content.
+- **Alternatives considered:** निवेदन; विधानवाक्य.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0057 B006: [English](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex)
+  - OLP-0058 B012: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+- **Occurrence records:** `T126-OLP-0057-B006`, `T126-OLP-0058-B012`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:16, 28, 64`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:11, 13, 15, 17, 23–24, 35, 81`; `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:13, 17, 19–20, 23, 28, 33, 36, 38, 53, 66`.
+- **Authorities actually checked:**
+
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P020, MR-C011, Short truth table, section 1.3 continuation and 1.4, printed page 2. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P022, MR-C011, Predicate logic continuation and section 3.2, printed page 20. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/p) — MR-P068, MR-C050, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P069, MR-C008, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Does the contextual वाक्य/विधान distinction remain clear throughout the propositional-logic chapters?
+
+## T127 — propositional constant
+
+- **Chosen wording:** विधानीय स्थिर
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional harmonization of direct adjacent attestations; expert review useful. This choice remains open to correction.
+- **Rationale:** The preserved university usage controls विधानीय, while MR-P068 directly attests the related compounds वैधानिक स्थिर and आदिम चिन्ह. स्थिर distinguishes the nullary logical symbol from a variable.
+- **Alternatives considered:** वैधानिक स्थिर; विधान-स्थिर; विधानीय अचल.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0058 B006–B010, B013–B023, B025, B027–B033: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+- **Occurrence records:** `T127-OLP-0058-B006`, `T127-OLP-0058-B007`, `T127-OLP-0058-B008`, `T127-OLP-0058-B009`, `T127-OLP-0058-B010`, `T127-OLP-0058-B013`, `T127-OLP-0058-B014`, `T127-OLP-0058-B015`, `T127-OLP-0058-B016`, `T127-OLP-0058-B017`, `T127-OLP-0058-B018`, `T127-OLP-0058-B019`, `T127-OLP-0058-B020`, `T127-OLP-0058-B021`, `T127-OLP-0058-B022`, `T127-OLP-0058-B023`, `T127-OLP-0058-B025`, `T127-OLP-0058-B027`, `T127-OLP-0058-B028`, `T127-OLP-0058-B029`, `T127-OLP-0058-B030`, `T127-OLP-0058-B031`, `T127-OLP-0058-B032`, `T127-OLP-0058-B033`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:16–17, 23–24`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:17, 23–24`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/p) — MR-P068, MR-C050, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should propositional constant harmonize with the edition as विधानीय स्थिर or follow the glossary adjective in वैधानिक स्थिर?
+
+## T128 — negation / conjunction / disjunction / conditional / biconditional
+
+- **Chosen wording:** नकरण / संधियोग / विकल्पयोग / सशर्त (संकेतार्थक) / द्विसशर्त
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** four direct official cores plus one transparent provisional compound; expert review especially useful. This choice remains open to correction.
+- **Rationale:** The official logic glossary directly attests नकरण, संधियोग and विकल्पयोग; the mathematical glossary gives सशर्त and संकेतार्थक with the displayed conditional pattern. द्विसशर्त is a transparent parallel compound because no exact biconditional entry was found in the checked pages.
+- **Alternatives considered:** नकार / संधिकारक / विकल्पकारक / संकेतार्थक / उभयसशर्त; निषेध / संयोग / वियोजन / अभिव्यंजन / द्वि-अभिव्यंजन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0058 B006–B010, B012–B023, B025, B027–B033: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0059 B015–B019: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+  - OLP-0060 B010, B016: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+  - OLP-0061 B007–B009, B015–B019: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+- **Occurrence records:** `T128-OLP-0058-B006`, `T128-OLP-0058-B007`, `T128-OLP-0058-B008`, `T128-OLP-0058-B009`, `T128-OLP-0058-B010`, `T128-OLP-0058-B012`, `T128-OLP-0058-B013`, `T128-OLP-0058-B014`, `T128-OLP-0058-B015`, `T128-OLP-0058-B016`, `T128-OLP-0058-B017`, `T128-OLP-0058-B018`, `T128-OLP-0058-B019`, `T128-OLP-0058-B020`, `T128-OLP-0058-B021`, `T128-OLP-0058-B022`, `T128-OLP-0058-B023`, `T128-OLP-0058-B025`, `T128-OLP-0058-B027`, `T128-OLP-0058-B028`, `T128-OLP-0058-B029`, `T128-OLP-0058-B030`, `T128-OLP-0058-B031`, `T128-OLP-0058-B032`, `T128-OLP-0058-B033`, `T128-OLP-0059-B015`, `T128-OLP-0059-B016`, `T128-OLP-0059-B017`, `T128-OLP-0059-B018`, `T128-OLP-0059-B019`, `T128-OLP-0060-B010`, `T128-OLP-0060-B016`, `T128-OLP-0061-B007`, `T128-OLP-0061-B008`, `T128-OLP-0061-B009`, `T128-OLP-0061-B015`, `T128-OLP-0061-B016`, `T128-OLP-0061-B017`, `T128-OLP-0061-B018`, `T128-OLP-0061-B019`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:27–31, 41–45, 66–67, 69`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:27–29, 41–43, 65–67, 70, 159`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — M glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/m) — MR-P065, MR-C044, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/c) — MR-P067, MR-C049, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — D glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/d) — MR-P072, MR-C053, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — N glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/n) — MR-P073, MR-C054, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [गणितशास्त्र परिभाषा कोश — C glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/9/c) — MR-P074, MR-C055, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Are the five connective names idiomatic and mutually parallel, especially the provisional द्विसशर्त?
+
+## T129 — primitive symbol / defined symbol / defined operator
+
+- **Chosen wording:** आदिम चिन्ह / परिभाषित चिन्ह / परिभाषित कारक
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** direct primitive term plus definition-controlled compounds; expert review useful. This choice remains open to correction.
+- **Rationale:** MR-P068 directly attests आदिम चिन्ह and MR-P072 attests व्याख्यात पदे. परिभाषित is used consistently with the edition's formal definitions, and कारक marks an operator rather than an object-language variable.
+- **Alternatives considered:** मूलभूत चिन्ह / व्याख्यात चिन्ह / व्याख्यात कारक; प्राथमिक चिन्ह / साधित चिन्ह.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0058 B009–B010, B025, B027–B033: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0059 B007: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+- **Occurrence records:** `T129-OLP-0058-B009`, `T129-OLP-0058-B010`, `T129-OLP-0058-B025`, `T129-OLP-0058-B027`, `T129-OLP-0058-B028`, `T129-OLP-0058-B029`, `T129-OLP-0058-B030`, `T129-OLP-0058-B031`, `T129-OLP-0058-B032`, `T129-OLP-0058-B033`, `T129-OLP-0059-B007`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:51, 53, 56, 135`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:51–52, 56, 135`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/p) — MR-P068, MR-C050, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — D glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/d) — MR-P072, MR-C053, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should defined symbol use परिभाषित चिन्ह or the glossary-pattern व्याख्यात चिन्ह?
+
+## T130 — abbreviation / abbreviates
+
+- **Chosen wording:** संक्षेप / चा संक्षेप आहे
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional conventional formal term; open to correction. This choice remains open to correction.
+- **Rationale:** संक्षेप is standard formal Marathi and the surrounding explicit expansion fixes the metalanguage relation. The definition pages support the register though not this exact headword.
+- **Alternatives considered:** लघुरूप; संक्षिप्त रूप.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0058 B009–B010, B025, B027–B033: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+- **Occurrence records:** `T130-OLP-0058-B009`, `T130-OLP-0058-B010`, `T130-OLP-0058-B025`, `T130-OLP-0058-B027`, `T130-OLP-0058-B028`, `T130-OLP-0058-B029`, `T130-OLP-0058-B030`, `T130-OLP-0058-B031`, `T130-OLP-0058-B032`, `T130-OLP-0058-B033`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:52, 140, 144, 148, 150, 154, 158, 161`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:52–53, 141, 145, 147, 151, 155, 158–159, 162`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/p) — MR-P068, MR-C050, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — D glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/d) — MR-P072, MR-C053, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Is संक्षेप sufficiently precise for all defined-operator expansions?
+
+## T131 — atomic formula
+
+- **Chosen wording:** आण्विक सूत्र
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional standard technical compound; definition-controlled; expert review useful. This choice remains open to correction.
+- **Rationale:** आण्विक is the established technical adjective for an undecomposed logical unit, while सूत्र is the edition's formula term. The formation clauses themselves define the exact class extensionally.
+- **Alternatives considered:** मूलसूत्र; अविभाज्य सूत्र; आदिम सूत्र.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0058 B013–B023, B025, B027–B033: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0059 B006–B007: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+  - OLP-0060 B006–B007, B010, B016: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+- **Occurrence records:** `T131-OLP-0058-B013`, `T131-OLP-0058-B014`, `T131-OLP-0058-B015`, `T131-OLP-0058-B016`, `T131-OLP-0058-B017`, `T131-OLP-0058-B018`, `T131-OLP-0058-B019`, `T131-OLP-0058-B020`, `T131-OLP-0058-B021`, `T131-OLP-0058-B022`, `T131-OLP-0058-B023`, `T131-OLP-0058-B025`, `T131-OLP-0058-B027`, `T131-OLP-0058-B028`, `T131-OLP-0058-B029`, `T131-OLP-0058-B030`, `T131-OLP-0058-B031`, `T131-OLP-0058-B032`, `T131-OLP-0058-B033`, `T131-OLP-0059-B006`, `T131-OLP-0059-B007`, `T131-OLP-0060-B006`, `T131-OLP-0060-B007`, `T131-OLP-0060-B010`, `T131-OLP-0060-B016`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:25`; `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:113, 124`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:113, 123`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/p) — MR-P068, MR-C050, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should atomic formula remain आण्विक सूत्र or use the more immediately transparent अविभाज्य सूत्र?
+
+## T132 — two-place connective
+
+- **Chosen wording:** द्विस्थानी संयोजक
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional transparent compound with direct head-term support; open to correction. This choice remains open to correction.
+- **Rationale:** The official sources attest संयोजक/संबंधक and binary logical operation vocabulary. द्विस्थानी directly preserves the connective's two argument places.
+- **Alternatives considered:** द्विपदी संयोजक; द्विघटक संयोजक.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0058 B024: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+- **Occurrence records:** `T132-OLP-0058-B024`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:130`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:129`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/c) — MR-P067, MR-C049, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [गणितशास्त्र परिभाषा कोश — C glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/9/c) — MR-P074, MR-C055, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Is द्विस्थानी preferable to द्विपदी for a connective taking two formulas?
+
+## T133 — syntactic identity
+
+- **Chosen wording:** विन्यासात्मक अनन्यता
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional compositional term fixed by an explicit definition; expert review useful. This choice remains open to correction.
+- **Rationale:** विन्यासमीमांसा is the adopted syntax term and अनन्यता is the edition's formal identity noun. The source immediately defines the relation as equal length and the same symbol at each place.
+- **Alternatives considered:** विन्यासी अनन्यता; चिन्हमालात्मक तादात्म्य; विन्यासतः एकरूपता.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0058 B034–B035: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0060 B007, B010, B016: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+- **Occurrence records:** `T133-OLP-0058-B034`, `T133-OLP-0058-B035`, `T133-OLP-0060-B007`, `T133-OLP-0060-B010`, `T133-OLP-0060-B016`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:167–168`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:138`; `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:167–168`.
+- **Authorities actually checked:**
+
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P009, MR-C008, syntax; semantics; satisfaction. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/p) — MR-P068, MR-C050, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — N glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/n) — MR-P073, MR-C054, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Does विन्यासात्मक अनन्यता clearly distinguish literal string identity from logical equivalence?
+
+## T134 — string / concatenation / substring
+
+- **Chosen wording:** चिन्हमाला / जोडणी / उपचिन्हमाला
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional didactic surfaces with direct official concatenation alternative; expert review useful. This choice remains open to correction.
+- **Rationale:** चिन्हमाला transparently identifies a string of symbols. MR-P074 directly attests स्वशृंखलन for concatenation; the target uses the plainer जोडणी in this first explanation and records the exact official alternative. उपचिन्हमाला mirrors the defined containment position.
+- **Alternatives considered:** चिन्हशृंखला / स्वशृंखलन / उपशृंखला; संकेत-माला / क्रमबंध / उपक्रमबंध.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0058 B034–B035: [English](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex)
+  - OLP-0059 B010–B011, B020: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+  - OLP-0060 B007, B014, B016: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+- **Occurrence records:** `T134-OLP-0058-B034`, `T134-OLP-0058-B035`, `T134-OLP-0059-B010`, `T134-OLP-0059-B011`, `T134-OLP-0059-B020`, `T134-OLP-0060-B007`, `T134-OLP-0060-B014`, `T134-OLP-0060-B016`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:22, 116, 121, 128`; `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:168–169, 173–177, 179–180`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:21, 112, 117`; `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:168, 170, 174, 176–177, 179`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/p) — MR-P068, MR-C050, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — N glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/n) — MR-P073, MR-C054, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [गणितशास्त्र परिभाषा कोश — C glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/9/c) — MR-P074, MR-C055, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should later formal string operations adopt the glossary's स्वशृंखलन, or retain the didactic जोडणी consistently?
+
+## T135 — preliminaries
+
+- **Chosen wording:** पूर्वतयारी
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional idiomatic heading; open to correction. This choice remains open to correction.
+- **Rationale:** पूर्वतयारी is an idiomatic academic heading for material established before the main development. The preserved university source supports the formal Marathi register, while the section contents fix its scope.
+- **Alternatives considered:** प्राथमिक बाबी; पूर्वसिद्धता; पूर्वपीठिका.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0059 B005: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+- **Occurrence records:** `T135-OLP-0059-B005`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:3, 11`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:11`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+- **Precise review question:** Is पूर्वतयारी the best concise heading for preliminary lemmas and definitions in a logic textbook?
+
+## T136 — balanced formula
+
+- **Chosen wording:** संतुलित सूत्र
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional transparent definition-controlled compound; open to correction. This choice remains open to correction.
+- **Rationale:** सूत्र is directly attested and the proposition immediately defines संतुलित as having equal numbers of left and right parentheses, preventing an ordinary-balance reading.
+- **Alternatives considered:** समतोल सूत्र; कंस-संतुलित सूत्र.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0059 B008–B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+- **Occurrence records:** `T136-OLP-0059-B008`, `T136-OLP-0059-B009`
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/p) — MR-P068, MR-C050, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/f) — MR-P076, MR-C057, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Does संतुलित सूत्र read naturally for equality of left and right parenthesis counts?
+
+## T137 — parsing / reading (of a formula)
+
+- **Chosen wording:** रचनाविश्लेषण
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional compositional term with direct headword support; expert review useful. This choice remains open to correction.
+- **Rationale:** MR-P078 directly attests विश्लेषण in logic, and रचना specifies decomposition by outermost constructor. This avoids the semantic sense of interpretation while वाचनीयता remains in the theorem title.
+- **Alternatives considered:** वाचन; वाक्यरचनात्मक विश्लेषण; रचनावाचन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0059 B012, B014–B020: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+- **Occurrence records:** `T137-OLP-0059-B012`, `T137-OLP-0059-B014`, `T137-OLP-0059-B015`, `T137-OLP-0059-B016`, `T137-OLP-0059-B017`, `T137-OLP-0059-B018`, `T137-OLP-0059-B019`, `T137-OLP-0059-B020`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:59, 78, 83, 85–86`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:60, 82, 87, 89, 91`.
+- **Authorities actually checked:**
+
+  - [वृत्तपत्र विद्या परिभाषा कोश — R glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/29/r) — MR-P077, MR-C058, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — A glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/a) — MR-P078, MR-C059, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Is रचनाविश्लेषण idiomatic for a formula parse and its competing readings?
+
+## T138 — uniform substitution / simultaneous substitution
+
+- **Chosen wording:** एकरूप आदेशन / एकाच वेळी केलेले आदेशन
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** direct official head-term plus provisional modifiers; expert review especially useful. This choice remains open to correction.
+- **Rationale:** The official logic glossary directly gives आदेशन नियम for rule of substitution. एकरूप states that every occurrence is replaced alike, and the expanded simultaneous phrase preserves the distinct many-variable operation.
+- **Alternatives considered:** एकसमान प्रतिस्थापन / युगपत प्रतिस्थापन; समरूप आदेशन / सहआदेशन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0059 B021–B023: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+- **Occurrence records:** `T138-OLP-0059-B021`, `T138-OLP-0059-B022`, `T138-OLP-0059-B023`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:91, 95`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:96, 102`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — R glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/r) — MR-P075, MR-C056, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should this edition retain glossary-backed आदेशन, and are एकरूप and एकाच वेळी केलेले the clearest modifiers?
+
+## T139 — occurrence (of a variable or formula)
+
+- **Chosen wording:** आस्थिति
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** direct official logical stem; exact unmodified use is provisional. This choice remains open to correction.
+- **Rationale:** The official logic glossary directly attests चलाची मुक्त आस्थिति. Because propositional formulas here have no binders, the unmodified आस्थिति names each literal syntactic occurrence.
+- **Alternatives considered:** आढळ; उपस्थिती; आवृत्ती.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0059 B021: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+  - OLP-0061 B010: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+- **Occurrence records:** `T139-OLP-0059-B021`, `T139-OLP-0061-B010`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:94`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:99`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/f) — MR-P076, MR-C057, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should unbound propositional occurrences use the glossary's आस्थिति or a more immediately familiar आढळ?
+
+## T140 — inductive hypothesis
+
+- **Chosen wording:** विगमन गृहीतक
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional edition-consistent compound; open to correction. This choice remains open to correction.
+- **Rationale:** The edition already establishes विगमन for induction and गृहीतक for a hypothesis. Their compound keeps the proof's recursive assumption distinct from the theorem statement.
+- **Alternatives considered:** विगमनात्मक गृहीतक; आगमन गृहीतक.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0059 B020: [English](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex)
+  - OLP-0060 B016: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+- **Occurrence records:** `T140-OLP-0059-B020`, `T140-OLP-0060-B016`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:87`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:125, 143`; `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:91`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — M glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/m) — MR-P061, MR-C044, current web-search extraction personally read 2026-09-05. Observation hash is not an origin-page hash; the exact arithmetical-induction phrase is compositional.
+  - [गणितीय विगमन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/21278/) — MR-P080, MR-C061, section ‘सुक्रमण तत्त्व व सांतातीत विगमन’, current web extraction personally read 2026-09-06. The article describes but does not explicitly name strong induction; OpenLogic states the exact hypothesis.
+- **Precise review question:** Is विगमन गृहीतक the preferred concise form in Marathi mathematical proof prose?
+
+## T141 — formation sequence
+
+- **Chosen wording:** रचनाक्रमिका
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional compositional term from two directly attested stems; expert review useful. This choice remains open to correction.
+- **Rationale:** MR-P079 directly attests क्रमिका for sequence, while MR-P071 attests रचनासूत्र for formation rule. रचनाक्रमिका is a compact transparent compound for a sequence whose earlier entries construct later formulas.
+- **Alternatives considered:** रचना क्रमिका; निर्मितिक्रमिका; सूत्रनिर्मिती अनुक्रम.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0060 B005–B016: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+- **Occurrence records:** `T141-OLP-0060-B005`, `T141-OLP-0060-B006`, `T141-OLP-0060-B007`, `T141-OLP-0060-B008`, `T141-OLP-0060-B009`, `T141-OLP-0060-B010`, `T141-OLP-0060-B011`, `T141-OLP-0060-B012`, `T141-OLP-0060-B013`, `T141-OLP-0060-B014`, `T141-OLP-0060-B015`, `T141-OLP-0060-B016`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:11, 18, 20, 45, 58, 65, 70, 72, 79, 82, 85, 88, 91, 94, 105, 107, 117, 122, 126, 129–130, 144–145`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:11, 17, 19, 22, 44–45, 63, 68, 71, 76, 79, 82, 85, 88, 91, 96, 101, 103, 113, 117, 122, 124, 141`.
+- **Authorities actually checked:**
+
+  - [भाषाविज्ञान व वाङ्मयविद्या परिभाषा कोश — F glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/39/f) — MR-P071, MR-C052, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [गणितशास्त्र परिभाषा कोश — S glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/9/s) — MR-P079, MR-C060, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Is रचनाक्रमिका the clearest standardizable rendering of formation sequence in formal logic?
+
+## T142 — junk / redundant formula
+
+- **Chosen wording:** अडगळ / अनावश्यक सूत्र
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** direct technical support plus provisional colloquial gloss; open to correction. This choice remains open to correction.
+- **Rationale:** The target preserves the source's informal quoted ‘junk’ by अडगळ and explains it immediately as अनावश्यक सूत्र. The official logic glossary directly attests the redundant stem and सूत्र.
+- **Alternatives considered:** निरुपयोगी सूत्र; अतिरिक्त सूत्र; अनवश्य अधिक सूत्र.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0060 B008: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+- **Occurrence records:** `T142-OLP-0060-B008`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:59`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:57`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — R glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/r) — MR-P075, MR-C056, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/f) — MR-P076, MR-C057, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Does अडगळ retain the source's informal tone without obscuring the formal explanation अनावश्यक सूत्र?
+
+## T143 — ordinary induction / strong induction
+
+- **Chosen wording:** साधे विगमन / प्रबल विगमन
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** conceptually supported but qualifier unattested in the checked sources; expert review especially useful. This choice remains open to correction.
+- **Rationale:** विगमन is established directly. MR-P080 describes the strong all-smaller-cases hypothesis without naming it, so साधे and प्रबल transparently mark the source contrast while the following sentence fixes the exact strong hypothesis.
+- **Alternatives considered:** सामान्य विगमन / सशक्त विगमन; साधारण विगमन / पूर्ण विगमन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0060 B011, B016: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+- **Occurrence records:** `T143-OLP-0060-B011`, `T143-OLP-0060-B016`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:100, 127`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:123`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — M glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/m) — MR-P061, MR-C044, current web-search extraction personally read 2026-09-05. Observation hash is not an origin-page hash; the exact arithmetical-induction phrase is compositional.
+  - [गणितीय विगमन — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/21278/) — MR-P080, MR-C061, section ‘सुक्रमण तत्त्व व सांतातीत विगमन’, current web extraction personally read 2026-09-06. The article describes but does not explicitly name strong induction; OpenLogic states the exact hypothesis.
+- **Precise review question:** Should strong induction be प्रबल विगमन, सशक्त विगमन, or पूर्ण विगमन in a Marathi logic textbook?
+
+## T144 — finite sequence / proper initial subsequence
+
+- **Chosen wording:** सांत क्रमिका / उचित आरंभीची उपक्रमिका
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** direct sequence vocabulary with provisional modifiers; open to correction. This choice remains open to correction.
+- **Rationale:** MR-P079 directly attests क्रमिका and उपक्रमिका, and the edition establishes उचित for proper. सांत and आरंभीची preserve finiteness and the prefix restriction rather than any arbitrary subsequence.
+- **Alternatives considered:** परिमित अनुक्रम / उचित प्रारंभिक उपानुक्रम; सांत अनुक्रम / काटेकोर आरंभीची उपक्रमिका.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0060 B007, B010, B012, B016: [English](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex)
+  - OLP-0062 B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T144-OLP-0060-B007`, `T144-OLP-0060-B010`, `T144-OLP-0060-B012`, `T144-OLP-0060-B016`, `T144-OLP-0062-B009`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:22, 145`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:21`.
+- **Authorities actually checked:**
+
+  - [गणित भाग १, इयत्ता नववी](https://books.ebalbharati.in/pdfs/901000608.pdf) — MR-P005, MR-C001, उपसंच, definition and first example, printed page 7. visually-read-page-image
+  - [गणितशास्त्र परिभाषा कोश — S glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/9/s) — MR-P079, MR-C060, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Does उचित आरंभीची उपक्रमिका clearly convey a proper prefix sequence rather than an arbitrary subsequence?
+
+## T145 — evaluation / evaluation function
+
+- **Chosen wording:** मूल्यन / मूल्यन फलन
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** official generic stem with definition-controlled logical compound; expert review useful. This choice remains open to correction.
+- **Rationale:** MR-P081 directly attests मूल्यन and value stems, while MR-P066 attests truth values and truth functions. मूल्यन फलन names the inductive extension from variables to all formulas and remains distinct from the input सत्य-मूल्यांकन.
+- **Alternatives considered:** मूल्यांकन फलन; सूत्र-मूल्य फलन; सत्यतामूल्य फलन.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0061 B007–B010, B020: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+- **Occurrence records:** `T145-OLP-0061-B007`, `T145-OLP-0061-B008`, `T145-OLP-0061-B009`, `T145-OLP-0061-B010`, `T145-OLP-0061-B020`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:22, 121`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:22, 122`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/t) — MR-P066, MR-C048, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [शासन व्यवहार कोश — V glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/3/V) — MR-P081, MR-C062, current web-search extraction personally read 2026-09-06. The glossary entry is generic rather than model-theoretic; the OpenLogic definition controls the exact logical object.
+- **Precise review question:** Does मूल्यन फलन clearly distinguish formula evaluation from the variable valuation सत्य-मूल्यांकन?
+
+## T146 — ternary connective
+
+- **Chosen wording:** त्रिस्थानी संयोजक
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional parallel compound with direct head-term support; open to correction. This choice remains open to correction.
+- **Rationale:** The official sources attest संयोजक and connective compounds. त्रिस्थानी parallels the established द्विस्थानी संयोजक and states the operator's three argument places directly.
+- **Alternatives considered:** त्रिपदी संयोजक; त्रिघटक संयोजक.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0061 B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+- **Occurrence records:** `T146-OLP-0061-B009`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:120`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:121`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/c) — MR-P067, MR-C049, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [गणितशास्त्र परिभाषा कोश — C glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/9/c) — MR-P074, MR-C055, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should ternary connective follow the edition's place-count pattern as त्रिस्थानी संयोजक?
+
+## T147 — Local Determination
+
+- **Chosen wording:** स्थानिक निर्धारण
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional compositional theorem title; expert review useful. This choice remains open to correction.
+- **Rationale:** स्थानिक preserves dependence only on variables occurring in the given formula, and निर्धारण is supported as a value-fixing stem. The displayed equality states the precise locality claim.
+- **Alternatives considered:** स्थानिक निश्चिती; स्थानीय निर्धारण; मर्यादित चलांवरील निर्धारण.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0061 B010: [English](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex)
+- **Occurrence records:** `T147-OLP-0061-B010`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:133`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134`.
+- **Authorities actually checked:**
+
+  - [तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/7/p) — MR-P068, MR-C050, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [शासन व्यवहार कोश — V glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/3/V) — MR-P081, MR-C062, current web-search extraction personally read 2026-09-06. The glossary entry is generic rather than model-theoretic; the OpenLogic definition controls the exact logical object.
+- **Precise review question:** Is स्थानिक निर्धारण an idiomatic theorem title for dependence only on variables occurring in A?
+
+## T148 — unsatisfiable / unsatisfiability
+
+- **Chosen wording:** अपूर्ततायोग्य / अपूर्ततायोग्यता
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional transparent negative of the adopted definition-controlled term; expert review useful. This choice remains open to correction.
+- **Rationale:** The directly attested semantic core पूर्ति and the adopted पूर्ततायोग्य are negated transparently with अ-. The definition itself fixes the exact universal nonexistence condition: no valuation satisfies the formula or set.
+- **Alternatives considered:** अपूर्तियोग्य / अपूर्तियोग्यता; असमाधेय / असमाधेयता.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0062 B007, B012: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T148-OLP-0062-B007`, `T148-OLP-0062-B012`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:19, 30, 72`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:19, 31, 73`.
+- **Authorities actually checked:**
+
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P009, MR-C008, syntax; semantics; satisfaction. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P069, MR-C008, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Should the negative remain अपूर्ततायोग्य to parallel पूर्ततायोग्य, or use the shorter अपूर्तियोग्य?
+
+## T149 — monotonicity (of semantic entailment)
+
+- **Chosen wording:** एकस्वनिकता
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** direct official stem extended by an explicit semantic definition; expert review useful. This choice remains open to correction.
+- **Rationale:** MR-P055 directly attests the एकस्वनिक stem for monotonicity. The displayed entailment clause supplies the relation-specific sense: enlarging the premise set preserves every semantic consequence.
+- **Alternatives considered:** एकदिशता; विस्तार-संरक्षकता; एकसुरता.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0062 B009: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T149-OLP-0062-B009`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:54`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:55`.
+- **Authorities actually checked:**
+
+  - [MR-C002](https://vishwakosh.marathi.gov.in/20027/) — MR-P010, MR-C002, opening definition and first argument-form discussion; truth-value discussion. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [गणितशास्त्र परिभाषा कोश — M glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/9/M) — MR-P055, MR-C038, web-open lines 587-589 and 646-648. Observation hash is not an origin-page hash.
+  - [भाषाविज्ञान व वाङ्मयविद्या परिभाषा कोश — E glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/39/e) — MR-P070, MR-C051, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Is glossary-backed एकस्वनिकता natural for monotonicity of entailment, rather than only for monotone sequences?
+
+## T150 — Semantic Deduction Theorem
+
+- **Chosen wording:** चिन्हार्थविषयक निगमन प्रमेय
+- **Coverage:** applied in current partial source coverage.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** provisional compositional theorem title with direct logical components; expert review especially useful. This choice remains open to correction.
+- **Rationale:** चिन्हार्थविषयक follows the edition's established semantic adjective, while the university logic source supports निगामी proof vocabulary. The displayed biconditional fixes the theorem's exact movement between a conditional conclusion and an added premise.
+- **Alternatives considered:** चिन्हार्थमीमांसक निगमन प्रमेय; अर्थानुगामी निगमन प्रमेय; चिन्हार्थविषयक वियोजन प्रमेय.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0062 B015: [English](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex) ↔ [Marathi](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex)
+- **Occurrence records:** `T150-OLP-0062-B015`
+- **Literal English line hits:** `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83`.
+- **Literal Marathi line hits:** `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:84`.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P009, MR-C008, syntax; semantics; satisfaction. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [MR-C002](https://vishwakosh.marathi.gov.in/20027/) — MR-P010, MR-C002, opening definition and first argument-form discussion; truth-value discussion. Do not treat observation hash as source-byte hash or claim full original archived.
+  - [MR-C008](https://shabdakosh.marathi.gov.in/ananya-glossary/7/s) — MR-P069, MR-C008, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+  - [भाषाविज्ञान व वाङ्मयविद्या परिभाषा कोश — E glossary](https://shabdakosh.marathi.gov.in/ananya-glossary/39/e) — MR-P070, MR-C051, current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- **Precise review question:** Is चिन्हार्थविषयक निगमन प्रमेय the clearest title for the model-theoretic deduction theorem?
 
 # Source corrections and difficult source decisions
 
@@ -3004,3 +3973,25 @@ The current public DOI record `10.5281/zenodo.22356920` predates this developmen
 - **Alternatives considered:** Reproduce the malformed nested expression; Render B≈C without documenting the repair.
 - **Uncertainty:** None: both the sandwich argument and the theorem proof's application require B≈C.
 - **Precise review question:** Confirm the source should read ‘then B≈C’ and that the repair needs no further qualification.
+
+## MRPL-001 — OLP-0058
+
+- **Source location:** `content/propositional-logic/syntax-and-semantics/formulas.tex:158-159`.
+- **Target location:** `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:157-159`.
+- **Occurrence record:** `MRPL-001-OLP-0058`.
+- **Finding:** The prvOr branch gives the abbreviation as an unparenthesized negation-disjunction expression with a closing parenthesis but no matching opening parenthesis.
+- **Chosen action:** Removed only the unmatched closing parenthesis in Marathi, added the adjacent MRPL-001 note, left the frozen English bytes unchanged, and registered an exact QA projection.
+- **Alternatives considered:** Add a matching opening parenthesis around the whole abbreviation; Preserve the unmatched parenthesis literally.
+- **Uncertainty:** None about the formula denoted: both the unparenthesized standard abbreviation and a fully parenthesized version express the intended conditional.
+- **Precise review question:** Should a future upstream correction remove the closing parenthesis or add a matching opening parenthesis?
+
+## MRPL-002 — OLP-0060
+
+- **Source location:** `content/propositional-logic/syntax-and-semantics/formation-sequences.tex:141-142`.
+- **Target location:** `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:136-138`.
+- **Occurrence record:** `MRPL-002-OLP-0060`.
+- **Finding:** The section defines and repeatedly uses syntactic identity for formation clauses, and the preceding formulas chapter distinguishes that sign from the alternative biconditional/equivalence sign; the final conjunction case alone uses the latter.
+- **Chosen action:** Changed only that target occurrence to the already defined syntactic-identity sign, added adjacent MRPL-002, preserved frozen English bytes, and registered an exact QA projection.
+- **Alternatives considered:** Use A_n with the syntactic-identity sign; Preserve the isolated equivalence-sign command literally.
+- **Uncertainty:** The relation must be syntactic identity; a future upstream edit may also prefer A_n rather than A on the left, but A is already identified with A_n by the formation-sequence definition.
+- **Precise review question:** Should upstream minimally replace the equivalence sign by syntactic identity, or also change the left side from A to A_n?

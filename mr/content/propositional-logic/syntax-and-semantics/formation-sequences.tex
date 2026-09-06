@@ -1,0 +1,149 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: formation-sequences
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{fseq}
+
+\olsection{रचनाक्रमिका}
+
+!!{formula}s ची विगमनाधारित व्याख्या देणे आणि त्याला पूरक तंत्र म्हणून
+!!{formula}s चे गुणधर्म विगमनाने सिद्ध करणे हा सुबक व कार्यक्षम
+दृष्टिकोन आहे. तथापि, !!{formula}s च्या रचनेचा तळापासून वर जाणारा,
+टप्प्याटप्प्याचा दृष्टिकोनही उपयुक्त ठरू शकतो; येथे आपण तो
+\emph{रचनाक्रमिका} या संकल्पनेच्या साहाय्याने मांडतो.
+
+\begin{defn}[सूत्रांसाठी रचनाक्रमिका]
+\ollabel{defn:fseq-frm}
+भाषा~$\Lang L_0$ मधील चिन्हांपासून बनलेल्या चिन्हमालांची सांत क्रमिका
+$\tuple{!A_0,\dotsc,!A_n}$ ही $!A$ साठी \emph{रचनाक्रमिका} असते, जर
+$!A \ident !A_n$ आणि प्रत्येक $i \leq n$ साठी एकतर $!A_i$ हे आण्विक
+सूत्र असेल किंवा पुढीलपैकी एखादी अट पूर्ण करणारे $j,k < i$ अस्तित्वात
+असतील:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A_i \ident \lnot !A_j$.}{}%
+    \tagitem{prvAnd}{$!A_i \ident (!A_j \land !A_k)$.}{}%
+    \tagitem{prvOr}{$!A_i \ident (!A_j \lor !A_k)$.}{}%
+    \tagitem{prvIf}{$!A_i \ident (!A_j \lif !A_k)$.}{}%
+    \tagitem{prvIff}{$!A_i \ident (!A_j \liff !A_k)$.}{}%
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+\[
+\tuple{
+    \Obj p_0,
+    \Obj p_1,
+    (\Obj p_1 \land \Obj p_0),
+    \lnot (\Obj p_1 \land \Obj p_0)
+}
+\]
+ही $\lnot (\Obj p_1 \land \Obj p_0)$ ची एक रचनाक्रमिका आहे; तसेच
+पुढील क्रमिकाही तिची रचनाक्रमिका आहे:
+\[
+\tuple{
+    \Obj p_0,
+    \Obj p_1,
+    \Obj p_0,
+    (\Obj p_1 \land \Obj p_0),
+    (\Obj p_0 \lif \Obj p_1),
+    \lnot (\Obj p_1 \land \Obj p_0)
+}.
+\]
+%
+दुसऱ्या उदाहरणावरून दिसते की रचनाक्रमिकेत `अडगळ' असू शकते: अनावश्यक
+असलेली किंवा रचनेत काहीही हातभार न लावणारी सूत्रे.
+\end{ex}
+
+\begin{prop}
+\ollabel{prop:formed}
+$\Frm[L_0]$ मधील प्रत्येक !!{formula}~$!A$ ला एक रचनाक्रमिका असते.
+\end{prop}
+
+\begin{proof}
+$!A$ आण्विक आहे असे समजा. मग क्रमिका~$\tuple{!A}$ ही $!A$ साठी
+रचनाक्रमिका आहे.
+%
+आता $!B$ आणि~$!C$ यांना अनुक्रमे $\tuple{!B_0,\dotsc,!B_n}$ आणि
+$\tuple{!C_0,\dotsc,!C_m}$ या रचनाक्रमिका आहेत असे समजा.
+%
+\begin{enumerate}
+  \tagitem{prvNot}{जर $!A \ident \lnot !B$, तर
+      $\tuple{!B_0,\dotsc,!B_n,\lnot !B_n}$ ही $!A$ साठी
+      रचनाक्रमिका आहे.}{}
+  \tagitem{prvAnd}{जर $!A \ident (!B \land !C)$, तर
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \land !C_m)}$
+      ही $!A$ साठी रचनाक्रमिका आहे.}{}
+  \tagitem{prvOr}{जर $!A \ident (!B \lor !C)$, तर
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lor !C_m)}$
+      ही $!A$ साठी रचनाक्रमिका आहे.}{}
+  \tagitem{prvIf}{जर $!A \ident (!B \lif !C)$, तर
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lif !C_m)}$
+      ही $!A$ साठी रचनाक्रमिका आहे.}{}
+  \tagitem{prvIff}{जर $!A \ident (!B \liff !C)$, तर
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \liff !C_m)}$
+      ही $!A$ साठी रचनाक्रमिका आहे.}{}
+\end{enumerate}
+!!{formula}s वरील विगमनाच्या तत्त्वानुसार प्रत्येक !!{formula} ला एक
+रचनाक्रमिका असते.
+\end{proof}
+
+याचे उलट विधानही आपण सिद्ध करू शकतो. ते महत्त्वाचे आहे, कारण त्यामुळे
+सूत्रे परिभाषित करण्याच्या आपल्या दोन्ही पद्धती सममूल्य आहेत, म्हणजे
+त्या समान परिणाम देतात, हे दिसते. तसेच रचनाक्रमिकांच्या लांबीवर साधे
+विगमन वापरून सूत्रांविषयीची प्रमेये सिद्ध करता येतात.
+
+\begin{lem}
+\ollabel{lem:fseq-init}
+$\tuple{!A_0,\dotsc,!A_n}$ ही $!A_n$ साठी रचनाक्रमिका आहे आणि
+$k \leq n$ असे समजा. मग $\tuple{!A_0,\dotsc,!A_k}$ ही $!A_k$ साठी
+रचनाक्रमिका आहे.
+\end{lem}
+
+\begin{proof}
+अभ्यासप्रश्न.
+\end{proof}
+
+\begin{thm}
+\ollabel{thm:fseq-frm-equiv}
+$\Frm[L_0]$ हा भाषा~$\Lang L_0$ मधील ज्या सर्व चिन्हमालांना
+रचनाक्रमिका आहे, त्यांचा संच आहे.
+\end{thm}
+
+\begin{proof}
+भाषा~$\Lang L_0$ मधील ज्या सर्व चिन्हमालांना रचनाक्रमिका आहे, त्यांचा
+संच~$F$ असू द्या. $\Frm[L_0] \subseteq F$ हे
+\olref[pl][syn][fseq]{prop:formed} मध्ये आपण पाहिले आहे; म्हणून आता उलट
+समावेश सिद्ध करू.
+
+$!A$ ला $\tuple{!A_0,\dotsc,!A_n}$ ही रचनाक्रमिका आहे असे समजा.
+$n$ वरील प्रबल विगमनाने $!A \in \Frm[L_0]$ हे सिद्ध करू. लांबी
+$m < n$ असलेली रचनाक्रमिका ज्या प्रत्येक चिन्हमालेला आहे, ती
+$\Frm[L_0]$ मध्ये आहे, हे आपले विगमन गृहीतक आहे. रचनाक्रमिकेच्या
+व्याख्येनुसार एकतर $!A_n$ आण्विक आहे किंवा पुढीलपैकी एखादी अट पूर्ण
+करणारे $j,k < n$ अस्तित्वात असले पाहिजेत:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A_n \ident \lnot !A_j$.}{}%
+    \tagitem{prvAnd}{$!A_n \ident (!A_j \land !A_k)$.}{}%
+    \tagitem{prvOr}{$!A_n \ident (!A_j \lor !A_k)$.}{}%
+    \tagitem{prvIf}{$!A_n \ident (!A_j \lif !A_k)$.}{}%
+    \tagitem{prvIff}{$!A_n \ident (!A_j \liff !A_k)$.}{}%
+\end{enumerate}
+आता प्रत्येक शक्यतेचा स्वतंत्र विचार करू. $!A_n$ आण्विक असेल, तर
+$!A_n \in \Frm[L_0]$. त्याऐवजी $!A \ident
+(!A_j \land !A_k)$ असे समजा.
+%READERNOTE{MRPL-002: गोठवलेल्या इंग्रजीत या एकाच शक्यतेत विन्यासात्मक अनन्यता-चिन्हाऐवजी पर्यायी सममूल्यता-चिन्ह आले आहे. आधीची स्पष्ट व्याख्या आणि इतर सर्व रचना-बाबी यांच्याशी जुळण्यासाठी येथे विन्यासात्मक अनन्यता वापरली आहे.}
+\olref[pl][syn][fseq]{lem:fseq-init} नुसार
+$\tuple{!A_0,\dotsc,!A_j}$ आणि $\tuple{!A_0,\dotsc,!A_k}$ या अनुक्रमे
+$!A_j$ आणि~$!A_k$ साठी रचनाक्रमिका आहेत. या $!A$ च्या
+रचनाक्रमिकेच्या उचित आरंभीच्या उपक्रमिका असल्यामुळे दोन्हींची लांबी
+$n$ पेक्षा कमी आहे. म्हणून विगमन गृहीतकानुसार $!A_j$ आणि~$!A_k$ ही
+$\Frm[L_0]$ मध्ये आहेत; त्यामुळे !!a{formula} च्या व्याख्येनुसार
+$(!A_j \land !A_k)$ हेही त्यात आहे. इतर शक्यता समांतर युक्तिवादाने
+सिद्ध होतात.
+\end{proof}
+
+\end{document}

@@ -1,0 +1,213 @@
+{
+  "schema": "openlogic-html-build/1",
+  "scope": {
+    "translation_source_units": 59,
+    "reader_sections": 51,
+    "complete_chapters": 7
+  },
+  "source_tex_sha256": "0181224a7f10c7b8008f10f3b5fd79c678d56caab1439ca8e737fee49e28c89e",
+  "source_pdf_sha256": "f6ae9a94357502d022b16f71c2638b497dc61f67750575c731b7d8690bf6a2df",
+  "html_sha256": "54a0d151fec1ceb77d3561aff98534c5f0e922811c12de8eb33242347d0a7ef6",
+  "html_bytes": 1460929,
+  "diagram_assets": [
+    {
+      "filename": "assets/union.svg",
+      "sha256": "8864ae4c2aa286e7efe0ea43665497e56aafb12ab79a9934b8d4fc41194b30fa",
+      "bytes": 87187,
+      "source_pdf_page": 9,
+      "source_pdf_crop": [
+        176,
+        131,
+        417,
+        328
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 11,
+      "alt": "A आणि B या दोन संचांचा संयोग. दोन्ही बंद वक्रांचा संपूर्ण भाग चिन्हांकित आहे; म्हणजे A किंवा B यांपैकी किमान एका संचातील सर्व घटक."
+    },
+    {
+      "filename": "assets/intersection.svg",
+      "sha256": "0a6d17e025ce2acd3db051444cbdab21b330d074f7e54c5e47c7358deab0b4ce",
+      "bytes": 87088,
+      "source_pdf_page": 9,
+      "source_pdf_crop": [
+        176,
+        485,
+        417,
+        682
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 7,
+      "alt": "A आणि B या दोन संचांचा छेद. दोन बंद वक्रांचा फक्त सामाईक आच्छादित भाग चिन्हांकित आहे."
+    },
+    {
+      "filename": "assets/difference.svg",
+      "sha256": "ce63fd293f7b32fccfbd08d66bdf25415aeeb62ab2282bc51372756729a3f6d6",
+      "bytes": 357926,
+      "source_pdf_page": 11,
+      "source_pdf_crop": [
+        176,
+        68,
+        417,
+        264
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 10,
+      "alt": "A वजा B हा संचफरक. A च्या वक्रातील B च्या बाहेर राहणारा भाग चिन्हांकित आहे; सामाईक भाग वगळलेला आहे."
+    },
+    {
+      "filename": "assets/graph-four.svg",
+      "sha256": "c07ea5b3653e593d360fd2c4f819c40456da5ce10bde9bb50b6ce3b09ba03916",
+      "bytes": 321184,
+      "source_pdf_page": 20,
+      "source_pdf_crop": [
+        227,
+        207,
+        368,
+        305
+      ],
+      "source_pdf_crop_text_chars": 4,
+      "source_pdf_vector_drawing_count": 10,
+      "alt": "दिशित आलेखाची चार शिखरे 1, 2, 3 आणि 4. कडा 1 ते 1, 1 ते 2, 1 ते 3 आणि 2 ते 3; शिखर 4 एकाकी आहे."
+    },
+    {
+      "filename": "assets/graph-three.svg",
+      "sha256": "52b774d0332d90fe84afeaf47f27c6645ca1d658241987d5787e7930c1f76204",
+      "bytes": 321235,
+      "source_pdf_page": 20,
+      "source_pdf_crop": [
+        227,
+        340,
+        312,
+        439
+      ],
+      "source_pdf_crop_text_chars": 3,
+      "source_pdf_vector_drawing_count": 9,
+      "alt": "दिशित आलेखाची शिखरे 1, 2 आणि 3. कडा 1 ते 1, 1 ते 2, 1 ते 3 आणि 2 ते 3; आधीच्या आलेखातील एकाकी शिखर 4 येथे नाही."
+    },
+    {
+      "filename": "assets/tree.svg",
+      "sha256": "5b0402fec1bd4aeb3c667cab4603977f55e4ab337dbd91adcbdb389f78daffb9",
+      "bytes": 321284,
+      "source_pdf_page": 20,
+      "source_pdf_crop": [
+        241,
+        662,
+        354,
+        776
+      ],
+      "source_pdf_crop_text_chars": 6,
+      "source_pdf_vector_drawing_count": 11,
+      "alt": "सांत वृक्ष. सर्वांत खाली मूळ r; त्याची अपत्ये a आणि b; a ची अपत्ये c, d आणि e. पूर्वज संबंध कडांवरून वरच्या दिशेने वाचला जातो."
+    },
+    {
+      "filename": "assets/function.svg",
+      "sha256": "3c877ed7918c7f2c7239cb44515a6c0d8dcee7c522ee32e64cb2206157bce12f",
+      "bytes": 433676,
+      "source_pdf_page": 24,
+      "source_pdf_crop": [
+        176,
+        67,
+        417,
+        201
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 15,
+      "alt": "फलनाची आकृती. डावीकडील प्रांतातील प्रत्येक फलसाधकापासून उजवीकडील सहप्रांतातील नेमक्या एका मूल्याकडे बाण जातो."
+    },
+    {
+      "filename": "assets/surjective.svg",
+      "sha256": "f702b16ba0e8baacb34f9478e2175f081e1eb9de237f3df5f4d6d231c3645827",
+      "bytes": 351715,
+      "source_pdf_page": 25,
+      "source_pdf_crop": [
+        176,
+        613,
+        418,
+        746
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 13,
+      "alt": "आच्छादक फलन. सहप्रांतातील प्रत्येक लाल घटकाकडे प्रांतातील किमान एका करड्या घटकापासून बाण येतो."
+    },
+    {
+      "filename": "assets/injective.svg",
+      "sha256": "d9cbd637b146573b904366aafba0d9ff7b8c8eb931d287e6f3c4792190689052",
+      "bytes": 294266,
+      "source_pdf_page": 26,
+      "source_pdf_crop": [
+        176,
+        67,
+        417,
+        221
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 18,
+      "alt": "एकास-एक फलन. वेगवेगळ्या करड्या फलसाधकांचे बाण वेगवेगळ्या लाल मूल्यांकडे जातात; सहप्रांतातील काही घटक मूल्य नसू शकतात."
+    },
+    {
+      "filename": "assets/bijective.svg",
+      "sha256": "e1f939fbd74eff7ad7fe0ee2c2ba3a603b996483fe11b06fa3fe2888fa2669e9",
+      "bytes": 294285,
+      "source_pdf_page": 26,
+      "source_pdf_crop": [
+        176,
+        613,
+        418,
+        746
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 14,
+      "alt": "एकास-एक व आच्छादक फलन. प्रांतातील प्रत्येक करडा घटक आणि सहप्रांतातील प्रत्येक लाल घटक यांची नेमकी एक जोडी बाणाने जोडलेली आहे."
+    },
+    {
+      "filename": "assets/composition.svg",
+      "sha256": "6f341d6e58209b8de7d92b5accac2af14cf2ac106502ace646c35e750563cb78",
+      "bytes": 397105,
+      "source_pdf_page": 30,
+      "source_pdf_crop": [
+        135,
+        602,
+        457,
+        747
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 30,
+      "alt": "फलन-संयोजन g वर्तुळ f. डावीकडील A मधून f चे बाण मधल्या B मध्ये, B मधून g चे बाण उजवीकडील C मध्ये, आणि तुटक बाह्य बाण A मधून थेट C मधील त्याच अंतिम मूल्यांकडे जातात."
+    },
+    {
+      "filename": "assets/root-two-square.svg",
+      "sha256": "c82377f56b6606b9310a89fa37c42f2b1379ef71cb1f52fc147233cb142db92d",
+      "bytes": 512132,
+      "source_pdf_page": 55,
+      "source_pdf_crop": [
+        214,
+        388,
+        367,
+        483
+      ],
+      "source_pdf_crop_text_chars": 2,
+      "source_pdf_vector_drawing_count": 8,
+      "alt": "वर्गमूळ दोनच्या अपरिमेयतेची भूमितीय आकृती. m बाजूच्या मोठ्या चौरसात n बाजूचे दोन आच्छादित चौरस आहेत; नारिंगी सामाईक चौरस आणि दोन न रंगवलेले कोपरे लहान समान रचना दाखवतात."
+    },
+    {
+      "filename": "assets/hilberts-hotel.svg",
+      "sha256": "8c0161d72e235f4f9d8b8948fcd5a1bd8e8b2a2cacea2730a6ccddf8cd2302c7",
+      "bytes": 388733,
+      "source_pdf_page": 66,
+      "source_pdf_crop": [
+        180,
+        575,
+        415,
+        650
+      ],
+      "source_pdf_crop_text_chars": 23,
+      "source_pdf_vector_drawing_count": 19,
+      "alt": "हिल्बर्टच्या हॉटेलमधील खोली बदल. वरच्या ओळीत जुने पाहुणे 1, 2, 3 आणि पुढे आहेत; प्रत्येक बाण पाहुणा n याला खालच्या ओळीतील खोली n अधिक 1 मध्ये हलवतो, त्यामुळे वर्तुळ केलेली खोली 1 नव्या पाहुण्यासाठी मोकळी होते."
+    }
+  ],
+  "mathml_count": 3373,
+  "warnings": "",
+  "validation": "Build complete; static and browser verification still required",
+  "network_dependencies": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0039",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase; not independent or human review.",
+  "scope": "All fourteen translated content blocks proving non-enumerability by two diagonal arguments.",
+  "samples": [
+    {
+      "reverse_paraphrase": "A nonenumerable set admits no bijection from Nat; diagonalization defeats every proposed enumeration by constructing an omitted element.",
+      "checks": "The bijection/surjection distinction, omitted-element strategy and comparison with Nat remain explicit."
+    },
+    {
+      "reverse_paraphrase": "In the binary array, s_n(m) is the mth digit of the nth listed string, located in row n and column m.",
+      "checks": "OLSIZ-008 reverses only the defective prose indices and records an adjacent keyed note; the frozen table is unchanged."
+    },
+    {
+      "reverse_paraphrase": "The diagonal sequence d flips 0 to 1 and 1 to 0, hence differs from every s_n at coordinate n and cannot occur on the list.",
+      "checks": "OLSIZ-009 restores the missing complementary prose case; the immediately controlling cases formula is unchanged."
+    },
+    {
+      "reverse_paraphrase": "For any list N_0,N_1,... of subsets of Nat, D={n in Nat:n notin N_n} is a subset of Nat that differs from N_n at n for every n.",
+      "checks": "Membership biconditional, set-builder formula, subset conclusion and universal difference are preserved."
+    },
+    {
+      "reverse_paraphrase": "The set-list array illustrates the same proof, and the exercise asks for an explicit diagonal function outside any proposed list Nat-to-Nat functions.",
+      "checks": "All four sample sets, table entries, include/exclude decisions and function types remain intact."
+    }
+  ],
+  "source_observations": [
+    "OLSIZ-008",
+    "OLSIZ-009"
+  ],
+  "shared_audit": "OLSIZ-20260904",
+  "audit_note": "The Marathi target was compared with the authoritative shared audit OLSIZ-20260904. The two repaired prose descriptions carry adjacent notes and projection checks; frozen English hashes remain unchanged.",
+  "passed_for_source_fidelity": true,
+  "passed_for_source_fidelity_with_documented_corrections": true,
+  "limitations": [
+    "No independent linguistic certification has been performed."
+  ]
+}

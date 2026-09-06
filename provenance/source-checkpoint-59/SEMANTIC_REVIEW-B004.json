@@ -1,0 +1,60 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "MR-B004-enumerability",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase; not independent or human review.",
+  "scope": "Size-of-sets driver and introduction OLP-0027-0028 plus all 31 translated content blocks of OLP-0029.",
+  "samples": [
+    {
+      "unit": "OLP-0029",
+      "reverse_paraphrase": "An informal enumeration is a beginning-indexed finite-or-infinite list on which every set element occurs at a finite position; order and repetitions may vary, and the empty list enumerates the empty set.",
+      "checks": "Finite position, beginning, repetitions, order and the empty-set convention are all explicit."
+    },
+    {
+      "unit": "OLP-0029",
+      "reverse_paraphrase": "For a nonempty set, a formal enumeration is a surjection from the positive integers. A finite list is extended by repeating its last element; this construction fails only for the empty list.",
+      "checks": "Nonempty qualification and last-element construction retained; surjective is not weakened to merely functional."
+    },
+    {
+      "unit": "OLP-0029",
+      "reverse_paraphrase": "Enumerable means empty or possessing an enumeration, so finite and empty sets count as enumerable even though the Marathi witness emphasizes countably infinite sets.",
+      "checks": "OpenLogic convention controls the definition; no computability requirement imported."
+    },
+    {
+      "unit": "OLP-0029",
+      "reverse_paraphrase": "The integer enumeration alternates zero, positive and negative values; the piecewise cases and ceiling formula are preserved exactly.",
+      "checks": "Reader note identifies the source table's missing f(7) value without altering the formula or table cells."
+    },
+    {
+      "unit": "OLP-0029",
+      "reverse_paraphrase": "Finite unions and subsets of enumerable sets are enumerable, with empty-set cases handled separately where a surjection from positive integers cannot exist.",
+      "checks": "All exercise prompts retain their construction requirements and boundary-case questions."
+    },
+    {
+      "unit": "OLP-0029",
+      "reverse_paraphrase": "Surjections from positive integers and from natural numbers are equivalent by shifting the argument by one.",
+      "checks": "Both directions and their unchanged n+1 and n-1 formulas remain in the right order."
+    },
+    {
+      "unit": "OLP-0029",
+      "reverse_paraphrase": "Removing repetitions recursively yields a bijection from either the positive integers or a finite initial segment; injectivity and surjectivity are proved separately.",
+      "checks": "Finite versus infinite domains, recursive first-unused-value construction and both function properties retained."
+    },
+    {
+      "unit": "OLP-0029",
+      "reverse_paraphrase": "The final exercise asks for equivalence between an injection into the positive integers and either emptiness or a surjection from the positive integers.",
+      "checks": "Directions, empty alternative and function orientations preserved."
+    }
+  ],
+  "source_observations": [
+    "OLSIZ-001",
+    "MRSIZ-001"
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "T060-T063 are provisional and explicitly open to correction.",
+    "The complete size-of-sets chapter, cumulative reader build, visual QA and publication remain in progress."
+  ],
+  "shared_audit": "OLSIZ-20260904",
+  "passed_for_source_fidelity_with_documented_corrections": true,
+  "audit_note": "The Marathi target was compared with the authoritative shared audit OLSIZ-20260904. Applied mathematical deltas are keyed in SOURCE_ISSUES-B004.json; frozen English hashes remain unchanged."
+}

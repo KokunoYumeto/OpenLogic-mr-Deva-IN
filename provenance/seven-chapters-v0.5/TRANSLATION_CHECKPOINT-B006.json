@@ -1,0 +1,208 @@
+{
+  "schema": "openlogic-translation-checkpoint/1",
+  "batch": "MR-B006-propositional-logic-complete",
+  "units": [
+    {
+      "unit_id": "OLP-0055",
+      "translation_sha256": "b7d6f4dec1369d732d441946658ed4c07e8cdfbc38b571f3f6cd1fc3e883793e",
+      "translation_bytes": 2587,
+      "segments": 3,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0056",
+      "translation_sha256": "0e08ec11e663bb6e816007c82b37cb7ab6b80d9b1b98ebd1a6fdaedeeaac926a",
+      "translation_bytes": 903,
+      "segments": 2,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0057",
+      "translation_sha256": "f47457e1729a21f92e3f50b87f84e8275156328940ffede5630a6e84d233f0f0",
+      "translation_bytes": 9621,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0058",
+      "translation_sha256": "3ee1295f08db1e035bcccdb1b38dea7c2e5e32eb9b8c0cf761e234f99aeb1138",
+      "translation_bytes": 12549,
+      "segments": 29,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0059",
+      "translation_sha256": "79bc6a02a614310fcacc729d114773255ca254fcab8353f6ebc77e22ef37190a",
+      "translation_bytes": 7040,
+      "segments": 18,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0060",
+      "translation_sha256": "c286c4a2bcb0655120929dd8908977b89122c57911f3148ac89da1d91e854803",
+      "translation_bytes": 9323,
+      "segments": 12,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0061",
+      "translation_sha256": "5a59bb3447547412f4f6b864c86440fd863b463242bbb1ac3e2631331901c939",
+      "translation_bytes": 8108,
+      "segments": 17,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0062",
+      "translation_sha256": "15c6e7600bbef28eb16a496ec2f7d89c207f4553b2b11c84fee50eb41453a627",
+      "translation_bytes": 4726,
+      "segments": 13,
+      "checks": {
+        "formula_multiset_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    }
+  ],
+  "total_translated_units": 59,
+  "total_segments": 716,
+  "remaining_units": 663,
+  "qa_sha256": "1e50a1f18ff25768b4f664fe39321634dbf891fd866a4b0819b4c394135074c0",
+  "semantic_review_sha256": "4246749e4abcc58b3e605a2c5ae38f22e961a5c86dd16ec193091d3d2e99edac",
+  "source_issues_sha256": "5d22490beaf0832e7aaf2327b1fac5efcac15cc44336809fa0632c61b80ee676",
+  "latest_semantic_review": "SEMANTIC_REVIEW-OLP0062.json",
+  "latest_semantic_review_sha256": "4246749e4abcc58b3e605a2c5ae38f22e961a5c86dd16ec193091d3d2e99edac",
+  "next_action": "Publish the 59-unit seven-chapter source, PDF, accessible HTML, and review checkpoint with anonymous GitHub and Zenodo readback, then continue OLP-0063.",
+  "expert_review_occurrences": {
+    "legacy_decision_records": 189,
+    "canonical_decisions_with_occurrences": 187,
+    "occurrences": 4474,
+    "high_priority_occurrences": 559,
+    "reader_locators_available": 4474,
+    "reader_locators_pending": 0,
+    "occurrence_checkpoint": "EXPERT_REVIEW_OCCURRENCES-CHECKPOINT.json",
+    "occurrence_checkpoint_sha256": "4cee74a626012a5eb177e1cb518025273849cbced585acffbea39f1a89091bea",
+    "ledger_checkpoint": "EXPERT_REVIEW_LEDGER-CHECKPOINT.json",
+    "ledger_checkpoint_sha256": "33aa7711d09aa894254396bdb560440bf17721c79eec052fe498e5f8cbff878b",
+    "canonical_checkpoint": "TRANSLATION_DECISIONS-CHECKPOINT-WORKING.json",
+    "canonical_checkpoint_sha256": "699e78d8c1a7e6e7e5bc50e50ca43799489030879d4c268fbb98b40f4f95553e",
+    "canonical_qa": "TRANSLATION_DECISION_QA-WORKING.json",
+    "canonical_qa_sha256": "75ca0369d88274ef723feffa5bfbde20c6b59022affbd7acbc3f85c9f07b8051"
+  },
+  "cross_package_provenance": {
+    "status": "passed_for_current_59_unit_working_tree",
+    "receipt": "CROSS_PACKAGE_QA-WORKING.json",
+    "receipt_sha256": "9eeca1b87d4c0153536a360103e53f97924ac1af39253ff682534750c5ad9385",
+    "historical_v0_4_audit": "CROSS_PACKAGE_AUDIT-SIX-CHAPTERS-v0.4.json",
+    "historical_v0_4_audit_sha256": "1e358dbf0ec1a604a56d416115d646a569cb658470208b457434c2c14ac00714",
+    "next_substantive_release_gate": "Run the validator against the finished editable-source ZIP, review ZIP and reader PDF before publication."
+  },
+  "reader_qa": {
+    "status": "passed_for_publication_candidate",
+    "scope": {
+      "translation_source_units": 59,
+      "reader_sections": 51,
+      "complete_chapters": 7,
+      "last_unit": "OLP-0062"
+    },
+    "pdf": {
+      "pages": 83,
+      "bytes": 433898,
+      "sha256": "f6ae9a94357502d022b16f71c2638b497dc61f67750575c731b7d8690bf6a2df"
+    },
+    "qa_receipt": "PDF_QA-CORE-59.json",
+    "qa_receipt_sha256": "1e05c6ad8914aca3760ec1d992d91c37a1571610ed5e993a4146bf3478a2d1eb",
+    "reproducibility_receipt": "REPRODUCIBILITY-CORE-59.json",
+    "reproducibility_receipt_sha256": "55033570bb124ae7320b8c609bcd573c568d46bc6ae35563565f705304a01739",
+    "render_manifest": "RENDER_MANIFEST-CORE-59.json",
+    "render_manifest_sha256": "0b22bdebd395295678136efeb96fd351b884011fe38b7d5fed611b44ab1cc872",
+    "two_consecutive_clean_builds_identical": true,
+    "all_pages_visually_reviewed": true,
+    "pdf_tagged": false,
+    "accessible_html_required_for_public_reader_release": true,
+    "accessible_html": {
+      "status": "passed",
+      "html": {
+        "filename": "index.html",
+        "bytes": 1460929,
+        "sha256": "54a0d151fec1ceb77d3561aff98534c5f0e922811c12de8eb33242347d0a7ef6"
+      },
+      "stylesheet_sha256": "c4d0ea2b2849c5e72ed30da130dfcfbf31c4185231b838cf2bca0bce1211821f",
+      "native_mathml": 3373,
+      "diagrams_with_detailed_marathi_alternatives": 13,
+      "diagram_pdf_crop_pages_corrected_and_guarded": true,
+      "internal_links_valid": 204,
+      "exact_source_prose_and_math_conversion": true,
+      "offline_network_dependencies": 0,
+      "browser_layout_review": "passed at 1280x720 and 390x844 with no page-level horizontal overflow",
+      "qa_receipt": "HTML_QA-CORE-59.json",
+      "qa_receipt_sha256": "bda29292e759feb3d8ad3a79a636a925ff0130e2c7dd4aa420a6cb4348d00af8",
+      "build_receipt": "HTML_BUILD-CORE-59.json",
+      "build_receipt_sha256": "57d6b07e473380572435c1761f7b8564946a4d3a91393093c0c397499570df72",
+      "browser_receipt": "HTML_BROWSER_QA-CORE-59.json",
+      "browser_receipt_sha256": "e689a1c1a13f2d7f5a2744f4add91655c5e2e32159cbdc7ba027ee88abc50d18"
+    }
+  }
+}

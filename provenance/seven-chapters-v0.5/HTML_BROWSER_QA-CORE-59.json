@@ -1,0 +1,73 @@
+{
+  "schema": "openlogic-html-browser-qa/1",
+  "reviewed_utc": "2026-09-06T02:54:46.459329Z",
+  "artifact": {
+    "filename": "index.html",
+    "bytes": 1460929,
+    "sha256": "54a0d151fec1ceb77d3561aff98534c5f0e922811c12de8eb33242347d0a7ef6",
+    "stylesheet_sha256": "c4d0ea2b2849c5e72ed30da130dfcfbf31c4185231b838cf2bca0bce1211821f"
+  },
+  "browser": "Chromium through Codex in-app browser",
+  "local_origin": "http://127.0.0.1:8765/",
+  "desktop": {
+    "viewport_css_pixels": [
+      1280,
+      720
+    ],
+    "document_client_width": 1265,
+    "document_scroll_width": 1265,
+    "body_client_width": 928,
+    "body_scroll_width": 928,
+    "page_level_horizontal_overflow": false
+  },
+  "mobile": {
+    "viewport_css_pixels": [
+      390,
+      844
+    ],
+    "measurement_method": "explicit Codex in-app browser viewport override",
+    "document_client_width": 375,
+    "document_scroll_width": 375,
+    "body_client_width": 375,
+    "body_scroll_width": 375,
+    "page_level_horizontal_overflow": false,
+    "focusable_display_math_regions": 116,
+    "wide_display_math_regions": 35,
+    "widest_region_client_width": 328,
+    "widest_region_scroll_width": 544,
+    "all_wide_regions_use_overflow_x_auto": true,
+    "horizontal_scroll_exercised": {
+      "region_index_zero_based": 94,
+      "scroll_left_before": 0,
+      "scroll_left_after": 216.44444274902344
+    }
+  },
+  "runtime_counts": {
+    "native_mathml": 3373,
+    "focusable_display_math_regions": 116,
+    "internal_fragment_links": 204,
+    "diagram_assets": 13,
+    "desktop_diagram_assets_loaded_successfully": 13,
+    "mobile_diagram_assets_loaded_successfully": 13,
+    "broken_fragment_links": 0,
+    "duplicate_ids": 0,
+    "console_errors": 0
+  },
+  "diagram_crop_review": {
+    "source_pdf_physical_pages_verified": true,
+    "all_diagrams_rendered_to_contact_sheet_and_visually_reviewed": true,
+    "drawing_dense_prose_light_crop_guard_passed": true,
+    "contact_sheet": "[local research path omitted]"
+  },
+  "visual_samples": [
+    "title and linked seven-chapter contents",
+    "all 13 diagram assets in a rendered contact sheet",
+    "function-composition diagram at desktop and mobile widths",
+    "propositional-logic chapter opening",
+    "truth-valuation clauses and semantic notions at desktop width",
+    "truth-valuation clauses at mobile width",
+    "widest mobile formula before and after keyboard horizontal scrolling"
+  ],
+  "result": "passed",
+  "notes": "Marathi shaping, native MathML, responsive diagrams, captions, and local navigation rendered cleanly at both widths. All 13 diagrams decoded, the document had no page-level horizontal overflow, and wide formula overflow remained inside keyboard-focusable labeled regions. Physical PDF page coordinates for the diagram crops were corrected and guarded by vector-drawing and prose-density assertions."
+}

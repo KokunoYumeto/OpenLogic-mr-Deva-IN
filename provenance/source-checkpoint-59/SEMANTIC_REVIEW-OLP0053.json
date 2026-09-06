@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0053",
+  "method": "Same-agent English/Marathi close reading, formula/macro/citation comparison, reverse paraphrase and bounded primary-source terminology research; not independent or human review.",
+  "scope": "All eleven translated blocks in Dedekind's proof, including two historical quotations and the source's two objections.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6
+      ],
+      "reverse_paraphrase": "The chapter gives no metaphysical identification of the naturals. Instead any Dedekind algebra instantiates their key properties, just as Dedekind cuts instantiate the reals; Dedekind's isomorphism theorem underlies the later structuralist reading.",
+      "checks": "All chapter/section references, Nat and Real formulas, stipulation-versus-discovery contrast, 1888 theorem citation and qualified historical claim are preserved."
+    },
+    {
+      "blocks": [
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "Embedding natural-number theory in informal set theory advances Dedekind's logicist project: number should depend on pure laws of thought, not intuitions of space and time. Yet the project still depends on proving a Dedekind-infinite set exists by logic.",
+      "checks": "The apparent non-presupposition qualification, full preface quotation, arithmetic/algebra/analysis parenthesis and conditional objection retain their scope."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "Dedekind argues that the realm of possible thoughts is Dedekind infinite by mapping each thought to the thought that it can be thought. The text objects that this is not recognizably mathematical and, more technically, does not show the plurality of thoughts forms one set. This exposes the informal set-existence assumptions and points toward axioms needed to avoid Russell's paradox.",
+      "checks": "Every S, s, s-prime and phi(s) occurrence, ellipsis, section citation, two numbered criticisms, set-versus-plurality distinction, footnote and Russell reference are retained exactly."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic, mathematical, philosophical or historical review has been performed."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "openlogic-translation-checkpoint/1",
+  "batch": "MR-B002",
+  "translated_units": 16,
+  "content_segments": 190,
+  "remaining_units": 706,
+  "release": "foundations-v0.2",
+  "github": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/foundations-v0.2",
+  "zenodo": "https://zenodo.org/records/22307961",
+  "zenodo_conceptdoi": "10.5281/zenodo.22307960",
+  "artifacts": [
+    {
+      "filename": "openlogic-mr-foundations.pdf",
+      "bytes": 135836,
+      "sha256": "56322181390cfbf164ce5b7a8431e30db7b6ae5ddf6100df13c8ab5464022754",
+      "public_url": "https://zenodo.org/api/records/22307961/files/openlogic-mr-foundations.pdf/content",
+      "verified_anonymously": true
+    },
+    {
+      "filename": "openlogic-mr-foundations-html.zip",
+      "bytes": 620642,
+      "sha256": "ae25b02bbb1a742ba0eec7d95a18164ebd354af14f9cad2ea597ee9ce7ace5fa",
+      "public_url": "https://zenodo.org/api/records/22307961/files/openlogic-mr-foundations-html.zip/content",
+      "verified_anonymously": true
+    },
+    {
+      "filename": "openlogic-mr-foundations-editable-sources.zip",
+      "bytes": 3407220,
+      "sha256": "3480fdd18a164123474d92fea61b5b03ec96bbe85b020efcd2578b26798d5577",
+      "public_url": "https://zenodo.org/api/records/22307961/files/openlogic-mr-foundations-editable-sources.zip/content",
+      "verified_anonymously": true
+    },
+    {
+      "filename": "SHA256SUMS.txt",
+      "bytes": 310,
+      "sha256": "f899797fb91f2ee3ff87b0aec54238a65d8ee484e47458580c38500133605953",
+      "public_url": "https://zenodo.org/api/records/22307961/files/SHA256SUMS.txt/content",
+      "verified_anonymously": true
+    }
+  ],
+  "qa_sha256": "e2553a584809541b0ff8c1a4ffd6f9b19f8f6bad1805ed4a73da4b56097fe648",
+  "public_readback_sha256": "65a1d9e484f686416f1da1e8b6c1f198bf12bfc01774d5b5efedafb4b00cd337",
+  "next_action": "Translate OLP-0020 and subsequent functions units from the frozen corpus, consulting actual Marathi mathematical evidence and preserving complete aligned content. Reuse Zenodo concept 10.5281/zenodo.22307960 for future edition versions.",
+  "full_corpus_complete": false
+}

@@ -19,6 +19,8 @@ def mask_text(t):
 def maths(t):
     parts=re.findall(r'(?<!\\)\$(.*?)(?<!\\)\$|\\\[(.*?)\\\]|\\begin\{(?:align\*|multline\*)\}(.*?)\\end\{(?:align\*|multline\*)\}',t,re.S)
     return collections.Counter(re.sub(r'\s+','',mask_text(''.join(p))) for p in parts)
+def inline_math_delimiters(t):
+    return collections.Counter(re.findall(r'\\[()]',t))
 def macros(t):return collections.Counter(re.findall(r'(?<!\\)\\[A-Za-z@]+\*?',t))
 def tokens(t):return collections.Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',t))
 def identifiers(t):
@@ -31,7 +33,8 @@ def identifiers(t):
         tuple(re.sub(r'\s+', ' ', part).strip() for part in key) for key in keys
     )
 def check(a,b):
-    return {'formula_multiset_parity':maths(a)==maths(b),'macro_multiset_parity':macros(a)==macros(b),'token_identity_parity':tokens(a)==tokens(b),'identifier_and_ref_option_parity':identifiers(a)==identifiers(b),'no_replacement_character':'\ufffd' not in b,'no_placeholder':not bool(re.search(r'\b(TODO|TBD|PLACEHOLDER)\b',b)),'nfc':unicodedata.normalize('NFC',b)==b}
+    delimiters=inline_math_delimiters(b)
+    return {'formula_multiset_parity':maths(a)==maths(b),'inline_math_delimiter_parity':inline_math_delimiters(a)==delimiters and delimiters[r'\(']==delimiters[r'\)'],'macro_multiset_parity':macros(a)==macros(b),'token_identity_parity':tokens(a)==tokens(b),'identifier_and_ref_option_parity':identifiers(a)==identifiers(b),'no_replacement_character':'\ufffd' not in b,'no_placeholder':not bool(re.search(r'\b(TODO|TBD|PLACEHOLDER)\b',b)),'nfc':unicodedata.normalize('NFC',b)==b}
 
 
 _DOCUMENTED_PROJECTIONS = {
@@ -81,6 +84,14 @@ _DOCUMENTED_PROJECTIONS = {
     'OLP-0054': [
         ('\\cardeq{B}{C}',
          '\\cardeq{\\cardeq{A}{B}}{C}'),
+    ],
+    'OLP-0058': [
+        ('$\\lnot !A \\lor !B$',
+         '$\\lnot !A \\lor !B)$'),
+    ],
+    'OLP-0060': [
+        ('$!A \\ident\n(!A_j \\land !A_k)$',
+         '$!A \\equiv\n(!A_j \\land !A_k)$'),
     ],
 }
 

@@ -1,0 +1,57 @@
+{
+  "schema": "openlogic-source-observations/1",
+  "batch": "MR-B005",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "policy": "Frozen English bytes remain untouched. Any deterministic defect is documented before a bounded Marathi correction; none was found in OLP-0049.",
+  "issues": [
+    {
+      "id": "MRINF-001",
+      "unit_id": "OLP-0050",
+      "source_locator": "content/sets-functions-relations/infinite/hilberts-hotel.tex:14",
+      "target_locator": "mr/content/sets-functions-relations/infinite/hilberts-hotel.tex:14",
+      "classification": "confirmed English grammatical omission",
+      "finding": "The source says ‘must be characterize’ where the infinitive construction requires ‘must be to characterize’ or ‘must characterize.’",
+      "action": "The Marathi renders the evident intended claim directly; frozen English bytes remain unchanged.",
+      "alternatives": [
+        "Mirror the malformed English syntax",
+        "Add an editorial note in the reader"
+      ],
+      "uncertainty": "None about the intended propositional content; this is a grammatical source defect without mathematical effect.",
+      "review_question": "Does the direct Marathi repair preserve the intended methodological claim without needing a visible source note?",
+      "required_translation_handling": "Render the intended infinitive/modal syntax and keep the frozen English source unchanged."
+    },
+    {
+      "id": "MRINF-002",
+      "unit_id": "OLP-0051",
+      "source_locator": "content/sets-functions-relations/infinite/dedekind-algebra.tex:54,64-65",
+      "target_locator": "mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:52,62-64",
+      "classification": "underspecified ambient carrier in closure lemma",
+      "finding": "The lemma quantifies ‘any function f and any o in A’ without introducing A, and its witness ran(f) union {o} is automatically f-closed only when the function is understood on an invariant ambient carrier containing o.",
+      "action": "Preserved the displayed statement and proof because all later applications explicitly use endofunctions g:D→D or f:A→A; recorded the hidden carrier assumption for expert review rather than inventing a formal repair.",
+      "alternatives": [
+        "Insert f:A→A into the lemma",
+        "Define f-closed only for subsets of dom(f)",
+        "Leave the ambient carrier implicit"
+      ],
+      "uncertainty": "The intended endofunction reading is clear from later applications, but the most faithful global repair depends on the surrounding formal convention for partial application.",
+      "review_question": "Should the lemma explicitly quantify an endofunction f:A→A and o∈A, and should its closure definition be restricted to subsets of A?",
+      "required_translation_handling": "Preserve formulas and disclose the ambient-carrier assumption until an authoritative source repair is adopted."
+    },
+    {
+      "id": "MRINF-003",
+      "unit_id": "OLP-0054",
+      "source_locator": "content/sets-functions-relations/infinite/card-sb.tex:52",
+      "target_locator": "mr/content/sets-functions-relations/infinite/card-sb.tex:52",
+      "classification": "confirmed malformed helper-proposition conclusion",
+      "finding": "Under A⊆B⊆C and A≈C, the source writes a nested cardinal-equality expression with A≈B in the first set position. The required conclusion is B≈C.",
+      "action": "Used the mathematically forced B≈C conclusion in Marathi, added the adjacent MRINF-003 note, kept frozen English bytes unchanged, and registered a narrow exact-QA projection.",
+      "alternatives": [
+        "Reproduce the malformed nested expression",
+        "Render B≈C without documenting the repair"
+      ],
+      "uncertainty": "None: both the sandwich argument and the theorem proof's application require B≈C.",
+      "review_question": "Confirm the source should read ‘then B≈C’ and that the repair needs no further qualification.",
+      "required_translation_handling": "Use B≈C while retaining traceability to the frozen source expression."
+    }
+  ]
+}
