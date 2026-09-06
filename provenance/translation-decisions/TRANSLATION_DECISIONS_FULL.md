@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occurrences.
+Coverage: 74/722 source units through OLP-0077; 226 applied decisions; 4,956 occurrences.
 
 ## T001 — set
 
@@ -1422,6 +1422,7 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T009-OLP-0064-B010` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | 82–83 |
 | `T009-OLP-0070-B008` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | pending |
 | `T009-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:84-85` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:84-85` | pending |
+| `T009-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T010 — truth / truth value
 
@@ -2273,6 +2274,8 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T023-OLP-0065-B006` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | 83–84 |
 | `T023-OLP-0065-B007` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | 83–84 |
 | `T023-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T023-OLP-0077-B009` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:36-43` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:37-44` | pending |
+| `T023-OLP-0077-B010` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:45-67` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:46-69` | pending |
 
 ## T024 — set difference
 
@@ -2896,6 +2899,7 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T032-OLP-0042-B007` | `OLP-0042` | 5.1 N पासून Z कडे | `upstream/content/sets-functions-relations/arithmetization/integers.tex:22-30` | `mr/content/sets-functions-relations/arithmetization/integers.tex:22-30` | 52–54 |
 | `T032-OLP-0042-B008` | `OLP-0042` | 5.1 N पासून Z कडे | `upstream/content/sets-functions-relations/arithmetization/integers.tex:32-32` | `mr/content/sets-functions-relations/arithmetization/integers.tex:32-32` | 52–54 |
 | `T032-OLP-0047-B015` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:101-109` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:101-108` | 59–62 |
+| `T032-OLP-0077-B012` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:78-81` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:80-83` | pending |
 
 ## T033 — transitive
 
@@ -3837,6 +3841,11 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T044-OLP-0075-B019` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:300-308` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:295-303` | pending |
 | `T044-OLP-0075-B020` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:310-326` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:305-321` | pending |
 | `T044-OLP-0075-B021` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:328-342` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:323-337` | pending |
+| `T044-OLP-0076-B005` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:11-11` | pending |
+| `T044-OLP-0076-B006` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:13-15` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:13-15` | pending |
+| `T044-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
+| `T044-OLP-0076-B009` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:85-98` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:81-94` | pending |
+| `T044-OLP-0076-B010` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:100-108` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:96-104` | pending |
 
 ## T045 — function / mapping
 
@@ -6938,6 +6947,9 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T109-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
 | `T109-OLP-0069-B005` | `OLP-0069` |  | `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | pending |
 | `T109-OLP-0075-B018` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:252-298` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:248-293` | pending |
+| `T109-OLP-0077-B004` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12` | pending |
+| `T109-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
+| `T109-OLP-0077-B008` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:30-34` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:31-35` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -6974,6 +6986,7 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T110-OLP-0064-B010` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | 82–83 |
 | `T110-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
 | `T110-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 86–87 |
+| `T110-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -7045,6 +7058,9 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T112-OLP-0072-B008` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-28` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-27` | pending |
 | `T112-OLP-0072-B011` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-48` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-48` | pending |
 | `T112-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:80-81` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:81-82` | pending |
+| `T112-OLP-0076-B005` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:11-11` | pending |
+| `T112-OLP-0076-B007` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27` | pending |
+| `T112-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
 
 ## T113 — classical logic / classical
 
@@ -7384,6 +7400,7 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T121-OLP-0062-B007` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33` | 81 |
 | `T121-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
 | `T121-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
+| `T121-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T122 — tautology
 
@@ -7482,6 +7499,7 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T124-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
 | `T124-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 82–83 |
 | `T124-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
+| `T124-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T125 — necessary / contingent
 
@@ -8201,6 +8219,10 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T144-OLP-0070-B007` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26` | pending |
 | `T144-OLP-0070-B009` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:46-50` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:48-52` | pending |
 | `T144-OLP-0074-B007` | `OLP-0074` |  | `upstream/content/first-order-logic/sequent-calculus/derivations.tex:23-35` | `mr/content/first-order-logic/sequent-calculus/derivations.tex:22-35` | pending |
+| `T144-OLP-0077-B009` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:36-43` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:37-44` | pending |
+| `T144-OLP-0077-B015` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-100` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:96-102` | pending |
+| `T144-OLP-0077-B022` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157` | pending |
+| `T144-OLP-0077-B023` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170` | pending |
 
 ## T145 — evaluation / evaluation function
 
@@ -8341,6 +8363,8 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T149-OLP-0062-B009` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61` | 81 |
+| `T149-OLP-0077-B014` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:88-92` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:90-94` | pending |
+| `T149-OLP-0077-B015` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-100` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:96-102` | pending |
 
 ## T150 — Semantic Deduction Theorem
 
@@ -8431,6 +8455,8 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T151-OLP-0075-B011` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:110-152` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:107-149` | pending |
 | `T151-OLP-0075-B013` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210` | pending |
 | `T151-OLP-0075-B018` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:252-298` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:248-293` | pending |
+| `T151-OLP-0076-B007` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27` | pending |
+| `T151-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -8471,6 +8497,7 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T152-OLP-0069-B004` | `OLP-0069` |  | `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:8-10` | `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:8-10` | pending |
 | `T152-OLP-0069-B005` | `OLP-0069` |  | `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | pending |
 | `T152-OLP-0070-B011` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | pending |
+| `T152-OLP-0077-B004` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12` | pending |
 
 ## T153 — truth tree / tableaux proof / resolution method and refutation
 
@@ -8531,6 +8558,7 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T154-OLP-0065-B007` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | 83–84 |
 | `T154-OLP-0066-B008` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | 84–85 |
 | `T154-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
+| `T154-OLP-0077-B008` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:30-34` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:31-35` | pending |
 
 ## T155 — soundness / sound / unsound (of a proof system)
 
@@ -8594,6 +8622,12 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T156-OLP-0066-B009` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | 84–85 |
 | `T156-OLP-0067-B009` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | 85–86 |
 | `T156-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 86–87 |
+| `T156-OLP-0077-B004` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12` | pending |
+| `T156-OLP-0077-B011` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:69-76` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:71-78` | pending |
+| `T156-OLP-0077-B019` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:133-137` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:135-139` | pending |
+| `T156-OLP-0077-B020` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:139-141` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:141-143` | pending |
+| `T156-OLP-0077-B022` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157` | pending |
+| `T156-OLP-0077-B023` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -8649,6 +8683,19 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T157-OLP-0075-B019` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:300-308` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:295-303` | pending |
 | `T157-OLP-0075-B020` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:310-326` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:305-321` | pending |
 | `T157-OLP-0075-B021` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:328-342` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:323-337` | pending |
+| `T157-OLP-0076-B006` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:13-15` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:13-15` | pending |
+| `T157-OLP-0076-B007` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27` | pending |
+| `T157-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
+| `T157-OLP-0076-B009` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:85-98` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:81-94` | pending |
+| `T157-OLP-0076-B010` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:100-108` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:96-104` | pending |
+| `T157-OLP-0077-B008` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:30-34` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:31-35` | pending |
+| `T157-OLP-0077-B009` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:36-43` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:37-44` | pending |
+| `T157-OLP-0077-B010` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:45-67` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:46-69` | pending |
+| `T157-OLP-0077-B011` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:69-76` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:71-78` | pending |
+| `T157-OLP-0077-B012` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:78-81` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:80-83` | pending |
+| `T157-OLP-0077-B013` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:83-86` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:85-88` | pending |
+| `T157-OLP-0077-B016` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:102-106` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:104-108` | pending |
+| `T157-OLP-0077-B017` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-126` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:110-128` | pending |
 
 ## T158 — proof by cases / indirect proof / conditional proof
 
@@ -9095,6 +9142,9 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T172-OLP-0075-B011` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:110-152` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:107-149` | pending |
 | `T172-OLP-0075-B013` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210` | pending |
 | `T172-OLP-0075-B018` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:252-298` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:248-293` | pending |
+| `T172-OLP-0076-B007` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27` | pending |
+| `T172-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
+| `T172-OLP-0077-B013` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:83-86` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:85-88` | pending |
 
 ## T173 — logical rule / structural rule (sequent calculus)
 
@@ -9195,6 +9245,10 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T175-OLP-0075-B013` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210` | pending |
 | `T175-OLP-0075-B018` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:252-298` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:248-293` | pending |
 | `T175-OLP-0075-B021` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:328-342` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:323-337` | pending |
+| `T175-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
+| `T175-OLP-0076-B010` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:100-108` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:96-104` | pending |
+| `T175-OLP-0077-B010` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:45-67` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:46-69` | pending |
+| `T175-OLP-0077-B017` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-126` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:110-128` | pending |
 
 ## T176 — end-sequent
 
@@ -9227,6 +9281,7 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T176-OLP-0075-B007` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:18-48` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:18-45` | pending |
 | `T176-OLP-0075-B009` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:54-74` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:51-70` | pending |
 | `T176-OLP-0075-B013` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210` | pending |
+| `T176-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
 
 ## T177 — bound variable
 
@@ -9286,6 +9341,8 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T178-OLP-0072-B012` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54` | pending |
 | `T178-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:72-76` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:73-77` | pending |
 | `T178-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:81-86` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:82-86` | pending |
+| `T178-OLP-0076-B007` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27` | pending |
+| `T178-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
 
 ## T179 — eigenvariable condition
 
@@ -9316,6 +9373,8 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T179-OLP-0072-B012` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54` | pending |
 | `T179-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:72-76` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:73-77` | pending |
 | `T179-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:81-86` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:82-86` | pending |
+| `T179-OLP-0076-B007` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27` | pending |
+| `T179-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
 
 ## T180 — Rules for [logical symbol] (heading construction)
 
@@ -9347,6 +9406,135 @@ Coverage: 72/722 source units through OLP-0075; 222 applied decisions; 4,873 occ
 | `T180-OLP-0071-B012` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:73-73` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:73-73` | pending |
 | `T180-OLP-0072-B006` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:13-13` | pending |
 | `T180-OLP-0072-B009` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:34-34` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:34-34` | pending |
+
+## T181 — compactness (proof-theoretic property)
+
+**Chosen rendering/action:** संहतता
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P098 directly records compactness as the official mathematical headword संहतता. The current source defines the proof-theoretic property by finite derivability and by consistency of every finite subset, so the local formal clauses control the logic sense; no exact Marathi proof-theory occurrence was found in the bounded search.
+
+**Rationale:** MR-P098 directly records compactness as the official mathematical headword संहतता. The current source defines the proof-theoretic property by finite derivability and by consistency of every finite subset, so the local formal clauses control the logic sense; no exact Marathi proof-theory occurrence was found in the bounded search.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P098` — गणितशास्त्र परिभाषा कोश — compactness observation. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Government of Maharashtra mathematics glossary index read in a current web-search extraction; direct fetch subsequently failed before origin bytes were received. Limitation: Observation hash is not an origin-page hash; the glossary is mathematical rather than proof-theoretic and the direct origin page was unavailable.
+
+**Alternatives:**
+
+- सघनता — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- संहत गुणधर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- मर्यादित उपसंच गुणधर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is संहतता the natural Marathi label for the proof-theoretic compactness proposition, or should the finite-subset meaning be made explicit in the heading?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T181-OLP-0077-B022` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157` | pending |
+| `T181-OLP-0077-B023` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170` | pending |
+
+## T182 — proof-theoretic notions
+
+**Chosen rendering/action:** सिद्धता-उपपत्तीय संकल्पना
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The edition already records सिद्धता, उपपत्ती and proof-theory register. This transparent compound distinguishes derivability-based notions from the semantic notions introduced immediately before; the source paragraph controls the exact contrast.
+
+**Rationale:** The edition already records सिद्धता, उपपत्ती and proof-theory register. This transparent compound distinguishes derivability-based notions from the semantic notions introduced immediately before; the source paragraph controls the exact contrast.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- सिद्धता-सैद्धान्तिक संकल्पना — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- उपपत्तीविषयक संकल्पना — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is सिद्धता-उपपत्तीय संकल्पना an intelligible Marathi heading for notions defined by derivability rather than satisfaction?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T182-OLP-0077-B006` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18-18` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18-18` | pending |
+| `T182-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
+
+## T183 — transitivity (of derivability)
+
+**Chosen rendering/action:** संक्रमकता
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** संक्रमकता is directly established in the edition's relation vocabulary and in Marathi logic usage. The displayed cut derivation fixes the distinct transitivity-of-derivability sense, so the relation is not confused with a set-theoretic transitive relation.
+
+**Rationale:** संक्रमकता is directly established in the edition's relation vocabulary and in Marathi logic usage. The displayed cut derivation fixes the distinct transitivity-of-derivability sense, so the relation is not confused with a set-theoretic transitive relation.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- संक्रमणता — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- परंपरानिष्पत्ती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does संक्रमणकता remain the clearest label for transitivity of the derivability relation in proof-theoretic prose?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T183-OLP-0077-B016` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:102-106` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:104-108` | pending |
+| `T183-OLP-0077-B017` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-126` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:110-128` | pending |
+| `T183-OLP-0077-B018` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:128-131` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:130-133` | pending |
+
+## T184 — derivability / provability relation
+
+**Chosen rendering/action:** सिद्धतायोग्यता / सिद्धतायोग्य
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** सिद्धता is directly attested in Marathi proof and logic sources. The target's सिद्धतायोग्यता family is a transparent relation noun/adjective for the source's formal existence of a derivation, while each local definition and symbol $\Proves$ controls the exact sense.
+
+**Rationale:** सिद्धता is directly attested in Marathi proof and logic sources. The target's सिद्धतायोग्यता family is a transparent relation noun/adjective for the source's formal existence of a derivation, while each local definition and symbol $\Proves$ controls the exact sense.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
+
+**Alternatives:**
+
+- निष्पाद्यता — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- निगमनयोग्यता — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सिद्धता-संबंध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is सिद्धतायोग्यता the most natural Marathi label for a sequent being derivable, distinct from semantic वैधता and पूर्ति?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T184-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
+| `T184-OLP-0077-B008` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:30-34` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:31-35` | pending |
+| `T184-OLP-0077-B009` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:36-43` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:37-44` | pending |
+| `T184-OLP-0077-B010` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:45-67` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:46-69` | pending |
+| `T184-OLP-0077-B011` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:69-76` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:71-78` | pending |
+| `T184-OLP-0077-B012` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:78-81` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:80-83` | pending |
+| `T184-OLP-0077-B013` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:83-86` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:85-88` | pending |
+| `T184-OLP-0077-B014` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:88-92` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:90-94` | pending |
+| `T184-OLP-0077-B015` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-100` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:96-102` | pending |
+| `T184-OLP-0077-B016` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:102-106` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:104-108` | pending |
+| `T184-OLP-0077-B017` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-126` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:110-128` | pending |
+| `T184-OLP-0077-B018` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:128-131` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:130-133` | pending |
+| `T184-OLP-0077-B019` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:133-137` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:135-139` | pending |
+| `T184-OLP-0077-B020` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:139-141` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:141-143` | pending |
+| `T184-OLP-0077-B021` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:143-145` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:145-147` | pending |
+| `T184-OLP-0077-B022` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157` | pending |
+| `T184-OLP-0077-B023` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 

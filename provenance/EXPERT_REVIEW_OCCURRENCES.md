@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **72/722 source units**, 794 aligned translated blocks, 4873 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
+Current scope: **74/722 source units**, 819 aligned translated blocks, 4956 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -1318,7 +1318,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T009 — formal validity</strong> (5 occurrences; routine priority)</summary>
+<summary><strong>T009 — formal validity</strong> (6 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1327,6 +1327,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T009-OLP-0064-B010 | OLP-0064 · 8.1 प्रस्तावना | [upstream/content/first-order-logic/proof-systems/introduction.tex:73-80](../upstream/content/first-order-logic/proof-systems/introduction.tex#L73) | [mr/content/first-order-logic/proof-systems/introduction.tex:76-83](../mr/content/first-order-logic/proof-systems/introduction.tex#L76) | 82–83 |
 | T009-OLP-0070-B008 | OLP-0070 ·  | [upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44](../upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L28) | [mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46](../mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L28) | not yet paginated |
 | T009-OLP-0072-B014 | OLP-0072 ·  | [upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:84-85](../upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L84) | [mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:84-85](../mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L84) | not yet paginated |
+| T009-OLP-0077-B007 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | not yet paginated |
 
 **Chosen rendering/action:** वैधता
 
@@ -1975,7 +1976,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T023 — sequence/string/word</strong> (59 occurrences; high priority)</summary>
+<summary><strong>T023 — sequence/string/word</strong> (61 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2038,6 +2039,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T023-OLP-0065-B006 | OLP-0065 · 8.2 क्रमवर्ती कलन | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L15) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L15) | 83–84 |
 | T023-OLP-0065-B007 | OLP-0065 · 8.2 क्रमवर्ती कलन | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | 83–84 |
 | T023-OLP-0068-B006 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | 86–87 |
+| T023-OLP-0077-B009 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:36-43](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L36) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:37-44](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L37) | not yet paginated |
+| T023-OLP-0077-B010 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:45-67](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L45) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:46-69](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L46) | not yet paginated |
 
 **Chosen rendering/action:** अनुक्रम / चिन्हमाला / शब्द
 
@@ -2480,7 +2483,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T032 — reflexive / irreflexive</strong> (81 occurrences; medium priority)</summary>
+<summary><strong>T032 — reflexive / irreflexive</strong> (82 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2565,6 +2568,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T032-OLP-0042-B007 | OLP-0042 · 5.1 N पासून Z कडे | [upstream/content/sets-functions-relations/arithmetization/integers.tex:22-30](../upstream/content/sets-functions-relations/arithmetization/integers.tex#L22) | [mr/content/sets-functions-relations/arithmetization/integers.tex:22-30](../mr/content/sets-functions-relations/arithmetization/integers.tex#L22) | 52–54 |
 | T032-OLP-0042-B008 | OLP-0042 · 5.1 N पासून Z कडे | [upstream/content/sets-functions-relations/arithmetization/integers.tex:32-32](../upstream/content/sets-functions-relations/arithmetization/integers.tex#L32) | [mr/content/sets-functions-relations/arithmetization/integers.tex:32-32](../mr/content/sets-functions-relations/arithmetization/integers.tex#L32) | 52–54 |
 | T032-OLP-0047-B015 | OLP-0047 · 5.6 क्रमित वलये आणि क्षेत्रे | [upstream/content/sets-functions-relations/arithmetization/checking-details.tex:101-109](../upstream/content/sets-functions-relations/arithmetization/checking-details.tex#L101) | [mr/content/sets-functions-relations/arithmetization/checking-details.tex:101-108](../mr/content/sets-functions-relations/arithmetization/checking-details.tex#L101) | 59–62 |
+| T032-OLP-0077-B012 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:78-81](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L78) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:80-83](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L80) | not yet paginated |
 
 **Chosen rendering/action:** परावर्ती / अपरावर्ती
 
@@ -3223,7 +3227,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T044 — computability / formula / derivation</strong> (141 occurrences; high priority)</summary>
+<summary><strong>T044 — computability / formula / derivation</strong> (146 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3368,6 +3372,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T044-OLP-0075-B019 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:300-308](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L300) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:295-303](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L295) | not yet paginated |
 | T044-OLP-0075-B020 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:310-326](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L310) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:305-321](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L305) | not yet paginated |
 | T044-OLP-0075-B021 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:328-342](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L328) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:323-337](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L323) | not yet paginated |
+| T044-OLP-0076-B005 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L11) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:11-11](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L11) | not yet paginated |
+| T044-OLP-0076-B006 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:13-15](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L13) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:13-15](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L13) | not yet paginated |
+| T044-OLP-0076-B008 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L31) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L29) | not yet paginated |
+| T044-OLP-0076-B009 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:85-98](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L85) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:81-94](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L81) | not yet paginated |
+| T044-OLP-0076-B010 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:100-108](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L100) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:96-104](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L96) | not yet paginated |
 
 **Chosen rendering/action:** संगणनीयता / सूत्र / निष्पत्ती
 
@@ -5756,7 +5765,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T109 — proof system / proof</strong> (26 occurrences; medium priority)</summary>
+<summary><strong>T109 — proof system / proof</strong> (29 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5786,6 +5795,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T109-OLP-0068-B010 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L70) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L71) | 86–87 |
 | T109-OLP-0069-B005 | OLP-0069 ·  | [upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | [mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | not yet paginated |
 | T109-OLP-0075-B018 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:252-298](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L252) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:248-293](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L248) | not yet paginated |
+| T109-OLP-0077-B004 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L9) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L9) | not yet paginated |
+| T109-OLP-0077-B007 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | not yet paginated |
+| T109-OLP-0077-B008 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:30-34](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L30) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:31-35](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L31) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धता-पद्धती / सिद्धता
 
@@ -5796,7 +5808,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (5 occurrences; medium priority)</summary>
+<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (6 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5805,6 +5817,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T110-OLP-0064-B010 | OLP-0064 · 8.1 प्रस्तावना | [upstream/content/first-order-logic/proof-systems/introduction.tex:73-80](../upstream/content/first-order-logic/proof-systems/introduction.tex#L73) | [mr/content/first-order-logic/proof-systems/introduction.tex:76-83](../mr/content/first-order-logic/proof-systems/introduction.tex#L76) | 82–83 |
 | T110-OLP-0068-B006 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | 86–87 |
 | T110-OLP-0068-B009 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L66) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L67) | 86–87 |
+| T110-OLP-0077-B007 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | not yet paginated |
 
 **Chosen rendering/action:** संपूर्णता / संपूर्णता प्रमेय / सत्यता-फलनात्मक संपूर्णता
 
@@ -5841,7 +5854,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T112 — predicate / term / quantifier</strong> (6 occurrences; routine priority)</summary>
+<summary><strong>T112 — predicate / term / quantifier</strong> (9 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5851,6 +5864,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T112-OLP-0072-B008 | OLP-0072 ·  | [upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-28](../upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L27) | [mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-27](../mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L27) | not yet paginated |
 | T112-OLP-0072-B011 | OLP-0072 ·  | [upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-48](../upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L48) | [mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-48](../mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L48) | not yet paginated |
 | T112-OLP-0072-B014 | OLP-0072 ·  | [upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:80-81](../upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L80) | [mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:81-82](../mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L81) | not yet paginated |
+| T112-OLP-0076-B005 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L11) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:11-11](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L11) | not yet paginated |
+| T112-OLP-0076-B007 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L17) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L17) | not yet paginated |
+| T112-OLP-0076-B008 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L31) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L29) | not yet paginated |
 
 **Chosen rendering/action:** विधेय / पद / संख्यापक
 
@@ -6065,7 +6081,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T121 — satisfaction / satisfaction relation</strong> (15 occurrences; routine priority)</summary>
+<summary><strong>T121 — satisfaction / satisfaction relation</strong> (16 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6084,6 +6100,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T121-OLP-0062-B007 | OLP-0062 · 7.6 चिन्हार्थविषयक संकल्पना | [upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L15) | [mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L15) | 81 |
 | T121-OLP-0064-B006 | OLP-0064 · 8.1 प्रस्तावना | [upstream/content/first-order-logic/proof-systems/introduction.tex:15-24](../upstream/content/first-order-logic/proof-systems/introduction.tex#L15) | [mr/content/first-order-logic/proof-systems/introduction.tex:15-25](../mr/content/first-order-logic/proof-systems/introduction.tex#L15) | 82–83 |
 | T121-OLP-0067-B010 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L72) | [mr/content/first-order-logic/proof-systems/tableaux.tex:69-82](../mr/content/first-order-logic/proof-systems/tableaux.tex#L69) | 85–86 |
+| T121-OLP-0077-B007 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | not yet paginated |
 
 **Chosen rendering/action:** पूर्ति / पूर्ति-संबंध
 
@@ -6135,7 +6152,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T124 — satisfiable / satisfiability</strong> (7 occurrences; medium priority)</summary>
+<summary><strong>T124 — satisfiable / satisfiability</strong> (8 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6146,6 +6163,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T124-OLP-0064-B006 | OLP-0064 · 8.1 प्रस्तावना | [upstream/content/first-order-logic/proof-systems/introduction.tex:15-24](../upstream/content/first-order-logic/proof-systems/introduction.tex#L15) | [mr/content/first-order-logic/proof-systems/introduction.tex:15-25](../mr/content/first-order-logic/proof-systems/introduction.tex#L15) | 82–83 |
 | T124-OLP-0064-B011 | OLP-0064 · 8.1 प्रस्तावना | [upstream/content/first-order-logic/proof-systems/introduction.tex:82-99](../upstream/content/first-order-logic/proof-systems/introduction.tex#L82) | [mr/content/first-order-logic/proof-systems/introduction.tex:85-101](../mr/content/first-order-logic/proof-systems/introduction.tex#L85) | 82–83 |
 | T124-OLP-0067-B010 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L72) | [mr/content/first-order-logic/proof-systems/tableaux.tex:69-82](../mr/content/first-order-logic/proof-systems/tableaux.tex#L69) | 85–86 |
+| T124-OLP-0077-B007 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | not yet paginated |
 
 **Chosen rendering/action:** पूर्ततायोग्य / पूर्ततायोग्यता
 
@@ -6617,7 +6635,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T144 — finite sequence / proper initial subsequence</strong> (9 occurrences; medium priority)</summary>
+<summary><strong>T144 — finite sequence / proper initial subsequence</strong> (13 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6630,6 +6648,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T144-OLP-0070-B007 | OLP-0070 ·  | [upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26](../upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L18) | [mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26](../mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L18) | not yet paginated |
 | T144-OLP-0070-B009 | OLP-0070 ·  | [upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:46-50](../upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L46) | [mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:48-52](../mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L48) | not yet paginated |
 | T144-OLP-0074-B007 | OLP-0074 ·  | [upstream/content/first-order-logic/sequent-calculus/derivations.tex:23-35](../upstream/content/first-order-logic/sequent-calculus/derivations.tex#L23) | [mr/content/first-order-logic/sequent-calculus/derivations.tex:22-35](../mr/content/first-order-logic/sequent-calculus/derivations.tex#L22) | not yet paginated |
+| T144-OLP-0077-B009 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:36-43](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L36) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:37-44](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L37) | not yet paginated |
+| T144-OLP-0077-B015 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-100](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L94) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:96-102](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L96) | not yet paginated |
+| T144-OLP-0077-B022 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L147) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L149) | not yet paginated |
+| T144-OLP-0077-B023 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L157) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L159) | not yet paginated |
 
 **Chosen rendering/action:** सांत क्रमिका / उचित आरंभीची उपक्रमिका
 
@@ -6706,11 +6728,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T149 — monotonicity (of semantic entailment)</strong> (1 occurrence; routine priority)</summary>
+<summary><strong>T149 — monotonicity (of semantic entailment)</strong> (3 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T149-OLP-0062-B009 | OLP-0062 · 7.6 चिन्हार्थविषयक संकल्पना | [upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L45) | [mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L46) | 81 |
+| T149-OLP-0077-B014 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:88-92](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L88) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:90-94](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L90) | not yet paginated |
+| T149-OLP-0077-B015 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-100](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L94) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:96-102](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L96) | not yet paginated |
 
 **Chosen rendering/action:** एकस्वनिकता
 
@@ -6736,7 +6760,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T151 — axiomatic system / inference rule</strong> (34 occurrences; routine priority)</summary>
+<summary><strong>T151 — axiomatic system / inference rule</strong> (36 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6774,6 +6798,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T151-OLP-0075-B011 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:110-152](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L110) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:107-149](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L107) | not yet paginated |
 | T151-OLP-0075-B013 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L158) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L155) | not yet paginated |
 | T151-OLP-0075-B018 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:252-298](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L252) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:248-293](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L248) | not yet paginated |
+| T151-OLP-0076-B007 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L17) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L17) | not yet paginated |
+| T151-OLP-0076-B008 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L31) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L29) | not yet paginated |
 
 **Chosen rendering/action:** स्वयंसिद्धकीय पद्धत / निगमन नियम
 
@@ -6784,7 +6810,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T152 — natural deduction / sequent calculus</strong> (15 occurrences; routine priority)</summary>
+<summary><strong>T152 — natural deduction / sequent calculus</strong> (16 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6803,6 +6829,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T152-OLP-0069-B004 | OLP-0069 ·  | [upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:8-10](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L8) | [mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:8-10](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L8) | not yet paginated |
 | T152-OLP-0069-B005 | OLP-0069 ·  | [upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | [mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | not yet paginated |
 | T152-OLP-0070-B011 | OLP-0070 ·  | [upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72](../upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L63) | [mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75](../mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L65) | not yet paginated |
+| T152-OLP-0077-B004 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L9) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L9) | not yet paginated |
 
 **Chosen rendering/action:** नैसर्गिक निगमन / क्रमवर्ती कलन
 
@@ -6829,7 +6856,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T154 — theorem</strong> (5 occurrences; routine priority)</summary>
+<summary><strong>T154 — theorem</strong> (6 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6838,6 +6865,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T154-OLP-0065-B007 | OLP-0065 · 8.2 क्रमवर्ती कलन | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | 83–84 |
 | T154-OLP-0066-B008 | OLP-0066 · 8.3 नैसर्गिक निगमन | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L60) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L56) | 84–85 |
 | T154-OLP-0068-B008 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | 86–87 |
+| T154-OLP-0077-B008 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:30-34](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L30) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:31-35](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L31) | not yet paginated |
 
 **Chosen rendering/action:** प्रमेय
 
@@ -6866,7 +6894,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (5 occurrences; routine priority)</summary>
+<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (11 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6875,6 +6903,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T156-OLP-0066-B009 | OLP-0066 · 8.3 नैसर्गिक निगमन | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L77) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L74) | 84–85 |
 | T156-OLP-0067-B009 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L65) | [mr/content/first-order-logic/proof-systems/tableaux.tex:63-67](../mr/content/first-order-logic/proof-systems/tableaux.tex#L63) | 85–86 |
 | T156-OLP-0068-B009 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L66) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L67) | 86–87 |
+| T156-OLP-0077-B004 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L9) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L9) | not yet paginated |
+| T156-OLP-0077-B011 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:69-76](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L69) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:71-78](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L71) | not yet paginated |
+| T156-OLP-0077-B019 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:133-137](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L133) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:135-139](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L135) | not yet paginated |
+| T156-OLP-0077-B020 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:139-141](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L139) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:141-143](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L141) | not yet paginated |
+| T156-OLP-0077-B022 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L147) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L149) | not yet paginated |
+| T156-OLP-0077-B023 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L157) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L159) | not yet paginated |
 
 **Chosen rendering/action:** सुसंगतता / विसंगतता / सुसंगत / विसंगत
 
@@ -6885,7 +6919,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T157 — sequent (proof theory)</strong> (29 occurrences; medium priority)</summary>
+<summary><strong>T157 — sequent (proof theory)</strong> (42 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6918,6 +6952,19 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T157-OLP-0075-B019 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:300-308](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L300) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:295-303](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L295) | not yet paginated |
 | T157-OLP-0075-B020 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:310-326](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L310) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:305-321](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L305) | not yet paginated |
 | T157-OLP-0075-B021 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:328-342](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L328) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:323-337](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L323) | not yet paginated |
+| T157-OLP-0076-B006 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:13-15](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L13) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:13-15](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L13) | not yet paginated |
+| T157-OLP-0076-B007 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L17) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L17) | not yet paginated |
+| T157-OLP-0076-B008 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L31) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L29) | not yet paginated |
+| T157-OLP-0076-B009 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:85-98](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L85) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:81-94](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L81) | not yet paginated |
+| T157-OLP-0076-B010 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:100-108](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L100) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:96-104](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L96) | not yet paginated |
+| T157-OLP-0077-B008 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:30-34](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L30) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:31-35](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L31) | not yet paginated |
+| T157-OLP-0077-B009 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:36-43](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L36) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:37-44](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L37) | not yet paginated |
+| T157-OLP-0077-B010 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:45-67](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L45) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:46-69](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L46) | not yet paginated |
+| T157-OLP-0077-B011 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:69-76](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L69) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:71-78](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L71) | not yet paginated |
+| T157-OLP-0077-B012 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:78-81](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L78) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:80-83](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L80) | not yet paginated |
+| T157-OLP-0077-B013 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:83-86](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L83) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:85-88](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L85) | not yet paginated |
+| T157-OLP-0077-B016 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:102-106](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L102) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:104-108](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L104) | not yet paginated |
+| T157-OLP-0077-B017 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-126](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L108) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:110-128](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L110) | not yet paginated |
 
 **Chosen rendering/action:** क्रमवर्ती
 
@@ -7167,7 +7214,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T172 — sequent antecedent / succedent / initial sequent</strong> (11 occurrences; medium priority)</summary>
+<summary><strong>T172 — sequent antecedent / succedent / initial sequent</strong> (14 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7182,6 +7229,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T172-OLP-0075-B011 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:110-152](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L110) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:107-149](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L107) | not yet paginated |
 | T172-OLP-0075-B013 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L158) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L155) | not yet paginated |
 | T172-OLP-0075-B018 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:252-298](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L252) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:248-293](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L248) | not yet paginated |
+| T172-OLP-0076-B007 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L17) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L17) | not yet paginated |
+| T172-OLP-0076-B008 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L31) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L29) | not yet paginated |
+| T172-OLP-0077-B013 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:83-86](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L83) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:85-88](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L85) | not yet paginated |
 
 **Chosen rendering/action:** पूर्वांग / उत्तरांग / आरंभीची क्रमवर्ती
 
@@ -7229,7 +7279,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)</strong> (12 occurrences; medium priority)</summary>
+<summary><strong>T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)</strong> (16 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7245,6 +7295,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T175-OLP-0075-B013 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L158) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L155) | not yet paginated |
 | T175-OLP-0075-B018 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:252-298](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L252) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:248-293](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L248) | not yet paginated |
 | T175-OLP-0075-B021 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:328-342](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L328) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:323-337](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L323) | not yet paginated |
+| T175-OLP-0076-B008 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L31) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L29) | not yet paginated |
+| T175-OLP-0076-B010 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:100-108](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L100) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:96-104](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L96) | not yet paginated |
+| T175-OLP-0077-B010 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:45-67](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L45) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:46-69](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L46) | not yet paginated |
+| T175-OLP-0077-B017 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-126](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L108) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:110-128](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L110) | not yet paginated |
 
 **Chosen rendering/action:** दुर्बलीकरण / आकुंचन / अदलाबदल / कट
 
@@ -7255,7 +7309,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T176 — end-sequent</strong> (5 occurrences; medium priority)</summary>
+<summary><strong>T176 — end-sequent</strong> (6 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7264,6 +7318,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T176-OLP-0075-B007 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:18-48](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L18) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:18-45](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L18) | not yet paginated |
 | T176-OLP-0075-B009 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:54-74](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L54) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:51-70](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L51) | not yet paginated |
 | T176-OLP-0075-B013 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L158) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L155) | not yet paginated |
+| T176-OLP-0076-B008 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L31) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L29) | not yet paginated |
 
 **Chosen rendering/action:** अंतिम क्रमवर्ती
 
@@ -7289,7 +7344,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T178 — eigenvariable</strong> (5 occurrences; high priority)</summary>
+<summary><strong>T178 — eigenvariable</strong> (7 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7298,6 +7353,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T178-OLP-0072-B012 | OLP-0072 ·  | [upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54](../upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L52) | [mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54](../mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L52) | not yet paginated |
 | T178-OLP-0072-B013 | OLP-0072 ·  | [upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:72-76](../upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L72) | [mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:73-77](../mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L73) | not yet paginated |
 | T178-OLP-0072-B014 | OLP-0072 ·  | [upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:81-86](../upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L81) | [mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:82-86](../mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L82) | not yet paginated |
+| T178-OLP-0076-B007 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L17) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L17) | not yet paginated |
+| T178-OLP-0076-B008 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L31) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L29) | not yet paginated |
 
 **Chosen rendering/action:** आयगेन चर
 
@@ -7308,13 +7365,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T179 — eigenvariable condition</strong> (3 occurrences; high priority)</summary>
+<summary><strong>T179 — eigenvariable condition</strong> (5 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T179-OLP-0072-B012 | OLP-0072 ·  | [upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54](../upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L52) | [mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:52-54](../mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L52) | not yet paginated |
 | T179-OLP-0072-B013 | OLP-0072 ·  | [upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:72-76](../upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L72) | [mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:73-77](../mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L73) | not yet paginated |
 | T179-OLP-0072-B014 | OLP-0072 ·  | [upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:81-86](../upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L81) | [mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:82-86](../mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L82) | not yet paginated |
+| T179-OLP-0076-B007 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L17) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L17) | not yet paginated |
+| T179-OLP-0076-B008 | OLP-0076 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83](../upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L31) | [mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79](../mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex#L29) | not yet paginated |
 
 **Chosen rendering/action:** आयगेन चराची अट
 
@@ -7341,6 +7400,86 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** medium; compositional heading construction with directly supported rule register; open to correction.
 
 **Please double-check:** Is [चिन्ह] साठीचे नियम a natural uniform heading construction for LK connective and quantifier rules?
+
+</details>
+
+<details>
+<summary><strong>T181 — compactness (proof-theoretic property)</strong> (2 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T181-OLP-0077-B022 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L147) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L149) | not yet paginated |
+| T181-OLP-0077-B023 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L157) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L159) | not yet paginated |
+
+**Chosen rendering/action:** संहतता
+
+**Confidence/status:** medium; official mathematical headword extended definition-controlled to proof theory; provisional and expert-reviewable; open to correction.
+
+**Please double-check:** Is संहतता the natural Marathi label for the proof-theoretic compactness proposition, or should the finite-subset meaning be made explicit in the heading?
+
+</details>
+
+<details>
+<summary><strong>T182 — proof-theoretic notions</strong> (2 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T182-OLP-0077-B006 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18-18](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L18) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18-18](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L18) | not yet paginated |
+| T182-OLP-0077-B007 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | not yet paginated |
+
+**Chosen rendering/action:** सिद्धता-उपपत्तीय संकल्पना
+
+**Confidence/status:** medium; provisional compositional specialist term; exact full attestation not found; open to correction.
+
+**Please double-check:** Is सिद्धता-उपपत्तीय संकल्पना an intelligible Marathi heading for notions defined by derivability rather than satisfaction?
+
+</details>
+
+<details>
+<summary><strong>T183 — transitivity (of derivability)</strong> (3 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T183-OLP-0077-B016 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:102-106](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L102) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:104-108](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L104) | not yet paginated |
+| T183-OLP-0077-B017 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-126](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L108) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:110-128](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L110) | not yet paginated |
+| T183-OLP-0077-B018 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:128-131](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L128) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:130-133](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L130) | not yet paginated |
+
+**Chosen rendering/action:** संक्रमकता
+
+**Confidence/status:** medium; directly supported relation noun with source-controlled proof-theory sense; open to correction.
+
+**Please double-check:** Does संक्रमणकता remain the clearest label for transitivity of the derivability relation in proof-theoretic prose?
+
+</details>
+
+<details>
+<summary><strong>T184 — derivability / provability relation</strong> (17 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T184-OLP-0077-B007 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | not yet paginated |
+| T184-OLP-0077-B008 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:30-34](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L30) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:31-35](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L31) | not yet paginated |
+| T184-OLP-0077-B009 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:36-43](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L36) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:37-44](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L37) | not yet paginated |
+| T184-OLP-0077-B010 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:45-67](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L45) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:46-69](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L46) | not yet paginated |
+| T184-OLP-0077-B011 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:69-76](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L69) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:71-78](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L71) | not yet paginated |
+| T184-OLP-0077-B012 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:78-81](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L78) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:80-83](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L80) | not yet paginated |
+| T184-OLP-0077-B013 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:83-86](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L83) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:85-88](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L85) | not yet paginated |
+| T184-OLP-0077-B014 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:88-92](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L88) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:90-94](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L90) | not yet paginated |
+| T184-OLP-0077-B015 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-100](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L94) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:96-102](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L96) | not yet paginated |
+| T184-OLP-0077-B016 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:102-106](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L102) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:104-108](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L104) | not yet paginated |
+| T184-OLP-0077-B017 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-126](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L108) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:110-128](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L110) | not yet paginated |
+| T184-OLP-0077-B018 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:128-131](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L128) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:130-133](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L130) | not yet paginated |
+| T184-OLP-0077-B019 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:133-137](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L133) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:135-139](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L135) | not yet paginated |
+| T184-OLP-0077-B020 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:139-141](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L139) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:141-143](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L141) | not yet paginated |
+| T184-OLP-0077-B021 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:143-145](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L143) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:145-147](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L145) | not yet paginated |
+| T184-OLP-0077-B022 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L147) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L149) | not yet paginated |
+| T184-OLP-0077-B023 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L157) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L159) | not yet paginated |
+
+**Chosen rendering/action:** सिद्धतायोग्यता / सिद्धतायोग्य
+
+**Confidence/status:** medium; definition-controlled formal compound; exact full headword not directly attested; expert-reviewable; open to correction.
+
+**Please double-check:** Is सिद्धतायोग्यता the most natural Marathi label for a sequent being derivable, distinct from semantic वैधता and पूर्ति?
 
 </details>
 

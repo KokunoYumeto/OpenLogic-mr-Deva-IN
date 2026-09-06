@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 26 urgent/high decisions and
-648 current occurrences. Normal and low items remain in the full index.
+659 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -236,6 +236,8 @@ This view contains 26 urgent/high decisions and
 | `T023-OLP-0065-B006` | `OLP-0065` | 8.2 क्रमवर्ती कलन | 15-35 | 15-35 | 83–84 |
 | `T023-OLP-0065-B007` | `OLP-0065` | 8.2 क्रमवर्ती कलन | 37-50 | 37-50 | 83–84 |
 | `T023-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | 15-36 | 15-36 | 86–87 |
+| `T023-OLP-0077-B009` | `OLP-0077` |  | 36-43 | 37-44 | pending |
+| `T023-OLP-0077-B010` | `OLP-0077` |  | 45-67 | 46-69 | pending |
 
 ## T026 — contradiction/paradox → व्याघात / विरोधापत्ती
 
@@ -765,6 +767,11 @@ This view contains 26 urgent/high decisions and
 | `T044-OLP-0075-B019` | `OLP-0075` |  | 300-308 | 295-303 | pending |
 | `T044-OLP-0075-B020` | `OLP-0075` |  | 310-326 | 305-321 | pending |
 | `T044-OLP-0075-B021` | `OLP-0075` |  | 328-342 | 323-337 | pending |
+| `T044-OLP-0076-B005` | `OLP-0076` |  | 11-11 | 11-11 | pending |
+| `T044-OLP-0076-B006` | `OLP-0076` |  | 13-15 | 13-15 | pending |
+| `T044-OLP-0076-B008` | `OLP-0076` |  | 31-83 | 29-79 | pending |
+| `T044-OLP-0076-B009` | `OLP-0076` |  | 85-98 | 81-94 | pending |
+| `T044-OLP-0076-B010` | `OLP-0076` |  | 100-108 | 96-104 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
@@ -862,6 +869,8 @@ This view contains 26 urgent/high decisions and
 | `T178-OLP-0072-B012` | `OLP-0072` |  | 52-54 | 52-54 | pending |
 | `T178-OLP-0072-B013` | `OLP-0072` |  | 72-76 | 73-77 | pending |
 | `T178-OLP-0072-B014` | `OLP-0072` |  | 81-86 | 82-86 | pending |
+| `T178-OLP-0076-B007` | `OLP-0076` |  | 17-29 | 17-27 | pending |
+| `T178-OLP-0076-B008` | `OLP-0076` |  | 31-83 | 29-79 | pending |
 
 ## T179 — eigenvariable condition → आयगेन चराची अट
 
@@ -876,6 +885,8 @@ This view contains 26 urgent/high decisions and
 | `T179-OLP-0072-B012` | `OLP-0072` |  | 52-54 | 52-54 | pending |
 | `T179-OLP-0072-B013` | `OLP-0072` |  | 72-76 | 73-77 | pending |
 | `T179-OLP-0072-B014` | `OLP-0072` |  | 81-86 | 82-86 | pending |
+| `T179-OLP-0076-B007` | `OLP-0076` |  | 17-29 | 17-27 | pending |
+| `T179-OLP-0076-B008` | `OLP-0076` |  | 31-83 | 29-79 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

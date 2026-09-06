@@ -1,0 +1,106 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: proving-things-quant
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{prq}
+
+\olsection{संख्यापकांसह \usetoken{P}{derivation}}
+
+\begin{ex}
+क्रमवर्ती $\lexists[x][\lnot !A(x)]
+\Sequent \lnot \lforall[x][!A(x)]$ ची एक $\Log{LK}$-!!{derivation} द्या.
+
+संख्यापक हाताळताना आयगेन चराच्या अटीचा भंग होणार नाही याची खात्री करावी
+लागते; काही वेळा त्यासाठी ठरावीक अनुमाने कोणत्या क्रमाने करायची, यात फेरबदल
+करावा लागतो. सामान्यतः आयगेन चराची अट लागू असलेले नियम आधी हाताळण्याचा
+प्रयत्न केल्यास मदत होते (पूर्ण झालेल्या सिद्धतेत ते खालच्या बाजूस असतील).
+तसेच पुढे काय येईल याचा विचार करून आरंभीची क्रमवर्ती कशी असेल याचा अंदाज
+लावणे उपयुक्त ठरते. आपल्या बाबतीत ती $!A(a) \Sequent !A(a)$ यासारखी असावी
+लागेल. याचा अर्थ असा की संख्यापकांचे नियम ``उलट्या दिशेने'' लागू करताना
+$\lforall$ नियम आणि $\lexists$ नियम या दोन्हींसाठी एकच पद---ज्याला आपण $a$
+म्हणू---निवडावे लागेल. प्रत्येक नियमासाठी वेगवेगळी पदे निवडली, तर शेवटी
+$!A(a) \Sequent !A(b)$ यासारखी क्रमवर्ती मिळेल; ती अर्थातच निष्पन्न करता
+येत नाही.
+
+नेहमीप्रमाणे आपण पुढील क्रमवर्ती लिहून सुरुवात करतो:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lexists[x][\lnot !A(x)] \fCenter \lnot \lforall[x][!A(x)]$
+\end{prooftree}
+आपण \LeftR{\exists} नियम किंवा \RightR{\lnot} नियम यांपैकी कोणताही लागू करू
+शकतो. \LeftR{\exists} नियमाला आयगेन चराची अट लागू असल्यामुळे तो उशिरा
+हाताळण्यापेक्षा लवकर हाताळणे योग्य ठरेल; म्हणून तोच नियम आधी लागू करू.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \lnot !A(a) \fCenter \lnot \lforall[x][!A(x)]$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][\lnot !A(x)] \fCenter \lnot \lforall[x][!A(x)]$
+\end{prooftree}
+\LeftR{\lnot} आणि \RightR{\lnot} नियम उलट्या दिशेने लागू केल्यावर पुढील
+निष्पत्ती मिळते:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lforall[x][!A(x)] \fCenter !A(a)$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A(a), \lforall[x][!A(x)] \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\lforall[x][!A(x)], \lnot !A(a) \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \lnot !A(a) \fCenter \lnot \lforall[x] !A(x)$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x] \lnot !A(x) \fCenter \lnot \lforall[x] !A(x)$
+\end{prooftree}
+या टप्प्यावर \LeftR{\forall} नियम लागू करणे हाच आपल्यापुढील एकमेव पर्याय
+आहे. या नियमाला आयगेन चराचे बंधन लागू नसल्यामुळे आपला मार्ग मोकळा आहे.
+आपल्याला आरंभीची क्रमवर्ती (जिचे स्वरूप $!A(a) \Sequent !A(a)$ असे आहे)
+मिळवण्याचा प्रयत्न करायचा आहे, हे आठवा; म्हणून नियम लागू करताना $!A$ मध्ये
+घालायचे पद म्हणून $a$ निवडले पाहिजे.
+\begin{prooftree}
+\Axiom$!A(a) \fCenter !A(a)$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$\lforall[x][!A(x)] \fCenter !A(a)$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A(a), \lforall[x][!A(x)] \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\lforall[x][!A(x)], \lnot !A(a) \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \lnot !A(a) \fCenter \lnot \lforall[x][!A(x)]$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][ \lnot !A(x)] \fCenter \lnot \lforall[x][!A(x)]$
+\end{prooftree}
+विशेषतः संख्यापक हाताळताना, या टप्प्यावर आयगेन चराच्या अटीचा भंग झालेला नाही
+ना, हे पुन्हा तपासणे महत्त्वाचे असते. आयगेन चराची अट लागू असलेला आपण वापरलेला
+एकमेव नियम \LeftR{\exists} होता आणि आयगेन चर~$a$ त्याच्या खालच्या क्रमवर्तीत
+(म्हणजे अंतिम क्रमवर्तीत) येत नाही; म्हणून ही योग्य !!{derivation} आहे.
+\end{ex}
+
+\begin{prob}
+पुढील क्रमवर्तींसाठी !!{derivation}s तयार करा:
+\begin{enumerate}
+\item $\Sequent (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) \lif
+\lforall[z][(!A(z) \land !B(z))]$.
+\item $\Sequent (\lexists[x][!A(x)] \lor \lexists[y][!B(y)]) \lif
+\lexists[z][(!A(z) \lor !B(z))]$.
+\item $\lforall[x][(!A(x) \lif !B)] \Sequent \lexists[y][!A(y)] \lif !B$.
+\item $\lforall[x][\lnot !A(x)] \Sequent \lnot\lexists[x][!A(x)]$.
+\item $\Sequent \lnot\lexists[x][!A(x)] \lif \lforall[x][\lnot !A(x)]$.
+\item $\Sequent \lnot\lexists[x][\lforall[y][((!A(x,y) \lif \lnot
+!A(y,y)) \land (\lnot !A(y,y) \lif !A(x,y)))]]$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+पुढील क्रमवर्तींसाठी !!{derivation}s तयार करा:
+\begin{enumerate}
+\item $\Sequent \lnot\lforall[x][!A(x)] \lif \lexists[x][\lnot!A(x)]$.
+\item $(\lforall[x][!A(x)] \lif !B) \Sequent \lexists[y][(!A(y) \lif !B)]$.
+\item $\Sequent \lexists[x][(!A(x) \lif \lforall[y][!A(y)])]$.
+\end{enumerate}
+(या सर्वांसाठी $\RightR{\Contraction}$~नियम आवश्यक आहे.)
+\end{prob}
+
+\end{document}

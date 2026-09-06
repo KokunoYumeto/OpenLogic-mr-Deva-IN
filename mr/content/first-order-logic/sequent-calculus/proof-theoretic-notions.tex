@@ -1,0 +1,172 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\begin{editorial}
+  या विभागात नैसर्गिक निगमनासाठी सिद्धतायोग्यता संबंध आणि सुसंगतता यांच्या
+  व्याख्या एकत्रित केल्या आहेत.
+\end{editorial}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{ptn}}
+      {\olfileid{pl}{seq}{ptn}}
+
+\olsection{सिद्धता-उपपत्तीय संकल्पना}
+
+\begin{explain}
+जशा आपण अनेक महत्त्वाच्या चिन्हार्थविषयक संकल्पना (वैधता, तार्किक निष्पन्नता,
+पूर्ततायोग्यता) परिभाषित केल्या आहेत, तशाच त्यांना अनुरूप
+\emph{सिद्धता-उपपत्तीय संकल्पना} आता परिभाषित करू. !!{structure}s मध्ये
+!!{sentence}s ची पूर्ति होते की नाही, याचा आधार घेऊन या संकल्पना परिभाषित
+केल्या जात नाहीत; त्याऐवजी ठरावीक क्रमवर्तींची !!{derivability} किंवा
+!!{nonderivability} यांचा आधार घेतला जातो. या दोन प्रकारच्या संकल्पना
+एकमेकांशी जुळतात, हा एक महत्त्वाचा शोध होता. त्या जुळतात, हाच
+\emph{निर्दोषता प्रमेय} आणि \emph{संपूर्णता प्रमेय} यांचा आशय आहे.
+\end{explain}
+
+\begin{defn}[प्रमेये]
+!!^a{sentence}~$!A$ हे \emph{प्रमेय} असते, जर $\Log{LK}$ मध्ये
+$\quad \Sequent !A$ या क्रमवर्तीची !!a{derivation} असेल. $!A$ हे प्रमेय
+असेल तर आपण $\Proves !A$ लिहितो आणि ते प्रमेय नसेल तर $\Proves/ !A$ लिहितो.
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!^a{sentence}~$!A$ हे !!{sentence}s च्या संच~$\Gamma$ \emph{पासून
+!!{derivable}} असते, म्हणजे $\Gamma \Proves !A$, तेव्हा आणि केवळ तेव्हाच,
+जेव्हा एखादा सांत उपसंच~$\Gamma_0 \subseteq \Gamma$ आणि $\Gamma_0$ मधील
+!!{sentence}s ची एखादी क्रमिका $\Gamma_0'$ अशी असते की $\Log{LK}$
+$\Gamma_0' \Sequent !A$ हे !!{derive}s करते. $!A$ हे $\Gamma$ पासून
+!!{derivable} नसेल, तर आपण $\Gamma \Proves/ !A$ लिहितो.
+\end{defn}
+
+आकुंचन, दुर्बलीकरण आणि अदलाबदल नियमांमुळे $\Gamma_0'$ मधील
+!!{sentence}s चा क्रम आणि त्यांची पुनरावृत्ती कितीदा होते हे महत्त्वाचे नसते:
+$\Gamma_0' \Sequent !A$ ही क्रमवर्ती !!{derivable} असेल, तर
+$\Gamma_0'$ मध्ये असलेली तीच !!{sentence}s असणाऱ्या कोणत्याही
+$\Gamma_0''$ साठी $\Gamma_0'' \Sequent !A$ ही क्रमवर्तीसुद्धा निष्पन्न करता
+येते. उदाहरणार्थ, $\Gamma_0 = \{!B, !C\}$ असेल, तर
+$\Gamma_0' = \tuple{!B, !B, !C}$ आणि $\Gamma_0'' =
+\tuple{!C, !C, !B}$ या दोन्ही क्रमिकांमध्ये $\Gamma_0$ मधीलच
+!!{sentence}s आहेत. यांपैकी एक क्रमिका असणारी क्रमवर्ती !!{derivable} असेल,
+तर दुसरी असणारी क्रमवर्तीसुद्धा निष्पन्न करता येते; उदा.:
+\begin{prooftree}
+  \AxiomC{}
+  \Deduce$!B, !B, !C \fCenter !A$
+  \RightLabel{\LeftR{\Contraction}}
+  \UnaryInf$!B, !C \fCenter !A$
+  \RightLabel{\LeftR{\Exchange}}
+  \UnaryInf$!C, !B \fCenter !A$
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!C, !C, !B \fCenter !A$
+\end{prooftree}
+यापुढे $\Gamma_0$ हा !!{sentence}s चा सांत संच असेल, तर
+$\Gamma_0 \Sequent !A$ याचा अर्थ असा कोणताही क्रमवर्ती घेऊ की ज्याच्या
+पूर्वांगात $\Gamma_0$ मधील !!{sentence}s ची क्रमिका आहे; तसेच आवश्यक असल्यास
+आकुंचन, अदलाबदल आणि दुर्बलीकरणे गृहीत धरू.
+
+\begin{defn}[सुसंगतता]
+वाक्यांचा संच~$\Gamma$ हा \emph{विसंगत} असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा
+एखादा सांत उपसंच~$\Gamma_0 \subseteq \Gamma$ असा असतो की $\Log{LK}$
+$\Gamma_0 \Sequent \quad$ हे !!{derive}s करते. $\Gamma$ विसंगत नसेल,
+म्हणजे प्रत्येक सांत $\Gamma_0 \subseteq \Gamma$ साठी $\Log{LK}$
+$\Gamma_0 \Sequent \quad$ हे !!{derive} करत नसेल, तर त्याला
+\emph{सुसंगत} म्हणतो.
+\end{defn}
+
+\begin{prop}[परावर्तिता]
+\ollabel{prop:reflexivity}
+$!A \in \Gamma$ असेल, तर $\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+$!A \Sequent !A$ ही आरंभीची क्रमवर्ती !!{derivable} आहे आणि $\{!A\}
+\subseteq \Gamma$.
+\end{proof}
+  
+\begin{prop}[एकस्वनिकता]
+\ollabel{prop:monotonicity}
+$\Gamma \subseteq \Delta$ आणि $\Gamma \Proves !A$ असेल, तर $\Delta
+\Proves !A$.
+\end{prop}
+
+\begin{proof}
+$\Gamma \Proves !A$ असे समजा; म्हणजे, एखादा सांत $\Gamma_0
+\subseteq \Gamma$ असा आहे की $\Gamma_0 \Sequent !A$ ही क्रमवर्ती
+!!{derivable} आहे. $\Gamma \subseteq \Delta$ असल्यामुळे $\Gamma_0$ हा
+$\Delta$ चासुद्धा सांत उपसंच आहे. म्हणून $\Gamma_0 \Sequent !A$ ची
+!!{derivation} ही $\Delta \Proves !A$ हेसुद्धा दाखवते.
+\end{proof}
+
+\begin{prop}[संक्रमकता]
+\ollabel{prop:transitivity}
+$\Gamma \Proves !A$ आणि $\{!A\} \cup \Delta \Proves
+!B$ असेल, तर $\Gamma \cup \Delta \Proves !B$.
+\end{prop}
+
+\begin{proof}
+$\Gamma \Proves !A$ असेल, तर एखादा सांत $\Gamma_0 \subseteq \Gamma$
+आणि $\Gamma_0 \Sequent !A$ ची !!a{derivation}~$\pi_0$ असते.
+$\{!A\} \cup \Delta \Proves !B$ असेल, तर एखाद्या सांत उपसंचासाठी
+$\Delta_0 \subseteq \Delta$, $!A, \Delta_0 \Sequent !B$ ची
+!!a{derivation}~$\pi_1$ असते. पुढील !!{derivation} विचारात घ्या:
+\begin{prooftree}
+  \AxiomC{}
+  \RightLabel{$\pi_0$}
+  \Deduce$\Gamma_0 \fCenter !A$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!A, \Delta_0 \fCenter !B$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma_0, \Delta_0 \fCenter !B$
+\end{prooftree}
+$\Gamma_0 \cup \Delta_0 \subseteq \Gamma \cup \Delta$ असल्यामुळे यावरून
+$\Gamma \cup \Delta \Proves !B$ हे दिसते.
+\end{proof}
+
+विशेषतः, याचा अर्थ असा की $\Gamma \Proves !A$ आणि $!A
+\Proves !B$ असेल, तर $\Gamma \Proves !B$. तसेच $!A_1,
+\dots, !A_n \Proves !B$ असेल आणि प्रत्येक~$i$ साठी $\Gamma \Proves !A_i$
+असेल, तर $\Gamma \Proves !B$, हेसुद्धा यावरून मिळते.
+
+\begin{prop}
+\ollabel{prop:incons}
+$\Gamma$ विसंगत असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा प्रत्येक
+  वाक्य~$!A$ साठी $\Gamma \Proves {!A}$.
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+\begin{prob}
+\olref[fol][seq][ptn]{prop:incons} सिद्ध करा.
+\end{prob}
+
+\begin{prop}[संहतता]
+  \ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item $\Gamma \Proves !A$ असेल, तर एखादा सांत उपसंच $\Gamma_0
+    \subseteq \Gamma$ असा आहे की $\Gamma_0 \Proves !A$.
+  \item $\Gamma$ चा प्रत्येक सांत उपसंच सुसंगत असेल, तर $\Gamma$ सुसंगत
+    असतो.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\Gamma \Proves !A$ असेल, तर एखादा सांत उपसंच
+      $\Gamma_0 \subseteq \Gamma$ असा आहे की $\Gamma_0
+      \Sequent !A$ या क्रमवर्तीची !!a{derivation} आहे. परिणामी,
+      $\Gamma_0 \Proves !A$.
+    \item $\Gamma$ विसंगत असेल, तर एखादा सांत
+      उपसंच~$\Gamma_0 \subseteq \Gamma$ असा आहे की $\Log{LK}$
+      $\Gamma_0 \Sequent \quad$ हे !!{derive}s करते. पण मग $\Gamma_0$ हा
+      $\Gamma$ चा विसंगत सांत उपसंच आहे.
+  \end{enumerate}
+\end{proof}
+
+\end{document}
