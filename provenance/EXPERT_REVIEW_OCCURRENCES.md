@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **59/722 source units**, 716 aligned translated blocks, 4474 review occurrences. The referenced development reader has 83 pages and SHA-256 f6ae9a94357502d022b16f71c2638b497dc61f67750575c731b7d8690bf6a2df; it is not a final accessible release.
+Current scope: **59/722 source units**, 716 aligned translated blocks, 4474 review occurrences. The referenced development reader has 83 pages and SHA-256 a817e6ae742c3fad29ee0ee404e678823e269696c36c3c75a02edad76714ec40; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view.
 

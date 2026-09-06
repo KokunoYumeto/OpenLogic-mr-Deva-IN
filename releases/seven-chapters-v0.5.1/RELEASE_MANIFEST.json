@@ -1,0 +1,68 @@
+{
+  "schema": "openlogic-release-manifest/1",
+  "release": "seven-chapters-v0.5.1",
+  "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_units": 59,
+    "total_units": 722,
+    "remaining_units": 663,
+    "aligned_segments": 716,
+    "complete_chapters": 7
+  },
+  "repair": {
+    "supersedes_reader_assets_from": "seven-chapters-v0.5",
+    "preserves_release": "seven-chapters-v0.5",
+    "reader_facing_raw_revision_removed": true,
+    "translation_content_otherwise_byte_identical": true
+  },
+  "assets": [
+    {
+      "filename": "openlogic-mr-seven-chapters.pdf",
+      "bytes": 432876,
+      "sha256": "a817e6ae742c3fad29ee0ee404e678823e269696c36c3c75a02edad76714ec40"
+    },
+    {
+      "filename": "openlogic-mr-seven-chapters.tex",
+      "bytes": 483010,
+      "sha256": "52e3c3eb3f12fa7de77af1916cded33ab401e3aeab59d797b24e3acd8c163b5d"
+    },
+    {
+      "filename": "openlogic-mr-seven-chapters-html.zip",
+      "bytes": 1368987,
+      "sha256": "cdec626fc130ad8b7b306356c4a4617c153b5c3445d9f4a0603f5f5e003999fb"
+    },
+    {
+      "filename": "openlogic-mr-seven-chapters-review.zip",
+      "bytes": 4089593,
+      "sha256": "0c13cb92bcf63be82216400f8f84cd330485be415380a16cba36aef898e16741"
+    },
+    {
+      "filename": "openlogic-mr-seven-chapters-editable-sources.zip",
+      "bytes": 14031048,
+      "sha256": "3458635108b1a8b10c30655c855b73f888dbf3553acf234a3daf66cef3db23c5"
+    }
+  ],
+  "source_package_manifest": {
+    "path": "provenance/seven-chapters-v0.5.1/EDITION_FILE_MANIFEST.json",
+    "files_listed": 1334,
+    "bytes": 251587,
+    "sha256": "2c58214ebe0e56e81b26efbc8cb2a0dfd57575f177680fc74b2258c0d868a93a"
+  },
+  "release_qa": {
+    "path": "provenance/seven-chapters-v0.5.1/RELEASE_QA.json",
+    "bytes": 2910,
+    "sha256": "08488312f8b2736478a87415d69897c773b984c4da5ab30ec0058b8f9a9b2b5b"
+  },
+  "repair_qa": {
+    "path": "provenance/seven-chapters-v0.5.1/READER_FRONTMATTER_REPAIR.json",
+    "bytes": 2444,
+    "sha256": "68db92e6eade503f96308747d2bc9f07bc9733e04bdb2223b9dae2fd3aad2e24"
+  },
+  "cross_package_qa": {
+    "path": "provenance/seven-chapters-v0.5.1/CROSS_PACKAGE_QA-RELEASE.json",
+    "bytes": 1308,
+    "sha256": "d7a03f20f7d27fab4623e522660efad139ea6e0b3230590f55aa65cc54f43192"
+  },
+  "full_edition_complete": false
+}

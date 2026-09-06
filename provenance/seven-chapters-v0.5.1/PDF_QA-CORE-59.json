@@ -1,0 +1,108 @@
+{
+  "schema": "openlogic-pdf-qa/1",
+  "artifact": "build/core/openlogic-mr-core.pdf",
+  "scope": {
+    "translation_source_units": 59,
+    "reader_sections": 51,
+    "complete_chapters": 7,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0062",
+    "released": false,
+    "successor_candidate": "seven-chapters-v0.5.1"
+  },
+  "build": {
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "tex_input_sha256": "52e3c3eb3f12fa7de77af1916cded33ab401e3aeab59d797b24e3acd8c163b5d",
+    "inputs_manifest_sha256": "d8c4fec1d75a3e5cb93f5827bb0929151ece313f545c4d923a9005b3faae6db6",
+    "source_date_epoch": "1788480000",
+    "passes_per_build": 2,
+    "matching_clean_runs": [
+      {
+        "filename": "TEX_BUILD_20260906T133630906.json",
+        "sha256": "9a72b84945c10962bd0f8d67868bedc83abb83d36d3079553f761d258114eed7",
+        "final_log_sha256": "b2f8cd740ea650dbcdd35811465d22eb0f9af96c40f80db38aee1cfef4b3d58e",
+        "result": "built-log-clean"
+      },
+      {
+        "filename": "TEX_BUILD_20260906T134315010.json",
+        "sha256": "c299671fa00cc1a0a17688daeec9661c1b5625990327213808d3852456d6ff7e",
+        "final_log_sha256": "aedce99f521b2fbaa835282618211e1d999917480b1560fe62adb4c1ef9ba50b",
+        "result": "built-log-clean"
+      }
+    ],
+    "reproducible_pdf_bytes": true
+  },
+  "prepared_tex": {
+    "bytes": 483010,
+    "sha256": "52e3c3eb3f12fa7de77af1916cded33ab401e3aeab59d797b24e3acd8c163b5d",
+    "sections": 51,
+    "trailing_space_lines": 0,
+    "unresolved_token_or_reference_markers": 0
+  },
+  "pdf": {
+    "bytes": 432876,
+    "sha256": "a817e6ae742c3fad29ee0ee404e678823e269696c36c3c75a02edad76714ec40",
+    "pages": 83,
+    "page_size": "A4",
+    "encrypted": false,
+    "javascript": false,
+    "title": "मुक्त तर्कशास्त्र: संच, संबंध, फलने, संचांचे आकारमान, अंकगणितीकरण, अनंत संच आणि विधानीय तर्कशास्त्र",
+    "author": "Open Logic Project; Marathi machine translation by Codex"
+  },
+  "visual_review": {
+    "performed_utc": "2026-09-06T13:58:25.635396Z",
+    "renderer": "PyMuPDF",
+    "render_dpi": 110,
+    "all_pages_rendered": 83,
+    "all_pages_reviewed_in_contact_sheets": true,
+    "contact_sheets": 7,
+    "detail_pages_reviewed": [
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81
+    ],
+    "new_chapter_reviewed_at_readable_scale": true,
+    "tables_diagrams_and_formula_layout": "passed",
+    "marathi_shaping": "passed",
+    "headings_headers_footers_contents_and_page_numbers": "passed",
+    "source_correction_notes_and_references": "passed",
+    "clipping_overlap_black_boxes_or_unreadable_glyphs": 0,
+    "repair_page_reviewed_at_readable_scale": true,
+    "repair_page": 1,
+    "unchanged_pages_pixel_identical_to_fully_reviewed_v0.5": 82,
+    "comparison_receipt": "READER_FRONTMATTER_COMPARISON-v0.5.1.json",
+    "comparison_receipt_sha256": "867bb7244d3eaf7d9d8757dcc8711a307105842ef89f07a0e329888a1f8a0692"
+  },
+  "font_review": {
+    "font_programs": 21,
+    "all_embedded": true,
+    "all_subset": true,
+    "marathi_fonts_have_unicode_maps": true,
+    "standard_computer_modern_symbol_fonts_without_unicode_maps": 2
+  },
+  "text_extraction": {
+    "tool": "Poppler pdftotext",
+    "utf8_bytes": 452890,
+    "characters": 197593,
+    "form_feeds": 83,
+    "replacement_characters": 0,
+    "unexpanded_glossary_tokens": 0,
+    "raw_formula_metavariables": 0,
+    "rendered_source_correction_headings": 33,
+    "greek_formula_metavariables_present": true,
+    "raw_upstream_revision_present": false,
+    "replacement_front_matter_present": true
+  },
+  "accessibility": {
+    "pdf_tagged": false,
+    "development_reader_only": false,
+    "disposition": "Publish with the verified accessible HTML companion."
+  },
+  "result": "passed_for_seven_chapters_v0.5.1_publication"
+}

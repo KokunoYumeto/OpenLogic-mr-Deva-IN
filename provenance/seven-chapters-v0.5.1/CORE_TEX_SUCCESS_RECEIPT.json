@@ -1,0 +1,27 @@
+{
+  "schema": "guarded-tex-build/1",
+  "mutex": "Global\\InterlanguageTeXSlotV1",
+  "acquired": true,
+  "abandonedRecovery": false,
+  "passes": [
+    {
+      "logSha256": "24274cf84536341c3655bc6d8647e69cced38ecd1b0e065dcec387a4b18625f8",
+      "exitCode": 0,
+      "pass": 1
+    },
+    {
+      "logSha256": "aedce99f521b2fbaa835282618211e1d999917480b1560fe62adb4c1ef9ba50b",
+      "exitCode": 0,
+      "pass": 2
+    }
+  ],
+  "result": "built-log-clean",
+  "texInputSha256": "52e3c3eb3f12fa7de77af1916cded33ab401e3aeab59d797b24e3acd8c163b5d",
+  "sourceDateEpoch": "1788480000",
+  "warnings": [],
+  "pdf": {
+    "sha256": "a817e6ae742c3fad29ee0ee404e678823e269696c36c3c75a02edad76714ec40",
+    "bytes": 432876,
+    "name": "openlogic-mr-core.pdf"
+  }
+}

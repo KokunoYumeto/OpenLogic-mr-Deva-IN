@@ -19,15 +19,16 @@ was built twice to identical bytes and every page was inspected. Its offline HTM
 companion passed exact source-conversion, structure, asset and desktop/mobile
 browser checks.
 
-- **Current release:** [सात प्रकरणे — PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/seven-chapters-v0.5).
+- **Current release:** [सात प्रकरणे — PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/seven-chapters-v0.5.1). This successor removes the raw upstream revision from reader-facing front matter while retaining it in this technical README and provenance records.
 - **DOI mirror:** [edition concept DOI 10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960), which resolves to the latest version.
-- **PDF:** [83-page cumulative reader](releases/seven-chapters-v0.5/openlogic-mr-seven-chapters.pdf).
+- **PDF:** [83-page cumulative reader](releases/seven-chapters-v0.5.1/openlogic-mr-seven-chapters.pdf).
 - **Offline HTML:** download and extract `openlogic-mr-seven-chapters-html.zip`, then open `index.html`.
 - **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/), [size of sets](mr/content/sets-functions-relations/size-of-sets/), [arithmetization](mr/content/sets-functions-relations/arithmetization/), [infinite sets](mr/content/sets-functions-relations/infinite/), and [propositional syntax and semantics](mr/content/propositional-logic/syntax-and-semantics/).
 - **Terminology and expert review:** begin with the [shared-schema review guide](provenance/translation-decisions/START_HERE.md), then use the [full applied-decision index](provenance/translation-decisions/TRANSLATION_DECISIONS_FULL.md), [priority review](provenance/translation-decisions/PRIORITY_REVIEW.md), [one-row-per-occurrence CSV](provenance/translation-decisions/DECISION_OCCURRENCES.csv), or [canonical JSON](provenance/translation-decisions/DECISIONS.json). The backward-compatible [decision ledger](provenance/EXPERT_REVIEW_LOG.md) and occurrence JSONL remain available. These surfaces record exact source/target scopes, current PDF page ranges, reversible choices and plain review questions without making review a completion gate.
 - **Pristine English:** `upstream/`; this is source evidence, not translated coverage.
 - **Current source-checkpoint evidence:** `provenance/source-checkpoint-59/`.
-- **Current reader evidence:** `provenance/seven-chapters-v0.5/`.
+- **Current reader evidence:** `provenance/seven-chapters-v0.5.1/`.
+- **Earlier cumulative release:** [seven-chapters-v0.5](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/seven-chapters-v0.5), preserved unchanged.
 - **Earlier cumulative release:** [six-chapters-v0.4](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/six-chapters-v0.4), preserved unchanged.
 - **Released-reader evidence:** `provenance/foundations-v0.2/`; root-level provenance remains the historical first release snapshot.
 - **Earlier cumulative release:** [foundations-v0.2](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/foundations-v0.2), preserved unchanged.
@@ -50,7 +51,7 @@ records across 59 units.
 Deterministic checks compare formulas, token identities, macro inventories,
 labels, citations, links and source file references.
 Visual, structural and semantic checks are documented in
-`provenance/seven-chapters-v0.5/` and the 59-unit source checkpoint.
+`provenance/seven-chapters-v0.5.1/` and the 59-unit source checkpoint.
 Such checks do not establish the absence
 of every possible translation error.
 Two guarded builds on the same host produced identical PDF bytes with fixed

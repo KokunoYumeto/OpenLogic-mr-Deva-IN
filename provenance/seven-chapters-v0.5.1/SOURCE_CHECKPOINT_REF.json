@@ -1,0 +1,7 @@
+{
+  "schema": "openlogic-source-checkpoint-reference/1",
+  "path": "provenance/source-checkpoint-59/SOURCE_CHECKPOINT.json",
+  "bytes": 31407,
+  "sha256": "0a9d1883272fdf94084e2a7c88eb7fa419d48a415935928bbe06c00572d85040",
+  "reader_receipts_superseded_by": "provenance/seven-chapters-v0.5.1/"
+}

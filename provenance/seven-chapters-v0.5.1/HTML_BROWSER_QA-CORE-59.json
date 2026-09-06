@@ -1,0 +1,78 @@
+{
+  "schema": "openlogic-html-browser-qa/1",
+  "reviewed_utc": "2026-09-06T13:58:25.635396Z",
+  "artifact": {
+    "filename": "index.html",
+    "bytes": 1460985,
+    "sha256": "3a237b0c3becb7d188ab362e21b1368db554968fd2e08d2f505c34eea3518ffd",
+    "stylesheet_sha256": "c4d0ea2b2849c5e72ed30da130dfcfbf31c4185231b838cf2bca0bce1211821f"
+  },
+  "browser": "Chromium through Codex in-app browser",
+  "local_origin": "http://127.0.0.1:8766/",
+  "desktop": {
+    "viewport_css_pixels": [
+      1280,
+      720
+    ],
+    "document_client_width": 1265,
+    "document_scroll_width": 1265,
+    "body_client_width": 928,
+    "body_scroll_width": 928,
+    "page_level_horizontal_overflow": false
+  },
+  "mobile": {
+    "viewport_css_pixels": [
+      390,
+      844
+    ],
+    "measurement_method": "explicit Codex in-app browser viewport override",
+    "document_client_width": 375,
+    "document_scroll_width": 375,
+    "body_client_width": 375,
+    "body_scroll_width": 375,
+    "page_level_horizontal_overflow": false,
+    "focusable_display_math_regions": 116,
+    "wide_display_math_regions": 35,
+    "widest_exercised_region_client_width": 328,
+    "widest_exercised_region_scroll_width": 544,
+    "all_wide_regions_use_overflow_x_auto": true,
+    "horizontal_scroll_exercised": {
+      "region_index_zero_based": 94,
+      "scroll_left_before": 0,
+      "scroll_left_after": 216.44444274902344
+    }
+  },
+  "runtime_counts": {
+    "native_mathml": 3373,
+    "focusable_display_math_regions": 116,
+    "internal_fragment_links": 204,
+    "diagram_assets": 13,
+    "desktop_diagram_assets_loaded_successfully": 13,
+    "mobile_diagram_assets_loaded_successfully": 13,
+    "broken_fragment_links": 0,
+    "duplicate_ids": 0,
+    "console_errors_or_warnings": 0,
+    "wide_regions_inspected": 121
+  },
+  "front_matter": {
+    "replacement_sentence_present": true,
+    "raw_upstream_revision_present": false,
+    "desktop_visual_review": "passed",
+    "mobile_visual_review": "passed",
+    "mobile_bounding_rect_css_pixels": {
+      "left": 14.395833015441896,
+      "right": 360.7152910232544,
+      "width": 346.3194580078125,
+      "viewport_width": 390
+    }
+  },
+  "visual_samples": [
+    "title and linked seven-chapter contents at desktop width",
+    "repaired front matter at desktop width",
+    "repaired front matter at mobile width",
+    "all 13 lazily loaded diagram assets",
+    "widest mobile formula before and after keyboard horizontal scrolling"
+  ],
+  "result": "passed",
+  "notes": "Marathi shaping, native MathML, responsive diagrams, captions, and local navigation rendered cleanly at both widths. The repaired sentence wrapped cleanly, all diagrams decoded, and wide formulas remained inside keyboard-focusable horizontally scrollable regions."
+}

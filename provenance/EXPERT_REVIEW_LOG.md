@@ -2,7 +2,7 @@
 
 This ledger accompanies the Marathi OpenLogic translation at frozen upstream revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. It is maintained for specialist review and correction; review is welcome but is not a completion or publication gate.
 
-The current editable-source coverage is **59/722 units** (OLP-0004–OLP-0062, 716 aligned translated content blocks). The current public reader is the 51/722-unit `six-chapters-v0.4` checkpoint. Decisions without an applied location are pre-adjudications for later units. This is partial coverage and makes no full-corpus claim.
+The current editable-source coverage is **59/722 units** (OLP-0004–OLP-0062, 716 aligned translated content blocks). The current public reader is the 59/722-unit `current public checkpoint` checkpoint. Decisions without an applied location are pre-adjudications for later units. This is partial coverage and makes no full-corpus claim.
 
 For T001–T044, the rationale provenance is explicitly a **retrospective reconstruction** from the durable decision records and current aligned files. It is not represented as an original contemporaneous motive. T045 onward were recorded with their first current use. Aligned block scopes are exact locations governed by a unit-level decision index; they do not claim that the literal headword occurs in every listed block. Literal line hits are listed separately when found.
 
@@ -10,7 +10,7 @@ Authorities below are only those actually consulted. A missing authority is stat
 
 Occurrence-level review surfaces add exact source/target lines and the current coherent-reader page range: [readable full occurrence index](EXPERT_REVIEW_OCCURRENCES.md), [priority view](EXPERT_REVIEW_PRIORITY.md), [one-row-per-occurrence CSV](EXPERT_REVIEW_OCCURRENCES.csv), and [machine JSONL](EXPERT_REVIEW_OCCURRENCES.jsonl).
 
-The current public DOI record `10.5281/zenodo.22421680` predates this development ledger. The next substantive, nonduplicative release will include it under the existing concept DOI `10.5281/zenodo.22307960`; no ledger-only release is created.
+The current public DOI record `10.5281/zenodo.22449519` predates this development ledger. The next substantive, nonduplicative release will include it under the existing concept DOI `10.5281/zenodo.22307960`; no ledger-only release is created.
 
 ## T001 — set
 

@@ -1,0 +1,73 @@
+{
+  "schema": "openlogic-cumulative-release-qa/1",
+  "release": "seven-chapters-v0.5.1",
+  "scope": {
+    "translated_source_units": 59,
+    "total_source_units": 722,
+    "remaining_source_units": 663,
+    "aligned_content_segments": 716,
+    "reader_sections": 51,
+    "complete_chapters": 7,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0062",
+    "complete_edition": false
+  },
+  "successor_repair": {
+    "superseded_reader_release": "seven-chapters-v0.5",
+    "preserved_release": "seven-chapters-v0.5",
+    "raw_upstream_revision_removed_from_pdf_tex_and_html": true,
+    "raw_upstream_revision_retained_in_technical_provenance": true,
+    "translation_content_otherwise_byte_identical": true,
+    "pdf_changed_pages": [
+      1
+    ],
+    "pdf_unchanged_pages_pixel_identical": 82
+  },
+  "pdf": {
+    "filename": "openlogic-mr-seven-chapters.pdf",
+    "pages": 83,
+    "bytes": 432876,
+    "sha256": "a817e6ae742c3fad29ee0ee404e678823e269696c36c3c75a02edad76714ec40",
+    "two_clean_guarded_builds_byte_identical": true,
+    "all_pages_visually_reviewed": true,
+    "tagged_pdf": false,
+    "accessible_html_companion_required": true
+  },
+  "accessible_html": {
+    "entrypoint": "reader/seven-chapters/index.html",
+    "bytes": 1460985,
+    "sha256": "3a237b0c3becb7d188ab362e21b1368db554968fd2e08d2f505c34eea3518ffd",
+    "native_mathml": 3373,
+    "diagrams_with_detailed_marathi_alternatives": 13,
+    "internal_links_valid": 204,
+    "desktop_browser_layout": "passed at 1280x720 CSS pixels",
+    "mobile_browser_layout": "passed at 390x844 CSS pixels",
+    "page_level_horizontal_overflow": false,
+    "console_errors_or_warnings": 0,
+    "network_dependencies": 0
+  },
+  "translation_decisions": {
+    "canonical_decisions_with_occurrences": 187,
+    "legacy_decisions": 189,
+    "occurrences": 4474,
+    "high_priority_occurrences": 559,
+    "schema_errors": 0,
+    "canonical_json_sha256": "a788ec15a6ec3656238c487f2e10cb8ccdc90d5e002303196f2caa0fb5d0b027",
+    "canonical_qa_sha256": "0acb728cf161c8fc56673b56791f4d287159f4c9ac37b481d9ed4eeae7f6955c"
+  },
+  "source_checkpoint": {
+    "path": "provenance/source-checkpoint-59/SOURCE_CHECKPOINT.json",
+    "bytes": 31407,
+    "sha256": "0a9d1883272fdf94084e2a7c88eb7fa419d48a415935928bbe06c00572d85040",
+    "note": "Translation-source checkpoint retained; its earlier reader hashes are superseded by this release's repair receipts."
+  },
+  "validators": {
+    "aligned_source_formula_macro_token_identifier": "passed",
+    "owner_state": "passed on the frozen 59-unit release state",
+    "expert_review_ledger": "passed",
+    "shared_translation_decision_schema": "passed with zero errors",
+    "cross_package_consistency": "passed on working tree; release-package pass recorded after staging"
+  },
+  "review": "Codex machine translation and same-agent bilingual review; no independent human review claimed",
+  "release_ready": true
+}

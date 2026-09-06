@@ -1,0 +1,70 @@
+{
+  "schema": "openlogic-reader-frontmatter-repair/1",
+  "release": "seven-chapters-v0.5.1",
+  "supersedes_reader_assets_from": "seven-chapters-v0.5",
+  "preserves_release": "seven-chapters-v0.5",
+  "manager_audit": {
+    "path": "[local research path omitted]",
+    "sha256": "5f104866df16066bbd99460ffb29e070ee7f977dcfae9b1635c8aed2a30be4b3"
+  },
+  "change": "Replace the reader-facing raw upstream revision with a Marathi sentence pointing readers to the technical project records.",
+  "scope_preserved": {
+    "translated_source_units": 59,
+    "aligned_segments": 716,
+    "complete_chapters": 7,
+    "pages": 83,
+    "translation_content_otherwise_byte_identical": true
+  },
+  "reader_artifacts": {
+    "pdf": {
+      "bytes": 432876,
+      "sha256": "a817e6ae742c3fad29ee0ee404e678823e269696c36c3c75a02edad76714ec40"
+    },
+    "tex": {
+      "bytes": 483010,
+      "sha256": "52e3c3eb3f12fa7de77af1916cded33ab401e3aeab59d797b24e3acd8c163b5d"
+    },
+    "html": {
+      "bytes": 1460985,
+      "sha256": "3a237b0c3becb7d188ab362e21b1368db554968fd2e08d2f505c34eea3518ffd"
+    }
+  },
+  "raw_revision_exposure": {
+    "reader_pdf": false,
+    "reader_tex": false,
+    "reader_html": false,
+    "technical_readme": true,
+    "technical_provenance": true
+  },
+  "qa": {
+    "comparison": {
+      "path": "READER_FRONTMATTER_COMPARISON-v0.5.1.json",
+      "sha256": "867bb7244d3eaf7d9d8757dcc8711a307105842ef89f07a0e329888a1f8a0692"
+    },
+    "pdf": {
+      "path": "PDF_QA-CORE-59-v0.5.1.json",
+      "sha256": "479fcb16571a7bfcd71e89cf656d7c6768b962ca53dc2d6493463944b9199c36"
+    },
+    "reproducibility": {
+      "path": "REPRODUCIBILITY-CORE-59-v0.5.1.json",
+      "sha256": "4a6c91756c8bc2398854e74776d8817719d85d5ad92c4ebd1790ebf11abd4a7f"
+    },
+    "render_manifest": {
+      "path": "RENDER_MANIFEST-CORE-59-v0.5.1.json",
+      "sha256": "e72e61176e8d7bcda293086a9d3b38304084636edc6fcb6891ac0e1879cfaec3"
+    },
+    "html_build": {
+      "path": "HTML_BUILD-CORE-59-v0.5.1.json",
+      "sha256": "99d7bf5babee83745f3199a289db7350ad0011705f56c663d24e257f0e94b13e"
+    },
+    "html": {
+      "path": "HTML_QA-CORE-59-v0.5.1.json",
+      "sha256": "abb4e3581fdb961970f87df83d9d5f5c51a54ee78070bd59da7494d599b890c5"
+    },
+    "browser": {
+      "path": "HTML_BROWSER_QA-CORE-59-v0.5.1.json",
+      "sha256": "650b2d61c5a2a280cb97b8f3ac1c4042c90f7845b902f59ca613e9e73c947fac"
+    }
+  },
+  "result": "passed_for_successor_publication"
+}
