@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **65/722 source units**, 747 aligned translated blocks, 4690 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
+Current scope: **66/722 source units**, 749 aligned translated blocks, 4696 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view.
 
@@ -5601,7 +5601,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T102 — first-order logic</strong> (5 occurrences; medium priority)</summary>
+<summary><strong>T102 — first-order logic</strong> (6 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5610,6 +5610,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T102-OLP-0053-B008 | OLP-0053 · 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | [upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:42-64](../upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex#L42) | [mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:40-62](../mr/content/sets-functions-relations/infinite/dedekinds-proof.tex#L40) | 69–70 |
 | T102-OLP-0053-B009 | OLP-0053 · 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | [upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:66-71](../upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex#L66) | [mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:64-69](../mr/content/sets-functions-relations/infinite/dedekinds-proof.tex#L64) | 69–70 |
 | T102-OLP-0055-B005 | OLP-0055 · 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | [upstream/content/propositional-logic/propositional-logic.tex:9-18](../upstream/content/propositional-logic/propositional-logic.tex#L9) | [mr/content/propositional-logic/propositional-logic.tex:9-18](../mr/content/propositional-logic/propositional-logic.tex#L9) | 73 |
+| T102-OLP-0069-B005 | OLP-0069 ·  | [upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | [mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** प्रथम-क्रम तर्कशास्त्र
 
@@ -5718,7 +5719,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T109 — proof system / proof</strong> (24 occurrences; medium priority)</summary>
+<summary><strong>T109 — proof system / proof</strong> (25 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5746,6 +5747,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T109-OLP-0068-B006 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | 86–87 |
 | T109-OLP-0068-B008 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | 86–87 |
 | T109-OLP-0068-B010 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L70) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L71) | 86–87 |
+| T109-OLP-0069-B005 | OLP-0069 ·  | [upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | [mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धता-पद्धती / सिद्धता
 
@@ -6696,7 +6698,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T152 — natural deduction / sequent calculus</strong> (12 occurrences; routine priority)</summary>
+<summary><strong>T152 — natural deduction / sequent calculus</strong> (14 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6712,6 +6714,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T152-OLP-0066-B009 | OLP-0066 · 8.3 नैसर्गिक निगमन | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L77) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L74) | 84–85 |
 | T152-OLP-0066-B010 | OLP-0066 · 8.3 नैसर्गिक निगमन | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L81) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L78) | 84–85 |
 | T152-OLP-0067-B010 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L72) | [mr/content/first-order-logic/proof-systems/tableaux.tex:69-82](../mr/content/first-order-logic/proof-systems/tableaux.tex#L69) | 85–86 |
+| T152-OLP-0069-B004 | OLP-0069 ·  | [upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:8-10](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L8) | [mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:8-10](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L8) | not yet paginated |
+| T152-OLP-0069-B005 | OLP-0069 ·  | [upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | [mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** नैसर्गिक निगमन / क्रमवर्ती कलन
 
@@ -6892,11 +6896,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T163 — Gerhard Gentzen / Stanisław Jaśkowski / Dag Prawitz / Frederic Fitch</strong> (1 occurrence; medium priority)</summary>
+<summary><strong>T163 — Gerhard Gentzen / Stanisław Jaśkowski / Dag Prawitz / Frederic Fitch</strong> (2 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T163-OLP-0066-B010 | OLP-0066 · 8.3 नैसर्गिक निगमन | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L81) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L78) | 84–85 |
+| T163-OLP-0069-B005 | OLP-0069 ·  | [upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | [mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** गरहार्ड गेंटझेन / स्टॅनिस्लॉ यास्कोव्हस्की / डॅग प्रावित्झ / फ्रेडरिक फिच
 
@@ -7021,6 +7026,21 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; four authoritative Marathi name attestations with transparent system labels; Russell typo normalized; open to correction.
 
 **Please double-check:** Should the edition retain the Vishwakosh-derived name forms, including डाव्हीट हिल्बर्ट, and the transparent फ्रेग/हिल्बर्ट पद्धत labels?
+
+</details>
+
+<details>
+<summary><strong>T171 — classical logic / classical first-order logic</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T171-OLP-0069-B005 | OLP-0069 ·  | [upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | [mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | not yet paginated |
+
+**Chosen rendering/action:** अभिजात तर्कशास्त्र / अभिजात प्रथम-क्रम तर्कशास्त्र
+
+**Confidence/status:** medium; technical qualifier directly attested; full logic compound provisional and expert-reviewable; open to correction.
+
+**Please double-check:** Is अभिजात तर्कशास्त्र the clearest Marathi term for modern classical logic without suggesting traditional Aristotelian logic?
 
 </details>
 

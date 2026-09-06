@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 65/722 source units through OLP-0068; 209 applied decisions; 4,690 occurrences.
+Coverage: 66/722 source units through OLP-0069; 210 applied decisions; 4,696 occurrences.
 
 ## T001 — set
 
@@ -6689,6 +6689,7 @@ Coverage: 65/722 source units through OLP-0068; 209 applied decisions; 4,690 occ
 | `T102-OLP-0053-B008` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:42-64` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:40-62` | 69–70 |
 | `T102-OLP-0053-B009` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:66-71` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:64-69` | 69–70 |
 | `T102-OLP-0055-B005` | `OLP-0055` | 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | `upstream/content/propositional-logic/propositional-logic.tex:9-18` | `mr/content/propositional-logic/propositional-logic.tex:9-18` | 73 |
+| `T102-OLP-0069-B005` | `OLP-0069` |  | `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | pending |
 
 ## T103 — parameter (of a formula)
 
@@ -6898,6 +6899,7 @@ Coverage: 65/722 source units through OLP-0068; 209 applied decisions; 4,690 occ
 | `T109-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
 | `T109-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
 | `T109-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
+| `T109-OLP-0069-B005` | `OLP-0069` |  | `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -8380,6 +8382,8 @@ Coverage: 65/722 source units through OLP-0068; 209 applied decisions; 4,690 occ
 | `T152-OLP-0066-B009` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | 84–85 |
 | `T152-OLP-0066-B010` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | 84–85 |
 | `T152-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
+| `T152-OLP-0069-B004` | `OLP-0069` |  | `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:8-10` | `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:8-10` | pending |
+| `T152-OLP-0069-B005` | `OLP-0069` |  | `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | pending |
 
 ## T153 — truth tree / tableaux proof / resolution method and refutation
 
@@ -8698,6 +8702,7 @@ Coverage: 65/722 source units through OLP-0068; 209 applied decisions; 4,690 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T163-OLP-0066-B010` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | 84–85 |
+| `T163-OLP-0069-B005` | `OLP-0069` |  | `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | pending |
 
 ## T164 — tableau / tableau calculus / closed tableau / open branch
 
@@ -8900,6 +8905,35 @@ Coverage: 65/722 source units through OLP-0068; 209 applied decisions; 4,690 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T170-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
+
+## T171 — classical logic / classical first-order logic
+
+**Chosen rendering/action:** अभिजात तर्कशास्त्र / अभिजात प्रथम-क्रम तर्कशास्त्र
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P092 directly uses अभिजात as the technical classical qualifier in contrast with quantum theory, while the other passages establish first-order and proof-theory vocabulary. No direct official Marathi occurrence of classical logic was found, so the full phrase is a transparent provisional composition. पारंपरिक is avoided because it can denote traditional syllogistic logic rather than modern classical logic.
+
+**Rationale:** MR-P092 directly uses अभिजात as the technical classical qualifier in contrast with quantum theory, while the other passages establish first-order and proof-theory vocabulary. No direct official Marathi occurrence of classical logic was found, so the full phrase is a transparent provisional composition. पारंपरिक is avoided because it can denote traditional syllogistic logic rather than modern classical logic.
+
+**Authorities actually checked:**
+
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P092` — विज्ञानाचे तत्त्वज्ञान — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/32879/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: The article does not directly attest classical logic; OpenLogic controls the logic-theoretic sense.
+
+**Alternatives:**
+
+- पारंपरिक तर्कशास्त्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- रूढ तर्कशास्त्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- क्लासिकल तर्कशास्त्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is अभिजात तर्कशास्त्र the clearest Marathi term for modern classical logic without suggesting traditional Aristotelian logic?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T171-OLP-0069-B005` | `OLP-0069` |  | `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -9909,5 +9943,5 @@ Coverage: 65/722 source units through OLP-0068; 209 applied decisions; 4,690 occ
 ## Deferred prospective decisions
 
 The following legacy decisions have no occurrence in the current coverage and are not 
-fabricated into the canonical record: `T013`, `T171`. They remain 
+fabricated into the canonical record: `T013`. They remain 
 available in `../EXPERT_REVIEW_DECISIONS.jsonl` until translated source creates a real locator.

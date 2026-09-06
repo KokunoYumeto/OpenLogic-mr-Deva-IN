@@ -19,6 +19,11 @@ form. The 89-page PDF was built twice to identical bytes and every page was
 inspected. Its offline HTML companion passed exact source-conversion, structure,
 asset, proof-display and desktop/mobile browser checks.
 
+Editable source after that release has progressed through OLP-0069: **66/722
+units** and 749 aligned content blocks. OLP-0069 is the Sequent Calculus chapter
+driver; its imported sections remain in progress and it is not part of the v0.6
+reader or release archive.
+
 - **Current release:** [आठ प्रकरणे — PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eight-chapters-v0.6).
 - **DOI mirror:** [edition concept DOI 10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960), which resolves to the latest version.
 - **PDF:** [89-page cumulative reader](releases/eight-chapters-v0.6/openlogic-mr-eight-chapters.pdf).

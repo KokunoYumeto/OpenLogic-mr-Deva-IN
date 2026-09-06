@@ -1,0 +1,56 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{seq}{क्रमवर्ती कलन}}
+      {\olchapter{pl}{seq}{क्रमवर्ती कलन}}
+
+\begin{editorial}
+  या प्रकरणात अभिजात प्रथम-क्रम तर्कशास्त्रासाठी गेंटझेन यांचे मानक
+  क्रमवर्ती कलन LK मांडले आहे. यात आणखी उदाहरणे आणि सराव समाविष्ट करणे
+  उपयुक्त ठरेल. सिद्धता-पद्धती म्हणून क्रमवर्ती कलनाशी संबंधित मजकूर
+  समाविष्ट करण्यासाठी किंवा वगळण्यासाठी ``prfLK'' हा टॅग वापरा.
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{propositional-rules}
+
+\iftag{FOL}{%
+  \olimport{quantifier-rules}
+}{}
+
+\olimport{structural-rules}
+
+\olimport{derivations}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{%
+  \olimport{identity}
+  \olimport{soundness-identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}

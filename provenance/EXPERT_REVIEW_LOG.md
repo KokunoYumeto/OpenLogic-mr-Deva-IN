@@ -2,7 +2,7 @@
 
 This ledger accompanies the Marathi OpenLogic translation at frozen upstream revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. It is maintained for specialist review and correction; review is welcome but is not a completion or publication gate.
 
-The current editable-source coverage is **65/722 units** (OLP-0004–OLP-0068, 747 aligned translated content blocks). The current public reader is the 59/722-unit `seven-chapters-v0.5` checkpoint. Decisions without an applied location are pre-adjudications for later units. This is partial coverage and makes no full-corpus claim.
+The current editable-source coverage is **66/722 units** (OLP-0004–OLP-0069, 749 aligned translated content blocks). The current public reader is the 65/722-unit `eight-chapters-v0.6` checkpoint. Decisions without an applied location are pre-adjudications for later units. This is partial coverage and makes no full-corpus claim.
 
 For T001–T044, the rationale provenance is explicitly a **retrospective reconstruction** from the durable decision records and current aligned files. It is not represented as an original contemporaneous motive. T045 onward were recorded with their first current use. Aligned block scopes are exact locations governed by a unit-level decision index; they do not claim that the literal headword occurs in every listed block. Literal line hits are listed separately when found.
 
@@ -10,7 +10,7 @@ Authorities below are only those actually consulted. A missing authority is stat
 
 Occurrence-level review surfaces add exact source/target lines and the current coherent-reader page range: [readable full occurrence index](EXPERT_REVIEW_OCCURRENCES.md), [priority view](EXPERT_REVIEW_PRIORITY.md), [one-row-per-occurrence CSV](EXPERT_REVIEW_OCCURRENCES.csv), and [machine JSONL](EXPERT_REVIEW_OCCURRENCES.jsonl).
 
-The current public DOI record `10.5281/zenodo.22449519` predates this development ledger. The next substantive, nonduplicative release will include it under the existing concept DOI `10.5281/zenodo.22307960`; no ledger-only release is created.
+The current public DOI record `10.5281/zenodo.22551657` predates this development ledger. The next substantive, nonduplicative release will include it under the existing concept DOI `10.5281/zenodo.22307960`; no ledger-only release is created.
 
 ## T001 — set
 
@@ -2594,9 +2594,10 @@ The current public DOI record `10.5281/zenodo.22449519` predates this developmen
   - OLP-0051 B005: [English](../upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/dedekind-algebra.tex)
   - OLP-0053 B007–B009: [English](../upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex) ↔ [Marathi](../mr/content/sets-functions-relations/infinite/dedekinds-proof.tex)
   - OLP-0055 B005: [English](../upstream/content/propositional-logic/propositional-logic.tex) ↔ [Marathi](../mr/content/propositional-logic/propositional-logic.tex)
-- **Occurrence records:** `T102-OLP-0051-B005`, `T102-OLP-0053-B007`, `T102-OLP-0053-B008`, `T102-OLP-0053-B009`, `T102-OLP-0055-B005`
-- **Literal English line hits:** `upstream/content/propositional-logic/propositional-logic.tex:14`; `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:29, 31`.
-- **Literal Marathi line hits:** `mr/content/propositional-logic/propositional-logic.tex:14`; `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:29–30`.
+  - OLP-0069 B005: [English](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex) ↔ [Marathi](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex)
+- **Occurrence records:** `T102-OLP-0051-B005`, `T102-OLP-0053-B007`, `T102-OLP-0053-B008`, `T102-OLP-0053-B009`, `T102-OLP-0055-B005`, `T102-OLP-0069-B005`
+- **Literal English line hits:** `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:14`; `upstream/content/propositional-logic/propositional-logic.tex:14`; `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:29, 31`.
+- **Literal Marathi line hits:** `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:13`; `mr/content/propositional-logic/propositional-logic.tex:14`; `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:29–30`.
 - **Authorities actually checked:**
 
   - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
@@ -2740,9 +2741,10 @@ The current public DOI record `10.5281/zenodo.22449519` predates this developmen
   - OLP-0066 B006–B010: [English](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex) ↔ [Marathi](../mr/content/first-order-logic/proof-systems/natural-deduction.tex)
   - OLP-0067 B006, B010: [English](../upstream/content/first-order-logic/proof-systems/tableaux.tex) ↔ [Marathi](../mr/content/first-order-logic/proof-systems/tableaux.tex)
   - OLP-0068 B006, B008, B010: [English](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex) ↔ [Marathi](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex)
-- **Occurrence records:** `T109-OLP-0055-B005`, `T109-OLP-0058-B009`, `T109-OLP-0058-B010`, `T109-OLP-0062-B015`, `T109-OLP-0063-B004`, `T109-OLP-0063-B005`, `T109-OLP-0064-B007`, `T109-OLP-0064-B008`, `T109-OLP-0064-B009`, `T109-OLP-0064-B011`, `T109-OLP-0065-B006`, `T109-OLP-0065-B007`, `T109-OLP-0065-B008`, `T109-OLP-0065-B009`, `T109-OLP-0066-B006`, `T109-OLP-0066-B007`, `T109-OLP-0066-B008`, `T109-OLP-0066-B009`, `T109-OLP-0066-B010`, `T109-OLP-0067-B006`, `T109-OLP-0067-B010`, `T109-OLP-0068-B006`, `T109-OLP-0068-B008`, `T109-OLP-0068-B010`
-- **Literal English line hits:** `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:2, 81`; `upstream/content/first-order-logic/proof-systems/introduction.tex:2, 41`; `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:2, 18, 20, 22, 28–29, 42–44, 84, 88`; `upstream/content/first-order-logic/proof-systems/proof-systems.tex:2`; `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:2, 62`; `upstream/content/first-order-logic/proof-systems/tableaux.tex:2, 78`; `upstream/content/propositional-logic/propositional-logic.tex:12–13, 29`; `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:55–57`; `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:62, 64, 75, 77, 88, 90`.
-- **Literal Marathi line hits:** `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:81`; `mr/content/first-order-logic/proof-systems/introduction.tex:44`; `mr/content/first-order-logic/proof-systems/natural-deduction.tex:86`; `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:62`; `mr/content/first-order-logic/proof-systems/tableaux.tex:74`; `mr/content/propositional-logic/propositional-logic.tex:12–13`; `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:54–56`.
+  - OLP-0069 B005: [English](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex) ↔ [Marathi](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex)
+- **Occurrence records:** `T109-OLP-0055-B005`, `T109-OLP-0058-B009`, `T109-OLP-0058-B010`, `T109-OLP-0062-B015`, `T109-OLP-0063-B004`, `T109-OLP-0063-B005`, `T109-OLP-0064-B007`, `T109-OLP-0064-B008`, `T109-OLP-0064-B009`, `T109-OLP-0064-B011`, `T109-OLP-0065-B006`, `T109-OLP-0065-B007`, `T109-OLP-0065-B008`, `T109-OLP-0065-B009`, `T109-OLP-0066-B006`, `T109-OLP-0066-B007`, `T109-OLP-0066-B008`, `T109-OLP-0066-B009`, `T109-OLP-0066-B010`, `T109-OLP-0067-B006`, `T109-OLP-0067-B010`, `T109-OLP-0068-B006`, `T109-OLP-0068-B008`, `T109-OLP-0068-B010`, `T109-OLP-0069-B005`
+- **Literal English line hits:** `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:2, 81`; `upstream/content/first-order-logic/proof-systems/introduction.tex:2, 41`; `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:2, 18, 20, 22, 28–29, 42–44, 84, 88`; `upstream/content/first-order-logic/proof-systems/proof-systems.tex:2`; `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:2, 62`; `upstream/content/first-order-logic/proof-systems/tableaux.tex:2, 78`; `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:16, 19, 37`; `upstream/content/propositional-logic/propositional-logic.tex:12–13, 29`; `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:55–57`; `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:62, 64, 75, 77, 88, 90`.
+- **Literal Marathi line hits:** `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:81`; `mr/content/first-order-logic/proof-systems/introduction.tex:44`; `mr/content/first-order-logic/proof-systems/natural-deduction.tex:86`; `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:62`; `mr/content/first-order-logic/proof-systems/tableaux.tex:74`; `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:15`; `mr/content/propositional-logic/propositional-logic.tex:12–13`; `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:54–56`.
 - **Authorities actually checked:**
 
   - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
@@ -3690,9 +3692,10 @@ The current public DOI record `10.5281/zenodo.22449519` predates this developmen
   - OLP-0065 B005–B006, B009: [English](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex) ↔ [Marathi](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex)
   - OLP-0066 B005–B010: [English](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex) ↔ [Marathi](../mr/content/first-order-logic/proof-systems/natural-deduction.tex)
   - OLP-0067 B010: [English](../upstream/content/first-order-logic/proof-systems/tableaux.tex) ↔ [Marathi](../mr/content/first-order-logic/proof-systems/tableaux.tex)
-- **Occurrence records:** `T152-OLP-0064-B008`, `T152-OLP-0064-B009`, `T152-OLP-0065-B005`, `T152-OLP-0065-B006`, `T152-OLP-0065-B009`, `T152-OLP-0066-B005`, `T152-OLP-0066-B006`, `T152-OLP-0066-B007`, `T152-OLP-0066-B008`, `T152-OLP-0066-B009`, `T152-OLP-0066-B010`, `T152-OLP-0067-B010`
-- **Literal English line hits:** `upstream/content/first-order-logic/proof-systems/introduction.tex:54`; `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:13, 15, 24, 33, 35, 38, 47–48, 60, 63, 81, 86`; `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:13, 16, 23, 37, 41, 52, 58, 61, 65`; `upstream/content/first-order-logic/proof-systems/tableaux.tex:87`.
-- **Literal Marathi line hits:** `mr/content/first-order-logic/proof-systems/introduction.tex:43–44, 57`; `mr/content/first-order-logic/proof-systems/natural-deduction.tex:13, 15, 31–32, 43, 56, 59, 74, 78, 85`; `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:13, 16, 23, 37, 42, 54, 58, 60`; `mr/content/first-order-logic/proof-systems/tableaux.tex:81–82`.
+  - OLP-0069 B004–B005: [English](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex) ↔ [Marathi](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex)
+- **Occurrence records:** `T152-OLP-0064-B008`, `T152-OLP-0064-B009`, `T152-OLP-0065-B005`, `T152-OLP-0065-B006`, `T152-OLP-0065-B009`, `T152-OLP-0066-B005`, `T152-OLP-0066-B006`, `T152-OLP-0066-B007`, `T152-OLP-0066-B008`, `T152-OLP-0066-B009`, `T152-OLP-0066-B010`, `T152-OLP-0067-B010`, `T152-OLP-0069-B004`, `T152-OLP-0069-B005`
+- **Literal English line hits:** `upstream/content/first-order-logic/proof-systems/introduction.tex:54`; `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:13, 15, 24, 33, 35, 38, 47–48, 60, 63, 81, 86`; `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:13, 16, 23, 37, 41, 52, 58, 61, 65`; `upstream/content/first-order-logic/proof-systems/tableaux.tex:87`; `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:9–10, 13`.
+- **Literal Marathi line hits:** `mr/content/first-order-logic/proof-systems/introduction.tex:43–44, 57`; `mr/content/first-order-logic/proof-systems/natural-deduction.tex:13, 15, 31–32, 43, 56, 59, 74, 78, 85`; `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:13, 16, 23, 37, 42, 54, 58, 60`; `mr/content/first-order-logic/proof-systems/tableaux.tex:81–82`; `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:9–10, 14–15`.
 - **Authorities actually checked:**
 
   - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P006, MR-C006, विधानीय तर्कशास्त्र, topics 1–4, printed page 12. visually-read-page-image
@@ -3929,7 +3932,8 @@ The current public DOI record `10.5281/zenodo.22449519` predates this developmen
 - **Exact aligned source/target scopes:**
 
   - OLP-0066 B010: [English](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex) ↔ [Marathi](../mr/content/first-order-logic/proof-systems/natural-deduction.tex)
-- **Occurrence records:** `T163-OLP-0066-B010`
+  - OLP-0069 B005: [English](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex) ↔ [Marathi](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex)
+- **Occurrence records:** `T163-OLP-0066-B010`, `T163-OLP-0069-B005`
 - **Literal English line hits:** `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81, 83`.
 - **Literal Marathi line hits:** `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78, 80`.
 - **Authorities actually checked:**
@@ -4086,15 +4090,17 @@ The current public DOI record `10.5281/zenodo.22449519` predates this developmen
 ## T171 — classical logic / classical first-order logic
 
 - **Chosen wording:** अभिजात तर्कशास्त्र / अभिजात प्रथम-क्रम तर्कशास्त्र
-- **Coverage:** pre-adjudicated; not yet applied in a translated unit.
+- **Coverage:** applied in current partial source coverage.
 - **Decision provenance:** contemporaneous durable decision at first current use.
 - **Status/uncertainty:** technical qualifier directly attested; full logic compound provisional and expert-reviewable. This choice remains open to correction.
 - **Rationale:** MR-P092 directly uses अभिजात as the technical classical qualifier in contrast with quantum theory, while the other passages establish first-order and proof-theory vocabulary. No direct official Marathi occurrence of classical logic was found, so the full phrase is a transparent provisional composition. पारंपरिक is avoided because it can denote traditional syllogistic logic rather than modern classical logic.
 - **Alternatives considered:** पारंपरिक तर्कशास्त्र; रूढ तर्कशास्त्र; क्लासिकल तर्कशास्त्र.
-- **Exact aligned source/target scopes:** none yet; the term has not been applied in current translated units.
-- **Occurrence records:** none yet.
-- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
-- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Exact aligned source/target scopes:**
+
+  - OLP-0069 B005: [English](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex) ↔ [Marathi](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex)
+- **Occurrence records:** `T171-OLP-0069-B005`
+- **Literal English line hits:** `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:14`.
+- **Literal Marathi line hits:** `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:13`.
 - **Authorities actually checked:**
 
   - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P007, MR-C006, विधेय / संख्यापनीय तर्कशास्त्र आणि संच उपपत्ती, topics 1 and 4, printed page 14. visually-read-page-image
