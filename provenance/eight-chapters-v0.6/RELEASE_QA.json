@@ -1,0 +1,87 @@
+{
+  "schema": "openlogic-cumulative-release-qa/1",
+  "release": "eight-chapters-v0.6",
+  "scope": {
+    "translated_source_units": 65,
+    "total_source_units": 722,
+    "remaining_source_units": 657,
+    "aligned_content_segments": 747,
+    "reader_sections": 56,
+    "complete_chapters": 8,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0068",
+    "complete_edition": false
+  },
+  "pdf": {
+    "filename": "openlogic-mr-eight-chapters.pdf",
+    "pages": 89,
+    "bytes": 460193,
+    "sha256": "b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654",
+    "two_clean_guarded_builds_byte_identical": true,
+    "all_pages_visually_reviewed": true,
+    "tagged_pdf": false,
+    "accessible_html_companion_required": true
+  },
+  "accessible_html": {
+    "entrypoint": "reader/eight-chapters/index.html",
+    "bytes": 1544941,
+    "sha256": "dde603bf2fb4be3f88db131309813708cd46c058e5864331828bb2e48bc11509",
+    "native_mathml": 3521,
+    "diagrams_with_detailed_marathi_alternatives": 13,
+    "semantic_proof_figures": 3,
+    "proof_formula_rows": 11,
+    "internal_links_valid": 210,
+    "desktop_browser_layout": "passed at 1280x720 CSS pixels",
+    "mobile_browser_layout": "passed at 390x844 CSS pixels",
+    "proof_table_mobile_scroll_contained": true,
+    "skip_link_keyboard_activation": "passed",
+    "page_level_horizontal_overflow": false,
+    "console_errors_or_warnings": 0,
+    "network_dependencies": 0
+  },
+  "translation_decisions": {
+    "canonical_decisions_with_occurrences": 209,
+    "legacy_decisions": 211,
+    "prospective_decisions_without_occurrences": [
+      "T013",
+      "T171"
+    ],
+    "occurrences": 4690,
+    "high_priority_occurrences": 603,
+    "schema_errors": 0,
+    "canonical_json_sha256": "2fdf31ce14bc9a3d68b5291e003997763ad8086c8ac025d7dd3faf3109fcef75",
+    "canonical_qa_sha256": "a5143035a62a78186d86a961bbe8bde3b1331d668427b7c37b9b2aa975df1171"
+  },
+  "source_checkpoint": {
+    "path": "provenance/source-checkpoint-65/SOURCE_CHECKPOINT.json",
+    "bytes": 35397,
+    "sha256": "fdf70d4407e91744a5d9474fb69fb30a6755f1769f72248e5da781d958183074",
+    "canon_research_ahead": {
+      "source_ids": [
+        "MR-C069"
+      ],
+      "passage_ids": [
+        "MR-P092"
+      ],
+      "term_ids": [
+        "T171"
+      ],
+      "draft_OLP_0069_target_excluded": true
+    }
+  },
+  "reader_projection": {
+    "identifier": "MRPRF-001",
+    "scope": "two true-conjunction tableau labels in the assembled reader",
+    "upstream_and_aligned_translation_bytes_unchanged": true,
+    "documented_in_reader": true
+  },
+  "validators": {
+    "aligned_source_formula_macro_token_identifier": "passed",
+    "owner_state": "passed on the 65-unit release state",
+    "expert_review_ledger": "passed",
+    "shared_translation_decision_schema": "passed with zero errors",
+    "cross_package_consistency": "passed on working tree; release-package pass recorded after staging"
+  },
+  "review": "Codex machine translation and same-agent bilingual review; no independent human review claimed",
+  "release_ready": true
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "openlogic-expert-review-ledger-checkpoint/1",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_units": 65,
+    "total_units": 722,
+    "aligned_segments": 747,
+    "complete": false
+  },
+  "terminology_decisions": 171,
+  "source_corrections_and_observations": 40,
+  "markdown_path": "provenance/EXPERT_REVIEW_LOG.md",
+  "markdown_bytes": 741191,
+  "markdown_sha256": "9dad6dc249f7ff6b30786960c6f873c17dcd1b421808c8a1d9e7048e469a7cea",
+  "jsonl_path": "provenance/EXPERT_REVIEW_DECISIONS.jsonl",
+  "jsonl_bytes": 1072465,
+  "jsonl_sha256": "d3382457956d82435ef1dc2047cbf4e0cdb4ab96d0e33798db7b8a3c22121592",
+  "occurrence_surfaces_checkpoint": {
+    "schema": "openlogic-expert-review-occurrence-checkpoint/1",
+    "coverage": {
+      "translated_units": 65,
+      "total_units": 722,
+      "aligned_segments": 747,
+      "complete": false
+    },
+    "occurrence_granularity": "one decision-governed aligned segment or one durable source issue",
+    "decisions_with_occurrences": 209,
+    "occurrences": 4690,
+    "priority_counts": {
+      "high": 603,
+      "medium": 2095,
+      "routine": 1992
+    },
+    "script": "Deva",
+    "locale": "mr-IN",
+    "edition_language_tag": "mr-Deva-IN",
+    "reader_pdf": {
+      "status": "current coherent reader through OLP-0068; 0 later translated unit(s) unpaginated",
+      "pages": 89,
+      "sha256": "b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654"
+    },
+    "surfaces": {
+      "provenance/EXPERT_REVIEW_OCCURRENCES.md": {
+        "bytes": 2057108,
+        "sha256": "fc95bbf993365e084406a28c3bcdb97002ece98a1aad2ae1ae7cfe236df7ec3e"
+      },
+      "provenance/EXPERT_REVIEW_PRIORITY.md": {
+        "bytes": 9960,
+        "sha256": "d26564535561ac6a3f78f0a8b4e1db2efa33e2b6b88c46a6f1f1c7fe7f1c2427"
+      },
+      "provenance/EXPERT_REVIEW_OCCURRENCES.csv": {
+        "bytes": 5612089,
+        "sha256": "4c775e55359f2f62cfda31de451ddb9d9decc95c84363e18e003e225b0b6dd04"
+      },
+      "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl": {
+        "bytes": 11137841,
+        "sha256": "35407937e0276e8505e0de09f6c60c2f670e936e027a2ac370e55916c48fe7c6"
+      }
+    }
+  },
+  "publication_status": "Pending GitHub commit and anonymous readback; next substantive Zenodo version must reuse concept DOI 10.5281/zenodo.22307960."
+}

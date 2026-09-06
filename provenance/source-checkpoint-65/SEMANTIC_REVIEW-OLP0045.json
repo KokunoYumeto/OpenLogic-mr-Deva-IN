@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0045",
+  "method": "Same-agent English/Marathi close reading, formula and macro comparison, reverse paraphrase and bounded primary-source terminology research; not independent or human review.",
+  "scope": "All ten translated content blocks in the Dedekind-cuts section, including the definition, completeness theorem and proof, rational embedding and signed multiplication clauses.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6
+      ],
+      "reverse_paraphrase": "A real point divides the real line into lower and upper parts. Dedekind constructs reals as cuts of the rationals; formally, a cut is a nonempty proper initial rational segment with no greatest member.",
+      "checks": "The least-upper/greatest-lower distinction, square-root example, all three cut conditions and identification of Real with the set of cuts are retained."
+    },
+    {
+      "blocks": [
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "Cuts are ordered by inclusion. Every nonempty upper-bounded set S of cuts has union λ as its least upper bound: λ is itself a cut, contains every member of S, and lies below any other upper bound.",
+      "checks": "All quantifiers, inclusions, witness steps and the common omitted-rational argument remain present. MRARITH-004 uses nonemptiness for λ's nonemptiness and boundedness for properness."
+    },
+    {
+      "blocks": [
+        12
+      ],
+      "reverse_paraphrase": "Each rational p embeds as the cut of rationals below p. Addition and nonnegative multiplication are defined by set builders; zero products are fixed explicitly, negation is defined, and strict-sign cases reduce remaining products to nonnegative ones.",
+      "checks": "Every source formula and commented alternative is retained under the documented 0_Real projection. The zero clause already present only in a source comment is active so all sign cases are defined."
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "MRARITH-004",
+      "finding": "Upper-boundedness alone does not imply that S contains a cut.",
+      "resolution": "The proof uses the explicit nonemptiness hypothesis for that inference and retains boundedness for properness."
+    },
+    {
+      "id": "MRARITH-005",
+      "finding": "The source has an isolated superscript zero-cut notation inconsistent with all nearby 0_Real forms.",
+      "resolution": "The Marathi formula uses 0_Real and exact QA projects that one documented correction."
+    },
+    {
+      "id": "MRARITH-006",
+      "finding": "The source comments out the required zero-product clause, leaving zero-factor cases uncovered.",
+      "resolution": "The source's own equation is activated in Marathi before the strict-sign cases."
+    }
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic or mathematical certification has been performed."
+  ]
+}

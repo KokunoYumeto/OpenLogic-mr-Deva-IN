@@ -1,0 +1,52 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0068",
+  "method": "Same-agent English/Marathi close reading, formula/token/macro comparison, inference-direction inspection and reverse paraphrase with freshly checked official Maharashtra logic glossaries and Marathi Vishwakosh articles; not independent or human review.",
+  "scope": "The axiomatic-deduction overview: line admissibility, axiom schemas, modus ponens, derivability and theoremhood, explosion from inconsistency, historical contributors, and practical strengths and limitations.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "Axiomatic derivations are the oldest and simplest logical derivation systems and consist of sentence sequences. Such a sequence is correct when every sentence A is an axiom, belongs to the given sentence set Gamma, or is justified by an inference rule. An axiom instantiates one of several fixed sentence schemas. Many sets of axiom schemas yield sound and complete first-order systems. Some schemas govern particular connectives, as the displayed three do; other systems minimize axioms, and a suitable primitive connective basis can permit a one-axiom system.",
+      "checks": "All three and only three line conditions remain separately enumerated. Soundness and completeness are both retained. Each displayed axiom and its governed connective is unchanged, and the single-axiom possibility remains conditional on the primitive basis."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "An inference rule is a conditional statement giving a sufficient condition for a derivation sentence to be justified. Modus ponens says that already justified A and A-implies-B justify B. Thus a line containing B is justified when A and A-implies-B, for some sentence A, both occur earlier in the derivation.",
+      "checks": "The condition remains sufficient, not necessary. Both premises must be earlier and justified, and the conclusion direction is A plus A-implies-B to B. The official विध्यात्मक अनुमान label does not alter the rule."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "Gamma proves A axiomatically exactly when there is a derivation ending in A and Gamma is the set of its sentences justified under condition 2. A is a theorem when it has a derivation with empty Gamma, so every line uses condition 1 or 3. The displayed three-line derivation proves A-implies-(B-implies-(B-or-A)): lines 1 and 2 instantiate the two stated axiom forms, and line 3 follows by modus ponens because line 2 is C-implies-D and line 1 is C.",
+      "checks": "The iff definition, last-formula requirement, exact role of condition 2, empty-Gamma theorem clause, and line-by-line example justification are preserved. Every line formula, connective, role reversal, abbreviation and line reference is unchanged."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "Gamma is inconsistent if it proves falsity. A complete axiom system also proves falsity-implies-A for every A, so inconsistency yields Gamma-proves-A for every A.",
+      "checks": "Both source clauses remain one-way implications rather than biconditionals. Falsity, the conditional formula, both universal ranges over A and the explosion conclusion are unchanged."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "Frege first gave axiomatic derivation systems for logic in the 1879 Begriffsschrift, often regarded as the first work of modern logic. Whitehead and Russell's Principia Mathematica and Hilbert and his students in the 1920s perfected them, hence the names Frege and Hilbert systems. They are versatile because an axiomatic system is often easy to find for a logic. Their simple structure and one or two inference rules make metatheoretic proofs relatively easy, but finding and writing object-level proofs is difficult in practice.",
+      "checks": "All four named principals, Frege's date and work, the modern-logic priority characterization, Hilbert's students and decade, both system labels, the versatility claim, the metatheoretic advantage and practical disadvantage are preserved."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "Official sources directly support स्वयंसिद्धकीय व्यवस्था, स्वयंसिद्धक, निगमन नियम and the axiom-schema concept, while स्वयंसिद्धक-रूपबंध and वाक्य-रूपबंध remain transparent compositional labels.",
+    "Both विध्यात्मक रीति and विध्यात्मक अनुमान are officially attested for modus ponens; the edition chooses the latter and exposes the choice for review.",
+    "समर्थित/समर्थन मिळणे for proof-line justification is definition-controlled rather than directly attested as a fixed Marathi logic term."
+  ]
+}

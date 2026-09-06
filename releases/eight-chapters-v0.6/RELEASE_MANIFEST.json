@@ -1,0 +1,70 @@
+{
+  "schema": "openlogic-release-manifest/1",
+  "release": "eight-chapters-v0.6",
+  "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_units": 65,
+    "total_units": 722,
+    "remaining_units": 657,
+    "aligned_segments": 747,
+    "reader_sections": 56,
+    "complete_chapters": 8
+  },
+  "reader": {
+    "pdf_pages": 89,
+    "native_mathml": 3521,
+    "semantic_proof_figures": 3,
+    "proof_formula_rows": 11
+  },
+  "assets": [
+    {
+      "filename": "openlogic-mr-eight-chapters.pdf",
+      "bytes": 460193,
+      "sha256": "b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654"
+    },
+    {
+      "filename": "openlogic-mr-eight-chapters.tex",
+      "bytes": 531403,
+      "sha256": "2c53c5a98637252341beb51bd7a2363bb8eb4e468ae5cdffd758ce224f5ff1cb"
+    },
+    {
+      "filename": "openlogic-mr-eight-chapters-html.zip",
+      "bytes": 1379325,
+      "sha256": "d0290d8fc277dc2e85d614e805f40eaf42a4aa9f0aa0342bf2fcb970c4bb90bc"
+    },
+    {
+      "filename": "openlogic-mr-eight-chapters-review.zip",
+      "bytes": 4506975,
+      "sha256": "d1f5feb8b67a3647e8fc99070098639c495937f64ea44912c52ac9847b4532d2"
+    },
+    {
+      "filename": "openlogic-mr-eight-chapters-editable-sources.zip",
+      "bytes": 16422527,
+      "sha256": "a2b8cc1fdc2b06724cfb1416a9d35239798795750190112899248d9ba96d347a"
+    }
+  ],
+  "source_package_manifest": {
+    "path": "provenance/eight-chapters-v0.6/EDITION_FILE_MANIFEST.json",
+    "files_listed": 1476,
+    "bytes": 277874,
+    "sha256": "baf4d088e49b7f53ccf9a1253325c90b2f7ec19b91c8791c1065df7392cc1f64",
+    "draft_OLP_0069_target_excluded": true
+  },
+  "source_checkpoint": {
+    "path": "provenance/source-checkpoint-65/SOURCE_CHECKPOINT.json",
+    "bytes": 35397,
+    "sha256": "fdf70d4407e91744a5d9474fb69fb30a6755f1769f72248e5da781d958183074"
+  },
+  "release_qa": {
+    "path": "provenance/eight-chapters-v0.6/RELEASE_QA.json",
+    "bytes": 3059,
+    "sha256": "5207ef7ef6492c9ce2de1bca69f890f012d1cc9c66c6f8e6d46e8ea6cd60114e"
+  },
+  "cross_package_qa": {
+    "path": "provenance/eight-chapters-v0.6/CROSS_PACKAGE_QA-RELEASE.json",
+    "bytes": 1381,
+    "sha256": "eb18499954ea6309720a3225ac12a5d86931ef4e5d71380a6b2eb77f12816569"
+  },
+  "full_edition_complete": false
+}

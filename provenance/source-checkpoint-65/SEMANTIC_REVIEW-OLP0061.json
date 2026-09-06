@@ -1,0 +1,61 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0061",
+  "method": "Same-agent English/Marathi close reading, truth-clause and tag inspection, formula/token comparison and reverse paraphrase with checked native terminology; not independent or human review.",
+  "scope": "Propositional valuations, their inductive extension to formulas, truth tables, local determination, satisfaction and its equivalence with truth-value evaluation.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "A valuation maps each propositional variable to one of the two truth values. Its evaluation extension maps every formula to a truth value: constants have their fixed values, variables inherit the valuation, and negation, conjunction, disjunction, conditional and biconditional receive exactly the displayed recursive values.",
+      "checks": "Every domain, codomain, tag branch, equality, true/false case, and and/or condition in the evaluation definition is preserved exactly."
+    },
+    {
+      "blocks": [
+        8,
+        9
+      ],
+      "reverse_paraphrase": "The five tables display the same truth functions. A proposed ternary connective returns B's value when A is true and C's value when A is false, and the exercise asks for its truth table.",
+      "checks": "All table rows are unchanged, as are the ternary argument order and its two selector cases."
+    },
+    {
+      "blocks": [
+        10,
+        11
+      ],
+      "reverse_paraphrase": "If two valuations agree on every propositional variable occurring in A, their induced evaluations agree on A. The proof is by induction on A.",
+      "checks": "The theorem's locality remains restricted to variables occurring in the fixed formula A, and the conclusion compares the two induced values of that same A."
+    },
+    {
+      "blocks": [
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "reverse_paraphrase": "Satisfaction by a valuation is recursively defined: false is never satisfied, true always is, a variable is satisfied exactly when assigned true, and the five connective cases follow their classical conditions. A valuation satisfies a set Gamma exactly when it satisfies every member.",
+      "checks": "Positive and negative satisfaction notation, every iff direction, both-inclusive disjunctions, the biconditional both/neither split, and universal set scope are preserved."
+    },
+    {
+      "blocks": [
+        20,
+        21,
+        22
+      ],
+      "reverse_paraphrase": "A valuation satisfies A exactly when A evaluates to true; the proposition is proved by induction on A and is also assigned as an exercise.",
+      "checks": "The equivalence, true value, induction variable and cross-reference remain exact."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "सत्य-मूल्यांकन, मूल्यन फलन and स्थानिक निर्धारण remain explicitly prioritized for specialist review."
+  ]
+}

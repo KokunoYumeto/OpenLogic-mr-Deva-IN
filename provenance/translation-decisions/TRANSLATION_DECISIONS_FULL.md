@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occurrences.
+Coverage: 65/722 source units through OLP-0068; 209 applied decisions; 4,690 occurrences.
 
 ## T001 — set
 
@@ -374,13 +374,13 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T001-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83` | `mr/content/sets-functions-relations/infinite/card-sb.tex:80-85` | 70–72 |
 | `T001-OLP-0054-B016` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:85-87` | `mr/content/sets-functions-relations/infinite/card-sb.tex:87-89` | 70–72 |
 | `T001-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 70–72 |
-| `T001-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
-| `T001-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
-| `T001-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
-| `T001-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
-| `T001-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
-| `T001-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
-| `T001-OLP-0068-B009` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | pending |
+| `T001-OLP-0065-B008` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | 83–84 |
+| `T001-OLP-0066-B009` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | 84–85 |
+| `T001-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 85–86 |
+| `T001-OLP-0067-B009` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | 85–86 |
+| `T001-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T001-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
+| `T001-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 86–87 |
 
 ## T002 — element/member
 
@@ -648,8 +648,8 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T002-OLP-0045-B006` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:26-36` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:25-35` | 56–58 |
 | `T002-OLP-0045-B010` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:58-78` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:57-83` | 56–58 |
 | `T002-OLP-0054-B016` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:85-87` | `mr/content/sets-functions-relations/infinite/card-sb.tex:87-89` | 70–72 |
-| `T002-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
-| `T002-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T002-OLP-0067-B009` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | 85–86 |
+| `T002-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
 
 ## T003 — empty set
 
@@ -816,7 +816,7 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T003-OLP-0044-B012` | `OLP-0044` | 5.3 वास्तव संख्या-रेषा | `upstream/content/sets-functions-relations/arithmetization/reals.tex:76-80` | `mr/content/sets-functions-relations/arithmetization/reals.tex:86-96` | 55–56 |
 | `T003-OLP-0045-B006` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:26-36` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:25-35` | 56–58 |
 | `T003-OLP-0045-B010` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:58-78` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:57-83` | 56–58 |
-| `T003-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+| `T003-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
 
 ## T004 — extensionality
 
@@ -1089,7 +1089,7 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T005-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83` | `mr/content/sets-functions-relations/infinite/card-sb.tex:80-85` | 70–72 |
 | `T005-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 70–72 |
 | `T005-OLP-0062-B009` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61` | 81 |
-| `T005-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
+| `T005-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 85–86 |
 
 ## T006 — proper subset
 
@@ -1417,9 +1417,9 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T009-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
-| `T009-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
-| `T009-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
+| `T009-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
+| `T009-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
+| `T009-OLP-0064-B010` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | 82–83 |
 
 ## T010 — truth / truth value
 
@@ -1472,10 +1472,10 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T010-OLP-0061-B010` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:133-140` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134-142` | 78–81 |
 | `T010-OLP-0061-B014` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:158-159` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:160-161` | 78–81 |
 | `T010-OLP-0061-B020` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:186-188` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:188-191` | 78–81 |
-| `T010-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
-| `T010-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
-| `T010-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
-| `T010-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
+| `T010-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
+| `T010-OLP-0066-B007` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | 84–85 |
+| `T010-OLP-0067-B006` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | 85–86 |
+| `T010-OLP-0067-B007` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | 85–86 |
 
 ## T011 — syntax
 
@@ -1505,8 +1505,8 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T011-OLP-0057-B007` | `OLP-0057` | 7.1 परिचय | `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:37-50` | `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:38-51` | 73–74 |
 | `T011-OLP-0058-B034` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:167-171` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:167-172` | 74–75 |
 | `T011-OLP-0058-B035` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:173-180` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:174-180` | 74–75 |
-| `T011-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
-| `T011-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
+| `T011-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
+| `T011-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 82–83 |
 
 ## T012 — semantics
 
@@ -1542,10 +1542,10 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T012-OLP-0062-B006` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:13-13` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:13-13` | 81 |
 | `T012-OLP-0062-B007` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33` | 81 |
 | `T012-OLP-0062-B015` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83-86` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:84-87` | 81 |
-| `T012-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
-| `T012-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
-| `T012-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
-| `T012-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
+| `T012-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
+| `T012-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
+| `T012-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 82–83 |
+| `T012-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
 
 ## T014 — perfect number
 
@@ -1677,11 +1677,11 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T015-OLP-0062-B014` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:79-81` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:80-82` | 81 |
 | `T015-OLP-0062-B016` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:88-90` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:89-91` | 81 |
 | `T015-OLP-0062-B017` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:92-94` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:93-95` | 81 |
-| `T015-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
-| `T015-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
-| `T015-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
-| `T015-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
-| `T015-OLP-0068-B010` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | pending |
+| `T015-OLP-0064-B008` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | 82–83 |
+| `T015-OLP-0065-B007` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | 83–84 |
+| `T015-OLP-0065-B009` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | 83–84 |
+| `T015-OLP-0066-B010` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | 84–85 |
+| `T015-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
 
 ## T016 — if and only if
 
@@ -1774,11 +1774,11 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T016-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43` | `mr/content/sets-functions-relations/infinite/card-sb.tex:33-41` | 70–72 |
 | `T016-OLP-0054-B011` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53` | `mr/content/sets-functions-relations/infinite/card-sb.tex:49-52` | 70–72 |
 | `T016-OLP-0054-B014` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78` | `mr/content/sets-functions-relations/infinite/card-sb.tex:74-78` | 70–72 |
-| `T016-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
-| `T016-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
-| `T016-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
-| `T016-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
-| `T016-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+| `T016-OLP-0065-B007` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | 83–84 |
+| `T016-OLP-0066-B008` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | 84–85 |
+| `T016-OLP-0066-B009` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | 84–85 |
+| `T016-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 85–86 |
+| `T016-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
 
 ## T017 — union
 
@@ -2265,10 +2265,10 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T023-OLP-0048-B010` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:89-95` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:84-89` | 62–65 |
 | `T023-OLP-0060-B007` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:20-34` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:19-33` | 77–78 |
 | `T023-OLP-0060-B014` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:114-118` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:110-114` | 77–78 |
-| `T023-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
-| `T023-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
-| `T023-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
-| `T023-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T023-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
+| `T023-OLP-0065-B006` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | 83–84 |
+| `T023-OLP-0065-B007` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | 83–84 |
+| `T023-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
 
 ## T024 — set difference
 
@@ -2409,7 +2409,7 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T026-OLP-0048-B022` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:215-224` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:216-227` | 62–65 |
 | `T026-OLP-0053-B014` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108` | 69–70 |
 | `T026-OLP-0054-B013` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:70-73` | `mr/content/sets-functions-relations/infinite/card-sb.tex:69-72` | 70–72 |
-| `T026-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
+| `T026-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | 84–85 |
 
 ## T027 — mathematical / arithmetical induction
 
@@ -2576,11 +2576,11 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T029-OLP-0024-B025` | `OLP-0024` | 3.4 फलनांचे व्युत्क्रम | `upstream/content/sets-functions-relations/functions/inverses.tex:163-165` | `mr/content/sets-functions-relations/functions/inverses.tex:167-169` | 27–29 |
 | `T029-OLP-0024-B026` | `OLP-0024` | 3.4 फलनांचे व्युत्क्रम | `upstream/content/sets-functions-relations/functions/inverses.tex:167-169` | `mr/content/sets-functions-relations/functions/inverses.tex:171-173` | 27–29 |
 | `T029-OLP-0024-B027` | `OLP-0024` | 3.4 फलनांचे व्युत्क्रम | `upstream/content/sets-functions-relations/functions/inverses.tex:171-175` | `mr/content/sets-functions-relations/functions/inverses.tex:175-179` | 27–29 |
-| `T029-OLP-0064-B007` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | pending |
-| `T029-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
-| `T029-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
-| `T029-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
-| `T029-OLP-0068-B009` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | pending |
+| `T029-OLP-0064-B007` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | 82–83 |
+| `T029-OLP-0065-B006` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | 83–84 |
+| `T029-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T029-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
+| `T029-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 86–87 |
 
 ## T030 — relation / binary relation
 
@@ -3478,15 +3478,15 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T041-OLP-0018-B018` | `OLP-0018` | 2.7 वृक्ष | `upstream/content/sets-functions-relations/relations/trees.tex:110-119` | `mr/content/sets-functions-relations/relations/trees.tex:109-118` | 20–22 |
 | `T041-OLP-0018-B019` | `OLP-0018` | 2.7 वृक्ष | `upstream/content/sets-functions-relations/relations/trees.tex:121-124` | `mr/content/sets-functions-relations/relations/trees.tex:120-123` | 20–22 |
 | `T041-OLP-0018-B020` | `OLP-0018` | 2.7 वृक्ष | `upstream/content/sets-functions-relations/relations/trees.tex:126-128` | `mr/content/sets-functions-relations/relations/trees.tex:125-127` | 20–22 |
-| `T041-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
-| `T041-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
-| `T041-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
-| `T041-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
-| `T041-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
-| `T041-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
-| `T041-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
-| `T041-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
-| `T041-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
+| `T041-OLP-0064-B008` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | 82–83 |
+| `T041-OLP-0065-B006` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | 83–84 |
+| `T041-OLP-0065-B007` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | 83–84 |
+| `T041-OLP-0066-B007` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | 84–85 |
+| `T041-OLP-0066-B008` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | 84–85 |
+| `T041-OLP-0067-B006` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | 85–86 |
+| `T041-OLP-0067-B007` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | 85–86 |
+| `T041-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 85–86 |
+| `T041-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
 
 ## T042 — least / well-ordered / predecessor / successor
 
@@ -3778,31 +3778,31 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T044-OLP-0062-B008` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:34-43` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:35-44` | 81 |
 | `T044-OLP-0062-B009` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61` | 81 |
 | `T044-OLP-0062-B012` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:70-73` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:71-74` | 81 |
-| `T044-OLP-0063-B004` | `OLP-0063` |  | `upstream/content/first-order-logic/proof-systems/proof-systems.tex:8-10` | `mr/content/first-order-logic/proof-systems/proof-systems.tex:8-10` | pending |
-| `T044-OLP-0063-B005` | `OLP-0063` |  | `upstream/content/first-order-logic/proof-systems/proof-systems.tex:12-17` | `mr/content/first-order-logic/proof-systems/proof-systems.tex:12-17` | pending |
-| `T044-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
-| `T044-OLP-0064-B007` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | pending |
-| `T044-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
-| `T044-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
-| `T044-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
-| `T044-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
-| `T044-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
-| `T044-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
-| `T044-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
-| `T044-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
-| `T044-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
-| `T044-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
-| `T044-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
-| `T044-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
-| `T044-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
-| `T044-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
-| `T044-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
-| `T044-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
-| `T044-OLP-0068-B005` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | pending |
-| `T044-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
-| `T044-OLP-0068-B007` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | pending |
-| `T044-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
-| `T044-OLP-0068-B010` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | pending |
+| `T044-OLP-0063-B004` | `OLP-0063` | 8 सिद्धता-पद्धती — प्रकरण-प्रस्तावना | `upstream/content/first-order-logic/proof-systems/proof-systems.tex:8-10` | `mr/content/first-order-logic/proof-systems/proof-systems.tex:8-10` | 82 |
+| `T044-OLP-0063-B005` | `OLP-0063` | 8 सिद्धता-पद्धती — प्रकरण-प्रस्तावना | `upstream/content/first-order-logic/proof-systems/proof-systems.tex:12-17` | `mr/content/first-order-logic/proof-systems/proof-systems.tex:12-17` | 82 |
+| `T044-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
+| `T044-OLP-0064-B007` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | 82–83 |
+| `T044-OLP-0064-B008` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | 82–83 |
+| `T044-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
+| `T044-OLP-0064-B010` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | 82–83 |
+| `T044-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 82–83 |
+| `T044-OLP-0065-B006` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | 83–84 |
+| `T044-OLP-0065-B007` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | 83–84 |
+| `T044-OLP-0065-B008` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | 83–84 |
+| `T044-OLP-0065-B009` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | 83–84 |
+| `T044-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | 84–85 |
+| `T044-OLP-0066-B007` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | 84–85 |
+| `T044-OLP-0066-B008` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | 84–85 |
+| `T044-OLP-0066-B009` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | 84–85 |
+| `T044-OLP-0067-B006` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | 85–86 |
+| `T044-OLP-0067-B007` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | 85–86 |
+| `T044-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 85–86 |
+| `T044-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
+| `T044-OLP-0068-B005` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | 86–87 |
+| `T044-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T044-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 86–87 |
+| `T044-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
+| `T044-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
 
 ## T045 — function / mapping
 
@@ -6878,26 +6878,26 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T109-OLP-0058-B009` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:37-47` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:37-47` | 74–75 |
 | `T109-OLP-0058-B010` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:49-59` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:49-58` | 74–75 |
 | `T109-OLP-0062-B015` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83-86` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:84-87` | 81 |
-| `T109-OLP-0063-B004` | `OLP-0063` |  | `upstream/content/first-order-logic/proof-systems/proof-systems.tex:8-10` | `mr/content/first-order-logic/proof-systems/proof-systems.tex:8-10` | pending |
-| `T109-OLP-0063-B005` | `OLP-0063` |  | `upstream/content/first-order-logic/proof-systems/proof-systems.tex:12-17` | `mr/content/first-order-logic/proof-systems/proof-systems.tex:12-17` | pending |
-| `T109-OLP-0064-B007` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | pending |
-| `T109-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
-| `T109-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
-| `T109-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
-| `T109-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
-| `T109-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
-| `T109-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
-| `T109-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
-| `T109-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
-| `T109-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
-| `T109-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
-| `T109-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
-| `T109-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
-| `T109-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
-| `T109-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
-| `T109-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
-| `T109-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
-| `T109-OLP-0068-B010` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | pending |
+| `T109-OLP-0063-B004` | `OLP-0063` | 8 सिद्धता-पद्धती — प्रकरण-प्रस्तावना | `upstream/content/first-order-logic/proof-systems/proof-systems.tex:8-10` | `mr/content/first-order-logic/proof-systems/proof-systems.tex:8-10` | 82 |
+| `T109-OLP-0063-B005` | `OLP-0063` | 8 सिद्धता-पद्धती — प्रकरण-प्रस्तावना | `upstream/content/first-order-logic/proof-systems/proof-systems.tex:12-17` | `mr/content/first-order-logic/proof-systems/proof-systems.tex:12-17` | 82 |
+| `T109-OLP-0064-B007` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | 82–83 |
+| `T109-OLP-0064-B008` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | 82–83 |
+| `T109-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
+| `T109-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 82–83 |
+| `T109-OLP-0065-B006` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | 83–84 |
+| `T109-OLP-0065-B007` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | 83–84 |
+| `T109-OLP-0065-B008` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | 83–84 |
+| `T109-OLP-0065-B009` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | 83–84 |
+| `T109-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | 84–85 |
+| `T109-OLP-0066-B007` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | 84–85 |
+| `T109-OLP-0066-B008` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | 84–85 |
+| `T109-OLP-0066-B009` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | 84–85 |
+| `T109-OLP-0066-B010` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | 84–85 |
+| `T109-OLP-0067-B006` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | 85–86 |
+| `T109-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
+| `T109-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T109-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
+| `T109-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -6931,9 +6931,9 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 |---|---|---|---|---|---|
 | `T110-OLP-0055-B005` | `OLP-0055` | 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | `upstream/content/propositional-logic/propositional-logic.tex:9-18` | `mr/content/propositional-logic/propositional-logic.tex:9-18` | 73 |
 | `T110-OLP-0055-B006` | `OLP-0055` | 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | `upstream/content/propositional-logic/propositional-logic.tex:20-23` | `mr/content/propositional-logic/propositional-logic.tex:20-23` | 73 |
-| `T110-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
-| `T110-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
-| `T110-OLP-0068-B009` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | pending |
+| `T110-OLP-0064-B010` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | 82–83 |
+| `T110-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T110-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 86–87 |
 
 ## T111 — valuation (propositional semantics)
 
@@ -7000,7 +7000,7 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T112-OLP-0055-B005` | `OLP-0055` | 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | `upstream/content/propositional-logic/propositional-logic.tex:9-18` | `mr/content/propositional-logic/propositional-logic.tex:9-18` | 73 |
-| `T112-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
+| `T112-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | 84–85 |
 
 ## T113 — classical logic / classical
 
@@ -7027,7 +7027,7 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T113-OLP-0055-B005` | `OLP-0055` | 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | `upstream/content/propositional-logic/propositional-logic.tex:9-18` | `mr/content/propositional-logic/propositional-logic.tex:9-18` | 73 |
-| `T113-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
+| `T113-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 82–83 |
 
 ## T114 — propositional variable
 
@@ -7125,10 +7125,10 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T115-OLP-0059-B017` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:72-72` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:73-74` | 75–77 |
 | `T115-OLP-0059-B018` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:74-74` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:76-77` | 75–77 |
 | `T115-OLP-0059-B019` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:76-79` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:79-83` | 75–77 |
-| `T115-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
-| `T115-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
-| `T115-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
-| `T115-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T115-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | 84–85 |
+| `T115-OLP-0066-B010` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | 84–85 |
+| `T115-OLP-0067-B007` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | 85–86 |
+| `T115-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
 
 ## T116 — truth-functional
 
@@ -7192,7 +7192,7 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T117-OLP-0058-B031` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:154-156` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:153-155` | 74–75 |
 | `T117-OLP-0058-B032` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158-159` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:157-159` | 74–75 |
 | `T117-OLP-0058-B033` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | 74–75 |
-| `T117-OLP-0068-B007` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | pending |
+| `T117-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 86–87 |
 
 ## T118 — theory / metatheory
 
@@ -7220,8 +7220,8 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T118-OLP-0057-B007` | `OLP-0057` | 7.1 परिचय | `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:37-50` | `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:38-51` | 73–74 |
-| `T118-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
-| `T118-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
+| `T118-OLP-0065-B009` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | 83–84 |
+| `T118-OLP-0066-B010` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | 84–85 |
 
 ## T119 — formation rule / inductive definition / uniquely readable
 
@@ -7333,8 +7333,8 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T121-OLP-0061-B020` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:186-188` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:188-191` | 78–81 |
 | `T121-OLP-0061-B022` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:194-196` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:197-199` | 78–81 |
 | `T121-OLP-0062-B007` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33` | 81 |
-| `T121-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
-| `T121-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
+| `T121-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
+| `T121-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
 
 ## T122 — tautology
 
@@ -7397,10 +7397,10 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T123-OLP-0062-B009` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61` | 81 |
 | `T123-OLP-0062-B012` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:70-73` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:71-74` | 81 |
 | `T123-OLP-0062-B015` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83-86` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:84-87` | 81 |
-| `T123-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
-| `T123-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
-| `T123-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
-| `T123-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
+| `T123-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
+| `T123-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
+| `T123-OLP-0064-B010` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | 82–83 |
+| `T123-OLP-0066-B007` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | 84–85 |
 
 ## T124 — satisfiable / satisfiability
 
@@ -7430,9 +7430,9 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T124-OLP-0062-B007` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33` | 81 |
 | `T124-OLP-0062-B008` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:34-43` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:35-44` | 81 |
 | `T124-OLP-0062-B009` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61` | 81 |
-| `T124-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
-| `T124-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
-| `T124-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
+| `T124-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
+| `T124-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 82–83 |
+| `T124-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
 
 ## T125 — necessary / contingent
 
@@ -7491,17 +7491,17 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 |---|---|---|---|---|---|
 | `T126-OLP-0057-B006` | `OLP-0057` | 7.1 परिचय | `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:13-35` | `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:13-36` | 73–74 |
 | `T126-OLP-0058-B012` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:63-76` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:62-77` | 74–75 |
-| `T126-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
-| `T126-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
-| `T126-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
-| `T126-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
-| `T126-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
-| `T126-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
-| `T126-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
-| `T126-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
-| `T126-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
-| `T126-OLP-0068-B007` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | pending |
-| `T126-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+| `T126-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
+| `T126-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
+| `T126-OLP-0065-B006` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | 83–84 |
+| `T126-OLP-0065-B008` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | 83–84 |
+| `T126-OLP-0066-B008` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | 84–85 |
+| `T126-OLP-0066-B009` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | 84–85 |
+| `T126-OLP-0067-B006` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | 85–86 |
+| `T126-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
+| `T126-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T126-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 86–87 |
+| `T126-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
 
 ## T127 — propositional constant
 
@@ -7620,12 +7620,12 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T128-OLP-0061-B017` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:169-171` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:171-173` | 78–81 |
 | `T128-OLP-0061-B018` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:173-175` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:175-177` | 78–81 |
 | `T128-OLP-0061-B019` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:177-184` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:179-186` | 78–81 |
-| `T128-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
-| `T128-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
-| `T128-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
-| `T128-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
-| `T128-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
-| `T128-OLP-0068-B009` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | pending |
+| `T128-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | 84–85 |
+| `T128-OLP-0067-B007` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | 85–86 |
+| `T128-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 85–86 |
+| `T128-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T128-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
+| `T128-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 86–87 |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -7662,7 +7662,7 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 | `T129-OLP-0058-B032` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158-159` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:157-159` | 74–75 |
 | `T129-OLP-0058-B033` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | 74–75 |
 | `T129-OLP-0059-B007` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39` | 75–77 |
-| `T129-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T129-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
 
 ## T130 — abbreviation / abbreviates
 
@@ -8244,7 +8244,7 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 |---|---|---|---|---|---|
 | `T148-OLP-0062-B007` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33` | 81 |
 | `T148-OLP-0062-B012` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:70-73` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:71-74` | 81 |
-| `T148-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
+| `T148-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 82–83 |
 
 ## T149 — monotonicity (of semantic entailment)
 
@@ -8329,20 +8329,20 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T151-OLP-0064-B007` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | pending |
-| `T151-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
-| `T151-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
-| `T151-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
-| `T151-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
-| `T151-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
-| `T151-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
-| `T151-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
-| `T151-OLP-0068-B005` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | pending |
-| `T151-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
-| `T151-OLP-0068-B007` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | pending |
-| `T151-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
-| `T151-OLP-0068-B009` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | pending |
-| `T151-OLP-0068-B010` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | pending |
+| `T151-OLP-0064-B007` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | 82–83 |
+| `T151-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
+| `T151-OLP-0065-B006` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | 83–84 |
+| `T151-OLP-0065-B008` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | 83–84 |
+| `T151-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | 84–85 |
+| `T151-OLP-0066-B007` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | 84–85 |
+| `T151-OLP-0067-B006` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | 85–86 |
+| `T151-OLP-0067-B007` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | 85–86 |
+| `T151-OLP-0068-B005` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | 86–87 |
+| `T151-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T151-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 86–87 |
+| `T151-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
+| `T151-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 86–87 |
+| `T151-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -8368,18 +8368,18 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T152-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
-| `T152-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
-| `T152-OLP-0065-B005` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:13-13` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:13-13` | pending |
-| `T152-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
-| `T152-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
-| `T152-OLP-0066-B005` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:13-13` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:13-13` | pending |
-| `T152-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
-| `T152-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
-| `T152-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
-| `T152-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
-| `T152-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
-| `T152-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
+| `T152-OLP-0064-B008` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | 82–83 |
+| `T152-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
+| `T152-OLP-0065-B005` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:13-13` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:13-13` | 83–84 |
+| `T152-OLP-0065-B006` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | 83–84 |
+| `T152-OLP-0065-B009` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | 83–84 |
+| `T152-OLP-0066-B005` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:13-13` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:13-13` | 84–85 |
+| `T152-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | 84–85 |
+| `T152-OLP-0066-B007` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | 84–85 |
+| `T152-OLP-0066-B008` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | 84–85 |
+| `T152-OLP-0066-B009` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | 84–85 |
+| `T152-OLP-0066-B010` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | 84–85 |
+| `T152-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
 
 ## T153 — truth tree / tableaux proof / resolution method and refutation
 
@@ -8407,8 +8407,8 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T153-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
-| `T153-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
+| `T153-OLP-0064-B008` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | 82–83 |
+| `T153-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
 
 ## T154 — theorem
 
@@ -8435,11 +8435,11 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T154-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
-| `T154-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
-| `T154-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
-| `T154-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
-| `T154-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+| `T154-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
+| `T154-OLP-0064-B010` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | 82–83 |
+| `T154-OLP-0065-B007` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | 83–84 |
+| `T154-OLP-0066-B008` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | 84–85 |
+| `T154-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
 
 ## T155 — soundness / sound / unsound (of a proof system)
 
@@ -8467,9 +8467,9 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T155-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
-| `T155-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
-| `T155-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T155-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
+| `T155-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 82–83 |
+| `T155-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -8497,11 +8497,11 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T156-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
-| `T156-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
-| `T156-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
-| `T156-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
-| `T156-OLP-0068-B009` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | pending |
+| `T156-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 82–83 |
+| `T156-OLP-0065-B008` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | 83–84 |
+| `T156-OLP-0066-B009` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | 84–85 |
+| `T156-OLP-0067-B009` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | 85–86 |
+| `T156-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 86–87 |
 
 ## T157 — sequent (proof theory)
 
@@ -8528,10 +8528,10 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T157-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
-| `T157-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
-| `T157-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
-| `T157-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
+| `T157-OLP-0065-B006` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | 83–84 |
+| `T157-OLP-0065-B007` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | 83–84 |
+| `T157-OLP-0065-B008` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | 83–84 |
+| `T157-OLP-0065-B009` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | 83–84 |
 
 ## T158 — proof by cases / indirect proof / conditional proof
 
@@ -8559,8 +8559,8 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T158-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
-| `T158-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
+| `T158-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | 84–85 |
+| `T158-OLP-0066-B007` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | 84–85 |
 
 ## T159 — assumption / discharge / discharged / undischarged
 
@@ -8586,11 +8586,11 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T159-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
-| `T159-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
-| `T159-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
-| `T159-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
-| `T159-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
+| `T159-OLP-0066-B007` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | 84–85 |
+| `T159-OLP-0066-B008` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | 84–85 |
+| `T159-OLP-0067-B006` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | 85–86 |
+| `T159-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 85–86 |
+| `T159-OLP-0067-B009` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | 85–86 |
 
 ## T160 — introduction rule / elimination rule
 
@@ -8617,7 +8617,7 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T160-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
+| `T160-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | 84–85 |
 
 ## T161 — premise / conclusion / antecedent / consequent / disjunct
 
@@ -8643,8 +8643,8 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T161-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
-| `T161-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
+| `T161-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | 84–85 |
+| `T161-OLP-0066-B007` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | 84–85 |
 
 ## T162 — proof-theoretic semantics
 
@@ -8673,7 +8673,7 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T162-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
+| `T162-OLP-0066-B010` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | 84–85 |
 
 ## T163 — Gerhard Gentzen / Stanisław Jaśkowski / Dag Prawitz / Frederic Fitch
 
@@ -8697,7 +8697,7 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T163-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
+| `T163-OLP-0066-B010` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | 84–85 |
 
 ## T164 — tableau / tableau calculus / closed tableau / open branch
 
@@ -8726,11 +8726,11 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T164-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
-| `T164-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
-| `T164-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
-| `T164-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
-| `T164-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
+| `T164-OLP-0067-B006` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | 85–86 |
+| `T164-OLP-0067-B007` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | 85–86 |
+| `T164-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 85–86 |
+| `T164-OLP-0067-B009` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | 85–86 |
+| `T164-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
 
 ## T165 — signed formula / truth-value sign / immediate subformula
 
@@ -8757,10 +8757,10 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T165-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
-| `T165-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
-| `T165-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
-| `T165-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
+| `T165-OLP-0067-B006` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | 85–86 |
+| `T165-OLP-0067-B007` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | 85–86 |
+| `T165-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 85–86 |
+| `T165-OLP-0067-B009` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | 85–86 |
 
 ## T166 — Evert Beth / Jaakko Hintikka / Raymond Smullyan
 
@@ -8785,7 +8785,7 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T166-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
+| `T166-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
 
 ## T167 — axiomatic derivation / axiom schema / sentence schema
 
@@ -8813,10 +8813,10 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T167-OLP-0068-B005` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | pending |
-| `T167-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
-| `T167-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
-| `T167-OLP-0068-B010` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | pending |
+| `T167-OLP-0068-B005` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | 86–87 |
+| `T167-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T167-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
+| `T167-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
 
 ## T168 — justified / justification (of a derivation line)
 
@@ -8843,9 +8843,9 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T168-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
-| `T168-OLP-0068-B007` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | pending |
-| `T168-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+| `T168-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
+| `T168-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 86–87 |
+| `T168-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
 
 ## T169 — modus ponens
 
@@ -8873,8 +8873,8 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T169-OLP-0068-B007` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | pending |
-| `T169-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+| `T169-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 86–87 |
+| `T169-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
 
 ## T170 — Gottlob Frege / Alfred North Whitehead / Bertrand Russell / David Hilbert; Frege system / Hilbert system
 
@@ -8899,7 +8899,7 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T170-OLP-0068-B010` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | pending |
+| `T170-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -9881,8 +9881,33 @@ Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occ
 |---|---|---|---|---|---|
 | `MRPL-002-OLP-0060` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:141-142` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:136-138` | 78 |
 
+## MRPRF-001 — confirmed wrong connective in two tableau rule labels
+
+**Chosen rendering/action:** Preserved the frozen English and aligned Marathi unit bytes for one-to-one source fidelity; changed only the two labels in the flattened eight-chapter reader projection from the true conditional rule to the true conjunction rule and added an adjacent MRPRF-001 editorial note.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The last two tableau steps expand the true signed conjunction T(A and B) into T A and T B, but both justifications are labeled with the true conditional rule rather than the true conjunction rule. The nodes and branch structure make the intended rule deterministic.
+
+**Rationale:** The last two tableau steps expand the true signed conjunction T(A and B) into T A and T B, but both justifications are labeled with the true conditional rule rather than the true conjunction rule. The nodes and branch structure make the intended rule deterministic. Chosen action: Preserved the frozen English and aligned Marathi unit bytes for one-to-one source fidelity; changed only the two labels in the flattened eight-chapter reader projection from the true conditional rule to the true conjunction rule and added an adjacent MRPRF-001 editorial note.
+
+**Authorities actually checked:**
+
+- `MRPRF-001-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for MRPRF-001. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the visibly inconsistent conditional-rule labels in the reader — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the tableau nodes or branch structure instead of the labels — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Should upstream replace both final true-conditional labels by true-conjunction labels?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `MRPRF-001-OLP-0067` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:57-58` | `mr/content/first-order-logic/proof-systems/tableaux.tex:57-58` | 85–86 |
+
 ## Deferred prospective decisions
 
 The following legacy decisions have no occurrence in the current coverage and are not 
-fabricated into the canonical record: `T009`, `T011`, `T012`, `T013`. They remain 
+fabricated into the canonical record: `T013`, `T171`. They remain 
 available in `../EXPERT_REVIEW_DECISIONS.jsonl` until translated source creates a real locator.

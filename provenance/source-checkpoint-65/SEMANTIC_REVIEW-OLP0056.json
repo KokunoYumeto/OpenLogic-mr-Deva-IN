@@ -1,0 +1,21 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0056",
+  "method": "Same-agent English/Marathi close reading, import comparison and reverse paraphrase with checked native terminology; not independent or human review.",
+  "scope": "Syntax and Semantics chapter title plus its editorial summary and expansion request.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5
+      ],
+      "reverse_paraphrase": "The chapter is Syntax and Semantics. It is presently only a very brief summary of definitions and should be expanded into a gentle introduction to proofs by induction on formulas, with many more examples.",
+      "checks": "The target preserves the current brevity, definitions-only limitation, normative expansion request, induction-on-formulas proof method, and request for many examples. All six imports and identifiers are unchanged."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed."
+  ]
+}

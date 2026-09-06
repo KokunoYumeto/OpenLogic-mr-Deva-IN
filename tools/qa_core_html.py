@@ -10,6 +10,12 @@ import unicodedata
 from pathlib import Path
 
 from bs4 import BeautifulSoup
+from core_html_proofs import (
+    PROOFS,
+    adapt_prose_ensuremath,
+    expand_proof_math_macros,
+    strip_proof_environments,
+)
 
 
 P = Path(__file__).resolve().parents[1]
@@ -27,11 +33,13 @@ section_driver_names = {
     "sets.tex", "relations-complete.tex", "functions.tex",
     "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
     "propositional-logic.tex", "syntax-and-semantics.tex",
+    "proof-systems.tex",
 }
 chapter_driver_names = {
     "sets.tex", "relations-complete.tex", "functions.tex",
     "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
     "syntax-and-semantics.tex",
+    "proof-systems.tex",
 }
 chapter_count = sum(Path(row["path"]).name in chapter_driver_names for row in input_rows)
 section_count = len(input_rows) - sum(
@@ -73,7 +81,7 @@ def unwrap_command(text, command):
                 depth -= 1
             index += 1
         text = text[: match.start()] + text[start : index - 1] + text[index:]
-    return text
+    return expand_proof_math_macros(text)
 
 
 def expand_logic_math_macros(text):
@@ -114,11 +122,13 @@ def expand_logic_math_macros(text):
         lambda match: r"\mathcal{" + match.group(1) + "}" + (match.group(2) or ""),
         text,
     )
-    return text
+    return expand_proof_math_macros(text)
 
 
 def mathnorm(text):
     text = expand_logic_math_macros(text)
+    text = unwrap_command(text, "ensuremath")
+    text = text.replace(r"\bot_I{}", r"\bot_I")
     text = text.replace(r"\nicefrac", r"\frac")
     text = text.replace(r"\emph{", r"\text{")
     text = unwrap_command(text, "shoveleft")
@@ -199,8 +209,33 @@ def collect(root):
     return strings, maths, counts, notes
 
 
-source = collect(ast(B / "openlogic-mr-core.tex"))
+source_tex, expected_proofs = strip_proof_environments(
+    (B / "openlogic-mr-core.tex").read_text(encoding="utf-8")
+)
+source_tex = adapt_prose_ensuremath(source_tex)
+source = collect(ast(text=source_tex))
 adapted = collect(ast(B / "html-input.tex"))
+if source[0] != adapted[0]:
+    limit = min(len(source[0]), len(adapted[0]))
+    mismatch = next(
+        (index for index in range(limit) if source[0][index] != adapted[0][index]),
+        limit,
+    )
+    print(
+        json.dumps(
+            {
+                "adapted_prose_mismatch_index": mismatch,
+                "source_token_count": len(source[0]),
+                "adapted_token_count": len(adapted[0]),
+                "source": source[0][mismatch] if mismatch < len(source[0]) else None,
+                "adapted": adapted[0][mismatch] if mismatch < len(adapted[0]) else None,
+                "source_window": source[0][max(0, mismatch - 8) : mismatch + 12],
+                "adapted_window": adapted[0][max(0, mismatch - 8) : mismatch + 12],
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+    )
 assert source[0] == adapted[0], "Prose changed while adapting diagrams and MathML"
 if source[1] != adapted[1]:
     limit = min(len(source[1]), len(adapted[1]))
@@ -227,10 +262,13 @@ assert source[3] == adapted[3], "Footnote content changed while adapting HTML"
 document = BeautifulSoup((O / "index.html").read_text(encoding="utf-8"), "html.parser")
 all_annotation_nodes = document.select('math annotation[encoding="application/x-tex"]')
 toc_annotation_nodes = [node for node in all_annotation_nodes if node.find_parent("nav")]
+proof_annotation_nodes = [node for node in all_annotation_nodes if node.find_parent("figure", class_="proof")]
 annotations = [
     mathnorm(node.get_text())
     for node in all_annotation_nodes
-    if not node.find_parent("nav") and not node.find_parent("section", class_="footnotes")
+    if not node.find_parent("nav")
+    and not node.find_parent("section", class_="footnotes")
+    and not node.find_parent("figure", class_="proof")
 ]
 html_note_maths = [
     [mathnorm(node.get_text()) for node in item.select('math annotation[encoding="application/x-tex"]')]
@@ -256,7 +294,26 @@ if annotations != adapted[1]:
     )
 assert annotations == adapted[1], "HTML math annotations differ from adapted source math"
 assert html_note_maths == [item[1] for item in adapted[3]]
-assert len(document.select("math")) == len(annotations) + len(toc_annotation_nodes) + sum(map(len, html_note_maths))
+proof_formula_count = sum(len(spec["rows"]) for spec in expected_proofs)
+assert len(proof_annotation_nodes) == proof_formula_count
+for spec in expected_proofs:
+    figure = document.select_one(f'figure.proof[data-proof-id="{spec["id"]}"]')
+    assert figure and figure.get("aria-labelledby") == spec["id"] + "-caption"
+    assert figure.select_one("figcaption").get_text(strip=True) == spec["caption"]
+    assert len(figure.select("tbody tr")) == len(spec["rows"])
+    rendered = [
+        mathnorm(node.get_text())
+        for node in figure.select('math annotation[encoding="application/x-tex"]')
+    ]
+    assert rendered == [mathnorm(row["formula_tex"]) for row in spec["rows"]]
+    rules = [row.select("td")[2].get_text(" ", strip=True) for row in figure.select("tbody tr")]
+    assert rules == [row["rule"] for row in spec["rows"]]
+assert len(document.select("math")) == (
+    len(annotations)
+    + len(toc_annotation_nodes)
+    + sum(map(len, html_note_maths))
+    + len(proof_annotation_nodes)
+)
 assert not document.select("merror,script,iframe,object,embed")
 visible_copy = BeautifulSoup(str(document), "html.parser")
 for node in visible_copy.select("math"):
@@ -299,7 +356,7 @@ for link in document.select("a[data-reference]"):
     reference_checks.append(key)
 
 body = BeautifulSoup(str(document.main), "html.parser")
-for node in body.select("nav,header,math,.header-section-number,section.footnotes,a[role='doc-noteref']"):
+for node in body.select("nav,header,math,.header-section-number,section.footnotes,a[role='doc-noteref'],figure.proof"):
     node.decompose()
 
 
@@ -345,8 +402,17 @@ build = json.loads((B / "HTML_BUILD_RECEIPT.json").read_text(encoding="utf-8"))
 assert build["warnings"] == ""
 assert build["html_sha256"] == sha(O / "index.html")
 note_math_count = sum(map(len, html_note_maths))
-assert build["mathml_count"] == len(annotations) + len(toc_annotation_nodes) + note_math_count
+assert build["mathml_count"] == len(annotations) + len(toc_annotation_nodes) + note_math_count + len(proof_annotation_nodes)
 assert len(build["diagram_assets"]) == html_diagram_count
+assert build["proof_representations"] == [
+    {
+        "id": spec["id"],
+        "section_id": spec["section_id"],
+        "caption": spec["caption"],
+        "rows": spec["rows"],
+    }
+    for spec in expected_proofs
+]
 for item in build["diagram_assets"]:
     path = O / item["filename"]
     assert item["bytes"] == path.stat().st_size
@@ -364,6 +430,8 @@ receipt = {
     "source_to_adapted_math_expressions_exact": len(source[1]),
     "source_to_html_main_math_annotations_exact": len(annotations),
     "source_to_html_footnote_math_annotations_exact": note_math_count,
+    "proof_figures_semantically_reconstructed": len(expected_proofs),
+    "proof_formula_annotations_verified": len(proof_annotation_nodes),
     "toc_duplicate_math_annotations": len(toc_annotation_nodes),
     "native_mathml_total": build["mathml_count"],
     "footnotes_with_exact_prose_and_math": len(expected_notes),

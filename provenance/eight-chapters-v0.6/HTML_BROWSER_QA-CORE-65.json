@@ -1,0 +1,120 @@
+{
+  "schema": "openlogic-html-browser-qa/1",
+  "reviewed_utc": "2026-09-06T19:33:35.524865Z",
+  "artifact": {
+    "filename": "index.html",
+    "bytes": 1544941,
+    "sha256": "dde603bf2fb4be3f88db131309813708cd46c058e5864331828bb2e48bc11509",
+    "stylesheet_sha256": "9e74a8058e4ebb722b057b95a956ed9f2238566d21672047742d4ae1ae937eb8"
+  },
+  "browser": "Chromium through Codex in-app browser",
+  "local_origin": "http://127.0.0.1:8765/",
+  "desktop": {
+    "viewport_css_pixels": [
+      1280,
+      720
+    ],
+    "document_client_width": 1265,
+    "document_scroll_width": 1265,
+    "body_client_width": 928,
+    "body_scroll_width": 928,
+    "page_level_horizontal_overflow": false,
+    "proof_figures": [
+      {
+        "id": "sequent-calculus-proof",
+        "client_width": 885,
+        "scroll_width": 885,
+        "table_width": 480,
+        "overflow_x": "auto"
+      },
+      {
+        "id": "natural-deduction-proof",
+        "client_width": 885,
+        "scroll_width": 885,
+        "table_width": 480,
+        "overflow_x": "auto"
+      },
+      {
+        "id": "tableau-proof",
+        "client_width": 885,
+        "scroll_width": 885,
+        "table_width": 480,
+        "overflow_x": "auto"
+      }
+    ]
+  },
+  "mobile": {
+    "viewport_css_pixels": [
+      390,
+      844
+    ],
+    "measurement_method": "explicit Codex in-app browser viewport override",
+    "document_client_width": 375,
+    "document_scroll_width": 375,
+    "body_client_width": 375,
+    "body_scroll_width": 375,
+    "page_level_horizontal_overflow": false,
+    "focusable_display_math_regions": 121,
+    "all_diagrams_fit_body": true,
+    "proof_figures": [
+      {
+        "id": "sequent-calculus-proof",
+        "client_width": 344,
+        "scroll_width": 496,
+        "overflow_x": "auto",
+        "scrollbar_contained": true
+      },
+      {
+        "id": "natural-deduction-proof",
+        "client_width": 344,
+        "scroll_width": 496,
+        "overflow_x": "auto",
+        "scrollbar_contained": true
+      },
+      {
+        "id": "tableau-proof",
+        "client_width": 344,
+        "scroll_width": 496,
+        "overflow_x": "auto",
+        "scrollbar_contained": true
+      }
+    ],
+    "horizontal_scroll_exercised": {
+      "figure_id": "tableau-proof",
+      "scroll_left_before": 0,
+      "scroll_left_after": 152
+    }
+  },
+  "runtime_counts": {
+    "native_mathml": 3521,
+    "focusable_display_math_regions": 121,
+    "internal_fragment_links": 210,
+    "diagram_assets": 13,
+    "desktop_diagram_assets_loaded_successfully": 13,
+    "mobile_diagram_assets_loaded_successfully": 13,
+    "proof_figures": 3,
+    "proof_formula_rows": 11,
+    "broken_fragment_links": 0,
+    "duplicate_ids": 0,
+    "console_errors_or_warnings": 0
+  },
+  "font": {
+    "computed_body_family": "OLMarathi, serif",
+    "local_marathi_font_loaded": true
+  },
+  "keyboard_navigation": {
+    "skip_link_is_first_focus_target": true,
+    "skip_link_target": "#main-content",
+    "activation_reached_target": true,
+    "proof_table_horizontal_scroll_exercised": true
+  },
+  "visual_samples": [
+    "title and linked eight-chapter contents at desktop and mobile widths",
+    "sequent-calculus proof table at desktop width",
+    "tableau proof table before and after contained mobile horizontal scrolling",
+    "union diagram and its Marathi caption at mobile width",
+    "all 13 lazily loaded diagram assets decoded in Chromium"
+  ],
+  "result": "passed",
+  "notes": "Marathi shaping, native MathML, responsive diagrams, proof tables, captions, and local navigation rendered cleanly at both widths. All thirteen SVGs decoded and fit the mobile body. The three proof tables were fully visible at desktop width and scrolled inside their figures at mobile width without page-level overflow. The skip link worked from the first keyboard focus position, and the browser console contained no warnings or errors."
+}

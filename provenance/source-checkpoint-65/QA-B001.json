@@ -1,0 +1,75 @@
+{
+  "schema": "openlogic-mr-batch-qa/1",
+  "batch": "MR-B001-in-progress",
+  "units": [
+    {
+      "unit_id": "OLP-0004",
+      "source_path": "content/sets-functions-relations/sets/sets.tex",
+      "translation_sha256": "21784c3a578849ff1a59ceba2e9a264c956947c2b829c3cd55d07ba39b768bfa",
+      "translation_bytes": 361,
+      "segments": 1,
+      "blocks": 12,
+      "failures": []
+    },
+    {
+      "unit_id": "OLP-0005",
+      "source_path": "content/sets-functions-relations/sets/basics.tex",
+      "translation_sha256": "cc9e7f18fe9b56a3213c5356d21a861038bd1fd965026d136acc6c619b020a3f",
+      "translation_bytes": 8205,
+      "segments": 11,
+      "blocks": 15,
+      "failures": []
+    },
+    {
+      "unit_id": "OLP-0006",
+      "source_path": "content/sets-functions-relations/sets/subsets.tex",
+      "translation_sha256": "17d44644566ff3fa483a08d8ec126d8bc882be80ab18402276c138daa06ac439",
+      "translation_bytes": 6958,
+      "segments": 15,
+      "blocks": 19,
+      "failures": []
+    },
+    {
+      "unit_id": "OLP-0007",
+      "source_path": "content/sets-functions-relations/sets/important-sets.tex",
+      "translation_sha256": "2b2826771aee726d61b447519dafa3bc86267ae5d31e701b2fb570bd25e471b6",
+      "translation_bytes": 4918,
+      "segments": 6,
+      "blocks": 10,
+      "failures": []
+    },
+    {
+      "unit_id": "OLP-0008",
+      "source_path": "content/sets-functions-relations/sets/unions-and-intersections.tex",
+      "translation_sha256": "3b9cdaa40936cf4bbaad21f7ac3207b87734fa413fdc5a60d150086753827e1c",
+      "translation_bytes": 10460,
+      "segments": 26,
+      "blocks": 30,
+      "failures": []
+    },
+    {
+      "unit_id": "OLP-0009",
+      "source_path": "content/sets-functions-relations/sets/pairs-and-products.tex",
+      "translation_sha256": "c0f55492bdffe4c5fd56d7b5fd3c7705067f3b5fea94ef2ef26eef6f9f838ab4",
+      "translation_bytes": 8322,
+      "segments": 16,
+      "blocks": 20,
+      "failures": []
+    },
+    {
+      "unit_id": "OLP-0010",
+      "source_path": "content/sets-functions-relations/sets/russells-paradox.tex",
+      "translation_sha256": "1a90616118306c08155762475539a3eb184ac64429242d41cbb25083b666c9ab",
+      "translation_bytes": 8228,
+      "segments": 11,
+      "blocks": 15,
+      "failures": []
+    }
+  ],
+  "segments_with_canon": 86,
+  "failures": [],
+  "visual_qa": "not yet run",
+  "release_ready": false,
+  "full_corpus_complete": false,
+  "scope": "7 translated source units, OLP-0004–OLP-0010, whole sets chapter; 715 corpus units remain; no full-edition claim"
+}

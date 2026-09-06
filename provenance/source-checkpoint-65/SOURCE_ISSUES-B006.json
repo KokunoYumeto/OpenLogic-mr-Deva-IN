@@ -1,0 +1,48 @@
+{
+  "schema": "openlogic-source-observations/1",
+  "batch": "MR-B006",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "policy": "Frozen English bytes remain untouched. Deterministic defects are documented before a bounded Marathi correction and replayed through an exact structural-QA projection.",
+  "issues": [
+    {
+      "id": "MRPL-001",
+      "unit_id": "OLP-0058",
+      "source_locator": "content/propositional-logic/syntax-and-semantics/formulas.tex:158-159",
+      "target_locator": "mr/content/propositional-logic/syntax-and-semantics/formulas.tex:157-159",
+      "classification": "confirmed unmatched closing parenthesis in defined conditional abbreviation",
+      "finding": "The prvOr branch gives the abbreviation as an unparenthesized negation-disjunction expression with a closing parenthesis but no matching opening parenthesis.",
+      "action": "Removed only the unmatched closing parenthesis in Marathi, added the adjacent MRPL-001 note, left the frozen English bytes unchanged, and registered an exact QA projection.",
+      "alternatives": [
+        "Add a matching opening parenthesis around the whole abbreviation",
+        "Preserve the unmatched parenthesis literally"
+      ],
+      "uncertainty": "None about the formula denoted: both the unparenthesized standard abbreviation and a fully parenthesized version express the intended conditional.",
+      "review_question": "Should a future upstream correction remove the closing parenthesis or add a matching opening parenthesis?",
+      "required_translation_handling": "Use a balanced formula, attach MRPL-001, and project only this exact punctuation delta for parity QA.",
+      "mathematical_delta": {
+        "removed": "unmatched closing parenthesis",
+        "added": null
+      }
+    },
+    {
+      "id": "MRPL-002",
+      "unit_id": "OLP-0060",
+      "source_locator": "content/propositional-logic/syntax-and-semantics/formation-sequences.tex:141-142",
+      "target_locator": "mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:136-138",
+      "classification": "confirmed inconsistent equivalence sign in a syntactic formation case",
+      "finding": "The section defines and repeatedly uses syntactic identity for formation clauses, and the preceding formulas chapter distinguishes that sign from the alternative biconditional/equivalence sign; the final conjunction case alone uses the latter.",
+      "action": "Changed only that target occurrence to the already defined syntactic-identity sign, added adjacent MRPL-002, preserved frozen English bytes, and registered an exact QA projection.",
+      "alternatives": [
+        "Use A_n with the syntactic-identity sign",
+        "Preserve the isolated equivalence-sign command literally"
+      ],
+      "uncertainty": "The relation must be syntactic identity; a future upstream edit may also prefer A_n rather than A on the left, but A is already identified with A_n by the formation-sequence definition.",
+      "review_question": "Should upstream minimally replace the equivalence sign by syntactic identity, or also change the left side from A to A_n?",
+      "required_translation_handling": "Use syntactic identity in this constructor case, attach MRPL-002, and project only the exact sign-command delta for structural QA.",
+      "mathematical_delta": {
+        "removed": "equivalence-sign command",
+        "added": "syntactic-identity command"
+      }
+    }
+  ]
+}

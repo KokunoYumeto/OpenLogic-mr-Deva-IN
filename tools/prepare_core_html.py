@@ -10,6 +10,12 @@ from pathlib import Path
 
 import fitz
 from bs4 import BeautifulSoup
+from core_html_proofs import (
+    PROOFS,
+    adapt_prose_ensuremath,
+    expand_proof_math_macros,
+    strip_proof_environments,
+)
 
 
 P = Path(__file__).resolve().parents[1]
@@ -54,7 +60,7 @@ def expand_logic_math_macros(text):
     text = re.sub(r"\\Struct\{([A-Za-z])([^{}]*)\}", r"\\mathfrak{\1}\2", text)
     text = re.sub(r"\\Struct\s+([A-Za-z])", r"\\mathfrak{\1}", text)
     text = re.sub(r"\\Entails\b", r"\\vDash", text)
-    return text
+    return expand_proof_math_macros(text)
 
 
 input_rows = json.loads(INPUTS.read_text(encoding="utf-8"))["input_units"]
@@ -62,11 +68,13 @@ section_driver_names = {
     "sets.tex", "relations-complete.tex", "functions.tex",
     "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
     "propositional-logic.tex", "syntax-and-semantics.tex",
+    "proof-systems.tex",
 }
 chapter_driver_names = {
     "sets.tex", "relations-complete.tex", "functions.tex",
     "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
     "syntax-and-semantics.tex",
+    "proof-systems.tex",
 }
 scope = {
     "translation_source_units": len(input_rows),
@@ -144,6 +152,8 @@ for name, page, rect, alt in specs:
     )
 
 tex = TEX.read_text(encoding="utf-8")
+tex, proof_specs = strip_proof_environments(tex)
+tex = adapt_prose_ensuremath(tex)
 for name in [
     "union",
     "intersection",
@@ -268,7 +278,7 @@ font_dir.mkdir(exist_ok=True)
 for name in ["OLMarathiSerif-Regular.ttf", "OLMarathiSerif-Bold.ttf", "OFL.txt"]:
     shutil.copyfile(P / "fonts" / name, font_dir / name)
 
-css = """@font-face{font-family:OLMarathi;src:url(fonts/OLMarathiSerif-Regular.ttf)}@font-face{font-family:OLMarathi;src:url(fonts/OLMarathiSerif-Bold.ttf);font-weight:bold}*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:hidden}body{font-family:OLMarathi,serif;line-height:1.75;margin:0 auto;padding:2rem 1.25rem 5rem;max-width:58rem;color:#202124;background:#fff;overflow-wrap:break-word}h1,h2,h3{line-height:1.4;scroll-margin-top:1rem}h1{margin-top:3rem;border-bottom:2px solid #a81c21;padding-bottom:.6rem}a{color:#064c8c}a:focus-visible{outline:3px solid #a81c21;outline-offset:3px}a.uri{overflow-wrap:anywhere;word-break:break-word}img{max-width:100%;height:auto;display:block;margin:1rem auto}figure{margin:2rem 0}figcaption{font-size:.94rem;text-align:center}.math.display{display:block;overflow-x:auto;padding:.7rem 0}math{font-size:1.05em;max-width:100%}p math[display="inline"]{overflow-x:auto;overflow-y:hidden;vertical-align:middle}.proof{border-left:3px solid #ddd;padding-left:1rem}.defn,.ex,.prop,.thm,.lem,.cor,.prob{margin:1.2rem 0}.titlepage{border-bottom:1px solid #bbb;padding-bottom:1.5rem}#TOC{background:#f3f5f7;padding:1rem 1.5rem;border-radius:.3rem}code{overflow-wrap:anywhere}p{orphans:3;widows:3}.math-display{max-width:100%;overflow-x:auto;margin:1rem 0;padding:.5rem 0}.math-display math{margin:0 auto}figure img{width:auto}@media(max-width:600px){body{font-size:1.06rem;padding:.9rem}h1{font-size:1.7rem}h2{font-size:1.35rem}#TOC{padding:.8rem 1rem}}@media print{body{max-width:none}#TOC{page-break-after:always}a{color:inherit}}"""
+css = """@font-face{font-family:OLMarathi;src:url(fonts/OLMarathiSerif-Regular.ttf)}@font-face{font-family:OLMarathi;src:url(fonts/OLMarathiSerif-Bold.ttf);font-weight:bold}*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:hidden}body{font-family:OLMarathi,serif;line-height:1.75;margin:0 auto;padding:2rem 1.25rem 5rem;max-width:58rem;color:#202124;background:#fff;overflow-wrap:break-word}h1,h2,h3{line-height:1.4;scroll-margin-top:1rem}h1{margin-top:3rem;border-bottom:2px solid #a81c21;padding-bottom:.6rem}a{color:#064c8c}a:focus-visible{outline:3px solid #a81c21;outline-offset:3px}a.uri{overflow-wrap:anywhere;word-break:break-word}img{max-width:100%;height:auto;display:block;margin:1rem auto}figure{margin:2rem 0}figcaption{font-size:.94rem;text-align:center}.math.display{display:block;overflow-x:auto;padding:.7rem 0}math{font-size:1.05em;max-width:100%}p math[display="inline"]{overflow-x:auto;overflow-y:hidden;vertical-align:middle}.proof{border-left:3px solid #ddd;padding-left:1rem;max-width:100%;overflow-x:auto}.proof-steps{border-collapse:collapse;margin:.75rem auto;min-width:30rem}.proof-steps th,.proof-steps td{border-bottom:1px solid #ddd;padding:.35rem .8rem;text-align:left;vertical-align:top;white-space:nowrap}.defn,.ex,.prop,.thm,.lem,.cor,.prob{margin:1.2rem 0}.titlepage{border-bottom:1px solid #bbb;padding-bottom:1.5rem}#TOC{background:#f3f5f7;padding:1rem 1.5rem;border-radius:.3rem}code{overflow-wrap:anywhere}p{orphans:3;widows:3}.math-display{max-width:100%;overflow-x:auto;margin:1rem 0;padding:.5rem 0}.math-display math{margin:0 auto}figure img{width:auto}@media(max-width:600px){body{font-size:1.06rem;padding:.9rem}h1{font-size:1.7rem}h2{font-size:1.35rem}#TOC{padding:.8rem 1rem}}@media print{body{max-width:none}#TOC{page-break-after:always}a{color:inherit}}"""
 (O / "reader.css").write_text(css + "\n", encoding="utf-8")
 
 pandoc = shutil.which("pandoc")
@@ -283,7 +293,7 @@ args = [
     "--toc",
     "--number-sections",
     "--metadata=lang:mr",
-    "--metadata=title:मुक्त तर्कशास्त्र — संच, संबंध, फलने, संचांचे आकारमान, अंकगणितीकरण, अनंत संच आणि विधानीय तर्कशास्त्र",
+    "--metadata=title:मुक्त तर्कशास्त्र — संच, संबंध, फलने, संचांचे आकारमान, अंकगणितीकरण, अनंत संच, विधानीय तर्कशास्त्र आणि सिद्धता-पद्धती",
     "--metadata=toc-title:अनुक्रमणिका",
     "--css=reader.css",
     "--output=" + str(O / "index.html"),
@@ -310,6 +320,73 @@ doc = doc.replace(
 ).replace("</body>", "</main>\n</body>")
 
 soup = BeautifulSoup(doc, "html.parser")
+
+
+def math_node(latex):
+    conversion = subprocess.run(
+        [pandoc, "--from=markdown", "--to=html5", "--mathml"],
+        input="$" + latex + "$",
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        timeout=30,
+    )
+    assert conversion.returncode == 0 and conversion.stderr == "", conversion.stderr
+    node = BeautifulSoup(conversion.stdout, "html.parser").find("math")
+    assert node and node.find("annotation", attrs={"encoding": "application/x-tex"})
+    return node
+
+
+def section_paragraph(section_id, anchor):
+    heading = soup.find("h2", id=section_id)
+    assert heading, section_id
+    node = heading.find_next_sibling()
+    while node and node.name != "h2":
+        if node.name == "p" and anchor in node.get_text(" ", strip=True):
+            return node
+        node = node.find_next_sibling()
+    raise AssertionError((section_id, anchor))
+
+
+for spec in proof_specs:
+    figure = soup.new_tag(
+        "figure",
+        attrs={
+            "class": "proof",
+            "id": spec["id"],
+            "data-proof-id": spec["id"],
+            "aria-labelledby": spec["id"] + "-caption",
+        },
+    )
+    caption = soup.new_tag("figcaption", id=spec["id"] + "-caption")
+    caption.string = spec["caption"]
+    figure.append(caption)
+    table = soup.new_tag("table")
+    table["class"] = ["proof-steps"]
+    thead = soup.new_tag("thead")
+    header_row = soup.new_tag("tr")
+    for label in ("पायरी", "सूत्र", "नियम किंवा कारण"):
+        cell = soup.new_tag("th", scope="col")
+        cell.string = label
+        header_row.append(cell)
+    thead.append(header_row)
+    table.append(thead)
+    tbody = soup.new_tag("tbody")
+    for number, row in enumerate(spec["rows"], 1):
+        tr = soup.new_tag("tr")
+        number_cell = soup.new_tag("td")
+        number_cell.string = str(number)
+        formula_cell = soup.new_tag("td")
+        formula_cell.append(math_node(row["formula_tex"]))
+        rule_cell = soup.new_tag("td")
+        rule_cell.string = row["rule"]
+        tr.extend([number_cell, formula_cell, rule_cell])
+        tbody.append(tr)
+    table.append(tbody)
+    figure.append(table)
+    section_paragraph(spec["section_id"], spec["anchor"]).insert_after(figure)
+
+assert len(soup.select("figure.proof")) == len(PROOFS)
 # Tie the stylesheet URL to its exact bytes so a browser that already opened an
 # earlier development build cannot silently reuse stale responsive CSS.
 stylesheet = soup.select_one('link[rel~="stylesheet"][href="reader.css"]')
@@ -373,6 +450,15 @@ report = {
     "html_sha256": sha(O / "index.html"),
     "html_bytes": (O / "index.html").stat().st_size,
     "diagram_assets": assets,
+    "proof_representations": [
+        {
+            "id": spec["id"],
+            "section_id": spec["section_id"],
+            "caption": spec["caption"],
+            "rows": spec["rows"],
+        }
+        for spec in proof_specs
+    ],
     "mathml_count": doc.count("<math "),
     "warnings": result.stderr,
     "validation": "Build complete; static and browser verification still required",

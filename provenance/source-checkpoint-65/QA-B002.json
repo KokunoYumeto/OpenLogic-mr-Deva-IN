@@ -1,0 +1,74 @@
+{
+  "schema": "openlogic-mr-batch-qa/1",
+  "batch": "MR-B002-in-progress",
+  "units": [
+    {
+      "unit_id": "OLP-0011",
+      "translation_sha256": "b046b80ac5e8d80f4592ae5b542423926a24d6aa9dfc80654f32667155937771",
+      "translation_bytes": 416,
+      "blocks": 14,
+      "segments": 1
+    },
+    {
+      "unit_id": "OLP-0012",
+      "translation_sha256": "79011c7103c94d7589e71db510f7fc66d0e20ce60a10e5015ea78a8e4a5d182b",
+      "translation_bytes": 9853,
+      "blocks": 13,
+      "segments": 9
+    },
+    {
+      "unit_id": "OLP-0013",
+      "translation_sha256": "71df76f45bb3914cd3ab727b23b16906877bdbd242626163969313d6ca88fc27",
+      "translation_bytes": 8190,
+      "blocks": 9,
+      "segments": 6
+    },
+    {
+      "unit_id": "OLP-0014",
+      "translation_sha256": "84cac360ba896f06ed6579fad40e396d79999f09f78970a4b217e7b3785ed13a",
+      "translation_bytes": 5924,
+      "blocks": 16,
+      "segments": 12
+    },
+    {
+      "unit_id": "OLP-0015",
+      "translation_sha256": "c6022f25bc5fdc6fa07aeff03fe8d53f822b67a147d9dc63537819c68f843f9f",
+      "translation_bytes": 6261,
+      "blocks": 16,
+      "segments": 11
+    },
+    {
+      "unit_id": "OLP-0016",
+      "translation_sha256": "c609fb91d21b9873cd04725fb20cd8ba18b3ced66b9e3026af24dd6f1863ea36",
+      "translation_bytes": 11424,
+      "blocks": 30,
+      "segments": 26
+    },
+    {
+      "unit_id": "OLP-0017",
+      "translation_sha256": "f74cf58294abdca142b56bf8d1889c845426261fb983057323e10360c16c2537",
+      "translation_bytes": 5045,
+      "blocks": 10,
+      "segments": 6
+    },
+    {
+      "unit_id": "OLP-0018",
+      "translation_sha256": "0fc33d52ebb3680000d5d917d5fc11ffb4f2db585fb20647768da815b2b10c22",
+      "translation_bytes": 10061,
+      "blocks": 21,
+      "segments": 16
+    },
+    {
+      "unit_id": "OLP-0019",
+      "translation_sha256": "cd39ee393a24d7005bbb18ea0ea2b6d6d5751e791462412a13a234cb33d28ba4",
+      "translation_bytes": 3983,
+      "blocks": 21,
+      "segments": 17
+    }
+  ],
+  "segments_with_canon": 104,
+  "failures": [],
+  "visual_qa": "not yet built",
+  "release_ready": false,
+  "full_corpus_complete": false
+}

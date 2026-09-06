@@ -1,0 +1,36 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0057",
+  "method": "Same-agent English/Marathi close reading, formula/token comparison and reverse paraphrase with directly checked native terminology; not independent or human review.",
+  "scope": "The introductory account of truth-functional propositional logic, inductive syntax, valuation satisfaction, tautology, entailment and satisfiability.",
+  "samples": [
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "Propositional formulas are built from propositional variables with five displayed connectives. Variables stand for true-or-false sentences or propositions. Truth-functional semantics determines compound truth values from component truth values, considers only true and false, and leaves modal, epistemic, temporal, gappy and partial truth aside. Material implication is truth-functional, while other logics treat non-truth-functional conditionals.",
+      "checks": "All five connectives, both truth-value constants, every exclusion, the contentious-English-conditional qualification and the contrast with other logics are preserved without strengthening the claim."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "Syntax constructs formulas from variables and primitive connectives; systems can vary symbols, primitives and parentheses, including Polish notation. Formation rules define formulas inductively and uniquely readably, enabling inductive meaning definitions. Semantics assigns true or false to variables through a valuation, extends the value to every formula, defines satisfaction by value true, and equivalently defines it by structural induction using truth functions.",
+      "checks": "The target preserves the alternative-system latitude, parenthesis-free example, unique-readability consequence, total valuation assignment, iff condition, displayed satisfaction notation and structural-induction direction."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "A formula is a tautology when every valuation satisfies it; A follows from Gamma when every valuation satisfying all formulas in Gamma satisfies A; a formula set is satisfiable when one valuation satisfies all members simultaneously. Inductive formula and satisfaction definitions support semantic proofs and relations among these notions.",
+      "checks": "Universal and existential quantifier force, simultaneous satisfaction, the difference between tautology and entailment, all displayed symbols and both induction claims are preserved."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "विधानीय चल, अधिउपपत्ती, तार्किक निष्पन्नता and पूर्ततायोग्यता remain explicitly prioritized for specialist review."
+  ]
+}

@@ -26,7 +26,7 @@ SCHEMA_BYTES = 10787
 SOURCE_REVISION = "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
 PDF_FILENAME = PDF.name
 GENERATED_UTC = "2026-09-06T00:00:00Z"
-KNOWN_PROSPECTIVE_IDS = {"T009", "T013"}
+KNOWN_PROSPECTIVE_IDS = {"T009", "T013", "T171"}
 
 
 def sha(path):
@@ -49,7 +49,7 @@ LAST_UNIT = translated_unit_ids[-1]
 driver_names = {
     "sets.tex", "relations-complete.tex", "functions.tex",
     "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
-    "syntax-and-semantics.tex",
+    "syntax-and-semantics.tex", "proof-systems.tex",
 }
 COMPLETE_CHAPTERS = sum(Path(row["path"]).name in driver_names for row in input_rows)
 PDF_PROFILE = f"{COMPLETE_CHAPTERS}-chapter cumulative reader through {READER_LAST_UNIT}"
@@ -333,6 +333,7 @@ deferred_ids = [
     if not occurrences_by_decision[decision_id]
 ]
 assert set(deferred_ids) <= KNOWN_PROSPECTIVE_IDS
+deferred_display = ", ".join(f"`{decision_id}`" for decision_id in deferred_ids)
 
 input_occurrence_ref = {
     "path_or_uri": "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl",
@@ -503,7 +504,7 @@ start_lines = [
     "The PDF page field is the current assembled-reader page or range. Unknown pages ",
     "must use schema status `pending`; none were guessed in this checkpoint. Source ",
     "and target locators contain current file SHA-256 values, exact line spans, byte ",
-    "spans and excerpts. Two prospective terminology records (`T009`, `T013`) ",
+    f"spans and excerpts. {len(deferred_ids)} prospective terminology records ({deferred_display}) ",
     "remain in the backward-compatible legacy ledger but are deferred ",
     f"from `DECISIONS.json` because they have no occurrence in the current {SOURCE_UNITS}-unit ",
     "coverage and the shared schema requires at least one real occurrence per decision.",
@@ -577,7 +578,7 @@ full_lines.extend(
         "## Deferred prospective decisions",
         "",
         "The following legacy decisions have no occurrence in the current coverage and are not ",
-        "fabricated into the canonical record: `T009`, `T011`, `T012`, `T013`. They remain ",
+        f"fabricated into the canonical record: {deferred_display}. They remain ",
         "available in `../EXPERT_REVIEW_DECISIONS.jsonl` until translated source creates a real locator.",
         "",
     ]

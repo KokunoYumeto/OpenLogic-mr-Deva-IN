@@ -91,13 +91,28 @@ try:
     manifest_by_source = {row["source_path"]: row for row in manifest}
     assert len(manifest_by_source) == 722
 
-    target_units = {
+    all_target_units = {
         row["unit_id"]
         for row in manifest
         if editable.exists("mr/" + row["source_path"])
     }
     segment_units = {row["unit_id"] for row in segments}
     occurrence_units = {row["unit_id"] for row in occurrences}
+    if args.editable_zip:
+        target_units = all_target_units
+        draft_target_units = set()
+    else:
+        # A working tree may contain the next unrecorded draft. Its existence is
+        # not translated coverage until hashes and aligned segments are committed
+        # it to durable state. Finished release archives remain exact below.
+        target_units = segment_units
+        draft_target_units = all_target_units - segment_units
+        last_indexed_number = max(int(unit.split("-")[1]) for unit in segment_units)
+        assert all(
+            int(unit.split("-")[1]) > last_indexed_number
+            for unit in draft_target_units
+        ), sorted(draft_target_units)
+        assert segment_units <= all_target_units
     assert target_units == segment_units == occurrence_units, {
         "targets_missing_from_segments": sorted(target_units - segment_units),
         "segments_missing_from_targets": sorted(segment_units - target_units),
@@ -228,6 +243,9 @@ try:
         "surfaces": {
             "editable": args.editable_zip.name if args.editable_zip else "working tree",
             "review": args.review_zip.name if args.review_zip else "working tree",
+            "unrecorded_later_draft_targets_excluded_from_working_coverage": sorted(
+                draft_target_units
+            ),
         },
         "result": "passed",
     }

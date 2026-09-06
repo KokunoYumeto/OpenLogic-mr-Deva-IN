@@ -4083,6 +4083,26 @@ The current public DOI record `10.5281/zenodo.22449519` predates this developmen
   - [गोडेल, कुर्ट — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/22497/) — MR-P091, MR-C068, formal-foundations historical paragraph; current web-search extraction personally read 2026-09-06. Observation hash is not an origin-page hash; OpenLogic controls the chronology and attribution.
 - **Precise review question:** Should the edition retain the Vishwakosh-derived name forms, including डाव्हीट हिल्बर्ट, and the transparent फ्रेग/हिल्बर्ट पद्धत labels?
 
+## T171 — classical logic / classical first-order logic
+
+- **Chosen wording:** अभिजात तर्कशास्त्र / अभिजात प्रथम-क्रम तर्कशास्त्र
+- **Coverage:** pre-adjudicated; not yet applied in a translated unit.
+- **Decision provenance:** contemporaneous durable decision at first current use.
+- **Status/uncertainty:** technical qualifier directly attested; full logic compound provisional and expert-reviewable. This choice remains open to correction.
+- **Rationale:** MR-P092 directly uses अभिजात as the technical classical qualifier in contrast with quantum theory, while the other passages establish first-order and proof-theory vocabulary. No direct official Marathi occurrence of classical logic was found, so the full phrase is a transparent provisional composition. पारंपरिक is avoided because it can denote traditional syllogistic logic rather than modern classical logic.
+- **Alternatives considered:** पारंपरिक तर्कशास्त्र; रूढ तर्कशास्त्र; क्लासिकल तर्कशास्त्र.
+- **Exact aligned source/target scopes:** none yet; the term has not been applied in current translated units.
+- **Occurrence records:** none yet.
+- **Literal English line hits:** none found in the current applied scope; aligned blocks above remain the trace locator.
+- **Literal Marathi line hits:** none found as a literal phrase; glossary-token use or the aligned blocks above carry the decision.
+- **Authorities actually checked:**
+
+  - [Shivaji University BA II Philosophy syllabus](https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf) — MR-P007, MR-C006, विधेय / संख्यापनीय तर्कशास्त्र आणि संच उपपत्ती, topics 1 and 4, printed page 14. visually-read-page-image
+  - [तर्कशास्त्र, इयत्ता बारावी](https://ebooks.ebalbharati.in/pdfs/1201010508.pdf) — MR-P021, MR-C011, Predicate logic introduction, section 3.1, printed page 19. visually-read-page-image; legacy-font text extraction not used as Unicode authority
+  - [सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/25818/) — MR-P082, MR-C063, proof-theory overview and consistency paragraphs, current web extraction personally read 2026-09-06. Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+  - [विज्ञानाचे तत्त्वज्ञान — मराठी विश्वकोश प्रथमावृत्ती](https://vishwakosh.marathi.gov.in/32879/) — MR-P092, MR-C069, general-relativity/quantum-mechanics contrast; current web-search extraction personally read 2026-09-06. The article does not directly attest classical logic; OpenLogic controls the logic-theoretic sense.
+- **Precise review question:** Is अभिजात तर्कशास्त्र the clearest Marathi term for modern classical logic without suggesting traditional Aristotelian logic?
+
 # Source corrections and difficult source decisions
 
 ## MR-SI001 — OLP-0012
@@ -4513,3 +4533,14 @@ The current public DOI record `10.5281/zenodo.22449519` predates this developmen
 - **Alternatives considered:** Use A_n with the syntactic-identity sign; Preserve the isolated equivalence-sign command literally.
 - **Uncertainty:** The relation must be syntactic identity; a future upstream edit may also prefer A_n rather than A on the left, but A is already identified with A_n by the formation-sequence definition.
 - **Precise review question:** Should upstream minimally replace the equivalence sign by syntactic identity, or also change the left side from A to A_n?
+
+## MRPRF-001 — OLP-0067
+
+- **Source location:** `content/first-order-logic/proof-systems/tableaux.tex:57-58`.
+- **Target location:** `mr/content/first-order-logic/proof-systems/tableaux.tex:57-58`.
+- **Occurrence record:** `MRPRF-001-OLP-0067`.
+- **Finding:** The last two tableau steps expand the true signed conjunction T(A and B) into T A and T B, but both justifications are labeled with the true conditional rule rather than the true conjunction rule. The nodes and branch structure make the intended rule deterministic.
+- **Chosen action:** Preserved the frozen English and aligned Marathi unit bytes for one-to-one source fidelity; changed only the two labels in the flattened eight-chapter reader projection from the true conditional rule to the true conjunction rule and added an adjacent MRPRF-001 editorial note.
+- **Alternatives considered:** Preserve the visibly inconsistent conditional-rule labels in the reader; Change the tableau nodes or branch structure instead of the labels.
+- **Uncertainty:** None about the two intended labels: the parent node is a true conjunction and the two child nodes are precisely its conjuncts.
+- **Precise review question:** Should upstream replace both final true-conditional labels by true-conjunction labels?

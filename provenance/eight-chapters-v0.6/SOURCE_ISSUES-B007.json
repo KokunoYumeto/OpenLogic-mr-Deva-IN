@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-source-observations/1",
+  "batch": "MR-B007",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "policy": "Frozen English bytes remain untouched. Deterministic defects are documented before a bounded Marathi correction and replayed through an exact structural-QA projection.",
+  "issues": [
+    {
+      "id": "MRPRF-001",
+      "unit_id": "OLP-0067",
+      "source_locator": "content/first-order-logic/proof-systems/tableaux.tex:57-58",
+      "target_locator": "mr/content/first-order-logic/proof-systems/tableaux.tex:57-58",
+      "classification": "confirmed wrong connective in two tableau rule labels",
+      "finding": "The last two tableau steps expand the true signed conjunction T(A and B) into T A and T B, but both justifications are labeled with the true conditional rule rather than the true conjunction rule. The nodes and branch structure make the intended rule deterministic.",
+      "action": "Preserved the frozen English and aligned Marathi unit bytes for one-to-one source fidelity; changed only the two labels in the flattened eight-chapter reader projection from the true conditional rule to the true conjunction rule and added an adjacent MRPRF-001 editorial note.",
+      "alternatives": [
+        "Preserve the visibly inconsistent conditional-rule labels in the reader",
+        "Change the tableau nodes or branch structure instead of the labels"
+      ],
+      "uncertainty": "None about the two intended labels: the parent node is a true conjunction and the two child nodes are precisely its conjuncts.",
+      "review_question": "Should upstream replace both final true-conditional labels by true-conjunction labels?",
+      "required_translation_handling": "Keep the aligned target source byte-faithful, project exactly the two connective-label substitutions in a reader build, and disclose the projection as MRPRF-001.",
+      "mathematical_delta": {
+        "occurrences": 2,
+        "removed": "\\TRule{\\True}{\\lif}[2]",
+        "added": "\\TRule{\\True}{\\land}[2]"
+      }
+    }
+  ]
+}

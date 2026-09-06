@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0063",
+  "method": "Same-agent English/Marathi close reading, conditional-branch inspection, macro/token comparison and reverse paraphrase with established native terminology; not independent or human review.",
+  "scope": "Proof-systems chapter driver, its FOL/PL title branches, editorial reuse guidance, and five survey-section imports.",
+  "samples": [
+    {
+      "blocks": [
+        4
+      ],
+      "reverse_paraphrase": "Whether the FOL tag is true or false, the chapter is titled Derivation Systems; only the unchanged chapter namespace differs between the two branches.",
+      "checks": "Both conditional branches, chapter identifiers, the derivation token, and the plural system heading are preserved."
+    },
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "The chapter gathers general material about derivation systems. A textbook that uses a particular system may place the introduction and the relevant survey section at the start of the chapter that introduces that system.",
+      "checks": "The permission, the specific-system restriction, both sections, and their placement at the beginning of the introducing chapter are unchanged."
+    },
+    {
+      "blocks": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "The driver imports the introduction, sequent-calculus, natural-deduction, tableaux, and axiomatic-deduction surveys in the source order.",
+      "checks": "All five import targets and their order are byte-identical to the source."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "The established compounds निष्पत्ती पद्धती and सिद्धता-पद्धती remain open to specialist preference review."
+  ]
+}
