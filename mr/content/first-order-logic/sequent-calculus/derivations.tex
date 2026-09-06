@@ -1,0 +1,120 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{der}}
+      {\olfileid{pl}{seq}{der}}
+
+\olsection{\usetoken{P}{derivation}}
+
+\begin{explain}
+आरंभीची क्रमवर्ती कशी असते हे आपण सांगितले आहे आणि निगमन नियम दिले आहेत.
+क्रमवर्ती कलनातील !!^{derivation}s यांपासून विगमनाधारित रीतीने निर्माण केल्या
+जातात: प्रत्येक !!{derivation} ही एकतर स्वतःच आरंभीची क्रमवर्ती असते, किंवा
+एका अनुमानाच्या वर असलेल्या एक किंवा दोन !!{derivation}s ने बनलेली असते.
+\end{explain}
+
+\begin{defn}[$\Log{LK}$ !!{derivation}]
+क्रमवर्ती~$S$ ची \emph{$\Log{LK}$-!!{derivation}} म्हणजे पुढील अटी पूर्ण
+करणारा क्रमवर्तींचा सांत वृक्ष होय:
+\begin{enumerate}
+\item वृक्षातील सर्वांत वरच्या क्रमवर्ती आरंभीच्या क्रमवर्ती असतात.
+\item वृक्षातील सर्वांत खालची क्रमवर्ती~$S$ असते.
+\item वृक्षातील $S$ व्यतिरिक्त प्रत्येक क्रमवर्ती ही निगमन नियमाच्या योग्य
+  उपयोजनाचे आधारविधान असते आणि त्या उपयोजनाचा निष्कर्ष वृक्षात त्या
+  क्रमवर्तीच्या थेट खाली असतो.
+\end{enumerate}
+यानंतर $S$ ला त्या !!{derivation} ची \emph{अंतिम क्रमवर्ती} म्हणतो आणि
+$S$ ही \emph{$\Log{LK}$ मध्ये !!{derivable}} आहे (किंवा ती
+$\Log{LK}$-!!{derivable} आहे) असे म्हणतो.
+\end{defn}
+
+\begin{ex}
+प्रत्येक आरंभीची क्रमवर्ती, उदा., $!C \Sequent !C$, ही !!a{derivation} असते.
+उदाहरणार्थ, $\LeftR{\Weakening}$ नियम लागू करून आपण तिच्यापासून नवी
+!!{derivation} मिळवू शकतो:
+\begin{prooftree}
+\Axiom$ \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !A, \Gamma \fCenter \Delta$
+\end{prooftree}
+मात्र हा नियम सर्वसाधारण स्वरूपाचा आहे: नियमातील $!A$ च्या जागी कोणतेही
+!!{sentence}, उदा., $!D$ सुद्धा, घेता येते. आधारविधान आपल्या आरंभीच्या
+क्रमवर्ती $!C \Sequent !C$ शी जुळत असेल, तर $\Gamma$ आणि $\Delta$ ही दोन्ही
+केवळ~$!C$ असतात आणि निष्कर्ष $!D, !C \Sequent !C$ असा असेल. म्हणून पुढील
+ही !!a{derivation} आहे:
+\begin{prooftree}
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\end{prooftree}
+आता आपण दुसरा नियम, समजा $\LeftR{\Exchange}$, लागू करू शकतो; त्यामुळे
+डावीकडील दोन !!{sentence}s ची अदलाबदल करता येते. म्हणून पुढीलही योग्य
+!!{derivation} आहे:
+\begin{prooftree}
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !C, !D \fCenter !C$
+\end{prooftree}
+नियमाच्या या उपयोजनात—मूळ नियम पुढीलप्रमाणे दिला होता—
+\begin{prooftree}
+\Axiom$ \Gamma, !A, !B, \Pi \fCenter \Delta $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \Gamma, !B, !A, \Pi \fCenter \Delta,$
+\end{prooftree}
+$\Gamma$ आणि $\Pi$ दोन्ही रिक्त ठेवले होते, $\Delta$ हे $!C$ होते, आणि
+$!A$ व $!B$ यांच्या भूमिका अनुक्रमे $!D$ आणि~$!C$ यांनी बजावल्या. अगदी
+याच प्रकारे पुढीलही !!a{derivation} आहे हे आपल्याला दिसते:
+\begin{prooftree}
+\Axiom$ !D \fCenter !D $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !C, !D \fCenter !D$
+\end{prooftree}
+आता या दोन !!{derivation}s घेऊन $\RightR{\land}$ च्या साहाय्याने त्यांना
+एकत्र करता येते. तो नियम असा होता:
+\begin{prooftree}
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$ \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \Gamma \fCenter \Delta, !A \land !B $
+\end{prooftree}
+आपल्या उदाहरणात आधारविधाने त्यांवर संपणाऱ्या !!{derivation}s च्या अंतिम
+क्रमवर्तींशी जुळली पाहिजेत. याचा अर्थ $\Gamma$ हे $!C, !D$ आहे, $\Delta$
+रिक्त आहे, $!A$ हे $!C$ आहे आणि $!B$ हे $!D$ आहे. म्हणून अनुमान योग्य
+असेल, तर निष्कर्ष $!C, !D \Sequent !C \land !D$ हा आहे.
+\begin{prooftree}
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !C, !D \fCenter !C$
+\Axiom$ !D \fCenter !D $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !C, !D \fCenter !D$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ !C, !D \fCenter !C \land !D $
+\end{prooftree}
+अर्थात, आधारविधानांचा क्रम उलटाही करता येतो; मग $!A$ हे $!D$ आणि $!B$
+हे~$!C$ असेल.
+\begin{prooftree}
+\Axiom$ !D \fCenter !D $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !C, !D \fCenter !D$
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !C, !D \fCenter !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ !C, !D \fCenter !D \land !C $
+\end{prooftree}
+\end{ex}
+
+\end{document}

@@ -1,0 +1,80 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: structural-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{srl}}
+      {\olfileid{pl}{seq}{srl}}
+
+\olsection{संरचनात्मक नियम}
+
+क्रमवर्तीच्या डाव्या आणि उजव्या बाजूंवरील !!{sentence}s ची मांडणी बदलता येईल,
+असे आणखी काही नियम आपल्याला आवश्यक आहेत. तार्किक नियम ज्या !!{sentence}s वर
+लागू होतो, ती आधारविधानात अगदी डाव्या किंवा अगदी उजव्या टोकाला असणे आवश्यक
+असते. त्यामुळे !!{sentence}s योग्य स्थानी हलवता यावीत म्हणून आपल्याला
+``अदलाबदल'' नियमाची गरज आहे. तसेच कधी कधी दोन एकसारखी !!{sentence}s एकात
+एकत्र करता येणे आणि दोन्हींपैकी कोणत्याही बाजूला !!a{sentence} जोडता येणे
+महत्त्वाचे असते.
+
+\subsection{दुर्बलीकरण}
+
+\begin{defish}
+\Axiom$ \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !A, \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A$
+\DisplayProof
+\end{defish}
+
+\subsection{आकुंचन}
+
+\begin{defish}
+\Axiom$ !A, !A, \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Contraction}}
+\UnaryInf$ !A, \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A, !A$
+\RightLabel{\RightR{\Contraction}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A$
+\DisplayProof
+\end{defish}
+
+\subsection{अदलाबदल}
+
+\begin{defish}
+\Axiom$ \Gamma, !A, !B, \Pi \fCenter \Delta $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \Gamma, !B, !A, \Pi \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A, !B, \Lambda$
+\RightLabel{\RightR{\Exchange}}
+\UnaryInf$ \Gamma \fCenter \Delta, !B, !A, \Lambda$
+\DisplayProof
+\end{defish}
+
+दुर्बलीकरण, आकुंचन आणि अदलाबदल या अनुमानांची मालिका अनेकदा दुहेरी
+अनुमानरेषांनी दर्शवली जाते.
+
+पुढील ``कट'' नावाचा नियम काटेकोर अर्थाने आवश्यक नाही; मात्र त्यामुळे
+!!{derivation}s पुन्हा वापरणे आणि एकत्र करणे पुष्कळ सोपे होते.
+\begin{defish}
+\[
+\Axiom$ \Gamma \fCenter \Delta, !A$
+\Axiom$ !A, \Pi \fCenter \Lambda $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\]
+\end{defish}
+
+\end{document}

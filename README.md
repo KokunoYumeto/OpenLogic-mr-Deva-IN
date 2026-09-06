@@ -19,12 +19,12 @@ form. The 89-page PDF was built twice to identical bytes and every page was
 inspected. Its offline HTML companion passed exact source-conversion, structure,
 asset, proof-display and desktop/mobile browser checks.
 
-Editable source after that release has progressed through OLP-0072: **69/722
-units** and 769 aligned content blocks. OLP-0069 is the Sequent Calculus chapter
+Editable source after that release has progressed through OLP-0075: **72/722
+units** and 794 aligned content blocks. OLP-0069 is the Sequent Calculus chapter
 driver; OLP-0070 defines its sequents, initial sequents, derivation trees and rule
-classes; OLP-0071 and OLP-0072 give the propositional and quantifier rules. The
-remaining imported sections are in progress; these four units are not part of the
-v0.6 reader or release archive.
+classes; OLP-0071 and OLP-0072 give the propositional and quantifier rules;
+OLP-0073–OLP-0075 cover structural rules, derivations and worked proofs. These
+seven units are not yet part of the v0.6 reader or release archive.
 
 - **Current release:** [आठ प्रकरणे — PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eight-chapters-v0.6).
 - **DOI mirror:** [edition concept DOI 10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960), which resolves to the latest version.
@@ -79,9 +79,13 @@ The evidence also preserves the formal retraction of a
 shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The frozen
 65-unit source-checkpoint evidence explicitly distinguishes preserved original
 pages from hash-pinned short web observations whose origin HTML bytes were
-unavailable. The synchronized root provenance now covers the 69 translated units
-through OLP-0072; those later working records remain outside the v0.6 reader and
-release archive.
+unavailable. The synchronized root provenance now covers the 72 translated units
+through OLP-0075. A bounded independent model audit of OLP-0071–OLP-0072 found no
+material mistranslation, prompted one standing-assumption clarification, and led
+to narrower overlapping choice locators plus separate confidence records for
+closed term, bound variable and eigenvariable vocabulary. This audit is not
+native-speaker or human-expert testimony. These later working records remain
+outside the v0.6 reader and release archive.
 
 Canon originals are local research evidence. They are **not redistributed here**.
 Some government-site originals could not be downloaded; the index distinguishes

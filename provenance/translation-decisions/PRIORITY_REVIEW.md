@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
-This view contains 22 urgent/high decisions and
-608 current occurrences. Normal and low items remain in the full index.
+This view contains 26 urgent/high decisions and
+648 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -467,6 +467,12 @@ This view contains 22 urgent/high decisions and
 | `T041-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | 44-63 | 42-61 | 85–86 |
 | `T041-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | 72-87 | 69-82 | 85–86 |
 | `T041-OLP-0070-B011` | `OLP-0070` |  | 63-72 | 65-75 | pending |
+| `T041-OLP-0074-B007` | `OLP-0074` |  | 23-35 | 22-35 | pending |
+| `T041-OLP-0075-B009` | `OLP-0075` |  | 54-74 | 51-70 | pending |
+| `T041-OLP-0075-B010` | `OLP-0075` |  | 76-108 | 72-105 | pending |
+| `T041-OLP-0075-B011` | `OLP-0075` |  | 110-152 | 107-149 | pending |
+| `T041-OLP-0075-B013` | `OLP-0075` |  | 158-215 | 155-210 | pending |
+| `T041-OLP-0075-B015` | `OLP-0075` |  | 220-233 | 215-229 | pending |
 
 ## T042 — least / well-ordered / predecessor / successor → लघुतम / सुक्रमित / पूर्ववर्ती / उत्तरवर्ती
 
@@ -738,8 +744,27 @@ This view contains 22 urgent/high decisions and
 | `T044-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | 70-81 | 71-82 | 86–87 |
 | `T044-OLP-0070-B005` | `OLP-0070` |  | 13-13 | 13-13 | pending |
 | `T044-OLP-0070-B011` | `OLP-0070` |  | 63-72 | 65-75 | pending |
-| `T044-OLP-0072-B013` | `OLP-0072` |  | 56-77 | 56-78 | pending |
-| `T044-OLP-0072-B014` | `OLP-0072` |  | 79-102 | 80-103 | pending |
+| `T044-OLP-0072-B013` | `OLP-0072` |  | 57-58 | 57-58 | pending |
+| `T044-OLP-0072-B014` | `OLP-0072` |  | 86-86 | 86-86 | pending |
+| `T044-OLP-0073-B014` | `OLP-0073` |  | 68-78 | 68-78 | pending |
+| `T044-OLP-0074-B006` | `OLP-0074` |  | 15-21 | 15-20 | pending |
+| `T044-OLP-0074-B007` | `OLP-0074` |  | 23-35 | 22-35 | pending |
+| `T044-OLP-0074-B008` | `OLP-0074` |  | 37-119 | 37-118 | pending |
+| `T044-OLP-0075-B005` | `OLP-0075` |  | 13-13 | 13-13 | pending |
+| `T044-OLP-0075-B006` | `OLP-0075` |  | 15-16 | 15-16 | pending |
+| `T044-OLP-0075-B007` | `OLP-0075` |  | 18-48 | 18-45 | pending |
+| `T044-OLP-0075-B008` | `OLP-0075` |  | 50-52 | 47-49 | pending |
+| `T044-OLP-0075-B009` | `OLP-0075` |  | 54-74 | 51-70 | pending |
+| `T044-OLP-0075-B010` | `OLP-0075` |  | 76-108 | 72-105 | pending |
+| `T044-OLP-0075-B011` | `OLP-0075` |  | 110-152 | 107-149 | pending |
+| `T044-OLP-0075-B012` | `OLP-0075` |  | 154-156 | 151-153 | pending |
+| `T044-OLP-0075-B013` | `OLP-0075` |  | 158-215 | 155-210 | pending |
+| `T044-OLP-0075-B015` | `OLP-0075` |  | 220-233 | 215-229 | pending |
+| `T044-OLP-0075-B017` | `OLP-0075` |  | 241-250 | 237-246 | pending |
+| `T044-OLP-0075-B018` | `OLP-0075` |  | 252-298 | 248-293 | pending |
+| `T044-OLP-0075-B019` | `OLP-0075` |  | 300-308 | 295-303 | pending |
+| `T044-OLP-0075-B020` | `OLP-0075` |  | 310-326 | 305-321 | pending |
+| `T044-OLP-0075-B021` | `OLP-0075` |  | 328-342 | 323-337 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
@@ -792,6 +817,65 @@ This view contains 22 urgent/high decisions and
 | Occurrence | Unit | Section | Source line | Target line | PDF page |
 |---|---|---|---|---|---|
 | `T070-OLP-0031-B016` | `OLP-0031` | 4.4 जोडीकरण फलने आणि संकेतांक | 99-104 | 100-105 | 37–38 |
+
+## T155 — soundness / sound / unsound (of a proof system) → निर्दोषता / निर्दोष / सदोष
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: not-attested-in-proof-theory; definition-controlled provisional choice; high-priority expert review useful. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Should proof-system soundness use निर्दोषता, दृढता, or a directly attested specialist term not found in the checked sources?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T155-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | 50-71 | 53-74 | 82–83 |
+| `T155-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | 82-99 | 85-101 | 82–83 |
+| `T155-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | 15-36 | 15-36 | 86–87 |
+| `T155-OLP-0072-B014` | `OLP-0072` |  | 84-85 | 84-85 | pending |
+
+## T174 — closed term → बंद पद
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: not-attested as an exact compound in checked Marathi proof-theory sources; definition-controlled and provisional. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Is बंद पद the preferred Marathi logic term for a term containing no variables, or would चररहित पद be clearer while preserving the distinction from a closed formula?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T174-OLP-0072-B008` | `OLP-0072` |  | 27-28 | 27-27 | pending |
+| `T174-OLP-0072-B011` | `OLP-0072` |  | 48-48 | 48-48 | pending |
+| `T174-OLP-0072-B014` | `OLP-0072` |  | 80-81 | 81-82 | pending |
+
+## T178 — eigenvariable → आयगेन चर
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: not-attested in checked Marathi proof-theory sources; spelling-only adjacent evidence; definition-controlled and provisional. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Should Marathi proof theory retain आयगेन चर, join or hyphenate it, or use a directly attested specialist alternative unavailable in the checked sources?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T178-OLP-0072-B008` | `OLP-0072` |  | 30-32 | 30-32 | pending |
+| `T178-OLP-0072-B011` | `OLP-0072` |  | 48-50 | 48-50 | pending |
+| `T178-OLP-0072-B012` | `OLP-0072` |  | 52-54 | 52-54 | pending |
+| `T178-OLP-0072-B013` | `OLP-0072` |  | 72-76 | 73-77 | pending |
+| `T178-OLP-0072-B014` | `OLP-0072` |  | 81-86 | 82-86 | pending |
+
+## T179 — eigenvariable condition → आयगेन चराची अट
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: not-attested in checked Marathi proof-theory sources; compositional, definition-controlled and provisional. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Is आयगेन चराची अट the natural Marathi label for the stated LK side condition, including spacing and genitive form?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T179-OLP-0072-B012` | `OLP-0072` |  | 52-54 | 52-54 | pending |
+| `T179-OLP-0072-B013` | `OLP-0072` |  | 72-76 | 73-77 | pending |
+| `T179-OLP-0072-B014` | `OLP-0072` |  | 81-86 | 82-86 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

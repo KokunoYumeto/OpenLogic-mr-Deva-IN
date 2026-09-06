@@ -172,7 +172,11 @@ def adapt_occurrence(legacy, evidence_ref):
         semantic_id = f"{unit_id}-{legacy['aligned_block']}"
         source_context = (
             f"{granularity}; aligned block {legacy['aligned_block']}; "
-            f"legacy occurrence {legacy['occurrence_id']}."
+            f"legacy occurrence {legacy['occurrence_id']}. "
+            f"Choice-locator precision: {legacy.get('choice_locator_precision', 'not recorded')}. "
+            f"Aligned source context: {legacy.get('aligned_context_source_lines', 'not recorded')}; "
+            f"aligned target context: {legacy.get('aligned_context_target_lines', 'not recorded')}. "
+            f"{legacy.get('choice_span_overlap_policy', '')}"
         )
         target_context = source_context
         source = span_locator(
@@ -490,7 +494,7 @@ start_lines = [
     "This bundle is the expert-review entry point for the current Marathi ",
     f"OpenLogic translation through {LAST_UNIT}. It covers {SOURCE_UNITS}/722 source units, ",
     f"{COMPLETE_CHAPTERS} complete chapters, {canonical_count} applied decisions and ",
-    f"{occurrence_count:,} exact current occurrences. The remaining {remaining_units} units are untranslated.",
+    f"{occurrence_count:,} current decision-level occurrence records. The remaining {remaining_units} units are untranslated.",
     f"The paginated {COMPLETE_CHAPTERS}-chapter reader ends at {READER_LAST_UNIT}; later translated units use pending PDF locators.",
     "",
     "No independent human or native-speaker review is claimed. Every choice remains ",
@@ -513,6 +517,8 @@ start_lines = [
     "remain in the backward-compatible legacy ledger but are deferred ",
     f"from `DECISIONS.json` because they have no occurrence in the current {SOURCE_UNITS}-unit ",
     "coverage and the shared schema requires at least one real occurrence per decision.",
+    "Decision-relevant spans are narrower than aligned context blocks where explicitly recorded. "
+    "They may overlap when one construction realizes several choices and do not claim a disjoint token partition.",
     "",
     "The full source-aligned Marathi edition remains the controlling deliverable. This ",
     "review bundle does not define a second regional or notation variant.",
