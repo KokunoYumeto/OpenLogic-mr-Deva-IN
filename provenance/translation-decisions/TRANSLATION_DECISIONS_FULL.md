@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occurrences.
+Coverage: 65/722 source units through OLP-0068; 208 applied decisions; 4,689 occurrences.
 
 ## T001 — set
 
@@ -378,6 +378,9 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T001-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
 | `T001-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
 | `T001-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
+| `T001-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T001-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+| `T001-OLP-0068-B009` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | pending |
 
 ## T002 — element/member
 
@@ -646,6 +649,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T002-OLP-0045-B010` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:58-78` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:57-83` | 56–58 |
 | `T002-OLP-0054-B016` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:85-87` | `mr/content/sets-functions-relations/infinite/card-sb.tex:87-89` | 70–72 |
 | `T002-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
+| `T002-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
 
 ## T003 — empty set
 
@@ -812,6 +816,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T003-OLP-0044-B012` | `OLP-0044` | 5.3 वास्तव संख्या-रेषा | `upstream/content/sets-functions-relations/arithmetization/reals.tex:76-80` | `mr/content/sets-functions-relations/arithmetization/reals.tex:86-96` | 55–56 |
 | `T003-OLP-0045-B006` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:26-36` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:25-35` | 56–58 |
 | `T003-OLP-0045-B010` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:58-78` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:57-83` | 56–58 |
+| `T003-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
 
 ## T004 — extensionality
 
@@ -1676,6 +1681,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T015-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
 | `T015-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
 | `T015-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
+| `T015-OLP-0068-B010` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | pending |
 
 ## T016 — if and only if
 
@@ -1772,6 +1778,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T016-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
 | `T016-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
 | `T016-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
+| `T016-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
 
 ## T017 — union
 
@@ -2261,6 +2268,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T023-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
 | `T023-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
 | `T023-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
+| `T023-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
 
 ## T024 — set difference
 
@@ -2523,6 +2531,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 
 - `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
 - `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
 
 **Alternatives:**
 
@@ -2569,6 +2578,9 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T029-OLP-0024-B027` | `OLP-0024` | 3.4 फलनांचे व्युत्क्रम | `upstream/content/sets-functions-relations/functions/inverses.tex:171-175` | `mr/content/sets-functions-relations/functions/inverses.tex:175-179` | 27–29 |
 | `T029-OLP-0064-B007` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:26-36` | `mr/content/first-order-logic/proof-systems/introduction.tex:27-39` | pending |
 | `T029-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
+| `T029-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T029-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+| `T029-OLP-0068-B009` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | pending |
 
 ## T030 — relation / binary relation
 
@@ -3786,6 +3798,11 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T044-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
 | `T044-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
 | `T044-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
+| `T044-OLP-0068-B005` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | pending |
+| `T044-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T044-OLP-0068-B007` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | pending |
+| `T044-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+| `T044-OLP-0068-B010` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | pending |
 
 ## T045 — function / mapping
 
@@ -6846,6 +6863,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 - `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
 - `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
 - `MR-P085` — सिद्धतापद्धती : सोपाधिक व अप्रत्यक्ष (CP and IP). https://marathivishwakosh.org/50021/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly name natural-deduction discharge or introduction/elimination rules.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
 
 **Alternatives:**
 
@@ -6877,6 +6895,9 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T109-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
 | `T109-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
 | `T109-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
+| `T109-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T109-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+| `T109-OLP-0068-B010` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -6895,6 +6916,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 - `MR-P066` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/t (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
 - `MR-P067` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
 - `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
 
 **Alternatives:**
 
@@ -6910,6 +6932,8 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T110-OLP-0055-B005` | `OLP-0055` | 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | `upstream/content/propositional-logic/propositional-logic.tex:9-18` | `mr/content/propositional-logic/propositional-logic.tex:9-18` | 73 |
 | `T110-OLP-0055-B006` | `OLP-0055` | 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | `upstream/content/propositional-logic/propositional-logic.tex:20-23` | `mr/content/propositional-logic/propositional-logic.tex:20-23` | 73 |
 | `T110-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
+| `T110-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T110-OLP-0068-B009` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -7104,6 +7128,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T115-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
 | `T115-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
 | `T115-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
+| `T115-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
 
 ## T116 — truth-functional
 
@@ -7167,6 +7192,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T117-OLP-0058-B031` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:154-156` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:153-155` | 74–75 |
 | `T117-OLP-0058-B032` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158-159` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:157-159` | 74–75 |
 | `T117-OLP-0058-B033` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | 74–75 |
+| `T117-OLP-0068-B007` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | pending |
 
 ## T118 — theory / metatheory
 
@@ -7473,6 +7499,9 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T126-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
 | `T126-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
 | `T126-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
+| `T126-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T126-OLP-0068-B007` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | pending |
+| `T126-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
 
 ## T127 — propositional constant
 
@@ -7594,6 +7623,9 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T128-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
 | `T128-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
 | `T128-OLP-0067-B008` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | pending |
+| `T128-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T128-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+| `T128-OLP-0068-B009` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -7630,6 +7662,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T129-OLP-0058-B032` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158-159` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:157-159` | 74–75 |
 | `T129-OLP-0058-B033` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | 74–75 |
 | `T129-OLP-0059-B007` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39` | 75–77 |
+| `T129-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
 
 ## T130 — abbreviation / abbreviates
 
@@ -8285,6 +8318,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 
 - `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
 - `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
 
 **Alternatives:**
 
@@ -8303,6 +8337,12 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T151-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
 | `T151-OLP-0067-B006` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | pending |
 | `T151-OLP-0067-B007` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | pending |
+| `T151-OLP-0068-B005` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | pending |
+| `T151-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T151-OLP-0068-B007` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | pending |
+| `T151-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+| `T151-OLP-0068-B009` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | pending |
+| `T151-OLP-0068-B010` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -8384,6 +8424,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 
 - `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
 - `MR-P083` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/t (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
 
 **Alternatives:**
 
@@ -8398,6 +8439,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T154-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
 | `T154-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
 | `T154-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
+| `T154-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
 
 ## T155 — soundness / sound / unsound (of a proof system)
 
@@ -8427,6 +8469,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 |---|---|---|---|---|---|
 | `T155-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
 | `T155-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
+| `T155-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -8443,6 +8486,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 - `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
 - `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
 - `MR-P085` — सिद्धतापद्धती : सोपाधिक व अप्रत्यक्ष (CP and IP). https://marathivishwakosh.org/50021/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly name natural-deduction discharge or introduction/elimination rules.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
 
 **Alternatives:**
 
@@ -8457,6 +8501,7 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | `T156-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
 | `T156-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
 | `T156-OLP-0067-B009` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | pending |
+| `T156-OLP-0068-B009` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -8741,6 +8786,120 @@ Coverage: 64/722 source units through OLP-0067; 204 applied decisions; 4,640 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T166-OLP-0067-B010` | `OLP-0067` |  | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | pending |
+
+## T167 — axiomatic derivation / axiom schema / sentence schema
+
+**Chosen rendering/action:** स्वयंसिद्धकीय निष्पत्ती / स्वयंसिद्धक-रूपबंध / वाक्य-रूपबंध
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P087 directly explains the axiomatic method and the practice of treating every well-formed expression of specified shapes as an axiom, calling the licensing statement an अधिस्वयंसिद्धक. The edition uses the more transparent स्वयंसिद्धक-रूपबंध for the source's schema itself and वाक्य-रूपबंध for sentence schema, while retaining established निष्पत्ती for derivation.
+
+**Rationale:** MR-P087 directly explains the axiomatic method and the practice of treating every well-formed expression of specified shapes as an axiom, calling the licensing statement an अधिस्वयंसिद्धक. The edition uses the more transparent स्वयंसिद्धक-रूपबंध for the source's schema itself and वाक्य-रूपबंध for sentence schema, while retaining established निष्पत्ती for derivation.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P065` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — M glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/m (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
+
+**Alternatives:**
+
+- स्वयंसिद्धकीय निगमन / अधिस्वयंसिद्धक / वाक्याकार — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- स्वयंसिद्धक निष्पत्ती / स्वयंसिद्धक-योजना / विधान-योजना — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should axiom schema be स्वयंसिद्धक-रूपबंध, or should the Vishwakosh term अधिस्वयंसिद्धक be used even when the text denotes the formula pattern rather than its licensing metastatement?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T167-OLP-0068-B005` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-13` | pending |
+| `T167-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T167-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+| `T167-OLP-0068-B010` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | pending |
+
+## T168 — justified / justification (of a derivation line)
+
+**Chosen rendering/action:** समर्थित / समर्थन मिळणे
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The sources directly establish proof and inference-rule grammar but do not supply a separate term for a line's justification. समर्थित expresses that a line is licensed by an axiom, premise, or rule without suggesting semantic truth; the enumerated source conditions define the exact relation.
+
+**Rationale:** The sources directly establish proof and inference-rule grammar but do not supply a separate term for a line's justification. समर्थित expresses that a line is licensed by an axiom, premise, or rule without suggesting semantic truth; the enumerated source conditions define the exact relation.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
+
+**Alternatives:**
+
+- समर्थनीय / समर्थन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- न्याय्य / न्याय्यता — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रमाणित / प्रमाणन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does समर्थित clearly denote formal licensing of a proof line, distinct from truth and from the proof of the final theorem?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T168-OLP-0068-B006` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | pending |
+| `T168-OLP-0068-B007` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | pending |
+| `T168-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+
+## T169 — modus ponens
+
+**Chosen rendering/action:** विध्यात्मक अनुमान
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P089 directly gives विध्यात्मक अनुमान, while MR-P088 gives the equally authoritative विध्यात्मक रीति. अनुमान fits the source's rule application and existing inference vocabulary, and the source formulas fix the A, A-implies-B, therefore-B direction.
+
+**Rationale:** MR-P089 directly gives विध्यात्मक अनुमान, while MR-P088 gives the equally authoritative विध्यात्मक रीति. अनुमान fits the source's rule application and existing inference vocabulary, and the source formulas fix the A, A-implies-B, therefore-B direction.
+
+**Authorities actually checked:**
+
+- `MR-P085` — सिद्धतापद्धती : सोपाधिक व अप्रत्यक्ष (CP and IP). https://marathivishwakosh.org/50021/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly name natural-deduction discharge or introduction/elimination rules.
+- `MR-P088` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — M glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/m (`checked_supports`): Primary Government of Maharashtra terminology page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash.
+- `MR-P089` — गणितशास्त्र परिभाषा कोश — M glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/M (`checked_supports`): Primary Government of Maharashtra terminology page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash.
+
+**Alternatives:**
+
+- विध्यात्मक रीति — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- पूर्वांगविधी — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- मोदस पोनेन्स — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the edition standardize modus ponens as विध्यात्मक अनुमान or prefer the philosophy glossary's विध्यात्मक रीति?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T169-OLP-0068-B007` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | pending |
+| `T169-OLP-0068-B008` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | pending |
+
+## T170 — Gottlob Frege / Alfred North Whitehead / Bertrand Russell / David Hilbert; Frege system / Hilbert system
+
+**Chosen rendering/action:** गोटलोप फ्रेग / ॲल्फ्रेड नॉर्थ व्हाइटहेड / बर्ट्रंड रसेल / डाव्हीट हिल्बर्ट; फ्रेग पद्धत / हिल्बर्ट पद्धत
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The two official Marathi Vishwakosh passages directly attest the four name families and Principia Mathematica in formal-logic history. The edition uses the common बर्ट्रंड correction rather than MR-P090's apparent बर्ट्रेड typo; the system labels are transparent compounds controlled by the frozen source.
+
+**Rationale:** The two official Marathi Vishwakosh passages directly attest the four name families and Principia Mathematica in formal-logic history. The edition uses the common बर्ट्रंड correction rather than MR-P090's apparent बर्ट्रेड typo; the system labels are transparent compounds controlled by the frozen source.
+
+**Authorities actually checked:**
+
+- `MR-P090` — चिन्हांकित तर्कशास्त्र — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/22155/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: The page spells Russell बर्ट्रेड; the edition uses the widely recognizable बर्ट्रंड form. OpenLogic controls the exact historical claim.
+- `MR-P091` — गोडेल, कुर्ट — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/22497/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the chronology and attribution.
+
+**Alternatives:**
+
+- गॉटलॉब फ्रेगे / अल्फ्रेड नॉर्थ व्हाइटहेड / बर्ट्रेड रसेल / डेव्हिड हिल्बर्ट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the edition retain the Vishwakosh-derived name forms, including डाव्हीट हिल्बर्ट, and the transparent फ्रेग/हिल्बर्ट पद्धत labels?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T170-OLP-0068-B010` | `OLP-0068` |  | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
