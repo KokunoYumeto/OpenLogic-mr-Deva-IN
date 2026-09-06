@@ -12,9 +12,9 @@ commission covers all 722 content TeX units at upstream revision
 `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. The cumulative release covers 59/722
 units (716 content segments). Source IDs and paths remain aligned to the frozen corpus.
 
-Editable work has progressed through OLP-0065: **62/722 units** and 730 aligned
+Editable work has progressed through OLP-0066: **63/722 units** and 736 aligned
 translated content blocks. The Sets, Relations, Functions, Size of Sets,
-Arithmetization, Infinite Sets, and Syntax and Semantics chapters are complete in source and reader form; the First-order Logic proof-systems driver, introduction, and sequent-calculus overview are translated beyond the current reader boundary. The 83-page PDF
+Arithmetization, Infinite Sets, and Syntax and Semantics chapters are complete in source and reader form; the First-order Logic proof-systems driver, introduction, sequent-calculus overview, and natural-deduction overview are translated beyond the current reader boundary. The 83-page PDF
 was built twice to identical bytes and every page was inspected. Its offline HTML
 companion passed exact source-conversion, structure, asset and desktop/mobile
 browser checks.

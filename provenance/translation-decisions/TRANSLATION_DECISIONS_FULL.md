@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occurrences.
+Coverage: 63/722 source units through OLP-0066; 201 applied decisions; 4,598 occurrences.
 
 ## T001 — set
 
@@ -375,6 +375,7 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T001-OLP-0054-B016` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:85-87` | `mr/content/sets-functions-relations/infinite/card-sb.tex:87-89` | 70–72 |
 | `T001-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 70–72 |
 | `T001-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
+| `T001-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
 
 ## T002 — element/member
 
@@ -1463,6 +1464,7 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T010-OLP-0061-B014` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:158-159` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:160-161` | 78–81 |
 | `T010-OLP-0061-B020` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:186-188` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:188-191` | 78–81 |
 | `T010-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
+| `T010-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
 
 ## T011 — syntax
 
@@ -1666,6 +1668,7 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T015-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
 | `T015-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
 | `T015-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
+| `T015-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
 
 ## T016 — if and only if
 
@@ -1759,6 +1762,8 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T016-OLP-0054-B011` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53` | `mr/content/sets-functions-relations/infinite/card-sb.tex:49-52` | 70–72 |
 | `T016-OLP-0054-B014` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78` | `mr/content/sets-functions-relations/infinite/card-sb.tex:74-78` | 70–72 |
 | `T016-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
+| `T016-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
+| `T016-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
 
 ## T017 — union
 
@@ -2388,6 +2393,7 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T026-OLP-0048-B022` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:215-224` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:216-227` | 62–65 |
 | `T026-OLP-0053-B014` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108` | 69–70 |
 | `T026-OLP-0054-B013` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:70-73` | `mr/content/sets-functions-relations/infinite/card-sb.tex:69-72` | 70–72 |
+| `T026-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
 
 ## T027 — mathematical / arithmetical induction
 
@@ -3455,6 +3461,8 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T041-OLP-0064-B008` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | pending |
 | `T041-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
 | `T041-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
+| `T041-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
+| `T041-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
 
 ## T042 — least / well-ordered / predecessor / successor
 
@@ -3758,6 +3766,10 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T044-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
 | `T044-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
 | `T044-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
+| `T044-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
+| `T044-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
+| `T044-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
+| `T044-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
 
 ## T045 — function / mapping
 
@@ -6817,6 +6829,7 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 
 - `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
 - `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P085` — सिद्धतापद्धती : सोपाधिक व अप्रत्यक्ष (CP and IP). https://marathivishwakosh.org/50021/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly name natural-deduction discharge or introduction/elimination rules.
 
 **Alternatives:**
 
@@ -6841,6 +6854,11 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T109-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
 | `T109-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
 | `T109-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
+| `T109-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
+| `T109-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
+| `T109-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
+| `T109-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
+| `T109-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -6940,6 +6958,7 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T112-OLP-0055-B005` | `OLP-0055` | 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | `upstream/content/propositional-logic/propositional-logic.tex:9-18` | `mr/content/propositional-logic/propositional-logic.tex:9-18` | 73 |
+| `T112-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
 
 ## T113 — classical logic / classical
 
@@ -7064,6 +7083,8 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T115-OLP-0059-B017` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:72-72` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:73-74` | 75–77 |
 | `T115-OLP-0059-B018` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:74-74` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:76-77` | 75–77 |
 | `T115-OLP-0059-B019` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:76-79` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:79-83` | 75–77 |
+| `T115-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
+| `T115-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
 
 ## T116 — truth-functional
 
@@ -7155,6 +7176,7 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 |---|---|---|---|---|---|
 | `T118-OLP-0057-B007` | `OLP-0057` | 7.1 परिचय | `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:37-50` | `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:38-51` | 73–74 |
 | `T118-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
+| `T118-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
 
 ## T119 — formation rule / inductive definition / uniquely readable
 
@@ -7332,6 +7354,7 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T123-OLP-0064-B006` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | pending |
 | `T123-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
 | `T123-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
+| `T123-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -7424,6 +7447,8 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T126-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
 | `T126-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
 | `T126-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
+| `T126-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
+| `T126-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
 
 ## T127 — propositional constant
 
@@ -7542,6 +7567,7 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T128-OLP-0061-B017` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:169-171` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:171-173` | 78–81 |
 | `T128-OLP-0061-B018` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:173-175` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:175-177` | 78–81 |
 | `T128-OLP-0061-B019` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:177-184` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:179-186` | 78–81 |
+| `T128-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -8247,6 +8273,8 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T151-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
 | `T151-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
 | `T151-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
+| `T151-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
+| `T151-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -8277,6 +8305,12 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T152-OLP-0065-B005` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:13-13` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:13-13` | pending |
 | `T152-OLP-0065-B006` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | pending |
 | `T152-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
+| `T152-OLP-0066-B005` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:13-13` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:13-13` | pending |
+| `T152-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
+| `T152-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
+| `T152-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
+| `T152-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
+| `T152-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
 
 ## T153 — truth tree / tableaux proof / resolution method and refutation
 
@@ -8334,6 +8368,7 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T154-OLP-0064-B009` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | pending |
 | `T154-OLP-0064-B010` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | pending |
 | `T154-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
+| `T154-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
 
 ## T155 — soundness / sound / unsound (of a proof system)
 
@@ -8378,6 +8413,7 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 
 - `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
 - `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P085` — सिद्धतापद्धती : सोपाधिक व अप्रत्यक्ष (CP and IP). https://marathivishwakosh.org/50021/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly name natural-deduction discharge or introduction/elimination rules.
 
 **Alternatives:**
 
@@ -8390,6 +8426,7 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 |---|---|---|---|---|---|
 | `T156-OLP-0064-B011` | `OLP-0064` |  | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | pending |
 | `T156-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
+| `T156-OLP-0066-B009` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -8420,6 +8457,169 @@ Coverage: 62/722 source units through OLP-0065; 195 applied decisions; 4,554 occ
 | `T157-OLP-0065-B007` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50` | pending |
 | `T157-OLP-0065-B008` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56` | pending |
 | `T157-OLP-0065-B009` | `OLP-0065` |  | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | pending |
+
+## T158 — proof by cases / indirect proof / conditional proof
+
+**Chosen rendering/action:** प्रकरणांनुसार सिद्धता / अप्रत्यक्ष सिद्धता / सोपाधिक सिद्धता
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P085 directly names and explains अप्रत्यक्ष सिद्धतापद्धती and सोपाधिक सिद्धतापद्धती. No checked Marathi authority directly named proof by cases, so प्रकरणांनुसार सिद्धता is a transparent provisional label whose immediately following clause states that the conclusion follows from each disjunct.
+
+**Rationale:** MR-P085 directly names and explains अप्रत्यक्ष सिद्धतापद्धती and सोपाधिक सिद्धतापद्धती. No checked Marathi authority directly named proof by cases, so प्रकरणांनुसार सिद्धता is a transparent provisional label whose immediately following clause states that the conclusion follows from each disjunct.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P085` — सिद्धतापद्धती : सोपाधिक व अप्रत्यक्ष (CP and IP). https://marathivishwakosh.org/50021/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly name natural-deduction discharge or introduction/elimination rules.
+
+**Alternatives:**
+
+- पर्यायांनुसार सिद्धता — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- विकल्पभेदी सिद्धता — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रकरणभेदाने सिद्धता — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is प्रकरणांनुसार सिद्धता the clearest Marathi label for proof by cases when both disjunct cases must establish the same conclusion?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T158-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
+| `T158-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
+
+## T159 — assumption / discharge / discharged / undischarged
+
+**Chosen rendering/action:** गृहीतक / मुक्त करणे / मुक्त केलेले / मुक्त न केलेले
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P085 directly uses गृहीतक and carefully explains its finite scope and the final conclusion's position outside that scope. The target uses the transparent मुक्त family for the natural-deduction operation that ends this dependency; the exact discharge label was not directly attested.
+
+**Rationale:** MR-P085 directly uses गृहीतक and carefully explains its finite scope and the final conclusion's position outside that scope. The target uses the transparent मुक्त family for the natural-deduction operation that ends this dependency; the exact discharge label was not directly attested.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P085` — सिद्धतापद्धती : सोपाधिक व अप्रत्यक्ष (CP and IP). https://marathivishwakosh.org/50021/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly name natural-deduction discharge or introduction/elimination rules.
+
+**Alternatives:**
+
+- अभ्युपगम / निरसन करणे / अनिरसित — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- गृहीतक / विसर्जित करणे / अविसर्जित — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does the मुक्त family clearly express discharge as ending an assumption dependency without suggesting that the formula is erased from the proof tree?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T159-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
+| `T159-OLP-0066-B008` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | pending |
+
+## T160 — introduction rule / elimination rule
+
+**Chosen rendering/action:** प्रवेशन नियम / विलोपन नियम
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked sources directly support formal inference-rule vocabulary but do not attest these paired natural-deduction labels. प्रवेशन says that a connective is introduced in a conclusion, while विलोपन says that a formula headed by it is used or removed as the active premise; the frozen examples control the exact operations.
+
+**Rationale:** The checked sources directly support formal inference-rule vocabulary but do not attest these paired natural-deduction labels. प्रवेशन says that a connective is introduced in a conclusion, while विलोपन says that a formula headed by it is used or removed as the active premise; the frozen examples control the exact operations.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P085` — सिद्धतापद्धती : सोपाधिक व अप्रत्यक्ष (CP and IP). https://marathivishwakosh.org/50021/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly name natural-deduction discharge or introduction/elimination rules.
+
+**Alternatives:**
+
+- परिचय नियम / निरसन नियम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रस्तावना नियम / वर्जन नियम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are प्रवेशन नियम and विलोपन नियम idiomatic natural-deduction labels, or should the edition adopt परिचय नियम and निरसन नियम?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T160-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
+
+## T161 — premise / conclusion / antecedent / consequent / disjunct
+
+**Chosen rendering/action:** आधारविधान / निष्कर्ष / पूर्वांग / उत्तरांग / विकल्पघटक
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P085 directly uses आधारविधान, निष्कर्ष, पूर्वांग and उत्तरांग in its explanation of conditional proof. विकल्पघटक is a transparent component term built from the directly attested विकल्पयोग decision, and the source's proof-by-cases clause fixes its role.
+
+**Rationale:** MR-P085 directly uses आधारविधान, निष्कर्ष, पूर्वांग and उत्तरांग in its explanation of conditional proof. विकल्पघटक is a transparent component term built from the directly attested विकल्पयोग decision, and the source's proof-by-cases clause fixes its role.
+
+**Authorities actually checked:**
+
+- `MR-P067` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P085` — सिद्धतापद्धती : सोपाधिक व अप्रत्यक्ष (CP and IP). https://marathivishwakosh.org/50021/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly name natural-deduction discharge or introduction/elimination rules.
+
+**Alternatives:**
+
+- आधार / निगमन / पूर्ववर्ती / अनुवर्ती / विकल्पीय घटक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- पूर्वपक्ष / निष्पत्ती / पूर्वांग / उत्तरांग / पर्याय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should disjunct be standardized as विकल्पघटक alongside विकल्पयोग, and do the four directly attested argument-part terms remain clear in tree proofs?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T161-OLP-0066-B006` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29` | pending |
+| `T161-OLP-0066-B007` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | pending |
+
+## T162 — proof-theoretic semantics
+
+**Chosen rendering/action:** सिद्धता-उपपत्तीय चिन्हार्थमीमांसा
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The components सिद्धता, उपपत्ती and चिन्हार्थमीमांसा are supported by existing proof, theory and semantics decisions. No checked Marathi authority directly attested the full compound, so the source's final parenthetical and its rule-gives-meaning explanation control the specialist sense.
+
+**Rationale:** The components सिद्धता, उपपत्ती and चिन्हार्थमीमांसा are supported by existing proof, theory and semantics decisions. No checked Marathi authority directly attested the full compound, so the source's final parenthetical and its rule-gives-meaning explanation control the specialist sense.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P066` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/t (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- सिद्धता-सैद्धान्तिक अर्थविज्ञान — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- उपपत्तीविषयक सिद्धता-चिन्हार्थमीमांसा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रमाण-सैद्धान्तिक चिन्हार्थशास्त्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is सिद्धता-उपपत्तीय चिन्हार्थमीमांसा intelligible and idiomatic for proof-theoretic semantics without being mistaken for model-theoretic semantics?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T162-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
+
+## T163 — Gerhard Gentzen / Stanisław Jaśkowski / Dag Prawitz / Frederic Fitch
+
+**Chosen rendering/action:** गरहार्ड गेंटझेन / स्टॅनिस्लॉ यास्कोव्हस्की / डॅग प्रावित्झ / फ्रेडरिक फिच
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P082 directly attests the Marathi forms for Gentzen and Jaśkowski. Prawitz and Fitch are conservative phonetic transliterations from the frozen English; the original TeX spelling of Jaśkowski is retained parenthetically so the protected source macro and identity remain inspectable.
+
+**Rationale:** MR-P082 directly attests the Marathi forms for Gentzen and Jaśkowski. Prawitz and Fitch are conservative phonetic transliterations from the frozen English; the original TeX spelling of Jaśkowski is retained parenthetically so the protected source macro and identity remain inspectable.
+
+**Authorities actually checked:**
+
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- गेरहार्ड गेन्ट्झेन / स्तानिस्वाव यास्कोव्स्की / डाग प्राविट्स / फ्रेडरिक फिच — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are डॅग प्रावित्झ and फ्रेडरिक फिच the preferred Marathi spellings, and should the two directly attested Vishwakosh spellings remain unchanged?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T163-OLP-0066-B010` | `OLP-0066` |  | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 

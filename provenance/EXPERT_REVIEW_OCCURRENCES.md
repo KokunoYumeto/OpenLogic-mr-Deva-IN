@@ -2,14 +2,14 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **62/722 source units**, 730 aligned translated blocks, 4554 review occurrences. The referenced development reader has 83 pages and SHA-256 a817e6ae742c3fad29ee0ee404e678823e269696c36c3c75a02edad76714ec40; it is not a final accessible release.
+Current scope: **63/722 source units**, 736 aligned translated blocks, 4598 review occurrences. The referenced development reader has 83 pages and SHA-256 a817e6ae742c3fad29ee0ee404e678823e269696c36c3c75a02edad76714ec40; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view.
 
 [Decision ledger](EXPERT_REVIEW_LOG.md) · [Priority view](EXPERT_REVIEW_PRIORITY.md) · [CSV](EXPERT_REVIEW_OCCURRENCES.csv) · [Machine JSONL](EXPERT_REVIEW_OCCURRENCES.jsonl)
 
 <details>
-<summary><strong>T001 — set</strong> (350 occurrences; routine priority)</summary>
+<summary><strong>T001 — set</strong> (351 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -363,6 +363,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T001-OLP-0054-B016 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:85-87](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L85) | [mr/content/sets-functions-relations/infinite/card-sb.tex:87-89](../mr/content/sets-functions-relations/infinite/card-sb.tex#L87) | 70–72 |
 | T001-OLP-0054-B017 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L89) | [mr/content/sets-functions-relations/infinite/card-sb.tex:91-104](../mr/content/sets-functions-relations/infinite/card-sb.tex#L91) | 70–72 |
 | T001-OLP-0065-B008 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L52) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L52) | not yet paginated |
+| T001-OLP-0066-B009 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L77) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L74) | not yet paginated |
 
 **Chosen rendering/action:** संच
 
@@ -1325,7 +1326,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T010 — truth / truth value</strong> (24 occurrences; routine priority)</summary>
+<summary><strong>T010 — truth / truth value</strong> (25 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1353,6 +1354,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T010-OLP-0061-B014 | OLP-0061 · 7.5 सत्य-मूल्यांकन आणि पूर्ति | [upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:158-159](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex#L158) | [mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:160-161](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex#L160) | 78–81 |
 | T010-OLP-0061-B020 | OLP-0061 · 7.5 सत्य-मूल्यांकन आणि पूर्ति | [upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:186-188](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex#L186) | [mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:188-191](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex#L188) | 78–81 |
 | T010-OLP-0064-B006 | OLP-0064 ·  | [upstream/content/first-order-logic/proof-systems/introduction.tex:15-24](../upstream/content/first-order-logic/proof-systems/introduction.tex#L15) | [mr/content/first-order-logic/proof-systems/introduction.tex:15-25](../mr/content/first-order-logic/proof-systems/introduction.tex#L15) | not yet paginated |
+| T010-OLP-0066-B007 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L33) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L31) | not yet paginated |
 
 **Chosen rendering/action:** सत्यता / सत्यतामूल्य
 
@@ -1440,7 +1442,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T015 — proof</strong> (68 occurrences; routine priority)</summary>
+<summary><strong>T015 — proof</strong> (69 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1512,6 +1514,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T015-OLP-0064-B008 | OLP-0064 ·  | [upstream/content/first-order-logic/proof-systems/introduction.tex:38-48](../upstream/content/first-order-logic/proof-systems/introduction.tex#L38) | [mr/content/first-order-logic/proof-systems/introduction.tex:41-51](../mr/content/first-order-logic/proof-systems/introduction.tex#L41) | not yet paginated |
 | T015-OLP-0065-B007 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | not yet paginated |
 | T015-OLP-0065-B009 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L58) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L58) | not yet paginated |
+| T015-OLP-0066-B010 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L81) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L78) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धता
 
@@ -1522,7 +1525,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T016 — if and only if</strong> (69 occurrences; medium priority)</summary>
+<summary><strong>T016 — if and only if</strong> (71 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1595,6 +1598,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T016-OLP-0054-B011 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L51) | [mr/content/sets-functions-relations/infinite/card-sb.tex:49-52](../mr/content/sets-functions-relations/infinite/card-sb.tex#L49) | 70–72 |
 | T016-OLP-0054-B014 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L75) | [mr/content/sets-functions-relations/infinite/card-sb.tex:74-78](../mr/content/sets-functions-relations/infinite/card-sb.tex#L74) | 70–72 |
 | T016-OLP-0065-B007 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | not yet paginated |
+| T016-OLP-0066-B008 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L60) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L56) | not yet paginated |
+| T016-OLP-0066-B009 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L77) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L74) | not yet paginated |
 
 **Chosen rendering/action:** तेव्हा आणि केवळ तेव्हाच
 
@@ -2095,7 +2100,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T026 — contradiction/paradox</strong> (24 occurrences; high priority)</summary>
+<summary><strong>T026 — contradiction/paradox</strong> (25 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2123,6 +2128,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T026-OLP-0048-B022 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:215-224](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L215) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:216-227](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L216) | 62–65 |
 | T026-OLP-0053-B014 | OLP-0053 · 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | [upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113](../upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex#L113) | [mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108](../mr/content/sets-functions-relations/infinite/dedekinds-proof.tex#L108) | 69–70 |
 | T026-OLP-0054-B013 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:70-73](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L70) | [mr/content/sets-functions-relations/infinite/card-sb.tex:69-72](../mr/content/sets-functions-relations/infinite/card-sb.tex#L69) | 70–72 |
+| T026-OLP-0066-B006 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** व्याघात / विरोधापत्ती
 
@@ -3002,7 +3008,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T041 — tree / root / branch / chain</strong> (19 occurrences; high priority)</summary>
+<summary><strong>T041 — tree / root / branch / chain</strong> (21 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3025,6 +3031,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T041-OLP-0064-B008 | OLP-0064 ·  | [upstream/content/first-order-logic/proof-systems/introduction.tex:38-48](../upstream/content/first-order-logic/proof-systems/introduction.tex#L38) | [mr/content/first-order-logic/proof-systems/introduction.tex:41-51](../mr/content/first-order-logic/proof-systems/introduction.tex#L41) | not yet paginated |
 | T041-OLP-0065-B006 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L15) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L15) | not yet paginated |
 | T041-OLP-0065-B007 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | not yet paginated |
+| T041-OLP-0066-B007 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L33) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L31) | not yet paginated |
+| T041-OLP-0066-B008 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L60) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L56) | not yet paginated |
 
 **Chosen rendering/action:** वृक्ष / मूळ / शाखा / शृंखला
 
@@ -3181,7 +3189,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T044 — computability / formula / derivation</strong> (105 occurrences; high priority)</summary>
+<summary><strong>T044 — computability / formula / derivation</strong> (109 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3290,6 +3298,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T044-OLP-0065-B007 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | not yet paginated |
 | T044-OLP-0065-B008 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L52) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L52) | not yet paginated |
 | T044-OLP-0065-B009 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L58) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L58) | not yet paginated |
+| T044-OLP-0066-B006 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | not yet paginated |
+| T044-OLP-0066-B007 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L33) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L31) | not yet paginated |
+| T044-OLP-0066-B008 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L60) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L56) | not yet paginated |
+| T044-OLP-0066-B009 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L77) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L74) | not yet paginated |
 
 **Chosen rendering/action:** संगणनीयता / सूत्र / निष्पत्ती
 
@@ -5674,7 +5686,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T109 — proof system / proof</strong> (14 occurrences; medium priority)</summary>
+<summary><strong>T109 — proof system / proof</strong> (19 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5692,6 +5704,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T109-OLP-0065-B007 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | not yet paginated |
 | T109-OLP-0065-B008 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L52) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L52) | not yet paginated |
 | T109-OLP-0065-B009 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L58) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L58) | not yet paginated |
+| T109-OLP-0066-B006 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | not yet paginated |
+| T109-OLP-0066-B007 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L33) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L31) | not yet paginated |
+| T109-OLP-0066-B008 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L60) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L56) | not yet paginated |
+| T109-OLP-0066-B009 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L77) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L74) | not yet paginated |
+| T109-OLP-0066-B010 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L81) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L78) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धता-पद्धती / सिद्धता
 
@@ -5745,11 +5762,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T112 — predicate / term / quantifier</strong> (1 occurrence; routine priority)</summary>
+<summary><strong>T112 — predicate / term / quantifier</strong> (2 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T112-OLP-0055-B005 | OLP-0055 · 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | [upstream/content/propositional-logic/propositional-logic.tex:9-18](../upstream/content/propositional-logic/propositional-logic.tex#L9) | [mr/content/propositional-logic/propositional-logic.tex:9-18](../mr/content/propositional-logic/propositional-logic.tex#L9) | 73 |
+| T112-OLP-0066-B006 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** विधेय / पद / संख्यापक
 
@@ -5811,7 +5829,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T115 — propositional connective / logical connective</strong> (23 occurrences; medium priority)</summary>
+<summary><strong>T115 — propositional connective / logical connective</strong> (25 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5838,6 +5856,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T115-OLP-0059-B017 | OLP-0059 · 7.3 पूर्वतयारी | [upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:72-72](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L72) | [mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:73-74](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L73) | 75–77 |
 | T115-OLP-0059-B018 | OLP-0059 · 7.3 पूर्वतयारी | [upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:74-74](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L74) | [mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:76-77](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L76) | 75–77 |
 | T115-OLP-0059-B019 | OLP-0059 · 7.3 पूर्वतयारी | [upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:76-79](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L76) | [mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:79-83](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L79) | 75–77 |
+| T115-OLP-0066-B006 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | not yet paginated |
+| T115-OLP-0066-B010 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L81) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L78) | not yet paginated |
 
 **Chosen rendering/action:** विधानीय संयोजक / तार्किक संयोजक
 
@@ -5888,12 +5908,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T118 — theory / metatheory</strong> (2 occurrences; medium priority)</summary>
+<summary><strong>T118 — theory / metatheory</strong> (3 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T118-OLP-0057-B007 | OLP-0057 · 7.1 परिचय | [upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:37-50](../upstream/content/propositional-logic/syntax-and-semantics/introduction.tex#L37) | [mr/content/propositional-logic/syntax-and-semantics/introduction.tex:38-51](../mr/content/propositional-logic/syntax-and-semantics/introduction.tex#L38) | 73–74 |
 | T118-OLP-0065-B009 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L58) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L58) | not yet paginated |
+| T118-OLP-0066-B010 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L81) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L78) | not yet paginated |
 
 **Chosen rendering/action:** उपपत्ती / अधिउपपत्ती
 
@@ -5999,7 +6020,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T123 — entailment / entails</strong> (8 occurrences; medium priority)</summary>
+<summary><strong>T123 — entailment / entails</strong> (9 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6011,6 +6032,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T123-OLP-0064-B006 | OLP-0064 ·  | [upstream/content/first-order-logic/proof-systems/introduction.tex:15-24](../upstream/content/first-order-logic/proof-systems/introduction.tex#L15) | [mr/content/first-order-logic/proof-systems/introduction.tex:15-25](../mr/content/first-order-logic/proof-systems/introduction.tex#L15) | not yet paginated |
 | T123-OLP-0064-B009 | OLP-0064 ·  | [upstream/content/first-order-logic/proof-systems/introduction.tex:50-71](../upstream/content/first-order-logic/proof-systems/introduction.tex#L50) | [mr/content/first-order-logic/proof-systems/introduction.tex:53-74](../mr/content/first-order-logic/proof-systems/introduction.tex#L53) | not yet paginated |
 | T123-OLP-0064-B010 | OLP-0064 ·  | [upstream/content/first-order-logic/proof-systems/introduction.tex:73-80](../upstream/content/first-order-logic/proof-systems/introduction.tex#L73) | [mr/content/first-order-logic/proof-systems/introduction.tex:76-83](../mr/content/first-order-logic/proof-systems/introduction.tex#L76) | not yet paginated |
+| T123-OLP-0066-B007 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L33) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L31) | not yet paginated |
 
 **Chosen rendering/action:** तार्किक निष्पन्नता / तार्किकरीत्या निष्पन्न होणे
 
@@ -6058,7 +6080,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T126 — sentence / proposition / statement</strong> (6 occurrences; routine priority)</summary>
+<summary><strong>T126 — sentence / proposition / statement</strong> (8 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6068,6 +6090,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T126-OLP-0064-B009 | OLP-0064 ·  | [upstream/content/first-order-logic/proof-systems/introduction.tex:50-71](../upstream/content/first-order-logic/proof-systems/introduction.tex#L50) | [mr/content/first-order-logic/proof-systems/introduction.tex:53-74](../mr/content/first-order-logic/proof-systems/introduction.tex#L53) | not yet paginated |
 | T126-OLP-0065-B006 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L15) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L15) | not yet paginated |
 | T126-OLP-0065-B008 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L52) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L52) | not yet paginated |
+| T126-OLP-0066-B008 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L60) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L56) | not yet paginated |
+| T126-OLP-0066-B009 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L77) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L74) | not yet paginated |
 
 **Chosen rendering/action:** वाक्य / विधान
 
@@ -6116,7 +6140,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (40 occurrences; medium priority)</summary>
+<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (41 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6160,6 +6184,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T128-OLP-0061-B017 | OLP-0061 · 7.5 सत्य-मूल्यांकन आणि पूर्ति | [upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:169-171](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex#L169) | [mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:171-173](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex#L171) | 78–81 |
 | T128-OLP-0061-B018 | OLP-0061 · 7.5 सत्य-मूल्यांकन आणि पूर्ति | [upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:173-175](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex#L173) | [mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:175-177](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex#L175) | 78–81 |
 | T128-OLP-0061-B019 | OLP-0061 · 7.5 सत्य-मूल्यांकन आणि पूर्ति | [upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:177-184](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex#L177) | [mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:179-186](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex#L179) | 78–81 |
+| T128-OLP-0066-B006 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** नकरण / संधियोग / विकल्पयोग / सशर्त (संकेतार्थक) / द्विसशर्त
 
@@ -6588,7 +6613,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T151 — axiomatic system / inference rule</strong> (4 occurrences; routine priority)</summary>
+<summary><strong>T151 — axiomatic system / inference rule</strong> (6 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6596,6 +6621,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T151-OLP-0064-B009 | OLP-0064 ·  | [upstream/content/first-order-logic/proof-systems/introduction.tex:50-71](../upstream/content/first-order-logic/proof-systems/introduction.tex#L50) | [mr/content/first-order-logic/proof-systems/introduction.tex:53-74](../mr/content/first-order-logic/proof-systems/introduction.tex#L53) | not yet paginated |
 | T151-OLP-0065-B006 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L15) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L15) | not yet paginated |
 | T151-OLP-0065-B008 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L52) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L52) | not yet paginated |
+| T151-OLP-0066-B006 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | not yet paginated |
+| T151-OLP-0066-B007 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L33) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L31) | not yet paginated |
 
 **Chosen rendering/action:** स्वयंसिद्धकीय पद्धत / निगमन नियम
 
@@ -6606,7 +6633,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T152 — natural deduction / sequent calculus</strong> (5 occurrences; routine priority)</summary>
+<summary><strong>T152 — natural deduction / sequent calculus</strong> (11 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6615,6 +6642,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T152-OLP-0065-B005 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:13-13](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L13) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:13-13](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L13) | not yet paginated |
 | T152-OLP-0065-B006 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L15) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L15) | not yet paginated |
 | T152-OLP-0065-B009 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L58) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L58) | not yet paginated |
+| T152-OLP-0066-B005 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:13-13](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L13) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:13-13](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L13) | not yet paginated |
+| T152-OLP-0066-B006 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | not yet paginated |
+| T152-OLP-0066-B007 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L33) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L31) | not yet paginated |
+| T152-OLP-0066-B008 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L60) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L56) | not yet paginated |
+| T152-OLP-0066-B009 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L77) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L74) | not yet paginated |
+| T152-OLP-0066-B010 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L81) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L78) | not yet paginated |
 
 **Chosen rendering/action:** नैसर्गिक निगमन / क्रमवर्ती कलन
 
@@ -6641,13 +6674,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T154 — theorem</strong> (3 occurrences; routine priority)</summary>
+<summary><strong>T154 — theorem</strong> (4 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T154-OLP-0064-B009 | OLP-0064 ·  | [upstream/content/first-order-logic/proof-systems/introduction.tex:50-71](../upstream/content/first-order-logic/proof-systems/introduction.tex#L50) | [mr/content/first-order-logic/proof-systems/introduction.tex:53-74](../mr/content/first-order-logic/proof-systems/introduction.tex#L53) | not yet paginated |
 | T154-OLP-0064-B010 | OLP-0064 ·  | [upstream/content/first-order-logic/proof-systems/introduction.tex:73-80](../upstream/content/first-order-logic/proof-systems/introduction.tex#L73) | [mr/content/first-order-logic/proof-systems/introduction.tex:76-83](../mr/content/first-order-logic/proof-systems/introduction.tex#L76) | not yet paginated |
 | T154-OLP-0065-B007 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:37-50](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L37) | not yet paginated |
+| T154-OLP-0066-B008 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L60) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L56) | not yet paginated |
 
 **Chosen rendering/action:** प्रमेय
 
@@ -6674,12 +6708,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (2 occurrences; routine priority)</summary>
+<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (3 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T156-OLP-0064-B011 | OLP-0064 ·  | [upstream/content/first-order-logic/proof-systems/introduction.tex:82-99](../upstream/content/first-order-logic/proof-systems/introduction.tex#L82) | [mr/content/first-order-logic/proof-systems/introduction.tex:85-101](../mr/content/first-order-logic/proof-systems/introduction.tex#L85) | not yet paginated |
 | T156-OLP-0065-B008 | OLP-0065 ·  | [upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56](../upstream/content/first-order-logic/proof-systems/sequent-calculus.tex#L52) | [mr/content/first-order-logic/proof-systems/sequent-calculus.tex:52-56](../mr/content/first-order-logic/proof-systems/sequent-calculus.tex#L52) | not yet paginated |
+| T156-OLP-0066-B009 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:77-79](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L77) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:74-76](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L74) | not yet paginated |
 
 **Chosen rendering/action:** सुसंगतता / विसंगतता / सुसंगत / विसंगत
 
@@ -6704,6 +6739,99 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** medium; provisional definition-controlled inference from a directly attested compound; standalone noun not directly attested; expert review especially useful; open to correction.
 
 **Please double-check:** Is nominalized क्रमवर्ती natural and sufficiently distinct from an ordinary sequence when it names a sequent throughout the calculus chapters?
+
+</details>
+
+<details>
+<summary><strong>T158 — proof by cases / indirect proof / conditional proof</strong> (2 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T158-OLP-0066-B006 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | not yet paginated |
+| T158-OLP-0066-B007 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L33) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L31) | not yet paginated |
+
+**Chosen rendering/action:** प्रकरणांनुसार सिद्धता / अप्रत्यक्ष सिद्धता / सोपाधिक सिद्धता
+
+**Confidence/status:** medium; two methods directly attested; proof-by-cases label provisional and definition-controlled; expert review especially useful; open to correction.
+
+**Please double-check:** Is प्रकरणांनुसार सिद्धता the clearest Marathi label for proof by cases when both disjunct cases must establish the same conclusion?
+
+</details>
+
+<details>
+<summary><strong>T159 — assumption / discharge / discharged / undischarged</strong> (2 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T159-OLP-0066-B007 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L33) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L31) | not yet paginated |
+| T159-OLP-0066-B008 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L60) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L56) | not yet paginated |
+
+**Chosen rendering/action:** गृहीतक / मुक्त करणे / मुक्त केलेले / मुक्त न केलेले
+
+**Confidence/status:** medium; assumption directly attested; discharge family definition-controlled and provisional; expert review especially useful; open to correction.
+
+**Please double-check:** Does the मुक्त family clearly express discharge as ending an assumption dependency without suggesting that the formula is erased from the proof tree?
+
+</details>
+
+<details>
+<summary><strong>T160 — introduction rule / elimination rule</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T160-OLP-0066-B006 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | not yet paginated |
+
+**Chosen rendering/action:** प्रवेशन नियम / विलोपन नियम
+
+**Confidence/status:** medium; provisional transparent rule pair; exact Marathi natural-deduction attestation not found; expert review especially useful; open to correction.
+
+**Please double-check:** Are प्रवेशन नियम and विलोपन नियम idiomatic natural-deduction labels, or should the edition adopt परिचय नियम and निरसन नियम?
+
+</details>
+
+<details>
+<summary><strong>T161 — premise / conclusion / antecedent / consequent / disjunct</strong> (2 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T161-OLP-0066-B006 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | not yet paginated |
+| T161-OLP-0066-B007 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L33) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L31) | not yet paginated |
+
+**Chosen rendering/action:** आधारविधान / निष्कर्ष / पूर्वांग / उत्तरांग / विकल्पघटक
+
+**Confidence/status:** high; four direct authoritative logic attestations plus one transparent definition-controlled component term; open to correction.
+
+**Please double-check:** Should disjunct be standardized as विकल्पघटक alongside विकल्पयोग, and do the four directly attested argument-part terms remain clear in tree proofs?
+
+</details>
+
+<details>
+<summary><strong>T162 — proof-theoretic semantics</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T162-OLP-0066-B010 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L81) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L78) | not yet paginated |
+
+**Chosen rendering/action:** सिद्धता-उपपत्तीय चिन्हार्थमीमांसा
+
+**Confidence/status:** medium; provisional compositional specialist term; exact Marathi attestation not found; expert review especially useful; open to correction.
+
+**Please double-check:** Is सिद्धता-उपपत्तीय चिन्हार्थमीमांसा intelligible and idiomatic for proof-theoretic semantics without being mistaken for model-theoretic semantics?
+
+</details>
+
+<details>
+<summary><strong>T163 — Gerhard Gentzen / Stanisław Jaśkowski / Dag Prawitz / Frederic Fitch</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T163-OLP-0066-B010 | OLP-0066 ·  | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L81) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L78) | not yet paginated |
+
+**Chosen rendering/action:** गरहार्ड गेंटझेन / स्टॅनिस्लॉ यास्कोव्हस्की / डॅग प्रावित्झ / फ्रेडरिक फिच
+
+**Confidence/status:** medium; two direct authoritative name forms plus two provisional phonetic transliterations; expert review useful; open to correction.
+
+**Please double-check:** Are डॅग प्रावित्झ and फ्रेडरिक फिच the preferred Marathi spellings, and should the two directly attested Vishwakosh spellings remain unchanged?
 
 </details>
 
