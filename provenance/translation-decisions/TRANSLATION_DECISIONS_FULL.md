@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occurrences.
+Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occurrences.
 
 ## T001 — set
 
@@ -905,6 +905,7 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T004-OLP-0023-B016` | `OLP-0023` | 3.3 संबंध म्हणून फलने | `upstream/content/sets-functions-relations/functions/functions-relations.tex:92-101` | `mr/content/sets-functions-relations/functions/functions-relations.tex:89-101` | 26–27 |
 | `T004-OLP-0036-B012` | `OLP-0036` | 4.9 वेगवेगळ्या आकारमानांचे संच आणि कँटर यांचे प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:60-63` | `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:60-63` | 45–46 |
 | `T004-OLP-0095-B018` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:174-203` | `mr/content/first-order-logic/natural-deduction/soundness.tex:173-202` | pending |
+| `T004-OLP-0097-B008` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | pending |
 
 ## T005 — subset
 
@@ -1520,6 +1521,7 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T009-OLP-0095-B013` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:86-107` | `mr/content/first-order-logic/natural-deduction/soundness.tex:85-106` | pending |
 | `T009-OLP-0095-B014` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:109-128` | `mr/content/first-order-logic/natural-deduction/soundness.tex:108-127` | pending |
 | `T009-OLP-0095-B029` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:291-294` | `mr/content/first-order-logic/natural-deduction/soundness.tex:293-296` | pending |
+| `T009-OLP-0097-B007` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | pending |
 
 ## T010 — truth / truth value
 
@@ -1694,6 +1696,7 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T012-OLP-0095-B018` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:174-203` | `mr/content/first-order-logic/natural-deduction/soundness.tex:173-202` | pending |
 | `T012-OLP-0095-B022` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:216-240` | `mr/content/first-order-logic/natural-deduction/soundness.tex:215-240` | pending |
 | `T012-OLP-0095-B024` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271` | `mr/content/first-order-logic/natural-deduction/soundness.tex:244-273` | pending |
+| `T012-OLP-0097-B008` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | pending |
 
 ## T014 — perfect number
 
@@ -2963,6 +2966,10 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T031-OLP-0096-B010` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:52-57` | `mr/content/first-order-logic/natural-deduction/identity.tex:52-58` | pending |
 | `T031-OLP-0096-B011` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:59-112` | `mr/content/first-order-logic/natural-deduction/identity.tex:60-112` | pending |
 | `T031-OLP-0096-B012` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:114-122` | `mr/content/first-order-logic/natural-deduction/identity.tex:114-122` | pending |
+| `T031-OLP-0097-B005` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:11-11` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:11-11` | pending |
+| `T031-OLP-0097-B006` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | pending |
+| `T031-OLP-0097-B007` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | pending |
+| `T031-OLP-0097-B008` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | pending |
 
 ## T032 — reflexive / irreflexive
 
@@ -4105,6 +4112,8 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T044-OLP-0096-B010` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:52-57` | `mr/content/first-order-logic/natural-deduction/identity.tex:52-58` | pending |
 | `T044-OLP-0096-B011` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:59-112` | `mr/content/first-order-logic/natural-deduction/identity.tex:60-112` | pending |
 | `T044-OLP-0096-B012` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:114-122` | `mr/content/first-order-logic/natural-deduction/identity.tex:114-122` | pending |
+| `T044-OLP-0097-B007` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | pending |
+| `T044-OLP-0097-B008` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | pending |
 
 ## T045 — function / mapping
 
@@ -7853,6 +7862,8 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T121-OLP-0095-B022` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:216-240` | `mr/content/first-order-logic/natural-deduction/soundness.tex:215-240` | pending |
 | `T121-OLP-0095-B024` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271` | `mr/content/first-order-logic/natural-deduction/soundness.tex:244-273` | pending |
 | `T121-OLP-0095-B031` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:301-312` | `mr/content/first-order-logic/natural-deduction/soundness.tex:303-314` | pending |
+| `T121-OLP-0097-B007` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | pending |
+| `T121-OLP-0097-B008` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | pending |
 
 ## T122 — tautology
 
@@ -7972,6 +7983,7 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T123-OLP-0095-B018` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:174-203` | `mr/content/first-order-logic/natural-deduction/soundness.tex:173-202` | pending |
 | `T123-OLP-0095-B022` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:216-240` | `mr/content/first-order-logic/natural-deduction/soundness.tex:215-240` | pending |
 | `T123-OLP-0095-B024` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271` | `mr/content/first-order-logic/natural-deduction/soundness.tex:244-273` | pending |
+| `T123-OLP-0097-B008` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -8632,6 +8644,7 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T138-OLP-0096-B009` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:40-50` | `mr/content/first-order-logic/natural-deduction/identity.tex:40-50` | pending |
 | `T138-OLP-0096-B011` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:59-112` | `mr/content/first-order-logic/natural-deduction/identity.tex:60-112` | pending |
 | `T138-OLP-0096-B012` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:114-122` | `mr/content/first-order-logic/natural-deduction/identity.tex:114-122` | pending |
+| `T138-OLP-0097-B008` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | pending |
 
 ## T139 — occurrence (of a variable or formula)
 
@@ -8700,6 +8713,7 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T140-OLP-0095-B018` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:174-203` | `mr/content/first-order-logic/natural-deduction/soundness.tex:173-202` | pending |
 | `T140-OLP-0095-B022` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:216-240` | `mr/content/first-order-logic/natural-deduction/soundness.tex:215-240` | pending |
 | `T140-OLP-0095-B024` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271` | `mr/content/first-order-logic/natural-deduction/soundness.tex:244-273` | pending |
+| `T140-OLP-0097-B008` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | pending |
 
 ## T141 — formation sequence
 
@@ -9116,6 +9130,8 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T151-OLP-0095-B021` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:211-214` | `mr/content/first-order-logic/natural-deduction/soundness.tex:210-213` | pending |
 | `T151-OLP-0096-B006` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:13-13` | `mr/content/first-order-logic/natural-deduction/identity.tex:13-13` | pending |
 | `T151-OLP-0096-B008` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:36-38` | `mr/content/first-order-logic/natural-deduction/identity.tex:36-38` | pending |
+| `T151-OLP-0097-B006` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | pending |
+| `T151-OLP-0097-B008` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -9175,6 +9191,7 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T152-OLP-0093-B007` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | pending |
 | `T152-OLP-0094-B007` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | pending |
 | `T152-OLP-0095-B006` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:15-31` | `mr/content/first-order-logic/natural-deduction/soundness.tex:15-31` | pending |
+| `T152-OLP-0097-B006` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | pending |
 
 ## T153 — truth tree / tableaux proof / resolution method and refutation
 
@@ -9357,6 +9374,8 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T155-OLP-0095-B029` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:291-294` | `mr/content/first-order-logic/natural-deduction/soundness.tex:293-296` | pending |
 | `T155-OLP-0095-B030` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:296-299` | `mr/content/first-order-logic/natural-deduction/soundness.tex:298-301` | pending |
 | `T155-OLP-0095-B031` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:301-312` | `mr/content/first-order-logic/natural-deduction/soundness.tex:303-314` | pending |
+| `T155-OLP-0097-B005` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:11-11` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:11-11` | pending |
+| `T155-OLP-0097-B006` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | pending |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -9658,6 +9677,7 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T159-OLP-0095-B031` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:301-312` | `mr/content/first-order-logic/natural-deduction/soundness.tex:303-314` | pending |
 | `T159-OLP-0096-B009` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:40-50` | `mr/content/first-order-logic/natural-deduction/identity.tex:40-50` | pending |
 | `T159-OLP-0096-B011` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:59-112` | `mr/content/first-order-logic/natural-deduction/identity.tex:60-112` | pending |
+| `T159-OLP-0097-B008` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | pending |
 
 ## T160 — introduction rule / elimination rule
 
@@ -9810,6 +9830,7 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T161-OLP-0095-B021` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:211-214` | `mr/content/first-order-logic/natural-deduction/soundness.tex:210-213` | pending |
 | `T161-OLP-0095-B022` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:216-240` | `mr/content/first-order-logic/natural-deduction/soundness.tex:215-240` | pending |
 | `T161-OLP-0095-B024` | `OLP-0095` |  | `upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271` | `mr/content/first-order-logic/natural-deduction/soundness.tex:244-273` | pending |
+| `T161-OLP-0097-B008` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | pending |
 
 ## T162 — proof-theoretic semantics
 
@@ -10292,6 +10313,8 @@ Coverage: 93/722 source units through OLP-0096; 234 applied decisions; 6,340 occ
 | `T174-OLP-0096-B008` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:36-38` | `mr/content/first-order-logic/natural-deduction/identity.tex:36-38` | pending |
 | `T174-OLP-0096-B009` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:40-50` | `mr/content/first-order-logic/natural-deduction/identity.tex:40-50` | pending |
 | `T174-OLP-0096-B011` | `OLP-0096` |  | `upstream/content/first-order-logic/natural-deduction/identity.tex:59-112` | `mr/content/first-order-logic/natural-deduction/identity.tex:60-112` | pending |
+| `T174-OLP-0097-B007` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | pending |
+| `T174-OLP-0097-B008` | `OLP-0097` |  | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | pending |
 
 ## T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)
 

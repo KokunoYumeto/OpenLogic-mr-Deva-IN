@@ -1,0 +1,50 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: soundness-identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{ntd}{sid}
+
+\olsection{\usetoken{S}{identity} सह निर्दोषता}
+
+\begin{prop}
+$\eq$ साठीच्या नियमांसह नैसर्गिक निगमन निर्दोष आहे.
+\end{prop}
+
+\begin{proof}
+$\eq[t][t]$ या रूपातील कोणतेही !!{formula} वैध आहे, कारण प्रत्येक
+!!{structure}~$\Struct M$ साठी $\Sat{M}{\eq[t][t]}$. (लक्षात घ्या की
+$t$ हे बंद पद आहे असे आपण गृहीत धरतो, म्हणजे त्यात कोणतेही चल नाही;
+म्हणून चल-विन्यास अप्रासंगिक असतात.)
+
+!!a{derivation} मधील शेवटचे अनुमान \Elim{\eq} आहे असे समजा, म्हणजे
+!!{derivation} चे रूप पुढीलप्रमाणे आहे:
+\begin{prooftree}
+  \AxiomC{$\Gamma_1$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$\eq[t_1][t_2]$}
+  \AxiomC{$\Gamma_2$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A(t_1)$}
+  \RightLabel{\Elim{\eq}}
+  \BinaryInfC{$!A(t_2)$}
+\end{prooftree}
+आधारविधाने~$\eq[t_1][t_2]$ आणि $!A(t_1)$ ही अनुक्रमे
+!!{undischarged} गृहीतके~$\Gamma_1$ आणि $\Gamma_2$ यांच्यापासून
+!!{derive} केली आहेत. $!A(t_2)$ हे $\Gamma_1 \cup \Gamma_2$ पासून
+निष्पन्न होते, हे दाखवायचे आहे. $\Sat{M}{\Gamma_1 \cup
+  \Gamma_2}$ असलेली !!a{structure}~$\Struct{M}$ विचारात घ्या. विगमन
+गृहीतकानुसार $\Sat{M}{!A(t_1)}$ आणि $\Sat{M}{\eq[t_1][t_2]}$.
+त्यामुळे $\Value{t_1}{M} = \Value{t_2}{M}$. $s$ हा कोणताही चल-विन्यास
+आणि $m = \Value{t_1}{M} = \Value{t_2}{M}$ असू द्या.
+\olref[fol][syn][ext]{prop:ext-formulas} नुसार
+$\Sat{M}{!A(t_1)}[s]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$, आणि हे तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat{M}{!A(t_2)}[s]$. $\Sat{M}{!A(t_1)}$ असल्यामुळे
+$\Sat{M}{!A(t_2)}$.
+\end{proof}
+
+\end{document}
