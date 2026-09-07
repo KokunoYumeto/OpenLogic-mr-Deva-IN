@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occurrences.
+Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occurrences.
 
 ## T001 — set
 
@@ -1098,6 +1098,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T005-OLP-0078-B015` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100` | pending |
 | `T005-OLP-0078-B017` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126` | pending |
 | `T005-OLP-0080-B007` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:24-30` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:23-29` | pending |
+| `T005-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T005-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T005-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T005-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T005-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T005-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T005-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T005-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T005-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T005-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T005-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T005-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T005-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T005-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T005-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T005-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T005-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T005-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T005-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T005-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T006 — proper subset
 
@@ -1431,6 +1451,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T009-OLP-0070-B008` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | pending |
 | `T009-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:84-85` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:84-85` | pending |
 | `T009-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
+| `T009-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T009-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T009-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T009-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T009-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T009-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T009-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T009-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T009-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T009-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T009-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T009-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T009-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T009-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T009-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T009-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T009-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T009-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T009-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T009-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T010 — truth / truth value
 
@@ -1488,6 +1528,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T010-OLP-0067-B006` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:15-29` | `mr/content/first-order-logic/proof-systems/tableaux.tex:15-28` | 85–86 |
 | `T010-OLP-0067-B007` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | 85–86 |
 | `T010-OLP-0070-B008` | `OLP-0070` |  | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | pending |
+| `T010-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T010-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T010-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T010-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T010-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T010-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T010-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T010-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T010-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T010-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T010-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T010-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T010-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T010-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T010-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T010-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T010-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T010-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T010-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T010-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T011 — syntax
 
@@ -7052,6 +7112,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T111-OLP-0061-B014` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:158-159` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:160-161` | 78–81 |
 | `T111-OLP-0061-B020` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:186-188` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:188-191` | 78–81 |
 | `T111-OLP-0062-B007` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33` | 81 |
+| `T111-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T111-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T111-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T111-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T111-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T111-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T111-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T111-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T111-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T111-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T111-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T111-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T111-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T111-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T111-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T111-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T111-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T111-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T111-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T111-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T112 — predicate / term / quantifier
 
@@ -7442,6 +7522,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T121-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 82–83 |
 | `T121-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
 | `T121-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
+| `T121-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T121-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T121-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T121-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T121-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T121-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T121-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T121-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T121-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T121-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T121-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T121-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T121-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T121-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T121-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T121-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T121-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T121-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T121-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T121-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T122 — tautology
 
@@ -7508,6 +7608,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T123-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 82–83 |
 | `T123-OLP-0064-B010` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:73-80` | `mr/content/first-order-logic/proof-systems/introduction.tex:76-83` | 82–83 |
 | `T123-OLP-0066-B007` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54` | 84–85 |
+| `T123-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T123-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T123-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T123-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T123-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T123-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T123-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T123-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T123-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T123-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T123-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T123-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T123-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T123-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T123-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T123-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T123-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T123-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T123-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T123-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -8613,6 +8733,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T154-OLP-0066-B008` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:60-75` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:56-72` | 84–85 |
 | `T154-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
 | `T154-OLP-0077-B008` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:30-34` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:31-35` | pending |
+| `T154-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T154-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T154-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T154-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T154-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T154-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T154-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T154-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T154-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T154-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T154-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T154-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T154-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T154-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T154-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T154-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T154-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T154-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T154-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T154-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T155 — soundness / sound / unsound (of a proof system)
 
@@ -8644,6 +8784,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T155-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 82–83 |
 | `T155-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
 | `T155-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:84-85` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:84-85` | pending |
+| `T155-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T155-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T155-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T155-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T155-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T155-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T155-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T155-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T155-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T155-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T155-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T155-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T155-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T155-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T155-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T155-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T155-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T155-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T155-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T155-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -8696,6 +8856,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T156-OLP-0078-B017` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126` | pending |
 | `T156-OLP-0079-B010` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63` | pending |
 | `T156-OLP-0079-B011` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | pending |
+| `T156-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T156-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T156-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T156-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T156-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T156-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T156-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T156-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T156-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T156-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T156-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T156-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T156-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T156-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T156-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T156-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T156-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T156-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T156-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T156-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -9246,6 +9426,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T173-OLP-0075-B007` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:18-48` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:18-45` | pending |
 | `T173-OLP-0075-B009` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:54-74` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:51-70` | pending |
 | `T173-OLP-0075-B013` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210` | pending |
+| `T173-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T173-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T173-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T173-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T173-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T173-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T173-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T173-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T173-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T173-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T173-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T173-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T173-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T173-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T173-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T173-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T173-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T173-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T173-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T173-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T174 — closed term
 
@@ -9275,6 +9475,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T174-OLP-0072-B008` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-28` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-27` | pending |
 | `T174-OLP-0072-B011` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-48` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48-48` | pending |
 | `T174-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:80-81` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:81-82` | pending |
+| `T174-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T174-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T174-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T174-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T174-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T174-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T174-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T174-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T174-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T174-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T174-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T174-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T174-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T174-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T174-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T174-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T174-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T174-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T174-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T174-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)
 
@@ -9329,6 +9549,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T175-OLP-0079-B013` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | pending |
 | `T175-OLP-0080-B007` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:24-30` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:23-29` | pending |
 | `T175-OLP-0080-B009` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:40-57` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:39-56` | pending |
+| `T175-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T175-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T175-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T175-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T175-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T175-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T175-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T175-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T175-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T175-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T175-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T175-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T175-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T175-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T175-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T175-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T175-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T175-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T175-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T175-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T176 — end-sequent
 
@@ -9425,6 +9665,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T178-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
 | `T178-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
 | `T178-OLP-0080-B007` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:24-30` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:23-29` | pending |
+| `T178-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T178-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T178-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T178-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T178-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T178-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T178-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T178-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T178-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T178-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T178-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T178-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T178-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T178-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T178-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T178-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T178-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T178-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T178-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T178-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T179 — eigenvariable condition
 
@@ -9459,6 +9719,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T179-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
 | `T179-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
 | `T179-OLP-0080-B007` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:24-30` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:23-29` | pending |
+| `T179-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T179-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T179-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T179-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T179-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T179-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T179-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T179-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T179-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T179-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T179-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T179-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T179-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T179-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T179-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T179-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T179-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T179-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T179-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T179-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## T180 — Rules for [logical symbol] (heading construction)
 
@@ -9642,6 +9922,26 @@ Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occ
 | `T184-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
 | `T184-OLP-0080-B007` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:24-30` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:23-29` | pending |
 | `T184-OLP-0080-B009` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:40-57` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:39-56` | pending |
+| `T184-OLP-0081-B005` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:13-13` | pending |
+| `T184-OLP-0081-B006` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:15-30` | pending |
+| `T184-OLP-0081-B007` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:32-39` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:32-38` | pending |
+| `T184-OLP-0081-B008` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:41-46` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:40-45` | pending |
+| `T184-OLP-0081-B009` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:48-50` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:47-50` | pending |
+| `T184-OLP-0081-B010` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:52-55` | pending |
+| `T184-OLP-0081-B011` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:57-59` | pending |
+| `T184-OLP-0081-B012` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:61-65` | pending |
+| `T184-OLP-0081-B013` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:67-71` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:67-70` | pending |
+| `T184-OLP-0081-B014` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:73-95` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:72-93` | pending |
+| `T184-OLP-0081-B015` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:97-112` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:95-111` | pending |
+| `T184-OLP-0081-B016` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:113-241` | pending |
+| `T184-OLP-0081-B017` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:243-326` | pending |
+| `T184-OLP-0081-B018` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:328-332` | pending |
+| `T184-OLP-0081-B019` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:340-344` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:334-338` | pending |
+| `T184-OLP-0081-B020` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:346-349` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:340-343` | pending |
+| `T184-OLP-0081-B021` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:351-354` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:345-348` | pending |
+| `T184-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
+| `T184-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
+| `T184-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 

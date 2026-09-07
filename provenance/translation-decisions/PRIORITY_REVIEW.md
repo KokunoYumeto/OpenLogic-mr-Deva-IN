@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 26 urgent/high decisions and
-663 current occurrences. Normal and low items remain in the full index.
+743 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -839,6 +839,26 @@ This view contains 26 urgent/high decisions and
 | `T155-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | 82-99 | 85-101 | 82–83 |
 | `T155-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | 15-36 | 15-36 | 86–87 |
 | `T155-OLP-0072-B014` | `OLP-0072` |  | 84-85 | 84-85 | pending |
+| `T155-OLP-0081-B005` | `OLP-0081` |  | 13-13 | 13-13 | pending |
+| `T155-OLP-0081-B006` | `OLP-0081` |  | 15-30 | 15-30 | pending |
+| `T155-OLP-0081-B007` | `OLP-0081` |  | 32-39 | 32-38 | pending |
+| `T155-OLP-0081-B008` | `OLP-0081` |  | 41-46 | 40-45 | pending |
+| `T155-OLP-0081-B009` | `OLP-0081` |  | 48-50 | 47-50 | pending |
+| `T155-OLP-0081-B010` | `OLP-0081` |  | 52-55 | 52-55 | pending |
+| `T155-OLP-0081-B011` | `OLP-0081` |  | 57-59 | 57-59 | pending |
+| `T155-OLP-0081-B012` | `OLP-0081` |  | 61-65 | 61-65 | pending |
+| `T155-OLP-0081-B013` | `OLP-0081` |  | 67-71 | 67-70 | pending |
+| `T155-OLP-0081-B014` | `OLP-0081` |  | 73-95 | 72-93 | pending |
+| `T155-OLP-0081-B015` | `OLP-0081` |  | 97-112 | 95-111 | pending |
+| `T155-OLP-0081-B016` | `OLP-0081` |  | 114-242 | 113-241 | pending |
+| `T155-OLP-0081-B017` | `OLP-0081` |  | 244-332 | 243-326 | pending |
+| `T155-OLP-0081-B018` | `OLP-0081` |  | 334-338 | 328-332 | pending |
+| `T155-OLP-0081-B019` | `OLP-0081` |  | 340-344 | 334-338 | pending |
+| `T155-OLP-0081-B020` | `OLP-0081` |  | 346-349 | 340-343 | pending |
+| `T155-OLP-0081-B021` | `OLP-0081` |  | 351-354 | 345-348 | pending |
+| `T155-OLP-0081-B022` | `OLP-0081` |  | 356-364 | 350-358 | pending |
+| `T155-OLP-0081-B023` | `OLP-0081` |  | 366-369 | 360-363 | pending |
+| `T155-OLP-0081-B024` | `OLP-0081` |  | 371-382 | 365-376 | pending |
 
 ## T174 — closed term → बंद पद
 
@@ -853,6 +873,26 @@ This view contains 26 urgent/high decisions and
 | `T174-OLP-0072-B008` | `OLP-0072` |  | 27-28 | 27-27 | pending |
 | `T174-OLP-0072-B011` | `OLP-0072` |  | 48-48 | 48-48 | pending |
 | `T174-OLP-0072-B014` | `OLP-0072` |  | 80-81 | 81-82 | pending |
+| `T174-OLP-0081-B005` | `OLP-0081` |  | 13-13 | 13-13 | pending |
+| `T174-OLP-0081-B006` | `OLP-0081` |  | 15-30 | 15-30 | pending |
+| `T174-OLP-0081-B007` | `OLP-0081` |  | 32-39 | 32-38 | pending |
+| `T174-OLP-0081-B008` | `OLP-0081` |  | 41-46 | 40-45 | pending |
+| `T174-OLP-0081-B009` | `OLP-0081` |  | 48-50 | 47-50 | pending |
+| `T174-OLP-0081-B010` | `OLP-0081` |  | 52-55 | 52-55 | pending |
+| `T174-OLP-0081-B011` | `OLP-0081` |  | 57-59 | 57-59 | pending |
+| `T174-OLP-0081-B012` | `OLP-0081` |  | 61-65 | 61-65 | pending |
+| `T174-OLP-0081-B013` | `OLP-0081` |  | 67-71 | 67-70 | pending |
+| `T174-OLP-0081-B014` | `OLP-0081` |  | 73-95 | 72-93 | pending |
+| `T174-OLP-0081-B015` | `OLP-0081` |  | 97-112 | 95-111 | pending |
+| `T174-OLP-0081-B016` | `OLP-0081` |  | 114-242 | 113-241 | pending |
+| `T174-OLP-0081-B017` | `OLP-0081` |  | 244-332 | 243-326 | pending |
+| `T174-OLP-0081-B018` | `OLP-0081` |  | 334-338 | 328-332 | pending |
+| `T174-OLP-0081-B019` | `OLP-0081` |  | 340-344 | 334-338 | pending |
+| `T174-OLP-0081-B020` | `OLP-0081` |  | 346-349 | 340-343 | pending |
+| `T174-OLP-0081-B021` | `OLP-0081` |  | 351-354 | 345-348 | pending |
+| `T174-OLP-0081-B022` | `OLP-0081` |  | 356-364 | 350-358 | pending |
+| `T174-OLP-0081-B023` | `OLP-0081` |  | 366-369 | 360-363 | pending |
+| `T174-OLP-0081-B024` | `OLP-0081` |  | 371-382 | 365-376 | pending |
 
 ## T178 — eigenvariable → आयगेन चर
 
@@ -873,6 +913,26 @@ This view contains 26 urgent/high decisions and
 | `T178-OLP-0076-B008` | `OLP-0076` |  | 31-83 | 29-79 | pending |
 | `T178-OLP-0080-B006` | `OLP-0080` |  | 18-22 | 17-21 | pending |
 | `T178-OLP-0080-B007` | `OLP-0080` |  | 24-30 | 23-29 | pending |
+| `T178-OLP-0081-B005` | `OLP-0081` |  | 13-13 | 13-13 | pending |
+| `T178-OLP-0081-B006` | `OLP-0081` |  | 15-30 | 15-30 | pending |
+| `T178-OLP-0081-B007` | `OLP-0081` |  | 32-39 | 32-38 | pending |
+| `T178-OLP-0081-B008` | `OLP-0081` |  | 41-46 | 40-45 | pending |
+| `T178-OLP-0081-B009` | `OLP-0081` |  | 48-50 | 47-50 | pending |
+| `T178-OLP-0081-B010` | `OLP-0081` |  | 52-55 | 52-55 | pending |
+| `T178-OLP-0081-B011` | `OLP-0081` |  | 57-59 | 57-59 | pending |
+| `T178-OLP-0081-B012` | `OLP-0081` |  | 61-65 | 61-65 | pending |
+| `T178-OLP-0081-B013` | `OLP-0081` |  | 67-71 | 67-70 | pending |
+| `T178-OLP-0081-B014` | `OLP-0081` |  | 73-95 | 72-93 | pending |
+| `T178-OLP-0081-B015` | `OLP-0081` |  | 97-112 | 95-111 | pending |
+| `T178-OLP-0081-B016` | `OLP-0081` |  | 114-242 | 113-241 | pending |
+| `T178-OLP-0081-B017` | `OLP-0081` |  | 244-332 | 243-326 | pending |
+| `T178-OLP-0081-B018` | `OLP-0081` |  | 334-338 | 328-332 | pending |
+| `T178-OLP-0081-B019` | `OLP-0081` |  | 340-344 | 334-338 | pending |
+| `T178-OLP-0081-B020` | `OLP-0081` |  | 346-349 | 340-343 | pending |
+| `T178-OLP-0081-B021` | `OLP-0081` |  | 351-354 | 345-348 | pending |
+| `T178-OLP-0081-B022` | `OLP-0081` |  | 356-364 | 350-358 | pending |
+| `T178-OLP-0081-B023` | `OLP-0081` |  | 366-369 | 360-363 | pending |
+| `T178-OLP-0081-B024` | `OLP-0081` |  | 371-382 | 365-376 | pending |
 
 ## T179 — eigenvariable condition → आयगेन चराची अट
 
@@ -891,6 +951,26 @@ This view contains 26 urgent/high decisions and
 | `T179-OLP-0076-B008` | `OLP-0076` |  | 31-83 | 29-79 | pending |
 | `T179-OLP-0080-B006` | `OLP-0080` |  | 18-22 | 17-21 | pending |
 | `T179-OLP-0080-B007` | `OLP-0080` |  | 24-30 | 23-29 | pending |
+| `T179-OLP-0081-B005` | `OLP-0081` |  | 13-13 | 13-13 | pending |
+| `T179-OLP-0081-B006` | `OLP-0081` |  | 15-30 | 15-30 | pending |
+| `T179-OLP-0081-B007` | `OLP-0081` |  | 32-39 | 32-38 | pending |
+| `T179-OLP-0081-B008` | `OLP-0081` |  | 41-46 | 40-45 | pending |
+| `T179-OLP-0081-B009` | `OLP-0081` |  | 48-50 | 47-50 | pending |
+| `T179-OLP-0081-B010` | `OLP-0081` |  | 52-55 | 52-55 | pending |
+| `T179-OLP-0081-B011` | `OLP-0081` |  | 57-59 | 57-59 | pending |
+| `T179-OLP-0081-B012` | `OLP-0081` |  | 61-65 | 61-65 | pending |
+| `T179-OLP-0081-B013` | `OLP-0081` |  | 67-71 | 67-70 | pending |
+| `T179-OLP-0081-B014` | `OLP-0081` |  | 73-95 | 72-93 | pending |
+| `T179-OLP-0081-B015` | `OLP-0081` |  | 97-112 | 95-111 | pending |
+| `T179-OLP-0081-B016` | `OLP-0081` |  | 114-242 | 113-241 | pending |
+| `T179-OLP-0081-B017` | `OLP-0081` |  | 244-332 | 243-326 | pending |
+| `T179-OLP-0081-B018` | `OLP-0081` |  | 334-338 | 328-332 | pending |
+| `T179-OLP-0081-B019` | `OLP-0081` |  | 340-344 | 334-338 | pending |
+| `T179-OLP-0081-B020` | `OLP-0081` |  | 346-349 | 340-343 | pending |
+| `T179-OLP-0081-B021` | `OLP-0081` |  | 351-354 | 345-348 | pending |
+| `T179-OLP-0081-B022` | `OLP-0081` |  | 356-364 | 350-358 | pending |
+| `T179-OLP-0081-B023` | `OLP-0081` |  | 366-369 | 360-363 | pending |
+| `T179-OLP-0081-B024` | `OLP-0081` |  | 371-382 | 365-376 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

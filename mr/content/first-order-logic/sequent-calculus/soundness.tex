@@ -1,0 +1,378 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: soundness.tex
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{sou}}
+      {\olfileid{pl}{seq}{sou}}
+
+\olsection{निर्दोषता}
+
+\begin{explain}
+क्रमवर्ती कलनासारखी !!^a{derivation} पद्धत \emph{निर्दोष} असते, जर ती
+प्रत्यक्षात धारण न करणाऱ्या गोष्टी !!{derive} करू शकत नसेल. त्यामुळे
+निर्दोषता हा !!{derivation} पद्धतींसाठी हमी दिलेल्या सुरक्षिततेचा एक प्रकार
+आहे. कोणता सिद्धता-उपपत्तीय गुणधर्म विचारात आहे यावर अवलंबून, उदाहरणार्थ,
+आपल्याला पुढील गोष्टी हव्या असतात:
+\begin{enumerate}
+\item प्रत्येक !!{derivable}~$!A$ हे \iftag{FOL}{वैध}{सर्वतः सत्य सूत्र} असते;
+\item एखादे !!a{sentence} इतर काही वाक्यांपासून !!{derivable} असेल, तर ते
+  त्यांचे तार्किक परिणामही असते;
+\item !!{sentence}s चा संच विसंगत असेल, तर तो अपूर्ततायोग्य असतो.
+\end{enumerate}
+हे !!a{derivation} पद्धतीचे महत्त्वाचे गुणधर्म आहेत. यांपैकी एखादा गुणधर्म
+खरा नसेल, तर !!{derivation} पद्धतीत दोष आहे—ती खूप जास्त निष्पत्ती
+!!{derive} करेल. म्हणून !!{derivation} पद्धतीची निर्दोषता सिद्ध करणे अत्यंत
+महत्त्वाचे आहे.
+
+वरील सर्व सिद्धता-उपपत्तीय गुणधर्म क्रमवर्ती कलनातील ठरावीक क्रमवर्तींच्या
+!!{derivability} द्वारे परिभाषित केलेले असल्याने, (1)--(3) सिद्ध करण्यासाठी
+!!{derivable} क्रमवर्तींच्या चिन्हार्थविषयक गुणधर्मांबद्दल काहीतरी सिद्ध करावे
+लागते. प्रथम क्रमवर्ती \emph{वैध} असणे म्हणजे काय ते परिभाषित करू आणि मग
+प्रत्येक !!{derivable} क्रमवर्ती वैध असते हे दाखवू. त्यानंतर (1)--(3) या
+परिणामाच्या उपपरिणामांप्रमाणे मिळतील.
+\end{explain}
+
+\begin{defn}
+\iftag{FOL}{!!^a{structure}~$\Struct
+  M$}{!!^a{valuation}~$\pAssign{v}$} क्रमवर्ती
+$\Gamma \Sequent \Delta$ \emph{पूर्ण करते} तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$ हे एखाद्या $!A \in \Gamma$ साठी किंवा
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ हे एखाद्या $!A \in \Delta$ साठी असते.
+
+क्रमवर्ती \emph{वैध} असते तेव्हा आणि केवळ तेव्हाच, जेव्हा प्रत्येक
+\iftag{FOL}{!!{structure}~$\Struct
+  M$}{!!{valuation}~$\pAssign{v}$} ते पूर्ण करते.
+\end{defn}
+
+\begin{thm}[निर्दोषता]
+\ollabel{thm:sequent-soundness} जर $\Log{LK}$ !!{derive}s $\Theta
+\Sequent \Xi$, तर $\Theta \Sequent \Xi$ वैध आहे.
+\end{thm}
+
+\begin{proof}
+  $\Theta \Sequent \Xi$ ची !!a{derivation}~$\pi$ असू द्या. $\pi$ मधील
+अनुमानांची संख्या~$n$ यावर विगमनाने पुढे जाऊ.
+
+अनुमानांची संख्या~$0$ असेल, तर $\pi$ मध्ये फक्त आरंभीची क्रमवर्ती असते.
+प्रत्येक आरंभीची क्रमवर्ती $!A \Sequent !A$ स्पष्टपणे वैध असते, कारण प्रत्येक
+\iftag{FOL}{$\Struct M$}{$\pAssign{v}$} साठी एकतर
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$ किंवा
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
+
+  अनुमानांची संख्या~0 पेक्षा जास्त असेल, तर सर्वांत खालच्या अनुमानाच्या
+प्रकारानुसार प्रकरणे वेगळी करू. विगमन गृहीतकानुसार त्या अनुमानाची आधारविधाने
+वैध आहेत असे गृहीत धरू, कारण कोणत्याही आधारविधानाच्या !!{derivation} मधील
+अनुमानांची संख्या~$n$ पेक्षा कमी असते.
+
+प्रथम, एकच आधारविधान असलेली संभाव्य अनुमाने पाहू.
+\begin{enumerate}
+\item शेवटचे अनुमान दुर्बलीकरण आहे. मग $\Theta \Sequent \Xi$ हे एकतर
+  $!A, \Gamma \Sequent \Delta$ (शेवटचे अनुमान
+  \LeftR{\Weakening} असेल) किंवा $\Gamma \Sequent \Delta, !A$ (ते
+  \RightR{\Weakening} असेल), आणि !!{derivation} पुढीलपैकी एका रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Weakening}}
+    \UnaryInf$!A, \Gamma \fCenter \Delta$
+    \DisplayProof\qquad\bottomAlignProof
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta$
+    \RightLabel{\RightR{\Weakening}}
+    \UnaryInf$\Gamma \fCenter \Delta, !A$
+  \end{prooftree}
+  विगमन गृहीतकानुसार $\Gamma \Sequent \Delta$ वैध आहे; म्हणजे प्रत्येक
+  \iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$},
+  एकतर एखादे $!C \in \Gamma$ असे आहे की
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, किंवा एखादे $!C \in
+  \Delta$ असे आहे की $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$.
+  
+  जर $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$ हे एखाद्या $!C \in \Gamma$ साठी
+  असेल, तर $\Theta = !A, \Gamma$ असल्याने $!C \in \Theta$ देखील आहे आणि
+  म्हणून $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$ हे एखाद्या $!C \in \Theta$ साठी
+  आहे. त्याचप्रमाणे, जर $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$ हे एखाद्या
+  $!C \in \Delta$ साठी असेल, तर $!C \in \Xi$ आणि
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$ हे एखाद्या $!C \in \Xi$ साठी आहे.
+  म्हणून $\Theta \Sequent \Xi$ वैध आहे.
+\item शेवटचे अनुमान \LeftR{\lnot} आहे. मग त्याचे आधारविधान
+  $\Gamma \Sequent \Delta, !A$ आणि निष्कर्ष $\lnot !A, \Gamma \Sequent
+  \Delta$ असतो; म्हणजे !!{derivation} पुढील रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot !A, \Gamma \fCenter \Delta$
+  \end{prooftree}
+  आणि $\Theta = \lnot !A, \Gamma$, तर $\Xi = \Delta$.
+
+  विगमन गृहीतकानुसार $\Gamma \Sequent \Delta, !A$ वैध आहे; म्हणजे प्रत्येक
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} साठी एकतर (a) एखाद्या
+  $!C \in \Gamma$ साठी
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, किंवा (b) एखाद्या $!C \in
+  \Delta$ साठी, $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$, किंवा (c)
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. $\Theta
+  \Sequent \Xi$ देखील वैध आहे हे दाखवायचे आहे. \iftag{FOL}{$\Struct{M}$
+    ही !!a{structure}}{$\pAssign{v}$ हे !!a{valuation}} घ्या. (a) असल्यास,
+  एखादे $!C \in \Gamma$ असे आहे की
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, आणि $!C \in \Theta$ मध्ये
+  देखील आहे. (b) असल्यास, एखादे $!C \in \Delta$ असे आहे की
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$, आणि $!C \in \Xi$ मध्ये
+  देखील आहे. शेवटी, जर $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ असेल, तर
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{\lnot !A}$. कारण $\lnot !A \in
+  \Theta$ मध्ये असल्याने, एखादे $!C \in \Theta$ असे आहे की
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. म्हणून $\Theta
+  \Sequent \Xi$ वैध आहे.
+\item शेवटचे अनुमान \RightR{\lnot} आहे: सरावासाठी.
+\item शेवटचे अनुमान \LeftR{\land} आहे. याचे दोन प्रकार आहेत: आधारविधानाच्या
+  डाव्या बाजूला असलेल्या $!A$ किंवा $!B$ पासून $!A
+  \land !B$ डावीकडे निष्पन्न केले जाऊ शकते. पहिल्या प्रकारात $\pi$ पुढील रूपात
+  संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$!A, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+  \end{prooftree}
+  आणि $\Theta = !A \land !B, \Gamma$, तर $\Xi = \Delta$. आता
+  \iftag{FOL}{!!a{structure}~$\Struct
+  M$}{!!a{valuation}~$\pAssign{v}$} घ्या. विगमन गृहीतकानुसार
+  $!A, \Gamma \Sequent \Delta$ वैध असल्याने, (a)
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$, (b)
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$ हे एखाद्या $!C \in \Gamma$ साठी, किंवा
+  (c)~$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$ हे एखाद्या $!C \in \Delta$ साठी.
+  (a) प्रकरणात $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \land !B}$, म्हणून
+  $!C \in \Theta$ (म्हणजे $!A \land !B$) असे एखादे !C आहे की
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. (b) प्रकरणात एखादे $!C
+  \in \Gamma$ असे आहे की $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$ आणि
+  $!C \in \Theta$ देखील आहे. (c) प्रकरणात एखादे $!C \in \Delta$ असे आहे
+  की $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$ आणि $\Xi = \Delta$ असल्याने
+  $!C \in \Xi$ देखील आहे. म्हणून प्रत्येक प्रकरणात
+  \iftag{FOL}{$\Struct
+    M$}{$\pAssign{v}$} $!A \land !B, \Gamma \Sequent
+  \Delta$ पूर्ण करते. \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} स्वेच्छ
+  असल्याने $\Gamma \Sequent \Delta$ वैध आहे. $!A \land !B$ हे $!B$ पासून
+  निष्पन्न होण्याचे प्रकरणही असेच हाताळता येते; फक्त $!A$ ऐवजी $!B$ घ्या.
+\item शेवटचे अनुमान \RightR{\lor} आहे. याचे दोन प्रकार आहेत: आधारविधानाच्या
+  उजव्या बाजूला असलेल्या $!A$ किंवा $!B$ पासून $!A
+  \lor !B$ उजवीकडे निष्पन्न केले जाऊ शकते. पहिल्या प्रकारात $\pi$ पुढील रूपात
+  संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \RightLabel{\RightR{\lor}}
+    \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B$
+  \end{prooftree}
+  येथे $\Theta = \Gamma$ आणि $\Xi = \Delta, !A \lor !B$. आता
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$} घ्या.
+  $\Gamma \Sequent \Delta, !A$ वैध असल्याने, (a)
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$, (b)
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$ हे एखाद्या $!C \in \Gamma$ साठी, किंवा
+  (c)~$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$ हे एखाद्या $!C \in \Delta$ साठी.
+  (a) प्रकरणात $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lor !B}$. (b) प्रकरणात
+  एखादे $!C \in \Gamma$ असे आहे की
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. (c) प्रकरणात एखादे $!C
+  \in \Delta$ असे आहे की $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. म्हणून
+  प्रत्येक प्रकरणात \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}
+  $\Gamma \Sequent \Delta, !A \lor !B$, म्हणजेच $\Theta \Sequent \Xi$ पूर्ण
+  करते. \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} स्वेच्छ असल्याने
+  $\Theta \Sequent \Xi$ वैध आहे. $!A \lor !B$ हे $!B$ पासून निष्पन्न होण्याचे
+  प्रकरणही असेच हाताळता येते; फक्त $!A$ ऐवजी $!B$ घ्या.
+\item शेवटचे अनुमान \RightR{\lif} आहे. मग $\pi$ पुढील रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$!A, \Gamma \fCenter \Delta, !B$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\Gamma \fCenter \Delta, !A \lif !B$
+  \end{prooftree}
+  पुन्हा, विगमन गृहीतकानुसार आधारविधान वैध आहे; निष्कर्षही वैध आहे हे
+  दाखवायचे आहे. \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} स्वेच्छ घ्या.
+  $!A, \Gamma \Sequent \Delta, !B$ वैध असल्याने पुढीलपैकी किमान एक प्रकरण
+  लागू होते: (a) $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$, (b)
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$, (c)
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$ हे एखाद्या~$~!C \in \Gamma$ साठी, किंवा
+  (d) $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$ हे एखाद्या $!C \in \Delta$ साठी.
+  (a) आणि (b) प्रकरणांत $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lif !B}$
+  आणि म्हणून $!C \in \Delta, !A \lif !B$ असे एखादे !C आहे की
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. (c) प्रकरणात एखाद्या $!C \in
+  \Gamma$ साठी $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. (d) प्रकरणात
+  एखाद्या $!C \in \Delta$ साठी $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. प्रत्येक
+  प्रकरणात \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} $\Gamma
+  \Sequent \Delta, !A \lif !B$ पूर्ण करते. \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}
+  स्वेच्छ असल्याने $\Gamma \Sequent \Delta, !A \lif !B$ वैध आहे. \iftag{FOL}{%
+\item शेवटचे अनुमान \LeftR{\lforall} आहे. मग !!a{formula}~$!A(x)$ आणि
+  बंद पद~$t$ असे आहेत की $\pi$ पुढील रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$!A(t), \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x)], \Gamma \fCenter \Delta$
+  \end{prooftree}
+  निष्कर्ष $\lforall[x][!A(x)], \Gamma
+  \Sequent \Delta$ वैध आहे हे दाखवायचे आहे. !!a{structure}~$\Struct M$ घ्या.
+  आधारविधान $!A(t), \Gamma \Sequent \Delta$ वैध असल्याने, (a)
+  $\Sat/{M}{!A(t)}$, (b) $\Sat/{M}{!C}$ हे एखाद्या $!C \in \Gamma$ साठी, किंवा
+  (c)~$\Sat{M}{!C}$ हे एखाद्या $!C \in \Delta$ साठी असते. (a) प्रकरणात,
+  \olref[syn][sem]{prop:quant-terms} नुसार, जर
+  $\Sat{M}{\lforall[x][!A(x)]}$ असेल, तर $\Sat{M}{!A(t)}$. म्हणून
+  $\Sat/{M}{!A(t)}$ असल्याने $\Sat/{M}{\lforall[x][!A(x)]}$. (b) आणि
+  (c) प्रकरणांत $\Struct{M}$ देखील $\lforall[x][!A(x)], \Gamma
+  \Sequent \Delta$ पूर्ण करते. $\Struct M$ स्वेच्छ असल्याने,
+  $\lforall[x][!A(x)], \Gamma \Sequent \Delta$ वैध आहे.
+\item शेवटचे अनुमान \RightR{\lexists} आहे: सरावासाठी.
+\item शेवटचे अनुमान \RightR{\lforall} आहे. मग
+  !!a{formula}~$!A(x)$ आणि !!a{constant}~$a$ असे आहेत की $\pi$ पुढील रूपात
+  संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A(a)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+  \end{prooftree}
+  येथे आयगेन चराची अट पूर्ण आहे, म्हणजे $a$ हे $!A(x)$, $\Gamma$ किंवा
+  $\Delta$ मध्ये येत नाही. विगमन गृहीतकानुसार शेवटच्या अनुमानाचे आधारविधान
+  वैध आहे. निष्कर्षही वैध आहे हे दाखवायचे आहे; म्हणजे कोणत्याही
+  !!{structure}~$\Struct M$ साठी (a) $\Sat{M}{\lforall[x][!A(x)]}$, (b)
+  एखाद्या $!C \in \Gamma$ साठी $\Sat/{M}{!C}$, किंवा (c) एखाद्या
+  $!C \in \Delta$ साठी $\Sat{M}{!C}$.
+
+  $\Struct{M}$ ही स्वेच्छ !!{structure} घ्या. (b) किंवा (c) लागू असेल तर
+  काम झाले; म्हणून दोन्ही लागू नाहीत असे गृहीत धरा: प्रत्येक $!C \in
+  \Gamma$ साठी $\Sat{M}{!C}$ आणि प्रत्येक $!C \in \Delta$ साठी
+  $\Sat/{M}{!C}$. आता (a), म्हणजेच $\Sat{M}{\lforall[x][!A(x)]}$, हे दाखवायचे
+  आहे. \olref[syn][ass]{prop:sat-quant} नुसार सर्व चल-विन्यास~$s$ साठी
+  $\Sat{M}{!A(x)}[s]$ दाखवणे पुरेसे आहे. म्हणून $s$ हा स्वेच्छ चल-विन्यास घ्या.
+  $\Struct{M'}$ ही $\Struct{M}$ सारखीच रचना घ्या, फक्त
+  $\Assign{a}{M'} = s(x)$ असेल. \olref[syn][ext]{cor:extensionality-sent}
+  नुसार प्रत्येक $!C \in \Gamma$ साठी $a$ हे $\Gamma$ मध्ये येत नसल्यामुळे
+  $\Sat{M'}{!C}$, आणि प्रत्येक $!C \in \Delta$ साठी $\Sat/{M'}{!C}$.
+  पण आधारविधान वैध असल्याने $\Sat{M'}{!A(a)}$. \olref[syn][ass]{prop:sentence-sat-true}
+  नुसार $!A(a)$ हे वाक्य असल्यामुळे $\Sat{M'}{!A(a)}[s]$.
+  आता $\varAssign{s}{s}{x}$ आणि $s(x) = \Value{a}{M'}[s]$, कारण
+  $\Struct{M'}$ याच प्रकारे परिभाषित केले आहे. म्हणून
+  \olref[syn][ext]{prop:ext-formulas} लागू होते आणि $\Sat{M'}{!A(x)}[s]$
+  मिळते. $a$ हे $!A(x)$ मध्ये येत नसल्याने
+  \olref[syn][ext]{prop:extensionality} नुसार $\Sat{M}{!A(x)}[s]$.
+  $s$ स्वेच्छ असल्याने सर्व चल-विन्यासांसाठी $\Sat{M}{!A(x)}[s]$ सिद्ध झाले.
+\item शेवटचे अनुमान \LeftR{\lexists} आहे: सरावासाठी.
+}{}
+\end{enumerate}
+आता दोन आधारविधाने असलेली संभाव्य अनुमाने पाहू.
+\begin{enumerate}
+\item शेवटचे अनुमान कट आहे; म्हणून $\pi$ पुढील रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \AxiomC{}
+    \Deduce$!A, \Pi \fCenter \Lambda$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda$
+  \end{prooftree}
+  \iftag{FOL}{$\Struct{M}$ ही !!a{structure}}{$\pAssign{v}$ हे
+    !!a{valuation}} घ्या. विगमन गृहीतकानुसार आधारविधाने वैध असल्याने
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} दोन्ही आधारविधाने पूर्ण करते.
+  दोन प्रकरणे पाहू: (a) $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$ आणि (b)
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. (a) प्रकरणात डावे आधारविधान पूर्ण
+  करण्यासाठी \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ने
+  $\Gamma \Sequent \Delta$ पूर्ण केले पाहिजे; मग ते निष्कर्षही पूर्ण करते.
+  (b) प्रकरणात उजवे आधारविधान पूर्ण करण्यासाठी
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ने $\Pi \setminus \Lambda$ पूर्ण
+  केले पाहिजे. पुन्हा, \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} निष्कर्ष पूर्ण करते.
+\item शेवटचे अनुमान \RightR{\land} आहे. मग $\pi$ पुढील रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !B$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma \fCenter \Delta, !A \land !B$
+  \end{prooftree}
+  \iftag{FOL}{!!a{structure}~$\Struct
+    M$}{!!a{valuation}~$\pAssign{v}$} घ्या. \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}
+  ने $\Gamma \Sequent \Delta$ पूर्ण केले तर काम झाले. तसे नसल्याचे गृहीत धरा.
+  विगमन गृहीतकानुसार $\Gamma \fCenter
+  \Delta, !A$ वैध असल्याने,
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. त्याचप्रमाणे, कारण $\Gamma
+  \Sequent \Delta, !B$ वैध असल्याने,
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$. म्हणून
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \land !B}$.
+\item शेवटचे अनुमान \LeftR{\lor} आहे: सरावासाठी.
+\item शेवटचे अनुमान \LeftR{\lif} आहे. मग $\pi$ पुढील रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \AxiomC{}
+    \Deduce$!B, \Pi \fCenter \Lambda$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, \Gamma, \Pi \fCenter \Delta, \Lambda$
+  \end{prooftree}
+  पुन्हा,
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ने $\Gamma, \Pi \Sequent
+  \Delta, \Lambda$ पूर्ण केलेले नाही असे गृहीत धरा. आपल्याला
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$ दाखवायचे आहे.
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ने $\Gamma,
+  \Pi \Sequent \Delta, \Lambda$ पूर्ण केलेले नसल्याने ते $\Gamma \Sequent
+  \Delta$ किंवा $\Pi \Sequent \Lambda$ यांपैकी कोणतेही पूर्ण करत नाही. $\Gamma
+  \Sequent \Delta, !A$ वैध असल्याने $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
+  $!B, \Pi \Sequent \Lambda$ वैध असल्याने
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$. म्हणून
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$, जे दाखवायचे होते तेच.
+\end{enumerate}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][seq][sou]{thm:sequent-soundness} ची सिद्धता पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][seq][sou]{thm:sequent-soundness} ची सिद्धता पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+जर $\Proves !A$, तर $!A$ हे \iftag{FOL}{वैध}{सर्वतः सत्य सूत्र} आहे.
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:entailment-soundness}
+जर $\Gamma \Proves !A$, तर $\Gamma \Entails !A$.
+\end{cor}
+
+\begin{proof}
+जर $\Gamma \Proves !A$ असेल, तर $\Gamma_0 \subseteq \Gamma$ असा काही
+मर्यादित संच आणि $\Gamma_0 \Sequent !A$ ची !!a{derivation} असते. \olref{thm:sequent-soundness}
+नुसार, प्रत्येक
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+किंवा $!B \in \Gamma_0$ असत्य करते, किंवा $!A$ सत्य करते. म्हणून,
+जर $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ असेल, तर
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ देखील असेल.
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:consistency-soundness}
+जर $\Gamma$ पूर्ण करण्यायोग्य असेल, तर तो सुसंगत आहे.
+\end{cor}
+
+\begin{proof}
+प्रतिलोम विधान सिद्ध करू. $\Gamma$ सुसंगत नाही असे गृहीत धरा. मग
+$\Gamma_0 \subseteq \Gamma$ असा काही मर्यादित संच आणि
+$\Gamma_0 \Sequent \quad$ ची !!a{derivation} असते. \olref{thm:sequent-soundness}
+नुसार $\Gamma_0 \Sequent \quad$ वैध आहे. दुसऱ्या शब्दांत, प्रत्येक
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$} साठी
+$!C \in \Gamma_0$ असे आहे की
+$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$; आणि $\Gamma_0 \subseteq \Gamma$
+असल्याने ते $!C$ $\Gamma$ मध्येही आहे. त्यामुळे कोणतेही
+\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} $\Gamma$ पूर्ण करत नाही, आणि
+$\Gamma$ पूर्ण करण्यायोग्य नाही.
+\end{proof}
+
+\end{document}
