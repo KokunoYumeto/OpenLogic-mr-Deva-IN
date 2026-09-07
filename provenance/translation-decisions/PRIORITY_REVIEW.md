@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 26 urgent/high decisions and
-917 current occurrences. Normal and low items remain in the full index.
+941 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -841,6 +841,19 @@ This view contains 26 urgent/high decisions and
 | `T044-OLP-0094-B009` | `OLP-0094` |  | 27-32 | 27-32 | pending |
 | `T044-OLP-0094-B012` | `OLP-0094` |  | 43-51 | 43-51 | pending |
 | `T044-OLP-0094-B013` | `OLP-0094` |  | 53-61 | 53-61 | pending |
+| `T044-OLP-0095-B006` | `OLP-0095` |  | 15-31 | 15-31 | pending |
+| `T044-OLP-0095-B008` | `OLP-0095` |  | 39-41 | 39-41 | pending |
+| `T044-OLP-0095-B009` | `OLP-0095` |  | 43-50 | 43-49 | pending |
+| `T044-OLP-0095-B010` | `OLP-0095` |  | 52-59 | 51-57 | pending |
+| `T044-OLP-0095-B012` | `OLP-0095` |  | 64-84 | 62-83 | pending |
+| `T044-OLP-0095-B013` | `OLP-0095` |  | 86-107 | 85-106 | pending |
+| `T044-OLP-0095-B014` | `OLP-0095` |  | 109-128 | 108-127 | pending |
+| `T044-OLP-0095-B015` | `OLP-0095` |  | 130-153 | 129-153 | pending |
+| `T044-OLP-0095-B016` | `OLP-0095` |  | 155-170 | 155-169 | pending |
+| `T044-OLP-0095-B018` | `OLP-0095` |  | 174-203 | 173-202 | pending |
+| `T044-OLP-0095-B022` | `OLP-0095` |  | 216-240 | 215-240 | pending |
+| `T044-OLP-0095-B024` | `OLP-0095` |  | 244-271 | 244-273 | pending |
+| `T044-OLP-0095-B031` | `OLP-0095` |  | 301-312 | 303-314 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
@@ -949,6 +962,15 @@ This view contains 26 urgent/high decisions and
 | `T155-OLP-0085-B010` | `OLP-0085` |  | 47-48 | 44-45 | pending |
 | `T155-OLP-0087-B014` | `OLP-0087` |  | 85-103 | 84-102 | pending |
 | `T155-OLP-0091-B007` | `OLP-0091` |  | 20-29 | 20-29 | pending |
+| `T155-OLP-0095-B005` | `OLP-0095` |  | 13-13 | 13-13 | pending |
+| `T155-OLP-0095-B006` | `OLP-0095` |  | 15-31 | 15-31 | pending |
+| `T155-OLP-0095-B007` | `OLP-0095` |  | 33-37 | 33-37 | pending |
+| `T155-OLP-0095-B016` | `OLP-0095` |  | 155-170 | 155-169 | pending |
+| `T155-OLP-0095-B027` | `OLP-0095` |  | 279-283 | 281-285 | pending |
+| `T155-OLP-0095-B028` | `OLP-0095` |  | 285-289 | 287-291 | pending |
+| `T155-OLP-0095-B029` | `OLP-0095` |  | 291-294 | 293-296 | pending |
+| `T155-OLP-0095-B030` | `OLP-0095` |  | 296-299 | 298-301 | pending |
+| `T155-OLP-0095-B031` | `OLP-0095` |  | 301-312 | 303-314 | pending |
 
 ## T174 — closed term → बंद पद
 
@@ -1078,6 +1100,7 @@ This view contains 26 urgent/high decisions and
 | `T178-OLP-0090-B011` | `OLP-0090` |  | 112-135 | 106-129 | pending |
 | `T178-OLP-0090-B012` | `OLP-0090` |  | 137-181 | 131-173 | pending |
 | `T178-OLP-0094-B009` | `OLP-0094` |  | 27-32 | 27-32 | pending |
+| `T178-OLP-0095-B018` | `OLP-0095` |  | 174-203 | 173-202 | pending |
 
 ## T179 — eigenvariable condition → आयगेन चराची अट
 
@@ -1145,6 +1168,7 @@ This view contains 26 urgent/high decisions and
 | `T179-OLP-0090-B011` | `OLP-0090` |  | 112-135 | 106-129 | pending |
 | `T179-OLP-0090-B012` | `OLP-0090` |  | 137-181 | 131-173 | pending |
 | `T179-OLP-0094-B009` | `OLP-0094` |  | 27-32 | 27-32 | pending |
+| `T179-OLP-0095-B018` | `OLP-0095` |  | 174-203 | 173-202 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

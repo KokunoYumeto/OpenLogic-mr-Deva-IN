@@ -1,0 +1,316 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{sou}}
+      {\olfileid{pl}{ntd}{sou}}
+
+\olsection{निर्दोषता}
+
+\begin{explain}
+नैसर्गिक निगमनासारखी !!^a{derivation} पद्धत \emph{निर्दोष} असते, जर ती
+प्रत्यक्षात निष्पन्न न होणाऱ्या गोष्टी !!{derive} करू शकत नसेल. त्यामुळे
+निर्दोषता हा !!{derivation} पद्धतींसाठी हमी दिलेल्या सुरक्षिततेचा एक प्रकार
+आहे. कोणता सिद्धता-उपपत्तीय गुणधर्म विचारात आहे यावर अवलंबून, उदाहरणार्थ,
+आपल्याला पुढील गोष्टी हव्या असतात:
+\begin{enumerate}
+\item प्रत्येक !!{derivable} !!{sentence} हे \iftag{FOL}{वैध}{सर्वतः सत्य सूत्र} असते;
+\item एखादे !!a{sentence} इतर काही वाक्यांपासून !!{derivable} असेल, तर ते
+  त्यांचा तार्किक परिणामही असते;
+\item !!{sentence}s चा संच विसंगत असेल, तर तो अपूर्ततायोग्य असतो.
+\end{enumerate}
+हे !!a{derivation} पद्धतीचे महत्त्वाचे गुणधर्म आहेत. यांपैकी एखादा गुणधर्म
+खरा नसेल, तर !!{derivation} पद्धतीत दोष आहे---ती खूप जास्त गोष्टी
+!!{derive} करेल. म्हणून !!{derivation} पद्धतीची निर्दोषता सिद्ध करणे अत्यंत
+महत्त्वाचे आहे.
+\end{explain}
+
+\begin{thm}[निर्दोषता]
+\ollabel{thm:soundness}
+$!A$ हे !!{undischarged} गृहीतके~$\Gamma$ यांच्यापासून !!{derivable} असेल, तर
+$\Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+$\delta$ ही $!A$ ची !!a{derivation} असू द्या. $\delta$ मधील अनुमानांच्या
+संख्येवर विगमनाने पुढे जाऊ.
+
+विगमनाच्या आधारपायरीसाठी अनुमानांची संख्या~$0$ असेल तेव्हा दावा सिद्ध करू.
+या प्रकरणात $\delta$ मध्ये फक्त एकच !!{sentence}~$!A$, म्हणजे एक गृहीतक,
+असते. ते गृहीतक !!{undischarged} असते, कारण गृहीतके फक्त अनुमानांद्वारे
+!!{discharged} होऊ शकतात आणि येथे कोणतेही अनुमान नाही. म्हणून सिद्धतेतील
+सर्व !!{undischarged} गृहीतके पूर्ण करणारी कोणतीही
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+$!A$ हेदेखील पूर्ण करते.
+
+आता विगमन पायरी पाहू. $\delta$ मध्ये $n$ अनुमाने आहेत असे समजा. सर्वांत
+खालच्या अनुमानाची आधारविधाने अशा उप-!!{derivation}s वापरून !!{derive} केली
+आहेत की प्रत्येकामध्ये $n$ पेक्षा कमी अनुमाने आहेत. विगमन गृहीतक असे धरू:
+सर्वांत खालच्या अनुमानाची आधारविधाने, त्या आधारविधानांवर संपणाऱ्या
+उप-!!{derivation}s च्या !!{undischarged} गृहीतकांपासून निष्पन्न होतात. संपूर्ण
+सिद्धतेच्या !!{undischarged} गृहीतकांपासून निष्कर्ष~$!A$ निष्पन्न होतो, हे
+आपल्याला दाखवायचे आहे.
+
+सर्वांत खालच्या अनुमानाच्या प्रकारानुसार प्रकरणे वेगळी करू. प्रथम एकच
+आधारविधान असलेली संभाव्य अनुमाने पाहू.
+
+\begin{enumerate}
+\item शेवटचे अनुमान \Intro{\lnot} आहे असे समजा: !!{derivation} चे रूप
+  पुढीलप्रमाणे आहे:
+  \begin{prooftree}
+    \AxiomC{$\Gamma, \Discharge{!A}{n}$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\lfalse$}
+    \DischargeRule{\Intro{\lnot}}{n}
+    \UnaryInfC{$\lnot !A$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $\lfalse$ हे $\delta_1$ च्या !!{undischarged}
+  गृहीतकांपासून~$\Gamma \cup \{!A\}$ निष्पन्न होते. एखादी
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  विचारात घ्या. जर $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$, तर
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\lnot !A}$, हे दाखवायचे आहे.
+  विसंगतीद्वारे सिद्धतेसाठी असे समजा की
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$, पण
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{\lnot !A}$, म्हणजे
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. याचा अर्थ
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma \cup \{!A\}}$ असा होईल. हे आपल्या
+  विगमन गृहीतकाच्या विरुद्ध आहे. म्हणून
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\lnot !A}$.
+
+\item शेवटचे अनुमान \Elim{\land} आहे. याचे दोन प्रकार आहेत: $!A \land
+  !B$ या आधारविधानापासून $!A$ किंवा $!B$ निष्पन्न केले जाऊ शकते. पहिले
+  प्रकरण पाहू. !!{derivation}~$\delta$ पुढीलप्रमाणे दिसते:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A \land !B$}
+    \RightLabel{\Elim{\land}}
+    \UnaryInfC{$!A$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $!A \land !B$ हे $\delta_1$ च्या
+  !!{undischarged} गृहीतकांपासून~$\Gamma$ निष्पन्न होते. एखादी
+  !!a{structure}~\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} विचारात घ्या.
+  जर $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$, तर
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$, हे दाखवायचे आहे.
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ असे समजा. आपल्या विगमन
+  गृहीतकानुसार ($\Gamma \Entails !A \land !B$),
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \land !B}$ हे आपल्याला माहीत आहे.
+  व्याख्येनुसार, $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \land !B}$ तेव्हा आणि
+  केवळ तेव्हाच, जेव्हा $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ आणि
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$. ($!A \land !B$ पासून $!B$
+  निष्पन्न करण्याचे प्रकरणही असेच हाताळता येते.)
+
+\item शेवटचे अनुमान \Intro{\lor} आहे. याचे दोन प्रकार आहेत: $!A$ या
+  आधारविधानापासून किंवा $!B$ या आधारविधानापासून $!A \lor !B$ निष्पन्न
+  केले जाऊ शकते. पहिले प्रकरण पाहू. !!{derivation} चे रूप पुढीलप्रमाणे आहे:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A$}
+    \RightLabel{\Intro{\lor}}
+    \UnaryInfC{$!A \lor !B$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $!A$ हे $\delta_1$ च्या !!{undischarged}
+  गृहीतकांपासून~$\Gamma$ निष्पन्न होते. एखादी
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  विचारात घ्या. जर $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$, तर
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lor !B}$, हे दाखवायचे आहे.
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ असे समजा; मग
+  $\Gamma \Entails !A$ (विगमन गृहीतक) असल्यामुळे
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. म्हणून
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lor !B}$ हेदेखील असलेच पाहिजे.
+  ($!B$ पासून $!A \lor !B$ निष्पन्न करण्याचे प्रकरणही असेच हाताळता येते.)
+
+\item शेवटचे अनुमान \Intro{\lif} आहे. $!A$ हे गृहीतक आणि $!B$ हा निष्कर्ष
+  असलेल्या उपसिद्धतेपासून $!A \lif !B$ निष्पन्न केले जाते, म्हणजे:
+  \begin{prooftree}
+    \AxiomC{$\Gamma, \Discharge{!A}{n}$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!B$}
+    \DischargeRule{\Intro{\lif}}{n}
+    \UnaryInfC{$!A \lif !B$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $!B$ हे $\delta_1$ च्या !!{undischarged}
+  गृहीतकांपासून निष्पन्न होते, म्हणजे $\Gamma \cup \{!A\} \Entails !B$.
+  एखादी
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  विचारात घ्या. शेवटच्या अनुमानात $!A$ चे विसर्जन झाल्यामुळे $\delta$
+  ची !!{undischarged} गृहीतके फक्त $\Gamma$ आहेत. म्हणून
+  $\Gamma \Entails !A \lif !B$ हे दाखवायचे आहे. विसंगतीद्वारे सिद्धतेसाठी
+  असे समजा की एखाद्या
+  \iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+  साठी $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$, पण
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$. मग
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ आणि
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$. पण गृहीतकानुसार $!B$ हा
+  $\Gamma \cup \{!A\}$ चा तार्किक परिणाम आहे, म्हणजे
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$; ही विसंगती आहे. म्हणून
+  $\Gamma \Entails !A \lif !B$.
+
+\item शेवटचे अनुमान \FalseInt आहे. येथे $\delta$ पुढीलप्रमाणे संपते:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\lfalse$}
+    \RightLabel{\FalseInt}
+    \UnaryInfC{$!A$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $\Gamma \Entails \lfalse$. आपल्याला
+  $\Gamma \Entails !A$ हे दाखवायचे आहे. तसे नसल्याचे समजा; मग एखाद्या
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ साठी
+    $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ आणि
+    $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$. पण नेहमीच
+    $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{\lfalse}$ असल्यामुळे याचा अर्थ
+    $\Gamma \Entails/ \lfalse$ असा होईल, जो विगमन गृहीतकाच्या विरुद्ध आहे.
+
+\item शेवटचे अनुमान \FalseCl आहे: सराव.
+
+\iftag{FOL}{
+\item शेवटचे अनुमान \Intro{\lforall} आहे. मग $\delta$ चे रूप पुढीलप्रमाणे आहे:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A(a)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x)]$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार आधारविधान~$!A(a)$ हे !!{undischarged}
+  गृहीतके~$\Gamma$ यांचा तार्किक परिणाम आहे.
+  $\Sat{M}{\Gamma}$ अशी एखादी रचना~$\Struct{M}$ विचारात घ्या. आपल्याला
+  $\Sat{M}{\lforall[x][!A(x)]}$ हे दाखवायचे आहे.
+  $\lforall[x][!A(x)]$ हे !!a{sentence} असल्यामुळे याचा अर्थ प्रत्येक
+  चल-विन्यास~$s$ साठी $\Sat{M}{!A(x)}[s]$ दाखवायचे आहे
+  (\olref[syn][ass]{prop:sat-quant}). $\Gamma$ मध्ये केवळ वाक्ये असल्यामुळे
+  \olref[syn][sat]{defn:satisfaction} नुसार प्रत्येक $!B \in \Gamma$ साठी
+  $\Sat{M}{!B}[s]$. $\Struct{M'}$ ही $\Struct{M}$ सारखीच रचना असू द्या,
+  फक्त $\Assign{a}{M'} = s(x)$. $a$ हे $\Gamma$ मध्ये येत नसल्यामुळे
+  \olref[syn][ext]{cor:extensionality-sent} नुसार
+  $\Sat{M'}{\Gamma}$. $\Gamma \Entails !A(a)$ असल्यामुळे
+  $\Sat{M'}{!A(a)}$. $!A(a)$ हे !!a{sentence} असल्यामुळे
+  \olref[syn][ass]{prop:sentence-sat-true} नुसार
+  $\Sat{M'}{!A(a)}[s]$. \olref[syn][ext]{prop:ext-formulas} नुसार
+  $\Sat{M'}{!A(x)}[s]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\Sat{M'}{!A(a)}$ (लक्षात घ्या की $!A(a)$ म्हणजे
+  $\Subst{!A(x)}{a}{x}$). म्हणून $\Sat{M'}{!A(x)}[s]$. $a$ हे $!A(x)$
+  मध्ये येत नसल्यामुळे \olref[syn][ext]{prop:extensionality} नुसार
+  $\Sat{M}{!A(x)}[s]$. पण $s$ हा स्वेच्छ चल-विन्यास होता, म्हणून
+  $\Sat{M}{\lforall[x][!A(x)]}$.
+
+\item शेवटचे अनुमान \Intro{\lexists} आहे: सराव.
+
+\item शेवटचे अनुमान \Elim{\forall} आहे: सराव.
+}{}
+\end{enumerate}
+
+आता अनेक आधारविधाने असलेली संभाव्य अनुमाने पाहू:
+\Elim{\lor}, \Intro{\land}, \iftag{FOL}{\Elim{\lif} आणि
+  \Elim{\lexists}}{आणि \Elim{\lif}}.
+\begin{enumerate}
+
+\item शेवटचे अनुमान \Intro{\land} आहे. $!A$ आणि $!B$ या आधारविधानांपासून
+  $!A \land !B$ निष्पन्न केले जाते आणि $\delta$ चे रूप पुढीलप्रमाणे आहे:
+  \begin{prooftree}
+    \AxiomC{$\Gamma_1$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A$}
+    \AxiomC{$\Gamma_2$}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!B$}
+    \RightLabel{\Intro{\land}}
+    \BinaryInfC{$!A \land !B$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $!A$ हे $\delta_1$ च्या !!{undischarged}
+  गृहीतकांपासून~$\Gamma_1$ निष्पन्न होते आणि $!B$ हे $\delta_2$ च्या
+  !!{undischarged} गृहीतकांपासून~$\Gamma_2$ निष्पन्न होते. $\delta$ ची
+  !!{undischarged} गृहीतके $\Gamma_1 \cup \Gamma_2$ आहेत; म्हणून
+  $\Gamma_1 \cup \Gamma_2 \Entails !A \land !B$ हे दाखवायचे आहे.
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup \Gamma_2}$ असलेली एखादी
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  विचारात घ्या. $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1}$ आणि
+  $\Gamma_1 \Entails !A$ असल्यामुळे
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ असलेच पाहिजे; तसेच
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_2}$ आणि
+  $\Gamma_2 \Entails !B$ असल्यामुळे
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$. या दोन्हींवरून
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \land !B}$.
+
+\item शेवटचे अनुमान \Elim{\lor} आहे: सराव.
+
+\item शेवटचे अनुमान \Elim{\lif} आहे. $!A \lif !B$ आणि $!A$ या
+  आधारविधानांपासून $!B$ निष्पन्न केले जाते. !!{derivation}~$\delta$
+  पुढीलप्रमाणे दिसते:
+  \begin{prooftree}
+    \AxiomC{$\Gamma_1$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A \lif !B$}
+    \AxiomC{$\Gamma_2$}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!A$}
+    \RightLabel{\Elim{\lif}}
+    \BinaryInfC{$!B$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $!A \lif !B$ हे $\delta_1$ च्या
+  !!{undischarged} गृहीतकांपासून~$\Gamma_1$ निष्पन्न होते आणि $!A$ हे
+  $\delta_2$ च्या !!{undischarged} गृहीतकांपासून~$\Gamma_2$ निष्पन्न होते.
+  एखादी
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  विचारात घ्या. जर $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup
+    \Gamma_2}$, तर $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$, हे दाखवायचे आहे.
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup \Gamma_2}$ असे समजा.
+  $\Gamma_1 \Entails !A \lif !B$ असल्यामुळे
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lif !B}$. तसेच
+  $\Gamma_2 \Entails !A$ असल्यामुळे
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. याचा अर्थ
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ असा होतो (कारण
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$ असेल, तर
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ असल्यामुळे
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$ असे होईल, जे
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lif !B}$ च्या विरुद्ध आहे).
+
+\item शेवटचे अनुमान \Elim{\lnot} आहे: सराव.
+
+\tagitem{FOL}{शेवटचे अनुमान \Elim{\lexists} आहे: सराव.}{}
+\end{enumerate}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][ntd][sou]{thm:soundness} ची सिद्धता पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][ntd][sou]{thm:soundness} ची सिद्धता पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+जर $\Proves !A$, तर $!A$ हे \iftag{FOL}{वैध}{सर्वतः सत्य सूत्र} आहे.
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:consistency-soundness}
+जर $\Gamma$ पूर्ततायोग्य असेल, तर तो सुसंगत आहे.
+\end{cor}
+
+\begin{proof}
+प्रतिलोम विधान सिद्ध करू. $\Gamma$ सुसंगत नाही असे समजा. मग
+$\Gamma \Proves \lfalse$, म्हणजे $\Gamma$ मधील !!{undischarged}
+गृहीतकांपासून $\lfalse$ ची !!a{derivation} आहे. \olref{thm:soundness}
+नुसार $\Gamma$ पूर्ण करणारी कोणतीही
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+$\lfalse$ देखील पूर्ण करते. प्रत्येक
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+साठी $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{\lfalse}$ असल्यामुळे कोणतीही
+\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} $\Gamma$ पूर्ण करू शकत नाही,
+म्हणजे $\Gamma$ पूर्ततायोग्य नाही.
+\end{proof}
+
+\end{document}
