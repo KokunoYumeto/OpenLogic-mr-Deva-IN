@@ -1,0 +1,44 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: soundness-identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{sid}
+
+\olsection{\usetoken{S}{identity} सह निर्दोषता}
+
+\begin{prop}
+$\Log{LK}$ मधील आरंभीच्या क्रमवर्ती आणि एकरूपतेच्या नियमांसहची पद्धत निर्दोष आहे.
+\end{prop}
+
+\begin{proof}
+${} \Sequent \eq[t][t]$ या रूपातील आरंभीच्या क्रमवर्ती वैध आहेत, कारण
+प्रत्येक !!{structure}~$\Struct M$ साठी $\Sat{M}{\eq[t][t]}$ असते. (लक्षात घ्या की
+$t$ हे बंद पद आहे असे आपण गृहीत धरतो, म्हणजे त्यात कोणतेही चल नाही;
+म्हणून चल-विन्यास अप्रासंगिक असतात.)
+
+!!a{derivation} मधील शेवटचे अनुमान $=$ आहे असे गृहीत धरा. मग आधारविधान
+$\eq[t_1][t_2], \Gamma \Sequent \Delta, !A(t_1)$ आणि निष्कर्ष
+$\eq[t_1][t_2], \Gamma \Sequent \Delta, !A(t_2)$ असतो. !!a{structure}~$\Struct M$
+घ्या. निष्कर्ष वैध आहे हे दाखवायचे आहे; म्हणजे $\Sat{M}{\eq[t_1][t_2]}$ आणि
+$\Sat{M}{\Gamma}$ असल्यास, एकतर $\Sat{M}{!C}$ हे एखाद्या $!C \in \Delta$ साठी
+असते किंवा $\Sat{M}{!A(t_2)}$ असते.
+
+विगमन गृहीतकानुसार आधारविधान वैध आहे. म्हणजे $\Sat{M}{\eq[t_1][t_2]}$ आणि
+$\Sat{M}{\Gamma}$ असल्यास, एकतर (a) एखाद्या $!C \in \Delta$ साठी
+$\Sat{M}{!C}$ किंवा (b) $\Sat{M}{!A(t_1)}$. (a) प्रकरणात काम झाले.
+(b) प्रकरणाचा विचार करू. $s$ हा चल-विन्यास घ्या, ज्यासाठी
+$s(x) = \Value{t_1}{M}$. \olref[syn][ass]{prop:sentence-sat-true} नुसार,
+$\Sat{M}{!A(t_1)}[s]$. $\varAssign{s}{s}{x}$ असल्याने,
+\olref[syn][ext]{prop:ext-formulas} नुसार $\Sat{M}{!A(x)}[s]$. कारण
+$\Sat{M}{\eq[t_1][t_2]}$, आपल्याला $\Value{t_1}{M} = \Value{t_2}{M}$,
+आणि म्हणून $s(x) = \Value{t_2}{M}$ मिळते. \olref[syn][ext]{prop:ext-formulas}
+पुन्हा लागू केल्याने $\Sat{M}{!A(t_2)}[s]$ देखील मिळते.
+\olref[syn][ass]{prop:sentence-sat-true} नुसार,
+$\Sat{M}{!A(t_2)}$.
+\end{proof}
+
+\end{document}

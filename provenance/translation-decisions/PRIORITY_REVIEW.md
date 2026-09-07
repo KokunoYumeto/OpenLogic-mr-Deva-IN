@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 26 urgent/high decisions and
-767 current occurrences. Normal and low items remain in the full index.
+787 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -865,6 +865,11 @@ This view contains 26 urgent/high decisions and
 | `T155-OLP-0082-B010` | `OLP-0082` |  | 34-45 | 34-45 | pending |
 | `T155-OLP-0082-B011` | `OLP-0082` |  | 47-65 | 47-65 | pending |
 | `T155-OLP-0082-B012` | `OLP-0082` |  | 67-75 | 67-75 | pending |
+| `T155-OLP-0083-B005` | `OLP-0083` |  | 11-11 | 11-11 | pending |
+| `T155-OLP-0083-B006` | `OLP-0083` |  | 13-15 | 13-15 | pending |
+| `T155-OLP-0083-B007` | `OLP-0083` |  | 17-21 | 17-21 | pending |
+| `T155-OLP-0083-B008` | `OLP-0083` |  | 23-28 | 23-28 | pending |
+| `T155-OLP-0083-B009` | `OLP-0083` |  | 30-42 | 30-42 | pending |
 
 ## T174 — closed term → बंद पद
 
@@ -905,6 +910,11 @@ This view contains 26 urgent/high decisions and
 | `T174-OLP-0082-B010` | `OLP-0082` |  | 34-45 | 34-45 | pending |
 | `T174-OLP-0082-B011` | `OLP-0082` |  | 47-65 | 47-65 | pending |
 | `T174-OLP-0082-B012` | `OLP-0082` |  | 67-75 | 67-75 | pending |
+| `T174-OLP-0083-B005` | `OLP-0083` |  | 11-11 | 11-11 | pending |
+| `T174-OLP-0083-B006` | `OLP-0083` |  | 13-15 | 13-15 | pending |
+| `T174-OLP-0083-B007` | `OLP-0083` |  | 17-21 | 17-21 | pending |
+| `T174-OLP-0083-B008` | `OLP-0083` |  | 23-28 | 23-28 | pending |
+| `T174-OLP-0083-B009` | `OLP-0083` |  | 30-42 | 30-42 | pending |
 
 ## T178 — eigenvariable → आयगेन चर
 
@@ -951,6 +961,11 @@ This view contains 26 urgent/high decisions and
 | `T178-OLP-0082-B010` | `OLP-0082` |  | 34-45 | 34-45 | pending |
 | `T178-OLP-0082-B011` | `OLP-0082` |  | 47-65 | 47-65 | pending |
 | `T178-OLP-0082-B012` | `OLP-0082` |  | 67-75 | 67-75 | pending |
+| `T178-OLP-0083-B005` | `OLP-0083` |  | 11-11 | 11-11 | pending |
+| `T178-OLP-0083-B006` | `OLP-0083` |  | 13-15 | 13-15 | pending |
+| `T178-OLP-0083-B007` | `OLP-0083` |  | 17-21 | 17-21 | pending |
+| `T178-OLP-0083-B008` | `OLP-0083` |  | 23-28 | 23-28 | pending |
+| `T178-OLP-0083-B009` | `OLP-0083` |  | 30-42 | 30-42 | pending |
 
 ## T179 — eigenvariable condition → आयगेन चराची अट
 
@@ -995,6 +1010,11 @@ This view contains 26 urgent/high decisions and
 | `T179-OLP-0082-B010` | `OLP-0082` |  | 34-45 | 34-45 | pending |
 | `T179-OLP-0082-B011` | `OLP-0082` |  | 47-65 | 47-65 | pending |
 | `T179-OLP-0082-B012` | `OLP-0082` |  | 67-75 | 67-75 | pending |
+| `T179-OLP-0083-B005` | `OLP-0083` |  | 11-11 | 11-11 | pending |
+| `T179-OLP-0083-B006` | `OLP-0083` |  | 13-15 | 13-15 | pending |
+| `T179-OLP-0083-B007` | `OLP-0083` |  | 17-21 | 17-21 | pending |
+| `T179-OLP-0083-B008` | `OLP-0083` |  | 23-28 | 23-28 | pending |
+| `T179-OLP-0083-B009` | `OLP-0083` |  | 30-42 | 30-42 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 
