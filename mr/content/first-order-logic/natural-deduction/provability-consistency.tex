@@ -1,0 +1,131 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{prv}}
+      {\olfileid{pl}{ntd}{prv}}
+
+\olsection{\usetoken{S}{derivability} आणि सुसंगतता}
+
+आता आपण !!{derivability} संबंधाचे अनेक गुणधर्म सिद्ध करू. ते स्वतंत्रपणेही
+महत्त्वाचे आहेत, पण संपूर्णता प्रमेयाच्या सिद्धतेत प्रत्येकाची भूमिका असेल.
+
+\begin{prop}\ollabel{prop:provability-contr}
+  जर $\Gamma \Proves !A$ आणि $\Gamma \cup \{!A\}$ विसंगत असेल, तर
+  $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ पासून $!A$ ची !!{derivation}~$\delta_1$ आणि $\Gamma \cup \{!A\}$
+पासून $\lfalse$ ची !!{derivation}~$\delta_2$ असू द्या. मग आपण पुढीलप्रमाणे
+!!{derive} करू शकतो:
+\begin{prooftree}
+\AxiomC{$\Gamma, \Discharge{!A}{1}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot !A$}
+\AxiomC{$\Gamma$}
+\RightLabel{$\delta_1$}
+\DeduceC{$!A$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\end{prooftree}
+नव्या !!{derivation} मध्ये गृहीतक~$!A$ हे !!{discharged} आहे; म्हणून ही
+$\Gamma$ पासूनची !!a{derivation} आहे.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{\lnot !A\}$
+विसंगत असते.
+\end{prop}
+
+\begin{proof}
+प्रथम $\Gamma \Proves !A$ असे समजा; म्हणजे $\Gamma$ मधील
+!!{undischarged} गृहीतकांपासून $!A$ ची !!a{derivation}~$\delta_0$ असते.
+पुढीलप्रमाणे $\Gamma \cup \{\lnot !A\}$ पासून $\lfalse$ ची
+!!a{derivation} मिळते:
+\begin{prooftree}
+  \AxiomC{$\lnot !A$}
+  \AxiomC{$\Gamma$}
+  \RightLabel{$\delta_0$}
+  \DeduceC{$!A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+\end{prooftree}
+
+आता $\Gamma \cup \{\lnot !A\}$ विसंगत आहे असे समजा आणि $\Gamma \cup
+\{\lnot !A\}$ मधील !!{undischarged} गृहीतकांपासून $\lfalse$ ची संबंधित
+!!{derivation}~$\delta_1$ असू द्या. $\FalseCl$ वापरून पुढीलप्रमाणे केवळ
+$\Gamma$ पासून $!A$ ची !!a{derivation} मिळते:
+\begin{prooftree}
+  \AxiomC{$\Gamma, \Discharge{\lnot !A}{1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$\lfalse$}
+  \RightLabel{\FalseCl}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A$}
+\end{prooftree}
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves \lnot !A$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{!A\}$
+विसंगत असते, हे सिद्ध करा.
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  जर $\Gamma \Proves !A$ आणि $\lnot !A \in \Gamma$ असेल, तर $\Gamma$
+  विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+  समजा $\Gamma \Proves !A$ आणि $\lnot !A \in \Gamma$. मग $\Gamma$ पासून
+  $!A$ ची !!a{derivation}~$\delta$ असते. $\Elim{\lnot}$ नियमाचा पुढील सोपा
+  उपयोग विचारात घ्या:
+  \begin{prooftree}
+    \AxiomC{$\lnot !A$}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta$}
+    \DeduceC{$!A$}
+    \RightLabel{\Elim{\lnot}}
+    \BinaryInfC{$\lfalse$}
+  \end{prooftree}
+  $\lnot !A \in \Gamma$ असल्यामुळे सर्व !!{undischarged} गृहीतके
+  $\Gamma$ मध्ये आहेत. म्हणून यावरून $\Gamma \Proves \lfalse$ हे दिसते.
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  $\Gamma \cup \{!A\}$ आणि $\Gamma \cup \{\lnot !A\}$ हे दोन्ही संच
+  विसंगत असतील, तर $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+$\delta_1$ आणि $\delta_2$ या अनुक्रमे $\Gamma \cup \{ !A \}$ पासून
+$\lfalse$ ची आणि $\Gamma \cup \{ \lnot !A \}$ पासून $\lfalse$ ची
+!!{derivation}s असू द्या. मग आपण पुढीलप्रमाणे !!{derive} करू शकतो:
+\begin{prooftree}
+\AxiomC{$\Gamma, \Discharge{\lnot !A}{2}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{2}
+\UnaryInfC{$\lnot \lnot !A$}
+\AxiomC{$\Gamma, \Discharge{!A}{1}$}
+\RightLabel{$\delta_1$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot !A$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\end{prooftree}
+$!A$ आणि $\lnot !A$ ही गृहीतके !!{discharged} असल्यामुळे ही केवळ
+$\Gamma$ पासून $\lfalse$ ची !!a{derivation} आहे. म्हणून $\Gamma$ विसंगत
+आहे.
+\end{proof}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 88/722 source units through OLP-0091; 233 applied decisions; 6,042 occurrences.
+Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occurrences.
 
 ## T001 — set
 
@@ -653,6 +653,8 @@ Coverage: 88/722 source units through OLP-0091; 233 applied decisions; 6,042 occ
 | `T002-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
 | `T002-OLP-0078-B014` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:75-78` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:77-80` | pending |
 | `T002-OLP-0078-B015` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100` | pending |
+| `T002-OLP-0092-B013` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85` | pending |
+| `T002-OLP-0092-B014` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | pending |
 
 ## T003 — empty set
 
@@ -1997,6 +1999,12 @@ Coverage: 88/722 source units through OLP-0091; 233 applied decisions; 6,042 occ
 | `T017-OLP-0078-B013` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:71-73` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:72-75` | pending |
 | `T017-OLP-0078-B016` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:100-103` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:102-105` | pending |
 | `T017-OLP-0078-B017` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126` | pending |
+| `T017-OLP-0092-B007` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:19-22` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:18-21` | pending |
+| `T017-OLP-0092-B009` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:44-47` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:43-47` | pending |
+| `T017-OLP-0092-B010` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:49-61` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:49-61` | pending |
+| `T017-OLP-0092-B011` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | pending |
+| `T017-OLP-0092-B012` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:77-80` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:77-80` | pending |
+| `T017-OLP-0092-B015` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106` | pending |
 
 ## T018 — intersection
 
@@ -4043,6 +4051,11 @@ Coverage: 88/722 source units through OLP-0091; 233 applied decisions; 6,042 occ
 | `T044-OLP-0091-B014` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73` | pending |
 | `T044-OLP-0091-B016` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | pending |
 | `T044-OLP-0091-B024` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | pending |
+| `T044-OLP-0092-B008` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:24-42` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:23-41` | pending |
+| `T044-OLP-0092-B010` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:49-61` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:49-61` | pending |
+| `T044-OLP-0092-B011` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | pending |
+| `T044-OLP-0092-B014` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | pending |
+| `T044-OLP-0092-B016` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | pending |
 
 ## T045 — function / mapping
 
@@ -7216,6 +7229,7 @@ Coverage: 88/722 source units through OLP-0091; 233 applied decisions; 6,042 occ
 | `T110-OLP-0080-B005` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:12-16` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:12-15` | pending |
 | `T110-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
 | `T110-OLP-0091-B007` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | pending |
+| `T110-OLP-0092-B006` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:15-17` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:15-16` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -8142,6 +8156,15 @@ Coverage: 88/722 source units through OLP-0091; 233 applied decisions; 6,042 occ
 | `T128-OLP-0090-B013` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:183-228` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:175-218` | pending |
 | `T128-OLP-0090-B014` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:230-243` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:220-233` | pending |
 | `T128-OLP-0090-B015` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:245-253` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:235-243` | pending |
+| `T128-OLP-0092-B008` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:24-42` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:23-41` | pending |
+| `T128-OLP-0092-B009` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:44-47` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:43-47` | pending |
+| `T128-OLP-0092-B010` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:49-61` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:49-61` | pending |
+| `T128-OLP-0092-B011` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | pending |
+| `T128-OLP-0092-B012` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:77-80` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:77-80` | pending |
+| `T128-OLP-0092-B013` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85` | pending |
+| `T128-OLP-0092-B014` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | pending |
+| `T128-OLP-0092-B015` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106` | pending |
+| `T128-OLP-0092-B016` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -9264,6 +9287,17 @@ Coverage: 88/722 source units through OLP-0091; 233 applied decisions; 6,042 occ
 | `T156-OLP-0091-B020` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:120-122` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:123-125` | pending |
 | `T156-OLP-0091-B023` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147` | pending |
 | `T156-OLP-0091-B024` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | pending |
+| `T156-OLP-0092-B005` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:13-13` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:13-13` | pending |
+| `T156-OLP-0092-B007` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:19-22` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:18-21` | pending |
+| `T156-OLP-0092-B008` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:24-42` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:23-41` | pending |
+| `T156-OLP-0092-B009` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:44-47` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:43-47` | pending |
+| `T156-OLP-0092-B010` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:49-61` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:49-61` | pending |
+| `T156-OLP-0092-B011` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | pending |
+| `T156-OLP-0092-B012` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:77-80` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:77-80` | pending |
+| `T156-OLP-0092-B013` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85` | pending |
+| `T156-OLP-0092-B014` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | pending |
+| `T156-OLP-0092-B015` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106` | pending |
+| `T156-OLP-0092-B016` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -9430,6 +9464,11 @@ Coverage: 88/722 source units through OLP-0091; 233 applied decisions; 6,042 occ
 | `T159-OLP-0091-B012` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61` | pending |
 | `T159-OLP-0091-B016` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | pending |
 | `T159-OLP-0091-B024` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | pending |
+| `T159-OLP-0092-B008` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:24-42` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:23-41` | pending |
+| `T159-OLP-0092-B010` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:49-61` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:49-61` | pending |
+| `T159-OLP-0092-B011` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | pending |
+| `T159-OLP-0092-B014` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | pending |
+| `T159-OLP-0092-B016` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | pending |
 
 ## T160 — introduction rule / elimination rule
 
@@ -10616,6 +10655,17 @@ Coverage: 88/722 source units through OLP-0091; 233 applied decisions; 6,042 occ
 | `T184-OLP-0091-B022` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:130-134` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:133-137` | pending |
 | `T184-OLP-0091-B023` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147` | pending |
 | `T184-OLP-0091-B024` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | pending |
+| `T184-OLP-0092-B005` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:13-13` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:13-13` | pending |
+| `T184-OLP-0092-B006` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:15-17` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:15-16` | pending |
+| `T184-OLP-0092-B007` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:19-22` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:18-21` | pending |
+| `T184-OLP-0092-B008` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:24-42` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:23-41` | pending |
+| `T184-OLP-0092-B009` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:44-47` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:43-47` | pending |
+| `T184-OLP-0092-B010` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:49-61` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:49-61` | pending |
+| `T184-OLP-0092-B011` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | pending |
+| `T184-OLP-0092-B012` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:77-80` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:77-80` | pending |
+| `T184-OLP-0092-B013` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85` | pending |
+| `T184-OLP-0092-B014` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | pending |
+| `T184-OLP-0092-B016` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | pending |
 
 ## T185 — intuitionistic logic
 
