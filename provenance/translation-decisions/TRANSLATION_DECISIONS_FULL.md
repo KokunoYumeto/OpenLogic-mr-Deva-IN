@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occurrences.
+Coverage: 84/722 source units through OLP-0087; 227 applied decisions; 5,797 occurrences.
 
 ## T001 — set
 
@@ -1509,6 +1509,7 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T009-OLP-0085-B007` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28` | pending |
 | `T009-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T009-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
+| `T009-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
 
 ## T010 — truth / truth value
 
@@ -3984,6 +3985,12 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T044-OLP-0086-B014` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | pending |
 | `T044-OLP-0086-B016` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | pending |
 | `T044-OLP-0086-B017` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | pending |
+| `T044-OLP-0087-B008` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-34` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-33` | pending |
+| `T044-OLP-0087-B011` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:51-55` | pending |
+| `T044-OLP-0087-B012` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-60` | pending |
+| `T044-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
+| `T044-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
+| `T044-OLP-0087-B015` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107` | pending |
 
 ## T045 — function / mapping
 
@@ -6924,6 +6931,8 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T104-OLP-0052-B011` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:46-49` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:49-52` | 68–69 |
 | `T104-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:57-59` | pending |
 | `T104-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
+| `T104-OLP-0087-B008` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-34` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-33` | pending |
+| `T104-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
 
 ## T105 — isomorphic / isomorphism
 
@@ -7105,6 +7114,7 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T109-OLP-0077-B004` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12` | pending |
 | `T109-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
 | `T109-OLP-0077-B008` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:30-34` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:31-35` | pending |
+| `T109-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -7264,6 +7274,13 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T112-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
 | `T112-OLP-0080-B007` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:24-30` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:23-29` | pending |
 | `T112-OLP-0080-B009` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:40-57` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:39-56` | pending |
+| `T112-OLP-0087-B005` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:11-11` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:11-11` | pending |
+| `T112-OLP-0087-B006` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:13-13` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:13-13` | pending |
+| `T112-OLP-0087-B008` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-34` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-33` | pending |
+| `T112-OLP-0087-B009` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:36-36` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:35-35` | pending |
+| `T112-OLP-0087-B011` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:51-55` | pending |
+| `T112-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
+| `T112-OLP-0087-B015` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107` | pending |
 
 ## T113 — classical logic / classical
 
@@ -7758,6 +7775,7 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T123-OLP-0085-B007` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28` | pending |
 | `T123-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T123-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
+| `T123-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -7879,6 +7897,11 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T126-OLP-0086-B014` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | pending |
 | `T126-OLP-0086-B016` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | pending |
 | `T126-OLP-0086-B017` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | pending |
+| `T126-OLP-0087-B008` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-34` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-33` | pending |
+| `T126-OLP-0087-B011` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:51-55` | pending |
+| `T126-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
+| `T126-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
+| `T126-OLP-0087-B015` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107` | pending |
 
 ## T127 — propositional constant
 
@@ -8356,6 +8379,7 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T138-OLP-0059-B021` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:91-98` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:96-105` | 75–77 |
 | `T138-OLP-0059-B022` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:100-112` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:107-120` | 75–77 |
 | `T138-OLP-0059-B023` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:114-117` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:122-125` | 75–77 |
+| `T138-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
 
 ## T139 — occurrence (of a variable or formula)
 
@@ -8384,6 +8408,7 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T139-OLP-0059-B021` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:91-98` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:96-105` | 75–77 |
 | `T139-OLP-0061-B010` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:133-140` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134-142` | 78–81 |
 | `T139-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:66-72` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:66-72` | pending |
+| `T139-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
 
 ## T140 — inductive hypothesis
 
@@ -8785,6 +8810,14 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T151-OLP-0086-B014` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | pending |
 | `T151-OLP-0086-B016` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | pending |
 | `T151-OLP-0086-B017` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | pending |
+| `T151-OLP-0087-B006` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:13-13` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:13-13` | pending |
+| `T151-OLP-0087-B008` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-34` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-33` | pending |
+| `T151-OLP-0087-B009` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:36-36` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:35-35` | pending |
+| `T151-OLP-0087-B011` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:51-55` | pending |
+| `T151-OLP-0087-B012` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-60` | pending |
+| `T151-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
+| `T151-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
+| `T151-OLP-0087-B015` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -8834,6 +8867,10 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T152-OLP-0086-B014` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | pending |
 | `T152-OLP-0086-B016` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | pending |
 | `T152-OLP-0086-B017` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | pending |
+| `T152-OLP-0087-B008` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-34` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-33` | pending |
+| `T152-OLP-0087-B011` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:51-55` | pending |
+| `T152-OLP-0087-B012` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-60` | pending |
+| `T152-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
 
 ## T153 — truth tree / tableaux proof / resolution method and refutation
 
@@ -9004,6 +9041,7 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T155-OLP-0085-B007` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28` | pending |
 | `T155-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T155-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
+| `T155-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -9230,6 +9268,10 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T159-OLP-0086-B014` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | pending |
 | `T159-OLP-0086-B016` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | pending |
 | `T159-OLP-0086-B017` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | pending |
+| `T159-OLP-0087-B008` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-34` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-33` | pending |
+| `T159-OLP-0087-B011` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:51-55` | pending |
+| `T159-OLP-0087-B012` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-60` | pending |
+| `T159-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
 
 ## T160 — introduction rule / elimination rule
 
@@ -9265,6 +9307,10 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T160-OLP-0086-B014` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | pending |
 | `T160-OLP-0086-B016` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | pending |
 | `T160-OLP-0086-B017` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | pending |
+| `T160-OLP-0087-B006` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:13-13` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:13-13` | pending |
+| `T160-OLP-0087-B009` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:36-36` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:35-35` | pending |
+| `T160-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
+| `T160-OLP-0087-B015` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107` | pending |
 
 ## T161 — premise / conclusion / antecedent / consequent / disjunct
 
@@ -9310,6 +9356,10 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T161-OLP-0086-B014` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | pending |
 | `T161-OLP-0086-B016` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | pending |
 | `T161-OLP-0086-B017` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | pending |
+| `T161-OLP-0087-B008` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-34` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-33` | pending |
+| `T161-OLP-0087-B011` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:51-55` | pending |
+| `T161-OLP-0087-B012` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-60` | pending |
+| `T161-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
 
 ## T162 — proof-theoretic semantics
 
@@ -9776,6 +9826,11 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T174-OLP-0085-B007` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28` | pending |
 | `T174-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T174-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
+| `T174-OLP-0087-B008` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-34` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-33` | pending |
+| `T174-OLP-0087-B011` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:51-55` | pending |
+| `T174-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
+| `T174-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
+| `T174-OLP-0087-B015` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107` | pending |
 
 ## T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)
 
@@ -9928,6 +9983,8 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T177-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:70-72` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:70-72` | pending |
+| `T177-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
+| `T177-OLP-0087-B015` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107` | pending |
 
 ## T178 — eigenvariable
 
@@ -10004,6 +10061,11 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T178-OLP-0085-B007` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28` | pending |
 | `T178-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T178-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
+| `T178-OLP-0087-B008` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-34` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-33` | pending |
+| `T178-OLP-0087-B011` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:51-55` | pending |
+| `T178-OLP-0087-B012` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-60` | pending |
+| `T178-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
+| `T178-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
 
 ## T179 — eigenvariable condition
 
@@ -10077,6 +10139,10 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T179-OLP-0085-B007` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28` | pending |
 | `T179-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T179-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
+| `T179-OLP-0087-B008` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-34` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-33` | pending |
+| `T179-OLP-0087-B012` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-60` | pending |
+| `T179-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
+| `T179-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
 
 ## T180 — Rules for [logical symbol] (heading construction)
 
@@ -10116,6 +10182,8 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | `T180-OLP-0086-B014` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | pending |
 | `T180-OLP-0086-B016` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | pending |
 | `T180-OLP-0086-B017` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | pending |
+| `T180-OLP-0087-B006` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:13-13` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:13-13` | pending |
+| `T180-OLP-0087-B009` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:36-36` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:35-35` | pending |
 
 ## T181 — compactness (proof-theoretic property)
 
@@ -11387,6 +11455,31 @@ Coverage: 83/722 source units through OLP-0086; 226 applied decisions; 5,728 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLSEQ-003-OLP-0072` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-28` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-27` | pending |
+
+## OLND-001 — confirmed-source-clarification of a standing restriction
+
+**Chosen rendering/action:** Clarified the Marathi sentence as ‘पद t बंद असण्याव्यतिरिक्त त्यावर आणखी कोणतेही निर्बंध नाहीत,’ retaining the standing closed-term requirement and every formula and rule unchanged.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The final explanatory paragraph says that t has no restrictions and can be anything in existential introduction and universal elimination, although both earlier rule explanations require t to be closed and the closing consequence again says that quantifier elimination substitutes only closed terms. The intended contrast is absence of any additional restriction beyond closedness.
+
+**Rationale:** The final explanatory paragraph says that t has no restrictions and can be anything in existential introduction and universal elimination, although both earlier rule explanations require t to be closed and the closing consequence again says that quantifier elimination substitutes only closed terms. The intended contrast is absence of any additional restriction beyond closedness. Chosen action: Clarified the Marathi sentence as ‘पद t बंद असण्याव्यतिरिक्त त्यावर आणखी कोणतेही निर्बंध नाहीत,’ retaining the standing closed-term requirement and every formula and rule unchanged.
+
+**Authorities actually checked:**
+
+- `OLND-001-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLND-001. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the locally contradictory claim that t can be anything — `rejected`: Not chosen; the source finding and recorded action control.
+- Repeat the full parenthetical definition of a closed term in the final explanation — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the clarification state exactly that t may be any closed term, without adding a stronger restriction or licensing an open term?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLND-001-OLP-0087` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-28` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-87` | pending |
 
 ## Deferred prospective decisions
 
