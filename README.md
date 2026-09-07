@@ -19,15 +19,16 @@ form. The 89-page PDF was built twice to identical bytes and every page was
 inspected. Its offline HTML companion passed exact source-conversion, structure,
 asset, proof-display and desktop/mobile browser checks.
 
-Editable source after that release has progressed through OLP-0081: **78/722
-units** and 865 aligned content blocks. OLP-0069 is the Sequent Calculus chapter
+Editable source after that release has progressed through OLP-0082: **79/722
+units** and 871 aligned content blocks. OLP-0069 is the Sequent Calculus chapter
 driver; OLP-0070 defines its sequents, initial sequents, derivation trees and rule
 classes; OLP-0071 and OLP-0072 give the propositional and quantifier rules;
 OLP-0073–OLP-0076 cover structural rules, derivations and worked proofs,
 OLP-0077 defines proof-theoretic notions, OLP-0078 develops provability and
 consistency consequences, OLP-0079 records propositional provability facts,
-OLP-0080 records quantifier provability facts, and OLP-0081 records sequent
-soundness and its corollaries. These thirteen units are not yet part
+OLP-0080 records quantifier provability facts, OLP-0081 records sequent
+soundness and its corollaries, and OLP-0082 records identity rules and
+equality substitution. These fourteen units are not yet part
 of the v0.6 reader or release archive.
 
 - **Current release:** [आठ प्रकरणे — PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eight-chapters-v0.6).
@@ -83,8 +84,8 @@ The evidence also preserves the formal retraction of a
 shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The frozen
 65-unit source-checkpoint evidence explicitly distinguishes preserved original
 pages from hash-pinned short web observations whose origin HTML bytes were
-unavailable. The synchronized root provenance now covers the 78 translated units
-through OLP-0081. A bounded independent model audit of OLP-0071–OLP-0072 found no
+unavailable. The synchronized root provenance now covers the 79 translated units
+through OLP-0082. A bounded independent model audit of OLP-0071–OLP-0072 found no
 material mistranslation, prompted one standing-assumption clarification, and led
 to narrower overlapping choice locators plus separate confidence records for
 closed term, bound variable and eigenvariable vocabulary. This audit is not
@@ -94,7 +95,9 @@ was not directly attested; OLP-0078 records the corresponding finite-cut and
 negation characterizations of provability and inconsistency, OLP-0079 records
 the conjunction, disjunction and conditional derivations that follow, OLP-0080
 records the strong-generalization and quantifier derivations, and OLP-0081 records
-the semantic soundness induction and weak, entailment and consistency corollaries.
+the semantic soundness induction and weak, entailment and consistency corollaries,
+and OLP-0082 records identity initial sequents, equality substitution, symmetry
+and transitivity.
 These later working records remain
 outside the v0.6 reader and release archive.
 

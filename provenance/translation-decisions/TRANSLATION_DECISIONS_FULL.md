@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occurrences.
+Coverage: 79/722 source units through OLP-0082; 226 applied decisions; 5,453 occurrences.
 
 ## T001 — set
 
@@ -1118,6 +1118,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T005-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T005-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T005-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T005-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T005-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T005-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T005-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T005-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T005-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T006 — proper subset
 
@@ -1471,6 +1477,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T009-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T009-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T009-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T009-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T009-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T009-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T009-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T009-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T009-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T010 — truth / truth value
 
@@ -1548,6 +1560,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T010-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T010-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T010-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T010-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T010-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T010-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T010-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T010-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T010-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T011 — syntax
 
@@ -7132,6 +7150,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T111-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T111-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T111-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T111-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T111-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T111-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T111-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T111-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T111-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T112 — predicate / term / quantifier
 
@@ -7542,6 +7566,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T121-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T121-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T121-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T121-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T121-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T121-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T121-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T121-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T121-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T122 — tautology
 
@@ -7628,6 +7658,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T123-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T123-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T123-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T123-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T123-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T123-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T123-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T123-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T123-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -8753,6 +8789,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T154-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T154-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T154-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T154-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T154-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T154-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T154-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T154-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T154-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T155 — soundness / sound / unsound (of a proof system)
 
@@ -8804,6 +8846,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T155-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T155-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T155-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T155-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T155-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T155-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T155-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T155-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T155-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -8876,6 +8924,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T156-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T156-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T156-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T156-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T156-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T156-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T156-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T156-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T156-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -9446,6 +9500,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T173-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T173-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T173-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T173-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T173-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T173-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T173-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T173-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T173-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T174 — closed term
 
@@ -9495,6 +9555,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T174-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T174-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T174-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T174-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T174-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T174-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T174-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T174-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T174-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)
 
@@ -9569,6 +9635,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T175-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T175-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T175-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T175-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T175-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T175-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T175-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T175-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T175-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T176 — end-sequent
 
@@ -9685,6 +9757,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T178-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T178-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T178-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T178-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T178-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T178-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T178-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T178-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T178-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T179 — eigenvariable condition
 
@@ -9739,6 +9817,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T179-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T179-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T179-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T179-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T179-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T179-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T179-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T179-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T179-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## T180 — Rules for [logical symbol] (heading construction)
 
@@ -9942,6 +10026,12 @@ Coverage: 78/722 source units through OLP-0081; 226 applied decisions; 5,363 occ
 | `T184-OLP-0081-B022` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:356-364` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:350-358` | pending |
 | `T184-OLP-0081-B023` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:366-369` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:360-363` | pending |
 | `T184-OLP-0081-B024` | `OLP-0081` |  | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:371-382` | `mr/content/first-order-logic/sequent-calculus/soundness.tex:365-376` | pending |
+| `T184-OLP-0082-B005` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | pending |
+| `T184-OLP-0082-B006` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | pending |
+| `T184-OLP-0082-B007` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | pending |
+| `T184-OLP-0082-B010` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | pending |
+| `T184-OLP-0082-B011` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | pending |
+| `T184-OLP-0082-B012` | `OLP-0082` |  | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
