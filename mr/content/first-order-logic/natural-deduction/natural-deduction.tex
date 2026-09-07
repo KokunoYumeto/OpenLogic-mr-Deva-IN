@@ -1,0 +1,54 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{ntd}{नैसर्गिक निगमन}}
+      {\olchapter{pl}{ntd}{नैसर्गिक निगमन}}
+
+\begin{editorial}
+हे प्रकरण Gentzen/Prawitz शैलीतील नैसर्गिक निगमन पद्धत मांडते.
+  
+नैसर्गिक निगमनाशी सिद्धता-पद्धती म्हणून संबंधित सामग्री समाविष्ट किंवा
+वगळण्यासाठी ``prfND''`` टॅग वापरा.
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{propositional-rules}
+
+\iftag{FOL}{%
+  \olimport{quantifier-rules}
+}{}
+
+\olimport{derivations}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{%
+  \olimport{identity}
+  \olimport{soundness-identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}
