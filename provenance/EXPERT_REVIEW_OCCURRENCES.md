@@ -2,14 +2,14 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **87/722 source units**, 932 aligned translated blocks, 5978 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
+Current scope: **88/722 source units**, 952 aligned translated blocks, 6042 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
 [Decision ledger](EXPERT_REVIEW_LOG.md) · [Priority view](EXPERT_REVIEW_PRIORITY.md) · [CSV](EXPERT_REVIEW_OCCURRENCES.csv) · [Machine JSONL](EXPERT_REVIEW_OCCURRENCES.jsonl)
 
 <details>
-<summary><strong>T001 — set</strong> (356 occurrences; routine priority)</summary>
+<summary><strong>T001 — set</strong> (357 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -369,6 +369,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T001-OLP-0068-B006 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | 86–87 |
 | T001-OLP-0068-B008 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | 86–87 |
 | T001-OLP-0068-B009 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L66) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L67) | 86–87 |
+| T001-OLP-0091-B017 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-103](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L103) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-106](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L103) | not yet paginated |
 
 **Chosen rendering/action:** संच
 
@@ -868,7 +869,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T005 — subset</strong> (212 occurrences; routine priority)</summary>
+<summary><strong>T005 — subset</strong> (214 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1084,6 +1085,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T005-OLP-0085-B007 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L26) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L25) | not yet paginated |
 | T005-OLP-0085-B008 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L31) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L30) | not yet paginated |
 | T005-OLP-0085-B010 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L47) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L44) | not yet paginated |
+| T005-OLP-0091-B023 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L136) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L139) | not yet paginated |
+| T005-OLP-0091-B024 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L146) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L149) | not yet paginated |
 
 **Chosen rendering/action:** उपसंच
 
@@ -1365,7 +1368,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T009 — formal validity</strong> (46 occurrences; routine priority)</summary>
+<summary><strong>T009 — formal validity</strong> (47 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1415,6 +1418,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T009-OLP-0085-B008 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L31) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L30) | not yet paginated |
 | T009-OLP-0085-B010 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L47) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L44) | not yet paginated |
 | T009-OLP-0087-B014 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L85) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L84) | not yet paginated |
+| T009-OLP-0091-B007 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | not yet paginated |
 
 **Chosen rendering/action:** वैधता
 
@@ -2619,7 +2623,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T032 — reflexive / irreflexive</strong> (82 occurrences; medium priority)</summary>
+<summary><strong>T032 — reflexive / irreflexive</strong> (83 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2705,6 +2709,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T032-OLP-0042-B008 | OLP-0042 · 5.1 N पासून Z कडे | [upstream/content/sets-functions-relations/arithmetization/integers.tex:32-32](../upstream/content/sets-functions-relations/arithmetization/integers.tex#L32) | [mr/content/sets-functions-relations/arithmetization/integers.tex:32-32](../mr/content/sets-functions-relations/arithmetization/integers.tex#L32) | 52–54 |
 | T032-OLP-0047-B015 | OLP-0047 · 5.6 क्रमित वलये आणि क्षेत्रे | [upstream/content/sets-functions-relations/arithmetization/checking-details.tex:101-109](../upstream/content/sets-functions-relations/arithmetization/checking-details.tex#L101) | [mr/content/sets-functions-relations/arithmetization/checking-details.tex:101-108](../mr/content/sets-functions-relations/arithmetization/checking-details.tex#L101) | 59–62 |
 | T032-OLP-0077-B012 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:78-81](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L78) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:80-83](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L80) | not yet paginated |
+| T032-OLP-0091-B011 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L53) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L53) | not yet paginated |
 
 **Chosen rendering/action:** परावर्ती / अपरावर्ती
 
@@ -3369,7 +3374,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T044 — computability / formula / derivation</strong> (190 occurrences; high priority)</summary>
+<summary><strong>T044 — computability / formula / derivation</strong> (196 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3563,6 +3568,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T044-OLP-0090-B013 | OLP-0090 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:183-228](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L183) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:175-218](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L175) | not yet paginated |
 | T044-OLP-0090-B014 | OLP-0090 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:230-243](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L230) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:220-233](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L220) | not yet paginated |
 | T044-OLP-0090-B015 | OLP-0090 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:245-253](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L245) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:235-243](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L235) | not yet paginated |
+| T044-OLP-0091-B008 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | not yet paginated |
+| T044-OLP-0091-B009 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:39-45](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L39) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:39-45](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L39) | not yet paginated |
+| T044-OLP-0091-B012 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L58) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L58) | not yet paginated |
+| T044-OLP-0091-B014 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L70) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L70) | not yet paginated |
+| T044-OLP-0091-B016 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L81) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L81) | not yet paginated |
+| T044-OLP-0091-B024 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L146) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L149) | not yet paginated |
 
 **Chosen rendering/action:** संगणनीयता / सूत्र / निष्पत्ती
 
@@ -5970,7 +5981,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T109 — proof system / proof</strong> (34 occurrences; medium priority)</summary>
+<summary><strong>T109 — proof system / proof</strong> (37 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6008,6 +6019,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T109-OLP-0089-B009 | OLP-0089 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things.tex:39-51](../upstream/content/first-order-logic/natural-deduction/proving-things.tex#L39) | [mr/content/first-order-logic/natural-deduction/proving-things.tex:37-48](../mr/content/first-order-logic/natural-deduction/proving-things.tex#L37) | not yet paginated |
 | T109-OLP-0089-B015 | OLP-0089 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265](../upstream/content/first-order-logic/natural-deduction/proving-things.tex#L178) | [mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258](../mr/content/first-order-logic/natural-deduction/proving-things.tex#L171) | not yet paginated |
 | T109-OLP-0090-B006 | OLP-0090 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:13-18](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L13) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:13-17](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L13) | not yet paginated |
+| T109-OLP-0091-B006 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
+| T109-OLP-0091-B007 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | not yet paginated |
+| T109-OLP-0091-B008 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धता-पद्धती / सिद्धता
 
@@ -6018,7 +6032,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (10 occurrences; medium priority)</summary>
+<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (11 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6032,6 +6046,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T110-OLP-0079-B007 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | not yet paginated |
 | T110-OLP-0080-B005 | OLP-0080 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:12-16](../upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex#L12) | [mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:12-15](../mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex#L12) | not yet paginated |
 | T110-OLP-0080-B006 | OLP-0080 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22](../upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex#L18) | [mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21](../mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex#L17) | not yet paginated |
+| T110-OLP-0091-B007 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | not yet paginated |
 
 **Chosen rendering/action:** संपूर्णता / संपूर्णता प्रमेय / सत्यता-फलनात्मक संपूर्णता
 
@@ -6369,7 +6384,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T121 — satisfaction / satisfaction relation</strong> (55 occurrences; routine priority)</summary>
+<summary><strong>T121 — satisfaction / satisfaction relation</strong> (56 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6428,6 +6443,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T121-OLP-0085-B007 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L26) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L25) | not yet paginated |
 | T121-OLP-0085-B008 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L31) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L30) | not yet paginated |
 | T121-OLP-0085-B010 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L47) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L44) | not yet paginated |
+| T121-OLP-0091-B007 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | not yet paginated |
 
 **Chosen rendering/action:** पूर्ति / पूर्ति-संबंध
 
@@ -6456,7 +6472,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T123 — entailment / entails</strong> (49 occurrences; medium priority)</summary>
+<summary><strong>T123 — entailment / entails</strong> (50 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6509,6 +6525,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T123-OLP-0085-B008 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L31) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L30) | not yet paginated |
 | T123-OLP-0085-B010 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L47) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L44) | not yet paginated |
 | T123-OLP-0087-B014 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L85) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L84) | not yet paginated |
+| T123-OLP-0091-B007 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | not yet paginated |
 
 **Chosen rendering/action:** तार्किक निष्पन्नता / तार्किकरीत्या निष्पन्न होणे
 
@@ -6519,7 +6536,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T124 — satisfiable / satisfiability</strong> (8 occurrences; medium priority)</summary>
+<summary><strong>T124 — satisfiable / satisfiability</strong> (9 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6531,6 +6548,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T124-OLP-0064-B011 | OLP-0064 · 8.1 प्रस्तावना | [upstream/content/first-order-logic/proof-systems/introduction.tex:82-99](../upstream/content/first-order-logic/proof-systems/introduction.tex#L82) | [mr/content/first-order-logic/proof-systems/introduction.tex:85-101](../mr/content/first-order-logic/proof-systems/introduction.tex#L85) | 82–83 |
 | T124-OLP-0067-B010 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L72) | [mr/content/first-order-logic/proof-systems/tableaux.tex:69-82](../mr/content/first-order-logic/proof-systems/tableaux.tex#L69) | 85–86 |
 | T124-OLP-0077-B007 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | not yet paginated |
+| T124-OLP-0091-B007 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | not yet paginated |
 
 **Chosen rendering/action:** पूर्ततायोग्य / पूर्ततायोग्यता
 
@@ -7058,7 +7076,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T144 — finite sequence / proper initial subsequence</strong> (13 occurrences; medium priority)</summary>
+<summary><strong>T144 — finite sequence / proper initial subsequence</strong> (16 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7075,6 +7093,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T144-OLP-0077-B015 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-100](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L94) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:96-102](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L96) | not yet paginated |
 | T144-OLP-0077-B022 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L147) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L149) | not yet paginated |
 | T144-OLP-0077-B023 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L157) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L159) | not yet paginated |
+| T144-OLP-0091-B017 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-103](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L103) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-106](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L103) | not yet paginated |
+| T144-OLP-0091-B023 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L136) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L139) | not yet paginated |
+| T144-OLP-0091-B024 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L146) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L149) | not yet paginated |
 
 **Chosen rendering/action:** सांत क्रमिका / उचित आरंभीची उपक्रमिका
 
@@ -7151,13 +7172,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T149 — monotonicity (of semantic entailment)</strong> (3 occurrences; routine priority)</summary>
+<summary><strong>T149 — monotonicity (of semantic entailment)</strong> (5 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T149-OLP-0062-B009 | OLP-0062 · 7.6 चिन्हार्थविषयक संकल्पना | [upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L45) | [mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L46) | 81 |
 | T149-OLP-0077-B014 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:88-92](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L88) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:90-94](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L90) | not yet paginated |
 | T149-OLP-0077-B015 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-100](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L94) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:96-102](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L96) | not yet paginated |
+| T149-OLP-0091-B013 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:64-68](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L64) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:64-68](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L64) | not yet paginated |
+| T149-OLP-0091-B014 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L70) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L70) | not yet paginated |
 
 **Chosen rendering/action:** एकस्वनिकता
 
@@ -7268,7 +7291,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T152 — natural deduction / sequent calculus</strong> (29 occurrences; routine priority)</summary>
+<summary><strong>T152 — natural deduction / sequent calculus</strong> (31 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7301,6 +7324,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T152-OLP-0087-B012 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L58) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-60](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L57) | not yet paginated |
 | T152-OLP-0087-B014 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L85) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L84) | not yet paginated |
 | T152-OLP-0088-B006 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:15-21](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L15) | [mr/content/first-order-logic/natural-deduction/derivations.tex:15-20](../mr/content/first-order-logic/natural-deduction/derivations.tex#L15) | not yet paginated |
+| T152-OLP-0091-B006 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
+| T152-OLP-0091-B008 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | not yet paginated |
 
 **Chosen rendering/action:** नैसर्गिक निगमन / क्रमवर्ती कलन
 
@@ -7327,7 +7352,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T154 — theorem</strong> (45 occurrences; routine priority)</summary>
+<summary><strong>T154 — theorem</strong> (46 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7376,6 +7401,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T154-OLP-0085-B007 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L26) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L25) | not yet paginated |
 | T154-OLP-0085-B008 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L31) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L30) | not yet paginated |
 | T154-OLP-0085-B010 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L47) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L44) | not yet paginated |
+| T154-OLP-0091-B008 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | not yet paginated |
 
 **Chosen rendering/action:** प्रमेय
 
@@ -7386,7 +7412,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T155 — soundness / sound / unsound (of a proof system)</strong> (44 occurrences; high priority)</summary>
+<summary><strong>T155 — soundness / sound / unsound (of a proof system)</strong> (45 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7434,6 +7460,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T155-OLP-0085-B008 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L31) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L30) | not yet paginated |
 | T155-OLP-0085-B010 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L47) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L44) | not yet paginated |
 | T155-OLP-0087-B014 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L85) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L84) | not yet paginated |
+| T155-OLP-0091-B007 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | not yet paginated |
 
 **Chosen rendering/action:** निर्दोषता / निर्दोष / सदोष
 
@@ -7444,7 +7471,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (64 occurrences; routine priority)</summary>
+<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (70 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7512,6 +7539,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T156-OLP-0085-B007 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L26) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L25) | not yet paginated |
 | T156-OLP-0085-B008 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L31) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L30) | not yet paginated |
 | T156-OLP-0085-B010 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L47) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L44) | not yet paginated |
+| T156-OLP-0091-B006 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
+| T156-OLP-0091-B010 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:47-51](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L47) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:47-51](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L47) | not yet paginated |
+| T156-OLP-0091-B019 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:110-118](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L110) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:113-121](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L113) | not yet paginated |
+| T156-OLP-0091-B020 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:120-122](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L120) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:123-125](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L123) | not yet paginated |
+| T156-OLP-0091-B023 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L136) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L139) | not yet paginated |
+| T156-OLP-0091-B024 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L146) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L149) | not yet paginated |
 
 **Chosen rendering/action:** सुसंगतता / विसंगतता / सुसंगत / विसंगत
 
@@ -7596,7 +7629,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T159 — assumption / discharge / discharged / undischarged</strong> (37 occurrences; medium priority)</summary>
+<summary><strong>T159 — assumption / discharge / discharged / undischarged</strong> (42 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7637,6 +7670,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T159-OLP-0090-B011 | OLP-0090 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:112-135](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L112) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:106-129](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L106) | not yet paginated |
 | T159-OLP-0090-B012 | OLP-0090 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:137-181](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L137) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:131-173](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L131) | not yet paginated |
 | T159-OLP-0090-B013 | OLP-0090 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:183-228](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L183) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:175-218](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L175) | not yet paginated |
+| T159-OLP-0091-B008 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | not yet paginated |
+| T159-OLP-0091-B009 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:39-45](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L39) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:39-45](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L39) | not yet paginated |
+| T159-OLP-0091-B012 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L58) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L58) | not yet paginated |
+| T159-OLP-0091-B016 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L81) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L81) | not yet paginated |
+| T159-OLP-0091-B024 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L146) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L149) | not yet paginated |
 
 **Chosen rendering/action:** गृहीतक / मुक्त करणे / मुक्त केलेले / मुक्त न केलेले
 
@@ -8351,12 +8389,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T181 — compactness (proof-theoretic property)</strong> (2 occurrences; medium priority)</summary>
+<summary><strong>T181 — compactness (proof-theoretic property)</strong> (4 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T181-OLP-0077-B022 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L147) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L149) | not yet paginated |
 | T181-OLP-0077-B023 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L157) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L159) | not yet paginated |
+| T181-OLP-0091-B023 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L136) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L139) | not yet paginated |
+| T181-OLP-0091-B024 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L146) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L149) | not yet paginated |
 
 **Chosen rendering/action:** संहतता
 
@@ -8367,12 +8407,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T182 — proof-theoretic notions</strong> (2 occurrences; medium priority)</summary>
+<summary><strong>T182 — proof-theoretic notions</strong> (4 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T182-OLP-0077-B006 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18-18](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L18) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18-18](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L18) | not yet paginated |
 | T182-OLP-0077-B007 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | not yet paginated |
+| T182-OLP-0091-B005 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:13-13](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L13) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:13-13](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L13) | not yet paginated |
+| T182-OLP-0091-B007 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धता-उपपत्तीय संकल्पना
 
@@ -8383,13 +8425,16 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T183 — transitivity (of derivability)</strong> (3 occurrences; medium priority)</summary>
+<summary><strong>T183 — transitivity (of derivability)</strong> (6 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T183-OLP-0077-B016 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:102-106](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L102) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:104-108](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L104) | not yet paginated |
 | T183-OLP-0077-B017 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-126](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L108) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:110-128](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L110) | not yet paginated |
 | T183-OLP-0077-B018 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:128-131](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L128) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:130-133](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L130) | not yet paginated |
+| T183-OLP-0091-B015 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:75-79](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L75) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:75-79](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L75) | not yet paginated |
+| T183-OLP-0091-B016 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L81) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L81) | not yet paginated |
+| T183-OLP-0091-B018 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:105-108](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L105) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:108-111](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L108) | not yet paginated |
 
 **Chosen rendering/action:** संक्रमकता
 
@@ -8400,7 +8445,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T184 — derivability / provability relation</strong> (85 occurrences; medium priority)</summary>
+<summary><strong>T184 — derivability / provability relation</strong> (104 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8489,6 +8534,25 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T184-OLP-0089-B018 | OLP-0089 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things.tex:295-308](../upstream/content/first-order-logic/natural-deduction/proving-things.tex#L295) | [mr/content/first-order-logic/natural-deduction/proving-things.tex:288-301](../mr/content/first-order-logic/natural-deduction/proving-things.tex#L288) | not yet paginated |
 | T184-OLP-0090-B014 | OLP-0090 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:230-243](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L230) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:220-233](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L220) | not yet paginated |
 | T184-OLP-0090-B015 | OLP-0090 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:245-253](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L245) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:235-243](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L235) | not yet paginated |
+| T184-OLP-0091-B006 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
+| T184-OLP-0091-B007 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | not yet paginated |
+| T184-OLP-0091-B008 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | not yet paginated |
+| T184-OLP-0091-B009 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:39-45](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L39) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:39-45](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L39) | not yet paginated |
+| T184-OLP-0091-B010 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:47-51](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L47) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:47-51](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L47) | not yet paginated |
+| T184-OLP-0091-B011 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L53) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L53) | not yet paginated |
+| T184-OLP-0091-B012 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L58) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L58) | not yet paginated |
+| T184-OLP-0091-B013 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:64-68](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L64) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:64-68](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L64) | not yet paginated |
+| T184-OLP-0091-B014 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L70) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L70) | not yet paginated |
+| T184-OLP-0091-B015 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:75-79](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L75) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:75-79](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L75) | not yet paginated |
+| T184-OLP-0091-B016 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L81) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L81) | not yet paginated |
+| T184-OLP-0091-B017 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-103](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L103) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-106](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L103) | not yet paginated |
+| T184-OLP-0091-B018 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:105-108](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L105) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:108-111](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L108) | not yet paginated |
+| T184-OLP-0091-B019 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:110-118](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L110) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:113-121](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L113) | not yet paginated |
+| T184-OLP-0091-B020 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:120-122](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L120) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:123-125](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L123) | not yet paginated |
+| T184-OLP-0091-B021 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:124-128](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L124) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:127-131](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L127) | not yet paginated |
+| T184-OLP-0091-B022 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:130-134](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L130) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:133-137](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L133) | not yet paginated |
+| T184-OLP-0091-B023 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L136) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L139) | not yet paginated |
+| T184-OLP-0091-B024 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L146) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L149) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धतायोग्यता / सिद्धतायोग्य
 

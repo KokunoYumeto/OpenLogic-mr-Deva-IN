@@ -81,6 +81,13 @@ def md(value):
     return str(value).replace("|", "\\|").replace("\r", "").replace("\n", "<br>")
 
 
+def csv_surface_value(value):
+    if not isinstance(value, str):
+        return value
+    value = value.replace("\r\n", "\n").replace("\r", "\n").expandtabs(4)
+    return re.sub(r"[ \t]+(?=$)", "", value, flags=re.MULTILINE)
+
+
 def span_locator(relative_path, unit_id, role, start, end, term, sense, context):
     relative_path = relative_path.replace("\\", "/")
     path = P / relative_path
@@ -688,8 +695,7 @@ with csv_path.open("w", encoding="utf-8", newline="") as handle:
             target = occurrence["target"]
             reader = occurrence["reader_locator"]
             evidence = occurrence["evidence_refs"][0]
-            writer.writerow(
-                {
+            csv_row = {
                     "decision_id": decision["decision_id"],
                     "occurrence_id": occurrence["occurrence_id"],
                     "record_kind": decision["record_kind"],
@@ -726,6 +732,14 @@ with csv_path.open("w", encoding="utf-8", newline="") as handle:
                     "reader_locator_provenance": reader.get("provenance") or reader.get("reason"),
                     "evidence_path_or_uri": evidence["path_or_uri"],
                     "evidence_sha256": evidence["sha256"],
+                }
+            # Frozen source excerpts can contain CRLF and trailing spaces. Keep
+            # their exact bytes in DECISIONS.json, but normalize the human-facing
+            # multiline CSV surface so repository whitespace checks remain clean.
+            writer.writerow(
+                {
+                    key: csv_surface_value(value)
+                    for key, value in csv_row.items()
                 }
             )
 

@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occurrences.
+Coverage: 88/722 source units through OLP-0091; 233 applied decisions; 6,042 occurrences.
 
 ## T001 — set
 
@@ -381,6 +381,7 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T001-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 86–87 |
 | `T001-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
 | `T001-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 86–87 |
+| `T001-OLP-0091-B017` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-103` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-106` | pending |
 
 ## T002 — element/member
 
@@ -1137,6 +1138,8 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T005-OLP-0085-B007` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28` | pending |
 | `T005-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T005-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
+| `T005-OLP-0091-B023` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147` | pending |
+| `T005-OLP-0091-B024` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | pending |
 
 ## T006 — proper subset
 
@@ -1510,6 +1513,7 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T009-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T009-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
 | `T009-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
+| `T009-OLP-0091-B007` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T010 — truth / truth value
 
@@ -3036,6 +3040,7 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T032-OLP-0042-B008` | `OLP-0042` | 5.1 N पासून Z कडे | `upstream/content/sets-functions-relations/arithmetization/integers.tex:32-32` | `mr/content/sets-functions-relations/arithmetization/integers.tex:32-32` | 52–54 |
 | `T032-OLP-0047-B015` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:101-109` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:101-108` | 59–62 |
 | `T032-OLP-0077-B012` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:78-81` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:80-83` | pending |
+| `T032-OLP-0091-B011` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56` | pending |
 
 ## T033 — transitive
 
@@ -4032,6 +4037,12 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T044-OLP-0090-B013` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:183-228` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:175-218` | pending |
 | `T044-OLP-0090-B014` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:230-243` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:220-233` | pending |
 | `T044-OLP-0090-B015` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:245-253` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:235-243` | pending |
+| `T044-OLP-0091-B008` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | pending |
+| `T044-OLP-0091-B009` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:39-45` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:39-45` | pending |
+| `T044-OLP-0091-B012` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61` | pending |
+| `T044-OLP-0091-B014` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73` | pending |
+| `T044-OLP-0091-B016` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | pending |
+| `T044-OLP-0091-B024` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | pending |
 
 ## T045 — function / mapping
 
@@ -7160,6 +7171,9 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T109-OLP-0089-B009` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:39-51` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:37-48` | pending |
 | `T109-OLP-0089-B015` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | pending |
 | `T109-OLP-0090-B006` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:13-18` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:13-17` | pending |
+| `T109-OLP-0091-B006` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18` | pending |
+| `T109-OLP-0091-B007` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | pending |
+| `T109-OLP-0091-B008` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -7201,6 +7215,7 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T110-OLP-0079-B007` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | pending |
 | `T110-OLP-0080-B005` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:12-16` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:12-15` | pending |
 | `T110-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
+| `T110-OLP-0091-B007` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -7728,6 +7743,7 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T121-OLP-0085-B007` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28` | pending |
 | `T121-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T121-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
+| `T121-OLP-0091-B007` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T122 — tautology
 
@@ -7834,6 +7850,7 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T123-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T123-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
 | `T123-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
+| `T123-OLP-0091-B007` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -7867,6 +7884,7 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T124-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 82–83 |
 | `T124-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 85–86 |
 | `T124-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
+| `T124-OLP-0091-B007` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T125 — necessary / contingent
 
@@ -8646,6 +8664,9 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T144-OLP-0077-B015` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-100` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:96-102` | pending |
 | `T144-OLP-0077-B022` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157` | pending |
 | `T144-OLP-0077-B023` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170` | pending |
+| `T144-OLP-0091-B017` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-103` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-106` | pending |
+| `T144-OLP-0091-B023` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147` | pending |
+| `T144-OLP-0091-B024` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | pending |
 
 ## T145 — evaluation / evaluation function
 
@@ -8788,6 +8809,8 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T149-OLP-0062-B009` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61` | 81 |
 | `T149-OLP-0077-B014` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:88-92` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:90-94` | pending |
 | `T149-OLP-0077-B015` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-100` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:96-102` | pending |
+| `T149-OLP-0091-B013` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:64-68` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:64-68` | pending |
+| `T149-OLP-0091-B014` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73` | pending |
 
 ## T150 — Semantic Deduction Theorem
 
@@ -8969,6 +8992,8 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T152-OLP-0087-B012` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-60` | pending |
 | `T152-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
 | `T152-OLP-0088-B006` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:15-21` | `mr/content/first-order-logic/natural-deduction/derivations.tex:15-20` | pending |
+| `T152-OLP-0091-B006` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18` | pending |
+| `T152-OLP-0091-B008` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | pending |
 
 ## T153 — truth tree / tableaux proof / resolution method and refutation
 
@@ -9069,6 +9094,7 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T154-OLP-0085-B007` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28` | pending |
 | `T154-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T154-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
+| `T154-OLP-0091-B008` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | pending |
 
 ## T155 — soundness / sound / unsound (of a proof system)
 
@@ -9140,6 +9166,7 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T155-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T155-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
 | `T155-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
+| `T155-OLP-0091-B007` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -9231,6 +9258,12 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T156-OLP-0085-B007` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28` | pending |
 | `T156-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T156-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
+| `T156-OLP-0091-B006` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18` | pending |
+| `T156-OLP-0091-B010` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:47-51` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:47-51` | pending |
+| `T156-OLP-0091-B019` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:110-118` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:113-121` | pending |
+| `T156-OLP-0091-B020` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:120-122` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:123-125` | pending |
+| `T156-OLP-0091-B023` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147` | pending |
+| `T156-OLP-0091-B024` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -9392,6 +9425,11 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T159-OLP-0090-B011` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:112-135` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:106-129` | pending |
 | `T159-OLP-0090-B012` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:137-181` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:131-173` | pending |
 | `T159-OLP-0090-B013` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:183-228` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:175-218` | pending |
+| `T159-OLP-0091-B008` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | pending |
+| `T159-OLP-0091-B009` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:39-45` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:39-45` | pending |
+| `T159-OLP-0091-B012` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61` | pending |
+| `T159-OLP-0091-B016` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | pending |
+| `T159-OLP-0091-B024` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | pending |
 
 ## T160 — introduction rule / elimination rule
 
@@ -10384,6 +10422,8 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 |---|---|---|---|---|---|
 | `T181-OLP-0077-B022` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-155` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:149-157` | pending |
 | `T181-OLP-0077-B023` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170` | pending |
+| `T181-OLP-0091-B023` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147` | pending |
+| `T181-OLP-0091-B024` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | pending |
 
 ## T182 — proof-theoretic notions
 
@@ -10411,6 +10451,8 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 |---|---|---|---|---|---|
 | `T182-OLP-0077-B006` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18-18` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18-18` | pending |
 | `T182-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
+| `T182-OLP-0091-B005` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:13-13` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:13-13` | pending |
+| `T182-OLP-0091-B007` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T183 — transitivity (of derivability)
 
@@ -10440,6 +10482,9 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T183-OLP-0077-B016` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:102-106` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:104-108` | pending |
 | `T183-OLP-0077-B017` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-126` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:110-128` | pending |
 | `T183-OLP-0077-B018` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:128-131` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:130-133` | pending |
+| `T183-OLP-0091-B015` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:75-79` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:75-79` | pending |
+| `T183-OLP-0091-B016` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | pending |
+| `T183-OLP-0091-B018` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:105-108` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:108-111` | pending |
 
 ## T184 — derivability / provability relation
 
@@ -10552,6 +10597,25 @@ Coverage: 87/722 source units through OLP-0090; 233 applied decisions; 5,978 occ
 | `T184-OLP-0089-B018` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:295-308` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:288-301` | pending |
 | `T184-OLP-0090-B014` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:230-243` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:220-233` | pending |
 | `T184-OLP-0090-B015` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:245-253` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:235-243` | pending |
+| `T184-OLP-0091-B006` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18` | pending |
+| `T184-OLP-0091-B007` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | pending |
+| `T184-OLP-0091-B008` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | pending |
+| `T184-OLP-0091-B009` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:39-45` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:39-45` | pending |
+| `T184-OLP-0091-B010` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:47-51` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:47-51` | pending |
+| `T184-OLP-0091-B011` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56` | pending |
+| `T184-OLP-0091-B012` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:58-61` | pending |
+| `T184-OLP-0091-B013` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:64-68` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:64-68` | pending |
+| `T184-OLP-0091-B014` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73` | pending |
+| `T184-OLP-0091-B015` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:75-79` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:75-79` | pending |
+| `T184-OLP-0091-B016` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | pending |
+| `T184-OLP-0091-B017` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-103` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-106` | pending |
+| `T184-OLP-0091-B018` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:105-108` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:108-111` | pending |
+| `T184-OLP-0091-B019` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:110-118` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:113-121` | pending |
+| `T184-OLP-0091-B020` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:120-122` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:123-125` | pending |
+| `T184-OLP-0091-B021` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:124-128` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:127-131` | pending |
+| `T184-OLP-0091-B022` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:130-134` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:133-137` | pending |
+| `T184-OLP-0091-B023` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147` | pending |
+| `T184-OLP-0091-B024` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | pending |
 
 ## T185 — intuitionistic logic
 

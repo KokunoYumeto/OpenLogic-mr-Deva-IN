@@ -1,0 +1,163 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{ptn}}
+      {\olfileid{pl}{ntd}{ptn}}
+
+\olsection{सिद्धता-उपपत्तीय संकल्पना}
+
+\begin{editorial}
+या विभागात नैसर्गिक निगमनासाठी सिद्धतायोग्यता संबंध आणि सुसंगतता यांच्या
+व्याख्या एकत्रित केल्या आहेत.
+\end{editorial}
+
+\begin{explain}
+जशा आपण अनेक महत्त्वाच्या चिन्हार्थविषयक संकल्पना (वैधता, तार्किक निष्पन्नता,
+पूर्ततायोग्यता) परिभाषित केल्या आहेत, तशाच आता त्यांना अनुरूप
+\emph{सिद्धता-उपपत्तीय संकल्पना} परिभाषित करू. या संकल्पना !!{structure}s मध्ये
+!!{sentence}s ची पूर्ति होते की नाही याच्या आधारे परिभाषित केलेल्या नसून,
+काही !!{sentence}s ची इतरांपासूनची !!{derivability} किंवा
+!!{nonderivability} यांचा आधार घेऊन परिभाषित केल्या आहेत. या दोन प्रकारच्या
+संकल्पना एकमेकांशी जुळतात, हा एक महत्त्वाचा शोध होता. त्या जुळतात, हाच
+\emph{निर्दोषता प्रमेय} आणि \emph{संपूर्णता प्रमेय} यांचा आशय आहे.
+\end{explain}
+
+
+\begin{defn}[प्रमेये]
+एखादे !!{sentence}~$!A$ हे \emph{प्रमेय} असते, जर नैसर्गिक निगमनात $!A$ ची
+अशी !!a{derivation} असेल की तिच्यातील सर्व गृहीतके !!{discharged} आहेत.
+$!A$ हे प्रमेय असेल तर आपण $\Proves !A$ लिहितो आणि ते प्रमेय नसेल तर
+$\Proves/ !A$ लिहितो.
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!^a{sentence} $!A$ हे !!{sentence}s च्या संच~$\Gamma$ \emph{पासून
+!!{derivable}} असते, म्हणजे $\Gamma \Proves !A$, तेव्हा आणि केवळ तेव्हाच,
+जेव्हा निष्कर्ष~$!A$ असणारी अशी !!{derivation} असेल की तिच्यातील प्रत्येक
+गृहीतक एकतर !!{discharged} आहे किंवा $\Gamma$ मध्ये आहे. $!A$ हे $\Gamma$
+पासून !!{derivable} नसेल, तर आपण $\Gamma \Proves/ !A$ लिहितो.
+\end{defn}
+
+\begin{defn}[सुसंगतता]
+!!{sentence}s चा संच~$\Gamma$ हा \emph{विसंगत} असतो तेव्हा आणि केवळ तेव्हाच,
+जेव्हा $\Gamma \Proves \lfalse$. $\Gamma$ विसंगत नसेल, म्हणजे
+$\Gamma \Proves/ \lfalse$ असेल, तर त्याला \emph{सुसंगत} म्हणतो.
+\end{defn}
+
+\begin{prop}[परावर्तिता]
+\ollabel{prop:reflexivity}
+$!A \in \Gamma$ असेल, तर $\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+केवळ $!A$ हे गृहीतक स्वतःच $!A$ ची अशी !!a{derivation} आहे की तिच्यातील
+प्रत्येक !!{undischarged} गृहीतक (म्हणजे $!A$) $\Gamma$ मध्ये आहे.
+\end{proof}
+
+
+\begin{prop}[एकस्वनिकता]
+\ollabel{prop:monotonicity}
+$\Gamma \subseteq \Delta$ आणि $\Gamma \Proves !A$ असेल, तर $\Delta
+\Proves !A$.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ पासून $!A$ ची कोणतीही !!{derivation} ही $\Delta$ पासून $!A$ चीही
+!!a{derivation} असते.
+\end{proof}
+
+\begin{prop}[संक्रमकता]
+\ollabel{prop:transitivity}
+$\Gamma \Proves !A$ आणि $\{!A\} \cup \Delta \Proves
+!B$ असेल, तर $\Gamma \cup \Delta \Proves !B$.
+\end{prop}
+
+\begin{proof}
+$\Gamma \Proves !A$ असेल, तर $!A$ ची अशी !!a{derivation}~$\delta_0$ असते
+की तिच्यातील सर्व !!{undischarged} गृहीतके $\Gamma$ मध्ये असतात. $\{!A\}
+\cup \Delta \Proves !B$ असेल, तर $!B$ ची अशी !!a{derivation}~$\delta_1$
+असते की तिच्यातील सर्व !!{undischarged} गृहीतके $\{!A\} \cup \Delta$ मध्ये
+असतात. आता पुढील रचना विचारात घ्या:
+\begin{prooftree}
+  \AxiomC{$\Delta, \Discharge{!A}{1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!B$}
+  \DischargeRule{\Intro{\lif}}{1}
+  \UnaryInfC{$!A \lif !B$}
+  \AxiomC{$\Gamma$}
+  \RightLabel{$\delta_0$}
+  \DeduceC{$!A$}
+  \RightLabel{\Elim{\lif}}
+  \BinaryInfC{$!B$}
+\end{prooftree}
+आता सर्व !!{undischarged} गृहीतके $\Gamma \cup \Delta$ मध्ये आहेत; म्हणून
+यावरून $\Gamma \cup \Delta \Proves !B$ हे दिसते.
+\end{proof}
+
+$\Gamma = \{!A_1, !A_2, \ldots, !A_k\}$ हा सांत संच असेल, तेव्हा
+$\Gamma \Proves !B$ ऐवजी आपण $!A_1,!A_2,\ldots,!A_k \Proves !B$ हे
+सरलीकृत संकेतलेखन वापरू शकतो. विशेषतः, $!A \Proves !B$ याचा अर्थ
+$\{!A\} \Proves !B$ असा होतो.
+
+लक्षात घ्या की $\Gamma \Proves !A$ आणि $!A
+\Proves !B$ असेल, तर $\Gamma \Proves !B$. तसेच $!A_1,
+\dots, !A_n \Proves !B$ असेल आणि प्रत्येक~$i$ साठी $\Gamma \Proves !A_i$
+असेल, तर $\Gamma \Proves !B$, हेसुद्धा यावरून मिळते.
+
+\begin{prop}
+\ollabel{prop:incons}
+पुढील विधाने सममूल्य आहेत.
+    \begin{enumerate}
+      \item \( \Gamma \) विसंगत आहे.
+      \item प्रत्येक !!{sentence}~\( {!A} \) साठी \( \Gamma \Proves {!A} \).
+      \item एखाद्या !!{sentence}~\( {!A} \) साठी \( \Gamma \Proves {!A} \) आणि \( \Gamma \Proves \lnot {!A} \).
+    \end{enumerate}
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][ntd][ptn]{prop:incons} सिद्ध करा.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][ntd][ptn]{prop:incons} सिद्ध करा.
+\end{prob}
+\tagendprob
+
+\begin{prop}[संहतता]
+  \ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item $\Gamma \Proves !A$ असेल, तर एखादा सांत उपसंच $\Gamma_0
+    \subseteq \Gamma$ असा आहे की $\Gamma_0 \Proves !A$.
+  \item $\Gamma$ चा प्रत्येक सांत उपसंच सुसंगत असेल, तर $\Gamma$ सुसंगत
+    असतो.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\Gamma \Proves !A$ असेल, तर $\Gamma$ पासून $!A$ ची
+      !!a{derivation}~$\delta$ असते. $\Gamma_0$ हा $\delta$ मधील
+      !!{undischarged} गृहीतकांचा संच असू द्या. प्रत्येक !!{derivation} सांत
+      असल्यामुळे $\Gamma_0$ मधील !!{sentence}s ची संख्या सांतच असते.
+      म्हणून $\delta$ ही सांत~$\Gamma_0 \subseteq \Gamma$ पासून $!A$ ची
+      !!a{derivation} आहे.
+    \item (1) मध्ये $!A
+      \ident \lfalse$ हे विशेष प्रकरण घेतल्यावर मिळणारे हे निषेधात्मक उलट
+      विधान आहे.
+  \end{enumerate}
+\end{proof}
+
+\end{document}
