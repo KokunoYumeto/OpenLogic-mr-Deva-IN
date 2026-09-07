@@ -1,0 +1,49 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{rul}}
+      {\olfileid{pl}{ntd}{rul}}
+
+\olsection{नियम आणि \usetoken{P}{derivation}}
+
+\begin{explain}
+नैसर्गिक निगमन पद्धतींचा उद्देश गणितीय सिद्धतेत वापरल्या जाणाऱ्या अनौपचारिक
+तर्कपद्धतीशी जवळचे साम्य राखणे हा आहे (म्हणूनच ती काहीशी ``नैसर्गिक'' आहे).
+नैसर्गिक निगमनातील सिद्धता गृहीतकांपासून सुरू होतात.
+त्यानंतर अनुमाननियम लागू केले जातात. \Intro{\lnot}, \Intro{\lif},
+\iftag{FOL}{\Elim{\lor} आणि \Elim{\lexists}}{ आणि \Elim{\lor}} अनुमाननियमांद्वारे
+गृहीतके ``!!{discharged}'' केली जातात; स्पष्टतेसाठी !!{discharged} केलेल्या
+गृहीतकाचा लेबल त्या अनुमानाजवळ ठेवला जातो.
+\end{explain}
+
+\begin{defn}[गृहीतक]
+\emph{गृहीतक} म्हणजे कोणत्याही शाखेच्या सर्वांत वरच्या स्थानावर असलेले
+कोणतेही !!{sentence} होय.
+\end{defn}
+
+नैसर्गिक निगमनातील !!^{derivation}s ही !!{sentence}s ची विशिष्ट वृक्षरचना असते;
+त्यातील सर्वांत वरच्या !!{sentence}s गृहीतके असतात. एखादे !!a{sentence} एक,
+दोन किंवा तीन इतर क्रमवर्तींच्या खाली असल्यास, ते अनुमाननियमाने योग्य
+प्रकारे आलेले असले पाहिजे. अनुमानाच्या शीर्षस्थानी असलेल्या !!{sentence}s ना
+\emph{आधारविधाने} म्हणतात आणि खालील !!{sentence} ला अनुमानाचा
+\emph{निष्कर्ष} म्हणतात. प्रत्येक !!{operator} साठी नियम जोड्यांमध्ये येतात:
+एक प्रवेशन नियम आणि एक विलोपन नियम. ते निष्कर्षात !!a{operator} आणतात
+किंवा नियमाच्या आधारविधानातून !!a{operator} काढतात. काही नियम विशिष्ट
+प्रकारचे गृहीतक \emph{!!{discharged}} करण्याची परवानगी देतात. कोणते
+गृहीतक कोणत्या अनुमानाने !!{discharged} केले हे दर्शवण्यासाठी गृहीतक आणि
+अनुमान दोन्हींना लेबल देतो. हे गृहीतक ``$\Discharge{!A}{n}$.` असे लिहून दर्शवले जाते.
+
+% Only include this sentence is on of \land, lor, lif or lnot is defined.
+
+\iftag{notprvNot,notprvAnd,notprvOr,notprvIf}{}%
+	{सर्व !!{operator}s $\land$, $\lor$, $\lif$, $\lnot$ आणि $\lfalse$ यांच्यासाठीचे नियम विचारात घेणे प्रचलित आहे, जरी त्यांपैकी काही परिभाषित केलेले असले तरी.}
+
+
+
+\end{document}
