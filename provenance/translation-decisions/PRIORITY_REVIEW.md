@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 26 urgent/high decisions and
-874 current occurrences. Normal and low items remain in the full index.
+897 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -274,6 +274,8 @@ This view contains 26 urgent/high decisions and
 | `T026-OLP-0053-B014` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | 113-113 | 108-108 | 69–70 |
 | `T026-OLP-0054-B013` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | 70-73 | 69-72 | 70–72 |
 | `T026-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | 15-31 | 15-29 | 84–85 |
+| `T026-OLP-0090-B007` | `OLP-0090` |  | 20-86 | 19-82 | pending |
+| `T026-OLP-0090-B013` | `OLP-0090` |  | 183-228 | 175-218 | pending |
 
 ## T028 — continuum → सांतत्य
 
@@ -812,6 +814,16 @@ This view contains 26 urgent/high decisions and
 | `T044-OLP-0089-B016` | `OLP-0089` |  | 267-275 | 260-268 | pending |
 | `T044-OLP-0089-B017` | `OLP-0089` |  | 277-293 | 270-286 | pending |
 | `T044-OLP-0089-B018` | `OLP-0089` |  | 295-308 | 288-301 | pending |
+| `T044-OLP-0090-B005` | `OLP-0090` |  | 11-11 | 11-11 | pending |
+| `T044-OLP-0090-B007` | `OLP-0090` |  | 20-86 | 19-82 | pending |
+| `T044-OLP-0090-B008` | `OLP-0090` |  | 88-94 | 84-90 | pending |
+| `T044-OLP-0090-B009` | `OLP-0090` |  | 96-100 | 92-95 | pending |
+| `T044-OLP-0090-B010` | `OLP-0090` |  | 102-110 | 97-104 | pending |
+| `T044-OLP-0090-B011` | `OLP-0090` |  | 112-135 | 106-129 | pending |
+| `T044-OLP-0090-B012` | `OLP-0090` |  | 137-181 | 131-173 | pending |
+| `T044-OLP-0090-B013` | `OLP-0090` |  | 183-228 | 175-218 | pending |
+| `T044-OLP-0090-B014` | `OLP-0090` |  | 230-243 | 220-233 | pending |
+| `T044-OLP-0090-B015` | `OLP-0090` |  | 245-253 | 235-243 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
@@ -977,6 +989,7 @@ This view contains 26 urgent/high decisions and
 | `T174-OLP-0087-B013` | `OLP-0087` |  | 63-83 | 62-82 | pending |
 | `T174-OLP-0087-B014` | `OLP-0087` |  | 85-103 | 84-102 | pending |
 | `T174-OLP-0087-B015` | `OLP-0087` |  | 105-108 | 104-107 | pending |
+| `T174-OLP-0090-B007` | `OLP-0090` |  | 20-86 | 19-82 | pending |
 
 ## T178 — eigenvariable → आयगेन चर
 
@@ -1041,6 +1054,11 @@ This view contains 26 urgent/high decisions and
 | `T178-OLP-0087-B012` | `OLP-0087` |  | 58-61 | 57-60 | pending |
 | `T178-OLP-0087-B013` | `OLP-0087` |  | 63-83 | 62-82 | pending |
 | `T178-OLP-0087-B014` | `OLP-0087` |  | 85-103 | 84-102 | pending |
+| `T178-OLP-0090-B006` | `OLP-0090` |  | 13-18 | 13-17 | pending |
+| `T178-OLP-0090-B007` | `OLP-0090` |  | 20-86 | 19-82 | pending |
+| `T178-OLP-0090-B008` | `OLP-0090` |  | 88-94 | 84-90 | pending |
+| `T178-OLP-0090-B011` | `OLP-0090` |  | 112-135 | 106-129 | pending |
+| `T178-OLP-0090-B012` | `OLP-0090` |  | 137-181 | 131-173 | pending |
 
 ## T179 — eigenvariable condition → आयगेन चराची अट
 
@@ -1102,6 +1120,11 @@ This view contains 26 urgent/high decisions and
 | `T179-OLP-0087-B012` | `OLP-0087` |  | 58-61 | 57-60 | pending |
 | `T179-OLP-0087-B013` | `OLP-0087` |  | 63-83 | 62-82 | pending |
 | `T179-OLP-0087-B014` | `OLP-0087` |  | 85-103 | 84-102 | pending |
+| `T179-OLP-0090-B006` | `OLP-0090` |  | 13-18 | 13-17 | pending |
+| `T179-OLP-0090-B007` | `OLP-0090` |  | 20-86 | 19-82 | pending |
+| `T179-OLP-0090-B008` | `OLP-0090` |  | 88-94 | 84-90 | pending |
+| `T179-OLP-0090-B011` | `OLP-0090` |  | 112-135 | 106-129 | pending |
+| `T179-OLP-0090-B012` | `OLP-0090` |  | 137-181 | 131-173 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

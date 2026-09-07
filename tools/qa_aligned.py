@@ -93,6 +93,10 @@ _DOCUMENTED_PROJECTIONS = {
         ('$!A \\ident\n(!A_j \\land !A_k)$',
          '$!A \\equiv\n(!A_j \\land !A_k)$'),
     ],
+    'OLP-0090': [
+        ('$\\lexists[x][\\lnot !A(x)]$ किंवा निष्कर्ष',
+         '$\\lexists[x][!A(x)]$ or conclusion'),
+    ],
 }
 
 
