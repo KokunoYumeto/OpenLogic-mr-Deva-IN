@@ -93,7 +93,13 @@ through OLP-0088. A bounded independent model audit of OLP-0071–OLP-0072 found
 material mistranslation, prompted one standing-assumption clarification, and led
 to narrower overlapping choice locators plus separate confidence records for
 closed term, bound variable and eigenvariable vocabulary. This audit is not
-native-speaker or human-expert testimony. The OLP-0077 compactness choice records
+native-speaker or human-expert testimony. A separate bounded audit of OLP-0087
+confirmed the closed-term clarification and identified a defective source summary
+that excluded the eigenvariable from every premise despite the displayed
+universal-introduction premise $A(a)$. OLND-002 records the correction: the Marathi
+summary now refers to the distinct rule-specific premise, conclusion and
+undischarged-assumption restrictions, including the existential-elimination
+temporary-assumption exception. The OLP-0077 compactness choice records
 official mathematical evidence for संहतता while disclosing that proof-theory usage
 was not directly attested; OLP-0078 records the corresponding finite-cut and
 negation characterizations of provability and inconsistency, OLP-0079 records
@@ -107,7 +113,8 @@ and its conditional imports, OLP-0085 records assumptions, discharge, premises
 and conclusions, and rule pairs, OLP-0086 records the propositional rule
 schemata and the permissive interpretation of discharge annotations, and
 OLP-0087 records quantifier rules, eigenvariable conditions and the documented
-closed-term clarification OLND-001, and OLP-0088 records the inductive finite-tree
+closed-term clarification OLND-001 plus eigenvariable-summary correction OLND-002,
+and OLP-0088 records the inductive finite-tree
 definition of derivations, provability notation and optional-discharge examples.
 These later working records remain
 outside the v0.6 reader and release archive.

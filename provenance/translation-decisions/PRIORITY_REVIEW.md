@@ -905,9 +905,9 @@ This view contains 26 urgent/high decisions and
 
 **Priority:** `high` · **confidence:** `low`
 
-**Why:** Legacy status: not-attested as an exact compound in checked Marathi proof-theory sources; definition-controlled and provisional. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+**Why:** Legacy status: पद supported in formal logic; exact बंद पद compound not attested in checked sources, definition-controlled and provisional. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
 
-**Please double-check:** Please double-check: Is बंद पद the preferred Marathi logic term for a term containing no variables, or would चररहित पद be clearer while preserving the distinction from a closed formula?
+**Please double-check:** Please double-check: Is बंद पद the preferred Marathi logic term for a variable-free term, or would चररहित पद be clearer?
 
 | Occurrence | Unit | Section | Source line | Target line | PDF page |
 |---|---|---|---|---|---|
@@ -1029,7 +1029,7 @@ This view contains 26 urgent/high decisions and
 
 **Why:** Legacy status: not-attested in checked Marathi proof-theory sources; compositional, definition-controlled and provisional. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
 
-**Please double-check:** Please double-check: Is आयगेन चराची अट the natural Marathi label for the stated LK side condition, including spacing and genitive form?
+**Please double-check:** Please double-check: Is आयगेन चराची अट the natural Marathi label for these LK and natural-deduction freshness conditions, including spacing and genitive form?
 
 | Occurrence | Unit | Section | Source line | Target line | PDF page |
 |---|---|---|---|---|---|

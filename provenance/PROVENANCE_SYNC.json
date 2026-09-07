@@ -7,8 +7,8 @@
     "last_translated_unit": "OLP-0088",
     "aligned_segments": 907,
     "canon_sources": 75,
-    "canon_passages": 98,
-    "term_decisions": 184
+    "canon_passages": 99,
+    "term_decisions": 185
   },
   "outputs": {
     "SOURCE_MANIFEST.jsonl": {
@@ -18,8 +18,8 @@
     },
     "SEGMENT_CANON_USE.jsonl": {
       "records": 907,
-      "bytes": 1409547,
-      "sha256": "8ca3fc117cff6de5ea074bcd1d607a284be30271e5625482ae4b2cc25b0e21c2"
+      "bytes": 1410295,
+      "sha256": "a4fa317459027292785446a63741474c911ccc596dc539136793f9ad6dd654ee"
     },
     "CANON_SOURCES.jsonl": {
       "records": 75,
@@ -27,14 +27,14 @@
       "sha256": "d9468d38b5936e0d16acdb71b0d4682a84c535098b67477de8125eb08ab05aec"
     },
     "CANON_PASSAGES.jsonl": {
-      "records": 98,
-      "bytes": 85250,
-      "sha256": "c5eda8fb6b9e21c2c55df45de06240d4a38e36312f5c1d48c4f53d9dec255b6c"
+      "records": 99,
+      "bytes": 86541,
+      "sha256": "409bdee2ab3ab4ebda960f8dda7f41211910c362c1a6b34d6aeceb58213cc852"
     },
     "TERM_DECISIONS.jsonl": {
-      "records": 184,
-      "bytes": 143318,
-      "sha256": "782ddd5a866459053a7658fa32d8bf044dce262e7d0add52c46dfc19825fb2c3"
+      "records": 185,
+      "bytes": 145974,
+      "sha256": "8ba51167a972747213084624eaad974ca9a619c03f0e2c20e765f0936ae1f78b"
     }
   },
   "sanitization": {

@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 85/722 source units through OLP-0088; 227 applied decisions; 5,828 occurrences.
+Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occurrences.
 
 ## T001 — set
 
@@ -8398,9 +8398,9 @@ Coverage: 85/722 source units through OLP-0088; 227 applied decisions; 5,828 occ
 
 **Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
 
-**Intended sense:** The official logic glossary directly attests चलाची मुक्त आस्थिति. Because propositional formulas here have no binders, the unmodified आस्थिति names each literal syntactic occurrence.
+**Intended sense:** The official logic glossary directly attests चलाची मुक्त आस्थिति. The unmodified आस्थिति is retained provisionally when the target literally needs a noun for a syntactic occurrence; free and bound status are handled separately in quantified contexts. OLP-0087 instead paraphrases the concept as जेथे येते / ठिकाणी, so its decision linkage is context evidence rather than a literal occurrence of the chosen headword.
 
-**Rationale:** The official logic glossary directly attests चलाची मुक्त आस्थिति. Because propositional formulas here have no binders, the unmodified आस्थिति names each literal syntactic occurrence.
+**Rationale:** The official logic glossary directly attests चलाची मुक्त आस्थिति. The unmodified आस्थिति is retained provisionally when the target literally needs a noun for a syntactic occurrence; free and bound status are handled separately in quantified contexts. OLP-0087 instead paraphrases the concept as जेथे येते / ठिकाणी, so its decision linkage is context evidence rather than a literal occurrence of the chosen headword.
 
 **Authorities actually checked:**
 
@@ -8412,7 +8412,7 @@ Coverage: 85/722 source units through OLP-0088; 227 applied decisions; 5,828 occ
 - उपस्थिती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
 - आवृत्ती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
 
-**Please double-check:** Please double-check: Should unbound propositional occurrences use the glossary's आस्थिति or a more immediately familiar आढळ?
+**Please double-check:** Please double-check: Should syntactic occurrences use the glossary stem आस्थिति or a more immediately familiar form such as आढळ or ठिकाण?
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
@@ -8995,9 +8995,9 @@ Coverage: 85/722 source units through OLP-0088; 227 applied decisions; 5,828 occ
 
 **Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
 
-**Intended sense:** The official glossary lists निर्दोषता and दृढता only in a metallurgy domain; it does not attest proof-system soundness. The target chooses निर्दोषता provisionally because OpenLogic immediately defines the property as allowing derivation only of semantically valid sequents, which keeps it separate from वैधता. MR-P009 and MR-P010 support adjacent syntax/semantics and validity vocabulary, not the disputed headword.
+**Intended sense:** The official glossary lists निर्दोषता and दृढता only in a metallurgy domain; it does not attest proof-system soundness. The target chooses निर्दोषता provisionally because OpenLogic defines the property as permitting derivation only of what semantically follows: valid sequents in the sequent-calculus presentation, and sentences from undischarged assumptions from which they follow in natural deduction. This keeps the system property separate from वैधता. MR-P009 and MR-P010 support adjacent syntax/semantics and validity vocabulary, not the disputed headword.
 
-**Rationale:** The official glossary lists निर्दोषता and दृढता only in a metallurgy domain; it does not attest proof-system soundness. The target chooses निर्दोषता provisionally because OpenLogic immediately defines the property as allowing derivation only of semantically valid sequents, which keeps it separate from वैधता. MR-P009 and MR-P010 support adjacent syntax/semantics and validity vocabulary, not the disputed headword.
+**Rationale:** The official glossary lists निर्दोषता and दृढता only in a metallurgy domain; it does not attest proof-system soundness. The target chooses निर्दोषता provisionally because OpenLogic defines the property as permitting derivation only of what semantically follows: valid sequents in the sequent-calculus presentation, and sentences from undischarged assumptions from which they follow in natural deduction. This keeps the system property separate from वैधता. MR-P009 and MR-P010 support adjacent syntax/semantics and validity vocabulary, not the disputed headword.
 
 **Authorities actually checked:**
 
@@ -9795,13 +9795,15 @@ Coverage: 85/722 source units through OLP-0088; 227 applied decisions; 5,828 occ
 
 **Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
 
-**Intended sense:** The checked proof-theory sources establish पद and the formal register but do not attest the compound बंद पद. OpenLogic immediately defines a closed term here as a term with no variables, rather than merely no free variables. The transparent compound is retained with that definition and with an explicit later clarification that the standing closedness requirement still applies.
+**Intended sense:** MR-P007, MR-P021 and MR-P022 support पद in formal logic, while the checked sources do not attest the exact compound बंद पद; MR-P082 supplies adjacent proof-theory register only. OpenLogic defines the local object explicitly as a term containing no variables. Because ordinary first-order terms contain no binders, this record does not claim a stronger contrast between ‘no variables’ and ‘no free variables.’ The transparent compound is retained with the definition and the documented standing-closedness clarifications.
 
-**Rationale:** The checked proof-theory sources establish पद and the formal register but do not attest the compound बंद पद. OpenLogic immediately defines a closed term here as a term with no variables, rather than merely no free variables. The transparent compound is retained with that definition and with an explicit later clarification that the standing closedness requirement still applies.
+**Rationale:** MR-P007, MR-P021 and MR-P022 support पद in formal logic, while the checked sources do not attest the exact compound बंद पद; MR-P082 supplies adjacent proof-theory register only. OpenLogic defines the local object explicitly as a term containing no variables. Because ordinary first-order terms contain no binders, this record does not claim a stronger contrast between ‘no variables’ and ‘no free variables.’ The transparent compound is retained with the definition and the documented standing-closedness clarifications.
 
 **Authorities actually checked:**
 
-- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P022` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 20 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
 - `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
 
 **Alternatives:**
@@ -9810,7 +9812,7 @@ Coverage: 85/722 source units through OLP-0088; 227 applied decisions; 5,828 occ
 - संवृत पद — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
 - बंद संज्ञा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
 
-**Please double-check:** Please double-check: Is बंद पद the preferred Marathi logic term for a term containing no variables, or would चररहित पद be clearer while preserving the distinction from a closed formula?
+**Please double-check:** Please double-check: Is बंद पद the preferred Marathi logic term for a variable-free term, or would चररहित पद be clearer?
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
@@ -10022,9 +10024,9 @@ Coverage: 85/722 source units through OLP-0088; 227 applied decisions; 5,828 occ
 
 **Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
 
-**Intended sense:** MR-P095 directly supports only the Marathi spelling आयगेन in the quantum-mechanics compounds आयगेन मूल्य and आयगेन फलन; its observation hash identifies the local note, not origin-page bytes, and it does not attest proof-theory usage. MR-P007 supports चर. No exact specialist occurrence was found in the bounded search, so the reversible compound remains controlled by OpenLogic's lower-sequent restriction and historical footnote.
+**Intended sense:** MR-P095 directly supports only the Marathi spelling आयगेन in the quantum-mechanics compounds आयगेन मूल्य and आयगेन फलन; its observation hash identifies the local note, not origin-page bytes, and it does not attest proof-theory usage. MR-P007 supports चर. No exact specialist occurrence was found in the bounded search. The reversible compound is controlled by OpenLogic's presentation-specific restrictions: the relevant lower sequent in LK, and the universal-introduction conclusion and active assumptions or the existential-elimination major premise, conclusion and non-temporary active assumptions in natural deduction. The historical footnote explains why a constant is called a variable.
 
-**Rationale:** MR-P095 directly supports only the Marathi spelling आयगेन in the quantum-mechanics compounds आयगेन मूल्य and आयगेन फलन; its observation hash identifies the local note, not origin-page bytes, and it does not attest proof-theory usage. MR-P007 supports चर. No exact specialist occurrence was found in the bounded search, so the reversible compound remains controlled by OpenLogic's lower-sequent restriction and historical footnote.
+**Rationale:** MR-P095 directly supports only the Marathi spelling आयगेन in the quantum-mechanics compounds आयगेन मूल्य and आयगेन फलन; its observation hash identifies the local note, not origin-page bytes, and it does not attest proof-theory usage. MR-P007 supports चर. No exact specialist occurrence was found in the bounded search. The reversible compound is controlled by OpenLogic's presentation-specific restrictions: the relevant lower sequent in LK, and the universal-introduction conclusion and active assumptions or the existential-elimination major premise, conclusion and non-temporary active assumptions in natural deduction. The historical footnote explains why a constant is called a variable.
 
 **Authorities actually checked:**
 
@@ -10103,9 +10105,9 @@ Coverage: 85/722 source units through OLP-0088; 227 applied decisions; 5,828 occ
 
 **Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
 
-**Intended sense:** No checked Marathi source attests the full proof-theory label. It is a transparent construction from the separately recorded provisional आयगेन चर and ordinary अट. The immediately preceding OpenLogic clause defines it exactly as absence of the eigenvariable from the lower sequent for universal-right or existential-left.
+**Intended sense:** No checked Marathi source attests the full proof-theory label. It is a transparent construction from the separately recorded provisional आयगेन चर and ordinary अट. OpenLogic supplies presentation-specific conditions rather than one universal pattern: LK excludes the eigenvariable from the relevant lower sequent, while natural deduction separately restricts universal introduction and existential elimination and exempts the latter's temporary A(a) assumption. The label names this family of freshness restrictions.
 
-**Rationale:** No checked Marathi source attests the full proof-theory label. It is a transparent construction from the separately recorded provisional आयगेन चर and ordinary अट. The immediately preceding OpenLogic clause defines it exactly as absence of the eigenvariable from the lower sequent for universal-right or existential-left.
+**Rationale:** No checked Marathi source attests the full proof-theory label. It is a transparent construction from the separately recorded provisional आयगेन चर and ordinary अट. OpenLogic supplies presentation-specific conditions rather than one universal pattern: LK excludes the eigenvariable from the relevant lower sequent, while natural deduction separately restricts universal introduction and existential elimination and exempts the latter's temporary A(a) assumption. The label names this family of freshness restrictions.
 
 **Authorities actually checked:**
 
@@ -10119,7 +10121,7 @@ Coverage: 85/722 source units through OLP-0088; 227 applied decisions; 5,828 occ
 - आयगेन-चर अट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
 - विशिष्ट-चर अट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
 
-**Please double-check:** Please double-check: Is आयगेन चराची अट the natural Marathi label for the stated LK side condition, including spacing and genitive form?
+**Please double-check:** Please double-check: Is आयगेन चराची अट the natural Marathi label for these LK and natural-deduction freshness conditions, including spacing and genitive form?
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
@@ -11512,8 +11514,33 @@ Coverage: 85/722 source units through OLP-0088; 227 applied decisions; 5,828 occ
 |---|---|---|---|---|---|
 | `OLND-001-OLP-0087` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-28` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-87` | pending |
 
+## OLND-002 — confirmed-frozen-source-eigenvariable-summary defect with bounded target clarification
+
+**Chosen rendering/action:** Rephrased the Marathi summary to name the distinct restrictions on premises, conclusions and undischarged assumptions stated immediately above, without asserting absence from every premise. Preserved all rule diagrams, formulas, macros and protected tokens.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The combined source summary says the eigenvariable occurs in neither premises nor undischarged assumptions. Read literally, that contradicts the universal-introduction premise A(a), which must contain a, and omits the existential-elimination exception for its temporary A(a) assumption. The preceding rule-specific clauses state the intended restrictions correctly.
+
+**Rationale:** The combined source summary says the eigenvariable occurs in neither premises nor undischarged assumptions. Read literally, that contradicts the universal-introduction premise A(a), which must contain a, and omits the existential-elimination exception for its temporary A(a) assumption. The preceding rule-specific clauses state the intended restrictions correctly. Chosen action: Rephrased the Marathi summary to name the distinct restrictions on premises, conclusions and undischarged assumptions stated immediately above, without asserting absence from every premise. Preserved all rule diagrams, formulas, macros and protected tokens.
+
+**Authorities actually checked:**
+
+- `OLND-002-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLND-002. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the defective combined source summary literally — `rejected`: Not chosen; the source finding and recorded action control.
+- Repeat both complete rule-specific restrictions in the summary — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired summary clearly name one family of rule-specific eigenvariable restrictions without implying that a is absent from A(a)?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLND-002-OLP-0087` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-61` | pending |
+
 ## Deferred prospective decisions
 
 The following legacy decisions have no occurrence in the current coverage and are not
-fabricated into the canonical record: `T013`. They remain
+fabricated into the canonical record: `T013`, `T185`. They remain
 available in `../EXPERT_REVIEW_DECISIONS.jsonl` until translated source creates a real locator.

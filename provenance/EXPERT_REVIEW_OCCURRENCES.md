@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **85/722 source units**, 907 aligned translated blocks, 5828 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
+Current scope: **85/722 source units**, 907 aligned translated blocks, 5829 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -6911,9 +6911,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 
 **Chosen rendering/action:** आस्थिति
 
-**Confidence/status:** medium; direct official logical stem; exact unmodified use is provisional; open to correction.
+**Confidence/status:** medium; direct official logical stem; exact unmodified use is provisional and context links may be paraphrastic; open to correction.
 
-**Please double-check:** Should unbound propositional occurrences use the glossary's आस्थिति or a more immediately familiar आढळ?
+**Please double-check:** Should syntactic occurrences use the glossary stem आस्थिति or a more immediately familiar form such as आढळ or ठिकाण?
 
 </details>
 
@@ -7928,9 +7928,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 
 **Chosen rendering/action:** बंद पद
 
-**Confidence/status:** low; not-attested as an exact compound in checked Marathi proof-theory sources; definition-controlled and provisional; open to correction.
+**Confidence/status:** low; पद supported in formal logic; exact बंद पद compound not attested in checked sources, definition-controlled and provisional; open to correction.
 
-**Please double-check:** Is बंद पद the preferred Marathi logic term for a term containing no variables, or would चररहित पद be clearer while preserving the distinction from a closed formula?
+**Please double-check:** Is बंद पद the preferred Marathi logic term for a variable-free term, or would चररहित पद be clearer?
 
 </details>
 
@@ -8177,7 +8177,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 
 **Confidence/status:** low; not-attested in checked Marathi proof-theory sources; compositional, definition-controlled and provisional; open to correction.
 
-**Please double-check:** Is आयगेन चराची अट the natural Marathi label for the stated LK side condition, including spacing and genitive form?
+**Please double-check:** Is आयगेन चराची अट the natural Marathi label for these LK and natural-deduction freshness conditions, including spacing and genitive form?
 
 </details>
 
@@ -9011,5 +9011,20 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; confirmed by the two earlier closed-term clauses and the closing closed-substitution consequence in the same frozen unit; this is parallel to the documented OLP-0072 clarification and changes no formal rule; open to correction.
 
 **Please double-check:** Does the clarification state exactly that t may be any closed term, without adding a stronger restriction or licensing an open term?
+
+</details>
+
+<details>
+<summary><strong>OLND-002 — confirmed-frozen-source-eigenvariable-summary defect with bounded target clarification</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLND-002-OLP-0087 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L58); [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:15-25](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L15); [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L52) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-61](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L57) | not yet paginated |
+
+**Chosen rendering/action:** Rephrased the Marathi summary to name the distinct restrictions on premises, conclusions and undischarged assumptions stated immediately above, without asserting absence from every premise. Preserved all rule diagrams, formulas, macros and protected tokens.
+
+**Confidence/status:** high; the defect is confirmed by direct conflict with the displayed universal-introduction premise and by the explicit existential-elimination exception; the concise repair intentionally delegates exact scope to the correct detailed clauses; open to correction.
+
+**Please double-check:** Does the repaired summary clearly name one family of rule-specific eigenvariable restrictions without implying that a is absent from A(a)?
 
 </details>
