@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 75/722 source units through OLP-0078; 226 applied decisions; 5,004 occurrences.
+Coverage: 76/722 source units through OLP-0079; 226 applied decisions; 5,042 occurrences.
 
 ## T001 — set
 
@@ -6906,6 +6906,14 @@ Coverage: 75/722 source units through OLP-0078; 226 applied decisions; 5,004 occ
 | `T108-OLP-0058-B007` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:20-33` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:20-33` | 74–75 |
 | `T108-OLP-0058-B008` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:35-35` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:35-35` | 74–75 |
 | `T108-OLP-0071-B005` | `OLP-0071` |  | `upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:13-13` | `mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:13-13` | pending |
+| `T108-OLP-0079-B006` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:16-16` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:16-16` | pending |
+| `T108-OLP-0079-B007` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | pending |
+| `T108-OLP-0079-B008` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:26-33` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:26-33` | pending |
+| `T108-OLP-0079-B009` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56` | pending |
+| `T108-OLP-0079-B010` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63` | pending |
+| `T108-OLP-0079-B011` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | pending |
+| `T108-OLP-0079-B012` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | pending |
+| `T108-OLP-0079-B013` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | pending |
 
 ## T109 — proof system / proof
 
@@ -7000,6 +7008,7 @@ Coverage: 75/722 source units through OLP-0078; 226 applied decisions; 5,004 occ
 | `T110-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 86–87 |
 | `T110-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
 | `T110-OLP-0078-B006` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:15-17` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:15-16` | pending |
+| `T110-OLP-0079-B007` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -7206,6 +7215,14 @@ Coverage: 75/722 source units through OLP-0078; 226 applied decisions; 5,004 occ
 | `T115-OLP-0075-B009` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:54-74` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:51-70` | pending |
 | `T115-OLP-0075-B011` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:110-152` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:107-149` | pending |
 | `T115-OLP-0075-B013` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210` | pending |
+| `T115-OLP-0079-B006` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:16-16` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:16-16` | pending |
+| `T115-OLP-0079-B007` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | pending |
+| `T115-OLP-0079-B008` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:26-33` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:26-33` | pending |
+| `T115-OLP-0079-B009` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56` | pending |
+| `T115-OLP-0079-B010` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63` | pending |
+| `T115-OLP-0079-B011` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | pending |
+| `T115-OLP-0079-B012` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | pending |
+| `T115-OLP-0079-B013` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | pending |
 
 ## T116 — truth-functional
 
@@ -7270,6 +7287,8 @@ Coverage: 75/722 source units through OLP-0078; 226 applied decisions; 5,004 occ
 | `T117-OLP-0058-B032` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158-159` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:157-159` | 74–75 |
 | `T117-OLP-0058-B033` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | 74–75 |
 | `T117-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 86–87 |
+| `T117-OLP-0079-B012` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | pending |
+| `T117-OLP-0079-B013` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | pending |
 
 ## T118 — theory / metatheory
 
@@ -7725,6 +7744,10 @@ Coverage: 75/722 source units through OLP-0078; 226 applied decisions; 5,004 occ
 | `T128-OLP-0078-B015` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100` | pending |
 | `T128-OLP-0078-B016` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:100-103` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:102-105` | pending |
 | `T128-OLP-0078-B017` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126` | pending |
+| `T128-OLP-0079-B010` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63` | pending |
+| `T128-OLP-0079-B011` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | pending |
+| `T128-OLP-0079-B012` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | pending |
+| `T128-OLP-0079-B013` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -8661,6 +8684,8 @@ Coverage: 75/722 source units through OLP-0078; 226 applied decisions; 5,004 occ
 | `T156-OLP-0078-B015` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100` | pending |
 | `T156-OLP-0078-B016` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:100-103` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:102-105` | pending |
 | `T156-OLP-0078-B017` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126` | pending |
+| `T156-OLP-0079-B010` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63` | pending |
+| `T156-OLP-0079-B011` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -8851,6 +8876,7 @@ Coverage: 75/722 source units through OLP-0078; 226 applied decisions; 5,004 occ
 | `T161-OLP-0075-B011` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:110-152` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:107-149` | pending |
 | `T161-OLP-0075-B013` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210` | pending |
 | `T161-OLP-0075-B018` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:252-298` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:248-293` | pending |
+| `T161-OLP-0079-B011` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | pending |
 
 ## T162 — proof-theoretic semantics
 
@@ -9082,6 +9108,7 @@ Coverage: 75/722 source units through OLP-0078; 226 applied decisions; 5,004 occ
 |---|---|---|---|---|---|
 | `T169-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 86–87 |
 | `T169-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
+| `T169-OLP-0079-B007` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | pending |
 
 ## T170 — Gottlob Frege / Alfred North Whitehead / Bertrand Russell / David Hilbert; Frege system / Hilbert system
 
@@ -9287,6 +9314,9 @@ Coverage: 75/722 source units through OLP-0078; 226 applied decisions; 5,004 occ
 | `T175-OLP-0078-B012` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:56-69` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:57-70` | pending |
 | `T175-OLP-0078-B015` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100` | pending |
 | `T175-OLP-0078-B017` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126` | pending |
+| `T175-OLP-0079-B009` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56` | pending |
+| `T175-OLP-0079-B011` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | pending |
+| `T175-OLP-0079-B013` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | pending |
 
 ## T176 — end-sequent
 
@@ -9583,6 +9613,14 @@ Coverage: 75/722 source units through OLP-0078; 226 applied decisions; 5,004 occ
 | `T184-OLP-0078-B014` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:75-78` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:77-80` | pending |
 | `T184-OLP-0078-B015` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100` | pending |
 | `T184-OLP-0078-B017` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126` | pending |
+| `T184-OLP-0079-B006` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:16-16` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:16-16` | pending |
+| `T184-OLP-0079-B007` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | pending |
+| `T184-OLP-0079-B008` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:26-33` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:26-33` | pending |
+| `T184-OLP-0079-B009` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56` | pending |
+| `T184-OLP-0079-B010` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63` | pending |
+| `T184-OLP-0079-B011` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | pending |
+| `T184-OLP-0079-B012` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | pending |
+| `T184-OLP-0079-B013` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 

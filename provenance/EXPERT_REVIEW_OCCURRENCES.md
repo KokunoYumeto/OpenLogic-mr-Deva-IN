@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **75/722 source units**, 832 aligned translated blocks, 5004 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
+Current scope: **76/722 source units**, 840 aligned translated blocks, 5042 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -5754,7 +5754,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T108 — propositional logic</strong> (9 occurrences; routine priority)</summary>
+<summary><strong>T108 — propositional logic</strong> (17 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5767,6 +5767,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T108-OLP-0058-B007 | OLP-0058 · 7.2 विधानीय सूत्र | [upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:20-33](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex#L20) | [mr/content/propositional-logic/syntax-and-semantics/formulas.tex:20-33](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex#L20) | 74–75 |
 | T108-OLP-0058-B008 | OLP-0058 · 7.2 विधानीय सूत्र | [upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:35-35](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex#L35) | [mr/content/propositional-logic/syntax-and-semantics/formulas.tex:35-35](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex#L35) | 74–75 |
 | T108-OLP-0071-B005 | OLP-0071 ·  | [upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex:13-13](../upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex#L13) | [mr/content/first-order-logic/sequent-calculus/propositional-rules.tex:13-13](../mr/content/first-order-logic/sequent-calculus/propositional-rules.tex#L13) | not yet paginated |
+| T108-OLP-0079-B006 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:16-16](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L16) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:16-16](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L16) | not yet paginated |
+| T108-OLP-0079-B007 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | not yet paginated |
+| T108-OLP-0079-B008 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:26-33](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L26) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:26-33](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L26) | not yet paginated |
+| T108-OLP-0079-B009 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L35) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L35) | not yet paginated |
+| T108-OLP-0079-B010 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L58) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L58) | not yet paginated |
+| T108-OLP-0079-B011 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | not yet paginated |
+| T108-OLP-0079-B012 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L99) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L99) | not yet paginated |
+| T108-OLP-0079-B013 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | not yet paginated |
 
 **Chosen rendering/action:** विधानीय तर्कशास्त्र
 
@@ -5820,7 +5828,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (7 occurrences; medium priority)</summary>
+<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (8 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5831,6 +5839,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T110-OLP-0068-B009 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L66) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L67) | 86–87 |
 | T110-OLP-0077-B007 | OLP-0077 ·  | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L20) | not yet paginated |
 | T110-OLP-0078-B006 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:15-17](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L15) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:15-16](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L15) | not yet paginated |
+| T110-OLP-0079-B007 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | not yet paginated |
 
 **Chosen rendering/action:** संपूर्णता / संपूर्णता प्रमेय / सत्यता-फलनात्मक संपूर्णता
 
@@ -5941,7 +5950,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T115 — propositional connective / logical connective</strong> (31 occurrences; medium priority)</summary>
+<summary><strong>T115 — propositional connective / logical connective</strong> (39 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5976,6 +5985,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T115-OLP-0075-B009 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:54-74](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L54) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:51-70](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L51) | not yet paginated |
 | T115-OLP-0075-B011 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:110-152](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L110) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:107-149](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L107) | not yet paginated |
 | T115-OLP-0075-B013 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L158) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L155) | not yet paginated |
+| T115-OLP-0079-B006 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:16-16](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L16) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:16-16](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L16) | not yet paginated |
+| T115-OLP-0079-B007 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | not yet paginated |
+| T115-OLP-0079-B008 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:26-33](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L26) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:26-33](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L26) | not yet paginated |
+| T115-OLP-0079-B009 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L35) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L35) | not yet paginated |
+| T115-OLP-0079-B010 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L58) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L58) | not yet paginated |
+| T115-OLP-0079-B011 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | not yet paginated |
+| T115-OLP-0079-B012 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L99) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L99) | not yet paginated |
+| T115-OLP-0079-B013 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | not yet paginated |
 
 **Chosen rendering/action:** विधानीय संयोजक / तार्किक संयोजक
 
@@ -6002,7 +6019,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T117 — material conditional / material implication</strong> (11 occurrences; routine priority)</summary>
+<summary><strong>T117 — material conditional / material implication</strong> (13 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6017,6 +6034,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T117-OLP-0058-B032 | OLP-0058 · 7.2 विधानीय सूत्र | [upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158-159](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex#L158) | [mr/content/propositional-logic/syntax-and-semantics/formulas.tex:157-159](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex#L157) | 74–75 |
 | T117-OLP-0058-B033 | OLP-0058 · 7.2 विधानीय सूत्र | [upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex#L161) | [mr/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex#L161) | 74–75 |
 | T117-OLP-0068-B007 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L38) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L38) | 86–87 |
+| T117-OLP-0079-B012 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L99) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L99) | not yet paginated |
+| T117-OLP-0079-B013 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | not yet paginated |
 
 **Chosen rendering/action:** वास्तविक अभिव्यंजन
 
@@ -6280,7 +6299,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (54 occurrences; medium priority)</summary>
+<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (58 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6338,6 +6357,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T128-OLP-0078-B015 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L80) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L82) | not yet paginated |
 | T128-OLP-0078-B016 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:100-103](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L100) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:102-105](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L102) | not yet paginated |
 | T128-OLP-0078-B017 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L105) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L107) | not yet paginated |
+| T128-OLP-0079-B010 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L58) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L58) | not yet paginated |
+| T128-OLP-0079-B011 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | not yet paginated |
+| T128-OLP-0079-B012 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L99) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L99) | not yet paginated |
+| T128-OLP-0079-B013 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | not yet paginated |
 
 **Chosen rendering/action:** नकरण / संधियोग / विकल्पयोग / सशर्त (संकेतार्थक) / द्विसशर्त
 
@@ -6915,7 +6938,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (23 occurrences; routine priority)</summary>
+<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (25 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6942,6 +6965,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T156-OLP-0078-B015 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L80) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L82) | not yet paginated |
 | T156-OLP-0078-B016 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:100-103](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L100) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:102-105](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L102) | not yet paginated |
 | T156-OLP-0078-B017 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L105) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L107) | not yet paginated |
+| T156-OLP-0079-B010 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L58) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L58) | not yet paginated |
+| T156-OLP-0079-B011 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | not yet paginated |
 
 **Chosen rendering/action:** सुसंगतता / विसंगतता / सुसंगत / विसंगत
 
@@ -7058,7 +7083,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T161 — premise / conclusion / antecedent / consequent / disjunct</strong> (11 occurrences; routine priority)</summary>
+<summary><strong>T161 — premise / conclusion / antecedent / consequent / disjunct</strong> (12 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7073,6 +7098,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T161-OLP-0075-B011 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:110-152](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L110) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:107-149](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L107) | not yet paginated |
 | T161-OLP-0075-B013 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L158) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L155) | not yet paginated |
 | T161-OLP-0075-B018 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:252-298](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L252) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:248-293](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L248) | not yet paginated |
+| T161-OLP-0079-B011 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | not yet paginated |
 
 **Chosen rendering/action:** आधारविधान / निष्कर्ष / पूर्वांग / उत्तरांग / विकल्पघटक
 
@@ -7201,12 +7227,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T169 — modus ponens</strong> (2 occurrences; routine priority)</summary>
+<summary><strong>T169 — modus ponens</strong> (3 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T169-OLP-0068-B007 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L38) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L38) | 86–87 |
 | T169-OLP-0068-B008 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | 86–87 |
+| T169-OLP-0079-B007 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | not yet paginated |
 
 **Chosen rendering/action:** विध्यात्मक अनुमान
 
@@ -7312,7 +7339,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)</strong> (21 occurrences; medium priority)</summary>
+<summary><strong>T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)</strong> (24 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7337,6 +7364,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T175-OLP-0078-B012 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:56-69](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L56) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:57-70](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L57) | not yet paginated |
 | T175-OLP-0078-B015 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L80) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L82) | not yet paginated |
 | T175-OLP-0078-B017 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L105) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L107) | not yet paginated |
+| T175-OLP-0079-B009 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L35) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L35) | not yet paginated |
+| T175-OLP-0079-B011 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | not yet paginated |
+| T175-OLP-0079-B013 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | not yet paginated |
 
 **Chosen rendering/action:** दुर्बलीकरण / आकुंचन / अदलाबदल / कट
 
@@ -7491,7 +7521,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T184 — derivability / provability relation</strong> (27 occurrences; medium priority)</summary>
+<summary><strong>T184 — derivability / provability relation</strong> (35 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7522,6 +7552,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T184-OLP-0078-B014 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:75-78](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L75) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:77-80](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L77) | not yet paginated |
 | T184-OLP-0078-B015 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L80) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L82) | not yet paginated |
 | T184-OLP-0078-B017 | OLP-0078 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125](../upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex#L105) | [mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126](../mr/content/first-order-logic/sequent-calculus/provability-consistency.tex#L107) | not yet paginated |
+| T184-OLP-0079-B006 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:16-16](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L16) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:16-16](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L16) | not yet paginated |
+| T184-OLP-0079-B007 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | not yet paginated |
+| T184-OLP-0079-B008 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:26-33](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L26) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:26-33](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L26) | not yet paginated |
+| T184-OLP-0079-B009 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L35) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L35) | not yet paginated |
+| T184-OLP-0079-B010 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L58) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:58-63](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L58) | not yet paginated |
+| T184-OLP-0079-B011 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L65) | not yet paginated |
+| T184-OLP-0079-B012 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L99) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L99) | not yet paginated |
+| T184-OLP-0079-B013 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धतायोग्यता / सिद्धतायोग्य
 

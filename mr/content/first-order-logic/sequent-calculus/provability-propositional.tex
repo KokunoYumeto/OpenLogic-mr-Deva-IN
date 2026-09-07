@@ -1,0 +1,138 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: provability-propositional
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{ppr}}
+      {\olfileid{pl}{seq}{ppr}}
+
+\olsection{\usetoken{S}{derivability} आणि विधानीय संयोजक}
+
+\begin{explain}
+  क्रमवर्ती कलनातील !!{derivability} संबंध~$\Proves$ हा विधानीय संयोजकांशी
+  संबंधित काही मूलभूत तथ्ये सिद्ध करण्यासाठी पुरेसा सामर्थ्यवान आहे; उदाहरणार्थ,
+  $!A \land !B
+  \Proves !A$ आणि $!A, !A \lif !B \Proves !B$ (विध्यात्मक अनुमान). ही
+  तथ्ये संपूर्णता प्रमेयाच्या सिद्धतेसाठी आवश्यक आहेत.
+\end{explain}
+
+\begin{prop}\ollabel{prop:provability-land}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-land-left} $!A \land !B \Proves
+    !A$ आणि $!A \land !B \Proves !B$ ही दोन्ही तथ्ये सत्य आहेत.
+  \item \ollabel{prop:provability-land-right} $!A, !B \Proves !A \land
+    !B$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $!A \land !B \Sequent !A$ आणि $!A \land !B \Sequent
+    !B$ या दोन्ही क्रमवर्ती !!{derivable} आहेत:
+    \begin{prooftree}
+      \Axiom$!A \fCenter !A$
+      \RightLabel{\LeftR{\land}}
+      \UnaryInf$!A \land !B \fCenter !A$
+      \DisplayProof\qquad\bottomAlignProof
+      \Axiom$!B \fCenter !B$
+      \RightLabel{\LeftR{\land}}
+      \UnaryInf$!A \land !B \fCenter !B$
+    \end{prooftree}
+    \item $!A, !B \Sequent !A \land !B$ या क्रमवर्तीची !!a{derivation} येथे आहे:
+    \begin{prooftree}
+      \Axiom$!A \fCenter !A$
+      \Axiom$!B \fCenter !B$
+      \RightLabel{\RightR{\land}}
+      \BinaryInf$!A, !B \fCenter !A \land !B$
+    \end{prooftree}
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-lor}
+  \begin{enumerate}
+  \item $!A \lor !B, \lnot !A, \lnot !B$ विसंगत आहे.
+  \item $!A \Proves !A \lor !B$ आणि $!B \Proves !A \lor !B$ ही दोन्ही तथ्ये आहेत.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $!A \lor !B, \lnot !A,
+    \lnot !B \Sequent$ या क्रमवर्तीची !!a{derivation} देऊ:
+    \begin{prooftree}
+      \Axiom$!A \fCenter !A$
+      \RightLabel{\LeftR{\lnot}}
+      \UnaryInf$\lnot !A, !A \fCenter$
+      \doubleLine
+      \UnaryInf$!A, \lnot !A, \lnot !B \fCenter$
+      \Axiom$!B \fCenter !B$
+      \RightLabel{\LeftR{\lnot}}
+      \UnaryInf$\lnot !B, !B \fCenter$
+      \doubleLine
+      \UnaryInf$!B, \lnot !A, \lnot !B \fCenter$
+      \RightLabel{\LeftR{\lor}}
+      \BinaryInf$ !A \lor !B, \lnot !A, \lnot !B \fCenter $
+    \end{prooftree}
+    (दुहेरी अनुमान-रेषा दुर्बलीकरण, आकुंचन आणि अदलाबदल यांच्या अनेक अनुमानांना
+    दर्शवतात, हे लक्षात ठेवा.)
+  \item   $!A \Sequent !A \lor !B$ आणि $!B \Sequent !A
+    \lor !B$ या दोन्ही क्रमवर्तींना !!{derivation}s आहेत:
+    \begin{prooftree}
+      \Axiom$!A \fCenter !A$
+      \RightLabel{\RightR{\lor}}
+      \UnaryInf$!A \fCenter !A \lor !B$
+      \DisplayProof\qquad\bottomAlignProof
+      \Axiom$!B \fCenter !B$
+      \RightLabel{\RightR{\lor}}
+      \UnaryInf$!B \fCenter !A \lor !B$
+    \end{prooftree}
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-lif}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-lif-left}  $!A, !A \lif !B \Proves !B$.
+  \item \ollabel{prop:provability-lif-right}
+    $\lnot !A \Proves !A \lif !B$ आणि $!B \Proves !A \lif !B$ ही दोन्ही तथ्ये आहेत.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $!A \lif !B, !A \Sequent !B$ ही क्रमवर्ती !!{derivable} आहे:
+      \begin{prooftree}
+        \Axiom$!A \fCenter !A$
+        \Axiom$!B \fCenter !B$
+        \RightLabel{\LeftR{\lif}}
+        \BinaryInf$!A \lif !B, !A  \fCenter !B$
+      \end{prooftree}
+    \item $\lnot !A \Sequent !A \lif !B$ आणि $!B
+      \Sequent !A \lif !B$ या दोन्ही क्रमवर्ती !!{derivable} आहेत:
+      \begin{prooftree}
+        \Axiom$!A \fCenter !A$
+        \RightLabel{\LeftR{\lnot}}
+        \UnaryInf$\lnot !A, !A \fCenter$
+        \RightLabel{\LeftR{\Exchange}}
+        \UnaryInf$!A, \lnot !A \fCenter$
+        \RightLabel{\RightR{\Weakening}}
+        \UnaryInf$!A, \lnot !A \fCenter !B$
+        \RightLabel{\RightR{\lif}}
+        \UnaryInf$\lnot !A \fCenter !A \lif !B$
+        \DisplayProof\qquad\bottomAlignProof
+        \Axiom$!B \fCenter !B$
+        \RightLabel{\LeftR{\Weakening}}
+        \UnaryInf$!A, !B \fCenter !B$
+        \RightLabel{\RightR{\lif}}
+        \UnaryInf$!B \fCenter !A \lif !B$
+      \end{prooftree}
+  \end{enumerate}
+\end{proof}
+
+\end{document}
