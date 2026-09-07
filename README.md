@@ -19,8 +19,8 @@ form. The 89-page PDF was built twice to identical bytes and every page was
 inspected. Its offline HTML companion passed exact source-conversion, structure,
 asset, proof-display and desktop/mobile browser checks.
 
-Editable source after that release has progressed through OLP-0092: **89/722
-units** and 964 aligned content blocks. OLP-0069 is the Sequent Calculus chapter
+Editable source after that release has progressed through OLP-0093: **90/722
+units** and 973 aligned content blocks. OLP-0069 is the Sequent Calculus chapter
 driver; OLP-0070 defines its sequents, initial sequents, derivation trees and rule
 classes; OLP-0071 and OLP-0072 give the propositional and quantifier rules;
 OLP-0073–OLP-0076 cover structural rules, derivations and worked proofs,
@@ -36,7 +36,8 @@ examples. OLP-0089 develops three worked proof searches and supplies their
 exercise sets, OLP-0090 extends the worked proofs and exercises to quantifiers,
 OLP-0091 defines natural-deduction theoremhood, derivability, consistency,
 transitivity and compactness, and OLP-0092 proves its first consequences for
-derivability and inconsistency. These twenty-four units are not yet part
+derivability and inconsistency. OLP-0093 establishes the conjunction, disjunction
+and conditional provability facts. These twenty-five units are not yet part
 of the v0.6 reader or release archive.
 
 - **Current release:** [आठ प्रकरणे — PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eight-chapters-v0.6).
@@ -92,8 +93,8 @@ The evidence also preserves the formal retraction of a
 shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The frozen
 65-unit source-checkpoint evidence explicitly distinguishes preserved original
 pages from hash-pinned short web observations whose origin HTML bytes were
-unavailable. The synchronized root provenance now covers the 89 translated units
-through OLP-0092. A bounded independent model audit of OLP-0071–OLP-0072 found no
+unavailable. The synchronized root provenance now covers the 90 translated units
+through OLP-0093. A bounded independent model audit of OLP-0071–OLP-0072 found no
 material mistranslation, prompted one standing-assumption clarification, and led
 to narrower overlapping choice locators plus separate confidence records for
 closed term, bound variable and eigenvariable vocabulary. This audit is not
@@ -129,7 +130,8 @@ the standing closed-term restriction for universal elimination. OLP-0091 records
 the natural-deduction definitions and proofs for theoremhood, derivability,
 consistency, reflexivity, monotonicity, transitivity and compactness. OLP-0092
 records the negation characterization of derivability and three resulting
-inconsistency propositions.
+inconsistency propositions. OLP-0093 records the basic conjunction, disjunction
+and conditional derivations needed for completeness.
 These later working records remain
 outside the v0.6 reader and release archive.
 

@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occurrences.
+Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occurrences.
 
 ## T001 — set
 
@@ -4056,6 +4056,9 @@ Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occ
 | `T044-OLP-0092-B011` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | pending |
 | `T044-OLP-0092-B014` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | pending |
 | `T044-OLP-0092-B016` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | pending |
+| `T044-OLP-0093-B009` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54` | pending |
+| `T044-OLP-0093-B011` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94` | pending |
+| `T044-OLP-0093-B014` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133` | pending |
 
 ## T045 — function / mapping
 
@@ -7123,6 +7126,15 @@ Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occ
 | `T108-OLP-0086-B014` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96` | pending |
 | `T108-OLP-0086-B016` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113` | pending |
 | `T108-OLP-0086-B017` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | pending |
+| `T108-OLP-0093-B006` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:16-16` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:16-16` | pending |
+| `T108-OLP-0093-B007` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | pending |
+| `T108-OLP-0093-B008` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:26-32` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:26-32` | pending |
+| `T108-OLP-0093-B009` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54` | pending |
+| `T108-OLP-0093-B010` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:57-62` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:57-63` | pending |
+| `T108-OLP-0093-B011` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94` | pending |
+| `T108-OLP-0093-B012` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:95-101` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:96-103` | pending |
+| `T108-OLP-0093-B013` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113` | pending |
+| `T108-OLP-0093-B014` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133` | pending |
 
 ## T109 — proof system / proof
 
@@ -7230,6 +7242,7 @@ Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occ
 | `T110-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
 | `T110-OLP-0091-B007` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | pending |
 | `T110-OLP-0092-B006` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:15-17` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:15-16` | pending |
+| `T110-OLP-0093-B007` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -7508,6 +7521,15 @@ Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occ
 | `T115-OLP-0089-B009` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:39-51` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:37-48` | pending |
 | `T115-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
 | `T115-OLP-0089-B015` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | pending |
+| `T115-OLP-0093-B006` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:16-16` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:16-16` | pending |
+| `T115-OLP-0093-B007` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | pending |
+| `T115-OLP-0093-B008` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:26-32` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:26-32` | pending |
+| `T115-OLP-0093-B009` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54` | pending |
+| `T115-OLP-0093-B010` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:57-62` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:57-63` | pending |
+| `T115-OLP-0093-B011` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94` | pending |
+| `T115-OLP-0093-B012` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:95-101` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:96-103` | pending |
+| `T115-OLP-0093-B013` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113` | pending |
+| `T115-OLP-0093-B014` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133` | pending |
 
 ## T116 — truth-functional
 
@@ -7574,6 +7596,9 @@ Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occ
 | `T117-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 86–87 |
 | `T117-OLP-0079-B012` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | pending |
 | `T117-OLP-0079-B013` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | pending |
+| `T117-OLP-0093-B012` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:95-101` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:96-103` | pending |
+| `T117-OLP-0093-B013` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113` | pending |
+| `T117-OLP-0093-B014` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133` | pending |
 
 ## T118 — theory / metatheory
 
@@ -8165,6 +8190,11 @@ Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occ
 | `T128-OLP-0092-B014` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | pending |
 | `T128-OLP-0092-B015` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106` | pending |
 | `T128-OLP-0092-B016` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | pending |
+| `T128-OLP-0093-B010` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:57-62` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:57-63` | pending |
+| `T128-OLP-0093-B011` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94` | pending |
+| `T128-OLP-0093-B012` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:95-101` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:96-103` | pending |
+| `T128-OLP-0093-B013` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113` | pending |
+| `T128-OLP-0093-B014` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -9017,6 +9047,7 @@ Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occ
 | `T152-OLP-0088-B006` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:15-21` | `mr/content/first-order-logic/natural-deduction/derivations.tex:15-20` | pending |
 | `T152-OLP-0091-B006` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18` | pending |
 | `T152-OLP-0091-B008` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | pending |
+| `T152-OLP-0093-B007` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | pending |
 
 ## T153 — truth tree / tableaux proof / resolution method and refutation
 
@@ -9298,6 +9329,8 @@ Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occ
 | `T156-OLP-0092-B014` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | pending |
 | `T156-OLP-0092-B015` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106` | pending |
 | `T156-OLP-0092-B016` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | pending |
+| `T156-OLP-0093-B010` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:57-62` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:57-63` | pending |
+| `T156-OLP-0093-B011` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -9469,6 +9502,8 @@ Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occ
 | `T159-OLP-0092-B011` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | pending |
 | `T159-OLP-0092-B014` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | pending |
 | `T159-OLP-0092-B016` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | pending |
+| `T159-OLP-0093-B011` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94` | pending |
+| `T159-OLP-0093-B014` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133` | pending |
 
 ## T160 — introduction rule / elimination rule
 
@@ -9592,6 +9627,7 @@ Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occ
 | `T161-OLP-0090-B011` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:112-135` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:106-129` | pending |
 | `T161-OLP-0090-B012` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:137-181` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:131-173` | pending |
 | `T161-OLP-0090-B013` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:183-228` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:175-218` | pending |
+| `T161-OLP-0093-B011` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94` | pending |
 
 ## T162 — proof-theoretic semantics
 
@@ -9825,6 +9861,8 @@ Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occ
 | `T169-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 86–87 |
 | `T169-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 86–87 |
 | `T169-OLP-0079-B007` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | pending |
+| `T169-OLP-0093-B007` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | pending |
+| `T169-OLP-0093-B013` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113` | pending |
 
 ## T170 — Gottlob Frege / Alfred North Whitehead / Bertrand Russell / David Hilbert; Frege system / Hilbert system
 
@@ -10666,6 +10704,15 @@ Coverage: 89/722 source units through OLP-0092; 233 applied decisions; 6,092 occ
 | `T184-OLP-0092-B013` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85` | pending |
 | `T184-OLP-0092-B014` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | pending |
 | `T184-OLP-0092-B016` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129` | pending |
+| `T184-OLP-0093-B006` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:16-16` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:16-16` | pending |
+| `T184-OLP-0093-B007` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | pending |
+| `T184-OLP-0093-B008` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:26-32` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:26-32` | pending |
+| `T184-OLP-0093-B009` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54` | pending |
+| `T184-OLP-0093-B010` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:57-62` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:57-63` | pending |
+| `T184-OLP-0093-B011` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94` | pending |
+| `T184-OLP-0093-B012` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:95-101` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:96-103` | pending |
+| `T184-OLP-0093-B013` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113` | pending |
+| `T184-OLP-0093-B014` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133` | pending |
 
 ## T185 — intuitionistic logic
 

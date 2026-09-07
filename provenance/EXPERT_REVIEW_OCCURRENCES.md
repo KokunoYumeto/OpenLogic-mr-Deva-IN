@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **89/722 source units**, 964 aligned translated blocks, 6092 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
+Current scope: **90/722 source units**, 973 aligned translated blocks, 6139 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -3382,7 +3382,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T044 — computability / formula / derivation</strong> (201 occurrences; high priority)</summary>
+<summary><strong>T044 — computability / formula / derivation</strong> (204 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3587,6 +3587,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T044-OLP-0092-B011 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L63) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L63) | not yet paginated |
 | T044-OLP-0092-B014 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L87) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L87) | not yet paginated |
 | T044-OLP-0092-B016 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L108) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L108) | not yet paginated |
+| T044-OLP-0093-B009 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L34) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L34) | not yet paginated |
+| T044-OLP-0093-B011 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L64) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L65) | not yet paginated |
+| T044-OLP-0093-B014 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L113) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L115) | not yet paginated |
 
 **Chosen rendering/action:** संगणनीयता / सूत्र / निष्पत्ती
 
@@ -5955,7 +5958,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T108 — propositional logic</strong> (25 occurrences; routine priority)</summary>
+<summary><strong>T108 — propositional logic</strong> (34 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5984,6 +5987,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T108-OLP-0086-B014 | OLP-0086 ·  | [upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96](../upstream/content/first-order-logic/natural-deduction/propositional-rules.tex#L96) | [mr/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96](../mr/content/first-order-logic/natural-deduction/propositional-rules.tex#L96) | not yet paginated |
 | T108-OLP-0086-B016 | OLP-0086 ·  | [upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113](../upstream/content/first-order-logic/natural-deduction/propositional-rules.tex#L111) | [mr/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113](../mr/content/first-order-logic/natural-deduction/propositional-rules.tex#L111) | not yet paginated |
 | T108-OLP-0086-B017 | OLP-0086 ·  | [upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118](../upstream/content/first-order-logic/natural-deduction/propositional-rules.tex#L115) | [mr/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118](../mr/content/first-order-logic/natural-deduction/propositional-rules.tex#L115) | not yet paginated |
+| T108-OLP-0093-B006 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:16-16](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L16) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:16-16](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L16) | not yet paginated |
+| T108-OLP-0093-B007 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L18) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L18) | not yet paginated |
+| T108-OLP-0093-B008 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:26-32](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L26) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:26-32](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L26) | not yet paginated |
+| T108-OLP-0093-B009 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L34) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L34) | not yet paginated |
+| T108-OLP-0093-B010 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:57-62](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L57) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:57-63](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L57) | not yet paginated |
+| T108-OLP-0093-B011 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L64) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L65) | not yet paginated |
+| T108-OLP-0093-B012 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:95-101](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L95) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:96-103](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L96) | not yet paginated |
+| T108-OLP-0093-B013 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L103) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L105) | not yet paginated |
+| T108-OLP-0093-B014 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L113) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L115) | not yet paginated |
 
 **Chosen rendering/action:** विधानीय तर्कशास्त्र
 
@@ -6045,7 +6057,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (12 occurrences; medium priority)</summary>
+<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (13 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6061,6 +6073,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T110-OLP-0080-B006 | OLP-0080 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22](../upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex#L18) | [mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21](../mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex#L17) | not yet paginated |
 | T110-OLP-0091-B007 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | not yet paginated |
 | T110-OLP-0092-B006 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:15-17](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L15) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:15-16](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L15) | not yet paginated |
+| T110-OLP-0093-B007 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L18) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L18) | not yet paginated |
 
 **Chosen rendering/action:** संपूर्णता / संपूर्णता प्रमेय / सत्यता-फलनात्मक संपूर्णता
 
@@ -6231,7 +6244,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T115 — propositional connective / logical connective</strong> (43 occurrences; medium priority)</summary>
+<summary><strong>T115 — propositional connective / logical connective</strong> (52 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6278,6 +6291,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T115-OLP-0089-B009 | OLP-0089 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things.tex:39-51](../upstream/content/first-order-logic/natural-deduction/proving-things.tex#L39) | [mr/content/first-order-logic/natural-deduction/proving-things.tex:37-48](../mr/content/first-order-logic/natural-deduction/proving-things.tex#L37) | not yet paginated |
 | T115-OLP-0089-B011 | OLP-0089 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96](../upstream/content/first-order-logic/natural-deduction/proving-things.tex#L57) | [mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89](../mr/content/first-order-logic/natural-deduction/proving-things.tex#L53) | not yet paginated |
 | T115-OLP-0089-B015 | OLP-0089 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265](../upstream/content/first-order-logic/natural-deduction/proving-things.tex#L178) | [mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258](../mr/content/first-order-logic/natural-deduction/proving-things.tex#L171) | not yet paginated |
+| T115-OLP-0093-B006 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:16-16](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L16) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:16-16](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L16) | not yet paginated |
+| T115-OLP-0093-B007 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L18) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L18) | not yet paginated |
+| T115-OLP-0093-B008 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:26-32](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L26) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:26-32](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L26) | not yet paginated |
+| T115-OLP-0093-B009 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L34) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L34) | not yet paginated |
+| T115-OLP-0093-B010 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:57-62](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L57) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:57-63](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L57) | not yet paginated |
+| T115-OLP-0093-B011 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L64) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L65) | not yet paginated |
+| T115-OLP-0093-B012 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:95-101](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L95) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:96-103](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L96) | not yet paginated |
+| T115-OLP-0093-B013 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L103) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L105) | not yet paginated |
+| T115-OLP-0093-B014 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L113) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L115) | not yet paginated |
 
 **Chosen rendering/action:** विधानीय संयोजक / तार्किक संयोजक
 
@@ -6304,7 +6326,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T117 — material conditional / material implication</strong> (13 occurrences; routine priority)</summary>
+<summary><strong>T117 — material conditional / material implication</strong> (16 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6321,6 +6343,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T117-OLP-0068-B007 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L38) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L38) | 86–87 |
 | T117-OLP-0079-B012 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L99) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L99) | not yet paginated |
 | T117-OLP-0079-B013 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L107) | not yet paginated |
+| T117-OLP-0093-B012 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:95-101](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L95) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:96-103](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L96) | not yet paginated |
+| T117-OLP-0093-B013 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L103) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L105) | not yet paginated |
+| T117-OLP-0093-B014 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L113) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L115) | not yet paginated |
 
 **Chosen rendering/action:** वास्तविक अभिव्यंजन
 
@@ -6686,7 +6711,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (88 occurrences; medium priority)</summary>
+<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (93 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6778,6 +6803,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T128-OLP-0092-B014 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L87) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L87) | not yet paginated |
 | T128-OLP-0092-B015 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L103) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L103) | not yet paginated |
 | T128-OLP-0092-B016 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L108) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L108) | not yet paginated |
+| T128-OLP-0093-B010 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:57-62](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L57) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:57-63](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L57) | not yet paginated |
+| T128-OLP-0093-B011 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L64) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L65) | not yet paginated |
+| T128-OLP-0093-B012 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:95-101](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L95) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:96-103](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L96) | not yet paginated |
+| T128-OLP-0093-B013 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L103) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L105) | not yet paginated |
+| T128-OLP-0093-B014 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L113) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L115) | not yet paginated |
 
 **Chosen rendering/action:** नकरण / संधियोग / विकल्पयोग / सशर्त (संकेतार्थक) / द्विसशर्त
 
@@ -7314,7 +7344,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T152 — natural deduction / sequent calculus</strong> (31 occurrences; routine priority)</summary>
+<summary><strong>T152 — natural deduction / sequent calculus</strong> (32 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7349,6 +7379,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T152-OLP-0088-B006 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:15-21](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L15) | [mr/content/first-order-logic/natural-deduction/derivations.tex:15-20](../mr/content/first-order-logic/natural-deduction/derivations.tex#L15) | not yet paginated |
 | T152-OLP-0091-B006 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
 | T152-OLP-0091-B008 | OLP-0091 ·  | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | not yet paginated |
+| T152-OLP-0093-B007 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L18) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L18) | not yet paginated |
 
 **Chosen rendering/action:** नैसर्गिक निगमन / क्रमवर्ती कलन
 
@@ -7494,7 +7525,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (81 occurrences; routine priority)</summary>
+<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (83 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7579,6 +7610,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T156-OLP-0092-B014 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L87) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L87) | not yet paginated |
 | T156-OLP-0092-B015 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L103) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L103) | not yet paginated |
 | T156-OLP-0092-B016 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L108) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L108) | not yet paginated |
+| T156-OLP-0093-B010 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:57-62](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L57) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:57-63](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L57) | not yet paginated |
+| T156-OLP-0093-B011 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L64) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L65) | not yet paginated |
 
 **Chosen rendering/action:** सुसंगतता / विसंगतता / सुसंगत / विसंगत
 
@@ -7663,7 +7696,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T159 — assumption / discharge / discharged / undischarged</strong> (47 occurrences; medium priority)</summary>
+<summary><strong>T159 — assumption / discharge / discharged / undischarged</strong> (49 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7714,6 +7747,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T159-OLP-0092-B011 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L63) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L63) | not yet paginated |
 | T159-OLP-0092-B014 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L87) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L87) | not yet paginated |
 | T159-OLP-0092-B016 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L108) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L108) | not yet paginated |
+| T159-OLP-0093-B011 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L64) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L65) | not yet paginated |
+| T159-OLP-0093-B014 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L113) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L115) | not yet paginated |
 
 **Chosen rendering/action:** गृहीतक / मुक्त करणे / मुक्त केलेले / मुक्त न केलेले
 
@@ -7768,7 +7803,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T161 — premise / conclusion / antecedent / consequent / disjunct</strong> (42 occurrences; routine priority)</summary>
+<summary><strong>T161 — premise / conclusion / antecedent / consequent / disjunct</strong> (43 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7814,6 +7849,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T161-OLP-0090-B011 | OLP-0090 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:112-135](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L112) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:106-129](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L106) | not yet paginated |
 | T161-OLP-0090-B012 | OLP-0090 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:137-181](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L137) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:131-173](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L131) | not yet paginated |
 | T161-OLP-0090-B013 | OLP-0090 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:183-228](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L183) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:175-218](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L175) | not yet paginated |
+| T161-OLP-0093-B011 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L64) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L65) | not yet paginated |
 
 **Chosen rendering/action:** आधारविधान / निष्कर्ष / पूर्वांग / उत्तरांग / विकल्पघटक
 
@@ -7943,13 +7979,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T169 — modus ponens</strong> (3 occurrences; routine priority)</summary>
+<summary><strong>T169 — modus ponens</strong> (5 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T169-OLP-0068-B007 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L38) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L38) | 86–87 |
 | T169-OLP-0068-B008 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | 86–87 |
 | T169-OLP-0079-B007 | OLP-0079 ·  | [upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | [mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24](../mr/content/first-order-logic/sequent-calculus/provability-propositional.tex#L18) | not yet paginated |
+| T169-OLP-0093-B007 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L18) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L18) | not yet paginated |
+| T169-OLP-0093-B013 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L103) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L105) | not yet paginated |
 
 **Chosen rendering/action:** विध्यात्मक अनुमान
 
@@ -8484,7 +8522,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T184 — derivability / provability relation</strong> (115 occurrences; medium priority)</summary>
+<summary><strong>T184 — derivability / provability relation</strong> (124 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8603,6 +8641,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T184-OLP-0092-B013 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L82) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L82) | not yet paginated |
 | T184-OLP-0092-B014 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L87) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L87) | not yet paginated |
 | T184-OLP-0092-B016 | OLP-0092 ·  | [upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129](../upstream/content/first-order-logic/natural-deduction/provability-consistency.tex#L108) | [mr/content/first-order-logic/natural-deduction/provability-consistency.tex:108-129](../mr/content/first-order-logic/natural-deduction/provability-consistency.tex#L108) | not yet paginated |
+| T184-OLP-0093-B006 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:16-16](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L16) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:16-16](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L16) | not yet paginated |
+| T184-OLP-0093-B007 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L18) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L18) | not yet paginated |
+| T184-OLP-0093-B008 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:26-32](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L26) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:26-32](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L26) | not yet paginated |
+| T184-OLP-0093-B009 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L34) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L34) | not yet paginated |
+| T184-OLP-0093-B010 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:57-62](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L57) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:57-63](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L57) | not yet paginated |
+| T184-OLP-0093-B011 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L64) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L65) | not yet paginated |
+| T184-OLP-0093-B012 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:95-101](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L95) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:96-103](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L96) | not yet paginated |
+| T184-OLP-0093-B013 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L103) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L105) | not yet paginated |
+| T184-OLP-0093-B014 | OLP-0093 ·  | [upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131](../upstream/content/first-order-logic/natural-deduction/provability-propositional.tex#L113) | [mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133](../mr/content/first-order-logic/natural-deduction/provability-propositional.tex#L115) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धतायोग्यता / सिद्धतायोग्य
 
