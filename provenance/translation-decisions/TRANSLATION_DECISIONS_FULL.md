@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occurrences.
+Coverage: 91/722 source units through OLP-0094; 233 applied decisions; 6,162 occurrences.
 
 ## T001 — set
 
@@ -4059,6 +4059,9 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T044-OLP-0093-B009` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:34-54` | pending |
 | `T044-OLP-0093-B011` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:64-93` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:65-94` | pending |
 | `T044-OLP-0093-B014` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133` | pending |
+| `T044-OLP-0094-B009` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | pending |
+| `T044-OLP-0094-B012` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:43-51` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:43-51` | pending |
+| `T044-OLP-0094-B013` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:53-61` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:53-61` | pending |
 
 ## T045 — function / mapping
 
@@ -4101,12 +4104,6 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T045-OLP-0019-B018` | `OLP-0019` | 2.8 संबंधांवरील क्रिया | `upstream/content/sets-functions-relations/relations/operations.tex:56-58` | `mr/content/sets-functions-relations/relations/operations.tex:57-58` | 22 |
 | `T045-OLP-0019-B019` | `OLP-0019` | 2.8 संबंधांवरील क्रिया | `upstream/content/sets-functions-relations/relations/operations.tex:60-65` | `mr/content/sets-functions-relations/relations/operations.tex:60-67` | 22 |
 | `T045-OLP-0019-B020` | `OLP-0019` | 2.8 संबंधांवरील क्रिया | `upstream/content/sets-functions-relations/relations/operations.tex:67-69` | `mr/content/sets-functions-relations/relations/operations.tex:69-71` | 22 |
-| `T045-OLP-0027-B004` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8-8` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8-8` | 32 |
-| `T045-OLP-0027-B005` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | 32 |
-| `T045-OLP-0027-B016` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:37-47` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:38-49` | 32 |
-| `T045-OLP-0028-B005` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:11-11` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:11-11` | 32 |
-| `T045-OLP-0028-B006` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:13-19` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:13-20` | 32 |
-| `T045-OLP-0028-B007` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:21-26` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:22-27` | 32 |
 | `T045-OLP-0020-B004` | `OLP-0020` | 3 फलने — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/functions/functions.tex:8-8` | `mr/content/sets-functions-relations/functions/functions.tex:8-8` | 23 |
 | `T045-OLP-0021-B004` | `OLP-0021` | 3.1 मूलभूत संकल्पना | `upstream/content/sets-functions-relations/functions/function-basics.tex:9-10` | `mr/content/sets-functions-relations/functions/function-basics.tex:9-10` | 23–25 |
 | `T045-OLP-0021-B005` | `OLP-0021` | 3.1 मूलभूत संकल्पना | `upstream/content/sets-functions-relations/functions/function-basics.tex:12-16` | `mr/content/sets-functions-relations/functions/function-basics.tex:12-16` | 23–25 |
@@ -4194,6 +4191,12 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T045-OLP-0026-B011` | `OLP-0026` | 3.6 अंशतः फलने | `upstream/content/sets-functions-relations/functions/partial-functions.tex:50-56` | `mr/content/sets-functions-relations/functions/partial-functions.tex:51-57` | 30–31 |
 | `T045-OLP-0026-B012` | `OLP-0026` | 3.6 अंशतः फलने | `upstream/content/sets-functions-relations/functions/partial-functions.tex:58-65` | `mr/content/sets-functions-relations/functions/partial-functions.tex:59-67` | 30–31 |
 | `T045-OLP-0026-B013` | `OLP-0026` | 3.6 अंशतः फलने | `upstream/content/sets-functions-relations/functions/partial-functions.tex:67-73` | `mr/content/sets-functions-relations/functions/partial-functions.tex:69-75` | 30–31 |
+| `T045-OLP-0027-B004` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8-8` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8-8` | 32 |
+| `T045-OLP-0027-B005` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | 32 |
+| `T045-OLP-0027-B016` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:37-47` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:38-49` | 32 |
+| `T045-OLP-0028-B005` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:11-11` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:11-11` | 32 |
+| `T045-OLP-0028-B006` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:13-19` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:13-20` | 32 |
+| `T045-OLP-0028-B007` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:21-26` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:22-27` | 32 |
 | `T045-OLP-0029-B006` | `OLP-0029` | 4.2 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:13-19` | `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:13-20` | 32–35 |
 | `T045-OLP-0029-B013` | `OLP-0029` | 4.2 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:87-90` | `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:85-88` | 32–35 |
 | `T045-OLP-0029-B014` | `OLP-0029` | 4.2 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:92-102` | `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:90-99` | 32–35 |
@@ -4518,12 +4521,6 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T048-OLP-0027-B004` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8-8` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8-8` | 32 |
-| `T048-OLP-0027-B005` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | 32 |
-| `T048-OLP-0027-B016` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:37-47` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:38-49` | 32 |
-| `T048-OLP-0028-B005` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:11-11` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:11-11` | 32 |
-| `T048-OLP-0028-B006` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:13-19` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:13-20` | 32 |
-| `T048-OLP-0028-B007` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:21-26` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:22-27` | 32 |
 | `T048-OLP-0022-B004` | `OLP-0022` | 3.2 फलनांचे प्रकार | `upstream/content/sets-functions-relations/functions/function-kinds.tex:9-10` | `mr/content/sets-functions-relations/functions/function-kinds.tex:9-10` | 25–26 |
 | `T048-OLP-0022-B005` | `OLP-0022` | 3.2 फलनांचे प्रकार | `upstream/content/sets-functions-relations/functions/function-kinds.tex:12-14` | `mr/content/sets-functions-relations/functions/function-kinds.tex:12-14` | 25–26 |
 | `T048-OLP-0022-B006` | `OLP-0022` | 3.2 फलनांचे प्रकार | `upstream/content/sets-functions-relations/functions/function-kinds.tex:16-19` | `mr/content/sets-functions-relations/functions/function-kinds.tex:16-18` | 25–26 |
@@ -4572,6 +4569,12 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T048-OLP-0025-B009` | `OLP-0025` | 3.5 फलनांचे संयोजन | `upstream/content/sets-functions-relations/functions/composition.tex:52-55` | `mr/content/sets-functions-relations/functions/composition.tex:52-56` | 29–30 |
 | `T048-OLP-0025-B010` | `OLP-0025` | 3.5 फलनांचे संयोजन | `upstream/content/sets-functions-relations/functions/composition.tex:57-60` | `mr/content/sets-functions-relations/functions/composition.tex:58-62` | 29–30 |
 | `T048-OLP-0025-B011` | `OLP-0025` | 3.5 फलनांचे संयोजन | `upstream/content/sets-functions-relations/functions/composition.tex:62-65` | `mr/content/sets-functions-relations/functions/composition.tex:64-67` | 29–30 |
+| `T048-OLP-0027-B004` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8-8` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8-8` | 32 |
+| `T048-OLP-0027-B005` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | 32 |
+| `T048-OLP-0027-B016` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:37-47` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:38-49` | 32 |
+| `T048-OLP-0028-B005` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:11-11` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:11-11` | 32 |
+| `T048-OLP-0028-B006` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:13-19` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:13-20` | 32 |
+| `T048-OLP-0028-B007` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:21-26` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:22-27` | 32 |
 | `T048-OLP-0029-B006` | `OLP-0029` | 4.2 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:13-19` | `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:13-20` | 32–35 |
 | `T048-OLP-0029-B013` | `OLP-0029` | 4.2 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:87-90` | `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:85-88` | 32–35 |
 | `T048-OLP-0029-B014` | `OLP-0029` | 4.2 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:92-102` | `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:90-99` | 32–35 |
@@ -4742,12 +4745,6 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T050-OLP-0027-B004` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8-8` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8-8` | 32 |
-| `T050-OLP-0027-B005` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | 32 |
-| `T050-OLP-0027-B016` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:37-47` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:38-49` | 32 |
-| `T050-OLP-0028-B005` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:11-11` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:11-11` | 32 |
-| `T050-OLP-0028-B006` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:13-19` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:13-20` | 32 |
-| `T050-OLP-0028-B007` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:21-26` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:22-27` | 32 |
 | `T050-OLP-0022-B004` | `OLP-0022` | 3.2 फलनांचे प्रकार | `upstream/content/sets-functions-relations/functions/function-kinds.tex:9-10` | `mr/content/sets-functions-relations/functions/function-kinds.tex:9-10` | 25–26 |
 | `T050-OLP-0022-B005` | `OLP-0022` | 3.2 फलनांचे प्रकार | `upstream/content/sets-functions-relations/functions/function-kinds.tex:12-14` | `mr/content/sets-functions-relations/functions/function-kinds.tex:12-14` | 25–26 |
 | `T050-OLP-0022-B006` | `OLP-0022` | 3.2 फलनांचे प्रकार | `upstream/content/sets-functions-relations/functions/function-kinds.tex:16-19` | `mr/content/sets-functions-relations/functions/function-kinds.tex:16-18` | 25–26 |
@@ -4796,6 +4793,12 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T050-OLP-0025-B009` | `OLP-0025` | 3.5 फलनांचे संयोजन | `upstream/content/sets-functions-relations/functions/composition.tex:52-55` | `mr/content/sets-functions-relations/functions/composition.tex:52-56` | 29–30 |
 | `T050-OLP-0025-B010` | `OLP-0025` | 3.5 फलनांचे संयोजन | `upstream/content/sets-functions-relations/functions/composition.tex:57-60` | `mr/content/sets-functions-relations/functions/composition.tex:58-62` | 29–30 |
 | `T050-OLP-0025-B011` | `OLP-0025` | 3.5 फलनांचे संयोजन | `upstream/content/sets-functions-relations/functions/composition.tex:62-65` | `mr/content/sets-functions-relations/functions/composition.tex:64-67` | 29–30 |
+| `T050-OLP-0027-B004` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8-8` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8-8` | 32 |
+| `T050-OLP-0027-B005` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | 32 |
+| `T050-OLP-0027-B016` | `OLP-0027` | 4 संचांचे आकारमान — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:37-47` | `mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:38-49` | 32 |
+| `T050-OLP-0028-B005` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:11-11` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:11-11` | 32 |
+| `T050-OLP-0028-B006` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:13-19` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:13-20` | 32 |
+| `T050-OLP-0028-B007` | `OLP-0028` | 4.1 प्रस्तावना | `upstream/content/sets-functions-relations/size-of-sets/introduction.tex:21-26` | `mr/content/sets-functions-relations/size-of-sets/introduction.tex:22-27` | 32 |
 | `T050-OLP-0029-B006` | `OLP-0029` | 4.2 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:13-19` | `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:13-20` | 32–35 |
 | `T050-OLP-0029-B029` | `OLP-0029` | 4.2 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:213-225` | `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:216-229` | 32–35 |
 | `T050-OLP-0029-B030` | `OLP-0029` | 4.2 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:227-231` | `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:231-236` | 32–35 |
@@ -7243,6 +7246,7 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T110-OLP-0091-B007` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | pending |
 | `T110-OLP-0092-B006` | `OLP-0092` |  | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:15-17` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:15-16` | pending |
 | `T110-OLP-0093-B007` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | pending |
+| `T110-OLP-0094-B007` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -7377,6 +7381,11 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T112-OLP-0090-B013` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:183-228` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:175-218` | pending |
 | `T112-OLP-0090-B014` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:230-243` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:220-233` | pending |
 | `T112-OLP-0090-B015` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:245-253` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:235-243` | pending |
+| `T112-OLP-0094-B006` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:14-14` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:14-14` | pending |
+| `T112-OLP-0094-B008` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:21-25` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:21-25` | pending |
+| `T112-OLP-0094-B009` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | pending |
+| `T112-OLP-0094-B012` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:43-51` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:43-51` | pending |
+| `T112-OLP-0094-B013` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:53-61` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:53-61` | pending |
 
 ## T113 — classical logic / classical
 
@@ -8558,6 +8567,7 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T139-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:66-72` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:66-72` | pending |
 | `T139-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
 | `T139-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
+| `T139-OLP-0094-B008` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:21-25` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:21-25` | pending |
 
 ## T140 — inductive hypothesis
 
@@ -8991,6 +9001,7 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T151-OLP-0090-B012` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:137-181` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:131-173` | pending |
 | `T151-OLP-0090-B013` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:183-228` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:175-218` | pending |
 | `T151-OLP-0090-B015` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:245-253` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:235-243` | pending |
+| `T151-OLP-0094-B007` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -9048,6 +9059,7 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T152-OLP-0091-B006` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:15-18` | pending |
 | `T152-OLP-0091-B008` | `OLP-0091` |  | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | pending |
 | `T152-OLP-0093-B007` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | pending |
+| `T152-OLP-0094-B007` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | pending |
 
 ## T153 — truth tree / tableaux proof / resolution method and refutation
 
@@ -9560,6 +9572,9 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T160-OLP-0090-B012` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:137-181` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:131-173` | pending |
 | `T160-OLP-0090-B013` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:183-228` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:175-218` | pending |
 | `T160-OLP-0090-B015` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:245-253` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:235-243` | pending |
+| `T160-OLP-0094-B009` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | pending |
+| `T160-OLP-0094-B012` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:43-51` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:43-51` | pending |
+| `T160-OLP-0094-B013` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:53-61` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:53-61` | pending |
 
 ## T161 — premise / conclusion / antecedent / consequent / disjunct
 
@@ -10347,6 +10362,7 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T178-OLP-0090-B008` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:88-94` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:84-90` | pending |
 | `T178-OLP-0090-B011` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:112-135` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:106-129` | pending |
 | `T178-OLP-0090-B012` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:137-181` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:131-173` | pending |
+| `T178-OLP-0094-B009` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | pending |
 
 ## T179 — eigenvariable condition
 
@@ -10429,6 +10445,7 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T179-OLP-0090-B008` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:88-94` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:84-90` | pending |
 | `T179-OLP-0090-B011` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:112-135` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:106-129` | pending |
 | `T179-OLP-0090-B012` | `OLP-0090` |  | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:137-181` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:131-173` | pending |
+| `T179-OLP-0094-B009` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | pending |
 
 ## T180 — Rules for [logical symbol] (heading construction)
 
@@ -10713,6 +10730,12 @@ Coverage: 90/722 source units through OLP-0093; 233 applied decisions; 6,139 occ
 | `T184-OLP-0093-B012` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:95-101` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:96-103` | pending |
 | `T184-OLP-0093-B013` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113` | pending |
 | `T184-OLP-0093-B014` | `OLP-0093` |  | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133` | pending |
+| `T184-OLP-0094-B006` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:14-14` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:14-14` | pending |
+| `T184-OLP-0094-B007` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | pending |
+| `T184-OLP-0094-B008` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:21-25` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:21-25` | pending |
+| `T184-OLP-0094-B009` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | pending |
+| `T184-OLP-0094-B012` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:43-51` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:43-51` | pending |
+| `T184-OLP-0094-B013` | `OLP-0094` |  | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:53-61` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:53-61` | pending |
 
 ## T185 — intuitionistic logic
 

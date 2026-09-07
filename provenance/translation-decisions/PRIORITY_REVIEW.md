@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 26 urgent/high decisions and
-912 current occurrences. Normal and low items remain in the full index.
+917 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -838,6 +838,9 @@ This view contains 26 urgent/high decisions and
 | `T044-OLP-0093-B009` | `OLP-0093` |  | 34-54 | 34-54 | pending |
 | `T044-OLP-0093-B011` | `OLP-0093` |  | 64-93 | 65-94 | pending |
 | `T044-OLP-0093-B014` | `OLP-0093` |  | 113-131 | 115-133 | pending |
+| `T044-OLP-0094-B009` | `OLP-0094` |  | 27-32 | 27-32 | pending |
+| `T044-OLP-0094-B012` | `OLP-0094` |  | 43-51 | 43-51 | pending |
+| `T044-OLP-0094-B013` | `OLP-0094` |  | 53-61 | 53-61 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
@@ -1074,6 +1077,7 @@ This view contains 26 urgent/high decisions and
 | `T178-OLP-0090-B008` | `OLP-0090` |  | 88-94 | 84-90 | pending |
 | `T178-OLP-0090-B011` | `OLP-0090` |  | 112-135 | 106-129 | pending |
 | `T178-OLP-0090-B012` | `OLP-0090` |  | 137-181 | 131-173 | pending |
+| `T178-OLP-0094-B009` | `OLP-0094` |  | 27-32 | 27-32 | pending |
 
 ## T179 — eigenvariable condition → आयगेन चराची अट
 
@@ -1140,6 +1144,7 @@ This view contains 26 urgent/high decisions and
 | `T179-OLP-0090-B008` | `OLP-0090` |  | 88-94 | 84-90 | pending |
 | `T179-OLP-0090-B011` | `OLP-0090` |  | 112-135 | 106-129 | pending |
 | `T179-OLP-0090-B012` | `OLP-0090` |  | 137-181 | 131-173 | pending |
+| `T179-OLP-0094-B009` | `OLP-0094` |  | 27-32 | 27-32 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

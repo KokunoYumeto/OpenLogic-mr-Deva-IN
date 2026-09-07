@@ -1,0 +1,63 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: provability-quantifiers
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{ntd}{qpr}
+
+\olsection{\usetoken{S}{derivability} आणि संख्यापक}
+
+\begin{explain}
+  संपूर्णता प्रमेयासाठी या विभागात स्थापित केलेली~$\Proves$ संबंधी तथ्ये
+  नैसर्गिक निगमनाच्या नियमांनी निष्पन्न होतात, हेही आवश्यक आहे.
+\end{explain}
+
+\begin{thm}
+\ollabel{thm:strong-generalization} जर $c$ हे $\Gamma$ किंवा $!A(x)$ मध्ये
+न येणारे स्थिर असेल आणि $\Gamma \Proves !A(c)$, तर $\Gamma
+\Proves \lforall[x][!A(x)]$.
+\end{thm}
+
+\begin{proof}
+$\delta$ ही $\Gamma$ पासून $!A(c)$ ची !!a{derivation} असू द्या.
+\Intro{\lforall} अनुमान जोडल्यावर आपल्याला $\lforall[x][!A(x)]$ ची
+!!a{derivation} मिळते. $c$ हे $\Gamma$ किंवा $!A(x)$ मध्ये येत नसल्यामुळे
+आयगेन चराची अट पूर्ण होते.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$!A(t) \Proves \lexists[x][!A(x)]$.}{}
+
+\tagitem{prvAll}{$\lforall[x][!A(x)] \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{पुढील ही~$\lexists[x][!A(x)]$ ची $!A(t)$ पासूनची
+  !!a{derivation} आहे:
+\begin{prooftree}
+\AxiomC{$!A(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!A(x)]$}
+\end{prooftree}}{}
+
+\tagitem{prvAll}{पुढील ही~$!A(t)$ ची $\lforall[x][!A(x)]$ पासूनची
+  !!a{derivation} आहे:
+\begin{prooftree}
+\AxiomC{$\lforall[x][!A(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!A(t)$}
+\end{prooftree}}{}
+\end{tagenumerate}
+\end{proof}
+
+\end{document}
