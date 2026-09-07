@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **84/722 source units**, 901 aligned translated blocks, 5797 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
+Current scope: **85/722 source units**, 907 aligned translated blocks, 5828 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -3166,7 +3166,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T041 — tree / root / branch / chain</strong> (32 occurrences; high priority)</summary>
+<summary><strong>T041 — tree / root / branch / chain</strong> (33 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3202,6 +3202,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T041-OLP-0075-B011 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:110-152](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L110) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:107-149](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L107) | not yet paginated |
 | T041-OLP-0075-B013 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L158) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L155) | not yet paginated |
 | T041-OLP-0075-B015 | OLP-0075 ·  | [upstream/content/first-order-logic/sequent-calculus/proving-things.tex:220-233](../upstream/content/first-order-logic/sequent-calculus/proving-things.tex#L220) | [mr/content/first-order-logic/sequent-calculus/proving-things.tex:215-229](../mr/content/first-order-logic/sequent-calculus/proving-things.tex#L215) | not yet paginated |
+| T041-OLP-0088-B007 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:23-37](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L23) | [mr/content/first-order-logic/natural-deduction/derivations.tex:22-35](../mr/content/first-order-logic/natural-deduction/derivations.tex#L22) | not yet paginated |
 
 **Chosen rendering/action:** वृक्ष / मूळ / शाखा / शृंखला
 
@@ -3358,7 +3359,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T044 — computability / formula / derivation</strong> (160 occurrences; high priority)</summary>
+<summary><strong>T044 — computability / formula / derivation</strong> (166 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3522,6 +3523,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T044-OLP-0087-B013 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L63) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L62) | not yet paginated |
 | T044-OLP-0087-B014 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L85) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L84) | not yet paginated |
 | T044-OLP-0087-B015 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L105) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L104) | not yet paginated |
+| T044-OLP-0088-B006 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:15-21](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L15) | [mr/content/first-order-logic/natural-deduction/derivations.tex:15-20](../mr/content/first-order-logic/natural-deduction/derivations.tex#L15) | not yet paginated |
+| T044-OLP-0088-B007 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:23-37](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L23) | [mr/content/first-order-logic/natural-deduction/derivations.tex:22-35](../mr/content/first-order-logic/natural-deduction/derivations.tex#L22) | not yet paginated |
+| T044-OLP-0088-B008 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:39-43](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L39) | [mr/content/first-order-logic/natural-deduction/derivations.tex:37-41](../mr/content/first-order-logic/natural-deduction/derivations.tex#L37) | not yet paginated |
+| T044-OLP-0088-B009 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L45) | [mr/content/first-order-logic/natural-deduction/derivations.tex:43-70](../mr/content/first-order-logic/natural-deduction/derivations.tex#L43) | not yet paginated |
+| T044-OLP-0088-B010 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:76-96](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L76) | [mr/content/first-order-logic/natural-deduction/derivations.tex:72-92](../mr/content/first-order-logic/natural-deduction/derivations.tex#L72) | not yet paginated |
+| T044-OLP-0088-B011 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:98-108](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L98) | [mr/content/first-order-logic/natural-deduction/derivations.tex:94-103](../mr/content/first-order-logic/natural-deduction/derivations.tex#L94) | not yet paginated |
 
 **Chosen rendering/action:** संगणनीयता / सूत्र / निष्पत्ती
 
@@ -6500,7 +6507,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T126 — sentence / proposition / statement</strong> (37 occurrences; routine priority)</summary>
+<summary><strong>T126 — sentence / proposition / statement</strong> (39 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6541,6 +6548,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T126-OLP-0087-B013 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L63) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L62) | not yet paginated |
 | T126-OLP-0087-B014 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L85) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L84) | not yet paginated |
 | T126-OLP-0087-B015 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L105) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L104) | not yet paginated |
+| T126-OLP-0088-B007 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:23-37](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L23) | [mr/content/first-order-logic/natural-deduction/derivations.tex:22-35](../mr/content/first-order-logic/natural-deduction/derivations.tex#L22) | not yet paginated |
+| T126-OLP-0088-B009 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L45) | [mr/content/first-order-logic/natural-deduction/derivations.tex:43-70](../mr/content/first-order-logic/natural-deduction/derivations.tex#L43) | not yet paginated |
 
 **Chosen rendering/action:** वाक्य / विधान
 
@@ -6590,7 +6599,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (66 occurrences; medium priority)</summary>
+<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (68 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6660,6 +6669,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T128-OLP-0086-B014 | OLP-0086 ·  | [upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96](../upstream/content/first-order-logic/natural-deduction/propositional-rules.tex#L96) | [mr/content/first-order-logic/natural-deduction/propositional-rules.tex:96-96](../mr/content/first-order-logic/natural-deduction/propositional-rules.tex#L96) | not yet paginated |
 | T128-OLP-0086-B016 | OLP-0086 ·  | [upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113](../upstream/content/first-order-logic/natural-deduction/propositional-rules.tex#L111) | [mr/content/first-order-logic/natural-deduction/propositional-rules.tex:111-113](../mr/content/first-order-logic/natural-deduction/propositional-rules.tex#L111) | not yet paginated |
 | T128-OLP-0086-B017 | OLP-0086 ·  | [upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118](../upstream/content/first-order-logic/natural-deduction/propositional-rules.tex#L115) | [mr/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118](../mr/content/first-order-logic/natural-deduction/propositional-rules.tex#L115) | not yet paginated |
+| T128-OLP-0088-B009 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L45) | [mr/content/first-order-logic/natural-deduction/derivations.tex:43-70](../mr/content/first-order-logic/natural-deduction/derivations.tex#L43) | not yet paginated |
+| T128-OLP-0088-B010 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:76-96](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L76) | [mr/content/first-order-logic/natural-deduction/derivations.tex:72-92](../mr/content/first-order-logic/natural-deduction/derivations.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** नकरण / संधियोग / विकल्पयोग / सशर्त (संकेतार्थक) / द्विसशर्त
 
@@ -7105,7 +7116,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T151 — axiomatic system / inference rule</strong> (52 occurrences; routine priority)</summary>
+<summary><strong>T151 — axiomatic system / inference rule</strong> (57 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7161,6 +7172,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T151-OLP-0087-B013 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L63) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L62) | not yet paginated |
 | T151-OLP-0087-B014 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L85) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L84) | not yet paginated |
 | T151-OLP-0087-B015 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L105) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L104) | not yet paginated |
+| T151-OLP-0088-B006 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:15-21](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L15) | [mr/content/first-order-logic/natural-deduction/derivations.tex:15-20](../mr/content/first-order-logic/natural-deduction/derivations.tex#L15) | not yet paginated |
+| T151-OLP-0088-B007 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:23-37](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L23) | [mr/content/first-order-logic/natural-deduction/derivations.tex:22-35](../mr/content/first-order-logic/natural-deduction/derivations.tex#L22) | not yet paginated |
+| T151-OLP-0088-B009 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L45) | [mr/content/first-order-logic/natural-deduction/derivations.tex:43-70](../mr/content/first-order-logic/natural-deduction/derivations.tex#L43) | not yet paginated |
+| T151-OLP-0088-B010 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:76-96](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L76) | [mr/content/first-order-logic/natural-deduction/derivations.tex:72-92](../mr/content/first-order-logic/natural-deduction/derivations.tex#L72) | not yet paginated |
+| T151-OLP-0088-B011 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:98-108](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L98) | [mr/content/first-order-logic/natural-deduction/derivations.tex:94-103](../mr/content/first-order-logic/natural-deduction/derivations.tex#L94) | not yet paginated |
 
 **Chosen rendering/action:** स्वयंसिद्धकीय पद्धत / निगमन नियम
 
@@ -7171,7 +7187,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T152 — natural deduction / sequent calculus</strong> (28 occurrences; routine priority)</summary>
+<summary><strong>T152 — natural deduction / sequent calculus</strong> (29 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7203,6 +7219,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T152-OLP-0087-B011 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L52) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:51-55](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L51) | not yet paginated |
 | T152-OLP-0087-B012 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L58) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-60](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L57) | not yet paginated |
 | T152-OLP-0087-B014 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L85) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L84) | not yet paginated |
+| T152-OLP-0088-B006 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:15-21](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L15) | [mr/content/first-order-logic/natural-deduction/derivations.tex:15-20](../mr/content/first-order-logic/natural-deduction/derivations.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** नैसर्गिक निगमन / क्रमवर्ती कलन
 
@@ -7480,12 +7497,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T158 — proof by cases / indirect proof / conditional proof</strong> (2 occurrences; medium priority)</summary>
+<summary><strong>T158 — proof by cases / indirect proof / conditional proof</strong> (3 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T158-OLP-0066-B006 | OLP-0066 · 8.3 नैसर्गिक निगमन | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:15-31](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:15-29](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L15) | 84–85 |
 | T158-OLP-0066-B007 | OLP-0066 · 8.3 नैसर्गिक निगमन | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:33-58](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L33) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:31-54](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L31) | 84–85 |
+| T158-OLP-0088-B010 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:76-96](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L76) | [mr/content/first-order-logic/natural-deduction/derivations.tex:72-92](../mr/content/first-order-logic/natural-deduction/derivations.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** प्रकरणांनुसार सिद्धता / अप्रत्यक्ष सिद्धता / सोपाधिक सिद्धता
 
@@ -7496,7 +7514,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T159 — assumption / discharge / discharged / undischarged</strong> (17 occurrences; medium priority)</summary>
+<summary><strong>T159 — assumption / discharge / discharged / undischarged</strong> (23 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7517,6 +7535,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T159-OLP-0087-B011 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L52) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:51-55](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L51) | not yet paginated |
 | T159-OLP-0087-B012 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L58) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-60](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L57) | not yet paginated |
 | T159-OLP-0087-B014 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L85) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L84) | not yet paginated |
+| T159-OLP-0088-B006 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:15-21](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L15) | [mr/content/first-order-logic/natural-deduction/derivations.tex:15-20](../mr/content/first-order-logic/natural-deduction/derivations.tex#L15) | not yet paginated |
+| T159-OLP-0088-B007 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:23-37](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L23) | [mr/content/first-order-logic/natural-deduction/derivations.tex:22-35](../mr/content/first-order-logic/natural-deduction/derivations.tex#L22) | not yet paginated |
+| T159-OLP-0088-B008 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:39-43](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L39) | [mr/content/first-order-logic/natural-deduction/derivations.tex:37-41](../mr/content/first-order-logic/natural-deduction/derivations.tex#L37) | not yet paginated |
+| T159-OLP-0088-B009 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L45) | [mr/content/first-order-logic/natural-deduction/derivations.tex:43-70](../mr/content/first-order-logic/natural-deduction/derivations.tex#L43) | not yet paginated |
+| T159-OLP-0088-B010 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:76-96](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L76) | [mr/content/first-order-logic/natural-deduction/derivations.tex:72-92](../mr/content/first-order-logic/natural-deduction/derivations.tex#L72) | not yet paginated |
+| T159-OLP-0088-B011 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:98-108](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L98) | [mr/content/first-order-logic/natural-deduction/derivations.tex:94-103](../mr/content/first-order-logic/natural-deduction/derivations.tex#L94) | not yet paginated |
 
 **Chosen rendering/action:** गृहीतक / मुक्त करणे / मुक्त केलेले / मुक्त न केलेले
 
@@ -7527,7 +7551,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T160 — introduction rule / elimination rule</strong> (13 occurrences; medium priority)</summary>
+<summary><strong>T160 — introduction rule / elimination rule</strong> (16 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7544,6 +7568,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T160-OLP-0087-B009 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:36-36](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L36) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:35-35](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L35) | not yet paginated |
 | T160-OLP-0087-B013 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L63) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L62) | not yet paginated |
 | T160-OLP-0087-B015 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L105) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L104) | not yet paginated |
+| T160-OLP-0088-B009 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L45) | [mr/content/first-order-logic/natural-deduction/derivations.tex:43-70](../mr/content/first-order-logic/natural-deduction/derivations.tex#L43) | not yet paginated |
+| T160-OLP-0088-B010 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:76-96](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L76) | [mr/content/first-order-logic/natural-deduction/derivations.tex:72-92](../mr/content/first-order-logic/natural-deduction/derivations.tex#L72) | not yet paginated |
+| T160-OLP-0088-B011 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:98-108](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L98) | [mr/content/first-order-logic/natural-deduction/derivations.tex:94-103](../mr/content/first-order-logic/natural-deduction/derivations.tex#L94) | not yet paginated |
 
 **Chosen rendering/action:** प्रवेशन नियम / विलोपन नियम
 
@@ -7554,7 +7581,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T161 — premise / conclusion / antecedent / consequent / disjunct</strong> (24 occurrences; routine priority)</summary>
+<summary><strong>T161 — premise / conclusion / antecedent / consequent / disjunct</strong> (27 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7582,6 +7609,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T161-OLP-0087-B011 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L52) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:51-55](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L51) | not yet paginated |
 | T161-OLP-0087-B012 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L58) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-60](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L57) | not yet paginated |
 | T161-OLP-0087-B013 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L63) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L62) | not yet paginated |
+| T161-OLP-0088-B007 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:23-37](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L23) | [mr/content/first-order-logic/natural-deduction/derivations.tex:22-35](../mr/content/first-order-logic/natural-deduction/derivations.tex#L22) | not yet paginated |
+| T161-OLP-0088-B009 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L45) | [mr/content/first-order-logic/natural-deduction/derivations.tex:43-70](../mr/content/first-order-logic/natural-deduction/derivations.tex#L43) | not yet paginated |
+| T161-OLP-0088-B010 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:76-96](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L76) | [mr/content/first-order-logic/natural-deduction/derivations.tex:72-92](../mr/content/first-order-logic/natural-deduction/derivations.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** आधारविधान / निष्कर्ष / पूर्वांग / उत्तरांग / विकल्पघटक
 
@@ -8231,7 +8261,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T184 — derivability / provability relation</strong> (79 occurrences; medium priority)</summary>
+<summary><strong>T184 — derivability / provability relation</strong> (80 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8314,6 +8344,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T184-OLP-0085-B007 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L26) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L25) | not yet paginated |
 | T184-OLP-0085-B008 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L31) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L30) | not yet paginated |
 | T184-OLP-0085-B010 | OLP-0085 ·  | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L47) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L44) | not yet paginated |
+| T184-OLP-0088-B008 | OLP-0088 ·  | [upstream/content/first-order-logic/natural-deduction/derivations.tex:39-43](../upstream/content/first-order-logic/natural-deduction/derivations.tex#L39) | [mr/content/first-order-logic/natural-deduction/derivations.tex:37-41](../mr/content/first-order-logic/natural-deduction/derivations.tex#L37) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धतायोग्यता / सिद्धतायोग्य
 

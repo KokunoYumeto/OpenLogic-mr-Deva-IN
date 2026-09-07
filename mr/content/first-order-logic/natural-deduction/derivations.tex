@@ -1,0 +1,105 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{der}}
+      {\olfileid{pl}{ntd}{der}}
+
+\olsection{\usetoken{P}{derivation}}
+
+\begin{explain}
+गृहीतक म्हणजे काय हे आपण सांगितले आहे आणि निगमन नियम दिले आहेत.
+नैसर्गिक निगमनातील !!^{derivation}s यांपासून आगमनाने निर्माण होतात:
+प्रत्येक !!{derivation} ही एकतर स्वतंत्र गृहीतक असते किंवा एक, दोन वा तीन
+!!{derivation}s नंतर केलेले योग्य अनुमान असते.
+\end{explain}
+
+\begin{defn}[!!^{derivation}]
+\Article{derivation} \emph{!!{derivation}} म्हणजे गृहीतके~$\Gamma$
+यांपासून !!a{sentence}~$!A$ ची पुढील अटी पूर्ण करणारी !!{sentence}s ची
+सांत वृक्षरचना होय:
+\begin{enumerate}
+\item वृक्षातील सर्वांत वरची !!{sentence}s ही एकतर $\Gamma$ मध्ये असतात
+  किंवा वृक्षातील एखाद्या अनुमानाने !!{discharged} केलेली असतात.
+\item वृक्षातील सर्वांत खालचे !!{sentence} हे~$!A$ असते.
+\item वृक्षाच्या तळाशी असलेले वाक्य~$!A$ वगळता, वृक्षातील प्रत्येक
+  !!{sentence} हे एखाद्या निगमन नियमाच्या योग्य उपयोजनाचे आधारविधान असते
+  आणि त्या उपयोजनाचा निष्कर्ष वृक्षात त्या !!{sentence} च्या थेट खाली येतो.
+\end{enumerate}
+मग $!A$ हा त्या !!{derivation} चा \emph{निष्कर्ष} आणि $\Gamma$ ही तिची
+!!{undischarged} गृहीतके आहेत, असे आपण म्हणतो.
+
+जर~$\Gamma$ या गृहीतकांपासून $!A$ ची !!a{derivation} अस्तित्वात असेल, तर
+$!A$ हे~$\Gamma$ पासून \emph{!!{derivable}} आहे असे म्हणतो; चिन्हांत:
+$\Gamma \Proves !A$. प्रत्येक गृहीतक !!{discharged} केलेले असणारी $!A$
+ची !!a{derivation} असेल, तर आपण~$\Proves !A$ असे लिहितो.
+\end{defn}
+
+\begin{ex}
+प्रत्येक गृहीतक स्वतःच !!a{derivation} असते. म्हणून, उदा., एकटे $!A$ ही
+!!a{derivation} आहे आणि एकटे $!B$ सुद्धा. यांवर, समजा,
+$\Intro{\land}$ नियम लागू करून नवी !!{derivation} मिळवता येते:
+\begin{prooftree}
+\AxiomC{$!A$}
+\AxiomC{$!B$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!A \land !B$}
+\end{prooftree}
+हे नियम सर्वसाधारण असतात: त्यांतील $!A$ आणि~$!B$ यांच्या जागी कोणतीही
+!!{sentence}s, उदा., $!C$ आणि~$!D$, ठेवता येतात. मग निष्कर्ष
+$!C \land !D$ असेल, आणि म्हणून
+\begin{prooftree}
+\AxiomC{$!C$}
+\AxiomC{$!D$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!C \land !D$}
+\end{prooftree}
+ही योग्य !!{derivation} आहे. अर्थात, गृहीतकांची अदलाबदल करून $!D$ ला
+$!A$ ची आणि $!C$ ला~$!B$ ची भूमिका देता येते. त्यामुळे,
+\begin{prooftree}
+\AxiomC{$!D$}
+\AxiomC{$!C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!D \land !C$}
+\end{prooftree}
+हीसुद्धा योग्य !!{derivation} आहे.
+
+आता आपण दुसरा नियम, समजा, $\Intro{\lif}$ लागू करू शकतो. त्यामुळे सोपाधिक
+विधानाचा निष्कर्ष काढता येतो आणि त्या विधानाच्या पूर्वांगाशी एकरूप असलेले
+कोणतेही गृहीतक !!{discharge} करता येते. म्हणून पुढील दोन्ही
+!!{derivation}s योग्य आहेत:
+\begin{prooftree}
+\AxiomC{$\Discharge{!C}{1}$}
+\AxiomC{$!D$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!C \land !D$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$!C \lif (!C \land !D)$}
+\DisplayProof\bottomAlignProof
+\AxiomC{$!C$}
+\AxiomC{$\Discharge{!D}{1}$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!C \land !D$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$!D \lif (!C \land !D)$}
+\end{prooftree}
+त्या अनुक्रमे $!D \Proves !C \lif (!C \land !D)$ आणि
+$!C \Proves !D \lif (!C \land !D)$ हे दाखवतात.
+
+गृहीतके मुक्त करणे ही परवानगी आहे, आवश्यकता नाही, हे आठवा: गृहीतके मुक्त
+करणे बंधनकारक नसते. विशेषतः, !!{derivation} मध्ये ती गृहीतके नसली तरीही
+नियम लागू करता येतो. उदाहरणार्थ, !!{discharged} करण्यासाठी~$!A$ हे गृहीतक
+नसले तरी पुढील उपयोजन अनुज्ञात आहे:
+\begin{prooftree}
+  \AxiomC{$!B$}
+  \DischargeRule{\Intro{\lif}}{1}
+  \UnaryInfC{$!A \lif !B$}
+\end{prooftree}
+\end{ex}
+
+\end{document}
