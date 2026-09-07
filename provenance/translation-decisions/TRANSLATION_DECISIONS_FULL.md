@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occurrences.
+Coverage: 86/722 source units through OLP-0089; 231 applied decisions; 5,907 occurrences.
 
 ## T001 — set
 
@@ -1812,6 +1812,8 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T015-OLP-0065-B009` | `OLP-0065` | 8.2 क्रमवर्ती कलन | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:58-65` | `mr/content/first-order-logic/proof-systems/sequent-calculus.tex:58-64` | 83–84 |
 | `T015-OLP-0066-B010` | `OLP-0066` | 8.3 नैसर्गिक निगमन | `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88` | `mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86` | 84–85 |
 | `T015-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 86–87 |
+| `T015-OLP-0089-B008` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:25-37` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:24-35` | pending |
+| `T015-OLP-0089-B009` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:39-51` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:37-48` | pending |
 
 ## T016 — if and only if
 
@@ -3634,6 +3636,11 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T041-OLP-0075-B013` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210` | pending |
 | `T041-OLP-0075-B015` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:220-233` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:215-229` | pending |
 | `T041-OLP-0088-B007` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:23-37` | `mr/content/first-order-logic/natural-deduction/derivations.tex:22-35` | pending |
+| `T041-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
+| `T041-OLP-0089-B012` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:98-114` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:91-107` | pending |
+| `T041-OLP-0089-B013` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:116-147` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:109-139` | pending |
+| `T041-OLP-0089-B014` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:149-176` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:141-169` | pending |
+| `T041-OLP-0089-B015` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | pending |
 
 ## T042 — least / well-ordered / predecessor / successor
 
@@ -3998,6 +4005,20 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T044-OLP-0088-B009` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74` | `mr/content/first-order-logic/natural-deduction/derivations.tex:43-70` | pending |
 | `T044-OLP-0088-B010` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:76-96` | `mr/content/first-order-logic/natural-deduction/derivations.tex:72-92` | pending |
 | `T044-OLP-0088-B011` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:98-108` | `mr/content/first-order-logic/natural-deduction/derivations.tex:94-103` | pending |
+| `T044-OLP-0089-B005` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:13-13` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:13-13` | pending |
+| `T044-OLP-0089-B006` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:15-16` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:15-16` | pending |
+| `T044-OLP-0089-B007` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:18-23` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:18-22` | pending |
+| `T044-OLP-0089-B008` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:25-37` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:24-35` | pending |
+| `T044-OLP-0089-B009` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:39-51` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:37-48` | pending |
+| `T044-OLP-0089-B010` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:53-55` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:50-51` | pending |
+| `T044-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
+| `T044-OLP-0089-B012` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:98-114` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:91-107` | pending |
+| `T044-OLP-0089-B013` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:116-147` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:109-139` | pending |
+| `T044-OLP-0089-B014` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:149-176` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:141-169` | pending |
+| `T044-OLP-0089-B015` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | pending |
+| `T044-OLP-0089-B016` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:267-275` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:260-268` | pending |
+| `T044-OLP-0089-B017` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:277-293` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:270-286` | pending |
+| `T044-OLP-0089-B018` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:295-308` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:288-301` | pending |
 
 ## T045 — function / mapping
 
@@ -7122,6 +7143,9 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T109-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
 | `T109-OLP-0077-B008` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:30-34` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:31-35` | pending |
 | `T109-OLP-0087-B014` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102` | pending |
+| `T109-OLP-0089-B008` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:25-37` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:24-35` | pending |
+| `T109-OLP-0089-B009` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:39-51` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:37-48` | pending |
+| `T109-OLP-0089-B015` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -7428,6 +7452,10 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T115-OLP-0079-B011` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | pending |
 | `T115-OLP-0079-B012` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | pending |
 | `T115-OLP-0079-B013` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | pending |
+| `T115-OLP-0089-B008` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:25-37` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:24-35` | pending |
+| `T115-OLP-0089-B009` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:39-51` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:37-48` | pending |
+| `T115-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
+| `T115-OLP-0089-B015` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | pending |
 
 ## T116 — truth-functional
 
@@ -7911,6 +7939,10 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T126-OLP-0087-B015` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107` | pending |
 | `T126-OLP-0088-B007` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:23-37` | `mr/content/first-order-logic/natural-deduction/derivations.tex:22-35` | pending |
 | `T126-OLP-0088-B009` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74` | `mr/content/first-order-logic/natural-deduction/derivations.tex:43-70` | pending |
+| `T126-OLP-0089-B006` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:15-16` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:15-16` | pending |
+| `T126-OLP-0089-B008` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:25-37` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:24-35` | pending |
+| `T126-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
+| `T126-OLP-0089-B015` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | pending |
 
 ## T127 — propositional constant
 
@@ -8058,6 +8090,12 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T128-OLP-0086-B017` | `OLP-0086` |  | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | pending |
 | `T128-OLP-0088-B009` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74` | `mr/content/first-order-logic/natural-deduction/derivations.tex:43-70` | pending |
 | `T128-OLP-0088-B010` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:76-96` | `mr/content/first-order-logic/natural-deduction/derivations.tex:72-92` | pending |
+| `T128-OLP-0089-B009` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:39-51` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:37-48` | pending |
+| `T128-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
+| `T128-OLP-0089-B013` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:116-147` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:109-139` | pending |
+| `T128-OLP-0089-B015` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | pending |
+| `T128-OLP-0089-B017` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:277-293` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:270-286` | pending |
+| `T128-OLP-0089-B018` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:295-308` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:288-301` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -8420,6 +8458,7 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T139-OLP-0061-B010` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:133-140` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134-142` | 78–81 |
 | `T139-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:66-72` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:66-72` | pending |
 | `T139-OLP-0087-B013` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | pending |
+| `T139-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
 
 ## T140 — inductive hypothesis
 
@@ -8834,6 +8873,14 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T151-OLP-0088-B009` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74` | `mr/content/first-order-logic/natural-deduction/derivations.tex:43-70` | pending |
 | `T151-OLP-0088-B010` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:76-96` | `mr/content/first-order-logic/natural-deduction/derivations.tex:72-92` | pending |
 | `T151-OLP-0088-B011` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:98-108` | `mr/content/first-order-logic/natural-deduction/derivations.tex:94-103` | pending |
+| `T151-OLP-0089-B008` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:25-37` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:24-35` | pending |
+| `T151-OLP-0089-B009` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:39-51` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:37-48` | pending |
+| `T151-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
+| `T151-OLP-0089-B012` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:98-114` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:91-107` | pending |
+| `T151-OLP-0089-B013` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:116-147` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:109-139` | pending |
+| `T151-OLP-0089-B014` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:149-176` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:141-169` | pending |
+| `T151-OLP-0089-B015` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | pending |
+| `T151-OLP-0089-B018` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:295-308` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:288-301` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -9218,6 +9265,7 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T157-OLP-0077-B013` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:83-86` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:85-88` | pending |
 | `T157-OLP-0077-B016` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:102-106` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:104-108` | pending |
 | `T157-OLP-0077-B017` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-126` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:110-128` | pending |
+| `T157-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
 
 ## T158 — proof by cases / indirect proof / conditional proof
 
@@ -9296,6 +9344,13 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T159-OLP-0088-B009` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74` | `mr/content/first-order-logic/natural-deduction/derivations.tex:43-70` | pending |
 | `T159-OLP-0088-B010` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:76-96` | `mr/content/first-order-logic/natural-deduction/derivations.tex:72-92` | pending |
 | `T159-OLP-0088-B011` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:98-108` | `mr/content/first-order-logic/natural-deduction/derivations.tex:94-103` | pending |
+| `T159-OLP-0089-B008` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:25-37` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:24-35` | pending |
+| `T159-OLP-0089-B009` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:39-51` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:37-48` | pending |
+| `T159-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
+| `T159-OLP-0089-B012` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:98-114` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:91-107` | pending |
+| `T159-OLP-0089-B013` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:116-147` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:109-139` | pending |
+| `T159-OLP-0089-B014` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:149-176` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:141-169` | pending |
+| `T159-OLP-0089-B015` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | pending |
 
 ## T160 — introduction rule / elimination rule
 
@@ -9338,6 +9393,14 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T160-OLP-0088-B009` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74` | `mr/content/first-order-logic/natural-deduction/derivations.tex:43-70` | pending |
 | `T160-OLP-0088-B010` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:76-96` | `mr/content/first-order-logic/natural-deduction/derivations.tex:72-92` | pending |
 | `T160-OLP-0088-B011` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:98-108` | `mr/content/first-order-logic/natural-deduction/derivations.tex:94-103` | pending |
+| `T160-OLP-0089-B008` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:25-37` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:24-35` | pending |
+| `T160-OLP-0089-B009` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:39-51` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:37-48` | pending |
+| `T160-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
+| `T160-OLP-0089-B012` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:98-114` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:91-107` | pending |
+| `T160-OLP-0089-B013` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:116-147` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:109-139` | pending |
+| `T160-OLP-0089-B014` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:149-176` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:141-169` | pending |
+| `T160-OLP-0089-B015` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | pending |
+| `T160-OLP-0089-B018` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:295-308` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:288-301` | pending |
 
 ## T161 — premise / conclusion / antecedent / consequent / disjunct
 
@@ -9390,6 +9453,14 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T161-OLP-0088-B007` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:23-37` | `mr/content/first-order-logic/natural-deduction/derivations.tex:22-35` | pending |
 | `T161-OLP-0088-B009` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:45-74` | `mr/content/first-order-logic/natural-deduction/derivations.tex:43-70` | pending |
 | `T161-OLP-0088-B010` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:76-96` | `mr/content/first-order-logic/natural-deduction/derivations.tex:72-92` | pending |
+| `T161-OLP-0089-B007` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:18-23` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:18-22` | pending |
+| `T161-OLP-0089-B008` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:25-37` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:24-35` | pending |
+| `T161-OLP-0089-B009` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:39-51` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:37-48` | pending |
+| `T161-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
+| `T161-OLP-0089-B012` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:98-114` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:91-107` | pending |
+| `T161-OLP-0089-B013` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:116-147` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:109-139` | pending |
+| `T161-OLP-0089-B014` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:149-176` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:141-169` | pending |
+| `T161-OLP-0089-B015` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | pending |
 
 ## T162 — proof-theoretic semantics
 
@@ -9989,6 +10060,7 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T176-OLP-0075-B009` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:54-74` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:51-70` | pending |
 | `T176-OLP-0075-B013` | `OLP-0075` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215` | `mr/content/first-order-logic/sequent-calculus/proving-things.tex:155-210` | pending |
 | `T176-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
+| `T176-OLP-0089-B011` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | pending |
 
 ## T177 — bound variable
 
@@ -10408,6 +10480,35 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 | `T184-OLP-0085-B008` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | pending |
 | `T184-OLP-0085-B010` | `OLP-0085` |  | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | pending |
 | `T184-OLP-0088-B008` | `OLP-0088` |  | `upstream/content/first-order-logic/natural-deduction/derivations.tex:39-43` | `mr/content/first-order-logic/natural-deduction/derivations.tex:37-41` | pending |
+| `T184-OLP-0089-B016` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:267-275` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:260-268` | pending |
+| `T184-OLP-0089-B017` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:277-293` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:270-286` | pending |
+| `T184-OLP-0089-B018` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:295-308` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:288-301` | pending |
+
+## T185 — intuitionistic logic
+
+**Chosen rendering/action:** अंतःप्रज्ञावादी तर्कशास्त्र
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The official Marathi Vishwakosh proof-theory entry directly uses the full phrase अंतःप्रज्ञावादी तर्कशास्त्र in its account of sequent calculus. This is the exact specialist label needed for OpenLogic's contrast between classical falsity and explosion rules.
+
+**Rationale:** The official Marathi Vishwakosh proof-theory entry directly uses the full phrase अंतःप्रज्ञावादी तर्कशास्त्र in its account of sequent calculus. This is the exact specialist label needed for OpenLogic's contrast between classical falsity and explosion rules.
+
+**Authorities actually checked:**
+
+- `MR-P099` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh page read in a current web-search extraction; a direct follow-up fetch returned HTTP 502, so no origin-page bytes are claimed. Limitation: Observation hash identifies the local research note rather than the origin page; the cited sentence attests the label, not every proof-theoretic property of intuitionistic logic.
+
+**Alternatives:**
+
+- अंतःप्रज्ञात्मक तर्कशास्त्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अंतर्ज्ञानवादी तर्कशास्त्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अंतःप्रज्ञावादाचे तर्कशास्त्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does the directly attested अंतःप्रज्ञावादी तर्कशास्त्र remain the preferred modern Marathi label in a natural-deduction rule discussion?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T185-OLP-0089-B015` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -11539,8 +11640,58 @@ Coverage: 85/722 source units through OLP-0088; 228 applied decisions; 5,829 occ
 |---|---|---|---|---|---|
 | `OLND-002-OLP-0087` | `OLP-0087` |  | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-61` | pending |
 
+## OLND-003 — confirmed-frozen-source-branch-direction defect with bounded target clarification
+
+**Chosen rendering/action:** Translated the directional word as उजवीकडील (right-hand), preserving every formula, proof-tree command, discharge label and branch order.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The source calls the branch deriving B from assumptions A and B the left branch. In the displayed proof tree it is the right-hand branch, and the immediately following paragraph explicitly calls it the rightmost branch.
+
+**Rationale:** The source calls the branch deriving B from assumptions A and B the left branch. In the displayed proof tree it is the right-hand branch, and the immediately following paragraph explicitly calls it the rightmost branch. Chosen action: Translated the directional word as उजवीकडील (right-hand), preserving every formula, proof-tree command, discharge label and branch order.
+
+**Authorities actually checked:**
+
+- `OLND-003-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLND-003. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the contradictory left-direction word literally — `rejected`: Not chosen; the source finding and recorded action control.
+- Avoid a direction word and identify the branch only by its A and B assumptions — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does उजवीकडील accurately identify the A-and-B branch while retaining the source's proof-search explanation?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLND-003-OLP-0089` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:116-118` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:109-111` | pending |
+
+## OLND-004 — frozen-source-equivalent-rule-label observation; preserved
+
+**Chosen rendering/action:** Preserved the frozen expanded-tree label \Intro{\lfalse} exactly because it denotes the same inference schema; documented the unexplained label switch for expert review.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The prose and first small proof tree name the step from not-A and A to falsity as negation elimination, but the expanded copy labels the same step as falsity introduction. The preceding rule inventory presents the schema as negation elimination and does not separately introduce a falsity-introduction rule.
+
+**Rationale:** The prose and first small proof tree name the step from not-A and A to falsity as negation elimination, but the expanded copy labels the same step as falsity introduction. The preceding rule inventory presents the schema as negation elimination and does not separately introduce a falsity-introduction rule. Chosen action: Preserved the frozen expanded-tree label \Intro{\lfalse} exactly because it denotes the same inference schema; documented the unexplained label switch for expert review.
+
+**Authorities actually checked:**
+
+- `OLND-004-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLND-004. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Normalize the copied label to \Elim{\lnot} with a documented parity projection — `rejected`: Not chosen; the source finding and recorded action control.
+- Add a reader note that the two labels denote the same inference schema — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Should the reader retain the source's bottom-introduction synonym here or normalize the step to the chapter's declared negation-elimination label?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLND-004-OLP-0089` | `OLP-0089` |  | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:119-135` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:112-127` | pending |
+
 ## Deferred prospective decisions
 
 The following legacy decisions have no occurrence in the current coverage and are not
-fabricated into the canonical record: `T013`, `T185`. They remain
+fabricated into the canonical record: `T013`. They remain
 available in `../EXPERT_REVIEW_DECISIONS.jsonl` until translated source creates a real locator.

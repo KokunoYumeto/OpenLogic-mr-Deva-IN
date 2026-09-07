@@ -1,0 +1,303 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: proving-things
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{pro}}
+      {\olfileid{pl}{ntd}{pro}}
+
+\olsection{\usetoken{P}{derivation}: उदाहरणे}
+
+\begin{ex}
+!!{sentence} $(!A \land !B) \lif !A$ ची !!a{derivation} देऊ.
+
+हवा असलेला निष्कर्ष !!{derivation} च्या तळाशी लिहून आपण सुरुवात करतो.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$(!A\land !B) \lif !A$}
+\end{prooftree}
+
+पुढे, या रूपाचे !!a{sentence} कोणत्या प्रकारच्या अनुमानामुळे मिळू शकते हे
+शोधावे लागते. निष्कर्षाचा !!{main operator} हा $\lif$ आहे; म्हणून
+\Intro{\lif} नियम वापरून निष्कर्षापर्यंत पोहोचण्याचा प्रयत्न करू. काम पुढे
+जाताना संबंधित गृहीतके लिहून ठेवणे आणि निगमन नियमांना लेबले देणे उत्तम;
+त्यामुळे सिद्धतेच्या शेवटी सर्व गृहीतके !!{discharged} झाली आहेत का हे सहज
+दिसते.
+\begin{prooftree}
+\AxiomC{$\Discharge{!A \land !B}{1}$}
+\DeduceC{$!A$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(!A\land !B) \lif !A$}
+\end{prooftree}
+
+आता गृहीतक $!A \land !B$ पासून $!A$ पर्यंतच्या पायऱ्या भराव्या लागतील.
+येथे हाताळण्यासाठी फक्त एकच संयोजक, $\land$, असल्यामुळे $\land$ चा विलोपन
+नियम वापरलाच पाहिजे. त्यामुळे पुढील सिद्धता मिळते:
+\begin{prooftree}
+\AxiomC{$\Discharge{!A \land !B}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!A$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(!A\land !B) \lif !A$}
+\end{prooftree}
+आता आपल्याकडे $(!A \land !B) \lif !A$ ची योग्य !!{derivation} आहे.
+\end{ex}
+
+\begin{ex}
+आता $(\lnot !A \lor !B) \lif (!A \lif !B)$ ची !!a{derivation} देऊ.
+
+हवा असलेला निष्कर्ष !!{derivation} च्या तळाशी लिहून आपण सुरुवात करतो.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
+\end{prooftree}
+हा निष्कर्ष देऊ शकणारा तार्किक नियम शोधण्यासाठी निष्कर्षातील $\lnot$,
+$\lor$ आणि $\lif$ हे तार्किक संयोजक पाहतो. सध्या $\lif$ ची पहिली आस्थितीच
+महत्त्वाची आहे, कारण अंतिम क्रमवर्तीतील !!{sentence} चा तो !!{main operator}
+आहे; $\lnot$, $\lor$ आणि $\lif$ ची दुसरी आस्थिती दुसऱ्या संयोजकाच्या
+व्याप्तीत असल्यामुळे त्यांचा विचार नंतर करू. म्हणून आपण \Intro{\lif}
+नियमाने सुरुवात करतो. त्याचे योग्य उपयोजन पुढीलप्रमाणे असले पाहिजे:
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
+\DeduceC{$!A \lif !B$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
+\end{prooftree}
+पुढे जाण्यासाठी आता दोन पर्याय आहेत. एकतर तळापासून वरच्या दिशेने काम
+चालू ठेवून \Intro{\lif} नियमाचे आणखी एक उपयोजन शोधता येईल, किंवा वरून
+खाली काम करून \Elim{\lor} नियम लागू करता येईल. दुसरा पर्याय घेऊ.
+\Elim{\lor} चे सर्वांत डावे आधारविधान म्हणून $\lnot !A \lor !B$ हे
+गृहीतक वापरू. \Elim{\lor} च्या योग्य उपयोजनासाठी इतर दोन्ही आधारविधाने
+$!A \lif !B$ या निष्कर्षाशी एकरूप असली पाहिजेत; मात्र प्रत्येकाला
+अनुक्रमे आणखी एका गृहीतकापासून, म्हणजे $\lnot !A \lor !B$ च्या दोन
+विकल्पघटकांपैकी एकापासून, निष्पन्न करता येते. त्यामुळे आपली
+!!{derivation} पुढीलप्रमाणे दिसेल:
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
+\AxiomC{$\Discharge{\lnot !A}{2}$}
+\DeduceC{$!A \lif !B$}
+\AxiomC{$\Discharge{!B}{2}$}
+\DeduceC{$!A \lif !B$}
+\DischargeRule{\Elim{\lor}}{2}
+\TrinaryInfC{$!A \lif !B$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
+\end{prooftree}
+
+उजवीकडील दोन्ही शाखांत आपल्याला $!A \lif !B$ हे !!{derive} करायचे आहे;
+त्यासाठी \Intro{\lif} वापरणे सर्वांत योग्य आहे.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
+\AxiomC{$\Discharge{\lnot !A}{2}, \Discharge{!A}{3}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{3}
+\UnaryInfC{$!A \lif !B$}
+\AxiomC{$\Discharge{!B}{2}, \Discharge{!A}{4}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{4}
+\UnaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lor}}{2}
+\TrinaryInfC{$!A \lif !B$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
+\end{prooftree}
+
+!!{derivation} च्या उरलेल्या दोन भागांसाठी, मधल्या भागात $\lnot !A$ आणि
+$!A$ यांपासून, तर उजवीकडील भागात $!A$ आणि $!B$ यांपासून, $!B$ मिळवणाऱ्या
+!!{derivation}s हवी आहेत. यांपैकी पहिली आधी घेऊ. $\lnot !A$ आणि $!A$ ही
+\Elim{\lnot} ची दोन आधारविधाने आहेत:
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot !A}{2}$}
+\AxiomC{$\Discharge{!A}{3}$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DeduceC{$!B$}
+\end{prooftree}
+\FalseInt वापरून $!B$ हा निष्कर्ष मिळवता येतो आणि शाखा पूर्ण करता येते.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
+\AxiomC{$\Discharge{\lnot !A}{2}$}
+\AxiomC{$\Discharge{!A}{3}$}
+\RightLabel{\Intro{\lfalse}}
+\BinaryInfC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!B$}
+\DischargeRule{\Intro{\lif}}{3}
+\UnaryInfC{$!A \lif !B$}
+\AxiomC{$\Discharge{!B}{2}, \Discharge{!A}{4}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{4}
+\UnaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lor}}{2}
+\TrinaryInfC{$!A \lif !B$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
+\end{prooftree}
+
+आता सर्वांत उजवी शाखा पाहू. येथे हे लक्षात घेणे महत्त्वाचे आहे की
+!!{derivation} ची व्याख्या
+\emph{गृहीतके मुक्त करण्याची परवानगी देते}, पण
+\emph{तसे करणे आवश्यक ठरवत नाही}. दुसऱ्या शब्दांत, $!A$ आणि $!B$ या
+गृहीतकांपैकी एकाचा उपयोग न करता दुसऱ्यापासून $!B$ निष्पन्न करता येत असेल,
+तर ते योग्य आहे. $!B$ पासून $!B$ हे !!{derive} करणे तर क्षुल्लक आहे:
+एकटे $!B$ ही अशी !!a{derivation} असून कोणत्याही अनुमानाची गरज नाही. म्हणून
+गृहीतक~$!A$ सरळ वगळता येते.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
+\AxiomC{$\Discharge{\lnot !A}{2}$}
+\AxiomC{$\Discharge{!A}{3}$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!B$}
+\DischargeRule{\Intro{\lif}}{3}
+\UnaryInfC{$!A \lif !B$}
+\AxiomC{$\Discharge{!B}{2}$}
+\RightLabel{\Intro{\lif}}
+\UnaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lor}}{2}
+\TrinaryInfC{$!A \lif !B$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
+\end{prooftree}
+लक्षात घ्या की पूर्ण झालेल्या !!{derivation} मध्ये सर्वांत उजवीकडील
+\Intro{\lif} अनुमान प्रत्यक्षात कोणतेही गृहीतक मुक्त करत नाही.
+\end{ex}
+
+\begin{ex}
+आतापर्यंत आपल्याला \FalseCl{} नियमाची गरज पडलेली नाही. हा नियम विशेष आहे,
+कारण नियमाच्या निष्कर्षाचे उप-!!{formula} नसलेले गृहीतक तो मुक्त करू देतो.
+त्याचा \FalseInt{} नियमाशी जवळचा संबंध आहे. खरे तर \FalseInt{} नियम हे
+\FalseCl{} नियमाचे विशेष प्रकरण आहे---``अंतःप्रज्ञावादी तर्कशास्त्र''
+नावाचे एक तर्कशास्त्र आहे आणि त्यात केवळ \FalseInt{} अनुज्ञात आहे. इतर
+कोणताही मार्ग चालत नसताना \FalseCl{} नियम हा अखेरचा उपाय असतो. उदाहरणार्थ,
+आपल्याला $!A \lor \lnot !A$ हे !!{derive} करायचे आहे असे समजा. नेहमीच्या
+पद्धतीनुसार $\Intro{\lor}$ वापरून $!A \lor \lnot !A$ हे !!{derive}
+करण्याचा प्रयत्न करू. पण त्यासाठी कोणत्याही गृहीतकांशिवाय $!A$ किंवा
+$\lnot !A$ यांपैकी एक !!{derive} करावे लागेल, आणि ते शक्य नाही. अशा वेळी
+\FalseCl{} उपयोगी पडतो!
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \DeduceC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A \lor \lnot !A$}
+\end{prooftree}
+आता $\lnot(!A \lor \lnot !A)$ पासून $\lfalse$ ची !!a{derivation} शोधायची
+आहे. $\lfalse$ हा $\Elim{\lnot}$ चा निष्कर्ष असल्यामुळे तो नियम वापरून
+पाहू:
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \DeduceC{$\lnot !A$}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \DeduceC{$!A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A \lor \lnot !A$}
+\end{prooftree}
+$\lnot !A$ ची !!a{derivation} शोधण्याच्या आपल्या पद्धतीनुसार
+$\Intro{\lnot}$ चे उपयोजन करावे लागेल:
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}, \Discharge{!A}{2}$}
+  \DeduceC{$\lfalse$}
+  \DischargeRule{\Intro{\lnot}}{2}
+  \UnaryInfC{$\lnot !A$}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \DeduceC{$!A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A \lor \lnot !A$}
+\end{prooftree}
+येथे $\lnot(!A \lor \lnot !A)$ हे गृहीतक आणि आपल्या नव्या $!A$
+गृहीतकापासून~$\Intro{\lor}$ ने निष्पन्न होणारे $!A \lor \lnot !A$
+यांना $\Elim{\lnot}$ लावून $\lfalse$ सहज मिळवता येते:
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \AxiomC{$\Discharge{!A}{2}$}
+  \RightLabel{\Intro{\lor}}
+  \UnaryInfC{$!A \lor \lnot !A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\Intro{\lnot}}{2}
+  \UnaryInfC{$\lnot !A$}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \DeduceC{$!A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A \lor \lnot !A$}
+\end{prooftree}
+उजव्या बाजूला हीच पद्धत वापरतो; फक्त तेथे $!A$ हे~\FalseCl ने मिळवतो:
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \AxiomC{$\Discharge{!A}{2}$}
+  \RightLabel{\Intro{\lor}}
+  \UnaryInfC{$!A \lor \lnot !A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\Intro{\lnot}}{2}
+  \UnaryInfC{$\lnot !A$}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \AxiomC{$\Discharge{\lnot !A}{3}$}
+  \RightLabel{\Intro{\lor}}
+  \UnaryInfC{$!A \lor \lnot !A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{3}
+  \UnaryInfC{$!A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A \lor \lnot !A$}
+\end{prooftree}
+\end{ex}
+
+\begin{prob}
+पुढील गोष्टी दाखवणाऱ्या !!{derivation}s द्या:
+\begin{enumerate}
+\item $!A \land (!B \land !C) \Proves (!A \land !B) \land !C$.
+\item $!A \lor (!B \lor !C) \Proves (!A \lor !B) \lor !C$.
+\item $!A \lif (!B \lif !C) \Proves !B \lif (!A \lif !C)$.
+\item $!A \Proves \lnot\lnot !A$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+पुढील गोष्टी दाखवणाऱ्या !!{derivation}s द्या:
+\begin{enumerate}
+\item $(!A \lor !B) \lif !C \Proves !A \lif !C$.
+\item $(!A \lif !C) \land (!B \lif !C) \Proves (!A \lor !B) \lif !C$.
+\item $\Proves \lnot(!A \land \lnot !A)$.
+\item $!B \lif !A \Proves \lnot !A \lif \lnot !B$.
+\item $\Proves (!A \lif \lnot !A) \lif \lnot !A$.
+\item $\Proves \lnot(!A \lif !B) \lif \lnot !B$.
+\item $!A \lif !C \Proves \lnot (!A \land \lnot !C)$.
+\item $!A \land \lnot !C \Proves \lnot (!A \lif !C)$.
+\item $!A \lor !B, \lnot !B \Proves !A$.
+\item $\lnot !A \lor \lnot !B \Proves \lnot(!A \land !B)$.
+\item $\Proves (\lnot !A \land \lnot !B) \lif\lnot(!A \lor !B)$.
+\item $\Proves \lnot(!A \lor !B) \lif (\lnot !A \land \lnot !B)$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+पुढील गोष्टी दाखवणाऱ्या !!{derivation}s द्या:
+\begin{enumerate}
+\item $\lnot(!A \lif !B) \Proves !A$.
+\item $\lnot(!A \land !B) \Proves \lnot !A \lor \lnot !B$.
+\item $!A \lif !B \Proves \lnot !A \lor !B$.
+\item $\Proves \lnot \lnot !A \lif !A$.
+\item $!A \lif !B, \lnot !A \lif !B \Proves !B$.
+\item $(!A \land !B) \lif !C \Proves (!A \lif !C) \lor (!B \lif !C)$.
+\item $(!A \lif !B) \lif !A \Proves !A$.
+\item $\Proves (!A \lif !B) \lor (!B \lif !C)$.
+\end{enumerate}
+(या सर्वांसाठी $\FalseCl$~नियम आवश्यक आहे.)
+\end{prob}
+
+\end{document}

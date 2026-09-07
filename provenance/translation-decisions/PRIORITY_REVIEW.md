@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 26 urgent/high decisions and
-855 current occurrences. Normal and low items remain in the full index.
+874 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -476,6 +476,11 @@ This view contains 26 urgent/high decisions and
 | `T041-OLP-0075-B013` | `OLP-0075` |  | 158-215 | 155-210 | pending |
 | `T041-OLP-0075-B015` | `OLP-0075` |  | 220-233 | 215-229 | pending |
 | `T041-OLP-0088-B007` | `OLP-0088` |  | 23-37 | 22-35 | pending |
+| `T041-OLP-0089-B011` | `OLP-0089` |  | 57-96 | 53-89 | pending |
+| `T041-OLP-0089-B012` | `OLP-0089` |  | 98-114 | 91-107 | pending |
+| `T041-OLP-0089-B013` | `OLP-0089` |  | 116-147 | 109-139 | pending |
+| `T041-OLP-0089-B014` | `OLP-0089` |  | 149-176 | 141-169 | pending |
+| `T041-OLP-0089-B015` | `OLP-0089` |  | 178-265 | 171-258 | pending |
 
 ## T042 — least / well-ordered / predecessor / successor → लघुतम / सुक्रमित / पूर्ववर्ती / उत्तरवर्ती
 
@@ -793,6 +798,20 @@ This view contains 26 urgent/high decisions and
 | `T044-OLP-0088-B009` | `OLP-0088` |  | 45-74 | 43-70 | pending |
 | `T044-OLP-0088-B010` | `OLP-0088` |  | 76-96 | 72-92 | pending |
 | `T044-OLP-0088-B011` | `OLP-0088` |  | 98-108 | 94-103 | pending |
+| `T044-OLP-0089-B005` | `OLP-0089` |  | 13-13 | 13-13 | pending |
+| `T044-OLP-0089-B006` | `OLP-0089` |  | 15-16 | 15-16 | pending |
+| `T044-OLP-0089-B007` | `OLP-0089` |  | 18-23 | 18-22 | pending |
+| `T044-OLP-0089-B008` | `OLP-0089` |  | 25-37 | 24-35 | pending |
+| `T044-OLP-0089-B009` | `OLP-0089` |  | 39-51 | 37-48 | pending |
+| `T044-OLP-0089-B010` | `OLP-0089` |  | 53-55 | 50-51 | pending |
+| `T044-OLP-0089-B011` | `OLP-0089` |  | 57-96 | 53-89 | pending |
+| `T044-OLP-0089-B012` | `OLP-0089` |  | 98-114 | 91-107 | pending |
+| `T044-OLP-0089-B013` | `OLP-0089` |  | 116-147 | 109-139 | pending |
+| `T044-OLP-0089-B014` | `OLP-0089` |  | 149-176 | 141-169 | pending |
+| `T044-OLP-0089-B015` | `OLP-0089` |  | 178-265 | 171-258 | pending |
+| `T044-OLP-0089-B016` | `OLP-0089` |  | 267-275 | 260-268 | pending |
+| `T044-OLP-0089-B017` | `OLP-0089` |  | 277-293 | 270-286 | pending |
+| `T044-OLP-0089-B018` | `OLP-0089` |  | 295-308 | 288-301 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
