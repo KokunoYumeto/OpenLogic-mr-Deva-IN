@@ -19,8 +19,8 @@ form. The 89-page PDF was built twice to identical bytes and every page was
 inspected. Its offline HTML companion passed exact source-conversion, structure,
 asset, proof-display and desktop/mobile browser checks.
 
-Editable source after that release has progressed through OLP-0085: **82/722
-units** and 884 aligned content blocks. OLP-0069 is the Sequent Calculus chapter
+Editable source after that release has progressed through OLP-0086: **83/722
+units** and 892 aligned content blocks. OLP-0069 is the Sequent Calculus chapter
 driver; OLP-0070 defines its sequents, initial sequents, derivation trees and rule
 classes; OLP-0071 and OLP-0072 give the propositional and quantifier rules;
 OLP-0073–OLP-0076 cover structural rules, derivations and worked proofs,
@@ -29,15 +29,16 @@ consistency consequences, OLP-0079 records propositional provability facts,
 OLP-0080 records quantifier provability facts, OLP-0081 records sequent
 soundness and its corollaries, OLP-0082 records identity rules and equality
 substitution, OLP-0083 records identity-rule soundness, OLP-0084 is the
-natural-deduction chapter driver, and OLP-0085 records natural-deduction rules
-and proof notation. These seventeen units are not yet part
+natural-deduction chapter driver, OLP-0085 records natural-deduction rules and
+proof notation, and OLP-0086 gives the propositional rules. These eighteen units
+are not yet part
 of the v0.6 reader or release archive.
 
 - **Current release:** [आठ प्रकरणे — PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eight-chapters-v0.6).
 - **DOI mirror:** [edition concept DOI 10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960), which resolves to the latest version.
 - **PDF:** [89-page cumulative reader](releases/eight-chapters-v0.6/openlogic-mr-eight-chapters.pdf).
 - **Offline HTML:** download and extract `openlogic-mr-eight-chapters-html.zip`, then open `index.html`.
-- **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/), [size of sets](mr/content/sets-functions-relations/size-of-sets/), [arithmetization](mr/content/sets-functions-relations/arithmetization/), [infinite sets](mr/content/sets-functions-relations/infinite/), [propositional syntax and semantics](mr/content/propositional-logic/syntax-and-semantics/), [first-order proof systems](mr/content/first-order-logic/proof-systems/), and the in-progress [sequent calculus](mr/content/first-order-logic/sequent-calculus/).
+- **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/), [size of sets](mr/content/sets-functions-relations/size-of-sets/), [arithmetization](mr/content/sets-functions-relations/arithmetization/), [infinite sets](mr/content/sets-functions-relations/infinite/), [propositional syntax and semantics](mr/content/propositional-logic/syntax-and-semantics/), [first-order proof systems](mr/content/first-order-logic/proof-systems/), [sequent calculus](mr/content/first-order-logic/sequent-calculus/), and the in-progress [natural deduction](mr/content/first-order-logic/natural-deduction/).
 - **Terminology and expert review:** begin with the [shared-schema review guide](provenance/translation-decisions/START_HERE.md), then use the [full applied-decision index](provenance/translation-decisions/TRANSLATION_DECISIONS_FULL.md), [priority review](provenance/translation-decisions/PRIORITY_REVIEW.md), [one-row-per-occurrence CSV](provenance/translation-decisions/DECISION_OCCURRENCES.csv), or [canonical JSON](provenance/translation-decisions/DECISIONS.json). The backward-compatible [decision ledger](provenance/EXPERT_REVIEW_LOG.md) and occurrence JSONL remain available. These surfaces record exact source/target scopes, current PDF page ranges, reversible choices and plain review questions without making review a completion gate.
 - **Pristine English:** `upstream/`; this is source evidence, not translated coverage.
 - **Current source-checkpoint evidence:** `provenance/source-checkpoint-65/`.
@@ -86,8 +87,8 @@ The evidence also preserves the formal retraction of a
 shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The frozen
 65-unit source-checkpoint evidence explicitly distinguishes preserved original
 pages from hash-pinned short web observations whose origin HTML bytes were
-unavailable. The synchronized root provenance now covers the 82 translated units
-through OLP-0085. A bounded independent model audit of OLP-0071–OLP-0072 found no
+unavailable. The synchronized root provenance now covers the 83 translated units
+through OLP-0086. A bounded independent model audit of OLP-0071–OLP-0072 found no
 material mistranslation, prompted one standing-assumption clarification, and led
 to narrower overlapping choice locators plus separate confidence records for
 closed term, bound variable and eigenvariable vocabulary. This audit is not
@@ -101,8 +102,9 @@ the semantic soundness induction and weak, entailment and consistency corollarie
 and OLP-0082 records identity initial sequents, equality substitution, symmetry
 and transitivity, while OLP-0083 records the semantic soundness proof for
 equality substitution. OLP-0084 records the natural-deduction chapter driver
-and its conditional imports, and OLP-0085 records assumptions, discharge,
-premises and conclusions, and rule pairs.
+and its conditional imports, OLP-0085 records assumptions, discharge, premises
+and conclusions, and rule pairs, and OLP-0086 records the propositional rule
+schemata and the permissive interpretation of discharge annotations.
 These later working records remain
 outside the v0.6 reader and release archive.
 

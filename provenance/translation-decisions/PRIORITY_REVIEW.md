@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 26 urgent/high decisions and
-819 current occurrences. Normal and low items remain in the full index.
+827 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -772,6 +772,14 @@ This view contains 26 urgent/high decisions and
 | `T044-OLP-0076-B008` | `OLP-0076` |  | 31-83 | 29-79 | pending |
 | `T044-OLP-0076-B009` | `OLP-0076` |  | 85-98 | 81-94 | pending |
 | `T044-OLP-0076-B010` | `OLP-0076` |  | 100-108 | 96-104 | pending |
+| `T044-OLP-0086-B005` | `OLP-0086` |  | 13-13 | 13-13 | pending |
+| `T044-OLP-0086-B006` | `OLP-0086` |  | 16-16 | 16-16 | pending |
+| `T044-OLP-0086-B008` | `OLP-0086` |  | 38-38 | 38-38 | pending |
+| `T044-OLP-0086-B010` | `OLP-0086` |  | 63-63 | 63-63 | pending |
+| `T044-OLP-0086-B012` | `OLP-0086` |  | 79-79 | 79-79 | pending |
+| `T044-OLP-0086-B014` | `OLP-0086` |  | 96-96 | 96-96 | pending |
+| `T044-OLP-0086-B016` | `OLP-0086` |  | 111-113 | 111-113 | pending |
+| `T044-OLP-0086-B017` | `OLP-0086` |  | 115-118 | 115-118 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
