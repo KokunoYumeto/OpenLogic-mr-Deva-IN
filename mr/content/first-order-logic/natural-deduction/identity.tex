@@ -1,0 +1,124 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{ntd}{ide}
+
+\olsection{\usetoken{P}{derivation} सह \usetoken{S}{identity}}
+
+!!{identity} असलेल्या !!^{derivation}s साठी अतिरिक्त अनुमाननियम आवश्यक असतात.
+
+\begin{defish}
+\AxiomC{}
+\RightLabel{\Intro{\eq}}
+\UnaryInfC{$\eq[t][t]$}
+\DisplayProof
+\hfill
+\begin{tabular}{r}
+\AxiomC{$\eq[t_1][t_2]$}
+\AxiomC{$!A(t_1)$}
+\RightLabel{\Elim{\eq}}
+\BinaryInfC{$!A(t_2)$}
+\DisplayProof
+\\[3ex]
+\AxiomC{$\eq[t_1][t_2]$}
+\AxiomC{$!A(t_2)$}
+\RightLabel{\Elim{\eq}}
+\BinaryInfC{$!A(t_1)$}
+\DisplayProof
+\end{tabular}
+\end{defish}
+
+वरील नियमांमध्ये $t$, $t_1$ आणि $t_2$ ही बंद पदे आहेत. \Intro{\eq} नियम
+आपल्याला कोणत्याही गृहीतकांशिवाय, थेट $\eq[t][t]$ या रूपाचे कोणतेही
+एकरूपता-विधान !!{derive} करू देतो.
+
+\begin{ex}
+$s$ आणि $t$ ही बंद पदे असतील, तर $!A(s), \eq[s][t] \Proves !A(t)$:
+\begin{prooftree}
+\AxiomC{$\eq[s][t]$}
+\AxiomC{$!A(s)$}
+\RightLabel{$\Elim{\eq}$}
+\BinaryInfC{$!A(t)$}
+\end{prooftree}
+याला “एकरूप वस्तूंच्या प्रतिस्थापनाचे तत्त्व” किंवा लाइब्निझचा नियम
+म्हणून ओळखले जाऊ शकते.
+\end{ex}
+
+\begin{prob}
+$=$ हे सममित आणि संक्रमक दोन्ही आहे हे सिद्ध करा; म्हणजे
+$\lforall[x][\lforall[y][(\eq[x][y] \lif
+    \eq[y][x])]]$ आणि $\lforall[x][\lforall[y][\lforall[z]((\eq[x][y]
+    \land \eq[y][z]) \lif \eq[x][z])]]$ यांच्या
+!!{derivation}s द्या.
+\end{prob}
+
+\begin{ex}
+आपण पुढील !!{sentence} !!{derive} करतो:
+\begin{align*}
+& \lforall[x][\lforall[y][((!A(x) \land !A(y)) \lif \eq[x][y])]]
+\intertext{या !!{sentence} पासून:}
+& \lexists[x][\lforall[y][(!A(y) \lif \eq[y][x])]]
+\end{align*}
+!!{derivation} उलट्या दिशेने विकसित करू:
+\begin{prooftree}
+\AxiomC{$\lexists[x][\lforall[y][(!A(y) \lif \eq[y][x])]]
+\quad \Discharge{!A(a) \land !A(b)}{1}$}
+\DeduceC{$\eq[a][b]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$((!A(a) \land !A(b)) \lif \eq[a][b])$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[y][((!A(a) \land !A(y)) \lif \eq[a][y])]$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[x][\lforall[y][((!A(x) \land !A(y)) \lif \eq[x][y])]]$}
+\end{prooftree}
+आता मुख्य गृहीतक वापरावे लागेल: ते अस्तित्ववाची !!{formula} असल्यामुळे
+\Elim{\lexists} वापरून मध्यवर्ती निष्कर्ष~$\eq[a][b]$ !!{derive} करू.
+\begin{prooftree}
+\AxiomC{$\lexists[x][\lforall[y][(!A(y) \lif \eq[y][x])]]$}
+\AxiomC{$\Discharge{\lforall[y][(!A(y) \lif \eq[y][c]])}{2}$}
+\noLine
+\UnaryInfC{$\Discharge{!A(a) \land !A(b)}{1}$}
+\DeduceC{$\eq[a][b]$}
+\DischargeRule{\Elim{\lexists}}{2}
+\BinaryInfC{$\eq[a][b]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$((!A(a) \land !A(b)) \lif \eq[a][b])$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[y][((!A(a) \land !A(y)) \lif \eq[a][y])]$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[x][\lforall[y][((!A(x) \land !A(y)) \lif \eq[x][y])]]$}
+\end{prooftree}
+वरच्या उजव्या बाजूची उप-!!{derivation} तिच्या गृहीतकांचा वापर करून
+$\eq[a][c]$ आणि $\eq[b][c]$ दाखवल्यावर पूर्ण होते. यासाठी दोन स्वतंत्र
+!!{derivation}s आवश्यक आहेत. $\eq[a][c]$ साठीची !!{derivation}
+पुढीलप्रमाणे आहे:
+\begin{prooftree}
+\AxiomC{$\Discharge{\lforall[y][(!A(y) \lif \eq[y][c]])}{2}$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!A(a) \lif \eq[a][c]$}
+\AxiomC{$\Discharge{!A(a) \land !A(b)}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!A(a)$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$\eq[a][c]$}
+\end{prooftree}
+$\eq[a][c]$ आणि $\eq[b][c]$ यांच्यापासून \Elim{\eq} वापरून
+$\eq[a][b]$ !!{derive} करतो.
+\end{ex}
+
+\begin{prob}
+पुढील !!{formula}s च्या !!{derivation}s द्या:
+\begin{enumerate}
+\item $\lforall[x][\lforall[y][((\eq[x][y] \land !A(x)) \lif !A(y))]]$
+\item $\lexists[x][!A(x)] \land \lforall[y][\lforall[z][((!A(y) \land
+    !A(z)) \lif \eq[y][z])]] \lif \lexists[x][(!A(x) \land
+  \lforall[y][(!A(y) \lif \eq[y][x])])]$
+\end{enumerate}
+\end{prob}
+
+\end{document}

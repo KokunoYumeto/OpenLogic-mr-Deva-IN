@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **92/722 source units**, 1006 aligned translated blocks, 6306 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
+Current scope: **93/722 source units**, 1013 aligned translated blocks, 6340 review occurrences. The referenced development reader has 89 pages and SHA-256 b13dcbbee1d9224d19969393318d916f82d49d12d5c9c2e01020c734808e1654; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -2605,7 +2605,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T031 — identity relation</strong> (26 occurrences; medium priority)</summary>
+<summary><strong>T031 — identity relation</strong> (33 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2635,6 +2635,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T031-OLP-0019-B018 | OLP-0019 · 2.8 संबंधांवरील क्रिया | [upstream/content/sets-functions-relations/relations/operations.tex:56-58](../upstream/content/sets-functions-relations/relations/operations.tex#L56) | [mr/content/sets-functions-relations/relations/operations.tex:57-58](../mr/content/sets-functions-relations/relations/operations.tex#L57) | 22 |
 | T031-OLP-0019-B019 | OLP-0019 · 2.8 संबंधांवरील क्रिया | [upstream/content/sets-functions-relations/relations/operations.tex:60-65](../upstream/content/sets-functions-relations/relations/operations.tex#L60) | [mr/content/sets-functions-relations/relations/operations.tex:60-67](../mr/content/sets-functions-relations/relations/operations.tex#L60) | 22 |
 | T031-OLP-0019-B020 | OLP-0019 · 2.8 संबंधांवरील क्रिया | [upstream/content/sets-functions-relations/relations/operations.tex:67-69](../upstream/content/sets-functions-relations/relations/operations.tex#L67) | [mr/content/sets-functions-relations/relations/operations.tex:69-71](../mr/content/sets-functions-relations/relations/operations.tex#L69) | 22 |
+| T031-OLP-0096-B005 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:11-11](../upstream/content/first-order-logic/natural-deduction/identity.tex#L11) | [mr/content/first-order-logic/natural-deduction/identity.tex:11-11](../mr/content/first-order-logic/natural-deduction/identity.tex#L11) | not yet paginated |
+| T031-OLP-0096-B006 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:13-13](../upstream/content/first-order-logic/natural-deduction/identity.tex#L13) | [mr/content/first-order-logic/natural-deduction/identity.tex:13-13](../mr/content/first-order-logic/natural-deduction/identity.tex#L13) | not yet paginated |
+| T031-OLP-0096-B008 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:36-38](../upstream/content/first-order-logic/natural-deduction/identity.tex#L36) | [mr/content/first-order-logic/natural-deduction/identity.tex:36-38](../mr/content/first-order-logic/natural-deduction/identity.tex#L36) | not yet paginated |
+| T031-OLP-0096-B009 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:40-50](../upstream/content/first-order-logic/natural-deduction/identity.tex#L40) | [mr/content/first-order-logic/natural-deduction/identity.tex:40-50](../mr/content/first-order-logic/natural-deduction/identity.tex#L40) | not yet paginated |
+| T031-OLP-0096-B010 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:52-57](../upstream/content/first-order-logic/natural-deduction/identity.tex#L52) | [mr/content/first-order-logic/natural-deduction/identity.tex:52-58](../mr/content/first-order-logic/natural-deduction/identity.tex#L52) | not yet paginated |
+| T031-OLP-0096-B011 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:59-112](../upstream/content/first-order-logic/natural-deduction/identity.tex#L59) | [mr/content/first-order-logic/natural-deduction/identity.tex:60-112](../mr/content/first-order-logic/natural-deduction/identity.tex#L60) | not yet paginated |
+| T031-OLP-0096-B012 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:114-122](../upstream/content/first-order-logic/natural-deduction/identity.tex#L114) | [mr/content/first-order-logic/natural-deduction/identity.tex:114-122](../mr/content/first-order-logic/natural-deduction/identity.tex#L114) | not yet paginated |
 
 **Chosen rendering/action:** एकरूपता संबंध
 
@@ -2742,7 +2749,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T033 — transitive</strong> (82 occurrences; medium priority)</summary>
+<summary><strong>T033 — transitive</strong> (83 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2828,6 +2835,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T033-OLP-0042-B010 | OLP-0042 · 5.1 N पासून Z कडे | [upstream/content/sets-functions-relations/arithmetization/integers.tex:36-37](../upstream/content/sets-functions-relations/arithmetization/integers.tex#L36) | [mr/content/sets-functions-relations/arithmetization/integers.tex:36-37](../mr/content/sets-functions-relations/arithmetization/integers.tex#L36) | 52–54 |
 | T033-OLP-0047-B015 | OLP-0047 · 5.6 क्रमित वलये आणि क्षेत्रे | [upstream/content/sets-functions-relations/arithmetization/checking-details.tex:101-109](../upstream/content/sets-functions-relations/arithmetization/checking-details.tex#L101) | [mr/content/sets-functions-relations/arithmetization/checking-details.tex:101-108](../mr/content/sets-functions-relations/arithmetization/checking-details.tex#L101) | 59–62 |
 | T033-OLP-0062-B009 | OLP-0062 · 7.6 चिन्हार्थविषयक संकल्पना | [upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:45-60](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L45) | [mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:46-61](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L46) | 81 |
+| T033-OLP-0096-B010 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:52-57](../upstream/content/first-order-logic/natural-deduction/identity.tex#L52) | [mr/content/first-order-logic/natural-deduction/identity.tex:52-58](../mr/content/first-order-logic/natural-deduction/identity.tex#L52) | not yet paginated |
 
 **Chosen rendering/action:** संक्रमक
 
@@ -2838,7 +2846,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T034 — symmetric / anti-symmetric / asymmetric</strong> (54 occurrences; medium priority)</summary>
+<summary><strong>T034 — symmetric / anti-symmetric / asymmetric</strong> (55 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2896,6 +2904,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T034-OLP-0042-B007 | OLP-0042 · 5.1 N पासून Z कडे | [upstream/content/sets-functions-relations/arithmetization/integers.tex:22-30](../upstream/content/sets-functions-relations/arithmetization/integers.tex#L22) | [mr/content/sets-functions-relations/arithmetization/integers.tex:22-30](../mr/content/sets-functions-relations/arithmetization/integers.tex#L22) | 52–54 |
 | T034-OLP-0042-B009 | OLP-0042 · 5.1 N पासून Z कडे | [upstream/content/sets-functions-relations/arithmetization/integers.tex:34-34](../upstream/content/sets-functions-relations/arithmetization/integers.tex#L34) | [mr/content/sets-functions-relations/arithmetization/integers.tex:34-34](../mr/content/sets-functions-relations/arithmetization/integers.tex#L34) | 52–54 |
 | T034-OLP-0047-B015 | OLP-0047 · 5.6 क्रमित वलये आणि क्षेत्रे | [upstream/content/sets-functions-relations/arithmetization/checking-details.tex:101-109](../upstream/content/sets-functions-relations/arithmetization/checking-details.tex#L101) | [mr/content/sets-functions-relations/arithmetization/checking-details.tex:101-108](../mr/content/sets-functions-relations/arithmetization/checking-details.tex#L101) | 59–62 |
+| T034-OLP-0096-B010 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:52-57](../upstream/content/first-order-logic/natural-deduction/identity.tex#L52) | [mr/content/first-order-logic/natural-deduction/identity.tex:52-58](../mr/content/first-order-logic/natural-deduction/identity.tex#L52) | not yet paginated |
 
 **Chosen rendering/action:** सममित / प्रतिसममित / असममित
 
@@ -3396,7 +3405,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T044 — computability / formula / derivation</strong> (220 occurrences; high priority)</summary>
+<summary><strong>T044 — computability / formula / derivation</strong> (227 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3620,6 +3629,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T044-OLP-0095-B022 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:216-240](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L216) | [mr/content/first-order-logic/natural-deduction/soundness.tex:215-240](../mr/content/first-order-logic/natural-deduction/soundness.tex#L215) | not yet paginated |
 | T044-OLP-0095-B024 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L244) | [mr/content/first-order-logic/natural-deduction/soundness.tex:244-273](../mr/content/first-order-logic/natural-deduction/soundness.tex#L244) | not yet paginated |
 | T044-OLP-0095-B031 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:301-312](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L301) | [mr/content/first-order-logic/natural-deduction/soundness.tex:303-314](../mr/content/first-order-logic/natural-deduction/soundness.tex#L303) | not yet paginated |
+| T044-OLP-0096-B005 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:11-11](../upstream/content/first-order-logic/natural-deduction/identity.tex#L11) | [mr/content/first-order-logic/natural-deduction/identity.tex:11-11](../mr/content/first-order-logic/natural-deduction/identity.tex#L11) | not yet paginated |
+| T044-OLP-0096-B006 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:13-13](../upstream/content/first-order-logic/natural-deduction/identity.tex#L13) | [mr/content/first-order-logic/natural-deduction/identity.tex:13-13](../mr/content/first-order-logic/natural-deduction/identity.tex#L13) | not yet paginated |
+| T044-OLP-0096-B008 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:36-38](../upstream/content/first-order-logic/natural-deduction/identity.tex#L36) | [mr/content/first-order-logic/natural-deduction/identity.tex:36-38](../mr/content/first-order-logic/natural-deduction/identity.tex#L36) | not yet paginated |
+| T044-OLP-0096-B009 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:40-50](../upstream/content/first-order-logic/natural-deduction/identity.tex#L40) | [mr/content/first-order-logic/natural-deduction/identity.tex:40-50](../mr/content/first-order-logic/natural-deduction/identity.tex#L40) | not yet paginated |
+| T044-OLP-0096-B010 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:52-57](../upstream/content/first-order-logic/natural-deduction/identity.tex#L52) | [mr/content/first-order-logic/natural-deduction/identity.tex:52-58](../mr/content/first-order-logic/natural-deduction/identity.tex#L52) | not yet paginated |
+| T044-OLP-0096-B011 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:59-112](../upstream/content/first-order-logic/natural-deduction/identity.tex#L59) | [mr/content/first-order-logic/natural-deduction/identity.tex:60-112](../mr/content/first-order-logic/natural-deduction/identity.tex#L60) | not yet paginated |
+| T044-OLP-0096-B012 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:114-122](../upstream/content/first-order-logic/natural-deduction/identity.tex#L114) | [mr/content/first-order-logic/natural-deduction/identity.tex:114-122](../mr/content/first-order-logic/natural-deduction/identity.tex#L114) | not yet paginated |
 
 **Chosen rendering/action:** संगणनीयता / सूत्र / निष्पत्ती
 
@@ -6181,7 +6197,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T112 — predicate / term / quantifier</strong> (39 occurrences; routine priority)</summary>
+<summary><strong>T112 — predicate / term / quantifier</strong> (42 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6224,6 +6240,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T112-OLP-0095-B019 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:205-205](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L205) | [mr/content/first-order-logic/natural-deduction/soundness.tex:204-204](../mr/content/first-order-logic/natural-deduction/soundness.tex#L204) | not yet paginated |
 | T112-OLP-0095-B020 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:207-209](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L207) | [mr/content/first-order-logic/natural-deduction/soundness.tex:206-208](../mr/content/first-order-logic/natural-deduction/soundness.tex#L206) | not yet paginated |
 | T112-OLP-0095-B026 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:275-277](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L275) | [mr/content/first-order-logic/natural-deduction/soundness.tex:277-279](../mr/content/first-order-logic/natural-deduction/soundness.tex#L277) | not yet paginated |
+| T112-OLP-0096-B010 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:52-57](../upstream/content/first-order-logic/natural-deduction/identity.tex#L52) | [mr/content/first-order-logic/natural-deduction/identity.tex:52-58](../mr/content/first-order-logic/natural-deduction/identity.tex#L52) | not yet paginated |
+| T112-OLP-0096-B011 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:59-112](../upstream/content/first-order-logic/natural-deduction/identity.tex#L59) | [mr/content/first-order-logic/natural-deduction/identity.tex:60-112](../mr/content/first-order-logic/natural-deduction/identity.tex#L60) | not yet paginated |
+| T112-OLP-0096-B012 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:114-122](../upstream/content/first-order-logic/natural-deduction/identity.tex#L114) | [mr/content/first-order-logic/natural-deduction/identity.tex:114-122](../mr/content/first-order-logic/natural-deduction/identity.tex#L114) | not yet paginated |
 
 **Chosen rendering/action:** विधेय / पद / संख्यापक
 
@@ -6680,7 +6699,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T126 — sentence / proposition / statement</strong> (46 occurrences; routine priority)</summary>
+<summary><strong>T126 — sentence / proposition / statement</strong> (48 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6730,6 +6749,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T126-OLP-0095-B006 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:15-31](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L15) | [mr/content/first-order-logic/natural-deduction/soundness.tex:15-31](../mr/content/first-order-logic/natural-deduction/soundness.tex#L15) | not yet paginated |
 | T126-OLP-0095-B009 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:43-50](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L43) | [mr/content/first-order-logic/natural-deduction/soundness.tex:43-49](../mr/content/first-order-logic/natural-deduction/soundness.tex#L43) | not yet paginated |
 | T126-OLP-0095-B018 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:174-203](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L174) | [mr/content/first-order-logic/natural-deduction/soundness.tex:173-202](../mr/content/first-order-logic/natural-deduction/soundness.tex#L173) | not yet paginated |
+| T126-OLP-0096-B011 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:59-112](../upstream/content/first-order-logic/natural-deduction/identity.tex#L59) | [mr/content/first-order-logic/natural-deduction/identity.tex:60-112](../mr/content/first-order-logic/natural-deduction/identity.tex#L60) | not yet paginated |
+| T126-OLP-0096-B012 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:114-122](../upstream/content/first-order-logic/natural-deduction/identity.tex#L114) | [mr/content/first-order-logic/natural-deduction/identity.tex:114-122](../mr/content/first-order-logic/natural-deduction/identity.tex#L114) | not yet paginated |
 
 **Chosen rendering/action:** वाक्य / विधान
 
@@ -6779,7 +6800,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (102 occurrences; medium priority)</summary>
+<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (104 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6885,6 +6906,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T128-OLP-0095-B023 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:242-242](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L242) | [mr/content/first-order-logic/natural-deduction/soundness.tex:242-242](../mr/content/first-order-logic/natural-deduction/soundness.tex#L242) | not yet paginated |
 | T128-OLP-0095-B024 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L244) | [mr/content/first-order-logic/natural-deduction/soundness.tex:244-273](../mr/content/first-order-logic/natural-deduction/soundness.tex#L244) | not yet paginated |
 | T128-OLP-0095-B025 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:273-273](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L273) | [mr/content/first-order-logic/natural-deduction/soundness.tex:275-275](../mr/content/first-order-logic/natural-deduction/soundness.tex#L275) | not yet paginated |
+| T128-OLP-0096-B011 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:59-112](../upstream/content/first-order-logic/natural-deduction/identity.tex#L59) | [mr/content/first-order-logic/natural-deduction/identity.tex:60-112](../mr/content/first-order-logic/natural-deduction/identity.tex#L60) | not yet paginated |
+| T128-OLP-0096-B012 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:114-122](../upstream/content/first-order-logic/natural-deduction/identity.tex#L114) | [mr/content/first-order-logic/natural-deduction/identity.tex:114-122](../mr/content/first-order-logic/natural-deduction/identity.tex#L114) | not yet paginated |
 
 **Chosen rendering/action:** नकरण / संधियोग / विकल्पयोग / सशर्त (संकेतार्थक) / द्विसशर्त
 
@@ -7096,7 +7119,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T138 — uniform substitution / simultaneous substitution</strong> (5 occurrences; medium priority)</summary>
+<summary><strong>T138 — uniform substitution / simultaneous substitution</strong> (8 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7105,6 +7128,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T138-OLP-0059-B023 | OLP-0059 · 7.3 पूर्वतयारी | [upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:114-117](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L114) | [mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:122-125](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L122) | 75–77 |
 | T138-OLP-0087-B013 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L63) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L62) | not yet paginated |
 | T138-OLP-0095-B018 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:174-203](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L174) | [mr/content/first-order-logic/natural-deduction/soundness.tex:173-202](../mr/content/first-order-logic/natural-deduction/soundness.tex#L173) | not yet paginated |
+| T138-OLP-0096-B009 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:40-50](../upstream/content/first-order-logic/natural-deduction/identity.tex#L40) | [mr/content/first-order-logic/natural-deduction/identity.tex:40-50](../mr/content/first-order-logic/natural-deduction/identity.tex#L40) | not yet paginated |
+| T138-OLP-0096-B011 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:59-112](../upstream/content/first-order-logic/natural-deduction/identity.tex#L59) | [mr/content/first-order-logic/natural-deduction/identity.tex:60-112](../mr/content/first-order-logic/natural-deduction/identity.tex#L60) | not yet paginated |
+| T138-OLP-0096-B012 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:114-122](../upstream/content/first-order-logic/natural-deduction/identity.tex#L114) | [mr/content/first-order-logic/natural-deduction/identity.tex:114-122](../mr/content/first-order-logic/natural-deduction/identity.tex#L114) | not yet paginated |
 
 **Chosen rendering/action:** एकरूप आदेशन / एकाच वेळी केलेले आदेशन
 
@@ -7350,7 +7376,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T151 — axiomatic system / inference rule</strong> (77 occurrences; routine priority)</summary>
+<summary><strong>T151 — axiomatic system / inference rule</strong> (79 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7431,6 +7457,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T151-OLP-0095-B010 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:52-59](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L52) | [mr/content/first-order-logic/natural-deduction/soundness.tex:51-57](../mr/content/first-order-logic/natural-deduction/soundness.tex#L51) | not yet paginated |
 | T151-OLP-0095-B011 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:61-62](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L61) | [mr/content/first-order-logic/natural-deduction/soundness.tex:59-60](../mr/content/first-order-logic/natural-deduction/soundness.tex#L59) | not yet paginated |
 | T151-OLP-0095-B021 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:211-214](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L211) | [mr/content/first-order-logic/natural-deduction/soundness.tex:210-213](../mr/content/first-order-logic/natural-deduction/soundness.tex#L210) | not yet paginated |
+| T151-OLP-0096-B006 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:13-13](../upstream/content/first-order-logic/natural-deduction/identity.tex#L13) | [mr/content/first-order-logic/natural-deduction/identity.tex:13-13](../mr/content/first-order-logic/natural-deduction/identity.tex#L13) | not yet paginated |
+| T151-OLP-0096-B008 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:36-38](../upstream/content/first-order-logic/natural-deduction/identity.tex#L36) | [mr/content/first-order-logic/natural-deduction/identity.tex:36-38](../mr/content/first-order-logic/natural-deduction/identity.tex#L36) | not yet paginated |
 
 **Chosen rendering/action:** स्वयंसिद्धकीय पद्धत / निगमन नियम
 
@@ -7809,7 +7837,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T159 — assumption / discharge / discharged / undischarged</strong> (60 occurrences; medium priority)</summary>
+<summary><strong>T159 — assumption / discharge / discharged / undischarged</strong> (62 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7873,6 +7901,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T159-OLP-0095-B022 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:216-240](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L216) | [mr/content/first-order-logic/natural-deduction/soundness.tex:215-240](../mr/content/first-order-logic/natural-deduction/soundness.tex#L215) | not yet paginated |
 | T159-OLP-0095-B024 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L244) | [mr/content/first-order-logic/natural-deduction/soundness.tex:244-273](../mr/content/first-order-logic/natural-deduction/soundness.tex#L244) | not yet paginated |
 | T159-OLP-0095-B031 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:301-312](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L301) | [mr/content/first-order-logic/natural-deduction/soundness.tex:303-314](../mr/content/first-order-logic/natural-deduction/soundness.tex#L303) | not yet paginated |
+| T159-OLP-0096-B009 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:40-50](../upstream/content/first-order-logic/natural-deduction/identity.tex#L40) | [mr/content/first-order-logic/natural-deduction/identity.tex:40-50](../mr/content/first-order-logic/natural-deduction/identity.tex#L40) | not yet paginated |
+| T159-OLP-0096-B011 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:59-112](../upstream/content/first-order-logic/natural-deduction/identity.tex#L59) | [mr/content/first-order-logic/natural-deduction/identity.tex:60-112](../mr/content/first-order-logic/natural-deduction/identity.tex#L60) | not yet paginated |
 
 **Chosen rendering/action:** गृहीतक / मुक्त करणे / मुक्त केलेले / मुक्त न केलेले
 
@@ -7883,7 +7913,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T160 — introduction rule / elimination rule</strong> (48 occurrences; medium priority)</summary>
+<summary><strong>T160 — introduction rule / elimination rule</strong> (49 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7935,6 +7965,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T160-OLP-0095-B024 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L244) | [mr/content/first-order-logic/natural-deduction/soundness.tex:244-273](../mr/content/first-order-logic/natural-deduction/soundness.tex#L244) | not yet paginated |
 | T160-OLP-0095-B025 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:273-273](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L273) | [mr/content/first-order-logic/natural-deduction/soundness.tex:275-275](../mr/content/first-order-logic/natural-deduction/soundness.tex#L275) | not yet paginated |
 | T160-OLP-0095-B026 | OLP-0095 ·  | [upstream/content/first-order-logic/natural-deduction/soundness.tex:275-277](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L275) | [mr/content/first-order-logic/natural-deduction/soundness.tex:277-279](../mr/content/first-order-logic/natural-deduction/soundness.tex#L277) | not yet paginated |
+| T160-OLP-0096-B011 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:59-112](../upstream/content/first-order-logic/natural-deduction/identity.tex#L59) | [mr/content/first-order-logic/natural-deduction/identity.tex:60-112](../mr/content/first-order-logic/natural-deduction/identity.tex#L60) | not yet paginated |
 
 **Chosen rendering/action:** प्रवेशन नियम / विलोपन नियम
 
@@ -8268,7 +8299,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T174 — closed term</strong> (48 occurrences; high priority)</summary>
+<summary><strong>T174 — closed term</strong> (51 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8320,6 +8351,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T174-OLP-0087-B014 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-103](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L85) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:84-102](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L84) | not yet paginated |
 | T174-OLP-0087-B015 | OLP-0087 ·  | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L105) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L104) | not yet paginated |
 | T174-OLP-0090-B007 | OLP-0090 ·  | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:20-86](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L20) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:19-82](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L19) | not yet paginated |
+| T174-OLP-0096-B008 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:36-38](../upstream/content/first-order-logic/natural-deduction/identity.tex#L36) | [mr/content/first-order-logic/natural-deduction/identity.tex:36-38](../mr/content/first-order-logic/natural-deduction/identity.tex#L36) | not yet paginated |
+| T174-OLP-0096-B009 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:40-50](../upstream/content/first-order-logic/natural-deduction/identity.tex#L40) | [mr/content/first-order-logic/natural-deduction/identity.tex:40-50](../mr/content/first-order-logic/natural-deduction/identity.tex#L40) | not yet paginated |
+| T174-OLP-0096-B011 | OLP-0096 ·  | [upstream/content/first-order-logic/natural-deduction/identity.tex:59-112](../upstream/content/first-order-logic/natural-deduction/identity.tex#L59) | [mr/content/first-order-logic/natural-deduction/identity.tex:60-112](../mr/content/first-order-logic/natural-deduction/identity.tex#L60) | not yet paginated |
 
 **Chosen rendering/action:** बंद पद
 
