@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 76/722 source units through OLP-0079; 226 applied decisions; 5,042 occurrences.
+Coverage: 77/722 source units through OLP-0080; 226 applied decisions; 5,063 occurrences.
 
 ## T001 — set
 
@@ -1097,6 +1097,7 @@ Coverage: 76/722 source units through OLP-0079; 226 applied decisions; 5,042 occ
 | `T005-OLP-0078-B013` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:71-73` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:72-75` | pending |
 | `T005-OLP-0078-B015` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100` | pending |
 | `T005-OLP-0078-B017` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:105-125` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:107-126` | pending |
+| `T005-OLP-0080-B007` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:24-30` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:23-29` | pending |
 
 ## T006 — proper subset
 
@@ -6797,6 +6798,7 @@ Coverage: 76/722 source units through OLP-0079; 226 applied decisions; 5,042 occ
 |---|---|---|---|---|---|
 | `T104-OLP-0052-B011` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:46-49` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:49-52` | 68–69 |
 | `T104-OLP-0072-B013` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:57-59` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:57-59` | pending |
+| `T104-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
 
 ## T105 — isomorphic / isomorphism
 
@@ -7009,6 +7011,8 @@ Coverage: 76/722 source units through OLP-0079; 226 applied decisions; 5,042 occ
 | `T110-OLP-0077-B007` | `OLP-0077` |  | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | pending |
 | `T110-OLP-0078-B006` | `OLP-0078` |  | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:15-17` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:15-16` | pending |
 | `T110-OLP-0079-B007` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:18-24` | pending |
+| `T110-OLP-0080-B005` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:12-16` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:12-15` | pending |
+| `T110-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -7083,6 +7087,11 @@ Coverage: 76/722 source units through OLP-0079; 226 applied decisions; 5,042 occ
 | `T112-OLP-0076-B005` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:11-11` | pending |
 | `T112-OLP-0076-B007` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27` | pending |
 | `T112-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
+| `T112-OLP-0080-B004` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:9-10` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:9-10` | pending |
+| `T112-OLP-0080-B005` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:12-16` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:12-15` | pending |
+| `T112-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
+| `T112-OLP-0080-B007` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:24-30` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:23-29` | pending |
+| `T112-OLP-0080-B009` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:40-57` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:39-56` | pending |
 
 ## T113 — classical logic / classical
 
@@ -7662,6 +7671,7 @@ Coverage: 76/722 source units through OLP-0079; 226 applied decisions; 5,042 occ
 | `T127-OLP-0058-B031` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:154-156` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:153-155` | 74–75 |
 | `T127-OLP-0058-B032` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158-159` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:157-159` | 74–75 |
 | `T127-OLP-0058-B033` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | 74–75 |
+| `T127-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
 
 ## T128 — negation / conjunction / disjunction / conditional / biconditional
 
@@ -9317,6 +9327,8 @@ Coverage: 76/722 source units through OLP-0079; 226 applied decisions; 5,042 occ
 | `T175-OLP-0079-B009` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56` | pending |
 | `T175-OLP-0079-B011` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | pending |
 | `T175-OLP-0079-B013` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | pending |
+| `T175-OLP-0080-B007` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:24-30` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:23-29` | pending |
+| `T175-OLP-0080-B009` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:40-57` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:39-56` | pending |
 
 ## T176 — end-sequent
 
@@ -9411,6 +9423,8 @@ Coverage: 76/722 source units through OLP-0079; 226 applied decisions; 5,042 occ
 | `T178-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:81-86` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:82-86` | pending |
 | `T178-OLP-0076-B007` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27` | pending |
 | `T178-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
+| `T178-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
+| `T178-OLP-0080-B007` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:24-30` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:23-29` | pending |
 
 ## T179 — eigenvariable condition
 
@@ -9443,6 +9457,8 @@ Coverage: 76/722 source units through OLP-0079; 226 applied decisions; 5,042 occ
 | `T179-OLP-0072-B014` | `OLP-0072` |  | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:81-86` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:82-86` | pending |
 | `T179-OLP-0076-B007` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-29` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:17-27` | pending |
 | `T179-OLP-0076-B008` | `OLP-0076` |  | `upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex:31-83` | `mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex:29-79` | pending |
+| `T179-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
+| `T179-OLP-0080-B007` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:24-30` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:23-29` | pending |
 
 ## T180 — Rules for [logical symbol] (heading construction)
 
@@ -9621,6 +9637,11 @@ Coverage: 76/722 source units through OLP-0079; 226 applied decisions; 5,042 occ
 | `T184-OLP-0079-B011` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:65-97` | pending |
 | `T184-OLP-0079-B012` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:99-105` | pending |
 | `T184-OLP-0079-B013` | `OLP-0079` |  | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | `mr/content/first-order-logic/sequent-calculus/provability-propositional.tex:107-136` | pending |
+| `T184-OLP-0080-B004` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:9-10` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:9-10` | pending |
+| `T184-OLP-0080-B005` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:12-16` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:12-15` | pending |
+| `T184-OLP-0080-B006` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | pending |
+| `T184-OLP-0080-B007` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:24-30` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:23-29` | pending |
+| `T184-OLP-0080-B009` | `OLP-0080` |  | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:40-57` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:39-56` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 

@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 26 urgent/high decisions and
-659 current occurrences. Normal and low items remain in the full index.
+663 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -871,6 +871,8 @@ This view contains 26 urgent/high decisions and
 | `T178-OLP-0072-B014` | `OLP-0072` |  | 81-86 | 82-86 | pending |
 | `T178-OLP-0076-B007` | `OLP-0076` |  | 17-29 | 17-27 | pending |
 | `T178-OLP-0076-B008` | `OLP-0076` |  | 31-83 | 29-79 | pending |
+| `T178-OLP-0080-B006` | `OLP-0080` |  | 18-22 | 17-21 | pending |
+| `T178-OLP-0080-B007` | `OLP-0080` |  | 24-30 | 23-29 | pending |
 
 ## T179 — eigenvariable condition → आयगेन चराची अट
 
@@ -887,6 +889,8 @@ This view contains 26 urgent/high decisions and
 | `T179-OLP-0072-B014` | `OLP-0072` |  | 81-86 | 82-86 | pending |
 | `T179-OLP-0076-B007` | `OLP-0076` |  | 17-29 | 17-27 | pending |
 | `T179-OLP-0076-B008` | `OLP-0076` |  | 31-83 | 29-79 | pending |
+| `T179-OLP-0080-B006` | `OLP-0080` |  | 18-22 | 17-21 | pending |
+| `T179-OLP-0080-B007` | `OLP-0080` |  | 24-30 | 23-29 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

@@ -1,0 +1,58 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: provability-quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{qpr}
+\olsection{\usetoken{S}{derivability} आणि संख्यापक}
+
+\begin{explain}
+  संपूर्णता प्रमेयासाठी या विभागात स्थापित केलेली~$\Proves$ संबंधी तथ्ये
+  क्रमवर्ती कलनातील नियमांनी निष्पन्न होतात, हेही आवश्यक आहे.
+\end{explain}
+
+\begin{thm}
+\ollabel{thm:strong-generalization} जर $c$ हे $\Gamma$ किंवा $!A(x)$ मध्ये
+न येणारे स्थिर असेल आणि $\Gamma \Proves !A(c)$, तर $\Gamma
+\Proves \lforall[x][!A(x)]$.
+\end{thm}
+
+\begin{proof}
+$\pi_0$ ही $\Gamma_0 \Sequent !A(c)$ या क्रमवर्तीची $\Log{LK}$-!!{derivation}
+असलेली एखादी सांत $\Gamma_0 \subseteq \Gamma$ घ्या.  $\RightR{\lforall}$
+अनुमान जोडल्यावर आपल्याला $\Gamma_0 \Sequent
+\lforall[x][!A(x)]$ ची !!a{derivation} मिळते, कारण $c$ हे $\Gamma$ किंवा
+$!A(x)$ मध्ये येत नाही आणि म्हणून आयगेन चराची अट पूर्ण होते.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$!A(t) \Proves \lexists[x][!A(x)]$.}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)] \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$!A(t) \Sequent \lexists[x][!A(x)]$ ही क्रमवर्ती
+  !!{derivable} आहे:
+  \begin{prooftree}
+    \Axiom$!A(t) \fCenter !A(t)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$!A(t) \fCenter \lexists[x][!A(x)]$
+    \end{prooftree}}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)] \Sequent !A(t)$ ही क्रमवर्ती
+  !!{derivable} आहे:
+  \begin{prooftree}
+    \Axiom$!A(t) \fCenter !A(t)$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x)] \fCenter !A(t)$
+    \end{prooftree}}{}
+\end{tagenumerate}
+\end{proof}
+
+\end{document}
