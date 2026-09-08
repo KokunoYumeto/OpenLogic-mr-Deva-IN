@@ -1,9 +1,9 @@
 # Start here: Marathi translation decisions
 
 This bundle is the expert-review entry point for the current Marathi
-OpenLogic translation through OLP-0098. It covers 95/722 source units,
+OpenLogic translation through OLP-0099. It covers 96/722 source units,
 10 complete chapters, 235 applied decisions and
-6,393 current decision-level occurrence records. The remaining 627 units are untranslated.
+6,422 current decision-level occurrence records. The remaining 626 units are untranslated.
 The paginated 10-chapter reader ends at OLP-0097; later translated units use pending PDF locators.
 
 No independent human or native-speaker review is claimed. Every choice remains
@@ -14,7 +14,7 @@ a publication or completion hold.
 
 - `TRANSLATION_DECISIONS_FULL.md` is the readable complete applied-decision index.
 - `PRIORITY_REVIEW.md` contains only urgent/high review items and their occurrences.
-- `DECISION_OCCURRENCES.csv` has one UTF-8 row for each of 6,393 occurrences.
+- `DECISION_OCCURRENCES.csv` has one UTF-8 row for each of 6,422 occurrences.
 - `DECISIONS.json` is the canonical machine record validated against the shared schema.
 - `translation-decision.schema.json` is the exact frozen shared schema.
 - `TRANSLATION_DECISION_QA.json` records validation, counts and hashes.
@@ -24,7 +24,7 @@ must use schema status `pending`; none were guessed in this checkpoint. Source
 and target locators contain current file SHA-256 values, exact line spans, byte
 spans and excerpts. 1 prospective terminology records (`T013`)
 remain in the backward-compatible legacy ledger but are deferred
-from `DECISIONS.json` because they have no occurrence in the current 95-unit
+from `DECISIONS.json` because they have no occurrence in the current 96-unit
 coverage and the shared schema requires at least one real occurrence per decision.
 Decision-relevant spans are narrower than aligned context blocks where explicitly recorded. They may overlap when one construction realizes several choices and do not claim a disjoint token partition.
 

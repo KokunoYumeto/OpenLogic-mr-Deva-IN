@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 26 urgent/high decisions and
-961 current occurrences. Normal and low items remain in the full index.
+966 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -483,6 +483,10 @@ This view contains 26 urgent/high decisions and
 | `T041-OLP-0089-B013` | `OLP-0089` | 10.5 निष्पत्ती: उदाहरणे | 116-147 | 109-139 | 113–117 |
 | `T041-OLP-0089-B014` | `OLP-0089` | 10.5 निष्पत्ती: उदाहरणे | 149-176 | 141-169 | 113–117 |
 | `T041-OLP-0089-B015` | `OLP-0089` | 10.5 निष्पत्ती: उदाहरणे | 178-265 | 171-258 | 113–117 |
+| `T041-OLP-0099-B006` | `OLP-0099` |  | 15-19 | 15-19 | pending |
+| `T041-OLP-0099-B009` | `OLP-0099` |  | 33-42 | 33-42 | pending |
+| `T041-OLP-0099-B010` | `OLP-0099` |  | 44-52 | 44-52 | pending |
+| `T041-OLP-0099-B011` | `OLP-0099` |  | 54-57 | 54-57 | pending |
 
 ## T042 — least / well-ordered / predecessor / successor → लघुतम / सुक्रमित / पूर्ववर्ती / उत्तरवर्ती
 
@@ -863,6 +867,7 @@ This view contains 26 urgent/high decisions and
 | `T044-OLP-0096-B012` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | 114-122 | 114-122 | 128–129 |
 | `T044-OLP-0097-B007` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | 17-21 | 17-21 | 129–130 |
 | `T044-OLP-0097-B008` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | 23-45 | 23-48 | 129–130 |
+| `T044-OLP-0099-B009` | `OLP-0099` |  | 33-42 | 33-42 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
