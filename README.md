@@ -21,10 +21,10 @@ to identical bytes and every page was
 inspected. Its offline HTML companion passed exact source-conversion, structure,
 asset, proof-display and desktop/mobile browser checks.
 
-The editable working tree now continues through OLP-0099 in the Tableaux chapter:
-96/722 units and 1,028 aligned content segments. OLP-0098–OLP-0099 remain
+The editable working tree now continues through OLP-0101 in the Tableaux chapter:
+98/722 units and 1,043 aligned content segments. OLP-0098–OLP-0101 remain
 intentionally outside the frozen 94-unit v0.7 reader, source checkpoint and
-release archive. Translation resumes at OLP-0100.
+release archive. Translation resumes at OLP-0102.
 
 - **Current release:** [दहा प्रकरणे — PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/ten-chapters-v0.7).
 - **DOI mirror:** [edition concept DOI 10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960), which resolves to the latest version.
@@ -80,8 +80,8 @@ The evidence also preserves the formal retraction of a
 shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The frozen
 94-unit source-checkpoint evidence explicitly distinguishes preserved original
 pages from hash-pinned short web observations whose origin HTML bytes were
-unavailable. The synchronized root provenance now covers 96 translated units and
-1,028 aligned segments through OLP-0099. A bounded independent model audit of
+unavailable. The synchronized root provenance now covers 98 translated units and
+1,043 aligned segments through OLP-0101. A bounded independent model audit of
 OLP-0071–OLP-0072 found no
 material mistranslation, prompted one standing-assumption clarification, and led
 to narrower overlapping choice locators plus separate confidence records for
@@ -130,9 +130,13 @@ truth under equal term values. OLP-0098 begins the Tableaux chapter, preserves i
 conditional first-order imports, and corrects the copied source description of the
 chapter as natural deduction under OLTAB-001. OLP-0099 defines signed formulas,
 rule application along a branch, closed branches and the semantic force of a
-closed tableau rooted at a false-signed sentence.
+closed tableau rooted at a false-signed sentence. OLP-0100 supplies the four
+propositional rule pairs and cut; OLP-0101 supplies the quantifier rules, closed-term
+and eigenvariable conditions, substitution examples and their soundness rationale.
+OLTAB-002 makes the standing closed-term restriction explicit in the final
+quantifier-rule contrast.
 The records through OLP-0097 are included in the v0.7 reader and release archive;
-OLP-0098–OLP-0099 are post-release working units. OLP-0100 is next.
+OLP-0098–OLP-0101 are post-release working units. OLP-0102 is next.
 
 Canon originals are local research evidence. They are **not redistributed here**.
 Some government-site originals could not be downloaded; the index distinguishes

@@ -1,0 +1,107 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: quantifier-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{qrl}
+
+\olsection{संख्यापकांचे नियम}
+
+\subsection{$\lforall$ साठीचे नियम}
+
+\begin{defish}
+\AxiomC{\sFmla{\True}{\lforall[x][!A(x)]}}
+\RightLabel{\TRule{\True}{\forall}}
+\UnaryInfC{\sFmla{\True}{!A(t)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\lforall[x][!A(x)]}}
+\RightLabel{\TRule{\False}{\lforall}}
+\UnaryInfC{\sFmla{\False}{!A(a)}}
+\DisplayProof
+\end{defish}
+
+\TRule{\True}{\lforall} मध्ये, $t$ हे बंद पद आहे (म्हणजे, चरे नसलेले
+पद). \TRule{\False}{\lforall} मध्ये, $a$~हा असा !!a{constant} आहे की तो
+\TRule{\False}{\lforall} नियमाच्या वरच्या शाखेत कोठेही येता कामा नये.
+\TRule{\False}{\forall} अनुमानाचा $a$ हा \emph{आयगेन चर} आहे, असे आपण
+म्हणतो.\footnote{वरील नियमात $a$ हा !!a{constant} असला तरी आपण
+``आयगेन चर'' ही संज्ञा वापरतो. यामागे ऐतिहासिक कारणे आहेत.}
+
+\subsection{$\lexists$ साठीचे नियम}
+
+\begin{defish}
+\AxiomC{\sFmla{\True}{\lexists[x][!A(x)]}}
+\RightLabel{\TRule{\True}{\lexists}}
+\UnaryInfC{\sFmla{\True}{!A(a)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\lexists[x][!A(x)]}}
+\RightLabel{\TRule{\False}{\lexists}}
+\UnaryInfC{\sFmla{\False}{!A(t)}}
+\DisplayProof
+\end{defish}
+
+पुन्हा, $t$~हे बंद पद आहे आणि $a$~हा असा !!a{constant} आहे की तो
+\TRule{\True}{\lexists} नियमाच्या वरच्या शाखेत येत नाही. आपण $a$ ला
+\TRule{\True}{\lexists} अनुमानाचा \emph{आयगेन चर} म्हणतो.
+
+\TRule{\False}{\lforall} किंवा \TRule{\True}{\lexists} अनुमानाच्या वरच्या
+शाखेत आयगेन चर येत नसावा, या अटीला \emph{आयगेन चराची अट} म्हणतात.
+
+\begin{explain}
+ही प्रथा आठवा: $!A$ हे असे !!a{formula} असेल की त्यात
+!!{variable}~$x$ मुक्त असेल, तर हे आपण~$!A(x)$ असे लिहून दर्शवतो.
+त्याच संदर्भात, मग $!A(t)$ हा~$\Subst{!A}{t}{x}$ चा संक्षेप असतो.
+त्यामुळे \TRule{\False}{\lexists} नियम पुढीलप्रमाणेही लिहिता येईल:
+\begin{prooftree}
+  \AxiomC{\sFmla{\False}{\lexists[x][!A]}}
+  \RightLabel{\TRule{\False}{\lexists}}
+  \UnaryInfC{\sFmla{\False}{\Subst{!A}{t}{x}}}
+\end{prooftree}
+लक्षात घ्या की~$!A$ मध्ये $t$ आधीच येऊ शकते; उदा., $!A$ हे
+~$\Atom{\Obj P}{t,x}$ असू शकते. म्हणून,
+$\sFmla{\False}{\lexists[x][\Atom{\Obj P}{t,x}]}$ पासून
+$\sFmla{\False}{\Atom{\Obj P}{t,t}}$ निष्पन्न करणे हा
+\TRule{\False}{\lexists} चा योग्य उपयोग आहे. परंतु
+\TRule{\False}{\lforall} आणि~\TRule{\True}{\lexists} मधील आयगेन चराच्या
+अटींनुसार !!{constant}~$a$ हा~$!A$ मध्ये येता कामा नये. म्हणून,
+$\sFmla{\False}{\lforall[x][\Atom{\Obj P}{a,x}]}$ पासून
+$\sFmla{\False}{\Atom{\Obj P}{a,a}}$ हे
+~$\TRule{\False}{\lforall}$ वापरून योग्य रीतीने निष्पन्न करता येत नाही.
+\end{explain}
+
+\begin{explain}
+\TRule{\True}{\lforall} आणि \TRule{\False}{\lexists} मध्ये पद~$t$ बंद
+असण्याव्यतिरिक्त त्यावर आणखी कोणतेही निर्बंध नाहीत. याउलट,
+\TRule{\True}{\lexists} आणि \TRule{\False}{\lforall} नियमांमध्ये आयगेन
+चराच्या अटीनुसार संबंधित अनुमानांच्या वरच्या शाखांमध्ये !!{constant}~$a$
+कोठेही येता कामा नये. ही पद्धत निर्दोष राहील याची खात्री करण्यासाठी ही अट
+आवश्यक आहे. ही अट नसती, तर पुढील आकृती
+$\lexists[x][\formula{A}(x)] \lif \lforall[x][\formula{A}(x)]$ साठीचा
+बंद !!{tableau} ठरली असती:
+\begin{center}
+\begin{tableau}{}
+  [\sFmla{\False}{\lexists[x][\formula{A}(x)] \lif \lforall[x][\formula{A}(x)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][\formula{A}(x)]},
+      just={\TRule{\False}{\lif}[1]}
+      [\sFmla{\False}{\lforall[x][\formula{A}(x)]},
+        just={\TRule{\False}{\lif}[1]}
+        [\sFmla{\True}{\formula{A}(a)},
+          just={\TRule{\True}{\lexists}[2]}
+          [\sFmla{\False}{\formula{A}(a)},
+            just={\TRule{\False}{\lforall}[3]}, close]
+        ]
+      ]
+    ]
+  ]
+\end{tableau}
+\end{center}
+परंतु $\lexists[x][\formula{A}(x)] \lif
+\lforall[x][\formula{A}(x)]$ हे वैध नाही.
+\end{explain}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occurrences.
+Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occurrences.
 
 ## T001 — set
 
@@ -1524,6 +1524,7 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T009-OLP-0095-B014` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:109-128` | `mr/content/first-order-logic/natural-deduction/soundness.tex:108-127` | 125–128 |
 | `T009-OLP-0095-B029` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:291-294` | `mr/content/first-order-logic/natural-deduction/soundness.tex:293-296` | 125–128 |
 | `T009-OLP-0097-B007` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | 129–130 |
+| `T009-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
 
 ## T010 — truth / truth value
 
@@ -3706,6 +3707,11 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T041-OLP-0099-B009` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42` | pending |
 | `T041-OLP-0099-B010` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52` | pending |
 | `T041-OLP-0099-B011` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | pending |
+| `T041-OLP-0100-B016` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | pending |
+| `T041-OLP-0101-B008` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:27-33` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:27-32` | pending |
+| `T041-OLP-0101-B011` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:49-51` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:48-50` | pending |
+| `T041-OLP-0101-B012` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:53-55` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:52-53` | pending |
+| `T041-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
 
 ## T042 — least / well-ordered / predecessor / successor
 
@@ -7076,6 +7082,7 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T104-OLP-0080-B006` | `OLP-0080` | 9.11 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:18-22` | `mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex:17-21` | 103 |
 | `T104-OLP-0087-B008` | `OLP-0087` | 10.3 संख्यापकांचे नियम | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-34` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:27-33` | 110–111 |
 | `T104-OLP-0087-B013` | `OLP-0087` | 10.3 संख्यापकांचे नियम | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | 110–111 |
+| `T104-OLP-0101-B013` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | pending |
 
 ## T105 — isomorphic / isomorphism
 
@@ -7468,6 +7475,10 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T112-OLP-0096-B010` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/natural-deduction/identity.tex:52-57` | `mr/content/first-order-logic/natural-deduction/identity.tex:52-58` | 128–129 |
 | `T112-OLP-0096-B011` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/natural-deduction/identity.tex:59-112` | `mr/content/first-order-logic/natural-deduction/identity.tex:60-112` | 128–129 |
 | `T112-OLP-0096-B012` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/natural-deduction/identity.tex:114-122` | `mr/content/first-order-logic/natural-deduction/identity.tex:114-122` | 128–129 |
+| `T112-OLP-0101-B005` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:11-11` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:11-11` | pending |
+| `T112-OLP-0101-B006` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:13-13` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:13-13` | pending |
+| `T112-OLP-0101-B009` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:35-35` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:34-34` | pending |
+| `T112-OLP-0101-B013` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | pending |
 
 ## T113 — classical logic / classical
 
@@ -7621,6 +7632,7 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T115-OLP-0093-B012` | `OLP-0093` | 10.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:95-101` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:96-103` | 123–124 |
 | `T115-OLP-0093-B013` | `OLP-0093` | 10.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:103-111` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:105-113` | 123–124 |
 | `T115-OLP-0093-B014` | `OLP-0093` | 10.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:113-131` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:115-133` | 123–124 |
+| `T115-OLP-0100-B005` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:13-13` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:13-13` | pending |
 
 ## T116 — truth-functional
 
@@ -8335,6 +8347,10 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T128-OLP-0095-B025` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:273-273` | `mr/content/first-order-logic/natural-deduction/soundness.tex:275-275` | 125–128 |
 | `T128-OLP-0096-B011` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/natural-deduction/identity.tex:59-112` | `mr/content/first-order-logic/natural-deduction/identity.tex:60-112` | 128–129 |
 | `T128-OLP-0096-B012` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/natural-deduction/identity.tex:114-122` | `mr/content/first-order-logic/natural-deduction/identity.tex:114-122` | 128–129 |
+| `T128-OLP-0100-B006` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:15-15` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:15-15` | pending |
+| `T128-OLP-0100-B008` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:29-29` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:29-29` | pending |
+| `T128-OLP-0100-B010` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:45-45` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:45-45` | pending |
+| `T128-OLP-0100-B012` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:61-61` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:61-61` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -8409,6 +8425,7 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T130-OLP-0058-B032` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158-159` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:157-159` | 75–76 |
 | `T130-OLP-0058-B033` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | 75–76 |
 | `T130-OLP-0072-B013` | `OLP-0072` | 9.3 संख्यापकांचे नियम | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:59-60` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:59-60` | 90–91 |
+| `T130-OLP-0101-B013` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | pending |
 
 ## T131 — atomic formula
 
@@ -8674,6 +8691,7 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T138-OLP-0096-B011` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/natural-deduction/identity.tex:59-112` | `mr/content/first-order-logic/natural-deduction/identity.tex:60-112` | 128–129 |
 | `T138-OLP-0096-B012` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/natural-deduction/identity.tex:114-122` | `mr/content/first-order-logic/natural-deduction/identity.tex:114-122` | 128–129 |
 | `T138-OLP-0097-B008` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | 129–130 |
+| `T138-OLP-0101-B013` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | pending |
 
 ## T139 — occurrence (of a variable or formula)
 
@@ -9163,6 +9181,10 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T151-OLP-0097-B008` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | 129–130 |
 | `T151-OLP-0099-B005` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:13-13` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:13-13` | pending |
 | `T151-OLP-0099-B009` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42` | pending |
+| `T151-OLP-0100-B005` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:13-13` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:13-13` | pending |
+| `T151-OLP-0101-B005` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:11-11` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:11-11` | pending |
+| `T151-OLP-0101-B008` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:27-33` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:27-32` | pending |
+| `T151-OLP-0101-B011` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:49-51` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:48-50` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -9410,6 +9432,7 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T155-OLP-0095-B031` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:301-312` | `mr/content/first-order-logic/natural-deduction/soundness.tex:303-314` | 125–128 |
 | `T155-OLP-0097-B005` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:11-11` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:11-11` | 129–130 |
 | `T155-OLP-0097-B006` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | 129–130 |
+| `T155-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -9964,6 +9987,8 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T164-OLP-0099-B009` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42` | pending |
 | `T164-OLP-0099-B010` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52` | pending |
 | `T164-OLP-0099-B011` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | pending |
+| `T164-OLP-0100-B016` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | pending |
+| `T164-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
 
 ## T165 — signed formula / truth-value sign / immediate subformula
 
@@ -10001,6 +10026,7 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T165-OLP-0099-B009` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42` | pending |
 | `T165-OLP-0099-B010` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52` | pending |
 | `T165-OLP-0099-B011` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | pending |
+| `T165-OLP-0100-B016` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | pending |
 
 ## T166 — Evert Beth / Jaakko Hintikka / Raymond Smullyan
 
@@ -10369,6 +10395,10 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T174-OLP-0096-B011` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/natural-deduction/identity.tex:59-112` | `mr/content/first-order-logic/natural-deduction/identity.tex:60-112` | 128–129 |
 | `T174-OLP-0097-B007` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | 129–130 |
 | `T174-OLP-0097-B008` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | 129–130 |
+| `T174-OLP-0101-B008` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:27-33` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:27-32` | pending |
+| `T174-OLP-0101-B011` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:49-51` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:48-50` | pending |
+| `T174-OLP-0101-B013` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | pending |
+| `T174-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
 
 ## T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)
 
@@ -10463,6 +10493,8 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T175-OLP-0085-B007` | `OLP-0085` | 10.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:26-29` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:25-28` | 109 |
 | `T175-OLP-0085-B008` | `OLP-0085` | 10.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | 109 |
 | `T175-OLP-0085-B010` | `OLP-0085` | 10.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | 109 |
+| `T175-OLP-0100-B014` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:77-77` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:77-77` | pending |
+| `T175-OLP-0100-B016` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | pending |
 
 ## T176 — end-sequent
 
@@ -10615,6 +10647,11 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T178-OLP-0090-B012` | `OLP-0090` | 10.6 संख्यापकांसह निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:137-181` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:131-173` | 117–120 |
 | `T178-OLP-0094-B009` | `OLP-0094` | 10.10 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | 124–125 |
 | `T178-OLP-0095-B018` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:174-203` | `mr/content/first-order-logic/natural-deduction/soundness.tex:173-202` | 125–128 |
+| `T178-OLP-0101-B008` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:27-33` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:27-32` | pending |
+| `T178-OLP-0101-B011` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:49-51` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:48-50` | pending |
+| `T178-OLP-0101-B012` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:53-55` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:52-53` | pending |
+| `T178-OLP-0101-B013` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | pending |
+| `T178-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
 
 ## T179 — eigenvariable condition
 
@@ -10700,6 +10737,11 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T179-OLP-0090-B012` | `OLP-0090` | 10.6 संख्यापकांसह निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:137-181` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:131-173` | 117–120 |
 | `T179-OLP-0094-B009` | `OLP-0094` | 10.10 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:27-32` | 124–125 |
 | `T179-OLP-0095-B018` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:174-203` | `mr/content/first-order-logic/natural-deduction/soundness.tex:173-202` | 125–128 |
+| `T179-OLP-0101-B008` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:27-33` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:27-32` | pending |
+| `T179-OLP-0101-B011` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:49-51` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:48-50` | pending |
+| `T179-OLP-0101-B012` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:53-55` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:52-53` | pending |
+| `T179-OLP-0101-B013` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | pending |
+| `T179-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
 
 ## T180 — Rules for [logical symbol] (heading construction)
 
@@ -10741,6 +10783,13 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | `T180-OLP-0086-B017` | `OLP-0086` | 10.2 विधानीय नियम | `upstream/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | `mr/content/first-order-logic/natural-deduction/propositional-rules.tex:115-118` | 109–110 |
 | `T180-OLP-0087-B006` | `OLP-0087` | 10.3 संख्यापकांचे नियम | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:13-13` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:13-13` | 110–111 |
 | `T180-OLP-0087-B009` | `OLP-0087` | 10.3 संख्यापकांचे नियम | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:36-36` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:35-35` | 110–111 |
+| `T180-OLP-0100-B006` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:15-15` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:15-15` | pending |
+| `T180-OLP-0100-B008` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:29-29` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:29-29` | pending |
+| `T180-OLP-0100-B010` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:45-45` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:45-45` | pending |
+| `T180-OLP-0100-B012` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:61-61` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:61-61` | pending |
+| `T180-OLP-0100-B014` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:77-77` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:77-77` | pending |
+| `T180-OLP-0101-B006` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:13-13` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:13-13` | pending |
+| `T180-OLP-0101-B009` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:35-35` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:34-34` | pending |
 
 ## T181 — compactness (proof-theoretic property)
 
@@ -12300,6 +12349,31 @@ Coverage: 96/722 source units through OLP-0099; 235 applied decisions; 6,422 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLTAB-001-OLP-0098` | `OLP-0098` |  | `upstream/content/first-order-logic/tableaux/tableaux.tex:15-18` | `mr/content/first-order-logic/tableaux/tableaux.tex:15-18` | pending |
+
+## OLTAB-002 — confirmed-source-clarification of the standing closed-term restriction
+
+**Chosen rendering/action:** Clarified the Marathi sentence as ‘पद t बंद असण्याव्यतिरिक्त त्यावर आणखी कोणतेही निर्बंध नाहीत,’ retaining the standing closed-term requirement and every formula and rule unchanged.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The final explanation says that t has no restrictions in true-universal and false-existential tableau rules, although both earlier rule explanations require t to be a closed term. The intended contrast is the absence of any additional restriction beyond closedness.
+
+**Rationale:** The final explanation says that t has no restrictions in true-universal and false-existential tableau rules, although both earlier rule explanations require t to be a closed term. The intended contrast is the absence of any additional restriction beyond closedness. Chosen action: Clarified the Marathi sentence as ‘पद t बंद असण्याव्यतिरिक्त त्यावर आणखी कोणतेही निर्बंध नाहीत,’ retaining the standing closed-term requirement and every formula and rule unchanged.
+
+**Authorities actually checked:**
+
+- `OLTAB-002-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTAB-002. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the locally overbroad no-restrictions wording literally — `rejected`: Not chosen; the source finding and recorded action control.
+- Repeat the full parenthetical definition of a closed term in the final explanation — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the clarification state exactly that t may be any closed term without adding a stronger side condition?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTAB-002-OLP-0101` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:27-28` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:27-28` | pending |
 
 ## Deferred prospective decisions
 
