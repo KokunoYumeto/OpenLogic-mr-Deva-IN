@@ -1,0 +1,62 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0096",
+  "method": "Same-agent English/Marathi block-by-block close reading, equality-rule reverse paraphrase, exact formula, macro, protected-token and identifier comparison, and reconstruction of every natural-deduction proof tree; no independent human or native-speaker review is claimed.",
+  "scope": "Natural deduction with identity: reflexivity and bidirectional substitution rules, substitutability of identicals, symmetry and transitivity exercises, and a quantified uniqueness derivation.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "Derivations with identity need extra rules. Identity introduction derives t equals t without premises. Either identity-elimination variant replaces t_1 by t_2 or t_2 by t_1 inside A, given the relevant identity and formula premise.",
+      "checks": "The heading tokens, all three rule diagrams, argument order, introduction label, both elimination labels and display layout are exact."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "The metavariables t, t_1 and t_2 range over closed terms, and identity introduction derives any reflexive identity t equals t outright from no assumptions.",
+      "checks": "Closedness applies to all three terms, no-premise status is explicit, and the reflexive formula remains unchanged."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "For closed s and t, A(s) together with s equals t derives A(t) by identity elimination. This is the substitutability of identicals, also called Leibniz's Law.",
+      "checks": "The premise order, substitution direction, proof-tree formulas, rule label and both names are preserved."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "The exercise asks for derivations showing that identity is symmetric and transitive, with both properties universally quantified over their variables.",
+      "checks": "Every universal quantifier, identity orientation, conjunction, conditional and variable is exact."
+    },
+    {
+      "blocks": [
+        11
+      ],
+      "reverse_paraphrase": "From the sentence saying that some x is identical to every A-object, derive that any two A-objects are identical. Backward proof search introduces the conditional and two universals, then eliminates the existential major assumption using a temporary witness c. The right subderivation obtains a equals c and b equals c from the universal witness property and the A(a)-and-A(b) assumption, and identity elimination yields a equals b.",
+      "checks": "Both large proof trees, witness c, discharge labels 1 and 2, universal and existential rule directions, the displayed subderivation for a equals c and the final identity-elimination step are preserved exactly."
+    },
+    {
+      "blocks": [
+        12
+      ],
+      "reverse_paraphrase": "The final exercises request a quantified substitutability derivation and a derivation turning existence plus uniqueness into existence of an A-object identical to every A-object.",
+      "checks": "Both complete quantified formulas, connective scopes and all identity arguments remain source-identical."
+    }
+  ],
+  "source_observations": [
+    "The frozen source's quantified uniqueness example is internally coherent with the declared bidirectional identity-elimination rules; no upstream defect or correction was identified."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "एकरूपता, बंद पद, सममित, संक्रमक, प्रतिस्थापन and लाइब्निझचा नियम follow the edition's established identity and relation vocabulary; the displayed formulas control the exact formal senses.",
+    "The source supplies only the a-equals-c subderivation and leaves the parallel b-equals-c derivation implicit; the Marathi target preserves that scope.",
+    "The current coherent reader ends at OLP-0068, so this unit has not yet received paginated TeX or browser-rendering QA."
+  ]
+}

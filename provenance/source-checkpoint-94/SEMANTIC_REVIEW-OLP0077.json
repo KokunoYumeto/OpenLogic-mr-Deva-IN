@@ -1,0 +1,67 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0077",
+  "method": "Same-agent English/Marathi block-by-block close reading, definition-by-definition reverse paraphrase, exact formula, macro, token and identifier comparison, and a bounded lexical check for compactness; no independent human or native-speaker review is claimed.",
+  "scope": "Proof-theoretic notions for LK: theoremhood, derivability from a set, consistency, reflexivity, monotonicity, transitivity, inconsistency characterization and compactness.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "The section introduces proof-theoretic notions defined by derivability or nonderivability of sequents rather than by satisfaction in structures, and relates their coincidence with soundness and completeness.",
+      "checks": "The editorial wrapper, heading, semantic/proof-theoretic contrast, derivability vocabulary and soundness/completeness claim are preserved."
+    },
+    {
+      "blocks": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "reverse_paraphrase": "A theorem is a sentence with an LK derivation of an empty-antecedent sequent. A sentence is derivable from Gamma when a finite subset can be ordered as a sequence yielding the target, and contraction, weakening and exchange make order and multiplicity immaterial. Consistency means that no finite subset derives the empty succedent.",
+      "checks": "The theorem and derivability definitions retain all finite-subset, sequence, sequent and Proves conditions. The structural-rule tree preserves contraction, exchange and weakening order. The consistency definition keeps the empty succedent and the universal finite-subset negation."
+    },
+    {
+      "blocks": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "reverse_paraphrase": "The section proves reflexivity from the initial sequent, monotonicity by retaining a finite witness under set inclusion, and transitivity by cutting a derivation of A into a derivation from A and Delta. The resulting corollaries are stated explicitly.",
+      "checks": "Every proposition label and reference is preserved. The cut tree keeps pi0 and pi1 in the correct premises, the finite subsets Gamma0 and Delta0, and the union conclusion. No semantic entailment is substituted for derivability."
+    },
+    {
+      "blocks": [
+        19,
+        20,
+        21
+      ],
+      "reverse_paraphrase": "A set is inconsistent exactly when it derives every sentence; the proof remains an exercise, and the named proposition is referenced by the exercise block.",
+      "checks": "The biconditional, universal sentence variable, intentional unproved proof and protected cross-reference are exact."
+    },
+    {
+      "blocks": [
+        22,
+        23
+      ],
+      "reverse_paraphrase": "Compactness says that any derivability claim has a finite witnessing subset, and if every finite subset is consistent then the whole set is consistent. The proof uses the definitions in each direction.",
+      "checks": "Both enumerated clauses preserve finite-subset quantification, derivability, consistency and the direction of the contradiction argument. संहतता is a mathematical headword extended provisionally to this proof-theoretic sense; the source clauses control the meaning."
+    }
+  ],
+  "source_observations": [
+    "The compactness lexical note records the official mathematical glossary observation संहतता and explicitly states that it is adjacent mathematical evidence rather than direct proof-theory attestation."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "सिद्धता-उपपत्तीय संकल्पना and सिद्धतायोग्यता are transparent, definition-controlled compounds rather than fully attested specialist headwords.",
+    "संहतता is directly observed in the official mathematics glossary, but no exact Marathi proof-theory compactness occurrence was found in the bounded search; the direct origin page was unavailable.",
+    "The current coherent reader ends at OLP-0068, so this unit has not yet received paginated TeX or browser-rendering QA."
+  ]
+}

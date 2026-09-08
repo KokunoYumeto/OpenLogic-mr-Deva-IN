@@ -1,0 +1,44 @@
+{
+  "schema": "openlogic-expert-review-occurrence-checkpoint/1",
+  "coverage": {
+    "translated_units": 94,
+    "total_units": 722,
+    "aligned_segments": 1018,
+    "complete": false
+  },
+  "occurrence_granularity": "one decision-governed relevant span within an aligned segment, a context block where no narrower span exists, or one durable source issue",
+  "choice_span_overlap_policy": "Narrow decision spans may overlap and are not a disjoint token partition.",
+  "decisions_with_occurrences": 234,
+  "occurrences": 6363,
+  "priority_counts": {
+    "high": 957,
+    "medium": 2814,
+    "routine": 2592
+  },
+  "script": "Deva",
+  "locale": "mr-IN",
+  "edition_language_tag": "mr-Deva-IN",
+  "reader_pdf": {
+    "status": "current coherent reader through OLP-0097; 0 later translated unit(s) unpaginated",
+    "pages": 133,
+    "sha256": "78901ead14277d7b4b2b4f28e429ba95764b748b9bac781a3a820adfba1ca616"
+  },
+  "surfaces": {
+    "provenance/EXPERT_REVIEW_OCCURRENCES.md": {
+      "bytes": 2783474,
+      "sha256": "ba50b4eb450d9325a537c0ec940fb5a2030230676baefd32ffe31a4aedbe303d"
+    },
+    "provenance/EXPERT_REVIEW_PRIORITY.md": {
+      "bytes": 11245,
+      "sha256": "82f00cca276c3adbd688d350ef01d6ce842bd952267693992c5ccbeaed009cb3"
+    },
+    "provenance/EXPERT_REVIEW_OCCURRENCES.csv": {
+      "bytes": 8274767,
+      "sha256": "ecd5d15a5e88e882459a0861976636155cf2c87be46d3a20a6d1ff7d1f81ece4"
+    },
+    "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl": {
+      "bytes": 18094766,
+      "sha256": "cb2fc94f046cb119e81eb071f05d42e23790756d7aa3e29a7b72929e578248b7"
+    }
+  }
+}

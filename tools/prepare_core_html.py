@@ -11,9 +11,8 @@ from pathlib import Path
 import fitz
 from bs4 import BeautifulSoup
 from core_html_proofs import (
-    PROOFS,
     adapt_prose_ensuremath,
-    expand_proof_math_macros,
+    expand_reader_math_macros,
     strip_proof_environments,
 )
 
@@ -34,52 +33,25 @@ def sha(path):
 
 def expand_logic_math_macros(text):
     """Expand the xparse/applytofirst shorthands Pandoc cannot parse."""
-    text = re.sub(
-        r"\\pSat/\{([A-Za-z])([^{}]*)\}\{([^{}]+)\}",
-        r"\\mathfrak{\1}\2\\nvDash \3",
-        text,
-    )
-    text = re.sub(
-        r"\\pSat\{([A-Za-z])([^{}]*)\}\{([^{}]+)\}",
-        r"\\mathfrak{\1}\2\\vDash \3",
-        text,
-    )
-    text = re.sub(
-        r"\\pValue\{([A-Za-z])([^{}]*)\}",
-        r"\\overline{\\mathfrak{\1}\2}",
-        text,
-    )
-    text = re.sub(r"\\pAssign\{([A-Za-z])([^{}]*)\}", r"\\mathfrak{\1}\2", text)
-    text = re.sub(
-        r"\\Frm\[([A-Za-z])([^][]*)\]",
-        r"\\mathrm{Frm}(\\mathcal{\1}\2)",
-        text,
-    )
-    text = re.sub(r"\\Lang\{([A-Za-z])([^{}]*)\}", r"\\mathcal{\1}\2", text)
-    text = re.sub(r"\\Lang\s+([A-Za-z])", r"\\mathcal{\1}", text)
-    text = re.sub(r"\\Struct\{([A-Za-z])([^{}]*)\}", r"\\mathfrak{\1}\2", text)
-    text = re.sub(r"\\Struct\s+([A-Za-z])", r"\\mathfrak{\1}", text)
-    text = re.sub(r"\\Entails\b", r"\\vDash", text)
-    return expand_proof_math_macros(text)
+    return expand_reader_math_macros(text)
 
 
 input_rows = json.loads(INPUTS.read_text(encoding="utf-8"))["input_units"]
-section_driver_names = {
-    "sets.tex", "relations-complete.tex", "functions.tex",
-    "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
-    "propositional-logic.tex", "syntax-and-semantics.tex",
-    "proof-systems.tex",
+section_driver_unit_ids = {
+    "OLP-0004", "OLP-0011", "OLP-0020", "OLP-0027", "OLP-0041",
+    "OLP-0049", "OLP-0055", "OLP-0056", "OLP-0063", "OLP-0069",
+    "OLP-0084",
 }
-chapter_driver_names = {
-    "sets.tex", "relations-complete.tex", "functions.tex",
-    "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
-    "syntax-and-semantics.tex",
-    "proof-systems.tex",
-}
+chapter_driver_unit_ids = section_driver_unit_ids - {"OLP-0055"}
 scope = {
     "translation_source_units": len(input_rows),
-    "reader_sections": len(input_rows) - sum(Path(row["path"]).name in section_driver_names for row in input_rows),
-    "complete_chapters": sum(Path(row["path"]).name in chapter_driver_names for row in input_rows),
+    "reader_sections": len(input_rows) - sum(row["unit_id"] in section_driver_unit_ids for row in input_rows),
+    "complete_chapters": sum(row["unit_id"] in chapter_driver_unit_ids for row in input_rows),
+}
+assert scope == {
+    "translation_source_units": 94,
+    "reader_sections": 83,
+    "complete_chapters": 10,
 }
 
 
@@ -91,21 +63,20 @@ assert sha(TEX) == receipt["texInputSha256"]
 document = fitz.open(PDF)
 assert len(document) >= 83
 specs = [
-    # These are physical PDF page numbers. The printed page number is one less
-    # because the unnumbered title page is part of the PDF page sequence.
-    ("union", 9, (176, 131, 417, 328), "A आणि B या दोन संचांचा संयोग. दोन्ही बंद वक्रांचा संपूर्ण भाग चिन्हांकित आहे; म्हणजे A किंवा B यांपैकी किमान एका संचातील सर्व घटक."),
-    ("intersection", 9, (176, 485, 417, 682), "A आणि B या दोन संचांचा छेद. दोन बंद वक्रांचा फक्त सामाईक आच्छादित भाग चिन्हांकित आहे."),
-    ("difference", 11, (176, 68, 417, 264), "A वजा B हा संचफरक. A च्या वक्रातील B च्या बाहेर राहणारा भाग चिन्हांकित आहे; सामाईक भाग वगळलेला आहे."),
-    ("graph-four", 20, (227, 207, 368, 305), "दिशित आलेखाची चार शिखरे 1, 2, 3 आणि 4. कडा 1 ते 1, 1 ते 2, 1 ते 3 आणि 2 ते 3; शिखर 4 एकाकी आहे."),
-    ("graph-three", 20, (227, 340, 312, 439), "दिशित आलेखाची शिखरे 1, 2 आणि 3. कडा 1 ते 1, 1 ते 2, 1 ते 3 आणि 2 ते 3; आधीच्या आलेखातील एकाकी शिखर 4 येथे नाही."),
-    ("tree", 20, (241, 662, 354, 776), "सांत वृक्ष. सर्वांत खाली मूळ r; त्याची अपत्ये a आणि b; a ची अपत्ये c, d आणि e. पूर्वज संबंध कडांवरून वरच्या दिशेने वाचला जातो."),
-    ("function", 24, (176, 67, 417, 201), "फलनाची आकृती. डावीकडील प्रांतातील प्रत्येक फलसाधकापासून उजवीकडील सहप्रांतातील नेमक्या एका मूल्याकडे बाण जातो."),
-    ("surjective", 25, (176, 613, 418, 746), "आच्छादक फलन. सहप्रांतातील प्रत्येक लाल घटकाकडे प्रांतातील किमान एका करड्या घटकापासून बाण येतो."),
-    ("injective", 26, (176, 67, 417, 221), "एकास-एक फलन. वेगवेगळ्या करड्या फलसाधकांचे बाण वेगवेगळ्या लाल मूल्यांकडे जातात; सहप्रांतातील काही घटक मूल्य नसू शकतात."),
-    ("bijective", 26, (176, 613, 418, 746), "एकास-एक व आच्छादक फलन. प्रांतातील प्रत्येक करडा घटक आणि सहप्रांतातील प्रत्येक लाल घटक यांची नेमकी एक जोडी बाणाने जोडलेली आहे."),
-    ("composition", 30, (135, 602, 457, 747), "फलन-संयोजन g वर्तुळ f. डावीकडील A मधून f चे बाण मधल्या B मध्ये, B मधून g चे बाण उजवीकडील C मध्ये, आणि तुटक बाह्य बाण A मधून थेट C मधील त्याच अंतिम मूल्यांकडे जातात."),
-    ("root-two-square", 55, (214, 388, 367, 483), "वर्गमूळ दोनच्या अपरिमेयतेची भूमितीय आकृती. m बाजूच्या मोठ्या चौरसात n बाजूचे दोन आच्छादित चौरस आहेत; नारिंगी सामाईक चौरस आणि दोन न रंगवलेले कोपरे लहान समान रचना दाखवतात."),
-    ("hilberts-hotel", 66, (180, 575, 415, 650), "हिल्बर्टच्या हॉटेलमधील खोली बदल. वरच्या ओळीत जुने पाहुणे 1, 2, 3 आणि पुढे आहेत; प्रत्येक बाण पाहुणा n याला खालच्या ओळीतील खोली n अधिक 1 मध्ये हलवतो, त्यामुळे वर्तुळ केलेली खोली 1 नव्या पाहुण्यासाठी मोकळी होते."),
+    # These are physical PDF page numbers for the current ten-chapter reader.
+    ("union", 10, (176, 131, 417, 328), "A आणि B या दोन संचांचा संयोग. दोन्ही बंद वक्रांचा संपूर्ण भाग चिन्हांकित आहे; म्हणजे A किंवा B यांपैकी किमान एका संचातील सर्व घटक."),
+    ("intersection", 10, (176, 485, 417, 682), "A आणि B या दोन संचांचा छेद. दोन बंद वक्रांचा फक्त सामाईक आच्छादित भाग चिन्हांकित आहे."),
+    ("difference", 12, (176, 68, 417, 264), "A वजा B हा संचफरक. A च्या वक्रातील B च्या बाहेर राहणारा भाग चिन्हांकित आहे; सामाईक भाग वगळलेला आहे."),
+    ("graph-four", 21, (227, 207, 368, 305), "दिशित आलेखाची चार शिखरे 1, 2, 3 आणि 4. कडा 1 ते 1, 1 ते 2, 1 ते 3 आणि 2 ते 3; शिखर 4 एकाकी आहे."),
+    ("graph-three", 21, (227, 340, 312, 439), "दिशित आलेखाची शिखरे 1, 2 आणि 3. कडा 1 ते 1, 1 ते 2, 1 ते 3 आणि 2 ते 3; आधीच्या आलेखातील एकाकी शिखर 4 येथे नाही."),
+    ("tree", 21, (241, 662, 354, 776), "सांत वृक्ष. सर्वांत खाली मूळ r; त्याची अपत्ये a आणि b; a ची अपत्ये c, d आणि e. पूर्वज संबंध कडांवरून वरच्या दिशेने वाचला जातो."),
+    ("function", 25, (176, 67, 417, 201), "फलनाची आकृती. डावीकडील प्रांतातील प्रत्येक फलसाधकापासून उजवीकडील सहप्रांतातील नेमक्या एका मूल्याकडे बाण जातो."),
+    ("surjective", 26, (176, 613, 418, 746), "आच्छादक फलन. सहप्रांतातील प्रत्येक लाल घटकाकडे प्रांतातील किमान एका करड्या घटकापासून बाण येतो."),
+    ("injective", 27, (176, 67, 417, 221), "एकास-एक फलन. वेगवेगळ्या करड्या फलसाधकांचे बाण वेगवेगळ्या लाल मूल्यांकडे जातात; सहप्रांतातील काही घटक मूल्य नसू शकतात."),
+    ("bijective", 27, (176, 613, 418, 746), "एकास-एक व आच्छादक फलन. प्रांतातील प्रत्येक करडा घटक आणि सहप्रांतातील प्रत्येक लाल घटक यांची नेमकी एक जोडी बाणाने जोडलेली आहे."),
+    ("composition", 31, (135, 602, 457, 747), "फलन-संयोजन g वर्तुळ f. डावीकडील A मधून f चे बाण मधल्या B मध्ये, B मधून g चे बाण उजवीकडील C मध्ये, आणि तुटक बाह्य बाण A मधून थेट C मधील त्याच अंतिम मूल्यांकडे जातात."),
+    ("root-two-square", 56, (214, 388, 367, 483), "वर्गमूळ दोनच्या अपरिमेयतेची भूमितीय आकृती. m बाजूच्या मोठ्या चौरसात n बाजूचे दोन आच्छादित चौरस आहेत; नारिंगी सामाईक चौरस आणि दोन न रंगवलेले कोपरे लहान समान रचना दाखवतात."),
+    ("hilberts-hotel", 67, (180, 575, 415, 650), "हिल्बर्टच्या हॉटेलमधील खोली बदल. वरच्या ओळीत जुने पाहुणे 1, 2, 3 आणि पुढे आहेत; प्रत्येक बाण पाहुणा n याला खालच्या ओळीतील खोली n अधिक 1 मध्ये हलवतो, त्यामुळे वर्तुळ केलेली खोली 1 नव्या पाहुण्यासाठी मोकळी होते."),
 ]
 
 assets = []
@@ -203,38 +174,41 @@ assert count == 1
 tex = tex.replace(r"\pto", r"\rightharpoonup")
 
 # TeX permits ordinary prose between aligned rows via \intertext; Pandoc does
-# not. Split this single prose-bearing display into two displays so the prose
-# and its inline mathematics remain semantic HTML in their original order.
+# not. Split every remaining prose-bearing display so its prose and inline
+# mathematics remain semantic HTML in their original order.
 marker = r"\intertext{"
-start = tex.index(marker)
-index = start + len(marker)
-depth = 1
-while depth:
-    if tex[index] == "{" and tex[index - 1] != "\\":
-        depth += 1
-    elif tex[index] == "}" and tex[index - 1] != "\\":
-        depth -= 1
-    index += 1
-intertext = tex[start + len(marker) : index - 1]
-align_start = tex.rfind(r"\begin{align*}", 0, start)
-align_end = tex.index(r"\end{align*}", index) + len(r"\end{align*}")
-assert align_start >= 0 and "या परिमेय संख्यांवर" in intertext
-before = tex[align_start + len(r"\begin{align*}") : start]
-after = tex[index : align_end - len(r"\end{align*}")]
-split_align = (
-    r"\begin{align*}"
-    + before.rstrip()
-    + "\n"
-    + r"\end{align*}"
-    + "\n\n"
-    + intertext
-    + "\n\n"
-    + r"\begin{align*}"
-    + after.lstrip()
-    + r"\end{align*}"
-)
-tex = tex[:align_start] + split_align + tex[align_end:]
-assert r"\intertext" not in tex
+intertext_count = 0
+while marker in tex:
+    start = tex.index(marker)
+    index = start + len(marker)
+    depth = 1
+    while depth:
+        if tex[index] == "{" and tex[index - 1] != "\\":
+            depth += 1
+        elif tex[index] == "}" and tex[index - 1] != "\\":
+            depth -= 1
+        index += 1
+    intertext = tex[start + len(marker) : index - 1]
+    align_start = tex.rfind(r"\begin{align*}", 0, start)
+    align_end = tex.index(r"\end{align*}", index) + len(r"\end{align*}")
+    assert align_start >= 0
+    before = tex[align_start + len(r"\begin{align*}") : start]
+    after = tex[index : align_end - len(r"\end{align*}")]
+    split_align = (
+        r"\begin{align*}"
+        + before.rstrip()
+        + "\n"
+        + r"\end{align*}"
+        + "\n\n"
+        + intertext
+        + "\n\n"
+        + r"\begin{align*}"
+        + after.lstrip()
+        + r"\end{align*}"
+    )
+    tex = tex[:align_start] + split_align + tex[align_end:]
+    intertext_count += 1
+assert intertext_count == 2
 
 # These five row labels are text inside displayed mathematics. \text converts
 # to MathML cleanly while retaining the same Marathi wording.
@@ -266,9 +240,17 @@ preamble, document_marker, body = tex.partition(r"\begin{document}")
 assert document_marker
 body = expand_logic_math_macros(body)
 tex = preamble + document_marker + body
-assert not re.search(
-    r"\\(?:Struct|Lang|Frm|Entails|pAssign|pValue|pSat)/?(?:\b|\[|\{)",
+assertion_body = re.sub(
+    r"\\verb\*?(?P<delimiter>[^A-Za-z0-9\s]).*?(?P=delimiter)",
+    "",
     body,
+    flags=re.S,
+)
+assert not re.search(
+    r"\\(?:Struct|Lang|Frm|Entails|pAssign|pValue|pSat|Sat|Assign|"
+    r"varAssign|Value|Log|Atom|Subst|lexists|lforall|eq|readerexternalref)"
+    r"/?(?:\b|\[|\{)",
+    assertion_body,
 )
 
 html_input = B / "html-input.tex"
@@ -293,7 +275,7 @@ args = [
     "--toc",
     "--number-sections",
     "--metadata=lang:mr",
-    "--metadata=title:मुक्त तर्कशास्त्र — संच, संबंध, फलने, संचांचे आकारमान, अंकगणितीकरण, अनंत संच, विधानीय तर्कशास्त्र आणि सिद्धता-पद्धती",
+    "--metadata=title:मुक्त तर्कशास्त्र — संच, संबंध, फलने, संचांचे आकारमान, अंकगणितीकरण, अनंत संच, विधानीय तर्कशास्त्र, सिद्धता-पद्धती, क्रमवर्ती कलन आणि नैसर्गिक निगमन",
     "--metadata=toc-title:अनुक्रमणिका",
     "--css=reader.css",
     "--output=" + str(O / "index.html"),
@@ -306,10 +288,26 @@ assert not result.stderr, result.stderr
 doc = (O / "index.html").read_text(encoding="utf-8")
 for asset in assets:
     pattern = r'(<img\b[^>]*src="' + re.escape(asset["filename"]) + r'"[^>]*)(/?>)'
+    image_id = "diagram-" + Path(asset["filename"]).stem
+    x0, y0, x1, y1 = asset["source_pdf_crop"]
+    intrinsic_width = int((x1 - x0) * 2)
+    intrinsic_height = int((y1 - y0) * 2)
 
-    def label(match, alt=asset["alt"]):
+    def label(
+        match,
+        alt=asset["alt"],
+        image_id=image_id,
+        intrinsic_width=intrinsic_width,
+        intrinsic_height=intrinsic_height,
+    ):
         tag = re.sub(r'\s+alt="[^"]*"', "", match.group(1))
-        return tag + ' alt="' + html.escape(alt, quote=True) + '" loading="lazy"' + match.group(2)
+        return (
+            tag
+            + ' id="' + image_id + '"'
+            + f' width="{intrinsic_width}" height="{intrinsic_height}"'
+            + ' alt="' + html.escape(alt, quote=True) + '" loading="lazy"'
+            + match.group(2)
+        )
 
     doc, count = re.subn(pattern, label, doc)
     assert count == 1, (asset["filename"], count)
@@ -321,31 +319,30 @@ doc = doc.replace(
 
 soup = BeautifulSoup(doc, "html.parser")
 
+proof_formulae = list(
+    dict.fromkeys(row["formula_tex"] for spec in proof_specs for row in spec["rows"])
+)
+assert proof_formulae and all("$" not in formula for formula in proof_formulae)
+proof_conversion = subprocess.run(
+    [pandoc, "--from=markdown", "--to=html5", "--mathml"],
+    input="\n\n".join("$" + formula + "$" for formula in proof_formulae),
+    capture_output=True,
+    text=True,
+    encoding="utf-8",
+    timeout=120,
+)
+assert proof_conversion.returncode == 0 and proof_conversion.stderr == "", proof_conversion.stderr
+proof_nodes = BeautifulSoup(proof_conversion.stdout, "html.parser").find_all("math")
+assert len(proof_nodes) == len(proof_formulae)
+assert all(
+    node.find("annotation", attrs={"encoding": "application/x-tex"})
+    for node in proof_nodes
+)
+proof_math_html = dict(zip(proof_formulae, map(str, proof_nodes)))
+
 
 def math_node(latex):
-    conversion = subprocess.run(
-        [pandoc, "--from=markdown", "--to=html5", "--mathml"],
-        input="$" + latex + "$",
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        timeout=30,
-    )
-    assert conversion.returncode == 0 and conversion.stderr == "", conversion.stderr
-    node = BeautifulSoup(conversion.stdout, "html.parser").find("math")
-    assert node and node.find("annotation", attrs={"encoding": "application/x-tex"})
-    return node
-
-
-def section_paragraph(section_id, anchor):
-    heading = soup.find("h2", id=section_id)
-    assert heading, section_id
-    node = heading.find_next_sibling()
-    while node and node.name != "h2":
-        if node.name == "p" and anchor in node.get_text(" ", strip=True):
-            return node
-        node = node.find_next_sibling()
-    raise AssertionError((section_id, anchor))
+    return BeautifulSoup(proof_math_html[latex], "html.parser").find("math")
 
 
 for spec in proof_specs:
@@ -372,10 +369,19 @@ for spec in proof_specs:
     thead.append(header_row)
     table.append(thead)
     tbody = soup.new_tag("tbody")
+    group_totals = {}
+    for row in spec["rows"]:
+        group = row.get("group", 1)
+        group_totals[group] = group_totals.get(group, 0) + 1
+    group_seen = {}
     for number, row in enumerate(spec["rows"], 1):
         tr = soup.new_tag("tr")
         number_cell = soup.new_tag("td")
-        number_cell.string = str(number)
+        group = row.get("group", 1)
+        group_seen[group] = group_seen.get(group, 0) + 1
+        number_cell.string = (
+            f"{group}.{group_seen[group]}" if len(group_totals) > 1 else str(number)
+        )
         formula_cell = soup.new_tag("td")
         formula_cell.append(math_node(row["formula_tex"]))
         rule_cell = soup.new_tag("td")
@@ -384,9 +390,29 @@ for spec in proof_specs:
         tbody.append(tr)
     table.append(tbody)
     figure.append(table)
-    section_paragraph(spec["section_id"], spec["anchor"]).insert_after(figure)
+    placeholder = next(
+        (
+            node
+            for node in soup.find_all("p")
+            if spec["placeholder"] in node.get_text(" ", strip=True)
+        ),
+        None,
+    )
+    assert placeholder is not None, spec["id"]
+    if placeholder.get_text(" ", strip=True) == spec["placeholder"]:
+        placeholder.replace_with(figure)
+    else:
+        # Pandoc can append a proof environment's QED square to the placeholder
+        # paragraph. Put the semantic figure before that paragraph and retain
+        # the marker as ordinary proof-ending text.
+        placeholder.insert_before(figure)
+        text_node = next(
+            node for node in placeholder.find_all(string=True)
+            if spec["placeholder"] in node
+        )
+        text_node.replace_with(text_node.replace(spec["placeholder"], "", 1).lstrip())
 
-assert len(soup.select("figure.proof")) == len(PROOFS)
+assert len(soup.select("figure.proof")) == len(proof_specs)
 # Tie the stylesheet URL to its exact bytes so a browser that already opened an
 # earlier development build cannot silently reuse stale responsive CSS.
 stylesheet = soup.select_one('link[rel~="stylesheet"][href="reader.css"]')

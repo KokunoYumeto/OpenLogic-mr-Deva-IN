@@ -1,0 +1,178 @@
+{
+  "schema": "openlogic-html-browser-qa/1",
+  "reviewed_utc": "2026-09-07T23:51:03.2347840Z",
+  "artifact": {
+    "filename": "index.html",
+    "bytes": 2401370,
+    "sha256": "b5ccc79b7c49cd187cadaef145f1c3760daa2337c5363962d05f8a6d2524e346",
+    "stylesheet_sha256": "9e74a8058e4ebb722b057b95a956ed9f2238566d21672047742d4ae1ae937eb8"
+  },
+  "scope": {
+    "translation_source_units": 94,
+    "reader_sections": 83,
+    "complete_chapters": 10,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0097"
+  },
+  "browser": "Chromium through Codex in-app browser",
+  "local_origin": "http://127.0.0.1:8765/",
+  "desktop": {
+    "viewport_css_pixels": [
+      1280,
+      720
+    ],
+    "document_client_width": 1265,
+    "document_scroll_width": 1265,
+    "body_client_width": 928,
+    "body_scroll_width": 928,
+    "page_level_horizontal_overflow": false,
+    "rendered_heading_counts": {
+      "h1": 13,
+      "h2_including_contents_heading": 84,
+      "numbered_reader_sections": 83
+    },
+    "densest_proof": {
+      "id": "proof-auto-098",
+      "rows": 12,
+      "client_width": 885,
+      "scroll_width": 885,
+      "table_width": 480,
+      "overflow_x": "auto"
+    }
+  },
+  "mobile": {
+    "viewport_css_pixels": [
+      390,
+      844
+    ],
+    "measurement_method": "explicit Codex in-app browser viewport override",
+    "document_client_width": 375,
+    "document_scroll_width": 375,
+    "body_client_width": 375,
+    "body_scroll_width": 375,
+    "page_level_horizontal_overflow": false,
+    "all_diagrams_fit_body": true,
+    "densest_proof": {
+      "id": "proof-auto-098",
+      "rows": 12,
+      "client_width": 344,
+      "scroll_width": 496,
+      "table_width": 480,
+      "overflow_x": "auto",
+      "scrollbar_contained": true
+    },
+    "horizontal_scroll_exercised": {
+      "figure_id": "proof-auto-098",
+      "scroll_left_before": 0,
+      "scroll_left_after": 152,
+      "maximum_scroll_left": 152
+    }
+  },
+  "runtime_counts": {
+    "native_mathml": 5608,
+    "keyboard_focusable_display_math_regions": 125,
+    "internal_fragment_links": 266,
+    "broken_fragment_links": 0,
+    "duplicate_ids": 0,
+    "proof_figures": 143,
+    "proof_formula_rows": 674,
+    "diagram_assets": 13,
+    "desktop_diagram_assets_loaded_successfully": 13,
+    "mobile_diagram_assets_loaded_successfully": 13,
+    "console_errors_or_warnings": 0
+  },
+  "font": {
+    "document_fonts_status": "loaded",
+    "computed_body_family": "OLMarathi, serif",
+    "local_marathi_font_loaded": true
+  },
+  "diagrams": [
+    {
+      "id": "diagram-union",
+      "natural_width": 482,
+      "natural_height": 394,
+      "alt_characters": 130
+    },
+    {
+      "id": "diagram-intersection",
+      "natural_width": 482,
+      "natural_height": 394,
+      "alt_characters": 85
+    },
+    {
+      "id": "diagram-difference",
+      "natural_width": 482,
+      "natural_height": 392,
+      "alt_characters": 99
+    },
+    {
+      "id": "diagram-graph-four",
+      "natural_width": 282,
+      "natural_height": 196,
+      "alt_characters": 95
+    },
+    {
+      "id": "diagram-graph-three",
+      "natural_width": 170,
+      "natural_height": 198,
+      "alt_characters": 111
+    },
+    {
+      "id": "diagram-tree",
+      "natural_width": 226,
+      "natural_height": 228,
+      "alt_characters": 126
+    },
+    {
+      "id": "diagram-function",
+      "natural_width": 482,
+      "natural_height": 268,
+      "alt_characters": 109
+    },
+    {
+      "id": "diagram-surjective",
+      "natural_width": 484,
+      "natural_height": 266,
+      "alt_characters": 94
+    },
+    {
+      "id": "diagram-injective",
+      "natural_width": 482,
+      "natural_height": 308,
+      "alt_characters": 117
+    },
+    {
+      "id": "diagram-bijective",
+      "natural_width": 484,
+      "natural_height": 266,
+      "alt_characters": 125
+    },
+    {
+      "id": "diagram-composition",
+      "natural_width": 644,
+      "natural_height": 290,
+      "alt_characters": 164
+    },
+    {
+      "id": "diagram-root-two-square",
+      "natural_width": 306,
+      "natural_height": 190,
+      "alt_characters": 169
+    },
+    {
+      "id": "diagram-hilberts-hotel",
+      "natural_width": 470,
+      "natural_height": 150,
+      "alt_characters": 209
+    }
+  ],
+  "visual_samples": [
+    "title and linked ten-chapter contents at desktop and mobile widths",
+    "twelve-row proof-auto-098 proof table at desktop width",
+    "proof-auto-098 before and after contained mobile horizontal scrolling",
+    "union, graph-four, graph-three, and Hilbert's hotel diagrams with Marathi captions",
+    "all 13 lazily loaded diagram assets decoded in Chromium"
+  ],
+  "result": "passed",
+  "notes": "Marathi shaping, native MathML, responsive diagrams, semantic proof tables, captions, and local navigation rendered cleanly at both widths. All thirteen SVGs decoded and fit the mobile body. The densest proof table was fully visible at desktop width and scrolled inside its figure at mobile width without page-level overflow. The browser console contained no warnings or errors."
+}

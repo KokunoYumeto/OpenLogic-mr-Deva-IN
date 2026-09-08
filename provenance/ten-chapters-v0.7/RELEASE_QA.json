@@ -1,0 +1,69 @@
+{
+  "schema": "openlogic-cumulative-release-qa/1",
+  "release": "ten-chapters-v0.7",
+  "scope": {
+    "translated_source_units": 94,
+    "total_source_units": 722,
+    "remaining_source_units": 628,
+    "aligned_content_segments": 1018,
+    "reader_sections": 83,
+    "complete_chapters": 10,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0097",
+    "complete_edition": false
+  },
+  "pdf": {
+    "filename": "openlogic-mr-ten-chapters.pdf",
+    "pages": 133,
+    "bytes": 607662,
+    "sha256": "78901ead14277d7b4b2b4f28e429ba95764b748b9bac781a3a820adfba1ca616",
+    "two_clean_guarded_builds_byte_identical": true,
+    "all_pages_visually_reviewed": true,
+    "tagged_pdf": false,
+    "accessible_html_companion_required": true
+  },
+  "accessible_html": {
+    "entrypoint": "reader/ten-chapters/index.html",
+    "bytes": 2401370,
+    "sha256": "b5ccc79b7c49cd187cadaef145f1c3760daa2337c5363962d05f8a6d2524e346",
+    "native_mathml": 5608,
+    "diagrams_with_detailed_marathi_alternatives": 13,
+    "semantic_proof_figures": 143,
+    "proof_formula_rows": 674,
+    "internal_links_valid": 266,
+    "desktop_browser_layout": "passed at 1280x720 CSS pixels",
+    "mobile_browser_layout": "passed at 390x844 CSS pixels",
+    "densest_proof_table_mobile_scroll_contained": true,
+    "page_level_horizontal_overflow": false,
+    "console_errors_or_warnings": 0,
+    "network_dependencies": 0
+  },
+  "translation_decisions": {
+    "canonical_decisions_with_occurrences": 234,
+    "legacy_decisions": 235,
+    "prospective_decisions_without_occurrences": [
+      "T013"
+    ],
+    "occurrences": 6363,
+    "high_priority_occurrences": 957,
+    "schema_errors": 0,
+    "canonical_json_sha256": "61c944a4f3ea35f86ceb807be6ffea87b5261fd18b22593933e9f698440fa93a",
+    "canonical_qa_sha256": "00e677b03262e016170a5f0ea9c62ab10a06ee59257372e16193d2a85844c062"
+  },
+  "source_checkpoint": {
+    "path": "provenance/source-checkpoint-94/SOURCE_CHECKPOINT.json",
+    "bytes": 43169,
+    "sha256": "57e4bac2738e0fc23c87c90d45114ce8b2a091fe98501ca77fcfd19bb34208f2"
+  },
+  "working_state_ahead": {
+    "unit_id": "OLP-0098",
+    "draft_target_excluded_from_release": true
+  },
+  "validators": {
+    "aligned_source_formula_macro_token_identifier": "passed",
+    "shared_translation_decision_schema": "passed with zero errors",
+    "cross_package_consistency": "passed on working tree; package pass recorded after staging"
+  },
+  "review": "Codex machine translation and same-agent bilingual review; no independent human review claimed",
+  "release_ready": true
+}

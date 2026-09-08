@@ -1,0 +1,47 @@
+{
+  "schema": "openlogic-release-owner-state-slice/1",
+  "release": "ten-chapters-v0.7",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": {
+    "translated_source_units": 94,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0097",
+    "aligned_segments": 1018,
+    "remaining_source_units": 628
+  },
+  "working_state_ahead": {
+    "translated_source_units": 95,
+    "last_unit": "OLP-0098",
+    "aligned_segments": 1021,
+    "excluded_from_release": [
+      "OLP-0098"
+    ]
+  },
+  "files": {
+    "CANON_PASSAGES.jsonl": {
+      "bytes": 101209,
+      "sha256": "457ccfa5bb5b04336d8199fb76dbd60f963392a97c05dbf968d446739108f06b"
+    },
+    "CANON_SOURCES.jsonl": {
+      "bytes": 55174,
+      "sha256": "cd1de42e16ff4eab655148abb2553512ac5db4c3272b5237354d5961b7ab0aa9"
+    },
+    "CURSOR.json": {
+      "bytes": 2091,
+      "sha256": "1706f45111e3fc183545b5f68c557f4971ff66ebd13e9aa2c50a99b333d08874"
+    },
+    "SEGMENT_CANON_USE.jsonl": {
+      "bytes": 1582027,
+      "sha256": "47fce0ea70c6e53e3d0cd283ef440af0ffcdedd6a077983e4a94fc743b793531"
+    },
+    "SOURCE_MANIFEST.jsonl": {
+      "bytes": 356467,
+      "sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155"
+    },
+    "TERM_DECISIONS.jsonl": {
+      "bytes": 149643,
+      "sha256": "ed09f13c320f08929ad0e1bbc3ae0eb245ede252a21415b0e2096b91722c4b94"
+    }
+  },
+  "result": "passed"
+}

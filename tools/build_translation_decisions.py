@@ -27,6 +27,10 @@ SOURCE_REVISION = "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
 PDF_FILENAME = PDF.name
 GENERATED_UTC = "2026-09-06T00:00:00Z"
 KNOWN_PROSPECTIVE_IDS = {"T009", "T013", "T171", "T185"}
+CHAPTER_DRIVER_UNIT_IDS = {
+    "OLP-0004", "OLP-0011", "OLP-0020", "OLP-0027", "OLP-0041",
+    "OLP-0049", "OLP-0056", "OLP-0063", "OLP-0069", "OLP-0084",
+}
 
 
 def sha(path):
@@ -46,12 +50,9 @@ translated_unit_ids = sorted(
 )
 SOURCE_UNITS = len(translated_unit_ids)
 LAST_UNIT = translated_unit_ids[-1]
-driver_names = {
-    "sets.tex", "relations-complete.tex", "functions.tex",
-    "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
-    "syntax-and-semantics.tex", "proof-systems.tex",
-}
-COMPLETE_CHAPTERS = sum(Path(row["path"]).name in driver_names for row in input_rows)
+COMPLETE_CHAPTERS = sum(
+    row["unit_id"] in CHAPTER_DRIVER_UNIT_IDS for row in input_rows
+)
 PDF_PROFILE = f"{COMPLETE_CHAPTERS}-chapter cumulative reader through {READER_LAST_UNIT}"
 RELEASE_TAG = f"development-through-{LAST_UNIT}"
 
@@ -137,6 +138,10 @@ CHAPTERS = {
     "4": "संचांचे आकारमान",
     "5": "अंकगणितीकरण",
     "6": "अनंत संच",
+    "7": "विधानीय तर्कशास्त्र",
+    "8": "सिद्धता-पद्धती",
+    "9": "क्रमवर्ती कलन",
+    "10": "नैसर्गिक निगमन",
 }
 
 

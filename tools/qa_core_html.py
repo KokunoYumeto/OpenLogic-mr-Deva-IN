@@ -11,9 +11,9 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup
 from core_html_proofs import (
-    PROOFS,
     adapt_prose_ensuremath,
     expand_proof_math_macros,
+    expand_reader_math_macros,
     strip_proof_environments,
 )
 
@@ -29,26 +29,25 @@ def sha(path):
 
 
 input_rows = json.loads(INPUTS.read_text(encoding="utf-8"))["input_units"]
-section_driver_names = {
-    "sets.tex", "relations-complete.tex", "functions.tex",
-    "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
-    "propositional-logic.tex", "syntax-and-semantics.tex",
-    "proof-systems.tex",
+section_driver_unit_ids = {
+    "OLP-0004", "OLP-0011", "OLP-0020", "OLP-0027", "OLP-0041",
+    "OLP-0049", "OLP-0055", "OLP-0056", "OLP-0063", "OLP-0069",
+    "OLP-0084",
 }
-chapter_driver_names = {
-    "sets.tex", "relations-complete.tex", "functions.tex",
-    "size-of-sets-complete.tex", "arithmetization.tex", "infinite.tex",
-    "syntax-and-semantics.tex",
-    "proof-systems.tex",
-}
-chapter_count = sum(Path(row["path"]).name in chapter_driver_names for row in input_rows)
+chapter_driver_unit_ids = section_driver_unit_ids - {"OLP-0055"}
+chapter_count = sum(row["unit_id"] in chapter_driver_unit_ids for row in input_rows)
 section_count = len(input_rows) - sum(
-    Path(row["path"]).name in section_driver_names for row in input_rows
+    row["unit_id"] in section_driver_unit_ids for row in input_rows
 )
 scope = {
     "translation_source_units": len(input_rows),
     "reader_sections": section_count,
     "complete_chapters": chapter_count,
+}
+assert scope == {
+    "translation_source_units": 94,
+    "reader_sections": 83,
+    "complete_chapters": 10,
 }
 
 
@@ -86,49 +85,28 @@ def unwrap_command(text, command):
 
 def expand_logic_math_macros(text):
     """Canonicalize source macros and Pandoc's applytofirst expansions."""
+    text = expand_reader_math_macros(text)
     text = re.sub(
-        r"\\pSat/\{([A-Za-z])([^{}]*)\}\{([^{}]+)\}",
-        r"\\mathfrak{\1}\2\\nvDash \3",
+        r"\{\\mathfrak([A-Za-z])\s*((?:_\d+)?(?:'+)?)\s*\}",
+        lambda match: r"\mathfrak{" + match.group(1) + "}" + match.group(2),
         text,
     )
-    text = re.sub(
-        r"\\pSat\{([A-Za-z])([^{}]*)\}\{([^{}]+)\}",
-        r"\\mathfrak{\1}\2\\vDash \3",
+    return re.sub(
+        r"\{\\mathcal([A-Za-z])\s*((?:_\d+)?(?:'+)?)\s*\}",
+        lambda match: r"\mathcal{" + match.group(1) + "}" + match.group(2),
         text,
     )
-    text = re.sub(
-        r"\\pValue\{([A-Za-z])([^{}]*)\}",
-        r"\\overline{\\mathfrak{\1}\2}",
-        text,
-    )
-    text = re.sub(r"\\pAssign\{([A-Za-z])([^{}]*)\}", r"\\mathfrak{\1}\2", text)
-    text = re.sub(
-        r"\\Frm\[([A-Za-z])([^][]*)\]",
-        r"\\mathrm{Frm}(\\mathcal{\1}\2)",
-        text,
-    )
-    text = re.sub(r"\\Lang\{([A-Za-z])([^{}]*)\}", r"\\mathcal{\1}\2", text)
-    text = re.sub(r"\\Lang\s+([A-Za-z])", r"\\mathcal{\1}", text)
-    text = re.sub(r"\\Struct\{([A-Za-z])([^{}]*)\}", r"\\mathfrak{\1}\2", text)
-    text = re.sub(r"\\Struct\s+([A-Za-z])", r"\\mathfrak{\1}", text)
-    text = re.sub(r"\\Entails\b", r"\\vDash", text)
-    text = re.sub(
-        r"\{\\mathfrak([A-Za-z])\s*(_\d+)?\s*\}",
-        lambda match: r"\mathfrak{" + match.group(1) + "}" + (match.group(2) or ""),
-        text,
-    )
-    text = re.sub(
-        r"\{\\mathcal([A-Za-z])\s*(_\d+)?\s*\}",
-        lambda match: r"\mathcal{" + match.group(1) + "}" + (match.group(2) or ""),
-        text,
-    )
-    return expand_proof_math_macros(text)
 
 
 def mathnorm(text):
     text = expand_logic_math_macros(text)
     text = unwrap_command(text, "ensuremath")
+    text = text.replace(r"\mathbin{\to}", r"\to")
+    text = text.replace(r"\mathbin{\leftrightarrow}", r"\leftrightarrow")
+    for spacing in (r"\qquad", r"\quad", r"\,", r"\;", r"\:", r"\!"):
+        text = text.replace(spacing, "")
     text = text.replace(r"\bot_I{}", r"\bot_I")
+    text = text.replace(r"\bot_C{}", r"\bot_C")
     text = text.replace(r"\nicefrac", r"\frac")
     text = text.replace(r"\emph{", r"\text{")
     text = unwrap_command(text, "shoveleft")
@@ -192,7 +170,8 @@ def collect(root):
                 maths.append(mathnorm(value))
                 return
             if kind == "Str":
-                strings.append(node["c"])
+                if not re.fullmatch(r"OPENLOGICPROOFPLACEHOLDER\d{4}", node["c"]):
+                    strings.append(node["c"])
                 return
             if kind == "Code":
                 strings.append(node["c"][1])
@@ -335,6 +314,8 @@ for node in document.select('img[src],link[rel="stylesheet"]'):
     if node.name == "img":
         assert node.get("alt") and len(node["alt"]) > 40
         assert node.get("loading") == "lazy"
+        assert node.get("id") == "diagram-" + Path(asset_reference).stem
+        assert int(node["width"]) > 0 and int(node["height"]) > 0
     assets.append({"filename": asset_reference, "bytes": path.stat().st_size, "sha256": sha(path)})
 
 html_diagram_count = len(document.select("img"))

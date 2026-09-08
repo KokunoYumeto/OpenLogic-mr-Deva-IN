@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-source-audit-retractions/1",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "retractions": [
+    {
+      "retraction_id": "OLSIZ-011-RETRACTION-20260904",
+      "status": "FINAL_RETRACTION_FALSE_POSITIVE",
+      "void_shared_identifier": "OLSIZ-011",
+      "unit_id": "OLP-0039",
+      "source_path": "content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "source_bytes": 6574,
+      "source_sha256": "a075f6c63879101314fb20fa493acfb38d78ff24095bb55914f2af4527e1ad3e",
+      "manager_retraction_artifact": "source-audits/2026-09-04-size-of-sets/RETRACTION_OLSIZ_011.json",
+      "manager_retraction_sha256": "b495d66165f3c7f0b32d61b0b106c402badcc6e4e6a130442734c8f883dd5adc",
+      "manager_tombstone_artifact": "source-audits/2026-09-04-size-of-sets/SUPPLEMENT-OLSIZ-011.json",
+      "manager_tombstone_sha256": "b1b9f8ad296bc8d718a17514cdb91c61a8c1ea537a1231604f862551406b35bf",
+      "confirmed_byte_evidence": {
+        "three_backslash_run_starts_zero_based": [
+          2809,
+          2879,
+          2946,
+          3013,
+          3080
+        ],
+        "hline_control_offsets_one_based": [
+          2812,
+          2882,
+          2949,
+          3016,
+          3083
+        ],
+        "hex_at_each_run": "5c5c5c686c696e65",
+        "interpretation": "The first two backslashes form the row break; the third begins the genuine hline command. The frozen source is correct."
+      },
+      "lane_disposition": "No Marathi source correction or reader note was applied. An unused reservation script was deleted before execution.",
+      "root_cause": "The manager counted a two-backslash byte pattern without checking the maximal consecutive-backslash run; that shorter pattern overlaps every correct three-backslash token."
+    }
+  ]
+}

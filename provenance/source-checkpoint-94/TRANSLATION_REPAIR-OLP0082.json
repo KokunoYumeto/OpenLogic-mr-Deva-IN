@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-translation-repair/1",
+  "unit_id": "OLP-0082",
+  "kind": "untranslated-ordinary-prose",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "target_path": "mr/content/first-order-logic/sequent-calculus/identity.tex",
+  "aligned_block": 8,
+  "before": "The rules for $\\eq$ are ($t_1$ and $t_2$ are closed terms):",
+  "after": "$\\eq$ साठीचे नियम पुढीलप्रमाणे आहेत ($t_1$ आणि $t_2$ ही बंद पदे आहेत):",
+  "old_target_sha256": "c54eebe14a32647e806c8e1fb1a3fb29b15cf0831822cba5110fedadcdd5f879",
+  "new_target_sha256": "14005d31a265d5db21fa8390db262f59b13e32b65cea4d3f5194d21ecc66539d",
+  "formula_macro_and_identifier_parity": {
+    "formula_multiset_parity": true,
+    "inline_math_delimiter_parity": true,
+    "macro_multiset_parity": true,
+    "token_identity_parity": true,
+    "identifier_and_ref_option_parity": true,
+    "no_replacement_character": true,
+    "no_placeholder": true,
+    "nfc": true
+  },
+  "ordinary_prose_audit_scope": "All Marathi targets OLP-0069 through OLP-0097",
+  "ordinary_prose_audit_result": "No other multiword English prose remnant found.",
+  "performed_utc": "2026-09-07T19:55:57.979664Z",
+  "classification": "translation-lane repair, not an upstream source issue",
+  "result": "passed"
+}

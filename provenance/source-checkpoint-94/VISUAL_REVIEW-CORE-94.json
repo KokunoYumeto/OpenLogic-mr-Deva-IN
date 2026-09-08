@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-marathi-visual-review/1",
+  "pdf_sha256": "78901ead14277d7b4b2b4f28e429ba95764b748b9bac781a3a820adfba1ca616",
+  "pages": 133,
+  "contact_sheets_reviewed": [
+    "contact-01.png",
+    "contact-02.png",
+    "contact-03.png",
+    "contact-04.png",
+    "contact-05.png",
+    "contact-06.png",
+    "contact-07.png",
+    "contact-08.png",
+    "contact-09.png",
+    "contact-10.png",
+    "contact-11.png",
+    "contact-12.png"
+  ],
+  "detail_pages_reviewed": [
+    90,
+    91,
+    96,
+    100,
+    104,
+    109,
+    110,
+    114,
+    118,
+    123,
+    127,
+    129,
+    131,
+    132,
+    133
+  ],
+  "method": "All 133 Poppler-rendered page images were inspected through twelve contact sheets; fifteen representative pages from the two new proof-system chapters, the source-note appendix, and the bibliography were then inspected at readable or enlarged scale.",
+  "result": "passed",
+  "observations": "No clipping, overlap, black boxes, missing glyphs, unreadable formulas, or broken running heads were observed. Dense sequent-calculus and natural-deduction proof trees remain legible and inside the page area. Devanagari shaping, headings, page numbers, source-correction notes, links, and bibliography entries render cleanly. The mostly blank chapter-boundary page 73 and sparse final bibliography page 133 are intentional layout outcomes. Empty squares at proof endings are the intended QED marks.",
+  "limitation": "Same-agent visual review; not independent linguistic certification.",
+  "review_date": "2026-09-07"
+}

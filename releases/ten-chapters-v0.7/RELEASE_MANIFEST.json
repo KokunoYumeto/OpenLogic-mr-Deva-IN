@@ -1,0 +1,70 @@
+{
+  "schema": "openlogic-release-manifest/1",
+  "release": "ten-chapters-v0.7",
+  "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_units": 94,
+    "total_units": 722,
+    "remaining_units": 628,
+    "aligned_segments": 1018,
+    "reader_sections": 83,
+    "complete_chapters": 10
+  },
+  "reader": {
+    "pdf_pages": 133,
+    "native_mathml": 5608,
+    "semantic_proof_figures": 143,
+    "proof_formula_rows": 674
+  },
+  "assets": [
+    {
+      "filename": "openlogic-mr-ten-chapters.pdf",
+      "bytes": 607662,
+      "sha256": "78901ead14277d7b4b2b4f28e429ba95764b748b9bac781a3a820adfba1ca616"
+    },
+    {
+      "filename": "openlogic-mr-ten-chapters.tex",
+      "bytes": 747575,
+      "sha256": "ce45a807b76e2d4d679d4cc9506ed4f56ff11a00b9a4b1cf3a072aecc121808c"
+    },
+    {
+      "filename": "openlogic-mr-ten-chapters-html.zip",
+      "bytes": 1436933,
+      "sha256": "f91a38c9f7a1a94d078305d7f7ee2acc9becc95371ec62f5109f9e907fdce66e"
+    },
+    {
+      "filename": "openlogic-mr-ten-chapters-review.zip",
+      "bytes": 6393390,
+      "sha256": "bfd5b8fdc1786061b6faa8b1de1cf02910db7d526614808e47aeda89ec982c35"
+    },
+    {
+      "filename": "openlogic-mr-ten-chapters-editable-sources.zip",
+      "bytes": 20654640,
+      "sha256": "b044188627393a913555f5b30acaa13929953a195ac039c74ab5dc5a8884c7c0"
+    }
+  ],
+  "source_package_manifest": {
+    "path": "provenance/ten-chapters-v0.7/EDITION_FILE_MANIFEST.json",
+    "files_listed": 1655,
+    "bytes": 311485,
+    "sha256": "2cd145ebbb51db886a39f0220e7ae18d200b42ffbcba5f527ec539e1f9a16132",
+    "draft_OLP_0098_target_excluded": true
+  },
+  "source_checkpoint": {
+    "path": "provenance/source-checkpoint-94/SOURCE_CHECKPOINT.json",
+    "bytes": 43169,
+    "sha256": "57e4bac2738e0fc23c87c90d45114ce8b2a091fe98501ca77fcfd19bb34208f2"
+  },
+  "release_qa": {
+    "path": "provenance/ten-chapters-v0.7/RELEASE_QA.json",
+    "bytes": 2551,
+    "sha256": "822b7bae9746dfb41573fa6104507686f2e1da490fc6c9ca9c8a2fc748eb8db2"
+  },
+  "cross_package_qa": {
+    "path": "provenance/ten-chapters-v0.7/CROSS_PACKAGE_QA-RELEASE.json",
+    "bytes": 1379,
+    "sha256": "e40ab020f85b5df313af1bfe8b37dc0c7cec2dbd8088b69abb0441b33d175f9e"
+  },
+  "full_edition_complete": false
+}

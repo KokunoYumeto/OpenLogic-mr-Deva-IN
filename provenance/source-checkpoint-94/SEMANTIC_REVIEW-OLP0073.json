@@ -1,0 +1,51 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0073",
+  "method": "Same-agent English/Marathi block-by-block close reading, operation-by-operation reverse paraphrase, and exact formula, macro, token and identifier comparison after a bounded fresh check of official Marathi structural-rule terminology; not independent or human review.",
+  "scope": "The LK structural-rules section: the motivation for rearranging formulas, left and right weakening, contraction and exchange, double inference lines, and the cut rule.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "The section is titled Structural Rules. Logical rules act only on formulas at an extreme end of the premise, so exchange moves formulas into the required position; duplicate formulas may also be combined and a formula may be added on either side.",
+      "checks": "The translation preserves correct position rather than mistranslating right position as the right-hand side. Premise, both extreme positions, combining identical formulas and adding on either side are all explicit."
+    },
+    {
+      "blocks": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "Left and right weakening add A to the corresponding side. Left and right contraction reduce two adjacent copies of A to one.",
+      "checks": "All four rule trees, side labels, contexts and formula multiplicities are byte-identical to the source; only the subsection headings are translated."
+    },
+    {
+      "blocks": [
+        11,
+        12
+      ],
+      "reverse_paraphrase": "Left and right exchange swap adjacent A and B while preserving every surrounding context.",
+      "checks": "The A,B to B,A order and the distinct Gamma, Pi, Delta and Lambda contexts are unchanged. अदलाबदल is definition-controlled by these displayed rules."
+    },
+    {
+      "blocks": [
+        13,
+        14,
+        15
+      ],
+      "reverse_paraphrase": "A chain of weakening, contraction and exchange inferences is often shown with double inference lines. Cut, though not strictly necessary, makes derivations easier to reuse and combine: from Gamma entails Delta,A and A,Pi entails Lambda, infer Gamma,Pi entails Delta,Lambda.",
+      "checks": "The qualification that cut is dispensable, its practical role, both premises, eliminated A and merged contexts are preserved. The complete cut proof tree is byte-identical."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "No exact Marathi proof-theory occurrence of the four structural-rule labels was found in the bounded official-domain searches.",
+    "आकुंचन has direct general official lexical support; its proof-theory use is fixed by the displayed duplicate-formula rule.",
+    "दुर्बलीकरण, अदलाबदल and कट are transparent, definition-controlled provisional labels open to specialist correction; विपर्यय, विनिमय and छेद were recorded as alternatives."
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schema": "openlogic-audit-response/1",
+  "date": "2026-09-06",
+  "scope": {
+    "units": [
+      "OLP-0071",
+      "OLP-0072"
+    ],
+    "translated_units_at_revalidation": 72,
+    "total_units": 722,
+    "aligned_segments": 794,
+    "last_translated_unit": "OLP-0075"
+  },
+  "audit": {
+    "report": "[local research path omitted]",
+    "sha256": "8764f4ccdf643494159a614648cf33aa8288730463c5a9835070bec3d95085f6",
+    "kind": "bounded independent model audit; not native-speaker or human-expert testimony",
+    "finding": "No material mistranslation or reversed inference was found. The report identified one context-dependent source clarification, over-broad terminology grouping, underexposed low-confidence choices, and context-block locators that needed narrower decision-level spans."
+  },
+  "dispositions": [
+    {
+      "id": "standing-closedness",
+      "status": "adopted",
+      "action": "OLP-0072 now says that existential-right and universal-left impose no additional restriction on t beyond the already stated requirement that t be closed.",
+      "source_observation": "OLSEQ-003"
+    },
+    {
+      "id": "first-use-occurrence-gloss",
+      "status": "adopted",
+      "action": "The first reader-facing use of आस्थिती now explains it as a place where the term occurs while preserving the formal partial-replacement meaning."
+    },
+    {
+      "id": "split-T174",
+      "status": "adopted",
+      "records": [
+        {
+          "term_id": "T174",
+          "english": "closed term",
+          "marathi": "बंद पद",
+          "confidence": "low",
+          "evidence_limit": "The exact compound is unattested in the checked Marathi proof-theory sources; the immediate no-variables definition controls the choice."
+        },
+        {
+          "term_id": "T177",
+          "english": "bound variable",
+          "marathi": "बद्ध चर",
+          "confidence": "high",
+          "evidence_limit": "Directly attested in checked Marathi logic material."
+        },
+        {
+          "term_id": "T178",
+          "english": "eigenvariable",
+          "marathi": "आयगेन चर",
+          "confidence": "low",
+          "evidence_limit": "The preserved observation supports the Marathi spelling of आयगेन in another technical domain, not proof-theory usage; its hash identifies the observation note and not source-page bytes."
+        },
+        {
+          "term_id": "T179",
+          "english": "eigenvariable condition",
+          "marathi": "आयगेन चराची अट",
+          "confidence": "low",
+          "evidence_limit": "The full compound is unattested in the checked Marathi proof-theory sources and remains definition-controlled."
+        }
+      ]
+    },
+    {
+      "id": "priority-exposure",
+      "status": "adopted",
+      "action": "T155 soundness/निर्दोषता and T174, T178 and T179 are exposed as low-confidence, high-priority choices in both concise review surfaces. T155 explicitly states that its headword evidence is metallurgy rather than proof theory."
+    },
+    {
+      "id": "heading-construction",
+      "status": "adopted",
+      "record": "T180",
+      "action": "The symbol headings record the actually translated function-word construction ‘Rules for [symbol]’ rather than citing Marathi connective terms absent from the headings."
+    },
+    {
+      "id": "choice-locators",
+      "status": "adopted",
+      "action": "All 43 terminology occurrences in OLP-0071 and OLP-0072 carry exact decision-relevant line spans. Spans may overlap where one construction realizes several choices and make no disjoint token-partition claim. OLSEQ-003 is a separate durable source-observation occurrence."
+    }
+  ],
+  "artifacts": {
+    "target": {
+      "path": "mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex",
+      "bytes": 6153,
+      "sha256": "7c80eca64a6ed3fdfff89988b7e8882b8971d91b565b7d7d80f4e15c8d3463ab"
+    },
+    "semantic_review": {
+      "path": "SEMANTIC_REVIEW-OLP0072.json",
+      "bytes": 5079,
+      "sha256": "d57c4096c7903a9e7ca8d67864e64075d0c4445715c6ea37d6a2054927888128"
+    },
+    "source_issues": {
+      "path": "SOURCE_ISSUES-B008.json",
+      "bytes": 5841,
+      "sha256": "4500340812b12c81c77f308db582c5dea0469393b9f4d724a5c227fccbcc8335"
+    },
+    "state_term_decisions": {
+      "records": 180,
+      "sha256": "e24c6ef43dc813771425c167ee163d2d69c0377ca78a904d4f8b8c090376e2f0"
+    },
+    "state_segment_ledger": {
+      "records": 794,
+      "sha256": "b58bc777c22f0826d666ad8f51cc94b567e70ffcad2e5c36bd1548f5b814ad88"
+    },
+    "public_sanitized_provenance": {
+      "term_decisions_sha256": "42227125660342704772768c223fa84e3c5ac58aff0f17097a2299142e3d8633",
+      "segment_ledger_sha256": "178b4890aa4d1284d817748e867e89eb2339592afe572d2825795249b8157c29"
+    },
+    "expert_review": {
+      "decisions": 223,
+      "occurrences": 4873,
+      "high_priority_occurrences": 648,
+      "priority_sha256": "ccd38b4b09f827bdc84862a985c75380843c5474bab210f5f407c91f25c467be",
+      "occurrences_jsonl_sha256": "ea91a224540bca0ddfe474d5e3b084f412433cc268790fea3342c0ea637aed21"
+    },
+    "canonical_review": {
+      "decisions_with_occurrences": 222,
+      "occurrences": 4873,
+      "deferred_without_fabricated_occurrences": [
+        "T013"
+      ],
+      "priority_sha256": "dc4eac0a20ce2d455512cdfb9954dc013c6d958221ec7002f6c422e4c00afa16",
+      "decisions_json_sha256": "0904b5538beb566acb08eb68a520a5672a4281b93aaa3636d80169109bde8ee4",
+      "occurrences_csv_sha256": "9166901c34d0142651104d4c698d56a353ca6b44eb6c7c3e55eecfe05d7b0d98",
+      "qa_sha256": "84acab2ed46cda6b3fd820d9e6c3104effe34f38dc0043681653fd9b3c66ec79"
+    },
+    "cross_package_receipt": {
+      "path": "CROSS_PACKAGE_QA-WORKING.json",
+      "sha256": "ca757b5df3bc7d12add5592f399be33c0b1e32cfcde20c16f71b2bedef2482ab"
+    }
+  },
+  "validation": {
+    "formula_macro_token_identifier_and_reference_parity": "passed",
+    "expert_review_links_and_line_bounds": "passed",
+    "private_path_or_name_hits_in_public_review": 0,
+    "canonical_schema_errors": 0,
+    "canonical_instance_errors": 0,
+    "deterministic_second_generation_identical": true,
+    "cross_package_result": "passed"
+  },
+  "status": "implemented-and-revalidated"
+}

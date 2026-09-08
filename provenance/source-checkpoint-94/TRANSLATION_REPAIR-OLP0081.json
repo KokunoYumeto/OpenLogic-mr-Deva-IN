@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-translation-repair/1",
+  "unit_id": "OLP-0081",
+  "kind": "duplicated-metavariables-outside-math",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "target_path": "mr/content/first-order-logic/sequent-calculus/soundness.tex",
+  "aligned_block": 16,
+  "occurrences": 2,
+  "before": "two witness-membership formulas followed by a redundant !C outside math mode",
+  "after": "the redundant repetitions removed; each witness remains expressed once by its membership formula",
+  "old_target_sha256": "66a31772ee2e582e567a141eabd306f2f2e79e617faeef24705d17a1907c4e55",
+  "new_target_sha256": "a92f2714c79f182be7cfd546208c6d59dc509216cf701a40daacde5ad5269c6e",
+  "formula_macro_and_identifier_parity": {
+    "formula_multiset_parity": true,
+    "inline_math_delimiter_parity": true,
+    "macro_multiset_parity": true,
+    "token_identity_parity": true,
+    "identifier_and_ref_option_parity": true,
+    "no_replacement_character": true,
+    "no_placeholder": true,
+    "nfc": true
+  },
+  "tranche_scan": "No other !A, !B, !C or !D metavariable occurs outside TeX math mode in OLP-0069 through OLP-0097.",
+  "performed_utc": "2026-09-07T20:57:24.510164Z",
+  "classification": "translation-lane repair, not an upstream source issue",
+  "result": "passed"
+}

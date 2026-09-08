@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-translation-repair/1",
+  "unit_id": "OLP-0084",
+  "kind": "duplicated-quotation-marker",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "target_path": "mr/content/first-order-logic/natural-deduction/natural-deduction.tex",
+  "aligned_block": 6,
+  "before": "``prfND''`` टॅग",
+  "after": "``prfND'' हा टॅग",
+  "old_target_sha256": "8500e1ef3c7649e140f491f8856c8784ef29a296c2fc700aa82a318929098c6f",
+  "new_target_sha256": "ae4d15cab15b9b9ed516784318ee706d3f171f0009a5ad67b13f07d4e432e82c",
+  "formula_macro_and_identifier_parity": {
+    "formula_multiset_parity": true,
+    "inline_math_delimiter_parity": true,
+    "macro_multiset_parity": true,
+    "token_identity_parity": true,
+    "identifier_and_ref_option_parity": true,
+    "no_replacement_character": true,
+    "no_placeholder": true,
+    "nfc": true
+  },
+  "performed_utc": "2026-09-07T20:02:22.262944Z",
+  "classification": "translation-lane repair, not an upstream source issue",
+  "result": "passed"
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0092",
+  "method": "Same-agent English/Marathi block-by-block close reading, proposition-by-proposition reverse paraphrase, exact formula, macro, protected-token and identifier comparison, and reconstruction of each natural-deduction proof tree; no independent human or native-speaker review is claimed.",
+  "scope": "Derivability and consistency consequences for natural deduction: inconsistency after adjoining a derivable sentence, the negation characterization of derivability, explicit inconsistency, and inconsistency from both complementary extensions.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "The section establishes properties of derivability needed for completeness. If Gamma derives A and Gamma with A is inconsistent, a derivation of falsity from Gamma and A can discharge A to derive not-A; combining that result with the derivation of A yields falsity from Gamma alone.",
+      "checks": "The proposition, delta1/delta2 assignments, discharge label 1, negation-introduction and negation-elimination order, and final Gamma-only context are exact."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "Gamma derives A exactly when Gamma together with not-A is inconsistent. The forward direction combines the added not-A assumption with a derivation of A. The reverse direction applies the classical falsity rule to a derivation of falsity from Gamma and a temporary not-A, discharging that assumption to obtain A. The exercise asks for the dual statement about deriving not-A.",
+      "checks": "Both occurrences of the extended context, every falsity and negation, delta0/delta1, the classical-rule labels and discharge number are preserved. The exercise remains unsolved."
+    },
+    {
+      "blocks": [
+        13,
+        14
+      ],
+      "reverse_paraphrase": "If Gamma derives A and not-A is already a member of Gamma, negation elimination combines that member with the derivation of A to derive falsity; because all undischarged assumptions lie in Gamma, Gamma is inconsistent.",
+      "checks": "The membership premise, derivability premise, delta label, negation-elimination tree and final provability-of-falsity formula remain exact."
+    },
+    {
+      "blocks": [
+        15,
+        16
+      ],
+      "reverse_paraphrase": "If both Gamma with A and Gamma with not-A are inconsistent, delta2 first discharges not-A and yields double-not-A, while delta1 discharges A and yields not-A. Negation elimination then produces falsity with only Gamma undischarged.",
+      "checks": "The respectively clause is preserved: delta1 belongs to the A extension and delta2 to the not-A extension. The tree keeps that deliberate reversed visual order, discharge labels 2 and 1, double negation, and the final falsity conclusion."
+    }
+  ],
+  "source_observations": [
+    "The frozen source uses the proof-theoretic derivability, consistency, negation and discharge vocabulary established in the preceding natural-deduction units; no new upstream defect or correction was identified."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "सिद्धतायोग्यता and its adjective remain definition-controlled edition compounds; the local formulas and \\Proves notation control the formal sense.",
+    "The consistency family is directly supported by Marathi proof-theory usage, while the exact proposition statements are governed by the frozen OpenLogic formulas.",
+    "The current coherent reader ends at OLP-0068, so this unit has not yet received paginated TeX or browser-rendering QA."
+  ]
+}
