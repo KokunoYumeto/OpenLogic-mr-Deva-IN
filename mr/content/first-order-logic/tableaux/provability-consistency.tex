@@ -1,0 +1,145 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{prv}}
+      {\olfileid{pl}{tab}{prv}}
+
+\olsection{\usetoken{S}{derivability} आणि सुसंगतता}
+
+आता आपण !!{derivability} संबंधाचे अनेक गुणधर्म सिद्ध करू. ते स्वतंत्रपणेही
+महत्त्वाचे आहेत, पण संपूर्णता प्रमेयाच्या सिद्धतेत प्रत्येकाची भूमिका असेल.
+
+\begin{prop}\ollabel{prop:provability-contr}
+  जर $\Gamma \Proves !A$ आणि $\Gamma \cup \{!A\}$ विसंगत असेल, तर
+  $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+$\Gamma_0 = \{!B_1, \dots, !B_n\}$ आणि $\Gamma_1
+  =\{!C_1, \dots, !C_m\} \subseteq \Gamma$ असे सांत उपसंच असतात की
+  \begin{align*}
+    \{\sFmla{\False}{!A}, &
+    \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\} \\
+    \{\sFmla{\True}{!A}, &
+    \sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_m}\}
+  \end{align*}
+  यांसाठी बंद !!{tableau}s असतात. $!A$ वर \Cut{} नियम वापरून हे दोन्ही
+  एकाच बंद !!{tableau} मध्ये एकत्र करता येतात; त्यावरून $\Gamma_0
+  \cup \Gamma_1$ विसंगत असल्याचे दिसते. $\Gamma_0
+  \subseteq \Gamma$ आणि $\Gamma_1 \subseteq \Gamma$ असल्यामुळे $\Gamma_0 \cup
+  \Gamma_1 \subseteq \Gamma$; म्हणून $\Gamma$ विसंगत आहे.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{\lnot !A\}$
+विसंगत असते.
+\end{prop}
+
+\begin{proof}
+प्रथम $\Gamma \Proves !A$ असे समजा; म्हणजे पुढील संचासाठी बंद
+!!{tableau} असतो:
+\[
+\{\sFmla{\False}{!A},
+\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+\]
+$\TRule{\True}{\lnot}$ नियम वापरून त्याचे पुढील संचासाठीच्या बंद
+!!{tableau} मध्ये रूपांतर करता येते:
+\[
+\{\sFmla{\True}{\lnot !A},
+\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}.
+\]
+
+दुसरीकडे, दुसऱ्या संचासाठी बंद !!{tableau} असेल, तर त्यातील पहिले
+गृहीतक~$\sFmla{\True}{\lnot !A}$ आणि त्या गृहीतकाला
+\TRule{\True}{\lnot} लावून मिळणारी सर्व सूत्रे काढून, तसेच
+$\sFmla{\False}{!A}$ हे गृहीतक जोडून, त्याचे पहिल्या संचासाठीच्या बंद
+!!{tableau} मध्ये रूपांतर करता येते. कारण एखादी शाखा पूर्वी
+$\sFmla{\True}{\lnot !A}$ ला \TRule{\True}{\lnot} लावून मिळणारा
+निष्कर्ष, म्हणजे $\sFmla{\False}{!A}$, असल्यामुळे बंद झाली असेल, तर नव्या
+!!{tableau} मधील संबंधित शाखाही बंद असते. जुन्या टॅब्लोतील एखादी शाखा
+$\sFmla{\True}{\lnot !A}$ हे गृहीतक आणि $\sFmla{\False}{\lnot !A}$
+ही दोन्ही सूत्रे असल्यामुळे बंद झाली असेल, तर $\sFmla{\False}{\lnot !A}$
+ला $\TRule{\False}{\lnot}$ लावून $\sFmla{\True}{!A}$ मिळवता येते आणि
+ती शाखा बंद करता येते. आपण $\sFmla{\False}{!A}$ हे गृहीतक जोडलेले
+असल्यामुळे ही शाखा बंद होते.
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves \lnot !A$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{!A\}$
+विसंगत असते, हे सिद्ध करा.
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  जर $\Gamma \Proves !A$ आणि $\lnot !A \in \Gamma$ असेल, तर $\Gamma$
+  विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+  समजा $\Gamma \Proves !A$ आणि $\lnot !A \in \Gamma$. मग
+  $!B_1$, \dots, $!B_n \in \Gamma$ अशी वाक्ये असतात की
+  \[
+  \{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+  \]
+  यासाठी बंद टॅब्लो असतो. \sFmla{\False}{!A} हे गृहीतक
+  \sFmla{\True}{\lnot !A} ने बदला आणि \sFmla{\True}{\lnot !A} ला
+  \TRule{\True}{\lnot} लावून मिळणारा निष्कर्ष गृहीतकांनंतर घाला. जुन्या
+  !!{tableau} मध्ये ओळ~$1$ च्या आधारे समर्थित कोणतेही !!{sentence} आता
+  ओळ~$n+2$ च्या आधारे समर्थित होते. म्हणून जुना !!{tableau} बंद असेल, तर
+  नवा !!{tableau}सुद्धा बंद असतो. सर्व गृहीतके~$\Gamma$ मध्ये असल्यामुळे हा टॅब्लो
+  $\Gamma$ विसंगत असल्याचे दाखवतो.
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  $\Gamma \cup \{!A\}$ आणि $\Gamma \cup \{\lnot !A\}$ हे दोन्ही संच
+  विसंगत असतील, तर $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+  $!B_1$, \dots, $!B_n \in \Gamma$ आणि $!C_1$, \dots,
+  $!C_m \in \Gamma$ अशी वाक्ये असतील आणि
+  \begin{align*}
+    \{\sFmla{\True}{!A}, &
+    \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\} \text{ आणि}\\
+    \{\sFmla{\True}{\lnot !A}, &
+    \sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_m}\}
+  \end{align*}
+  या दोन्हींसाठी बंद !!{tableau}s असतील, तर
+  $\sFmla{\True}{!B_1}$, \dots, $\sFmla{\True}{!B_n}$ आणि
+  $\sFmla{\True}{!C_1}$, \dots, $\sFmla{\True}{!C_m}$ ही गृहीतके घेऊन,
+  त्यानंतर \Cut{} नियम लावून, $\Gamma$ विसंगत असल्याचे दाखवणारा एकच
+  संयुक्त !!{tableau} तयार करता येतो. त्यामुळे दोन शाखा मिळतात: एक
+  $\sFmla{\True}{!A}$ ने, तर दुसरी $\sFmla{\False}{!A}$ ने सुरू होते.
+  
+  डाव्या बाजूस पहिल्या !!{tableau} मधील त्याच्या गृहीतकांखालचा भाग जोडा.
+  येथे प्रत्येक नियमाचा उपयोग अजूनही योग्य आहे, कारण
+  $\sFmla{\True}{!A}$ सहित पहिल्या !!{tableau} मधील प्रत्येक गृहीतक
+  उपलब्ध आहे. त्यामुळे $\sFmla{\True}{!A}$ च्या खालील प्रत्येक शाखा बंद होते.
+  
+  उजव्या बाजूस दुसऱ्या !!{tableau} मधील त्याच्या गृहीतकांखालचा भाग जोडा;
+  मात्र $\sFmla{\True}{\lnot !A}$ ला~$\TRule{\True}{\lnot}$ लावून मिळणारे
+  सर्व परिणाम काढून टाका. $\sFmla{\True}{\lnot !A}$ ला
+  $\TRule{\True}{\lnot}$ लावल्याचा निष्कर्ष $\sFmla{\False}{!A}$ हा आहे;
+  तरीही तो उपलब्ध असतो, कारण तो संयुक्त !!{tableau} च्या उजव्या बाजूवरील
+  \Cut{} नियमाचा निष्कर्ष आहे.
+
+  दुसऱ्या टॅब्लोतील एखादी शाखा $\sFmla{\True}{\lnot !A}$ हे गृहीतक
+  (जे आता संयुक्त !!{tableau} मध्ये गृहीतक म्हणून येत नाही) आणि
+  $\sFmla{\False}{\lnot !A}$ ही दोन्ही सूत्रे असल्यामुळे बंद झाली असेल,
+  तर $\sFmla{\False}{\lnot !A}$ ला $\TRule{\False}{\lnot}$ लावून
+  $\sFmla{\True}{!A}$ मिळवता येते. मग संयुक्त !!{tableau} मधील संबंधित
+  शाखासुद्धा बंद होते, कारण तिच्यात \Cut{} नियमाचा उजवीकडील निष्कर्ष
+  $\sFmla{\False}{!A}$ असतो. दुसऱ्या !!{tableau} मधील एखादी शाखा अन्य
+  कोणत्याही कारणाने बंद झाली असेल, तर संयुक्त !!{tableau} मधील संबंधित
+  शाखासुद्धा बंद होते; कारण जुन्या दुसऱ्या !!{tableau} मधील त्या शाखेवर
+  येणारी $\sFmla{\True}{\lnot !A}$ व्यतिरिक्त इतर सर्व !!{signed formula}s
+  संयुक्त !!{tableau} मधील संबंधित शाखेवरही येतात.
+  \end{proof}
+
+\end{document}

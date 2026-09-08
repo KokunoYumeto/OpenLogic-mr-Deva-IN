@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 occurrences.
+Coverage: 103/722 source units through OLP-0106; 243 applied decisions; 6,787 occurrences.
 
 ## T001 — set
 
@@ -382,6 +382,11 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T001-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 87–88 |
 | `T001-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 87–88 |
 | `T001-OLP-0091-B017` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-103` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-106` | 120–121 |
+| `T001-OLP-0105-B009` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:37-51` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:38-52` | pending |
+| `T001-OLP-0105-B010` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:53-64` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:54-65` | pending |
+| `T001-OLP-0105-B012` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:71-79` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:72-80` | pending |
+| `T001-OLP-0105-B016` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-110` | pending |
+| `T001-OLP-0105-B024` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:172-188` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:173-189` | pending |
 
 ## T002 — element/member
 
@@ -655,6 +660,9 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T002-OLP-0078-B015` | `OLP-0078` | 9.9 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex:80-98` | `mr/content/first-order-logic/sequent-calculus/provability-consistency.tex:82-100` | 100–101 |
 | `T002-OLP-0092-B013` | `OLP-0092` | 10.8 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:82-85` | 121–123 |
 | `T002-OLP-0092-B014` | `OLP-0092` | 10.8 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:87-101` | 121–123 |
+| `T002-OLP-0106-B013` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:79-82` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:79-82` | pending |
+| `T002-OLP-0106-B014` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97` | pending |
+| `T002-OLP-0106-B016` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | pending |
 
 ## T003 — empty set
 
@@ -1145,6 +1153,17 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T005-OLP-0085-B010` | `OLP-0085` | 10.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | 109 |
 | `T005-OLP-0091-B023` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147` | 120–121 |
 | `T005-OLP-0091-B024` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | 120–121 |
+| `T005-OLP-0105-B009` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:37-51` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:38-52` | pending |
+| `T005-OLP-0105-B010` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:53-64` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:54-65` | pending |
+| `T005-OLP-0105-B012` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:71-79` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:72-80` | pending |
+| `T005-OLP-0105-B014` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:88-90` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:89-91` | pending |
+| `T005-OLP-0105-B016` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-110` | pending |
+| `T005-OLP-0105-B023` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:162-170` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:163-171` | pending |
+| `T005-OLP-0105-B024` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:172-188` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:173-189` | pending |
+| `T005-OLP-0106-B008` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:24-38` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:23-37` | pending |
+| `T005-OLP-0106-B010` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | pending |
+| `T005-OLP-0106-B014` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97` | pending |
+| `T005-OLP-0106-B016` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | pending |
 
 ## T006 — proper subset
 
@@ -1525,6 +1544,7 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T009-OLP-0095-B029` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:291-294` | `mr/content/first-order-logic/natural-deduction/soundness.tex:293-296` | 125–128 |
 | `T009-OLP-0097-B007` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | 129–130 |
 | `T009-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
+| `T009-OLP-0105-B007` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T010 — truth / truth value
 
@@ -2034,6 +2054,12 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T017-OLP-0092-B011` | `OLP-0092` | 10.8 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | 121–123 |
 | `T017-OLP-0092-B012` | `OLP-0092` | 10.8 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:77-80` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:77-80` | 121–123 |
 | `T017-OLP-0092-B015` | `OLP-0092` | 10.8 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:103-106` | 121–123 |
+| `T017-OLP-0106-B007` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:19-22` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:18-21` | pending |
+| `T017-OLP-0106-B008` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:24-38` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:23-37` | pending |
+| `T017-OLP-0106-B009` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:40-43` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:39-43` | pending |
+| `T017-OLP-0106-B012` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:75-77` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:74-77` | pending |
+| `T017-OLP-0106-B015` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:100-103` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:99-102` | pending |
+| `T017-OLP-0106-B016` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | pending |
 
 ## T018 — intersection
 
@@ -3096,6 +3122,8 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T032-OLP-0047-B015` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:101-109` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:101-108` | 60–63 |
 | `T032-OLP-0077-B012` | `OLP-0077` | 9.8 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:78-81` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:80-83` | 99–100 |
 | `T032-OLP-0091-B011` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56` | 120–121 |
+| `T032-OLP-0105-B011` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:66-69` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:67-70` | pending |
+| `T032-OLP-0105-B012` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:71-79` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:72-80` | pending |
 
 ## T033 — transitive
 
@@ -3724,6 +3752,16 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T041-OLP-0103-B011` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:76-171` | `mr/content/first-order-logic/tableaux/proving-things.tex:72-166` | pending |
 | `T041-OLP-0103-B012` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:173-299` | `mr/content/first-order-logic/tableaux/proving-things.tex:168-293` | pending |
 | `T041-OLP-0103-B013` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:301-362` | `mr/content/first-order-logic/tableaux/proving-things.tex:295-356` | pending |
+| `T041-OLP-0104-B007` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92` | pending |
+| `T041-OLP-0104-B008` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:96-207` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:94-203` | pending |
+| `T041-OLP-0104-B010` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:208-309` | pending |
+| `T041-OLP-0105-B017` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:111-133` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:112-134` | pending |
+| `T041-OLP-0106-B008` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:24-38` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:23-37` | pending |
+| `T041-OLP-0106-B011` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:59-73` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:59-72` | pending |
+| `T041-OLP-0106-B016` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | pending |
+| `T041-OLP-0106-B017` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:122-126` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:120-123` | pending |
+| `T041-OLP-0106-B018` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:128-133` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:125-130` | pending |
+| `T041-OLP-0106-B019` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:135-148` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:132-143` | pending |
 
 ## T042 — least / well-ordered / predecessor / successor
 
@@ -7295,6 +7333,12 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T109-OLP-0091-B008` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | 120–121 |
 | `T109-OLP-0095-B006` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:15-31` | `mr/content/first-order-logic/natural-deduction/soundness.tex:15-31` | 125–128 |
 | `T109-OLP-0098-B006` | `OLP-0098` |  | `upstream/content/first-order-logic/tableaux/tableaux.tex:15-17` | `mr/content/first-order-logic/tableaux/tableaux.tex:15-17` | pending |
+| `T109-OLP-0105-B006` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:15-18` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:15-18` | pending |
+| `T109-OLP-0105-B007` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29` | pending |
+| `T109-OLP-0105-B008` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:31-35` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:32-36` | pending |
+| `T109-OLP-0105-B009` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:37-51` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:38-52` | pending |
+| `T109-OLP-0105-B010` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:53-64` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:54-65` | pending |
+| `T109-OLP-0105-B019` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:140-144` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:141-145` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -7340,6 +7384,8 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T110-OLP-0092-B006` | `OLP-0092` | 10.8 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:15-17` | `mr/content/first-order-logic/natural-deduction/provability-consistency.tex:15-16` | 121–123 |
 | `T110-OLP-0093-B007` | `OLP-0093` | 10.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | `mr/content/first-order-logic/natural-deduction/provability-propositional.tex:18-24` | 123–124 |
 | `T110-OLP-0094-B007` | `OLP-0094` | 10.10 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | 124–125 |
+| `T110-OLP-0105-B007` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29` | pending |
+| `T110-OLP-0106-B006` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:15-17` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:15-16` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -7491,6 +7537,12 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T112-OLP-0101-B006` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:13-13` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:13-13` | pending |
 | `T112-OLP-0101-B009` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:35-35` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:34-34` | pending |
 | `T112-OLP-0101-B013` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | pending |
+| `T112-OLP-0104-B005` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:11-11` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:11-11` | pending |
+| `T112-OLP-0104-B007` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92` | pending |
+| `T112-OLP-0104-B008` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:96-207` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:94-203` | pending |
+| `T112-OLP-0104-B010` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:208-309` | pending |
+| `T112-OLP-0104-B011` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:317-333` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:311-327` | pending |
+| `T112-OLP-0104-B012` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:335-342` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:329-336` | pending |
 
 ## T113 — classical logic / classical
 
@@ -7913,6 +7965,7 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T121-OLP-0095-B031` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:301-312` | `mr/content/first-order-logic/natural-deduction/soundness.tex:303-314` | 125–128 |
 | `T121-OLP-0097-B007` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | 129–130 |
 | `T121-OLP-0097-B008` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | 129–130 |
+| `T121-OLP-0105-B007` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T122 — tautology
 
@@ -8034,6 +8087,7 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T123-OLP-0095-B022` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:216-240` | `mr/content/first-order-logic/natural-deduction/soundness.tex:215-240` | 125–128 |
 | `T123-OLP-0095-B024` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271` | `mr/content/first-order-logic/natural-deduction/soundness.tex:244-273` | 125–128 |
 | `T123-OLP-0097-B008` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | 129–130 |
+| `T123-OLP-0105-B007` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -8070,6 +8124,7 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T124-OLP-0091-B007` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | 120–121 |
 | `T124-OLP-0095-B030` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:296-299` | `mr/content/first-order-logic/natural-deduction/soundness.tex:298-301` | 125–128 |
 | `T124-OLP-0095-B031` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:301-312` | `mr/content/first-order-logic/natural-deduction/soundness.tex:303-314` | 125–128 |
+| `T124-OLP-0105-B007` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T125 — necessary / contingent
 
@@ -8179,6 +8234,7 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T126-OLP-0099-B008` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:29-31` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:29-31` | pending |
 | `T126-OLP-0099-B011` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | pending |
 | `T126-OLP-0103-B006` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:15-16` | `mr/content/first-order-logic/tableaux/proving-things.tex:15-16` | pending |
+| `T126-OLP-0104-B007` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92` | pending |
 
 ## T127 — propositional constant
 
@@ -8377,6 +8433,20 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T128-OLP-0103-B015` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:418-426` | `mr/content/first-order-logic/tableaux/proving-things.tex:412-420` | pending |
 | `T128-OLP-0103-B016` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:428-444` | `mr/content/first-order-logic/tableaux/proving-things.tex:422-438` | pending |
 | `T128-OLP-0103-B017` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:446-458` | `mr/content/first-order-logic/tableaux/proving-things.tex:440-452` | pending |
+| `T128-OLP-0104-B008` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:96-207` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:94-203` | pending |
+| `T128-OLP-0104-B010` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:208-309` | pending |
+| `T128-OLP-0104-B011` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:317-333` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:311-327` | pending |
+| `T128-OLP-0104-B012` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:335-342` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:329-336` | pending |
+| `T128-OLP-0106-B009` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:40-43` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:39-43` | pending |
+| `T128-OLP-0106-B010` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | pending |
+| `T128-OLP-0106-B011` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:59-73` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:59-72` | pending |
+| `T128-OLP-0106-B012` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:75-77` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:74-77` | pending |
+| `T128-OLP-0106-B013` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:79-82` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:79-82` | pending |
+| `T128-OLP-0106-B014` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97` | pending |
+| `T128-OLP-0106-B015` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:100-103` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:99-102` | pending |
+| `T128-OLP-0106-B016` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | pending |
+| `T128-OLP-0106-B018` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:128-133` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:125-130` | pending |
+| `T128-OLP-0106-B019` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:135-148` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:132-143` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -8417,6 +8487,7 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T129-OLP-0070-B011` | `OLP-0070` | 9.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | 89–90 |
 | `T129-OLP-0103-B008` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:25-47` | `mr/content/first-order-logic/tableaux/proving-things.tex:24-44` | pending |
 | `T129-OLP-0103-B011` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:76-171` | `mr/content/first-order-logic/tableaux/proving-things.tex:72-166` | pending |
+| `T129-OLP-0104-B007` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92` | pending |
 
 ## T130 — abbreviation / abbreviates
 
@@ -8720,6 +8791,7 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T138-OLP-0096-B012` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/natural-deduction/identity.tex:114-122` | `mr/content/first-order-logic/natural-deduction/identity.tex:114-122` | 128–129 |
 | `T138-OLP-0097-B008` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | 129–130 |
 | `T138-OLP-0101-B013` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | pending |
+| `T138-OLP-0104-B008` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:96-207` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:94-203` | pending |
 
 ## T139 — occurrence (of a variable or formula)
 
@@ -8926,6 +8998,17 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T144-OLP-0091-B017` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-103` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:103-106` | 120–121 |
 | `T144-OLP-0091-B023` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147` | 120–121 |
 | `T144-OLP-0091-B024` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | 120–121 |
+| `T144-OLP-0105-B009` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:37-51` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:38-52` | pending |
+| `T144-OLP-0105-B010` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:53-64` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:54-65` | pending |
+| `T144-OLP-0105-B012` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:71-79` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:72-80` | pending |
+| `T144-OLP-0105-B014` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:88-90` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:89-91` | pending |
+| `T144-OLP-0105-B016` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-110` | pending |
+| `T144-OLP-0105-B023` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:162-170` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:163-171` | pending |
+| `T144-OLP-0105-B024` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:172-188` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:173-189` | pending |
+| `T144-OLP-0106-B008` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:24-38` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:23-37` | pending |
+| `T144-OLP-0106-B010` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | pending |
+| `T144-OLP-0106-B014` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97` | pending |
+| `T144-OLP-0106-B016` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | pending |
 
 ## T145 — evaluation / evaluation function
 
@@ -9072,6 +9155,8 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T149-OLP-0077-B015` | `OLP-0077` | 9.8 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-100` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:96-102` | 99–100 |
 | `T149-OLP-0091-B013` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:64-68` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:64-68` | 120–121 |
 | `T149-OLP-0091-B014` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73` | 120–121 |
+| `T149-OLP-0105-B013` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:82-86` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:83-87` | pending |
+| `T149-OLP-0105-B014` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:88-90` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:89-91` | pending |
 
 ## T150 — Semantic Deduction Theorem
 
@@ -9222,6 +9307,19 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T151-OLP-0103-B008` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:25-47` | `mr/content/first-order-logic/tableaux/proving-things.tex:24-44` | pending |
 | `T151-OLP-0103-B011` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:76-171` | `mr/content/first-order-logic/tableaux/proving-things.tex:72-166` | pending |
 | `T151-OLP-0103-B012` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:173-299` | `mr/content/first-order-logic/tableaux/proving-things.tex:168-293` | pending |
+| `T151-OLP-0104-B006` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:13-18` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:13-17` | pending |
+| `T151-OLP-0104-B007` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92` | pending |
+| `T151-OLP-0104-B008` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:96-207` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:94-203` | pending |
+| `T151-OLP-0104-B010` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:208-309` | pending |
+| `T151-OLP-0105-B017` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:111-133` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:112-134` | pending |
+| `T151-OLP-0106-B008` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:24-38` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:23-37` | pending |
+| `T151-OLP-0106-B010` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | pending |
+| `T151-OLP-0106-B011` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:59-73` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:59-72` | pending |
+| `T151-OLP-0106-B014` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97` | pending |
+| `T151-OLP-0106-B016` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | pending |
+| `T151-OLP-0106-B017` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:122-126` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:120-123` | pending |
+| `T151-OLP-0106-B018` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:128-133` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:125-130` | pending |
+| `T151-OLP-0106-B019` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:135-148` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:132-143` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -9385,6 +9483,7 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T154-OLP-0085-B008` | `OLP-0085` | 10.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:30-40` | 109 |
 | `T154-OLP-0085-B010` | `OLP-0085` | 10.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | 109 |
 | `T154-OLP-0091-B008` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | 120–121 |
+| `T154-OLP-0105-B008` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:31-35` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:32-36` | pending |
 
 ## T155 — soundness / sound / unsound (of a proof system)
 
@@ -9470,6 +9569,7 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T155-OLP-0097-B005` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:11-11` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:11-11` | 129–130 |
 | `T155-OLP-0097-B006` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | 129–130 |
 | `T155-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
+| `T155-OLP-0105-B007` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -9584,6 +9684,22 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T156-OLP-0095-B006` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:15-31` | `mr/content/first-order-logic/natural-deduction/soundness.tex:15-31` | 125–128 |
 | `T156-OLP-0095-B030` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:296-299` | `mr/content/first-order-logic/natural-deduction/soundness.tex:298-301` | 125–128 |
 | `T156-OLP-0095-B031` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:301-312` | `mr/content/first-order-logic/natural-deduction/soundness.tex:303-314` | 125–128 |
+| `T156-OLP-0105-B006` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:15-18` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:15-18` | pending |
+| `T156-OLP-0105-B010` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:53-64` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:54-65` | pending |
+| `T156-OLP-0105-B019` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:140-144` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:141-145` | pending |
+| `T156-OLP-0105-B020` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:146-148` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:147-149` | pending |
+| `T156-OLP-0105-B023` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:162-170` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:163-171` | pending |
+| `T156-OLP-0105-B024` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:172-188` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:173-189` | pending |
+| `T156-OLP-0106-B005` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:13-13` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:13-13` | pending |
+| `T156-OLP-0106-B007` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:19-22` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:18-21` | pending |
+| `T156-OLP-0106-B008` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:24-38` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:23-37` | pending |
+| `T156-OLP-0106-B009` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:40-43` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:39-43` | pending |
+| `T156-OLP-0106-B010` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | pending |
+| `T156-OLP-0106-B012` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:75-77` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:74-77` | pending |
+| `T156-OLP-0106-B013` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:79-82` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:79-82` | pending |
+| `T156-OLP-0106-B014` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97` | pending |
+| `T156-OLP-0106-B015` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:100-103` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:99-102` | pending |
+| `T156-OLP-0106-B016` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -9782,6 +9898,20 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T159-OLP-0103-B007` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:18-23` | `mr/content/first-order-logic/tableaux/proving-things.tex:18-22` | pending |
 | `T159-OLP-0103-B012` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:173-299` | `mr/content/first-order-logic/tableaux/proving-things.tex:168-293` | pending |
 | `T159-OLP-0103-B014` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:364-416` | `mr/content/first-order-logic/tableaux/proving-things.tex:358-410` | pending |
+| `T159-OLP-0104-B007` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92` | pending |
+| `T159-OLP-0104-B008` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:96-207` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:94-203` | pending |
+| `T159-OLP-0104-B010` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:208-309` | pending |
+| `T159-OLP-0105-B012` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:71-79` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:72-80` | pending |
+| `T159-OLP-0105-B016` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-110` | pending |
+| `T159-OLP-0105-B017` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:111-133` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:112-134` | pending |
+| `T159-OLP-0106-B008` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:24-38` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:23-37` | pending |
+| `T159-OLP-0106-B010` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | pending |
+| `T159-OLP-0106-B011` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:59-73` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:59-72` | pending |
+| `T159-OLP-0106-B014` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97` | pending |
+| `T159-OLP-0106-B016` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | pending |
+| `T159-OLP-0106-B017` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:122-126` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:120-123` | pending |
+| `T159-OLP-0106-B018` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:128-133` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:125-130` | pending |
+| `T159-OLP-0106-B019` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:135-148` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:132-143` | pending |
 
 ## T160 — introduction rule / elimination rule
 
@@ -10051,6 +10181,30 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T164-OLP-0103-B015` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:418-426` | `mr/content/first-order-logic/tableaux/proving-things.tex:412-420` | pending |
 | `T164-OLP-0103-B016` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:428-444` | `mr/content/first-order-logic/tableaux/proving-things.tex:422-438` | pending |
 | `T164-OLP-0103-B017` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:446-458` | `mr/content/first-order-logic/tableaux/proving-things.tex:440-452` | pending |
+| `T164-OLP-0104-B005` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:11-11` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:11-11` | pending |
+| `T164-OLP-0104-B006` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:13-18` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:13-17` | pending |
+| `T164-OLP-0104-B007` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92` | pending |
+| `T164-OLP-0104-B008` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:96-207` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:94-203` | pending |
+| `T164-OLP-0104-B010` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:208-309` | pending |
+| `T164-OLP-0104-B011` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:317-333` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:311-327` | pending |
+| `T164-OLP-0104-B012` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:335-342` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:329-336` | pending |
+| `T164-OLP-0105-B006` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:15-18` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:15-18` | pending |
+| `T164-OLP-0105-B007` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29` | pending |
+| `T164-OLP-0105-B008` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:31-35` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:32-36` | pending |
+| `T164-OLP-0105-B009` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:37-51` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:38-52` | pending |
+| `T164-OLP-0105-B010` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:53-64` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:54-65` | pending |
+| `T164-OLP-0105-B012` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:71-79` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:72-80` | pending |
+| `T164-OLP-0105-B016` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-110` | pending |
+| `T164-OLP-0105-B017` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:111-133` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:112-134` | pending |
+| `T164-OLP-0105-B024` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:172-188` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:173-189` | pending |
+| `T164-OLP-0106-B008` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:24-38` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:23-37` | pending |
+| `T164-OLP-0106-B010` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | pending |
+| `T164-OLP-0106-B011` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:59-73` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:59-72` | pending |
+| `T164-OLP-0106-B014` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97` | pending |
+| `T164-OLP-0106-B016` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | pending |
+| `T164-OLP-0106-B017` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:122-126` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:120-123` | pending |
+| `T164-OLP-0106-B018` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:128-133` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:125-130` | pending |
+| `T164-OLP-0106-B019` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:135-148` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:132-143` | pending |
 
 ## T165 — signed formula / truth-value sign / immediate subformula
 
@@ -10101,6 +10255,26 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T165-OLP-0103-B015` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:418-426` | `mr/content/first-order-logic/tableaux/proving-things.tex:412-420` | pending |
 | `T165-OLP-0103-B016` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:428-444` | `mr/content/first-order-logic/tableaux/proving-things.tex:422-438` | pending |
 | `T165-OLP-0103-B017` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:446-458` | `mr/content/first-order-logic/tableaux/proving-things.tex:440-452` | pending |
+| `T165-OLP-0104-B007` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92` | pending |
+| `T165-OLP-0104-B008` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:96-207` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:94-203` | pending |
+| `T165-OLP-0104-B010` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:208-309` | pending |
+| `T165-OLP-0104-B011` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:317-333` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:311-327` | pending |
+| `T165-OLP-0104-B012` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:335-342` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:329-336` | pending |
+| `T165-OLP-0105-B008` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:31-35` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:32-36` | pending |
+| `T165-OLP-0105-B009` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:37-51` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:38-52` | pending |
+| `T165-OLP-0105-B010` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:53-64` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:54-65` | pending |
+| `T165-OLP-0105-B012` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:71-79` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:72-80` | pending |
+| `T165-OLP-0105-B016` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-110` | pending |
+| `T165-OLP-0105-B017` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:111-133` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:112-134` | pending |
+| `T165-OLP-0105-B024` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:172-188` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:173-189` | pending |
+| `T165-OLP-0106-B008` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:24-38` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:23-37` | pending |
+| `T165-OLP-0106-B010` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | pending |
+| `T165-OLP-0106-B011` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:59-73` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:59-72` | pending |
+| `T165-OLP-0106-B014` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97` | pending |
+| `T165-OLP-0106-B016` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | pending |
+| `T165-OLP-0106-B017` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:122-126` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:120-123` | pending |
+| `T165-OLP-0106-B018` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:128-133` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:125-130` | pending |
+| `T165-OLP-0106-B019` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:135-148` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:132-143` | pending |
 
 ## T166 — Evert Beth / Jaakko Hintikka / Raymond Smullyan
 
@@ -10476,6 +10650,9 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T174-OLP-0101-B011` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:49-51` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:48-50` | pending |
 | `T174-OLP-0101-B013` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | pending |
 | `T174-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
+| `T174-OLP-0104-B007` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92` | pending |
+| `T174-OLP-0104-B008` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:96-207` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:94-203` | pending |
+| `T174-OLP-0104-B010` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:208-309` | pending |
 
 ## T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)
 
@@ -10572,6 +10749,11 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T175-OLP-0085-B010` | `OLP-0085` | 10.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | 109 |
 | `T175-OLP-0100-B014` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:77-77` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:77-77` | pending |
 | `T175-OLP-0100-B016` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | pending |
+| `T175-OLP-0105-B017` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:111-133` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:112-134` | pending |
+| `T175-OLP-0106-B008` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:24-38` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:23-37` | pending |
+| `T175-OLP-0106-B016` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | pending |
+| `T175-OLP-0106-B018` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:128-133` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:125-130` | pending |
+| `T175-OLP-0106-B019` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:135-148` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:132-143` | pending |
 
 ## T176 — end-sequent
 
@@ -10729,6 +10911,10 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T178-OLP-0101-B012` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:53-55` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:52-53` | pending |
 | `T178-OLP-0101-B013` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | pending |
 | `T178-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
+| `T178-OLP-0104-B006` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:13-18` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:13-17` | pending |
+| `T178-OLP-0104-B007` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92` | pending |
+| `T178-OLP-0104-B008` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:96-207` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:94-203` | pending |
+| `T178-OLP-0104-B010` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:208-309` | pending |
 
 ## T179 — eigenvariable condition
 
@@ -10819,6 +11005,10 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T179-OLP-0101-B012` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:53-55` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:52-53` | pending |
 | `T179-OLP-0101-B013` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | pending |
 | `T179-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
+| `T179-OLP-0104-B006` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:13-18` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:13-17` | pending |
+| `T179-OLP-0104-B007` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92` | pending |
+| `T179-OLP-0104-B008` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:96-207` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:94-203` | pending |
+| `T179-OLP-0104-B010` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:208-309` | pending |
 
 ## T180 — Rules for [logical symbol] (heading construction)
 
@@ -10898,6 +11088,8 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T181-OLP-0077-B023` | `OLP-0077` | 9.8 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:157-168` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:159-170` | 99–100 |
 | `T181-OLP-0091-B023` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:136-144` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:139-147` | 120–121 |
 | `T181-OLP-0091-B024` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | 120–121 |
+| `T181-OLP-0105-B023` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:162-170` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:163-171` | pending |
+| `T181-OLP-0105-B024` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:172-188` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:173-189` | pending |
 
 ## T182 — proof-theoretic notions
 
@@ -10927,6 +11119,8 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T182-OLP-0077-B007` | `OLP-0077` | 9.8 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:20-29` | 99–100 |
 | `T182-OLP-0091-B005` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:13-13` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:13-13` | 120–121 |
 | `T182-OLP-0091-B007` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | 120–121 |
+| `T182-OLP-0105-B005` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:13-13` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:13-13` | pending |
+| `T182-OLP-0105-B007` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29` | pending |
 
 ## T183 — transitivity (of derivability)
 
@@ -10959,6 +11153,10 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T183-OLP-0091-B015` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:75-79` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:75-79` | 120–121 |
 | `T183-OLP-0091-B016` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:81-101` | 120–121 |
 | `T183-OLP-0091-B018` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:105-108` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:108-111` | 120–121 |
+| `T183-OLP-0105-B015` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:92-96` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:93-97` | pending |
+| `T183-OLP-0105-B016` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-110` | pending |
+| `T183-OLP-0105-B017` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:111-133` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:112-134` | pending |
+| `T183-OLP-0105-B018` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:135-138` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:136-139` | pending |
 
 ## T184 — derivability / provability relation
 
@@ -11120,6 +11318,39 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | `T184-OLP-0095-B006` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:15-31` | `mr/content/first-order-logic/natural-deduction/soundness.tex:15-31` | 125–128 |
 | `T184-OLP-0095-B007` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:33-37` | `mr/content/first-order-logic/natural-deduction/soundness.tex:33-37` | 125–128 |
 | `T184-OLP-0095-B029` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:291-294` | `mr/content/first-order-logic/natural-deduction/soundness.tex:293-296` | 125–128 |
+| `T184-OLP-0105-B006` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:15-18` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:15-18` | pending |
+| `T184-OLP-0105-B007` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29` | pending |
+| `T184-OLP-0105-B008` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:31-35` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:32-36` | pending |
+| `T184-OLP-0105-B009` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:37-51` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:38-52` | pending |
+| `T184-OLP-0105-B010` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:53-64` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:54-65` | pending |
+| `T184-OLP-0105-B011` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:66-69` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:67-70` | pending |
+| `T184-OLP-0105-B012` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:71-79` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:72-80` | pending |
+| `T184-OLP-0105-B013` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:82-86` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:83-87` | pending |
+| `T184-OLP-0105-B014` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:88-90` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:89-91` | pending |
+| `T184-OLP-0105-B015` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:92-96` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:93-97` | pending |
+| `T184-OLP-0105-B016` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-110` | pending |
+| `T184-OLP-0105-B017` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:111-133` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:112-134` | pending |
+| `T184-OLP-0105-B018` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:135-138` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:136-139` | pending |
+| `T184-OLP-0105-B019` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:140-144` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:141-145` | pending |
+| `T184-OLP-0105-B020` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:146-148` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:147-149` | pending |
+| `T184-OLP-0105-B021` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:150-154` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:151-155` | pending |
+| `T184-OLP-0105-B022` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:156-160` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:157-161` | pending |
+| `T184-OLP-0105-B023` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:162-170` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:163-171` | pending |
+| `T184-OLP-0105-B024` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:172-188` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:173-189` | pending |
+| `T184-OLP-0106-B005` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:13-13` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:13-13` | pending |
+| `T184-OLP-0106-B006` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:15-17` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:15-16` | pending |
+| `T184-OLP-0106-B007` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:19-22` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:18-21` | pending |
+| `T184-OLP-0106-B008` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:24-38` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:23-37` | pending |
+| `T184-OLP-0106-B009` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:40-43` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:39-43` | pending |
+| `T184-OLP-0106-B010` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | pending |
+| `T184-OLP-0106-B011` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:59-73` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:59-72` | pending |
+| `T184-OLP-0106-B012` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:75-77` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:74-77` | pending |
+| `T184-OLP-0106-B013` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:79-82` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:79-82` | pending |
+| `T184-OLP-0106-B014` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97` | pending |
+| `T184-OLP-0106-B016` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | pending |
+| `T184-OLP-0106-B017` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:122-126` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:120-123` | pending |
+| `T184-OLP-0106-B018` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:128-133` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:125-130` | pending |
+| `T184-OLP-0106-B019` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:135-148` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:132-143` | pending |
 
 ## T185 — intuitionistic logic
 
@@ -12451,6 +12682,181 @@ Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 oc
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLTAB-002-OLP-0101` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:27-28` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:27-28` | pending |
+
+## OLTAB-003 — confirmed-source-clarification of the standing closed-term restriction
+
+**Chosen rendering/action:** Clarified both Marathi passages as permitting any or any suitable closed term, preserving the selected constants and every formula, rule label and tableau tree unchanged.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The two worked-example explanations say that true-universal and false-existential tableau rules may use any term or whichever terms are suitable. The OLP-0101 rule clauses require the substituted term t to be closed. The constants a, b and c actually chosen in these examples are closed, so every displayed inference is valid.
+
+**Rationale:** The two worked-example explanations say that true-universal and false-existential tableau rules may use any term or whichever terms are suitable. The OLP-0101 rule clauses require the substituted term t to be closed. The constants a, b and c actually chosen in these examples are closed, so every displayed inference is valid. Chosen action: Clarified both Marathi passages as permitting any or any suitable closed term, preserving the selected constants and every formula, rule label and tableau tree unchanged.
+
+**Authorities actually checked:**
+
+- `OLTAB-003-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTAB-003. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the locally overbroad any-term wording literally — `rejected`: Not chosen; the source finding and recorded action control.
+- Repeat the full definition of a closed term at both worked-example steps — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do both clarifications retain the intended freedom of term choice while requiring exactly the standing closedness condition?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTAB-003-OLP-0104` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:129-136` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:126-132` | pending |
+
+## OLTAB-004 — confirmed-frozen-source-line-reference defect with bounded target correction
+
+**Chosen rendering/action:** Corrected the Marathi narrative reference from line 3 to line 4. A unit-specific QA projection restores the frozen line number solely for structural comparison; every tableau node, rule label and justification remains source-identical.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The source says that lines 1 and 3 must be reused to close the two branches and immediately names the corresponding rules as true-universal and false-existential. The false-existential signed formula is derived on line 4, while line 3 is the already-checked true-negation assumption. The final encoded tableau correctly cites line 4 for the false-existential application.
+
+**Rationale:** The source says that lines 1 and 3 must be reused to close the two branches and immediately names the corresponding rules as true-universal and false-existential. The false-existential signed formula is derived on line 4, while line 3 is the already-checked true-negation assumption. The final encoded tableau correctly cites line 4 for the false-existential application. Chosen action: Corrected the Marathi narrative reference from line 3 to line 4. A unit-specific QA projection restores the frozen line number solely for structural comparison; every tableau node, rule label and justification remains source-identical.
+
+**Authorities actually checked:**
+
+- `OLTAB-004-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTAB-004. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the incorrect line 3 reference literally — `rejected`: Not chosen; the source finding and recorded action control.
+- Avoid the line number and identify only the false-existential signed formula — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected line 4 reference agree with both the derived signed formula and the final encoded tableau?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTAB-004-OLP-0104` | `OLP-0104` |  | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:280-284` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:275-278` | pending |
+
+## OLTAB-005 — confirmed-frozen-source-set-notation defect with documented formula projection
+
+**Chosen rendering/action:** Inserted set braces around D_1 through D_m in the Marathi proof. A unit-specific QA projection restores the frozen malformed expression solely for structural comparison; every signed formula and tableau construction step remains unchanged.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** In the transitivity proof, the source writes separate formulas D_1 and D_m and then places only D_m to the left of the subset symbol. A sentence is an element rather than a subset of Gamma, and the derivability definition requires a finite set of premises. The intended statement is that the finite set {D_1, ..., D_m} is a subset of Gamma.
+
+**Rationale:** In the transitivity proof, the source writes separate formulas D_1 and D_m and then places only D_m to the left of the subset symbol. A sentence is an element rather than a subset of Gamma, and the derivability definition requires a finite set of premises. The intended statement is that the finite set {D_1, ..., D_m} is a subset of Gamma. Chosen action: Inserted set braces around D_1 through D_m in the Marathi proof. A unit-specific QA projection restores the frozen malformed expression solely for structural comparison; every signed formula and tableau construction step remains unchanged.
+
+**Authorities actually checked:**
+
+- `OLTAB-005-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTAB-005. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the ill-typed subset expression literally — `rejected`: Not chosen; the source finding and recorded action control.
+- Replace the subset statement with separate membership claims for every D_i — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired finite-set expression state exactly that all and only the listed D_i premises belong to Gamma?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTAB-005-OLP-0105` | `OLP-0105` |  | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-109` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:100-110` | pending |
+
+## OLTAB-006 — confirmed-frozen-source-index defect with documented formula projection
+
+**Chosen rendering/action:** Changed the Gamma_1 definition's final index from n to m in Marathi. A unit-specific QA projection restores the frozen index solely for structural comparison; the displayed signed-formula set already uses C_m and remains unchanged.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The first proof defines Gamma_1 as {C_1, ..., C_n}, but its immediately displayed true-signed witness ends with C_m. Gamma_0 already uses the independent upper index n for its B-premises, and the parallel construction later in the same section uses n for the B-family and m for the C-family.
+
+**Rationale:** The first proof defines Gamma_1 as {C_1, ..., C_n}, but its immediately displayed true-signed witness ends with C_m. Gamma_0 already uses the independent upper index n for its B-premises, and the parallel construction later in the same section uses n for the B-family and m for the C-family. Chosen action: Changed the Gamma_1 definition's final index from n to m in Marathi. A unit-specific QA projection restores the frozen index solely for structural comparison; the displayed signed-formula set already uses C_m and remains unchanged.
+
+**Authorities actually checked:**
+
+- `OLTAB-006-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTAB-006. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Change the displayed C_m witness to C_n instead — `rejected`: Not chosen; the source finding and recorded action control.
+- Reuse one common upper index for both independently sized finite premise sets — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does using m throughout the C-family preserve its independence from the n-member B-family?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTAB-006-OLP-0106` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:25-31` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:24-30` | pending |
+
+## OLTAB-007 — confirmed-frozen-source-rule-premise defect with documented formula projection
+
+**Chosen rendering/action:** Named true not-A as the rule premise in Marathi. A unit-specific QA projection restores the frozen false-A premise solely for structural comparison; the rule label and resulting false-A formula are unchanged.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** After replacing false A by true not-A, the source says to insert the conclusion of the true-negation rule applied to false A. The true-negation rule applies to true not-A and produces false A; it does not apply to false A. The preceding replacement and the intended inserted formula determine the correct premise uniquely.
+
+**Rationale:** After replacing false A by true not-A, the source says to insert the conclusion of the true-negation rule applied to false A. The true-negation rule applies to true not-A and produces false A; it does not apply to false A. The preceding replacement and the intended inserted formula determine the correct premise uniquely. Chosen action: Named true not-A as the rule premise in Marathi. A unit-specific QA projection restores the frozen false-A premise solely for structural comparison; the rule label and resulting false-A formula are unchanged.
+
+**Authorities actually checked:**
+
+- `OLTAB-007-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTAB-007. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the inapplicable false-A premise literally — `rejected`: Not chosen; the source finding and recorded action control.
+- Describe only the inserted false-A result without naming the rule premise — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected sentence unambiguously apply true-negation to true not-A and insert its false-A conclusion?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTAB-007-OLP-0106` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:90-93` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:90-92` | pending |
+
+## OLTAB-008 — confirmed-frozen-source-off-by-one line-reference defect with documented formula projection
+
+**Chosen rendering/action:** Corrected the Marathi justification reference to line n+2. A unit-specific QA projection restores n+1 solely for structural comparison; no tableau formula or rule application changes.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The old tableau has n+1 assumptions: false A on line 1 followed by n true B-premises. Replacing line 1 does not change that count. Inserting the new false-A conclusion after all assumptions therefore places it on line n+2, although the source says n+1.
+
+**Rationale:** The old tableau has n+1 assumptions: false A on line 1 followed by n true B-premises. Replacing line 1 does not change that count. Inserting the new false-A conclusion after all assumptions therefore places it on line n+2, although the source says n+1. Chosen action: Corrected the Marathi justification reference to line n+2. A unit-specific QA projection restores n+1 solely for structural comparison; no tableau formula or rule application changes.
+
+**Authorities actually checked:**
+
+- `OLTAB-008-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTAB-008. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Insert the derived false-A formula before the final assumption so that it becomes line n+1 — `rejected`: Not chosen; the source finding and recorded action control.
+- Avoid the numeric reference and refer only to the newly inserted false-A formula — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does n+2 correctly identify the first line after the complete assumption list?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTAB-008-OLP-0106` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-95` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:84-95` | pending |
+
+## OLTAB-009 — confirmed-frozen-source-copy-edit defects with bounded target normalization
+
+**Chosen rendering/action:** Omitted the stray control-space backslash, translated the duplicated direction once, used the contextually required plural and supplied grammatical Marathi verb forms. No formula, rule label, branch direction or protected identifier was changed.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The frozen prose contains a stray lone backslash before the displayed set, repeats left in ‘left left side,’ uses singular assumption for a tableau with several assumptions, and says ‘we can applying.’ These are mechanical typesetting or grammar defects; the intended proof directions and operations are otherwise clear.
+
+**Rationale:** The frozen prose contains a stray lone backslash before the displayed set, repeats left in ‘left left side,’ uses singular assumption for a tableau with several assumptions, and says ‘we can applying.’ These are mechanical typesetting or grammar defects; the intended proof directions and operations are otherwise clear. Chosen action: Omitted the stray control-space backslash, translated the duplicated direction once, used the contextually required plural and supplied grammatical Marathi verb forms. No formula, rule label, branch direction or protected identifier was changed.
+
+**Authorities actually checked:**
+
+- `OLTAB-009-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTAB-009. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Mimic each malformed source phrase literally in Marathi — `rejected`: Not chosen; the source finding and recorded action control.
+- Add reader-facing editorial notes for purely mechanical English copy-edit defects — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do the normalized Marathi sentences retain the same left/right branch construction without introducing any unstated inference?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTAB-009-OLP-0106` | `OLP-0106` |  | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:85-87` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:85-87` | pending |
 
 ## Deferred prospective decisions
 

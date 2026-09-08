@@ -1,0 +1,191 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{ptn}}
+      {\olfileid{pl}{tab}{ptn}}
+      
+\olsection{सिद्धता-उपपत्तीय संकल्पना}
+
+\begin{editorial}
+या विभागात टॅब्लोसाठी सिद्धतायोग्यता संबंध आणि सुसंगतता यांच्या व्याख्या
+एकत्रित केल्या आहेत.
+\end{editorial}
+
+\begin{explain}
+जशा आपण अनेक महत्त्वाच्या चिन्हार्थविषयक संकल्पना (वैधता, तार्किक निष्पन्नता,
+पूर्ततायोग्यता) परिभाषित केल्या आहेत, तशाच त्यांना अनुरूप
+\emph{सिद्धता-उपपत्तीय संकल्पना} आता परिभाषित करू. !!{structure}s मध्ये
+!!{sentence}s ची पूर्ति होते की नाही याचा आधार घेऊन या संकल्पना परिभाषित
+केल्या जात नाहीत; त्याऐवजी ठरावीक बंद !!{tableau}x च्या अस्तित्वाचा आधार
+घेतला जातो. या दोन प्रकारच्या संकल्पना एकमेकांशी जुळतात, हा एक महत्त्वाचा
+शोध होता. त्या जुळतात, हाच \emph{निर्दोषता प्रमेय} आणि
+\emph{संपूर्णता प्रमेय} यांचा आशय आहे.
+\end{explain}
+
+
+\begin{defn}[प्रमेये]
+एखादे !!{sentence}~$!A$ हे \emph{प्रमेय} असते, जर
+$\sFmla{\False}{!A}$ साठी बंद !!{tableau} असेल. $!A$ हे प्रमेय असेल
+तर आपण $\Proves !A$ लिहितो आणि ते प्रमेय नसेल तर $\Proves/ !A$ लिहितो.
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!^a{sentence} $!A$ हे !!{sentence}s च्या संच~$\Gamma$ \emph{पासून
+!!{derivable}} असते, म्हणजे $\Gamma \Proves !A$, तेव्हा आणि केवळ तेव्हाच,
+जेव्हा एखादा सांत संच $\{!B_1, \dots, !B_n\} \subseteq \Gamma$ असा असतो
+आणि पुढील संचासाठी बंद !!{tableau} असतो:
+\[
+\{
+  \sFmla{\False}{!A},
+  \sFmla{\True}{!B_1}, \dots,
+  \sFmla{\True}{!B_n}
+  \}.
+\]
+$!A$ हे $\Gamma$ पासून !!{derivable} नसेल, तर आपण $\Gamma \Proves/
+!A$ लिहितो.
+\end{defn}
+
+\begin{defn}[सुसंगतता]
+!!{sentence}s चा संच~$\Gamma$ हा \emph{विसंगत} असतो तेव्हा आणि केवळ तेव्हाच,
+जेव्हा एखादा सांत संच $\{!B_1, \dots, !B_n\} \subseteq \Gamma$ असा असतो
+आणि पुढील संचासाठी बंद !!{tableau} असतो:
+\[
+\{
+  \sFmla{\True}{!B_1}, \dots,
+  \sFmla{\True}{!B_n}  
+  \}.
+\]
+$\Gamma$ विसंगत नसेल, तर त्याला \emph{सुसंगत} म्हणतो.
+\end{defn}
+
+\begin{prop}[परावर्तिता]
+\ollabel{prop:reflexivity}
+$!A \in \Gamma$ असेल, तर $\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+$!A \in \Gamma$ असेल, तर $\{!A\}$ हा $\Gamma$ चा सांत उपसंच आहे आणि पुढील !!{tableau}
+\begin{oltableau}
+  [\sFmla{\False}{\formula{A}}, just = \TAss
+    [\sFmla{\True}{\formula{A}}, just = \TAss,close]
+  ]
+\end{oltableau}
+बंद आहे.
+\end{proof}
+  
+
+\begin{prop}[एकस्वनिकता]
+\ollabel{prop:monotonicity}
+$\Gamma \subseteq \Delta$ आणि $\Gamma \Proves !A$ असेल, तर $\Delta
+\Proves !A$.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ चा कोणताही सांत उपसंच हा $\Delta$ चासुद्धा सांत उपसंच असतो.
+\end{proof}
+
+\begin{prop}[संक्रमकता]
+\ollabel{prop:transitivity}
+$\Gamma \Proves !A$ आणि $\{!A\} \cup
+\Delta \Proves !B$ असेल, तर $\Gamma \cup \Delta \Proves !B$.
+\end{prop}
+
+\begin{proof}
+$\{!A\} \cup \Delta \Proves !B$ असेल, तर $\Delta_0 =
+\{!C_1, \dots, !C_n\} \subseteq \Delta$ असा सांत उपसंच असतो आणि पुढील संचासाठी
+\begin{align*}
+\{\sFmla{\False}{!B}, & \sFmla{\True}{!A}, \sFmla{\True}{!C_1},
+\dots, \sFmla{\True}{!C_n}\}
+\intertext{बंद !!{tableau} असतो. जर $\Gamma \Proves !A$ असेल, तर
+  $\{!D_1, \dots, !D_m\} \subseteq \Gamma$ असा संच असतो आणि पुढील संचासाठीही}
+\{\sFmla{\False}{!A}, & \sFmla{\True}{!D_1},
+\dots, \sFmla{\True}{!D_m}\}
+\end{align*}
+बंद !!{tableau} असतो.
+
+आता पुढील गृहीतके असलेला !!{tableau} विचारात घ्या:
+\[
+\sFmla{\False}{!B},
+\sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_n},
+\sFmla{\True}{!D_1}, \dots, \sFmla{\True}{!D_m}.
+\]
+त्यात~$!A$ वर \Cut{} नियम लावा. यामुळे दोन शाखा तयार होतात: एका शाखेत
+$\sFmla{\True}{!A}$, तर दुसऱ्या शाखेत $\sFmla{\False}{!A}$ असते. त्यामुळे
+पहिल्या शाखेत पुढील सर्व गृहीतके उपलब्ध असतात:
+\[
+\{\sFmla{\False}{!B}, \sFmla{\True}{!A},
+\sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_n}\}
+\]
+या गृहीतकांसाठी बंद !!{tableau} असल्यामुळे तो त्या शाखेला जोडता येतो;
+$\sFmla{\True}{!A}$ मधून जाणारी प्रत्येक शाखा बंद होते. दुसऱ्या शाखेत
+पुढील सर्व गृहीतके उपलब्ध असतात:
+\[
+\{\sFmla{\False}{!A}, \sFmla{\True}{!D_1}, \dots,
+\sFmla{\True}{!D_m}\}
+\]
+म्हणून दुसरी शाखासुद्धा पूर्ण करून बंद !!{tableau} मिळवता येतो. यावरून
+$\Gamma \cup \Delta \Proves !B$ हे दिसते.
+\end{proof}
+
+विशेषतः, याचा अर्थ असा की $\Gamma \Proves !A$ आणि $!A
+\Proves !B$ असेल, तर $\Gamma \Proves !B$. तसेच $!A_1,
+\dots, !A_n \Proves !B$ असेल आणि प्रत्येक~$i$ साठी $\Gamma \Proves !A_i$
+असेल, तर $\Gamma \Proves !B$, हेसुद्धा यावरून मिळते.
+
+\begin{prop}
+\ollabel{prop:incons}
+$\Gamma$ विसंगत असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा प्रत्येक
+  !!{sentence}~$!A$ साठी $\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][tab][ptn]{prop:incons} सिद्ध करा.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][tab][ptn]{prop:incons} सिद्ध करा.
+\end{prob}
+\tagendprob
+
+\begin{prop}[संहतता]
+  \ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item $\Gamma \Proves !A$ असेल, तर एखादा सांत उपसंच $\Gamma_0
+    \subseteq \Gamma$ असा आहे की $\Gamma_0 \Proves !A$.
+  \item $\Gamma$ चा प्रत्येक सांत उपसंच सुसंगत असेल, तर $\Gamma$ सुसंगत
+    असतो.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\Gamma \Proves !A$ असेल, तर $\Gamma_0 =
+      \{!B_1, \dots, !B_n\}$ असा त्याचा सांत उपसंच आणि पुढील संचासाठी बंद !!{tableau} असतो:
+      \[
+      \{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+      \]
+      हा !!{tableau} $\Gamma_0 \Proves !A$ हेसुद्धा दाखवतो.
+    \item $\Gamma$ विसंगत असेल, तर
+      $\Gamma_0 = \{!B_1, \dots, !B_n\}$ असा त्याचा एखादा सांत उपसंच असून पुढील
+      संचाचा बंद !!{tableau} असतो:
+      \[
+      \{\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+      \]
+      हा बंद !!{tableau} $\Gamma_0$ विसंगत असल्याचे दाखवतो.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

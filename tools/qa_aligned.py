@@ -97,6 +97,21 @@ _DOCUMENTED_PROJECTIONS = {
         ('$\\lexists[x][\\lnot !A(x)]$ किंवा निष्कर्ष',
          '$\\lexists[x][!A(x)]$ or conclusion'),
     ],
+    'OLP-0104': [
+        ('$1$ आणि~$4$',
+         '$1$ आणि~$3$'),
+    ],
+    'OLP-0105': [
+        ('$\\{!D_1, \\dots, !D_m\\} \\subseteq \\Gamma$',
+         '$!D_1$, \\dots, $!D_m \\subseteq \\Gamma$'),
+    ],
+    'OLP-0106': [
+        ('$\\Gamma_1\n  =\\{!C_1, \\dots, !C_m\\} \\subseteq \\Gamma$',
+         '$\\Gamma_1\n  =\\{!C_1, \\dots, !C_n\\} \\subseteq \\Gamma$'),
+        ('\\sFmla{\\True}{\\lnot !A} ला\n  \\TRule{\\True}{\\lnot} लावून मिळणारा',
+         '\\sFmla{\\False}{!A} ला\n  \\TRule{\\True}{\\lnot} लावून मिळणारा'),
+        ('$n+2$', '$n+1$'),
+    ],
 }
 
 

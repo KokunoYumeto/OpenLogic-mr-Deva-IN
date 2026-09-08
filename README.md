@@ -21,10 +21,10 @@ to identical bytes and every page was
 inspected. Its offline HTML companion passed exact source-conversion, structure,
 asset, proof-display and desktop/mobile browser checks.
 
-The editable working tree now continues through OLP-0103 in the Tableaux chapter:
-100/722 units and 1,061 aligned content segments. OLP-0098–OLP-0103 remain
+The editable working tree now continues through OLP-0106 in the Tableaux chapter:
+103/722 units and 1,103 aligned content segments. OLP-0098–OLP-0106 remain
 intentionally outside the frozen 94-unit v0.7 reader, source checkpoint and
-release archive. Translation resumes at OLP-0104.
+release archive. Translation resumes at OLP-0107.
 
 - **Current release:** [दहा प्रकरणे — PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/ten-chapters-v0.7).
 - **DOI mirror:** [edition concept DOI 10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960), which resolves to the latest version.
@@ -80,8 +80,8 @@ The evidence also preserves the formal retraction of a
 shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The frozen
 94-unit source-checkpoint evidence explicitly distinguishes preserved original
 pages from hash-pinned short web observations whose origin HTML bytes were
-unavailable. The synchronized root provenance now covers 100 translated units and
-1,061 aligned segments through OLP-0103. A bounded independent model audit of
+unavailable. The synchronized root provenance now covers 103 translated units and
+1,103 aligned segments through OLP-0106. A bounded independent model audit of
 OLP-0071–OLP-0072 found no
 material mistranslation, prompted one standing-assumption clarification, and led
 to narrower overlapping choice locators plus separate confidence records for
@@ -138,9 +138,15 @@ quantifier-rule contrast.
 OLP-0102 defines tableaux as finite inductively generated trees and demonstrates
 closure from opposite-signed formulas. OLP-0103 adds three complete propositional
 construction examples, explains checkmarks and branch-wide rule application, and
-preserves 24 exercises.
+preserves 24 exercises. OLP-0104 gives three quantified construction examples,
+preserves 15 successive tableau trees and 9 exercises, and documents the standing
+closed-term restriction and one bad source line reference. OLP-0105 defines
+tableau theoremhood, derivability and consistency and proves reflexivity,
+monotonicity, transitivity and compactness. OLP-0106 proves four further
+derivability/consistency properties through finite closed-tableau transformations
+and Cut, with its bounded source repairs recorded in OLTAB-006–OLTAB-009.
 The records through OLP-0097 are included in the v0.7 reader and release archive;
-OLP-0098–OLP-0103 are post-release working units. OLP-0104 is next.
+OLP-0098–OLP-0106 are post-release working units. OLP-0107 is next.
 
 Canon originals are local research evidence. They are **not redistributed here**.
 Some government-site originals could not be downloaded; the index distinguishes
