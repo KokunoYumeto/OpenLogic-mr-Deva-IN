@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occurrences.
+Coverage: 100/722 source units through OLP-0103; 236 applied decisions; 6,549 occurrences.
 
 ## T001 — set
 
@@ -1627,6 +1627,8 @@ Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occ
 | `T010-OLP-0099-B008` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:29-31` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:29-31` | pending |
 | `T010-OLP-0099-B010` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52` | pending |
 | `T010-OLP-0099-B011` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | pending |
+| `T010-OLP-0102-B007` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:23-40` | `mr/content/first-order-logic/tableaux/derivations.tex:22-38` | pending |
+| `T010-OLP-0102-B008` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:42-46` | `mr/content/first-order-logic/tableaux/derivations.tex:40-43` | pending |
 
 ## T011 — syntax
 
@@ -1945,6 +1947,7 @@ Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occ
 | `T016-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 86–87 |
 | `T016-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 87–88 |
 | `T016-OLP-0070-B008` | `OLP-0070` | 9.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | 89–90 |
+| `T016-OLP-0102-B007` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:23-40` | `mr/content/first-order-logic/tableaux/derivations.tex:22-38` | pending |
 
 ## T017 — union
 
@@ -3712,6 +3715,15 @@ Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occ
 | `T041-OLP-0101-B011` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:49-51` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:48-50` | pending |
 | `T041-OLP-0101-B012` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:53-55` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:52-53` | pending |
 | `T041-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
+| `T041-OLP-0102-B006` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:15-21` | `mr/content/first-order-logic/tableaux/derivations.tex:15-20` | pending |
+| `T041-OLP-0102-B007` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:23-40` | `mr/content/first-order-logic/tableaux/derivations.tex:22-38` | pending |
+| `T041-OLP-0102-B009` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:48-52` | `mr/content/first-order-logic/tableaux/derivations.tex:45-49` | pending |
+| `T041-OLP-0102-B010` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:54-94` | `mr/content/first-order-logic/tableaux/derivations.tex:51-89` | pending |
+| `T041-OLP-0103-B008` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:25-47` | `mr/content/first-order-logic/tableaux/proving-things.tex:24-44` | pending |
+| `T041-OLP-0103-B009` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:49-70` | `mr/content/first-order-logic/tableaux/proving-things.tex:46-67` | pending |
+| `T041-OLP-0103-B011` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:76-171` | `mr/content/first-order-logic/tableaux/proving-things.tex:72-166` | pending |
+| `T041-OLP-0103-B012` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:173-299` | `mr/content/first-order-logic/tableaux/proving-things.tex:168-293` | pending |
+| `T041-OLP-0103-B013` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:301-362` | `mr/content/first-order-logic/tableaux/proving-things.tex:295-356` | pending |
 
 ## T042 — least / well-ordered / predecessor / successor
 
@@ -7779,6 +7791,8 @@ Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occ
 | `T119-OLP-0060-B016` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:126-151` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:122-147` | 78–79 |
 | `T119-OLP-0061-B012` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:146-153` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:148-155` | 79–82 |
 | `T119-OLP-0074-B006` | `OLP-0074` | 9.5 निष्पत्ती | `upstream/content/first-order-logic/sequent-calculus/derivations.tex:15-21` | `mr/content/first-order-logic/sequent-calculus/derivations.tex:15-20` | 92–93 |
+| `T119-OLP-0102-B006` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:15-21` | `mr/content/first-order-logic/tableaux/derivations.tex:15-20` | pending |
+| `T119-OLP-0102-B007` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:23-40` | `mr/content/first-order-logic/tableaux/derivations.tex:22-38` | pending |
 
 ## T120 — Polish notation / parenthesis-free notation
 
@@ -8164,6 +8178,7 @@ Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occ
 | `T126-OLP-0099-B007` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:21-27` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:21-27` | pending |
 | `T126-OLP-0099-B008` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:29-31` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:29-31` | pending |
 | `T126-OLP-0099-B011` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | pending |
+| `T126-OLP-0103-B006` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:15-16` | `mr/content/first-order-logic/tableaux/proving-things.tex:15-16` | pending |
 
 ## T127 — propositional constant
 
@@ -8351,6 +8366,17 @@ Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occ
 | `T128-OLP-0100-B008` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:29-29` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:29-29` | pending |
 | `T128-OLP-0100-B010` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:45-45` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:45-45` | pending |
 | `T128-OLP-0100-B012` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:61-61` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:61-61` | pending |
+| `T128-OLP-0102-B010` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:54-94` | `mr/content/first-order-logic/tableaux/derivations.tex:51-89` | pending |
+| `T128-OLP-0103-B008` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:25-47` | `mr/content/first-order-logic/tableaux/proving-things.tex:24-44` | pending |
+| `T128-OLP-0103-B009` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:49-70` | `mr/content/first-order-logic/tableaux/proving-things.tex:46-67` | pending |
+| `T128-OLP-0103-B010` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:72-74` | `mr/content/first-order-logic/tableaux/proving-things.tex:69-70` | pending |
+| `T128-OLP-0103-B011` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:76-171` | `mr/content/first-order-logic/tableaux/proving-things.tex:72-166` | pending |
+| `T128-OLP-0103-B012` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:173-299` | `mr/content/first-order-logic/tableaux/proving-things.tex:168-293` | pending |
+| `T128-OLP-0103-B013` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:301-362` | `mr/content/first-order-logic/tableaux/proving-things.tex:295-356` | pending |
+| `T128-OLP-0103-B014` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:364-416` | `mr/content/first-order-logic/tableaux/proving-things.tex:358-410` | pending |
+| `T128-OLP-0103-B015` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:418-426` | `mr/content/first-order-logic/tableaux/proving-things.tex:412-420` | pending |
+| `T128-OLP-0103-B016` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:428-444` | `mr/content/first-order-logic/tableaux/proving-things.tex:422-438` | pending |
+| `T128-OLP-0103-B017` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:446-458` | `mr/content/first-order-logic/tableaux/proving-things.tex:440-452` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -8389,6 +8415,8 @@ Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occ
 | `T129-OLP-0059-B007` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39` | 76–78 |
 | `T129-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 87–88 |
 | `T129-OLP-0070-B011` | `OLP-0070` | 9.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75` | 89–90 |
+| `T129-OLP-0103-B008` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:25-47` | `mr/content/first-order-logic/tableaux/proving-things.tex:24-44` | pending |
+| `T129-OLP-0103-B011` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:76-171` | `mr/content/first-order-logic/tableaux/proving-things.tex:72-166` | pending |
 
 ## T130 — abbreviation / abbreviates
 
@@ -8723,6 +8751,8 @@ Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occ
 | `T139-OLP-0087-B013` | `OLP-0087` | 10.3 संख्यापकांचे नियम | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | 110–111 |
 | `T139-OLP-0089-B011` | `OLP-0089` | 10.5 निष्पत्ती: उदाहरणे | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89` | 113–117 |
 | `T139-OLP-0094-B008` | `OLP-0094` | 10.10 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:21-25` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:21-25` | 124–125 |
+| `T139-OLP-0102-B009` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:48-52` | `mr/content/first-order-logic/tableaux/derivations.tex:45-49` | pending |
+| `T139-OLP-0103-B012` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:173-299` | `mr/content/first-order-logic/tableaux/proving-things.tex:168-293` | pending |
 
 ## T140 — inductive hypothesis
 
@@ -9185,6 +9215,13 @@ Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occ
 | `T151-OLP-0101-B005` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:11-11` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:11-11` | pending |
 | `T151-OLP-0101-B008` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:27-33` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:27-32` | pending |
 | `T151-OLP-0101-B011` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:49-51` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:48-50` | pending |
+| `T151-OLP-0102-B006` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:15-21` | `mr/content/first-order-logic/tableaux/derivations.tex:15-20` | pending |
+| `T151-OLP-0102-B007` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:23-40` | `mr/content/first-order-logic/tableaux/derivations.tex:22-38` | pending |
+| `T151-OLP-0102-B009` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:48-52` | `mr/content/first-order-logic/tableaux/derivations.tex:45-49` | pending |
+| `T151-OLP-0102-B010` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:54-94` | `mr/content/first-order-logic/tableaux/derivations.tex:51-89` | pending |
+| `T151-OLP-0103-B008` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:25-47` | `mr/content/first-order-logic/tableaux/proving-things.tex:24-44` | pending |
+| `T151-OLP-0103-B011` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:76-171` | `mr/content/first-order-logic/tableaux/proving-things.tex:72-166` | pending |
+| `T151-OLP-0103-B012` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:173-299` | `mr/content/first-order-logic/tableaux/proving-things.tex:168-293` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -9738,6 +9775,13 @@ Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occ
 | `T159-OLP-0097-B008` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | 129–130 |
 | `T159-OLP-0099-B009` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42` | pending |
 | `T159-OLP-0099-B010` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52` | pending |
+| `T159-OLP-0102-B006` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:15-21` | `mr/content/first-order-logic/tableaux/derivations.tex:15-20` | pending |
+| `T159-OLP-0102-B007` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:23-40` | `mr/content/first-order-logic/tableaux/derivations.tex:22-38` | pending |
+| `T159-OLP-0102-B008` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:42-46` | `mr/content/first-order-logic/tableaux/derivations.tex:40-43` | pending |
+| `T159-OLP-0102-B010` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:54-94` | `mr/content/first-order-logic/tableaux/derivations.tex:51-89` | pending |
+| `T159-OLP-0103-B007` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:18-23` | `mr/content/first-order-logic/tableaux/proving-things.tex:18-22` | pending |
+| `T159-OLP-0103-B012` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:173-299` | `mr/content/first-order-logic/tableaux/proving-things.tex:168-293` | pending |
+| `T159-OLP-0103-B014` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:364-416` | `mr/content/first-order-logic/tableaux/proving-things.tex:358-410` | pending |
 
 ## T160 — introduction rule / elimination rule
 
@@ -9989,6 +10033,24 @@ Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occ
 | `T164-OLP-0099-B011` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | pending |
 | `T164-OLP-0100-B016` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | pending |
 | `T164-OLP-0101-B014` | `OLP-0101` |  | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105` | pending |
+| `T164-OLP-0102-B006` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:15-21` | `mr/content/first-order-logic/tableaux/derivations.tex:15-20` | pending |
+| `T164-OLP-0102-B007` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:23-40` | `mr/content/first-order-logic/tableaux/derivations.tex:22-38` | pending |
+| `T164-OLP-0102-B008` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:42-46` | `mr/content/first-order-logic/tableaux/derivations.tex:40-43` | pending |
+| `T164-OLP-0102-B009` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:48-52` | `mr/content/first-order-logic/tableaux/derivations.tex:45-49` | pending |
+| `T164-OLP-0102-B010` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:54-94` | `mr/content/first-order-logic/tableaux/derivations.tex:51-89` | pending |
+| `T164-OLP-0103-B005` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:13-13` | `mr/content/first-order-logic/tableaux/proving-things.tex:13-13` | pending |
+| `T164-OLP-0103-B006` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:15-16` | `mr/content/first-order-logic/tableaux/proving-things.tex:15-16` | pending |
+| `T164-OLP-0103-B007` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:18-23` | `mr/content/first-order-logic/tableaux/proving-things.tex:18-22` | pending |
+| `T164-OLP-0103-B008` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:25-47` | `mr/content/first-order-logic/tableaux/proving-things.tex:24-44` | pending |
+| `T164-OLP-0103-B009` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:49-70` | `mr/content/first-order-logic/tableaux/proving-things.tex:46-67` | pending |
+| `T164-OLP-0103-B010` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:72-74` | `mr/content/first-order-logic/tableaux/proving-things.tex:69-70` | pending |
+| `T164-OLP-0103-B011` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:76-171` | `mr/content/first-order-logic/tableaux/proving-things.tex:72-166` | pending |
+| `T164-OLP-0103-B012` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:173-299` | `mr/content/first-order-logic/tableaux/proving-things.tex:168-293` | pending |
+| `T164-OLP-0103-B013` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:301-362` | `mr/content/first-order-logic/tableaux/proving-things.tex:295-356` | pending |
+| `T164-OLP-0103-B014` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:364-416` | `mr/content/first-order-logic/tableaux/proving-things.tex:358-410` | pending |
+| `T164-OLP-0103-B015` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:418-426` | `mr/content/first-order-logic/tableaux/proving-things.tex:412-420` | pending |
+| `T164-OLP-0103-B016` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:428-444` | `mr/content/first-order-logic/tableaux/proving-things.tex:422-438` | pending |
+| `T164-OLP-0103-B017` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:446-458` | `mr/content/first-order-logic/tableaux/proving-things.tex:440-452` | pending |
 
 ## T165 — signed formula / truth-value sign / immediate subformula
 
@@ -10027,6 +10089,18 @@ Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occ
 | `T165-OLP-0099-B010` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52` | pending |
 | `T165-OLP-0099-B011` | `OLP-0099` |  | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57` | pending |
 | `T165-OLP-0100-B016` | `OLP-0100` |  | `upstream/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | `mr/content/first-order-logic/tableaux/propositional-rules.tex:86-91` | pending |
+| `T165-OLP-0102-B007` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:23-40` | `mr/content/first-order-logic/tableaux/derivations.tex:22-38` | pending |
+| `T165-OLP-0102-B008` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:42-46` | `mr/content/first-order-logic/tableaux/derivations.tex:40-43` | pending |
+| `T165-OLP-0102-B009` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:48-52` | `mr/content/first-order-logic/tableaux/derivations.tex:45-49` | pending |
+| `T165-OLP-0102-B010` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:54-94` | `mr/content/first-order-logic/tableaux/derivations.tex:51-89` | pending |
+| `T165-OLP-0103-B008` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:25-47` | `mr/content/first-order-logic/tableaux/proving-things.tex:24-44` | pending |
+| `T165-OLP-0103-B009` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:49-70` | `mr/content/first-order-logic/tableaux/proving-things.tex:46-67` | pending |
+| `T165-OLP-0103-B011` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:76-171` | `mr/content/first-order-logic/tableaux/proving-things.tex:72-166` | pending |
+| `T165-OLP-0103-B012` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:173-299` | `mr/content/first-order-logic/tableaux/proving-things.tex:168-293` | pending |
+| `T165-OLP-0103-B013` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:301-362` | `mr/content/first-order-logic/tableaux/proving-things.tex:295-356` | pending |
+| `T165-OLP-0103-B015` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:418-426` | `mr/content/first-order-logic/tableaux/proving-things.tex:412-420` | pending |
+| `T165-OLP-0103-B016` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:428-444` | `mr/content/first-order-logic/tableaux/proving-things.tex:422-438` | pending |
+| `T165-OLP-0103-B017` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:446-458` | `mr/content/first-order-logic/tableaux/proving-things.tex:440-452` | pending |
 
 ## T166 — Evert Beth / Jaakko Hintikka / Raymond Smullyan
 
@@ -10113,6 +10187,9 @@ Coverage: 98/722 source units through OLP-0101; 236 applied decisions; 6,472 occ
 | `T168-OLP-0068-B007` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44` | 87–88 |
 | `T168-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 87–88 |
 | `T168-OLP-0090-B007` | `OLP-0090` | 10.6 संख्यापकांसह निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:20-86` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:19-82` | 117–120 |
+| `T168-OLP-0102-B010` | `OLP-0102` |  | `upstream/content/first-order-logic/tableaux/derivations.tex:54-94` | `mr/content/first-order-logic/tableaux/derivations.tex:51-89` | pending |
+| `T168-OLP-0103-B011` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:76-171` | `mr/content/first-order-logic/tableaux/proving-things.tex:72-166` | pending |
+| `T168-OLP-0103-B012` | `OLP-0103` |  | `upstream/content/first-order-logic/tableaux/proving-things.tex:173-299` | `mr/content/first-order-logic/tableaux/proving-things.tex:168-293` | pending |
 
 ## T169 — modus ponens
 

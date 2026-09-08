@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **98/722 source units**, 1043 aligned translated blocks, 6472 review occurrences. The referenced development reader has 133 pages and SHA-256 78901ead14277d7b4b2b4f28e429ba95764b748b9bac781a3a820adfba1ca616; it is not a final accessible release.
+Current scope: **100/722 source units**, 1061 aligned translated blocks, 6549 review occurrences. The referenced development reader has 133 pages and SHA-256 78901ead14277d7b4b2b4f28e429ba95764b748b9bac781a3a820adfba1ca616; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -1440,7 +1440,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T010 — truth / truth value</strong> (73 occurrences; routine priority)</summary>
+<summary><strong>T010 — truth / truth value</strong> (75 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1517,6 +1517,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T010-OLP-0099-B008 | OLP-0099 ·  | [upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:29-31](../upstream/content/first-order-logic/tableaux/rules-and-proofs.tex#L29) | [mr/content/first-order-logic/tableaux/rules-and-proofs.tex:29-31](../mr/content/first-order-logic/tableaux/rules-and-proofs.tex#L29) | not yet paginated |
 | T010-OLP-0099-B010 | OLP-0099 ·  | [upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52](../upstream/content/first-order-logic/tableaux/rules-and-proofs.tex#L44) | [mr/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52](../mr/content/first-order-logic/tableaux/rules-and-proofs.tex#L44) | not yet paginated |
 | T010-OLP-0099-B011 | OLP-0099 ·  | [upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57](../upstream/content/first-order-logic/tableaux/rules-and-proofs.tex#L54) | [mr/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57](../mr/content/first-order-logic/tableaux/rules-and-proofs.tex#L54) | not yet paginated |
+| T010-OLP-0102-B007 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:23-40](../upstream/content/first-order-logic/tableaux/derivations.tex#L23) | [mr/content/first-order-logic/tableaux/derivations.tex:22-38](../mr/content/first-order-logic/tableaux/derivations.tex#L22) | not yet paginated |
+| T010-OLP-0102-B008 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:42-46](../upstream/content/first-order-logic/tableaux/derivations.tex#L42) | [mr/content/first-order-logic/tableaux/derivations.tex:40-43](../mr/content/first-order-logic/tableaux/derivations.tex#L40) | not yet paginated |
 
 **Chosen rendering/action:** सत्यता / सत्यतामूल्य
 
@@ -1703,7 +1705,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T016 — if and only if</strong> (74 occurrences; medium priority)</summary>
+<summary><strong>T016 — if and only if</strong> (75 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1781,6 +1783,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T016-OLP-0067-B008 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L44) | [mr/content/first-order-logic/proof-systems/tableaux.tex:42-61](../mr/content/first-order-logic/proof-systems/tableaux.tex#L42) | 86–87 |
 | T016-OLP-0068-B008 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | 87–88 |
 | T016-OLP-0070-B008 | OLP-0070 · 9.1 नियम आणि निष्पत्ती | [upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44](../upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L28) | [mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46](../mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L28) | 89–90 |
+| T016-OLP-0102-B007 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:23-40](../upstream/content/first-order-logic/tableaux/derivations.tex#L23) | [mr/content/first-order-logic/tableaux/derivations.tex:22-38](../mr/content/first-order-logic/tableaux/derivations.tex#L22) | not yet paginated |
 
 **Chosen rendering/action:** तेव्हा आणि केवळ तेव्हाच
 
@@ -3230,7 +3233,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T041 — tree / root / branch / chain</strong> (47 occurrences; high priority)</summary>
+<summary><strong>T041 — tree / root / branch / chain</strong> (56 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3281,6 +3284,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T041-OLP-0101-B011 | OLP-0101 ·  | [upstream/content/first-order-logic/tableaux/quantifier-rules.tex:49-51](../upstream/content/first-order-logic/tableaux/quantifier-rules.tex#L49) | [mr/content/first-order-logic/tableaux/quantifier-rules.tex:48-50](../mr/content/first-order-logic/tableaux/quantifier-rules.tex#L48) | not yet paginated |
 | T041-OLP-0101-B012 | OLP-0101 ·  | [upstream/content/first-order-logic/tableaux/quantifier-rules.tex:53-55](../upstream/content/first-order-logic/tableaux/quantifier-rules.tex#L53) | [mr/content/first-order-logic/tableaux/quantifier-rules.tex:52-53](../mr/content/first-order-logic/tableaux/quantifier-rules.tex#L52) | not yet paginated |
 | T041-OLP-0101-B014 | OLP-0101 ·  | [upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107](../upstream/content/first-order-logic/tableaux/quantifier-rules.tex#L79) | [mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105](../mr/content/first-order-logic/tableaux/quantifier-rules.tex#L77) | not yet paginated |
+| T041-OLP-0102-B006 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:15-21](../upstream/content/first-order-logic/tableaux/derivations.tex#L15) | [mr/content/first-order-logic/tableaux/derivations.tex:15-20](../mr/content/first-order-logic/tableaux/derivations.tex#L15) | not yet paginated |
+| T041-OLP-0102-B007 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:23-40](../upstream/content/first-order-logic/tableaux/derivations.tex#L23) | [mr/content/first-order-logic/tableaux/derivations.tex:22-38](../mr/content/first-order-logic/tableaux/derivations.tex#L22) | not yet paginated |
+| T041-OLP-0102-B009 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:48-52](../upstream/content/first-order-logic/tableaux/derivations.tex#L48) | [mr/content/first-order-logic/tableaux/derivations.tex:45-49](../mr/content/first-order-logic/tableaux/derivations.tex#L45) | not yet paginated |
+| T041-OLP-0102-B010 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:54-94](../upstream/content/first-order-logic/tableaux/derivations.tex#L54) | [mr/content/first-order-logic/tableaux/derivations.tex:51-89](../mr/content/first-order-logic/tableaux/derivations.tex#L51) | not yet paginated |
+| T041-OLP-0103-B008 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:25-47](../upstream/content/first-order-logic/tableaux/proving-things.tex#L25) | [mr/content/first-order-logic/tableaux/proving-things.tex:24-44](../mr/content/first-order-logic/tableaux/proving-things.tex#L24) | not yet paginated |
+| T041-OLP-0103-B009 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:49-70](../upstream/content/first-order-logic/tableaux/proving-things.tex#L49) | [mr/content/first-order-logic/tableaux/proving-things.tex:46-67](../mr/content/first-order-logic/tableaux/proving-things.tex#L46) | not yet paginated |
+| T041-OLP-0103-B011 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:76-171](../upstream/content/first-order-logic/tableaux/proving-things.tex#L76) | [mr/content/first-order-logic/tableaux/proving-things.tex:72-166](../mr/content/first-order-logic/tableaux/proving-things.tex#L72) | not yet paginated |
+| T041-OLP-0103-B012 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:173-299](../upstream/content/first-order-logic/tableaux/proving-things.tex#L173) | [mr/content/first-order-logic/tableaux/proving-things.tex:168-293](../mr/content/first-order-logic/tableaux/proving-things.tex#L168) | not yet paginated |
+| T041-OLP-0103-B013 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:301-362](../upstream/content/first-order-logic/tableaux/proving-things.tex#L301) | [mr/content/first-order-logic/tableaux/proving-things.tex:295-356](../mr/content/first-order-logic/tableaux/proving-things.tex#L295) | not yet paginated |
 
 **Chosen rendering/action:** वृक्ष / मूळ / शाखा / शृंखला
 
@@ -6476,7 +6488,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T119 — formation rule / inductive definition / uniquely readable</strong> (20 occurrences; medium priority)</summary>
+<summary><strong>T119 — formation rule / inductive definition / uniquely readable</strong> (22 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6500,6 +6512,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T119-OLP-0060-B016 | OLP-0060 · 7.4 रचनाक्रमिका | [upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:126-151](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex#L126) | [mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:122-147](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex#L122) | 78–79 |
 | T119-OLP-0061-B012 | OLP-0061 · 7.5 सत्य-मूल्यांकन आणि पूर्ति | [upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:146-153](../upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex#L146) | [mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:148-155](../mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex#L148) | 79–82 |
 | T119-OLP-0074-B006 | OLP-0074 · 9.5 निष्पत्ती | [upstream/content/first-order-logic/sequent-calculus/derivations.tex:15-21](../upstream/content/first-order-logic/sequent-calculus/derivations.tex#L15) | [mr/content/first-order-logic/sequent-calculus/derivations.tex:15-20](../mr/content/first-order-logic/sequent-calculus/derivations.tex#L15) | 92–93 |
+| T119-OLP-0102-B006 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:15-21](../upstream/content/first-order-logic/tableaux/derivations.tex#L15) | [mr/content/first-order-logic/tableaux/derivations.tex:15-20](../mr/content/first-order-logic/tableaux/derivations.tex#L15) | not yet paginated |
+| T119-OLP-0102-B007 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:23-40](../upstream/content/first-order-logic/tableaux/derivations.tex#L23) | [mr/content/first-order-logic/tableaux/derivations.tex:22-38](../mr/content/first-order-logic/tableaux/derivations.tex#L22) | not yet paginated |
 
 **Chosen rendering/action:** रचनानियम / विगमनाधारित व्याख्या / एकमेव रीतीने वाचनीय
 
@@ -6747,7 +6761,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T126 — sentence / proposition / statement</strong> (52 occurrences; routine priority)</summary>
+<summary><strong>T126 — sentence / proposition / statement</strong> (53 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6803,6 +6817,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T126-OLP-0099-B007 | OLP-0099 ·  | [upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:21-27](../upstream/content/first-order-logic/tableaux/rules-and-proofs.tex#L21) | [mr/content/first-order-logic/tableaux/rules-and-proofs.tex:21-27](../mr/content/first-order-logic/tableaux/rules-and-proofs.tex#L21) | not yet paginated |
 | T126-OLP-0099-B008 | OLP-0099 ·  | [upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:29-31](../upstream/content/first-order-logic/tableaux/rules-and-proofs.tex#L29) | [mr/content/first-order-logic/tableaux/rules-and-proofs.tex:29-31](../mr/content/first-order-logic/tableaux/rules-and-proofs.tex#L29) | not yet paginated |
 | T126-OLP-0099-B011 | OLP-0099 ·  | [upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57](../upstream/content/first-order-logic/tableaux/rules-and-proofs.tex#L54) | [mr/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57](../mr/content/first-order-logic/tableaux/rules-and-proofs.tex#L54) | not yet paginated |
+| T126-OLP-0103-B006 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:15-16](../upstream/content/first-order-logic/tableaux/proving-things.tex#L15) | [mr/content/first-order-logic/tableaux/proving-things.tex:15-16](../mr/content/first-order-logic/tableaux/proving-things.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** वाक्य / विधान
 
@@ -6852,7 +6867,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (108 occurrences; medium priority)</summary>
+<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (119 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6964,6 +6979,17 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T128-OLP-0100-B008 | OLP-0100 ·  | [upstream/content/first-order-logic/tableaux/propositional-rules.tex:29-29](../upstream/content/first-order-logic/tableaux/propositional-rules.tex#L29) | [mr/content/first-order-logic/tableaux/propositional-rules.tex:29-29](../mr/content/first-order-logic/tableaux/propositional-rules.tex#L29) | not yet paginated |
 | T128-OLP-0100-B010 | OLP-0100 ·  | [upstream/content/first-order-logic/tableaux/propositional-rules.tex:45-45](../upstream/content/first-order-logic/tableaux/propositional-rules.tex#L45) | [mr/content/first-order-logic/tableaux/propositional-rules.tex:45-45](../mr/content/first-order-logic/tableaux/propositional-rules.tex#L45) | not yet paginated |
 | T128-OLP-0100-B012 | OLP-0100 ·  | [upstream/content/first-order-logic/tableaux/propositional-rules.tex:61-61](../upstream/content/first-order-logic/tableaux/propositional-rules.tex#L61) | [mr/content/first-order-logic/tableaux/propositional-rules.tex:61-61](../mr/content/first-order-logic/tableaux/propositional-rules.tex#L61) | not yet paginated |
+| T128-OLP-0102-B010 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:54-94](../upstream/content/first-order-logic/tableaux/derivations.tex#L54) | [mr/content/first-order-logic/tableaux/derivations.tex:51-89](../mr/content/first-order-logic/tableaux/derivations.tex#L51) | not yet paginated |
+| T128-OLP-0103-B008 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:25-47](../upstream/content/first-order-logic/tableaux/proving-things.tex#L25) | [mr/content/first-order-logic/tableaux/proving-things.tex:24-44](../mr/content/first-order-logic/tableaux/proving-things.tex#L24) | not yet paginated |
+| T128-OLP-0103-B009 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:49-70](../upstream/content/first-order-logic/tableaux/proving-things.tex#L49) | [mr/content/first-order-logic/tableaux/proving-things.tex:46-67](../mr/content/first-order-logic/tableaux/proving-things.tex#L46) | not yet paginated |
+| T128-OLP-0103-B010 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:72-74](../upstream/content/first-order-logic/tableaux/proving-things.tex#L72) | [mr/content/first-order-logic/tableaux/proving-things.tex:69-70](../mr/content/first-order-logic/tableaux/proving-things.tex#L69) | not yet paginated |
+| T128-OLP-0103-B011 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:76-171](../upstream/content/first-order-logic/tableaux/proving-things.tex#L76) | [mr/content/first-order-logic/tableaux/proving-things.tex:72-166](../mr/content/first-order-logic/tableaux/proving-things.tex#L72) | not yet paginated |
+| T128-OLP-0103-B012 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:173-299](../upstream/content/first-order-logic/tableaux/proving-things.tex#L173) | [mr/content/first-order-logic/tableaux/proving-things.tex:168-293](../mr/content/first-order-logic/tableaux/proving-things.tex#L168) | not yet paginated |
+| T128-OLP-0103-B013 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:301-362](../upstream/content/first-order-logic/tableaux/proving-things.tex#L301) | [mr/content/first-order-logic/tableaux/proving-things.tex:295-356](../mr/content/first-order-logic/tableaux/proving-things.tex#L295) | not yet paginated |
+| T128-OLP-0103-B014 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:364-416](../upstream/content/first-order-logic/tableaux/proving-things.tex#L364) | [mr/content/first-order-logic/tableaux/proving-things.tex:358-410](../mr/content/first-order-logic/tableaux/proving-things.tex#L358) | not yet paginated |
+| T128-OLP-0103-B015 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:418-426](../upstream/content/first-order-logic/tableaux/proving-things.tex#L418) | [mr/content/first-order-logic/tableaux/proving-things.tex:412-420](../mr/content/first-order-logic/tableaux/proving-things.tex#L412) | not yet paginated |
+| T128-OLP-0103-B016 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:428-444](../upstream/content/first-order-logic/tableaux/proving-things.tex#L428) | [mr/content/first-order-logic/tableaux/proving-things.tex:422-438](../mr/content/first-order-logic/tableaux/proving-things.tex#L422) | not yet paginated |
+| T128-OLP-0103-B017 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:446-458](../upstream/content/first-order-logic/tableaux/proving-things.tex#L446) | [mr/content/first-order-logic/tableaux/proving-things.tex:440-452](../mr/content/first-order-logic/tableaux/proving-things.tex#L440) | not yet paginated |
 
 **Chosen rendering/action:** नकरण / संधियोग / विकल्पयोग / सशर्त (संकेतार्थक) / द्विसशर्त
 
@@ -6974,7 +7000,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T129 — primitive symbol / defined symbol / defined operator</strong> (13 occurrences; routine priority)</summary>
+<summary><strong>T129 — primitive symbol / defined symbol / defined operator</strong> (15 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6991,6 +7017,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T129-OLP-0059-B007 | OLP-0059 · 7.3 पूर्वतयारी | [upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L32) | [mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L32) | 76–78 |
 | T129-OLP-0068-B006 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | 87–88 |
 | T129-OLP-0070-B011 | OLP-0070 · 9.1 नियम आणि निष्पत्ती | [upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72](../upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L63) | [mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:65-75](../mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L65) | 89–90 |
+| T129-OLP-0103-B008 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:25-47](../upstream/content/first-order-logic/tableaux/proving-things.tex#L25) | [mr/content/first-order-logic/tableaux/proving-things.tex:24-44](../mr/content/first-order-logic/tableaux/proving-things.tex#L24) | not yet paginated |
+| T129-OLP-0103-B011 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:76-171](../upstream/content/first-order-logic/tableaux/proving-things.tex#L76) | [mr/content/first-order-logic/tableaux/proving-things.tex:72-166](../mr/content/first-order-logic/tableaux/proving-things.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** आदिम चिन्ह / परिभाषित चिन्ह / परिभाषित कारक
 
@@ -7201,7 +7229,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T139 — occurrence (of a variable or formula)</strong> (6 occurrences; medium priority)</summary>
+<summary><strong>T139 — occurrence (of a variable or formula)</strong> (8 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7211,6 +7239,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T139-OLP-0087-B013 | OLP-0087 · 10.3 संख्यापकांचे नियम | [upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83](../upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex#L63) | [mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82](../mr/content/first-order-logic/natural-deduction/quantifier-rules.tex#L62) | 110–111 |
 | T139-OLP-0089-B011 | OLP-0089 · 10.5 निष्पत्ती: उदाहरणे | [upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96](../upstream/content/first-order-logic/natural-deduction/proving-things.tex#L57) | [mr/content/first-order-logic/natural-deduction/proving-things.tex:53-89](../mr/content/first-order-logic/natural-deduction/proving-things.tex#L53) | 113–117 |
 | T139-OLP-0094-B008 | OLP-0094 · 10.10 निष्पन्नता आणि संख्यापक | [upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:21-25](../upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex#L21) | [mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:21-25](../mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex#L21) | 124–125 |
+| T139-OLP-0102-B009 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:48-52](../upstream/content/first-order-logic/tableaux/derivations.tex#L48) | [mr/content/first-order-logic/tableaux/derivations.tex:45-49](../mr/content/first-order-logic/tableaux/derivations.tex#L45) | not yet paginated |
+| T139-OLP-0103-B012 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:173-299](../upstream/content/first-order-logic/tableaux/proving-things.tex#L173) | [mr/content/first-order-logic/tableaux/proving-things.tex:168-293](../mr/content/first-order-logic/tableaux/proving-things.tex#L168) | not yet paginated |
 
 **Chosen rendering/action:** आस्थिति
 
@@ -7437,7 +7467,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T151 — axiomatic system / inference rule</strong> (87 occurrences; routine priority)</summary>
+<summary><strong>T151 — axiomatic system / inference rule</strong> (94 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7528,6 +7558,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T151-OLP-0101-B005 | OLP-0101 ·  | [upstream/content/first-order-logic/tableaux/quantifier-rules.tex:11-11](../upstream/content/first-order-logic/tableaux/quantifier-rules.tex#L11) | [mr/content/first-order-logic/tableaux/quantifier-rules.tex:11-11](../mr/content/first-order-logic/tableaux/quantifier-rules.tex#L11) | not yet paginated |
 | T151-OLP-0101-B008 | OLP-0101 ·  | [upstream/content/first-order-logic/tableaux/quantifier-rules.tex:27-33](../upstream/content/first-order-logic/tableaux/quantifier-rules.tex#L27) | [mr/content/first-order-logic/tableaux/quantifier-rules.tex:27-32](../mr/content/first-order-logic/tableaux/quantifier-rules.tex#L27) | not yet paginated |
 | T151-OLP-0101-B011 | OLP-0101 ·  | [upstream/content/first-order-logic/tableaux/quantifier-rules.tex:49-51](../upstream/content/first-order-logic/tableaux/quantifier-rules.tex#L49) | [mr/content/first-order-logic/tableaux/quantifier-rules.tex:48-50](../mr/content/first-order-logic/tableaux/quantifier-rules.tex#L48) | not yet paginated |
+| T151-OLP-0102-B006 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:15-21](../upstream/content/first-order-logic/tableaux/derivations.tex#L15) | [mr/content/first-order-logic/tableaux/derivations.tex:15-20](../mr/content/first-order-logic/tableaux/derivations.tex#L15) | not yet paginated |
+| T151-OLP-0102-B007 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:23-40](../upstream/content/first-order-logic/tableaux/derivations.tex#L23) | [mr/content/first-order-logic/tableaux/derivations.tex:22-38](../mr/content/first-order-logic/tableaux/derivations.tex#L22) | not yet paginated |
+| T151-OLP-0102-B009 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:48-52](../upstream/content/first-order-logic/tableaux/derivations.tex#L48) | [mr/content/first-order-logic/tableaux/derivations.tex:45-49](../mr/content/first-order-logic/tableaux/derivations.tex#L45) | not yet paginated |
+| T151-OLP-0102-B010 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:54-94](../upstream/content/first-order-logic/tableaux/derivations.tex#L54) | [mr/content/first-order-logic/tableaux/derivations.tex:51-89](../mr/content/first-order-logic/tableaux/derivations.tex#L51) | not yet paginated |
+| T151-OLP-0103-B008 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:25-47](../upstream/content/first-order-logic/tableaux/proving-things.tex#L25) | [mr/content/first-order-logic/tableaux/proving-things.tex:24-44](../mr/content/first-order-logic/tableaux/proving-things.tex#L24) | not yet paginated |
+| T151-OLP-0103-B011 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:76-171](../upstream/content/first-order-logic/tableaux/proving-things.tex#L76) | [mr/content/first-order-logic/tableaux/proving-things.tex:72-166](../mr/content/first-order-logic/tableaux/proving-things.tex#L72) | not yet paginated |
+| T151-OLP-0103-B012 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:173-299](../upstream/content/first-order-logic/tableaux/proving-things.tex#L173) | [mr/content/first-order-logic/tableaux/proving-things.tex:168-293](../mr/content/first-order-logic/tableaux/proving-things.tex#L168) | not yet paginated |
 
 **Chosen rendering/action:** स्वयंसिद्धकीय पद्धत / निगमन नियम
 
@@ -7914,7 +7951,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T159 — assumption / discharge / discharged / undischarged</strong> (65 occurrences; medium priority)</summary>
+<summary><strong>T159 — assumption / discharge / discharged / undischarged</strong> (72 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7983,6 +8020,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T159-OLP-0097-B008 | OLP-0097 · 10.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45](../upstream/content/first-order-logic/natural-deduction/soundness-identity.tex#L23) | [mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48](../mr/content/first-order-logic/natural-deduction/soundness-identity.tex#L23) | 129–130 |
 | T159-OLP-0099-B009 | OLP-0099 ·  | [upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42](../upstream/content/first-order-logic/tableaux/rules-and-proofs.tex#L33) | [mr/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42](../mr/content/first-order-logic/tableaux/rules-and-proofs.tex#L33) | not yet paginated |
 | T159-OLP-0099-B010 | OLP-0099 ·  | [upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52](../upstream/content/first-order-logic/tableaux/rules-and-proofs.tex#L44) | [mr/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52](../mr/content/first-order-logic/tableaux/rules-and-proofs.tex#L44) | not yet paginated |
+| T159-OLP-0102-B006 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:15-21](../upstream/content/first-order-logic/tableaux/derivations.tex#L15) | [mr/content/first-order-logic/tableaux/derivations.tex:15-20](../mr/content/first-order-logic/tableaux/derivations.tex#L15) | not yet paginated |
+| T159-OLP-0102-B007 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:23-40](../upstream/content/first-order-logic/tableaux/derivations.tex#L23) | [mr/content/first-order-logic/tableaux/derivations.tex:22-38](../mr/content/first-order-logic/tableaux/derivations.tex#L22) | not yet paginated |
+| T159-OLP-0102-B008 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:42-46](../upstream/content/first-order-logic/tableaux/derivations.tex#L42) | [mr/content/first-order-logic/tableaux/derivations.tex:40-43](../mr/content/first-order-logic/tableaux/derivations.tex#L40) | not yet paginated |
+| T159-OLP-0102-B010 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:54-94](../upstream/content/first-order-logic/tableaux/derivations.tex#L54) | [mr/content/first-order-logic/tableaux/derivations.tex:51-89](../mr/content/first-order-logic/tableaux/derivations.tex#L51) | not yet paginated |
+| T159-OLP-0103-B007 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:18-23](../upstream/content/first-order-logic/tableaux/proving-things.tex#L18) | [mr/content/first-order-logic/tableaux/proving-things.tex:18-22](../mr/content/first-order-logic/tableaux/proving-things.tex#L18) | not yet paginated |
+| T159-OLP-0103-B012 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:173-299](../upstream/content/first-order-logic/tableaux/proving-things.tex#L173) | [mr/content/first-order-logic/tableaux/proving-things.tex:168-293](../mr/content/first-order-logic/tableaux/proving-things.tex#L168) | not yet paginated |
+| T159-OLP-0103-B014 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:364-416](../upstream/content/first-order-logic/tableaux/proving-things.tex#L364) | [mr/content/first-order-logic/tableaux/proving-things.tex:358-410](../mr/content/first-order-logic/tableaux/proving-things.tex#L358) | not yet paginated |
 
 **Chosen rendering/action:** गृहीतक / मुक्त करणे / मुक्त केलेले / मुक्त न केलेले
 
@@ -8155,7 +8199,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T164 — tableau / tableau calculus / closed tableau / open branch</strong> (15 occurrences; medium priority)</summary>
+<summary><strong>T164 — tableau / tableau calculus / closed tableau / open branch</strong> (33 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8174,6 +8218,24 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T164-OLP-0099-B011 | OLP-0099 ·  | [upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57](../upstream/content/first-order-logic/tableaux/rules-and-proofs.tex#L54) | [mr/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57](../mr/content/first-order-logic/tableaux/rules-and-proofs.tex#L54) | not yet paginated |
 | T164-OLP-0100-B016 | OLP-0100 ·  | [upstream/content/first-order-logic/tableaux/propositional-rules.tex:86-91](../upstream/content/first-order-logic/tableaux/propositional-rules.tex#L86) | [mr/content/first-order-logic/tableaux/propositional-rules.tex:86-91](../mr/content/first-order-logic/tableaux/propositional-rules.tex#L86) | not yet paginated |
 | T164-OLP-0101-B014 | OLP-0101 ·  | [upstream/content/first-order-logic/tableaux/quantifier-rules.tex:79-107](../upstream/content/first-order-logic/tableaux/quantifier-rules.tex#L79) | [mr/content/first-order-logic/tableaux/quantifier-rules.tex:77-105](../mr/content/first-order-logic/tableaux/quantifier-rules.tex#L77) | not yet paginated |
+| T164-OLP-0102-B006 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:15-21](../upstream/content/first-order-logic/tableaux/derivations.tex#L15) | [mr/content/first-order-logic/tableaux/derivations.tex:15-20](../mr/content/first-order-logic/tableaux/derivations.tex#L15) | not yet paginated |
+| T164-OLP-0102-B007 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:23-40](../upstream/content/first-order-logic/tableaux/derivations.tex#L23) | [mr/content/first-order-logic/tableaux/derivations.tex:22-38](../mr/content/first-order-logic/tableaux/derivations.tex#L22) | not yet paginated |
+| T164-OLP-0102-B008 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:42-46](../upstream/content/first-order-logic/tableaux/derivations.tex#L42) | [mr/content/first-order-logic/tableaux/derivations.tex:40-43](../mr/content/first-order-logic/tableaux/derivations.tex#L40) | not yet paginated |
+| T164-OLP-0102-B009 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:48-52](../upstream/content/first-order-logic/tableaux/derivations.tex#L48) | [mr/content/first-order-logic/tableaux/derivations.tex:45-49](../mr/content/first-order-logic/tableaux/derivations.tex#L45) | not yet paginated |
+| T164-OLP-0102-B010 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:54-94](../upstream/content/first-order-logic/tableaux/derivations.tex#L54) | [mr/content/first-order-logic/tableaux/derivations.tex:51-89](../mr/content/first-order-logic/tableaux/derivations.tex#L51) | not yet paginated |
+| T164-OLP-0103-B005 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:13-13](../upstream/content/first-order-logic/tableaux/proving-things.tex#L13) | [mr/content/first-order-logic/tableaux/proving-things.tex:13-13](../mr/content/first-order-logic/tableaux/proving-things.tex#L13) | not yet paginated |
+| T164-OLP-0103-B006 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:15-16](../upstream/content/first-order-logic/tableaux/proving-things.tex#L15) | [mr/content/first-order-logic/tableaux/proving-things.tex:15-16](../mr/content/first-order-logic/tableaux/proving-things.tex#L15) | not yet paginated |
+| T164-OLP-0103-B007 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:18-23](../upstream/content/first-order-logic/tableaux/proving-things.tex#L18) | [mr/content/first-order-logic/tableaux/proving-things.tex:18-22](../mr/content/first-order-logic/tableaux/proving-things.tex#L18) | not yet paginated |
+| T164-OLP-0103-B008 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:25-47](../upstream/content/first-order-logic/tableaux/proving-things.tex#L25) | [mr/content/first-order-logic/tableaux/proving-things.tex:24-44](../mr/content/first-order-logic/tableaux/proving-things.tex#L24) | not yet paginated |
+| T164-OLP-0103-B009 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:49-70](../upstream/content/first-order-logic/tableaux/proving-things.tex#L49) | [mr/content/first-order-logic/tableaux/proving-things.tex:46-67](../mr/content/first-order-logic/tableaux/proving-things.tex#L46) | not yet paginated |
+| T164-OLP-0103-B010 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:72-74](../upstream/content/first-order-logic/tableaux/proving-things.tex#L72) | [mr/content/first-order-logic/tableaux/proving-things.tex:69-70](../mr/content/first-order-logic/tableaux/proving-things.tex#L69) | not yet paginated |
+| T164-OLP-0103-B011 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:76-171](../upstream/content/first-order-logic/tableaux/proving-things.tex#L76) | [mr/content/first-order-logic/tableaux/proving-things.tex:72-166](../mr/content/first-order-logic/tableaux/proving-things.tex#L72) | not yet paginated |
+| T164-OLP-0103-B012 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:173-299](../upstream/content/first-order-logic/tableaux/proving-things.tex#L173) | [mr/content/first-order-logic/tableaux/proving-things.tex:168-293](../mr/content/first-order-logic/tableaux/proving-things.tex#L168) | not yet paginated |
+| T164-OLP-0103-B013 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:301-362](../upstream/content/first-order-logic/tableaux/proving-things.tex#L301) | [mr/content/first-order-logic/tableaux/proving-things.tex:295-356](../mr/content/first-order-logic/tableaux/proving-things.tex#L295) | not yet paginated |
+| T164-OLP-0103-B014 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:364-416](../upstream/content/first-order-logic/tableaux/proving-things.tex#L364) | [mr/content/first-order-logic/tableaux/proving-things.tex:358-410](../mr/content/first-order-logic/tableaux/proving-things.tex#L358) | not yet paginated |
+| T164-OLP-0103-B015 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:418-426](../upstream/content/first-order-logic/tableaux/proving-things.tex#L418) | [mr/content/first-order-logic/tableaux/proving-things.tex:412-420](../mr/content/first-order-logic/tableaux/proving-things.tex#L412) | not yet paginated |
+| T164-OLP-0103-B016 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:428-444](../upstream/content/first-order-logic/tableaux/proving-things.tex#L428) | [mr/content/first-order-logic/tableaux/proving-things.tex:422-438](../mr/content/first-order-logic/tableaux/proving-things.tex#L422) | not yet paginated |
+| T164-OLP-0103-B017 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:446-458](../upstream/content/first-order-logic/tableaux/proving-things.tex#L446) | [mr/content/first-order-logic/tableaux/proving-things.tex:440-452](../mr/content/first-order-logic/tableaux/proving-things.tex#L440) | not yet paginated |
 
 **Chosen rendering/action:** टॅब्लो / टॅब्लो कलन / बंद टॅब्लो / खुली शाखा
 
@@ -8184,7 +8246,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T165 — signed formula / truth-value sign / immediate subformula</strong> (12 occurrences; medium priority)</summary>
+<summary><strong>T165 — signed formula / truth-value sign / immediate subformula</strong> (24 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8200,6 +8262,18 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T165-OLP-0099-B010 | OLP-0099 ·  | [upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52](../upstream/content/first-order-logic/tableaux/rules-and-proofs.tex#L44) | [mr/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52](../mr/content/first-order-logic/tableaux/rules-and-proofs.tex#L44) | not yet paginated |
 | T165-OLP-0099-B011 | OLP-0099 ·  | [upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57](../upstream/content/first-order-logic/tableaux/rules-and-proofs.tex#L54) | [mr/content/first-order-logic/tableaux/rules-and-proofs.tex:54-57](../mr/content/first-order-logic/tableaux/rules-and-proofs.tex#L54) | not yet paginated |
 | T165-OLP-0100-B016 | OLP-0100 ·  | [upstream/content/first-order-logic/tableaux/propositional-rules.tex:86-91](../upstream/content/first-order-logic/tableaux/propositional-rules.tex#L86) | [mr/content/first-order-logic/tableaux/propositional-rules.tex:86-91](../mr/content/first-order-logic/tableaux/propositional-rules.tex#L86) | not yet paginated |
+| T165-OLP-0102-B007 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:23-40](../upstream/content/first-order-logic/tableaux/derivations.tex#L23) | [mr/content/first-order-logic/tableaux/derivations.tex:22-38](../mr/content/first-order-logic/tableaux/derivations.tex#L22) | not yet paginated |
+| T165-OLP-0102-B008 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:42-46](../upstream/content/first-order-logic/tableaux/derivations.tex#L42) | [mr/content/first-order-logic/tableaux/derivations.tex:40-43](../mr/content/first-order-logic/tableaux/derivations.tex#L40) | not yet paginated |
+| T165-OLP-0102-B009 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:48-52](../upstream/content/first-order-logic/tableaux/derivations.tex#L48) | [mr/content/first-order-logic/tableaux/derivations.tex:45-49](../mr/content/first-order-logic/tableaux/derivations.tex#L45) | not yet paginated |
+| T165-OLP-0102-B010 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:54-94](../upstream/content/first-order-logic/tableaux/derivations.tex#L54) | [mr/content/first-order-logic/tableaux/derivations.tex:51-89](../mr/content/first-order-logic/tableaux/derivations.tex#L51) | not yet paginated |
+| T165-OLP-0103-B008 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:25-47](../upstream/content/first-order-logic/tableaux/proving-things.tex#L25) | [mr/content/first-order-logic/tableaux/proving-things.tex:24-44](../mr/content/first-order-logic/tableaux/proving-things.tex#L24) | not yet paginated |
+| T165-OLP-0103-B009 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:49-70](../upstream/content/first-order-logic/tableaux/proving-things.tex#L49) | [mr/content/first-order-logic/tableaux/proving-things.tex:46-67](../mr/content/first-order-logic/tableaux/proving-things.tex#L46) | not yet paginated |
+| T165-OLP-0103-B011 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:76-171](../upstream/content/first-order-logic/tableaux/proving-things.tex#L76) | [mr/content/first-order-logic/tableaux/proving-things.tex:72-166](../mr/content/first-order-logic/tableaux/proving-things.tex#L72) | not yet paginated |
+| T165-OLP-0103-B012 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:173-299](../upstream/content/first-order-logic/tableaux/proving-things.tex#L173) | [mr/content/first-order-logic/tableaux/proving-things.tex:168-293](../mr/content/first-order-logic/tableaux/proving-things.tex#L168) | not yet paginated |
+| T165-OLP-0103-B013 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:301-362](../upstream/content/first-order-logic/tableaux/proving-things.tex#L301) | [mr/content/first-order-logic/tableaux/proving-things.tex:295-356](../mr/content/first-order-logic/tableaux/proving-things.tex#L295) | not yet paginated |
+| T165-OLP-0103-B015 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:418-426](../upstream/content/first-order-logic/tableaux/proving-things.tex#L418) | [mr/content/first-order-logic/tableaux/proving-things.tex:412-420](../mr/content/first-order-logic/tableaux/proving-things.tex#L412) | not yet paginated |
+| T165-OLP-0103-B016 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:428-444](../upstream/content/first-order-logic/tableaux/proving-things.tex#L428) | [mr/content/first-order-logic/tableaux/proving-things.tex:422-438](../mr/content/first-order-logic/tableaux/proving-things.tex#L422) | not yet paginated |
+| T165-OLP-0103-B017 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:446-458](../upstream/content/first-order-logic/tableaux/proving-things.tex#L446) | [mr/content/first-order-logic/tableaux/proving-things.tex:440-452](../mr/content/first-order-logic/tableaux/proving-things.tex#L440) | not yet paginated |
 
 **Chosen rendering/action:** चिन्हांकित सूत्र / सत्यतामूल्याचे चिन्ह / तात्काळ उपसूत्र
 
@@ -8243,7 +8317,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T168 — justified / justification (of a derivation line)</strong> (4 occurrences; medium priority)</summary>
+<summary><strong>T168 — justified / justification (of a derivation line)</strong> (7 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8251,6 +8325,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T168-OLP-0068-B007 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L38) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38-44](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L38) | 87–88 |
 | T168-OLP-0068-B008 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | 87–88 |
 | T168-OLP-0090-B007 | OLP-0090 · 10.6 संख्यापकांसह निष्पत्ती | [upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:20-86](../upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex#L20) | [mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:19-82](../mr/content/first-order-logic/natural-deduction/proving-things-quant.tex#L19) | 117–120 |
+| T168-OLP-0102-B010 | OLP-0102 ·  | [upstream/content/first-order-logic/tableaux/derivations.tex:54-94](../upstream/content/first-order-logic/tableaux/derivations.tex#L54) | [mr/content/first-order-logic/tableaux/derivations.tex:51-89](../mr/content/first-order-logic/tableaux/derivations.tex#L51) | not yet paginated |
+| T168-OLP-0103-B011 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:76-171](../upstream/content/first-order-logic/tableaux/proving-things.tex#L76) | [mr/content/first-order-logic/tableaux/proving-things.tex:72-166](../mr/content/first-order-logic/tableaux/proving-things.tex#L72) | not yet paginated |
+| T168-OLP-0103-B012 | OLP-0103 ·  | [upstream/content/first-order-logic/tableaux/proving-things.tex:173-299](../upstream/content/first-order-logic/tableaux/proving-things.tex#L173) | [mr/content/first-order-logic/tableaux/proving-things.tex:168-293](../mr/content/first-order-logic/tableaux/proving-things.tex#L168) | not yet paginated |
 
 **Chosen rendering/action:** समर्थित / समर्थन मिळणे
 

@@ -1,0 +1,91 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{der}}
+      {\olfileid{pl}{tab}{der}}
+
+\olsection{\usetoken{P}{tableau}}
+
+\begin{explain}
+गृहीतक म्हणजे काय हे आपण सांगितले आहे आणि निगमन नियम दिले आहेत.
+!!^{tableau}s यांपासून विगमनाधारित रीतीने निर्माण होतात: प्रत्येक
+!!{tableau} ही एकतर एक किंवा अधिक गृहीतकांनी बनलेली एकच शाखा असते, किंवा
+!!a{tableau} च्या एखाद्या शाखेवर निगमन नियमांपैकी एक नियम लावल्याने ती मिळते.
+\end{explain}
+
+\begin{defn}[!!^{tableau}]
+$\sFmla{S_1}{!A_1}$, \dots, $\sFmla{S_n}{!A_n}$ या गृहीतकांसाठीचा
+!!^a{tableau} (येथे प्रत्येक $S_i$ हे $\True$ किंवा~$\False$ यांपैकी एक
+आहे) म्हणजे पुढील अटी पूर्ण करणारा !!{signed formula}s चा सांत वृक्ष होय:
+\begin{enumerate}
+\item वृक्षातील सर्वांत वरची $n$ !!{signed formula}s म्हणजे एकाखाली एक
+  असलेली $\sFmla{S_i}{!A_i}$ ही सूत्रे होत.
+\item वृक्षातील गृहीतक नसलेली प्रत्येक !!{signed formula} तिच्या वरच्या
+  शाखेतील !!a{signed formula} ला निगमन नियम योग्य रीतीने लावल्याने मिळते.
+\end{enumerate}
+!!a{tableau} ची एखादी शाखा $\sFmla{\True}{!A}$ आणि
+~$\sFmla{\False}{!A}$ ही दोन्ही सूत्रे धारण करत असेल तर आणि तरच ती
+\emph{बंद} असते; अन्यथा ती \emph{खुली} असते. ज्याची प्रत्येक शाखा बंद
+असते तो !!^a{tableau} (त्याच्या गृहीतकांच्या संचासाठीचा)
+\emph{बंद !!{tableau}} असतो. !!a{tableau} बंद नसेल, म्हणजे त्यात किमान
+एक खुली शाखा असेल, तर तो \emph{खुला} असतो.
+\end{defn}
+
+\begin{ex}
+  गृहीतकांचा प्रत्येक संच स्वतःच !!a{tableau} असतो, परंतु साधारणतः तो बंद
+  नसतो. (स्पष्टपणे, तो बंद असेल तर गृहीतकांत $\sFmla{\True}{!A}$ आणि
+  ~$\sFmla{\False}{!A}$ ही !!{signed formula}s ची जोडी आधीच असली पाहिजे.)
+
+  एखाद्या !!a{tableau} मधील !!a{signed formula}~$!A$ ला निगमन नियमांपैकी
+  एक नियम लावून त्या टॅब्लोपासून (तो खुला असो वा बंद) नवा आणि अधिक मोठा
+  टॅब्लो मिळवता येतो. नियम लागू केलेली~$!A$ ची आस्थिती ज्या ज्या शाखेत
+  आहे, त्या प्रत्येक शाखेच्या शेवटी तो नियम एक किंवा अधिक
+  !!{signed formula}s जोडतो.
+
+  उदाहरणार्थ, $\sFmla{\True}{!A \land \lnot !A}$ हे गृहीतक विचारात घ्या.
+  केवळ त्या गृहीतकाने बनलेला (खुला) !!{tableau} पुढीलप्रमाणे आहे:
+  \begin{center}
+    \begin{tableau}{}
+      [\sFmla{\True}{\formula{A} \land \lnot \formula{A}}, just=\TAss]
+    \end{tableau}{}
+  \end{center}
+  त्या गृहीतकाला $\TRule{\True}{\land}$ नियम लावून त्यापासून नवा
+  !!{tableau} मिळतो. हा नियम !!{tableau} मध्ये $\sFmla{\True}{!A}$ आणि
+  $\sFmla{\True}{\lnot !A}$ या दोन नव्या ओळी जोडू देतो:
+  \begin{center}
+    \begin{tableau}{}
+      [\sFmla{\True}{\formula{A} \land \lnot \formula{A}}, just=\TAss
+        [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\land}[1]},
+          [\sFmla{\True}{\lnot \formula{A}}, just={\TRule{\True}{\land}[1]}
+          ]
+        ]
+      ]
+    \end{tableau}{}
+  \end{center}
+  !!{tableau}s लिहिताना आपण लावलेले नियम उजवीकडे नोंदवतो (उदा.,
+  $\TRule{\True}{\land} 1$ याचा अर्थ त्या ओळीवरील !!{signed formula} ही
+  ओळ~$1$ वरील !!{signed formula} ला $\TRule{\True}{\land}$ नियम लावल्याने
+  मिळाली आहे). या नव्या !!{tableau} मध्ये आता अधिक !!{signed formula}s
+  आहेत, परंतु त्यांपैकी फक्त एकीला ($\sFmla{\True}{\lnot !A}$) नियम लावता
+  येतो (या स्थितीत $\TRule{\True}{\lnot}$ नियम). त्यामुळे पुढील बंद
+  !!{tableau} मिळतो:
+  \begin{center}
+    \begin{tableau}{}
+      [\sFmla{\True}{\formula{A} \land \lnot \formula{A}}, just=\TAss
+        [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\land}[1]}
+          [\sFmla{\True}{\lnot \formula{A}}, just={\TRule{\True}{\land}[1]}
+            [\sFmla{\False}{\formula{A}}, just={\TRule{\True}{\lnot}[3]}, close]
+          ]
+        ]
+      ]
+    \end{tableau}{}
+  \end{center}
+\end{ex}
+
+\end{document}

@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 26 urgent/high decisions and
-986 current occurrences. Normal and low items remain in the full index.
+995 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -492,6 +492,15 @@ This view contains 26 urgent/high decisions and
 | `T041-OLP-0101-B011` | `OLP-0101` |  | 49-51 | 48-50 | pending |
 | `T041-OLP-0101-B012` | `OLP-0101` |  | 53-55 | 52-53 | pending |
 | `T041-OLP-0101-B014` | `OLP-0101` |  | 79-107 | 77-105 | pending |
+| `T041-OLP-0102-B006` | `OLP-0102` |  | 15-21 | 15-20 | pending |
+| `T041-OLP-0102-B007` | `OLP-0102` |  | 23-40 | 22-38 | pending |
+| `T041-OLP-0102-B009` | `OLP-0102` |  | 48-52 | 45-49 | pending |
+| `T041-OLP-0102-B010` | `OLP-0102` |  | 54-94 | 51-89 | pending |
+| `T041-OLP-0103-B008` | `OLP-0103` |  | 25-47 | 24-44 | pending |
+| `T041-OLP-0103-B009` | `OLP-0103` |  | 49-70 | 46-67 | pending |
+| `T041-OLP-0103-B011` | `OLP-0103` |  | 76-171 | 72-166 | pending |
+| `T041-OLP-0103-B012` | `OLP-0103` |  | 173-299 | 168-293 | pending |
+| `T041-OLP-0103-B013` | `OLP-0103` |  | 301-362 | 295-356 | pending |
 
 ## T042 — least / well-ordered / predecessor / successor → लघुतम / सुक्रमित / पूर्ववर्ती / उत्तरवर्ती
 
