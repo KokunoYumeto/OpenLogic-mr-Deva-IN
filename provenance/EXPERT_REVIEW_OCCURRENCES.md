@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **94/722 source units**, 1018 aligned translated blocks, 6363 review occurrences. The referenced development reader has 133 pages and SHA-256 78901ead14277d7b4b2b4f28e429ba95764b748b9bac781a3a820adfba1ca616; it is not a final accessible release.
+Current scope: **95/722 source units**, 1021 aligned translated blocks, 6393 review occurrences. The referenced development reader has 133 pages and SHA-256 78901ead14277d7b4b2b4f28e429ba95764b748b9bac781a3a820adfba1ca616; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -873,7 +873,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T005 — subset</strong> (214 occurrences; routine priority)</summary>
+<summary><strong>T005 — subset</strong> (215 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1073,6 +1073,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T005-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T005-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T005-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T005-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T005-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T005-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T005-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -1372,7 +1373,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T009 — formal validity</strong> (51 occurrences; routine priority)</summary>
+<summary><strong>T009 — formal validity</strong> (52 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1405,6 +1406,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T009-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T009-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T009-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T009-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T009-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T009-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T009-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -1437,7 +1439,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T010 — truth / truth value</strong> (67 occurrences; routine priority)</summary>
+<summary><strong>T010 — truth / truth value</strong> (68 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1492,6 +1494,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T010-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T010-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T010-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T010-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T010-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T010-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T010-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -2608,7 +2611,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T031 — identity relation</strong> (37 occurrences; medium priority)</summary>
+<summary><strong>T031 — identity relation</strong> (44 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2638,6 +2641,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T031-OLP-0019-B018 | OLP-0019 · 2.8 संबंधांवरील क्रिया | [upstream/content/sets-functions-relations/relations/operations.tex:56-58](../upstream/content/sets-functions-relations/relations/operations.tex#L56) | [mr/content/sets-functions-relations/relations/operations.tex:57-58](../mr/content/sets-functions-relations/relations/operations.tex#L57) | 23 |
 | T031-OLP-0019-B019 | OLP-0019 · 2.8 संबंधांवरील क्रिया | [upstream/content/sets-functions-relations/relations/operations.tex:60-65](../upstream/content/sets-functions-relations/relations/operations.tex#L60) | [mr/content/sets-functions-relations/relations/operations.tex:60-67](../mr/content/sets-functions-relations/relations/operations.tex#L60) | 23 |
 | T031-OLP-0019-B020 | OLP-0019 · 2.8 संबंधांवरील क्रिया | [upstream/content/sets-functions-relations/relations/operations.tex:67-69](../upstream/content/sets-functions-relations/relations/operations.tex#L67) | [mr/content/sets-functions-relations/relations/operations.tex:69-71](../mr/content/sets-functions-relations/relations/operations.tex#L69) | 23 |
+| T031-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
+| T031-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
+| T031-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T031-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
+| T031-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
+| T031-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
+| T031-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
 | T031-OLP-0096-B005 | OLP-0096 · 10.12 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/natural-deduction/identity.tex:11-11](../upstream/content/first-order-logic/natural-deduction/identity.tex#L11) | [mr/content/first-order-logic/natural-deduction/identity.tex:11-11](../mr/content/first-order-logic/natural-deduction/identity.tex#L11) | 128–129 |
 | T031-OLP-0096-B006 | OLP-0096 · 10.12 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/natural-deduction/identity.tex:13-13](../upstream/content/first-order-logic/natural-deduction/identity.tex#L13) | [mr/content/first-order-logic/natural-deduction/identity.tex:13-13](../mr/content/first-order-logic/natural-deduction/identity.tex#L13) | 128–129 |
 | T031-OLP-0096-B008 | OLP-0096 · 10.12 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/natural-deduction/identity.tex:36-38](../upstream/content/first-order-logic/natural-deduction/identity.tex#L36) | [mr/content/first-order-logic/natural-deduction/identity.tex:36-38](../mr/content/first-order-logic/natural-deduction/identity.tex#L36) | 128–129 |
@@ -6061,7 +6071,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T109 — proof system / proof</strong> (38 occurrences; medium priority)</summary>
+<summary><strong>T109 — proof system / proof</strong> (39 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6103,6 +6113,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T109-OLP-0091-B007 | OLP-0091 · 10.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | 120–121 |
 | T109-OLP-0091-B008 | OLP-0091 · 10.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | 120–121 |
 | T109-OLP-0095-B006 | OLP-0095 · 10.11 निर्दोषता | [upstream/content/first-order-logic/natural-deduction/soundness.tex:15-31](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L15) | [mr/content/first-order-logic/natural-deduction/soundness.tex:15-31](../mr/content/first-order-logic/natural-deduction/soundness.tex#L15) | 125–128 |
+| T109-OLP-0098-B006 | OLP-0098 ·  | [upstream/content/first-order-logic/tableaux/tableaux.tex:15-17](../upstream/content/first-order-logic/tableaux/tableaux.tex#L15) | [mr/content/first-order-logic/tableaux/tableaux.tex:15-17](../mr/content/first-order-logic/tableaux/tableaux.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धता-पद्धती / सिद्धता
 
@@ -6141,7 +6152,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T111 — valuation (propositional semantics)</strong> (51 occurrences; medium priority)</summary>
+<summary><strong>T111 — valuation (propositional semantics)</strong> (52 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6180,6 +6191,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T111-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T111-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T111-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T111-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T111-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T111-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T111-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -6492,7 +6504,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T121 — satisfaction / satisfaction relation</strong> (68 occurrences; routine priority)</summary>
+<summary><strong>T121 — satisfaction / satisfaction relation</strong> (69 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6535,6 +6547,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T121-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T121-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T121-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T121-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T121-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T121-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T121-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -6594,7 +6607,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T123 — entailment / entails</strong> (61 occurrences; medium priority)</summary>
+<summary><strong>T123 — entailment / entails</strong> (62 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6630,6 +6643,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T123-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T123-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T123-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T123-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T123-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T123-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T123-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -7109,7 +7123,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T137 — parsing / reading (of a formula)</strong> (8 occurrences; medium priority)</summary>
+<summary><strong>T137 — parsing / reading (of a formula)</strong> (9 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7121,6 +7135,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T137-OLP-0059-B018 | OLP-0059 · 7.3 पूर्वतयारी | [upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:74-74](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L74) | [mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:76-77](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L76) | 76–78 |
 | T137-OLP-0059-B019 | OLP-0059 · 7.3 पूर्वतयारी | [upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:76-79](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L76) | [mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:79-83](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L79) | 76–78 |
 | T137-OLP-0059-B020 | OLP-0059 · 7.3 पूर्वतयारी | [upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:81-88](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L81) | [mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:85-93](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L85) | 76–78 |
+| T137-OLP-0098-B005 | OLP-0098 ·  | [upstream/content/first-order-logic/tableaux/tableaux.tex:12-13](../upstream/content/first-order-logic/tableaux/tableaux.tex#L12) | [mr/content/first-order-logic/tableaux/tableaux.tex:12-13](../mr/content/first-order-logic/tableaux/tableaux.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** रचनाविश्लेषण
 
@@ -7534,12 +7549,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T153 — truth tree / tableaux proof / resolution method and refutation</strong> (2 occurrences; medium priority)</summary>
+<summary><strong>T153 — truth tree / tableaux proof / resolution method and refutation</strong> (3 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T153-OLP-0064-B008 | OLP-0064 · 8.1 प्रस्तावना | [upstream/content/first-order-logic/proof-systems/introduction.tex:38-48](../upstream/content/first-order-logic/proof-systems/introduction.tex#L38) | [mr/content/first-order-logic/proof-systems/introduction.tex:41-51](../mr/content/first-order-logic/proof-systems/introduction.tex#L41) | 83–84 |
 | T153-OLP-0064-B009 | OLP-0064 · 8.1 प्रस्तावना | [upstream/content/first-order-logic/proof-systems/introduction.tex:50-71](../upstream/content/first-order-logic/proof-systems/introduction.tex#L50) | [mr/content/first-order-logic/proof-systems/introduction.tex:53-74](../mr/content/first-order-logic/proof-systems/introduction.tex#L53) | 83–84 |
+| T153-OLP-0098-B004 | OLP-0098 ·  | [upstream/content/first-order-logic/tableaux/tableaux.tex:8-10](../upstream/content/first-order-logic/tableaux/tableaux.tex#L8) | [mr/content/first-order-logic/tableaux/tableaux.tex:8-10](../mr/content/first-order-logic/tableaux/tableaux.tex#L8) | not yet paginated |
 
 **Chosen rendering/action:** सत्यता-वृक्ष / टॅब्लो सिद्धता / निराकरण पद्धत व निराकरण-खंडन
 
@@ -7550,7 +7566,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T154 — theorem</strong> (46 occurrences; routine priority)</summary>
+<summary><strong>T154 — theorem</strong> (47 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7583,6 +7599,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T154-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T154-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T154-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T154-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T154-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T154-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T154-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -7610,7 +7627,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T155 — soundness / sound / unsound (of a proof system)</strong> (56 occurrences; high priority)</summary>
+<summary><strong>T155 — soundness / sound / unsound (of a proof system)</strong> (57 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7641,6 +7658,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T155-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T155-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T155-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T155-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T155-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T155-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T155-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -7680,7 +7698,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (86 occurrences; routine priority)</summary>
+<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (87 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7732,6 +7750,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T156-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T156-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T156-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T156-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T156-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T156-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T156-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -8095,7 +8114,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T164 — tableau / tableau calculus / closed tableau / open branch</strong> (5 occurrences; medium priority)</summary>
+<summary><strong>T164 — tableau / tableau calculus / closed tableau / open branch</strong> (8 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8104,6 +8123,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T164-OLP-0067-B008 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L44) | [mr/content/first-order-logic/proof-systems/tableaux.tex:42-61](../mr/content/first-order-logic/proof-systems/tableaux.tex#L42) | 86–87 |
 | T164-OLP-0067-B009 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L65) | [mr/content/first-order-logic/proof-systems/tableaux.tex:63-67](../mr/content/first-order-logic/proof-systems/tableaux.tex#L63) | 86–87 |
 | T164-OLP-0067-B010 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L72) | [mr/content/first-order-logic/proof-systems/tableaux.tex:69-82](../mr/content/first-order-logic/proof-systems/tableaux.tex#L69) | 86–87 |
+| T164-OLP-0098-B004 | OLP-0098 ·  | [upstream/content/first-order-logic/tableaux/tableaux.tex:8-10](../upstream/content/first-order-logic/tableaux/tableaux.tex#L8) | [mr/content/first-order-logic/tableaux/tableaux.tex:8-10](../mr/content/first-order-logic/tableaux/tableaux.tex#L8) | not yet paginated |
+| T164-OLP-0098-B005 | OLP-0098 ·  | [upstream/content/first-order-logic/tableaux/tableaux.tex:12-13](../upstream/content/first-order-logic/tableaux/tableaux.tex#L12) | [mr/content/first-order-logic/tableaux/tableaux.tex:12-13](../mr/content/first-order-logic/tableaux/tableaux.tex#L12) | not yet paginated |
+| T164-OLP-0098-B006 | OLP-0098 ·  | [upstream/content/first-order-logic/tableaux/tableaux.tex:15-17](../upstream/content/first-order-logic/tableaux/tableaux.tex#L15) | [mr/content/first-order-logic/tableaux/tableaux.tex:15-17](../mr/content/first-order-logic/tableaux/tableaux.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** टॅब्लो / टॅब्लो कलन / बंद टॅब्लो / खुली शाखा
 
@@ -8114,7 +8136,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T165 — signed formula / truth-value sign / immediate subformula</strong> (4 occurrences; medium priority)</summary>
+<summary><strong>T165 — signed formula / truth-value sign / immediate subformula</strong> (5 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8122,6 +8144,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T165-OLP-0067-B007 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L31) | [mr/content/first-order-logic/proof-systems/tableaux.tex:30-40](../mr/content/first-order-logic/proof-systems/tableaux.tex#L30) | 86–87 |
 | T165-OLP-0067-B008 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L44) | [mr/content/first-order-logic/proof-systems/tableaux.tex:42-61](../mr/content/first-order-logic/proof-systems/tableaux.tex#L42) | 86–87 |
 | T165-OLP-0067-B009 | OLP-0067 · 8.4 टॅब्लो | [upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70](../upstream/content/first-order-logic/proof-systems/tableaux.tex#L65) | [mr/content/first-order-logic/proof-systems/tableaux.tex:63-67](../mr/content/first-order-logic/proof-systems/tableaux.tex#L63) | 86–87 |
+| T165-OLP-0098-B005 | OLP-0098 ·  | [upstream/content/first-order-logic/tableaux/tableaux.tex:12-13](../upstream/content/first-order-logic/tableaux/tableaux.tex#L12) | [mr/content/first-order-logic/tableaux/tableaux.tex:12-13](../mr/content/first-order-logic/tableaux/tableaux.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** चिन्हांकित सूत्र / सत्यतामूल्याचे चिन्ह / तात्काळ उपसूत्र
 
@@ -8261,7 +8284,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T173 — logical rule / structural rule (sequent calculus)</strong> (45 occurrences; medium priority)</summary>
+<summary><strong>T173 — logical rule / structural rule (sequent calculus)</strong> (46 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8294,6 +8317,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T173-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T173-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T173-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T173-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T173-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T173-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T173-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -8320,7 +8344,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T174 — closed term</strong> (53 occurrences; high priority)</summary>
+<summary><strong>T174 — closed term</strong> (54 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8350,6 +8374,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T174-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T174-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T174-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T174-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T174-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T174-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T174-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -8387,7 +8412,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)</strong> (65 occurrences; medium priority)</summary>
+<summary><strong>T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)</strong> (66 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8440,6 +8465,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T175-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T175-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T175-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T175-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T175-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T175-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T175-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -8505,7 +8531,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T178 — eigenvariable</strong> (60 occurrences; high priority)</summary>
+<summary><strong>T178 — eigenvariable</strong> (61 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8541,6 +8567,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T178-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T178-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T178-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T178-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T178-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T178-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T178-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -8579,7 +8606,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T179 — eigenvariable condition</strong> (57 occurrences; high priority)</summary>
+<summary><strong>T179 — eigenvariable condition</strong> (58 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8613,6 +8640,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T179-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T179-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T179-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T179-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T179-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T179-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T179-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -8736,7 +8764,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T184 — derivability / provability relation</strong> (133 occurrences; medium priority)</summary>
+<summary><strong>T184 — derivability / provability relation</strong> (134 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8803,6 +8831,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T184-OLP-0082-B005 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L11) | [mr/content/first-order-logic/sequent-calculus/identity.tex:11-11](../mr/content/first-order-logic/sequent-calculus/identity.tex#L11) | 107–108 |
 | T184-OLP-0082-B006 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L13) | [mr/content/first-order-logic/sequent-calculus/identity.tex:13-14](../mr/content/first-order-logic/sequent-calculus/identity.tex#L13) | 107–108 |
 | T184-OLP-0082-B007 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L16) | [mr/content/first-order-logic/sequent-calculus/identity.tex:16-18](../mr/content/first-order-logic/sequent-calculus/identity.tex#L16) | 107–108 |
+| T184-OLP-0082-B008 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L20) | [mr/content/first-order-logic/sequent-calculus/identity.tex:20-20](../mr/content/first-order-logic/sequent-calculus/identity.tex#L20) | 107–108 |
 | T184-OLP-0082-B010 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L34) | [mr/content/first-order-logic/sequent-calculus/identity.tex:34-45](../mr/content/first-order-logic/sequent-calculus/identity.tex#L34) | 107–108 |
 | T184-OLP-0082-B011 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L47) | [mr/content/first-order-logic/sequent-calculus/identity.tex:47-65](../mr/content/first-order-logic/sequent-calculus/identity.tex#L47) | 107–108 |
 | T184-OLP-0082-B012 | OLP-0082 · 9.13 निष्पत्ती सह एकरूपता | [upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75](../upstream/content/first-order-logic/sequent-calculus/identity.tex#L67) | [mr/content/first-order-logic/sequent-calculus/identity.tex:67-75](../mr/content/first-order-logic/sequent-calculus/identity.tex#L67) | 107–108 |
@@ -9644,5 +9673,20 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** medium; the intended rule is confirmed by its position after universal introduction and existential introduction, and the two macros are visually equivalent here; whether the spelling switch was intentional is unknown; open to correction.
 
 **Please double-check:** Should a later reader normalize this exercise label to the chapter's declared \Elim{\lforall} spelling while the aligned source continues to preserve the frozen form?
+
+</details>
+
+<details>
+<summary><strong>OLTAB-001 — confirmed-frozen-source-copy-paste subject defect with bounded target correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTAB-001-OLP-0098 | OLP-0098 ·  | [upstream/content/first-order-logic/tableaux/tableaux.tex:15-18](../upstream/content/first-order-logic/tableaux/tableaux.tex#L15) | [mr/content/first-order-logic/tableaux/tableaux.tex:15-18](../mr/content/first-order-logic/tableaux/tableaux.tex#L15) | not yet paginated |
+
+**Chosen rendering/action:** Translated the subject as tableaux (टॅब्लोशी), preserving the literal prfTab tag and the include-or-exclude instruction.
+
+**Confidence/status:** high; confirmed by the chapter identity, prfTab tag and complete import list; the correction changes no protected syntax or conditional behavior; open to correction.
+
+**Please double-check:** Does टॅब्लोशी सिद्धता-पद्धती म्हणून संबंधित clearly repair the copied subject while preserving the intended tag instruction?
 
 </details>

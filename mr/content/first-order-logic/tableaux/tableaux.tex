@@ -1,0 +1,54 @@
+% Part: first-order-logic
+% Chapter: tableaux
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{tab}{टॅब्लो}}
+      {\olchapter{pl}{tab}{टॅब्लो}}
+
+\begin{editorial}
+हे प्रकरण चिन्हांकित सूत्रांवर आधारलेली विश्लेषणात्मक टॅब्लो पद्धत मांडते.
+  
+टॅब्लोशी सिद्धता-पद्धती म्हणून संबंधित सामग्री समाविष्ट किंवा
+वगळण्यासाठी ``prfTab'' टॅग वापरा.
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{propositional-rules}
+
+\iftag{FOL}{%
+  \olimport{quantifier-rules}
+}{}
+
+\olimport{derivations}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{%
+  \olimport{identity}
+  \olimport{soundness-identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}

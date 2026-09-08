@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occurrences.
+Coverage: 95/722 source units through OLP-0098; 235 applied decisions; 6,393 occurrences.
 
 ## T001 — set
 
@@ -1126,6 +1126,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T005-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T005-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T005-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T005-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T005-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T005-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T005-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -1500,6 +1501,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T009-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T009-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T009-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T009-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T009-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T009-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T009-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -1602,6 +1604,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T010-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T010-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T010-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T010-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T010-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T010-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T010-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -2959,6 +2962,13 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T031-OLP-0019-B018` | `OLP-0019` | 2.8 संबंधांवरील क्रिया | `upstream/content/sets-functions-relations/relations/operations.tex:56-58` | `mr/content/sets-functions-relations/relations/operations.tex:57-58` | 23 |
 | `T031-OLP-0019-B019` | `OLP-0019` | 2.8 संबंधांवरील क्रिया | `upstream/content/sets-functions-relations/relations/operations.tex:60-65` | `mr/content/sets-functions-relations/relations/operations.tex:60-67` | 23 |
 | `T031-OLP-0019-B020` | `OLP-0019` | 2.8 संबंधांवरील क्रिया | `upstream/content/sets-functions-relations/relations/operations.tex:67-69` | `mr/content/sets-functions-relations/relations/operations.tex:69-71` | 23 |
+| `T031-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
+| `T031-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
+| `T031-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T031-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
+| `T031-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
+| `T031-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
+| `T031-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
 | `T031-OLP-0096-B005` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/natural-deduction/identity.tex:11-11` | `mr/content/first-order-logic/natural-deduction/identity.tex:11-11` | 128–129 |
 | `T031-OLP-0096-B006` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/natural-deduction/identity.tex:13-13` | `mr/content/first-order-logic/natural-deduction/identity.tex:13-13` | 128–129 |
 | `T031-OLP-0096-B008` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/natural-deduction/identity.tex:36-38` | `mr/content/first-order-logic/natural-deduction/identity.tex:36-38` | 128–129 |
@@ -7255,6 +7265,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T109-OLP-0091-B007` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | 120–121 |
 | `T109-OLP-0091-B008` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | 120–121 |
 | `T109-OLP-0095-B006` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:15-31` | `mr/content/first-order-logic/natural-deduction/soundness.tex:15-31` | 125–128 |
+| `T109-OLP-0098-B006` | `OLP-0098` |  | `upstream/content/first-order-logic/tableaux/tableaux.tex:15-17` | `mr/content/first-order-logic/tableaux/tableaux.tex:15-17` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -7362,6 +7373,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T111-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T111-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T111-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T111-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T111-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T111-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T111-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -7835,6 +7847,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T121-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T121-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T121-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T121-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T121-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T121-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T121-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -7955,6 +7968,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T123-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T123-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T123-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T123-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T123-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T123-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T123-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -8612,6 +8626,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T137-OLP-0059-B018` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:74-74` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:76-77` | 76–78 |
 | `T137-OLP-0059-B019` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:76-79` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:79-83` | 76–78 |
 | `T137-OLP-0059-B020` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:81-88` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:85-93` | 76–78 |
+| `T137-OLP-0098-B005` | `OLP-0098` |  | `upstream/content/first-order-logic/tableaux/tableaux.tex:12-13` | `mr/content/first-order-logic/tableaux/tableaux.tex:12-13` | pending |
 
 ## T138 — uniform substitution / simultaneous substitution
 
@@ -9221,6 +9236,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 |---|---|---|---|---|---|
 | `T153-OLP-0064-B008` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | 83–84 |
 | `T153-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 83–84 |
+| `T153-OLP-0098-B004` | `OLP-0098` |  | `upstream/content/first-order-logic/tableaux/tableaux.tex:8-10` | `mr/content/first-order-logic/tableaux/tableaux.tex:8-10` | pending |
 
 ## T154 — theorem
 
@@ -9276,6 +9292,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T154-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T154-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T154-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T154-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T154-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T154-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T154-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -9347,6 +9364,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T155-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T155-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T155-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T155-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T155-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T155-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T155-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -9451,6 +9469,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T156-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T156-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T156-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T156-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T156-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T156-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T156-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -9919,6 +9938,9 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T164-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 86–87 |
 | `T164-OLP-0067-B009` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | 86–87 |
 | `T164-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 86–87 |
+| `T164-OLP-0098-B004` | `OLP-0098` |  | `upstream/content/first-order-logic/tableaux/tableaux.tex:8-10` | `mr/content/first-order-logic/tableaux/tableaux.tex:8-10` | pending |
+| `T164-OLP-0098-B005` | `OLP-0098` |  | `upstream/content/first-order-logic/tableaux/tableaux.tex:12-13` | `mr/content/first-order-logic/tableaux/tableaux.tex:12-13` | pending |
+| `T164-OLP-0098-B006` | `OLP-0098` |  | `upstream/content/first-order-logic/tableaux/tableaux.tex:15-17` | `mr/content/first-order-logic/tableaux/tableaux.tex:15-17` | pending |
 
 ## T165 — signed formula / truth-value sign / immediate subformula
 
@@ -9949,6 +9971,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T165-OLP-0067-B007` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `mr/content/first-order-logic/proof-systems/tableaux.tex:30-40` | 86–87 |
 | `T165-OLP-0067-B008` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:44-63` | `mr/content/first-order-logic/proof-systems/tableaux.tex:42-61` | 86–87 |
 | `T165-OLP-0067-B009` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:65-70` | `mr/content/first-order-logic/proof-systems/tableaux.tex:63-67` | 86–87 |
+| `T165-OLP-0098-B005` | `OLP-0098` |  | `upstream/content/first-order-logic/tableaux/tableaux.tex:12-13` | `mr/content/first-order-logic/tableaux/tableaux.tex:12-13` | pending |
 
 ## T166 — Evert Beth / Jaakko Hintikka / Raymond Smullyan
 
@@ -10218,6 +10241,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T173-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T173-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T173-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T173-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T173-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T173-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T173-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -10288,6 +10312,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T174-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T174-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T174-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T174-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T174-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T174-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T174-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -10392,6 +10417,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T175-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T175-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T175-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T175-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T175-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T175-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T175-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -10531,6 +10557,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T178-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T178-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T178-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T178-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T178-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T178-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T178-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -10616,6 +10643,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T179-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T179-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T179-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T179-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T179-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T179-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T179-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -10866,6 +10894,7 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | `T184-OLP-0082-B005` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:11-11` | `mr/content/first-order-logic/sequent-calculus/identity.tex:11-11` | 107–108 |
 | `T184-OLP-0082-B006` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:13-14` | `mr/content/first-order-logic/sequent-calculus/identity.tex:13-14` | 107–108 |
 | `T184-OLP-0082-B007` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:16-18` | `mr/content/first-order-logic/sequent-calculus/identity.tex:16-18` | 107–108 |
+| `T184-OLP-0082-B008` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:20-20` | `mr/content/first-order-logic/sequent-calculus/identity.tex:20-20` | 107–108 |
 | `T184-OLP-0082-B010` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:34-45` | `mr/content/first-order-logic/sequent-calculus/identity.tex:34-45` | 107–108 |
 | `T184-OLP-0082-B011` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:47-65` | `mr/content/first-order-logic/sequent-calculus/identity.tex:47-65` | 107–108 |
 | `T184-OLP-0082-B012` | `OLP-0082` | 9.13 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/sequent-calculus/identity.tex:67-75` | `mr/content/first-order-logic/sequent-calculus/identity.tex:67-75` | 107–108 |
@@ -12217,6 +12246,31 @@ Coverage: 94/722 source units through OLP-0097; 234 applied decisions; 6,363 occ
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLND-007-OLP-0095` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:207-207` | `mr/content/first-order-logic/natural-deduction/soundness.tex:206-206` | 125–128 |
+
+## OLTAB-001 — confirmed-frozen-source-copy-paste subject defect with bounded target correction
+
+**Chosen rendering/action:** Translated the subject as tableaux (टॅब्लोशी), preserving the literal prfTab tag and the include-or-exclude instruction.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The tableaux chapter editorial note says that the prfTab tag controls material relevant to natural deduction as a proof system. The chapter subject, tag name and all thirteen imported sections instead identify tableaux; the wording duplicates the neighboring natural-deduction driver with only the tag changed.
+
+**Rationale:** The tableaux chapter editorial note says that the prfTab tag controls material relevant to natural deduction as a proof system. The chapter subject, tag name and all thirteen imported sections instead identify tableaux; the wording duplicates the neighboring natural-deduction driver with only the tag changed. Chosen action: Translated the subject as tableaux (टॅब्लोशी), preserving the literal prfTab tag and the include-or-exclude instruction.
+
+**Authorities actually checked:**
+
+- `OLTAB-001-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTAB-001. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the contradictory natural-deduction subject literally — `rejected`: Not chosen; the source finding and recorded action control.
+- Avoid naming the subject and say only that prfTab controls proof-system material — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does टॅब्लोशी सिद्धता-पद्धती म्हणून संबंधित clearly repair the copied subject while preserving the intended tag instruction?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTAB-001-OLP-0098` | `OLP-0098` |  | `upstream/content/first-order-logic/tableaux/tableaux.tex:15-18` | `mr/content/first-order-logic/tableaux/tableaux.tex:15-18` | pending |
 
 ## Deferred prospective decisions
 
