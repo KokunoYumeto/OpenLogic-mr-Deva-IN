@@ -1,0 +1,53 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0084",
+  "method": "Same-agent English/Marathi block-by-block close reading, chapter-driver and editorial reverse paraphrase, exact macro, token and identifier comparison; the release audit repaired one duplicated quote marker; no independent human or native-speaker review is claimed.",
+  "scope": "Natural-deduction chapter driver and its editorial description, including the Gentzen/Prawitz style and the conditional prfND material tag.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5
+      ],
+      "reverse_paraphrase": "The chapter is titled Natural Deduction in both FOL and propositional branches. Its editorial note says that the chapter presents a Gentzen/Prawitz-style natural deduction system.",
+      "checks": "Both conditional chapter titles, the chapter identifier and the author names remain exact; नैसर्गिक निगमन is used for the established natural-deduction term."
+    },
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "The editorial note explains that material relevant to natural deduction as a proof system can be included or excluded with the prfND tag.",
+      "checks": "The literal prfND tag, editorial environment and proof-system meaning are preserved."
+    },
+    {
+      "blocks": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "reverse_paraphrase": "The chapter driver imports the rules, derivations, proof, provability, soundness and identity sections, with quantifier imports guarded by the FOL tag, then closes through the chapter hook.",
+      "checks": "All import paths, FOL conditional branches, identity imports, chapter hook and document structure remain unchanged."
+    }
+  ],
+  "source_observations": [
+    "The frozen upstream source is a chapter driver with no mathematical prose defect or source correction identified.",
+    "The Marathi target had an extra opening quote marker after the literal prfND tag; the marker was removed without changing source meaning or protected syntax."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "नैसर्गिक निगमन follows the established natural-deduction terminology; all imported section names remain source identifiers.",
+    "The driver still has no independent human or native-speaker review; its reader rendering is checked separately in the cumulative release QA."
+  ]
+}

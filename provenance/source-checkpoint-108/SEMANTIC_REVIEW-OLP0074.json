@@ -1,0 +1,36 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0074",
+  "method": "Same-agent English/Marathi block-by-block close reading, definition and example reverse paraphrase, and exact formula, macro, token and identifier comparison; not independent or human review.",
+  "scope": "The definition of an LK derivation as a finite sequent tree, its end-sequent and derivability terminology, and the worked construction using left weakening, left exchange and right conjunction.",
+  "samples": [
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "Initial sequents and inference rules inductively generate sequent-calculus derivations: each derivation is either an initial sequent alone or one or two derivations above an inference.",
+      "checks": "The translation preserves the recursive alternatives, the arity one-or-two, and the spatial/order relation between subderivations and the inference."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "An LK derivation of S is a finite tree of sequents whose top sequents are initial, whose bottom sequent is S, and whose every other sequent is a premise of a correct inference-rule application with its conclusion directly below. S is the derivation's end-sequent and is derivable in LK.",
+      "checks": "Finite tree, all three conditions, the exception for S, correctness of the application, direct adjacency, and both naming clauses remain explicit."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "Starting from C entails C, left weakening with D gives D,C entails C, then left exchange gives C,D entails C. Independently, weakening D entails D gives C,D entails D. Right conjunction combines those matching end-sequents into C,D entails C and D; reversing the two premises instead gives D and C.",
+      "checks": "Every generic and instantiated proof tree is unchanged. Gamma, Delta and Pi assignments, the A/D and B/C role order, empty contexts, premise matching, conclusion condition, and the effect of reversing premises are all preserved."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "अंतिम क्रमवर्ती is a transparent, definition-controlled rendering of end-sequent; no exact Marathi specialist occurrence was found in the already checked proof-theory sources.",
+    "The derivation and derivable token forms remain controlled by the edition's shared token system rather than being expanded inside this source unit."
+  ]
+}

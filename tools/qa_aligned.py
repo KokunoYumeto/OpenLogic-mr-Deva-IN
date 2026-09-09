@@ -112,6 +112,32 @@ _DOCUMENTED_PROJECTIONS = {
          '\\sFmla{\\False}{!A} ला\n  \\TRule{\\True}{\\lnot} लावून मिळणारा'),
         ('$n+2$', '$n+1$'),
     ],
+    'OLP-0107': [
+        ('\\sFmla{\\True}{\\formula{A}},just={\\TRule{\\True}{\\land}[2]}',
+         '\\sFmla{\\True{\\formula{A}}},just={\\TRule{\\True}{\\land}[2]}'),
+        ('\\sFmla{\\True}{\\formula{B}},just={\\TRule{\\True}{\\land}[2]}',
+         '\\sFmla{\\True{\\formula{B}}},just={\\TRule{\\True}{\\land}[2]}'),
+        ('\\sFmla{\\False}{\\formula{A}},just={\\TRule{\\False}{\\lor}[1]}',
+         '\\sFmla{\\False{\\formula{A}}},just={\\TRule{\\False}{\\lor}[1]}'),
+        ('\\sFmla{\\False}{\\formula{B}},just={\\TRule{\\False}{\\lor}[1]}',
+         '\\sFmla{\\False{\\formula{B}}},just={\\TRule{\\False}{\\lor}[1]}'),
+    ],
+    'OLP-0109': [
+        ('\\sFmla{\\True}{\\lforall[x][!A(x)]} \\in \\Gamma',
+         '\\sFmla{\\True}{\\lforall[x][!B(x)]} \\in \\Gamma'),
+        ('\\sFmla{\\False}{\\lforall[x][!A(x)]} \\in \\Gamma',
+         '\\sFmla{\\False}{\\lforall[x][!B(x)]} \\in \\Gamma'),
+        ('\\Sat/{M}{\\lforall[x][!A(x)]}',
+         '\\Sat/{M}{\\lforall[x][!B(x)]}'),
+        ('\\Sat/{M}{!A(x)}[s]',
+         '\\Sat/{M}{!B(x)}[s]'),
+    ],
+    'OLP-0110': [
+        ('$\\sFmla{\\True}{!A(s_1)}$ या रूपातील दुसरे आधारविधान',
+         '$\\sFmla{\\True}{!A(s_2)}$ या रूपातील दुसरे आधारविधान'),
+        ('$\\eq[s_1][s_2]$ (म्हणजे ओळ~$2$)',
+         '$\\eq[t_1][t_2]$ (म्हणजे ओळ~$2$)'),
+    ],
 }
 
 

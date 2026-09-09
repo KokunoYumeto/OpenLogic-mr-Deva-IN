@@ -1,0 +1,62 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0059",
+  "method": "Same-agent English/Marathi close reading, constructor-case inspection, formula/token comparison and reverse paraphrase with checked native terminology; not independent or human review.",
+  "scope": "Formula induction, balanced parentheses, proper initial segments, unique parsing, uniform and simultaneous substitution, and the associated exercises.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "A property holding of all atomic formulas and preserved by every enabled connective holds of every formula. The proof collects formulas with the property, observes that this class contains the atoms and is operator-closed, and uses the leastness of the inductively defined formula class to get equality.",
+      "checks": "All five tagged closure clauses retain their exact connective and hypotheses. The two inclusions and equality in the least-class argument are preserved in their original direction."
+    },
+    {
+      "blocks": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "reverse_paraphrase": "Every formula has equally many opening and closing parentheses, and no proper initial segment of a formula is itself a formula; the following exercises ask for proofs of those two propositions.",
+      "checks": "Balanced is explicitly defined by the two parenthesis counts, and proper initial segment is not weakened to arbitrary substring or prefix."
+    },
+    {
+      "blocks": [
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "reverse_paraphrase": "Each formula has exactly one outermost-constructor parse: an enabled truth constant, a propositional variable, or an enabled unary or binary connective form. If two conditional parses existed, their left components would coincide by the no-proper-prefix result and their right components could not differ by induction.",
+      "checks": "Every tagged constructor remains in the source order. The proof retains both the initial-segment reason for equality of the left components and the inductive-hypothesis reason for uniqueness of the right components."
+    },
+    {
+      "blocks": [
+        21
+      ],
+      "reverse_paraphrase": "Uniform substitution replaces every occurrence of one propositional variable in A by an occurrence of B. The many-variable notation denotes simultaneous replacement of p1 through pn by B1 through Bn.",
+      "checks": "The definition preserves the host formula, replaced variable, replacement formula, every-occurrence scope, and distinction between one-variable and simultaneous substitution."
+    },
+    {
+      "blocks": [
+        22,
+        23
+      ],
+      "reverse_paraphrase": "The first exercise tests, for five displayed formulas and each of three fixed shapes of A, whether the result can be represented by substitution and asks for the relevant substitution. The second asks for a mathematically rigorous inductive definition of the substitution notation.",
+      "checks": "All five candidate formulas, all three fixed A formulas and the final inductive-definition request are unchanged; the nine source inline-math opener/closer pairs are now explicitly replayed."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "रचनाविश्लेषण, एकरूप आदेशन and the unmodified आस्थिति remain explicitly prioritized for specialist review."
+  ]
+}

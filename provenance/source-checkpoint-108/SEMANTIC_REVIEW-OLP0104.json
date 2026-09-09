@@ -1,0 +1,57 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0104",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse paraphrase of every prose passage, stepwise replay of all 15 encoded tableaux and their line references, exercise-count comparison, and exact formula, macro, token and identifier comparison; no independent human or native-speaker review is claimed.",
+  "scope": "Quantified tableau proof search, eigenvariable-rule ordering, three worked closed-tableau constructions, repeated use of unrestricted quantifier rules, branch closure and two exercise sets containing 9 signed-formula problems.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "The section introduces tableaux with quantifiers and advises applying rules governed by the eigenvariable condition early, because those applications will occur higher in the finished tableau.",
+      "checks": "The Marathi preserves the advice as a heuristic about inference order, retains the eigenvariable condition rather than turning it into a rule name, and keeps the finished-tableau qualification."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "The first example tests existential-not-A implies not-universal-A by starting with the false-signed conditional. False conditional yields true existential-not-A and false not-universal-A. A fresh constant a instantiates the true existential; the two negation rules produce false A(a) and true universal-A, and universal instantiation with a closes the branch.",
+      "checks": "All five successive tableau states preserve truth signs, rule labels, line references, checked flags, the fresh-a choice and the final contradictory A(a) pair."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "The second example starts with false existential C(x,b), true existential A-and-B, and true universal B-implies-C. The eigenvariable rule is applied first to the true existential, using fresh a because b already occurs. The remaining quantifier rules may reuse closed terms; choosing a, expanding the conjunction and then the conditional yields closure.",
+      "checks": "All five tableau states preserve the selected a instance, branch order, repeated-use policy for lines 1 and 3, conjunction products, conditional split and both closure witnesses. OLTAB-003 records the bounded clarification from any term to any closed term."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "The third example begins with true universal A, true universal-A implies existential-B, and true not-existential-B. It first eliminates negation, delays non-eigenvariable quantifier rules and branching, then branches on the conditional. Fresh b and c are introduced on the two branches; reusing the suitable closed terms b and c in the universal and false-existential rules closes the branches respectively.",
+      "checks": "All five tableau states preserve the defer-order advice, the b/c freshness choices, left/right branch structure, exact rule applications and final closure pairs. OLTAB-003 records the closed-term clarification; OLTAB-004 corrects the narrative's false-existential reference from line 3 to its actual line 4."
+    },
+    {
+      "blocks": [
+        11,
+        12
+      ],
+      "reverse_paraphrase": "The two problem sets ask for closed tableaux for six and three listed signed-formula collections respectively.",
+      "checks": "All 9 exercise items, their order, signs, variable names, parentheses, connectives and quantifier scopes are byte-preserved; only the repeated instruction was translated."
+    }
+  ],
+  "source_observations": [
+    "OLTAB-003 documents two source passages whose unrestricted term-choice wording omits the standing closed-term requirement declared in OLP-0101.",
+    "The selected constants a, b and c are closed terms, so the clarification changes no displayed inference.",
+    "OLTAB-004 documents and corrects a narrative reference to line 3 where the derived false-existential formula and the final tree both require line 4.",
+    "The unit contains 15 oltableau environments and 9 exercise items in both source and target."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The eigenvariable, closed-term, tableau and signed-formula terminology remains open to expert correction where exact specialist Marathi evidence is sparse.",
+    "The tall tableau layouts will receive page-level visual inspection after the complete Tableaux chapter enters a cumulative reader."
+  ]
+}

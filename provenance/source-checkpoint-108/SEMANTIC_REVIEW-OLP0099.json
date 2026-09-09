@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0099",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse paraphrase of every prose block, and exact formula, macro, token, identifier and conditional-file-ID comparison; no independent human or native-speaker review is claimed.",
+  "scope": "Tableaux rules-and-proofs introduction: the signed-formula definition, intuitive sign readings, rule application along a branch, branch closure and the semantic force of a closed tableau rooted at a false-signed sentence.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "The section is Rules and Tableaux. A tableau systematically surveys ways a sentence may be true or false in a structure, using truth-value-signed formulas arranged in a downward-growing tree.",
+      "checks": "The section token remains exact. चिन्हांकित सूत्र and सत्यतामूल्याचे चिन्ह follow the standing signed-formula decision, while the source controls the semantic sense of possible truth and falsity in a structure."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "A signed formula is a truth-value/sentence pair, either true-signed A or false-signed A. Informally these say that A might be true or might be false in some structure.",
+      "checks": "Both displayed signed formulas, their order and their truth signs are exact. The English word inside the display was translated to किंवा without changing the mathematical alternatives."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "Every tree entry is an assumption at the top or follows by an inference rule from an earlier signed formula. Each main operator has true- and false-sign rules; rules may branch or merely extend a branch and may need to use any earlier entry from the root to the application point.",
+      "checks": "The Marathi explicitly says that application is not restricted to the immediately preceding entry, so it preserves the source's any-earlier-entry permission rather than excluding the immediately preceding entry."
+    },
+    {
+      "blocks": [
+        10,
+        11
+      ],
+      "reverse_paraphrase": "A branch closes when it contains both true-signed A and false-signed A; a tableau closes when every branch closes. Closure eliminates the described joint possibilities. A closed tableau for A has false-signed A at its root, so its existence eliminates every way A could be false and entails truth of A in every structure.",
+      "checks": "The same A occurs under both signs, the all-branches condition is retained, and the final direction runs from a false-signed root to truth in every structure. No validity or truth terminology is interchanged."
+    }
+  ],
+  "source_observations": [
+    "No source correction was required in this unit.",
+    "The opening gives an intuitive semantic explanation; the later tableaux rules and formal proof relation supply the exact calculus.",
+    "All formulas, truth signs, token annotations and conditional FOL/propositional file identifiers remain structurally exact."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "Exact Marathi specialist attestation for semantic-tableau terminology remains sparse; the edition retains the established transparent compounds and recognizable loanword टॅब्लो with explicit review flags.",
+    "This unit will be rendered and visually checked in a cumulative reader after the remaining Tableaux chapter imports are translated."
+  ]
+}

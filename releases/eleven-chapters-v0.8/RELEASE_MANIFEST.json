@@ -1,0 +1,73 @@
+{
+  "schema": "openlogic-release-manifest/1",
+  "release": "eleven-chapters-v0.8",
+  "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_source_units": 108,
+    "total_source_units": 722,
+    "remaining_source_units": 614,
+    "aligned_content_segments": 1149,
+    "reader_sections": 96,
+    "complete_chapters": 11,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0111",
+    "complete_edition": false
+  },
+  "reader": {
+    "pdf_pages": 157,
+    "native_mathml": 6544,
+    "semantic_proof_figures": 202,
+    "proof_formula_rows": 990
+  },
+  "assets": [
+    {
+      "filename": "openlogic-mr-eleven-chapters.pdf",
+      "bytes": 684717,
+      "sha256": "bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450"
+    },
+    {
+      "filename": "openlogic-mr-eleven-chapters.tex",
+      "bytes": 863854,
+      "sha256": "ad124e9439421f9a82d94d24af7ca6f064342a877e3286975c596ce5e07f81e2"
+    },
+    {
+      "filename": "openlogic-mr-eleven-chapters-html.zip",
+      "bytes": 1459755,
+      "sha256": "767cbae8fa999f390b254fd7fe5ddaeee18b1db76243872ac0bd8fbd50b629f1"
+    },
+    {
+      "filename": "openlogic-mr-eleven-chapters-review.zip",
+      "bytes": 7133504,
+      "sha256": "e17271701f9a25fb7f2659a0e7e39b24dce7421fbca72f8e8cf2d5f775a0dbc6"
+    },
+    {
+      "filename": "openlogic-mr-eleven-chapters-editable-sources.zip",
+      "bytes": 23576820,
+      "sha256": "7aa0a15897c88819efd671c48b44b62cbe739584bcccf506af159792adc09483"
+    }
+  ],
+  "source_package_manifest": {
+    "path": "provenance/eleven-chapters-v0.8/EDITION_FILE_MANIFEST.json",
+    "files_listed": 1797,
+    "bytes": 338048,
+    "sha256": "18c6ef777701a856cb915b56dfcaefdcd0c7fd6c346631af2beb60fd679563dd",
+    "draft_OLP_0112_target_excluded": true
+  },
+  "source_checkpoint": {
+    "path": "provenance/source-checkpoint-108/SOURCE_CHECKPOINT.json",
+    "bytes": 27994,
+    "sha256": "557ca0195fccc483266c25388c4e72bbebad03e5c796d3750a769d1c67707da3"
+  },
+  "release_qa": {
+    "path": "provenance/eleven-chapters-v0.8/RELEASE_QA.json",
+    "bytes": 2011,
+    "sha256": "5cc2271a2c400428e09076f45bbacc5d705e315d7c457c8e4cce93cff755f250"
+  },
+  "cross_package_qa": {
+    "path": "provenance/eleven-chapters-v0.8/CROSS_PACKAGE_QA-RELEASE.json",
+    "bytes": 1386,
+    "sha256": "15bc6feea8b6e1346564d6a6e6296d3e5cb66fb5c1cff247ea2df94ca14afe81"
+  },
+  "full_edition_complete": false
+}

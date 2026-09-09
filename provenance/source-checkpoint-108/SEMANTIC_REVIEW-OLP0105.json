@@ -1,0 +1,69 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0105",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse paraphrase of every definition and proof, sign-by-sign replay of the encoded tableau and transitivity construction, exact comparison of formulas, macros, protected tokens and identifiers, and count comparison for lists and tagged problems; no independent human or native-speaker review is claimed.",
+  "scope": "Tableau-based proof-theoretic notions: theoremhood, derivability, consistency, reflexivity, monotonicity, transitivity via Cut, the inconsistency characterization and proof-theoretic compactness.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "The section contrasts semantic notions with proof-theoretic notions defined through closed tableaux. A theorem A has a closed tableau for false A. A is derivable from Gamma when some finite subset of Gamma, signed true together with false A, has a closed tableau. Gamma is inconsistent when some finite subset, signed true, has a closed tableau; otherwise it is consistent.",
+      "checks": "The semantic triad, soundness/completeness link, both Proves notations, finite-premise witnesses, signs and closed-tableau conditions are all preserved."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "Reflexivity follows because if A belongs to Gamma, the finite singleton {A} supports the two-node closed tableau containing false A and true A. Monotonicity follows because every finite subset of Gamma is also a finite subset of a superset Delta.",
+      "checks": "The membership and subset directions are unchanged. The sole encoded tableau preserves both signs, the two assumption labels, nesting and the close marker."
+    },
+    {
+      "blocks": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "reverse_paraphrase": "For transitivity, choose finite C-premises from Delta witnessing derivability of B from A and Delta, and finite D-premises from Gamma witnessing derivability of A. Start a tableau with false B and all true C- and D-premises, apply Cut to A, and attach the two closed witness tableaux to the true-A and false-A branches. This proves derivability from Gamma union Delta and yields the stated iterated consequences.",
+      "checks": "All signs, finite-set inclusions, Cut branches and conclusion formulas are exact after the documented OLTAB-005 projection. OLTAB-005 repairs the source's ill-typed D-premise subset expression by placing braces around the finite set."
+    },
+    {
+      "blocks": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "reverse_paraphrase": "A set is inconsistent exactly when it derives every sentence. The proof is left as an exercise, with separate protected cross-references for the first-order and propositional builds.",
+      "checks": "The universal quantification over sentences, both tagged problem variants, file identifiers and proposition reference are preserved exactly."
+    },
+    {
+      "blocks": [
+        23,
+        24
+      ],
+      "reverse_paraphrase": "Proof-theoretic compactness states that derivability already has a finite witnessing subset and that consistency follows when every finite subset is consistent. The proof reuses the finite closed-tableau witness for the first part and argues contrapositively for the second: inconsistency supplies a finite inconsistent subset.",
+      "checks": "Both proposition items and both proof items retain their directions, finite witnesses, signed premise sets and consistency conclusions."
+    }
+  ],
+  "source_observations": [
+    "OLTAB-005 documents and repairs the transitivity proof's expression D_1, ..., D_m subseteq Gamma as the finite-set inclusion {D_1, ..., D_m} subseteq Gamma.",
+    "The repair is forced by the derivability definition, the parallel Delta_0 witness and the subsequent use of every D_i as a true-signed assumption.",
+    "The unit contains 1 oltableau environment, 4 enumerated items and 2 tagged problem environments in both source and target."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact Marathi compounds for proof-theoretic notions and tableau terminology remain open to expert correction under the existing terminology ledger.",
+    "The Cut attachment argument is prose-level rather than an encoded full tableau and was checked by reconstructing its two witness branches."
+  ]
+}

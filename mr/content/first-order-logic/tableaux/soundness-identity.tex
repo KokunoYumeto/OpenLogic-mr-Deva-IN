@@ -1,0 +1,45 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: soundness-identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{sid}
+
+\olsection{\usetoken{S}{identity} सह निर्दोषता}
+
+\begin{prop}
+एकरूपतेचे नियम असलेले !!^{tableau}s निर्दोष आहेत: कोणताही बंद !!{tableau}
+  पूर्ततायोग्य नसतो.
+\end{prop}
+
+\begin{proof}
+मागीलप्रमाणे एवढेच दाखवायचे आहे की !!a{tableau} ची एखादी शाखा पूर्ततायोग्य
+असेल, तर तिला~$\eq$ चा कोणताही नियम लावून मिळणारी शाखासुद्धा पूर्ततायोग्य
+असते. शाखेवरील चिन्हांकित !!{formula}s चा संच~$\Gamma$ असू द्या आणि
+$\Struct{M}$ ही $\Gamma$ पूर्ण करणारी !!a{structure} असू द्या.
+
+शाखेचा~$\eq$ वापरून विस्तार केला आहे, म्हणजे चिन्हांकित
+!!{formula}~$\sFmla{\True}{\eq[t][t]}$ जोडले आहे असे समजा. स्पष्टपणे
+$\Sat{M}{\eq[t][t]}$, म्हणून $\Struct{M}$ हे
+$\Gamma \cup \{\sFmla{\True}{\eq[t][t]}\}$ सुद्धा पूर्ण करते.
+
+$\TRule{\True}{\eq}$ वापरून शाखेचा विस्तार केला असेल, तर
+!!{formula}~$\sFmla{S}{!A(t_2)}$ जोडतो; परंतु $\Gamma$ मध्ये
+$\sFmla{\True}{\eq[t_1][t_2]}$ आणि $\sFmla{\True}{!A(t_1)}$ ही दोन्ही
+असतात. म्हणून $\Sat{M}{\eq[t_1][t_2]}$ आणि $\Sat{M}{!A(t_1)}$.
+$s$ हा $s(x) = \Value{t_1}{M}$ असलेला चल-विन्यास असू द्या.
+\olref[syn][ass]{prop:sentence-sat-true} नुसार
+$\Sat{M}{!A(t_1)}[s]$. $\varAssign{s}{s}{x}$ असल्यामुळे,
+\olref[syn][ext]{prop:ext-formulas} नुसार $\Sat{M}{!A(x)}[s]$.
+$\Sat{M}{\eq[t_1][t_2]}$ असल्यामुळे
+$\Value{t_1}{M} = \Value{t_2}{M}$, आणि म्हणून
+$s(x) = \Value{t_2}{M}$. \olref[syn][ext]{prop:ext-formulas} पुन्हा
+लावल्याने $\Sat{M}{!A(t_2)}[s]$ सुद्धा मिळते.
+\olref[syn][ass]{prop:sentence-sat-true} नुसार
+$\Sat{M}{!A(t_2)}$. $\TRule{\False}{\eq}$ चे प्रकरण याचप्रमाणे आहे.
+\end{proof}
+
+\end{document}

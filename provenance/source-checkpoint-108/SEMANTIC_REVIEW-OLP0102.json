@@ -1,0 +1,48 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0102",
+  "method": "Same-agent English/Marathi block-by-block close reading, inductive-definition replay, stepwise reconstruction of all three displayed tableaux, and exact formula, macro, token and identifier comparison; no independent human or native-speaker review is claimed.",
+  "scope": "The inductive construction and finite-tree definition of tableaux, open and closed branches, rule extension of existing tableaux, justification labels and a worked closure of true-signed A conjunction not-A.",
+  "samples": [
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "Tableaux are generated inductively from assumptions and inference rules: the base case is one branch of one or more assumptions, and the extension case applies a rule to a branch of an existing tableau.",
+      "checks": "Both inductive cases and the one-or-more lower bound are explicit; the Marathi does not treat arbitrary trees as tableaux."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "A tableau for n signed assumptions is a finite signed-formula tree whose n top entries are those assumptions in a vertical list and whose other entries follow correctly from an earlier signed formula on their branch. A branch is closed exactly when it contains both signs of one A; otherwise it is open. A tableau is closed exactly when all branches close, and open when at least one branch remains open.",
+      "checks": "The true/false sign alternatives, n assumptions, correct-rule requirement, biconditional branch criterion, every-branch closure and at-least-one open criterion are all retained."
+    },
+    {
+      "blocks": [
+        8,
+        9
+      ],
+      "reverse_paraphrase": "An assumption set alone forms a tableau but normally is not closed; closure at that stage requires an opposite-signed pair already among the assumptions. Applying a rule to one occurrence of A extends every branch containing that occurrence.",
+      "checks": "The extension affects every relevant branch and only the selected occurrence's branches. The parenthetical is preserved as the source's necessary condition rather than silently rewritten as a new formal theorem."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "Starting with true A-and-not-A, true conjunction adds true A and true not-A on one branch. Tableau annotations on the right identify the applied rule and source line. Applying true negation to line 3 adds false A, which pairs with true A and closes the branch.",
+      "checks": "All three tableau encodings, line references, truth signs, conjunction and negation rule labels, and the final close marker are source-identical."
+    }
+  ],
+  "source_observations": [
+    "No source correction was required in this unit.",
+    "The definition distinguishes a closed branch from a closed tableau and requires all branches for the latter.",
+    "All tableau tree commands, formulas, rule annotations and close markers remain unchanged."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "वृक्ष, शाखा and टॅब्लो retain their established provisional status where exact Marathi specialist attestation is sparse.",
+    "The displayed tableau layout will receive visual inspection when the complete chapter enters the next cumulative reader."
+  ]
+}

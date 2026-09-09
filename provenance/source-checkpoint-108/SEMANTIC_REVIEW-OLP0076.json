@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0076",
+  "method": "Same-agent English/Marathi block-by-block close reading, bottom-up reconstruction of the displayed LK derivation, reverse paraphrase of every instructional claim, and exact formula, macro, token and identifier comparison; no independent human or native-speaker review is claimed.",
+  "scope": "The quantified LK worked example and two exercise sets: ordering eigenvariable-governed steps, anticipating the initial sequent, choosing one constant for the universal and existential steps, verifying the lower-sequent side condition, and nine quantified exercise sequents.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "The section concerns derivations with quantifiers and asks for an LK derivation from existential not-A to not universal A.",
+      "checks": "The section token, system label, existential and universal scopes, negations, sequent direction and requested derivation remain exact."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "When quantifiers are present, eigenvariable-governed rules should usually be handled early in bottom-up proof search, so that they occur lower in the completed proof. Looking ahead to the anticipated initial sequent A(a) entails A(a) shows that the same term a must be chosen for the universal and existential rules; choosing a and b would leave the generally underivable A(a) entails A(b).",
+      "checks": "The advice remains a heuristic rather than a new rule. Earlier/lower proof-tree orientation, the same-term requirement, both displayed candidate sequents and the underivability judgment are preserved."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "Start from the desired end-sequent. Choose existential-left before negation-right because existential-left has the eigenvariable condition. Reverse the two negation rules, then use universal-left with a to reach the initial sequent A(a) entails A(a). The only eigenvariable-governed step is existential-left, and a is absent from its lower sequent, which is the end-sequent, so the derivation is correct.",
+      "checks": "Every proof-tree formula, context order, exchange step, rule label and quantifier scope is unchanged. The prose preserves the distinction between the unrestricted universal-left step and the eigenvariable-governed existential-left step, and checks absence of a in the correct lower sequent. The source's prose-form rule labels using \\exists and \\forall and its tree labels using \\lexists and \\lforall are preserved exactly."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "Construct derivations for six displayed sequents covering distribution-style universal and existential implications, a universally quantified conditional, the two directions relating quantified negation, and a nested self-reference-style quantified formula.",
+      "checks": "All six exercise formulas, variable letters, predicate arguments, connective scopes and punctuation remain exact."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "Construct derivations for three further quantified sequents; all require right contraction.",
+      "checks": "All three exercise formulas and the explicit right-contraction requirement remain exact."
+    }
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "आयगेन चर and आयगेन चराची अट remain low-confidence, definition-controlled choices: the checked observation supports the Marathi spelling of the eigen modifier in another technical domain, not proof-theory usage, and its hash identifies an observation note rather than source-page bytes.",
+    "The current coherent reader ends at OLP-0068, so this source unit has not yet received paginated TeX or browser rendering QA; its exact structural and semantic checks do not claim visual validation."
+  ]
+}

@@ -1,0 +1,740 @@
+{
+  "schema": "openlogic-source-checkpoint/1",
+  "checkpoint_id": "mr-Deva-IN-source-108-20260909",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": {
+    "translation_source_units": 108,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0111",
+    "aligned_translated_segments": 1149,
+    "reader_sections": 96,
+    "complete_chapters": 11,
+    "remaining_source_units": 614,
+    "complete_edition": false
+  },
+  "translation_files": [
+    {
+      "unit_id": "OLP-0004",
+      "path": "mr/content/sets-functions-relations/sets/sets.tex",
+      "bytes": 361,
+      "sha256": "21784c3a578849ff1a59ceba2e9a264c956947c2b829c3cd55d07ba39b768bfa"
+    },
+    {
+      "unit_id": "OLP-0005",
+      "path": "mr/content/sets-functions-relations/sets/basics.tex",
+      "bytes": 8205,
+      "sha256": "cc9e7f18fe9b56a3213c5356d21a861038bd1fd965026d136acc6c619b020a3f"
+    },
+    {
+      "unit_id": "OLP-0006",
+      "path": "mr/content/sets-functions-relations/sets/subsets.tex",
+      "bytes": 6958,
+      "sha256": "17d44644566ff3fa483a08d8ec126d8bc882be80ab18402276c138daa06ac439"
+    },
+    {
+      "unit_id": "OLP-0007",
+      "path": "mr/content/sets-functions-relations/sets/important-sets.tex",
+      "bytes": 4918,
+      "sha256": "2b2826771aee726d61b447519dafa3bc86267ae5d31e701b2fb570bd25e471b6"
+    },
+    {
+      "unit_id": "OLP-0008",
+      "path": "mr/content/sets-functions-relations/sets/unions-and-intersections.tex",
+      "bytes": 10460,
+      "sha256": "3b9cdaa40936cf4bbaad21f7ac3207b87734fa413fdc5a60d150086753827e1c"
+    },
+    {
+      "unit_id": "OLP-0009",
+      "path": "mr/content/sets-functions-relations/sets/pairs-and-products.tex",
+      "bytes": 8322,
+      "sha256": "c0f55492bdffe4c5fd56d7b5fd3c7705067f3b5fea94ef2ef26eef6f9f838ab4"
+    },
+    {
+      "unit_id": "OLP-0010",
+      "path": "mr/content/sets-functions-relations/sets/russells-paradox.tex",
+      "bytes": 8228,
+      "sha256": "1a90616118306c08155762475539a3eb184ac64429242d41cbb25083b666c9ab"
+    },
+    {
+      "unit_id": "OLP-0011",
+      "path": "mr/content/sets-functions-relations/relations/relations-complete.tex",
+      "bytes": 416,
+      "sha256": "b046b80ac5e8d80f4592ae5b542423926a24d6aa9dfc80654f32667155937771"
+    },
+    {
+      "unit_id": "OLP-0012",
+      "path": "mr/content/sets-functions-relations/relations/relations-as-sets.tex",
+      "bytes": 9853,
+      "sha256": "79011c7103c94d7589e71db510f7fc66d0e20ce60a10e5015ea78a8e4a5d182b"
+    },
+    {
+      "unit_id": "OLP-0013",
+      "path": "mr/content/sets-functions-relations/relations/reflections.tex",
+      "bytes": 8190,
+      "sha256": "71df76f45bb3914cd3ab727b23b16906877bdbd242626163969313d6ca88fc27"
+    },
+    {
+      "unit_id": "OLP-0014",
+      "path": "mr/content/sets-functions-relations/relations/special-properties.tex",
+      "bytes": 5924,
+      "sha256": "84cac360ba896f06ed6579fad40e396d79999f09f78970a4b217e7b3785ed13a"
+    },
+    {
+      "unit_id": "OLP-0015",
+      "path": "mr/content/sets-functions-relations/relations/equivalence-relations.tex",
+      "bytes": 6261,
+      "sha256": "c6022f25bc5fdc6fa07aeff03fe8d53f822b67a147d9dc63537819c68f843f9f"
+    },
+    {
+      "unit_id": "OLP-0016",
+      "path": "mr/content/sets-functions-relations/relations/orders.tex",
+      "bytes": 11424,
+      "sha256": "c609fb91d21b9873cd04725fb20cd8ba18b3ced66b9e3026af24dd6f1863ea36"
+    },
+    {
+      "unit_id": "OLP-0017",
+      "path": "mr/content/sets-functions-relations/relations/graphs.tex",
+      "bytes": 5045,
+      "sha256": "f74cf58294abdca142b56bf8d1889c845426261fb983057323e10360c16c2537"
+    },
+    {
+      "unit_id": "OLP-0018",
+      "path": "mr/content/sets-functions-relations/relations/trees.tex",
+      "bytes": 10061,
+      "sha256": "0fc33d52ebb3680000d5d917d5fc11ffb4f2db585fb20647768da815b2b10c22"
+    },
+    {
+      "unit_id": "OLP-0019",
+      "path": "mr/content/sets-functions-relations/relations/operations.tex",
+      "bytes": 3983,
+      "sha256": "cd39ee393a24d7005bbb18ea0ea2b6d6d5751e791462412a13a234cb33d28ba4"
+    },
+    {
+      "unit_id": "OLP-0020",
+      "path": "mr/content/sets-functions-relations/functions/functions.tex",
+      "bytes": 402,
+      "sha256": "0df2102f15775d3bc62db5d05efea78f6e2f77d2e734f7d85a29ca02de88075b"
+    },
+    {
+      "unit_id": "OLP-0021",
+      "path": "mr/content/sets-functions-relations/functions/function-basics.tex",
+      "bytes": 12736,
+      "sha256": "c565a8b3f0fe6ee11f96d4e75a85dbb68a0af19c40e36abddeb192820c3f5b58"
+    },
+    {
+      "unit_id": "OLP-0022",
+      "path": "mr/content/sets-functions-relations/functions/function-kinds.tex",
+      "bytes": 6721,
+      "sha256": "64476fe81c8f88f7b271faca2f1ba66db83e180a148c31d93df96cb4c60ecf0f"
+    },
+    {
+      "unit_id": "OLP-0023",
+      "path": "mr/content/sets-functions-relations/functions/functions-relations.tex",
+      "bytes": 8665,
+      "sha256": "310740da7515c2eb429b3a7240bd0ec8750b07a0e7518d7d442c8d7676b03c8c"
+    },
+    {
+      "unit_id": "OLP-0024",
+      "path": "mr/content/sets-functions-relations/functions/inverses.tex",
+      "bytes": 13418,
+      "sha256": "a8e61fab02682fad503a3a228e22bf456f4e3f99ea222999d476ac3cd33454a7"
+    },
+    {
+      "unit_id": "OLP-0025",
+      "path": "mr/content/sets-functions-relations/functions/composition.tex",
+      "bytes": 4160,
+      "sha256": "10d0d4dca6c74c38a25232501999a64f5f3f8d5f2511f4f5fc116eb5aa30a337"
+    },
+    {
+      "unit_id": "OLP-0026",
+      "path": "mr/content/sets-functions-relations/functions/partial-functions.tex",
+      "bytes": 4978,
+      "sha256": "d0c4479b94016825ed5e76028878dfdfa53b598801b0b7123240410d97048026"
+    },
+    {
+      "unit_id": "OLP-0027",
+      "path": "mr/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex",
+      "bytes": 2486,
+      "sha256": "aa9d482149441ac42305ae1b4de1a65854019e0e15735f77e65a0864593585c4"
+    },
+    {
+      "unit_id": "OLP-0028",
+      "path": "mr/content/sets-functions-relations/size-of-sets/introduction.tex",
+      "bytes": 2379,
+      "sha256": "827d7fc9a9f834cc4b7e0c46578b06d59fa0e5ed53a1c2028ba93a3a90b1b827"
+    },
+    {
+      "unit_id": "OLP-0029",
+      "path": "mr/content/sets-functions-relations/size-of-sets/enumerability.tex",
+      "bytes": 23881,
+      "sha256": "ae0660be31b32a915f2ce98618a49dd79f6780d89af632430cce224e4a7eca28"
+    },
+    {
+      "unit_id": "OLP-0030",
+      "path": "mr/content/sets-functions-relations/size-of-sets/zig-zag.tex",
+      "bytes": 6645,
+      "sha256": "31aa9da1c54210a75a88d57c21dd195c1680780817ae589cb79a0ef3ef0465c7"
+    },
+    {
+      "unit_id": "OLP-0031",
+      "path": "mr/content/sets-functions-relations/size-of-sets/pairing.tex",
+      "bytes": 9683,
+      "sha256": "d6b49a8d690c26368bb8858a2dea07f9b29cdbdaf4a2a942d5ae0b47a652bf98"
+    },
+    {
+      "unit_id": "OLP-0032",
+      "path": "mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex",
+      "bytes": 9571,
+      "sha256": "85c21ae38ea5c88e81b57aa0f6e8e6f8ffd007df768ddaa32fbf984c706ff44b"
+    },
+    {
+      "unit_id": "OLP-0033",
+      "path": "mr/content/sets-functions-relations/size-of-sets/non-enumerability.tex",
+      "bytes": 17262,
+      "sha256": "a675f557f99fd70baa66f1c7954230cd987e6bb5a914aacf096d734ff7b63cdf"
+    },
+    {
+      "unit_id": "OLP-0034",
+      "path": "mr/content/sets-functions-relations/size-of-sets/reduction.tex",
+      "bytes": 12029,
+      "sha256": "8cf90f2eef20f7555a392cd8c270d55a54d4804b4f343471ec4cb8dcc3cc45c1"
+    },
+    {
+      "unit_id": "OLP-0035",
+      "path": "mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex",
+      "bytes": 8980,
+      "sha256": "72ddf6826f31f582b29b4e05f5fdc70d56b3d92cd004b6e788f514524ce7b040"
+    },
+    {
+      "unit_id": "OLP-0036",
+      "path": "mr/content/sets-functions-relations/size-of-sets/comparing-size.tex",
+      "bytes": 13609,
+      "sha256": "daf301e108adf21bcc4b4d90b7f4dd77d550bdbc494656605d9f9f96029b6c71"
+    },
+    {
+      "unit_id": "OLP-0037",
+      "path": "mr/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex",
+      "bytes": 3695,
+      "sha256": "732dfacfd9a78c49cb4dbdbc606032c567d8f63c43dd3c036dc8ca74054381cc"
+    },
+    {
+      "unit_id": "OLP-0038",
+      "path": "mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex",
+      "bytes": 8969,
+      "sha256": "7abf6ac32f053dcc857bfba066d00cc42e386e8c3fe6824e4611263e19ff6984"
+    },
+    {
+      "unit_id": "OLP-0039",
+      "path": "mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "bytes": 13009,
+      "sha256": "627d280fd57bdf926d0cff74db0399c872c72dc87a125fdb438f53aca9ff2d0f"
+    },
+    {
+      "unit_id": "OLP-0040",
+      "path": "mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex",
+      "bytes": 11169,
+      "sha256": "384bb2b6e916217d585ee77a3c73ece1a4dadaf218a74d9ef2d0e66faa848d44"
+    },
+    {
+      "unit_id": "OLP-0041",
+      "path": "mr/content/sets-functions-relations/arithmetization/arithmetization.tex",
+      "bytes": 755,
+      "sha256": "3aee51e027b6cf9f7d6f318d34b5fb092c9ab086cf8583bf6e81e43732a64034"
+    },
+    {
+      "unit_id": "OLP-0042",
+      "path": "mr/content/sets-functions-relations/arithmetization/integers.tex",
+      "bytes": 9827,
+      "sha256": "6e7942cd702965eef4b1f685717897e597ce2cebbd1445e7f58310b0e8bd8e38"
+    },
+    {
+      "unit_id": "OLP-0043",
+      "path": "mr/content/sets-functions-relations/arithmetization/rationals.tex",
+      "bytes": 6639,
+      "sha256": "4ccbff9aa4d27276fc582ad5e66b1ed7d103c6bbc9e4aff96a6266d29f6768be"
+    },
+    {
+      "unit_id": "OLP-0044",
+      "path": "mr/content/sets-functions-relations/arithmetization/reals.tex",
+      "bytes": 10607,
+      "sha256": "57d749ed9ada1a9bffba484ca8d9227ceaaeb05e52da6f58fe790883362565da"
+    },
+    {
+      "unit_id": "OLP-0045",
+      "path": "mr/content/sets-functions-relations/arithmetization/cuts.tex",
+      "bytes": 12294,
+      "sha256": "66cbf58423d253f96089b4d3c34cf648a30e43fc14d19cd26f993e67c1381160"
+    },
+    {
+      "unit_id": "OLP-0046",
+      "path": "mr/content/sets-functions-relations/arithmetization/reflections.tex",
+      "bytes": 12279,
+      "sha256": "e0de4ac678b4e2e3391bcaa96c0e8aab5ce1fbd84620a8af0fea0d7dfe57b746"
+    },
+    {
+      "unit_id": "OLP-0047",
+      "path": "mr/content/sets-functions-relations/arithmetization/checking-details.tex",
+      "bytes": 15478,
+      "sha256": "e52823e92702f904bba6be3aaddf7e3bc8c3de4cd9afc137abfc1359947571c0"
+    },
+    {
+      "unit_id": "OLP-0048",
+      "path": "mr/content/sets-functions-relations/arithmetization/cauchy.tex",
+      "bytes": 23798,
+      "sha256": "cb8c22d068cb3af77e72fccca58f6373e12ed378df88ba35eff628f9730d87fb"
+    },
+    {
+      "unit_id": "OLP-0049",
+      "path": "mr/content/sets-functions-relations/infinite/infinite.tex",
+      "bytes": 561,
+      "sha256": "1394b896c1cbaa9e71b493e0f0f41dec78d964bf0220b9acf14dba80718269df"
+    },
+    {
+      "unit_id": "OLP-0050",
+      "path": "mr/content/sets-functions-relations/infinite/hilberts-hotel.tex",
+      "bytes": 4795,
+      "sha256": "234776763623753925d5d10437b03a481def0671d10fe8a9cc34a5ac69cfec80"
+    },
+    {
+      "unit_id": "OLP-0051",
+      "path": "mr/content/sets-functions-relations/infinite/dedekind-algebra.tex",
+      "bytes": 8781,
+      "sha256": "7bd6671dc46e2000ede225b5b704269baebac8af18c1cd756fb5151aa5e30c6f"
+    },
+    {
+      "unit_id": "OLP-0052",
+      "path": "mr/content/sets-functions-relations/infinite/dedekind-induction.tex",
+      "bytes": 6280,
+      "sha256": "f4ea5d7b31a3aaa5d45ad2f6962023ea6fcc9aa731d0d0b129036b800f419e57"
+    },
+    {
+      "unit_id": "OLP-0053",
+      "path": "mr/content/sets-functions-relations/infinite/dedekinds-proof.tex",
+      "bytes": 13407,
+      "sha256": "86febf6e8cd8ea0691a16653b3de3aa69aeb6897ce0f7123691b3a9c452bb2fd"
+    },
+    {
+      "unit_id": "OLP-0054",
+      "path": "mr/content/sets-functions-relations/infinite/card-sb.tex",
+      "bytes": 7569,
+      "sha256": "241b515c789b9bff1cd4af17d1b5f677c7a624a0af098e967735ee134c5db3b6"
+    },
+    {
+      "unit_id": "OLP-0055",
+      "path": "mr/content/propositional-logic/propositional-logic.tex",
+      "bytes": 2587,
+      "sha256": "b7d6f4dec1369d732d441946658ed4c07e8cdfbc38b571f3f6cd1fc3e883793e"
+    },
+    {
+      "unit_id": "OLP-0056",
+      "path": "mr/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "bytes": 903,
+      "sha256": "0e08ec11e663bb6e816007c82b37cb7ab6b80d9b1b98ebd1a6fdaedeeaac926a"
+    },
+    {
+      "unit_id": "OLP-0057",
+      "path": "mr/content/propositional-logic/syntax-and-semantics/introduction.tex",
+      "bytes": 9621,
+      "sha256": "f47457e1729a21f92e3f50b87f84e8275156328940ffede5630a6e84d233f0f0"
+    },
+    {
+      "unit_id": "OLP-0058",
+      "path": "mr/content/propositional-logic/syntax-and-semantics/formulas.tex",
+      "bytes": 12549,
+      "sha256": "3ee1295f08db1e035bcccdb1b38dea7c2e5e32eb9b8c0cf761e234f99aeb1138"
+    },
+    {
+      "unit_id": "OLP-0059",
+      "path": "mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex",
+      "bytes": 7040,
+      "sha256": "79bc6a02a614310fcacc729d114773255ca254fcab8353f6ebc77e22ef37190a"
+    },
+    {
+      "unit_id": "OLP-0060",
+      "path": "mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex",
+      "bytes": 9323,
+      "sha256": "c286c4a2bcb0655120929dd8908977b89122c57911f3148ac89da1d91e854803"
+    },
+    {
+      "unit_id": "OLP-0061",
+      "path": "mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex",
+      "bytes": 8108,
+      "sha256": "5a59bb3447547412f4f6b864c86440fd863b463242bbb1ac3e2631331901c939"
+    },
+    {
+      "unit_id": "OLP-0062",
+      "path": "mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex",
+      "bytes": 4726,
+      "sha256": "15c6e7600bbef28eb16a496ec2f7d89c207f4553b2b11c84fee50eb41453a627"
+    },
+    {
+      "unit_id": "OLP-0063",
+      "path": "mr/content/first-order-logic/proof-systems/proof-systems.tex",
+      "bytes": 1165,
+      "sha256": "b7f5124f799139d2e7b4df21a98e5c47951155c89ba50aa87ebce8629171196d"
+    },
+    {
+      "unit_id": "OLP-0064",
+      "path": "mr/content/first-order-logic/proof-systems/introduction.tex",
+      "bytes": 12272,
+      "sha256": "423f6af97c66898894e391e83a7cb83750bd5ee52c76117879311eca4de18a36"
+    },
+    {
+      "unit_id": "OLP-0065",
+      "path": "mr/content/first-order-logic/proof-systems/sequent-calculus.tex",
+      "bytes": 5965,
+      "sha256": "7c20bc68fad48a4acb7f84edabcc1a73952431ef41b492fc7aa6346abe5f9eb0"
+    },
+    {
+      "unit_id": "OLP-0066",
+      "path": "mr/content/first-order-logic/proof-systems/natural-deduction.tex",
+      "bytes": 10217,
+      "sha256": "4fc536c5294597164a0e11178b4b8a0de34d78dd5bc22dfac77ef637bdd561c6"
+    },
+    {
+      "unit_id": "OLP-0067",
+      "path": "mr/content/first-order-logic/proof-systems/tableaux.tex",
+      "bytes": 7017,
+      "sha256": "7edfbd4c290cbf7d54b69faa301175f69fafe361ee5c65919ec26127b0416936"
+    },
+    {
+      "unit_id": "OLP-0068",
+      "path": "mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex",
+      "bytes": 8721,
+      "sha256": "633c1f5f5684ae30f12827009b6f653cd7e74c241a0bc6e3e6ba763d3a59276b"
+    },
+    {
+      "unit_id": "OLP-0069",
+      "path": "mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex",
+      "bytes": 1553,
+      "sha256": "0045e80c413952f6d2ac417d2dab1829a90645092da4c0eeac2c6d1640623359"
+    },
+    {
+      "unit_id": "OLP-0070",
+      "path": "mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex",
+      "bytes": 5722,
+      "sha256": "c8236f2f876e774afa7d0c9cd5063ab4b63867b88b87cfdcdd0719c94ad7704d"
+    },
+    {
+      "unit_id": "OLP-0071",
+      "path": "mr/content/first-order-logic/sequent-calculus/propositional-rules.tex",
+      "bytes": 2119,
+      "sha256": "7e136d1999d5bb7ba9a77da67c2c6d5159db5d31c0ce22452642f7396c106098"
+    },
+    {
+      "unit_id": "OLP-0072",
+      "path": "mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex",
+      "bytes": 6153,
+      "sha256": "7c80eca64a6ed3fdfff89988b7e8882b8971d91b565b7d7d80f4e15c8d3463ab"
+    },
+    {
+      "unit_id": "OLP-0073",
+      "path": "mr/content/first-order-logic/sequent-calculus/structural-rules.tex",
+      "bytes": 3181,
+      "sha256": "cc2d9e2be2783515b39151db27a2a66e43f5a85164164c48e87ac081578d0353"
+    },
+    {
+      "unit_id": "OLP-0074",
+      "path": "mr/content/first-order-logic/sequent-calculus/derivations.tex",
+      "bytes": 6881,
+      "sha256": "495a240073f5d934c4a2528afb4bf109c698533bcb3c907edfa56e11ac45016e"
+    },
+    {
+      "unit_id": "OLP-0075",
+      "path": "mr/content/first-order-logic/sequent-calculus/proving-things.tex",
+      "bytes": 18045,
+      "sha256": "68ba7ffba8a4b1d34810e39989fd64c80d9052a61312301c9fd5817d3e8b1e2b"
+    },
+    {
+      "unit_id": "OLP-0076",
+      "path": "mr/content/first-order-logic/sequent-calculus/proving-things-quant.tex",
+      "bytes": 7051,
+      "sha256": "1f5636737188cda5320496b3eb76848e6e6f3f683731372db73d4f555f6ac167"
+    },
+    {
+      "unit_id": "OLP-0077",
+      "path": "mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
+      "bytes": 9958,
+      "sha256": "fa4274603a0f720d1ac92518482bbff90477b69eabad834a0a6e13f812d72313"
+    },
+    {
+      "unit_id": "OLP-0078",
+      "path": "mr/content/first-order-logic/sequent-calculus/provability-consistency.tex",
+      "bytes": 5129,
+      "sha256": "e55b3163f546120bc34da7baeca2be2eb6a0b071f7898649fb07b965769dd343"
+    },
+    {
+      "unit_id": "OLP-0079",
+      "path": "mr/content/first-order-logic/sequent-calculus/provability-propositional.tex",
+      "bytes": 5471,
+      "sha256": "3a6b977cfeb4c799292792f4a98515cee98fb2c3dcba33c8db259b2e77c884e1"
+    },
+    {
+      "unit_id": "OLP-0080",
+      "path": "mr/content/first-order-logic/sequent-calculus/provability-quantifiers.tex",
+      "bytes": 2363,
+      "sha256": "a7bfe7d8b3cf86183f54cb754226411c46269593d84e7e5b8db75cae379f0fa6"
+    },
+    {
+      "unit_id": "OLP-0081",
+      "path": "mr/content/first-order-logic/sequent-calculus/soundness.tex",
+      "bytes": 27582,
+      "sha256": "a92f2714c79f182be7cfd546208c6d59dc509216cf701a40daacde5ad5269c6e"
+    },
+    {
+      "unit_id": "OLP-0082",
+      "path": "mr/content/first-order-logic/sequent-calculus/identity.tex",
+      "bytes": 3079,
+      "sha256": "14005d31a265d5db21fa8390db262f59b13e32b65cea4d3f5194d21ecc66539d"
+    },
+    {
+      "unit_id": "OLP-0083",
+      "path": "mr/content/first-order-logic/sequent-calculus/soundness-identity.tex",
+      "bytes": 2887,
+      "sha256": "7b8bc67b41404b7470790802f4f207771614c320d811be1fd24ba12cd6bdd479"
+    },
+    {
+      "unit_id": "OLP-0084",
+      "path": "mr/content/first-order-logic/natural-deduction/natural-deduction.tex",
+      "bytes": 1252,
+      "sha256": "ae4d15cab15b9b9ed516784318ee706d3f171f0009a5ad67b13f07d4e432e82c"
+    },
+    {
+      "unit_id": "OLP-0085",
+      "path": "mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "bytes": 3970,
+      "sha256": "aee516aa0aa8123ef72859874a859d472a5db3d865a50b58324de828e95bcd84"
+    },
+    {
+      "unit_id": "OLP-0086",
+      "path": "mr/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "bytes": 2980,
+      "sha256": "86de5e9c4560bbac3f1a21cfc387b42080d81a3367e0e5b09d033960ff4a071a"
+    },
+    {
+      "unit_id": "OLP-0087",
+      "path": "mr/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "bytes": 7105,
+      "sha256": "e7ba80f4448acd3a65d726db56d488a5a6901d9af216373e8b1158c2a51ac3a1"
+    },
+    {
+      "unit_id": "OLP-0088",
+      "path": "mr/content/first-order-logic/natural-deduction/derivations.tex",
+      "bytes": 6104,
+      "sha256": "e11bee82f4f3f47184274c330cc854e3ba8538be1d263f4a6e6f26996ed5b4e9"
+    },
+    {
+      "unit_id": "OLP-0089",
+      "path": "mr/content/first-order-logic/natural-deduction/proving-things.tex",
+      "bytes": 15969,
+      "sha256": "db525505bc80e698b8e817602c7153608c22f1fd3e3030379210bc843806f1b3"
+    },
+    {
+      "unit_id": "OLP-0090",
+      "path": "mr/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "bytes": 14197,
+      "sha256": "39fefa88f8825a932e4b735744205c17b6278a2d0bb228aa7f8816abdcec46a3"
+    },
+    {
+      "unit_id": "OLP-0091",
+      "path": "mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "bytes": 8530,
+      "sha256": "4ef765277be8c715f76bbb795df9a9e30a1c5ac1fdb939912b187aaa969e9e89"
+    },
+    {
+      "unit_id": "OLP-0092",
+      "path": "mr/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "bytes": 5392,
+      "sha256": "eeafe39740a2a8bb5b7c3c3fdcf72c2daf6b4c1bd3461010354526371e118bd1"
+    },
+    {
+      "unit_id": "OLP-0093",
+      "path": "mr/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "bytes": 4764,
+      "sha256": "0018dd231fef574adb5d68eef97dfb2f28b11a3903b89cbaa08571743f91a06d"
+    },
+    {
+      "unit_id": "OLP-0094",
+      "path": "mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "bytes": 2276,
+      "sha256": "3fcfd2dad8bcc66bd8a79bbfb08dd32291a90b1791a0308684b3c184ff0a23d1"
+    },
+    {
+      "unit_id": "OLP-0095",
+      "path": "mr/content/first-order-logic/natural-deduction/soundness.tex",
+      "bytes": 20916,
+      "sha256": "2d4f4ff8625868c2b407ef502431e1d1a7ad92529f3a8eab903206f1f8950c30"
+    },
+    {
+      "unit_id": "OLP-0096",
+      "path": "mr/content/first-order-logic/natural-deduction/identity.tex",
+      "bytes": 4957,
+      "sha256": "8c94092afbb07d170f3e7506c99673a33913a5fa7ebf7fafe4dd152e7414bec3"
+    },
+    {
+      "unit_id": "OLP-0097",
+      "path": "mr/content/first-order-logic/natural-deduction/soundness-identity.tex",
+      "bytes": 2600,
+      "sha256": "29882bbe9f754d0e3d518832f57837a5534fadb1265ace3f80cdf8dc3c190331"
+    },
+    {
+      "unit_id": "OLP-0098",
+      "path": "mr/content/first-order-logic/tableaux/tableaux.tex",
+      "bytes": 1232,
+      "sha256": "11360ac4a728568a61d5c257f71462457961737cbc2f0fb95b730a967d8dc47c"
+    },
+    {
+      "unit_id": "OLP-0099",
+      "path": "mr/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "bytes": 4872,
+      "sha256": "b3a2404dc03bad5148c666657a7b2f7e83e0ce8396d142cdab4979ce66936be3"
+    },
+    {
+      "unit_id": "OLP-0100",
+      "path": "mr/content/first-order-logic/tableaux/propositional-rules.tex",
+      "bytes": 2798,
+      "sha256": "0db2abed47e557fe63e7391cfc45e3318b1f7b600489703a72e54af947c0a9d3"
+    },
+    {
+      "unit_id": "OLP-0101",
+      "path": "mr/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "bytes": 5632,
+      "sha256": "d87d3641f5b52ba87aa56bf068646e82647d99f2daf8851313baf9e842ceec90"
+    },
+    {
+      "unit_id": "OLP-0102",
+      "path": "mr/content/first-order-logic/tableaux/derivations.tex",
+      "bytes": 6127,
+      "sha256": "3870e7bf7dce0aee6624e3f81b91234aae94fb4398a8be906b5bd7695c8761fb"
+    },
+    {
+      "unit_id": "OLP-0103",
+      "path": "mr/content/first-order-logic/tableaux/proving-things.tex",
+      "bytes": 22000,
+      "sha256": "3e409ef1e2b795bda24b44a12c96269725b6c9b10414b15ec286be66f59d0c89"
+    },
+    {
+      "unit_id": "OLP-0104",
+      "path": "mr/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "bytes": 16153,
+      "sha256": "118d46011bb30a623a94c74e4d0538cdf607e370068bcd52cdce17d654de9ac9"
+    },
+    {
+      "unit_id": "OLP-0105",
+      "path": "mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "bytes": 9118,
+      "sha256": "2c1e5e624f2c375a4154eb81b6babd1c11f9b8bb7de91338457d268fa0caba23"
+    },
+    {
+      "unit_id": "OLP-0106",
+      "path": "mr/content/first-order-logic/tableaux/provability-consistency.tex",
+      "bytes": 9958,
+      "sha256": "48999350d9eab1db564d4dd3b5c756ff69285ba68fb58c9837df4cbc6c6a490d"
+    },
+    {
+      "unit_id": "OLP-0107",
+      "path": "mr/content/first-order-logic/tableaux/provability-propositional.tex",
+      "bytes": 7088,
+      "sha256": "4b410c74f1bd95275d99cbb7fa21e3c98f1c750a228b6437568c9c0d94499293"
+    },
+    {
+      "unit_id": "OLP-0108",
+      "path": "mr/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "bytes": 4079,
+      "sha256": "516c44b53794a280d210740eb9ee48777d8b906fd911fc17b318d49caa1450cd"
+    },
+    {
+      "unit_id": "OLP-0109",
+      "path": "mr/content/first-order-logic/tableaux/soundness.tex",
+      "bytes": 18389,
+      "sha256": "565c251795aac02e5b7180d497fbd6791988b005df6e9dfa4ceb6412ce52c1d1"
+    },
+    {
+      "unit_id": "OLP-0110",
+      "path": "mr/content/first-order-logic/tableaux/identity.tex",
+      "bytes": 4596,
+      "sha256": "44fb1c97398823886db1665d80167102203889136ab839aec67f4c37cee69274"
+    },
+    {
+      "unit_id": "OLP-0111",
+      "path": "mr/content/first-order-logic/tableaux/soundness-identity.tex",
+      "bytes": 2711,
+      "sha256": "b29ce321ad48141864f95afc17ba501023bd8c32322d57bf5ff8d2223801cf43"
+    }
+  ],
+  "linked_translation_decision_bundle": [
+    {
+      "path": "provenance/translation-decisions/START_HERE.md",
+      "bytes": 1982,
+      "sha256": "a736f83f174e4d28535314e725cb0122741563fb712aeff73e45a750513e2811"
+    },
+    {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISIONS_FULL.md",
+      "bytes": 2394659,
+      "sha256": "c077b27add06f0fc7b482d6aa1d84b7062d2a931f135770957bfaa0919da3050"
+    },
+    {
+      "path": "provenance/translation-decisions/PRIORITY_REVIEW.md",
+      "bytes": 144350,
+      "sha256": "88ca2e224302a2a701317949b0bde9a04d96c65b3f13ed22fec26955da65f875"
+    },
+    {
+      "path": "provenance/translation-decisions/DECISION_OCCURRENCES.csv",
+      "bytes": 19526260,
+      "sha256": "cf0da0ee367da14f3ef8b2eff96be5ca73683f82fcbce7d3554672eae5b6f8c3"
+    },
+    {
+      "path": "provenance/translation-decisions/DECISIONS.json",
+      "bytes": 39701003,
+      "sha256": "1c5a0fe8010c3dd75e46a7dad89087f19aab086254ef128407803ffee6271496"
+    },
+    {
+      "path": "provenance/translation-decisions/translation-decision.schema.json",
+      "bytes": 10787,
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
+    },
+    {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "bytes": 3527,
+      "sha256": "19211a1d58406badb2eece945bb7e7849897624d28cc5cf5fd1efc68264fac14"
+    }
+  ],
+  "evidence_manifest_excludes": [
+    "SOURCE_CHECKPOINT.json (self-referential receipt)",
+    "README.md (human-readable guide)"
+  ],
+  "canon": {
+    "sources": 75,
+    "passages": 99,
+    "term_decisions": 185,
+    "all_segments_have_resolved_canon_passages": true
+  },
+  "qa": {
+    "cross_package_consistency": "passed on the exact 108-unit working surface",
+    "shared_translation_decision_schema": "passed with zero errors",
+    "reader": {
+      "pdf": {
+        "pages": 157,
+        "bytes": 684717,
+        "sha256": "bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450"
+      },
+      "tex": {
+        "bytes": 863854,
+        "sha256": "ad124e9439421f9a82d94d24af7ca6f064342a877e3286975c596ce5e07f81e2"
+      },
+      "html": {
+        "bytes": 2835387,
+        "sha256": "a8b64bd67948cb5cf5ffbf05aeaf4901a23244268371ea41d506374f6d9ecffe"
+      },
+      "native_mathml": 6544,
+      "semantic_proof_figures": 202,
+      "proof_formula_rows": 990,
+      "internal_links_valid": 293,
+      "two_clean_guarded_builds_byte_identical": true,
+      "all_pdf_pages_visually_reviewed": true,
+      "desktop_browser_layout_review": "passed"
+    }
+  },
+  "review": "Codex same-agent bilingual review; no independent human or native-speaker review claimed",
+  "publication_note": "This checkpoint freezes the coherent eleven-chapter reader through OLP-0111. Publication and anonymous remote-byte verification are recorded separately."
+}

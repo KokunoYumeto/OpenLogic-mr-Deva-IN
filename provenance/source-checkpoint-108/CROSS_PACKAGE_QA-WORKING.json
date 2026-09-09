@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-cross-package-consistency/1",
+  "scope": {
+    "source_manifest_units": 722,
+    "translated_units": 108,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0111",
+    "aligned_segments": 1149,
+    "review_occurrences": 7076,
+    "canonical_decisions": 247,
+    "canon_sources": 75,
+    "canon_passages": 99,
+    "term_decisions": 185
+  },
+  "set_equality": {
+    "translated_target_units_equal_segment_units": true,
+    "segment_units_equal_review_occurrence_units": true,
+    "review_targets_match_manifest_targets": true
+  },
+  "reference_integrity": {
+    "source_manifest_exactly_722": true,
+    "segment_source_and_target_hashes_replayed": 1149,
+    "canon_source_and_passage_references_resolved": true,
+    "term_decision_references_resolved": true,
+    "legacy_and_canonical_occurrence_ids_equal": true
+  },
+  "reader_binding": {
+    "sha256": "bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450",
+    "available_occurrences_share_one_reader_hash": true,
+    "unpaginated_occurrences_have_no_fabricated_reader_hash_or_numeric_page": true,
+    "reader_pdf_bytes_verified_when_supplied": true
+  },
+  "surfaces": {
+    "editable": "working tree",
+    "review": "working tree",
+    "unrecorded_later_draft_targets_excluded_from_working_coverage": []
+  },
+  "result": "passed"
+}

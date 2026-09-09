@@ -1,0 +1,51 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0066",
+  "method": "Same-agent English/Marathi close reading, formula/token/macro comparison, rule-direction inspection and reverse paraphrase with a freshly checked official Marathi Vishwakosh account of conditional and indirect proof; not independent or human review.",
+  "scope": "The natural-deduction overview: natural reasoning patterns and paired rules, temporary assumptions and discharge, derivability and theoremhood, inconsistency, historical contributors, and proof-theoretic semantics.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "Natural deduction formalizes patterns resembling disciplined mathematical reasoning. Proof by cases derives the same conclusion from each disjunct of a disjunctive premise; indirect proof derives a contradiction from the conclusion's negation; conditional proof derives the consequent from the antecedent. Each connective and quantifier has an introduction and an elimination rule. Conditional introduction corresponds to conditional proof, disjunction elimination to proof by cases, and conjunction elimination takes A-and-B to A or to B.",
+      "checks": "The three proof patterns remain distinct. Both disjunct cases, the negated intended conclusion, and the antecedent-to-consequent direction are explicit. The introduction/elimination pairing and every example macro and formula preserve their source direction."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "Natural deduction differs through assumptions. A derivation is a formula tree with one formula at the root and premise formulas at the leaves. Some leaf formulas matter temporarily but are used up before the conclusion. Case proof assumes each disjunct, conditional proof assumes the antecedent, and indirect proof assumes the conclusion's negation. Leaf formulas are assumptions; rules can discharge them. From a derivation of B whose assumptions include A, conditional introduction infers A-implies-B and discharges A assumptions. Numeric labels track discharge. The remaining undischarged assumptions jointly suffice for the conclusion and entail it.",
+      "checks": "Root and leaf orientation, temporary scope, all three assumption roles, the conditional-introduction direction, label purpose, joint sufficiency and semantic entailment are preserved. Discharge is not described as deleting a displayed formula from the tree."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "Gamma proves A in natural deduction exactly when a derivation ends with A and every undischarged leaf belongs to Gamma. A is a theorem exactly when a derivation ends with A and all assumptions are discharged. The displayed tree proves the conditional from an A-and-B assumption, and label 1 says that assumption is discharged at conditional introduction.",
+      "checks": "Both biconditionals retain both directions. The first permits undischarged leaves but restricts them to Gamma; the theorem clause requires all assumptions discharged. Every tree command, label, formula and connective remains unchanged."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "Gamma is inconsistent in natural deduction exactly when Gamma proves falsity. The false rule then allows any sentence to be derived from an inconsistent set.",
+      "checks": "The inconsistency biconditional, falsity formula, rule identity and explosion direction are preserved."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "Gentzen and Jaśkowski developed natural-deduction systems in the 1930s; Prawitz and Fitch developed them further. Philosophers favor the approach because its inferences resemble natural proof methods, and Fitch versions commonly appear in introductory texts. Some philosophy of logic treats natural-deduction rules as giving logical operators their meanings, called proof-theoretic semantics.",
+      "checks": "All four contributors, chronology, philosophical preference, textbook-use attribution and rule-gives-meaning claim are preserved. The official Marathi proof-theory source directly supports the Gentzen and Jaśkowski name forms."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "The official Marathi sources directly support सोपाधिक सिद्धता, अप्रत्यक्ष सिद्धता, गृहीतक, आधारविधान, पूर्वांग, उत्तरांग and निष्कर्ष, but do not directly attest प्रकरणांनुसार सिद्धता, the मुक्त discharge family, or प्रवेशन/विलोपन नियम.",
+    "सिद्धता-उपपत्तीय चिन्हार्थमीमांसा and the Marathi forms for Dag Prawitz and Frederic Fitch are provisional and explicitly exposed for specialist review."
+  ]
+}

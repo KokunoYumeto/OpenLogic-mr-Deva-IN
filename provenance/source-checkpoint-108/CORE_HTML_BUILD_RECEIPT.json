@@ -1,0 +1,6568 @@
+{
+  "schema": "openlogic-html-build/1",
+  "scope": {
+    "translation_source_units": 108,
+    "reader_sections": 96,
+    "complete_chapters": 11
+  },
+  "source_tex_sha256": "ad124e9439421f9a82d94d24af7ca6f064342a877e3286975c596ce5e07f81e2",
+  "source_pdf_sha256": "bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450",
+  "html_sha256": "a8b64bd67948cb5cf5ffbf05aeaf4901a23244268371ea41d506374f6d9ecffe",
+  "html_bytes": 2835387,
+  "diagram_assets": [
+    {
+      "filename": "assets/union.svg",
+      "sha256": "ab0a26119f0e58166ea50580563c7d2982a88e616704260c1591bca870b694d3",
+      "bytes": 85102,
+      "source_pdf_page": 11,
+      "source_pdf_crop": [
+        176,
+        131,
+        417,
+        328
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 11,
+      "alt": "A आणि B या दोन संचांचा संयोग. दोन्ही बंद वक्रांचा संपूर्ण भाग चिन्हांकित आहे; म्हणजे A किंवा B यांपैकी किमान एका संचातील सर्व घटक."
+    },
+    {
+      "filename": "assets/intersection.svg",
+      "sha256": "c8367e06253276568537e0dc26601c815792e71bb63d246134abd44c6d0eaf21",
+      "bytes": 85003,
+      "source_pdf_page": 11,
+      "source_pdf_crop": [
+        176,
+        485,
+        417,
+        682
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 7,
+      "alt": "A आणि B या दोन संचांचा छेद. दोन बंद वक्रांचा फक्त सामाईक आच्छादित भाग चिन्हांकित आहे."
+    },
+    {
+      "filename": "assets/difference.svg",
+      "sha256": "ea3e2ff33d82b8c479bc68c6e5dc59b5c262b6859f1b847a895180e41eb8f950",
+      "bytes": 357946,
+      "source_pdf_page": 13,
+      "source_pdf_crop": [
+        176,
+        68,
+        417,
+        264
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 10,
+      "alt": "A वजा B हा संचफरक. A च्या वक्रातील B च्या बाहेर राहणारा भाग चिन्हांकित आहे; सामाईक भाग वगळलेला आहे."
+    },
+    {
+      "filename": "assets/graph-four.svg",
+      "sha256": "3bb73b4047c82b71f19f34ed5de7347f02668254dfbfc7fc699dee6f6d071c4d",
+      "bytes": 319692,
+      "source_pdf_page": 22,
+      "source_pdf_crop": [
+        227,
+        207,
+        368,
+        305
+      ],
+      "source_pdf_crop_text_chars": 4,
+      "source_pdf_vector_drawing_count": 10,
+      "alt": "दिशित आलेखाची चार शिखरे 1, 2, 3 आणि 4. कडा 1 ते 1, 1 ते 2, 1 ते 3 आणि 2 ते 3; शिखर 4 एकाकी आहे."
+    },
+    {
+      "filename": "assets/graph-three.svg",
+      "sha256": "5a0b22ae5c83dbe2c576c7f53e8b8120f6993c74b930356fdbc7a479729411e6",
+      "bytes": 319743,
+      "source_pdf_page": 22,
+      "source_pdf_crop": [
+        227,
+        340,
+        312,
+        439
+      ],
+      "source_pdf_crop_text_chars": 3,
+      "source_pdf_vector_drawing_count": 9,
+      "alt": "दिशित आलेखाची शिखरे 1, 2 आणि 3. कडा 1 ते 1, 1 ते 2, 1 ते 3 आणि 2 ते 3; आधीच्या आलेखातील एकाकी शिखर 4 येथे नाही."
+    },
+    {
+      "filename": "assets/tree.svg",
+      "sha256": "6b42cb3f30f85f8877cb16dfd3b27ba78f0422f35b427afab2a3822c367d5886",
+      "bytes": 319792,
+      "source_pdf_page": 22,
+      "source_pdf_crop": [
+        241,
+        662,
+        354,
+        776
+      ],
+      "source_pdf_crop_text_chars": 6,
+      "source_pdf_vector_drawing_count": 11,
+      "alt": "सांत वृक्ष. सर्वांत खाली मूळ r; त्याची अपत्ये a आणि b; a ची अपत्ये c, d आणि e. पूर्वज संबंध कडांवरून वरच्या दिशेने वाचला जातो."
+    },
+    {
+      "filename": "assets/function.svg",
+      "sha256": "1efca6d8e611f39809f537a422f718ee8a887e183243ceff187cbccd0971a194",
+      "bytes": 434839,
+      "source_pdf_page": 26,
+      "source_pdf_crop": [
+        176,
+        67,
+        417,
+        201
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 15,
+      "alt": "फलनाची आकृती. डावीकडील प्रांतातील प्रत्येक फलसाधकापासून उजवीकडील सहप्रांतातील नेमक्या एका मूल्याकडे बाण जातो."
+    },
+    {
+      "filename": "assets/surjective.svg",
+      "sha256": "42472358d52d11492fb960ee2e000a256e95c054103afde2343a69409f1385ac",
+      "bytes": 350101,
+      "source_pdf_page": 27,
+      "source_pdf_crop": [
+        176,
+        613,
+        418,
+        746
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 13,
+      "alt": "आच्छादक फलन. सहप्रांतातील प्रत्येक लाल घटकाकडे प्रांतातील किमान एका करड्या घटकापासून बाण येतो."
+    },
+    {
+      "filename": "assets/injective.svg",
+      "sha256": "caeb9ecb6acc6752ca3d95b69bdd7348bbeae2fca4d2ef18ff3c49d82d988e5a",
+      "bytes": 294668,
+      "source_pdf_page": 28,
+      "source_pdf_crop": [
+        176,
+        67,
+        417,
+        221
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 18,
+      "alt": "एकास-एक फलन. वेगवेगळ्या करड्या फलसाधकांचे बाण वेगवेगळ्या लाल मूल्यांकडे जातात; सहप्रांतातील काही घटक मूल्य नसू शकतात."
+    },
+    {
+      "filename": "assets/bijective.svg",
+      "sha256": "90d2397bc65e9ef189a1422012809c3846d9d3dd7b70ebf406ac1fa4cef9933e",
+      "bytes": 294687,
+      "source_pdf_page": 28,
+      "source_pdf_crop": [
+        176,
+        613,
+        418,
+        746
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 14,
+      "alt": "एकास-एक व आच्छादक फलन. प्रांतातील प्रत्येक करडा घटक आणि सहप्रांतातील प्रत्येक लाल घटक यांची नेमकी एक जोडी बाणाने जोडलेली आहे."
+    },
+    {
+      "filename": "assets/composition.svg",
+      "sha256": "34404dda7518c2146342dd0c96b28b91f1fd1a27e9988ccb9f96c5673b3ae589",
+      "bytes": 397200,
+      "source_pdf_page": 32,
+      "source_pdf_crop": [
+        135,
+        602,
+        457,
+        747
+      ],
+      "source_pdf_crop_text_chars": 0,
+      "source_pdf_vector_drawing_count": 30,
+      "alt": "फलन-संयोजन g वर्तुळ f. डावीकडील A मधून f चे बाण मधल्या B मध्ये, B मधून g चे बाण उजवीकडील C मध्ये, आणि तुटक बाह्य बाण A मधून थेट C मधील त्याच अंतिम मूल्यांकडे जातात."
+    },
+    {
+      "filename": "assets/root-two-square.svg",
+      "sha256": "a65cc209f9f74bf50dd7ff6f87d928449a13a7cdf368c859a320c5f8b6c08fbb",
+      "bytes": 512140,
+      "source_pdf_page": 57,
+      "source_pdf_crop": [
+        214,
+        388,
+        367,
+        483
+      ],
+      "source_pdf_crop_text_chars": 2,
+      "source_pdf_vector_drawing_count": 8,
+      "alt": "वर्गमूळ दोनच्या अपरिमेयतेची भूमितीय आकृती. m बाजूच्या मोठ्या चौरसात n बाजूचे दोन आच्छादित चौरस आहेत; नारिंगी सामाईक चौरस आणि दोन न रंगवलेले कोपरे लहान समान रचना दाखवतात."
+    },
+    {
+      "filename": "assets/hilberts-hotel.svg",
+      "sha256": "6c8a11e0c49b7807aab4090d846fb89b7f1c48b5e9829494202383de42340296",
+      "bytes": 388738,
+      "source_pdf_page": 68,
+      "source_pdf_crop": [
+        180,
+        575,
+        415,
+        650
+      ],
+      "source_pdf_crop_text_chars": 23,
+      "source_pdf_vector_drawing_count": 19,
+      "alt": "हिल्बर्टच्या हॉटेलमधील खोली बदल. वरच्या ओळीत जुने पाहुणे 1, 2, 3 आणि पुढे आहेत; प्रत्येक बाण पाहुणा n याला खालच्या ओळीतील खोली n अधिक 1 मध्ये हलवतो, त्यामुळे वर्तुळ केलेली खोली 1 नव्या पाहुण्यासाठी मोकळी होते."
+    }
+  ],
+  "proof_representations": [
+    {
+      "id": "sequent-calculus-proof",
+      "section_id": "fol:prf:seq:sec",
+      "caption": "क्रमवर्ती कलनातील उदाहरण-निष्पत्ती",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi",
+          "rule": "आरंभीची क्रमवर्ती"
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi \\Rightarrow \\varphi",
+          "rule": "∧L"
+        },
+        {
+          "formula_tex": "\\Rightarrow (\\varphi \\land \\psi) \\to \\varphi",
+          "rule": "→R"
+        }
+      ]
+    },
+    {
+      "id": "natural-deduction-proof",
+      "section_id": "fol:prf:ntd:sec",
+      "caption": "नैसर्गिक निगमनातील उदाहरण-निष्पत्ती",
+      "rows": [
+        {
+          "formula_tex": "[\\varphi \\land \\psi]^1",
+          "rule": "गृहीतक"
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "∧Elim"
+        },
+        {
+          "formula_tex": "(\\varphi \\land \\psi) \\to \\varphi",
+          "rule": "→Intro; गृहीतक 1 मुक्त"
+        }
+      ]
+    },
+    {
+      "id": "tableau-proof",
+      "section_id": "fol:prf:tab:sec",
+      "caption": "बंद टॅब्लोचे उदाहरण; पाचव्या पायरीनंतर शाखा बंद होते",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,((\\varphi \\land \\psi) \\to \\varphi)",
+          "rule": "गृहीतक"
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,(\\varphi \\land \\psi)",
+          "rule": "→F 1"
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "→F 1"
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∧T 2"
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "∧T 2; शाखा बंद"
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-001",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "¬L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\lnot \\varphi",
+          "rule": "¬R",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-002",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 3 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "∧L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "∧L",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 3
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 3
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi \\land \\psi",
+          "rule": "∧R",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-003",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 3 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\psi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "∨L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi \\lor \\psi",
+          "rule": "∨R",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 3
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi \\lor \\psi",
+          "rule": "∨R",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-004",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi, \\Pi \\Rightarrow \\Lambda",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi, \\Gamma, \\Pi \\Rightarrow \\Delta, \\Lambda",
+          "rule": "→L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\Gamma \\Rightarrow \\Delta, \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi \\to \\psi",
+          "rule": "→R",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-005",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi(t), \\Gamma \\Rightarrow \\Delta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x),\\Gamma \\Rightarrow \\Delta",
+          "rule": "∀L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi(a)",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\forall {x}\\,\\varphi(x)",
+          "rule": "∀R",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-006",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi(a), \\Gamma \\Rightarrow \\Delta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\varphi(x), \\Gamma \\Rightarrow \\Delta",
+          "rule": "∃L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi(t)",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\exists {x}\\,\\varphi(x)",
+          "rule": "∃R",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-007",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi[t/x]",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\exists {x}\\,\\varphi",
+          "rule": "∃R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-008",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi(a) \\Rightarrow \\varphi(a)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\varphi(x) \\Rightarrow \\varphi(a)",
+          "rule": "*∃L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\varphi(x) \\Rightarrow \\forall {x}\\,\\varphi(x)",
+          "rule": "∀R",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi(a) \\Rightarrow \\varphi(a)",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi(a) \\Rightarrow \\forall {x}\\,\\varphi(x)",
+          "rule": "*∀R",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\varphi(x) \\Rightarrow \\forall {x}\\,\\varphi(x)",
+          "rule": "∃L",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-009",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "WL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "WR",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-010",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi, \\varphi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "CL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi, \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "CR",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-011",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma, \\varphi, \\psi, \\Pi \\Rightarrow \\Delta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma, \\psi, \\varphi, \\Pi \\Rightarrow \\Delta",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi, \\psi, \\Lambda",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\psi, \\varphi, \\Lambda",
+          "rule": "XR",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-012",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\Pi \\Rightarrow \\Lambda",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma, \\Pi \\Rightarrow \\Delta, \\Lambda",
+          "rule": "Cut",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-013",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "WL",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-014",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\chi \\Rightarrow \\chi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\theta, \\chi \\Rightarrow \\chi",
+          "rule": "WL",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-015",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\chi \\Rightarrow \\chi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\theta, \\chi \\Rightarrow \\chi",
+          "rule": "WL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi, \\theta \\Rightarrow \\chi",
+          "rule": "XL",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-016",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma, \\varphi, \\psi, \\Pi \\Rightarrow \\Delta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma, \\psi, \\varphi, \\Pi \\Rightarrow \\Delta,",
+          "rule": "XL",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-017",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\theta \\Rightarrow \\theta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi, \\theta \\Rightarrow \\theta",
+          "rule": "WL",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-018",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi \\land \\psi",
+          "rule": "∧R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-019",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\chi \\Rightarrow \\chi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\theta, \\chi \\Rightarrow \\chi",
+          "rule": "WL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi, \\theta \\Rightarrow \\chi",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\theta \\Rightarrow \\theta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi, \\theta \\Rightarrow \\theta",
+          "rule": "WL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi, \\theta \\Rightarrow \\chi \\land \\theta",
+          "rule": "∧R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-020",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\theta \\Rightarrow \\theta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi, \\theta \\Rightarrow \\theta",
+          "rule": "WL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi \\Rightarrow \\chi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\theta, \\chi \\Rightarrow \\chi",
+          "rule": "WL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi, \\theta \\Rightarrow \\chi",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi, \\theta \\Rightarrow \\theta \\land \\chi",
+          "rule": "∧R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-021",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi\\land \\psi \\Rightarrow \\varphi",
+          "rule": "अनुमान",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-022",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi\\land \\psi \\Rightarrow \\varphi",
+          "rule": "∧L",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-023",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi\\land \\psi \\Rightarrow \\varphi",
+          "rule": "∧L",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-024",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\psi \\Rightarrow \\varphi \\to \\psi",
+          "rule": "अनुमान",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-025",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\lnot \\varphi \\lor \\psi \\Rightarrow \\psi",
+          "rule": "अनुमान",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\psi \\Rightarrow \\varphi \\to \\psi",
+          "rule": "→R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-026",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\varphi \\Rightarrow \\psi",
+          "rule": "अनुमान",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi, \\varphi \\Rightarrow \\psi",
+          "rule": "अनुमान",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\psi, \\varphi \\Rightarrow \\psi",
+          "rule": "∨L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\lnot \\varphi \\lor \\psi \\Rightarrow \\psi",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\psi \\Rightarrow \\varphi \\to \\psi",
+          "rule": "→R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-027",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\varphi \\Rightarrow \\psi",
+          "rule": "अनुमान",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi \\Rightarrow \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\psi \\Rightarrow \\psi",
+          "rule": "WL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi, \\varphi \\Rightarrow \\psi",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\psi, \\varphi \\Rightarrow \\psi",
+          "rule": "∨L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\lnot \\varphi \\lor \\psi \\Rightarrow \\psi",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\psi \\Rightarrow \\varphi \\to \\psi",
+          "rule": "→R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-028",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\psi, \\varphi",
+          "rule": "अनुमान",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\varphi \\Rightarrow \\psi",
+          "rule": "¬L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi \\Rightarrow \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\psi \\Rightarrow \\psi",
+          "rule": "WL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi, \\varphi \\Rightarrow \\psi",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\psi, \\varphi \\Rightarrow \\psi",
+          "rule": "∨L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\lnot \\varphi \\lor \\psi \\Rightarrow \\psi",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\psi \\Rightarrow \\varphi \\to \\psi",
+          "rule": "→R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-029",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi, \\psi",
+          "rule": "WR",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\psi, \\varphi",
+          "rule": "XR",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\varphi \\Rightarrow \\psi",
+          "rule": "¬L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi \\Rightarrow \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\psi \\Rightarrow \\psi",
+          "rule": "WL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi, \\varphi \\Rightarrow \\psi",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\psi, \\varphi \\Rightarrow \\psi",
+          "rule": "∨L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\lnot \\varphi \\lor \\psi \\Rightarrow \\psi",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\psi \\Rightarrow \\varphi \\to \\psi",
+          "rule": "→R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-030",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\lnot \\psi \\Rightarrow \\lnot (\\varphi \\land \\psi)",
+          "rule": "अनुमान",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-031",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi, \\lnot \\varphi \\lor \\lnot \\psi \\Rightarrow",
+          "rule": "अनुमान",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\lnot \\psi \\Rightarrow \\lnot (\\varphi \\land \\psi)",
+          "rule": "¬R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-032",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\lnot \\varphi \\lor \\lnot \\psi \\Rightarrow",
+          "rule": "अनुमान",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi, \\lnot \\varphi \\lor \\lnot \\psi \\Rightarrow",
+          "rule": "∧L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\lnot \\psi \\Rightarrow \\lnot (\\varphi \\land \\psi)",
+          "rule": "¬R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-033",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\varphi \\Rightarrow",
+          "rule": "¬L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\psi",
+          "rule": "?",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\psi, \\varphi \\Rightarrow",
+          "rule": "¬L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\lnot \\psi, \\varphi \\Rightarrow",
+          "rule": "∨L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\lnot \\varphi \\lor \\lnot \\psi \\Rightarrow",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi, \\lnot \\varphi \\lor \\lnot \\psi \\Rightarrow",
+          "rule": "∧L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\lnot \\psi \\Rightarrow \\lnot (\\varphi \\land \\psi)",
+          "rule": "¬R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-034",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\varphi \\land \\psi \\Rightarrow",
+          "rule": "अनुमान",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\psi, \\varphi \\land \\psi \\Rightarrow",
+          "rule": "अनुमान",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\lnot \\psi, \\varphi \\land \\psi \\Rightarrow",
+          "rule": "∨L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi, \\lnot \\varphi \\lor \\lnot \\psi \\Rightarrow",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\lnot \\psi \\Rightarrow \\lnot (\\varphi \\land \\psi)",
+          "rule": "¬R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-035",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\Rightarrow\\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi \\Rightarrow \\varphi",
+          "rule": "∧L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\varphi \\land \\psi \\Rightarrow",
+          "rule": "¬L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi \\Rightarrow \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi \\Rightarrow \\psi",
+          "rule": "∧L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\psi, \\varphi \\land \\psi \\Rightarrow",
+          "rule": "¬L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\lnot \\psi, \\varphi \\land \\psi \\Rightarrow",
+          "rule": "∨L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi, \\lnot \\varphi \\lor \\lnot \\psi \\Rightarrow",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\lor \\lnot \\psi \\Rightarrow \\lnot (\\varphi \\land \\psi)",
+          "rule": "¬R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-036",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Rightarrow \\varphi",
+          "rule": "अनुमान",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Rightarrow \\varphi \\lor \\lnot \\varphi",
+          "rule": "∨R",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi \\Rightarrow",
+          "rule": "अनुमान",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Rightarrow \\lnot \\varphi",
+          "rule": "¬R",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Rightarrow \\varphi \\lor \\lnot \\varphi",
+          "rule": "∨R",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-037",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Rightarrow \\varphi \\lor \\lnot \\varphi, \\varphi",
+          "rule": "अनुमान",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Rightarrow \\varphi \\lor \\lnot \\varphi, \\varphi \\lor \\lnot \\varphi",
+          "rule": "∨R",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Rightarrow \\varphi \\lor \\lnot \\varphi",
+          "rule": "CR",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-038",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Rightarrow \\varphi, \\lnot \\varphi",
+          "rule": "¬R",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Rightarrow \\varphi, \\varphi \\lor \\lnot \\varphi",
+          "rule": "∨R",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Rightarrow \\varphi \\lor \\lnot \\varphi, \\varphi",
+          "rule": "XR",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Rightarrow \\varphi \\lor \\lnot \\varphi, \\varphi \\lor \\lnot \\varphi",
+          "rule": "∨R",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Rightarrow \\varphi \\lor \\lnot \\varphi",
+          "rule": "CR",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-039",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\lnot \\varphi(x) \\Rightarrow \\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "अनुमान",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-040",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi(a) \\Rightarrow \\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "अनुमान",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\lnot \\varphi(x) \\Rightarrow \\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "∃L",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-041",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x) \\Rightarrow \\varphi(a)",
+          "rule": "अनुमान",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi(a), \\forall {x}\\,\\varphi(x) \\Rightarrow",
+          "rule": "¬L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x), \\lnot \\varphi(a) \\Rightarrow",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi(a) \\Rightarrow \\lnot \\forall {x} \\varphi(x)",
+          "rule": "¬R",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x} \\lnot \\varphi(x) \\Rightarrow \\lnot \\forall {x} \\varphi(x)",
+          "rule": "∃L",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-042",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi(a) \\Rightarrow \\varphi(a)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x) \\Rightarrow \\varphi(a)",
+          "rule": "∀L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi(a), \\forall {x}\\,\\varphi(x) \\Rightarrow",
+          "rule": "¬L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x), \\lnot \\varphi(a) \\Rightarrow",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi(a) \\Rightarrow \\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "¬R",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\, \\lnot \\varphi(x) \\Rightarrow \\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "∃L",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-043",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi, \\psi, \\chi \\Rightarrow \\varphi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi, \\chi \\Rightarrow \\varphi",
+          "rule": "CL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi, \\psi \\Rightarrow \\varphi",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi, \\chi, \\psi \\Rightarrow \\varphi",
+          "rule": "WL",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-044",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma_0 \\Rightarrow \\varphi",
+          "rule": "π0",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\Delta_0 \\Rightarrow \\psi",
+          "rule": "π1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma_0, \\Delta_0 \\Rightarrow \\psi",
+          "rule": "Cut",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-045",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma_0 \\Rightarrow \\varphi",
+          "rule": "π0",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\Gamma_1 \\Rightarrow",
+          "rule": "π1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma_0,\\Gamma_1 \\Rightarrow",
+          "rule": "Cut",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-046",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Rightarrow \\varphi, \\lnot \\varphi",
+          "rule": "¬R",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\Gamma \\Rightarrow",
+          "rule": "π1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\varphi",
+          "rule": "Cut",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-047",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma_0 \\Rightarrow \\varphi",
+          "rule": "π",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\varphi \\Rightarrow",
+          "rule": "¬L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\lnot \\varphi \\Rightarrow",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma_0, \\lnot \\varphi \\Rightarrow",
+          "rule": "Cut",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-048",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\Gamma_0 \\Rightarrow",
+          "rule": "π0",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma_0 \\Rightarrow \\lnot \\varphi",
+          "rule": "¬R",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\Gamma_1 \\Rightarrow",
+          "rule": "π1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma_0, \\Gamma_1 \\Rightarrow",
+          "rule": "Cut",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-049",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi \\Rightarrow \\varphi",
+          "rule": "∧L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi \\Rightarrow \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi \\Rightarrow \\psi",
+          "rule": "∧L",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-050",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi \\Rightarrow \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\psi \\Rightarrow \\varphi \\land \\psi",
+          "rule": "∧R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-051",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\varphi \\Rightarrow",
+          "rule": "¬L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\lnot \\varphi, \\lnot \\psi \\Rightarrow",
+          "rule": "दुहेरी रेषा",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi \\Rightarrow \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\psi, \\psi \\Rightarrow",
+          "rule": "¬L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi, \\lnot \\varphi, \\lnot \\psi \\Rightarrow",
+          "rule": "दुहेरी रेषा",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\psi, \\lnot \\varphi, \\lnot \\psi \\Rightarrow",
+          "rule": "∨L",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-052",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi \\lor \\psi",
+          "rule": "∨R",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi \\Rightarrow \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\psi \\Rightarrow \\varphi \\lor \\psi",
+          "rule": "∨R",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-053",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi \\Rightarrow \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi, \\varphi  \\Rightarrow \\psi",
+          "rule": "→L",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-054",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\Rightarrow \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\varphi \\Rightarrow",
+          "rule": "¬L",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\lnot \\varphi \\Rightarrow",
+          "rule": "XL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\lnot \\varphi \\Rightarrow \\psi",
+          "rule": "WR",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi \\Rightarrow \\varphi \\to \\psi",
+          "rule": "→R",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi \\Rightarrow \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi, \\psi \\Rightarrow \\psi",
+          "rule": "WL",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\psi \\Rightarrow \\varphi \\to \\psi",
+          "rule": "→R",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-055",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi(t) \\Rightarrow \\varphi(t)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi(t) \\Rightarrow \\exists {x}\\,\\varphi(x)",
+          "rule": "∃R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-056",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi(t) \\Rightarrow \\varphi(t)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x) \\Rightarrow \\varphi(t)",
+          "rule": "∀L",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-057",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "WL",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "WR",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-058",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "¬L",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-059",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi, \\Gamma \\Rightarrow \\Delta",
+          "rule": "∧L",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-060",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi \\lor \\psi",
+          "rule": "∨R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-061",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\Gamma \\Rightarrow \\Delta, \\psi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi \\to \\psi",
+          "rule": "→R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-062",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi(t), \\Gamma \\Rightarrow \\Delta",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x), \\Gamma \\Rightarrow \\Delta",
+          "rule": "∀L",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-063",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi(a)",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\forall {x}\\,\\varphi(x)",
+          "rule": "∀R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-064",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi, \\Pi \\Rightarrow \\Lambda",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma, \\Pi \\Rightarrow \\Delta, \\Lambda",
+          "rule": "Cut",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-065",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\psi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi \\land \\psi",
+          "rule": "∧R",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-066",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma \\Rightarrow \\Delta, \\varphi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi, \\Pi \\Rightarrow \\Lambda",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi, \\Gamma, \\Pi \\Rightarrow \\Delta, \\Lambda",
+          "rule": "→L",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-067",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "t_1=t_2, \\Gamma \\Rightarrow \\Delta, \\varphi(t_1)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "t_1=t_2, \\Gamma \\Rightarrow \\Delta, \\varphi(t_2)",
+          "rule": "=",
+          "group": 1
+        },
+        {
+          "formula_tex": "t_1=t_2, \\Gamma \\Rightarrow \\Delta, \\varphi(t_2)",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "t_1=t_2, \\Gamma  \\Rightarrow \\Delta, \\varphi(t_1)",
+          "rule": "=",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-068",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi(s) \\Rightarrow \\varphi(s)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "s=t, \\varphi(s)  \\Rightarrow \\varphi(s)",
+          "rule": "WL",
+          "group": 1
+        },
+        {
+          "formula_tex": "s=t, \\varphi(s)  \\Rightarrow \\varphi(t)",
+          "rule": "=",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-069",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\Rightarrow t_1=t_1",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "t_1=t_2 \\Rightarrow t_1=t_1",
+          "rule": "WL",
+          "group": 1
+        },
+        {
+          "formula_tex": "t_1=t_2 \\Rightarrow t_2=t_1",
+          "rule": "=",
+          "group": 1
+        },
+        {
+          "formula_tex": "t_1=t_2 \\Rightarrow t_1=t_2",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "t_2=t_3, t_1=t_2  \\Rightarrow t_1=t_2",
+          "rule": "WL",
+          "group": 2
+        },
+        {
+          "formula_tex": "t_2=t_3, t_1=t_2  \\Rightarrow t_1=t_3",
+          "rule": "=",
+          "group": 2
+        },
+        {
+          "formula_tex": "t_1=t_2, t_2=t_3  \\Rightarrow t_1=t_3",
+          "rule": "XL",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-070",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 3 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi",
+          "rule": "∧Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "∧Elim",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 3
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "∧Elim",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-071",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 3 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\psi",
+          "rule": "∨Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\psi",
+          "rule": "∨Intro",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 3
+        },
+        {
+          "formula_tex": "[\\varphi]^{n}",
+          "rule": "आरंभीची पायरी",
+          "group": 3
+        },
+        {
+          "formula_tex": "\\chi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 3
+        },
+        {
+          "formula_tex": "[\\psi]^{n}",
+          "rule": "आरंभीची पायरी",
+          "group": 3
+        },
+        {
+          "formula_tex": "\\chi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 3
+        },
+        {
+          "formula_tex": "\\chi",
+          "rule": "∨Elim; गृहीतक n मुक्त",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-072",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "[\\varphi]^{n}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "→Intro; गृहीतक n मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "→Elim",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-073",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "[\\varphi]^{n}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "रेषेविना",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi",
+          "rule": "¬Intro; गृहीतक n मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-074",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\bot",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "⊥I",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\lnot \\varphi]^{n}",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "⊥C; गृहीतक n मुक्त",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-075",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi(a)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x)",
+          "rule": "∀Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x)",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi(t)",
+          "rule": "∀Elim",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-076",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi(t)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\varphi(x)",
+          "rule": "∃Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\varphi(x)",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "[\\varphi(a)]^n",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\chi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\chi",
+          "rule": "∃Elim; गृहीतक n मुक्त",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-077",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi[t/x]",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\varphi",
+          "rule": "∃Intro",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-078",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\exists {x}\\,\\varphi(x)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi(a)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x)",
+          "rule": "*∀Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x)",
+          "rule": "∃Elim",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-079",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi",
+          "rule": "∧Intro",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-080",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\chi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\theta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi \\land \\theta",
+          "rule": "∧Intro",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-081",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\theta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\theta \\land \\chi",
+          "rule": "∧Intro",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-082",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "[\\chi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\theta",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi \\land \\theta",
+          "rule": "∧Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi \\to (\\chi \\land \\theta)",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "[\\theta]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\chi \\land \\theta",
+          "rule": "∧Intro",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\theta \\to (\\chi \\land \\theta)",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-083",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-084",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "(\\varphi\\land \\psi) \\to \\varphi",
+          "rule": "अनुमान",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-085",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\varphi \\land \\psi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "(\\varphi\\land \\psi) \\to \\varphi",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-086",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\varphi \\land \\psi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "∧Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "(\\varphi\\land \\psi) \\to \\varphi",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-087",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "(\\lnot \\varphi \\lor \\psi) \\to (\\varphi \\to \\psi)",
+          "rule": "अनुमान",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-088",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\lnot \\varphi \\lor \\psi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "(\\lnot \\varphi \\lor \\psi) \\to (\\varphi \\to \\psi)",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-089",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\lnot \\varphi \\lor \\psi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\lnot \\varphi]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\psi]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "∨Elim; गृहीतक 2 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "(\\lnot \\varphi \\lor \\psi) \\to (\\varphi \\to \\psi)",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-090",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\lnot \\varphi \\lor \\psi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\lnot \\varphi]^{2}, [\\varphi]^{3}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "→Intro; गृहीतक 3 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\psi]^{2}, [\\varphi]^{4}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "→Intro; गृहीतक 4 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "∨Elim; गृहीतक 2 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "(\\lnot \\varphi \\lor \\psi) \\to (\\varphi \\to \\psi)",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-091",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\lnot \\varphi]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi]^{3}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-092",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\lnot \\varphi \\lor \\psi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\lnot \\varphi]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi]^{3}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "⊥Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "⊥I",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "→Intro; गृहीतक 3 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\psi]^{2}, [\\varphi]^{4}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "→Intro; गृहीतक 4 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "∨Elim; गृहीतक 2 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "(\\lnot \\varphi \\lor \\psi) \\to (\\varphi \\to \\psi)",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-093",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\lnot \\varphi \\lor \\psi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\lnot \\varphi]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi]^{3}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "⊥I",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "→Intro; गृहीतक 3 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\psi]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "→Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "∨Elim; गृहीतक 2 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "(\\lnot \\varphi \\lor \\psi) \\to (\\varphi \\to \\psi)",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-094",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\lnot(\\varphi \\lor \\lnot \\varphi)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\lnot \\varphi",
+          "rule": "⊥C; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-095",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\lnot(\\varphi \\lor \\lnot \\varphi)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\lnot(\\varphi \\lor \\lnot \\varphi)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\lnot \\varphi",
+          "rule": "⊥C; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-096",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\lnot(\\varphi \\lor \\lnot \\varphi)]^{1}, [\\varphi]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi",
+          "rule": "¬Intro; गृहीतक 2 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\lnot(\\varphi \\lor \\lnot \\varphi)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\lnot \\varphi",
+          "rule": "⊥C; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-097",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\lnot(\\varphi \\lor \\lnot \\varphi)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\lnot \\varphi",
+          "rule": "∨Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi",
+          "rule": "¬Intro; गृहीतक 2 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\lnot(\\varphi \\lor \\lnot \\varphi)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\lnot \\varphi",
+          "rule": "⊥C; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-098",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\lnot(\\varphi \\lor \\lnot \\varphi)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\lnot \\varphi",
+          "rule": "∨Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi",
+          "rule": "¬Intro; गृहीतक 2 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\lnot(\\varphi \\lor \\lnot \\varphi)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\lnot \\varphi]^{3}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\lnot \\varphi",
+          "rule": "∨Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "⊥C; गृहीतक 3 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\lnot \\varphi",
+          "rule": "⊥C; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-099",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\lnot \\varphi(x)\\to \\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "अनुमान",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-100",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\exists {x}\\,\\lnot \\varphi(x)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\lnot \\varphi(x)\\to \\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-101",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\exists {x}\\,\\lnot \\varphi(x)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\lnot \\varphi(a)]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "∃Elim; गृहीतक 2 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\lnot \\varphi(x) \\to \\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-102",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\exists {x}\\,\\lnot \\varphi(x)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\lnot \\varphi(a)]^{2}, [\\forall {x}\\,\\varphi(x)]^{3}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "¬Intro; गृहीतक 3 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "∃Elim; गृहीतक 2 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\lnot \\varphi(x)\\to \\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-103",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\exists {x}\\,\\lnot \\varphi(x)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\lnot \\varphi(a)]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\forall {x}\\,\\varphi(x)]^{3}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi(a)",
+          "rule": "∀Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "¬Intro; गृहीतक 3 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "∃Elim; गृहीतक 2 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\lnot \\varphi(x)\\to \\lnot \\forall {x}\\,\\varphi(x)",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-104",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\chi(x,b)",
+          "rule": "अनुमान",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-105",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\exists {x}\\,(\\varphi(x) \\land \\psi(x))",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi(a) \\land \\psi(a)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\chi(x,b)",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\chi(x,b)",
+          "rule": "∃Elim; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-106",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\exists {x}\\,(\\varphi(x) \\land \\psi(x))",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi(a)\n\\land \\psi(a)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi(a)",
+          "rule": "∧Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\chi(x,b)",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\chi(x,b)",
+          "rule": "∃Elim; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-107",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\exists {x}\\,(\\varphi(x) \\land \\psi(x))",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,(\\psi(x) \\to \\chi(x,b))",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi(a) \\to \\chi(a,b)",
+          "rule": "∀Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi(a)\n\\land \\psi(a)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi(a)",
+          "rule": "∧Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi(a,b)",
+          "rule": "→Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\chi(x,b)",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\chi(x,b)",
+          "rule": "∃Elim; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-108",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\exists {x}\\,(\\varphi(x) \\land \\psi(x))",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,(\\psi(x) \\to \\chi(x,b))",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi(a) \\to \\chi(a,b)",
+          "rule": "∀Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi(a)\n\\land \\psi(a)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi(a)",
+          "rule": "∧Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\chi(a,b)",
+          "rule": "→Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\chi(x,b)",
+          "rule": "∃Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\chi(x,b)",
+          "rule": "∃Elim; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-109",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot\\forall {x}\\,\\varphi(x)",
+          "rule": "अनुमान",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-110",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\forall {x}\\,\\varphi(x)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot\\forall {x}\\,\\varphi(x)",
+          "rule": "¬Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-111",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x) \\to \\exists {y}\\,\\psi(y)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\forall {x}\\,\\varphi(x)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {y}\\,\\psi(y)",
+          "rule": "→Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot\\forall {x}\\,\\varphi(x)",
+          "rule": "¬Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-112",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\lnot\\exists {y}\\,\\psi(y)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x) \\to \\exists {y}\\,\\psi(y)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\forall {x}\\,\\varphi(x)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {y}\\,\\psi(y)",
+          "rule": "→Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot\\forall {x}\\,\\varphi(x)",
+          "rule": "¬Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-113",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Delta, [\\varphi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "δ1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "δ0",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "→Elim",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-114",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma, [\\varphi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "δ2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi",
+          "rule": "¬Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "δ1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-115",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\lnot \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "δ0",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-116",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma, [\\lnot \\varphi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "δ1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "⊥C; ⊥C; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-117",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\lnot \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "δ",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-118",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma, [\\lnot \\varphi]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "δ2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\lnot \\varphi",
+          "rule": "¬Intro; गृहीतक 2 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma, [\\varphi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "δ1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi",
+          "rule": "¬Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-119",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\land \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "∧Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "∧Elim",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-120",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi",
+          "rule": "∧Intro",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-121",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\lor \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\psi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "∨Elim; गृहीतक 1 मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-122",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\psi",
+          "rule": "∨Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\psi",
+          "rule": "∨Intro",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-123",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "→Elim",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-124",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\lnot \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "¬Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "⊥I",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "→Intro",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-125",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\varphi(t)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\exists {x}\\,\\varphi(x)",
+          "rule": "∃Intro",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-126",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi(t)",
+          "rule": "∀Elim",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-127",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma, [\\varphi]^{n}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "δ1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\lnot \\varphi",
+          "rule": "¬Intro; गृहीतक n मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-128",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi",
+          "rule": "δ1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "∧Elim",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-129",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "δ1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\lor \\psi",
+          "rule": "∨Intro",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-130",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma, [\\varphi]^{n}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "δ1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "→Intro; गृहीतक n मुक्त",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-131",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\bot",
+          "rule": "δ1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "⊥I",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-132",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi(a)",
+          "rule": "δ1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\varphi(x)",
+          "rule": "∀Intro",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-133",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma_1",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "δ1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma_2",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "δ2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\land \\psi",
+          "rule": "∧Intro",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-134",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma_1",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi \\to \\psi",
+          "rule": "δ1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma_2",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi",
+          "rule": "δ2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\psi",
+          "rule": "→Elim",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-135",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 3 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "t=t",
+          "rule": "=Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "t_1=t_2",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi(t_1)",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\varphi(t_2)",
+          "rule": "=Elim",
+          "group": 2
+        },
+        {
+          "formula_tex": "t_1=t_2",
+          "rule": "आरंभीची पायरी",
+          "group": 3
+        },
+        {
+          "formula_tex": "\\varphi(t_2)",
+          "rule": "आरंभीची पायरी",
+          "group": 3
+        },
+        {
+          "formula_tex": "\\varphi(t_1)",
+          "rule": "=Elim",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-136",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "s=t",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi(s)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi(t)",
+          "rule": "=Elim",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-137",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\exists {x}\\,\\forall {y}\\,(\\varphi(y) \\to y=x)\n\\quad [\\varphi(a) \\land \\varphi(b)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "a=b",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "((\\varphi(a) \\land \\varphi(b)) \\to a=b)",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {y}\\,((\\varphi(a) \\land \\varphi(y)) \\to a=y)",
+          "rule": "∀Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\forall {y}\\,((\\varphi(x) \\land \\varphi(y)) \\to x=y)",
+          "rule": "∀Intro",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-138",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\exists {x}\\,\\forall {y}\\,(\\varphi(y) \\to y=x)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\forall {y}\\,(\\varphi(y) \\to y=c)]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi(a) \\land \\varphi(b)]^{1}",
+          "rule": "रेषेविना",
+          "group": 1
+        },
+        {
+          "formula_tex": "a=b",
+          "rule": "मधल्या पायऱ्या संक्षिप्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "a=b",
+          "rule": "∃Elim; गृहीतक 2 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "((\\varphi(a) \\land \\varphi(b)) \\to a=b)",
+          "rule": "→Intro; गृहीतक 1 मुक्त",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {y}\\,((\\varphi(a) \\land \\varphi(y)) \\to a=y)",
+          "rule": "∀Intro",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\forall {x}\\,\\forall {y}\\,((\\varphi(x) \\land \\varphi(y)) \\to x=y)",
+          "rule": "∀Intro",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-139",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "[\\forall {y}\\,(\\varphi(y) \\to y=c)]^{2}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi(a) \\to a=c",
+          "rule": "∀Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "[\\varphi(a) \\land \\varphi(b)]^{1}",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi(a)",
+          "rule": "∧Elim",
+          "group": 1
+        },
+        {
+          "formula_tex": "a=c",
+          "rule": "→Elim",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-140",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\Gamma_1",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "t_1=t_2",
+          "rule": "δ1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\Gamma_2",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi(t_1)",
+          "rule": "δ2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\varphi(t_2)",
+          "rule": "=Elim",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-141",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "¬T",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\lnot \\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "¬F",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-142",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\land \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∧T",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "रेषेविना",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\land \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi\\quad \\mid \\quad \\mathbb{F}\\,\\psi",
+          "rule": "∧F",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-143",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\lor \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi\\quad \\mid \\quad \\mathbb{T}\\,\\psi",
+          "rule": "∨T",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "रेषेविना",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-144",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\to \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi\\quad \\mid \\quad \\mathbb{T}\\,\\psi",
+          "rule": "→T",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\to \\psi",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "→F",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "रेषेविना",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-145",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi\\quad \\mid \\quad \\mathbb{F}\\,\\varphi",
+          "rule": "Cut",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-146",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(t)",
+          "rule": "∀T",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi(a)",
+          "rule": "∀F",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-147",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 2 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {x}\\,\\varphi(x)",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(a)",
+          "rule": "∃T",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,\\varphi(x)",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi(t)",
+          "rule": "∃F",
+          "group": 2
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-148",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील सिद्धता-वृक्ष; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,\\varphi",
+          "rule": "आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi[t/x]",
+          "rule": "∃F",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-149",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,\\varphi(x) \\to \\forall {x}\\,\\varphi(x)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {x}\\,\\varphi(x)",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(a)",
+          "rule": "∃T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi(a)",
+          "rule": "∀F 3; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-150",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\land \\lnot \\varphi",
+          "rule": "गृहीतक",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-151",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\land \\lnot \\varphi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∧T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot \\varphi",
+          "rule": "∧T 1",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-152",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\land \\lnot \\varphi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∧T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot \\varphi",
+          "rule": "∧T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "¬T 3; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-153",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\varphi \\land \\psi) \\to \\varphi",
+          "rule": "गृहीतक",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-154",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\varphi \\land \\psi) \\to \\varphi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\land \\psi",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "→F 1",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-155",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\varphi \\land \\psi) \\to \\varphi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\land \\psi",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∧T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "∧T 2; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-156",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\lnot \\varphi \\lor \\psi) \\to\n      (\\varphi \\to \\psi)",
+          "rule": "गृहीतक",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-157",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\lnot \\varphi \\lor \\psi)\n      \\to (\\varphi \\to \\psi)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot \\varphi \\lor \\psi",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\varphi \\to \\psi)",
+          "rule": "→F 1",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-158",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\lnot \\varphi \\lor \\psi) \\to\n      (\\varphi \\to \\psi)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot \\varphi \\lor \\psi",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\varphi \\to \\psi)",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot \\varphi",
+          "rule": "∨T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "∨T 2",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-159",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\lnot \\varphi \\lor \\psi) \\to\n      (\\varphi \\to \\psi)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot \\varphi \\lor \\psi",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\varphi \\to \\psi)",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot \\varphi",
+          "rule": "∨T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "→F 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "→F 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "∨T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "→F 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "→F 3; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-160",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\lnot \\varphi \\lor \\psi) \\to\n      (\\varphi \\to \\psi)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot \\varphi \\lor \\psi",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\varphi \\to \\psi)",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot \\varphi",
+          "rule": "∨T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "→F 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "→F 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "¬T 4; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "∨T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "→F 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "→F 3; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-161",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\lor (\\psi \\land C)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\varphi \\lor \\psi) \\land\n        (\\varphi \\lor C)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∨T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi \\land C",
+          "rule": "∨T 1",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-162",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\lor (\\psi \\land C)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\varphi \\lor \\psi) \\land\n        (\\varphi \\lor C)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∨T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor \\psi",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor C",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi \\land C",
+          "rule": "∨T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor \\psi",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor C",
+          "rule": "∧F 2",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-163",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\lor (\\psi \\land C)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\varphi \\lor \\psi) \\land\n        (\\varphi \\lor C)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∨T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor \\psi",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "∨F 4; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor C",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi \\land C",
+          "rule": "∨T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor \\psi",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor C",
+          "rule": "∧F 2",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-164",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\lor (\\psi \\land C)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\varphi \\lor \\psi) \\land\n        (\\varphi \\lor C)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∨T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor \\psi",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "∨F 4; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor C",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,C",
+          "rule": "∨F 4; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi \\land C",
+          "rule": "∨T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor \\psi",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor C",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,C",
+          "rule": "∨F 4",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-165",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\lor (\\psi \\land C)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\varphi \\lor \\psi) \\land\n        (\\varphi \\lor C)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∨T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor \\psi",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "∨F 4; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor C",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,C",
+          "rule": "∨F 4; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi \\land C",
+          "rule": "∨T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor \\psi",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "∧T 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,C",
+          "rule": "∧T 3; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor C",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,C",
+          "rule": "∨F 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "∧T 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,C",
+          "rule": "∧T 3; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-166",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\lor (\\psi \\land C)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,(\\varphi \\lor \\psi) \\land\n        (\\varphi \\lor C)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor \\psi",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "∨F 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∨T 1; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi \\land C",
+          "rule": "∨T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "∧T 6",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,C",
+          "rule": "∧T 6; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor C",
+          "rule": "∧F 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,C",
+          "rule": "∨F 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∨T 1; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi \\land C",
+          "rule": "∨T 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "∧T 6",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,C",
+          "rule": "∧T 6; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-167",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,\\lnot \\varphi(x)\\to \\lnot\n    \\forall {x}\\,\\varphi(x)",
+          "rule": "गृहीतक",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-168",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,\\lnot \\varphi(x)\\to \\lnot\n    \\forall {x}\\,\\varphi(x)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {x}\\,\\lnot \\varphi(x)",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\lnot\\forall {x}\\,\\varphi(x)",
+          "rule": "→F 1",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-169",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,\\lnot \\varphi(x)\\to \\lnot\n    \\forall {x}\\,\\varphi(x)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {x}\\,\\lnot \\varphi(x)",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\lnot\\forall {x}\\,\\varphi(x)",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot\\varphi(a)",
+          "rule": "∃T 2",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-170",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,\\lnot \\varphi(x)\\to \\lnot\n    \\forall {x}\\,\\varphi(x)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {x}\\,\\lnot \\varphi(x)",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\lnot\\forall {x}\\,\\varphi(x)",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot\\varphi(a)",
+          "rule": "∃T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "¬F 3",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-171",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,\\lnot \\varphi(x)\\to \\lnot\n    \\forall {x}\\,\\varphi(x)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {x}\\,\\lnot \\varphi(x)",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\lnot\\forall {x}\\,\\varphi(x)",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot\\varphi(a)",
+          "rule": "∃T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "¬F 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi(a)",
+          "rule": "¬T 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(a)",
+          "rule": "∀T 5; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-172",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,C(x,b)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {x}\\,(\\varphi(x) \\land \\psi(x))",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,(\\psi(x) \\to C(x,b))",
+          "rule": "गृहीतक",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-173",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,C(x,b)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {x}\\,(\\varphi(x) \\land \\psi(x))",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,(\\psi(x) \\to C(x,b))",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(a) \\land \\psi(a)",
+          "rule": "∃T 2",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-174",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,C(x,b)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {x}\\,(\\varphi(x) \\land \\psi(x))",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,(\\psi(x) \\to C(x,b))",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(a) \\land \\psi(a)",
+          "rule": "∃T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,C(a,b)",
+          "rule": "∃F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi(a) \\to C(a,b)",
+          "rule": "∀T 3",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-175",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,C(x,b)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {x}\\,(\\varphi(x) \\land \\psi(x))",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,(\\psi(x) \\to C(x,b))",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(a) \\land \\psi(a)",
+          "rule": "∃T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,C(a,b)",
+          "rule": "∃F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi(a) \\to C(a,b)",
+          "rule": "∀T 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(a)",
+          "rule": "∧T 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi(a)",
+          "rule": "∧T 4",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-176",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,C(x,b)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {x}\\,(\\varphi(x) \\land \\psi(x))",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,(\\psi(x) \\to C(x,b))",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(a) \\land \\psi(a)",
+          "rule": "∃T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,C(a,b)",
+          "rule": "∃F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi(a) \\to C(a,b)",
+          "rule": "∀T 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(a)",
+          "rule": "∧T 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi(a)",
+          "rule": "∧T 4",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi(a)",
+          "rule": "→T 6; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,C(a,b)",
+          "rule": "→T 6; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-177",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x) \\to\n        \\exists {y}\\,\\psi(y)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot\\exists {y}\\,\\psi(y)",
+          "rule": "गृहीतक",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-178",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x) \\to\n        \\exists {y}\\,\\psi(y)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot\\exists {y}\\,\\psi(y)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {y}\\,\\psi(y)",
+          "rule": "¬T 3",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-179",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x) \\to\n        \\exists {y}\\,\\psi(y)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot\\exists {y}\\,\\psi(y)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {y}\\,\\psi(y)",
+          "rule": "¬T 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "→T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {y}\\,\\psi(y)",
+          "rule": "→T 2",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-180",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x) \\to\n        \\exists {y}\\,\\psi(y)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot\\exists {y}\\,\\psi(y)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {y}\\,\\psi(y)",
+          "rule": "¬T 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "→T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi(b)",
+          "rule": "∀F 5",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {y}\\,\\psi(y)",
+          "rule": "→T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi(c)",
+          "rule": "∃T 5",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-181",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x) \\to\n        \\exists {y}\\,\\psi(y)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot\\exists {y}\\,\\psi(y)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {y}\\,\\psi(y)",
+          "rule": "¬T 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "→T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi(b)",
+          "rule": "∀F 5",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(b)",
+          "rule": "∀T 1; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\exists {y}\\,\\psi(y)",
+          "rule": "→T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi(c)",
+          "rule": "∃T 5",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi(c)",
+          "rule": "∃F 4; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-182",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "गृहीतक; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-183",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\land \\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∧T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "∧T 2; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-184",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\land \\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∧T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "∧T 2; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-185",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\land \\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∧F 1; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "∧F 1; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-186",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\lor \\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot \\varphi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot \\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "¬T 2",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "¬T 3",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "∨T 1; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "∨T 1; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-187",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor \\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "∨F 1; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-188",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\lor \\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "∨F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "∨F 1; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-189",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi \\to \\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "→T 2; शाखा बंद",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "→T 2; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-190",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\to \\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\lnot \\varphi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi",
+          "rule": "¬T 2; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-191",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi \\to \\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi",
+          "rule": "→F 1",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\psi",
+          "rule": "→F 1; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-192",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi(c)",
+          "rule": "नियम नोंदवलेला नाही",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi_1",
+          "rule": "नियम नोंदवलेला नाही",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi_n",
+          "rule": "नियम नोंदवलेला नाही",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-193",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "नियम नोंदवलेला नाही",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi_1",
+          "rule": "नियम नोंदवलेला नाही",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\psi_n",
+          "rule": "नियम नोंदवलेला नाही",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi(c)",
+          "rule": "नियम नोंदवलेला नाही",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-194",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\exists {x}\\,\\varphi(x)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(t)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi(t)",
+          "rule": "∃F 1; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-195",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi(t)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\forall {x}\\,\\varphi(x)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(t)",
+          "rule": "∀T 2; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-196",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील नियम-आकृती; पायऱ्या स्रोतक्रमाने दिल्या आहेत; 3 स्वतंत्र सिद्धता-आकृत्या",
+      "rows": [
+        {
+          "formula_tex": "\\text{रिकामी जागा}",
+          "rule": "अपूर्ण आरंभीची पायरी",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,t=t",
+          "rule": "=",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,t_1=t_2",
+          "rule": "आरंभीची पायरी",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(t_1)",
+          "rule": "रेषेविना",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(t_2)",
+          "rule": "=T",
+          "group": 2
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,t_1=t_2",
+          "rule": "आरंभीची पायरी",
+          "group": 3
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi(t_1)",
+          "rule": "रेषेविना",
+          "group": 3
+        },
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi(t_2)",
+          "rule": "=F",
+          "group": 3
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-197",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,\\varphi(t)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,s=t",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(s)",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,\\varphi(t)",
+          "rule": "=T 2, 3; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-198",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,s_2=s_1",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,s_1=s_2",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,s_1=s_1",
+          "rule": "=",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,s_2=s_1",
+          "rule": "=T 2, 3; शाखा बंद",
+          "group": 1
+        }
+      ]
+    },
+    {
+      "id": "proof-auto-199",
+      "section_id": null,
+      "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+      "rows": [
+        {
+          "formula_tex": "\\mathbb{F}\\,s_1=s_3",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,s_1=s_2",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,s_2=s_3",
+          "rule": "गृहीतक",
+          "group": 1
+        },
+        {
+          "formula_tex": "\\mathbb{T}\\,s_1=s_3",
+          "rule": "=T 3, 2; शाखा बंद",
+          "group": 1
+        }
+      ]
+    }
+  ],
+  "mathml_count": 6544,
+  "warnings": "",
+  "validation": "Build complete; static and browser verification still required",
+  "network_dependencies": []
+}

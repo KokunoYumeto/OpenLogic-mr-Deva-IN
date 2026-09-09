@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0100",
+  "method": "Same-agent English/Marathi block-by-block close reading, truth-condition replay for all five displayed tableau rule groups, reverse paraphrase of the cut explanation, and exact formula, macro, token and identifier comparison; no independent human or native-speaker review is claimed.",
+  "scope": "Propositional tableau rules for negation, conjunction, disjunction and the conditional, followed by the cut rule and its admissibility-style explanation.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "reverse_paraphrase": "The section gives propositional rules, with separate subsections for negation, conjunction, disjunction, the conditional and cut.",
+      "checks": "विधानीय follows the established propositional label; each connective remains the original mathematical symbol. The heading construction [symbol] साठीचे नियम follows T180, and कट follows the standing structural-rule decision."
+    },
+    {
+      "blocks": [
+        7,
+        9,
+        11,
+        13
+      ],
+      "reverse_paraphrase": "True negation yields false A and false negation yields true A. True conjunction keeps both conjuncts on one branch while false conjunction branches. True disjunction branches while false disjunction keeps both disjuncts on one branch. True conditional branches into false antecedent or true consequent, while false conditional keeps true antecedent and false consequent together.",
+      "checks": "All four rule pairs are byte-preserved. Every truth sign, connective, branch separator, rule label and one-line-versus-two-line proof layout remains exact."
+    },
+    {
+      "blocks": [
+        15,
+        16
+      ],
+      "reverse_paraphrase": "Cut splits every tableau branch into a true-signed A branch and a false-signed A branch. It is not applied to an earlier signed formula and is unnecessary for closure, because any closable signed-formula set has a cut-free closed tableau, but it makes tableaux convenient to combine.",
+      "checks": "The Marathi preserves the universal every-branch scope, opposite signs, cut-free existence claim and convenience-only role. It does not strengthen the source into a claim that every closed tableau is cut-free."
+    }
+  ],
+  "source_observations": [
+    "No source correction was required in this unit.",
+    "The cut paragraph states eliminability for existence of a closed tableau, not deletion of cut steps from the same displayed tableau.",
+    "All proof-tree commands and displayed signed formulas remain unchanged."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The tableau and signed-formula compounds remain explicitly provisional because exact specialist Marathi attestations are sparse.",
+    "Proof-tree rendering will be inspected in the next coherent cumulative reader after the Tableaux chapter is complete."
+  ]
+}

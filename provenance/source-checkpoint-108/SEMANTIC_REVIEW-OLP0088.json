@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0088",
+  "method": "Same-agent English/Marathi block-by-block close reading, inductive-definition and proof-tree reverse paraphrase, and exact formula, macro, token and identifier comparison; no independent human or native-speaker review is claimed.",
+  "scope": "Natural-deduction derivations: their inductive construction, finite-tree definition, discharged and undischarged assumptions, derivability notation, conjunction and conditional-introduction examples, and optional discharge.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "Natural-deduction derivations are generated inductively from assumptions and inference rules: a derivation is either a lone assumption or one, two or three derivations followed by a correct inference.",
+      "checks": "The token-only heading remains source-identical and locale-driven; the base and inductive construction cases, arities and correctness requirement are explicit."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "A derivation of sentence A from assumptions Gamma is a finite tree of sentences. Its top sentences belong to Gamma or are discharged; its bottom sentence is A; every other sentence is a premise of a correct inference whose conclusion is immediately below it. A is the conclusion and Gamma the undischarged assumptions. Existence yields Gamma proves A, while discharge of every assumption yields proves A.",
+      "checks": "All three defining conditions, premise/conclusion directions, the distinction between discharged and undischarged assumptions, and both provability formulas remain exact."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "Each assumption is itself a derivation. Applying conjunction introduction to A and B gives A-and-B. Because the rule is schematic, C and D can replace A and B; swapping their roles instead gives D-and-C.",
+      "checks": "The three proof trees and every formula are unchanged; the prose preserves schematic replacement and the order-sensitive conclusions."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "Conditional introduction derives a conditional and may discharge an assumption identical to its antecedent. The two trees respectively show D proves C implies C-and-D and C proves D implies C-and-D.",
+      "checks": "Both discharge labels, rule applications, antecedent relationship and the respective order of the two provability claims are preserved."
+    },
+    {
+      "blocks": [
+        11
+      ],
+      "reverse_paraphrase": "Discharging assumptions is optional. A discharge-capable rule may be applied even when the matching assumption is absent, so B may yield A-implies-B through conditional introduction without an A assumption to discharge.",
+      "checks": "The permission-versus-requirement contrast, absence condition and final proof tree remain explicit and exact."
+    }
+  ],
+  "source_observations": [
+    "No mathematical or structural defect was identified in the frozen upstream unit."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "निष्पत्ती, गृहीतक, मुक्त करणे, आधारविधान, निष्कर्ष and सिद्धतायोग्य follow the recorded proof-theory terminology and remain available in the expert-review surfaces.",
+    "The proof trees embedded in translated prose preserve source formulas and macros exactly.",
+    "The current coherent reader ends at OLP-0068, so this unit has not yet received paginated TeX or browser-rendering QA."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0110",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse paraphrase of the identity-rule definitions and three worked tableau arguments, exact formula, macro, token, identifier, item and block comparison after documented source projection, and replay of every cited line reference; no independent human or native-speaker review is claimed.",
+  "scope": "Tableau rules for identity, substitutability of identicals, symmetry and transitivity, and two closed-tableau exercises.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "Tableaux with identity need additional rules. The identity rules include a reflexive signed identity axiom and two signed-formula substitution rules, all for closed terms. Unlike the other rules, each substitution rule requires both the signed identity and a signed instance formula already on the branch.",
+      "checks": "The Marathi preserves the three formal proof displays, all signs and rule labels, the closed-term restriction, and the two-premise condition. The formal-only defish environment remains byte-identical in protected mathematics."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "For closed s and t, identity s=t together with A(s) derives A(t). The tableau applies the true identity rule to the true identity assumption and true A(s), closing against false A(t). This is the substitutability principle or Leibniz's Law.",
+      "checks": "The tableau's four signed nodes, assumption justifications, line references [2,3] and closure marker are unchanged; only the surrounding explanation is translated."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "A tableau proves symmetry by assuming false s2=s1, true s1=s2, and true s1=s1, then deriving true s2=s1. The source prose mislabels the third line as A(s2); the displayed node and rule schema require A(s1), so OLTAB-012 repairs that prose formula. Taking A(x) as x=s1 explains both identity instances.",
+      "checks": "The corrected Marathi explanation names line 3 as true A(s1), while the formal tree remains exact. The source-only projection restores the frozen A(s2) phrase for parity."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "A tableau proves transitivity from true s1=s2 and true s2=s3 by applying the identity rule with first premise line 3 and second premise line 2, yielding true s1=s3. The source prose correctly identifies A(s2) as the second premise but then misidentifies its formula as t1=t2; with A(x)=s1=x, line 2 is s1=s2. OLTAB-012 repairs that explanatory formula.",
+      "checks": "The corrected Marathi says line 2 is s1=s2 and preserves the displayed [3,2] rule application, term roles, conclusion and all protected syntax."
+    },
+    {
+      "blocks": [
+        11
+      ],
+      "reverse_paraphrase": "The exercise asks for closed tableaux for the universal identity-substitution principle and for the existential identity characterization formula, preserving both signed premises in the second item.",
+      "checks": "Both displayed exercise formulas, their signs, quantifier nesting, line break and enumerate structure are unchanged."
+    }
+  ],
+  "source_observations": [
+    "OLTAB-012 records two explanatory formula mismatches in the symmetry and transitivity prose; both are determined by the adjacent displayed tableau nodes and the two-premise identity rule.",
+    "The unit contains one defish rule display, three oltableau environments, two enumerate items and no conditional tag wrappers.",
+    "All terms used in the identity explanations are already governed by the edition decisions for identity, closed term, signed formula, tableau, derivability and justification."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "Exact specialist Marathi preference for the identity/tableau loanword family remains open to the existing expert-review ledger.",
+    "The three proof tableaux and defish rule display will receive visual inspection in the guarded cumulative chapter build."
+  ]
+}

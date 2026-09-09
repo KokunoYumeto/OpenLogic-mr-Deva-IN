@@ -1,0 +1,375 @@
+{
+  "schema": "openlogic-source-observations/1",
+  "batch": "eleven-chapters-v0.8 release scope through OLP-0111",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "policy": "Frozen English bytes remain untouched. Deterministic defects are documented before any bounded Marathi correction and replayed through exact structural QA.",
+  "issues": [
+    {
+      "id": "OLSEQ-001",
+      "unit_id": "OLP-0075",
+      "classification": "confirmed-frozen-source-rule-label defect",
+      "source_locator": "content/first-order-logic/sequent-calculus/proving-things.tex:84-87; content/first-order-logic/sequent-calculus/proving-things.tex:102-105; content/first-order-logic/sequent-calculus/proving-things.tex:123-126; content/first-order-logic/sequent-calculus/proving-things.tex:145-148",
+      "target_locator": "mr/content/first-order-logic/sequent-calculus/proving-things.tex:80-83; mr/content/first-order-logic/sequent-calculus/proving-things.tex:99-102; mr/content/first-order-logic/sequent-calculus/proving-things.tex:120-123; mr/content/first-order-logic/sequent-calculus/proving-things.tex:142-145",
+      "source_sha256": "8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303",
+      "finding": "At four repeated steps, formulas are exchanged in the antecedent, but the frozen proof tree labels the step \\RightR{\\Exchange}; the structural-rule definition requires \\LeftR{\\Exchange} for a left-side swap. The separate right-succedent exchange at source lines 134-137 is correct and is not part of this issue.",
+      "action": "Preserved every frozen proof-tree label in the aligned Marathi source and documented the mismatch; no silent mathematical correction was made.",
+      "alternatives": [
+        "Correct the four target labels to \\LeftR{\\Exchange} with a documented parity projection",
+        "Add a visible reader note when this unit enters the coherent reader"
+      ],
+      "uncertainty": "confirmed by direct comparison with the structural-rule schema; authorial intent is clear from the swapped antecedent formulas",
+      "review_question": "Should a later reader-facing build correct the four labels with an adjacent source note, while the editable aligned target continues to disclose the frozen source form?"
+    },
+    {
+      "id": "OLSEQ-002",
+      "unit_id": "OLP-0075",
+      "classification": "confirmed-frozen-source-narrative-formula defect",
+      "source_locator": "content/first-order-logic/sequent-calculus/proving-things.tex:175-180",
+      "target_locator": "mr/content/first-order-logic/sequent-calculus/proving-things.tex:170-175",
+      "source_sha256": "8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303",
+      "finding": "The narrative lists two candidate upper sequents using \\lnot A \\lor B, although the stated goal, symmetry claim and immediately following proof trees consistently use \\lnot A \\lor \\lnot B. Both inline candidates therefore omit the second negation.",
+      "action": "Preserved both frozen inline formulas in the aligned Marathi target and documented the discrepancy; the surrounding correct proof trees remain exact.",
+      "alternatives": [
+        "Correct both target formulas by inserting \\lnot before B with a documented parity projection",
+        "Add a visible reader note when this unit enters the coherent reader"
+      ],
+      "uncertainty": "confirmed by the stated target sequent, the A/B symmetry claim and all adjacent proof-tree formulas",
+      "review_question": "Should a later reader-facing build restore the two missing negations with an adjacent source note, while preserving the frozen form in provenance?"
+    },
+    {
+      "id": "OLSEQ-003",
+      "unit_id": "OLP-0072",
+      "classification": "confirmed-source-clarification of a standing restriction",
+      "source_locator": "content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-28; content/first-order-logic/sequent-calculus/quantifier-rules.tex:48; content/first-order-logic/sequent-calculus/quantifier-rules.tex:79-81",
+      "target_locator": "mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27; mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:48; mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:80-82",
+      "source_sha256": "e0047087b88b91ba65c23a76f7c8f230c4161785f4d83f07d14461341b66d90e",
+      "finding": "The final source paragraph says that t has no restrictions in existential-right and universal-left, although both rule introductions already require t to be closed. The intended contrast is absence of any additional restriction beyond closedness, rather than permission to use an open term.",
+      "action": "Clarified the Marathi sentence as ‘पद t बंद असण्याव्यतिरिक्त त्यावर आणखी कोणतेही निर्बंध नाहीत,’ retaining the standing closed-term assumption and every formula and rule unchanged.",
+      "alternatives": [
+        "Preserve the locally ambiguous source sentence verbatim",
+        "Repeat the full parenthetical definition of closed term in the final paragraph"
+      ],
+      "uncertainty": "confirmed pedagogical clarification from the two earlier explicit closed-term clauses; no mathematical rule was changed",
+      "review_question": "Does the clarification state exactly that t has no additional restriction beyond closedness without suggesting a stronger side condition?",
+      "audit": {
+        "report": "[local research path omitted]",
+        "report_sha256": "8764f4ccdf643494159a614648cf33aa8288730463c5a9835070bec3d95085f6",
+        "review_kind": "bounded independent model audit; not native-speaker or human-expert testimony"
+      }
+    },
+    {
+      "id": "OLND-001",
+      "unit_id": "OLP-0087",
+      "classification": "confirmed-source-clarification of a standing restriction",
+      "source_locator": "content/first-order-logic/natural-deduction/quantifier-rules.tex:27-28; content/first-order-logic/natural-deduction/quantifier-rules.tex:52; content/first-order-logic/natural-deduction/quantifier-rules.tex:85-87; content/first-order-logic/natural-deduction/quantifier-rules.tex:105-107",
+      "target_locator": "mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:85-87",
+      "source_sha256": "eb6d95a24fce278404457d9169c033645853aab7e1c22dd4ca1fec9595068313",
+      "finding": "The final explanatory paragraph says that t has no restrictions and can be anything in existential introduction and universal elimination, although both earlier rule explanations require t to be closed and the closing consequence again says that quantifier elimination substitutes only closed terms. The intended contrast is absence of any additional restriction beyond closedness.",
+      "action": "Clarified the Marathi sentence as ‘पद t बंद असण्याव्यतिरिक्त त्यावर आणखी कोणतेही निर्बंध नाहीत,’ retaining the standing closed-term requirement and every formula and rule unchanged.",
+      "alternatives": [
+        "Preserve the locally contradictory claim that t can be anything",
+        "Repeat the full parenthetical definition of a closed term in the final explanation"
+      ],
+      "uncertainty": "confirmed by the two earlier closed-term clauses and the closing closed-substitution consequence in the same frozen unit; this is parallel to the documented OLP-0072 clarification and changes no formal rule",
+      "review_question": "Does the clarification state exactly that t may be any closed term, without adding a stronger restriction or licensing an open term?"
+    },
+    {
+      "id": "OLND-002",
+      "unit_id": "OLP-0087",
+      "classification": "confirmed-frozen-source-eigenvariable-summary defect with bounded target clarification",
+      "source_locator": "content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61; content/first-order-logic/natural-deduction/quantifier-rules.tex:15-25; content/first-order-logic/natural-deduction/quantifier-rules.tex:52-56",
+      "target_locator": "mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:57-61",
+      "source_sha256": "eb6d95a24fce278404457d9169c033645853aab7e1c22dd4ca1fec9595068313",
+      "finding": "The combined source summary says the eigenvariable occurs in neither premises nor undischarged assumptions. Read literally, that contradicts the universal-introduction premise A(a), which must contain a, and omits the existential-elimination exception for its temporary A(a) assumption. The preceding rule-specific clauses state the intended restrictions correctly.",
+      "action": "Rephrased the Marathi summary to name the distinct restrictions on premises, conclusions and undischarged assumptions stated immediately above, without asserting absence from every premise. Preserved all rule diagrams, formulas, macros and protected tokens.",
+      "alternatives": [
+        "Preserve the defective combined source summary literally",
+        "Repeat both complete rule-specific restrictions in the summary"
+      ],
+      "uncertainty": "the defect is confirmed by direct conflict with the displayed universal-introduction premise and by the explicit existential-elimination exception; the concise repair intentionally delegates exact scope to the correct detailed clauses",
+      "review_question": "Does the repaired summary clearly name one family of rule-specific eigenvariable restrictions without implying that a is absent from A(a)?",
+      "audit": {
+        "report": "[local research path omitted]",
+        "report_bytes": 16558,
+        "report_sha256": "e73d1f5198e932453f0c413d3db69f66ccc634894fb6c4562fed69cca99f7656",
+        "hash_manifest": "[local research path omitted]",
+        "hash_manifest_bytes": 29140,
+        "hash_manifest_sha256": "8dbcfc44e7cb152bb6f583e47c8fb155786b7b8561b0ae101ad5afceafbfbf25",
+        "review_kind": "bounded independent model spotcheck; not native-speaker or human-expert testimony"
+      }
+    },
+    {
+      "id": "OLND-003",
+      "unit_id": "OLP-0089",
+      "classification": "confirmed-frozen-source-branch-direction defect with bounded target clarification",
+      "source_locator": "content/first-order-logic/natural-deduction/proving-things.tex:116-118; content/first-order-logic/natural-deduction/proving-things.tex:139-149",
+      "target_locator": "mr/content/first-order-logic/natural-deduction/proving-things.tex:109-111; mr/content/first-order-logic/natural-deduction/proving-things.tex:131-141",
+      "source_sha256": "d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc",
+      "finding": "The source calls the branch deriving B from assumptions A and B the left branch. In the displayed proof tree it is the right-hand branch, and the immediately following paragraph explicitly calls it the rightmost branch.",
+      "action": "Translated the directional word as उजवीकडील (right-hand), preserving every formula, proof-tree command, discharge label and branch order.",
+      "alternatives": [
+        "Preserve the contradictory left-direction word literally",
+        "Avoid a direction word and identify the branch only by its A and B assumptions"
+      ],
+      "uncertainty": "confirmed by the diagram's branch order and the next paragraph; the correction changes no formal content",
+      "review_question": "Does उजवीकडील accurately identify the A-and-B branch while retaining the source's proof-search explanation?"
+    },
+    {
+      "id": "OLND-004",
+      "unit_id": "OLP-0089",
+      "classification": "frozen-source-equivalent-rule-label observation; preserved",
+      "source_locator": "content/first-order-logic/natural-deduction/proving-things.tex:119-135; content/first-order-logic/natural-deduction/propositional-rules.tex:79-101",
+      "target_locator": "mr/content/first-order-logic/natural-deduction/proving-things.tex:112-127",
+      "source_sha256": "d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc",
+      "finding": "The prose and first small proof tree name the step from not-A and A to falsity as negation elimination, but the expanded copy labels the same step as falsity introduction. The preceding rule inventory presents the schema as negation elimination and does not separately introduce a falsity-introduction rule.",
+      "action": "Preserved the frozen expanded-tree label \\Intro{\\lfalse} exactly because it denotes the same inference schema; documented the unexplained label switch for expert review.",
+      "alternatives": [
+        "Normalize the copied label to \\Elim{\\lnot} with a documented parity projection",
+        "Add a reader note that the two labels denote the same inference schema"
+      ],
+      "uncertainty": "the inference is mathematically unchanged and the alternate label may be intentional synonymy, but that synonymy is not explained in the local rule inventory",
+      "review_question": "Should the reader retain the source's bottom-introduction synonym here or normalize the step to the chapter's declared negation-elimination label?"
+    },
+    {
+      "id": "OLND-005",
+      "unit_id": "OLP-0090",
+      "classification": "confirmed-frozen-source-eigenvariable-check defect with documented formula projection",
+      "source_locator": "content/first-order-logic/natural-deduction/proving-things-quant.tex:38-40; content/first-order-logic/natural-deduction/proving-things-quant.tex:90-93; content/first-order-logic/natural-deduction/quantifier-rules.tex:52-61",
+      "target_locator": "mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:35-39; mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:84-90",
+      "source_sha256": "962c30713b222744c165ce87f7cb8ab11d18d0e805d8d386900bfe8e8104f63f",
+      "finding": "The source's first eigenvariable check cites existential A(x), dropping the negation from its actual major premise existential not-A(x). Its closing check then says only that a is absent from assumptions on which it depends, without naming the major premise and conclusion or the temporary-assumption exception required by the declared existential-elimination rule.",
+      "action": "Restored the missing negation in the cited major premise and stated the declared rule-specific scope: a is absent from the major premise, conclusion and every relevant undischarged assumption apart from the temporary assumption discharged by existential elimination. The one formula repair is projected back to the frozen form during structural QA; every proof tree remains source-identical.",
+      "alternatives": [
+        "Preserve the wrong positive existential formula and incomplete closing sentence literally",
+        "Leave the prose unchanged and add a separate reader footnote quoting the full rule"
+      ],
+      "uncertainty": "confirmed by the actual major premise in every displayed tree and by the immediately preceding rule definition; the clarification changes no inference",
+      "review_question": "Does the repaired prose state exactly the existential-elimination eigenvariable restriction without implying that the temporary assumption must omit a?"
+    },
+    {
+      "id": "OLND-006",
+      "unit_id": "OLP-0090",
+      "classification": "confirmed-source-clarification of the standing closed-term restriction",
+      "source_locator": "content/first-order-logic/natural-deduction/proving-things-quant.tex:68-72; content/first-order-logic/natural-deduction/quantifier-rules.tex:26-28; content/first-order-logic/natural-deduction/quantifier-rules.tex:105-107",
+      "target_locator": "mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:64-67",
+      "source_sha256": "962c30713b222744c165ce87f7cb8ab11d18d0e805d8d386900bfe8e8104f63f",
+      "finding": "The worked-example prose says universal elimination may replace x with any term, although the rule definition and chapter consequence restrict substitution to closed terms. The chosen constant a is closed, so the displayed inference itself is valid.",
+      "action": "Clarified the Marathi prose as ‘हवे ते कोणतेही बंद पद,’ preserving the chosen constant a and every formula and proof-tree command.",
+      "alternatives": [
+        "Preserve the overbroad any-term wording literally",
+        "Repeat the full parenthetical definition of a closed term"
+      ],
+      "uncertainty": "confirmed by the chapter's explicit universal-elimination restriction; no formal expression or inference is changed",
+      "review_question": "Does कोणतेही बंद पद clearly preserve the freedom of choice while retaining the standing closedness requirement?"
+    },
+    {
+      "id": "OLND-007",
+      "unit_id": "OLP-0095",
+      "classification": "frozen-source-equivalent-universal-elimination-label observation; preserved",
+      "source_locator": "content/first-order-logic/natural-deduction/soundness.tex:207; content/first-order-logic/natural-deduction/quantifier-rules.tex:22,86",
+      "target_locator": "mr/content/first-order-logic/natural-deduction/soundness.tex:206",
+      "source_sha256": "8b90318e1a2ed38568fb61cd5529d496cdfd17f322fd9c731a194e2d08e0a4b9",
+      "finding": "The soundness exercise names universal elimination with \\Elim{\\forall}, whereas the declared natural-deduction rule and the rest of the chapter use \\Elim{\\lforall}. Both symbol macros denote the universal quantifier in this label, so the printed inference name is expected to be equivalent, but the source does not explain the spelling switch.",
+      "action": "Preserved the frozen \\Elim{\\forall} label exactly in the aligned Marathi source and documented the inconsistent macro spelling; no mathematical correction was made.",
+      "alternatives": [
+        "Normalize the target label to \\Elim{\\lforall} with a documented parity projection",
+        "Retain the equivalent frozen spelling without a reader note"
+      ],
+      "uncertainty": "the intended rule is confirmed by its position after universal introduction and existential introduction, and the two macros are visually equivalent here; whether the spelling switch was intentional is unknown",
+      "review_question": "Should a later reader normalize this exercise label to the chapter's declared \\Elim{\\lforall} spelling while the aligned source continues to preserve the frozen form?"
+    },
+    {
+      "id": "OLTAB-001",
+      "unit_id": "OLP-0098",
+      "classification": "confirmed-frozen-source-copy-paste subject defect with bounded target correction",
+      "source_locator": "content/first-order-logic/tableaux/tableaux.tex:15-18",
+      "target_locator": "mr/content/first-order-logic/tableaux/tableaux.tex:15-18",
+      "source_sha256": "1c6e7018e63cae3440e85d537303288261afd422b9e13bc455b99c2d206aa1b6",
+      "finding": "The tableaux chapter editorial note says that the prfTab tag controls material relevant to natural deduction as a proof system. The chapter subject, tag name and all thirteen imported sections instead identify tableaux; the wording duplicates the neighboring natural-deduction driver with only the tag changed.",
+      "action": "Translated the subject as tableaux (टॅब्लोशी), preserving the literal prfTab tag and the include-or-exclude instruction.",
+      "alternatives": [
+        "Preserve the contradictory natural-deduction subject literally",
+        "Avoid naming the subject and say only that prfTab controls proof-system material"
+      ],
+      "uncertainty": "confirmed by the chapter identity, prfTab tag and complete import list; the correction changes no protected syntax or conditional behavior",
+      "review_question": "Does टॅब्लोशी सिद्धता-पद्धती म्हणून संबंधित clearly repair the copied subject while preserving the intended tag instruction?"
+    },
+    {
+      "id": "OLTAB-002",
+      "unit_id": "OLP-0101",
+      "classification": "confirmed-source-clarification of the standing closed-term restriction",
+      "source_locator": "content/first-order-logic/tableaux/quantifier-rules.tex:27-28; content/first-order-logic/tableaux/quantifier-rules.tex:49; content/first-order-logic/tableaux/quantifier-rules.tex:80-82",
+      "target_locator": "mr/content/first-order-logic/tableaux/quantifier-rules.tex:27-28; mr/content/first-order-logic/tableaux/quantifier-rules.tex:48; mr/content/first-order-logic/tableaux/quantifier-rules.tex:78-79",
+      "source_sha256": "682b3f1de2569dc63657243b83a3daa8966cc1786fa44d5d2fa34da2658e2bb0",
+      "finding": "The final explanation says that t has no restrictions in true-universal and false-existential tableau rules, although both earlier rule explanations require t to be a closed term. The intended contrast is the absence of any additional restriction beyond closedness.",
+      "action": "Clarified the Marathi sentence as ‘पद t बंद असण्याव्यतिरिक्त त्यावर आणखी कोणतेही निर्बंध नाहीत,’ retaining the standing closed-term requirement and every formula and rule unchanged.",
+      "alternatives": [
+        "Preserve the locally overbroad no-restrictions wording literally",
+        "Repeat the full parenthetical definition of a closed term in the final explanation"
+      ],
+      "uncertainty": "confirmed by the two earlier explicit closed-term clauses and parallel documented clarifications in the sequent-calculus and natural-deduction chapters; no formal rule is changed",
+      "review_question": "Does the clarification state exactly that t may be any closed term without adding a stronger side condition?"
+    },
+    {
+      "id": "OLTAB-003",
+      "unit_id": "OLP-0104",
+      "classification": "confirmed-source-clarification of the standing closed-term restriction",
+      "source_locator": "content/first-order-logic/tableaux/proving-things-quant.tex:129-136; content/first-order-logic/tableaux/proving-things-quant.tex:280-284",
+      "target_locator": "mr/content/first-order-logic/tableaux/proving-things-quant.tex:126-132; mr/content/first-order-logic/tableaux/proving-things-quant.tex:275-278",
+      "source_sha256": "253a81c3ef645fee728f66e385a86459773fa5d6a82e73740cb55497c598c234",
+      "finding": "The two worked-example explanations say that true-universal and false-existential tableau rules may use any term or whichever terms are suitable. The OLP-0101 rule clauses require the substituted term t to be closed. The constants a, b and c actually chosen in these examples are closed, so every displayed inference is valid.",
+      "action": "Clarified both Marathi passages as permitting any or any suitable closed term, preserving the selected constants and every formula, rule label and tableau tree unchanged.",
+      "alternatives": [
+        "Preserve the locally overbroad any-term wording literally",
+        "Repeat the full definition of a closed term at both worked-example steps"
+      ],
+      "uncertainty": "confirmed by the explicit OLP-0101 closed-term clauses and the parallel OLTAB-002 clarification; no formal expression or inference is changed",
+      "review_question": "Do both clarifications retain the intended freedom of term choice while requiring exactly the standing closedness condition?"
+    },
+    {
+      "id": "OLTAB-004",
+      "unit_id": "OLP-0104",
+      "classification": "confirmed-frozen-source-line-reference defect with bounded target correction",
+      "source_locator": "content/first-order-logic/tableaux/proving-things-quant.tex:280-284; content/first-order-logic/tableaux/proving-things-quant.tex:285-307",
+      "target_locator": "mr/content/first-order-logic/tableaux/proving-things-quant.tex:275-278; mr/content/first-order-logic/tableaux/proving-things-quant.tex:279-307",
+      "source_sha256": "253a81c3ef645fee728f66e385a86459773fa5d6a82e73740cb55497c598c234",
+      "finding": "The source says that lines 1 and 3 must be reused to close the two branches and immediately names the corresponding rules as true-universal and false-existential. The false-existential signed formula is derived on line 4, while line 3 is the already-checked true-negation assumption. The final encoded tableau correctly cites line 4 for the false-existential application.",
+      "action": "Corrected the Marathi narrative reference from line 3 to line 4. A unit-specific QA projection restores the frozen line number solely for structural comparison; every tableau node, rule label and justification remains source-identical.",
+      "alternatives": [
+        "Preserve the incorrect line 3 reference literally",
+        "Avoid the line number and identify only the false-existential signed formula"
+      ],
+      "uncertainty": "confirmed by the numbered construction sequence, the applicable rule and the final tree's explicit false-existential justification [4]",
+      "review_question": "Does the corrected line 4 reference agree with both the derived signed formula and the final encoded tableau?"
+    },
+    {
+      "id": "OLTAB-005",
+      "unit_id": "OLP-0105",
+      "classification": "confirmed-frozen-source-set-notation defect with documented formula projection",
+      "source_locator": "content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-109",
+      "target_locator": "mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:100-110",
+      "source_sha256": "38a3260d51ba6fc9db22f6b40b1a57f5c46e80d2a008053beffbb7cf5eff7e71",
+      "finding": "In the transitivity proof, the source writes separate formulas D_1 and D_m and then places only D_m to the left of the subset symbol. A sentence is an element rather than a subset of Gamma, and the derivability definition requires a finite set of premises. The intended statement is that the finite set {D_1, ..., D_m} is a subset of Gamma.",
+      "action": "Inserted set braces around D_1 through D_m in the Marathi proof. A unit-specific QA projection restores the frozen malformed expression solely for structural comparison; every signed formula and tableau construction step remains unchanged.",
+      "alternatives": [
+        "Preserve the ill-typed subset expression literally",
+        "Replace the subset statement with separate membership claims for every D_i"
+      ],
+      "uncertainty": "confirmed by the unit's derivability definition, the immediately parallel finite set Delta_0 and the later use of all D_i as tableau assumptions",
+      "review_question": "Does the repaired finite-set expression state exactly that all and only the listed D_i premises belong to Gamma?"
+    },
+    {
+      "id": "OLTAB-006",
+      "unit_id": "OLP-0106",
+      "classification": "confirmed-frozen-source-index defect with documented formula projection",
+      "source_locator": "content/first-order-logic/tableaux/provability-consistency.tex:25-31",
+      "target_locator": "mr/content/first-order-logic/tableaux/provability-consistency.tex:24-30",
+      "source_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348",
+      "finding": "The first proof defines Gamma_1 as {C_1, ..., C_n}, but its immediately displayed true-signed witness ends with C_m. Gamma_0 already uses the independent upper index n for its B-premises, and the parallel construction later in the same section uses n for the B-family and m for the C-family.",
+      "action": "Changed the Gamma_1 definition's final index from n to m in Marathi. A unit-specific QA projection restores the frozen index solely for structural comparison; the displayed signed-formula set already uses C_m and remains unchanged.",
+      "alternatives": [
+        "Change the displayed C_m witness to C_n instead",
+        "Reuse one common upper index for both independently sized finite premise sets"
+      ],
+      "uncertainty": "confirmed by the adjacent displayed witness and the section's later parallel n/m construction; only a bound index name is repaired",
+      "review_question": "Does using m throughout the C-family preserve its independence from the n-member B-family?"
+    },
+    {
+      "id": "OLTAB-007",
+      "unit_id": "OLP-0106",
+      "classification": "confirmed-frozen-source-rule-premise defect with documented formula projection",
+      "source_locator": "content/first-order-logic/tableaux/provability-consistency.tex:90-93",
+      "target_locator": "mr/content/first-order-logic/tableaux/provability-consistency.tex:90-92",
+      "source_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348",
+      "finding": "After replacing false A by true not-A, the source says to insert the conclusion of the true-negation rule applied to false A. The true-negation rule applies to true not-A and produces false A; it does not apply to false A. The preceding replacement and the intended inserted formula determine the correct premise uniquely.",
+      "action": "Named true not-A as the rule premise in Marathi. A unit-specific QA projection restores the frozen false-A premise solely for structural comparison; the rule label and resulting false-A formula are unchanged.",
+      "alternatives": [
+        "Preserve the inapplicable false-A premise literally",
+        "Describe only the inserted false-A result without naming the rule premise"
+      ],
+      "uncertainty": "confirmed by the tableau negation rules and the proof's immediately preceding replacement step",
+      "review_question": "Does the corrected sentence unambiguously apply true-negation to true not-A and insert its false-A conclusion?"
+    },
+    {
+      "id": "OLTAB-008",
+      "unit_id": "OLP-0106",
+      "classification": "confirmed-frozen-source-off-by-one line-reference defect with documented formula projection",
+      "source_locator": "content/first-order-logic/tableaux/provability-consistency.tex:84-95",
+      "target_locator": "mr/content/first-order-logic/tableaux/provability-consistency.tex:84-95",
+      "source_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348",
+      "finding": "The old tableau has n+1 assumptions: false A on line 1 followed by n true B-premises. Replacing line 1 does not change that count. Inserting the new false-A conclusion after all assumptions therefore places it on line n+2, although the source says n+1.",
+      "action": "Corrected the Marathi justification reference to line n+2. A unit-specific QA projection restores n+1 solely for structural comparison; no tableau formula or rule application changes.",
+      "alternatives": [
+        "Insert the derived false-A formula before the final assumption so that it becomes line n+1",
+        "Avoid the numeric reference and refer only to the newly inserted false-A formula"
+      ],
+      "uncertainty": "confirmed by counting the explicitly listed n+1 assumptions and following the source instruction to insert the conclusion after them",
+      "review_question": "Does n+2 correctly identify the first line after the complete assumption list?"
+    },
+    {
+      "id": "OLTAB-009",
+      "unit_id": "OLP-0106",
+      "classification": "confirmed-frozen-source-copy-edit defects with bounded target normalization",
+      "source_locator": "content/first-order-logic/tableaux/provability-consistency.tex:85-87; content/first-order-logic/tableaux/provability-consistency.tex:122-123; content/first-order-logic/tableaux/provability-consistency.tex:128-138",
+      "target_locator": "mr/content/first-order-logic/tableaux/provability-consistency.tex:85-87; mr/content/first-order-logic/tableaux/provability-consistency.tex:120-121; mr/content/first-order-logic/tableaux/provability-consistency.tex:125-136",
+      "source_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348",
+      "finding": "The frozen prose contains a stray lone backslash before the displayed set, repeats left in ‘left left side,’ uses singular assumption for a tableau with several assumptions, and says ‘we can applying.’ These are mechanical typesetting or grammar defects; the intended proof directions and operations are otherwise clear.",
+      "action": "Omitted the stray control-space backslash, translated the duplicated direction once, used the contextually required plural and supplied grammatical Marathi verb forms. No formula, rule label, branch direction or protected identifier was changed.",
+      "alternatives": [
+        "Mimic each malformed source phrase literally in Marathi",
+        "Add reader-facing editorial notes for purely mechanical English copy-edit defects"
+      ],
+      "uncertainty": "the defects are directly visible and their bounded normalization does not change any mathematical claim",
+      "review_question": "Do the normalized Marathi sentences retain the same left/right branch construction without introducing any unstated inference?"
+    },
+    {
+      "id": "OLTAB-010",
+      "unit_id": "OLP-0107",
+      "classification": "confirmed-frozen-source-malformed-signed-formula syntax with documented structural projection",
+      "source_locator": "content/first-order-logic/tableaux/provability-propositional.tex:43-44; content/first-order-logic/tableaux/provability-propositional.tex:53-54; content/first-order-logic/tableaux/provability-propositional.tex:106-107; content/first-order-logic/tableaux/provability-propositional.tex:116-117",
+      "target_locator": "mr/content/first-order-logic/tableaux/provability-propositional.tex:42-43; mr/content/first-order-logic/tableaux/provability-propositional.tex:52-53; mr/content/first-order-logic/tableaux/provability-propositional.tex:106-107; mr/content/first-order-logic/tableaux/provability-propositional.tex:116-117",
+      "source_sha256": "342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13",
+      "finding": "Eight tableau nodes nest the formula argument inside the truth-sign macro, writing forms such as \\sFmla{\\True{\\formula{A}}} instead of the declared two-argument form \\sFmla{\\True}{\\formula{A}}. This makes the following comma or option token serve as the missing second argument and can corrupt the forest tree during TeX expansion.",
+      "action": "Restored the missing argument boundary in all eight Marathi tableau nodes: four true conjunction products and four false disjunction products. Unit-specific QA projections reconstruct the frozen malformed brace placement solely for source comparison; signs, atoms, rule labels, line references and tree order are unchanged.",
+      "alternatives": [
+        "Preserve the malformed nodes and accept likely TeX parsing failure",
+        "Rewrite the affected tableau trees with different node commands"
+      ],
+      "uncertainty": "confirmed by the repeated correct two-argument \\sFmla syntax throughout the same file and by the macro's required truth-sign/formula separation",
+      "review_question": "Do all eight repaired nodes now supply the truth sign and formula as distinct arguments without changing their logical content?"
+    },
+    {
+      "id": "OLTAB-011",
+      "unit_id": "OLP-0109",
+      "classification": "confirmed-frozen-source-quantifier-metavariable mismatch with documented formula projection",
+      "source_locator": "content/first-order-logic/tableaux/soundness.tex:127-145",
+      "target_locator": "mr/content/first-order-logic/tableaux/soundness.tex:125-144",
+      "source_sha256": "d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80",
+      "finding": "In the true-universal case, the active signed premise is written with B(x), but the new instance and every semantic step use A. In the false-universal case, the active premise and the first quantified semantic clauses use B(x), while the new instance, extensionality steps and conclusion use A. Each rule proof requires one formula metavariable throughout, and the A-based conclusions and downstream steps determine the intended choice.",
+      "action": "Used A(x) consistently in both Marathi universal-rule cases, changing five formula occurrences. Unit-specific QA projections reconstruct the frozen B(x) occurrences solely for source comparison; truth signs, quantifiers, terms, structures, assignments, citations and rule labels are unchanged.",
+      "alternatives": [
+        "Change every A occurrence in the two cases to B instead",
+        "Preserve the inconsistent metavariables and add a reader-facing note"
+      ],
+      "uncertainty": "confirmed by the local rule schemas and by the uninterrupted A-family in each conclusion and downstream semantic argument; either metavariable letter could name the schema, but mixing them invalidates the written proof",
+      "review_question": "Do the repaired cases now use one metavariable consistently while preserving the true-universal and false-universal soundness arguments?"
+    },
+    {
+      "id": "OLTAB-012",
+      "unit_id": "OLP-0110",
+      "classification": "confirmed-frozen-source-identity-tableau explanation mismatch with documented formula projection",
+      "source_locator": "content/first-order-logic/tableaux/identity.tex:67-71; content/first-order-logic/tableaux/identity.tex:84-90",
+      "target_locator": "mr/content/first-order-logic/tableaux/identity.tex:67-71; mr/content/first-order-logic/tableaux/identity.tex:84-90",
+      "source_sha256": "3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d",
+      "finding": "The symmetry explanation calls line 3 the second prerequisite A(s_2), although the displayed line is A(s_1) and the supplied schema requires A(t_1) with t_1=s_1. The transitivity explanation says A(s_2) becomes eq[t_1][t_2] while identifying it as line 2; with A(x)=eq[s_1][x], line 2 is eq[s_1][s_2], whereas eq[t_1][t_2]=eq[s_2][s_3] is line 3.",
+      "action": "Corrected the Marathi explanatory formulas to A(s_1) and eq[s_1][s_2], respectively. Unit-specific QA projections restore the two frozen source formulas solely for structural comparison; all displayed tableaux, rule labels, line numbers and formal formulas remain unchanged.",
+      "alternatives": [
+        "Preserve the two contradictory prose formulas literally",
+        "Rewrite the displayed tableaux or change the rule schema instead"
+      ],
+      "uncertainty": "confirmed directly by the adjacent tableau nodes, the two-premise identity rule schema and the substitutions explicitly described in the same paragraphs",
+      "review_question": "Do the repaired explanations identify exactly the second premise used by each displayed identity tableau without altering any formal tableau node?"
+    }
+  ],
+  "working_state_issue_excluded": "none; source scope ends at OLP-0111"
+}

@@ -1,0 +1,238 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: soundness.tex
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{sou}}
+      {\olfileid{pl}{tab}{sou}}
+      
+\olsection{निर्दोषता}
+
+\begin{explain}
+टॅब्लोसारखी !!^a{derivation} पद्धत \emph{निर्दोष} असते, जर ती प्रत्यक्षात
+धारण न करणाऱ्या गोष्टी !!{derive} करू शकत नसेल. त्यामुळे निर्दोषता हा
+!!{derivation} पद्धतींसाठी हमी दिलेल्या सुरक्षिततेचा एक प्रकार आहे. कोणता
+सिद्धता-उपपत्तीय गुणधर्म विचारात आहे यावर अवलंबून, उदाहरणार्थ, आपल्याला
+पुढील गोष्टी हव्या असतात:
+\begin{enumerate}
+\item प्रत्येक !!{derivable}~$!A$ हे \iftag{FOL}{वैध}{सर्वतः सत्य सूत्र} असते;
+\item एखादे !!a{sentence} इतर काही वाक्यांपासून !!{derivable} असेल, तर ते
+  त्यांचा तार्किक परिणामही असते;
+\item !!{sentence}s चा संच विसंगत असेल, तर तो अपूर्ततायोग्य असतो.
+\end{enumerate}
+हे !!a{derivation} पद्धतीचे महत्त्वाचे गुणधर्म आहेत. यांपैकी एखादा गुणधर्म
+खरा नसेल, तर !!{derivation} पद्धतीत दोष आहे---ती खूप जास्त गोष्टी
+!!{derive} करेल. म्हणून !!a{derivation} पद्धतीची निर्दोषता सिद्ध करणे अत्यंत
+महत्त्वाचे आहे.
+
+हे सर्व सिद्धता-उपपत्तीय गुणधर्म कोणत्या ना कोणत्या प्रकारच्या बंद
+!!{tableau}s द्वारे परिभाषित केलेले असल्यामुळे, वरील (1)--(3) सिद्ध करण्यासाठी
+बंद !!{tableau}s च्या चिन्हार्थविषयक गुणधर्मांबद्दल काहीतरी सिद्ध करावे लागते.
+प्रथम एखाद्या !!a{signed
+  formula} ची संरचनेत पूर्ती होणे म्हणजे काय ते
+परिभाषित करू; मग !!{tableau} बंद असेल, तर कोणतीही संरचना त्याची सर्व गृहीतके
+पूर्ण करत नाही, हे दाखवू. त्यानंतर (1)--(3) या परिणामाचे उपपरिणाम म्हणून
+मिळतील.
+\end{explain}
+
+\begin{defn}
+\iftag{FOL}{!!^a{structure}}{!!^a{valuation}}~$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$
+!!a{signed formula} $\sFmla{\True}{!A}$ \emph{पूर्ण करते} तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$; आणि ते
+$\sFmla{\False}{!A}$ पूर्ण करते तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$. $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$
+हा !!{signed formula}s चा संच~$\Gamma$ पूर्ण करतो तेव्हा आणि केवळ तेव्हाच,
+जेव्हा तो प्रत्येक $\sFmla{S}{!A} \in \Gamma$ पूर्ण करतो. $\Gamma$ पूर्ण
+करणारी एखादी \iftag{FOL}{!!a{structure}}{!!a{valuation}} असेल, तर तो
+\emph{पूर्ततायोग्य} आणि अन्यथा \emph{अपूर्ततायोग्य} असतो.
+\end{defn}
+
+\begin{thm}[निर्दोषता]
+  \ollabel{thm:tableau-soundness}
+  $\Gamma$ साठी बंद !!{tableau} असेल, तर $\Gamma$ अपूर्ततायोग्य असतो.
+\end{thm}
+
+\begin{proof}
+!!a{tableau} च्या शाखेवरील !!{signed formula}s चा संच पूर्ततायोग्य असेल, तर
+आणि केवळ तेव्हाच त्या शाखेला पूर्ततायोग्य म्हणू; तसेच !!a{tableau} मध्ये
+किमान एक पूर्ततायोग्य शाखा असेल, तर त्याला पूर्ततायोग्य म्हणू.
+
+पुढील गोष्ट दाखवू: एखाद्या पूर्ततायोग्य !!{tableau} चा अनुमानाच्या कोणत्याही
+एका नियमाने विस्तार केल्यास मिळणारा !!{tableau} नेहमी पूर्ततायोग्य असतो.
+यावरून प्रमेय सिद्ध होईल: $\Gamma$ मधील केवळ गृहीतके असलेल्या !!{tableau} ला
+अनुमानाचे नियम लावून कोणताही बंद !!{tableau} मिळतो. म्हणून $\Gamma$
+पूर्ततायोग्य असेल, तर त्याच्यासाठीचा कोणताही !!{tableau} पूर्ततायोग्य असेल.
+पण बंद !!{tableau} स्पष्टपणे पूर्ततायोग्य नसतो: प्रत्येक शाखेत
+$\sFmla{\True}{!A}$ आणि $\sFmla{\False}{!A}$ ही दोन्ही सूत्रे असतात, आणि
+कोणतीही संरचना $!A$ ची पूर्ती आणि अपूर्ती या दोन्ही करू शकत नाही.
+
+आपल्याकडे पूर्ततायोग्य !!{tableau}, म्हणजे किमान एक पूर्ततायोग्य शाखा असलेला
+!!a{tableau}, आहे असे समजा. अनुमानाचा नियम लावल्यावर एकतर शाखेत
+!!{signed formula}s जोडली जातात, किंवा शाखा दोन भागांत विभागली जाते. त्या
+नियमाच्या उपयोगाने विस्तारली न गेलेली एखादी पूर्ततायोग्य शाखा !!{tableau} मध्ये
+असेल, तर विस्तारित !!{tableau} मध्येही ती पूर्ततायोग्य शाखा राहते; म्हणून
+विस्तारित टॅब्लोसुद्धा पूर्ततायोग्य असतो. त्यामुळे पूर्ततायोग्य शाखेलाच नियम
+लावला जातो ते प्रकरण पाहणे पुरेसे आहे.
+
+त्या शाखेवरील !!{signed formula}s चा संच~$\Gamma$ असू द्या, आणि ज्या
+!!{signed formula} ला नियम लावला जातो ते $\sFmla{S}{!A} \in \Gamma$ असू
+द्या. नियम लावल्यावर शाखा विभागली जात नसेल, तर विस्तारित शाखा, म्हणजे
+$\Gamma$ आणि नियमाचे निष्कर्ष मिळून बनलेला संच, अजूनही पूर्ततायोग्य आहे हे
+दाखवावे लागेल. नियम लावल्यावर शाखा विभागली जात असेल, तर मिळणाऱ्या दोन
+शाखांपैकी किमान एक पूर्ततायोग्य आहे हे दाखवावे लागेल.
+  
+प्रथम, शाखा न विभागणारी संभाव्य अनुमाने पाहू.
+\begin{enumerate}
+\item $\sFmla{\True}{\lnot !B} \in \Gamma$ ला
+  $\TRule{\True}{\lnot}$ लावून शाखेचा विस्तार केला आहे असे समजा. मग
+  विस्तारित शाखेवरील !!{signed formula}s चा संच $\Gamma \cup
+  \{\sFmla{\False}{!B}\}$ असतो. समजा
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$. विशेषतः,
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\lnot !B}$. त्यामुळे
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$, म्हणजे
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ हे
+  $\sFmla{\False}{!B}$ पूर्ण करते.
+\item $\sFmla{\False}{\lnot !B} \in \Gamma$ ला
+  $\TRule{\False}{\lnot}$ लावून शाखेचा विस्तार केला आहे: सराव.
+\item $\sFmla{\True}{!B \land !C} \in \Gamma$ ला
+  $\TRule{\True}{\land}$ लावून शाखेचा विस्तार केला आहे. यामुळे शाखेवर
+  $\sFmla{\True}{!B}$ आणि $\sFmla{\True}{!C}$ ही दोन नवी
+  !!{signed formula}s मिळतात. समजा
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$; विशेषतः,
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B \land !C}$. मग
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ आणि
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. म्हणजे
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ हे
+  $\sFmla{\True}{!B}$ आणि $\sFmla{\True}{!C}$ ही दोन्ही सूत्रे पूर्ण करते.
+\item $\sFmla{\False}{!B \lor !C} \in \Gamma$ ला
+  $\TRule{\False}{\lor}$ लावून शाखेचा विस्तार केला आहे: सराव.
+\item $\sFmla{\False}{!B \lif !C} \in \Gamma$ ला
+  $\TRule{\False}{\lif}$ लावून शाखेचा विस्तार केला आहे. यामुळे शाखेवर
+  $\sFmla{\True}{!B}$ आणि $\sFmla{\False}{!C}$ ही दोन नवी
+  !!{signed formula}s मिळतात. समजा
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$; विशेषतः,
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B \lif !C}$. मग
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ आणि
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. म्हणजे
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ हे
+  $\sFmla{\True}{!B}$ आणि $\sFmla{\False}{!C}$ ही दोन्ही सूत्रे पूर्ण करते.
+
+\iftag{FOL}{%
+\item $\sFmla{\True}{\lforall[x][!A(x)]} \in \Gamma$ ला
+  $\TRule{\True}{\lforall}$ लावून शाखेचा विस्तार केला आहे. यामुळे शाखेवर
+  नवीन !!{signed formula}~$\sFmla{\True}{!A(t)}$ मिळते.
+  समजा $\Sat{M}{\Gamma}$; विशेषतः,
+  $\Sat{M}{\lforall[x][!A(x)]}$.
+  \olref[syn][sem]{prop:quant-terms} नुसार $\Sat{M}{!A(t)}$. परिणामी,
+  $\Struct{M}$ हे $\sFmla{\True}{!A(t)}$ पूर्ण करते.
+
+\item $\sFmla{\False}{\lforall[x][!A(x)]} \in \Gamma$ ला
+  $\TRule{\False}{\lforall}$ लावून शाखेचा विस्तार केला आहे. यामुळे शाखेवर
+  नवीन !!{signed formula}~$\sFmla{\False}{!A(a)}$ मिळते, जेथे $a$ हे
+  $\Gamma$ मध्ये न येणारे !!a{constant} आहे. $\Gamma$ पूर्ततायोग्य असल्यामुळे
+  $\Sat{M}{\Gamma}$ अशी एखादी $\Struct{M}$ असते; विशेषतः,
+  $\Sat/{M}{\lforall[x][!A(x)]}$. आता
+  $\Gamma \cup \{\sFmla{\False}{!A(a)}\}$ पूर्ततायोग्य आहे हे दाखवायचे आहे.
+  त्यासाठी पुढीलप्रमाणे योग्य~$\Struct{M'}$ परिभाषित करू.
+
+  \olref[syn][ass]{prop:sat-quant} नुसार,
+  $\Sat/{M}{\lforall[x][!A(x)]}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा काही $s$
+  साठी $\Sat/{M}{!A(x)}[s]$. आता $\Struct{M'}$ ही $\Struct{M}$ सारखीच
+  असू द्या, फक्त $\Assign{a}{M'} = s(x)$. $a$ हे $\Gamma$ मध्ये येत
+  नसल्यामुळे, \olref[syn][ext]{cor:extensionality-sent} नुसार कोणत्याही
+  $\sFmla{\True}{!C} \in \Gamma$ साठी $\Sat{M'}{!C}$, आणि कोणत्याही
+  $\sFmla{\False}{!C} \in \Gamma$ साठी $\Sat/{M'}{!C}$.
+
+  \olref[syn][ext]{prop:extensionality} नुसार $\Sat/{M'}{!A(x)}[s]$.
+  \olref[syn][ext]{prop:ext-formulas} नुसार $\Sat/{M'}{!A(a)}[s]$.
+  $!A(a)$ हे !!a{sentence} असल्यामुळे,
+  \olref[syn][ass]{prop:sentence-sat-true} नुसार $\Sat/{M'}{!A(a)}$;
+  म्हणजे $\Struct{M'}$ हे $\sFmla{\False}{!A(a)}$ पूर्ण करते.
+\item $\sFmla{\True}{\lexists[x][!B(x)]} \in \Gamma$ ला
+  $\TRule{\True}{\lexists}$ लावून शाखेचा विस्तार केला आहे: सराव.
+\item $\sFmla{\False}{\lexists[x][!B(x)]} \in \Gamma$ ला
+  $\TRule{\False}{\lexists}$ लावून शाखेचा विस्तार केला आहे: सराव.}{}
+\end{enumerate}
+आता शाखा विभागणारी संभाव्य अनुमाने पाहू.
+\begin{enumerate}
+\item $\sFmla{\False}{!B \land !C} \in \Gamma$ ला
+  $\TRule{\False}{\land}$ लावून शाखेचा विस्तार केला आहे. यामुळे दोन शाखा
+  मिळतात: डावीकडील शाखा $\sFmla{\False}{!B}$ मधून आणि उजवीकडील शाखा
+  $\sFmla{\False}{!C}$ मधून पुढे जाते. समजा
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$; विशेषतः,
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B \land !C}$. मग एकतर
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$ किंवा
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. पहिल्या प्रकरणात
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ हे
+  $\sFmla{\False}{!B}$ पूर्ण करते; म्हणजे
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ डावीकडील शाखेवरील सूत्रे पूर्ण करते.
+  दुसऱ्या प्रकरणात $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ हे
+  $\sFmla{\False}{!C}$ पूर्ण करते; म्हणजे
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ उजवीकडील शाखेवरील सूत्रे पूर्ण करते.
+\item $\sFmla{\True}{!B \lor !C} \in \Gamma$ ला
+  $\TRule{\True}{\lor}$ लावून शाखेचा विस्तार केला आहे: सराव.
+\item $\sFmla{\True}{!B \lif !C} \in \Gamma$ ला
+  $\TRule{\True}{\lif}$ लावून शाखेचा विस्तार केला आहे: सराव.
+\item \Cut{} लावून शाखेचा विस्तार केला आहे. यामुळे दोन शाखा मिळतात: एका
+  शाखेत $\sFmla{\True}{!B}$ आणि दुसऱ्या शाखेत $\sFmla{\False}{!B}$ असते.
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ आणि एकतर
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ किंवा
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$ असल्यामुळे,
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ हे डावीकडील किंवा उजवीकडील शाखा
+  पूर्ण करते.
+\end{enumerate}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][tab][sou]{thm:tableau-soundness} ची सिद्धता पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][tab][sou]{thm:tableau-soundness} ची सिद्धता पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+जर $\Proves !A$, तर $!A$ हे \iftag{FOL}{वैध}{सर्वतः सत्य सूत्र} आहे.
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:entailment-soundness}
+जर $\Gamma \Proves !A$, तर $\Gamma \Entails !A$.
+\end{cor}
+
+\begin{proof}
+  जर $\Gamma \Proves !A$, तर काही $!B_1$, \dots, $!B_n \in
+  \Gamma$ साठी $\{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots,
+  \sFmla{\True}{!B_n}\}$ चा बंद !!{tableau} असतो.
+  \olref{thm:tableau-soundness} नुसार, प्रत्येक
+  \iftag{FOL}{!!{structure}}{!!{valuation}}~$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$
+  काही $!B_i$ असत्य करते किंवा $!A$ सत्य करते. म्हणून
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ असेल, तर
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ सुद्धा असेल.
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:consistency-soundness}
+जर $\Gamma$ पूर्ततायोग्य असेल, तर तो सुसंगत आहे.
+\end{cor}
+
+\begin{proof}
+प्रतिलोम विधान सिद्ध करू. $\Gamma$ सुसंगत नाही असे समजा. मग
+$!B_1$, \dots, $!B_n \in \Gamma$ अशी वाक्ये आणि
+$\{\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}$ चा बंद
+!!{tableau} असतो. \olref{thm:tableau-soundness} नुसार, प्रत्येक
+$i=1$, \dots,~$n$ साठी $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B_i}$ अशी
+कोणतीही $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ नसते. पण मग $\Gamma$
+पूर्ततायोग्य नसतो.
+\end{proof}
+
+\end{document}

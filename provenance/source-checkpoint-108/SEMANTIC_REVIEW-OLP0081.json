@@ -1,0 +1,88 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0081",
+  "method": "Same-agent English/Marathi block-by-block close reading, theorem-and-proof reverse paraphrase, exact formula, macro, token and identifier comparison; the release compile found and the tranche audit removed two duplicated out-of-math metavariables; no independent human or native-speaker review is claimed.",
+  "scope": "Soundness of the sequent calculus: semantic validity of sequents, induction on derivations, propositional and first-order rule cases, cut, and the weak-soundness, entailment-soundness and consistency-soundness corollaries.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "The section defines soundness as the inability of a derivation method to derive things that do not hold. It lists the three desired consequences: derivable formulas are valid, derivability from sentences respects logical consequence, and an inconsistent sentence set is unsatisfiable. The proof strategy is to define semantic validity of sequents and show that every derivable sequent is valid.",
+      "checks": "The heading, the safety motivation, all three numbered consequences, the derivability-to-validity strategy, and the distinction between derivability and semantic properties are preserved."
+    },
+    {
+      "blocks": [
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "A structure or valuation satisfies a sequent when some formula on its left is satisfied or some formula on its right is satisfied. A sequent is valid when every structure or valuation satisfies it. The soundness theorem states that any sequent derived in LK is valid.",
+      "checks": "The satisfaction definition, validity quantifier, LK notation, theorem label, sequent order and all satisfaction macros remain exact; the Marathi wording uses the established पूर्ति, वैध and निर्दोषता terminology."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "The proof fixes a derivation of the target sequent and inducts on its number of inferences. The zero-inference case is an initial sequent A |- A, which is valid because either the left occurrence is satisfied or the right occurrence is satisfied. For a positive number of inferences, the cases are split by the lowest inference and the induction hypothesis applies to each premise.",
+      "checks": "The induction parameter, initial sequent, two semantic alternatives, premise-size justification and derivation token are preserved."
+    },
+    {
+      "blocks": [
+        14,
+        15
+      ],
+      "reverse_paraphrase": "The one-premise weakening case transfers satisfaction from the premise to the weakened conclusion. The left-negation case uses the induction hypothesis: if the right-side formula A is satisfied, its negation is satisfied on the left; otherwise a formula already witnessing premise validity remains in the appropriate side of the conclusion.",
+      "checks": "Both weakening trees, the left-negation tree, the three induction alternatives, membership relations, negation semantics and conclusion sequent remain unchanged."
+    },
+    {
+      "blocks": [
+        16,
+        17
+      ],
+      "reverse_paraphrase": "The remaining one-premise cases handle right negation as an exercise, left conjunction, right disjunction, right conditional, left universal, right universal and left existential as an exercise. The displayed arguments preserve the relevant semantic clauses, and the right-universal case uses the eigenvariable condition and a modified structure.",
+      "checks": "Connective and quantifier rule labels, all proof trees, structure/valuation branches, eigenvariable condition, closed term condition, extension references and semantic formulas are preserved exactly."
+    },
+    {
+      "blocks": [
+        17,
+        18,
+        19
+      ],
+      "reverse_paraphrase": "The two-premise cases cover cut, right conjunction, left disjunction as an exercise and left conditional. Cut transfers validity through the cut formula; right conjunction combines the two induction-hypothesis conclusions; left conditional uses failure of the conclusion sequent to force the antecedent true and consequent false. Separate tagged exercises ask the reader to complete the FOL and propositional soundness proofs.",
+      "checks": "The cut and connective trees, side contexts, tagged FOL/non-FOL exercises, semantic case splits and protected rule macros are retained."
+    },
+    {
+      "blocks": [
+        20,
+        21,
+        22
+      ],
+      "reverse_paraphrase": "Weak soundness says that a provable formula is valid. Entailment soundness says that if Gamma proves A, then Gamma entails A; the proof extracts a finite Gamma-zero and applies sequent soundness to show that any structure satisfying Gamma satisfies A.",
+      "checks": "Both corollary labels, finite-subset witness, derivation reference, false-left-or-true-right alternative, satisfaction of Gamma and satisfaction of A are preserved."
+    },
+    {
+      "blocks": [
+        23,
+        24
+      ],
+      "reverse_paraphrase": "Consistency soundness states that every satisfiable set is consistent. Its contrapositive assumes a finite derivation of the empty-right sequent, applies sequent soundness, obtains a left formula satisfied by every structure or valuation, and concludes that no structure satisfies the whole set.",
+      "checks": "The empty succedent, finite subset, validity argument, inclusion into Gamma, structure/valuation quantifier and final non-satisfiability conclusion remain exact."
+    }
+  ],
+  "source_observations": [
+    "The frozen upstream source is a soundness proof and corollary unit; no upstream defect or correction was identified in this unit.",
+    "The Marathi target redundantly repeated metavariable C outside math mode after two witness-membership formulas in the long induction proof. Both repetitions were removed; the source formulas and prose meaning are preserved."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "निर्दोषता, वैधता, पूर्ति, तार्किक निष्पन्नता and सुसंगतता follow the edition's established terminology; the frozen formulas and proof trees control their formal interpretation.",
+    "The Marathi prose in the long induction cases is a close semantic rendering, while rule names, formulas, protected tokens and references are intentionally retained.",
+    "The repaired unit still has no independent human or native-speaker review; its reader rendering is checked separately in the cumulative release QA."
+  ]
+}

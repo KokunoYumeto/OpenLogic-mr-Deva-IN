@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0055",
+  "method": "Same-agent English/Marathi close reading, macro/import comparison and reverse paraphrase with checked native terminology; not independent or human review.",
+  "scope": "The Propositional Logic part title, editorial scope note, FOL feature exclusion, valuation substitution and planned truth-functional completeness expansion.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5
+      ],
+      "reverse_paraphrase": "The part treats classical propositional logic. Its first chapter is elementary and leaves many proofs as exercises. Proof systems and completeness material are reused from first-order logic with the FOL tag false, omitting predicates, terms and quantifiers and replacing structures with truth-valuations.",
+      "checks": "The target preserves the distinction between propositional and first-order logic, the incompleteness of supplied proofs, the exact false-tag mechanism, all excluded feature classes, both glossary macros and both mathematical objects."
+    },
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "The editors plan to expand the part with more detail and further topics and results, including truth-functional completeness.",
+      "checks": "The future-plan modality remains explicit and truth-functional completeness is not weakened to generic completeness."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "सत्य-मूल्यांकन and अभिजात are provisional and explicitly prioritized for specialist review."
+  ]
+}

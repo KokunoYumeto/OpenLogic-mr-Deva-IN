@@ -1,0 +1,60 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0106",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse paraphrase of all four propositions and their tableau transformations, sign-by-sign replay of every negation and Cut step, exact formula, macro, token and identifier comparison after documented source projections, and problem-count comparison; no independent human or native-speaker review is claimed.",
+  "scope": "Tableau derivability and consistency: contraction of a derived assumption, equivalence with inconsistency after adding a negation, explicit inconsistency, and exhaustion by the two A/not-A extensions.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "The section introduces derivability properties used in completeness. If Gamma derives A and Gamma union {A} is inconsistent, finite true B-premises with false A and finite true C-premises with true A have closed tableaux. Cutting on A combines them into a closed tableau over a finite subset of Gamma, so Gamma is inconsistent.",
+      "checks": "The proposition direction, both signed witness sets, Cut formula, finite-union argument and inconsistency conclusion are preserved. OLTAB-006 consistently uses m as the C-family's final index."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "Gamma derives A exactly when Gamma with not-A is inconsistent. Forward, replace the false-A starting assumption by true not-A and recover false A using true-negation. Backward, remove true not-A and its descendants, add false A, and repair the exceptional branches that had closed on true not-A versus false not-A by deriving true A from false not-A. The exercise asks for the dual statement with derivability of not-A and addition of A.",
+      "checks": "All truth signs, negation-rule directions, finite premise sets and the dual exercise are exact. The exceptional closure argument retains both cases and does not assume that removed descendants remain available."
+    },
+    {
+      "blocks": [
+        13,
+        14
+      ],
+      "reverse_paraphrase": "If Gamma derives A and contains not-A, choose finitely many B-premises witnessing derivability. Replace the false-A assumption in its closed tableau with true not-A, derive false A after all assumptions, and redirect every old line-1 justification to the inserted formula. The resulting closed tableau has only assumptions from Gamma and proves inconsistency.",
+      "checks": "OLTAB-007 corrects the true-negation premise to true not-A, and OLTAB-008 corrects the inserted formula's line number to n+2 after n+1 assumptions. The old and new closure witnesses are otherwise unchanged."
+    },
+    {
+      "blocks": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "reverse_paraphrase": "If both Gamma with A and Gamma with not-A are inconsistent, take finite closed-tableau witnesses for each. Start with their B- and C-premises and Cut on A. Attach the first tableau below true A. Below false A, attach the second tableau after removing true-not-A consequences; false A is already supplied by Cut. A former true-not-A/false-not-A closure is replaced by deriving true A from false not-A, which closes against false A. Every other closure remains available.",
+      "checks": "The two finite witness sets, Cut branch order, true-negation removal, false-negation replacement and both closing sign pairs are preserved. OLTAB-009 records only mechanical source copy-edit normalization."
+    }
+  ],
+  "source_observations": [
+    "OLTAB-006 repairs the C-family's definition from final index n to the C_m used in its displayed witness and the later parallel construction.",
+    "OLTAB-007 repairs an inapplicable true-negation premise: the rule acts on true not-A, not false A.",
+    "OLTAB-008 repairs the derived false-A reference from n+1 to n+2, the first line after n+1 assumptions.",
+    "OLTAB-009 records a stray backslash, duplicated direction word and two local grammar defects normalized in translation.",
+    "The unit contains one tagged exercise problem and no encoded oltableau environment; its tableaux are specified through signed-formula sets and transformation prose."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The tableau and proof-theory terminology remains subject to the existing expert-review ledger where direct specialist Marathi attestation is sparse.",
+    "Because the combined tableaux are described rather than fully encoded, verification reconstructed each branch transformation from the stated assumptions and rules."
+  ]
+}

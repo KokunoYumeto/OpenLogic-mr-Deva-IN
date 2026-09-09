@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0046",
+  "method": "Same-agent English/Marathi close reading, formula/macro/reference comparison and reverse paraphrase with reuse of the established philosophical terminology; not independent or human review.",
+  "scope": "All eleven translated blocks in the philosophical-reflections section, including inactive source comments.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        8
+      ],
+      "reverse_paraphrase": "Arithmetization yields valuable mathematics and shows that completeness distinguishes reals from rationals, but representing reals as cuts may be no more rigorous than decimal or Cauchy-sequence constructions. The key gain in rigor is recognizing completeness.",
+      "checks": "The complete-ordered-field claim, Dedekind-cut construction, analysis context, early-seventeenth-century qualification and Cauchy cross-reference are all retained without strengthening the author's assessment."
+    },
+    {
+      "blocks": [
+        9,
+        10
+      ],
+      "reverse_paraphrase": "The nested set constructions are normally forgotten after their adequacy is proved. They also do not settle metaphysical identity, because alternative ordered-pair definitions yield equally successful but extensionally different number constructions, as in Benacerraf's argument.",
+      "checks": "The construction hierarchy, exception for proofs of adequacy, two relation-reflection cross-references, citation and arbitrary-choice conclusion remain present; inactive explanatory comments are translated and still inactive."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "Under the chosen reductions, natural zero differs from integer zero and no natural is literally an integer, conflicting with an earlier subset claim if the constructions are identities. Informal set theory lets us treat number systems as sets and embed their theories, but deeper philosophical significance needs further argument; naturals remain assumed as given for the next chapter.",
+      "checks": "Both zero formulas, the Nat-subset-Rat formula, all references, the treat/embed distinction, the qualified conclusion and the inactive final transition are preserved."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic, historical or philosophical certification has been performed."
+  ]
+}

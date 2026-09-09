@@ -1,0 +1,74 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0087",
+  "method": "Same-agent English/Marathi block-by-block close reading, quantifier-rule reverse paraphrase, exact formula, macro, token and identifier comparison, reconciliation of the unit's repeated closed-term clauses, and adoption of a bounded independent model audit of the combined eigenvariable summary; no independent human or native-speaker review is claimed.",
+  "scope": "Universal and existential natural-deduction rules, closed-term restrictions, eigenvariables and their side condition, substitution occurrences, soundness motivation and the sentence-closure consequence.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "The section gives the universal and existential quantifier rules. The displayed trees pair universal introduction with universal elimination and existential introduction with existential elimination, retaining the marked assumption discharged by existential elimination.",
+      "checks": "The headings use the established quantifier and [symbol] साठीचे नियम vocabulary; both proof-diagram blocks are source-identical, including premise order, Discharge numbering and conclusions."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "For the universal rules, t is a variable-free closed term. The constant a occurs neither in the universally quantified conclusion nor in any assumption left undischarged in the derivation ending at premise A(a); a is the eigenvariable of universal introduction, despite historically being a constant in this rule.",
+      "checks": "The conclusion and premise formulas, constant/undischarged/derivation tokens, universal-introduction macro and historical footnote all remain explicit."
+    },
+    {
+      "blocks": [
+        11,
+        12
+      ],
+      "reverse_paraphrase": "For existential elimination, t is again closed and constant a occurs neither in the existential major premise, conclusion C, nor any undischarged assumption in the two premise derivations apart from the temporary assumptions A(a). The rule-specific restrictions stated separately for universal introduction and existential elimination—covering their relevant premises, conclusions and undischarged assumptions—are collectively called the eigenvariable condition.",
+      "checks": "Both premises, the exception for temporary assumptions A(a), conclusion C and the distinct rule-specific scopes are preserved. The repaired summary does not falsely claim that a is absent from the universal-introduction premise A(a)."
+    },
+    {
+      "blocks": [
+        13
+      ],
+      "reverse_paraphrase": "A(t) abbreviates substitution of t for free x in A. Existential introduction may replace one or more, but need not replace every, occurrence of t in its premise. By contrast, the eigenvariable a for universal introduction or existential elimination may not already occur in A, so P(a,a) cannot license universal x P(a,x).",
+      "checks": "Every substitution and example formula is exact, and the target preserves the distinction between selectively replacing occurrences of t and the stronger eigenvariable freshness condition."
+    },
+    {
+      "blocks": [
+        14,
+        15
+      ],
+      "reverse_paraphrase": "Existential introduction and universal elimination impose no extra restriction on t beyond closedness. Existential elimination and universal introduction require eigenvariable a to be absent from the conclusion and undischarged assumptions. This condition is needed for soundness; otherwise an existential premise could improperly yield a universal conclusion, although the entailment fails. Because quantifier elimination substitutes only closed terms, anything derivable from sentences is itself a sentence.",
+      "checks": "Soundness, non-entailment, the invalid displayed tree and the final sentence-closure consequence are preserved. The bounded closed-term clarification is recorded as OLND-001 and changes no formal expression."
+    }
+  ],
+  "source_observations": [
+    "OLND-001: source lines 86-87 locally say that t has no restrictions and can be anything, while lines 27-28 and 52 require t to be closed and lines 105-107 rely again on closed substitution. The Marathi target states that no additional restriction applies beyond closedness.",
+    "OLND-002: source lines 58-61 say that the eigenvariable is absent from the premises, contradicting the displayed universal-introduction premise A(a), and omit the existential-elimination exception for temporary A(a). The Marathi summary now refers to the correct rule-specific restrictions stated separately above."
+  ],
+  "independent_audit": {
+    "report": "[local research path omitted]",
+    "report_bytes": 16558,
+    "report_sha256": "e73d1f5198e932453f0c413d3db69f66ccc634894fb6c4562fed69cca99f7656",
+    "hash_manifest_sha256": "8dbcfc44e7cb152bb6f583e47c8fb155786b7b8561b0ae101ad5afceafbfbf25",
+    "review_kind": "bounded independent model spotcheck; not native-speaker or human-expert testimony",
+    "adopted_findings": [
+      "OLND-002",
+      "T139 rationale scope",
+      "T155 cross-presentation rationale",
+      "T174 evidence attribution",
+      "T178/T179 presentation-specific scope"
+    ]
+  },
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "बंद पद, आयगेन चर and आयगेन चराची अट remain definition-controlled terminology with documented uncertainty; the precise formulas fix their roles.",
+    "OLND-001 and OLND-002 are bounded reconciliations of internally conflicting source clauses; expert review may assess their phrasing.",
+    "The current coherent reader ends at OLP-0068, so this unit has not yet received paginated TeX or browser-rendering QA."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0109",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse paraphrase of the definition, main theorem, preservation invariant, every completed inference-rule case and all three corollaries; stepwise replay of the true-universal and false-universal semantic arguments; exact formula, macro, token, identifier, block, item and tag comparison after documented source projection; no independent human or native-speaker review is claimed.",
+  "scope": "Soundness of closed signed tableaux, preservation of tableau satisfiability under every propositional and first-order expansion rule, and validity, semantic-entailment and consistency corollaries.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "A proof system is sound when it cannot derive claims that fail semantically. The desired consequences are validity of every theorem, semantic consequence whenever there is derivability from premises, and unsatisfiability of every inconsistent premise set. A structure or valuation satisfies true-signed A exactly when it satisfies A, and satisfies false-signed A exactly when it does not satisfy A. A signed set is satisfiable when one structure or valuation satisfies all its members. The theorem says that any set possessing a closed tableau is unsatisfiable.",
+      "checks": "The Marathi keeps soundness distinct from validity and truth, preserves the FOL/propositional alternatives, defines both signs in opposite semantic directions, quantifies satisfaction over every member of Gamma, and states the theorem in the closed-tableau-to-unsatisfiability direction."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "A branch is satisfiable when its signed-formula set is satisfiable; a tableau is satisfiable when at least one branch is. The proof invariant says that one rule application preserves tableau satisfiability. It proves the theorem because a satisfiable assumption set would make each constructed tableau satisfiable, whereas every branch of a closed tableau contains true A and false A and therefore cannot be satisfied. It suffices to inspect the satisfiable branch actually extended, proving preservation of its extension or of at least one child after a split.",
+      "checks": "The existential condition on a tableau branch, the universal impossibility of satisfying a closure pair, the untouched-branch argument, and the nonsplit/split proof obligations all retain their source quantifier strength."
+    },
+    {
+      "blocks": [
+        14,
+        18
+      ],
+      "reverse_paraphrase": "For each propositional nonsplitting rule, satisfaction of the active signed formula forces satisfaction of all formulas added to the same branch. For false conjunction, satisfaction forces at least one of false B and false C, so at least one child branch remains satisfiable; true disjunction and true conditional are analogous exercises. Cut also preserves a satisfiable child because every interpretation either satisfies B or fails to satisfy B.",
+      "checks": "All true and false signs, conjunction/disjunction/conditional directions, left and right branch descriptions and the cut dichotomy are exact. Six exercise-designated cases remain exercises, and the completed cases preserve the source's witnesses."
+    },
+    {
+      "blocks": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "reverse_paraphrase": "True universal A permits the closed-term instance A(t). If false universal A is satisfiable, some variable assignment s falsifies A(x). Interpret the fresh constant a as s(x) in a modified structure M-prime. Freshness preserves every signed formula already in Gamma, while extensionality and substitution make A(a) false in M-prime, so the expanded branch is satisfiable.",
+      "checks": "The true-universal instance, false-universal eigenconstant, freshness domain Gamma, modified constant assignment, extensionality citations, sentence step and false sign are preserved. OLTAB-011 changes only the frozen source's inconsistent B metavariables to the A family already used by both conclusions and downstream steps."
+    },
+    {
+      "blocks": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "reverse_paraphrase": "Both tagged exercises ask for completion of the appropriate FOL or propositional soundness proof. The first corollary makes every theorem valid or tautological. The second uses a finite closed-tableau witness for Gamma deriving A to show every model or valuation of Gamma also satisfies A. The last proves contrapositively that satisfiability implies consistency: an inconsistent Gamma supplies finitely many true-signed premises with a closed tableau, hence no interpretation satisfies them all.",
+      "checks": "Both tag variants and three labels are exact. The finite B_1 through B_n witnesses, false-A assumption in derivability, all-B_i satisfaction condition in inconsistency, implication directions and contrapositive are unchanged."
+    }
+  ],
+  "source_observations": [
+    "OLTAB-011 documents five B-to-A formula corrections forming one repeated copy error across the two universal-rule cases; four exact projection rules reconstruct the frozen form because one projected pattern occurs twice.",
+    "The proof establishes the stronger signed-set invariant first and derives weak soundness, entailment soundness and satisfiability-to-consistency as corollaries.",
+    "The unit contains 26 aligned blank-line blocks, 16 enumerate items and two tagprob records in both source and target; it contains no tableau drawing environment.",
+    "The false-universal construction relies on freshness of a from Gamma. Since the active universal formula belongs to Gamma, this also excludes a from A(x), which licenses the structure-change and extensionality steps."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The specialist Marathi terms for proof-system soundness, satisfiability and tableau remain explicitly provisional under the terminology ledger.",
+    "This source unit has no encoded tree to inspect visually; its typesetting will be checked in the guarded cumulative chapter build."
+  ]
+}

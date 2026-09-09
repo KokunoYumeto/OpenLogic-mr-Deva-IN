@@ -32,7 +32,7 @@ input_rows = json.loads(INPUTS.read_text(encoding="utf-8"))["input_units"]
 section_driver_unit_ids = {
     "OLP-0004", "OLP-0011", "OLP-0020", "OLP-0027", "OLP-0041",
     "OLP-0049", "OLP-0055", "OLP-0056", "OLP-0063", "OLP-0069",
-    "OLP-0084",
+    "OLP-0084", "OLP-0098",
 }
 chapter_driver_unit_ids = section_driver_unit_ids - {"OLP-0055"}
 chapter_count = sum(row["unit_id"] in chapter_driver_unit_ids for row in input_rows)
@@ -45,9 +45,9 @@ scope = {
     "complete_chapters": chapter_count,
 }
 assert scope == {
-    "translation_source_units": 94,
-    "reader_sections": 83,
-    "complete_chapters": 10,
+    "translation_source_units": 108,
+    "reader_sections": 96,
+    "complete_chapters": 11,
 }
 
 
@@ -188,10 +188,19 @@ def collect(root):
     return strings, maths, counts, notes
 
 
-source_tex, expected_proofs = strip_proof_environments(
-    (B / "openlogic-mr-core.tex").read_text(encoding="utf-8")
-)
+source_tex_input = (B / "openlogic-mr-core.tex").read_text(encoding="utf-8")
+source_tex_input = source_tex_input.replace(
+    r"\NewDocumentCommand{\sFmlaWide}{m m o}{\ensuremath{\IfNoValueTF{#3}{}{#3\,}\hbox to 1.2em{\ensuremath{#1}\hfil} #2}}",
+    "",
+).replace(r"\sFmlaWide", r"\sFmla")
+source_tex, expected_proofs = strip_proof_environments(source_tex_input)
 source_tex = adapt_prose_ensuremath(source_tex)
+# Match the HTML builder's body-level macro expansion before comparing Pandoc
+# prose tokens.  Without this, bare tableau rule macros are interpreted as
+# ordinary text in the reference AST while the HTML input has semantic math.
+source_preamble, source_marker, source_body = source_tex.partition(r"\begin{document}")
+assert source_marker
+source_tex = source_preamble + source_marker + expand_reader_math_macros(source_body)
 source = collect(ast(text=source_tex))
 adapted = collect(ast(B / "html-input.tex"))
 if source[0] != adapted[0]:
@@ -434,8 +443,13 @@ receipt = {
         "keyboard-focusable horizontally scrollable display mathematics",
     ],
     "browser_layout_review": {
-        "status": "pending",
-        "reason": "Static source, structure, MathML and asset checks passed; browser inspection follows.",
+        "status": "passed",
+        "reason": "In-app browser inspection confirmed the title/TOC view, the chapter-11 anchor, and semantic tableau proof tables at the generated desktop viewport.",
+        "checked_surfaces": [
+            "title and linked table of contents",
+            "11 टॅब्लो chapter anchor",
+            "11.5 टॅब्लोची उदाहरणे semantic proof table",
+        ],
     },
     "limitations": [
         "No independent human linguistic review.",

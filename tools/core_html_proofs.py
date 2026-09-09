@@ -141,6 +141,25 @@ def adapt_prose_ensuremath(tex):
             cursor = end
             continue
         command_match = re.match(r"\\([A-Za-z]+)", body[cursor:])
+        if command_match and command_match.group(1) == "TRule":
+            # Tableau rule names occur both inside and outside explicit math.
+            # The scanner has already skipped math spans, so wrap only the
+            # bare prose occurrence and retain its two arguments and line
+            # reference as one semantic formula.
+            end = cursor + len(command_match.group(0))
+            for _ in range(2):
+                while end < len(body) and body[end].isspace():
+                    end += 1
+                assert end < len(body) and body[end] == "{", body[cursor : cursor + 80]
+                _, end = _balanced(body, end)
+            optional_start = end
+            while optional_start < len(body) and body[optional_start].isspace():
+                optional_start += 1
+            if optional_start < len(body) and body[optional_start] == "[":
+                _, end = _balanced_square(body, optional_start)
+            output.append("$" + body[cursor:end] + "$")
+            cursor = end
+            continue
         if command_match and command_match.group(1) in argument_commands:
             command = command_match.group(1)
             end = cursor + len(command_match.group(0))
@@ -172,7 +191,7 @@ def adapt_prose_ensuremath(tex):
 def strip_proof_environments(tex):
     """Replace every proof graphic by a stable semantic-HTML placeholder."""
     pattern = re.compile(
-        r"\\begin\{(?P<environment>prooftree|oltableau|defish)\}.*?"
+        r"\\begin\{(?P<environment>prooftree|oltableau|tableau|defish)\}.*?"
         r"\\end\{(?P=environment)\}",
         re.S,
     )
@@ -200,9 +219,12 @@ def strip_proof_environments(tex):
             spec["rows"] = [dict(row) for row in manual["rows"]]
             used_manual.add(spec["id"])
         else:
-            assert environment in ("prooftree", "defish")
+            assert environment in ("prooftree", "defish", "oltableau", "tableau")
             automatic += 1
-            spec = _generic_proof_spec(block, automatic, environment)
+            if environment in ("oltableau", "tableau"):
+                spec = _generic_tableau_spec(block, automatic)
+            else:
+                spec = _generic_proof_spec(block, automatic, environment)
         placeholder = f"OPENLOGICPROOFPLACEHOLDER{number:04d}"
         spec["placeholder"] = placeholder
         found.append(spec)
@@ -211,9 +233,15 @@ def strip_proof_environments(tex):
     pieces.append(tex[cursor:])
     output = "".join(pieces)
     assert used_manual == {spec["id"] for spec in PROOFS}
-    assert len(found) == 143
-    assert automatic == 140
-    assert not re.search(r"\\begin\{(?:prooftree|oltableau|defish)\}", output)
+    # Keep the invariant tied to the input reader rather than to a historical
+    # chapter boundary: each proof environment must become exactly one
+    # placeholder, with the three curated examples represented manually.
+    total_environments = len(
+        re.findall(r"\\begin\{(?:prooftree|oltableau|tableau|defish)\}", tex)
+    )
+    assert len(found) == total_environments
+    assert automatic == total_environments - len(PROOFS)
+    assert not re.search(r"\\begin\{(?:prooftree|oltableau|tableau|defish)\}", output)
     return output, found
 
 
@@ -325,6 +353,95 @@ def _proof_formula(text):
         return r"\text{रिकामी जागा}"
     text = text.replace(r"\Atom", r"\Atom")
     return expand_proof_math_macros(text)
+
+
+def _tableau_justification(segment):
+    """Read the first ``just=`` value following a marked tableau formula."""
+    match = re.search(r"\bjust\s*=\s*", segment)
+    if not match:
+        if re.search(r"\bclose\b", segment):
+            return "शाखा बंद"
+        if re.search(r"\bchecked\b", segment):
+            return "तपासलेले सूत्र"
+        return "नियम नोंदवलेला नाही"
+    position = match.end()
+    while position < len(segment) and segment[position].isspace():
+        position += 1
+    if position < len(segment) and segment[position] == "{":
+        value, position = _balanced(segment, position)
+    else:
+        command = re.match(r"\\[A-Za-z]+", segment[position:])
+        if command:
+            value = command.group(0)
+            position += len(command.group(0))
+            # TRule carries a pair of braced arguments and an optional line
+            # reference. Keep them with the rule before normalizing labels.
+            if value == r"\TRule":
+                for _ in range(2):
+                    while position < len(segment) and segment[position].isspace():
+                        position += 1
+                    if position < len(segment) and segment[position] == "{":
+                        argument, position = _balanced(segment, position)
+                        value += "{" + argument + "}"
+                while position < len(segment) and segment[position].isspace():
+                    position += 1
+                if position < len(segment) and segment[position] == "[":
+                    end = segment.find("]", position + 1)
+                    if end >= 0:
+                        value += segment[position : end + 1]
+                        position = end + 1
+        else:
+            end = position
+            while end < len(segment) and segment[end] not in ",]\n":
+                end += 1
+            value = segment[position:end].strip()
+    label = _label_text(value)
+    if re.search(r"\bclose\b", segment):
+        label = label + "; शाखा बंद"
+    return label
+
+
+def _generic_tableau_spec(block, number):
+    """Represent bracket-based ``oltableau`` trees as source-order steps."""
+    rows = []
+    cursor = 0
+    marker = r"\sFmla"
+    while True:
+        start = block.find(marker, cursor)
+        if start < 0:
+            break
+        position = start + len(marker)
+        while position < len(block) and block[position].isspace():
+            position += 1
+        if position >= len(block) or block[position] != "{":
+            cursor = position
+            continue
+        label, position = _balanced(block, position)
+        while position < len(block) and block[position].isspace():
+            position += 1
+        formula, position = _balanced(block, position)
+        next_start = block.find(marker, position)
+        segment = block[position:] if next_start < 0 else block[position:next_start]
+        raw = r"\sFmla{" + label + "}{" + formula + "}"
+        rows.append(
+            {
+                "formula_tex": _proof_formula(raw),
+                "rule": _tableau_justification(segment),
+                "group": 1,
+            }
+        )
+        cursor = position
+    assert rows, number
+    return {
+        "id": f"proof-auto-{number:03d}",
+        "section_id": None,
+        "caption": "मूळ मजकुरातील टॅब्लो; पायऱ्या स्रोतक्रमाने दिल्या आहेत",
+        "environment": "oltableau",
+        "required": [],
+        "rows": rows,
+        "groups": 1,
+        "representation": "accessible source-order step table",
+    }
 
 
 def _read_command_argument(block, position, dollar_form):
@@ -471,6 +588,9 @@ def _replace_args(text, command, count, formatter, optional=False):
 
 def expand_proof_math_macros(text):
     """Expand proof macros to ordinary TeX understood by Pandoc/texmath."""
+    # A few tableau source blocks use the upstream metavariable shorthand;
+    # semantic MathML can represent its argument directly as ordinary math.
+    text = re.sub(r"\\formula\{([^{}]*)\}", r"\1", text)
     text = text.replace(r"\Proves/", r"\nvdash")
     text = re.sub(r"\\Proves\b", r"\\vdash", text)
     text = text.replace(r"\fCenter", r"\Rightarrow")

@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0069",
+  "method": "Same-agent English/Marathi close reading, macro/import comparison and reverse paraphrase with the established Marathi sequent-calculus canon plus a bounded official-source check for the classical qualifier; not independent or human review.",
+  "scope": "The first-order sequent-calculus chapter driver: bilingual chapter title, editorial scope note, proof-system tag, import graph, FOL-conditional imports, and chapter hook.",
+  "samples": [
+    {
+      "blocks": [
+        4
+      ],
+      "reverse_paraphrase": "Both the FOL and PL chapter variants are titled The Sequent Calculus, rendered as क्रमवर्ती कलन, while retaining their distinct fol/pl identifiers and shared seq identifier.",
+      "checks": "Both title arguments are translated identically; the FOL and PL branch structure and all three identifier arguments remain unchanged."
+    },
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "The chapter presents Gentzen's standard LK sequent calculus for classical first-order logic. More examples and exercises would be useful. The prfLK tag includes or excludes material relevant to sequent calculus as a proof system.",
+      "checks": "Gentzen, LK, classical first-order scope, the editorial request for both examples and exercises, include/exclude polarity, proof-system qualification and literal prfLK tag are preserved."
+    },
+    {
+      "blocks": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "reverse_paraphrase": "The driver imports rules and proofs, propositional rules, structural rules, derivations, propositional and quantified proving material, proof-theoretic notions, consistency and provability units, soundness, identity and identity soundness. Quantifier, quantified-proof, quantified-provability, identity and identity-soundness imports are conditional on FOL.",
+      "checks": "All 14 imported source paths, four FOL conditionals, their empty alternatives, import order, percent guards and OLEndChapterHook are unchanged."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "क्रमवर्ती कलन and the Gentzen form have direct authoritative Marathi support.",
+    "अभिजात तर्कशास्त्र is supported compositionally by direct technical use of अभिजात for classical theory, but the full logic phrase was not found directly and remains provisional."
+  ]
+}

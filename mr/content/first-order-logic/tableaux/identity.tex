@@ -1,0 +1,105 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{ide}
+
+\olsection{\usetoken{P}{tableau} सह \usetoken{S}{identity}}
+
+!!^{tableau}s मध्ये !!{identity} असल्यास अतिरिक्त निगमन नियम आवश्यक असतात.
+$\eq$ चे नियम पुढीलप्रमाणे आहेत ($t$, $t_1$ आणि $t_2$ ही बंद पदे आहेत):
+
+\begin{defish}
+\AxiomC{}
+\RightLabel{$\eq$}
+\UnaryInfC{\sFmla{\True}{\eq[t][t]}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\True}{\eq[t_1][t_2]}}
+\noLine
+\UnaryInfC{\sFmla{\True}{!A(t_1)}}
+\RightLabel{$\TRule{\True}{\eq}$}
+\UnaryInfC{\sFmla{\True}{!A(t_2)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\True}{\eq[t_1][t_2]}}
+\noLine
+\UnaryInfC{\sFmla{\False}{!A(t_1)}}
+\RightLabel{$\TRule{\False}{\eq}$}
+\UnaryInfC{\sFmla{\False}{!A(t_2)}}
+\DisplayProof
+\end{defish}
+लक्षात घ्या की इतर सर्व नियमांपेक्षा वेगळे, $\TRule{\True}{\eq}$ आणि
+$\TRule{\False}{\eq}$ यांना शाखेवर आधीपासून \emph{दोन} चिन्हांकित
+!!{formula}s असणे आवश्यक आहे, म्हणजे $\sFmla{\True}{\eq[t_1][t_2]}$
+आणि $\sFmla{S}{!A(t_1)}$ ही दोन्ही.
+
+\begin{ex}
+जर $s$ आणि $t$ ही बंद पदे असतील, तर $\eq[s][t], !A(s)
+\Proves !A(t)$:
+\begin{oltableau}
+  [\sFmla{\False}{\formula{A}(t)}, just = \TAss
+    [\sFmla{\True}{\eq[s][t]}, just = \TAss
+      [\sFmla{\True}{\formula{A}(s)}, just = \TAss
+        [\sFmla{\True}{\formula{A}(t)}, just={\TRule{\True}{\eq}[2, 3]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+याला एकरूप वस्तूंच्या प्रतिस्थापनाचे तत्त्व किंवा लाइब्निझचा नियम म्हणून
+ओळखले जाऊ शकते.
+
+!!^{tableau}s द्वारे $\eq$ सममित आहे, म्हणजे $\eq[s_1][s_2]
+\Proves \eq[s_2][s_1]$, हे सिद्ध होते:
+\begin{oltableau}
+  [\sFmla{\False}{\eq[s_2][s_1]}, just = \TAss
+    [\sFmla{\True}{\eq[s_1][s_2]}, just = \TAss
+      [\sFmla{\True}{\eq[s_1][s_1]}, just = {$\eq$}
+        [\sFmla{\True}{\eq[s_2][s_1]}, just = {\TRule{\True}{\eq}[2, 3]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+येथे ओळ~$2$ ही $\TRule{\True}{\eq}$ साठीचे पहिले आधारभूत
+!!{formula}, $\sFmla{\True}{\eq[s_1][s_2]}$, आहे. ओळ~$3$ हे
+$\sFmla{\True}{!A(s_1)}$ या रूपातील दुसरे आधारविधान आहे---$!A(x)$ हे
+$\eq[x][s_1]$ आहे असे विचार करा; मग $!A(s_1)$ म्हणजे
+$\eq[s_1][s_1]$ आणि $!A(s_2)$ म्हणजे $\eq[s_2][s_1]$.
+
+तसेच $\eq$ संक्रमक आहे, म्हणजे $\eq[s_1][s_2],
+\eq[s_2][s_3] \Proves \eq[s_1][s_3]$, हेही ते सिद्ध करतात:
+\begin{oltableau}
+  [\sFmla{\False}{\eq[s_1][s_3]}, just = \TAss
+    [\sFmla{\True}{\eq[s_1][s_2]}, just = \TAss
+      [\sFmla{\True}{\eq[s_2][s_3]}, just = \TAss
+        [\sFmla{\True}{\eq[s_1][s_3]}, just = {\TRule{\True}{\eq}[3, 2]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+या !!{tableau} मध्ये $\TRule{\True}{\eq}$ चे पहिले आधारभूत !!{formula}
+ओळ~$3$ वरील $\sFmla{\True}{\eq[s_2][s_3]}$ आहे ($s_2$ ही~$t_1$ ची,
+आणि $s_3$ ही~$t_2$ ची भूमिका बजावतात). $\sFmla{\True}{!A(s_2)}$
+या रूपातील दुसरे आधारविधान ओळ~$2$ आहे. येथे $!A(x)$ हे
+$\eq[s_1][x]$ आहे असे विचार करा; त्यामुळे $!A(s_2)$ हे
+$\eq[s_1][s_2]$ (म्हणजे ओळ~$2$) आणि निष्कर्षातील
+!!{formula}~$\eq[s_1][s_3]$ हे $!A(s_3)$ होते.
+\end{ex}
+
+\begin{prob}
+पुढील गोष्टींसाठी बंद !!{tableau}s द्या:
+\begin{enumerate}
+\item $\sFmla{\False}{\lforall[x][\lforall[y][((x = y \land !A(x))
+      \lif !A(y))]]}$
+\item $\sFmla{\False}{\lexists[x][(!A(x) \land
+    \lforall[y][(!A(y) \lif y = x)])]}$,\\
+  $\sFmla{\True}{\lexists[x][!A(x)] \land
+    \lforall[y][\lforall[z][((!A(y) \land !A(z)) \lif y = z)]]}$
+\end{enumerate}
+\end{prob}
+
+\end{document}

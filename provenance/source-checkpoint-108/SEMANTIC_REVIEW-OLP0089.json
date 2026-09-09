@@ -1,0 +1,57 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0089",
+  "method": "Same-agent English/Marathi block-by-block close reading, proof-search reverse paraphrase, exact formula, macro, protected-token and identifier comparison, and reconciliation of two frozen-source presentation inconsistencies; no independent human or native-speaker review is claimed.",
+  "scope": "Three worked natural-deduction constructions and three exercise sets: implication and conjunction rules, disjunction elimination, optional discharge, negation elimination, falsity introduction, explosion, classical contradiction, excluded middle and the contrast with intuitionistic logic.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "The first example derives (A and B) implies A. It starts from the desired conclusion, applies conditional introduction, records and discharges the conjunction assumption, and fills the remaining branch by conjunction elimination.",
+      "checks": "The desired conclusion, discharged-assumption label, conjunction-elimination step and final conditional-introduction step are exact in every displayed tree."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "The second example derives (not-A or B) implies (A implies B). After conditional introduction it uses disjunction elimination. In the not-A branch, assuming A yields falsity and then B; in the B branch, B itself suffices, so conditional introduction need not discharge the unused A assumption.",
+      "checks": "Every branch formula and discharge number is preserved. OLND-003 corrects the source's isolated word ‘left’ to ‘right-hand,’ as fixed by the diagram and next paragraph. OLND-004 records but preserves the expanded tree's switch from negation elimination to the equivalent falsity-introduction label."
+    },
+    {
+      "blocks": [
+        15
+      ],
+      "reverse_paraphrase": "The third example explains classical contradiction as the last resort and explosion as its intuitionistically permitted special case. It derives excluded middle by assuming its negation, building both not-A and A subbranches, obtaining falsity in each, and discharging the assumptions with the displayed rules.",
+      "checks": "The directly attested term अंतःप्रज्ञावादी तर्कशास्त्र preserves the classical-versus-intuitionistic contrast. All nested assumptions, disjunction introductions, negation eliminations, falsity conclusions and classical-rule discharge labels remain exact."
+    },
+    {
+      "blocks": [
+        16,
+        17,
+        18
+      ],
+      "reverse_paraphrase": "The three exercise groups ask for derivations of the listed conjunction, disjunction, conditional and negation sequents. The final eight exercises are explicitly marked as requiring the classical contradiction rule.",
+      "checks": "All twenty-four displayed derivability claims, premise lists, connectives and the final classical-rule note are source-identical."
+    }
+  ],
+  "source_observations": [
+    "OLND-003: source lines 116-118 call the A-and-B branch left, whereas the displayed tree and line 149 identify it as the rightmost branch. The Marathi text uses उजवीकडील.",
+    "OLND-004: the prose and small tree call the not-A/A-to-falsity step negation elimination, while the expanded copy labels the same schema falsity introduction. The target preserves that alternate source label and records the unexplained switch."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "आस्थिति, प्रवेशन नियम, विलोपन नियम and the discharge vocabulary remain governed by the edition's documented terminology decisions and are open to specialist review.",
+    "OLND-003 is a bounded correction of an internally contradicted direction word; OLND-004 is a preserved equivalent-rule-label observation rather than a mathematical correction.",
+    "The current coherent reader ends at OLP-0068, so this unit has not yet received paginated TeX or browser-rendering QA."
+  ]
+}
