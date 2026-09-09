@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-combined-publication/1",
+  "release": "eleven-chapters-v0.8",
+  "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+  "commit": "4265a1ff9e411b4574f7bc5da2f982c8bc20d306",
+  "coverage": {
+    "translated_units": 108,
+    "total_units": 722,
+    "remaining_units": 614,
+    "aligned_segments": 1149,
+    "reader_sections": 96,
+    "complete_chapters": 11,
+    "last_unit": "OLP-0111"
+  },
+  "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8",
+  "zenodo": {
+    "record": "https://zenodo.org/records/22681530",
+    "doi": "10.5281/zenodo.22681530",
+    "conceptdoi": "10.5281/zenodo.22307960",
+    "pdf_preview_verified": true
+  },
+  "reader": {
+    "pdf_pages": 157,
+    "pdf_sha256": "bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450",
+    "html_sha256": "a8b64bd67948cb5cf5ffbf05aeaf4901a23244268371ea41d506374f6d9ecffe",
+    "native_mathml": 6544,
+    "semantic_proof_figures": 202,
+    "proof_formula_rows": 990
+  },
+  "review": {
+    "canonical_decisions": 247,
+    "occurrences": 7076,
+    "cross_package_qa": "passed",
+    "anonymous_github_readback": "passed",
+    "anonymous_zenodo_readback": "passed"
+  },
+  "next_working_unit": "OLP-0112",
+  "independent_human_review_claimed": false
+}

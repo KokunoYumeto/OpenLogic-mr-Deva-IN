@@ -1,5 +1,21 @@
 # OpenLogic · मराठी (mr-Deva-IN)
 
+This repository contains the Marathi (Devanagari, `mr-Deva-IN`) adaptation of
+the Open Logic Project text. The current coherent reader is
+[eleven-chapters-v0.8](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8): 108 of 722 source units, 11 complete chapters, 96 reader sections, and 1,149 aligned translated content segments through OLP-0111.
+
+The release includes a 157-page PDF, an offline HTML reader with native MathML,
+editable Marathi sources, the frozen English source, review records, and
+reproducibility manifests. The corresponding Zenodo version is
+[10.5281/zenodo.22681530](https://doi.org/10.5281/zenodo.22681530), in the
+existing concept-DOI lineage [10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960).
+
+Codex produced the machine translation and same-agent bilingual review. No
+independent human or native-speaker linguistic review is claimed. The Open
+Logic Project is credited as creator of the original text and does not endorse
+this translation. The text and marked adaptation use CC BY 4.0; inherited
+component notices and the SIL Open Font License remain with their components.
+
 मुक्त तर्कशास्त्राची मराठी आवृत्ती. संपूर्ण 722 स्रोत-विभागांच्या अनुवादाचे काम सुरू आहे.
 
 सध्याच्या प्रकाशनात **संच, संबंध, फलने, संचांचे आकारमान, अंकगणितीकरण,
