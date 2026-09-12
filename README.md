@@ -6,8 +6,9 @@ the Open Logic Project text. The current coherent reader is
 
 The release includes a 157-page PDF, a reflowable EPUB 3 and an offline HTML
 reader with 6,544 native MathML expressions, plus editable Marathi sources, the
-frozen English source, review records, and reproducibility manifests. Zenodo
-versions remain in the existing concept-DOI lineage
+frozen English source, review records, and reproducibility manifests. The
+corresponding Zenodo version is
+[10.5281/zenodo.22730309](https://doi.org/10.5281/zenodo.22730309), in the existing concept-DOI lineage
 [10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960).
 
 Codex produced the machine translation and same-agent bilingual review. No

@@ -1,0 +1,74 @@
+{
+  "schema": "openlogic-combined-publication/1",
+  "release": "eleven-chapters-v0.8.1",
+  "release_kind": "EPUB format addition to eleven-chapters-v0.8",
+  "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+  "commit": "0a361cb17fab5fe7af5d35c7f45dd20b7da81298",
+  "coverage": {
+    "translated_units": 108,
+    "total_units": 722,
+    "remaining_units": 614,
+    "aligned_segments": 1149,
+    "reader_sections": 96,
+    "complete_chapters": 11,
+    "last_unit": "OLP-0111",
+    "complete_edition": false
+  },
+  "github": {
+    "release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8.1",
+    "epub": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub",
+    "assets": 8,
+    "anonymous_readback": "passed",
+    "readback_receipt": "C:/interlanguage-task-state/openlogic-mr-Deva-IN/GITHUB_PUBLIC_READBACK-EPUB-v0.8.1.json",
+    "readback_receipt_sha256": "a1cc2e71853484889cae6a72ec3f445af90c900e76740cfdbff0e2b12510dea4"
+  },
+  "zenodo": {
+    "record": "https://zenodo.org/records/22730309",
+    "doi": "10.5281/zenodo.22730309",
+    "conceptdoi": "10.5281/zenodo.22307960",
+    "source_record": "https://zenodo.org/records/22681530",
+    "epub": "https://zenodo.org/api/records/22730309/files/openlogic-mr-eleven-chapters.epub/content",
+    "pdf_preview": "https://zenodo.org/records/22730309/preview/openlogic-mr-eleven-chapters.pdf",
+    "assets": 8,
+    "anonymous_readback": "passed",
+    "transaction_receipt": "C:/interlanguage-task-state/openlogic-mr-Deva-IN/ZENODO_TRANSACTION-EPUB-v0.8.1.json",
+    "transaction_receipt_sha256": "cb6d91b42d2a6749980b68f4b2a066065966b6bb90e0fe2c13d8422c077670a4",
+    "readback_receipt": "C:/interlanguage-task-state/openlogic-mr-Deva-IN/ZENODO_PUBLIC_READBACK-EPUB-v0.8.1.json",
+    "readback_receipt_sha256": "c29242c5eaf06fecc5e7349b1a6774156da868fea617dc41788ad54efd5e4d8b"
+  },
+  "epub": {
+    "filename": "openlogic-mr-eleven-chapters.epub",
+    "bytes": 1481457,
+    "sha256": "3c259bc80aa9078a7b42b0b3778fcb19b84088818f00263696e906d980884777",
+    "format": "reflowable EPUB 3",
+    "language": "mr-Deva-IN",
+    "native_mathml": 6544,
+    "semantic_proof_figures": 202,
+    "toc_links": 132,
+    "epubcheck_version": "5.3.0",
+    "epubcheck_messages": 0,
+    "structural_checks": 11696,
+    "accepted_semantic_text_exact": true,
+    "mathml_trees_exact": true,
+    "safe_unique_ids": 861,
+    "representative_rendering": "passed in Calibre 9.11.0",
+    "deterministic_cold_build": true
+  },
+  "inherited_assets": {
+    "count": 5,
+    "source_release": "eleven-chapters-v0.8",
+    "byte_identical": true,
+    "pdf_remains_public_preview": true
+  },
+  "verification": {
+    "github_anonymous_bytes_match": true,
+    "zenodo_anonymous_bytes_match": true,
+    "zenodo_lineage_verified": true,
+    "zenodo_pdf_preview_verified": true,
+    "checksums_verified": true,
+    "visible_partial_scope_verified": true,
+    "result": "published-and-anonymously-verified"
+  },
+  "next_working_unit": "OLP-0122",
+  "independent_human_review_claimed": false
+}
