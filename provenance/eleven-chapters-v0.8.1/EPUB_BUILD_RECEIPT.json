@@ -1,0 +1,167 @@
+{
+  "config": "work/epub-eleven-chapters-v0.8.json",
+  "config_sha256": "9f97d1b6586c46ea2fc8ed125b3edf42241c727eef2543a1385b2532495bf24a",
+  "content": {
+    "content_xhtml_bytes": 2844407,
+    "content_xhtml_sha256": "dcde34baa34f7796aacc2951c884c3da52525420508790adc41bba266bf06e03",
+    "copied_assets": [
+      {
+        "bytes": 294687,
+        "path": "assets/bijective.svg",
+        "sha256": "90d2397bc65e9ef189a1422012809c3846d9d3dd7b70ebf406ac1fa4cef9933e"
+      },
+      {
+        "bytes": 397200,
+        "path": "assets/composition.svg",
+        "sha256": "34404dda7518c2146342dd0c96b28b91f1fd1a27e9988ccb9f96c5673b3ae589"
+      },
+      {
+        "bytes": 357946,
+        "path": "assets/difference.svg",
+        "sha256": "ea3e2ff33d82b8c479bc68c6e5dc59b5c262b6859f1b847a895180e41eb8f950"
+      },
+      {
+        "bytes": 434839,
+        "path": "assets/function.svg",
+        "sha256": "1efca6d8e611f39809f537a422f718ee8a887e183243ceff187cbccd0971a194"
+      },
+      {
+        "bytes": 319692,
+        "path": "assets/graph-four.svg",
+        "sha256": "3bb73b4047c82b71f19f34ed5de7347f02668254dfbfc7fc699dee6f6d071c4d"
+      },
+      {
+        "bytes": 319743,
+        "path": "assets/graph-three.svg",
+        "sha256": "5a0b22ae5c83dbe2c576c7f53e8b8120f6993c74b930356fdbc7a479729411e6"
+      },
+      {
+        "bytes": 388738,
+        "path": "assets/hilberts-hotel.svg",
+        "sha256": "6c8a11e0c49b7807aab4090d846fb89b7f1c48b5e9829494202383de42340296"
+      },
+      {
+        "bytes": 294668,
+        "path": "assets/injective.svg",
+        "sha256": "caeb9ecb6acc6752ca3d95b69bdd7348bbeae2fca4d2ef18ff3c49d82d988e5a"
+      },
+      {
+        "bytes": 85003,
+        "path": "assets/intersection.svg",
+        "sha256": "c8367e06253276568537e0dc26601c815792e71bb63d246134abd44c6d0eaf21"
+      },
+      {
+        "bytes": 512140,
+        "path": "assets/root-two-square.svg",
+        "sha256": "a65cc209f9f74bf50dd7ff6f87d928449a13a7cdf368c859a320c5f8b6c08fbb"
+      },
+      {
+        "bytes": 350101,
+        "path": "assets/surjective.svg",
+        "sha256": "42472358d52d11492fb960ee2e000a256e95c054103afde2343a69409f1385ac"
+      },
+      {
+        "bytes": 319792,
+        "path": "assets/tree.svg",
+        "sha256": "6b42cb3f30f85f8877cb16dfd3b27ba78f0422f35b427afab2a3822c367d5886"
+      },
+      {
+        "bytes": 85102,
+        "path": "assets/union.svg",
+        "sha256": "ab0a26119f0e58166ea50580563c7d2982a88e616704260c1591bca870b694d3"
+      },
+      {
+        "bytes": 4386,
+        "path": "fonts/OFL.txt",
+        "sha256": "a216f6f8d85c7228093e0ee5e258d9d377e6671f68acb4db1930b29583d0f331"
+      },
+      {
+        "bytes": 257776,
+        "path": "fonts/OLMarathiSerif-Bold.ttf",
+        "sha256": "513598ac8428fb679f24ad0c2d0140eac1376474975908e1a349aeb7ea1e6d44"
+      },
+      {
+        "bytes": 257144,
+        "path": "fonts/OLMarathiSerif-Regular.ttf",
+        "sha256": "3dd8a67190d899ce79faa97703113f81c636117126dd2577c30deca8ec791453"
+      },
+      {
+        "bytes": 1808,
+        "path": "reader.css",
+        "sha256": "9e74a8058e4ebb722b057b95a956ed9f2238566d21672047742d4ae1ae937eb8"
+      }
+    ],
+    "id_repairs": {
+      "fragment_links_rewritten": 293,
+      "ids_remapped": 415
+    },
+    "ids": 861,
+    "landmarks": 2,
+    "mathml_roots": 6544,
+    "mathml_sequence_sha256": "48d0a02f4017658361faeba536f471c8970a97d37b1dc678b3c598adf3a7fded",
+    "output_body_c14n_sha256": "cf8c160a7bf1c46d66fc5007cf5aa4790c343df38283c5cc73cb50b546734962",
+    "output_semantic_text_sha256": "389e797fe4d6e2b7346f1f3f7f45338b67307357006ca9f9826c3eeb45098de5",
+    "source_body_c14n_sha256": "b7b5b15da356b5990db528bb7043bddb06cd1fa82cebeb6d88da9d4b0c587ee1",
+    "source_semantic_text_sha256": "389e797fe4d6e2b7346f1f3f7f45338b67307357006ca9f9826c3eeb45098de5",
+    "structure_repairs": {
+      "block_children_lifted_from_paragraphs": 144
+    },
+    "toc_links": 132,
+    "unique_ids": 861
+  },
+  "coverage": {
+    "aligned_content_segments": 1149,
+    "complete_chapters": 11,
+    "complete_edition": false,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0111",
+    "reader_sections": 96,
+    "remaining_source_units": 614,
+    "total_source_units": 722,
+    "translated_source_units": 108
+  },
+  "epub": {
+    "byte_identical_cold_build": true,
+    "bytes": 1481457,
+    "path": "releases/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub",
+    "sha256": "3c259bc80aa9078a7b42b0b3778fcb19b84088818f00263696e906d980884777"
+  },
+  "format": "reflowable EPUB 3",
+  "id_crosswalk": {
+    "entries": 861,
+    "identity": 446,
+    "path": "provenance/eleven-chapters-v0.8.1/EPUB_ID_CROSSWALK.json",
+    "remapped": 415,
+    "sha256": "c87ab7accb1de9ff25a97e875786509a87faf6c68e66364be37047f08830240a"
+  },
+  "language": "mr-Deva-IN",
+  "modified": "2026-09-10T00:00:00Z",
+  "package_tree": {
+    "byte_identical_cold_build": true,
+    "cold_sha256": "3ce6d31fad705a3d4a7c75dd62c8176248d112839c2a89fc0fd1abb8e79dbcd5",
+    "files": 22,
+    "sha256": "3ce6d31fad705a3d4a7c75dd62c8176248d112839c2a89fc0fd1abb8e79dbcd5"
+  },
+  "reader": {
+    "bytes": 2835387,
+    "path": "reader/eleven-chapters/index.html",
+    "sha256": "a8b64bd67948cb5cf5ffbf05aeaf4901a23244268371ea41d506374f6d9ecffe",
+    "tree_sha256": "1afc156d17e0c3e265665fe878e3900b1cece0bbfb4c56de2952bc8184ac050f"
+  },
+  "release": "eleven-chapters-v0.8.1",
+  "schema": "openlogic-marathi-epub3-build/1",
+  "source_checkpoint": {
+    "path": "provenance/source-checkpoint-108/SOURCE_CHECKPOINT.json",
+    "sha256": "557ca0195fccc483266c25388c4e72bbebad03e5c796d3750a769d1c67707da3"
+  },
+  "source_html_qa": {
+    "path": "provenance/source-checkpoint-108/CORE_HTML_STATIC_QA.json",
+    "sha256": "5334a34da37a5ccaf4d62d884e9f0326967bad7d6ee7723a9324f1f73c5e145b"
+  },
+  "source_release": "eleven-chapters-v0.8",
+  "source_release_manifest": {
+    "path": "releases/eleven-chapters-v0.8/RELEASE_MANIFEST.json",
+    "sha256": "7c495bf395a8636b1205e37e85e4dd4641cfb109f515b2066dd439c2cf1fc9be"
+  },
+  "status": "built-deterministically; independent QA and EPUBCheck pending"
+}

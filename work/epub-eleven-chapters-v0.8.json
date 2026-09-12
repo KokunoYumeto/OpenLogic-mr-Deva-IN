@@ -1,0 +1,33 @@
+{
+  "schema": "openlogic-marathi-epub3-config/1",
+  "release": "eleven-chapters-v0.8.1",
+  "source_release": "eleven-chapters-v0.8",
+  "reader_root": "reader/eleven-chapters",
+  "source_release_manifest": "releases/eleven-chapters-v0.8/RELEASE_MANIFEST.json",
+  "source_html_qa": "provenance/source-checkpoint-108/CORE_HTML_STATIC_QA.json",
+  "source_checkpoint": "provenance/source-checkpoint-108/SOURCE_CHECKPOINT.json",
+  "output_epub": "releases/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub",
+  "build_root": "build/epub-eleven-chapters-v0.8",
+  "build_receipt": "provenance/eleven-chapters-v0.8.1/EPUB_BUILD_RECEIPT.json",
+  "id_crosswalk": "provenance/eleven-chapters-v0.8.1/EPUB_ID_CROSSWALK.json",
+  "qa_receipt": "provenance/eleven-chapters-v0.8.1/EPUB_QA.json",
+  "epubcheck_report": "provenance/eleven-chapters-v0.8.1/EPUBCHECK.json",
+  "title": "मुक्त तर्कशास्त्र — अकरा प्रकरणांची मराठी आवृत्ती",
+  "language": "mr-Deva-IN",
+  "modified": "2026-09-10T00:00:00Z",
+  "description": "अकरा संपूर्ण प्रकरणांची अपूर्ण मराठी आवृत्ती: 722 स्रोत-एककांपैकी 108 स्रोत-एकके आणि 96 वाचक-विभाग. संपूर्ण मराठी ग्रंथाचे काम सुरू आहे.",
+  "expected": {
+    "reader_html_sha256": "a8b64bd67948cb5cf5ffbf05aeaf4901a23244268371ea41d506374f6d9ecffe",
+    "source_checkpoint_sha256": "557ca0195fccc483266c25388c4e72bbebad03e5c796d3750a769d1c67707da3",
+    "translated_source_units": 108,
+    "total_source_units": 722,
+    "aligned_content_segments": 1149,
+    "reader_sections": 96,
+    "complete_chapters": 11,
+    "native_mathml": 6544,
+    "semantic_proof_figures": 202,
+    "proof_formula_rows": 990,
+    "diagrams": 13,
+    "internal_links": 293
+  }
+}

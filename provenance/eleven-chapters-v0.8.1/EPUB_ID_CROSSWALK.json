@@ -1,0 +1,4323 @@
+{
+  "entries": 861,
+  "epub": {
+    "content_xhtml_sha256": "dcde34baa34f7796aacc2951c884c3da52525420508790adc41bba266bf06e03",
+    "path": "releases/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub",
+    "sha256": "3c259bc80aa9078a7b42b0b3778fcb19b84088818f00263696e906d980884777"
+  },
+  "identity": 446,
+  "mappings": [
+    {
+      "epub_id": "main-content",
+      "remapped": false,
+      "source_id": "main-content"
+    },
+    {
+      "epub_id": "title-block-header",
+      "remapped": false,
+      "source_id": "title-block-header"
+    },
+    {
+      "epub_id": "TOC",
+      "remapped": false,
+      "source_id": "TOC"
+    },
+    {
+      "epub_id": "toc-title",
+      "remapped": false,
+      "source_id": "toc-title"
+    },
+    {
+      "epub_id": "epub-77fdd2a91ec485526144",
+      "remapped": true,
+      "source_id": "toc-सच"
+    },
+    {
+      "epub_id": "epub-30559fcd80fda9faf463",
+      "remapped": true,
+      "source_id": "toc-sfr:set:bas:sec"
+    },
+    {
+      "epub_id": "epub-2571e90ab8c1303f811e",
+      "remapped": true,
+      "source_id": "toc-sfr:set:sub:sec"
+    },
+    {
+      "epub_id": "epub-1e80884204bf6ca68fca",
+      "remapped": true,
+      "source_id": "toc-sfr:set:imp:sec"
+    },
+    {
+      "epub_id": "epub-fab2c880ef7680a3993c",
+      "remapped": true,
+      "source_id": "toc-sfr:set:uni:sec"
+    },
+    {
+      "epub_id": "epub-1f24e33ffe21ab312ce6",
+      "remapped": true,
+      "source_id": "toc-sfr:set:pai:sec"
+    },
+    {
+      "epub_id": "epub-30ea2da7bce945b2a8ee",
+      "remapped": true,
+      "source_id": "toc-sfr:set:rus:sec"
+    },
+    {
+      "epub_id": "epub-491849c84d9b908704e9",
+      "remapped": true,
+      "source_id": "toc-sfr:rel::chap"
+    },
+    {
+      "epub_id": "epub-e01b82d9eba9179872f4",
+      "remapped": true,
+      "source_id": "toc-sfr:rel:set:sec"
+    },
+    {
+      "epub_id": "epub-4ca3fb6a375abf304539",
+      "remapped": true,
+      "source_id": "toc-sfr:rel:ref:sec"
+    },
+    {
+      "epub_id": "epub-ef78692730f7357483f8",
+      "remapped": true,
+      "source_id": "toc-sfr:rel:prp:sec"
+    },
+    {
+      "epub_id": "epub-34a1560e5cd50ce94bf9",
+      "remapped": true,
+      "source_id": "toc-sfr:rel:eqv:sec"
+    },
+    {
+      "epub_id": "epub-681bc2c09051469afec7",
+      "remapped": true,
+      "source_id": "toc-sfr:rel:ord:sec"
+    },
+    {
+      "epub_id": "epub-6bf46c8186ec8a300665",
+      "remapped": true,
+      "source_id": "toc-sfr:rel:grp:sec"
+    },
+    {
+      "epub_id": "epub-e696321535aae52abb3d",
+      "remapped": true,
+      "source_id": "toc-sfr:rel:tre:sec"
+    },
+    {
+      "epub_id": "epub-942eb41d70acb89c150e",
+      "remapped": true,
+      "source_id": "toc-sfr:rel:ops:sec"
+    },
+    {
+      "epub_id": "epub-d117a2c6ede7b100ac1c",
+      "remapped": true,
+      "source_id": "toc-sfr:fun::chap"
+    },
+    {
+      "epub_id": "epub-00c0fe060c202e23022e",
+      "remapped": true,
+      "source_id": "toc-sfr:fun:bas:sec"
+    },
+    {
+      "epub_id": "epub-d5b7e931b2c4e96e1ac0",
+      "remapped": true,
+      "source_id": "toc-sfr:fun:kin:sec"
+    },
+    {
+      "epub_id": "epub-8cc934bbf1c7dbee5839",
+      "remapped": true,
+      "source_id": "toc-sfr:fun:rel:sec"
+    },
+    {
+      "epub_id": "epub-a5b112335db23d71cfbe",
+      "remapped": true,
+      "source_id": "toc-sfr:fun:inv:sec"
+    },
+    {
+      "epub_id": "epub-2e1f4c2fecce52efc0a7",
+      "remapped": true,
+      "source_id": "toc-sfr:fun:cmp:sec"
+    },
+    {
+      "epub_id": "epub-dc092408fd88d2d9ec9e",
+      "remapped": true,
+      "source_id": "toc-sfr:fun:par:sec"
+    },
+    {
+      "epub_id": "epub-6fb6b21cdb07722cacdb",
+      "remapped": true,
+      "source_id": "toc-sfr:siz::chap"
+    },
+    {
+      "epub_id": "epub-37c426705cfea3dae47e",
+      "remapped": true,
+      "source_id": "toc-sfr:siz:int:sec"
+    },
+    {
+      "epub_id": "epub-295702aef36c2376d55c",
+      "remapped": true,
+      "source_id": "toc-sfr:siz:enm:sec"
+    },
+    {
+      "epub_id": "epub-0ddf101b4d839b3c20a4",
+      "remapped": true,
+      "source_id": "toc-sfr:siz:zigzag:sec"
+    },
+    {
+      "epub_id": "epub-1ed97e2c48e060749bd5",
+      "remapped": true,
+      "source_id": "toc-sfr:siz:pai:sec"
+    },
+    {
+      "epub_id": "epub-4a80e477d6cac39550a6",
+      "remapped": true,
+      "source_id": "toc-sfr:siz:pai-alt:sec"
+    },
+    {
+      "epub_id": "epub-334bd4f12e43177a36a5",
+      "remapped": true,
+      "source_id": "toc-sfr:siz:nen:sec"
+    },
+    {
+      "epub_id": "epub-80e873f076de8c8c8030",
+      "remapped": true,
+      "source_id": "toc-sfr:siz:red:sec"
+    },
+    {
+      "epub_id": "epub-3ea58895c51f3b676932",
+      "remapped": true,
+      "source_id": "toc-sfr:siz:equ:sec"
+    },
+    {
+      "epub_id": "epub-a3956bf3094b3fb84d51",
+      "remapped": true,
+      "source_id": "toc-sfr:siz:car:sec"
+    },
+    {
+      "epub_id": "epub-43c0d7afbd4637f6d3ca",
+      "remapped": true,
+      "source_id": "toc-sfr:siz:sb:sec"
+    },
+    {
+      "epub_id": "epub-be5e27ec0c31ffd54a86",
+      "remapped": true,
+      "source_id": "toc-sfr:siz:enm-alt:sec"
+    },
+    {
+      "epub_id": "epub-bbc4d6fc7cdc577e8c57",
+      "remapped": true,
+      "source_id": "toc-sfr:siz:nen-alt:sec"
+    },
+    {
+      "epub_id": "epub-ac0ea5de80b488080bbd",
+      "remapped": true,
+      "source_id": "toc-sfr:siz:red-alt:sec"
+    },
+    {
+      "epub_id": "epub-ca93cf2b61f534a81510",
+      "remapped": true,
+      "source_id": "toc-sfr:arith::chap"
+    },
+    {
+      "epub_id": "epub-621ab029456e3c010811",
+      "remapped": true,
+      "source_id": "toc-sfr:arith:int:sec"
+    },
+    {
+      "epub_id": "epub-07c165157d5e68b15a49",
+      "remapped": true,
+      "source_id": "toc-sfr:arith:rat:sec"
+    },
+    {
+      "epub_id": "epub-c601aa07d39723d2e76f",
+      "remapped": true,
+      "source_id": "toc-sfr:arith:real:sec"
+    },
+    {
+      "epub_id": "epub-837595022ed79ed3da51",
+      "remapped": true,
+      "source_id": "toc-sfr:arith:cuts:sec"
+    },
+    {
+      "epub_id": "epub-1cf73d43e5a68861ef7d",
+      "remapped": true,
+      "source_id": "toc-sfr:arith:ref:sec"
+    },
+    {
+      "epub_id": "epub-c35243170f7bb3fc3f3e",
+      "remapped": true,
+      "source_id": "toc-sfr:arith:check:sec"
+    },
+    {
+      "epub_id": "epub-b5e24fe7d2c90aed724f",
+      "remapped": true,
+      "source_id": "toc-sfr:arith:cauchy:sec"
+    },
+    {
+      "epub_id": "epub-6cc3791f7337a4938eef",
+      "remapped": true,
+      "source_id": "toc-sfr:infinite::chap"
+    },
+    {
+      "epub_id": "epub-7cf3c5ceb34569d9106c",
+      "remapped": true,
+      "source_id": "toc-sfr:infinite:hilbert:sec"
+    },
+    {
+      "epub_id": "epub-2866bd73d8546d5f51e6",
+      "remapped": true,
+      "source_id": "toc-sfr:infinite:dedekind:sec"
+    },
+    {
+      "epub_id": "epub-a1f28d7f7ae3f33d9921",
+      "remapped": true,
+      "source_id": "toc-sfr:infinite:induction:sec"
+    },
+    {
+      "epub_id": "epub-4105688972ac83bfe3d0",
+      "remapped": true,
+      "source_id": "toc-sfr:infinite:dedekindsproof:sec"
+    },
+    {
+      "epub_id": "epub-bc12efc325c2f3bde3c2",
+      "remapped": true,
+      "source_id": "toc-sfr:infinite:card-sb:sec"
+    },
+    {
+      "epub_id": "epub-d1a904fc8435546363e6",
+      "remapped": true,
+      "source_id": "toc-pl:syn::chap"
+    },
+    {
+      "epub_id": "epub-08ea40f828838184dd2c",
+      "remapped": true,
+      "source_id": "toc-pl:syn:int:sec"
+    },
+    {
+      "epub_id": "epub-593136b42ce1a8bdee7d",
+      "remapped": true,
+      "source_id": "toc-pl:syn:fml:sec"
+    },
+    {
+      "epub_id": "epub-26b444383464a0b55cb8",
+      "remapped": true,
+      "source_id": "toc-pl:syn:pre:sec"
+    },
+    {
+      "epub_id": "epub-e901304097485f0d9e0b",
+      "remapped": true,
+      "source_id": "toc-pl:syn:fseq:sec"
+    },
+    {
+      "epub_id": "epub-72259d78ab231c47e6e2",
+      "remapped": true,
+      "source_id": "toc-pl:syn:val:sec"
+    },
+    {
+      "epub_id": "epub-8e4682b59f3b65c4da5a",
+      "remapped": true,
+      "source_id": "toc-pl:syn:sem:sec"
+    },
+    {
+      "epub_id": "epub-5c16219bca5369c0db46",
+      "remapped": true,
+      "source_id": "toc-fol:prf::chap"
+    },
+    {
+      "epub_id": "epub-f01025ca46bb41004119",
+      "remapped": true,
+      "source_id": "toc-fol:prf:int:sec"
+    },
+    {
+      "epub_id": "epub-2ace0b00cdd974f72010",
+      "remapped": true,
+      "source_id": "toc-fol:prf:seq:sec"
+    },
+    {
+      "epub_id": "epub-bca48f853776a9aa9f64",
+      "remapped": true,
+      "source_id": "toc-fol:prf:ntd:sec"
+    },
+    {
+      "epub_id": "epub-e2b439d8e68744716a3d",
+      "remapped": true,
+      "source_id": "toc-fol:prf:tab:sec"
+    },
+    {
+      "epub_id": "epub-6c34f409f8538fef5bf0",
+      "remapped": true,
+      "source_id": "toc-fol:prf:axd:sec"
+    },
+    {
+      "epub_id": "epub-49ed21602fc316db2665",
+      "remapped": true,
+      "source_id": "toc-fol:seq::chap"
+    },
+    {
+      "epub_id": "epub-c4c71c93b7d612c8393d",
+      "remapped": true,
+      "source_id": "toc-fol:seq:rul:sec"
+    },
+    {
+      "epub_id": "epub-188bc1e088e72ff83b04",
+      "remapped": true,
+      "source_id": "toc-fol:seq:prl:sec"
+    },
+    {
+      "epub_id": "epub-3bdd4ce68bb0749ccb0d",
+      "remapped": true,
+      "source_id": "toc-lnot-सठच-नयम"
+    },
+    {
+      "epub_id": "epub-2648ce9d73c68171a28a",
+      "remapped": true,
+      "source_id": "toc-land-सठच-नयम"
+    },
+    {
+      "epub_id": "epub-93466478ce929c5f0f71",
+      "remapped": true,
+      "source_id": "toc-lor-सठच-नयम"
+    },
+    {
+      "epub_id": "epub-68fcfb2af11be44a9823",
+      "remapped": true,
+      "source_id": "toc-to-सठच-नयम"
+    },
+    {
+      "epub_id": "epub-a68cbe4975485f2dd076",
+      "remapped": true,
+      "source_id": "toc-fol:seq:qrl:sec"
+    },
+    {
+      "epub_id": "epub-be65a4f242df8172b219",
+      "remapped": true,
+      "source_id": "toc-forall-सठच-नयम"
+    },
+    {
+      "epub_id": "epub-a7f9a56514af3b26c083",
+      "remapped": true,
+      "source_id": "toc-exists-सठच-नयम"
+    },
+    {
+      "epub_id": "epub-544cded34f6de758708e",
+      "remapped": true,
+      "source_id": "toc-fol:seq:srl:sec"
+    },
+    {
+      "epub_id": "epub-382dcc45d4fb76ec5528",
+      "remapped": true,
+      "source_id": "toc-दरबलकरण"
+    },
+    {
+      "epub_id": "epub-8222e8ebf31fe97197f9",
+      "remapped": true,
+      "source_id": "toc-आकचन"
+    },
+    {
+      "epub_id": "epub-468c9d7f7049cbafd4ff",
+      "remapped": true,
+      "source_id": "toc-अदलबदल"
+    },
+    {
+      "epub_id": "epub-169543709275296bf053",
+      "remapped": true,
+      "source_id": "toc-fol:seq:der:sec"
+    },
+    {
+      "epub_id": "epub-4620505ba91481da2844",
+      "remapped": true,
+      "source_id": "toc-fol:seq:pro:sec"
+    },
+    {
+      "epub_id": "epub-2022e90ec3ba507aefb7",
+      "remapped": true,
+      "source_id": "toc-fol:seq:prq:sec"
+    },
+    {
+      "epub_id": "epub-2faa0e8d2f8a06bc0f09",
+      "remapped": true,
+      "source_id": "toc-fol:seq:ptn:sec"
+    },
+    {
+      "epub_id": "epub-ca890fbdce64ea621470",
+      "remapped": true,
+      "source_id": "toc-fol:seq:prv:sec"
+    },
+    {
+      "epub_id": "epub-a42995c30e3e5da3efd7",
+      "remapped": true,
+      "source_id": "toc-fol:seq:ppr:sec"
+    },
+    {
+      "epub_id": "epub-1f7f9af93168ec253504",
+      "remapped": true,
+      "source_id": "toc-fol:seq:qpr:sec"
+    },
+    {
+      "epub_id": "epub-78530833557565358fde",
+      "remapped": true,
+      "source_id": "toc-fol:seq:sou:sec"
+    },
+    {
+      "epub_id": "epub-9d466e03a19e8286a8fc",
+      "remapped": true,
+      "source_id": "toc-fol:seq:ide:sec"
+    },
+    {
+      "epub_id": "epub-e7e2ec9228c26f84ce9f",
+      "remapped": true,
+      "source_id": "toc-fol:seq:sid:sec"
+    },
+    {
+      "epub_id": "epub-8f5d9c15d76c8a42d14e",
+      "remapped": true,
+      "source_id": "toc-fol:ntd::chap"
+    },
+    {
+      "epub_id": "epub-34d65f81fbef5ba88b2d",
+      "remapped": true,
+      "source_id": "toc-fol:ntd:rul:sec"
+    },
+    {
+      "epub_id": "epub-05fac5b76d4b433c863a",
+      "remapped": true,
+      "source_id": "toc-fol:ntd:prl:sec"
+    },
+    {
+      "epub_id": "epub-400813f0eb7bbc72e41d",
+      "remapped": true,
+      "source_id": "toc-land-सठच-नयम-1"
+    },
+    {
+      "epub_id": "epub-5a937af0397ed9246f71",
+      "remapped": true,
+      "source_id": "toc-lor-सठच-नयम-1"
+    },
+    {
+      "epub_id": "epub-1ff2f155a89bfe8de42c",
+      "remapped": true,
+      "source_id": "toc-to-सठच-नयम-1"
+    },
+    {
+      "epub_id": "epub-c5c96dd365d4e9943c48",
+      "remapped": true,
+      "source_id": "toc-lnot-सठच-नयम-1"
+    },
+    {
+      "epub_id": "epub-ecb36fe2da5d2cb0e529",
+      "remapped": true,
+      "source_id": "toc-bot-सठच-नयम"
+    },
+    {
+      "epub_id": "epub-7cb3c843dfc9eec9b5f2",
+      "remapped": true,
+      "source_id": "toc-fol:ntd:qrl:sec"
+    },
+    {
+      "epub_id": "epub-f577ed8eadffa1ff4320",
+      "remapped": true,
+      "source_id": "toc-forall-सठच-नयम-1"
+    },
+    {
+      "epub_id": "epub-76b77cd93bd937e80b38",
+      "remapped": true,
+      "source_id": "toc-exists-सठच-नयम-1"
+    },
+    {
+      "epub_id": "epub-53ef5afbee49c2eddd33",
+      "remapped": true,
+      "source_id": "toc-fol:ntd:der:sec"
+    },
+    {
+      "epub_id": "epub-9ed1f23a2571a4368a00",
+      "remapped": true,
+      "source_id": "toc-fol:ntd:pro:sec"
+    },
+    {
+      "epub_id": "epub-680c9b9c4150fa92e1a8",
+      "remapped": true,
+      "source_id": "toc-fol:ntd:prq:sec"
+    },
+    {
+      "epub_id": "epub-56a65728710f066248ad",
+      "remapped": true,
+      "source_id": "toc-fol:ntd:ptn:sec"
+    },
+    {
+      "epub_id": "epub-a17722e5f1a13121a1e1",
+      "remapped": true,
+      "source_id": "toc-fol:ntd:prv:sec"
+    },
+    {
+      "epub_id": "epub-5f0ca075e131a564b1ea",
+      "remapped": true,
+      "source_id": "toc-fol:ntd:ppr:sec"
+    },
+    {
+      "epub_id": "epub-3794077271d316180927",
+      "remapped": true,
+      "source_id": "toc-fol:ntd:qpr:sec"
+    },
+    {
+      "epub_id": "epub-e783cdc96c80cdca55d2",
+      "remapped": true,
+      "source_id": "toc-fol:ntd:sou:sec"
+    },
+    {
+      "epub_id": "epub-ddf46a5db1be1bc10f74",
+      "remapped": true,
+      "source_id": "toc-fol:ntd:ide:sec"
+    },
+    {
+      "epub_id": "epub-e5d121da36b5fac767c5",
+      "remapped": true,
+      "source_id": "toc-fol:ntd:sid:sec"
+    },
+    {
+      "epub_id": "epub-cb93e1fb42ec11e47da2",
+      "remapped": true,
+      "source_id": "toc-fol:tab::chap"
+    },
+    {
+      "epub_id": "epub-9974662125708e0dbbd9",
+      "remapped": true,
+      "source_id": "toc-fol:tab:rul:sec"
+    },
+    {
+      "epub_id": "epub-d2b177b723e69cd83df4",
+      "remapped": true,
+      "source_id": "toc-fol:tab:prl:sec"
+    },
+    {
+      "epub_id": "epub-bc9e26f8a9494367b3db",
+      "remapped": true,
+      "source_id": "toc-lnot-सठच-नयम-2"
+    },
+    {
+      "epub_id": "epub-c4c8fc9ca455bb7b01d0",
+      "remapped": true,
+      "source_id": "toc-land-सठच-नयम-2"
+    },
+    {
+      "epub_id": "epub-456782f1f21228a98ea8",
+      "remapped": true,
+      "source_id": "toc-lor-सठच-नयम-2"
+    },
+    {
+      "epub_id": "epub-f4f6b16f47d2f67cb8d2",
+      "remapped": true,
+      "source_id": "toc-to-सठच-नयम-2"
+    },
+    {
+      "epub_id": "epub-4092d28dc626c2cb9345",
+      "remapped": true,
+      "source_id": "toc-कट-नयम"
+    },
+    {
+      "epub_id": "epub-37e5e3792fcb27d96bd8",
+      "remapped": true,
+      "source_id": "toc-fol:tab:qrl:sec"
+    },
+    {
+      "epub_id": "epub-47578653c5059fbbe63c",
+      "remapped": true,
+      "source_id": "toc-forall-सठच-नयम-2"
+    },
+    {
+      "epub_id": "epub-7aec938c61357a132966",
+      "remapped": true,
+      "source_id": "toc-exists-सठच-नयम-2"
+    },
+    {
+      "epub_id": "epub-c200188bb9bfa532993e",
+      "remapped": true,
+      "source_id": "toc-fol:tab:der:sec"
+    },
+    {
+      "epub_id": "epub-66af97edae50f3894e40",
+      "remapped": true,
+      "source_id": "toc-fol:tab:pro:sec"
+    },
+    {
+      "epub_id": "epub-5fd0a2fc4950b88ccf03",
+      "remapped": true,
+      "source_id": "toc-fol:tab:prq:sec"
+    },
+    {
+      "epub_id": "epub-b6a4699e8c5a504a1469",
+      "remapped": true,
+      "source_id": "toc-fol:tab:ptn:sec"
+    },
+    {
+      "epub_id": "epub-a9439690b377057d1685",
+      "remapped": true,
+      "source_id": "toc-fol:tab:prv:sec"
+    },
+    {
+      "epub_id": "epub-74e3d86587399cc1e136",
+      "remapped": true,
+      "source_id": "toc-fol:tab:ppr:sec"
+    },
+    {
+      "epub_id": "epub-2c01674a4c53095e51a2",
+      "remapped": true,
+      "source_id": "toc-fol:tab:qpr:sec"
+    },
+    {
+      "epub_id": "epub-17cc3e5c5bebd1c21988",
+      "remapped": true,
+      "source_id": "toc-fol:tab:sou:sec"
+    },
+    {
+      "epub_id": "epub-715b76c1d4102257e062",
+      "remapped": true,
+      "source_id": "toc-fol:tab:ide:sec"
+    },
+    {
+      "epub_id": "epub-198a78986dc6e3a90f4d",
+      "remapped": true,
+      "source_id": "toc-fol:tab:sid:sec"
+    },
+    {
+      "epub_id": "epub-474d8e78976afd6115aa",
+      "remapped": true,
+      "source_id": "toc-सरतवरल-सपदकय-नद"
+    },
+    {
+      "epub_id": "epub-dbb694e1d5293dae8210",
+      "remapped": true,
+      "source_id": "toc-सदरभ"
+    },
+    {
+      "epub_id": "epub-554c2c90616c980678e6",
+      "remapped": true,
+      "source_id": "सच"
+    },
+    {
+      "epub_id": "epub-fff3ae345ee7b7e3d9c3",
+      "remapped": true,
+      "source_id": "sfr:set:bas:sec"
+    },
+    {
+      "epub_id": "epub-5e094c43bb9074c7743d",
+      "remapped": true,
+      "source_id": "sfr:set:sub:sec"
+    },
+    {
+      "epub_id": "epub-083e0fcd54ef8b462d42",
+      "remapped": true,
+      "source_id": "sfr:set:sub:forallxina"
+    },
+    {
+      "epub_id": "epub-e857a3a5cb274afdec63",
+      "remapped": true,
+      "source_id": "sfr:set:imp:sec"
+    },
+    {
+      "epub_id": "epub-a451d5f3dc5d8dd3d6e6",
+      "remapped": true,
+      "source_id": "sfr:set:uni:sec"
+    },
+    {
+      "epub_id": "epub-3c5cee50d8844185cc15",
+      "remapped": true,
+      "source_id": "sfr:set:uni:fig:union"
+    },
+    {
+      "epub_id": "diagram-union",
+      "remapped": false,
+      "source_id": "diagram-union"
+    },
+    {
+      "epub_id": "epub-80b036db24d07ac909a9",
+      "remapped": true,
+      "source_id": "sfr:set:uni:fig:intersection"
+    },
+    {
+      "epub_id": "diagram-intersection",
+      "remapped": false,
+      "source_id": "diagram-intersection"
+    },
+    {
+      "epub_id": "epub-bb80f4abfc95ae199ac3",
+      "remapped": true,
+      "source_id": "sfr:set:uni:difference"
+    },
+    {
+      "epub_id": "diagram-difference",
+      "remapped": false,
+      "source_id": "diagram-difference"
+    },
+    {
+      "epub_id": "epub-50be1db31373abf74588",
+      "remapped": true,
+      "source_id": "sfr:set:pai:sec"
+    },
+    {
+      "epub_id": "epub-83d9e57b169854a7dc69",
+      "remapped": true,
+      "source_id": "sfr:set:pai:wienerkuratowski"
+    },
+    {
+      "epub_id": "epub-71c919c8ff7600edb40d",
+      "remapped": true,
+      "source_id": "sfr:set:pai:cardnmprod"
+    },
+    {
+      "epub_id": "epub-f55076e49039c101897e",
+      "remapped": true,
+      "source_id": "sfr:set:rus:sec"
+    },
+    {
+      "epub_id": "epub-360e9cc5c42d6aef6575",
+      "remapped": true,
+      "source_id": "sfr:set:rus:thm:russells-paradox"
+    },
+    {
+      "epub_id": "epub-bed2fba5020cde8da397",
+      "remapped": true,
+      "source_id": "sfr:rel::chap"
+    },
+    {
+      "epub_id": "epub-b1e9d79ed7dfcae5a168",
+      "remapped": true,
+      "source_id": "sfr:rel:set:sec"
+    },
+    {
+      "epub_id": "epub-1fb7b01504895676967a",
+      "remapped": true,
+      "source_id": "sfr:rel:set:relations"
+    },
+    {
+      "epub_id": "epub-a1514bcabce0034e5f77",
+      "remapped": true,
+      "source_id": "sfr:rel:ref:sec"
+    },
+    {
+      "epub_id": "epub-41b6ce0e274ed89a317d",
+      "remapped": true,
+      "source_id": "sfr:rel:prp:sec"
+    },
+    {
+      "epub_id": "epub-a8aa35ba5109f39e4980",
+      "remapped": true,
+      "source_id": "sfr:rel:eqv:sec"
+    },
+    {
+      "epub_id": "epub-2b84a321baf887e6eaf9",
+      "remapped": true,
+      "source_id": "sfr:rel:eqv:def:equivalenceclass"
+    },
+    {
+      "epub_id": "epub-67acdb49304d40624ffc",
+      "remapped": true,
+      "source_id": "sfr:rel:ord:sec"
+    },
+    {
+      "epub_id": "epub-c1d8dd3ace24b2e90a31",
+      "remapped": true,
+      "source_id": "sfr:rel:ord:def:linearorder"
+    },
+    {
+      "epub_id": "epub-90f5f6c8c9f82b71eef2",
+      "remapped": true,
+      "source_id": "sfr:rel:ord:def:strictlinearorder"
+    },
+    {
+      "epub_id": "epub-7a42d279067b3001a1f1",
+      "remapped": true,
+      "source_id": "sfr:rel:ord:prop:stricttopartial"
+    },
+    {
+      "epub_id": "epub-1a586d42636a347fd92f",
+      "remapped": true,
+      "source_id": "sfr:rel:ord:prop:partialtostrict"
+    },
+    {
+      "epub_id": "epub-8f166a9119b952ecb66f",
+      "remapped": true,
+      "source_id": "sfr:rel:ord:prop:extensionality-strictlinearorders"
+    },
+    {
+      "epub_id": "epub-fb399fcb7d72f59ae2e1",
+      "remapped": true,
+      "source_id": "sfr:rel:grp:sec"
+    },
+    {
+      "epub_id": "diagram-graph-four",
+      "remapped": false,
+      "source_id": "diagram-graph-four"
+    },
+    {
+      "epub_id": "diagram-graph-three",
+      "remapped": false,
+      "source_id": "diagram-graph-three"
+    },
+    {
+      "epub_id": "epub-cd5644f44779a135e077",
+      "remapped": true,
+      "source_id": "sfr:rel:tre:sec"
+    },
+    {
+      "epub_id": "diagram-tree",
+      "remapped": false,
+      "source_id": "diagram-tree"
+    },
+    {
+      "epub_id": "epub-35c623e8286e8911a71b",
+      "remapped": true,
+      "source_id": "sfr:rel:ops:sec"
+    },
+    {
+      "epub_id": "epub-477789ef39f903c0fe06",
+      "remapped": true,
+      "source_id": "sfr:rel:ops:relationoperations"
+    },
+    {
+      "epub_id": "epub-8998f0a6bf05fb68dedc",
+      "remapped": true,
+      "source_id": "sfr:fun::chap"
+    },
+    {
+      "epub_id": "epub-01cbb9bbe245e9e319b8",
+      "remapped": true,
+      "source_id": "sfr:fun:bas:sec"
+    },
+    {
+      "epub_id": "epub-2069a662f6e1c3b2f9ec",
+      "remapped": true,
+      "source_id": "sfr:fun:bas:fig:function"
+    },
+    {
+      "epub_id": "diagram-function",
+      "remapped": false,
+      "source_id": "diagram-function"
+    },
+    {
+      "epub_id": "epub-2127d98516946e861d82",
+      "remapped": true,
+      "source_id": "sfr:fun:bas:examplefunext"
+    },
+    {
+      "epub_id": "epub-e6da485c2dfccfff9b1b",
+      "remapped": true,
+      "source_id": "sfr:fun:kin:sec"
+    },
+    {
+      "epub_id": "epub-f3cff4151b89b3bdddc7",
+      "remapped": true,
+      "source_id": "sfr:fun:kin:fig:surjective"
+    },
+    {
+      "epub_id": "diagram-surjective",
+      "remapped": false,
+      "source_id": "diagram-surjective"
+    },
+    {
+      "epub_id": "epub-565a408805f726a6b38a",
+      "remapped": true,
+      "source_id": "sfr:fun:kin:fig:injective"
+    },
+    {
+      "epub_id": "diagram-injective",
+      "remapped": false,
+      "source_id": "diagram-injective"
+    },
+    {
+      "epub_id": "epub-bfbd159e55d887dbb166",
+      "remapped": true,
+      "source_id": "sfr:fun:kin:fig:bijective"
+    },
+    {
+      "epub_id": "diagram-bijective",
+      "remapped": false,
+      "source_id": "diagram-bijective"
+    },
+    {
+      "epub_id": "epub-6aeae9ee7301533d723d",
+      "remapped": true,
+      "source_id": "sfr:fun:rel:sec"
+    },
+    {
+      "epub_id": "epub-439116e29b9915ee0571",
+      "remapped": true,
+      "source_id": "sfr:fun:rel:prop:graph-function"
+    },
+    {
+      "epub_id": "epub-0b89d8a7140728f714aa",
+      "remapped": true,
+      "source_id": "sfr:fun:rel:defn:funimage"
+    },
+    {
+      "epub_id": "epub-5cc3992f2ec62aca30b9",
+      "remapped": true,
+      "source_id": "sfr:fun:inv:sec"
+    },
+    {
+      "epub_id": "fnref1",
+      "remapped": false,
+      "source_id": "fnref1"
+    },
+    {
+      "epub_id": "epub-4f239953d66293f5a514",
+      "remapped": true,
+      "source_id": "sfr:fun:inv:prop:bijection-inverse"
+    },
+    {
+      "epub_id": "epub-a0f0a844bb9a87aa4cca",
+      "remapped": true,
+      "source_id": "sfr:fun:inv:prop:left-right"
+    },
+    {
+      "epub_id": "epub-b3236cdc68e43e1182fd",
+      "remapped": true,
+      "source_id": "sfr:fun:inv:prop:inverse-unique"
+    },
+    {
+      "epub_id": "epub-31e43fab7566f4f5194a",
+      "remapped": true,
+      "source_id": "sfr:fun:cmp:sec"
+    },
+    {
+      "epub_id": "epub-6b4c4b5428e04489de71",
+      "remapped": true,
+      "source_id": "sfr:fun:cmp:fig:composition"
+    },
+    {
+      "epub_id": "diagram-composition",
+      "remapped": false,
+      "source_id": "diagram-composition"
+    },
+    {
+      "epub_id": "epub-974968b8f4ff4df4683a",
+      "remapped": true,
+      "source_id": "sfr:fun:par:sec"
+    },
+    {
+      "epub_id": "epub-4e8954b1cceb1a8b93cf",
+      "remapped": true,
+      "source_id": "sfr:siz::chap"
+    },
+    {
+      "epub_id": "epub-5d49b82e853f3baeefbe",
+      "remapped": true,
+      "source_id": "sfr:siz:int:sec"
+    },
+    {
+      "epub_id": "epub-73464650034d3664662b",
+      "remapped": true,
+      "source_id": "sfr:siz:enm:sec"
+    },
+    {
+      "epub_id": "epub-33475ba7b11cd41d1eec",
+      "remapped": true,
+      "source_id": "sfr:siz:enm:defn:enumerable"
+    },
+    {
+      "epub_id": "epub-898b046f00eb67dc48f3",
+      "remapped": true,
+      "source_id": "sfr:siz:enm:prop:enum-shift"
+    },
+    {
+      "epub_id": "epub-9621e03c56508f215e5a",
+      "remapped": true,
+      "source_id": "sfr:siz:enm:cor:enum-nat"
+    },
+    {
+      "epub_id": "epub-882de070c30d2e941d4d",
+      "remapped": true,
+      "source_id": "sfr:siz:enm:prop:enum-bij"
+    },
+    {
+      "epub_id": "epub-a45131d05148f250c85d",
+      "remapped": true,
+      "source_id": "sfr:siz:enm:cor:enum-nat-bij"
+    },
+    {
+      "epub_id": "epub-ea0a60364092ae7399dd",
+      "remapped": true,
+      "source_id": "sfr:siz:zigzag:sec"
+    },
+    {
+      "epub_id": "epub-6060da8b715802f20cff",
+      "remapped": true,
+      "source_id": "sfr:siz:zigzag:natsquaredenumerable"
+    },
+    {
+      "epub_id": "epub-7b1015cd045c99436fb0",
+      "remapped": true,
+      "source_id": "sfr:siz:zigzag:prob:posint-n"
+    },
+    {
+      "epub_id": "epub-bd44fe1ccf15f10b767f",
+      "remapped": true,
+      "source_id": "sfr:siz:zigzag:prob:posint-star"
+    },
+    {
+      "epub_id": "epub-acff3ea5d4c839f91b16",
+      "remapped": true,
+      "source_id": "sfr:siz:pai:sec"
+    },
+    {
+      "epub_id": "epub-1427d2ad6f07fcffd06a",
+      "remapped": true,
+      "source_id": "sfr:siz:pai-alt:sec"
+    },
+    {
+      "epub_id": "epub-37e4e708298eef49293b",
+      "remapped": true,
+      "source_id": "sfr:siz:nen:sec"
+    },
+    {
+      "epub_id": "epub-b4674779d861c072be01",
+      "remapped": true,
+      "source_id": "sfr:siz:nen:thm:nonenum-bin-omega"
+    },
+    {
+      "epub_id": "epub-a3e5f6a5cfc4fc6a9100",
+      "remapped": true,
+      "source_id": "sfr:siz:nen:thm:nonenum-pownat"
+    },
+    {
+      "epub_id": "epub-7fccf0ed7dc613b27a83",
+      "remapped": true,
+      "source_id": "sfr:siz:nen:prob:f-posint"
+    },
+    {
+      "epub_id": "epub-0d6908ff25ad4a7e97c8",
+      "remapped": true,
+      "source_id": "sfr:siz:red:sec"
+    },
+    {
+      "epub_id": "epub-bd275c7751b6b72f09fc",
+      "remapped": true,
+      "source_id": "sfr:siz:red:prob:nat-nat"
+    },
+    {
+      "epub_id": "epub-194d88d6f661760fe9ea",
+      "remapped": true,
+      "source_id": "sfr:siz:equ:sec"
+    },
+    {
+      "epub_id": "epub-9c6cab2d64f6f07e299f",
+      "remapped": true,
+      "source_id": "sfr:siz:equ:comparisondef"
+    },
+    {
+      "epub_id": "epub-2435fbd810a563bf1e85",
+      "remapped": true,
+      "source_id": "sfr:siz:equ:equinumerosityisequi"
+    },
+    {
+      "epub_id": "epub-3aeefede934fb1f9f6a0",
+      "remapped": true,
+      "source_id": "sfr:siz:car:sec"
+    },
+    {
+      "epub_id": "epub-58b32d481fcd07dbc3b7",
+      "remapped": true,
+      "source_id": "sfr:siz:car:thm:cantor"
+    },
+    {
+      "epub_id": "epub-dba428e3122c84574df7",
+      "remapped": true,
+      "source_id": "sfr:siz:sb:sec"
+    },
+    {
+      "epub_id": "epub-3dee6e7ae90c497e66fd",
+      "remapped": true,
+      "source_id": "sfr:siz:sb:thm:schroder-bernstein"
+    },
+    {
+      "epub_id": "fnref2",
+      "remapped": false,
+      "source_id": "fnref2"
+    },
+    {
+      "epub_id": "epub-c04649bb83e4c4bf005a",
+      "remapped": true,
+      "source_id": "sfr:siz:enm-alt:sec"
+    },
+    {
+      "epub_id": "fnref3",
+      "remapped": false,
+      "source_id": "fnref3"
+    },
+    {
+      "epub_id": "epub-76899695c7a770eea521",
+      "remapped": true,
+      "source_id": "sfr:siz:enm-alt:defn:enumerable"
+    },
+    {
+      "epub_id": "epub-9f9632caedb7e7a608e5",
+      "remapped": true,
+      "source_id": "sfr:siz:nen-alt:sec"
+    },
+    {
+      "epub_id": "epub-23ace3826b3e171cf22d",
+      "remapped": true,
+      "source_id": "sfr:siz:nen-alt:thm:nonenum-bin-omega"
+    },
+    {
+      "epub_id": "epub-99c64e2aed7337d53b61",
+      "remapped": true,
+      "source_id": "sfr:siz:nen-alt:thm:nonenum-pownat"
+    },
+    {
+      "epub_id": "epub-967d309e2a438519ed2d",
+      "remapped": true,
+      "source_id": "sfr:siz:red-alt:sec"
+    },
+    {
+      "epub_id": "epub-ffb037db99f6d585b2dd",
+      "remapped": true,
+      "source_id": "sfr:siz:red:prob:nat-nat-alt"
+    },
+    {
+      "epub_id": "epub-93a168c2d33b24ec3080",
+      "remapped": true,
+      "source_id": "sfr:arith::chap"
+    },
+    {
+      "epub_id": "epub-f01903df6e316101c638",
+      "remapped": true,
+      "source_id": "sfr:arith:int:sec"
+    },
+    {
+      "epub_id": "fnref4",
+      "remapped": false,
+      "source_id": "fnref4"
+    },
+    {
+      "epub_id": "epub-144612368d1b18989f13",
+      "remapped": true,
+      "source_id": "sfr:arith:rat:sec"
+    },
+    {
+      "epub_id": "epub-d9580f624190449fa7a9",
+      "remapped": true,
+      "source_id": "sfr:arith:real:sec"
+    },
+    {
+      "epub_id": "epub-87eee896fd8d885b4789",
+      "remapped": true,
+      "source_id": "sfr:arith:real:root2irrational"
+    },
+    {
+      "epub_id": "fnref5",
+      "remapped": false,
+      "source_id": "fnref5"
+    },
+    {
+      "epub_id": "diagram-root-two-square",
+      "remapped": false,
+      "source_id": "diagram-root-two-square"
+    },
+    {
+      "epub_id": "epub-10375cc80beee6592b55",
+      "remapped": true,
+      "source_id": "sfr:arith:cuts:sec"
+    },
+    {
+      "epub_id": "epub-55ed3ee9f1e6d9cf548b",
+      "remapped": true,
+      "source_id": "sfr:arith:cuts:realcompleteness"
+    },
+    {
+      "epub_id": "epub-f3bd7f4e6958a35c5007",
+      "remapped": true,
+      "source_id": "sfr:arith:ref:sec"
+    },
+    {
+      "epub_id": "epub-8e5cb64d06d7f7f9d486",
+      "remapped": true,
+      "source_id": "sfr:arith:check:sec"
+    },
+    {
+      "epub_id": "fnref6",
+      "remapped": false,
+      "source_id": "fnref6"
+    },
+    {
+      "epub_id": "epub-1c5950b90186fdc737e1",
+      "remapped": true,
+      "source_id": "sfr:arith:check:orderedfield"
+    },
+    {
+      "epub_id": "epub-0d54334e6e7f3a12e632",
+      "remapped": true,
+      "source_id": "sfr:arith:cauchy:sec"
+    },
+    {
+      "epub_id": "epub-739011b9ba6ff1fa2228",
+      "remapped": true,
+      "source_id": "sfr:arith:cauchy:def:CauchySequence"
+    },
+    {
+      "epub_id": "fnref7",
+      "remapped": false,
+      "source_id": "fnref7"
+    },
+    {
+      "epub_id": "epub-0960df5dae190c81d119",
+      "remapped": true,
+      "source_id": "sfr:arith:cauchy:thm:cauchyorderedfield"
+    },
+    {
+      "epub_id": "fnref8",
+      "remapped": false,
+      "source_id": "fnref8"
+    },
+    {
+      "epub_id": "epub-737d5ee66f31c7812c88",
+      "remapped": true,
+      "source_id": "sfr:infinite::chap"
+    },
+    {
+      "epub_id": "epub-ff8523485b1e358895ce",
+      "remapped": true,
+      "source_id": "sfr:infinite:hilbert:sec"
+    },
+    {
+      "epub_id": "diagram-hilberts-hotel",
+      "remapped": false,
+      "source_id": "diagram-hilberts-hotel"
+    },
+    {
+      "epub_id": "epub-c8f824efcb94b854cb6a",
+      "remapped": true,
+      "source_id": "sfr:infinite:hilbert:defn:DedekindInfinite"
+    },
+    {
+      "epub_id": "epub-1599994914295070ebd6",
+      "remapped": true,
+      "source_id": "sfr:infinite:dedekind:sec"
+    },
+    {
+      "epub_id": "epub-760f465107651c36a8d1",
+      "remapped": true,
+      "source_id": "sfr:infinite:dedekind:repeatedapplication"
+    },
+    {
+      "epub_id": "epub-c7d2c6c6b42b5becf5f4",
+      "remapped": true,
+      "source_id": "sfr:infinite:dedekind:Closure"
+    },
+    {
+      "epub_id": "epub-27c9035aef339e395134",
+      "remapped": true,
+      "source_id": "sfr:infinite:dedekind:closureproperties"
+    },
+    {
+      "epub_id": "epub-f42fa997b2d7644db5f0",
+      "remapped": true,
+      "source_id": "sfr:infinite:dedekind:closurehaselem"
+    },
+    {
+      "epub_id": "epub-b7e29bad66900a9f6d1b",
+      "remapped": true,
+      "source_id": "sfr:infinite:dedekind:closureclosed"
+    },
+    {
+      "epub_id": "epub-6fce0b40ca9b8a37b77f",
+      "remapped": true,
+      "source_id": "sfr:infinite:dedekind:closuresmallest"
+    },
+    {
+      "epub_id": "epub-b544758f245200d15557",
+      "remapped": true,
+      "source_id": "sfr:infinite:dedekind:ded:proper"
+    },
+    {
+      "epub_id": "epub-b1e7ee083eb1cbac2a61",
+      "remapped": true,
+      "source_id": "sfr:infinite:dedekind:ded:injection"
+    },
+    {
+      "epub_id": "epub-78f2840e823e1cebf64f",
+      "remapped": true,
+      "source_id": "sfr:infinite:dedekind:ded:closure"
+    },
+    {
+      "epub_id": "epub-bf756ad07d63da8e4c30",
+      "remapped": true,
+      "source_id": "sfr:infinite:dedekind:thm:DedekindInfiniteAlgebra"
+    },
+    {
+      "epub_id": "epub-01da33e20e80cac0f7d6",
+      "remapped": true,
+      "source_id": "sfr:infinite:induction:sec"
+    },
+    {
+      "epub_id": "epub-6896580bf72b6aff9712",
+      "remapped": true,
+      "source_id": "sfr:infinite:induction:thm:dedinfiniteinduction"
+    },
+    {
+      "epub_id": "epub-5e5315a80e7e515b3ca3",
+      "remapped": true,
+      "source_id": "sfr:infinite:induction:natinductionschema"
+    },
+    {
+      "epub_id": "epub-31a8670672c4e8d2ce96",
+      "remapped": true,
+      "source_id": "sfr:infinite:dedekindsproof:sec"
+    },
+    {
+      "epub_id": "fnref9",
+      "remapped": false,
+      "source_id": "fnref9"
+    },
+    {
+      "epub_id": "epub-e86cca4288400ec8cd66",
+      "remapped": true,
+      "source_id": "sfr:infinite:card-sb:sec"
+    },
+    {
+      "epub_id": "epub-bdda7d70700e5181eec1",
+      "remapped": true,
+      "source_id": "sfr:infinite:card-sb:Closureprops"
+    },
+    {
+      "epub_id": "epub-71188f27308b4969534a",
+      "remapped": true,
+      "source_id": "sfr:infinite:card-sb:Closurehaselem"
+    },
+    {
+      "epub_id": "epub-efa6c9cf78898130ca7e",
+      "remapped": true,
+      "source_id": "sfr:infinite:card-sb:Closureclosed"
+    },
+    {
+      "epub_id": "epub-572c42c8e7be4d29abad",
+      "remapped": true,
+      "source_id": "sfr:infinite:card-sb:Closuresmallest"
+    },
+    {
+      "epub_id": "epub-3f5c7baa69515d3cf074",
+      "remapped": true,
+      "source_id": "sfr:infinite:card-sb:sbhelper"
+    },
+    {
+      "epub_id": "epub-29caf09662dbf167fb98",
+      "remapped": true,
+      "source_id": "pl:syn::chap"
+    },
+    {
+      "epub_id": "epub-eadeba0104f01446dc00",
+      "remapped": true,
+      "source_id": "pl:syn:int:sec"
+    },
+    {
+      "epub_id": "epub-e3adba89ae84badbb489",
+      "remapped": true,
+      "source_id": "pl:syn:fml:sec"
+    },
+    {
+      "epub_id": "epub-1b7b83b49d5a56aa8d15",
+      "remapped": true,
+      "source_id": "pl:syn:fml:defn:formulas"
+    },
+    {
+      "epub_id": "epub-8a7771904fe826083117",
+      "remapped": true,
+      "source_id": "pl:syn:pre:sec"
+    },
+    {
+      "epub_id": "epub-9419779151916a1c6d87",
+      "remapped": true,
+      "source_id": "pl:syn:pre:thm:induction"
+    },
+    {
+      "epub_id": "epub-e24931eaffd1e10faee5",
+      "remapped": true,
+      "source_id": "pl:syn:pre:prop:balanced"
+    },
+    {
+      "epub_id": "epub-28d16cfeb6897fe7f97a",
+      "remapped": true,
+      "source_id": "pl:syn:pre:prop:noinit"
+    },
+    {
+      "epub_id": "epub-f8c1170cd0cdd0491f1c",
+      "remapped": true,
+      "source_id": "pl:syn:fseq:sec"
+    },
+    {
+      "epub_id": "epub-92d9f1572792d3971a36",
+      "remapped": true,
+      "source_id": "pl:syn:fseq:defn:fseq-frm"
+    },
+    {
+      "epub_id": "epub-a04ec7815cb3fd66d513",
+      "remapped": true,
+      "source_id": "pl:syn:fseq:prop:formed"
+    },
+    {
+      "epub_id": "epub-37a1875c70654e1c4aa0",
+      "remapped": true,
+      "source_id": "pl:syn:fseq:lem:fseq-init"
+    },
+    {
+      "epub_id": "epub-2380918d6dd7f9e59494",
+      "remapped": true,
+      "source_id": "pl:syn:fseq:thm:fseq-frm-equiv"
+    },
+    {
+      "epub_id": "epub-1ebd486ab2a0f2778fa7",
+      "remapped": true,
+      "source_id": "pl:syn:val:sec"
+    },
+    {
+      "epub_id": "epub-3fdf5744a23b28bc3691",
+      "remapped": true,
+      "source_id": "pl:syn:val:thm:LocalDetermination"
+    },
+    {
+      "epub_id": "epub-1be1f1706feea76d9238",
+      "remapped": true,
+      "source_id": "pl:syn:val:defn:satisfaction"
+    },
+    {
+      "epub_id": "epub-8e6b85fa9f83332fbc4c",
+      "remapped": true,
+      "source_id": "pl:syn:val:prop:sat-value"
+    },
+    {
+      "epub_id": "epub-8fd1982736f6702ac0c8",
+      "remapped": true,
+      "source_id": "pl:syn:sem:sec"
+    },
+    {
+      "epub_id": "epub-f2c8f609dcd357fb6fa2",
+      "remapped": true,
+      "source_id": "pl:syn:sem:prop:semanticalfacts"
+    },
+    {
+      "epub_id": "epub-b7a8667a5584ee3f6102",
+      "remapped": true,
+      "source_id": "pl:syn:sem:def:monotonicity"
+    },
+    {
+      "epub_id": "epub-ecf6688fe15f49f7896b",
+      "remapped": true,
+      "source_id": "pl:syn:sem:def:Cut"
+    },
+    {
+      "epub_id": "epub-b9244e4b1e603273208c",
+      "remapped": true,
+      "source_id": "pl:syn:sem:prop:entails-unsat"
+    },
+    {
+      "epub_id": "epub-974e901690576704d3aa",
+      "remapped": true,
+      "source_id": "pl:syn:sem:thm:sem-deduction"
+    },
+    {
+      "epub_id": "epub-d7ec05630f7e6db14890",
+      "remapped": true,
+      "source_id": "fol:prf::chap"
+    },
+    {
+      "epub_id": "epub-42465c2f1117dab7b8dc",
+      "remapped": true,
+      "source_id": "fol:prf:int:sec"
+    },
+    {
+      "epub_id": "epub-438d96c100165d3e5a7b",
+      "remapped": true,
+      "source_id": "fol:prf:seq:sec"
+    },
+    {
+      "epub_id": "sequent-calculus-proof",
+      "remapped": false,
+      "source_id": "sequent-calculus-proof"
+    },
+    {
+      "epub_id": "sequent-calculus-proof-caption",
+      "remapped": false,
+      "source_id": "sequent-calculus-proof-caption"
+    },
+    {
+      "epub_id": "epub-fad08ec912c3cb4fef00",
+      "remapped": true,
+      "source_id": "fol:prf:ntd:sec"
+    },
+    {
+      "epub_id": "natural-deduction-proof",
+      "remapped": false,
+      "source_id": "natural-deduction-proof"
+    },
+    {
+      "epub_id": "natural-deduction-proof-caption",
+      "remapped": false,
+      "source_id": "natural-deduction-proof-caption"
+    },
+    {
+      "epub_id": "epub-0eb5f6cbc279a4a12799",
+      "remapped": true,
+      "source_id": "fol:prf:tab:sec"
+    },
+    {
+      "epub_id": "tableau-proof",
+      "remapped": false,
+      "source_id": "tableau-proof"
+    },
+    {
+      "epub_id": "tableau-proof-caption",
+      "remapped": false,
+      "source_id": "tableau-proof-caption"
+    },
+    {
+      "epub_id": "epub-200ecf3e6de87c426ef5",
+      "remapped": true,
+      "source_id": "fol:prf:axd:sec"
+    },
+    {
+      "epub_id": "epub-7bcaa4bb4dbbd2caf617",
+      "remapped": true,
+      "source_id": "fol:seq::chap"
+    },
+    {
+      "epub_id": "epub-17916d2a28a9bfd94eb3",
+      "remapped": true,
+      "source_id": "fol:seq:rul:sec"
+    },
+    {
+      "epub_id": "epub-1a88608ddff661f32686",
+      "remapped": true,
+      "source_id": "fol:seq:prl:sec"
+    },
+    {
+      "epub_id": "epub-653f37f57a31af2a1da9",
+      "remapped": true,
+      "source_id": "lnot-सठच-नयम"
+    },
+    {
+      "epub_id": "proof-auto-001",
+      "remapped": false,
+      "source_id": "proof-auto-001"
+    },
+    {
+      "epub_id": "proof-auto-001-caption",
+      "remapped": false,
+      "source_id": "proof-auto-001-caption"
+    },
+    {
+      "epub_id": "epub-9a08f49da359f238b40e",
+      "remapped": true,
+      "source_id": "land-सठच-नयम"
+    },
+    {
+      "epub_id": "proof-auto-002",
+      "remapped": false,
+      "source_id": "proof-auto-002"
+    },
+    {
+      "epub_id": "proof-auto-002-caption",
+      "remapped": false,
+      "source_id": "proof-auto-002-caption"
+    },
+    {
+      "epub_id": "epub-743f44c32751fccc06b2",
+      "remapped": true,
+      "source_id": "lor-सठच-नयम"
+    },
+    {
+      "epub_id": "proof-auto-003",
+      "remapped": false,
+      "source_id": "proof-auto-003"
+    },
+    {
+      "epub_id": "proof-auto-003-caption",
+      "remapped": false,
+      "source_id": "proof-auto-003-caption"
+    },
+    {
+      "epub_id": "epub-09d5d99e91b34d5ee95d",
+      "remapped": true,
+      "source_id": "to-सठच-नयम"
+    },
+    {
+      "epub_id": "proof-auto-004",
+      "remapped": false,
+      "source_id": "proof-auto-004"
+    },
+    {
+      "epub_id": "proof-auto-004-caption",
+      "remapped": false,
+      "source_id": "proof-auto-004-caption"
+    },
+    {
+      "epub_id": "epub-1c11df3aa63d71a56130",
+      "remapped": true,
+      "source_id": "fol:seq:qrl:sec"
+    },
+    {
+      "epub_id": "epub-425179d3177aa47062d3",
+      "remapped": true,
+      "source_id": "forall-सठच-नयम"
+    },
+    {
+      "epub_id": "proof-auto-005",
+      "remapped": false,
+      "source_id": "proof-auto-005"
+    },
+    {
+      "epub_id": "proof-auto-005-caption",
+      "remapped": false,
+      "source_id": "proof-auto-005-caption"
+    },
+    {
+      "epub_id": "fnref10",
+      "remapped": false,
+      "source_id": "fnref10"
+    },
+    {
+      "epub_id": "epub-5fff4ef0b61368e07fe2",
+      "remapped": true,
+      "source_id": "exists-सठच-नयम"
+    },
+    {
+      "epub_id": "proof-auto-006",
+      "remapped": false,
+      "source_id": "proof-auto-006"
+    },
+    {
+      "epub_id": "proof-auto-006-caption",
+      "remapped": false,
+      "source_id": "proof-auto-006-caption"
+    },
+    {
+      "epub_id": "proof-auto-007",
+      "remapped": false,
+      "source_id": "proof-auto-007"
+    },
+    {
+      "epub_id": "proof-auto-007-caption",
+      "remapped": false,
+      "source_id": "proof-auto-007-caption"
+    },
+    {
+      "epub_id": "proof-auto-008",
+      "remapped": false,
+      "source_id": "proof-auto-008"
+    },
+    {
+      "epub_id": "proof-auto-008-caption",
+      "remapped": false,
+      "source_id": "proof-auto-008-caption"
+    },
+    {
+      "epub_id": "epub-c13d372ae0991f3cc17f",
+      "remapped": true,
+      "source_id": "fol:seq:srl:sec"
+    },
+    {
+      "epub_id": "epub-912bbbe69b9eef9a8ac5",
+      "remapped": true,
+      "source_id": "दरबलकरण"
+    },
+    {
+      "epub_id": "proof-auto-009",
+      "remapped": false,
+      "source_id": "proof-auto-009"
+    },
+    {
+      "epub_id": "proof-auto-009-caption",
+      "remapped": false,
+      "source_id": "proof-auto-009-caption"
+    },
+    {
+      "epub_id": "epub-e52d0ff6a4d9e2557565",
+      "remapped": true,
+      "source_id": "आकचन"
+    },
+    {
+      "epub_id": "proof-auto-010",
+      "remapped": false,
+      "source_id": "proof-auto-010"
+    },
+    {
+      "epub_id": "proof-auto-010-caption",
+      "remapped": false,
+      "source_id": "proof-auto-010-caption"
+    },
+    {
+      "epub_id": "epub-f5e613a13fe692840df1",
+      "remapped": true,
+      "source_id": "अदलबदल"
+    },
+    {
+      "epub_id": "proof-auto-011",
+      "remapped": false,
+      "source_id": "proof-auto-011"
+    },
+    {
+      "epub_id": "proof-auto-011-caption",
+      "remapped": false,
+      "source_id": "proof-auto-011-caption"
+    },
+    {
+      "epub_id": "proof-auto-012",
+      "remapped": false,
+      "source_id": "proof-auto-012"
+    },
+    {
+      "epub_id": "proof-auto-012-caption",
+      "remapped": false,
+      "source_id": "proof-auto-012-caption"
+    },
+    {
+      "epub_id": "epub-51e6bfa47a26b0defeb6",
+      "remapped": true,
+      "source_id": "fol:seq:der:sec"
+    },
+    {
+      "epub_id": "proof-auto-013",
+      "remapped": false,
+      "source_id": "proof-auto-013"
+    },
+    {
+      "epub_id": "proof-auto-013-caption",
+      "remapped": false,
+      "source_id": "proof-auto-013-caption"
+    },
+    {
+      "epub_id": "proof-auto-014",
+      "remapped": false,
+      "source_id": "proof-auto-014"
+    },
+    {
+      "epub_id": "proof-auto-014-caption",
+      "remapped": false,
+      "source_id": "proof-auto-014-caption"
+    },
+    {
+      "epub_id": "proof-auto-015",
+      "remapped": false,
+      "source_id": "proof-auto-015"
+    },
+    {
+      "epub_id": "proof-auto-015-caption",
+      "remapped": false,
+      "source_id": "proof-auto-015-caption"
+    },
+    {
+      "epub_id": "proof-auto-016",
+      "remapped": false,
+      "source_id": "proof-auto-016"
+    },
+    {
+      "epub_id": "proof-auto-016-caption",
+      "remapped": false,
+      "source_id": "proof-auto-016-caption"
+    },
+    {
+      "epub_id": "proof-auto-017",
+      "remapped": false,
+      "source_id": "proof-auto-017"
+    },
+    {
+      "epub_id": "proof-auto-017-caption",
+      "remapped": false,
+      "source_id": "proof-auto-017-caption"
+    },
+    {
+      "epub_id": "proof-auto-018",
+      "remapped": false,
+      "source_id": "proof-auto-018"
+    },
+    {
+      "epub_id": "proof-auto-018-caption",
+      "remapped": false,
+      "source_id": "proof-auto-018-caption"
+    },
+    {
+      "epub_id": "proof-auto-019",
+      "remapped": false,
+      "source_id": "proof-auto-019"
+    },
+    {
+      "epub_id": "proof-auto-019-caption",
+      "remapped": false,
+      "source_id": "proof-auto-019-caption"
+    },
+    {
+      "epub_id": "proof-auto-020",
+      "remapped": false,
+      "source_id": "proof-auto-020"
+    },
+    {
+      "epub_id": "proof-auto-020-caption",
+      "remapped": false,
+      "source_id": "proof-auto-020-caption"
+    },
+    {
+      "epub_id": "epub-666998326edf8d04d55d",
+      "remapped": true,
+      "source_id": "fol:seq:pro:sec"
+    },
+    {
+      "epub_id": "proof-auto-021",
+      "remapped": false,
+      "source_id": "proof-auto-021"
+    },
+    {
+      "epub_id": "proof-auto-021-caption",
+      "remapped": false,
+      "source_id": "proof-auto-021-caption"
+    },
+    {
+      "epub_id": "proof-auto-022",
+      "remapped": false,
+      "source_id": "proof-auto-022"
+    },
+    {
+      "epub_id": "proof-auto-022-caption",
+      "remapped": false,
+      "source_id": "proof-auto-022-caption"
+    },
+    {
+      "epub_id": "proof-auto-023",
+      "remapped": false,
+      "source_id": "proof-auto-023"
+    },
+    {
+      "epub_id": "proof-auto-023-caption",
+      "remapped": false,
+      "source_id": "proof-auto-023-caption"
+    },
+    {
+      "epub_id": "proof-auto-024",
+      "remapped": false,
+      "source_id": "proof-auto-024"
+    },
+    {
+      "epub_id": "proof-auto-024-caption",
+      "remapped": false,
+      "source_id": "proof-auto-024-caption"
+    },
+    {
+      "epub_id": "proof-auto-025",
+      "remapped": false,
+      "source_id": "proof-auto-025"
+    },
+    {
+      "epub_id": "proof-auto-025-caption",
+      "remapped": false,
+      "source_id": "proof-auto-025-caption"
+    },
+    {
+      "epub_id": "proof-auto-026",
+      "remapped": false,
+      "source_id": "proof-auto-026"
+    },
+    {
+      "epub_id": "proof-auto-026-caption",
+      "remapped": false,
+      "source_id": "proof-auto-026-caption"
+    },
+    {
+      "epub_id": "proof-auto-027",
+      "remapped": false,
+      "source_id": "proof-auto-027"
+    },
+    {
+      "epub_id": "proof-auto-027-caption",
+      "remapped": false,
+      "source_id": "proof-auto-027-caption"
+    },
+    {
+      "epub_id": "proof-auto-028",
+      "remapped": false,
+      "source_id": "proof-auto-028"
+    },
+    {
+      "epub_id": "proof-auto-028-caption",
+      "remapped": false,
+      "source_id": "proof-auto-028-caption"
+    },
+    {
+      "epub_id": "proof-auto-029",
+      "remapped": false,
+      "source_id": "proof-auto-029"
+    },
+    {
+      "epub_id": "proof-auto-029-caption",
+      "remapped": false,
+      "source_id": "proof-auto-029-caption"
+    },
+    {
+      "epub_id": "proof-auto-030",
+      "remapped": false,
+      "source_id": "proof-auto-030"
+    },
+    {
+      "epub_id": "proof-auto-030-caption",
+      "remapped": false,
+      "source_id": "proof-auto-030-caption"
+    },
+    {
+      "epub_id": "proof-auto-031",
+      "remapped": false,
+      "source_id": "proof-auto-031"
+    },
+    {
+      "epub_id": "proof-auto-031-caption",
+      "remapped": false,
+      "source_id": "proof-auto-031-caption"
+    },
+    {
+      "epub_id": "proof-auto-032",
+      "remapped": false,
+      "source_id": "proof-auto-032"
+    },
+    {
+      "epub_id": "proof-auto-032-caption",
+      "remapped": false,
+      "source_id": "proof-auto-032-caption"
+    },
+    {
+      "epub_id": "proof-auto-033",
+      "remapped": false,
+      "source_id": "proof-auto-033"
+    },
+    {
+      "epub_id": "proof-auto-033-caption",
+      "remapped": false,
+      "source_id": "proof-auto-033-caption"
+    },
+    {
+      "epub_id": "proof-auto-034",
+      "remapped": false,
+      "source_id": "proof-auto-034"
+    },
+    {
+      "epub_id": "proof-auto-034-caption",
+      "remapped": false,
+      "source_id": "proof-auto-034-caption"
+    },
+    {
+      "epub_id": "proof-auto-035",
+      "remapped": false,
+      "source_id": "proof-auto-035"
+    },
+    {
+      "epub_id": "proof-auto-035-caption",
+      "remapped": false,
+      "source_id": "proof-auto-035-caption"
+    },
+    {
+      "epub_id": "proof-auto-036",
+      "remapped": false,
+      "source_id": "proof-auto-036"
+    },
+    {
+      "epub_id": "proof-auto-036-caption",
+      "remapped": false,
+      "source_id": "proof-auto-036-caption"
+    },
+    {
+      "epub_id": "proof-auto-037",
+      "remapped": false,
+      "source_id": "proof-auto-037"
+    },
+    {
+      "epub_id": "proof-auto-037-caption",
+      "remapped": false,
+      "source_id": "proof-auto-037-caption"
+    },
+    {
+      "epub_id": "proof-auto-038",
+      "remapped": false,
+      "source_id": "proof-auto-038"
+    },
+    {
+      "epub_id": "proof-auto-038-caption",
+      "remapped": false,
+      "source_id": "proof-auto-038-caption"
+    },
+    {
+      "epub_id": "epub-327065e4adcf83a11bd4",
+      "remapped": true,
+      "source_id": "fol:seq:prq:sec"
+    },
+    {
+      "epub_id": "proof-auto-039",
+      "remapped": false,
+      "source_id": "proof-auto-039"
+    },
+    {
+      "epub_id": "proof-auto-039-caption",
+      "remapped": false,
+      "source_id": "proof-auto-039-caption"
+    },
+    {
+      "epub_id": "proof-auto-040",
+      "remapped": false,
+      "source_id": "proof-auto-040"
+    },
+    {
+      "epub_id": "proof-auto-040-caption",
+      "remapped": false,
+      "source_id": "proof-auto-040-caption"
+    },
+    {
+      "epub_id": "proof-auto-041",
+      "remapped": false,
+      "source_id": "proof-auto-041"
+    },
+    {
+      "epub_id": "proof-auto-041-caption",
+      "remapped": false,
+      "source_id": "proof-auto-041-caption"
+    },
+    {
+      "epub_id": "proof-auto-042",
+      "remapped": false,
+      "source_id": "proof-auto-042"
+    },
+    {
+      "epub_id": "proof-auto-042-caption",
+      "remapped": false,
+      "source_id": "proof-auto-042-caption"
+    },
+    {
+      "epub_id": "epub-38d5b00d9beb08870f79",
+      "remapped": true,
+      "source_id": "fol:seq:ptn:sec"
+    },
+    {
+      "epub_id": "proof-auto-043",
+      "remapped": false,
+      "source_id": "proof-auto-043"
+    },
+    {
+      "epub_id": "proof-auto-043-caption",
+      "remapped": false,
+      "source_id": "proof-auto-043-caption"
+    },
+    {
+      "epub_id": "epub-e48ad4b4e33f18a2dd2f",
+      "remapped": true,
+      "source_id": "fol:seq:ptn:prop:reflexivity"
+    },
+    {
+      "epub_id": "epub-e6a0c1c425879393ec92",
+      "remapped": true,
+      "source_id": "fol:seq:ptn:prop:monotonicity"
+    },
+    {
+      "epub_id": "epub-52f32c8b4a9c88b70dc0",
+      "remapped": true,
+      "source_id": "fol:seq:ptn:prop:transitivity"
+    },
+    {
+      "epub_id": "proof-auto-044",
+      "remapped": false,
+      "source_id": "proof-auto-044"
+    },
+    {
+      "epub_id": "proof-auto-044-caption",
+      "remapped": false,
+      "source_id": "proof-auto-044-caption"
+    },
+    {
+      "epub_id": "epub-108b12ccc28b7be8a83b",
+      "remapped": true,
+      "source_id": "fol:seq:ptn:prop:incons"
+    },
+    {
+      "epub_id": "epub-79e1229bb25c9c30c967",
+      "remapped": true,
+      "source_id": "fol:seq:ptn:prop:proves-compact"
+    },
+    {
+      "epub_id": "epub-f405b13a8d2663c36185",
+      "remapped": true,
+      "source_id": "fol:seq:prv:sec"
+    },
+    {
+      "epub_id": "epub-dd60b590f0b1859a1237",
+      "remapped": true,
+      "source_id": "fol:seq:prv:prop:provability-contr"
+    },
+    {
+      "epub_id": "proof-auto-045",
+      "remapped": false,
+      "source_id": "proof-auto-045"
+    },
+    {
+      "epub_id": "proof-auto-045-caption",
+      "remapped": false,
+      "source_id": "proof-auto-045-caption"
+    },
+    {
+      "epub_id": "epub-5d915e28bd4b6751d603",
+      "remapped": true,
+      "source_id": "fol:seq:prv:prop:prov-incons"
+    },
+    {
+      "epub_id": "proof-auto-046",
+      "remapped": false,
+      "source_id": "proof-auto-046"
+    },
+    {
+      "epub_id": "proof-auto-046-caption",
+      "remapped": false,
+      "source_id": "proof-auto-046-caption"
+    },
+    {
+      "epub_id": "epub-6ee01f43e8441b3c5f0b",
+      "remapped": true,
+      "source_id": "fol:seq:prv:prop:explicit-inc"
+    },
+    {
+      "epub_id": "proof-auto-047",
+      "remapped": false,
+      "source_id": "proof-auto-047"
+    },
+    {
+      "epub_id": "proof-auto-047-caption",
+      "remapped": false,
+      "source_id": "proof-auto-047-caption"
+    },
+    {
+      "epub_id": "epub-bea56720b28a3dbf48f9",
+      "remapped": true,
+      "source_id": "fol:seq:prv:prop:provability-exhaustive"
+    },
+    {
+      "epub_id": "proof-auto-048",
+      "remapped": false,
+      "source_id": "proof-auto-048"
+    },
+    {
+      "epub_id": "proof-auto-048-caption",
+      "remapped": false,
+      "source_id": "proof-auto-048-caption"
+    },
+    {
+      "epub_id": "epub-74b6ac4e52df56a8a663",
+      "remapped": true,
+      "source_id": "fol:seq:ppr:sec"
+    },
+    {
+      "epub_id": "epub-fdfb598224827a42480f",
+      "remapped": true,
+      "source_id": "fol:seq:ppr:prop:provability-land"
+    },
+    {
+      "epub_id": "epub-6415776f336652b9d0be",
+      "remapped": true,
+      "source_id": "fol:seq:ppr:prop:provability-land-left"
+    },
+    {
+      "epub_id": "epub-fc9cf5d059f5938ebb70",
+      "remapped": true,
+      "source_id": "fol:seq:ppr:prop:provability-land-right"
+    },
+    {
+      "epub_id": "proof-auto-049",
+      "remapped": false,
+      "source_id": "proof-auto-049"
+    },
+    {
+      "epub_id": "proof-auto-049-caption",
+      "remapped": false,
+      "source_id": "proof-auto-049-caption"
+    },
+    {
+      "epub_id": "proof-auto-050",
+      "remapped": false,
+      "source_id": "proof-auto-050"
+    },
+    {
+      "epub_id": "proof-auto-050-caption",
+      "remapped": false,
+      "source_id": "proof-auto-050-caption"
+    },
+    {
+      "epub_id": "epub-ac61f980f7a5c68106f7",
+      "remapped": true,
+      "source_id": "fol:seq:ppr:prop:provability-lor"
+    },
+    {
+      "epub_id": "proof-auto-051",
+      "remapped": false,
+      "source_id": "proof-auto-051"
+    },
+    {
+      "epub_id": "proof-auto-051-caption",
+      "remapped": false,
+      "source_id": "proof-auto-051-caption"
+    },
+    {
+      "epub_id": "proof-auto-052",
+      "remapped": false,
+      "source_id": "proof-auto-052"
+    },
+    {
+      "epub_id": "proof-auto-052-caption",
+      "remapped": false,
+      "source_id": "proof-auto-052-caption"
+    },
+    {
+      "epub_id": "epub-da9668952558f04ba716",
+      "remapped": true,
+      "source_id": "fol:seq:ppr:prop:provability-lif"
+    },
+    {
+      "epub_id": "epub-8165d3b6b5c19e586479",
+      "remapped": true,
+      "source_id": "fol:seq:ppr:prop:provability-lif-left"
+    },
+    {
+      "epub_id": "epub-deb5eff00cca34b8e598",
+      "remapped": true,
+      "source_id": "fol:seq:ppr:prop:provability-lif-right"
+    },
+    {
+      "epub_id": "proof-auto-053",
+      "remapped": false,
+      "source_id": "proof-auto-053"
+    },
+    {
+      "epub_id": "proof-auto-053-caption",
+      "remapped": false,
+      "source_id": "proof-auto-053-caption"
+    },
+    {
+      "epub_id": "proof-auto-054",
+      "remapped": false,
+      "source_id": "proof-auto-054"
+    },
+    {
+      "epub_id": "proof-auto-054-caption",
+      "remapped": false,
+      "source_id": "proof-auto-054-caption"
+    },
+    {
+      "epub_id": "epub-d915e53a4cdc59aceb2e",
+      "remapped": true,
+      "source_id": "fol:seq:qpr:sec"
+    },
+    {
+      "epub_id": "epub-60da9dd830905d9679d3",
+      "remapped": true,
+      "source_id": "fol:seq:qpr:thm:strong-generalization"
+    },
+    {
+      "epub_id": "epub-6698fe9d6b813e598231",
+      "remapped": true,
+      "source_id": "fol:seq:qpr:prop:provability-quantifiers"
+    },
+    {
+      "epub_id": "proof-auto-055",
+      "remapped": false,
+      "source_id": "proof-auto-055"
+    },
+    {
+      "epub_id": "proof-auto-055-caption",
+      "remapped": false,
+      "source_id": "proof-auto-055-caption"
+    },
+    {
+      "epub_id": "proof-auto-056",
+      "remapped": false,
+      "source_id": "proof-auto-056"
+    },
+    {
+      "epub_id": "proof-auto-056-caption",
+      "remapped": false,
+      "source_id": "proof-auto-056-caption"
+    },
+    {
+      "epub_id": "epub-63620b5ea3d9b7bf2c6a",
+      "remapped": true,
+      "source_id": "fol:seq:sou:sec"
+    },
+    {
+      "epub_id": "epub-c44b333197c8df79f154",
+      "remapped": true,
+      "source_id": "fol:seq:sou:thm:sequent-soundness"
+    },
+    {
+      "epub_id": "proof-auto-057",
+      "remapped": false,
+      "source_id": "proof-auto-057"
+    },
+    {
+      "epub_id": "proof-auto-057-caption",
+      "remapped": false,
+      "source_id": "proof-auto-057-caption"
+    },
+    {
+      "epub_id": "proof-auto-058",
+      "remapped": false,
+      "source_id": "proof-auto-058"
+    },
+    {
+      "epub_id": "proof-auto-058-caption",
+      "remapped": false,
+      "source_id": "proof-auto-058-caption"
+    },
+    {
+      "epub_id": "proof-auto-059",
+      "remapped": false,
+      "source_id": "proof-auto-059"
+    },
+    {
+      "epub_id": "proof-auto-059-caption",
+      "remapped": false,
+      "source_id": "proof-auto-059-caption"
+    },
+    {
+      "epub_id": "proof-auto-060",
+      "remapped": false,
+      "source_id": "proof-auto-060"
+    },
+    {
+      "epub_id": "proof-auto-060-caption",
+      "remapped": false,
+      "source_id": "proof-auto-060-caption"
+    },
+    {
+      "epub_id": "proof-auto-061",
+      "remapped": false,
+      "source_id": "proof-auto-061"
+    },
+    {
+      "epub_id": "proof-auto-061-caption",
+      "remapped": false,
+      "source_id": "proof-auto-061-caption"
+    },
+    {
+      "epub_id": "proof-auto-062",
+      "remapped": false,
+      "source_id": "proof-auto-062"
+    },
+    {
+      "epub_id": "proof-auto-062-caption",
+      "remapped": false,
+      "source_id": "proof-auto-062-caption"
+    },
+    {
+      "epub_id": "proof-auto-063",
+      "remapped": false,
+      "source_id": "proof-auto-063"
+    },
+    {
+      "epub_id": "proof-auto-063-caption",
+      "remapped": false,
+      "source_id": "proof-auto-063-caption"
+    },
+    {
+      "epub_id": "proof-auto-064",
+      "remapped": false,
+      "source_id": "proof-auto-064"
+    },
+    {
+      "epub_id": "proof-auto-064-caption",
+      "remapped": false,
+      "source_id": "proof-auto-064-caption"
+    },
+    {
+      "epub_id": "proof-auto-065",
+      "remapped": false,
+      "source_id": "proof-auto-065"
+    },
+    {
+      "epub_id": "proof-auto-065-caption",
+      "remapped": false,
+      "source_id": "proof-auto-065-caption"
+    },
+    {
+      "epub_id": "proof-auto-066",
+      "remapped": false,
+      "source_id": "proof-auto-066"
+    },
+    {
+      "epub_id": "proof-auto-066-caption",
+      "remapped": false,
+      "source_id": "proof-auto-066-caption"
+    },
+    {
+      "epub_id": "epub-d308b6b5fa71183268db",
+      "remapped": true,
+      "source_id": "fol:seq:sou:cor:weak-soundness"
+    },
+    {
+      "epub_id": "epub-1247a9d8e6e2d7bb9d2e",
+      "remapped": true,
+      "source_id": "fol:seq:sou:cor:entailment-soundness"
+    },
+    {
+      "epub_id": "epub-c3d5ce90dfc6389a49a2",
+      "remapped": true,
+      "source_id": "fol:seq:sou:cor:consistency-soundness"
+    },
+    {
+      "epub_id": "epub-317a6a7963c8a0aa791f",
+      "remapped": true,
+      "source_id": "fol:seq:ide:sec"
+    },
+    {
+      "epub_id": "proof-auto-067",
+      "remapped": false,
+      "source_id": "proof-auto-067"
+    },
+    {
+      "epub_id": "proof-auto-067-caption",
+      "remapped": false,
+      "source_id": "proof-auto-067-caption"
+    },
+    {
+      "epub_id": "proof-auto-068",
+      "remapped": false,
+      "source_id": "proof-auto-068"
+    },
+    {
+      "epub_id": "proof-auto-068-caption",
+      "remapped": false,
+      "source_id": "proof-auto-068-caption"
+    },
+    {
+      "epub_id": "proof-auto-069",
+      "remapped": false,
+      "source_id": "proof-auto-069"
+    },
+    {
+      "epub_id": "proof-auto-069-caption",
+      "remapped": false,
+      "source_id": "proof-auto-069-caption"
+    },
+    {
+      "epub_id": "epub-93da633b3eee85131037",
+      "remapped": true,
+      "source_id": "fol:seq:sid:sec"
+    },
+    {
+      "epub_id": "epub-ad7df07c062699608913",
+      "remapped": true,
+      "source_id": "fol:ntd::chap"
+    },
+    {
+      "epub_id": "epub-8ff746b2be55ad0eef52",
+      "remapped": true,
+      "source_id": "fol:ntd:rul:sec"
+    },
+    {
+      "epub_id": "epub-4dbfa6f80dce4622b7e9",
+      "remapped": true,
+      "source_id": "fol:ntd:prl:sec"
+    },
+    {
+      "epub_id": "epub-af90e03a21c46f55a2c7",
+      "remapped": true,
+      "source_id": "land-सठच-नयम-1"
+    },
+    {
+      "epub_id": "proof-auto-070",
+      "remapped": false,
+      "source_id": "proof-auto-070"
+    },
+    {
+      "epub_id": "proof-auto-070-caption",
+      "remapped": false,
+      "source_id": "proof-auto-070-caption"
+    },
+    {
+      "epub_id": "epub-7111a0fa9cd0a3b5a11d",
+      "remapped": true,
+      "source_id": "lor-सठच-नयम-1"
+    },
+    {
+      "epub_id": "proof-auto-071",
+      "remapped": false,
+      "source_id": "proof-auto-071"
+    },
+    {
+      "epub_id": "proof-auto-071-caption",
+      "remapped": false,
+      "source_id": "proof-auto-071-caption"
+    },
+    {
+      "epub_id": "epub-78e7fd5c183688e6be04",
+      "remapped": true,
+      "source_id": "to-सठच-नयम-1"
+    },
+    {
+      "epub_id": "proof-auto-072",
+      "remapped": false,
+      "source_id": "proof-auto-072"
+    },
+    {
+      "epub_id": "proof-auto-072-caption",
+      "remapped": false,
+      "source_id": "proof-auto-072-caption"
+    },
+    {
+      "epub_id": "epub-d17eb903895e5423a21e",
+      "remapped": true,
+      "source_id": "lnot-सठच-नयम-1"
+    },
+    {
+      "epub_id": "proof-auto-073",
+      "remapped": false,
+      "source_id": "proof-auto-073"
+    },
+    {
+      "epub_id": "proof-auto-073-caption",
+      "remapped": false,
+      "source_id": "proof-auto-073-caption"
+    },
+    {
+      "epub_id": "epub-6ae2b363adfdbea1ce4b",
+      "remapped": true,
+      "source_id": "bot-सठच-नयम"
+    },
+    {
+      "epub_id": "proof-auto-074",
+      "remapped": false,
+      "source_id": "proof-auto-074"
+    },
+    {
+      "epub_id": "proof-auto-074-caption",
+      "remapped": false,
+      "source_id": "proof-auto-074-caption"
+    },
+    {
+      "epub_id": "epub-e914e7a0c91f7fbd5b12",
+      "remapped": true,
+      "source_id": "fol:ntd:qrl:sec"
+    },
+    {
+      "epub_id": "epub-d1f0ab008ecc09a0f2f7",
+      "remapped": true,
+      "source_id": "forall-सठच-नयम-1"
+    },
+    {
+      "epub_id": "proof-auto-075",
+      "remapped": false,
+      "source_id": "proof-auto-075"
+    },
+    {
+      "epub_id": "proof-auto-075-caption",
+      "remapped": false,
+      "source_id": "proof-auto-075-caption"
+    },
+    {
+      "epub_id": "fnref11",
+      "remapped": false,
+      "source_id": "fnref11"
+    },
+    {
+      "epub_id": "epub-a16d693776675296d7e1",
+      "remapped": true,
+      "source_id": "exists-सठच-नयम-1"
+    },
+    {
+      "epub_id": "proof-auto-076",
+      "remapped": false,
+      "source_id": "proof-auto-076"
+    },
+    {
+      "epub_id": "proof-auto-076-caption",
+      "remapped": false,
+      "source_id": "proof-auto-076-caption"
+    },
+    {
+      "epub_id": "proof-auto-077",
+      "remapped": false,
+      "source_id": "proof-auto-077"
+    },
+    {
+      "epub_id": "proof-auto-077-caption",
+      "remapped": false,
+      "source_id": "proof-auto-077-caption"
+    },
+    {
+      "epub_id": "proof-auto-078",
+      "remapped": false,
+      "source_id": "proof-auto-078"
+    },
+    {
+      "epub_id": "proof-auto-078-caption",
+      "remapped": false,
+      "source_id": "proof-auto-078-caption"
+    },
+    {
+      "epub_id": "epub-79e8e0b241659c5abc11",
+      "remapped": true,
+      "source_id": "fol:ntd:der:sec"
+    },
+    {
+      "epub_id": "proof-auto-079",
+      "remapped": false,
+      "source_id": "proof-auto-079"
+    },
+    {
+      "epub_id": "proof-auto-079-caption",
+      "remapped": false,
+      "source_id": "proof-auto-079-caption"
+    },
+    {
+      "epub_id": "proof-auto-080",
+      "remapped": false,
+      "source_id": "proof-auto-080"
+    },
+    {
+      "epub_id": "proof-auto-080-caption",
+      "remapped": false,
+      "source_id": "proof-auto-080-caption"
+    },
+    {
+      "epub_id": "proof-auto-081",
+      "remapped": false,
+      "source_id": "proof-auto-081"
+    },
+    {
+      "epub_id": "proof-auto-081-caption",
+      "remapped": false,
+      "source_id": "proof-auto-081-caption"
+    },
+    {
+      "epub_id": "proof-auto-082",
+      "remapped": false,
+      "source_id": "proof-auto-082"
+    },
+    {
+      "epub_id": "proof-auto-082-caption",
+      "remapped": false,
+      "source_id": "proof-auto-082-caption"
+    },
+    {
+      "epub_id": "proof-auto-083",
+      "remapped": false,
+      "source_id": "proof-auto-083"
+    },
+    {
+      "epub_id": "proof-auto-083-caption",
+      "remapped": false,
+      "source_id": "proof-auto-083-caption"
+    },
+    {
+      "epub_id": "epub-6feebd6c92a031bb50e7",
+      "remapped": true,
+      "source_id": "fol:ntd:pro:sec"
+    },
+    {
+      "epub_id": "proof-auto-084",
+      "remapped": false,
+      "source_id": "proof-auto-084"
+    },
+    {
+      "epub_id": "proof-auto-084-caption",
+      "remapped": false,
+      "source_id": "proof-auto-084-caption"
+    },
+    {
+      "epub_id": "proof-auto-085",
+      "remapped": false,
+      "source_id": "proof-auto-085"
+    },
+    {
+      "epub_id": "proof-auto-085-caption",
+      "remapped": false,
+      "source_id": "proof-auto-085-caption"
+    },
+    {
+      "epub_id": "proof-auto-086",
+      "remapped": false,
+      "source_id": "proof-auto-086"
+    },
+    {
+      "epub_id": "proof-auto-086-caption",
+      "remapped": false,
+      "source_id": "proof-auto-086-caption"
+    },
+    {
+      "epub_id": "proof-auto-087",
+      "remapped": false,
+      "source_id": "proof-auto-087"
+    },
+    {
+      "epub_id": "proof-auto-087-caption",
+      "remapped": false,
+      "source_id": "proof-auto-087-caption"
+    },
+    {
+      "epub_id": "proof-auto-088",
+      "remapped": false,
+      "source_id": "proof-auto-088"
+    },
+    {
+      "epub_id": "proof-auto-088-caption",
+      "remapped": false,
+      "source_id": "proof-auto-088-caption"
+    },
+    {
+      "epub_id": "proof-auto-089",
+      "remapped": false,
+      "source_id": "proof-auto-089"
+    },
+    {
+      "epub_id": "proof-auto-089-caption",
+      "remapped": false,
+      "source_id": "proof-auto-089-caption"
+    },
+    {
+      "epub_id": "proof-auto-090",
+      "remapped": false,
+      "source_id": "proof-auto-090"
+    },
+    {
+      "epub_id": "proof-auto-090-caption",
+      "remapped": false,
+      "source_id": "proof-auto-090-caption"
+    },
+    {
+      "epub_id": "proof-auto-091",
+      "remapped": false,
+      "source_id": "proof-auto-091"
+    },
+    {
+      "epub_id": "proof-auto-091-caption",
+      "remapped": false,
+      "source_id": "proof-auto-091-caption"
+    },
+    {
+      "epub_id": "proof-auto-092",
+      "remapped": false,
+      "source_id": "proof-auto-092"
+    },
+    {
+      "epub_id": "proof-auto-092-caption",
+      "remapped": false,
+      "source_id": "proof-auto-092-caption"
+    },
+    {
+      "epub_id": "proof-auto-093",
+      "remapped": false,
+      "source_id": "proof-auto-093"
+    },
+    {
+      "epub_id": "proof-auto-093-caption",
+      "remapped": false,
+      "source_id": "proof-auto-093-caption"
+    },
+    {
+      "epub_id": "proof-auto-094",
+      "remapped": false,
+      "source_id": "proof-auto-094"
+    },
+    {
+      "epub_id": "proof-auto-094-caption",
+      "remapped": false,
+      "source_id": "proof-auto-094-caption"
+    },
+    {
+      "epub_id": "proof-auto-095",
+      "remapped": false,
+      "source_id": "proof-auto-095"
+    },
+    {
+      "epub_id": "proof-auto-095-caption",
+      "remapped": false,
+      "source_id": "proof-auto-095-caption"
+    },
+    {
+      "epub_id": "proof-auto-096",
+      "remapped": false,
+      "source_id": "proof-auto-096"
+    },
+    {
+      "epub_id": "proof-auto-096-caption",
+      "remapped": false,
+      "source_id": "proof-auto-096-caption"
+    },
+    {
+      "epub_id": "proof-auto-097",
+      "remapped": false,
+      "source_id": "proof-auto-097"
+    },
+    {
+      "epub_id": "proof-auto-097-caption",
+      "remapped": false,
+      "source_id": "proof-auto-097-caption"
+    },
+    {
+      "epub_id": "proof-auto-098",
+      "remapped": false,
+      "source_id": "proof-auto-098"
+    },
+    {
+      "epub_id": "proof-auto-098-caption",
+      "remapped": false,
+      "source_id": "proof-auto-098-caption"
+    },
+    {
+      "epub_id": "epub-b8690da1b39081ea6fd5",
+      "remapped": true,
+      "source_id": "fol:ntd:prq:sec"
+    },
+    {
+      "epub_id": "proof-auto-099",
+      "remapped": false,
+      "source_id": "proof-auto-099"
+    },
+    {
+      "epub_id": "proof-auto-099-caption",
+      "remapped": false,
+      "source_id": "proof-auto-099-caption"
+    },
+    {
+      "epub_id": "proof-auto-100",
+      "remapped": false,
+      "source_id": "proof-auto-100"
+    },
+    {
+      "epub_id": "proof-auto-100-caption",
+      "remapped": false,
+      "source_id": "proof-auto-100-caption"
+    },
+    {
+      "epub_id": "proof-auto-101",
+      "remapped": false,
+      "source_id": "proof-auto-101"
+    },
+    {
+      "epub_id": "proof-auto-101-caption",
+      "remapped": false,
+      "source_id": "proof-auto-101-caption"
+    },
+    {
+      "epub_id": "proof-auto-102",
+      "remapped": false,
+      "source_id": "proof-auto-102"
+    },
+    {
+      "epub_id": "proof-auto-102-caption",
+      "remapped": false,
+      "source_id": "proof-auto-102-caption"
+    },
+    {
+      "epub_id": "proof-auto-103",
+      "remapped": false,
+      "source_id": "proof-auto-103"
+    },
+    {
+      "epub_id": "proof-auto-103-caption",
+      "remapped": false,
+      "source_id": "proof-auto-103-caption"
+    },
+    {
+      "epub_id": "proof-auto-104",
+      "remapped": false,
+      "source_id": "proof-auto-104"
+    },
+    {
+      "epub_id": "proof-auto-104-caption",
+      "remapped": false,
+      "source_id": "proof-auto-104-caption"
+    },
+    {
+      "epub_id": "proof-auto-105",
+      "remapped": false,
+      "source_id": "proof-auto-105"
+    },
+    {
+      "epub_id": "proof-auto-105-caption",
+      "remapped": false,
+      "source_id": "proof-auto-105-caption"
+    },
+    {
+      "epub_id": "proof-auto-106",
+      "remapped": false,
+      "source_id": "proof-auto-106"
+    },
+    {
+      "epub_id": "proof-auto-106-caption",
+      "remapped": false,
+      "source_id": "proof-auto-106-caption"
+    },
+    {
+      "epub_id": "proof-auto-107",
+      "remapped": false,
+      "source_id": "proof-auto-107"
+    },
+    {
+      "epub_id": "proof-auto-107-caption",
+      "remapped": false,
+      "source_id": "proof-auto-107-caption"
+    },
+    {
+      "epub_id": "proof-auto-108",
+      "remapped": false,
+      "source_id": "proof-auto-108"
+    },
+    {
+      "epub_id": "proof-auto-108-caption",
+      "remapped": false,
+      "source_id": "proof-auto-108-caption"
+    },
+    {
+      "epub_id": "proof-auto-109",
+      "remapped": false,
+      "source_id": "proof-auto-109"
+    },
+    {
+      "epub_id": "proof-auto-109-caption",
+      "remapped": false,
+      "source_id": "proof-auto-109-caption"
+    },
+    {
+      "epub_id": "proof-auto-110",
+      "remapped": false,
+      "source_id": "proof-auto-110"
+    },
+    {
+      "epub_id": "proof-auto-110-caption",
+      "remapped": false,
+      "source_id": "proof-auto-110-caption"
+    },
+    {
+      "epub_id": "proof-auto-111",
+      "remapped": false,
+      "source_id": "proof-auto-111"
+    },
+    {
+      "epub_id": "proof-auto-111-caption",
+      "remapped": false,
+      "source_id": "proof-auto-111-caption"
+    },
+    {
+      "epub_id": "proof-auto-112",
+      "remapped": false,
+      "source_id": "proof-auto-112"
+    },
+    {
+      "epub_id": "proof-auto-112-caption",
+      "remapped": false,
+      "source_id": "proof-auto-112-caption"
+    },
+    {
+      "epub_id": "epub-dad885e9c4267aa03170",
+      "remapped": true,
+      "source_id": "fol:ntd:ptn:sec"
+    },
+    {
+      "epub_id": "epub-782471c7e5dc697f539f",
+      "remapped": true,
+      "source_id": "fol:ntd:ptn:prop:reflexivity"
+    },
+    {
+      "epub_id": "epub-982ad6ccc4fa754d0b4d",
+      "remapped": true,
+      "source_id": "fol:ntd:ptn:prop:monotonicity"
+    },
+    {
+      "epub_id": "epub-8a6632e68643feeb9de6",
+      "remapped": true,
+      "source_id": "fol:ntd:ptn:prop:transitivity"
+    },
+    {
+      "epub_id": "proof-auto-113",
+      "remapped": false,
+      "source_id": "proof-auto-113"
+    },
+    {
+      "epub_id": "proof-auto-113-caption",
+      "remapped": false,
+      "source_id": "proof-auto-113-caption"
+    },
+    {
+      "epub_id": "epub-b7202ac320044bd706db",
+      "remapped": true,
+      "source_id": "fol:ntd:ptn:prop:incons"
+    },
+    {
+      "epub_id": "epub-12de05c45baa6a3d4452",
+      "remapped": true,
+      "source_id": "fol:ntd:ptn:prop:proves-compact"
+    },
+    {
+      "epub_id": "epub-ccb2a23ae11c5d68f936",
+      "remapped": true,
+      "source_id": "fol:ntd:prv:sec"
+    },
+    {
+      "epub_id": "epub-7524921d44f07357a537",
+      "remapped": true,
+      "source_id": "fol:ntd:prv:prop:provability-contr"
+    },
+    {
+      "epub_id": "proof-auto-114",
+      "remapped": false,
+      "source_id": "proof-auto-114"
+    },
+    {
+      "epub_id": "proof-auto-114-caption",
+      "remapped": false,
+      "source_id": "proof-auto-114-caption"
+    },
+    {
+      "epub_id": "epub-3aacb6fd3ad8ebef360f",
+      "remapped": true,
+      "source_id": "fol:ntd:prv:prop:prov-incons"
+    },
+    {
+      "epub_id": "proof-auto-115",
+      "remapped": false,
+      "source_id": "proof-auto-115"
+    },
+    {
+      "epub_id": "proof-auto-115-caption",
+      "remapped": false,
+      "source_id": "proof-auto-115-caption"
+    },
+    {
+      "epub_id": "proof-auto-116",
+      "remapped": false,
+      "source_id": "proof-auto-116"
+    },
+    {
+      "epub_id": "proof-auto-116-caption",
+      "remapped": false,
+      "source_id": "proof-auto-116-caption"
+    },
+    {
+      "epub_id": "epub-9bed211f16abe3dfcc38",
+      "remapped": true,
+      "source_id": "fol:ntd:prv:prop:explicit-inc"
+    },
+    {
+      "epub_id": "proof-auto-117",
+      "remapped": false,
+      "source_id": "proof-auto-117"
+    },
+    {
+      "epub_id": "proof-auto-117-caption",
+      "remapped": false,
+      "source_id": "proof-auto-117-caption"
+    },
+    {
+      "epub_id": "epub-0a7535840ff89c7c352f",
+      "remapped": true,
+      "source_id": "fol:ntd:prv:prop:provability-exhaustive"
+    },
+    {
+      "epub_id": "proof-auto-118",
+      "remapped": false,
+      "source_id": "proof-auto-118"
+    },
+    {
+      "epub_id": "proof-auto-118-caption",
+      "remapped": false,
+      "source_id": "proof-auto-118-caption"
+    },
+    {
+      "epub_id": "epub-62742e434f226f68c08c",
+      "remapped": true,
+      "source_id": "fol:ntd:ppr:sec"
+    },
+    {
+      "epub_id": "epub-4f3eb3668b0724b079d0",
+      "remapped": true,
+      "source_id": "fol:ntd:ppr:prop:provability-land"
+    },
+    {
+      "epub_id": "epub-87c9c36e1415bb988f36",
+      "remapped": true,
+      "source_id": "fol:ntd:ppr:prop:provability-land-left"
+    },
+    {
+      "epub_id": "epub-9f1a51f215004624823f",
+      "remapped": true,
+      "source_id": "fol:ntd:ppr:prop:provability-land-right"
+    },
+    {
+      "epub_id": "proof-auto-119",
+      "remapped": false,
+      "source_id": "proof-auto-119"
+    },
+    {
+      "epub_id": "proof-auto-119-caption",
+      "remapped": false,
+      "source_id": "proof-auto-119-caption"
+    },
+    {
+      "epub_id": "proof-auto-120",
+      "remapped": false,
+      "source_id": "proof-auto-120"
+    },
+    {
+      "epub_id": "proof-auto-120-caption",
+      "remapped": false,
+      "source_id": "proof-auto-120-caption"
+    },
+    {
+      "epub_id": "epub-1e6ee2f2fbb18eb080bc",
+      "remapped": true,
+      "source_id": "fol:ntd:ppr:prop:provability-lor"
+    },
+    {
+      "epub_id": "proof-auto-121",
+      "remapped": false,
+      "source_id": "proof-auto-121"
+    },
+    {
+      "epub_id": "proof-auto-121-caption",
+      "remapped": false,
+      "source_id": "proof-auto-121-caption"
+    },
+    {
+      "epub_id": "proof-auto-122",
+      "remapped": false,
+      "source_id": "proof-auto-122"
+    },
+    {
+      "epub_id": "proof-auto-122-caption",
+      "remapped": false,
+      "source_id": "proof-auto-122-caption"
+    },
+    {
+      "epub_id": "epub-98d69f94b5302e705eff",
+      "remapped": true,
+      "source_id": "fol:ntd:ppr:prop:provability-lif"
+    },
+    {
+      "epub_id": "epub-e0e66ce8912f2c8bd9fa",
+      "remapped": true,
+      "source_id": "fol:ntd:ppr:prop:provability-lif-left"
+    },
+    {
+      "epub_id": "epub-ec5f31b170c4f70136e1",
+      "remapped": true,
+      "source_id": "fol:ntd:ppr:prop:provability-lif-right"
+    },
+    {
+      "epub_id": "proof-auto-123",
+      "remapped": false,
+      "source_id": "proof-auto-123"
+    },
+    {
+      "epub_id": "proof-auto-123-caption",
+      "remapped": false,
+      "source_id": "proof-auto-123-caption"
+    },
+    {
+      "epub_id": "proof-auto-124",
+      "remapped": false,
+      "source_id": "proof-auto-124"
+    },
+    {
+      "epub_id": "proof-auto-124-caption",
+      "remapped": false,
+      "source_id": "proof-auto-124-caption"
+    },
+    {
+      "epub_id": "epub-1c2a629a50ba6b1716fb",
+      "remapped": true,
+      "source_id": "fol:ntd:qpr:sec"
+    },
+    {
+      "epub_id": "epub-0d5baed6e91141f08c62",
+      "remapped": true,
+      "source_id": "fol:ntd:qpr:thm:strong-generalization"
+    },
+    {
+      "epub_id": "epub-61eff08fd37050869499",
+      "remapped": true,
+      "source_id": "fol:ntd:qpr:prop:provability-quantifiers"
+    },
+    {
+      "epub_id": "proof-auto-125",
+      "remapped": false,
+      "source_id": "proof-auto-125"
+    },
+    {
+      "epub_id": "proof-auto-125-caption",
+      "remapped": false,
+      "source_id": "proof-auto-125-caption"
+    },
+    {
+      "epub_id": "proof-auto-126",
+      "remapped": false,
+      "source_id": "proof-auto-126"
+    },
+    {
+      "epub_id": "proof-auto-126-caption",
+      "remapped": false,
+      "source_id": "proof-auto-126-caption"
+    },
+    {
+      "epub_id": "epub-7c129944b3ed6b2b7f4a",
+      "remapped": true,
+      "source_id": "fol:ntd:sou:sec"
+    },
+    {
+      "epub_id": "epub-77ce0c968b3e7d735cfc",
+      "remapped": true,
+      "source_id": "fol:ntd:sou:thm:soundness"
+    },
+    {
+      "epub_id": "proof-auto-127",
+      "remapped": false,
+      "source_id": "proof-auto-127"
+    },
+    {
+      "epub_id": "proof-auto-127-caption",
+      "remapped": false,
+      "source_id": "proof-auto-127-caption"
+    },
+    {
+      "epub_id": "proof-auto-128",
+      "remapped": false,
+      "source_id": "proof-auto-128"
+    },
+    {
+      "epub_id": "proof-auto-128-caption",
+      "remapped": false,
+      "source_id": "proof-auto-128-caption"
+    },
+    {
+      "epub_id": "proof-auto-129",
+      "remapped": false,
+      "source_id": "proof-auto-129"
+    },
+    {
+      "epub_id": "proof-auto-129-caption",
+      "remapped": false,
+      "source_id": "proof-auto-129-caption"
+    },
+    {
+      "epub_id": "proof-auto-130",
+      "remapped": false,
+      "source_id": "proof-auto-130"
+    },
+    {
+      "epub_id": "proof-auto-130-caption",
+      "remapped": false,
+      "source_id": "proof-auto-130-caption"
+    },
+    {
+      "epub_id": "proof-auto-131",
+      "remapped": false,
+      "source_id": "proof-auto-131"
+    },
+    {
+      "epub_id": "proof-auto-131-caption",
+      "remapped": false,
+      "source_id": "proof-auto-131-caption"
+    },
+    {
+      "epub_id": "proof-auto-132",
+      "remapped": false,
+      "source_id": "proof-auto-132"
+    },
+    {
+      "epub_id": "proof-auto-132-caption",
+      "remapped": false,
+      "source_id": "proof-auto-132-caption"
+    },
+    {
+      "epub_id": "proof-auto-133",
+      "remapped": false,
+      "source_id": "proof-auto-133"
+    },
+    {
+      "epub_id": "proof-auto-133-caption",
+      "remapped": false,
+      "source_id": "proof-auto-133-caption"
+    },
+    {
+      "epub_id": "proof-auto-134",
+      "remapped": false,
+      "source_id": "proof-auto-134"
+    },
+    {
+      "epub_id": "proof-auto-134-caption",
+      "remapped": false,
+      "source_id": "proof-auto-134-caption"
+    },
+    {
+      "epub_id": "epub-a07a491e34e4afe72908",
+      "remapped": true,
+      "source_id": "fol:ntd:sou:cor:weak-soundness"
+    },
+    {
+      "epub_id": "epub-492215b9b2b83015bf7e",
+      "remapped": true,
+      "source_id": "fol:ntd:sou:cor:consistency-soundness"
+    },
+    {
+      "epub_id": "epub-983bd4ee36b5a9b0e479",
+      "remapped": true,
+      "source_id": "fol:ntd:ide:sec"
+    },
+    {
+      "epub_id": "proof-auto-135",
+      "remapped": false,
+      "source_id": "proof-auto-135"
+    },
+    {
+      "epub_id": "proof-auto-135-caption",
+      "remapped": false,
+      "source_id": "proof-auto-135-caption"
+    },
+    {
+      "epub_id": "proof-auto-136",
+      "remapped": false,
+      "source_id": "proof-auto-136"
+    },
+    {
+      "epub_id": "proof-auto-136-caption",
+      "remapped": false,
+      "source_id": "proof-auto-136-caption"
+    },
+    {
+      "epub_id": "proof-auto-137",
+      "remapped": false,
+      "source_id": "proof-auto-137"
+    },
+    {
+      "epub_id": "proof-auto-137-caption",
+      "remapped": false,
+      "source_id": "proof-auto-137-caption"
+    },
+    {
+      "epub_id": "proof-auto-138",
+      "remapped": false,
+      "source_id": "proof-auto-138"
+    },
+    {
+      "epub_id": "proof-auto-138-caption",
+      "remapped": false,
+      "source_id": "proof-auto-138-caption"
+    },
+    {
+      "epub_id": "proof-auto-139",
+      "remapped": false,
+      "source_id": "proof-auto-139"
+    },
+    {
+      "epub_id": "proof-auto-139-caption",
+      "remapped": false,
+      "source_id": "proof-auto-139-caption"
+    },
+    {
+      "epub_id": "epub-e8977d23b1c36bbd5c8a",
+      "remapped": true,
+      "source_id": "fol:ntd:sid:sec"
+    },
+    {
+      "epub_id": "proof-auto-140",
+      "remapped": false,
+      "source_id": "proof-auto-140"
+    },
+    {
+      "epub_id": "proof-auto-140-caption",
+      "remapped": false,
+      "source_id": "proof-auto-140-caption"
+    },
+    {
+      "epub_id": "epub-2c90a46c54745a1d758e",
+      "remapped": true,
+      "source_id": "fol:tab::chap"
+    },
+    {
+      "epub_id": "epub-3de3e0e106498f1c973c",
+      "remapped": true,
+      "source_id": "fol:tab:rul:sec"
+    },
+    {
+      "epub_id": "epub-272ef69d0058f74afd08",
+      "remapped": true,
+      "source_id": "fol:tab:prl:sec"
+    },
+    {
+      "epub_id": "epub-3896d7c7057ae2f2be19",
+      "remapped": true,
+      "source_id": "lnot-सठच-नयम-2"
+    },
+    {
+      "epub_id": "proof-auto-141",
+      "remapped": false,
+      "source_id": "proof-auto-141"
+    },
+    {
+      "epub_id": "proof-auto-141-caption",
+      "remapped": false,
+      "source_id": "proof-auto-141-caption"
+    },
+    {
+      "epub_id": "epub-fe273c8f730c48d974ac",
+      "remapped": true,
+      "source_id": "land-सठच-नयम-2"
+    },
+    {
+      "epub_id": "proof-auto-142",
+      "remapped": false,
+      "source_id": "proof-auto-142"
+    },
+    {
+      "epub_id": "proof-auto-142-caption",
+      "remapped": false,
+      "source_id": "proof-auto-142-caption"
+    },
+    {
+      "epub_id": "epub-56964bb519210c06a1d8",
+      "remapped": true,
+      "source_id": "lor-सठच-नयम-2"
+    },
+    {
+      "epub_id": "proof-auto-143",
+      "remapped": false,
+      "source_id": "proof-auto-143"
+    },
+    {
+      "epub_id": "proof-auto-143-caption",
+      "remapped": false,
+      "source_id": "proof-auto-143-caption"
+    },
+    {
+      "epub_id": "epub-d989ea96f0738e245d92",
+      "remapped": true,
+      "source_id": "to-सठच-नयम-2"
+    },
+    {
+      "epub_id": "proof-auto-144",
+      "remapped": false,
+      "source_id": "proof-auto-144"
+    },
+    {
+      "epub_id": "proof-auto-144-caption",
+      "remapped": false,
+      "source_id": "proof-auto-144-caption"
+    },
+    {
+      "epub_id": "epub-08ceb05a284293817513",
+      "remapped": true,
+      "source_id": "कट-नयम"
+    },
+    {
+      "epub_id": "proof-auto-145",
+      "remapped": false,
+      "source_id": "proof-auto-145"
+    },
+    {
+      "epub_id": "proof-auto-145-caption",
+      "remapped": false,
+      "source_id": "proof-auto-145-caption"
+    },
+    {
+      "epub_id": "epub-a1c296efa9d7b1f3323a",
+      "remapped": true,
+      "source_id": "fol:tab:qrl:sec"
+    },
+    {
+      "epub_id": "epub-de0821e3ed5406e70fac",
+      "remapped": true,
+      "source_id": "forall-सठच-नयम-2"
+    },
+    {
+      "epub_id": "proof-auto-146",
+      "remapped": false,
+      "source_id": "proof-auto-146"
+    },
+    {
+      "epub_id": "proof-auto-146-caption",
+      "remapped": false,
+      "source_id": "proof-auto-146-caption"
+    },
+    {
+      "epub_id": "fnref12",
+      "remapped": false,
+      "source_id": "fnref12"
+    },
+    {
+      "epub_id": "epub-2b2640d863cad1516f6a",
+      "remapped": true,
+      "source_id": "exists-सठच-नयम-2"
+    },
+    {
+      "epub_id": "proof-auto-147",
+      "remapped": false,
+      "source_id": "proof-auto-147"
+    },
+    {
+      "epub_id": "proof-auto-147-caption",
+      "remapped": false,
+      "source_id": "proof-auto-147-caption"
+    },
+    {
+      "epub_id": "proof-auto-148",
+      "remapped": false,
+      "source_id": "proof-auto-148"
+    },
+    {
+      "epub_id": "proof-auto-148-caption",
+      "remapped": false,
+      "source_id": "proof-auto-148-caption"
+    },
+    {
+      "epub_id": "proof-auto-149",
+      "remapped": false,
+      "source_id": "proof-auto-149"
+    },
+    {
+      "epub_id": "proof-auto-149-caption",
+      "remapped": false,
+      "source_id": "proof-auto-149-caption"
+    },
+    {
+      "epub_id": "epub-3f8fcd7b6c497c8b8ff0",
+      "remapped": true,
+      "source_id": "fol:tab:der:sec"
+    },
+    {
+      "epub_id": "proof-auto-150",
+      "remapped": false,
+      "source_id": "proof-auto-150"
+    },
+    {
+      "epub_id": "proof-auto-150-caption",
+      "remapped": false,
+      "source_id": "proof-auto-150-caption"
+    },
+    {
+      "epub_id": "proof-auto-151",
+      "remapped": false,
+      "source_id": "proof-auto-151"
+    },
+    {
+      "epub_id": "proof-auto-151-caption",
+      "remapped": false,
+      "source_id": "proof-auto-151-caption"
+    },
+    {
+      "epub_id": "proof-auto-152",
+      "remapped": false,
+      "source_id": "proof-auto-152"
+    },
+    {
+      "epub_id": "proof-auto-152-caption",
+      "remapped": false,
+      "source_id": "proof-auto-152-caption"
+    },
+    {
+      "epub_id": "epub-2665142a6dec901c48a9",
+      "remapped": true,
+      "source_id": "fol:tab:pro:sec"
+    },
+    {
+      "epub_id": "proof-auto-153",
+      "remapped": false,
+      "source_id": "proof-auto-153"
+    },
+    {
+      "epub_id": "proof-auto-153-caption",
+      "remapped": false,
+      "source_id": "proof-auto-153-caption"
+    },
+    {
+      "epub_id": "proof-auto-154",
+      "remapped": false,
+      "source_id": "proof-auto-154"
+    },
+    {
+      "epub_id": "proof-auto-154-caption",
+      "remapped": false,
+      "source_id": "proof-auto-154-caption"
+    },
+    {
+      "epub_id": "proof-auto-155",
+      "remapped": false,
+      "source_id": "proof-auto-155"
+    },
+    {
+      "epub_id": "proof-auto-155-caption",
+      "remapped": false,
+      "source_id": "proof-auto-155-caption"
+    },
+    {
+      "epub_id": "proof-auto-156",
+      "remapped": false,
+      "source_id": "proof-auto-156"
+    },
+    {
+      "epub_id": "proof-auto-156-caption",
+      "remapped": false,
+      "source_id": "proof-auto-156-caption"
+    },
+    {
+      "epub_id": "proof-auto-157",
+      "remapped": false,
+      "source_id": "proof-auto-157"
+    },
+    {
+      "epub_id": "proof-auto-157-caption",
+      "remapped": false,
+      "source_id": "proof-auto-157-caption"
+    },
+    {
+      "epub_id": "proof-auto-158",
+      "remapped": false,
+      "source_id": "proof-auto-158"
+    },
+    {
+      "epub_id": "proof-auto-158-caption",
+      "remapped": false,
+      "source_id": "proof-auto-158-caption"
+    },
+    {
+      "epub_id": "proof-auto-159",
+      "remapped": false,
+      "source_id": "proof-auto-159"
+    },
+    {
+      "epub_id": "proof-auto-159-caption",
+      "remapped": false,
+      "source_id": "proof-auto-159-caption"
+    },
+    {
+      "epub_id": "proof-auto-160",
+      "remapped": false,
+      "source_id": "proof-auto-160"
+    },
+    {
+      "epub_id": "proof-auto-160-caption",
+      "remapped": false,
+      "source_id": "proof-auto-160-caption"
+    },
+    {
+      "epub_id": "proof-auto-161",
+      "remapped": false,
+      "source_id": "proof-auto-161"
+    },
+    {
+      "epub_id": "proof-auto-161-caption",
+      "remapped": false,
+      "source_id": "proof-auto-161-caption"
+    },
+    {
+      "epub_id": "proof-auto-162",
+      "remapped": false,
+      "source_id": "proof-auto-162"
+    },
+    {
+      "epub_id": "proof-auto-162-caption",
+      "remapped": false,
+      "source_id": "proof-auto-162-caption"
+    },
+    {
+      "epub_id": "proof-auto-163",
+      "remapped": false,
+      "source_id": "proof-auto-163"
+    },
+    {
+      "epub_id": "proof-auto-163-caption",
+      "remapped": false,
+      "source_id": "proof-auto-163-caption"
+    },
+    {
+      "epub_id": "proof-auto-164",
+      "remapped": false,
+      "source_id": "proof-auto-164"
+    },
+    {
+      "epub_id": "proof-auto-164-caption",
+      "remapped": false,
+      "source_id": "proof-auto-164-caption"
+    },
+    {
+      "epub_id": "proof-auto-165",
+      "remapped": false,
+      "source_id": "proof-auto-165"
+    },
+    {
+      "epub_id": "proof-auto-165-caption",
+      "remapped": false,
+      "source_id": "proof-auto-165-caption"
+    },
+    {
+      "epub_id": "proof-auto-166",
+      "remapped": false,
+      "source_id": "proof-auto-166"
+    },
+    {
+      "epub_id": "proof-auto-166-caption",
+      "remapped": false,
+      "source_id": "proof-auto-166-caption"
+    },
+    {
+      "epub_id": "epub-01184ef53503e00c0714",
+      "remapped": true,
+      "source_id": "fol:tab:prq:sec"
+    },
+    {
+      "epub_id": "proof-auto-167",
+      "remapped": false,
+      "source_id": "proof-auto-167"
+    },
+    {
+      "epub_id": "proof-auto-167-caption",
+      "remapped": false,
+      "source_id": "proof-auto-167-caption"
+    },
+    {
+      "epub_id": "proof-auto-168",
+      "remapped": false,
+      "source_id": "proof-auto-168"
+    },
+    {
+      "epub_id": "proof-auto-168-caption",
+      "remapped": false,
+      "source_id": "proof-auto-168-caption"
+    },
+    {
+      "epub_id": "proof-auto-169",
+      "remapped": false,
+      "source_id": "proof-auto-169"
+    },
+    {
+      "epub_id": "proof-auto-169-caption",
+      "remapped": false,
+      "source_id": "proof-auto-169-caption"
+    },
+    {
+      "epub_id": "proof-auto-170",
+      "remapped": false,
+      "source_id": "proof-auto-170"
+    },
+    {
+      "epub_id": "proof-auto-170-caption",
+      "remapped": false,
+      "source_id": "proof-auto-170-caption"
+    },
+    {
+      "epub_id": "proof-auto-171",
+      "remapped": false,
+      "source_id": "proof-auto-171"
+    },
+    {
+      "epub_id": "proof-auto-171-caption",
+      "remapped": false,
+      "source_id": "proof-auto-171-caption"
+    },
+    {
+      "epub_id": "proof-auto-172",
+      "remapped": false,
+      "source_id": "proof-auto-172"
+    },
+    {
+      "epub_id": "proof-auto-172-caption",
+      "remapped": false,
+      "source_id": "proof-auto-172-caption"
+    },
+    {
+      "epub_id": "proof-auto-173",
+      "remapped": false,
+      "source_id": "proof-auto-173"
+    },
+    {
+      "epub_id": "proof-auto-173-caption",
+      "remapped": false,
+      "source_id": "proof-auto-173-caption"
+    },
+    {
+      "epub_id": "proof-auto-174",
+      "remapped": false,
+      "source_id": "proof-auto-174"
+    },
+    {
+      "epub_id": "proof-auto-174-caption",
+      "remapped": false,
+      "source_id": "proof-auto-174-caption"
+    },
+    {
+      "epub_id": "proof-auto-175",
+      "remapped": false,
+      "source_id": "proof-auto-175"
+    },
+    {
+      "epub_id": "proof-auto-175-caption",
+      "remapped": false,
+      "source_id": "proof-auto-175-caption"
+    },
+    {
+      "epub_id": "proof-auto-176",
+      "remapped": false,
+      "source_id": "proof-auto-176"
+    },
+    {
+      "epub_id": "proof-auto-176-caption",
+      "remapped": false,
+      "source_id": "proof-auto-176-caption"
+    },
+    {
+      "epub_id": "proof-auto-177",
+      "remapped": false,
+      "source_id": "proof-auto-177"
+    },
+    {
+      "epub_id": "proof-auto-177-caption",
+      "remapped": false,
+      "source_id": "proof-auto-177-caption"
+    },
+    {
+      "epub_id": "proof-auto-178",
+      "remapped": false,
+      "source_id": "proof-auto-178"
+    },
+    {
+      "epub_id": "proof-auto-178-caption",
+      "remapped": false,
+      "source_id": "proof-auto-178-caption"
+    },
+    {
+      "epub_id": "proof-auto-179",
+      "remapped": false,
+      "source_id": "proof-auto-179"
+    },
+    {
+      "epub_id": "proof-auto-179-caption",
+      "remapped": false,
+      "source_id": "proof-auto-179-caption"
+    },
+    {
+      "epub_id": "proof-auto-180",
+      "remapped": false,
+      "source_id": "proof-auto-180"
+    },
+    {
+      "epub_id": "proof-auto-180-caption",
+      "remapped": false,
+      "source_id": "proof-auto-180-caption"
+    },
+    {
+      "epub_id": "proof-auto-181",
+      "remapped": false,
+      "source_id": "proof-auto-181"
+    },
+    {
+      "epub_id": "proof-auto-181-caption",
+      "remapped": false,
+      "source_id": "proof-auto-181-caption"
+    },
+    {
+      "epub_id": "epub-8ecf721d8df321bdc9ce",
+      "remapped": true,
+      "source_id": "fol:tab:ptn:sec"
+    },
+    {
+      "epub_id": "epub-7df3f3e94500915945cd",
+      "remapped": true,
+      "source_id": "fol:tab:ptn:prop:reflexivity"
+    },
+    {
+      "epub_id": "proof-auto-182",
+      "remapped": false,
+      "source_id": "proof-auto-182"
+    },
+    {
+      "epub_id": "proof-auto-182-caption",
+      "remapped": false,
+      "source_id": "proof-auto-182-caption"
+    },
+    {
+      "epub_id": "epub-857055093e4ab9aa5114",
+      "remapped": true,
+      "source_id": "fol:tab:ptn:prop:monotonicity"
+    },
+    {
+      "epub_id": "epub-92be776191f3ec34b44b",
+      "remapped": true,
+      "source_id": "fol:tab:ptn:prop:transitivity"
+    },
+    {
+      "epub_id": "epub-4bdb9a0518d3129ae500",
+      "remapped": true,
+      "source_id": "fol:tab:ptn:prop:incons"
+    },
+    {
+      "epub_id": "epub-54dc91e348b7bb14077c",
+      "remapped": true,
+      "source_id": "fol:tab:ptn:prop:proves-compact"
+    },
+    {
+      "epub_id": "epub-2efcbba70538a4afbb28",
+      "remapped": true,
+      "source_id": "fol:tab:prv:sec"
+    },
+    {
+      "epub_id": "epub-0c9fc177bca835f480f7",
+      "remapped": true,
+      "source_id": "fol:tab:prv:prop:provability-contr"
+    },
+    {
+      "epub_id": "epub-03b2d6bb1a37e635f773",
+      "remapped": true,
+      "source_id": "fol:tab:prv:prop:prov-incons"
+    },
+    {
+      "epub_id": "epub-24bd34ef1c6faa7abd0f",
+      "remapped": true,
+      "source_id": "fol:tab:prv:prop:explicit-inc"
+    },
+    {
+      "epub_id": "epub-d56774738f356defcf99",
+      "remapped": true,
+      "source_id": "fol:tab:prv:prop:provability-exhaustive"
+    },
+    {
+      "epub_id": "epub-01e0d255a29a751e21ba",
+      "remapped": true,
+      "source_id": "fol:tab:ppr:sec"
+    },
+    {
+      "epub_id": "epub-9333178740c9d228a31e",
+      "remapped": true,
+      "source_id": "fol:tab:ppr:prop:provability-land"
+    },
+    {
+      "epub_id": "epub-756139ea5e13bc281cc4",
+      "remapped": true,
+      "source_id": "fol:tab:ppr:prop:provability-land-left"
+    },
+    {
+      "epub_id": "epub-035a9d9b755d69ce919f",
+      "remapped": true,
+      "source_id": "fol:tab:ppr:prop:provability-land-right"
+    },
+    {
+      "epub_id": "proof-auto-183",
+      "remapped": false,
+      "source_id": "proof-auto-183"
+    },
+    {
+      "epub_id": "proof-auto-183-caption",
+      "remapped": false,
+      "source_id": "proof-auto-183-caption"
+    },
+    {
+      "epub_id": "proof-auto-184",
+      "remapped": false,
+      "source_id": "proof-auto-184"
+    },
+    {
+      "epub_id": "proof-auto-184-caption",
+      "remapped": false,
+      "source_id": "proof-auto-184-caption"
+    },
+    {
+      "epub_id": "proof-auto-185",
+      "remapped": false,
+      "source_id": "proof-auto-185"
+    },
+    {
+      "epub_id": "proof-auto-185-caption",
+      "remapped": false,
+      "source_id": "proof-auto-185-caption"
+    },
+    {
+      "epub_id": "epub-cd4835461e8061632dad",
+      "remapped": true,
+      "source_id": "fol:tab:ppr:prop:provability-lor"
+    },
+    {
+      "epub_id": "proof-auto-186",
+      "remapped": false,
+      "source_id": "proof-auto-186"
+    },
+    {
+      "epub_id": "proof-auto-186-caption",
+      "remapped": false,
+      "source_id": "proof-auto-186-caption"
+    },
+    {
+      "epub_id": "proof-auto-187",
+      "remapped": false,
+      "source_id": "proof-auto-187"
+    },
+    {
+      "epub_id": "proof-auto-187-caption",
+      "remapped": false,
+      "source_id": "proof-auto-187-caption"
+    },
+    {
+      "epub_id": "proof-auto-188",
+      "remapped": false,
+      "source_id": "proof-auto-188"
+    },
+    {
+      "epub_id": "proof-auto-188-caption",
+      "remapped": false,
+      "source_id": "proof-auto-188-caption"
+    },
+    {
+      "epub_id": "epub-32613e3fde61bf88aadc",
+      "remapped": true,
+      "source_id": "fol:tab:ppr:prop:provability-lif"
+    },
+    {
+      "epub_id": "epub-ee711c4d8a14e5f86d11",
+      "remapped": true,
+      "source_id": "fol:tab:ppr:prop:provability-lif-left"
+    },
+    {
+      "epub_id": "epub-175b6e7550358545bc2e",
+      "remapped": true,
+      "source_id": "fol:tab:ppr:prop:provability-lif-right"
+    },
+    {
+      "epub_id": "proof-auto-189",
+      "remapped": false,
+      "source_id": "proof-auto-189"
+    },
+    {
+      "epub_id": "proof-auto-189-caption",
+      "remapped": false,
+      "source_id": "proof-auto-189-caption"
+    },
+    {
+      "epub_id": "proof-auto-190",
+      "remapped": false,
+      "source_id": "proof-auto-190"
+    },
+    {
+      "epub_id": "proof-auto-190-caption",
+      "remapped": false,
+      "source_id": "proof-auto-190-caption"
+    },
+    {
+      "epub_id": "proof-auto-191",
+      "remapped": false,
+      "source_id": "proof-auto-191"
+    },
+    {
+      "epub_id": "proof-auto-191-caption",
+      "remapped": false,
+      "source_id": "proof-auto-191-caption"
+    },
+    {
+      "epub_id": "epub-c065fd13bc409c4bd04a",
+      "remapped": true,
+      "source_id": "fol:tab:qpr:sec"
+    },
+    {
+      "epub_id": "epub-ab523b466bea91c7f20c",
+      "remapped": true,
+      "source_id": "fol:tab:qpr:thm:strong-generalization"
+    },
+    {
+      "epub_id": "proof-auto-192",
+      "remapped": false,
+      "source_id": "proof-auto-192"
+    },
+    {
+      "epub_id": "proof-auto-192-caption",
+      "remapped": false,
+      "source_id": "proof-auto-192-caption"
+    },
+    {
+      "epub_id": "proof-auto-193",
+      "remapped": false,
+      "source_id": "proof-auto-193"
+    },
+    {
+      "epub_id": "proof-auto-193-caption",
+      "remapped": false,
+      "source_id": "proof-auto-193-caption"
+    },
+    {
+      "epub_id": "epub-d31ba1693d3e730224f6",
+      "remapped": true,
+      "source_id": "fol:tab:qpr:prop:provability-quantifiers"
+    },
+    {
+      "epub_id": "proof-auto-194",
+      "remapped": false,
+      "source_id": "proof-auto-194"
+    },
+    {
+      "epub_id": "proof-auto-194-caption",
+      "remapped": false,
+      "source_id": "proof-auto-194-caption"
+    },
+    {
+      "epub_id": "proof-auto-195",
+      "remapped": false,
+      "source_id": "proof-auto-195"
+    },
+    {
+      "epub_id": "proof-auto-195-caption",
+      "remapped": false,
+      "source_id": "proof-auto-195-caption"
+    },
+    {
+      "epub_id": "epub-c8e5afd7fe2142bc0f25",
+      "remapped": true,
+      "source_id": "fol:tab:sou:sec"
+    },
+    {
+      "epub_id": "epub-0028ac38892885c94d5d",
+      "remapped": true,
+      "source_id": "fol:tab:sou:thm:tableau-soundness"
+    },
+    {
+      "epub_id": "epub-ede4c6e90de9f2e32081",
+      "remapped": true,
+      "source_id": "fol:tab:sou:cor:weak-soundness"
+    },
+    {
+      "epub_id": "epub-58eb2ad3e9a8ccb034a5",
+      "remapped": true,
+      "source_id": "fol:tab:sou:cor:entailment-soundness"
+    },
+    {
+      "epub_id": "epub-f3d253a1619d2b2174f3",
+      "remapped": true,
+      "source_id": "fol:tab:sou:cor:consistency-soundness"
+    },
+    {
+      "epub_id": "epub-8772fee939b991d25483",
+      "remapped": true,
+      "source_id": "fol:tab:ide:sec"
+    },
+    {
+      "epub_id": "proof-auto-196",
+      "remapped": false,
+      "source_id": "proof-auto-196"
+    },
+    {
+      "epub_id": "proof-auto-196-caption",
+      "remapped": false,
+      "source_id": "proof-auto-196-caption"
+    },
+    {
+      "epub_id": "proof-auto-197",
+      "remapped": false,
+      "source_id": "proof-auto-197"
+    },
+    {
+      "epub_id": "proof-auto-197-caption",
+      "remapped": false,
+      "source_id": "proof-auto-197-caption"
+    },
+    {
+      "epub_id": "proof-auto-198",
+      "remapped": false,
+      "source_id": "proof-auto-198"
+    },
+    {
+      "epub_id": "proof-auto-198-caption",
+      "remapped": false,
+      "source_id": "proof-auto-198-caption"
+    },
+    {
+      "epub_id": "proof-auto-199",
+      "remapped": false,
+      "source_id": "proof-auto-199"
+    },
+    {
+      "epub_id": "proof-auto-199-caption",
+      "remapped": false,
+      "source_id": "proof-auto-199-caption"
+    },
+    {
+      "epub_id": "epub-8feab43223a78db64ed0",
+      "remapped": true,
+      "source_id": "fol:tab:sid:sec"
+    },
+    {
+      "epub_id": "epub-598b33b94ff511ee5604",
+      "remapped": true,
+      "source_id": "सरतवरल-सपदकय-नद"
+    },
+    {
+      "epub_id": "epub-bcdea22287adeb5319cb",
+      "remapped": true,
+      "source_id": "सदरभ"
+    },
+    {
+      "epub_id": "epub-914311aa60167331a95e",
+      "remapped": true,
+      "source_id": "bib:Benacerraf1965"
+    },
+    {
+      "epub_id": "footnotes",
+      "remapped": false,
+      "source_id": "footnotes"
+    },
+    {
+      "epub_id": "fn1",
+      "remapped": false,
+      "source_id": "fn1"
+    },
+    {
+      "epub_id": "fn2",
+      "remapped": false,
+      "source_id": "fn2"
+    },
+    {
+      "epub_id": "fn3",
+      "remapped": false,
+      "source_id": "fn3"
+    },
+    {
+      "epub_id": "fn4",
+      "remapped": false,
+      "source_id": "fn4"
+    },
+    {
+      "epub_id": "fn5",
+      "remapped": false,
+      "source_id": "fn5"
+    },
+    {
+      "epub_id": "fn6",
+      "remapped": false,
+      "source_id": "fn6"
+    },
+    {
+      "epub_id": "fn7",
+      "remapped": false,
+      "source_id": "fn7"
+    },
+    {
+      "epub_id": "fn8",
+      "remapped": false,
+      "source_id": "fn8"
+    },
+    {
+      "epub_id": "fn9",
+      "remapped": false,
+      "source_id": "fn9"
+    },
+    {
+      "epub_id": "fn10",
+      "remapped": false,
+      "source_id": "fn10"
+    },
+    {
+      "epub_id": "fn11",
+      "remapped": false,
+      "source_id": "fn11"
+    },
+    {
+      "epub_id": "fn12",
+      "remapped": false,
+      "source_id": "fn12"
+    }
+  ],
+  "release": "eleven-chapters-v0.8.1",
+  "remapped": 415,
+  "schema": "openlogic-marathi-epub-id-crosswalk/1",
+  "source_reader": {
+    "path": "reader/eleven-chapters/index.html",
+    "sha256": "a8b64bd67948cb5cf5ffbf05aeaf4901a23244268371ea41d506374f6d9ecffe"
+  }
+}

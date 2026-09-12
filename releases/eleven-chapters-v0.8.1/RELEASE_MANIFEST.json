@@ -1,0 +1,125 @@
+{
+  "schema": "openlogic-release-manifest/1",
+  "release": "eleven-chapters-v0.8.1",
+  "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "release_kind": "format addition to eleven-chapters-v0.8",
+  "coverage": {
+    "translated_source_units": 108,
+    "total_source_units": 722,
+    "remaining_source_units": 614,
+    "aligned_content_segments": 1149,
+    "reader_sections": 96,
+    "complete_chapters": 11,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0111",
+    "complete_edition": false
+  },
+  "reader": {
+    "pdf_pages": 157,
+    "native_mathml": 6544,
+    "semantic_proof_figures": 202,
+    "proof_formula_rows": 990
+  },
+  "formats": {
+    "pdf": "fixed-layout reading copy",
+    "epub": "reflowable EPUB 3 with native MathML",
+    "html": "offline semantic HTML reader",
+    "tex": "assembled TeX reader",
+    "editable_sources": "aligned Marathi and frozen English sources",
+    "review": "translation decisions and review evidence"
+  },
+  "assets": [
+    {
+      "filename": "openlogic-mr-eleven-chapters.pdf",
+      "source_path": "releases/eleven-chapters-v0.8/openlogic-mr-eleven-chapters.pdf",
+      "bytes": 684717,
+      "sha256": "bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450",
+      "inherited_unchanged_from": "eleven-chapters-v0.8",
+      "zenodo_preview": true
+    },
+    {
+      "filename": "openlogic-mr-eleven-chapters.epub",
+      "source_path": "releases/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub",
+      "bytes": 1481457,
+      "sha256": "3c259bc80aa9078a7b42b0b3778fcb19b84088818f00263696e906d980884777",
+      "format": "EPUB 3",
+      "rendition": "reflowable",
+      "language": "mr-Deva-IN"
+    },
+    {
+      "filename": "openlogic-mr-eleven-chapters.tex",
+      "source_path": "releases/eleven-chapters-v0.8/openlogic-mr-eleven-chapters.tex",
+      "bytes": 863854,
+      "sha256": "ad124e9439421f9a82d94d24af7ca6f064342a877e3286975c596ce5e07f81e2",
+      "inherited_unchanged_from": "eleven-chapters-v0.8"
+    },
+    {
+      "filename": "openlogic-mr-eleven-chapters-html.zip",
+      "source_path": "releases/eleven-chapters-v0.8/openlogic-mr-eleven-chapters-html.zip",
+      "bytes": 1459755,
+      "sha256": "767cbae8fa999f390b254fd7fe5ddaeee18b1db76243872ac0bd8fbd50b629f1",
+      "inherited_unchanged_from": "eleven-chapters-v0.8"
+    },
+    {
+      "filename": "openlogic-mr-eleven-chapters-review.zip",
+      "source_path": "releases/eleven-chapters-v0.8/openlogic-mr-eleven-chapters-review.zip",
+      "bytes": 7133504,
+      "sha256": "e17271701f9a25fb7f2659a0e7e39b24dce7421fbca72f8e8cf2d5f775a0dbc6",
+      "inherited_unchanged_from": "eleven-chapters-v0.8"
+    },
+    {
+      "filename": "openlogic-mr-eleven-chapters-editable-sources.zip",
+      "source_path": "releases/eleven-chapters-v0.8/openlogic-mr-eleven-chapters-editable-sources.zip",
+      "bytes": 23576820,
+      "sha256": "7aa0a15897c88819efd671c48b44b62cbe739584bcccf506af159792adc09483",
+      "inherited_unchanged_from": "eleven-chapters-v0.8"
+    }
+  ],
+  "epub_evidence": {
+    "build_receipt": {
+      "path": "provenance/eleven-chapters-v0.8.1/EPUB_BUILD_RECEIPT.json",
+      "bytes": 6101,
+      "sha256": "80d7c9cdc65c247ea1d9973cbf9e9e841bce82fe8690a3b83bd87630b022eefd"
+    },
+    "id_crosswalk": {
+      "path": "provenance/eleven-chapters-v0.8.1/EPUB_ID_CROSSWALK.json",
+      "bytes": 105502,
+      "sha256": "c87ab7accb1de9ff25a97e875786509a87faf6c68e66364be37047f08830240a",
+      "source_ids": 861,
+      "remapped_ids": 415
+    },
+    "structural_qa": {
+      "path": "provenance/eleven-chapters-v0.8.1/EPUB_QA.json",
+      "bytes": 1705,
+      "sha256": "65dc5defdade013f1f9a615e33f09bb814a532dafbb394dd9dc808f8a881f5c1",
+      "checks": 11696,
+      "failures": 0
+    },
+    "epubcheck": {
+      "path": "provenance/eleven-chapters-v0.8.1/EPUBCHECK.json",
+      "bytes": 99830,
+      "sha256": "88aac7b7436ecaaae209c4dee678f7fe602fdb5ffec903443b4b812a66c274e1",
+      "version": "5.3.0",
+      "messages": 0
+    },
+    "visual_qa": {
+      "path": "provenance/eleven-chapters-v0.8.1/EPUB_VISUAL_QA.json",
+      "bytes": 3722,
+      "sha256": "b2eaef3106968504543ca9ca508e1febc4023a54aadead1f3e8602d688444b25",
+      "representative_pages": 7,
+      "render_engine": "Calibre 9.11.0"
+    }
+  },
+  "source_release_manifest": {
+    "path": "releases/eleven-chapters-v0.8/RELEASE_MANIFEST.json",
+    "sha256": "7c495bf395a8636b1205e37e85e4dd4641cfb109f515b2066dd439c2cf1fc9be"
+  },
+  "source_checkpoint": {
+    "path": "provenance/source-checkpoint-108/SOURCE_CHECKPOINT.json",
+    "bytes": 27994,
+    "sha256": "557ca0195fccc483266c25388c4e72bbebad03e5c796d3750a769d1c67707da3"
+  },
+  "format_addition_only": true,
+  "full_edition_complete": false
+}

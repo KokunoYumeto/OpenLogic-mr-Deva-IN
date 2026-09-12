@@ -1,0 +1,70 @@
+{
+  "schema": "openlogic-release-qa/1",
+  "status": "passed-for-publication",
+  "release": "eleven-chapters-v0.8.1",
+  "date": "2026-09-13",
+  "release_kind": "format addition to eleven-chapters-v0.8",
+  "coverage": {
+    "translated_source_units": 108,
+    "total_source_units": 722,
+    "remaining_source_units": 614,
+    "aligned_content_segments": 1149,
+    "reader_sections": 96,
+    "complete_chapters": 11,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0111",
+    "complete_edition": false
+  },
+  "release_manifest": {
+    "path": "releases/eleven-chapters-v0.8.1/RELEASE_MANIFEST.json",
+    "bytes": 4808,
+    "sha256": "2f4a807b5339bfc58315d59f3f2166346204822b8294fa46630c64ade857e1ed"
+  },
+  "checksums": {
+    "path": "releases/eleven-chapters-v0.8.1/SHA256SUMS.txt",
+    "bytes": 712,
+    "sha256": "f20413bd06be8b7c4fa1c5a022a792aad4c7fdd396e5ca0e6a346b36fb461408",
+    "listed_files": 7,
+    "all_listed_hashes_match": true
+  },
+  "assets": {
+    "count": 6,
+    "inherited_unchanged": 5,
+    "new_epub": 1,
+    "all_sizes_and_hashes_match": true,
+    "pdf_remains_primary_human_preview": true
+  },
+  "epub": {
+    "filename": "openlogic-mr-eleven-chapters.epub",
+    "bytes": 1481457,
+    "sha256": "3c259bc80aa9078a7b42b0b3778fcb19b84088818f00263696e906d980884777",
+    "format": "reflowable EPUB 3",
+    "deterministic_cold_build": true,
+    "semantic_text_exact": true,
+    "native_mathml_roots": 6544,
+    "mathml_trees_exact": true,
+    "source_ids_covered": 861,
+    "unsafe_ids_remapped": 415,
+    "source_fragment_links_rewritten": 293,
+    "independent_checks": 11696,
+    "epubcheck_version": "5.3.0",
+    "epubcheck_messages": 0,
+    "representative_render_pages": 7,
+    "calibre_unresolved_anchors": 0
+  },
+  "checks": [
+    "Release scope is identical to the accepted eleven-chapters-v0.8 reader and is visibly marked partial.",
+    "The five inherited v0.8 deliverables retain their exact public hashes and sizes.",
+    "The EPUB is bound to the accepted semantic HTML and the frozen 108-unit source checkpoint.",
+    "All accepted text and native MathML trees are preserved exactly through EPUB normalization.",
+    "EPUBCheck 5.3.0 reports zero messages.",
+    "All local resources and fragment targets resolve after deterministic safe-ID remapping.",
+    "Representative Calibre rendering covers navigation, scope disclosure, prose, math, diagram, proof tables, exercises, and tableaux without observed clipping, overlap, or missing glyphs."
+  ],
+  "limitations": [
+    "No independent human linguistic or accessibility review is claimed.",
+    "Reading-system support for native MathML varies.",
+    "Representative rendering in one independent engine is not exhaustive cross-reader certification."
+  ],
+  "failures": []
+}

@@ -1,0 +1,52 @@
+{
+  "checks": 11696,
+  "epub": {
+    "bytes": 1481457,
+    "path": "releases/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub",
+    "sha256": "3c259bc80aa9078a7b42b0b3778fcb19b84088818f00263696e906d980884777"
+  },
+  "epubcheck": {
+    "messages": 0,
+    "report": "provenance/eleven-chapters-v0.8.1/EPUBCHECK.json",
+    "report_sha256": "88aac7b7436ecaaae209c4dee678f7fe602fdb5ffec903443b4b812a66c274e1",
+    "stderr": "",
+    "stdout": "No errors or warnings detected.\nMessages: 0 fatals / 0 errors / 0 warnings / 0 infos\n\nEPUBCheck completed",
+    "version": "5.3.0"
+  },
+  "failures": [],
+  "format": "reflowable EPUB 3",
+  "language": "mr-Deva-IN",
+  "limitations": [
+    "No independent human linguistic or accessibility review is claimed.",
+    "Reading-system support for native MathML varies.",
+    "Representative visual rendering is recorded separately from this structural audit."
+  ],
+  "metrics": {
+    "body_c14n_bytes": 2950127,
+    "external_links": 3,
+    "fragment_links": 427,
+    "local_links": 442
+  },
+  "preservation": {
+    "accepted_reader_semantic_text_exact": true,
+    "all_mathml_trees_exact": true,
+    "partial_scope_disclosed": true,
+    "source_checkpoint_bound": true,
+    "source_html_qa_bound": true
+  },
+  "release": "eleven-chapters-v0.8.1",
+  "schema": "openlogic-marathi-epub3-qa/1",
+  "scope": {
+    "aligned_content_segments": 1149,
+    "complete_chapters": 11,
+    "complete_edition": false,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0111",
+    "reader_sections": 96,
+    "remaining_source_units": 614,
+    "total_source_units": 722,
+    "translated_source_units": 108
+  },
+  "source_release": "eleven-chapters-v0.8",
+  "status": "passed"
+}

@@ -1,0 +1,91 @@
+{
+  "schema": "openlogic-marathi-epub3-visual-qa/1",
+  "status": "passed",
+  "release": "eleven-chapters-v0.8.1",
+  "date": "2026-09-13",
+  "scope": {
+    "translated_source_units": 108,
+    "total_source_units": 722,
+    "reader_sections": 96,
+    "complete_chapters": 11,
+    "complete_edition": false
+  },
+  "epub": {
+    "path": "releases/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub",
+    "bytes": 1481457,
+    "sha256": "3c259bc80aa9078a7b42b0b3778fcb19b84088818f00263696e906d980884777"
+  },
+  "render_engine": {
+    "name": "Calibre ebook-convert",
+    "version": "9.11.0",
+    "output": "temporary PDF rendering for QA; not a release artifact",
+    "pages": 240,
+    "pdf_bytes": 1985319,
+    "pdf_sha256": "5f4a1fdbf8d47ac8b2a0413052c4fb25ec53adef721586880dbc35380ddec931",
+    "log_path": "provenance/eleven-chapters-v0.8.1/CALIBRE_RENDER.log",
+    "log_sha256": "3d1e491fe5180ed07732353b87d13ecabefa479b0c949632f17ce6278a53ed5a",
+    "anchor_not_found_messages": 0,
+    "link_annotations": 935,
+    "internal_link_annotations": 932,
+    "external_link_annotations": 3,
+    "unresolved_link_annotations": 0
+  },
+  "representative_pages": [
+    {
+      "page": 1,
+      "coverage": "EPUB navigation and linked table of contents",
+      "png_sha256": "954f57706ab990a4a0a218067b66de442e5d90c680b1a000c9cb2bccffbcb30a"
+    },
+    {
+      "page": 5,
+      "coverage": "title, credits, licensing, visible partial-scope disclosure, and first chapter transition",
+      "png_sha256": "c4979a2fd185d29c89ffe5d463d2d4dba94ea1224523422b8ea37875e815a37c"
+    },
+    {
+      "page": 35,
+      "coverage": "Marathi prose, proof blocks, inline and display mathematics, and footnote link",
+      "png_sha256": "f7b5abe1c895dfb6c66c05feedfd78a6697bb6e467229a6290c4b637d87af2fc"
+    },
+    {
+      "page": 84,
+      "coverage": "chapter transition, Hilbert's Hotel diagram, citation, prose, and mathematical definition",
+      "png_sha256": "a4cdac57182f96ea54f6bf0502119799e83d00843e223a729bcd001773bb1b2f"
+    },
+    {
+      "page": 120,
+      "coverage": "sequent-calculus proof-step tables, source placeholders, and inference symbols",
+      "png_sha256": "39fb7004fd747f6aab5f090124d110653894227c749f75353930db174334c0d6"
+    },
+    {
+      "page": 165,
+      "coverage": "dense symbolic exercise list and natural-deduction notation",
+      "png_sha256": "8d72da9ee34db43eb537baac61870bd7c534860dc46de2564e5e1a0fcc47b20f"
+    },
+    {
+      "page": 200,
+      "coverage": "tableau prose and multirow semantic proof tables",
+      "png_sha256": "daebb25b1f8bbd1cc0da05a31513f5213daacf42645528d77dafd6de8f7f7952"
+    }
+  ],
+  "inspection": {
+    "navigation_legible": true,
+    "partial_scope_visible": true,
+    "devanagari_glyphs_legible": true,
+    "native_math_rendered": true,
+    "proof_tables_intact": true,
+    "diagram_and_description_present": true,
+    "citations_and_links_legible": true,
+    "clipped_content_observed": false,
+    "overlapping_content_observed": false,
+    "missing_glyphs_observed": false
+  },
+  "compatibility_repair": {
+    "problem": "The first Calibre rendering exposed unresolved fragment targets for colon-bearing source IDs.",
+    "resolution": "All 861 source IDs are covered by a deterministic crosswalk; 415 unsafe IDs are remapped to ASCII IDs and all 293 source fragment links are rewritten.",
+    "result": "The final Calibre conversion completed without unresolved-anchor messages."
+  },
+  "limitations": [
+    "This is representative visual inspection in one independent reading engine, not exhaustive testing in every EPUB reader.",
+    "Automated and representative visual checks do not constitute independent human linguistic or accessibility certification."
+  ]
+}

@@ -2,13 +2,13 @@
 
 This repository contains the Marathi (Devanagari, `mr-Deva-IN`) adaptation of
 the Open Logic Project text. The current coherent reader is
-[eleven-chapters-v0.8](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8): 108 of 722 source units, 11 complete chapters, 96 reader sections, and 1,149 aligned translated content segments through OLP-0111.
+[eleven-chapters-v0.8.1](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8.1): 108 of 722 source units, 11 complete chapters, 96 reader sections, and 1,149 aligned translated content segments through OLP-0111. This patch release adds a genuine reflowable EPUB 3 without changing the accepted reader scope.
 
-The release includes a 157-page PDF, an offline HTML reader with native MathML,
-editable Marathi sources, the frozen English source, review records, and
-reproducibility manifests. The corresponding Zenodo version is
-[10.5281/zenodo.22681530](https://doi.org/10.5281/zenodo.22681530), in the
-existing concept-DOI lineage [10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960).
+The release includes a 157-page PDF, a reflowable EPUB 3 and an offline HTML
+reader with 6,544 native MathML expressions, plus editable Marathi sources, the
+frozen English source, review records, and reproducibility manifests. Zenodo
+versions remain in the existing concept-DOI lineage
+[10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960).
 
 Codex produced the machine translation and same-agent bilingual review. No
 independent human or native-speaker linguistic review is claimed. The Open
@@ -20,37 +20,40 @@ component notices and the SIL Open Font License remain with their components.
 
 सध्याच्या प्रकाशनात **संच, संबंध, फलने, संचांचे आकारमान, अंकगणितीकरण,
 अनंत संच, विन्यासमीमांसा व चिन्हार्थमीमांसा, सिद्धता-पद्धती, क्रमवर्ती कलन
-आणि नैसर्गिक निगमन ही दहा संपूर्ण प्रकरणे** आहेत: OLP-0004–OLP-0097,
-एकूण 94 स्रोत-विभाग, 83 मुख्य विभाग, सर्व उदाहरणे, आकृत्यांचे मथळे आणि
-सराव. उर्वरित **628 विभागांचा अनुवाद अद्याप
+नैसर्गिक निगमन आणि टॅब्लो ही अकरा संपूर्ण प्रकरणे** आहेत: OLP-0004–OLP-0111,
+एकूण 108 स्रोत-विभाग, 96 वाचक-विभाग, सर्व उदाहरणे, आकृत्यांचे वर्णन आणि
+सराव. PDF, EPUB 3 आणि ऑफलाइन HTML या वाचन-स्वरूपांत ही आवृत्ती उपलब्ध आहे.
+उर्वरित **614 विभागांचा अनुवाद अद्याप
 पूर्ण झालेला नाही**.
 हे संपूर्ण ग्रंथाचे प्रकाशन नाही.
 
 This is an independent Marathi edition of *The Open Logic Text*. The finite
 commission covers all 722 content TeX units at upstream revision
-`9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. The cumulative release covers 94/722
-units (1,018 content segments). Source IDs and paths remain aligned to the frozen corpus.
+`9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. The cumulative release covers 108/722
+units (1,149 content segments). Source IDs and paths remain aligned to the frozen corpus.
 The Sets, Relations, Functions, Size of Sets, Arithmetization, Infinite Sets,
 Syntax and Semantics, Proof Systems, Sequent Calculus, and Natural Deduction
-chapters are complete in source and reader form. The 133-page PDF was built twice
-to identical bytes and every page was
-inspected. Its offline HTML companion passed exact source-conversion, structure,
-asset, proof-display and desktop/mobile browser checks.
+and Tableaux chapters are complete in source and reader form. The 157-page PDF
+was built twice to identical bytes and every page was inspected. Its offline
+HTML companion passed exact source-conversion, structure, asset, proof-display
+and desktop/mobile browser checks. The EPUB passed EPUBCheck 5.3.0 with zero
+messages, exact text and MathML preservation checks, complete link validation,
+and representative rendering in Calibre.
 
-The editable working tree now continues through OLP-0106 in the Tableaux chapter:
-103/722 units and 1,103 aligned content segments. OLP-0098–OLP-0106 remain
-intentionally outside the frozen 94-unit v0.7 reader, source checkpoint and
-release archive. Translation resumes at OLP-0107.
+Translation continues beyond the frozen OLP-0111 release boundary. Unreleased
+working units remain outside this reader and its downloadable source archive.
 
-- **Current release:** [दहा प्रकरणे — PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/ten-chapters-v0.7).
+- **Current release:** [अकरा प्रकरणे — EPUB 3, PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8.1).
+- **EPUB 3:** [download the reflowable Marathi reader](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub).
 - **DOI mirror:** [edition concept DOI 10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960), which resolves to the latest version.
-- **PDF:** [133-page cumulative reader](releases/ten-chapters-v0.7/openlogic-mr-ten-chapters.pdf).
-- **Offline HTML:** download and extract `openlogic-mr-ten-chapters-html.zip`, then open `index.html`.
+- **PDF:** [157-page cumulative reader](releases/eleven-chapters-v0.8/openlogic-mr-eleven-chapters.pdf).
+- **Offline HTML:** download and extract `openlogic-mr-eleven-chapters-html.zip`, then open `index.html`.
 - **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/), [size of sets](mr/content/sets-functions-relations/size-of-sets/), [arithmetization](mr/content/sets-functions-relations/arithmetization/), [infinite sets](mr/content/sets-functions-relations/infinite/), [propositional syntax and semantics](mr/content/propositional-logic/syntax-and-semantics/), [first-order proof systems](mr/content/first-order-logic/proof-systems/), [sequent calculus](mr/content/first-order-logic/sequent-calculus/), [natural deduction](mr/content/first-order-logic/natural-deduction/), and [Tableaux](mr/content/first-order-logic/tableaux/).
 - **Terminology and expert review:** begin with the [shared-schema review guide](provenance/translation-decisions/START_HERE.md), then use the [full applied-decision index](provenance/translation-decisions/TRANSLATION_DECISIONS_FULL.md), [priority review](provenance/translation-decisions/PRIORITY_REVIEW.md), [one-row-per-occurrence CSV](provenance/translation-decisions/DECISION_OCCURRENCES.csv), or [canonical JSON](provenance/translation-decisions/DECISIONS.json). The backward-compatible [decision ledger](provenance/EXPERT_REVIEW_LOG.md) and occurrence JSONL remain available. These surfaces record exact source/target scopes, current PDF page ranges, reversible choices and plain review questions without making review a completion gate.
 - **Pristine English:** `upstream/`; this is source evidence, not translated coverage.
-- **Current source-checkpoint evidence:** `provenance/source-checkpoint-94/`.
-- **Current reader evidence:** `provenance/ten-chapters-v0.7/`.
+- **Current source-checkpoint evidence:** `provenance/source-checkpoint-108/`.
+- **Current reader evidence:** `provenance/eleven-chapters-v0.8/` and `provenance/eleven-chapters-v0.8.1/`.
+- **Earlier cumulative release:** [eleven-chapters-v0.8](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8), preserved unchanged.
 - **Earlier cumulative release:** [eight-chapters-v0.6](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eight-chapters-v0.6), preserved unchanged.
 - **Earlier cumulative release:** [seven-chapters-v0.5.1](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/seven-chapters-v0.5.1), preserved unchanged.
 - **Earlier cumulative release:** [seven-chapters-v0.5](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/seven-chapters-v0.5), preserved unchanged.
@@ -71,20 +74,21 @@ provisional extensions where evidence is sparse. Source mathematics takes
 precedence over conventions in language witnesses: in particular, OpenLogic's
 natural numbers include zero.
 
-The ten published chapters have 1,018 aligned content segments with consultation
-records across 94 units.
+The eleven published chapters have 1,149 aligned content segments with
+consultation records across 108 units.
 Deterministic checks compare formulas, token identities, macro inventories,
 labels, citations, links and source file references.
 Visual, structural and semantic checks are documented in
-`provenance/ten-chapters-v0.7/` and the 94-unit source checkpoint.
+`provenance/eleven-chapters-v0.8/`, `provenance/eleven-chapters-v0.8.1/`, and the
+108-unit source checkpoint.
 Such checks do not establish the absence
 of every possible translation error.
 Two guarded builds on the same host produced identical PDF bytes with fixed
 `SOURCE_DATE_EPOCH`; cross-platform byte identity has not been tested.
 
-The offline HTML includes 5,608 MathML expressions with original TeX annotations,
-thirteen diagrams with detailed Marathi alternatives, 143 semantic proof figures
-with 674 formula rows, local fonts, a linked contents list and keyboard-focusable
+The offline HTML and EPUB include 6,544 MathML expressions with original TeX
+annotations, thirteen diagrams with detailed Marathi alternatives, 202 semantic
+proof figures with 990 formula rows, local fonts, a linked contents list and keyboard-focusable
 formula regions. Exact conversion checks preserve ordinary prose, footnotes and
 formulas; internal references match PDF numbering.
 Browser inspection passed at 1280 × 720 and 390 × 844 CSS pixels with no page-level
