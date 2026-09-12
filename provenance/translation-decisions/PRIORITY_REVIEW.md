@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
-This view contains 27 urgent/high decisions and
-1061 current occurrences. Normal and low items remain in the full index.
+This view contains 28 urgent/high decisions and
+1126 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -254,6 +254,10 @@ This view contains 27 urgent/high decisions and
 | `T023-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | 15-36 | 15-36 | 88–89 |
 | `T023-OLP-0077-B009` | `OLP-0077` | 9.8 सिद्धता-उपपत्तीय संकल्पना | 36-43 | 37-44 | 100–101 |
 | `T023-OLP-0077-B010` | `OLP-0077` | 9.8 सिद्धता-उपपत्तीय संकल्पना | 45-67 | 46-69 | 100–101 |
+| `T023-OLP-0118-B015` | `OLP-0118` |  | 69-84 | 70-85 | pending |
+| `T023-OLP-0118-B022` | `OLP-0118` |  | 122-134 | 124-137 | pending |
+| `T023-OLP-0121-B008` | `OLP-0121` |  | 24-31 | 23-30 | pending |
+| `T023-OLP-0121-B013` | `OLP-0121` |  | 60-63 | 61-64 | pending |
 
 ## T026 — contradiction/paradox → व्याघात / विरोधापत्ती
 
@@ -368,6 +372,24 @@ This view contains 27 urgent/high decisions and
 | `T029-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | 15-36 | 15-36 | 88–89 |
 | `T029-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | 46-64 | 46-65 | 88–89 |
 | `T029-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | 66-68 | 67-69 | 88–89 |
+| `T029-OLP-0113-B006` | `OLP-0113` |  | 15-22 | 15-23 | pending |
+| `T029-OLP-0113-B007` | `OLP-0113` |  | 24-35 | 25-36 | pending |
+| `T029-OLP-0113-B008` | `OLP-0113` |  | 37-41 | 38-41 | pending |
+| `T029-OLP-0113-B010` | `OLP-0113` |  | 48-81 | 48-80 | pending |
+| `T029-OLP-0114-B005` | `OLP-0114` |  | 13-13 | 13-13 | pending |
+| `T029-OLP-0114-B006` | `OLP-0114` |  | 15-34 | 15-34 | pending |
+| `T029-OLP-0115-B005` | `OLP-0115` |  | 11-11 | 11-11 | pending |
+| `T029-OLP-0115-B006` | `OLP-0115` |  | 13-21 | 13-21 | pending |
+| `T029-OLP-0116-B006` | `OLP-0116` |  | 16-39 | 16-41 | pending |
+| `T029-OLP-0116-B007` | `OLP-0116` |  | 41-56 | 43-56 | pending |
+| `T029-OLP-0116-B008` | `OLP-0116` |  | 58-80 | 58-80 | pending |
+| `T029-OLP-0116-B012` | `OLP-0116` |  | 120-128 | 120-127 | pending |
+| `T029-OLP-0117-B007` | `OLP-0117` |  | 17-34 | 18-35 | pending |
+| `T029-OLP-0118-B015` | `OLP-0118` |  | 69-84 | 70-85 | pending |
+| `T029-OLP-0118-B022` | `OLP-0118` |  | 122-134 | 124-137 | pending |
+| `T029-OLP-0119-B014` | `OLP-0119` |  | 64-73 | 64-73 | pending |
+| `T029-OLP-0119-B015` | `OLP-0119` |  | 75-95 | 75-96 | pending |
+| `T029-OLP-0119-B016` | `OLP-0119` |  | 97-98 | 98-99 | pending |
 
 ## T039 — preorder / partial order / linear order → पूर्वक्रम / अंशतः क्रम / रेषीय क्रम
 
@@ -917,6 +939,44 @@ This view contains 27 urgent/high decisions and
 | `T044-OLP-0097-B007` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | 17-21 | 17-21 | 130–131 |
 | `T044-OLP-0097-B008` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | 23-45 | 23-48 | 130–131 |
 | `T044-OLP-0099-B009` | `OLP-0099` | 11.1 नियम आणि टॅब्लो | 33-42 | 33-42 | 132–133 |
+| `T044-OLP-0112-B004` | `OLP-0112` |  | 8-10 | 8-10 | pending |
+| `T044-OLP-0113-B005` | `OLP-0113` |  | 13-13 | 13-13 | pending |
+| `T044-OLP-0113-B006` | `OLP-0113` |  | 15-22 | 15-23 | pending |
+| `T044-OLP-0113-B007` | `OLP-0113` |  | 24-35 | 25-36 | pending |
+| `T044-OLP-0113-B008` | `OLP-0113` |  | 37-41 | 38-41 | pending |
+| `T044-OLP-0113-B009` | `OLP-0113` |  | 43-46 | 43-46 | pending |
+| `T044-OLP-0113-B010` | `OLP-0113` |  | 48-81 | 48-80 | pending |
+| `T044-OLP-0113-B011` | `OLP-0113` |  | 83-87 | 82-86 | pending |
+| `T044-OLP-0113-B012` | `OLP-0113` |  | 89-93 | 88-92 | pending |
+| `T044-OLP-0114-B006` | `OLP-0114` |  | 15-34 | 15-34 | pending |
+| `T044-OLP-0114-B007` | `OLP-0114` |  | 36-39 | 36-39 | pending |
+| `T044-OLP-0115-B006` | `OLP-0115` |  | 13-21 | 13-21 | pending |
+| `T044-OLP-0115-B007` | `OLP-0115` |  | 23-30 | 23-30 | pending |
+| `T044-OLP-0116-B005` | `OLP-0116` |  | 13-13 | 13-13 | pending |
+| `T044-OLP-0116-B006` | `OLP-0116` |  | 16-39 | 16-41 | pending |
+| `T044-OLP-0116-B007` | `OLP-0116` |  | 41-56 | 43-56 | pending |
+| `T044-OLP-0116-B008` | `OLP-0116` |  | 58-80 | 58-80 | pending |
+| `T044-OLP-0116-B009` | `OLP-0116` |  | 82-99 | 82-99 | pending |
+| `T044-OLP-0116-B010` | `OLP-0116` |  | 101-104 | 101-104 | pending |
+| `T044-OLP-0116-B011` | `OLP-0116` |  | 106-118 | 106-118 | pending |
+| `T044-OLP-0116-B012` | `OLP-0116` |  | 120-128 | 120-127 | pending |
+| `T044-OLP-0117-B005` | `OLP-0117` |  | 11-11 | 11-11 | pending |
+| `T044-OLP-0117-B006` | `OLP-0117` |  | 13-15 | 13-16 | pending |
+| `T044-OLP-0117-B007` | `OLP-0117` |  | 17-34 | 18-35 | pending |
+| `T044-OLP-0118-B007` | `OLP-0118` |  | 26-30 | 27-31 | pending |
+| `T044-OLP-0118-B008` | `OLP-0118` |  | 32-36 | 33-37 | pending |
+| `T044-OLP-0118-B009` | `OLP-0118` |  | 38-41 | 39-42 | pending |
+| `T044-OLP-0118-B011` | `OLP-0118` |  | 48-50 | 49-51 | pending |
+| `T044-OLP-0118-B013` | `OLP-0118` |  | 58-61 | 59-62 | pending |
+| `T044-OLP-0118-B015` | `OLP-0118` |  | 69-84 | 70-85 | pending |
+| `T044-OLP-0118-B022` | `OLP-0118` |  | 122-134 | 124-137 | pending |
+| `T044-OLP-0119-B007` | `OLP-0119` |  | 18-29 | 18-29 | pending |
+| `T044-OLP-0119-B009` | `OLP-0119` |  | 36-44 | 36-44 | pending |
+| `T044-OLP-0119-B013` | `OLP-0119` |  | 61-62 | 61-62 | pending |
+| `T044-OLP-0119-B014` | `OLP-0119` |  | 64-73 | 64-73 | pending |
+| `T044-OLP-0119-B015` | `OLP-0119` |  | 75-95 | 75-96 | pending |
+| `T044-OLP-0120-B007` | `OLP-0120` |  | 18-20 | 18-20 | pending |
+| `T044-OLP-0120-B009` | `OLP-0120` |  | 25-48 | 25-50 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
@@ -1056,6 +1116,7 @@ This view contains 27 urgent/high decisions and
 | `T155-OLP-0111-B007` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | 18-23 | 18-22 | 154 |
 | `T155-OLP-0111-B008` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | 25-28 | 24-27 | 154 |
 | `T155-OLP-0111-B009` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | 30-43 | 29-43 | 154 |
+| `T155-OLP-0118-B006` | `OLP-0118` |  | 15-24 | 15-25 | pending |
 
 ## T174 — closed term → बंद पद
 
@@ -1135,6 +1196,7 @@ This view contains 27 urgent/high decisions and
 | `T174-OLP-0110-B006` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | 13-14 | 13-14 | 153–154 |
 | `T174-OLP-0110-B007` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | 16-39 | 16-39 | 153–154 |
 | `T174-OLP-0110-B008` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | 41-54 | 41-54 | 153–154 |
+| `T174-OLP-0115-B006` | `OLP-0115` |  | 13-21 | 13-21 | pending |
 
 ## T178 — eigenvariable → आयगेन चर
 
@@ -1300,6 +1362,20 @@ This view contains 27 urgent/high decisions and
 | `T179-OLP-0104-B010` | `OLP-0104` | 11.6 संख्यापकांसह टॅब्लो | 212-315 | 208-309 | 140–144 |
 | `T179-OLP-0108-B006` | `OLP-0108` | 11.10 निष्पन्नता आणि संख्यापक | 17-21 | 17-21 | 149–150 |
 | `T179-OLP-0108-B007` | `OLP-0108` | 11.10 निष्पन्नता आणि संख्यापक | 23-59 | 23-59 | 149–150 |
+| `T179-OLP-0115-B007` | `OLP-0115` |  | 23-30 | 23-30 | pending |
+| `T179-OLP-0120-B009` | `OLP-0120` |  | 25-48 | 25-50 | pending |
+
+## T188 — ex falso quodlibet / explosion → असत्यापासून काहीही / स्फोट
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: formula-controlled explanatory rendering with provisional literal label; expert review especially useful. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Should the edition lead with the transparent असत्यापासून काहीही, adopt स्फोट alone, or use another established Marathi proof-theory label?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T188-OLP-0119-B018` | `OLP-0119` |  | 103-118 | 103-119 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

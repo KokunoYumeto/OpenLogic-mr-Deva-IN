@@ -1,0 +1,34 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: axioms-rules-quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{qua}
+
+\olsection{संख्यापकांसाठी स्वयंसिद्धके आणि नियम}
+
+\begin{defn}[संख्यापकांसाठी स्वयंसिद्धके]
+संख्यापकांचे नियमन करणारी \emph{स्वयंसिद्धके} म्हणजे पुढील रूपांचे सर्व
+दृष्टांत होत:
+\begin{align}
+\ollabel{ax:q1} & \lforall[x][!B] \lif !B(t), \\
+\ollabel{ax:q2} & !B(t) \lif \lexists[x][!B].
+\end{align}
+कोणत्याही बंद पद~$t$ साठी.
+\end{defn}
+
+\begin{defn}[संख्यापकांसाठी नियम]
+\item जर $!B \lif !A(a)$ हे !!{derivation} मध्ये आधीच आलेले असेल आणि
+  $a$ ची~$\Gamma$ किंवा~$!B$ मध्ये आस्थिति नसेल, तर $!B \lif
+  \lforall[x][!A(x)]$ ही निगमनाची योग्य पायरी असते.
+\item जर $!A(a) \lif !B$ हे !!{derivation} मध्ये आधीच आलेले असेल आणि
+  $a$ ची~$\Gamma$ किंवा~$!B$ मध्ये आस्थिति नसेल, तर
+  $\lexists[x][!A(x)] \lif !B$ ही निगमनाची योग्य पायरी असते.
+\end{defn}
+
+यांपैकी कोणत्याही नियमाचा संक्षेप आपण ``\QR'' असा करू.
+
+\end{document}

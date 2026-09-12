@@ -1,0 +1,133 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: deduction-theorem
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{ded}}
+      {\olfileid{pl}{axd}{ded}}
+
+\olsection{निगमन प्रमेय}
+
+आपण पाहिल्याप्रमाणे, स्वयंसिद्धकीय पद्धतीत !!{derivation}s देणे किचकट
+असते आणि !!{derivation}s शोधणे कठीण असू शकते. !!{formula}s च्या लांब
+याद्या प्रत्यक्ष लिहिण्याऐवजी काही सोपे निष्कर्ष वापरून अशा
+!!{derivation}s अस्तित्वात आहेत असा युक्तिवाद करणे सहसा सोपे असते. असे तीन
+निष्कर्ष आपण आधीच प्रस्थापित केले आहेत: $!A \in \Gamma$ हे माहीत असेल,
+तर $\Gamma \Proves !A$ असे नेहमी म्हणता येते, हे
+\olref[ptn]{prop:reflexivity} सांगतो. $\Gamma \Proves !A$ असेल, तर
+$\Gamma \cup \{!B\} \Proves !A$ सुद्धा असते, हे
+\olref[ptn]{prop:monotonicity} सांगतो. आणि $\Gamma \Proves !A$ व
+$!A \Proves !B$ असेल, तर $\Gamma \Proves !B$, असे
+\olref[ptn]{prop:transitivity} वरून मिळते. पुढे आणखी एक सोपा निष्कर्ष,
+विध्यात्मक अनुमानाची ``अधि''-आवृत्ती, दिली आहे:
+
+\begin{prop}
+  \ollabel{prop:mp} जर $\Gamma \Proves !A$ आणि $\Gamma \Proves !A \lif
+  !B$, तर $\Gamma \Proves !B$.
+\end{prop}
+
+\begin{proof}
+  $\{!A, !A \lif !B\} \Proves !B$ हे आपल्याकडे आहे:
+  \begin{derivation}
+    1. & $!A$ & Hyp.\\
+    2. & $!A \lif !B$ & Hyp.\\
+    3. & $!B$ & 1, 2, MP
+  \end{derivation}
+  \olref[ptn]{prop:transitivity} वरून $\Gamma \Proves !B$.
+\end{proof}
+
+या संदर्भात आपण वापरणार असलेला सर्वांत महत्त्वाचा निष्कर्ष म्हणजे निगमन
+प्रमेय:
+
+\begin{thm}[निगमन प्रमेय]
+\ollabel{thm:deduction-thm} $\Gamma \cup \{!A\} \Proves !B$ तेव्हा आणि
+केवळ तेव्हाच, जेव्हा $\Gamma \Proves !A \lif !B$.
+\end{thm}
+
+\begin{proof}
+``जर'' ही दिशा तात्काळ मिळते. $\Gamma \Proves !A \lif !B$ असेल, तर
+\olref[ptn]{prop:monotonicity} वरून $\Gamma \cup \{!A\} \Proves !A \lif !B$
+सुद्धा असते. तसेच \olref[ptn]{prop:reflexivity} वरून
+$\Gamma \cup \{!A\} \Proves !A$. म्हणून \olref{prop:mp} वरून
+$\Gamma \cup \{!A\} \Proves !B$.
+
+``केवळ जर'' या दिशेसाठी, $\Gamma \cup \{!A\}$ पासून $!B$ च्या
+!!{derivation} च्या लांबीवर विगमन करू.
+
+विगमनाच्या आधारपायरीसाठी, लांबी~$1$ असलेल्या प्रत्येक !!{derivation} साठी
+दावा सिद्ध करू. $\Gamma \cup \{!A\}$ पासून~$!B$ ची लांबी~$1$ असलेली
+!!^a{derivation} म्हणजे एकटे $!B$; ती योग्य असेल, तर $!B$ हे एकतर
+$\in \Gamma \cup \{!A\}$ असते किंवा स्वयंसिद्धक असते. $!B \in \Gamma$
+असेल किंवा ते स्वयंसिद्धक असेल, तर $\Gamma \Proves !B$. तसेच
+\olref[prp]{ax:lif1} वरून $\Gamma \Proves !B \lif (!A \lif !B)$, आणि
+\olref{prop:mp} वरून $\Gamma \Proves !A \lif !B$. $!B \in \{ !A\}$
+असेल, तर $\Gamma \Proves !A \lif !B$, कारण शेवटचे !!{sentence}~$!A
+\lif !B$ हे $!A \lif !A$ सारखेच आहे आणि ते आपण
+\olref[pro]{ex:identity} मध्ये !!{derive}d केले आहे.
+
+विगमन पायरीसाठी, $\Gamma \cup \{!A\}$ पासून~$!B$ ची एखादी
+!!a{derivation} विध्यात्मक अनुमानाने समर्थित असलेल्या~$!B$ या पायरीने
+संपते असे समजा. (तिला विध्यात्मक अनुमानाने समर्थन मिळत नसेल, तर
+$!B \in \Gamma$, $!B \ident !A$, किंवा $!B$ हे स्वयंसिद्धक असते, आणि
+विगमनाच्या आधारपायरीतील युक्तिवादच लागू होतो.) मग एखाद्या
+!!{formula}~$!C$ साठी त्या !!{derivation} मधील आधीच्या काही पायऱ्या
+$!C \lif !B$ आणि $!C$ असतात; म्हणजे $\Gamma \cup \{!A\} \Proves !C \lif !B$
+आणि $\Gamma \cup \{!A\} \Proves !C$. त्यांच्याशी संबंधित
+!!{derivation}s लहान असल्यामुळे त्यांना विगमन गृहीतक लागू होते. म्हणून
+आपल्याकडे पुढील दोन्ही आहेत:
+\begin{align*}
+  & \Gamma \Proves !A \lif (!C \lif !B); \\
+  & \Gamma \Proves !A \lif !C.
+\end{align*}
+पण \olref[prp]{ax:lif2} वरून पुढीलही मिळते:
+\[
+\Gamma \Proves (!A \lif (!C \lif !B)) \lif
+((!A\lif !C)  \lif (!A \lif !B)),
+\]
+आणि \olref{prop:mp} चे दोन उपयोग केल्यावर आवश्यकतेनुसार
+$\Gamma \Proves !A \lif !B$ मिळते.
+\end{proof}
+
+निगमन प्रमेय खरे ठरावे यासाठीच \olref[prp]{ax:lif1} आणि
+\olref[prp]{ax:lif2} यांची नेमकी अशी निवड केली होती, हे लक्षात घ्या.
+
+!!{derivability} विषयीची पुढील काही उपयुक्त तथ्ये सरावासाठी सोडली आहेत.
+
+\begin{prop}
+  \ollabel{prop:derivfacts}
+\begin{enumerate}
+\item $\Proves (!A \lif !B) \lif ((!B \lif !C)
+  \lif (!A \lif !C))$; \ollabel{derivfacts:a}
+%READERNOTE{OLAXD-001: गोठवलेल्या इंग्रजी सूत्रात सर्वांत बाहेरचा उजवा कंस सुटला आहे. मराठी सूत्रात तो कंस जोडला असून गोठवलेले इंग्रजी बाइट्स बदललेले नाहीत.}
+\item $\Gamma \cup \{ \lnot !A\}
+  \Proves \lnot !B$ असेल, तर $\Gamma \cup \{ !B\} \Proves
+  !A$ (प्रतिपरिवर्तन); \ollabel{derivfacts:b}
+\item  $\{ !A, \lnot!A\} \Proves
+    !B$ (Ex Falso Quodlibet, म्हणजे असत्यापासून काहीही; स्फोट); \ollabel{derivfacts:c}
+\item  $\{ \lnot\lnot!A\} \Proves
+  !A$ (द्विनकरण विलोपन);\ollabel{derivfacts:d}
+\item $\Gamma \Proves \lnot\lnot!A$ असेल, तर $\Gamma \Proves
+  !A$;\ollabel{derivfacts:e}
+\end{enumerate}
+\end{prop}
+
+\tagprob{FOL}
+\begin{prob}
+  \olref[fol][axd][ded]{prop:derivfacts} सिद्ध करा.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+  \olref[pl][axd][ded]{prop:derivfacts} सिद्ध करा.
+\end{prob}
+\tagendprob
+
+\end{document}

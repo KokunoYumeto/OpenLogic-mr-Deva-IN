@@ -1,0 +1,37 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: proving-things-quant
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{prq}
+
+\olsection{संख्यापकांसह \usetoken{P}{derivation}}
+
+\begin{ex}
+$(\lforall[x][!A(x)] \land
+\lforall[y][!B(y)]) \lif \lforall[x][(!A(x) \land !B(x))]$ ची
+!!a{derivation} देऊ.
+
+प्रथम, लक्षात घ्या की
+\begin{align*}
+  (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif \lforall[x][!A(x)]\\
+  \intertext{हे \olref[prp]{ax:land1} चे उदाहरण आहे, आणि}
+  \lforall[x][!A(x)] & \lif !A(a) \\
+  \intertext{हे \olref[qua]{ax:q1} चे उदाहरण आहे. म्हणून \olref[pro]{prop:chain} वरून आपल्याला माहीत आहे की}
+  (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif !A(a) \\
+  \intertext{हे !!{derivable} आहे. त्याचप्रमाणे,}
+  (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif \lforall[y][!B(y)] \qquad\text{आणि}\\
+    \lforall[y][!B(y)] & \lif !B(a)\\
+    \intertext{ही अनुक्रमे \olref[prp]{ax:land2} आणि \olref[qua]{ax:q1} यांची उदाहरणे असल्यामुळे,}
+    (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif !B(a)\\
+    \intertext{हे \olref[pro]{prop:chain} मुळे सिद्धतायोग्य आहे. \olref[prp]{ax:land3} चे योग्य उदाहरण आणि~\MP चे दोन उपयोग करून आपल्याला दिसते की}
+    (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif (!A(a) \land !B(a))\\
+    \intertext{हे सिद्धतायोग्य आहे. आता \QR{} लावून पुढील सूत्र मिळते:}
+(\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif \lforall[x][(!A(x) \land !B(x))].
+\end{align*}
+\end{ex}
+
+\end{document}

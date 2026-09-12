@@ -2,14 +2,14 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **108/722 source units**, 1149 aligned translated blocks, 7076 review occurrences. The referenced development reader has 157 pages and SHA-256 bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450; it is not a final accessible release.
+Current scope: **118/722 source units**, 1232 aligned translated blocks, 7402 review occurrences. The referenced development reader has 157 pages and SHA-256 bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
 [Decision ledger](EXPERT_REVIEW_LOG.md) · [Priority view](EXPERT_REVIEW_PRIORITY.md) · [CSV](EXPERT_REVIEW_OCCURRENCES.csv) · [Machine JSONL](EXPERT_REVIEW_OCCURRENCES.jsonl)
 
 <details>
-<summary><strong>T001 — set</strong> (362 occurrences; routine priority)</summary>
+<summary><strong>T001 — set</strong> (387 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -375,6 +375,31 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T001-OLP-0105-B012 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:71-79](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L71) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:72-80](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L72) | 144–146 |
 | T001-OLP-0105-B016 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L98) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-110](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L99) | 144–146 |
 | T001-OLP-0105-B024 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:172-188](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L172) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:173-189](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L173) | 144–146 |
+| T001-OLP-0113-B007 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L25) | not yet paginated |
+| T001-OLP-0113-B010 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | not yet paginated |
+| T001-OLP-0116-B009 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L82) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L82) | not yet paginated |
+| T001-OLP-0118-B008 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:32-36](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:33-37](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L33) | not yet paginated |
+| T001-OLP-0118-B009 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:38-41](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:39-42](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L39) | not yet paginated |
+| T001-OLP-0118-B014 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:63-67](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L63) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:64-68](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L64) | not yet paginated |
+| T001-OLP-0118-B015 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L69) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L70) | not yet paginated |
+| T001-OLP-0118-B022 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L122) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L124) | not yet paginated |
+| T001-OLP-0119-B007 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | not yet paginated |
+| T001-OLP-0119-B009 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L36) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L36) | not yet paginated |
+| T001-OLP-0119-B011 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-52](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L49) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-52](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L49) | not yet paginated |
+| T001-OLP-0119-B012 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L54) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L54) | not yet paginated |
+| T001-OLP-0119-B014 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | not yet paginated |
+| T001-OLP-0119-B015 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | not yet paginated |
+| T001-OLP-0119-B018 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | not yet paginated |
+| T001-OLP-0120-B006 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:13-16](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:13-16](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L13) | not yet paginated |
+| T001-OLP-0120-B007 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L18) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L18) | not yet paginated |
+| T001-OLP-0120-B009 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | not yet paginated |
+| T001-OLP-0121-B007 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:19-22](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L19) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:18-21](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L18) | not yet paginated |
+| T001-OLP-0121-B008 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L23) | not yet paginated |
+| T001-OLP-0121-B009 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:33-36](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L33) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:32-36](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L32) | not yet paginated |
+| T001-OLP-0121-B010 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | not yet paginated |
+| T001-OLP-0121-B011 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | not yet paginated |
+| T001-OLP-0121-B012 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:55-58](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L55) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:56-59](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L56) | not yet paginated |
+| T001-OLP-0121-B015 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:71-74](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L71) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:72-75](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** संच
 
@@ -385,7 +410,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T002 — element/member</strong> (252 occurrences; routine priority)</summary>
+<summary><strong>T002 — element/member</strong> (260 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -641,6 +666,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T002-OLP-0106-B013 | OLP-0106 · 11.8 निष्पन्नता आणि सुसंगतता | [upstream/content/first-order-logic/tableaux/provability-consistency.tex:79-82](../upstream/content/first-order-logic/tableaux/provability-consistency.tex#L79) | [mr/content/first-order-logic/tableaux/provability-consistency.tex:79-82](../mr/content/first-order-logic/tableaux/provability-consistency.tex#L79) | 146–147 |
 | T002-OLP-0106-B014 | OLP-0106 · 11.8 निष्पन्नता आणि सुसंगतता | [upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98](../upstream/content/first-order-logic/tableaux/provability-consistency.tex#L84) | [mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97](../mr/content/first-order-logic/tableaux/provability-consistency.tex#L84) | 146–147 |
 | T002-OLP-0106-B016 | OLP-0106 · 11.8 निष्पन्नता आणि सुसंगतता | [upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120](../upstream/content/first-order-logic/tableaux/provability-consistency.tex#L105) | [mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118](../mr/content/first-order-logic/tableaux/provability-consistency.tex#L104) | 146–147 |
+| T002-OLP-0118-B010 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:43-46](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L43) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:44-47](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L44) | not yet paginated |
+| T002-OLP-0118-B015 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L69) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L70) | not yet paginated |
+| T002-OLP-0118-B022 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L122) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L124) | not yet paginated |
+| T002-OLP-0119-B014 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | not yet paginated |
+| T002-OLP-0121-B008 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L23) | not yet paginated |
+| T002-OLP-0121-B010 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | not yet paginated |
+| T002-OLP-0121-B011 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | not yet paginated |
+| T002-OLP-0121-B015 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:71-74](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L71) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:72-75](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** घटक / सदस्य
 
@@ -651,7 +684,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T003 — empty set</strong> (144 occurrences; routine priority)</summary>
+<summary><strong>T003 — empty set</strong> (146 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -799,6 +832,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T003-OLP-0045-B006 | OLP-0045 · 5.4 Q पासून R कडे | [upstream/content/sets-functions-relations/arithmetization/cuts.tex:26-36](../upstream/content/sets-functions-relations/arithmetization/cuts.tex#L26) | [mr/content/sets-functions-relations/arithmetization/cuts.tex:25-35](../mr/content/sets-functions-relations/arithmetization/cuts.tex#L25) | 58–60 |
 | T003-OLP-0045-B010 | OLP-0045 · 5.4 Q पासून R कडे | [upstream/content/sets-functions-relations/arithmetization/cuts.tex:58-78](../upstream/content/sets-functions-relations/arithmetization/cuts.tex#L58) | [mr/content/sets-functions-relations/arithmetization/cuts.tex:57-83](../mr/content/sets-functions-relations/arithmetization/cuts.tex#L57) | 58–60 |
 | T003-OLP-0068-B008 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | 88–89 |
+| T003-OLP-0113-B012 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:89-93](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L89) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:88-92](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L88) | not yet paginated |
+| T003-OLP-0118-B008 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:32-36](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:33-37](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L33) | not yet paginated |
 
 **Chosen rendering/action:** रिक्त संच
 
@@ -886,7 +921,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T005 — subset</strong> (229 occurrences; routine priority)</summary>
+<summary><strong>T005 — subset</strong> (237 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1119,6 +1154,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T005-OLP-0108-B007 | OLP-0108 · 11.10 निष्पन्नता आणि संख्यापक | [upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:23-59](../upstream/content/first-order-logic/tableaux/provability-quantifiers.tex#L23) | [mr/content/first-order-logic/tableaux/provability-quantifiers.tex:23-59](../mr/content/first-order-logic/tableaux/provability-quantifiers.tex#L23) | 149–150 |
 | T005-OLP-0109-B023 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:214-223](../upstream/content/first-order-logic/tableaux/soundness.tex#L214) | [mr/content/first-order-logic/tableaux/soundness.tex:212-221](../mr/content/first-order-logic/tableaux/soundness.tex#L212) | 150–153 |
 | T005-OLP-0109-B025 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:230-238](../upstream/content/first-order-logic/tableaux/soundness.tex#L230) | [mr/content/first-order-logic/tableaux/soundness.tex:228-236](../mr/content/first-order-logic/tableaux/soundness.tex#L228) | 150–153 |
+| T005-OLP-0118-B012 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:52-56](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L52) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:53-57](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L53) | not yet paginated |
+| T005-OLP-0118-B021 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:112-120](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L112) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:114-122](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L114) | not yet paginated |
+| T005-OLP-0118-B022 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L122) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L124) | not yet paginated |
+| T005-OLP-0119-B007 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | not yet paginated |
+| T005-OLP-0121-B008 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L23) | not yet paginated |
+| T005-OLP-0121-B010 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | not yet paginated |
+| T005-OLP-0121-B011 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | not yet paginated |
+| T005-OLP-0121-B014 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:65-68](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L65) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:66-69](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L66) | not yet paginated |
 
 **Chosen rendering/action:** उपसंच
 
@@ -1400,7 +1443,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T009 — formal validity</strong> (58 occurrences; routine priority)</summary>
+<summary><strong>T009 — formal validity</strong> (59 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1462,6 +1505,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T009-OLP-0109-B021 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:204-207](../upstream/content/first-order-logic/tableaux/soundness.tex#L204) | [mr/content/first-order-logic/tableaux/soundness.tex:202-205](../mr/content/first-order-logic/tableaux/soundness.tex#L202) | 150–153 |
 | T009-OLP-0109-B022 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:209-212](../upstream/content/first-order-logic/tableaux/soundness.tex#L209) | [mr/content/first-order-logic/tableaux/soundness.tex:207-210](../mr/content/first-order-logic/tableaux/soundness.tex#L207) | 150–153 |
 | T009-OLP-0109-B023 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:214-223](../upstream/content/first-order-logic/tableaux/soundness.tex#L214) | [mr/content/first-order-logic/tableaux/soundness.tex:212-221](../mr/content/first-order-logic/tableaux/soundness.tex#L212) | 150–153 |
+| T009-OLP-0118-B006 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** वैधता
 
@@ -1472,7 +1516,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T010 — truth / truth value</strong> (78 occurrences; routine priority)</summary>
+<summary><strong>T010 — truth / truth value</strong> (79 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1554,6 +1598,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T010-OLP-0109-B006 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:15-30](../upstream/content/first-order-logic/tableaux/soundness.tex#L15) | [mr/content/first-order-logic/tableaux/soundness.tex:15-30](../mr/content/first-order-logic/tableaux/soundness.tex#L15) | 150–153 |
 | T010-OLP-0109-B021 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:204-207](../upstream/content/first-order-logic/tableaux/soundness.tex#L204) | [mr/content/first-order-logic/tableaux/soundness.tex:202-205](../mr/content/first-order-logic/tableaux/soundness.tex#L202) | 150–153 |
 | T010-OLP-0109-B023 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:214-223](../upstream/content/first-order-logic/tableaux/soundness.tex#L214) | [mr/content/first-order-logic/tableaux/soundness.tex:212-221](../mr/content/first-order-logic/tableaux/soundness.tex#L212) | 150–153 |
+| T010-OLP-0112-B005 | OLP-0112 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19](../upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex#L12) | [mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19](../mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** सत्यता / सत्यतामूल्य
 
@@ -2214,7 +2259,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T023 — sequence/string/word</strong> (61 occurrences; high priority)</summary>
+<summary><strong>T023 — sequence/string/word</strong> (65 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2279,6 +2324,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T023-OLP-0068-B006 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | 88–89 |
 | T023-OLP-0077-B009 | OLP-0077 · 9.8 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:36-43](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L36) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:37-44](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L37) | 100–101 |
 | T023-OLP-0077-B010 | OLP-0077 · 9.8 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:45-67](../upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L45) | [mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:46-69](../mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex#L46) | 100–101 |
+| T023-OLP-0118-B015 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L69) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L70) | not yet paginated |
+| T023-OLP-0118-B022 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L122) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L124) | not yet paginated |
+| T023-OLP-0121-B008 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L23) | not yet paginated |
+| T023-OLP-0121-B013 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:60-63](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L60) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:61-64](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L61) | not yet paginated |
 
 **Chosen rendering/action:** अनुक्रम / चिन्हमाला / शब्द
 
@@ -2487,7 +2536,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T029 — axiom</strong> (40 occurrences; high priority)</summary>
+<summary><strong>T029 — axiom</strong> (58 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2531,6 +2580,24 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T029-OLP-0068-B006 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | 88–89 |
 | T029-OLP-0068-B008 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | 88–89 |
 | T029-OLP-0068-B009 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L66) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L67) | 88–89 |
+| T029-OLP-0113-B006 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-22](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-23](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L15) | not yet paginated |
+| T029-OLP-0113-B007 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L25) | not yet paginated |
+| T029-OLP-0113-B008 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L37) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:38-41](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L38) | not yet paginated |
+| T029-OLP-0113-B010 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | not yet paginated |
+| T029-OLP-0114-B005 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:13-13](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:13-13](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L13) | not yet paginated |
+| T029-OLP-0114-B006 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L15) | not yet paginated |
+| T029-OLP-0115-B005 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:11-11](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L11) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:11-11](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L11) | not yet paginated |
+| T029-OLP-0115-B006 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L13) | not yet paginated |
+| T029-OLP-0116-B006 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-39](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L16) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-41](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L16) | not yet paginated |
+| T029-OLP-0116-B007 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:41-56](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L41) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:43-56](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L43) | not yet paginated |
+| T029-OLP-0116-B008 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L58) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L58) | not yet paginated |
+| T029-OLP-0116-B012 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:120-128](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L120) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:120-127](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L120) | not yet paginated |
+| T029-OLP-0117-B007 | OLP-0117 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34](../upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L17) | [mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35](../mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L18) | not yet paginated |
+| T029-OLP-0118-B015 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L69) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L70) | not yet paginated |
+| T029-OLP-0118-B022 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L122) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L124) | not yet paginated |
+| T029-OLP-0119-B014 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | not yet paginated |
+| T029-OLP-0119-B015 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | not yet paginated |
+| T029-OLP-0119-B016 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:97-98](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L97) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:98-99](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L98) | not yet paginated |
 
 **Chosen rendering/action:** स्वयंसिद्धक
 
@@ -2752,7 +2819,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T032 — reflexive / irreflexive</strong> (85 occurrences; medium priority)</summary>
+<summary><strong>T032 — reflexive / irreflexive</strong> (89 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2841,6 +2908,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T032-OLP-0091-B011 | OLP-0091 · 10.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L53) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L53) | 121–122 |
 | T032-OLP-0105-B011 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:66-69](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L66) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:67-70](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L67) | 144–146 |
 | T032-OLP-0105-B012 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:71-79](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L71) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:72-80](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L72) | 144–146 |
+| T032-OLP-0118-B010 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:43-46](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L43) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:44-47](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L44) | not yet paginated |
+| T032-OLP-0119-B012 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L54) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L54) | not yet paginated |
+| T032-OLP-0121-B008 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L23) | not yet paginated |
+| T032-OLP-0121-B010 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | not yet paginated |
 
 **Chosen rendering/action:** परावर्ती / अपरावर्ती
 
@@ -3547,7 +3618,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T044 — computability / formula / derivation</strong> (230 occurrences; high priority)</summary>
+<summary><strong>T044 — computability / formula / derivation</strong> (268 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3781,6 +3852,44 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T044-OLP-0097-B007 | OLP-0097 · 10.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21](../upstream/content/first-order-logic/natural-deduction/soundness-identity.tex#L17) | [mr/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21](../mr/content/first-order-logic/natural-deduction/soundness-identity.tex#L17) | 130–131 |
 | T044-OLP-0097-B008 | OLP-0097 · 10.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45](../upstream/content/first-order-logic/natural-deduction/soundness-identity.tex#L23) | [mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48](../mr/content/first-order-logic/natural-deduction/soundness-identity.tex#L23) | 130–131 |
 | T044-OLP-0099-B009 | OLP-0099 · 11.1 नियम आणि टॅब्लो | [upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42](../upstream/content/first-order-logic/tableaux/rules-and-proofs.tex#L33) | [mr/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42](../mr/content/first-order-logic/tableaux/rules-and-proofs.tex#L33) | 132–133 |
+| T044-OLP-0112-B004 | OLP-0112 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:8-10](../upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex#L8) | [mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:8-10](../mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex#L8) | not yet paginated |
+| T044-OLP-0113-B005 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:13-13](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:13-13](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L13) | not yet paginated |
+| T044-OLP-0113-B006 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-22](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-23](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L15) | not yet paginated |
+| T044-OLP-0113-B007 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L25) | not yet paginated |
+| T044-OLP-0113-B008 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L37) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:38-41](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L38) | not yet paginated |
+| T044-OLP-0113-B009 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:43-46](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L43) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:43-46](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L43) | not yet paginated |
+| T044-OLP-0113-B010 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | not yet paginated |
+| T044-OLP-0113-B011 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:83-87](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L83) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:82-86](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L82) | not yet paginated |
+| T044-OLP-0113-B012 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:89-93](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L89) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:88-92](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L88) | not yet paginated |
+| T044-OLP-0114-B006 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L15) | not yet paginated |
+| T044-OLP-0114-B007 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L36) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L36) | not yet paginated |
+| T044-OLP-0115-B006 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L13) | not yet paginated |
+| T044-OLP-0115-B007 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L23) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L23) | not yet paginated |
+| T044-OLP-0116-B005 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:13-13](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:13-13](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L13) | not yet paginated |
+| T044-OLP-0116-B006 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-39](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L16) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-41](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L16) | not yet paginated |
+| T044-OLP-0116-B007 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:41-56](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L41) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:43-56](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L43) | not yet paginated |
+| T044-OLP-0116-B008 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L58) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L58) | not yet paginated |
+| T044-OLP-0116-B009 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L82) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L82) | not yet paginated |
+| T044-OLP-0116-B010 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:101-104](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L101) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:101-104](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L101) | not yet paginated |
+| T044-OLP-0116-B011 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L106) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L106) | not yet paginated |
+| T044-OLP-0116-B012 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:120-128](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L120) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:120-127](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L120) | not yet paginated |
+| T044-OLP-0117-B005 | OLP-0117 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:11-11](../upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L11) | [mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:11-11](../mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L11) | not yet paginated |
+| T044-OLP-0117-B006 | OLP-0117 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:13-15](../upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:13-16](../mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L13) | not yet paginated |
+| T044-OLP-0117-B007 | OLP-0117 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34](../upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L17) | [mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35](../mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L18) | not yet paginated |
+| T044-OLP-0118-B007 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:26-30](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L26) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:27-31](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L27) | not yet paginated |
+| T044-OLP-0118-B008 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:32-36](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:33-37](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L33) | not yet paginated |
+| T044-OLP-0118-B009 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:38-41](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:39-42](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L39) | not yet paginated |
+| T044-OLP-0118-B011 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:48-50](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L48) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:49-51](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L49) | not yet paginated |
+| T044-OLP-0118-B013 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:58-61](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L58) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:59-62](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L59) | not yet paginated |
+| T044-OLP-0118-B015 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L69) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L70) | not yet paginated |
+| T044-OLP-0118-B022 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L122) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L124) | not yet paginated |
+| T044-OLP-0119-B007 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | not yet paginated |
+| T044-OLP-0119-B009 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L36) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L36) | not yet paginated |
+| T044-OLP-0119-B013 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L61) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L61) | not yet paginated |
+| T044-OLP-0119-B014 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | not yet paginated |
+| T044-OLP-0119-B015 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | not yet paginated |
+| T044-OLP-0120-B007 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L18) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L18) | not yet paginated |
+| T044-OLP-0120-B009 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | not yet paginated |
 
 **Chosen rendering/action:** संगणनीयता / सूत्र / निष्पत्ती
 
@@ -6206,7 +6315,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T109 — proof system / proof</strong> (54 occurrences; medium priority)</summary>
+<summary><strong>T109 — proof system / proof</strong> (56 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6264,6 +6373,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T109-OLP-0109-B022 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:209-212](../upstream/content/first-order-logic/tableaux/soundness.tex#L209) | [mr/content/first-order-logic/tableaux/soundness.tex:207-210](../mr/content/first-order-logic/tableaux/soundness.tex#L207) | 150–153 |
 | T109-OLP-0109-B023 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:214-223](../upstream/content/first-order-logic/tableaux/soundness.tex#L214) | [mr/content/first-order-logic/tableaux/soundness.tex:212-221](../mr/content/first-order-logic/tableaux/soundness.tex#L212) | 150–153 |
 | T109-OLP-0109-B025 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:230-238](../upstream/content/first-order-logic/tableaux/soundness.tex#L230) | [mr/content/first-order-logic/tableaux/soundness.tex:228-236](../mr/content/first-order-logic/tableaux/soundness.tex#L228) | 150–153 |
+| T109-OLP-0118-B006 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
+| T109-OLP-0119-B007 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धता-पद्धती / सिद्धता
 
@@ -6274,7 +6385,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (18 occurrences; medium priority)</summary>
+<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (20 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6296,6 +6407,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T110-OLP-0106-B006 | OLP-0106 · 11.8 निष्पन्नता आणि सुसंगतता | [upstream/content/first-order-logic/tableaux/provability-consistency.tex:15-17](../upstream/content/first-order-logic/tableaux/provability-consistency.tex#L15) | [mr/content/first-order-logic/tableaux/provability-consistency.tex:15-16](../mr/content/first-order-logic/tableaux/provability-consistency.tex#L15) | 146–147 |
 | T110-OLP-0107-B007 | OLP-0107 · 11.9 निष्पन्नता आणि विधानीय संयोजक | [upstream/content/first-order-logic/tableaux/provability-propositional.tex:18-24](../upstream/content/first-order-logic/tableaux/provability-propositional.tex#L18) | [mr/content/first-order-logic/tableaux/provability-propositional.tex:18-23](../mr/content/first-order-logic/tableaux/provability-propositional.tex#L18) | 147–149 |
 | T110-OLP-0108-B005 | OLP-0108 · 11.10 निष्पन्नता आणि संख्यापक | [upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:12-15](../upstream/content/first-order-logic/tableaux/provability-quantifiers.tex#L12) | [mr/content/first-order-logic/tableaux/provability-quantifiers.tex:12-15](../mr/content/first-order-logic/tableaux/provability-quantifiers.tex#L12) | 149–150 |
+| T110-OLP-0118-B006 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
+| T110-OLP-0121-B006 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:15-17](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:15-16](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** संपूर्णता / संपूर्णता प्रमेय / सत्यता-फलनात्मक संपूर्णता
 
@@ -6374,7 +6487,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T112 — predicate / term / quantifier</strong> (58 occurrences; routine priority)</summary>
+<summary><strong>T112 — predicate / term / quantifier</strong> (68 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6436,6 +6549,16 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T112-OLP-0108-B009 | OLP-0108 · 11.10 निष्पन्नता आणि संख्यापक | [upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:69-86](../upstream/content/first-order-logic/tableaux/provability-quantifiers.tex#L69) | [mr/content/first-order-logic/tableaux/provability-quantifiers.tex:69-88](../mr/content/first-order-logic/tableaux/provability-quantifiers.tex#L69) | 149–150 |
 | T112-OLP-0109-B015 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:126-133](../upstream/content/first-order-logic/tableaux/soundness.tex#L126) | [mr/content/first-order-logic/tableaux/soundness.tex:124-131](../mr/content/first-order-logic/tableaux/soundness.tex#L124) | 150–153 |
 | T112-OLP-0109-B016 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:135-142](../upstream/content/first-order-logic/tableaux/soundness.tex#L135) | [mr/content/first-order-logic/tableaux/soundness.tex:133-140](../mr/content/first-order-logic/tableaux/soundness.tex#L133) | 150–153 |
+| T112-OLP-0112-B005 | OLP-0112 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19](../upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex#L12) | [mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19](../mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex#L12) | not yet paginated |
+| T112-OLP-0115-B005 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:11-11](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L11) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:11-11](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L11) | not yet paginated |
+| T112-OLP-0115-B006 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L13) | not yet paginated |
+| T112-OLP-0115-B007 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L23) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L23) | not yet paginated |
+| T112-OLP-0117-B005 | OLP-0117 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:11-11](../upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L11) | [mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:11-11](../mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L11) | not yet paginated |
+| T112-OLP-0117-B006 | OLP-0117 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:13-15](../upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:13-16](../mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L13) | not yet paginated |
+| T112-OLP-0117-B007 | OLP-0117 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34](../upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L17) | [mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35](../mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L18) | not yet paginated |
+| T112-OLP-0120-B005 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:11-11](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L11) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:11-11](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L11) | not yet paginated |
+| T112-OLP-0120-B009 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | not yet paginated |
+| T112-OLP-0120-B010 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:50-52](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L50) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:52-54](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L52) | not yet paginated |
 
 **Chosen rendering/action:** विधेय / पद / संख्यापक
 
@@ -6497,7 +6620,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T115 — propositional connective / logical connective</strong> (61 occurrences; medium priority)</summary>
+<summary><strong>T115 — propositional connective / logical connective</strong> (64 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6562,6 +6685,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T115-OLP-0107-B011 | OLP-0107 · 11.9 निष्पन्नता आणि विधानीय संयोजक | [upstream/content/first-order-logic/tableaux/provability-propositional.tex:82-124](../upstream/content/first-order-logic/tableaux/provability-propositional.tex#L82) | [mr/content/first-order-logic/tableaux/provability-propositional.tex:82-124](../mr/content/first-order-logic/tableaux/provability-propositional.tex#L82) | 147–149 |
 | T115-OLP-0107-B012 | OLP-0107 · 11.9 निष्पन्नता आणि विधानीय संयोजक | [upstream/content/first-order-logic/tableaux/provability-propositional.tex:126-132](../upstream/content/first-order-logic/tableaux/provability-propositional.tex#L126) | [mr/content/first-order-logic/tableaux/provability-propositional.tex:126-133](../mr/content/first-order-logic/tableaux/provability-propositional.tex#L126) | 147–149 |
 | T115-OLP-0107-B013 | OLP-0107 · 11.9 निष्पन्नता आणि विधानीय संयोजक | [upstream/content/first-order-logic/tableaux/provability-propositional.tex:134-173](../upstream/content/first-order-logic/tableaux/provability-propositional.tex#L134) | [mr/content/first-order-logic/tableaux/provability-propositional.tex:135-174](../mr/content/first-order-logic/tableaux/provability-propositional.tex#L135) | 147–149 |
+| T115-OLP-0112-B005 | OLP-0112 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19](../upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex#L12) | [mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19](../mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex#L12) | not yet paginated |
+| T115-OLP-0114-B005 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:13-13](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:13-13](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L13) | not yet paginated |
+| T115-OLP-0114-B006 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** विधानीय संयोजक / तार्किक संयोजक
 
@@ -6689,7 +6815,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T121 — satisfaction / satisfaction relation</strong> (85 occurrences; routine priority)</summary>
+<summary><strong>T121 — satisfaction / satisfaction relation</strong> (86 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6778,6 +6904,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T121-OLP-0111-B007 | OLP-0111 · 11.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness-identity.tex:18-23](../upstream/content/first-order-logic/tableaux/soundness-identity.tex#L18) | [mr/content/first-order-logic/tableaux/soundness-identity.tex:18-22](../mr/content/first-order-logic/tableaux/soundness-identity.tex#L18) | 154 |
 | T121-OLP-0111-B008 | OLP-0111 · 11.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness-identity.tex:25-28](../upstream/content/first-order-logic/tableaux/soundness-identity.tex#L25) | [mr/content/first-order-logic/tableaux/soundness-identity.tex:24-27](../mr/content/first-order-logic/tableaux/soundness-identity.tex#L24) | 154 |
 | T121-OLP-0111-B009 | OLP-0111 · 11.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness-identity.tex:30-43](../upstream/content/first-order-logic/tableaux/soundness-identity.tex#L30) | [mr/content/first-order-logic/tableaux/soundness-identity.tex:29-43](../mr/content/first-order-logic/tableaux/soundness-identity.tex#L29) | 154 |
+| T121-OLP-0118-B006 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** पूर्ति / पूर्ति-संबंध
 
@@ -6788,7 +6915,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T122 — tautology</strong> (8 occurrences; routine priority)</summary>
+<summary><strong>T122 — tautology</strong> (9 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6800,6 +6927,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T122-OLP-0095-B029 | OLP-0095 · 10.11 निर्दोषता | [upstream/content/first-order-logic/natural-deduction/soundness.tex:291-294](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L291) | [mr/content/first-order-logic/natural-deduction/soundness.tex:293-296](../mr/content/first-order-logic/natural-deduction/soundness.tex#L293) | 126–129 |
 | T122-OLP-0109-B006 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:15-30](../upstream/content/first-order-logic/tableaux/soundness.tex#L15) | [mr/content/first-order-logic/tableaux/soundness.tex:15-30](../mr/content/first-order-logic/tableaux/soundness.tex#L15) | 150–153 |
 | T122-OLP-0109-B021 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:204-207](../upstream/content/first-order-logic/tableaux/soundness.tex#L204) | [mr/content/first-order-logic/tableaux/soundness.tex:202-205](../mr/content/first-order-logic/tableaux/soundness.tex#L202) | 150–153 |
+| T122-OLP-0118-B006 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** सर्वतः सत्य सूत्र
 
@@ -6810,7 +6938,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T123 — entailment / entails</strong> (65 occurrences; medium priority)</summary>
+<summary><strong>T123 — entailment / entails</strong> (66 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6879,6 +7007,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T123-OLP-0105-B007 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L20) | 144–146 |
 | T123-OLP-0109-B022 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:209-212](../upstream/content/first-order-logic/tableaux/soundness.tex#L209) | [mr/content/first-order-logic/tableaux/soundness.tex:207-210](../mr/content/first-order-logic/tableaux/soundness.tex#L207) | 150–153 |
 | T123-OLP-0109-B023 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:214-223](../upstream/content/first-order-logic/tableaux/soundness.tex#L214) | [mr/content/first-order-logic/tableaux/soundness.tex:212-221](../mr/content/first-order-logic/tableaux/soundness.tex#L212) | 150–153 |
+| T123-OLP-0118-B006 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** तार्किक निष्पन्नता / तार्किकरीत्या निष्पन्न होणे
 
@@ -6889,7 +7018,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T124 — satisfiable / satisfiability</strong> (31 occurrences; medium priority)</summary>
+<summary><strong>T124 — satisfiable / satisfiability</strong> (32 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6924,6 +7053,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T124-OLP-0111-B007 | OLP-0111 · 11.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness-identity.tex:18-23](../upstream/content/first-order-logic/tableaux/soundness-identity.tex#L18) | [mr/content/first-order-logic/tableaux/soundness-identity.tex:18-22](../mr/content/first-order-logic/tableaux/soundness-identity.tex#L18) | 154 |
 | T124-OLP-0111-B008 | OLP-0111 · 11.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness-identity.tex:25-28](../upstream/content/first-order-logic/tableaux/soundness-identity.tex#L25) | [mr/content/first-order-logic/tableaux/soundness-identity.tex:24-27](../mr/content/first-order-logic/tableaux/soundness-identity.tex#L24) | 154 |
 | T124-OLP-0111-B009 | OLP-0111 · 11.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness-identity.tex:30-43](../upstream/content/first-order-logic/tableaux/soundness-identity.tex#L30) | [mr/content/first-order-logic/tableaux/soundness-identity.tex:29-43](../mr/content/first-order-logic/tableaux/soundness-identity.tex#L29) | 154 |
+| T124-OLP-0118-B006 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** पूर्ततायोग्य / पूर्ततायोग्यता
 
@@ -7058,7 +7188,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (139 occurrences; medium priority)</summary>
+<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (149 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7201,6 +7331,16 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T128-OLP-0107-B011 | OLP-0107 · 11.9 निष्पन्नता आणि विधानीय संयोजक | [upstream/content/first-order-logic/tableaux/provability-propositional.tex:82-124](../upstream/content/first-order-logic/tableaux/provability-propositional.tex#L82) | [mr/content/first-order-logic/tableaux/provability-propositional.tex:82-124](../mr/content/first-order-logic/tableaux/provability-propositional.tex#L82) | 147–149 |
 | T128-OLP-0107-B012 | OLP-0107 · 11.9 निष्पन्नता आणि विधानीय संयोजक | [upstream/content/first-order-logic/tableaux/provability-propositional.tex:126-132](../upstream/content/first-order-logic/tableaux/provability-propositional.tex#L126) | [mr/content/first-order-logic/tableaux/provability-propositional.tex:126-133](../mr/content/first-order-logic/tableaux/provability-propositional.tex#L126) | 147–149 |
 | T128-OLP-0107-B013 | OLP-0107 · 11.9 निष्पन्नता आणि विधानीय संयोजक | [upstream/content/first-order-logic/tableaux/provability-propositional.tex:134-173](../upstream/content/first-order-logic/tableaux/provability-propositional.tex#L134) | [mr/content/first-order-logic/tableaux/provability-propositional.tex:135-174](../mr/content/first-order-logic/tableaux/provability-propositional.tex#L135) | 147–149 |
+| T128-OLP-0114-B006 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L15) | not yet paginated |
+| T128-OLP-0117-B007 | OLP-0117 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34](../upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L17) | [mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35](../mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L18) | not yet paginated |
+| T128-OLP-0119-B018 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | not yet paginated |
+| T128-OLP-0121-B009 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:33-36](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L33) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:32-36](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L32) | not yet paginated |
+| T128-OLP-0121-B010 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | not yet paginated |
+| T128-OLP-0121-B011 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | not yet paginated |
+| T128-OLP-0121-B012 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:55-58](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L55) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:56-59](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L56) | not yet paginated |
+| T128-OLP-0121-B013 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:60-63](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L60) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:61-64](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L61) | not yet paginated |
+| T128-OLP-0121-B014 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:65-68](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L65) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:66-69](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L66) | not yet paginated |
+| T128-OLP-0121-B015 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:71-74](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L71) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:72-75](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** नकरण / संधियोग / विकल्पयोग / सशर्त (संकेतार्थक) / द्विसशर्त
 
@@ -7211,7 +7351,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T129 — primitive symbol / defined symbol / defined operator</strong> (16 occurrences; routine priority)</summary>
+<summary><strong>T129 — primitive symbol / defined symbol / defined operator</strong> (17 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7231,6 +7371,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T129-OLP-0103-B008 | OLP-0103 · 11.5 टॅब्लोची उदाहरणे | [upstream/content/first-order-logic/tableaux/proving-things.tex:25-47](../upstream/content/first-order-logic/tableaux/proving-things.tex#L25) | [mr/content/first-order-logic/tableaux/proving-things.tex:24-44](../mr/content/first-order-logic/tableaux/proving-things.tex#L24) | 135–140 |
 | T129-OLP-0103-B011 | OLP-0103 · 11.5 टॅब्लोची उदाहरणे | [upstream/content/first-order-logic/tableaux/proving-things.tex:76-171](../upstream/content/first-order-logic/tableaux/proving-things.tex#L76) | [mr/content/first-order-logic/tableaux/proving-things.tex:72-166](../mr/content/first-order-logic/tableaux/proving-things.tex#L72) | 135–140 |
 | T129-OLP-0104-B007 | OLP-0104 · 11.6 संख्यापकांसह टॅब्लो | [upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94](../upstream/content/first-order-logic/tableaux/proving-things-quant.tex#L20) | [mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92](../mr/content/first-order-logic/tableaux/proving-things-quant.tex#L19) | 140–144 |
+| T129-OLP-0112-B005 | OLP-0112 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19](../upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex#L12) | [mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19](../mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** आदिम चिन्ह / परिभाषित चिन्ह / परिभाषित कारक
 
@@ -7241,7 +7382,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T130 — abbreviation / abbreviates</strong> (12 occurrences; medium priority)</summary>
+<summary><strong>T130 — abbreviation / abbreviates</strong> (14 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7257,6 +7398,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T130-OLP-0058-B033 | OLP-0058 · 7.2 विधानीय सूत्र | [upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165](../upstream/content/propositional-logic/syntax-and-semantics/formulas.tex#L161) | [mr/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165](../mr/content/propositional-logic/syntax-and-semantics/formulas.tex#L161) | 76–77 |
 | T130-OLP-0072-B013 | OLP-0072 · 9.3 संख्यापकांचे नियम | [upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:59-60](../upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L59) | [mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:59-60](../mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex#L59) | 91–92 |
 | T130-OLP-0101-B013 | OLP-0101 · 11.3 संख्यापकांचे नियम | [upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77](../upstream/content/first-order-logic/tableaux/quantifier-rules.tex#L57) | [mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75](../mr/content/first-order-logic/tableaux/quantifier-rules.tex#L55) | 133–134 |
+| T130-OLP-0114-B008 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:41-41](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L41) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:41-41](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L41) | not yet paginated |
+| T130-OLP-0115-B008 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:32-32](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L32) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:32-32](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L32) | not yet paginated |
 
 **Chosen rendering/action:** संक्षेप / चा संक्षेप आहे
 
@@ -7340,7 +7483,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T134 — string / concatenation / substring</strong> (9 occurrences; medium priority)</summary>
+<summary><strong>T134 — string / concatenation / substring</strong> (10 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7353,6 +7496,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T134-OLP-0060-B014 | OLP-0060 · 7.4 रचनाक्रमिका | [upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:114-118](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex#L114) | [mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:110-114](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex#L110) | 79–80 |
 | T134-OLP-0060-B016 | OLP-0060 · 7.4 रचनाक्रमिका | [upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:126-151](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex#L126) | [mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:122-147](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex#L122) | 79–80 |
 | T134-OLP-0070-B009 | OLP-0070 · 9.1 नियम आणि निष्पत्ती | [upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:46-50](../upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L46) | [mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:48-52](../mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex#L48) | 90–91 |
+| T134-OLP-0116-B011 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L106) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L106) | not yet paginated |
 
 **Chosen rendering/action:** चिन्हमाला / जोडणी / उपचिन्हमाला
 
@@ -7443,7 +7587,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T139 — occurrence (of a variable or formula)</strong> (13 occurrences; medium priority)</summary>
+<summary><strong>T139 — occurrence (of a variable or formula)</strong> (14 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7460,6 +7604,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T139-OLP-0109-B015 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:126-133](../upstream/content/first-order-logic/tableaux/soundness.tex#L126) | [mr/content/first-order-logic/tableaux/soundness.tex:124-131](../mr/content/first-order-logic/tableaux/soundness.tex#L124) | 150–153 |
 | T139-OLP-0109-B016 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:135-142](../upstream/content/first-order-logic/tableaux/soundness.tex#L135) | [mr/content/first-order-logic/tableaux/soundness.tex:133-140](../mr/content/first-order-logic/tableaux/soundness.tex#L133) | 150–153 |
 | T139-OLP-0109-B017 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:144-150](../upstream/content/first-order-logic/tableaux/soundness.tex#L144) | [mr/content/first-order-logic/tableaux/soundness.tex:142-148](../mr/content/first-order-logic/tableaux/soundness.tex#L142) | 150–153 |
+| T139-OLP-0115-B007 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L23) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L23) | not yet paginated |
 
 **Chosen rendering/action:** आस्थिति
 
@@ -7470,7 +7615,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T140 — inductive hypothesis</strong> (12 occurrences; medium priority)</summary>
+<summary><strong>T140 — inductive hypothesis</strong> (17 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7486,6 +7631,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T140-OLP-0095-B022 | OLP-0095 · 10.11 निर्दोषता | [upstream/content/first-order-logic/natural-deduction/soundness.tex:216-240](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L216) | [mr/content/first-order-logic/natural-deduction/soundness.tex:215-240](../mr/content/first-order-logic/natural-deduction/soundness.tex#L215) | 126–129 |
 | T140-OLP-0095-B024 | OLP-0095 · 10.11 निर्दोषता | [upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271](../upstream/content/first-order-logic/natural-deduction/soundness.tex#L244) | [mr/content/first-order-logic/natural-deduction/soundness.tex:244-273](../mr/content/first-order-logic/natural-deduction/soundness.tex#L244) | 126–129 |
 | T140-OLP-0097-B008 | OLP-0097 · 10.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45](../upstream/content/first-order-logic/natural-deduction/soundness-identity.tex#L23) | [mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48](../mr/content/first-order-logic/natural-deduction/soundness-identity.tex#L23) | 130–131 |
+| T140-OLP-0119-B013 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L61) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L61) | not yet paginated |
+| T140-OLP-0119-B015 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | not yet paginated |
+| T140-OLP-0120-B007 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L18) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L18) | not yet paginated |
+| T140-OLP-0120-B008 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:22-23](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L22) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:22-23](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L22) | not yet paginated |
+| T140-OLP-0120-B009 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | not yet paginated |
 
 **Chosen rendering/action:** विगमन गृहीतक
 
@@ -7554,7 +7704,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T144 — finite sequence / proper initial subsequence</strong> (27 occurrences; medium priority)</summary>
+<summary><strong>T144 — finite sequence / proper initial subsequence</strong> (30 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7585,6 +7735,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T144-OLP-0106-B010 | OLP-0106 · 11.8 निष्पन्नता आणि सुसंगतता | [upstream/content/first-order-logic/tableaux/provability-consistency.tex:45-57](../upstream/content/first-order-logic/tableaux/provability-consistency.tex#L45) | [mr/content/first-order-logic/tableaux/provability-consistency.tex:45-57](../mr/content/first-order-logic/tableaux/provability-consistency.tex#L45) | 146–147 |
 | T144-OLP-0106-B014 | OLP-0106 · 11.8 निष्पन्नता आणि सुसंगतता | [upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98](../upstream/content/first-order-logic/tableaux/provability-consistency.tex#L84) | [mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97](../mr/content/first-order-logic/tableaux/provability-consistency.tex#L84) | 146–147 |
 | T144-OLP-0106-B016 | OLP-0106 · 11.8 निष्पन्नता आणि सुसंगतता | [upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120](../upstream/content/first-order-logic/tableaux/provability-consistency.tex#L105) | [mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118](../mr/content/first-order-logic/tableaux/provability-consistency.tex#L104) | 146–147 |
+| T144-OLP-0118-B021 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:112-120](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L112) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:114-122](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L114) | not yet paginated |
+| T144-OLP-0118-B022 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L122) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L124) | not yet paginated |
+| T144-OLP-0119-B013 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L61) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L61) | not yet paginated |
 
 **Chosen rendering/action:** सांत क्रमिका / उचित आरंभीची उपक्रमिका
 
@@ -7677,7 +7830,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T149 — monotonicity (of semantic entailment)</strong> (7 occurrences; routine priority)</summary>
+<summary><strong>T149 — monotonicity (of semantic entailment)</strong> (12 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7688,6 +7841,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T149-OLP-0091-B014 | OLP-0091 · 10.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L70) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L70) | 121–122 |
 | T149-OLP-0105-B013 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:82-86](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L82) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:83-87](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L83) | 144–146 |
 | T149-OLP-0105-B014 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:88-90](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L88) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:89-91](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L89) | 144–146 |
+| T149-OLP-0118-B012 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:52-56](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L52) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:53-57](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L53) | not yet paginated |
+| T149-OLP-0118-B013 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:58-61](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L58) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:59-62](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L59) | not yet paginated |
+| T149-OLP-0119-B007 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | not yet paginated |
+| T149-OLP-0119-B012 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L54) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L54) | not yet paginated |
+| T149-OLP-0121-B010 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | not yet paginated |
 
 **Chosen rendering/action:** एकस्वनिकता
 
@@ -7713,7 +7871,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T151 — axiomatic system / inference rule</strong> (123 occurrences; routine priority)</summary>
+<summary><strong>T151 — axiomatic system / inference rule</strong> (141 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7840,6 +7998,24 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T151-OLP-0109-B022 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:209-212](../upstream/content/first-order-logic/tableaux/soundness.tex#L209) | [mr/content/first-order-logic/tableaux/soundness.tex:207-210](../mr/content/first-order-logic/tableaux/soundness.tex#L207) | 150–153 |
 | T151-OLP-0110-B006 | OLP-0110 · 11.12 टॅब्लो सह एकरूपता | [upstream/content/first-order-logic/tableaux/identity.tex:13-14](../upstream/content/first-order-logic/tableaux/identity.tex#L13) | [mr/content/first-order-logic/tableaux/identity.tex:13-14](../mr/content/first-order-logic/tableaux/identity.tex#L13) | 153–154 |
 | T151-OLP-0110-B007 | OLP-0110 · 11.12 टॅब्लो सह एकरूपता | [upstream/content/first-order-logic/tableaux/identity.tex:16-39](../upstream/content/first-order-logic/tableaux/identity.tex#L16) | [mr/content/first-order-logic/tableaux/identity.tex:16-39](../mr/content/first-order-logic/tableaux/identity.tex#L16) | 153–154 |
+| T151-OLP-0113-B005 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:13-13](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:13-13](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L13) | not yet paginated |
+| T151-OLP-0113-B006 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-22](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-23](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L15) | not yet paginated |
+| T151-OLP-0113-B007 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L25) | not yet paginated |
+| T151-OLP-0113-B008 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L37) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:38-41](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L38) | not yet paginated |
+| T151-OLP-0113-B009 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:43-46](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L43) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:43-46](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L43) | not yet paginated |
+| T151-OLP-0113-B010 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | not yet paginated |
+| T151-OLP-0114-B005 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:13-13](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:13-13](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L13) | not yet paginated |
+| T151-OLP-0114-B007 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L36) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L36) | not yet paginated |
+| T151-OLP-0115-B005 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:11-11](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L11) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:11-11](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L11) | not yet paginated |
+| T151-OLP-0115-B007 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L23) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L23) | not yet paginated |
+| T151-OLP-0115-B008 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:32-32](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L32) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:32-32](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L32) | not yet paginated |
+| T151-OLP-0116-B006 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-39](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L16) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-41](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L16) | not yet paginated |
+| T151-OLP-0116-B007 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:41-56](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L41) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:43-56](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L43) | not yet paginated |
+| T151-OLP-0117-B007 | OLP-0117 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34](../upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L17) | [mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35](../mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L18) | not yet paginated |
+| T151-OLP-0118-B015 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L69) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L70) | not yet paginated |
+| T151-OLP-0119-B007 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | not yet paginated |
+| T151-OLP-0120-B009 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | not yet paginated |
+| T151-OLP-0120-B010 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:50-52](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L50) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:52-54](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L52) | not yet paginated |
 
 **Chosen rendering/action:** स्वयंसिद्धकीय पद्धत / निगमन नियम
 
@@ -7916,7 +8092,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T154 — theorem</strong> (48 occurrences; routine priority)</summary>
+<summary><strong>T154 — theorem</strong> (51 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7968,6 +8144,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T154-OLP-0085-B010 | OLP-0085 · 10.1 नियम आणि निष्पत्ती | [upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48](../upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L47) | [mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45](../mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex#L44) | 110 |
 | T154-OLP-0091-B008 | OLP-0091 · 10.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L32) | 121–122 |
 | T154-OLP-0105-B008 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:31-35](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L31) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:32-36](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L32) | 144–146 |
+| T154-OLP-0113-B012 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:89-93](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L89) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:88-92](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L88) | not yet paginated |
+| T154-OLP-0118-B008 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:32-36](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:33-37](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L33) | not yet paginated |
+| T154-OLP-0119-B014 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | not yet paginated |
 
 **Chosen rendering/action:** प्रमेय
 
@@ -7978,7 +8157,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T155 — soundness / sound / unsound (of a proof system)</strong> (76 occurrences; high priority)</summary>
+<summary><strong>T155 — soundness / sound / unsound (of a proof system)</strong> (77 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8058,6 +8237,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T155-OLP-0111-B007 | OLP-0111 · 11.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness-identity.tex:18-23](../upstream/content/first-order-logic/tableaux/soundness-identity.tex#L18) | [mr/content/first-order-logic/tableaux/soundness-identity.tex:18-22](../mr/content/first-order-logic/tableaux/soundness-identity.tex#L18) | 154 |
 | T155-OLP-0111-B008 | OLP-0111 · 11.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness-identity.tex:25-28](../upstream/content/first-order-logic/tableaux/soundness-identity.tex#L25) | [mr/content/first-order-logic/tableaux/soundness-identity.tex:24-27](../mr/content/first-order-logic/tableaux/soundness-identity.tex#L24) | 154 |
 | T155-OLP-0111-B009 | OLP-0111 · 11.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness-identity.tex:30-43](../upstream/content/first-order-logic/tableaux/soundness-identity.tex#L30) | [mr/content/first-order-logic/tableaux/soundness-identity.tex:29-43](../mr/content/first-order-logic/tableaux/soundness-identity.tex#L29) | 154 |
+| T155-OLP-0118-B006 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** निर्दोषता / निर्दोष / सदोष
 
@@ -8068,7 +8248,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (108 occurrences; routine priority)</summary>
+<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (125 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8180,6 +8360,23 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T156-OLP-0109-B006 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:15-30](../upstream/content/first-order-logic/tableaux/soundness.tex#L15) | [mr/content/first-order-logic/tableaux/soundness.tex:15-30](../mr/content/first-order-logic/tableaux/soundness.tex#L15) | 150–153 |
 | T156-OLP-0109-B024 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:225-228](../upstream/content/first-order-logic/tableaux/soundness.tex#L225) | [mr/content/first-order-logic/tableaux/soundness.tex:223-226](../mr/content/first-order-logic/tableaux/soundness.tex#L223) | 150–153 |
 | T156-OLP-0109-B025 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:230-238](../upstream/content/first-order-logic/tableaux/soundness.tex#L230) | [mr/content/first-order-logic/tableaux/soundness.tex:228-236](../mr/content/first-order-logic/tableaux/soundness.tex#L228) | 150–153 |
+| T156-OLP-0118-B009 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:38-41](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:39-42](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L39) | not yet paginated |
+| T156-OLP-0118-B017 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:91-94](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L91) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:92-96](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L92) | not yet paginated |
+| T156-OLP-0118-B018 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:96-98](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L96) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:98-100](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L98) | not yet paginated |
+| T156-OLP-0118-B021 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:112-120](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L112) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:114-122](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L114) | not yet paginated |
+| T156-OLP-0118-B022 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L122) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L124) | not yet paginated |
+| T156-OLP-0121-B005 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:13-13](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:13-13](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L13) | not yet paginated |
+| T156-OLP-0121-B007 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:19-22](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L19) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:18-21](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L18) | not yet paginated |
+| T156-OLP-0121-B008 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L23) | not yet paginated |
+| T156-OLP-0121-B009 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:33-36](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L33) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:32-36](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L32) | not yet paginated |
+| T156-OLP-0121-B010 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | not yet paginated |
+| T156-OLP-0121-B011 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | not yet paginated |
+| T156-OLP-0121-B012 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:55-58](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L55) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:56-59](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L56) | not yet paginated |
+| T156-OLP-0121-B013 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:60-63](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L60) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:61-64](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L61) | not yet paginated |
+| T156-OLP-0121-B015 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:71-74](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L71) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:72-75](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L72) | not yet paginated |
+| T156-OLP-0121-B016 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:76-78](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L76) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:77-79](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L77) | not yet paginated |
+| T156-OLP-0121-B017 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:80-84](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L80) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:81-85](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L81) | not yet paginated |
+| T156-OLP-0121-B018 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:86-90](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L86) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:87-91](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L87) | not yet paginated |
 
 **Chosen rendering/action:** सुसंगतता / विसंगतता / सुसंगत / विसंगत
 
@@ -8266,7 +8463,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T159 — assumption / discharge / discharged / undischarged</strong> (90 occurrences; medium priority)</summary>
+<summary><strong>T159 — assumption / discharge / discharged / undischarged</strong> (92 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8360,6 +8557,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T159-OLP-0107-B011 | OLP-0107 · 11.9 निष्पन्नता आणि विधानीय संयोजक | [upstream/content/first-order-logic/tableaux/provability-propositional.tex:82-124](../upstream/content/first-order-logic/tableaux/provability-propositional.tex#L82) | [mr/content/first-order-logic/tableaux/provability-propositional.tex:82-124](../mr/content/first-order-logic/tableaux/provability-propositional.tex#L82) | 147–149 |
 | T159-OLP-0107-B013 | OLP-0107 · 11.9 निष्पन्नता आणि विधानीय संयोजक | [upstream/content/first-order-logic/tableaux/provability-propositional.tex:134-173](../upstream/content/first-order-logic/tableaux/provability-propositional.tex#L134) | [mr/content/first-order-logic/tableaux/provability-propositional.tex:135-174](../mr/content/first-order-logic/tableaux/provability-propositional.tex#L135) | 147–149 |
 | T159-OLP-0108-B007 | OLP-0108 · 11.10 निष्पन्नता आणि संख्यापक | [upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:23-59](../upstream/content/first-order-logic/tableaux/provability-quantifiers.tex#L23) | [mr/content/first-order-logic/tableaux/provability-quantifiers.tex:23-59](../mr/content/first-order-logic/tableaux/provability-quantifiers.tex#L23) | 149–150 |
+| T159-OLP-0116-B009 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L82) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L82) | not yet paginated |
+| T159-OLP-0119-B009 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L36) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L36) | not yet paginated |
 
 **Chosen rendering/action:** गृहीतक / मुक्त करणे / मुक्त केलेले / मुक्त न केलेले
 
@@ -8730,7 +8929,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T167 — axiomatic derivation / axiom schema / sentence schema</strong> (4 occurrences; routine priority)</summary>
+<summary><strong>T167 — axiomatic derivation / axiom schema / sentence schema</strong> (13 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8738,6 +8937,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T167-OLP-0068-B006 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L15) | 88–89 |
 | T167-OLP-0068-B008 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L46) | 88–89 |
 | T167-OLP-0068-B010 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L70) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L71) | 88–89 |
+| T167-OLP-0112-B004 | OLP-0112 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:8-10](../upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex#L8) | [mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:8-10](../mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex#L8) | not yet paginated |
+| T167-OLP-0113-B005 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:13-13](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:13-13](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L13) | not yet paginated |
+| T167-OLP-0113-B006 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-22](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-23](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L15) | not yet paginated |
+| T167-OLP-0113-B007 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L25) | not yet paginated |
+| T167-OLP-0113-B010 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | not yet paginated |
+| T167-OLP-0114-B006 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L15) | not yet paginated |
+| T167-OLP-0115-B006 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L13) | not yet paginated |
+| T167-OLP-0116-B008 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L58) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L58) | not yet paginated |
+| T167-OLP-0119-B016 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:97-98](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L97) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:98-99](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L98) | not yet paginated |
 
 **Chosen rendering/action:** स्वयंसिद्धकीय निष्पत्ती / स्वयंसिद्धक-रूपबंध / वाक्य-रूपबंध
 
@@ -8748,7 +8956,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T168 — justified / justification (of a derivation line)</strong> (11 occurrences; medium priority)</summary>
+<summary><strong>T168 — justified / justification (of a derivation line)</strong> (25 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8763,6 +8971,20 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T168-OLP-0110-B008 | OLP-0110 · 11.12 टॅब्लो सह एकरूपता | [upstream/content/first-order-logic/tableaux/identity.tex:41-54](../upstream/content/first-order-logic/tableaux/identity.tex#L41) | [mr/content/first-order-logic/tableaux/identity.tex:41-54](../mr/content/first-order-logic/tableaux/identity.tex#L41) | 153–154 |
 | T168-OLP-0110-B009 | OLP-0110 · 11.12 टॅब्लो सह एकरूपता | [upstream/content/first-order-logic/tableaux/identity.tex:56-71](../upstream/content/first-order-logic/tableaux/identity.tex#L56) | [mr/content/first-order-logic/tableaux/identity.tex:56-71](../mr/content/first-order-logic/tableaux/identity.tex#L56) | 153–154 |
 | T168-OLP-0110-B010 | OLP-0110 · 11.12 टॅब्लो सह एकरूपता | [upstream/content/first-order-logic/tableaux/identity.tex:73-91](../upstream/content/first-order-logic/tableaux/identity.tex#L73) | [mr/content/first-order-logic/tableaux/identity.tex:73-91](../mr/content/first-order-logic/tableaux/identity.tex#L73) | 153–154 |
+| T168-OLP-0113-B006 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-22](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-23](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L15) | not yet paginated |
+| T168-OLP-0113-B007 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L25) | not yet paginated |
+| T168-OLP-0113-B008 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L37) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:38-41](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L38) | not yet paginated |
+| T168-OLP-0113-B009 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:43-46](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L43) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:43-46](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L43) | not yet paginated |
+| T168-OLP-0113-B010 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | not yet paginated |
+| T168-OLP-0114-B007 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L36) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L36) | not yet paginated |
+| T168-OLP-0115-B007 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L23) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L23) | not yet paginated |
+| T168-OLP-0116-B006 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-39](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L16) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-41](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L16) | not yet paginated |
+| T168-OLP-0116-B007 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:41-56](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L41) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:43-56](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L43) | not yet paginated |
+| T168-OLP-0116-B011 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L106) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L106) | not yet paginated |
+| T168-OLP-0118-B015 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L69) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L70) | not yet paginated |
+| T168-OLP-0119-B015 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | not yet paginated |
+| T168-OLP-0120-B009 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | not yet paginated |
+| T168-OLP-0120-B010 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:50-52](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L50) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:52-54](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L52) | not yet paginated |
 
 **Chosen rendering/action:** समर्थित / समर्थन मिळणे
 
@@ -8773,7 +8995,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T169 — modus ponens</strong> (9 occurrences; routine priority)</summary>
+<summary><strong>T169 — modus ponens</strong> (28 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8786,6 +9008,25 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T169-OLP-0107-B007 | OLP-0107 · 11.9 निष्पन्नता आणि विधानीय संयोजक | [upstream/content/first-order-logic/tableaux/provability-propositional.tex:18-24](../upstream/content/first-order-logic/tableaux/provability-propositional.tex#L18) | [mr/content/first-order-logic/tableaux/provability-propositional.tex:18-23](../mr/content/first-order-logic/tableaux/provability-propositional.tex#L18) | 147–149 |
 | T169-OLP-0107-B012 | OLP-0107 · 11.9 निष्पन्नता आणि विधानीय संयोजक | [upstream/content/first-order-logic/tableaux/provability-propositional.tex:126-132](../upstream/content/first-order-logic/tableaux/provability-propositional.tex#L126) | [mr/content/first-order-logic/tableaux/provability-propositional.tex:126-133](../mr/content/first-order-logic/tableaux/provability-propositional.tex#L126) | 147–149 |
 | T169-OLP-0107-B013 | OLP-0107 · 11.9 निष्पन्नता आणि विधानीय संयोजक | [upstream/content/first-order-logic/tableaux/provability-propositional.tex:134-173](../upstream/content/first-order-logic/tableaux/provability-propositional.tex#L134) | [mr/content/first-order-logic/tableaux/provability-propositional.tex:135-174](../mr/content/first-order-logic/tableaux/provability-propositional.tex#L135) | 147–149 |
+| T169-OLP-0113-B010 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | not yet paginated |
+| T169-OLP-0114-B007 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L36) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L36) | not yet paginated |
+| T169-OLP-0114-B008 | OLP-0114 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:41-41](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L41) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:41-41](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex#L41) | not yet paginated |
+| T169-OLP-0116-B006 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-39](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L16) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-41](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L16) | not yet paginated |
+| T169-OLP-0116-B007 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:41-56](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L41) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:43-56](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L43) | not yet paginated |
+| T169-OLP-0116-B008 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L58) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L58) | not yet paginated |
+| T169-OLP-0116-B009 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L82) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L82) | not yet paginated |
+| T169-OLP-0117-B007 | OLP-0117 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34](../upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L17) | [mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35](../mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L18) | not yet paginated |
+| T169-OLP-0118-B022 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L122) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L124) | not yet paginated |
+| T169-OLP-0119-B007 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | not yet paginated |
+| T169-OLP-0119-B008 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:31-34](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L31) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:31-34](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L31) | not yet paginated |
+| T169-OLP-0119-B009 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L36) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L36) | not yet paginated |
+| T169-OLP-0119-B012 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L54) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L54) | not yet paginated |
+| T169-OLP-0119-B014 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | not yet paginated |
+| T169-OLP-0119-B015 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | not yet paginated |
+| T169-OLP-0120-B009 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | not yet paginated |
+| T169-OLP-0121-B010 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | not yet paginated |
+| T169-OLP-0121-B011 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | not yet paginated |
+| T169-OLP-0121-B014 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:65-68](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L65) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:66-69](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L66) | not yet paginated |
 
 **Chosen rendering/action:** विध्यात्मक अनुमान
 
@@ -8914,7 +9155,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T174 — closed term</strong> (68 occurrences; high priority)</summary>
+<summary><strong>T174 — closed term</strong> (69 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8986,6 +9227,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T174-OLP-0110-B006 | OLP-0110 · 11.12 टॅब्लो सह एकरूपता | [upstream/content/first-order-logic/tableaux/identity.tex:13-14](../upstream/content/first-order-logic/tableaux/identity.tex#L13) | [mr/content/first-order-logic/tableaux/identity.tex:13-14](../mr/content/first-order-logic/tableaux/identity.tex#L13) | 153–154 |
 | T174-OLP-0110-B007 | OLP-0110 · 11.12 टॅब्लो सह एकरूपता | [upstream/content/first-order-logic/tableaux/identity.tex:16-39](../upstream/content/first-order-logic/tableaux/identity.tex#L16) | [mr/content/first-order-logic/tableaux/identity.tex:16-39](../mr/content/first-order-logic/tableaux/identity.tex#L16) | 153–154 |
 | T174-OLP-0110-B008 | OLP-0110 · 11.12 टॅब्लो सह एकरूपता | [upstream/content/first-order-logic/tableaux/identity.tex:41-54](../upstream/content/first-order-logic/tableaux/identity.tex#L41) | [mr/content/first-order-logic/tableaux/identity.tex:41-54](../mr/content/first-order-logic/tableaux/identity.tex#L41) | 153–154 |
+| T174-OLP-0115-B006 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** बंद पद
 
@@ -9210,7 +9452,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T179 — eigenvariable condition</strong> (69 occurrences; high priority)</summary>
+<summary><strong>T179 — eigenvariable condition</strong> (71 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9283,6 +9525,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T179-OLP-0104-B010 | OLP-0104 · 11.6 संख्यापकांसह टॅब्लो | [upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315](../upstream/content/first-order-logic/tableaux/proving-things-quant.tex#L212) | [mr/content/first-order-logic/tableaux/proving-things-quant.tex:208-309](../mr/content/first-order-logic/tableaux/proving-things-quant.tex#L208) | 140–144 |
 | T179-OLP-0108-B006 | OLP-0108 · 11.10 निष्पन्नता आणि संख्यापक | [upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:17-21](../upstream/content/first-order-logic/tableaux/provability-quantifiers.tex#L17) | [mr/content/first-order-logic/tableaux/provability-quantifiers.tex:17-21](../mr/content/first-order-logic/tableaux/provability-quantifiers.tex#L17) | 149–150 |
 | T179-OLP-0108-B007 | OLP-0108 · 11.10 निष्पन्नता आणि संख्यापक | [upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:23-59](../upstream/content/first-order-logic/tableaux/provability-quantifiers.tex#L23) | [mr/content/first-order-logic/tableaux/provability-quantifiers.tex:23-59](../mr/content/first-order-logic/tableaux/provability-quantifiers.tex#L23) | 149–150 |
+| T179-OLP-0115-B007 | OLP-0115 ·  | [upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30](../upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L23) | [mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex#L23) | not yet paginated |
+| T179-OLP-0120-B009 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | not yet paginated |
 
 **Chosen rendering/action:** आयगेन चराची अट
 
@@ -9330,7 +9574,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T181 — compactness (proof-theoretic property)</strong> (6 occurrences; medium priority)</summary>
+<summary><strong>T181 — compactness (proof-theoretic property)</strong> (8 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9340,6 +9584,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T181-OLP-0091-B024 | OLP-0091 · 10.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L146) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L149) | 121–122 |
 | T181-OLP-0105-B023 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:162-170](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L162) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:163-171](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L163) | 144–146 |
 | T181-OLP-0105-B024 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:172-188](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L172) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:173-189](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L173) | 144–146 |
+| T181-OLP-0118-B021 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:112-120](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L112) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:114-122](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L114) | not yet paginated |
+| T181-OLP-0118-B022 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L122) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L124) | not yet paginated |
 
 **Chosen rendering/action:** संहतता
 
@@ -9350,7 +9596,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T182 — proof-theoretic notions</strong> (6 occurrences; medium priority)</summary>
+<summary><strong>T182 — proof-theoretic notions</strong> (8 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9360,6 +9606,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T182-OLP-0091-B007 | OLP-0091 · 10.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex#L20) | 121–122 |
 | T182-OLP-0105-B005 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:13-13](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L13) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:13-13](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L13) | 144–146 |
 | T182-OLP-0105-B007 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L20) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L20) | 144–146 |
+| T182-OLP-0118-B005 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-13](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-13](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L13) | not yet paginated |
+| T182-OLP-0118-B006 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धता-उपपत्तीय संकल्पना
 
@@ -9370,7 +9618,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T183 — transitivity (of derivability)</strong> (10 occurrences; medium priority)</summary>
+<summary><strong>T183 — transitivity (of derivability)</strong> (16 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9384,6 +9632,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T183-OLP-0105-B016 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L98) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-110](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L99) | 144–146 |
 | T183-OLP-0105-B017 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:111-133](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L111) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:112-134](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L112) | 144–146 |
 | T183-OLP-0105-B018 | OLP-0105 · 11.7 सिद्धता-उपपत्तीय संकल्पना | [upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:135-138](../upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L135) | [mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:136-139](../mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex#L136) | 144–146 |
+| T183-OLP-0118-B014 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:63-67](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L63) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:64-68](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L64) | not yet paginated |
+| T183-OLP-0118-B015 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L69) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L70) | not yet paginated |
+| T183-OLP-0118-B016 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:86-89](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L86) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:87-90](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L87) | not yet paginated |
+| T183-OLP-0119-B007 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | not yet paginated |
+| T183-OLP-0119-B009 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L36) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L36) | not yet paginated |
+| T183-OLP-0121-B008 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L23) | not yet paginated |
 
 **Chosen rendering/action:** संक्रमकता
 
@@ -9394,7 +9648,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T184 — derivability / provability relation</strong> (190 occurrences; medium priority)</summary>
+<summary><strong>T184 — derivability / provability relation</strong> (244 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9588,6 +9842,60 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T184-OLP-0110-B008 | OLP-0110 · 11.12 टॅब्लो सह एकरूपता | [upstream/content/first-order-logic/tableaux/identity.tex:41-54](../upstream/content/first-order-logic/tableaux/identity.tex#L41) | [mr/content/first-order-logic/tableaux/identity.tex:41-54](../mr/content/first-order-logic/tableaux/identity.tex#L41) | 153–154 |
 | T184-OLP-0110-B009 | OLP-0110 · 11.12 टॅब्लो सह एकरूपता | [upstream/content/first-order-logic/tableaux/identity.tex:56-71](../upstream/content/first-order-logic/tableaux/identity.tex#L56) | [mr/content/first-order-logic/tableaux/identity.tex:56-71](../mr/content/first-order-logic/tableaux/identity.tex#L56) | 153–154 |
 | T184-OLP-0110-B010 | OLP-0110 · 11.12 टॅब्लो सह एकरूपता | [upstream/content/first-order-logic/tableaux/identity.tex:73-91](../upstream/content/first-order-logic/tableaux/identity.tex#L73) | [mr/content/first-order-logic/tableaux/identity.tex:73-91](../mr/content/first-order-logic/tableaux/identity.tex#L73) | 153–154 |
+| T184-OLP-0113-B007 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L25) | not yet paginated |
+| T184-OLP-0113-B010 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L48) | not yet paginated |
+| T184-OLP-0113-B011 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:83-87](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L83) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:82-86](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L82) | not yet paginated |
+| T184-OLP-0113-B012 | OLP-0113 ·  | [upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:89-93](../upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L89) | [mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:88-92](../mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex#L88) | not yet paginated |
+| T184-OLP-0116-B007 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:41-56](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L41) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:43-56](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L43) | not yet paginated |
+| T184-OLP-0116-B008 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L58) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L58) | not yet paginated |
+| T184-OLP-0116-B009 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L82) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L82) | not yet paginated |
+| T184-OLP-0116-B010 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:101-104](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L101) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:101-104](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L101) | not yet paginated |
+| T184-OLP-0116-B011 | OLP-0116 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118](../upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex#L106) | [mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118](../mr/content/first-order-logic/axiomatic-deduction/proving-things.tex#L106) | not yet paginated |
+| T184-OLP-0117-B007 | OLP-0117 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34](../upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L17) | [mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35](../mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex#L18) | not yet paginated |
+| T184-OLP-0118-B006 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L15) | not yet paginated |
+| T184-OLP-0118-B007 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:26-30](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L26) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:27-31](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L27) | not yet paginated |
+| T184-OLP-0118-B008 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:32-36](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L32) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:33-37](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L33) | not yet paginated |
+| T184-OLP-0118-B009 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:38-41](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:39-42](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L39) | not yet paginated |
+| T184-OLP-0118-B010 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:43-46](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L43) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:44-47](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L44) | not yet paginated |
+| T184-OLP-0118-B011 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:48-50](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L48) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:49-51](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L49) | not yet paginated |
+| T184-OLP-0118-B012 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:52-56](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L52) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:53-57](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L53) | not yet paginated |
+| T184-OLP-0118-B013 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:58-61](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L58) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:59-62](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L59) | not yet paginated |
+| T184-OLP-0118-B014 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:63-67](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L63) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:64-68](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L64) | not yet paginated |
+| T184-OLP-0118-B015 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L69) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L70) | not yet paginated |
+| T184-OLP-0118-B016 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:86-89](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L86) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:87-90](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L87) | not yet paginated |
+| T184-OLP-0118-B017 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:91-94](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L91) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:92-96](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L92) | not yet paginated |
+| T184-OLP-0118-B018 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:96-98](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L96) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:98-100](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L98) | not yet paginated |
+| T184-OLP-0118-B019 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:100-104](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L100) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:102-106](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L102) | not yet paginated |
+| T184-OLP-0118-B020 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:106-110](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L106) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:108-112](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L108) | not yet paginated |
+| T184-OLP-0118-B021 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:112-120](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L112) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:114-122](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L114) | not yet paginated |
+| T184-OLP-0118-B022 | OLP-0118 ·  | [upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134](../upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L122) | [mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137](../mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex#L124) | not yet paginated |
+| T184-OLP-0119-B007 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L18) | not yet paginated |
+| T184-OLP-0119-B008 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:31-34](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L31) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:31-34](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L31) | not yet paginated |
+| T184-OLP-0119-B009 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L36) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L36) | not yet paginated |
+| T184-OLP-0119-B011 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-52](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L49) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-52](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L49) | not yet paginated |
+| T184-OLP-0119-B012 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L54) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L54) | not yet paginated |
+| T184-OLP-0119-B013 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L61) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L61) | not yet paginated |
+| T184-OLP-0119-B014 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | not yet paginated |
+| T184-OLP-0119-B015 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L75) | not yet paginated |
+| T184-OLP-0119-B017 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:100-101](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L100) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:101-101](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L101) | not yet paginated |
+| T184-OLP-0119-B018 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | not yet paginated |
+| T184-OLP-0119-B019 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:120-124](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L120) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:121-125](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L121) | not yet paginated |
+| T184-OLP-0119-B020 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:126-130](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L126) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:127-131](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L127) | not yet paginated |
+| T184-OLP-0120-B006 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:13-16](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:13-16](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L13) | not yet paginated |
+| T184-OLP-0120-B007 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L18) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L18) | not yet paginated |
+| T184-OLP-0120-B009 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | not yet paginated |
+| T184-OLP-0121-B005 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:13-13](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:13-13](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L13) | not yet paginated |
+| T184-OLP-0121-B006 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:15-17](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:15-16](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L15) | not yet paginated |
+| T184-OLP-0121-B007 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:19-22](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L19) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:18-21](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L18) | not yet paginated |
+| T184-OLP-0121-B008 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L24) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L23) | not yet paginated |
+| T184-OLP-0121-B009 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:33-36](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L33) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:32-36](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L32) | not yet paginated |
+| T184-OLP-0121-B010 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | not yet paginated |
+| T184-OLP-0121-B011 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | not yet paginated |
+| T184-OLP-0121-B012 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:55-58](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L55) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:56-59](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L56) | not yet paginated |
+| T184-OLP-0121-B013 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:60-63](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L60) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:61-64](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L61) | not yet paginated |
+| T184-OLP-0121-B014 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:65-68](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L65) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:66-69](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L66) | not yet paginated |
+| T184-OLP-0121-B017 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:80-84](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L80) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:81-85](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L81) | not yet paginated |
+| T184-OLP-0121-B018 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:86-90](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L86) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:87-91](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L87) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धतायोग्यता / सिद्धतायोग्य
 
@@ -9609,6 +9917,77 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; adopted direct authoritative proof-theory usage; open to correction.
 
 **Please double-check:** Does the directly attested अंतःप्रज्ञावादी तर्कशास्त्र remain the preferred modern Marathi label in a natural-deduction rule discussion?
+
+</details>
+
+<details>
+<summary><strong>T186 — Deduction Theorem (proof-theoretic)</strong> (11 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T186-OLP-0119-B006 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:16-16](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L16) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:16-16](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L16) | not yet paginated |
+| T186-OLP-0119-B010 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:46-47](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L46) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:46-47](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L46) | not yet paginated |
+| T186-OLP-0119-B011 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-52](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L49) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-52](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L49) | not yet paginated |
+| T186-OLP-0119-B014 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L64) | not yet paginated |
+| T186-OLP-0119-B016 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:97-98](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L97) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:98-99](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L98) | not yet paginated |
+| T186-OLP-0120-B005 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:11-11](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L11) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:11-11](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L11) | not yet paginated |
+| T186-OLP-0120-B006 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:13-16](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L13) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:13-16](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L13) | not yet paginated |
+| T186-OLP-0120-B008 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:22-23](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L22) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:22-23](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L22) | not yet paginated |
+| T186-OLP-0120-B009 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L25) | not yet paginated |
+| T186-OLP-0120-B011 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:54-56](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L54) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:56-58](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L56) | not yet paginated |
+| T186-OLP-0121-B011 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | not yet paginated |
+
+**Chosen rendering/action:** निगमन प्रमेय
+
+**Confidence/status:** medium; direct official headword composed into a source-controlled theorem title; expert review useful; open to correction.
+
+**Please double-check:** Is निगमन प्रमेय the clearest Marathi title for the proof-theoretic Deduction Theorem, while remaining visibly paired with the semantic version?
+
+</details>
+
+<details>
+<summary><strong>T187 — contraposition</strong> (1 occurrence; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T187-OLP-0119-B018 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | not yet paginated |
+
+**Chosen rendering/action:** प्रतिपरिवर्तन
+
+**Confidence/status:** high; adopted direct official logic attestation; open to correction.
+
+**Please double-check:** Does the directly attested प्रतिपरिवर्तन remain natural for this derivability form of contraposition?
+
+</details>
+
+<details>
+<summary><strong>T188 — ex falso quodlibet / explosion</strong> (1 occurrence; high priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T188-OLP-0119-B018 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | not yet paginated |
+
+**Chosen rendering/action:** असत्यापासून काहीही / स्फोट
+
+**Confidence/status:** low; formula-controlled explanatory rendering with provisional literal label; expert review especially useful; open to correction.
+
+**Please double-check:** Should the edition lead with the transparent असत्यापासून काहीही, adopt स्फोट alone, or use another established Marathi proof-theory label?
+
+</details>
+
+<details>
+<summary><strong>T189 — double-negation elimination</strong> (2 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T189-OLP-0119-B018 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | not yet paginated |
+| T189-OLP-0121-B011 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | not yet paginated |
+
+**Chosen rendering/action:** द्विनकरण विलोपन
+
+**Confidence/status:** medium; direct official core plus definition-controlled rule compound; expert review useful; open to correction.
+
+**Please double-check:** Is द्विनकरण विलोपन the natural compositional name for the rule deriving A from double-not-A?
 
 </details>
 
@@ -10539,5 +10918,50 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; confirmed directly by the adjacent tableau nodes, the two-premise identity rule schema and the substitutions explicitly described in the same paragraphs; open to correction.
 
 **Please double-check:** Do the repaired explanations identify exactly the second premise used by each displayed identity tableau without altering any formal tableau node?
+
+</details>
+
+<details>
+<summary><strong>OLAXD-001 — confirmed-frozen-source-unbalanced-formula-parenthesis with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLAXD-001-OLP-0119 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-107](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-108](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | not yet paginated |
+
+**Chosen rendering/action:** Added the single missing outer right parenthesis in the Marathi formula and placed adjacent reader note OLAXD-001. A unit-specific QA projection removes that parenthesis solely when comparing with the frozen English bytes.
+
+**Confidence/status:** high; confirmed by direct delimiter counting and the uniquely balanced intended composition law; the repair changes no connective, metavariable or derivability relation; open to correction.
+
+**Please double-check:** Does the added right parenthesis close exactly the outer consequent grouping without changing the intended implication association?
+
+</details>
+
+<details>
+<summary><strong>OLAXD-002 — confirmed-frozen-source-unbalanced-formula-parenthesis with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLAXD-002-OLP-0120 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:43-44](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L43) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:43-48](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L43) | not yet paginated |
+
+**Chosen rendering/action:** Added the single missing outer right parenthesis in the Marathi formula and placed adjacent reader note OLAXD-002. A unit-specific QA projection removes that parenthesis solely when comparing with the frozen English bytes.
+
+**Confidence/status:** high; confirmed by direct delimiter counting and by the following modus-ponens conclusion; the repair changes no connective, metavariable, quantifier or derivability relation; open to correction.
+
+**Please double-check:** Does the added right parenthesis close exactly the outer A-implies consequent while preserving the theorem used in the proof?
+
+</details>
+
+<details>
+<summary><strong>OLAXD-003 — confirmed-frozen-source-final-conclusion defect with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLAXD-003-OLP-0120 | OLP-0120 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:45-48](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L45) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:46-50](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex#L46) | not yet paginated |
+
+**Chosen rendering/action:** Restored A-implies in the Marathi final conclusion and placed adjacent reader note OLAXD-003. A context-specific QA projection reconstructs the frozen shortened conclusion solely for source comparison.
+
+**Confidence/status:** high; confirmed by direct substitution of the stated identity for B into the immediately preceding derived formula and by the theorem's target conclusion; open to correction.
+
+**Please double-check:** Does the restored A-implies-B conclusion follow exactly from the preceding line and complete the quantified Deduction Theorem case?
 
 </details>

@@ -138,6 +138,15 @@ _DOCUMENTED_PROJECTIONS = {
         ('$\\eq[s_1][s_2]$ (म्हणजे ओळ~$2$)',
          '$\\eq[t_1][t_2]$ (म्हणजे ओळ~$2$)'),
     ],
+    'OLP-0119': [
+        ('$\\Proves (!A \\lif !B) \\lif ((!B \\lif !C)\n  \\lif (!A \\lif !C))$;',
+         '$\\Proves (!A \\lif !B) \\lif ((!B \\lif !C)\n  \\lif (!A \\lif !C)$;'),
+    ],
+    'OLP-0120': [
+        ('& \\Proves ((!A \\land !C) \\lif \\lforall[x][!D(x)]) \\lif (!A \\lif (!C \\lif \\lforall[x][!D(x)])),\\\\',
+         '& \\Proves ((!A \\land !C) \\lif \\lforall[x][!D(x)]) \\lif (!A \\lif (!C \\lif \\lforall[x][!D(x)]),\\\\'),
+        ('म्हणजे $\\Gamma \\Proves !A \\lif !B$.', 'म्हणजे $\\Gamma \\Proves !B$.'),
+    ],
 }
 
 

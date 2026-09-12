@@ -1,0 +1,139 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{ptn}}
+      {\olfileid{pl}{axd}{ptn}}
+
+\olsection{सिद्धता-उपपत्तीय संकल्पना}
+
+\begin{explain}
+जशा आपण अनेक महत्त्वाच्या चिन्हार्थविषयक संकल्पना
+(\iftag{FOL}{वैधता}{सर्वतः सत्य सूत्र}, तार्किक निष्पन्नता, पूर्ततायोग्यता)
+परिभाषित केल्या आहेत, तशाच आता त्यांना अनुरूप
+\emph{सिद्धता-उपपत्तीय संकल्पना} परिभाषित करू. या संकल्पना !!{structure}s
+मध्ये !!{sentence}s ची पूर्ति होते की नाही याचा आधार घेऊन परिभाषित केल्या
+जात नाहीत; त्याऐवजी विशिष्ट सूत्रांची !!{derivability} किंवा
+!!{nonderivability} यांचा आधार घेतला जातो. या दोन प्रकारच्या संकल्पना
+एकमेकांशी जुळतात, हा एक महत्त्वाचा शोध होता. त्या जुळतात, हाच
+\emph{निर्दोषता प्रमेय} आणि \emph{संपूर्णता प्रमेय} यांचा आशय आहे.
+\end{explain}
+
+\begin{defn}[!!^{derivability}]
+!!^a{formula}~$!A$ हे $\Gamma$ \emph{पासून !!{derivable}} असते, म्हणजे
+$\Gamma \Proves !A$, जर~$\Gamma$ पासून सुरू होऊन~$!A$ वर संपणारी
+!!a{derivation} असेल.
+\end{defn}
+
+\begin{defn}[प्रमेये]
+रिक्त संचापासून $!A$ ची !!a{derivation} असेल, तर !!^a{formula}~$!A$ हे
+\emph{प्रमेय} असते. $!A$ हे प्रमेय असेल तर आपण $\Proves !A$ लिहितो आणि
+ते प्रमेय नसेल तर $\Proves/ !A$ लिहितो.
+\end{defn}
+
+\begin{defn}[सुसंगतता]
+!!{formula}s चा संच~$\Gamma$ हा $\Gamma\Proves/ \lfalse$ असेल तेव्हा आणि
+केवळ तेव्हाच \emph{सुसंगत} असतो; अन्यथा तो \emph{विसंगत} असतो.
+\end{defn}
+
+\begin{prop}[परावर्तिता]
+\ollabel{prop:reflexivity}
+$!A \in \Gamma$ असेल, तर $\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+  एकटे !!{formula}~$!A$ ही~$\Gamma$ पासून $!A$ ची !!a{derivation} आहे.
+\end{proof}
+
+\begin{prop}[एकस्वनिकता]
+\ollabel{prop:monotonicity}
+$\Gamma \subseteq \Delta$ आणि $\Gamma \Proves !A$ असेल, तर $\Delta
+\Proves !A$.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ पासून $!A$ ची कोणतीही !!{derivation} ही~$\Delta$ पासून $!A$ चीही
+!!a{derivation} असते.
+\end{proof}
+
+\begin{prop}[संक्रमकता]
+\ollabel{prop:transitivity}
+$\Gamma \Proves !A$ आणि $\{!A\} \cup \Delta \Proves
+!B$ असेल, तर $\Gamma \cup \Delta \Proves !B$.
+\end{prop}
+
+\begin{proof}
+  $\{!A\} \cup \Delta \Proves !B$ असे समजा. मग~$\{!A\} \cup
+  \Delta$ पासून $!B_1$, \dots, $!B_l = !B$ ही !!a{derivation} असते.
+  त्या !!{derivation} मधील काही पायऱ्या योग्य असतात, कारण एखादा नियम
+  त्यांपूर्वीच्या~$!B_i = !A$ या ओळीचा निर्देश करतो. गृहीतकानुसार,
+  $\Gamma$ पासून~$!A$ ची !!a{derivation} असते, म्हणजे !!a{derivation}
+  $!A_1$, \dots, $!A_k = !A$ अशी असते की प्रत्येक $!A_i$ हे स्वयंसिद्धक,
+  $\Gamma$ चा !!a{element}, किंवा निगमन नियमाने योग्य ठरलेले असते. आता
+  पुढील अनुक्रम विचारात घ्या:
+  \[
+  !A_1, \dots, !A_k = !A, !B_1, \dots, !B_l = !B.
+  \]
+  ही $\Gamma \cup \Delta$ पासून~$!B$ ची योग्य !!{derivation} आहे, कारण
+  प्रत्येक $B_i = !A$ ला आता~$!A_k = !A$ ला समर्थित करणाऱ्या त्याच नियमाने
+  समर्थन मिळते.
+\end{proof}
+
+लक्षात घ्या की विशेषतः याचा अर्थ असा होतो: $\Gamma \Proves !A$ आणि $!A
+\Proves !B$ असेल, तर $\Gamma \Proves !B$. तसेच $!A_1,
+\dots, !A_n \Proves !B$ असेल आणि प्रत्येक~$i$ साठी $\Gamma \Proves !A_i$
+असेल, तर $\Gamma \Proves !B$, हेसुद्धा यावरून मिळते.
+
+\begin{prop}
+\ollabel{prop:incons}
+$\Gamma$ विसंगत असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा प्रत्येक~$!A$ साठी
+$\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][axd][ptn]{prop:incons} सिद्ध करा.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][axd][ptn]{prop:incons} सिद्ध करा.
+\end{prob}
+\tagendprob
+
+\begin{prop}[संहतता]
+\ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item $\Gamma \Proves !A$ असेल, तर एखादा सांत उपसंच $\Gamma_0
+    \subseteq \Gamma$ असा असतो की $\Gamma_0 \Proves !A$.
+  \item $\Gamma$ चा प्रत्येक सांत उपसंच सुसंगत असेल, तर $\Gamma$ सुसंगत
+    असतो.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\Gamma \Proves !A$ असेल, तर !!{formula}s चा सांत अनुक्रम
+      $!A_1$, \dots,~$!A_n$ असा असतो की $!A \ident !A_n$ आणि प्रत्येक
+      $!A_i$ हे एकतर तर्कशास्त्रीय स्वयंसिद्धक, $\Gamma$ चा !!a{element},
+      किंवा आधीच्या !!{formula}s पासून विध्यात्मक अनुमानाने निष्पन्न झालेले
+      असते. $\Gamma$ मध्ये असलेल्या त्या $!A_i$ चा संच~$\Gamma_0$ म्हणून
+      घ्या. मग ही !!{derivation} त्याचप्रमाणे~$\Gamma_0$ पासूनची
+      !!a{derivation} असते, आणि म्हणून $\Gamma_0 \Proves !A$.
+    \item (1) मध्ये $!A
+      \ident \lfalse$ हे विशेष प्रकरण घेतल्यावर मिळणारे हे निषेधात्मक उलट
+      विधान आहे.
+\end{enumerate}
+\end{proof}
+
+\end{document}

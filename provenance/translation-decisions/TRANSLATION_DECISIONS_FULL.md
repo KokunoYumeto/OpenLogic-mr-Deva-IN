@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 occurrences.
+Coverage: 118/722 source units through OLP-0121; 254 applied decisions; 7,402 occurrences.
 
 ## T001 — set
 
@@ -387,6 +387,31 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T001-OLP-0105-B012` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:71-79` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:72-80` | 144–146 |
 | `T001-OLP-0105-B016` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-110` | 144–146 |
 | `T001-OLP-0105-B024` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:172-188` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:173-189` | 144–146 |
+| `T001-OLP-0113-B007` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36` | pending |
+| `T001-OLP-0113-B010` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80` | pending |
+| `T001-OLP-0116-B009` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99` | pending |
+| `T001-OLP-0118-B008` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:32-36` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:33-37` | pending |
+| `T001-OLP-0118-B009` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:38-41` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:39-42` | pending |
+| `T001-OLP-0118-B014` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:63-67` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:64-68` | pending |
+| `T001-OLP-0118-B015` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85` | pending |
+| `T001-OLP-0118-B022` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137` | pending |
+| `T001-OLP-0119-B007` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | pending |
+| `T001-OLP-0119-B009` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44` | pending |
+| `T001-OLP-0119-B011` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-52` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-52` | pending |
+| `T001-OLP-0119-B012` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59` | pending |
+| `T001-OLP-0119-B014` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | pending |
+| `T001-OLP-0119-B015` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96` | pending |
+| `T001-OLP-0119-B018` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119` | pending |
+| `T001-OLP-0120-B006` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:13-16` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:13-16` | pending |
+| `T001-OLP-0120-B007` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20` | pending |
+| `T001-OLP-0120-B009` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50` | pending |
+| `T001-OLP-0121-B007` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:19-22` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:18-21` | pending |
+| `T001-OLP-0121-B008` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30` | pending |
+| `T001-OLP-0121-B009` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:33-36` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:32-36` | pending |
+| `T001-OLP-0121-B010` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | pending |
+| `T001-OLP-0121-B011` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54` | pending |
+| `T001-OLP-0121-B012` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:55-58` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:56-59` | pending |
+| `T001-OLP-0121-B015` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:71-74` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:72-75` | pending |
 
 ## T002 — element/member
 
@@ -663,6 +688,14 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T002-OLP-0106-B013` | `OLP-0106` | 11.8 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:79-82` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:79-82` | 146–147 |
 | `T002-OLP-0106-B014` | `OLP-0106` | 11.8 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97` | 146–147 |
 | `T002-OLP-0106-B016` | `OLP-0106` | 11.8 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | 146–147 |
+| `T002-OLP-0118-B010` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:43-46` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:44-47` | pending |
+| `T002-OLP-0118-B015` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85` | pending |
+| `T002-OLP-0118-B022` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137` | pending |
+| `T002-OLP-0119-B014` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | pending |
+| `T002-OLP-0121-B008` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30` | pending |
+| `T002-OLP-0121-B010` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | pending |
+| `T002-OLP-0121-B011` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54` | pending |
+| `T002-OLP-0121-B015` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:71-74` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:72-75` | pending |
 
 ## T003 — empty set
 
@@ -830,6 +863,8 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T003-OLP-0045-B006` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:26-36` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:25-35` | 58–60 |
 | `T003-OLP-0045-B010` | `OLP-0045` | 5.4 Q पासून R कडे | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:58-78` | `mr/content/sets-functions-relations/arithmetization/cuts.tex:57-83` | 58–60 |
 | `T003-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 88–89 |
+| `T003-OLP-0113-B012` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:89-93` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:88-92` | pending |
+| `T003-OLP-0118-B008` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:32-36` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:33-37` | pending |
 
 ## T004 — extensionality
 
@@ -1172,6 +1207,14 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T005-OLP-0108-B007` | `OLP-0108` | 11.10 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:23-59` | `mr/content/first-order-logic/tableaux/provability-quantifiers.tex:23-59` | 149–150 |
 | `T005-OLP-0109-B023` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:214-223` | `mr/content/first-order-logic/tableaux/soundness.tex:212-221` | 150–153 |
 | `T005-OLP-0109-B025` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:230-238` | `mr/content/first-order-logic/tableaux/soundness.tex:228-236` | 150–153 |
+| `T005-OLP-0118-B012` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:52-56` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:53-57` | pending |
+| `T005-OLP-0118-B021` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:112-120` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:114-122` | pending |
+| `T005-OLP-0118-B022` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137` | pending |
+| `T005-OLP-0119-B007` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | pending |
+| `T005-OLP-0121-B008` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30` | pending |
+| `T005-OLP-0121-B010` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | pending |
+| `T005-OLP-0121-B011` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54` | pending |
+| `T005-OLP-0121-B014` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:65-68` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:66-69` | pending |
 
 ## T006 — proper subset
 
@@ -1557,6 +1600,7 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T009-OLP-0109-B021` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:204-207` | `mr/content/first-order-logic/tableaux/soundness.tex:202-205` | 150–153 |
 | `T009-OLP-0109-B022` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:209-212` | `mr/content/first-order-logic/tableaux/soundness.tex:207-210` | 150–153 |
 | `T009-OLP-0109-B023` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:214-223` | `mr/content/first-order-logic/tableaux/soundness.tex:212-221` | 150–153 |
+| `T009-OLP-0118-B006` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25` | pending |
 
 ## T010 — truth / truth value
 
@@ -1664,6 +1708,7 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T010-OLP-0109-B006` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:15-30` | `mr/content/first-order-logic/tableaux/soundness.tex:15-30` | 150–153 |
 | `T010-OLP-0109-B021` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:204-207` | `mr/content/first-order-logic/tableaux/soundness.tex:202-205` | 150–153 |
 | `T010-OLP-0109-B023` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:214-223` | `mr/content/first-order-logic/tableaux/soundness.tex:212-221` | 150–153 |
+| `T010-OLP-0112-B005` | `OLP-0112` |  | `upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19` | `mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19` | pending |
 
 ## T011 — syntax
 
@@ -2524,6 +2569,10 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T023-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 88–89 |
 | `T023-OLP-0077-B009` | `OLP-0077` | 9.8 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:36-43` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:37-44` | 100–101 |
 | `T023-OLP-0077-B010` | `OLP-0077` | 9.8 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:45-67` | `mr/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:46-69` | 100–101 |
+| `T023-OLP-0118-B015` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85` | pending |
+| `T023-OLP-0118-B022` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137` | pending |
+| `T023-OLP-0121-B008` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30` | pending |
+| `T023-OLP-0121-B013` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:60-63` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:61-64` | pending |
 
 ## T024 — set difference
 
@@ -2838,6 +2887,24 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T029-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 88–89 |
 | `T029-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 88–89 |
 | `T029-OLP-0068-B009` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66-68` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67-69` | 88–89 |
+| `T029-OLP-0113-B006` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-22` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-23` | pending |
+| `T029-OLP-0113-B007` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36` | pending |
+| `T029-OLP-0113-B008` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:38-41` | pending |
+| `T029-OLP-0113-B010` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80` | pending |
+| `T029-OLP-0114-B005` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:13-13` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:13-13` | pending |
+| `T029-OLP-0114-B006` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34` | pending |
+| `T029-OLP-0115-B005` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:11-11` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:11-11` | pending |
+| `T029-OLP-0115-B006` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21` | pending |
+| `T029-OLP-0116-B006` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-39` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-41` | pending |
+| `T029-OLP-0116-B007` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:41-56` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:43-56` | pending |
+| `T029-OLP-0116-B008` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80` | pending |
+| `T029-OLP-0116-B012` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:120-128` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:120-127` | pending |
+| `T029-OLP-0117-B007` | `OLP-0117` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34` | `mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35` | pending |
+| `T029-OLP-0118-B015` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85` | pending |
+| `T029-OLP-0118-B022` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137` | pending |
+| `T029-OLP-0119-B014` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | pending |
+| `T029-OLP-0119-B015` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96` | pending |
+| `T029-OLP-0119-B016` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:97-98` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:98-99` | pending |
 
 ## T030 — relation / binary relation
 
@@ -3182,6 +3249,10 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T032-OLP-0091-B011` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:53-56` | 121–122 |
 | `T032-OLP-0105-B011` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:66-69` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:67-70` | 144–146 |
 | `T032-OLP-0105-B012` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:71-79` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:72-80` | 144–146 |
+| `T032-OLP-0118-B010` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:43-46` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:44-47` | pending |
+| `T032-OLP-0119-B012` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59` | pending |
+| `T032-OLP-0121-B008` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30` | pending |
+| `T032-OLP-0121-B010` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | pending |
 
 ## T033 — transitive
 
@@ -4260,6 +4331,44 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T044-OLP-0097-B007` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:17-21` | 130–131 |
 | `T044-OLP-0097-B008` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | 130–131 |
 | `T044-OLP-0099-B009` | `OLP-0099` | 11.1 नियम आणि टॅब्लो | `upstream/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42` | `mr/content/first-order-logic/tableaux/rules-and-proofs.tex:33-42` | 132–133 |
+| `T044-OLP-0112-B004` | `OLP-0112` |  | `upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:8-10` | `mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:8-10` | pending |
+| `T044-OLP-0113-B005` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:13-13` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:13-13` | pending |
+| `T044-OLP-0113-B006` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-22` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-23` | pending |
+| `T044-OLP-0113-B007` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36` | pending |
+| `T044-OLP-0113-B008` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:38-41` | pending |
+| `T044-OLP-0113-B009` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:43-46` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:43-46` | pending |
+| `T044-OLP-0113-B010` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80` | pending |
+| `T044-OLP-0113-B011` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:83-87` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:82-86` | pending |
+| `T044-OLP-0113-B012` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:89-93` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:88-92` | pending |
+| `T044-OLP-0114-B006` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34` | pending |
+| `T044-OLP-0114-B007` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39` | pending |
+| `T044-OLP-0115-B006` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21` | pending |
+| `T044-OLP-0115-B007` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30` | pending |
+| `T044-OLP-0116-B005` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:13-13` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:13-13` | pending |
+| `T044-OLP-0116-B006` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-39` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-41` | pending |
+| `T044-OLP-0116-B007` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:41-56` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:43-56` | pending |
+| `T044-OLP-0116-B008` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80` | pending |
+| `T044-OLP-0116-B009` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99` | pending |
+| `T044-OLP-0116-B010` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:101-104` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:101-104` | pending |
+| `T044-OLP-0116-B011` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118` | pending |
+| `T044-OLP-0116-B012` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:120-128` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:120-127` | pending |
+| `T044-OLP-0117-B005` | `OLP-0117` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:11-11` | `mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:11-11` | pending |
+| `T044-OLP-0117-B006` | `OLP-0117` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:13-15` | `mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:13-16` | pending |
+| `T044-OLP-0117-B007` | `OLP-0117` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34` | `mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35` | pending |
+| `T044-OLP-0118-B007` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:26-30` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:27-31` | pending |
+| `T044-OLP-0118-B008` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:32-36` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:33-37` | pending |
+| `T044-OLP-0118-B009` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:38-41` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:39-42` | pending |
+| `T044-OLP-0118-B011` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:48-50` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:49-51` | pending |
+| `T044-OLP-0118-B013` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:58-61` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:59-62` | pending |
+| `T044-OLP-0118-B015` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85` | pending |
+| `T044-OLP-0118-B022` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137` | pending |
+| `T044-OLP-0119-B007` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | pending |
+| `T044-OLP-0119-B009` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44` | pending |
+| `T044-OLP-0119-B013` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62` | pending |
+| `T044-OLP-0119-B014` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | pending |
+| `T044-OLP-0119-B015` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96` | pending |
+| `T044-OLP-0120-B007` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20` | pending |
+| `T044-OLP-0120-B009` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50` | pending |
 
 ## T045 — function / mapping
 
@@ -7426,6 +7535,8 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T109-OLP-0109-B022` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:209-212` | `mr/content/first-order-logic/tableaux/soundness.tex:207-210` | 150–153 |
 | `T109-OLP-0109-B023` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:214-223` | `mr/content/first-order-logic/tableaux/soundness.tex:212-221` | 150–153 |
 | `T109-OLP-0109-B025` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:230-238` | `mr/content/first-order-logic/tableaux/soundness.tex:228-236` | 150–153 |
+| `T109-OLP-0118-B006` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25` | pending |
+| `T109-OLP-0119-B007` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -7475,6 +7586,8 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T110-OLP-0106-B006` | `OLP-0106` | 11.8 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:15-17` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:15-16` | 146–147 |
 | `T110-OLP-0107-B007` | `OLP-0107` | 11.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:18-24` | `mr/content/first-order-logic/tableaux/provability-propositional.tex:18-23` | 147–149 |
 | `T110-OLP-0108-B005` | `OLP-0108` | 11.10 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:12-15` | `mr/content/first-order-logic/tableaux/provability-quantifiers.tex:12-15` | 149–150 |
+| `T110-OLP-0118-B006` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25` | pending |
+| `T110-OLP-0121-B006` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:15-17` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:15-16` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -7640,6 +7753,16 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T112-OLP-0108-B009` | `OLP-0108` | 11.10 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:69-86` | `mr/content/first-order-logic/tableaux/provability-quantifiers.tex:69-88` | 149–150 |
 | `T112-OLP-0109-B015` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:126-133` | `mr/content/first-order-logic/tableaux/soundness.tex:124-131` | 150–153 |
 | `T112-OLP-0109-B016` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:135-142` | `mr/content/first-order-logic/tableaux/soundness.tex:133-140` | 150–153 |
+| `T112-OLP-0112-B005` | `OLP-0112` |  | `upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19` | `mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19` | pending |
+| `T112-OLP-0115-B005` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:11-11` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:11-11` | pending |
+| `T112-OLP-0115-B006` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21` | pending |
+| `T112-OLP-0115-B007` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30` | pending |
+| `T112-OLP-0117-B005` | `OLP-0117` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:11-11` | `mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:11-11` | pending |
+| `T112-OLP-0117-B006` | `OLP-0117` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:13-15` | `mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:13-16` | pending |
+| `T112-OLP-0117-B007` | `OLP-0117` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34` | `mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35` | pending |
+| `T112-OLP-0120-B005` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:11-11` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:11-11` | pending |
+| `T112-OLP-0120-B009` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50` | pending |
+| `T112-OLP-0120-B010` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:50-52` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:52-54` | pending |
 
 ## T113 — classical logic / classical
 
@@ -7802,6 +7925,9 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T115-OLP-0107-B011` | `OLP-0107` | 11.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:82-124` | `mr/content/first-order-logic/tableaux/provability-propositional.tex:82-124` | 147–149 |
 | `T115-OLP-0107-B012` | `OLP-0107` | 11.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:126-132` | `mr/content/first-order-logic/tableaux/provability-propositional.tex:126-133` | 147–149 |
 | `T115-OLP-0107-B013` | `OLP-0107` | 11.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:134-173` | `mr/content/first-order-logic/tableaux/provability-propositional.tex:135-174` | 147–149 |
+| `T115-OLP-0112-B005` | `OLP-0112` |  | `upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19` | `mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19` | pending |
+| `T115-OLP-0114-B005` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:13-13` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:13-13` | pending |
+| `T115-OLP-0114-B006` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34` | pending |
 
 ## T116 — truth-functional
 
@@ -8088,6 +8214,7 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T121-OLP-0111-B007` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:18-23` | `mr/content/first-order-logic/tableaux/soundness-identity.tex:18-22` | 154 |
 | `T121-OLP-0111-B008` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:25-28` | `mr/content/first-order-logic/tableaux/soundness-identity.tex:24-27` | 154 |
 | `T121-OLP-0111-B009` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:30-43` | `mr/content/first-order-logic/tableaux/soundness-identity.tex:29-43` | 154 |
+| `T121-OLP-0118-B006` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25` | pending |
 
 ## T122 — tautology
 
@@ -8122,6 +8249,7 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T122-OLP-0095-B029` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:291-294` | `mr/content/first-order-logic/natural-deduction/soundness.tex:293-296` | 126–129 |
 | `T122-OLP-0109-B006` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:15-30` | `mr/content/first-order-logic/tableaux/soundness.tex:15-30` | 150–153 |
 | `T122-OLP-0109-B021` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:204-207` | `mr/content/first-order-logic/tableaux/soundness.tex:202-205` | 150–153 |
+| `T122-OLP-0118-B006` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25` | pending |
 
 ## T123 — entailment / entails
 
@@ -8214,6 +8342,7 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T123-OLP-0105-B007` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29` | 144–146 |
 | `T123-OLP-0109-B022` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:209-212` | `mr/content/first-order-logic/tableaux/soundness.tex:207-210` | 150–153 |
 | `T123-OLP-0109-B023` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:214-223` | `mr/content/first-order-logic/tableaux/soundness.tex:212-221` | 150–153 |
+| `T123-OLP-0118-B006` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -8270,6 +8399,7 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T124-OLP-0111-B007` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:18-23` | `mr/content/first-order-logic/tableaux/soundness-identity.tex:18-22` | 154 |
 | `T124-OLP-0111-B008` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:25-28` | `mr/content/first-order-logic/tableaux/soundness-identity.tex:24-27` | 154 |
 | `T124-OLP-0111-B009` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:30-43` | `mr/content/first-order-logic/tableaux/soundness-identity.tex:29-43` | 154 |
+| `T124-OLP-0118-B006` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25` | pending |
 
 ## T125 — necessary / contingent
 
@@ -8598,6 +8728,16 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T128-OLP-0107-B011` | `OLP-0107` | 11.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:82-124` | `mr/content/first-order-logic/tableaux/provability-propositional.tex:82-124` | 147–149 |
 | `T128-OLP-0107-B012` | `OLP-0107` | 11.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:126-132` | `mr/content/first-order-logic/tableaux/provability-propositional.tex:126-133` | 147–149 |
 | `T128-OLP-0107-B013` | `OLP-0107` | 11.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:134-173` | `mr/content/first-order-logic/tableaux/provability-propositional.tex:135-174` | 147–149 |
+| `T128-OLP-0114-B006` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34` | pending |
+| `T128-OLP-0117-B007` | `OLP-0117` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34` | `mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35` | pending |
+| `T128-OLP-0119-B018` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119` | pending |
+| `T128-OLP-0121-B009` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:33-36` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:32-36` | pending |
+| `T128-OLP-0121-B010` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | pending |
+| `T128-OLP-0121-B011` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54` | pending |
+| `T128-OLP-0121-B012` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:55-58` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:56-59` | pending |
+| `T128-OLP-0121-B013` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:60-63` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:61-64` | pending |
+| `T128-OLP-0121-B014` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:65-68` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:66-69` | pending |
+| `T128-OLP-0121-B015` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:71-74` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:72-75` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -8639,6 +8779,7 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T129-OLP-0103-B008` | `OLP-0103` | 11.5 टॅब्लोची उदाहरणे | `upstream/content/first-order-logic/tableaux/proving-things.tex:25-47` | `mr/content/first-order-logic/tableaux/proving-things.tex:24-44` | 135–140 |
 | `T129-OLP-0103-B011` | `OLP-0103` | 11.5 टॅब्लोची उदाहरणे | `upstream/content/first-order-logic/tableaux/proving-things.tex:76-171` | `mr/content/first-order-logic/tableaux/proving-things.tex:72-166` | 135–140 |
 | `T129-OLP-0104-B007` | `OLP-0104` | 11.6 संख्यापकांसह टॅब्लो | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92` | 140–144 |
+| `T129-OLP-0112-B005` | `OLP-0112` |  | `upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19` | `mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19` | pending |
 
 ## T130 — abbreviation / abbreviates
 
@@ -8676,6 +8817,8 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T130-OLP-0058-B033` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:161-165` | 76–77 |
 | `T130-OLP-0072-B013` | `OLP-0072` | 9.3 संख्यापकांचे नियम | `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:59-60` | `mr/content/first-order-logic/sequent-calculus/quantifier-rules.tex:59-60` | 91–92 |
 | `T130-OLP-0101-B013` | `OLP-0101` | 11.3 संख्यापकांचे नियम | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | 133–134 |
+| `T130-OLP-0114-B008` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:41-41` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:41-41` | pending |
+| `T130-OLP-0115-B008` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:32-32` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:32-32` | pending |
 
 ## T131 — atomic formula
 
@@ -8820,6 +8963,7 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T134-OLP-0060-B014` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:114-118` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:110-114` | 79–80 |
 | `T134-OLP-0060-B016` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:126-151` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:122-147` | 79–80 |
 | `T134-OLP-0070-B009` | `OLP-0070` | 9.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:46-50` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:48-52` | 90–91 |
+| `T134-OLP-0116-B011` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118` | pending |
 
 ## T135 — preliminaries
 
@@ -8982,6 +9126,7 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T139-OLP-0109-B015` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:126-133` | `mr/content/first-order-logic/tableaux/soundness.tex:124-131` | 150–153 |
 | `T139-OLP-0109-B016` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:135-142` | `mr/content/first-order-logic/tableaux/soundness.tex:133-140` | 150–153 |
 | `T139-OLP-0109-B017` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:144-150` | `mr/content/first-order-logic/tableaux/soundness.tex:142-148` | 150–153 |
+| `T139-OLP-0115-B007` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30` | pending |
 
 ## T140 — inductive hypothesis
 
@@ -9020,6 +9165,11 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T140-OLP-0095-B022` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:216-240` | `mr/content/first-order-logic/natural-deduction/soundness.tex:215-240` | 126–129 |
 | `T140-OLP-0095-B024` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271` | `mr/content/first-order-logic/natural-deduction/soundness.tex:244-273` | 126–129 |
 | `T140-OLP-0097-B008` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | 130–131 |
+| `T140-OLP-0119-B013` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62` | pending |
+| `T140-OLP-0119-B015` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96` | pending |
+| `T140-OLP-0120-B007` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20` | pending |
+| `T140-OLP-0120-B008` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:22-23` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:22-23` | pending |
+| `T140-OLP-0120-B009` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50` | pending |
 
 ## T141 — formation sequence
 
@@ -9166,6 +9316,9 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T144-OLP-0106-B010` | `OLP-0106` | 11.8 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:45-57` | 146–147 |
 | `T144-OLP-0106-B014` | `OLP-0106` | 11.8 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:84-97` | 146–147 |
 | `T144-OLP-0106-B016` | `OLP-0106` | 11.8 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:105-120` | `mr/content/first-order-logic/tableaux/provability-consistency.tex:104-118` | 146–147 |
+| `T144-OLP-0118-B021` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:112-120` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:114-122` | pending |
+| `T144-OLP-0118-B022` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137` | pending |
+| `T144-OLP-0119-B013` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62` | pending |
 
 ## T145 — evaluation / evaluation function
 
@@ -9328,6 +9481,11 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T149-OLP-0091-B014` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:70-73` | 121–122 |
 | `T149-OLP-0105-B013` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:82-86` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:83-87` | 144–146 |
 | `T149-OLP-0105-B014` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:88-90` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:89-91` | 144–146 |
+| `T149-OLP-0118-B012` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:52-56` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:53-57` | pending |
+| `T149-OLP-0118-B013` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:58-61` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:59-62` | pending |
+| `T149-OLP-0119-B007` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | pending |
+| `T149-OLP-0119-B012` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59` | pending |
+| `T149-OLP-0121-B010` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | pending |
 
 ## T150 — Semantic Deduction Theorem
 
@@ -9507,6 +9665,24 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T151-OLP-0109-B022` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:209-212` | `mr/content/first-order-logic/tableaux/soundness.tex:207-210` | 150–153 |
 | `T151-OLP-0110-B006` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:13-14` | `mr/content/first-order-logic/tableaux/identity.tex:13-14` | 153–154 |
 | `T151-OLP-0110-B007` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:16-39` | `mr/content/first-order-logic/tableaux/identity.tex:16-39` | 153–154 |
+| `T151-OLP-0113-B005` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:13-13` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:13-13` | pending |
+| `T151-OLP-0113-B006` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-22` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-23` | pending |
+| `T151-OLP-0113-B007` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36` | pending |
+| `T151-OLP-0113-B008` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:38-41` | pending |
+| `T151-OLP-0113-B009` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:43-46` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:43-46` | pending |
+| `T151-OLP-0113-B010` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80` | pending |
+| `T151-OLP-0114-B005` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:13-13` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:13-13` | pending |
+| `T151-OLP-0114-B007` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39` | pending |
+| `T151-OLP-0115-B005` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:11-11` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:11-11` | pending |
+| `T151-OLP-0115-B007` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30` | pending |
+| `T151-OLP-0115-B008` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:32-32` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:32-32` | pending |
+| `T151-OLP-0116-B006` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-39` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-41` | pending |
+| `T151-OLP-0116-B007` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:41-56` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:43-56` | pending |
+| `T151-OLP-0117-B007` | `OLP-0117` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34` | `mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35` | pending |
+| `T151-OLP-0118-B015` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85` | pending |
+| `T151-OLP-0119-B007` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | pending |
+| `T151-OLP-0120-B009` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50` | pending |
+| `T151-OLP-0120-B010` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:50-52` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:52-54` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -9671,6 +9847,9 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T154-OLP-0085-B010` | `OLP-0085` | 10.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:47-48` | `mr/content/first-order-logic/natural-deduction/rules-and-proofs.tex:44-45` | 110 |
 | `T154-OLP-0091-B008` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:32-37` | 121–122 |
 | `T154-OLP-0105-B008` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:31-35` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:32-36` | 144–146 |
+| `T154-OLP-0113-B012` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:89-93` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:88-92` | pending |
+| `T154-OLP-0118-B008` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:32-36` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:33-37` | pending |
+| `T154-OLP-0119-B014` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | pending |
 
 ## T155 — soundness / sound / unsound (of a proof system)
 
@@ -9774,6 +9953,7 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T155-OLP-0111-B007` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:18-23` | `mr/content/first-order-logic/tableaux/soundness-identity.tex:18-22` | 154 |
 | `T155-OLP-0111-B008` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:25-28` | `mr/content/first-order-logic/tableaux/soundness-identity.tex:24-27` | 154 |
 | `T155-OLP-0111-B009` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:30-43` | `mr/content/first-order-logic/tableaux/soundness-identity.tex:29-43` | 154 |
+| `T155-OLP-0118-B006` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25` | pending |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -9909,6 +10089,23 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T156-OLP-0109-B006` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:15-30` | `mr/content/first-order-logic/tableaux/soundness.tex:15-30` | 150–153 |
 | `T156-OLP-0109-B024` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:225-228` | `mr/content/first-order-logic/tableaux/soundness.tex:223-226` | 150–153 |
 | `T156-OLP-0109-B025` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:230-238` | `mr/content/first-order-logic/tableaux/soundness.tex:228-236` | 150–153 |
+| `T156-OLP-0118-B009` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:38-41` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:39-42` | pending |
+| `T156-OLP-0118-B017` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:91-94` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:92-96` | pending |
+| `T156-OLP-0118-B018` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:96-98` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:98-100` | pending |
+| `T156-OLP-0118-B021` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:112-120` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:114-122` | pending |
+| `T156-OLP-0118-B022` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137` | pending |
+| `T156-OLP-0121-B005` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:13-13` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:13-13` | pending |
+| `T156-OLP-0121-B007` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:19-22` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:18-21` | pending |
+| `T156-OLP-0121-B008` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30` | pending |
+| `T156-OLP-0121-B009` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:33-36` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:32-36` | pending |
+| `T156-OLP-0121-B010` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | pending |
+| `T156-OLP-0121-B011` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54` | pending |
+| `T156-OLP-0121-B012` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:55-58` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:56-59` | pending |
+| `T156-OLP-0121-B013` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:60-63` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:61-64` | pending |
+| `T156-OLP-0121-B015` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:71-74` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:72-75` | pending |
+| `T156-OLP-0121-B016` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:76-78` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:77-79` | pending |
+| `T156-OLP-0121-B017` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:80-84` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:81-85` | pending |
+| `T156-OLP-0121-B018` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:86-90` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:87-91` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -10125,6 +10322,8 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T159-OLP-0107-B011` | `OLP-0107` | 11.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:82-124` | `mr/content/first-order-logic/tableaux/provability-propositional.tex:82-124` | 147–149 |
 | `T159-OLP-0107-B013` | `OLP-0107` | 11.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:134-173` | `mr/content/first-order-logic/tableaux/provability-propositional.tex:135-174` | 147–149 |
 | `T159-OLP-0108-B007` | `OLP-0108` | 11.10 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:23-59` | `mr/content/first-order-logic/tableaux/provability-quantifiers.tex:23-59` | 149–150 |
+| `T159-OLP-0116-B009` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99` | pending |
+| `T159-OLP-0119-B009` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44` | pending |
 
 ## T160 — introduction rule / elimination rule
 
@@ -10598,6 +10797,15 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T167-OLP-0068-B006` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:15-36` | 88–89 |
 | `T167-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 88–89 |
 | `T167-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 88–89 |
+| `T167-OLP-0112-B004` | `OLP-0112` |  | `upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:8-10` | `mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:8-10` | pending |
+| `T167-OLP-0113-B005` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:13-13` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:13-13` | pending |
+| `T167-OLP-0113-B006` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-22` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-23` | pending |
+| `T167-OLP-0113-B007` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36` | pending |
+| `T167-OLP-0113-B010` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80` | pending |
+| `T167-OLP-0114-B006` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34` | pending |
+| `T167-OLP-0115-B006` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21` | pending |
+| `T167-OLP-0116-B008` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80` | pending |
+| `T167-OLP-0119-B016` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:97-98` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:98-99` | pending |
 
 ## T168 — justified / justification (of a derivation line)
 
@@ -10635,6 +10843,20 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T168-OLP-0110-B008` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:41-54` | `mr/content/first-order-logic/tableaux/identity.tex:41-54` | 153–154 |
 | `T168-OLP-0110-B009` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:56-71` | `mr/content/first-order-logic/tableaux/identity.tex:56-71` | 153–154 |
 | `T168-OLP-0110-B010` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:73-91` | `mr/content/first-order-logic/tableaux/identity.tex:73-91` | 153–154 |
+| `T168-OLP-0113-B006` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-22` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-23` | pending |
+| `T168-OLP-0113-B007` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36` | pending |
+| `T168-OLP-0113-B008` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:38-41` | pending |
+| `T168-OLP-0113-B009` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:43-46` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:43-46` | pending |
+| `T168-OLP-0113-B010` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80` | pending |
+| `T168-OLP-0114-B007` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39` | pending |
+| `T168-OLP-0115-B007` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30` | pending |
+| `T168-OLP-0116-B006` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-39` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-41` | pending |
+| `T168-OLP-0116-B007` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:41-56` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:43-56` | pending |
+| `T168-OLP-0116-B011` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118` | pending |
+| `T168-OLP-0118-B015` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85` | pending |
+| `T168-OLP-0119-B015` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96` | pending |
+| `T168-OLP-0120-B009` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50` | pending |
+| `T168-OLP-0120-B010` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:50-52` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:52-54` | pending |
 
 ## T169 — modus ponens
 
@@ -10671,6 +10893,25 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T169-OLP-0107-B007` | `OLP-0107` | 11.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:18-24` | `mr/content/first-order-logic/tableaux/provability-propositional.tex:18-23` | 147–149 |
 | `T169-OLP-0107-B012` | `OLP-0107` | 11.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:126-132` | `mr/content/first-order-logic/tableaux/provability-propositional.tex:126-133` | 147–149 |
 | `T169-OLP-0107-B013` | `OLP-0107` | 11.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:134-173` | `mr/content/first-order-logic/tableaux/provability-propositional.tex:135-174` | 147–149 |
+| `T169-OLP-0113-B010` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80` | pending |
+| `T169-OLP-0114-B007` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39` | pending |
+| `T169-OLP-0114-B008` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:41-41` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:41-41` | pending |
+| `T169-OLP-0116-B006` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-39` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:16-41` | pending |
+| `T169-OLP-0116-B007` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:41-56` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:43-56` | pending |
+| `T169-OLP-0116-B008` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80` | pending |
+| `T169-OLP-0116-B009` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99` | pending |
+| `T169-OLP-0117-B007` | `OLP-0117` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34` | `mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35` | pending |
+| `T169-OLP-0118-B022` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137` | pending |
+| `T169-OLP-0119-B007` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | pending |
+| `T169-OLP-0119-B008` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:31-34` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:31-34` | pending |
+| `T169-OLP-0119-B009` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44` | pending |
+| `T169-OLP-0119-B012` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59` | pending |
+| `T169-OLP-0119-B014` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | pending |
+| `T169-OLP-0119-B015` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96` | pending |
+| `T169-OLP-0120-B009` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50` | pending |
+| `T169-OLP-0121-B010` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | pending |
+| `T169-OLP-0121-B011` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54` | pending |
+| `T169-OLP-0121-B014` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:65-68` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:66-69` | pending |
 
 ## T170 — Gottlob Frege / Alfred North Whitehead / Bertrand Russell / David Hilbert; Frege system / Hilbert system
 
@@ -10934,6 +11175,7 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T174-OLP-0110-B006` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:13-14` | `mr/content/first-order-logic/tableaux/identity.tex:13-14` | 153–154 |
 | `T174-OLP-0110-B007` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:16-39` | `mr/content/first-order-logic/tableaux/identity.tex:16-39` | 153–154 |
 | `T174-OLP-0110-B008` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:41-54` | `mr/content/first-order-logic/tableaux/identity.tex:41-54` | 153–154 |
+| `T174-OLP-0115-B006` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:13-21` | pending |
 
 ## T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)
 
@@ -11296,6 +11538,8 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T179-OLP-0104-B010` | `OLP-0104` | 11.6 संख्यापकांसह टॅब्लो | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:208-309` | 140–144 |
 | `T179-OLP-0108-B006` | `OLP-0108` | 11.10 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:17-21` | `mr/content/first-order-logic/tableaux/provability-quantifiers.tex:17-21` | 149–150 |
 | `T179-OLP-0108-B007` | `OLP-0108` | 11.10 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:23-59` | `mr/content/first-order-logic/tableaux/provability-quantifiers.tex:23-59` | 149–150 |
+| `T179-OLP-0115-B007` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30` | pending |
+| `T179-OLP-0120-B009` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50` | pending |
 
 ## T180 — Rules for [logical symbol] (heading construction)
 
@@ -11377,6 +11621,8 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T181-OLP-0091-B024` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:146-157` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:149-161` | 121–122 |
 | `T181-OLP-0105-B023` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:162-170` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:163-171` | 144–146 |
 | `T181-OLP-0105-B024` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:172-188` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:173-189` | 144–146 |
+| `T181-OLP-0118-B021` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:112-120` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:114-122` | pending |
+| `T181-OLP-0118-B022` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137` | pending |
 
 ## T182 — proof-theoretic notions
 
@@ -11408,6 +11654,8 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T182-OLP-0091-B007` | `OLP-0091` | 10.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | `mr/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex:20-29` | 121–122 |
 | `T182-OLP-0105-B005` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:13-13` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:13-13` | 144–146 |
 | `T182-OLP-0105-B007` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-28` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:20-29` | 144–146 |
+| `T182-OLP-0118-B005` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-13` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-13` | pending |
+| `T182-OLP-0118-B006` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25` | pending |
 
 ## T183 — transitivity (of derivability)
 
@@ -11444,6 +11692,12 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T183-OLP-0105-B016` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:99-110` | 144–146 |
 | `T183-OLP-0105-B017` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:111-133` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:112-134` | 144–146 |
 | `T183-OLP-0105-B018` | `OLP-0105` | 11.7 सिद्धता-उपपत्तीय संकल्पना | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:135-138` | `mr/content/first-order-logic/tableaux/proof-theoretic-notions.tex:136-139` | 144–146 |
+| `T183-OLP-0118-B014` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:63-67` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:64-68` | pending |
+| `T183-OLP-0118-B015` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85` | pending |
+| `T183-OLP-0118-B016` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:86-89` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:87-90` | pending |
+| `T183-OLP-0119-B007` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | pending |
+| `T183-OLP-0119-B009` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44` | pending |
+| `T183-OLP-0121-B008` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30` | pending |
 
 ## T184 — derivability / provability relation
 
@@ -11661,6 +11915,60 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | `T184-OLP-0110-B008` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:41-54` | `mr/content/first-order-logic/tableaux/identity.tex:41-54` | 153–154 |
 | `T184-OLP-0110-B009` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:56-71` | `mr/content/first-order-logic/tableaux/identity.tex:56-71` | 153–154 |
 | `T184-OLP-0110-B010` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:73-91` | `mr/content/first-order-logic/tableaux/identity.tex:73-91` | 153–154 |
+| `T184-OLP-0113-B007` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:24-35` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:25-36` | pending |
+| `T184-OLP-0113-B010` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-81` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:48-80` | pending |
+| `T184-OLP-0113-B011` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:83-87` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:82-86` | pending |
+| `T184-OLP-0113-B012` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:89-93` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:88-92` | pending |
+| `T184-OLP-0116-B007` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:41-56` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:43-56` | pending |
+| `T184-OLP-0116-B008` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:58-80` | pending |
+| `T184-OLP-0116-B009` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:82-99` | pending |
+| `T184-OLP-0116-B010` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:101-104` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:101-104` | pending |
+| `T184-OLP-0116-B011` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118` | pending |
+| `T184-OLP-0117-B007` | `OLP-0117` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:17-34` | `mr/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex:18-35` | pending |
+| `T184-OLP-0118-B006` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-24` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:15-25` | pending |
+| `T184-OLP-0118-B007` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:26-30` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:27-31` | pending |
+| `T184-OLP-0118-B008` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:32-36` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:33-37` | pending |
+| `T184-OLP-0118-B009` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:38-41` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:39-42` | pending |
+| `T184-OLP-0118-B010` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:43-46` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:44-47` | pending |
+| `T184-OLP-0118-B011` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:48-50` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:49-51` | pending |
+| `T184-OLP-0118-B012` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:52-56` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:53-57` | pending |
+| `T184-OLP-0118-B013` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:58-61` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:59-62` | pending |
+| `T184-OLP-0118-B014` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:63-67` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:64-68` | pending |
+| `T184-OLP-0118-B015` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-85` | pending |
+| `T184-OLP-0118-B016` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:86-89` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:87-90` | pending |
+| `T184-OLP-0118-B017` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:91-94` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:92-96` | pending |
+| `T184-OLP-0118-B018` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:96-98` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:98-100` | pending |
+| `T184-OLP-0118-B019` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:100-104` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:102-106` | pending |
+| `T184-OLP-0118-B020` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:106-110` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:108-112` | pending |
+| `T184-OLP-0118-B021` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:112-120` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:114-122` | pending |
+| `T184-OLP-0118-B022` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137` | pending |
+| `T184-OLP-0119-B007` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | pending |
+| `T184-OLP-0119-B008` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:31-34` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:31-34` | pending |
+| `T184-OLP-0119-B009` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:36-44` | pending |
+| `T184-OLP-0119-B011` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-52` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-52` | pending |
+| `T184-OLP-0119-B012` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59` | pending |
+| `T184-OLP-0119-B013` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62` | pending |
+| `T184-OLP-0119-B014` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | pending |
+| `T184-OLP-0119-B015` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96` | pending |
+| `T184-OLP-0119-B017` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:100-101` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:101-101` | pending |
+| `T184-OLP-0119-B018` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119` | pending |
+| `T184-OLP-0119-B019` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:120-124` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:121-125` | pending |
+| `T184-OLP-0119-B020` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:126-130` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:127-131` | pending |
+| `T184-OLP-0120-B006` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:13-16` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:13-16` | pending |
+| `T184-OLP-0120-B007` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:18-20` | pending |
+| `T184-OLP-0120-B009` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50` | pending |
+| `T184-OLP-0121-B005` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:13-13` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:13-13` | pending |
+| `T184-OLP-0121-B006` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:15-17` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:15-16` | pending |
+| `T184-OLP-0121-B007` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:19-22` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:18-21` | pending |
+| `T184-OLP-0121-B008` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30` | pending |
+| `T184-OLP-0121-B009` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:33-36` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:32-36` | pending |
+| `T184-OLP-0121-B010` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | pending |
+| `T184-OLP-0121-B011` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54` | pending |
+| `T184-OLP-0121-B012` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:55-58` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:56-59` | pending |
+| `T184-OLP-0121-B013` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:60-63` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:61-64` | pending |
+| `T184-OLP-0121-B014` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:65-68` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:66-69` | pending |
+| `T184-OLP-0121-B017` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:80-84` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:81-85` | pending |
+| `T184-OLP-0121-B018` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:86-90` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:87-91` | pending |
 
 ## T185 — intuitionistic logic
 
@@ -11687,6 +11995,129 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T185-OLP-0089-B015` | `OLP-0089` | 10.5 निष्पत्ती: उदाहरणे | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265` | `mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258` | 114–118 |
+
+## T186 — Deduction Theorem (proof-theoretic)
+
+**Chosen rendering/action:** निगमन प्रमेय
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P101 directly attests deduction as निगमन, while the proof-theory sources establish the axiomatic derivation setting. The displayed biconditional fixes the exact proof-theoretic passage between deriving B from Gamma together with A and deriving A-implies-B from Gamma; the unqualified title stays distinct from T150's चिन्हार्थविषयक निगमन प्रमेय.
+
+**Rationale:** MR-P101 directly attests deduction as निगमन, while the proof-theory sources establish the axiomatic derivation setting. The displayed biconditional fixes the exact proof-theoretic passage between deriving B from Gamma together with A and deriving A-implies-B from Gamma; the unqualified title stays distinct from T150's चिन्हार्थविषयक निगमन प्रमेय.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
+- `MR-P101` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — deduction and double-negation observation. https://shabdakosh.marathi.gov.in/ananya-glossary/7/d (`checked_supports`): Primary Government of Maharashtra terminology page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary does not independently attest the full theorem or elimination-rule compounds.
+
+**Alternatives:**
+
+- निगमनाचे प्रमेय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- निष्पत्ती प्रमेय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- वियोजन प्रमेय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is निगमन प्रमेय the clearest Marathi title for the proof-theoretic Deduction Theorem, while remaining visibly paired with the semantic version?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T186-OLP-0119-B006` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:16-16` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:16-16` | pending |
+| `T186-OLP-0119-B010` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:46-47` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:46-47` | pending |
+| `T186-OLP-0119-B011` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-52` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-52` | pending |
+| `T186-OLP-0119-B014` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | pending |
+| `T186-OLP-0119-B016` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:97-98` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:98-99` | pending |
+| `T186-OLP-0120-B005` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:11-11` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:11-11` | pending |
+| `T186-OLP-0120-B006` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:13-16` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:13-16` | pending |
+| `T186-OLP-0120-B008` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:22-23` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:22-23` | pending |
+| `T186-OLP-0120-B009` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50` | pending |
+| `T186-OLP-0120-B011` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:54-56` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:56-58` | pending |
+| `T186-OLP-0121-B011` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54` | pending |
+
+## T187 — contraposition
+
+**Chosen rendering/action:** प्रतिपरिवर्तन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P100 directly attests प्रतिपरिवर्तन as the official philosophy-and-logic glossary headword. The displayed derivability implication fixes its proof-theoretic direction.
+
+**Rationale:** MR-P100 directly attests प्रतिपरिवर्तन as the official philosophy-and-logic glossary headword. The displayed derivability implication fixes its proof-theoretic direction.
+
+**Authorities actually checked:**
+
+- `MR-P100` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — contraposition observation. https://shabdakosh.marathi.gov.in/ananya-glossary/7/c (`checked_supports`): Primary Government of Maharashtra terminology page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source formula controls the formal proof-theoretic sense.
+
+**Alternatives:**
+
+- व्यत्यास — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रतिनिवेशन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- निषेधात्मक परिवर्तन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does the directly attested प्रतिपरिवर्तन remain natural for this derivability form of contraposition?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T187-OLP-0119-B018` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119` | pending |
+
+## T188 — ex falso quodlibet / explosion
+
+**Chosen rendering/action:** असत्यापासून काहीही / स्फोट
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+
+**Intended sense:** No logic-domain Marathi headword was found in the bounded official-glossary search. The transparent phrase असत्यापासून काहीही states the source formula's direction, while स्फोट preserves the conventional metaphor and the Latin name remains visible in the exercise.
+
+**Rationale:** No logic-domain Marathi headword was found in the bounded official-glossary search. The transparent phrase असत्यापासून काहीही states the source formula's direction, while स्फोट preserves the conventional metaphor and the Latin name remains visible in the exercise.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P085` — सिद्धतापद्धती : सोपाधिक व अप्रत्यक्ष (CP and IP). https://marathivishwakosh.org/50021/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly name natural-deduction discharge or introduction/elimination rules.
+
+**Alternatives:**
+
+- व्याघातातून काहीही — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- विस्फोट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- एक्स फाल्सो क्वॉडलिबेट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the edition lead with the transparent असत्यापासून काहीही, adopt स्फोट alone, or use another established Marathi proof-theory label?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T188-OLP-0119-B018` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119` | pending |
+
+## T189 — double-negation elimination
+
+**Chosen rendering/action:** द्विनकरण विलोपन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P072 and MR-P101 directly attest double negation as द्विनकरण. The edition's established elimination-rule vocabulary and the displayed double-negation-to-A formula supply विलोपन and control the exact direction.
+
+**Rationale:** MR-P072 and MR-P101 directly attest double negation as द्विनकरण. The edition's established elimination-rule vocabulary and the displayed double-negation-to-A formula supply विलोपन and control the exact direction.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P072` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — D glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/d (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P101` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — deduction and double-negation observation. https://shabdakosh.marathi.gov.in/ananya-glossary/7/d (`checked_supports`): Primary Government of Maharashtra terminology page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary does not independently attest the full theorem or elimination-rule compounds.
+
+**Alternatives:**
+
+- दुहेरी नकरण विलोपन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- द्विनकार-निरसन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- द्विनकरण निर्मूलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is द्विनकरण विलोपन the natural compositional name for the rule deriving A from double-not-A?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T189-OLP-0119-B018` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119` | pending |
+| `T189-OLP-0121-B011` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -13242,6 +13673,81 @@ Coverage: 108/722 source units through OLP-0111; 247 applied decisions; 7,076 oc
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLTAB-012-OLP-0110` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:67-71` | `mr/content/first-order-logic/tableaux/identity.tex:67-71` | 153–154 |
+
+## OLAXD-001 — confirmed-frozen-source-unbalanced-formula-parenthesis with documented formula projection
+
+**Chosen rendering/action:** Added the single missing outer right parenthesis in the Marathi formula and placed adjacent reader note OLAXD-001. A unit-specific QA projection removes that parenthesis solely when comparing with the frozen English bytes.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The first derivability exercise opens an outer parenthesis before the B-implies-C conditional but never closes it. The intended formula is fixed by the balanced axiom-style composition pattern and by the listed A-implies-B, B-implies-C and A-implies-C components.
+
+**Rationale:** The first derivability exercise opens an outer parenthesis before the B-implies-C conditional but never closes it. The intended formula is fixed by the balanced axiom-style composition pattern and by the listed A-implies-B, B-implies-C and A-implies-C components. Chosen action: Added the single missing outer right parenthesis in the Marathi formula and placed adjacent reader note OLAXD-001. A unit-specific QA projection removes that parenthesis solely when comparing with the frozen English bytes.
+
+**Authorities actually checked:**
+
+- `OLAXD-001-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLAXD-001. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the malformed unbalanced formula literally and disclose it only in provenance — `rejected`: Not chosen; the source finding and recorded action control.
+- Move the entire exercise into prose rather than repair the displayed formula — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the added right parenthesis close exactly the outer consequent grouping without changing the intended implication association?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLAXD-001-OLP-0119` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-107` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-108` | pending |
+
+## OLAXD-002 — confirmed-frozen-source-unbalanced-formula-parenthesis with documented formula projection
+
+**Chosen rendering/action:** Added the single missing outer right parenthesis in the Marathi formula and placed adjacent reader note OLAXD-002. A unit-specific QA projection removes that parenthesis solely when comparing with the frozen English bytes.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The displayed theorem used before the last modus-ponens step has six opening round parentheses but only five closing round parentheses. Its consequent opens an outer A-implies group that the frozen formula never closes.
+
+**Rationale:** The displayed theorem used before the last modus-ponens step has six opening round parentheses but only five closing round parentheses. Its consequent opens an outer A-implies group that the frozen formula never closes. Chosen action: Added the single missing outer right parenthesis in the Marathi formula and placed adjacent reader note OLAXD-002. A unit-specific QA projection removes that parenthesis solely when comparing with the frozen English bytes.
+
+**Authorities actually checked:**
+
+- `OLAXD-002-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLAXD-002. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the malformed unbalanced formula literally and disclose it only in provenance — `rejected`: Not chosen; the source finding and recorded action control.
+- Replace the displayed theorem with an informal prose appeal — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the added right parenthesis close exactly the outer A-implies consequent while preserving the theorem used in the proof?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLAXD-002-OLP-0120` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:43-44` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:43-48` | pending |
+
+## OLAXD-003 — confirmed-frozen-source-final-conclusion defect with documented formula projection
+
+**Chosen rendering/action:** Restored A-implies in the Marathi final conclusion and placed adjacent reader note OLAXD-003. A context-specific QA projection reconstructs the frozen shortened conclusion solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The align environment derives Gamma proves A-implies-(C-implies-forall x D(x)), and B was defined as C-implies-forall x D(x), but the following frozen sentence states only Gamma proves B. It therefore drops the A-implies operator required by both the preceding line and the Deduction Theorem goal.
+
+**Rationale:** The align environment derives Gamma proves A-implies-(C-implies-forall x D(x)), and B was defined as C-implies-forall x D(x), but the following frozen sentence states only Gamma proves B. It therefore drops the A-implies operator required by both the preceding line and the Deduction Theorem goal. Chosen action: Restored A-implies in the Marathi final conclusion and placed adjacent reader note OLAXD-003. A context-specific QA projection reconstructs the frozen shortened conclusion solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLAXD-003-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLAXD-003. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the weakened frozen conclusion and leave the stated theorem unproved — `rejected`: Not chosen; the source finding and recorded action control.
+- Repeat the full quantified consequent instead of using the defined metavariable B — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the restored A-implies-B conclusion follow exactly from the preceding line and complete the quantified Deduction Theorem case?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLAXD-003-OLP-0120` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:45-48` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:46-50` | pending |
 
 ## Deferred prospective decisions
 

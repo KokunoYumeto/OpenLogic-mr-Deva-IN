@@ -1,0 +1,131 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: proving-things
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{pro}}
+      {\olfileid{pl}{axd}{pro}}
+
+\olsection{\usetoken{P}{derivation}: उदाहरणे}
+
+
+\begin{ex}
+आपल्याला $(\lnot !D \lor !E) \lif (!D \lif
+!E)$ हे सिद्ध करायचे आहे असे समजा. स्पष्टपणे, हे आपल्या कोणत्याही
+स्वयंसिद्धकाचे उदाहरण नाही; म्हणून ते !!{derive} करण्यासाठी \MP{} नियम
+वापरावा लागेल. आपला एकमेव नियम~MP आहे; $!A$ आणि $!A \lif !B$ दिले असता
+या नियमाने~$!B$ ला समर्थित करता येते. एक युक्ती अशी असेल: $!A$ म्हणून
+$\lnot !D$, $!B$ म्हणून $!E$ आणि $!C$ म्हणून $!D \lif !E$ घेऊन
+\olref[prp]{ax:lor3} वापरणे, म्हणजे पुढील उदाहरण वापरणे:
+\[
+(\lnot !D \lif (!D \lif !E)) \lif ((!E \lif (!D \lif !E)) \lif ((\lnot
+!D \lor !E) \lif (!D \lif !E))).
+\]
+का? MP चे दोन उपयोग केल्यावर शेवटचा भाग मिळतो, आणि आपल्याला नेमके तेच
+हवे आहे. तसेच $\lnot !D \lif (!D \lif !E)$ हे
+\olref[prp]{ax:lnot2} चे उदाहरण आणि $!E \lif (!D \lif !E)$ हे
+\olref[prp]{ax:lif1} चे उदाहरण आहे, हे सहज दिसते. म्हणून आपली
+!!{derivation} अशी आहे:
+\begin{derivation}
+  1. &  $\lnot !D \lif (!D \lif !E)$ & \olref[prp]{ax:lnot2} \\
+  2. & $(\lnot !D \lif (!D \lif !E)) \lif {}$\\
+  &\qquad $((!E \lif (!D \lif !E)) \lif ((\lnot !D \lor !E) \lif (!D \lif !E)))$ & \olref[prp]{ax:lor3}\\
+  3. & $(!E \lif (!D \lif !E)) \lif ((\lnot !D \lor !E) \lif (!D \lif !E))$ & 1, 2, \MP\\
+  4. & $!E \lif (!D \lif !E)$ & \olref[prp]{ax:lif1}\\
+  5. & $(\lnot !D \lor !E) \lif (!D \lif !E)$ & 3, 4, \MP
+\end{derivation}
+\end{ex}
+
+\begin{ex}\ollabel{ex:identity}
+$!D \lif !D$ ची !!a{derivation} शोधून पाहू. हे स्वयंसिद्धकाचे उदाहरण
+नाही; म्हणून ते !!{derive} करण्यासाठी आपल्याला \MP{} वापरावा लागेल.
+\olref[prp]{ax:lif1} हे~$!A \lif !B$ या रूपाचे स्वयंसिद्धक आहे आणि त्याला
+आपण~\MP लावू शकतो. त्याचा उपयोग व्हायचा असेल, तर अर्थातच या वेळी
+\MP{} ने योग्य पायरी म्हणून समर्थित होणारे $!B$ हे~$!D \lif !D$ असले
+पाहिजे, कारण आपल्याला तेच !!{derive} करायचे आहे. त्यामुळे $!A$ सुद्धा
+$!D$ असले पाहिजे; म्हणजे आपण \olref[prp]{ax:lif1} चे पुढील उदाहरण पाहू शकतो:
+\[
+!D \lif (!D \lif !D)
+\]
+\MP लावण्यासाठी आपल्याला संबंधित दुसरे आधारविधान, म्हणजे~$!A$, सुद्धा
+समर्थित करावे लागेल. पण आपल्या प्रकरणात ते~$!D$ असेल, आणि एकटे~$!D$
+!!{derive} करता येणार नाही. म्हणून आपल्याला वेगळी युक्ती हवी.
+
+केवळ~$\lif$ असलेले दुसरे स्वयंसिद्धक म्हणजे \olref[prp]{ax:lif2}, म्हणजे
+\[
+(!A \lif (!B \lif !C)) \lif ((!A \lif !B) \lif (!A \lif !C))
+\]
+\MP{} दोनदा लावून आपण शेवटच्या अंतःस्थ सशर्त विधानापर्यंत पोहोचू शकतो.
+पुन्हा, याचा अर्थ असा की \olref[prp]{ax:lif2} चे असे उदाहरण आपल्याला हवे
+ज्यात $!A \lif !C$ हे $!D \lif !D$, म्हणजे आपण साध्य करू पाहत असलेले
+!!{formula}, असेल. मग अर्थातच $!A$ आणि $!C$ ही दोन्ही~$!D$ असतात.
+$!A \lif (!B \lif !C)$ आणि $!A \lif !B$, म्हणजे आपल्या प्रकरणात
+$!D \lif (!B \lif !D)$ आणि $!D \lif !B$, ही दोन्हीही !!{derivable}
+होतील अशा रीतीने~$!B$ कसे निवडावे? आपण $!B$ काहीही निवडले, तरी यांपैकी
+पहिले हे आधीच \olref[prp]{ax:lif1} चे उदाहरण आहे. आणि $!B$ हे
+$(!D \lif !D)$ असेल, तर $!D \lif !B$ हे \olref[prp]{ax:lif1} चे आणखी
+एक उदाहरण असेल. म्हणून आपली !!{derivation} अशी आहे:
+\begin{derivation}
+  1. & $!D \lif ((!D \lif !D) \lif !D)$ & \olref[prp]{ax:lif1}\\
+  2. & $(!D \lif ((!D \lif !D) \lif !D)) \lif {}$\\
+  & \qquad $((!D \lif (!D \lif !D)) \lif (!D \lif !D))$ & \olref[prp]{ax:lif2}\\
+  3. & $(!D \lif (!D \lif !D)) \lif (!D \lif !D)$ & 1, 2, \MP\\
+  4. & $!D \lif (!D \lif !D)$ & \olref[prp]{ax:lif1}\\
+  5. & $!D \lif !D$ & 3, 4, \MP
+\end{derivation}
+\end{ex}
+
+\begin{ex}\ollabel{ex:chain}
+कधी कधी काही इतर !!{formula}s~$\Gamma$ पासून एखाद्या !!{formula} ची
+!!a{derivation} आहे हे आपल्याला दाखवायचे असते. उदाहरणार्थ,
+$\Gamma = \{!A \lif !B, !B \lif !C\}$ पासून $!A \lif !C$ हे
+!!{derive} करता येते, हे दाखवू.
+\begin{derivation}
+  1. & $!A \lif !B$ & \Hyp\\
+  2. & $!B \lif !C$ & \Hyp\\
+  3. & $(!B \lif !C) \lif (!A \lif (!B \lif !C))$ & \olref[prp]{ax:lif1} \\
+  4. & $!A \lif (!B \lif !C)$ & 2, 3, \MP\\
+  5. & $(!A \lif (!B \lif !C)) \lif {}$\\
+  & \qquad $((!A \lif !B) \lif (!A \lif !C))$ & \olref[prp]{ax:lif2}\\
+  6. & $((!A \lif !B) \lif (!A \lif !C))$ & 4, 5, \MP\\
+  7. & $!A \lif !C$ & 1, 6, \MP
+\end{derivation}
+``\Hyp'' (``hypothesis'', म्हणजे ``गृहीतक'') असे लेबल असलेल्या ओळी
+त्या ओळीवरील !!{formula} हा~$\Gamma$ चा !!a{element} असल्याचे दर्शवतात.
+\end{ex}
+
+\begin{prop}
+  \ollabel{prop:chain} जर $\Gamma \Proves !A \lif !B$ आणि $\Gamma
+  \Proves !B \lif !C$, तर $\Gamma \Proves !A \lif !C$
+\end{prop}
+
+\begin{proof}
+  $\Gamma \Proves !A \lif !B$ आणि $\Gamma \Proves !B \lif
+  !C$ असे समजा. मग~$\Gamma$ पासून $!A \lif !B$ ची !!a{derivation}
+  असते; तसेच~$\Gamma$ पासून $!B \lif !C$ चीही !!a{derivation} असते.
+  त्यांची जोडणी करून त्या एकाच !!{derivation} मध्ये एकत्र करा. आता मागील
+  उदाहरणातील !!{derivation} च्या ओळी 3--7 जोडा. ही~$\Gamma$ पासूनची
+  !!a{derivation} आहे, आणि नव्या !!{derivation} ची शेवटची ओळ
+  $!A \lif !C$ आहे. लक्षात घ्या की ओळी 4 आणि~7 साठी दिलेली
+  समर्थने पुढील बदलांनंतरही वैध राहतात: ओळ क्रमांक~1 चा निर्देश $!A
+  \lif !B$ च्या !!{derivation} च्या शेवटच्या ओळीच्या निर्देशाने आणि ओळ
+  क्रमांक~2 चा निर्देश $!B \lif !C$ च्या !!{derivation} च्या शेवटच्या
+  ओळीच्या निर्देशाने बदला.
+\end{proof}
+
+\begin{prob}
+स्वयंसिद्धकांपासूनच्या !!{derivation}s मांडून पुढील विधाने सिद्ध करा:
+\begin{enumerate}
+\item $(!A \land !B) \lif (!B \land !A)$
+\item $((!A \land !B) \lif !C) \lif (!A \lif (!B \lif !C))$
+\item $\lnot(!A \lor !B) \lif \lnot !A$
+\end{enumerate}
+\end{prob}
+
+
+
+\end{document}

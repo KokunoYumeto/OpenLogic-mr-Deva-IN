@@ -1,0 +1,60 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: deduction-theorem-quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{ddq}
+
+\olsection{संख्यापकांसह निगमन प्रमेय}
+
+\begin{thm}[निगमन प्रमेय]
+\ollabel{thm:deduction-thm-q} जर $\Gamma \cup \{!A\} \Proves !B$ असेल,
+तर $\Gamma \Proves !A \lif !B$.
+\end{thm}
+
+\begin{proof}
+$\Gamma \cup \{!A\}$ पासून $!B$ च्या !!{derivation} च्या लांबीवर
+आपण पुन्हा विगमन करू.
+
+विगमनाच्या आधारपायरीचा पुरावा~\olref[ded]{thm:deduction-thm} च्या
+पुराव्यातील आधारपायरीच्या पुराव्यासारखाच आहे.
+
+विगमन पायरीसाठी, $\Gamma \cup \{!A\}$ पासून $!B$ ची !!{derivation}
+एखाद्या निगमन नियमाने समर्थित असलेल्या~$!B$ या पायरीने संपते असे पुन्हा
+समजा. निगमन नियम विध्यात्मक अनुमान असेल, तर आपण
+\olref[ded]{thm:deduction-thm} च्या पुराव्याप्रमाणेच पुढे जाऊ. निगमन
+नियम \QR असेल, तर $!B \ident !C \lif \lforall[x][!D(x)]$ आहे आणि
+$!C \lif !D(a)$ या रूपाचे !!a{formula} त्या !!{derivation} मध्ये आधी
+येते, जेथे $a$ हे~$!C$, $!A$, किंवा $\Gamma$ मध्ये येत नाही. म्हणून
+आपल्याकडे पुढील आहे:
+\begin{align*}
+  \Gamma \cup \{!A\} & \Proves !C \lif !D(a),\\
+  \intertext{आणि विगमन गृहीतक लागू होते; म्हणजे पुढील मिळते:}
+    \Gamma & \Proves !A \lif (!C \lif !D(a)).\\
+  \intertext{पुढील सूत्रावरून}
+  & \Proves (!A \lif (!C \lif !D(a))) \lif ((!A \land !C) \lif !D(a))\\
+  \intertext{आणि विध्यात्मक अनुमानामुळे पुढील मिळते:}
+  \Gamma & \Proves (!A \land !C) \lif !D(a).\\
+  \intertext{आयगेन चराची अट अजूनही लागू असल्यामुळे, या !!{derivation} मध्ये \QR ने समर्थित एक पायरी जोडून पुढील मिळवता येते:}
+    \Gamma & \Proves (!A \land !C) \lif \lforall[x][!D(x)].\\
+    \intertext{आपल्याकडे पुढीलही आहे:}
+    & \Proves ((!A \land !C) \lif \lforall[x][!D(x)]) \lif (!A \lif (!C \lif \lforall[x][!D(x)])),\\
+    \intertext{म्हणून विध्यात्मक अनुमानाने,}
+    \Gamma & \Proves !A \lif (!C \lif \lforall[x][!D(x)]),
+\end{align*}
+%READERNOTE{OLAXD-002: गोठवलेल्या इंग्रजी सूत्रात सर्वांत बाहेरचा एक उजवा कंस सुटला आहे. मराठी सूत्रात तो कंस जोडला असून गोठवलेले इंग्रजी बाइट्स बदललेले नाहीत.}
+म्हणजे $\Gamma \Proves !A \lif !B$.
+%READERNOTE{OLAXD-003: गोठवलेल्या इंग्रजी निष्कर्षात आवश्यक A-सशर्त भाग सुटला आहे. मराठी निष्कर्षात तो पुनर्स्थापित केला असून गोठवलेले इंग्रजी बाइट्स बदललेले नाहीत.}
+
+$!B$ ला \QR या नियमाने समर्थन मिळते, पण त्याचे रूप
+$\lexists[x][!D(x)] \lif !C$ आहे, हे प्रकरण आपण सरावासाठी सोडतो.
+\end{proof}
+
+\begin{prob}
+  \olref[fol][axd][ddq]{thm:deduction-thm-q} चा पुरावा पूर्ण करा.
+\end{prob}
+
+\end{document}

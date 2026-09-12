@@ -1,0 +1,94 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{prv}}
+      {\olfileid{pl}{axd}{prv}}
+
+\olsection{\usetoken{S}{derivability} आणि सुसंगतता}
+
+आता आपण !!{derivability} संबंधाचे अनेक गुणधर्म सिद्ध करू. ते स्वतंत्रपणेही
+महत्त्वाचे आहेत, पण संपूर्णता प्रमेयाच्या सिद्धतेत प्रत्येकाची भूमिका असेल.
+
+\begin{prop}\ollabel{prop:provability-contr}
+  जर $\Gamma \Proves !A$ आणि $\Gamma \cup \{!A\}$ विसंगत असेल, तर
+  $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+  जर $\Gamma \cup \{!A\}$ विसंगत असेल, तर $\Gamma \cup \{!A\}
+  \Proves \lfalse$. \olref[ptn]{prop:reflexivity} वरून प्रत्येक
+  $!B \in \Gamma$ साठी $\Gamma \Proves !B$. गृहीतकानुसार
+  $\Gamma \Proves !A$ सुद्धा असल्यामुळे प्रत्येक $!B \in \Gamma \cup
+  \{!A\}$ साठी $\Gamma \Proves !B$. \olref[ptn]{prop:transitivity}
+  वरून $\Gamma \Proves \lfalse$, म्हणजे $\Gamma$ विसंगत आहे.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{\lnot !A\}$
+विसंगत असते.
+\end{prop}
+
+\begin{proof}
+प्रथम $\Gamma \Proves !A$ असे समजा. मग \olref[ptn]{prop:monotonicity}
+वरून $\Gamma \cup \{\lnot !A\} \Proves !A$. \olref[ptn]{prop:reflexivity}
+वरून $\Gamma \cup \{\lnot !A\} \Proves \lnot !A$. तसेच
+\olref[prp]{ax:lnot2} वरून $\Proves \lnot !A \lif (!A \lif \lfalse)$.
+म्हणून \olref[ded]{prop:mp} चे दोन उपयोग करून $\Gamma \cup \{\lnot
+!A\} \Proves \lfalse$ मिळते.
+
+आता $\Gamma \cup \{\lnot !A\}$ विसंगत आहे असे गृहीत धरा, म्हणजे
+$\Gamma \cup \{\lnot !A\} \Proves \lfalse$. निगमन प्रमेयावरून $\Gamma
+\Proves \lnot !A \lif \lfalse$. \olref[prp]{ax:lfalse2} वरून $\Gamma
+\Proves (\lnot !A \lif \lfalse) \lif \lnot\lnot !A$, म्हणून
+\olref[ded]{prop:mp} वरून $\Gamma \Proves \lnot\lnot !A$. आपल्याकडे
+$\Gamma \Proves \lnot\lnot !A \lif !A$ हेही असल्यामुळे
+(\olref[prp]{ax:dne}), \olref[ded]{prop:mp} च्या आणखी एका उपयोगाने
+$\Gamma \Proves !A$ मिळते.
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves \lnot !A$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{!A\}$
+विसंगत असते, हे सिद्ध करा.
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  जर $\Gamma \Proves !A$ आणि $\lnot !A \in \Gamma$ असेल, तर $\Gamma$
+  विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+  \olref[prp]{ax:lnot2} वरून $\Gamma \Proves \lnot !A \lif (!A \lif \lfalse)$.
+  \olref[ded]{prop:mp} चे दोन उपयोग करून $\Gamma \Proves \lfalse$ मिळते.
+\end{proof}
+
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  $\Gamma \cup \{!A\}$ आणि $\Gamma \cup \{\lnot !A\}$ हे दोन्ही संच
+  विसंगत असतील, तर $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+  \olref[fol][axd][prv]{prop:provability-exhaustive} सिद्ध करा
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+  \olref[pl][axd][prv]{prop:provability-exhaustive} सिद्ध करा
+\end{prob}
+\tagendprob
+
+
+\end{document}

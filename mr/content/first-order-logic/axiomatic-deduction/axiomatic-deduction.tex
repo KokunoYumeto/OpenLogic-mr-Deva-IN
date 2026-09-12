@@ -1,0 +1,59 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{axd}{स्वयंसिद्धकीय \usetoken{P}{derivation}}}
+      {\olchapter{pl}{axd}{स्वयंसिद्धकीय \usetoken{P}{derivation}}}
+
+\begin{editorial}
+  या प्रकरणातील मजकूर कोणते संयोजक आणि संख्यापक आदिम किंवा परिभाषित
+  आहेत हे दर्शवणाऱ्या विविध टॅग्जचे पालन करतो याची खात्री करण्याचा अद्याप
+  कोणताही प्रयत्न केलेला नाही: यांपैकी $\liff$ परिभाषित आहे, तर बाकी
+  सर्व आदिम आहेत असे गृहीत धरले आहे. FOL टॅग सत्य
+  असल्यास आपण संख्यापकांसह आवृत्ती तयार करतो; अन्यथा संख्यापकांविना
+  आवृत्ती तयार करतो.
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{axioms-rules-propositional}
+
+\iftag{FOL}{%
+  \olimport{axioms-rules-quantifiers}
+}{}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{deduction-theorem}
+
+\iftag{FOL}{%
+  \olimport{deduction-theorem-quantifiers}
+}{}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{
+  \olimport{identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}

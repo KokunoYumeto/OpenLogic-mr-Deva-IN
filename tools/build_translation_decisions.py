@@ -143,6 +143,11 @@ CHAPTERS = {
     "8": "सिद्धता-पद्धती",
     "9": "क्रमवर्ती कलन",
     "10": "नैसर्गिक निगमन",
+    "11": "टॅब्लो",
+}
+CHAPTER_PATH_COMPONENTS = {
+    "/tableaux/": "टॅब्लो",
+    "/axiomatic-deduction/": "स्वयंसिद्धकीय निगमन",
 }
 
 
@@ -172,6 +177,18 @@ def adapt_occurrence(legacy, evidence_ref):
     unit_id = legacy["unit_id"]
     section_number = legacy.get("section_number") or ""
     chapter = CHAPTERS.get(section_number.split(".", 1)[0])
+    source_path = legacy.get("source_path")
+    if source_path is None and legacy.get("source_locations"):
+        source_path = legacy["source_locations"][0]["path"]
+    normalized_source_path = "/" + (source_path or "").replace("\\", "/").strip("/")
+    chapter = chapter or next(
+        (
+            title
+            for component, title in CHAPTER_PATH_COMPONENTS.items()
+            if component in normalized_source_path
+        ),
+        None,
+    )
     section_title = " ".join(
         value for value in [section_number, legacy.get("section_title")] if value
     ) or None

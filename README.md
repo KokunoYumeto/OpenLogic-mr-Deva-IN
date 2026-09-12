@@ -41,15 +41,17 @@ and desktop/mobile browser checks. The EPUB passed EPUBCheck 5.3.0 with zero
 messages, exact text and MathML preservation checks, complete link validation,
 and representative rendering in Calibre.
 
-Translation continues beyond the frozen OLP-0111 release boundary. Unreleased
-working units remain outside this reader and its downloadable source archive.
+Translation continues beyond the frozen OLP-0111 release boundary. The editable
+working tree now contains 118/722 units and 1,232 aligned content segments through
+OLP-0121. OLP-0112–OLP-0121 remain outside this reader and its downloadable source
+archive; OLP-0122 is next.
 
 - **Current release:** [अकरा प्रकरणे — EPUB 3, PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8.1).
 - **EPUB 3:** [download the reflowable Marathi reader](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub).
 - **DOI mirror:** [edition concept DOI 10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960), which resolves to the latest version.
 - **PDF:** [157-page cumulative reader](releases/eleven-chapters-v0.8/openlogic-mr-eleven-chapters.pdf).
 - **Offline HTML:** download and extract `openlogic-mr-eleven-chapters-html.zip`, then open `index.html`.
-- **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/), [size of sets](mr/content/sets-functions-relations/size-of-sets/), [arithmetization](mr/content/sets-functions-relations/arithmetization/), [infinite sets](mr/content/sets-functions-relations/infinite/), [propositional syntax and semantics](mr/content/propositional-logic/syntax-and-semantics/), [first-order proof systems](mr/content/first-order-logic/proof-systems/), [sequent calculus](mr/content/first-order-logic/sequent-calculus/), [natural deduction](mr/content/first-order-logic/natural-deduction/), and [Tableaux](mr/content/first-order-logic/tableaux/).
+- **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/), [size of sets](mr/content/sets-functions-relations/size-of-sets/), [arithmetization](mr/content/sets-functions-relations/arithmetization/), [infinite sets](mr/content/sets-functions-relations/infinite/), [propositional syntax and semantics](mr/content/propositional-logic/syntax-and-semantics/), [first-order proof systems](mr/content/first-order-logic/proof-systems/), [sequent calculus](mr/content/first-order-logic/sequent-calculus/), [natural deduction](mr/content/first-order-logic/natural-deduction/), [Tableaux](mr/content/first-order-logic/tableaux/), and [axiomatic deduction](mr/content/first-order-logic/axiomatic-deduction/).
 - **Terminology and expert review:** begin with the [shared-schema review guide](provenance/translation-decisions/START_HERE.md), then use the [full applied-decision index](provenance/translation-decisions/TRANSLATION_DECISIONS_FULL.md), [priority review](provenance/translation-decisions/PRIORITY_REVIEW.md), [one-row-per-occurrence CSV](provenance/translation-decisions/DECISION_OCCURRENCES.csv), or [canonical JSON](provenance/translation-decisions/DECISIONS.json). The backward-compatible [decision ledger](provenance/EXPERT_REVIEW_LOG.md) and occurrence JSONL remain available. These surfaces record exact source/target scopes, current PDF page ranges, reversible choices and plain review questions without making review a completion gate.
 - **Pristine English:** `upstream/`; this is source evidence, not translated coverage.
 - **Current source-checkpoint evidence:** `provenance/source-checkpoint-108/`.
@@ -101,8 +103,8 @@ The evidence also preserves the formal retraction of a
 shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The frozen
 94-unit source-checkpoint evidence explicitly distinguishes preserved original
 pages from hash-pinned short web observations whose origin HTML bytes were
-unavailable. The synchronized root provenance now covers 103 translated units and
-1,103 aligned segments through OLP-0106. A bounded independent model audit of
+unavailable. The synchronized root provenance now covers 118 translated units and
+1,232 aligned segments through OLP-0121. A bounded independent model audit of
 OLP-0071–OLP-0072 found no
 material mistranslation, prompted one standing-assumption clarification, and led
 to narrower overlapping choice locators plus separate confidence records for
@@ -166,8 +168,15 @@ tableau theoremhood, derivability and consistency and proves reflexivity,
 monotonicity, transitivity and compactness. OLP-0106 proves four further
 derivability/consistency properties through finite closed-tableau transformations
 and Cut, with its bounded source repairs recorded in OLTAB-006–OLTAB-009.
-The records through OLP-0097 are included in the v0.7 reader and release archive;
-OLP-0098–OLP-0106 are post-release working units. OLP-0107 is next.
+OLP-0107–OLP-0111 complete the published tableau chapter with propositional and
+quantified consequences, semantic soundness, identity rules, and soundness with
+identity. OLP-0112–OLP-0121 begin the unreleased axiomatic-deduction chapter:
+they define derivations, propositional and quantified axioms and rules, give
+worked derivations, establish the proof-theoretic notions and both Deduction
+Theorems, and prove the first derivability and consistency results. OLAXD-001–003
+record two missing source parentheses and one omitted conditional conclusion.
+The records through OLP-0111 are included in the v0.8.1 reader and release archive;
+OLP-0112–OLP-0121 are post-release working units. OLP-0122 is next.
 
 Canon originals are local research evidence. They are **not redistributed here**.
 Some government-site originals could not be downloaded; the index distinguishes
