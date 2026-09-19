@@ -1,0 +1,74 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: covered-structures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{cov}
+
+\olsection{प्रथम-क्रम भाषांसाठी बंद पदांनी आच्छादित \printtoken{P}{structure}}
+
+\begin{explain}
+एखाद्या पदात !!{variable}s नसतील, तर ते \emph{बंद} असते, हे आठवा.
+\end{explain}
+
+\begin{defn}[बंद पदांचे !!^{value}]
+$t$ हे भाषा~$\Lang L$ हिचे बंद पद आणि $\Struct M$ ही~$\Lang L$ साठीची
+!!{structure} असेल, तर \emph{!!{value}}~$\Value{t}{M}$ पुढीलप्रमाणे
+परिभाषित केले जाते:
+\begin{enumerate}
+\item $t$ हे फक्त !!{constant}~$c$ असेल, तर
+  $\Value{c}{M} = \Assign{c}{M}$.
+\item $t$ हे $\Atom{f}{t_1, \ldots, t_n}$ या रूपात असेल, तर
+  \[
+  \Value{t}{M} = \Assign{f}{M}(\Value{t_1}{M}, \ldots,
+  \Value{t_n}{M}).
+  \]
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[आच्छादित !!{structure}]
+प्रांतातील प्रत्येक घटक हा एखाद्या बंद पदाचे !!{value} असेल, तर ती
+!!{structure} \emph{आच्छादित} असते.
+\end{defn}
+
+\begin{ex}
+!!{constant}s $\Obj{zero}$, $\Obj{one}$, $\Obj{two}$, \dots, द्विस्थानी
+!!{predicate}~$<$ आणि द्विस्थानी !!{function}s $+$ व~$\times$ असलेली
+भाषा~$\Lang L$ घेऊ. मग~$\Lang L$ साठीची !!a{structure}~$\Struct M$ अशी
+आहे: तिचा प्रांत $\Domain M = \{0, 1, 2, \ldots \}$ असून
+$\Assign{\Obj{zero}}{M} = 0$, $\Assign{\Obj{one}}{M} = 1$,
+$\Assign{\Obj{two}}{M} = 2$ आणि असेच पुढे ही तिची अर्थनिर्धारणे आहेत.
+द्विस्थानी संबंधचिन्ह~$<$ साठी $\Assign{<}{M}$ हा अशा सर्व जोड्यांचा
+संच आहे की $\tuple{c_1, c_2} \in \Domain{M}^2$ आणि $c_1$ हा~$c_2$ पेक्षा
+लहान आहे: उदाहरणार्थ, $\tuple{1, 3} \in \Assign{<}{M}$, पण
+$\tuple{2, 2} \notin \Assign{<}{M}$. द्विस्थानी !!{function}~$+$ साठी
+$\Assign{+}{M}$ नेहमीच्या रीतीने परिभाषित करू---उदाहरणार्थ,
+$\Assign{+}{M}(2,3)$ हे~$5$ कडे पाठवते; आणि द्विस्थानी
+!!{function}~$\times$ साठीही त्याचप्रमाणे. म्हणून $\Obj{four}$ चे
+!!{value} फक्त~$4$ आहे आणि $\times(\Obj{two},
++(\Obj{three},\Obj{zero}))$ चे !!{value} (किंवा मध्यस्थ संकेतपद्धतीत,
+$\Obj{two} \times (\Obj{three} + \Obj{zero})$) पुढीलप्रमाणे आहे:
+%READERNOTE{OLFOL-011: गोठवलेल्या इंग्रजी प्रदर्शनात पहिल्या ओळीच्या शेवटी आणि पुढील ओळीच्या सुरुवातीला सलग दोन समानता-चिन्हे येतात. मराठी प्रदर्शनात पहिल्या ओळीच्या शेवटचे अनावश्यक चिन्ह वगळले आहे.}
+\begin{multline*}
+\Value{\times(\Obj{two}, +(\Obj{three},\Obj{zero}))}{M} \\
+\begin{aligned}
+& =\Assign{\times}{M}(\Value{\Obj{two}}{M}, \Value{+(\Obj{three}, \Obj{zero})}{M})\\
+& = \Assign{\times}{M}(\Value{\Obj{two}}{M}, \Assign{+}{M}(\Value{\Obj{three}}{M},
+\Value{\Obj{zero}}{M})) \\
+& = \Assign{\times}{M}(\Assign{\Obj{two}}{M}, \Assign{+}{M}(\Assign{\Obj{three}}{M},
+\Assign{\Obj{zero}}{M})) \\
+& = \Assign{\times}{M}(2, \Assign{+}{M}(3, 0)) \\
+& = \Assign{\times}{M}(2, 3) \\
+& = 6
+\end{aligned}
+\end{multline*}
+\end{ex}
+
+\begin{prob}
+अंकगणिताचे मानक प्रतिमान~$\Struct N$ आच्छादित आहे का? स्पष्टीकरण द्या.
+\end{prob}
+
+\end{document}

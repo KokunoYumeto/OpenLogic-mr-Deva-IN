@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 occurrences.
+Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 occurrences.
 
 ## T001 — set
 
@@ -416,6 +416,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T001-OLP-0145-B007` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:27-36` | `mr/content/first-order-logic/introduction/semantic-notions.tex:27-37` | pending |
 | `T001-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
 | `T001-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
+| `T001-OLP-0161-B012` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:82-92` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:83-93` | pending |
 
 ## T002 — element/member
 
@@ -711,6 +712,34 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T002-OLP-0143-B009` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:69-106` | `mr/content/first-order-logic/introduction/satisfaction.tex:72-114` | pending |
 | `T002-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
 | `T002-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
+| `T002-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T002-OLP-0161-B007` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:28-42` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:29-43` | pending |
+| `T002-OLP-0161-B008` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:44-51` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:45-52` | pending |
+| `T002-OLP-0161-B012` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:82-92` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:83-93` | pending |
+| `T002-OLP-0162-B008` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:31-34` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:32-35` | pending |
+| `T002-OLP-0162-B009` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68` | pending |
+| `T002-OLP-0163-B006` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-30` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-29` | pending |
+| `T002-OLP-0163-B008` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:41-45` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:39-43` | pending |
+| `T002-OLP-0163-B009` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:47-56` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:45-54` | pending |
+| `T002-OLP-0163-B013` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:87-95` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:86-94` | pending |
+| `T002-OLP-0163-B014` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:97-99` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:96-98` | pending |
+| `T002-OLP-0163-B018` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:118-119` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:117-118` | pending |
+| `T002-OLP-0163-B025` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:146-150` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:148-153` | pending |
+| `T002-OLP-0163-B026` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:152-166` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:155-169` | pending |
+| `T002-OLP-0163-B027` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:168-177` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:171-181` | pending |
+| `T002-OLP-0163-B028` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:179-191` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:183-196` | pending |
+| `T002-OLP-0163-B030` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-213` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:213-220` | pending |
+| `T002-OLP-0163-B032` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:232-244` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:238-250` | pending |
+| `T002-OLP-0163-B037` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:324-336` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:337-350` | pending |
+| `T002-OLP-0163-B038` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:338-345` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:352-361` | pending |
+| `T002-OLP-0163-B039` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:363-385` | pending |
+| `T002-OLP-0163-B046` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:400-415` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:421-437` | pending |
+| `T002-OLP-0164-B021` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:157-172` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:163-178` | pending |
+| `T002-OLP-0164-B022` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:174-196` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:180-206` | pending |
+| `T002-OLP-0164-B036` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:278-287` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:293-302` | pending |
+| `T002-OLP-0164-B038` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:292-294` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:307-310` | pending |
+| `T002-OLP-0164-B045` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:320-323` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:341-345` | pending |
+| `T002-OLP-0164-B046` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:325-333` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:347-355` | pending |
 
 ## T003 — empty set
 
@@ -880,6 +909,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T003-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 88–89 |
 | `T003-OLP-0113-B012` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:89-93` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:88-92` | pending |
 | `T003-OLP-0118-B008` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:32-36` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:33-37` | pending |
+| `T003-OLP-0161-B012` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:82-92` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:83-93` | pending |
 
 ## T004 — extensionality
 
@@ -971,6 +1001,15 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T004-OLP-0111-B009` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:30-43` | `mr/content/first-order-logic/tableaux/soundness-identity.tex:29-43` | 154 |
 | `T004-OLP-0124-B008` | `OLP-0124` |  | `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:41-52` | `mr/content/first-order-logic/axiomatic-deduction/soundness.tex:40-51` | pending |
 | `T004-OLP-0124-B013` | `OLP-0124` |  | `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:87-107` | `mr/content/first-order-logic/axiomatic-deduction/soundness.tex:86-109` | pending |
+| `T004-OLP-0161-B012` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:82-92` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:83-93` | pending |
+| `T004-OLP-0165-B005` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:11-11` | pending |
+| `T004-OLP-0165-B006` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:13-18` | pending |
+| `T004-OLP-0165-B007` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:21-26` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:20-24` | pending |
+| `T004-OLP-0165-B008` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:28-37` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:26-37` | pending |
+| `T004-OLP-0165-B009` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:39-44` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:39-44` | pending |
+| `T004-OLP-0165-B010` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:46-49` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:46-48` | pending |
+| `T004-OLP-0165-B011` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:51-55` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:50-55` | pending |
+| `T004-OLP-0165-B012` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:57-59` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:57-60` | pending |
 
 ## T005 — subset
 
@@ -1541,6 +1580,9 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T008-OLP-0053-B006` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:21-26` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:19-24` | 71–72 |
 | `T008-OLP-0053-B007` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:28-40` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:26-38` | 71–72 |
 | `T008-OLP-0053-B008` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:42-64` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:40-62` | 71–72 |
+| `T008-OLP-0161-B009` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:53-65` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:54-66` | pending |
+| `T008-OLP-0161-B011` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:75-80` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:75-81` | pending |
+| `T008-OLP-0162-B010` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:68-70` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:70-72` | pending |
 
 ## T009 — formal validity
 
@@ -1636,6 +1678,15 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T009-OLP-0140-B006` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:13-31` | `mr/content/first-order-logic/introduction/first-order-logic.tex:13-31` | pending |
 | `T009-OLP-0140-B007` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:33-58` | `mr/content/first-order-logic/introduction/first-order-logic.tex:33-60` | pending |
 | `T009-OLP-0145-B007` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:27-36` | `mr/content/first-order-logic/introduction/semantic-notions.tex:27-37` | pending |
+| `T009-OLP-0160-B007` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46` | pending |
+| `T009-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
+| `T009-OLP-0161-B013` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108` | pending |
+| `T009-OLP-0166-B004` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:9-10` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:9-10` | pending |
+| `T009-OLP-0166-B005` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | pending |
+| `T009-OLP-0166-B006` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:25-28` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:25-28` | pending |
+| `T009-OLP-0166-B009` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:43-46` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:44-47` | pending |
+| `T009-OLP-0166-B010` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:48-52` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:49-52` | pending |
+| `T009-OLP-0166-B011` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:54-59` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:54-60` | pending |
 
 ## T010 — truth / truth value
 
@@ -1761,6 +1812,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T010-OLP-0140-B007` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:33-58` | `mr/content/first-order-logic/introduction/first-order-logic.tex:33-60` | pending |
 | `T010-OLP-0143-B006` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:13-25` | `mr/content/first-order-logic/introduction/satisfaction.tex:13-27` | pending |
 | `T010-OLP-0143-B007` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:27-50` | `mr/content/first-order-logic/introduction/satisfaction.tex:29-52` | pending |
+| `T010-OLP-0161-B013` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108` | pending |
 
 ## T011 — syntax
 
@@ -1801,6 +1853,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T011-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
 | `T011-OLP-0149-B004` | `OLP-0149` |  | `upstream/content/first-order-logic/syntax-and-semantics/syntax.tex:8-8` | `mr/content/first-order-logic/syntax-and-semantics/syntax.tex:8-8` | pending |
 | `T011-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
+| `T011-OLP-0166-B005` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | pending |
 
 ## T012 — semantics
 
@@ -1861,6 +1914,10 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T012-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
 | `T012-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
 | `T012-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
+| `T012-OLP-0159-B004` | `OLP-0159` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantics.tex:8-8` | `mr/content/first-order-logic/syntax-and-semantics/semantics.tex:8-8` | pending |
+| `T012-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T012-OLP-0160-B007` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46` | pending |
+| `T012-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
 
 ## T013 — model (model theory)
 
@@ -1936,6 +1993,11 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T013-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
 | `T013-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
 | `T013-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
+| `T013-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T013-OLP-0160-B007` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46` | pending |
+| `T013-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
+| `T013-OLP-0161-B009` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:53-65` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:54-66` | pending |
+| `T013-OLP-0162-B010` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:68-70` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:70-72` | pending |
 
 ## T014 — perfect number
 
@@ -2554,6 +2616,15 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T020-OLP-0046-B009` | `OLP-0046` | 5.5 काही तात्त्विक चिंतन | `upstream/content/sets-functions-relations/arithmetization/reflections.tex:36-60` | `mr/content/sets-functions-relations/arithmetization/reflections.tex:33-57` | 60–61 |
 | `T020-OLP-0046-B010` | `OLP-0046` | 5.5 काही तात्त्विक चिंतन | `upstream/content/sets-functions-relations/arithmetization/reflections.tex:62-79` | `mr/content/sets-functions-relations/arithmetization/reflections.tex:59-75` | 60–61 |
 | `T020-OLP-0047-B010` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:64-72` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:65-73` | 61–64 |
+| `T020-OLP-0161-B009` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:53-65` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:54-66` | pending |
+| `T020-OLP-0161-B012` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:82-92` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:83-93` | pending |
+| `T020-OLP-0162-B009` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68` | pending |
+| `T020-OLP-0163-B030` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-213` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:213-220` | pending |
+| `T020-OLP-0163-B031` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:215-230` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:222-236` | pending |
+| `T020-OLP-0163-B037` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:324-336` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:337-350` | pending |
+| `T020-OLP-0163-B038` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:338-345` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:352-361` | pending |
+| `T020-OLP-0163-B039` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:363-385` | pending |
+| `T020-OLP-0163-B046` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:400-415` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:421-437` | pending |
 
 ## T021 — Cartesian product
 
@@ -3259,6 +3330,26 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T030-OLP-0048-B012` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:109-125` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:102-119` | 64–67 |
 | `T030-OLP-0048-B015` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:149-163` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:145-163` | 64–67 |
 | `T030-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
+| `T030-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T030-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
+| `T030-OLP-0161-B007` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:28-42` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:29-43` | pending |
+| `T030-OLP-0161-B008` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:44-51` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:45-52` | pending |
+| `T030-OLP-0161-B009` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:53-65` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:54-66` | pending |
+| `T030-OLP-0161-B011` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:75-80` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:75-81` | pending |
+| `T030-OLP-0161-B012` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:82-92` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:83-93` | pending |
+| `T030-OLP-0162-B009` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68` | pending |
+| `T030-OLP-0163-B018` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:118-119` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:117-118` | pending |
+| `T030-OLP-0163-B028` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:179-191` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:183-196` | pending |
+| `T030-OLP-0163-B030` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-213` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:213-220` | pending |
+| `T030-OLP-0163-B031` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:215-230` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:222-236` | pending |
+| `T030-OLP-0163-B037` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:324-336` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:337-350` | pending |
+| `T030-OLP-0163-B038` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:338-345` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:352-361` | pending |
+| `T030-OLP-0163-B039` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:363-385` | pending |
+| `T030-OLP-0163-B046` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:400-415` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:421-437` | pending |
+| `T030-OLP-0164-B014` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:82-105` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:83-108` | pending |
+| `T030-OLP-0164-B036` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:278-287` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:293-302` | pending |
+| `T030-OLP-0164-B038` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:292-294` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:307-310` | pending |
+| `T030-OLP-0165-B008` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:28-37` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:26-37` | pending |
 
 ## T031 — identity relation
 
@@ -4749,6 +4840,8 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T044-OLP-0158-B016` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:60-61` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:65-66` | pending |
 | `T044-OLP-0158-B024` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:96-98` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:101-103` | pending |
 | `T044-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
+| `T044-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T044-OLP-0160-B007` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46` | pending |
 
 ## T045 — function / mapping
 
@@ -5019,6 +5112,27 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T045-OLP-0153-B008` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:44-54` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:42-51` | pending |
 | `T045-OLP-0154-B016` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:58-69` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:57-70` | pending |
 | `T045-OLP-0155-B018` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:70-88` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:68-86` | pending |
+| `T045-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T045-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
+| `T045-OLP-0161-B007` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:28-42` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:29-43` | pending |
+| `T045-OLP-0161-B008` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:44-51` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:45-52` | pending |
+| `T045-OLP-0161-B009` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:53-65` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:54-66` | pending |
+| `T045-OLP-0162-B007` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17-29` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17-30` | pending |
+| `T045-OLP-0162-B009` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68` | pending |
+| `T045-OLP-0163-B006` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-30` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-29` | pending |
+| `T045-OLP-0163-B008` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:41-45` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:39-43` | pending |
+| `T045-OLP-0163-B009` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:47-56` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:45-54` | pending |
+| `T045-OLP-0163-B010` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:58-72` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:56-70` | pending |
+| `T045-OLP-0163-B028` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:179-191` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:183-196` | pending |
+| `T045-OLP-0163-B029` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:193-206` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:198-211` | pending |
+| `T045-OLP-0163-B046` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:400-415` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:421-437` | pending |
+| `T045-OLP-0164-B008` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:35-40` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:34-40` | pending |
+| `T045-OLP-0164-B009` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | pending |
+| `T045-OLP-0164-B036` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:278-287` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:293-302` | pending |
+| `T045-OLP-0164-B049` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:342-346` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:365-370` | pending |
+| `T045-OLP-0165-B008` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:28-37` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:26-37` | pending |
+| `T045-OLP-0165-B015` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:70-75` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:71-76` | pending |
+| `T045-OLP-0165-B018` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:86-103` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:88-106` | pending |
 
 ## T046 — domain / codomain / range
 
@@ -5158,6 +5272,38 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T046-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
 | `T046-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
 | `T046-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
+| `T046-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T046-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
+| `T046-OLP-0161-B007` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:28-42` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:29-43` | pending |
+| `T046-OLP-0161-B008` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:44-51` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:45-52` | pending |
+| `T046-OLP-0161-B009` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:53-65` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:54-66` | pending |
+| `T046-OLP-0161-B012` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:82-92` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:83-93` | pending |
+| `T046-OLP-0162-B008` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:31-34` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:32-35` | pending |
+| `T046-OLP-0162-B009` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68` | pending |
+| `T046-OLP-0163-B006` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-30` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-29` | pending |
+| `T046-OLP-0163-B008` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:41-45` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:39-43` | pending |
+| `T046-OLP-0163-B009` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:47-56` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:45-54` | pending |
+| `T046-OLP-0163-B013` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:87-95` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:86-94` | pending |
+| `T046-OLP-0163-B025` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:146-150` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:148-153` | pending |
+| `T046-OLP-0163-B026` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:152-166` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:155-169` | pending |
+| `T046-OLP-0163-B027` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:168-177` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:171-181` | pending |
+| `T046-OLP-0163-B028` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:179-191` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:183-196` | pending |
+| `T046-OLP-0163-B032` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:232-244` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:238-250` | pending |
+| `T046-OLP-0163-B033` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:246-258` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:252-265` | pending |
+| `T046-OLP-0163-B034` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:260-276` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:267-284` | pending |
+| `T046-OLP-0163-B035` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:278-299` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:286-308` | pending |
+| `T046-OLP-0163-B036` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:301-322` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:310-335` | pending |
+| `T046-OLP-0163-B037` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:324-336` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:337-350` | pending |
+| `T046-OLP-0163-B038` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:338-345` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:352-361` | pending |
+| `T046-OLP-0163-B039` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:363-385` | pending |
+| `T046-OLP-0163-B046` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:400-415` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:421-437` | pending |
+| `T046-OLP-0164-B021` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:157-172` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:163-178` | pending |
+| `T046-OLP-0164-B022` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:174-196` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:180-206` | pending |
+| `T046-OLP-0164-B036` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:278-287` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:293-302` | pending |
+| `T046-OLP-0164-B045` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:320-323` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:341-345` | pending |
+| `T046-OLP-0164-B046` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:325-333` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:347-355` | pending |
+| `T046-OLP-0165-B006` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:13-18` | pending |
+| `T046-OLP-0165-B008` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:28-37` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:26-37` | pending |
 
 ## T047 — argument / input / output / value
 
@@ -5236,6 +5382,34 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T047-OLP-0135-B013` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:90-121` | `mr/content/first-order-logic/completeness/compactness.tex:91-123` | pending |
 | `T047-OLP-0135-B014` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:123-154` | `mr/content/first-order-logic/completeness/compactness.tex:125-158` | pending |
 | `T047-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
+| `T047-OLP-0162-B007` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17-29` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17-30` | pending |
+| `T047-OLP-0162-B008` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:31-34` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:32-35` | pending |
+| `T047-OLP-0162-B009` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68` | pending |
+| `T047-OLP-0163-B006` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-30` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-29` | pending |
+| `T047-OLP-0163-B007` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:32-39` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:31-37` | pending |
+| `T047-OLP-0163-B009` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:47-56` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:45-54` | pending |
+| `T047-OLP-0163-B010` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:58-72` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:56-70` | pending |
+| `T047-OLP-0163-B018` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:118-119` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:117-118` | pending |
+| `T047-OLP-0163-B019` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:121-123` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:120-122` | pending |
+| `T047-OLP-0163-B029` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:193-206` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:198-211` | pending |
+| `T047-OLP-0163-B030` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-213` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:213-220` | pending |
+| `T047-OLP-0164-B006` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:13-27` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:13-26` | pending |
+| `T047-OLP-0164-B007` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:29-33` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:28-32` | pending |
+| `T047-OLP-0164-B008` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:35-40` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:34-40` | pending |
+| `T047-OLP-0164-B009` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | pending |
+| `T047-OLP-0164-B011` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:63-71` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:64-72` | pending |
+| `T047-OLP-0164-B014` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:82-105` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:83-108` | pending |
+| `T047-OLP-0164-B039` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:296-297` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:312-314` | pending |
+| `T047-OLP-0165-B009` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:39-44` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:39-44` | pending |
+| `T047-OLP-0165-B013` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:61-62` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:62-63` | pending |
+| `T047-OLP-0165-B014` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:64-68` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:65-69` | pending |
+| `T047-OLP-0165-B015` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:70-75` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:71-76` | pending |
+| `T047-OLP-0165-B016` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:77-80` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:78-82` | pending |
+| `T047-OLP-0165-B017` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:82-84` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:84-86` | pending |
+| `T047-OLP-0165-B018` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:86-103` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:88-106` | pending |
+| `T047-OLP-0165-B019` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:105-109` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:108-114` | pending |
+| `T047-OLP-0165-B022` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:119-135` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:124-140` | pending |
+| `T047-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
 
 ## T048 — surjective / surjection
 
@@ -6226,6 +6400,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T061-OLP-0155-B016` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:59-63` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:57-61` | pending |
 | `T061-OLP-0155-B018` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:70-88` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:68-86` | pending |
 | `T061-OLP-0158-B006` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:13-17` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:13-18` | pending |
+| `T061-OLP-0164-B009` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | pending |
 
 ## T062 — initial segment
 
@@ -6934,6 +7109,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T080-OLP-0048-B011` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:97-107` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:91-100` | 64–67 |
 | `T080-OLP-0053-B005` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-19` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-17` | 71–72 |
 | `T080-OLP-0053-B014` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108` | 71–72 |
+| `T080-OLP-0161-B010` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:67-73` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:68-73` | pending |
 
 ## T081 — stipulative definition / stipulate
 
@@ -7752,6 +7928,14 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T102-OLP-0152-B006` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15` | pending |
 | `T102-OLP-0156-B007` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:25-31` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:24-30` | pending |
 | `T102-OLP-0156-B008` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:33-38` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:32-37` | pending |
+| `T102-OLP-0159-B004` | `OLP-0159` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantics.tex:8-8` | `mr/content/first-order-logic/syntax-and-semantics/semantics.tex:8-8` | pending |
+| `T102-OLP-0160-B005` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:11-11` | pending |
+| `T102-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T102-OLP-0161-B005` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:11-11` | pending |
+| `T102-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
+| `T102-OLP-0161-B007` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:28-42` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:29-43` | pending |
+| `T102-OLP-0162-B005` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11-11` | pending |
+| `T102-OLP-0164-B048` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:338-340` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:361-363` | pending |
 
 ## T103 — parameter (of a formula)
 
@@ -7837,6 +8021,19 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T104-OLP-0158-B023` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:88-94` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:93-99` | pending |
 | `T104-OLP-0158-B025` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:100-114` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:105-119` | pending |
 | `T104-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
+| `T104-OLP-0164-B006` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:13-27` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:13-26` | pending |
+| `T104-OLP-0164-B007` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:29-33` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:28-32` | pending |
+| `T104-OLP-0164-B010` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:57-61` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:57-62` | pending |
+| `T104-OLP-0164-B015` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:107-116` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:110-119` | pending |
+| `T104-OLP-0164-B021` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:157-172` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:163-178` | pending |
+| `T104-OLP-0164-B022` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:174-196` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:180-206` | pending |
+| `T104-OLP-0164-B024` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:202-211` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:212-220` | pending |
+| `T104-OLP-0164-B025` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:213-218` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:222-227` | pending |
+| `T104-OLP-0164-B026` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:220-226` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:229-236` | pending |
+| `T104-OLP-0164-B033` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:259-268` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:272-283` | pending |
+| `T104-OLP-0164-B046` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:325-333` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:347-355` | pending |
+| `T104-OLP-0164-B047` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:335-336` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:357-359` | pending |
+| `T104-OLP-0166-B021` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:124-131` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:134-141` | pending |
 
 ## T105 — isomorphic / isomorphism
 
@@ -8454,6 +8651,8 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T112-OLP-0158-B015` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:56-58` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:61-63` | pending |
 | `T112-OLP-0158-B016` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:60-61` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:65-66` | pending |
 | `T112-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
+| `T112-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T112-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
 
 ## T113 — classical logic / classical
 
@@ -8662,6 +8861,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T115-OLP-0158-B019` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:70-72` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:75-77` | pending |
 | `T115-OLP-0158-B020` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:74-76` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:79-81` | pending |
 | `T115-OLP-0158-B021` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:78-80` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:83-85` | pending |
+| `T115-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
 
 ## T116 — truth-functional
 
@@ -8866,6 +9066,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T119-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
 | `T119-OLP-0157-B006` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | pending |
 | `T119-OLP-0157-B012` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | pending |
+| `T119-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
 
 ## T120 — Polish notation / parenthesis-free notation
 
@@ -9060,6 +9261,103 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T121-OLP-0145-B006` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:13-25` | `mr/content/first-order-logic/introduction/semantic-notions.tex:13-25` | pending |
 | `T121-OLP-0145-B007` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:27-36` | `mr/content/first-order-logic/introduction/semantic-notions.tex:27-37` | pending |
 | `T121-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
+| `T121-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T121-OLP-0160-B007` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46` | pending |
+| `T121-OLP-0161-B013` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108` | pending |
+| `T121-OLP-0163-B005` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:11-12` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:11-12` | pending |
+| `T121-OLP-0163-B006` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-30` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-29` | pending |
+| `T121-OLP-0163-B007` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:32-39` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:31-37` | pending |
+| `T121-OLP-0163-B015` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:101-109` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:100-108` | pending |
+| `T121-OLP-0163-B017` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:114-116` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:113-115` | pending |
+| `T121-OLP-0163-B018` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:118-119` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:117-118` | pending |
+| `T121-OLP-0163-B019` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:121-123` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:120-122` | pending |
+| `T121-OLP-0163-B020` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:125-127` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:124-126` | pending |
+| `T121-OLP-0163-B021` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:129-131` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:128-131` | pending |
+| `T121-OLP-0163-B022` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:133-135` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:133-136` | pending |
+| `T121-OLP-0163-B023` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:137-140` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:138-141` | pending |
+| `T121-OLP-0163-B024` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:142-144` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:143-146` | pending |
+| `T121-OLP-0163-B025` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:146-150` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:148-153` | pending |
+| `T121-OLP-0163-B026` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:152-166` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:155-169` | pending |
+| `T121-OLP-0163-B027` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:168-177` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:171-181` | pending |
+| `T121-OLP-0163-B030` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-213` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:213-220` | pending |
+| `T121-OLP-0163-B031` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:215-230` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:222-236` | pending |
+| `T121-OLP-0163-B033` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:246-258` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:252-265` | pending |
+| `T121-OLP-0163-B034` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:260-276` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:267-284` | pending |
+| `T121-OLP-0163-B035` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:278-299` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:286-308` | pending |
+| `T121-OLP-0163-B036` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:301-322` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:310-335` | pending |
+| `T121-OLP-0163-B037` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:324-336` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:337-350` | pending |
+| `T121-OLP-0163-B038` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:338-345` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:352-361` | pending |
+| `T121-OLP-0163-B039` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:363-385` | pending |
+| `T121-OLP-0163-B040` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:366-370` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:387-391` | pending |
+| `T121-OLP-0163-B041` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:372-375` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:393-396` | pending |
+| `T121-OLP-0163-B042` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:377-381` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:398-402` | pending |
+| `T121-OLP-0163-B043` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:383-387` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:404-408` | pending |
+| `T121-OLP-0163-B044` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:389-392` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:410-413` | pending |
+| `T121-OLP-0163-B045` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:394-398` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:415-419` | pending |
+| `T121-OLP-0163-B046` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:400-415` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:421-437` | pending |
+| `T121-OLP-0163-B047` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:417-419` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:439-441` | pending |
+| `T121-OLP-0164-B006` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:13-27` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:13-26` | pending |
+| `T121-OLP-0164-B010` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:57-61` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:57-62` | pending |
+| `T121-OLP-0164-B011` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:63-71` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:64-72` | pending |
+| `T121-OLP-0164-B012` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:73-76` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:74-77` | pending |
+| `T121-OLP-0164-B013` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:78-80` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:79-81` | pending |
+| `T121-OLP-0164-B014` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:82-105` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:83-108` | pending |
+| `T121-OLP-0164-B015` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:107-116` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:110-119` | pending |
+| `T121-OLP-0164-B016` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:118-124` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:121-127` | pending |
+| `T121-OLP-0164-B017` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:126-132` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:129-135` | pending |
+| `T121-OLP-0164-B018` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:134-139` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:137-143` | pending |
+| `T121-OLP-0164-B019` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:141-146` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:145-151` | pending |
+| `T121-OLP-0164-B020` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:148-155` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:153-161` | pending |
+| `T121-OLP-0164-B021` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:157-172` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:163-178` | pending |
+| `T121-OLP-0164-B022` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:174-196` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:180-206` | pending |
+| `T121-OLP-0164-B023` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:198-200` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:208-210` | pending |
+| `T121-OLP-0164-B024` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:202-211` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:212-220` | pending |
+| `T121-OLP-0164-B025` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:213-218` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:222-227` | pending |
+| `T121-OLP-0164-B026` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:220-226` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:229-236` | pending |
+| `T121-OLP-0164-B027` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:228-233` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:238-243` | pending |
+| `T121-OLP-0164-B028` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:235-237` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:245-247` | pending |
+| `T121-OLP-0164-B029` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:239-244` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:249-256` | pending |
+| `T121-OLP-0164-B030` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:246-249` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:258-262` | pending |
+| `T121-OLP-0164-B031` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:251-253` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:264-266` | pending |
+| `T121-OLP-0164-B032` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:255-257` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:268-270` | pending |
+| `T121-OLP-0164-B033` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:259-268` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:272-283` | pending |
+| `T121-OLP-0164-B034` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:270-272` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:285-287` | pending |
+| `T121-OLP-0164-B035` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:274-276` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:289-291` | pending |
+| `T121-OLP-0164-B036` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:278-287` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:293-302` | pending |
+| `T121-OLP-0164-B038` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:292-294` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:307-310` | pending |
+| `T121-OLP-0164-B039` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:296-297` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:312-314` | pending |
+| `T121-OLP-0164-B040` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:299-301` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:316-318` | pending |
+| `T121-OLP-0164-B041` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:303-305` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:320-323` | pending |
+| `T121-OLP-0164-B042` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:307-309` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:325-328` | pending |
+| `T121-OLP-0164-B043` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:311-313` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:330-333` | pending |
+| `T121-OLP-0164-B044` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:315-318` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:335-339` | pending |
+| `T121-OLP-0164-B045` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:320-323` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:341-345` | pending |
+| `T121-OLP-0164-B046` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:325-333` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:347-355` | pending |
+| `T121-OLP-0164-B047` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:335-336` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:357-359` | pending |
+| `T121-OLP-0164-B049` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:342-346` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:365-370` | pending |
+| `T121-OLP-0165-B006` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:13-18` | pending |
+| `T121-OLP-0165-B007` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:21-26` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:20-24` | pending |
+| `T121-OLP-0165-B008` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:28-37` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:26-37` | pending |
+| `T121-OLP-0165-B009` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:39-44` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:39-44` | pending |
+| `T121-OLP-0165-B011` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:51-55` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:50-55` | pending |
+| `T121-OLP-0165-B012` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:57-59` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:57-60` | pending |
+| `T121-OLP-0165-B013` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:61-62` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:62-63` | pending |
+| `T121-OLP-0165-B019` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:105-109` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:108-114` | pending |
+| `T121-OLP-0165-B020` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:111-113` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:116-118` | pending |
+| `T121-OLP-0165-B021` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:115-117` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:120-122` | pending |
+| `T121-OLP-0165-B022` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:119-135` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:124-140` | pending |
+| `T121-OLP-0166-B005` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | pending |
+| `T121-OLP-0166-B006` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:25-28` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:25-28` | pending |
+| `T121-OLP-0166-B007` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:30-34` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:30-35` | pending |
+| `T121-OLP-0166-B008` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:37-41` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:38-42` | pending |
+| `T121-OLP-0166-B010` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:48-52` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:49-52` | pending |
+| `T121-OLP-0166-B011` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:54-59` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:54-60` | pending |
+| `T121-OLP-0166-B013` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:66-73` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:68-77` | pending |
+| `T121-OLP-0166-B014` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:75-80` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:79-84` | pending |
+| `T121-OLP-0166-B017` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:97-102` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:103-109` | pending |
+| `T121-OLP-0166-B019` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:110-115` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:118-124` | pending |
+| `T121-OLP-0166-B020` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:117-122` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:126-132` | pending |
+| `T121-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
 
 ## T122 — tautology
 
@@ -9206,6 +9504,25 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T123-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
 | `T123-OLP-0148-B006` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | pending |
 | `T123-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
+| `T123-OLP-0160-B007` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46` | pending |
+| `T123-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
+| `T123-OLP-0166-B004` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:9-10` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:9-10` | pending |
+| `T123-OLP-0166-B007` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:30-34` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:30-35` | pending |
+| `T123-OLP-0166-B009` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:43-46` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:44-47` | pending |
+| `T123-OLP-0166-B010` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:48-52` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:49-52` | pending |
+| `T123-OLP-0166-B011` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:54-59` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:54-60` | pending |
+| `T123-OLP-0166-B012` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:61-64` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:62-66` | pending |
+| `T123-OLP-0166-B013` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:66-73` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:68-77` | pending |
+| `T123-OLP-0166-B014` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:75-80` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:79-84` | pending |
+| `T123-OLP-0166-B015` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:82-90` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:86-96` | pending |
+| `T123-OLP-0166-B016` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:92-95` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:98-101` | pending |
+| `T123-OLP-0166-B017` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:97-102` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:103-109` | pending |
+| `T123-OLP-0166-B018` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:105-108` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:112-116` | pending |
+| `T123-OLP-0166-B019` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:110-115` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:118-124` | pending |
+| `T123-OLP-0166-B020` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:117-122` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:126-132` | pending |
+| `T123-OLP-0166-B021` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:124-131` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:134-141` | pending |
+| `T123-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
+| `T123-OLP-0166-B023` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:153-155` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:163-165` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -9290,6 +9607,10 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T124-OLP-0137-B008` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:33-38` | `mr/content/first-order-logic/completeness/downward-ls.tex:33-38` | pending |
 | `T124-OLP-0145-B007` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:27-36` | `mr/content/first-order-logic/introduction/semantic-notions.tex:27-37` | pending |
 | `T124-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
+| `T124-OLP-0160-B007` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46` | pending |
+| `T124-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
+| `T124-OLP-0166-B004` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:9-10` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:9-10` | pending |
+| `T124-OLP-0166-B008` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:37-41` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:38-42` | pending |
 
 ## T125 — necessary / contingent
 
@@ -9463,6 +9784,35 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T126-OLP-0157-B005` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:11-11` | pending |
 | `T126-OLP-0157-B017` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:95-98` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:95-98` | pending |
 | `T126-OLP-0158-B025` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:100-114` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:105-119` | pending |
+| `T126-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T126-OLP-0160-B007` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46` | pending |
+| `T126-OLP-0161-B013` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108` | pending |
+| `T126-OLP-0164-B024` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:202-211` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:212-220` | pending |
+| `T126-OLP-0164-B025` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:213-218` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:222-227` | pending |
+| `T126-OLP-0164-B026` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:220-226` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:229-236` | pending |
+| `T126-OLP-0164-B027` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:228-233` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:238-243` | pending |
+| `T126-OLP-0164-B028` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:235-237` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:245-247` | pending |
+| `T126-OLP-0164-B029` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:239-244` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:249-256` | pending |
+| `T126-OLP-0164-B030` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:246-249` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:258-262` | pending |
+| `T126-OLP-0164-B031` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:251-253` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:264-266` | pending |
+| `T126-OLP-0164-B032` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:255-257` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:268-270` | pending |
+| `T126-OLP-0164-B033` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:259-268` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:272-283` | pending |
+| `T126-OLP-0164-B034` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:270-272` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:285-287` | pending |
+| `T126-OLP-0164-B035` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:274-276` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:289-291` | pending |
+| `T126-OLP-0164-B036` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:278-287` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:293-302` | pending |
+| `T126-OLP-0164-B038` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:292-294` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:307-310` | pending |
+| `T126-OLP-0164-B039` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:296-297` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:312-314` | pending |
+| `T126-OLP-0164-B040` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:299-301` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:316-318` | pending |
+| `T126-OLP-0164-B041` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:303-305` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:320-323` | pending |
+| `T126-OLP-0164-B042` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:307-309` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:325-328` | pending |
+| `T126-OLP-0164-B043` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:311-313` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:330-333` | pending |
+| `T126-OLP-0164-B044` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:315-318` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:335-339` | pending |
+| `T126-OLP-0164-B045` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:320-323` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:341-345` | pending |
+| `T126-OLP-0164-B046` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:325-333` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:347-355` | pending |
+| `T126-OLP-0165-B007` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:21-26` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:20-24` | pending |
+| `T126-OLP-0165-B011` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:51-55` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:50-55` | pending |
+| `T126-OLP-0165-B012` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:57-59` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:57-60` | pending |
+| `T126-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
 
 ## T127 — propositional constant
 
@@ -9986,6 +10336,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T131-OLP-0156-B014` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:114-147` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:115-147` | pending |
 | `T131-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
 | `T131-OLP-0157-B006` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | pending |
+| `T131-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
 
 ## T132 — two-place connective
 
@@ -10509,6 +10860,21 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T143-OLP-0133-B019` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:181-191` | `mr/content/first-order-logic/completeness/identity.tex:183-193` | pending |
 | `T143-OLP-0156-B015` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:149-153` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:149-152` | pending |
 | `T143-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
+| `T143-OLP-0164-B008` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:35-40` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:34-40` | pending |
+| `T143-OLP-0164-B009` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | pending |
+| `T143-OLP-0164-B011` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:63-71` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:64-72` | pending |
+| `T143-OLP-0164-B015` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:107-116` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:110-119` | pending |
+| `T143-OLP-0164-B016` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:118-124` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:121-127` | pending |
+| `T143-OLP-0164-B017` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:126-132` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:129-135` | pending |
+| `T143-OLP-0164-B018` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:134-139` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:137-143` | pending |
+| `T143-OLP-0164-B019` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:141-146` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:145-151` | pending |
+| `T143-OLP-0164-B020` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:148-155` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:153-161` | pending |
+| `T143-OLP-0164-B021` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:157-172` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:163-178` | pending |
+| `T143-OLP-0164-B022` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:174-196` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:180-206` | pending |
+| `T143-OLP-0164-B023` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:198-200` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:208-210` | pending |
+| `T143-OLP-0165-B009` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:39-44` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:39-44` | pending |
+| `T143-OLP-0165-B015` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:70-75` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:71-76` | pending |
+| `T143-OLP-0165-B018` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:86-103` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:88-106` | pending |
 
 ## T144 — finite sequence / proper initial subsequence
 
@@ -10710,6 +11076,11 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T148-OLP-0134-B015` | `OLP-0134` |  | `upstream/content/first-order-logic/completeness/completeness-thm.tex:112-123` | `mr/content/first-order-logic/completeness/completeness-thm.tex:112-123` | pending |
 | `T148-OLP-0135-B006` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:15-27` | `mr/content/first-order-logic/completeness/compactness.tex:15-25` | pending |
 | `T148-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
+| `T148-OLP-0166-B008` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:37-41` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:38-42` | pending |
+| `T148-OLP-0166-B012` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:61-64` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:62-66` | pending |
+| `T148-OLP-0166-B013` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:66-73` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:68-77` | pending |
+| `T148-OLP-0166-B014` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:75-80` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:79-84` | pending |
+| `T148-OLP-0166-B015` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:82-90` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:86-96` | pending |
 
 ## T149 — monotonicity (of semantic entailment)
 
@@ -10749,6 +11120,8 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T149-OLP-0119-B007` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:18-29` | pending |
 | `T149-OLP-0119-B012` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:54-59` | pending |
 | `T149-OLP-0121-B010` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | pending |
+| `T149-OLP-0166-B016` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:92-95` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:98-101` | pending |
+| `T149-OLP-0166-B017` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:97-102` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:103-109` | pending |
 
 ## T150 — Semantic Deduction Theorem
 
@@ -10782,6 +11155,9 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T150-OLP-0124-B011` | `OLP-0124` |  | `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:68-77` | `mr/content/first-order-logic/axiomatic-deduction/soundness.tex:66-75` | pending |
 | `T150-OLP-0124-B012` | `OLP-0124` |  | `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:79-85` | `mr/content/first-order-logic/axiomatic-deduction/soundness.tex:77-84` | pending |
 | `T150-OLP-0124-B013` | `OLP-0124` |  | `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:87-107` | `mr/content/first-order-logic/axiomatic-deduction/soundness.tex:86-109` | pending |
+| `T150-OLP-0166-B018` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:105-108` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:112-116` | pending |
+| `T150-OLP-0166-B019` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:110-115` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:118-124` | pending |
+| `T150-OLP-0166-B020` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:117-122` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:126-132` | pending |
 
 ## T151 — axiomatic system / inference rule
 
@@ -10967,6 +11343,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T151-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
 | `T151-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
 | `T151-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
+| `T151-OLP-0161-B013` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -11270,6 +11647,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T155-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
 | `T155-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
 | `T155-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
+| `T155-OLP-0161-B013` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108` | pending |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -12605,6 +12983,12 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T174-OLP-0135-B013` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:90-121` | `mr/content/first-order-logic/completeness/compactness.tex:91-123` | pending |
 | `T174-OLP-0136-B015` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:73-83` | `mr/content/first-order-logic/completeness/compactness-direct.tex:73-83` | pending |
 | `T174-OLP-0152-B007` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:17-30` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:17-30` | pending |
+| `T174-OLP-0162-B005` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11-11` | pending |
+| `T174-OLP-0162-B006` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:13-15` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:13-15` | pending |
+| `T174-OLP-0162-B007` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17-29` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17-30` | pending |
+| `T174-OLP-0162-B008` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:31-34` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:32-35` | pending |
+| `T174-OLP-0166-B021` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:124-131` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:134-141` | pending |
+| `T174-OLP-0166-B023` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:153-155` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:163-165` | pending |
 
 ## T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)
 
@@ -13951,6 +14335,10 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T196-OLP-0132-B010` | `OLP-0132` |  | `upstream/content/first-order-logic/completeness/construction-of-model.tex:99-114` | `mr/content/first-order-logic/completeness/construction-of-model.tex:101-114` | pending |
 | `T196-OLP-0135-B013` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:90-121` | `mr/content/first-order-logic/completeness/compactness.tex:91-123` | pending |
 | `T196-OLP-0136-B022` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143` | `mr/content/first-order-logic/completeness/compactness-direct.tex:128-145` | pending |
+| `T196-OLP-0162-B005` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11-11` | pending |
+| `T196-OLP-0162-B008` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:31-34` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:32-35` | pending |
+| `T196-OLP-0162-B009` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68` | pending |
+| `T196-OLP-0162-B010` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:68-70` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:70-72` | pending |
 
 ## T197 — Truth Lemma
 
@@ -14212,6 +14600,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T203-OLP-0153-B025` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:127-129` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:125-127` | pending |
 | `T203-OLP-0153-B027` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:146-148` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:144-146` | pending |
 | `T203-OLP-0153-B028` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:150-153` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:148-151` | pending |
+| `T203-OLP-0160-B007` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46` | pending |
 
 ## T204 — variable assignment
 
@@ -14244,6 +14633,86 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T204-OLP-0144-B006` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:13-17` | `mr/content/first-order-logic/introduction/sentences.tex:13-17` | pending |
 | `T204-OLP-0145-B006` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:13-25` | `mr/content/first-order-logic/introduction/semantic-notions.tex:13-25` | pending |
 | `T204-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
+| `T204-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T204-OLP-0163-B007` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:32-39` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:31-37` | pending |
+| `T204-OLP-0163-B008` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:41-45` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:39-43` | pending |
+| `T204-OLP-0163-B009` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:47-56` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:45-54` | pending |
+| `T204-OLP-0163-B010` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:58-72` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:56-70` | pending |
+| `T204-OLP-0163-B011` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:74-79` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:72-78` | pending |
+| `T204-OLP-0163-B012` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:81-85` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:80-84` | pending |
+| `T204-OLP-0163-B013` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:87-95` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:86-94` | pending |
+| `T204-OLP-0163-B014` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:97-99` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:96-98` | pending |
+| `T204-OLP-0163-B015` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:101-109` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:100-108` | pending |
+| `T204-OLP-0163-B017` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:114-116` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:113-115` | pending |
+| `T204-OLP-0163-B018` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:118-119` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:117-118` | pending |
+| `T204-OLP-0163-B019` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:121-123` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:120-122` | pending |
+| `T204-OLP-0163-B020` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:125-127` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:124-126` | pending |
+| `T204-OLP-0163-B021` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:129-131` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:128-131` | pending |
+| `T204-OLP-0163-B022` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:133-135` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:133-136` | pending |
+| `T204-OLP-0163-B023` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:137-140` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:138-141` | pending |
+| `T204-OLP-0163-B024` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:142-144` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:143-146` | pending |
+| `T204-OLP-0163-B025` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:146-150` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:148-153` | pending |
+| `T204-OLP-0163-B026` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:152-166` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:155-169` | pending |
+| `T204-OLP-0163-B027` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:168-177` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:171-181` | pending |
+| `T204-OLP-0163-B028` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:179-191` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:183-196` | pending |
+| `T204-OLP-0163-B029` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:193-206` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:198-211` | pending |
+| `T204-OLP-0163-B030` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-213` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:213-220` | pending |
+| `T204-OLP-0163-B031` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:215-230` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:222-236` | pending |
+| `T204-OLP-0163-B032` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:232-244` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:238-250` | pending |
+| `T204-OLP-0163-B033` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:246-258` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:252-265` | pending |
+| `T204-OLP-0163-B034` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:260-276` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:267-284` | pending |
+| `T204-OLP-0163-B035` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:278-299` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:286-308` | pending |
+| `T204-OLP-0163-B036` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:301-322` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:310-335` | pending |
+| `T204-OLP-0163-B037` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:324-336` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:337-350` | pending |
+| `T204-OLP-0163-B038` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:338-345` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:352-361` | pending |
+| `T204-OLP-0163-B039` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:363-385` | pending |
+| `T204-OLP-0163-B040` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:366-370` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:387-391` | pending |
+| `T204-OLP-0163-B042` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:377-381` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:398-402` | pending |
+| `T204-OLP-0163-B043` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:383-387` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:404-408` | pending |
+| `T204-OLP-0163-B045` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:394-398` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:415-419` | pending |
+| `T204-OLP-0163-B046` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:400-415` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:421-437` | pending |
+| `T204-OLP-0163-B047` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:417-419` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:439-441` | pending |
+| `T204-OLP-0164-B005` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:11-11` | pending |
+| `T204-OLP-0164-B006` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:13-27` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:13-26` | pending |
+| `T204-OLP-0164-B007` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:29-33` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:28-32` | pending |
+| `T204-OLP-0164-B008` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:35-40` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:34-40` | pending |
+| `T204-OLP-0164-B009` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | pending |
+| `T204-OLP-0164-B010` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:57-61` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:57-62` | pending |
+| `T204-OLP-0164-B011` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:63-71` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:64-72` | pending |
+| `T204-OLP-0164-B012` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:73-76` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:74-77` | pending |
+| `T204-OLP-0164-B013` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:78-80` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:79-81` | pending |
+| `T204-OLP-0164-B014` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:82-105` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:83-108` | pending |
+| `T204-OLP-0164-B015` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:107-116` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:110-119` | pending |
+| `T204-OLP-0164-B016` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:118-124` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:121-127` | pending |
+| `T204-OLP-0164-B017` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:126-132` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:129-135` | pending |
+| `T204-OLP-0164-B018` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:134-139` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:137-143` | pending |
+| `T204-OLP-0164-B019` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:141-146` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:145-151` | pending |
+| `T204-OLP-0164-B020` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:148-155` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:153-161` | pending |
+| `T204-OLP-0164-B021` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:157-172` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:163-178` | pending |
+| `T204-OLP-0164-B022` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:174-196` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:180-206` | pending |
+| `T204-OLP-0164-B023` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:198-200` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:208-210` | pending |
+| `T204-OLP-0164-B024` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:202-211` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:212-220` | pending |
+| `T204-OLP-0164-B025` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:213-218` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:222-227` | pending |
+| `T204-OLP-0164-B026` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:220-226` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:229-236` | pending |
+| `T204-OLP-0164-B027` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:228-233` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:238-243` | pending |
+| `T204-OLP-0164-B030` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:246-249` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:258-262` | pending |
+| `T204-OLP-0164-B032` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:255-257` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:268-270` | pending |
+| `T204-OLP-0164-B033` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:259-268` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:272-283` | pending |
+| `T204-OLP-0164-B035` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:274-276` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:289-291` | pending |
+| `T204-OLP-0164-B036` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:278-287` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:293-302` | pending |
+| `T204-OLP-0164-B046` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:325-333` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:347-355` | pending |
+| `T204-OLP-0164-B047` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:335-336` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:357-359` | pending |
+| `T204-OLP-0164-B048` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:338-340` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:361-363` | pending |
+| `T204-OLP-0165-B006` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:13-18` | pending |
+| `T204-OLP-0165-B008` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:28-37` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:26-37` | pending |
+| `T204-OLP-0165-B014` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:64-68` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:65-69` | pending |
+| `T204-OLP-0165-B015` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:70-75` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:71-76` | pending |
+| `T204-OLP-0165-B016` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:77-80` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:78-82` | pending |
+| `T204-OLP-0165-B017` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:82-84` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:84-86` | pending |
+| `T204-OLP-0165-B018` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:86-103` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:88-106` | pending |
+| `T204-OLP-0165-B019` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:105-109` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:108-114` | pending |
+| `T204-OLP-0165-B022` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:119-135` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:124-140` | pending |
+| `T204-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
 
 ## T205 — variable / constant / function (as language symbols)
 
@@ -14290,6 +14759,13 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T205-OLP-0158-B007` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:19-20` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:20-21` | pending |
 | `T205-OLP-0158-B009` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:24-27` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:25-29` | pending |
 | `T205-OLP-0158-B015` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:56-58` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:61-63` | pending |
+| `T205-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T205-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
+| `T205-OLP-0161-B007` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:28-42` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:29-43` | pending |
+| `T205-OLP-0161-B008` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:44-51` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:45-52` | pending |
+| `T205-OLP-0162-B006` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:13-15` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:13-15` | pending |
+| `T205-OLP-0162-B007` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17-29` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17-30` | pending |
+| `T205-OLP-0162-B009` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68` | pending |
 
 ## T206 — logical symbol / non-logical symbol / standard language
 
@@ -14322,6 +14798,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T206-OLP-0151-B008` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-32` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:29-29` | pending |
 | `T206-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
 | `T206-OLP-0151-B010` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:65-68` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:61-63` | pending |
+| `T206-OLP-0161-B009` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:53-65` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:54-66` | pending |
 
 ## T207 — n-place / arity
 
@@ -14359,6 +14836,9 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T207-OLP-0152-B040` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:189-205` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:185-201` | pending |
 | `T207-OLP-0153-B026` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:131-144` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:129-142` | pending |
 | `T207-OLP-0156-B009` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:40-49` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:39-49` | pending |
+| `T207-OLP-0161-B007` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:28-42` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:29-43` | pending |
+| `T207-OLP-0161-B008` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:44-51` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:45-52` | pending |
+| `T207-OLP-0162-B009` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68` | pending |
 
 ## T208 — universal quantifier / existential quantifier
 
@@ -14422,6 +14902,38 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T208-OLP-0158-B023` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:88-94` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:93-99` | pending |
 | `T208-OLP-0158-B025` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:100-114` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:105-119` | pending |
 | `T208-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
+| `T208-OLP-0161-B013` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108` | pending |
+| `T208-OLP-0163-B006` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-30` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-29` | pending |
+| `T208-OLP-0163-B007` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:32-39` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:31-37` | pending |
+| `T208-OLP-0163-B025` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:146-150` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:148-153` | pending |
+| `T208-OLP-0163-B026` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:152-166` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:155-169` | pending |
+| `T208-OLP-0163-B027` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:168-177` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:171-181` | pending |
+| `T208-OLP-0163-B033` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:246-258` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:252-265` | pending |
+| `T208-OLP-0163-B034` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:260-276` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:267-284` | pending |
+| `T208-OLP-0163-B035` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:278-299` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:286-308` | pending |
+| `T208-OLP-0163-B036` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:301-322` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:310-335` | pending |
+| `T208-OLP-0163-B037` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:324-336` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:337-350` | pending |
+| `T208-OLP-0163-B038` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:338-345` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:352-361` | pending |
+| `T208-OLP-0163-B039` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:363-385` | pending |
+| `T208-OLP-0163-B040` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:366-370` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:387-391` | pending |
+| `T208-OLP-0163-B042` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:377-381` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:398-402` | pending |
+| `T208-OLP-0163-B043` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:383-387` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:404-408` | pending |
+| `T208-OLP-0163-B045` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:394-398` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:415-419` | pending |
+| `T208-OLP-0163-B046` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:400-415` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:421-437` | pending |
+| `T208-OLP-0164-B021` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:157-172` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:163-178` | pending |
+| `T208-OLP-0164-B022` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:174-196` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:180-206` | pending |
+| `T208-OLP-0164-B033` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:259-268` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:272-283` | pending |
+| `T208-OLP-0164-B034` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:270-272` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:285-287` | pending |
+| `T208-OLP-0164-B035` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:274-276` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:289-291` | pending |
+| `T208-OLP-0164-B036` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:278-287` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:293-302` | pending |
+| `T208-OLP-0164-B045` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:320-323` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:341-345` | pending |
+| `T208-OLP-0164-B046` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:325-333` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:347-355` | pending |
+| `T208-OLP-0164-B049` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:342-346` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:365-370` | pending |
+| `T208-OLP-0164-B050` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:348-351` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:372-376` | pending |
+| `T208-OLP-0166-B015` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:82-90` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:86-96` | pending |
+| `T208-OLP-0166-B021` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:124-131` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:134-141` | pending |
+| `T208-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
+| `T208-OLP-0166-B023` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:153-155` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:163-165` | pending |
 
 ## T209 — denumerable / countably infinite
 
@@ -14449,6 +14961,7 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T209-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
+| `T209-OLP-0163-B026` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:152-166` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:155-169` | pending |
 
 ## T210 — truth-functionally complete / expressively complete
 
@@ -14529,6 +15042,9 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T211-OLP-0154-B016` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:58-69` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:57-70` | pending |
 | `T211-OLP-0154-B017` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:71-77` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:72-77` | pending |
 | `T211-OLP-0154-B018` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | pending |
+| `T211-OLP-0163-B006` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-30` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-29` | pending |
+| `T211-OLP-0163-B031` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:215-230` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:222-236` | pending |
+| `T211-OLP-0164-B015` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:107-116` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:110-119` | pending |
 
 ## T212 — proper prefix (of a symbol string)
 
@@ -14609,6 +15125,8 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T213-OLP-0156-B030` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:253-261` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:249-257` | pending |
 | `T213-OLP-0156-B032` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:267-269` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:263-265` | pending |
 | `T213-OLP-0157-B013` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:48-56` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:48-55` | pending |
+| `T213-OLP-0163-B006` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-30` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-29` | pending |
+| `T213-OLP-0163-B007` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:32-39` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:31-37` | pending |
 
 ## T214 — minimal formation sequence
 
@@ -14721,6 +15239,17 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | `T216-OLP-0158-B024` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:96-98` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:101-103` | pending |
 | `T216-OLP-0158-B025` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:100-114` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:105-119` | pending |
 | `T216-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
+| `T216-OLP-0165-B014` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:64-68` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:65-69` | pending |
+| `T216-OLP-0165-B015` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:70-75` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:71-76` | pending |
+| `T216-OLP-0165-B016` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:77-80` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:78-82` | pending |
+| `T216-OLP-0165-B017` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:82-84` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:84-86` | pending |
+| `T216-OLP-0165-B018` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:86-103` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:88-106` | pending |
+| `T216-OLP-0165-B019` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:105-109` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:108-114` | pending |
+| `T216-OLP-0165-B020` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:111-113` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:116-118` | pending |
+| `T216-OLP-0165-B021` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:115-117` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:120-122` | pending |
+| `T216-OLP-0165-B022` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:119-135` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:124-140` | pending |
+| `T216-OLP-0166-B015` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:82-90` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:86-96` | pending |
+| `T216-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
 
 ## T217 — instance of a quantified formula
 
@@ -14751,6 +15280,319 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T217-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
+
+## T218 — structure / interpretation (model theory)
+
+**Chosen rendering/action:** रचना / अर्थनिर्धारण
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked logic sources support the model-theoretic semantic setting but do not independently attest this exact paired Marathi nomenclature. The source defines a structure extensionally by a nonempty domain and interpretations of every non-logical symbol, and explicitly records structure, interpretation and model as literature variants; रचना, अर्थनिर्धारण and the existing प्रतिमान preserve that distinction transparently.
+
+**Rationale:** The checked logic sources support the model-theoretic semantic setting but do not independently attest this exact paired Marathi nomenclature. The source defines a structure extensionally by a nonempty domain and interpretations of every non-logical symbol, and explicitly records structure, interpretation and model as literature variants; रचना, अर्थनिर्धारण and the existing प्रतिमान preserve that distinction transparently.
+
+**Authorities actually checked:**
+
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P010` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- संरचना / निर्वचन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अर्थरचना / अर्थलावणी — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रतिमान / अर्थविवरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should model-theoretic structure and interpretation be rendered रचना and अर्थनिर्धारण, or are संरचना and निर्वचन better-established Marathi specialist terms?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T218-OLP-0161-B005` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:11-11` | pending |
+| `T218-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
+| `T218-OLP-0161-B007` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:28-42` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:29-43` | pending |
+| `T218-OLP-0161-B008` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:44-51` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:45-52` | pending |
+| `T218-OLP-0161-B009` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:53-65` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:54-66` | pending |
+| `T218-OLP-0161-B010` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:67-73` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:68-73` | pending |
+| `T218-OLP-0161-B011` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:75-80` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:75-81` | pending |
+| `T218-OLP-0161-B012` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:82-92` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:83-93` | pending |
+| `T218-OLP-0162-B005` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11-11` | pending |
+| `T218-OLP-0162-B007` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17-29` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17-30` | pending |
+| `T218-OLP-0162-B008` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:31-34` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:32-35` | pending |
+| `T218-OLP-0162-B009` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68` | pending |
+| `T218-OLP-0163-B005` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:11-12` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:11-12` | pending |
+| `T218-OLP-0163-B006` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-30` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:14-29` | pending |
+| `T218-OLP-0163-B007` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:32-39` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:31-37` | pending |
+| `T218-OLP-0163-B008` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:41-45` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:39-43` | pending |
+| `T218-OLP-0163-B009` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:47-56` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:45-54` | pending |
+| `T218-OLP-0163-B010` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:58-72` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:56-70` | pending |
+| `T218-OLP-0163-B011` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:74-79` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:72-78` | pending |
+| `T218-OLP-0163-B013` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:87-95` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:86-94` | pending |
+| `T218-OLP-0163-B015` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:101-109` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:100-108` | pending |
+| `T218-OLP-0163-B017` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:114-116` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:113-115` | pending |
+| `T218-OLP-0163-B018` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:118-119` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:117-118` | pending |
+| `T218-OLP-0163-B019` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:121-123` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:120-122` | pending |
+| `T218-OLP-0163-B020` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:125-127` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:124-126` | pending |
+| `T218-OLP-0163-B021` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:129-131` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:128-131` | pending |
+| `T218-OLP-0163-B022` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:133-135` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:133-136` | pending |
+| `T218-OLP-0163-B023` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:137-140` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:138-141` | pending |
+| `T218-OLP-0163-B024` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:142-144` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:143-146` | pending |
+| `T218-OLP-0163-B025` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:146-150` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:148-153` | pending |
+| `T218-OLP-0163-B026` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:152-166` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:155-169` | pending |
+| `T218-OLP-0163-B027` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:168-177` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:171-181` | pending |
+| `T218-OLP-0163-B028` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:179-191` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:183-196` | pending |
+| `T218-OLP-0163-B029` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:193-206` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:198-211` | pending |
+| `T218-OLP-0163-B030` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-213` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:213-220` | pending |
+| `T218-OLP-0163-B031` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:215-230` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:222-236` | pending |
+| `T218-OLP-0163-B032` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:232-244` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:238-250` | pending |
+| `T218-OLP-0163-B033` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:246-258` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:252-265` | pending |
+| `T218-OLP-0163-B034` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:260-276` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:267-284` | pending |
+| `T218-OLP-0163-B035` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:278-299` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:286-308` | pending |
+| `T218-OLP-0163-B036` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:301-322` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:310-335` | pending |
+| `T218-OLP-0163-B037` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:324-336` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:337-350` | pending |
+| `T218-OLP-0163-B038` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:338-345` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:352-361` | pending |
+| `T218-OLP-0163-B039` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:363-385` | pending |
+| `T218-OLP-0163-B046` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:400-415` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:421-437` | pending |
+| `T218-OLP-0163-B047` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:417-419` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:439-441` | pending |
+| `T218-OLP-0164-B006` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:13-27` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:13-26` | pending |
+| `T218-OLP-0164-B008` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:35-40` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:34-40` | pending |
+| `T218-OLP-0164-B009` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | pending |
+| `T218-OLP-0164-B024` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:202-211` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:212-220` | pending |
+| `T218-OLP-0164-B027` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:228-233` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:238-243` | pending |
+| `T218-OLP-0164-B028` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:235-237` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:245-247` | pending |
+| `T218-OLP-0164-B029` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:239-244` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:249-256` | pending |
+| `T218-OLP-0164-B030` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:246-249` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:258-262` | pending |
+| `T218-OLP-0164-B032` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:255-257` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:268-270` | pending |
+| `T218-OLP-0164-B033` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:259-268` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:272-283` | pending |
+| `T218-OLP-0164-B035` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:274-276` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:289-291` | pending |
+| `T218-OLP-0164-B036` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:278-287` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:293-302` | pending |
+| `T218-OLP-0164-B038` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:292-294` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:307-310` | pending |
+| `T218-OLP-0164-B039` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:296-297` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:312-314` | pending |
+| `T218-OLP-0164-B040` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:299-301` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:316-318` | pending |
+| `T218-OLP-0164-B041` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:303-305` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:320-323` | pending |
+| `T218-OLP-0164-B042` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:307-309` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:325-328` | pending |
+| `T218-OLP-0164-B043` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:311-313` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:330-333` | pending |
+| `T218-OLP-0164-B044` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:315-318` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:335-339` | pending |
+| `T218-OLP-0164-B045` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:320-323` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:341-345` | pending |
+| `T218-OLP-0164-B046` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:325-333` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:347-355` | pending |
+| `T218-OLP-0164-B047` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:335-336` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:357-359` | pending |
+| `T218-OLP-0164-B049` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:342-346` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:365-370` | pending |
+| `T218-OLP-0165-B006` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:13-18` | pending |
+| `T218-OLP-0165-B007` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:21-26` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:20-24` | pending |
+| `T218-OLP-0165-B008` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:28-37` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:26-37` | pending |
+| `T218-OLP-0165-B009` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:39-44` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:39-44` | pending |
+| `T218-OLP-0165-B011` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:51-55` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:50-55` | pending |
+| `T218-OLP-0165-B013` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:61-62` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:62-63` | pending |
+| `T218-OLP-0165-B014` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:64-68` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:65-69` | pending |
+| `T218-OLP-0165-B015` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:70-75` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:71-76` | pending |
+| `T218-OLP-0165-B016` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:77-80` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:78-82` | pending |
+| `T218-OLP-0165-B017` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:82-84` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:84-86` | pending |
+| `T218-OLP-0165-B018` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:86-103` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:88-106` | pending |
+| `T218-OLP-0165-B019` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:105-109` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:108-114` | pending |
+| `T218-OLP-0165-B022` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:119-135` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:124-140` | pending |
+| `T218-OLP-0166-B005` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | pending |
+| `T218-OLP-0166-B006` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:25-28` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:25-28` | pending |
+| `T218-OLP-0166-B007` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:30-34` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:30-35` | pending |
+| `T218-OLP-0166-B008` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:37-41` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:38-42` | pending |
+| `T218-OLP-0166-B010` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:48-52` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:49-52` | pending |
+| `T218-OLP-0166-B011` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:54-59` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:54-60` | pending |
+| `T218-OLP-0166-B013` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:66-73` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:68-77` | pending |
+| `T218-OLP-0166-B014` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:75-80` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:79-84` | pending |
+| `T218-OLP-0166-B017` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:97-102` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:103-109` | pending |
+| `T218-OLP-0166-B019` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:110-115` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:118-124` | pending |
+| `T218-OLP-0166-B020` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:117-122` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:126-132` | pending |
+| `T218-OLP-0166-B021` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:124-131` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:134-141` | pending |
+| `T218-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
+
+## T219 — free logic
+
+**Chosen rendering/action:** मुक्त तर्कशास्त्र
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+
+**Intended sense:** The source immediately characterizes the system by permitting names that denote outside the domain or fail to denote and by requiring an existence premise for existential generalization. The transparent मुक्त qualifier is therefore controlled by the displayed inference contrast rather than ordinary freedom.
+
+**Rationale:** The source immediately characterizes the system by permitting names that denote outside the domain or fail to denote and by requiring an existence premise for existential generalization. The transparent मुक्त qualifier is therefore controlled by the displayed inference contrast rather than ordinary freedom.
+
+**Authorities actually checked:**
+
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- निर्देशनमुक्त तर्कशास्त्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अस्तित्व-पूर्वगृहीतकविरहित तर्कशास्त्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- फ्री लॉजिक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is मुक्त तर्कशास्त्र the established Marathi label for free logic, or should the non-denoting-name feature be stated in the term itself?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T219-OLP-0161-B013` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108` | pending |
+
+## T220 — hereditarily finite set
+
+**Chosen rendering/action:** आनुवंशिकदृष्ट्या सांत संच
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+
+**Intended sense:** The checked sources support the set and finite-set components, while the displayed cumulative powerset union defines the hereditary condition exactly. आनुवंशिकदृष्ट्या marks that every member, member of a member and so on remains finite; it does not assert biological inheritance.
+
+**Rationale:** The checked sources support the set and finite-set components, while the displayed cumulative powerset union defines the hereditary condition exactly. आनुवंशिकदृष्ट्या marks that every member, member of a member and so on remains finite; it does not assert biological inheritance.
+
+**Authorities actually checked:**
+
+- `MR-P001` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 2 (`checked_supports`): visually-read-page-image
+- `MR-P003` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 4 (`checked_supports`): visually-read-page-image
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- वंशपरंपरेने सांत संच — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- आनुवंशिकतः सांत संच — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- पूर्णतः सांत संच — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is आनुवंशिकदृष्ट्या सांत संच natural Marathi set-theory terminology for hereditarily finite set, or is आनुवंशिकतः सांत संच preferable?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T220-OLP-0161-B012` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:82-92` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:83-93` | pending |
+
+## T221 — existential generalization
+
+**Chosen rendering/action:** अस्तित्ववाची सामान्यीकरण
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked sources establish existential-quantifier and inference-rule vocabulary. The source displays both the ordinary A(a)-therefore-exists-x-A(x) pattern and the existence-premise variant required in free logic, fixing सामान्यीकरण as the move from a named case to an existential statement.
+
+**Rationale:** The checked sources establish existential-quantifier and inference-rule vocabulary. The source displays both the ordinary A(a)-therefore-exists-x-A(x) pattern and the existence-premise variant required in free logic, fixing सामान्यीकरण as the move from a named case to an existential statement.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P022` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 20 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P085` — सिद्धतापद्धती : सोपाधिक व अप्रत्यक्ष (CP and IP). https://marathivishwakosh.org/50021/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly name natural-deduction discharge or introduction/elimination rules.
+
+**Alternatives:**
+
+- अस्तित्वात्मक सामान्यीकरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अस्तित्ववाची व्यापकीकरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अस्तित्व-प्रवेशन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is अस्तित्ववाची सामान्यीकरण the clearest Marathi label for existential generalization, or should it follow natural-deduction terminology as अस्तित्व-प्रवेशन?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T221-OLP-0161-B013` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108` | pending |
+
+## T222 — x-variant (of a variable assignment)
+
+**Chosen rendering/action:** x-पर्याय (चर-मूल्यांकनाचा)
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The source defines an x-variant extensionally as a variable assignment that may differ from the original assignment only in the value given to x, while allowing the unchanged assignment itself. पर्याय preserves that controlled alternative-assignment sense without implying that x must receive a different value.
+
+**Rationale:** The source defines an x-variant extensionally as a variable assignment that may differ from the original assignment only in the value given to x, while allowing the unchanged assignment itself. पर्याय preserves that controlled alternative-assignment sense without implying that x must receive a different value.
+
+**Authorities actually checked:**
+
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P081` — शासन व्यवहार कोश — V glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/3/V (`checked_supports`): Primary Government of Maharashtra terminology extraction read in the current search. Limitation: The glossary entry is generic rather than model-theoretic; the OpenLogic definition controls the exact logical object.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- x-भेदरूप — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- x-विकल्प — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- x-सापेक्ष पर्यायी मूल्यांकन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is x-पर्याय sufficiently precise for an assignment that may differ only at x, including the original assignment itself?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T222-OLP-0163-B011` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:74-79` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:72-78` | pending |
+| `T222-OLP-0163-B012` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:81-85` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:80-84` | pending |
+| `T222-OLP-0163-B013` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:87-95` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:86-94` | pending |
+| `T222-OLP-0163-B014` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:97-99` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:96-98` | pending |
+| `T222-OLP-0163-B032` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:232-244` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:238-250` | pending |
+| `T222-OLP-0163-B040` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:366-370` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:387-391` | pending |
+| `T222-OLP-0163-B041` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:372-375` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:393-396` | pending |
+| `T222-OLP-0163-B042` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:377-381` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:398-402` | pending |
+| `T222-OLP-0163-B043` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:383-387` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:404-408` | pending |
+| `T222-OLP-0163-B044` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:389-392` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:410-413` | pending |
+| `T222-OLP-0163-B045` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:394-398` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:415-419` | pending |
+| `T222-OLP-0164-B021` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:157-172` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:163-178` | pending |
+| `T222-OLP-0164-B022` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:174-196` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:180-206` | pending |
+| `T222-OLP-0165-B016` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:77-80` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:78-82` | pending |
+
+## T223 — Skolem normal form
+
+**Chosen rendering/action:** स्कोलेम सामान्य रूप
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The edition already uses the Marathi name form स्कोलेम in its Löwenheim–Skolem material, while the displayed equivalence defines the local normal-form role by replacing each existential witness y with the new function term f(x). सामान्य रूप is a transparent reversible rendering of normal form under that explicit construction.
+
+**Rationale:** The edition already uses the Marathi name form स्कोलेम in its Löwenheim–Skolem material, while the displayed equivalence defines the local normal-form role by replacing each existential witness y with the new function term f(x). सामान्य रूप is a transparent reversible rendering of normal form under that explicit construction.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P095` — पुंजयामिकी — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/20963/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not attest eigenvariable or proof theory.
+
+**Alternatives:**
+
+- स्कोलेम प्रसामान्य रूप — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- स्कोलेम मानक रूप — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- स्कोलेम नॉर्मल फॉर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is स्कोलेम सामान्य रूप the preferred Marathi label for Skolem normal form, or is प्रसामान्य रूप the established specialist term?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T223-OLP-0164-B049` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:342-346` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:365-370` | pending |
+| `T223-OLP-0164-B050` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:348-351` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:372-376` | pending |
+
+## T224 — logical truth
+
+**Chosen rendering/action:** तार्किक सत्य
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The source identifies logical truths extensionally with sentences satisfied in every structure and explains that their truth depends only on logical symbols and syntactic structure. तार्किक सत्य is the transparent composition of directly supported logical and truth vocabulary under that explicit equivalence with validity.
+
+**Rationale:** The source identifies logical truths extensionally with sentences satisfied in every structure and explains that their truth depends only on logical symbols and syntactic structure. तार्किक सत्य is the transparent composition of directly supported logical and truth vocabulary under that explicit equivalence with validity.
+
+**Authorities actually checked:**
+
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P010` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P020` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 2 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- तर्कसत्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- तार्किक सत्यवाक्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- तर्कशास्त्रीय सत्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is तार्किक सत्य the clearest Marathi term for a sentence true under every interpretation, or is the compact तर्कसत्य conventional?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T224-OLP-0166-B005` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -16906,6 +17748,356 @@ Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 oc
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLFOL-009-OLP-0156` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:53-57` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:53-58` | pending |
+
+## OLFOL-010 — confirmed-frozen-source-hyphenation typo with bounded prose correction
+
+**Chosen rendering/action:** Rendered the intended one two-place relation in Marathi and placed adjacent reader note OLFOL-010. No formula, macro, protected token, identifier or reference changed, so no structural QA projection is needed.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The set-theory-language example says it requires a ‘single-two place relation.’ The preceding structure definition and the example's only non-logical symbol require one two-place relation; the hyphen incorrectly joins single to two.
+
+**Rationale:** The set-theory-language example says it requires a ‘single-two place relation.’ The preceding structure definition and the example's only non-logical symbol require one two-place relation; the hyphen incorrectly joins single to two. Chosen action: Rendered the intended one two-place relation in Marathi and placed adjacent reader note OLFOL-010. No formula, macro, protected token, identifier or reference changed, so no structural QA projection is needed.
+
+**Authorities actually checked:**
+
+- `OLFOL-010-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-010. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the malformed hyphenation literally — `rejected`: Not chosen; the source finding and recorded action control.
+- Omit the word single and merely say a two-place relation — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected phrase state exactly that the language requires one binary relation?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-010-OLP-0161` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:76-78` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:76-81` | pending |
+
+## OLFOL-011 — confirmed-frozen-source-duplicate-equality token with documented formula projection
+
+**Chosen rendering/action:** Removed the first line's redundant equality sign in the Marathi display and placed adjacent reader note OLFOL-011. A unit-specific QA projection restores it solely for comparison with the frozen English bytes.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The multline expansion ends its first line with an equality sign and begins the next aligned line with another equality sign, so the rendered chain displays two consecutive equality signs between the term value and its first expansion.
+
+**Rationale:** The multline expansion ends its first line with an equality sign and begins the next aligned line with another equality sign, so the rendered chain displays two consecutive equality signs between the term value and its first expansion. Chosen action: Removed the first line's redundant equality sign in the Marathi display and placed adjacent reader note OLFOL-011. A unit-specific QA projection restores it solely for comparison with the frozen English bytes.
+
+**Authorities actually checked:**
+
+- `OLFOL-011-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-011. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Keep the first equality and remove the aligned line's equality sign — `rejected`: Not chosen; the source finding and recorded action control.
+- Preserve the visually duplicated equality signs — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired display now present one equality sign per step while retaining the exact evaluation chain?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-011-OLP-0162` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:49-56` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:49-57` | pending |
+
+## OLFOL-012 — confirmed-frozen-source-assignment-index on fixed relation interpretation with documented formula projection
+
+**Chosen rendering/action:** Removed the spurious assignment suffix from the Marathi formula and placed adjacent reader note OLFOL-012. A unit-specific QA projection restores the frozen suffix solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The atomic example appends [s] to Assign(R,M) in the nonmembership claim, although the structure fixes the relation interpretation independently of every variable assignment and the same paragraph uses Assign(R,M) without [s] twice.
+
+**Rationale:** The atomic example appends [s] to Assign(R,M) in the nonmembership claim, although the structure fixes the relation interpretation independently of every variable assignment and the same paragraph uses Assign(R,M) without [s] twice. Chosen action: Removed the spurious assignment suffix from the Marathi formula and placed adjacent reader note OLFOL-012. A unit-specific QA projection restores the frozen suffix solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-012-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-012. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve notation that incorrectly makes the interpreted relation depend on s — `rejected`: Not chosen; the source finding and recorded action control.
+- Append [s] to every Assign(R,M) occurrence and obscure the structure/assignment distinction — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired nonmembership claim now keep the relation interpretation fixed while allowing only term values to depend on s?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-012-OLP-0163` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-213` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:213-220` | pending |
+
+## OLFOL-013 — confirmed-frozen-source-missing existential-branch satisfaction condition with documented formula projection
+
+**Chosen rendering/action:** Restored Sat(M,B(m)) in the Marathi prvEx branch and placed adjacent reader note OLFOL-013. A unit-specific QA projection removes the restored formula solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** In the informal contrast, the prvEx branch ends after ‘for at least one m in Domain(M)’ and omits the required satisfaction statement, whereas the parallel prvAll branch includes Sat(M,B(m)) and the following corrected account includes the quantified body explicitly.
+
+**Rationale:** In the informal contrast, the prvEx branch ends after ‘for at least one m in Domain(M)’ and omits the required satisfaction statement, whereas the parallel prvAll branch includes Sat(M,B(m)) and the following corrected account includes the quantified body explicitly. Chosen action: Restored Sat(M,B(m)) in the Marathi prvEx branch and placed adjacent reader note OLFOL-013. A unit-specific QA projection removes the restored formula solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-013-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-013. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the grammatically and semantically incomplete existential branch — `rejected`: Not chosen; the source finding and recorded action control.
+- Remove the satisfaction statement from the universal branch as well — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired branch now state the complete but intentionally rejected object-language substitution account?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-013-OLP-0163` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:168-176` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:171-180` | pending |
+
+## OLFOL-014 — confirmed-frozen-source-defined-existential delimiter and punctuation defects with documented formula projections
+
+**Chosen rendering/action:** Removed both surplus opening parentheses and the formula-internal comma in the Marathi text, then placed adjacent reader note OLFOL-014. Three unit-specific QA projections reconstruct the frozen forms solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The defined-existential walkthrough contains a surplus opening parenthesis after the inner negation in two formulas and inserts a comma inside the satisfaction formula argument of the displayed false existential claim.
+
+**Rationale:** The defined-existential walkthrough contains a surplus opening parenthesis after the inner negation in two formulas and inserts a comma inside the satisfaction formula argument of the displayed false existential claim. Chosen action: Removed both surplus opening parentheses and the formula-internal comma in the Marathi text, then placed adjacent reader note OLFOL-014. Three unit-specific QA projections reconstruct the frozen forms solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-014-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-014. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the two unbalanced negations and treat the comma as part of the formula — `rejected`: Not chosen; the source finding and recorded action control.
+- Add extra closing parentheses instead of matching the correctly formed parallel formulas — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Are all three repaired formulas now balanced instances of the defined existential quantifier without internal prose punctuation?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-014-OLP-0163` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:278-299` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:284-308` | pending |
+
+## OLFOL-015 — confirmed-frozen-source-predicate-argument reversal in universal example with documented formula projection
+
+**Chosen rendering/action:** Used the false antecedent R(x,a) in the Marathi derivation and placed adjacent reader note OLFOL-015. A context-bounded QA projection restores the frozen R(a,x) occurrence solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** For m=2,3,4 the defined-universal walkthrough says the consequent R(a,x) is false. But R(a,x) is true at m=2 because (1,2) is in the declared relation; the implication is true because its antecedent R(x,a) is false at all three values.
+
+**Rationale:** For m=2,3,4 the defined-universal walkthrough says the consequent R(a,x) is false. But R(a,x) is true at m=2 because (1,2) is in the declared relation; the implication is true because its antecedent R(x,a) is false at all three values. Chosen action: Used the false antecedent R(x,a) in the Marathi derivation and placed adjacent reader note OLFOL-015. A context-bounded QA projection restores the frozen R(a,x) occurrence solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-015-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-015. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve a false claim about the declared relation at m=2 — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the declared relation by removing the pair (1,2) — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired sentence give the actual reason the implication holds at m=2,3,4?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-015-OLP-0163` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:301-320` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:310-334` | pending |
+
+## OLFOL-016 — confirmed-frozen-source-missing variable name with documented formula projection
+
+**Chosen rendering/action:** Restored m before the second equality in the Marathi text and placed adjacent reader note OLFOL-016. A unit-specific QA projection removes it solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The nested-quantifier example names the two remaining cases as ‘m=1 and =2,’ omitting the variable name before the second equality.
+
+**Rationale:** The nested-quantifier example names the two remaining cases as ‘m=1 and =2,’ omitting the variable name before the second equality. Chosen action: Restored m before the second equality in the Marathi text and placed adjacent reader note OLFOL-016. A unit-specific QA projection removes it solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-016-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-016. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the incomplete equality — `rejected`: Not chosen; the source finding and recorded action control.
+- Rewrite both cases without displaying their shared variable — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired pair of cases now identify both values of the same outer variable m?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-016-OLP-0163` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:324-336` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:337-351` | pending |
+
+## OLFOL-017 — confirmed-frozen-source-outer-variable name mismatch with documented formula projection
+
+**Chosen rendering/action:** Changed the summary's outer range variable to m in the Marathi text and placed adjacent reader note OLFOL-017. A unit-specific QA projection restores the frozen n solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The summary begins ‘for all n in Domain(M)’ but immediately splits cases by m and uses Subst(s,m,x). Here m ranges over the outer universal quantifier; n was the inner existential witness in the preceding calculations.
+
+**Rationale:** The summary begins ‘for all n in Domain(M)’ but immediately splits cases by m and uses Subst(s,m,x). Here m ranges over the outer universal quantifier; n was the inner existential witness in the preceding calculations. Chosen action: Changed the summary's outer range variable to m in the Marathi text and placed adjacent reader note OLFOL-017. A unit-specific QA projection restores the frozen n solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-017-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-017. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the switch to n while every following expression depends on m — `rejected`: Not chosen; the source finding and recorded action control.
+- Rename all outer assignments and both prior case analyses from m to n — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired summary quantify the same outer assignment parameter that its two cases use?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-017-OLP-0163` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-352` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:363-369` | pending |
+
+## OLFOL-018 — confirmed-frozen-source-invalid counterexample witness with documented formula projection
+
+**Chosen rendering/action:** Used n=4 for m=1 and n=1 for m=2 in the Marathi derivation and placed adjacent reader note OLFOL-018. A unit-specific QA projection reconstructs the frozen single-witness wording solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The final counterexample uses n=4 for both m=1 and m=2, but the declared relation contains (2,4), so n=4 satisfies R(x,y) rather than refuting it when m=2. The pair (2,1) is outside the relation and supplies a valid witness.
+
+**Rationale:** The final counterexample uses n=4 for both m=1 and m=2, but the declared relation contains (2,4), so n=4 satisfies R(x,y) rather than refuting it when m=2. The pair (2,1) is outside the relation and supplies a valid witness. Chosen action: Used n=4 for m=1 and n=1 for m=2 in the Marathi derivation and placed adjacent reader note OLFOL-018. A unit-specific QA projection reconstructs the frozen single-witness wording solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-018-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-018. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the false claim that (2,4) is outside the declared relation — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the declared relation and invalidate earlier worked examples — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do the two repaired witnesses now separately refute the inner universal formula for both possible values of m?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-018-OLP-0163` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:353-363` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:370-383` | pending |
+
+## OLFOL-019 — confirmed-frozen-source-free tuple index with documented formula projection
+
+**Chosen rendering/action:** Started the Marathi tuple at t_1, placed adjacent reader note OLFOL-019 and added a unit-specific QA projection that reconstructs the frozen t_i solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** After establishing equality for every indexed term value, the atomic-predicate proof writes the resulting k-tuple as beginning with t_i and ending with t_k. The index i is then free, whereas the parallel source tuple and a complete k-tuple both run from t_1 through t_k.
+
+**Rationale:** After establishing equality for every indexed term value, the atomic-predicate proof writes the resulting k-tuple as beginning with t_i and ending with t_k. The index i is then free, whereas the parallel source tuple and a complete k-tuple both run from t_1 through t_k. Chosen action: Started the Marathi tuple at t_1, placed adjacent reader note OLFOL-019 and added a unit-specific QA projection that reconstructs the frozen t_i solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-019-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-019. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve a purported k-tuple with an unbound initial index — `rejected`: Not chosen; the source finding and recorded action control.
+- Bind i separately and state only one arbitrary component rather than the full tuple — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired s_2 tuple now list exactly the same k argument positions as the preceding s_1 tuple?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-019-OLP-0164` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:82-92` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:83-95` | pending |
+
+## OLFOL-020 — confirmed-frozen-source-undefined base assignment in universal induction case with documented formula projection
+
+**Chosen rendering/action:** Defined s_1-prime from s_1 and s_2-prime from s_2 in the Marathi proof, placed adjacent reader note OLFOL-020 and added one context-bounded QA projection that restores both frozen bases solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The universal case defines both s_1-prime and s_2-prime by replacing x in an unindexed and otherwise undefined assignment s. The proof immediately needs them to be x-variants of s_1 and s_2 respectively and to inherit those assignments' agreement away from x.
+
+**Rationale:** The universal case defines both s_1-prime and s_2-prime by replacing x in an unindexed and otherwise undefined assignment s. The proof immediately needs them to be x-variants of s_1 and s_2 respectively and to inherit those assignments' agreement away from x. Chosen action: Defined s_1-prime from s_1 and s_2-prime from s_2 in the Marathi proof, placed adjacent reader note OLFOL-020 and added one context-bounded QA projection that restores both frozen bases solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-020-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-020. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve two identical variants of an undefined assignment and invalidate the subsequent agreement argument — `rejected`: Not chosen; the source finding and recorded action control.
+- Introduce a new common assignment s and separately prove that it agrees with both s_1 and s_2 — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do the repaired definitions supply exactly the two assignments required by the universal induction hypothesis?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-020-OLP-0164` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:174-190` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:183-200` | pending |
+
+## OLFOL-021 — confirmed-frozen-source-duplicated set symbol with documented formula projection
+
+**Chosen rendering/action:** Removed the redundant second Gamma in the Marathi definition, placed adjacent reader note OLFOL-021 and added a unit-specific QA projection that reinserts it solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The definition begins ‘If Gamma is a set of sentences Gamma,’ printing the same set symbol twice in one noun phrase without assigning the second occurrence any grammatical or mathematical role.
+
+**Rationale:** The definition begins ‘If Gamma is a set of sentences Gamma,’ printing the same set symbol twice in one noun phrase without assigning the second occurrence any grammatical or mathematical role. Chosen action: Removed the redundant second Gamma in the Marathi definition, placed adjacent reader note OLFOL-021 and added a unit-specific QA projection that reinserts it solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-021-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-021. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the duplicated symbol as if it modified the sentence set — `rejected`: Not chosen; the source finding and recorded action control.
+- Delete the first occurrence and leave the subject unnamed until after the noun phrase — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired opening introduce Gamma once as the set whose satisfaction is being defined?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-021-OLP-0164` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:239-244` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:249-256` | pending |
+
+## OLFOL-022 — confirmed-frozen-source-duplicate equality token with documented formula projection
+
+**Chosen rendering/action:** Removed the first line's redundant equality sign in the Marathi display, placed adjacent reader note OLFOL-022 and added a unit-specific QA projection that restores it solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The function-term calculation ends its opening multline line with an equality sign and begins the nested aligned calculation with another equality sign, rendering two consecutive equalities before the first expansion.
+
+**Rationale:** The function-term calculation ends its opening multline line with an equality sign and begins the nested aligned calculation with another equality sign, rendering two consecutive equalities before the first expansion. Chosen action: Removed the first line's redundant equality sign in the Marathi display, placed adjacent reader note OLFOL-022 and added a unit-specific QA projection that restores it solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-022-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-022. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Keep the first equality and remove the aligned line's equality sign — `rejected`: Not chosen; the source finding and recorded action control.
+- Preserve two consecutive equality signs between one expression and its expansion — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired display retain one equality at every actual evaluation step?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-022-OLP-0165` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:86-101` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:88-104` | pending |
+
+## OLFOL-023 — confirmed-frozen-source-missing substitution admissibility hypothesis with bounded prose correction
+
+**Chosen rendering/action:** Added the required free-for-x-in-A hypothesis in Marathi prose and placed adjacent reader note OLFOL-023. No protected formula, macro, token, identifier or reference changed, so no structural projection is needed.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The formula-substitution proposition quantifies over an unrestricted term t-prime, but the chapter's preceding definition forms Subst(A,t-prime,x) only when t-prime is free for x in A; otherwise variable capture is explicitly excluded and the left side is not defined under that convention.
+
+**Rationale:** The formula-substitution proposition quantifies over an unrestricted term t-prime, but the chapter's preceding definition forms Subst(A,t-prime,x) only when t-prime is free for x in A; otherwise variable capture is explicitly excluded and the left side is not defined under that convention. Chosen action: Added the required free-for-x-in-A hypothesis in Marathi prose and placed adjacent reader note OLFOL-023. No protected formula, macro, token, identifier or reference changed, so no structural projection is needed.
+
+**Authorities actually checked:**
+
+- `OLFOL-023-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-023. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve a theorem whose left side can be undefined under the chapter's substitution definition — `rejected`: Not chosen; the source finding and recorded action control.
+- Silently switch to a capture-avoiding renaming definition of substitution not given by this chapter — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the added hypothesis state exactly the admissibility condition already required by the chapter's formula-substitution definition?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-023-OLP-0165` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:105-109` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:108-114` | pending |
 
 ## Deferred prospective decisions
 

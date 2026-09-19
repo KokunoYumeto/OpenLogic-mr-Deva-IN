@@ -1,0 +1,167 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: Semantic Notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sem}
+\olsection{चिन्हार्थविषयक संकल्पना}
+
+\begin{explain}
+प्रथम-क्रम भाषांसाठीच्या !!{structure}s ची व्याख्या मिळाल्यावर वाक्यांचे
+काही मूलभूत चिन्हार्थविषयक गुणधर्म आणि वाक्यांमधील संबंध परिभाषित करता
+येतात. त्यांतील सर्वांत सोपी संकल्पना म्हणजे वाक्याची \emph{वैधता}.
+प्रत्येक !!{structure} मध्ये एखाद्या वाक्याची पूर्ति होत असेल, तर ते
+वाक्य वैध असते. त्यातील अतार्किक चिन्हांचा अर्थ कसा लावला आहे याचा
+विचार न करता ज्या वाक्यांची पूर्ति होते, तीच वैध वाक्ये होत. म्हणून वैध
+वाक्यांना \emph{तार्किक सत्ये} असेही म्हणतात---ती कोणत्याही
+!!{structure} मध्ये सत्य, म्हणजे पूर्त, असतात. त्यामुळे त्यांची सत्यता
+फक्त त्यांत येणारी तार्किक चिन्हे आणि त्यांची विन्यासात्मक !!{structure}
+यांवर अवलंबून असते; अतार्किक चिन्हे किंवा त्यांचे अर्थनिर्धारण यांवर नाही.
+\end{explain}
+
+\begin{defn}[वैधता]
+वाक्य~$!A$ हे \emph{वैध}, $\Entails !A$, तेव्हा आणि केवळ तेव्हाच असते,
+जेव्हा प्रत्येक !!{structure}~$\Struct M$ साठी $\Sat{M}{!A}$.
+\end{defn}
+
+\begin{defn}[तार्किक निष्पन्नता]
+वाक्यांच्या संच~$\Gamma$ मधून वाक्य~$!A$
+\emph{तार्किकरीत्या निष्पन्न होते}, $\Gamma \Entails !A$, तेव्हा आणि
+केवळ तेव्हाच, जेव्हा $\Sat{M}{\Gamma}$ असलेल्या प्रत्येक
+!!{structure}~$\Struct M$ साठी $\Sat{M}{!A}$.
+\end{defn}
+
+
+\begin{defn}[पूर्ततायोग्यता]
+एखाद्या !!{structure}~$\Struct M$ साठी $\Sat{M}{\Gamma}$ असेल, तर
+वाक्यांचा संच~$\Gamma$ \emph{पूर्ततायोग्य} असतो. $\Gamma$
+पूर्ततायोग्य नसेल, तर त्याला \emph{अपूर्ततायोग्य} म्हणतात.
+\end{defn}
+
+\begin{prop}
+वाक्य~$!A$ वैध असते तेव्हा आणि केवळ तेव्हाच, जेव्हा
+वाक्यांच्या प्रत्येक संच~$\Gamma$ साठी $\Gamma \Entails !A$.
+\end{prop}
+
+\begin{proof}
+अग्र दिशेसाठी, $!A$ वैध आणि $\Gamma$ हा वाक्यांचा संच असू द्या.
+$\Sat{M}{\Gamma}$ अशी !!a{structure}~$\Struct M$ असू द्या. $!A$ वैध
+असल्यामुळे $\Sat{M}{!A}$; म्हणून $\Gamma \Entails !A$.
+
+उलट दिशेच्या व्यत्यासासाठी, $!A$ अवैध असू द्या; म्हणजे
+$\Sat/{M}{!A}$ अशी !!a{structure}~$\Struct M$ आहे. $\Gamma =
+\{ \ltrue \}$ असताना $\ltrue$ वैध असल्यामुळे $\Sat{M}{\Gamma}$.
+त्यामुळे अशी !!a{structure}~$\Struct M$ आहे की $\Sat{M}{\Gamma}$ पण
+$\Sat/{M}{!A}$; म्हणून $\Gamma$ मधून~$!A$ तार्किकरीत्या निष्पन्न होत
+नाही.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:entails-unsat}
+$\Gamma \Entails !A$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Gamma \cup \{\lnot !A\}$ अपूर्ततायोग्य असतो.
+\end{prop}
+
+\begin{proof}
+अग्र दिशेसाठी, $\Gamma \Entails !A$ असे समजू आणि, याउलट, अशी
+!!a{structure}~$\Struct M$ आहे की $\Sat{M}{\Gamma
+  \cup \{ \lnot !A \}}$, असे समजू. $\Sat{M}{\Gamma}$ आणि
+$\Gamma \Entails !A$ असल्यामुळे $\Sat{M}{!A}$. तसेच
+$\Sat{M}{\Gamma\cup \{ \lnot !A \}}$ असल्यामुळे
+$\Sat{M}{\lnot !A}$; म्हणून $\Sat{M}{!A}$ आणि $\Sat/{M}{!A}$ दोन्ही
+मिळतात, हा विरोधाभास आहे. त्यामुळे अशी कोणतीही
+!!{structure}~$\Struct M$ असू शकत नाही; म्हणून
+$\Gamma \cup \{ \lnot !A \}$ अपूर्ततायोग्य आहे.
+
+उलट दिशेसाठी, $\Gamma \cup \{ \lnot !A \}$ अपूर्ततायोग्य आहे असे
+समजू. म्हणून प्रत्येक !!{structure}~$\Struct M$ साठी एकतर
+$\Sat/{M}{\Gamma}$ किंवा $\Sat{M}{!A}$. त्यामुळे
+$\Sat{M}{\Gamma}$ असलेल्या प्रत्येक !!{structure}~$\Struct M$ साठी
+$\Sat{M}{!A}$; म्हणून $\Gamma \Entails !A$.
+\end{proof}
+
+\begin{prob}
+\begin{enumerate}
+\item $\Gamma \Entails \bot$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma$
+  अपूर्ततायोग्य आहे, हे दाखवा.
+\item $\Gamma \cup \{!A\} \Entails \bot$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\Gamma \Entails \lnot !A$, हे दाखवा.
+\item $!A$ किंवा $\Gamma$ मध्ये~$c$ येत नाही असे समजा.
+  $\Gamma \Entails \lforall[x][!A]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\Gamma \Entails \Subst{!A}{c}{x}$, हे दाखवा.
+\end{enumerate}
+\end{prob}
+
+\begin{prop}
+$\Gamma \subseteq \Gamma'$ आणि $\Gamma \Entails !A$ असेल, तर
+$\Gamma' \Entails !A$.
+\end{prop}
+
+\begin{proof}
+$\Gamma \subseteq \Gamma'$ आणि $\Gamma \Entails !A$ असे समजा.
+$\Sat{M}{\Gamma'}$ अशी रचना~$\Struct M$ असू द्या; मग
+$\Sat{M}{\Gamma}$ आणि $\Gamma \Entails !A$ असल्यामुळे
+$\Sat{M}{!A}$. म्हणून जेव्हा जेव्हा $\Sat{M}{\Gamma'}$, तेव्हा
+$\Sat{M}{!A}$; त्यामुळे $\Gamma' \Entails !A$.
+\end{proof}
+
+
+\begin{thm}[चिन्हार्थविषयक निगमन प्रमेय]
+\ollabel{thm:sem-deduction}
+$\Gamma \cup \{!A\} \Entails !B$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Gamma \Entails !A \lif !B$.
+\end{thm}
+
+\begin{proof}
+अग्र दिशेसाठी, $\Gamma \cup \{ !A \} \Entails !B$ असू द्या आणि
+$\Sat{M}{\Gamma}$ अशी !!a{structure}~$\Struct M$ असू द्या.
+$\Sat{M}{!A}$ असेल, तर $\Sat{M}{\Gamma \cup \{ !A \} }$; आणि
+$\Gamma \cup \{ !A \}$ मधून~$!B$ तार्किकरीत्या निष्पन्न होत असल्यामुळे
+$\Sat{M}{!B}$. म्हणून $\Sat{M}{!A \lif !B}$; त्यामुळे
+$\Gamma \Entails !A \lif !B$.
+
+उलट दिशेसाठी, $\Gamma \Entails !A \lif !B$ असू द्या आणि
+$\Sat{M}{\Gamma \cup \{ !A \}}$ अशी !!a{structure}~$\Struct M$ असू
+द्या. मग $\Sat{M}{\Gamma}$; म्हणून $\Sat{M}{!A \lif !B}$ आणि
+$\Sat{M}{!A}$ असल्यामुळे $\Sat{M}{!B}$. त्यामुळे जेव्हा जेव्हा
+$\Sat{M}{\Gamma \cup \{ !A \} }$, तेव्हा $\Sat{M}{!B}$; म्हणून
+$\Gamma \cup \{ !A \} \Entails !B$.
+\end{proof}
+
+\begin{prop}\ollabel{prop:quant-terms}
+  $\Struct{M}$ ही !!a{structure}, $!A(x)$ हे एक मुक्त चर~$x$ असलेले
+  !!a{formula} आणि $t$ हे बंद पद असू द्या. मग:
+  \begin{tagenumerate}{prvEx,prvAll}
+    \tagitem{prvEx}{$!A(t) \Entails \lexists[x][!A(x)]$}{}
+    \tagitem{prvAll}{$\lforall[x][!A(x)] \Entails !A(t)$}{}
+  \end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{tagenumerate}{prvEx,prvAll}
+    \tagitem{prvEx}{%
+      \iftag{probEx}{सराव.}{$\Sat{M}{!A(t)}$ असे समजा. $s(x) =
+        \Value{t}{M}$ असे चर-मूल्यांकन~$s$ असू द्या. $!A(t)$ हे
+        !!a{sentence} असल्यामुळे $\Sat{M}{!A(t)}[s]$.
+        \olref[ext]{prop:ext-formulas} नुसार
+        $\Sat{M}{!A(x)}[s]$. \olref[ass]{prop:sat-quant} नुसार
+        $\Sat{M}{\lexists[x][!A(x)]}$.}}{}
+    \tagitem{prvAll}{%
+      \iftag{probAll}{सराव.}{$\Sat{M}{\lforall[x][!A(x)]}$ असे समजा.
+        $s(x) = \Value{t}{M}$ असे चर-मूल्यांकन~$s$ असू द्या.
+        \olref[ass]{prop:sat-quant} नुसार $\Sat{M}{!A(x)}[s]$.
+        \olref[ext]{prop:ext-formulas} नुसार
+        $\Sat{M}{!A(t)}[s]$. $!A(t)$ हे !!a{sentence} असल्यामुळे
+        \olref[ass]{prop:sentence-sat-true} नुसार
+        $\Sat{M}{!A(t)}$.}}{}
+  \end{tagenumerate}
+\end{proof}
+
+\begin{probtag}{probEx,probAll}
+  \olref[fol][syn][sem]{prop:quant-terms} ची सिद्धता पूर्ण करा.
+\end{probtag}
+
+\end{document}

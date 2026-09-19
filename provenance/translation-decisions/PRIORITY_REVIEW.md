@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
-This view contains 30 urgent/high decisions and
-1374 current occurrences. Normal and low items remain in the full index.
+This view contains 32 urgent/high decisions and
+1390 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -159,6 +159,11 @@ This view contains 30 urgent/high decisions and
 | `T013-OLP-0147-B008` | `OLP-0147` |  | 56-68 | 58-68 | pending |
 | `T013-OLP-0148-B008` | `OLP-0148` |  | 36-48 | 37-49 | pending |
 | `T013-OLP-0148-B009` | `OLP-0148` |  | 50-55 | 51-56 | pending |
+| `T013-OLP-0160-B006` | `OLP-0160` |  | 13-33 | 13-33 | pending |
+| `T013-OLP-0160-B007` | `OLP-0160` |  | 35-45 | 35-46 | pending |
+| `T013-OLP-0161-B006` | `OLP-0161` |  | 13-26 | 13-27 | pending |
+| `T013-OLP-0161-B009` | `OLP-0161` |  | 53-65 | 54-66 | pending |
+| `T013-OLP-0162-B010` | `OLP-0162` |  | 68-70 | 70-72 | pending |
 
 ## T014 — perfect number → परिपूर्ण संख्या
 
@@ -1179,6 +1184,8 @@ This view contains 30 urgent/high decisions and
 | `T044-OLP-0158-B016` | `OLP-0158` |  | 60-61 | 65-66 | pending |
 | `T044-OLP-0158-B024` | `OLP-0158` |  | 96-98 | 101-103 | pending |
 | `T044-OLP-0158-B026` | `OLP-0158` |  | 116-124 | 121-130 | pending |
+| `T044-OLP-0160-B006` | `OLP-0160` |  | 13-33 | 13-33 | pending |
+| `T044-OLP-0160-B007` | `OLP-0160` |  | 35-45 | 35-46 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
@@ -1333,6 +1340,7 @@ This view contains 30 urgent/high decisions and
 | `T155-OLP-0148-B008` | `OLP-0148` |  | 36-48 | 37-49 | pending |
 | `T155-OLP-0148-B009` | `OLP-0148` |  | 50-55 | 51-56 | pending |
 | `T155-OLP-0148-B010` | `OLP-0148` |  | 57-66 | 58-67 | pending |
+| `T155-OLP-0161-B013` | `OLP-0161` |  | 94-107 | 95-108 | pending |
 
 ## T174 — closed term → बंद पद
 
@@ -1437,6 +1445,12 @@ This view contains 30 urgent/high decisions and
 | `T174-OLP-0135-B013` | `OLP-0135` |  | 90-121 | 91-123 | pending |
 | `T174-OLP-0136-B015` | `OLP-0136` |  | 73-83 | 73-83 | pending |
 | `T174-OLP-0152-B007` | `OLP-0152` |  | 17-30 | 17-30 | pending |
+| `T174-OLP-0162-B005` | `OLP-0162` |  | 11-11 | 11-11 | pending |
+| `T174-OLP-0162-B006` | `OLP-0162` |  | 13-15 | 13-15 | pending |
+| `T174-OLP-0162-B007` | `OLP-0162` |  | 17-29 | 17-30 | pending |
+| `T174-OLP-0162-B008` | `OLP-0162` |  | 31-34 | 32-35 | pending |
+| `T174-OLP-0166-B021` | `OLP-0166` |  | 124-131 | 134-141 | pending |
+| `T174-OLP-0166-B023` | `OLP-0166` |  | 153-155 | 163-165 | pending |
 
 ## T178 — eigenvariable → आयगेन चर
 
@@ -1634,6 +1648,30 @@ This view contains 30 urgent/high decisions and
 | `T201-OLP-0137-B010` | `OLP-0137` |  | 48-61 | 48-60 | pending |
 | `T201-OLP-0147-B008` | `OLP-0147` |  | 56-68 | 58-68 | pending |
 | `T201-OLP-0148-B009` | `OLP-0148` |  | 50-55 | 51-56 | pending |
+
+## T219 — free logic → मुक्त तर्कशास्त्र
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: source-defined transparent specialist term; exact Marathi headword not independently attested; expert-reviewable. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Is मुक्त तर्कशास्त्र the established Marathi label for free logic, or should the non-denoting-name feature be stated in the term itself?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T219-OLP-0161-B013` | `OLP-0161` |  | 94-107 | 95-108 | pending |
+
+## T220 — hereditarily finite set → आनुवंशिकदृष्ट्या सांत संच
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: definition-controlled compound with directly supported set/finite core; exact headword not independently attested; expert-reviewable. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Is आनुवंशिकदृष्ट्या सांत संच natural Marathi set-theory terminology for hereditarily finite set, or is आनुवंशिकतः सांत संच preferable?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T220-OLP-0161-B012` | `OLP-0161` |  | 82-92 | 83-93 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

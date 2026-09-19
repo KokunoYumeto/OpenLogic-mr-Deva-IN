@@ -1,0 +1,142 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{ext}
+
+\olsection{विस्तारात्मकता}
+
+\begin{explain}
+विस्तारात्मकता, जिला कधीकधी संबद्धता म्हणतात, अनौपचारिकपणे पुढीलप्रमाणे
+व्यक्त करता येते: !!a{structure}~$\Struct M$ मध्ये !!a{variable} च्या
+मूल्यांकन~$s$ च्या सापेक्ष !!{formula}~$!A$ ची पूर्ति होण्यावर परिणाम
+करणारे घटक म्हणजे फक्त !!{domain} चा आकार आणि~$!A$ मध्ये प्रत्यक्ष
+येणाऱ्या भाषेच्या घटकांना~$\Struct M$ व~$s$ यांनी केलेल्या नेमणुका.
+
+विस्तारात्मकतेचा एक तात्काळ परिणाम असा आहे: दोन !!{structure}s
+$\Struct M$ आणि~$\Struct M'$ यांचा प्रांत एकच असेल आणि वाक्य~$!A$ मध्ये
+येणाऱ्या भाषेच्या सर्व घटकांबाबत त्या एकमत असतील, तर~$!A$ स्वतः सत्य
+आहे की नाही याबाबतही $\Struct M$ आणि~$\Struct M'$ एकमत असले पाहिजेत.
+\end{explain}
+
+\begin{prop}[विस्तारात्मकता]
+  \ollabel{prop:extensionality}
+  $!A$ हे !!a{formula}, $\Struct M_1$ व~$\Struct M_2$ या
+  $\Domain{M_1} = \Domain{M_2}$ असलेल्या !!{structure}s, आणि~$s$ हे
+  $\Domain{M_1} = \Domain{M_2}$ वरील चर-मूल्यांकन असू द्या. $!A$ मध्ये
+  येणारे प्रत्येक !!{constant}~$c$, संबंधचिन्ह~$R$ आणि !!{function}~$f$
+  यांसाठी $\Assign{c}{M_1} = \Assign{c}{M_2}$,
+  $\Assign{R}{M_1}=\Assign{R}{M_2}$ आणि
+  $\Assign{f}{M_1} = \Assign{f}{M_2}$ असेल, तर
+  $\Sat{M_1}{!A}[s]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\Sat{M_2}{!A}[s]$.
+\end{prop}
+
+\begin{proof}
+  प्रथम (पद~$t$ वरील विगमनाने) प्रत्येक पदासाठी
+  $\Value{t}{M_1}[s] = \Value{t}{M_2}[s]$ हे सिद्ध करा. मग नुकताच
+  सिद्ध केलेला दावा विगमनाच्या आधार बाबतीत ($!A$ आण्विक असताना) वापरून,
+  $!A$ वरील विगमनाने विधान सिद्ध करा.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ext]{prop:extensionality} ची सिद्धता सविस्तर पूर्ण करा.
+\end{prob}
+
+\begin{cor}[!!^{sentence}s साठी विस्तारात्मकता]
+  \ollabel{cor:extensionality-sent}
+  $!A$ हे !!a{sentence} आणि $\Struct{M_1}$, $\Struct{M_2}$ या
+  \olref{prop:extensionality} मधीलप्रमाणे असू द्या. मग
+  $\Sat{M_1}{!A}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Sat{M_2}{!A}$.
+\end{cor}
+
+\begin{proof}
+\olref{prop:extensionality} आणि \olref[ass]{cor:sat-sentence} यांवरून
+हे निष्पन्न होते.
+\end{proof}
+
+शिवाय, पदाचे मूल्य आणि !!a{structure} ही !!a{formula} ची पूर्ति करते की
+नाही, हे फक्त तिच्या उपपदांच्या मूल्यांवर अवलंबून असते.
+
+\begin{prop}\ollabel{prop:ext-terms}
+$\Struct M$ ही !!a{structure}, $t$ व~$t'$ ही पदे आणि $s$ हे
+चर-मूल्यांकन असू द्या. मग $\Value{\Subst{t}{t'}{x}}{M}[s] =
+\Value{t}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
+\end{prop}
+
+\begin{proof}
+$t$ वरील विगमनाने सिद्ध करू.
+\begin{enumerate}
+\item $t$ हे स्थिरचिन्ह, म्हणजे $t\ident c$, असेल, तर
+  $\Subst{t}{t'}{x} = c$ आणि $\Value{c}{M}[s] = \Assign{c}{M} =
+  \Value{c}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
+
+\item $t$ हे~$x$ शिवाय दुसरे चर, म्हणजे $t \ident y$, असेल, तर
+  $\Subst{t}{t'}{x} = y$ आणि
+  $\varAssign{s}{\Subst{s}{\Value{t'}{M}[s]}{x}}{x}$ असल्यामुळे
+  $\Value{y}{M}[s] =
+  \Value{y}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
+
+\item $t \ident x$ असेल, तर $\Subst{t}{t'}{x} = t'$. पण
+  $\Subst{s}{\Value{t'}{M}[s]}{x}$ च्या व्याख्येनुसार
+  $\Value{x}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}] = \Value{t'}{M}[s]$.
+
+\item $t \ident \Atom{f}{t_1,\dots,t_n}$ असेल, तर:
+\begin{multline*}
+  \Value{\Subst{t}{t'}{x}}{M}[s] \\
+  \begin{aligned}[b]
+& = \Value{\Atom{f}{\Subst{t_1}{t'}{x}, \dots, \Subst{t_n}{t'}{x}}}{M}[s]\\
+& \qquad    \text{$\Subst{t}{t'}{x}$ च्या व्याख्येनुसार}\\
+& = \Assign{f}{M}(\Value{\Subst{t_1}{t'}{x}}{M}[s], \dots,
+    \Value{\Subst{t_n}{t'}{x}}{M}[s])\\
+    & \qquad  \text{$\Value{\Atom{f}{\dots}}{M}[s]$ च्या व्याख्येनुसार}\\
+& = \Assign{f}{M}(\Value{t_1}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}], \dots,
+   \Value{t_n}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}])\\
+& \qquad    \text{विगमन गृहीतकानुसार}\\
+& = \Value{t}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]
+    \text{$\Value{\Atom{f}{\dots}}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$ च्या व्याख्येनुसार}
+  \end{aligned}
+\end{multline*}
+%READERNOTE{OLFOL-022: गोठवलेल्या इंग्रजी गणनेच्या पहिल्या ओळीच्या शेवटी आणि पुढील ओळीच्या सुरुवातीला सलग दोन समानताचिन्हे दिसतात. मराठी आवृत्तीत पहिल्या ओळीचे अनावश्यक चिन्ह काढले आहे.}
+\end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:ext-formulas} $\Struct M$ ही
+!!a{structure}, $!A$ हे !!a{formula}, $t'$ हे~A मध्ये~x साठी
+आदेशनासाठी मुक्त असलेले पद आणि $s$ हे चर-मूल्यांकन असू द्या. मग
+$\Sat{M}{\Subst{!A}{t'}{x}}[s]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat{M}{!A}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
+%READERNOTE{OLFOL-023: या प्रकरणातील सूत्र-आदेशनाची व्याख्या t' हे A मध्ये x साठी आदेशनासाठी मुक्त असतानाच लागू होते. गोठवलेल्या इंग्रजी विधानात ही आवश्यक पूर्वअट नसल्यामुळे मराठीत ती स्पष्टपणे जोडली आहे.}
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ext]{prop:ext-formulas} सिद्ध करा.
+\end{prob}
+
+\begin{explain}
+  \cref{fol:syn:ext:prop:ext-terms,fol:syn:ext:prop:ext-formulas} यांचा
+  आशय पुढीलप्रमाणे आहे. आपल्याजवळ पद~$t$ किंवा !!a{formula}~$!A$ आणि
+  दुसरे पद~$t'$ असून, $\Subst{t}{t'}{x}$ चे मूल्य किंवा
+  $\Subst{!A}{t'}{x}$ ची !!a{structure}~$\Struct M$ मध्ये
+  !!a{variable} च्या मूल्यांकन~$s$ च्या सापेक्ष पूर्ति होते की नाही हे
+  जाणून घ्यायचे आहे असे समजा. मग आपण प्रथम आदेशन करून नंतर
+  $\Struct{M}$ आणि~$s$ यांच्या सापेक्ष मूल्य किंवा पूर्ति विचारात घेऊ
+  शकतो; किंवा प्रथम~$\Struct{M}$ मध्ये~$s$ च्या सापेक्ष~$t'$ चे
+  मूल्य~$m = \Value{t'}{M}[s]$ ठरवून, !!{variable} चे मूल्यांकन
+  बदलून~$\Subst{s}{m}{x}$ करू शकतो, आणि नंतर~$\Struct{M}$ व
+  $\Subst{s}{m}{x}$ यांच्या सापेक्ष~$t$ चे मूल्य किंवा
+  $\Sat{M}{!A}[\Subst{s}{m}{x}]$ आहे की नाही हे विचारात घेऊ शकतो.
+  आपण यांपैकी कोणतीही पद्धत वापरली, तरी उत्तर एकच असेल, याची हमी
+  \Cref{fol:syn:ext:prop:ext-terms,fol:syn:ext:prop:ext-formulas}
+  देतात.
+\end{explain}
+
+\end{document}

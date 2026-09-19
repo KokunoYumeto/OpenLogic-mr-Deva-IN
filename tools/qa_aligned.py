@@ -205,6 +205,51 @@ _DOCUMENTED_PROJECTIONS = {
         ('$!A_j$ आणि~$!A_k$ ही\n$\\Frm[L]$ मध्ये',
          '$!A_j$ आणि~$!A_k$ ही\n$\\Frm[L_0]$ मध्ये'),
     ],
+    'OLP-0162': [
+        ('\\Value{\\times(\\Obj{two}, +(\\Obj{three},\\Obj{zero}))}{M} \\\\',
+         '\\Value{\\times(\\Obj{two}, +(\\Obj{three},\\Obj{zero}))}{M} =\\\\'),
+    ],
+    'OLP-0163': [
+        ('\\iftag{prvEx}{किमान एका $m \\in \\Domain{M}$ साठी '
+         '$\\Sat{M}{!B(m)}$}{प्रत्येक',
+         '\\iftag{prvEx}{किमान एका $m \\in \\Domain{M}$ साठी}{प्रत्येक'),
+        ('$\\tuple{1, 3} \\notin \\Assign{R}{M}$',
+         '$\\tuple{1, 3} \\notin \\Assign{R}{M}[s]$'),
+        ('$\\Sat/{M}{\\lforall[x][\\lnot(R(b,x) \\lor R(x,b))]}[s]$',
+         '$\\Sat/{M}{\\lforall[x][\\lnot((R(b,x) \\lor R(x,b))]}[s]$'),
+        ('$\\Sat{M}{\\lnot\\lforall[x][\\lnot(R(b,x) \\lor R(x,b))]}[s]$',
+         '$\\Sat{M}{\\lnot\\lforall[x][\\lnot((R(b,x) \\lor R(x,b))]}[s]$'),
+        ('\\Sat/{M}{\\lexists[x][(R(b,x) \\land R(x,b))]}[s].',
+         '\\Sat/{M}{\\lexists[x][(R(b,x) \\land R(x,b))],}[s].'),
+        ('$m = 2$, $3$ किंवा~$4$ साठी\n'
+         '  $\\Sat/{M}{R(x,a)}[\\Subst{s}{m}{x}]$',
+         '$m = 2$, $3$ किंवा~$4$ साठी\n'
+         '  $\\Sat/{M}{R(a,x)}[\\Subst{s}{m}{x}]$'),
+        ('रंजक प्रकरणे फक्त $m = 1$ आणि\n$m = 2$ ही आहेत.',
+         'रंजक प्रकरणे फक्त $m = 1$ आणि\n$ = 2$ ही आहेत.'),
+        ('प्रत्येक $m \\in \\Domain M$ साठी एकतर',
+         'प्रत्येक $n \\in \\Domain M$ साठी एकतर'),
+        ('आहे---पहिल्या मूल्यासाठी $n = 4$\nआणि दुसऱ्यासाठी $n = 1$---ज्यामुळे',
+         'आहे, म्हणजेच $n = 4$, ज्यामुळे'),
+    ],
+    'OLP-0164': [
+        ('\\langle \\Value{t_1}{M}[s_2], \\ldots, '
+         '\\Value{t_k}{M}[s_2] \\rangle\n    \\in \\Assign{R}{M}',
+         '\\langle \\Value{t_i}{M}[s_2], \\ldots, '
+         '\\Value{t_k}{M}[s_2] \\rangle\n    \\in \\Assign{R}{M}'),
+        ('म्हणून मनमाना $m \\in \\Domain{M}$ घेऊन\n'
+         '      $s_1\' = \\Subst{s_1}{m}{x}$ आणि $s_2\' =\n'
+         '      \\Subst{s_2}{m}{x}$ विचारात घ्या.',
+         'म्हणून मनमाना $m \\in \\Domain{M}$ घेऊन\n'
+         '      $s_1\' = \\Subst{s}{m}{x}$ आणि $s_2\' =\n'
+         '      \\Subst{s}{m}{x}$ विचारात घ्या.'),
+        ('$\\Gamma$ हा !!{sentence}s चा संच असेल',
+         '$\\Gamma$ हा !!{sentence}s चा संच~$\\Gamma$ असेल'),
+    ],
+    'OLP-0165': [
+        ('\\Value{\\Subst{t}{t\'}{x}}{M}[s] \\\\',
+         '\\Value{\\Subst{t}{t\'}{x}}{M}[s]  = \\\\'),
+    ],
 }
 
 

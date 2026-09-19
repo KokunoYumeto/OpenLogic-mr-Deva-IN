@@ -1,0 +1,110 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: Structures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{str}
+
+\olsection{प्रथम-क्रम भाषांसाठीच्या \printtoken{P}{structure}}
+
+\begin{explain}
+प्रथम-क्रम भाषांना स्वतःचा कोणताही \emph{अर्थ लावलेला नसतो:}
+!!{constant}s, !!{function}s आणि !!{predicate}s यांना कोणताही विशिष्ट
+अर्थ जोडलेला नसतो. एखादी \article{structure} \emph{!!{structure}}
+विनिर्दिष्ट करून अर्थ दिले जातात. ती \emph{प्रांत}, म्हणजे
+!!{constant}s ज्या वस्तू निर्देशित करतात, !!{function}s ज्यांवर क्रिया
+करतात आणि संख्यापक ज्या वस्तूंवर फिरतात त्या वस्तू विनिर्दिष्ट करते.
+याशिवाय, कोणते !!{constant}s कोणत्या वस्तू निर्देशित करतात,
+!!a{function} वस्तूंचे वस्तूंमध्ये प्रतिचित्रण कसे करते आणि !!{predicate}s
+कोणत्या वस्तूंना लागू होतात हे ती विनिर्दिष्ट करते. !!^{structure}s या
+तर्कशास्त्रातील \emph{चिन्हार्थविषयक} संकल्पनांचा---उदाहरणार्थ, तार्किक
+निष्पन्नता, वैधता आणि पूर्ततायोग्यता या संकल्पनांचा---आधार आहेत. साहित्यात त्यांना
+निरनिराळ्या ठिकाणी ``रचना,'' ``अर्थनिर्धारण'' किंवा ``प्रतिमान'' असे
+म्हटले जाते.
+\end{explain}
+
+\begin{defn}[!!^{structure}s]
+प्रथम-क्रम तर्कशास्त्राची भाषा~$\Lang{L}$ हिच्यासाठीची
+\Article{structure} \emph{!!{structure}}~$\Struct M$ पुढील घटकांनी बनते:
+\begin{enumerate}
+\item \emph{प्रांत:} अरिक्त संच~$\Domain M$.
+\item \emph{!!{constant}s चे अर्थनिर्धारण:} $\Lang{L}$ मधील प्रत्येक
+  !!{constant}~$c$ साठी !!a{element}~$\Assign{c}{M} \in \Domain M$.
+\item \emph{!!{predicate}s चे अर्थनिर्धारण:} $\Lang{L}$ मधील प्रत्येक
+  $n$-स्थानी !!{predicate}~$R$ साठी ($\eq$ सोडून) $n$-स्थानी संबंध
+  $\Assign{R}{M} \subseteq \Domain{M}^n$.
+\item \emph{!!{function}s चे अर्थनिर्धारण:} $\Lang{L}$ मधील प्रत्येक
+  $n$-स्थानी !!{function}~$f$ साठी $n$-स्थानी फलन
+  $\Assign{f}{M} \colon \Domain{M}^n \to \Domain{M}$.
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+अंकगणिताच्या भाषेसाठीच्या !!^a{structure}~$\Struct M$ मध्ये एक संच,
+!!{constant}~$\Obj 0$ चे अर्थनिर्धारण म्हणून $\Domain M$ मधील
+घटक~$\Assign{\Obj 0}{M}$, एकस्थानी फलन
+$\Assign{\Obj \prime}{M} \colon \Domain{M} \to \Domain M$,
+$\Domain M^2 \to \Domain M$ अशी दोन द्विस्थानी फलने
+$\Assign{\Obj +}{M}$ आणि $\Assign{\Obj \times}{M}$, तसेच द्विस्थानी
+संबंध~$\Assign{\Obj <}{M} \subseteq \Domain{M}^2$ असतात.
+
+अशा रचनेचे एक स्वाभाविक उदाहरण पुढीलप्रमाणे आहे:
+\begin{enumerate}
+\item $\Domain N = \Nat$
+\item $\Assign{\Obj 0}{N} = 0$
+\item प्रत्येक $n \in \Nat$ साठी $\Assign{\Obj \prime}{N}(n) = n + 1$
+\item प्रत्येक $n, m \in \Nat$ साठी $\Assign{\Obj +}{N}(n, m) = n + m$
+\item प्रत्येक $n, m \in \Nat$ साठी $\Assign{\Obj \times}{N}(n, m) = n\cdot m$
+\item $\Assign{\Obj <}{N} = \Setabs{\tuple{n, m}}{n \in \Nat, m \in
+  \Nat, n < m}$
+\end{enumerate}
+अशा रीतीने परिभाषित केलेल्या $\Lang L_A$ साठीच्या रचनेला~$\Struct N$
+\emph{अंकगणिताचे मानक प्रतिमान} म्हणतात, कारण ती~$\Lang L_A$ मधील
+अतार्किक चिन्हांचा अर्थ आपण अपेक्षा करू त्याच रीतीने लावते.
+
+तरीही, $\Lang L_A$ साठी इतर अनेक !!{structure}s शक्य आहेत. उदाहरणार्थ,
+प्रांत म्हणून~$\Nat$ ऐवजी पूर्णांकांचा संच~$\Int$ घेऊन $\Obj 0$,
+$\Obj \prime$, $\Obj +$, $\Obj \times$, $\Obj <$ यांची अर्थनिर्धारणे
+त्यानुसार परिभाषित करता येतील. पण संख्यांशी दुरान्वयानेही संबंध नसलेल्या
+$\Lang L_A$ साठीच्या रचनाही आपण परिभाषित करू शकतो.
+\end{ex}
+
+\begin{ex}
+संचसिद्धान्ताची भाषा~$\Lang L_Z$ हिच्यासाठीची रचना~$\Struct M$ हिला
+फक्त एक संच आणि एकच द्विस्थानी संबंध आवश्यक असतात. म्हणून तांत्रिकदृष्ट्या,
+उदाहरणार्थ, माणसांचा संच आणि ``$x$ हा~$y$ पेक्षा वयाने मोठा आहे'' हा संबंध
+$\Lang L_Z$ साठी !!a{structure} म्हणून वापरता येईल; त्याचप्रमाणे~$\Nat$
+आणि $n, m \in \Nat$ साठीचा $n \ge m$ हाही वापरता येईल.
+%READERNOTE{OLFOL-010: गोठवलेल्या इंग्रजी मजकुरातील ``single-two place relation'' हे जोडचिन्ह चुकीचे आहे; व्याख्येला आवश्यक असलेला एकच द्विस्थानी संबंध मराठीत स्पष्ट केला आहे.}
+
+$\Lang L_Z$ साठीची एक विशेष रोचक !!{structure}, जिच्या प्रांतातील
+!!{element}s प्रत्यक्षात संच आहेत आणि जिच्यात $\Obj \in$ चे अर्थनिर्धारण
+प्रत्यक्षात ``$x$ हा~$y$ चा !!a{element} आहे'' हा संबंध आहे, ती म्हणजे
+\emph{आनुवंशिकदृष्ट्या सांत संचांची} !!{structure}~$\Struct{{HF}}$:
+\begin{enumerate}
+\item $\Domain{{{HF}}} = \emptyset \cup \Pow{\emptyset} \cup
+  \Pow{\Pow{\emptyset}} \cup \Pow{\Pow{\Pow{\emptyset}}} \cup \dots$;
+\item $\Assign{\Obj \in}{{{HF}}} = \Setabs{\tuple{x, y}}{x, y \in
+  \Domain{{{HF}}}, x \in y}$.
+\end{enumerate}
+\end{ex}
+
+\begin{digress}
+!!a{structure} म्हणून काय गणले जाईल याविषयी आपण केलेल्या अटींचा आपल्या
+तर्कशास्त्रावर परिणाम होतो. उदाहरणार्थ, प्रांत अरिक्त ठेवण्याची निवड
+संख्यकीकृत वाक्यांच्या पूर्तिची (किंवा सत्यतेची) नेहमीची मांडणी गृहीत
+धरल्यास $\lexists[x][(!A(x) \lor \lnot !A(x))]$ वैध---म्हणजे तार्किक
+सत्य---असल्याची खात्री देते. तसेच, सर्व !!{constant}s नी प्रांतातील
+वस्तूच निर्देशित केली पाहिजे ही अट अस्तित्ववाची सामान्यीकरण हा
+निर्दोष अनुमान-रूपबंध असल्याची खात्री देते: $!A(a)$, म्हणून
+$\lexists[x][!A(x)]$. नावांना प्रांताबाहेरील वस्तू निर्देशित करण्याची
+किंवा काहीच निर्देशित न करण्याची मुभा दिली, तर आपण \emph{मुक्त
+तर्कशास्त्राच्या} दिशेने जाऊ; त्यात अस्तित्ववाची सामान्यीकरणासाठी एक
+अतिरिक्त आधारवाक्य लागते: $!A(a)$ आणि $\lexists[x][\eq[x][a]]$, म्हणून
+$\lexists[x][!A(x)]$.
+\end{digress}
+
+\end{document}

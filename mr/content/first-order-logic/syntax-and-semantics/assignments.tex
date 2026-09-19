@@ -1,0 +1,378 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: assignments
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{ass}
+
+\olsection{चर-मूल्यांकने}
+
+\begin{explain}
+!!{variable} चे मूल्यांकन~$s$ हे \emph{प्रत्येक} चराला मूल्य देते---आणि
+चरे अनंत असतात. अर्थात, हे आवश्यक नाही. आपण !!{variable} च्या
+मूल्यांकनांनी सर्व !!{variable}s ना मूल्ये नेमावीत अशी अट घालतो, कारण
+त्यामुळे गोष्टी खूप सोप्या होतात. पद~$t$ चे मूल्य आणि !!a{formula}~$!A$
+ची !!a{structure} मध्ये~$s$ च्या सापेक्ष पूर्ति होते की नाही, हे फक्त
+$t$ मध्ये येणाऱ्या !!{variable}s ना आणि~$!A$ च्या मुक्त !!{variable}s ना
+$s$ ने केलेल्या नेमणुकांवर अवलंबून असते. पुढील दोन विधानांचा आशय हाच
+आहे. “अवलंबून असणे” ही कल्पना नेमकी करण्यासाठी आपण दोन गोष्टी दाखवतो:
+$t$ मधील सर्व चरांवर एकमत असणारी कोणतीही दोन चर-मूल्यांकने तेच मूल्य
+देतात; आणि दोन चर-मूल्यांकने~$!A$ च्या सर्व मुक्त चरांवर एकमत असतील, तर
+$!A$ ची एकाच्या सापेक्ष पूर्ति होते तेव्हा आणि केवळ तेव्हाच तिची
+दुसऱ्याच्या सापेक्ष पूर्ति होते.
+\end{explain}
+
+\begin{prop}\ollabel{prop:valindep}
+पद~$t$ मधील !!{variable}s ही $x_1$, \dots,~$x_n$ यांपैकी असतील आणि
+$i = 1$, \dots,~$n$ साठी $s_1(x_i) = s_2(x_i)$ असेल, तर
+$\Value{t}{M}[s_1] = \Value{t}{M}[s_2]$.
+\end{prop}
+
+\begin{proof}
+$t$ च्या जटिलतेवरील विगमनाने सिद्ध करू. आधार बाबतीत~$t$ हे
+!!a{constant} किंवा $x_1$, \dots,~$x_n$ यांपैकी एखादे चर असू शकते.
+$t = c$ असेल, तर
+$\Value{t}{M}[s_1] = \Assign{c}{M} = \Value{t}{M}[s_2]$. $t = x_i$
+असेल, तर विधानाच्या गृहीतकानुसार $s_1(x_i) = s_2(x_i)$; म्हणून
+$\Value{t}{M}[s_1] = s_1(x_i) = s_2(x_i) = \Value{t}{M}[s_2]$.
+
+विगमन पायरीसाठी $t = \Atom{f}{t_1, \dots, t_k}$ असून दावा
+$t_1$, \dots, $t_k$ साठी खरा आहे असे समजू. मग
+\begin{align*}
+  \Value{t}{M}[s_1] & = \Value{\Atom{f}{t_1, \dots, t_k}}{M}[s_1] \\
+  & = \Assign{f}{M}(\Value{t_1}{M}[s_1], \dots, \Value{t_k}{M}[s_1]).
+\intertext{$j = 1$, \dots,~$k$ साठी~$t_j$ मधील !!{variable}s ही
+    $x_1$, \dots,~$x_n$ यांपैकी आहेत. विगमन गृहीतकानुसार
+    $\Value{t_j}{M}[s_1] = \Value{t_j}{M}[s_2]$. म्हणून,}
+\Value{t}{M}[s_1] & = \Value{\Atom{f}{t_1, \dots, t_k}}{M}[s_1] \\
+  & = \Assign{f}{M}(\Value{t_1}{M}[s_1], \dots, \Value{t_k}{M}[s_1]) \\
+  & = \Assign{f}{M}(\Value{t_1}{M}[s_2], \dots, \Value{t_k}{M}[s_2]) \\
+  & = \Value{\Atom{f}{t_1, \dots, t_k}}{M}[s_2] = \Value{t}{M}[s_2].
+\end{align*}
+\end{proof}
+
+\begin{prop}\ollabel{prop:satindep}
+$!A$ मधील मुक्त !!{variable}s ही $x_1$, \dots,~$x_n$ यांपैकी असतील आणि
+$i = 1$, \dots,~$n$ साठी $s_1(x_i) = s_2(x_i)$ असेल, तर
+$\Sat{M}{!A}[s_1]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat{M}{!A}[s_2]$.
+\end{prop}
+
+\begin{proof}
+$!A$ च्या जटिलतेवर विगमन वापरू. आधार बाबतीत~$!A$ हे आण्विक असते आणि
+$!A$ पुढीलपैकी असू शकते:
+\iftag{prvTrue}{$\ltrue$,}{}
+\iftag{prvFalse}{$\lfalse$,}{}
+$k$-स्थानी विधेय~$R$ आणि पदे $t_1$, \dots,~$t_k$ यांसाठी
+$\Atom{R}{t_1, \dots, t_k}$; किंवा पदे~$t_1$ व~$t_2$ यांसाठी
+$\eq[t_1][t_2]$. शेवटच्या दोन बाबतींत आपण !!{biconditional} ची फक्त
+पुढची दिशा दाखवतो, कारण उलट दिशेची सिद्धता सममित आहे.
+
+\begin{enumerate}
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{$\Sat{M}{\indfrm}[s_1]$ आणि
+    $\Sat{M}{\indfrm}[s_2]$ दोन्ही.}}{}
+
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{$\Sat/{M}{!A}[s_1]$ आणि
+    $\Sat/{M}{!A}[s_2]$ दोन्ही.}}{}
+
+\item
+  \indcase{!A}{\Atom{R}{t_1, \ldots, t_k}}{
+    $\Sat{M}{\indfrm}[s_1]$ असे समजू. मग
+    \[
+    \langle \Value{t_1}{M}[s_1], \ldots, \Value{t_k}{M}[s_1] \rangle
+    \in \Assign{R}{M}.
+    \]
+    $i = 1$, \dots,~$k$ साठी \olref{prop:valindep} नुसार
+    $\Value{t_i}{M}[s_1] = \Value{t_i}{M}[s_2]$. म्हणून आपल्याकडे
+    $\langle \Value{t_1}{M}[s_2], \ldots, \Value{t_k}{M}[s_2] \rangle
+    \in \Assign{R}{M}$ हेसुद्धा आहे; आणि म्हणून
+    $\Sat{M}{\indfrm}[s_2]$.
+    %READERNOTE{OLFOL-019: गोठवलेल्या इंग्रजी सिद्धतेतील दुसरी k-सदस्यीय क्रमित सूची t_i पासून सुरू होते आणि त्यामुळे i मुक्त राहतो. पहिल्या सूचीशी व घटकनिहाय समानतेशी जुळण्यासाठी मराठीत ती t_1 पासून सुरू केली आहे.}}
+\item
+  \indcase{!A}{\eq[t_1][t_2]}{$\Sat{M}{\indfrm}[s_1]$ असे समजू.
+    मग $\Value{t_1}{M}[s_1] = \Value{t_2}{M}[s_1]$. म्हणून,
+    \begin{align*}
+      \Value{t_1}{M}[s_2] & = \Value{t_1}{M}[s_1]
+      & \text{(\olref{prop:valindep} नुसार)} \\
+      & = \Value{t_2}{M}[s_1]
+      & \text{(कारण $\Sat{M}{\eq[t_1][t_2]}[s_1]$)}\\
+      &= \Value{t_2}{M}[s_2]
+      & \text{(\olref{prop:valindep} नुसार),}
+    \end{align*}
+    म्हणून $\Sat{M}{\eq[t_1][t_2]}[s_2]$.}
+\end{enumerate}
+
+आता~$!A$ पेक्षा कमी जटिल असलेल्या सर्व !!{formula}s~$!B$ साठी
+$\Sat{M}{!B}[s_1]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat{M}{!B}[s_2]$, असे समजू. विगमन पायरी~$!A$ च्या मुख्य कारकाने
+ठरणाऱ्या बाबींनुसार पुढे जाते. प्रत्येक बाबतीत आपण !!{biconditional} ची
+फक्त पुढची दिशा दाखवतो; उलट दिशेची सिद्धता सममित आहे. संख्यापकांच्या
+बाबी सोडून इतर सर्व बाबतींत आपण~$!A$ च्या उप-!!{formula}s~$!B$ ना
+विगमन गृहीतक लावतो. $!B$ ची मुक्त चरे ही~$!A$ च्या मुक्त चरांपैकी
+असतात. त्यामुळे $s_1$ व~$s_2$ ही~$!A$ च्या मुक्त चरांवर एकमत असतील,
+तर ती~$!B$ च्या मुक्त चरांवरही एकमत असतात आणि विगमन गृहीतक~$!B$ ला
+लागू होते.
+
+\begin{enumerate}
+\tagitem{defNot}{}{%
+  \iftag{probNot}{%
+    \indcase!{!A}{\lnot !B}{}}{%
+    \indcase{!A}{\lnot !B}{$\Sat{M}{\indfrm}[s_1]$ असेल, तर
+      $\Sat/{M}{!B}[s_1]$; म्हणून विगमन गृहीतकानुसार
+      $\Sat/{M}{!B}[s_2]$ आणि त्यामुळे $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defAnd}{}{%
+  \iftag{probAnd}{%
+    \indcase!{!A}{!B \land !C}{}}{%
+    \indcase{!A}{!B \land !C}{$\Sat{M}{\indfrm}[s_1]$ असेल, तर
+      $\Sat{M}{!B}[s_1]$ आणि $\Sat{M}{!C}[s_1]$; म्हणून विगमन
+      गृहीतकानुसार $\Sat{M}{!B}[s_2]$ आणि $\Sat{M}{!C}[s_2]$.
+      त्यामुळे $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defOr}{}{%
+  \iftag{probOr}{%
+    \indcase!{!A}{!B \lor !C}{}}{%
+    \indcase{!A}{!B \lor !C}{$\Sat{M}{\indfrm}[s_1]$ असेल, तर
+      $\Sat{M}{!B}[s_1]$ किंवा $\Sat{M}{!C}[s_1]$. विगमन गृहीतकानुसार
+      $\Sat{M}{!B}[s_2]$ किंवा $\Sat{M}{!C}[s_2]$; म्हणून
+      $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defIf}{}{%
+  \iftag{probIf}{%
+    \indcase!{!A}{!B \lif !C}{}}{%
+    \indcase{!A}{!B \lif !C}{$\Sat{M}{\indfrm}[s_1]$ असेल, तर
+    $\Sat/{M}{!B}[s_1]$ किंवा $\Sat{M}{!C}[s_1]$. विगमन गृहीतकानुसार
+    $\Sat/{M}{!B}[s_2]$ किंवा $\Sat{M}{!C}[s_2]$; म्हणून
+    $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defIff}{}{%
+  \iftag{probIff}{%
+    \indcase!{!A}{!B \liff !C}{}}{%
+    \indcase{!A}{!B \liff !C}{$\Sat{M}{\indfrm}[s_1]$ असेल, तर एकतर
+      $\Sat{M}{!B}[s_1]$ आणि $\Sat{M}{!C}[s_1]$, किंवा
+      $\Sat/{M}{!B}[s_1]$ आणि $\Sat/{M}{!C}[s_1]$. विगमन गृहीतकानुसार
+      एकतर $\Sat{M}{!B}[s_2]$ आणि $\Sat{M}{!C}[s_2]$, किंवा
+      $\Sat/{M}{!B}[s_2]$ आणि $\Sat/{M}{!C}[s_2]$. दोन्हींपैकी
+      कोणतीही बाब असली, तरी $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defEx}{}{%
+  \iftag{probEx}{%
+    \indcase!{!A}{\lexists[x][!B]}{}}{%
+    \indcase{!A}{\lexists[x][!B]}{$\Sat{M}{\indfrm}[s_1]$ असेल, तर असा
+      एक $m \in \Domain{M}$ असतो की $\Sat{M}{!B}[\Subst{s_1}{m}{x}]$.
+      $s_1' = \Subst{s_1}{m}{x}$ आणि $s_2' =
+      \Subst{s_2}{m}{x}$ असू द्या. $!B$ ची मुक्त चरे
+      $x_1$, \dots, $x_n$ आणि~$x$ यांपैकी आहेत. $s_1'$ आणि~$s_2'$ हे
+      अनुक्रमे $s_1$ व~$s_2$ यांचे $x$-पर्याय असल्यामुळे आणि गृहीतकानुसार
+      $s_1(x_i) = s_2(x_i)$ असल्यामुळे $s_1'(x_i) = s_2'(x_i)$.
+      $s_1'$ आणि~$s_2'$ आपण ज्या रीतीने परिभाषित केली आहे, तिच्यामुळे
+      $s_1'(x) = s_2'(x) = m$. मग~$!B$ आणि $s_1'$, $s_2'$ यांना विगमन
+      गृहीतक लागू होते; म्हणून $\Sat{M}{!B}[s_2']$. $s_2' =
+      \Subst{s_2}{m}{x}$ असल्यामुळे असा एक $m \in \Domain{M}$ आहे की
+      $\Sat{M}{!B}[\Subst{s_2}{m}{x}]$; म्हणून
+      $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defAll}{}{%
+  \iftag{probAll}{%
+    \indcase!{!A}{\lforall[x][!B]}{}}{%
+    \indcase{!A}{\lforall[x][!B]}{$\Sat{M}{\indfrm}[s_1]$ असेल, तर
+      प्रत्येक $m \in \Domain{M}$ साठी
+      $\Sat{M}{!B}[\Subst{s_1}{m}{x}]$. प्रत्येक
+      $m \in \Domain{M}$ साठी $\Sat{M}{!B}[\Subst{s_2}{m}{x}]$
+      हेसुद्धा दाखवायचे आहे. म्हणून मनमाना $m \in \Domain{M}$ घेऊन
+      $s_1' = \Subst{s_1}{m}{x}$ आणि $s_2' =
+      \Subst{s_2}{m}{x}$ विचारात घ्या. आपल्याकडे
+      $\Sat{M}{!B}[s_1']$. $!B$ ची मुक्त चरे $x_1$, \dots, $x_n$
+      आणि~$x$ यांपैकी आहेत. $s_1'$ आणि~$s_2'$ हे अनुक्रमे $s_1$
+      व~$s_2$ यांचे $x$-पर्याय असल्यामुळे आणि गृहीतकानुसार
+      $s_1(x_i) = s_2(x_i)$ असल्यामुळे $s_1'(x_i) = s_2'(x_i)$.
+      $s_1'$ आणि~$s_2'$ आपण ज्या रीतीने परिभाषित केली आहे, तिच्यामुळे
+      $s_1'(x) = s_2'(x) = m$. मग~$!B$ आणि~$s_1'$, $s_2'$ यांना विगमन
+      गृहीतक लागू होते आणि आपल्याकडे $\Sat{M}{!B}[s_2']$. हे प्रत्येक
+      $m \in \Domain{M}$ ला लागू होते, म्हणजे सर्व~$m \in \Domain{M}$
+      साठी $\Sat{M}{!B}[\Subst{s_2}{m}{x}]$; म्हणून
+      $\Sat{M}{\indfrm}[s_2]$.
+      %READERNOTE{OLFOL-020: गोठवलेल्या इंग्रजी वैश्विक बाबतीत s_1' आणि s_2' ही दोन्ही अपरिभाषित s पासून बनवली आहेत. पुढील पर्याय व एकमत दाव्यांना आवश्यक असल्याप्रमाणे मराठीत ती अनुक्रमे s_1 आणि s_2 पासून बनवली आहेत.}}}
+\end{enumerate}
+विगमनाने आपल्याला पुढील निष्कर्ष मिळतो: $!A$ मधील मुक्त !!{variable}s
+ही $x_1$, \dots, $x_n$ यांपैकी असतील आणि $i = 1$, \dots,~$n$ साठी
+$s_1(x_i)=s_2(x_i)$ असेल, तेव्हा $\Sat{M}{!A}[s_1]$ तेव्हा आणि केवळ
+तेव्हाच, जेव्हा $\Sat{M}{!A}[s_2]$.
+\end{proof}
+
+\begin{probtag}{probNot,probOr,probAnd,probIf,probIff,probEx,probAll}
+\olref[fol][syn][ass]{prop:satindep} ची सिद्धता पूर्ण करा.
+\end{probtag}
+
+\begin{explain}
+!!^{sentence}s मध्ये मुक्त चरे नसतात; म्हणून कोणतीही दोन चर-मूल्यांकने
+कोणत्याही वाक्याच्या सर्व (शून्य) मुक्त चरांना त्याच गोष्टी नेमून देतात.
+आत्ताच सिद्ध केलेल्या विधानाचा अर्थ मग असा होतो की !!a{sentence} ची
+एखाद्या रचनेत चर-मूल्यांकनाच्या सापेक्ष पूर्ति होते की नाही, हे पूर्णपणे
+त्या मूल्यांकनापासून स्वतंत्र असते. हे तथ्य आपण नोंदवू. पुढे येणारी
+!!a{sentence} ची !!a{structure} मधील पूर्तिची व्याख्या (चर-मूल्यांकनाचा
+उल्लेख न करता) त्यामुळे समर्थित होते.
+\end{explain}
+
+\begin{cor}
+\ollabel{cor:sat-sentence}
+$!A$ हे !!a{sentence} आणि $s$ हे चर-मूल्यांकन असेल, तर प्रत्येक
+चर-मूल्यांकन~$s'$ साठी $\Sat{M}{!A}[s]$ तेव्हा आणि केवळ तेव्हाच,
+जेव्हा $\Sat{M}{!A}[s']$.
+\end{cor}
+
+\begin{proof}
+  $s'$ हे कोणतेही चर-मूल्यांकन असू द्या. $!A$ हे !!a{sentence}
+  असल्यामुळे त्यात मुक्त चरे नाहीत; म्हणून प्रत्येक चर-मूल्यांकन~$s'$
+  हे~$!A$ च्या सर्व मुक्त चरांना~$s$ सारख्याच गोष्टी आपोआप नेमून देते.
+  त्यामुळे \olref{prop:satindep} ची अट पूर्ण होते आणि
+  $\Sat{M}{!A}[s]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\Sat{M}{!A}[s']$.
+\end{proof}
+
+\begin{defn}
+\ollabel{defn:satisfaction}
+$!A$ हे !!a{sentence} असेल, तर !!a{structure}~$\Struct M$ ही~$!A$ ची
+\emph{पूर्ति करते}, $\Sat{M}{!A}$, असे आपण तेव्हा आणि केवळ तेव्हाच
+म्हणतो, जेव्हा सर्व चर-मूल्यांकने~$s$ साठी $\Sat{M}{!A}[s]$.
+\end{defn}
+
+$\Sat{M}{!A}$ असेल, तर आपण सरळ \emph{$!A$ हे~$\Struct{M}$ मध्ये सत्य
+आहे} असेही म्हणतो. पूर्तिची संकल्पना स्वतंत्र !!{sentence}s पासून
+!!{sentence}s च्या संचांपर्यंत स्वाभाविकपणे विस्तारते.
+
+\begin{defn}
+\ollabel{defn:sat}
+$\Gamma$ हा !!{sentence}s चा संच असेल, तर !!a{structure}~$\Struct M$
+ही~$\Gamma$ ची \emph{पूर्ति करते}, $\Sat{M}{\Gamma}$, असे आपण तेव्हा
+आणि केवळ तेव्हाच म्हणतो, जेव्हा प्रत्येक $!A \in \Gamma$ साठी
+$\Sat{M}{!A}$.
+%READERNOTE{OLFOL-021: गोठवलेल्या इंग्रजी व्याख्येच्या सुरुवातीच्या नामपदबंधात Gamma सलग दोनदा आले आहे. अर्थ न बदलणारी दुसरी पुनरावृत्ती मराठीत काढली आहे.}
+\end{defn}
+
+\begin{prop}\ollabel{prop:sentence-sat-true}
+  $\Struct{M}$ ही !!a{structure}, $!A$ हे !!a{sentence} आणि $s$ हे
+  चर-मूल्यांकन असू द्या. $\Sat{M}{!A}$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\Sat{M}{!A}[s]$.
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ass]{prop:sentence-sat-true} सिद्ध करा.
+\end{prob}
+
+\begin{prop}\ollabel{prop:sat-quant}
+  $!A(x)$ मध्ये फक्त~$x$ मुक्त येतो आणि $\Struct M$ ही
+  !!a{structure} आहे असे समजा. मग:
+  \begin{tagenumerate}{prvEx,prvAll}
+    \tagitem{prvEx}{$\Sat{M}{\lexists[x][!A(x)]}$ तेव्हा आणि केवळ
+      तेव्हाच, जेव्हा किमान एका चर-मूल्यांकन~$s$ साठी
+      $\Sat{M}{!A(x)}[s]$.}{}
+    \tagitem{prvAll}{$\Sat{M}{\lforall[x][!A(x)]}$ तेव्हा आणि केवळ
+      तेव्हाच, जेव्हा सर्व चर-मूल्यांकने~$s$ साठी
+      $\Sat{M}{!A(x)}[s]$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ass]{prop:sat-quant} सिद्ध करा.
+\end{prob}
+
+\begin{prob}
+\DeclareRobustCommand{\VDash}{\mathrel{||}\joinrel\Relbar}
+$\Lang L$ ही !!{function}s नसलेली भाषा आहे असे समजा. !!{structure}~$\Struct M$,
+!!a{constant}~$c$ आणि $a \in \Domain M$ दिले असता, $\Struct M[a/c]$
+ही~$\Struct M$ सारखीच !!{structure} आहे, फक्त
+$\Assign{c}{M[a/c]} = a$, अशी व्याख्या करा. !!{sentence}s~$!A$ साठी
+$\Struct M \VDash !A$ ची पुढीलप्रमाणे व्याख्या करा:
+\begin{enumerate}
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{$\Struct{M} \VDash \indfrm$ नाही.}}{}
+
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{$\Struct{M} \VDash \indfrm$.}}{}
+
+\item \indcase{!A}{\Atom{R}{d_1, \dots, d_n}}{$\Struct M \VDash \indfrm$
+  तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\langle \Assign{d_1}{M}, \dots, \Assign{d_n}{M} \rangle \in
+  \Assign{R}{M}$.}
+
+\item \indcase{!A}{\eq[d_1][d_2]}{$\Struct M \VDash \indfrm$ तेव्हा
+  आणि केवळ तेव्हाच, जेव्हा
+  $\Assign{d_1}{M} = \Assign{d_2}{M}$.}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}{$\Struct{M} \VDash \indfrm$ तेव्हा आणि केवळ
+    तेव्हाच, जेव्हा $\Struct{M} \VDash {!B}$ नाही.}}{}
+
+\tagitem{prvAnd}{%
+  \indcase{!A}{(!B \land !C)}{$\Struct{M} \VDash
+    \indfrm$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $\Struct{M} \VDash!B$ आणि $\Struct{M} \VDash !C$.}}{}
+
+\tagitem{prvOr}{%
+  \indcase{!A}{(!B \lor !C)}{$\Struct{M} \VDash \indfrm$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $\Struct{M} \VDash !B$ किंवा
+    $\Struct{M} \VDash !C$ (किंवा दोन्ही).}}{}
+
+\tagitem{prvIf}{%
+  \indcase{!A}{(!B \lif !C)}{$\Struct{M} \VDash \indfrm$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $\Struct {M} \VDash !B$ नाही किंवा
+    $\Struct M \VDash !C$ (किंवा दोन्ही).}}{}
+
+\tagitem{prvIff}{%
+  \indcase{!A}{(!B \liff !C)}{$\Struct{M} \VDash {\indfrm}$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा एकतर $\Struct{M} \VDash {!B}$ आणि
+    $\Struct{M} \VDash {!C}$ दोन्ही, किंवा $\Struct{M} \VDash {!B}$ व
+    $\Struct{M} \VDash {!C}$ यांपैकी एकही नाही.}}{}
+
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[x][!B]}{$\Struct{M} \VDash {\indfrm}$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा प्रत्येक $a \in \Domain{M}$ साठी
+    $\Struct{M[a/c]} \VDash \Subst{!B}{c}{x}$, जर~$!B$ मध्ये~$c$ येत
+    नसेल.}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[x][!B]}{$\Struct{M} \VDash
+  {\indfrm}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा असा एक $a \in \Domain M$
+  आहे की $\Struct{M[a/c]} \VDash \Subst{!B}{c}{x}$, जर~$!B$ मध्ये~$c$
+  येत नसेल.}}{}
+\end{enumerate}
+$x_1$, \dots, $x_n$ ही~$!A$ मधील सर्व मुक्त !!{variable}s,
+$c_1$, \dots, $c_n$ ही~$!A$ मध्ये नसलेली स्थिरचिन्हे,
+$a_1$, \dots, $a_n \in \Domain M$ आणि $s(x_i) = a_i$ असू द्या.
+
+$\Sat{M}{!A}[s]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Struct M[a_1/c_1,\dots,a_n/c_n]
+\VDash \Subst{\Subst{!A}{c_1}{x_1}\dots}{c_n}{x_n}$, हे दाखवा.
+
+(या प्रश्नावरून असे दिसते की प्रथम-क्रम तर्कशास्त्राची चिन्हार्थमीमांसा
+चर-मूल्यांकनांविना देणे शक्य आहे.)
+\end{prob}
+
+\begin{prob}
+$f$ हे~$!A(x,y)$ मध्ये नसलेले फलनचिन्ह आहे असे समजा. अशी
+!!a{structure}~$\Struct{M}$ आहे की
+$\Sat{M}{\lforall[x][\lexists[y][!A(x,y)]]}$, तेव्हा आणि केवळ तेव्हाच
+अशी~$\Struct M'$ आहे की
+$\Sat{M'}{\lforall[x][!A(x,f(x))]}$, हे दाखवा.
+
+(हा प्रश्न स्कोलेमचे प्रमेय म्हणून परिचित असलेल्या प्रमेयाची एक विशेष
+बाब आहे; $\lforall[x][!A(x,f(x))]$ याला
+$\lforall[x][\lexists[y][!A(x,y)]]$ चे \emph{स्कोलेम सामान्य रूप}
+म्हणतात.)
+\end{prob}
+
+\end{document}
