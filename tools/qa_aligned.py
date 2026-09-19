@@ -254,6 +254,10 @@ _DOCUMENTED_PROJECTIONS = {
         ("$\\lexists[\\Obj\n  v_3][\\eq[(\\Obj v_1 + {\\Obj v_3}')][\\Obj v_2]]$",
          "$\\lexists[\\Obj\n  v_3][\\eq[(\\Obj v_1 + {\\Obj v_3}')][v_2]]$"),
     ],
+    'OLP-0178': [
+        ('प्रकार~$\\tau$ च्या कोणत्याही~$x$ साठी',
+         'प्रकार~$\\sigma$ च्या कोणत्याही~$x$ साठी'),
+    ],
 }
 
 

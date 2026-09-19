@@ -2,14 +2,14 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **170/722 source units**, 1847 aligned translated blocks, 10216 review occurrences. The referenced development reader has 157 pages and SHA-256 bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450; it is not a final accessible release.
+Current scope: **178/722 source units**, 1911 aligned translated blocks, 10616 review occurrences. The referenced development reader has 157 pages and SHA-256 bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
 [Decision ledger](EXPERT_REVIEW_LOG.md) · [Priority view](EXPERT_REVIEW_PRIORITY.md) · [CSV](EXPERT_REVIEW_OCCURRENCES.csv) · [Machine JSONL](EXPERT_REVIEW_OCCURRENCES.jsonl)
 
 <details>
-<summary><strong>T001 — set</strong> (401 occurrences; routine priority)</summary>
+<summary><strong>T001 — set</strong> (405 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -414,6 +414,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T001-OLP-0172-B011 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:112-129](../upstream/content/first-order-logic/models-theories/set-theory.tex#L112) | [mr/content/first-order-logic/models-theories/set-theory.tex:108-127](../mr/content/first-order-logic/models-theories/set-theory.tex#L108) | not yet paginated |
 | T001-OLP-0172-B012 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:131-147](../upstream/content/first-order-logic/models-theories/set-theory.tex#L131) | [mr/content/first-order-logic/models-theories/set-theory.tex:129-145](../mr/content/first-order-logic/models-theories/set-theory.tex#L129) | not yet paginated |
 | T001-OLP-0172-B013 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:149-171](../upstream/content/first-order-logic/models-theories/set-theory.tex#L149) | [mr/content/first-order-logic/models-theories/set-theory.tex:147-169](../mr/content/first-order-logic/models-theories/set-theory.tex#L147) | not yet paginated |
+| T001-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
+| T001-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T001-OLP-0177-B013 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L183) | [mr/content/first-order-logic/beyond/second-order-logic.tex:172-190](../mr/content/first-order-logic/beyond/second-order-logic.tex#L172) | not yet paginated |
+| T001-OLP-0178-B006 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** संच
 
@@ -424,7 +428,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T002 — element/member</strong> (314 occurrences; routine priority)</summary>
+<summary><strong>T002 — element/member</strong> (318 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -742,6 +746,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T002-OLP-0173-B006 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:13-19](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L13) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:13-18](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L13) | not yet paginated |
 | T002-OLP-0173-B007 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:21-35](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L21) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:20-35](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L20) | not yet paginated |
 | T002-OLP-0173-B009 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:39-54](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L39) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:39-54](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L39) | not yet paginated |
+| T002-OLP-0176-B006 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:13-17](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L13) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:13-17](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L13) | not yet paginated |
+| T002-OLP-0176-B009 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:44-64](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L44) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:42-63](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L42) | not yet paginated |
+| T002-OLP-0177-B009 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:83-98](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L83) | [mr/content/first-order-logic/beyond/second-order-logic.tex:78-91](../mr/content/first-order-logic/beyond/second-order-logic.tex#L78) | not yet paginated |
+| T002-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
 
 **Chosen rendering/action:** घटक / सदस्य
 
@@ -916,7 +924,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T004 — extensionality</strong> (76 occurrences; medium priority)</summary>
+<summary><strong>T004 — extensionality</strong> (77 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -996,6 +1004,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T004-OLP-0165-B012 | OLP-0165 ·  | [upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:57-59](../upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex#L57) | [mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:57-60](../mr/content/first-order-logic/syntax-and-semantics/extensionality.tex#L57) | not yet paginated |
 | T004-OLP-0170-B011 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:71-88](../upstream/content/first-order-logic/models-theories/theories.tex#L71) | [mr/content/first-order-logic/models-theories/theories.tex:70-86](../mr/content/first-order-logic/models-theories/theories.tex#L70) | not yet paginated |
 | T004-OLP-0172-B007 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:31-55](../upstream/content/first-order-logic/models-theories/set-theory.tex#L31) | [mr/content/first-order-logic/models-theories/set-theory.tex:30-54](../mr/content/first-order-logic/models-theories/set-theory.tex#L30) | not yet paginated |
+| T004-OLP-0180-B009 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:50-65](../upstream/content/first-order-logic/beyond/modal-logics.tex#L50) | [mr/content/first-order-logic/beyond/modal-logics.tex:45-59](../mr/content/first-order-logic/beyond/modal-logics.tex#L45) | not yet paginated |
 
 **Chosen rendering/action:** विस्तारात्मकता
 
@@ -1006,7 +1015,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T005 — subset</strong> (250 occurrences; routine priority)</summary>
+<summary><strong>T005 — subset</strong> (254 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1260,6 +1269,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T005-OLP-0171-B013 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L101) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L103) | not yet paginated |
 | T005-OLP-0172-B007 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:31-55](../upstream/content/first-order-logic/models-theories/set-theory.tex#L31) | [mr/content/first-order-logic/models-theories/set-theory.tex:30-54](../mr/content/first-order-logic/models-theories/set-theory.tex#L30) | not yet paginated |
 | T005-OLP-0172-B008 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:57-71](../upstream/content/first-order-logic/models-theories/set-theory.tex#L57) | [mr/content/first-order-logic/models-theories/set-theory.tex:56-68](../mr/content/first-order-logic/models-theories/set-theory.tex#L56) | not yet paginated |
+| T005-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T005-OLP-0177-B012 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L169) | [mr/content/first-order-logic/beyond/second-order-logic.tex:159-170](../mr/content/first-order-logic/beyond/second-order-logic.tex#L159) | not yet paginated |
+| T005-OLP-0178-B006 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L13) | not yet paginated |
+| T005-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
 
 **Chosen rendering/action:** उपसंच
 
@@ -1270,7 +1283,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T006 — proper subset</strong> (23 occurrences; high priority)</summary>
+<summary><strong>T006 — proper subset</strong> (24 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1297,6 +1310,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T006-OLP-0059-B010 | OLP-0059 · 7.3 पूर्वतयारी | [upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:50-52](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L50) | [mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:50-52](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L50) | 77–79 |
 | T006-OLP-0059-B011 | OLP-0059 · 7.3 पूर्वतयारी | [upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:54-56](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L54) | [mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:54-56](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L54) | 77–79 |
 | T006-OLP-0060-B016 | OLP-0060 · 7.4 रचनाक्रमिका | [upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:126-151](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex#L126) | [mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:122-147](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex#L122) | 79–80 |
+| T006-OLP-0177-B012 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L169) | [mr/content/first-order-logic/beyond/second-order-logic.tex:159-170](../mr/content/first-order-logic/beyond/second-order-logic.tex#L159) | not yet paginated |
 
 **Chosen rendering/action:** उचित उपसंच
 
@@ -1374,7 +1388,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T008 — natural numbers</strong> (163 occurrences; routine priority)</summary>
+<summary><strong>T008 — natural numbers</strong> (168 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1541,6 +1555,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T008-OLP-0171-B009 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L55) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:55-69](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L55) | not yet paginated |
 | T008-OLP-0171-B011 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:80-88](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L80) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:82-90](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L82) | not yet paginated |
 | T008-OLP-0171-B013 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L101) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L103) | not yet paginated |
+| T008-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T008-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
+| T008-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+| T008-OLP-0179-B007 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:19-26](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L19) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:18-23](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L18) | not yet paginated |
+| T008-OLP-0179-B008 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:28-30](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L28) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:25-26](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L25) | not yet paginated |
 
 **Chosen rendering/action:** नैसर्गिक संख्या
 
@@ -1551,7 +1570,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T009 — formal validity</strong> (78 occurrences; routine priority)</summary>
+<summary><strong>T009 — formal validity</strong> (83 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1633,6 +1652,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T009-OLP-0166-B010 | OLP-0166 ·  | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:48-52](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L48) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:49-52](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L49) | not yet paginated |
 | T009-OLP-0166-B011 | OLP-0166 ·  | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:54-59](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L54) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:54-60](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L54) | not yet paginated |
 | T009-OLP-0170-B014 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:108-141](../upstream/content/first-order-logic/models-theories/theories.tex#L108) | [mr/content/first-order-logic/models-theories/theories.tex:107-138](../mr/content/first-order-logic/models-theories/theories.tex#L107) | not yet paginated |
+| T009-OLP-0179-B013 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:61-72](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L61) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:53-63](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L53) | not yet paginated |
+| T009-OLP-0179-B018 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:128-133](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L128) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:113-118](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L113) | not yet paginated |
+| T009-OLP-0179-B021 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:159-164](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L159) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:143-147](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L143) | not yet paginated |
+| T009-OLP-0179-B025 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L163) | not yet paginated |
+| T009-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
 
 **Chosen rendering/action:** वैधता
 
@@ -1643,7 +1667,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T010 — truth / truth value</strong> (99 occurrences; routine priority)</summary>
+<summary><strong>T010 — truth / truth value</strong> (104 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1746,6 +1770,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T010-OLP-0161-B013 | OLP-0161 ·  | [upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107](../upstream/content/first-order-logic/syntax-and-semantics/structures.tex#L94) | [mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108](../mr/content/first-order-logic/syntax-and-semantics/structures.tex#L95) | not yet paginated |
 | T010-OLP-0168-B010 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:49-98](../upstream/content/first-order-logic/models-theories/introduction.tex#L49) | [mr/content/first-order-logic/models-theories/introduction.tex:50-97](../mr/content/first-order-logic/models-theories/introduction.tex#L50) | not yet paginated |
 | T010-OLP-0169-B008 | OLP-0169 ·  | [upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63](../upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex#L45) | [mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64](../mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex#L44) | not yet paginated |
+| T010-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
+| T010-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
+| T010-OLP-0178-B009 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L95) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L95) | not yet paginated |
+| T010-OLP-0179-B007 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:19-26](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L19) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:18-23](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L18) | not yet paginated |
+| T010-OLP-0179-B008 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:28-30](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L28) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:25-26](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L25) | not yet paginated |
 
 **Chosen rendering/action:** सत्यता / सत्यतामूल्य
 
@@ -1786,7 +1815,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T012 — semantics</strong> (38 occurrences; medium priority)</summary>
+<summary><strong>T012 — semantics</strong> (48 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1828,6 +1857,16 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T012-OLP-0160-B006 | OLP-0160 ·  | [upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33](../upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L13) | [mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33](../mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L13) | not yet paginated |
 | T012-OLP-0160-B007 | OLP-0160 ·  | [upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45](../upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L35) | [mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46](../mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L35) | not yet paginated |
 | T012-OLP-0161-B006 | OLP-0161 ·  | [upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26](../upstream/content/first-order-logic/syntax-and-semantics/structures.tex#L13) | [mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27](../mr/content/first-order-logic/syntax-and-semantics/structures.tex#L13) | not yet paginated |
+| T012-OLP-0175-B006 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:13-21](../upstream/content/first-order-logic/beyond/introduction.tex#L13) | [mr/content/first-order-logic/beyond/introduction.tex:13-21](../mr/content/first-order-logic/beyond/introduction.tex#L13) | not yet paginated |
+| T012-OLP-0177-B009 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:83-98](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L83) | [mr/content/first-order-logic/beyond/second-order-logic.tex:78-91](../mr/content/first-order-logic/beyond/second-order-logic.tex#L78) | not yet paginated |
+| T012-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
+| T012-OLP-0177-B014 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L204) | [mr/content/first-order-logic/beyond/second-order-logic.tex:192-196](../mr/content/first-order-logic/beyond/second-order-logic.tex#L192) | not yet paginated |
+| T012-OLP-0177-B015 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | not yet paginated |
+| T012-OLP-0178-B010 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:102-112](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L102) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:102-111](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L102) | not yet paginated |
+| T012-OLP-0179-B025 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L163) | not yet paginated |
+| T012-OLP-0179-B026 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L186) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L168) | not yet paginated |
+| T012-OLP-0180-B009 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:50-65](../upstream/content/first-order-logic/beyond/modal-logics.tex#L50) | [mr/content/first-order-logic/beyond/modal-logics.tex:45-59](../mr/content/first-order-logic/beyond/modal-logics.tex#L45) | not yet paginated |
+| T012-OLP-0181-B006 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:13-20](../upstream/content/first-order-logic/beyond/other-logics.tex#L13) | [mr/content/first-order-logic/beyond/other-logics.tex:13-19](../mr/content/first-order-logic/beyond/other-logics.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** चिन्हार्थमीमांसा
 
@@ -1838,7 +1877,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T013 — model (model theory)</strong> (65 occurrences; high priority)</summary>
+<summary><strong>T013 — model (model theory)</strong> (67 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1907,6 +1946,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T013-OLP-0171-B010 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L69) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L71) | not yet paginated |
 | T013-OLP-0173-B010 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:56-61](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L56) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:56-62](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L56) | not yet paginated |
 | T013-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
+| T013-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T013-OLP-0177-B015 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | not yet paginated |
 
 **Chosen rendering/action:** प्रतिमान
 
@@ -2378,7 +2419,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T020 — ordered pair</strong> (87 occurrences; routine priority)</summary>
+<summary><strong>T020 — ordered pair</strong> (89 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2469,6 +2510,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T020-OLP-0163-B046 | OLP-0163 ·  | [upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:400-415](../upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex#L400) | [mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:421-437](../mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex#L421) | not yet paginated |
 | T020-OLP-0172-B010 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:92-110](../upstream/content/first-order-logic/models-theories/set-theory.tex#L92) | [mr/content/first-order-logic/models-theories/set-theory.tex:88-106](../mr/content/first-order-logic/models-theories/set-theory.tex#L88) | not yet paginated |
 | T020-OLP-0172-B011 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:112-129](../upstream/content/first-order-logic/models-theories/set-theory.tex#L112) | [mr/content/first-order-logic/models-theories/set-theory.tex:108-127](../mr/content/first-order-logic/models-theories/set-theory.tex#L108) | not yet paginated |
+| T020-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+| T020-OLP-0179-B013 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:61-72](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L61) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:53-63](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L53) | not yet paginated |
 
 **Chosen rendering/action:** क्रमित जोडी
 
@@ -2699,7 +2742,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T025 — comprehension</strong> (19 occurrences; medium priority)</summary>
+<summary><strong>T025 — comprehension</strong> (20 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2722,6 +2765,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T025-OLP-0170-B012 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:90-100](../upstream/content/first-order-logic/models-theories/theories.tex#L90) | [mr/content/first-order-logic/models-theories/theories.tex:88-99](../mr/content/first-order-logic/models-theories/theories.tex#L88) | not yet paginated |
 | T025-OLP-0172-B013 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:149-171](../upstream/content/first-order-logic/models-theories/set-theory.tex#L149) | [mr/content/first-order-logic/models-theories/set-theory.tex:147-169](../mr/content/first-order-logic/models-theories/set-theory.tex#L147) | not yet paginated |
 | T025-OLP-0172-B014 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:173-182](../upstream/content/first-order-logic/models-theories/set-theory.tex#L173) | [mr/content/first-order-logic/models-theories/set-theory.tex:171-180](../mr/content/first-order-logic/models-theories/set-theory.tex#L171) | not yet paginated |
+| T025-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
 
 **Chosen rendering/action:** गुणधर्माधारित संचरचना
 
@@ -2732,7 +2776,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T026 — contradiction/paradox</strong> (31 occurrences; high priority)</summary>
+<summary><strong>T026 — contradiction/paradox</strong> (32 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2767,6 +2811,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T026-OLP-0148-B008 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L36) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L37) | not yet paginated |
 | T026-OLP-0172-B013 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:149-171](../upstream/content/first-order-logic/models-theories/set-theory.tex#L149) | [mr/content/first-order-logic/models-theories/set-theory.tex:147-169](../mr/content/first-order-logic/models-theories/set-theory.tex#L147) | not yet paginated |
 | T026-OLP-0172-B014 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:173-182](../upstream/content/first-order-logic/models-theories/set-theory.tex#L173) | [mr/content/first-order-logic/models-theories/set-theory.tex:171-180](../mr/content/first-order-logic/models-theories/set-theory.tex#L171) | not yet paginated |
+| T026-OLP-0177-B008 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:67-81](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L67) | [mr/content/first-order-logic/beyond/second-order-logic.tex:64-76](../mr/content/first-order-logic/beyond/second-order-logic.tex#L64) | not yet paginated |
 
 **Chosen rendering/action:** व्याघात / विरोधापत्ती
 
@@ -2777,7 +2822,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T027 — mathematical / arithmetical induction</strong> (50 occurrences; medium priority)</summary>
+<summary><strong>T027 — mathematical / arithmetical induction</strong> (53 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2831,6 +2876,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T027-OLP-0156-B014 | OLP-0156 ·  | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:114-147](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L114) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:115-147](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L115) | not yet paginated |
 | T027-OLP-0156-B021 | OLP-0156 ·  | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L182) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L181) | not yet paginated |
 | T027-OLP-0170-B008 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:40-57](../upstream/content/first-order-logic/models-theories/theories.tex#L40) | [mr/content/first-order-logic/models-theories/theories.tex:40-57](../mr/content/first-order-logic/models-theories/theories.tex#L40) | not yet paginated |
+| T027-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T027-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+| T027-OLP-0179-B019 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:135-149](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L135) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:120-133](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L120) | not yet paginated |
 
 **Chosen rendering/action:** गणितीय विगमन / अंकगणितीय विगमन
 
@@ -2869,7 +2917,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T029 — axiom</strong> (70 occurrences; high priority)</summary>
+<summary><strong>T029 — axiom</strong> (82 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2943,6 +2991,18 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T029-OLP-0172-B008 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:57-71](../upstream/content/first-order-logic/models-theories/set-theory.tex#L57) | [mr/content/first-order-logic/models-theories/set-theory.tex:56-68](../mr/content/first-order-logic/models-theories/set-theory.tex#L56) | not yet paginated |
 | T029-OLP-0172-B009 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:73-90](../upstream/content/first-order-logic/models-theories/set-theory.tex#L73) | [mr/content/first-order-logic/models-theories/set-theory.tex:70-86](../mr/content/first-order-logic/models-theories/set-theory.tex#L70) | not yet paginated |
 | T029-OLP-0172-B013 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:149-171](../upstream/content/first-order-logic/models-theories/set-theory.tex#L149) | [mr/content/first-order-logic/models-theories/set-theory.tex:147-169](../mr/content/first-order-logic/models-theories/set-theory.tex#L147) | not yet paginated |
+| T029-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
+| T029-OLP-0176-B009 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:44-64](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L44) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:42-63](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L42) | not yet paginated |
+| T029-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
+| T029-OLP-0177-B008 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:67-81](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L67) | [mr/content/first-order-logic/beyond/second-order-logic.tex:64-76](../mr/content/first-order-logic/beyond/second-order-logic.tex#L64) | not yet paginated |
+| T029-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
+| T029-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T029-OLP-0177-B015 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | not yet paginated |
+| T029-OLP-0177-B017 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:236-242](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L236) | [mr/content/first-order-logic/beyond/second-order-logic.tex:223-229](../mr/content/first-order-logic/beyond/second-order-logic.tex#L223) | not yet paginated |
+| T029-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+| T029-OLP-0178-B009 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L95) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L95) | not yet paginated |
+| T029-OLP-0179-B022 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:166-170](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L166) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:149-152](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L149) | not yet paginated |
+| T029-OLP-0180-B010 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | not yet paginated |
 
 **Chosen rendering/action:** स्वयंसिद्धक
 
@@ -2953,7 +3013,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T030 — relation / binary relation</strong> (163 occurrences; medium priority)</summary>
+<summary><strong>T030 — relation / binary relation</strong> (169 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3120,6 +3180,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T030-OLP-0172-B007 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:31-55](../upstream/content/first-order-logic/models-theories/set-theory.tex#L31) | [mr/content/first-order-logic/models-theories/set-theory.tex:30-54](../mr/content/first-order-logic/models-theories/set-theory.tex#L30) | not yet paginated |
 | T030-OLP-0172-B010 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:92-110](../upstream/content/first-order-logic/models-theories/set-theory.tex#L92) | [mr/content/first-order-logic/models-theories/set-theory.tex:88-106](../mr/content/first-order-logic/models-theories/set-theory.tex#L88) | not yet paginated |
 | T030-OLP-0172-B011 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:112-129](../upstream/content/first-order-logic/models-theories/set-theory.tex#L112) | [mr/content/first-order-logic/models-theories/set-theory.tex:108-127](../mr/content/first-order-logic/models-theories/set-theory.tex#L108) | not yet paginated |
+| T030-OLP-0176-B008 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:28-42](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L28) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:27-40](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L27) | not yet paginated |
+| T030-OLP-0177-B009 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:83-98](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L83) | [mr/content/first-order-logic/beyond/second-order-logic.tex:78-91](../mr/content/first-order-logic/beyond/second-order-logic.tex#L78) | not yet paginated |
+| T030-OLP-0177-B012 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L169) | [mr/content/first-order-logic/beyond/second-order-logic.tex:159-170](../mr/content/first-order-logic/beyond/second-order-logic.tex#L159) | not yet paginated |
+| T030-OLP-0177-B016 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:226-234](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L226) | [mr/content/first-order-logic/beyond/second-order-logic.tex:213-221](../mr/content/first-order-logic/beyond/second-order-logic.tex#L213) | not yet paginated |
+| T030-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
+| T030-OLP-0180-B008 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:41-48](../upstream/content/first-order-logic/beyond/modal-logics.tex#L41) | [mr/content/first-order-logic/beyond/modal-logics.tex:37-43](../mr/content/first-order-logic/beyond/modal-logics.tex#L37) | not yet paginated |
 
 **Chosen rendering/action:** संबंध / द्विपदी संबंध
 
@@ -3130,7 +3196,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T031 — identity relation</strong> (75 occurrences; medium priority)</summary>
+<summary><strong>T031 — identity relation</strong> (78 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3209,6 +3275,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T031-OLP-0151-B007 | OLP-0151 ·  | [upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:21-29](../upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex#L21) | [mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:20-27](../mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex#L20) | not yet paginated |
 | T031-OLP-0152-B012 | OLP-0152 ·  | [upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:54-55](../upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex#L54) | [mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:53-54](../mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex#L53) | not yet paginated |
 | T031-OLP-0152-B023 | OLP-0152 ·  | [upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:102-108](../upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex#L102) | [mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:101-106](../mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex#L101) | not yet paginated |
+| T031-OLP-0176-B007 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:19-26](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L19) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:19-25](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L19) | not yet paginated |
+| T031-OLP-0177-B006 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/second-order-logic.tex:13-28](../mr/content/first-order-logic/beyond/second-order-logic.tex#L13) | not yet paginated |
+| T031-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
 
 **Chosen rendering/action:** एकरूपता संबंध
 
@@ -3219,7 +3288,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T032 — reflexive / irreflexive</strong> (94 occurrences; medium priority)</summary>
+<summary><strong>T032 — reflexive / irreflexive</strong> (95 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3317,6 +3386,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T032-OLP-0147-B007 | OLP-0147 ·  | [upstream/content/first-order-logic/introduction/models-theories.tex:32-54](../upstream/content/first-order-logic/introduction/models-theories.tex#L32) | [mr/content/first-order-logic/introduction/models-theories.tex:33-56](../mr/content/first-order-logic/introduction/models-theories.tex#L33) | not yet paginated |
 | T032-OLP-0169-B008 | OLP-0169 ·  | [upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63](../upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex#L45) | [mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64](../mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex#L44) | not yet paginated |
 | T032-OLP-0170-B014 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:108-141](../upstream/content/first-order-logic/models-theories/theories.tex#L108) | [mr/content/first-order-logic/models-theories/theories.tex:107-138](../mr/content/first-order-logic/models-theories/theories.tex#L107) | not yet paginated |
+| T032-OLP-0180-B010 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | not yet paginated |
 
 **Chosen rendering/action:** परावर्ती / अपरावर्ती
 
@@ -3327,7 +3397,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T033 — transitive</strong> (89 occurrences; medium priority)</summary>
+<summary><strong>T033 — transitive</strong> (90 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3420,6 +3490,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T033-OLP-0155-B019 | OLP-0155 ·  | [upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:90-95](../upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex#L90) | [mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:88-93](../mr/content/first-order-logic/syntax-and-semantics/subformulas.tex#L88) | not yet paginated |
 | T033-OLP-0169-B008 | OLP-0169 ·  | [upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63](../upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex#L45) | [mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64](../mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex#L44) | not yet paginated |
 | T033-OLP-0170-B014 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:108-141](../upstream/content/first-order-logic/models-theories/theories.tex#L108) | [mr/content/first-order-logic/models-theories/theories.tex:107-138](../mr/content/first-order-logic/models-theories/theories.tex#L107) | not yet paginated |
+| T033-OLP-0180-B010 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | not yet paginated |
 
 **Chosen rendering/action:** संक्रमक
 
@@ -3504,7 +3575,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T035 — connected (relation)</strong> (39 occurrences; medium priority)</summary>
+<summary><strong>T035 — connected (relation)</strong> (40 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3547,6 +3618,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T035-OLP-0016-B028 | OLP-0016 · 2.5 क्रम | [upstream/content/sets-functions-relations/relations/orders.tex:155-160](../upstream/content/sets-functions-relations/relations/orders.tex#L155) | [mr/content/sets-functions-relations/relations/orders.tex:149-154](../mr/content/sets-functions-relations/relations/orders.tex#L149) | 20–21 |
 | T035-OLP-0016-B029 | OLP-0016 · 2.5 क्रम | [upstream/content/sets-functions-relations/relations/orders.tex:162-166](../upstream/content/sets-functions-relations/relations/orders.tex#L162) | [mr/content/sets-functions-relations/relations/orders.tex:156-160](../mr/content/sets-functions-relations/relations/orders.tex#L156) | 20–21 |
 | T035-OLP-0047-B015 | OLP-0047 · 5.6 क्रमित वलये आणि क्षेत्रे | [upstream/content/sets-functions-relations/arithmetization/checking-details.tex:101-109](../upstream/content/sets-functions-relations/arithmetization/checking-details.tex#L101) | [mr/content/sets-functions-relations/arithmetization/checking-details.tex:101-108](../mr/content/sets-functions-relations/arithmetization/checking-details.tex#L101) | 61–64 |
+| T035-OLP-0177-B013 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L183) | [mr/content/first-order-logic/beyond/second-order-logic.tex:172-190](../mr/content/first-order-logic/beyond/second-order-logic.tex#L172) | not yet paginated |
 
 **Chosen rendering/action:** संयोजित
 
@@ -3720,7 +3792,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T039 — preorder / partial order / linear order</strong> (33 occurrences; high priority)</summary>
+<summary><strong>T039 — preorder / partial order / linear order</strong> (36 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3757,6 +3829,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T039-OLP-0169-B008 | OLP-0169 ·  | [upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63](../upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex#L45) | [mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64](../mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex#L44) | not yet paginated |
 | T039-OLP-0170-B006 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:13-27](../upstream/content/first-order-logic/models-theories/theories.tex#L13) | [mr/content/first-order-logic/models-theories/theories.tex:13-27](../mr/content/first-order-logic/models-theories/theories.tex#L13) | not yet paginated |
 | T039-OLP-0170-B014 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:108-141](../upstream/content/first-order-logic/models-theories/theories.tex#L108) | [mr/content/first-order-logic/models-theories/theories.tex:107-138](../mr/content/first-order-logic/models-theories/theories.tex#L107) | not yet paginated |
+| T039-OLP-0177-B013 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L183) | [mr/content/first-order-logic/beyond/second-order-logic.tex:172-190](../mr/content/first-order-logic/beyond/second-order-logic.tex#L172) | not yet paginated |
+| T039-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
+| T039-OLP-0180-B008 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:41-48](../upstream/content/first-order-logic/beyond/modal-logics.tex#L41) | [mr/content/first-order-logic/beyond/modal-logics.tex:37-43](../mr/content/first-order-logic/beyond/modal-logics.tex#L37) | not yet paginated |
 
 **Chosen rendering/action:** पूर्वक्रम / अंशतः क्रम / रेषीय क्रम
 
@@ -3767,7 +3842,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T040 — graph / directed graph / vertex / edge</strong> (34 occurrences; high priority)</summary>
+<summary><strong>T040 — graph / directed graph / vertex / edge</strong> (35 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3805,6 +3880,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T040-OLP-0023-B014 | OLP-0023 · 3.3 संबंध म्हणून फलने | [upstream/content/sets-functions-relations/functions/functions-relations.tex:81-85](../upstream/content/sets-functions-relations/functions/functions-relations.tex#L81) | [mr/content/sets-functions-relations/functions/functions-relations.tex:79-82](../mr/content/sets-functions-relations/functions/functions-relations.tex#L79) | 28–29 |
 | T040-OLP-0023-B015 | OLP-0023 · 3.3 संबंध म्हणून फलने | [upstream/content/sets-functions-relations/functions/functions-relations.tex:87-90](../upstream/content/sets-functions-relations/functions/functions-relations.tex#L87) | [mr/content/sets-functions-relations/functions/functions-relations.tex:84-87](../mr/content/sets-functions-relations/functions/functions-relations.tex#L84) | 28–29 |
 | T040-OLP-0023-B016 | OLP-0023 · 3.3 संबंध म्हणून फलने | [upstream/content/sets-functions-relations/functions/functions-relations.tex:92-101](../upstream/content/sets-functions-relations/functions/functions-relations.tex#L92) | [mr/content/sets-functions-relations/functions/functions-relations.tex:89-101](../mr/content/sets-functions-relations/functions/functions-relations.tex#L89) | 28–29 |
+| T040-OLP-0177-B013 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L183) | [mr/content/first-order-logic/beyond/second-order-logic.tex:172-190](../mr/content/first-order-logic/beyond/second-order-logic.tex#L172) | not yet paginated |
 
 **Chosen rendering/action:** आलेख / दिशित आलेख / शिखर / कड
 
@@ -3904,7 +3980,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T042 — least / well-ordered / predecessor / successor</strong> (50 occurrences; high priority)</summary>
+<summary><strong>T042 — least / well-ordered / predecessor / successor</strong> (53 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3958,6 +4034,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T042-OLP-0054-B012 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L55) | [mr/content/sets-functions-relations/infinite/card-sb.tex:54-67](../mr/content/sets-functions-relations/infinite/card-sb.tex#L54) | 72–74 |
 | T042-OLP-0054-B015 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L80) | [mr/content/sets-functions-relations/infinite/card-sb.tex:80-85](../mr/content/sets-functions-relations/infinite/card-sb.tex#L80) | 72–74 |
 | T042-OLP-0171-B009 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L55) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:55-69](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L55) | not yet paginated |
+| T042-OLP-0177-B013 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L183) | [mr/content/first-order-logic/beyond/second-order-logic.tex:172-190](../mr/content/first-order-logic/beyond/second-order-logic.tex#L172) | not yet paginated |
+| T042-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+| T042-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
 
 **Chosen rendering/action:** लघुतम / सुक्रमित / पूर्ववर्ती / उत्तरवर्ती
 
@@ -4052,7 +4131,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T044 — computability / formula / derivation</strong> (413 occurrences; high priority)</summary>
+<summary><strong>T044 — computability / formula / derivation</strong> (424 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -4469,6 +4548,17 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T044-OLP-0160-B007 | OLP-0160 ·  | [upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45](../upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L35) | [mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46](../mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L35) | not yet paginated |
 | T044-OLP-0168-B010 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:49-98](../upstream/content/first-order-logic/models-theories/introduction.tex#L49) | [mr/content/first-order-logic/models-theories/introduction.tex:50-97](../mr/content/first-order-logic/models-theories/introduction.tex#L50) | not yet paginated |
 | T044-OLP-0172-B014 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:173-182](../upstream/content/first-order-logic/models-theories/set-theory.tex#L173) | [mr/content/first-order-logic/models-theories/set-theory.tex:171-180](../mr/content/first-order-logic/models-theories/set-theory.tex#L171) | not yet paginated |
+| T044-OLP-0176-B009 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:44-64](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L44) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:42-63](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L42) | not yet paginated |
+| T044-OLP-0177-B006 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/second-order-logic.tex:13-28](../mr/content/first-order-logic/beyond/second-order-logic.tex#L13) | not yet paginated |
+| T044-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
+| T044-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
+| T044-OLP-0177-B014 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L204) | [mr/content/first-order-logic/beyond/second-order-logic.tex:192-196](../mr/content/first-order-logic/beyond/second-order-logic.tex#L192) | not yet paginated |
+| T044-OLP-0177-B015 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | not yet paginated |
+| T044-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
+| T044-OLP-0178-B009 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L95) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L95) | not yet paginated |
+| T044-OLP-0178-B010 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:102-112](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L102) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:102-111](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L102) | not yet paginated |
+| T044-OLP-0179-B015 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:81-95](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L81) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:71-83](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L71) | not yet paginated |
+| T044-OLP-0181-B006 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:13-20](../upstream/content/first-order-logic/beyond/other-logics.tex#L13) | [mr/content/first-order-logic/beyond/other-logics.tex:13-19](../mr/content/first-order-logic/beyond/other-logics.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** संगणनीयता / सूत्र / निष्पत्ती
 
@@ -4479,7 +4569,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T045 — function / mapping</strong> (272 occurrences; medium priority)</summary>
+<summary><strong>T045 — function / mapping</strong> (279 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -4755,6 +4845,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T045-OLP-0172-B010 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:92-110](../upstream/content/first-order-logic/models-theories/set-theory.tex#L92) | [mr/content/first-order-logic/models-theories/set-theory.tex:88-106](../mr/content/first-order-logic/models-theories/set-theory.tex#L88) | not yet paginated |
 | T045-OLP-0172-B011 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:112-129](../upstream/content/first-order-logic/models-theories/set-theory.tex#L112) | [mr/content/first-order-logic/models-theories/set-theory.tex:108-127](../mr/content/first-order-logic/models-theories/set-theory.tex#L108) | not yet paginated |
 | T045-OLP-0172-B012 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:131-147](../upstream/content/first-order-logic/models-theories/set-theory.tex#L131) | [mr/content/first-order-logic/models-theories/set-theory.tex:129-145](../mr/content/first-order-logic/models-theories/set-theory.tex#L129) | not yet paginated |
+| T045-OLP-0176-B006 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:13-17](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L13) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:13-17](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L13) | not yet paginated |
+| T045-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T045-OLP-0177-B012 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L169) | [mr/content/first-order-logic/beyond/second-order-logic.tex:159-170](../mr/content/first-order-logic/beyond/second-order-logic.tex#L159) | not yet paginated |
+| T045-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
+| T045-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+| T045-OLP-0178-B010 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:102-112](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L102) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:102-111](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L102) | not yet paginated |
+| T045-OLP-0178-B011 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:114-123](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L114) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:113-120](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L113) | not yet paginated |
 
 **Chosen rendering/action:** फलन / संगती
 
@@ -4765,7 +4862,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T046 — domain / codomain / range</strong> (155 occurrences; medium priority)</summary>
+<summary><strong>T046 — domain / codomain / range</strong> (162 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -4924,6 +5021,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T046-OLP-0173-B007 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:21-35](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L21) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:20-35](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L20) | not yet paginated |
 | T046-OLP-0173-B009 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:39-54](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L39) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:39-54](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L39) | not yet paginated |
 | T046-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
+| T046-OLP-0176-B006 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:13-17](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L13) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:13-17](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L13) | not yet paginated |
+| T046-OLP-0177-B009 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:83-98](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L83) | [mr/content/first-order-logic/beyond/second-order-logic.tex:78-91](../mr/content/first-order-logic/beyond/second-order-logic.tex#L78) | not yet paginated |
+| T046-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T046-OLP-0177-B016 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:226-234](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L226) | [mr/content/first-order-logic/beyond/second-order-logic.tex:213-221](../mr/content/first-order-logic/beyond/second-order-logic.tex#L213) | not yet paginated |
+| T046-OLP-0177-B017 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:236-242](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L236) | [mr/content/first-order-logic/beyond/second-order-logic.tex:223-229](../mr/content/first-order-logic/beyond/second-order-logic.tex#L223) | not yet paginated |
+| T046-OLP-0178-B006 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L13) | not yet paginated |
+| T046-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
 
 **Chosen rendering/action:** प्रांत / सहप्रांत / व्याप्ती
 
@@ -5030,7 +5134,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T048 — surjective / surjection</strong> (91 occurrences; medium priority)</summary>
+<summary><strong>T048 — surjective / surjection</strong> (92 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5125,6 +5229,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T048-OLP-0040-B017 | OLP-0040 · 4.13 न्यूनीकरण | [upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:88-104](../upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L88) | [mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:89-106](../mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L89) | 52–53 |
 | T048-OLP-0040-B018 | OLP-0040 · 4.13 न्यूनीकरण | [upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:106-110](../upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L106) | [mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:108-112](../mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L108) | 52–53 |
 | T048-OLP-0040-B022 | OLP-0040 · 4.13 न्यूनीकरण | [upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:130-134](../upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L130) | [mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:133-138](../mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L133) | 52–53 |
+| T048-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
 
 **Chosen rendering/action:** आच्छादक / आच्छादन
 
@@ -5135,7 +5240,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T049 — injective / injection</strong> (85 occurrences; medium priority)</summary>
+<summary><strong>T049 — injective / injection</strong> (87 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5224,6 +5329,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T049-OLP-0054-B014 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L75) | [mr/content/sets-functions-relations/infinite/card-sb.tex:74-78](../mr/content/sets-functions-relations/infinite/card-sb.tex#L74) | 72–74 |
 | T049-OLP-0054-B017 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L89) | [mr/content/sets-functions-relations/infinite/card-sb.tex:91-104](../mr/content/sets-functions-relations/infinite/card-sb.tex#L91) | 72–74 |
 | T049-OLP-0172-B012 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:131-147](../upstream/content/first-order-logic/models-theories/set-theory.tex#L131) | [mr/content/first-order-logic/models-theories/set-theory.tex:129-145](../mr/content/first-order-logic/models-theories/set-theory.tex#L129) | not yet paginated |
+| T049-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T049-OLP-0177-B012 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L169) | [mr/content/first-order-logic/beyond/second-order-logic.tex:159-170](../mr/content/first-order-logic/beyond/second-order-logic.tex#L159) | not yet paginated |
 
 **Chosen rendering/action:** एकास-एक / एकास-एक फलन
 
@@ -5234,7 +5341,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T050 — bijective / bijection / one-to-one correspondence</strong> (84 occurrences; medium priority)</summary>
+<summary><strong>T050 — bijective / bijection / one-to-one correspondence</strong> (85 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5322,6 +5429,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T050-OLP-0054-B012 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L55) | [mr/content/sets-functions-relations/infinite/card-sb.tex:54-67](../mr/content/sets-functions-relations/infinite/card-sb.tex#L54) | 72–74 |
 | T050-OLP-0054-B014 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L75) | [mr/content/sets-functions-relations/infinite/card-sb.tex:74-78](../mr/content/sets-functions-relations/infinite/card-sb.tex#L74) | 72–74 |
 | T050-OLP-0054-B017 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L89) | [mr/content/sets-functions-relations/infinite/card-sb.tex:91-104](../mr/content/sets-functions-relations/infinite/card-sb.tex#L91) | 72–74 |
+| T050-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
 
 **Chosen rendering/action:** एकास-एक व आच्छादक / एकास-एक आच्छादन / एकास-एक संगती
 
@@ -5862,7 +5970,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T061 — recursive / recursively defined</strong> (13 occurrences; medium priority)</summary>
+<summary><strong>T061 — recursive / recursively defined</strong> (15 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5879,6 +5987,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T061-OLP-0155-B018 | OLP-0155 ·  | [upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:70-88](../upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex#L70) | [mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:68-86](../mr/content/first-order-logic/syntax-and-semantics/subformulas.tex#L68) | not yet paginated |
 | T061-OLP-0158-B006 | OLP-0158 ·  | [upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:13-17](../upstream/content/first-order-logic/syntax-and-semantics/substitution.tex#L13) | [mr/content/first-order-logic/syntax-and-semantics/substitution.tex:13-18](../mr/content/first-order-logic/syntax-and-semantics/substitution.tex#L13) | not yet paginated |
 | T061-OLP-0164-B009 | OLP-0164 ·  | [upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55](../upstream/content/first-order-logic/syntax-and-semantics/assignments.tex#L42) | [mr/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55](../mr/content/first-order-logic/syntax-and-semantics/assignments.tex#L42) | not yet paginated |
+| T061-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T061-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
 
 **Chosen rendering/action:** पुनरावर्ती / पुनरावर्ती रीतीने परिभाषित
 
@@ -5986,7 +6096,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T066 — rational number / non-negative rational number</strong> (45 occurrences; medium priority)</summary>
+<summary><strong>T066 — rational number / non-negative rational number</strong> (49 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6035,6 +6145,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T066-OLP-0048-B020 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:181-185](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L181) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:181-186](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L181) | 64–67 |
 | T066-OLP-0048-B021 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:187-213](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L187) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:188-214](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L188) | 64–67 |
 | T066-OLP-0048-B022 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:215-224](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L215) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:216-227](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L216) | 64–67 |
+| T066-OLP-0179-B010 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:37-43](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L37) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:32-36](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L32) | not yet paginated |
+| T066-OLP-0179-B011 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:45-47](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L45) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:38-40](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L38) | not yet paginated |
+| T066-OLP-0179-B012 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:49-59](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L49) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:42-51](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L42) | not yet paginated |
+| T066-OLP-0179-B013 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:61-72](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L61) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:53-63](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L53) | not yet paginated |
 
 **Chosen rendering/action:** परिमेय संख्या / ऋणेतर परिमेय संख्या
 
@@ -6424,7 +6538,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T082 — real number / real line</strong> (47 occurrences; routine priority)</summary>
+<summary><strong>T082 — real number / real line</strong> (48 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6475,6 +6589,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T082-OLP-0053-B006 | OLP-0053 · 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | [upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:21-26](../upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex#L21) | [mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:19-24](../mr/content/sets-functions-relations/infinite/dedekinds-proof.tex#L19) | 71–72 |
 | T082-OLP-0053-B008 | OLP-0053 · 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | [upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:42-64](../upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex#L42) | [mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:40-62](../mr/content/sets-functions-relations/infinite/dedekinds-proof.tex#L40) | 71–72 |
 | T082-OLP-0053-B014 | OLP-0053 · 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | [upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113](../upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex#L113) | [mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108](../mr/content/sets-functions-relations/infinite/dedekinds-proof.tex#L108) | 71–72 |
+| T082-OLP-0179-B013 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:61-72](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L61) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:53-63](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L53) | not yet paginated |
 
 **Chosen rendering/action:** वास्तव संख्या / वास्तव संख्या-रेषा
 
@@ -6485,7 +6600,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T083 — irrational number</strong> (11 occurrences; routine priority)</summary>
+<summary><strong>T083 — irrational number</strong> (15 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6500,6 +6615,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T083-OLP-0048-B007 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:21-36](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L21) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:21-36](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L21) | 64–67 |
 | T083-OLP-0048-B008 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:38-73](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L38) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:38-69](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L38) | 64–67 |
 | T083-OLP-0054-B006 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:16-23](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L16) | [mr/content/sets-functions-relations/infinite/card-sb.tex:16-22](../mr/content/sets-functions-relations/infinite/card-sb.tex#L16) | 72–74 |
+| T083-OLP-0179-B010 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:37-43](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L37) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:32-36](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L32) | not yet paginated |
+| T083-OLP-0179-B011 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:45-47](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L45) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:38-40](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L38) | not yet paginated |
+| T083-OLP-0179-B012 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:49-59](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L49) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:42-51](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L42) | not yet paginated |
+| T083-OLP-0179-B013 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:61-72](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L61) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:53-63](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L53) | not yet paginated |
 
 **Chosen rendering/action:** अपरिमेय संख्या
 
@@ -6510,7 +6629,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T084 — ordered field</strong> (10 occurrences; routine priority)</summary>
+<summary><strong>T084 — ordered field</strong> (11 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6524,6 +6643,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T084-OLP-0047-B026 | OLP-0047 · 5.6 क्रमित वलये आणि क्षेत्रे | [upstream/content/sets-functions-relations/arithmetization/checking-details.tex:175-177](../upstream/content/sets-functions-relations/arithmetization/checking-details.tex#L175) | [mr/content/sets-functions-relations/arithmetization/checking-details.tex:173-175](../mr/content/sets-functions-relations/arithmetization/checking-details.tex#L173) | 61–64 |
 | T084-OLP-0048-B015 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:149-163](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L149) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:145-163](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L145) | 64–67 |
 | T084-OLP-0048-B017 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:169-171](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L169) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:169-171](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L169) | 64–67 |
+| T084-OLP-0177-B013 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L183) | [mr/content/first-order-logic/beyond/second-order-logic.tex:172-190](../mr/content/first-order-logic/beyond/second-order-logic.tex#L172) | not yet paginated |
 
 **Chosen rendering/action:** क्रमित क्षेत्र
 
@@ -6534,7 +6654,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T085 — Completeness Property / upper bound / least upper bound</strong> (17 occurrences; routine priority)</summary>
+<summary><strong>T085 — Completeness Property / upper bound / least upper bound</strong> (18 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6555,6 +6675,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T085-OLP-0048-B021 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:187-213](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L187) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:188-214](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L188) | 64–67 |
 | T085-OLP-0048-B022 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:215-224](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L215) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:216-227](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L216) | 64–67 |
 | T085-OLP-0048-B023 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:226-227](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L226) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:229-237](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L229) | 64–67 |
+| T085-OLP-0178-B011 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:114-123](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L114) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:113-120](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L113) | not yet paginated |
 
 **Chosen rendering/action:** संपूर्णता गुणधर्म / ऊर्ध्वबंध / लघुतम ऊर्ध्वबंध
 
@@ -6741,12 +6862,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T094 — monotone / monotonically decreasing</strong> (2 occurrences; routine priority)</summary>
+<summary><strong>T094 — monotone / monotonically decreasing</strong> (4 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T094-OLP-0048-B022 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:215-224](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L215) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:216-227](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L216) | 64–67 |
 | T094-OLP-0048-B023 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:226-227](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L226) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:229-237](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L229) | 64–67 |
+| T094-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
+| T094-OLP-0181-B007 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:22-36](../upstream/content/first-order-logic/beyond/other-logics.tex#L22) | [mr/content/first-order-logic/beyond/other-logics.tex:21-33](../mr/content/first-order-logic/beyond/other-logics.tex#L21) | not yet paginated |
 
 **Chosen rendering/action:** एकस्वनिक / एकस्वनिक घटती
 
@@ -6815,7 +6938,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T098 — infinite set / infinite</strong> (15 occurrences; routine priority)</summary>
+<summary><strong>T098 — infinite set / infinite</strong> (17 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6834,6 +6957,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T098-OLP-0137-B010 | OLP-0137 ·  | [upstream/content/first-order-logic/completeness/downward-ls.tex:48-61](../upstream/content/first-order-logic/completeness/downward-ls.tex#L48) | [mr/content/first-order-logic/completeness/downward-ls.tex:48-60](../mr/content/first-order-logic/completeness/downward-ls.tex#L48) | not yet paginated |
 | T098-OLP-0173-B010 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:56-61](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L56) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:56-62](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L56) | not yet paginated |
 | T098-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
+| T098-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
+| T098-OLP-0177-B012 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L169) | [mr/content/first-order-logic/beyond/second-order-logic.tex:159-170](../mr/content/first-order-logic/beyond/second-order-logic.tex#L159) | not yet paginated |
 
 **Chosen rendering/action:** अनंत संच / अनंत
 
@@ -6928,7 +7053,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T102 — first-order logic</strong> (45 occurrences; medium priority)</summary>
+<summary><strong>T102 — first-order logic</strong> (60 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6977,6 +7102,21 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T102-OLP-0164-B048 | OLP-0164 ·  | [upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:338-340](../upstream/content/first-order-logic/syntax-and-semantics/assignments.tex#L338) | [mr/content/first-order-logic/syntax-and-semantics/assignments.tex:361-363](../mr/content/first-order-logic/syntax-and-semantics/assignments.tex#L361) | not yet paginated |
 | T102-OLP-0168-B009 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:37-47](../upstream/content/first-order-logic/models-theories/introduction.tex#L37) | [mr/content/first-order-logic/models-theories/introduction.tex:38-48](../mr/content/first-order-logic/models-theories/introduction.tex#L38) | not yet paginated |
 | T102-OLP-0170-B005 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:11-11](../upstream/content/first-order-logic/models-theories/theories.tex#L11) | [mr/content/first-order-logic/models-theories/theories.tex:11-11](../mr/content/first-order-logic/models-theories/theories.tex#L11) | not yet paginated |
+| T102-OLP-0174-B004 | OLP-0174 ·  | [upstream/content/first-order-logic/beyond/beyond.tex:8-8](../upstream/content/first-order-logic/beyond/beyond.tex#L8) | [mr/content/first-order-logic/beyond/beyond.tex:8-8](../mr/content/first-order-logic/beyond/beyond.tex#L8) | not yet paginated |
+| T102-OLP-0174-B005 | OLP-0174 ·  | [upstream/content/first-order-logic/beyond/beyond.tex:10-17](../upstream/content/first-order-logic/beyond/beyond.tex#L10) | [mr/content/first-order-logic/beyond/beyond.tex:10-17](../mr/content/first-order-logic/beyond/beyond.tex#L10) | not yet paginated |
+| T102-OLP-0175-B005 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:11-11](../upstream/content/first-order-logic/beyond/introduction.tex#L11) | [mr/content/first-order-logic/beyond/introduction.tex:11-11](../mr/content/first-order-logic/beyond/introduction.tex#L11) | not yet paginated |
+| T102-OLP-0175-B006 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:13-21](../upstream/content/first-order-logic/beyond/introduction.tex#L13) | [mr/content/first-order-logic/beyond/introduction.tex:13-21](../mr/content/first-order-logic/beyond/introduction.tex#L13) | not yet paginated |
+| T102-OLP-0175-B008 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:46-48](../upstream/content/first-order-logic/beyond/introduction.tex#L46) | [mr/content/first-order-logic/beyond/introduction.tex:44-46](../mr/content/first-order-logic/beyond/introduction.tex#L44) | not yet paginated |
+| T102-OLP-0176-B006 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:13-17](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L13) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:13-17](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L13) | not yet paginated |
+| T102-OLP-0176-B007 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:19-26](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L19) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:19-25](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L19) | not yet paginated |
+| T102-OLP-0177-B006 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/second-order-logic.tex:13-28](../mr/content/first-order-logic/beyond/second-order-logic.tex#L13) | not yet paginated |
+| T102-OLP-0177-B014 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L204) | [mr/content/first-order-logic/beyond/second-order-logic.tex:192-196](../mr/content/first-order-logic/beyond/second-order-logic.tex#L192) | not yet paginated |
+| T102-OLP-0177-B017 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:236-242](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L236) | [mr/content/first-order-logic/beyond/second-order-logic.tex:223-229](../mr/content/first-order-logic/beyond/second-order-logic.tex#L223) | not yet paginated |
+| T102-OLP-0178-B006 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L13) | not yet paginated |
+| T102-OLP-0178-B011 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:114-123](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L114) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:113-120](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L113) | not yet paginated |
+| T102-OLP-0179-B006 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:13-17](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L13) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:13-16](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L13) | not yet paginated |
+| T102-OLP-0179-B015 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:81-95](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L81) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:71-83](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L71) | not yet paginated |
+| T102-OLP-0179-B026 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L186) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L168) | not yet paginated |
 
 **Chosen rendering/action:** प्रथम-क्रम तर्कशास्त्र
 
@@ -7003,7 +7143,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T104 — free variable</strong> (49 occurrences; routine priority)</summary>
+<summary><strong>T104 — free variable</strong> (50 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7056,6 +7196,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T104-OLP-0164-B046 | OLP-0164 ·  | [upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:325-333](../upstream/content/first-order-logic/syntax-and-semantics/assignments.tex#L325) | [mr/content/first-order-logic/syntax-and-semantics/assignments.tex:347-355](../mr/content/first-order-logic/syntax-and-semantics/assignments.tex#L347) | not yet paginated |
 | T104-OLP-0164-B047 | OLP-0164 ·  | [upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:335-336](../upstream/content/first-order-logic/syntax-and-semantics/assignments.tex#L335) | [mr/content/first-order-logic/syntax-and-semantics/assignments.tex:357-359](../mr/content/first-order-logic/syntax-and-semantics/assignments.tex#L357) | not yet paginated |
 | T104-OLP-0166-B021 | OLP-0166 ·  | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:124-131](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L124) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:134-141](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L134) | not yet paginated |
+| T104-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
 
 **Chosen rendering/action:** मुक्त चर
 
@@ -7096,11 +7237,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T107 — embed / embedding a theory</strong> (1 occurrence; routine priority)</summary>
+<summary><strong>T107 — embed / embedding a theory</strong> (4 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T107-OLP-0053-B007 | OLP-0053 · 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | [upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:28-40](../upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex#L28) | [mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:26-38](../mr/content/sets-functions-relations/infinite/dedekinds-proof.tex#L26) | 71–72 |
+| T107-OLP-0176-B009 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:44-64](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L44) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:42-63](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L42) | not yet paginated |
+| T107-OLP-0177-B017 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:236-242](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L236) | [mr/content/first-order-logic/beyond/second-order-logic.tex:223-229](../mr/content/first-order-logic/beyond/second-order-logic.tex#L223) | not yet paginated |
+| T107-OLP-0178-B011 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:114-123](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L114) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:113-120](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L113) | not yet paginated |
 
 **Chosen rendering/action:** अंतःस्थापन करणे / अंतःस्थापन
 
@@ -7111,7 +7255,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T108 — propositional logic</strong> (46 occurrences; routine priority)</summary>
+<summary><strong>T108 — propositional logic</strong> (48 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7161,6 +7305,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T108-OLP-0122-B006 | OLP-0122 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:15-21](../upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex#L15) | [mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:15-21](../mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex#L15) | not yet paginated |
 | T108-OLP-0138-B005 | OLP-0138 ·  | [upstream/content/first-order-logic/first-order-logic.tex:9-17](../upstream/content/first-order-logic/first-order-logic.tex#L9) | [mr/content/first-order-logic/first-order-logic.tex:9-17](../mr/content/first-order-logic/first-order-logic.tex#L9) | not yet paginated |
 | T108-OLP-0138-B006 | OLP-0138 ·  | [upstream/content/first-order-logic/first-order-logic.tex:19-25](../upstream/content/first-order-logic/first-order-logic.tex#L19) | [mr/content/first-order-logic/first-order-logic.tex:19-24](../mr/content/first-order-logic/first-order-logic.tex#L19) | not yet paginated |
+| T108-OLP-0179-B018 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:128-133](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L128) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:113-118](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L113) | not yet paginated |
+| T108-OLP-0180-B007 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:31-39](../upstream/content/first-order-logic/beyond/modal-logics.tex#L31) | [mr/content/first-order-logic/beyond/modal-logics.tex:28-35](../mr/content/first-order-logic/beyond/modal-logics.tex#L28) | not yet paginated |
 
 **Chosen rendering/action:** विधानीय तर्कशास्त्र
 
@@ -7171,7 +7317,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T109 — proof system / proof</strong> (72 occurrences; medium priority)</summary>
+<summary><strong>T109 — proof system / proof</strong> (83 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7247,6 +7393,17 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T109-OLP-0148-B006 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L13) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L13) | not yet paginated |
 | T109-OLP-0148-B007 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L25) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L25) | not yet paginated |
 | T109-OLP-0148-B010 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L57) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L58) | not yet paginated |
+| T109-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
+| T109-OLP-0177-B014 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L204) | [mr/content/first-order-logic/beyond/second-order-logic.tex:192-196](../mr/content/first-order-logic/beyond/second-order-logic.tex#L192) | not yet paginated |
+| T109-OLP-0177-B015 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | not yet paginated |
+| T109-OLP-0178-B009 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L95) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L95) | not yet paginated |
+| T109-OLP-0179-B012 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:49-59](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L49) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:42-51](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L42) | not yet paginated |
+| T109-OLP-0179-B013 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:61-72](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L61) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:53-63](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L53) | not yet paginated |
+| T109-OLP-0179-B014 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:74-79](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L74) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:65-69](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L65) | not yet paginated |
+| T109-OLP-0179-B015 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:81-95](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L81) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:71-83](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L71) | not yet paginated |
+| T109-OLP-0179-B016 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L97) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L85) | not yet paginated |
+| T109-OLP-0179-B025 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L163) | not yet paginated |
+| T109-OLP-0181-B006 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:13-20](../upstream/content/first-order-logic/beyond/other-logics.tex#L13) | [mr/content/first-order-logic/beyond/other-logics.tex:13-19](../mr/content/first-order-logic/beyond/other-logics.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धता-पद्धती / सिद्धता
 
@@ -7257,7 +7414,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (57 occurrences; medium priority)</summary>
+<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (66 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7318,6 +7475,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T110-OLP-0148-B009 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L50) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L51) | not yet paginated |
 | T110-OLP-0148-B010 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L57) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L58) | not yet paginated |
 | T110-OLP-0151-B020 | OLP-0151 ·  | [upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:143-150](../upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex#L143) | [mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:138-145](../mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex#L138) | not yet paginated |
+| T110-OLP-0176-B009 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:44-64](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L44) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:42-63](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L42) | not yet paginated |
+| T110-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
+| T110-OLP-0177-B014 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L204) | [mr/content/first-order-logic/beyond/second-order-logic.tex:192-196](../mr/content/first-order-logic/beyond/second-order-logic.tex#L192) | not yet paginated |
+| T110-OLP-0177-B015 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | not yet paginated |
+| T110-OLP-0178-B010 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:102-112](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L102) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:102-111](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L102) | not yet paginated |
+| T110-OLP-0179-B025 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L163) | not yet paginated |
+| T110-OLP-0179-B026 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L186) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L168) | not yet paginated |
+| T110-OLP-0180-B010 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | not yet paginated |
+| T110-OLP-0181-B006 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:13-20](../upstream/content/first-order-logic/beyond/other-logics.tex#L13) | [mr/content/first-order-logic/beyond/other-logics.tex:13-19](../mr/content/first-order-logic/beyond/other-logics.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** संपूर्णता / संपूर्णता प्रमेय / सत्यता-फलनात्मक संपूर्णता
 
@@ -7328,7 +7494,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T111 — valuation (propositional semantics)</strong> (68 occurrences; medium priority)</summary>
+<summary><strong>T111 — valuation (propositional semantics)</strong> (69 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7400,6 +7566,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T111-OLP-0136-B021 | OLP-0136 ·  | [upstream/content/first-order-logic/completeness/compactness-direct.tex:120-126](../upstream/content/first-order-logic/completeness/compactness-direct.tex#L120) | [mr/content/first-order-logic/completeness/compactness-direct.tex:120-126](../mr/content/first-order-logic/completeness/compactness-direct.tex#L120) | not yet paginated |
 | T111-OLP-0136-B022 | OLP-0136 ·  | [upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143](../upstream/content/first-order-logic/completeness/compactness-direct.tex#L128) | [mr/content/first-order-logic/completeness/compactness-direct.tex:128-145](../mr/content/first-order-logic/completeness/compactness-direct.tex#L128) | not yet paginated |
 | T111-OLP-0138-B005 | OLP-0138 ·  | [upstream/content/first-order-logic/first-order-logic.tex:9-17](../upstream/content/first-order-logic/first-order-logic.tex#L9) | [mr/content/first-order-logic/first-order-logic.tex:9-17](../mr/content/first-order-logic/first-order-logic.tex#L9) | not yet paginated |
+| T111-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
 
 **Chosen rendering/action:** सत्य-मूल्यांकन
 
@@ -7410,7 +7577,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T112 — predicate / term / quantifier</strong> (175 occurrences; routine priority)</summary>
+<summary><strong>T112 — predicate / term / quantifier</strong> (184 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7589,6 +7756,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T112-OLP-0171-B012 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:90-99](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L90) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:92-101](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L92) | not yet paginated |
 | T112-OLP-0171-B013 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L101) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L103) | not yet paginated |
 | T112-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
+| T112-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
+| T112-OLP-0176-B007 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:19-26](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L19) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:19-25](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L19) | not yet paginated |
+| T112-OLP-0176-B008 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:28-42](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L28) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:27-40](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L27) | not yet paginated |
+| T112-OLP-0176-B009 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:44-64](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L44) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:42-63](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L42) | not yet paginated |
+| T112-OLP-0177-B006 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/second-order-logic.tex:13-28](../mr/content/first-order-logic/beyond/second-order-logic.tex#L13) | not yet paginated |
+| T112-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
+| T112-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+| T112-OLP-0178-B009 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L95) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L95) | not yet paginated |
+| T112-OLP-0180-B007 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:31-39](../upstream/content/first-order-logic/beyond/modal-logics.tex#L31) | [mr/content/first-order-logic/beyond/modal-logics.tex:28-35](../mr/content/first-order-logic/beyond/modal-logics.tex#L28) | not yet paginated |
 
 **Chosen rendering/action:** विधेय / पद / संख्यापक
 
@@ -7599,12 +7775,18 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T113 — classical logic / classical</strong> (2 occurrences; medium priority)</summary>
+<summary><strong>T113 — classical logic / classical</strong> (8 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T113-OLP-0055-B005 | OLP-0055 · 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | [upstream/content/propositional-logic/propositional-logic.tex:9-18](../upstream/content/propositional-logic/propositional-logic.tex#L9) | [mr/content/propositional-logic/propositional-logic.tex:9-18](../mr/content/propositional-logic/propositional-logic.tex#L9) | 75 |
 | T113-OLP-0064-B011 | OLP-0064 · 8.1 प्रस्तावना | [upstream/content/first-order-logic/proof-systems/introduction.tex:82-99](../upstream/content/first-order-logic/proof-systems/introduction.tex#L82) | [mr/content/first-order-logic/proof-systems/introduction.tex:85-101](../mr/content/first-order-logic/proof-systems/introduction.tex#L85) | 84–85 |
+| T113-OLP-0178-B011 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:114-123](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L114) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:113-120](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L113) | not yet paginated |
+| T113-OLP-0179-B006 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:13-17](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L13) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:13-16](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L13) | not yet paginated |
+| T113-OLP-0179-B009 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:32-35](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L32) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:28-30](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L28) | not yet paginated |
+| T113-OLP-0179-B015 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:81-95](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L81) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:71-83](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L71) | not yet paginated |
+| T113-OLP-0179-B026 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L186) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L168) | not yet paginated |
+| T113-OLP-0180-B009 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:50-65](../upstream/content/first-order-logic/beyond/modal-logics.tex#L50) | [mr/content/first-order-logic/beyond/modal-logics.tex:45-59](../mr/content/first-order-logic/beyond/modal-logics.tex#L45) | not yet paginated |
 
 **Chosen rendering/action:** अभिजात तर्कशास्त्र / अभिजात
 
@@ -7615,7 +7797,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T114 — propositional variable</strong> (24 occurrences; medium priority)</summary>
+<summary><strong>T114 — propositional variable</strong> (25 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7643,6 +7825,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T114-OLP-0132-B006 | OLP-0132 ·  | [upstream/content/first-order-logic/completeness/construction-of-model.tex:15-34](../upstream/content/first-order-logic/completeness/construction-of-model.tex#L15) | [mr/content/first-order-logic/completeness/construction-of-model.tex:15-34](../mr/content/first-order-logic/completeness/construction-of-model.tex#L15) | not yet paginated |
 | T114-OLP-0132-B007 | OLP-0132 ·  | [upstream/content/first-order-logic/completeness/construction-of-model.tex:36-73](../upstream/content/first-order-logic/completeness/construction-of-model.tex#L36) | [mr/content/first-order-logic/completeness/construction-of-model.tex:36-74](../mr/content/first-order-logic/completeness/construction-of-model.tex#L36) | not yet paginated |
 | T114-OLP-0132-B017 | OLP-0132 ·  | [upstream/content/first-order-logic/completeness/construction-of-model.tex:182-190](../upstream/content/first-order-logic/completeness/construction-of-model.tex#L182) | [mr/content/first-order-logic/completeness/construction-of-model.tex:185-193](../mr/content/first-order-logic/completeness/construction-of-model.tex#L185) | not yet paginated |
+| T114-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
 
 **Chosen rendering/action:** विधानीय चल
 
@@ -7653,7 +7836,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T115 — propositional connective / logical connective</strong> (106 occurrences; medium priority)</summary>
+<summary><strong>T115 — propositional connective / logical connective</strong> (108 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7763,6 +7946,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T115-OLP-0158-B021 | OLP-0158 ·  | [upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:78-80](../upstream/content/first-order-logic/syntax-and-semantics/substitution.tex#L78) | [mr/content/first-order-logic/syntax-and-semantics/substitution.tex:83-85](../mr/content/first-order-logic/syntax-and-semantics/substitution.tex#L83) | not yet paginated |
 | T115-OLP-0160-B006 | OLP-0160 ·  | [upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33](../upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L13) | [mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33](../mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L13) | not yet paginated |
 | T115-OLP-0171-B007 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:35-40](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L35) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:35-40](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L35) | not yet paginated |
+| T115-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+| T115-OLP-0179-B016 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L97) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L85) | not yet paginated |
 
 **Chosen rendering/action:** विधानीय संयोजक / तार्किक संयोजक
 
@@ -7789,7 +7974,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T117 — material conditional / material implication</strong> (21 occurrences; routine priority)</summary>
+<summary><strong>T117 — material conditional / material implication</strong> (22 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7814,6 +7999,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T117-OLP-0122-B011 | OLP-0122 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:62-68](../upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex#L62) | [mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:64-71](../mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex#L64) | not yet paginated |
 | T117-OLP-0122-B012 | OLP-0122 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:70-77](../upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex#L70) | [mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:73-80](../mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex#L73) | not yet paginated |
 | T117-OLP-0122-B013 | OLP-0122 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:79-82](../upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex#L79) | [mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:82-85](../mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex#L82) | not yet paginated |
+| T117-OLP-0180-B006 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:13-29](../upstream/content/first-order-logic/beyond/modal-logics.tex#L13) | [mr/content/first-order-logic/beyond/modal-logics.tex:13-26](../mr/content/first-order-logic/beyond/modal-logics.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** वास्तविक अभिव्यंजन
 
@@ -7824,7 +8010,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T118 — theory / metatheory</strong> (32 occurrences; medium priority)</summary>
+<summary><strong>T118 — theory / metatheory</strong> (35 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7860,6 +8046,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T118-OLP-0171-B010 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L69) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L71) | not yet paginated |
 | T118-OLP-0172-B005 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:11-11](../upstream/content/first-order-logic/models-theories/set-theory.tex#L11) | [mr/content/first-order-logic/models-theories/set-theory.tex:11-11](../mr/content/first-order-logic/models-theories/set-theory.tex#L11) | not yet paginated |
 | T118-OLP-0172-B006 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:13-29](../upstream/content/first-order-logic/models-theories/set-theory.tex#L13) | [mr/content/first-order-logic/models-theories/set-theory.tex:13-28](../mr/content/first-order-logic/models-theories/set-theory.tex#L13) | not yet paginated |
+| T118-OLP-0174-B005 | OLP-0174 ·  | [upstream/content/first-order-logic/beyond/beyond.tex:10-17](../upstream/content/first-order-logic/beyond/beyond.tex#L10) | [mr/content/first-order-logic/beyond/beyond.tex:10-17](../mr/content/first-order-logic/beyond/beyond.tex#L10) | not yet paginated |
+| T118-OLP-0175-B006 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:13-21](../upstream/content/first-order-logic/beyond/introduction.tex#L13) | [mr/content/first-order-logic/beyond/introduction.tex:13-21](../mr/content/first-order-logic/beyond/introduction.tex#L13) | not yet paginated |
+| T118-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
 
 **Chosen rendering/action:** उपपत्ती / अधिउपपत्ती
 
@@ -7960,7 +8149,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T121 — satisfaction / satisfaction relation</strong> (241 occurrences; routine priority)</summary>
+<summary><strong>T121 — satisfaction / satisfaction relation</strong> (244 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8205,6 +8394,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T121-OLP-0166-B022 | OLP-0166 ·  | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L133) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L143) | not yet paginated |
 | T121-OLP-0168-B010 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:49-98](../upstream/content/first-order-logic/models-theories/introduction.tex#L49) | [mr/content/first-order-logic/models-theories/introduction.tex:50-97](../mr/content/first-order-logic/models-theories/introduction.tex#L50) | not yet paginated |
 | T121-OLP-0169-B007 | OLP-0169 ·  | [upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:39-43](../upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex#L39) | [mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:38-42](../mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex#L38) | not yet paginated |
+| T121-OLP-0179-B014 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:74-79](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L74) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:65-69](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L65) | not yet paginated |
+| T121-OLP-0179-B016 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L97) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L85) | not yet paginated |
+| T121-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
 
 **Chosen rendering/action:** पूर्ति / पूर्ति-संबंध
 
@@ -8239,7 +8431,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T123 — entailment / entails</strong> (105 occurrences; medium priority)</summary>
+<summary><strong>T123 — entailment / entails</strong> (106 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8348,6 +8540,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T123-OLP-0168-B007 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:28-31](../upstream/content/first-order-logic/models-theories/introduction.tex#L28) | [mr/content/first-order-logic/models-theories/introduction.tex:28-32](../mr/content/first-order-logic/models-theories/introduction.tex#L28) | not yet paginated |
 | T123-OLP-0168-B009 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:37-47](../upstream/content/first-order-logic/models-theories/introduction.tex#L37) | [mr/content/first-order-logic/models-theories/introduction.tex:38-48](../mr/content/first-order-logic/models-theories/introduction.tex#L38) | not yet paginated |
 | T123-OLP-0168-B010 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:49-98](../upstream/content/first-order-logic/models-theories/introduction.tex#L49) | [mr/content/first-order-logic/models-theories/introduction.tex:50-97](../mr/content/first-order-logic/models-theories/introduction.tex#L50) | not yet paginated |
+| T123-OLP-0177-B015 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | not yet paginated |
 
 **Chosen rendering/action:** तार्किक निष्पन्नता / तार्किकरीत्या निष्पन्न होणे
 
@@ -8438,7 +8631,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T125 — necessary / contingent</strong> (4 occurrences; medium priority)</summary>
+<summary><strong>T125 — necessary / contingent</strong> (5 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8446,6 +8639,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T125-OLP-0062-B007 | OLP-0062 · 7.6 चिन्हार्थविषयक संकल्पना | [upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L15) | [mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L15) | 83 |
 | T125-OLP-0062-B008 | OLP-0062 · 7.6 चिन्हार्थविषयक संकल्पना | [upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:34-43](../upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L34) | [mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:35-44](../mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex#L35) | 83 |
 | T125-OLP-0140-B006 | OLP-0140 ·  | [upstream/content/first-order-logic/introduction/first-order-logic.tex:13-31](../upstream/content/first-order-logic/introduction/first-order-logic.tex#L13) | [mr/content/first-order-logic/introduction/first-order-logic.tex:13-31](../mr/content/first-order-logic/introduction/first-order-logic.tex#L13) | not yet paginated |
+| T125-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
 
 **Chosen rendering/action:** अनिवार्य / परिस्थितीवश
 
@@ -8456,7 +8650,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T126 — sentence / proposition / statement</strong> (157 occurrences; routine priority)</summary>
+<summary><strong>T126 — sentence / proposition / statement</strong> (162 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8617,6 +8811,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T126-OLP-0173-B007 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:21-35](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L21) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:20-35](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L20) | not yet paginated |
 | T126-OLP-0173-B009 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:39-54](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L39) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:39-54](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L39) | not yet paginated |
 | T126-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
+| T126-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
+| T126-OLP-0176-B009 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:44-64](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L44) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:42-63](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L42) | not yet paginated |
+| T126-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
+| T126-OLP-0177-B012 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L169) | [mr/content/first-order-logic/beyond/second-order-logic.tex:159-170](../mr/content/first-order-logic/beyond/second-order-logic.tex#L159) | not yet paginated |
+| T126-OLP-0179-B025 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L163) | not yet paginated |
 
 **Chosen rendering/action:** वाक्य / विधान
 
@@ -8694,7 +8893,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (225 occurrences; medium priority)</summary>
+<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (232 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8923,6 +9122,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T128-OLP-0158-B019 | OLP-0158 ·  | [upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:70-72](../upstream/content/first-order-logic/syntax-and-semantics/substitution.tex#L70) | [mr/content/first-order-logic/syntax-and-semantics/substitution.tex:75-77](../mr/content/first-order-logic/syntax-and-semantics/substitution.tex#L75) | not yet paginated |
 | T128-OLP-0158-B020 | OLP-0158 ·  | [upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:74-76](../upstream/content/first-order-logic/syntax-and-semantics/substitution.tex#L74) | [mr/content/first-order-logic/syntax-and-semantics/substitution.tex:79-81](../mr/content/first-order-logic/syntax-and-semantics/substitution.tex#L79) | not yet paginated |
 | T128-OLP-0158-B021 | OLP-0158 ·  | [upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:78-80](../upstream/content/first-order-logic/syntax-and-semantics/substitution.tex#L78) | [mr/content/first-order-logic/syntax-and-semantics/substitution.tex:83-85](../mr/content/first-order-logic/syntax-and-semantics/substitution.tex#L83) | not yet paginated |
+| T128-OLP-0179-B014 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:74-79](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L74) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:65-69](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L65) | not yet paginated |
+| T128-OLP-0179-B016 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L97) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L85) | not yet paginated |
+| T128-OLP-0179-B017 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:114-126](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L114) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:100-111](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L100) | not yet paginated |
+| T128-OLP-0179-B019 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:135-149](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L135) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:120-133](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L120) | not yet paginated |
+| T128-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
+| T128-OLP-0180-B006 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:13-29](../upstream/content/first-order-logic/beyond/modal-logics.tex#L13) | [mr/content/first-order-logic/beyond/modal-logics.tex:13-26](../mr/content/first-order-logic/beyond/modal-logics.tex#L13) | not yet paginated |
+| T128-OLP-0180-B007 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:31-39](../upstream/content/first-order-logic/beyond/modal-logics.tex#L31) | [mr/content/first-order-logic/beyond/modal-logics.tex:28-35](../mr/content/first-order-logic/beyond/modal-logics.tex#L28) | not yet paginated |
 
 **Chosen rendering/action:** नकरण / संधियोग / विकल्पयोग / सशर्त (संकेतार्थक) / द्विसशर्त
 
@@ -9023,7 +9229,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T131 — atomic formula</strong> (62 occurrences; medium priority)</summary>
+<summary><strong>T131 — atomic formula</strong> (65 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9089,6 +9295,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T131-OLP-0156-B021 | OLP-0156 ·  | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L182) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L181) | not yet paginated |
 | T131-OLP-0157-B006 | OLP-0157 ·  | [upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19](../upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex#L13) | [mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19](../mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex#L13) | not yet paginated |
 | T131-OLP-0160-B006 | OLP-0160 ·  | [upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33](../upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L13) | [mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33](../mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L13) | not yet paginated |
+| T131-OLP-0177-B006 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/second-order-logic.tex:13-28](../mr/content/first-order-logic/beyond/second-order-logic.tex#L13) | not yet paginated |
+| T131-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
+| T131-OLP-0179-B019 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:135-149](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L135) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:120-133](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L120) | not yet paginated |
 
 **Chosen rendering/action:** आण्विक सूत्र
 
@@ -9337,7 +9546,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T140 — inductive hypothesis</strong> (41 occurrences; medium priority)</summary>
+<summary><strong>T140 — inductive hypothesis</strong> (42 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9382,6 +9591,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T140-OLP-0153-B019 | OLP-0153 ·  | [upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:99-101](../upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L99) | [mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:96-98](../mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L96) | not yet paginated |
 | T140-OLP-0153-B020 | OLP-0153 ·  | [upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:103-106](../upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L103) | [mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:100-103](../mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L100) | not yet paginated |
 | T140-OLP-0153-B021 | OLP-0153 ·  | [upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:108-111](../upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L108) | [mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:105-108](../mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L105) | not yet paginated |
+| T140-OLP-0179-B024 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:177-178](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L177) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:159-161](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L159) | not yet paginated |
 
 **Chosen rendering/action:** विगमन गृहीतक
 
@@ -9462,7 +9672,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T143 — ordinary induction / strong induction</strong> (24 occurrences; routine priority)</summary>
+<summary><strong>T143 — ordinary induction / strong induction</strong> (25 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9490,6 +9700,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T143-OLP-0165-B009 | OLP-0165 ·  | [upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:39-44](../upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex#L39) | [mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:39-44](../mr/content/first-order-logic/syntax-and-semantics/extensionality.tex#L39) | not yet paginated |
 | T143-OLP-0165-B015 | OLP-0165 ·  | [upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:70-75](../upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex#L70) | [mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:71-76](../mr/content/first-order-logic/syntax-and-semantics/extensionality.tex#L71) | not yet paginated |
 | T143-OLP-0165-B018 | OLP-0165 ·  | [upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:86-103](../upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex#L86) | [mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:88-106](../mr/content/first-order-logic/syntax-and-semantics/extensionality.tex#L88) | not yet paginated |
+| T143-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
 
 **Chosen rendering/action:** साधे विगमन / प्रबल विगमन
 
@@ -9699,7 +9910,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T151 — axiomatic system / inference rule</strong> (162 occurrences; routine priority)</summary>
+<summary><strong>T151 — axiomatic system / inference rule</strong> (166 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9865,6 +10076,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T151-OLP-0161-B013 | OLP-0161 ·  | [upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107](../upstream/content/first-order-logic/syntax-and-semantics/structures.tex#L94) | [mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108](../mr/content/first-order-logic/syntax-and-semantics/structures.tex#L95) | not yet paginated |
 | T151-OLP-0168-B005 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:12-19](../upstream/content/first-order-logic/models-theories/introduction.tex#L12) | [mr/content/first-order-logic/models-theories/introduction.tex:12-19](../mr/content/first-order-logic/models-theories/introduction.tex#L12) | not yet paginated |
 | T151-OLP-0168-B006 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:21-26](../upstream/content/first-order-logic/models-theories/introduction.tex#L21) | [mr/content/first-order-logic/models-theories/introduction.tex:21-26](../mr/content/first-order-logic/models-theories/introduction.tex#L21) | not yet paginated |
+| T151-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
+| T151-OLP-0179-B015 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:81-95](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L81) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:71-83](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L71) | not yet paginated |
+| T151-OLP-0180-B010 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | not yet paginated |
+| T151-OLP-0181-B006 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:13-20](../upstream/content/first-order-logic/beyond/other-logics.tex#L13) | [mr/content/first-order-logic/beyond/other-logics.tex:13-19](../mr/content/first-order-logic/beyond/other-logics.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** स्वयंसिद्धकीय पद्धत / निगमन नियम
 
@@ -10025,7 +10240,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T155 — soundness / sound / unsound (of a proof system)</strong> (92 occurrences; high priority)</summary>
+<summary><strong>T155 — soundness / sound / unsound (of a proof system)</strong> (97 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -10121,6 +10336,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T155-OLP-0148-B009 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L50) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L51) | not yet paginated |
 | T155-OLP-0148-B010 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L57) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L58) | not yet paginated |
 | T155-OLP-0161-B013 | OLP-0161 ·  | [upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107](../upstream/content/first-order-logic/syntax-and-semantics/structures.tex#L94) | [mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108](../mr/content/first-order-logic/syntax-and-semantics/structures.tex#L95) | not yet paginated |
+| T155-OLP-0177-B009 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:83-98](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L83) | [mr/content/first-order-logic/beyond/second-order-logic.tex:78-91](../mr/content/first-order-logic/beyond/second-order-logic.tex#L78) | not yet paginated |
+| T155-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
+| T155-OLP-0179-B025 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L163) | not yet paginated |
+| T155-OLP-0179-B026 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L186) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L168) | not yet paginated |
+| T155-OLP-0180-B010 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | not yet paginated |
 
 **Chosen rendering/action:** निर्दोषता / निर्दोष / सदोष
 
@@ -10131,7 +10351,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (188 occurrences; routine priority)</summary>
+<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (190 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -10323,6 +10543,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T156-OLP-0137-B008 | OLP-0137 ·  | [upstream/content/first-order-logic/completeness/downward-ls.tex:33-38](../upstream/content/first-order-logic/completeness/downward-ls.tex#L33) | [mr/content/first-order-logic/completeness/downward-ls.tex:33-38](../mr/content/first-order-logic/completeness/downward-ls.tex#L33) | not yet paginated |
 | T156-OLP-0148-B008 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L36) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L37) | not yet paginated |
 | T156-OLP-0168-B010 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:49-98](../upstream/content/first-order-logic/models-theories/introduction.tex#L49) | [mr/content/first-order-logic/models-theories/introduction.tex:50-97](../mr/content/first-order-logic/models-theories/introduction.tex#L50) | not yet paginated |
+| T156-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
+| T156-OLP-0180-B009 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:50-65](../upstream/content/first-order-logic/beyond/modal-logics.tex#L50) | [mr/content/first-order-logic/beyond/modal-logics.tex:45-59](../mr/content/first-order-logic/beyond/modal-logics.tex#L45) | not yet paginated |
 
 **Chosen rendering/action:** सुसंगतता / विसंगतता / सुसंगत / विसंगत
 
@@ -10578,7 +10800,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T161 — premise / conclusion / antecedent / consequent / disjunct</strong> (55 occurrences; routine priority)</summary>
+<summary><strong>T161 — premise / conclusion / antecedent / consequent / disjunct</strong> (56 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -10637,6 +10859,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T161-OLP-0097-B008 | OLP-0097 · 10.13 एकरूपता सह निर्दोषता | [upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45](../upstream/content/first-order-logic/natural-deduction/soundness-identity.tex#L23) | [mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48](../mr/content/first-order-logic/natural-deduction/soundness-identity.tex#L23) | 130–131 |
 | T161-OLP-0140-B008 | OLP-0140 ·  | [upstream/content/first-order-logic/introduction/first-order-logic.tex:60-73](../upstream/content/first-order-logic/introduction/first-order-logic.tex#L60) | [mr/content/first-order-logic/introduction/first-order-logic.tex:62-75](../mr/content/first-order-logic/introduction/first-order-logic.tex#L62) | not yet paginated |
 | T161-OLP-0140-B009 | OLP-0140 ·  | [upstream/content/first-order-logic/introduction/first-order-logic.tex:75-86](../upstream/content/first-order-logic/introduction/first-order-logic.tex#L75) | [mr/content/first-order-logic/introduction/first-order-logic.tex:77-90](../mr/content/first-order-logic/introduction/first-order-logic.tex#L77) | not yet paginated |
+| T161-OLP-0180-B006 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:13-29](../upstream/content/first-order-logic/beyond/modal-logics.tex#L13) | [mr/content/first-order-logic/beyond/modal-logics.tex:13-26](../mr/content/first-order-logic/beyond/modal-logics.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** आधारविधान / निष्कर्ष / पूर्वांग / उत्तरांग / विकल्पघटक
 
@@ -10665,12 +10888,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T163 — Gerhard Gentzen / Stanisław Jaśkowski / Dag Prawitz / Frederic Fitch</strong> (2 occurrences; medium priority)</summary>
+<summary><strong>T163 — Gerhard Gentzen / Stanisław Jaśkowski / Dag Prawitz / Frederic Fitch</strong> (4 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T163-OLP-0066-B010 | OLP-0066 · 8.3 नैसर्गिक निगमन | [upstream/content/first-order-logic/proof-systems/natural-deduction.tex:81-88](../upstream/content/first-order-logic/proof-systems/natural-deduction.tex#L81) | [mr/content/first-order-logic/proof-systems/natural-deduction.tex:78-86](../mr/content/first-order-logic/proof-systems/natural-deduction.tex#L78) | 86–87 |
 | T163-OLP-0069-B005 | OLP-0069 · 9 क्रमवर्ती कलन — प्रकरण-प्रस्तावना | [upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | [mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | 90 |
+| T163-OLP-0179-B018 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:128-133](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L128) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:113-118](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L113) | not yet paginated |
+| T163-OLP-0179-B019 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:135-149](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L135) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:120-133](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L120) | not yet paginated |
 
 **Chosen rendering/action:** गरहार्ड गेंटझेन / स्टॅनिस्लॉ यास्कोव्हस्की / डॅग प्रावित्झ / फ्रेडरिक फिच
 
@@ -10884,7 +11109,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T167 — axiomatic derivation / axiom schema / sentence schema</strong> (21 occurrences; routine priority)</summary>
+<summary><strong>T167 — axiomatic derivation / axiom schema / sentence schema</strong> (27 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -10909,6 +11134,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T167-OLP-0125-B013 | OLP-0125 ·  | [upstream/content/first-order-logic/axiomatic-deduction/identity.tex:47-54](../upstream/content/first-order-logic/axiomatic-deduction/identity.tex#L47) | [mr/content/first-order-logic/axiomatic-deduction/identity.tex:49-56](../mr/content/first-order-logic/axiomatic-deduction/identity.tex#L49) | not yet paginated |
 | T167-OLP-0170-B008 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:40-57](../upstream/content/first-order-logic/models-theories/theories.tex#L40) | [mr/content/first-order-logic/models-theories/theories.tex:40-57](../mr/content/first-order-logic/models-theories/theories.tex#L40) | not yet paginated |
 | T167-OLP-0172-B014 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:173-182](../upstream/content/first-order-logic/models-theories/set-theory.tex#L173) | [mr/content/first-order-logic/models-theories/set-theory.tex:171-180](../mr/content/first-order-logic/models-theories/set-theory.tex#L171) | not yet paginated |
+| T167-OLP-0176-B009 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:44-64](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L44) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:42-63](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L42) | not yet paginated |
+| T167-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
+| T167-OLP-0177-B008 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:67-81](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L67) | [mr/content/first-order-logic/beyond/second-order-logic.tex:64-76](../mr/content/first-order-logic/beyond/second-order-logic.tex#L64) | not yet paginated |
+| T167-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
+| T167-OLP-0177-B015 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | not yet paginated |
+| T167-OLP-0179-B017 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:114-126](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L114) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:100-111](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L100) | not yet paginated |
 
 **Chosen rendering/action:** स्वयंसिद्धकीय निष्पत्ती / स्वयंसिद्धक-रूपबंध / वाक्य-रूपबंध
 
@@ -11011,12 +11242,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T170 — Gottlob Frege / Alfred North Whitehead / Bertrand Russell / David Hilbert; Frege system / Hilbert system</strong> (2 occurrences; routine priority)</summary>
+<summary><strong>T170 — Gottlob Frege / Alfred North Whitehead / Bertrand Russell / David Hilbert; Frege system / Hilbert system</strong> (3 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T170-OLP-0068-B010 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L70) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L71) | 88–89 |
 | T170-OLP-0127-B007 | OLP-0127 ·  | [upstream/content/first-order-logic/completeness/introduction.tex:24-47](../upstream/content/first-order-logic/completeness/introduction.tex#L24) | [mr/content/first-order-logic/completeness/introduction.tex:24-44](../mr/content/first-order-logic/completeness/introduction.tex#L24) | not yet paginated |
+| T170-OLP-0177-B008 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:67-81](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L67) | [mr/content/first-order-logic/beyond/second-order-logic.tex:64-76](../mr/content/first-order-logic/beyond/second-order-logic.tex#L64) | not yet paginated |
 
 **Chosen rendering/action:** गोटलोप फ्रेग / ॲल्फ्रेड नॉर्थ व्हाइटहेड / बर्ट्रंड रसेल / डाव्हीट हिल्बर्ट; फ्रेग पद्धत / हिल्बर्ट पद्धत
 
@@ -11027,11 +11259,19 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T171 — classical logic / classical first-order logic</strong> (1 occurrence; medium priority)</summary>
+<summary><strong>T171 — classical logic / classical first-order logic</strong> (9 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T171-OLP-0069-B005 | OLP-0069 · 9 क्रमवर्ती कलन — प्रकरण-प्रस्तावना | [upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | [mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17](../mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex#L12) | 90 |
+| T171-OLP-0179-B018 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:128-133](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L128) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:113-118](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L113) | not yet paginated |
+| T171-OLP-0179-B019 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:135-149](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L135) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:120-133](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L120) | not yet paginated |
+| T171-OLP-0179-B020 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:151-157](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L151) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:135-141](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L135) | not yet paginated |
+| T171-OLP-0179-B021 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:159-164](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L159) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:143-147](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L143) | not yet paginated |
+| T171-OLP-0179-B022 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:166-170](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L166) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:149-152](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L149) | not yet paginated |
+| T171-OLP-0179-B023 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:172-175](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L172) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:154-157](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L154) | not yet paginated |
+| T171-OLP-0179-B024 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:177-178](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L177) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:159-161](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L159) | not yet paginated |
+| T171-OLP-0179-B026 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L186) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L168) | not yet paginated |
 
 **Chosen rendering/action:** अभिजात तर्कशास्त्र / अभिजात प्रथम-क्रम तर्कशास्त्र
 
@@ -11590,7 +11830,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T181 — compactness (proof-theoretic property)</strong> (28 occurrences; medium priority)</summary>
+<summary><strong>T181 — compactness (proof-theoretic property)</strong> (29 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -11622,6 +11862,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T181-OLP-0147-B008 | OLP-0147 ·  | [upstream/content/first-order-logic/introduction/models-theories.tex:56-68](../upstream/content/first-order-logic/introduction/models-theories.tex#L56) | [mr/content/first-order-logic/introduction/models-theories.tex:58-68](../mr/content/first-order-logic/introduction/models-theories.tex#L58) | not yet paginated |
 | T181-OLP-0148-B009 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L50) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L51) | not yet paginated |
 | T181-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
+| T181-OLP-0177-B014 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L204) | [mr/content/first-order-logic/beyond/second-order-logic.tex:192-196](../mr/content/first-order-logic/beyond/second-order-logic.tex#L192) | not yet paginated |
 
 **Chosen rendering/action:** संहतता
 
@@ -11686,7 +11927,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T184 — derivability / provability relation</strong> (298 occurrences; medium priority)</summary>
+<summary><strong>T184 — derivability / provability relation</strong> (302 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -11988,6 +12229,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T184-OLP-0136-B011 | OLP-0136 ·  | [upstream/content/first-order-logic/completeness/compactness-direct.tex:46-50](../upstream/content/first-order-logic/completeness/compactness-direct.tex#L46) | [mr/content/first-order-logic/completeness/compactness-direct.tex:45-49](../mr/content/first-order-logic/completeness/compactness-direct.tex#L45) | not yet paginated |
 | T184-OLP-0136-B012 | OLP-0136 ·  | [upstream/content/first-order-logic/completeness/compactness-direct.tex:52-56](../upstream/content/first-order-logic/completeness/compactness-direct.tex#L52) | [mr/content/first-order-logic/completeness/compactness-direct.tex:51-55](../mr/content/first-order-logic/completeness/compactness-direct.tex#L51) | not yet paginated |
 | T184-OLP-0148-B006 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L13) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L13) | not yet paginated |
+| T184-OLP-0179-B020 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:151-157](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L151) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:135-141](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L135) | not yet paginated |
+| T184-OLP-0179-B023 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:172-175](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L172) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:154-157](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L154) | not yet paginated |
+| T184-OLP-0179-B024 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:177-178](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L177) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:159-161](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L159) | not yet paginated |
+| T184-OLP-0180-B009 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:50-65](../upstream/content/first-order-logic/beyond/modal-logics.tex#L50) | [mr/content/first-order-logic/beyond/modal-logics.tex:45-59](../mr/content/first-order-logic/beyond/modal-logics.tex#L45) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धतायोग्यता / सिद्धतायोग्य
 
@@ -11998,11 +12243,26 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T185 — intuitionistic logic</strong> (1 occurrence; routine priority)</summary>
+<summary><strong>T185 — intuitionistic logic</strong> (16 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T185-OLP-0089-B015 | OLP-0089 · 10.5 निष्पत्ती: उदाहरणे | [upstream/content/first-order-logic/natural-deduction/proving-things.tex:178-265](../upstream/content/first-order-logic/natural-deduction/proving-things.tex#L178) | [mr/content/first-order-logic/natural-deduction/proving-things.tex:171-258](../mr/content/first-order-logic/natural-deduction/proving-things.tex#L171) | 114–118 |
+| T185-OLP-0178-B011 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:114-123](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L114) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:113-120](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L113) | not yet paginated |
+| T185-OLP-0179-B005 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:11-11](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L11) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:11-11](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L11) | not yet paginated |
+| T185-OLP-0179-B006 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:13-17](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L13) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:13-16](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L13) | not yet paginated |
+| T185-OLP-0179-B014 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:74-79](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L74) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:65-69](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L65) | not yet paginated |
+| T185-OLP-0179-B015 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:81-95](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L81) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:71-83](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L71) | not yet paginated |
+| T185-OLP-0179-B016 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L97) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L85) | not yet paginated |
+| T185-OLP-0179-B017 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:114-126](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L114) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:100-111](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L100) | not yet paginated |
+| T185-OLP-0179-B018 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:128-133](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L128) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:113-118](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L113) | not yet paginated |
+| T185-OLP-0179-B019 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:135-149](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L135) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:120-133](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L120) | not yet paginated |
+| T185-OLP-0179-B020 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:151-157](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L151) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:135-141](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L135) | not yet paginated |
+| T185-OLP-0179-B021 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:159-164](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L159) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:143-147](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L143) | not yet paginated |
+| T185-OLP-0179-B022 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:166-170](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L166) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:149-152](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L149) | not yet paginated |
+| T185-OLP-0179-B023 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:172-175](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L172) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:154-157](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L154) | not yet paginated |
+| T185-OLP-0179-B024 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:177-178](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L177) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:159-161](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L159) | not yet paginated |
+| T185-OLP-0179-B025 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L163) | not yet paginated |
 
 **Chosen rendering/action:** अंतःप्रज्ञावादी तर्कशास्त्र
 
@@ -12073,12 +12333,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T189 — double-negation elimination</strong> (2 occurrences; medium priority)</summary>
+<summary><strong>T189 — double-negation elimination</strong> (3 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T189-OLP-0119-B018 | OLP-0119 ·  | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | not yet paginated |
 | T189-OLP-0121-B011 | OLP-0121 ·  | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L46) | not yet paginated |
+| T189-OLP-0179-B017 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:114-126](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L114) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:100-111](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L100) | not yet paginated |
 
 **Chosen rendering/action:** द्विनकरण विलोपन
 
@@ -12242,12 +12503,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T194 — witness / counterexample for a quantified sentence</strong> (2 occurrences; medium priority)</summary>
+<summary><strong>T194 — witness / counterexample for a quantified sentence</strong> (3 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T194-OLP-0130-B006 | OLP-0130 ·  | [upstream/content/first-order-logic/completeness/henkin-expansions.tex:13-30](../upstream/content/first-order-logic/completeness/henkin-expansions.tex#L13) | [mr/content/first-order-logic/completeness/henkin-expansions.tex:13-29](../mr/content/first-order-logic/completeness/henkin-expansions.tex#L13) | not yet paginated |
 | T194-OLP-0130-B018 | OLP-0130 ·  | [upstream/content/first-order-logic/completeness/henkin-expansions.tex:149-158](../upstream/content/first-order-logic/completeness/henkin-expansions.tex#L149) | [mr/content/first-order-logic/completeness/henkin-expansions.tex:150-159](../mr/content/first-order-logic/completeness/henkin-expansions.tex#L150) | not yet paginated |
+| T194-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
 
 **Chosen rendering/action:** साक्षी / प्रतिउदाहरण
 
@@ -12397,7 +12659,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T201 — Löwenheim–Skolem Theorem / Skolem's Paradox</strong> (8 occurrences; high priority)</summary>
+<summary><strong>T201 — Löwenheim–Skolem Theorem / Skolem's Paradox</strong> (9 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12409,6 +12671,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T201-OLP-0147-B008 | OLP-0147 ·  | [upstream/content/first-order-logic/introduction/models-theories.tex:56-68](../upstream/content/first-order-logic/introduction/models-theories.tex#L56) | [mr/content/first-order-logic/introduction/models-theories.tex:58-68](../mr/content/first-order-logic/introduction/models-theories.tex#L58) | not yet paginated |
 | T201-OLP-0148-B009 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L50) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L51) | not yet paginated |
 | T201-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
+| T201-OLP-0177-B014 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L204) | [mr/content/first-order-logic/beyond/second-order-logic.tex:192-196](../mr/content/first-order-logic/beyond/second-order-logic.tex#L192) | not yet paginated |
 
 **Chosen rendering/action:** लोव्हेनहाइम--स्कोलेम प्रमेय / स्कोलेमची विरोधापत्ती
 
@@ -12419,7 +12682,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T202 — formal language / formal derivation</strong> (10 occurrences; routine priority)</summary>
+<summary><strong>T202 — formal language / formal derivation</strong> (12 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12433,6 +12696,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T202-OLP-0148-B010 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L57) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L58) | not yet paginated |
 | T202-OLP-0151-B005 | OLP-0151 ·  | [upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:11-11](../upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex#L11) | [mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:11-11](../mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex#L11) | not yet paginated |
 | T202-OLP-0152-B006 | OLP-0152 ·  | [upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15](../upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex#L13) | [mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15](../mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex#L13) | not yet paginated |
+| T202-OLP-0175-B006 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:13-21](../upstream/content/first-order-logic/beyond/introduction.tex#L13) | [mr/content/first-order-logic/beyond/introduction.tex:13-21](../mr/content/first-order-logic/beyond/introduction.tex#L13) | not yet paginated |
+| T202-OLP-0175-B008 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:46-48](../upstream/content/first-order-logic/beyond/introduction.tex#L46) | [mr/content/first-order-logic/beyond/introduction.tex:44-46](../mr/content/first-order-logic/beyond/introduction.tex#L44) | not yet paginated |
 
 **Chosen rendering/action:** आकारिक भाषा / आकारिक निष्पत्ती
 
@@ -12572,7 +12837,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T205 — variable / constant / function (as language symbols)</strong> (30 occurrences; medium priority)</summary>
+<summary><strong>T205 — variable / constant / function (as language symbols)</strong> (38 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12606,6 +12871,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T205-OLP-0171-B008 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:42-53](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L42) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:42-53](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L42) | not yet paginated |
 | T205-OLP-0171-B009 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L55) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:55-69](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L55) | not yet paginated |
 | T205-OLP-0171-B013 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L101) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L103) | not yet paginated |
+| T205-OLP-0176-B007 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:19-26](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L19) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:19-25](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L19) | not yet paginated |
+| T205-OLP-0176-B008 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:28-42](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L28) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:27-40](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L27) | not yet paginated |
+| T205-OLP-0177-B006 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/second-order-logic.tex:13-28](../mr/content/first-order-logic/beyond/second-order-logic.tex#L13) | not yet paginated |
+| T205-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
+| T205-OLP-0177-B016 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:226-234](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L226) | [mr/content/first-order-logic/beyond/second-order-logic.tex:213-221](../mr/content/first-order-logic/beyond/second-order-logic.tex#L213) | not yet paginated |
+| T205-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
+| T205-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+| T205-OLP-0179-B009 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:32-35](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L32) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:28-30](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L28) | not yet paginated |
 
 **Chosen rendering/action:** चर / स्थिर / फलन
 
@@ -12616,7 +12889,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T206 — logical symbol / non-logical symbol / standard language</strong> (7 occurrences; medium priority)</summary>
+<summary><strong>T206 — logical symbol / non-logical symbol / standard language</strong> (8 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12627,6 +12900,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T206-OLP-0151-B010 | OLP-0151 ·  | [upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:65-68](../upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex#L65) | [mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:61-63](../mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex#L61) | not yet paginated |
 | T206-OLP-0161-B009 | OLP-0161 ·  | [upstream/content/first-order-logic/syntax-and-semantics/structures.tex:53-65](../upstream/content/first-order-logic/syntax-and-semantics/structures.tex#L53) | [mr/content/first-order-logic/syntax-and-semantics/structures.tex:54-66](../mr/content/first-order-logic/syntax-and-semantics/structures.tex#L54) | not yet paginated |
 | T206-OLP-0168-B009 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:37-47](../upstream/content/first-order-logic/models-theories/introduction.tex#L37) | [mr/content/first-order-logic/models-theories/introduction.tex:38-48](../mr/content/first-order-logic/models-theories/introduction.tex#L38) | not yet paginated |
+| T206-OLP-0179-B022 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:166-170](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L166) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:149-152](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L149) | not yet paginated |
 
 **Chosen rendering/action:** तार्किक चिन्ह / अतार्किक चिन्ह / मानक भाषा
 
@@ -12637,7 +12911,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T207 — n-place / arity</strong> (14 occurrences; routine priority)</summary>
+<summary><strong>T207 — n-place / arity</strong> (16 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12655,6 +12929,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T207-OLP-0161-B007 | OLP-0161 ·  | [upstream/content/first-order-logic/syntax-and-semantics/structures.tex:28-42](../upstream/content/first-order-logic/syntax-and-semantics/structures.tex#L28) | [mr/content/first-order-logic/syntax-and-semantics/structures.tex:29-43](../mr/content/first-order-logic/syntax-and-semantics/structures.tex#L29) | not yet paginated |
 | T207-OLP-0161-B008 | OLP-0161 ·  | [upstream/content/first-order-logic/syntax-and-semantics/structures.tex:44-51](../upstream/content/first-order-logic/syntax-and-semantics/structures.tex#L44) | [mr/content/first-order-logic/syntax-and-semantics/structures.tex:45-52](../mr/content/first-order-logic/syntax-and-semantics/structures.tex#L45) | not yet paginated |
 | T207-OLP-0162-B009 | OLP-0162 ·  | [upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66](../upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex#L36) | [mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68](../mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex#L37) | not yet paginated |
+| T207-OLP-0177-B006 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/second-order-logic.tex:13-28](../mr/content/first-order-logic/beyond/second-order-logic.tex#L13) | not yet paginated |
+| T207-OLP-0177-B016 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:226-234](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L226) | [mr/content/first-order-logic/beyond/second-order-logic.tex:213-221](../mr/content/first-order-logic/beyond/second-order-logic.tex#L213) | not yet paginated |
 
 **Chosen rendering/action:** n-स्थानी / स्थानसंख्या
 
@@ -12665,7 +12941,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T208 — universal quantifier / existential quantifier</strong> (68 occurrences; routine priority)</summary>
+<summary><strong>T208 — universal quantifier / existential quantifier</strong> (73 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12737,6 +13013,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T208-OLP-0166-B021 | OLP-0166 ·  | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:124-131](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L124) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:134-141](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L134) | not yet paginated |
 | T208-OLP-0166-B022 | OLP-0166 ·  | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L133) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L143) | not yet paginated |
 | T208-OLP-0166-B023 | OLP-0166 ·  | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:153-155](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L153) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:163-165](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L163) | not yet paginated |
+| T208-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
+| T208-OLP-0176-B007 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:19-26](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L19) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:19-25](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L19) | not yet paginated |
+| T208-OLP-0177-B006 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/second-order-logic.tex:13-28](../mr/content/first-order-logic/beyond/second-order-logic.tex#L13) | not yet paginated |
+| T208-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
+| T208-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
 
 **Chosen rendering/action:** वैश्विक संख्यापक / अस्तित्ववाची संख्यापक
 
@@ -12911,7 +13192,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T216 — substitution / free for substitution / variable capture</strong> (33 occurrences; routine priority)</summary>
+<summary><strong>T216 — substitution / free for substitution / variable capture</strong> (34 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12948,6 +13229,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T216-OLP-0165-B022 | OLP-0165 ·  | [upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:119-135](../upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex#L119) | [mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:124-140](../mr/content/first-order-logic/syntax-and-semantics/extensionality.tex#L124) | not yet paginated |
 | T216-OLP-0166-B015 | OLP-0166 ·  | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:82-90](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L82) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:86-96](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L86) | not yet paginated |
 | T216-OLP-0166-B022 | OLP-0166 ·  | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L133) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L143) | not yet paginated |
+| T216-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
 
 **Chosen rendering/action:** आदेशन / आदेशनासाठी मुक्त / चरग्रहण
 
@@ -12973,7 +13255,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T218 — structure / interpretation (model theory)</strong> (116 occurrences; medium priority)</summary>
+<summary><strong>T218 — structure / interpretation (model theory)</strong> (129 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13093,6 +13375,19 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T218-OLP-0173-B009 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:39-54](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L39) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:39-54](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L39) | not yet paginated |
 | T218-OLP-0173-B010 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:56-61](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L56) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:56-62](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L56) | not yet paginated |
 | T218-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
+| T218-OLP-0176-B009 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:44-64](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L44) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:42-63](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L42) | not yet paginated |
+| T218-OLP-0177-B009 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:83-98](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L83) | [mr/content/first-order-logic/beyond/second-order-logic.tex:78-91](../mr/content/first-order-logic/beyond/second-order-logic.tex#L78) | not yet paginated |
+| T218-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
+| T218-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T218-OLP-0177-B012 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L169) | [mr/content/first-order-logic/beyond/second-order-logic.tex:159-170](../mr/content/first-order-logic/beyond/second-order-logic.tex#L159) | not yet paginated |
+| T218-OLP-0177-B013 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L183) | [mr/content/first-order-logic/beyond/second-order-logic.tex:172-190](../mr/content/first-order-logic/beyond/second-order-logic.tex#L172) | not yet paginated |
+| T218-OLP-0177-B015 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | not yet paginated |
+| T218-OLP-0178-B010 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:102-112](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L102) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:102-111](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L102) | not yet paginated |
+| T218-OLP-0178-B011 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:114-123](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L114) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:113-120](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L113) | not yet paginated |
+| T218-OLP-0179-B026 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L186) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L168) | not yet paginated |
+| T218-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
+| T218-OLP-0180-B008 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:41-48](../upstream/content/first-order-logic/beyond/modal-logics.tex#L41) | [mr/content/first-order-logic/beyond/modal-logics.tex:37-43](../mr/content/first-order-logic/beyond/modal-logics.tex#L37) | not yet paginated |
+| T218-OLP-0180-B010 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | not yet paginated |
 
 **Chosen rendering/action:** रचना / अर्थनिर्धारण
 
@@ -13281,7 +13576,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T229 — expressible by sentences / structural property</strong> (7 occurrences; medium priority)</summary>
+<summary><strong>T229 — expressible by sentences / structural property</strong> (8 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13292,6 +13587,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T229-OLP-0173-B005 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:11-11](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L11) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:11-11](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L11) | not yet paginated |
 | T229-OLP-0173-B006 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:13-19](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L13) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:13-18](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L13) | not yet paginated |
 | T229-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
+| T229-OLP-0177-B013 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L183) | [mr/content/first-order-logic/beyond/second-order-logic.tex:172-190](../mr/content/first-order-logic/beyond/second-order-logic.tex#L172) | not yet paginated |
 
 **Chosen rendering/action:** वाक्यांनी व्यक्त करता येणारा / रचनात्मक गुणधर्म
 
@@ -13317,11 +13613,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T231 — group / group theory (algebra)</strong> (1 occurrence; routine priority)</summary>
+<summary><strong>T231 — group / group theory (algebra)</strong> (2 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T231-OLP-0170-B007 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:29-38](../upstream/content/first-order-logic/models-theories/theories.tex#L29) | [mr/content/first-order-logic/models-theories/theories.tex:29-38](../mr/content/first-order-logic/models-theories/theories.tex#L29) | not yet paginated |
+| T231-OLP-0176-B006 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:13-17](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L13) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:13-17](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** गट / गट सिद्धांत
 
@@ -13332,11 +13629,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T232 — Peano arithmetic</strong> (1 occurrence; routine priority)</summary>
+<summary><strong>T232 — Peano arithmetic</strong> (2 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T232-OLP-0170-B008 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:40-57](../upstream/content/first-order-logic/models-theories/theories.tex#L40) | [mr/content/first-order-logic/models-theories/theories.tex:40-57](../mr/content/first-order-logic/models-theories/theories.tex#L40) | not yet paginated |
+| T232-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
 
 **Chosen rendering/action:** पेआनो अंकगणित
 
@@ -13447,11 +13745,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T239 — divides evenly / multiple / prime number</strong> (1 occurrence; routine priority)</summary>
+<summary><strong>T239 — divides evenly / multiple / prime number</strong> (2 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T239-OLP-0171-B011 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:80-88](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L80) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:82-90](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L82) | not yet paginated |
+| T239-OLP-0179-B007 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:19-26](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L19) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:18-23](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L18) | not yet paginated |
 
 **Chosen rendering/action:** निःशेष भाग जाणे / पटीत संख्या / अविभाज्य संख्या
 
@@ -13522,6 +13821,498 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; established name components under an explicit displayed theorem statement; expert-reviewable; open to correction.
 
 **Please double-check:** Should this theorem be given the bare established-name form कँटरचे प्रमेय or the more explicit कँटरचे घातसंच प्रमेय?
+
+</details>
+
+<details>
+<summary><strong>T244 — logicism / logicist tradition</strong> (1 occurrence; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T244-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
+
+**Chosen rendering/action:** तर्कमीमांसावाद / तर्कमीमांसावादी परंपरा
+
+**Confidence/status:** high; direct authoritative adjective and school description with a transparent doctrine noun; expert-reviewable; open to correction.
+
+**Please double-check:** Should the doctrine be named तर्कमीमांसावाद to match the authoritative तर्कमीमांसावादी usage, or is तर्कवाद conventional in specialist Marathi?
+
+</details>
+
+<details>
+<summary><strong>T245 — second-order logic / higher-order logic / higher-type logic</strong> (20 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T245-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
+| T245-OLP-0177-B005 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:11-11](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L11) | [mr/content/first-order-logic/beyond/second-order-logic.tex:11-11](../mr/content/first-order-logic/beyond/second-order-logic.tex#L11) | not yet paginated |
+| T245-OLP-0177-B006 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/second-order-logic.tex:13-28](../mr/content/first-order-logic/beyond/second-order-logic.tex#L13) | not yet paginated |
+| T245-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
+| T245-OLP-0177-B008 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:67-81](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L67) | [mr/content/first-order-logic/beyond/second-order-logic.tex:64-76](../mr/content/first-order-logic/beyond/second-order-logic.tex#L64) | not yet paginated |
+| T245-OLP-0177-B009 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:83-98](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L83) | [mr/content/first-order-logic/beyond/second-order-logic.tex:78-91](../mr/content/first-order-logic/beyond/second-order-logic.tex#L78) | not yet paginated |
+| T245-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
+| T245-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T245-OLP-0177-B014 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L204) | [mr/content/first-order-logic/beyond/second-order-logic.tex:192-196](../mr/content/first-order-logic/beyond/second-order-logic.tex#L192) | not yet paginated |
+| T245-OLP-0177-B015 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | not yet paginated |
+| T245-OLP-0177-B016 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:226-234](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L226) | [mr/content/first-order-logic/beyond/second-order-logic.tex:213-221](../mr/content/first-order-logic/beyond/second-order-logic.tex#L213) | not yet paginated |
+| T245-OLP-0177-B017 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:236-242](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L236) | [mr/content/first-order-logic/beyond/second-order-logic.tex:223-229](../mr/content/first-order-logic/beyond/second-order-logic.tex#L223) | not yet paginated |
+| T245-OLP-0178-B005 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:11-11](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L11) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:11-11](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L11) | not yet paginated |
+| T245-OLP-0178-B006 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L13) | not yet paginated |
+| T245-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
+| T245-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+| T245-OLP-0178-B010 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:102-112](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L102) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:102-111](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L102) | not yet paginated |
+| T245-OLP-0178-B011 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:114-123](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L114) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:113-120](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L113) | not yet paginated |
+| T245-OLP-0179-B006 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:13-17](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L13) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:13-16](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L13) | not yet paginated |
+| T245-OLP-0179-B015 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:81-95](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L81) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:71-83](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L71) | not yet paginated |
+
+**Chosen rendering/action:** द्वितीय-क्रम तर्कशास्त्र / उच्च-क्रम तर्कशास्त्र / उच्च-प्रकार तर्कशास्त्र
+
+**Confidence/status:** high; definition-controlled transparent compounds with adjacent authoritative logic evidence; exact headwords not independently attested; expert-reviewable; open to correction.
+
+**Please double-check:** Are द्वितीय-क्रम, उच्च-क्रम and उच्च-प्रकार the clearest conventional Marathi modifiers for the three logical hierarchies?
+
+</details>
+
+<details>
+<summary><strong>T246 — ontology (philosophy)</strong> (2 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T246-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
+| T246-OLP-0180-B009 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:50-65](../upstream/content/first-order-logic/beyond/modal-logics.tex#L50) | [mr/content/first-order-logic/beyond/modal-logics.tex:45-59](../mr/content/first-order-logic/beyond/modal-logics.tex#L45) | not yet paginated |
+
+**Chosen rendering/action:** सत्ताशास्त्र
+
+**Confidence/status:** high; direct authoritative philosophical terminology; expert-reviewable for consistency with adjacent compounds; open to correction.
+
+**Please double-check:** Should Quine's ontology be rendered with the directly attested सत्ताशास्त्र or the edition's adjacent सत्तामीमांसा form?
+
+</details>
+
+<details>
+<summary><strong>T247 — many-sorted logic / sort / typed by sorts / relativized quantifier</strong> (9 occurrences; high priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T247-OLP-0176-B005 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:11-11](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L11) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:11-11](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L11) | not yet paginated |
+| T247-OLP-0176-B006 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:13-17](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L13) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:13-17](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L13) | not yet paginated |
+| T247-OLP-0176-B007 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:19-26](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L19) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:19-25](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L19) | not yet paginated |
+| T247-OLP-0176-B008 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:28-42](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L28) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:27-40](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L27) | not yet paginated |
+| T247-OLP-0176-B009 | OLP-0176 ·  | [upstream/content/first-order-logic/beyond/many-sorted-logic.tex:44-64](../upstream/content/first-order-logic/beyond/many-sorted-logic.tex#L44) | [mr/content/first-order-logic/beyond/many-sorted-logic.tex:42-63](../mr/content/first-order-logic/beyond/many-sorted-logic.tex#L42) | not yet paginated |
+| T247-OLP-0177-B016 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:226-234](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L226) | [mr/content/first-order-logic/beyond/second-order-logic.tex:213-221](../mr/content/first-order-logic/beyond/second-order-logic.tex#L213) | not yet paginated |
+| T247-OLP-0177-B017 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:236-242](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L236) | [mr/content/first-order-logic/beyond/second-order-logic.tex:223-229](../mr/content/first-order-logic/beyond/second-order-logic.tex#L223) | not yet paginated |
+| T247-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
+| T247-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+
+**Chosen rendering/action:** बहुवर्गीय तर्कशास्त्र / वर्ग / वर्गांनुसार प्रकारबद्ध / वर्गापुरता सापेक्ष संख्यापक
+
+**Confidence/status:** low; source-defined transparent terminology with adjacent logic, variable, quantifier and relation evidence; exact headword unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is बहुवर्गीय तर्कशास्त्र with वर्ग the clearest Marathi terminology for many-sorted logic, or should प्रकार be used despite its overlap with type theory?
+
+</details>
+
+<details>
+<summary><strong>T248 — second-order comprehension schema / relation comprehension</strong> (6 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T248-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
+| T248-OLP-0177-B008 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:67-81](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L67) | [mr/content/first-order-logic/beyond/second-order-logic.tex:64-76](../mr/content/first-order-logic/beyond/second-order-logic.tex#L64) | not yet paginated |
+| T248-OLP-0177-B009 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:83-98](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L83) | [mr/content/first-order-logic/beyond/second-order-logic.tex:78-91](../mr/content/first-order-logic/beyond/second-order-logic.tex#L78) | not yet paginated |
+| T248-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
+| T248-OLP-0177-B015 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | not yet paginated |
+| T248-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+
+**Chosen rendering/action:** गुणधर्माधारित संबंधरचना-रूपबंध / गुणधर्माधारित संबंधरचना
+
+**Confidence/status:** high; definition-controlled extension of established comprehension and schema decisions; exact specialist headword unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Does गुणधर्माधारित संबंधरचना-रूपबंध clearly distinguish second-order relation comprehension from set comprehension while remaining readable?
+
+</details>
+
+<details>
+<summary><strong>T249 — impredicative / predicative comprehension (local explanatory rendering)</strong> (1 occurrence; high priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T249-OLP-0177-B008 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:67-81](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L67) | [mr/content/first-order-logic/beyond/second-order-logic.tex:64-76](../mr/content/first-order-logic/beyond/second-order-logic.tex#L64) | not yet paginated |
+
+**Chosen rendering/action:** स्वसमावेशक / स्वसमावेशरहित गुणधर्माधारित संबंधरचना
+
+**Confidence/status:** low; local source-defined explanatory rendering; exact specialist headwords unattested; high-priority expert review useful; open to correction.
+
+**Please double-check:** For this explicitly defined comprehension contrast, are स्वसमावेशक and स्वसमावेशरहित clearer than transliterating impredicative and predicative?
+
+</details>
+
+<details>
+<summary><strong>T250 — full / weak second-order semantics; full structure</strong> (8 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T250-OLP-0177-B009 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:83-98](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L83) | [mr/content/first-order-logic/beyond/second-order-logic.tex:78-91](../mr/content/first-order-logic/beyond/second-order-logic.tex#L78) | not yet paginated |
+| T250-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
+| T250-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T250-OLP-0177-B012 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L169) | [mr/content/first-order-logic/beyond/second-order-logic.tex:159-170](../mr/content/first-order-logic/beyond/second-order-logic.tex#L159) | not yet paginated |
+| T250-OLP-0177-B014 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L204) | [mr/content/first-order-logic/beyond/second-order-logic.tex:192-196](../mr/content/first-order-logic/beyond/second-order-logic.tex#L192) | not yet paginated |
+| T250-OLP-0177-B015 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | not yet paginated |
+| T250-OLP-0177-B016 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:226-234](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L226) | [mr/content/first-order-logic/beyond/second-order-logic.tex:213-221](../mr/content/first-order-logic/beyond/second-order-logic.tex#L213) | not yet paginated |
+| T250-OLP-0177-B017 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:236-242](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L236) | [mr/content/first-order-logic/beyond/second-order-logic.tex:223-229](../mr/content/first-order-logic/beyond/second-order-logic.tex#L223) | not yet paginated |
+
+**Chosen rendering/action:** पूर्ण / दुर्बल द्वितीय-क्रम चिन्हार्थमीमांसा; पूर्ण रचना
+
+**Confidence/status:** medium; source-defined transparent modifiers on an established semantics term; expert-reviewable; open to correction.
+
+**Please double-check:** Are पूर्ण and दुर्बल the clearest Marathi modifiers for the source-defined full and weak second-order semantics?
+
+</details>
+
+<details>
+<summary><strong>T251 — categorical description / categorical theory</strong> (3 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T251-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
+| T251-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T251-OLP-0177-B013 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L183) | [mr/content/first-order-logic/beyond/second-order-logic.tex:172-190](../mr/content/first-order-logic/beyond/second-order-logic.tex#L172) | not yet paginated |
+
+**Chosen rendering/action:** समरूपतेपर्यंत एकमेव वर्णन / समरूपतेपर्यंत एकमेव प्रतिमान असलेली उपपत्ती
+
+**Confidence/status:** high; definition-explicit rendering built from established isomorphism and model terminology; expert-reviewable; open to correction.
+
+**Please double-check:** Should the edition retain the explicit phrase समरूपतेपर्यंत एकमेव rather than coin a compact adjective for categorical?
+
+</details>
+
+<details>
+<summary><strong>T252 — homomorphism / structure-preserving map</strong> (1 occurrence; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T252-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+
+**Chosen rendering/action:** रचनारक्षक प्रतिचित्रण
+
+**Confidence/status:** high; transparent generalization from directly attested operation-preserving correspondence; exact non-bijective headword unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is रचनारक्षक प्रतिचित्रण the clearest general Marathi label for homomorphism, or is समाकारिता conventional in specialist Marathi?
+
+</details>
+
+<details>
+<summary><strong>T253 — finite type / function type / product type / application / projection</strong> (3 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T253-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
+| T253-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+| T253-OLP-0178-B010 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:102-112](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L102) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:102-111](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L102) | not yet paginated |
+
+**Chosen rendering/action:** सांत प्रकार / फलन-प्रकार / गुणाकार-प्रकार / उपयोजन / प्रक्षेपण
+
+**Confidence/status:** high; source-defined transparent type-system terminology with adjacent function and sort evidence; exact inventory unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Are सांत प्रकार, उपयोजन and प्रक्षेपण the clearest Marathi labels for the finite-type formation rules?
+
+</details>
+
+<details>
+<summary><strong>T254 — functional (higher-type function taking functions as input)</strong> (1 occurrence; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T254-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
+
+**Chosen rendering/action:** फलनक
+
+**Confidence/status:** high; direct authoritative mathematical attestation with source-defined local type; expert-reviewable; open to correction.
+
+**Please double-check:** Does the directly attested फलनक transfer cleanly from functional analysis to this finite-type example?
+
+</details>
+
+<details>
+<summary><strong>T255 — simple theory of types / Alonzo Church</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T255-OLP-0178-B009 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L95) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L95) | not yet paginated |
+
+**Chosen rendering/action:** प्रकारांची साधी उपपत्ती / ॲलोन्झो चर्च
+
+**Confidence/status:** medium; authoritative surname form plus source-defined transparent theory label; exact full title unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Should simple theory of types be प्रकारांची साधी उपपत्ती or the more compact साधी प्रकार-उपपत्ती?
+
+</details>
+
+<details>
+<summary><strong>T256 — full / weak higher-type semantics</strong> (1 occurrence; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T256-OLP-0178-B010 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:102-112](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L102) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:102-111](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L102) | not yet paginated |
+
+**Chosen rendering/action:** पूर्ण / दुर्बल उच्च-प्रकार चिन्हार्थमीमांसा
+
+**Confidence/status:** high; source-defined extension of established semantics terminology; expert-reviewable; open to correction.
+
+**Please double-check:** Should the higher-type section retain पूर्ण and दुर्बल for consistency with the immediately preceding second-order distinction?
+
+</details>
+
+<details>
+<summary><strong>T257 — constructive interpretation / constructive version (intuitionistic mathematics)</strong> (6 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T257-OLP-0178-B011 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:114-123](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L114) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:113-120](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L113) | not yet paginated |
+| T257-OLP-0179-B006 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:13-17](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L13) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:13-16](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L13) | not yet paginated |
+| T257-OLP-0179-B009 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:32-35](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L32) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:28-30](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L28) | not yet paginated |
+| T257-OLP-0179-B014 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:74-79](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L74) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:65-69](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L65) | not yet paginated |
+| T257-OLP-0179-B015 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:81-95](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L81) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:71-83](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L71) | not yet paginated |
+| T257-OLP-0179-B016 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L97) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L85) | not yet paginated |
+
+**Chosen rendering/action:** रचनाशील अर्थनिर्धारण / रचनाशील आवृत्ती
+
+**Confidence/status:** high; direct authoritative intuitionist-mathematics adjective with transparent local noun extensions; expert-reviewable; open to correction.
+
+**Please double-check:** Is रचनाशील the best mathematical adjective here, given its direct authoritative use in the account of intuitionism?
+
+</details>
+
+<details>
+<summary><strong>T258 — Riemann hypothesis / prime number / composite number</strong> (2 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T258-OLP-0179-B007 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:19-26](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L19) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:18-23](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L18) | not yet paginated |
+| T258-OLP-0179-B008 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:28-30](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L28) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:25-26](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L25) | not yet paginated |
+
+**Chosen rendering/action:** रीमान गृहीतक / अविभाज्य संख्या / संयुक्त संख्या
+
+**Confidence/status:** high; direct authoritative Marathi mathematical terminology; open to correction.
+
+**Please double-check:** Should the exact official forms रीमान गृहीतक, अविभाज्य संख्या and संयुक्त संख्या remain together in this motivating example?
+
+</details>
+
+<details>
+<summary><strong>T259 — BHK interpretation / Brouwer / Heyting / Kolmogorov / Glivenko</strong> (2 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T259-OLP-0179-B016 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L97) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L85) | not yet paginated |
+| T259-OLP-0179-B018 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:128-133](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L128) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:113-118](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L113) | not yet paginated |
+
+**Chosen rendering/action:** BHK अर्थनिर्धारण / ब्रौवर / हीटिंग / कोल्मोगोरोव / ग्लिवेन्को
+
+**Confidence/status:** medium; two directly attested name forms plus preserved standard acronym and provisional transliterations; expert-reviewable; open to correction.
+
+**Please double-check:** Are कोल्मोगोरोव and ग्लिवेन्को the preferred Marathi spellings alongside the directly attested ब्रौवर and हीटिंग?
+
+</details>
+
+<details>
+<summary><strong>T260 — Curry–Howard isomorphism / formulas-as-types paradigm / data type</strong> (1 occurrence; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T260-OLP-0179-B016 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L97) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L85) | not yet paginated |
+
+**Chosen rendering/action:** करी--हॉवर्ड समरूपण / सूत्रे-हे-प्रकार प्रतिमान / दत्तांश-प्रकार
+
+**Confidence/status:** high; source-defined transparent rendering with established isomorphism and type terminology; exact label unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Does सूत्रे-हे-प्रकार प्रतिमान express the formulas-as-types reading clearly, and is करी--हॉवर्ड the preferred name spelling?
+
+</details>
+
+<details>
+<summary><strong>T261 — law of excluded middle / double-negation translation</strong> (7 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T261-OLP-0179-B017 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:114-126](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L114) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:100-111](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L100) | not yet paginated |
+| T261-OLP-0179-B019 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:135-149](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L135) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:120-133](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L120) | not yet paginated |
+| T261-OLP-0179-B020 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:151-157](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L151) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:135-141](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L135) | not yet paginated |
+| T261-OLP-0179-B021 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:159-164](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L159) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:143-147](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L143) | not yet paginated |
+| T261-OLP-0179-B022 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:166-170](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L166) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:149-152](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L149) | not yet paginated |
+| T261-OLP-0179-B023 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:172-175](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L172) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:154-157](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L154) | not yet paginated |
+| T261-OLP-0179-B024 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:177-178](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L177) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:159-161](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L159) | not yet paginated |
+
+**Chosen rendering/action:** विमध्य सिद्धांत / द्विनकरण रूपांतरण
+
+**Confidence/status:** high; direct authoritative excluded-middle term plus definition-controlled translation compound; expert-reviewable; open to correction.
+
+**Please double-check:** Should the directly attested विमध्य सिद्धांत be preferred edition-wide over a more literal बहिष्कृत मध्याचा नियम?
+
+</details>
+
+<details>
+<summary><strong>T262 — Kripke semantics / Kripke structure / forcing relation / world / state of knowledge</strong> (4 occurrences; high priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T262-OLP-0179-B025 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L163) | not yet paginated |
+| T262-OLP-0179-B026 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L186) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L168) | not yet paginated |
+| T262-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
+| T262-OLP-0180-B008 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:41-48](../upstream/content/first-order-logic/beyond/modal-logics.tex#L41) | [mr/content/first-order-logic/beyond/modal-logics.tex:37-43](../mr/content/first-order-logic/beyond/modal-logics.tex#L37) | not yet paginated |
+
+**Chosen rendering/action:** क्रिप्के चिन्हार्थमीमांसा / क्रिप्के रचना / बलन-संबंध / जग / ज्ञानावस्था
+
+**Confidence/status:** low; source-defined provisional terminology with established structure and semantics vocabulary; exact headwords unattested; high-priority expert review useful; open to correction.
+
+**Please double-check:** Is बलन-संबंध an acceptable Marathi technical label for forcing, or should the edition use a more explanatory सत्यप्रतिष्ठापन-संबंध?
+
+</details>
+
+<details>
+<summary><strong>T263 — Brouwer's intuitionism / Bishop's constructivism</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T263-OLP-0179-B015 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:81-95](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L81) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:71-83](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L71) | not yet paginated |
+
+**Chosen rendering/action:** ब्रौवर यांचा अंतःप्रज्ञावाद / बिशप यांचा रचनाशीलतावाद
+
+**Confidence/status:** medium; direct authoritative Brouwer label plus transparent provisional Bishop label; expert-reviewable; open to correction.
+
+**Please double-check:** Does रचनाशीलतावाद clearly distinguish Bishop's mathematical constructivism from the unrelated artistic रचनावाद?
+
+</details>
+
+<details>
+<summary><strong>T264 — modal logic / modality / necessity / possibility / possible world</strong> (7 occurrences; high priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T264-OLP-0180-B005 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:11-11](../upstream/content/first-order-logic/beyond/modal-logics.tex#L11) | [mr/content/first-order-logic/beyond/modal-logics.tex:11-11](../mr/content/first-order-logic/beyond/modal-logics.tex#L11) | not yet paginated |
+| T264-OLP-0180-B006 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:13-29](../upstream/content/first-order-logic/beyond/modal-logics.tex#L13) | [mr/content/first-order-logic/beyond/modal-logics.tex:13-26](../mr/content/first-order-logic/beyond/modal-logics.tex#L13) | not yet paginated |
+| T264-OLP-0180-B007 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:31-39](../upstream/content/first-order-logic/beyond/modal-logics.tex#L31) | [mr/content/first-order-logic/beyond/modal-logics.tex:28-35](../mr/content/first-order-logic/beyond/modal-logics.tex#L28) | not yet paginated |
+| T264-OLP-0180-B008 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:41-48](../upstream/content/first-order-logic/beyond/modal-logics.tex#L41) | [mr/content/first-order-logic/beyond/modal-logics.tex:37-43](../mr/content/first-order-logic/beyond/modal-logics.tex#L37) | not yet paginated |
+| T264-OLP-0180-B009 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:50-65](../upstream/content/first-order-logic/beyond/modal-logics.tex#L50) | [mr/content/first-order-logic/beyond/modal-logics.tex:45-59](../mr/content/first-order-logic/beyond/modal-logics.tex#L45) | not yet paginated |
+| T264-OLP-0180-B010 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | not yet paginated |
+| T264-OLP-0181-B005 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:11-11](../upstream/content/first-order-logic/beyond/other-logics.tex#L11) | [mr/content/first-order-logic/beyond/other-logics.tex:11-11](../mr/content/first-order-logic/beyond/other-logics.tex#L11) | not yet paginated |
+
+**Chosen rendering/action:** मोडल तर्कशास्त्र / मोडलता / अनिवार्यता / संभाव्यता / संभाव्य जग
+
+**Confidence/status:** low; preserved international label with source-defined transparent components; exact Marathi headword unattested; high-priority expert review useful; open to correction.
+
+**Please double-check:** Should Marathi specialist prose retain मोडल तर्कशास्त्र, or is प्रकारात्मक तर्कशास्त्र an established alternative not found in the checked sources?
+
+</details>
+
+<details>
+<summary><strong>T265 — accessibility relation / intensional logic / extensional logic</strong> (3 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T265-OLP-0180-B008 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:41-48](../upstream/content/first-order-logic/beyond/modal-logics.tex#L41) | [mr/content/first-order-logic/beyond/modal-logics.tex:37-43](../mr/content/first-order-logic/beyond/modal-logics.tex#L37) | not yet paginated |
+| T265-OLP-0180-B009 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:50-65](../upstream/content/first-order-logic/beyond/modal-logics.tex#L50) | [mr/content/first-order-logic/beyond/modal-logics.tex:45-59](../mr/content/first-order-logic/beyond/modal-logics.tex#L45) | not yet paginated |
+| T265-OLP-0180-B010 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | not yet paginated |
+
+**Chosen rendering/action:** प्राप्यता संबंध / आशयात्मक तर्कशास्त्र / विस्तारात्मक तर्कशास्त्र
+
+**Confidence/status:** high; source-defined transparent terminology with established extensionality evidence; exact headwords unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Are प्राप्यता and आशयात्मक the clearest Marathi terms for accessibility and intensionality in possible-world semantics?
+
+</details>
+
+<details>
+<summary><strong>T266 — provability logic / epistemic logic / temporal logic</strong> (2 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T266-OLP-0180-B009 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:50-65](../upstream/content/first-order-logic/beyond/modal-logics.tex#L50) | [mr/content/first-order-logic/beyond/modal-logics.tex:45-59](../mr/content/first-order-logic/beyond/modal-logics.tex#L45) | not yet paginated |
+| T266-OLP-0181-B007 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:22-36](../upstream/content/first-order-logic/beyond/other-logics.tex#L22) | [mr/content/first-order-logic/beyond/other-logics.tex:21-33](../mr/content/first-order-logic/beyond/other-logics.tex#L21) | not yet paginated |
+
+**Chosen rendering/action:** सिद्धतायोग्यता तर्कशास्त्र / ज्ञानविषयक तर्कशास्त्र / कालिक तर्कशास्त्र
+
+**Confidence/status:** medium; transparent compounds with direct epistemological component evidence and source-defined modal readings; expert-reviewable; open to correction.
+
+**Please double-check:** Should epistemic logic be ज्ञानविषयक तर्कशास्त्र or the more discipline-linked ज्ञानमीमांसक तर्कशास्त्र?
+
+</details>
+
+<details>
+<summary><strong>T267 — S4 / S5 modal systems; universal accessibility relation</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T267-OLP-0180-B010 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | not yet paginated |
+
+**Chosen rendering/action:** S4 / S5 मोडल प्रणाली; वैश्विक प्राप्यता संबंध
+
+**Confidence/status:** medium; standard labels preserved with source-defined frame terminology; expert-reviewable; open to correction.
+
+**Please double-check:** Should universal accessibility be वैश्विक प्राप्यता or सार्वत्रिक अभिगम्यता in Marathi modal-logic prose?
+
+</details>
+
+<details>
+<summary><strong>T268 — fuzzy logic / probabilistic logic</strong> (2 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T268-OLP-0181-B005 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:11-11](../upstream/content/first-order-logic/beyond/other-logics.tex#L11) | [mr/content/first-order-logic/beyond/other-logics.tex:11-11](../mr/content/first-order-logic/beyond/other-logics.tex#L11) | not yet paginated |
+| T268-OLP-0181-B007 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:22-36](../upstream/content/first-order-logic/beyond/other-logics.tex#L22) | [mr/content/first-order-logic/beyond/other-logics.tex:21-33](../mr/content/first-order-logic/beyond/other-logics.tex#L21) | not yet paginated |
+
+**Chosen rendering/action:** अस्पष्ट तर्कशास्त्र / संभाव्यताधारित तर्कशास्त्र
+
+**Confidence/status:** high; source-defined transparent compounds with direct probability evidence; exact system labels unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is अस्पष्ट तर्कशास्त्र clearer than retaining फझी, and does संभाव्यताधारित avoid confusing probabilistic with merely possible?
+
+</details>
+
+<details>
+<summary><strong>T269 — default logic / nonmonotonic logic / defeasible reasoning</strong> (2 occurrences; high priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T269-OLP-0181-B005 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:11-11](../upstream/content/first-order-logic/beyond/other-logics.tex#L11) | [mr/content/first-order-logic/beyond/other-logics.tex:11-11](../mr/content/first-order-logic/beyond/other-logics.tex#L11) | not yet paginated |
+| T269-OLP-0181-B007 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:22-36](../upstream/content/first-order-logic/beyond/other-logics.tex#L22) | [mr/content/first-order-logic/beyond/other-logics.tex:21-33](../mr/content/first-order-logic/beyond/other-logics.tex#L21) | not yet paginated |
+
+**Chosen rendering/action:** पूर्वमान्य तर्कशास्त्र / अ-एकस्वनिक तर्कशास्त्र / खंडनीय तर्कविचार
+
+**Confidence/status:** low; source-defined transparent provisional terminology; exact headwords unattested; high-priority expert review useful; open to correction.
+
+**Please double-check:** Are पूर्वमान्य, अ-एकस्वनिक and खंडनीय the clearest distinct Marathi labels for these three related notions?
+
+</details>
+
+<details>
+<summary><strong>T270 — causal logic / deontic logic / mathematical logic / philosophical logic / artificial intelligence / cognitive science</strong> (2 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T270-OLP-0181-B005 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:11-11](../upstream/content/first-order-logic/beyond/other-logics.tex#L11) | [mr/content/first-order-logic/beyond/other-logics.tex:11-11](../mr/content/first-order-logic/beyond/other-logics.tex#L11) | not yet paginated |
+| T270-OLP-0181-B007 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:22-36](../upstream/content/first-order-logic/beyond/other-logics.tex#L22) | [mr/content/first-order-logic/beyond/other-logics.tex:21-33](../mr/content/first-order-logic/beyond/other-logics.tex#L21) | not yet paginated |
+
+**Chosen rendering/action:** कार्यकारणविषयक तर्कशास्त्र / कर्तव्यविषयक तर्कशास्त्र / गणितीय तर्कशास्त्र / तात्त्विक तर्कशास्त्र / कृत्रिम बुद्धिमत्ता / संज्ञानविज्ञान
+
+**Confidence/status:** high; source-defined transparent compounds from established philosophical components; exact inventory unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Are कार्यकारणविषयक and कर्तव्यविषयक sufficiently precise for causal and deontic logic, and is संज्ञानविज्ञान the preferred Marathi discipline name?
+
+</details>
+
+<details>
+<summary><strong>T271 — Gottfried Wilhelm Leibniz</strong> (1 occurrence; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T271-OLP-0181-B008 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:38-40](../upstream/content/first-order-logic/beyond/other-logics.tex#L38) | [mr/content/first-order-logic/beyond/other-logics.tex:35-37](../mr/content/first-order-logic/beyond/other-logics.tex#L35) | not yet paginated |
+
+**Chosen rendering/action:** गॉटफ्रीड विल्हेल्म लायप्निट्स / लायप्निट्स
+
+**Confidence/status:** high; direct authoritative surname attestation with provisional full-name transliteration; expert-reviewable; open to correction.
+
+**Please double-check:** Should the edition retain the directly attested surname spelling लायप्निट्स across later occurrences?
 
 </details>
 
@@ -15037,5 +15828,20 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; confirmed by the parallel strict-less-than formula immediately before it, the formula's free-variable specification and every other v_i occurrence in the example; open to correction.
 
 **Please double-check:** Does the repaired formula now encode both free variables with the same object-language notation?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-025 — confirmed-frozen-source-function-domain type mismatch with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-025-OLP-0178 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:60-87](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L60) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:58-89](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L58) | not yet paginated |
+
+**Chosen rendering/action:** Changed the explanatory argument type from sigma to tau in Marathi, placed adjacent reader note OLFOL-025 and added a unit-specific QA projection that reconstructs the frozen sigma solely for source comparison.
+
+**Confidence/status:** high; confirmed by clause (6), the immediately stated type tau to sigma of the lambda term and the preceding definition of function types; open to correction.
+
+**Please double-check:** Does the corrected sentence now give x the domain type tau while retaining s as the value of type sigma?
 
 </details>

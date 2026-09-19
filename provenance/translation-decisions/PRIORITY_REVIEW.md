@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
-This view contains 35 urgent/high decisions and
-1429 current occurrences. Normal and low items remain in the full index.
+This view contains 40 urgent/high decisions and
+1492 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -36,6 +36,7 @@ This view contains 35 urgent/high decisions and
 | `T006-OLP-0059-B010` | `OLP-0059` | 7.3 पूर्वतयारी | 50-52 | 50-52 | 77–79 |
 | `T006-OLP-0059-B011` | `OLP-0059` | 7.3 पूर्वतयारी | 54-56 | 54-56 | 77–79 |
 | `T006-OLP-0060-B016` | `OLP-0060` | 7.4 रचनाक्रमिका | 126-151 | 122-147 | 79–80 |
+| `T006-OLP-0177-B012` | `OLP-0177` |  | 169-181 | 159-170 | pending |
 
 ## T007 — power set → घातसंच
 
@@ -176,6 +177,8 @@ This view contains 35 urgent/high decisions and
 | `T013-OLP-0171-B010` | `OLP-0171` |  | 69-78 | 71-80 | pending |
 | `T013-OLP-0173-B010` | `OLP-0173` |  | 56-61 | 56-62 | pending |
 | `T013-OLP-0173-B011` | `OLP-0173` |  | 63-70 | 64-70 | pending |
+| `T013-OLP-0177-B011` | `OLP-0177` |  | 129-167 | 121-157 | pending |
+| `T013-OLP-0177-B015` | `OLP-0177` |  | 211-224 | 198-211 | pending |
 
 ## T014 — perfect number → परिपूर्ण संख्या
 
@@ -373,6 +376,7 @@ This view contains 35 urgent/high decisions and
 | `T026-OLP-0148-B008` | `OLP-0148` |  | 36-48 | 37-49 | pending |
 | `T026-OLP-0172-B013` | `OLP-0172` |  | 149-171 | 147-169 | pending |
 | `T026-OLP-0172-B014` | `OLP-0172` |  | 173-182 | 171-180 | pending |
+| `T026-OLP-0177-B008` | `OLP-0177` |  | 67-81 | 64-76 | pending |
 
 ## T028 — continuum → सांतत्य
 
@@ -479,6 +483,18 @@ This view contains 35 urgent/high decisions and
 | `T029-OLP-0172-B008` | `OLP-0172` |  | 57-71 | 56-68 | pending |
 | `T029-OLP-0172-B009` | `OLP-0172` |  | 73-90 | 70-86 | pending |
 | `T029-OLP-0172-B013` | `OLP-0172` |  | 149-171 | 147-169 | pending |
+| `T029-OLP-0175-B007` | `OLP-0175` |  | 23-44 | 23-42 | pending |
+| `T029-OLP-0176-B009` | `OLP-0176` |  | 44-64 | 42-63 | pending |
+| `T029-OLP-0177-B007` | `OLP-0177` |  | 30-65 | 30-62 | pending |
+| `T029-OLP-0177-B008` | `OLP-0177` |  | 67-81 | 64-76 | pending |
+| `T029-OLP-0177-B010` | `OLP-0177` |  | 100-127 | 93-119 | pending |
+| `T029-OLP-0177-B011` | `OLP-0177` |  | 129-167 | 121-157 | pending |
+| `T029-OLP-0177-B015` | `OLP-0177` |  | 211-224 | 198-211 | pending |
+| `T029-OLP-0177-B017` | `OLP-0177` |  | 236-242 | 223-229 | pending |
+| `T029-OLP-0178-B008` | `OLP-0178` |  | 40-93 | 39-93 | pending |
+| `T029-OLP-0178-B009` | `OLP-0178` |  | 95-100 | 95-100 | pending |
+| `T029-OLP-0179-B022` | `OLP-0179` |  | 166-170 | 149-152 | pending |
+| `T029-OLP-0180-B010` | `OLP-0180` |  | 67-89 | 61-81 | pending |
 
 ## T039 — preorder / partial order / linear order → पूर्वक्रम / अंशतः क्रम / रेषीय क्रम
 
@@ -523,6 +539,9 @@ This view contains 35 urgent/high decisions and
 | `T039-OLP-0169-B008` | `OLP-0169` |  | 45-63 | 44-64 | pending |
 | `T039-OLP-0170-B006` | `OLP-0170` |  | 13-27 | 13-27 | pending |
 | `T039-OLP-0170-B014` | `OLP-0170` |  | 108-141 | 107-138 | pending |
+| `T039-OLP-0177-B013` | `OLP-0177` |  | 183-202 | 172-190 | pending |
+| `T039-OLP-0179-B027` | `OLP-0179` |  | 200-222 | 180-202 | pending |
+| `T039-OLP-0180-B008` | `OLP-0180` |  | 41-48 | 37-43 | pending |
 
 ## T040 — graph / directed graph / vertex / edge → आलेख / दिशित आलेख / शिखर / कड
 
@@ -568,6 +587,7 @@ This view contains 35 urgent/high decisions and
 | `T040-OLP-0023-B014` | `OLP-0023` | 3.3 संबंध म्हणून फलने | 81-85 | 79-82 | 28–29 |
 | `T040-OLP-0023-B015` | `OLP-0023` | 3.3 संबंध म्हणून फलने | 87-90 | 84-87 | 28–29 |
 | `T040-OLP-0023-B016` | `OLP-0023` | 3.3 संबंध म्हणून फलने | 92-101 | 89-101 | 28–29 |
+| `T040-OLP-0177-B013` | `OLP-0177` |  | 183-202 | 172-190 | pending |
 
 ## T041 — tree / root / branch / chain → वृक्ष / मूळ / शाखा / शृंखला
 
@@ -715,6 +735,9 @@ This view contains 35 urgent/high decisions and
 | `T042-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | 55-68 | 54-67 | 72–74 |
 | `T042-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | 80-83 | 80-85 | 72–74 |
 | `T042-OLP-0171-B009` | `OLP-0171` |  | 55-67 | 55-69 | pending |
+| `T042-OLP-0177-B013` | `OLP-0177` |  | 183-202 | 172-190 | pending |
+| `T042-OLP-0178-B008` | `OLP-0178` |  | 40-93 | 39-93 | pending |
+| `T042-OLP-0179-B027` | `OLP-0179` |  | 200-222 | 180-202 | pending |
 
 ## T043 — closure / inverse / restriction / relative product → संवरण / व्युत्क्रम / मर्यादन / सापेक्ष गुणाकार
 
@@ -1220,6 +1243,17 @@ This view contains 35 urgent/high decisions and
 | `T044-OLP-0160-B007` | `OLP-0160` |  | 35-45 | 35-46 | pending |
 | `T044-OLP-0168-B010` | `OLP-0168` |  | 49-98 | 50-97 | pending |
 | `T044-OLP-0172-B014` | `OLP-0172` |  | 173-182 | 171-180 | pending |
+| `T044-OLP-0176-B009` | `OLP-0176` |  | 44-64 | 42-63 | pending |
+| `T044-OLP-0177-B006` | `OLP-0177` |  | 13-28 | 13-28 | pending |
+| `T044-OLP-0177-B007` | `OLP-0177` |  | 30-65 | 30-62 | pending |
+| `T044-OLP-0177-B010` | `OLP-0177` |  | 100-127 | 93-119 | pending |
+| `T044-OLP-0177-B014` | `OLP-0177` |  | 204-209 | 192-196 | pending |
+| `T044-OLP-0177-B015` | `OLP-0177` |  | 211-224 | 198-211 | pending |
+| `T044-OLP-0178-B007` | `OLP-0178` |  | 21-38 | 21-37 | pending |
+| `T044-OLP-0178-B009` | `OLP-0178` |  | 95-100 | 95-100 | pending |
+| `T044-OLP-0178-B010` | `OLP-0178` |  | 102-112 | 102-111 | pending |
+| `T044-OLP-0179-B015` | `OLP-0179` |  | 81-95 | 71-83 | pending |
+| `T044-OLP-0181-B006` | `OLP-0181` |  | 13-20 | 13-19 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
@@ -1375,6 +1409,11 @@ This view contains 35 urgent/high decisions and
 | `T155-OLP-0148-B009` | `OLP-0148` |  | 50-55 | 51-56 | pending |
 | `T155-OLP-0148-B010` | `OLP-0148` |  | 57-66 | 58-67 | pending |
 | `T155-OLP-0161-B013` | `OLP-0161` |  | 94-107 | 95-108 | pending |
+| `T155-OLP-0177-B009` | `OLP-0177` |  | 83-98 | 78-91 | pending |
+| `T155-OLP-0177-B010` | `OLP-0177` |  | 100-127 | 93-119 | pending |
+| `T155-OLP-0179-B025` | `OLP-0179` |  | 180-184 | 163-166 | pending |
+| `T155-OLP-0179-B026` | `OLP-0179` |  | 186-198 | 168-178 | pending |
+| `T155-OLP-0180-B010` | `OLP-0180` |  | 67-89 | 61-81 | pending |
 
 ## T174 — closed term → बंद पद
 
@@ -1683,6 +1722,7 @@ This view contains 35 urgent/high decisions and
 | `T201-OLP-0147-B008` | `OLP-0147` |  | 56-68 | 58-68 | pending |
 | `T201-OLP-0148-B009` | `OLP-0148` |  | 50-55 | 51-56 | pending |
 | `T201-OLP-0173-B011` | `OLP-0173` |  | 63-70 | 64-70 | pending |
+| `T201-OLP-0177-B014` | `OLP-0177` |  | 204-209 | 192-196 | pending |
 
 ## T219 — free logic → मुक्त तर्कशास्त्र
 
@@ -1744,6 +1784,84 @@ This view contains 35 urgent/high decisions and
 | Occurrence | Unit | Section | Source line | Target line | PDF page |
 |---|---|---|---|---|---|
 | `T241-OLP-0172-B013` | `OLP-0172` |  | 149-171 | 147-169 | pending |
+
+## T247 — many-sorted logic / sort / typed by sorts / relativized quantifier → बहुवर्गीय तर्कशास्त्र / वर्ग / वर्गांनुसार प्रकारबद्ध / वर्गापुरता सापेक्ष संख्यापक
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: source-defined transparent terminology with adjacent logic, variable, quantifier and relation evidence; exact headword unattested; expert-reviewable. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Is बहुवर्गीय तर्कशास्त्र with वर्ग the clearest Marathi terminology for many-sorted logic, or should प्रकार be used despite its overlap with type theory?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T247-OLP-0176-B005` | `OLP-0176` |  | 11-11 | 11-11 | pending |
+| `T247-OLP-0176-B006` | `OLP-0176` |  | 13-17 | 13-17 | pending |
+| `T247-OLP-0176-B007` | `OLP-0176` |  | 19-26 | 19-25 | pending |
+| `T247-OLP-0176-B008` | `OLP-0176` |  | 28-42 | 27-40 | pending |
+| `T247-OLP-0176-B009` | `OLP-0176` |  | 44-64 | 42-63 | pending |
+| `T247-OLP-0177-B016` | `OLP-0177` |  | 226-234 | 213-221 | pending |
+| `T247-OLP-0177-B017` | `OLP-0177` |  | 236-242 | 223-229 | pending |
+| `T247-OLP-0178-B007` | `OLP-0178` |  | 21-38 | 21-37 | pending |
+| `T247-OLP-0178-B008` | `OLP-0178` |  | 40-93 | 39-93 | pending |
+
+## T249 — impredicative / predicative comprehension (local explanatory rendering) → स्वसमावेशक / स्वसमावेशरहित गुणधर्माधारित संबंधरचना
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: local source-defined explanatory rendering; exact specialist headwords unattested; high-priority expert review useful. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: For this explicitly defined comprehension contrast, are स्वसमावेशक and स्वसमावेशरहित clearer than transliterating impredicative and predicative?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T249-OLP-0177-B008` | `OLP-0177` |  | 67-81 | 64-76 | pending |
+
+## T262 — Kripke semantics / Kripke structure / forcing relation / world / state of knowledge → क्रिप्के चिन्हार्थमीमांसा / क्रिप्के रचना / बलन-संबंध / जग / ज्ञानावस्था
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: source-defined provisional terminology with established structure and semantics vocabulary; exact headwords unattested; high-priority expert review useful. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Is बलन-संबंध an acceptable Marathi technical label for forcing, or should the edition use a more explanatory सत्यप्रतिष्ठापन-संबंध?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T262-OLP-0179-B025` | `OLP-0179` |  | 180-184 | 163-166 | pending |
+| `T262-OLP-0179-B026` | `OLP-0179` |  | 186-198 | 168-178 | pending |
+| `T262-OLP-0179-B027` | `OLP-0179` |  | 200-222 | 180-202 | pending |
+| `T262-OLP-0180-B008` | `OLP-0180` |  | 41-48 | 37-43 | pending |
+
+## T264 — modal logic / modality / necessity / possibility / possible world → मोडल तर्कशास्त्र / मोडलता / अनिवार्यता / संभाव्यता / संभाव्य जग
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: preserved international label with source-defined transparent components; exact Marathi headword unattested; high-priority expert review useful. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Should Marathi specialist prose retain मोडल तर्कशास्त्र, or is प्रकारात्मक तर्कशास्त्र an established alternative not found in the checked sources?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T264-OLP-0180-B005` | `OLP-0180` |  | 11-11 | 11-11 | pending |
+| `T264-OLP-0180-B006` | `OLP-0180` |  | 13-29 | 13-26 | pending |
+| `T264-OLP-0180-B007` | `OLP-0180` |  | 31-39 | 28-35 | pending |
+| `T264-OLP-0180-B008` | `OLP-0180` |  | 41-48 | 37-43 | pending |
+| `T264-OLP-0180-B009` | `OLP-0180` |  | 50-65 | 45-59 | pending |
+| `T264-OLP-0180-B010` | `OLP-0180` |  | 67-89 | 61-81 | pending |
+| `T264-OLP-0181-B005` | `OLP-0181` |  | 11-11 | 11-11 | pending |
+
+## T269 — default logic / nonmonotonic logic / defeasible reasoning → पूर्वमान्य तर्कशास्त्र / अ-एकस्वनिक तर्कशास्त्र / खंडनीय तर्कविचार
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: source-defined transparent provisional terminology; exact headwords unattested; high-priority expert review useful. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Are पूर्वमान्य, अ-एकस्वनिक and खंडनीय the clearest distinct Marathi labels for these three related notions?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T269-OLP-0181-B005` | `OLP-0181` |  | 11-11 | 11-11 | pending |
+| `T269-OLP-0181-B007` | `OLP-0181` |  | 22-36 | 21-33 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 
