@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
-This view contains 28 urgent/high decisions and
-1137 current occurrences. Normal and low items remain in the full index.
+This view contains 29 urgent/high decisions and
+1217 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -114,6 +114,40 @@ This view contains 28 urgent/high decisions and
 | `T013-OLP-0111-B008` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | 25-28 | 24-27 | 154 |
 | `T013-OLP-0111-B009` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | 30-43 | 29-43 | 154 |
 | `T013-OLP-0124-B013` | `OLP-0124` |  | 87-107 | 86-109 | pending |
+| `T013-OLP-0127-B007` | `OLP-0127` |  | 24-47 | 24-44 | pending |
+| `T013-OLP-0127-B009` | `OLP-0127` |  | 59-73 | 55-66 | pending |
+| `T013-OLP-0128-B006` | `OLP-0128` |  | 15-32 | 15-29 | pending |
+| `T013-OLP-0128-B007` | `OLP-0128` |  | 34-47 | 31-46 | pending |
+| `T013-OLP-0128-B015` | `OLP-0128` |  | 135-168 | 125-159 | pending |
+| `T013-OLP-0129-B009` | `OLP-0129` |  | 33-52 | 33-52 | pending |
+| `T013-OLP-0130-B006` | `OLP-0130` |  | 13-30 | 13-29 | pending |
+| `T013-OLP-0130-B018` | `OLP-0130` |  | 149-158 | 150-159 | pending |
+| `T013-OLP-0132-B005` | `OLP-0132` |  | 13-13 | 13-13 | pending |
+| `T013-OLP-0132-B006` | `OLP-0132` |  | 15-34 | 15-34 | pending |
+| `T013-OLP-0132-B007` | `OLP-0132` |  | 36-73 | 36-74 | pending |
+| `T013-OLP-0132-B010` | `OLP-0132` |  | 99-114 | 101-114 | pending |
+| `T013-OLP-0132-B011` | `OLP-0132` |  | 116-125 | 116-125 | pending |
+| `T013-OLP-0132-B012` | `OLP-0132` |  | 127-155 | 127-158 | pending |
+| `T013-OLP-0132-B017` | `OLP-0132` |  | 182-190 | 185-193 | pending |
+| `T013-OLP-0133-B005` | `OLP-0133` |  | 12-24 | 12-23 | pending |
+| `T013-OLP-0133-B011` | `OLP-0133` |  | 96-111 | 96-111 | pending |
+| `T013-OLP-0133-B016` | `OLP-0133` |  | 162-169 | 164-171 | pending |
+| `T013-OLP-0133-B020` | `OLP-0133` |  | 193-203 | 195-204 | pending |
+| `T013-OLP-0134-B008` | `OLP-0134` |  | 25-49 | 25-49 | pending |
+| `T013-OLP-0135-B009` | `OLP-0135` |  | 44-50 | 45-51 | pending |
+| `T013-OLP-0135-B013` | `OLP-0135` |  | 90-121 | 91-123 | pending |
+| `T013-OLP-0135-B014` | `OLP-0135` |  | 123-154 | 125-158 | pending |
+| `T013-OLP-0135-B015` | `OLP-0135` |  | 156-167 | 160-171 | pending |
+| `T013-OLP-0135-B016` | `OLP-0135` |  | 169-182 | 173-186 | pending |
+| `T013-OLP-0135-B017` | `OLP-0135` |  | 184-197 | 188-202 | pending |
+| `T013-OLP-0136-B021` | `OLP-0136` |  | 120-126 | 120-126 | pending |
+| `T013-OLP-0136-B022` | `OLP-0136` |  | 128-143 | 128-145 | pending |
+| `T013-OLP-0137-B005` | `OLP-0137` |  | 12-18 | 12-18 | pending |
+| `T013-OLP-0137-B006` | `OLP-0137` |  | 20-24 | 20-24 | pending |
+| `T013-OLP-0137-B007` | `OLP-0137` |  | 26-31 | 26-31 | pending |
+| `T013-OLP-0137-B008` | `OLP-0137` |  | 33-38 | 33-38 | pending |
+| `T013-OLP-0137-B009` | `OLP-0137` |  | 40-46 | 40-46 | pending |
+| `T013-OLP-0137-B010` | `OLP-0137` |  | 48-61 | 48-60 | pending |
 
 ## T014 — perfect number → परिपूर्ण संख्या
 
@@ -183,6 +217,7 @@ This view contains 28 urgent/high decisions and
 | `T022-OLP-0023-B016` | `OLP-0023` | 3.3 संबंध म्हणून फलने | 92-101 | 89-101 | 28–29 |
 | `T022-OLP-0030-B009` | `OLP-0030` | 4.3 कँटर यांची नागमोडी पद्धत | 78-112 | 79-114 | 37–39 |
 | `T022-OLP-0031-B018` | `OLP-0031` | 4.4 जोडीकरण फलने आणि संकेतांक | 111-113 | 115-117 | 39–40 |
+| `T022-OLP-0128-B007` | `OLP-0128` |  | 34-47 | 31-46 | pending |
 
 ## T023 — sequence/string/word → अनुक्रम / चिन्हमाला / शब्द
 
@@ -297,6 +332,7 @@ This view contains 28 urgent/high decisions and
 | `T026-OLP-0066-B006` | `OLP-0066` | 8.3 नैसर्गिक निगमन | 15-31 | 15-29 | 86–87 |
 | `T026-OLP-0090-B007` | `OLP-0090` | 10.6 संख्यापकांसह निष्पत्ती | 20-86 | 19-82 | 118–121 |
 | `T026-OLP-0090-B013` | `OLP-0090` | 10.6 संख्यापकांसह निष्पत्ती | 183-228 | 175-218 | 118–121 |
+| `T026-OLP-0137-B010` | `OLP-0137` |  | 48-61 | 48-60 | pending |
 
 ## T028 — continuum → सांतत्य
 
@@ -979,6 +1015,22 @@ This view contains 28 urgent/high decisions and
 | `T044-OLP-0119-B015` | `OLP-0119` |  | 75-95 | 75-96 | pending |
 | `T044-OLP-0120-B007` | `OLP-0120` |  | 18-20 | 18-20 | pending |
 | `T044-OLP-0120-B009` | `OLP-0120` |  | 25-48 | 25-50 | pending |
+| `T044-OLP-0127-B006` | `OLP-0127` |  | 15-22 | 15-22 | pending |
+| `T044-OLP-0127-B008` | `OLP-0127` |  | 49-57 | 46-53 | pending |
+| `T044-OLP-0127-B009` | `OLP-0127` |  | 59-73 | 55-66 | pending |
+| `T044-OLP-0128-B006` | `OLP-0128` |  | 15-32 | 15-29 | pending |
+| `T044-OLP-0128-B010` | `OLP-0128` |  | 66-80 | 63-77 | pending |
+| `T044-OLP-0128-B015` | `OLP-0128` |  | 135-168 | 125-159 | pending |
+| `T044-OLP-0130-B008` | `OLP-0130` |  | 39-47 | 39-47 | pending |
+| `T044-OLP-0130-B012` | `OLP-0130` |  | 64-68 | 64-69 | pending |
+| `T044-OLP-0130-B021` | `OLP-0130` |  | 181-202 | 183-206 | pending |
+| `T044-OLP-0132-B007` | `OLP-0132` |  | 36-73 | 36-74 | pending |
+| `T044-OLP-0132-B014` | `OLP-0132` |  | 163-166 | 166-169 | pending |
+| `T044-OLP-0134-B008` | `OLP-0134` |  | 25-49 | 25-49 | pending |
+| `T044-OLP-0134-B014` | `OLP-0134` |  | 99-110 | 99-110 | pending |
+| `T044-OLP-0134-B015` | `OLP-0134` |  | 112-123 | 112-123 | pending |
+| `T044-OLP-0135-B007` | `OLP-0135` |  | 29-31 | 27-31 | pending |
+| `T044-OLP-0136-B014` | `OLP-0136` |  | 65-71 | 64-71 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
@@ -1127,6 +1179,7 @@ This view contains 28 urgent/high decisions and
 | `T155-OLP-0124-B015` | `OLP-0124` |  | 113-117 | 115-119 | pending |
 | `T155-OLP-0124-B016` | `OLP-0124` |  | 119-122 | 121-124 | pending |
 | `T155-OLP-0124-B018` | `OLP-0124` |  | 129-140 | 131-143 | pending |
+| `T155-OLP-0135-B010` | `OLP-0135` |  | 52-76 | 53-77 | pending |
 
 ## T174 — closed term → बंद पद
 
@@ -1208,6 +1261,28 @@ This view contains 28 urgent/high decisions and
 | `T174-OLP-0110-B008` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | 41-54 | 41-54 | 153–154 |
 | `T174-OLP-0115-B006` | `OLP-0115` |  | 13-21 | 13-21 | pending |
 | `T174-OLP-0125-B007` | `OLP-0125` |  | 17-24 | 18-25 | pending |
+| `T174-OLP-0128-B015` | `OLP-0128` |  | 135-168 | 125-159 | pending |
+| `T174-OLP-0130-B019` | `OLP-0130` |  | 160-168 | 161-169 | pending |
+| `T174-OLP-0130-B021` | `OLP-0130` |  | 181-202 | 183-206 | pending |
+| `T174-OLP-0130-B022` | `OLP-0130` |  | 204-211 | 208-214 | pending |
+| `T174-OLP-0132-B006` | `OLP-0132` |  | 15-34 | 15-34 | pending |
+| `T174-OLP-0132-B007` | `OLP-0132` |  | 36-73 | 36-74 | pending |
+| `T174-OLP-0132-B008` | `OLP-0132` |  | 75-76 | 76-77 | pending |
+| `T174-OLP-0132-B009` | `OLP-0132` |  | 78-97 | 79-99 | pending |
+| `T174-OLP-0132-B010` | `OLP-0132` |  | 99-114 | 101-114 | pending |
+| `T174-OLP-0132-B011` | `OLP-0132` |  | 116-125 | 116-125 | pending |
+| `T174-OLP-0132-B012` | `OLP-0132` |  | 127-155 | 127-158 | pending |
+| `T174-OLP-0132-B022` | `OLP-0132` |  | 238-247 | 245-256 | pending |
+| `T174-OLP-0132-B023` | `OLP-0132` |  | 249-260 | 258-271 | pending |
+| `T174-OLP-0133-B005` | `OLP-0133` |  | 12-24 | 12-23 | pending |
+| `T174-OLP-0133-B006` | `OLP-0133` |  | 26-33 | 25-32 | pending |
+| `T174-OLP-0133-B007` | `OLP-0133` |  | 35-55 | 34-54 | pending |
+| `T174-OLP-0133-B008` | `OLP-0133` |  | 57-80 | 56-80 | pending |
+| `T174-OLP-0133-B010` | `OLP-0133` |  | 86-94 | 86-94 | pending |
+| `T174-OLP-0133-B013` | `OLP-0133` |  | 135-153 | 137-155 | pending |
+| `T174-OLP-0133-B016` | `OLP-0133` |  | 162-169 | 164-171 | pending |
+| `T174-OLP-0135-B013` | `OLP-0135` |  | 90-121 | 91-123 | pending |
+| `T174-OLP-0136-B015` | `OLP-0136` |  | 73-83 | 73-83 | pending |
 
 ## T178 — eigenvariable → आयगेन चर
 
@@ -1387,6 +1462,22 @@ This view contains 28 urgent/high decisions and
 | Occurrence | Unit | Section | Source line | Target line | PDF page |
 |---|---|---|---|---|---|
 | `T188-OLP-0119-B018` | `OLP-0119` |  | 103-118 | 103-119 | pending |
+
+## T201 — Löwenheim–Skolem Theorem / Skolem's Paradox → लोव्हेनहाइम--स्कोलेम प्रमेय / स्कोलेमची विरोधापत्ती
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: proper-name transliteration plus established components; exact named expressions not directly attested; expert-reviewable. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Are लोव्हेनहाइम and विरोधापत्ती the preferred Marathi spelling and paradox label for these named model-theory results?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T201-OLP-0137-B004` | `OLP-0137` |  | 9-10 | 9-10 | pending |
+| `T201-OLP-0137-B005` | `OLP-0137` |  | 12-18 | 12-18 | pending |
+| `T201-OLP-0137-B006` | `OLP-0137` |  | 20-24 | 20-24 | pending |
+| `T201-OLP-0137-B008` | `OLP-0137` |  | 33-38 | 33-38 | pending |
+| `T201-OLP-0137-B010` | `OLP-0137` |  | 48-61 | 48-60 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

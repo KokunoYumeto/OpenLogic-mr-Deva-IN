@@ -1,0 +1,290 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: construction-of-model
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{mod}}
+      {\olfileid{pl}{com}{mod}}
+
+\olsection{प्रतिमानाची रचना}
+
+\begin{explain}
+\iftag{FOL}{सध्या आपण~$\eq$ चा विचार करत नाही; म्हणजे~$\eq$ नसलेला
+  !!{sentence}s चा सुसंगत संच~$\Gamma$ पूर्ततायोग्य आहे एवढेच आपल्याला
+  दाखवायचे आहे. प्रथम~$\Gamma$ चा विस्तार करून सुसंगत, !!{complete}
+  आणि संतृप्त असा संच~$\Gamma^*$ मिळवतो. या बाबतीत
+  प्रतिमान~$\Struct{M(\Gamma^*)}$ ची व्याख्या सोपी आहे: आपण~$\Lang{L'}$
+  मधील बंद पदांचा संच प्रांत म्हणून घेतो. प्रत्येक !!{constant} ला तेच
+  स्थिर नेमतो आणि, अधिक व्यापकपणे, प्रत्येक बंद पद~$t$ साठी
+  $\Value{t}{M(\Gamma^*)} = t$ याची खात्री करतो. !!{predicate}s ना
+  असे विस्तार नेमतो की एखादे आण्विक !!{sentence} हे
+  $\Struct{M(\Gamma^*)}$ मध्ये तेव्हा आणि केवळ तेव्हाच सत्य असते, जेव्हा
+  ते~$\Gamma^*$ मध्ये असते. त्यामुळे~$\Gamma^*$ मधील सर्व आण्विक
+  !!{sentence}s हे~$\Struct{M(\Gamma^*)}$ मध्ये सत्य होतील, हे उघड आहे.
+  आपण सुरुवात केलेला~$\Gamma^*$ सुसंगत, संपूर्ण आणि संतृप्त असेल, तर
+  उरलेली वाक्येही सत्य असतात.}{आता सर्व $!A \in \Gamma$ सत्य करणारे
+  !!a{valuation} परिभाषित करण्यास आपण तयार आहोत. त्यासाठी प्रथम
+  लिंडेनबाउमचे पूर्वप्रमेय लावतो: आपल्याला संपूर्ण आणि सुसंगत असा
+  $\Gamma^* \supseteq \Gamma$ मिळतो. $\Gamma^*$ मधील
+  !!{propositional variable}s कडून~$\pAssign v(\Gamma^*)$ निश्चित करू.}
+\end{explain}
+
+\iftag{FOL}{%
+\begin{defn}[पद-प्रतिमान]
+\ollabel{defn:termmodel}
+$\Gamma^*$ हा भाषा~$\Lang L$ मधील !!{sentence}s चा !!a{complete},
+सुसंगत आणि संतृप्त संच असू द्या. $\Gamma^*$ चे
+\emph{पद-प्रतिमान}~$\Struct M(\Gamma^*)$ ही पुढीलप्रमाणे परिभाषित केलेली
+!!{structure} आहे:
+\begin{enumerate}
+\item !!{domain}~$\Domain{M(\Gamma^*)}$ हा~$\Lang L$ मधील सर्व बंद
+  पदांचा संच आहे.
+\item !!a{constant}~$c$ चा निर्वचनार्थ स्वतः~$c$ आहे:
+  $\Assign{c}{M(\Gamma^*)} = c$.
+\item !!{function}~$f$ ला असे फलन नेमले जाते की बंद पदे $t_1$, \dots,
+  $t_n$ ही वितर्के दिली असता त्याचे मूल्य बंद पद $f(t_1, \dots, t_n)$
+  असते:
+\[
+\Assign{f}{M(\Gamma^*)}(t_1, \dots, t_n) = f(t_1,\dots, t_n)
+\]
+\item $R$ हे $n$-स्थानी !!{predicate} असेल, तर
+  \[
+  \tuple{t_1, \dots,
+  t_n} \in \Assign{R}{M(\Gamma^*)} \text{ तेव्हा आणि केवळ तेव्हाच } \Atom{R}{t_1, \dots,
+    t_n} \in \Gamma^*.
+  \]
+\end{enumerate}
+\end{defn}
+}{%
+\begin{defn}
+\ollabel{defn:termmodel}
+$\Gamma^*$ हा !!{formula}s चा संपूर्ण सुसंगत संच आहे असे समजा. मग आपण
+पुढील व्याख्या करतो:
+\[
+\pAssign v(\Gamma^*)(p) = \begin{cases}
+  \True & \text{जर $p \in \Gamma^*$}\\
+  \False & \text{जर $p \notin \Gamma^*$}
+  \end{cases}
+\]
+\end{defn}
+}
+
+\iftag{FOL}{%
+आपल्याकडे खरोखरच $\Value{t}{M(\Gamma^*)} = t$ आहे, हे आता पडताळू.
+
+\begin{lem}
+\ollabel{lem:val-in-termmodel} \olref{defn:termmodel} मधील
+$\Struct M(\Gamma^*)$ हे पद-प्रतिमान असू द्या; मग
+$\Value{t}{M(\Gamma^*)} = t$.
+\end{lem}
+\begin{proof}
+ ही सिद्धता~$t$ वरील विगमनाने मिळते. $t$ हे !!a{constant} असण्याचा
+ आधार-प्रसंग पद-प्रतिमानाच्या व्याख्येवरून थेट मिळतो. विगमन-पायरीसाठी
+ $t_1, \ldots, t_n$ ही अशी बंद पदे आहेत की
+ $\Value{t_i}{M(\Gamma^*)} = t_i$, आणि $f$ हे $n$-स्थानी
+ !!{function} आहे, असे समजा. मग
+\begin{align*}
+\Value{f(t_1,\ldots,t_n)}{M(\Gamma^*)} &= \Assign{f}{M(\Gamma^*)}(\Value{t_1}
+ {M(\Gamma^*)},
+\ldots, \Value{t_n}{M(\Gamma^*)}) \\
+&= \Assign{f}{M(\Gamma^*)}(t_1, \dots, t_n) \\
+&= f(t_1,\dots, t_n),
+\end{align*}
+आणि म्हणून विगमनाने हे प्रत्येक बंद पद~$t$ साठी लागू होते.
+\end{proof}
+}
+
+\iftag{FOL}{%
+\begin{explain}
+  \iftag{prvEx}{एखादी !!^a{structure}~$\Struct{M}$ अस्तित्ववाची संख्यकीकृत
+    !!{sentence}~$\lexists[x][!A(x)]$ सत्य करू शकते, पण ती सत्य करते
+    असा कोणताही दृष्टांत~$!A(t)$ नसेल.}{}
+  \iftag{prvAll}{एखादी !!^a{structure}~$\Struct{M}$ सर्ववाची संख्यकीकृत
+    !!{sentence}~$\lforall[x][!A(x)]$ चे सर्व दृष्टांत~$!A(t)$ सत्य करू
+    शकते, पण~$\lforall[x][!A(x)]$ सत्य करणार नाही.}{} याचे कारण सामान्यतः
+  प्रांत~$\Domain{M}$ मधील प्रत्येक !!{element} हे एखाद्या बंद पदाचे
+  मूल्य नसते ($\Struct{M}$ बंद पदांनी आच्छादित नसेल). म्हणूनच
+  पूर्ति-संबंधाची व्याख्या चर-मूल्यांकनांच्या साहाय्याने केली जाते. पण आपल्या
+  पद-प्रतिमान~$\Struct{M(\Gamma^*)}$ साठी त्याची आवश्यकता नसती---कारण
+  ते बंद पदांनी आच्छादित आहे. पुढील निष्पत्तीचा आशय हाच आहे.
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:quant-termmodel}
+\olref{defn:termmodel} मधील $\Struct M(\Gamma^*)$ हे पद-प्रतिमान असू द्या.
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\Sat{M(\Gamma^*)}{\lexists[x][!A(x)]}$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा किमान एका बंद पद~$t$ साठी $\Sat{M(\Gamma^*)}{!A(t)}$.}{}
+\tagitem{prvAll}{$\Sat{M(\Gamma^*)}{\lforall[x][!A(x)]}$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा सर्व बंद पदे~$t$ यांच्यासाठी $\Sat{M(\Gamma^*)}{!A(t)}$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{%
+  \iftag{probEx}{सराव.}{\olref[syn][ass]{prop:sat-quant} नुसार
+    $\Sat{M(\Gamma^*)}{\lexists[x][!A(x)]}$ तेव्हा आणि केवळ तेव्हाच,
+    जेव्हा किमान एका चर-मूल्यांकन~$s$ साठी
+    $\Sat{M(\Gamma^*)}{!A(x)}[s]$. $\Domain{M(\Gamma^*)}$ मध्ये
+    $\Lang{L}$ मधील बंद पदे असल्यामुळे, हे तेव्हा आणि केवळ तेव्हाच लागू
+    होते, जेव्हा असे किमान एक बंद पद~$t$ असते की $s(x) = t$ आणि
+    $\Sat{M(\Gamma^*)}{!A(x)}[s]$. \olref[fol][syn][ext]{prop:ext-formulas}
+    नुसार, $s(x) = t$ असेल तेथे $\Sat{M(\Gamma^*)}{!A(x)}[s]$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $\Sat{M(\Gamma^*)}{!A(t)}[s]$. तसेच
+    \olref[fol][syn][ass]{prop:sentence-sat-true} नुसार,
+    $!A(t)$ हे वाक्य असल्यामुळे $\Sat{M(\Gamma^*)}{!A(t)}[s]$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $\Sat{M(\Gamma^*)}{!A(t)}$.}}{}
+\tagitem{prvAll}{%
+  \iftag{probAll}{सराव.}{\olref[syn][ass]{prop:sat-quant} नुसार
+    $\Sat{M(\Gamma^*)}{\lforall[x][!A(x)]}$ तेव्हा आणि केवळ तेव्हाच,
+    जेव्हा प्रत्येक चर-मूल्यांकन $s$ साठी
+    $\Sat{M(\Gamma^*)}{!A(x)}[s]$. लक्षात घ्या की
+    $\Domain{M(\Gamma^*)}$ मध्ये~$\Lang{L}$ मधील बंद पदे असतात. त्यामुळे
+    प्रत्येक बंद पद~$t$ साठी $s(x) = t$ असे चर-मूल्यांकन मिळते, आणि
+    कोणत्याही चर-मूल्यांकनासाठी $s(x)$ हे एखादे बंद पद~$t$ असते.
+    \olref[fol][syn][ext]{prop:ext-formulas} नुसार, $s(x) = t$ असेल तेथे
+    $\Sat{M(\Gamma^*)}{!A(x)}[s]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $\Sat{M(\Gamma^*)}{!A(t)}[s]$. तसेच
+    \olref[fol][syn][ass]{prop:sentence-sat-true} नुसार,
+    $!A(t)$ हे वाक्य असल्यामुळे $\Sat{M(\Gamma^*)}{!A(t)}[s]$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $\Sat{M(\Gamma^*)}{!A(t)}$.}}{}
+\end{tagenumerate}
+\end{proof}
+}{}
+
+\tagprob[FOL]{probEx,probAll}
+\begin{prob}
+\olref[fol][com][mod]{prop:quant-termmodel} ची सिद्धता पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\begin{lem}[सत्यता पूर्वप्रमेय]
+\ollabel{lem:truth} \iftag{FOL}{$!A$ मध्ये~$\eq$ येत नाही असे समजा. मग}{}
+$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $!A \in \Gamma^*$.
+\end{lem}
+
+\begin{proof}
+दोन्ही दिशा एकाच वेळी, $!A$ वरील विगमनाने सिद्ध करू.
+\begin{enumerate}
+\tagitem{prvFalse}{\indcase{!A}{\lfalse}
+  {$\iftag{FOL}{\Sat/{M(\Gamma^*)}{\lfalse}}{\pSat/{v(\Gamma^*)}{\lfalse}}$
+    हे पूर्तिच्या व्याख्येनुसार मिळते. दुसरीकडे, $\Gamma^*$ सुसंगत
+    असल्यामुळे $\lfalse \notin \Gamma^*$.}}{}
+
+\tagitem{prvTrue}{\indcase{!A}{\ltrue}
+  {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\ltrue}$
+    हे पूर्तिच्या व्याख्येनुसार मिळते. दुसरीकडे, $\Gamma^*$ सुसंगत व
+    !!{complete} असल्यामुळे आणि $\Gamma^* \Proves \ltrue$ असल्यामुळे
+    $\ltrue \in \Gamma^*$.}}{}
+
+\tagitem{FOL}{\indcase{!A}{R(t_1, \dots, t_n)}
+  {$\Sat{M(\Gamma^*)}{\Atom{R}{t_1, \dots, t_n}}$ तेव्हा आणि केवळ तेव्हाच,
+    जेव्हा $\tuple{t_1, \dots, t_n} \in \Assign{R}{M(\Gamma^*)}$
+    (पूर्तिच्या व्याख्येनुसार); आणि हे तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $R(t_1, \dots, t_n) \in \Gamma^*$ ($\Struct M(\Gamma^*)$ च्या
+    रचनेनुसार).}}{\indcase{!A}{p}{$\pSat{v(\Gamma^*)}{p}$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $\pAssign v(\Gamma^*)(p) = \True$ (पूर्तिच्या
+    व्याख्येनुसार); आणि हे तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $p \in \Gamma^*$ ($\pAssign v(\Gamma^*)$ च्या रचनेनुसार).}}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}
+    {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$ तेव्हा
+    आणि केवळ तेव्हाच, जेव्हा
+    $\iftag{FOL}{\Sat/{M(\Gamma^*)}{!B}}{\pSat/{v(\Gamma^*)}{!B}}$
+    (पूर्तिच्या व्याख्येनुसार). विगमन-गृहीतकानुसार,
+    $\iftag{FOL}{\Sat/{M(\Gamma^*)}{!B}}{\pSat/{v(\Gamma^*)}{!B}}$ तेव्हा
+    आणि केवळ तेव्हाच, जेव्हा $!B \notin \Gamma^*$. $\Gamma^*$ सुसंगत
+    आणि !!{complete} असल्यामुळे $!B \notin \Gamma^*$ तेव्हा आणि केवळ
+    तेव्हाच, जेव्हा $\lnot !B \in \Gamma^*$.}}{}
+
+\tagitem{prvAnd}{%
+\iftag{probAnd}{%
+  \indcase!{!A}{!B \land !C}{}}{%
+  \indcase{!A}{!B \land
+    !C}{$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!B}$ आणि
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!C}$ हे दोन्ही
+    लागू होतात (पूर्तिच्या व्याख्येनुसार); आणि हे तेव्हा आणि केवळ तेव्हाच,
+    जेव्हा $!B \in \Gamma^*$ आणि $!C \in \Gamma^*$ हे दोन्ही लागू
+    होतात (विगमन-गृहीतकानुसार). तसेच
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-and} नुसार, हे तेव्हा आणि
+    केवळ तेव्हाच लागू होते, जेव्हा $(!B \land !C) \in \Gamma^*$.}}}{}
+
+\tagitem{prvOr}{%
+\iftag{probOr}{%
+  \indcase!{!A}{!B \lor !C}{}}{%
+  \indcase{!A}{!B \lor !C}
+    {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!B}$ किंवा
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!C}$
+    (पूर्तिच्या व्याख्येनुसार); आणि हे तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $!B \in \Gamma^*$ किंवा $!C \in \Gamma^*$ (विगमन-गृहीतकानुसार).
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-or} नुसार, हे तेव्हा आणि
+    केवळ तेव्हाच लागू होते, जेव्हा $(!B \lor !C) \in \Gamma^*$.}}}{}
+
+\tagitem{prvIf}{%
+\iftag{probIf}{%
+  \indcase!{!A}{!B \lif !C}{}}{%
+  \indcase{!A}{!B \lif !C}
+    {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $\iftag{FOL}{\Sat/{M(\Gamma^*)}}{\pSat/{v(\Gamma^*)}}{!B}$ किंवा $\iftag{FOL}{\Sat{M (\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!C}$
+    (पूर्तिच्या व्याख्येनुसार); आणि हे तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $!B \notin \Gamma^*$ किंवा $!C \in \Gamma^*$ (विगमन-गृहीतकानुसार).
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-if} नुसार, हे तेव्हा आणि
+    केवळ तेव्हाच लागू होते, जेव्हा $(!B \lif !C) \in \Gamma^*$.}}}{}
+
+\iftag{FOL}{%
+\tagitem{prvAll}{%
+  \iftag{probAll}{%
+    \indcase!{!A}{\lforall[x][!B(x)]}{}}{%
+    \indcase{!A}{\lforall[x][!B(x)]}{$\Sat{M(\Gamma^*)}{\indfrm}$ तेव्हा
+      आणि केवळ तेव्हाच, जेव्हा सर्व बंद पदे~$t$ यांच्यासाठी
+      $\Sat{M(\Gamma^*)}{!B(t)}$ (\olref{prop:quant-termmodel}).
+      विगमन-गृहीतकानुसार हे तेव्हा आणि केवळ तेव्हाच लागू होते, जेव्हा सर्व
+      बंद पदे~$t$ यांच्यासाठी $!B(t) \in \Gamma^*$; आणि
+      \olref[hen]{prop:saturated-instances} नुसार हे पुन्हा तेव्हा आणि
+      केवळ तेव्हाच लागू होते, जेव्हा $\lforall[x][!B(x)] \in \Gamma^*$.}}}{}
+%READERNOTE{OLCOM-002: गोठवलेल्या इंग्रजी स्रोताच्या सर्ववाची विगमन-प्रसंगातील अंतिम सूत्रात B ऐवजी A आले आहे. मराठीत प्रसंगाशी जुळणारे B पुनर्स्थापित केले असून गोठवलेले इंग्रजी बाइट्स बदललेले नाहीत.}
+
+\tagitem{prvEx}{%
+  \iftag{probEx}{%
+    \indcase!{!A}{\lexists[x][!B(x)]}{}}{%
+    \indcase{!A}{\lexists[x][!B(x)]}{$\Sat{M(\Gamma^*)}{\indfrm}$ तेव्हा
+      आणि केवळ तेव्हाच, जेव्हा किमान एका बंद पद~$t$ साठी
+      $\Sat{M(\Gamma^*)}{!B(t)}$ (\olref{prop:quant-termmodel}).
+      विगमन-गृहीतकानुसार हे तेव्हा आणि केवळ तेव्हाच लागू होते, जेव्हा किमान
+      एका बंद पद~$t$ साठी $!B(t) \in \Gamma^*$. तसेच
+      \olref[hen]{prop:saturated-instances} नुसार हे पुन्हा तेव्हा आणि
+      केवळ तेव्हाच लागू होते, जेव्हा $\lexists[x][!B(x)] \in \Gamma^*$.}}}{}
+}{}
+%READERNOTE{OLCOM-003: गोठवलेल्या इंग्रजी स्रोताच्या सत्यता पूर्वप्रमेयातील संख्यकीकृत प्रसंगांत चार वेळा पदे म्हटले आहे; संदर्भित निष्पत्ती आणि संतृप्त-दृष्टांत गुणधर्म बंद पदांसाठी आहेत. मराठीत बंद पदे असे स्पष्ट केले असून गोठवलेले इंग्रजी बाइट्स बदललेले नाहीत.}
+\end{enumerate}
+\end{proof}
+
+
+\tagprob[FOL]{probOr,probAnd,probIf,probEx,probAll}
+
+\begin{prob}
+\olref[fol][com][mod]{lem:truth} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\tagendprob
+
+\tagprob[notFOL]{probOr,probAnd,probIf}
+
+\begin{prob}
+\olref[pl][com][mod]{lem:truth} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\tagendprob
+
+\end{document}

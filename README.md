@@ -42,16 +42,17 @@ messages, exact text and MathML preservation checks, complete link validation,
 and representative rendering in Calibre.
 
 Translation continues beyond the frozen OLP-0111 release boundary. The editable
-working tree now contains 122/722 units and 1,270 aligned content segments through
-OLP-0125, completing the axiomatic-deduction chapter in source form. OLP-0112–OLP-0125
-remain outside this reader and its downloadable source archive; OLP-0126 is next.
+working tree now contains 134/722 units and 1,423 aligned content segments through
+OLP-0137, completing the axiomatic-deduction and completeness chapters in source
+form. OLP-0112–OLP-0137 remain outside this reader and its downloadable source
+archive; OLP-0138 is next.
 
 - **Current release:** [अकरा प्रकरणे — EPUB 3, PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8.1).
 - **EPUB 3:** [download the reflowable Marathi reader](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub).
 - **DOI mirror:** [edition concept DOI 10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960), which resolves to the latest version.
 - **PDF:** [157-page cumulative reader](releases/eleven-chapters-v0.8/openlogic-mr-eleven-chapters.pdf).
 - **Offline HTML:** download and extract `openlogic-mr-eleven-chapters-html.zip`, then open `index.html`.
-- **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/), [size of sets](mr/content/sets-functions-relations/size-of-sets/), [arithmetization](mr/content/sets-functions-relations/arithmetization/), [infinite sets](mr/content/sets-functions-relations/infinite/), [propositional syntax and semantics](mr/content/propositional-logic/syntax-and-semantics/), [first-order proof systems](mr/content/first-order-logic/proof-systems/), [sequent calculus](mr/content/first-order-logic/sequent-calculus/), [natural deduction](mr/content/first-order-logic/natural-deduction/), [Tableaux](mr/content/first-order-logic/tableaux/), and [axiomatic deduction](mr/content/first-order-logic/axiomatic-deduction/).
+- **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/), [size of sets](mr/content/sets-functions-relations/size-of-sets/), [arithmetization](mr/content/sets-functions-relations/arithmetization/), [infinite sets](mr/content/sets-functions-relations/infinite/), [propositional syntax and semantics](mr/content/propositional-logic/syntax-and-semantics/), [first-order proof systems](mr/content/first-order-logic/proof-systems/), [sequent calculus](mr/content/first-order-logic/sequent-calculus/), [natural deduction](mr/content/first-order-logic/natural-deduction/), [Tableaux](mr/content/first-order-logic/tableaux/), [axiomatic deduction](mr/content/first-order-logic/axiomatic-deduction/), and [completeness](mr/content/first-order-logic/completeness/).
 - **Terminology and expert review:** begin with the [shared-schema review guide](provenance/translation-decisions/START_HERE.md), then use the [full applied-decision index](provenance/translation-decisions/TRANSLATION_DECISIONS_FULL.md), [priority review](provenance/translation-decisions/PRIORITY_REVIEW.md), [one-row-per-occurrence CSV](provenance/translation-decisions/DECISION_OCCURRENCES.csv), or [canonical JSON](provenance/translation-decisions/DECISIONS.json). The backward-compatible [decision ledger](provenance/EXPERT_REVIEW_LOG.md) and occurrence JSONL remain available. These surfaces record exact source/target scopes, current PDF page ranges, reversible choices and plain review questions without making review a completion gate.
 - **Pristine English:** `upstream/`; this is source evidence, not translated coverage.
 - **Current source-checkpoint evidence:** `provenance/source-checkpoint-108/`.
@@ -103,8 +104,8 @@ The evidence also preserves the formal retraction of a
 shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The frozen
 94-unit source-checkpoint evidence explicitly distinguishes preserved original
 pages from hash-pinned short web observations whose origin HTML bytes were
-unavailable. The synchronized root provenance now covers 122 translated units and
-1,270 aligned segments through OLP-0125. A bounded independent model audit of
+unavailable. The synchronized root provenance now covers 134 translated units and
+1,423 aligned segments through OLP-0137. A bounded independent model audit of
 OLP-0071–OLP-0072 found no
 material mistranslation, prompted one standing-assumption clarification, and led
 to narrower overlapping choice locators plus separate confidence records for
@@ -177,8 +178,14 @@ Theorems, prove the principal derivability and consistency results, establish
 semantic soundness, and add identity axioms. OLAXD-001–009 record bounded source
 repairs for formula punctuation, proof conclusions and citations, two protected
 formula markers, one inference justification, and stale chapter metadata.
+OLP-0126–OLP-0137 complete the unreleased completeness chapter: they construct
+complete consistent Henkin sets and their term models, handle identity, prove
+completeness and compactness, give a direct compactness proof, and derive the
+downward Löwenheim--Skolem theorem. OLCOM-001–006 record bounded source repairs
+for cross-references, truth-lemma formulas, closed-term qualifications, duplicated
+punctuation and symbols, and the scope of a finite-satisfiability construction.
 The records through OLP-0111 are included in the v0.8.1 reader and release archive;
-OLP-0112–OLP-0125 are post-release working units. OLP-0126 is next.
+OLP-0112–OLP-0137 are post-release working units. OLP-0138 is next.
 
 Canon originals are local research evidence. They are **not redistributed here**.
 Some government-site originals could not be downloaded; the index distinguishes

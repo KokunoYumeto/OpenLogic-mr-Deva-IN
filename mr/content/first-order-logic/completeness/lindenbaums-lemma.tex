@@ -1,0 +1,102 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: lindenbaums-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{lin}}
+      {\olfileid{pl}{com}{lin}}
+
+\olsection{लिंडेनबाउमचे पूर्वप्रमेय}
+
+\begin{explain}
+आता आपण असे पूर्वप्रमेय सिद्ध करू की !!{sentence}s चा कोणताही सुसंगत
+संच केवळ सुसंगतच नव्हे, तर !!{complete} असलेल्या एखाद्या वाक्यसंचात
+समाविष्ट असतो. या सिद्धतेत प्रत्येक वेळी एक !!{sentence} जोडले जाते
+आणि प्रत्येक पायरीवर संच सुसंगत राहील याची हमी दिली जाते. हे अशा रीतीने
+करतो की प्रत्येक $!A$ साठी कोणत्यातरी टप्प्यावर $!A$ किंवा $\lnot
+!A$ यांपैकी एक जोडले जाईल. मग त्या रचनेतील सर्व टप्प्यांचा संघ $!A$
+किंवा त्याचे नकरण~$\lnot !A$ यांपैकी एक समाविष्ट करतो आणि म्हणून तो
+संपूर्ण असतो. प्रत्येक टप्प्यावर विसंगती येणार नाही याची खात्री केल्यामुळे
+तो सुसंगतही असतो.
+\end{explain}
+
+\begin{lem}[लिंडेनबाउमचे पूर्वप्रमेय]
+\ollabel{lem:lindenbaum} भाषा~$\Lang{L}$ मधील प्रत्येक सुसंगत
+संच~$\Gamma$ चा विस्तार करून !!a{complete} आणि सुसंगत असा
+संच~$\Gamma^*$ मिळवता येतो.
+\end{lem}
+
+\begin{proof}
+$\Gamma$ सुसंगत असू द्या. $\Lang L$ मधील सर्व !!{sentence}s चे
+$!A_0$, $!A_1$, \dots{} असे प्रगणन असू द्या. $\Gamma_0 = \Gamma$
+अशी व्याख्या करा, आणि
+\[
+\Gamma_{n+1} =
+\begin{cases}
+\Gamma_n \cup \{ !A_n \} & \textrm{जर $\Gamma_n \cup \{!A_n\}$
+  सुसंगत असेल;} \\
+\Gamma_n \cup \{ \lnot !A_n \} & \textrm{अन्यथा.}
+\end{cases}
+\]
+$\Gamma^* = \bigcup_{n \geq 0} \Gamma_n$ असू द्या.
+
+प्रत्येक $\Gamma_n$ सुसंगत आहे: व्याख्येनुसार $\Gamma_0$ सुसंगत आहे.
+$\Gamma_{n+1} = \Gamma_n \cup \{!A_n\}$ असेल, तर याचे कारण हा
+दुसरा संच सुसंगत असणे हेच आहे. तो सुसंगत नसेल, तर $\Gamma_{n+1} =
+\Gamma_n \cup \{\lnot !A_n\}$. $\Gamma_n \cup \{\lnot !A_n\}$
+सुसंगत आहे हे आपल्याला पडताळावे लागेल. तो सुसंगत नाही असे समजा. मग
+$\Gamma_n \cup \{!A_n\}$ आणि $\Gamma_n \cup \{\lnot !A_n\}$ हे
+\emph{दोन्ही} विसंगत आहेत. याचा अर्थ
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:prv:prop:provability-exhaustive},
+    prfSC/{fol:seq:prv:prop:provability-exhaustive},
+    prfND/{fol:ntd:prv:prop:provability-exhaustive},
+    prfTab/{fol:tab:prv:prop:provability-exhaustive}}}{%
+  \tagrefs{prfAX/{pl:axd:prv:prop:provability-exhaustive},
+    prfSC/{pl:seq:prv:prop:provability-exhaustive},
+    prfND/{pl:ntd:prv:prop:provability-exhaustive},
+    prfTab/{pl:tab:prv:prop:provability-exhaustive}}}
+नुसार $\Gamma_n$ विसंगत असेल; पण हे विगमन-गृहीतकाच्या विरुद्ध आहे.
+
+प्रत्येक~$n$ आणि प्रत्येक $i < n$ साठी $\Gamma_i \subseteq \Gamma_n$.
+हे~$n$ वरील सोप्या विगमनाने मिळते. $n=0$ असेल, तर $i < 0$ असा
+कोणताही निर्देशांक नसतो; म्हणून विधान आपोआप लागू होते. विगमन-पायरीसाठी ते~$n$
+साठी खरे आहे असे समजा. $i < n+1$ असेल, तर $\Gamma_i \subseteq
+\Gamma_{n+1}$ हे दाखवू. रचनेनुसार $\Gamma_{n+1} = \Gamma_n \cup
+\{!A_n\}$ किंवा $= \Gamma_n \cup \{\lnot !A_n\}$. म्हणून $\Gamma_n
+\subseteq \Gamma_{n+1}$. $i < n+1$ असेल, तर विगमन-गृहीतकानुसार
+$\Gamma_i \subseteq \Gamma_n$ ($i < n$ असल्यास), किंवा $\Gamma_n
+\subseteq \Gamma_n$ हे क्षुल्लक तथ्य लागू होते ($i = n$ असल्यास).
+म्हणून~$\subseteq$ च्या संक्रमणशीलतेने $\Gamma_i \subseteq
+\Gamma_{n+1}$ मिळते.
+
+यावरून $\Gamma^*$ सुसंगत आहे हे मिळते. ते कसे ते पाहू: $\Gamma'
+\subseteq \Gamma^*$ हा सांत संच असू द्या. प्रत्येक $!B \in \Gamma'$
+हे कोणत्यातरी~$i$ साठी~$\Gamma_i$ मध्येही असते. या निर्देशांकांतील
+सर्वांत मोठा निर्देशांक $n$ असू द्या. $i \le n$ असेल, तर $\Gamma_i
+\subseteq \Gamma_n$ असल्यामुळे प्रत्येक $!B \in \Gamma'$ हे
+$\in \Gamma_n$ देखील आहे, म्हणजे $\Gamma' \subseteq \Gamma_n$, आणि
+$\Gamma_n$ सुसंगत आहे. म्हणून प्रत्येक सांत उपसंच $\Gamma' \subseteq
+\Gamma^*$ सुसंगत आहे.
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:ptn:prop:proves-compact},
+    prfSC/{fol:seq:ptn:prop:proves-compact},
+    prfND/{fol:ntd:ptn:prop:proves-compact},
+    prfTab/{fol:tab:ptn:prop:proves-compact}}}{%
+  \tagrefs{prfAX/{pl:axd:ptn:prop:proves-compact},
+    prfSC/{pl:seq:ptn:prop:proves-compact},
+    prfND/{pl:ntd:ptn:prop:proves-compact},
+    prfTab/{pl:tab:ptn:prop:proves-compact}}} नुसार $\Gamma^*$
+सुसंगत आहे.
+
+$\Frm[L]$ मधील प्रत्येक !!{sentence} हा~$\Gamma^*$ ची व्याख्या
+करण्यासाठी वापरलेल्या यादीत येतो. $!A_n \notin \Gamma^*$ असेल, तर
+$\Gamma_n \cup \{!A_n\}$ विसंगत होते हेच त्याचे कारण आहे. पण मग
+$\lnot !A_n \in \Gamma^*$; म्हणून $\Gamma^*$ हा !!{complete} आहे.
+\end{proof}
+
+\end{document}

@@ -1,0 +1,206 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{com}{ide}
+\olsection{एकरूपता}
+
+\begin{explain}
+मागील विभागात दिलेली पद-प्रतिमानाची रचना ही~$\eq$ नसलेल्या
+संच~$\Gamma$ साठी प्रथम-कोटी तर्कशास्त्राची संपूर्णता प्रस्थापित करण्यास
+पुरेशी आहे. पद-प्रतिमान हे~$\eq$ नसलेले प्रत्येक $!A \in \Gamma^*$
+पूर्त करते (आणि म्हणून सर्व $!A \in \Gamma$ पूर्त करते). पण~$\eq$
+उपस्थित असेल, तर ही रचना चालत नाही. कारण मग~$\Gamma^*$ मध्ये
+!!a{sentence}~$\eq[t][t']$ असू शकते, पण पद-प्रतिमानात कोणत्याही पदाचे
+मूल्य ते पद स्वतःच असते. म्हणून $t$ आणि $t'$ ही भिन्न पदे असतील, तर
+पद-प्रतिमानातील त्यांची मूल्ये---म्हणजे अनुक्रमे $t$ आणि $t'$---भिन्न
+असतात; त्यामुळे $\eq[t][t']$ असत्य असते. मात्र ``भागाकार घेणे'' म्हणून
+ओळखली जाणारी रचना वापरून हे दुरुस्त करता येते.
+\end{explain}
+
+\begin{defn}
+  $\Gamma^*$ हा~$\Lang L$ मधील वाक्यांचा सुसंगत आणि !!{complete} संच
+  असू द्या. $\Lang L$ मधील बंद पदांच्या संचावर आपण~$\approx$ हा संबंध
+  पुढीलप्रमाणे परिभाषित करतो:
+  \[
+  t \approx t' \text{\quad तेव्हा आणि केवळ तेव्हाच \quad} \eq[t][t'] \in \Gamma^*
+  \]
+\end{defn}
+
+\begin{prop}
+\ollabel{prop:approx-equiv}
+$\approx$ या संबंधाला पुढील गुणधर्म आहेत:
+\begin{enumerate}
+\item $\approx$ परावर्ती आहे.
+\item $\approx$ सममित आहे.
+\item $\approx$ संक्रमक आहे.
+\item $t \approx t'$, $f$ हे !!a{function}, आणि $t_1$, \dots,
+  $t_{i-1}$, $t_{i+1}$, \dots, $t_n$ ही बंद पदे असतील, तर
+\[
+\Atom{f}{t_1,\dots, t_{i-1}, t, t_{i+1}, \dots, t_n} \approx
+\Atom{f}{t_1,\dots, t_{i-1}, t', t_{i+1}, \dots, t_n}.
+\]
+\item $t \approx t'$, $R$ हे !!a{predicate}, आणि $t_1$, \dots,
+  $t_{i-1}$, $t_{i+1}$, \dots, $t_n$ ही बंद पदे असतील, तर
+\begin{multline*}
+\Atom{R}{t_1,\dots, t_{i-1}, t, t_{i+1}, \dots, t_n} \in \Gamma^* \text{ तेव्हा आणि केवळ तेव्हाच } \\
+\Atom{R}{t_1,\dots, t_{i-1}, t', t_{i+1}, \dots, t_n} \in \Gamma^*.
+\end{multline*}
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+$\Gamma^*$ सुसंगत आणि !!{complete} असल्यामुळे $\eq[t][t'] \in
+\Gamma^*$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma^* \Proves
+\eq[t][t']$. म्हणून पुढील विधाने दाखवणे पुरेसे आहे:
+\begin{enumerate}
+\item प्रत्येक बंद पद~$t$ साठी $\Gamma^* \Proves \eq[t][t]$.
+\item $\Gamma^* \Proves \eq[t][t']$ असेल, तर $\Gamma^* \Proves \eq[t'][t]$.
+\item $\Gamma^* \Proves \eq[t][t']$ आणि $\Gamma^* \Proves
+  \eq[t'][t'']$ असेल, तर $\Gamma^* \Proves \eq[t][t'']$.
+\item $\Gamma^* \Proves \eq[t][t']$ असेल, तर
+\[
+\Gamma^* \Proves
+\eq[\Atom{f}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}][\Atom{f}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}]
+\]
+प्रत्येक $n$-स्थानी !!{function}~$f$ आणि बंद पदे $t_1$, \dots,
+$t_{i-1}$, $t_{i+1}$, \dots,~$t_n$ यांच्यासाठी.
+\item $\Gamma^* \Proves \eq[t][t']$ आणि
+$\Gamma^* \Proves
+\Atom{R}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}$ असेल, तर
+$\Gamma^* \Proves \Atom{R}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}$
+प्रत्येक $n$-स्थानी !!{predicate}~$R$ आणि बंद पदे $t_1$, \dots,
+$t_{i-1}$, $t_{i+1}$, \dots,~$t_n$ यांच्यासाठी.
+\end{enumerate}
+%READERNOTE{OLCOM-004: गोठवलेल्या इंग्रजी स्रोताच्या फलन-पदातील t_{i+1} नंतर सलग दोन स्वल्पविराम आहेत. मराठीत एकच स्वल्पविराम ठेवला असून गोठवलेले इंग्रजी बाइट्स बदललेले नाहीत.}
+\end{proof}
+
+\begin{prob}
+\olref[fol][com][ide]{prop:approx-equiv} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{defn}
+$\Gamma^*$ हा भाषा~$\Lang L$ मधील सुसंगत आणि !!{complete} संच आहे,
+$t$ हे बंद पद आहे, आणि~$\approx$ हा मागील व्याख्येतील संबंध आहे असे
+समजा. मग:
+\[
+\equivrep{t}{\approx} = \Setabs{t'}{t'\in \Trm[L], t \approx t'}
+\]
+आणि $\equivclass{\Trm[L]}{\approx} = \Setabs{\equivrep{t}{\approx}}{t \in \Trm[L]}$.
+\end{defn}
+
+\begin{defn}
+\ollabel{defn:term-model-factor}
+$\Struct M = \Struct M(\Gamma^*)$ हे \olref[mod]{defn:termmodel} मधील
+$\Gamma^*$ चे पद-प्रतिमान असू द्या. मग
+$\Struct{\equivclass{M}{\approx}}$ ही पुढील !!{structure} आहे:
+\begin{enumerate}
+\item $\Domain{\equivclass{M}{\approx}} = \equivclass{\Trm[L]}{\approx}$.
+\item $\Assign{c}{\equivclass{M}{\approx}} = \equivrep{c}{\approx}$
+\item $\Assign{f}{\equivclass{M}{\approx}}(\equivrep{t_1}{\approx}, \dots,
+  \equivrep{t_n}{\approx}) = \equivrep{\Atom{f}{t_1,\dots, t_n}}{\approx}$
+\item $\tuple{\equivrep{t_1}{\approx}, \dots, \equivrep{t_n}{\approx}} \in
+  \Assign{R}{\equivclass{M}{\approx}}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\Sat{M}{\Atom{R}{t_1,\dots, t_n}}$; म्हणजे तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\Atom{R}{t_1,\dots, t_n} \in \Gamma^*$.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+लक्षात घ्या की~$\equivclass{\Trm[L]}{\approx}$ च्या घटकांना
+$\equivrep{t}{\approx}$ असे संबोधून, म्हणजेच
+\emph{प्रतिनिधी}~$t \in \equivrep{t}{\approx}$ यांच्या साहाय्याने,
+आपण त्यांच्यासाठी $\Assign{f}{\equivclass{M}{\approx}}$ आणि
+$\Assign{R}{\equivclass{M}{\approx}}$ परिभाषित केली आहेत. या व्याख्या
+प्रतिनिधींच्या निवडीवर अवलंबून नाहीत याची आपल्याला खात्री केली पाहिजे.
+म्हणजे, तेच तुल्यतावर्ग निश्चित करणारी दुसरी~$t'$ निवडली
+($\equivrep{t}{\approx} = \equivrep{t'}{\approx}$), तरी व्याख्यांतून तेच
+फल मिळाले पाहिजे. उदाहरणार्थ, $R$ हे एकस्थानी !!{predicate} असेल, तर
+व्याख्येच्या शेवटच्या बाबीनुसार $\equivrep{t}{\approx} \in
+\Assign{R}{\equivclass{M}{\approx}}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat{M}{\Atom{R}{t}}$. आता $t \approx t'$ असलेल्या दुसऱ्या
+पद~$t'$ साठी $\Sat/{M}{\Atom{R}{t'}}$ असेल, तर व्याख्येनुसार
+$\equivrep{t'}{\approx} \notin \Assign{R}{\equivclass{M}{\approx}}$ असावे
+लागेल. $t \approx t'$ असेल, तर $\equivrep{t}{\approx} =
+\equivrep{t'}{\approx}$; पण $\equivrep{t}{\approx} \in
+\Assign{R}{\equivclass{M}{\approx}}$ आणि $\equivrep{t}{\approx}
+\notin \Assign{R}{\equivclass{M}{\approx}}$ ही दोन्ही विधाने लागू होऊ
+शकत नाहीत. मात्र \olref{prop:approx-equiv} मुळे असे होऊ शकत नाही, याची
+हमी मिळते.
+%READERNOTE{OLCOM-005: गोठवलेल्या इंग्रजी स्रोताच्या प्रतिनिधी-स्वातंत्र्य उदाहरणात दुसऱ्या प्रतिनिधी t' विषयी बोलताना न-पूर्ति सूत्रात पुन्हा t आले आहे. मराठीत t' पुनर्स्थापित केले असून गोठवलेले इंग्रजी बाइट्स बदललेले नाहीत.}
+\end{explain}
+
+\begin{prop}
+$\Struct{\equivclass{M}{\approx}}$ सुव्याख्यायित आहे; म्हणजे $t_1$,
+  \dots, $t_n$, $t_1'$, \dots, $t_n'$ ही बंद पदे असतील आणि
+  $t_i \approx t_i'$ असेल, तर
+\begin{enumerate}
+\item $\equivrep{\Atom{f}{t_1,\dots, t_n}}{\approx} =
+    \equivrep{\Atom{f}{t_1',\dots, t_n'}}{\approx}$, म्हणजे
+  \[
+  \Atom{f}{t_1,\dots, t_n} \approx \Atom{f}{t_1',\dots, t_n'}
+  \]
+  आणि
+\item $\Sat{M}{\Atom{R}{t_1,\dots, t_n}}$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\Sat{M}{\Atom{R}{t_1',\dots, t_n'}}$; म्हणजे
+  \[
+    \Atom{R}{t_1,\dots, t_n} \in \Gamma^* \text{ तेव्हा आणि केवळ तेव्हाच }
+    \Atom{R}{t_1',\dots, t_n'} \in \Gamma^*.
+  \]
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\olref{prop:approx-equiv} वरून~$n$ वरील विगमनाने मिळते.
+\end{proof}
+
+पद-प्रतिमानाच्या बाबतीत होते त्याप्रमाणेच, सत्यता पूर्वप्रमेय सिद्ध
+करण्यापूर्वी आपल्याला पुढील पूर्वप्रमेयाची गरज आहे.
+
+\begin{lem}
+\ollabel{lem:val-in-termmodel-factored} $\Struct M = \Struct M
+ (\Gamma^*)$ असू द्या; मग $\Value{t}{\equivclass{M}{\approx}} = \equivrep{t}
+ {\approx}$.
+\end{lem}
+\begin{proof}
+ही सिद्धता \olref[mod]{lem:val-in-termmodel} च्या सिद्धतेसारखीच आहे.
+\end{proof}
+
+\begin{prob}
+\olref[fol][com][ide]{lem:val-in-termmodel-factored} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:truth}
+सर्व वाक्ये~$!A$ यांच्यासाठी $\Sat{\equivclass{M}{\approx}}{!A}$ तेव्हा आणि
+केवळ तेव्हाच, जेव्हा $!A \in \Gamma^*$.
+\end{lem}
+
+\begin{proof}
+\olref[mod]{lem:truth} च्या सिद्धतेप्रमाणेच~$!A$ वरील विगमनाने सिद्धता
+मिळते. $!A \ident \eq[t][t']$ असण्याच्या प्रसंगाकडेच फक्त अधिक लक्ष
+देण्याची गरज आहे.
+\begin{align*}
+\Sat{\equivclass{M}{\approx}}{\eq[t][t']} & \text{ तेव्हा आणि केवळ तेव्हाच } \equivrep{t}{\approx} = \equivrep{t'}{\approx}
+\text{ ($\Struct{\equivclass{M}{\approx}}$ च्या व्याख्येनुसार)}\\
+& \text{ तेव्हा आणि केवळ तेव्हाच } t \approx t' \text{ ($\equivrep{t}{\approx}$ च्या व्याख्येनुसार)}\\
+& \text{ तेव्हा आणि केवळ तेव्हाच } \eq[t][t'] \in \Gamma^* \text{ ($\approx$ च्या व्याख्येनुसार).}
+\end{align*}
+\end{proof}
+
+\begin{digress}
+लक्षात घ्या की $\Struct{M(\Gamma^*)}$ हे नेहमी !!{enumerable} आणि अनंत
+असले, तरी $\Struct{\equivclass{M}{\approx}}$ सांत असू शकते; कारण
+$\equivrep{t}{\approx}$ असे फक्त सांत अनेक वर्ग असू शकतात. हे अपेक्षितच
+आहे, कारण~$\Gamma$ मध्ये अशी !!{sentence}s असू शकतात की ती सत्य असणारी
+कोणतीही !!{structure} सांत असणे आवश्यक असते. उदाहरणार्थ,
+$\lforall[x][\lforall[y][x = y]]$ हे सुसंगत !!{sentence} आहे, पण ज्याच्या
+!!a{domain} मध्ये नेमका एकच !!{element} आहे अशाच !!{structure}s मध्ये
+त्याची पूर्ति होते.
+\end{digress}
+
+\end{document}

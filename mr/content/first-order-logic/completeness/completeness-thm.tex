@@ -1,0 +1,125 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: completeness-theorem
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{cth}}
+      {\olfileid{pl}{com}{cth}}
+
+\olsection{संपूर्णता प्रमेय}
+
+\begin{explain}
+आपल्या निष्पत्ती एकत्र करू: आपल्याला संपूर्णता प्रमेय मिळते.
+\end{explain}
+
+\begin{thm}[संपूर्णता प्रमेय]
+\ollabel{thm:completeness}
+$\Gamma$ हा !!{sentence}s चा संच असू द्या. $\Gamma$ सुसंगत असेल, तर
+तो पूर्ततायोग्य आहे.
+\end{thm}
+
+\begin{proof}
+$\Gamma$ सुसंगत आहे असे समजा.\iftag{FOL}{
+  \olref[hen]{lem:henkin} नुसार असा संतृप्त सुसंगत संच
+  $\Gamma' \supseteq \Gamma$ असतो.}{} \olref[lin]{lem:lindenbaum} नुसार
+असा $\Gamma^* \supseteq \iftag{FOL}{\Gamma'}{\Gamma}$ असतो की तो
+सुसंगत आणि !!{complete} असतो.
+\iftag{FOL}{
+  $\Gamma' \subseteq \Gamma^*$ असल्यामुळे प्रत्येक
+  !!{formula}~$!A(x)$ साठी~$\Gamma^*$ मध्ये पुढील रूपाचे !!a{sentence}
+  असते:
+  \iftag{prvEx}
+        {$\lexists[x][!A(x)] \lif !A(c)$}
+        {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c)$}.
+  म्हणून~$\Gamma^*$ संतृप्त आहे. $\Gamma$ मध्ये~$\eq$ येत नसेल, तर}{या}
+\olref[mod]{lem:truth} नुसार
+$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $!A \in
+\Gamma^*$. यावरून विशेषतः प्रत्येक $!A \in \Gamma$ साठी
+$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$; म्हणून
+$\Gamma$ पूर्ततायोग्य आहे.\iftag{FOL}{
+  $\Gamma$ मध्ये~$\eq$ येत असेल, तर \olref[ide]{lem:truth} नुसार
+  सर्व !!{sentence}s~$!A$ यांच्यासाठी
+  $\Sat{\equivclass{M}{\approx}}{!A}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $!A \in \Gamma^*$. विशेषतः, प्रत्येक $!A \in \Gamma$ साठी
+  $\Sat{\equivclass{M}{\approx}}{!A}$; म्हणून $\Gamma$ पूर्ततायोग्य आहे.}{}
+\end{proof}
+
+\begin{cor}[संपूर्णता प्रमेय, दुसरी आवृत्ती]
+\ollabel{cor:completeness}
+प्रत्येक $\Gamma$ आणि प्रत्येक !!{sentence}s~$!A$ साठी: जर
+$\Gamma \Entails !A$, तर $\Gamma \Proves !A$.
+\end{cor}
+
+\begin{proof}
+लक्षात घ्या की \olref{cor:completeness} आणि
+\olref{thm:completeness} यांमधील $\Gamma$ वर सर्ववाची संख्यकीकरण केलेले
+आहे. आपला गोंधळ होऊ नये म्हणून \olref{thm:completeness} हे वेगळा चर
+वापरून पुन्हा मांडू: !!{sentence}s चा कोणताही संच~$\Delta$ दिला असता,
+जर $\Delta$ सुसंगत असेल, तर तो पूर्ततायोग्य आहे. प्रतिपरिवर्तनाने,
+$\Delta$ पूर्ततायोग्य नसेल, तर $\Delta$ विसंगत आहे. अनुप्रमेय सिद्ध
+करण्यासाठी याचा वापर करू.
+
+$\Gamma \Entails !A$ असे समजा. मग \olref[syn][sem]{prop:entails-unsat}
+नुसार $\Gamma \cup \{\lnot !A\}$ अपूर्ततायोग्य आहे. $\Gamma \cup
+\{\lnot !A\}$ हाच आपला $\Delta$ घेतल्यास,
+\olref{thm:completeness} च्या मागील आवृत्तीनुसार $\Gamma \cup
+\{\lnot !A\}$ विसंगत आहे. पुढील संदर्भांनुसार,
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:prv:prop:prov-incons},
+    prfSC/{fol:seq:prv:prop:prov-incons},
+    prfND/{fol:ntd:prv:prop:prov-incons},
+    prfTab/{fol:tab:prv:prop:prov-incons}}}{%
+  \tagrefs{prfAX/{pl:axd:prv:prop:prov-incons},
+    prfSC/{pl:seq:prv:prop:prov-incons},
+    prfND/{pl:ntd:prv:prop:prov-incons},
+    prfTab/{pl:tab:prv:prop:prov-incons}}},
+$\Gamma \Proves !A$.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cth]{cor:completeness} वापरून
+\olref[fol][com][cth]{thm:completeness} सिद्ध करा आणि अशा रीतीने
+संपूर्णता प्रमेयाच्या दोन्ही मांडण्या समतुल्य आहेत हे दाखवा.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][cth]{cor:completeness} वापरून
+\olref[pl][com][cth]{thm:completeness} सिद्ध करा आणि अशा रीतीने
+संपूर्णता प्रमेयाच्या दोन्ही मांडण्या समतुल्य आहेत हे दाखवा.
+\end{prob}
+\tagendprob
+
+\tagprob{FOL}
+\begin{prob}
+एखादी !!a{derivation} प्रणाली संपूर्ण असण्यासाठी तिचे नियम इतके समर्थ
+असले पाहिजेत की प्रत्येक अपूर्ततायोग्य संच विसंगत असल्याचे ते सिद्ध करू
+शकतील. संपूर्णता सिद्ध करण्यासाठी !!{derivation} चे कोणते नियम आवश्यक
+होते? यांपैकी कोणताही नियम सिद्धतेत कोठेच वापरलेला नाही का? या प्रश्नांची
+उत्तरे देण्यासाठी, \olref[fol][com][cth]{thm:completeness} च्या सिद्धतेपर्यंत
+नेणाऱ्या कोणत्या निष्पत्तींमध्ये !!{derivation} चे कोणते नियम वापरले, हे
+दाखवणारी यादी किंवा आकृती तयार करा. या सिद्धतांमधील नियमांच्या कोणत्याही
+अध्याहृत वापरांची नोंद अवश्य करा.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+एखादी !!a{derivation} प्रणाली संपूर्ण असण्यासाठी तिचे नियम इतके समर्थ
+असले पाहिजेत की प्रत्येक अपूर्ततायोग्य संच विसंगत असल्याचे ते सिद्ध करू
+शकतील. संपूर्णता सिद्ध करण्यासाठी !!{derivation} चे कोणते नियम आवश्यक
+होते? यांपैकी कोणताही नियम सिद्धतेत कोठेच वापरलेला नाही का? या प्रश्नांची
+उत्तरे देण्यासाठी, \olref[pl][com][cth]{thm:completeness} च्या सिद्धतेपर्यंत
+नेणाऱ्या कोणत्या निष्पत्तींमध्ये !!{derivation} चे कोणते नियम वापरले, हे
+दाखवणारी यादी किंवा आकृती तयार करा. या सिद्धतांमधील नियमांच्या कोणत्याही
+अध्याहृत वापरांची नोंद अवश्य करा.
+\end{prob}
+\tagendprob
+
+\end{document}

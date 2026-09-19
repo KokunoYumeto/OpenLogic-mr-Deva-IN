@@ -1,0 +1,163 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: compactness-direct
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{cpd}}
+      {\olfileid{pl}{com}{cpd}}
+
+\olsection{संहतता प्रमेयाची प्रत्यक्ष सिद्धता}
+
+संपूर्णता प्रमेयाच्या सिद्धतेतील कल्पनाच वापरून, संपूर्णता प्रमेयाचा आधार
+न घेता संहतता प्रमेय प्रत्यक्ष सिद्ध करता येते. संपूर्णता प्रमेयाच्या
+सिद्धतेत आपण !!{sentence}s च्या सुसंगत संच~$\Gamma$ पासून सुरुवात केली,
+त्याचा विस्तार करून !!{sentence}s चा सुसंगत\iftag{FOL}{, संतृप्त}{} आणि
+!!{complete} संच~$\Gamma^*$ मिळवला; आणि मग~$\Gamma^*$ पासून रचलेल्या
+\iftag{FOL}{पद-प्रतिमान~$\Struct{M(\Gamma^*)}$}{!!{valuation}~$\pAssign{v(\Gamma^*)}$}
+मध्ये~$\Gamma$ मधील सर्व !!{sentence}s सत्य आहेत, म्हणजे~$\Gamma$
+पूर्ततायोग्य आहे, हे दाखवले.
+
+सांततः पूर्ततायोग्य वाक्यसंच पूर्ततायोग्य असतो हे दाखवण्यासाठी हीच पद्धत
+वापरता येते. फक्त सत्यता पूर्वप्रमेयापर्यंत नेणाऱ्या निष्पत्तींच्या अशा
+समांतर आवृत्त्या सिद्ध कराव्या लागतील की त्यांत ``सुसंगत'' ऐवजी ``सांततः
+पूर्ततायोग्य'' वापरलेले असेल.
+
+\begin{prop}
+\ollabel{prop:fsat-ccs}
+$\Gamma$ हा !!{complete} आणि सांततः पूर्ततायोग्य आहे असे समजा. मग:
+\begin{enumerate}
+\tagitem{prvAnd}{$(!A \land !B) \in \Gamma$
+  तेव्हा आणि केवळ तेव्हाच, जेव्हा $!A \in \Gamma$ आणि $!B \in \Gamma$
+  ही दोन्ही विधाने लागू होतात.}{}
+
+\tagitem{prvOr}{$(!A \lor !B) \in \Gamma$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $!A \in \Gamma$ किंवा $!B \in \Gamma$ यांपैकी एक लागू होते.}{}
+
+\tagitem{prvIf}{$(!A \lif !B) \in \Gamma$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $!A \notin \Gamma$ किंवा $!B \in \Gamma$ यांपैकी एक लागू होते.}{}
+\end{enumerate}
+\end{prop}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{prop:fsat-ccs} सिद्ध करा. $\Proves$ चा वापर टाळा.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][cpd]{prop:fsat-ccs} सिद्ध करा. $\Proves$ चा वापर टाळा.
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{%
+\begin{lem}
+\ollabel{lem:fsat-henkin} प्रत्येक सांततः पूर्ततायोग्य संच~$\Gamma$ चा
+विस्तार करून संतृप्त आणि सांततः पूर्ततायोग्य संच~$\Gamma'$ मिळवता येतो.
+\end{lem}
+}{}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{lem:fsat-henkin} सिद्ध करा. (सूचना: महत्त्वाची
+पायरी म्हणजे !!{derivation}s किंवा सुसंगततेचा अजिबात आधार न घेता,
+$\Gamma_n$ सांततः पूर्ततायोग्य असेल, तर $\Gamma_n \cup \{!D_n\}$
+देखील सांततः पूर्ततायोग्य आहे हे दाखवणे.)
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{
+\begin{prop}\ollabel{prop:fsat-instances}
+$\Gamma$ हा संपूर्ण, सांततः पूर्ततायोग्य आणि संतृप्त आहे असे समजा.
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\lexists[x][!A(x)] \in \Gamma$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा किमान एका बंद पद~$t$ साठी $!A(t) \in \Gamma$.}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)] \in \Gamma$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा सर्व बंद पदे~$t$ यांच्यासाठी $!A(t) \in \Gamma$.}{}
+\end{tagenumerate}
+\end{prop}
+}{}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{prop:fsat-instances} सिद्ध करा.
+\end{prob}
+\tagendprob
+
+\begin{lem}
+\ollabel{lem:fsat-lindenbaum} प्रत्येक सांततः पूर्ततायोग्य संच~$\Gamma$
+चा विस्तार करून !!a{complete} आणि सांततः पूर्ततायोग्य संच~$\Gamma^*$
+मिळवता येतो.
+\end{lem}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{lem:fsat-lindenbaum} सिद्ध करा. (सूचना: महत्त्वाची
+पायरी म्हणजे $\Gamma_n$ सांततः पूर्ततायोग्य असेल, तर $\Gamma_n \cup
+\{!A_n\}$ किंवा $\Gamma_n \cup \{\lnot !A_n\}$ यांपैकी एक संच सांततः
+पूर्ततायोग्य असतो हे दाखवणे.)
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][cpd]{lem:fsat-lindenbaum} सिद्ध करा. (सूचना: महत्त्वाची
+पायरी म्हणजे $\Gamma_n$ सांततः पूर्ततायोग्य असेल, तर $\Gamma_n \cup
+\{!A_n\}$ किंवा $\Gamma_n \cup \{\lnot !A_n\}$ यांपैकी एक संच सांततः
+पूर्ततायोग्य असतो हे दाखवणे.)
+\end{prob}
+\tagendprob
+
+\begin{thm}[संहतता]
+\ollabel{thm:compactness-direct} $\Gamma$ पूर्ततायोग्य असतो तेव्हा आणि
+केवळ तेव्हाच, जेव्हा तो सांततः पूर्ततायोग्य असतो.
+\end{thm}
+
+\begin{proof}
+$\Gamma$ पूर्ततायोग्य असेल, तर अशी
+\iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+असते की प्रत्येक $!A \in \Gamma$ साठी
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. अर्थात, ही
+\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} देखील~$\Gamma$ चा प्रत्येक
+सांत उपसंच पूर्त करते; म्हणून~$\Gamma$ सांततः पूर्ततायोग्य आहे.
+
+आता $\Gamma$ सांततः पूर्ततायोग्य आहे असे समजा.\iftag{FOL}{
+  \olref{lem:fsat-henkin} नुसार असा सांततः पूर्ततायोग्य, संतृप्त संच
+  $\Gamma' \supseteq \Gamma$ असतो.}{} \olref{lem:fsat-lindenbaum} नुसार
+$\iftag{FOL}{\Gamma'}{\Gamma}$ चा विस्तार करून !!a{complete} आणि सांततः
+पूर्ततायोग्य संच~$\Gamma^*$ मिळवता येतो\iftag{FOL}{, आणि $\Gamma^*$
+  अजूनही संतृप्त असतो}{}. \olref[mod]{defn:termmodel} मधीलप्रमाणे
+\iftag{FOL}{पद-प्रतिमान~$\Struct{M(\Gamma^*)}$}{!!{valuation}~$\pAssign{v(\Gamma^*)}$}
+रचा.\iftag{FOL}{ लक्षात घ्या की \olref[mod]{prop:quant-termmodel} हे
+$\Gamma^*$ सुसंगत आहे (किंवा त्या दृष्टीने !!{complete} वा संतृप्त आहे)
+या तथ्यावर अवलंबून नव्हते; ते फक्त $\Struct{M(\Gamma^*)}$ हे बंद पदांनी
+आच्छादित आहे या तथ्यावर अवलंबून होते.}{}
+सत्यता पूर्वप्रमेयाची सिद्धता (\olref[mod]{lem:truth}) तशीच लागू होते,
+जर \olref[ccs]{prop:ccs} च्या संदर्भाऐवजी
+\olref{prop:fsat-ccs} चा संदर्भ वापरला\iftag{FOL}{ आणि
+\olref[hen]{prop:saturated-instances} च्या संदर्भाऐवजी
+\olref{prop:fsat-instances} चा संदर्भ वापरला}{}.
+%READERNOTE{OLCOM-006: गोठवलेल्या इंग्रजी स्रोताच्या notFOL शाखेत सत्यता पूर्वप्रमेयासाठी prop:ccs च्या जागी prop:fsat-ccs वापरण्याचा गंतव्य-संदर्भ FOL टॅगच्या आत गेल्यामुळे दिसत नाही. मराठीत समान संदर्भ notFOL शाखेलाही स्पष्टपणे लागू केला असून सर्व गोठवलेले संदर्भ जतन केले आहेत.}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{thm:compactness-direct} च्या सिद्धतेला आवश्यक असलेली
+सत्यता पूर्वप्रमेयाची (\olref[fol][com][mod]{lem:truth}) संपूर्ण सिद्धता
+लिहा.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][cpd]{thm:compactness-direct} च्या सिद्धतेला आवश्यक असलेली
+सत्यता पूर्वप्रमेयाची (\olref[pl][com][mod]{lem:truth}) संपूर्ण सिद्धता
+लिहा.
+\end{prob}
+\tagendprob
+
+\end{document}

@@ -4,7 +4,7 @@ def blocks(t):return re.split(r'\n\s*\n',t.strip())
 def mask_text(t):
     out='';start=0
     while True:
-        m=re.search(r'\\(text|intertext|emph)\{',t[start:])
+        m=re.search(r'\\(text|textrm|intertext|emph)\{',t[start:])
         if not m:return out+t[start:]
         a=start+m.start();j=start+m.end();depth=1
         while depth and j<len(t):
@@ -158,6 +158,19 @@ _DOCUMENTED_PROJECTIONS = {
          '$!C \\lif \\lforall[x][B(x)]$'),
         ('\\Entails !B(c)$ असल्यामुळे $\\Sat{M\'}{!B(c)}$. $!B(c)$ हे',
          '\\Entails !B(c)$ असल्यामुळे $\\Sat{M\'}{B(c)}$. $!B(c)$ हे'),
+    ],
+    'OLP-0130': [
+        ('$\\lforall[x_n][\\lnot !A_n(x_n)]$ ची व्याख्या',
+         '$\\lforall[x_n][\\lnot !A_n]$ ची व्याख्या'),
+    ],
+    'OLP-0132': [
+        ('$\\lforall[x][!B(x)] \\in \\Gamma^*$.',
+         '$\\lforall[x][!A(x)] \\in \\Gamma^*$.'),
+    ],
+    'OLP-0133': [
+        ('\\eq[\\Atom{f}{t_1,\\dots,t_{i-1},t,t_{i+1},\\dots,t_n}][\\Atom{f}{t_1,\\dots,t_{i-1},t\',t_{i+1},\\dots,t_n}]',
+         '\\eq[\\Atom{f}{t_1,\\dots,t_{i-1},t,t_{i+1},,\\dots,t_n}][\\Atom{f}{t_1,\\dots,t_{i-1},t\',t_{i+1},\\dots,t_n}]'),
+        ('$\\Sat/{M}{\\Atom{R}{t\'}}$', '$\\Sat/{M}{\\Atom{R}{t}}$'),
     ],
 }
 

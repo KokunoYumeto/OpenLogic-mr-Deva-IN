@@ -1,0 +1,222 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: complete-sets
+
+% Definition of complete consistent sets. Properties of complete sets required
+% for completeness proved are in provability.tex in the
+% chapter on the proof system used.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{ccs}}
+      {\olfileid{pl}{com}{ccs}}
+
+\olsection{\usetoken{P}{sentence} चे संपूर्ण सुसंगत संच}
+
+\begin{defn}[संपूर्ण संच]
+\ollabel{def:complete-set} !!{sentence}s चा संच~$\Gamma$
+\emph{!!{complete}} असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा कोणत्याही
+!!{sentence}~$!A$ साठी $!A \in \Gamma$ किंवा $\lnot !A \in \Gamma$.
+\end{defn}
+
+\begin{explain}
+!!^{complete} वाक्यसंच कोणताही प्रश्न अनुत्तरित ठेवत नाहीत. कोणत्याही
+!!{sentence}~$!A$ साठी $!A$ सत्य आहे की असत्य हे~$\Gamma$ “सांगतो.”
+!!{complete} संचांचे महत्त्व संपूर्णता प्रमेयाच्या सिद्धतेपलीकडेही आहे.
+उदाहरणार्थ, जी उपपत्ती !!{complete} असून स्वयंसिद्धकीय रीतीने मांडता
+येते, तिच्याविषयी नेहमी निर्णय घेता येतो.
+\end{explain}
+
+\begin{explain}
+संपूर्णतेच्या सिद्धतेत !!^{complete} सुसंगत संच महत्त्वाचे असतात, कारण
+!!{sentence}s चा प्रत्येक सुसंगत संच~$\Gamma$ हा एखाद्या !!a{complete}
+सुसंगत संच~$\Gamma^*$ मध्ये समाविष्ट असतो, याची हमी आपण देऊ शकतो.
+!!^a{complete} सुसंगत संचात प्रत्येक !!{sentence}~$!A$ साठी $!A$ किंवा
+त्याचे नकरण $\lnot !A$ यांपैकी एक असते, पण दोन्ही नसतात. हे विशेषतः
+\iftag{FOL}{आण्विक !!{sentence}s}{विधानीय चले} यांच्यासाठी खरे असते.
+म्हणून \iftag{FOL}{!!{constant}s ची योग्य भर घालून विस्तारित केलेल्या
+भाषेतील}{} !!a{complete} सुसंगत संचापासून आपण अशी
+\iftag{FOL}{!!a{structure}}{!!a{valuation}} रचू शकतो की तिच्यातील
+\iftag{FOL}{!!{predicate}s चा अर्थ}{विधानीय चलांना नेमलेले सत्यतामूल्य}
+हा~$\Gamma^*$ मध्ये कोणती \iftag{FOL}{आण्विक
+!!{sentence}s}{!!{propositional variable}s} आहेत त्यानुसार परिभाषित
+केला जातो. त्यानंतर ही \iftag{FOL}{!!{structure}}{!!{valuation}}
+$\Gamma^*$ मधील सर्व !!{sentence}s (आणि म्हणून~$\Gamma$ मधीलही सर्व)
+सत्य करते, हे दाखवता येते. या शेवटच्या तथ्याच्या सिद्धतेसाठी
+$\lnot !A \in \Gamma^*$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $!A \notin
+\Gamma^*$; $(!A \lor !B) \in \Gamma^*$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$!A \in \Gamma^*$ किंवा $!B \in \Gamma^*$; इत्यादी तथ्ये आवश्यक असतात.
+\end{explain}
+
+पुढे आपण $\Proves$ ची परावर्तिता, एकस्वनिकता आणि संक्रमकता हे गुणधर्म
+अनेकदा अध्याहृतपणे वापरू (पाहा
+\iftag{FOL}{%
+  \tagrefs{prfSC/{fol:seq:ptn:sec},prfND/{fol:ntd:ptn:sec},prfAX/{fol:axd:ptn:sec},prfTab/{fol:tab:ptn:sec}}}{%
+  \tagrefs{prfSC/{pl:seq:ptn:sec},prfND/{pl:ntd:ptn:sec},prfAX/{pl:axd:ptn:sec},prfTab/{pl:tab:ptn:sec}}}).
+
+\begin{prop}
+\ollabel{prop:ccs}
+$\Gamma$ हा !!{complete} आणि सुसंगत आहे असे समजा. मग:
+\begin{enumerate}
+\item \ollabel{prop:ccs-prov-in} जर $\Gamma \Proves !A$, तर $!A \in
+  \Gamma$.
+
+\tagitem{prvAnd}{\ollabel{prop:ccs-and} $!A \land !B \in \Gamma$
+  तेव्हा आणि केवळ तेव्हाच, जेव्हा $!A \in \Gamma$ आणि $!B \in \Gamma$
+  ही दोन्ही खरे आहेत.}{}
+
+\tagitem{prvOr}{\ollabel{prop:ccs-or} $!A \lor !B \in \Gamma$ तेव्हा
+  आणि केवळ तेव्हाच, जेव्हा $!A \in \Gamma$ किंवा $!B \in \Gamma$.}{}
+
+\tagitem{prvIf}{\ollabel{prop:ccs-if} $!A \lif !B \in \Gamma$ तेव्हा
+  आणि केवळ तेव्हाच, जेव्हा $!A \notin \Gamma$ किंवा $!B \in \Gamma$.}{}
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+पुढील सर्व प्रकरणांत $\Gamma$ हा !!{complete} आणि सुसंगत आहे असे समजू.
+\begin{enumerate}
+\item जर $\Gamma \Proves !A$, तर $!A \in \Gamma$.
+
+$\Gamma \Proves !A$ असे समजा. उलटपक्षी $!A \notin \Gamma$ असे गृहीत
+धरा. $\Gamma$ हा !!{complete} असल्यामुळे $\lnot !A \in \Gamma$. पुढील
+संदर्भांनुसार
+\iftag{FOL}{%
+  \tagrefs{prfSC/{fol:seq:prv:prop:explicit-inc},
+    prfND/{fol:ntd:prv:prop:explicit-inc},
+    prfAX/{fol:axd:prv:prop:explicit-inc},
+    prfTab/{fol:tab:prv:prop:explicit-inc}}}{%
+  \tagrefs{prfSC/{pl:seq:prv:prop:explicit-inc},
+    prfND/{pl:ntd:prv:prop:explicit-inc},
+    prfAX/{pl:axd:prv:prop:explicit-inc},
+    prfTab/{pl:tab:prv:prop:explicit-inc}}},
+$\Gamma$ विसंगत आहे. हे $\Gamma$ सुसंगत असल्याच्या गृहीतकाशी विसंगत आहे.
+म्हणून $!A \notin \Gamma$ असणे शक्य नाही; त्यामुळे $!A \in \Gamma$.
+
+\tagitem{defAnd}{}{%
+\iftag{probAnd}{सराव.}{%
+$!A \land !B \in \Gamma$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $!A \in
+\Gamma$ आणि $!B \in \Gamma$ ही दोन्ही खरे आहेत:
+
+पुढे जाणाऱ्या दिशेसाठी $!A \land !B \in \Gamma$ असे समजा. मग
+पुढील संदर्भांतील
+\iftag{FOL}{%
+  \tagrefs{prfSC/{fol:seq:ppr:prop:provability-land},
+    prfND/{fol:ntd:ppr:prop:provability-land},
+    prfAX/{fol:axd:ppr:prop:provability-land},
+    prfTab/{fol:tab:ppr:prop:provability-land}}}{%
+  \tagrefs{prfSC/{pl:seq:ppr:prop:provability-land},
+    prfND/{pl:ntd:ppr:prop:provability-land},
+    prfAX/{pl:axd:ppr:prop:provability-land},
+    prfTab/{pl:tab:ppr:prop:provability-land}}}, बाब~(1) नुसार
+$\Gamma \Proves !A$ आणि $\Gamma \Proves !B$. \olref{prop:ccs-prov-in}
+नुसार $!A \in \Gamma$ आणि $!B \in \Gamma$, अपेक्षेप्रमाणे.
+
+उलट दिशेसाठी $!A \in \Gamma$ आणि $!B \in \Gamma$ असे समजा. पुढील
+संदर्भांतील
+\iftag{FOL}{%
+  \tagrefs{prfSC/{fol:seq:ppr:prop:provability-land},
+    prfND/{fol:ntd:ppr:prop:provability-land},
+    prfAX/{fol:axd:ppr:prop:provability-land},
+    prfTab/{fol:tab:ppr:prop:provability-land}}}{%
+  \tagrefs{prfSC/{pl:seq:ppr:prop:provability-land},
+    prfND/{pl:ntd:ppr:prop:provability-land},
+    prfAX/{pl:axd:ppr:prop:provability-land},
+    prfTab/{pl:tab:ppr:prop:provability-land}}}, बाब~(2) नुसार
+$\Gamma \Proves !A \land !B$. \olref{prop:ccs-prov-in} नुसार $!A \land
+!B \in \Gamma$.}}
+
+\tagitem{defOr}{}{%
+\iftag{probOr}{सराव.}{%
+प्रथम $!A \lor !B \in \Gamma$ असेल, तर $!A \in \Gamma$ किंवा $!B \in
+\Gamma$, हे दाखवू. $!A \lor !B \in \Gamma$, पण $!A \notin \Gamma$ आणि
+$!B \notin \Gamma$ असे समजा. $\Gamma$ हा !!{complete} असल्यामुळे
+$\lnot !A \in \Gamma$ आणि $\lnot !B \in \Gamma$. पुढील संदर्भांतील
+\iftag{FOL}{%
+  \tagrefs{prfSC/{fol:seq:ppr:prop:provability-lor},
+    prfND/{fol:ntd:ppr:prop:provability-lor},
+    prfAX/{fol:axd:ppr:prop:provability-lor},
+    prfTab/{fol:tab:ppr:prop:provability-lor}}}{%
+  \tagrefs{prfSC/{pl:seq:ppr:prop:provability-lor},
+    prfND/{pl:ntd:ppr:prop:provability-lor},
+    prfAX/{pl:axd:ppr:prop:provability-lor},
+    prfTab/{pl:tab:ppr:prop:provability-lor}}},
+बाब~(1) नुसार $\Gamma$ विसंगत आहे; हा विरोधाभास आहे. म्हणून $!A \in
+\Gamma$ किंवा $!B \in \Gamma$.
+
+उलट दिशेसाठी $!A \in \Gamma$ किंवा $!B \in \Gamma$ असे समजा. पुढील
+संदर्भांतील
+\iftag{FOL}{%
+  \tagrefs{prfSC/{fol:seq:ppr:prop:provability-lor},
+    prfND/{fol:ntd:ppr:prop:provability-lor},
+    prfAX/{fol:axd:ppr:prop:provability-lor},
+    prfTab/{fol:tab:ppr:prop:provability-lor}}}{%
+  \tagrefs{prfSC/{pl:seq:ppr:prop:provability-lor},
+    prfND/{pl:ntd:ppr:prop:provability-lor},
+    prfAX/{pl:axd:ppr:prop:provability-lor},
+    prfTab/{pl:tab:ppr:prop:provability-lor}}}, बाब~(2) नुसार
+$\Gamma \Proves !A \lor !B$. \olref{prop:ccs-prov-in} नुसार $!A \lor
+!B \in \Gamma$, अपेक्षेप्रमाणे.}}
+
+\tagitem{defIf}{}{%
+\iftag{probIf}{सराव.}{%
+पुढे जाणाऱ्या दिशेसाठी $!A \lif !B \in \Gamma$ असे समजा आणि उलटपक्षी
+$!A \in \Gamma$ व $!B \notin \Gamma$ असे गृहीत धरा. या गृहीतकांनुसार
+$!A \lif !B \in \Gamma$ आणि $!A \in \Gamma$. पुढील संदर्भांतील
+\iftag{FOL}{%
+  \tagrefs{prfSC/{fol:seq:ppr:prop:provability-lif},
+    prfND/{fol:ntd:ppr:prop:provability-lif},
+    prfAX/{fol:axd:ppr:prop:provability-lif},
+    prfTab/{fol:tab:ppr:prop:provability-lif}}}{%
+  \tagrefs{prfSC/{pl:seq:ppr:prop:provability-lif},
+    prfND/{pl:ntd:ppr:prop:provability-lif},
+    prfAX/{pl:axd:ppr:prop:provability-lif},
+    prfTab/{pl:tab:ppr:prop:provability-lif}}}, बाब~(1) नुसार
+$\Gamma \Proves !B$. पण मग \olref{prop:ccs-prov-in} नुसार $!B \in
+\Gamma$; हे $!B \notin \Gamma$ या गृहीतकाशी विसंगत आहे.
+
+उलट दिशेसाठी प्रथम $!A \notin \Gamma$ हे प्रकरण पाहू. $\Gamma$ हा
+!!{complete} असल्यामुळे $\lnot !A \in \Gamma$. पुढील संदर्भांतील
+\iftag{FOL}{%
+  \tagrefs{prfSC/{fol:seq:ppr:prop:provability-lif},
+    prfND/{fol:ntd:ppr:prop:provability-lif},
+    prfAX/{fol:axd:ppr:prop:provability-lif},
+    prfTab/{fol:tab:ppr:prop:provability-lif}}}{%
+  \tagrefs{prfSC/{pl:seq:ppr:prop:provability-lif},
+    prfND/{pl:ntd:ppr:prop:provability-lif},
+    prfAX/{pl:axd:ppr:prop:provability-lif},
+    prfTab/{pl:tab:ppr:prop:provability-lif}}}, बाब~(2) नुसार
+$\Gamma \Proves !A \lif !B$. पुन्हा \olref{prop:ccs-prov-in} नुसार
+$!A \lif !B \in \Gamma$, अपेक्षेप्रमाणे.
+
+आता $!B \in \Gamma$ हे प्रकरण पाहू. पुढील संदर्भांतील
+\iftag{FOL}{%
+  \tagrefs{prfSC/{fol:seq:ppr:prop:provability-lif},
+    prfND/{fol:ntd:ppr:prop:provability-lif},
+    prfTab/{fol:tab:ppr:prop:provability-lif},
+    prfAX/{fol:axd:ppr:prop:provability-lif}}}{%
+  \tagrefs{prfSC/{pl:seq:ppr:prop:provability-lif},
+    prfND/{pl:ntd:ppr:prop:provability-lif},
+    prfTab/{pl:tab:ppr:prop:provability-lif},
+    prfAX/{pl:axd:ppr:prop:provability-lif}}},
+पुन्हा बाब~(2) नुसार $\Gamma \Proves !A \lif !B$.
+\olref{prop:ccs-prov-in} नुसार $!A \lif !B \in \Gamma$.}}
+\end{enumerate}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][ccs]{prop:ccs} ची सिद्धता पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][ccs]{prop:ccs} ची सिद्धता पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\end{document}

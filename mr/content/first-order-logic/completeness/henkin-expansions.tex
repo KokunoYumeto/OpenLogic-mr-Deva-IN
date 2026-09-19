@@ -1,0 +1,216 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: henkin-expansion
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{com}{hen}
+
+\olsection{हेंकिन विस्तार}
+
+\begin{explain}
+संपूर्णता प्रमेय सिद्ध करण्यातील एक आव्हान असे आहे की संपूर्ण सुसंगत
+संच~$\Gamma$ पासून आपण रचलेल्या प्रतिमानाने~$\Gamma$ मधील सर्व संख्यकीकृत
+!!{formula}s सत्य केली पाहिजेत. याची हमी देण्यासाठी लिऑन हेंकिन यांची एक
+युक्ती वापरतो. थोडक्यात, भाषेत अनंत !!{constant}s ची भर घालून तिचा विस्तार
+करणे आणि एक मुक्त !!{variable} असलेल्या प्रत्येक !!{formula}~$!A(x)$ साठी
+पुढील रूपाचे सूत्र जोडणे, ही ती युक्ती:
+\iftag{prvEx}
+      {$\lexists[x][!A(x)] \lif !A(c)$}
+      {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c)$},
+येथे $c$ हे नवीन !!{constant}s पैकी एक आहे. $\Gamma$ पूर्ण करणारी
+!!{structure} आपण रचू तेव्हा, यामुळे प्रत्येक
+\iftag{prvEx}
+{सत्य अस्तित्ववाची वाक्याचा साक्षी}
+{असत्य सर्ववाची वाक्याचे प्रतिउदाहरण}
+नवीन स्थिरांमध्ये असेल, याची हमी मिळेल.
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:lang-exp}
+$\Gamma$ हा $\Lang L$ मध्ये सुसंगत असेल आणि $\Lang L$ मध्ये नवीन
+!!{constant}s चा !!a{denumerable} संच $\Obj d_0$, $\Obj d_1$, \dots
+मिळवून $\Lang L'$ तयार केली असेल, तर $\Gamma$ हा~$\Lang L'$ मध्ये
+सुसंगत असतो.
+\end{prop}
+
+\begin{defn}[संतृप्त संच]
+भाषा $\Lang {L}$ मधील !!{formula}s चा संच $\Gamma$
+\emph{संतृप्त} असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा एक मुक्त
+!!{variable}~$x$ असलेल्या प्रत्येक !!{formula}~$!A(x) \in \Frm[L]$
+साठी असे !!a{constant}~$c \in \Lang{L}$ असते की
+\iftag{prvEx}
+      {$\lexists[x][!A(x)] \lif !A(c) \in \Gamma$}
+      {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c) \in \Gamma$}.
+\end{defn}
+
+पुढील प्रमेयाच्या सिद्धतेत खालील व्याख्या वापरली जाईल.
+
+\begin{defn}
+\ollabel{defn:henkin-exp}
+$\Lang L'$ ही \olref{prop:lang-exp} मधीलप्रमाणे असू द्या. ज्या
+$\Lang L'$ मधील !!{formula}s~$!A_i(x_i)$ मध्ये एक चर ($x_i$) मुक्तपणे
+येतो, त्या सर्वांचे $!A_0(x_0)$, $!A_1(x_1)$, \dots असे प्रगणन निश्चित
+करा. आपण~$n$ वर विगमनाने !!{sentence}s~$!D_n$ परिभाषित करतो.
+
+$\Lang{L}$ मध्ये आपण भर घातलेल्या $\Obj d_i$ पैकी~$!A_0(x_0)$ मध्ये
+न येणारे पहिले !!{constant} म्हणजे $c_0$ असू द्या. $!D_0$,
+\dots,~$!D_{n-1}$ आधीच परिभाषित केली आहेत असे गृहीत धरून, नवीन
+!!{constant}s~$\Obj d_i$ पैकी~$!D_0$, \dots,~$!D_{n-1}$ यांमध्ये किंवा
+$!A_n(x_n)$ मध्ये न येणारे पहिले स्थिर म्हणजे $c_n$ असू द्या.
+
+आता $!D_{n}$ हे पुढील !!{formula} असू द्या:
+\iftag{prvEx}
+{$\lexists[x_{n}][!A_{n}(x_{n})] \lif
+  !A_{n}(c_{n})$}{$\lnot\lforall[x_{n}][!A_{n}(x_{n})] \lif \lnot
+  !A_{n}(c_{n})$}.
+\end{defn}
+
+\begin{lem}
+\ollabel{lem:henkin}
+प्रत्येक सुसंगत संच~$\Gamma$ चा विस्तार करून संतृप्त सुसंगत
+संच~$\Gamma'$ मिळवता येतो.
+\end{lem}
+
+\begin{proof}
+भाषा~$\Lang{L}$ मधील वाक्यांचा सुसंगत संच~$\Gamma$ दिला असता,
+नवीन !!{constant}s चा !!a{denumerable} संच जोडून भाषेचा विस्तार
+$\Lang{L'}$ पर्यंत करा. \olref{prop:lang-exp} नुसार $\Gamma$ या अधिक
+समृद्ध भाषेतही सुसंगत असतो. तसेच $!D_i$ ही
+\olref{defn:henkin-exp} मधीलप्रमाणे असू द्या. पुढील व्याख्या करा:
+\begin{align*}
+\Gamma_0 & = \Gamma \\
+\Gamma_{n+1} & = \Gamma_n \cup \{!D_n \}
+\end{align*}
+म्हणजे $\Gamma_{n+1} = \Gamma \cup \{ !D_0, \dots, !D_n \}$; आणि
+$\Gamma' = \bigcup_{n} \Gamma_n$ असू द्या. $\Gamma'$ स्पष्टपणे संतृप्त आहे.
+
+$\Gamma'$ विसंगत असेल, तर कोणत्यातरी $n$ साठी $\Gamma_n$ विसंगत असेल
+(सराव: का ते स्पष्ट करा). म्हणून $\Gamma'$ सुसंगत आहे हे दाखवण्यासाठी
+प्रत्येक संच~$\Gamma_n$ सुसंगत आहे हे~$n$ वर विगमनाने दाखवणे पुरेसे आहे.
+
+विगमनाचा आधार म्हणजे $\Gamma_0 = \Gamma$ सुसंगत आहे हे विधानच; ते
+प्रमेयाचे गृहीतक आहे. विगमन-पायरीसाठी $\Gamma_{n}$ सुसंगत आहे, पण
+$\Gamma_{n+1} = \Gamma_n \cup \{!D_n\}$ विसंगत आहे असे समजा. लक्षात
+घ्या की $!D_n$ हे
+\iftag{prvEx}
+{$\lexists[x_{n}][!A_{n}(x_n)] \lif !A_{n}(c_{n})$}
+{$\lnot\lforall[x_{n}][!A_{n}(x_n)] \lif \lnot !A_{n}(c_{n})$}
+आहे; येथे $!A_n(x_n)$ हे फक्त~$x_n$ चर मुक्त असलेले $\Lang{L'}$ चे
+!!a{formula} आहे. $c_n$ निवडण्याच्या पद्धतीनुसार
+(\olref{defn:henkin-exp} पाहा), $c_n$ हे~$!A_n(x_n)$ किंवा~$\Gamma_n$
+मध्ये येत नाही.
+
+$\Gamma_n \cup \{!D_n\}$ विसंगत असेल, तर $\Gamma_n
+\Proves \lnot !D_n$; म्हणून पुढील दोन्ही विधाने खरी आहेत:
+\iftag{prvEx}{
+\[
+\Gamma_n \Proves \lexists[x_n][!A_n(x_n)]
+\qquad
+\Gamma_n \Proves \lnot !A_n(c_n)
+\]}{
+\[
+\Gamma_n \Proves \lnot\lforall[x_n][!A_n(x_n)]
+\qquad
+\Gamma_n \Proves !A_n(c_n)
+\]}
+$c_n$ हे $\Gamma_n$ किंवा~$!A_n(x_n)$ मध्ये येत नसल्यामुळे
+\tagrefs{prfAX/{fol:axd:qpr:thm:strong-generalization},prfSC/{fol:seq:qpr:thm:strong-generalization},prfND/{fol:ntd:qpr:thm:strong-generalization},prfTab/{fol:tab:qpr:thm:strong-generalization}}
+लागू होते.
+\iftag{prvEx}
+{$\Gamma_n \Proves \lnot !A_n(c_n)$}
+{$\Gamma_n \Proves !A_n(c_n)$}
+यापासून अनुक्रमे
+\iftag{prvEx}
+{$\Gamma_n \Proves \lforall[x_n][\lnot !A_n(x_n)]$}
+{$\Gamma_n \Proves \lforall[x_n][!A_n(x_n)]$}
+मिळते. अशा रीतीने आपल्याकडे पुढील दोन्ही विधाने आहेत:
+\iftag{prvEx}
+{$\Gamma_n \Proves \lexists[x_n][!A_n(x_n)]$ आणि
+$\Gamma_n \Proves \lforall[x_n][\lnot !A_n(x_n)]$}
+{$\Gamma_n \Proves \lnot\lforall[x_n][!A_n(x_n)]$ आणि
+$\Gamma_n \Proves \lforall[x_n][!A_n(x_n)]$};
+म्हणून $\Gamma_n$ स्वतः विसंगत आहे.
+\iftag{prvEx}
+{(लक्षात घ्या की
+\iftag{prvAll}
+{$\lforall[x_n][\lnot !A_n(x_n)] \Proves
+  \lnot\lexists[x_n][!A_n(x_n)]$}
+{$\lforall[x_n][\lnot !A_n(x_n)]$ ची व्याख्या
+  $\lnot\lexists[x_n][\lnot\lnot !A_n(x_n)]$ अशी आहे आणि
+  $\lnot\lexists[x_n][\lnot\lnot !A_n(x_n)] \Proves
+  \lnot\lexists[x_n][!A_n(x_n)]$}.)}{}
+हा विरोधाभास आहे: $\Gamma_n$ सुसंगत असल्याचे गृहीत होते. म्हणून
+$\Gamma_n \cup \{ !D_n\}$ सुसंगत आहे.
+%READERNOTE{OLCOM-001: गोठवलेल्या इंग्रजी स्रोताच्या व्याख्याविषयक टिपेत सार्वत्रिक सूत्रातील A_n नंतर (x_n) सुटले आहे. मराठीत ते पुनर्स्थापित केले असून गोठवलेले इंग्रजी बाइट्स बदललेले नाहीत.}
+\end{proof}
+
+\begin{explain}
+आता आपण दाखवू की संतृप्त असलेल्या \emph{संपूर्ण}, सुसंगत संचांना पुढील
+गुणधर्म असतो: \iftag{prvAll}{त्यात सर्ववाची संख्यकीकृत !!{sentence}
+  तेव्हा आणि केवळ तेव्हाच असते, जेव्हा त्याचे सर्व दृष्टांत त्यात असतात
+  }{}\iftag{defAll,defEx}{}{ आणि }\iftag{prvAll}{त्यात अस्तित्ववाची
+  संख्यकीकृत !!{sentence} तेव्हा आणि केवळ तेव्हाच असते, जेव्हा त्याचा
+  किमान एक दृष्टांत त्यात असतो}{}. संपूर्ण, सुसंगत, संतृप्त संचापासून
+आपण निर्माण करू ती !!{structure} त्यातील सर्व संख्यकीकृत वाक्ये सत्य करते,
+हे दाखवण्यासाठी हा गुणधर्म वापरू.
+\end{explain}
+
+\begin{prop}\ollabel{prop:saturated-instances}
+$\Gamma$ हा संपूर्ण, सुसंगत आणि संतृप्त आहे असे समजा.
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\lexists[x][!A(x)] \in \Gamma$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा किमान एका बंद पद~$t$ साठी $!A(t) \in \Gamma$.}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)] \in \Gamma$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा सर्व बंद पदे~$t$ यांच्यासाठी $!A(t) \in \Gamma$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{tagenumerate}{prvEx,prvAll}
+  \tagitem{prvEx}{%
+    \iftag{probEx}{सराव.}{प्रथम $\lexists[x][!A(x)]
+      \in \Gamma$ असे समजा. $\Gamma$ संतृप्त असल्यामुळे कोणत्यातरी
+      !!{constant}~$c$ साठी
+      $(\lexists[x][!A(x)] \lif !A(c)) \in \Gamma$. पुढील संदर्भांतील
+      \tagrefs{prfAX/{fol:axd:ppr:prop:provability-lif},prfSC/{fol:seq:ppr:prop:provability-lif},prfND/{fol:ntd:ppr:prop:provability-lif},prfTab/{fol:tab:ppr:prop:provability-lif}},
+      बाब~(1), आणि
+      \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-prov-in} नुसार $!A(c)
+      \in \Gamma$.
+
+    उलट दिशेसाठी संतृप्तता आवश्यक नाही: $!A(t) \in \Gamma$ असे समजा.
+    मग पुढील संदर्भांतील
+      \tagrefs{prfAX/{fol:axd:qpr:prop:provability-quantifiers},prfSC/{fol:seq:qpr:prop:provability-quantifiers},prfND/{fol:ntd:qpr:prop:provability-quantifiers},prfTab/{fol:tab:qpr:prop:provability-quantifiers}},
+      बाब~(1) नुसार $\Gamma \Proves \lexists[x][!A(x)]$.
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-prov-in} नुसार
+    $\lexists[x][!A(x)] \in \Gamma$.}}{}
+  \tagitem{prvAll}{%
+    \iftag{probAll}{सराव.}{सर्व बंद पदे~$t$ यांच्यासाठी
+      $!A(t) \in \Gamma$ असे समजा. विरोधासाठी
+      $\lforall[x][!A(x)] \notin \Gamma$ असे गृहीत धरा. $\Gamma$ संपूर्ण
+      असल्यामुळे $\lnot\lforall[x][!A(x)] \in \Gamma$. संतृप्ततेनुसार
+      कोणत्यातरी !!{constant}~$c$ साठी
+      \iftag{prvEx}{$(\lexists[x][\lnot !A(x)] \lif \lnot !A(c)) \in
+        \Gamma$}{$(\lnot\lforall[x][!A(x)] \lif \lnot !A(c)) \in
+        \Gamma$}. $c$ हे बंद पद असल्यामुळे गृहीतकानुसार $!A(c) \in
+      \Gamma$. पण यामुळे $\Gamma$ विसंगत होईल. (सराव: पुढील संच विसंगत
+      असल्याचे दाखवणारी !!{derivation} द्या:
+      \[
+      \lnot \lforall[x][!A(x)],
+      \iftag{prvEx}{\lexists[x][\lnot !A(x)] \lif \lnot
+        !A(c)}{\lnot\lforall[x][!A(x)] \lif \lnot
+        !A(c)}, !A(c)
+      \]
+      .)
+
+      उलट दिशेसाठी संतृप्तता आवश्यक नाही:
+      $\lforall[x][!A(x)] \in \Gamma$ असे समजा. मग पुढील संदर्भांतील
+      \tagrefs{prfAX/{fol:axd:qpr:prop:provability-quantifiers},prfSC/{fol:seq:qpr:prop:provability-quantifiers},prfND/{fol:ntd:qpr:prop:provability-quantifiers},prfTab/{fol:tab:qpr:prop:provability-quantifiers}},
+      बाब~(2) नुसार $\Gamma \Proves !A(t)$. \olref[ccs]{prop:ccs}
+      नुसार $!A(t) \in \Gamma$.}}{}
+  \end{tagenumerate}
+\end{proof}
+
+\end{document}
