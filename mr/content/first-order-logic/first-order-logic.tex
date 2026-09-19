@@ -1,0 +1,58 @@
+% Part: first-order logic
+
+\documentclass[../../include/open-logic-part]{subfiles}
+
+\begin{document}
+
+\olpart{fol}{प्रथम-क्रम तर्कशास्त्र}
+
+\begin{editorial}
+  या भागात प्रथम-क्रम तर्कशास्त्राची अधिउपपत्ती संपूर्णतेपर्यंत मांडली
+  आहे. सध्या ती विधानीय तर्कशास्त्राच्या स्वतंत्र विवेचनावर अवलंबून
+  नाही; प्रत्येक गोष्ट सिद्ध केली आहे. ``FOL'' हा टॅग false असल्यास
+  स्रोत फायली संख्यापकांवरील सामग्री वगळतात (आणि
+  ``!!{structure}'' ऐवजी ``!!{valuation}'', $\Struct{M}$ ऐवजी
+  $\pAssign{v}$, इत्यादी प्रतिस्थापित करतात). प्रत्यक्षात, विधानीय
+  तर्कशास्त्राच्या भागातील बहुतेक सामग्री म्हणजे ``FOL'' टॅग बंद
+  ठेवलेली प्रथम-क्रम सामग्रीच आहे.
+
+  विधानीय तर्कशास्त्राचा भाग समाविष्ट केल्यास त्यामुळे बरीच
+  पुनरावृत्ती होते. मात्र, या भागाला विधानीय तर्कशास्त्रातील सामग्री
+  विचारात घेता यावी (आणि आधीच समाविष्ट केलेली सामग्री वगळता यावी,
+  तसेच विधानीय भागातील संबंधित ठिकाणांचे संदर्भ देऊन सिद्धता
+  संक्षिप्त करता याव्यात), अशी सोय करण्याचे नियोजन आहे.
+\end{editorial}
+
+\olimport[introduction]{introduction}
+
+\olimport[syntax-and-semantics]{syntax}
+
+\olimport[syntax-and-semantics]{semantics}
+
+\olimport[models-theories]{models-theories}
+
+\olimport[proof-systems]{proof-systems}
+
+\iftag{prfSC}{%
+  \olimport[sequent-calculus]{sequent-calculus}
+}{}
+
+\iftag{prfND}{%
+  \olimport[natural-deduction]{natural-deduction}
+}{}
+
+\iftag{prfTab}{%
+  \olimport[tableaux]{tableaux}
+}{}
+
+\iftag{prfAX}{%
+  \olimport[axiomatic-deduction]{axiomatic-deduction}
+}{}
+
+\olimport[completeness]{completeness}
+
+\olimport[beyond]{beyond}
+
+\OLEndPartHook
+
+\end{document}

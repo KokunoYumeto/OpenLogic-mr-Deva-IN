@@ -1,0 +1,91 @@
+% Part: first-order-logic
+% Chapter: introduction
+% Section: formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{int}{fml}
+
+\section{\usetoken{P}{formula}}
+
+प्रथम-क्रम तर्कशास्त्रातील !!{sentence}s काटेकोरपणे निर्दिष्ट करण्यासाठी
+आणि !!{variable}s च्या वापरामुळे निर्माण होणाऱ्या अडचणी हाताळण्यासाठी
+आपण पुढील पद्धत वापरणार आहोत. प्रथम आपण अभिव्यक्तींचा एक
+\emph{वेगळा} संच परिभाषित करतो: !!{formula}s. ते केल्यानंतर त्यांत
+!!{variable}s कोणती भूमिका बजावतात याचा विचार करता येतो---आणि
+``मुक्त'' व ``बद्ध'' !!{variable}s या काही इतर कल्पनांच्या आधारे
+!!a{sentence} म्हणजे काय हे परिभाषित करता येते (म्हणजे, मुक्त
+!!{variable}s नसलेले !!a{formula}). यामुळे ``!!{sentence}'' ची व्याख्या
+अधिक हाताळण्याजोगी होते एवढ्याचसाठी आपण हे करत नाही; पूर्ति ही
+चिन्हार्थविषयक संकल्पना ज्या रीतीने परिभाषित करू त्यासाठीही ते
+निर्णायक ठरेल.
+
+फक्त एक !!{predicate}~$\Obj P$, एक !!{constant}~$\Obj a$ आणि
+$\lnot$, $\land$ व~$\lexists$ ही तार्किक चिन्हे असलेल्या एका साध्या
+प्रथम-क्रम भाषेसाठी ``!!{formula}'' परिभाषित करू या. आपल्या संपूर्ण
+व्याख्या यापेक्षा खूप व्यापक असतील: आपण अनंतपणे अनेक !!{predicate}s
+आणि !!{constant}s स्वीकारू. किंबहुना, !!{constant}s आणि !!{variable}s
+यांच्याशी जोडून ``पदे'' रचता येतील अशा !!{function}s चाही विचार करू.
+सध्या $\Obj a$ आणि चरे एवढीच आपली पदे असतील. आपल्याला अनंतपणे अनेक
+!!{variable}s मात्र आवश्यक आहेत. अधिकृतपणे आपण $\Obj v_0$, $\Obj
+v_1$, \dots, ही चिन्हे चरे म्हणून वापरू.
+
+\begin{defn}
+\emph{!!{formula}s} चा संच~$\Frm$ पुढीलप्रमाणे परिभाषित केला आहे:
+\begin{enumerate}
+\item\ollabel{fmls-atom} $\Atom{\Obj P}{\Obj a}$ आणि $\Atom{\Obj
+  P}{\Obj v_i}$ ही !!{formula}s आहेत ($i \in \Nat$).
+
+\tagitem{prvNot}{\ollabel{fmls-not}$!A$ हे !!a{formula} असेल, तर $\lnot !A$ हे
+  !!{formula} आहे.}{}
+
+\tagitem{prvAnd}{$!A$ आणि $!B$ ही !!{formula}s असतील, तर $(!A \land
+  !B)$ हे !!a{formula} आहे.}{}
+
+\tagitem{prvEx}{\ollabel{fmls-ex}$!A$ हे !!a{formula} आणि $x$ हे !!a{variable}
+  असेल, तर $\lexists[x][!A]$ हे !!a{formula} आहे.}{}
+
+\tagitem{limitClause}{\ollabel{fmls-limit}दुसरे काहीही !!a{formula} नाही.}{}
+\end{enumerate}
+\end{defn}
+
+कोणत्याही $i \in \Nat$ साठी $\Atom{\Obj P}{\Obj a}$ आणि
+$\Atom{\Obj P}{\Obj v_i}$ ही !!{formula}s आहेत, असे
+\olref{fmls-atom} सांगतो. त्यांना तथाकथित \emph{आण्विक} !!{formula}s
+म्हणतात. त्यांपासून सुरुवात करता येते. इतर उपवाक्ये आपण आधीच
+रचलेल्यांपासून नवी !!{formula}s रचण्याचे मार्ग देतात. म्हणून,
+उदाहरणार्थ, $\Atom{\Obj P}{\Obj v_2}$ हे \olref{fmls-atom} नुसार आधीच
+!!a{formula} असल्यामुळे, $\lnot \Atom{\Obj P}{\Obj v_2}$ हे
+\olref{fmls-not} नुसार !!a{formula} आहे. मग
+\olref{fmls-ex} नुसार $\lexists[\Obj v_2][\lnot \Atom{\Obj P}{\Obj
+v_2}]$ हे आणखी एक !!{formula} आहे; आणि असेच पुढे जाता येते. \emph{फक्त} याच
+रीतीने रचता येणाऱ्या चिन्हमाला !!{formula}s म्हणून गणल्या जातात, असे
+\olref{fmls-limit} सांगतो. विशेषतः,
+$\lexists[\Obj v_0][\Atom{\Obj P}{\Obj a}]$ आणि $\lexists[\Obj
+  v_0][\lexists[\Obj v_0][\Atom{\Obj P}{\Obj a}]]$ ही
+\emph{खरोखर} !!{formula}s म्हणून गणली जातात; परंतु अनावश्यक बाहेरील
+कंसांमुळे $(\lnot \Atom{\Obj P}{\Obj a})$ हे गणले जात नाही.
+
+!!{formula}s परिभाषित करण्याच्या या पद्धतीला \emph{विगमनाधारित
+व्याख्या} म्हणतात आणि त्यामुळे \emph{संरचनात्मक विगमन} म्हणतात त्या
+विगमनाने सिद्धता करण्याच्या प्रकाराचा वापर करून !!{formula}s विषयी
+गोष्टी सिद्ध करता येतात. यांची सर्वसाधारण चर्चा
+\olref[mth][ind][idf]{sec} आणि \olref[mth][ind][sti]{sec} येथे केली
+आहे; पुढील सिद्धतांचा सखोल अभ्यास करण्यापूर्वी तिची उजळणी करावी. मूलतः,
+सर्व !!{formula}s साठी एखादी गोष्ट सत्य आहे याची सिद्धता द्यायची असेल,
+तर ती आण्विक !!{formula}s साठी सत्य आहे हे प्रथम दाखवता आणि नंतर ती
+कोणत्याही !!{formula}~$!A$ साठी (आणि~$!B$ साठी) सत्य \emph{असेल}, तर
+ती $\lnot !A$, $(!A \land !B)$ आणि $\lexists[x][!A]$ यांच्यासाठीही
+\emph{सत्य असते}, हे दाखवता. उदाहरणार्थ, यावरून ती
+$\lexists[\Obj v_2][\lnot \Atom{\Obj P}{\Obj v_2}]$ साठी सत्य आहे हे
+सिद्ध होते: पहिल्या भागावरून ती आण्विक !!{formula}~$\Atom{\Obj
+P}{\Obj v_2}$ साठी सत्य आहे हे माहीत असते. मग दुसऱ्या भागावरून ती
+$\lnot \Atom{\Obj P}{\Obj v_2}$ साठी सत्य आहे आणि त्याच भागावरून पुन्हा
+$\lexists[\Obj v_2][\lnot \Atom{\Obj P}{\Obj v_2}]$ याच्यासाठी सत्य
+आहे, हे मिळते. सर्व !!{formula}s आण्विक !!{formula}s पासून
+विगमनाधारित रीतीने निर्माण केली जात असल्यामुळे, ही पद्धत त्यांपैकी
+कोणत्याही सूत्रासाठी चालते.
+
+\end{document}

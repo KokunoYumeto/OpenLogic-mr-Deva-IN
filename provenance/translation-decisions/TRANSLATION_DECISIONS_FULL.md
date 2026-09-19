@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 occurrences.
+Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 occurrences.
 
 ## T001 — set
 
@@ -412,6 +412,10 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T001-OLP-0121-B011` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-53` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:46-54` | pending |
 | `T001-OLP-0121-B012` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:55-58` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:56-59` | pending |
 | `T001-OLP-0121-B015` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:71-74` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:72-75` | pending |
+| `T001-OLP-0143-B006` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:13-25` | `mr/content/first-order-logic/introduction/satisfaction.tex:13-27` | pending |
+| `T001-OLP-0145-B007` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:27-36` | `mr/content/first-order-logic/introduction/semantic-notions.tex:27-37` | pending |
+| `T001-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
+| `T001-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
 
 ## T002 — element/member
 
@@ -703,6 +707,10 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T002-OLP-0135-B015` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:156-167` | `mr/content/first-order-logic/completeness/compactness.tex:160-171` | pending |
 | `T002-OLP-0135-B017` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:184-197` | `mr/content/first-order-logic/completeness/compactness.tex:188-202` | pending |
 | `T002-OLP-0137-B010` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:48-61` | `mr/content/first-order-logic/completeness/downward-ls.tex:48-60` | pending |
+| `T002-OLP-0143-B008` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:52-67` | `mr/content/first-order-logic/introduction/satisfaction.tex:54-70` | pending |
+| `T002-OLP-0143-B009` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:69-106` | `mr/content/first-order-logic/introduction/satisfaction.tex:72-114` | pending |
+| `T002-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
+| `T002-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
 
 ## T003 — empty set
 
@@ -1625,6 +1633,9 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T009-OLP-0124-B010` | `OLP-0124` |  | `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:59-66` | `mr/content/first-order-logic/axiomatic-deduction/soundness.tex:58-64` | pending |
 | `T009-OLP-0124-B016` | `OLP-0124` |  | `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:119-122` | `mr/content/first-order-logic/axiomatic-deduction/soundness.tex:121-124` | pending |
 | `T009-OLP-0125-B008` | `OLP-0125` |  | `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:26-28` | `mr/content/first-order-logic/axiomatic-deduction/identity.tex:27-29` | pending |
+| `T009-OLP-0140-B006` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:13-31` | `mr/content/first-order-logic/introduction/first-order-logic.tex:13-31` | pending |
+| `T009-OLP-0140-B007` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:33-58` | `mr/content/first-order-logic/introduction/first-order-logic.tex:33-60` | pending |
+| `T009-OLP-0145-B007` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:27-36` | `mr/content/first-order-logic/introduction/semantic-notions.tex:27-37` | pending |
 
 ## T010 — truth / truth value
 
@@ -1746,6 +1757,10 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T010-OLP-0133-B005` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:12-24` | `mr/content/first-order-logic/completeness/identity.tex:12-23` | pending |
 | `T010-OLP-0133-B018` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:175-179` | `mr/content/first-order-logic/completeness/identity.tex:177-181` | pending |
 | `T010-OLP-0133-B019` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:181-191` | `mr/content/first-order-logic/completeness/identity.tex:183-193` | pending |
+| `T010-OLP-0140-B006` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:13-31` | `mr/content/first-order-logic/introduction/first-order-logic.tex:13-31` | pending |
+| `T010-OLP-0140-B007` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:33-58` | `mr/content/first-order-logic/introduction/first-order-logic.tex:33-60` | pending |
+| `T010-OLP-0143-B006` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:13-25` | `mr/content/first-order-logic/introduction/satisfaction.tex:13-27` | pending |
+| `T010-OLP-0143-B007` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:27-50` | `mr/content/first-order-logic/introduction/satisfaction.tex:29-52` | pending |
 
 ## T011 — syntax
 
@@ -1777,6 +1792,13 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T011-OLP-0058-B035` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:173-180` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:174-180` | 76–77 |
 | `T011-OLP-0064-B006` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:15-24` | `mr/content/first-order-logic/proof-systems/introduction.tex:15-25` | 84–85 |
 | `T011-OLP-0064-B011` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:82-99` | `mr/content/first-order-logic/proof-systems/introduction.tex:85-101` | 84–85 |
+| `T011-OLP-0140-B009` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:75-86` | `mr/content/first-order-logic/introduction/first-order-logic.tex:77-90` | pending |
+| `T011-OLP-0141-B005` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:11-11` | `mr/content/first-order-logic/introduction/syntax.tex:11-11` | pending |
+| `T011-OLP-0141-B007` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:31-52` | `mr/content/first-order-logic/introduction/syntax.tex:33-54` | pending |
+| `T011-OLP-0145-B008` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:38-46` | `mr/content/first-order-logic/introduction/semantic-notions.tex:39-48` | pending |
+| `T011-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
+| `T011-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
+| `T011-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
 
 ## T012 — semantics
 
@@ -1826,6 +1848,16 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T012-OLP-0095-B024` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271` | `mr/content/first-order-logic/natural-deduction/soundness.tex:244-273` | 126–129 |
 | `T012-OLP-0097-B008` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | 130–131 |
 | `T012-OLP-0109-B007` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:32-39` | `mr/content/first-order-logic/tableaux/soundness.tex:32-40` | 150–153 |
+| `T012-OLP-0140-B007` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:33-58` | `mr/content/first-order-logic/introduction/first-order-logic.tex:33-60` | pending |
+| `T012-OLP-0140-B009` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:75-86` | `mr/content/first-order-logic/introduction/first-order-logic.tex:77-90` | pending |
+| `T012-OLP-0141-B007` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:31-52` | `mr/content/first-order-logic/introduction/syntax.tex:33-54` | pending |
+| `T012-OLP-0142-B006` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:13-22` | `mr/content/first-order-logic/introduction/formulas.tex:13-23` | pending |
+| `T012-OLP-0143-B010` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:108-112` | `mr/content/first-order-logic/introduction/satisfaction.tex:116-120` | pending |
+| `T012-OLP-0145-B005` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:11-11` | `mr/content/first-order-logic/introduction/semantic-notions.tex:11-11` | pending |
+| `T012-OLP-0145-B008` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:38-46` | `mr/content/first-order-logic/introduction/semantic-notions.tex:39-48` | pending |
+| `T012-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
+| `T012-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
+| `T012-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
 
 ## T013 — model (model theory)
 
@@ -1890,6 +1922,17 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T013-OLP-0137-B008` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:33-38` | `mr/content/first-order-logic/completeness/downward-ls.tex:33-38` | pending |
 | `T013-OLP-0137-B009` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:40-46` | `mr/content/first-order-logic/completeness/downward-ls.tex:40-46` | pending |
 | `T013-OLP-0137-B010` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:48-61` | `mr/content/first-order-logic/completeness/downward-ls.tex:48-60` | pending |
+| `T013-OLP-0140-B007` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:33-58` | `mr/content/first-order-logic/introduction/first-order-logic.tex:33-60` | pending |
+| `T013-OLP-0143-B006` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:13-25` | `mr/content/first-order-logic/introduction/satisfaction.tex:13-27` | pending |
+| `T013-OLP-0144-B006` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:13-17` | `mr/content/first-order-logic/introduction/sentences.tex:13-17` | pending |
+| `T013-OLP-0145-B006` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:13-25` | `mr/content/first-order-logic/introduction/semantic-notions.tex:13-25` | pending |
+| `T013-OLP-0145-B007` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:27-36` | `mr/content/first-order-logic/introduction/semantic-notions.tex:27-37` | pending |
+| `T013-OLP-0147-B005` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:11-11` | `mr/content/first-order-logic/introduction/models-theories.tex:11-11` | pending |
+| `T013-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
+| `T013-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
+| `T013-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
+| `T013-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
+| `T013-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
 
 ## T014 — perfect number
 
@@ -2058,6 +2101,11 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T015-OLP-0136-B019` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:106-113` | `mr/content/first-order-logic/completeness/compactness-direct.tex:106-113` | pending |
 | `T015-OLP-0136-B023` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:145-151` | `mr/content/first-order-logic/completeness/compactness-direct.tex:147-153` | pending |
 | `T015-OLP-0136-B024` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:153-159` | `mr/content/first-order-logic/completeness/compactness-direct.tex:155-161` | pending |
+| `T015-OLP-0138-B005` | `OLP-0138` |  | `upstream/content/first-order-logic/first-order-logic.tex:9-17` | `mr/content/first-order-logic/first-order-logic.tex:9-17` | pending |
+| `T015-OLP-0138-B006` | `OLP-0138` |  | `upstream/content/first-order-logic/first-order-logic.tex:19-25` | `mr/content/first-order-logic/first-order-logic.tex:19-24` | pending |
+| `T015-OLP-0140-B009` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:75-86` | `mr/content/first-order-logic/introduction/first-order-logic.tex:77-90` | pending |
+| `T015-OLP-0141-B007` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:31-52` | `mr/content/first-order-logic/introduction/syntax.tex:33-54` | pending |
+| `T015-OLP-0142-B014` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:70-87` | `mr/content/first-order-logic/introduction/formulas.tex:71-89` | pending |
 
 ## T016 — if and only if
 
@@ -2157,6 +2205,14 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T016-OLP-0068-B008` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-64` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46-65` | 88–89 |
 | `T016-OLP-0070-B008` | `OLP-0070` | 9.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-44` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:28-46` | 90–91 |
 | `T016-OLP-0102-B007` | `OLP-0102` | 11.4 टॅब्लो | `upstream/content/first-order-logic/tableaux/derivations.tex:23-40` | `mr/content/first-order-logic/tableaux/derivations.tex:22-38` | 134–135 |
+| `T016-OLP-0140-B009` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:75-86` | `mr/content/first-order-logic/introduction/first-order-logic.tex:77-90` | pending |
+| `T016-OLP-0143-B007` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:27-50` | `mr/content/first-order-logic/introduction/satisfaction.tex:29-52` | pending |
+| `T016-OLP-0143-B009` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:69-106` | `mr/content/first-order-logic/introduction/satisfaction.tex:72-114` | pending |
+| `T016-OLP-0144-B008` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:29-52` | `mr/content/first-order-logic/introduction/sentences.tex:29-52` | pending |
+| `T016-OLP-0145-B006` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:13-25` | `mr/content/first-order-logic/introduction/semantic-notions.tex:13-25` | pending |
+| `T016-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
+| `T016-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
+| `T016-OLP-0148-B006` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | pending |
 
 ## T017 — union
 
@@ -2684,6 +2740,9 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T023-OLP-0118-B022` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137` | pending |
 | `T023-OLP-0121-B008` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:24-31` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:23-30` | pending |
 | `T023-OLP-0121-B013` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:60-63` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:61-64` | pending |
+| `T023-OLP-0140-B006` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:13-31` | `mr/content/first-order-logic/introduction/first-order-logic.tex:13-31` | pending |
+| `T023-OLP-0141-B006` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:13-29` | `mr/content/first-order-logic/introduction/syntax.tex:13-31` | pending |
+| `T023-OLP-0142-B013` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:54-68` | `mr/content/first-order-logic/introduction/formulas.tex:54-69` | pending |
 
 ## T024 — set difference
 
@@ -2828,6 +2887,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T026-OLP-0090-B007` | `OLP-0090` | 10.6 संख्यापकांसह निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:20-86` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:19-82` | 118–121 |
 | `T026-OLP-0090-B013` | `OLP-0090` | 10.6 संख्यापकांसह निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:183-228` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:175-218` | 118–121 |
 | `T026-OLP-0137-B010` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:48-61` | `mr/content/first-order-logic/completeness/downward-ls.tex:48-60` | pending |
+| `T026-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
 
 ## T027 — mathematical / arithmetical induction
 
@@ -2897,6 +2957,10 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T027-OLP-0061-B007` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:21-57` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:21-58` | 80–83 |
 | `T027-OLP-0061-B011` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:142-144` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:144-146` | 80–83 |
 | `T027-OLP-0061-B021` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:190-192` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:193-195` | 80–83 |
+| `T027-OLP-0142-B014` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:70-87` | `mr/content/first-order-logic/introduction/formulas.tex:71-89` | pending |
+| `T027-OLP-0144-B008` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:29-52` | `mr/content/first-order-logic/introduction/sentences.tex:29-52` | pending |
+| `T027-OLP-0145-B008` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:38-46` | `mr/content/first-order-logic/introduction/semantic-notions.tex:39-48` | pending |
+| `T027-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
 
 ## T028 — continuum
 
@@ -3018,6 +3082,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T029-OLP-0119-B015` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96` | pending |
 | `T029-OLP-0119-B016` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:97-98` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:98-99` | pending |
 | `T029-OLP-0125-B008` | `OLP-0125` |  | `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:26-28` | `mr/content/first-order-logic/axiomatic-deduction/identity.tex:27-29` | pending |
+| `T029-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
 
 ## T030 — relation / binary relation
 
@@ -3173,6 +3238,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T030-OLP-0048-B007` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:21-36` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:21-36` | 64–67 |
 | `T030-OLP-0048-B012` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:109-125` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:102-119` | 64–67 |
 | `T030-OLP-0048-B015` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:149-163` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:145-163` | 64–67 |
+| `T030-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
 
 ## T031 — identity relation
 
@@ -3385,6 +3451,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T032-OLP-0121-B010` | `OLP-0121` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | pending |
 | `T032-OLP-0129-B010` | `OLP-0129` |  | `upstream/content/first-order-logic/completeness/complete-consistent-sets.tex:54-58` | `mr/content/first-order-logic/completeness/complete-consistent-sets.tex:54-58` | pending |
 | `T032-OLP-0133-B007` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:35-55` | `mr/content/first-order-logic/completeness/identity.tex:34-54` | pending |
+| `T032-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
 
 ## T033 — transitive
 
@@ -3495,6 +3562,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T033-OLP-0096-B010` | `OLP-0096` | 10.12 निष्पत्ती सह एकरूपता | `upstream/content/first-order-logic/natural-deduction/identity.tex:52-57` | `mr/content/first-order-logic/natural-deduction/identity.tex:52-58` | 129–130 |
 | `T033-OLP-0110-B010` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:73-91` | `mr/content/first-order-logic/tableaux/identity.tex:73-91` | 153–154 |
 | `T033-OLP-0133-B007` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:35-55` | `mr/content/first-order-logic/completeness/identity.tex:34-54` | pending |
+| `T033-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
 
 ## T034 — symmetric / anti-symmetric / asymmetric
 
@@ -3890,6 +3958,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T039-OLP-0016-B027` | `OLP-0016` | 2.5 क्रम | `upstream/content/sets-functions-relations/relations/orders.tex:152-153` | `mr/content/sets-functions-relations/relations/orders.tex:146-147` | 20–21 |
 | `T039-OLP-0016-B028` | `OLP-0016` | 2.5 क्रम | `upstream/content/sets-functions-relations/relations/orders.tex:155-160` | `mr/content/sets-functions-relations/relations/orders.tex:149-154` | 20–21 |
 | `T039-OLP-0016-B029` | `OLP-0016` | 2.5 क्रम | `upstream/content/sets-functions-relations/relations/orders.tex:162-166` | `mr/content/sets-functions-relations/relations/orders.tex:156-160` | 20–21 |
+| `T039-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
 
 ## T040 — graph / directed graph / vertex / edge
 
@@ -4531,6 +4600,35 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T044-OLP-0134-B015` | `OLP-0134` |  | `upstream/content/first-order-logic/completeness/completeness-thm.tex:112-123` | `mr/content/first-order-logic/completeness/completeness-thm.tex:112-123` | pending |
 | `T044-OLP-0135-B007` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:29-31` | `mr/content/first-order-logic/completeness/compactness.tex:27-31` | pending |
 | `T044-OLP-0136-B014` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:65-71` | `mr/content/first-order-logic/completeness/compactness-direct.tex:64-71` | pending |
+| `T044-OLP-0140-B006` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:13-31` | `mr/content/first-order-logic/introduction/first-order-logic.tex:13-31` | pending |
+| `T044-OLP-0140-B008` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:60-73` | `mr/content/first-order-logic/introduction/first-order-logic.tex:62-75` | pending |
+| `T044-OLP-0140-B009` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:75-86` | `mr/content/first-order-logic/introduction/first-order-logic.tex:77-90` | pending |
+| `T044-OLP-0141-B007` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:31-52` | `mr/content/first-order-logic/introduction/syntax.tex:33-54` | pending |
+| `T044-OLP-0142-B006` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:13-22` | `mr/content/first-order-logic/introduction/formulas.tex:13-23` | pending |
+| `T044-OLP-0142-B007` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:24-33` | `mr/content/first-order-logic/introduction/formulas.tex:25-33` | pending |
+| `T044-OLP-0142-B008` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:35-39` | `mr/content/first-order-logic/introduction/formulas.tex:35-39` | pending |
+| `T044-OLP-0142-B009` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:41-42` | `mr/content/first-order-logic/introduction/formulas.tex:41-42` | pending |
+| `T044-OLP-0142-B010` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:44-45` | `mr/content/first-order-logic/introduction/formulas.tex:44-45` | pending |
+| `T044-OLP-0142-B011` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:47-48` | `mr/content/first-order-logic/introduction/formulas.tex:47-48` | pending |
+| `T044-OLP-0142-B012` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:50-52` | `mr/content/first-order-logic/introduction/formulas.tex:50-52` | pending |
+| `T044-OLP-0142-B013` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:54-68` | `mr/content/first-order-logic/introduction/formulas.tex:54-69` | pending |
+| `T044-OLP-0142-B014` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:70-87` | `mr/content/first-order-logic/introduction/formulas.tex:71-89` | pending |
+| `T044-OLP-0143-B006` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:13-25` | `mr/content/first-order-logic/introduction/satisfaction.tex:13-27` | pending |
+| `T044-OLP-0143-B007` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:27-50` | `mr/content/first-order-logic/introduction/satisfaction.tex:29-52` | pending |
+| `T044-OLP-0143-B008` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:52-67` | `mr/content/first-order-logic/introduction/satisfaction.tex:54-70` | pending |
+| `T044-OLP-0143-B009` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:69-106` | `mr/content/first-order-logic/introduction/satisfaction.tex:72-114` | pending |
+| `T044-OLP-0143-B010` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:108-112` | `mr/content/first-order-logic/introduction/satisfaction.tex:116-120` | pending |
+| `T044-OLP-0144-B006` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:13-17` | `mr/content/first-order-logic/introduction/sentences.tex:13-17` | pending |
+| `T044-OLP-0144-B007` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:19-27` | `mr/content/first-order-logic/introduction/sentences.tex:19-27` | pending |
+| `T044-OLP-0144-B008` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:29-52` | `mr/content/first-order-logic/introduction/sentences.tex:29-52` | pending |
+| `T044-OLP-0144-B009` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:54-56` | `mr/content/first-order-logic/introduction/sentences.tex:54-56` | pending |
+| `T044-OLP-0145-B006` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:13-25` | `mr/content/first-order-logic/introduction/semantic-notions.tex:13-25` | pending |
+| `T044-OLP-0145-B008` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:38-46` | `mr/content/first-order-logic/introduction/semantic-notions.tex:39-48` | pending |
+| `T044-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
+| `T044-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
+| `T044-OLP-0148-B006` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | pending |
+| `T044-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
+| `T044-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
 
 ## T045 — function / mapping
 
@@ -4790,6 +4888,10 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T045-OLP-0133-B011` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:96-111` | `mr/content/first-order-logic/completeness/identity.tex:96-111` | pending |
 | `T045-OLP-0133-B013` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:135-153` | `mr/content/first-order-logic/completeness/identity.tex:137-155` | pending |
 | `T045-OLP-0135-B014` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:123-154` | `mr/content/first-order-logic/completeness/compactness.tex:125-158` | pending |
+| `T045-OLP-0142-B007` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:24-33` | `mr/content/first-order-logic/introduction/formulas.tex:25-33` | pending |
+| `T045-OLP-0143-B006` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:13-25` | `mr/content/first-order-logic/introduction/satisfaction.tex:13-27` | pending |
+| `T045-OLP-0143-B008` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:52-67` | `mr/content/first-order-logic/introduction/satisfaction.tex:54-70` | pending |
+| `T045-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
 
 ## T046 — domain / codomain / range
 
@@ -4923,6 +5025,12 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T046-OLP-0137-B007` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:26-31` | `mr/content/first-order-logic/completeness/downward-ls.tex:26-31` | pending |
 | `T046-OLP-0137-B008` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:33-38` | `mr/content/first-order-logic/completeness/downward-ls.tex:33-38` | pending |
 | `T046-OLP-0137-B009` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:40-46` | `mr/content/first-order-logic/completeness/downward-ls.tex:40-46` | pending |
+| `T046-OLP-0143-B006` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:13-25` | `mr/content/first-order-logic/introduction/satisfaction.tex:13-27` | pending |
+| `T046-OLP-0143-B008` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:52-67` | `mr/content/first-order-logic/introduction/satisfaction.tex:54-70` | pending |
+| `T046-OLP-0143-B009` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:69-106` | `mr/content/first-order-logic/introduction/satisfaction.tex:72-114` | pending |
+| `T046-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
+| `T046-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
+| `T046-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
 
 ## T047 — argument / input / output / value
 
@@ -5000,6 +5108,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T047-OLP-0133-B016` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:162-169` | `mr/content/first-order-logic/completeness/identity.tex:164-171` | pending |
 | `T047-OLP-0135-B013` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:90-121` | `mr/content/first-order-logic/completeness/compactness.tex:91-123` | pending |
 | `T047-OLP-0135-B014` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:123-154` | `mr/content/first-order-logic/completeness/compactness.tex:125-158` | pending |
+| `T047-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
 
 ## T048 — surjective / surjection
 
@@ -5835,6 +5944,8 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T057-OLP-0137-B008` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:33-38` | `mr/content/first-order-logic/completeness/downward-ls.tex:33-38` | pending |
 | `T057-OLP-0137-B009` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:40-46` | `mr/content/first-order-logic/completeness/downward-ls.tex:40-46` | pending |
 | `T057-OLP-0137-B010` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:48-61` | `mr/content/first-order-logic/completeness/downward-ls.tex:48-60` | pending |
+| `T057-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
+| `T057-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
 
 ## T058 — size / cardinality / equinumerous
 
@@ -5896,6 +6007,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T058-OLP-0054-B005` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:9-14` | `mr/content/sets-functions-relations/infinite/card-sb.tex:9-14` | 72–74 |
 | `T058-OLP-0054-B011` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53` | `mr/content/sets-functions-relations/infinite/card-sb.tex:49-52` | 72–74 |
 | `T058-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 72–74 |
+| `T058-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
 
 ## T059 — actual infinity
 
@@ -7476,6 +7588,24 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T102-OLP-0053-B009` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:66-71` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:64-69` | 71–72 |
 | `T102-OLP-0055-B005` | `OLP-0055` | 7 विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा — भाग-प्रस्तावना | `upstream/content/propositional-logic/propositional-logic.tex:9-18` | `mr/content/propositional-logic/propositional-logic.tex:9-18` | 75 |
 | `T102-OLP-0069-B005` | `OLP-0069` | 9 क्रमवर्ती कलन — प्रकरण-प्रस्तावना | `upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | `mr/content/first-order-logic/sequent-calculus/sequent-calculus.tex:12-17` | 90 |
+| `T102-OLP-0138-B004` | `OLP-0138` |  | `upstream/content/first-order-logic/first-order-logic.tex:7-7` | `mr/content/first-order-logic/first-order-logic.tex:7-7` | pending |
+| `T102-OLP-0138-B005` | `OLP-0138` |  | `upstream/content/first-order-logic/first-order-logic.tex:9-17` | `mr/content/first-order-logic/first-order-logic.tex:9-17` | pending |
+| `T102-OLP-0139-B004` | `OLP-0139` |  | `upstream/content/first-order-logic/introduction/introduction.tex:8-8` | `mr/content/first-order-logic/introduction/introduction.tex:8-8` | pending |
+| `T102-OLP-0140-B005` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:11-11` | `mr/content/first-order-logic/introduction/first-order-logic.tex:11-11` | pending |
+| `T102-OLP-0140-B006` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:13-31` | `mr/content/first-order-logic/introduction/first-order-logic.tex:13-31` | pending |
+| `T102-OLP-0140-B007` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:33-58` | `mr/content/first-order-logic/introduction/first-order-logic.tex:33-60` | pending |
+| `T102-OLP-0141-B006` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:13-29` | `mr/content/first-order-logic/introduction/syntax.tex:13-31` | pending |
+| `T102-OLP-0141-B007` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:31-52` | `mr/content/first-order-logic/introduction/syntax.tex:33-54` | pending |
+| `T102-OLP-0142-B006` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:13-22` | `mr/content/first-order-logic/introduction/formulas.tex:13-23` | pending |
+| `T102-OLP-0142-B007` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:24-33` | `mr/content/first-order-logic/introduction/formulas.tex:25-33` | pending |
+| `T102-OLP-0143-B006` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:13-25` | `mr/content/first-order-logic/introduction/satisfaction.tex:13-27` | pending |
+| `T102-OLP-0145-B007` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:27-36` | `mr/content/first-order-logic/introduction/semantic-notions.tex:27-37` | pending |
+| `T102-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
+| `T102-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
+| `T102-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
+| `T102-OLP-0148-B006` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | pending |
+| `T102-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
+| `T102-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
 
 ## T103 — parameter (of a formula)
 
@@ -7536,6 +7666,11 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T104-OLP-0130-B010` | `OLP-0130` |  | `upstream/content/first-order-logic/completeness/henkin-expansions.tex:51-56` | `mr/content/first-order-logic/completeness/henkin-expansions.tex:51-56` | pending |
 | `T104-OLP-0130-B016` | `OLP-0130` |  | `upstream/content/first-order-logic/completeness/henkin-expansions.tex:94-104` | `mr/content/first-order-logic/completeness/henkin-expansions.tex:94-104` | pending |
 | `T104-OLP-0132-B012` | `OLP-0132` |  | `upstream/content/first-order-logic/completeness/construction-of-model.tex:127-155` | `mr/content/first-order-logic/completeness/construction-of-model.tex:127-158` | pending |
+| `T104-OLP-0142-B006` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:13-22` | `mr/content/first-order-logic/introduction/formulas.tex:13-23` | pending |
+| `T104-OLP-0144-B007` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:19-27` | `mr/content/first-order-logic/introduction/sentences.tex:19-27` | pending |
+| `T104-OLP-0144-B008` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:29-52` | `mr/content/first-order-logic/introduction/sentences.tex:29-52` | pending |
+| `T104-OLP-0144-B009` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:54-56` | `mr/content/first-order-logic/introduction/sentences.tex:54-56` | pending |
+| `T104-OLP-0145-B006` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:13-25` | `mr/content/first-order-logic/introduction/semantic-notions.tex:13-25` | pending |
 
 ## T105 — isomorphic / isomorphism
 
@@ -7680,6 +7815,8 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T108-OLP-0107-B013` | `OLP-0107` | 11.9 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:134-173` | `mr/content/first-order-logic/tableaux/provability-propositional.tex:135-174` | 147–149 |
 | `T108-OLP-0122-B005` | `OLP-0122` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:13-13` | `mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:13-13` | pending |
 | `T108-OLP-0122-B006` | `OLP-0122` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:15-21` | `mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:15-21` | pending |
+| `T108-OLP-0138-B005` | `OLP-0138` |  | `upstream/content/first-order-logic/first-order-logic.tex:9-17` | `mr/content/first-order-logic/first-order-logic.tex:9-17` | pending |
+| `T108-OLP-0138-B006` | `OLP-0138` |  | `upstream/content/first-order-logic/first-order-logic.tex:19-25` | `mr/content/first-order-logic/first-order-logic.tex:19-24` | pending |
 
 ## T109 — proof system / proof
 
@@ -7771,6 +7908,14 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T109-OLP-0127-B006` | `OLP-0127` |  | `upstream/content/first-order-logic/completeness/introduction.tex:15-22` | `mr/content/first-order-logic/completeness/introduction.tex:15-22` | pending |
 | `T109-OLP-0127-B008` | `OLP-0127` |  | `upstream/content/first-order-logic/completeness/introduction.tex:49-57` | `mr/content/first-order-logic/completeness/introduction.tex:46-53` | pending |
 | `T109-OLP-0128-B006` | `OLP-0128` |  | `upstream/content/first-order-logic/completeness/outline.tex:15-32` | `mr/content/first-order-logic/completeness/outline.tex:15-29` | pending |
+| `T109-OLP-0140-B008` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:60-73` | `mr/content/first-order-logic/introduction/first-order-logic.tex:62-75` | pending |
+| `T109-OLP-0141-B007` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:31-52` | `mr/content/first-order-logic/introduction/syntax.tex:33-54` | pending |
+| `T109-OLP-0145-B008` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:38-46` | `mr/content/first-order-logic/introduction/semantic-notions.tex:39-48` | pending |
+| `T109-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
+| `T109-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
+| `T109-OLP-0148-B006` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | pending |
+| `T109-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
+| `T109-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -7852,6 +7997,12 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T110-OLP-0136-B006` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:15-24` | `mr/content/first-order-logic/completeness/compactness-direct.tex:15-22` | pending |
 | `T110-OLP-0137-B007` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:26-31` | `mr/content/first-order-logic/completeness/downward-ls.tex:26-31` | pending |
 | `T110-OLP-0137-B009` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:40-46` | `mr/content/first-order-logic/completeness/downward-ls.tex:40-46` | pending |
+| `T110-OLP-0138-B005` | `OLP-0138` |  | `upstream/content/first-order-logic/first-order-logic.tex:9-17` | `mr/content/first-order-logic/first-order-logic.tex:9-17` | pending |
+| `T110-OLP-0148-B005` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:11-11` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:11-11` | pending |
+| `T110-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
+| `T110-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
+| `T110-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
+| `T110-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -7946,6 +8097,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T111-OLP-0136-B006` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:15-24` | `mr/content/first-order-logic/completeness/compactness-direct.tex:15-22` | pending |
 | `T111-OLP-0136-B021` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:120-126` | `mr/content/first-order-logic/completeness/compactness-direct.tex:120-126` | pending |
 | `T111-OLP-0136-B022` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143` | `mr/content/first-order-logic/completeness/compactness-direct.tex:128-145` | pending |
+| `T111-OLP-0138-B005` | `OLP-0138` |  | `upstream/content/first-order-logic/first-order-logic.tex:9-17` | `mr/content/first-order-logic/first-order-logic.tex:9-17` | pending |
 
 ## T112 — predicate / term / quantifier
 
@@ -8081,6 +8233,21 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T112-OLP-0136-B015` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:73-83` | `mr/content/first-order-logic/completeness/compactness-direct.tex:73-83` | pending |
 | `T112-OLP-0137-B007` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:26-31` | `mr/content/first-order-logic/completeness/downward-ls.tex:26-31` | pending |
 | `T112-OLP-0137-B009` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:40-46` | `mr/content/first-order-logic/completeness/downward-ls.tex:40-46` | pending |
+| `T112-OLP-0138-B005` | `OLP-0138` |  | `upstream/content/first-order-logic/first-order-logic.tex:9-17` | `mr/content/first-order-logic/first-order-logic.tex:9-17` | pending |
+| `T112-OLP-0140-B006` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:13-31` | `mr/content/first-order-logic/introduction/first-order-logic.tex:13-31` | pending |
+| `T112-OLP-0141-B006` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:13-29` | `mr/content/first-order-logic/introduction/syntax.tex:13-31` | pending |
+| `T112-OLP-0141-B007` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:31-52` | `mr/content/first-order-logic/introduction/syntax.tex:33-54` | pending |
+| `T112-OLP-0142-B007` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:24-33` | `mr/content/first-order-logic/introduction/formulas.tex:25-33` | pending |
+| `T112-OLP-0142-B011` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:47-48` | `mr/content/first-order-logic/introduction/formulas.tex:47-48` | pending |
+| `T112-OLP-0142-B013` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:54-68` | `mr/content/first-order-logic/introduction/formulas.tex:54-69` | pending |
+| `T112-OLP-0143-B006` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:13-25` | `mr/content/first-order-logic/introduction/satisfaction.tex:13-27` | pending |
+| `T112-OLP-0143-B008` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:52-67` | `mr/content/first-order-logic/introduction/satisfaction.tex:54-70` | pending |
+| `T112-OLP-0143-B009` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:69-106` | `mr/content/first-order-logic/introduction/satisfaction.tex:72-114` | pending |
+| `T112-OLP-0144-B007` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:19-27` | `mr/content/first-order-logic/introduction/sentences.tex:19-27` | pending |
+| `T112-OLP-0144-B008` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:29-52` | `mr/content/first-order-logic/introduction/sentences.tex:29-52` | pending |
+| `T112-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
+| `T112-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
+| `T112-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
 
 ## T113 — classical logic / classical
 
@@ -8253,6 +8420,8 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T115-OLP-0122-B006` | `OLP-0122` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:15-21` | `mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:15-21` | pending |
 | `T115-OLP-0122-B007` | `OLP-0122` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:23-29` | `mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:23-29` | pending |
 | `T115-OLP-0122-B009` | `OLP-0122` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:41-46` | `mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:41-47` | pending |
+| `T115-OLP-0141-B006` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:13-29` | `mr/content/first-order-logic/introduction/syntax.tex:13-31` | pending |
+| `T115-OLP-0141-B007` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:31-52` | `mr/content/first-order-logic/introduction/syntax.tex:33-54` | pending |
 
 ## T116 — truth-functional
 
@@ -8364,6 +8533,12 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T118-OLP-0135-B017` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:184-197` | `mr/content/first-order-logic/completeness/compactness.tex:188-202` | pending |
 | `T118-OLP-0137-B005` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:12-18` | `mr/content/first-order-logic/completeness/downward-ls.tex:12-18` | pending |
 | `T118-OLP-0137-B010` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:48-61` | `mr/content/first-order-logic/completeness/downward-ls.tex:48-60` | pending |
+| `T118-OLP-0138-B005` | `OLP-0138` |  | `upstream/content/first-order-logic/first-order-logic.tex:9-17` | `mr/content/first-order-logic/first-order-logic.tex:9-17` | pending |
+| `T118-OLP-0140-B009` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:75-86` | `mr/content/first-order-logic/introduction/first-order-logic.tex:77-90` | pending |
+| `T118-OLP-0147-B005` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:11-11` | `mr/content/first-order-logic/introduction/models-theories.tex:11-11` | pending |
+| `T118-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
+| `T118-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
+| `T118-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
 
 ## T119 — formation rule / inductive definition / uniquely readable
 
@@ -8414,6 +8589,12 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T119-OLP-0074-B006` | `OLP-0074` | 9.5 निष्पत्ती | `upstream/content/first-order-logic/sequent-calculus/derivations.tex:15-21` | `mr/content/first-order-logic/sequent-calculus/derivations.tex:15-20` | 93–94 |
 | `T119-OLP-0102-B006` | `OLP-0102` | 11.4 टॅब्लो | `upstream/content/first-order-logic/tableaux/derivations.tex:15-21` | `mr/content/first-order-logic/tableaux/derivations.tex:15-20` | 134–135 |
 | `T119-OLP-0102-B007` | `OLP-0102` | 11.4 टॅब्लो | `upstream/content/first-order-logic/tableaux/derivations.tex:23-40` | `mr/content/first-order-logic/tableaux/derivations.tex:22-38` | 134–135 |
+| `T119-OLP-0142-B014` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:70-87` | `mr/content/first-order-logic/introduction/formulas.tex:71-89` | pending |
+| `T119-OLP-0143-B007` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:27-50` | `mr/content/first-order-logic/introduction/satisfaction.tex:29-52` | pending |
+| `T119-OLP-0143-B010` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:108-112` | `mr/content/first-order-logic/introduction/satisfaction.tex:116-120` | pending |
+| `T119-OLP-0145-B008` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:38-46` | `mr/content/first-order-logic/introduction/semantic-notions.tex:39-48` | pending |
+| `T119-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
+| `T119-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
 
 ## T120 — Polish notation / parenthesis-free notation
 
@@ -8596,6 +8777,17 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T121-OLP-0136-B021` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:120-126` | `mr/content/first-order-logic/completeness/compactness-direct.tex:120-126` | pending |
 | `T121-OLP-0136-B022` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143` | `mr/content/first-order-logic/completeness/compactness-direct.tex:128-145` | pending |
 | `T121-OLP-0137-B005` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:12-18` | `mr/content/first-order-logic/completeness/downward-ls.tex:12-18` | pending |
+| `T121-OLP-0140-B007` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:33-58` | `mr/content/first-order-logic/introduction/first-order-logic.tex:33-60` | pending |
+| `T121-OLP-0142-B006` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:13-22` | `mr/content/first-order-logic/introduction/formulas.tex:13-23` | pending |
+| `T121-OLP-0143-B005` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:11-11` | `mr/content/first-order-logic/introduction/satisfaction.tex:11-11` | pending |
+| `T121-OLP-0143-B007` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:27-50` | `mr/content/first-order-logic/introduction/satisfaction.tex:29-52` | pending |
+| `T121-OLP-0143-B008` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:52-67` | `mr/content/first-order-logic/introduction/satisfaction.tex:54-70` | pending |
+| `T121-OLP-0143-B009` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:69-106` | `mr/content/first-order-logic/introduction/satisfaction.tex:72-114` | pending |
+| `T121-OLP-0143-B010` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:108-112` | `mr/content/first-order-logic/introduction/satisfaction.tex:116-120` | pending |
+| `T121-OLP-0144-B006` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:13-17` | `mr/content/first-order-logic/introduction/sentences.tex:13-17` | pending |
+| `T121-OLP-0145-B006` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:13-25` | `mr/content/first-order-logic/introduction/semantic-notions.tex:13-25` | pending |
+| `T121-OLP-0145-B007` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:27-36` | `mr/content/first-order-logic/introduction/semantic-notions.tex:27-37` | pending |
+| `T121-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
 
 ## T122 — tautology
 
@@ -8732,6 +8924,16 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T123-OLP-0134-B011` | `OLP-0134` |  | `upstream/content/first-order-logic/completeness/completeness-thm.tex:66-81` | `mr/content/first-order-logic/completeness/completeness-thm.tex:66-81` | pending |
 | `T123-OLP-0135-B006` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:15-27` | `mr/content/first-order-logic/completeness/compactness.tex:15-25` | pending |
 | `T123-OLP-0135-B008` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:33-42` | `mr/content/first-order-logic/completeness/compactness.tex:33-43` | pending |
+| `T123-OLP-0140-B006` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:13-31` | `mr/content/first-order-logic/introduction/first-order-logic.tex:13-31` | pending |
+| `T123-OLP-0140-B007` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:33-58` | `mr/content/first-order-logic/introduction/first-order-logic.tex:33-60` | pending |
+| `T123-OLP-0140-B008` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:60-73` | `mr/content/first-order-logic/introduction/first-order-logic.tex:62-75` | pending |
+| `T123-OLP-0140-B009` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:75-86` | `mr/content/first-order-logic/introduction/first-order-logic.tex:77-90` | pending |
+| `T123-OLP-0145-B007` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:27-36` | `mr/content/first-order-logic/introduction/semantic-notions.tex:27-37` | pending |
+| `T123-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
+| `T123-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
+| `T123-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
+| `T123-OLP-0148-B006` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | pending |
+| `T123-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -8814,6 +9016,8 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T124-OLP-0136-B021` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:120-126` | `mr/content/first-order-logic/completeness/compactness-direct.tex:120-126` | pending |
 | `T124-OLP-0137-B006` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:20-24` | `mr/content/first-order-logic/completeness/downward-ls.tex:20-24` | pending |
 | `T124-OLP-0137-B008` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:33-38` | `mr/content/first-order-logic/completeness/downward-ls.tex:33-38` | pending |
+| `T124-OLP-0145-B007` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:27-36` | `mr/content/first-order-logic/introduction/semantic-notions.tex:27-37` | pending |
+| `T124-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
 
 ## T125 — necessary / contingent
 
@@ -8842,6 +9046,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T125-OLP-0057-B006` | `OLP-0057` | 7.1 परिचय | `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:13-35` | `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:13-36` | 75–76 |
 | `T125-OLP-0062-B007` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-32` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-33` | 83 |
 | `T125-OLP-0062-B008` | `OLP-0062` | 7.6 चिन्हार्थविषयक संकल्पना | `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:34-43` | `mr/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:35-44` | 83 |
+| `T125-OLP-0140-B006` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:13-31` | `mr/content/first-order-logic/introduction/first-order-logic.tex:13-31` | pending |
 
 ## T126 — sentence / proposition / statement
 
@@ -8968,6 +9173,21 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T126-OLP-0136-B006` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:15-24` | `mr/content/first-order-logic/completeness/compactness-direct.tex:15-22` | pending |
 | `T126-OLP-0137-B005` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:12-18` | `mr/content/first-order-logic/completeness/downward-ls.tex:12-18` | pending |
 | `T126-OLP-0137-B008` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:33-38` | `mr/content/first-order-logic/completeness/downward-ls.tex:33-38` | pending |
+| `T126-OLP-0140-B006` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:13-31` | `mr/content/first-order-logic/introduction/first-order-logic.tex:13-31` | pending |
+| `T126-OLP-0140-B007` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:33-58` | `mr/content/first-order-logic/introduction/first-order-logic.tex:33-60` | pending |
+| `T126-OLP-0141-B006` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:13-29` | `mr/content/first-order-logic/introduction/syntax.tex:13-31` | pending |
+| `T126-OLP-0141-B007` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:31-52` | `mr/content/first-order-logic/introduction/syntax.tex:33-54` | pending |
+| `T126-OLP-0142-B006` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:13-22` | `mr/content/first-order-logic/introduction/formulas.tex:13-23` | pending |
+| `T126-OLP-0144-B006` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:13-17` | `mr/content/first-order-logic/introduction/sentences.tex:13-17` | pending |
+| `T126-OLP-0144-B007` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:19-27` | `mr/content/first-order-logic/introduction/sentences.tex:19-27` | pending |
+| `T126-OLP-0144-B009` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:54-56` | `mr/content/first-order-logic/introduction/sentences.tex:54-56` | pending |
+| `T126-OLP-0145-B006` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:13-25` | `mr/content/first-order-logic/introduction/semantic-notions.tex:13-25` | pending |
+| `T126-OLP-0145-B007` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:27-36` | `mr/content/first-order-logic/introduction/semantic-notions.tex:27-37` | pending |
+| `T126-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
+| `T126-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
+| `T126-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
+| `T126-OLP-0148-B006` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | pending |
+| `T126-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
 
 ## T127 — propositional constant
 
@@ -9392,6 +9612,12 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T131-OLP-0129-B009` | `OLP-0129` |  | `upstream/content/first-order-logic/completeness/complete-consistent-sets.tex:33-52` | `mr/content/first-order-logic/completeness/complete-consistent-sets.tex:33-52` | pending |
 | `T131-OLP-0132-B006` | `OLP-0132` |  | `upstream/content/first-order-logic/completeness/construction-of-model.tex:15-34` | `mr/content/first-order-logic/completeness/construction-of-model.tex:15-34` | pending |
 | `T131-OLP-0132-B017` | `OLP-0132` |  | `upstream/content/first-order-logic/completeness/construction-of-model.tex:182-190` | `mr/content/first-order-logic/completeness/construction-of-model.tex:185-193` | pending |
+| `T131-OLP-0142-B008` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:35-39` | `mr/content/first-order-logic/introduction/formulas.tex:35-39` | pending |
+| `T131-OLP-0142-B013` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:54-68` | `mr/content/first-order-logic/introduction/formulas.tex:54-69` | pending |
+| `T131-OLP-0142-B014` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:70-87` | `mr/content/first-order-logic/introduction/formulas.tex:71-89` | pending |
+| `T131-OLP-0143-B007` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:27-50` | `mr/content/first-order-logic/introduction/satisfaction.tex:29-52` | pending |
+| `T131-OLP-0143-B009` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:69-106` | `mr/content/first-order-logic/introduction/satisfaction.tex:72-114` | pending |
+| `T131-OLP-0144-B008` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:29-52` | `mr/content/first-order-logic/introduction/sentences.tex:29-52` | pending |
 
 ## T132 — two-place connective
 
@@ -9615,6 +9841,9 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T138-OLP-0125-B012` | `OLP-0125` |  | `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:42-45` | `mr/content/first-order-logic/axiomatic-deduction/identity.tex:44-47` | pending |
 | `T138-OLP-0125-B013` | `OLP-0125` |  | `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:47-54` | `mr/content/first-order-logic/axiomatic-deduction/identity.tex:49-56` | pending |
 | `T138-OLP-0128-B015` | `OLP-0128` |  | `upstream/content/first-order-logic/completeness/outline.tex:135-168` | `mr/content/first-order-logic/completeness/outline.tex:125-159` | pending |
+| `T138-OLP-0146-B005` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:11-11` | `mr/content/first-order-logic/introduction/substitution.tex:11-11` | pending |
+| `T138-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
+| `T138-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
 
 ## T139 — occurrence (of a variable or formula)
 
@@ -9661,6 +9890,8 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T139-OLP-0130-B011` | `OLP-0130` |  | `upstream/content/first-order-logic/completeness/henkin-expansions.tex:58-62` | `mr/content/first-order-logic/completeness/henkin-expansions.tex:58-62` | pending |
 | `T139-OLP-0130-B016` | `OLP-0130` |  | `upstream/content/first-order-logic/completeness/henkin-expansions.tex:94-104` | `mr/content/first-order-logic/completeness/henkin-expansions.tex:94-104` | pending |
 | `T139-OLP-0130-B017` | `OLP-0130` |  | `upstream/content/first-order-logic/completeness/henkin-expansions.tex:106-147` | `mr/content/first-order-logic/completeness/henkin-expansions.tex:106-148` | pending |
+| `T139-OLP-0144-B008` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:29-52` | `mr/content/first-order-logic/introduction/sentences.tex:29-52` | pending |
+| `T139-OLP-0144-B009` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:54-56` | `mr/content/first-order-logic/introduction/sentences.tex:54-56` | pending |
 
 ## T140 — inductive hypothesis
 
@@ -9720,6 +9951,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T140-OLP-0132-B022` | `OLP-0132` |  | `upstream/content/first-order-logic/completeness/construction-of-model.tex:238-247` | `mr/content/first-order-logic/completeness/construction-of-model.tex:245-256` | pending |
 | `T140-OLP-0132-B023` | `OLP-0132` |  | `upstream/content/first-order-logic/completeness/construction-of-model.tex:249-260` | `mr/content/first-order-logic/completeness/construction-of-model.tex:258-271` | pending |
 | `T140-OLP-0133-B019` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:181-191` | `mr/content/first-order-logic/completeness/identity.tex:183-193` | pending |
+| `T140-OLP-0142-B014` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:70-87` | `mr/content/first-order-logic/introduction/formulas.tex:71-89` | pending |
 
 ## T141 — formation sequence
 
@@ -9785,6 +10017,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T142-OLP-0060-B008` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:36-61` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:35-59` | 79–80 |
+| `T142-OLP-0142-B013` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:54-68` | `mr/content/first-order-logic/introduction/formulas.tex:54-69` | pending |
 
 ## T143 — ordinary induction / strong induction
 
@@ -10014,6 +10247,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T148-OLP-0134-B014` | `OLP-0134` |  | `upstream/content/first-order-logic/completeness/completeness-thm.tex:99-110` | `mr/content/first-order-logic/completeness/completeness-thm.tex:99-110` | pending |
 | `T148-OLP-0134-B015` | `OLP-0134` |  | `upstream/content/first-order-logic/completeness/completeness-thm.tex:112-123` | `mr/content/first-order-logic/completeness/completeness-thm.tex:112-123` | pending |
 | `T148-OLP-0135-B006` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:15-27` | `mr/content/first-order-logic/completeness/compactness.tex:15-25` | pending |
+| `T148-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
 
 ## T149 — monotonicity (of semantic entailment)
 
@@ -10268,6 +10502,9 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T151-OLP-0124-B014` | `OLP-0124` |  | `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:109-111` | `mr/content/first-order-logic/axiomatic-deduction/soundness.tex:111-113` | pending |
 | `T151-OLP-0124-B015` | `OLP-0124` |  | `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:113-117` | `mr/content/first-order-logic/axiomatic-deduction/soundness.tex:115-119` | pending |
 | `T151-OLP-0125-B006` | `OLP-0125` |  | `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:13-15` | `mr/content/first-order-logic/axiomatic-deduction/identity.tex:14-16` | pending |
+| `T151-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
+| `T151-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
+| `T151-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -10328,6 +10565,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T152-OLP-0094-B007` | `OLP-0094` | 10.10 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | `mr/content/first-order-logic/natural-deduction/provability-quantifiers.tex:16-19` | 125–126 |
 | `T152-OLP-0095-B006` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:15-31` | `mr/content/first-order-logic/natural-deduction/soundness.tex:15-31` | 126–129 |
 | `T152-OLP-0097-B006` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:13-15` | 130–131 |
+| `T152-OLP-0140-B008` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:60-73` | `mr/content/first-order-logic/introduction/first-order-logic.tex:62-75` | pending |
 
 ## T153 — truth tree / tableaux proof / resolution method and refutation
 
@@ -10358,6 +10596,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T153-OLP-0064-B008` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:38-48` | `mr/content/first-order-logic/proof-systems/introduction.tex:41-51` | 84–85 |
 | `T153-OLP-0064-B009` | `OLP-0064` | 8.1 प्रस्तावना | `upstream/content/first-order-logic/proof-systems/introduction.tex:50-71` | `mr/content/first-order-logic/proof-systems/introduction.tex:53-74` | 84–85 |
 | `T153-OLP-0098-B004` | `OLP-0098` | 11 टॅब्लो — प्रकरण-प्रस्तावना | `upstream/content/first-order-logic/tableaux/tableaux.tex:8-10` | `mr/content/first-order-logic/tableaux/tableaux.tex:8-10` | 132 |
+| `T153-OLP-0140-B008` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:60-73` | `mr/content/first-order-logic/introduction/first-order-logic.tex:62-75` | pending |
 
 ## T154 — theorem
 
@@ -10564,6 +10803,11 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T155-OLP-0124-B016` | `OLP-0124` |  | `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:119-122` | `mr/content/first-order-logic/axiomatic-deduction/soundness.tex:121-124` | pending |
 | `T155-OLP-0124-B018` | `OLP-0124` |  | `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:129-140` | `mr/content/first-order-logic/axiomatic-deduction/soundness.tex:131-143` | pending |
 | `T155-OLP-0135-B010` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:52-76` | `mr/content/first-order-logic/completeness/compactness.tex:53-77` | pending |
+| `T155-OLP-0148-B005` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:11-11` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:11-11` | pending |
+| `T155-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
+| `T155-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
+| `T155-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
+| `T155-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -10777,6 +11021,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T156-OLP-0136-B022` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143` | `mr/content/first-order-logic/completeness/compactness-direct.tex:128-145` | pending |
 | `T156-OLP-0137-B006` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:20-24` | `mr/content/first-order-logic/completeness/downward-ls.tex:20-24` | pending |
 | `T156-OLP-0137-B008` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:33-38` | `mr/content/first-order-logic/completeness/downward-ls.tex:33-38` | pending |
+| `T156-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -11148,6 +11393,8 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T161-OLP-0095-B022` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:216-240` | `mr/content/first-order-logic/natural-deduction/soundness.tex:215-240` | 126–129 |
 | `T161-OLP-0095-B024` | `OLP-0095` | 10.11 निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness.tex:244-271` | `mr/content/first-order-logic/natural-deduction/soundness.tex:244-273` | 126–129 |
 | `T161-OLP-0097-B008` | `OLP-0097` | 10.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/natural-deduction/soundness-identity.tex:23-45` | `mr/content/first-order-logic/natural-deduction/soundness-identity.tex:23-48` | 130–131 |
+| `T161-OLP-0140-B008` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:60-73` | `mr/content/first-order-logic/introduction/first-order-logic.tex:62-75` | pending |
+| `T161-OLP-0140-B009` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:75-86` | `mr/content/first-order-logic/introduction/first-order-logic.tex:77-90` | pending |
 
 ## T162 — proof-theoretic semantics
 
@@ -11535,6 +11782,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T168-OLP-0119-B015` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-95` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:75-96` | pending |
 | `T168-OLP-0120-B009` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-50` | pending |
 | `T168-OLP-0120-B010` | `OLP-0120` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:50-52` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:52-54` | pending |
+| `T168-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
 
 ## T169 — modus ponens
 
@@ -12052,6 +12300,10 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T177-OLP-0087-B013` | `OLP-0087` | 10.3 संख्यापकांचे नियम | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:63-83` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:62-82` | 111–112 |
 | `T177-OLP-0087-B015` | `OLP-0087` | 10.3 संख्यापकांचे नियम | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:105-108` | `mr/content/first-order-logic/natural-deduction/quantifier-rules.tex:104-107` | 111–112 |
 | `T177-OLP-0090-B007` | `OLP-0090` | 10.6 संख्यापकांसह निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:20-86` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:19-82` | 118–121 |
+| `T177-OLP-0142-B006` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:13-22` | `mr/content/first-order-logic/introduction/formulas.tex:13-23` | pending |
+| `T177-OLP-0144-B007` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:19-27` | `mr/content/first-order-logic/introduction/sentences.tex:19-27` | pending |
+| `T177-OLP-0144-B008` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:29-52` | `mr/content/first-order-logic/introduction/sentences.tex:29-52` | pending |
+| `T177-OLP-0144-B009` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:54-56` | `mr/content/first-order-logic/introduction/sentences.tex:54-56` | pending |
 
 ## T178 — eigenvariable
 
@@ -12352,6 +12604,8 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T181-OLP-0136-B020` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:115-118` | `mr/content/first-order-logic/completeness/compactness-direct.tex:115-118` | pending |
 | `T181-OLP-0136-B023` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:145-151` | `mr/content/first-order-logic/completeness/compactness-direct.tex:147-153` | pending |
 | `T181-OLP-0136-B024` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:153-159` | `mr/content/first-order-logic/completeness/compactness-direct.tex:155-161` | pending |
+| `T181-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
+| `T181-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
 
 ## T182 — proof-theoretic notions
 
@@ -12753,6 +13007,7 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T184-OLP-0134-B015` | `OLP-0134` |  | `upstream/content/first-order-logic/completeness/completeness-thm.tex:112-123` | `mr/content/first-order-logic/completeness/completeness-thm.tex:112-123` | pending |
 | `T184-OLP-0136-B011` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:46-50` | `mr/content/first-order-logic/completeness/compactness-direct.tex:45-49` | pending |
 | `T184-OLP-0136-B012` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:52-56` | `mr/content/first-order-logic/completeness/compactness-direct.tex:51-55` | pending |
+| `T184-OLP-0148-B006` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | pending |
 
 ## T185 — intuitionistic logic
 
@@ -13401,6 +13656,106 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | `T201-OLP-0137-B006` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:20-24` | `mr/content/first-order-logic/completeness/downward-ls.tex:20-24` | pending |
 | `T201-OLP-0137-B008` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:33-38` | `mr/content/first-order-logic/completeness/downward-ls.tex:33-38` | pending |
 | `T201-OLP-0137-B010` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:48-61` | `mr/content/first-order-logic/completeness/downward-ls.tex:48-60` | pending |
+| `T201-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
+| `T201-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
+
+## T202 — formal language / formal derivation
+
+**Chosen rendering/action:** आकारिक भाषा / आकारिक निष्पत्ती
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P076 directly attests आकारिक as the official logic equivalent of formal, while the checked university and proof-theory passages establish the language, quantifier and derivation register. The source contrasts rule-governed symbol strings with semantic interpretation, fixing the relevant formal rather than ceremonial sense.
+
+**Rationale:** MR-P076 directly attests आकारिक as the official logic equivalent of formal, while the checked university and proof-theory passages establish the language, quantifier and derivation register. The source contrasts rule-governed symbol strings with semantic interpretation, fixing the relevant formal rather than ceremonial sense.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- औपचारिक भाषा / औपचारिक निष्पत्ती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- रूपनिष्ठ भाषा / रूपनिष्ठ निष्पत्ती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should आकारिक remain the edition-wide qualifier for formal languages and derivations, or is औपचारिक more idiomatic for current Marathi logic teaching?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T202-OLP-0140-B006` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:13-31` | `mr/content/first-order-logic/introduction/first-order-logic.tex:13-31` | pending |
+| `T202-OLP-0140-B007` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:33-58` | `mr/content/first-order-logic/introduction/first-order-logic.tex:33-60` | pending |
+| `T202-OLP-0140-B008` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:60-73` | `mr/content/first-order-logic/introduction/first-order-logic.tex:62-75` | pending |
+| `T202-OLP-0140-B009` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:75-86` | `mr/content/first-order-logic/introduction/first-order-logic.tex:77-90` | pending |
+| `T202-OLP-0141-B006` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:13-29` | `mr/content/first-order-logic/introduction/syntax.tex:13-31` | pending |
+| `T202-OLP-0141-B007` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:31-52` | `mr/content/first-order-logic/introduction/syntax.tex:33-54` | pending |
+| `T202-OLP-0144-B007` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:19-27` | `mr/content/first-order-logic/introduction/sentences.tex:19-27` | pending |
+| `T202-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
+
+## T203 — structural induction
+
+**Chosen rendering/action:** संरचनात्मक विगमन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked sources directly support mathematical induction, inductive definitions and formation-sequence vocabulary. The source defines the structural variant by proving the atomic cases and closure under every formula-forming constructor, so संरचनात्मक names exactly the structure being followed.
+
+**Rationale:** The checked sources directly support mathematical induction, inductive definitions and formation-sequence vocabulary. The source defines the structural variant by proving the atomic cases and closure under every formula-forming constructor, so संरचनात्मक names exactly the structure being followed.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P061` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — M glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/m (`checked_supports`): Primary Government of Maharashtra philosophy and logic glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the exact arithmetical-induction phrase is compositional.
+- `MR-P071` — भाषाविज्ञान व वाङ्मयविद्या परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/39/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P080` — गणितीय विगमन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21278/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: The article describes but does not explicitly name strong induction; OpenLogic states the exact hypothesis.
+
+**Alternatives:**
+
+- रचनात्मक विगमन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- रचनेवरील विगमन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- संरचना-विगमन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is संरचनात्मक विगमन the clearest Marathi label for induction over formula construction, or would रचनेवरील विगमन be more idiomatic?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T203-OLP-0142-B014` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:70-87` | `mr/content/first-order-logic/introduction/formulas.tex:71-89` | pending |
+| `T203-OLP-0145-B008` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:38-46` | `mr/content/first-order-logic/introduction/semantic-notions.tex:39-48` | pending |
+| `T203-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
+
+## T204 — variable assignment
+
+**Chosen rendering/action:** चर-मूल्यांकन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P007 directly establishes variable vocabulary and MR-P081 directly attests मूल्यांकन for valuation/evaluation. The source defines the object extensionally as a function from every variable to a domain element, fixing the technical sense and separating it from propositional truth-valuations.
+
+**Rationale:** MR-P007 directly establishes variable vocabulary and MR-P081 directly attests मूल्यांकन for valuation/evaluation. The source defines the object extensionally as a function from every variable to a domain element, fixing the technical sense and separating it from propositional truth-valuations.
+
+**Authorities actually checked:**
+
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P081` — शासन व्यवहार कोश — V glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/3/V (`checked_supports`): Primary Government of Maharashtra terminology extraction read in the current search. Limitation: The glossary entry is generic rather than model-theoretic; the OpenLogic definition controls the exact logical object.
+
+**Alternatives:**
+
+- चर-नेमणूक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- चल-मूल्यन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- चरांना मूल्ये देणारे फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is चर-मूल्यांकन the clearest Marathi model-theory term for a total assignment of domain elements to variables?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T204-OLP-0143-B008` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:52-67` | `mr/content/first-order-logic/introduction/satisfaction.tex:54-70` | pending |
+| `T204-OLP-0143-B009` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:69-106` | `mr/content/first-order-logic/introduction/satisfaction.tex:72-114` | pending |
+| `T204-OLP-0144-B006` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:13-17` | `mr/content/first-order-logic/introduction/sentences.tex:13-17` | pending |
+| `T204-OLP-0145-B006` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:13-25` | `mr/content/first-order-logic/introduction/semantic-notions.tex:13-25` | pending |
+| `T204-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -15331,6 +15686,106 @@ Coverage: 134/722 source units through OLP-0137; 278 applied decisions; 8,358 oc
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLCOM-006-OLP-0136` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:137-142` | `mr/content/first-order-logic/completeness/compactness-direct.tex:138-144` | pending |
+
+## OLFOL-001 — confirmed-frozen-source-misplaced and missing formula brackets with documented formula projection
+
+**Chosen rendering/action:** Restored the universal formula's closing bracket before the premise separator and removed the three extra conclusion brackets in the Marathi text, then placed adjacent reader note OLFOL-001. Unit-specific QA projections reconstruct all three frozen bracket patterns solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The first displayed entailment leaves the universal quantifier's formula argument open across the comma and second premise, then closes it after the conclusion. The next two prose occurrences omit that universal closing bracket and add an extra bracket after the existential conclusion, even though the same universal premise is correctly bracketed later in each paragraph.
+
+**Rationale:** The first displayed entailment leaves the universal quantifier's formula argument open across the comma and second premise, then closes it after the conclusion. The next two prose occurrences omit that universal closing bracket and add an extra bracket after the existential conclusion, even though the same universal premise is correctly bracketed later in each paragraph. Chosen action: Restored the universal formula's closing bracket before the premise separator and removed the three extra conclusion brackets in the Marathi text, then placed adjacent reader note OLFOL-001. Unit-specific QA projections reconstruct all three frozen bracket patterns solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-001-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-001. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve formulas whose quantifier scope accidentally absorbs following premises or whose delimiters are unbalanced — `rejected`: Not chosen; the source finding and recorded action control.
+- Replace the three formulas with prose and lose the source's explicit formal illustration — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do all three repaired occurrences now display the same two well-formed premises and existential conclusion described by their surrounding prose?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-001-OLP-0140` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:51-86` | `mr/content/first-order-logic/introduction/first-order-logic.tex:51-90` | pending |
+
+## OLFOL-002 — confirmed-frozen-source-symbol-class mismatch with documented token projection
+
+**Chosen rendering/action:** Replaced the second constants token with predicates in the Marathi text and placed adjacent reader note OLFOL-002. A unit-specific QA projection restores the frozen token solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The frozen generalization says constants can have more than one place. In the same simple language a names one object and P has one argument place; in general it is predicates that may have multiple places, while constants remain zero-argument names.
+
+**Rationale:** The frozen generalization says constants can have more than one place. In the same simple language a names one object and P has one argument place; in general it is predicates that may have multiple places, while constants remain zero-argument names. Chosen action: Replaced the second constants token with predicates in the Marathi text and placed adjacent reader note OLFOL-002. A unit-specific QA projection restores the frozen token solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-002-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-002. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the claim that constants may take multiple argument places — `rejected`: Not chosen; the source finding and recorded action control.
+- Replace both constants and predicates with the generic word symbols and lose the stated generalization — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repair correctly assign multiple argument places to predicates while retaining constants and functions as the other two symbol classes?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-002-OLP-0143` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:23-25` | `mr/content/first-order-logic/introduction/satisfaction.tex:23-27` | pending |
+
+## OLFOL-003 — confirmed-frozen-source-domain-element list mismatch with documented formula projection
+
+**Chosen rendering/action:** Restored the domain's actual element list 0, 1 or 2 in the Marathi text and placed adjacent reader note OLFOL-003. A unit-specific QA projection reconstructs the frozen 1, 2 or 3 list solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The example fixes the domain as {0,1,2}, but the frozen assignment paragraph says its variables map to one of 1, 2 or 3. This omits domain element 0, includes non-domain element 3, and conflicts with the later assignment s(v_i)=0.
+
+**Rationale:** The example fixes the domain as {0,1,2}, but the frozen assignment paragraph says its variables map to one of 1, 2 or 3. This omits domain element 0, includes non-domain element 3, and conflicts with the later assignment s(v_i)=0. Chosen action: Restored the domain's actual element list 0, 1 or 2 in the Marathi text and placed adjacent reader note OLFOL-003. A unit-specific QA projection reconstructs the frozen 1, 2 or 3 list solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-003-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-003. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve an assignment range containing an element outside the declared domain — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the declared domain and every later use of 0 to {1,2,3} — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired list now give exactly the three declared domain elements and support the later zero-valued assignment example?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-003-OLP-0143` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:61-67` | `mr/content/first-order-logic/introduction/satisfaction.tex:63-70` | pending |
+
+## OLFOL-004 — confirmed-frozen-source-atomic-formula argument outside quantifier scope with documented formula projection
+
+**Chosen rendering/action:** Moved v_0 into Atom's second argument and kept the complete P(v_0) formula inside the universal quantifier in the Marathi text, then placed adjacent reader note OLFOL-004. A unit-specific QA projection reconstructs the frozen malformed formula solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The opening universal formula closes Atom after the predicate P and places the variable argument v_0 outside both Atom and the quantifier body. The prose says P(a) follows by replacing the universally bound v_0, and the immediately following general schema correctly has forall-x A(x).
+
+**Rationale:** The opening universal formula closes Atom after the predicate P and places the variable argument v_0 outside both Atom and the quantifier body. The prose says P(a) follows by replacing the universally bound v_0, and the immediately following general schema correctly has forall-x A(x). Chosen action: Moved v_0 into Atom's second argument and kept the complete P(v_0) formula inside the universal quantifier in the Marathi text, then placed adjacent reader note OLFOL-004. A unit-specific QA projection reconstructs the frozen malformed formula solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-004-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-004. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve a formula in which the purported predicate argument lies outside the atomic formula and quantifier scope — `rejected`: Not chosen; the source finding and recorded action control.
+- Remove the concrete example and retain only the later general schema — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired formula now state the intended universally quantified P(v_0) premise whose instance is P(a)?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-004-OLP-0146` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:15-27` | `mr/content/first-order-logic/introduction/substitution.tex:15-28` | pending |
 
 ## Deferred prospective decisions
 

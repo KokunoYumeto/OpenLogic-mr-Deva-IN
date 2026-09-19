@@ -172,6 +172,23 @@ _DOCUMENTED_PROJECTIONS = {
          '\\eq[\\Atom{f}{t_1,\\dots,t_{i-1},t,t_{i+1},,\\dots,t_n}][\\Atom{f}{t_1,\\dots,t_{i-1},t\',t_{i+1},\\dots,t_n}]'),
         ('$\\Sat/{M}{\\Atom{R}{t\'}}$', '$\\Sat/{M}{\\Atom{R}{t}}$'),
     ],
+    'OLP-0140': [
+        ('$\\lforall[x][(!A(x) \\lif !B(x))],\n\\lexists[x][!A(x)] \\Entails \\lexists[x][!B(x)]$',
+         '$\\lforall[x][(!A(x) \\lif !B(x)),\n\\lexists[x][!A(x)] \\Entails \\lexists[x][!B(x)]]$'),
+        ('निगमनातील !!{derivation} मध्ये $\\lforall[x][(!A(x) \\lif !B(x))]$ आणि\n$\\lexists[x][!A(x)]$ ही आधारविधाने आणि $\\lexists[x][!B(x)]$ हा',
+         'निगमनातील !!{derivation} मध्ये $\\lforall[x][(!A(x) \\lif !B(x))$ आणि\n$\\lexists[x][!A(x)]$ ही आधारविधाने आणि $\\lexists[x][!B(x)]]$ हा'),
+        ('केवळ तेव्हाच $\\lforall[x][(!A(x) \\lif !B(x))]$ आणि\n$\\lexists[x][!A(x)]$ ही दोन्ही मिळून\n$\\lexists[x][!B(x)]$ तार्किकरीत्या',
+         'केवळ तेव्हाच $\\lforall[x][(!A(x) \\lif !B(x))$ आणि\n$\\lexists[x][!A(x)]$ ही दोन्ही मिळून\n$\\lexists[x][!B(x)]]$ तार्किकरीत्या'),
+    ],
+    'OLP-0143': [
+        ('असतील, !!{predicate}s ना एकाहून अधिक स्थाने',
+         'असतील, !!{constant}s ना एकाहून अधिक स्थाने'),
+        ('$0$, $1$ किंवा~$2$', '$1$, $2$ किंवा~$3$'),
+    ],
+    'OLP-0146': [
+        ('$\\lforall[\\Obj v_0][\\Atom{\\Obj P}{\\Obj v_0}]$',
+         '$\\lforall[\\Obj v_0][\\Atom{\\Obj P}]{\\Obj v_0}$'),
+    ],
 }
 
 
