@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
-This view contains 32 urgent/high decisions and
-1390 current occurrences. Normal and low items remain in the full index.
+This view contains 35 urgent/high decisions and
+1429 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -97,6 +97,9 @@ This view contains 32 urgent/high decisions and
 | `T007-OLP-0040-B012` | `OLP-0040` | 4.13 न्यूनीकरण | 52-54 | 53-56 | 52–53 |
 | `T007-OLP-0040-B016` | `OLP-0040` | 4.13 न्यूनीकरण | 82-86 | 83-87 | 52–53 |
 | `T007-OLP-0040-B019` | `OLP-0040` | 4.13 न्यूनीकरण | 112-116 | 114-118 | 52–53 |
+| `T007-OLP-0172-B006` | `OLP-0172` |  | 13-29 | 13-28 | pending |
+| `T007-OLP-0172-B009` | `OLP-0172` |  | 73-90 | 70-86 | pending |
+| `T007-OLP-0172-B012` | `OLP-0172` |  | 131-147 | 129-145 | pending |
 
 ## T013 — model (model theory) → प्रतिमान
 
@@ -164,6 +167,15 @@ This view contains 32 urgent/high decisions and
 | `T013-OLP-0161-B006` | `OLP-0161` |  | 13-26 | 13-27 | pending |
 | `T013-OLP-0161-B009` | `OLP-0161` |  | 53-65 | 54-66 | pending |
 | `T013-OLP-0162-B010` | `OLP-0162` |  | 68-70 | 70-72 | pending |
+| `T013-OLP-0167-B004` | `OLP-0167` |  | 8-8 | 8-8 | pending |
+| `T013-OLP-0168-B010` | `OLP-0168` |  | 49-98 | 50-97 | pending |
+| `T013-OLP-0169-B007` | `OLP-0169` |  | 39-43 | 38-42 | pending |
+| `T013-OLP-0169-B008` | `OLP-0169` |  | 45-63 | 44-64 | pending |
+| `T013-OLP-0170-B006` | `OLP-0170` |  | 13-27 | 13-27 | pending |
+| `T013-OLP-0171-B009` | `OLP-0171` |  | 55-67 | 55-69 | pending |
+| `T013-OLP-0171-B010` | `OLP-0171` |  | 69-78 | 71-80 | pending |
+| `T013-OLP-0173-B010` | `OLP-0173` |  | 56-61 | 56-62 | pending |
+| `T013-OLP-0173-B011` | `OLP-0173` |  | 63-70 | 64-70 | pending |
 
 ## T014 — perfect number → परिपूर्ण संख्या
 
@@ -359,6 +371,8 @@ This view contains 32 urgent/high decisions and
 | `T026-OLP-0090-B013` | `OLP-0090` | 10.6 संख्यापकांसह निष्पत्ती | 183-228 | 175-218 | 118–121 |
 | `T026-OLP-0137-B010` | `OLP-0137` |  | 48-61 | 48-60 | pending |
 | `T026-OLP-0148-B008` | `OLP-0148` |  | 36-48 | 37-49 | pending |
+| `T026-OLP-0172-B013` | `OLP-0172` |  | 149-171 | 147-169 | pending |
+| `T026-OLP-0172-B014` | `OLP-0172` |  | 173-182 | 171-180 | pending |
 
 ## T028 — continuum → सांतत्य
 
@@ -455,6 +469,16 @@ This view contains 32 urgent/high decisions and
 | `T029-OLP-0119-B016` | `OLP-0119` |  | 97-98 | 98-99 | pending |
 | `T029-OLP-0125-B008` | `OLP-0125` |  | 26-28 | 27-29 | pending |
 | `T029-OLP-0147-B006` | `OLP-0147` |  | 13-30 | 13-31 | pending |
+| `T029-OLP-0168-B006` | `OLP-0168` |  | 21-26 | 21-26 | pending |
+| `T029-OLP-0168-B010` | `OLP-0168` |  | 49-98 | 50-97 | pending |
+| `T029-OLP-0169-B008` | `OLP-0169` |  | 45-63 | 44-64 | pending |
+| `T029-OLP-0170-B007` | `OLP-0170` |  | 29-38 | 29-38 | pending |
+| `T029-OLP-0170-B011` | `OLP-0170` |  | 71-88 | 70-86 | pending |
+| `T029-OLP-0170-B014` | `OLP-0170` |  | 108-141 | 107-138 | pending |
+| `T029-OLP-0172-B006` | `OLP-0172` |  | 13-29 | 13-28 | pending |
+| `T029-OLP-0172-B008` | `OLP-0172` |  | 57-71 | 56-68 | pending |
+| `T029-OLP-0172-B009` | `OLP-0172` |  | 73-90 | 70-86 | pending |
+| `T029-OLP-0172-B013` | `OLP-0172` |  | 149-171 | 147-169 | pending |
 
 ## T039 — preorder / partial order / linear order → पूर्वक्रम / अंशतः क्रम / रेषीय क्रम
 
@@ -493,6 +517,12 @@ This view contains 32 urgent/high decisions and
 | `T039-OLP-0016-B028` | `OLP-0016` | 2.5 क्रम | 155-160 | 149-154 | 20–21 |
 | `T039-OLP-0016-B029` | `OLP-0016` | 2.5 क्रम | 162-166 | 156-160 | 20–21 |
 | `T039-OLP-0147-B007` | `OLP-0147` |  | 32-54 | 33-56 | pending |
+| `T039-OLP-0168-B009` | `OLP-0168` |  | 37-47 | 38-48 | pending |
+| `T039-OLP-0168-B010` | `OLP-0168` |  | 49-98 | 50-97 | pending |
+| `T039-OLP-0169-B006` | `OLP-0169` |  | 13-37 | 13-36 | pending |
+| `T039-OLP-0169-B008` | `OLP-0169` |  | 45-63 | 44-64 | pending |
+| `T039-OLP-0170-B006` | `OLP-0170` |  | 13-27 | 13-27 | pending |
+| `T039-OLP-0170-B014` | `OLP-0170` |  | 108-141 | 107-138 | pending |
 
 ## T040 — graph / directed graph / vertex / edge → आलेख / दिशित आलेख / शिखर / कड
 
@@ -684,6 +714,7 @@ This view contains 32 urgent/high decisions and
 | `T042-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | 35-43 | 33-41 | 72–74 |
 | `T042-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | 55-68 | 54-67 | 72–74 |
 | `T042-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | 80-83 | 80-85 | 72–74 |
+| `T042-OLP-0171-B009` | `OLP-0171` |  | 55-67 | 55-69 | pending |
 
 ## T043 — closure / inverse / restriction / relative product → संवरण / व्युत्क्रम / मर्यादन / सापेक्ष गुणाकार
 
@@ -764,6 +795,7 @@ This view contains 32 urgent/high decisions and
 | `T043-OLP-0054-B007` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | 25-33 | 24-31 | 72–74 |
 | `T043-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | 35-43 | 33-41 | 72–74 |
 | `T043-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | 55-68 | 54-67 | 72–74 |
+| `T043-OLP-0171-B012` | `OLP-0171` |  | 90-99 | 92-101 | pending |
 
 ## T044 — computability / formula / derivation → संगणनीयता / सूत्र / निष्पत्ती
 
@@ -1186,6 +1218,8 @@ This view contains 32 urgent/high decisions and
 | `T044-OLP-0158-B026` | `OLP-0158` |  | 116-124 | 121-130 | pending |
 | `T044-OLP-0160-B006` | `OLP-0160` |  | 13-33 | 13-33 | pending |
 | `T044-OLP-0160-B007` | `OLP-0160` |  | 35-45 | 35-46 | pending |
+| `T044-OLP-0168-B010` | `OLP-0168` |  | 49-98 | 50-97 | pending |
+| `T044-OLP-0172-B014` | `OLP-0172` |  | 173-182 | 171-180 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
@@ -1648,6 +1682,7 @@ This view contains 32 urgent/high decisions and
 | `T201-OLP-0137-B010` | `OLP-0137` |  | 48-61 | 48-60 | pending |
 | `T201-OLP-0147-B008` | `OLP-0147` |  | 56-68 | 58-68 | pending |
 | `T201-OLP-0148-B009` | `OLP-0148` |  | 50-55 | 51-56 | pending |
+| `T201-OLP-0173-B011` | `OLP-0173` |  | 63-70 | 64-70 | pending |
 
 ## T219 — free logic → मुक्त तर्कशास्त्र
 
@@ -1672,6 +1707,43 @@ This view contains 32 urgent/high decisions and
 | Occurrence | Unit | Section | Source line | Target line | PDF page |
 |---|---|---|---|---|---|
 | `T220-OLP-0161-B012` | `OLP-0161` |  | 82-92 | 83-93 | pending |
+
+## T236 — mereology / parthood / proper and improper part → अवयवमीमांसा / अवयवत्व / उचित आणि अनुचित अवयव
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: source-defined provisional rendering with relation and philosophy context only; exact headwords unattested; expert-reviewable. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Are अवयवमीमांसा and अवयवत्व natural Marathi philosophical terms for mereology and parthood, and should improper part be स्वयं-अवयव instead?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T236-OLP-0170-B013` | `OLP-0170` |  | 102-106 | 101-105 | pending |
+| `T236-OLP-0170-B014` | `OLP-0170` |  | 108-141 | 107-138 | pending |
+
+## T237 — mereological sum / fusion → अवयवी संयोग
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: definition-controlled provisional rendering; exact Marathi specialist term unattested; expert-reviewable. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Is अवयवी संयोग a clear term for mereological sum or fusion, or should संमीलन be used to avoid collision with set union?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T237-OLP-0170-B014` | `OLP-0170` |  | 108-141 | 107-138 | pending |
+
+## T241 — separation principle / separation schema (set theory) → विभक्तीकरण तत्त्व / विभक्तीकरण-रूपबंध
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: source-defined provisional rendering with adjacent set and schema evidence; exact headword unattested; expert-reviewable. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Is विभक्तीकरण the natural Marathi set-theory term for Separation, or is विलगीकरण conventional?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T241-OLP-0172-B013` | `OLP-0172` |  | 149-171 | 147-169 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

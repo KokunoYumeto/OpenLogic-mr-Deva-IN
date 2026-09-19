@@ -1,9 +1,9 @@
 # Start here: Marathi translation decisions
 
 This bundle is the expert-review entry point for the current Marathi
-OpenLogic translation through OLP-0166. It covers 163/722 source units,
-11 complete chapters, 324 applied decisions and
-9,938 current decision-level occurrence records. The remaining 559 units are untranslated.
+OpenLogic translation through OLP-0173. It covers 170/722 source units,
+11 complete chapters, 344 applied decisions and
+10,216 current decision-level occurrence records. The remaining 552 units are untranslated.
 The paginated 11-chapter reader ends at OLP-0111; later translated units use pending PDF locators.
 
 No independent human or native-speaker review is claimed. Every choice remains
@@ -14,7 +14,7 @@ a publication or completion hold.
 
 - `TRANSLATION_DECISIONS_FULL.md` is the readable complete applied-decision index.
 - `PRIORITY_REVIEW.md` contains only urgent/high review items and their occurrences.
-- `DECISION_OCCURRENCES.csv` has one UTF-8 row for each of 9,938 occurrences.
+- `DECISION_OCCURRENCES.csv` has one UTF-8 row for each of 10,216 occurrences.
 - `DECISIONS.json` is the canonical machine record validated against the shared schema.
 - `translation-decision.schema.json` is the exact frozen shared schema.
 - `TRANSLATION_DECISION_QA.json` records validation, counts and hashes.

@@ -250,6 +250,10 @@ _DOCUMENTED_PROJECTIONS = {
         ('\\Value{\\Subst{t}{t\'}{x}}{M}[s] \\\\',
          '\\Value{\\Subst{t}{t\'}{x}}{M}[s]  = \\\\'),
     ],
+    'OLP-0171': [
+        ("$\\lexists[\\Obj\n  v_3][\\eq[(\\Obj v_1 + {\\Obj v_3}')][\\Obj v_2]]$",
+         "$\\lexists[\\Obj\n  v_3][\\eq[(\\Obj v_1 + {\\Obj v_3}')][v_2]]$"),
+    ],
 }
 
 

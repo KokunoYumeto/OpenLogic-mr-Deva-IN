@@ -1,0 +1,72 @@
+% Part: first-order-logic
+% Chapter: models-theories
+% Section: size-of-structures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{mat}{siz}
+
+\olsection{\printtoken{P}{structure} चे आकारमान व्यक्त करणे}
+
+\begin{explain}
+भाषेतील अतार्किक चिन्हे न वापरताही रचनांचे काही गुणधर्म व्यक्त करता येतात.
+उदाहरणार्थ, अशी !!{sentence}s आहेत की ती !!a{structure} मध्ये तेव्हा आणि केवळ
+तेव्हाच सत्य असतात, जेव्हा त्या !!{structure} च्या !!{domain} मध्ये
+किमान, जास्तीत जास्त किंवा नेमके दिलेल्या संख्येइतके~$n$ !!{element}s असतात.
+\end{explain}
+
+\begin{prop}
+!!{sentence}
+\begin{multline*}
+  !A_{\ge n} \ident \lexists[x_1][\lexists[x_2][\dots\lexists[x_n][{}]]]\\
+  \begin{aligned}
+  (\eq/[x_1][x_2] \land {}
+  \eq/[x_1][x_3] \land \eq/[x_1][x_4] \land \dots \land \eq/[x_1][x_n] \land {}\\
+\eq/[x_2][x_3] \land \eq/[x_2][x_4] \land \dots \land {} \eq/[x_2][x_n] \land {} \\
+\vdots\\
+\eq/[x_{n-1}][x_n])
+\end{aligned}
+\end{multline*}
+हे !!a{structure}~$\Struct M$ मध्ये तेव्हा आणि केवळ तेव्हाच सत्य असते,
+जेव्हा $\Domain M$ मध्ये किमान $n$ !!{element}s असतात. परिणामी,
+$\Sat{M}{\lnot !A_{\ge n+1}}$ तेव्हा आणि केवळ तेव्हाच लागू होते, जेव्हा
+$\Domain M$ मध्ये जास्तीत जास्त~$n$ !!{element}s असतात.
+
+\end{prop}
+
+\begin{prop}
+!!{sentence}
+\begin{multline*}
+!A_{= n} \ident \lexists[x_1][\lexists[x_2][\dots\lexists[x_n][{}]]] \\
+\begin{aligned}
+  (\eq/[x_1][x_2] \land {}
+  \eq/[x_1][x_3] \land \eq/[x_1][x_4] \land \dots \land \eq/[x_1][x_n] \land {}\\
+\eq/[x_2][x_3] \land \eq/[x_2][x_4] \land \dots \land {} \eq/[x_2][x_n] \land {} \\
+\vdots\\
+\eq/[x_{n-1}][x_n] \land {} \\
+\lforall[y][(\eq[y][x_1] \lor \dots \lor \eq[y][x_n]]))
+\end{aligned}
+\end{multline*}
+हे !!a{structure}~$\Struct M$ मध्ये तेव्हा आणि केवळ तेव्हाच सत्य असते,
+जेव्हा $\Domain M$ मध्ये नेमके $n$ !!{element}s असतात.
+\end{prop}
+
+\begin{prop}
+एखादी !!{structure} अनंत तेव्हा आणि केवळ तेव्हाच असते, जेव्हा ती पुढील
+संचाचे प्रतिमान असते:
+\[
+\{!A_{\ge 1}, !A_{\ge 2}, !A_{\ge 3}, \dots \}.
+\]
+\end{prop}
+
+असे एकही पूर्णतः तार्किक वाक्य नाही की जे~$\Struct M$ मध्ये तेव्हा आणि केवळ
+तेव्हाच सत्य असेल, जेव्हा $\Domain M$ अनंत असेल. पण अशी अतार्किक
+!!{predicate}s असलेली !!{sentence}s देता येतात ज्यांची फक्त अनंत प्रतिमाने
+असतात (जरी प्रत्येक अनंत !!{structure} त्यांचे प्रतिमान नसते). सांत रचना
+असण्याचा गुणधर्म आणि !!{nonenumerable} रचना असण्याचा गुणधर्म
+!!{sentence}s च्या अनंत संचानेही व्यक्त करता येत नाही. ही तथ्ये संहतता आणि
+लोव्हेनहाइम--स्कोलेम प्रमेयांवरून निष्पन्न होतात.
+
+\end{document}

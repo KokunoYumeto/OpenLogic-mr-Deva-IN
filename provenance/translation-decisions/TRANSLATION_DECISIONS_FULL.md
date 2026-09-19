@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 occurrences.
+Coverage: 170/722 source units through OLP-0173; 344 applied decisions; 10,216 occurrences.
 
 ## T001 — set
 
@@ -417,6 +417,15 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T001-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
 | `T001-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
 | `T001-OLP-0161-B012` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:82-92` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:83-93` | pending |
+| `T001-OLP-0172-B005` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:11-11` | `mr/content/first-order-logic/models-theories/set-theory.tex:11-11` | pending |
+| `T001-OLP-0172-B006` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:13-29` | `mr/content/first-order-logic/models-theories/set-theory.tex:13-28` | pending |
+| `T001-OLP-0172-B007` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:31-55` | `mr/content/first-order-logic/models-theories/set-theory.tex:30-54` | pending |
+| `T001-OLP-0172-B008` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:57-71` | `mr/content/first-order-logic/models-theories/set-theory.tex:56-68` | pending |
+| `T001-OLP-0172-B009` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:73-90` | `mr/content/first-order-logic/models-theories/set-theory.tex:70-86` | pending |
+| `T001-OLP-0172-B010` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:92-110` | `mr/content/first-order-logic/models-theories/set-theory.tex:88-106` | pending |
+| `T001-OLP-0172-B011` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:112-129` | `mr/content/first-order-logic/models-theories/set-theory.tex:108-127` | pending |
+| `T001-OLP-0172-B012` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:131-147` | `mr/content/first-order-logic/models-theories/set-theory.tex:129-145` | pending |
+| `T001-OLP-0172-B013` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:149-171` | `mr/content/first-order-logic/models-theories/set-theory.tex:147-169` | pending |
 
 ## T002 — element/member
 
@@ -740,6 +749,21 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T002-OLP-0164-B038` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:292-294` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:307-310` | pending |
 | `T002-OLP-0164-B045` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:320-323` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:341-345` | pending |
 | `T002-OLP-0164-B046` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:325-333` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:347-355` | pending |
+| `T002-OLP-0169-B006` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-37` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-36` | pending |
+| `T002-OLP-0170-B010` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:62-69` | `mr/content/first-order-logic/models-theories/theories.tex:62-68` | pending |
+| `T002-OLP-0170-B011` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:71-88` | `mr/content/first-order-logic/models-theories/theories.tex:70-86` | pending |
+| `T002-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
+| `T002-OLP-0171-B006` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | pending |
+| `T002-OLP-0171-B013` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120` | pending |
+| `T002-OLP-0172-B006` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:13-29` | `mr/content/first-order-logic/models-theories/set-theory.tex:13-28` | pending |
+| `T002-OLP-0172-B007` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:31-55` | `mr/content/first-order-logic/models-theories/set-theory.tex:30-54` | pending |
+| `T002-OLP-0172-B008` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:57-71` | `mr/content/first-order-logic/models-theories/set-theory.tex:56-68` | pending |
+| `T002-OLP-0172-B009` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:73-90` | `mr/content/first-order-logic/models-theories/set-theory.tex:70-86` | pending |
+| `T002-OLP-0172-B010` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:92-110` | `mr/content/first-order-logic/models-theories/set-theory.tex:88-106` | pending |
+| `T002-OLP-0172-B013` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:149-171` | `mr/content/first-order-logic/models-theories/set-theory.tex:147-169` | pending |
+| `T002-OLP-0173-B006` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:13-19` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:13-18` | pending |
+| `T002-OLP-0173-B007` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:21-35` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:20-35` | pending |
+| `T002-OLP-0173-B009` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:39-54` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:39-54` | pending |
 
 ## T003 — empty set
 
@@ -910,6 +934,9 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T003-OLP-0113-B012` | `OLP-0113` |  | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:89-93` | `mr/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:88-92` | pending |
 | `T003-OLP-0118-B008` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:32-36` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:33-37` | pending |
 | `T003-OLP-0161-B012` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:82-92` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:83-93` | pending |
+| `T003-OLP-0170-B010` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:62-69` | `mr/content/first-order-logic/models-theories/theories.tex:62-68` | pending |
+| `T003-OLP-0170-B011` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:71-88` | `mr/content/first-order-logic/models-theories/theories.tex:70-86` | pending |
+| `T003-OLP-0172-B008` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:57-71` | `mr/content/first-order-logic/models-theories/set-theory.tex:56-68` | pending |
 
 ## T004 — extensionality
 
@@ -1010,6 +1037,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T004-OLP-0165-B010` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:46-49` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:46-48` | pending |
 | `T004-OLP-0165-B011` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:51-55` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:50-55` | pending |
 | `T004-OLP-0165-B012` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:57-59` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:57-60` | pending |
+| `T004-OLP-0170-B011` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:71-88` | `mr/content/first-order-logic/models-theories/theories.tex:70-86` | pending |
+| `T004-OLP-0172-B007` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:31-55` | `mr/content/first-order-logic/models-theories/set-theory.tex:30-54` | pending |
 
 ## T005 — subset
 
@@ -1280,6 +1309,10 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T005-OLP-0135-B008` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:33-42` | `mr/content/first-order-logic/completeness/compactness.tex:33-43` | pending |
 | `T005-OLP-0135-B010` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:52-76` | `mr/content/first-order-logic/completeness/compactness.tex:53-77` | pending |
 | `T005-OLP-0135-B013` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:90-121` | `mr/content/first-order-logic/completeness/compactness.tex:91-123` | pending |
+| `T005-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
+| `T005-OLP-0171-B013` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120` | pending |
+| `T005-OLP-0172-B007` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:31-55` | `mr/content/first-order-logic/models-theories/set-theory.tex:30-54` | pending |
+| `T005-OLP-0172-B008` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:57-71` | `mr/content/first-order-logic/models-theories/set-theory.tex:56-68` | pending |
 
 ## T006 — proper subset
 
@@ -1401,6 +1434,9 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T007-OLP-0040-B012` | `OLP-0040` | 4.13 न्यूनीकरण | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:52-54` | `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:53-56` | 52–53 |
 | `T007-OLP-0040-B016` | `OLP-0040` | 4.13 न्यूनीकरण | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:82-86` | `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:83-87` | 52–53 |
 | `T007-OLP-0040-B019` | `OLP-0040` | 4.13 न्यूनीकरण | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:112-116` | `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:114-118` | 52–53 |
+| `T007-OLP-0172-B006` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:13-29` | `mr/content/first-order-logic/models-theories/set-theory.tex:13-28` | pending |
+| `T007-OLP-0172-B009` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:73-90` | `mr/content/first-order-logic/models-theories/set-theory.tex:70-86` | pending |
+| `T007-OLP-0172-B012` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:131-147` | `mr/content/first-order-logic/models-theories/set-theory.tex:129-145` | pending |
 
 ## T008 — natural numbers
 
@@ -1583,6 +1619,10 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T008-OLP-0161-B009` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:53-65` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:54-66` | pending |
 | `T008-OLP-0161-B011` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:75-80` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:75-81` | pending |
 | `T008-OLP-0162-B010` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:68-70` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:70-72` | pending |
+| `T008-OLP-0170-B008` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:40-57` | `mr/content/first-order-logic/models-theories/theories.tex:40-57` | pending |
+| `T008-OLP-0171-B009` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:55-69` | pending |
+| `T008-OLP-0171-B011` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:80-88` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:82-90` | pending |
+| `T008-OLP-0171-B013` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120` | pending |
 
 ## T009 — formal validity
 
@@ -1687,6 +1727,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T009-OLP-0166-B009` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:43-46` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:44-47` | pending |
 | `T009-OLP-0166-B010` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:48-52` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:49-52` | pending |
 | `T009-OLP-0166-B011` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:54-59` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:54-60` | pending |
+| `T009-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
 
 ## T010 — truth / truth value
 
@@ -1813,6 +1854,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T010-OLP-0143-B006` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:13-25` | `mr/content/first-order-logic/introduction/satisfaction.tex:13-27` | pending |
 | `T010-OLP-0143-B007` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:27-50` | `mr/content/first-order-logic/introduction/satisfaction.tex:29-52` | pending |
 | `T010-OLP-0161-B013` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108` | pending |
+| `T010-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T010-OLP-0169-B008` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64` | pending |
 
 ## T011 — syntax
 
@@ -1998,6 +2041,15 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T013-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
 | `T013-OLP-0161-B009` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:53-65` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:54-66` | pending |
 | `T013-OLP-0162-B010` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:68-70` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:70-72` | pending |
+| `T013-OLP-0167-B004` | `OLP-0167` |  | `upstream/content/first-order-logic/models-theories/models-theories.tex:8-8` | `mr/content/first-order-logic/models-theories/models-theories.tex:8-8` | pending |
+| `T013-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T013-OLP-0169-B007` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:39-43` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:38-42` | pending |
+| `T013-OLP-0169-B008` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64` | pending |
+| `T013-OLP-0170-B006` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:13-27` | `mr/content/first-order-logic/models-theories/theories.tex:13-27` | pending |
+| `T013-OLP-0171-B009` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:55-69` | pending |
+| `T013-OLP-0171-B010` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80` | pending |
+| `T013-OLP-0173-B010` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:56-61` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:56-62` | pending |
+| `T013-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 
 ## T014 — perfect number
 
@@ -2392,6 +2444,9 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T017-OLP-0136-B014` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:65-71` | `mr/content/first-order-logic/completeness/compactness-direct.tex:64-71` | pending |
 | `T017-OLP-0136-B018` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:97-104` | `mr/content/first-order-logic/completeness/compactness-direct.tex:97-104` | pending |
 | `T017-OLP-0136-B019` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:106-113` | `mr/content/first-order-logic/completeness/compactness-direct.tex:106-113` | pending |
+| `T017-OLP-0170-B011` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:71-88` | `mr/content/first-order-logic/models-theories/theories.tex:70-86` | pending |
+| `T017-OLP-0172-B006` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:13-29` | `mr/content/first-order-logic/models-theories/set-theory.tex:13-28` | pending |
+| `T017-OLP-0172-B009` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:73-90` | `mr/content/first-order-logic/models-theories/set-theory.tex:70-86` | pending |
 
 ## T018 — intersection
 
@@ -2625,6 +2680,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T020-OLP-0163-B038` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:338-345` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:352-361` | pending |
 | `T020-OLP-0163-B039` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:363-385` | pending |
 | `T020-OLP-0163-B046` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:400-415` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:421-437` | pending |
+| `T020-OLP-0172-B010` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:92-110` | `mr/content/first-order-logic/models-theories/set-theory.tex:88-106` | pending |
+| `T020-OLP-0172-B011` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:112-129` | `mr/content/first-order-logic/models-theories/set-theory.tex:108-127` | pending |
 
 ## T021 — Cartesian product
 
@@ -2677,6 +2734,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T021-OLP-0030-B006` | `OLP-0030` | 4.3 कँटर यांची नागमोडी पद्धत | `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:13-66` | `mr/content/sets-functions-relations/size-of-sets/zig-zag.tex:13-66` | 37–39 |
 | `T021-OLP-0030-B009` | `OLP-0030` | 4.3 कँटर यांची नागमोडी पद्धत | `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:78-112` | `mr/content/sets-functions-relations/size-of-sets/zig-zag.tex:79-114` | 37–39 |
 | `T021-OLP-0031-B017` | `OLP-0031` | 4.4 जोडीकरण फलने आणि संकेतांक | `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:106-109` | `mr/content/sets-functions-relations/size-of-sets/pairing.tex:107-113` | 39–40 |
+| `T021-OLP-0172-B010` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:92-110` | `mr/content/first-order-logic/models-theories/set-theory.tex:88-106` | pending |
+| `T021-OLP-0172-B011` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:112-129` | `mr/content/first-order-logic/models-theories/set-theory.tex:108-127` | pending |
 
 ## T022 — tuple
 
@@ -2924,6 +2983,10 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T025-OLP-0036-B014` | `OLP-0036` | 4.9 वेगवेगळ्या आकारमानांचे संच आणि कँटर यांचे प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:70-105` | `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:70-110` | 47–48 |
 | `T025-OLP-0036-B018` | `OLP-0036` | 4.9 वेगवेगळ्या आकारमानांचे संच आणि कँटर यांचे प्रमेय | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:142-148` | `mr/content/sets-functions-relations/size-of-sets/comparing-size.tex:151-158` | 47–48 |
 | `T025-OLP-0054-B016` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:85-87` | `mr/content/sets-functions-relations/infinite/card-sb.tex:87-89` | 72–74 |
+| `T025-OLP-0170-B011` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:71-88` | `mr/content/first-order-logic/models-theories/theories.tex:70-86` | pending |
+| `T025-OLP-0170-B012` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:90-100` | `mr/content/first-order-logic/models-theories/theories.tex:88-99` | pending |
+| `T025-OLP-0172-B013` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:149-171` | `mr/content/first-order-logic/models-theories/set-theory.tex:147-169` | pending |
+| `T025-OLP-0172-B014` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:173-182` | `mr/content/first-order-logic/models-theories/set-theory.tex:171-180` | pending |
 
 ## T026 — contradiction/paradox
 
@@ -2977,6 +3040,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T026-OLP-0090-B013` | `OLP-0090` | 10.6 संख्यापकांसह निष्पत्ती | `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:183-228` | `mr/content/first-order-logic/natural-deduction/proving-things-quant.tex:175-218` | 118–121 |
 | `T026-OLP-0137-B010` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:48-61` | `mr/content/first-order-logic/completeness/downward-ls.tex:48-60` | pending |
 | `T026-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
+| `T026-OLP-0172-B013` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:149-171` | `mr/content/first-order-logic/models-theories/set-theory.tex:147-169` | pending |
+| `T026-OLP-0172-B014` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:173-182` | `mr/content/first-order-logic/models-theories/set-theory.tex:171-180` | pending |
 
 ## T027 — mathematical / arithmetical induction
 
@@ -3052,6 +3117,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T027-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
 | `T027-OLP-0156-B014` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:114-147` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:115-147` | pending |
 | `T027-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
+| `T027-OLP-0170-B008` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:40-57` | `mr/content/first-order-logic/models-theories/theories.tex:40-57` | pending |
 
 ## T028 — continuum
 
@@ -3174,6 +3240,16 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T029-OLP-0119-B016` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:97-98` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:98-99` | pending |
 | `T029-OLP-0125-B008` | `OLP-0125` |  | `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:26-28` | `mr/content/first-order-logic/axiomatic-deduction/identity.tex:27-29` | pending |
 | `T029-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
+| `T029-OLP-0168-B006` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:21-26` | `mr/content/first-order-logic/models-theories/introduction.tex:21-26` | pending |
+| `T029-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T029-OLP-0169-B008` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64` | pending |
+| `T029-OLP-0170-B007` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:29-38` | `mr/content/first-order-logic/models-theories/theories.tex:29-38` | pending |
+| `T029-OLP-0170-B011` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:71-88` | `mr/content/first-order-logic/models-theories/theories.tex:70-86` | pending |
+| `T029-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
+| `T029-OLP-0172-B006` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:13-29` | `mr/content/first-order-logic/models-theories/set-theory.tex:13-28` | pending |
+| `T029-OLP-0172-B008` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:57-71` | `mr/content/first-order-logic/models-theories/set-theory.tex:56-68` | pending |
+| `T029-OLP-0172-B009` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:73-90` | `mr/content/first-order-logic/models-theories/set-theory.tex:70-86` | pending |
+| `T029-OLP-0172-B013` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:149-171` | `mr/content/first-order-logic/models-theories/set-theory.tex:147-169` | pending |
 
 ## T030 — relation / binary relation
 
@@ -3350,6 +3426,20 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T030-OLP-0164-B036` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:278-287` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:293-302` | pending |
 | `T030-OLP-0164-B038` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:292-294` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:307-310` | pending |
 | `T030-OLP-0165-B008` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:28-37` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:26-37` | pending |
+| `T030-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T030-OLP-0169-B006` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-37` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-36` | pending |
+| `T030-OLP-0170-B013` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:102-106` | `mr/content/first-order-logic/models-theories/theories.tex:101-105` | pending |
+| `T030-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
+| `T030-OLP-0171-B005` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:11-12` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:11-12` | pending |
+| `T030-OLP-0171-B006` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | pending |
+| `T030-OLP-0171-B007` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:35-40` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:35-40` | pending |
+| `T030-OLP-0171-B008` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | pending |
+| `T030-OLP-0171-B010` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80` | pending |
+| `T030-OLP-0171-B012` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:90-99` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:92-101` | pending |
+| `T030-OLP-0172-B006` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:13-29` | `mr/content/first-order-logic/models-theories/set-theory.tex:13-28` | pending |
+| `T030-OLP-0172-B007` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:31-55` | `mr/content/first-order-logic/models-theories/set-theory.tex:30-54` | pending |
+| `T030-OLP-0172-B010` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:92-110` | `mr/content/first-order-logic/models-theories/set-theory.tex:88-106` | pending |
+| `T030-OLP-0172-B011` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:112-129` | `mr/content/first-order-logic/models-theories/set-theory.tex:108-127` | pending |
 
 ## T031 — identity relation
 
@@ -3566,6 +3656,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T032-OLP-0129-B010` | `OLP-0129` |  | `upstream/content/first-order-logic/completeness/complete-consistent-sets.tex:54-58` | `mr/content/first-order-logic/completeness/complete-consistent-sets.tex:54-58` | pending |
 | `T032-OLP-0133-B007` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:35-55` | `mr/content/first-order-logic/completeness/identity.tex:34-54` | pending |
 | `T032-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
+| `T032-OLP-0169-B008` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64` | pending |
+| `T032-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
 
 ## T033 — transitive
 
@@ -3678,6 +3770,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T033-OLP-0133-B007` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:35-55` | `mr/content/first-order-logic/completeness/identity.tex:34-54` | pending |
 | `T033-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
 | `T033-OLP-0155-B019` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:90-95` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:88-93` | pending |
+| `T033-OLP-0169-B008` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64` | pending |
+| `T033-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
 
 ## T034 — symmetric / anti-symmetric / asymmetric
 
@@ -3761,6 +3855,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T034-OLP-0110-B009` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:56-71` | `mr/content/first-order-logic/tableaux/identity.tex:56-71` | 153–154 |
 | `T034-OLP-0110-B010` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:73-91` | `mr/content/first-order-logic/tableaux/identity.tex:73-91` | 153–154 |
 | `T034-OLP-0133-B007` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:35-55` | `mr/content/first-order-logic/completeness/identity.tex:34-54` | pending |
+| `T034-OLP-0169-B008` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64` | pending |
+| `T034-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
 
 ## T035 — connected (relation)
 
@@ -4074,6 +4170,12 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T039-OLP-0016-B028` | `OLP-0016` | 2.5 क्रम | `upstream/content/sets-functions-relations/relations/orders.tex:155-160` | `mr/content/sets-functions-relations/relations/orders.tex:149-154` | 20–21 |
 | `T039-OLP-0016-B029` | `OLP-0016` | 2.5 क्रम | `upstream/content/sets-functions-relations/relations/orders.tex:162-166` | `mr/content/sets-functions-relations/relations/orders.tex:156-160` | 20–21 |
 | `T039-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
+| `T039-OLP-0168-B009` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:37-47` | `mr/content/first-order-logic/models-theories/introduction.tex:38-48` | pending |
+| `T039-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T039-OLP-0169-B006` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-37` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-36` | pending |
+| `T039-OLP-0169-B008` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64` | pending |
+| `T039-OLP-0170-B006` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:13-27` | `mr/content/first-order-logic/models-theories/theories.tex:13-27` | pending |
+| `T039-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
 
 ## T040 — graph / directed graph / vertex / edge
 
@@ -4307,6 +4409,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T042-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43` | `mr/content/sets-functions-relations/infinite/card-sb.tex:33-41` | 72–74 |
 | `T042-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68` | `mr/content/sets-functions-relations/infinite/card-sb.tex:54-67` | 72–74 |
 | `T042-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83` | `mr/content/sets-functions-relations/infinite/card-sb.tex:80-85` | 72–74 |
+| `T042-OLP-0171-B009` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:55-69` | pending |
 
 ## T043 — closure / inverse / restriction / relative product
 
@@ -4403,6 +4506,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T043-OLP-0054-B007` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:25-33` | `mr/content/sets-functions-relations/infinite/card-sb.tex:24-31` | 72–74 |
 | `T043-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43` | `mr/content/sets-functions-relations/infinite/card-sb.tex:33-41` | 72–74 |
 | `T043-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68` | `mr/content/sets-functions-relations/infinite/card-sb.tex:54-67` | 72–74 |
+| `T043-OLP-0171-B012` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:90-99` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:92-101` | pending |
 
 ## T044 — computability / formula / derivation
 
@@ -4842,6 +4946,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T044-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
 | `T044-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
 | `T044-OLP-0160-B007` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46` | pending |
+| `T044-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T044-OLP-0172-B014` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:173-182` | `mr/content/first-order-logic/models-theories/set-theory.tex:171-180` | pending |
 
 ## T045 — function / mapping
 
@@ -5133,6 +5239,12 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T045-OLP-0165-B008` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:28-37` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:26-37` | pending |
 | `T045-OLP-0165-B015` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:70-75` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:71-76` | pending |
 | `T045-OLP-0165-B018` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:86-103` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:88-106` | pending |
+| `T045-OLP-0171-B006` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | pending |
+| `T045-OLP-0172-B006` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:13-29` | `mr/content/first-order-logic/models-theories/set-theory.tex:13-28` | pending |
+| `T045-OLP-0172-B009` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:73-90` | `mr/content/first-order-logic/models-theories/set-theory.tex:70-86` | pending |
+| `T045-OLP-0172-B010` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:92-110` | `mr/content/first-order-logic/models-theories/set-theory.tex:88-106` | pending |
+| `T045-OLP-0172-B011` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:112-129` | `mr/content/first-order-logic/models-theories/set-theory.tex:108-127` | pending |
+| `T045-OLP-0172-B012` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:131-147` | `mr/content/first-order-logic/models-theories/set-theory.tex:129-145` | pending |
 
 ## T046 — domain / codomain / range
 
@@ -5304,6 +5416,14 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T046-OLP-0164-B046` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:325-333` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:347-355` | pending |
 | `T046-OLP-0165-B006` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:13-18` | pending |
 | `T046-OLP-0165-B008` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:28-37` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:26-37` | pending |
+| `T046-OLP-0169-B006` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-37` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-36` | pending |
+| `T046-OLP-0171-B006` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | pending |
+| `T046-OLP-0171-B013` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120` | pending |
+| `T046-OLP-0172-B011` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:112-129` | `mr/content/first-order-logic/models-theories/set-theory.tex:108-127` | pending |
+| `T046-OLP-0173-B006` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:13-19` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:13-18` | pending |
+| `T046-OLP-0173-B007` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:21-35` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:20-35` | pending |
+| `T046-OLP-0173-B009` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:39-54` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:39-54` | pending |
+| `T046-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 
 ## T047 — argument / input / output / value
 
@@ -5633,6 +5753,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T049-OLP-0054-B005` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:9-14` | `mr/content/sets-functions-relations/infinite/card-sb.tex:9-14` | 72–74 |
 | `T049-OLP-0054-B014` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78` | `mr/content/sets-functions-relations/infinite/card-sb.tex:74-78` | 72–74 |
 | `T049-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 72–74 |
+| `T049-OLP-0172-B012` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:131-147` | `mr/content/first-order-logic/models-theories/set-theory.tex:129-145` | pending |
 
 ## T050 — bijective / bijection / one-to-one correspondence
 
@@ -6247,6 +6368,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T057-OLP-0137-B010` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:48-61` | `mr/content/first-order-logic/completeness/downward-ls.tex:48-60` | pending |
 | `T057-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
 | `T057-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
+| `T057-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 
 ## T058 — size / cardinality / equinumerous
 
@@ -6309,6 +6431,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T058-OLP-0054-B011` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53` | `mr/content/sets-functions-relations/infinite/card-sb.tex:49-52` | 72–74 |
 | `T058-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 72–74 |
 | `T058-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
+| `T058-OLP-0173-B005` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:11-11` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:11-11` | pending |
+| `T058-OLP-0173-B006` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:13-19` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:13-18` | pending |
 
 ## T059 — actual infinity
 
@@ -6674,6 +6798,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T068-OLP-0031-B015` | `OLP-0031` | 4.4 जोडीकरण फलने आणि संकेतांक | `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:91-97` | `mr/content/sets-functions-relations/size-of-sets/pairing.tex:91-98` | 39–40 |
+| `T068-OLP-0171-B013` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120` | pending |
 
 ## T069 — truth table / truth function
 
@@ -7024,6 +7149,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T078-OLP-0053-B014` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108` | 71–72 |
 | `T078-OLP-0054-B005` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:9-14` | `mr/content/sets-functions-relations/infinite/card-sb.tex:9-14` | 72–74 |
 | `T078-OLP-0128-B011` | `OLP-0128` |  | `upstream/content/first-order-logic/completeness/outline.tex:82-92` | `mr/content/first-order-logic/completeness/outline.tex:79-88` | pending |
+| `T078-OLP-0170-B012` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:90-100` | `mr/content/first-order-logic/models-theories/theories.tex:88-99` | pending |
 
 ## T079 — number system
 
@@ -7746,6 +7872,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T098-OLP-0135-B017` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:184-197` | `mr/content/first-order-logic/completeness/compactness.tex:188-202` | pending |
 | `T098-OLP-0137-B005` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:12-18` | `mr/content/first-order-logic/completeness/downward-ls.tex:12-18` | pending |
 | `T098-OLP-0137-B010` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:48-61` | `mr/content/first-order-logic/completeness/downward-ls.tex:48-60` | pending |
+| `T098-OLP-0173-B010` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:56-61` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:56-62` | pending |
+| `T098-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 
 ## T099 — Dedekind infinite
 
@@ -7936,6 +8064,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T102-OLP-0161-B007` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:28-42` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:29-43` | pending |
 | `T102-OLP-0162-B005` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11-11` | pending |
 | `T102-OLP-0164-B048` | `OLP-0164` |  | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:338-340` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:361-363` | pending |
+| `T102-OLP-0168-B009` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:37-47` | `mr/content/first-order-logic/models-theories/introduction.tex:38-48` | pending |
+| `T102-OLP-0170-B005` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:11-11` | `mr/content/first-order-logic/models-theories/theories.tex:11-11` | pending |
 
 ## T103 — parameter (of a formula)
 
@@ -8653,6 +8783,16 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T112-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
 | `T112-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
 | `T112-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
+| `T112-OLP-0169-B006` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-37` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-36` | pending |
+| `T112-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
+| `T112-OLP-0171-B006` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | pending |
+| `T112-OLP-0171-B007` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:35-40` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:35-40` | pending |
+| `T112-OLP-0171-B008` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | pending |
+| `T112-OLP-0171-B010` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80` | pending |
+| `T112-OLP-0171-B011` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:80-88` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:82-90` | pending |
+| `T112-OLP-0171-B012` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:90-99` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:92-101` | pending |
+| `T112-OLP-0171-B013` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120` | pending |
+| `T112-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 
 ## T113 — classical logic / classical
 
@@ -8862,6 +9002,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T115-OLP-0158-B020` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:74-76` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:79-81` | pending |
 | `T115-OLP-0158-B021` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:78-80` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:83-85` | pending |
 | `T115-OLP-0160-B006` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | pending |
+| `T115-OLP-0171-B007` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:35-40` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:35-40` | pending |
 
 ## T116 — truth-functional
 
@@ -8980,6 +9121,20 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T118-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
 | `T118-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
 | `T118-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
+| `T118-OLP-0167-B004` | `OLP-0167` |  | `upstream/content/first-order-logic/models-theories/models-theories.tex:8-8` | `mr/content/first-order-logic/models-theories/models-theories.tex:8-8` | pending |
+| `T118-OLP-0168-B006` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:21-26` | `mr/content/first-order-logic/models-theories/introduction.tex:21-26` | pending |
+| `T118-OLP-0168-B009` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:37-47` | `mr/content/first-order-logic/models-theories/introduction.tex:38-48` | pending |
+| `T118-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T118-OLP-0169-B008` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64` | pending |
+| `T118-OLP-0170-B005` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:11-11` | `mr/content/first-order-logic/models-theories/theories.tex:11-11` | pending |
+| `T118-OLP-0170-B006` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:13-27` | `mr/content/first-order-logic/models-theories/theories.tex:13-27` | pending |
+| `T118-OLP-0170-B007` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:29-38` | `mr/content/first-order-logic/models-theories/theories.tex:29-38` | pending |
+| `T118-OLP-0170-B008` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:40-57` | `mr/content/first-order-logic/models-theories/theories.tex:40-57` | pending |
+| `T118-OLP-0170-B013` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:102-106` | `mr/content/first-order-logic/models-theories/theories.tex:101-105` | pending |
+| `T118-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
+| `T118-OLP-0171-B010` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80` | pending |
+| `T118-OLP-0172-B005` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:11-11` | `mr/content/first-order-logic/models-theories/set-theory.tex:11-11` | pending |
+| `T118-OLP-0172-B006` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:13-29` | `mr/content/first-order-logic/models-theories/set-theory.tex:13-28` | pending |
 
 ## T119 — formation rule / inductive definition / uniquely readable
 
@@ -9358,6 +9513,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T121-OLP-0166-B019` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:110-115` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:118-124` | pending |
 | `T121-OLP-0166-B020` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:117-122` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:126-132` | pending |
 | `T121-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
+| `T121-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T121-OLP-0169-B007` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:39-43` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:38-42` | pending |
 
 ## T122 — tautology
 
@@ -9523,6 +9680,9 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T123-OLP-0166-B021` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:124-131` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:134-141` | pending |
 | `T123-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
 | `T123-OLP-0166-B023` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:153-155` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:163-165` | pending |
+| `T123-OLP-0168-B007` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:28-31` | `mr/content/first-order-logic/models-theories/introduction.tex:28-32` | pending |
+| `T123-OLP-0168-B009` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:37-47` | `mr/content/first-order-logic/models-theories/introduction.tex:38-48` | pending |
+| `T123-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -9611,6 +9771,9 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T124-OLP-0161-B006` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:13-26` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:13-27` | pending |
 | `T124-OLP-0166-B004` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:9-10` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:9-10` | pending |
 | `T124-OLP-0166-B008` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:37-41` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:38-42` | pending |
+| `T124-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T124-OLP-0170-B012` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:90-100` | `mr/content/first-order-logic/models-theories/theories.tex:88-99` | pending |
+| `T124-OLP-0172-B013` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:149-171` | `mr/content/first-order-logic/models-theories/set-theory.tex:147-169` | pending |
 
 ## T125 — necessary / contingent
 
@@ -9813,6 +9976,18 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T126-OLP-0165-B011` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:51-55` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:50-55` | pending |
 | `T126-OLP-0165-B012` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:57-59` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:57-60` | pending |
 | `T126-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
+| `T126-OLP-0168-B007` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:28-31` | `mr/content/first-order-logic/models-theories/introduction.tex:28-32` | pending |
+| `T126-OLP-0168-B008` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:33-35` | `mr/content/first-order-logic/models-theories/introduction.tex:34-36` | pending |
+| `T126-OLP-0168-B009` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:37-47` | `mr/content/first-order-logic/models-theories/introduction.tex:38-48` | pending |
+| `T126-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T126-OLP-0169-B006` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-37` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-36` | pending |
+| `T126-OLP-0169-B007` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:39-43` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:38-42` | pending |
+| `T126-OLP-0170-B012` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:90-100` | `mr/content/first-order-logic/models-theories/theories.tex:88-99` | pending |
+| `T126-OLP-0172-B008` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:57-71` | `mr/content/first-order-logic/models-theories/set-theory.tex:56-68` | pending |
+| `T126-OLP-0173-B006` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:13-19` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:13-18` | pending |
+| `T126-OLP-0173-B007` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:21-35` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:20-35` | pending |
+| `T126-OLP-0173-B009` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:39-54` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:39-54` | pending |
+| `T126-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 
 ## T127 — propositional constant
 
@@ -10195,6 +10370,14 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T129-OLP-0152-B027` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:129-131` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:125-127` | pending |
 | `T129-OLP-0152-B028` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:133-135` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:129-131` | pending |
 | `T129-OLP-0154-B017` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:71-77` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:72-77` | pending |
+| `T129-OLP-0168-B005` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:12-19` | `mr/content/first-order-logic/models-theories/introduction.tex:12-19` | pending |
+| `T129-OLP-0168-B009` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:37-47` | `mr/content/first-order-logic/models-theories/introduction.tex:38-48` | pending |
+| `T129-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T129-OLP-0170-B009` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:59-60` | `mr/content/first-order-logic/models-theories/theories.tex:59-60` | pending |
+| `T129-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
+| `T129-OLP-0171-B009` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:55-69` | pending |
+| `T129-OLP-0171-B010` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80` | pending |
+| `T129-OLP-0172-B009` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:73-90` | `mr/content/first-order-logic/models-theories/set-theory.tex:70-86` | pending |
 
 ## T130 — abbreviation / abbreviates
 
@@ -10825,6 +11008,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T142-OLP-0142-B013` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:54-68` | `mr/content/first-order-logic/introduction/formulas.tex:54-69` | pending |
 | `T142-OLP-0156-B012` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:83-108` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:85-109` | pending |
 | `T142-OLP-0156-B026` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:231-234` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:229-231` | pending |
+| `T142-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T142-OLP-0171-B009` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:55-69` | pending |
 
 ## T143 — ordinary induction / strong induction
 
@@ -11081,6 +11266,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T148-OLP-0166-B013` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:66-73` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:68-77` | pending |
 | `T148-OLP-0166-B014` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:75-80` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:79-84` | pending |
 | `T148-OLP-0166-B015` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:82-90` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:86-96` | pending |
+| `T148-OLP-0170-B012` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:90-100` | `mr/content/first-order-logic/models-theories/theories.tex:88-99` | pending |
 
 ## T149 — monotonicity (of semantic entailment)
 
@@ -11344,6 +11530,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T151-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
 | `T151-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
 | `T151-OLP-0161-B013` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:94-107` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:95-108` | pending |
+| `T151-OLP-0168-B005` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:12-19` | `mr/content/first-order-logic/models-theories/introduction.tex:12-19` | pending |
+| `T151-OLP-0168-B006` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:21-26` | `mr/content/first-order-logic/models-theories/introduction.tex:21-26` | pending |
 
 ## T152 — natural deduction / sequent calculus
 
@@ -11529,6 +11717,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T154-OLP-0137-B006` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:20-24` | `mr/content/first-order-logic/completeness/downward-ls.tex:20-24` | pending |
 | `T154-OLP-0137-B008` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:33-38` | `mr/content/first-order-logic/completeness/downward-ls.tex:33-38` | pending |
 | `T154-OLP-0137-B010` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:48-61` | `mr/content/first-order-logic/completeness/downward-ls.tex:48-60` | pending |
+| `T154-OLP-0168-B006` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:21-26` | `mr/content/first-order-logic/models-theories/introduction.tex:21-26` | pending |
 
 ## T155 — soundness / sound / unsound (of a proof system)
 
@@ -11862,6 +12051,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T156-OLP-0137-B006` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:20-24` | `mr/content/first-order-logic/completeness/downward-ls.tex:20-24` | pending |
 | `T156-OLP-0137-B008` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:33-38` | `mr/content/first-order-logic/completeness/downward-ls.tex:33-38` | pending |
 | `T156-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
+| `T156-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -12577,6 +12767,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T167-OLP-0125-B007` | `OLP-0125` |  | `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:17-24` | `mr/content/first-order-logic/axiomatic-deduction/identity.tex:18-25` | pending |
 | `T167-OLP-0125-B008` | `OLP-0125` |  | `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:26-28` | `mr/content/first-order-logic/axiomatic-deduction/identity.tex:27-29` | pending |
 | `T167-OLP-0125-B013` | `OLP-0125` |  | `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:47-54` | `mr/content/first-order-logic/axiomatic-deduction/identity.tex:49-56` | pending |
+| `T167-OLP-0170-B008` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:40-57` | `mr/content/first-order-logic/models-theories/theories.tex:40-57` | pending |
+| `T167-OLP-0172-B014` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:173-182` | `mr/content/first-order-logic/models-theories/set-theory.tex:171-180` | pending |
 
 ## T168 — justified / justification (of a derivation line)
 
@@ -13466,6 +13658,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T181-OLP-0136-B024` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:153-159` | `mr/content/first-order-logic/completeness/compactness-direct.tex:155-161` | pending |
 | `T181-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
 | `T181-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
+| `T181-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 
 ## T182 — proof-theoretic notions
 
@@ -14522,6 +14715,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T201-OLP-0137-B010` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:48-61` | `mr/content/first-order-logic/completeness/downward-ls.tex:48-60` | pending |
 | `T201-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
 | `T201-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
+| `T201-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 
 ## T202 — formal language / formal derivation
 
@@ -14713,6 +14907,8 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T204-OLP-0165-B019` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:105-109` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:108-114` | pending |
 | `T204-OLP-0165-B022` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:119-135` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:124-140` | pending |
 | `T204-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
+| `T204-OLP-0171-B006` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | pending |
+| `T204-OLP-0171-B008` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | pending |
 
 ## T205 — variable / constant / function (as language symbols)
 
@@ -14766,6 +14962,11 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T205-OLP-0162-B006` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:13-15` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:13-15` | pending |
 | `T205-OLP-0162-B007` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17-29` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17-30` | pending |
 | `T205-OLP-0162-B009` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68` | pending |
+| `T205-OLP-0170-B007` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:29-38` | `mr/content/first-order-logic/models-theories/theories.tex:29-38` | pending |
+| `T205-OLP-0171-B006` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | pending |
+| `T205-OLP-0171-B008` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | pending |
+| `T205-OLP-0171-B009` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:55-69` | pending |
+| `T205-OLP-0171-B013` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120` | pending |
 
 ## T206 — logical symbol / non-logical symbol / standard language
 
@@ -14799,6 +15000,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T206-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
 | `T206-OLP-0151-B010` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:65-68` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:61-63` | pending |
 | `T206-OLP-0161-B009` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:53-65` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:54-66` | pending |
+| `T206-OLP-0168-B009` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:37-47` | `mr/content/first-order-logic/models-theories/introduction.tex:38-48` | pending |
 
 ## T207 — n-place / arity
 
@@ -15191,6 +15393,7 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T215-OLP-0157-B016` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:78-93` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:77-93` | pending |
 | `T215-OLP-0158-B010` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:29-33` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:31-35` | pending |
 | `T215-OLP-0158-B025` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:100-114` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:105-119` | pending |
+| `T215-OLP-0171-B008` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | pending |
 
 ## T216 — substitution / free for substitution / variable capture
 
@@ -15403,6 +15606,27 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | `T218-OLP-0166-B020` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:117-122` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:126-132` | pending |
 | `T218-OLP-0166-B021` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:124-131` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:134-141` | pending |
 | `T218-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
+| `T218-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T218-OLP-0169-B005` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:11-11` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:11-11` | pending |
+| `T218-OLP-0169-B006` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-37` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-36` | pending |
+| `T218-OLP-0169-B007` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:39-43` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:38-42` | pending |
+| `T218-OLP-0169-B008` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64` | pending |
+| `T218-OLP-0170-B006` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:13-27` | `mr/content/first-order-logic/models-theories/theories.tex:13-27` | pending |
+| `T218-OLP-0170-B012` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:90-100` | `mr/content/first-order-logic/models-theories/theories.tex:88-99` | pending |
+| `T218-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
+| `T218-OLP-0171-B005` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:11-12` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:11-12` | pending |
+| `T218-OLP-0171-B006` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | pending |
+| `T218-OLP-0171-B007` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:35-40` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:35-40` | pending |
+| `T218-OLP-0171-B008` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | pending |
+| `T218-OLP-0171-B010` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80` | pending |
+| `T218-OLP-0171-B012` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:90-99` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:92-101` | pending |
+| `T218-OLP-0171-B013` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120` | pending |
+| `T218-OLP-0173-B005` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:11-11` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:11-11` | pending |
+| `T218-OLP-0173-B006` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:13-19` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:13-18` | pending |
+| `T218-OLP-0173-B007` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:21-35` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:20-35` | pending |
+| `T218-OLP-0173-B009` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:39-54` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:39-54` | pending |
+| `T218-OLP-0173-B010` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:56-61` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:56-62` | pending |
+| `T218-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 
 ## T219 — free logic
 
@@ -15593,6 +15817,584 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T224-OLP-0166-B005` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | pending |
+
+## T225 — axiomatized by / axiom system (a set of axioms)
+
+**Chosen rendering/action:** स्वयंसिद्धकांद्वारे निरूपित / स्वयंसिद्धक-प्रणाली
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked sources directly support स्वयंसिद्धक and the स्वयंसिद्धकीय system register. OpenLogic defines the first phrase by semantic closure and explicitly identifies the local axiom system with a set of sentences, so निरूपित and प्रणाली preserve the distinction from a proof calculus.
+
+**Rationale:** The checked sources directly support स्वयंसिद्धक and the स्वयंसिद्धकीय system register. OpenLogic defines the first phrase by semantic closure and explicitly identifies the local axiom system with a set of sentences, so निरूपित and प्रणाली preserve the distinction from a proof calculus.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
+
+**Alternatives:**
+
+- स्वयंसिद्धीकृत / स्वयंसिद्धक-संच — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- स्वयंसिद्धकबद्ध / स्वयंसिद्धकीय व्यवस्था — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are स्वयंसिद्धकांद्वारे निरूपित and स्वयंसिद्धक-प्रणाली the clearest terms for semantic axiomatization by a sentence set?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T225-OLP-0168-B008` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:33-35` | `mr/content/first-order-logic/models-theories/introduction.tex:34-36` | pending |
+| `T225-OLP-0168-B009` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:37-47` | `mr/content/first-order-logic/models-theories/introduction.tex:38-48` | pending |
+| `T225-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T225-OLP-0170-B006` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:13-27` | `mr/content/first-order-logic/models-theories/theories.tex:13-27` | pending |
+| `T225-OLP-0170-B007` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:29-38` | `mr/content/first-order-logic/models-theories/theories.tex:29-38` | pending |
+| `T225-OLP-0170-B008` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:40-57` | `mr/content/first-order-logic/models-theories/theories.tex:40-57` | pending |
+| `T225-OLP-0170-B011` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:71-88` | `mr/content/first-order-logic/models-theories/theories.tex:70-86` | pending |
+| `T225-OLP-0170-B013` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:102-106` | `mr/content/first-order-logic/models-theories/theories.tex:101-105` | pending |
+| `T225-OLP-0172-B006` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:13-29` | `mr/content/first-order-logic/models-theories/set-theory.tex:13-28` | pending |
+
+## T226 — independence / redundant axiom
+
+**Chosen rendering/action:** स्वयंसिद्धकांचे स्वातंत्र्य / अनावश्यक स्वयंसिद्धक
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The canon directly supports स्वयंसिद्धक and the redundant stem, while the source gives exact entailment and satisfiability tests for both notions. स्वातंत्र्य names failure of derivability from the remaining axioms; अनावश्यक names derivability from them.
+
+**Rationale:** The canon directly supports स्वयंसिद्धक and the redundant stem, while the source gives exact entailment and satisfiability tests for both notions. स्वातंत्र्य names failure of derivability from the remaining axioms; अनावश्यक names derivability from them.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P075` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/r (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
+
+**Alternatives:**
+
+- स्वयंसिद्धकांची स्वतंत्रता / अधिक स्वयंसिद्धक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- स्वयंसिद्धक-स्वावलंबन / निरर्थक स्वयंसिद्धक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is स्वयंसिद्धकांचे स्वातंत्र्य the natural Marathi model-theory label for axiom independence?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T226-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+
+## T227 — definability / primitive concept
+
+**Chosen rendering/action:** परिभाष्यता / आदिम संकल्पना
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked terminology supports the primitive and defined-symbol contrast. The source controls परिभाष्यता by asking whether one relation can be defined from the others and treats a nondefinable relation as an additional primitive, so the noun names that exact expressibility property.
+
+**Rationale:** The checked terminology supports the primitive and defined-symbol contrast. The source controls परिभाष्यता by asking whether one relation can be defined from the others and treats a nondefinable relation as an additional primitive, so the noun names that exact expressibility property.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P072` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — D glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/d (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- व्याख्येयता / मूलभूत संकल्पना — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- परिभाषणीयता / प्राथमिक संकल्पना — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is परिभाष्यता the clearest Marathi technical noun for model-theoretic definability, or is व्याख्येयता more conventional?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T227-OLP-0168-B005` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:12-19` | `mr/content/first-order-logic/models-theories/introduction.tex:12-19` | pending |
+| `T227-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
+| `T227-OLP-0169-B006` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-37` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-36` | pending |
+| `T227-OLP-0170-B009` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:59-60` | `mr/content/first-order-logic/models-theories/theories.tex:59-60` | pending |
+| `T227-OLP-0171-B010` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80` | pending |
+| `T227-OLP-0172-B007` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:31-55` | `mr/content/first-order-logic/models-theories/set-theory.tex:30-54` | pending |
+
+## T228 — closed under entailment / closure of a sentence set
+
+**Chosen rendering/action:** तार्किक निष्पन्नतेखाली बंद / वाक्यसंचाचे संवरण
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The prior edition decision uses संवरण for mathematical closure; the checked passages provide set-operation and logical-entailment context but do not independently attest this exact headword. OpenLogic defines the property and operator extensionally: every entailed sentence belongs to the set, and the closure is exactly the set of all entailed sentences.
+
+**Rationale:** The prior edition decision uses संवरण for mathematical closure; the checked passages provide set-operation and logical-entailment context but do not independently attest this exact headword. OpenLogic defines the property and operator extensionally: every entailed sentence belongs to the set, and the closure is exactly the set of all entailed sentences.
+
+**Authorities actually checked:**
+
+- `MR-P014` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 11 (`checked_supports`): visually-read-page-image
+- `MR-P016` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 13 (`checked_supports`): visually-read-page-image
+- `MR-P017` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 81 (`checked_supports`): visually-read-page-image
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P070` — भाषाविज्ञान व वाङ्मयविद्या परिभाषा कोश — E glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/39/e (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- निष्पन्नतेसाठी बंद / तार्किक संवरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- परिणामांखाली बंद / परिणाम-संवरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should semantic closure be written वाक्यसंचाचे संवरण, or should तार्किक संवरण be adopted as the shorter reusable term?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T228-OLP-0168-B007` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:28-31` | `mr/content/first-order-logic/models-theories/introduction.tex:28-32` | pending |
+| `T228-OLP-0168-B008` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:33-35` | `mr/content/first-order-logic/models-theories/introduction.tex:34-36` | pending |
+
+## T229 — expressible by sentences / structural property
+
+**Chosen rendering/action:** वाक्यांनी व्यक्त करता येणारा / रचनात्मक गुणधर्म
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked sources support the formal-language, sentence, structure and definition register but do not independently attest this exact pair. OpenLogic controls the sense by asking whether a sentence or sentence set is true in exactly the relevant structures, distinguishing model-theoretic expressibility from ordinary verbal expression.
+
+**Rationale:** The checked sources support the formal-language, sentence, structure and definition register but do not independently attest this exact pair. OpenLogic controls the sense by asking whether a sentence or sentence set is true in exactly the relevant structures, distinguishing model-theoretic expressibility from ordinary verbal expression.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P072` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — D glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/d (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- वाक्यांत अभिव्यक्त करता येणारा / संरचनात्मक गुणधर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- वाक्यांनी निरूपणीय / रचना-गुणधर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does वाक्यांनी व्यक्त करता येणारा keep the technical model-theoretic sense clear enough, and is रचनात्मक गुणधर्म preferable to संरचनात्मक गुणधर्म?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T229-OLP-0169-B005` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:11-11` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:11-11` | pending |
+| `T229-OLP-0169-B006` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-37` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:13-36` | pending |
+| `T229-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
+| `T229-OLP-0171-B006` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | pending |
+| `T229-OLP-0173-B005` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:11-11` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:11-11` | pending |
+| `T229-OLP-0173-B006` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:13-19` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:13-18` | pending |
+| `T229-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
+
+## T230 — strict linear order
+
+**Chosen rendering/action:** काटेकोर रेषीय क्रम
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The edition already uses रेषीय क्रम for linear order. The three displayed axioms define the strict variant by irreflexivity, trichotomy with equality and transitivity, while काटेकोर distinguishes it from the non-strict order used immediately before.
+
+**Rationale:** The edition already uses रेषीय क्रम for linear order. The three displayed axioms define the strict variant by irreflexivity, trichotomy with equality and transitivity, while काटेकोर distinguishes it from the non-strict order used immediately before.
+
+**Authorities actually checked:**
+
+- `MR-P017` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 81 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P024` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश. https://shabdakosh.marathi.gov.in/ananya-glossary/7/t (`checked_supports`): short primary-source observation read; source bytes not preserved
+- `MR-P025` — मराठी विश्वकोश शब्दसंग्रह. https://shabdakosh.marathi.gov.in/ananya-glossary/41/r (`checked_supports`): short primary-source observation read; source bytes not preserved
+
+**Alternatives:**
+
+- सक्त रेषीय क्रम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- कठोर रेषीय क्रम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अपरावर्ती रेषीय क्रम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is काटेकोर the natural Marathi modifier for a strict order relation, or should सक्त be preferred?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T230-OLP-0170-B006` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:13-27` | `mr/content/first-order-logic/models-theories/theories.tex:13-27` | pending |
+
+## T231 — group / group theory (algebra)
+
+**Chosen rendering/action:** गट / गट सिद्धांत
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P106 directly defines an algebraic गट from a set and a binary operation and uses गट सिद्धांत. The OpenLogic formulas locally fix right identity, associativity and right inverses as an equivalent first-order group axiomatization.
+
+**Rationale:** MR-P106 directly defines an algebraic गट from a set and a binary operation and uses गट सिद्धांत. The OpenLogic formulas locally fix right identity, associativity and right inverses as an equivalent first-order group axiomatization.
+
+**Authorities actually checked:**
+
+- `MR-P026` — गट सिद्धांत. https://vishwakosh.marathi.gov.in/21196/ (`checked_supports`): short primary-source observation read; source bytes not preserved
+- `MR-P106` — गट सिद्धांत. https://vishwakosh.marathi.gov.in/21196/ (`checked_supports`): Official Marathi Vishwakosh page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article supports terminology rather than the exact OpenLogic formula set.
+
+**Alternatives:**
+
+- समूह / समूह सिद्धांत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- बीजगणितीय गट / गट उपपत्ती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the edition follow the authoritative Vishwakosh headword गट throughout abstract algebra?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T231-OLP-0170-B007` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:29-38` | `mr/content/first-order-logic/models-theories/theories.tex:29-38` | pending |
+
+## T232 — Peano arithmetic
+
+**Chosen rendering/action:** पेआनो अंकगणित
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P107 directly uses the Marathi name form पेआनो and links his axiomatic treatment with arithmetic and induction. अंकगणित is established Marathi mathematical usage; the frozen formulas control the particular first-order theory here.
+
+**Rationale:** MR-P107 directly uses the Marathi name form पेआनो and links his axiomatic treatment with arithmetic and induction. अंकगणित is established Marathi mathematical usage; the frozen formulas control the particular first-order theory here.
+
+**Authorities actually checked:**
+
+- `MR-P035` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Primary official Marathi Vishwakosh page read through web open. Limitation: Observation hash is not an origin-page hash; the article's broader historical claim is not imported as chapter content.
+- `MR-P107` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article supports terminology and historical association, not every formal clause.
+
+**Alternatives:**
+
+- पेआनोचे अंकगणित — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- पेआनो अंकगणितीय उपपत्ती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- पीनो अंकगणित — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the section use the compact पेआनो अंकगणित or the possessive पेआनोचे अंकगणित?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T232-OLP-0170-B008` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:40-57` | `mr/content/first-order-logic/models-theories/theories.tex:40-57` | pending |
+
+## T233 — induction schema
+
+**Chosen rendering/action:** विगमन-रूपबंध
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The canon directly supports गणितीय विगमन, and the edition uses रूपबंध for axiom and sentence schema. OpenLogic identifies the infinitely many formulas of the displayed pattern as one schema, so the compound preserves that object-language/metalinguistic distinction.
+
+**Rationale:** The canon directly supports गणितीय विगमन, and the edition uses रूपबंध for axiom and sentence schema. OpenLogic identifies the infinitely many formulas of the displayed pattern as one schema, so the compound preserves that object-language/metalinguistic distinction.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P061` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — M glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/m (`checked_supports`): Primary Government of Maharashtra philosophy and logic glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the exact arithmetical-induction phrase is compositional.
+- `MR-P080` — गणितीय विगमन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21278/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: The article describes but does not explicitly name strong induction; OpenLogic states the exact hypothesis.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
+- `MR-P107` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article supports terminology and historical association, not every formal clause.
+
+**Alternatives:**
+
+- विगमन-योजना — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- विगमनाचे अधिस्वयंसिद्धक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- विगमन स्वयंसिद्धक-रूपबंध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is विगमन-रूपबंध sufficiently clear for the induction schema, or should the axiom connection be explicit in the term?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T233-OLP-0170-B008` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:40-57` | `mr/content/first-order-logic/models-theories/theories.tex:40-57` | pending |
+
+## T234 — pure set / urelement
+
+**Chosen rendering/action:** शुद्ध संच / मूलघटक
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The set and element terms are directly supported. OpenLogic defines purity recursively and defines an urelement negatively as an object that is not itself a set; मूलघटक makes that primitive-object role explicit without treating it as a member of every set.
+
+**Rationale:** The set and element terms are directly supported. OpenLogic defines purity recursively and defines an urelement negatively as an object that is not itself a set; मूलघटक makes that primitive-object role explicit without treating it as a member of every set.
+
+**Authorities actually checked:**
+
+- `MR-P001` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 2 (`checked_supports`): visually-read-page-image
+- `MR-P002` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 2 (`checked_supports`): visually-read-page-image
+- `MR-P003` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 4 (`checked_supports`): visually-read-page-image
+- `MR-P011` — MR-C004. https://vishwakosh.marathi.gov.in/34075/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+
+**Alternatives:**
+
+- निर्भेळ संच / मूलवस्तू — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- विशुद्ध संच / अ-संच घटक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- शुद्ध संच / उरघटक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is मूलघटक a clear Marathi set-theory label for an urelement, distinct from an ordinary member of a set?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T234-OLP-0170-B010` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:62-69` | `mr/content/first-order-logic/models-theories/theories.tex:62-68` | pending |
+
+## T235 — naive comprehension scheme
+
+**Chosen rendering/action:** अनौपचारिक गुणधर्माधारित संचरचना-रूपबंध
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The edition's comprehension decision identifies the operation as set formation by a property, and its naive-set-theory decision uses अनौपचारिक to avoid implying simple-mindedness. The displayed unrestricted formula and Russell substitution define the scheme and explain why it makes the theory unsatisfiable.
+
+**Rationale:** The edition's comprehension decision identifies the operation as set formation by a property, and its naive-set-theory decision uses अनौपचारिक to avoid implying simple-mindedness. The displayed unrestricted formula and Russell substitution define the scheme and explain why it makes the theory unsatisfiable.
+
+**Authorities actually checked:**
+
+- `MR-P002` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 2 (`checked_supports`): visually-read-page-image
+- `MR-P012` — MR-C005. https://vishwakosh.marathi.gov.in/32772/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+
+**Alternatives:**
+
+- भोळा संचग्रहण-रूपबंध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अनिर्बंध गुणधर्माधारित संचरचना-रूपबंध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अनौपचारिक आकलन-योजना — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does अनौपचारिक गुणधर्माधारित संचरचना-रूपबंध remain readable while distinguishing unrestricted comprehension from ordinary set-builder notation?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T235-OLP-0170-B012` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:90-100` | `mr/content/first-order-logic/models-theories/theories.tex:88-99` | pending |
+| `T235-OLP-0172-B013` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:149-171` | `mr/content/first-order-logic/models-theories/set-theory.tex:147-169` | pending |
+
+## T236 — mereology / parthood / proper and improper part
+
+**Chosen rendering/action:** अवयवमीमांसा / अवयवत्व / उचित आणि अनुचित अवयव
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+
+**Intended sense:** No exact Marathi specialist attestation was located in the bounded search. The source defines अवयवत्व by a displayed partial-order relation and explains proper versus improper parts through self-parthood and distinctness; अवयवमीमांसा transparently names the philosophical theory of parts.
+
+**Rationale:** No exact Marathi specialist attestation was located in the bounded search. The source defines अवयवत्व by a displayed partial-order relation and explains proper versus improper parts through self-parthood and distinctness; अवयवमीमांसा transparently names the philosophical theory of parts.
+
+**Authorities actually checked:**
+
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P023` — गणितशास्त्र परिभाषा कोश. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): short primary-source observation read; source bytes not preserved
+- `MR-P072` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — D glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/d (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- भागशास्त्र / भागत्व / खरा आणि अयोग्य भाग — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अंशमीमांसा / अंशत्व / उचित आणि स्वयं-अवयव — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अवयव-समग्र उपपत्ती / अवयवसंबंध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are अवयवमीमांसा and अवयवत्व natural Marathi philosophical terms for mereology and parthood, and should improper part be स्वयं-अवयव instead?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T236-OLP-0170-B013` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:102-106` | `mr/content/first-order-logic/models-theories/theories.tex:101-105` | pending |
+| `T236-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
+
+## T237 — mereological sum / fusion
+
+**Chosen rendering/action:** अवयवी संयोग
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+
+**Intended sense:** No exact native specialist headword was found. The displayed biconditional defines the object as the least common whole of two objects under parthood, while the prose treats sum and fusion as the same construction; अवयवी संयोग keeps it distinct from numerical addition and set union by context.
+
+**Rationale:** No exact native specialist headword was found. The displayed biconditional defines the object as the least common whole of two objects under parthood, while the prose treats sum and fusion as the same construction; अवयवी संयोग keeps it distinct from numerical addition and set union by context.
+
+**Authorities actually checked:**
+
+- `MR-P016` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 13 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P023` — गणितशास्त्र परिभाषा कोश. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): short primary-source observation read; source bytes not preserved
+- `MR-P072` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — D glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/d (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- अवयवमीमांसात्मक संयोग — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अवयव-संमीलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- भागांचा समग्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is अवयवी संयोग a clear term for mereological sum or fusion, or should संमीलन be used to avoid collision with set union?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T237-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
+
+## T238 — definable relation / definable set in a structure
+
+**Chosen rendering/action:** रचनेत परिभाष्य संबंध / परिभाष्य संच
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked canon supports the relation, structure, formula and defined-expression register. OpenLogic defines the notion extensionally through satisfaction under every assignment and then asks for formulas whose extensions are particular singleton, finite and cofinite sets.
+
+**Rationale:** The checked canon supports the relation, structure, formula and defined-expression register. OpenLogic defines the notion extensionally through satisfaction under every assignment and then asks for formulas whose extensions are particular singleton, finite and cofinite sets.
+
+**Authorities actually checked:**
+
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P023` — गणितशास्त्र परिभाषा कोश. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): short primary-source observation read; source bytes not preserved
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P072` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — D glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/d (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- रचनेत व्याख्येय संबंध / व्याख्येय संच — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सूत्राने परिभाषित संबंध / परिभाषित संच — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is the compact adjective परिभाष्य natural for model-theoretic definability, or should the edition use the fuller सूत्राने परिभाषित करता येणारा?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T238-OLP-0171-B005` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:11-12` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:11-12` | pending |
+| `T238-OLP-0171-B006` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | pending |
+| `T238-OLP-0171-B007` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:35-40` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:35-40` | pending |
+| `T238-OLP-0171-B008` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | pending |
+| `T238-OLP-0171-B009` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:55-69` | pending |
+| `T238-OLP-0171-B010` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80` | pending |
+| `T238-OLP-0171-B012` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:90-99` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:92-101` | pending |
+| `T238-OLP-0171-B013` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120` | pending |
+| `T238-OLP-0172-B007` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:31-55` | `mr/content/first-order-logic/models-theories/set-theory.tex:30-54` | pending |
+
+## T239 — divides evenly / multiple / prime number
+
+**Chosen rendering/action:** निःशेष भाग जाणे / पटीत संख्या / अविभाज्य संख्या
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P108 directly defines अविभाज्य संख्या and repeatedly uses भाग जाणे and निःशेष भाग जाणे for divisibility; MR-P106 independently uses the latter phrasing in Lagrange's theorem. The source parenthetical fixes multiple as the reciprocal relation, so पटीत संख्या is definition-controlled.
+
+**Rationale:** MR-P108 directly defines अविभाज्य संख्या and repeatedly uses भाग जाणे and निःशेष भाग जाणे for divisibility; MR-P106 independently uses the latter phrasing in Lagrange's theorem. The source parenthetical fixes multiple as the reciprocal relation, so पटीत संख्या is definition-controlled.
+
+**Authorities actually checked:**
+
+- `MR-P106` — गट सिद्धांत. https://vishwakosh.marathi.gov.in/21196/ (`checked_supports`): Official Marathi Vishwakosh page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article supports terminology rather than the exact OpenLogic formula set.
+- `MR-P108` — अविभाज्य संख्या — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26519/ (`checked_supports`): Official Marathi Vishwakosh page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article is ordinary number theory rather than model theory.
+
+**Alternatives:**
+
+- विभाजित करणे / पट / मूळ संख्या — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- पूर्ण भाग जाणे / गुणित / अभाज्य संख्या — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is पटीत संख्या the clearest Marathi noun for a multiple in this elementary definability exercise?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T239-OLP-0171-B011` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:80-88` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:82-90` | pending |
+
+## T240 — Zermelo–Fraenkel set theory with Choice / ZFC
+
+**Chosen rendering/action:** निवडीच्या स्वयंसिद्धकासह झर्मेलो--फ्रेंकेल संच उपपत्ती / ZFC
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The edition already supports set-theory, axiom and choice terminology. No authoritative Marathi expansion of ZFC was located in the bounded search, so the mathematicians' names are transliterated and the standard acronym is preserved; the source explains the system's role rather than relying on the label alone.
+
+**Rationale:** The edition already supports set-theory, axiom and choice terminology. No authoritative Marathi expansion of ZFC was located in the bounded search, so the mathematicians' names are transliterated and the standard acronym is preserved; the source explains the system's role rather than relying on the label alone.
+
+**Authorities actually checked:**
+
+- `MR-P002` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 2 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P055` — गणितशास्त्र परिभाषा कोश — M glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/M (`checked_supports`): Primary official Government of Maharashtra mathematics glossary read through web open. Limitation: Observation hash is not an origin-page hash.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
+
+**Alternatives:**
+
+- निवड-स्वयंसिद्धकयुक्त झर्मेलो--फ्रेंकेल संचसिद्धान्त — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- झर्मेलो--फ्रँकेल संच उपपत्ती व निवडीचे स्वयंसिद्धक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is झर्मेलो--फ्रेंकेल the preferred Marathi spelling of the two names, and should संच उपपत्ती or संचसिद्धान्त be used in the expanded label?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T240-OLP-0172-B005` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:11-11` | `mr/content/first-order-logic/models-theories/set-theory.tex:11-11` | pending |
+| `T240-OLP-0172-B006` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:13-29` | `mr/content/first-order-logic/models-theories/set-theory.tex:13-28` | pending |
+| `T240-OLP-0172-B008` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:57-71` | `mr/content/first-order-logic/models-theories/set-theory.tex:56-68` | pending |
+| `T240-OLP-0172-B009` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:73-90` | `mr/content/first-order-logic/models-theories/set-theory.tex:70-86` | pending |
+| `T240-OLP-0172-B013` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:149-171` | `mr/content/first-order-logic/models-theories/set-theory.tex:147-169` | pending |
+
+## T241 — separation principle / separation schema (set theory)
+
+**Chosen rendering/action:** विभक्तीकरण तत्त्व / विभक्तीकरण-रूपबंध
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+
+**Intended sense:** No exact Marathi specialist headword was found in the bounded search. OpenLogic displays the restricted comprehension clause explicitly: the defining formula selects only elements already in a given set z, so विभक्तीकरण names separation into a subset without implying unrestricted set formation.
+
+**Rationale:** No exact Marathi specialist headword was found in the bounded search. OpenLogic displays the restricted comprehension clause explicitly: the defining formula selects only elements already in a given set z, so विभक्तीकरण names separation into a subset without implying unrestricted set formation.
+
+**Authorities actually checked:**
+
+- `MR-P002` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 2 (`checked_supports`): visually-read-page-image
+- `MR-P012` — MR-C005. https://vishwakosh.marathi.gov.in/32772/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
+
+**Alternatives:**
+
+- विलगीकरण तत्त्व / विलगीकरण-रूपबंध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- पृथक्करण स्वयंसिद्धक-रूपबंध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- निर्दिष्टीकरण तत्त्व — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is विभक्तीकरण the natural Marathi set-theory term for Separation, or is विलगीकरण conventional?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T241-OLP-0172-B013` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:149-171` | `mr/content/first-order-logic/models-theories/set-theory.tex:147-169` | pending |
+
+## T242 — total relation / functional relation (function graph)
+
+**Chosen rendering/action:** सर्वत्र परिभाषित संबंध / एकमूल्यी संबंध
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The edition already uses सर्वत्र परिभाषित for a total function. The source now defines the graph conditions extensionally: every input has some output, and any two outputs for the same input are equal; एकमूल्यी states the second condition without conflating it with an injective function.
+
+**Rationale:** The edition already uses सर्वत्र परिभाषित for a total function. The source now defines the graph conditions extensionally: every input has some output, and any two outputs for the same input are equal; एकमूल्यी states the second condition without conflating it with an injective function.
+
+**Authorities actually checked:**
+
+- `MR-P005` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 7 (`checked_supports`): visually-read-page-image
+- `MR-P017` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 81 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P023` — गणितशास्त्र परिभाषा कोश. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): short primary-source observation read; source bytes not preserved
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+
+**Alternatives:**
+
+- पूर्ण संबंध / फलनीय संबंध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रत्येक आदानावर परिभाषित / एकफलित संबंध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is एकमूल्यी संबंध the clearest Marathi term for a functional relation, distinct from an injective one-to-one function?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T242-OLP-0172-B011` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:112-129` | `mr/content/first-order-logic/models-theories/set-theory.tex:108-127` | pending |
+
+## T243 — Cantor's theorem (no injection from a power set into its base set)
+
+**Chosen rendering/action:** कँटरचे प्रमेय
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The edition's verified Cantor name form, power-set and one-to-one-function terminology combine transparently. The displayed sentence fixes the exact direction here as the nonexistence of an injection from Pow(X) to X.
+
+**Rationale:** The edition's verified Cantor name form, power-set and one-to-one-function terminology combine transparently. The displayed sentence fixes the exact direction here as the nonexistence of an injection from Pow(X) to X.
+
+**Authorities actually checked:**
+
+- `MR-P001` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 2 (`checked_supports`): visually-read-page-image
+- `MR-P002` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 2 (`checked_supports`): visually-read-page-image
+- `MR-P031` — argument — मराठी शब्दकोश. https://shabdakosh.marathi.gov.in/node/326273 (`checked_supports`): Consulted for this decision. Limitation: Short indexed dictionary observation, not an original-byte source. No claim that this attests all input/output vocabulary.
+- `MR-P033` — भौतिकशास्त्र पारिभाषिक शब्दावली — enumeration. https://shabdakosh.marathi.gov.in/ananya-glossary/33/e (`checked_supports`): Consulted for this decision. Limitation: Short indexed lexical observation; no original HTML hash, no independent attestation of effective enumeration.
+- `MR-P041` — गणितशास्त्र परिभाषा कोश — O glossary. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/9/o (`checked_supports`): Primary official Government of Maharashtra mathematics glossary read through web open. Limitation: Observation hash is not an origin-page hash.
+
+**Alternatives:**
+
+- कँटर प्रमेय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- कँटरचे घातसंच प्रमेय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- कँटरचा निष्कर्ष — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should this theorem be given the bare established-name form कँटरचे प्रमेय or the more explicit कँटरचे घातसंच प्रमेय?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T243-OLP-0172-B012` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:131-147` | `mr/content/first-order-logic/models-theories/set-theory.tex:129-145` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -18098,6 +18900,31 @@ Coverage: 163/722 source units through OLP-0166; 324 applied decisions; 9,938 oc
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLFOL-023-OLP-0165` | `OLP-0165` |  | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:105-109` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:108-114` | pending |
+
+## OLFOL-024 — confirmed-frozen-source-missing object-language variable macro with documented formula projection
+
+**Chosen rendering/action:** Restored the object-language variable macro on the final v_2 in Marathi, placed adjacent reader note OLFOL-024 and added a unit-specific QA projection that reconstructs the frozen raw v_2 solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** In the second formula defining strict less-than, the final occurrence of v_2 lacks the object-language variable macro used on every other displayed variable occurrence in the paragraph. The raw identifier may render similarly but is not encoded as the same object-language symbol.
+
+**Rationale:** In the second formula defining strict less-than, the final occurrence of v_2 lacks the object-language variable macro used on every other displayed variable occurrence in the paragraph. The raw identifier may render similarly but is not encoded as the same object-language symbol. Chosen action: Restored the object-language variable macro on the final v_2 in Marathi, placed adjacent reader note OLFOL-024 and added a unit-specific QA projection that reconstructs the frozen raw v_2 solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-024-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-024. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve one raw TeX variable occurrence amid otherwise explicit object-language variables — `rejected`: Not chosen; the source finding and recorded action control.
+- Remove the object-language macro from every other occurrence and weaken the source notation consistently — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired formula now encode both free variables with the same object-language notation?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-024-OLP-0171` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:62-64` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:62-66` | pending |
 
 ## Deferred prospective decisions
 
