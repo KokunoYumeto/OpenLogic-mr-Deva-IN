@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 28 urgent/high decisions and
-1126 current occurrences. Normal and low items remain in the full index.
+1137 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -113,6 +113,7 @@ This view contains 28 urgent/high decisions and
 | `T013-OLP-0111-B007` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | 18-23 | 18-22 | 154 |
 | `T013-OLP-0111-B008` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | 25-28 | 24-27 | 154 |
 | `T013-OLP-0111-B009` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | 30-43 | 29-43 | 154 |
+| `T013-OLP-0124-B013` | `OLP-0124` |  | 87-107 | 86-109 | pending |
 
 ## T014 — perfect number → परिपूर्ण संख्या
 
@@ -390,6 +391,7 @@ This view contains 28 urgent/high decisions and
 | `T029-OLP-0119-B014` | `OLP-0119` |  | 64-73 | 64-73 | pending |
 | `T029-OLP-0119-B015` | `OLP-0119` |  | 75-95 | 75-96 | pending |
 | `T029-OLP-0119-B016` | `OLP-0119` |  | 97-98 | 98-99 | pending |
+| `T029-OLP-0125-B008` | `OLP-0125` |  | 26-28 | 27-29 | pending |
 
 ## T039 — preorder / partial order / linear order → पूर्वक्रम / अंशतः क्रम / रेषीय क्रम
 
@@ -1117,6 +1119,14 @@ This view contains 28 urgent/high decisions and
 | `T155-OLP-0111-B008` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | 25-28 | 24-27 | 154 |
 | `T155-OLP-0111-B009` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | 30-43 | 29-43 | 154 |
 | `T155-OLP-0118-B006` | `OLP-0118` |  | 15-24 | 15-25 | pending |
+| `T155-OLP-0124-B005` | `OLP-0124` |  | 13-13 | 13-13 | pending |
+| `T155-OLP-0124-B006` | `OLP-0124` |  | 15-32 | 15-31 | pending |
+| `T155-OLP-0124-B007` | `OLP-0124` |  | 34-39 | 33-38 | pending |
+| `T155-OLP-0124-B008` | `OLP-0124` |  | 41-52 | 40-51 | pending |
+| `T155-OLP-0124-B009` | `OLP-0124` |  | 54-57 | 53-56 | pending |
+| `T155-OLP-0124-B015` | `OLP-0124` |  | 113-117 | 115-119 | pending |
+| `T155-OLP-0124-B016` | `OLP-0124` |  | 119-122 | 121-124 | pending |
+| `T155-OLP-0124-B018` | `OLP-0124` |  | 129-140 | 131-143 | pending |
 
 ## T174 — closed term → बंद पद
 
@@ -1197,6 +1207,7 @@ This view contains 28 urgent/high decisions and
 | `T174-OLP-0110-B007` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | 16-39 | 16-39 | 153–154 |
 | `T174-OLP-0110-B008` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | 41-54 | 41-54 | 153–154 |
 | `T174-OLP-0115-B006` | `OLP-0115` |  | 13-21 | 13-21 | pending |
+| `T174-OLP-0125-B007` | `OLP-0125` |  | 17-24 | 18-25 | pending |
 
 ## T178 — eigenvariable → आयगेन चर
 

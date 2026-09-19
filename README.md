@@ -42,9 +42,9 @@ messages, exact text and MathML preservation checks, complete link validation,
 and representative rendering in Calibre.
 
 Translation continues beyond the frozen OLP-0111 release boundary. The editable
-working tree now contains 118/722 units and 1,232 aligned content segments through
-OLP-0121. OLP-0112–OLP-0121 remain outside this reader and its downloadable source
-archive; OLP-0122 is next.
+working tree now contains 122/722 units and 1,270 aligned content segments through
+OLP-0125, completing the axiomatic-deduction chapter in source form. OLP-0112–OLP-0125
+remain outside this reader and its downloadable source archive; OLP-0126 is next.
 
 - **Current release:** [अकरा प्रकरणे — EPUB 3, PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8.1).
 - **EPUB 3:** [download the reflowable Marathi reader](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub).
@@ -103,8 +103,8 @@ The evidence also preserves the formal retraction of a
 shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The frozen
 94-unit source-checkpoint evidence explicitly distinguishes preserved original
 pages from hash-pinned short web observations whose origin HTML bytes were
-unavailable. The synchronized root provenance now covers 118 translated units and
-1,232 aligned segments through OLP-0121. A bounded independent model audit of
+unavailable. The synchronized root provenance now covers 122 translated units and
+1,270 aligned segments through OLP-0125. A bounded independent model audit of
 OLP-0071–OLP-0072 found no
 material mistranslation, prompted one standing-assumption clarification, and led
 to narrower overlapping choice locators plus separate confidence records for
@@ -170,13 +170,15 @@ derivability/consistency properties through finite closed-tableau transformation
 and Cut, with its bounded source repairs recorded in OLTAB-006–OLTAB-009.
 OLP-0107–OLP-0111 complete the published tableau chapter with propositional and
 quantified consequences, semantic soundness, identity rules, and soundness with
-identity. OLP-0112–OLP-0121 begin the unreleased axiomatic-deduction chapter:
+identity. OLP-0112–OLP-0125 complete the unreleased axiomatic-deduction chapter:
 they define derivations, propositional and quantified axioms and rules, give
 worked derivations, establish the proof-theoretic notions and both Deduction
-Theorems, and prove the first derivability and consistency results. OLAXD-001–003
-record two missing source parentheses and one omitted conditional conclusion.
+Theorems, prove the principal derivability and consistency results, establish
+semantic soundness, and add identity axioms. OLAXD-001–009 record bounded source
+repairs for formula punctuation, proof conclusions and citations, two protected
+formula markers, one inference justification, and stale chapter metadata.
 The records through OLP-0111 are included in the v0.8.1 reader and release archive;
-OLP-0112–OLP-0121 are post-release working units. OLP-0122 is next.
+OLP-0112–OLP-0125 are post-release working units. OLP-0126 is next.
 
 Canon originals are local research evidence. They are **not redistributed here**.
 Some government-site originals could not be downloaded; the index distinguishes

@@ -1,0 +1,146 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{sou}}
+      {\olfileid{pl}{axd}{sou}}
+
+\olsection{निर्दोषता}
+
+\begin{explain}
+स्वयंसिद्धकीय निगमनासारखी !!^a{derivation} पद्धत
+\emph{निर्दोष} असते, जर ती प्रत्यक्षात निष्पन्न न होणाऱ्या गोष्टी
+!!{derive} करू शकत नसेल. त्यामुळे निर्दोषता हा !!{derivation} पद्धतींसाठी
+हमी दिलेल्या सुरक्षिततेचा एक प्रकार आहे. कोणता सिद्धता-उपपत्तीय गुणधर्म
+विचारात आहे यावर अवलंबून, उदाहरणार्थ, आपल्याला पुढील गोष्टी हव्या असतात:
+\begin{enumerate}
+\item प्रत्येक !!{derivable}~$!A$ वैध असते;
+\item $!A$ हे इतर काही सूत्रे~$\Gamma$ यांच्यापासून !!{derivable} असेल,
+  तर ते त्यांचा तार्किक परिणामही असते;
+\item !!{formula}s चा संच~$\Gamma$ विसंगत असेल, तर तो अपूर्ततायोग्य असतो.
+\end{enumerate}
+हे !!a{derivation} पद्धतीचे महत्त्वाचे गुणधर्म आहेत. यांपैकी एखादा गुणधर्म
+खरा नसेल, तर !!{derivation} पद्धतीत दोष आहे---ती खूप जास्त गोष्टी
+!!{derive} करेल. म्हणून !!a{derivation} पद्धतीची निर्दोषता सिद्ध करणे अत्यंत
+महत्त्वाचे आहे.
+\end{explain}
+
+\begin{prop}
+  जर $!A$ हे स्वयंसिद्धक असेल, तर
+  \iftag{FOL}
+    {प्रत्येक !!{structure}~$\Struct{M}$ आणि चल-विन्यास~$s$ साठी $\Sat{M}{!A}[s]$.}
+    {प्रत्येक !!{valuation}~$\pAssign{v}$ साठी $\pSat{v}{!A}$.}
+\end{prop}
+
+\begin{proof}
+\iftag{FOL}{सर्व स्वयंसिद्धके वैध आहेत हे तपासावे लागते. उदाहरणार्थ,
+  \olref[qua]{ax:q1} चे प्रकरण पाहू: $t$ हे $!A$ मध्ये $x$ साठी
+  !!{free for} आहे असे समजा आणि
+  $\Sat{M}{\lforall[x][!A]}[s]$ असे गृहीत धरा. मग पूर्ततेच्या व्याख्येनुसार
+  प्रत्येक $\varAssign{s'}{s}{x}$ साठी $\Sat{M}{!A}[s']$, आणि विशेषतः
+  $s'(x) = \Value{t}{M}[s]$ असताना हे खरे आहे.
+  \olref[syn][ext]{prop:ext-formulas} नुसार
+  $\Sat{M}{\Subst{!A}{t}{x}}[s]$. यावरून
+  $\Sat{M}{(\lforall[x][!A] \lif \Subst{!A}{t}{x})}[s]$ हे सिद्ध होते.}{प्रत्येक
+  स्वयंसिद्धक सर्वतः सत्य सूत्र आहे हे तपासण्यासाठी त्याचे सत्यता-कोष्टक करा.}
+\end{proof}
+
+\begin{thm}[निर्दोषता]
+\ollabel{thm:soundness}
+जर $\Gamma \Proves !A$, तर $\Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+$\Gamma$ पासून $!A$ च्या !!{derivation} च्या लांबीवर विगमन करू. अनुमानांनी
+समर्थित कोणत्याही पायऱ्या नसतील, तर !!{derivation} मधील सर्व !!{formula}s
+ही स्वयंसिद्धकांची दृष्टांते असतात किंवा~$\Gamma$ मध्ये असतात. आधीच्या
+विधानानुसार सर्व स्वयंसिद्धके \iftag{FOL}{वैध}{सर्वतः सत्य सूत्रे} आहेत;
+म्हणून $!A$ हे स्वयंसिद्धक असेल, तर $\Gamma \Entails !A$. जर
+$!A \in \Gamma$, तर स्पष्टपणे $\Gamma \Entails !A$.
+
+जर~$!A$ च्या !!{derivation} मधील शेवटची पायरी विध्यात्मक अनुमानाने समर्थित
+असेल, तर त्या !!{derivation} मध्ये $!B$ आणि $!B \lif !A$ ही !!{formula}s
+असतात; आणि त्या !!{formula}s वर संपणाऱ्या !!{derivation} च्या भागांना विगमन
+गृहीतक लागू होते (कारण त्यांच्यात अनुमानाने समर्थित किमान एक पायरी कमी
+असते). म्हणून विगमन गृहीतकानुसार $\Gamma \Entails !B$ आणि
+$\Gamma \Entails !B \lif !A$. मग
+\iftag{FOL}
+      {\olref[syn][sem]{thm:sem-deduction}}
+      {\olref[pl][syn][sem]{thm:sem-deduction}}
+नुसार $\Gamma \Entails !A$.
+
+\iftag{FOL}{आता शेवटची पायरी \QR ने समर्थित आहे असे समजा. मग त्या पायरीचे
+रूप $!C \lif \lforall[x][!B(x)]$ असते आणि तिच्याआधीची पायरी
+$!C \lif !B(c)$ असते; येथे $c$ हे $\Gamma$, $!C$ किंवा
+$\lforall[x][B(x)]$ यांमध्ये येत नाही. विगमन गृहीतकानुसार
+$\Gamma \Entails !C \lif !B(c)$.
+\olref[syn][sem]{thm:sem-deduction} नुसार $\Gamma \cup \{!C\} \Entails
+!B(c)$.
+%READERNOTE{OLAXD-007: गोठवलेल्या इंग्रजी मजकुरातील QR निष्कर्षाच्या संख्यापक-व्याप्तीत B(x) आधी आवश्यक उद्गारचिन्ह सुटले आहे. मराठीत ते !B(x) असे पुनर्स्थापित केले असून गोठवलेले इंग्रजी बाइट्स बदललेले नाहीत.}
+
+$\Sat{M}{\Gamma \cup
+  \{!C\}}$ अशी एखादी रचना~$\Struct{M}$ विचारात घ्या. आपल्याला
+$\Sat{M}{\lforall[x][!B(x)]}$ हे दाखवायचे आहे.
+$\lforall[x][!B(x)]$ हे !!a{sentence} असल्यामुळे याचा अर्थ प्रत्येक
+चल-विन्यास~$s$ साठी $\Sat{M}{!B(x)}[s]$ दाखवायचे आहे
+(\olref[syn][ass]{prop:sat-quant}). $\Gamma \cup \{!C\}$ मध्ये केवळ
+वाक्ये असल्यामुळे \olref[syn][sat]{defn:satisfaction} नुसार प्रत्येक
+$!D \in \Gamma$ साठी $\Sat{M}{!D}[s]$. $\Struct{M'}$ ही
+$\Struct{M}$ सारखीच रचना असू द्या, फक्त $\Assign{c}{M'} = s(x)$.
+$c$ हे~$\Gamma$ किंवा~$!C$ मध्ये येत नसल्यामुळे
+\olref[syn][ext]{cor:extensionality-sent} नुसार
+$\Sat{M'}{\Gamma \cup \{!C\}}$. $\Gamma \cup \{!C\}
+\Entails !B(c)$ असल्यामुळे $\Sat{M'}{!B(c)}$. $!B(c)$ हे !!a{sentence}
+असल्यामुळे \olref[syn][ass]{prop:sentence-sat-true} नुसार
+$\Sat{M'}{!B(c)}[s]$. \olref[syn][ext]{prop:ext-formulas} नुसार
+$\Sat{M'}{!B(x)}[s]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat{M'}{!B(c)}[s]$ (लक्षात घ्या की $!B(c)$ म्हणजे
+$\Subst{!B(x)}{c}{x}$). म्हणून $\Sat{M'}{!B(x)}[s]$. $c$ हे~$!B(x)$
+मध्ये येत नसल्यामुळे \olref[syn][ext]{prop:extensionality} नुसार
+$\Sat{M}{!B(x)}[s]$. पण $s$ हा स्वेच्छ चल-विन्यास होता, म्हणून
+$\Sat{M}{\lforall[x][!B(x)]}$. त्यामुळे $\Gamma \cup \{!C\} \Entails
+\lforall[x][!B(x)]$. \olref[syn][sem]{thm:sem-deduction} नुसार
+$\Gamma \Entails !C \lif \lforall[x][!B(x)]$.
+%READERNOTE{OLAXD-008: गोठवलेल्या इंग्रजी मजकुरातील एका पूर्तता-विधानात B(c) आधी आवश्यक उद्गारचिन्ह सुटले आहे. मराठीत ते !B(c) असे पुनर्स्थापित केले असून गोठवलेले इंग्रजी बाइट्स बदललेले नाहीत.}
+
+$!A$ हे \QR ने समर्थित पण $\lexists[x][!B(x)] \lif !C$ या रूपाचे असलेले
+प्रकरण सरावासाठी सोडले आहे.}{}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+  \olref[fol][axd][sou]{thm:soundness} ची सिद्धता पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+जर $\Proves !A$, तर $!A$ हे \iftag{FOL}{वैध}{सर्वतः सत्य सूत्र} आहे.
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:consistency-soundness}
+जर $\Gamma$ पूर्ततायोग्य असेल, तर तो सुसंगत आहे.
+\end{cor}
+
+\begin{proof}
+प्रतिलोम विधान सिद्ध करू. $\Gamma$ सुसंगत नाही असे समजा. मग
+$\Gamma \Proves \lfalse$, म्हणजे~$\Gamma$ पासून $\lfalse$ ची
+!!a{derivation} असते. \olref{thm:soundness} नुसार $\Gamma$ पूर्ण करणाऱ्या
+प्रत्येक
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+ने~$\lfalse$ पूर्ण केले पाहिजे. प्रत्येक
+\iftag{FOL}{!!{structure}~$\Struct{M}$ साठी
+  $\Sat/{M}{\lfalse}$}{!!{valuation}~$\pAssign{v}$ साठी
+  $\pSat/{v}{\lfalse}$} असल्यामुळे कोणतीही
+\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} $\Gamma$ पूर्ण करू शकत नाही;
+म्हणजे $\Gamma$ अपूर्ततायोग्य आहे.
+\end{proof}
+
+
+\end{document}

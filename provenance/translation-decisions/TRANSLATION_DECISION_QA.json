@@ -17,24 +17,24 @@
     "instance_errors": 0
   },
   "coverage": {
-    "source_units": 118,
+    "source_units": 122,
     "total_source_units": 722,
     "complete_chapters": 11,
-    "canonical_decisions_with_occurrences": 254,
-    "legacy_decisions_total": 254,
+    "canonical_decisions_with_occurrences": 260,
+    "legacy_decisions_total": 260,
     "legacy_prospective_decisions_deferred_without_fabricated_occurrences": [],
-    "occurrences": 7402,
-    "high_priority_occurrences": 1126,
-    "normal_priority_occurrences": 3374,
-    "low_priority_occurrences": 2902,
+    "occurrences": 7565,
+    "high_priority_occurrences": 1137,
+    "normal_priority_occurrences": 3457,
+    "low_priority_occurrences": 2971,
     "reader_locators_available": 7076,
-    "reader_locators_pending": 326
+    "reader_locators_pending": 489
   },
   "exactness_checks": {
     "globally_unique_occurrence_ids": true,
-    "source_file_hashes_recomputed": 7402,
-    "target_file_hashes_recomputed": 7402,
-    "line_and_utf8_byte_spans_reproduced_exact_excerpts": 14804,
+    "source_file_hashes_recomputed": 7565,
+    "target_file_hashes_recomputed": 7565,
+    "line_and_utf8_byte_spans_reproduced_exact_excerpts": 15130,
     "csv_rows_equal_occurrences": true,
     "legacy_occurrence_ids_preserved": true,
     "unknown_pages_guessed": 0,
@@ -42,19 +42,19 @@
   },
   "inputs": {
     "provenance/EXPERT_REVIEW_DECISIONS.jsonl": {
-      "bytes": 1557182,
-      "sha256": "c6386fbae4af11e77fd4099dea721f2a70851bbd12e8b7ad0f0a2b4a14473ef7",
-      "records": 254
+      "bytes": 1591099,
+      "sha256": "0c4f8109489791a155e4874a10e7e02613be7b69ea0d3a453ccf13cb1b2db02b",
+      "records": 260
     },
     "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl": {
-      "bytes": 21344749,
-      "sha256": "7d8d0a7f9339e2773f7556209e043198d2d7a79ae19b94a219f320e45e6edc8a",
-      "records": 7402
+      "bytes": 21828312,
+      "sha256": "25969499c49c838fb10188437004c4311c75e3da31e2481a5de488ac79400986",
+      "records": 7565
     },
     "provenance/SEGMENT_CANON_USE.jsonl": {
-      "bytes": 1900082,
-      "sha256": "e0ff380a4f107185df02fa9d8453c7b9a82a9fa44eebb66f699472f24e691470",
-      "records": 1232
+      "bytes": 1957779,
+      "sha256": "23e3f031fa4d47314c7148f537e6191ca66a1bb09a910de39db7f840dde9e620",
+      "records": 1270
     },
     "tools/build_translation_decisions.py": {
       "bytes": 36901,
@@ -64,23 +64,23 @@
   "outputs": {
     "START_HERE.md": {
       "bytes": 1982,
-      "sha256": "c87a43e25e6b92aa169081bb58c241fe1ddd871263179ce7619dd79892126e58"
+      "sha256": "c7ce76b695825a7a9124d29f78485e2e86f672e6cb8a098bca94ef54c756ee36"
     },
     "TRANSLATION_DECISIONS_FULL.md": {
-      "bytes": 2486747,
-      "sha256": "7a11860c8674868aada2b42a81d7f020109ad1182f3a69641d93faaf0d0dac4b"
+      "bytes": 2535283,
+      "sha256": "abf24bc0bf81776fa64cc8a91b74d3e9558be7069a76196657e2d64db13a7538"
     },
     "PRIORITY_REVIEW.md": {
-      "bytes": 149468,
-      "sha256": "5656877eb70d87b1837d2e005d3926f42633d41699ff4b900470a01b1ba30958"
+      "bytes": 150219,
+      "sha256": "cd3910185abe89f616de9cc15ba88f46603b49670eca0c6e1fa88964957f9a87"
     },
     "DECISION_OCCURRENCES.csv": {
-      "bytes": 20335514,
-      "sha256": "ab2ec00f1c9548389f2d403c2a24e48cccd7fa6e3efcafe335604dba002e29b8"
+      "bytes": 20707718,
+      "sha256": "ee71c5f8a2600a18eefb6f77ee8939057bbeb45cfd39e9491943592143433578"
     },
     "DECISIONS.json": {
-      "bytes": 41383387,
-      "sha256": "3a26541f3e3e520a8922bccfe95ddb193c71fdbc014c037a341a7790b450e041"
+      "bytes": 42204021,
+      "sha256": "1e862e05b7902fb5c5353b5692141ab87e37af5adf5eb7af584944be2d11fb52"
     },
     "translation-decision.schema.json": {
       "bytes": 10787,

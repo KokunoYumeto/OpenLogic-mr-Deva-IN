@@ -1,0 +1,58 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: identity
+%READERNOTE{OLAXD-009: गोठवलेल्या इंग्रजी स्रोताच्या अध्याय-शीर्ष टिप्पणीमध्ये जुने axiomatic-proofs नाव आहे; मार्ग आणि olfileid यांच्याशी सुसंगत असे axiomatic-deduction नाव येथे वापरले आहे.}
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{ide}
+
+\olsection{\usetoken{P}{derivation} सह \usetoken{S}{identity}}
+
+!!{derivation}s मध्ये $\eq$ समाविष्ट करण्यासाठी आपण फक्त नवीन
+स्वयंसिद्धक-आकार जोडतो. !!{derivation} आणि $\Proves$ यांच्या व्याख्या
+तशाच राहतात; आता आपण नवीन स्वयंसिद्धकेही मान्य करतो.
+
+\begin{defn}[!!{identity} साठीची स्वयंसिद्धके]
+\begin{align}
+\ollabel{ax:id1} & \eq[t][t], \\
+\ollabel{ax:id2} & \eq[t_1][t_2] \lif (!B(t_1) \lif
+  !B(t_2)),
+\end{align}
+येथे $t$, $t_1$, $t_2$ ही कोणतीही बंद पदे आहेत.
+\end{defn}
+
+\begin{prop}\ollabel{prop:sound}
+  \olref{ax:id1} आणि \olref{ax:id2} ही स्वयंसिद्धके वैध आहेत.
+\end{prop}
+
+\begin{proof}
+  सराव.
+\end{proof}
+
+\begin{prob}
+\olref[fol][axd][ide]{prop:sound} सिद्ध करा.
+\end{prob}
+
+\begin{prop}\ollabel{prop:iden1}
+ कोणतेही पद $t$ आणि कोणताही संच~$\Gamma$ यांसाठी
+ $\Gamma \Proves \eq[t][t]$.
+\end{prop}
+
+\begin{prop}\ollabel{prop:iden2}
+  जर $\Gamma \Proves !A(t_1)$ आणि $\Gamma \Proves
+  \eq[t_1][t_2]$, तर $\Gamma \Proves !A(t_2)$.
+\end{prop}
+
+\begin{proof}
+पुढील !!{formula}
+\[
+(\eq[t_1][t_2] \lif (!A(t_1) \lif !A(t_2)))
+\]
+हा~\olref{ax:id2} चा दृष्टांत आहे. निष्कर्ष~\MP चे दोन उपयोग केल्यावर
+मिळतो.
+\end{proof}
+
+\end{document}

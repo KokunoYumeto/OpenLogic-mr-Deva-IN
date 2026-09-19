@@ -147,6 +147,18 @@ _DOCUMENTED_PROJECTIONS = {
          '& \\Proves ((!A \\land !C) \\lif \\lforall[x][!D(x)]) \\lif (!A \\lif (!C \\lif \\lforall[x][!D(x)]),\\\\'),
         ('म्हणजे $\\Gamma \\Proves !A \\lif !B$.', 'म्हणजे $\\Gamma \\Proves !B$.'),
     ],
+    'OLP-0122': [
+        ('\\olref[prp]{ax:land1} आणि \\olref[prp]{ax:land2}',
+         '\\olref[prp]{ax:land1} आणि \\olref[prp]{ax:land1}'),
+        ('\\olref[prp]{ax:lnot2} पासून $\\Proves',
+         '\\olref[prp]{ax:lnot1} पासून $\\Proves'),
+    ],
+    'OLP-0124': [
+        ('$!C \\lif \\lforall[x][!B(x)]$',
+         '$!C \\lif \\lforall[x][B(x)]$'),
+        ('\\Entails !B(c)$ असल्यामुळे $\\Sat{M\'}{!B(c)}$. $!B(c)$ हे',
+         '\\Entails !B(c)$ असल्यामुळे $\\Sat{M\'}{B(c)}$. $!B(c)$ हे'),
+    ],
 }
 
 

@@ -1,0 +1,87 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: provability-propositional
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{ppr}}
+      {\olfileid{pl}{axd}{ppr}}
+
+\olsection{\usetoken{S}{derivability} आणि विधानीय संयोजक}
+
+\begin{explain}
+  स्वयंसिद्धकीय निगमनाचा !!{derivability} संबंध~$\Proves$ हा विधानीय
+  संयोजकांशी संबंधित काही मूलभूत तथ्ये सिद्ध करण्यासाठी पुरेसा सामर्थ्यवान
+  आहे; उदाहरणार्थ, $!A \land !B \Proves !A$ आणि $!A, !A \lif !B
+  \Proves !B$ (विध्यात्मक अनुमान). ही तथ्ये संपूर्णता प्रमेयाच्या
+  सिद्धतेसाठी आवश्यक आहेत.
+\end{explain}
+
+\begin{prop}\ollabel{prop:provability-land}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-land-left} $!A \land !B \Proves
+    !A$ आणि $!A \land !B \Proves !B$ ही दोन्ही तथ्ये सत्य आहेत.
+  \item \ollabel{prop:provability-land-right} $!A, !B \Proves !A \land !B$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item \olref[prp]{ax:land1} आणि \olref[prp]{ax:land2} यांपासून,
+      अनुक्रमे विध्यात्मक अनुमान लावून.
+%READERNOTE{OLAXD-004: गोठवलेल्या इंग्रजी मजकुरात दुसरा संदर्भ चुकून पुन्हा ax:land1 असा आहे. दुसऱ्या संयुक्ताचे निगमन सिद्ध करण्यासाठी मराठीत तो ax:land2 असा दुरुस्त केला असून गोठवलेले इंग्रजी बाइट्स बदललेले नाहीत.}
+  \item \olref[prp]{ax:land3} पासून विध्यात्मक अनुमान दोनदा लावून.
+  \end{enumerate}
+\end{proof}
+
+
+\begin{prop}\ollabel{prop:provability-lor}
+  \begin{enumerate}
+  \item $!A \lor !B, \lnot !A, \lnot !B$ विसंगत आहे.
+  \item $!A \Proves !A \lor !B$ आणि $!B \Proves !A \lor !B$ ही दोन्ही
+    तथ्ये सत्य आहेत.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item \olref[prp]{ax:lnot2} पासून $\Proves \lnot !A \lif (!A
+    \lif \lfalse)$ आणि $\Proves \lnot !B \lif (!B \lif \lfalse)$
+    मिळतात. म्हणून निगमन प्रमेयाने $\{\lnot !A\} \Proves !A \lif
+    \lfalse$ आणि $\{\lnot !B\} \Proves !B \lif \lfalse$ मिळतात.
+    \olref[prp]{ax:lor3} पासून $\{\lnot !A, \lnot !B\} \Proves (!A
+    \lor !B) \lif \lfalse$ मिळते. निगमन प्रमेयाने $\{!A \lor !B,
+    \lnot !A, \lnot !B\} \Proves \lfalse$.
+%READERNOTE{OLAXD-005: गोठवलेल्या इंग्रजी मजकुरात पहिला संदर्भ ax:lnot1 असा आहे; पण दाखवलेली दोन्ही सूत्रे थेट ax:lnot2 ची उदाहरणे आहेत. मराठीत संदर्भ दुरुस्त केला असून गोठवलेले इंग्रजी बाइट्स बदललेले नाहीत.}
+  \item \olref[prp]{ax:lor1} आणि \olref[prp]{ax:lor2} यांपासून विध्यात्मक
+    अनुमानाने.
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-lif}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-lif-left} $!A, !A \lif !B \Proves !B$.
+  \item \ollabel{prop:provability-lif-right}
+    $\lnot !A \Proves !A \lif !B$ आणि $!B \Proves !A \lif !B$ ही दोन्ही
+    तथ्ये सत्य आहेत.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item आपण पुढील !!{derive} करू शकतो:
+    \begin{derivation}
+      1. & $!A$ & \Hyp\\
+      2. & $!A \lif !B$ & \Hyp\\
+      3. & $!B$ & 1, 2, \MP
+    \end{derivation}
+
+  \item अनुक्रमे \olref[prp]{ax:lnot2}, \olref[prp]{ax:lif1} आणि निगमन
+    प्रमेय वापरून.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

@@ -1,0 +1,52 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: provability-quantifiers
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{qpr}
+
+\olsection{\usetoken{S}{derivability} आणि संख्यापक}
+
+\begin{explain}
+  संपूर्णता प्रमेयासाठी या विभागात स्थापित केलेली~$\Proves$ संबंधी तथ्ये
+  स्वयंसिद्धकीय निगमनातून निष्पन्न होतात, हेही आवश्यक आहे.
+\end{explain}
+
+\begin{thm}
+\ollabel{thm:strong-generalization} जर $c$ हे $\Gamma$ किंवा $!A(x)$ मध्ये
+न येणारे !!a{constant} असेल आणि $\Gamma \Proves !A(c)$, तर $\Gamma
+\Proves \lforall[x][!A(x)]$.
+\end{thm}
+
+\begin{proof}
+निगमन प्रमेयाने $\Gamma \Proves \ltrue \lif !A(c)$. $c$ हे
+$\Gamma$ किंवा~$\top$ मध्ये येत नसल्यामुळे $\Gamma \Proves
+\ltrue \lif \lforall[x][!A(x)]$ मिळते. त्यानंतर सत्य स्थिरांकाचे
+स्वयंसिद्धक आणि विध्यात्मक अनुमान वापरून $\Gamma \Proves
+\lforall[x][!A(x)]$ मिळते.
+%READERNOTE{OLAXD-006: गोठवलेल्या इंग्रजी मजकुरात शेवटचे पाऊल पुन्हा निगमन प्रमेयाने मिळते असे म्हटले आहे. प्रत्यक्षात आधीच्या सशर्त निष्कर्षावर सत्य स्थिरांकाचे स्वयंसिद्धक आणि विध्यात्मक अनुमान लावल्यावर अपेक्षित निष्कर्ष मिळतो; मराठीत हे कारण स्पष्ट केले असून गोठवलेले इंग्रजी बाइट्स बदललेले नाहीत.}
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$!A(t) \Proves \lexists[x][!A(x)]$.}{}
+
+\tagitem{prvAll}{$\lforall[x][!A(x)] \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{\olref[qua]{ax:q2} आणि निगमन प्रमेय वापरून.}{}
+\tagitem{prvAll}{\olref[qua]{ax:q1} आणि निगमन प्रमेय वापरून.}{}
+\end{tagenumerate}
+\end{proof}
+
+\end{document}
