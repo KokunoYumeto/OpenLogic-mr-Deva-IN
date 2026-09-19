@@ -1,0 +1,102 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: free-vars-sentences
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{fvs}
+
+\olsection{मुक्त \printtoken{P}{variable} आणि \printtoken{P}{sentence}}
+
+\begin{defn}[!!a{variable} च्या मुक्त आस्थिती]
+\ollabel{defn:free-occ}
+!!a{formula} मधील !!a{variable} च्या \emph{मुक्त} आस्थिती पुढीलप्रमाणे
+विगमनाने परिभाषित केल्या जातात:
+\begin{enumerate}
+\item \indcase*{!A}{$!A$ आण्विक आहे}{$\indfrm$ मधील सर्व
+  !!{variable}-आस्थिती मुक्त असतात.}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\indfrm$ मधील मुक्त
+  !!{variable}-आस्थिती म्हणजे नेमक्या $!B$ मधील मुक्त आस्थिती.}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{$\indfrm$ मधील मुक्त
+  !!{variable}-आस्थिती म्हणजे $!B$ मधील आस्थिती आणि त्यांच्यासोबत
+  $!C$ मधील आस्थिती.}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{$\indfrm$ मधील मुक्त
+  !!{variable}-आस्थिती म्हणजे $!B$ मधील $x$ च्या आस्थिती सोडून इतर
+  सर्व मुक्त आस्थिती.}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{$\indfrm$ मधील मुक्त
+  !!{variable}-आस्थिती म्हणजे $!B$ मधील $x$ च्या आस्थिती सोडून इतर
+  सर्व मुक्त आस्थिती.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[बद्ध चरे]
+सूत्र~$!A$ मधील !!a{variable} ची आस्थिती मुक्त नसेल, तर ती
+\emph{बद्ध} असते.
+\end{defn}
+
+\begin{prob}
+\olref[fol][syn][fvs]{defn:free-occ} च्या धर्तीवर बद्ध चर-आस्थितींची
+विगमनाधारित व्याख्या द्या.
+\end{prob}
+
+\begin{defn}[व्याप्ती]
+\iftag{prvAll}{सूत्र~$!A$ मध्ये $\lforall[x][!B]$ ची एखाद्या उपसूत्राची
+  आस्थिती असेल, तर $!A$ मधील $!B$ च्या संबंधित आस्थितीला
+  $\lforall[x]$ च्या संबंधित आस्थितीची \emph{व्याप्ती} म्हणतात.
+  \iftag{prvEx}{$\lexists[x]$ साठीही त्याचप्रमाणे.}{}}{सूत्र~$!A$
+  मध्ये $\lexists[x][!B]$ ची एखाद्या उपसूत्राची आस्थिती असेल, तर
+  $!A$ मधील $!B$ च्या संबंधित आस्थितीला $\lexists[x]$ च्या संबंधित
+  आस्थितीची \emph{व्याप्ती} म्हणतात.}
+
+$!A$ मधील संख्यापकाच्या
+\iftag{prvAll}{$\lforall[x]$\iftag{prvEx}{ किंवा
+    $\lexists[x]$}{}}{$\lexists[x]$} या आस्थितीची व्याप्ती $!B$ असेल,
+तर $!B$ मधील $x$ च्या मुक्त आस्थिती
+\iftag{prvAll}{$\lforall[x][!B]$\iftag{prvEx}{ आणि
+$\lexists[x][!B]$}{}}{$\lexists[x][!B]$} मध्ये बद्ध असतात. या आस्थिती
+त्या उल्लेख केलेल्या संख्यापक-आस्थितीने \emph{बद्ध केल्या आहेत} असे
+आपण म्हणतो.
+\end{defn}
+
+\begin{ex}
+पुढील सूत्राचा विचार करा:
+\[
+\lexists[\Obj v_0][\underbrace{\Atom{\Obj A^2_0}{\Obj v_0,\Obj v_1}}_{!B}]
+\]
+$!B$ हे $\lexists[\Obj v_0]$ ची व्याप्ती दर्शवते. हा संख्यापक $!B$
+मधील $\Obj v_0$ ची आस्थिती बद्ध करतो; पण $\Obj v_1$ ची आस्थिती बद्ध
+करत नाही. म्हणून या बाबतीत $\Obj v_1$ हे मुक्त चर आहे.
+
+
+अधिक गुंतागुंतीच्या !!{formula}~$!A$ मध्ये हे कसे कार्य करते ते आता
+पाहू शकतो:
+\[
+\lforall[\Obj v_0][\underbrace{(\Atom{\Obj A^1_0}{\Obj v_0} \lif
+    \Atom{\Obj A^2_0}{\Obj v_0, \Obj v_1})}_{!B}] \lif \lexists[\Obj
+  v_1][\underbrace{(\Atom{\Obj A^2_1}{\Obj v_0, \Obj v_1} \lor \lforall[\Obj v_0][\overbrace{\lnot \Atom{\Obj A^1_1}{\Obj v_0}}^{!D}])}_{!C}]
+\]
+$!B$ ही पहिल्या $\lforall[\Obj v_0]$ ची व्याप्ती, $!C$ ही
+$\lexists[\Obj v_1]$ ची व्याप्ती आणि $!D$ ही दुसऱ्या
+$\lforall[\Obj v_0]$ ची व्याप्ती आहे. पहिले $\lforall[\Obj v_0]$ हे
+$!B$ मधील $\Obj v_0$ च्या आस्थिती बद्ध करते, $\lexists[\Obj v_1]$ हे
+$!C$ मधील $\Obj v_1$ ची आस्थिती बद्ध करते आणि दुसरे
+$\lforall[\Obj v_0]$ हे $!D$ मधील $\Obj v_0$ ची आस्थिती बद्ध करते.
+$\Obj v_1$ ची पहिली आस्थिती आणि $\Obj v_0$ ची चौथी आस्थिती $!A$ मध्ये
+मुक्त आहेत. $\Obj v_0$ ची शेवटची आस्थिती $!D$ मध्ये मुक्त, पण $!C$
+आणि~$!A$ मध्ये बद्ध आहे.
+\end{ex}
+
+\begin{defn}[वाक्य]
+!!^a{formula}~$!A$ मध्ये !!{variable}s च्या मुक्त आस्थिती नसतील तेव्हा
+आणि केवळ तेव्हाच ते \article{sentence} \emph{!!{sentence}} असते.
+\end{defn}
+
+% add examples!
+
+\end{document}

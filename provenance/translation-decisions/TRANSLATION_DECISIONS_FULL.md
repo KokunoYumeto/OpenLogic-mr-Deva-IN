@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 occurrences.
+Coverage: 155/722 source units through OLP-0158; 303 applied decisions; 9,280 occurrences.
 
 ## T001 — set
 
@@ -1799,6 +1799,8 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T011-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
 | `T011-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
 | `T011-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
+| `T011-OLP-0149-B004` | `OLP-0149` |  | `upstream/content/first-order-logic/syntax-and-semantics/syntax.tex:8-8` | `mr/content/first-order-logic/syntax-and-semantics/syntax.tex:8-8` | pending |
+| `T011-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
 
 ## T012 — semantics
 
@@ -1858,6 +1860,7 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T012-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
 | `T012-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
 | `T012-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
+| `T012-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
 
 ## T013 — model (model theory)
 
@@ -2106,6 +2109,15 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T015-OLP-0140-B009` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:75-86` | `mr/content/first-order-logic/introduction/first-order-logic.tex:77-90` | pending |
 | `T015-OLP-0141-B007` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:31-52` | `mr/content/first-order-logic/introduction/syntax.tex:33-54` | pending |
 | `T015-OLP-0142-B014` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:70-87` | `mr/content/first-order-logic/introduction/formulas.tex:71-89` | pending |
+| `T015-OLP-0155-B020` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:97-99` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:95-97` | pending |
+| `T015-OLP-0155-B022` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:107-109` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:105-107` | pending |
+| `T015-OLP-0156-B017` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:162-164` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:161-163` | pending |
+| `T015-OLP-0156-B018` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:166-168` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:165-167` | pending |
+| `T015-OLP-0156-B024` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:221-223` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:219-221` | pending |
+| `T015-OLP-0156-B025` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:225-229` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:223-227` | pending |
+| `T015-OLP-0156-B031` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:263-265` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:259-261` | pending |
+| `T015-OLP-0156-B032` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:267-269` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:263-265` | pending |
+| `T015-OLP-0157-B012` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | pending |
 
 ## T016 — if and only if
 
@@ -2743,6 +2755,12 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T023-OLP-0140-B006` | `OLP-0140` |  | `upstream/content/first-order-logic/introduction/first-order-logic.tex:13-31` | `mr/content/first-order-logic/introduction/first-order-logic.tex:13-31` | pending |
 | `T023-OLP-0141-B006` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:13-29` | `mr/content/first-order-logic/introduction/syntax.tex:13-31` | pending |
 | `T023-OLP-0142-B013` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:54-68` | `mr/content/first-order-logic/introduction/formulas.tex:54-69` | pending |
+| `T023-OLP-0156-B007` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:25-31` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:24-30` | pending |
+| `T023-OLP-0156-B009` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:40-49` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:39-49` | pending |
+| `T023-OLP-0156-B019` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:170-174` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:169-173` | pending |
+| `T023-OLP-0156-B020` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:176-180` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:175-179` | pending |
+| `T023-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
+| `T023-OLP-0156-B023` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:215-219` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:213-217` | pending |
 
 ## T024 — set difference
 
@@ -2961,6 +2979,8 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T027-OLP-0144-B008` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:29-52` | `mr/content/first-order-logic/introduction/sentences.tex:29-52` | pending |
 | `T027-OLP-0145-B008` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:38-46` | `mr/content/first-order-logic/introduction/semantic-notions.tex:39-48` | pending |
 | `T027-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
+| `T027-OLP-0156-B014` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:114-147` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:115-147` | pending |
+| `T027-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
 
 ## T028 — continuum
 
@@ -3336,6 +3356,9 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T031-OLP-0135-B016` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:169-182` | `mr/content/first-order-logic/completeness/compactness.tex:173-186` | pending |
 | `T031-OLP-0137-B008` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:33-38` | `mr/content/first-order-logic/completeness/downward-ls.tex:33-38` | pending |
 | `T031-OLP-0137-B009` | `OLP-0137` |  | `upstream/content/first-order-logic/completeness/downward-ls.tex:40-46` | `mr/content/first-order-logic/completeness/downward-ls.tex:40-46` | pending |
+| `T031-OLP-0151-B007` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:21-29` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:20-27` | pending |
+| `T031-OLP-0152-B012` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:54-55` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:53-54` | pending |
+| `T031-OLP-0152-B023` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:102-108` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:101-106` | pending |
 
 ## T032 — reflexive / irreflexive
 
@@ -3563,6 +3586,7 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T033-OLP-0110-B010` | `OLP-0110` | 11.12 टॅब्लो सह एकरूपता | `upstream/content/first-order-logic/tableaux/identity.tex:73-91` | `mr/content/first-order-logic/tableaux/identity.tex:73-91` | 153–154 |
 | `T033-OLP-0133-B007` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:35-55` | `mr/content/first-order-logic/completeness/identity.tex:34-54` | pending |
 | `T033-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
+| `T033-OLP-0155-B019` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:90-95` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:88-93` | pending |
 
 ## T034 — symmetric / anti-symmetric / asymmetric
 
@@ -4629,6 +4653,102 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T044-OLP-0148-B006` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | pending |
 | `T044-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
 | `T044-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
+| `T044-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
+| `T044-OLP-0151-B006` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-19` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-18` | pending |
+| `T044-OLP-0151-B016` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:106-116` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:101-110` | pending |
+| `T044-OLP-0152-B005` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:11-11` | pending |
+| `T044-OLP-0152-B006` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15` | pending |
+| `T044-OLP-0152-B009` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:41-46` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:40-45` | pending |
+| `T044-OLP-0152-B010` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:48-48` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:47-47` | pending |
+| `T044-OLP-0152-B011` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:50-52` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:49-51` | pending |
+| `T044-OLP-0152-B012` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:54-55` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:53-54` | pending |
+| `T044-OLP-0152-B013` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:57-58` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:56-57` | pending |
+| `T044-OLP-0152-B014` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:60-61` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:59-60` | pending |
+| `T044-OLP-0152-B015` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:63-64` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:62-63` | pending |
+| `T044-OLP-0152-B016` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:66-67` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:65-66` | pending |
+| `T044-OLP-0152-B017` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:69-70` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:68-69` | pending |
+| `T044-OLP-0152-B018` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:72-73` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:71-72` | pending |
+| `T044-OLP-0152-B019` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:75-76` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:74-75` | pending |
+| `T044-OLP-0152-B020` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:78-80` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:77-79` | pending |
+| `T044-OLP-0152-B021` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:82-91` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:81-90` | pending |
+| `T044-OLP-0152-B022` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:93-100` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:92-99` | pending |
+| `T044-OLP-0152-B024` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:110-120` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:108-117` | pending |
+| `T044-OLP-0152-B025` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:122-125` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:119-121` | pending |
+| `T044-OLP-0152-B027` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:129-131` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:125-127` | pending |
+| `T044-OLP-0152-B028` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:133-135` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:129-131` | pending |
+| `T044-OLP-0152-B029` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:137-137` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:133-133` | pending |
+| `T044-OLP-0152-B030` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:139-141` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:135-137` | pending |
+| `T044-OLP-0152-B031` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:143-145` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:139-141` | pending |
+| `T044-OLP-0152-B032` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:147-148` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:143-145` | pending |
+| `T044-OLP-0152-B033` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:150-151` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:147-148` | pending |
+| `T044-OLP-0152-B034` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:153-153` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:150-150` | pending |
+| `T044-OLP-0152-B035` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:155-158` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:152-155` | pending |
+| `T044-OLP-0152-B039` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:185-187` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:181-183` | pending |
+| `T044-OLP-0152-B042` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:211-235` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:207-230` | pending |
+| `T044-OLP-0153-B006` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-21` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-21` | pending |
+| `T044-OLP-0153-B007` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:23-42` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:23-40` | pending |
+| `T044-OLP-0153-B008` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:44-54` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:42-51` | pending |
+| `T044-OLP-0153-B009` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:56-59` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:53-55` | pending |
+| `T044-OLP-0153-B011` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:68-70` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:65-67` | pending |
+| `T044-OLP-0153-B023` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:118-121` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:116-119` | pending |
+| `T044-OLP-0153-B026` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:131-144` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:129-142` | pending |
+| `T044-OLP-0153-B029` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:155-158` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:153-156` | pending |
+| `T044-OLP-0153-B030` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:160-160` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:158-158` | pending |
+| `T044-OLP-0153-B031` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:162-162` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:160-160` | pending |
+| `T044-OLP-0153-B032` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:164-164` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:162-162` | pending |
+| `T044-OLP-0153-B033` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:166-166` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:164-164` | pending |
+| `T044-OLP-0153-B034` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:168-168` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:166-166` | pending |
+| `T044-OLP-0153-B035` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:170-170` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:168-168` | pending |
+| `T044-OLP-0153-B036` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:172-180` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:170-178` | pending |
+| `T044-OLP-0153-B037` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:182-186` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:180-185` | pending |
+| `T044-OLP-0154-B005` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:11-11` | pending |
+| `T044-OLP-0154-B006` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:13-19` | pending |
+| `T044-OLP-0154-B007` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:22-27` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:22-26` | pending |
+| `T044-OLP-0154-B017` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:71-77` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:72-77` | pending |
+| `T044-OLP-0154-B018` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | pending |
+| `T044-OLP-0155-B006` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:13-18` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:13-18` | pending |
+| `T044-OLP-0155-B007` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:20-24` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:20-24` | pending |
+| `T044-OLP-0155-B008` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:26-27` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:26-27` | pending |
+| `T044-OLP-0155-B009` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:29-31` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:29-30` | pending |
+| `T044-OLP-0155-B010` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:33-34` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:32-33` | pending |
+| `T044-OLP-0155-B011` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:36-39` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:35-38` | pending |
+| `T044-OLP-0155-B012` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:41-45` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:40-44` | pending |
+| `T044-OLP-0155-B013` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:47-49` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:46-47` | pending |
+| `T044-OLP-0155-B014` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:51-53` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:49-51` | pending |
+| `T044-OLP-0155-B015` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:55-57` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:53-55` | pending |
+| `T044-OLP-0155-B016` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:59-63` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:57-61` | pending |
+| `T044-OLP-0155-B017` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:65-68` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:63-66` | pending |
+| `T044-OLP-0155-B018` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:70-88` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:68-86` | pending |
+| `T044-OLP-0155-B019` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:90-95` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:88-93` | pending |
+| `T044-OLP-0155-B021` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:101-105` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:99-103` | pending |
+| `T044-OLP-0156-B006` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:13-23` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:13-22` | pending |
+| `T044-OLP-0156-B008` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:33-38` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:32-37` | pending |
+| `T044-OLP-0156-B011` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:63-81` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:65-83` | pending |
+| `T044-OLP-0156-B012` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:83-108` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:85-109` | pending |
+| `T044-OLP-0156-B013` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:110-112` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:111-113` | pending |
+| `T044-OLP-0156-B014` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:114-147` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:115-147` | pending |
+| `T044-OLP-0156-B015` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:149-153` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:149-152` | pending |
+| `T044-OLP-0156-B019` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:170-174` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:169-173` | pending |
+| `T044-OLP-0156-B020` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:176-180` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:175-179` | pending |
+| `T044-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
+| `T044-OLP-0156-B022` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:212-213` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:210-211` | pending |
+| `T044-OLP-0156-B027` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:236-241` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:233-238` | pending |
+| `T044-OLP-0156-B029` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:249-251` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:246-247` | pending |
+| `T044-OLP-0156-B030` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:253-261` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:249-257` | pending |
+| `T044-OLP-0157-B006` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | pending |
+| `T044-OLP-0157-B007` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:21-22` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:21-22` | pending |
+| `T044-OLP-0157-B008` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:24-26` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:24-26` | pending |
+| `T044-OLP-0157-B009` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:28-30` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:28-30` | pending |
+| `T044-OLP-0157-B010` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:32-36` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:32-36` | pending |
+| `T044-OLP-0157-B011` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:38-41` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:38-41` | pending |
+| `T044-OLP-0157-B013` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:48-56` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:48-55` | pending |
+| `T044-OLP-0157-B014` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:58-65` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:57-65` | pending |
+| `T044-OLP-0157-B016` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:78-93` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:77-93` | pending |
+| `T044-OLP-0157-B017` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:95-98` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:95-98` | pending |
+| `T044-OLP-0158-B013` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:45-51` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:49-56` | pending |
+| `T044-OLP-0158-B016` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:60-61` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:65-66` | pending |
+| `T044-OLP-0158-B024` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:96-98` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:101-103` | pending |
+| `T044-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
 
 ## T045 — function / mapping
 
@@ -4892,6 +5012,13 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T045-OLP-0143-B006` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:13-25` | `mr/content/first-order-logic/introduction/satisfaction.tex:13-27` | pending |
 | `T045-OLP-0143-B008` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:52-67` | `mr/content/first-order-logic/introduction/satisfaction.tex:54-70` | pending |
 | `T045-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
+| `T045-OLP-0151-B007` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:21-29` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:20-27` | pending |
+| `T045-OLP-0151-B011` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:70-74` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:65-69` | pending |
+| `T045-OLP-0152-B008` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:32-39` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:32-38` | pending |
+| `T045-OLP-0152-B036` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:160-168` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:157-164` | pending |
+| `T045-OLP-0153-B008` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:44-54` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:42-51` | pending |
+| `T045-OLP-0154-B016` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:58-69` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:57-70` | pending |
+| `T045-OLP-0155-B018` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:70-88` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:68-86` | pending |
 
 ## T046 — domain / codomain / range
 
@@ -6091,6 +6218,14 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T061-OLP-0048-B021` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:187-213` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:188-214` | 64–67 |
 | `T061-OLP-0052-B012` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:51-64` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:54-66` | 70–71 |
 | `T061-OLP-0061-B007` | `OLP-0061` | 7.5 सत्य-मूल्यांकन आणि पूर्ति | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:21-57` | `mr/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:21-58` | 80–83 |
+| `T061-OLP-0154-B016` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:58-69` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:57-70` | pending |
+| `T061-OLP-0155-B012` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:41-45` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:40-44` | pending |
+| `T061-OLP-0155-B013` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:47-49` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:46-47` | pending |
+| `T061-OLP-0155-B014` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:51-53` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:49-51` | pending |
+| `T061-OLP-0155-B015` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:55-57` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:53-55` | pending |
+| `T061-OLP-0155-B016` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:59-63` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:57-61` | pending |
+| `T061-OLP-0155-B018` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:70-88` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:68-86` | pending |
+| `T061-OLP-0158-B006` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:13-17` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:13-18` | pending |
 
 ## T062 — initial segment
 
@@ -7606,6 +7741,17 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T102-OLP-0148-B006` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | pending |
 | `T102-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
 | `T102-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
+| `T102-OLP-0149-B004` | `OLP-0149` |  | `upstream/content/first-order-logic/syntax-and-semantics/syntax.tex:8-8` | `mr/content/first-order-logic/syntax-and-semantics/syntax.tex:8-8` | pending |
+| `T102-OLP-0150-B005` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:11-11` | pending |
+| `T102-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
+| `T102-OLP-0151-B005` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:11-11` | pending |
+| `T102-OLP-0151-B006` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-19` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-18` | pending |
+| `T102-OLP-0151-B007` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:21-29` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:20-27` | pending |
+| `T102-OLP-0151-B008` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-32` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:29-29` | pending |
+| `T102-OLP-0151-B010` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:65-68` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:61-63` | pending |
+| `T102-OLP-0152-B006` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15` | pending |
+| `T102-OLP-0156-B007` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:25-31` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:24-30` | pending |
+| `T102-OLP-0156-B008` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:33-38` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:32-37` | pending |
 
 ## T103 — parameter (of a formula)
 
@@ -7671,6 +7817,26 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T104-OLP-0144-B008` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:29-52` | `mr/content/first-order-logic/introduction/sentences.tex:29-52` | pending |
 | `T104-OLP-0144-B009` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:54-56` | `mr/content/first-order-logic/introduction/sentences.tex:54-56` | pending |
 | `T104-OLP-0145-B006` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:13-25` | `mr/content/first-order-logic/introduction/semantic-notions.tex:13-25` | pending |
+| `T104-OLP-0157-B005` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:11-11` | pending |
+| `T104-OLP-0157-B006` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | pending |
+| `T104-OLP-0157-B007` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:21-22` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:21-22` | pending |
+| `T104-OLP-0157-B008` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:24-26` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:24-26` | pending |
+| `T104-OLP-0157-B009` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:28-30` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:28-30` | pending |
+| `T104-OLP-0157-B010` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:32-36` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:32-36` | pending |
+| `T104-OLP-0157-B011` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:38-41` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:38-41` | pending |
+| `T104-OLP-0157-B012` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | pending |
+| `T104-OLP-0157-B014` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:58-65` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:57-65` | pending |
+| `T104-OLP-0157-B015` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:67-75` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:67-74` | pending |
+| `T104-OLP-0157-B016` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:78-93` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:77-93` | pending |
+| `T104-OLP-0157-B017` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:95-98` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:95-98` | pending |
+| `T104-OLP-0158-B010` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:29-33` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:31-35` | pending |
+| `T104-OLP-0158-B011` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:35-38` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:37-41` | pending |
+| `T104-OLP-0158-B012` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:40-43` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:43-47` | pending |
+| `T104-OLP-0158-B013` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:45-51` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:49-56` | pending |
+| `T104-OLP-0158-B022` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:82-86` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:87-91` | pending |
+| `T104-OLP-0158-B023` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:88-94` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:93-99` | pending |
+| `T104-OLP-0158-B025` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:100-114` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:105-119` | pending |
+| `T104-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
 
 ## T105 — isomorphic / isomorphism
 
@@ -8003,6 +8169,7 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T110-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
 | `T110-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
 | `T110-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
+| `T110-OLP-0151-B020` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:143-150` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:138-145` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -8248,6 +8415,45 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T112-OLP-0146-B006` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | pending |
 | `T112-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
 | `T112-OLP-0147-B007` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | pending |
+| `T112-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
+| `T112-OLP-0151-B006` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-19` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-18` | pending |
+| `T112-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
+| `T112-OLP-0151-B011` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:70-74` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:65-69` | pending |
+| `T112-OLP-0151-B012` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:76-79` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:71-74` | pending |
+| `T112-OLP-0151-B013` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:81-84` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:76-79` | pending |
+| `T112-OLP-0152-B005` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:11-11` | pending |
+| `T112-OLP-0152-B006` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15` | pending |
+| `T112-OLP-0152-B007` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:17-30` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:17-30` | pending |
+| `T112-OLP-0152-B011` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:50-52` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:49-51` | pending |
+| `T112-OLP-0152-B018` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:72-73` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:71-72` | pending |
+| `T112-OLP-0152-B019` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:75-76` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:74-75` | pending |
+| `T112-OLP-0152-B036` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:160-168` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:157-164` | pending |
+| `T112-OLP-0152-B040` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:189-205` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:185-201` | pending |
+| `T112-OLP-0153-B011` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:68-70` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:65-67` | pending |
+| `T112-OLP-0153-B012` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:72-74` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:69-71` | pending |
+| `T112-OLP-0153-B015` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:83-86` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:80-83` | pending |
+| `T112-OLP-0153-B026` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:131-144` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:129-142` | pending |
+| `T112-OLP-0153-B037` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:182-186` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:180-185` | pending |
+| `T112-OLP-0154-B018` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | pending |
+| `T112-OLP-0156-B009` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:40-49` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:39-49` | pending |
+| `T112-OLP-0156-B010` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:51-61` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:51-63` | pending |
+| `T112-OLP-0156-B011` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:63-81` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:65-83` | pending |
+| `T112-OLP-0156-B022` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:212-213` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:210-211` | pending |
+| `T112-OLP-0156-B023` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:215-219` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:213-217` | pending |
+| `T112-OLP-0156-B025` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:225-229` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:223-227` | pending |
+| `T112-OLP-0156-B026` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:231-234` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:229-231` | pending |
+| `T112-OLP-0156-B028` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:243-247` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:240-244` | pending |
+| `T112-OLP-0156-B029` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:249-251` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:246-247` | pending |
+| `T112-OLP-0158-B006` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:13-17` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:13-18` | pending |
+| `T112-OLP-0158-B008` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:22-22` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:23-23` | pending |
+| `T112-OLP-0158-B009` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:24-27` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:25-29` | pending |
+| `T112-OLP-0158-B010` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:29-33` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:31-35` | pending |
+| `T112-OLP-0158-B011` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:35-38` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:37-41` | pending |
+| `T112-OLP-0158-B012` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:40-43` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:43-47` | pending |
+| `T112-OLP-0158-B013` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:45-51` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:49-56` | pending |
+| `T112-OLP-0158-B015` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:56-58` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:61-63` | pending |
+| `T112-OLP-0158-B016` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:60-61` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:65-66` | pending |
+| `T112-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
 
 ## T113 — classical logic / classical
 
@@ -8422,6 +8628,40 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T115-OLP-0122-B009` | `OLP-0122` |  | `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:41-46` | `mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:41-47` | pending |
 | `T115-OLP-0141-B006` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:13-29` | `mr/content/first-order-logic/introduction/syntax.tex:13-31` | pending |
 | `T115-OLP-0141-B007` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:31-52` | `mr/content/first-order-logic/introduction/syntax.tex:33-54` | pending |
+| `T115-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
+| `T115-OLP-0151-B006` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-19` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-18` | pending |
+| `T115-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
+| `T115-OLP-0151-B020` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:143-150` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:138-145` | pending |
+| `T115-OLP-0151-B021` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:152-157` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:147-152` | pending |
+| `T115-OLP-0152-B013` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:57-58` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:56-57` | pending |
+| `T115-OLP-0152-B014` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:60-61` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:59-60` | pending |
+| `T115-OLP-0152-B015` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:63-64` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:62-63` | pending |
+| `T115-OLP-0152-B016` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:66-67` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:65-66` | pending |
+| `T115-OLP-0152-B017` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:69-70` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:68-69` | pending |
+| `T115-OLP-0152-B042` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:211-235` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:207-230` | pending |
+| `T115-OLP-0153-B007` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:23-42` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:23-40` | pending |
+| `T115-OLP-0153-B030` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:160-160` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:158-158` | pending |
+| `T115-OLP-0153-B031` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:162-162` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:160-160` | pending |
+| `T115-OLP-0153-B032` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:164-164` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:162-162` | pending |
+| `T115-OLP-0153-B033` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:166-166` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:164-164` | pending |
+| `T115-OLP-0153-B034` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:168-168` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:166-166` | pending |
+| `T115-OLP-0153-B036` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:172-180` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:170-178` | pending |
+| `T115-OLP-0154-B006` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:13-19` | pending |
+| `T115-OLP-0154-B008` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:29-30` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:28-29` | pending |
+| `T115-OLP-0154-B009` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:32-33` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:31-32` | pending |
+| `T115-OLP-0154-B010` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:35-36` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:34-35` | pending |
+| `T115-OLP-0154-B011` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:38-39` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:37-38` | pending |
+| `T115-OLP-0154-B012` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:41-42` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:40-41` | pending |
+| `T115-OLP-0155-B009` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:29-31` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:29-30` | pending |
+| `T115-OLP-0155-B014` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:51-53` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:49-51` | pending |
+| `T115-OLP-0155-B021` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:101-105` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:99-103` | pending |
+| `T115-OLP-0156-B012` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:83-108` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:85-109` | pending |
+| `T115-OLP-0156-B014` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:114-147` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:115-147` | pending |
+| `T115-OLP-0157-B008` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:24-26` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:24-26` | pending |
+| `T115-OLP-0158-B018` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:66-68` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:71-73` | pending |
+| `T115-OLP-0158-B019` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:70-72` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:75-77` | pending |
+| `T115-OLP-0158-B020` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:74-76` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:79-81` | pending |
+| `T115-OLP-0158-B021` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:78-80` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:83-85` | pending |
 
 ## T116 — truth-functional
 
@@ -8539,6 +8779,7 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T118-OLP-0147-B006` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:13-30` | `mr/content/first-order-logic/introduction/models-theories.tex:13-31` | pending |
 | `T118-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
 | `T118-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
+| `T118-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
 
 ## T119 — formation rule / inductive definition / uniquely readable
 
@@ -8595,6 +8836,36 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T119-OLP-0145-B008` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:38-46` | `mr/content/first-order-logic/introduction/semantic-notions.tex:39-48` | pending |
 | `T119-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
 | `T119-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
+| `T119-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
+| `T119-OLP-0152-B007` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:17-30` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:17-30` | pending |
+| `T119-OLP-0152-B009` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:41-46` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:40-45` | pending |
+| `T119-OLP-0152-B020` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:78-80` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:77-79` | pending |
+| `T119-OLP-0152-B021` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:82-91` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:81-90` | pending |
+| `T119-OLP-0152-B022` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:93-100` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:92-99` | pending |
+| `T119-OLP-0152-B039` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:185-187` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:181-183` | pending |
+| `T119-OLP-0152-B040` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:189-205` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:185-201` | pending |
+| `T119-OLP-0152-B042` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:211-235` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:207-230` | pending |
+| `T119-OLP-0153-B005` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:11-11` | pending |
+| `T119-OLP-0153-B006` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-21` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-21` | pending |
+| `T119-OLP-0153-B007` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:23-42` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:23-40` | pending |
+| `T119-OLP-0153-B029` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:155-158` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:153-156` | pending |
+| `T119-OLP-0153-B030` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:160-160` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:158-158` | pending |
+| `T119-OLP-0153-B031` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:162-162` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:160-160` | pending |
+| `T119-OLP-0153-B032` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:164-164` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:162-162` | pending |
+| `T119-OLP-0153-B033` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:166-166` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:164-164` | pending |
+| `T119-OLP-0153-B034` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:168-168` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:166-166` | pending |
+| `T119-OLP-0153-B035` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:170-170` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:168-168` | pending |
+| `T119-OLP-0153-B036` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:172-180` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:170-178` | pending |
+| `T119-OLP-0153-B037` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:182-186` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:180-185` | pending |
+| `T119-OLP-0154-B007` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:22-27` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:22-26` | pending |
+| `T119-OLP-0154-B016` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:58-69` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:57-70` | pending |
+| `T119-OLP-0155-B007` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:20-24` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:20-24` | pending |
+| `T119-OLP-0155-B018` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:70-88` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:68-86` | pending |
+| `T119-OLP-0156-B006` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:13-23` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:13-22` | pending |
+| `T119-OLP-0156-B014` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:114-147` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:115-147` | pending |
+| `T119-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
+| `T119-OLP-0157-B006` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | pending |
+| `T119-OLP-0157-B012` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | pending |
 
 ## T120 — Polish notation / parenthesis-free notation
 
@@ -8621,6 +8892,7 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 |---|---|---|---|---|---|
 | `T120-OLP-0057-B007` | `OLP-0057` | 7.1 परिचय | `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:37-50` | `mr/content/propositional-logic/syntax-and-semantics/introduction.tex:38-51` | 75–76 |
 | `T120-OLP-0058-B012` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:63-76` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:62-77` | 76–77 |
+| `T120-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
 
 ## T121 — satisfaction / satisfaction relation
 
@@ -9188,6 +9460,9 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T126-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
 | `T126-OLP-0148-B006` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | pending |
 | `T126-OLP-0148-B008` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:36-48` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:37-49` | pending |
+| `T126-OLP-0157-B005` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:11-11` | pending |
+| `T126-OLP-0157-B017` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:95-98` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:95-98` | pending |
+| `T126-OLP-0158-B025` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:100-114` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:105-119` | pending |
 
 ## T127 — propositional constant
 
@@ -9257,6 +9532,16 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T127-OLP-0132-B009` | `OLP-0132` |  | `upstream/content/first-order-logic/completeness/construction-of-model.tex:78-97` | `mr/content/first-order-logic/completeness/construction-of-model.tex:79-99` | pending |
 | `T127-OLP-0135-B013` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:90-121` | `mr/content/first-order-logic/completeness/compactness.tex:91-123` | pending |
 | `T127-OLP-0135-B014` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:123-154` | `mr/content/first-order-logic/completeness/compactness.tex:125-158` | pending |
+| `T127-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
+| `T127-OLP-0151-B015` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:91-104` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:86-99` | pending |
+| `T127-OLP-0151-B018` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:120-132` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:114-127` | pending |
+| `T127-OLP-0152-B010` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:48-48` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:47-47` | pending |
+| `T127-OLP-0152-B027` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:129-131` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:125-127` | pending |
+| `T127-OLP-0152-B028` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:133-135` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:129-131` | pending |
+| `T127-OLP-0153-B013` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:76-78` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:73-75` | pending |
+| `T127-OLP-0153-B014` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:80-81` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:77-78` | pending |
+| `T127-OLP-0154-B018` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | pending |
+| `T127-OLP-0158-B014` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:53-54` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:58-59` | pending |
 
 ## T128 — negation / conjunction / disjunction / conditional / biconditional
 
@@ -9472,6 +9757,44 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T128-OLP-0136-B010` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:41-44` | `mr/content/first-order-logic/completeness/compactness-direct.tex:40-43` | pending |
 | `T128-OLP-0136-B018` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:97-104` | `mr/content/first-order-logic/completeness/compactness-direct.tex:97-104` | pending |
 | `T128-OLP-0136-B019` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:106-113` | `mr/content/first-order-logic/completeness/compactness-direct.tex:106-113` | pending |
+| `T128-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
+| `T128-OLP-0151-B015` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:91-104` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:86-99` | pending |
+| `T128-OLP-0151-B018` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:120-132` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:114-127` | pending |
+| `T128-OLP-0152-B013` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:57-58` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:56-57` | pending |
+| `T128-OLP-0152-B014` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:60-61` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:59-60` | pending |
+| `T128-OLP-0152-B015` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:63-64` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:62-63` | pending |
+| `T128-OLP-0152-B016` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:66-67` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:65-66` | pending |
+| `T128-OLP-0152-B017` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:69-70` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:68-69` | pending |
+| `T128-OLP-0152-B029` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:137-137` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:133-133` | pending |
+| `T128-OLP-0152-B030` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:139-141` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:135-137` | pending |
+| `T128-OLP-0152-B031` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:143-145` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:139-141` | pending |
+| `T128-OLP-0152-B032` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:147-148` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:143-145` | pending |
+| `T128-OLP-0152-B033` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:150-151` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:147-148` | pending |
+| `T128-OLP-0152-B034` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:153-153` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:150-150` | pending |
+| `T128-OLP-0152-B035` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:155-158` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:152-155` | pending |
+| `T128-OLP-0152-B042` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:211-235` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:207-230` | pending |
+| `T128-OLP-0153-B017` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:91-93` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:88-90` | pending |
+| `T128-OLP-0153-B018` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:95-97` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:92-94` | pending |
+| `T128-OLP-0153-B030` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:160-160` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:158-158` | pending |
+| `T128-OLP-0153-B031` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:162-162` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:160-160` | pending |
+| `T128-OLP-0153-B032` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:164-164` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:162-162` | pending |
+| `T128-OLP-0153-B033` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:166-166` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:164-164` | pending |
+| `T128-OLP-0153-B034` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:168-168` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:166-166` | pending |
+| `T128-OLP-0153-B036` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:172-180` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:170-178` | pending |
+| `T128-OLP-0154-B008` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:29-30` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:28-29` | pending |
+| `T128-OLP-0154-B009` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:32-33` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:31-32` | pending |
+| `T128-OLP-0154-B010` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:35-36` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:34-35` | pending |
+| `T128-OLP-0154-B011` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:38-39` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:37-38` | pending |
+| `T128-OLP-0154-B012` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:41-42` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:40-41` | pending |
+| `T128-OLP-0154-B018` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | pending |
+| `T128-OLP-0155-B008` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:26-27` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:26-27` | pending |
+| `T128-OLP-0155-B013` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:47-49` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:46-47` | pending |
+| `T128-OLP-0157-B007` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:21-22` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:21-22` | pending |
+| `T128-OLP-0158-B017` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:63-64` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:68-69` | pending |
+| `T128-OLP-0158-B018` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:66-68` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:71-73` | pending |
+| `T128-OLP-0158-B019` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:70-72` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:75-77` | pending |
+| `T128-OLP-0158-B020` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:74-76` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:79-81` | pending |
+| `T128-OLP-0158-B021` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:78-80` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:83-85` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -9514,6 +9837,14 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T129-OLP-0103-B011` | `OLP-0103` | 11.5 टॅब्लोची उदाहरणे | `upstream/content/first-order-logic/tableaux/proving-things.tex:76-171` | `mr/content/first-order-logic/tableaux/proving-things.tex:72-166` | 135–140 |
 | `T129-OLP-0104-B007` | `OLP-0104` | 11.6 संख्यापकांसह टॅब्लो | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:20-94` | `mr/content/first-order-logic/tableaux/proving-things-quant.tex:19-92` | 140–144 |
 | `T129-OLP-0112-B005` | `OLP-0112` |  | `upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19` | `mr/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:12-19` | pending |
+| `T129-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
+| `T129-OLP-0151-B015` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:91-104` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:86-99` | pending |
+| `T129-OLP-0151-B016` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:106-116` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:101-110` | pending |
+| `T129-OLP-0151-B020` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:143-150` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:138-145` | pending |
+| `T129-OLP-0152-B025` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:122-125` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:119-121` | pending |
+| `T129-OLP-0152-B027` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:129-131` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:125-127` | pending |
+| `T129-OLP-0152-B028` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:133-135` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:129-131` | pending |
+| `T129-OLP-0154-B017` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:71-77` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:72-77` | pending |
 
 ## T130 — abbreviation / abbreviates
 
@@ -9553,6 +9884,21 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T130-OLP-0101-B013` | `OLP-0101` | 11.3 संख्यापकांचे नियम | `upstream/content/first-order-logic/tableaux/quantifier-rules.tex:57-77` | `mr/content/first-order-logic/tableaux/quantifier-rules.tex:55-75` | 133–134 |
 | `T130-OLP-0114-B008` | `OLP-0114` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:41-41` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:41-41` | pending |
 | `T130-OLP-0115-B008` | `OLP-0115` |  | `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:32-32` | `mr/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:32-32` | pending |
+| `T130-OLP-0151-B014` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:86-89` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:81-84` | pending |
+| `T130-OLP-0151-B016` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:106-116` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:101-110` | pending |
+| `T130-OLP-0151-B018` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:120-132` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:114-127` | pending |
+| `T130-OLP-0152-B023` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:102-108` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:101-106` | pending |
+| `T130-OLP-0152-B027` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:129-131` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:125-127` | pending |
+| `T130-OLP-0152-B028` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:133-135` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:129-131` | pending |
+| `T130-OLP-0152-B029` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:137-137` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:133-133` | pending |
+| `T130-OLP-0152-B030` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:139-141` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:135-137` | pending |
+| `T130-OLP-0152-B031` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:143-145` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:139-141` | pending |
+| `T130-OLP-0152-B032` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:147-148` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:143-145` | pending |
+| `T130-OLP-0152-B033` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:150-151` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:147-148` | pending |
+| `T130-OLP-0152-B034` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:153-153` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:150-150` | pending |
+| `T130-OLP-0152-B035` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:155-158` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:152-155` | pending |
+| `T130-OLP-0152-B036` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:160-168` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:157-164` | pending |
+| `T130-OLP-0154-B017` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:71-77` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:72-77` | pending |
 
 ## T131 — atomic formula
 
@@ -9618,6 +9964,28 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T131-OLP-0143-B007` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:27-50` | `mr/content/first-order-logic/introduction/satisfaction.tex:29-52` | pending |
 | `T131-OLP-0143-B009` | `OLP-0143` |  | `upstream/content/first-order-logic/introduction/satisfaction.tex:69-106` | `mr/content/first-order-logic/introduction/satisfaction.tex:72-114` | pending |
 | `T131-OLP-0144-B008` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:29-52` | `mr/content/first-order-logic/introduction/sentences.tex:29-52` | pending |
+| `T131-OLP-0150-B006` | `OLP-0150` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | pending |
+| `T131-OLP-0152-B009` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:41-46` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:40-45` | pending |
+| `T131-OLP-0152-B010` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:48-48` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:47-47` | pending |
+| `T131-OLP-0152-B011` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:50-52` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:49-51` | pending |
+| `T131-OLP-0152-B012` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:54-55` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:53-54` | pending |
+| `T131-OLP-0152-B021` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:82-91` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:81-90` | pending |
+| `T131-OLP-0152-B022` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:93-100` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:92-99` | pending |
+| `T131-OLP-0152-B027` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:129-131` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:125-127` | pending |
+| `T131-OLP-0152-B028` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:133-135` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:129-131` | pending |
+| `T131-OLP-0153-B010` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:61-66` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:57-63` | pending |
+| `T131-OLP-0153-B026` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:131-144` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:129-142` | pending |
+| `T131-OLP-0153-B029` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:155-158` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:153-156` | pending |
+| `T131-OLP-0154-B007` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:22-27` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:22-26` | pending |
+| `T131-OLP-0154-B016` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:58-69` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:57-70` | pending |
+| `T131-OLP-0154-B018` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | pending |
+| `T131-OLP-0155-B007` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:20-24` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:20-24` | pending |
+| `T131-OLP-0155-B012` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:41-45` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:40-44` | pending |
+| `T131-OLP-0155-B018` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:70-88` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:68-86` | pending |
+| `T131-OLP-0156-B011` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:63-81` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:65-83` | pending |
+| `T131-OLP-0156-B014` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:114-147` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:115-147` | pending |
+| `T131-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
+| `T131-OLP-0157-B006` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | pending |
 
 ## T132 — two-place connective
 
@@ -9644,6 +10012,12 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T132-OLP-0058-B024` | `OLP-0058` | 7.2 विधानीय सूत्र | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:129-131` | `mr/content/propositional-logic/syntax-and-semantics/formulas.tex:129-131` | 76–77 |
+| `T132-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
+| `T132-OLP-0152-B023` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:102-108` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:101-106` | pending |
+| `T132-OLP-0152-B036` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:160-168` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:157-164` | pending |
+| `T132-OLP-0155-B009` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:29-31` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:29-30` | pending |
+| `T132-OLP-0155-B014` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:51-53` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:49-51` | pending |
+| `T132-OLP-0157-B008` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:24-26` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:24-26` | pending |
 
 ## T133 — syntactic identity
 
@@ -9676,6 +10050,15 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T133-OLP-0060-B007` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:20-34` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:19-33` | 79–80 |
 | `T133-OLP-0060-B010` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:68-95` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:66-92` | 79–80 |
 | `T133-OLP-0060-B016` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:126-151` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:122-147` | 79–80 |
+| `T133-OLP-0152-B037` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:170-174` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:166-171` | pending |
+| `T133-OLP-0152-B038` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:176-183` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:173-179` | pending |
+| `T133-OLP-0153-B026` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:131-144` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:129-142` | pending |
+| `T133-OLP-0153-B038` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:188-190` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:187-189` | pending |
+| `T133-OLP-0153-B039` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:192-200` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:191-199` | pending |
+| `T133-OLP-0156-B009` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:40-49` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:39-49` | pending |
+| `T133-OLP-0156-B011` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:63-81` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:65-83` | pending |
+| `T133-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
+| `T133-OLP-0158-B007` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:19-20` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:20-21` | pending |
 
 ## T134 — string / concatenation / substring
 
@@ -9712,6 +10095,13 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T134-OLP-0060-B016` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:126-151` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:122-147` | 79–80 |
 | `T134-OLP-0070-B009` | `OLP-0070` | 9.1 नियम आणि निष्पत्ती | `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:46-50` | `mr/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:48-52` | 90–91 |
 | `T134-OLP-0116-B011` | `OLP-0116` |  | `upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118` | `mr/content/first-order-logic/axiomatic-deduction/proving-things.tex:106-118` | pending |
+| `T134-OLP-0152-B037` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:170-174` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:166-171` | pending |
+| `T134-OLP-0152-B038` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:176-183` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:173-179` | pending |
+| `T134-OLP-0153-B022` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:113-116` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:110-114` | pending |
+| `T134-OLP-0153-B038` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:188-190` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:187-189` | pending |
+| `T134-OLP-0153-B039` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:192-200` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:191-199` | pending |
+| `T134-OLP-0156-B007` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:25-31` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:24-30` | pending |
+| `T134-OLP-0156-B008` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:33-38` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:32-37` | pending |
 
 ## T135 — preliminaries
 
@@ -9766,6 +10156,17 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 |---|---|---|---|---|---|
 | `T136-OLP-0059-B008` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:41-44` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:41-44` | 77–79 |
 | `T136-OLP-0059-B009` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:46-48` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:46-48` | 77–79 |
+| `T136-OLP-0153-B009` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:56-59` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:53-55` | pending |
+| `T136-OLP-0153-B011` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:68-70` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:65-67` | pending |
+| `T136-OLP-0153-B012` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:72-74` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:69-71` | pending |
+| `T136-OLP-0153-B013` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:76-78` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:73-75` | pending |
+| `T136-OLP-0153-B014` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:80-81` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:77-78` | pending |
+| `T136-OLP-0153-B015` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:83-86` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:80-83` | pending |
+| `T136-OLP-0153-B017` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:91-93` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:88-90` | pending |
+| `T136-OLP-0153-B018` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:95-97` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:92-94` | pending |
+| `T136-OLP-0153-B019` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:99-101` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:96-98` | pending |
+| `T136-OLP-0153-B020` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:103-106` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:100-103` | pending |
+| `T136-OLP-0153-B021` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:108-111` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:105-108` | pending |
 
 ## T137 — parsing / reading (of a formula)
 
@@ -9801,6 +10202,7 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T137-OLP-0059-B019` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:76-79` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:79-83` | 77–79 |
 | `T137-OLP-0059-B020` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:81-88` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:85-93` | 77–79 |
 | `T137-OLP-0098-B005` | `OLP-0098` | 11 टॅब्लो — प्रकरण-प्रस्तावना | `upstream/content/first-order-logic/tableaux/tableaux.tex:12-13` | `mr/content/first-order-logic/tableaux/tableaux.tex:12-13` | 132 |
+| `T137-OLP-0153-B007` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:23-42` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:23-40` | pending |
 
 ## T138 — uniform substitution / simultaneous substitution
 
@@ -9892,6 +10294,27 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T139-OLP-0130-B017` | `OLP-0130` |  | `upstream/content/first-order-logic/completeness/henkin-expansions.tex:106-147` | `mr/content/first-order-logic/completeness/henkin-expansions.tex:106-148` | pending |
 | `T139-OLP-0144-B008` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:29-52` | `mr/content/first-order-logic/introduction/sentences.tex:29-52` | pending |
 | `T139-OLP-0144-B009` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:54-56` | `mr/content/first-order-logic/introduction/sentences.tex:54-56` | pending |
+| `T139-OLP-0152-B024` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:110-120` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:108-117` | pending |
+| `T139-OLP-0153-B008` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:44-54` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:42-51` | pending |
+| `T139-OLP-0154-B015` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:52-56` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:51-55` | pending |
+| `T139-OLP-0157-B006` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | pending |
+| `T139-OLP-0157-B007` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:21-22` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:21-22` | pending |
+| `T139-OLP-0157-B008` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:24-26` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:24-26` | pending |
+| `T139-OLP-0157-B009` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:28-30` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:28-30` | pending |
+| `T139-OLP-0157-B010` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:32-36` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:32-36` | pending |
+| `T139-OLP-0157-B011` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:38-41` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:38-41` | pending |
+| `T139-OLP-0157-B012` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | pending |
+| `T139-OLP-0157-B013` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:48-56` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:48-55` | pending |
+| `T139-OLP-0157-B014` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:58-65` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:57-65` | pending |
+| `T139-OLP-0157-B015` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:67-75` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:67-74` | pending |
+| `T139-OLP-0157-B016` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:78-93` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:77-93` | pending |
+| `T139-OLP-0157-B017` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:95-98` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:95-98` | pending |
+| `T139-OLP-0158-B006` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:13-17` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:13-18` | pending |
+| `T139-OLP-0158-B007` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:19-20` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:20-21` | pending |
+| `T139-OLP-0158-B010` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:29-33` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:31-35` | pending |
+| `T139-OLP-0158-B013` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:45-51` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:49-56` | pending |
+| `T139-OLP-0158-B024` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:96-98` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:101-103` | pending |
+| `T139-OLP-0158-B025` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:100-114` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:105-119` | pending |
 
 ## T140 — inductive hypothesis
 
@@ -9952,6 +10375,13 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T140-OLP-0132-B023` | `OLP-0132` |  | `upstream/content/first-order-logic/completeness/construction-of-model.tex:249-260` | `mr/content/first-order-logic/completeness/construction-of-model.tex:258-271` | pending |
 | `T140-OLP-0133-B019` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:181-191` | `mr/content/first-order-logic/completeness/identity.tex:183-193` | pending |
 | `T140-OLP-0142-B014` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:70-87` | `mr/content/first-order-logic/introduction/formulas.tex:71-89` | pending |
+| `T140-OLP-0153-B010` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:61-66` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:57-63` | pending |
+| `T140-OLP-0153-B015` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:83-86` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:80-83` | pending |
+| `T140-OLP-0153-B017` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:91-93` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:88-90` | pending |
+| `T140-OLP-0153-B018` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:95-97` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:92-94` | pending |
+| `T140-OLP-0153-B019` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:99-101` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:96-98` | pending |
+| `T140-OLP-0153-B020` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:103-106` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:100-103` | pending |
+| `T140-OLP-0153-B021` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:108-111` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:105-108` | pending |
 
 ## T141 — formation sequence
 
@@ -9990,6 +10420,30 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T141-OLP-0060-B014` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:114-118` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:110-114` | 79–80 |
 | `T141-OLP-0060-B015` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:120-124` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:116-120` | 79–80 |
 | `T141-OLP-0060-B016` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:126-151` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:122-147` | 79–80 |
+| `T141-OLP-0156-B005` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:11-11` | pending |
+| `T141-OLP-0156-B006` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:13-23` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:13-22` | pending |
+| `T141-OLP-0156-B009` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:40-49` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:39-49` | pending |
+| `T141-OLP-0156-B010` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:51-61` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:51-63` | pending |
+| `T141-OLP-0156-B011` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:63-81` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:65-83` | pending |
+| `T141-OLP-0156-B012` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:83-108` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:85-109` | pending |
+| `T141-OLP-0156-B013` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:110-112` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:111-113` | pending |
+| `T141-OLP-0156-B014` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:114-147` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:115-147` | pending |
+| `T141-OLP-0156-B015` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:149-153` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:149-152` | pending |
+| `T141-OLP-0156-B016` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:155-160` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:154-159` | pending |
+| `T141-OLP-0156-B017` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:162-164` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:161-163` | pending |
+| `T141-OLP-0156-B018` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:166-168` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:165-167` | pending |
+| `T141-OLP-0156-B019` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:170-174` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:169-173` | pending |
+| `T141-OLP-0156-B020` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:176-180` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:175-179` | pending |
+| `T141-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
+| `T141-OLP-0156-B022` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:212-213` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:210-211` | pending |
+| `T141-OLP-0156-B023` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:215-219` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:213-217` | pending |
+| `T141-OLP-0156-B025` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:225-229` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:223-227` | pending |
+| `T141-OLP-0156-B026` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:231-234` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:229-231` | pending |
+| `T141-OLP-0156-B027` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:236-241` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:233-238` | pending |
+| `T141-OLP-0156-B028` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:243-247` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:240-244` | pending |
+| `T141-OLP-0156-B029` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:249-251` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:246-247` | pending |
+| `T141-OLP-0156-B030` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:253-261` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:249-257` | pending |
+| `T141-OLP-0156-B033` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:271-276` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:267-271` | pending |
 
 ## T142 — junk / redundant formula
 
@@ -10018,6 +10472,8 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 |---|---|---|---|---|---|
 | `T142-OLP-0060-B008` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:36-61` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:35-59` | 79–80 |
 | `T142-OLP-0142-B013` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:54-68` | `mr/content/first-order-logic/introduction/formulas.tex:54-69` | pending |
+| `T142-OLP-0156-B012` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:83-108` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:85-109` | pending |
+| `T142-OLP-0156-B026` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:231-234` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:229-231` | pending |
 
 ## T143 — ordinary induction / strong induction
 
@@ -10051,6 +10507,8 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T143-OLP-0132-B015` | `OLP-0132` |  | `upstream/content/first-order-logic/completeness/construction-of-model.tex:168-174` | `mr/content/first-order-logic/completeness/construction-of-model.tex:171-177` | pending |
 | `T143-OLP-0133-B014` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:155-157` | `mr/content/first-order-logic/completeness/identity.tex:157-159` | pending |
 | `T143-OLP-0133-B019` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:181-191` | `mr/content/first-order-logic/completeness/identity.tex:183-193` | pending |
+| `T143-OLP-0156-B015` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:149-153` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:149-152` | pending |
+| `T143-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
 
 ## T144 — finite sequence / proper initial subsequence
 
@@ -10106,6 +10564,10 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T144-OLP-0118-B021` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:112-120` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:114-122` | pending |
 | `T144-OLP-0118-B022` | `OLP-0118` |  | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:122-134` | `mr/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:124-137` | pending |
 | `T144-OLP-0119-B013` | `OLP-0119` |  | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:61-62` | pending |
+| `T144-OLP-0156-B007` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:25-31` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:24-30` | pending |
+| `T144-OLP-0156-B009` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:40-49` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:39-49` | pending |
+| `T144-OLP-0156-B016` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:155-160` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:154-159` | pending |
+| `T144-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
 
 ## T145 — evaluation / evaluation function
 
@@ -11660,6 +12122,11 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T165-OLP-0111-B007` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:18-23` | `mr/content/first-order-logic/tableaux/soundness-identity.tex:18-22` | 154 |
 | `T165-OLP-0111-B008` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:25-28` | `mr/content/first-order-logic/tableaux/soundness-identity.tex:24-27` | 154 |
 | `T165-OLP-0111-B009` | `OLP-0111` | 11.13 एकरूपता सह निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:30-43` | `mr/content/first-order-logic/tableaux/soundness-identity.tex:29-43` | 154 |
+| `T165-OLP-0155-B007` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:20-24` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:20-24` | pending |
+| `T165-OLP-0155-B008` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:26-27` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:26-27` | pending |
+| `T165-OLP-0155-B009` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:29-31` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:29-30` | pending |
+| `T165-OLP-0155-B010` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:33-34` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:32-33` | pending |
+| `T165-OLP-0155-B011` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:36-39` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:35-38` | pending |
 
 ## T166 — Evert Beth / Jaakko Hintikka / Raymond Smullyan
 
@@ -11685,6 +12152,7 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T166-OLP-0067-B010` | `OLP-0067` | 8.4 टॅब्लो | `upstream/content/first-order-logic/proof-systems/tableaux.tex:72-87` | `mr/content/first-order-logic/proof-systems/tableaux.tex:69-82` | 87–88 |
+| `T166-OLP-0156-B033` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:271-276` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:267-271` | pending |
 
 ## T167 — axiomatic derivation / axiom schema / sentence schema
 
@@ -12136,6 +12604,7 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T174-OLP-0133-B016` | `OLP-0133` |  | `upstream/content/first-order-logic/completeness/identity.tex:162-169` | `mr/content/first-order-logic/completeness/identity.tex:164-171` | pending |
 | `T174-OLP-0135-B013` | `OLP-0135` |  | `upstream/content/first-order-logic/completeness/compactness.tex:90-121` | `mr/content/first-order-logic/completeness/compactness.tex:91-123` | pending |
 | `T174-OLP-0136-B015` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:73-83` | `mr/content/first-order-logic/completeness/compactness-direct.tex:73-83` | pending |
+| `T174-OLP-0152-B007` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:17-30` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:17-30` | pending |
 
 ## T175 — weakening / contraction / exchange / cut (sequent-calculus structural rules)
 
@@ -12304,6 +12773,13 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T177-OLP-0144-B007` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:19-27` | `mr/content/first-order-logic/introduction/sentences.tex:19-27` | pending |
 | `T177-OLP-0144-B008` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:29-52` | `mr/content/first-order-logic/introduction/sentences.tex:29-52` | pending |
 | `T177-OLP-0144-B009` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:54-56` | `mr/content/first-order-logic/introduction/sentences.tex:54-56` | pending |
+| `T177-OLP-0157-B011` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:38-41` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:38-41` | pending |
+| `T177-OLP-0157-B012` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | pending |
+| `T177-OLP-0157-B014` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:58-65` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:57-65` | pending |
+| `T177-OLP-0157-B015` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:67-75` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:67-74` | pending |
+| `T177-OLP-0157-B016` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:78-93` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:77-93` | pending |
+| `T177-OLP-0158-B010` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:29-33` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:31-35` | pending |
+| `T177-OLP-0158-B025` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:100-114` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:105-119` | pending |
 
 ## T178 — eigenvariable
 
@@ -13693,6 +14169,8 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T202-OLP-0141-B007` | `OLP-0141` |  | `upstream/content/first-order-logic/introduction/syntax.tex:31-52` | `mr/content/first-order-logic/introduction/syntax.tex:33-54` | pending |
 | `T202-OLP-0144-B007` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:19-27` | `mr/content/first-order-logic/introduction/sentences.tex:19-27` | pending |
 | `T202-OLP-0148-B010` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:57-66` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:58-67` | pending |
+| `T202-OLP-0151-B005` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:11-11` | pending |
+| `T202-OLP-0152-B006` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15` | pending |
 
 ## T203 — structural induction
 
@@ -13724,6 +14202,16 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T203-OLP-0142-B014` | `OLP-0142` |  | `upstream/content/first-order-logic/introduction/formulas.tex:70-87` | `mr/content/first-order-logic/introduction/formulas.tex:71-89` | pending |
 | `T203-OLP-0145-B008` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:38-46` | `mr/content/first-order-logic/introduction/semantic-notions.tex:39-48` | pending |
 | `T203-OLP-0148-B007` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:25-34` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:25-35` | pending |
+| `T203-OLP-0152-B039` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:185-187` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:181-183` | pending |
+| `T203-OLP-0152-B040` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:189-205` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:185-201` | pending |
+| `T203-OLP-0152-B041` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:207-209` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:203-205` | pending |
+| `T203-OLP-0152-B042` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:211-235` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:207-230` | pending |
+| `T203-OLP-0153-B010` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:61-66` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:57-63` | pending |
+| `T203-OLP-0153-B012` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:72-74` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:69-71` | pending |
+| `T203-OLP-0153-B024` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:123-125` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:121-123` | pending |
+| `T203-OLP-0153-B025` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:127-129` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:125-127` | pending |
+| `T203-OLP-0153-B027` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:146-148` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:144-146` | pending |
+| `T203-OLP-0153-B028` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:150-153` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:148-151` | pending |
 
 ## T204 — variable assignment
 
@@ -13756,6 +14244,513 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 | `T204-OLP-0144-B006` | `OLP-0144` |  | `upstream/content/first-order-logic/introduction/sentences.tex:13-17` | `mr/content/first-order-logic/introduction/sentences.tex:13-17` | pending |
 | `T204-OLP-0145-B006` | `OLP-0145` |  | `upstream/content/first-order-logic/introduction/semantic-notions.tex:13-25` | `mr/content/first-order-logic/introduction/semantic-notions.tex:13-25` | pending |
 | `T204-OLP-0146-B007` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | pending |
+
+## T205 — variable / constant / function (as language symbols)
+
+**Chosen rendering/action:** चर / स्थिर / फलन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P007 directly attests variable vocabulary, MR-P029 and MR-P030 establish फलन in mathematical use, and MR-P068 establishes the formal-symbol register. The source itself distinguishes the three symbol classes by their syntactic roles; स्थिर is therefore the nullary naming symbol, not a constant function.
+
+**Rationale:** MR-P007 directly attests variable vocabulary, MR-P029 and MR-P030 establish फलन in mathematical use, and MR-P068 establishes the formal-symbol register. The source itself distinguishes the three symbol classes by their syntactic roles; स्थिर is therefore the nullary naming symbol, not a constant function.
+
+**Authorities actually checked:**
+
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- चल / अचर / फलनचिन्ह — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- चरचिन्ह / स्थिरचिन्ह / फलनचिन्ह — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- व्यक्तिचर / व्यक्तिस्थिर / फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should formal-language prose use the compact चर/स्थिर/फलन labels or explicitly say चरचिन्ह/स्थिरचिन्ह/फलनचिन्ह at each occurrence?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T205-OLP-0151-B006` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-19` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-18` | pending |
+| `T205-OLP-0151-B007` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:21-29` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:20-27` | pending |
+| `T205-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
+| `T205-OLP-0151-B010` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:65-68` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:61-63` | pending |
+| `T205-OLP-0151-B011` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:70-74` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:65-69` | pending |
+| `T205-OLP-0151-B014` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:86-89` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:81-84` | pending |
+| `T205-OLP-0151-B019` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:134-141` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:129-136` | pending |
+| `T205-OLP-0152-B007` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:17-30` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:17-30` | pending |
+| `T205-OLP-0152-B008` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:32-39` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:32-38` | pending |
+| `T205-OLP-0152-B024` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:110-120` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:108-117` | pending |
+| `T205-OLP-0152-B040` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:189-205` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:185-201` | pending |
+| `T205-OLP-0153-B037` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:182-186` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:180-185` | pending |
+| `T205-OLP-0156-B009` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:40-49` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:39-49` | pending |
+| `T205-OLP-0156-B011` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:63-81` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:65-83` | pending |
+| `T205-OLP-0157-B006` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | pending |
+| `T205-OLP-0158-B007` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:19-20` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:20-21` | pending |
+| `T205-OLP-0158-B009` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:24-27` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:25-29` | pending |
+| `T205-OLP-0158-B015` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:56-58` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:61-63` | pending |
+
+## T206 — logical symbol / non-logical symbol / standard language
+
+**Chosen rendering/action:** तार्किक चिन्ह / अतार्किक चिन्ह / मानक भाषा
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked logic sources establish the logical-symbol and formal-language register, while MR-P068 directly attests primitive symbol. The source partitions its displayed vocabulary into logical and non-logical classes and explicitly names the resulting full inventory the standard language, fixing all three compositional labels.
+
+**Rationale:** The checked logic sources establish the logical-symbol and formal-language register, while MR-P068 directly attests primitive symbol. The source partitions its displayed vocabulary into logical and non-logical classes and explicitly names the resulting full inventory the standard language, fixing all three compositional labels.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- तर्कचिन्ह / तर्केतर चिन्ह / प्रमाणित भाषा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- तार्किक चिन्ह / गैरतार्किक चिन्ह / प्रमाण भाषा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is अतार्किक चिन्ह idiomatic for non-logical symbol, or would तर्केतर चिन्ह avoid suggesting irrationality more clearly?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T206-OLP-0151-B006` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-19` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-18` | pending |
+| `T206-OLP-0151-B007` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:21-29` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:20-27` | pending |
+| `T206-OLP-0151-B008` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-32` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:29-29` | pending |
+| `T206-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
+| `T206-OLP-0151-B010` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:65-68` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:61-63` | pending |
+
+## T207 — n-place / arity
+
+**Chosen rendering/action:** n-स्थानी / स्थानसंख्या
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The official sources support connective and binary-operation vocabulary, and the existing edition uses द्विस्थानी for two-place connectives. The source defines the general parameter by the number n of argument places, so n-स्थानी and स्थानसंख्या extend that established pattern transparently.
+
+**Rationale:** The official sources support connective and binary-operation vocabulary, and the existing edition uses द्विस्थानी for two-place connectives. The source defines the general parameter by the number n of argument places, so n-स्थानी and स्थानसंख्या extend that established pattern transparently.
+
+**Authorities actually checked:**
+
+- `MR-P067` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P074` — गणितशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- n-अरीय / अरीटी — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- n-घाती / घात — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- n-जागी / जागांची संख्या — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the edition retain the transparent n-स्थानी/स्थानसंख्या pair or adopt the international अरीटी term for advanced readers?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T207-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
+| `T207-OLP-0151-B011` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:70-74` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:65-69` | pending |
+| `T207-OLP-0151-B012` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:76-79` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:71-74` | pending |
+| `T207-OLP-0151-B013` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:81-84` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:76-79` | pending |
+| `T207-OLP-0152-B007` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:17-30` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:17-30` | pending |
+| `T207-OLP-0152-B008` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:32-39` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:32-38` | pending |
+| `T207-OLP-0152-B011` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:50-52` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:49-51` | pending |
+| `T207-OLP-0152-B036` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:160-168` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:157-164` | pending |
+| `T207-OLP-0152-B040` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:189-205` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:185-201` | pending |
+| `T207-OLP-0153-B026` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:131-144` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:129-142` | pending |
+| `T207-OLP-0156-B009` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:40-49` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:39-49` | pending |
+
+## T208 — universal quantifier / existential quantifier
+
+**Chosen rendering/action:** वैश्विक संख्यापक / अस्तित्ववाची संख्यापक
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The checked university syllabus directly uses वैश्विक and अस्तित्ववाची in quantifier rules and directly establishes संख्यापक. The displayed forall and exists symbols and their later satisfaction clauses fix the respective all-elements and some-element meanings.
+
+**Rationale:** The checked university syllabus directly uses वैश्विक and अस्तित्ववाची in quantifier rules and directly establishes संख्यापक. The displayed forall and exists symbols and their later satisfaction clauses fix the respective all-elements and some-element meanings.
+
+**Authorities actually checked:**
+
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P022` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 20 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+
+**Alternatives:**
+
+- सार्वत्रिक परिमाणक / अस्तित्ववाचक परिमाणक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सर्वलक्षी परिमाणक / अस्तित्ववाचक संख्यापक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सार्विक संख्यापक / अंशवाची संख्यापक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the edition follow the university-register वैश्विक/अस्तित्ववाची संख्यापक pair or the official-glossary सार्वत्रिक/अस्तित्ववाचक परिमाणक pair?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T208-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
+| `T208-OLP-0151-B015` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:91-104` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:86-99` | pending |
+| `T208-OLP-0151-B019` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:134-141` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:129-136` | pending |
+| `T208-OLP-0152-B018` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:72-73` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:71-72` | pending |
+| `T208-OLP-0152-B019` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:75-76` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:74-75` | pending |
+| `T208-OLP-0152-B024` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:110-120` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:108-117` | pending |
+| `T208-OLP-0152-B034` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:153-153` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:150-150` | pending |
+| `T208-OLP-0152-B035` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:155-158` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:152-155` | pending |
+| `T208-OLP-0152-B042` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:211-235` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:207-230` | pending |
+| `T208-OLP-0153-B019` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:99-101` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:96-98` | pending |
+| `T208-OLP-0153-B020` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:103-106` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:100-103` | pending |
+| `T208-OLP-0153-B021` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:108-111` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:105-108` | pending |
+| `T208-OLP-0153-B035` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:170-170` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:168-168` | pending |
+| `T208-OLP-0153-B036` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:172-180` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:170-178` | pending |
+| `T208-OLP-0154-B013` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:44-45` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:43-44` | pending |
+| `T208-OLP-0154-B014` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:47-50` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:46-49` | pending |
+| `T208-OLP-0154-B018` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | pending |
+| `T208-OLP-0155-B010` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:33-34` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:32-33` | pending |
+| `T208-OLP-0155-B011` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:36-39` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:35-38` | pending |
+| `T208-OLP-0155-B015` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:55-57` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:53-55` | pending |
+| `T208-OLP-0155-B016` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:59-63` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:57-61` | pending |
+| `T208-OLP-0155-B021` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:101-105` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:99-103` | pending |
+| `T208-OLP-0156-B011` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:63-81` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:65-83` | pending |
+| `T208-OLP-0156-B012` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:83-108` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:85-109` | pending |
+| `T208-OLP-0156-B014` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:114-147` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:115-147` | pending |
+| `T208-OLP-0157-B009` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:28-30` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:28-30` | pending |
+| `T208-OLP-0157-B010` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:32-36` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:32-36` | pending |
+| `T208-OLP-0157-B013` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:48-56` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:48-55` | pending |
+| `T208-OLP-0157-B014` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:58-65` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:57-65` | pending |
+| `T208-OLP-0157-B015` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:67-75` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:67-74` | pending |
+| `T208-OLP-0157-B016` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:78-93` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:77-93` | pending |
+| `T208-OLP-0158-B010` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:29-33` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:31-35` | pending |
+| `T208-OLP-0158-B022` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:82-86` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:87-91` | pending |
+| `T208-OLP-0158-B023` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:88-94` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:93-99` | pending |
+| `T208-OLP-0158-B025` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:100-114` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:105-119` | pending |
+| `T208-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
+
+## T209 — denumerable / countably infinite
+
+**Chosen rendering/action:** गणनीय अनंत
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P074 directly attests गणनीय and MR-P032 supports the edition's countability register. OpenLogic uses denumerable for an infinite sequence indexed by the natural numbers, displayed here as v_0, v_1, v_2 and so on, so अनंत prevents the broader at-most-countable reading.
+
+**Rationale:** MR-P074 directly attests गणनीय and MR-P032 supports the edition's countability register. OpenLogic uses denumerable for an infinite sequence indexed by the natural numbers, displayed here as v_0, v_1, v_2 and so on, so अनंत prevents the broader at-most-countable reading.
+
+**Authorities actually checked:**
+
+- `MR-P032` — MR-C004. https://vishwakosh.marathi.gov.in/34075/ (`checked_supports`): Consulted for this decision. Limitation: Same previously indexed source, new actual consultation. The witness's positive-natural-number convention and its restriction to infinite countable sets do not replace OpenLogic conventions. Missing/corrupt mathematical glyphs and source historical assertions are not imported. Original HTML remains unavailable.
+- `MR-P074` — गणितशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- गणनक्षम अनंत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- मोजण्याजोगा अनंत संच — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रगणनीय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is गणनीय अनंत the clearest distinction between denumerable and merely at-most-countable in Marathi set-theoretic prose?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T209-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
+
+## T210 — truth-functionally complete / expressively complete
+
+**Chosen rendering/action:** सत्यता-फलनात्मकदृष्ट्या संपूर्ण / अभिव्यक्तीदृष्ट्या संपूर्ण
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The existing completeness decision directly supports सत्यता-फलनात्मक and संपूर्णता. The source distinguishes Boolean operator sets that define every truth function from a first-order language that can express every formula once either quantifier is added; the two adverbial compounds preserve that distinction.
+
+**Rationale:** The existing completeness decision directly supports सत्यता-फलनात्मक and संपूर्णता. The source distinguishes Boolean operator sets that define every truth function from a first-order language that can express every formula once either quantifier is added; the two adverbial compounds preserve that distinction.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P042` — गणितशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Primary official Government of Maharashtra mathematics glossary read in web-search extraction. Limitation: Observation hash is not an origin-page hash; the compound property label is contextual.
+- `MR-P066` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/t (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P067` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
+
+**Alternatives:**
+
+- सत्यता-फलनात्मक संपूर्ण / अभिव्यक्तिशक्तीने संपूर्ण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सत्यफलनीयदृष्ट्या पूर्ण / अभिव्यंजनात्मकदृष्ट्या पूर्ण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Do the two long compounds remain readable while clearly distinguishing Boolean functional completeness from first-order expressive completeness?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T210-OLP-0151-B020` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:143-150` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:138-145` | pending |
+| `T210-OLP-0151-B021` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:152-157` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:147-152` | pending |
+
+## T211 — main operator / main connective
+
+**Chosen rendering/action:** मुख्य कारक / मुख्य संयोजक
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The official and preserved sources establish connective, operator, primitive-symbol and formula vocabulary. The source defines this occurrence functionally as the unique outermost constructor of a non-atomic formula, which controls मुख्य as structural rather than merely important.
+
+**Rationale:** The official and preserved sources establish connective, operator, primitive-symbol and formula vocabulary. The source defines this occurrence functionally as the unique outermost constructor of a non-atomic formula, which controls मुख्य as structural rather than merely important.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P067` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P072` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — D glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/d (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P074` — गणितशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- प्रधान कारक / प्रधान संयोजक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सर्वांत बाहेरचा कारक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- मुख्य तार्किक चिन्ह — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does मुख्य कारक clearly denote the unique outermost constructor rather than any semantically prominent connective?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T211-OLP-0153-B007` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:23-42` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:23-40` | pending |
+| `T211-OLP-0153-B008` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:44-54` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:42-51` | pending |
+| `T211-OLP-0153-B037` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:182-186` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:180-185` | pending |
+| `T211-OLP-0153-B038` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:188-190` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:187-189` | pending |
+| `T211-OLP-0153-B039` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:192-200` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:191-199` | pending |
+| `T211-OLP-0154-B005` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:11-11` | pending |
+| `T211-OLP-0154-B006` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:13-19` | pending |
+| `T211-OLP-0154-B007` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:22-27` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:22-26` | pending |
+| `T211-OLP-0154-B008` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:29-30` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:28-29` | pending |
+| `T211-OLP-0154-B009` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:32-33` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:31-32` | pending |
+| `T211-OLP-0154-B010` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:35-36` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:34-35` | pending |
+| `T211-OLP-0154-B011` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:38-39` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:37-38` | pending |
+| `T211-OLP-0154-B012` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:41-42` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:40-41` | pending |
+| `T211-OLP-0154-B013` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:44-45` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:43-44` | pending |
+| `T211-OLP-0154-B014` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:47-50` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:46-49` | pending |
+| `T211-OLP-0154-B015` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:52-56` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:51-55` | pending |
+| `T211-OLP-0154-B016` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:58-69` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:57-70` | pending |
+| `T211-OLP-0154-B017` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:71-77` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:72-77` | pending |
+| `T211-OLP-0154-B018` | `OLP-0154` |  | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | `mr/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | pending |
+
+## T212 — proper prefix (of a symbol string)
+
+**Chosen rendering/action:** उचित पूर्वखंड
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The existing string and proper-initial-subsequence decisions directly support चिन्हमाला, उचित and an initial-part relation. The source defines the object exactly by concatenating B with a nonempty string to obtain A, so पूर्वखंड names the initial string segment without importing a linguistic affix sense.
+
+**Rationale:** The existing string and proper-initial-subsequence decisions directly support चिन्हमाला, उचित and an initial-part relation. The source defines the object exactly by concatenating B with a nonempty string to obtain A, so पूर्वखंड names the initial string segment without importing a linguistic affix sense.
+
+**Authorities actually checked:**
+
+- `MR-P005` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 7 (`checked_supports`): visually-read-page-image
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P073` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — N glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/n (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P074` — गणितशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P079` — गणितशास्त्र परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- उचित आरंभीचा खंड — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- खरा पूर्वखंड — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- उचित उपसर्ग — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is उचित पूर्वखंड the clearest formal-language term for a string prefix that is strictly shorter than the whole string?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T212-OLP-0153-B022` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:113-116` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:110-114` | pending |
+| `T212-OLP-0153-B023` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:118-121` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:116-119` | pending |
+| `T212-OLP-0153-B028` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:150-153` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:148-151` | pending |
+| `T212-OLP-0153-B039` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:192-200` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:191-199` | pending |
+
+## T213 — subformula / immediate subformula / proper subformula
+
+**Chosen rendering/action:** उपसूत्र / तात्काळ उपसूत्र / उचित उपसूत्र
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The existing tableau decision directly supports तात्काळ उपसूत्र, while the official formula vocabulary supports सूत्र and the set-theoretic register supports उचित for a strict part. The recursive clauses define each class extensionally, fixing उपसूत्र as a formula component rather than an algebraic subexpression.
+
+**Rationale:** The existing tableau decision directly supports तात्काळ उपसूत्र, while the official formula vocabulary supports सूत्र and the set-theoretic register supports उचित for a strict part. The recursive clauses define each class extensionally, fixing उपसूत्र as a formula component rather than an algebraic subexpression.
+
+**Authorities actually checked:**
+
+- `MR-P005` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 7 (`checked_supports`): visually-read-page-image
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P086` — गणितशास्त्र परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Official Government of Maharashtra mathematics glossary read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary does not directly attest semantic-tableau terminology.
+
+**Alternatives:**
+
+- अंतःसूत्र / निकट अंतःसूत्र / उचित अंतःसूत्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- उप-सूत्र / प्रत्यक्ष उप-सूत्र / खरे उप-सूत्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are उपसूत्र, तात्काळ उपसूत्र and उचित उपसूत्र a clear parallel family for the three recursively related formula classes?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T213-OLP-0155-B006` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:13-18` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:13-18` | pending |
+| `T213-OLP-0155-B007` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:20-24` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:20-24` | pending |
+| `T213-OLP-0155-B008` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:26-27` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:26-27` | pending |
+| `T213-OLP-0155-B009` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:29-31` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:29-30` | pending |
+| `T213-OLP-0155-B010` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:33-34` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:32-33` | pending |
+| `T213-OLP-0155-B011` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:36-39` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:35-38` | pending |
+| `T213-OLP-0155-B012` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:41-45` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:40-44` | pending |
+| `T213-OLP-0155-B013` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:47-49` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:46-47` | pending |
+| `T213-OLP-0155-B014` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:51-53` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:49-51` | pending |
+| `T213-OLP-0155-B015` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:55-57` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:53-55` | pending |
+| `T213-OLP-0155-B016` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:59-63` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:57-61` | pending |
+| `T213-OLP-0155-B017` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:65-68` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:63-66` | pending |
+| `T213-OLP-0155-B018` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:70-88` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:68-86` | pending |
+| `T213-OLP-0155-B019` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:90-95` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:88-93` | pending |
+| `T213-OLP-0155-B020` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:97-99` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:95-97` | pending |
+| `T213-OLP-0155-B021` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:101-105` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:99-103` | pending |
+| `T213-OLP-0155-B022` | `OLP-0155` |  | `upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:107-109` | `mr/content/first-order-logic/syntax-and-semantics/subformulas.tex:105-107` | pending |
+| `T213-OLP-0156-B030` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:253-261` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:249-257` | pending |
+| `T213-OLP-0156-B032` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:267-269` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:263-265` | pending |
+| `T213-OLP-0157-B013` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:48-56` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:48-55` | pending |
+
+## T214 — minimal formation sequence
+
+**Chosen rendering/action:** न्यूनतम रचनाक्रमिका
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P071 supports the formation-rule stem and MR-P079 directly attests क्रमिका. The source defines minimality by the exact length comparison with every other formation sequence, so न्यूनतम names that global shortest-length condition rather than mere irredundancy.
+
+**Rationale:** MR-P071 supports the formation-rule stem and MR-P079 directly attests क्रमिका. The source defines minimality by the exact length comparison with every other formation sequence, so न्यूनतम names that global shortest-length condition rather than mere irredundancy.
+
+**Authorities actually checked:**
+
+- `MR-P071` — भाषाविज्ञान व वाङ्मयविद्या परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/39/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P079` — गणितशास्त्र परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- लघुतम रचनाक्रमिका — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- किमान-लांबीची रचनाक्रमिका — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- न्यून रचनाक्रमिका — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is न्यूनतम रचनाक्रमिका the clearest label for a formation sequence of globally minimum length?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T214-OLP-0156-B026` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:231-234` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:229-231` | pending |
+| `T214-OLP-0156-B027` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:236-241` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:233-238` | pending |
+| `T214-OLP-0156-B028` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:243-247` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:240-244` | pending |
+| `T214-OLP-0156-B029` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:249-251` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:246-247` | pending |
+| `T214-OLP-0156-B030` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:253-261` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:249-257` | pending |
+
+## T215 — scope of a quantifier occurrence / binds an occurrence
+
+**Chosen rendering/action:** संख्यापक-आस्थितीची व्याप्ती / आस्थिती बद्ध करणे
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P007 directly attests the paired free/bound-variable register, and MR-P076 directly supports occurrence vocabulary. The source defines scope by the corresponding body occurrence of a displayed quantifier occurrence and then defines binding only for free occurrences of that quantifier's variable inside that body, fixing the technical use of व्याप्ती and बद्ध करणे.
+
+**Rationale:** MR-P007 directly attests the paired free/bound-variable register, and MR-P076 directly supports occurrence vocabulary. The source defines scope by the corresponding body occurrence of a displayed quantifier occurrence and then defines binding only for free occurrences of that quantifier's variable inside that body, fixing the technical use of व्याप्ती and बद्ध करणे.
+
+**Authorities actually checked:**
+
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- संख्यापकाचा आवाका / आस्थिती बांधणे — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- संख्यापक-आस्थितीचे कार्यक्षेत्र / चर-आस्थिती बद्ध करणे — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is व्याप्ती the clearest Marathi logic term for the syntactic scope of one quantifier occurrence, and is बद्ध करणे idiomatic for its binding action?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T215-OLP-0157-B009` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:28-30` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:28-30` | pending |
+| `T215-OLP-0157-B010` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:32-36` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:32-36` | pending |
+| `T215-OLP-0157-B013` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:48-56` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:48-55` | pending |
+| `T215-OLP-0157-B014` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:58-65` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:57-65` | pending |
+| `T215-OLP-0157-B015` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:67-75` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:67-74` | pending |
+| `T215-OLP-0157-B016` | `OLP-0157` |  | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:78-93` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:77-93` | pending |
+| `T215-OLP-0158-B010` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:29-33` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:31-35` | pending |
+| `T215-OLP-0158-B025` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:100-114` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:105-119` | pending |
+
+## T216 — substitution / free for substitution / variable capture
+
+**Chosen rendering/action:** आदेशन / आदेशनासाठी मुक्त / चरग्रहण
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P075 directly attests आदेशन in the logical rule-of-substitution sense, while MR-P007 and MR-P076 support the free/bound-variable and occurrence vocabulary. The source recursively defines the operation, then defines free-for by excluding any substitution that would put a free variable of the term under a matching binder; that excluded event fixes चरग्रहण extensionally.
+
+**Rationale:** MR-P075 directly attests आदेशन in the logical rule-of-substitution sense, while MR-P007 and MR-P076 support the free/bound-variable and occurrence vocabulary. The source recursively defines the operation, then defines free-for by excluding any substitution that would put a free variable of the term under a matching binder; that excluded event fixes चरग्रहण extensionally.
+
+**Authorities actually checked:**
+
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P075` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/r (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- प्रतिस्थापन / प्रतिस्थापनासाठी मुक्त / चरबद्धता — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- आदेश / मुक्तपणे आदेशनीय / मुक्त चर पकडणे — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does the आदेशन family read naturally for term and formula substitution, and is चरग्रहण a clear technical name for capture?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T216-OLP-0158-B005` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:11-11` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:11-11` | pending |
+| `T216-OLP-0158-B006` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:13-17` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:13-18` | pending |
+| `T216-OLP-0158-B007` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:19-20` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:20-21` | pending |
+| `T216-OLP-0158-B008` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:22-22` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:23-23` | pending |
+| `T216-OLP-0158-B009` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:24-27` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:25-29` | pending |
+| `T216-OLP-0158-B010` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:29-33` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:31-35` | pending |
+| `T216-OLP-0158-B011` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:35-38` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:37-41` | pending |
+| `T216-OLP-0158-B012` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:40-43` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:43-47` | pending |
+| `T216-OLP-0158-B013` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:45-51` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:49-56` | pending |
+| `T216-OLP-0158-B014` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:53-54` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:58-59` | pending |
+| `T216-OLP-0158-B015` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:56-58` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:61-63` | pending |
+| `T216-OLP-0158-B016` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:60-61` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:65-66` | pending |
+| `T216-OLP-0158-B017` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:63-64` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:68-69` | pending |
+| `T216-OLP-0158-B018` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:66-68` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:71-73` | pending |
+| `T216-OLP-0158-B019` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:70-72` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:75-77` | pending |
+| `T216-OLP-0158-B020` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:74-76` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:79-81` | pending |
+| `T216-OLP-0158-B021` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:78-80` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:83-85` | pending |
+| `T216-OLP-0158-B022` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:82-86` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:87-91` | pending |
+| `T216-OLP-0158-B023` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:88-94` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:93-99` | pending |
+| `T216-OLP-0158-B024` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:96-98` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:101-103` | pending |
+| `T216-OLP-0158-B025` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:100-114` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:105-119` | pending |
+| `T216-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
+
+## T217 — instance of a quantified formula
+
+**Chosen rendering/action:** संख्यकीकृत सूत्राचा दृष्टांत
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The source defines the instance exactly as the capture-avoiding substitution A(t) for the free variable x in the body A of a universally quantified formula. दृष्टांत names this concrete substitution result without treating it as an existential witness, and the displayed notation controls the technical sense.
+
+**Rationale:** The source defines the instance exactly as the capture-avoiding substitution A(t) for the free variable x in the body A of a universally quantified formula. दृष्टांत names this concrete substitution result without treating it as an existential witness, and the displayed notation controls the technical sense.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P022` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 20 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- संख्यकीकृत सूत्राचे उदाहरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- आदेशित रूप — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सर्ववाची सूत्राचा विशेष दृष्टांत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is दृष्टांत the clearest Marathi technical noun for a substitution instance, distinct from an existential साक्षी?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T217-OLP-0158-B026` | `OLP-0158` |  | `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:116-124` | `mr/content/first-order-logic/syntax-and-semantics/substitution.tex:121-130` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -14662,15 +15657,15 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 |---|---|---|---|---|---|
 | `MRINF-002-OLP-0051` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:54-65` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:52-64` | 69–70 |
 
-## MRINF-003 — confirmed malformed helper-proposition conclusion
+## MRINF-003 — retracted false-positive source-defect claim; equivalent explicit target notation retained
 
-**Chosen rendering/action:** Used the mathematically forced B≈C conclusion in Marathi, added the adjacent MRINF-003 note, kept frozen English bytes unchanged, and registered a narrow exact-QA projection.
+**Chosen rendering/action:** Retained the explicit Marathi B≈C conclusion as an equivalent focused presentation, replaced the reader note with this qualification, reclassified the structural projection as an equivalence projection, and excluded MRINF-003 from source-error reporting.
 
-**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
 
-**Intended sense:** Under A⊆B⊆C and A≈C, the source writes a nested cardinal-equality expression with A≈B in the first set position. The required conclusion is B≈C.
+**Intended sense:** The nested source expression is valid: cardeq has two mandatory arguments and expands to its first argument, an approximately-equal sign, and its second argument. The nested call therefore typesets A≈B≈C. The Marathi B≈C conclusion is a focused explicit consequence of that same chain under the stated hypotheses, not a repair of malformed source mathematics.
 
-**Rationale:** Under A⊆B⊆C and A≈C, the source writes a nested cardinal-equality expression with A≈B in the first set position. The required conclusion is B≈C. Chosen action: Used the mathematically forced B≈C conclusion in Marathi, added the adjacent MRINF-003 note, kept frozen English bytes unchanged, and registered a narrow exact-QA projection.
+**Rationale:** The nested source expression is valid: cardeq has two mandatory arguments and expands to its first argument, an approximately-equal sign, and its second argument. The nested call therefore typesets A≈B≈C. The Marathi B≈C conclusion is a focused explicit consequence of that same chain under the stated hypotheses, not a repair of malformed source mathematics. Chosen action: Retained the explicit Marathi B≈C conclusion as an equivalent focused presentation, replaced the reader note with this qualification, reclassified the structural projection as an equivalence projection, and excluded MRINF-003 from source-error reporting.
 
 **Authorities actually checked:**
 
@@ -14678,10 +15673,10 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 
 **Alternatives:**
 
-- Reproduce the malformed nested expression — `rejected`: Not chosen; the source finding and recorded action control.
-- Render B≈C without documenting the repair — `rejected`: Not chosen; the source finding and recorded action control.
+- Mirror the nested cardeq macro expression in the Marathi source — `rejected`: Not chosen; the source finding and recorded action control.
+- Write the full explicit chain A≈B≈C instead of the focused B≈C conclusion — `rejected`: Not chosen; the source finding and recorded action control.
 
-**Please double-check:** Please double-check: Confirm the source should read ‘then B≈C’ and that the repair needs no further qualification.
+**Please double-check:** Please double-check: Does the qualified note clearly explain that the source macro expands to the valid chain A≈B≈C and that the target's B≈C is an equivalent focused presentation?
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
@@ -15787,8 +16782,131 @@ Coverage: 145/722 source units through OLP-0148; 285 applied decisions; 8,635 oc
 |---|---|---|---|---|---|
 | `OLFOL-004-OLP-0146` | `OLP-0146` |  | `upstream/content/first-order-logic/introduction/substitution.tex:15-27` | `mr/content/first-order-logic/introduction/substitution.tex:15-28` | pending |
 
+## OLFOL-005 — confirmed-frozen-source-unmatched-formula-parenthesis with documented formula projection
+
+**Chosen rendering/action:** Removed the unmatched closing parenthesis from the Marathi formula and placed adjacent reader note OLFOL-005. A unit-specific QA projection reinserts it solely for comparison with the frozen English bytes.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** In the prvOr branch defining the conditional, the frozen formula has a closing parenthesis after B but no matching opening parenthesis. The same standard negation-disjunction expansion appears without that unmatched delimiter in the parallel propositional chapter.
+
+**Rationale:** In the prvOr branch defining the conditional, the frozen formula has a closing parenthesis after B but no matching opening parenthesis. The same standard negation-disjunction expansion appears without that unmatched delimiter in the parallel propositional chapter. Chosen action: Removed the unmatched closing parenthesis from the Marathi formula and placed adjacent reader note OLFOL-005. A unit-specific QA projection reinserts it solely for comparison with the frozen English bytes.
+
+**Authorities actually checked:**
+
+- `OLFOL-005-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-005. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the unbalanced formula delimiter — `rejected`: Not chosen; the source finding and recorded action control.
+- Add a matching opening parenthesis and retain an explicitly parenthesized expansion — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does removing the unmatched delimiter leave exactly the intended negation-disjunction definition of the conditional?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-005-OLP-0152` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:147-149` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:143-145` | pending |
+
+## OLFOL-006 — confirmed-frozen-source-arity-index mismatch with documented formula projection
+
+**Chosen rendering/action:** Indexed the k arguments from m_1 through m_k in the Marathi definition and placed adjacent reader note OLFOL-006. Unit-specific QA projections reconstruct both frozen index ranges solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The term-formation clause calls f k-ary but indexes its arguments from m_0 through m_k, giving k+1 indices and k+1 displayed arguments.
+
+**Rationale:** The term-formation clause calls f k-ary but indexes its arguments from m_0 through m_k, giving k+1 indices and k+1 displayed arguments. Chosen action: Indexed the k arguments from m_1 through m_k in the Marathi definition and placed adjacent reader note OLFOL-006. Unit-specific QA projections reconstruct both frozen index ranges solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-006-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-006. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Index the k arguments from m_0 through m_{k-1} — `rejected`: Not chosen; the source finding and recorded action control.
+- Preserve the k+1 arguments while calling the function k-ary — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does m_1 through m_k state the intended k-argument formation clause without changing any later result?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-006-OLP-0156` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:43-46` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:42-48` | pending |
+
+## OLFOL-007 — confirmed-frozen-source-language-subscript carryover with documented formula projection
+
+**Chosen rendering/action:** Used Frm[L] at both locations in the Marathi proof and placed adjacent reader note OLFOL-007. Unit-specific QA projections restore the two frozen L_0 subscripts solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The theorem and proof concern an arbitrary first-order language L, but two sentences in the conjunction case place formulas in Frm[L_0], the propositional-language notation used in the parallel propositional chapter.
+
+**Rationale:** The theorem and proof concern an arbitrary first-order language L, but two sentences in the conjunction case place formulas in Frm[L_0], the propositional-language notation used in the parallel propositional chapter. Chosen action: Used Frm[L] at both locations in the Marathi proof and placed adjacent reader note OLFOL-007. Unit-specific QA projections restore the two frozen L_0 subscripts solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-007-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-007. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the unexplained switch to the propositional language L_0 — `rejected`: Not chosen; the source finding and recorded action control.
+- Restate the entire theorem only for L_0 and lose its first-order generality — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do both repaired memberships now remain in the theorem's fixed first-order language L?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-007-OLP-0156` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:171-206` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:170-205` | pending |
+
+## OLFOL-008 — confirmed-frozen-source-syntactic-identity symbol mismatch with documented formula projection
+
+**Chosen rendering/action:** Restored the syntactic-identity symbol in the Marathi conjunction case and placed adjacent reader note OLFOL-008. A unit-specific QA projection reconstructs the frozen equivalence symbol solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The conjunction case alone switches from the syntactic-identity symbol used in the definition and all seven listed cases to an equivalence symbol, although the proof requires A literally to be that constructed string.
+
+**Rationale:** The conjunction case alone switches from the syntactic-identity symbol used in the definition and all seven listed cases to an equivalence symbol, although the proof requires A literally to be that constructed string. Chosen action: Restored the syntactic-identity symbol in the Marathi conjunction case and placed adjacent reader note OLFOL-008. A unit-specific QA projection reconstructs the frozen equivalence symbol solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-008-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-008. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve logical equivalence in this one case — `rejected`: Not chosen; the source finding and recorded action control.
+- Rewrite the proof to justify why mere equivalence would establish string membership — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does syntactic identity state exactly the conjunction case required by the recursive formula definition?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-008-OLP-0156` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:186-207` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:185-207` | pending |
+
+## OLFOL-009 — confirmed-frozen-source-missing-macro-closing-brace with documented formula projection
+
+**Chosen rendering/action:** Added the missing outer brace in the Marathi inline term and placed adjacent reader note OLFOL-009. A unit-specific QA projection removes it solely for comparison with the frozen English bytes.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The inline compound term closes the inner Atom invocation but omits the final brace that closes the outer unary-function Atom invocation. The identical term is correctly braced in both adjacent displayed formation sequences.
+
+**Rationale:** The inline compound term closes the inner Atom invocation but omits the final brace that closes the outer unary-function Atom invocation. The identical term is correctly braced in both adjacent displayed formation sequences. Chosen action: Added the missing outer brace in the Marathi inline term and placed adjacent reader note OLFOL-009. A unit-specific QA projection removes it solely for comparison with the frozen English bytes.
+
+**Authorities actually checked:**
+
+- `OLFOL-009-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-009. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the unbalanced Atom invocation — `rejected`: Not chosen; the source finding and recorded action control.
+- Replace the inline term with a prose pointer to the display — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired inline expression now denote exactly the same nested unary-over-binary function term as both displays?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-009-OLP-0156` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:53-57` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:53-58` | pending |
+
 ## Deferred prospective decisions
 
-The following legacy decisions have no occurrence in the current coverage and are not
-fabricated into the canonical record: . They remain
-available in `../EXPERT_REVIEW_DECISIONS.jsonl` until translated source creates a real locator.
+None. Every legacy decision has at least one real occurrence in the current coverage.

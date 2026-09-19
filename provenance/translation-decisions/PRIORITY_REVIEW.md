@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
-This view contains 29 urgent/high decisions and
-1270 current occurrences. Normal and low items remain in the full index.
+This view contains 30 urgent/high decisions and
+1374 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -308,6 +308,12 @@ This view contains 29 urgent/high decisions and
 | `T023-OLP-0140-B006` | `OLP-0140` |  | 13-31 | 13-31 | pending |
 | `T023-OLP-0141-B006` | `OLP-0141` |  | 13-29 | 13-31 | pending |
 | `T023-OLP-0142-B013` | `OLP-0142` |  | 54-68 | 54-69 | pending |
+| `T023-OLP-0156-B007` | `OLP-0156` |  | 25-31 | 24-30 | pending |
+| `T023-OLP-0156-B009` | `OLP-0156` |  | 40-49 | 39-49 | pending |
+| `T023-OLP-0156-B019` | `OLP-0156` |  | 170-174 | 169-173 | pending |
+| `T023-OLP-0156-B020` | `OLP-0156` |  | 176-180 | 175-179 | pending |
+| `T023-OLP-0156-B021` | `OLP-0156` |  | 182-210 | 181-208 | pending |
+| `T023-OLP-0156-B023` | `OLP-0156` |  | 215-219 | 213-217 | pending |
 
 ## T026 — contradiction/paradox → व्याघात / विरोधापत्ती
 
@@ -1077,6 +1083,102 @@ This view contains 29 urgent/high decisions and
 | `T044-OLP-0148-B006` | `OLP-0148` |  | 13-23 | 13-23 | pending |
 | `T044-OLP-0148-B007` | `OLP-0148` |  | 25-34 | 25-35 | pending |
 | `T044-OLP-0148-B008` | `OLP-0148` |  | 36-48 | 37-49 | pending |
+| `T044-OLP-0150-B006` | `OLP-0150` |  | 13-31 | 13-30 | pending |
+| `T044-OLP-0151-B006` | `OLP-0151` |  | 14-19 | 14-18 | pending |
+| `T044-OLP-0151-B016` | `OLP-0151` |  | 106-116 | 101-110 | pending |
+| `T044-OLP-0152-B005` | `OLP-0152` |  | 11-11 | 11-11 | pending |
+| `T044-OLP-0152-B006` | `OLP-0152` |  | 13-15 | 13-15 | pending |
+| `T044-OLP-0152-B009` | `OLP-0152` |  | 41-46 | 40-45 | pending |
+| `T044-OLP-0152-B010` | `OLP-0152` |  | 48-48 | 47-47 | pending |
+| `T044-OLP-0152-B011` | `OLP-0152` |  | 50-52 | 49-51 | pending |
+| `T044-OLP-0152-B012` | `OLP-0152` |  | 54-55 | 53-54 | pending |
+| `T044-OLP-0152-B013` | `OLP-0152` |  | 57-58 | 56-57 | pending |
+| `T044-OLP-0152-B014` | `OLP-0152` |  | 60-61 | 59-60 | pending |
+| `T044-OLP-0152-B015` | `OLP-0152` |  | 63-64 | 62-63 | pending |
+| `T044-OLP-0152-B016` | `OLP-0152` |  | 66-67 | 65-66 | pending |
+| `T044-OLP-0152-B017` | `OLP-0152` |  | 69-70 | 68-69 | pending |
+| `T044-OLP-0152-B018` | `OLP-0152` |  | 72-73 | 71-72 | pending |
+| `T044-OLP-0152-B019` | `OLP-0152` |  | 75-76 | 74-75 | pending |
+| `T044-OLP-0152-B020` | `OLP-0152` |  | 78-80 | 77-79 | pending |
+| `T044-OLP-0152-B021` | `OLP-0152` |  | 82-91 | 81-90 | pending |
+| `T044-OLP-0152-B022` | `OLP-0152` |  | 93-100 | 92-99 | pending |
+| `T044-OLP-0152-B024` | `OLP-0152` |  | 110-120 | 108-117 | pending |
+| `T044-OLP-0152-B025` | `OLP-0152` |  | 122-125 | 119-121 | pending |
+| `T044-OLP-0152-B027` | `OLP-0152` |  | 129-131 | 125-127 | pending |
+| `T044-OLP-0152-B028` | `OLP-0152` |  | 133-135 | 129-131 | pending |
+| `T044-OLP-0152-B029` | `OLP-0152` |  | 137-137 | 133-133 | pending |
+| `T044-OLP-0152-B030` | `OLP-0152` |  | 139-141 | 135-137 | pending |
+| `T044-OLP-0152-B031` | `OLP-0152` |  | 143-145 | 139-141 | pending |
+| `T044-OLP-0152-B032` | `OLP-0152` |  | 147-148 | 143-145 | pending |
+| `T044-OLP-0152-B033` | `OLP-0152` |  | 150-151 | 147-148 | pending |
+| `T044-OLP-0152-B034` | `OLP-0152` |  | 153-153 | 150-150 | pending |
+| `T044-OLP-0152-B035` | `OLP-0152` |  | 155-158 | 152-155 | pending |
+| `T044-OLP-0152-B039` | `OLP-0152` |  | 185-187 | 181-183 | pending |
+| `T044-OLP-0152-B042` | `OLP-0152` |  | 211-235 | 207-230 | pending |
+| `T044-OLP-0153-B006` | `OLP-0153` |  | 13-21 | 13-21 | pending |
+| `T044-OLP-0153-B007` | `OLP-0153` |  | 23-42 | 23-40 | pending |
+| `T044-OLP-0153-B008` | `OLP-0153` |  | 44-54 | 42-51 | pending |
+| `T044-OLP-0153-B009` | `OLP-0153` |  | 56-59 | 53-55 | pending |
+| `T044-OLP-0153-B011` | `OLP-0153` |  | 68-70 | 65-67 | pending |
+| `T044-OLP-0153-B023` | `OLP-0153` |  | 118-121 | 116-119 | pending |
+| `T044-OLP-0153-B026` | `OLP-0153` |  | 131-144 | 129-142 | pending |
+| `T044-OLP-0153-B029` | `OLP-0153` |  | 155-158 | 153-156 | pending |
+| `T044-OLP-0153-B030` | `OLP-0153` |  | 160-160 | 158-158 | pending |
+| `T044-OLP-0153-B031` | `OLP-0153` |  | 162-162 | 160-160 | pending |
+| `T044-OLP-0153-B032` | `OLP-0153` |  | 164-164 | 162-162 | pending |
+| `T044-OLP-0153-B033` | `OLP-0153` |  | 166-166 | 164-164 | pending |
+| `T044-OLP-0153-B034` | `OLP-0153` |  | 168-168 | 166-166 | pending |
+| `T044-OLP-0153-B035` | `OLP-0153` |  | 170-170 | 168-168 | pending |
+| `T044-OLP-0153-B036` | `OLP-0153` |  | 172-180 | 170-178 | pending |
+| `T044-OLP-0153-B037` | `OLP-0153` |  | 182-186 | 180-185 | pending |
+| `T044-OLP-0154-B005` | `OLP-0154` |  | 11-11 | 11-11 | pending |
+| `T044-OLP-0154-B006` | `OLP-0154` |  | 13-19 | 13-19 | pending |
+| `T044-OLP-0154-B007` | `OLP-0154` |  | 22-27 | 22-26 | pending |
+| `T044-OLP-0154-B017` | `OLP-0154` |  | 71-77 | 72-77 | pending |
+| `T044-OLP-0154-B018` | `OLP-0154` |  | 79-99 | 79-99 | pending |
+| `T044-OLP-0155-B006` | `OLP-0155` |  | 13-18 | 13-18 | pending |
+| `T044-OLP-0155-B007` | `OLP-0155` |  | 20-24 | 20-24 | pending |
+| `T044-OLP-0155-B008` | `OLP-0155` |  | 26-27 | 26-27 | pending |
+| `T044-OLP-0155-B009` | `OLP-0155` |  | 29-31 | 29-30 | pending |
+| `T044-OLP-0155-B010` | `OLP-0155` |  | 33-34 | 32-33 | pending |
+| `T044-OLP-0155-B011` | `OLP-0155` |  | 36-39 | 35-38 | pending |
+| `T044-OLP-0155-B012` | `OLP-0155` |  | 41-45 | 40-44 | pending |
+| `T044-OLP-0155-B013` | `OLP-0155` |  | 47-49 | 46-47 | pending |
+| `T044-OLP-0155-B014` | `OLP-0155` |  | 51-53 | 49-51 | pending |
+| `T044-OLP-0155-B015` | `OLP-0155` |  | 55-57 | 53-55 | pending |
+| `T044-OLP-0155-B016` | `OLP-0155` |  | 59-63 | 57-61 | pending |
+| `T044-OLP-0155-B017` | `OLP-0155` |  | 65-68 | 63-66 | pending |
+| `T044-OLP-0155-B018` | `OLP-0155` |  | 70-88 | 68-86 | pending |
+| `T044-OLP-0155-B019` | `OLP-0155` |  | 90-95 | 88-93 | pending |
+| `T044-OLP-0155-B021` | `OLP-0155` |  | 101-105 | 99-103 | pending |
+| `T044-OLP-0156-B006` | `OLP-0156` |  | 13-23 | 13-22 | pending |
+| `T044-OLP-0156-B008` | `OLP-0156` |  | 33-38 | 32-37 | pending |
+| `T044-OLP-0156-B011` | `OLP-0156` |  | 63-81 | 65-83 | pending |
+| `T044-OLP-0156-B012` | `OLP-0156` |  | 83-108 | 85-109 | pending |
+| `T044-OLP-0156-B013` | `OLP-0156` |  | 110-112 | 111-113 | pending |
+| `T044-OLP-0156-B014` | `OLP-0156` |  | 114-147 | 115-147 | pending |
+| `T044-OLP-0156-B015` | `OLP-0156` |  | 149-153 | 149-152 | pending |
+| `T044-OLP-0156-B019` | `OLP-0156` |  | 170-174 | 169-173 | pending |
+| `T044-OLP-0156-B020` | `OLP-0156` |  | 176-180 | 175-179 | pending |
+| `T044-OLP-0156-B021` | `OLP-0156` |  | 182-210 | 181-208 | pending |
+| `T044-OLP-0156-B022` | `OLP-0156` |  | 212-213 | 210-211 | pending |
+| `T044-OLP-0156-B027` | `OLP-0156` |  | 236-241 | 233-238 | pending |
+| `T044-OLP-0156-B029` | `OLP-0156` |  | 249-251 | 246-247 | pending |
+| `T044-OLP-0156-B030` | `OLP-0156` |  | 253-261 | 249-257 | pending |
+| `T044-OLP-0157-B006` | `OLP-0157` |  | 13-19 | 13-19 | pending |
+| `T044-OLP-0157-B007` | `OLP-0157` |  | 21-22 | 21-22 | pending |
+| `T044-OLP-0157-B008` | `OLP-0157` |  | 24-26 | 24-26 | pending |
+| `T044-OLP-0157-B009` | `OLP-0157` |  | 28-30 | 28-30 | pending |
+| `T044-OLP-0157-B010` | `OLP-0157` |  | 32-36 | 32-36 | pending |
+| `T044-OLP-0157-B011` | `OLP-0157` |  | 38-41 | 38-41 | pending |
+| `T044-OLP-0157-B013` | `OLP-0157` |  | 48-56 | 48-55 | pending |
+| `T044-OLP-0157-B014` | `OLP-0157` |  | 58-65 | 57-65 | pending |
+| `T044-OLP-0157-B016` | `OLP-0157` |  | 78-93 | 77-93 | pending |
+| `T044-OLP-0157-B017` | `OLP-0157` |  | 95-98 | 95-98 | pending |
+| `T044-OLP-0158-B013` | `OLP-0158` |  | 45-51 | 49-56 | pending |
+| `T044-OLP-0158-B016` | `OLP-0158` |  | 60-61 | 65-66 | pending |
+| `T044-OLP-0158-B024` | `OLP-0158` |  | 96-98 | 101-103 | pending |
+| `T044-OLP-0158-B026` | `OLP-0158` |  | 116-124 | 121-130 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 
@@ -1334,6 +1436,7 @@ This view contains 29 urgent/high decisions and
 | `T174-OLP-0133-B016` | `OLP-0133` |  | 162-169 | 164-171 | pending |
 | `T174-OLP-0135-B013` | `OLP-0135` |  | 90-121 | 91-123 | pending |
 | `T174-OLP-0136-B015` | `OLP-0136` |  | 73-83 | 73-83 | pending |
+| `T174-OLP-0152-B007` | `OLP-0152` |  | 17-30 | 17-30 | pending |
 
 ## T178 — eigenvariable → आयगेन चर
 
@@ -1591,3 +1694,15 @@ This view contains 29 urgent/high decisions and
 | Occurrence | Unit | Section | Source line | Target line | PDF page |
 |---|---|---|---|---|---|
 | `OLSIZ-010-OLP-0040` | `OLP-0040` | 4.13 न्यूनीकरण | 48-58 | 52-56 | 53 |
+
+## MRINF-003 — retracted false-positive source-defect claim; equivalent explicit target notation retained → Retained the explicit Marathi B≈C conclusion as an equivalent focused presentation, replaced the reader note with this qualification, reclassified the structural projection as an equivalence projection, and excluded MRINF-003 from source-error reporting.
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** No uncertainty remains about source validity. The explicit B≈C target is mathematically equivalent for the helper's later use, but it is intentionally a narrower printed presentation than the full source chain.
+
+**Please double-check:** Please double-check: Does the qualified note clearly explain that the source macro expands to the valid chain A≈B≈C and that the target's B≈C is an equivalent focused presentation?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `MRINF-003-OLP-0054` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | 52-52 | 52-52 | 73 |

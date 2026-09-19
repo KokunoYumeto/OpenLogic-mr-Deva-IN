@@ -1,0 +1,101 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: main-operator
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{mai}
+
+\olsection{सूत्राचा \printtoken{S}{main operator}}
+
+\begin{explain}
+!!a{formula}~$!A$ तयार करताना सर्वांत शेवटी वापरलेल्या कारकाविषयी
+बोलणे अनेकदा उपयुक्त असते. या कारकाला $!A$ चा \emph{मुख्य कारक}
+म्हणतात. अंतःप्रेरणेने तो $!A$ चा ``सर्वांत बाहेरचा'' कारक होय.
+उदाहरणार्थ, $\lnot !A$ चा मुख्य कारक $\lnot$, $(!A \lor !B)$ चा
+मुख्य कारक $\lor$, इत्यादी.
+\end{explain}
+
+
+\begin{defn}[!!^{main operator}]
+\ollabel{def:main-op}
+!!a{formula}~$!A$ चा \emph{!!{main operator}} पुढीलप्रमाणे परिभाषित केला जातो:
+\begin{enumerate}
+\item \indcase*{!A}{!A}{$\indfrm$ ला !!{main operator} नाही.}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\indfrm$ चा !!{main operator}
+  हा~$\lnot$ आहे.}}{}
+
+\tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\indfrm$ चा
+  !!{main operator} हा~$\land$ आहे.}}{}
+
+\tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\indfrm$ चा
+  !!{main operator} हा~$\lor$ आहे.}}{}
+
+\tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\indfrm$ चा
+  !!{main operator} हा~$\lif$ आहे.}}{}
+
+\tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\indfrm$ चा
+  !!{main operator} हा~$\liff$ आहे.}}{}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{$\indfrm$ चा
+  !!{main operator} हा~$\lforall$ आहे.}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{$\indfrm$ चा
+  !!{main operator} हा~$\lexists$ आहे.}}{}
+\end{enumerate}
+\end{defn}
+
+प्रत्येक बाबतीत सूत्रातील !!{main operator} ची नेमकी दर्शवलेली
+\emph{आस्थिति} आपल्याला अभिप्रेत आहे. उदाहरणार्थ,
+$((!D \lif !E) \lif (!E \lif !D))$ हे सूत्र $(!B \lif !C)$ या रूपात
+असून $!B$ हे $(!D \lif !E)$ आणि $!C$ हे $(!E \lif !D)$ असल्यामुळे,
+$\lif$ ची दुसरी आस्थिति !!{main operator} आहे.
+
+\begin{explain}
+ही अशा फलनाची \emph{पुनरावर्ती} व्याख्या आहे जे सर्व अनाण्विक
+!!{formula}s ना त्यांच्या !!{main operator} च्या आस्थितीकडे पाठवते.
+!!{formula}s ची व्याख्या विगमनाने केलेली असल्यामुळे प्रत्येक
+!!{formula}~$!A$ ला \olref{def:main-op} मधील एखादी बाब लागू होते.
+त्यामुळे प्रत्येक अनाण्विक !!{formula}~$!A$ साठी !!a{main
+  operator}
+अस्तित्वात आहे याची खात्री मिळते. प्रत्येक !!{formula} ला यांपैकी
+फक्त एकच अट लागू होते आणि प्रत्येक बाबतीत $!A$ ज्यांपासून तयार केले
+आहे ती लहान !!{formula}s एकमेव रीतीने निर्धारित असतात. त्यामुळे $!A$
+मधील !!{main
+  operator} ची आस्थिति एकमेव असते आणि म्हणून आपण फलन
+परिभाषित केले आहे.
+\end{explain}
+
+!!{formula}s चा !!{main operator} कोणते चिन्ह आहे यानुसार आपण त्यांना
+\olref{tab:main-op} मधील नावे देतो.\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+{ मात्र लक्षात ठेवा की परिभाषित कारक औपचारिकदृष्ट्या !!{formula}s मध्ये
+दिसत नाहीत. ते केवळ संक्षेप आहेत; म्हणून औपचारिकदृष्ट्या ते सूत्राचा
+मुख्य कारक असू शकत नाहीत. त्यामुळे सर्व !!{formula}s विषयीच्या
+सिद्धतांत त्यांचा स्वतंत्रपणे विचार करावा लागत नाही.}
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{c | c | c}
+!!^{main operator} & !!{formula} चा प्रकार & उदाहरण\\
+\hline
+काही नाही & आण्विक (!!{formula}) &
+\iftag{prvFalse}{$\lfalse$,}{}
+\iftag{prvTrue}{$\ltrue$,}{}
+$\Atom{R}{t_1, \dots, t_n}$,
+$\eq[t_1][t_2]$\\
+$\lnot$ & नकरण & $\lnot !A$ \\
+$\land$ & संधियोग & $(!A \land !B$) \\
+$\lor$ & विकल्पयोग & $(!A \lor !B$) \\
+$\lif$ & !!{conditional} & $(!A \lif !B$) \\
+$\liff$ & !!{biconditional} & $(!A \liff !B)$ \\
+$\lforall[][]$ & वैश्विक (!!{formula})& $\lforall[x][!A]$ \\
+$\lexists[][]$ & अस्तित्ववाची (!!{formula})& $\lexists[x][!A]$
+\end{tabular}
+\caption{!!{formula}s चे मुख्य कारक आणि नावे}
+\ollabel{tab:main-op}
+\end{table}
+
+\end{document}

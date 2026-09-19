@@ -1,0 +1,132 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sub}
+
+\olsection{आदेशन}
+
+\begin{defn}[पदातील आदेशन]
+$s$ मधील~$x$ च्या प्रत्येक आस्थितीच्या जागी $t$ \emph{आदेशित करून}
+मिळणारा परिणाम $\Subst{s}{t}{x}$ आपण पुढीलप्रमाणे पुनरावर्ती रीतीने
+परिभाषित करतो:
+\begin{enumerate}
+\item \indcase{s}{c}{$\Subst{\indfrm}{t}{x}$ म्हणजे फक्त $s$.}
+
+\item \indcase{s}{y}{$y$ हे चर असून $y \not\ident x$ असेल, तर
+  $\Subst{\indfrm}{t}{x}$ म्हणजेही फक्त~$s$.}
+
+\item \indcase{s}{x}{$\Subst{\indfrm}{t}{x}$ म्हणजे~$t$.}
+
+\item\indcase{s}{\Atom{f}{t_1, \dots, t_n}}{$\Subst{\indfrmp}{t}{x}$
+  म्हणजे $\Atom{f}{\Subst{t_1}{t}{x}, \dots,
+  \Subst{t_n}{t}{x}}$.}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+$!A$ मधील~$x$ ची कोणतीही मुक्त आस्थिती $t$ मधील एखादे चर बद्ध करणाऱ्या
+संख्यापकाच्या व्याप्तीत येत नसेल, तर पद~$t$ हे $!A$ मध्ये $x$ साठी
+\emph{!!{free for}} असते.
+\end{defn}
+
+\begin{ex} ~
+\begin{enumerate}
+\item $\Obj v_8$ हे $\lexists[\Obj
+  v_3]\Atom{\Obj A^2_4}{\Obj v_3,\Obj v_1}$ मध्ये $\Obj v_1$ साठी
+  मुक्त आहे.
+
+\item $\Obj f^2_1(\Obj v_1, \Obj v_2)$ हे
+  $\lforall[\Obj v_2]\Atom{\Obj A^2_4}{\Obj v_0,\Obj v_2}$ मध्ये
+  $\Obj v_0$ साठी \emph{मुक्त नाही}.
+\end{enumerate}
+\end{ex}
+
+\begin{defn}[!!a{formula} मधील आदेशन]
+$!A$ हे !!a{formula}, $x$ हे !!a{variable} आणि $t$ हे $!A$ मध्ये~$x$
+साठी !!{free for} असलेले पद असेल, तर $!A$ मधील~$x$ च्या सर्व मुक्त
+आस्थितींच्या जागी $t$ आदेशित करून मिळणारा परिणाम म्हणजे
+$\Subst{!A}{t}{x}$.
+\begin{enumerate}
+\tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\Subst{\indfrm}{t}{x}$
+    म्हणजे $\lfalse$.}}{}
+
+\tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\Subst{\indfrm}{t}{x}$
+    म्हणजे $\ltrue$.}}{}
+
+\item \indcase{!A}{\Atom{P}{t_1,\dots,
+    t_n}}{$\Subst{\indfrm}{t}{x}$ म्हणजे
+    $\Atom{P}{\Subst{t_1}{t}{x}, \dots, \Subst{t_n}{t}{x}}$.}
+
+\item \indcase{!A}{\eq[t_1][t_2]}{$\Subst{\indfrmp}{t}{x}$ म्हणजे
+  $\Subst{t_1}{t}{x} = \Subst{t_2}{t}{x}$.}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\Subst{\indfrmp}{t}{x}$
+    म्हणजे $\lnot \Subst{!B}{t}{x}$.}}{}
+
+\tagitem{prvAnd}{\indcase{!A}{(!B \land
+    !C)}{$\Subst{\indfrmp}{t}{x}$ म्हणजे $(\Subst{!B}{t}{x} \land
+    \Subst{!C}{t}{x})$.}}{}
+
+\tagitem{prvOr}{\indcase{!A}{(!B \lor
+    !C)}{$\Subst{\indfrmp}{t}{x}$ म्हणजे $(\Subst{!B}{t}{x} \lor
+    \Subst{!C}{t}{x})$.}}{}
+
+\tagitem{prvIf}{\indcase{!A}{(!B \lif
+    !C)}{$\Subst{\indfrmp}{t}{x}$ म्हणजे $(\Subst{!B}{t}{x} \lif
+    \Subst{!C}{t}{x})$.}}{}
+
+\tagitem{prvIff}{\indcase{!A}{(!B \liff
+    !C)}{$\Subst{\indfrmp}{t}{x}$ म्हणजे $(\Subst{!B}{t}{x} \liff
+    \Subst{!C}{t}{x})$.}}{}
+
+\tagitem{prvAll}{
+\indcase{!A}{\lforall[y][!B]}{$y$ हे $x$ पेक्षा वेगळे चर असेल, तर
+    $\Subst{\indfrmp}{t}{x}$ म्हणजे
+    $\lforall[y][\Subst{!B}{t}{x}]$; अन्यथा
+    $\Subst{\indfrmp}{t}{x}$ म्हणजे फक्त $\indfrm$.}}{}
+
+\tagitem{prvEx}{
+\indcase{!A}{\lexists[y][!B]}{$y$ हे $x$ पेक्षा वेगळे चर असेल, तर
+    $\Subst{\indfrmp}{t}{x}$ म्हणजे
+    $\lexists[y][\Subst{!B}{t}{x}]$; अन्यथा
+    $\Subst{\indfrmp}{t}{x}$ म्हणजे फक्त $\indfrm$.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+आदेशन निष्फळ असू शकते, हे लक्षात घ्या: $!A$ मध्ये $x$ मुळीच येत नसेल,
+तर $\Subst{!A}{t}{x}$ म्हणजे फक्त~$!A$.
+
+$!A$ मध्ये~$x$ साठी $t$ हे !!{free for} असले पाहिजे हा निर्बंध पुढील
+प्रकारची प्रकरणे वगळण्यासाठी आवश्यक आहे. $!A \ident
+\lexists[y][x < y]$ आणि $t \ident y$ असेल, तर
+$\Subst{!A}{t}{x}$ हे $\lexists[y][y < y]$ होईल. या प्रकरणात आदेशन
+करताना मुक्त चर~$y$ हे संख्यापक $\lexists[y]$ ने ``ग्रहित'' केले जाते;
+हा परिणाम अनिष्ट आहे. उदाहरणार्थ, $\lforall[x][!B]$ लागू असेल तेव्हा
+$\Subst{!B}{t}{x}$ हेही लागू असावे, अशी आपली अपेक्षा असते. पण
+$\lforall[x][\lexists[y][x < y]]$ चा विचार करा (येथे $!B$ म्हणजे
+$\lexists[y][x < y]$). हे, उदाहरणार्थ, नैसर्गिक संख्यांविषयी सत्य
+असलेले वाक्य आहे: प्रत्येक संख्या~$x$ पेक्षा मोठी एखादी संख्या~$y$
+असते. $x$ च्या जागी $y$ चे आदेशन करण्याची परवानगी दिली, तर आपल्याला
+$\Subst{!B}{y}{x} \ident \lexists[y][y < y]$ मिळेल; हे असत्य आहे.
+$t$ मधील कोणतेही मुक्त चर $!A$ मधील संख्यापकाने अखेरीस बद्ध होणार नाही,
+अशी अट घालून आपण हे टाळतो.
+\end{explain}
+
+अवजड लेखन टाळण्यासाठी आपण पुढील संकेत अनेकदा वापरतो: !!a{formula}~$!A$
+मध्ये !!{variable}~$x$ मुक्तपणे येऊ शकत असेल, तर हे दाखवण्यासाठी आपण
+$!A(x)$ असेही लिहितो. कोणते $!A$ आणि~$x$ अभिप्रेत आहेत हे स्पष्ट असेल
+आणि $t$ हे पद असेल ($!A(x)$ मध्ये $x$ साठी ते मुक्त आहे असे गृहीत
+धरलेले असेल), तर $\Subst{!A}{t}{x}$ याचे संक्षिप्त रूप म्हणून आपण
+$!A(t)$ लिहितो. म्हणून, उदाहरणार्थ, ``$!A(t)$ याला
+$\lforall[x][!A(x)]$ चा दृष्टांत म्हणतो,'' असे आपण म्हणू शकतो. याचा
+अर्थ असा: $!A$ हे कोणतेही !!{formula}, $x$ हे !!a{variable} आणि $t$ हे
+$!A$ मध्ये~$x$ साठी मुक्त असलेले पद असेल, तर
+$\Subst{!A}{t}{x}$ हा $\lforall[x][!A]$ चा दृष्टांत असतो.
+
+\end{document}

@@ -373,6 +373,18 @@ deferred_ids = [
 ]
 assert set(deferred_ids) <= KNOWN_PROSPECTIVE_IDS
 deferred_display = ", ".join(f"`{decision_id}`" for decision_id in deferred_ids)
+if deferred_ids:
+    deferred_start_note = (
+        f"{len(deferred_ids)} prospective terminology records ({deferred_display}) "
+        "remain in the backward-compatible legacy ledger but are deferred "
+        f"from `DECISIONS.json` because they have no occurrence in the current {SOURCE_UNITS}-unit "
+        "coverage and the shared schema requires at least one real occurrence per decision."
+    )
+else:
+    deferred_start_note = (
+        "Every decision in the backward-compatible legacy ledger has at least one real "
+        "occurrence in the current coverage; none are deferred from `DECISIONS.json`."
+    )
 
 input_occurrence_ref = {
     "path_or_uri": "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl",
@@ -543,10 +555,7 @@ start_lines = [
     "The PDF page field is the current assembled-reader page or range. Unknown pages ",
     "must use schema status `pending`; none were guessed in this checkpoint. Source ",
     "and target locators contain current file SHA-256 values, exact line spans, byte ",
-    f"spans and excerpts. {len(deferred_ids)} prospective terminology records ({deferred_display}) ",
-    "remain in the backward-compatible legacy ledger but are deferred ",
-    f"from `DECISIONS.json` because they have no occurrence in the current {SOURCE_UNITS}-unit ",
-    "coverage and the shared schema requires at least one real occurrence per decision.",
+    f"spans and excerpts. {deferred_start_note}",
     "Decision-relevant spans are narrower than aligned context blocks where explicitly recorded. "
     "They may overlap when one construction realizes several choices and do not claim a disjoint token partition.",
     "",
@@ -614,16 +623,26 @@ for decision in canonical_decisions:
         )
     full_lines.append("")
 
-full_lines.extend(
-    [
-        "## Deferred prospective decisions",
-        "",
-        "The following legacy decisions have no occurrence in the current coverage and are not ",
-        f"fabricated into the canonical record: {deferred_display}. They remain ",
-        "available in `../EXPERT_REVIEW_DECISIONS.jsonl` until translated source creates a real locator.",
-        "",
-    ]
-)
+if deferred_ids:
+    full_lines.extend(
+        [
+            "## Deferred prospective decisions",
+            "",
+            "The following legacy decisions have no occurrence in the current coverage and are not ",
+            f"fabricated into the canonical record: {deferred_display}. They remain ",
+            "available in `../EXPERT_REVIEW_DECISIONS.jsonl` until translated source creates a real locator.",
+            "",
+        ]
+    )
+else:
+    full_lines.extend(
+        [
+            "## Deferred prospective decisions",
+            "",
+            "None. Every legacy decision has at least one real occurrence in the current coverage.",
+            "",
+        ]
+    )
 write_text(OUT / "TRANSLATION_DECISIONS_FULL.md", "\n".join(full_lines))
 
 priority_decisions = [

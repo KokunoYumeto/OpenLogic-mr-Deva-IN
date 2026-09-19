@@ -1,0 +1,154 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: first-order-languages
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{fol}
+
+\olsection{प्रथम-क्रम भाषा}
+
+
+प्रथम-क्रम तर्कशास्त्राची व्यंजके अशा मूलभूत शब्दसंग्रहापासून तयार
+केली जातात ज्यात \emph{!!{variable}s}, \emph{!!{constant}s},
+\emph{!!{predicate}s} आणि कधीकधी \emph{!!{function}s} असतात. त्यांपासून,
+तार्किक संयोजके, संख्यापक आणि कंस व स्वल्पविराम यांसारखी विरामचिन्हे
+यांच्या साहाय्याने \emph{पदे} आणि \emph{!!{formula}s} तयार केली जातात.
+
+\begin{explain}
+अनौपचारिकपणे, !!{predicate}s ही गुणधर्मांची आणि संबंधांची नावे,
+!!{constant}s ही स्वतंत्र वस्तूंची नावे आणि !!{function}s ही
+संगतींची नावे आहेत. !!{identity}~$\eq$ सोडल्यास हीच \emph{अतार्किक
+चिन्हे} होत आणि ती मिळून एक भाषा बनते. कोणतीही प्रथम-क्रम
+भाषा~$\Lang L$ तिच्या अतार्किक चिन्हांनी निर्धारित होते. सर्वांत
+सामान्य बाबतीत $\Lang L$ मध्ये प्रत्येक प्रकारची अनंत चिन्हे असतात.
+\end{explain}
+
+सामान्य बाबतीत प्रथम-क्रम तर्कशास्त्रात आपण पुढील चिन्हे वापरतो:
+
+\begin{enumerate}
+\item तार्किक चिन्हे
+\begin{enumerate}
+\item तार्किक संयोजके:
+  \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (नकरण)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (संधियोग)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (विकल्पयोग)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{prvAll}{\ycomma $\lforall$ (वैश्विक संख्यापक)}{}%
+  \iftag{prvEx}{\ycomma $\lexists$ (अस्तित्ववाची संख्यापक)}{}.
+\tagitem{prvFalse}{!!{falsity}~$\lfalse$ साठीचे विधानीय स्थिर.}{}
+\tagitem{prvTrue}{!!{truth}~$\ltrue$ साठीचे विधानीय स्थिर.}{}
+\item द्विस्थानी !!{identity}~$\eq$.
+\item !!{variable}s चा एक !!{denumerable}s संच: $\Obj v_0$, $\Obj v_1$, $\Obj
+  v_2$, \dots
+\end{enumerate}
+\item प्रथम-क्रम तर्कशास्त्राची \emph{मानक भाषा} बनवणारी अतार्किक चिन्हे
+\begin{enumerate}
+\item प्रत्येक $n>0$ साठी $n$-स्थानी !!{predicate}s चा एक !!{denumerable}s संच: $\Obj
+  A^n_0$, $\Obj A^n_1$, $\Obj A^n_2$, \dots
+\item !!{constant}s चा एक !!{denumerable}s संच: $\Obj c_0$, $\Obj c_1$, $\Obj
+  c_2$, \dots.
+\item प्रत्येक $n>0$ साठी $n$-स्थानी !!{function}s चा एक !!{denumerable}s संच:
+  $\Obj f^n_0$, $\Obj f^n_1$, $\Obj f^n_2$, \dots
+\end{enumerate}
+\item विरामचिन्हे: (, ) आणि स्वल्पविराम.
+\end{enumerate}
+
+आपल्या बहुतेक व्याख्या आणि निष्कर्ष प्रथम-क्रम तर्कशास्त्राच्या संपूर्ण
+मानक भाषेसाठी मांडले जातील. मात्र, उपयोगानुसार आपण भाषा केवळ काही
+!!{predicate}s, !!{constant}s आणि !!{function}s पुरती मर्यादितही करू शकतो.
+
+\begin{ex}
+अंकगणिताची भाषा~$\Lang L_A$ हिच्यात एक द्विस्थानी !!{predicate}~$<$,
+एक !!{constant}~$\Obj 0$, एक एकस्थानी !!{function}~$\prime$ आणि दोन
+द्विस्थानी !!{function}s~$+$ व~$\times$ असतात.
+\end{ex}
+
+\begin{ex}
+संचसिद्धान्ताची भाषा~$\Lang L_Z$ हिच्यात केवळ एक द्विस्थानी
+!!{predicate}~$\in$ असते.
+\end{ex}
+
+\begin{ex}
+क्रमांची भाषा~$\Lang L_\le$ हिच्यात केवळ द्विस्थानी
+!!{predicate}~$\le$ असते.
+\end{ex}
+
+पुन्हा, हे संकेत आहेत: औपचारिकदृष्ट्या ही केवळ पर्यायी नावे आहेत;
+उदा., $<$, $\in$ आणि $\le$ ही $\Obj A^2_0$ ची, $\Obj 0$ हे
+$\Obj c_0$ चे, $\prime$ हे $\Obj f^1_0$ चे, $+$ हे $\Obj f^2_0$ चे आणि $\times$ हे
+$\Obj f^2_1$ चे पर्यायी नाव आहे.
+
+\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%
+वर मांडलेली आदिम संयोजके आणि
+\iftag{notprvEx,notprvAll}{संख्यापकाव्यतिरिक्त}{संख्यापकांव्यतिरिक्त}
+आपण पुढील \emph{परिभाषित} चिन्हेही वापरतो:
+\startycommalist
+  \iftag{defNot}{\ycomma $\lnot$ (नकरण)}{}%
+  \iftag{defAnd}{\ycomma $\land$ (संधियोग)}{}%
+  \iftag{defOr}{\ycomma $\lor$ (विकल्पयोग)}{}%
+  \iftag{defIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{defIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{defAll}{\ycomma $\lforall$ (वैश्विक संख्यापक)}{}%
+  \iftag{defEx}{\ycomma $\lexists$ (अस्तित्ववाची संख्यापक)}{}%
+  \iftag{defFalse}{\ycomma !!{falsity}~$\lfalse$}{}%
+  \iftag{defTrue}{\ycomma !!{truth}~$\ltrue$}}{}.
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+\begin{explain}
+परिभाषित चिन्ह औपचारिकदृष्ट्या भाषेचा भाग नसते, तर अनौपचारिक संक्षेप
+म्हणून मांडले जाते: केवळ आदिम चिन्हे वापरल्यास बरीच लांब होणारी सूत्रे
+त्यामुळे संक्षिप्तपणे लिहिता येतात. हा अर्थातच एक लाभ आहे. पण अधिक मोठा
+लाभ म्हणजे सिद्धता लहान होतात. एखादे चिन्ह आदिम असल्यास सिद्धतांमध्ये
+त्याचा स्वतंत्रपणे विचार करावा लागतो. म्हणून आदिम चिन्हे जितकी अधिक,
+तितक्या आपल्या सिद्धता अधिक लांब होतात.
+\end{explain}
+\end{tagblock}
+
+% Alternate symbols
+
+\begin{intro}
+वर आपण वापरलेल्या संज्ञांपेक्षा आणि चिन्हांपेक्षा वेगळ्या संज्ञा व
+चिन्हे तुम्हाला परिचित असू शकतात. तर्कशास्त्राच्या ग्रंथांत (आणि
+अध्यापनात) ``नकरण'' यासाठी सामान्यतः $\sim$, $\neg$ किंवा~!\ यांपैकी
+एखादे, तर ``संधियोग'' यासाठी $\wedge$, $\cdot$ किंवा $\&$ यांपैकी
+एखादे चिन्ह वापरतात. ``सशर्त (संकेतार्थक)'' किंवा ``अभिव्यंजन'' यांसाठी
+$\rightarrow$, $\Rightarrow$ आणि $\supset$ ही चिन्हे सामान्यतः वापरली जातात.
+\iftag{prvIff,defIff}{``द्विसशर्त,'' ``द्वि-अभिव्यंजन'' किंवा
+  ``(वास्तविक) सममूल्यता'' यांसाठीची चिन्हे $\leftrightarrow$,
+  $\Leftrightarrow$ आणि $\equiv$ ही आहेत.}{}
+\iftag{prvFalse,defFalse}{$\lfalse$ या चिन्हाला निरनिराळ्या ठिकाणी
+  ``असत्यता,'' ``फाल्सम,'' ``विसंगती'' किंवा ``तळ'' म्हणतात.}{}
+\iftag{prvTrue,defTrue}{$\ltrue$ या चिन्हाला निरनिराळ्या ठिकाणी
+  ``सत्यता,'' ``वेरम'' किंवा ``शिखर'' म्हणतात.}{}
+
+!!{constant}s (ज्यांना कधीकधी नावे म्हणतात) यांच्यासाठी लॅटिन
+वर्णमालेच्या सुरुवातीची लघु अक्षरे (उदा., $a$, $b$, $c$) आणि
+!!{variable}s साठी तिच्या शेवटची लघु अक्षरे (उदा., $x$, $y$, $z$)
+वापरण्याचा संकेत आहे. संख्यापक !!{variable}s सोबत जोडले जातात, उदा.,
+$x$; वैश्विक संख्यापकासाठी $\forall x$, $(\forall x)$, $(x)$, $\Pi x$,
+$\bigwedge_x$ आणि अस्तित्ववाची संख्यापकासाठी $\exists x$, $(\exists
+x)$, $(Ex)$, $\Sigma x$, $\bigvee_x$ ही संकेतलेखनातील रूपांतरे आहेत.
+\end{intro}
+
+\begin{explain}
+आपण सर्व विधानीय कारक आणि दोन्ही संख्यापक यांना भाषेची आदिम चिन्हे
+मानू शकतो. त्याऐवजी आदिम चिन्हांचा लहान संच निवडून उरलेले
+!!{operator}s परिभाषित मानू शकतो. बूलीय कारकांच्या
+``सत्यता-फलनात्मकदृष्ट्या संपूर्ण'' संचांत $\{ \lnot, \lor \}$,
+$\{ \lnot, \land \}$ आणि $\{ \lnot,
+\lif\}$ यांचा समावेश होतो---यांपैकी प्रत्येक संच कोणत्याही एका
+संख्यापकासोबत जोडल्यास अभिव्यक्तीदृष्ट्या संपूर्ण प्रथम-क्रम भाषा मिळते.
+
+इतर दोन !!{operator}s तुम्हाला परिचित असू शकतात: शेफर स्ट्रोक~$|$
+(हे नाव हेन्री शेफर यांच्यावरून दिले आहे) आणि पिअर्स बाण~$\downarrow$,
+ज्याला क्वाइनचा डॅगर असेही म्हणतात. अनुक्रमे ``नँड'' आणि ``नॉर'' हे
+त्यांचे नेहमीचे वाचन दिल्यास, हे कारक स्वतःच सत्यता-फलनात्मकदृष्ट्या
+संपूर्ण असतात.
+\end{explain}
+
+\end{document}

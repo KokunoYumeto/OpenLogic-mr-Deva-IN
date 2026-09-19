@@ -189,6 +189,22 @@ _DOCUMENTED_PROJECTIONS = {
         ('$\\lforall[\\Obj v_0][\\Atom{\\Obj P}{\\Obj v_0}]$',
          '$\\lforall[\\Obj v_0][\\Atom{\\Obj P}]{\\Obj v_0}$'),
     ],
+    'OLP-0152': [
+        ('$\\lnot !A \\lor !B$', '$\\lnot !A \\lor !B)$'),
+    ],
+    'OLP-0156': [
+        ('$m_1,\\dotsc,m_k < i$', '$m_0,\\dotsc,m_k < i$'),
+        ('$t_i \\ident f(t_{m_1},\\dotsc,t_{m_k})$',
+         '$t_i \\ident f(t_{m_0},\\dotsc,t_{m_k})$'),
+        ('$\\Atom{\\Obj f^1_0}{\\Atom{\\Obj\nf^2_0}{\\Obj c_0, \\Obj v_0}}}$',
+         '$\\Atom{\\Obj f^1_0}{\\Atom{\\Obj\nf^2_0}{\\Obj c_0, \\Obj v_0}}$'),
+        ('$!A_n \\in \\Frm[L]$. त्याऐवजी',
+         '$!A_n \\in \\Frm[L_0]$. त्याऐवजी'),
+        ('$!A \\ident (!A_j \\land !A_k)$ असे समजा.',
+         '$!A \\equiv (!A_j \\land !A_k)$ असे समजा.'),
+        ('$!A_j$ आणि~$!A_k$ ही\n$\\Frm[L]$ मध्ये',
+         '$!A_j$ आणि~$!A_k$ ही\n$\\Frm[L_0]$ मध्ये'),
+    ],
 }
 
 
@@ -206,10 +222,18 @@ def check_with_documented_source_corrections(unit_id, source, target):
     projected, applied = project_documented_source_corrections(unit_id, target)
     result = check(source, projected)
     if applied:
-        result = {
-            'formula_multiset_parity_after_documented_source_correction_projection': result.pop('formula_multiset_parity'),
-            'macro_multiset_parity_after_documented_source_correction_projection': result.pop('macro_multiset_parity'),
-            **result,
-            'documented_source_correction_projection_applied': True,
-        }
+        if unit_id == 'OLP-0054':
+            result = {
+                'formula_multiset_parity_after_documented_equivalence_projection': result.pop('formula_multiset_parity'),
+                'macro_multiset_parity_after_documented_equivalence_projection': result.pop('macro_multiset_parity'),
+                **result,
+                'documented_equivalence_projection_applied': True,
+            }
+        else:
+            result = {
+                'formula_multiset_parity_after_documented_source_correction_projection': result.pop('formula_multiset_parity'),
+                'macro_multiset_parity_after_documented_source_correction_projection': result.pop('macro_multiset_parity'),
+                **result,
+                'documented_source_correction_projection_applied': True,
+            }
     return result

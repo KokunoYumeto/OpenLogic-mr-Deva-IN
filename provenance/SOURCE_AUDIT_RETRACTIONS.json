@@ -34,6 +34,30 @@
       },
       "lane_disposition": "No Marathi source correction or reader note was applied. An unused reservation script was deleted before execution.",
       "root_cause": "The manager counted a two-backslash byte pattern without checking the maximal consecutive-backslash run; that shorter pattern overlaps every correct three-backslash token."
+    },
+    {
+      "retraction_id": "MRINF-003-RETRACTION-20260919",
+      "status": "FINAL_RETRACTION_FALSE_POSITIVE_SOURCE_DEFECT_CLAIM",
+      "void_shared_identifier": "MRINF-003",
+      "unit_id": "OLP-0054",
+      "source_path": "content/sets-functions-relations/infinite/card-sb.tex",
+      "source_bytes": 4143,
+      "source_sha256": "88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9",
+      "review_artifact": "shared source-errata collection CARDEQ_REVIEW.md",
+      "review_sha256": "72b93f8de11ba7ed135b3affb7b7334d8b66517b9bfcadfa76fbd46f1e491288",
+      "confirmed_macro_evidence": {
+        "configuration_path": "open-logic-config.sty",
+        "configuration_bytes": 50435,
+        "configuration_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+        "definition_line": 956,
+        "definition_summary": "cardeq accepts two mandatory arguments and expands to its first argument, an approximately-equal sign, and its second argument",
+        "frozen_expression": "cardeq(cardeq(A,B),C)",
+        "literal_expansion": "A≈B≈C",
+        "interpretation": "The nested source expression is valid and expresses a chain of two cardinal equalities."
+      },
+      "lane_disposition": "The Marathi B≈C expression is retained as an equivalent focused conclusion. Its adjacent note now states the equivalence; MRINF-003 is excluded from source-error reporting and no upstream contact is warranted.",
+      "historical_record_disposition": "Published historical checkpoints remain immutable and are superseded for current interpretation by this retraction record.",
+      "root_cause": "The initial review treated the inner typesetting macro invocation as a typed set argument instead of expanding the two-argument macro literally."
     }
   ]
 }

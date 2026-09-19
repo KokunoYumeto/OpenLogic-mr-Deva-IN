@@ -1,0 +1,109 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: subformulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sbf}
+
+\olsection{\printtoken{P}{subformula}}
+
+\begin{explain}
+दिलेल्या !!{formula} चे ``घटक'' असलेल्या !!{formula}s विषयी बोलणे अनेकदा
+उपयुक्त असते. त्यांना आपण त्याची \emph{!!{subformula}s} म्हणतो. कोणतेही
+!!{formula} हे स्वतःचे !!a{subformula} मानले जाते; $!A$ स्वतः सोडून
+$!A$ चे इतर उपसूत्र म्हणजे \emph{उचित !!{subformula}} होय.
+\end{explain}
+
+\begin{defn}[तात्काळ !!^{subformula}]
+$!A$ हे !!a{formula} असेल, तर $!A$ ची \emph{तात्काळ !!{subformula}s}
+पुढीलप्रमाणे विगमनाने परिभाषित केली जातात:
+\begin{enumerate}
+\item आण्विक !!{formula}s ना तात्काळ !!{subformula}s नसतात.
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\indfrm$ चे एकमेव तात्काळ
+    !!{subformula} हे~$!B$ आहे.}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{$\indfrm$ ची तात्काळ !!{subformula}s
+  $!B$ आणि $!C$ आहेत ($\ast$ हे कोणतेही द्विस्थानी संयोजक आहे).}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{$\indfrm$ चे एकमेव तात्काळ
+    !!{subformula} हे~$!B$ आहे.}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{$\indfrm$ चे एकमेव तात्काळ
+    !!{subformula} हे~$!B$ आहे.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[उचित !!^{subformula}]
+$!A$ हे !!a{formula} असेल, तर $!A$ ची \emph{उचित !!{subformula}s}
+पुढीलप्रमाणे पुनरावर्ती रीतीने परिभाषित केली जातात:
+\begin{enumerate}
+\item आण्विक !!{formula}s ना उचित !!{subformula}s नसतात.
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\indfrm$ ची उचित
+    !!{subformula}s म्हणजे~$!B$ आणि $!B$ ची सर्व उचित !!{subformula}s.}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{$\indfrm$ ची उचित !!{subformula}s
+  म्हणजे $!B$, $!C$, $!B$ ची सर्व उचित !!{subformula}s आणि~$!C$ ची
+  सर्व उचित उपसूत्रे.}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{$\indfrm$ ची उचित
+    !!{subformula}s म्हणजे~$!B$ आणि $!B$ ची सर्व उचित
+    !!{subformula}s.}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{$\indfrm$ ची उचित
+    !!{subformula}s म्हणजे~$!B$ आणि $!B$ ची सर्व उचित
+    !!{subformula}s.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[!!^{subformula}]
+$!A$ ची !!{subformula}s म्हणजे स्वतः $!A$ आणि त्याची सर्व उचित
+!!{subformula}s.
+\end{defn}
+
+\begin{explain}
+तात्काळ !!{subformula}s आणि उचित !!{subformula}s यांच्या व्याख्यांतील
+सूक्ष्म फरक लक्षात घ्या. पहिल्या बाबतीत, $!A$ च्या प्रत्येक शक्य
+रूपासाठी आपण सूत्र~$!A$ ची तात्काळ !!{subformula}s थेट परिभाषित केली
+आहेत. ही बाबींनुसार केलेली स्पष्ट व्याख्या आहे आणि त्या बाबी
+!!{formula}s च्या संचाच्या विगमनाधारित व्याख्येला समांतर आहेत. दुसऱ्या
+बाबतीतही सर्व !!{formula}s चा संच ज्या रीतीने परिभाषित केला आहे तिला
+आपण समांतर गेलो आहोत; पण प्रत्येक बाबतीत लहान !!{formula}s $!B$, $!C$
+यांची उचित !!{subformula}s या !!{formula}s ना स्वतःलाही समाविष्ट करून
+घेतली आहेत.
+त्यामुळे व्याख्या \emph{पुनरावर्ती} होते. सर्वसाधारणपणे, विगमनाने
+परिभाषित केलेल्या संचावरील फलनाची व्याख्या (आपल्या बाबतीत हा संच म्हणजे
+!!{formula}s) पुनरावर्ती असते, जर फलनाच्या व्याख्येतील बाबी स्वतः त्या
+फलनाचा वापर करत असतील. मात्र ती सुनिर्धारित असण्यासाठी, आपण परिभाषित
+करत असलेल्या युक्तिवादाच्या ``आधी'' येणाऱ्या युक्तिवादांसाठीचीच फलनाची
+मूल्ये वापरतो याची खात्री केली पाहिजे---आपल्या बाबतीत $(!B \ast !C)$
+ची ``उचित !!{subformula}'' परिभाषित करताना आपण केवळ ``आधीच्या''
+!!{formula}s $!B$ आणि $!C$ यांची उचित !!{subformula}s वापरतो.
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:subfrm-trans}
+$!B$ हे $!A$ चे उपसूत्र आणि $!C$ हे $!B$ चे उपसूत्र आहे असे गृहीत धरा.
+मग $!C$ हे $!A$ चे उपसूत्र आहे. दुसऱ्या शब्दांत, उपसूत्र-संबंध
+संक्रमक आहे.
+\end{prop}
+
+\begin{prob}
+\olref[fol][syn][sbf]{prop:subfrm-trans} सिद्ध करा.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:count-subfrms}
+$!A$ हे $n$ संयोजके आणि संख्यापक असलेले सूत्र आहे असे गृहीत धरा.
+मग $!A$ ची जास्तीत जास्त $2n+1$ उपसूत्रे आहेत.
+\end{prop}
+
+\begin{prob}
+\olref[fol][syn][sbf]{prop:count-subfrms} सिद्ध करा.
+\end{prob}
+
+\end{document}

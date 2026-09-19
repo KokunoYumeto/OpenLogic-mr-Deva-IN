@@ -1,0 +1,273 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: formation-sequences
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{fseq}
+
+\olsection{रचनाक्रमिका}
+
+!!{formula}s ची विगमनाधारित व्याख्या देणे आणि त्याला पूरक तंत्र म्हणून
+!!{formula}s चे गुणधर्म विगमनाने सिद्ध करणे हा सुबक व कार्यक्षम
+दृष्टिकोन आहे. तथापि, !!{formula}s च्या रचनेचा तळापासून वर जाणारा,
+टप्प्याटप्प्याचा दृष्टिकोनही उपयुक्त ठरू शकतो; येथे आपण तो
+\emph{रचनाक्रमिका} या संकल्पनेच्या साहाय्याने मांडतो.
+%
+पदे आणि !!{formula}s त्यांच्या विगमनाधारित व्याख्यांचा निर्देश न करता
+या रीतीने कशी मांडता येतात हे दाखवण्यासाठी, आपण प्रथम एखाद्या
+भाषा~$\Lang L$ मधील चिन्हांपासून बनलेल्या स्वेच्छ चिन्हमालेची संकल्पना
+मांडतो.
+
+\begin{defn}[चिन्हमाला]
+\ollabel{defn:string}
+$\Lang L$ ही प्रथम-क्रम भाषा आहे असे समजा. \emph{$\Lang L$-चिन्हमाला}
+म्हणजे $\Lang L$ च्या चिन्हांची सांत क्रमिका. संदर्भावरून भाषा~$\Lang L$
+स्पष्टपणे ठरलेली असेल, तर $\Lang L$-चिन्हमालेला आपण अनेकदा फक्त
+\emph{चिन्हमाला} म्हणू.
+\end{defn}
+
+\begin{ex}
+कोणत्याही प्रथम-क्रम भाषा $\Lang L$ साठी सर्व $\Lang L$-!!{formula}s
+या $\Lang L$-चिन्हमाला असतात; पण याचे उलट खरे नसते. उदाहरणार्थ,
+\[)(\Obj v_0\lif\lexists\] ही $\Lang L$-चिन्हमाला आहे, पण
+$\Lang L$-!!{formula} नाही.
+\end{ex}
+
+\begin{defn}[पदांसाठी रचनाक्रमिका]
+\ollabel{defn:fseq-trm}
+$\Lang L$-चिन्हमालांची सांत क्रमिका $\tuple{t_0,\dotsc,t_n}$ ही पद~$t$
+साठी \emph{रचनाक्रमिका} असते, जर $t \ident t_n$ आणि प्रत्येक $i \leq n$
+साठी एकतर $t_i$ हे !!a{variable} किंवा !!a{constant} असेल, अथवा $\Lang
+L$ मध्ये एखादे $k$-स्थानी !!{function}~$f$ असेल आणि असे
+$m_1,\dotsc,m_k < i$ अस्तित्वात असतील की
+$t_i \ident f(t_{m_1},\dotsc,t_{m_k})$. फरक स्पष्ट करणे आवश्यक असेल,
+तर पदांसाठीच्या रचनाक्रमिकांना आपण \emph{पद-रचनाक्रमिका} म्हणू.
+%READERNOTE{OLFOL-006: गोठवलेल्या इंग्रजी व्याख्येत k-स्थानी फलनासाठी m_0 ते m_k असे k+1 निर्देशांक आणि तितकेच युक्तिवाद दिले आहेत. येथे k युक्तिवादांसाठी m_1 ते m_k ही सुसंगत मांडणी वापरली आहे.}
+\end{defn}
+
+\begin{ex}
+क्रमिका
+\[
+    \tuple{\Obj c_0, \Obj v_0, \Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}, \Atom{\Obj f^1_0}{\Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}}}
+\]
+ही पद $\Atom{\Obj f^1_0}{\Atom{\Obj
+f^2_0}{\Obj c_0, \Obj v_0}}}$ साठी रचनाक्रमिका आहे; त्याचप्रमाणे
+%READERNOTE{OLFOL-009: या पदाच्या गोठवलेल्या इंग्रजी आवृत्तीत बाहेरील फलन-अनुप्रयोगाचा शेवटचा आकुंचित कंस राहिला आहे. येथे तो कंस पूर्ण केला आहे.}
+\[
+    \tuple{\Obj v_0, \Obj c_0, \Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}, \Atom{\Obj f^1_0}{\Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}}}.
+\]
+हीदेखील त्याची रचनाक्रमिका आहे.
+\end{ex}
+
+\begin{defn}[सूत्रांसाठी रचनाक्रमिका]
+\ollabel{defn:fseq-frm}
+$\Lang L$-चिन्हमालांची सांत क्रमिका $\tuple{!A_0,\dotsc,!A_n}$ ही
+$!A$ साठी \emph{रचनाक्रमिका} असते, जर $!A \ident !A_n$ आणि प्रत्येक
+$i \leq n$ साठी एकतर $!A_i$ हे आण्विक !!{formula} असेल, अथवा पुढीलपैकी
+एखादी अट पूर्ण करणारे $j,k < i$ आणि एखादे !!a{variable}~$x$ अस्तित्वात
+असतील:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A_i \ident \lnot !A_j$.}{}%
+    \tagitem{prvAnd}{$!A_i \ident (!A_j \land !A_k)$.}{}%
+    \tagitem{prvOr}{$!A_i \ident (!A_j \lor !A_k)$.}{}%
+    \tagitem{prvIf}{$!A_i \ident (!A_j \lif !A_k)$.}{}%
+    \tagitem{prvIff}{$!A_i \ident (!A_j \liff !A_k)$.}{}%
+    \tagitem{prvAll}{$!A_i \ident \lforall[x][!A_j]$.}{}%
+    \tagitem{prvEx}{$!A_i \ident \lexists[x][!A_j]$.}{}%
+\end{enumerate}
+फरक स्पष्ट करणे आवश्यक असेल, तर सूत्रांसाठीच्या रचनाक्रमिकांना आपण
+\emph{सूत्र-रचनाक्रमिका} म्हणू.
+\end{defn}
+
+\begin{ex}
+\[
+\tuple{
+    \Atom{\Obj A^1_0}{\Obj v_0},
+    \Atom{\Obj A^1_1}{\Obj c_1},
+    (\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0}),
+    \lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0})]
+}
+\]
+ही $\lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj
+A^1_0}{\Obj v_0})]$ ची एक रचनाक्रमिका आहे; त्याचप्रमाणे
+\begin{multline*}
+\tuple{
+    \Atom{\Obj A^1_0}{\Obj v_0},
+    \Atom{\Obj A^1_1}{\Obj c_1},
+    (\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0}),
+    \Atom{\Obj A^1_1}{\Obj c_1},\\
+    \lforall[\Obj v_1][\Atom{\Obj A^1_0}{\Obj v_0}],
+    \lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0})]
+}.
+\end{multline*}
+%
+दुसऱ्या उदाहरणावरून दिसते की रचनाक्रमिकेत ``अडगळ'' असू शकते:
+अनावश्यक असलेली किंवा रचनेत काहीही हातभार न लावणारी !!{formula}s.
+\end{ex}
+
+\begin{prop}\ollabel{prop:formed}
+$\Frm[L]$ मधील प्रत्येक !!{formula}~$!A$ ला एक रचनाक्रमिका असते.
+\end{prop}
+
+\begin{proof}
+$!A$ आण्विक आहे असे समजा. मग क्रमिका~$\tuple{!A}$ ही $!A$ साठी
+रचनाक्रमिका आहे.
+%
+आता $!B$ आणि~$!C$ यांना अनुक्रमे $\tuple{!B_0,\dotsc,!B_n}$ आणि
+$\tuple{!C_0,\dotsc,!C_m}$ या रचनाक्रमिका आहेत असे समजा.
+%
+\begin{enumerate}
+  \tagitem{prvNot}{जर $!A \ident \lnot !B$, तर
+      $\tuple{!B_0,\dotsc,!B_n,\lnot !B_n}$ ही $!A$ साठी
+      रचनाक्रमिका आहे.}{}
+  \tagitem{prvAnd}{जर $!A \ident (!B \land !C)$, तर
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \land !C_m)}$
+      ही $!A$ साठी रचनाक्रमिका आहे.}{}
+  \tagitem{prvOr}{जर $!A \ident (!B \lor !C)$, तर
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lor !C_m)}$
+      ही $!A$ साठी रचनाक्रमिका आहे.}{}
+  \tagitem{prvIf}{जर $!A \ident (!B \lif !C)$, तर
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lif !C_m)}$
+      ही $!A$ साठी रचनाक्रमिका आहे.}{}
+  \tagitem{prvIff}{जर $!A \ident (!B \liff !C)$, तर
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \liff !C_m)}$
+      ही $!A$ साठी रचनाक्रमिका आहे.}{}
+  \tagitem{prvAll}{जर $!A \ident \lforall[x][!B]$, तर
+      $\tuple{!B_0,\dotsc,!B_n,\lforall[x][!B_n]}$
+      ही $!A$ साठी रचनाक्रमिका आहे.}{}
+  \tagitem{prvEx}{जर $!A \ident \lexists[x][!B]$, तर
+      $\tuple{!B_0,\dotsc,!B_n,\lexists[x][!B_n]}$
+      ही $!A$ साठी रचनाक्रमिका आहे.}{}
+\end{enumerate}
+!!{formula}s वरील विगमनाच्या तत्त्वानुसार प्रत्येक !!{formula} ला एक
+रचनाक्रमिका असते.
+\end{proof}
+
+याचे उलट विधानही आपण सिद्ध करू शकतो. ते महत्त्वाचे आहे, कारण त्यामुळे
+सूत्रे परिभाषित करण्याच्या आपल्या दोन्ही पद्धती सममूल्य आहेत, म्हणजे
+त्या समान परिणाम देतात, हे दिसते. तसेच रचनाक्रमिकांच्या लांबीवर साधे
+विगमन वापरून सूत्रांविषयीची प्रमेये सिद्ध करता येतात.
+
+\begin{lem}
+\ollabel{lem:fseq-init}
+$\tuple{!A_0,\dotsc,!A_n}$ ही $!A_n$ साठी रचनाक्रमिका आहे आणि
+$k \leq n$ असे समजा. मग $\tuple{!A_0,\dotsc,!A_k}$ ही $!A_k$ साठी
+रचनाक्रमिका आहे.
+\end{lem}
+
+\begin{proof}
+अभ्यासप्रश्न.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][fseq]{lem:fseq-init} सिद्ध करा.
+\end{prob}
+
+\begin{thm}
+\ollabel{thm:fseq-frm-equiv}
+$\Frm[L]$ हा अशा सर्व $\Lang L$-चिन्हमाला~$!A$ चा संच आहे की $!A$
+साठी एखादी सूत्र-रचनाक्रमिका अस्तित्वात आहे.
+\end{thm}
+
+\begin{proof}
+भाषा~$\Lang L$ मधील ज्या सर्व चिन्हमालांना रचनाक्रमिका आहे, त्यांचा
+संच~$F$ असू द्या. $\Frm[L] \subseteq F$ हे
+\olref[fol][syn][fseq]{prop:formed} मध्ये आपण पाहिले आहे; म्हणून आता उलट
+समावेश सिद्ध करू.
+
+$!A$ ला $\tuple{!A_0,\dotsc,!A_n}$ ही रचनाक्रमिका आहे असे समजा.
+$n$ वरील प्रबल विगमनाने $!A \in \Frm[L]$ हे सिद्ध करू. लांबी
+$m < n$ असलेली रचनाक्रमिका ज्या प्रत्येक चिन्हमालेला आहे, ती
+$\Frm[L]$ मध्ये आहे, हे आपले विगमन गृहीतक आहे. रचनाक्रमिकेच्या
+व्याख्येनुसार एकतर $!A \ident !A_n$ आण्विक आहे किंवा पुढीलपैकी एखादी
+अट पूर्ण करणारे $j,k < n$ अस्तित्वात असले पाहिजेत:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A \ident \lnot !A_j$.}{}%
+    \tagitem{prvAnd}{$!A \ident (!A_j \land !A_k)$.}{}%
+    \tagitem{prvOr}{$!A \ident (!A_j \lor !A_k)$.}{}%
+    \tagitem{prvIf}{$!A \ident (!A_j \lif !A_k)$.}{}%
+    \tagitem{prvIff}{$!A \ident (!A_j \liff !A_k)$.}{}%
+    \tagitem{prvAll}{$!A \ident \lforall[x][!A_j]$.}{}%
+    \tagitem{prvEx}{$!A \ident \lexists[x][!A_j]$.}{}%
+\end{enumerate}
+आता प्रत्येक शक्यतेचा स्वतंत्र विचार करू. $!A$ आण्विक असेल, तर
+$!A_n \in \Frm[L]$. त्याऐवजी $!A \ident (!A_j \land !A_k)$ असे समजा.
+%READERNOTE{OLFOL-007: हा पुरावा सामान्य भाषा L साठी आहे; गोठवलेल्या इंग्रजीतील या परिच्छेदाच्या दोन ठिकाणी चुकून विधानीय भाषा L_0 आली आहे. येथे प्रमेयाशी सुसंगत L वापरले आहे.}
+%READERNOTE{OLFOL-008: गोठवलेल्या इंग्रजीत या एकाच रचना-बाबीत विन्यासात्मक अनन्यता-चिन्हाऐवजी पर्यायी सममूल्यता-चिन्ह आले आहे. व्याख्या आणि इतर सर्व बाबींशी सुसंगत विन्यासात्मक अनन्यता येथे वापरली आहे.}
+\olref[fol][syn][fseq]{lem:fseq-init} नुसार
+$\tuple{!A_0,\dotsc,!A_j}$ आणि $\tuple{!A_0,\dotsc,!A_k}$ या अनुक्रमे
+$!A_j$ आणि~$!A_k$ साठी रचनाक्रमिका आहेत. या $!A$ च्या
+रचनाक्रमिकेच्या उचित आरंभीच्या उपक्रमिका असल्यामुळे दोन्हींची लांबी
+$n$ पेक्षा कमी आहे. म्हणून विगमन गृहीतकानुसार $!A_j$ आणि~$!A_k$ ही
+$\Frm[L]$ मध्ये आहेत; त्यामुळे !!a{formula} च्या व्याख्येनुसार
+$(!A_j \land !A_k)$ हेही त्यात आहे. इतर शक्यता समांतर युक्तिवादाने
+सिद्ध होतात.
+\end{proof}
+
+पदांसाठीच्या रचनाक्रमिकांना !!{formula}s च्या रचनाक्रमिकांसारखेच गुणधर्म
+असतात.
+
+\begin{prop}
+\ollabel{prop:fseq-trm-equiv}
+$\Trm[L]$ हा अशा सर्व $\Lang L$-चिन्हमाला $t$ चा संच आहे की $t$
+साठी एखादी पद-रचनाक्रमिका अस्तित्वात आहे.
+\end{prop}
+
+\begin{proof}
+अभ्यासप्रश्न.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][fseq]{prop:fseq-trm-equiv} सिद्ध करा.
+सूचना: \olref[fol][syn][fseq]{thm:fseq-frm-equiv} च्या सिद्धतेत वापरलेली
+रणनीती वापरा.
+\end{prob}
+
+रचनाक्रमिकेत दोन प्रकारची ``अडगळ'' येऊ शकते: पुनरावृत्त घटक आणि सूत्र
+किंवा पद यांच्या रचनेशी असंबद्ध घटक. न्यूनतम रचनाक्रमिका विचारात घेऊन
+आपण दोन्ही प्रकार दूर करू शकतो.
+
+\begin{defn}[न्यूनतम रचनाक्रमिका]
+\ollabel{defn:minimal-fseq}
+सूत्र~$!A$ साठीची रचनाक्रमिका $\tuple{!A_0, \ldots, !A_n}$ ही
+$!A$ साठी \emph{न्यूनतम रचनाक्रमिका} असते, जर $!A$ साठीची प्रत्येक
+दुसरी रचनाक्रमिका~$s$ घेतली असता~$s$ ची लांबी $n+1$ पेक्षा अधिक किंवा
+तिच्याइतकी असेल.
+
+त्याचप्रमाणे, पद~$t$ साठीची रचनाक्रमिका $\tuple{t_0, \ldots, t_n}$ ही
+$t$ साठी \emph{न्यूनतम रचनाक्रमिका} असते, जर $t$ साठीची प्रत्येक
+दुसरी रचनाक्रमिका~$s$ घेतली असता~$s$ ची लांबी $n+1$ पेक्षा अधिक किंवा
+तिच्याइतकी असेल.
+\end{defn}
+
+एका सूत्राला किंवा पदाला एकापेक्षा अधिक न्यूनतम रचनाक्रमिका असू शकतात;
+पण त्यांत नेमक्या त्याच चिन्हमाला असतील, हे लक्षात घ्या.
+
+\begin{prop}
+\ollabel{prop:subformula-equivs}
+पुढील विधाने सममूल्य आहेत:
+\begin{enumerate}
+    \item $!B$ हे $!A$ चे उप-!!{formula} आहे.
+    \item $!B$ हे $!A$ च्या प्रत्येक रचनाक्रमिकेत येते.
+    \item $!B$ हे $!A$ च्या एखाद्या न्यूनतम रचनाक्रमिकेत येते.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+अभ्यासप्रश्न.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][fseq]{prop:subformula-equivs} सिद्ध करा.
+\end{prob}
+
+\begin{history}
+रेमंड स्मलियन यांनी त्यांच्या \emph{First-Order Logic}
+\citep{Smullyan1968} या पाठ्यपुस्तकात रचनाक्रमिका प्रथम मांडल्या.
+रचनाक्रमिकांचे आणखी गुणधर्म \citet{Zuckerman1973} यांनी प्रस्थापित केले.
+\end{history}
+
+\end{document}
