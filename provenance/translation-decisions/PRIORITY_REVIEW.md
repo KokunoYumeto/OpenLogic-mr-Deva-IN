@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 41 urgent/high decisions and
-1068 current occurrences. Normal and low items remain in the full index.
+1073 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -211,6 +211,11 @@ This view contains 41 urgent/high decisions and
 | `T013-OLP-0197-B011` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | 107-110 | 106-109 | 259–260 |
 | `T013-OLP-0197-B012` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | 112-117 | 111-116 | 259–260 |
 | `T013-OLP-0197-B013` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | 119-121 | 118-120 | 259–260 |
+| `T013-OLP-0200-B008` | `OLP-0200` |  | 30-46 | 30-46 | pending |
+| `T013-OLP-0201-B014` | `OLP-0201` |  | 143-149 | 143-149 | pending |
+| `T013-OLP-0201-B016` | `OLP-0201` |  | 165-181 | 165-183 | pending |
+| `T013-OLP-0201-B017` | `OLP-0201` |  | 183-190 | 185-192 | pending |
+| `T013-OLP-0202-B009` | `OLP-0202` |  | 59-64 | 59-64 | pending |
 
 ## T014 — perfect number → परिपूर्ण संख्या
 

@@ -1,0 +1,35 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0200",
+  "method": "Same-agent English/Marathi close reading; exact structural comparison; replay of both separation lemmas; and direct checking of the corrected H symbol through the two contraposition steps. No independent human or native-speaker review is claimed.",
+  "scope": "Sentence separation, inseparable sentence sets, conservative addition of fresh constants and preservation of inseparability when an existential witness is added.",
+  "samples": [
+    {
+      "blocks": [5, 6, 7, 8],
+      "reverse_paraphrase": "An interpolant C for A and B separates A from not-B because C follows from A while not-C follows from not-B. More generally, C separates sentence sets Gamma and Delta exactly when Gamma entails C and Delta entails not-C; without such a sentence the sets are inseparable. The figure depicts the corresponding model-class inclusions.",
+      "checks": "Contraposition is used in the correct direction, the two-set definition retains both entailments, and the translated caption says that C separates Gamma and Delta."
+    },
+    {
+      "blocks": [9, 10],
+      "reverse_paraphrase": "Adding infinitely many fresh constants to the common language cannot make an inseparable pair separable. If a separator with fresh constants existed, compactness gives finite Gamma-zero and Delta-zero; replacing the fresh constant by a variable, generalizing and contraposing produces a separator already in the old language.",
+      "checks": "The finite conjunctions G and H, universal closure and two contraposition steps were followed formula by formula. The frozen delta typo was corrected to H under OLFOL-041, which makes the following H-entailment valid."
+    },
+    {
+      "blocks": [11, 12],
+      "reverse_paraphrase": "If Gamma together with an existential sentence is inseparable from Delta, adjoining a fresh witness instance preserves inseparability. A purported separator either omits the fresh constant, so satisfiability survives the witness expansion, or contains it, in which case deduction and generalization yield an old-language existential separator, contradicting the hypothesis.",
+      "checks": "Both cases, the freshness conditions, witness substitution, deduction step, universal conditional and final existential separator retain the source direction and scope."
+    }
+  ],
+  "source_observations": [
+    "T291 records विलग करते, विलगनीय and अविलगनीय from the source definitions; no independent Marathi logic headword was found.",
+    "The first lemma's frozen formula uses an unrelated delta where H is required; OLFOL-041 documents the bounded correction and structural projection.",
+    "Compactness, contraposition, semantic entailment, satisfiability, substitution and the Deduction Theorem retain the established edition terminology."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The separation-family terms remain definition-controlled and expert-reviewable.",
+    "The source's abbreviated argument that satisfiability survives adding the fresh witness instance is translated without adding a separate model-expansion proof.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

@@ -1,0 +1,130 @@
+% Part: model-theory
+% Chapter: interpolation
+% Section: definability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{int}{def}
+
+\olsection{परिभाष्यता प्रमेय}
+
+अंतर्वेशन प्रमेयाचा एक महत्त्वाचा उपयोग म्हणजे बेथचे परिभाष्यता प्रमेय.
+$n$-स्थानी संबंध~$R$ परिभाषित करण्यासाठी आपण $R$ चा समावेश नसलेले आणि
+$n$ मुक्त !!{variable}s असलेले !!a{formula}~$!C$ देऊ शकतो. ही $!C$ च्या
+साहाय्याने केलेली $R$ ची \emph{स्पष्ट} परिभाषा असेल. मग असेही म्हणता येते
+की $n$-स्थानी !!{predicate}~$P$ असलेल्या !!{language} मधील
+उपपत्ती~$\Sigma(P)$ मध्ये औपचारिक स्पष्ट परिभाषा समाविष्ट असेल (किंवा निदान
+ती परिभाषा त्या उपपत्तीतून निष्पन्न होत असेल), म्हणजे
+\[
+\Sigma(P) \Entails \lforall[x_1][\dots
+  \lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff !C(x_1, \dots,
+    x_n))]].
+\]
+तर ती उपपत्ती $P$ ला स्पष्टपणे परिभाषित करते. परंतु एखादा संबंध
+परिभाषित करण्याच्या---म्हणजे तो पूर्णपणे निर्धारित करण्याच्या---मार्गांपैकी
+स्पष्ट परिभाषा हा केवळ एक मार्ग आहे. कोणत्याही प्रतिमानात !!{language} च्या उर्वरित भागाचा अर्थबोध
+दिला की $P$ चा अर्थबोध निश्चित होईल, अशीही एखादी उपपत्ती असू शकते.
+परिभाष्यता प्रमेय असे सांगते की उपपत्ती जेव्हा या रीतीने $P$ चा अर्थबोध
+निश्चित करते---जेव्हा ती $P$ ला \emph{अंतर्निहितपणे परिभाषित करते}---तेव्हा
+ती त्याला स्पष्टपणेही परिभाषित करते.
+
+\begin{defn}
+समजा, !!{predicate}~$P$ चा समावेश नसलेली $\Lang{L}$ ही !!a{language} आहे. $\Lang{L}
+\cup \{P\}$ मधील !!{sentence}s चा संच $\Sigma(P)$ हा $P$ ला
+\emph{स्पष्टपणे परिभाषित करतो}, जर आणि केवळ जर $\Lang{L}$ मधील असे
+!!a{formula}~$!C(x_1, \dots, x_n)$ असेल की
+\[
+\Sigma(P) \Entails \lforall[x_1][\dots
+  \lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff !C(x_1, \dots,
+    x_n))]].
+\]
+\end{defn}
+
+\begin{defn}
+समजा, !!{predicate}s~$P$ आणि~$P'$ यांचा समावेश नसलेली
+$\Lang{L}$ ही !!a{language} आहे. $\Lang{L} \cup \{P\}$ मधील
+!!{sentence}s चा संच $\Sigma(P)$ हा $P$ ला \emph{अंतर्निहितपणे परिभाषित
+करतो}, जर आणि केवळ जर
+\[
+\Sigma(P) \cup \Sigma(P') \Entails \lforall[x_1][\dots
+  \lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff \Atom{P'}{x_1,\dots,
+      x_n})]],
+\]
+जेथे $\Sigma(P')$ हा $\Sigma(P)$ मध्ये सर्वत्र $P$ च्या जागी $P'$ घालून
+मिळणारा संच आहे.
+\end{defn}
+
+दुसऱ्या शब्दांत, कोणतेही प्रतिमान $\Struct{M}$ आणि $R, R' \subseteq
+\Domain{M}^n$ यांच्यासाठी, $\Expan{M}{R} \Entails \Sigma(P)$ आणि
+$\Expan{M}{R'} \Entails \Sigma(P')$ हे दोन्ही खरे असतील, तर $R=R'$;
+येथे $\Expan{M}{R}$ ही $\Lang{L}$ च्या $\Lang{L} \cup \{P\}$ या
+विस्तारासाठीची अशी !!{structure}~$\Struct{M'}$ आहे की
+$\Assign{P}{M'} = R$, आणि $\Expan{M}{R'}$ साठीही तसेच.
+
+\begin{thm}[बेथचे परिभाष्यता प्रमेय] $\Lang{L}
+  \cup\{P\}$-!!{formula}s चा संच $\Sigma(P)$ हा $P$ ला अंतर्निहितपणे
+  परिभाषित करतो, जर आणि केवळ जर $\Sigma(P)$ हा $P$ ला स्पष्टपणे परिभाषित करतो.
+%READERNOTE{OLFOL-043 — गोठविलेल्या इंग्रजी विधानातील “if and only if” या पदबंधात “if” गाळले आहे; मराठी विधानात आशयाला आवश्यक असलेला द्विशर्त संबंध स्पष्ट केला आहे.}
+\end{thm}
+
+\begin{proof}
+$\Sigma(P)$ हा $P$ ला स्पष्टपणे परिभाषित करत असेल, तर पुढील दोन्ही निष्पन्न होतात:
+\begin{align*}
+  \Sigma(P) & \Entails & \lforall[x_1][\dots \lforall[x_n]
+    [(\Atom{P}{x_1,\dots, x_n} \liff !C(x_1,\dots,x_n))]]\\
+  \Sigma(P') & \Entails & \lforall[x_1][\dots \lforall[x_n]
+    [(\Atom{P'}{x_1,\dots, x_n} \liff !C(x_1,\dots,x_n))]]
+\end{align*}
+आणि निष्कर्ष मिळतो. उलट दिशेसाठी, समजा $\Sigma(P)$ हा $P$ ला
+अंतर्निहितपणे परिभाषित करतो. प्रथम आपण $\Lang{L}$ मध्ये !!{constant}s
+$c_1$, \dots,~$c_n$ समाविष्ट करतो. मग
+\[
+\Sigma(P) \cup \Sigma(P') \Entails
+\Atom{P}{c_1, \dots, c_n} \to  \Atom{P'}{c_1, \dots, c_n}.
+\]
+संहततेनुसार, असे सांत संच $\Delta_0 \subseteq \Sigma(P)$ आणि
+$\Delta_1 \subseteq \Sigma(P')$ असतात की
+\[
+\Delta_0 \cup \Delta_1 \Entails
+\Atom{P}{c_1, \dots, c_n} \to \Atom{P'}{c_1, \dots, c_n}.
+\]
+$!D(P)$ हा अशा सर्व !!{sentence}s $!A(P)$ चा संयोग समजू की एकतर
+$!A(P) \in \Delta_0$ किंवा $!A(P') \in \Delta_1$; आणि $!D(P')$ हा अशा
+सर्व !!{sentence}s $!A(P')$ चा संयोग समजू की एकतर $!A(P) \in \Delta_0$
+किंवा $!A(P') \in \Delta_1$. मग $!D(P) \land
+!D(P') \Entails \Atom{P}{c_1, \dots, c_n} \to \Atom{P'}{c_1, \dots, c_n}$.
+%READERNOTE{OLFOL-044 — गोठविलेल्या इंग्रजी सूत्राच्या शेवटच्या अणुसूत्रात P'c_1…c_n अशी अपूर्ण कच्ची मांडणी आहे; येथे आधीपासून वापरलेले सुबद्ध अणुसूत्र पुनर्स्थापित केले आहे.}
+प्रत्येक !!{predicate} $\Entails$ च्या एका बाजूला येईल अशा रीतीने याची
+पुनर्मांडणी करता येते:
+\[
+!D(P) \land \Atom{P}{c_1, \dots, c_n} \Entails
+!D(P') \to \Atom{P'}{c_1, \dots, c_n}.
+\]
+क्रेगच्या अंतर्वेशन प्रमेयानुसार $P$ किंवा $P'$ यांचा समावेश नसलेले असे
+!!a{sentence} $!C(c_1,\dots, c_n)$ असते की
+\begin{align*}
+  !D(P) \land \Atom{P}{c_1, \dots, c_n} & \Entails !C(c_1,\dots, c_n); \\
+  !C(c_1,\dots, c_n) & \Entails !D(P') \to \Atom{P'}{c_1, \dots, c_n}.
+\end{align*}
+या दोन निष्पन्नतांपैकी पहिलीवरून $!D(P) \Entails
+\Atom{P}{c_1,\dots, c_n} \lif !C(c_1,\dots, c_n)$ मिळते. आणि दुसरीवरून,
+$\Lang{L} \cup \{P\}$-प्रतिमान $\Expan{M}{R} \Entails !A(P)$ असेल जर
+आणि केवळ जर संबंधित $\Lang{L} \cup \{P'\}$-प्रतिमान
+$\Expan{M}{R} \models !A(P')$ असेल, त्यामुळे
+$!C(c_1,\dots, c_n) \Entails !D(P) \lif \Atom{P}{c_1,\dots, c_n}$ मिळते,
+आणि त्यावरून
+\[
+!D(P) \Entails !C(c_1,\dots,c_n) \to \Atom{P}{c_1,\dots, c_n}.
+\]
+दोन्ही एकत्र केल्यावर $!D(P) \Entails \Atom{P}{c_1,\dots, c_n}
+\liff !C(c_1, \dots, c_n)$ मिळते; आणि एकस्वनिकता व सामान्यीकरण यांनुसार पुढीलही मिळते:
+\[
+\Sigma(P) \Entails
+\lforall[x_1][\dots\lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff
+    !C(x_1,\dots, x_n))]].
+\]
+\end{proof}
+
+\end{document}

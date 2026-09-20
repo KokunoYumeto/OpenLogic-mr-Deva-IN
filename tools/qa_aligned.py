@@ -285,6 +285,18 @@ _DOCUMENTED_PROJECTIONS = {
          '\\Setabs{\\tuple{x,a}}{n \\in \\Domain{K}}'),
         ('$g(n) = n-1$', '$g(n) = n+1$'),
     ],
+    'OLP-0200': [
+        ('\\lforall[x][!C] \\Entails \\lnot !H',
+         '\\lforall[x][!C] \\Entails \\lnot \\delta'),
+    ],
+    'OLP-0201': [
+        ("\\Assign{P}{M} = h(\\Assign{P}{M'_1})",
+         "\\Assign{P}{M} = h(\\Assign{P}{M'_2})"),
+    ],
+    'OLP-0202': [
+        ("!D(P) \\land\n!D(P') \\Entails \\Atom{P}{c_1, \\dots, c_n} \\to \\Atom{P'}{c_1, \\dots, c_n}",
+         "!D(P) \\land\n!D(P') \\Entails \\Atom{P}{c_1, \\dots, c_n} \\to P'c_1\\dots c_n"),
+    ],
 }
 
 

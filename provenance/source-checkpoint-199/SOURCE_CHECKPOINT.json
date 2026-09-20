@@ -1,0 +1,170 @@
+{
+  "schema": "openlogic-incremental-source-checkpoint/1",
+  "checkpoint_id": "mr-Deva-IN-source-199-20260921",
+  "generated_utc": "2026-09-20T22:15:48.9659066Z",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "base_checkpoint": {
+    "path": "provenance/source-checkpoint-194/SOURCE_CHECKPOINT.json",
+    "bytes": 47626,
+    "sha256": "64243da63f596d47b04fb2ecf51c18aceab7d9e99ac743cf6c7e2375d37ecdd3"
+  },
+  "scope": {
+    "translated_source_units": 199,
+    "total_source_units": 722,
+    "remaining_source_units": 523,
+    "aligned_content_segments": 2095,
+    "complete_source_chapters": 21,
+    "complete_reader_chapters": 20,
+    "first_incremental_unit": "OLP-0198",
+    "last_unit": "OLP-0202",
+    "next_unit": "OLP-0203",
+    "complete_edition": false
+  },
+  "translation_files": [
+    {
+      "unit_id": "OLP-0198",
+      "path": "mr/content/model-theory/interpolation/interpolation.tex",
+      "bytes": 337,
+      "sha256": "52edf5af992ff469a32e780cfa5e8f7de38c9326aab0143ed2e785e605eb06ad"
+    },
+    {
+      "unit_id": "OLP-0199",
+      "path": "mr/content/model-theory/interpolation/introduction.tex",
+      "bytes": 1759,
+      "sha256": "f5217c81b0c412d82789e0a195153ba70f462fe6a98942c12d3b470994dc50ee"
+    },
+    {
+      "unit_id": "OLP-0200",
+      "path": "mr/content/model-theory/interpolation/separation.tex",
+      "bytes": 8811,
+      "sha256": "b9aab9ccec08e5c22bc55546869c085b96a4d6a02a57fb14ea0e5dc166173b88"
+    },
+    {
+      "unit_id": "OLP-0201",
+      "path": "mr/content/model-theory/interpolation/interpolation-proof.tex",
+      "bytes": 16737,
+      "sha256": "6fa2a05905efae2349db6f14e60a84d66ee5487fbb255ad5a409d56e7f9056d7"
+    },
+    {
+      "unit_id": "OLP-0202",
+      "path": "mr/content/model-theory/interpolation/definability.tex",
+      "bytes": 9192,
+      "sha256": "1e7acede883e5c62aecefe2c1f2380473c9e17ae37a17d252655788302d8e881"
+    }
+  ],
+  "semantic_reviews": [
+    {
+      "unit_id": "OLP-0198",
+      "path": "provenance/source-checkpoint-199/SEMANTIC_REVIEW-OLP0198.json",
+      "bytes": 1540,
+      "sha256": "1b6d7d904bd1ec7b5aedfb19ceb684829470855c2d885e284b2dab8b76f99bfa"
+    },
+    {
+      "unit_id": "OLP-0199",
+      "path": "provenance/source-checkpoint-199/SEMANTIC_REVIEW-OLP0199.json",
+      "bytes": 2055,
+      "sha256": "b9747016104328f06d0b700a6ee9a1802adbc5ab4a44a247ed86a66cfad99fb8"
+    },
+    {
+      "unit_id": "OLP-0200",
+      "path": "provenance/source-checkpoint-199/SEMANTIC_REVIEW-OLP0200.json",
+      "bytes": 3355,
+      "sha256": "3b378d22e0b672cface4c761b3e78b7dfce120b0376c613b0553111d8739a8c7"
+    },
+    {
+      "unit_id": "OLP-0201",
+      "path": "provenance/source-checkpoint-199/SEMANTIC_REVIEW-OLP0201.json",
+      "bytes": 4302,
+      "sha256": "48040563a1d6c430b0a7f005014d67db4c1af0212cc7c8dd5ee106eb105ec29b"
+    },
+    {
+      "unit_id": "OLP-0202",
+      "path": "provenance/source-checkpoint-199/SEMANTIC_REVIEW-OLP0202.json",
+      "bytes": 3394,
+      "sha256": "7102f652d1df32a61c8f8cd91eded3a2d02dd19a1c2c7beb9037edd521522f5b"
+    }
+  ],
+  "source_corrections": [
+    {
+      "id": "OLFOL-041",
+      "unit_id": "OLP-0200",
+      "kind": "formula projection",
+      "summary": "Restore H in the separation proof where the frozen source prints an unrelated delta."
+    },
+    {
+      "id": "OLFOL-042",
+      "unit_id": "OLP-0201",
+      "kind": "formula projection",
+      "summary": "Transport the first-model predicate interpretation through the common-language isomorphism."
+    },
+    {
+      "id": "OLFOL-043",
+      "unit_id": "OLP-0202",
+      "kind": "bounded prose correction",
+      "summary": "Restore the missing second 'if' in Beth's biconditional theorem statement."
+    },
+    {
+      "id": "OLFOL-044",
+      "unit_id": "OLP-0202",
+      "kind": "formula projection",
+      "summary": "Restore the atomic-formula macro around the P-prime application."
+    }
+  ],
+  "qa": {
+    "units_checked": 5,
+    "unit_structural_failures": 0,
+    "formula_projections": 3,
+    "bounded_prose_corrections": 1,
+    "formula_macro_token_identifier_reference_parity": true,
+    "semantic_reviews_passed": 5,
+    "cross_package_receipt": {
+      "path": "provenance/source-checkpoint-199/CROSS_PACKAGE_QA-WORKING.json",
+      "bytes": 1324,
+      "sha256": "1e9ebaec995b3208803bb3f698faac3b2533d9e0bf69fed8789409608f621141",
+      "segment_hashes_replayed": 2095,
+      "result": "passed"
+    },
+    "independent_human_or_native_speaker_review_claimed": false,
+    "tex_reader_build_run_for_increment": false
+  },
+  "synchronized_provenance": {
+    "receipt": "provenance/PROVENANCE_SYNC.json",
+    "canon_sources": 99,
+    "canon_passages": 134,
+    "term_decisions": 294,
+    "aligned_segments": 2095,
+    "expert_review_decisions": {
+      "records": 415,
+      "path": "provenance/EXPERT_REVIEW_DECISIONS.jsonl",
+      "bytes": 2852309,
+      "sha256": "5d93946b9d0e4e47e9bba49f964c861ae8e78fab49f0019e3208cba3ce53afaf"
+    },
+    "expert_review_occurrences": {
+      "records": 11560,
+      "path": "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl",
+      "bytes": 34391398,
+      "sha256": "f6d6a01fdc181dfffc8860af3b036fe35b10c76a47f6223681b3d6f3828ec5e1"
+    },
+    "canonical_decision_qa": {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "bytes": 3534,
+      "sha256": "87a0e6e7a16d481614567655d949fbe2f721ce31d62ca3510e3a8f919706b87f",
+      "deterministic_second_run_identical": true
+    }
+  },
+  "latest_public_reader": {
+    "tag": "twenty-chapters-v0.9",
+    "last_unit": "OLP-0197",
+    "translated_units": 194,
+    "pages": 264,
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/twenty-chapters-v0.9",
+    "zenodo_doi": "10.5281/zenodo.22864626"
+  },
+  "packaging_observations": {
+    "path": "provenance/source-checkpoint-199/PACKAGING_OBSERVATIONS-TWENTY-CHAPTERS-v0.9.json",
+    "bytes": 2420,
+    "sha256": "c234df36fafd075fbe42ac2e323648681e3e164199aafe62126bc482277bffe2",
+    "disposition": "Apply both corrections at the next full-source package checkpoint; preserve the public direct TeX asset and inherited access."
+  },
+  "status": "source-complete-and-reviewed; coherent reader refresh pending"
+}

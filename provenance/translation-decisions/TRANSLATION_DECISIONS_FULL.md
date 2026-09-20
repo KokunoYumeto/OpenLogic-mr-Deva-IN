@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 occurrences.
+Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 occurrences.
 
 ## T001 — set
 
@@ -1793,6 +1793,7 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T009-OLP-0179-B021` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:159-164` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:143-147` | 237–240 |
 | `T009-OLP-0179-B025` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166` | 237–240 |
 | `T009-OLP-0179-B027` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202` | 237–240 |
+| `T009-OLP-0201-B008` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:29-32` | `mr/content/model-theory/interpolation/interpolation-proof.tex:28-31` | pending |
 
 ## T010 — truth / truth value
 
@@ -2164,6 +2165,11 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T013-OLP-0197-B011` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109` | 259–260 |
 | `T013-OLP-0197-B012` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116` | 259–260 |
 | `T013-OLP-0197-B013` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120` | 259–260 |
+| `T013-OLP-0200-B008` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:30-46` | `mr/content/model-theory/interpolation/separation.tex:30-46` | pending |
+| `T013-OLP-0201-B014` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149` | `mr/content/model-theory/interpolation/interpolation-proof.tex:143-149` | pending |
+| `T013-OLP-0201-B016` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `mr/content/model-theory/interpolation/interpolation-proof.tex:165-183` | pending |
+| `T013-OLP-0201-B017` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190` | `mr/content/model-theory/interpolation/interpolation-proof.tex:185-192` | pending |
+| `T013-OLP-0202-B009` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:59-64` | `mr/content/model-theory/interpolation/definability.tex:59-64` | pending |
 
 ## T014 — perfect number
 
@@ -2453,6 +2459,7 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T016-OLP-0146-B007` | `OLP-0146` | 14.7 आदेशन | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | 191–192 |
 | `T016-OLP-0147-B007` | `OLP-0147` | 14.8 प्रतिमाने आणि उपपत्ती | `upstream/content/first-order-logic/introduction/models-theories.tex:32-54` | `mr/content/first-order-logic/introduction/models-theories.tex:33-56` | 192 |
 | `T016-OLP-0148-B006` | `OLP-0148` | 14.9 निर्दोषता आणि संपूर्णता | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23` | 192–193 |
+| `T016-OLP-0202-B010` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:66-69` | `mr/content/model-theory/interpolation/definability.tex:66-70` | pending |
 
 ## T017 — union
 
@@ -2561,6 +2568,7 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T017-OLP-0170-B011` | `OLP-0170` | 17.3 प्रथम-क्रम उपपत्तींची उदाहरणे | `upstream/content/first-order-logic/models-theories/theories.tex:71-88` | `mr/content/first-order-logic/models-theories/theories.tex:70-86` | 224–226 |
 | `T017-OLP-0172-B006` | `OLP-0172` | 17.5 संचांची उपपत्ती | `upstream/content/first-order-logic/models-theories/set-theory.tex:13-29` | `mr/content/first-order-logic/models-theories/set-theory.tex:13-28` | 227–229 |
 | `T017-OLP-0172-B009` | `OLP-0172` | 17.5 संचांची उपपत्ती | `upstream/content/first-order-logic/models-theories/set-theory.tex:73-90` | `mr/content/first-order-logic/models-theories/set-theory.tex:70-86` | 227–229 |
+| `T017-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
 
 ## T018 — intersection
 
@@ -2637,6 +2645,9 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T018-OLP-0052-B005` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14` | 73–74 |
 | `T018-OLP-0054-B007` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:25-33` | `mr/content/sets-functions-relations/infinite/card-sb.tex:24-31` | 75–77 |
 | `T018-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43` | `mr/content/sets-functions-relations/infinite/card-sb.tex:33-41` | 75–77 |
+| `T018-OLP-0201-B007` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:22-27` | `mr/content/model-theory/interpolation/interpolation-proof.tex:22-26` | pending |
+| `T018-OLP-0201-B013` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:128-141` | `mr/content/model-theory/interpolation/interpolation-proof.tex:129-141` | pending |
+| `T018-OLP-0201-B015` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163` | `mr/content/model-theory/interpolation/interpolation-proof.tex:151-163` | pending |
 
 ## T019 — disjoint
 
@@ -3593,6 +3604,8 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T030-OLP-0185-B006` | `OLP-0185` | 19.2 उपसंरचना | `upstream/content/model-theory/basics/substructures.tex:19-37` | `mr/content/model-theory/basics/substructures.tex:19-38` | 243 |
 | `T030-OLP-0185-B007` | `OLP-0185` | 19.2 उपसंरचना | `upstream/content/model-theory/basics/substructures.tex:39-45` | `mr/content/model-theory/basics/substructures.tex:40-46` | 243 |
 | `T030-OLP-0189-B019` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `mr/content/model-theory/basics/partial-iso.tex:144-162` | 246–248 |
+| `T030-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
+| `T030-OLP-0202-B009` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:59-64` | `mr/content/model-theory/interpolation/definability.tex:59-64` | pending |
 
 ## T031 — identity relation
 
@@ -5178,6 +5191,13 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T044-OLP-0181-B006` | `OLP-0181` | 18.7 इतर तर्कशास्त्रे | `upstream/content/first-order-logic/beyond/other-logics.tex:13-20` | `mr/content/first-order-logic/beyond/other-logics.tex:13-19` | 241 |
 | `T044-OLP-0192-B007` | `OLP-0192` | 20.1 परिचय | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | 250–251 |
 | `T044-OLP-0197-B004` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:9-10` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:9-10` | 259–260 |
+| `T044-OLP-0199-B006` | `OLP-0199` |  | `upstream/content/model-theory/interpolation/introduction.tex:13-18` | `mr/content/model-theory/interpolation/introduction.tex:13-18` | pending |
+| `T044-OLP-0200-B010` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:58-83` | `mr/content/model-theory/interpolation/separation.tex:58-84` | pending |
+| `T044-OLP-0201-B006` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20` | `mr/content/model-theory/interpolation/interpolation-proof.tex:13-20` | pending |
+| `T044-OLP-0201-B017` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190` | `mr/content/model-theory/interpolation/interpolation-proof.tex:185-192` | pending |
+| `T044-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
+| `T044-OLP-0202-B007` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:34-44` | `mr/content/model-theory/interpolation/definability.tex:33-43` | pending |
+| `T044-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
 
 ## T045 — function / mapping
 
@@ -5509,6 +5529,8 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T045-OLP-0197-B008` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | 259–260 |
 | `T045-OLP-0197-B009` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98` | 259–260 |
 | `T045-OLP-0197-B010` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:100-105` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:100-104` | 259–260 |
+| `T045-OLP-0201-B015` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163` | `mr/content/model-theory/interpolation/interpolation-proof.tex:151-163` | pending |
+| `T045-OLP-0201-B016` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `mr/content/model-theory/interpolation/interpolation-proof.tex:165-183` | pending |
 
 ## T046 — domain / codomain / range
 
@@ -5733,6 +5755,8 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T046-OLP-0197-B007` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:35-40` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:34-39` | 259–260 |
 | `T046-OLP-0197-B008` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | 259–260 |
 | `T046-OLP-0197-B011` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109` | 259–260 |
+| `T046-OLP-0201-B014` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149` | `mr/content/model-theory/interpolation/interpolation-proof.tex:143-149` | pending |
+| `T046-OLP-0201-B016` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `mr/content/model-theory/interpolation/interpolation-proof.tex:165-183` | pending |
 
 ## T047 — argument / input / output / value
 
@@ -6554,6 +6578,7 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T056-OLP-0040-B021` | `OLP-0040` | 4.13 न्यूनीकरण | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:123-128` | `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:125-131` | 55–56 |
 | `T056-OLP-0130-B010` | `OLP-0130` | 13.4 हेंकिन विस्तार | `upstream/content/first-order-logic/completeness/henkin-expansions.tex:51-56` | `mr/content/first-order-logic/completeness/henkin-expansions.tex:51-56` | 174–175 |
 | `T056-OLP-0131-B008` | `OLP-0131` | 13.5 लिंडेनबाउमचे पूर्वप्रमेय | `upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:33-45` | `mr/content/first-order-logic/completeness/lindenbaums-lemma.tex:33-45` | 175–176 |
+| `T056-OLP-0201-B010` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98` | `mr/content/model-theory/interpolation/interpolation-proof.tex:37-99` | pending |
 
 ## T057 — enumerable / countable / uncountable
 
@@ -8557,6 +8582,7 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T104-OLP-0164-B047` | `OLP-0164` | 16.5 चर-मूल्यांकने | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:335-336` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:357-359` | 215–218 |
 | `T104-OLP-0166-B021` | `OLP-0166` | 16.7 चिन्हार्थविषयक संकल्पना | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:124-131` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:134-141` | 220–221 |
 | `T104-OLP-0177-B007` | `OLP-0177` | 18.3 द्वितीय-क्रम तर्कशास्त्र | `upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65` | `mr/content/first-order-logic/beyond/second-order-logic.tex:30-62` | 232–235 |
+| `T104-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
 
 ## T105 — isomorphic / isomorphism
 
@@ -8621,6 +8647,8 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T105-OLP-0196-B035` | `OLP-0196` | 20.5 PA ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | 256–259 |
 | `T105-OLP-0197-B008` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | 259–260 |
 | `T105-OLP-0197-B011` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109` | 259–260 |
+| `T105-OLP-0201-B015` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163` | `mr/content/model-theory/interpolation/interpolation-proof.tex:151-163` | pending |
+| `T105-OLP-0201-B016` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `mr/content/model-theory/interpolation/interpolation-proof.tex:165-183` | pending |
 
 ## T106 — structuralism / structuralist
 
@@ -8747,6 +8775,7 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T108-OLP-0138-B006` | `OLP-0138` | 14 प्रथम-क्रम तर्कशास्त्राचा परिचय — भाग-प्रस्तावना | `upstream/content/first-order-logic/first-order-logic.tex:19-25` | `mr/content/first-order-logic/first-order-logic.tex:19-24` | 186 |
 | `T108-OLP-0179-B018` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:128-133` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:113-118` | 237–240 |
 | `T108-OLP-0180-B007` | `OLP-0180` | 18.6 मोडल तर्कशास्त्रे | `upstream/content/first-order-logic/beyond/modal-logics.tex:31-39` | `mr/content/first-order-logic/beyond/modal-logics.tex:28-35` | 240–241 |
+| `T108-OLP-0201-B012` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:107-126` | `mr/content/model-theory/interpolation/interpolation-proof.tex:108-127` | pending |
 
 ## T109 — proof system / proof
 
@@ -8961,6 +8990,7 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T110-OLP-0180-B010` | `OLP-0180` | 18.6 मोडल तर्कशास्त्रे | `upstream/content/first-order-logic/beyond/modal-logics.tex:67-89` | `mr/content/first-order-logic/beyond/modal-logics.tex:61-81` | 240–241 |
 | `T110-OLP-0181-B006` | `OLP-0181` | 18.7 इतर तर्कशास्त्रे | `upstream/content/first-order-logic/beyond/other-logics.tex:13-20` | `mr/content/first-order-logic/beyond/other-logics.tex:13-19` | 241 |
 | `T110-OLP-0182-B005` | `OLP-0182` | 19 प्रतिमान उपपत्तीची मूलतत्त्वे — भाग-प्रस्तावना | `upstream/content/model-theory/model-theory.tex:9-17` | `mr/content/model-theory/model-theory.tex:9-16` | 242 |
+| `T110-OLP-0201-B014` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149` | `mr/content/model-theory/interpolation/interpolation-proof.tex:143-149` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -9285,6 +9315,11 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T112-OLP-0189-B024` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:189-197` | `mr/content/model-theory/basics/partial-iso.tex:192-199` | 246–248 |
 | `T112-OLP-0189-B025` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:199-213` | `mr/content/model-theory/basics/partial-iso.tex:201-215` | 246–248 |
 | `T112-OLP-0190-B005` | `OLP-0190` | 19.7 सघन रेषीय क्रम | `upstream/content/model-theory/basics/dlo.tex:12-26` | `mr/content/model-theory/basics/dlo.tex:12-26` | 248–249 |
+| `T112-OLP-0199-B006` | `OLP-0199` |  | `upstream/content/model-theory/interpolation/introduction.tex:13-18` | `mr/content/model-theory/interpolation/introduction.tex:13-18` | pending |
+| `T112-OLP-0201-B006` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20` | `mr/content/model-theory/interpolation/interpolation-proof.tex:13-20` | pending |
+| `T112-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
+| `T112-OLP-0202-B007` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:34-44` | `mr/content/model-theory/interpolation/definability.tex:33-43` | pending |
+| `T112-OLP-0202-B008` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:46-57` | `mr/content/model-theory/interpolation/definability.tex:45-57` | pending |
 
 ## T113 — classical logic / classical
 
@@ -9674,6 +9709,8 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T118-OLP-0197-B008` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | 259–260 |
 | `T118-OLP-0197-B012` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116` | 259–260 |
 | `T118-OLP-0197-B013` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120` | 259–260 |
+| `T118-OLP-0199-B007` | `OLP-0199` |  | `upstream/content/model-theory/interpolation/introduction.tex:20-25` | `mr/content/model-theory/interpolation/introduction.tex:20-24` | pending |
+| `T118-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
 
 ## T119 — formation rule / inductive definition / uniquely readable
 
@@ -10258,6 +10295,12 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T123-OLP-0168-B009` | `OLP-0168` | 17.1 परिचय | `upstream/content/first-order-logic/models-theories/introduction.tex:37-47` | `mr/content/first-order-logic/models-theories/introduction.tex:38-48` | 222–223 |
 | `T123-OLP-0168-B010` | `OLP-0168` | 17.1 परिचय | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | 222–223 |
 | `T123-OLP-0177-B015` | `OLP-0177` | 18.3 द्वितीय-क्रम तर्कशास्त्र | `upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224` | `mr/content/first-order-logic/beyond/second-order-logic.tex:198-211` | 232–235 |
+| `T123-OLP-0199-B006` | `OLP-0199` |  | `upstream/content/model-theory/interpolation/introduction.tex:13-18` | `mr/content/model-theory/interpolation/introduction.tex:13-18` | pending |
+| `T123-OLP-0200-B006` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:13-21` | `mr/content/model-theory/interpolation/separation.tex:13-21` | pending |
+| `T123-OLP-0200-B007` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:23-28` | `mr/content/model-theory/interpolation/separation.tex:23-28` | pending |
+| `T123-OLP-0201-B006` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20` | `mr/content/model-theory/interpolation/interpolation-proof.tex:13-20` | pending |
+| `T123-OLP-0201-B017` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190` | `mr/content/model-theory/interpolation/interpolation-proof.tex:185-192` | pending |
+| `T123-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -10350,6 +10393,9 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T124-OLP-0170-B012` | `OLP-0170` | 17.3 प्रथम-क्रम उपपत्तींची उदाहरणे | `upstream/content/first-order-logic/models-theories/theories.tex:90-100` | `mr/content/first-order-logic/models-theories/theories.tex:88-99` | 224–226 |
 | `T124-OLP-0172-B013` | `OLP-0172` | 17.5 संचांची उपपत्ती | `upstream/content/first-order-logic/models-theories/set-theory.tex:149-171` | `mr/content/first-order-logic/models-theories/set-theory.tex:147-169` | 227–229 |
 | `T124-OLP-0194-B014` | `OLP-0194` | 20.3 अमानक प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | 253–254 |
+| `T124-OLP-0200-B012` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:92-117` | `mr/content/model-theory/interpolation/separation.tex:93-118` | pending |
+| `T124-OLP-0201-B008` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:29-32` | `mr/content/model-theory/interpolation/interpolation-proof.tex:28-31` | pending |
+| `T124-OLP-0201-B011` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105` | `mr/content/model-theory/interpolation/interpolation-proof.tex:101-106` | pending |
 
 ## T125 — necessary / contingent
 
@@ -10596,6 +10642,16 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T126-OLP-0196-B006` | `OLP-0196` | 20.5 PA ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27` | 256–259 |
 | `T126-OLP-0196-B012` | `OLP-0196` | 20.5 PA ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:73-78` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:75-80` | 256–259 |
 | `T126-OLP-0196-B034` | `OLP-0196` | 20.5 PA ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:230-236` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:235-240` | 256–259 |
+| `T126-OLP-0199-B006` | `OLP-0199` |  | `upstream/content/model-theory/interpolation/introduction.tex:13-18` | `mr/content/model-theory/interpolation/introduction.tex:13-18` | pending |
+| `T126-OLP-0200-B005` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:11-11` | `mr/content/model-theory/interpolation/separation.tex:11-11` | pending |
+| `T126-OLP-0200-B006` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:13-21` | `mr/content/model-theory/interpolation/separation.tex:13-21` | pending |
+| `T126-OLP-0200-B007` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:23-28` | `mr/content/model-theory/interpolation/separation.tex:23-28` | pending |
+| `T126-OLP-0200-B012` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:92-117` | `mr/content/model-theory/interpolation/separation.tex:93-118` | pending |
+| `T126-OLP-0201-B006` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20` | `mr/content/model-theory/interpolation/interpolation-proof.tex:13-20` | pending |
+| `T126-OLP-0201-B010` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98` | `mr/content/model-theory/interpolation/interpolation-proof.tex:37-99` | pending |
+| `T126-OLP-0202-B007` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:34-44` | `mr/content/model-theory/interpolation/definability.tex:33-43` | pending |
+| `T126-OLP-0202-B008` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:46-57` | `mr/content/model-theory/interpolation/definability.tex:45-57` | pending |
+| `T126-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
 
 ## T127 — propositional constant
 
@@ -10935,6 +10991,9 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T128-OLP-0179-B027` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202` | 237–240 |
 | `T128-OLP-0180-B006` | `OLP-0180` | 18.6 मोडल तर्कशास्त्रे | `upstream/content/first-order-logic/beyond/modal-logics.tex:13-29` | `mr/content/first-order-logic/beyond/modal-logics.tex:13-26` | 240–241 |
 | `T128-OLP-0180-B007` | `OLP-0180` | 18.6 मोडल तर्कशास्त्रे | `upstream/content/first-order-logic/beyond/modal-logics.tex:31-39` | `mr/content/first-order-logic/beyond/modal-logics.tex:28-35` | 240–241 |
+| `T128-OLP-0200-B010` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:58-83` | `mr/content/model-theory/interpolation/separation.tex:58-84` | pending |
+| `T128-OLP-0201-B012` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:107-126` | `mr/content/model-theory/interpolation/interpolation-proof.tex:108-127` | pending |
+| `T128-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
 
 ## T129 — primitive symbol / defined symbol / defined operator
 
@@ -11401,6 +11460,7 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T138-OLP-0146-B005` | `OLP-0146` | 14.7 आदेशन | `upstream/content/first-order-logic/introduction/substitution.tex:11-11` | `mr/content/first-order-logic/introduction/substitution.tex:11-11` | 191–192 |
 | `T138-OLP-0146-B006` | `OLP-0146` | 14.7 आदेशन | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | 191–192 |
 | `T138-OLP-0146-B007` | `OLP-0146` | 14.7 आदेशन | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | 191–192 |
+| `T138-OLP-0202-B008` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:46-57` | `mr/content/model-theory/interpolation/definability.tex:45-57` | pending |
 
 ## T139 — occurrence (of a variable or formula)
 
@@ -11539,6 +11599,7 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T140-OLP-0153-B021` | `OLP-0153` | 15.4 एकमेव वाचनीयता | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:108-111` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:105-108` | 198–200 |
 | `T140-OLP-0179-B024` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:177-178` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:159-161` | 237–240 |
 | `T140-OLP-0193-B017` | `OLP-0193` | 20.2 अंकगणिताची मानक प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:139-150` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:138-150` | 251–253 |
+| `T140-OLP-0201-B010` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98` | `mr/content/model-theory/interpolation/interpolation-proof.tex:37-99` | pending |
 
 ## T141 — formation sequence
 
@@ -11684,6 +11745,8 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T143-OLP-0165-B015` | `OLP-0165` | 16.6 विस्तारात्मकता | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:70-75` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:71-76` | 218–220 |
 | `T143-OLP-0165-B018` | `OLP-0165` | 16.6 विस्तारात्मकता | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:86-103` | `mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:88-106` | 218–220 |
 | `T143-OLP-0177-B011` | `OLP-0177` | 18.3 द्वितीय-क्रम तर्कशास्त्र | `upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167` | `mr/content/first-order-logic/beyond/second-order-logic.tex:121-157` | 232–235 |
+| `T143-OLP-0201-B010` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98` | `mr/content/model-theory/interpolation/interpolation-proof.tex:37-99` | pending |
+| `T143-OLP-0201-B017` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190` | `mr/content/model-theory/interpolation/interpolation-proof.tex:185-192` | pending |
 
 ## T144 — finite sequence / proper initial subsequence
 
@@ -11896,6 +11959,8 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T148-OLP-0166-B014` | `OLP-0166` | 16.7 चिन्हार्थविषयक संकल्पना | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:75-80` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:79-84` | 220–221 |
 | `T148-OLP-0166-B015` | `OLP-0166` | 16.7 चिन्हार्थविषयक संकल्पना | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:82-90` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:86-96` | 220–221 |
 | `T148-OLP-0170-B012` | `OLP-0170` | 17.3 प्रथम-क्रम उपपत्तींची उदाहरणे | `upstream/content/first-order-logic/models-theories/theories.tex:90-100` | `mr/content/first-order-logic/models-theories/theories.tex:88-99` | 224–226 |
+| `T148-OLP-0201-B008` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:29-32` | `mr/content/model-theory/interpolation/interpolation-proof.tex:28-31` | pending |
+| `T148-OLP-0201-B011` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105` | `mr/content/model-theory/interpolation/interpolation-proof.tex:101-106` | pending |
 
 ## T149 — monotonicity (of semantic entailment)
 
@@ -11937,6 +12002,8 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T149-OLP-0121-B010` | `OLP-0121` | 12.9 निष्पन्नता आणि सुसंगतता | `upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | `mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44` | 166 |
 | `T149-OLP-0166-B016` | `OLP-0166` | 16.7 चिन्हार्थविषयक संकल्पना | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:92-95` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:98-101` | 220–221 |
 | `T149-OLP-0166-B017` | `OLP-0166` | 16.7 चिन्हार्थविषयक संकल्पना | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:97-102` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:103-109` | 220–221 |
+| `T149-OLP-0200-B010` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:58-83` | `mr/content/model-theory/interpolation/separation.tex:58-84` | pending |
+| `T149-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
 
 ## T150 — Semantic Deduction Theorem
 
@@ -12351,6 +12418,8 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T154-OLP-0137-B008` | `OLP-0137` | 13.11 लोव्हेनहाइम–स्कोलेम प्रमेय | `upstream/content/first-order-logic/completeness/downward-ls.tex:33-38` | `mr/content/first-order-logic/completeness/downward-ls.tex:33-38` | 184–185 |
 | `T154-OLP-0137-B010` | `OLP-0137` | 13.11 लोव्हेनहाइम–स्कोलेम प्रमेय | `upstream/content/first-order-logic/completeness/downward-ls.tex:48-61` | `mr/content/first-order-logic/completeness/downward-ls.tex:48-60` | 184–185 |
 | `T154-OLP-0168-B006` | `OLP-0168` | 17.1 परिचय | `upstream/content/first-order-logic/models-theories/introduction.tex:21-26` | `mr/content/first-order-logic/models-theories/introduction.tex:21-26` | 222–223 |
+| `T154-OLP-0198-B004` | `OLP-0198` |  | `upstream/content/model-theory/interpolation/interpolation.tex:8-8` | `mr/content/model-theory/interpolation/interpolation.tex:8-8` | pending |
+| `T154-OLP-0202-B010` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:66-69` | `mr/content/model-theory/interpolation/definability.tex:66-70` | pending |
 
 ## T155 — soundness / sound / unsound (of a proof system)
 
@@ -12694,6 +12763,10 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T156-OLP-0180-B009` | `OLP-0180` | 18.6 मोडल तर्कशास्त्रे | `upstream/content/first-order-logic/beyond/modal-logics.tex:50-65` | `mr/content/first-order-logic/beyond/modal-logics.tex:45-59` | 240–241 |
 | `T156-OLP-0188-B013` | `OLP-0188` | 19.5 संरचनेची उपपत्ती | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | 245–246 |
 | `T156-OLP-0192-B007` | `OLP-0192` | 20.1 परिचय | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | 250–251 |
+| `T156-OLP-0199-B007` | `OLP-0199` |  | `upstream/content/model-theory/interpolation/introduction.tex:20-25` | `mr/content/model-theory/interpolation/introduction.tex:20-24` | pending |
+| `T156-OLP-0201-B011` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105` | `mr/content/model-theory/interpolation/interpolation-proof.tex:101-106` | pending |
+| `T156-OLP-0201-B012` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:107-126` | `mr/content/model-theory/interpolation/interpolation-proof.tex:108-127` | pending |
+| `T156-OLP-0201-B013` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:128-141` | `mr/content/model-theory/interpolation/interpolation-proof.tex:129-141` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -14325,6 +14398,9 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T181-OLP-0192-B006` | `OLP-0192` | 20.1 परिचय | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:41-53` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:39-50` | 250–251 |
 | `T181-OLP-0194-B011` | `OLP-0194` | 20.3 अमानक प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-76` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-74` | 253–254 |
 | `T181-OLP-0194-B014` | `OLP-0194` | 20.3 अमानक प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | 253–254 |
+| `T181-OLP-0200-B010` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:58-83` | `mr/content/model-theory/interpolation/separation.tex:58-84` | pending |
+| `T181-OLP-0201-B011` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105` | `mr/content/model-theory/interpolation/interpolation-proof.tex:101-106` | pending |
+| `T181-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
 
 ## T182 — proof-theoretic notions
 
@@ -14832,6 +14908,7 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T186-OLP-0122-B013` | `OLP-0122` | 12.10 निष्पन्नता आणि विधानीय संयोजक | `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:79-82` | `mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:82-85` | 166–167 |
 | `T186-OLP-0123-B009` | `OLP-0123` | 12.11 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:27-32` | `mr/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:27-34` | 167–168 |
 | `T186-OLP-0123-B012` | `OLP-0123` | 12.11 निष्पन्नता आणि संख्यापक | `upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:43-48` | `mr/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:45-50` | 167–168 |
+| `T186-OLP-0200-B012` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:92-117` | `mr/content/model-theory/interpolation/separation.tex:93-118` | pending |
 
 ## T187 — contraposition
 
@@ -14859,6 +14936,9 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 |---|---|---|---|---|---|
 | `T187-OLP-0119-B018` | `OLP-0119` | 12.7 निगमन प्रमेय | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118` | `mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119` | 164–165 |
 | `T187-OLP-0134-B010` | `OLP-0134` | 13.8 संपूर्णता प्रमेय | `upstream/content/first-order-logic/completeness/completeness-thm.tex:57-64` | `mr/content/first-order-logic/completeness/completeness-thm.tex:57-64` | 181 |
+| `T187-OLP-0200-B006` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:13-21` | `mr/content/model-theory/interpolation/separation.tex:13-21` | pending |
+| `T187-OLP-0200-B010` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:58-83` | `mr/content/model-theory/interpolation/separation.tex:58-84` | pending |
+| `T187-OLP-0201-B009` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:34-37` | `mr/content/model-theory/interpolation/interpolation-proof.tex:33-35` | pending |
 
 ## T188 — ex falso quodlibet / explosion
 
@@ -15012,6 +15092,7 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T191-OLP-0133-B016` | `OLP-0133` | 13.7 एकरूपता | `upstream/content/first-order-logic/completeness/identity.tex:162-169` | `mr/content/first-order-logic/completeness/identity.tex:164-171` | 178–181 |
 | `T191-OLP-0136-B006` | `OLP-0136` | 13.10 संहतता प्रमेयाची प्रत्यक्ष सिद्धता | `upstream/content/first-order-logic/completeness/compactness-direct.tex:15-24` | `mr/content/first-order-logic/completeness/compactness-direct.tex:15-22` | 183–184 |
 | `T191-OLP-0136-B022` | `OLP-0136` | 13.10 संहतता प्रमेयाची प्रत्यक्ष सिद्धता | `upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143` | `mr/content/first-order-logic/completeness/compactness-direct.tex:128-145` | 183–184 |
+| `T191-OLP-0201-B014` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149` | `mr/content/model-theory/interpolation/interpolation-proof.tex:143-149` | pending |
 
 ## T192 — complete set of sentences
 
@@ -15164,6 +15245,9 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T194-OLP-0130-B018` | `OLP-0130` | 13.4 हेंकिन विस्तार | `upstream/content/first-order-logic/completeness/henkin-expansions.tex:149-158` | `mr/content/first-order-logic/completeness/henkin-expansions.tex:150-159` | 174–175 |
 | `T194-OLP-0179-B027` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202` | 237–240 |
 | `T194-OLP-0192-B007` | `OLP-0192` | 20.1 परिचय | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | 250–251 |
+| `T194-OLP-0200-B011` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:85-90` | `mr/content/model-theory/interpolation/separation.tex:86-91` | pending |
+| `T194-OLP-0200-B012` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:92-117` | `mr/content/model-theory/interpolation/separation.tex:93-118` | pending |
+| `T194-OLP-0201-B010` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98` | `mr/content/model-theory/interpolation/interpolation-proof.tex:37-99` | pending |
 
 ## T195 — lemma
 
@@ -15478,6 +15562,10 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T202-OLP-0189-B016` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:122-129` | `mr/content/model-theory/basics/partial-iso.tex:124-130` | 246–248 |
 | `T202-OLP-0189-B021` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:167-174` | `mr/content/model-theory/basics/partial-iso.tex:171-178` | 246–248 |
 | `T202-OLP-0190-B005` | `OLP-0190` | 19.7 सघन रेषीय क्रम | `upstream/content/model-theory/basics/dlo.tex:12-26` | `mr/content/model-theory/basics/dlo.tex:12-26` | 248–249 |
+| `T202-OLP-0200-B009` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:49-56` | `mr/content/model-theory/interpolation/separation.tex:49-56` | pending |
+| `T202-OLP-0201-B007` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:22-27` | `mr/content/model-theory/interpolation/interpolation-proof.tex:22-26` | pending |
+| `T202-OLP-0202-B007` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:34-44` | `mr/content/model-theory/interpolation/definability.tex:33-43` | pending |
+| `T202-OLP-0202-B008` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:46-57` | `mr/content/model-theory/interpolation/definability.tex:45-57` | pending |
 
 ## T203 — structural induction
 
@@ -15643,6 +15731,7 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T204-OLP-0189-B012` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:93-100` | `mr/content/model-theory/basics/partial-iso.tex:93-100` | 246–248 |
 | `T204-OLP-0189-B019` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `mr/content/model-theory/basics/partial-iso.tex:144-162` | 246–248 |
 | `T204-OLP-0189-B021` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:167-174` | `mr/content/model-theory/basics/partial-iso.tex:171-178` | 246–248 |
+| `T204-OLP-0201-B015` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163` | `mr/content/model-theory/interpolation/interpolation-proof.tex:151-163` | pending |
 
 ## T205 — variable / constant / function (as language symbols)
 
@@ -15732,6 +15821,18 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T205-OLP-0197-B007` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:35-40` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:34-39` | 259–260 |
 | `T205-OLP-0197-B008` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | 259–260 |
 | `T205-OLP-0197-B009` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98` | 259–260 |
+| `T205-OLP-0199-B006` | `OLP-0199` |  | `upstream/content/model-theory/interpolation/introduction.tex:13-18` | `mr/content/model-theory/interpolation/introduction.tex:13-18` | pending |
+| `T205-OLP-0200-B009` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:49-56` | `mr/content/model-theory/interpolation/separation.tex:49-56` | pending |
+| `T205-OLP-0200-B010` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:58-83` | `mr/content/model-theory/interpolation/separation.tex:58-84` | pending |
+| `T205-OLP-0200-B011` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:85-90` | `mr/content/model-theory/interpolation/separation.tex:86-91` | pending |
+| `T205-OLP-0200-B012` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:92-117` | `mr/content/model-theory/interpolation/separation.tex:93-118` | pending |
+| `T205-OLP-0201-B006` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20` | `mr/content/model-theory/interpolation/interpolation-proof.tex:13-20` | pending |
+| `T205-OLP-0201-B007` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:22-27` | `mr/content/model-theory/interpolation/interpolation-proof.tex:22-26` | pending |
+| `T205-OLP-0201-B010` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98` | `mr/content/model-theory/interpolation/interpolation-proof.tex:37-99` | pending |
+| `T205-OLP-0201-B014` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149` | `mr/content/model-theory/interpolation/interpolation-proof.tex:143-149` | pending |
+| `T205-OLP-0201-B015` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163` | `mr/content/model-theory/interpolation/interpolation-proof.tex:151-163` | pending |
+| `T205-OLP-0201-B016` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `mr/content/model-theory/interpolation/interpolation-proof.tex:165-183` | pending |
+| `T205-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
 
 ## T206 — logical symbol / non-logical symbol / standard language
 
@@ -15814,6 +15915,7 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T207-OLP-0187-B007` | `OLP-0187` | 19.4 समरूपी रचना | `upstream/content/model-theory/basics/isomorphism.tex:35-59` | `mr/content/model-theory/basics/isomorphism.tex:34-58` | 243–245 |
 | `T207-OLP-0189-B005` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | 246–248 |
 | `T207-OLP-0189-B016` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:122-129` | `mr/content/model-theory/basics/partial-iso.tex:124-130` | 246–248 |
+| `T207-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
 
 ## T208 — universal quantifier / existential quantifier
 
@@ -16237,6 +16339,10 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T216-OLP-0166-B015` | `OLP-0166` | 16.7 चिन्हार्थविषयक संकल्पना | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:82-90` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:86-96` | 220–221 |
 | `T216-OLP-0166-B022` | `OLP-0166` | 16.7 चिन्हार्थविषयक संकल्पना | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | 220–221 |
 | `T216-OLP-0177-B007` | `OLP-0177` | 18.3 द्वितीय-क्रम तर्कशास्त्र | `upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65` | `mr/content/first-order-logic/beyond/second-order-logic.tex:30-62` | 232–235 |
+| `T216-OLP-0200-B010` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:58-83` | `mr/content/model-theory/interpolation/separation.tex:58-84` | pending |
+| `T216-OLP-0200-B011` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:85-90` | `mr/content/model-theory/interpolation/separation.tex:86-91` | pending |
+| `T216-OLP-0200-B012` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:92-117` | `mr/content/model-theory/interpolation/separation.tex:93-118` | pending |
+| `T216-OLP-0201-B010` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98` | `mr/content/model-theory/interpolation/interpolation-proof.tex:37-99` | pending |
 
 ## T217 — instance of a quantified formula
 
@@ -16503,6 +16609,11 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T218-OLP-0197-B008` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | 259–260 |
 | `T218-OLP-0197-B009` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98` | 259–260 |
 | `T218-OLP-0197-B011` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109` | 259–260 |
+| `T218-OLP-0201-B014` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149` | `mr/content/model-theory/interpolation/interpolation-proof.tex:143-149` | pending |
+| `T218-OLP-0201-B015` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163` | `mr/content/model-theory/interpolation/interpolation-proof.tex:151-163` | pending |
+| `T218-OLP-0201-B016` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `mr/content/model-theory/interpolation/interpolation-proof.tex:165-183` | pending |
+| `T218-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
+| `T218-OLP-0202-B009` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:59-64` | `mr/content/model-theory/interpolation/definability.tex:59-64` | pending |
 
 ## T219 — free logic
 
@@ -16789,6 +16900,9 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T227-OLP-0170-B009` | `OLP-0170` | 17.3 प्रथम-क्रम उपपत्तींची उदाहरणे | `upstream/content/first-order-logic/models-theories/theories.tex:59-60` | `mr/content/first-order-logic/models-theories/theories.tex:59-60` | 224–226 |
 | `T227-OLP-0171-B010` | `OLP-0171` | 17.4 संरचना मधील संबंध व्यक्त करणे | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80` | 226–227 |
 | `T227-OLP-0172-B007` | `OLP-0172` | 17.5 संचांची उपपत्ती | `upstream/content/first-order-logic/models-theories/set-theory.tex:31-55` | `mr/content/first-order-logic/models-theories/set-theory.tex:30-54` | 227–229 |
+| `T227-OLP-0199-B007` | `OLP-0199` |  | `upstream/content/model-theory/interpolation/introduction.tex:20-25` | `mr/content/model-theory/interpolation/introduction.tex:20-24` | pending |
+| `T227-OLP-0202-B005` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:11-11` | `mr/content/model-theory/interpolation/definability.tex:11-11` | pending |
+| `T227-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
 
 ## T228 — closed under entailment / closure of a sentence set
 
@@ -18216,6 +18330,8 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | `T272-OLP-0184-B007` | `OLP-0184` | 19.1 न्यूनीकृत आणि विस्तारित रचना | `upstream/content/model-theory/basics/reducts-and-expansions.tex:41-49` | `mr/content/model-theory/basics/reducts-and-expansions.tex:40-48` | 242–243 |
 | `T272-OLP-0184-B010` | `OLP-0184` | 19.1 न्यूनीकृत आणि विस्तारित रचना | `upstream/content/model-theory/basics/reducts-and-expansions.tex:59-65` | `mr/content/model-theory/basics/reducts-and-expansions.tex:58-65` | 242–243 |
 | `T272-OLP-0196-B035` | `OLP-0196` | 20.5 PA ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | 256–259 |
+| `T272-OLP-0201-B015` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163` | `mr/content/model-theory/interpolation/interpolation-proof.tex:151-163` | pending |
+| `T272-OLP-0202-B009` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:59-64` | `mr/content/model-theory/interpolation/definability.tex:59-64` | pending |
 
 ## T273 — substructure / extension (model theory)
 
@@ -18877,6 +18993,189 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T289-OLP-0197-B013` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120` | 259–260 |
+
+## T290 — interpolation theorem / interpolant (logic)
+
+**Chosen rendering/action:** अंतर्वेशन प्रमेय / अंतर्वेशक वाक्य
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P134 directly attests the अंतर्वेशन lexical family in authoritative Marathi mathematics, but in the numerical rather than logical sense. OpenLogic explicitly defines the logical object C by A entails C, C entails B, and restriction to the nonlogical vocabulary common to A and B. The target therefore extends the attested stem transparently as अंतर्वेशन प्रमेय and uses अंतर्वेशक वाक्य only under that displayed definition.
+
+**Rationale:** MR-P134 directly attests the अंतर्वेशन lexical family in authoritative Marathi mathematics, but in the numerical rather than logical sense. OpenLogic explicitly defines the logical object C by A entails C, C entails B, and restriction to the nonlogical vocabulary common to A and B. The target therefore extends the attested stem transparently as अंतर्वेशन प्रमेय and uses अंतर्वेशक वाक्य only under that displayed definition.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P010` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P134` — अंतर्वेशन व बहिर्वेशन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26179/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web extraction. Limitation: The source treats numerical interpolation. OpenLogic's formulas and definition, not this lexical source, govern the logical theorem and interpolant senses; direct origin-page bytes were unavailable in the shell lane.
+
+**Alternatives:**
+
+- क्रेग अंतर्वेशन प्रमेय / अंतर्वर्ती वाक्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- मध्यस्थ-वाक्य प्रमेय / मध्यस्थ वाक्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- इंटरपोलेशन प्रमेय / इंटरपोलंट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is अंतर्वेशक वाक्य a natural Marathi logic noun for interpolant, or should the edition retain a transliteration or use मध्यस्थ वाक्य?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T290-OLP-0198-B004` | `OLP-0198` |  | `upstream/content/model-theory/interpolation/interpolation.tex:8-8` | `mr/content/model-theory/interpolation/interpolation.tex:8-8` | pending |
+| `T290-OLP-0199-B006` | `OLP-0199` |  | `upstream/content/model-theory/interpolation/introduction.tex:13-18` | `mr/content/model-theory/interpolation/introduction.tex:13-18` | pending |
+| `T290-OLP-0199-B007` | `OLP-0199` |  | `upstream/content/model-theory/interpolation/introduction.tex:20-25` | `mr/content/model-theory/interpolation/introduction.tex:20-24` | pending |
+| `T290-OLP-0200-B006` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:13-21` | `mr/content/model-theory/interpolation/separation.tex:13-21` | pending |
+| `T290-OLP-0201-B005` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:11-11` | `mr/content/model-theory/interpolation/interpolation-proof.tex:11-11` | pending |
+| `T290-OLP-0201-B006` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20` | `mr/content/model-theory/interpolation/interpolation-proof.tex:13-20` | pending |
+| `T290-OLP-0201-B008` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:29-32` | `mr/content/model-theory/interpolation/interpolation-proof.tex:28-31` | pending |
+| `T290-OLP-0201-B009` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:34-37` | `mr/content/model-theory/interpolation/interpolation-proof.tex:33-35` | pending |
+| `T290-OLP-0201-B017` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190` | `mr/content/model-theory/interpolation/interpolation-proof.tex:185-192` | pending |
+| `T290-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
+
+## T291 — separates / separable / inseparable (sets of sentences)
+
+**Chosen rendering/action:** विलग करते / विलगनीय / अविलगनीय
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** No exact Marathi model-theory headword was found in the bounded search. OpenLogic defines separation by the two consequence clauses Gamma entails C and Delta entails not-C, so the compact विलग family is controlled locally by the formula and kept distinct from T241's set-theoretic विभक्तीकरण schema.
+
+**Rationale:** No exact Marathi model-theory headword was found in the bounded search. OpenLogic defines separation by the two consequence clauses Gamma entails C and Delta entails not-C, so the compact विलग family is controlled locally by the formula and kept distinct from T241's set-theoretic विभक्तीकरण schema.
+
+**Authorities actually checked:**
+
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P017` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 81 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P023` — गणितशास्त्र परिभाषा कोश. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): short primary-source observation read; source bytes not preserved
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- विभक्त करते / विभक्तनीय / अविभक्तनीय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- पृथक् करते / पृथक्करणीय / अपृथक्करणीय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- वेगळे करते / वेगळे न करता येणारे — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is अविलगनीय readable as the repeated technical adjective for inseparable theories, while remaining distinct from set-theoretic Separation?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T291-OLP-0200-B005` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:11-11` | `mr/content/model-theory/interpolation/separation.tex:11-11` | pending |
+| `T291-OLP-0200-B006` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:13-21` | `mr/content/model-theory/interpolation/separation.tex:13-21` | pending |
+| `T291-OLP-0200-B007` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:23-28` | `mr/content/model-theory/interpolation/separation.tex:23-28` | pending |
+| `T291-OLP-0200-B008` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:30-46` | `mr/content/model-theory/interpolation/separation.tex:30-46` | pending |
+| `T291-OLP-0200-B009` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:49-56` | `mr/content/model-theory/interpolation/separation.tex:49-56` | pending |
+| `T291-OLP-0200-B010` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:58-83` | `mr/content/model-theory/interpolation/separation.tex:58-84` | pending |
+| `T291-OLP-0200-B011` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:85-90` | `mr/content/model-theory/interpolation/separation.tex:86-91` | pending |
+| `T291-OLP-0200-B012` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:92-117` | `mr/content/model-theory/interpolation/separation.tex:93-118` | pending |
+| `T291-OLP-0201-B009` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:34-37` | `mr/content/model-theory/interpolation/interpolation-proof.tex:33-35` | pending |
+| `T291-OLP-0201-B010` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98` | `mr/content/model-theory/interpolation/interpolation-proof.tex:37-99` | pending |
+| `T291-OLP-0201-B011` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105` | `mr/content/model-theory/interpolation/interpolation-proof.tex:101-106` | pending |
+
+## T292 — Craig / Beth / Robinson; joint consistency theorem
+
+**Chosen rendering/action:** क्रेग / बेथ / रॉबिन्सन; संयुक्त सुसंगतता प्रमेय
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The established canon directly supports the theorem and consistency register but the bounded official and university search exposed no Marathi attestations of these three theorem names. The surnames are reversible pronunciation-based forms, and संयुक्त सुसंगतता is the transparent reading fixed by the source's stated condition that combining two consistent theories remains consistent.
+
+**Rationale:** The established canon directly supports the theorem and consistency register but the bounded official and university search exposed no Marathi attestations of these three theorem names. The surnames are reversible pronunciation-based forms, and संयुक्त सुसंगतता is the transparent reading fixed by the source's stated condition that combining two consistent theories remains consistent.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P085` — सिद्धतापद्धती : सोपाधिक व अप्रत्यक्ष (CP and IP). https://marathivishwakosh.org/50021/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly name natural-deduction discharge or introduction/elimination rules.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
+
+**Alternatives:**
+
+- क्रेग / बेथ / रॉबिन्सन; सह-सुसंगतता प्रमेय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- क्रेग / बेथ / रॉबिन्सन; संयुक्त संगतता प्रमेय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are the three surname spellings and संयुक्त सुसंगतता प्रमेय conventional in Marathi mathematical logic?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T292-OLP-0199-B007` | `OLP-0199` |  | `upstream/content/model-theory/interpolation/introduction.tex:20-25` | `mr/content/model-theory/interpolation/introduction.tex:20-24` | pending |
+| `T292-OLP-0201-B005` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:11-11` | `mr/content/model-theory/interpolation/interpolation-proof.tex:11-11` | pending |
+| `T292-OLP-0201-B006` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20` | `mr/content/model-theory/interpolation/interpolation-proof.tex:13-20` | pending |
+| `T292-OLP-0202-B010` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:66-69` | `mr/content/model-theory/interpolation/definability.tex:66-70` | pending |
+| `T292-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
+
+## T293 — explicitly defines / implicitly defines; explicit / implicit definition
+
+**Chosen rendering/action:** स्पष्टपणे परिभाषित करते / अंतर्निहितपणे परिभाषित करते; स्पष्ट / अंतर्निहित परिभाषा
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The canon supports the edition's formula, definition, interpretation and definability register. OpenLogic supplies extensional definitions: explicit definability requires one L-formula equivalent to P under Sigma, whereas implicit definability requires any two P-expansions of the same L-structure satisfying the theory to give the same relation. These clauses control the transparent modifiers and prevent implicit from meaning merely unstated.
+
+**Rationale:** The canon supports the edition's formula, definition, interpretation and definability register. OpenLogic supplies extensional definitions: explicit definability requires one L-formula equivalent to P under Sigma, whereas implicit definability requires any two P-expansions of the same L-structure satisfying the theory to give the same relation. These clauses control the transparent modifiers and prevent implicit from meaning merely unstated.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P072` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — D glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/d (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- प्रत्यक्षपणे / अप्रत्यक्षपणे परिभाषित करते — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- व्यक्त / अव्यक्त परिभाषा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- उघड / गर्भित परिभाषा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does अंतर्निहितपणे clearly convey uniqueness across expansions, or is अप्रत्यक्षपणे more conventional for implicit definability?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T293-OLP-0199-B007` | `OLP-0199` |  | `upstream/content/model-theory/interpolation/introduction.tex:20-25` | `mr/content/model-theory/interpolation/introduction.tex:20-24` | pending |
+| `T293-OLP-0202-B005` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:11-11` | `mr/content/model-theory/interpolation/definability.tex:11-11` | pending |
+| `T293-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
+| `T293-OLP-0202-B007` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:34-44` | `mr/content/model-theory/interpolation/definability.tex:33-43` | pending |
+| `T293-OLP-0202-B008` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:46-57` | `mr/content/model-theory/interpolation/definability.tex:45-57` | pending |
+| `T293-OLP-0202-B009` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:59-64` | `mr/content/model-theory/interpolation/definability.tex:59-64` | pending |
+| `T293-OLP-0202-B010` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:66-69` | `mr/content/model-theory/interpolation/definability.tex:66-70` | pending |
+| `T293-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
+
+## T294 — maximally inseparable / maximally consistent
+
+**Chosen rendering/action:** महत्तम अविलगनीय / महत्तम सुसंगत
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The canon directly supports consistency and the established complete-consistent-set construction. In this proof OpenLogic builds an inseparable pair by deciding each enumerated sentence, and later characterizes maximal consistency by membership of either S or not-S. महत्तम preserves the inclusion-maximal force while the displayed construction and clauses govern both uses.
+
+**Rationale:** The canon directly supports consistency and the established complete-consistent-set construction. In this proof OpenLogic builds an inseparable pair by deciding each enumerated sentence, and later characterizes maximal consistency by membership of either S or not-S. महत्तम preserves the inclusion-maximal force while the displayed construction and clauses govern both uses.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P085` — सिद्धतापद्धती : सोपाधिक व अप्रत्यक्ष (CP and IP). https://marathivishwakosh.org/50021/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly name natural-deduction discharge or introduction/elimination rules.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
+
+**Alternatives:**
+
+- कमाल अविलगनीय / कमाल सुसंगत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- पूर्णतः अविलगनीय / संपूर्ण सुसंगत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अधिकतम अविलगनीय / अधिकतम सुसंगत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should inclusion-maximal theories use महत्तम or the more familiar कमाल, and should maximally consistent align terminologically with the edition's complete consistent sets?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T294-OLP-0201-B010` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98` | `mr/content/model-theory/interpolation/interpolation-proof.tex:37-99` | pending |
+| `T294-OLP-0201-B012` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:107-126` | `mr/content/model-theory/interpolation/interpolation-proof.tex:108-127` | pending |
+| `T294-OLP-0201-B013` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:128-141` | `mr/content/model-theory/interpolation/interpolation-proof.tex:129-141` | pending |
+| `T294-OLP-0201-B014` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149` | `mr/content/model-theory/interpolation/interpolation-proof.tex:143-149` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -21807,6 +22106,106 @@ Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLFOL-040-OLP-0197` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:64-67` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:63-67` | 259–260 |
+
+## OLFOL-041 — confirmed-frozen-source-unbound proof symbol with documented formula projection
+
+**Chosen rendering/action:** Replaced the unrelated delta by H in the Marathi formula, placed adjacent reader note OLFOL-041 and added a unit-specific QA projection that reconstructs the frozen delta solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** After defining H as the conjunction of Delta-zero and deriving C[c/x] entails not-H by contraposition, the frozen proof says forall-x C entails not-delta. The lowercase Greek delta is neither introduced here nor suitable for the next contraposition, which immediately concludes H entails not-forall-x C. The argument requires not-H on the right-hand side.
+
+**Rationale:** After defining H as the conjunction of Delta-zero and deriving C[c/x] entails not-H by contraposition, the frozen proof says forall-x C entails not-delta. The lowercase Greek delta is neither introduced here nor suitable for the next contraposition, which immediately concludes H entails not-forall-x C. The argument requires not-H on the right-hand side. Chosen action: Replaced the unrelated delta by H in the Marathi formula, placed adjacent reader note OLFOL-041 and added a unit-specific QA projection that reconstructs the frozen delta solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-041-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-041. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve an unintroduced delta and leave the next contraposition unsupported — `rejected`: Not chosen; the source finding and recorded action control.
+- Redefine delta to mean H locally, introducing a redundant symbol absent from the surrounding proof — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does restoring H make the two consecutive contraposition steps well typed and yield the separating sentence claimed at the end of the proof?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-041-OLP-0200` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:72-76` | `mr/content/model-theory/interpolation/separation.tex:72-76` | pending |
+
+## OLFOL-042 — confirmed-frozen-source-wrong model component with documented formula projection
+
+**Chosen rendering/action:** Changed the transported interpretation from P-in-M2 to P-in-M1 in Marathi, placed adjacent reader note OLFOL-042 and added a unit-specific QA projection that reconstructs the frozen M2 subscript solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** For a predicate belonging to L1 minus L2, the frozen definition applies the isomorphism h from M1 to M2 to the interpretation of P in M2. That interpretation is outside h's stated domain. The componentwise equivalence printed immediately afterward instead transports P's interpretation in M1, as the language membership requires.
+
+**Rationale:** For a predicate belonging to L1 minus L2, the frozen definition applies the isomorphism h from M1 to M2 to the interpretation of P in M2. That interpretation is outside h's stated domain. The componentwise equivalence printed immediately afterward instead transports P's interpretation in M1, as the language membership requires. Chosen action: Changed the transported interpretation from P-in-M2 to P-in-M1 in Marathi, placed adjacent reader note OLFOL-042 and added a unit-specific QA projection that reconstructs the frozen M2 subscript solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-042-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-042. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve an application of h to a relation on its codomain rather than its domain — `rejected`: Not chosen; the source finding and recorded action control.
+- Reverse h and every surrounding transport clause, needlessly changing the already coherent construction — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does using the M1 interpretation make the transport clause agree with h's domain and with the printed tuple-membership equivalence?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-042-OLP-0201` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:168-177` | `mr/content/model-theory/interpolation/interpolation-proof.tex:168-178` | pending |
+
+## OLFOL-043 — confirmed-frozen-source-missing biconditional word with bounded prose correction
+
+**Chosen rendering/action:** Rendered the complete biconditional in Marathi and placed adjacent reader note OLFOL-043. The omitted item is ordinary source prose, so no protected formula, macro, token, identifier or reference and no structural projection is involved.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The Beth theorem statement reads 'implicitly defines P if and only Sigma(P) explicitly defines P', omitting the second 'if' required by the English biconditional 'if and only if'. Both proof directions and the surrounding definitions confirm that a biconditional is intended.
+
+**Rationale:** The Beth theorem statement reads 'implicitly defines P if and only Sigma(P) explicitly defines P', omitting the second 'if' required by the English biconditional 'if and only if'. Both proof directions and the surrounding definitions confirm that a biconditional is intended. Chosen action: Rendered the complete biconditional in Marathi and placed adjacent reader note OLFOL-043. The omitted item is ordinary source prose, so no protected formula, macro, token, identifier or reference and no structural projection is involved.
+
+**Authorities actually checked:**
+
+- `OLFOL-043-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-043. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Translate the malformed English sequence literally and obscure the theorem's logical direction — `rejected`: Not chosen; the source finding and recorded action control.
+- Weaken the theorem to one implication despite the proof explicitly giving both directions — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the restored Marathi 'if and only if' state exactly the equivalence proved in the following paragraph?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-043-OLP-0202` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:66-69` | `mr/content/model-theory/interpolation/definability.tex:66-70` | pending |
+
+## OLFOL-044 — confirmed-frozen-source-malformed atomic formula with documented formula projection
+
+**Chosen rendering/action:** Restored the atomic-formula macro around P' and its n arguments in Marathi, placed adjacent reader note OLFOL-044 and added a unit-specific QA projection that reconstructs the frozen raw sequence solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The consequent of the displayed entailment is printed as the raw character sequence P'c_1...c_n rather than as an atomic formula. The same atom appears immediately before and after this line in the established Atom macro form, and the next rearrangement requires exactly P'(c_1,...,c_n).
+
+**Rationale:** The consequent of the displayed entailment is printed as the raw character sequence P'c_1...c_n rather than as an atomic formula. The same atom appears immediately before and after this line in the established Atom macro form, and the next rearrangement requires exactly P'(c_1,...,c_n). Chosen action: Restored the atomic-formula macro around P' and its n arguments in Marathi, placed adjacent reader note OLFOL-044 and added a unit-specific QA projection that reconstructs the frozen raw sequence solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-044-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-044. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve a syntactically unformed concatenation in the central entailment — `rejected`: Not chosen; the source finding and recorded action control.
+- Rewrite the whole entailment in prose, losing the formula-level correspondence used by the next step — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the restored atom make the entailment syntactically well formed and identical to the P-prime atom used in the adjacent steps?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-044-OLP-0202` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:92-98` | `mr/content/model-theory/interpolation/definability.tex:93-100` | pending |
 
 ## Deferred prospective decisions
 

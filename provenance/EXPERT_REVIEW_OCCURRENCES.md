@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **194/722 source units**, 2063 aligned translated blocks, 11402 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
+Current scope: **199/722 source units**, 2095 aligned translated blocks, 11560 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -1611,7 +1611,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T009 — formal validity</strong> (83 occurrences; routine priority)</summary>
+<summary><strong>T009 — formal validity</strong> (84 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1698,6 +1698,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T009-OLP-0179-B021 | OLP-0179 · 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:159-164](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L159) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:143-147](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L143) | 237–240 |
 | T009-OLP-0179-B025 | OLP-0179 · 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L163) | 237–240 |
 | T009-OLP-0179-B027 | OLP-0179 · 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | 237–240 |
+| T009-OLP-0201-B008 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:29-32](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L29) | [mr/content/model-theory/interpolation/interpolation-proof.tex:28-31](../mr/content/model-theory/interpolation/interpolation-proof.tex#L28) | not yet paginated |
 
 **Chosen rendering/action:** वैधता
 
@@ -1918,7 +1919,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T013 — model (model theory)</strong> (99 occurrences; high priority)</summary>
+<summary><strong>T013 — model (model theory)</strong> (104 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2021,6 +2022,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T013-OLP-0197-B011 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L107) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L106) | 259–260 |
 | T013-OLP-0197-B012 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L112) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L111) | 259–260 |
 | T013-OLP-0197-B013 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L119) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L118) | 259–260 |
+| T013-OLP-0200-B008 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:30-46](../upstream/content/model-theory/interpolation/separation.tex#L30) | [mr/content/model-theory/interpolation/separation.tex:30-46](../mr/content/model-theory/interpolation/separation.tex#L30) | not yet paginated |
+| T013-OLP-0201-B014 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L143) | [mr/content/model-theory/interpolation/interpolation-proof.tex:143-149](../mr/content/model-theory/interpolation/interpolation-proof.tex#L143) | not yet paginated |
+| T013-OLP-0201-B016 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L165) | [mr/content/model-theory/interpolation/interpolation-proof.tex:165-183](../mr/content/model-theory/interpolation/interpolation-proof.tex#L165) | not yet paginated |
+| T013-OLP-0201-B017 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L183) | [mr/content/model-theory/interpolation/interpolation-proof.tex:185-192](../mr/content/model-theory/interpolation/interpolation-proof.tex#L185) | not yet paginated |
+| T013-OLP-0202-B009 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:59-64](../upstream/content/model-theory/interpolation/definability.tex#L59) | [mr/content/model-theory/interpolation/definability.tex:59-64](../mr/content/model-theory/interpolation/definability.tex#L59) | not yet paginated |
 
 **Chosen rendering/action:** प्रतिमान
 
@@ -2192,7 +2198,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T016 — if and only if</strong> (83 occurrences; medium priority)</summary>
+<summary><strong>T016 — if and only if</strong> (84 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2279,6 +2285,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T016-OLP-0146-B007 | OLP-0146 · 14.7 आदेशन | [upstream/content/first-order-logic/introduction/substitution.tex:30-45](../upstream/content/first-order-logic/introduction/substitution.tex#L30) | [mr/content/first-order-logic/introduction/substitution.tex:30-46](../mr/content/first-order-logic/introduction/substitution.tex#L30) | 191–192 |
 | T016-OLP-0147-B007 | OLP-0147 · 14.8 प्रतिमाने आणि उपपत्ती | [upstream/content/first-order-logic/introduction/models-theories.tex:32-54](../upstream/content/first-order-logic/introduction/models-theories.tex#L32) | [mr/content/first-order-logic/introduction/models-theories.tex:33-56](../mr/content/first-order-logic/introduction/models-theories.tex#L33) | 192 |
 | T016-OLP-0148-B006 | OLP-0148 · 14.9 निर्दोषता आणि संपूर्णता | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:13-23](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L13) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:13-23](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L13) | 192–193 |
+| T016-OLP-0202-B010 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:66-69](../upstream/content/model-theory/interpolation/definability.tex#L66) | [mr/content/model-theory/interpolation/definability.tex:66-70](../mr/content/model-theory/interpolation/definability.tex#L66) | not yet paginated |
 
 **Chosen rendering/action:** तेव्हा आणि केवळ तेव्हाच
 
@@ -2289,7 +2296,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T017 — union</strong> (83 occurrences; routine priority)</summary>
+<summary><strong>T017 — union</strong> (84 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2376,6 +2383,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T017-OLP-0170-B011 | OLP-0170 · 17.3 प्रथम-क्रम उपपत्तींची उदाहरणे | [upstream/content/first-order-logic/models-theories/theories.tex:71-88](../upstream/content/first-order-logic/models-theories/theories.tex#L71) | [mr/content/first-order-logic/models-theories/theories.tex:70-86](../mr/content/first-order-logic/models-theories/theories.tex#L70) | 224–226 |
 | T017-OLP-0172-B006 | OLP-0172 · 17.5 संचांची उपपत्ती | [upstream/content/first-order-logic/models-theories/set-theory.tex:13-29](../upstream/content/first-order-logic/models-theories/set-theory.tex#L13) | [mr/content/first-order-logic/models-theories/set-theory.tex:13-28](../mr/content/first-order-logic/models-theories/set-theory.tex#L13) | 227–229 |
 | T017-OLP-0172-B009 | OLP-0172 · 17.5 संचांची उपपत्ती | [upstream/content/first-order-logic/models-theories/set-theory.tex:73-90](../upstream/content/first-order-logic/models-theories/set-theory.tex#L73) | [mr/content/first-order-logic/models-theories/set-theory.tex:70-86](../mr/content/first-order-logic/models-theories/set-theory.tex#L70) | 227–229 |
+| T017-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** संयोग
 
@@ -2386,7 +2394,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T018 — intersection</strong> (52 occurrences; routine priority)</summary>
+<summary><strong>T018 — intersection</strong> (55 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2442,6 +2450,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T018-OLP-0052-B005 | OLP-0052 · 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | [upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14](../upstream/content/sets-functions-relations/infinite/dedekind-induction.tex#L12) | [mr/content/sets-functions-relations/infinite/dedekind-induction.tex:12-14](../mr/content/sets-functions-relations/infinite/dedekind-induction.tex#L12) | 73–74 |
 | T018-OLP-0054-B007 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:25-33](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L25) | [mr/content/sets-functions-relations/infinite/card-sb.tex:24-31](../mr/content/sets-functions-relations/infinite/card-sb.tex#L24) | 75–77 |
 | T018-OLP-0054-B008 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L35) | [mr/content/sets-functions-relations/infinite/card-sb.tex:33-41](../mr/content/sets-functions-relations/infinite/card-sb.tex#L33) | 75–77 |
+| T018-OLP-0201-B007 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:22-27](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L22) | [mr/content/model-theory/interpolation/interpolation-proof.tex:22-26](../mr/content/model-theory/interpolation/interpolation-proof.tex#L22) | not yet paginated |
+| T018-OLP-0201-B013 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:128-141](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L128) | [mr/content/model-theory/interpolation/interpolation-proof.tex:129-141](../mr/content/model-theory/interpolation/interpolation-proof.tex#L129) | not yet paginated |
+| T018-OLP-0201-B015 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L151) | [mr/content/model-theory/interpolation/interpolation-proof.tex:151-163](../mr/content/model-theory/interpolation/interpolation-proof.tex#L151) | not yet paginated |
 
 **Chosen rendering/action:** छेद
 
@@ -3096,7 +3107,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T030 — relation / binary relation</strong> (173 occurrences; medium priority)</summary>
+<summary><strong>T030 — relation / binary relation</strong> (175 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3273,6 +3284,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T030-OLP-0185-B006 | OLP-0185 · 19.2 उपसंरचना | [upstream/content/model-theory/basics/substructures.tex:19-37](../upstream/content/model-theory/basics/substructures.tex#L19) | [mr/content/model-theory/basics/substructures.tex:19-38](../mr/content/model-theory/basics/substructures.tex#L19) | 243 |
 | T030-OLP-0185-B007 | OLP-0185 · 19.2 उपसंरचना | [upstream/content/model-theory/basics/substructures.tex:39-45](../upstream/content/model-theory/basics/substructures.tex#L39) | [mr/content/model-theory/basics/substructures.tex:40-46](../mr/content/model-theory/basics/substructures.tex#L40) | 243 |
 | T030-OLP-0189-B019 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:143-158](../upstream/content/model-theory/basics/partial-iso.tex#L143) | [mr/content/model-theory/basics/partial-iso.tex:144-162](../mr/content/model-theory/basics/partial-iso.tex#L144) | 246–248 |
+| T030-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
+| T030-OLP-0202-B009 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:59-64](../upstream/content/model-theory/interpolation/definability.tex#L59) | [mr/content/model-theory/interpolation/definability.tex:59-64](../mr/content/model-theory/interpolation/definability.tex#L59) | not yet paginated |
 
 **Chosen rendering/action:** संबंध / द्विपदी संबंध
 
@@ -4265,7 +4278,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T044 — computability / formula / derivation</strong> (426 occurrences; medium priority)</summary>
+<summary><strong>T044 — computability / formula / derivation</strong> (433 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -4695,6 +4708,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T044-OLP-0181-B006 | OLP-0181 · 18.7 इतर तर्कशास्त्रे | [upstream/content/first-order-logic/beyond/other-logics.tex:13-20](../upstream/content/first-order-logic/beyond/other-logics.tex#L13) | [mr/content/first-order-logic/beyond/other-logics.tex:13-19](../mr/content/first-order-logic/beyond/other-logics.tex#L13) | 241 |
 | T044-OLP-0192-B007 | OLP-0192 · 20.1 परिचय | [upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70](../upstream/content/model-theory/models-of-arithmetic/introduction.tex#L55) | [mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68](../mr/content/model-theory/models-of-arithmetic/introduction.tex#L52) | 250–251 |
 | T044-OLP-0197-B004 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:9-10](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L9) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:9-10](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L9) | 259–260 |
+| T044-OLP-0199-B006 | OLP-0199 ·  | [upstream/content/model-theory/interpolation/introduction.tex:13-18](../upstream/content/model-theory/interpolation/introduction.tex#L13) | [mr/content/model-theory/interpolation/introduction.tex:13-18](../mr/content/model-theory/interpolation/introduction.tex#L13) | not yet paginated |
+| T044-OLP-0200-B010 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:58-83](../upstream/content/model-theory/interpolation/separation.tex#L58) | [mr/content/model-theory/interpolation/separation.tex:58-84](../mr/content/model-theory/interpolation/separation.tex#L58) | not yet paginated |
+| T044-OLP-0201-B006 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L13) | [mr/content/model-theory/interpolation/interpolation-proof.tex:13-20](../mr/content/model-theory/interpolation/interpolation-proof.tex#L13) | not yet paginated |
+| T044-OLP-0201-B017 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L183) | [mr/content/model-theory/interpolation/interpolation-proof.tex:185-192](../mr/content/model-theory/interpolation/interpolation-proof.tex#L185) | not yet paginated |
+| T044-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
+| T044-OLP-0202-B007 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:34-44](../upstream/content/model-theory/interpolation/definability.tex#L34) | [mr/content/model-theory/interpolation/definability.tex:33-43](../mr/content/model-theory/interpolation/definability.tex#L33) | not yet paginated |
+| T044-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** संगणनक्षमता / सूत्र / निष्पत्ती
 
@@ -4705,7 +4725,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T045 — function / mapping</strong> (306 occurrences; medium priority)</summary>
+<summary><strong>T045 — function / mapping</strong> (308 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5015,6 +5035,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T045-OLP-0197-B008 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L42) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L41) | 259–260 |
 | T045-OLP-0197-B009 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L77) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L78) | 259–260 |
 | T045-OLP-0197-B010 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:100-105](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L100) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:100-104](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L100) | 259–260 |
+| T045-OLP-0201-B015 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L151) | [mr/content/model-theory/interpolation/interpolation-proof.tex:151-163](../mr/content/model-theory/interpolation/interpolation-proof.tex#L151) | not yet paginated |
+| T045-OLP-0201-B016 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L165) | [mr/content/model-theory/interpolation/interpolation-proof.tex:165-183](../mr/content/model-theory/interpolation/interpolation-proof.tex#L165) | not yet paginated |
 
 **Chosen rendering/action:** फलन / संगती
 
@@ -5025,7 +5047,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T046 — domain / codomain / range</strong> (200 occurrences; medium priority)</summary>
+<summary><strong>T046 — domain / codomain / range</strong> (202 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5229,6 +5251,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T046-OLP-0197-B007 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:35-40](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L35) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:34-39](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L34) | 259–260 |
 | T046-OLP-0197-B008 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L42) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L41) | 259–260 |
 | T046-OLP-0197-B011 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L107) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L106) | 259–260 |
+| T046-OLP-0201-B014 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L143) | [mr/content/model-theory/interpolation/interpolation-proof.tex:143-149](../mr/content/model-theory/interpolation/interpolation-proof.tex#L143) | not yet paginated |
+| T046-OLP-0201-B016 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L165) | [mr/content/model-theory/interpolation/interpolation-proof.tex:165-183](../mr/content/model-theory/interpolation/interpolation-proof.tex#L165) | not yet paginated |
 
 **Chosen rendering/action:** प्रांत / सहप्रांत / व्याप्ती
 
@@ -5858,7 +5882,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T056 — enumeration / enumerate</strong> (91 occurrences; routine priority)</summary>
+<summary><strong>T056 — enumeration / enumerate</strong> (92 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5953,6 +5977,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T056-OLP-0040-B021 | OLP-0040 · 4.13 न्यूनीकरण | [upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:123-128](../upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L123) | [mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:125-131](../mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L125) | 55–56 |
 | T056-OLP-0130-B010 | OLP-0130 · 13.4 हेंकिन विस्तार | [upstream/content/first-order-logic/completeness/henkin-expansions.tex:51-56](../upstream/content/first-order-logic/completeness/henkin-expansions.tex#L51) | [mr/content/first-order-logic/completeness/henkin-expansions.tex:51-56](../mr/content/first-order-logic/completeness/henkin-expansions.tex#L51) | 174–175 |
 | T056-OLP-0131-B008 | OLP-0131 · 13.5 लिंडेनबाउमचे पूर्वप्रमेय | [upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:33-45](../upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex#L33) | [mr/content/first-order-logic/completeness/lindenbaums-lemma.tex:33-45](../mr/content/first-order-logic/completeness/lindenbaums-lemma.tex#L33) | 175–176 |
+| T056-OLP-0201-B010 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L39) | [mr/content/model-theory/interpolation/interpolation-proof.tex:37-99](../mr/content/model-theory/interpolation/interpolation-proof.tex#L37) | not yet paginated |
 
 **Chosen rendering/action:** प्रगणन / प्रगणन करणे
 
@@ -7391,7 +7416,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T104 — free variable</strong> (50 occurrences; routine priority)</summary>
+<summary><strong>T104 — free variable</strong> (51 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7445,6 +7470,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T104-OLP-0164-B047 | OLP-0164 · 16.5 चर-मूल्यांकने | [upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:335-336](../upstream/content/first-order-logic/syntax-and-semantics/assignments.tex#L335) | [mr/content/first-order-logic/syntax-and-semantics/assignments.tex:357-359](../mr/content/first-order-logic/syntax-and-semantics/assignments.tex#L357) | 215–218 |
 | T104-OLP-0166-B021 | OLP-0166 · 16.7 चिन्हार्थविषयक संकल्पना | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:124-131](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L124) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:134-141](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L134) | 220–221 |
 | T104-OLP-0177-B007 | OLP-0177 · 18.3 द्वितीय-क्रम तर्कशास्त्र | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | 232–235 |
+| T104-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** मुक्त चर
 
@@ -7455,7 +7481,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T105 — isomorphic / isomorphism</strong> (40 occurrences; routine priority)</summary>
+<summary><strong>T105 — isomorphic / isomorphism</strong> (42 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7499,6 +7525,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T105-OLP-0196-B035 | OLP-0196 · 20.5 PA ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260](../upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex#L238) | [mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263](../mr/content/model-theory/models-of-arithmetic/models-of-pa.tex#L242) | 256–259 |
 | T105-OLP-0197-B008 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L42) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L41) | 259–260 |
 | T105-OLP-0197-B011 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L107) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L106) | 259–260 |
+| T105-OLP-0201-B015 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L151) | [mr/content/model-theory/interpolation/interpolation-proof.tex:151-163](../mr/content/model-theory/interpolation/interpolation-proof.tex#L151) | not yet paginated |
+| T105-OLP-0201-B016 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L165) | [mr/content/model-theory/interpolation/interpolation-proof.tex:165-183](../mr/content/model-theory/interpolation/interpolation-proof.tex#L165) | not yet paginated |
 
 **Chosen rendering/action:** समरूपी / समरूपता
 
@@ -7542,7 +7570,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T108 — propositional logic</strong> (48 occurrences; routine priority)</summary>
+<summary><strong>T108 — propositional logic</strong> (49 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7594,6 +7622,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T108-OLP-0138-B006 | OLP-0138 · 14 प्रथम-क्रम तर्कशास्त्राचा परिचय — भाग-प्रस्तावना | [upstream/content/first-order-logic/first-order-logic.tex:19-25](../upstream/content/first-order-logic/first-order-logic.tex#L19) | [mr/content/first-order-logic/first-order-logic.tex:19-24](../mr/content/first-order-logic/first-order-logic.tex#L19) | 186 |
 | T108-OLP-0179-B018 | OLP-0179 · 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:128-133](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L128) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:113-118](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L113) | 237–240 |
 | T108-OLP-0180-B007 | OLP-0180 · 18.6 मोडल तर्कशास्त्रे | [upstream/content/first-order-logic/beyond/modal-logics.tex:31-39](../upstream/content/first-order-logic/beyond/modal-logics.tex#L31) | [mr/content/first-order-logic/beyond/modal-logics.tex:28-35](../mr/content/first-order-logic/beyond/modal-logics.tex#L28) | 240–241 |
+| T108-OLP-0201-B012 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:107-126](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L107) | [mr/content/model-theory/interpolation/interpolation-proof.tex:108-127](../mr/content/model-theory/interpolation/interpolation-proof.tex#L108) | not yet paginated |
 
 **Chosen rendering/action:** विधानीय तर्कशास्त्र
 
@@ -7707,7 +7736,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (67 occurrences; medium priority)</summary>
+<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (68 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7778,6 +7807,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T110-OLP-0180-B010 | OLP-0180 · 18.6 मोडल तर्कशास्त्रे | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | 240–241 |
 | T110-OLP-0181-B006 | OLP-0181 · 18.7 इतर तर्कशास्त्रे | [upstream/content/first-order-logic/beyond/other-logics.tex:13-20](../upstream/content/first-order-logic/beyond/other-logics.tex#L13) | [mr/content/first-order-logic/beyond/other-logics.tex:13-19](../mr/content/first-order-logic/beyond/other-logics.tex#L13) | 241 |
 | T110-OLP-0182-B005 | OLP-0182 · 19 प्रतिमान उपपत्तीची मूलतत्त्वे — भाग-प्रस्तावना | [upstream/content/model-theory/model-theory.tex:9-17](../upstream/content/model-theory/model-theory.tex#L9) | [mr/content/model-theory/model-theory.tex:9-16](../mr/content/model-theory/model-theory.tex#L9) | 242 |
+| T110-OLP-0201-B014 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L143) | [mr/content/model-theory/interpolation/interpolation-proof.tex:143-149](../mr/content/model-theory/interpolation/interpolation-proof.tex#L143) | not yet paginated |
 
 **Chosen rendering/action:** संपूर्णता / संपूर्णता प्रमेय / सत्यता-फलनात्मक संपूर्णता
 
@@ -7871,7 +7901,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T112 — predicate / term / quantifier</strong> (202 occurrences; routine priority)</summary>
+<summary><strong>T112 — predicate / term / quantifier</strong> (207 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8077,6 +8107,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T112-OLP-0189-B024 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:189-197](../upstream/content/model-theory/basics/partial-iso.tex#L189) | [mr/content/model-theory/basics/partial-iso.tex:192-199](../mr/content/model-theory/basics/partial-iso.tex#L192) | 246–248 |
 | T112-OLP-0189-B025 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:199-213](../upstream/content/model-theory/basics/partial-iso.tex#L199) | [mr/content/model-theory/basics/partial-iso.tex:201-215](../mr/content/model-theory/basics/partial-iso.tex#L201) | 246–248 |
 | T112-OLP-0190-B005 | OLP-0190 · 19.7 सघन रेषीय क्रम | [upstream/content/model-theory/basics/dlo.tex:12-26](../upstream/content/model-theory/basics/dlo.tex#L12) | [mr/content/model-theory/basics/dlo.tex:12-26](../mr/content/model-theory/basics/dlo.tex#L12) | 248–249 |
+| T112-OLP-0199-B006 | OLP-0199 ·  | [upstream/content/model-theory/interpolation/introduction.tex:13-18](../upstream/content/model-theory/interpolation/introduction.tex#L13) | [mr/content/model-theory/interpolation/introduction.tex:13-18](../mr/content/model-theory/interpolation/introduction.tex#L13) | not yet paginated |
+| T112-OLP-0201-B006 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L13) | [mr/content/model-theory/interpolation/interpolation-proof.tex:13-20](../mr/content/model-theory/interpolation/interpolation-proof.tex#L13) | not yet paginated |
+| T112-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
+| T112-OLP-0202-B007 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:34-44](../upstream/content/model-theory/interpolation/definability.tex#L34) | [mr/content/model-theory/interpolation/definability.tex:33-43](../mr/content/model-theory/interpolation/definability.tex#L33) | not yet paginated |
+| T112-OLP-0202-B008 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:46-57](../upstream/content/model-theory/interpolation/definability.tex#L46) | [mr/content/model-theory/interpolation/definability.tex:45-57](../mr/content/model-theory/interpolation/definability.tex#L45) | not yet paginated |
 
 **Chosen rendering/action:** विधेय / पद / संख्यापक
 
@@ -8322,7 +8357,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T118 — theory / metatheory</strong> (69 occurrences; medium priority)</summary>
+<summary><strong>T118 — theory / metatheory</strong> (71 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8395,6 +8430,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T118-OLP-0197-B008 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L42) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L41) | 259–260 |
 | T118-OLP-0197-B012 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L112) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L111) | 259–260 |
 | T118-OLP-0197-B013 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L119) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L118) | 259–260 |
+| T118-OLP-0199-B007 | OLP-0199 ·  | [upstream/content/model-theory/interpolation/introduction.tex:20-25](../upstream/content/model-theory/interpolation/introduction.tex#L20) | [mr/content/model-theory/interpolation/introduction.tex:20-24](../mr/content/model-theory/interpolation/introduction.tex#L20) | not yet paginated |
+| T118-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** उपपत्ती / अधिउपपत्ती
 
@@ -8809,7 +8846,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T123 — entailment / entails</strong> (106 occurrences; medium priority)</summary>
+<summary><strong>T123 — entailment / entails</strong> (112 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8919,6 +8956,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T123-OLP-0168-B009 | OLP-0168 · 17.1 परिचय | [upstream/content/first-order-logic/models-theories/introduction.tex:37-47](../upstream/content/first-order-logic/models-theories/introduction.tex#L37) | [mr/content/first-order-logic/models-theories/introduction.tex:38-48](../mr/content/first-order-logic/models-theories/introduction.tex#L38) | 222–223 |
 | T123-OLP-0168-B010 | OLP-0168 · 17.1 परिचय | [upstream/content/first-order-logic/models-theories/introduction.tex:49-98](../upstream/content/first-order-logic/models-theories/introduction.tex#L49) | [mr/content/first-order-logic/models-theories/introduction.tex:50-97](../mr/content/first-order-logic/models-theories/introduction.tex#L50) | 222–223 |
 | T123-OLP-0177-B015 | OLP-0177 · 18.3 द्वितीय-क्रम तर्कशास्त्र | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | 232–235 |
+| T123-OLP-0199-B006 | OLP-0199 ·  | [upstream/content/model-theory/interpolation/introduction.tex:13-18](../upstream/content/model-theory/interpolation/introduction.tex#L13) | [mr/content/model-theory/interpolation/introduction.tex:13-18](../mr/content/model-theory/interpolation/introduction.tex#L13) | not yet paginated |
+| T123-OLP-0200-B006 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:13-21](../upstream/content/model-theory/interpolation/separation.tex#L13) | [mr/content/model-theory/interpolation/separation.tex:13-21](../mr/content/model-theory/interpolation/separation.tex#L13) | not yet paginated |
+| T123-OLP-0200-B007 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:23-28](../upstream/content/model-theory/interpolation/separation.tex#L23) | [mr/content/model-theory/interpolation/separation.tex:23-28](../mr/content/model-theory/interpolation/separation.tex#L23) | not yet paginated |
+| T123-OLP-0201-B006 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L13) | [mr/content/model-theory/interpolation/interpolation-proof.tex:13-20](../mr/content/model-theory/interpolation/interpolation-proof.tex#L13) | not yet paginated |
+| T123-OLP-0201-B017 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L183) | [mr/content/model-theory/interpolation/interpolation-proof.tex:185-192](../mr/content/model-theory/interpolation/interpolation-proof.tex#L185) | not yet paginated |
+| T123-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** तार्किक निष्पन्नता / तार्किकरीत्या निष्पन्न होणे
 
@@ -8929,7 +8972,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T124 — satisfiable / satisfiability</strong> (67 occurrences; medium priority)</summary>
+<summary><strong>T124 — satisfiable / satisfiability</strong> (70 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9000,6 +9043,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T124-OLP-0170-B012 | OLP-0170 · 17.3 प्रथम-क्रम उपपत्तींची उदाहरणे | [upstream/content/first-order-logic/models-theories/theories.tex:90-100](../upstream/content/first-order-logic/models-theories/theories.tex#L90) | [mr/content/first-order-logic/models-theories/theories.tex:88-99](../mr/content/first-order-logic/models-theories/theories.tex#L88) | 224–226 |
 | T124-OLP-0172-B013 | OLP-0172 · 17.5 संचांची उपपत्ती | [upstream/content/first-order-logic/models-theories/set-theory.tex:149-171](../upstream/content/first-order-logic/models-theories/set-theory.tex#L149) | [mr/content/first-order-logic/models-theories/set-theory.tex:147-169](../mr/content/first-order-logic/models-theories/set-theory.tex#L147) | 227–229 |
 | T124-OLP-0194-B014 | OLP-0194 · 20.3 अमानक प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113](../upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex#L100) | [mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117](../mr/content/model-theory/models-of-arithmetic/non-standard-models.tex#L99) | 253–254 |
+| T124-OLP-0200-B012 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:92-117](../upstream/content/model-theory/interpolation/separation.tex#L92) | [mr/content/model-theory/interpolation/separation.tex:93-118](../mr/content/model-theory/interpolation/separation.tex#L93) | not yet paginated |
+| T124-OLP-0201-B008 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:29-32](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L29) | [mr/content/model-theory/interpolation/interpolation-proof.tex:28-31](../mr/content/model-theory/interpolation/interpolation-proof.tex#L28) | not yet paginated |
+| T124-OLP-0201-B011 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L100) | [mr/content/model-theory/interpolation/interpolation-proof.tex:101-106](../mr/content/model-theory/interpolation/interpolation-proof.tex#L101) | not yet paginated |
 
 **Chosen rendering/action:** पूर्ततायोग्य / पूर्ततायोग्यता
 
@@ -9029,7 +9075,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T126 — sentence / proposition / statement</strong> (188 occurrences; routine priority)</summary>
+<summary><strong>T126 — sentence / proposition / statement</strong> (198 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9221,6 +9267,16 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T126-OLP-0196-B006 | OLP-0196 · 20.5 PA ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27](../upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex#L22) | [mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27](../mr/content/model-theory/models-of-arithmetic/models-of-pa.tex#L22) | 256–259 |
 | T126-OLP-0196-B012 | OLP-0196 · 20.5 PA ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:73-78](../upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex#L73) | [mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:75-80](../mr/content/model-theory/models-of-arithmetic/models-of-pa.tex#L75) | 256–259 |
 | T126-OLP-0196-B034 | OLP-0196 · 20.5 PA ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:230-236](../upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex#L230) | [mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:235-240](../mr/content/model-theory/models-of-arithmetic/models-of-pa.tex#L235) | 256–259 |
+| T126-OLP-0199-B006 | OLP-0199 ·  | [upstream/content/model-theory/interpolation/introduction.tex:13-18](../upstream/content/model-theory/interpolation/introduction.tex#L13) | [mr/content/model-theory/interpolation/introduction.tex:13-18](../mr/content/model-theory/interpolation/introduction.tex#L13) | not yet paginated |
+| T126-OLP-0200-B005 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:11-11](../upstream/content/model-theory/interpolation/separation.tex#L11) | [mr/content/model-theory/interpolation/separation.tex:11-11](../mr/content/model-theory/interpolation/separation.tex#L11) | not yet paginated |
+| T126-OLP-0200-B006 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:13-21](../upstream/content/model-theory/interpolation/separation.tex#L13) | [mr/content/model-theory/interpolation/separation.tex:13-21](../mr/content/model-theory/interpolation/separation.tex#L13) | not yet paginated |
+| T126-OLP-0200-B007 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:23-28](../upstream/content/model-theory/interpolation/separation.tex#L23) | [mr/content/model-theory/interpolation/separation.tex:23-28](../mr/content/model-theory/interpolation/separation.tex#L23) | not yet paginated |
+| T126-OLP-0200-B012 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:92-117](../upstream/content/model-theory/interpolation/separation.tex#L92) | [mr/content/model-theory/interpolation/separation.tex:93-118](../mr/content/model-theory/interpolation/separation.tex#L93) | not yet paginated |
+| T126-OLP-0201-B006 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L13) | [mr/content/model-theory/interpolation/interpolation-proof.tex:13-20](../mr/content/model-theory/interpolation/interpolation-proof.tex#L13) | not yet paginated |
+| T126-OLP-0201-B010 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L39) | [mr/content/model-theory/interpolation/interpolation-proof.tex:37-99](../mr/content/model-theory/interpolation/interpolation-proof.tex#L37) | not yet paginated |
+| T126-OLP-0202-B007 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:34-44](../upstream/content/model-theory/interpolation/definability.tex#L34) | [mr/content/model-theory/interpolation/definability.tex:33-43](../mr/content/model-theory/interpolation/definability.tex#L33) | not yet paginated |
+| T126-OLP-0202-B008 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:46-57](../upstream/content/model-theory/interpolation/definability.tex#L46) | [mr/content/model-theory/interpolation/definability.tex:45-57](../mr/content/model-theory/interpolation/definability.tex#L45) | not yet paginated |
+| T126-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** वाक्य / विधान
 
@@ -9298,7 +9354,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (232 occurrences; medium priority)</summary>
+<summary><strong>T128 — negation / conjunction / disjunction / conditional / biconditional</strong> (235 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9534,6 +9590,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T128-OLP-0179-B027 | OLP-0179 · 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | 237–240 |
 | T128-OLP-0180-B006 | OLP-0180 · 18.6 मोडल तर्कशास्त्रे | [upstream/content/first-order-logic/beyond/modal-logics.tex:13-29](../upstream/content/first-order-logic/beyond/modal-logics.tex#L13) | [mr/content/first-order-logic/beyond/modal-logics.tex:13-26](../mr/content/first-order-logic/beyond/modal-logics.tex#L13) | 240–241 |
 | T128-OLP-0180-B007 | OLP-0180 · 18.6 मोडल तर्कशास्त्रे | [upstream/content/first-order-logic/beyond/modal-logics.tex:31-39](../upstream/content/first-order-logic/beyond/modal-logics.tex#L31) | [mr/content/first-order-logic/beyond/modal-logics.tex:28-35](../mr/content/first-order-logic/beyond/modal-logics.tex#L28) | 240–241 |
+| T128-OLP-0200-B010 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:58-83](../upstream/content/model-theory/interpolation/separation.tex#L58) | [mr/content/model-theory/interpolation/separation.tex:58-84](../mr/content/model-theory/interpolation/separation.tex#L58) | not yet paginated |
+| T128-OLP-0201-B012 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:107-126](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L107) | [mr/content/model-theory/interpolation/interpolation-proof.tex:108-127](../mr/content/model-theory/interpolation/interpolation-proof.tex#L108) | not yet paginated |
+| T128-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** नकरण / संधियोग / विकल्पयोग / सशर्त (संकेतार्थक) / द्विसशर्त
 
@@ -9863,7 +9922,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T138 — uniform substitution / simultaneous substitution</strong> (19 occurrences; medium priority)</summary>
+<summary><strong>T138 — uniform substitution / simultaneous substitution</strong> (20 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9886,6 +9945,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T138-OLP-0146-B005 | OLP-0146 · 14.7 आदेशन | [upstream/content/first-order-logic/introduction/substitution.tex:11-11](../upstream/content/first-order-logic/introduction/substitution.tex#L11) | [mr/content/first-order-logic/introduction/substitution.tex:11-11](../mr/content/first-order-logic/introduction/substitution.tex#L11) | 191–192 |
 | T138-OLP-0146-B006 | OLP-0146 · 14.7 आदेशन | [upstream/content/first-order-logic/introduction/substitution.tex:13-28](../upstream/content/first-order-logic/introduction/substitution.tex#L13) | [mr/content/first-order-logic/introduction/substitution.tex:13-28](../mr/content/first-order-logic/introduction/substitution.tex#L13) | 191–192 |
 | T138-OLP-0146-B007 | OLP-0146 · 14.7 आदेशन | [upstream/content/first-order-logic/introduction/substitution.tex:30-45](../upstream/content/first-order-logic/introduction/substitution.tex#L30) | [mr/content/first-order-logic/introduction/substitution.tex:30-46](../mr/content/first-order-logic/introduction/substitution.tex#L30) | 191–192 |
+| T138-OLP-0202-B008 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:46-57](../upstream/content/model-theory/interpolation/definability.tex#L46) | [mr/content/model-theory/interpolation/definability.tex:45-57](../mr/content/model-theory/interpolation/definability.tex#L45) | not yet paginated |
 
 **Chosen rendering/action:** एकरूप आदेशन / एकाच वेळी केलेले आदेशन
 
@@ -9954,7 +10014,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T140 — inductive hypothesis</strong> (43 occurrences; medium priority)</summary>
+<summary><strong>T140 — inductive hypothesis</strong> (44 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -10001,6 +10061,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T140-OLP-0153-B021 | OLP-0153 · 15.4 एकमेव वाचनीयता | [upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:108-111](../upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L108) | [mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:105-108](../mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L105) | 198–200 |
 | T140-OLP-0179-B024 | OLP-0179 · 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:177-178](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L177) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:159-161](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L159) | 237–240 |
 | T140-OLP-0193-B017 | OLP-0193 · 20.2 अंकगणिताची मानक प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/standard-models.tex:139-150](../upstream/content/model-theory/models-of-arithmetic/standard-models.tex#L139) | [mr/content/model-theory/models-of-arithmetic/standard-models.tex:138-150](../mr/content/model-theory/models-of-arithmetic/standard-models.tex#L138) | 251–253 |
+| T140-OLP-0201-B010 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L39) | [mr/content/model-theory/interpolation/interpolation-proof.tex:37-99](../mr/content/model-theory/interpolation/interpolation-proof.tex#L37) | not yet paginated |
 
 **Chosen rendering/action:** विगमन गृहीतक
 
@@ -10081,7 +10142,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T143 — ordinary induction / strong induction</strong> (25 occurrences; routine priority)</summary>
+<summary><strong>T143 — ordinary induction / strong induction</strong> (27 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -10110,6 +10171,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T143-OLP-0165-B015 | OLP-0165 · 16.6 विस्तारात्मकता | [upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:70-75](../upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex#L70) | [mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:71-76](../mr/content/first-order-logic/syntax-and-semantics/extensionality.tex#L71) | 218–220 |
 | T143-OLP-0165-B018 | OLP-0165 · 16.6 विस्तारात्मकता | [upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:86-103](../upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex#L86) | [mr/content/first-order-logic/syntax-and-semantics/extensionality.tex:88-106](../mr/content/first-order-logic/syntax-and-semantics/extensionality.tex#L88) | 218–220 |
 | T143-OLP-0177-B011 | OLP-0177 · 18.3 द्वितीय-क्रम तर्कशास्त्र | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | 232–235 |
+| T143-OLP-0201-B010 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L39) | [mr/content/model-theory/interpolation/interpolation-proof.tex:37-99](../mr/content/model-theory/interpolation/interpolation-proof.tex#L37) | not yet paginated |
+| T143-OLP-0201-B017 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L183) | [mr/content/model-theory/interpolation/interpolation-proof.tex:185-192](../mr/content/model-theory/interpolation/interpolation-proof.tex#L185) | not yet paginated |
 
 **Chosen rendering/action:** साधे विगमन / प्रबल विगमन
 
@@ -10231,7 +10294,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T148 — unsatisfiable / unsatisfiability</strong> (30 occurrences; medium priority)</summary>
+<summary><strong>T148 — unsatisfiable / unsatisfiability</strong> (32 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -10265,6 +10328,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T148-OLP-0166-B014 | OLP-0166 · 16.7 चिन्हार्थविषयक संकल्पना | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:75-80](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L75) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:79-84](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L79) | 220–221 |
 | T148-OLP-0166-B015 | OLP-0166 · 16.7 चिन्हार्थविषयक संकल्पना | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:82-90](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L82) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:86-96](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L86) | 220–221 |
 | T148-OLP-0170-B012 | OLP-0170 · 17.3 प्रथम-क्रम उपपत्तींची उदाहरणे | [upstream/content/first-order-logic/models-theories/theories.tex:90-100](../upstream/content/first-order-logic/models-theories/theories.tex#L90) | [mr/content/first-order-logic/models-theories/theories.tex:88-99](../mr/content/first-order-logic/models-theories/theories.tex#L88) | 224–226 |
+| T148-OLP-0201-B008 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:29-32](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L29) | [mr/content/model-theory/interpolation/interpolation-proof.tex:28-31](../mr/content/model-theory/interpolation/interpolation-proof.tex#L28) | not yet paginated |
+| T148-OLP-0201-B011 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L100) | [mr/content/model-theory/interpolation/interpolation-proof.tex:101-106](../mr/content/model-theory/interpolation/interpolation-proof.tex#L101) | not yet paginated |
 
 **Chosen rendering/action:** अपूर्ततायोग्य / अपूर्ततायोग्यता
 
@@ -10275,7 +10340,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T149 — monotonicity (of semantic entailment)</strong> (14 occurrences; routine priority)</summary>
+<summary><strong>T149 — monotonicity (of semantic entailment)</strong> (16 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -10293,6 +10358,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T149-OLP-0121-B010 | OLP-0121 · 12.9 निष्पन्नता आणि सुसंगतता | [upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | [mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:38-44](../mr/content/first-order-logic/axiomatic-deduction/provability-consistency.tex#L38) | 166 |
 | T149-OLP-0166-B016 | OLP-0166 · 16.7 चिन्हार्थविषयक संकल्पना | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:92-95](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L92) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:98-101](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L98) | 220–221 |
 | T149-OLP-0166-B017 | OLP-0166 · 16.7 चिन्हार्थविषयक संकल्पना | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:97-102](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L97) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:103-109](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L103) | 220–221 |
+| T149-OLP-0200-B010 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:58-83](../upstream/content/model-theory/interpolation/separation.tex#L58) | [mr/content/model-theory/interpolation/separation.tex:58-84](../mr/content/model-theory/interpolation/separation.tex#L58) | not yet paginated |
+| T149-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** एकस्वनिकता
 
@@ -10572,7 +10639,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T154 — theorem</strong> (68 occurrences; routine priority)</summary>
+<summary><strong>T154 — theorem</strong> (70 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -10644,6 +10711,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T154-OLP-0137-B008 | OLP-0137 · 13.11 लोव्हेनहाइम–स्कोलेम प्रमेय | [upstream/content/first-order-logic/completeness/downward-ls.tex:33-38](../upstream/content/first-order-logic/completeness/downward-ls.tex#L33) | [mr/content/first-order-logic/completeness/downward-ls.tex:33-38](../mr/content/first-order-logic/completeness/downward-ls.tex#L33) | 184–185 |
 | T154-OLP-0137-B010 | OLP-0137 · 13.11 लोव्हेनहाइम–स्कोलेम प्रमेय | [upstream/content/first-order-logic/completeness/downward-ls.tex:48-61](../upstream/content/first-order-logic/completeness/downward-ls.tex#L48) | [mr/content/first-order-logic/completeness/downward-ls.tex:48-60](../mr/content/first-order-logic/completeness/downward-ls.tex#L48) | 184–185 |
 | T154-OLP-0168-B006 | OLP-0168 · 17.1 परिचय | [upstream/content/first-order-logic/models-theories/introduction.tex:21-26](../upstream/content/first-order-logic/models-theories/introduction.tex#L21) | [mr/content/first-order-logic/models-theories/introduction.tex:21-26](../mr/content/first-order-logic/models-theories/introduction.tex#L21) | 222–223 |
+| T154-OLP-0198-B004 | OLP-0198 ·  | [upstream/content/model-theory/interpolation/interpolation.tex:8-8](../upstream/content/model-theory/interpolation/interpolation.tex#L8) | [mr/content/model-theory/interpolation/interpolation.tex:8-8](../mr/content/model-theory/interpolation/interpolation.tex#L8) | not yet paginated |
+| T154-OLP-0202-B010 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:66-69](../upstream/content/model-theory/interpolation/definability.tex#L66) | [mr/content/model-theory/interpolation/definability.tex:66-70](../mr/content/model-theory/interpolation/definability.tex#L66) | not yet paginated |
 
 **Chosen rendering/action:** प्रमेय
 
@@ -10765,7 +10834,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (192 occurrences; routine priority)</summary>
+<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (196 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -10961,6 +11030,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T156-OLP-0180-B009 | OLP-0180 · 18.6 मोडल तर्कशास्त्रे | [upstream/content/first-order-logic/beyond/modal-logics.tex:50-65](../upstream/content/first-order-logic/beyond/modal-logics.tex#L50) | [mr/content/first-order-logic/beyond/modal-logics.tex:45-59](../mr/content/first-order-logic/beyond/modal-logics.tex#L45) | 240–241 |
 | T156-OLP-0188-B013 | OLP-0188 · 19.5 संरचनेची उपपत्ती | [upstream/content/model-theory/basics/theory-of-m.tex:51-62](../upstream/content/model-theory/basics/theory-of-m.tex#L51) | [mr/content/model-theory/basics/theory-of-m.tex:55-66](../mr/content/model-theory/basics/theory-of-m.tex#L55) | 245–246 |
 | T156-OLP-0192-B007 | OLP-0192 · 20.1 परिचय | [upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70](../upstream/content/model-theory/models-of-arithmetic/introduction.tex#L55) | [mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68](../mr/content/model-theory/models-of-arithmetic/introduction.tex#L52) | 250–251 |
+| T156-OLP-0199-B007 | OLP-0199 ·  | [upstream/content/model-theory/interpolation/introduction.tex:20-25](../upstream/content/model-theory/interpolation/introduction.tex#L20) | [mr/content/model-theory/interpolation/introduction.tex:20-24](../mr/content/model-theory/interpolation/introduction.tex#L20) | not yet paginated |
+| T156-OLP-0201-B011 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L100) | [mr/content/model-theory/interpolation/interpolation-proof.tex:101-106](../mr/content/model-theory/interpolation/interpolation-proof.tex#L101) | not yet paginated |
+| T156-OLP-0201-B012 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:107-126](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L107) | [mr/content/model-theory/interpolation/interpolation-proof.tex:108-127](../mr/content/model-theory/interpolation/interpolation-proof.tex#L108) | not yet paginated |
+| T156-OLP-0201-B013 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:128-141](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L128) | [mr/content/model-theory/interpolation/interpolation-proof.tex:129-141](../mr/content/model-theory/interpolation/interpolation-proof.tex#L129) | not yet paginated |
 
 **Chosen rendering/action:** सुसंगतता / विसंगतता / सुसंगत / विसंगत
 
@@ -12246,7 +12319,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T181 — compactness (proof-theoretic property)</strong> (34 occurrences; medium priority)</summary>
+<summary><strong>T181 — compactness (proof-theoretic property)</strong> (37 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12284,6 +12357,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T181-OLP-0192-B006 | OLP-0192 · 20.1 परिचय | [upstream/content/model-theory/models-of-arithmetic/introduction.tex:41-53](../upstream/content/model-theory/models-of-arithmetic/introduction.tex#L41) | [mr/content/model-theory/models-of-arithmetic/introduction.tex:39-50](../mr/content/model-theory/models-of-arithmetic/introduction.tex#L39) | 250–251 |
 | T181-OLP-0194-B011 | OLP-0194 · 20.3 अमानक प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-76](../upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex#L66) | [mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-74](../mr/content/model-theory/models-of-arithmetic/non-standard-models.tex#L66) | 253–254 |
 | T181-OLP-0194-B014 | OLP-0194 · 20.3 अमानक प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113](../upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex#L100) | [mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117](../mr/content/model-theory/models-of-arithmetic/non-standard-models.tex#L99) | 253–254 |
+| T181-OLP-0200-B010 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:58-83](../upstream/content/model-theory/interpolation/separation.tex#L58) | [mr/content/model-theory/interpolation/separation.tex:58-84](../mr/content/model-theory/interpolation/separation.tex#L58) | not yet paginated |
+| T181-OLP-0201-B011 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L100) | [mr/content/model-theory/interpolation/interpolation-proof.tex:101-106](../mr/content/model-theory/interpolation/interpolation-proof.tex#L101) | not yet paginated |
+| T181-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** संहतता
 
@@ -12711,7 +12787,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T186 — Deduction Theorem (proof-theoretic)</strong> (15 occurrences; medium priority)</summary>
+<summary><strong>T186 — Deduction Theorem (proof-theoretic)</strong> (16 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12730,6 +12806,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T186-OLP-0122-B013 | OLP-0122 · 12.10 निष्पन्नता आणि विधानीय संयोजक | [upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:79-82](../upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex#L79) | [mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:82-85](../mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex#L82) | 166–167 |
 | T186-OLP-0123-B009 | OLP-0123 · 12.11 निष्पन्नता आणि संख्यापक | [upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:27-32](../upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex#L27) | [mr/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:27-34](../mr/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex#L27) | 167–168 |
 | T186-OLP-0123-B012 | OLP-0123 · 12.11 निष्पन्नता आणि संख्यापक | [upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:43-48](../upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex#L43) | [mr/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:45-50](../mr/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex#L45) | 167–168 |
+| T186-OLP-0200-B012 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:92-117](../upstream/content/model-theory/interpolation/separation.tex#L92) | [mr/content/model-theory/interpolation/separation.tex:93-118](../mr/content/model-theory/interpolation/separation.tex#L93) | not yet paginated |
 
 **Chosen rendering/action:** निगमन प्रमेय
 
@@ -12740,12 +12817,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T187 — contraposition</strong> (2 occurrences; routine priority)</summary>
+<summary><strong>T187 — contraposition</strong> (5 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T187-OLP-0119-B018 | OLP-0119 · 12.7 निगमन प्रमेय | [upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118](../upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | [mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-119](../mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex#L103) | 164–165 |
 | T187-OLP-0134-B010 | OLP-0134 · 13.8 संपूर्णता प्रमेय | [upstream/content/first-order-logic/completeness/completeness-thm.tex:57-64](../upstream/content/first-order-logic/completeness/completeness-thm.tex#L57) | [mr/content/first-order-logic/completeness/completeness-thm.tex:57-64](../mr/content/first-order-logic/completeness/completeness-thm.tex#L57) | 181 |
+| T187-OLP-0200-B006 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:13-21](../upstream/content/model-theory/interpolation/separation.tex#L13) | [mr/content/model-theory/interpolation/separation.tex:13-21](../mr/content/model-theory/interpolation/separation.tex#L13) | not yet paginated |
+| T187-OLP-0200-B010 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:58-83](../upstream/content/model-theory/interpolation/separation.tex#L58) | [mr/content/model-theory/interpolation/separation.tex:58-84](../mr/content/model-theory/interpolation/separation.tex#L58) | not yet paginated |
+| T187-OLP-0201-B009 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:34-37](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L34) | [mr/content/model-theory/interpolation/interpolation-proof.tex:33-35](../mr/content/model-theory/interpolation/interpolation-proof.tex#L33) | not yet paginated |
 
 **Chosen rendering/action:** प्रतिपरिवर्तन
 
@@ -12822,7 +12902,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T191 — term model</strong> (16 occurrences; medium priority)</summary>
+<summary><strong>T191 — term model</strong> (17 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12842,6 +12922,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T191-OLP-0133-B016 | OLP-0133 · 13.7 एकरूपता | [upstream/content/first-order-logic/completeness/identity.tex:162-169](../upstream/content/first-order-logic/completeness/identity.tex#L162) | [mr/content/first-order-logic/completeness/identity.tex:164-171](../mr/content/first-order-logic/completeness/identity.tex#L164) | 178–181 |
 | T191-OLP-0136-B006 | OLP-0136 · 13.10 संहतता प्रमेयाची प्रत्यक्ष सिद्धता | [upstream/content/first-order-logic/completeness/compactness-direct.tex:15-24](../upstream/content/first-order-logic/completeness/compactness-direct.tex#L15) | [mr/content/first-order-logic/completeness/compactness-direct.tex:15-22](../mr/content/first-order-logic/completeness/compactness-direct.tex#L15) | 183–184 |
 | T191-OLP-0136-B022 | OLP-0136 · 13.10 संहतता प्रमेयाची प्रत्यक्ष सिद्धता | [upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143](../upstream/content/first-order-logic/completeness/compactness-direct.tex#L128) | [mr/content/first-order-logic/completeness/compactness-direct.tex:128-145](../mr/content/first-order-logic/completeness/compactness-direct.tex#L128) | 183–184 |
+| T191-OLP-0201-B014 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L143) | [mr/content/model-theory/interpolation/interpolation-proof.tex:143-149](../mr/content/model-theory/interpolation/interpolation-proof.tex#L143) | not yet paginated |
 
 **Chosen rendering/action:** पद-प्रतिमान
 
@@ -12944,7 +13025,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T194 — witness / counterexample for a quantified sentence</strong> (4 occurrences; medium priority)</summary>
+<summary><strong>T194 — witness / counterexample for a quantified sentence</strong> (7 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12952,6 +13033,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T194-OLP-0130-B018 | OLP-0130 · 13.4 हेंकिन विस्तार | [upstream/content/first-order-logic/completeness/henkin-expansions.tex:149-158](../upstream/content/first-order-logic/completeness/henkin-expansions.tex#L149) | [mr/content/first-order-logic/completeness/henkin-expansions.tex:150-159](../mr/content/first-order-logic/completeness/henkin-expansions.tex#L150) | 174–175 |
 | T194-OLP-0179-B027 | OLP-0179 · 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | 237–240 |
 | T194-OLP-0192-B007 | OLP-0192 · 20.1 परिचय | [upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70](../upstream/content/model-theory/models-of-arithmetic/introduction.tex#L55) | [mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68](../mr/content/model-theory/models-of-arithmetic/introduction.tex#L52) | 250–251 |
+| T194-OLP-0200-B011 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:85-90](../upstream/content/model-theory/interpolation/separation.tex#L85) | [mr/content/model-theory/interpolation/separation.tex:86-91](../mr/content/model-theory/interpolation/separation.tex#L86) | not yet paginated |
+| T194-OLP-0200-B012 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:92-117](../upstream/content/model-theory/interpolation/separation.tex#L92) | [mr/content/model-theory/interpolation/separation.tex:93-118](../mr/content/model-theory/interpolation/separation.tex#L93) | not yet paginated |
+| T194-OLP-0201-B010 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L39) | [mr/content/model-theory/interpolation/interpolation-proof.tex:37-99](../mr/content/model-theory/interpolation/interpolation-proof.tex#L37) | not yet paginated |
 
 **Chosen rendering/action:** साक्षी / प्रतिउदाहरण
 
@@ -13130,7 +13214,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T202 — formal language / formal derivation</strong> (20 occurrences; routine priority)</summary>
+<summary><strong>T202 — formal language / formal derivation</strong> (24 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13154,6 +13238,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T202-OLP-0189-B016 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:122-129](../upstream/content/model-theory/basics/partial-iso.tex#L122) | [mr/content/model-theory/basics/partial-iso.tex:124-130](../mr/content/model-theory/basics/partial-iso.tex#L124) | 246–248 |
 | T202-OLP-0189-B021 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:167-174](../upstream/content/model-theory/basics/partial-iso.tex#L167) | [mr/content/model-theory/basics/partial-iso.tex:171-178](../mr/content/model-theory/basics/partial-iso.tex#L171) | 246–248 |
 | T202-OLP-0190-B005 | OLP-0190 · 19.7 सघन रेषीय क्रम | [upstream/content/model-theory/basics/dlo.tex:12-26](../upstream/content/model-theory/basics/dlo.tex#L12) | [mr/content/model-theory/basics/dlo.tex:12-26](../mr/content/model-theory/basics/dlo.tex#L12) | 248–249 |
+| T202-OLP-0200-B009 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:49-56](../upstream/content/model-theory/interpolation/separation.tex#L49) | [mr/content/model-theory/interpolation/separation.tex:49-56](../mr/content/model-theory/interpolation/separation.tex#L49) | not yet paginated |
+| T202-OLP-0201-B007 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:22-27](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L22) | [mr/content/model-theory/interpolation/interpolation-proof.tex:22-26](../mr/content/model-theory/interpolation/interpolation-proof.tex#L22) | not yet paginated |
+| T202-OLP-0202-B007 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:34-44](../upstream/content/model-theory/interpolation/definability.tex#L34) | [mr/content/model-theory/interpolation/definability.tex:33-43](../mr/content/model-theory/interpolation/definability.tex#L33) | not yet paginated |
+| T202-OLP-0202-B008 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:46-57](../upstream/content/model-theory/interpolation/definability.tex#L46) | [mr/content/model-theory/interpolation/definability.tex:45-57](../mr/content/model-theory/interpolation/definability.tex#L45) | not yet paginated |
 
 **Chosen rendering/action:** आकारिक भाषा / आकारिक निष्पत्ती
 
@@ -13196,7 +13284,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T204 — variable assignment</strong> (92 occurrences; routine priority)</summary>
+<summary><strong>T204 — variable assignment</strong> (93 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13292,6 +13380,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T204-OLP-0189-B012 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:93-100](../upstream/content/model-theory/basics/partial-iso.tex#L93) | [mr/content/model-theory/basics/partial-iso.tex:93-100](../mr/content/model-theory/basics/partial-iso.tex#L93) | 246–248 |
 | T204-OLP-0189-B019 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:143-158](../upstream/content/model-theory/basics/partial-iso.tex#L143) | [mr/content/model-theory/basics/partial-iso.tex:144-162](../mr/content/model-theory/basics/partial-iso.tex#L144) | 246–248 |
 | T204-OLP-0189-B021 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:167-174](../upstream/content/model-theory/basics/partial-iso.tex#L167) | [mr/content/model-theory/basics/partial-iso.tex:171-178](../mr/content/model-theory/basics/partial-iso.tex#L171) | 246–248 |
+| T204-OLP-0201-B015 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L151) | [mr/content/model-theory/interpolation/interpolation-proof.tex:151-163](../mr/content/model-theory/interpolation/interpolation-proof.tex#L151) | not yet paginated |
 
 **Chosen rendering/action:** चर-मूल्यांकन
 
@@ -13302,7 +13391,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T205 — variable / constant / function (as language symbols)</strong> (61 occurrences; medium priority)</summary>
+<summary><strong>T205 — variable / constant / function (as language symbols)</strong> (73 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13367,6 +13456,18 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T205-OLP-0197-B007 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:35-40](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L35) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:34-39](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L34) | 259–260 |
 | T205-OLP-0197-B008 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L42) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L41) | 259–260 |
 | T205-OLP-0197-B009 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L77) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L78) | 259–260 |
+| T205-OLP-0199-B006 | OLP-0199 ·  | [upstream/content/model-theory/interpolation/introduction.tex:13-18](../upstream/content/model-theory/interpolation/introduction.tex#L13) | [mr/content/model-theory/interpolation/introduction.tex:13-18](../mr/content/model-theory/interpolation/introduction.tex#L13) | not yet paginated |
+| T205-OLP-0200-B009 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:49-56](../upstream/content/model-theory/interpolation/separation.tex#L49) | [mr/content/model-theory/interpolation/separation.tex:49-56](../mr/content/model-theory/interpolation/separation.tex#L49) | not yet paginated |
+| T205-OLP-0200-B010 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:58-83](../upstream/content/model-theory/interpolation/separation.tex#L58) | [mr/content/model-theory/interpolation/separation.tex:58-84](../mr/content/model-theory/interpolation/separation.tex#L58) | not yet paginated |
+| T205-OLP-0200-B011 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:85-90](../upstream/content/model-theory/interpolation/separation.tex#L85) | [mr/content/model-theory/interpolation/separation.tex:86-91](../mr/content/model-theory/interpolation/separation.tex#L86) | not yet paginated |
+| T205-OLP-0200-B012 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:92-117](../upstream/content/model-theory/interpolation/separation.tex#L92) | [mr/content/model-theory/interpolation/separation.tex:93-118](../mr/content/model-theory/interpolation/separation.tex#L93) | not yet paginated |
+| T205-OLP-0201-B006 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L13) | [mr/content/model-theory/interpolation/interpolation-proof.tex:13-20](../mr/content/model-theory/interpolation/interpolation-proof.tex#L13) | not yet paginated |
+| T205-OLP-0201-B007 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:22-27](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L22) | [mr/content/model-theory/interpolation/interpolation-proof.tex:22-26](../mr/content/model-theory/interpolation/interpolation-proof.tex#L22) | not yet paginated |
+| T205-OLP-0201-B010 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L39) | [mr/content/model-theory/interpolation/interpolation-proof.tex:37-99](../mr/content/model-theory/interpolation/interpolation-proof.tex#L37) | not yet paginated |
+| T205-OLP-0201-B014 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L143) | [mr/content/model-theory/interpolation/interpolation-proof.tex:143-149](../mr/content/model-theory/interpolation/interpolation-proof.tex#L143) | not yet paginated |
+| T205-OLP-0201-B015 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L151) | [mr/content/model-theory/interpolation/interpolation-proof.tex:151-163](../mr/content/model-theory/interpolation/interpolation-proof.tex#L151) | not yet paginated |
+| T205-OLP-0201-B016 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L165) | [mr/content/model-theory/interpolation/interpolation-proof.tex:165-183](../mr/content/model-theory/interpolation/interpolation-proof.tex#L165) | not yet paginated |
+| T205-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** चर / स्थिर / फलन
 
@@ -13401,7 +13502,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T207 — n-place / arity</strong> (19 occurrences; routine priority)</summary>
+<summary><strong>T207 — n-place / arity</strong> (20 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13424,6 +13525,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T207-OLP-0187-B007 | OLP-0187 · 19.4 समरूपी रचना | [upstream/content/model-theory/basics/isomorphism.tex:35-59](../upstream/content/model-theory/basics/isomorphism.tex#L35) | [mr/content/model-theory/basics/isomorphism.tex:34-58](../mr/content/model-theory/basics/isomorphism.tex#L34) | 243–245 |
 | T207-OLP-0189-B005 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:12-31](../upstream/content/model-theory/basics/partial-iso.tex#L12) | [mr/content/model-theory/basics/partial-iso.tex:12-31](../mr/content/model-theory/basics/partial-iso.tex#L12) | 246–248 |
 | T207-OLP-0189-B016 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:122-129](../upstream/content/model-theory/basics/partial-iso.tex#L122) | [mr/content/model-theory/basics/partial-iso.tex:124-130](../mr/content/model-theory/basics/partial-iso.tex#L124) | 246–248 |
+| T207-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** n-स्थानी / स्थानसंख्या
 
@@ -13690,7 +13792,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T216 — substitution / free for substitution / variable capture</strong> (34 occurrences; routine priority)</summary>
+<summary><strong>T216 — substitution / free for substitution / variable capture</strong> (38 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13728,6 +13830,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T216-OLP-0166-B015 | OLP-0166 · 16.7 चिन्हार्थविषयक संकल्पना | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:82-90](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L82) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:86-96](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L86) | 220–221 |
 | T216-OLP-0166-B022 | OLP-0166 · 16.7 चिन्हार्थविषयक संकल्पना | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L133) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L143) | 220–221 |
 | T216-OLP-0177-B007 | OLP-0177 · 18.3 द्वितीय-क्रम तर्कशास्त्र | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | 232–235 |
+| T216-OLP-0200-B010 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:58-83](../upstream/content/model-theory/interpolation/separation.tex#L58) | [mr/content/model-theory/interpolation/separation.tex:58-84](../mr/content/model-theory/interpolation/separation.tex#L58) | not yet paginated |
+| T216-OLP-0200-B011 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:85-90](../upstream/content/model-theory/interpolation/separation.tex#L85) | [mr/content/model-theory/interpolation/separation.tex:86-91](../mr/content/model-theory/interpolation/separation.tex#L86) | not yet paginated |
+| T216-OLP-0200-B012 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:92-117](../upstream/content/model-theory/interpolation/separation.tex#L92) | [mr/content/model-theory/interpolation/separation.tex:93-118](../mr/content/model-theory/interpolation/separation.tex#L93) | not yet paginated |
+| T216-OLP-0201-B010 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L39) | [mr/content/model-theory/interpolation/interpolation-proof.tex:37-99](../mr/content/model-theory/interpolation/interpolation-proof.tex#L37) | not yet paginated |
 
 **Chosen rendering/action:** आदेशन / आदेशनासाठी मुक्त / चरग्रहण
 
@@ -13753,7 +13859,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T218 — structure / interpretation (model theory)</strong> (208 occurrences; medium priority)</summary>
+<summary><strong>T218 — structure / interpretation (model theory)</strong> (213 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13965,6 +14071,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T218-OLP-0197-B008 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L42) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L41) | 259–260 |
 | T218-OLP-0197-B009 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L77) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L78) | 259–260 |
 | T218-OLP-0197-B011 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L107) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L106) | 259–260 |
+| T218-OLP-0201-B014 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L143) | [mr/content/model-theory/interpolation/interpolation-proof.tex:143-149](../mr/content/model-theory/interpolation/interpolation-proof.tex#L143) | not yet paginated |
+| T218-OLP-0201-B015 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L151) | [mr/content/model-theory/interpolation/interpolation-proof.tex:151-163](../mr/content/model-theory/interpolation/interpolation-proof.tex#L151) | not yet paginated |
+| T218-OLP-0201-B016 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L165) | [mr/content/model-theory/interpolation/interpolation-proof.tex:165-183](../mr/content/model-theory/interpolation/interpolation-proof.tex#L165) | not yet paginated |
+| T218-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
+| T218-OLP-0202-B009 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:59-64](../upstream/content/model-theory/interpolation/definability.tex#L59) | [mr/content/model-theory/interpolation/definability.tex:59-64](../mr/content/model-theory/interpolation/definability.tex#L59) | not yet paginated |
 
 **Chosen rendering/action:** रचना / अर्थनिर्धारण
 
@@ -14117,7 +14228,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T227 — definability / primitive concept</strong> (6 occurrences; medium priority)</summary>
+<summary><strong>T227 — definability / primitive concept</strong> (9 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -14127,6 +14238,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T227-OLP-0170-B009 | OLP-0170 · 17.3 प्रथम-क्रम उपपत्तींची उदाहरणे | [upstream/content/first-order-logic/models-theories/theories.tex:59-60](../upstream/content/first-order-logic/models-theories/theories.tex#L59) | [mr/content/first-order-logic/models-theories/theories.tex:59-60](../mr/content/first-order-logic/models-theories/theories.tex#L59) | 224–226 |
 | T227-OLP-0171-B010 | OLP-0171 · 17.4 संरचना मधील संबंध व्यक्त करणे | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L69) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L71) | 226–227 |
 | T227-OLP-0172-B007 | OLP-0172 · 17.5 संचांची उपपत्ती | [upstream/content/first-order-logic/models-theories/set-theory.tex:31-55](../upstream/content/first-order-logic/models-theories/set-theory.tex#L31) | [mr/content/first-order-logic/models-theories/set-theory.tex:30-54](../mr/content/first-order-logic/models-theories/set-theory.tex#L30) | 227–229 |
+| T227-OLP-0199-B007 | OLP-0199 ·  | [upstream/content/model-theory/interpolation/introduction.tex:20-25](../upstream/content/model-theory/interpolation/introduction.tex#L20) | [mr/content/model-theory/interpolation/introduction.tex:20-24](../mr/content/model-theory/interpolation/introduction.tex#L20) | not yet paginated |
+| T227-OLP-0202-B005 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:11-11](../upstream/content/model-theory/interpolation/definability.tex#L11) | [mr/content/model-theory/interpolation/definability.tex:11-11](../mr/content/model-theory/interpolation/definability.tex#L11) | not yet paginated |
+| T227-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** परिभाष्यता / आदिम संकल्पना
 
@@ -14919,7 +15033,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T272 — reduct / expansion (model theory)</strong> (6 occurrences; routine priority)</summary>
+<summary><strong>T272 — reduct / expansion (model theory)</strong> (8 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -14929,6 +15043,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T272-OLP-0184-B007 | OLP-0184 · 19.1 न्यूनीकृत आणि विस्तारित रचना | [upstream/content/model-theory/basics/reducts-and-expansions.tex:41-49](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L41) | [mr/content/model-theory/basics/reducts-and-expansions.tex:40-48](../mr/content/model-theory/basics/reducts-and-expansions.tex#L40) | 242–243 |
 | T272-OLP-0184-B010 | OLP-0184 · 19.1 न्यूनीकृत आणि विस्तारित रचना | [upstream/content/model-theory/basics/reducts-and-expansions.tex:59-65](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L59) | [mr/content/model-theory/basics/reducts-and-expansions.tex:58-65](../mr/content/model-theory/basics/reducts-and-expansions.tex#L58) | 242–243 |
 | T272-OLP-0196-B035 | OLP-0196 · 20.5 PA ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260](../upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex#L238) | [mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263](../mr/content/model-theory/models-of-arithmetic/models-of-pa.tex#L242) | 256–259 |
+| T272-OLP-0201-B015 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L151) | [mr/content/model-theory/interpolation/interpolation-proof.tex:151-163](../mr/content/model-theory/interpolation/interpolation-proof.tex#L151) | not yet paginated |
+| T272-OLP-0202-B009 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:59-64](../upstream/content/model-theory/interpolation/definability.tex#L59) | [mr/content/model-theory/interpolation/definability.tex:59-64](../mr/content/model-theory/interpolation/definability.tex#L59) | not yet paginated |
 
 **Chosen rendering/action:** न्यूनीकृत रचना / विस्तारित रचना
 
@@ -15336,6 +15452,114 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** low; pronunciation-based provisional name form; exact Marathi attestation not found; expert review useful; open to correction.
 
 **Please double-check:** Is टेनेनबाउम the conventional Marathi rendering of Stanley Tennenbaum's surname?
+
+</details>
+
+<details>
+<summary><strong>T290 — interpolation theorem / interpolant (logic)</strong> (10 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T290-OLP-0198-B004 | OLP-0198 ·  | [upstream/content/model-theory/interpolation/interpolation.tex:8-8](../upstream/content/model-theory/interpolation/interpolation.tex#L8) | [mr/content/model-theory/interpolation/interpolation.tex:8-8](../mr/content/model-theory/interpolation/interpolation.tex#L8) | not yet paginated |
+| T290-OLP-0199-B006 | OLP-0199 ·  | [upstream/content/model-theory/interpolation/introduction.tex:13-18](../upstream/content/model-theory/interpolation/introduction.tex#L13) | [mr/content/model-theory/interpolation/introduction.tex:13-18](../mr/content/model-theory/interpolation/introduction.tex#L13) | not yet paginated |
+| T290-OLP-0199-B007 | OLP-0199 ·  | [upstream/content/model-theory/interpolation/introduction.tex:20-25](../upstream/content/model-theory/interpolation/introduction.tex#L20) | [mr/content/model-theory/interpolation/introduction.tex:20-24](../mr/content/model-theory/interpolation/introduction.tex#L20) | not yet paginated |
+| T290-OLP-0200-B006 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:13-21](../upstream/content/model-theory/interpolation/separation.tex#L13) | [mr/content/model-theory/interpolation/separation.tex:13-21](../mr/content/model-theory/interpolation/separation.tex#L13) | not yet paginated |
+| T290-OLP-0201-B005 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:11-11](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L11) | [mr/content/model-theory/interpolation/interpolation-proof.tex:11-11](../mr/content/model-theory/interpolation/interpolation-proof.tex#L11) | not yet paginated |
+| T290-OLP-0201-B006 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L13) | [mr/content/model-theory/interpolation/interpolation-proof.tex:13-20](../mr/content/model-theory/interpolation/interpolation-proof.tex#L13) | not yet paginated |
+| T290-OLP-0201-B008 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:29-32](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L29) | [mr/content/model-theory/interpolation/interpolation-proof.tex:28-31](../mr/content/model-theory/interpolation/interpolation-proof.tex#L28) | not yet paginated |
+| T290-OLP-0201-B009 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:34-37](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L34) | [mr/content/model-theory/interpolation/interpolation-proof.tex:33-35](../mr/content/model-theory/interpolation/interpolation-proof.tex#L33) | not yet paginated |
+| T290-OLP-0201-B017 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L183) | [mr/content/model-theory/interpolation/interpolation-proof.tex:185-192](../mr/content/model-theory/interpolation/interpolation-proof.tex#L185) | not yet paginated |
+| T290-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
+
+**Chosen rendering/action:** अंतर्वेशन प्रमेय / अंतर्वेशक वाक्य
+
+**Confidence/status:** high; authoritative mathematical stem extended definition-controlled to logic; exact logical compounds unattested; high-priority expert review useful; open to correction.
+
+**Please double-check:** Is अंतर्वेशक वाक्य a natural Marathi logic noun for interpolant, or should the edition retain a transliteration or use मध्यस्थ वाक्य?
+
+</details>
+
+<details>
+<summary><strong>T291 — separates / separable / inseparable (sets of sentences)</strong> (11 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T291-OLP-0200-B005 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:11-11](../upstream/content/model-theory/interpolation/separation.tex#L11) | [mr/content/model-theory/interpolation/separation.tex:11-11](../mr/content/model-theory/interpolation/separation.tex#L11) | not yet paginated |
+| T291-OLP-0200-B006 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:13-21](../upstream/content/model-theory/interpolation/separation.tex#L13) | [mr/content/model-theory/interpolation/separation.tex:13-21](../mr/content/model-theory/interpolation/separation.tex#L13) | not yet paginated |
+| T291-OLP-0200-B007 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:23-28](../upstream/content/model-theory/interpolation/separation.tex#L23) | [mr/content/model-theory/interpolation/separation.tex:23-28](../mr/content/model-theory/interpolation/separation.tex#L23) | not yet paginated |
+| T291-OLP-0200-B008 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:30-46](../upstream/content/model-theory/interpolation/separation.tex#L30) | [mr/content/model-theory/interpolation/separation.tex:30-46](../mr/content/model-theory/interpolation/separation.tex#L30) | not yet paginated |
+| T291-OLP-0200-B009 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:49-56](../upstream/content/model-theory/interpolation/separation.tex#L49) | [mr/content/model-theory/interpolation/separation.tex:49-56](../mr/content/model-theory/interpolation/separation.tex#L49) | not yet paginated |
+| T291-OLP-0200-B010 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:58-83](../upstream/content/model-theory/interpolation/separation.tex#L58) | [mr/content/model-theory/interpolation/separation.tex:58-84](../mr/content/model-theory/interpolation/separation.tex#L58) | not yet paginated |
+| T291-OLP-0200-B011 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:85-90](../upstream/content/model-theory/interpolation/separation.tex#L85) | [mr/content/model-theory/interpolation/separation.tex:86-91](../mr/content/model-theory/interpolation/separation.tex#L86) | not yet paginated |
+| T291-OLP-0200-B012 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:92-117](../upstream/content/model-theory/interpolation/separation.tex#L92) | [mr/content/model-theory/interpolation/separation.tex:93-118](../mr/content/model-theory/interpolation/separation.tex#L93) | not yet paginated |
+| T291-OLP-0201-B009 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:34-37](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L34) | [mr/content/model-theory/interpolation/interpolation-proof.tex:33-35](../mr/content/model-theory/interpolation/interpolation-proof.tex#L33) | not yet paginated |
+| T291-OLP-0201-B010 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L39) | [mr/content/model-theory/interpolation/interpolation-proof.tex:37-99](../mr/content/model-theory/interpolation/interpolation-proof.tex#L37) | not yet paginated |
+| T291-OLP-0201-B011 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L100) | [mr/content/model-theory/interpolation/interpolation-proof.tex:101-106](../mr/content/model-theory/interpolation/interpolation-proof.tex#L101) | not yet paginated |
+
+**Chosen rendering/action:** विलग करते / विलगनीय / अविलगनीय
+
+**Confidence/status:** high; definition-controlled transparent specialist family; exact headword unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is अविलगनीय readable as the repeated technical adjective for inseparable theories, while remaining distinct from set-theoretic Separation?
+
+</details>
+
+<details>
+<summary><strong>T292 — Craig / Beth / Robinson; joint consistency theorem</strong> (5 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T292-OLP-0199-B007 | OLP-0199 ·  | [upstream/content/model-theory/interpolation/introduction.tex:20-25](../upstream/content/model-theory/interpolation/introduction.tex#L20) | [mr/content/model-theory/interpolation/introduction.tex:20-24](../mr/content/model-theory/interpolation/introduction.tex#L20) | not yet paginated |
+| T292-OLP-0201-B005 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:11-11](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L11) | [mr/content/model-theory/interpolation/interpolation-proof.tex:11-11](../mr/content/model-theory/interpolation/interpolation-proof.tex#L11) | not yet paginated |
+| T292-OLP-0201-B006 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L13) | [mr/content/model-theory/interpolation/interpolation-proof.tex:13-20](../mr/content/model-theory/interpolation/interpolation-proof.tex#L13) | not yet paginated |
+| T292-OLP-0202-B010 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:66-69](../upstream/content/model-theory/interpolation/definability.tex#L66) | [mr/content/model-theory/interpolation/definability.tex:66-70](../mr/content/model-theory/interpolation/definability.tex#L66) | not yet paginated |
+| T292-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
+
+**Chosen rendering/action:** क्रेग / बेथ / रॉबिन्सन; संयुक्त सुसंगतता प्रमेय
+
+**Confidence/status:** medium; established consistency vocabulary with provisional theorem-name transliterations; exact compounds unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Are the three surname spellings and संयुक्त सुसंगतता प्रमेय conventional in Marathi mathematical logic?
+
+</details>
+
+<details>
+<summary><strong>T293 — explicitly defines / implicitly defines; explicit / implicit definition</strong> (8 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T293-OLP-0199-B007 | OLP-0199 ·  | [upstream/content/model-theory/interpolation/introduction.tex:20-25](../upstream/content/model-theory/interpolation/introduction.tex#L20) | [mr/content/model-theory/interpolation/introduction.tex:20-24](../mr/content/model-theory/interpolation/introduction.tex#L20) | not yet paginated |
+| T293-OLP-0202-B005 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:11-11](../upstream/content/model-theory/interpolation/definability.tex#L11) | [mr/content/model-theory/interpolation/definability.tex:11-11](../mr/content/model-theory/interpolation/definability.tex#L11) | not yet paginated |
+| T293-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
+| T293-OLP-0202-B007 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:34-44](../upstream/content/model-theory/interpolation/definability.tex#L34) | [mr/content/model-theory/interpolation/definability.tex:33-43](../mr/content/model-theory/interpolation/definability.tex#L33) | not yet paginated |
+| T293-OLP-0202-B008 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:46-57](../upstream/content/model-theory/interpolation/definability.tex#L46) | [mr/content/model-theory/interpolation/definability.tex:45-57](../mr/content/model-theory/interpolation/definability.tex#L45) | not yet paginated |
+| T293-OLP-0202-B009 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:59-64](../upstream/content/model-theory/interpolation/definability.tex#L59) | [mr/content/model-theory/interpolation/definability.tex:59-64](../mr/content/model-theory/interpolation/definability.tex#L59) | not yet paginated |
+| T293-OLP-0202-B010 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:66-69](../upstream/content/model-theory/interpolation/definability.tex#L66) | [mr/content/model-theory/interpolation/definability.tex:66-70](../mr/content/model-theory/interpolation/definability.tex#L66) | not yet paginated |
+| T293-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
+
+**Chosen rendering/action:** स्पष्टपणे परिभाषित करते / अंतर्निहितपणे परिभाषित करते; स्पष्ट / अंतर्निहित परिभाषा
+
+**Confidence/status:** medium; definition-controlled transparent compounds with established adjacent terminology; exact model-theory pair unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Does अंतर्निहितपणे clearly convey uniqueness across expansions, or is अप्रत्यक्षपणे more conventional for implicit definability?
+
+</details>
+
+<details>
+<summary><strong>T294 — maximally inseparable / maximally consistent</strong> (4 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T294-OLP-0201-B010 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L39) | [mr/content/model-theory/interpolation/interpolation-proof.tex:37-99](../mr/content/model-theory/interpolation/interpolation-proof.tex#L37) | not yet paginated |
+| T294-OLP-0201-B012 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:107-126](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L107) | [mr/content/model-theory/interpolation/interpolation-proof.tex:108-127](../mr/content/model-theory/interpolation/interpolation-proof.tex#L108) | not yet paginated |
+| T294-OLP-0201-B013 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:128-141](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L128) | [mr/content/model-theory/interpolation/interpolation-proof.tex:129-141](../mr/content/model-theory/interpolation/interpolation-proof.tex#L129) | not yet paginated |
+| T294-OLP-0201-B014 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L143) | [mr/content/model-theory/interpolation/interpolation-proof.tex:143-149](../mr/content/model-theory/interpolation/interpolation-proof.tex#L143) | not yet paginated |
+
+**Chosen rendering/action:** महत्तम अविलगनीय / महत्तम सुसंगत
+
+**Confidence/status:** high; source-defined transparent modifiers on established logical vocabulary; exact compounds unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Should inclusion-maximal theories use महत्तम or the more familiar कमाल, and should maximally consistent align terminologically with the edition's complete consistent sets?
 
 </details>
 
@@ -17091,5 +17315,65 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; confirmed by binding scope, the relation defined in OLP-0195 and the later statement that every domain element is below a; open to correction.
 
 **Please double-check:** Does binding x make the set-builder well formed and restore exactly the intended second component of K's less-than relation?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-041 — confirmed-frozen-source-unbound proof symbol with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-041-OLP-0200 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:72-76](../upstream/content/model-theory/interpolation/separation.tex#L72) | [mr/content/model-theory/interpolation/separation.tex:72-76](../mr/content/model-theory/interpolation/separation.tex#L72) | not yet paginated |
+
+**Chosen rendering/action:** Replaced the unrelated delta by H in the Marathi formula, placed adjacent reader note OLFOL-041 and added a unit-specific QA projection that reconstructs the frozen delta solely for source comparison.
+
+**Confidence/status:** high; confirmed by the immediately preceding contraposition, the definition of H and the immediately following contraposition; open to correction.
+
+**Please double-check:** Does restoring H make the two consecutive contraposition steps well typed and yield the separating sentence claimed at the end of the proof?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-042 — confirmed-frozen-source-wrong model component with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-042-OLP-0201 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:168-177](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L168) | [mr/content/model-theory/interpolation/interpolation-proof.tex:168-178](../mr/content/model-theory/interpolation/interpolation-proof.tex#L168) | not yet paginated |
+
+**Chosen rendering/action:** Changed the transported interpretation from P-in-M2 to P-in-M1 in Marathi, placed adjacent reader note OLFOL-042 and added a unit-specific QA projection that reconstructs the frozen M2 subscript solely for source comparison.
+
+**Confidence/status:** high; confirmed by h's declared direction, the L1-minus-L2 case and the componentwise membership condition on the following lines; open to correction.
+
+**Please double-check:** Does using the M1 interpretation make the transport clause agree with h's domain and with the printed tuple-membership equivalence?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-043 — confirmed-frozen-source-missing biconditional word with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-043-OLP-0202 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:66-69](../upstream/content/model-theory/interpolation/definability.tex#L66) | [mr/content/model-theory/interpolation/definability.tex:66-70](../mr/content/model-theory/interpolation/definability.tex#L66) | not yet paginated |
+
+**Chosen rendering/action:** Rendered the complete biconditional in Marathi and placed adjacent reader note OLFOL-043. The omitted item is ordinary source prose, so no protected formula, macro, token, identifier or reference and no structural projection is involved.
+
+**Confidence/status:** high; confirmed by the conventional theorem statement and the two-direction proof beginning immediately below it; open to correction.
+
+**Please double-check:** Does the restored Marathi 'if and only if' state exactly the equivalence proved in the following paragraph?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-044 — confirmed-frozen-source-malformed atomic formula with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-044-OLP-0202 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:92-98](../upstream/content/model-theory/interpolation/definability.tex#L92) | [mr/content/model-theory/interpolation/definability.tex:93-100](../mr/content/model-theory/interpolation/definability.tex#L93) | not yet paginated |
+
+**Chosen rendering/action:** Restored the atomic-formula macro around P' and its n arguments in Marathi, placed adjacent reader note OLFOL-044 and added a unit-specific QA projection that reconstructs the frozen raw sequence solely for source comparison.
+
+**Confidence/status:** high; confirmed by both neighboring occurrences and by the algebraic rearrangement on the next displayed line; open to correction.
+
+**Please double-check:** Does the restored atom make the entailment syntactically well formed and identical to the P-prime atom used in the adjacent steps?
 
 </details>

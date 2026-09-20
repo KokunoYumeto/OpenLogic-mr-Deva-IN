@@ -1,0 +1,194 @@
+% Part: model-theory
+% Chapter: interpolation
+% Section: interpolation-proof
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{int}{prf}
+
+\olsection{क्रेगचे अंतर्वेशन प्रमेय}
+
+\begin{thm}[क्रेगचे अंतर्वेशन प्रमेय]
+\ollabel{thm:interpol}
+$\Entails !A \lif !B$ असेल, तर असे !!a{sentence}~$!C$ असते की
+$\Entails !A \lif !C$ आणि $\Entails !C \lif !B$; तसेच $!C$ मधील
+प्रत्येक !!{constant}, !!{function} आणि !!{predicate} ($\eq$ खेरीज) हे
+$!A$ आणि~$!B$ या दोन्हींमध्ये आढळते. !!{sentence}~$!C$ ला $!A$ आणि~$!B$
+यांचे \emph{अंतर्वेशक} म्हणतात.
+\end{thm}
+
+\begin{proof}
+समजा $\Lang{L}_1$ ही $!A$ ची भाषा आणि $\Lang{L}_2$ ही $!B$ ची भाषा
+आहे. $\Lang{L}_0 = \Lang{L}_1 \cap \Lang{L}_2$ असे ठेवू. प्रत्येक
+$i \in \{0, 1, 2 \}$ साठी, $\Lang{L}_i$ मध्ये अनंत नवीन !!{constant}s
+$\Obj c_0, \Obj c_1, \Obj c_2, \dots$ जोडून $\Lang{L}'_i$ मिळवू.
+
+$!A$ अपूर्ततायोग्य असेल, तर $\lexists[x][\eq/[x][x]]$ हे अंतर्वेशक आहे.
+$\lnot !B$ अपूर्ततायोग्य असेल (आणि म्हणून $!B$ वैध असेल), तर
+$\lexists[x][\eq[x][x]]$ हे अंतर्वेशक आहे. म्हणून $!A$ आणि~$\lnot !B$
+ही दोन्ही पूर्ततायोग्य आहेत असेही आपण मानू शकतो.
+
+अंतर्वेशन प्रमेयाचे प्रतिपरिवर्तित विधान सिद्ध करण्यासाठी, $!A$ आणि~$!B$
+यांचे कोणतेही अंतर्वेशक नाही असे गृहीत धरू. दुसऱ्या शब्दांत, $\{!A\}$
+आणि~$\{\lnot !B\}$ हे $\Lang{L}_0$ मध्ये अविलगनीय आहेत असे गृहीत धरू.
+
+$(\{ !A \}, \{\lnot!B\})$ या जोडीचा विस्तार करून महत्तम अविलगनीय जोडी
+$(\Gamma^*, \Delta^*)$ मिळवणे हे आपले उद्दिष्ट आहे. $!A_0$, $!A_1$,
+$!A_2$, \dots{} हे $\Lang{L}_1$ च्या !!{sentence}s चे प्रगणन आणि $!B_0$,
+$!B_1$, $!B_2$, \dots{} हे $\Lang{L}_2$ च्या !!{sentence}s चे प्रगणन असू
+द्या. प्रत्येक $n \ge 0$ साठी !!{sentence}s च्या संचांचे दोन वर्धमान अनुक्रम
+$(\Gamma_n, \Delta_n)$ पुढीलप्रमाणे परिभाषित करू. $\Gamma_0 = \{ !A\}$
+आणि $\Delta_0 = \{\lnot !B \}$ असे ठेवू. $(\Gamma_n, \Delta_n)$ आधीच
+परिभाषित आहेत असे मानून $\Gamma_{n+1}$ आणि $\Delta_{n+1}$ पुढीलप्रमाणे
+परिभाषित करू:
+\begin{enumerate}
+\item $\Gamma_n \cup \{!A_n \}$ आणि~$\Delta_n$ हे $\Lang{L}'_0$ मध्ये
+  अविलगनीय असतील, तर $!A_n$ चा $\Gamma_{n+1}$ मध्ये समावेश करा. शिवाय,
+  $!A_n$ हे $\lexists[x][!S]$ या रूपातील अस्तित्ववाची !!{formula} असेल,
+  तर $\Gamma_n$, $\Delta_n$, $!A_n$ किंवा~$!B_n$ यांपैकी कशातही न आढळणारे
+  नवीन !!{constant}~$c$ निवडा आणि $\Subst{!S}{c}{x}$ चा $\Gamma_{n+1}$
+  मध्ये समावेश करा.
+\item $\Gamma_{n+1}$ आणि~$\Delta_n \cup \{!B_n \}$ हे $\Lang{L}'_0$
+  मध्ये अविलगनीय असतील, तर $!B_n$ चा $\Delta_{n+1}$ मध्ये समावेश करा.
+  शिवाय, $!B_n$ हे $\lexists[x][!S]$ या रूपातील अस्तित्ववाची !!{formula}
+  असेल, तर $\Gamma_{n+1}$, $\Delta_n$, $!A_n$ किंवा~$!B_n$ यांपैकी कशातही
+  न आढळणारे नवीन !!{constant}~$c$ निवडा आणि $\Subst{!S}{c}{x}$ चा
+  $\Delta_{n+1}$ मध्ये समावेश करा.
+\end{enumerate}
+शेवटी, पुढील व्याख्या करू:
+\begin{align*}
+  \Gamma^* & = \bigcup_{n\ge 0} \Gamma_n, &
+  \Delta^* & = \bigcup_{n\ge 0} \Delta_n.
+\end{align*}
+आता $n$ वरील युगपत् विगमनाने पुढील गोष्टी सिद्ध करता येतात:
+\begin{enumerate}
+\item\ollabel{part-a} $\Gamma_n$ आणि~$\Delta_n$ हे $\Lang{L}'_0$ मध्ये
+  अविलगनीय आहेत;
+\item\ollabel{part-b} $\Gamma_{n+1}$ आणि~$\Delta_n$ हे $\Lang{L}'_0$
+  मध्ये अविलगनीय आहेत.
+\end{enumerate}
+\olref{part-a} चा आधार \olref[sep]{lem:sep1} मुळे मिळतो. \olref{part-b}
+साठी तीन प्रकरणे वेगळी करावी लागतात:
+\begin{enumerate}
+\item $\Gamma_0 \cup \{!A_0 \}$ आणि~$\Delta_0$ हे विलगनीय असतील, तर
+  $\Gamma_1 = \Gamma_0$; त्यामुळे \olref{part-b} म्हणजे फक्त
+  \olref{part-a} होय.
+\item $\Gamma_1 = \Gamma_0 \cup\{ !A_0\}$ असेल, तर रचनेनुसार
+  $\Gamma_1$ आणि~$\Delta_0$ हे अविलगनीय आहेत.
+\item आता फक्त $!A_0$ अस्तित्ववाची असलेले प्रकरण उरते; तेव्हा
+  $\Gamma_1 = \Gamma_0 \cup \{ \lexists[x][!S], \Subst{!S}{c}{x}
+  \}$. रचनेनुसार $\Gamma_0 \cup \{ \lexists[x][!S]\}$ आणि~$\Delta_0$
+  हे अविलगनीय आहेत; म्हणून \olref[sep]{lem:sep2} नुसार $\Gamma_0 \cup
+  \{ \lexists[x][!S], \Subst{!S}{c}{x} \}$ आणि~$\Delta_0$ हेही
+  अविलगनीय आहेत.
+\end{enumerate}
+यावरून वरील \olref{part-a} आणि \olref{part-b} यांच्यासाठी विगमनाचा आधार
+पूर्ण होतो. आता विगमन-पायरी पाहू. \olref{part-a} साठी, $\Delta_{n+1} =
+\Delta_n \cup \{ !B_n \}$ असेल, तर रचनेनुसार $\Gamma_{n+1}$ आणि
+$\Delta_{n+1}$ हे अविलगनीय आहेत ($!B_n$ अस्तित्ववाची असतानाही
+\olref[sep]{lem:sep2} नुसार हेच मिळते); आणि $\Delta_{n+1} = \Delta_n$
+असेल ($\Gamma_{n+1}$ आणि~$\Delta_n \cup \{!B_n\}$ विलगनीय असल्यामुळे),
+तर \olref{part-b} साठीचे विगमन-गृहीतक वापरतो. \olref{part-b} च्या
+विगमन-पायरीसाठी, $\Gamma_{n+2} = \Gamma_{n+1} \cup \{!A_{n+1} \}$
+असेल, तर रचनेनुसार $\Gamma_{n+2}$ आणि~$\Delta_{n+1}$ हे अविलगनीय आहेत
+($!A_{n+1}$ अस्तित्ववाची असतानाही \olref[sep]{lem:sep2} नुसार हेच
+मिळते); आणि $\Gamma_{n+2} = \Gamma_{n+1}$ असेल, तर नुकतेच सिद्ध केलेले
+\olref{part-a} चे विगमन-प्रकरण वापरतो. अशा रीतीने \olref{part-a} आणि
+\olref{part-b} यांवरील विगमन पूर्ण होते.
+
+यावरून $\Gamma^*$ आणि~$\Delta^*$ हे अविलगनीय आहेत. तसे नसते, तर
+संहततेनुसार असा $n \ge 0$ असता की $\Gamma_n$ आणि~$\Delta_n$ विलगनीय
+असते, आणि हे \olref{part-a} च्या विरुद्ध आहे. विशेषतः, $\Gamma^*$ आणि
+$\Delta^*$ हे सुसंगत आहेत: कारण यांपैकी अनुक्रमे पहिला किंवा दुसरा विसंगत
+असता, तर $\lexists[x][\eq/[x][x]]$ किंवा
+$\lforall[x][\eq[x][x]]$ यांनी ते विलग झाले असते.
+
+आता $\Gamma^*$ हा $\Lang{L}'_1$ मध्ये महत्तम सुसंगत आहे आणि त्याचप्रमाणे
+$\Delta^*$ हा $\Lang{L}'_2$ मध्ये महत्तम सुसंगत आहे, हे दाखवू. पहिल्यासाठी,
+एखाद्या $n \ge 0$ करिता $!A_n \notin \Gamma^*$ आणि $\lnot !A_n
+\notin \Gamma^*$ असे समजा. $!A_n \notin \Gamma^*$ असल्यास $\Gamma_n
+\cup \{!A_n \}$ हा $\Delta_n$ पासून विलगनीय असतो; म्हणून असे
+$!C \in \Lang{L}'_0$ असते की पुढील दोन्ही विधाने खरी असतात:
+\begin{align*}
+  \Gamma^* & \Entails !A_n \lif !C, &
+  \Delta^* & \Entails \lnot !C.
+\end{align*}
+त्याचप्रमाणे, $\lnot !A_n \notin \Gamma^*$ असेल, तर असे $!C' \in
+\Lang{L}'_0$ असते की पुढील दोन्ही विधाने खरी असतात:
+\begin{align*}
+  \Gamma^* & \Entails \lnot !A_n \lif !C', &
+  \Delta^* & \Entails \lnot !C'.
+\end{align*}
+विधान तर्कशास्त्रानुसार $\Gamma^* \Entails !C \lor !C'$ आणि
+$\Delta^* \Entails \lnot (!C \lor !C')$; म्हणून $!C \lor !C'$ हे
+$\Gamma^*$ आणि~$\Delta^*$ यांना विलग करते. यासारख्याच युक्तिवादाने
+$\Delta^*$ हा महत्तम असल्याचे सिद्ध होते.
+
+शेवटी, $\Gamma^* \cap \Delta^*$ हा $\Lang{L}'_0$ मध्ये महत्तम सुसंगत
+आहे हे दाखवू. तो सुसंगत संचांचा छेद असल्यामुळे उघडपणे सुसंगत आहे. महत्तमता
+दाखवण्यासाठी $!S \in \Lang{L}'_0$ असू द्या. आता $\Gamma^*$ हा
+$\Lang{L'_1} \supseteq \Lang{L'_0}$ मध्ये महत्तम आहे आणि त्याचप्रमाणे
+$\Delta^*$ हा $\Lang{L'_2} \supseteq \Lang{L'_0}$ मध्ये महत्तम आहे.
+त्यामुळे $!S \in \Gamma^*$ किंवा $\lnot !S \in \Gamma^*$, आणि
+$!S \in \Delta^*$ किंवा $\lnot !S \in \Delta^*$. जर $!S \in
+\Gamma^*$ आणि $\lnot !S \in \Delta^*$ असते, तर $!S$ ने $\Gamma^*$
+आणि~$\Delta^*$ यांना विलग केले असते; आणि जर $\lnot !S \in \Gamma^*$
+आणि $!S \in \Delta^*$ असते, तर $\lnot !S$ ने $\Gamma^*$ आणि~$\Delta^*$
+यांना विलग केले असते. म्हणून एकतर $!S \in \Gamma^* \cap \Delta^*$
+किंवा $\lnot !S \in \Gamma^* \cap \Delta^*$; त्यामुळे $\Gamma^* \cap
+\Delta^*$ हा महत्तम आहे.
+
+$\Gamma^*$ हा महत्तम सुसंगत असल्यामुळे त्याला असे प्रतिमान
+$\Struct{M}'_1$ असते की त्याचा !!{domain}~$\Domain{M'_1}$ हा
+!!{constant}s ची अर्थनिर्धारणे असलेल्या सर्व आणि केवळ $\Assign{c}{M'_1}$
+या घटकांचा बनलेला असतो---अगदी संपूर्णता प्रमेयाच्या सिद्धतेप्रमाणे
+(\olref[fol][com][cth]{thm:completeness}). त्याचप्रमाणे, $\Delta^*$ ला
+असे प्रतिमान~$\Struct{M}'_2$ असते की त्याचा !!{domain}~$\Domain{M'_2}$
+हा !!{constant}s ची $\Assign{c}{M'_2}$ ही अर्थनिर्धारणे घेऊन बनलेला असतो.
+
+$\Lang{L'_1} \setminus \Lang{L'_0}$ मधील !!{constant}s, !!{function}s
+आणि !!{predicate}s यांची अर्थनिर्धारणे वगळून $\Struct{M'_1}$ पासून
+$\Struct{M_1}$ मिळवू; आणि त्याचप्रमाणे $\Struct{M_2}$ मिळवू. मग
+$h(\Assign{c}{M'_1}) = \Assign{c}{M'_2}$ अशी व्याख्या असलेले प्रतिचित्रण
+$h \colon M_1 \to M_2$ हे $\Lang{L}'_0$ मधील समरूपण आहे, कारण दाखवल्याप्रमाणे
+$\Gamma^* \cap \Delta^*$ हा $\Lang{L}'_0$ मध्ये महत्तम सुसंगत आहे. हे
+पुढील कारणाने मिळते: कोणतेही $\Lang{L}'_0$-!!{sentence} हे एकतर $\Gamma^*$
+आणि~$\Delta^*$ या दोन्हींचा घटक असते, किंवा दोन्हींपैकी कशाचाही नसते;
+म्हणून $\Assign{c}{M'_1} \in \Assign{P}{M'_1}$ तेव्हा आणि केवळ तेव्हाच,
+जेव्हा $\Atom{P}{c} \in \Gamma^*$, तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Atom{P}{c} \in \Delta^*$, तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Assign{c}{M'_2} \in \Assign{P}{M'_2}$. समरूपणांनी पूर्ण केलेल्या इतर
+अटीही याच रीतीने सिद्ध करता येतात.
+
+आता !!{language}~$\Lang{L_1} \cup \Lang{L_2}$ साठी प्रतिमान~$\Struct{M}$
+पुढीलप्रमाणे परिभाषित करू:
+\begin{enumerate}
+\item !!{domain}~$\Domain{M}$ म्हणजे $\Domain{M_2}$, म्हणजेच सर्व
+  $\Assign{c}{M'_2}$ घटकांचा संच;
+\item !!a{predicate}~$P$ हे $\Lang{L_2} \setminus \Lang{L_1}$ मध्ये
+  असेल, तर $\Assign{P}{M} = \Assign{P}{M'_2}$;
+\item विधेय~$P$ हे $\Lang{L}_1\setminus \Lang{L}_2$ मध्ये असेल, तर
+  $\Assign{P}{M} = h(\Assign{P}{M'_1})$, म्हणजे
+  $\tuple{\Assign{c_1}{M'_2}, \dots, \Assign{c_n}{M'_2}} \in
+  \Assign{P}{M}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\tuple{\Assign{c_1}{M'_1}, \dots, \Assign{c_n}{M'_1}} \in
+  \Assign{P}{M'_1}$.
+  %READERNOTE{OLFOL-042 — गोठवलेल्या इंग्रजीतील या स्थानांतरण-सूत्रात h ला M'_2 मधील P चे अर्थनिर्धारण दिले आहे; पण h चा प्रांत M_1 आहे आणि पुढील घटकनिहाय अटही M'_1 मधील P चे अर्थनिर्धारणच स्थानांतरित करते. मराठी सूत्रात M'_1 पुनःस्थापित केले आहे.}
+\item !!a{predicate}~$P$ हे $\Lang{L}_0$ मध्ये असेल, तर $\Assign{P}{M} =
+  \Assign{P}{M'_2} = h(\Assign{P}{M'_1})$.
+\item $\Lang{L}_1 \cup \Lang{L}_2$ ची !!^{function}s, त्यांत
+  !!{constant}s धरून, याच रीतीने हाताळली जातात.
+\end{enumerate}
+
+शेवटी, !!{formula}s वरील विगमनाने असे दाखवता येते की $\Struct{M}$ हे
+$\Lang{L'_1}$ च्या सर्व !!{formula}s बाबत $\Struct{M'_1}$ शी आणि
+$\Lang{L'_2}$ च्या सर्व !!{formula}s बाबत $\Struct{M'_2}$ शी सहमत असते.
+विशेषतः, $\Struct{M} \Entails \Gamma^* \cup \Delta^*$; त्यामुळे
+$\Struct{M} \Entails !A$ आणि $\Struct{M} \Entails \lnot!B$, तसेच
+$\not\Entails !A \lif !B$. याने क्रेगच्या अंतर्वेशन प्रमेयाची सिद्धता
+पूर्ण होते.
+\end{proof}
+
+\end{document}

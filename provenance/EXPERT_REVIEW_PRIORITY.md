@@ -2,13 +2,13 @@
 
 This view contains only high-priority Marathi choices: sparse or unattested evidence, preserved-origin uncertainty, ambiguity-avoiding paraphrases, or another low-confidence status. Review is welcome but is not a completion gate.
 
-High-priority decisions: **41**; governed occurrences: **1068**. Script: Devanagari (Deva); locale: mr-IN; edition tag: mr-Deva-IN.
+High-priority decisions: **41**; governed occurrences: **1073**. Script: Devanagari (Deva); locale: mr-IN; edition tag: mr-Deva-IN.
 
 | Decision | Source term/sense | Chosen Marathi | Occurrences | Current PDF page ranges | Please double-check |
 |---|---|---|---:|---|---|
 | T006 | proper subset | उचित उपसंच | 24 | 11–12, 61–67, 71–72, 80–83, 232–235 | Please double-check: In the listed formal contexts, should “उचित उपसंच” remain, or should one of “काटेकोर उपसंच” replace it? Does the chosen wording preserve the technical sense of proper subset without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source. |
 | T007 | power set | घातसंच | 53 | 11–12, 17–18, 44–51, 53–56, 227–229 | Please double-check: In the listed formal contexts, should “घातसंच” remain, or should one of “शक्तिसंच” replace it? Does the chosen wording preserve the technical sense of power set without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source. |
-| T013 | model (model theory) | प्रतिमान | 99 | 153–157, 168–187, 189–193, 208–210, 222–227, 229–230, 232–235, 242–243, 250–260 | Please double-check: For a structure satisfying a theory, should प्रतिमान, प्रारूप or मॉडेल be preferred in current Marathi logic scholarship? |
+| T013 | model (model theory) | प्रतिमान | 104 | 153–157, 168–187, 189–193, 208–210, 222–227, 229–230, 232–235, 242–243, 250–260 | Please double-check: For a structure satisfying a theory, should प्रतिमान, प्रारूप or मॉडेल be preferred in current Marathi logic scholarship? |
 | T014 | perfect number | परिपूर्ण संख्या | 17 | 10–13 | Please double-check: In the listed formal contexts, should “परिपूर्ण संख्या” remain, or should one of “पूर्ण संख्या” replace it? Does the chosen wording preserve the technical sense of perfect number without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source. |
 | T022 | tuple | क्रमित घटकसमूह | 31 | 15–17, 31–32, 40–43, 171–172 | Please double-check: Is क्रमित घटकसमूह natural for an n-tuple, and is there an attested alternative that cannot be confused with a polynomial? |
 | T023 | sequence/string/word | अनुक्रम / चिन्हमाला / शब्द | 74 | 15–17, 40–51, 53–56, 67–70, 82–83, 87–89, 91–92, 103–104, 162–164, 166, 186–189, 202–205 | Please double-check: In the listed formal contexts, should “अनुक्रम / चिन्हमाला / शब्द” remain, or should one of “मालिका / स्ट्रिंग” replace it? Does the chosen wording preserve the technical sense of sequence/string/word without importing an unwanted ordinary sense? Please cite a Marathi mathematical or logic source. |

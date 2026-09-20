@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0201",
+  "method": "Same-agent English/Marathi close reading; exact macro, identifier, controlled-token and projected-formula comparison; and a complete replay of the maximally inseparable-pair and model-amalgamation proof. No independent human or native-speaker review is claimed.",
+  "scope": "Craig's interpolation theorem and its proof by extending an inseparable pair, constructing canonical models over expanded languages, identifying their common reducts and amalgamating their interpretations.",
+  "samples": [
+    {
+      "blocks": [5, 6, 7, 8, 9],
+      "reverse_paraphrase": "For the languages of A and B, take their common language and add a shared countable stock of fresh constants. The unsatisfiable edge cases have trivial interpolants. Otherwise, to prove the contrapositive, assume A and B have no interpolant, equivalently that {A} and {not-B} are inseparable in the common language.",
+      "checks": "The theorem's two entailments and common-symbol restriction, both edge-case interpolants, validity consequence and contrapositive setup all match the source."
+    },
+    {
+      "blocks": [10, 11, 12, 13],
+      "reverse_paraphrase": "Enumerate both expanded-language sentence sets and recursively extend Gamma and Delta whenever inseparability is preserved, adding fresh witnesses for existential sentences. Simultaneous induction proves every intermediate pair inseparable. Compactness then makes the unions inseparable and hence consistent; the enumeration and separation argument makes each side maximally consistent, and their common-language intersection maximally consistent as well.",
+      "checks": "Both recursive stages, freshness conditions, the two induction claims and cases, the compactness contradiction, maximality argument and common-language intersection were checked in order."
+    },
+    {
+      "blocks": [14, 15],
+      "reverse_paraphrase": "Canonical models of Gamma-star and Delta-star have domains consisting exactly of interpretations of the added constants. After forgetting symbols outside the common language, mapping each first-model constant value to the matching second-model value is an isomorphism because the common maximally consistent theory decides the same atomic sentences.",
+      "checks": "The domains, reduct operation, direction of h and atomic-membership equivalences agree with the source construction and the established reduct and isomorphism vocabulary."
+    },
+    {
+      "blocks": [16, 17],
+      "reverse_paraphrase": "Build one model on the second domain: retain second-only interpretations, transport first-only interpretations along h, and use the common interpretation on shared symbols; functions and constants are treated analogously. Formula induction then makes the model agree with both component models, so it satisfies A and not-B, contradicting the assumed validity of A implies B.",
+      "checks": "The first-only predicate must transport its M1 interpretation through h. OLFOL-042 repairs the frozen M2 subscript; the following tuple clause independently confirms M1, and the final formula induction has the required language scopes."
+    }
+  ],
+  "source_observations": [
+    "T290, T291 and T294 govern the interpolation, separation and maximality vocabulary; their exact logic-specific Marathi compounds remain definition-controlled.",
+    "The source's first-only predicate clause applies h to the M2 interpretation although h has domain M1; OLFOL-042 documents the correction to M1 and the exact QA projection.",
+    "Every unaffected formula, macro, identifier and controlled token matches the frozen source, including the unusual source notation distinctions among L_i and L'_i."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact specialist compounds अंतर्वेशक and महत्तम अविलगनीय and the proper-name form क्रेग remain expert-reviewable.",
+    "The source abbreviates the canonical-model and function-transport arguments; the translation preserves that level of detail rather than supplying a new proof.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

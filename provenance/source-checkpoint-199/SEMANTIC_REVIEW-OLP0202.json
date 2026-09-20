@@ -1,0 +1,36 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0202",
+  "method": "Same-agent English/Marathi close reading; exact structural and projected-formula comparison; and replay of both directions of Beth's theorem from the definitions through compactness, interpolation and generalization. No independent human or native-speaker review is claimed.",
+  "scope": "Explicit and implicit definability and the proof of Beth's definability theorem from Craig interpolation.",
+  "samples": [
+    {
+      "blocks": [5, 6, 7, 8, 9],
+      "reverse_paraphrase": "An explicit definition equates an n-place predicate P with an L-formula C having n free variables and not involving P. An implicit definition says that any two P-interpretations on the same L-structure which satisfy the theory must coincide; equivalently, Sigma(P) together with a uniformly renamed copy Sigma(P') entails pointwise equivalence of P and P'.",
+      "checks": "Arity, free-variable count, language exclusions, universal closures, uniform replacement and the two expansion conditions all retain their source scopes."
+    },
+    {
+      "blocks": [10],
+      "reverse_paraphrase": "Beth's theorem states that Sigma(P) implicitly defines P if and only if it explicitly defines P.",
+      "checks": "The frozen English omits the second word 'if'; OLFOL-043 restores the complete biconditional in ordinary Marathi prose, matching the proof's two directions."
+    },
+    {
+      "blocks": [11],
+      "reverse_paraphrase": "Explicit definability immediately gives implicit definability. Conversely, add constants for the n arguments and use compactness to choose finite Delta-zero and Delta-one. Conjoin the corresponding P and P-prime sentences into D(P) and D(P'), rearrange the entailment so the predicate vocabularies are separated, and apply Craig interpolation to obtain a P-free and P-prime-free C. The two entailments give both directions between P and C; monotonicity and generalization yield the required explicit definition from all of Sigma(P).",
+      "checks": "The finite subsets, two conjunctions, rearranged entailment, interpolant language restriction, model-renaming equivalence, final biconditional and universal closure were checked formula by formula. OLFOL-044 restores the malformed P-prime atom used before the rearrangement."
+    }
+  ],
+  "source_observations": [
+    "T293 records explicit and implicit definability from the displayed definitions; T292 records the provisional Marathi form बेथ.",
+    "OLFOL-043 documents the missing prose connective in the theorem statement; no structural projection is needed for ordinary prose.",
+    "OLFOL-044 documents the raw P'c1...cn sequence and the bounded restoration of the same atomic-formula macro used on adjacent lines.",
+    "The source deliberately retains a raw models command in the renamed-model equivalence and mixes implication macros in the proof; both are preserved exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact logic-specific explicit/implicit definability compounds and the name form बेथ remain expert-reviewable.",
+    "The proof follows the source's compressed model-renaming step and does not add a separate invariance lemma.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}
