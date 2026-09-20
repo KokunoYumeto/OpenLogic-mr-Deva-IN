@@ -1,0 +1,129 @@
+% Part: first-order-logic
+% Chapter: lindstrom
+% Section: ls-property
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{lin}{lsp}
+
+\olsection{संहतता आणि लोव्हेनहाइम--स्कोलेम गुणधर्म}
+
+आता आपण संहतता आणि लोव्हेनहाइम--स्कोलेम यांचे अमूर्त तर्कशास्त्रांसाठीचे
+स्वाभाविक विस्तार देऊ.
+
+\begin{defn}
+अमूर्त तर्कशास्त्र $\tuple{L, \models_L}$ ला \emph{संहतता गुणधर्म}
+असतो, जर $L(\Lang{L})$-!!{sentence}s चा प्रत्येक संच $\Gamma$ असा
+असेल की प्रत्येक सांत $\Gamma_0 \subseteq \Gamma$ पूर्ततायोग्य असताना
+तो संच पूर्ततायोग्य असतो.
+\end{defn}
+
+\begin{defn}
+प्रत्येक पूर्ततायोग्य $\Gamma$ ला !!a{enumerable} प्रतिमान असेल, तर
+$\tuple{L, \models_L}$ ला \emph{अधोगामी लोव्हेनहाइम--स्कोलेम गुणधर्म}
+असतो.
+\end{defn}
+
+
+\olref[bas][pis]{defn:partialisom} मधील आंशिक समरूपणाची संकल्पना निव्वळ
+``बैजिक'' आहे (म्हणजे भाषेतील !!{sentence}s चा संदर्भ न घेता, केवळ
+!!{structure}s च्या !!{language}~$\Lang{L}$ ने दिलेल्या स्थिरांच्या
+संदर्भात ती मांडलेली आहे), म्हणून ती अमूर्त तर्कशास्त्रांनाही लागू होते.
+प्रथम-क्रम तर्कशास्त्राच्या बाबतीत, दोन !!{structure}s आंशिकरीत्या समरूपी
+असतील, तर त्या प्राथमिक सममूल्य असतात, हे आपल्याला
+\olref[bas][pis]{thm:p-isom2} वरून माहीत आहे. मनमाना $!E \in
+L(\Lang{L})$ साठी !!{formula}s वरील विगमन उपलब्ध असेलच असे नसल्यामुळे ती
+सिद्धता अमूर्त तर्कशास्त्रांना लागू होत नाही; तरीही लोव्हेनहाइम--स्कोलेम
+गुणधर्म असेल, तर प्रमेय खरे असते.
+
+\begin{thm}
+\ollabel{thm:abstract-p-isom}
+$\tuple{L, \models_L}$ हे लोव्हेनहाइम--स्कोलेम गुणधर्म असलेले सामान्य
+तर्कशास्त्र आहे असे समजा. मग कोणत्याही दोन आंशिकरीत्या समरूपी
+!!{structure}s या $\tuple{L, \models_L}$ मध्ये प्राथमिक सममूल्य असतात.
+\end{thm}
+
+\begin{proof}
+$\Struct{M} \simeq_p \Struct{N}$ असे समजा; पण एखाद्या $!E$ साठी
+$\Struct{M} \models_L !E$ आणि $\Struct{N} \not\models_L !E$ असेही
+समजा. समरूपता गुणधर्मामुळे $\Domain{M}$ आणि $\Domain{N}$ हे परस्पर
+वियुक्त आहेत असे आपण मानू शकतो; आणि विस्तार गुणधर्मामुळे सांत
+!!{language}~$\Lang{L}$ साठी $!E \in L(\Lang{L})$ आहे असे मानू शकतो.
+$\Struct{M}$ आणि $\Struct{N}$ यांमधील आंशिक समरूपणांचा संच
+$\mathcal{I}$ असू द्या; तसेच कोणतीही सामान्यता न गमावता, $p \in
+\mathcal{I}$ आणि $q \subseteq p$ असेल, तर $q \in \mathcal{I}$ हेही
+मानू.
+
+$\Domain{M}^{<\omega}$ हा $\Domain{M}$ च्या !!{element}s च्या सांत
+क्रमिकांचा संच आहे. $S$ हा $\Domain{M}^{<\omega}$ वरील जोडणी दर्शवणारा
+त्रिस्थानी संबंध असू द्या; म्हणजे $\mathbf{a}, \mathbf{b},
+\mathbf{c} \in \Domain{M}^{<\omega}$ असतील, तर $S(\mathbf{a},
+\mathbf{b}, \mathbf{c})$ तेव्हा आणि केवळ तेव्हाच खरे असते, जेव्हा
+$\mathbf{c}$ ही $\mathbf{a}$ आणि $\mathbf{b}$ यांची जोडणी असते. तसेच
+$T$ हा असा त्रिस्थानी संबंध असू द्या की $b \in M$ आणि
+$\mathbf{a}, \mathbf{c} \in \Domain{M}^{<\omega}$ यांच्यासाठी
+$T(\mathbf{a}, b, \mathbf{c})$ तेव्हा आणि केवळ तेव्हाच खरे असते,
+जेव्हा $\mathbf{a} = a_1, \dots a_n$ आणि $\mathbf{c} = a_1, \dots
+a_n, b$. नवीन 3-स्थानी !!{predicate}s $P$ आणि $Q$ निवडा आणि विश्व
+$\Domain{M} \cup \Domain{M}^{<\omega}$ असलेली !!{structure}
+$\Struct{M}^*$ बनवा; तिच्यात $\Struct{M}$ ही उपरचना असते आणि $P$ व
+$Q$ ची अर्थनिर्धारणे अनुक्रमे जोडणी-संबंध $S$ व $T$ असतात (म्हणून
+$\Struct{M}^*$ ही !!{language} $\Lang{L} \cup \{ P, Q\}$ मधील आहे).
+
+$\Domain{N}^{<\omega}$, $S'$, $T'$, $P'$, $Q'$ आणि $\Struct{N}^*$
+यांची व्याख्या याच रीतीने करा. गृहीतकानुसार $\Struct{M} \simeq_p
+\Struct{N}$ असल्यामुळे $\Domain{M}^{<\omega}$ आणि
+$\Domain{N}^{<\omega}$ यांमध्ये असा संबंध $I$ असतो की
+$I(\mathbf{a}, \mathbf{b})$ तेव्हा आणि केवळ तेव्हाच खरे असते, जेव्हा
+$\mathbf{a}$ आणि $\mathbf{b}$ समरूपी असतात आणि
+\olref[bas][pis]{defn:partialisom} मधील पुढे-मागे अट पूर्ण करतात. आता
+$\Struct{A}$ ही अशी !!{structure} असू द्या की तिचा !!{domain} हा
+$\Struct{M}^*$ आणि $\Struct{N}^*$ यांच्या !!{domain}s चा संयोग आहे,
+$\Struct{M}^*$ आणि $\Struct{N}^*$ या तिच्या उप!!{structure}s आहेत,
+आणि तिच्या !!{language} मध्ये संबंध~$I$ ने अर्थनिर्धारित केलेले एक
+अतिरिक्त द्विपदी !!{predicate}~$R$ व !!{domain}s $\Domain{M}^*$ आणि
+$\Domain{N}^*$ दर्शवणारी !!{predicate}s आहेत.
+%READERNOTE{OLFOL-046 — गोठवलेल्या इंग्रजीत या मोठ्या रचनेसाठी आधीच्या डाव्या उपरचनेचेच M चिन्ह पुन्हा वापरले आहे आणि N-तारांकित प्रांतातील तारका कंसाबाहेर चुकीच्या पातळीवर ठेवली आहे. मराठीत मोठ्या रचनेला A म्हटले असून N च्या प्रांताची तारका M च्या समांतर केली आहे.}
+
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[node distance=2cm, auto, thick, >=stealth']
+    \draw [rounded corners] (0,0) -- (8,0) -- (8,4) -- (0,4) --  cycle;
+    \draw (2,2) circle (0.5cm);
+    \draw (2,2) circle (1.25cm);
+    \draw (6,2) circle (0.5cm);
+    \draw (6,2) circle (1.25cm);
+    \path node at (0.75,3.5) {\large $\Struct{A}$};
+    \path node at (2,2) {\large $\Struct{M}$};
+    \path node at (6,2) {\large $\Struct{N}$};
+    \path node at (3.5,1) {\large $\Struct{M}^*$};
+    \path node at (7.5,1) {\large $\Struct{N}^*$};
+    \node (Idom) at (2.8,2) {};
+    \node (Irng) at (5.2,2) {};
+    \draw[<->, bend left] (Idom) to node {\large $I$} (Irng) ;
+  \end{tikzpicture}
+  \caption{अंतर्गत आंशिक समरूपण असलेली !!{structure}~$\Struct{A}$.}
+\end{figure}
+
+निर्णायक निरीक्षण असे आहे की !!{structure}~$\Struct{A}$ च्या
+!!{language} मध्ये $\Struct{A}$ मध्ये सत्य असलेले असे
+\emph{अमूर्त-तर्कशास्त्रीय} !!{sentence} $!D_1$ असते की ते
+$\Struct{M} \models_L !E$ आणि $\Struct{N} \not\models_L !E$ असे
+सांगते (यासाठी सापेक्षीकरण गुणधर्म आवश्यक आहे); तसेच $\Struct{A}$ मध्ये
+सत्य असलेले असे \emph{प्रथम-क्रम} !!{sentence} $!D_2$ असते की ते
+$I$ या आंशिक समरूपणाद्वारे $\Struct{M} \simeq_p \Struct{N}$ असे
+सांगते. लोव्हेनहाइम--स्कोलेम गुणधर्मामुळे $!D_1$ आणि $!D_2$ ही दोन्ही
+एका !!a{enumerable} प्रतिमान $\Struct{A}_0$ मध्ये सत्य असतात; त्यात
+आंशिकरीत्या समरूपी अशा उपरचना $\Struct{M}_0$ आणि $\Struct{N}_0$ असतात,
+ज्यांच्यासाठी $\Struct{M}_0 \models_L !E$ आणि $\Struct{N}_0
+\not\models_L !E$. पण !!{enumerable} आणि आंशिकरीत्या समरूपी
+!!{structure}s या \olref[bas][pis]{thm:p-isom1} नुसार वस्तुतः समरूपी
+असतात; हे सामान्य अमूर्त तर्कशास्त्रांच्या समरूपता गुणधर्माच्या विरुद्ध
+आहे.
+%READERNOTE{OLFOL-047 — सापेक्षीकरणाने मिळणारे D_1 हे सर्वसाधारणपणे अमूर्त तर्कशास्त्रातील वाक्य असते, प्रथम-क्रम वाक्य नव्हे; D_2 मात्र प्रथम-क्रम आहे. गोठवलेल्या इंग्रजीतील दोन्हींना first-order म्हणणारा दावा मराठीत दुरुस्त केला आहे.}
+%READERNOTE{OLFOL-048 — गोठवलेल्या इंग्रजीत गणनीय मोठ्या प्रतिमानासाठी आणि त्यातील डाव्या उपरचनेसाठी M_0 हेच चिन्ह दोनदा वापरले आहे. मराठीत मोठे प्रतिमान A_0 आणि उपरचना M_0, N_0 अशी भिन्न चिन्हे वापरली आहेत.}
+\end{proof}
+
+\end{document}

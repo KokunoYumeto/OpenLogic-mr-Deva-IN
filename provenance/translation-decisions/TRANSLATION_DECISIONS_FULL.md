@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 occurrences.
+Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 occurrences.
 
 ## T001 — set
 
@@ -1064,6 +1064,7 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T004-OLP-0170-B011` | `OLP-0170` | 17.3 प्रथम-क्रम उपपत्तींची उदाहरणे | `upstream/content/first-order-logic/models-theories/theories.tex:71-88` | `mr/content/first-order-logic/models-theories/theories.tex:70-86` | 224–226 |
 | `T004-OLP-0172-B007` | `OLP-0172` | 17.5 संचांची उपपत्ती | `upstream/content/first-order-logic/models-theories/set-theory.tex:31-55` | `mr/content/first-order-logic/models-theories/set-theory.tex:30-54` | 227–229 |
 | `T004-OLP-0180-B009` | `OLP-0180` | 18.6 मोडल तर्कशास्त्रे | `upstream/content/first-order-logic/beyond/modal-logics.tex:50-65` | `mr/content/first-order-logic/beyond/modal-logics.tex:45-59` | 240–241 |
+| `T004-OLP-0205-B010` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134` | `mr/content/model-theory/lindstrom/abstract-logics.tex:127-140` | pending |
 
 ## T005 — subset
 
@@ -2170,6 +2171,8 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T013-OLP-0201-B016` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `mr/content/model-theory/interpolation/interpolation-proof.tex:165-183` | pending |
 | `T013-OLP-0201-B017` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190` | `mr/content/model-theory/interpolation/interpolation-proof.tex:185-192` | pending |
 | `T013-OLP-0202-B009` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:59-64` | `mr/content/model-theory/interpolation/definability.tex:59-64` | pending |
+| `T013-OLP-0205-B007` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:39-46` | `mr/content/model-theory/lindstrom/abstract-logics.tex:39-47` | pending |
+| `T013-OLP-0206-B008` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:23-26` | `mr/content/model-theory/lindstrom/ls-property.tex:23-27` | pending |
 
 ## T014 — perfect number
 
@@ -3019,6 +3022,8 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T023-OLP-0156-B020` | `OLP-0156` | 15.7 रचनाक्रमिका | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:176-180` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:174-178` | 202–205 |
 | `T023-OLP-0156-B021` | `OLP-0156` | 15.7 रचनाक्रमिका | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:180-207` | 202–205 |
 | `T023-OLP-0156-B023` | `OLP-0156` | 15.7 रचनाक्रमिका | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:215-219` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:212-216` | 202–205 |
+| `T023-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
+| `T023-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102` | pending |
 
 ## T024 — set difference
 
@@ -3606,6 +3611,10 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T030-OLP-0189-B019` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `mr/content/model-theory/basics/partial-iso.tex:144-162` | 246–248 |
 | `T030-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
 | `T030-OLP-0202-B009` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:59-64` | `mr/content/model-theory/interpolation/definability.tex:59-64` | pending |
+| `T030-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
+| `T030-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
+| `T030-OLP-0206-B013` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:74-86` | `mr/content/model-theory/lindstrom/ls-property.tex:75-88` | pending |
+| `T030-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102` | pending |
 
 ## T031 — identity relation
 
@@ -6736,6 +6745,9 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T057-OLP-0194-B014` | `OLP-0194` | 20.3 अमानक प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | 253–254 |
 | `T057-OLP-0196-B035` | `OLP-0196` | 20.5 PA ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | 256–259 |
 | `T057-OLP-0197-B006` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | 259–260 |
+| `T057-OLP-0206-B008` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:23-26` | `mr/content/model-theory/lindstrom/ls-property.tex:23-27` | pending |
+| `T057-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
+| `T057-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129` | pending |
 
 ## T058 — size / cardinality / equinumerous
 
@@ -8483,6 +8495,14 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T102-OLP-0182-B005` | `OLP-0182` | 19 प्रतिमान उपपत्तीची मूलतत्त्वे — भाग-प्रस्तावना | `upstream/content/model-theory/model-theory.tex:9-17` | `mr/content/model-theory/model-theory.tex:9-16` | 242 |
 | `T102-OLP-0186-B007` | `OLP-0186` | 19.3 सांत मर्यादेपलीकडील प्रसरण | `upstream/content/model-theory/basics/overspill.tex:28-33` | `mr/content/model-theory/basics/overspill.tex:28-33` | 243 |
 | `T102-OLP-0187-B005` | `OLP-0187` | 19.4 समरूपी रचना | `upstream/content/model-theory/basics/isomorphism.tex:12-24` | `mr/content/model-theory/basics/isomorphism.tex:12-23` | 243–245 |
+| `T102-OLP-0204-B005` | `OLP-0204` |  | `upstream/content/model-theory/lindstrom/introduction.tex:12-21` | `mr/content/model-theory/lindstrom/introduction.tex:12-21` | pending |
+| `T102-OLP-0205-B005` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:12-22` | `mr/content/model-theory/lindstrom/abstract-logics.tex:12-22` | pending |
+| `T102-OLP-0205-B006` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37` | `mr/content/model-theory/lindstrom/abstract-logics.tex:24-37` | pending |
+| `T102-OLP-0205-B010` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134` | `mr/content/model-theory/lindstrom/abstract-logics.tex:127-140` | pending |
+| `T102-OLP-0206-B009` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:29-39` | `mr/content/model-theory/lindstrom/ls-property.tex:30-39` | pending |
+| `T102-OLP-0207-B006` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:13-22` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:13-22` | pending |
+| `T102-OLP-0207-B009` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:47-54` | pending |
+| `T102-OLP-0207-B010` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:54-64` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:56-66` | pending |
 
 ## T103 — parameter (of a formula)
 
@@ -8649,6 +8669,10 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T105-OLP-0197-B011` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109` | 259–260 |
 | `T105-OLP-0201-B015` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163` | `mr/content/model-theory/interpolation/interpolation-proof.tex:151-163` | pending |
 | `T105-OLP-0201-B016` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `mr/content/model-theory/interpolation/interpolation-proof.tex:165-183` | pending |
+| `T105-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
+| `T105-OLP-0206-B011` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:49-57` | `mr/content/model-theory/lindstrom/ls-property.tex:48-57` | pending |
+| `T105-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
+| `T105-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129` | pending |
 
 ## T106 — structuralism / structuralist
 
@@ -9320,6 +9344,12 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T112-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
 | `T112-OLP-0202-B007` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:34-44` | `mr/content/model-theory/interpolation/definability.tex:33-43` | pending |
 | `T112-OLP-0202-B008` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:46-57` | `mr/content/model-theory/interpolation/definability.tex:45-57` | pending |
+| `T112-OLP-0204-B005` | `OLP-0204` |  | `upstream/content/model-theory/lindstrom/introduction.tex:12-21` | `mr/content/model-theory/lindstrom/introduction.tex:12-21` | pending |
+| `T112-OLP-0205-B006` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37` | `mr/content/model-theory/lindstrom/abstract-logics.tex:24-37` | pending |
+| `T112-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
+| `T112-OLP-0205-B010` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134` | `mr/content/model-theory/lindstrom/abstract-logics.tex:127-140` | pending |
+| `T112-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
+| `T112-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83` | pending |
 
 ## T113 — classical logic / classical
 
@@ -9539,6 +9569,9 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T115-OLP-0171-B007` | `OLP-0171` | 17.4 संरचना मधील संबंध व्यक्त करणे | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:35-40` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:35-40` | 226–227 |
 | `T115-OLP-0178-B008` | `OLP-0178` | 18.4 उच्च-क्रम तर्कशास्त्र | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93` | 235–237 |
 | `T115-OLP-0179-B016` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98` | 237–240 |
+| `T115-OLP-0205-B006` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37` | `mr/content/model-theory/lindstrom/abstract-logics.tex:24-37` | pending |
+| `T115-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
+| `T115-OLP-0207-B007` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:24-36` | pending |
 
 ## T116 — truth-functional
 
@@ -10126,6 +10159,13 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T121-OLP-0195-B011` | `OLP-0195` | 20.4 Q ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:136-180` | 254–256 |
 | `T121-OLP-0195-B012` | `OLP-0195` | 20.4 Q ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:176-185` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:182-192` | 254–256 |
 | `T121-OLP-0196-B007` | `OLP-0196` | 20.5 PA ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-39` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-40` | 256–259 |
+| `T121-OLP-0205-B005` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:12-22` | `mr/content/model-theory/lindstrom/abstract-logics.tex:12-22` | pending |
+| `T121-OLP-0205-B007` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:39-46` | `mr/content/model-theory/lindstrom/abstract-logics.tex:39-47` | pending |
+| `T121-OLP-0205-B009` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:108-119` | `mr/content/model-theory/lindstrom/abstract-logics.tex:113-125` | pending |
+| `T121-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
+| `T121-OLP-0207-B006` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:13-22` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:13-22` | pending |
+| `T121-OLP-0207-B008` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:38-45` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:38-45` | pending |
+| `T121-OLP-0207-B013` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110` | pending |
 
 ## T122 — tautology
 
@@ -10396,6 +10436,8 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T124-OLP-0200-B012` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:92-117` | `mr/content/model-theory/interpolation/separation.tex:93-118` | pending |
 | `T124-OLP-0201-B008` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:29-32` | `mr/content/model-theory/interpolation/interpolation-proof.tex:28-31` | pending |
 | `T124-OLP-0201-B011` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105` | `mr/content/model-theory/interpolation/interpolation-proof.tex:101-106` | pending |
+| `T124-OLP-0206-B007` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:16-21` | `mr/content/model-theory/lindstrom/ls-property.tex:16-21` | pending |
+| `T124-OLP-0206-B008` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:23-26` | `mr/content/model-theory/lindstrom/ls-property.tex:23-27` | pending |
 
 ## T125 — necessary / contingent
 
@@ -11316,6 +11358,8 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T134-OLP-0156-B007` | `OLP-0156` | 15.7 रचनाक्रमिका | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:25-31` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:24-30` | 202–205 |
 | `T134-OLP-0156-B008` | `OLP-0156` | 15.7 रचनाक्रमिका | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:33-38` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:32-37` | 202–205 |
 | `T134-OLP-0189-B018` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:135-141` | `mr/content/model-theory/basics/partial-iso.tex:136-142` | 246–248 |
+| `T134-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
+| `T134-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83` | pending |
 
 ## T135 — preliminaries
 
@@ -11461,6 +11505,7 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T138-OLP-0146-B006` | `OLP-0146` | 14.7 आदेशन | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `mr/content/first-order-logic/introduction/substitution.tex:13-28` | 191–192 |
 | `T138-OLP-0146-B007` | `OLP-0146` | 14.7 आदेशन | `upstream/content/first-order-logic/introduction/substitution.tex:30-45` | `mr/content/first-order-logic/introduction/substitution.tex:30-46` | 191–192 |
 | `T138-OLP-0202-B008` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:46-57` | `mr/content/model-theory/interpolation/definability.tex:45-57` | pending |
+| `T138-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
 
 ## T139 — occurrence (of a variable or formula)
 
@@ -12004,6 +12049,7 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T149-OLP-0166-B017` | `OLP-0166` | 16.7 चिन्हार्थविषयक संकल्पना | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:97-102` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:103-109` | 220–221 |
 | `T149-OLP-0200-B010` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:58-83` | `mr/content/model-theory/interpolation/separation.tex:58-84` | pending |
 | `T149-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
+| `T149-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
 
 ## T150 — Semantic Deduction Theorem
 
@@ -14401,6 +14447,10 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T181-OLP-0200-B010` | `OLP-0200` |  | `upstream/content/model-theory/interpolation/separation.tex:58-83` | `mr/content/model-theory/interpolation/separation.tex:58-84` | pending |
 | `T181-OLP-0201-B011` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105` | `mr/content/model-theory/interpolation/interpolation-proof.tex:101-106` | pending |
 | `T181-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
+| `T181-OLP-0206-B005` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:11-11` | `mr/content/model-theory/lindstrom/ls-property.tex:11-11` | pending |
+| `T181-OLP-0206-B006` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:13-14` | `mr/content/model-theory/lindstrom/ls-property.tex:13-14` | pending |
+| `T181-OLP-0206-B007` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:16-21` | `mr/content/model-theory/lindstrom/ls-property.tex:16-21` | pending |
+| `T181-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129` | pending |
 
 ## T182 — proof-theoretic notions
 
@@ -15447,6 +15497,7 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T199-OLP-0136-B022` | `OLP-0136` | 13.10 संहतता प्रमेयाची प्रत्यक्ष सिद्धता | `upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143` | `mr/content/first-order-logic/completeness/compactness-direct.tex:128-145` | 183–184 |
 | `T199-OLP-0186-B006` | `OLP-0186` | 19.3 सांत मर्यादेपलीकडील प्रसरण | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | 243 |
 | `T199-OLP-0194-B014` | `OLP-0194` | 20.3 अमानक प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | 253–254 |
+| `T199-OLP-0206-B007` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:16-21` | `mr/content/model-theory/lindstrom/ls-property.tex:16-21` | pending |
 
 ## T200 — infinitesimal (number)
 
@@ -15515,6 +15566,10 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T201-OLP-0187-B005` | `OLP-0187` | 19.4 समरूपी रचना | `upstream/content/model-theory/basics/isomorphism.tex:12-24` | `mr/content/model-theory/basics/isomorphism.tex:12-23` | 243–245 |
 | `T201-OLP-0188-B013` | `OLP-0188` | 19.5 संरचनेची उपपत्ती | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | 245–246 |
 | `T201-OLP-0194-B014` | `OLP-0194` | 20.3 अमानक प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | 253–254 |
+| `T201-OLP-0204-B005` | `OLP-0204` |  | `upstream/content/model-theory/lindstrom/introduction.tex:12-21` | `mr/content/model-theory/lindstrom/introduction.tex:12-21` | pending |
+| `T201-OLP-0206-B005` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:11-11` | `mr/content/model-theory/lindstrom/ls-property.tex:11-11` | pending |
+| `T201-OLP-0206-B006` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:13-14` | `mr/content/model-theory/lindstrom/ls-property.tex:13-14` | pending |
+| `T201-OLP-0206-B008` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:23-26` | `mr/content/model-theory/lindstrom/ls-property.tex:23-27` | pending |
 
 ## T202 — formal language / formal derivation
 
@@ -15566,6 +15621,9 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T202-OLP-0201-B007` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:22-27` | `mr/content/model-theory/interpolation/interpolation-proof.tex:22-26` | pending |
 | `T202-OLP-0202-B007` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:34-44` | `mr/content/model-theory/interpolation/definability.tex:33-43` | pending |
 | `T202-OLP-0202-B008` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:46-57` | `mr/content/model-theory/interpolation/definability.tex:45-57` | pending |
+| `T202-OLP-0205-B005` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:12-22` | `mr/content/model-theory/lindstrom/abstract-logics.tex:12-22` | pending |
+| `T202-OLP-0205-B006` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37` | `mr/content/model-theory/lindstrom/abstract-logics.tex:24-37` | pending |
+| `T202-OLP-0207-B007` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:24-36` | pending |
 
 ## T203 — structural induction
 
@@ -15833,6 +15891,11 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T205-OLP-0201-B015` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163` | `mr/content/model-theory/interpolation/interpolation-proof.tex:151-163` | pending |
 | `T205-OLP-0201-B016` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `mr/content/model-theory/interpolation/interpolation-proof.tex:165-183` | pending |
 | `T205-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
+| `T205-OLP-0204-B005` | `OLP-0204` |  | `upstream/content/model-theory/lindstrom/introduction.tex:12-21` | `mr/content/model-theory/lindstrom/introduction.tex:12-21` | pending |
+| `T205-OLP-0205-B006` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37` | `mr/content/model-theory/lindstrom/abstract-logics.tex:24-37` | pending |
+| `T205-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
+| `T205-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
+| `T205-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83` | pending |
 
 ## T206 — logical symbol / non-logical symbol / standard language
 
@@ -16614,6 +16677,19 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T218-OLP-0201-B016` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `mr/content/model-theory/interpolation/interpolation-proof.tex:165-183` | pending |
 | `T218-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
 | `T218-OLP-0202-B009` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:59-64` | `mr/content/model-theory/interpolation/definability.tex:59-64` | pending |
+| `T218-OLP-0205-B005` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:12-22` | `mr/content/model-theory/lindstrom/abstract-logics.tex:12-22` | pending |
+| `T218-OLP-0205-B007` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:39-46` | `mr/content/model-theory/lindstrom/abstract-logics.tex:39-47` | pending |
+| `T218-OLP-0206-B009` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:29-39` | `mr/content/model-theory/lindstrom/ls-property.tex:30-39` | pending |
+| `T218-OLP-0206-B011` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:49-57` | `mr/content/model-theory/lindstrom/ls-property.tex:48-57` | pending |
+| `T218-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
+| `T218-OLP-0206-B013` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:74-86` | `mr/content/model-theory/lindstrom/ls-property.tex:75-88` | pending |
+| `T218-OLP-0206-B014` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:88-107` | `mr/content/model-theory/lindstrom/ls-property.tex:90-108` | pending |
+| `T218-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
+| `T218-OLP-0207-B007` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:24-36` | pending |
+| `T218-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83` | pending |
+| `T218-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102` | pending |
+| `T218-OLP-0207-B013` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110` | pending |
+| `T218-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129` | pending |
 
 ## T219 — free logic
 
@@ -18332,6 +18408,9 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T272-OLP-0196-B035` | `OLP-0196` | 20.5 PA ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | 256–259 |
 | `T272-OLP-0201-B015` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163` | `mr/content/model-theory/interpolation/interpolation-proof.tex:151-163` | pending |
 | `T272-OLP-0202-B009` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:59-64` | `mr/content/model-theory/interpolation/definability.tex:59-64` | pending |
+| `T272-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
+| `T272-OLP-0205-B010` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134` | `mr/content/model-theory/lindstrom/abstract-logics.tex:127-140` | pending |
+| `T272-OLP-0206-B011` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:49-57` | `mr/content/model-theory/lindstrom/ls-property.tex:48-57` | pending |
 
 ## T273 — substructure / extension (model theory)
 
@@ -18368,6 +18447,11 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T273-OLP-0185-B006` | `OLP-0185` | 19.2 उपसंरचना | `upstream/content/model-theory/basics/substructures.tex:19-37` | `mr/content/model-theory/basics/substructures.tex:19-38` | 243 |
 | `T273-OLP-0185-B007` | `OLP-0185` | 19.2 उपसंरचना | `upstream/content/model-theory/basics/substructures.tex:39-45` | `mr/content/model-theory/basics/substructures.tex:40-46` | 243 |
 | `T273-OLP-0189-B013` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:102-107` | `mr/content/model-theory/basics/partial-iso.tex:102-108` | 246–248 |
+| `T273-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
+| `T273-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
+| `T273-OLP-0206-B013` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:74-86` | `mr/content/model-theory/lindstrom/ls-property.tex:75-88` | pending |
+| `T273-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83` | pending |
+| `T273-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102` | pending |
 
 ## T274 — overspill (arbitrarily large finite models imply an infinite model)
 
@@ -18445,6 +18529,12 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T275-OLP-0189-B012` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:93-100` | `mr/content/model-theory/basics/partial-iso.tex:93-100` | 246–248 |
 | `T275-OLP-0189-B026` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:215-221` | `mr/content/model-theory/basics/partial-iso.tex:217-223` | 246–248 |
 | `T275-OLP-0190-B010` | `OLP-0190` | 19.7 सघन रेषीय क्रम | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | 248–249 |
+| `T275-OLP-0205-B007` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:39-46` | `mr/content/model-theory/lindstrom/abstract-logics.tex:39-47` | pending |
+| `T275-OLP-0205-B009` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:108-119` | `mr/content/model-theory/lindstrom/abstract-logics.tex:113-125` | pending |
+| `T275-OLP-0206-B009` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:29-39` | `mr/content/model-theory/lindstrom/ls-property.tex:30-39` | pending |
+| `T275-OLP-0206-B010` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:41-47` | `mr/content/model-theory/lindstrom/ls-property.tex:41-46` | pending |
+| `T275-OLP-0207-B006` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:13-22` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:13-22` | pending |
+| `T275-OLP-0207-B008` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:38-45` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:38-45` | pending |
 
 ## T276 — automorphism
 
@@ -18519,6 +18609,13 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T277-OLP-0190-B008` | `OLP-0190` | 19.7 सघन रेषीय क्रम | `upstream/content/model-theory/basics/dlo.tex:42-61` | `mr/content/model-theory/basics/dlo.tex:42-66` | 248–249 |
 | `T277-OLP-0190-B009` | `OLP-0190` | 19.7 सघन रेषीय क्रम | `upstream/content/model-theory/basics/dlo.tex:63-66` | `mr/content/model-theory/basics/dlo.tex:68-71` | 248–249 |
 | `T277-OLP-0190-B010` | `OLP-0190` | 19.7 सघन रेषीय क्रम | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | 248–249 |
+| `T277-OLP-0206-B009` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:29-39` | `mr/content/model-theory/lindstrom/ls-property.tex:30-39` | pending |
+| `T277-OLP-0206-B010` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:41-47` | `mr/content/model-theory/lindstrom/ls-property.tex:41-46` | pending |
+| `T277-OLP-0206-B011` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:49-57` | `mr/content/model-theory/lindstrom/ls-property.tex:48-57` | pending |
+| `T277-OLP-0206-B013` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:74-86` | `mr/content/model-theory/lindstrom/ls-property.tex:75-88` | pending |
+| `T277-OLP-0206-B014` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:88-107` | `mr/content/model-theory/lindstrom/ls-property.tex:90-108` | pending |
+| `T277-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
+| `T277-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129` | pending |
 
 ## T278 — quantifier rank / n-equivalent
 
@@ -18561,6 +18658,9 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T278-OLP-0189-B024` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:189-197` | `mr/content/model-theory/basics/partial-iso.tex:192-199` | 246–248 |
 | `T278-OLP-0189-B025` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:199-213` | `mr/content/model-theory/basics/partial-iso.tex:201-215` | 246–248 |
 | `T278-OLP-0189-B026` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:215-221` | `mr/content/model-theory/basics/partial-iso.tex:217-223` | 246–248 |
+| `T278-OLP-0207-B006` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:13-22` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:13-22` | pending |
+| `T278-OLP-0207-B007` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:24-36` | pending |
+| `T278-OLP-0207-B010` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:54-64` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:56-66` | pending |
 
 ## T279 — purely relational language
 
@@ -18596,6 +18696,8 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T279-OLP-0189-B016` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:122-129` | `mr/content/model-theory/basics/partial-iso.tex:124-130` | 246–248 |
 | `T279-OLP-0189-B021` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:167-174` | `mr/content/model-theory/basics/partial-iso.tex:171-178` | 246–248 |
 | `T279-OLP-0189-B026` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:215-221` | `mr/content/model-theory/basics/partial-iso.tex:217-223` | 246–248 |
+| `T279-OLP-0204-B005` | `OLP-0204` |  | `upstream/content/model-theory/lindstrom/introduction.tex:12-21` | `mr/content/model-theory/lindstrom/introduction.tex:12-21` | pending |
+| `T279-OLP-0207-B010` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:54-64` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:56-66` | pending |
 
 ## T280 — dense linear ordering without endpoints
 
@@ -18716,6 +18818,8 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T281-OLP-0197-B008` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | 259–260 |
 | `T281-OLP-0197-B009` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98` | 259–260 |
 | `T281-OLP-0197-B012` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116` | 259–260 |
+| `T281-OLP-0207-B013` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110` | pending |
+| `T281-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129` | pending |
 
 ## T282 — standard numeral
 
@@ -19176,6 +19280,217 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | `T294-OLP-0201-B012` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:107-126` | `mr/content/model-theory/interpolation/interpolation-proof.tex:108-127` | pending |
 | `T294-OLP-0201-B013` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:128-141` | `mr/content/model-theory/interpolation/interpolation-proof.tex:129-141` | pending |
 | `T294-OLP-0201-B014` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149` | `mr/content/model-theory/interpolation/interpolation-proof.tex:143-149` | pending |
+
+## T295 — Lindström's theorem / characterization
+
+**Chosen rendering/action:** लिंडस्ट्रॉमचे प्रमेय / लक्षणचित्रण
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P135 directly attests लक्षणचित्रण in the official mathematics glossary, and the established edition vocabulary supplies प्रमेय. OpenLogic characterizes first-order logic by maximality among normal logics satisfying compactness and the downward Löwenheim--Skolem property. No Marathi attestation of Lindström's name was found, so लिंडस्ट्रॉम is a reversible pronunciation-based form.
+
+**Rationale:** MR-P135 directly attests लक्षणचित्रण in the official mathematics glossary, and the established edition vocabulary supplies प्रमेय. OpenLogic characterizes first-order logic by maximality among normal logics satisfying compactness and the downward Löwenheim--Skolem property. No Marathi attestation of Lindström's name was found, so लिंडस्ट्रॉम is a reversible pronunciation-based form.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P083` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/t (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash.
+- `MR-P135` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages mathematics-glossary entry read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the entry does not independently attest Lindström's theorem.
+
+**Alternatives:**
+
+- लिंडस्ट्रोमचे प्रमेय / लक्षणनिरूपण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- लिंडस्ट्रम प्रमेय / वैशिष्ट्यीकरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- लिंडस्ट्रॉम प्रमेय / लक्षणा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are लिंडस्ट्रॉम and लक्षणचित्रण the conventional Marathi name and mathematical noun for this characterization theorem?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T295-OLP-0203-B004` | `OLP-0203` |  | `upstream/content/model-theory/lindstrom/lindstrom.tex:8-8` | `mr/content/model-theory/lindstrom/lindstrom.tex:8-8` | pending |
+| `T295-OLP-0204-B005` | `OLP-0204` |  | `upstream/content/model-theory/lindstrom/introduction.tex:12-21` | `mr/content/model-theory/lindstrom/introduction.tex:12-21` | pending |
+| `T295-OLP-0207-B005` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:11-11` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:11-11` | pending |
+| `T295-OLP-0207-B009` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:47-54` | pending |
+
+## T296 — abstract logic / normal abstract logic
+
+**Chosen rendering/action:** अमूर्त तर्कशास्त्र / सामान्य अमूर्त तर्कशास्त्र
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P136 directly attests अमूर्त in the official mathematics glossary, while the checked logic sources establish तर्कशास्त्र, वाक्य and पूर्ति. OpenLogic then defines the compound extensionally as a language-indexed sentence assignment paired with a satisfaction relation, and defines normality by seven displayed closure and invariance properties.
+
+**Rationale:** MR-P136 directly attests अमूर्त in the official mathematics glossary, while the checked logic sources establish तर्कशास्त्र, वाक्य and पूर्ति. OpenLogic then defines the compound extensionally as a language-indexed sentence assignment paired with a satisfaction relation, and defines normality by seven displayed closure and invariance properties.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P136` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages mathematics-glossary entry read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the exact abstract-logic compound was not independently attested.
+
+**Alternatives:**
+
+- सार तर्कशास्त्र / नियमित सार तर्कशास्त्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अॅब्स्ट्रॅक्ट तर्कशास्त्र / नॉर्मल तर्कशास्त्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अमूर्त तर्कप्रणाली / प्रसामान्य अमूर्त तर्कप्रणाली — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is सामान्य अमूर्त तर्कशास्त्र sufficiently distinct from ordinary first-order logic while naming the source-defined normality conditions?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T296-OLP-0205-B004` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:9-10` | `mr/content/model-theory/lindstrom/abstract-logics.tex:9-10` | pending |
+| `T296-OLP-0205-B005` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:12-22` | `mr/content/model-theory/lindstrom/abstract-logics.tex:12-22` | pending |
+| `T296-OLP-0205-B006` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37` | `mr/content/model-theory/lindstrom/abstract-logics.tex:24-37` | pending |
+| `T296-OLP-0205-B007` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:39-46` | `mr/content/model-theory/lindstrom/abstract-logics.tex:39-47` | pending |
+| `T296-OLP-0205-B009` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:108-119` | `mr/content/model-theory/lindstrom/abstract-logics.tex:113-125` | pending |
+| `T296-OLP-0205-B010` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134` | `mr/content/model-theory/lindstrom/abstract-logics.tex:127-140` | pending |
+| `T296-OLP-0206-B006` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:13-14` | `mr/content/model-theory/lindstrom/ls-property.tex:13-14` | pending |
+| `T296-OLP-0206-B010` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:41-47` | `mr/content/model-theory/lindstrom/ls-property.tex:41-46` | pending |
+| `T296-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
+| `T296-OLP-0207-B009` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:47-54` | pending |
+
+## T297 — at least as expressive / equivalent logics
+
+**Chosen rendering/action:** किमान तितकेच अभिव्यक्तिक्षम / सममूल्य तर्कशास्त्रे
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The edition already distinguishes model-theoretic expressibility and directly supports logical equivalence vocabulary. OpenLogic defines the comparison by equality of model classes for a translating sentence in every language, so अभिव्यक्तिक्षम refers to formal expressive power rather than literary expression and सममूल्य is fixed by both comparison directions.
+
+**Rationale:** The edition already distinguishes model-theoretic expressibility and directly supports logical equivalence vocabulary. OpenLogic defines the comparison by equality of model classes for a translating sentence in every language, so अभिव्यक्तिक्षम refers to formal expressive power rather than literary expression and सममूल्य is fixed by both comparison directions.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P010` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P123` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — elementary and equivalence entries. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/7/e (`checked_supports`): Official Directorate of Languages philosophy-and-logic glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the full model-theory compound is not directly attested and is controlled by OpenLogic's definition.
+
+**Alternatives:**
+
+- किमान तितकेच अभिव्यक्तिशील / तुल्य तर्कशास्त्रे — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अभिव्यंजनशक्तीने किमान समान / समतुल्य तर्कप्रणाली — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- किमान तितकीच व्यक्तीकरण-शक्ती असलेले — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is अभिव्यक्तिक्षम the clearest compact Marathi adjective for expressive power between abstract logics?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T297-OLP-0205-B009` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:108-119` | `mr/content/model-theory/lindstrom/abstract-logics.tex:113-125` | pending |
+| `T297-OLP-0205-B010` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134` | `mr/content/model-theory/lindstrom/abstract-logics.tex:127-140` | pending |
+| `T297-OLP-0207-B008` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:38-45` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:38-45` | pending |
+| `T297-OLP-0207-B009` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:47-54` | pending |
+| `T297-OLP-0207-B010` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:54-64` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:56-66` | pending |
+
+## T298 — normal-logic properties: L-monotonicity, expansion, isomorphism, renaming, Boolean, quantifier and relativization
+
+**Chosen rendering/action:** L-एकस्वनिकता, विस्तार, समरूपता, पुनर्नामकरण, बूलीय, संख्यापक आणि सापेक्षीकरण गुणधर्म
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The canon and earlier decisions directly support the monotonic, isomorphism, quantifier, connective and satisfaction components. OpenLogic supplies exact clauses for all seven properties: language inclusion, finite-vocabulary dependence, isomorphism invariance, symbol renaming, Boolean closure, existential binding and restriction to a definable subdomain. The transparent Marathi labels are always followed by those clauses.
+
+**Rationale:** The canon and earlier decisions directly support the monotonic, isomorphism, quantifier, connective and satisfaction components. OpenLogic supplies exact clauses for all seven properties: language inclusion, finite-vocabulary dependence, isomorphism invariance, symbol renaming, Boolean closure, existential binding and restriction to a definable subdomain. The transparent Marathi labels are always followed by those clauses.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P055` — गणितशास्त्र परिभाषा कोश — M glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/M (`checked_supports`): Primary official Government of Maharashtra mathematics glossary read through web open. Limitation: Observation hash is not an origin-page hash.
+- `MR-P062` — मराठी विश्वकोश — indexed isomorphism entries. https://shabdakosh.marathi.gov.in/ananya-glossary/41?page=651 (`checked_supports`): Primary Government of Maharashtra terminology aggregation read in current web-search extraction. Limitation: The aggregated entry spans several disciplines and senses; observation hash is not an origin-page hash.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P074` — गणितशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P075` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/r (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+
+**Alternatives:**
+
+- L-वर्धमानता, प्रसरण, समरूपण, नामांतर, बूल, संख्यीकरण आणि सापेक्षीकरण गुणधर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- L-एकदिशवर्धिता / पुनर्नामीकरण / क्षेत्रमर्यादन गुणधर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- इंग्रजी property labels in parentheses — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are विस्तार गुणधर्म and सापेक्षीकरण गुणधर्म the clearest labels for the finite-vocabulary and relativized-subdomain clauses, and is पुनर्नामकरण preferable to नामांतर?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T298-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
+| `T298-OLP-0205-B010` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134` | `mr/content/model-theory/lindstrom/abstract-logics.tex:127-140` | pending |
+| `T298-OLP-0206-B011` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:49-57` | `mr/content/model-theory/lindstrom/ls-property.tex:48-57` | pending |
+| `T298-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
+| `T298-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83` | pending |
+
+## T299 — Compactness Property / Downward Löwenheim--Skolem Property
+
+**Chosen rendering/action:** संहतता गुणधर्म / अधोगामी लोव्हेनहाइम--स्कोलेम गुणधर्म
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The edition already uses संहतता and लोव्हेनहाइम--स्कोलेम प्रमेय. OpenLogic extends them explicitly to abstract logics: every finitely satisfiable sentence set is satisfiable, and every satisfiable sentence set has an enumerable model. अधोगामी preserves the direction toward a smaller model without adding a cardinality claim beyond the displayed enumerable clause.
+
+**Rationale:** The edition already uses संहतता and लोव्हेनहाइम--स्कोलेम प्रमेय. OpenLogic extends them explicitly to abstract logics: every finitely satisfiable sentence set is satisfiable, and every satisfiable sentence set has an enumerable model. अधोगामी preserves the direction toward a smaller model without adding a cardinality claim beyond the displayed enumerable clause.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P032` — MR-C004. https://vishwakosh.marathi.gov.in/34075/ (`checked_supports`): Consulted for this decision. Limitation: Same previously indexed source, new actual consultation. The witness's positive-natural-number convention and its restriction to infinite countable sets do not replace OpenLogic conventions. Missing/corrupt mathematical glyphs and source historical assertions are not imported. Original HTML remains unavailable.
+- `MR-P057` — Representative — मराठी शब्दकोश. https://shabdakosh.marathi.gov.in/node/43954 (`checked_supports`): Primary official Government of Maharashtra entry read through web open. Limitation: Generic rather than mathematical entry; the target normalizes the spelling प्रतिनिधी.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P083` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — T glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/t (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash.
+- `MR-P098` — गणितशास्त्र परिभाषा कोश — compactness observation. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Government of Maharashtra mathematics glossary index read in a current web-search extraction; direct fetch subsequently failed before origin bytes were received. Limitation: Observation hash is not an origin-page hash; the glossary is mathematical rather than proof-theoretic and the direct origin page was unavailable.
+
+**Alternatives:**
+
+- संहतता धर्म / निम्नगामी लोव्हेनहाइम--स्कोलेम धर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- कॉम्पॅक्टनेस गुणधर्म / डाउनवर्ड लोव्हेनहाइम--स्कोलेम गुणधर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अवरोही लोव्हेनहाइम--स्कोलेम गुणधर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is अधोगामी the natural Marathi modifier for downward Löwenheim--Skolem in this enumerable-model formulation?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T299-OLP-0204-B005` | `OLP-0204` |  | `upstream/content/model-theory/lindstrom/introduction.tex:12-21` | `mr/content/model-theory/lindstrom/introduction.tex:12-21` | pending |
+| `T299-OLP-0206-B005` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:11-11` | `mr/content/model-theory/lindstrom/ls-property.tex:11-11` | pending |
+| `T299-OLP-0206-B006` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:13-14` | `mr/content/model-theory/lindstrom/ls-property.tex:13-14` | pending |
+| `T299-OLP-0206-B007` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:16-21` | `mr/content/model-theory/lindstrom/ls-property.tex:16-21` | pending |
+| `T299-OLP-0206-B008` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:23-26` | `mr/content/model-theory/lindstrom/ls-property.tex:23-27` | pending |
+| `T299-OLP-0206-B010` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:41-47` | `mr/content/model-theory/lindstrom/ls-property.tex:41-46` | pending |
+| `T299-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
+| `T299-OLP-0207-B009` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:47-54` | pending |
+
+## T300 — discrete linear ordering
+
+**Chosen rendering/action:** विविक्त रेषीय क्रम
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The edition already uses रेषीय क्रम, and the source immediately specifies a first element, no last element and successor-like discreteness. विविक्त is a transparent mathematical modifier kept distinct from dense सघन in T280; the exact full compound was not independently located.
+
+**Rationale:** The edition already uses रेषीय क्रम, and the source immediately specifies a first element, no last element and successor-like discreteness. विविक्त is a transparent mathematical modifier kept distinct from dense सघन in T280; the exact full compound was not independently located.
+
+**Authorities actually checked:**
+
+- `MR-P017` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 81 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P024` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश. https://shabdakosh.marathi.gov.in/ananya-glossary/7/t (`checked_supports`): short primary-source observation read; source bytes not preserved
+- `MR-P025` — मराठी विश्वकोश शब्दसंग्रह. https://shabdakosh.marathi.gov.in/ananya-glossary/41/r (`checked_supports`): short primary-source observation read; source bytes not preserved
+- `MR-P125` — गणितशास्त्र परिभाषा कोश — dense set and denseness. https://shabdakosh.marathi.gov.in/ananya-glossary/9/d (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the full model-theory compound and no-endpoint modifier were not independently attested.
+
+**Alternatives:**
+
+- खंडित रेषीय क्रम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- वियुक्त रेषीय क्रम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- विविक्त रेषीय सुव्यवस्था — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is विविक्त रेषीय क्रम the conventional Marathi term for a discrete linear order in this compactness construction?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T300-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102` | pending |
+| `T300-OLP-0207-B013` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -22206,6 +22521,256 @@ Coverage: 199/722 source units through OLP-0202; 415 applied decisions; 11,560 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLFOL-044-OLP-0202` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:92-98` | `mr/content/model-theory/interpolation/definability.tex:93-100` | pending |
+
+## OLFOL-045 — confirmed-frozen-source-wrong correspondence object with bounded prose correction
+
+**Chosen rendering/action:** Stated in Marathi that M-prime is the L-prime structure corresponding to the original structure in L and placed adjacent reader note OLFOL-045. No protected formula changes, so no projection is needed.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The renaming clause says that the renamed structure M-prime corresponds to the language L. A structure produced by symbol renaming corresponds to the original structure M, while L specifies the original vocabulary.
+
+**Rationale:** The renaming clause says that the renamed structure M-prime corresponds to the language L. A structure produced by symbol renaming corresponds to the original structure M, while L specifies the original vocabulary. Chosen action: Stated in Marathi that M-prime is the L-prime structure corresponding to the original structure in L and placed adjacent reader note OLFOL-045. No protected formula changes, so no projection is needed.
+
+**Authorities actually checked:**
+
+- `OLFOL-045-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-045. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the type mismatch between a structure and a language — `rejected`: Not chosen; the source finding and recorded action control.
+- Delete the correspondence clause, leaving the renamed interpretation under-specified — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected clause now relate the renamed structure to M while retaining L as its original vocabulary?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-045-OLP-0205` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:64-73` | `mr/content/model-theory/lindstrom/abstract-logics.tex:65-77` | pending |
+
+## OLFOL-046 — confirmed-frozen-source-ambient-structure collision and malformed starred-domain notation with documented formula projection
+
+**Chosen rendering/action:** Named the ambient structure A, updated the figure and caption, regularized the N-star domain, placed reader note OLFOL-046 and added a unit-specific projection back to the frozen notation solely for QA comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** After M and N and their starred extensions are fixed, the source reuses M for the larger structure containing both sides, including in the figure and caption. It also prints the N-star domain as Domain(N) followed by an ungrouped star, unlike the parallel M-star notation.
+
+**Rationale:** After M and N and their starred extensions are fixed, the source reuses M for the larger structure containing both sides, including in the figure and caption. It also prints the N-star domain as Domain(N) followed by an ungrouped star, unlike the parallel M-star notation. Chosen action: Named the ambient structure A, updated the figure and caption, regularized the N-star domain, placed reader note OLFOL-046 and added a unit-specific projection back to the frozen notation solely for QA comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-046-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-046. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve one symbol for both a proper substructure and its ambient structure — `rejected`: Not chosen; the source finding and recorded action control.
+- Rename the original M and every earlier occurrence, making the proof harder to compare — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do A, M, N, M-star and N-star now identify the five distinct structures unambiguously?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-046-OLP-0206` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:74-107` | `mr/content/model-theory/lindstrom/ls-property.tex:73-107` | pending |
+
+## OLFOL-047 — confirmed-frozen-source-wrong sentence class with bounded prose correction
+
+**Chosen rendering/action:** Called D1 an abstract-logic sentence and D2 a first-order sentence in Marathi and placed adjacent reader note OLFOL-047. The formulas themselves are unchanged.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The source calls both D1 and D2 first-order sentences. D1 asserts the relativized abstract satisfaction and failure of E, so relativization only guarantees an L-sentence; D2, which codes partial isomorphism, is first-order.
+
+**Rationale:** The source calls both D1 and D2 first-order sentences. D1 asserts the relativized abstract satisfaction and failure of E, so relativization only guarantees an L-sentence; D2, which codes partial isomorphism, is first-order. Chosen action: Called D1 an abstract-logic sentence and D2 a first-order sentence in Marathi and placed adjacent reader note OLFOL-047. The formulas themselves are unchanged.
+
+**Authorities actually checked:**
+
+- `OLFOL-047-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-047. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Assume without proof that every abstract sentence E is first-order — `rejected`: Not chosen; the source finding and recorded action control.
+- Call neither sentence first-order and lose the reason D2 belongs to every normal logic — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected distinction give D1 exactly the sentence class supplied by relativization and leave D2 first-order?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-047-OLP-0206` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-115` | `mr/content/model-theory/lindstrom/ls-property.tex:112-125` | pending |
+
+## OLFOL-048 — confirmed-frozen-source-countable-ambient/substructure notation collision with documented formula projection
+
+**Chosen rendering/action:** Named the countable ambient model A0 while retaining M0 and N0 for its two substructures, placed reader note OLFOL-048 and projected A0 back to the frozen M0 only during source QA.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The Löwenheim--Skolem step names the countable ambient model M0 and then says it contains a left substructure also named M0, alongside N0. The ambient model and its proper substructure cannot be tracked under one symbol.
+
+**Rationale:** The Löwenheim--Skolem step names the countable ambient model M0 and then says it contains a left substructure also named M0, alongside N0. The ambient model and its proper substructure cannot be tracked under one symbol. Chosen action: Named the countable ambient model A0 while retaining M0 and N0 for its two substructures, placed reader note OLFOL-048 and projected A0 back to the frozen M0 only during source QA.
+
+**Authorities actually checked:**
+
+- `OLFOL-048-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-048. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the collision and rely on context to distinguish two M0 objects — `rejected`: Not chosen; the source finding and recorded action control.
+- Rename both substructures and all satisfaction clauses — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does A0 now cleanly contain the distinct partially isomorphic substructures M0 and N0?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-048-OLP-0206` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:115-120` | `mr/content/model-theory/lindstrom/ls-property.tex:119-126` | pending |
+
+## OLFOL-049 — confirmed-frozen-source-missing normality hypothesis with bounded prose correction
+
+**Chosen rendering/action:** Restored the normal abstract logic hypothesis in Marathi and placed adjacent reader note OLFOL-049. No protected formula changes were required.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The theorem statement assumes only compactness and Löwenheim--Skolem, although the chapter's comparison is defined for normal abstract logics and the proof uses isomorphism, expansion, relativization and Boolean closure. Without the normality constraints the maximality conclusion is false for arbitrary sentence assignments.
+
+**Rationale:** The theorem statement assumes only compactness and Löwenheim--Skolem, although the chapter's comparison is defined for normal abstract logics and the proof uses isomorphism, expansion, relativization and Boolean closure. Without the normality constraints the maximality conclusion is false for arbitrary sentence assignments. Chosen action: Restored the normal abstract logic hypothesis in Marathi and placed adjacent reader note OLFOL-049. No protected formula changes were required.
+
+**Authorities actually checked:**
+
+- `OLFOL-049-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-049. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Read normality as an unstated global convention despite the theorem's explicit hypothesis list — `rejected`: Not chosen; the source finding and recorded action control.
+- Remove every later use of normality, which would invalidate the proof — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does adding normality state exactly the theorem proved by the following argument?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-049-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:46-54` | pending |
+
+## OLFOL-050 — confirmed-frozen-source-union-construction omission and dropped sequence subscript with documented formula projection
+
+**Chosen rendering/action:** Made the standard disjoint-copy choice explicit, restored the n subscript in the subsequence phrase, placed reader note OLFOL-050 and projected the subscript back solely for frozen-source QA.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** Agreement on the interpretations of constants does not by itself make the union of arbitrary structures a unique structure; isomorphic copies must be disjoint outside the shared constant values. The source also says to take a subsequence of the M's, although the indexed sequence is the M_n's.
+
+**Rationale:** Agreement on the interpretations of constants does not by itself make the union of arbitrary structures a unique structure; isomorphic copies must be disjoint outside the shared constant values. The source also says to take a subsequence of the M's, although the indexed sequence is the M_n's. Chosen action: Made the standard disjoint-copy choice explicit, restored the n subscript in the subsequence phrase, placed reader note OLFOL-050 and projected the subscript back solely for frozen-source QA.
+
+**Authorities actually checked:**
+
+- `OLFOL-050-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-050. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve potentially conflicting overlaps between relation interpretations — `rejected`: Not chosen; the source finding and recorded action control.
+- Treat a single unindexed M as a sequence from which a subsequence can be taken — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do the shared constants plus otherwise disjoint domains now make the relational union well defined, with the subsequence taken from M_n?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-050-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:66-83` | pending |
+
+## OLFOL-051 — confirmed-frozen-source-second ambient-structure notation collision with documented formula projection
+
+**Chosen rendering/action:** Named the coding structure A, placed reader note OLFOL-051 and added a projection that reconstructs the frozen M notation solely for QA comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** After M has been defined as the union of all M_n and M-star as its sequence extension, the source again reuses M for the much larger coding structure containing both M-star and N-star plus the ordered natural-number sort.
+
+**Rationale:** After M has been defined as the union of all M_n and M-star as its sequence extension, the source again reuses M for the much larger coding structure containing both M-star and N-star plus the ordered natural-number sort. Chosen action: Named the coding structure A, placed reader note OLFOL-051 and added a projection that reconstructs the frozen M notation solely for QA comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-051-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-051. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve one symbol for the union structure and the larger coding structure — `rejected`: Not chosen; the source finding and recorded action control.
+- Rename the entire indexed M-family and obscure comparison with the source — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does A now separate the coding structure from the M-side union and its starred extension?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-051-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102` | pending |
+
+## OLFOL-052 — confirmed-frozen-source-missing abstract-satisfaction subscripts with documented formula projection
+
+**Chosen rendering/action:** Restored the L subscripts on both satisfaction symbols, placed reader note OLFOL-052 and added a unit-specific projection to the frozen formulas for comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The coding sentence is said to assert M_n models E and N_n does not model E using ordinary first-order satisfaction, although E is an element of the abstract logic L and every surrounding occurrence uses models_L.
+
+**Rationale:** The coding sentence is said to assert M_n models E and N_n does not model E using ordinary first-order satisfaction, although E is an element of the abstract logic L and every surrounding occurrence uses models_L. Chosen action: Restored the L subscripts on both satisfaction symbols, placed reader note OLFOL-052 and added a unit-specific projection to the frozen formulas for comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-052-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-052. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Treat E as first-order before the theorem has proved that conclusion — `rejected`: Not chosen; the source finding and recorded action control.
+- Replace the assertions with prose and lose the exact encoded conditions — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do the restored subscripts give the two coded substructures the same abstract satisfaction relation used throughout the proof?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-052-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110` | pending |
+
+## OLFOL-053 — confirmed-frozen-source-incomplete compactness theory with bounded prose correction
+
+**Chosen rendering/action:** Added the standard compactness theory placing a new constant above every standard successor, explained that each finite part is satisfiable, and placed adjacent reader note OLFOL-053. The protected source formulas remain unchanged.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The source says compactness gives a model of the single sentence D whose order has a non-standard element. D only specifies a discrete linear order with a first element and no last element, which has the standard natural-number order as a model and does not force a non-standard element.
+
+**Rationale:** The source says compactness gives a model of the single sentence D whose order has a non-standard element. D only specifies a discrete linear order with a first element and no last element, which has the standard natural-number order as a model and does not force a non-standard element. Chosen action: Added the standard compactness theory placing a new constant above every standard successor, explained that each finite part is satisfiable, and placed adjacent reader note OLFOL-053. The protected source formulas remain unchanged.
+
+**Authorities actually checked:**
+
+- `OLFOL-053-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-053. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Claim that first element plus no last element implies non-standardity — `rejected`: Not chosen; the source finding and recorded action control.
+- Assume a non-standard model without invoking the stated compactness property — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does adjoining the infinitely many lower-bound sentences now justify the non-standard element used in the back-and-forth set?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-053-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-109` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-128` | pending |
+
+## OLFOL-054 — confirmed-frozen-source-final-model notation inconsistency and collision with documented formula projection
+
+**Chosen rendering/action:** Used A-star consistently for the compactness model, placed reader note OLFOL-054 and projected the two target occurrences back to their two frozen spellings solely for QA comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The compactness model is first printed as Struct(M) with an external star and then as Struct(M-star) with the star inside the macro. Both forms also collide with the earlier M-star sequence extension rather than the larger coding structure whose elementary extension is required.
+
+**Rationale:** The compactness model is first printed as Struct(M) with an external star and then as Struct(M-star) with the star inside the macro. Both forms also collide with the earlier M-star sequence extension rather than the larger coding structure whose elementary extension is required. Chosen action: Used A-star consistently for the compactness model, placed reader note OLFOL-054 and projected the two target occurrences back to their two frozen spellings solely for QA comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-054-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-054. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve two TeX spellings for one object and its collision with the earlier M-star — `rejected`: Not chosen; the source finding and recorded action control.
+- Rename the earlier sequence extension after it has already been used throughout the construction — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does consistent A-star notation identify the compactness model as an extension of the coding structure rather than of only the M side?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-054-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-111` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-128` | pending |
 
 ## Deferred prospective decisions
 

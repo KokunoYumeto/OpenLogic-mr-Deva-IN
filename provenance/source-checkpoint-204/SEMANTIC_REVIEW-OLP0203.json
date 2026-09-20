@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0203",
+  "method": "Same-agent English/Marathi close reading and exact chapter-driver structural comparison. No independent human or native-speaker review is claimed.",
+  "scope": "The Lindström chapter driver and its four unchanged imports.",
+  "samples": [
+    {
+      "blocks": [
+        4
+      ],
+      "reverse_paraphrase": "Chapter: Lindström's Theorem.",
+      "checks": "The proper name, theorem noun, chapter identifiers and import order are preserved."
+    }
+  ],
+  "source_observations": [
+    "T295 records the provisional Marathi surname form लिंडस्ट्रॉम and the established theorem noun.",
+    "All four imported file identifiers remain byte-identical to the source driver."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact Marathi spelling of Lindström remains expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

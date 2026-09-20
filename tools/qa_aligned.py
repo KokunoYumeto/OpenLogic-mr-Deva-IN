@@ -297,6 +297,21 @@ _DOCUMENTED_PROJECTIONS = {
         ("!D(P) \\land\n!D(P') \\Entails \\Atom{P}{c_1, \\dots, c_n} \\to \\Atom{P'}{c_1, \\dots, c_n}",
          "!D(P) \\land\n!D(P') \\Entails \\Atom{P}{c_1, \\dots, c_n} \\to P'c_1\\dots c_n"),
     ],
+    'OLP-0206': [
+        ('\\Struct{A}', '\\Struct{M}'),
+        ('\\Domain{N}^*', '\\Domain{N}*'),
+    ],
+    'OLP-0207': [
+        ('$\\Struct{M}_n$ चा उपअनुक्रम',
+         '$\\Struct{M}$ चा उपअनुक्रम'),
+        ('आहे, $\\Struct{M}_n \\models_L !E$,\n'
+         '$\\Struct{N}_n \\not\\models_L !E$',
+         'आहे, $\\Struct{M}_n \\models !E$,\n'
+         '$\\Struct{N}_n \\not\\models !E$'),
+        ('$\\Struct{A}^*$ मध्ये अशा उप',
+         '$\\Struct{M^*}$ मध्ये अशा उप'),
+        ('\\Struct{A}', '\\Struct{M}'),
+    ],
 }
 
 

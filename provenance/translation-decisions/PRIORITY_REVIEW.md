@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 41 urgent/high decisions and
-1073 current occurrences. Normal and low items remain in the full index.
+1081 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -216,6 +216,8 @@ This view contains 41 urgent/high decisions and
 | `T013-OLP-0201-B016` | `OLP-0201` |  | 165-181 | 165-183 | pending |
 | `T013-OLP-0201-B017` | `OLP-0201` |  | 183-190 | 185-192 | pending |
 | `T013-OLP-0202-B009` | `OLP-0202` |  | 59-64 | 59-64 | pending |
+| `T013-OLP-0205-B007` | `OLP-0205` |  | 39-46 | 39-47 | pending |
+| `T013-OLP-0206-B008` | `OLP-0206` |  | 23-26 | 23-27 | pending |
 
 ## T014 — perfect number → परिपूर्ण संख्या
 
@@ -371,6 +373,8 @@ This view contains 41 urgent/high decisions and
 | `T023-OLP-0156-B020` | `OLP-0156` | 15.7 रचनाक्रमिका | 176-180 | 174-178 | 202–205 |
 | `T023-OLP-0156-B021` | `OLP-0156` | 15.7 रचनाक्रमिका | 182-210 | 180-207 | 202–205 |
 | `T023-OLP-0156-B023` | `OLP-0156` | 15.7 रचनाक्रमिका | 215-219 | 212-216 | 202–205 |
+| `T023-OLP-0206-B012` | `OLP-0206` |  | 59-72 | 59-73 | pending |
+| `T023-OLP-0207-B012` | `OLP-0207` |  | 82-98 | 85-102 | pending |
 
 ## T026 — contradiction/paradox → व्याघात / विरोधापत्ती
 
@@ -1277,6 +1281,10 @@ This view contains 41 urgent/high decisions and
 | `T201-OLP-0187-B005` | `OLP-0187` | 19.4 समरूपी रचना | 12-24 | 12-23 | 243–245 |
 | `T201-OLP-0188-B013` | `OLP-0188` | 19.5 संरचनेची उपपत्ती | 51-62 | 55-66 | 245–246 |
 | `T201-OLP-0194-B014` | `OLP-0194` | 20.3 अमानक प्रतिमाने | 100-113 | 99-117 | 253–254 |
+| `T201-OLP-0204-B005` | `OLP-0204` |  | 12-21 | 12-21 | pending |
+| `T201-OLP-0206-B005` | `OLP-0206` |  | 11-11 | 11-11 | pending |
+| `T201-OLP-0206-B006` | `OLP-0206` |  | 13-14 | 13-14 | pending |
+| `T201-OLP-0206-B008` | `OLP-0206` |  | 23-26 | 23-27 | pending |
 
 ## T219 — free logic → मुक्त तर्कशास्त्र
 

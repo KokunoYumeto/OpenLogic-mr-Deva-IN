@@ -1,0 +1,142 @@
+% Part: first-order-logic
+% Chapter: lindstrom
+% Section: abstract-logics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{lin}{alg}
+\olsection{अमूर्त तर्कशास्त्रे}
+
+\begin{defn}
+\emph{अमूर्त तर्कशास्त्र} म्हणजे जोडी $
+\tuple{L, \models_L}$; येथे $L$ हे प्रत्येक !!{language}~$\Lang{L}$
+ला $L(\Lang{L})$ हा !!{sentence}s चा संच नेमून देणारे फलन आहे, आणि
+$\models_L$ हा !!{language}~$\Lang{L}$ साठीच्या !!{structure}s आणि
+$L(\Lang{L})$ च्या !!{element}s यांमधील संबंध आहे. विशेषतः,
+$\tuple{F, \models}$ हे साधारण प्रथम-क्रम तर्कशास्त्र आहे; म्हणजे $F$ हे
+!!{language}~$\Lang{L}$ ला $\Lang{L}$ मधील स्थिर चिन्हांपासून बनवलेल्या प्रथम-क्रम
+!!{sentence}s चा संच त्या भाषेला नेमून देणारे फलन आहे, आणि $\models$ हा
+प्रथम-क्रम तर्कशास्त्राचा पूर्ति-संबंध आहे.
+\end{defn}
+
+लक्षात घ्या की दिलेल्या !!{language} साठी आपण प्रथम-क्रम तर्कशास्त्रातील
+!!{structure} चीच संकल्पना अजूनही वापरत आहोत; परंतु $\Lang{L}$ मधील
+मूलभूत चिन्हांपासून !!{sentence}s नेहमीच्या रीतीने बनवली जातात, किंवा
+$\models_L$ हा संबंध प्रथम-क्रम तर्कशास्त्राप्रमाणेच प्रत्यावर्ती रीतीने
+परिभाषित केला जातो, असे आपण पूर्वगृहीत धरत नाही. म्हणून, ही पूर्णतः
+सामान्य व्याख्या अशा प्रकरणांचाही समावेश करण्यासाठी आहे ज्यांत
+$\tuple{L,\models_L}$ मधील !!{sentence}s मध्ये अनंत लांबीची संधी किंवा
+विकल्प, $\lexists$ आणि $\lforall$ यांखेरीज इतर संख्यापक (उदा.,
+``असे अनंत अनेक~$x$ आहेत की \dots''), किंवा कदाचित अनंत लांबीचे
+संख्यापक-उपसर्ग असतात. $L(\Lang{L})$ मधील ``!!{sentence}s'' ही
+प्रथम-क्रम तर्कशास्त्राची साधारण !!{sentence}s असतीलच असे नाही, हे
+ठळक करण्यासाठी या प्रकरणात त्यांवर व्यापणारी !!{variable}s म्हणून $!E$,
+$!F$,~\dots वापरतो, आणि साधारण प्रथम-क्रम !!{formula}s साठी $!A$,
+$!B$,~\dots राखून ठेवतो.
+
+\begin{defn}
+$\Mod(L){!E}$ ही संज्ञा $\Setabs{\Struct{M}}{\Struct{M}
+  \models_L !E}$ हा वर्ग दर्शवू दे. !!{language} स्पष्ट सांगणे आवश्यक
+असेल, तर आपण $\Mod[L](L){!E}$ असे लिहितो. $\Lang{L}$ साठीच्या दोन
+!!{structure}s $\Struct{M}$ आणि $\Struct{N}$ या $\tuple{L, \models_L}$
+मध्ये \emph{प्राथमिक सममूल्य} आहेत, आणि हे $\Struct{M} \elemequiv[L]
+\Struct{N}$ असे लिहितो, जर $L(\Lang{L})$ मधील तीच !!{sentence}s
+दोन्हींमध्ये सत्य असतील.
+\end{defn}
+
+\begin{defn}
+!!{language} $\Lang{L}$ साठीचे अमूर्त तर्कशास्त्र
+$\tuple{L,\models_L}$ पुढील गुणधर्म पूर्ण करत असेल, तर ते \emph{सामान्य}
+आहे:
+\begin{enumerate}
+\item (\emph{$L$-एकस्वनिकता}) !!{language}s $\Lang{L}$ आणि
+  $\Lang{L'}$ यांच्यासाठी, $\Lang{L} \subseteq \Lang{L'}$ असेल, तर
+  $L(\Lang{L}) \subseteq L(\Lang{L'})$.
+\item (\emph{विस्तार गुणधर्म}) प्रत्येक $!E \in L(\Lang{L})$
+  साठी $\Lang{L}$ चा असा \emph{सांत} उपसंच $\Lang{L'}$ असतो की
+  $\Struct{M} \models_L !E$ हा संबंध $\Struct{M}$ च्या
+  $\Lang{L'}$-न्यूनीकृत रचनेवरच अवलंबून असतो; म्हणजे $\Struct{M}$ आणि
+  $\Struct{N}$ यांची $\Lang{L'}$ वरील न्यूनीकृत रचना एकच असेल, तर
+  $\Struct{M} \models_L !E$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\Struct{N} \models_L !E$.
+\item (\emph{समरूपता गुणधर्म}) $\Struct{M} \models_L !E$ आणि
+  $\Struct{M} \simeq \Struct{N}$ असेल, तर $\Struct{N} \models_L !E$
+  हेही खरे असते.
+\item (\emph{पुनर्नामकरण गुणधर्म}) पुनर्नामकरणाखाली $\models_L$ संबंध
+  टिकून राहतो: !!{language} $\Lang{L}'$ ही $\Lang{L}$ मधील प्रत्येक
+  चिन्ह $P$ च्या जागी त्याच स्थानसंख्येचे चिन्ह $P'$ आणि प्रत्येक स्थिर
+  $c$ च्या जागी वेगळे स्थिर $c'$ ठेवून मिळत असेल, तर प्रत्येक
+  !!{structure}~$\Struct{M}$ आणि !!{sentence}~$!E$ साठी,
+  $\Struct{M} \models_L !E$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\Struct{M}' \models_L !E'$; येथे $\Struct{M}'$ ही $\Lang{L}'$-!!{structure}
+  असून ती $\Lang{L}$ मधील मूळ रचनेशी अनुरूप आहे, आणि $!E' \in
+  L(\Lang{L}')$.
+  %READERNOTE{OLFOL-045 — गोठवलेल्या इंग्रजीत M' ही L शी अनुरूप असल्याचे म्हटले आहे; पण पुनर्नामकरणात भाषा L शी नव्हे, तर रचना M शी अनुरूप रचना अपेक्षित आहे. मराठी वाक्यात M पुनःस्थापित केले आहे.}
+\item (\emph{बूलीय गुणधर्म}) अमूर्त तर्कशास्त्र $\tuple{L,
+  \models_L}$ बूलीय संयोजकांखाली पुढील अर्थाने संवृत असते: प्रत्येक
+  $!E \in L(\Lang{L})$ साठी असा $!F \in L(\Lang{L})$ असतो की
+  $\Struct{M} \models_L !F$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\Struct{M} \not\models_L !E$; आणि प्रत्येक $!E$ आणि $!F$ साठी असा
+  $!G$ असतो की $\Mod(L){!G} = \Mod(L){!E} \cap
+  \Mod(L){!F}$. आण्विक !!{formula}s आणि इतर संयोजकांसाठीही अशाच अटी
+  असतात.
+\item (\emph{संख्यापक गुणधर्म}) $\Lang{L}$ मधील प्रत्येक स्थिर $c$
+  आणि $!E \in L(\Lang{L})$ साठी असा $!F \in L(\Lang{L})$ असतो की
+  \[
+  \Mod[L'](L){!F} = \Setabs{\Struct{M}}{\Expan{M}{a} \in
+  \Mod[L](L){!E} \text{ काही } a \in \Domain{M}},
+  \]
+  येथे $\Lang{L'} = \Lang{L} \setminus \{c\}$ आणि
+  $\Expan{M}{a}$ ही $c$ ला $a$ नेमून देणारी $\Struct{M}$ ची
+  $\Lang{L}$ वरील विस्तारित रचना आहे.
+\item (\emph{सापेक्षीकरण गुणधर्म}) $!E \in L(\Lang{L})$ हे
+  !!a{sentence} आणि $R$, $c_1$, \dots, $c_n$ ही $\Lang{L}$ मध्ये
+  नसलेली चिन्हे दिली असता, असे !!a{sentence}
+  $!F \in L(\Lang{L} \cup \{R,c_1,\ldots,c_n\})$ असते की त्याला $!E$ चे
+  $\Atom{R}{x, c_1, \dots c_n}$ पर्यंतचे \emph{सापेक्षीकरण} म्हणतात,
+  आणि प्रत्येक !!{structure}~$\Struct{M}$ साठी:
+  \[
+  \Expan{M}{X, b_1, \ldots, b_n} \models_L !F \text{ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा } \Struct{N} \models_L !E,
+  \]
+  येथे $\Struct{N}$ ही $\Struct{M}$ ची अशी उपरचना आहे की तिचा
+  !!{domain} $\Domain{N} = \Setabs{a\in \Domain{M}}{\Assign{R}{M}(a,
+  b_1, \dots, b_n)}$ (पहा \olref[bas][sub]{rem:substructure}), आणि
+  $\Expan{M}{X, b_1, \ldots, b_n}$ ही $R$, $c_1$, \dots, $c_n$ यांना
+  अनुक्रमे $X$, $b_1,$ \dots, $b_n$ अशी अर्थनिर्धारणे देणारी
+  $\Struct{M}$ ची विस्तारित रचना आहे (येथे $X \subseteq M^{n+1}$).
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+दोन अमूर्त तर्कशास्त्रे $\tuple{L_1, \models_{L_1}}$ आणि
+$\tuple{L_2, \models_{L_2}}$ दिली असता, प्रत्येक !!{language}
+$\Lang{L}$ आणि !!{sentence} $!E \in L_1(\Lang{L})$ साठी असे
+!!a{sentence} $!F \in L_2(\Lang{L})$ असेल की $\Mod[L](L_1){!E} =
+\Mod[L](L_2){!F}$, तर दुसरे तर्कशास्त्र पहिल्याइतके \emph{किमान
+  तितकेच अभिव्यक्तिक्षम} आहे, असे म्हणतो आणि $\tuple{L_1, \models_{L_1}}
+\leq \tuple{L_2, \models_{L_2}}$ असे लिहितो. $\tuple{L_1,
+  \models_{L_1}} \leq \tuple{L_2, \models_{L_2}}$ आणि $\tuple{L_2,
+  \models_{L_2}} \leq \tuple{L_1, \models_{L_1}}$ ही दोन्ही विधाने
+खरी असतील, तर $\tuple{L_1, \models_{L_1}}$ आणि $\tuple{L_2,
+  \models_{L_2}}$ ही तर्कशास्त्रे \emph{सममूल्य} आहेत.
+\end{defn}
+
+\begin{rem}
+  प्रथम-क्रम तर्कशास्त्र, म्हणजे अमूर्त तर्कशास्त्र $\tuple{F,
+  \models}$, हे सामान्य आहे. वस्तुतः, वरील गुणधर्म प्रथम-क्रम
+  तर्कशास्त्रासाठी बहुतांशी सरळ आहेत. विस्तार गुणधर्म हा
+  विस्तारात्मकतेवर येऊन ठेपतो, आणि !!a{sentence} $!E$ चे
+  $\Atom{R}{x, c_1, \dots, c_n}$ पर्यंतचे सापेक्षीकरण प्रत्येक
+  !!{subformula} $\lforall[x][!F]$ च्या जागी
+  $\lforall[x][(\Atom{R}{x, c_1, \dots, c_n} \lif \ !F)]$ ठेवून
+  मिळते, एवढेच आपण नोंदवतो. शिवाय, $\tuple{L, \models_L}$ सामान्य
+  असेल, तर $\tuple{F, \models} \leq \tuple{L, \models_{L}}$; हे
+  प्रथम-क्रम !!{formula}s वरील विगमनाने दाखवता येते. म्हणून कोणतीही
+  सामान्यता न गमावता प्रत्येक प्रथम-क्रम !!{sentence} प्रत्येक सामान्य
+  तर्कशास्त्रात आहे असे आपण मानू शकतो.
+\end{rem}
+
+\end{document}

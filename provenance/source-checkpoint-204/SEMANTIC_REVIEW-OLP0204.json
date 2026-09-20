@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0204",
+  "method": "Same-agent English/Marathi close reading, reference replay and terminology comparison against the official characterization headword. No independent human or native-speaker review is claimed.",
+  "scope": "The chapter introduction: Lindström characterization, compactness, downward Löwenheim--Skolem and the relational-language restriction.",
+  "samples": [
+    {
+      "blocks": [
+        4
+      ],
+      "reverse_paraphrase": "Introduction.",
+      "checks": "परिचय is used for a substantive section heading and remains distinct from prefatory प्रस्तावना."
+    },
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "The chapter will characterize first-order logic as the maximal logic satisfying compactness and downward Löwenheim--Skolem under further constraints. It first defines the wider class of logics and restricts attention to relational languages containing predicates and individual constants but no function symbols.",
+      "checks": "Both theorem references, maximality direction, further-constraints qualification and the predicate/constant/function vocabulary boundary are preserved."
+    }
+  ],
+  "source_observations": [
+    "MR-P135 directly attests लक्षणचित्रण for mathematical characterization; T295 records its theorem-specific use.",
+    "T279 controls the source's local purely relational convention, which still permits constants."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The compounds अधोगामी लोव्हेनहाइम--स्कोलेम and लिंडस्ट्रॉमचे लक्षणचित्रण remain expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

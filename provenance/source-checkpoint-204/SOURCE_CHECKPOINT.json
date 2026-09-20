@@ -1,0 +1,216 @@
+{
+  "schema": "openlogic-incremental-source-checkpoint/1",
+  "checkpoint_id": "mr-Deva-IN-source-204-20260921",
+  "generated_utc": "2026-09-20T23:26:55.855125Z",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "base_checkpoint": {
+    "path": "provenance/source-checkpoint-199/SOURCE_CHECKPOINT.json",
+    "bytes": 6228,
+    "sha256": "761a9eb82d70aa8d68855f699f1f4d71fc2967d57fea2c0e1c3c0b4af263181d"
+  },
+  "scope": {
+    "translated_source_units": 204,
+    "total_source_units": 722,
+    "remaining_source_units": 518,
+    "aligned_content_segments": 2126,
+    "complete_source_chapters": 22,
+    "complete_reader_chapters": 20,
+    "first_incremental_unit": "OLP-0203",
+    "last_unit": "OLP-0207",
+    "next_unit": "OLP-0208",
+    "complete_edition": false
+  },
+  "translation_files": [
+    {
+      "unit_id": "OLP-0203",
+      "path": "mr/content/model-theory/lindstrom/lindstrom.tex",
+      "bytes": 345,
+      "sha256": "da478969030d36e92c43893347f49bd779f271a270f4586827f5e41a34a28faa"
+    },
+    {
+      "unit_id": "OLP-0204",
+      "path": "mr/content/model-theory/lindstrom/introduction.tex",
+      "bytes": 1629,
+      "sha256": "87197fd33d4fad6e40c691a2af4b4db2e8fdd25ebe3e9a491e6cd7d6239728e5"
+    },
+    {
+      "unit_id": "OLP-0205",
+      "path": "mr/content/model-theory/lindstrom/abstract-logics.tex",
+      "bytes": 12306,
+      "sha256": "6051079ab88f0df12f2ef3782d10592c8bb62bb243995fec0736113400136181"
+    },
+    {
+      "unit_id": "OLP-0206",
+      "path": "mr/content/model-theory/lindstrom/ls-property.tex",
+      "bytes": 11569,
+      "sha256": "b4dc1fa4e3326a5a4742faefd351bcbf9ef5be371a812fc8f100a01a63ddd397"
+    },
+    {
+      "unit_id": "OLP-0207",
+      "path": "mr/content/model-theory/lindstrom/lindstrom-proof.tex",
+      "bytes": 14417,
+      "sha256": "a4852ef6328829cb9da308ccc7701e7e613d4de67465c7105bfb4ade6864f208"
+    }
+  ],
+  "semantic_reviews": [
+    {
+      "unit_id": "OLP-0203",
+      "path": "provenance/source-checkpoint-204/SEMANTIC_REVIEW-OLP0203.json",
+      "bytes": 1063,
+      "sha256": "79d957aca848792b662bc94a7d8986624629978688e29fc553a4233a6e209c11"
+    },
+    {
+      "unit_id": "OLP-0204",
+      "path": "provenance/source-checkpoint-204/SEMANTIC_REVIEW-OLP0204.json",
+      "bytes": 1933,
+      "sha256": "c19090afab9f1e1672901cebe080399e5616cc370d40cbaee9a644970d3f365f"
+    },
+    {
+      "unit_id": "OLP-0205",
+      "path": "provenance/source-checkpoint-204/SEMANTIC_REVIEW-OLP0205.json",
+      "bytes": 3101,
+      "sha256": "bcd98b3811b3cbf0f6d4a02b30ab779e0f9bfdcd849f72b01f8e061b4220005c"
+    },
+    {
+      "unit_id": "OLP-0206",
+      "path": "provenance/source-checkpoint-204/SEMANTIC_REVIEW-OLP0206.json",
+      "bytes": 3224,
+      "sha256": "04557ad88aefc94fd305904aaa52f8aab58c1cb08c7c8cc944d47d420031ebcd"
+    },
+    {
+      "unit_id": "OLP-0207",
+      "path": "provenance/source-checkpoint-204/SEMANTIC_REVIEW-OLP0207.json",
+      "bytes": 3616,
+      "sha256": "4ca5107cb717e79a67988154abed4e38370e0cd9543c8d958162ae8f7e04b0f4"
+    }
+  ],
+  "source_corrections": [
+    {
+      "id": "OLFOL-045",
+      "unit_id": "OLP-0205",
+      "classification": "confirmed-frozen-source-wrong correspondence object with bounded prose correction",
+      "finding": "The renaming clause says that the renamed structure M-prime corresponds to the language L. A structure produced by symbol renaming corresponds to the original structure M, while L specifies the original vocabulary.",
+      "action": "Stated in Marathi that M-prime is the L-prime structure corresponding to the original structure in L and placed adjacent reader note OLFOL-045. No protected formula changes, so no projection is needed."
+    },
+    {
+      "id": "OLFOL-046",
+      "unit_id": "OLP-0206",
+      "classification": "confirmed-frozen-source-ambient-structure collision and malformed starred-domain notation with documented formula projection",
+      "finding": "After M and N and their starred extensions are fixed, the source reuses M for the larger structure containing both sides, including in the figure and caption. It also prints the N-star domain as Domain(N) followed by an ungrouped star, unlike the parallel M-star notation.",
+      "action": "Named the ambient structure A, updated the figure and caption, regularized the N-star domain, placed reader note OLFOL-046 and added a unit-specific projection back to the frozen notation solely for QA comparison."
+    },
+    {
+      "id": "OLFOL-047",
+      "unit_id": "OLP-0206",
+      "classification": "confirmed-frozen-source-wrong sentence class with bounded prose correction",
+      "finding": "The source calls both D1 and D2 first-order sentences. D1 asserts the relativized abstract satisfaction and failure of E, so relativization only guarantees an L-sentence; D2, which codes partial isomorphism, is first-order.",
+      "action": "Called D1 an abstract-logic sentence and D2 a first-order sentence in Marathi and placed adjacent reader note OLFOL-047. The formulas themselves are unchanged."
+    },
+    {
+      "id": "OLFOL-048",
+      "unit_id": "OLP-0206",
+      "classification": "confirmed-frozen-source-countable-ambient/substructure notation collision with documented formula projection",
+      "finding": "The Löwenheim--Skolem step names the countable ambient model M0 and then says it contains a left substructure also named M0, alongside N0. The ambient model and its proper substructure cannot be tracked under one symbol.",
+      "action": "Named the countable ambient model A0 while retaining M0 and N0 for its two substructures, placed reader note OLFOL-048 and projected A0 back to the frozen M0 only during source QA."
+    },
+    {
+      "id": "OLFOL-049",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed-frozen-source-missing normality hypothesis with bounded prose correction",
+      "finding": "The theorem statement assumes only compactness and Löwenheim--Skolem, although the chapter's comparison is defined for normal abstract logics and the proof uses isomorphism, expansion, relativization and Boolean closure. Without the normality constraints the maximality conclusion is false for arbitrary sentence assignments.",
+      "action": "Restored the normal abstract logic hypothesis in Marathi and placed adjacent reader note OLFOL-049. No protected formula changes were required."
+    },
+    {
+      "id": "OLFOL-050",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed-frozen-source-union-construction omission and dropped sequence subscript with documented formula projection",
+      "finding": "Agreement on the interpretations of constants does not by itself make the union of arbitrary structures a unique structure; isomorphic copies must be disjoint outside the shared constant values. The source also says to take a subsequence of the M's, although the indexed sequence is the M_n's.",
+      "action": "Made the standard disjoint-copy choice explicit, restored the n subscript in the subsequence phrase, placed reader note OLFOL-050 and projected the subscript back solely for frozen-source QA."
+    },
+    {
+      "id": "OLFOL-051",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed-frozen-source-second ambient-structure notation collision with documented formula projection",
+      "finding": "After M has been defined as the union of all M_n and M-star as its sequence extension, the source again reuses M for the much larger coding structure containing both M-star and N-star plus the ordered natural-number sort.",
+      "action": "Named the coding structure A, placed reader note OLFOL-051 and added a projection that reconstructs the frozen M notation solely for QA comparison."
+    },
+    {
+      "id": "OLFOL-052",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed-frozen-source-missing abstract-satisfaction subscripts with documented formula projection",
+      "finding": "The coding sentence is said to assert M_n models E and N_n does not model E using ordinary first-order satisfaction, although E is an element of the abstract logic L and every surrounding occurrence uses models_L.",
+      "action": "Restored the L subscripts on both satisfaction symbols, placed reader note OLFOL-052 and added a unit-specific projection to the frozen formulas for comparison."
+    },
+    {
+      "id": "OLFOL-053",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed-frozen-source-incomplete compactness theory with bounded prose correction",
+      "finding": "The source says compactness gives a model of the single sentence D whose order has a non-standard element. D only specifies a discrete linear order with a first element and no last element, which has the standard natural-number order as a model and does not force a non-standard element.",
+      "action": "Added the standard compactness theory placing a new constant above every standard successor, explained that each finite part is satisfiable, and placed adjacent reader note OLFOL-053. The protected source formulas remain unchanged."
+    },
+    {
+      "id": "OLFOL-054",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed-frozen-source-final-model notation inconsistency and collision with documented formula projection",
+      "finding": "The compactness model is first printed as Struct(M) with an external star and then as Struct(M-star) with the star inside the macro. Both forms also collide with the earlier M-star sequence extension rather than the larger coding structure whose elementary extension is required.",
+      "action": "Used A-star consistently for the compactness model, placed reader note OLFOL-054 and projected the two target occurrences back to their two frozen spellings solely for QA comparison."
+    }
+  ],
+  "qa": {
+    "units_checked": 5,
+    "unit_structural_failures": 0,
+    "formula_projections": 6,
+    "bounded_prose_corrections": 4,
+    "formula_macro_token_identifier_reference_parity": true,
+    "semantic_reviews_passed": 5,
+    "cross_package_receipt": {
+      "path": "provenance/source-checkpoint-204/CROSS_PACKAGE_QA-WORKING.json",
+      "bytes": 1325,
+      "sha256": "0503f4814a7d6264e71f75782f16ac8f6b5a945b69aeaf44fdb0ba9b36f0eb38",
+      "segment_hashes_replayed": 2126,
+      "result": "passed"
+    },
+    "independent_human_or_native_speaker_review_claimed": false,
+    "tex_reader_build_run_for_increment": false
+  },
+  "synchronized_provenance": {
+    "receipt": "provenance/PROVENANCE_SYNC.json",
+    "canon_sources": 100,
+    "canon_passages": 136,
+    "term_decisions": 300,
+    "aligned_segments": 2126,
+    "expert_review_decisions": {
+      "records": 431,
+      "path": "provenance/EXPERT_REVIEW_DECISIONS.jsonl",
+      "bytes": 2931994,
+      "sha256": "75da63a0f4c53e3106cee02a3667808bce545ed5bde4a1438004be30b18b0425"
+    },
+    "expert_review_occurrences": {
+      "records": 11708,
+      "path": "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl",
+      "bytes": 34872122,
+      "sha256": "af95c8a6f6aa7ca027b21210b38b2d9025034da7e4d0b9c9de8758c03ff36a79"
+    },
+    "canonical_decision_qa": {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "bytes": 3534,
+      "sha256": "6e46fa70f55fed31a30e0ab56a5d11b61a4f29319a45bdbf4509abe41f28fe6c",
+      "deterministic_second_run_identical": true
+    }
+  },
+  "latest_public_reader": {
+    "tag": "twenty-chapters-v0.9",
+    "last_unit": "OLP-0197",
+    "translated_units": 194,
+    "pages": 264,
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/twenty-chapters-v0.9",
+    "zenodo_doi": "10.5281/zenodo.22864626"
+  },
+  "packaging_observations": {
+    "path": "provenance/source-checkpoint-204/PACKAGING_OBSERVATIONS-TWENTY-CHAPTERS-v0.9.json",
+    "bytes": 2420,
+    "sha256": "c234df36fafd075fbe42ac2e323648681e3e164199aafe62126bc482277bffe2",
+    "disposition": "Apply both corrections at the next full-source package checkpoint; preserve the public direct TeX asset and inherited access."
+  },
+  "status": "source-complete-and-reviewed; coherent reader refresh pending"
+}

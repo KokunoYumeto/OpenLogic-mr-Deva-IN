@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **199/722 source units**, 2095 aligned translated blocks, 11560 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
+Current scope: **204/722 source units**, 2126 aligned translated blocks, 11708 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -940,7 +940,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T004 — extensionality</strong> (77 occurrences; medium priority)</summary>
+<summary><strong>T004 — extensionality</strong> (78 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1021,6 +1021,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T004-OLP-0170-B011 | OLP-0170 · 17.3 प्रथम-क्रम उपपत्तींची उदाहरणे | [upstream/content/first-order-logic/models-theories/theories.tex:71-88](../upstream/content/first-order-logic/models-theories/theories.tex#L71) | [mr/content/first-order-logic/models-theories/theories.tex:70-86](../mr/content/first-order-logic/models-theories/theories.tex#L70) | 224–226 |
 | T004-OLP-0172-B007 | OLP-0172 · 17.5 संचांची उपपत्ती | [upstream/content/first-order-logic/models-theories/set-theory.tex:31-55](../upstream/content/first-order-logic/models-theories/set-theory.tex#L31) | [mr/content/first-order-logic/models-theories/set-theory.tex:30-54](../mr/content/first-order-logic/models-theories/set-theory.tex#L30) | 227–229 |
 | T004-OLP-0180-B009 | OLP-0180 · 18.6 मोडल तर्कशास्त्रे | [upstream/content/first-order-logic/beyond/modal-logics.tex:50-65](../upstream/content/first-order-logic/beyond/modal-logics.tex#L50) | [mr/content/first-order-logic/beyond/modal-logics.tex:45-59](../mr/content/first-order-logic/beyond/modal-logics.tex#L45) | 240–241 |
+| T004-OLP-0205-B010 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L121) | [mr/content/model-theory/lindstrom/abstract-logics.tex:127-140](../mr/content/model-theory/lindstrom/abstract-logics.tex#L127) | not yet paginated |
 
 **Chosen rendering/action:** विस्तारात्मकता
 
@@ -1919,7 +1920,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T013 — model (model theory)</strong> (104 occurrences; high priority)</summary>
+<summary><strong>T013 — model (model theory)</strong> (106 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2027,6 +2028,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T013-OLP-0201-B016 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L165) | [mr/content/model-theory/interpolation/interpolation-proof.tex:165-183](../mr/content/model-theory/interpolation/interpolation-proof.tex#L165) | not yet paginated |
 | T013-OLP-0201-B017 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L183) | [mr/content/model-theory/interpolation/interpolation-proof.tex:185-192](../mr/content/model-theory/interpolation/interpolation-proof.tex#L185) | not yet paginated |
 | T013-OLP-0202-B009 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:59-64](../upstream/content/model-theory/interpolation/definability.tex#L59) | [mr/content/model-theory/interpolation/definability.tex:59-64](../mr/content/model-theory/interpolation/definability.tex#L59) | not yet paginated |
+| T013-OLP-0205-B007 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:39-46](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L39) | [mr/content/model-theory/lindstrom/abstract-logics.tex:39-47](../mr/content/model-theory/lindstrom/abstract-logics.tex#L39) | not yet paginated |
+| T013-OLP-0206-B008 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:23-26](../upstream/content/model-theory/lindstrom/ls-property.tex#L23) | [mr/content/model-theory/lindstrom/ls-property.tex:23-27](../mr/content/model-theory/lindstrom/ls-property.tex#L23) | not yet paginated |
 
 **Chosen rendering/action:** प्रतिमान
 
@@ -2696,7 +2699,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T023 — sequence/string/word</strong> (74 occurrences; high priority)</summary>
+<summary><strong>T023 — sequence/string/word</strong> (76 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2774,6 +2777,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T023-OLP-0156-B020 | OLP-0156 · 15.7 रचनाक्रमिका | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:176-180](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L176) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:174-178](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L174) | 202–205 |
 | T023-OLP-0156-B021 | OLP-0156 · 15.7 रचनाक्रमिका | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L182) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:180-207](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L180) | 202–205 |
 | T023-OLP-0156-B023 | OLP-0156 · 15.7 रचनाक्रमिका | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:215-219](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L215) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:212-216](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L212) | 202–205 |
+| T023-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
+| T023-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L85) | not yet paginated |
 
 **Chosen rendering/action:** अनुक्रम / चिन्हमाला / शब्द
 
@@ -3107,7 +3112,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T030 — relation / binary relation</strong> (175 occurrences; medium priority)</summary>
+<summary><strong>T030 — relation / binary relation</strong> (179 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3286,6 +3291,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T030-OLP-0189-B019 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:143-158](../upstream/content/model-theory/basics/partial-iso.tex#L143) | [mr/content/model-theory/basics/partial-iso.tex:144-162](../mr/content/model-theory/basics/partial-iso.tex#L144) | 246–248 |
 | T030-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
 | T030-OLP-0202-B009 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:59-64](../upstream/content/model-theory/interpolation/definability.tex#L59) | [mr/content/model-theory/interpolation/definability.tex:59-64](../mr/content/model-theory/interpolation/definability.tex#L59) | not yet paginated |
+| T030-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
+| T030-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
+| T030-OLP-0206-B013 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:74-86](../upstream/content/model-theory/lindstrom/ls-property.tex#L74) | [mr/content/model-theory/lindstrom/ls-property.tex:75-88](../mr/content/model-theory/lindstrom/ls-property.tex#L75) | not yet paginated |
+| T030-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L85) | not yet paginated |
 
 **Chosen rendering/action:** संबंध / द्विपदी संबंध
 
@@ -5988,7 +5997,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T057 — enumerable / countable / uncountable</strong> (132 occurrences; routine priority)</summary>
+<summary><strong>T057 — enumerable / countable / uncountable</strong> (135 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6124,6 +6133,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T057-OLP-0194-B014 | OLP-0194 · 20.3 अमानक प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113](../upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex#L100) | [mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117](../mr/content/model-theory/models-of-arithmetic/non-standard-models.tex#L99) | 253–254 |
 | T057-OLP-0196-B035 | OLP-0196 · 20.5 PA ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260](../upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex#L238) | [mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263](../mr/content/model-theory/models-of-arithmetic/models-of-pa.tex#L242) | 256–259 |
 | T057-OLP-0197-B006 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L25) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L24) | 259–260 |
+| T057-OLP-0206-B008 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:23-26](../upstream/content/model-theory/lindstrom/ls-property.tex#L23) | [mr/content/model-theory/lindstrom/ls-property.tex:23-27](../mr/content/model-theory/lindstrom/ls-property.tex#L23) | not yet paginated |
+| T057-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
+| T057-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
 
 **Chosen rendering/action:** गणनीय / गणनीय / अगणनीय
 
@@ -7323,7 +7335,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T102 — first-order logic</strong> (63 occurrences; medium priority)</summary>
+<summary><strong>T102 — first-order logic</strong> (71 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7390,6 +7402,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T102-OLP-0182-B005 | OLP-0182 · 19 प्रतिमान उपपत्तीची मूलतत्त्वे — भाग-प्रस्तावना | [upstream/content/model-theory/model-theory.tex:9-17](../upstream/content/model-theory/model-theory.tex#L9) | [mr/content/model-theory/model-theory.tex:9-16](../mr/content/model-theory/model-theory.tex#L9) | 242 |
 | T102-OLP-0186-B007 | OLP-0186 · 19.3 सांत मर्यादेपलीकडील प्रसरण | [upstream/content/model-theory/basics/overspill.tex:28-33](../upstream/content/model-theory/basics/overspill.tex#L28) | [mr/content/model-theory/basics/overspill.tex:28-33](../mr/content/model-theory/basics/overspill.tex#L28) | 243 |
 | T102-OLP-0187-B005 | OLP-0187 · 19.4 समरूपी रचना | [upstream/content/model-theory/basics/isomorphism.tex:12-24](../upstream/content/model-theory/basics/isomorphism.tex#L12) | [mr/content/model-theory/basics/isomorphism.tex:12-23](../mr/content/model-theory/basics/isomorphism.tex#L12) | 243–245 |
+| T102-OLP-0204-B005 | OLP-0204 ·  | [upstream/content/model-theory/lindstrom/introduction.tex:12-21](../upstream/content/model-theory/lindstrom/introduction.tex#L12) | [mr/content/model-theory/lindstrom/introduction.tex:12-21](../mr/content/model-theory/lindstrom/introduction.tex#L12) | not yet paginated |
+| T102-OLP-0205-B005 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:12-22](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L12) | [mr/content/model-theory/lindstrom/abstract-logics.tex:12-22](../mr/content/model-theory/lindstrom/abstract-logics.tex#L12) | not yet paginated |
+| T102-OLP-0205-B006 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L24) | [mr/content/model-theory/lindstrom/abstract-logics.tex:24-37](../mr/content/model-theory/lindstrom/abstract-logics.tex#L24) | not yet paginated |
+| T102-OLP-0205-B010 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L121) | [mr/content/model-theory/lindstrom/abstract-logics.tex:127-140](../mr/content/model-theory/lindstrom/abstract-logics.tex#L127) | not yet paginated |
+| T102-OLP-0206-B009 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:29-39](../upstream/content/model-theory/lindstrom/ls-property.tex#L29) | [mr/content/model-theory/lindstrom/ls-property.tex:30-39](../mr/content/model-theory/lindstrom/ls-property.tex#L30) | not yet paginated |
+| T102-OLP-0207-B006 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:13-22](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L13) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:13-22](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L13) | not yet paginated |
+| T102-OLP-0207-B009 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L47) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:47-54](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L47) | not yet paginated |
+| T102-OLP-0207-B010 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:54-64](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L54) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:56-66](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L56) | not yet paginated |
 
 **Chosen rendering/action:** प्रथम-क्रम तर्कशास्त्र
 
@@ -7481,7 +7501,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T105 — isomorphic / isomorphism</strong> (42 occurrences; routine priority)</summary>
+<summary><strong>T105 — isomorphic / isomorphism</strong> (46 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7527,6 +7547,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T105-OLP-0197-B011 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L107) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L106) | 259–260 |
 | T105-OLP-0201-B015 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L151) | [mr/content/model-theory/interpolation/interpolation-proof.tex:151-163](../mr/content/model-theory/interpolation/interpolation-proof.tex#L151) | not yet paginated |
 | T105-OLP-0201-B016 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L165) | [mr/content/model-theory/interpolation/interpolation-proof.tex:165-183](../mr/content/model-theory/interpolation/interpolation-proof.tex#L165) | not yet paginated |
+| T105-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
+| T105-OLP-0206-B011 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:49-57](../upstream/content/model-theory/lindstrom/ls-property.tex#L49) | [mr/content/model-theory/lindstrom/ls-property.tex:48-57](../mr/content/model-theory/lindstrom/ls-property.tex#L48) | not yet paginated |
+| T105-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
+| T105-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
 
 **Chosen rendering/action:** समरूपी / समरूपता
 
@@ -7901,7 +7925,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T112 — predicate / term / quantifier</strong> (207 occurrences; routine priority)</summary>
+<summary><strong>T112 — predicate / term / quantifier</strong> (213 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8112,6 +8136,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T112-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
 | T112-OLP-0202-B007 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:34-44](../upstream/content/model-theory/interpolation/definability.tex#L34) | [mr/content/model-theory/interpolation/definability.tex:33-43](../mr/content/model-theory/interpolation/definability.tex#L33) | not yet paginated |
 | T112-OLP-0202-B008 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:46-57](../upstream/content/model-theory/interpolation/definability.tex#L46) | [mr/content/model-theory/interpolation/definability.tex:45-57](../mr/content/model-theory/interpolation/definability.tex#L45) | not yet paginated |
+| T112-OLP-0204-B005 | OLP-0204 ·  | [upstream/content/model-theory/lindstrom/introduction.tex:12-21](../upstream/content/model-theory/lindstrom/introduction.tex#L12) | [mr/content/model-theory/lindstrom/introduction.tex:12-21](../mr/content/model-theory/lindstrom/introduction.tex#L12) | not yet paginated |
+| T112-OLP-0205-B006 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L24) | [mr/content/model-theory/lindstrom/abstract-logics.tex:24-37](../mr/content/model-theory/lindstrom/abstract-logics.tex#L24) | not yet paginated |
+| T112-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
+| T112-OLP-0205-B010 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L121) | [mr/content/model-theory/lindstrom/abstract-logics.tex:127-140](../mr/content/model-theory/lindstrom/abstract-logics.tex#L127) | not yet paginated |
+| T112-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
+| T112-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
 
 **Chosen rendering/action:** विधेय / पद / संख्यापक
 
@@ -8183,7 +8213,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T115 — propositional connective / logical connective</strong> (108 occurrences; medium priority)</summary>
+<summary><strong>T115 — propositional connective / logical connective</strong> (111 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8295,6 +8325,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T115-OLP-0171-B007 | OLP-0171 · 17.4 संरचना मधील संबंध व्यक्त करणे | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:35-40](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L35) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:35-40](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L35) | 226–227 |
 | T115-OLP-0178-B008 | OLP-0178 · 18.4 उच्च-क्रम तर्कशास्त्र | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | 235–237 |
 | T115-OLP-0179-B016 | OLP-0179 · 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L97) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L85) | 237–240 |
+| T115-OLP-0205-B006 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L24) | [mr/content/model-theory/lindstrom/abstract-logics.tex:24-37](../mr/content/model-theory/lindstrom/abstract-logics.tex#L24) | not yet paginated |
+| T115-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
+| T115-OLP-0207-B007 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L24) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:24-36](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L24) | not yet paginated |
 
 **Chosen rendering/action:** विधानीय संयोजक / तार्किक संयोजक
 
@@ -8532,7 +8565,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T121 — satisfaction / satisfaction relation</strong> (276 occurrences; routine priority)</summary>
+<summary><strong>T121 — satisfaction / satisfaction relation</strong> (283 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8812,6 +8845,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T121-OLP-0195-B011 | OLP-0195 · 20.4 Q ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174](../upstream/content/model-theory/models-of-arithmetic/models-of-q.tex#L133) | [mr/content/model-theory/models-of-arithmetic/models-of-q.tex:136-180](../mr/content/model-theory/models-of-arithmetic/models-of-q.tex#L136) | 254–256 |
 | T121-OLP-0195-B012 | OLP-0195 · 20.4 Q ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:176-185](../upstream/content/model-theory/models-of-arithmetic/models-of-q.tex#L176) | [mr/content/model-theory/models-of-arithmetic/models-of-q.tex:182-192](../mr/content/model-theory/models-of-arithmetic/models-of-q.tex#L182) | 254–256 |
 | T121-OLP-0196-B007 | OLP-0196 · 20.5 PA ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-39](../upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex#L29) | [mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-40](../mr/content/model-theory/models-of-arithmetic/models-of-pa.tex#L29) | 256–259 |
+| T121-OLP-0205-B005 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:12-22](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L12) | [mr/content/model-theory/lindstrom/abstract-logics.tex:12-22](../mr/content/model-theory/lindstrom/abstract-logics.tex#L12) | not yet paginated |
+| T121-OLP-0205-B007 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:39-46](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L39) | [mr/content/model-theory/lindstrom/abstract-logics.tex:39-47](../mr/content/model-theory/lindstrom/abstract-logics.tex#L39) | not yet paginated |
+| T121-OLP-0205-B009 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:108-119](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L108) | [mr/content/model-theory/lindstrom/abstract-logics.tex:113-125](../mr/content/model-theory/lindstrom/abstract-logics.tex#L113) | not yet paginated |
+| T121-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
+| T121-OLP-0207-B006 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:13-22](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L13) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:13-22](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L13) | not yet paginated |
+| T121-OLP-0207-B008 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:38-45](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L38) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:38-45](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L38) | not yet paginated |
+| T121-OLP-0207-B013 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L104) | not yet paginated |
 
 **Chosen rendering/action:** पूर्ति / पूर्ति-संबंध
 
@@ -8972,7 +9012,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T124 — satisfiable / satisfiability</strong> (70 occurrences; medium priority)</summary>
+<summary><strong>T124 — satisfiable / satisfiability</strong> (72 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9046,6 +9086,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T124-OLP-0200-B012 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:92-117](../upstream/content/model-theory/interpolation/separation.tex#L92) | [mr/content/model-theory/interpolation/separation.tex:93-118](../mr/content/model-theory/interpolation/separation.tex#L93) | not yet paginated |
 | T124-OLP-0201-B008 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:29-32](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L29) | [mr/content/model-theory/interpolation/interpolation-proof.tex:28-31](../mr/content/model-theory/interpolation/interpolation-proof.tex#L28) | not yet paginated |
 | T124-OLP-0201-B011 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L100) | [mr/content/model-theory/interpolation/interpolation-proof.tex:101-106](../mr/content/model-theory/interpolation/interpolation-proof.tex#L101) | not yet paginated |
+| T124-OLP-0206-B007 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:16-21](../upstream/content/model-theory/lindstrom/ls-property.tex#L16) | [mr/content/model-theory/lindstrom/ls-property.tex:16-21](../mr/content/model-theory/lindstrom/ls-property.tex#L16) | not yet paginated |
+| T124-OLP-0206-B008 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:23-26](../upstream/content/model-theory/lindstrom/ls-property.tex#L23) | [mr/content/model-theory/lindstrom/ls-property.tex:23-27](../mr/content/model-theory/lindstrom/ls-property.tex#L23) | not yet paginated |
 
 **Chosen rendering/action:** पूर्ततायोग्य / पूर्ततायोग्यता
 
@@ -9823,7 +9865,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T134 — string / concatenation / substring</strong> (18 occurrences; medium priority)</summary>
+<summary><strong>T134 — string / concatenation / substring</strong> (20 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9845,6 +9887,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T134-OLP-0156-B007 | OLP-0156 · 15.7 रचनाक्रमिका | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:25-31](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L25) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:24-30](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L24) | 202–205 |
 | T134-OLP-0156-B008 | OLP-0156 · 15.7 रचनाक्रमिका | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:33-38](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L33) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:32-37](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L32) | 202–205 |
 | T134-OLP-0189-B018 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:135-141](../upstream/content/model-theory/basics/partial-iso.tex#L135) | [mr/content/model-theory/basics/partial-iso.tex:136-142](../mr/content/model-theory/basics/partial-iso.tex#L136) | 246–248 |
+| T134-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
+| T134-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
 
 **Chosen rendering/action:** चिन्हमाला / जोडणी / उपचिन्हमाला
 
@@ -9922,7 +9966,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T138 — uniform substitution / simultaneous substitution</strong> (20 occurrences; medium priority)</summary>
+<summary><strong>T138 — uniform substitution / simultaneous substitution</strong> (21 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9946,6 +9990,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T138-OLP-0146-B006 | OLP-0146 · 14.7 आदेशन | [upstream/content/first-order-logic/introduction/substitution.tex:13-28](../upstream/content/first-order-logic/introduction/substitution.tex#L13) | [mr/content/first-order-logic/introduction/substitution.tex:13-28](../mr/content/first-order-logic/introduction/substitution.tex#L13) | 191–192 |
 | T138-OLP-0146-B007 | OLP-0146 · 14.7 आदेशन | [upstream/content/first-order-logic/introduction/substitution.tex:30-45](../upstream/content/first-order-logic/introduction/substitution.tex#L30) | [mr/content/first-order-logic/introduction/substitution.tex:30-46](../mr/content/first-order-logic/introduction/substitution.tex#L30) | 191–192 |
 | T138-OLP-0202-B008 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:46-57](../upstream/content/model-theory/interpolation/definability.tex#L46) | [mr/content/model-theory/interpolation/definability.tex:45-57](../mr/content/model-theory/interpolation/definability.tex#L45) | not yet paginated |
+| T138-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
 
 **Chosen rendering/action:** एकरूप आदेशन / एकाच वेळी केलेले आदेशन
 
@@ -10340,7 +10385,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T149 — monotonicity (of semantic entailment)</strong> (16 occurrences; routine priority)</summary>
+<summary><strong>T149 — monotonicity (of semantic entailment)</strong> (17 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -10360,6 +10405,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T149-OLP-0166-B017 | OLP-0166 · 16.7 चिन्हार्थविषयक संकल्पना | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:97-102](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L97) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:103-109](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L103) | 220–221 |
 | T149-OLP-0200-B010 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:58-83](../upstream/content/model-theory/interpolation/separation.tex#L58) | [mr/content/model-theory/interpolation/separation.tex:58-84](../mr/content/model-theory/interpolation/separation.tex#L58) | not yet paginated |
 | T149-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
+| T149-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
 
 **Chosen rendering/action:** एकस्वनिकता
 
@@ -12319,7 +12365,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T181 — compactness (proof-theoretic property)</strong> (37 occurrences; medium priority)</summary>
+<summary><strong>T181 — compactness (proof-theoretic property)</strong> (41 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12360,6 +12406,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T181-OLP-0200-B010 | OLP-0200 ·  | [upstream/content/model-theory/interpolation/separation.tex:58-83](../upstream/content/model-theory/interpolation/separation.tex#L58) | [mr/content/model-theory/interpolation/separation.tex:58-84](../mr/content/model-theory/interpolation/separation.tex#L58) | not yet paginated |
 | T181-OLP-0201-B011 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L100) | [mr/content/model-theory/interpolation/interpolation-proof.tex:101-106](../mr/content/model-theory/interpolation/interpolation-proof.tex#L101) | not yet paginated |
 | T181-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
+| T181-OLP-0206-B005 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:11-11](../upstream/content/model-theory/lindstrom/ls-property.tex#L11) | [mr/content/model-theory/lindstrom/ls-property.tex:11-11](../mr/content/model-theory/lindstrom/ls-property.tex#L11) | not yet paginated |
+| T181-OLP-0206-B006 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:13-14](../upstream/content/model-theory/lindstrom/ls-property.tex#L13) | [mr/content/model-theory/lindstrom/ls-property.tex:13-14](../mr/content/model-theory/lindstrom/ls-property.tex#L13) | not yet paginated |
+| T181-OLP-0206-B007 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:16-21](../upstream/content/model-theory/lindstrom/ls-property.tex#L16) | [mr/content/model-theory/lindstrom/ls-property.tex:16-21](../mr/content/model-theory/lindstrom/ls-property.tex#L16) | not yet paginated |
+| T181-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
 
 **Chosen rendering/action:** संहतता
 
@@ -13138,7 +13188,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T199 — finitely satisfiable / finite satisfiability</strong> (21 occurrences; medium priority)</summary>
+<summary><strong>T199 — finitely satisfiable / finite satisfiability</strong> (22 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13163,6 +13213,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T199-OLP-0136-B022 | OLP-0136 · 13.10 संहतता प्रमेयाची प्रत्यक्ष सिद्धता | [upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143](../upstream/content/first-order-logic/completeness/compactness-direct.tex#L128) | [mr/content/first-order-logic/completeness/compactness-direct.tex:128-145](../mr/content/first-order-logic/completeness/compactness-direct.tex#L128) | 183–184 |
 | T199-OLP-0186-B006 | OLP-0186 · 19.3 सांत मर्यादेपलीकडील प्रसरण | [upstream/content/model-theory/basics/overspill.tex:17-26](../upstream/content/model-theory/basics/overspill.tex#L17) | [mr/content/model-theory/basics/overspill.tex:17-26](../mr/content/model-theory/basics/overspill.tex#L17) | 243 |
 | T199-OLP-0194-B014 | OLP-0194 · 20.3 अमानक प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113](../upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex#L100) | [mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117](../mr/content/model-theory/models-of-arithmetic/non-standard-models.tex#L99) | 253–254 |
+| T199-OLP-0206-B007 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:16-21](../upstream/content/model-theory/lindstrom/ls-property.tex#L16) | [mr/content/model-theory/lindstrom/ls-property.tex:16-21](../mr/content/model-theory/lindstrom/ls-property.tex#L16) | not yet paginated |
 
 **Chosen rendering/action:** सांततः पूर्ततायोग्य / सांततः पूर्ततायोग्यता
 
@@ -13188,7 +13239,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T201 — Löwenheim–Skolem Theorem / Skolem's Paradox</strong> (12 occurrences; high priority)</summary>
+<summary><strong>T201 — Löwenheim–Skolem Theorem / Skolem's Paradox</strong> (16 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13204,6 +13255,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T201-OLP-0187-B005 | OLP-0187 · 19.4 समरूपी रचना | [upstream/content/model-theory/basics/isomorphism.tex:12-24](../upstream/content/model-theory/basics/isomorphism.tex#L12) | [mr/content/model-theory/basics/isomorphism.tex:12-23](../mr/content/model-theory/basics/isomorphism.tex#L12) | 243–245 |
 | T201-OLP-0188-B013 | OLP-0188 · 19.5 संरचनेची उपपत्ती | [upstream/content/model-theory/basics/theory-of-m.tex:51-62](../upstream/content/model-theory/basics/theory-of-m.tex#L51) | [mr/content/model-theory/basics/theory-of-m.tex:55-66](../mr/content/model-theory/basics/theory-of-m.tex#L55) | 245–246 |
 | T201-OLP-0194-B014 | OLP-0194 · 20.3 अमानक प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113](../upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex#L100) | [mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117](../mr/content/model-theory/models-of-arithmetic/non-standard-models.tex#L99) | 253–254 |
+| T201-OLP-0204-B005 | OLP-0204 ·  | [upstream/content/model-theory/lindstrom/introduction.tex:12-21](../upstream/content/model-theory/lindstrom/introduction.tex#L12) | [mr/content/model-theory/lindstrom/introduction.tex:12-21](../mr/content/model-theory/lindstrom/introduction.tex#L12) | not yet paginated |
+| T201-OLP-0206-B005 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:11-11](../upstream/content/model-theory/lindstrom/ls-property.tex#L11) | [mr/content/model-theory/lindstrom/ls-property.tex:11-11](../mr/content/model-theory/lindstrom/ls-property.tex#L11) | not yet paginated |
+| T201-OLP-0206-B006 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:13-14](../upstream/content/model-theory/lindstrom/ls-property.tex#L13) | [mr/content/model-theory/lindstrom/ls-property.tex:13-14](../mr/content/model-theory/lindstrom/ls-property.tex#L13) | not yet paginated |
+| T201-OLP-0206-B008 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:23-26](../upstream/content/model-theory/lindstrom/ls-property.tex#L23) | [mr/content/model-theory/lindstrom/ls-property.tex:23-27](../mr/content/model-theory/lindstrom/ls-property.tex#L23) | not yet paginated |
 
 **Chosen rendering/action:** लोव्हेनहाइम--स्कोलेम प्रमेय / स्कोलेमची विरोधापत्ती
 
@@ -13214,7 +13269,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T202 — formal language / formal derivation</strong> (24 occurrences; routine priority)</summary>
+<summary><strong>T202 — formal language / formal derivation</strong> (27 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13242,6 +13297,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T202-OLP-0201-B007 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:22-27](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L22) | [mr/content/model-theory/interpolation/interpolation-proof.tex:22-26](../mr/content/model-theory/interpolation/interpolation-proof.tex#L22) | not yet paginated |
 | T202-OLP-0202-B007 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:34-44](../upstream/content/model-theory/interpolation/definability.tex#L34) | [mr/content/model-theory/interpolation/definability.tex:33-43](../mr/content/model-theory/interpolation/definability.tex#L33) | not yet paginated |
 | T202-OLP-0202-B008 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:46-57](../upstream/content/model-theory/interpolation/definability.tex#L46) | [mr/content/model-theory/interpolation/definability.tex:45-57](../mr/content/model-theory/interpolation/definability.tex#L45) | not yet paginated |
+| T202-OLP-0205-B005 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:12-22](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L12) | [mr/content/model-theory/lindstrom/abstract-logics.tex:12-22](../mr/content/model-theory/lindstrom/abstract-logics.tex#L12) | not yet paginated |
+| T202-OLP-0205-B006 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L24) | [mr/content/model-theory/lindstrom/abstract-logics.tex:24-37](../mr/content/model-theory/lindstrom/abstract-logics.tex#L24) | not yet paginated |
+| T202-OLP-0207-B007 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L24) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:24-36](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L24) | not yet paginated |
 
 **Chosen rendering/action:** आकारिक भाषा / आकारिक निष्पत्ती
 
@@ -13391,7 +13449,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T205 — variable / constant / function (as language symbols)</strong> (73 occurrences; medium priority)</summary>
+<summary><strong>T205 — variable / constant / function (as language symbols)</strong> (78 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13468,6 +13526,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T205-OLP-0201-B015 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L151) | [mr/content/model-theory/interpolation/interpolation-proof.tex:151-163](../mr/content/model-theory/interpolation/interpolation-proof.tex#L151) | not yet paginated |
 | T205-OLP-0201-B016 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L165) | [mr/content/model-theory/interpolation/interpolation-proof.tex:165-183](../mr/content/model-theory/interpolation/interpolation-proof.tex#L165) | not yet paginated |
 | T205-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
+| T205-OLP-0204-B005 | OLP-0204 ·  | [upstream/content/model-theory/lindstrom/introduction.tex:12-21](../upstream/content/model-theory/lindstrom/introduction.tex#L12) | [mr/content/model-theory/lindstrom/introduction.tex:12-21](../mr/content/model-theory/lindstrom/introduction.tex#L12) | not yet paginated |
+| T205-OLP-0205-B006 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L24) | [mr/content/model-theory/lindstrom/abstract-logics.tex:24-37](../mr/content/model-theory/lindstrom/abstract-logics.tex#L24) | not yet paginated |
+| T205-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
+| T205-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
+| T205-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
 
 **Chosen rendering/action:** चर / स्थिर / फलन
 
@@ -13859,7 +13922,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T218 — structure / interpretation (model theory)</strong> (213 occurrences; medium priority)</summary>
+<summary><strong>T218 — structure / interpretation (model theory)</strong> (226 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -14076,6 +14139,19 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T218-OLP-0201-B016 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L165) | [mr/content/model-theory/interpolation/interpolation-proof.tex:165-183](../mr/content/model-theory/interpolation/interpolation-proof.tex#L165) | not yet paginated |
 | T218-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
 | T218-OLP-0202-B009 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:59-64](../upstream/content/model-theory/interpolation/definability.tex#L59) | [mr/content/model-theory/interpolation/definability.tex:59-64](../mr/content/model-theory/interpolation/definability.tex#L59) | not yet paginated |
+| T218-OLP-0205-B005 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:12-22](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L12) | [mr/content/model-theory/lindstrom/abstract-logics.tex:12-22](../mr/content/model-theory/lindstrom/abstract-logics.tex#L12) | not yet paginated |
+| T218-OLP-0205-B007 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:39-46](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L39) | [mr/content/model-theory/lindstrom/abstract-logics.tex:39-47](../mr/content/model-theory/lindstrom/abstract-logics.tex#L39) | not yet paginated |
+| T218-OLP-0206-B009 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:29-39](../upstream/content/model-theory/lindstrom/ls-property.tex#L29) | [mr/content/model-theory/lindstrom/ls-property.tex:30-39](../mr/content/model-theory/lindstrom/ls-property.tex#L30) | not yet paginated |
+| T218-OLP-0206-B011 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:49-57](../upstream/content/model-theory/lindstrom/ls-property.tex#L49) | [mr/content/model-theory/lindstrom/ls-property.tex:48-57](../mr/content/model-theory/lindstrom/ls-property.tex#L48) | not yet paginated |
+| T218-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
+| T218-OLP-0206-B013 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:74-86](../upstream/content/model-theory/lindstrom/ls-property.tex#L74) | [mr/content/model-theory/lindstrom/ls-property.tex:75-88](../mr/content/model-theory/lindstrom/ls-property.tex#L75) | not yet paginated |
+| T218-OLP-0206-B014 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:88-107](../upstream/content/model-theory/lindstrom/ls-property.tex#L88) | [mr/content/model-theory/lindstrom/ls-property.tex:90-108](../mr/content/model-theory/lindstrom/ls-property.tex#L90) | not yet paginated |
+| T218-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
+| T218-OLP-0207-B007 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L24) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:24-36](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L24) | not yet paginated |
+| T218-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
+| T218-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L85) | not yet paginated |
+| T218-OLP-0207-B013 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L104) | not yet paginated |
+| T218-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
 
 **Chosen rendering/action:** रचना / अर्थनिर्धारण
 
@@ -15033,7 +15109,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T272 — reduct / expansion (model theory)</strong> (8 occurrences; routine priority)</summary>
+<summary><strong>T272 — reduct / expansion (model theory)</strong> (11 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -15045,6 +15121,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T272-OLP-0196-B035 | OLP-0196 · 20.5 PA ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260](../upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex#L238) | [mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263](../mr/content/model-theory/models-of-arithmetic/models-of-pa.tex#L242) | 256–259 |
 | T272-OLP-0201-B015 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L151) | [mr/content/model-theory/interpolation/interpolation-proof.tex:151-163](../mr/content/model-theory/interpolation/interpolation-proof.tex#L151) | not yet paginated |
 | T272-OLP-0202-B009 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:59-64](../upstream/content/model-theory/interpolation/definability.tex#L59) | [mr/content/model-theory/interpolation/definability.tex:59-64](../mr/content/model-theory/interpolation/definability.tex#L59) | not yet paginated |
+| T272-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
+| T272-OLP-0205-B010 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L121) | [mr/content/model-theory/lindstrom/abstract-logics.tex:127-140](../mr/content/model-theory/lindstrom/abstract-logics.tex#L127) | not yet paginated |
+| T272-OLP-0206-B011 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:49-57](../upstream/content/model-theory/lindstrom/ls-property.tex#L49) | [mr/content/model-theory/lindstrom/ls-property.tex:48-57](../mr/content/model-theory/lindstrom/ls-property.tex#L48) | not yet paginated |
 
 **Chosen rendering/action:** न्यूनीकृत रचना / विस्तारित रचना
 
@@ -15055,7 +15134,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T273 — substructure / extension (model theory)</strong> (5 occurrences; medium priority)</summary>
+<summary><strong>T273 — substructure / extension (model theory)</strong> (10 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -15064,6 +15143,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T273-OLP-0185-B006 | OLP-0185 · 19.2 उपसंरचना | [upstream/content/model-theory/basics/substructures.tex:19-37](../upstream/content/model-theory/basics/substructures.tex#L19) | [mr/content/model-theory/basics/substructures.tex:19-38](../mr/content/model-theory/basics/substructures.tex#L19) | 243 |
 | T273-OLP-0185-B007 | OLP-0185 · 19.2 उपसंरचना | [upstream/content/model-theory/basics/substructures.tex:39-45](../upstream/content/model-theory/basics/substructures.tex#L39) | [mr/content/model-theory/basics/substructures.tex:40-46](../mr/content/model-theory/basics/substructures.tex#L40) | 243 |
 | T273-OLP-0189-B013 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:102-107](../upstream/content/model-theory/basics/partial-iso.tex#L102) | [mr/content/model-theory/basics/partial-iso.tex:102-108](../mr/content/model-theory/basics/partial-iso.tex#L102) | 246–248 |
+| T273-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
+| T273-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
+| T273-OLP-0206-B013 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:74-86](../upstream/content/model-theory/lindstrom/ls-property.tex#L74) | [mr/content/model-theory/lindstrom/ls-property.tex:75-88](../mr/content/model-theory/lindstrom/ls-property.tex#L75) | not yet paginated |
+| T273-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
+| T273-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L85) | not yet paginated |
 
 **Chosen rendering/action:** उपरचना / वर्धित रचना
 
@@ -15091,7 +15175,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T275 — elementary equivalence / elementarily equivalent</strong> (11 occurrences; routine priority)</summary>
+<summary><strong>T275 — elementary equivalence / elementarily equivalent</strong> (17 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -15106,6 +15190,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T275-OLP-0189-B012 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:93-100](../upstream/content/model-theory/basics/partial-iso.tex#L93) | [mr/content/model-theory/basics/partial-iso.tex:93-100](../mr/content/model-theory/basics/partial-iso.tex#L93) | 246–248 |
 | T275-OLP-0189-B026 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:215-221](../upstream/content/model-theory/basics/partial-iso.tex#L215) | [mr/content/model-theory/basics/partial-iso.tex:217-223](../mr/content/model-theory/basics/partial-iso.tex#L217) | 246–248 |
 | T275-OLP-0190-B010 | OLP-0190 · 19.7 सघन रेषीय क्रम | [upstream/content/model-theory/basics/dlo.tex:68-84](../upstream/content/model-theory/basics/dlo.tex#L68) | [mr/content/model-theory/basics/dlo.tex:73-88](../mr/content/model-theory/basics/dlo.tex#L73) | 248–249 |
+| T275-OLP-0205-B007 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:39-46](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L39) | [mr/content/model-theory/lindstrom/abstract-logics.tex:39-47](../mr/content/model-theory/lindstrom/abstract-logics.tex#L39) | not yet paginated |
+| T275-OLP-0205-B009 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:108-119](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L108) | [mr/content/model-theory/lindstrom/abstract-logics.tex:113-125](../mr/content/model-theory/lindstrom/abstract-logics.tex#L113) | not yet paginated |
+| T275-OLP-0206-B009 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:29-39](../upstream/content/model-theory/lindstrom/ls-property.tex#L29) | [mr/content/model-theory/lindstrom/ls-property.tex:30-39](../mr/content/model-theory/lindstrom/ls-property.tex#L30) | not yet paginated |
+| T275-OLP-0206-B010 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:41-47](../upstream/content/model-theory/lindstrom/ls-property.tex#L41) | [mr/content/model-theory/lindstrom/ls-property.tex:41-46](../mr/content/model-theory/lindstrom/ls-property.tex#L41) | not yet paginated |
+| T275-OLP-0207-B006 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:13-22](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L13) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:13-22](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L13) | not yet paginated |
+| T275-OLP-0207-B008 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:38-45](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L38) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:38-45](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L38) | not yet paginated |
 
 **Chosen rendering/action:** प्राथमिक सममूल्यता / प्राथमिक सममूल्य
 
@@ -15132,7 +15222,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T277 — partial isomorphism / partially isomorphic / back-and-forth property</strong> (15 occurrences; medium priority)</summary>
+<summary><strong>T277 — partial isomorphism / partially isomorphic / back-and-forth property</strong> (22 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -15151,6 +15241,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T277-OLP-0190-B008 | OLP-0190 · 19.7 सघन रेषीय क्रम | [upstream/content/model-theory/basics/dlo.tex:42-61](../upstream/content/model-theory/basics/dlo.tex#L42) | [mr/content/model-theory/basics/dlo.tex:42-66](../mr/content/model-theory/basics/dlo.tex#L42) | 248–249 |
 | T277-OLP-0190-B009 | OLP-0190 · 19.7 सघन रेषीय क्रम | [upstream/content/model-theory/basics/dlo.tex:63-66](../upstream/content/model-theory/basics/dlo.tex#L63) | [mr/content/model-theory/basics/dlo.tex:68-71](../mr/content/model-theory/basics/dlo.tex#L68) | 248–249 |
 | T277-OLP-0190-B010 | OLP-0190 · 19.7 सघन रेषीय क्रम | [upstream/content/model-theory/basics/dlo.tex:68-84](../upstream/content/model-theory/basics/dlo.tex#L68) | [mr/content/model-theory/basics/dlo.tex:73-88](../mr/content/model-theory/basics/dlo.tex#L73) | 248–249 |
+| T277-OLP-0206-B009 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:29-39](../upstream/content/model-theory/lindstrom/ls-property.tex#L29) | [mr/content/model-theory/lindstrom/ls-property.tex:30-39](../mr/content/model-theory/lindstrom/ls-property.tex#L30) | not yet paginated |
+| T277-OLP-0206-B010 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:41-47](../upstream/content/model-theory/lindstrom/ls-property.tex#L41) | [mr/content/model-theory/lindstrom/ls-property.tex:41-46](../mr/content/model-theory/lindstrom/ls-property.tex#L41) | not yet paginated |
+| T277-OLP-0206-B011 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:49-57](../upstream/content/model-theory/lindstrom/ls-property.tex#L49) | [mr/content/model-theory/lindstrom/ls-property.tex:48-57](../mr/content/model-theory/lindstrom/ls-property.tex#L48) | not yet paginated |
+| T277-OLP-0206-B013 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:74-86](../upstream/content/model-theory/lindstrom/ls-property.tex#L74) | [mr/content/model-theory/lindstrom/ls-property.tex:75-88](../mr/content/model-theory/lindstrom/ls-property.tex#L75) | not yet paginated |
+| T277-OLP-0206-B014 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:88-107](../upstream/content/model-theory/lindstrom/ls-property.tex#L88) | [mr/content/model-theory/lindstrom/ls-property.tex:90-108](../mr/content/model-theory/lindstrom/ls-property.tex#L90) | not yet paginated |
+| T277-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
+| T277-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
 
 **Chosen rendering/action:** आंशिक समरूपण / आंशिकरीत्या समरूपी / पुढे-मागे गुणधर्म
 
@@ -15161,7 +15258,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T278 — quantifier rank / n-equivalent</strong> (11 occurrences; routine priority)</summary>
+<summary><strong>T278 — quantifier rank / n-equivalent</strong> (14 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -15176,6 +15273,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T278-OLP-0189-B024 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:189-197](../upstream/content/model-theory/basics/partial-iso.tex#L189) | [mr/content/model-theory/basics/partial-iso.tex:192-199](../mr/content/model-theory/basics/partial-iso.tex#L192) | 246–248 |
 | T278-OLP-0189-B025 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:199-213](../upstream/content/model-theory/basics/partial-iso.tex#L199) | [mr/content/model-theory/basics/partial-iso.tex:201-215](../mr/content/model-theory/basics/partial-iso.tex#L201) | 246–248 |
 | T278-OLP-0189-B026 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:215-221](../upstream/content/model-theory/basics/partial-iso.tex#L215) | [mr/content/model-theory/basics/partial-iso.tex:217-223](../mr/content/model-theory/basics/partial-iso.tex#L217) | 246–248 |
+| T278-OLP-0207-B006 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:13-22](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L13) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:13-22](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L13) | not yet paginated |
+| T278-OLP-0207-B007 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L24) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:24-36](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L24) | not yet paginated |
+| T278-OLP-0207-B010 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:54-64](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L54) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:56-66](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L56) | not yet paginated |
 
 **Chosen rendering/action:** संख्यापक-प्रतांक / n-सममूल्य
 
@@ -15186,7 +15286,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T279 — purely relational language</strong> (4 occurrences; routine priority)</summary>
+<summary><strong>T279 — purely relational language</strong> (6 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -15194,6 +15294,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T279-OLP-0189-B016 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:122-129](../upstream/content/model-theory/basics/partial-iso.tex#L122) | [mr/content/model-theory/basics/partial-iso.tex:124-130](../mr/content/model-theory/basics/partial-iso.tex#L124) | 246–248 |
 | T279-OLP-0189-B021 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:167-174](../upstream/content/model-theory/basics/partial-iso.tex#L167) | [mr/content/model-theory/basics/partial-iso.tex:171-178](../mr/content/model-theory/basics/partial-iso.tex#L171) | 246–248 |
 | T279-OLP-0189-B026 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:215-221](../upstream/content/model-theory/basics/partial-iso.tex#L215) | [mr/content/model-theory/basics/partial-iso.tex:217-223](../mr/content/model-theory/basics/partial-iso.tex#L217) | 246–248 |
+| T279-OLP-0204-B005 | OLP-0204 ·  | [upstream/content/model-theory/lindstrom/introduction.tex:12-21](../upstream/content/model-theory/lindstrom/introduction.tex#L12) | [mr/content/model-theory/lindstrom/introduction.tex:12-21](../mr/content/model-theory/lindstrom/introduction.tex#L12) | not yet paginated |
+| T279-OLP-0207-B010 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:54-64](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L54) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:56-66](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L56) | not yet paginated |
 
 **Chosen rendering/action:** निव्वळ संबंधात्मक भाषा
 
@@ -15228,7 +15330,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T281 — standard / non-standard model, element or number</strong> (50 occurrences; routine priority)</summary>
+<summary><strong>T281 — standard / non-standard model, element or number</strong> (52 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -15282,6 +15384,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T281-OLP-0197-B008 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L42) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L41) | 259–260 |
 | T281-OLP-0197-B009 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L77) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L78) | 259–260 |
 | T281-OLP-0197-B012 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L112) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L111) | 259–260 |
+| T281-OLP-0207-B013 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L104) | not yet paginated |
+| T281-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
 
 **Chosen rendering/action:** मानक / अमानक प्रतिमान, घटक किंवा संख्या
 
@@ -15560,6 +15664,124 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; source-defined transparent modifiers on established logical vocabulary; exact compounds unattested; expert-reviewable; open to correction.
 
 **Please double-check:** Should inclusion-maximal theories use महत्तम or the more familiar कमाल, and should maximally consistent align terminologically with the edition's complete consistent sets?
+
+</details>
+
+<details>
+<summary><strong>T295 — Lindström's theorem / characterization</strong> (4 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T295-OLP-0203-B004 | OLP-0203 ·  | [upstream/content/model-theory/lindstrom/lindstrom.tex:8-8](../upstream/content/model-theory/lindstrom/lindstrom.tex#L8) | [mr/content/model-theory/lindstrom/lindstrom.tex:8-8](../mr/content/model-theory/lindstrom/lindstrom.tex#L8) | not yet paginated |
+| T295-OLP-0204-B005 | OLP-0204 ·  | [upstream/content/model-theory/lindstrom/introduction.tex:12-21](../upstream/content/model-theory/lindstrom/introduction.tex#L12) | [mr/content/model-theory/lindstrom/introduction.tex:12-21](../mr/content/model-theory/lindstrom/introduction.tex#L12) | not yet paginated |
+| T295-OLP-0207-B005 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:11-11](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L11) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:11-11](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L11) | not yet paginated |
+| T295-OLP-0207-B009 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L47) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:47-54](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L47) | not yet paginated |
+
+**Chosen rendering/action:** लिंडस्ट्रॉमचे प्रमेय / लक्षणचित्रण
+
+**Confidence/status:** medium; official characterization headword plus provisional proper-name transliteration; exact theorem name unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Are लिंडस्ट्रॉम and लक्षणचित्रण the conventional Marathi name and mathematical noun for this characterization theorem?
+
+</details>
+
+<details>
+<summary><strong>T296 — abstract logic / normal abstract logic</strong> (10 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T296-OLP-0205-B004 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:9-10](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L9) | [mr/content/model-theory/lindstrom/abstract-logics.tex:9-10](../mr/content/model-theory/lindstrom/abstract-logics.tex#L9) | not yet paginated |
+| T296-OLP-0205-B005 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:12-22](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L12) | [mr/content/model-theory/lindstrom/abstract-logics.tex:12-22](../mr/content/model-theory/lindstrom/abstract-logics.tex#L12) | not yet paginated |
+| T296-OLP-0205-B006 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L24) | [mr/content/model-theory/lindstrom/abstract-logics.tex:24-37](../mr/content/model-theory/lindstrom/abstract-logics.tex#L24) | not yet paginated |
+| T296-OLP-0205-B007 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:39-46](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L39) | [mr/content/model-theory/lindstrom/abstract-logics.tex:39-47](../mr/content/model-theory/lindstrom/abstract-logics.tex#L39) | not yet paginated |
+| T296-OLP-0205-B009 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:108-119](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L108) | [mr/content/model-theory/lindstrom/abstract-logics.tex:113-125](../mr/content/model-theory/lindstrom/abstract-logics.tex#L113) | not yet paginated |
+| T296-OLP-0205-B010 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L121) | [mr/content/model-theory/lindstrom/abstract-logics.tex:127-140](../mr/content/model-theory/lindstrom/abstract-logics.tex#L127) | not yet paginated |
+| T296-OLP-0206-B006 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:13-14](../upstream/content/model-theory/lindstrom/ls-property.tex#L13) | [mr/content/model-theory/lindstrom/ls-property.tex:13-14](../mr/content/model-theory/lindstrom/ls-property.tex#L13) | not yet paginated |
+| T296-OLP-0206-B010 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:41-47](../upstream/content/model-theory/lindstrom/ls-property.tex#L41) | [mr/content/model-theory/lindstrom/ls-property.tex:41-46](../mr/content/model-theory/lindstrom/ls-property.tex#L41) | not yet paginated |
+| T296-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
+| T296-OLP-0207-B009 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L47) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:47-54](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L47) | not yet paginated |
+
+**Chosen rendering/action:** अमूर्त तर्कशास्त्र / सामान्य अमूर्त तर्कशास्त्र
+
+**Confidence/status:** medium; official abstract adjective plus definition-controlled specialist compound; exact compound unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is सामान्य अमूर्त तर्कशास्त्र sufficiently distinct from ordinary first-order logic while naming the source-defined normality conditions?
+
+</details>
+
+<details>
+<summary><strong>T297 — at least as expressive / equivalent logics</strong> (5 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T297-OLP-0205-B009 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:108-119](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L108) | [mr/content/model-theory/lindstrom/abstract-logics.tex:113-125](../mr/content/model-theory/lindstrom/abstract-logics.tex#L113) | not yet paginated |
+| T297-OLP-0205-B010 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L121) | [mr/content/model-theory/lindstrom/abstract-logics.tex:127-140](../mr/content/model-theory/lindstrom/abstract-logics.tex#L127) | not yet paginated |
+| T297-OLP-0207-B008 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:38-45](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L38) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:38-45](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L38) | not yet paginated |
+| T297-OLP-0207-B009 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L47) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:47-54](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L47) | not yet paginated |
+| T297-OLP-0207-B010 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:54-64](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L54) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:56-66](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L56) | not yet paginated |
+
+**Chosen rendering/action:** किमान तितकेच अभिव्यक्तिक्षम / सममूल्य तर्कशास्त्रे
+
+**Confidence/status:** medium; definition-controlled transparent terminology with established expression and equivalence evidence; exact compounds unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is अभिव्यक्तिक्षम the clearest compact Marathi adjective for expressive power between abstract logics?
+
+</details>
+
+<details>
+<summary><strong>T298 — normal-logic properties: L-monotonicity, expansion, isomorphism, renaming, Boolean, quantifier and relativization</strong> (5 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T298-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
+| T298-OLP-0205-B010 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L121) | [mr/content/model-theory/lindstrom/abstract-logics.tex:127-140](../mr/content/model-theory/lindstrom/abstract-logics.tex#L127) | not yet paginated |
+| T298-OLP-0206-B011 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:49-57](../upstream/content/model-theory/lindstrom/ls-property.tex#L49) | [mr/content/model-theory/lindstrom/ls-property.tex:48-57](../mr/content/model-theory/lindstrom/ls-property.tex#L48) | not yet paginated |
+| T298-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
+| T298-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
+
+**Chosen rendering/action:** L-एकस्वनिकता, विस्तार, समरूपता, पुनर्नामकरण, बूलीय, संख्यापक आणि सापेक्षीकरण गुणधर्म
+
+**Confidence/status:** high; definition-controlled transparent property names from established components; full list unattested; high-priority expert review useful; open to correction.
+
+**Please double-check:** Are विस्तार गुणधर्म and सापेक्षीकरण गुणधर्म the clearest labels for the finite-vocabulary and relativized-subdomain clauses, and is पुनर्नामकरण preferable to नामांतर?
+
+</details>
+
+<details>
+<summary><strong>T299 — Compactness Property / Downward Löwenheim--Skolem Property</strong> (8 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T299-OLP-0204-B005 | OLP-0204 ·  | [upstream/content/model-theory/lindstrom/introduction.tex:12-21](../upstream/content/model-theory/lindstrom/introduction.tex#L12) | [mr/content/model-theory/lindstrom/introduction.tex:12-21](../mr/content/model-theory/lindstrom/introduction.tex#L12) | not yet paginated |
+| T299-OLP-0206-B005 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:11-11](../upstream/content/model-theory/lindstrom/ls-property.tex#L11) | [mr/content/model-theory/lindstrom/ls-property.tex:11-11](../mr/content/model-theory/lindstrom/ls-property.tex#L11) | not yet paginated |
+| T299-OLP-0206-B006 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:13-14](../upstream/content/model-theory/lindstrom/ls-property.tex#L13) | [mr/content/model-theory/lindstrom/ls-property.tex:13-14](../mr/content/model-theory/lindstrom/ls-property.tex#L13) | not yet paginated |
+| T299-OLP-0206-B007 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:16-21](../upstream/content/model-theory/lindstrom/ls-property.tex#L16) | [mr/content/model-theory/lindstrom/ls-property.tex:16-21](../mr/content/model-theory/lindstrom/ls-property.tex#L16) | not yet paginated |
+| T299-OLP-0206-B008 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:23-26](../upstream/content/model-theory/lindstrom/ls-property.tex#L23) | [mr/content/model-theory/lindstrom/ls-property.tex:23-27](../mr/content/model-theory/lindstrom/ls-property.tex#L23) | not yet paginated |
+| T299-OLP-0206-B010 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:41-47](../upstream/content/model-theory/lindstrom/ls-property.tex#L41) | [mr/content/model-theory/lindstrom/ls-property.tex:41-46](../mr/content/model-theory/lindstrom/ls-property.tex#L41) | not yet paginated |
+| T299-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
+| T299-OLP-0207-B009 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L47) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:47-54](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L47) | not yet paginated |
+
+**Chosen rendering/action:** संहतता गुणधर्म / अधोगामी लोव्हेनहाइम--स्कोलेम गुणधर्म
+
+**Confidence/status:** high; established theorem components under explicit abstract-logic definitions; downward modifier unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is अधोगामी the natural Marathi modifier for downward Löwenheim--Skolem in this enumerable-model formulation?
+
+</details>
+
+<details>
+<summary><strong>T300 — discrete linear ordering</strong> (2 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T300-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L85) | not yet paginated |
+| T300-OLP-0207-B013 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L104) | not yet paginated |
+
+**Chosen rendering/action:** विविक्त रेषीय क्रम
+
+**Confidence/status:** medium; source-defined transparent extension of established order terminology; exact compound unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is विविक्त रेषीय क्रम the conventional Marathi term for a discrete linear order in this compactness construction?
 
 </details>
 
@@ -17375,5 +17597,155 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; confirmed by both neighboring occurrences and by the algebraic rearrangement on the next displayed line; open to correction.
 
 **Please double-check:** Does the restored atom make the entailment syntactically well formed and identical to the P-prime atom used in the adjacent steps?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-045 — confirmed-frozen-source-wrong correspondence object with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-045-OLP-0205 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:64-73](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L64) | [mr/content/model-theory/lindstrom/abstract-logics.tex:65-77](../mr/content/model-theory/lindstrom/abstract-logics.tex#L65) | not yet paginated |
+
+**Chosen rendering/action:** Stated in Marathi that M-prime is the L-prime structure corresponding to the original structure in L and placed adjacent reader note OLFOL-045. No protected formula changes, so no projection is needed.
+
+**Confidence/status:** high; confirmed by the preceding M/M-prime satisfaction equivalence and the standard symbol-renaming construction; open to correction.
+
+**Please double-check:** Does the corrected clause now relate the renamed structure to M while retaining L as its original vocabulary?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-046 — confirmed-frozen-source-ambient-structure collision and malformed starred-domain notation with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-046-OLP-0206 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:74-86,88-107](../upstream/content/model-theory/lindstrom/ls-property.tex#L74) | [mr/content/model-theory/lindstrom/ls-property.tex:73-107](../mr/content/model-theory/lindstrom/ls-property.tex#L73) | not yet paginated |
+
+**Chosen rendering/action:** Named the ambient structure A, updated the figure and caption, regularized the N-star domain, placed reader note OLFOL-046 and added a unit-specific projection back to the frozen notation solely for QA comparison.
+
+**Confidence/status:** high; confirmed by the stated containment, the nested circles in the figure and the parallel M-star/N-star construction; open to correction.
+
+**Please double-check:** Do A, M, N, M-star and N-star now identify the five distinct structures unambiguously?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-047 — confirmed-frozen-source-wrong sentence class with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-047-OLP-0206 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-115](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:112-125](../mr/content/model-theory/lindstrom/ls-property.tex#L112) | not yet paginated |
+
+**Chosen rendering/action:** Called D1 an abstract-logic sentence and D2 a first-order sentence in Marathi and placed adjacent reader note OLFOL-047. The formulas themselves are unchanged.
+
+**Confidence/status:** high; confirmed by the relativization-property definition and by the theorem's purpose of proving first-order expressibility only later; open to correction.
+
+**Please double-check:** Does the corrected distinction give D1 exactly the sentence class supplied by relativization and leave D2 first-order?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-048 — confirmed-frozen-source-countable-ambient/substructure notation collision with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-048-OLP-0206 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:115-120](../upstream/content/model-theory/lindstrom/ls-property.tex#L115) | [mr/content/model-theory/lindstrom/ls-property.tex:119-126](../mr/content/model-theory/lindstrom/ls-property.tex#L119) | not yet paginated |
+
+**Chosen rendering/action:** Named the countable ambient model A0 while retaining M0 and N0 for its two substructures, placed reader note OLFOL-048 and projected A0 back to the frozen M0 only during source QA.
+
+**Confidence/status:** high; confirmed by the word containing and the immediately following satisfaction claims for the two substructures; open to correction.
+
+**Please double-check:** Does A0 now cleanly contain the distinct partially isomorphic substructures M0 and N0?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-049 — confirmed-frozen-source-missing normality hypothesis with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-049-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L47) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:46-54](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L46) | not yet paginated |
+
+**Chosen rendering/action:** Restored the normal abstract logic hypothesis in Marathi and placed adjacent reader note OLFOL-049. No protected formula changes were required.
+
+**Confidence/status:** high; confirmed by the preceding definition, the chapter introduction's further-constraints warning and the proof's explicit property uses; open to correction.
+
+**Please double-check:** Does adding normality state exactly the theorem proved by the following argument?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-050 — confirmed-frozen-source-union-construction omission and dropped sequence subscript with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-050-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:66-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | not yet paginated |
+
+**Chosen rendering/action:** Made the standard disjoint-copy choice explicit, restored the n subscript in the subsequence phrase, placed reader note OLFOL-050 and projected the subscript back solely for frozen-source QA.
+
+**Confidence/status:** high; confirmed by the claimed unique minimal union and by the explicitly indexed family in the preceding sentence; open to correction.
+
+**Please double-check:** Do the shared constants plus otherwise disjoint domains now make the relational union well defined, with the subsequence taken from M_n?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-051 — confirmed-frozen-source-second ambient-structure notation collision with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-051-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L85) | not yet paginated |
+
+**Chosen rendering/action:** Named the coding structure A, placed reader note OLFOL-051 and added a projection that reconstructs the frozen M notation solely for QA comparison.
+
+**Confidence/status:** high; confirmed by the explicit domain containment and by the two different structures' roles; open to correction.
+
+**Please double-check:** Does A now separate the coding structure from the M-side union and its starred extension?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-052 — confirmed-frozen-source-missing abstract-satisfaction subscripts with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-052-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L104) | not yet paginated |
+
+**Chosen rendering/action:** Restored the L subscripts on both satisfaction symbols, placed reader note OLFOL-052 and added a unit-specific projection to the frozen formulas for comparison.
+
+**Confidence/status:** high; confirmed by the theorem's initial E-in-L assumption and the identical models_L clauses before and after this line; open to correction.
+
+**Please double-check:** Do the restored subscripts give the two coded substructures the same abstract satisfaction relation used throughout the proof?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-053 — confirmed-frozen-source-incomplete compactness theory with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-053-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-109](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-128](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
+
+**Chosen rendering/action:** Added the standard compactness theory placing a new constant above every standard successor, explained that each finite part is satisfiable, and placed adjacent reader note OLFOL-053. The protected source formulas remain unchanged.
+
+**Confidence/status:** high; confirmed by the standard natural-number countermodel and the usual compactness construction; open to correction.
+
+**Please double-check:** Does adjoining the infinitely many lower-bound sentences now justify the non-standard element used in the back-and-forth set?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-054 — confirmed-frozen-source-final-model notation inconsistency and collision with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-054-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-111](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-128](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
+
+**Chosen rendering/action:** Used A-star consistently for the compactness model, placed reader note OLFOL-054 and projected the two target occurrences back to their two frozen spellings solely for QA comparison.
+
+**Confidence/status:** high; confirmed by D being a sentence about the coding structure A and by the immediate references to both M_n-star and N_n-star substructures; open to correction.
+
+**Please double-check:** Does consistent A-star notation identify the compactness model as an extension of the coding structure rather than of only the M side?
 
 </details>

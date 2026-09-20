@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0206",
+  "method": "Same-agent English/Marathi close reading; exact structural and projected-formula comparison; and reconstruction of the partial-isomorphism argument from the two sequence extensions through downward Löwenheim--Skolem. No independent human or native-speaker review is claimed.",
+  "scope": "Compactness and downward Löwenheim--Skolem for abstract logics, and the proof that partial isomorphism implies L-elementary equivalence.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "Compactness says every finitely satisfiable set of abstract sentences is satisfiable; downward Löwenheim--Skolem says every satisfiable set has an enumerable model. Under normality and the latter property, partially isomorphic structures are L-elementarily equivalent.",
+      "checks": "The two definitions, enumerability conclusion, algebraic character of partial isomorphism and theorem hypotheses are preserved."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "Assume partially isomorphic M and N disagree on E. Form M-star and N-star by adjoining their finite-sequence domains and concatenation relations, then place both in an ambient structure A with a relation coding the back-and-forth partial isomorphisms.",
+      "checks": "Finite-language dependence, downward closure of the partial-isomorphism set, both ternary relations, predicate arities, starred domains, the ambient figure and all substructure inclusions are retained. OLFOL-046 supplies distinct notation for the ambient structure and repairs the malformed N-star domain."
+    },
+    {
+      "blocks": [
+        15
+      ],
+      "reverse_paraphrase": "Relativization yields an abstract sentence D1 expressing opposite E-values on the two substructures, while a first-order sentence D2 expresses their internal partial isomorphism. Downward Löwenheim--Skolem yields a countable ambient A0 with countable partially isomorphic M0 and N0, which are isomorphic and hence cannot disagree on E.",
+      "checks": "D1 and D2 retain their distinct logical classes, both satisfaction polarities and the contradiction through isomorphism. OLFOL-047 and OLFOL-048 repair the source's sentence-class and repeated-M0 errors."
+    }
+  ],
+  "source_observations": [
+    "OLFOL-046 separates the ambient A from its M and N substructures and regularizes the N-star domain notation.",
+    "OLFOL-047 records that relativized D1 is an L-sentence, whereas D2 is first-order.",
+    "OLFOL-048 distinguishes the enumerable ambient A0 from its M0 and N0 substructures.",
+    "The target-to-source QA projections reconstruct only the frozen symbols and do not weaken the semantic checks."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The source compresses the first-order coding of the internal partial-isomorphism relation; the translation does not add a separate coding lemma.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}
