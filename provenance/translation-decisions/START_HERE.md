@@ -2,9 +2,9 @@
 
 This bundle is the expert-review entry point for the current Marathi
 OpenLogic translation through OLP-0197. It covers 194/722 source units,
-11 complete chapters, 406 applied decisions and
+20 complete chapters, 406 applied decisions and
 11,402 current decision-level occurrence records. The remaining 528 units are untranslated.
-The paginated 11-chapter reader ends at OLP-0111; later translated units use pending PDF locators.
+The paginated 20-chapter reader ends at OLP-0197; later translated units use pending PDF locators.
 
 No independent human or native-speaker review is claimed. Every choice remains
 reversible, and a review question is a request for useful evidence rather than

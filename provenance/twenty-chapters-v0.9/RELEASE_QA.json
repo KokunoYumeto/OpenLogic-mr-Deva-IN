@@ -1,0 +1,66 @@
+{
+  "schema": "openlogic-cumulative-release-qa/1",
+  "release": "twenty-chapters-v0.9",
+  "scope": {
+    "translated_source_units": 194,
+    "total_source_units": 722,
+    "remaining_source_units": 528,
+    "aligned_content_segments": 2063,
+    "reader_sections": 171,
+    "complete_chapters": 20,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0197",
+    "complete_edition": false
+  },
+  "pdf": {
+    "filename": "openlogic-mr-twenty-chapters.pdf",
+    "bytes": 1139344,
+    "sha256": "c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790",
+    "pages": 264,
+    "two_clean_guarded_builds_byte_identical": true,
+    "all_pages_visually_reviewed": true,
+    "tagged_pdf": false,
+    "accessible_html_companion_required": true
+  },
+  "accessible_html": {
+    "entrypoint": "reader/twenty-chapters/index.html",
+    "bytes": 4986136,
+    "sha256": "136c4a71905d8a7bb8a6947cdb541096566cdf64849c41326dac0e3f1e06919e",
+    "native_mathml": 11479,
+    "diagrams_with_detailed_marathi_alternatives": 13,
+    "semantic_proof_figures": 202,
+    "proof_formula_rows": 990,
+    "internal_links_valid": 677,
+    "browser_layout": "passed",
+    "network_dependencies": 0
+  },
+  "translation_decisions": {
+    "canonical_decisions_with_occurrences": 406,
+    "legacy_decisions": 406,
+    "occurrences": 11402,
+    "high_priority_occurrences": 1068,
+    "schema_errors": 0,
+    "canonical_json_sha256": "2a9d9196b56b38c6549a4ec6ea697a5c61e0bf4acd2a71978425b6bda1f49012",
+    "canonical_qa_sha256": "7449cb75110c1bf346b30ac4992525a10a7b40e8b706e723f75202f5596b4408"
+  },
+  "source_checkpoint": {
+    "path": "provenance/source-checkpoint-194/SOURCE_CHECKPOINT.json",
+    "bytes": 47626,
+    "sha256": "64243da63f596d47b04fb2ecf51c18aceab7d9e99ac743cf6c7e2375d37ecdd3"
+  },
+  "working_state_ahead": null,
+  "review": "Codex machine translation and same-agent bilingual review; no independent human or native-speaker review claimed",
+  "release_ready": true,
+  "epub": {
+    "filename": "openlogic-mr-twenty-chapters.epub",
+    "bytes": 2019669,
+    "sha256": "4d6bf459dd2ae9267568a26e57827c056bf2ecc87b3e2e5cc227dcbee593b970",
+    "format": "reflowable EPUB 3",
+    "native_mathml": 11479,
+    "epubcheck_version": "5.3.0",
+    "epubcheck_messages": 0,
+    "deterministic_cold_build": true,
+    "representative_rendering": "passed",
+    "visual_qa_sha256": "549745e7f33f75cefced0d6d83a85af2342a9bbfefdff61c959cffc53c5ced17"
+  }
+}

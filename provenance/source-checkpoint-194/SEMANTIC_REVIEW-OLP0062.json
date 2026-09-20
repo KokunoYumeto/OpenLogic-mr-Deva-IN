@@ -1,0 +1,57 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0062",
+  "method": "Same-agent English/Marathi close reading, quantifier and conditional-scope inspection, formula/token comparison and reverse paraphrase with checked native terminology; not independent or human review.",
+  "scope": "Satisfiable, unsatisfiable, tautological and contingent formulas; semantic entailment; basic entailment laws; unsatisfiability and the semantic deduction theorem.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "A formula is satisfiable when some valuation satisfies it and unsatisfiable when none does; it is a tautology when every valuation satisfies it and contingent when satisfiable but not tautological. Gamma entails A exactly when every valuation satisfying Gamma satisfies A. A set is satisfiable exactly when some valuation satisfies all of it.",
+      "checks": "Existential, universal and negative quantifier scopes are distinct; the entailment direction and the set-level satisfaction condition are unchanged."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "The exercise asks, for each of four unchanged formulas, whether it is satisfiable, a tautology and contingent.",
+      "checks": "All four formulas, their order and all three requested classifications are preserved exactly."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "Tautologicity is entailment from the empty set; semantic modus ponens holds; satisfiability descends to finite subsets; entailment is monotone under enlarging premises; and the stated transitivity/cut principle combines Gamma and Delta.",
+      "checks": "Every premise set, subset direction, union, conditional and conclusion remains attached to the same formula as in the source."
+    },
+    {
+      "blocks": [
+        12,
+        15
+      ],
+      "reverse_paraphrase": "Gamma entails A exactly when Gamma together with not-A is unsatisfiable. Gamma entails A implies B exactly when Gamma together with A entails B.",
+      "checks": "Both biconditional directions, negation scope, conditional scope and premise-set extensions are preserved."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        13,
+        14,
+        16,
+        17
+      ],
+      "reverse_paraphrase": "Each stated result is left as an exercise and each following problem points to the same proposition or theorem label.",
+      "checks": "All proof placeholders and cross-reference identifiers are unchanged."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "अपूर्ततायोग्यता, एकस्वनिकता for entailment, and the theorem title चिन्हार्थविषयक निगमन प्रमेय remain explicitly prioritized for specialist review."
+  ]
+}

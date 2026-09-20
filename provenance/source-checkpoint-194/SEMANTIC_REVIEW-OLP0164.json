@@ -1,0 +1,112 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0164",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of both structural inductions, case-by-case replay of every primitive and defined connective branch, verification of assignment agreement at free variables and modified assignments at quantified variables, and exact projected formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Independence of term values and formula satisfaction from irrelevant variable assignments, sentence satisfaction, satisfaction of sentence sets, assignment-free semantics and Skolem normal form.",
+  "samples": [
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "Although assignments give values to infinitely many variables, a term value depends only on variables occurring in the term, and formula satisfaction depends only on free variables of the formula. Agreement on those relevant variables therefore suffices.",
+      "checks": "The universal-assignment convenience, infinitely many variables, term/formula distinction, free-variable restriction and two precise agreement claims are retained."
+    },
+    {
+      "blocks": [
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "If two assignments agree on every variable of a term, the term has the same value under both. The proof handles constants and variables directly, then applies the induction hypothesis to each argument of a function term before applying the interpreted function.",
+      "checks": "Both base cases, the k subterms, every equality in the aligned calculation and the induction-hypothesis direction are preserved."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "If two assignments agree on all free variables of a formula, satisfaction is invariant between them. The atomic base cases cover truth, falsity, predicates and identity; term-value invariance transfers each predicate argument and both sides of identity.",
+      "checks": "All atomic alternatives, the forward-direction convention and the symmetric reverse direction remain explicit. OLFOL-019 restores the predicate tuple's first index to t_1."
+    },
+    {
+      "blocks": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "reverse_paraphrase": "The induction step transfers satisfaction through negation and every binary connective. For existential and universal quantification, both assignments are modified to give x the same arbitrary domain value; they still agree away from x, so the induction hypothesis applies to the quantified body.",
+      "checks": "Each polarity and connective condition is retained. Both quantifier cases preserve domain scope, x-variant agreement, shared value m and the correct conclusion assignment. OLFOL-020 constructs the two universal variants from s_1 and s_2."
+    },
+    {
+      "blocks": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "reverse_paraphrase": "A sentence has no free variables, so its satisfaction is independent of every assignment. A structure satisfies a sentence when it does so under all assignments, and satisfies a set Gamma when it satisfies every sentence in Gamma.",
+      "checks": "The proof-completion prompt, sentence corollary, assignment-free satisfaction notation, truth-in-a-structure wording and setwise universal condition are retained. OLFOL-021 removes only the duplicated Gamma."
+    },
+    {
+      "blocks": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "reverse_paraphrase": "Sentence satisfaction is equivalent to satisfaction under any fixed assignment. When A(x) has only x free, its existential closure is satisfied exactly when A holds under at least one assignment, and its universal closure exactly when A holds under every assignment.",
+      "checks": "Both proposition labels, proof exercises, quantifier tags and assignment quantifiers are preserved."
+    },
+    {
+      "blocks": [
+        36,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "reverse_paraphrase": "The first problem defines a satisfaction-style relation without variable assignments for a function-free language. Quantifiers are handled by reinterpreting a fresh constant at each domain element, and free variables are replaced by fresh constants interpreted at their assigned values.",
+      "checks": "The modified-structure notation, every recursive truth clause, freshness condition, complete free-variable/constant/domain-element lists and the target equivalence are retained."
+    },
+    {
+      "blocks": [
+        49,
+        50
+      ],
+      "reverse_paraphrase": "The final problem asks for the satisfiability equivalence between forall x exists y A(x,y) and its expansion by a new witness function f, forall x A(x,f(x)), identifying the latter as a Skolem normal form.",
+      "checks": "The freshness of f, existential claims about the two structures, both quantified formulas, theorem attribution and normal-form direction are preserved."
+    }
+  ],
+  "source_observations": [
+    "OLFOL-019 changes the concluding predicate tuple's initial t_i to t_1.",
+    "OLFOL-020 constructs s_1-prime from s_1 and s_2-prime from s_2 in the universal induction case.",
+    "OLFOL-021 removes the second consecutive Gamma from the sentence-set definition.",
+    "After the three exact projections, all formulas, macros, controlled tokens, identifiers and references match the frozen source."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact Marathi x-variant and Skolem-normal-form headwords remain explicitly open to specialist review in T222 and T223.",
+    "Tag-dependent branches were reviewed from the source and proof semantics; no TeX reader build was run for this individual unit."
+  ]
+}

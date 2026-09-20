@@ -1,0 +1,53 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0122",
+  "method": "Same-agent English/Marathi block-by-block close reading, axiom-by-axiom reconstruction of all conjunction, disjunction and conditional claims, exact replay of the three-line modus-ponens derivation, and formula, macro, token, label and reference comparison after the documented OLAXD-004 and OLAXD-005 projections. No independent human or native-speaker review is claimed.",
+  "scope": "Basic propositional-connective consequences in axiomatic deduction: conjunction projections and introduction, disjunction inconsistency and introductions, modus ponens, and two sufficient premises for a conditional.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "The section states that axiomatic derivability is strong enough to establish elementary propositional-connective facts, including conjunction projection and modus ponens, and that these facts are needed for completeness.",
+      "checks": "The proof system, derivability relation, both displayed examples, modus-ponens gloss and completeness role are preserved."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "A conjunction derives each conjunct, while A and B together derive their conjunction. The first two results use the two corresponding projection axioms and modus ponens; the introduction result uses ax:land3 and two modus-ponens steps.",
+      "checks": "All three claims, both nested labels and all axiom references remain exact after OLAXD-004 replaces the duplicated second projection reference with ax:land2."
+    },
+    {
+      "blocks": [
+        9,
+        10
+      ],
+      "reverse_paraphrase": "A-or-B together with not-A and not-B is inconsistent. The not-A and not-B hypotheses yield A-implies-falsity and B-implies-falsity via ax:lnot2 and the Deduction Theorem; ax:lor3 combines them, and another Deduction-Theorem use derives falsity from all three assumptions. Either disjunct separately derives the disjunction by the two introduction axioms.",
+      "checks": "Every negation, falsity formula, premise set, Deduction-Theorem step and disjunction axiom is preserved. OLAXD-005 corrects only the incompatible frozen ax:lnot1 citation to ax:lnot2."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "A and A-implies-B derive B by the explicit three-line modus-ponens derivation. Not-A derives A-implies-B from ax:lnot2, and B derives A-implies-B from ax:lif1, with the Deduction Theorem used respectively as stated.",
+      "checks": "Both protected labels, all three conditional claims, the hypothesis order, line references, MP marker, two axiom references and the concluding respectively relation are preserved."
+    }
+  ],
+  "source_observations": [
+    "OLAXD-004 records that the frozen conjunction proof repeats ax:land1 where the second projection uniquely requires ax:land2; the Marathi target corrects the identifier and carries an adjacent reader note.",
+    "OLAXD-005 records that the frozen disjunction proof cites ax:lnot1 for formulas that are direct ax:lnot2 instances; the Marathi target corrects the identifier and carries an adjacent reader note.",
+    "The frozen phrase modus ponsens contains a mechanical spelling error; idiomatic Marathi uses the established विध्यात्मक अनुमान term without creating a separate mathematical correction.",
+    "All formulas, macros, protected tokens, labels, identifiers and reference options match after the two documented reference projections."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "सिद्धतायोग्यता remains a definition-controlled formal compound under T184, and निगमन प्रमेय remains open to specialist review under T186.",
+    "The source gives compact axiom-reference proofs rather than spelling out every derivation line; the review reconstructed each cited schema and modus-ponens application."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0072",
+  "method": "Same-agent English/Marathi block-by-block close reading, rule-by-rule reverse paraphrase, and exact formula, macro, token and identifier comparison after a bounded fresh check for Marathi eigenvariable terminology, followed by adoption and revalidation of a bounded independent model audit; no native-speaker or human-expert review is claimed.",
+  "scope": "The LK quantifier-rule section: universal and existential left/right rules, closed-term and eigenvariable restrictions, substitution notation, partial replacement of term occurrences, and the counterexample showing why the eigenvariable condition is required for soundness.",
+  "samples": [
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "The section is titled Quantifier Rules.",
+      "checks": "संख्यापक follows directly attested Marathi university logic usage and the section macro is unchanged."
+    },
+    {
+      "blocks": [
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "For universal-left, t is a closed term. For universal-right, a is a constant absent everywhere from the lower sequent; a is called that inference's eigenvariable even though the rule uses a constant, for historical reasons.",
+      "checks": "The two universal rules, left/right labels, upper and lower sequents, contexts and formulas remain exact. The no-variables definition of closed term, the whole-lower-sequent scope, the constant/eigenvariable tension and footnote explanation are preserved."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "For existential-left, a is a constant absent from the lower sequent and is its eigenvariable; existential-right uses a closed term t. The eigenvariable condition is precisely absence from the lower sequent for universal-right or existential-left.",
+      "checks": "The existential rules and their dual orientations remain byte-identical. The restriction is attached only to the two named inferences and retains lower, rather than upper, sequent scope in the definition."
+    },
+    {
+      "blocks": [
+        13
+      ],
+      "reverse_paraphrase": "A formula with x free is written A(x), and A(t) abbreviates A with t substituted for x. The existential-right rule can therefore be written with explicit substitution. Since t may already occur in A, the example may replace one or more but not necessarily all premise occurrences by bound x. By contrast, the universal-right and existential-left eigenvariable conditions require a not to occur in A, so the displayed P(a,a)-to-universal inference is incorrect.",
+      "checks": "Free and bound status, abbreviation direction, explicit-substitution proof tree, premise and conclusion order, partial-occurrence permission, both eigenvariable rules, the prohibition on a in A and every displayed formula are preserved. The first use of आस्थिती now includes the plain gloss ‘the places where t occurs’ for reader accessibility."
+    },
+    {
+      "blocks": [
+        14
+      ],
+      "reverse_paraphrase": "Beyond the standing requirement that t be closed, existential-right and universal-left place no additional restriction on t. In existential-left and universal-right, constant a may occur nowhere in the upper sequent outside A(a). This is required for soundness, meaning that only valid sequents are derived. Without it, either starred invalid step would derive existential A sequent universal A, although that sequent is invalid.",
+      "checks": "The clarification preserves the earlier closed-term requirement and prevents ‘no restrictions’ from licensing open terms. The unrestricted-beyond-closedness and eigenvariable-restricted rule pairs are not interchanged; upper-sequent scope and the A(a) exception remain exact. Both counterexample derivations, starred rule labels, intermediate sequents, final sequent and invalidity judgment are unchanged."
+    }
+  ],
+  "source_observations": [
+    "OLSEQ-003: a bounded independent audit identified the source's context-dependent ‘no restrictions on t’ wording; the Marathi explicitly says no additional restrictions beyond closedness. Report SHA-256 8764f4ccdf643494159a614648cf33aa8288730463c5a9835070bec3d95085f6."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "No exact Marathi proof-theory occurrence of eigenvariable was found in the bounded official-domain searches.",
+    "आयगेन चर retains an officially attested Marathi transliteration of the eigen modifier from quantum-mechanics compounds, but its proof-theory use and आयगेन चराची अट remain provisional and definition-controlled.",
+    "बंद पद is a transparent rendering governed by the immediate parenthetical definition; the full compound was not directly attested in the checked Marathi sources.",
+    "The audit was an independent model review, not native-speaker or human-expert testimony; its bounded finding was adopted without treating review as a completion hold."
+  ]
+}

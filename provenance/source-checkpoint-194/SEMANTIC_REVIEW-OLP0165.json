@@ -1,0 +1,66 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0165",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of the structure-extensionality induction, four-case replay of the term-substitution value lemma, verification of assignment substitution and capture admissibility in the formula lemma, and exact projected formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Extensionality across structures, term values under substitution, formula satisfaction under admissible substitution, and the equivalence of substituting syntax before or after semantic valuation.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "Satisfaction depends only on domain size and the interpretations or assignments of language elements that actually occur in the formula. Thus two structures with the same domain and matching interpretations for every constant, relation and function in A agree on A under the same variable assignment.",
+      "checks": "The relevance qualification, shared-domain requirement, all three nonlogical symbol classes, occurrence restriction, fixed assignment and biconditional conclusion are retained."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "The proof first establishes equality of term values by induction and then satisfaction invariance by formula induction. The detailed proof is an exercise, and the sentence corollary removes assignment notation by using sentence-assignment independence.",
+      "checks": "Both induction levels, atomic basis, problem prompt, sentence restriction and both cited dependencies are preserved."
+    },
+    {
+      "blocks": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "reverse_paraphrase": "Substituting t-prime for x in a term and then evaluating gives the same value as evaluating t under the assignment that maps x to the value of t-prime. Constants, other variables, x itself and compound function terms supply the four induction cases.",
+      "checks": "Every substitution direction, assignment update, x-variant claim, function argument and induction step is retained. OLFOL-022 removes only the duplicated display equality."
+    },
+    {
+      "blocks": [
+        19,
+        20,
+        21
+      ],
+      "reverse_paraphrase": "For a term t-prime admissible for substitution at x in A, satisfaction after syntactic substitution is equivalent to satisfaction of A under the assignment that gives x the semantic value of t-prime. The proof remains an exercise.",
+      "checks": "Both sides of the biconditional, the t-prime value under s, updated assignment and proof reference are retained. OLFOL-023 supplies the admissibility hypothesis required by the earlier definition."
+    },
+    {
+      "blocks": [
+        22
+      ],
+      "reverse_paraphrase": "To find the value or satisfaction of a substituted expression, one may substitute first and evaluate, or first evaluate the replacement term, update x in the assignment and then evaluate the original expression. The two propositions guarantee the same answer.",
+      "checks": "The term/formula parallel, structure and assignment parameters, intermediate value m, updated assignment and both cross-references are preserved."
+    }
+  ],
+  "source_observations": [
+    "OLFOL-022 removes the first of two consecutive equality signs in the function-term display and projects it back for structural comparison.",
+    "OLFOL-023 adds the free-for-x-in-A hypothesis required for the formula-substitution expression to be defined under the chapter's stated convention.",
+    "After the OLFOL-022 projection, all formulas, macros, controlled tokens, identifiers and references match the frozen source; OLFOL-023 changes prose only."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact Marathi extensionality and substitution vocabulary remains governed by the existing expert-reviewable T004 and T216 decisions.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0188",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of both theory-inclusion arguments, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "The theory of a structure, completeness of that theory, elementary equivalence from theory satisfaction, and the countable model of the theory of the ordered reals.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "The theory of a structure is the set of all sentences true in it. This set is a theory because its consequences hold in all of its models, and it is complete because for each sentence it contains either that sentence or its negation. The word theory is also used informally for intended sentence sets whether or not deductively closed.",
+      "checks": "Truth and falsity, the exact set-builder definition, consequence closure, informal usage and the sentence-or-negation completeness proof are retained."
+    },
+    {
+      "blocks": [
+        11,
+        12
+      ],
+      "reverse_paraphrase": "If N satisfies every sentence in the theory of M, then the theory of M is included in the theory of N. Completeness of the former gives the reverse inclusion, so M and N are elementarily equivalent.",
+      "checks": "Both inclusions, the non-satisfaction of the negation, the use of completeness and the final elementary-equivalence conclusion are retained."
+    },
+    {
+      "blocks": [
+        13
+      ],
+      "reverse_paraphrase": "The ordered real structure is uncountable, but its consistent theory has a countable model by Löwenheim--Skolem. That model is elementarily equivalent but not isomorphic to the ordered reals, refuting the converse of the preceding isomorphism theorem.",
+      "checks": "The language signature, real-number domain, consistency premise, countable-model consequence, proposition reference and failed converse are retained."
+    }
+  ],
+  "source_observations": [
+    "The proof of reverse theory inclusion uses the source's negated satisfaction notation exactly: if N satisfies A, it does not satisfy not-A, so not-A is absent from the complete theory of M.",
+    "All formulas, macros, controlled tokens, identifiers and references match the frozen source exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

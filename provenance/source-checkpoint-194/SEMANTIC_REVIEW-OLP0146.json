@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0146",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of universal instantiation and the substitution/satisfaction bridge, and exact formula, macro, controlled-token, identifier and reference comparison after documented OLFOL-004 projection. No independent human or native-speaker review is claimed.",
+  "scope": "Substitution as the syntactic operation behind universal instantiation, its restrictions, and its semantic dependence on term values and modified assignments.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "A derivation system should derive P(a) from universally quantified P(v_0), generalized as inferring A(t) from forall-x A(x) by removing the quantifier and replacing x with t. Constants are terms and functions build more complex terms, but the replacement relation must be defined precisely.",
+      "checks": "Concrete and general schemas, inference-rule purpose, formula/term/variable parameters and three closing questions are retained; OLFOL-004 only repairs the concrete atomic formula's bracketing."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "Substitution cannot blindly replace every x by every t, so it is defined inductively. The resulting rule is semantically good because forall-x A(x) entails A(t), and satisfaction of A(t) depends only on t's denoted domain element m: it agrees with A(x) under the assignment modified to send x to m, even when t contains variables.",
+      "checks": "Both substitution restrictions, inductive method, entailment claim, term-value dependence, satisfaction biconditional, modified assignment and variable-containing-term caveat remain exact."
+    }
+  ],
+  "source_observations": [
+    "OLFOL-004 repairs the source's misplaced v_0 argument so the concrete premise is the unary formula P(v_0) inside the universal quantifier, matching the general schema immediately below.",
+    "The target uses glossary-backed आदेशन and preserves the distinction between syntactic term substitution and semantic assignment modification.",
+    "All formulas, macros, controlled tokens, identifiers and references match the frozen source after the unit-specific correction projection."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The capture-avoidance restrictions are only motivated here and defined later.",
+    "The semantic substitution result is previewed without its later precise hypotheses."
+  ]
+}

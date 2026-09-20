@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0175",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of the philosophical contrasts and historical examples, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Overview of what constitutes a logic, competing philosophical accounts of logical truth, logicism and Principia Mathematica, and Quine's objection to higher-order quantification.",
+  "samples": [
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "A logic normally specifies a formal language and often, though not invariably, a deductive system and intended semantics. Systems beyond first-order logic all model some kind of reasoning, but that fact alone does not settle what makes them logical in the intuitive or philosophical sense.",
+      "checks": "Both usually-but-not-always qualifications, the technical-versus-philosophical question, and the modeling-of-reasoning criterion are retained."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "Possible aims of logic include identifying necessary, a priori, interpretation-independent, formally true or conventionally true statements. Russell and Whitehead pursued Frege's logicist program in Principia using higher-type logic, though they needed axioms often judged nonlogical. Quine instead treats predicate quantification in second- and higher-order logic as disguised set theory because his ontology excludes propositions as objects.",
+      "checks": "All five candidate truth conceptions, the historical lineage, both named axioms, the qualified defense of higher-order reasoning, and Quine's ontology-based objection are retained."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "The chapter postpones the philosophical dispute and treats the systems as formal idealizations of kinds of reasoning whether or not they ultimately count as logical.",
+      "checks": "The deliberate deferral and logic-neutral methodological stance are retained."
+    }
+  ],
+  "source_observations": [
+    "All formulas, macros, controlled tokens, identifiers and references match the frozen source exactly.",
+    "MR-P109 and MR-P110 provide direct authoritative support for the logicist and ontology vocabulary; the order-level logic labels remain transparent, source-controlled compounds in T245."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact Marathi compounds for second-order, higher-order and higher-type logic remain open to specialist review in T245.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

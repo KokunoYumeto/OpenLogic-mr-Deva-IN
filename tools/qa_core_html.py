@@ -33,8 +33,11 @@ section_driver_unit_ids = {
     "OLP-0004", "OLP-0011", "OLP-0020", "OLP-0027", "OLP-0041",
     "OLP-0049", "OLP-0055", "OLP-0056", "OLP-0063", "OLP-0069",
     "OLP-0084", "OLP-0098",
+    "OLP-0112", "OLP-0126", "OLP-0138", "OLP-0139", "OLP-0149",
+    "OLP-0159", "OLP-0167", "OLP-0174", "OLP-0182", "OLP-0183",
+    "OLP-0191",
 }
-chapter_driver_unit_ids = section_driver_unit_ids - {"OLP-0055"}
+chapter_driver_unit_ids = section_driver_unit_ids - {"OLP-0055", "OLP-0138", "OLP-0182"}
 chapter_count = sum(row["unit_id"] in chapter_driver_unit_ids for row in input_rows)
 section_count = len(input_rows) - sum(
     row["unit_id"] in section_driver_unit_ids for row in input_rows
@@ -45,9 +48,9 @@ scope = {
     "complete_chapters": chapter_count,
 }
 assert scope == {
-    "translation_source_units": 108,
-    "reader_sections": 96,
-    "complete_chapters": 11,
+    "translation_source_units": 194,
+    "reader_sections": 171,
+    "complete_chapters": 20,
 }
 
 
@@ -130,6 +133,45 @@ def balanced_argument(text, marker):
     return start, index - 1, index
 
 
+def split_align_intertexts(text):
+    """Promote align intertext prose while retaining full-document refs."""
+    marker = r"\intertext{"
+    count = 0
+    expected = text.count(marker)
+    while marker in text:
+        start = text.index(marker)
+        index = start + len(marker)
+        depth = 1
+        while depth:
+            if text[index] == "{" and text[index - 1] != "\\":
+                depth += 1
+            elif text[index] == "}" and text[index - 1] != "\\":
+                depth -= 1
+            index += 1
+        prose = text[start + len(marker) : index - 1]
+        align_start = text.rfind(r"\begin{align*}", 0, start)
+        align_end = text.index(r"\end{align*}", index) + len(r"\end{align*}")
+        assert align_start >= 0
+        before = text[align_start + len(r"\begin{align*}") : start]
+        after = text[index : align_end - len(r"\end{align*}")]
+        replacement = (
+            r"\begin{align*}"
+            + before.rstrip()
+            + "\n"
+            + r"\end{align*}"
+            + "\n\n"
+            + prose
+            + "\n\n"
+            + r"\begin{align*}"
+            + after.lstrip()
+            + r"\end{align*}"
+        )
+        text = text[:align_start] + replacement + text[align_end:]
+        count += 1
+    assert count == expected
+    return text
+
+
 def collect(root):
     strings = []
     maths = []
@@ -157,15 +199,36 @@ def collect(root):
                         walk(ast(text=value[start:end]))
                     return
                 if r"\intertext{" in value:
-                    start, end, after = balanced_argument(value, r"\intertext{")
-                    open_env = r"\begin{align*}"
-                    close_env = r"\end{align*}"
-                    assert value.startswith(open_env) and value.endswith(close_env)
-                    first = open_env + value[len(open_env) : start - len(r"\intertext{")].rstrip() + close_env
-                    second = open_env + value[after : -len(close_env)].lstrip() + close_env
-                    maths.append(mathnorm(first))
-                    walk(ast(text=value[start:end]))
-                    maths.append(mathnorm(second))
+                    environment = re.match(r"\\begin\{(align\*?)\}", value)
+                    assert environment, value[:200]
+                    open_env = environment.group(0)
+                    close_env = r"\end{" + environment.group(1) + "}"
+                    assert value.endswith(close_env), value[-200:]
+                    cursor = len(open_env)
+                    body_end = len(value) - len(close_env)
+                    marker = r"\intertext{"
+                    while True:
+                        marker_start = value.find(marker, cursor, body_end)
+                        if marker_start < 0:
+                            break
+                        formula = value[cursor:marker_start].rstrip()
+                        if formula:
+                            maths.append(mathnorm(open_env + formula + close_env))
+                        argument_start = marker_start + len(marker)
+                        argument_end = argument_start
+                        depth = 1
+                        while depth:
+                            escaped = argument_end > 0 and value[argument_end - 1] == "\\"
+                            if value[argument_end] == "{" and not escaped:
+                                depth += 1
+                            elif value[argument_end] == "}" and not escaped:
+                                depth -= 1
+                            argument_end += 1
+                        walk(ast(text=value[argument_start : argument_end - 1]))
+                        cursor = argument_end
+                    formula = value[cursor:body_end].lstrip()
+                    if formula:
+                        maths.append(mathnorm(open_env + formula + close_env))
                     return
                 maths.append(mathnorm(value))
                 return
@@ -201,6 +264,7 @@ source_tex = adapt_prose_ensuremath(source_tex)
 source_preamble, source_marker, source_body = source_tex.partition(r"\begin{document}")
 assert source_marker
 source_tex = source_preamble + source_marker + expand_reader_math_macros(source_body)
+source_tex = split_align_intertexts(source_tex)
 source = collect(ast(text=source_tex))
 adapted = collect(ast(B / "html-input.tex"))
 if source[0] != adapted[0]:
@@ -303,6 +367,39 @@ assert len(document.select("math")) == (
     + len(proof_annotation_nodes)
 )
 assert not document.select("merror,script,iframe,object,embed")
+
+fallback_manifest_path = P / "math-text-fallbacks" / "MANIFEST.json"
+fallback_manifest = json.loads(fallback_manifest_path.read_text(encoding="utf-8"))
+assert fallback_manifest["schema"] == "openlogic-marathi-math-text-fallbacks/1"
+fallback_entries = {entry["text"]: entry for entry in fallback_manifest["entries"]}
+assert len(fallback_entries) == len(fallback_manifest["entries"]) == 57
+fallback_nodes = document.select("mtext > mglyph")
+assert len(fallback_nodes) == 240
+assert len(document.select("mglyph")) == len(fallback_nodes)
+fallback_asset_inventory = {}
+for glyph in fallback_nodes:
+    parent = glyph.parent
+    assert parent and parent.name == "mtext" and len(parent.contents) == 1
+    text = glyph.get("alt")
+    assert text in fallback_entries
+    entry = fallback_entries[text]
+    reference = f"assets/math-text/{entry['filename']}"
+    assert glyph.get("src") == reference
+    assert glyph.get("width") == entry["display_width"]
+    assert glyph.get("height") == entry["display_height"]
+    assert glyph.get("valign") == entry["valign"]
+    path = (O / reference).resolve()
+    assert path.is_relative_to(O.resolve()) and path.is_file()
+    assert path.stat().st_size == entry["bytes"]
+    assert sha(path) == entry["sha256"]
+    fallback_asset_inventory[reference] = {
+        "filename": reference,
+        "bytes": path.stat().st_size,
+        "sha256": sha(path),
+        "text": text,
+    }
+assert len({node["alt"] for node in fallback_nodes}) == 57
+assert len(fallback_asset_inventory) == 57
 visible_copy = BeautifulSoup(str(document), "html.parser")
 for node in visible_copy.select("math"):
     node.decompose()
@@ -360,7 +457,7 @@ def prose_norm(text):
 
 
 expected_source = " ".join(adapted[0])
-for key, label in labels.items():
+for key, label in sorted(labels.items(), key=lambda item: len(item[0]), reverse=True):
     # Pandoc exposes unresolved LaTeX \ref arguments as literal label keys in
     # its source AST. The HTML builder resolves them from the settled TeX aux.
     expected_source = expected_source.replace(key, label)
@@ -394,6 +491,26 @@ assert build["html_sha256"] == sha(O / "index.html")
 note_math_count = sum(map(len, html_note_maths))
 assert build["mathml_count"] == len(annotations) + len(toc_annotation_nodes) + note_math_count + len(proof_annotation_nodes)
 assert len(build["diagram_assets"]) == html_diagram_count
+assert build["math_text_fallbacks"]["manifest"] == "math-text-fallbacks/MANIFEST.json"
+assert build["math_text_fallbacks"]["manifest_sha256"] == sha(fallback_manifest_path)
+assert build["math_text_fallbacks"]["occurrences"] == len(fallback_nodes)
+assert build["math_text_fallbacks"]["unique_phrases"] == len(fallback_entries)
+assert len(build["math_text_fallbacks"]["occurrence_map"]) == len(fallback_nodes)
+assert [row["text"] for row in build["math_text_fallbacks"]["occurrence_map"]] == [
+    node["alt"] for node in fallback_nodes
+]
+assert build["math_text_fallbacks"]["assets"] == [
+    {
+        "filename": f"assets/math-text/{entry['filename']}",
+        "bytes": entry["bytes"],
+        "sha256": entry["sha256"],
+        "text": entry["text"],
+        "display_width": entry["display_width"],
+        "display_height": entry["display_height"],
+        "valign": entry["valign"],
+    }
+    for entry in fallback_manifest["entries"]
+]
 assert build["proof_representations"] == [
     {
         "id": spec["id"],
@@ -424,6 +541,8 @@ receipt = {
     "proof_formula_annotations_verified": len(proof_annotation_nodes),
     "toc_duplicate_math_annotations": len(toc_annotation_nodes),
     "native_mathml_total": build["mathml_count"],
+    "mathml_text_fallback_occurrences": len(fallback_nodes),
+    "mathml_text_fallback_unique_phrases": len(fallback_entries),
     "footnotes_with_exact_prose_and_math": len(expected_notes),
     "ordinary_prose_characters_exact_ignoring_generated_numbering": len(expected),
     "internal_links_valid": len(links),
@@ -432,23 +551,25 @@ receipt = {
     "sections": section_count,
     "diagrams": len(build["diagram_assets"]),
     "assets": assets,
+    "math_text_fallback_assets": list(fallback_asset_inventory.values()),
     "pandoc_warnings": 0,
     "accessibility_checks": [
         "Marathi document language",
         "main landmark and skip link",
         "hierarchical headings and linked table of contents",
         "native MathML with exact TeX annotations",
+        f"{len(fallback_nodes)} Devanagari MathML text occurrences with exact alternative text and outlined SVG fallbacks",
         f"{html_diagram_count} detailed Marathi image alternatives",
         "offline fonts and responsive CSS",
         "keyboard-focusable horizontally scrollable display mathematics",
     ],
     "browser_layout_review": {
         "status": "passed",
-        "reason": "In-app browser inspection confirmed the title/TOC view, the chapter-11 anchor, and semantic tableau proof tables at the generated desktop viewport.",
+        "reason": "In-app browser inspection confirmed the title/TOC view, the chapter-20 anchor, and semantic proof tables at the generated desktop viewport.",
         "checked_surfaces": [
             "title and linked table of contents",
-            "11 टॅब्लो chapter anchor",
-            "11.5 टॅब्लोची उदाहरणे semantic proof table",
+            "20 अंकगणिताची प्रतिमाने chapter anchor",
+            "semantic proof-table examples",
         ],
     },
     "limitations": [

@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0169",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of the model-of-a-set definition, evaluation of the nonexpressibility example, replay of the three order-property biconditionals, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Sentence-definable properties of structures, models of sentence sets, and the first-order axiomatization of partial orders.",
+  "samples": [
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "We may choose the intended structures and interpretations, but the model-theoretic question is which conditions or classes of structures can be captured by a sentence or sentence set. No sentence forces the arithmetic domain to be exactly the natural numbers, although some structural properties are expressible.",
+      "checks": "The freedom to choose intended interpretations, ordering and membership examples, sentence-versus-sentence-set alternatives, one-way restriction on the natural-number example and final class characterization are retained."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "A structure M is a model of a sentence set Gamma exactly when M satisfies every sentence A belonging to Gamma.",
+      "checks": "Language membership, universal range over Gamma, satisfaction notation and model terminology are retained."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "The three displayed sentences say that the interpretation of less-than-or-equal is reflexive, antisymmetric and transitive. Their common models are therefore precisely partial orders, so the sentences may serve as axioms for the first-order theory of partial orders.",
+      "checks": "All three biconditionals, their variable patterns, the displayed axiom set, exact property conjunction and final axiomatic-theory claim are retained."
+    }
+  ],
+  "source_observations": [
+    "No deterministic frozen-source defect requiring a Marathi correction was found in this unit.",
+    "All formulas, macros, controlled tokens, identifiers and references match the frozen source exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact Marathi label for model-theoretic expressibility and structural property remains explicitly open to specialist review in T229.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

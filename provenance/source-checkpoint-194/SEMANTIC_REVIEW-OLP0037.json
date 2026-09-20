@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0037",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase; not independent or human review.",
+  "scope": "All six translated content blocks stating, motivating and applying Schröder–Bernstein.",
+  "samples": [
+    {
+      "reverse_paraphrase": "If each of A and B is no larger than the other, the two sets are equinumerous; this validates the intended connection between equinumerosity and size.",
+      "checks": "Both comparison directions, the counterfactual motivation and the conclusion remain present."
+    },
+    {
+      "reverse_paraphrase": "Schröder–Bernstein says cardle(A,B) and cardle(B,A) imply cardeq(A,B).",
+      "checks": "The theorem environment, label and all three cardinal-relation macros are unchanged."
+    },
+    {
+      "reverse_paraphrase": "Equivalently, injections in both directions guarantee a bijection from A to B.",
+      "checks": "The directions, injection/bijection distinction and target of the bijection are retained."
+    },
+    {
+      "reverse_paraphrase": "Cantor stated the hard result, others proved it, and the proof is deferred to a later labeled section.",
+      "checks": "Historical attribution, citation, conditional label text and present trust instruction are preserved."
+    },
+    {
+      "reverse_paraphrase": "The theorem makes size relations credible and useful because finding two injections can be easier than directly finding a bijection.",
+      "checks": "Both the conceptual and practical conclusions remain explicit."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "T076 is a provisional proper-name transliteration open to specialist correction.",
+    "No independent linguistic certification has been performed."
+  ]
+}

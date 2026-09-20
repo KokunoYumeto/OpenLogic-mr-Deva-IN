@@ -1,0 +1,79 @@
+{
+  "schema": "openlogic-marathi-epub-visual-qa/1",
+  "status": "passed",
+  "release": "twenty-chapters-v0.9",
+  "source_epub": {
+    "filename": "openlogic-mr-twenty-chapters.epub",
+    "bytes": 2019669,
+    "sha256": "4d6bf459dd2ae9267568a26e57827c056bf2ecc87b3e2e5cc227dcbee593b970"
+  },
+  "renderer": {
+    "name": "Calibre ebook-convert",
+    "version": "9.11.0",
+    "receipt": "CALIBRE_RENDER.log"
+  },
+  "render_evidence": {
+    "mode": "accepted equivalent-package render",
+    "accepted_render_source": {
+      "bytes": 2019673,
+      "sha256": "463109e69929d5372b540938a819dae9efdc499ab6b9df548748f3d56837b079"
+    },
+    "epub_entries_total": 79,
+    "byte_identical_entries": 75,
+    "changed_entries": {
+      "OEBPS/content.xhtml": "five trailing ASCII spaces removed from application/x-tex annotations; exact after per-line trailing-whitespace normalization",
+      "OEBPS/reader.css": "final line ending normalized; CSS text exact",
+      "OEBPS/fonts/OFL.txt": "one trailing ASCII space removed; Calibre discards this non-rendering resource",
+      "OEBPS/package.opf": "only the deterministic content-derived publication UUID changed"
+    },
+    "renderable_structure_text_math_styles_and_assets_unchanged": true,
+    "fresh_render_attempts": {
+      "attempts": 2,
+      "conversion_errors_before_renderer": 0,
+      "outcome": "Calibre internal WebEngine load timeout on the single large content document after 65 and 80 seconds",
+      "surviving_converter_processes": 0
+    }
+  },
+  "rendered_pdf": {
+    "release_asset": false,
+    "bytes": 4096225,
+    "sha256": "71549b26dbbfdfb60d3a393469fe3aa488bc4436fd1c958591bcd0c61c6eda14",
+    "pages": 374,
+    "links": 1613,
+    "internal_links": 1610,
+    "external_links": 3,
+    "unresolved_internal_links": 0
+  },
+  "inspected_pages": [
+    {"page": 1, "sha256": "0215a421cb09ed97dac1dd4c740e7ed3b61f00fc428cadea907c309fdf322631", "surface": "title and linked table of contents"},
+    {"page": 7, "sha256": "5c1f499ec37285c56bf12f725fad4c44aad48280c8973e5b6e0e06b9417fa32f", "surface": "scope, attribution, and chapter 1 transition"},
+    {"page": 14, "sha256": "29251ccfe280b4d38ffce215e788a6287b2a94100bcc5c5cb10cf386750c136a", "surface": "Devanagari text at MathML formula boundaries"},
+    {"page": 86, "sha256": "693c9f8ab291f50ae7d3bead8455a92d86d24f12cceb77e9fd5b7488a8d5fcfa", "surface": "Hilbert's hotel diagram and surrounding prose"},
+    {"page": 106, "sha256": "4f9a2304fcf73fc432fafdefa644ecdbd0818c3b5c4139a47168db4e4bad2d1e", "surface": "semantic proof table"},
+    {"page": 194, "sha256": "6bc4c403029ba43b626c9e12da00a738fc61fed5c87acfe594ce4decc0e4dfce", "surface": "tableau proof tables"},
+    {"page": 234, "sha256": "ab5186bac42f285372debbf71be62b009f78a2c902fc78c5cf071e0e9ca976be", "surface": "chapter 12 formulas and prose"},
+    {"page": 270, "sha256": "989c347bf4594eccd480e53a07cc9e3cef70e79052881f1f138f77bc0e1f0149", "surface": "chapter 14 dense mathematics"},
+    {"page": 297, "sha256": "a969cd84dbc8d1a226361b4fe3aa8750c104835cd19e96f8771b25731dbe5c47", "surface": "first-order semantics"},
+    {"page": 312, "sha256": "586d7b2da037bf22ddc9bad0ea862ad18ebdbe933b131753aa968088349f9c1e", "surface": "chapter 17 transition"},
+    {"page": 323, "sha256": "20c960d9c301f31e340d719e35e9a6514690b573e9e3c12ca6ede59233be6848", "surface": "chapter 18 prose and inline formulas"},
+    {"page": 337, "sha256": "ba6cf33e9a05a232daf0f18e219354391bf4f6a7d83356545d98dc2d90f47391", "surface": "chapter 19 formulas"},
+    {"page": 346, "sha256": "95ef1eda479796a1ca99adcae50eb557a4061b0ee1e299c21c282fdb01166c8b", "surface": "chapter 20 arithmetic-model formulas"},
+    {"page": 374, "sha256": "8e5cd8c26682ccfa220df992251ea3ebcc3b86414296ca09362bd9a8ab86b0dd", "surface": "final table of contents and index links"}
+  ],
+  "findings": {
+    "marathi_devanagari_shaping_at_math_boundaries": "passed",
+    "math_text_fallback_occurrences": 240,
+    "math_text_fallback_unique_phrases": 57,
+    "formula_and_prose_scale_consistent": true,
+    "representative_chapter_layouts": "passed",
+    "proof_tables_legible": true,
+    "diagrams_legible": true,
+    "clipped_or_overlapping_content_observed": false,
+    "unresolved_internal_links": 0
+  },
+  "limitations": [
+    "Representative visual inspection is not a page-by-page certification of every reading system.",
+    "The accepted render is bound by exact equivalence of all renderable content rather than a fresh final-package PDF conversion.",
+    "Reading systems may vary in their native MathML implementation; each outlined mtext fallback retains exact Marathi alternative text."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0060",
+  "method": "Same-agent English/Marathi close reading, tag-case inspection, formula/token comparison and reverse paraphrase with checked native terminology; not independent or human review.",
+  "scope": "Formation sequences, their constructor clauses and examples, existence by formula induction, prefix closure, and equivalence with the inductive definition of formulas.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "Formation sequences give a bottom-up complement to inductive definitions and induction proofs. A finite sequence of L0 symbol strings forms A exactly when its last entry is syntactically A and every entry is atomic or is constructed from earlier indexed entries by an enabled connective.",
+      "checks": "Finiteness, the A-versus-last-entry identity, both strict predecessor indices, every tagged constructor, and the atomic alternative are preserved."
+    },
+    {
+      "blocks": [
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "Both displayed lists form the target negated conjunction; a formation sequence may contain redundant junk. Every formula has a formation sequence, because atoms have singleton sequences and sequences for immediate subformulas can be concatenated with the resulting connective formula.",
+      "checks": "All displayed entries and all five tag-specific constructed sequences remain exact, including repeated and unused entries in the second example."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "reverse_paraphrase": "The converse shows that the inductive and formation-sequence definitions select the same formulas and supports ordinary induction on sequence length. Every initial prefix through k is itself a formation sequence for A_k, and the theorem identifies the formula set with exactly the L0 strings having a formation sequence.",
+      "checks": "The lemma retains k less than or equal to n, the exercise status, the inclusion already proved, and the converse still to be shown."
+    },
+    {
+      "blocks": [
+        16
+      ],
+      "reverse_paraphrase": "Strong induction on the final index n assumes every string with a shorter formation sequence is a formula. The last entry is atomic or has an earlier-index constructor form. In the conjunction case, the prefix lemma supplies shorter sequences for both components, the hypothesis puts both in the formula set, and the formula definition puts their conjunction there; other constructors are parallel.",
+      "checks": "All inequalities, five constructor cases, prefix sequences and inference directions are preserved. The isolated source equivalence sign is corrected to syntactic identity under MRPL-002, consistent with the explicit definition and all adjacent cases."
+    }
+  ],
+  "source_observations": [
+    "MRPL-002"
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "रचनाक्रमिका, the colloquial अडगळ, and प्रबल विगमन remain explicitly prioritized for specialist review."
+  ]
+}

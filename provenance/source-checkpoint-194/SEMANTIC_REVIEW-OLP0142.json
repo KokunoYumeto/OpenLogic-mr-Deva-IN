@@ -1,0 +1,52 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0142",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of the inductive formula definition and structural-induction example, and exact formula, macro, controlled-token, label, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "The introductory formula definition for a simple first-order language, its atomic and constructor clauses, its limiting clause, and the resulting structural-induction method.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7
+      ],
+      "reverse_paraphrase": "Sentences are formulas without free variables, a distinction needed both for a manageable definition and for satisfaction. In the simplified language, P and a are the sole predicate and constant, negation, conjunction and existential quantification are the logical symbols, and a plus infinitely many variables are the current terms; fuller languages also include functions.",
+      "checks": "Free/bound contrast, semantic motivation, simplified inventory, planned generalization, function-built terms and v_i variable supply are retained."
+    },
+    {
+      "blocks": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "Frm contains the displayed atomic formulas, is closed under negation, conjunction and existential quantification, and contains nothing else.",
+      "checks": "Both atomic schemas, the natural-number index, all three constructors, the variable side condition and the limiting clause are exact."
+    },
+    {
+      "blocks": [
+        13
+      ],
+      "reverse_paraphrase": "Starting from atomic formulas, the clauses generate new formulas. Repeated negation and quantification are admitted, including vacuous and nested quantification, while a negation with unsupported outer parentheses is excluded by the limiting clause.",
+      "checks": "Every cited clause, displayed example, inclusion claim and extraneous-parentheses exclusion is preserved."
+    },
+    {
+      "blocks": [
+        14
+      ],
+      "reverse_paraphrase": "The inductive definition supports structural induction: prove the atomic cases and show preservation under negation, conjunction and existential quantification. Replaying those steps reaches the displayed quantified negation, and every formula is generated this way.",
+      "checks": "Both cross-references, all constructor cases, the concrete P(v_2) derivation and the universal generation conclusion remain exact."
+    }
+  ],
+  "source_observations": [
+    "The target uses विगमनाधारित व्याख्या for inductive definition and decision T203 संरचनात्मक विगमन for induction on formula construction.",
+    "The limiting clause is translated with exclusive force and the outer-parenthesis counterexample remains excluded rather than normalized silently.",
+    "All formulas, macros, controlled tokens, labels, identifiers and references match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The language is intentionally simplified and postpones the general definitions.",
+    "The exact Marathi headword संरचनात्मक विगमन is compositional and remains expert-reviewable under T203."
+  ]
+}

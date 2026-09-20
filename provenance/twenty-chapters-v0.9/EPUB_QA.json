@@ -1,0 +1,54 @@
+{
+  "checks": 20549,
+  "epub": {
+    "bytes": 2019669,
+    "path": "releases/twenty-chapters-v0.9/openlogic-mr-twenty-chapters.epub",
+    "sha256": "4d6bf459dd2ae9267568a26e57827c056bf2ecc87b3e2e5cc227dcbee593b970"
+  },
+  "epubcheck": {
+    "messages": 0,
+    "report": "provenance/twenty-chapters-v0.9/EPUBCHECK.json",
+    "report_sha256": "c481120346e2aec67fd3ed892b15225f9274c0fe1e99f9c0e264c20f7ef737f7",
+    "stderr": "",
+    "stdout": "No errors or warnings detected.\nMessages: 0 fatals / 0 errors / 0 warnings / 0 infos\n\nEPUBCheck completed",
+    "version": "5.3.0"
+  },
+  "failures": [],
+  "format": "reflowable EPUB 3",
+  "language": "mr-Deva-IN",
+  "limitations": [
+    "No independent human linguistic or accessibility review is claimed.",
+    "Reading-system support for native MathML varies.",
+    "Representative visual rendering is recorded separately from this structural audit."
+  ],
+  "metrics": {
+    "body_c14n_bytes": 5150613,
+    "external_links": 3,
+    "fragment_links": 895,
+    "local_links": 1150,
+    "mathml_text_fallback_occurrences": 240,
+    "mathml_text_fallback_unique_phrases": 57
+  },
+  "preservation": {
+    "accepted_reader_semantic_text_exact": true,
+    "all_mathml_trees_exact": true,
+    "partial_scope_disclosed": true,
+    "source_checkpoint_bound": true,
+    "source_html_qa_bound": true
+  },
+  "release": "twenty-chapters-v0.9",
+  "schema": "openlogic-marathi-epub3-qa/1",
+  "scope": {
+    "aligned_content_segments": 2063,
+    "complete_chapters": 20,
+    "complete_edition": false,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0197",
+    "reader_sections": 171,
+    "remaining_source_units": 528,
+    "total_source_units": 722,
+    "translated_source_units": 194
+  },
+  "source_release": "twenty-chapters-v0.9",
+  "status": "passed"
+}

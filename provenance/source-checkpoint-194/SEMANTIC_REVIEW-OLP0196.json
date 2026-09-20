@@ -1,0 +1,84 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0196",
+  "method": "Same-agent English/Marathi close reading; exact macro, identifier, token and formula comparison; and proposition-by-proposition replay of the order, block and density arguments. No independent human or native-speaker review is claimed.",
+  "scope": "Structural properties of models of Peano arithmetic: strict linear order and discreteness, the standard initial segment, integer-like blocks of non-standard elements, the induced dense order of blocks and the order-only isomorphism result for enumerable non-standard models.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "Every non-standard model of true arithmetic is a non-standard PA-model. PA-models need not satisfy every truth about the natural numbers, but every theorem of PA holds in them; in particular their interpreted less-than relation is a strict linear order.",
+      "checks": "The theory inclusions, derivability-to-satisfaction implication and three strict-order clauses preserve their source directions and scopes."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "Zero is least, each successor is the immediate next point, and every nonzero element has a unique predecessor. Every standard element lies below every non-standard element because anything below a standard successor must be one of finitely many numeral values.",
+      "checks": "The zero exception is made explicit without changing the successor claim; the finite-disjunction argument and final linear-order step remain intact."
+    },
+    {
+      "blocks": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "reverse_paraphrase": "The block of a non-standard element consists exactly of points a finite standard number of successor steps away in either direction. Each block has order type like the integers, distinct blocks are disjoint, and less-than between representatives induces a well-defined strict order on blocks with the standard block first.",
+      "checks": "Both directions of the finite-addition characterization, all representative cases in the block-order proof and the disjointness contradiction were replayed."
+    },
+    {
+      "blocks": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "reverse_paraphrase": "Adding a non-standard element moves outside the original block. Halving a non-standard element yields a strictly lower different block, there is no greatest block, and halving the sum of representatives produces a distinct block strictly between any two ordered blocks.",
+      "checks": "The cancellation argument, parity alternatives and midpoint inequalities retain their hypotheses. The two averaging formulas now use the unit's defined model-addition symbol."
+    },
+    {
+      "blocks": [
+        35
+      ],
+      "reverse_paraphrase": "When the ambient non-standard model is enumerable, its non-standard blocks form a countable dense linear order without endpoints and hence have the rational order type. Therefore the order-and-equality reducts of any two enumerable non-standard models of true arithmetic are isomorphic, though their addition and multiplication need not be.",
+      "checks": "The newly explicit enumerability hypothesis supplies the countability needed for the rational-order theorem, and the final conclusion remains limited to the order-and-equality language."
+    }
+  ],
+  "source_observations": [
+    "T285 records खंड for the source-defined finite successor/predecessor class; the exact Marathi model-theory headword was not independently attested.",
+    "T286 records the provisional pronunciation-based name form वॉट after a bounded search found no exact official Marathi Vaught occurrence; MR-P128 is only a disclosed orthographic analogue.",
+    "The frozen predecessor proposition and its proof include zero despite Q2; OLFOL-036 records the nonzero restriction.",
+    "The density proof switches to an undefined opulus symbol in two equations; OLFOL-037 records their restoration to the established nsplus notation and the exact QA projections.",
+    "The concluding rational-order claim omits the countability hypothesis that its theorem requires; OLFOL-038 records the enumerable-model restriction.",
+    "All unaffected macros, identifiers, controlled tokens and formulas match the frozen source; the two corrected addition formulas pass documented source projections."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The specialist use of खंड and the Marathi rendering of Vaught remain explicitly expert-reviewable.",
+    "The source leaves the detailed density proof as an exercise; this review checks the stated midpoint mechanism but does not add a solution to the aligned translation.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

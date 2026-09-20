@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0116",
+  "method": "Same-agent English/Marathi block-by-block close reading, forward replay of all three displayed derivations, reverse paraphrase of both strategy discussions, and exact formula, macro, token, label, reference-option and identifier comparison; no independent human or native-speaker review is claimed.",
+  "scope": "Three propositional examples using axiom instances and modus ponens, the general chaining proposition and concatenation proof, and a three-item derivation exercise.",
+  "samples": [
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "To derive not-D-or-E implies D-implies-E, choose an ax:lor3 instance whose two antecedent conditionals come from ax:lnot2 and ax:lif1, then apply modus ponens twice.",
+      "checks": "The assignments A = not-D, B = E and C = D-implies-E, the three axiom references, the two modus-ponens steps and all five derivation lines remain exact."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "A direct ax:lif1 strategy for D-implies-D fails because it would require deriving D alone. Instead, instantiate ax:lif2 with A and C equal to D and choose B as D-implies-D; two ax:lif1 instances and two modus-ponens steps then yield the identity conditional.",
+      "checks": "The failed strategy is not presented as a proof, the successful choice of B is preserved, and every displayed formula and five-line justification sequence is unchanged."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "From Gamma containing A-implies-B and B-implies-C, a seven-line derivation obtains A-implies-C; Hyp marks the two formulas that are elements of Gamma.",
+      "checks": "Both hypotheses, ax:lif1, ax:lif2, the three modus-ponens applications, the Hyp gloss and membership direction are preserved."
+    },
+    {
+      "blocks": [
+        10,
+        11
+      ],
+      "reverse_paraphrase": "If Gamma derives A-implies-B and B-implies-C, concatenate those derivations, append lines 3 through 7 of the preceding pattern, and replace references to lines 1 and 2 by references to the last lines of the two component derivations.",
+      "checks": "The proposition's two premises and conclusion, derivation order, appended line range, final-line claim and both line-reference substitutions remain exact."
+    },
+    {
+      "blocks": [
+        12
+      ],
+      "reverse_paraphrase": "The exercise asks for explicit derivations from the axioms of conjunction commutation, a curried conditional, and one direction of a De Morgan implication.",
+      "checks": "All three target formulas and the requirement to exhibit axiomatic derivations are preserved."
+    }
+  ],
+  "source_observations": [
+    "The identity example deliberately retains the unsuccessful first strategy before giving the successful ax:lif2 construction.",
+    "The chaining proof is a meta-level construction from arbitrary component derivations, not merely the preceding seven-line special case; the Marathi preserves that distinction.",
+    "No formula, macro, token, label, identifier, reference option or proof-line justification was changed."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "समर्थित and सिद्धतायोग्य follow the existing definition-controlled proof vocabulary, while जोडणी follows the recorded didactic term with the formal alternative retained in the terminology ledger.",
+    "The section will enter a cumulative reader only after the axiomatic-deduction chapter is complete."
+  ]
+}

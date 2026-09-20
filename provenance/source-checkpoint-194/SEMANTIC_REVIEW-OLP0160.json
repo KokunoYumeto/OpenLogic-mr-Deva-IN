@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0160",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of the structure/assignment/satisfaction dependency chain, replay of the validity, entailment and satisfiability quantifier patterns, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Introductory account of structures, domains, symbol and variable assignments, satisfaction, sentences and the three basic semantic notions.",
+  "samples": [
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "A structure gives a first-order vocabulary meaning by supplying a nonempty domain, domain elements for constants, self-maps for functions and domain relations for predicates. A variable assignment supplies domain elements for variables. Satisfaction of a formula is then defined relative to both a structure and an assignment by induction on formula construction; for sentences the assignment is irrelevant.",
+      "checks": "The nonempty-domain condition, symbol-class interpretations, variable-assignment role, relative satisfaction notation, inductive dependence on connective truth tables and no-free-variable reason for assignment independence are all retained."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "A sentence is valid when every structure satisfies it, follows semantically from Gamma when every structure satisfying all of Gamma also satisfies it, and a sentence set is satisfiable when one structure satisfies every member simultaneously. Induction can then establish properties and relationships among these notions.",
+      "checks": "Universal versus existential structure quantification, simultaneous satisfaction, the two displayed entailment forms and the formula-structure induction claim are preserved."
+    }
+  ],
+  "source_observations": [
+    "The translation keeps model-theoretic validity and entailment distinct from proof-theoretic derivation.",
+    "The quantifier-domain sentence avoids reusing the syntactic scope term for semantic ranging.",
+    "All formulas, macros, controlled tokens, identifiers and references match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The edition-wide चिन्हार्थमीमांसा and तार्किक निष्पन्नता choices remain explicitly open to specialist review in T012 and T123."
+  ]
+}

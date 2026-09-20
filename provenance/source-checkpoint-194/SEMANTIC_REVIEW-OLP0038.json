@@ -1,0 +1,38 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0038",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase; not independent or human review.",
+  "scope": "All fifteen translated content blocks defining and illustrating set-theoretic enumeration and enumerability.",
+  "samples": [
+    {
+      "reverse_paraphrase": "A finite set displayed as a_1 through a_n corresponds bijectively to the first n natural numbers, and an infinite set is enumerated by a bijection with Nat.",
+      "checks": "Finiteness, distinctness, both correspondence directions, n-1 and the full-Nat condition remain present."
+    },
+    {
+      "reverse_paraphrase": "An enumeration of A is a bijection onto A whose domain is either an initial natural-number segment or all natural numbers.",
+      "checks": "Bijection, range, domain alternatives and the displayed initial segment are preserved."
+    },
+    {
+      "reverse_paraphrase": "A is enumerable exactly when it is empty or has an enumeration; it is nonenumerable exactly when it is not enumerable.",
+      "checks": "Both biconditionals, the empty-set case and the negation are explicit."
+    },
+    {
+      "reverse_paraphrase": "Identity enumerates Nat, successor enumerates the positive naturals, and the doubling and odd-successor maps enumerate the even and odd naturals without enumerating Nat.",
+      "checks": "Domains, codomains, formulas, even/odd order and failure of surjectivity onto Nat are retained."
+    },
+    {
+      "reverse_paraphrase": "The alternating ceiling formula enumerates the integers as 0,-1,1,-2,2,..., with the equivalent even/odd cases unchanged.",
+      "checks": "Ceiling direction, signs, table entries and both piecewise branches match the source."
+    },
+    {
+      "reverse_paraphrase": "Binary unions and, by induction, finite unions of enumerable sets are enumerable.",
+      "checks": "Both exercises retain their hypotheses, unions and induction variable n."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "T060 and T062 are descriptive Marathi renderings without exact specialist attestation.",
+    "No independent linguistic certification has been performed."
+  ]
+}

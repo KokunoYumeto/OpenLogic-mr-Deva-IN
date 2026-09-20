@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0185",
+  "method": "Same-agent English/Marathi block-by-block close reading, replay of every domain and interpretation-agreement clause, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Substructures and their extensions for a fixed language, including the relation-only special case.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5
+      ],
+      "reverse_paraphrase": "A structure whose domain is contained in another structure's domain counts as a part only when the two structures also agree on the language-symbol interpretations over the shared smaller domain.",
+      "checks": "Domain inclusion is retained as necessary but explicitly insufficient, and the shared-domain interpretation condition is preserved."
+    },
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "For structures in one language, M is a substructure of M-prime and M-prime an extension of M exactly when the domains are included, constants agree, function values agree on every tuple from M, and predicate membership agrees on every such tuple.",
+      "checks": "The direction of the substructure symbol and all four clauses, including arities and tuple scopes, are exact."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "If the language has no constants or function symbols, every subset N of M's domain determines the substructure with domain N by restricting each predicate interpretation to N to the n-th power.",
+      "checks": "The no-constant/no-function hypothesis, arbitrary subset, new domain and relation restriction equation are retained."
+    }
+  ],
+  "source_observations": [
+    "MR-P120 directly attests उपसंरचना and MR-P121 attests the mathematical extension stem वर्धन; T273 records the edition-normalized pair उपरचना / वर्धित रचना.",
+    "The translation keeps domain extension distinct from the signature expansion defined in OLP-0184.",
+    "All formulas, macros, controlled tokens, identifiers and references match the frozen source exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact full pair उपरचना / वर्धित रचना is not directly attested in a checked Marathi model-theory source and remains expert-reviewable.",
+    "The frozen source leaves an editorial comment asking for a proof or examples; no content was invented to answer it.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

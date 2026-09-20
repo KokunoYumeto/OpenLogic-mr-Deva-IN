@@ -1,0 +1,71 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0151",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of the symbol inventory and examples, branch-by-branch review of conditional TeX, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "First-order language vocabulary; logical and non-logical symbol inventories; restricted example languages; primitive and defined notation; alternate symbols; and functional and expressive completeness.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "First-order languages build terms and formulas from variables, constants, predicates and sometimes functions, together with logical notation. Predicates name properties or relations, constants name individuals and functions name mappings; apart from identity these are the non-logical symbols that determine a language.",
+      "checks": "The four vocabulary classes, term/formula distinction, punctuation, identity exception, language-determination claim and unbounded general inventory are retained."
+    },
+    {
+      "blocks": [
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "The general inventory divides logical symbols, variables, non-logical predicates/constants/functions and punctuation. The standard language has denumerably many symbols of each indicated arity, although applications may restrict the non-logical stock.",
+      "checks": "Every connective, quantifier, truth constant, identity symbol, displayed indexed family, n-greater-than-zero condition and restriction clause remains in its original class."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "Arithmetic uses less-than, zero, successor, addition and multiplication; set theory uses membership; order theory uses less-than-or-equal. These familiar marks are aliases for the indexed official symbols.",
+      "checks": "All arities and the exact alias mapping to A-zero-two, c-zero, f-zero-one, f-zero-two and f-one-two are preserved."
+    },
+    {
+      "blocks": [
+        15,
+        16
+      ],
+      "reverse_paraphrase": "When tags select them, additional connectives, quantifiers and truth constants are defined symbols. They abbreviate long primitive formulas and shorten proofs because every primitive symbol needs its own proof treatment.",
+      "checks": "All tag conditions and branch alternatives are unchanged, and the distinction between language membership and informal abbreviation remains explicit."
+    },
+    {
+      "blocks": [
+        18,
+        19
+      ],
+      "reverse_paraphrase": "Logic uses many alternative marks and names for connectives and truth constants. Constants conventionally use early lowercase Latin letters, variables use later ones, and both quantifiers have several notational variants.",
+      "checks": "Each alternate symbol, terminology group, letter convention and universal/existential notation list is retained without reassignment."
+    },
+    {
+      "blocks": [
+        20,
+        21
+      ],
+      "reverse_paraphrase": "A language may take all operators as primitive or define some from a smaller stock. Three displayed Boolean bases plus either quantifier yield an expressively complete first-order language; Sheffer stroke and Peirce arrow are individually truth-functionally complete under nand and nor readings.",
+      "checks": "The three operator sets, either-quantifier condition, named operators, eponyms, respective nand/nor readings and two distinct completeness notions are preserved."
+    }
+  ],
+  "source_observations": [
+    "The target keeps identity among the logical symbols and predicates, constants and functions among the non-logical symbols.",
+    "The target distinguishes denumerability from arbitrary infinity and preserves every displayed arity.",
+    "Every conditional TeX tag, formula, macro, controlled token, identifier and reference matches exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The long terminology lists include conventional transliterations and provisional compounds flagged in the decision ledger for expert review.",
+    "The source treats its familiar mathematical symbols as aliases for a fixed indexed standard language; other presentations may take those symbols as primitive in their own signatures."
+  ]
+}

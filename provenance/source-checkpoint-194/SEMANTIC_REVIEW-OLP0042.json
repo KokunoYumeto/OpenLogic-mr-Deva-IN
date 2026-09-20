@@ -1,0 +1,58 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0042",
+  "method": "Same-agent English/Marathi close reading, formula-by-formula comparison and reverse paraphrase; not independent or human review.",
+  "scope": "All twelve translated content blocks in the integers section, including proof steps, the quotient definition, representative notation, operation/order definitions, footnote, commented proof material and exercise.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "Every integer can be represented by a difference of naturals and that data by an ordered pair, but pairs themselves cannot be identified with integers because equal differences such as 0−2 and 4−6 come from unequal pairs.",
+      "checks": "The motivating representation, the deliberately naive proposal, its counterexample and the rejection of Nat-squared as the integer set all remain explicit."
+    },
+    {
+      "blocks": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "Pairs (a,b) and (c,d) are equivalent exactly when a+d=c+b. Reflexivity uses commutativity; symmetry reverses the equality; transitivity combines the two assumed equalities and cancels the common terms to obtain a+n=m+b.",
+      "checks": "The iff condition, proposition and every displayed or inline equality in the three-part proof are unchanged; property labels remain distinct."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "Integers are the equivalence classes of pairs of naturals under Intequiv. The text then postpones possible philosophical reactions to this stipulative definition while developing technical details.",
+      "checks": "The quotient expression Int=Nat²/Intequiv and the philosophical-versus-technical transition are preserved."
+    },
+    {
+      "blocks": [
+        14
+      ],
+      "reverse_paraphrase": "The class containing (m,n) gets a readable representative notation. Addition, multiplication and order on classes are defined by the exact displayed representatives and cross-sum inequality, with full well-definedness checks deferred to the cited section.",
+      "checks": "Representative notation, element token, footnote reference, set-builder condition, all three operation/order definitions and the check-section reference have exact structural parity."
+    },
+    {
+      "blocks": [
+        15
+      ],
+      "reverse_paraphrase": "Because the constructed naturals are not literally the constructed integers, n is embedded as the class [n,0]. The embedding must preserve addition, multiplication and order; multiplication is derived line by line, and the other two conditions are assigned as an exercise.",
+      "checks": "All three compatibility laws, four multiplication derivation lines, commented proof material, reference and exercise are retained without changing mathematical symbols."
+    }
+  ],
+  "source_observations": [],
+  "terminology_evidence": [
+    "MR-P037 is an original-hash and image-hash anchored textbook passage for पूर्णांक.",
+    "MR-P038 is a short official web observation for संकेतजनक व्याख्या; its cross-disciplinary limitation is recorded."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic or mathematical certification has been performed."
+  ]
+}

@@ -58,6 +58,32 @@
       "lane_disposition": "The Marathi B≈C expression is retained as an equivalent focused conclusion. Its adjacent note now states the equivalence; MRINF-003 is excluded from source-error reporting and no upstream contact is warranted.",
       "historical_record_disposition": "Published historical checkpoints remain immutable and are superseded for current interpretation by this retraction record.",
       "root_cause": "The initial review treated the inner typesetting macro invocation as a typed set argument instead of expanding the two-argument macro literally."
+    },
+    {
+      "retraction_id": "OLFOL-009-RETRACTION-20260920",
+      "status": "FINAL_RETRACTION_FALSE_POSITIVE_SOURCE_DEFECT_CLAIM",
+      "void_shared_identifier": "OLFOL-009",
+      "unit_id": "OLP-0156",
+      "source_path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "source_bytes": 10074,
+      "source_sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01",
+      "confirmed_macro_evidence": {
+        "configuration_path": "open-logic-config.sty",
+        "configuration_bytes": 50435,
+        "configuration_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+        "definition_line": 1129,
+        "definition_summary": "Atom accepts two mandatory arguments and prints the first followed by the parenthesized second",
+        "frozen_expression": "\\Atom{\\Obj f^1_0}{\\Atom{\\Obj f^2_0}{\\Obj c_0, \\Obj v_0}}",
+        "trailing_brace_interpretation": "The first trailing brace closes the inner Atom invocation's second argument; the second closes the outer Atom invocation's second argument. No third brace is required.",
+        "interpretation": "The frozen nested Atom expression is syntactically balanced and denotes the intended unary-function application to a binary-function term."
+      },
+      "lane_disposition": "Removed the invalid extra brace and adjacent Marathi reader note, removed the unit-specific QA projection, restored exact structural parity with the frozen balanced expression, and reclassified the durable OLFOL-009 record as retracted.",
+      "restored_target_bytes": 18146,
+      "restored_target_sha256": "9f7d5203c75dc5472d2819f781e5bee4243e8acabb0f283928c317ac7f2721b4",
+      "source_issues_b008_sha256": "a540c9b59b71f00e19bfcc8a735148adcb80031c41c7a951c3a9e04d5240fe9b",
+      "semantic_review_olp0156_sha256": "351744b21f093ac8870327904d27926135af1325a1bbed5f2d2652286f142712",
+      "historical_record_disposition": "Published historical checkpoints remain immutable and are superseded for current interpretation by this retraction record.",
+      "root_cause": "The earlier review counted command-group closures without expanding the nested two-argument Atom macro, so it mistook the already sufficient two closing braces for a missing third brace."
     }
   ]
 }

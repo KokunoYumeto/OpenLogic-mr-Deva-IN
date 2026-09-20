@@ -1,2 +1,6 @@
 # Preserve frozen source and artifact bytes across platforms.
 * -text
+
+# Release TeX is the exact assembled build input; mixed indentation can occur
+# inside preserved tabular source and must not be rewritten after PDF binding.
+releases/*/*.tex whitespace=-space-before-tab

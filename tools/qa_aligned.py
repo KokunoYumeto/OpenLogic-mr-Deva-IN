@@ -196,8 +196,6 @@ _DOCUMENTED_PROJECTIONS = {
         ('$m_1,\\dotsc,m_k < i$', '$m_0,\\dotsc,m_k < i$'),
         ('$t_i \\ident f(t_{m_1},\\dotsc,t_{m_k})$',
          '$t_i \\ident f(t_{m_0},\\dotsc,t_{m_k})$'),
-        ('$\\Atom{\\Obj f^1_0}{\\Atom{\\Obj\nf^2_0}{\\Obj c_0, \\Obj v_0}}}$',
-         '$\\Atom{\\Obj f^1_0}{\\Atom{\\Obj\nf^2_0}{\\Obj c_0, \\Obj v_0}}$'),
         ('$!A_n \\in \\Frm[L]$. त्याऐवजी',
          '$!A_n \\in \\Frm[L_0]$. त्याऐवजी'),
         ('$!A \\ident (!A_j \\land !A_k)$ असे समजा.',

@@ -1,0 +1,75 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0158",
+  "method": "Same-agent English/Marathi block-by-block close reading, constructor-by-constructor replay of term and formula substitution, verification of both free-for examples and the variable-capture counterexample, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Recursive substitution in terms and formulas, the free-for condition, variable capture, vacuous substitution, and quantified-formula instances.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "Substitution in a term leaves constants and nonmatching variables alone, replaces the matching variable by t, and recursively substitutes in every function argument.",
+      "checks": "All four term constructors, the syntactic nonidentity side condition and every displayed substitution expression are retained."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "A term t is free for x in A exactly when no free occurrence of x lies under a quantifier that binds a variable appearing in t; v8 passes the test in the existential example, while f(v1,v2) fails it under forall-v2.",
+      "checks": "The condition quantifies over free x-occurrences and variables of t, and both examples preserve their binder and argument positions."
+    },
+    {
+      "blocks": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "reverse_paraphrase": "Formula substitution replaces every free x by t and commutes recursively with truth constants, atomic formulas, equality, connectives and quantifiers; a quantifier with variable x blocks descent into its body.",
+      "checks": "Both truth constants, predicate arguments, both equality terms, five connective constructors and both quantifiers retain their exact substitution outputs and side condition."
+    },
+    {
+      "blocks": [
+        24
+      ],
+      "reverse_paraphrase": "Substitution is vacuous when x does not occur in A at all.",
+      "checks": "The no-occurrence hypothesis and unchanged-formula conclusion are retained."
+    },
+    {
+      "blocks": [
+        25
+      ],
+      "reverse_paraphrase": "Substituting y for x in exists-y(x<y) would capture the formerly free y and yield the false exists-y(y<y), even though forall-x exists-y(x<y) is true over the natural numbers; the free-for condition prevents this.",
+      "checks": "Every example formula, the capture mechanism, truth contrast and final prevention condition are preserved."
+    },
+    {
+      "blocks": [
+        26
+      ],
+      "reverse_paraphrase": "A(x) signals that x may occur free; when t is free for x, A(t) abbreviates the substitution and is called an instance of forall-x A(x).",
+      "checks": "The convention, free-for assumption, abbreviation direction and final general instance statement are retained."
+    }
+  ],
+  "source_observations": [
+    "The free-for condition prevents capture rather than requiring x actually to occur, so vacuous substitution remains allowed.",
+    "The quantifier clauses stop when the binder is x and otherwise recurse, relying on the global free-for condition to exclude capture by a different binder.",
+    "All formulas, macros, controlled tokens, identifiers and references match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The Marathi free-for, capture and instance vocabulary remains explicitly open to specialist review in T216 and T217."
+  ]
+}

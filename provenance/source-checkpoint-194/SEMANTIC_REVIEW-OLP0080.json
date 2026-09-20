@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0080",
+  "method": "Same-agent English/Marathi block-by-block close reading, theorem-and-proof reverse paraphrase, exact formula, macro, token and identifier comparison; no independent human or native-speaker review is claimed.",
+  "scope": "Quantifier consequences of sequent-calculus derivability: strong generalization under an eigenvariable condition, existential-right derivability and universal-left derivability.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5
+      ],
+      "reverse_paraphrase": "The section concerns derivability and explains that the sequent-calculus rules must yield the facts about the Proves relation needed by the completeness theorem.",
+      "checks": "The heading, quantifier scope, Proves notation and completeness role are preserved."
+    },
+    {
+      "blocks": [
+        6,
+        7
+      ],
+      "reverse_paraphrase": "If a constant c does not occur in Gamma or A(x), and Gamma derives A(c), then Gamma derives the universal closure of A. A finite Gamma-zero derivation is extended by universal-right; absence of c in the lower sequent satisfies the eigenvariable condition.",
+      "checks": "The theorem label, constant condition, finite-subset witness, universal-right rule, eigenvariable condition and both derivation formulas remain exact."
+    },
+    {
+      "blocks": [
+        8,
+        9
+      ],
+      "reverse_paraphrase": "A(t) derives the existential quantification of A, and the universal quantification of A derives A(t). The two proof trees use existential-right and universal-left respectively from the initial sequent A(t) to A(t).",
+      "checks": "Both tagged proposition items, all quantifier formulas, protected tags, rule labels and derivation claims are preserved without adding a side condition."
+    }
+  ],
+  "source_observations": [
+    "The frozen source continues the quantifier consequences of the sequent-calculus chapter; no upstream defect or correction was identified in this unit."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "संख्यापक, सिद्धतायोग्यता, आयगेन चर and आयगेन चराची अट follow the edition's established quantifier and eigenvariable decisions; the frozen side condition controls the exact meaning.",
+    "स्थिर is a concise rendering of the first-order constant in this theorem; the displayed formulas and occurrence restriction control its formal sense.",
+    "The current coherent reader ends at OLP-0068, so this unit has not yet received paginated TeX or browser-rendering QA."
+  ]
+}

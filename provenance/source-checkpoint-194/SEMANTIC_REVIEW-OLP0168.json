@@ -1,0 +1,48 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0168",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of the closure and axiomatization definitions, replay of all six model-theoretic uses of an axiom system, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "The axiomatic method, closure under semantic entailment, axiomatization of a theory, intended models, consistency, independence and definability.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "The axiomatic method clarifies a field's subject, basic concepts, their relations, definitions and laws. Formal logic then supplies precise tools for stating axiomatic theories, deriving theorems and studying every system satisfying the axioms.",
+      "checks": "The historical importance, all five guiding questions, the do-versus-must distinction and all three roles of formal logic are retained."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "A sentence set Gamma is closed exactly when it contains every sentence it entails. Its closure is the set of all such consequences, and Delta axiomatizes Gamma exactly when Gamma is Delta's closure.",
+      "checks": "Both biconditional forces, set membership, semantic entailment and the displayed set-builder expression are preserved."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "An axiomatic theory may be identified with every sentence entailed by its axiom set in a first-order language for the science's primitive concepts, from partial-order theories to Newtonian mechanics.",
+      "checks": "The roles of the language, nonlogical symbols, fundamental laws, consequence closure and both endpoint examples are retained."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "An axiom set can characterize exactly the intended structures; unintended models motivate added axioms; semantic consequences hold in every intended structure; a model witnesses consistency; entailment and satisfiability test axiom redundancy and independence; and definability determines which relations need primitive symbols.",
+      "checks": "All six numbered claims, every direction and qualification, the two independence tests, the parallel-postulate example, and the non-strict/strict-order example are retained."
+    }
+  ],
+  "source_observations": [
+    "No deterministic frozen-source defect requiring a Marathi correction was found in this unit.",
+    "All formulas, macros, controlled tokens, identifiers and references match the frozen source exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact Marathi compounds for semantic axiomatization, axiom independence, definability and entailment closure remain explicitly open to specialist review in T225 through T228.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

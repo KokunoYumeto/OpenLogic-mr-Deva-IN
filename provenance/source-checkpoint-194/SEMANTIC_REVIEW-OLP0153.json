@@ -1,0 +1,89 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0153",
+  "method": "Same-agent English/Marathi block-by-block close reading, replay of both ambiguity parses and the balanced-parenthesis induction, reconstruction of the proper-prefix argument, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Unique readability, balanced parentheses, proper prefixes, unique atomic decomposition and the general unique-readability proof.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "Formation rules give each formula one construction and reading. Without connective parentheses, D conditional D conditional D admits two parses, causing the supposed main-operator function to select different conditional occurrences.",
+      "checks": "Both construction orders, both B/C parses, the two operator occurrences and the exactly-one functional requirement are retained."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "reverse_paraphrase": "Every formula has equally many opening and closing parentheses. Structural induction handles atomic truth constants, predicate and identity atoms, negation, binary constructors and quantifiers, using the corresponding term fact where needed.",
+      "checks": "The induction basis and preservation step are distinguished, l/r notation is fixed, the term exercise is retained, and every displayed equality chain remains exact."
+    },
+    {
+      "blocks": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "reverse_paraphrase": "B is a proper prefix of A when appending a nonempty string to B yields A. No proper prefix of a formula is itself a formula; its proof is assigned as an exercise.",
+      "checks": "Nonemptiness, direction of concatenation, the negated formula conclusion and the exact exercise reference are retained."
+    },
+    {
+      "blocks": [
+        26,
+        27,
+        28
+      ],
+      "reverse_paraphrase": "An atomic formula has exactly one of the truth-constant, predicate-application or identity forms, with every predicate and term component uniquely fixed. The proof and a term analogue of the prefix lemma are exercises.",
+      "checks": "All tag-conditioned cases, arities, component lists, syntactic-identity signs and both referenced exercises remain intact."
+    },
+    {
+      "blocks": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "reverse_paraphrase": "Every formula belongs to exactly one atomic, connective or quantified form, and its immediate component formula or formulas are uniquely determined; two different binary decompositions therefore cannot coexist.",
+      "checks": "Every selected constructor, exclusivity claim, unique-component claim and nested tag fallback is preserved."
+    },
+    {
+      "blocks": [
+        37,
+        38,
+        39
+      ],
+      "reverse_paraphrase": "Non-atomic beginnings distinguish the constructor classes. For two binary parses of the same string, equal left components force equal operators and right components; unequal left components make one a proper prefix of the other, contradicting the prefix lemma.",
+      "checks": "The opening-symbol split, three required equalities, substring position/length reasoning and contradiction direction are retained."
+    }
+  ],
+  "source_observations": [
+    "The target uses one term for unique readability throughout and keeps it distinct from semantic interpretation.",
+    "The proof's metalinguistic syntactic identity remains distinct from object-language equality.",
+    "All formulas, macros, controlled tokens, identifiers and references match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The proper-prefix lemma and atomic uniqueness result are left as exercises in the source.",
+    "The proof's list of symbols that force atomicity is reproduced as stated; later syntax definitions govern all edge cases."
+  ]
+}

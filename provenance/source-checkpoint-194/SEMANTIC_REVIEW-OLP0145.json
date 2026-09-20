@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0145",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of assignment independence and the three semantic definitions, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Assignment independence for sentences, and the introductory definitions of validity, entailment and satisfiability.",
+  "samples": [
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "Only values assigned to free variables of A can affect M satisfying A under s. Since sentences have no free variables, satisfaction is assignment-independent: truth for every assignment is equivalent to truth for at least one assignment.",
+      "checks": "The convenience totality, free-variable restriction, proof promise, sentence condition, universal/existential assignment equivalence and formula/sentence contrast are retained."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "A is valid when every structure satisfies it; Gamma entails A when every structure satisfying all members of Gamma also satisfies A; and a sentence set is satisfiable when one structure satisfies all its members simultaneously.",
+      "checks": "All quantifier strengths, the Gamma premise set, simultaneous satisfaction and both entailment notations remain exact."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "Inductive formula formation and inductive satisfaction permit proofs of semantic properties and relationships. These results prepare the comparison between semantics and derivation systems, together with further precisely defined syntactic notions and operations.",
+      "checks": "Both induction dependencies, individual and instrumental motivations, semantics/derivation relation and postponed syntactic definitions are preserved."
+    }
+  ],
+  "source_observations": [
+    "The target keeps validity, entailment and satisfiability distinct and preserves every/all/some quantifier force in their definitions.",
+    "Assignment independence is stated only for sentences, while formulas continue to use assignment-relative satisfaction.",
+    "All formulas, macros, controlled tokens, identifiers and references match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The claimed assignment-independence result is motivated here and proved later.",
+    "The Marathi heading is a transparent composition from established semantics and concept terminology rather than a separately attested full title."
+  ]
+}

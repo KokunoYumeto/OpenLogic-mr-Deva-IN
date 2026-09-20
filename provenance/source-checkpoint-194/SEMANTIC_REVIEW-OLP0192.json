@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0192",
+  "method": "Same-agent English/Marathi close reading; exact macro, identifier, token and formula comparison; and a model-theoretic replay of the standard/non-standard distinction and the incompleteness example. No independent human or native-speaker review is claimed.",
+  "scope": "The models-of-arithmetic introduction: the standard natural-number structure, an isomorphic string-domain presentation, compactness-based non-standard models, standard numerals and the consistency-statement example.",
+  "samples": [
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "The standard arithmetic structure has domain N and the usual zero, successor, addition and multiplication operations. Replacing each natural number by a finite string of a's yields a structure with the same relationships, hence an isomorphic structure.",
+      "checks": "All four interpretation equations, the two domains and the distinction between changing domain elements and preserving their interpreted relationships are intact."
+    },
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "Compactness gives models of every theory true in N that are not isomorphic to N. In a standard model every element is the value of a standard numeral; a non-standard model has at least one element unequal to every such value.",
+      "checks": "The universal quantification over all n, the existential non-standard element and the isomorphism criterion retain their original scopes."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "Non-standard elements behave as infinite natural numbers and explain how PA plus the negation of its consistency statement can have models. Such a model contains a non-standard witness coded as a PA derivation of contradiction, although PA refutes every standard numeral as that witness.",
+      "checks": "The consistency sentence, both independence claims, non-satisfaction by N, model conclusion and final standard-numeral refutations are preserved. The malformed one-argument proof-predicate occurrence is repaired to use the bound witness x as its first argument."
+    }
+  ],
+  "source_observations": [
+    "MR-P126 directly attests संख्यांक for numeral and MR-P127 directly attests उत्तरवर्ती for successor; the full model-theory compounds remain source-defined and reviewable.",
+    "मानक and प्रतिमान follow existing edition decisions; OpenLogic itself controls the standard/non-standard contrast by isomorphism and exhaustion by numeral values.",
+    "The frozen source's existential witness formula omits x from the binary proof predicate even though the consistency definition and final numeral instances both supply that first argument; OLFOL-029 records the bounded correction.",
+    "All macros, identifiers, controlled tokens and unaffected formulas match the frozen source; the one corrected formula passes the documented source-correction projection."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No exact authoritative Marathi headwords were found for the complete compounds standard model, non-standard model, standard numeral, incompleteness phenomenon or Gödel number.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

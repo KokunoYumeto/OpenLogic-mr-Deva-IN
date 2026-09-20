@@ -1,0 +1,48 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0043",
+  "method": "Same-agent English/Marathi close reading, formula comparison and reverse paraphrase; not independent or human review.",
+  "scope": "All five translated content blocks in the rationals section, including the quotient construction, operation/order definitions, correction note and exercises.",
+  "samples": [
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "A rational i/j uses integer numerator and nonzero integer denominator and can be encoded by a pair, but pairs cannot be rationals directly because 3/2 and 6/4 are equal while their pairs differ. Ratequiv identifies pairs exactly by cross multiplication.",
+      "checks": "The domain excludes zero denominators, both motivating equalities remain, the cross-product iff is exact, and the equivalence-relation exercise precedes the quotient definition."
+    },
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "Rationals are Ratequiv equivalence classes of integer pairs whose second component is nonzero.",
+      "checks": "The full quotient expression Rat=(Int×(Int\\{0_Int}))/Ratequiv is structurally unchanged."
+    },
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "Addition and multiplication of rational classes use the displayed common-denominator and componentwise-product representatives. Order is defined by requiring s−r to have a nonnegative numerator and positive denominator.",
+      "checks": "Every representative formula is unchanged. The isolated English r−s typo was corrected to s−r because the preceding clause and following display both require s−r; MRARITH-001 records the delta."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "Well-definedness is deferred to the checking section. Each integer i is embedded as the rational class [i,1], and the exercise asks that this embedding preserve addition, multiplication and order.",
+      "checks": "Both references, the embedding formula and all three compatibility formulas are preserved."
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "MRARITH-001",
+      "finding": "The source's middle order-explanation expression reverses s−r to r−s.",
+      "resolution": "Corrected in Marathi with adjacent note; frozen English unchanged; exact QA projection passes."
+    }
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic or mathematical certification has been performed."
+  ]
+}

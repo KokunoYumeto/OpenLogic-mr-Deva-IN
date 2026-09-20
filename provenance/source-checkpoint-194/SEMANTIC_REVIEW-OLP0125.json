@@ -1,0 +1,47 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0125",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse paraphrase of both identity axiom schemas and their two derivability consequences, direct replay of the two modus-ponens applications, and exact formula, macro, token, label and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Identity in axiomatic deduction: the reflexivity and substitutivity axiom schemas, their validity exercise, and the resulting derivability principles.",
+  "samples": [
+    {
+      "blocks": [
+        1,
+        5,
+        6
+      ],
+      "reverse_paraphrase": "The unit belongs to axiomatic deduction and extends the unchanged definition of derivation by allowing new identity axiom schemas.",
+      "checks": "The heading retains both controlled token macros. OLAXD-009 changes only the stale chapter comment from axiomatic-proofs to the path- and file-ID-consistent axiomatic-deduction."
+    },
+    {
+      "blocks": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "For closed terms, identity is reflexive and an identity t1=t2 licenses the conditional from B(t1) to B(t2). Both schemas are valid; their validity proof is assigned as an exercise and repeated as a problem.",
+      "checks": "Both axiom labels, all term indices, the nested conditional, closed-term restriction, validity claim and indexed problem reference are exact."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "Every term derives its self-identity relative to any Gamma. If Gamma derives A(t1) and t1=t2, it derives A(t2): the displayed instance of id2 combines with those two premises by two applications of modus ponens.",
+      "checks": "The two proposition directions, all three derivability formulas, displayed axiom instance, id2 reference and exact count of modus-ponens applications are preserved."
+    }
+  ],
+  "source_observations": [
+    "OLAXD-009 records that the frozen header says axiomatic-proofs although the manifest path, directory and fol/axd/ide identifier all place the unit in axiomatic-deduction.",
+    "The formal definition restricts the two new axiom schemas to closed terms, while the first following proposition repeats the frozen phrase any term; the translation preserves that wording without silently narrowing the proposition.",
+    "All formulas, macros, controlled tokens, labels, identifiers and reference options match exactly; the only source correction is a non-rendered comment."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The specialist identity and axiomatic-derivation vocabulary remains governed by provisional decisions T031, T167 and T184.",
+    "The frozen source leaves validity of the identity schemas as an exercise; the translation does not supply that proof."
+  ]
+}

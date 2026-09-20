@@ -582,7 +582,11 @@ def _replace_args(text, command, count, formatter, optional=False):
                 opt, pos = _balanced_square(text, pos)
         replacement = formatter(args, opt)
         text = text[:start] + replacement + text[pos:]
-        cursor = start + len(replacement)
+        # Re-scan the replacement itself: an outer macro argument can contain
+        # another occurrence of the same command (for example nested \Value or
+        # \Atom expressions). Every formatter removes its own outer command,
+        # so this converges while preserving the nested expression.
+        cursor = start
     return text
 
 
@@ -681,6 +685,15 @@ def expand_proof_math_macros(text):
         lambda args, _: r"\forall"
         + ((" {" + args[0] + "}") if args else "")
         + (r"\," + args[1] if len(args) > 1 else ""),
+    )
+    # Equality uses an xparse slash token for negation.  Preserve that token
+    # before expanding the ordinary command name so ``\eq/[s][t]`` becomes a
+    # semantic not-equal expression instead of the literal text ``=/[s][t]``.
+    text = re.sub(r"\\eq/(?![A-Za-z])", r"\\eqNeg", text)
+    text = _replace_optional_math_command(
+        text,
+        "eqNeg",
+        lambda args, _: (args[0] + r"\neq " + args[1]) if len(args) == 2 else r"\neq",
     )
     text = _replace_optional_math_command(
         text,
@@ -795,11 +808,172 @@ def expand_reader_math_macros(text):
         lambda args, _: r"\mathrm{Frm}"
         + (r"(\Lang{" + args[0] + "})" if args else ""),
     )
-    text = expand_proof_math_macros(text)
-    text = re.sub(r"\\Lang\{([A-Za-z])([^{}]*)\}", r"\\mathcal{\1}\2", text)
+    text = _replace_optional_math_command(
+        text,
+        "Trm",
+        lambda args, _: r"\mathrm{Trm}"
+        + (r"(\mathcal{" + args[0] + "})" if args else ""),
+    )
+    text = _replace_optional_math_command(
+        text,
+        "Sent",
+        lambda args, _: r"\mathrm{Sent}"
+        + (r"(\mathcal{" + args[0] + "})" if args else ""),
+    )
+    text = re.sub(r"\\elemequiv/(?![A-Za-z])", r"\\elemequivNeg", text)
+    text = _replace_optional_math_command(
+        text,
+        "elemequivNeg",
+        lambda args, _: r"\not\equiv" + ("_{" + args[0] + "}" if args else ""),
+    )
+    text = _replace_optional_math_command(
+        text,
+        "elemequiv",
+        lambda args, _: r"\equiv" + ("_{" + args[0] + "}" if args else ""),
+    )
+    text = re.sub(r"\\iso/(?![A-Za-z])", r"\\isoNeg", text)
+    text = _replace_optional_math_command(
+        text,
+        "isoNeg",
+        lambda args, _: r"\not\simeq" + ("_{" + args[0] + "}" if args else ""),
+    )
+    text = _replace_optional_math_command(
+        text,
+        "iso",
+        lambda args, _: r"\simeq" + ("_{" + args[0] + "}" if args else ""),
+    )
+    text = _replace_optional_math_command(
+        text,
+        "lambd",
+        lambda args, _: r"\lambda"
+        + ((" " + args[0]) if args else "")
+        + ((r".\," + args[1]) if len(args) > 1 else ""),
+    )
+    text = text.replace(r"\mSat/", r"\mSatNeg")
+    text = _replace_args(
+        text,
+        "mSatNeg",
+        2,
+        lambda args, opt: r"\mathfrak{" + args[0] + "}"
+        + ("," + opt if opt else "")
+        + r"\nVdash "
+        + args[1],
+        optional=True,
+    )
+    text = _replace_args(
+        text,
+        "mSat",
+        2,
+        lambda args, opt: r"\mathfrak{" + args[0] + "}"
+        + ("," + opt if opt else "")
+        + r"\Vdash "
+        + args[1],
+        optional=True,
+    )
+    text = _replace_optional_math_command(
+        text,
+        "OPrf",
+        lambda args, _: r"\mathsf{Prf}" + ("_{" + args[0] + "}" if args else ""),
+    )
+    text = _replace_optional_math_command(
+        text,
+        "OCon",
+        lambda args, _: r"\mathsf{Con}" + ("_{" + args[0] + "}" if args else ""),
+    )
+    text = _replace_args(
+        text,
+        "Domain",
+        1,
+        lambda args, _: r"\left|\mathfrak{" + args[0] + r"}\right|",
+    )
+    text = _replace_args(
+        text,
+        "Theory",
+        1,
+        lambda args, _: r"\mathrm{Th}(\mathfrak{" + args[0] + "})",
+    )
+    text = _replace_args(
+        text,
+        "Expan",
+        2,
+        lambda args, _: r"(\mathfrak{" + args[0] + "}," + args[1] + ")",
+    )
+    text = _replace_args(
+        text,
+        "mModel",
+        1,
+        lambda args, _: r"\mathfrak{" + args[0] + "}",
+    )
+    text = _replace_args(text, "Th", 1, lambda args, _: r"\mathbf{" + args[0] + "}")
+    text = _replace_args(
+        text,
+        "QuantRank",
+        1,
+        lambda args, _: r"\mathrm{qr}(" + args[0] + ")",
+    )
+    text = _replace_args(text, "num", 1, lambda args, _: r"\overline{" + args[0] + "}")
+    text = _replace_args(text, "PIso", 1, lambda args, _: r"\mathcal{" + args[0] + "}")
+    text = _replace_args(
+        text,
+        "Part",
+        2,
+        lambda args, _: r"\mathsf{P}(" + args[0] + "," + args[1] + ")",
+    )
+    text = _replace_args(
+        text,
+        "gn",
+        1,
+        lambda args, _: r"\ulcorner " + args[0] + r"\urcorner",
+    )
+    text = text.replace(r"\substruct", r"\subseteq")
+    text = text.replace(r"\nszero", r"\mathbf{z}")
+    text = text.replace(r"\nssucc", "*")
+    text = text.replace(r"\nsplus", r"\oplus")
+    text = text.replace(r"\nstimes", r"\otimes")
+    text = text.replace(r"\nsless", "<")
+    text = text.replace(r"\varolessthan", "<")
+    text = text.replace(r"\concat", r"\frown")
+    text = text.replace(r"\PAx", r"\mathrm{Ax}_0")
+    text = text.replace(r"\notag", r"\nonumber")
+    # One exercise defines this symbol locally with low-level TeX joining
+    # commands that texmath does not implement.  U+22A9 / \Vdash carries the
+    # intended forcing relation directly in MathML.
+    text = text.replace(
+        r"\DeclareRobustCommand{\VDash}{\mathrel{||}\joinrel\Relbar}",
+        "",
+    )
+    text = text.replace(r"\VDash", r"\Vdash")
+    # The optional-argument quantifier macro also occurs once in TeX's bare
+    # ``\lforall x`` form.  Keep a command boundary so texmath does not read
+    # the result as the unknown control sequence ``\forallx``.
+    text = re.sub(r"\\lforall\s+([A-Za-z])", r"\\forall {\1}", text)
+    # Nested reader shorthands can be revealed when an outer command is
+    # expanded. Iterate to a bounded fixed point so each nested expression is
+    # preserved as ordinary TeX rather than left as an unknown macro.
+    for _ in range(8):
+        expanded = expand_proof_math_macros(text)
+        if expanded == text:
+            break
+        text = expanded
+    else:
+        raise AssertionError("proof-macro expansion did not reach a fixed point")
+    text = _replace_args(
+        text,
+        "Lang",
+        1,
+        lambda args, _: r"\mathcal{" + args[0] + "}",
+    )
+    text = _replace_args(
+        text,
+        "Struct",
+        1,
+        lambda args, _: r"\mathfrak{" + args[0] + "}",
+    )
+    text = re.sub(r"\\Lang\s*\{([A-Za-z])([^{}]*)\}", r"\\mathcal{\1}\2", text)
     text = re.sub(r"\\Lang\s+([A-Za-z])", r"\\mathcal{\1}", text)
-    text = re.sub(r"\\Struct\{([A-Za-z])([^{}]*)\}", r"\\mathfrak{\1}\2", text)
+    text = re.sub(r"\\Struct\s*\{([A-Za-z])([^{}]*)\}", r"\\mathfrak{\1}\2", text)
     text = re.sub(r"\\Struct\s+([A-Za-z])", r"\\mathfrak{\1}", text)
+    text = re.sub(r"\\mathfrak([A-Za-z])\b", r"\\mathfrak{\1}", text)
     text = re.sub(r"\\Obj\s*([A-Za-z])", r"\\mathsf{\1}", text)
     text = text.replace(r"\Entails/", r"\nvDash")
     text = re.sub(r"\\Entails\b", r"\\vDash", text)

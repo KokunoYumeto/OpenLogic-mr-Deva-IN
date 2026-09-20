@@ -1,0 +1,44 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0190",
+  "method": "Same-agent English/Marathi block-by-block close reading, replay of the six defining axioms and both directions of the partial-isomorphism construction, and exact formula, macro, controlled-token, identifier and reference comparison. One frozen-source proof gap is repaired by bounded prose only. No independent human or native-speaker review is claimed.",
+  "scope": "Dense linear orders without endpoints, the countable isomorphism theorem, its back-and-forth proof, and the elementary equivalence of the real and rational orders.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6
+      ],
+      "reverse_paraphrase": "A dense linear order without endpoints is a structure with one binary predicate satisfying irreflexivity, transitivity, trichotomy, existence of a greater element, existence of a lesser element and density between every ordered pair. Any two countable structures with these properties are isomorphic.",
+      "checks": "All six formulas remain in source order and retain their exact quantifier and connective structure; countability and isomorphism are not weakened."
+    },
+    {
+      "blocks": [
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "Take all partial isomorphisms between the two orders. The family contains the empty map. For Forth, an already-mapped element needs no extension, an empty map can be extended by any target element, and otherwise density or absence of endpoints supplies an image below, above or between the ordered images. Back is symmetric, so the countable back-and-forth theorem yields an isomorphism.",
+      "checks": "The ordered-domain normalization, three strict-position cases, one-pair extension, symmetric Back step and cited theorem are retained. OLFOL-028 adds the two cases omitted by the frozen source without changing protected formulas."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "Every countable dense order without endpoints is isomorphic to the rational order. An earlier Löwenheim--Skolem argument gives a countable structure elementarily equivalent to the real order; it is itself such a dense order, hence isomorphic and elementarily equivalent to the rational order. Transitivity therefore gives elementary equivalence of the real and rational orders, also obtainable directly by back-and-forth.",
+      "checks": "The roles of Q, R and S, the rational domain, isomorphism implication, transitivity step and direct partial-isomorphism alternative are retained."
+    }
+  ],
+  "source_observations": [
+    "OLFOL-028 records that the frozen Forth proof's three strict-order cases omit both an element already in p's domain and p empty, although the preceding paragraph explicitly places the empty map in I. The Marathi proof supplies both missing prose cases.",
+    "MR-P125 directly attests सघन and सघनता in the official mathematics glossary. The full compound अंतबिंदुविरहित सघन रेषीय क्रम remains a source-defined transparent construction governed by the six displayed axioms.",
+    "All formulas, macros, controlled tokens, identifiers and references match the frozen source exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The full specialist label अंतबिंदुविरहित सघन रेषीय क्रम and its endpoint modifier were not independently attested in a Marathi model-theory source.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

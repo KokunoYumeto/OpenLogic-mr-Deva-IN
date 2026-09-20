@@ -1,0 +1,44 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0126",
+  "method": "Same-agent English/Marathi close reading of the sole translated title block and exact macro, tag, identifier, import and chapter-structure comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Completeness chapter driver for its first-order and propositional variants and all conditional imports.",
+  "samples": [
+    {
+      "blocks": [
+        4
+      ],
+      "reverse_paraphrase": "Both the first-order and propositional branches title the chapter the Completeness Theorem.",
+      "checks": "The FOL tag, fol/pl namespaces, com chapter identifier and both title branches remain exact; संपूर्णता प्रमेय follows decision T110."
+    },
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "reverse_paraphrase": "The driver imports the introduction, proof outline, complete consistent sets, the guarded first-order Henkin and identity material, the model construction, completeness and compactness results, and the guarded downward Löwenheim-Skolem section before closing the chapter.",
+      "checks": "All eleven import names, three FOL guards, empty alternative branches, chapter hook and document structure are byte-preserved."
+    }
+  ],
+  "source_observations": [
+    "The driver contains no ordinary prose beyond the two identical chapter-title branches.",
+    "No formula, tag, import, identifier, conditional branch or file metadata was changed."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "संपूर्णता प्रमेय remains the provisional logical-sense extension recorded in T110.",
+    "The driver imports untranslated later sections and will enter a coherent reader only after the chapter is complete."
+  ]
+}

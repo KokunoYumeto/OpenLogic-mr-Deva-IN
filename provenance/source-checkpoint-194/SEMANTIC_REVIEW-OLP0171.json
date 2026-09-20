@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0171",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of the assignment-based relation-expression definition, verification of each arithmetic example and definability exercise, review of source correction OLFOL-024, and exact formula, macro, controlled-token, identifier and reference comparison after its documented projection. No independent human or native-speaker review is claimed.",
+  "scope": "Expressing and defining relations by formulas in a structure, arithmetic examples, relation operations, and definable finite and cofinite subsets of the natural-number order.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7
+      ],
+      "reverse_paraphrase": "A predicate symbol directly expresses its interpreted relation because an assignment sending the displayed variables to a and b makes the atomic formula true exactly when Rab. Assignments are required because domain elements are not object-language symbols; connectives and quantifiers then let complex formulas define relations not built into the structure.",
+      "checks": "The symbol/element distinction, assignment coordinates, biconditional, atomic-to-complex progression and built-in-versus-defined contrast are retained."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "A formula whose only free variables are v1 through vn expresses an n-ary relation R exactly when, for every assignment sending vi to ai, the formula is satisfied precisely for the tuples in R.",
+      "checks": "Free-variable restriction, arity, universal assignment condition, coordinate equations and satisfaction biconditional are retained."
+    },
+    {
+      "blocks": [
+        9,
+        10
+      ],
+      "reverse_paraphrase": "In standard arithmetic, formulas define non-strict order, successor, predecessor and strict order, so the less-than predicate is eliminable. More generally, a theory defines a relation when formulas systematically express it from the interpretations of the language's basic predicates.",
+      "checks": "All four arithmetic relations, both strict-order formulas, the redundant-symbol conclusion and the theory-level definition are retained; OLFOL-024 restores the missing object-language marker on the final v2."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "The problems request arithmetic definitions of betweenness, divisibility and primality; formulas for inverse and relative product and an assessment of transitive closure; and definitions of every singleton, finite subset and cofinite subset of the natural numbers using only strict order and equality.",
+      "checks": "Every requested relation, restriction on the language, structure definition, six-item progression and cofinite biconditional are retained."
+    }
+  ],
+  "source_observations": [
+    "OLFOL-024 records a missing object-language variable macro on the final v_2 of the second strict-less-than formula; Marathi restores it and structural QA projects back to the frozen notation for comparison.",
+    "Apart from OLFOL-024, all formulas, macros, controlled tokens, identifiers and references match the frozen source exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The compact Marathi adjective परिभाष्य remains open to specialist review in T238; the direct prime-number and divisibility evidence is recorded in MR-P108 and T239.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

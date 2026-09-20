@@ -1,0 +1,24 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0191",
+  "method": "Same-agent English/Marathi close reading and exact macro, identifier and import-order comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Chapter title and six ordered imports for the models-of-arithmetic chapter.",
+  "samples": [
+    {
+      "blocks": [
+        4
+      ],
+      "reverse_paraphrase": "The chapter concerns models of arithmetic.",
+      "checks": "The title preserves arithmetic as the subject modeled, and all six imports remain unchanged and in source order."
+    }
+  ],
+  "source_observations": [
+    "प्रतिमान is the edition's established model-theory term, while MR-P107 directly supports अंकगणित in the axiomatized-arithmetic setting.",
+    "All macros, identifiers and import paths match the frozen source exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this chapter driver."
+  ]
+}

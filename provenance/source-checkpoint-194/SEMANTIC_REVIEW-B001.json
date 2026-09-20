@@ -1,0 +1,95 @@
+{
+  "schema": "openlogic-mr-semantic-review/1",
+  "batch": "MR-B001",
+  "review_method": "Codex same-agent direct English-to-Marathi close reading and reverse paraphrase; not an independent review or native-human review",
+  "reviewed_units": [
+    "OLP-0004",
+    "OLP-0005",
+    "OLP-0006",
+    "OLP-0007",
+    "OLP-0008",
+    "OLP-0009",
+    "OLP-0010"
+  ],
+  "samples": [
+    {
+      "segment": "OLP-0005-B007",
+      "reverse_paraphrase": "A and B are equal exactly when every member of A belongs to B and conversely.",
+      "checked": "Both directions retained; equality is not merely equal cardinality."
+    },
+    {
+      "segment": "OLP-0005-B014",
+      "reverse_paraphrase": "Prove that there is at most one empty set; two sets with no members must be equal.",
+      "checked": "At-most-one, not existence-and-uniqueness."
+    },
+    {
+      "segment": "OLP-0006-B006",
+      "reverse_paraphrase": "Every A member is a B member. Strict subset additionally requires A not equal B.",
+      "checked": "Inclusion direction and strictness retained."
+    },
+    {
+      "segment": "OLP-0006-B008",
+      "reverse_paraphrase": "Membership and inclusion differ, although a set can have both relations to another set.",
+      "checked": "The singleton-zero nested-set example is unchanged."
+    },
+    {
+      "segment": "OLP-0006-B012",
+      "reverse_paraphrase": "Bounded universal uses membership as antecedent of implication; bounded existential conjoins membership.",
+      "checked": "Implication and conjunction are not interchanged."
+    },
+    {
+      "segment": "OLP-0007-B005",
+      "reverse_paraphrase": "The four number systems are natural numbers starting at zero, integers, rationals and reals.",
+      "checked": "Zero convention retained despite different school-text convention."
+    },
+    {
+      "segment": "OLP-0008-B021",
+      "reverse_paraphrase": "The union of a set of sets contains objects in at least one member set.",
+      "checked": "Nested membership and existential quantification retained."
+    },
+    {
+      "segment": "OLP-0008-B022",
+      "reverse_paraphrase": "The intersection contains objects common to every member set.",
+      "checked": "Universal quantification retained; no unsupported empty-family repair added."
+    },
+    {
+      "segment": "OLP-0009-B006",
+      "reverse_paraphrase": "Ordered pairs are equal exactly when first components match and second components match.",
+      "checked": "Position-sensitive identity; not unordered set equality."
+    },
+    {
+      "segment": "OLP-0009-B016",
+      "reverse_paraphrase": "The product is partitioned into n disjoint rows of m ordered pairs each, giving n times m members.",
+      "checked": "Disjointness and multiplication argument retained."
+    },
+    {
+      "segment": "OLP-0010-B005",
+      "reverse_paraphrase": "Extensionality ensures a specified set is unique if it exists; it does not establish that every predicate forms a set.",
+      "checked": "Corrected an initial Marathi conditional direction ambiguity before release."
+    },
+    {
+      "segment": "OLP-0010-B010",
+      "reverse_paraphrase": "If R exists, R belongs to itself iff it does not belong to itself, a contradiction.",
+      "checked": "Existence assumption and negation retained."
+    }
+  ],
+  "legitimate_exceptions": [
+    "Ruth is the original proper name inside a mathematical example; Richard is transliterated in prose.",
+    "Formula symbols, macro/token keys, file paths, source comments, identifiers and cross-reference keys remain in the source convention.",
+    "The mathematical function name len remains an identifier.",
+    "Two external-label conditionals render their original false branch in the chapter-only reader; editable translation preserves their full source-aligned content."
+  ],
+  "corrected_defects": [
+    "Removed an unintended repeated x token in the set-builder explanation.",
+    "Replaced repetitive iff wording with a two-direction expression.",
+    "Rejected बहुपद as tuple terminology because it denotes polynomial.",
+    "Restored upstream power-set, binary-set, length and set-abstraction notation in the render adapter.",
+    "Preserved original diagram colors after adapter comparison."
+  ],
+  "remaining_uncertainty": [
+    "Some specialized terms are explicitly provisional; details in TERM_DECISIONS.jsonl.",
+    "Several native web originals remain unavailable despite bounded acquisition attempts; observation hashes are not source-byte hashes.",
+    "This is one complete chapter, not the complete Marathi edition; 715 source units remain.",
+    "Same-agent review cannot establish the absence of all semantic or linguistic defects."
+  ]
+}

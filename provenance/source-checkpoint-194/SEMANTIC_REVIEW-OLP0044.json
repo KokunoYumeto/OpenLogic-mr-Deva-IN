@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0044",
+  "method": "Same-agent English/Marathi close reading, formula and diagram-code comparison, reverse paraphrase and bounded fact checking; not independent or human review.",
+  "scope": "All ten translated content blocks in the real-line section, including the theorem, two proofs, TikZ diagram, historical aside and least-upper-bound discussion.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "Reals are to be constructed from rationals. Both form ordered fields, but there are strictly more reals, and irrational reals such as square root of two have long been known.",
+      "checks": "The ordered-field reference, cardinal comparison, Cantor attribution, irrational definition and labeled theorem all remain present."
+    },
+    {
+      "blocks": [
+        7,
+        9
+      ],
+      "reverse_paraphrase": "Assuming square root of two is a reduced natural-number fraction gives m²=2n². The formal proof makes m and then n even, contradicting reducibility.",
+      "checks": "Every equality, parity implication and commented align formula is preserved; the conclusion remains a contradiction with lowest terms."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "The geometric proof compares the overlap and uncovered areas of two n-side squares, yielding a smaller p/q representation of square root of two and an infinite-descent contradiction.",
+      "checks": "TikZ commands, dimensions, labels, citation, area equation, inequalities and membership statement have exact structural parity."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "Completeness distinguishes the reals: every nonempty upper-bounded set of reals has a least upper bound. The rationals below square root of two have upper bounds but no rational least upper bound, while the continuum is intended to fill all rational-line gaps.",
+      "checks": "The property quantifiers, set-builder disjunction, explicit bound 3, failure of a rational least upper bound and continuum conclusion are all retained."
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "MRARITH-002",
+      "finding": "A disabled source footnote incorrectly assigns both roots to the radical symbol.",
+      "resolution": "Corrected only in the inactive Marathi footnote with adjacent note; active reader content is unaffected."
+    },
+    {
+      "id": "MRARITH-003",
+      "finding": "The source gives Tennenbaum's death year as 2006; his memorial records 4 May 2005.",
+      "resolution": "Marathi uses 1927–2005 with an adjacent note; the uncertain birth-year range is explicitly documented in the issue ledger."
+    }
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic or mathematical certification has been performed."
+  ]
+}

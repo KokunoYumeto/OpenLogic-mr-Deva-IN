@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0041",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase; not independent or human review.",
+  "scope": "The translated chapter heading and editorial provenance statement; all seven import identifiers remain unchanged.",
+  "samples": [
+    {
+      "reverse_paraphrase": "The chapter is titled Arithmetization and presents constructions of number systems within informal set theory.",
+      "checks": "The heading, construction role, plural number systems and naive/informal set-theory qualification remain present."
+    },
+    {
+      "reverse_paraphrase": "The material comes from Tim Button's Open Set Theory text.",
+      "checks": "Author and source-title attribution are retained without translating the book title."
+    },
+    {
+      "reverse_paraphrase": "The driver imports integers, rationals, reals, cuts, reflections, checking details and Cauchy in that order.",
+      "checks": "All seven olimport arguments and the chapter-end hook are byte-identical to the frozen source."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "T078 and T079 remain provisional; no independent linguistic certification has been performed."
+  ]
+}

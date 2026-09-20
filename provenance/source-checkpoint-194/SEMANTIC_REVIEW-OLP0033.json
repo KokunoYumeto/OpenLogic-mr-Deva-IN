@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0033",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase; not independent or human review.",
+  "scope": "All twenty-two translated content blocks on non-enumerability and two forms of Cantor diagonalization.",
+  "samples": [
+    {
+      "reverse_paraphrase": "A set is nonenumerable when no surjection from positive integers exhausts it; to prove this, construct an element omitted from every proposed one-way infinite list.",
+      "checks": "Surjectivity, positive-integer domain, omitted-element criterion and comparison language are preserved."
+    },
+    {
+      "reverse_paraphrase": "Given a list of infinite binary sequences, define the nth bit of a new sequence by flipping the nth bit of the nth listed sequence.",
+      "checks": "Array coordinates, case definition, equivalent subtraction formula and all bit values remain exact."
+    },
+    {
+      "reverse_paraphrase": "The constructed sequence differs from listed sequence k at coordinate k, contradicting the assumption that every binary sequence occurs on the list.",
+      "checks": "Identity-at-every-coordinate, n=k specialization, both binary cases and the final contradiction are retained."
+    },
+    {
+      "reverse_paraphrase": "For any list Z1,Z2,… of subsets of positive integers, define Z-bar={n∈PosInt:n∉Zn}; it differs from Zk on membership of k for every k.",
+      "checks": "Power-set scope, set comprehension, biconditionals, arbitrariness of k and extensional difference are unchanged."
+    },
+    {
+      "reverse_paraphrase": "The power-set proof can be pictured as toggling diagonal membership in a set-membership array, and the exercises request the same method for Pow(Nat) and positive-integer-valued functions.",
+      "checks": "The four sample sets, diagonal include/exclude pattern, exercise domains and function-list conclusion remain exact."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "T073 is provisional descriptive vocabulary open to correction.",
+    "No independent linguistic certification has been performed."
+  ]
+}

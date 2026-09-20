@@ -1,0 +1,67 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0189",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of both back-and-forth arguments and the quantifier-rank induction, and exact formula, macro, controlled-token, identifier and reference comparison after one documented source-correction projection. No independent human or native-speaker review is claimed.",
+  "scope": "Finite partial isomorphisms, the back-and-forth property, countable isomorphism, elementary equivalence in relational languages, quantifier rank, the finite-rank relations I_n and their equivalence with agreement on bounded-rank formulas.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "A partial isomorphism is a finite partial injective map preserving every interpreted constant where defined, every predicate tuple and every function value on its domain. A nonempty family has the back-and-forth property when any source element can be added to a domain and any target element can be added to a range. For countable structures, alternating these extensions and taking their union yields an isomorphism.",
+      "checks": "Finiteness, all four preservation clauses, the empty-map observation, both extension directions, odd/even construction, increasing chain and union are retained."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "reverse_paraphrase": "In a purely relational language, partial isomorphism implies elementary equivalence by formula induction. With functions, one instead considers the induced isomorphism on generated substructures. Quantifier rank measures maximum nesting; n-equivalence means agreement on sentences of rank at most n, and a finite relational signature has only finitely many such sentences up to logical equivalence.",
+      "checks": "The relational-signature restriction, assignment pairing, n=0 sentence case, generated-substructure qualification, recursive rank definition, bounded-rank agreement and finite-signature proposition are retained."
+    },
+    {
+      "blocks": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "reverse_paraphrase": "Finite domain sequences are extended by concatenation. I_0 records agreement on atomic formulas for corresponding tuple assignments; I_{n+1} requires every one-point extension on each side to have a matching extension on the other. M approximately_n N means I_n holds for their empty sequences, and I_n implies agreement on all formulas of rank at most n, with a converse for finite languages.",
+      "checks": "Sequence space, concatenation, equal-length condition, both I_n clauses, empty-sequence definition and theorem directionality are retained. OLFOL-027 separates tuple length k from recursion depth n."
+    },
+    {
+      "blocks": [
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "reverse_paraphrase": "The forward theorem direction is proved by formula induction. For the converse, rank zero reduces quantifier-free agreement to atomic agreement. At rank n+1, finite many inequivalent rank-n formulas allow their conjunction T_n^a to be existentially quantified, producing a matching element on the other side; symmetry supplies the reverse extension. Thus finite relational structures agree under I_n exactly when they are n-equivalent, and elementary equivalence is agreement at every finite rank.",
+      "checks": "Both inductions, finite-equivalence-class use, rank-zero base, existential witness step, symmetric back step and final biconditionals are retained."
+    }
+  ],
+  "source_observations": [
+    "OLFOL-027 records a confirmed frozen-source collision between recursion depth n and sequence length: the I_0 atomic clause ended its variable list at x_n, which at n=0 excludes variables even for nonempty tuples. The target introduces common tuple length k and projects x_k back to x_n solely for source comparison.",
+    "The source uses two local conventions for purely relational language: the first theorem excludes functions and constants, while the later finite-signature proposition permits finitely many constants but no functions. The translation mirrors both parenthetical definitions rather than silently normalizing them.",
+    "MR-P124 directly attests प्रतांक for mathematical rank; partial-isomorphism and back-and-forth labels remain transparent source-defined compounds.",
+    "All other formulas, macros, controlled tokens, identifiers and references match the frozen source exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The full labels आंशिक समरूपण, पुढे-मागे गुणधर्म and संख्यापक-प्रतांक were not independently attested in a Marathi model-theory source.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

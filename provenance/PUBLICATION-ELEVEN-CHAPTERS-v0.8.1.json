@@ -19,7 +19,7 @@
     "epub": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub",
     "assets": 8,
     "anonymous_readback": "passed",
-    "readback_receipt": "C:/interlanguage-task-state/openlogic-mr-Deva-IN/GITHUB_PUBLIC_READBACK-EPUB-v0.8.1.json",
+    "readback_receipt": "GITHUB_PUBLIC_READBACK-EPUB-v0.8.1.json (durable task-state receipt)",
     "readback_receipt_sha256": "a1cc2e71853484889cae6a72ec3f445af90c900e76740cfdbff0e2b12510dea4"
   },
   "zenodo": {
@@ -31,9 +31,9 @@
     "pdf_preview": "https://zenodo.org/records/22730309/preview/openlogic-mr-eleven-chapters.pdf",
     "assets": 8,
     "anonymous_readback": "passed",
-    "transaction_receipt": "C:/interlanguage-task-state/openlogic-mr-Deva-IN/ZENODO_TRANSACTION-EPUB-v0.8.1.json",
+    "transaction_receipt": "ZENODO_TRANSACTION-EPUB-v0.8.1.json (durable task-state receipt)",
     "transaction_receipt_sha256": "cb6d91b42d2a6749980b68f4b2a066065966b6bb90e0fe2c13d8422c077670a4",
-    "readback_receipt": "C:/interlanguage-task-state/openlogic-mr-Deva-IN/ZENODO_PUBLIC_READBACK-EPUB-v0.8.1.json",
+    "readback_receipt": "ZENODO_PUBLIC_READBACK-EPUB-v0.8.1.json (durable task-state receipt)",
     "readback_receipt_sha256": "c29242c5eaf06fecc5e7349b1a6774156da868fea617dc41788ad54efd5e4d8b"
   },
   "epub": {

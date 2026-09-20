@@ -1,0 +1,51 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0195",
+  "method": "Same-agent English/Marathi close reading; exact macro, identifier, token and formula comparison; and table-by-table replay of both explicitly constructed Q-models. No independent human or native-speaker review is claimed.",
+  "scope": "Explicit non-standard models of Robinson arithmetic Q: the one-extra-element structure K, verification of Q1-Q5, extension exercises, the two-extra-element structure L and the location of non-standard elements above every standard numeral.",
+  "samples": [
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "Every model of true arithmetic is a model of Q, but Q is weaker, does not prove commutativity of addition and has explicit models that true arithmetic and PA do not have.",
+      "checks": "The non-provability mark, false commutativity sentence and inclusions among model classes keep their source directions."
+    },
+    {
+      "blocks": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "K adds one element a to the natural numbers, makes a fixed under successor and absorbing for addition, and orders every element below a. Its operations satisfy Q, including the recursive addition axiom, yet its order is reflexive at a, so Q does not prove irreflexivity.",
+      "checks": "All operation tables, eight satisfaction claims and the complete case split for Q5 were replayed. The impossible y=b case label is corrected to y=a."
+    },
+    {
+      "blocks": [
+        11
+      ],
+      "reverse_paraphrase": "L adds two fixed successor points a and b with a noncommutative addition table. Exhaustive standard/non-standard cases verify Q5, while a plus zero differs from zero plus a.",
+      "checks": "Every table entry and six displayed Q5 calculations agrees; the free y in the third calculation is corrected to the concrete a used on the left side."
+    },
+    {
+      "blocks": [
+        14
+      ],
+      "reverse_paraphrase": "In any Q-model, non-standard elements must lie beyond all standard elements: none lies below zero, and anything below the successor of a standard numeral must equal one of the finitely many preceding numerals.",
+      "checks": "The cited lemmas, universal scopes and upper-numeral disjunction remain unchanged."
+    }
+  ],
+  "source_observations": [
+    "The arithmetic operation names, model terminology and standard/non-standard distinction reuse established decisions; the displayed tables control each non-standard operation exactly.",
+    "The K case split names b even though b is outside K's declared domain and the following calculation uses a; OLFOL-034 records the correction.",
+    "The L calculation ends its b-plus-a case with an unbound y; OLFOL-035 records the correction to a.",
+    "All unaffected macros, identifiers, controlled tokens and formulas match the frozen source; both corrections pass documented source projections."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No separate Marathi authority was located for the conventional theory label Q; the notation and source axioms remain controlling.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

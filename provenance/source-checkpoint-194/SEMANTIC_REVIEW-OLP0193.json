@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0193",
+  "method": "Same-agent English/Marathi close reading; exact macro, identifier, token and formula comparison; and replay of the isomorphism, induction and successor-characterization arguments. No independent human or native-speaker review is claimed.",
+  "scope": "Standard models of arithmetic: definition, standard-numeral domain characterization, the Q-based converse, uniqueness of the standard isomorphism and the successor-function characterization on a countably infinite carrier.",
+  "samples": [
+    {
+      "blocks": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "Every element of a standard model is the value of a standard numeral because an isomorphism from N is surjective. Such names select the elements without asserting that the carrier objects literally are natural numbers, and the converse domain condition alone can fail.",
+      "checks": "The inclusion and surjectivity directions, existential numeral index, warning about carrier identity and converse problem are all preserved."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "A model of Q whose domain is exhausted by numeral values is standard. The numeral-value map is surjective by hypothesis, injective because Q distinguishes unequal numerals, and preserves zero, successor, addition, multiplication and strict order.",
+      "checks": "The proof retains both directions of the order relation, the non-satisfaction case when n is not below m and every displayed preservation equation."
+    },
+    {
+      "blocks": [
+        15,
+        16,
+        17
+      ],
+      "reverse_paraphrase": "The numeral-value isomorphism is the only isomorphism from N to a standard model: any other isomorphism agrees at zero and then at every successor by induction.",
+      "checks": "The base case, induction hypothesis and seven-line successor calculation keep the same direction and hypotheses."
+    },
+    {
+      "blocks": [
+        18
+      ],
+      "reverse_paraphrase": "Any countably infinite carrier can support a standard model after choosing zero and a successor bijection from the carrier onto the carrier without zero; the other operations and order are then fixed. Successor omits zero, is injective and reaches every nonzero element.",
+      "checks": "The two displayed first-order sentences keep their intended constraints. The source's mistaken reference to an element outside the domain is repaired to outside the range, which is the exact failure of surjectivity."
+    }
+  ],
+  "source_observations": [
+    "The standard-model and standard-numeral terminology follows T281 and T282, while the source equations control the carrier-independent isomorphism sense.",
+    "The proof from Q uses numeral inequality for injectivity and separately verifies every constant, function and relation component needed for an isomorphism.",
+    "The frozen source's final surjectivity explanation says domain where its displayed function type and the following predecessor sentence require range; OLFOL-030 records the bounded prose correction.",
+    "All macros, identifiers, controlled tokens and formulas match the frozen source exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact full Marathi standard-model terminology remains expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

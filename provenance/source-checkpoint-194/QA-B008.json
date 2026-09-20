@@ -1,0 +1,2631 @@
+{
+  "schema": "openlogic-mr-batch-qa/1",
+  "batch": "MR-B008-sequent-calculus-in-progress",
+  "units": [
+    {
+      "unit_id": "OLP-0069",
+      "translation_sha256": "0045e80c413952f6d2ac417d2dab1829a90645092da4c0eeac2c6d1640623359",
+      "translation_bytes": 1553,
+      "segments": 2,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0070",
+      "translation_sha256": "c8236f2f876e774afa7d0c9cd5063ab4b63867b88b87cfdcdd0719c94ad7704d",
+      "translation_bytes": 5722,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0071",
+      "translation_sha256": "7e136d1999d5bb7ba9a77da67c2c6d5159db5d31c0ce22452642f7396c106098",
+      "translation_bytes": 2119,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0072",
+      "translation_sha256": "7c80eca64a6ed3fdfff89988b7e8882b8971d91b565b7d7d80f4e15c8d3463ab",
+      "translation_bytes": 6153,
+      "segments": 8,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0073",
+      "translation_sha256": "cc2d9e2be2783515b39151db27a2a66e43f5a85164164c48e87ac081578d0353",
+      "translation_bytes": 3181,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0074",
+      "translation_sha256": "495a240073f5d934c4a2528afb4bf109c698533bcb3c907edfa56e11ac45016e",
+      "translation_bytes": 6881,
+      "segments": 3,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0075",
+      "translation_sha256": "68ba7ffba8a4b1d34810e39989fd64c80d9052a61312301c9fd5817d3e8b1e2b",
+      "translation_bytes": 18045,
+      "segments": 15,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0076",
+      "translation_sha256": "1f5636737188cda5320496b3eb76848e6e6f3f683731372db73d4f555f6ac167",
+      "translation_bytes": 7051,
+      "segments": 6,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0077",
+      "translation_sha256": "fa4274603a0f720d1ac92518482bbff90477b69eabad834a0a6e13f812d72313",
+      "translation_bytes": 9958,
+      "segments": 19,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0078",
+      "translation_sha256": "e55b3163f546120bc34da7baeca2be2eb6a0b071f7898649fb07b965769dd343",
+      "translation_bytes": 5129,
+      "segments": 13,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0079",
+      "translation_sha256": "3a6b977cfeb4c799292792f4a98515cee98fb2c3dcba33c8db259b2e77c884e1",
+      "translation_bytes": 5471,
+      "segments": 8,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0080",
+      "translation_sha256": "a7bfe7d8b3cf86183f54cb754226411c46269593d84e7e5b8db75cae379f0fa6",
+      "translation_bytes": 2363,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0081",
+      "translation_sha256": "a92f2714c79f182be7cfd546208c6d59dc509216cf701a40daacde5ad5269c6e",
+      "translation_bytes": 27582,
+      "segments": 20,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0082",
+      "translation_sha256": "14005d31a265d5db21fa8390db262f59b13e32b65cea4d3f5194d21ecc66539d",
+      "translation_bytes": 3079,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0083",
+      "translation_sha256": "7b8bc67b41404b7470790802f4f207771614c320d811be1fd24ba12cd6bdd479",
+      "translation_bytes": 2887,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0084",
+      "translation_sha256": "ae4d15cab15b9b9ed516784318ee706d3f171f0009a5ad67b13f07d4e432e82c",
+      "translation_bytes": 1252,
+      "segments": 3,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0085",
+      "translation_sha256": "aee516aa0aa8123ef72859874a859d472a5db3d865a50b58324de828e95bcd84",
+      "translation_bytes": 3970,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0086",
+      "translation_sha256": "86de5e9c4560bbac3f1a21cfc387b42080d81a3367e0e5b09d033960ff4a071a",
+      "translation_bytes": 2980,
+      "segments": 8,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0087",
+      "translation_sha256": "e7ba80f4448acd3a65d726db56d488a5a6901d9af216373e8b1158c2a51ac3a1",
+      "translation_bytes": 7105,
+      "segments": 9,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0088",
+      "translation_sha256": "e11bee82f4f3f47184274c330cc854e3ba8538be1d263f4a6e6f26996ed5b4e9",
+      "translation_bytes": 6104,
+      "segments": 6,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0089",
+      "translation_sha256": "db525505bc80e698b8e817602c7153608c22f1fd3e3030379210bc843806f1b3",
+      "translation_bytes": 15969,
+      "segments": 14,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0090",
+      "translation_sha256": "39fefa88f8825a932e4b735744205c17b6278a2d0bb228aa7f8816abdcec46a3",
+      "translation_bytes": 14197,
+      "segments": 11,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0091",
+      "translation_sha256": "4ef765277be8c715f76bbb795df9a9e30a1c5ac1fdb939912b187aaa969e9e89",
+      "translation_bytes": 8530,
+      "segments": 20,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0092",
+      "translation_sha256": "eeafe39740a2a8bb5b7c3c3fdcf72c2daf6b4c1bd3461010354526371e118bd1",
+      "translation_bytes": 5392,
+      "segments": 12,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0093",
+      "translation_sha256": "0018dd231fef574adb5d68eef97dfb2f28b11a3903b89cbaa08571743f91a06d",
+      "translation_bytes": 4764,
+      "segments": 9,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0094",
+      "translation_sha256": "3fcfd2dad8bcc66bd8a79bbfb08dd32291a90b1791a0308684b3c184ff0a23d1",
+      "translation_bytes": 2276,
+      "segments": 6,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0095",
+      "translation_sha256": "2d4f4ff8625868c2b407ef502431e1d1a7ad92529f3a8eab903206f1f8950c30",
+      "translation_bytes": 20916,
+      "segments": 27,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0096",
+      "translation_sha256": "8c94092afbb07d170f3e7506c99673a33913a5fa7ebf7fafe4dd152e7414bec3",
+      "translation_bytes": 4957,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0097",
+      "translation_sha256": "29882bbe9f754d0e3d518832f57837a5534fadb1265ace3f80cdf8dc3c190331",
+      "translation_bytes": 2600,
+      "segments": 4,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0098",
+      "translation_sha256": "11360ac4a728568a61d5c257f71462457961737cbc2f0fb95b730a967d8dc47c",
+      "translation_bytes": 1232,
+      "segments": 3,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0099",
+      "translation_sha256": "b3a2404dc03bad5148c666657a7b2f7e83e0ce8396d142cdab4979ce66936be3",
+      "translation_bytes": 4872,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0100",
+      "translation_sha256": "0db2abed47e557fe63e7391cfc45e3318b1f7b600489703a72e54af947c0a9d3",
+      "translation_bytes": 2798,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0101",
+      "translation_sha256": "d87d3641f5b52ba87aa56bf068646e82647d99f2daf8851313baf9e842ceec90",
+      "translation_bytes": 5632,
+      "segments": 8,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0102",
+      "translation_sha256": "3870e7bf7dce0aee6624e3f81b91234aae94fb4398a8be906b5bd7695c8761fb",
+      "translation_bytes": 6127,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0103",
+      "translation_sha256": "3e409ef1e2b795bda24b44a12c96269725b6c9b10414b15ec286be66f59d0c89",
+      "translation_bytes": 22000,
+      "segments": 13,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0104",
+      "translation_sha256": "118d46011bb30a623a94c74e4d0538cdf607e370068bcd52cdce17d654de9ac9",
+      "translation_bytes": 16153,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0105",
+      "translation_sha256": "2c1e5e624f2c375a4154eb81b6babd1c11f9b8bb7de91338457d268fa0caba23",
+      "translation_bytes": 9118,
+      "segments": 20,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0106",
+      "translation_sha256": "48999350d9eab1db564d4dd3b5c756ff69285ba68fb58c9837df4cbc6c6a490d",
+      "translation_bytes": 9958,
+      "segments": 15,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0107",
+      "translation_sha256": "4b410c74f1bd95275d99cbb7fa21e3c98f1c750a228b6437568c9c0d94499293",
+      "translation_bytes": 7088,
+      "segments": 8,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0108",
+      "translation_sha256": "516c44b53794a280d210740eb9ee48777d8b906fd911fc17b318d49caa1450cd",
+      "translation_bytes": 4079,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0109",
+      "translation_sha256": "565c251795aac02e5b7180d497fbd6791988b005df6e9dfa4ceb6412ce52c1d1",
+      "translation_bytes": 18389,
+      "segments": 21,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0110",
+      "translation_sha256": "44fb1c97398823886db1665d80167102203889136ab839aec67f4c37cee69274",
+      "translation_bytes": 4596,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0111",
+      "translation_sha256": "b29ce321ad48141864f95afc17ba501023bd8c32322d57bf5ff8d2223801cf43",
+      "translation_bytes": 2711,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0112",
+      "translation_sha256": "7cfc38fe96044be26fee77f66e9ab23a8f7ad17a9e91763e285e4d9ea8bdcfe8",
+      "translation_bytes": 1827,
+      "segments": 2,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0113",
+      "translation_sha256": "7748f911e6cdfc626899167757161b370a461b72c61cd66d5127d960349a0978",
+      "translation_bytes": 7017,
+      "segments": 8,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0114",
+      "translation_sha256": "3e40e5c991c1efca33654be7adbf047d2441cb86e9f3ca1ea60c456d21319d6f",
+      "translation_bytes": 1940,
+      "segments": 4,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0115",
+      "translation_sha256": "172b68405c264918be6eb97dfcce6d263b1f56ba694fda2f3e6971ce5ef40e24",
+      "translation_bytes": 1720,
+      "segments": 4,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0116",
+      "translation_sha256": "5e63c6b26962ce432aede60ea0cd0f3163f980e74ec8c031a93126b02eaccbf3",
+      "translation_bytes": 8761,
+      "segments": 8,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0117",
+      "translation_sha256": "59dd7c960ead312de4a4c3f56b2c392af2214444e35182d058e048da6bc29d56",
+      "translation_bytes": 2024,
+      "segments": 3,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0118",
+      "translation_sha256": "2bb1821a4ef57842e24f956b6a0534319a71261df565b75827fe2bf5a9e3fe66",
+      "translation_bytes": 7472,
+      "segments": 18,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0119",
+      "translation_sha256": "5b236e1f258061c978a9316842d573e3551858d9d889ca42fa673d61d4643bab",
+      "translation_bytes": 7966,
+      "segments": 15,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0120",
+      "translation_sha256": "352743b3b67b72143ad90ac89105dcadf8a190b0d518ec05469ab8ff5262ec2a",
+      "translation_bytes": 4314,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0121",
+      "translation_sha256": "81fe303a0a471d5f2ddd51bcc386e9be170849c875721116ca8bb8f004b9f443",
+      "translation_bytes": 4084,
+      "segments": 14,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0122",
+      "translation_sha256": "08b50fa58bb17fa2b11941993b9bd164c09686ddc6abe8ce8b1340106548fdb5",
+      "translation_bytes": 4627,
+      "segments": 9,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0123",
+      "translation_sha256": "32cac71a765c93352901dd966cbd3f129c13eca94572445c776c1ec24a744765",
+      "translation_bytes": 2831,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0124",
+      "translation_sha256": "f5322dc20cbfb39e834eef75e97e5a6eb9a021f6abb09c07a85ee5357a56f4dd",
+      "translation_bytes": 10747,
+      "segments": 14,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0125",
+      "translation_sha256": "6555caecc68941a68ecb0cbbadf1f701f07ca3cdf3a8529681db8951f7dab346",
+      "translation_bytes": 2287,
+      "segments": 10,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0126",
+      "translation_sha256": "450443b19155eb4b9316ad31d648c3e21818f36cb8716aa5c5d92ecda2f21fcf",
+      "translation_bytes": 697,
+      "segments": 1,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0127",
+      "translation_sha256": "d3e0385390e63cb3201e081fc7275314b5c47277aab61d4723f4d513232959d6",
+      "translation_bytes": 7918,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0128",
+      "translation_sha256": "244e3859a6ffc5fcdc8195928a077466289405081205888564834aebe6410b97",
+      "translation_bytes": 17826,
+      "segments": 11,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0129",
+      "translation_sha256": "e79166459d931d4f769aae18616d886e30565781cd2c43c5f2501293ddac45c7",
+      "translation_bytes": 12890,
+      "segments": 21,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0130",
+      "translation_sha256": "023123a4783498215e98ec354d96440413f8797e67fd9b8a6cc573b18b54c184",
+      "translation_bytes": 14403,
+      "segments": 18,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0131",
+      "translation_sha256": "6fd613d2b58b20d25e6763a119e57279b64592d8623d125c9b2055caeae8b0cd",
+      "translation_bytes": 7103,
+      "segments": 8,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0132",
+      "translation_sha256": "6d8e3ee968799ed7287292ecef58ec12119a26879493214f4d0067d881ae8226",
+      "translation_bytes": 20081,
+      "segments": 21,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0133",
+      "translation_sha256": "d7aead418d0315d54c1de9c61344c99b147f4b8fd9fbf655c64dda6b7747eced",
+      "translation_bytes": 13510,
+      "segments": 17,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0134",
+      "translation_sha256": "19111f1053d9e404e931c88fcc8bb4df8c30ba252532fbc2cd93e61338e6fbf3",
+      "translation_bytes": 8196,
+      "segments": 11,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0135",
+      "translation_sha256": "4b63ea4a9e2e33bf5afb81e9bd84333a9579d7075f6d1a94f55b87686dce93dd",
+      "translation_bytes": 16645,
+      "segments": 13,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0136",
+      "translation_sha256": "7f39d9fdf351575896cc85f855cace3031a6ddd0511ee5ca02b9dd31c28f97fa",
+      "translation_bytes": 10461,
+      "segments": 20,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0137",
+      "translation_sha256": "18f2d47589685f1d33ade0e6c4f1f7e2735883ab4ddaf097450e19ba0769652c",
+      "translation_bytes": 5116,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0138",
+      "translation_sha256": "2c0cf45e7289dbc28724afd50424002b9bebb9166a91fb4a6bfbf34a1f440e5e",
+      "translation_bytes": 2745,
+      "segments": 3,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0139",
+      "translation_sha256": "a4f555463600fec4da9da33c12264688f1bf41eaa9d3babfe4cddf5f738e889c",
+      "translation_bytes": 511,
+      "segments": 1,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0140",
+      "translation_sha256": "452f51d4c787a4ac724a1a99de07b4c64be16b249dced6aedb375ee2156a5aa8",
+      "translation_bytes": 11542,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0141",
+      "translation_sha256": "48353db02eeb51dc2061753bfd33ae39163788c96885379c47976915b08e485c",
+      "translation_bytes": 6210,
+      "segments": 3,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0142",
+      "translation_sha256": "84675741405f92ac06ab3bd62cf5a5e3a40639b0c069d7ca1dd7a8176b8b9904",
+      "translation_bytes": 7995,
+      "segments": 9,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0143",
+      "translation_sha256": "6edbe0f30f6bf0d33028935004efad31ff4c7a28e19a330ce4e2a0ab5ee6cefa",
+      "translation_bytes": 12971,
+      "segments": 6,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0144",
+      "translation_sha256": "639630ebb451d2790ec389088ada3eff4935770f82ab2c3b356f9917dd49f399",
+      "translation_bytes": 5668,
+      "segments": 4,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0145",
+      "translation_sha256": "487ff6d0ddd1bdbe5ea6fe6b3065a12a424a70cc6c56b44054ab5672e0a3a2d7",
+      "translation_bytes": 5470,
+      "segments": 4,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0146",
+      "translation_sha256": "8c7eb2ca0e41e9b7576db32bcec41673fea187a8ded40ddabc261c1df4f6a775",
+      "translation_bytes": 5464,
+      "segments": 3,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0147",
+      "translation_sha256": "2ef40359eadc88dc90140fe91ded625f11ae6e4d69faf9038841ba717a142f15",
+      "translation_bytes": 7923,
+      "segments": 4,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0148",
+      "translation_sha256": "6435a1767c63ac5181fdaa370a654262958ac57fb4a33da533a3d04cd371d50a",
+      "translation_bytes": 7941,
+      "segments": 6,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0149",
+      "translation_sha256": "a6930e9e71a8af76bb0d639f4b2962eb5518cb8699dc3420145e19b7a359ba2d",
+      "translation_bytes": 554,
+      "segments": 1,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0150",
+      "translation_sha256": "3e1cb8fc43606cd97950a1ed7a344e13cabfd63ff0e468d32ed581b41ed1412c",
+      "translation_bytes": 3138,
+      "segments": 2,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0151",
+      "translation_sha256": "15ca9c8fa48b95ecf8358385a454dec682735cac5c10ce165f58d6135a596b29",
+      "translation_bytes": 12081,
+      "segments": 16,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0152",
+      "translation_sha256": "cc1cfca52a2c0e4efbefe043db17c587948acc5828c0a083562d7c2ee543e383",
+      "translation_bytes": 16026,
+      "segments": 37,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0153",
+      "translation_sha256": "7e657e3f87ed32a05932d6a5faf47530900d7d2293d59cd319128fb5c89622cc",
+      "translation_bytes": 13552,
+      "segments": 34,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0154",
+      "translation_sha256": "13777e84c02a601a2e250dbc6b2ff4d864fb9fee276484ab02db2a792dc96961",
+      "translation_bytes": 5705,
+      "segments": 14,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0155",
+      "translation_sha256": "047fefa811248ca5845ddb272c59a6eeb1e3721593485196f986f10bf4618050",
+      "translation_bytes": 6758,
+      "segments": 17,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0156",
+      "translation_sha256": "9f7d5203c75dc5472d2819f781e5bee4243e8acabb0f283928c317ac7f2721b4",
+      "translation_bytes": 18146,
+      "segments": 29,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      },
+      "source_audit_retraction_ids": [
+        "OLFOL-009-RETRACTION-20260920"
+      ]
+    },
+    {
+      "unit_id": "OLP-0157",
+      "translation_sha256": "5c9ccea889f67885c144562c0834d54884afa317007d74701b1902e06471dca1",
+      "translation_bytes": 6215,
+      "segments": 13,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0158",
+      "translation_sha256": "de7d2f1e8f12787925a61f8cac1c613bcb56448023575b5c108b69841bd352e9",
+      "translation_bytes": 7545,
+      "segments": 22,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0159",
+      "translation_sha256": "6b5e599ce906fd8be887fa56dc44462b3f4727e434192d0de1189e52931db18a",
+      "translation_bytes": 494,
+      "segments": 1,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0160",
+      "translation_sha256": "97368e46d1cef985d3011a69818c56651e499acb141cccb414bb2f2185607ffd",
+      "translation_bytes": 5272,
+      "segments": 3,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0161",
+      "translation_sha256": "e91ca04e910c46e5d6b91bde10c07ae44cfd5a3240c4260c13310ba441130435",
+      "translation_bytes": 9578,
+      "segments": 9,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0162",
+      "translation_sha256": "36f7b40f72fdf348939a12e6834f03e5862810b4cc85ec0fca8a9b55524bb2ed",
+      "translation_bytes": 4387,
+      "segments": 6,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0163",
+      "translation_sha256": "3c968f5d7ca81dddc10f331de149eab2a0e5054895172b3a86e63524febdb876",
+      "translation_bytes": 31479,
+      "segments": 42,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0164",
+      "translation_sha256": "277b65d5c523fc20c8a225c9f3047a2e792fc76fe7e4553a1770daeb12ef8c49",
+      "translation_bytes": 24460,
+      "segments": 45,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0165",
+      "translation_sha256": "4f3d38ee68ae8db6f6b28ab8fd1d4455e727774ef2208b28b42792ebea626dc5",
+      "translation_bytes": 9369,
+      "segments": 18,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0166",
+      "translation_sha256": "d71dd8cc58acbf12cf911e74584d88386a51f233eb326acf596dbdb5299a77b9",
+      "translation_bytes": 10246,
+      "segments": 20,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0167",
+      "translation_sha256": "a46fef957f9cd245da09abe926669d70dd4b67e4bfacc4bad60782ea3348a88a",
+      "translation_bytes": 450,
+      "segments": 1,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0168",
+      "translation_sha256": "524f3962ea3e21941f1e607a9487ba039e2cafada62beac7a2be638c429c273c",
+      "translation_bytes": 12088,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0169",
+      "translation_sha256": "82d752039156fe604f97e7da0f0e0cfc417df66e4338c9176f8c84031082b8ce",
+      "translation_bytes": 5843,
+      "segments": 4,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0170",
+      "translation_sha256": "35e5e6ed05120cc5f82e7d04708624756b77f1557bd658804cacb1b377216511",
+      "translation_bytes": 11938,
+      "segments": 10,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0171",
+      "translation_sha256": "6c90010503779c8ee152defd64d05091320769ad53241b118b3b70210ad6b40e",
+      "translation_bytes": 9950,
+      "segments": 9,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0172",
+      "translation_sha256": "007b083a4ae5daed2fbb8e0895a9cfe3aa7f9a1baad343ba4ff5e6fee53fccf0",
+      "translation_bytes": 16165,
+      "segments": 10,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0173",
+      "translation_sha256": "b796bbd2024781b798653aecba46cb9b1ccce9e4838cdcb13c734d70b976918d",
+      "translation_bytes": 4007,
+      "segments": 6,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0174",
+      "translation_sha256": "9ea33ae00e9bd9969a87a27bc38223612b6d072ff89c0d3478b9778b97ae0a20",
+      "translation_bytes": 1589,
+      "segments": 2,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0175",
+      "translation_sha256": "2aa1eb2f80f072187fc89263acd3abd6c5ad5387544fa8284a3f34b8e8c1bd0a",
+      "translation_bytes": 6359,
+      "segments": 4,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0176",
+      "translation_sha256": "cd8852575cbd4f14b67f5e878f936f09adc95d101143a80192083af850808eb4",
+      "translation_bytes": 7159,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0177",
+      "translation_sha256": "9e19feb1d6a05aec594ee8a66fbd207ead8f8340f5ef2df2c3ef6e759eacf362",
+      "translation_bytes": 26383,
+      "segments": 13,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0178",
+      "translation_sha256": "c950896f11892f3ec0f842b7fb35b1c70a54604add76f29fb87166e03ec6d0f7",
+      "translation_bytes": 14259,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0179",
+      "translation_sha256": "52351c64a1f049e088b96f07600fc720067192c4395c6ebb052285953217b3a4",
+      "translation_bytes": 22953,
+      "segments": 23,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0180",
+      "translation_sha256": "ae47bef564bd61de65e594aae6467b6761864a1356e35e503a5e84a5d1da0116",
+      "translation_bytes": 9474,
+      "segments": 6,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0181",
+      "translation_sha256": "6eefcaf98e267819de164b175096e34c7489f027b599480f935ae3e0cf5e26a1",
+      "translation_bytes": 4575,
+      "segments": 4,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0182",
+      "translation_sha256": "07a92778768668abf01234d1c013e52ebca6ba50279e6fdc2afdd7c950028de1",
+      "translation_bytes": 1537,
+      "segments": 2,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0183",
+      "translation_sha256": "390ff1547759677209739bf1efa49772b8e1ae27658dc1052c8d2b705c94f460",
+      "translation_bytes": 469,
+      "segments": 1,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0184",
+      "translation_sha256": "43944ca4f8c20c06d7b79ae232aae89b6b8e647cef21311d8dbd3c840f5ebe56",
+      "translation_bytes": 3660,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0185",
+      "translation_sha256": "224c961f78dabc1c32deb7e88eb971e6c87db20801ac8353bfe8712de058125f",
+      "translation_bytes": 2736,
+      "segments": 4,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0186",
+      "translation_sha256": "9b1267fe45ef09662229714fd5a476f4076db22d3f0c2c433023a845cbd418df",
+      "translation_bytes": 2594,
+      "segments": 5,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0187",
+      "translation_sha256": "820b86adba1272ca91380596bead9f28bbdf41b53155e7b6b3349f827a7c56f2",
+      "translation_bytes": 9008,
+      "segments": 10,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0188",
+      "translation_sha256": "093a0780f9c4aa8a91d9a0c275faae3626a33bd47dae9d0ec3ec8919038611dd",
+      "translation_bytes": 4131,
+      "segments": 9,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0189",
+      "translation_sha256": "c8a5c2c9a55f782ebf9554998251ad1a2b143f91d87bbe0f19e94803dea180b8",
+      "translation_bytes": 17461,
+      "segments": 23,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0190",
+      "translation_sha256": "ca6d2682687657baf0f7196a534f0294f3cb7ac2839b605e3617f79f899ea06c",
+      "translation_bytes": 6722,
+      "segments": 7,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0191",
+      "translation_sha256": "6dbb93fcc81aeaa64d2a5ed1a911c84530fce33a36cdd0d811a8476cac9ac0ad",
+      "translation_bytes": 415,
+      "segments": 1,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0192",
+      "translation_sha256": "03fe212f6307df5215fc9113a0951c5785cabd9e322781aa833fcc8430edd2b1",
+      "translation_bytes": 6228,
+      "segments": 4,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0193",
+      "translation_sha256": "d7e31170929164ba5c9ff3510a5257d1f61f5eae35964e6fce086e09226ac3df",
+      "translation_bytes": 13535,
+      "segments": 15,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "unit_id": "OLP-0194",
+      "translation_sha256": "d50a9278ab4b7031eb0bfae38d6af5e22ba7d492cad8893c4cf885347f624777",
+      "translation_bytes": 10524,
+      "segments": 11,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0195",
+      "translation_sha256": "f41f7aff5d2343384eff19127d52909bb3ae4f7f23246fcaec32d551fd4b01d4",
+      "translation_bytes": 12965,
+      "segments": 11,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0196",
+      "translation_sha256": "6d2e797beda71750bb64fc8c6bc112dbf3e5a4e037d579a52e1a75b1ae27359b",
+      "translation_bytes": 19965,
+      "segments": 32,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "unit_id": "OLP-0197",
+      "translation_sha256": "5347dc2c9f755cc0bc57fcf79e23c9508512b2dd4a92d0b7dce7c9f3f2e93bfd",
+      "translation_bytes": 9208,
+      "segments": 10,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    }
+  ],
+  "segments_with_canon": 1316,
+  "cumulative_segments_with_canon": 2063,
+  "failures": [],
+  "source_issues_sha256": "a540c9b59b71f00e19bfcc8a735148adcb80031c41c7a951c3a9e04d5240fe9b",
+  "chapter_complete": true,
+  "reader_status": "The latest verified public reader is eleven-chapters-v0.8.1, covering 108 units through OLP-0111; OLP-0112 through OLP-0197 are source-complete and await a later coherent reader refresh.",
+  "release_ready": false,
+  "full_corpus_complete": false,
+  "latest_semantic_review": "SEMANTIC_REVIEW-OLP0197.json",
+  "latest_semantic_review_sha256": "e8f72bc638c8067a92a3255a28ecf9a6e1b91e237face3be1be2e3effb31bd6c",
+  "expert_review_occurrences": {
+    "legacy_decision_records": 406,
+    "canonical_decisions_with_occurrences": 406,
+    "occurrences": 11402,
+    "high_priority_occurrences": 1068,
+    "reader_locators_available": 11402,
+    "reader_locators_pending": 0,
+    "occurrence_checkpoint": "EXPERT_REVIEW_OCCURRENCES-CHECKPOINT.json",
+    "occurrence_checkpoint_sha256": "b3ebdf4d50451f23f67588c58d3426a2e18f47f80d535065b62c04d3a3d9dea0",
+    "ledger_checkpoint": "EXPERT_REVIEW_LEDGER-CHECKPOINT.json",
+    "ledger_checkpoint_sha256": "513860e9651bc1c1b347ab026ae114072c1b1494d1bc0ab108067548d43ae8ed",
+    "canonical_checkpoint": "TRANSLATION_DECISIONS-CHECKPOINT-WORKING.json",
+    "canonical_checkpoint_sha256": "694ed94c426660cae162b4b5d4deba29374ede544bb6f58822932accf22ff69b",
+    "canonical_qa": "TRANSLATION_DECISION_QA-WORKING.json",
+    "canonical_qa_sha256": "7449cb75110c1bf346b30ac4992525a10a7b40e8b706e723f75202f5596b4408"
+  },
+  "cross_package_provenance": {
+    "status": "passed_for_current_194_unit_working_tree",
+    "receipt": "CROSS_PACKAGE_QA-WORKING.json",
+    "receipt_sha256": "a785227c1a4912d2d2736dbff188e0377af58e689884ac9d365798ce134d71f9",
+    "historical_v0_4_audit": "CROSS_PACKAGE_AUDIT-SIX-CHAPTERS-v0.4.json",
+    "historical_v0_4_audit_sha256": "1e358dbf0ec1a604a56d416115d646a569cb658470208b457434c2c14ac00714",
+    "next_substantive_release_gate": "Run the validator against the finished editable-source ZIP, review ZIP and reader PDF before publication."
+  },
+  "public_editable_checkpoint": {
+    "schema": "openlogic-public-editable-checkpoint/1",
+    "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+    "branch": "main",
+    "commit": "58be525be17fb69b30152ac703321f9f1cc39af5",
+    "coverage": {
+      "translated_units": 194,
+      "total_units": 722,
+      "aligned_segments": 2063,
+      "last_unit": "OLP-0197",
+      "remaining_units": 528
+    },
+    "public_readback": "PUBLIC_READBACK-WIP-58be525.json",
+    "public_readback_sha256": "1ecdfaa7d9b104ea91bfe3ff2f60c81334a406db53d421c91e9e31e5242639e5",
+    "changed_files_verified": 29,
+    "target_files": {
+      "mr/content/first-order-logic/proof-systems/introduction.tex": {
+        "bytes": 12257,
+        "sha256": "cc11c63edec83552f99b44ef04dd3298a3213a8a072f7d473c3c8ef729fb9e4c"
+      },
+      "mr/content/model-theory/models-of-arithmetic/computable-models.tex": {
+        "bytes": 9208,
+        "sha256": "5347dc2c9f755cc0bc57fcf79e23c9508512b2dd4a92d0b7dce7c9f3f2e93bfd"
+      },
+      "mr/content/model-theory/models-of-arithmetic/introduction.tex": {
+        "bytes": 6228,
+        "sha256": "03fe212f6307df5215fc9113a0951c5785cabd9e322781aa833fcc8430edd2b1"
+      },
+      "mr/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex": {
+        "bytes": 415,
+        "sha256": "6dbb93fcc81aeaa64d2a5ed1a911c84530fce33a36cdd0d811a8476cac9ac0ad"
+      },
+      "mr/content/model-theory/models-of-arithmetic/models-of-pa.tex": {
+        "bytes": 19965,
+        "sha256": "6d2e797beda71750bb64fc8c6bc112dbf3e5a4e037d579a52e1a75b1ae27359b"
+      },
+      "mr/content/model-theory/models-of-arithmetic/models-of-q.tex": {
+        "bytes": 12965,
+        "sha256": "f41f7aff5d2343384eff19127d52909bb3ae4f7f23246fcaec32d551fd4b01d4"
+      },
+      "mr/content/model-theory/models-of-arithmetic/non-standard-models.tex": {
+        "bytes": 10524,
+        "sha256": "d50a9278ab4b7031eb0bfae38d6af5e22ba7d492cad8893c4cf885347f624777"
+      },
+      "mr/content/model-theory/models-of-arithmetic/standard-models.tex": {
+        "bytes": 13535,
+        "sha256": "d7e31170929164ba5c9ff3510a5257d1f61f5eae35964e6fce086e09226ac3df"
+      },
+      "mr/content/sets-functions-relations/size-of-sets/introduction.tex": {
+        "bytes": 2364,
+        "sha256": "935fab180a8c51e17bd72c1687bed76cf413625ad15a11910f4846d34d5c149b"
+      }
+    },
+    "repair_receipt": "provenance/TRANSLATION_REPAIR-INTRODUCTION-EXERCISE-PROVENANCE.json",
+    "repair_receipt_sha256": "3cc714add3b8520a6bcb1c3a64d62ca2c989516eda28d1e9fe18bae22dd0ed30",
+    "latest_reader_release": "eleven-chapters-v0.8.1",
+    "latest_reader_zenodo_doi": "10.5281/zenodo.22730309",
+    "status": "published-and-anonymously-verified"
+  },
+  "source_observations": [
+    "OLSEQ-001",
+    "OLSEQ-002",
+    "OLSEQ-003",
+    "OLND-001",
+    "OLND-002",
+    "OLND-003",
+    "OLND-004",
+    "OLND-005",
+    "OLND-006",
+    "OLND-007",
+    "OLTAB-001",
+    "OLTAB-002",
+    "OLTAB-003",
+    "OLTAB-004",
+    "OLTAB-005",
+    "OLTAB-006",
+    "OLTAB-007",
+    "OLTAB-008",
+    "OLTAB-009",
+    "OLTAB-010",
+    "OLTAB-011",
+    "OLTAB-012",
+    "OLAXD-001",
+    "OLAXD-002",
+    "OLAXD-003",
+    "OLAXD-004",
+    "OLAXD-005",
+    "OLAXD-006",
+    "OLAXD-007",
+    "OLAXD-008",
+    "OLAXD-009",
+    "OLCOM-001",
+    "OLCOM-002",
+    "OLCOM-003",
+    "OLCOM-004",
+    "OLCOM-005",
+    "OLCOM-006",
+    "OLFOL-001",
+    "OLFOL-002",
+    "OLFOL-003",
+    "OLFOL-004",
+    "OLFOL-005",
+    "OLFOL-006",
+    "OLFOL-007",
+    "OLFOL-008",
+    "OLFOL-009",
+    "OLFOL-010",
+    "OLFOL-011",
+    "OLFOL-012",
+    "OLFOL-013",
+    "OLFOL-014",
+    "OLFOL-015",
+    "OLFOL-016",
+    "OLFOL-017",
+    "OLFOL-018",
+    "OLFOL-019",
+    "OLFOL-020",
+    "OLFOL-021",
+    "OLFOL-022",
+    "OLFOL-023",
+    "OLFOL-024",
+    "OLFOL-025",
+    "OLFOL-026",
+    "OLFOL-027",
+    "OLFOL-028",
+    "OLFOL-029",
+    "OLFOL-030",
+    "OLFOL-031",
+    "OLFOL-032",
+    "OLFOL-033",
+    "OLFOL-034",
+    "OLFOL-035",
+    "OLFOL-036",
+    "OLFOL-037",
+    "OLFOL-038",
+    "OLFOL-039",
+    "OLFOL-040"
+  ],
+  "olp0072_audit_revalidation": {
+    "audit_report": "[local research path omitted]",
+    "audit_report_sha256": "8764f4ccdf643494159a614648cf33aa8288730463c5a9835070bec3d95085f6",
+    "review_kind": "bounded independent model audit; not native-speaker or human-expert testimony",
+    "adopted_clarification": "OLSEQ-003",
+    "split_decisions": [
+      "T174",
+      "T177",
+      "T178",
+      "T179"
+    ],
+    "heading_construction_decision": "T180",
+    "target_sha256": "7c80eca64a6ed3fdfff89988b7e8882b8971d91b565b7d7d80f4e15c8d3463ab",
+    "semantic_review_sha256": "d57c4096c7903a9e7ca8d67864e64075d0c4445715c6ea37d6a2054927888128",
+    "choice_spans": "exact relevant lines; overlapping by design; no disjoint partition claim",
+    "accessibility_gloss": "Adopted at first use: आस्थिती is explained as a place where t occurs."
+  },
+  "olp0071_0072_audit_response": {
+    "path": "AUDIT_RESPONSE-OLP0071-0072.json",
+    "bytes": 6412,
+    "sha256": "0bef6a81acbec76dba8324d861232b36648dd45998e7788e6000ed28aafe48b1",
+    "status": "implemented-and-revalidated"
+  },
+  "olp0087_audit_revalidation": {
+    "report": "[local research path omitted]",
+    "report_bytes": 16558,
+    "report_sha256": "e73d1f5198e932453f0c413d3db69f66ccc634894fb6c4562fed69cca99f7656",
+    "hash_manifest": "[local research path omitted]",
+    "hash_manifest_bytes": 29140,
+    "hash_manifest_sha256": "8dbcfc44e7cb152bb6f583e47c8fb155786b7b8561b0ae101ad5afceafbfbf25",
+    "review_kind": "bounded independent model spotcheck; not native-speaker or human-expert testimony",
+    "adopted_source_clarification": "OLND-002",
+    "revised_term_rationales": [
+      "T139",
+      "T155",
+      "T174",
+      "T178",
+      "T179"
+    ],
+    "target_sha256": "e7ba80f4448acd3a65d726db56d488a5a6901d9af216373e8b1158c2a51ac3a1",
+    "semantic_review_sha256": "6afdd2b6322d16c34be72140dcfc75a8959e4d7883ae89a3171cf0775d191da2",
+    "status": "implemented-and-revalidated"
+  },
+  "latest_public_reader": {
+    "tag": "eleven-chapters-v0.8",
+    "status": "published-and-anonymously-verified-on-github-and-zenodo",
+    "coverage": {
+      "translated_units": 108,
+      "total_units": 722,
+      "remaining_units": 614,
+      "aligned_segments": 1149,
+      "reader_sections": 96,
+      "complete_chapters": 11,
+      "last_unit": "OLP-0111"
+    },
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8",
+    "github_commit": "4265a1ff9e411b4574f7bc5da2f982c8bc20d306",
+    "github_public_readback": "PUBLIC_READBACK-WIP-4265a1f.json",
+    "github_public_readback_sha256": "bbbcad9ee6cf2f2127e7e6a8f6acda0fed1d61fd67c903c7410959fa9de1f523",
+    "zenodo_record": "https://zenodo.org/records/22681530",
+    "zenodo_doi": "10.5281/zenodo.22681530",
+    "zenodo_conceptdoi": "10.5281/zenodo.22307960",
+    "zenodo_public_readback": "ZENODO_PUBLIC_READBACK-108.json",
+    "zenodo_public_readback_sha256": "42aa17ecaf68fbf6694f34f98c6e7e78d70a60a047926e1b602ca7a9a8f796bf",
+    "source_checkpoint_sha256": "557ca0195fccc483266c25388c4e72bbebad03e5c796d3750a769d1c67707da3",
+    "assets": [
+      {
+        "filename": "openlogic-mr-eleven-chapters.pdf",
+        "bytes": 684717,
+        "sha256": "bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters.pdf/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-eleven-chapters.tex",
+        "bytes": 863854,
+        "sha256": "ad124e9439421f9a82d94d24af7ca6f064342a877e3286975c596ce5e07f81e2",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters.tex/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-eleven-chapters-html.zip",
+        "bytes": 1459755,
+        "sha256": "767cbae8fa999f390b254fd7fe5ddaeee18b1db76243872ac0bd8fbd50b629f1",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters-html.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-eleven-chapters-review.zip",
+        "bytes": 7133504,
+        "sha256": "e17271701f9a25fb7f2659a0e7e39b24dce7421fbca72f8e8cf2d5f775a0dbc6",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters-review.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-eleven-chapters-editable-sources.zip",
+        "bytes": 23576820,
+        "sha256": "7aa0a15897c88819efd671c48b44b62cbe739584bcccf506af159792adc09483",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters-editable-sources.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "RELEASE_MANIFEST.json",
+        "bytes": 2488,
+        "sha256": "7c495bf395a8636b1205e37e85e4dd4641cfb109f515b2066dd439c2cf1fc9be",
+        "public_url": "https://zenodo.org/api/records/22681530/files/RELEASE_MANIFEST.json/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "SHA256SUMS.txt",
+        "bytes": 612,
+        "sha256": "6689f9f262a0512a687b1b45efd3f56773e25029cffad23964f34745cfc30407",
+        "public_url": "https://zenodo.org/api/records/22681530/files/SHA256SUMS.txt/content",
+        "verified_anonymously": true
+      }
+    ]
+  },
+  "latest_zenodo_release": {
+    "schema": "openlogic-zenodo-publication/1",
+    "recorded_utc": "2026-09-09T19:18:05.615624+00:00",
+    "record_id": 22681530,
+    "record_url": "https://zenodo.org/records/22681530",
+    "doi": "10.5281/zenodo.22681530",
+    "conceptdoi": "10.5281/zenodo.22307960",
+    "source_version_record_id": 22651653,
+    "version": "eleven-chapters-v0.8",
+    "coverage": {
+      "translated_units": 108,
+      "total_units": 722,
+      "remaining_units": 614,
+      "aligned_segments": 1149,
+      "reader_sections": 96,
+      "complete_chapters": 11,
+      "last_unit": "OLP-0111"
+    },
+    "files": [
+      {
+        "filename": "openlogic-mr-eleven-chapters.pdf",
+        "bytes": 684717,
+        "sha256": "bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters.pdf/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-eleven-chapters.tex",
+        "bytes": 863854,
+        "sha256": "ad124e9439421f9a82d94d24af7ca6f064342a877e3286975c596ce5e07f81e2",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters.tex/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-eleven-chapters-html.zip",
+        "bytes": 1459755,
+        "sha256": "767cbae8fa999f390b254fd7fe5ddaeee18b1db76243872ac0bd8fbd50b629f1",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters-html.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-eleven-chapters-review.zip",
+        "bytes": 7133504,
+        "sha256": "e17271701f9a25fb7f2659a0e7e39b24dce7421fbca72f8e8cf2d5f775a0dbc6",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters-review.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-eleven-chapters-editable-sources.zip",
+        "bytes": 23576820,
+        "sha256": "7aa0a15897c88819efd671c48b44b62cbe739584bcccf506af159792adc09483",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters-editable-sources.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "RELEASE_MANIFEST.json",
+        "bytes": 2488,
+        "sha256": "7c495bf395a8636b1205e37e85e4dd4641cfb109f515b2066dd439c2cf1fc9be",
+        "public_url": "https://zenodo.org/api/records/22681530/files/RELEASE_MANIFEST.json/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "SHA256SUMS.txt",
+        "bytes": 612,
+        "sha256": "6689f9f262a0512a687b1b45efd3f56773e25029cffad23964f34745cfc30407",
+        "public_url": "https://zenodo.org/api/records/22681530/files/SHA256SUMS.txt/content",
+        "verified_anonymously": true
+      }
+    ],
+    "pdf_preview": {
+      "filename": "openlogic-mr-eleven-chapters.pdf",
+      "url": "https://zenodo.org/records/22681530/preview/openlogic-mr-eleven-chapters.pdf",
+      "public_pdfjs_preview_verified": true,
+      "uploaded_first_in_transaction": true
+    },
+    "transaction_receipt": "ZENODO_TRANSACTION-108.json",
+    "transaction_receipt_sha256": "24829788ada114ac13032aa9d2c9d1b0d6780b4b3916d8b2eb06519aa0d7c07a",
+    "public_readback": "ZENODO_PUBLIC_READBACK-108.json",
+    "public_readback_sha256": "42aa17ecaf68fbf6694f34f98c6e7e78d70a60a047926e1b602ca7a9a8f796bf",
+    "anonymous_remote_bytes_match": true,
+    "metadata_lineage_and_pdf_preview_verified": true,
+    "status": "published-and-anonymously-verified"
+  },
+  "latest_public_source_checkpoint": {
+    "schema": "openlogic-public-editable-checkpoint/1",
+    "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+    "branch": "main",
+    "commit": "4265a1ff9e411b4574f7bc5da2f982c8bc20d306",
+    "coverage": {
+      "translated_units": 108,
+      "total_units": 722,
+      "remaining_units": 614,
+      "aligned_segments": 1149,
+      "reader_sections": 96,
+      "complete_chapters": 11,
+      "last_unit": "OLP-0111"
+    },
+    "source_checkpoint": "provenance/source-checkpoint-108/SOURCE_CHECKPOINT.json",
+    "source_checkpoint_sha256": "557ca0195fccc483266c25388c4e72bbebad03e5c796d3750a769d1c67707da3",
+    "public_readback": "PUBLIC_READBACK-WIP-4265a1f.json",
+    "public_readback_sha256": "bbbcad9ee6cf2f2127e7e6a8f6acda0fed1d61fd67c903c7410959fa9de1f523",
+    "public_readback_files": 159,
+    "anonymous_remote_bytes_match": true,
+    "github_release_updated": true,
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8",
+    "zenodo_updated": true,
+    "latest_public_reader": "eleven-chapters-v0.8",
+    "zenodo_concept_doi": "10.5281/zenodo.22307960",
+    "zenodo": "https://zenodo.org/records/22681530",
+    "zenodo_doi": "10.5281/zenodo.22681530",
+    "zenodo_public_readback": "ZENODO_PUBLIC_READBACK-108.json",
+    "zenodo_public_readback_sha256": "42aa17ecaf68fbf6694f34f98c6e7e78d70a60a047926e1b602ca7a9a8f796bf",
+    "next_working_unit_excluded_from_release": "OLP-0112",
+    "status": "published-and-anonymously-verified"
+  },
+  "current_release_candidate": {
+    "tag": "eleven-chapters-v0.8",
+    "status": "published-and-anonymously-verified-on-github-and-zenodo",
+    "coverage": {
+      "translated_units": 108,
+      "total_units": 722,
+      "remaining_units": 614,
+      "aligned_segments": 1149,
+      "reader_sections": 96,
+      "complete_chapters": 11,
+      "last_unit": "OLP-0111"
+    },
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8",
+    "github_commit": "4265a1ff9e411b4574f7bc5da2f982c8bc20d306",
+    "github_public_readback": "PUBLIC_READBACK-WIP-4265a1f.json",
+    "github_public_readback_sha256": "bbbcad9ee6cf2f2127e7e6a8f6acda0fed1d61fd67c903c7410959fa9de1f523",
+    "zenodo_record": "https://zenodo.org/records/22681530",
+    "zenodo_doi": "10.5281/zenodo.22681530",
+    "zenodo_conceptdoi": "10.5281/zenodo.22307960",
+    "zenodo_public_readback": "ZENODO_PUBLIC_READBACK-108.json",
+    "zenodo_public_readback_sha256": "42aa17ecaf68fbf6694f34f98c6e7e78d70a60a047926e1b602ca7a9a8f796bf",
+    "source_checkpoint_sha256": "557ca0195fccc483266c25388c4e72bbebad03e5c796d3750a769d1c67707da3",
+    "assets": [
+      {
+        "filename": "openlogic-mr-eleven-chapters.pdf",
+        "bytes": 684717,
+        "sha256": "bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters.pdf/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-eleven-chapters.tex",
+        "bytes": 863854,
+        "sha256": "ad124e9439421f9a82d94d24af7ca6f064342a877e3286975c596ce5e07f81e2",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters.tex/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-eleven-chapters-html.zip",
+        "bytes": 1459755,
+        "sha256": "767cbae8fa999f390b254fd7fe5ddaeee18b1db76243872ac0bd8fbd50b629f1",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters-html.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-eleven-chapters-review.zip",
+        "bytes": 7133504,
+        "sha256": "e17271701f9a25fb7f2659a0e7e39b24dce7421fbca72f8e8cf2d5f775a0dbc6",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters-review.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "openlogic-mr-eleven-chapters-editable-sources.zip",
+        "bytes": 23576820,
+        "sha256": "7aa0a15897c88819efd671c48b44b62cbe739584bcccf506af159792adc09483",
+        "public_url": "https://zenodo.org/api/records/22681530/files/openlogic-mr-eleven-chapters-editable-sources.zip/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "RELEASE_MANIFEST.json",
+        "bytes": 2488,
+        "sha256": "7c495bf395a8636b1205e37e85e4dd4641cfb109f515b2066dd439c2cf1fc9be",
+        "public_url": "https://zenodo.org/api/records/22681530/files/RELEASE_MANIFEST.json/content",
+        "verified_anonymously": true
+      },
+      {
+        "filename": "SHA256SUMS.txt",
+        "bytes": 612,
+        "sha256": "6689f9f262a0512a687b1b45efd3f56773e25029cffad23964f34745cfc30407",
+        "public_url": "https://zenodo.org/api/records/22681530/files/SHA256SUMS.txt/content",
+        "verified_anonymously": true
+      }
+    ]
+  },
+  "current_development_reader": {
+    "status": "published_and_anonymously_verified",
+    "scope": {
+      "translation_source_units": 108,
+      "reader_sections": 96,
+      "complete_chapters": 11,
+      "last_unit": "OLP-0111"
+    },
+    "pdf": {
+      "pages": 157,
+      "bytes": 684717,
+      "sha256": "bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450"
+    },
+    "qa_receipt": "provenance/eleven-chapters-v0.8/RELEASE_QA.json",
+    "qa_receipt_sha256": "5cc2271a2c400428e09076f45bbacc5d705e315d7c457c8e4cce93cff755f250",
+    "two_consecutive_clean_builds_identical": true,
+    "all_pages_visually_reviewed": true,
+    "pdf_tagged": false,
+    "accessible_html_required_for_public_reader_release": true,
+    "accessible_html": {
+      "status": "passed",
+      "html": {
+        "filename": "index.html",
+        "bytes": 2835387,
+        "sha256": "a8b64bd67948cb5cf5ffbf05aeaf4901a23244268371ea41d506374f6d9ecffe"
+      },
+      "native_mathml": 6544,
+      "diagrams_with_detailed_marathi_alternatives": 13,
+      "semantically_reconstructed_proof_figures": 202,
+      "proof_formula_rows": 990,
+      "internal_links_valid": 293,
+      "offline_network_dependencies": 0,
+      "browser_layout_review": "passed at the generated desktop viewport"
+    }
+  },
+  "public_readback": "PUBLIC_READBACK-WIP-4265a1f.json",
+  "public_readback_sha256": "bbbcad9ee6cf2f2127e7e6a8f6acda0fed1d61fd67c903c7410959fa9de1f523",
+  "visual_qa": "Eleven-chapter reader published and anonymously verified; next working unit OLP-0112.",
+  "source_audit_retractions": [
+    {
+      "retraction_id": "OLFOL-009-RETRACTION-20260920",
+      "void_shared_identifier": "OLFOL-009",
+      "status": "false_positive_source_defect_claim_retracted",
+      "invalid_extra_target_brace_removed": true,
+      "reader_note_removed": true,
+      "configuration_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724"
+    }
+  ]
+}

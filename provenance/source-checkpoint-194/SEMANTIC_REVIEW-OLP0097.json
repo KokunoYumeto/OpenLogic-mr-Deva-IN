@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0097",
+  "method": "Same-agent English/Marathi block-by-block close reading, equality-soundness reverse paraphrase, exact formula, macro, protected-token and identifier comparison, and reconstruction of the identity-elimination proof tree; no independent human or native-speaker review is claimed.",
+  "scope": "Soundness of natural deduction extended with identity introduction and identity elimination.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "Natural deduction remains sound when equipped with the rules for identity.",
+      "checks": "The identity token, natural-deduction system, rule extension and soundness claim are preserved."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "Every formula t equals t is valid in every structure. The term t is assumed closed, containing no variables, so variable assignments do not affect it.",
+      "checks": "Reflexive identity, universal structure scope, closedness explanation and assignment irrelevance are all explicit and unchanged."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "For a last identity-elimination inference, one subderivation yields t_1 equals t_2 from Gamma_1 and another yields A(t_1) from Gamma_2. Any structure satisfying their union satisfies both premises by induction. Their term values are the same, so extensionality gives equivalence among A(t_1), A(x) under the assignment sending x to that common value, and A(t_2); hence the conclusion is satisfied.",
+      "checks": "Both subderivations, premise-to-assumption correspondence, union of assumptions, induction hypothesis, common value m, arbitrary assignment s, extensionality reference and all satisfaction formulas are exact."
+    }
+  ],
+  "source_observations": [
+    "The frozen proof writes out one of the two symmetric identity-elimination variants; the other is covered by the same value-equality argument. No upstream defect or correction was identified."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "निर्दोषता, एकरूपता, बंद पद, चल-विन्यास and विगमन गृहीतक follow the edition's established proof-theory and identity vocabulary; the formulas control the exact semantic claim.",
+    "The source does not separately spell out the proof for the second bidirectional identity-elimination rule, and the Marathi target does not add one.",
+    "The current coherent reader ends at OLP-0068, so this unit has not yet received paginated TeX or browser-rendering QA."
+  ]
+}

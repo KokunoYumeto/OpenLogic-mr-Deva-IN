@@ -1,0 +1,57 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0064",
+  "method": "Same-agent English/Marathi close reading, implication-direction inspection, formula/token comparison and reverse paraphrase with directly checked Marathi proof-theory terminology; not independent or human review.",
+  "scope": "The general purpose and mechanical character of derivation systems; axiomatic, natural-deduction, tableaux, sequent and resolution methods; theoremhood and derivability; soundness, completeness and consistency.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "Logic commonly has both semantics and a derivation system. Semantics treats truth, satisfiability, validity and entailment. A derivation system instead gives a purely syntactic method: each derivation is a finite syntactic object, ordinarily a sequence or other finite arrangement of sentences or formulas, whose correctness can be checked mechanically.",
+      "checks": "All four semantic notions, finiteness, the purely syntactic restriction, both sequence alternatives and mechanical verification are preserved without turning correctness into semantic truth."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "The earliest and simplest first-order systems were axiomatic. A formula sequence is a derivation when every formula is either in a fixed axiom set or follows from earlier formulas by one of finitely many inference rules; both conditions can be checked mechanically. Such systems are easy to describe and treat metatheoretically but hard to read, understand and use to produce derivations.",
+      "checks": "The fixed axiom set, earlier-position dependency, fixed number of rules, two mechanical checks and all three practical disadvantages remain distinct."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "Natural deduction, truth trees or tableaux proofs, and sequent calculus aim to make derivations easier to construct or understand. Resolution is easy to implement in software but its derivations are nearly impossible to understand. Most alternative systems use formula trees, making dependencies among derivation parts visible.",
+      "checks": "Every named method, both design aims, the resolution usability contrast, tree-versus-sequence representation and dependency consequence are preserved."
+    },
+    {
+      "blocks": [
+        9,
+        10
+      ],
+      "reverse_paraphrase": "Different proof systems explain theoremhood and derivability differently, but their syntactic relations should coincide with validity and entailment. Soundness is the direction from theoremhood or derivability to validity or entailment. Completeness is the converse direction. First-order logic has complete systems, first proved complete by Gödel in his 1929 dissertation.",
+      "checks": "Both displayed biconditionals are unchanged; the only-if and if directions are assigned respectively to soundness and completeness; every Proves and Entails expression, theorem condition, attribution and date remain attached to the source claim."
+    },
+    {
+      "blocks": [
+        11
+      ],
+      "reverse_paraphrase": "A sentence set is inconsistent when everything is derivable from it and consistent otherwise. Inconsistency is the syntactic counterpart of unsatisfiability. The desired equivalence says Gamma is consistent exactly when satisfiable: consistency implies satisfiability by completeness, and satisfiability implies consistency by soundness. In classical first-order logic the two formulations are equivalent.",
+      "checks": "The explosive definition, consistent fallback, syntactic/semantic counterpart relation, both implication directions and the classical first-order restriction are preserved."
+    }
+  ],
+  "source_observations": [
+    {
+      "block": 11,
+      "finding": "The frozen English spells unsatisfiability as ‘unsatisfiablity’. The Marathi target renders the unambiguous intended technical term without changing any formal content."
+    }
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "निर्दोषता is definition-controlled and officially supported only as a generic soundness equivalent, not directly attested in the checked proof-theory source.",
+    "सत्यता-वृक्ष, टॅब्लो सिद्धता, निराकरण पद्धत and निराकरण-खंडन remain transparent provisional labels pending specialist review."
+  ]
+}

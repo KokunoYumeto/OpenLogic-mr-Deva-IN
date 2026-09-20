@@ -1,0 +1,99 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0152",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of both inductive definitions and induction principles, branch-by-branch review of tagged operator definitions, and exact formula, macro, controlled-token, identifier and reference comparison after the documented OLFOL-005 projection. No independent human or native-speaker review is claimed.",
+  "scope": "Inductive definitions of first-order terms and formulas; notation and defined operators; syntactic identity and concatenation; and induction principles for terms and formulas.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "A first-order language determines terms and formulas. Variables and constants are terms, and applying an n-place function to n terms gives a term; nothing else does. Variable-free terms are closed, and constants could equivalently be treated as zero-place functions.",
+      "checks": "The three formation clauses, limiting clause, closed-term definition and zero-place reformulation remain distinct and complete."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "reverse_paraphrase": "Atomic formulas include selected truth constants, predicate applications and identity formulas. Negation, binary connectives and both quantifiers recursively form formulas, and the limiting clause excludes every other string.",
+      "checks": "Every tag-conditioned base case, arity, term argument, connective constructor, quantifier constructor and limiting clause is retained with its original formula."
+    },
+    {
+      "blocks": [
+        21,
+        22
+      ],
+      "reverse_paraphrase": "The definitions are inductive: atomic formulas enter at the first stage, later stages apply formation rules to formulas already built, and exactly the expressions eventually produced are formulas.",
+      "checks": "The infinite-stage explanation, four atomic shapes and exhaustive eventual-construction condition are preserved."
+    },
+    {
+      "blocks": [
+        23,
+        24
+      ],
+      "reverse_paraphrase": "Identity is conventionally written infix, its negation has a special abbreviation, and outer parentheses on binary formulas may be omitted. Unlike some texts, this presentation does not require a quantified variable to occur in the quantified formula.",
+      "checks": "Both equality abbreviations, the outermost-parenthesis convention, all tag branches and the optional occurrence restriction are retained."
+    },
+    {
+      "blocks": [
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "reverse_paraphrase": "Every defined truth constant, connective and quantifier expands into the displayed primitive notation. The conditional's disjunctive expansion has its frozen unmatched parenthesis removed under OLFOL-005.",
+      "checks": "All nine tagged expansion clauses and their nested alternatives remain formula-for-formula exact after the one documented delimiter projection."
+    },
+    {
+      "blocks": [
+        36,
+        37,
+        38
+      ],
+      "reverse_paraphrase": "Application-specific infix and postfix marks abbreviate indexed predicate and function notation. Syntactic identity compares equal-length symbol strings position by position and can describe concatenated strings and substrings.",
+      "checks": "The arithmetic and set-theory examples, four official expansions, iff condition, concatenation order and substring consequences are retained."
+    },
+    {
+      "blocks": [
+        39,
+        40,
+        41,
+        42
+      ],
+      "reverse_paraphrase": "Inductively generated terms and formulas support corresponding induction principles. A property holds of every term if it holds of variables and constants and is preserved by function application; it holds of every formula if it holds atomically and is preserved by every selected constructor.",
+      "checks": "The language parameters, property P, all base and closure clauses, term side assumption, exercise reference and every tagged formula constructor are preserved."
+    }
+  ],
+  "source_observations": [
+    "The target preserves the difference between object-language identity and metalinguistic syntactic identity.",
+    "The limiting clauses are retained, so the Marathi definitions do not merely state closure conditions.",
+    "OLFOL-005 removes one unmatched closing parenthesis from the frozen disjunctive conditional expansion; its source hash, reader note and QA projection are recorded.",
+    "All other formulas, macros, controlled tokens, identifiers and references match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "Several technical compounds remain explicitly provisional in the terminology ledger.",
+    "The section states the induction principles but leaves the term-induction proof as an exercise."
+  ]
+}

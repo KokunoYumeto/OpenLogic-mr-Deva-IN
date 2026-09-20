@@ -1,0 +1,43 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0123",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of the strong-generalization proof and both quantified derivability claims, direct checking against the quantified axiom schemas and rule, and exact formula, macro, token, label and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Quantifier consequences in axiomatic deduction: strong generalization under a fresh-constant condition, existential introduction and universal elimination.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7
+      ],
+      "reverse_paraphrase": "The section states that axiomatic deduction must supply the quantified derivability facts later needed for the completeness theorem.",
+      "checks": "The axiomatic proof system, derivability relation, quantifier scope and completeness role are preserved."
+    },
+    {
+      "blocks": [
+        8,
+        9
+      ],
+      "reverse_paraphrase": "If c occurs in neither Gamma nor A(x) and Gamma proves A(c), the Deduction Theorem yields true-implies-A(c). The quantified rule generalizes its consequent because c is fresh for Gamma and true. The truth axiom and modus ponens then remove the true antecedent and yield forall-x-A(x).",
+      "checks": "The freshness conditions, all four displayed derivability formulas, universal quantifier and inference order are exact. OLAXD-006 corrects only the frozen prose justification for the final step."
+    },
+    {
+      "blocks": [
+        10,
+        12
+      ],
+      "reverse_paraphrase": "An instance A(t) derives exists-x-A(x) using ax:q2 and the Deduction Theorem; forall-x-A(x) derives A(t) using ax:q1 and the Deduction Theorem.",
+      "checks": "Both tagged alternatives, formulas, tag names, q1/q2 references and their direction remain source-identical."
+    }
+  ],
+  "source_observations": [
+    "OLAXD-006 records that the frozen final strong-generalization sentence invokes the Deduction Theorem where the truth axiom plus modus ponens is required; the Marathi target gives the valid direct justification with an adjacent reader note.",
+    "The QR step uses true as the antecedent and the theorem's freshness assumption on A(x) supplies freshness for the universally quantified consequent.",
+    "All formulas, macros, protected tokens, labels, identifiers and reference options match exactly; the source correction changes ordinary prose only."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "सिद्धतायोग्यता and the syntactic-occurrence paraphrase remain governed by provisional decisions T184 and T139.",
+    "The source does not spell out the intermediate ax:ltrue line; the corrected Marathi sentence names the axiom and modus-ponens operation without adding a new displayed formula."
+  ]
+}

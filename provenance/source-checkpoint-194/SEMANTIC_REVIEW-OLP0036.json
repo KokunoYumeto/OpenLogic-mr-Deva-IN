@@ -1,0 +1,38 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0036",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase; not independent or human review.",
+  "scope": "All fourteen translated content blocks on cardinal comparison, Cantor's theorem, two proof variants and the final exercise.",
+  "samples": [
+    {
+      "reverse_paraphrase": "A is no larger than B exactly when an injection A→B exists; A is smaller than B when such an injection exists but no bijection does.",
+      "checks": "The cardinal notations, function directions and strict-versus-nonstrict distinction are preserved."
+    },
+    {
+      "reverse_paraphrase": "Enumerability is characterized by size at most Nat and non-enumerability by Nat being strictly smaller; Cantor's theorem says A is strictly smaller than Pow(A).",
+      "checks": "Both conditional theorem references and the general quantified statement remain exact."
+    },
+    {
+      "reverse_paraphrase": "Singleton formation injects A into Pow(A), while the diagonal subset A-bar={x∈A:x∉g(x)} cannot be in the range of any g:A→Pow(A).",
+      "checks": "Extensionality, totality, subset formation and both membership cases are retained; OLSIZ-010 restores the required scope every x∈A."
+    },
+    {
+      "reverse_paraphrase": "The shorter proof assumes a bijection, obtains D=g(y), and derives y∈g(y) iff y∈D iff y∉g(y).",
+      "checks": "Bijection use, power-set membership, the displayed contradiction and conditional branch structure remain exact."
+    },
+    {
+      "reverse_paraphrase": "The explanatory comparisons relate the general diagonal set to the earlier PosInt and Nat lists, then relate Cantor's theorem to Russell's paradox; the exercise asks for the reverse non-injection Pow(A)→A.",
+      "checks": "All list indices, theorem references, membership toggles and the exercise's injectivity argument are preserved."
+    }
+  ],
+  "source_observations": [
+    "OLSIZ-007"
+  ],
+  "passed_for_source_fidelity_with_documented_correction": true,
+  "limitations": [
+    "T075 is provisional definition-controlled vocabulary open to correction.",
+    "No independent linguistic certification has been performed."
+  ],
+  "shared_audit": "OLSIZ-20260904",
+  "audit_note": "The Marathi target was compared with the authoritative shared audit OLSIZ-20260904. Applied mathematical deltas are keyed in SOURCE_ISSUES-B004.json; frozen English hashes remain unchanged."
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0050",
+  "method": "Same-agent English/Marathi close reading, formula/macro/citation comparison and reverse paraphrase with checked terminology; not independent or human review.",
+  "scope": "All four translated blocks in Hilbert's Hotel, including the historical quotation and Dedekind-infinite definition.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5
+      ],
+      "reverse_paraphrase": "Without presupposing the natural numbers, the text seeks a characterization of infinite sets. Hilbert contrasts a full finite hotel, where rearrangement frees no room, with a full hotel having rooms 1, 2, 3, and so on, where shifting every guest up by one frees room 1.",
+      "checks": "The 1924 date, quotation brackets, finite/infinite contrast, one-guest capacity, all room numbers, diagram commands, citation page and translation attribution are preserved."
+    },
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "The room-shift motivates Dedekind's 1888 definition: A is Dedekind infinite exactly when it injects into a proper subset of itself, equivalently when an injective self-map omits some element o.",
+      "checks": "The anachronism qualification, citation year, biconditional force, both injection markers, proper-subset relation, quantified element and range exclusion are unchanged."
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "MRINF-001",
+      "finding": "The English modal phrase is grammatically malformed (‘must be characterize’).",
+      "resolution": "The Marathi expresses the unambiguous intended requirement directly and leaves the frozen source untouched."
+    }
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic or historical review has been performed."
+  ]
+}

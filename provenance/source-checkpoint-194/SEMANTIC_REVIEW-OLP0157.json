@@ -1,0 +1,66 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0157",
+  "method": "Same-agent English/Marathi block-by-block close reading, constructor-by-constructor replay of the free-occurrence definition, occurrence-level tracing through both displayed examples, verification of scope and binding direction, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Free and bound variable occurrences, quantifier scope and binding, worked nested-scope examples, and sentences.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "Every variable occurrence in an atomic formula is free; negation preserves the free occurrences, a binary formula combines those of both operands, and either quantifier removes the free occurrences of its own variable from its body.",
+      "checks": "All five recursive cases preserve occurrence-level language, exact equality in the negation case, union in the binary case and only-x exclusion in both quantifier cases."
+    },
+    {
+      "blocks": [
+        11,
+        12
+      ],
+      "reverse_paraphrase": "A variable occurrence is bound exactly when it is not free; the exercise asks for the parallel inductive definition.",
+      "checks": "The occurrence rather than variable-symbol distinction and the reference to the free-occurrence definition are retained."
+    },
+    {
+      "blocks": [
+        13,
+        14
+      ],
+      "reverse_paraphrase": "The scope of a quantifier occurrence is the corresponding occurrence of its body. The free occurrences of that quantifier's variable in the body become bound in the quantified formula and are bound by that quantifier occurrence.",
+      "checks": "Subformula occurrences, corresponding body occurrences, tag-conditioned universal and existential variants, and binding direction are all preserved."
+    },
+    {
+      "blocks": [
+        15
+      ],
+      "reverse_paraphrase": "In exists-v0 A(v0,v1), the quantifier binds v0 in body B but leaves v1 free.",
+      "checks": "The underbrace label, quantified variable, unbound variable and free-variable conclusion agree with the display."
+    },
+    {
+      "blocks": [
+        16
+      ],
+      "reverse_paraphrase": "In the nested example, B, C and D are the scopes of the first universal, existential and second universal quantifiers. Each binds the named occurrences in its own scope; the first v1 and fourth v0 remain free in A, while the last v0 is free in D but bound in C and A.",
+      "checks": "All three scope labels, binders, occurrence ordinals and the context-sensitive free/bound status of the last v0 are retained."
+    },
+    {
+      "blocks": [
+        17
+      ],
+      "reverse_paraphrase": "A formula is a sentence exactly when it has no free variable occurrences.",
+      "checks": "The biconditional and occurrence-based criterion are preserved."
+    }
+  ],
+  "source_observations": [
+    "The translation uses the directly supported आस्थिती term consistently so that one variable symbol can have both free and bound occurrences in different contexts.",
+    "Scope is assigned to a particular body occurrence, not merely to a formula type.",
+    "All formulas, macros, controlled tokens, identifiers and references match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact Marathi scope phrase remains explicitly open to specialist review in T215."
+  ]
+}

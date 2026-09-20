@@ -1,0 +1,74 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0048",
+  "method": "Same-agent English/Marathi close reading, formula/macro/reference comparison, reverse paraphrase and bounded primary-source terminology research; not independent or human review.",
+  "scope": "All nineteen translated blocks in the Cauchy-sequence appendix, including the historical motivation, epsilon definitions, quotient construction, ordered-field statements and completeness proof sketch.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "The alternative construction traces back to Cauchy's sequence condition and later nineteenth-century authors. Stevin's decimal view motivates encoding reals by increasingly accurate rational approximations, while an alternating zero-one sequence shows that arbitrary rational sequences are unsuitable.",
+      "checks": "All historical names and citations, four square-root occurrences, both decimal displays, the three-item encoding argument and both cases of the alternating function are preserved."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "Because real quantification cannot be assumed while constructing the reals, a rational epsilon Cauchy condition is used. Different sequences can encode the same real; their difference tending to zero defines the equivalence relation and the reals are its equivalence classes.",
+      "checks": "Every quantifier, domain, absolute-value inequality, reference, zero-limit formula and exercise equation has exact structural parity. MRARITH-009 corrects relations to classes."
+    },
+    {
+      "blocks": [
+        14,
+        15,
+        17,
+        19
+      ],
+      "reverse_paraphrase": "Constant rational sequences embed the rationals. Pointwise sum and product define operations on sequence classes, and eventual positivity defines order. These equivalence classes form an ordered field and satisfy a least-upper-bound statement.",
+      "checks": "Both operation equations, pointwise definitions, positivity quantifiers and theorem labels are retained. MRARITH-010 uses real zero, MRARITH-011 names the quotient carrier, and MRARITH-012 records the omitted representative-independence check."
+    },
+    {
+      "blocks": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "reverse_paraphrase": "A rational lower and upper bracket is bisected recursively. The resulting Cauchy sequences approach the same class; the decreasing upper sequence bounds S and the increasing lower sequence proves leastness.",
+      "checks": "The initial bounds, midpoint, both recursive cases, halving argument, reductio inequalities and leastness chain are all preserved exactly."
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "MRARITH-009",
+      "finding": "The source names equivalence relations where equivalence classes are required.",
+      "resolution": "The Marathi body uses तुल्यतावर्ग and documents the correction adjacent to the sentence."
+    },
+    {
+      "id": "MRARITH-010",
+      "finding": "The source compares a real class with rational zero in the positivity definition.",
+      "resolution": "The Marathi formula uses 0_Real and exact QA projects only that documented symbol back to the frozen source."
+    },
+    {
+      "id": "MRARITH-011",
+      "finding": "Several statements conflate Cauchy sequences with their equivalence classes.",
+      "resolution": "The field carrier is explicit in Marathi and an adjacent convention covers the proof's preserved representative shorthand."
+    },
+    {
+      "id": "MRARITH-012",
+      "finding": "Closure is assigned but representative independence of quotient operations is not.",
+      "resolution": "The missing well-definedness obligation is disclosed without inventing an omitted proof."
+    }
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic or mathematical certification has been performed."
+  ]
+}

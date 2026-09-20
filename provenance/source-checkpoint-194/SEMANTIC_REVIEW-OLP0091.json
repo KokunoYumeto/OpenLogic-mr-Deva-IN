@@ -1,0 +1,64 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0091",
+  "method": "Same-agent English/Marathi block-by-block close reading, definition-by-definition reverse paraphrase, exact formula, macro, protected-token and identifier comparison, proof-tree reconstruction, and comparison with the already reviewed sequent-calculus treatment of the same notions; no independent human or native-speaker review is claimed.",
+  "scope": "Proof-theoretic notions for natural deduction: theoremhood, derivability from a set, consistency, reflexivity, monotonicity, transitivity, finite-context notation, three equivalent inconsistency conditions, and compactness.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "The section contrasts semantic notions based on satisfaction in structures with proof-theoretic notions based on derivability and nonderivability. A theorem has a natural-deduction derivation whose assumptions are all discharged. A is derivable from Gamma exactly when it has a derivation whose every assumption is discharged or belongs to Gamma. Gamma is inconsistent exactly when it derives falsity, and otherwise is consistent.",
+      "checks": "The semantic/proof-theoretic contrast, soundness and completeness claim, all-assumptions-discharged theorem condition, derivability biconditional, both nonderivability symbols and the falsity criterion are preserved."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "reverse_paraphrase": "Reflexivity follows because the one-assumption derivation of A has its sole undischarged assumption in Gamma. Monotonicity follows because a derivation whose undischarged assumptions lie in Gamma also qualifies when Gamma is a subset of Delta. For transitivity, delta1 derives B from Delta and a temporary A; conditional introduction discharges A, delta0 derives A from Gamma, and conditional elimination gives B with undischarged assumptions only in Gamma union Delta.",
+      "checks": "All three proposition labels and implications are exact. The transitivity tree preserves delta0 and delta1, the discharge label 1, the conditional-introduction and conditional-elimination order, and the final union context."
+    },
+    {
+      "blocks": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "reverse_paraphrase": "A finite set Gamma may be written as a comma-separated list to the left of the provability symbol, including the singleton abbreviation. Transitivity yields the one-intermediate and finitely-many-intermediates consequences. Inconsistency is equivalent both to deriving every sentence and to deriving a sentence together with its negation; the proof remains an exercise in both FOL and propositional variants.",
+      "checks": "The finite-context equations, every variable and index, all three enumerated conditions, the intentional exercise placeholder, both tag wrappers and both system-specific cross-references are preserved."
+    },
+    {
+      "blocks": [
+        23,
+        24
+      ],
+      "reverse_paraphrase": "Proof-theoretic compactness says that every derivability claim has a finite witnessing subset, and that consistency of every finite subset entails consistency of the whole set. The first clause uses the finite set of undischarged assumptions in a finite derivation; the second is its contrapositive when A is identical to falsity.",
+      "checks": "Both finite-subset quantifiers and derivability directions are exact. The proof retains delta, Gamma0, the undischarged-assumption construction, finiteness of derivations, and the special-case formula A identical to falsity without adding a new formula."
+    }
+  ],
+  "source_observations": [
+    "The frozen editorial sentence omits the English preposition in ‘definitions the provability relation’; the Marathi renders the evident intended phrase ‘definitions of the provability relation’ without changing mathematical content.",
+    "No source correction is applied in this unit. The final compactness sentence is translated descriptively as the result of negating and reversing the relevant implication, so no unattested Marathi headword for ‘contrapositive’ is introduced."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "सिद्धता-उपपत्तीय संकल्पना and सिद्धतायोग्यता remain transparent, definition-controlled compounds rather than fully attested specialist headwords.",
+    "एकस्वनिकता is established for semantic entailment and is extended here to monotonicity of derivability under the source's explicit subset condition.",
+    "संहतता is directly observed as an official mathematical headword, but no exact Marathi proof-theory compactness occurrence was found in the bounded search; the proposition's finite-subset clauses control its meaning.",
+    "The current coherent reader ends at OLP-0068, so this unit has not yet received paginated TeX or browser-rendering QA."
+  ]
+}

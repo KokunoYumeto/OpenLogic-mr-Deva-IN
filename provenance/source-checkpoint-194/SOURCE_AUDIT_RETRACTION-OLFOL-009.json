@@ -1,0 +1,23 @@
+{
+  "schema": "openlogic-source-audit-retraction-receipt/1",
+  "retraction_id": "OLFOL-009-RETRACTION-20260920",
+  "void_shared_identifier": "OLFOL-009",
+  "status": "false_positive_source_defect_claim_retracted",
+  "invalid_extra_target_brace_removed": true,
+  "reader_note_removed": true,
+  "configuration_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+  "unit_id": "OLP-0156",
+  "source_sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01",
+  "translation_sha256": "9f7d5203c75dc5472d2819f781e5bee4243e8acabb0f283928c317ac7f2721b4",
+  "translation_bytes": 18146,
+  "confirmed_required_trailing_braces": 2,
+  "segment_state_sha256": "dd2c40d4cbd37a024ecbea0e59c2096c8f1d7d2a3267a7ce76143770b531bcc4",
+  "source_issues_sha256": "a540c9b59b71f00e19bfcc8a735148adcb80031c41c7a951c3a9e04d5240fe9b",
+  "semantic_review_sha256": "351744b21f093ac8870327904d27926135af1325a1bbed5f2d2652286f142712",
+  "qa_b008_sha256": "e3a39310bb688d578aed742614e44ce94114d25c4225a2910bd03cfe4d352d02",
+  "checkpoint_b008_sha256": "d8347c15d98f63c81ab8a952afd35681fe4c0efa6d9d945a1f2a5f105870c016",
+  "root_qa_sha256": "a82b0e4e4437f90b6367f476ec46b8461e7dd760d3a7184e4332d6274cdd9786",
+  "worklog_sha256": "62fb568b2c01b4207da15c6b160aa4554f52025806660be702859b907f8fe34c",
+  "public_retractions_sha256": "382b160aed10581c7a8c5b544f796ef975ed15be367f07419b532e2ffbcbb5d7",
+  "historical_checkpoint_disposition": "immutable; superseded for current interpretation by this receipt and the public aggregate retraction record"
+}

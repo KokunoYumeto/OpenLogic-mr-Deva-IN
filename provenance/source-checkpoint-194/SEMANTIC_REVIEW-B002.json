@@ -1,0 +1,69 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "MR-B002",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase. Not independent or human review.",
+  "scope": "Complete relations chapter OLP-0011–OLP-0019, 104 content-bearing aligned blocks; diagram-only whitespace not counted as translated prose.",
+  "samples": [
+    {
+      "unit": "OLP-0012",
+      "reverse_paraphrase": "A binary relation on A is any subset of A squared, including the empty and universal relations. Ordered coordinate positions matter.",
+      "checks": "No requirement of a natural relation; universal and existential language preserved."
+    },
+    {
+      "unit": "OLP-0013",
+      "reverse_paraphrase": "Equally useful reversed pair encodings undermine an arbitrary ontological identification; treating a relation as a set is not discovery of metaphysical identity.",
+      "checks": "Philosophical objection is presented as source argument, not an added theorem. Benacerraf citation and both conditional branches/footnote retained in editable source."
+    },
+    {
+      "unit": "OLP-0013",
+      "reverse_paraphrase": "If membership were merely another name of a set, the expression would become a list of names rather than a proposition.",
+      "checks": "Predicate versus singular term preserved; nonsense example translated as a list without inserting a verb that would make a proposition."
+    },
+    {
+      "unit": "OLP-0014",
+      "reverse_paraphrase": "Anti-symmetric relations permit both directions only for equal elements, and need not contain self-pairs. Asymmetric relations permit no two-way pair at all.",
+      "checks": "Distinct from merely not symmetric; empty-domain qualification and non-reflexive/non-irreflexive cases preserved."
+    },
+    {
+      "unit": "OLP-0015",
+      "reverse_paraphrase": "R-related points have equal classes via symmetry and transitivity; equal classes imply Rxy using reflexivity at y.",
+      "checks": "Both directions and each property use retained. Exactly n residue classes for positive n; natural number zero convention unchanged."
+    },
+    {
+      "unit": "OLP-0016",
+      "reverse_paraphrase": "Adding all diagonal pairs to a strict order yields a partial order; removing them from a partial order yields a strict order.",
+      "checks": "Transitivity proof separates both-pairs-in-R from equality cases. Connectedness yields the linear variant. Divisibility on integers is not anti-symmetric because 1 and -1 divide each other."
+    },
+    {
+      "unit": "OLP-0017",
+      "reverse_paraphrase": "A graph specifies both its vertex set and edge relation. An isolated vertex changes the graph without changing the edge set.",
+      "checks": "Four-vertex versus three-vertex diagrams, loop and edge directions preserved. Restored source explanation of plural vertex in Marathi."
+    },
+    {
+      "unit": "OLP-0018",
+      "reverse_paraphrase": "A tree node need have at most one immediate predecessor, not necessarily exactly one. A branch is maximal, and finite branching does not imply finitely many vertices.",
+      "checks": "Least versus merely minimal, immediate predecessor versus ancestor, infinite-branch claim and weak Konig scope preserved. Source notation defects separated into SOURCE_ISSUES-B002.json."
+    },
+    {
+      "unit": "OLP-0019",
+      "reverse_paraphrase": "Relative product follows R then S through an existential intermediate point. Restriction requires both coordinates in A; application only constrains the input. Transitive closure uses positive path length.",
+      "checks": "No inverse-coordinate or composition-order reversal; reflexive closure separately adds identity."
+    }
+  ],
+  "corrections_before_release": [
+    "Restored explicit repeated L and G symbols in relation example to preserve formula multiplicities.",
+    "Preserved graph singular/plural explanation.",
+    "Improved plural formula grammar in the tree introduction."
+  ],
+  "legitimate_exceptions": [
+    "K\\H{o}nig is preserved as a proper name and source accent macro.",
+    "TikZ keys, identifiers, source comments, file paths, bibliography titles and mathematical symbols remain unchanged.",
+    "External cumulative-set and real-line conditional branches remain in editable translation; chapter reader takes the original false branch."
+  ],
+  "limitations": [
+    "Some advanced Marathi compounds are explicitly provisional; no specialist fluency certification.",
+    "All nine source units translated, but final corpus has 706 units remaining after the cumulative 16-unit tranche.",
+    "Source defects are not silently repaired; separate editorial notes explain them."
+  ],
+  "passed": true
+}

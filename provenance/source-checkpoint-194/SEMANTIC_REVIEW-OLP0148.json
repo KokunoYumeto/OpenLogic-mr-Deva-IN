@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0148",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of the soundness/completeness implications and consistency/model equivalence, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Derivability, soundness and completeness; consistency and model existence; compactness and Löwenheim–Skolem consequences; and the broader methodological significance of first-order metatheory.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "Different finite derivation systems define the same derivability relation on sentences. Gamma derives A when an appropriate derivation exists, and the systems serve semantic consequence only if Gamma entails A exactly when Gamma proves A.",
+      "checks": "Finiteness, possible derivation shapes, derivability notation, tool purpose and biconditional requirement are retained."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "Soundness prevents a system from proving non-consequences; completeness prevents it from missing consequences. Soundness is usually established by induction over inductively defined derivations, while completeness is harder.",
+      "checks": "Both implication directions, strong/weak diagnoses, minimal requirement and comparative proof difficulty remain exact."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "A sentence set deriving a contradiction is inconsistent and has no model. Completeness gives the converse: every consistent set has a model. This is equivalent to completeness and means model existence follows merely from inability to derive A and not-A.",
+      "checks": "Contradiction example, unsatisfiability, converse, consistency terminology, equivalence claim, surprising existence reading and all-and-only conclusion are preserved."
+    },
+    {
+      "blocks": [
+        9,
+        10
+      ],
+      "reverse_paraphrase": "Soundness and completeness yield compactness and Löwenheim–Skolem, including the inability to express finite or nonenumerable domains. Developing these formal methods historically took substantial work, but they now support logic, computer science and linguistics.",
+      "checks": "Both named consequences, two expressibility limits, historical qualification, detailed-work warning and three application fields remain exact."
+    }
+  ],
+  "source_observations": [
+    "The target keeps soundness and completeness in their correct opposing implication directions and does not conflate semantic entailment with syntactic derivability.",
+    "The consistency/model paragraph preserves the stronger equivalence claim rather than presenting model existence as only a one-way corollary.",
+    "All formulas, macros, controlled tokens, identifiers and references match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The section summarizes results whose formal definitions and proofs occur in later chapters.",
+    "The prose claim that developed derivation systems define the same relation is understood for the standard sound and complete systems presented in this text."
+  ]
+}

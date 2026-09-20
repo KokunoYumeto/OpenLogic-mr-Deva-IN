@@ -1,0 +1,48 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0194",
+  "method": "Same-agent English/Marathi close reading; exact macro, identifier, token and formula comparison; and replay of the isomorphism and compactness arguments, including the cardinality conclusion. No independent human or native-speaker review is claimed.",
+  "scope": "Non-standard arithmetic structures and numbers, an independence exercise for Q's first three axioms, an integer-domain counterexample and the compactness construction of an enumerable non-standard model of true arithmetic.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "A structure is non-standard exactly when it is not isomorphic to N. Its standard numbers are the values of standard numerals; any other carrier elements are non-standard, and their existence prevents an isomorphism from N from being surjective.",
+      "checks": "The element/value quantifiers, induction identity and surjectivity contradiction all keep their original directions."
+    },
+    {
+      "blocks": [
+        10,
+        11
+      ],
+      "reverse_paraphrase": "The exercise asks for separate structures witnessing independence patterns among Q1 through Q3. An ordinary integer structure is non-standard because negative integers are not numeral values, but it is not a model of true arithmetic because zero has an integer predecessor.",
+      "checks": "Every satisfaction and non-satisfaction mark in the three requested patterns is preserved, as is the counterexample sentence."
+    },
+    {
+      "blocks": [
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "Add a constant c required to differ from every standard numeral. Every finite subset is modeled by N with c assigned one more than the largest excluded numeral; the case with no such inequality is handled directly. Compactness gives a model, forgetting c leaves a non-standard model of true arithmetic, and Downward Löwenheim–Skolem supplies the claimed enumerable size.",
+      "checks": "The slash-equality constraints remain inequalities, the witness is interpreted in the expanded structure, all finite-subset cases are covered and the cardinality step now follows from an explicitly named available theorem."
+    }
+  ],
+  "source_observations": [
+    "T281 now covers the source-defined standard/non-standard contrast for models, elements and the numbers those elements represent.",
+    "The frozen witness formula takes c's interpretation in the reduct M even though c exists only in the expansion M-superscript-c; OLFOL-031 records the corrected structure argument.",
+    "The frozen compactness proof omits both the finite-subset case with no c-inequality and the step proving the proposition's enumerable cardinality claim; OLFOL-033 and OLFOL-032 record the bounded prose additions.",
+    "All unaffected macros, identifiers, controlled tokens and formulas match the frozen source; the corrected witness formula passes the documented source-correction projection."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The full standard/non-standard Marathi compounds remain expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

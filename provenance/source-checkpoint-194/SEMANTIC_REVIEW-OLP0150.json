@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0150",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of the formation account, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Introductory account of first-order syntax, inductive formation and unique readability.",
+  "samples": [
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "Introduction.",
+      "checks": "The section heading retains its introductory function."
+    },
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "First-order theory and metatheory require syntax and semantics. Terms are built from variables, constants and functions; atomic formulas combine predicates with terms, and connectives and quantifiers build complex formulas. Different notational systems share inductive formation rules, which, when properly designed, make expressions uniquely readable and support inductive semantics.",
+      "checks": "The construction hierarchy, allowance for alternative primitive symbols and parentheses, Polish-notation example, inductive character, unique-readability conclusion and semantic consequence are all retained."
+    }
+  ],
+  "source_observations": [
+    "The target preserves the distinction between terms and formulas and does not treat variables, constants or functions as formulas.",
+    "The source's typographical ‘will chose’ is translated according to its clear intended sense without changing any formal content.",
+    "All formulas, macros, controlled tokens, identifiers and references match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The paragraph previews definitions proved and refined in the following units."
+  ]
+}

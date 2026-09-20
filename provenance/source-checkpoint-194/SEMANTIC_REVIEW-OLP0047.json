@@ -1,0 +1,64 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0047",
+  "method": "Same-agent English/Marathi close reading, formula/macro/reference comparison, reverse paraphrase and bounded primary-source terminology research; not independent or human review.",
+  "scope": "All twenty-six translated blocks in the ordered-rings-and-fields appendix, including every axiom, proof, exercise, footnote and cut calculation.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8,
+        10,
+        12
+      ],
+      "reverse_paraphrase": "The constructed integers should form a commutative ring. The eight displayed laws define that structure, and representative calculations establish associativity, additive inverses and distributivity while relying on arithmetic of naturals.",
+      "checks": "All eight equations, implicit universal restriction, warning about the meanings of zero and one, representative choices, equivalence-class notation and every equality in the three proofs are preserved exactly."
+    },
+    {
+      "blocks": [
+        15,
+        16,
+        19,
+        22
+      ],
+      "reverse_paraphrase": "The integer order must make an ordered ring; the footnote recalls total-order properties and trichotomy. Adding nonzero multiplicative inverses gives an ordered field, which rationals should satisfy, while reals must additionally satisfy completeness.",
+      "checks": "The order-reference target, four relation properties, disjunction, two compatibility implications, ordered-field label, inverse quantifiers, completeness reference and all three number-system distinctions remain present."
+    },
+    {
+      "blocks": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "reverse_paraphrase": "Real addition must produce a cut. The proof shows the sum is a nonempty proper rational subset, is downward closed, and has no maximum. Similar checks are assigned for subtraction, multiplication and nonzero division before the ordered-field exercise.",
+      "checks": "Every witness, inequality and membership step is retained. MRARITH-008 discloses that subtraction and division formulas were left inactive upstream without inventing a replacement definition."
+    },
+    {
+      "blocks": [
+        27,
+        28
+      ],
+      "reverse_paraphrase": "The rationals below square root of two form a cut. For a positive p below the root, q=(2p+2)/(p+2) is both larger than p and still has square below two, so the cut has no maximum.",
+      "checks": "The set-builder disjunction, q definition and every line in both inequality chains have exact formula parity."
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "MRARITH-007",
+      "finding": "A noun is missing in the source's phrase introducing the tedious ordered-field check.",
+      "resolution": "The intended generic checking noun is supplied in Marathi and documented adjacent to the sentence."
+    },
+    {
+      "id": "MRARITH-008",
+      "finding": "The appendix presupposes subtraction and division definitions that remain inactive comments in the source cuts section.",
+      "resolution": "The exercise is translated faithfully with an adjacent disclosure; no unsupported operation definition is activated."
+    }
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic or mathematical certification has been performed."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0090",
+  "method": "Same-agent English/Marathi block-by-block close reading, quantifier-proof reverse paraphrase, exact formula, macro, protected-token and identifier comparison after one documented source-formula projection, and reconciliation of the chapter's declared side conditions; no independent human or native-speaker review is claimed.",
+  "scope": "Worked natural-deduction proofs with universal and existential quantifiers, eigenvariable scheduling and restrictions, substitution by closed terms, retained assumptions, contradiction, and nine quantified exercise sequents.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "The first example derives existential not-A implies not universal A. It schedules existential elimination early, introduces a temporary not-A(a) assumption, assumes universal A for negation introduction, instantiates that universal premise at the closed constant a, derives falsity, and discharges the temporary assumptions in the displayed order.",
+      "checks": "Every proof-tree formula, rule and discharge number is preserved. OLND-005 restores the missing negation in the prose's cited existential premise and states the actual existential-elimination restriction; OLND-006 restores the standing closed-term qualifier for universal elimination."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "The second example derives an existential C conclusion from existential A-and-B and universal B-implies-C assumptions. Existential elimination introduces A(a) and B(a), conjunction elimination extracts B(a), universal elimination yields B(a) implies C(a,b), conditional elimination yields C(a,b), and existential introduction reaches the target before the temporary conjunction assumption is discharged.",
+      "checks": "Both undischarged premises, the temporary-assumption label, the tree insertion command, all substitutions and the order of the four rule applications are exact."
+    },
+    {
+      "blocks": [
+        13
+      ],
+      "reverse_paraphrase": "The third example derives not universal A from universal-A-implies-existential-B and not-existential-B. It assumes universal A for negation introduction, obtains existential B by conditional elimination, combines it with its negation to obtain falsity, and discharges the universal-A assumption.",
+      "checks": "The three successive proof trees retain every premise, negation, quantifier, conditional-elimination label and discharge number."
+    },
+    {
+      "blocks": [
+        14,
+        15
+      ],
+      "reverse_paraphrase": "The two exercise sets ask for nine derivations involving distribution, quantifier negation, predicate interaction and quantified conditionals. The final three are explicitly marked as requiring the classical contradiction rule.",
+      "checks": "All nine derivability claims, variables, predicate arguments, connective scopes and the final classical-rule note are source-identical."
+    }
+  ],
+  "source_observations": [
+    "OLND-005: the source's first side-condition check drops the negation from its actual existential major premise and its final check omits the full rule-specific scope. The Marathi restores the formula and states the declared premise, conclusion and non-temporary undischarged-assumption restriction.",
+    "OLND-006: the source says universal elimination can use any term, although the rule requires a closed term. The Marathi states कोणतेही बंद पद; the chosen constant and proof tree are unchanged."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "बंद पद, आयगेन चर and आयगेन चराची अट remain definition-controlled terminology with documented uncertainty; the displayed rules fix their exact roles.",
+    "OLND-005 includes one documented source-formula projection and a bounded prose clarification; OLND-006 clarifies a standing rule restriction without changing formal content.",
+    "The current coherent reader ends at OLP-0068, so this unit has not yet received paginated TeX or browser-rendering QA."
+  ]
+}

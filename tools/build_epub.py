@@ -57,7 +57,18 @@ def c14n(node: etree._Element) -> bytes:
 
 
 def normalized_text(node: etree._Element) -> str:
-    return " ".join("".join(node.itertext()).split())
+    def segments(current: etree._Element):
+        if isinstance(current.tag, str) and etree.QName(current).namespace == MATHML_NS and etree.QName(current).localname == "mglyph":
+            yield current.get("alt") or ""
+            return
+        if current.text:
+            yield current.text
+        for child in current:
+            yield from segments(child)
+            if child.tail:
+                yield child.tail
+
+    return " ".join("".join(segments(node)).split())
 
 
 def build_id_crosswalk(root: etree._Element) -> tuple[dict[str, str], list[dict]]:
@@ -326,7 +337,16 @@ def build_package(config: dict, content_sha: str, resources: list[PurePosixPath]
         meta("schema:accessibilityHazard", hazard)
     meta(
         "schema:accessibilitySummary",
-        "Reflowable Marathi text with semantic headings, native presentation MathML, semantic proof tables, detailed Marathi alternatives for diagrams, and a navigable table of contents. This is an incomplete eleven-chapter edition covering 108 of 722 source units. Reading-system MathML support varies; automated checks are not human accessibility certification.",
+        (
+            "Reflowable Marathi text with semantic headings, native presentation "
+            "MathML, semantic proof tables, detailed Marathi alternatives for "
+            "diagrams, and a navigable table of contents. This is an incomplete "
+            f"{config['expected']['complete_chapters']}-chapter edition covering "
+            f"{config['expected']['translated_source_units']} of "
+            f"{config['expected']['total_source_units']} source units. Reading-system "
+            "MathML support varies; automated checks are not human accessibility "
+            "certification."
+        ),
     )
 
     manifest = etree.SubElement(package, f"{{{OPF_NS}}}manifest")
@@ -429,6 +449,10 @@ def build_tree(destination: Path, reader_root: Path, config: dict) -> dict:
         "content_xhtml_sha256": digest(content_payload),
         "content_xhtml_bytes": len(content_payload),
         "mathml_roots": len(content_root.xpath(".//m:math", namespaces=NS)),
+        "mathml_text_fallback_occurrences": len(content_root.xpath(".//m:mtext/m:mglyph", namespaces=NS)),
+        "mathml_text_fallback_unique_alternatives": len(
+            set(content_root.xpath(".//m:mtext/m:mglyph/@alt", namespaces=NS))
+        ),
         "ids": len(ids),
         "unique_ids": len(set(ids)),
         "copied_assets": copied,

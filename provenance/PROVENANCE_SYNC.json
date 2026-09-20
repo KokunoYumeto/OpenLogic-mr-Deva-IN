@@ -18,8 +18,8 @@
     },
     "SEGMENT_CANON_USE.jsonl": {
       "records": 2063,
-      "bytes": 3153658,
-      "sha256": "812f4dd2cf64548955915100d331ccc5f010496f146a6073b094ae0cb9c2d408"
+      "bytes": 3153669,
+      "sha256": "5b78475b63731c3a52cb13d3f3d9d8a827a19b6190bc7dfb675c2bee696628b9"
     },
     "CANON_SOURCES.jsonl": {
       "records": 98,
@@ -28,8 +28,8 @@
     },
     "CANON_PASSAGES.jsonl": {
       "records": 133,
-      "bytes": 123455,
-      "sha256": "49701ebd0b3e325fed976a238b4f7ce004f6436a67965c68523e8e936eca3eef"
+      "bytes": 123464,
+      "sha256": "56f8e63e425b5ce6b3123c458b6fdc2c81a2fbb2cd08e72769aadefcc0f20144"
     },
     "TERM_DECISIONS.jsonl": {
       "records": 289,

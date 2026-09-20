@@ -1,0 +1,89 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0156",
+  "method": "Same-agent English/Marathi block-by-block close reading, comparison with the already reviewed parallel propositional formation-sequence section, constructor-by-constructor replay of both directions of the equivalence proof, verification of examples, exercises and the minimality characterization, and exact structural QA after three documented frozen-source repairs. OLFOL-009 was retracted after literal macro-argument counting showed that the frozen source was already balanced. No independent human or native-speaker review is claimed.",
+  "scope": "Strings; term and formula formation sequences; equivalence with inductive formation; minimal formation sequences; and the subformula characterization.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "Formation sequences give a bottom-up alternative to inductive definitions; an L-string is any finite sequence of L-symbols, so every L-formula is an L-string but not conversely.",
+      "checks": "The motivation, arbitrary-language scope, finite-string definition and malformed-string counterexample are all retained."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "A term or formula formation sequence ends with its target and builds each entry only from earlier entries by the permitted constructors; examples show that order may vary and irrelevant junk may occur.",
+      "checks": "All term, connective and quantifier constructors, strict index inequalities, displayed examples and the informal junk explanation are preserved. The k-ary off-by-one is repaired under OLFOL-006; the target now preserves the already balanced nested Atom expression after retracting OLFOL-009."
+    },
+    {
+      "blocks": [
+        13,
+        14
+      ],
+      "reverse_paraphrase": "Every inductively formed formula has a formation sequence: the atomic singleton is the base, and concatenating constituent sequences plus the new constructor gives each inductive case.",
+      "checks": "The atomic base and all seven constructors produce exactly the displayed terminal formula."
+    },
+    {
+      "blocks": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "reverse_paraphrase": "Initial segments of a formation sequence form their own last entry. Conversely, strong induction on sequence length shows that every string with a formula formation sequence is an inductively generated formula.",
+      "checks": "Both inclusions, the strong-induction hypothesis, all seven cases, the conjunction demonstration and proper-initial-subsequence argument are retained. The copied L_0 subscripts and lone equivalence symbol are repaired under OLFOL-007 and OLFOL-008."
+    },
+    {
+      "blocks": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "reverse_paraphrase": "Terms satisfy the analogous equivalence, left as an exercise with the formula proof as a hint.",
+      "checks": "The term set, existence condition, exercise and both references are retained."
+    },
+    {
+      "blocks": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "reverse_paraphrase": "Minimal formation sequences have globally shortest length. A formula or term may have several such sequences but they contain the same strings, and a formula B is a subformula of A exactly when it occurs in every formation sequence, equivalently in some minimal one.",
+      "checks": "Both minimality clauses use the n+1 length threshold, and all three subformula conditions and exercises are retained."
+    },
+    {
+      "blocks": [
+        33
+      ],
+      "reverse_paraphrase": "Raymond Smullyan introduced formation sequences in First-Order Logic, and Zuckerman established further properties.",
+      "checks": "The title, both attributions and both citation identifiers are preserved."
+    }
+  ],
+  "source_observations": [
+    "The first-order section deliberately extends the parallel propositional construction with term, function and quantifier cases.",
+    "The converse theorem relies on literal string construction, so syntactic identity rather than logical equivalence is required in its conjunction case.",
+    "Three deterministic frozen-source defects are repaired adjacent to reader notes and projected back only during structural comparison; OLFOL-009 is retained only as a retracted false-positive record.",
+    "All formulas, macros, controlled tokens, identifiers, citations and references pass after the documented projections."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The compact Marathi formation-sequence terminology remains explicitly open to specialist review in T141 and T214."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0112",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse paraphrase of the chapter title and editorial qualification, and exact macro, tag, identifier, formula and import comparison; no independent human or native-speaker review is claimed.",
+  "scope": "Axiomatic-deduction chapter driver, including its FOL/propositional title branches, warning about primitive and defined vocabulary, and every conditional import.",
+  "samples": [
+    {
+      "blocks": [
+        4
+      ],
+      "reverse_paraphrase": "Both the FOL and propositional branches title the chapter Axiomatic Derivation.",
+      "checks": "The fol/pl namespaces, axd identifier, FOL tag and derivation token remain exact. स्वयंसिद्धकीय निष्पत्ती follows the recorded axiomatic-method and derivation decisions."
+    },
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "The chapter has not yet been checked against tags that distinguish primitive from defined connectives and quantifiers. It assumes every such item primitive except the biconditional, which is defined. With the FOL tag true it produces the quantified version; otherwise it produces the version without quantifiers.",
+      "checks": "The exception scope, single biconditional formula, primitive/defined contrast, truth condition on FOL and quantified/unquantified branch remain explicit. The Marathi does not imply that tag compliance has already been performed."
+    },
+    {
+      "blocks": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "reverse_paraphrase": "The driver imports the rule, propositional, quantifier, proof-construction, proof-theoretic, deduction-theorem, provability, soundness and identity sections, guarding first-order-only imports with FOL, and then closes through the chapter hook.",
+      "checks": "All thirteen import names, five FOL conditionals, chapter hook and document structure are byte-preserved."
+    }
+  ],
+  "source_observations": [
+    "The editorial warning is retained as a statement about unfinished tag conformance, not silently repaired or omitted.",
+    "No formula, tag, import, identifier or conditional branch was changed."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "स्वयंसिद्धकीय निष्पत्ती is supported by an authoritative axiomatic-method passage and the edition's established derivation term, but its compound form remains open to specialist review.",
+    "The driver imports untranslated later sections; it will enter a cumulative reader after the complete chapter is translated."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0132",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of both the first-order term model and propositional valuation branches, replay of the closed-term evaluation induction, both quantified satisfaction equivalences and every structural-induction case of the Truth Lemma, followed by exact formula, macro, controlled-token, tag, label, identifier and reference comparison after one documented formula projection. No independent human or native-speaker review is claimed.",
+  "scope": "Canonical model construction: the first-order term model or propositional valuation, quantified truth in a covered term model, and the Truth Lemma relating satisfaction to membership in Gamma-star.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "For first-order logic without identity, extend Gamma to a complete consistent saturated Gamma-star and build its model from closed terms, interpreting each constant and function syntactically and each predicate by atomic membership. For propositional logic, let the complete consistent extension determine the valuation directly.",
+      "checks": "Both FOL and propositional tag branches, the exclusion of identity, L-prime, Gamma-star extension, domain, constants, functions, predicates, atomic sentences and truth-value cases are retained exactly."
+    },
+    {
+      "blocks": [
+        8,
+        9
+      ],
+      "reverse_paraphrase": "Every closed term evaluates to itself in the term model. Structural induction handles constants by definition and function terms by applying the induction hypotheses to all arguments before the function interpretation clause.",
+      "checks": "The base case, n-ary function step, every t_i value equation and the three-line aligned calculation preserve all indices and operations."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "A general structure need not have every domain element named by a closed term, but the term model is covered in this sense. Consequently an existential is true exactly when one closed instance is true, and a universal is true exactly when every closed instance is true; the proof converts assignments to closed terms and uses extensionality and sentence satisfaction.",
+      "checks": "Both prvEx/prvAll branches, closed-term domain, assignment equation s(x)=t, extensionality reference, sentence-satisfaction reference and exercise wrapper are all preserved."
+    },
+    {
+      "blocks": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "reverse_paraphrase": "The Truth Lemma says that an identity-free first-order formula, or any propositional formula in the alternate branch, is satisfied exactly when it belongs to Gamma-star. Simultaneous structural induction treats falsity, truth, atomic predicates or variables, and negation using consistency, completeness and the model construction.",
+      "checks": "The identity proviso, both satisfaction macros, false and true constants, predicate tuple, propositional assignment, induction hypotheses and negation membership equivalence remain exact."
+    },
+    {
+      "blocks": [
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "reverse_paraphrase": "The conjunction, disjunction and conditional cases combine the induction hypotheses with the corresponding complete-consistent-set laws. Universal and existential cases combine the term-model quantifier proposition, induction hypotheses and the saturated-instance proposition.",
+      "checks": "Every guarded exercise branch and completed proof branch is retained. OLCOM-002 restores B(x) in the universal conclusion, and OLCOM-003 makes explicit that the four quantified instance ranges are over closed terms."
+    },
+    {
+      "blocks": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "reverse_paraphrase": "Separate tagged exercises ask readers to complete the appropriate Truth Lemma cases for first-order and propositional builds.",
+      "checks": "The FOL and notFOL guards, exercise tags and fully qualified lemma references are unchanged."
+    }
+  ],
+  "source_observations": [
+    "OLCOM-002 records that the frozen universal induction case changes its formula family from B to A only in the final membership clause; the target restores B and QA projects that occurrence back for source comparison.",
+    "OLCOM-003 records that the frozen quantified Truth Lemma cases omit the closed-term qualifier four times even though both cited propositions and the term-model domain require closed terms; the target supplies the qualifier without changing formal content.",
+    "The term-model and propositional-valuation alternatives share one tagged file; every branch, tag and reference option remains exact.",
+    "All remaining formulas, macros, controlled tokens, tags, labels, identifiers and reference options match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "पद-प्रतिमान, बंद पदांनी आच्छादित रचना and सत्यता पूर्वप्रमेय remain expert-reviewable decisions T191, T196 and T197.",
+    "The guarded exercise cases left implicit by the frozen source are not supplied."
+  ]
+}

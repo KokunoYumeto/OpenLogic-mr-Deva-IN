@@ -1,0 +1,68 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0135",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of both Compactness Theorem clauses and the soundness/derivability-compactness/completeness proof, followed by semantic replay of the uncovered-model, infinitesimal, nonstandard-arithmetic and finitude examples and exact formula, macro, controlled-token, tag, label, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Compactness from Completeness, its entailment and finite-satisfiability forms, and model-theoretic applications to naming, infinitesimals, nonstandard elements, infinitude and finitude.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "Compactness says that a sentence set is satisfiable exactly when every finite subset is satisfiable, and that any semantic consequence already follows from a finite subset. Finite satisfiability is defined by quantifying over every finite subset.",
+      "checks": "The infinite-set motivation, all sentence/formula scopes, both theorem clauses, subset directions, entailment and satisfiability biconditionals are exact."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "A model or valuation satisfying Gamma satisfies all its finite subsets. Conversely, finite satisfiability gives finite consistency by soundness, consistency of Gamma by compactness of derivability, and satisfiability by completeness; paired exercises request the entailment clause.",
+      "checks": "Both FOL/propositional branches, all four proof-system references in each family, Gamma-zero inclusions and fully qualified exercise references are retained."
+    },
+    {
+      "blocks": [
+        13
+      ],
+      "reverse_paraphrase": "No theory with an infinite model can force every model to be covered. Add a fresh constant c and all sentences saying c differs from every old-language term; every finite fragment is satisfied by assigning c an unnamed element, so compactness yields an uncovered model of the original theory.",
+      "checks": "Freshness of c, Delta comprehension, Gamma-prime/Delta-prime decomposition, choice of a, M-prime expansion, both satisfaction claims and final value inequalities are exact."
+    },
+    {
+      "blocks": [
+        14
+      ],
+      "reverse_paraphrase": "Take the complete rational theory in an ordered-ring language and add a positive constant smaller than 1/k for every positive integer k. Every finite fragment is realized by c equal to 1/K, so compactness yields a model with an infinitesimal.",
+      "checks": "Language symbols, rational and real comparison, no-division explanation, numeral construction, Delta formula, K bound, Q-prime assignment and final S interpretation are preserved."
+    },
+    {
+      "blocks": [
+        15
+      ],
+      "reverse_paraphrase": "The arithmetic exercise asks for a model element above every standard numeral even though the standard model contains none, using compactness.",
+      "checks": "The standard model, numeral notation, all formulas n-less-than-x, target structure and element claims are exact."
+    },
+    {
+      "blocks": [
+        16,
+        17
+      ],
+      "reverse_paraphrase": "Identity lets first-order logic force at least n distinct objects for every n and therefore express infinitude. If a sentence set characterized exactly finite structures, adjoining all lower-bound sentences would be finitely satisfiable but compactness would give an infinite model, a contradiction; hence finitude is not expressible this way.",
+      "checks": "A-greater-than-or-equal-n, Delta comprehension, Gamma union Delta, Lambda finite-model assumption, largest n, finite model with at least n elements and final contradiction are exact."
+    }
+  ],
+  "source_observations": [
+    "The file is shared by FOL and propositional builds for the theorem and proof, while its applications are guarded for FOL; every tag and reference branch remains exact.",
+    "MR-P105 directly supports the अतिसूक्ष्म stem in specialist mathematics, while the displayed inequalities control the infinitesimal-number sense.",
+    "All formulas, macros, controlled tokens, tags, labels, identifiers and reference options match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "सांततः पूर्ततायोग्य and अतिसूक्ष्म संख्या remain expert-reviewable decisions T199 and T200.",
+    "The theorem's entailment clause and the detailed finite-fragment argument explicitly assigned as exercises are not supplied."
+  ]
+}

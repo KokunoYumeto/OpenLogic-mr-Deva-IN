@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0182",
+  "method": "Same-agent English/Marathi close reading of the part title and editorial scope statement, followed by exact formula, macro, controlled-token, identifier, issue-reference and import comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Model-theory part driver describing the material's incomplete experimental status, its source and exclusions, the work still needed for textbook use, and its four imported chapters.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5
+      ],
+      "reverse_paraphrase": "The model-theory material is incomplete and experimental. It currently adapts Aldo Antonelli's model-theory notes while omitting theories, completeness and compactness because first-order logic already covers them. It needs substantially more introduction, motivation, explanation and exercises for textbook use, and Andy Arana is planning work specifically on this part.",
+      "checks": "The title, provisional status, sole-source characterization, all three exclusions with their stated reason, the four kinds of needed development, both names and the issue reference are retained."
+    }
+  ],
+  "source_observations": [
+    "The target reuses the established transparent compound प्रतिमान उपपत्ती and keeps उपपत्ती, संपूर्णता and संहतता distinct.",
+    "The four chapter imports, part hook, macros, identifiers and issue number match the frozen source exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "प्रतिमान उपपत्ती remains an expert-reviewable transparent compound rather than a directly attested fixed disciplinary title.",
+    "The personal-name transliterations are source-guided and have not been independently attested in Marathi.",
+    "No TeX reader build was run for this individual part driver."
+  ]
+}

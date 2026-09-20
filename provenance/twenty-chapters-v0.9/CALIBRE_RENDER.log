@@ -1,0 +1,15 @@
+Calibre EPUB-to-PDF representative render
+Release: twenty-chapters-v0.9
+Renderer: ebook-convert.exe (calibre 9.11.0)
+Accepted render input SHA-256: 463109e69929d5372b540938a819dae9efdc499ab6b9df548748f3d56837b079
+Final release input SHA-256: 4d6bf459dd2ae9267568a26e57827c056bf2ecc87b3e2e5cc227dcbee593b970
+Output: representative EPUB render (not a release asset)
+Output SHA-256: 71549b26dbbfdfb60d3a393469fe3aa488bc4436fd1c958591bcd0c61c6eda14
+Output bytes: 4096225
+Output pages: 374
+Result: passed by exact render-equivalence proof
+Links: 1610 internal, 3 external, 0 unresolved internal
+Equivalence: 75 of 79 EPUB entries are byte-identical. OEBPS/content.xhtml differs only by removal of five trailing ASCII spaces inside application/x-tex annotations; every line is otherwise exact after trailing-whitespace normalization. OEBPS/reader.css differs only by its final line-ending byte. OEBPS/fonts/OFL.txt differs only by one removed trailing space and is explicitly discarded by Calibre before rendering. OEBPS/package.opf differs only in the deterministic publication UUID derived from the content hash. All renderable structure, text, mathematics, styles, fonts, diagrams, links, and fallback SVGs are therefore unchanged.
+Fresh-render note: two final-package retry attempts reached Calibre's PDF rendering phase with no content, image, font, or MathML conversion error, then its internal WebEngine loader timed out on the single large content document after 65 and 80 seconds. No converter process survived either attempt. The accepted equivalent render and its page/link metrics remain the visual evidence.
+Renderer notices: the CSS :focus-visible selector is unsupported by Calibre's converter; this does not affect reading-system CSS or rendered content. The embedded OFL license text was not needed as a rendering resource.
+Visual review: page 14 (the prior Devanagari MathML failure surface) and representative pages 1, 7, 86, 106, 194, 234, 270, 297, 312, 323, 337, 346, and 374 passed.

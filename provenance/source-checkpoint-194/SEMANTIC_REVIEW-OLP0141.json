@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0141",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of the vocabulary split and sentence-formation problems, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "The introductory syntax overview: constants and predicates, logical symbols, complex sentence formation, and the need for rigorous rules and replacement operations.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "First-order syntax must determine which symbol strings are sentences. Its vocabulary contains symbols that pick out or describe things, represented by constants and predicates, and logical connectives and quantifiers that build complex expressions.",
+      "checks": "The two-part vocabulary, constant/predicate roles, P(a) example, interpretation caveat and both complex-expression examples are preserved."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "Rigorous semantics and derivation rules require an exact definition of sentence formation that admits proofs about all sentences and exact operations such as replacing x by b. Quantifiers and variables make the displayed vacuous, nested and mixed-scope examples nontrivial.",
+      "checks": "The metalogical purpose, simple-to-complex construction, rule requirement, three definitional problems and all three quantified/replacement questions remain exact."
+    }
+  ],
+  "source_observations": [
+    "The target consistently distinguishes चिन्हमाला from !!{sentence}, and preserves constants and predicates inside controlled glossary tokens.",
+    "The final replacement example leaves the bound occurrence under the existential quantifier visible, preserving the source's motivation for capture-sensitive substitution.",
+    "All formulas, macros, controlled tokens, identifiers and references match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The section deliberately postpones formal definitions and answers to its closing questions.",
+    "आकारिक follows decision T202 and remains expert-reviewable."
+  ]
+}

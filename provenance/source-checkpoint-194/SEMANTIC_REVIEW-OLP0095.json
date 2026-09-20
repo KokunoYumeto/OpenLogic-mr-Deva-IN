@@ -1,0 +1,93 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0095",
+  "method": "Same-agent English/Marathi block-by-block close reading, inference-by-inference reverse paraphrase, exact formula, macro, protected-token and identifier comparison, and reconstruction of every supplied natural-deduction proof tree; no independent human or native-speaker review is claimed.",
+  "scope": "Soundness of natural deduction by induction on inference count, with detailed semantic checks for selected propositional and first-order rules, exercises for the remaining cases, and validity and consistency corollaries.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "A derivation system is sound when it derives nothing that fails to follow. Desired consequences are validity or tautologicity of every derivable sentence, semantic consequence whenever there is derivability from premises, and unsatisfiability of every inconsistent set. The theorem states that if A is derivable from undischarged assumptions Gamma, then Gamma entails A.",
+      "checks": "All three motivating consequences, the FOL/propositional alternatives, the direction from derivability to entailment and the exact theorem label are preserved."
+    },
+    {
+      "blocks": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "reverse_paraphrase": "The proof inducts on the number of inferences in a derivation delta of A. At zero inferences the lone assumption A is undischarged, so anything satisfying every undischarged assumption satisfies A. In the step, each immediate subderivation has fewer than n inferences; the induction hypothesis gives its premise from its own undischarged assumptions, and each possible last rule must preserve consequence.",
+      "checks": "The induction measure, zero-inference basis, subderivation bound, hypothesis scope and required whole-proof conclusion remain distinct and correctly ordered."
+    },
+    {
+      "blocks": [
+        12
+      ],
+      "reverse_paraphrase": "For negation introduction, the subderivation obtains falsity from Gamma together with temporary A. If a structure or valuation satisfied Gamma but failed to satisfy not-A, it would satisfy A and therefore Gamma union A, contradicting the induction hypothesis.",
+      "checks": "The discharged A, label n, delta_1, falsity conclusion, reductio assumption and all satisfaction polarities are exact."
+    },
+    {
+      "blocks": [
+        13,
+        14
+      ],
+      "reverse_paraphrase": "Conjunction elimination preserves consequence because satisfaction of A-and-B entails satisfaction of each conjunct. Disjunction introduction preserves consequence because satisfaction of either chosen disjunct entails satisfaction of A-or-B; the text proves the A variants and explicitly covers the symmetric B variants.",
+      "checks": "Both one-premise proof trees, induction hypotheses, conjunction biconditional, disjunction implication and symmetric-case qualifications are preserved."
+    },
+    {
+      "blocks": [
+        15,
+        16,
+        17
+      ],
+      "reverse_paraphrase": "Conditional introduction discharges A after a subderivation of B from Gamma union A; a countermodel to A-implies-B satisfying Gamma would contradict that consequence. Falsity introduction is sound because Gamma entails falsity under the induction hypothesis, so Gamma has no model and therefore entails A. Falsity closure is left as an exercise.",
+      "checks": "The temporary assumption, discharge number, conditional satisfaction polarities, explosion argument and exercise boundary remain exact."
+    },
+    {
+      "blocks": [
+        18,
+        19,
+        20
+      ],
+      "reverse_paraphrase": "For universal introduction, assume Gamma entails A(a), take an arbitrary model of Gamma and an arbitrary assignment s, reinterpret fresh a as s(x), transfer satisfaction to the modified structure, use substitution and extensionality, then transfer back because a occurs in neither Gamma nor A(x). Existential introduction and universal elimination are exercises.",
+      "checks": "Every structure change, assignment, sentence condition, freshness fact, cited result and satisfaction formula is preserved. The frozen universal-elimination exercise uses the equivalent but inconsistent source spelling Elim-forall; OLND-007 records that spelling without changing it."
+    },
+    {
+      "blocks": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "reverse_paraphrase": "The multi-premise cases include disjunction elimination, conjunction introduction, conditional elimination, negation elimination and, for FOL, existential elimination. The proof supplies conjunction introduction from consequences of Gamma_1 and Gamma_2 and conditional elimination from Gamma_1 entailing A-implies-B and Gamma_2 entailing A; the other listed rules are exercises.",
+      "checks": "The FOL branch list, both binary proof trees, unions of assumption sets, all satisfaction polarities, contradiction subargument and each exercise case are exact."
+    },
+    {
+      "blocks": [
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "reverse_paraphrase": "Separate FOL and propositional exercises ask the reader to complete soundness. Weak soundness says every theorem is valid or a tautology. The consistency corollary says satisfiability implies consistency; its contrapositive derives falsity from Gamma and uses soundness plus the impossibility of satisfying falsity to show Gamma unsatisfiable.",
+      "checks": "Both cross-edition references, corollary labels, implication directions, contrapositive, derivation claim and structure/valuation alternatives are preserved."
+    }
+  ],
+  "source_observations": [
+    "OLND-007 records that the frozen soundness exercise spells universal elimination as \\Elim{\\forall}, whereas the rule declaration and chapter convention use \\Elim{\\lforall}. The aligned Marathi target preserves the equivalent frozen label exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "निर्दोषता, तार्किक परिणाम, पूर्ततायोग्य, विगमन and the natural-deduction rule vocabulary follow the edition's existing proof-theory and semantics decisions; formulas determine each exact truth condition.",
+    "The frozen source intentionally leaves falsity closure, existential introduction, universal elimination, disjunction elimination, negation elimination and existential elimination as exercises, and the Marathi target does the same.",
+    "The current coherent reader ends at OLP-0068, so this unit has not yet received paginated TeX or browser-rendering QA."
+  ]
+}

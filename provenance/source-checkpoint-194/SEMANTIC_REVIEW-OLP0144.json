@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0144",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of the free-occurrence recursion for all four formula forms, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "The removal of assignment dependence for sentences, the free/bound variable distinction, and the inductive definition of free occurrences.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7
+      ],
+      "reverse_paraphrase": "Satisfaction for formulas uses a variable assignment, but sentences should not. A quantifier binds its variable throughout its scope; variables without matching quantifiers are free, and sentences are formulas with no free variables.",
+      "checks": "The assignment problem, quantifier/variable relation, scope, bound/unbound contrast and proposed sentence definition are retained."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "Free occurrences are defined inductively: every occurrence is free in an atomic formula; negation preserves corresponding free occurrences; conjunction takes those free in either side; and an existential binds its own variable while preserving free occurrences of distinct variables from its body.",
+      "checks": "All four constructor cases, the P(x) example, both biconditionals and the x/y distinction are exact."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "A sentence is any formula without a free occurrence of a variable.",
+      "checks": "The final definition retains both occurrence-level and formula-level conditions."
+    }
+  ],
+  "source_observations": [
+    "The target consistently uses आस्थिति for a syntactic occurrence and keeps it distinct from the variable itself.",
+    "The existential case preserves the difference between binding x and leaving occurrences of a distinct variable x free under an existential on y.",
+    "All formulas, macros, controlled tokens, identifiers and references match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "This introductory recursion omits the additional connectives and universal quantifier handled in the full syntax chapter.",
+    "The ordinary Marathi व्याप्ती is used for quantifier scope; exact specialist preference remains open to expert review."
+  ]
+}

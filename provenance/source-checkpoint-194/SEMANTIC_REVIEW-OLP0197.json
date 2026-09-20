@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0197",
+  "method": "Same-agent English/Marathi close reading; exact macro, identifier, token and formula comparison; and direct transport of every K operation and relation across the stated bijection. No independent human or native-speaker review is claimed.",
+  "scope": "Computable presentations of arithmetic structures, a computable non-standard natural-number-domain presentation of the earlier Q-model K, the corresponding exercise for L and Tennenbaum's theorem for PA.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "The standard model has carrier Nat, standard numerals denote their usual numbers, its arithmetic operations are computable and its less-than relation is decidable. A computable arithmetic structure is defined to have carrier Nat, computable successor, addition and multiplication and a decidable less-than relation; countability and computability remain distinct notions.",
+      "checks": "The domain equality, all four interpreted symbols and the distinction संगणनक्षम versus गणनीय agree with the source and official terminology."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "The earlier Q-model K has carrier Nat together with a. The corrected map g sends 0 to a and each positive n to n-1, hence bijects Nat with that carrier. Pulling K back along g yields an isomorphic Q-model K-prime on Nat.",
+      "checks": "The range of g was calculated explicitly; its inverse sends a to 0 and old n to n+1. The set-builder now binds the tuple variable x."
+    },
+    {
+      "blocks": [
+        9,
+        10
+      ],
+      "reverse_paraphrase": "In K-prime, new 0 represents a and new 1 represents old zero. Positive successor adds one, 0 is fixed, addition is x+y-1 on positive inputs and 0 otherwise, multiplication follows the three printed cases, and the transported order is ordinary positive order together with every pair whose second coordinate is 0. These operations are computable and the relation decidable but differ from the standard ones.",
+      "checks": "Each printed case was recomputed as g-inverse applied to the corresponding K operation on g-images; all cases, including multiplication with a representative and old zero, agree."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "The exercise asks for the analogous Nat-domain copy of L. Q therefore has computable non-standard models on Nat, whereas Tennenbaum's theorem says the standard model N is the only computable PA-model and consequently the only one for true arithmetic as well.",
+      "checks": "The Q/PA/TA direction, uniqueness claim and theorem scope are unchanged."
+    }
+  ],
+  "source_observations": [
+    "MR-P129 directly distinguishes computable संगणनक्षम from countable गणनीय; MR-P130 directly supports decidable निर्णेय; MR-P131 supports ट्यूरिंग यंत्र.",
+    "T288 records आदिम पुनरावर्तन as a transparent but unattested rendering of primitive recursion, and T289 records the provisional pronunciation-based name टेनेनबाउम after no exact Marathi occurrence was found.",
+    "The frozen map g(n)=n+1 omits two declared codomain elements and contradicts the subsequent transported operations; OLFOL-039 records the correction to n-1.",
+    "The frozen less-than set-builder constrains n while displaying x; OLFOL-040 records the corrected bound variable.",
+    "All unaffected macros, identifiers, controlled tokens and formulas match the frozen source; both corrected expressions pass documented source projections."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "आदिम पुनरावर्तन and टेनेनबाउम remain explicitly expert-reviewable.",
+    "The source states Tennenbaum's theorem without proof; this aligned translation does not add one.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

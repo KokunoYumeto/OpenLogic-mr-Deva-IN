@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0075",
+  "method": "Same-agent English/Marathi block-by-block close reading, bottom-up proof-search reverse paraphrase, and exact formula, macro, token and identifier comparison; not independent or human review.",
+  "scope": "Three worked propositional LK derivations, including a failed branch and backtracking, excluded-middle proof search using contraction, and three exercise sets totaling twenty-four sequents.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "To derive A and B entails A, write the desired end-sequent at the bottom, select left conjunction because conjunction is the antecedent's only connective, and choose the initial upper sequent A entails A rather than the generally underivable B entails A.",
+      "checks": "Desired/lower/upper sequent roles, the structural-versus-logical search heuristic, antecedent side, two candidate premises and final completed tree are all preserved."
+    },
+    {
+      "blocks": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "reverse_paraphrase": "For not A or B entails A implies B, choose right implication first to defer branching; exchange on the antecedent exposes the disjunction, left disjunction creates two branches, and weakening/exchange plus left negation reduce both branches to initial sequents.",
+      "checks": "Main-operator scope excludes the nested negation at the first step. Every branch, rule application, formula order and initial sequent matches the source. OLSEQ-001 records the source's four right-exchange labels on antecedent swaps, which remain unchanged."
+    },
+    {
+      "blocks": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "reverse_paraphrase": "For not A or not B entails not(A and B), right negation first avoids branching. Trying left conjunction produces a branch ending A entails B that cannot reach an initial sequent, so backtrack and apply left disjunction before completing both branches with left conjunction and left negation. The conjunction and negation steps could be interchanged.",
+      "checks": "The failed branch is presented as failure rather than a derivation. Backtracking, A/B symmetry, branch completion and optional rule order are preserved. OLSEQ-002 records the two missing negations in the frozen narrative candidates; the correct surrounding proof trees are exact."
+    },
+    {
+      "blocks": [
+        18
+      ],
+      "reverse_paraphrase": "A naive backward right-disjunction step for excluded middle reaches neither initial sequent. Right contraction instead lets proof search retain a duplicate copy of A or not A; a second right-disjunction step exposes not A, after which right negation, exchange, disjunction and contraction complete the proof.",
+      "checks": "Bottom-to-top search direction, two-copies-to-one forward meaning, retained premise copy and full rule sequence remain explicit; all proof trees are unchanged."
+    },
+    {
+      "blocks": [
+        19,
+        20,
+        21
+      ],
+      "reverse_paraphrase": "The three problem sets request derivations of four, twelve and eight displayed sequents. The last eight all require right contraction.",
+      "checks": "All twenty-four formulas, punctuation, enumeration order and the final contraction requirement are identical to the frozen source."
+    }
+  ],
+  "source_observations": [
+    "OLSEQ-001: four antecedent swaps are labeled right exchange in the frozen source; preserved and disclosed.",
+    "OLSEQ-002: two narrative candidate sequents omit the negation on B despite correct surrounding formulas; preserved and disclosed."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent linguistic review has been performed.",
+    "Exact structural parity deliberately retains the two documented upstream defects; a later reader-facing correction requires a visible source note and deterministic projection.",
+    "The exercises are prompts only; this unit does not supply or validate their solutions."
+  ]
+}

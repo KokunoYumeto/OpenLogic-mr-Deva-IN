@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0137",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of both model-size theorems from the completeness construction, semantic comparison of equality-free and quotient-model domains, and replay of Skolem's Paradox, followed by exact formula, macro, controlled-token, label, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "The downward Löwenheim–Skolem theorem, its stronger equality-free form, and Skolem's Paradox for enumerable models of ZFC.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5
+      ],
+      "reverse_paraphrase": "If a theory has an infinite model, it also has an at-most-denumerable model. Therefore no first-order sentence or theory can require all satisfying structures to have nonenumerable size.",
+      "checks": "The named theorem, infinite-model premise, denumerable bound, sentence/set alternatives, nonenumerable structures and existence of an enumerable satisfying structure are retained."
+    },
+    {
+      "blocks": [
+        6,
+        7
+      ],
+      "reverse_paraphrase": "Every consistent Gamma has an enumerable model because the completeness construction produces a domain no larger than the language's term set; its domain is finite or denumerable.",
+      "checks": "Consistency, model existence, domain bound, language L and finite-or-denumerable conclusion are exact."
+    },
+    {
+      "blocks": [
+        8,
+        9
+      ],
+      "reverse_paraphrase": "Without identity, a consistent sentence set has a denumerable model: the unquotiented term-model domain is exactly the term set of the enlarged language L-prime, which is countably infinite.",
+      "checks": "Identity-free scope, sentence set, infinite enumerable domain, equality-free premise, exact domain identity and L-prime term set are preserved."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "ZFC can prove internally that the reals are uncountable and that power sets are larger, yet if ZFC is consistent the downward theorem gives it externally enumerable models. Such a model contains elements it regards as nonenumerable even though the whole model is enumerable from outside.",
+      "checks": "ZFC, reals, Cantor's theorem, consistency, infinite models, internal power-set element, external enumerability and the quoted nonenumerable description remain exact."
+    }
+  ],
+  "source_observations": [
+    "The equality-free result is stronger because its domain is the full countably infinite term set, whereas the identity quotient may collapse it to a finite domain; the target preserves that distinction.",
+    "The Skolem paragraph distinguishes a model's internal claim that an element is nonenumerable from the model's external enumerability; the Marathi wording retains both viewpoints.",
+    "All formulas, macros, controlled tokens, tags, labels, identifiers and reference options match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The proper-name forms लोव्हेनहाइम--स्कोलेम and स्कोलेमची विरोधापत्ती remain low-confidence, expert-reviewable decision T201.",
+    "The proof relies on the earlier completeness construction and does not independently re-establish the countability of the language's term set."
+  ]
+}

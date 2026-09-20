@@ -1,0 +1,51 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0172",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of each set-theoretic definition, verification of the displayed formulas against their prose explanations, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "First-order expression of elementary set theory: ZFC, subset and extensionality, the empty set, union and power set, ordered pairs, Cartesian products, functions, injectivity, Cantor's theorem, unrestricted comprehension, Russell's paradox, and separation.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "ZFC uses membership as its only nonlogical relation and has no primitive constants or function symbols, so ordinary set-theoretic notions must be expressed by formulas. Subset is defined by universal membership inclusion; substituting that definition yields extensionality. Emptiness is expressed by having no member, and extensionality makes the empty set unique.",
+      "checks": "The language restriction, ZFC name, subset biconditional, variable-renaming qualification, extensionality axiom, empty-set existence sentence and uniqueness observation are retained."
+    },
+    {
+      "blocks": [
+        9,
+        10
+      ],
+      "reverse_paraphrase": "Union and power set are treated as functional relations rather than terms, and their existence still requires axioms. Ordered pairs are coded as {{x},{x,y}}, allowing Cartesian products to be described entirely with membership formulas.",
+      "checks": "Both operation-defining formulas, the term-versus-formula warning, power-set axiom, ordered-pair code and Cartesian-product clause are retained."
+    },
+    {
+      "blocks": [
+        11,
+        12
+      ],
+      "reverse_paraphrase": "A function from X to Y is a set of ordered pairs contained in X by Y that is total and single-valued. Injectivity says that two domain elements mapped to one value are equal, which permits Cantor's theorem to be stated as the nonexistence of an injection from the power set of X into X.",
+      "checks": "Subset, totality, functionality, graph abbreviation, injectivity condition and the direction of Cantor's prohibited injection are retained."
+    },
+    {
+      "blocks": [
+        13,
+        14
+      ],
+      "reverse_paraphrase": "Unrestricted comprehension would form a set from every defining property, but choosing non-self-membership produces Russell's paradox. ZFC instead uses separation relative to an existing set. The exercise asks for a derivation of contradiction from the Russell sentence and suggests a propositional intermediate result.",
+      "checks": "The unrestricted schema, substitution A(x) = not x-in-x, inconsistency claim, bounded separation schema, requested derivation and hint are retained."
+    }
+  ],
+  "source_observations": [
+    "All formulas, macros, controlled tokens, identifiers and references match the frozen source exactly.",
+    "The translation preserves the source's deliberate use of defined-operation notation inside formulas while explaining that these symbols are abbreviations rather than primitive terms."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The Marathi compounds for ZFC, separation, total and functional relations, and Cantor's theorem remain open to specialist review in T240 through T243.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

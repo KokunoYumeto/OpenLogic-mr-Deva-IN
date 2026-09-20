@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0178",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of the finite-type formation and term rules, verification of full and weak higher-type semantics, and exact formula, macro, controlled-token, identifier and reference comparison after the documented OLFOL-025 source correction projection. No independent human or native-speaker review is claimed.",
+  "scope": "Iteration beyond second order; function, product and truth-value types; higher-type terms, recursion, lambda abstraction and projections; Church's simple theory of types; full and weak higher-type semantics; and constructive interpretations under intuitionistic logic.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7
+      ],
+      "reverse_paraphrase": "The hierarchy continues from sets of objects to sets of sets and beyond. Higher-order logic is often presented with function types: an arrow type contains functions from its input type to its output type, truth-valued functions behave as relations, number-to-number functions are ordinary functions, and functionals take functions as inputs.",
+      "checks": "Third- and fourth-order examples, arbitrary iteration, relation/function equivalence, truth-value and natural-number types, all three arrow-type examples and the function-input sense of functional are retained."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "Finite types are generated from natural numbers by arrows and products. Terms include typed variables, zero, successor, primitive recursion, application, lambda abstraction, pairing and projections. The recursive equations and lambda equation explain their meanings, after which formulas use typed identity, propositional connectives and higher-type quantification.",
+      "checks": "All three type clauses, all eight term clauses, both recursion equations, pair and projection meanings, the lambda equation, comprehension role and axiom inventory are preserved. OLFOL-025 corrects the lambda argument from the frozen source's sigma to the domain type tau."
+    },
+    {
+      "blocks": [
+        9,
+        10
+      ],
+      "reverse_paraphrase": "Adding a truth-value type permits formulas to be represented by truth-valued terms and yields Church's simple theory of types. Full semantics quantifies over every function of each arrow type and has no complete effective derivation system; weak semantics uses selected domains for each type with application and projection operations and supports completeness theorems.",
+      "checks": "The optional truth-value type, formula elimination, proof-system adjustment, Church attribution, all-functions condition, effective-incompleteness statement and weak-structure operations are retained."
+    },
+    {
+      "blocks": [
+        11
+      ],
+      "reverse_paraphrase": "Higher-type logic naturally embeds substantial mathematics, including real numbers and continuous functions. Its types also have constructive interpretations, and intuitionistic rather than classical semantics can make those interpretations especially clear.",
+      "checks": "The embedding claim, examples, intuitionistic basis, constructive interpretations and comparison with classical counterparts are retained without strengthening the source."
+    }
+  ],
+  "source_observations": [
+    "All formulas, macros, controlled tokens, identifiers and references match the frozen source after the documented OLFOL-025 projection.",
+    "OLFOL-025 records that term clause (6) gives x type tau and lambda x.s type tau to sigma, while the frozen explanatory sentence incorrectly says x has type sigma.",
+    "The finite-type terminology in T253 remains explicitly provisional; फलनक and the intuitionist रचनाशील register have direct authoritative Marathi support."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The finite-type-system inventory in T253 and simple-type-theory label in T255 should receive specialist review.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

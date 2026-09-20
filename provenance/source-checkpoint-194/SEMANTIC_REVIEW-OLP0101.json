@@ -1,0 +1,53 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0101",
+  "method": "Same-agent English/Marathi block-by-block close reading, substitution-example replay, eigenvariable-scope analysis, countermodel check of the final invalid conditional, and exact formula, macro, token and identifier comparison; no independent human or native-speaker review is claimed.",
+  "scope": "First-order tableau quantifier rules, closed-term and eigenvariable restrictions, substitution notation, a permitted repeated-term instance, a forbidden eigenconstant instance and the soundness counterexample obtained when the eigenvariable condition is omitted.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "The section gives quantifier rules. True universal and false existential instantiate with t; false universal and true existential instantiate with a. The displayed signs and quantifiers determine whether the result stays true-signed or false-signed.",
+      "checks": "Both rule pairs are source-identical, including the deliberate use of \\forall versus \\lforall in one label. The Marathi headings retain the original quantifier symbols."
+    },
+    {
+      "blocks": [
+        8,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "The t instances use a closed term. In false-universal and true-existential inference, constant a must be new on the branch above the rule and is conventionally called the inference's eigenvariable; that freshness requirement is the eigenvariable condition.",
+      "checks": "The branch-above scope, the two affected rule directions and the constant/eigenvariable distinction are explicit. The historical footnote is retained and translated."
+    },
+    {
+      "blocks": [
+        13
+      ],
+      "reverse_paraphrase": "A(t) abbreviates substitution of t for free x in A. Since t may already occur in A, false P(t,t) may correctly follow from false existential x P(t,x). Eigenconstant a may not already occur in A, so the parallel false-universal inference from a-containing A is forbidden.",
+      "checks": "The permitted and forbidden inference directions, both atoms, substitution command and relevant tableau rules are exact."
+    },
+    {
+      "blocks": [
+        14
+      ],
+      "reverse_paraphrase": "True-universal and false-existential permit any closed t. True-existential and false-universal require a to be absent above the inference. Without that condition the displayed tableau would close for existential A implying universal A, although that conditional is not valid.",
+      "checks": "OLTAB-002 makes the earlier closedness restriction explicit in the final contrast. The counterexample uses one reused a to create opposite-signed A(a), and the final वैध नाही correctly states semantic invalidity."
+    }
+  ],
+  "source_observations": [
+    "OLTAB-002 documents the bounded clarification from unrestricted t to no additional restriction beyond closedness.",
+    "The source intentionally calls a a constant and also uses the historical term eigenvariable; the footnote explains the mismatch.",
+    "No formula, proof-tree command, quantifier, truth sign or inference label was changed."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "आयगेन चर is backed by an authoritative Marathi transliteration of eigen in adjacent mathematics and by direct Marathi proof-theory terminology, but exact native specialist usage of eigenvariable remains sparse.",
+    "The tableau counterexample will receive visual inspection when the complete chapter enters the next cumulative reader."
+  ]
+}

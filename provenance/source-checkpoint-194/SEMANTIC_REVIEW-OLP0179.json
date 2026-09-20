@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0179",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of both motivating existence proofs, verification of the BHK clauses, excluded-middle equivalences, double-negation translation and Kripke forcing clauses, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Constructive motivation for intuitionistic logic; explicit witnesses and disjunction evidence; philosophical and formal viewpoints; BHK and Curry--Howard interpretations; excluded middle; double-negation translation; and propositional Kripke semantics.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "Intuitionistic first-order logic restricts classical reasoning to demand constructive evidence. The Riemann-hypothesis example defines a number classically but does not calculate it. The irrational-power argument proves an existential claim by cases without identifying which witness works, whereas the alternative gives an explicit pair. Intuitionistic existence and disjunction proofs must supply the witness or chosen disjunct.",
+      "checks": "The prime/composite condition, 7/9 definition, rational and irrational exponents, both displayed calculations, explicit alternative pair and witness/disjunction requirements are retained."
+    },
+    {
+      "blocks": [
+        15,
+        16
+      ],
+      "reverse_paraphrase": "Intuitionistic logic can be studied as a restricted formal deductive system regardless of whether one endorses Brouwer or Bishop. Under BHK, conjunction proofs are pairs, disjunction proofs identify a side, implications and universals are procedures, and existentials pair a witness with evidence. Curry--Howard reads formulas as data types and proofs as computational objects.",
+      "checks": "The philosophical options remain alternatives rather than commitments, and all five BHK clauses plus the computational reading are preserved."
+    },
+    {
+      "blocks": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "reverse_paraphrase": "Adding any of three equivalent classical schemata, including excluded middle and double-negation elimination, recovers classical strength. The recursively defined double-negation translation preserves classical equivalence and converts classical proofs, including proofs from hypotheses, into intuitionistic proofs of translated formulas.",
+      "checks": "All three schemata, historical attributions, six recursive translation clauses, both theorem conclusions, the dialogue's disagreement, pure-versus-nonlogical limitation and Gamma-relative extension are retained."
+    },
+    {
+      "blocks": [
+        25,
+        26,
+        27
+      ],
+      "reverse_paraphrase": "Kripke semantics supplies sound and complete countermodels for intuitionistic nonvalidity. A propositional Kripke structure is a rooted partial order of knowledge states with monotone valuation. Forcing persists through future states; implication holds at a state exactly when every future state forcing the antecedent also forces the consequent.",
+      "checks": "The contrast with classical structures, least element, monotonic assignment, worlds and future knowledge states, all five forcing clauses and the requested counterexample are preserved."
+    }
+  ],
+  "source_observations": [
+    "All formulas, macros, controlled tokens, identifiers and references match the frozen source exactly.",
+    "The official Marathi Vishwakosh directly supports रीमान गृहीतक, संयुक्त संख्या, विमध्य सिद्धांत, ब्रौवर and हीटिंग.",
+    "BHK, Curry--Howard and Kripke terminology remains explicitly provisional where the bounded search found no exact Marathi specialist inventory."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The बलन-संबंध rendering in T262 and several proper-name transliterations should receive specialist review.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

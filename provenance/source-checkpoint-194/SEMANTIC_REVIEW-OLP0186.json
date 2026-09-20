@@ -1,0 +1,35 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0186",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of the compactness argument and contradiction proof, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "The overspill consequence from arbitrarily large finite models to an infinite model, and the resulting non-definability of infinitude by one first-order sentence.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6
+      ],
+      "reverse_paraphrase": "If a sentence set has finite models of unbounded size, it has an infinite model. Add countably many distinct constants; every finite part is satisfiable because a sufficiently large finite model exists, so compactness gives a model satisfying all pairwise inequalities and hence having an infinite domain.",
+      "checks": "The unbounded finite-size quantifiers, countable constant family, finite-satisfiability step, compactness use and final distinctness argument are retained."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "No sentence in any first-order language is true exactly in structures with infinite domain. Otherwise its negation would have every finite structure and no infinite structure as a model, contradicting the preceding overspill theorem.",
+      "checks": "The quantification over all first-order languages, biconditional domain condition, negation move, exact finite/infinite model contrast and theorem reference are retained."
+    }
+  ],
+  "source_observations": [
+    "The source's local theorem label overspill is rendered definition-explicitly as सांत मर्यादेपलीकडील प्रसरण in T274 because no exact authoritative Marathi headword was found.",
+    "All formulas, macros, controlled tokens, identifiers and references match the frozen source exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "T274 remains low-confidence, high-priority expert-reviewable terminology.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

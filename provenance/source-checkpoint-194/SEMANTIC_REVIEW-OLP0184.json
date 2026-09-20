@@ -1,0 +1,44 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0184",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of both directions of the language-change operation, replay of the same-domain and common-interpretation definition, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Reducts and expansions of structures under language inclusion, invariance of old-language sentences, and notation for expanding a structure by one interpreted predicate.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6
+      ],
+      "reverse_paraphrase": "When L is included in L-prime, an L-structure can be expanded by interpreting the extra symbols while retaining the common interpretations, and an L-prime structure can be reduced by forgetting those extra interpretations. The formal pair has one domain and agrees on every L constant, function and predicate.",
+      "checks": "Language inclusion, both operation directions, the same-domain clause and all three common-symbol interpretation clauses are retained without turning a reduct into a substructure."
+    },
+    {
+      "blocks": [
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "If M is the L-reduct of M-prime, every L-sentence has the same truth value in both structures. The source leaves the proof as an exercise and immediately asks the reader to prove the proposition.",
+      "checks": "The universal sentence scope, satisfaction biconditional, exercise-only proof and exact proposition reference are retained."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "If L-prime adds one n-place predicate P to L and R is an n-place relation on M's domain, M-bracket-R denotes the expansion M-prime that interprets P as R.",
+      "checks": "The one-symbol language extension, predicate arity, relation power, expansion notation and assignment equation are exact."
+    }
+  ],
+  "source_observations": [
+    "The new pair न्यूनीकृत रचना / विस्तारित रचना is recorded in T272 as source-defined and explicitly distinguished from substructure terminology.",
+    "All displayed formulas, macros, controlled tokens, identifiers and references match the frozen source exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "T272 has no directly checked Marathi model-theory attestation and remains high-priority expert-reviewable terminology.",
+    "The invariance proposition has no proof in the frozen source beyond the exercise prompt.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

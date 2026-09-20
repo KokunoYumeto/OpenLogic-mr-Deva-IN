@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0173",
+  "method": "Same-agent English/Marathi block-by-block close reading, verification of the cardinality conditions encoded by each displayed sentence, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "First-order sentences expressing lower, upper and exact finite bounds on a structure's domain, an infinite axiom set for infinite structures, and compactness and Löwenheim--Skolem limits on expressibility.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7
+      ],
+      "reverse_paraphrase": "Even without nonlogical vocabulary, sentences can constrain the number of domain elements. The displayed sentence A at-least n existentially chooses n pairwise distinct elements, while negating A at-least n+1 expresses an upper bound of n.",
+      "checks": "The language restriction, three kinds of size condition, pairwise-inequality construction, lower bound and negated upper bound are retained."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "The exact-n sentence first chooses n pairwise distinct objects and then universally states that every domain object equals one of them.",
+      "checks": "Both the at-least component and exhaustive universal disjunction are retained, yielding exactly rather than merely at most n elements."
+    },
+    {
+      "blocks": [
+        10,
+        11
+      ],
+      "reverse_paraphrase": "A structure is infinite exactly when it satisfies every finite lower-bound sentence. No single purely logical sentence defines infinitude, though sentences with nonlogical predicates may have only infinite models. Finitude and uncountability are not definable even by infinite sentence sets; compactness and Löwenheim--Skolem establish these limits.",
+      "checks": "The infinite theory, single-sentence limitation, one-way infinite-model qualification, finite and nonenumerable cases, and both cited metatheorems are retained."
+    }
+  ],
+  "source_observations": [
+    "All formulas, macros, controlled tokens, identifiers and references match the frozen source exactly.",
+    "The target keeps the source's distinction between a theory whose models are exactly the infinite structures and individual nonlogical sentences whose models are only a proper subclass of the infinite structures."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

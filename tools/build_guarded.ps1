@@ -1,4 +1,8 @@
-param([int]$SlotTimeoutMilliseconds = 1500, [ValidateSet('sets','foundations','core')][string]$Target='sets')
+param(
+  [int]$SlotTimeoutMilliseconds = 1500,
+  [int]$PassTimeoutMilliseconds = 480000,
+  [ValidateSet('sets','foundations','core')][string]$Target='sets'
+)
 $ErrorActionPreference = 'Stop'
 $repoPath = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $buildPath = [IO.Path]::GetFullPath((Join-Path $repoPath ('build\'+$Target)))
@@ -7,6 +11,8 @@ if (-not $buildPath.StartsWith($repoPath + [IO.Path]::DirectorySeparatorChar)) {
 $receiptPath = Join-Path $buildPath 'TEX_BUILD_RECEIPT.json'
 $receiptHistory = Join-Path $buildPath ('TEX_BUILD_' + [DateTime]::UtcNow.ToString('yyyyMMddTHHmmssfff') + '.json')
 $receipt = [ordered]@{schema='guarded-tex-build/1';mutex='Global\InterlanguageTeXSlotV1';acquired=$false;abandonedRecovery=$false;passes=@();result='not-started'}
+$receipt['slotTimeoutMilliseconds']=$SlotTimeoutMilliseconds
+$receipt['passTimeoutMilliseconds']=$PassTimeoutMilliseconds
 Add-Type -TypeDefinition @'
 using System;
 using System.Runtime.InteropServices;
@@ -60,9 +66,19 @@ try {
   $receipt['texInputSha256']=(Get-FileHash -LiteralPath (Join-Path $buildPath ($documentName+'.tex')) -Algorithm SHA256).Hash.ToLower()
   $env:SOURCE_DATE_EPOCH='1788480000'
   $receipt['sourceDateEpoch']='1788480000'
+  $transientExtensions=@('.aux','.toc','.out','.log')
+  $cleared=@()
+  foreach($extension in $transientExtensions) {
+    $transient=Join-Path $buildPath ($documentName+$extension)
+    if(Test-Path -LiteralPath $transient) {
+      Remove-Item -LiteralPath $transient -Force
+      $cleared+=($documentName+$extension)
+    }
+  }
+  $receipt['clearedTransientFiles']=$cleared
   $engine = (Get-Command xelatex.exe -ErrorAction Stop).Source
   for ($pass=1; $pass -le 2; $pass++) {
-    $code=[EditionTexTree]::Run($engine,('-no-shell-escape -interaction=nonstopmode -halt-on-error -file-line-error '+$documentName+'.tex'),$buildPath,240000)
+    $code=[EditionTexTree]::Run($engine,('-no-shell-escape -interaction=nonstopmode -halt-on-error -file-line-error '+$documentName+'.tex'),$buildPath,$PassTimeoutMilliseconds)
     $logPath=Join-Path $buildPath ($documentName+'.log')
     $log=if(Test-Path -LiteralPath $logPath){Get-Content -LiteralPath $logPath -Raw}else{''}
     $receipt.passes+=@{pass=$pass;exitCode=$code;logSha256=if($log){(Get-FileHash -LiteralPath $logPath -Algorithm SHA256).Hash.ToLower()}else{$null}}
@@ -73,6 +89,10 @@ try {
   $pdf=Join-Path $buildPath ($documentName+'.pdf')
   $receipt['pdf']=@{name=($documentName+'.pdf');bytes=(Get-Item -LiteralPath $pdf).Length;sha256=(Get-FileHash -LiteralPath $pdf -Algorithm SHA256).Hash.ToLower()}
   $receipt.result=if($warnings.Count){'built-with-defects'}else{'built-log-clean'}
+} catch {
+  $receipt.result='build-exception'
+  $receipt['error']=$_.Exception.Message
+  throw
 } finally {
   $receipt | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath $receiptPath -Encoding utf8
   Copy-Item -LiteralPath $receiptPath -Destination $receiptHistory

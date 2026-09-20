@@ -1,0 +1,61 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0078",
+  "method": "Same-agent English/Marathi block-by-block close reading, proposition-by-proposition reverse paraphrase, exact formula, macro, token and identifier comparison; no independent human or native-speaker review is claimed.",
+  "scope": "Provability and consistency consequences for the LK sequent calculus: finite-cut preservation, the negation characterization of derivability, an explicit inconsistency proposition, and the exhaustive two-extension proposition.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "The section concerns the derivability relation and consistency. Its properties are individually significant and will be used in the completeness proof.",
+      "checks": "The heading, derivability token, consistency term and completeness-theorem role are preserved without adding a semantic claim."
+    },
+    {
+      "blocks": [
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "If Gamma derives A and Gamma together with A is inconsistent, finite witnesses for the two derivations can be cut together; because both finite sets lie inside Gamma, Gamma is inconsistent.",
+      "checks": "The proposition condition, finite subsets, two derivations, cut tree and final subset argument remain exact."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "Gamma derives A exactly when Gamma together with not-A is inconsistent. One direction adds a left negation rule; the reverse direction cuts the derivation of not-A against the initial A sequent. The following exercise gives the dual statement for deriving not-A.",
+      "checks": "The biconditional, negation placement, both proof trees and the exercise instruction are preserved; the exercise is not silently solved."
+    },
+    {
+      "blocks": [
+        14,
+        15
+      ],
+      "reverse_paraphrase": "If Gamma derives A while not-A belongs to Gamma, a derivation of a finite Gamma-zero subset can be cut with the initial A sequent and exchange steps to derive the empty succedent, so Gamma is inconsistent.",
+      "checks": "The membership condition, derivability token, exchange and cut labels, sequent order and finite-subset conclusion are exact."
+    },
+    {
+      "blocks": [
+        16,
+        17
+      ],
+      "reverse_paraphrase": "If both Gamma with A and Gamma with not-A are inconsistent, finite derivations yield a derivation of not-A from Gamma-zero and a derivation of the empty succedent from not-A and Gamma-one; cutting them proves Gamma inconsistent.",
+      "checks": "Both extensions, finite witnesses, the right-negation step, the cut tree and the union-subset conclusion retain their original direction and scope."
+    }
+  ],
+  "source_observations": [
+    "The frozen source uses the proof-theoretic derivability and consistency vocabulary established in the preceding sequent-calculus units; no new upstream defect or correction was identified in this unit."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "सिद्धतायोग्यता and its adjective are definition-controlled edition compounds; the local formulas and \\Proves notation control the formal sense.",
+    "The consistency family is directly supported by Marathi proof-theory usage, while the exact local proposition names are governed by the frozen OpenLogic statements.",
+    "The current coherent reader ends at OLP-0068, so this unit has not yet received paginated TeX or browser-rendering QA."
+  ]
+}

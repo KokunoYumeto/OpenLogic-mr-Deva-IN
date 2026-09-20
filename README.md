@@ -2,13 +2,12 @@
 
 This repository contains the Marathi (Devanagari, `mr-Deva-IN`) adaptation of
 the Open Logic Project text. The current coherent reader is
-[eleven-chapters-v0.8.1](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8.1): 108 of 722 source units, 11 complete chapters, 96 reader sections, and 1,149 aligned translated content segments through OLP-0111. This patch release adds a genuine reflowable EPUB 3 without changing the accepted reader scope.
+[twenty-chapters-v0.9](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/twenty-chapters-v0.9): 194 of 722 source units, 20 complete chapters, 171 reader sections, and 2,063 aligned translated content segments through OLP-0197.
 
-The release includes a 157-page PDF, a reflowable EPUB 3 and an offline HTML
-reader with 6,544 native MathML expressions, plus editable Marathi sources, the
-frozen English source, review records, and reproducibility manifests. The
-corresponding Zenodo version is
-[10.5281/zenodo.22730309](https://doi.org/10.5281/zenodo.22730309), in the existing concept-DOI lineage
+The release includes a 264-page PDF, a reflowable EPUB 3, an offline semantic
+HTML reader, and the direct assembled LaTeX source, plus the exact 194 editable
+Marathi units, frozen English source, review records, and reproducibility
+manifests. It remains in the existing Zenodo concept-DOI lineage
 [10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960).
 
 Codex produced the machine translation and same-agent bilingual review. No
@@ -20,44 +19,44 @@ component notices and the SIL Open Font License remain with their components.
 मुक्त तर्कशास्त्राची मराठी आवृत्ती. संपूर्ण 722 स्रोत-विभागांच्या अनुवादाचे काम सुरू आहे.
 
 सध्याच्या प्रकाशनात **संच, संबंध, फलने, संचांचे आकारमान, अंकगणितीकरण,
-अनंत संच, विन्यासमीमांसा व चिन्हार्थमीमांसा, सिद्धता-पद्धती, क्रमवर्ती कलन
-नैसर्गिक निगमन आणि टॅब्लो ही अकरा संपूर्ण प्रकरणे** आहेत: OLP-0004–OLP-0111,
-एकूण 108 स्रोत-विभाग, 96 वाचक-विभाग, सर्व उदाहरणे, आकृत्यांचे वर्णन आणि
-सराव. PDF, EPUB 3 आणि ऑफलाइन HTML या वाचन-स्वरूपांत ही आवृत्ती उपलब्ध आहे.
-उर्वरित **614 विभागांचा अनुवाद अद्याप
+अनंत संच, विधान-तर्कशास्त्राची विन्यासमीमांसा व चिन्हार्थमीमांसा,
+सिद्धता-पद्धती, क्रमवर्ती कलन, नैसर्गिक निगमन, टॅब्लो, स्वयंसिद्ध निगमन,
+पूर्णता, प्रथम-क्रम परिचय, प्रथम-क्रम विन्यासमीमांसा, प्रथम-क्रम
+चिन्हार्थमीमांसा, प्रतिकृती व सिद्धांत, प्रथम क्रमापलीकडील तर्कशास्त्रे,
+प्रतिकृती-सिद्धांताची मूलतत्त्वे आणि अंकगणिताच्या प्रतिकृती ही वीस संपूर्ण
+प्रकरणे** आहेत: OLP-0004–OLP-0197, एकूण 194 स्रोत-विभाग, 171 वाचक-विभाग,
+सर्व उदाहरणे, आकृत्यांचे वर्णन आणि सराव. PDF, EPUB 3 आणि ऑफलाइन HTML या
+वाचन-स्वरूपांत ही आवृत्ती उपलब्ध आहे. उर्वरित **528 विभागांचा अनुवाद अद्याप
 पूर्ण झालेला नाही**.
 हे संपूर्ण ग्रंथाचे प्रकाशन नाही.
 
 This is an independent Marathi edition of *The Open Logic Text*. The finite
 commission covers all 722 content TeX units at upstream revision
-`9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. The cumulative release covers 108/722
-units (1,149 content segments). Source IDs and paths remain aligned to the frozen corpus.
-The Sets, Relations, Functions, Size of Sets, Arithmetization, Infinite Sets,
-Syntax and Semantics, Proof Systems, Sequent Calculus, and Natural Deduction
-and Tableaux chapters are complete in source and reader form. The 157-page PDF
-was built twice to identical bytes and every page was inspected. Its offline
+`9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. The cumulative release covers 194/722
+units (2,063 content segments). Source IDs and paths remain aligned to the frozen corpus.
+Twenty chapters are complete in source and reader form, from Sets through Models
+of Arithmetic, including the full proof-system sequence and the first nine
+first-order and model-theory chapters. The 264-page PDF was built twice to
+identical bytes and every page was inspected. Its offline
 HTML companion passed exact source-conversion, structure, asset, proof-display
 and desktop/mobile browser checks. The EPUB passed EPUBCheck 5.3.0 with zero
 messages, exact text and MathML preservation checks, complete link validation,
 and representative rendering in Calibre.
 
-Translation continues beyond the frozen OLP-0111 release boundary. The editable
-working tree now contains 194/722 units and 2,063 aligned content segments through
-OLP-0197. It completes axiomatic deduction, completeness, first-order introduction,
-first-order syntax and semantics, models and theories, logics beyond first order,
-model-theory basics, and models of arithmetic in source form. OLP-0112–OLP-0197
-remain outside this reader and its downloadable source archive; OLP-0198 is next.
+Translation continues after the OLP-0197 release boundary; OLP-0198 is next.
 
-- **Current release:** [अकरा प्रकरणे — EPUB 3, PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8.1).
-- **EPUB 3:** [download the reflowable Marathi reader](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub).
+- **Current release:** [वीस प्रकरणे — PDF, EPUB 3, offline HTML, direct LaTeX, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/twenty-chapters-v0.9).
+- **EPUB 3:** [download the reflowable Marathi reader](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/twenty-chapters-v0.9/openlogic-mr-twenty-chapters.epub).
 - **DOI mirror:** [edition concept DOI 10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960), which resolves to the latest version.
-- **PDF:** [157-page cumulative reader](releases/eleven-chapters-v0.8/openlogic-mr-eleven-chapters.pdf).
-- **Offline HTML:** download and extract `openlogic-mr-eleven-chapters-html.zip`, then open `index.html`.
+- **PDF:** [264-page cumulative reader](releases/twenty-chapters-v0.9/openlogic-mr-twenty-chapters.pdf).
+- **Offline HTML:** download and extract `openlogic-mr-twenty-chapters-html.zip`, then open `index.html`.
+- **Direct LaTeX:** download `openlogic-mr-twenty-chapters.tex` from the release assets.
 - **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/), [size of sets](mr/content/sets-functions-relations/size-of-sets/), [arithmetization](mr/content/sets-functions-relations/arithmetization/), [infinite sets](mr/content/sets-functions-relations/infinite/), [propositional syntax and semantics](mr/content/propositional-logic/syntax-and-semantics/), [first-order proof systems](mr/content/first-order-logic/proof-systems/), [sequent calculus](mr/content/first-order-logic/sequent-calculus/), [natural deduction](mr/content/first-order-logic/natural-deduction/), [Tableaux](mr/content/first-order-logic/tableaux/), [axiomatic deduction](mr/content/first-order-logic/axiomatic-deduction/), [completeness](mr/content/first-order-logic/completeness/), [first-order introduction](mr/content/first-order-logic/introduction/), [first-order syntax and semantics](mr/content/first-order-logic/syntax-and-semantics/), [models and theories](mr/content/first-order-logic/models-theories/), [logics beyond first order](mr/content/first-order-logic/beyond/), [model-theory basics](mr/content/model-theory/basics/), and [models of arithmetic](mr/content/model-theory/models-of-arithmetic/).
 - **Terminology and expert review:** begin with the [shared-schema review guide](provenance/translation-decisions/START_HERE.md), then use the [full applied-decision index](provenance/translation-decisions/TRANSLATION_DECISIONS_FULL.md), [priority review](provenance/translation-decisions/PRIORITY_REVIEW.md), [one-row-per-occurrence CSV](provenance/translation-decisions/DECISION_OCCURRENCES.csv), or [canonical JSON](provenance/translation-decisions/DECISIONS.json). The backward-compatible [decision ledger](provenance/EXPERT_REVIEW_LOG.md) and occurrence JSONL remain available. These surfaces record exact source/target scopes, current PDF page ranges, reversible choices and plain review questions without making review a completion gate.
 - **Pristine English:** `upstream/`; this is source evidence, not translated coverage.
-- **Current source-checkpoint evidence:** `provenance/source-checkpoint-108/`.
-- **Current reader evidence:** `provenance/eleven-chapters-v0.8/` and `provenance/eleven-chapters-v0.8.1/`.
+- **Current source-checkpoint evidence:** `provenance/source-checkpoint-194/`.
+- **Current reader evidence:** `provenance/twenty-chapters-v0.9/`.
+- **Earlier cumulative release:** [eleven-chapters-v0.8.1](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8.1), preserved unchanged.
 - **Earlier cumulative release:** [eleven-chapters-v0.8](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8), preserved unchanged.
 - **Earlier cumulative release:** [eight-chapters-v0.6](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eight-chapters-v0.6), preserved unchanged.
 - **Earlier cumulative release:** [seven-chapters-v0.5.1](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/seven-chapters-v0.5.1), preserved unchanged.
@@ -79,23 +78,23 @@ provisional extensions where evidence is sparse. Source mathematics takes
 precedence over conventions in language witnesses: in particular, OpenLogic's
 natural numbers include zero.
 
-The eleven published chapters have 1,149 aligned content segments with
-consultation records across 108 units.
+The twenty published chapters have 2,063 aligned content segments with
+consultation records across 194 units.
 Deterministic checks compare formulas, token identities, macro inventories,
 labels, citations, links and source file references.
 Visual, structural and semantic checks are documented in
-`provenance/eleven-chapters-v0.8/`, `provenance/eleven-chapters-v0.8.1/`, and the
-108-unit source checkpoint.
+`provenance/twenty-chapters-v0.9/` and the 194-unit source checkpoint.
 Such checks do not establish the absence
 of every possible translation error.
 Two guarded builds on the same host produced identical PDF bytes with fixed
 `SOURCE_DATE_EPOCH`; cross-platform byte identity has not been tested.
 
-The offline HTML and EPUB include 6,544 MathML expressions with original TeX
-annotations, thirteen diagrams with detailed Marathi alternatives, 202 semantic
-proof figures with 990 formula rows, local fonts, a linked contents list and keyboard-focusable
-formula regions. Exact conversion checks preserve ordinary prose, footnotes and
-formulas; internal references match PDF numbering.
+The offline HTML and EPUB include native MathML expressions with original TeX
+annotations, thirteen diagrams with detailed Marathi alternatives, semantic proof
+figures, local fonts, a linked contents list and keyboard-focusable formula regions.
+Exact conversion checks preserve ordinary prose, footnotes and formulas; internal
+references match PDF numbering. Exact counts are recorded in the release manifest
+and QA receipts.
 Browser inspection passed at 1280 × 720 and 390 × 844 CSS pixels with no page-level
 horizontal overflow, all thirteen diagrams loaded, contained horizontal scrolling
 for proof tables, working skip navigation and no console errors. Assistive-
@@ -172,20 +171,20 @@ derivability/consistency properties through finite closed-tableau transformation
 and Cut, with its bounded source repairs recorded in OLTAB-006–OLTAB-009.
 OLP-0107–OLP-0111 complete the published tableau chapter with propositional and
 quantified consequences, semantic soundness, identity rules, and soundness with
-identity. OLP-0112–OLP-0125 complete the unreleased axiomatic-deduction chapter:
+identity. OLP-0112–OLP-0125 complete the axiomatic-deduction chapter:
 they define derivations, propositional and quantified axioms and rules, give
 worked derivations, establish the proof-theoretic notions and both Deduction
 Theorems, prove the principal derivability and consistency results, establish
 semantic soundness, and add identity axioms. OLAXD-001–009 record bounded source
 repairs for formula punctuation, proof conclusions and citations, two protected
 formula markers, one inference justification, and stale chapter metadata.
-OLP-0126–OLP-0137 complete the unreleased completeness chapter: they construct
+OLP-0126–OLP-0137 complete the completeness chapter: they construct
 complete consistent Henkin sets and their term models, handle identity, prove
 completeness and compactness, give a direct compactness proof, and derive the
 downward Löwenheim--Skolem theorem. OLCOM-001–006 record bounded source repairs
 for cross-references, truth-lemma formulas, closed-term qualifications, duplicated
 punctuation and symbols, and the scope of a finite-satisfiability construction.
-OLP-0138–OLP-0148 add the first-order part driver and complete the unreleased
+OLP-0138–OLP-0148 add the first-order part driver and complete the
 introductory chapter: they introduce formal language, syntax, formulas and
 sentences; define structures, satisfaction and variable assignments; and develop
 the semantic notions, substitution, models, theories, soundness and completeness.
@@ -202,8 +201,8 @@ arithmetic, the order and block structure of PA-models, and computable models.
 The aligned source retains explicit reader notes for every bounded correction;
 the synchronized review ledgers expose exact locations, rationale, alternatives
 and uncertainty.
-The records through OLP-0111 are included in the v0.8.1 reader and release archive;
-OLP-0112–OLP-0197 are post-release working units. OLP-0198 is next.
+The records through OLP-0197 are included in the v0.9 reader and release archive.
+OLP-0198 is next.
 
 Canon originals are local research evidence. They are **not redistributed here**.
 Some government-site originals could not be downloaded; the index distinguishes
@@ -223,11 +222,11 @@ python tools/prepare_html.py
 python tools/qa_html.py
 ```
 
-The ten-chapter development reader can be prepared and built through OLP-0097 with:
+The twenty-chapter cumulative reader can be prepared and built through OLP-0197 with:
 
 ```powershell
-python tools/prepare_core94.py
-./tools/build_guarded.ps1 -Target core
+python tools/prepare_core194.py
+./tools/build_guarded.ps1 -Target core -PassTimeoutMilliseconds 480000
 python tools/prepare_core_html.py
 python tools/qa_core_html.py
 ```

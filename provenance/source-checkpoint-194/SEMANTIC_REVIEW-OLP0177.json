@@ -1,0 +1,61 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0177",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of second-order syntax and comprehension, verification of the full-versus-weak semantic distinction and arithmetic categoricity argument, and exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Second-order relation variables and comprehension; impredicative and predicative variants; full and weak semantics; categorical arithmetic and other expressibility examples; failure of effective completeness for full semantics; and reduction of weak semantics to many-sorted first-order logic.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "Second-order logic adds variables ranging over relations of every arity and quantifies over them. Formula substitution yields a relation-comprehension schema, which becomes inconsistent if the newly asserted relation is allowed free in its own defining formula. Full comprehension is self-inclusive because its quantifiers range over a totality containing the relation being defined; forbidding second-order quantifiers in the defining formula gives a weaker, self-exclusionary form.",
+      "checks": "Arity, relation-variable identity, all four inference displays, substitution direction, the free-variable restriction, Russell-paradox motivation and the predicative weakening are retained."
+    },
+    {
+      "blocks": [
+        9,
+        10
+      ],
+      "reverse_paraphrase": "A second-order structure combines a first-order structure with relation domains. A full structure contains every relation of each arity. Proof systems may be minimal or use full comprehension, while semantics may be weak or full. The standard pairing is sound and strong but no effective derivation system is complete for full semantics; the weakened semantics does admit completeness.",
+      "checks": "The two independent proof-system and semantic choices, the role of comprehension in soundness, the intended/full-structure qualification and both completeness claims are kept distinct."
+    },
+    {
+      "blocks": [
+        11
+      ],
+      "reverse_paraphrase": "A single second-order induction axiom plus seven arithmetic axioms characterizes the standard natural-number structure up to isomorphism under full semantics. The recursively defined map from the natural numbers into any model is injective by the first two axioms and surjective because its range is a successor-closed second-order set containing zero; repeated ordinary induction shows it preserves the arithmetic structure.",
+      "checks": "All seven displayed axioms are unchanged, and the construction of the map, injection, use of fullness, induction-based surjection, bijection and homomorphism conclusions occur in the source order."
+    },
+    {
+      "blocks": [
+        12,
+        13
+      ],
+      "reverse_paraphrase": "Quantifying over functional relations defines infinitude by an injection into a proper subset and finitude by negation. Second-order formulas also define well-orders, graph connectedness and even-sized finite domains, and can characterize the real numbers as a complete ordered field containing the rationals.",
+      "checks": "The function-as-relation condition, direction of the injection, least-element clause, graph separation condition, exercise qualification and real-number example are retained."
+    },
+    {
+      "blocks": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "reverse_paraphrase": "Full second-order logic gains expressiveness but loses effective completeness, compactness and Löwenheim–Skolem. With weak semantics, the minimal system is complete, including relative completeness for any chosen comprehension axioms. This follows by viewing object and relation domains as sorts with a built-in satisfaction relation, after which the system embeds into first-order logic.",
+      "checks": "The metatheoretic losses, entailment-to-provability direction, Delta-relative statement, countermodel consequence, all relation sorts and the two-way many-sorted translation are preserved."
+    }
+  ],
+  "source_observations": [
+    "All formulas, macros, controlled tokens, identifiers and references match the frozen source exactly.",
+    "The categorical rendering states uniqueness up to isomorphism explicitly, avoiding an opaque adjective.",
+    "The स्वसमावेशक and रचनारक्षक प्रतिचित्रण decisions remain explicitly provisional because the bounded Marathi search did not establish exact specialist headwords."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The predicative/impredicative and homomorphism vocabulary in T249 and T252 should receive specialist review.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

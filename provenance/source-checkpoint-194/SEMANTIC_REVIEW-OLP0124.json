@@ -1,0 +1,63 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0124",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse reconstruction of axiom validity and the induction on axiomatic derivations, direct replay of the modus-ponens and quantified-rule cases, and exact formula, macro, token, label and reference comparison with two documented source projections. No independent human or native-speaker review is claimed.",
+  "scope": "Soundness of axiomatic deduction: validity of the axiom schemas, semantic preservation through modus ponens and the quantified rule, weak soundness, and satisfiability-to-consistency soundness.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "The section defines soundness as the guarantee that a derivation system cannot derive what fails semantically, then separates validity, consequence preservation and the inconsistency-to-unsatisfiability guarantee.",
+      "checks": "The three implication directions, proof-theoretic vocabulary and distinction between validity, entailment, consistency and satisfiability are preserved."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "Every axiom is semantically true. For q1, universal satisfaction supplies the instance at the value of t, and the free-for substitution lemma gives satisfaction of A with t substituted for x.",
+      "checks": "The q1 reference, free-for condition, assignment update, term value, substitution formula and FOL/propositional branches are exact."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11
+      ],
+      "reverse_paraphrase": "If Gamma derives A, then Gamma entails A. Induction handles axioms and assumptions at the base and uses semantic modus ponens when the final step follows from B and B-implies-A.",
+      "checks": "The theorem direction, induction measure, base alternatives, two induction hypotheses and semantic Deduction Theorem reference are preserved."
+    },
+    {
+      "blocks": [
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "For the universal quantified-rule case, freshness of c lets a model be modified so c denotes an arbitrary assignment value; extensionality and substitution transfer satisfaction from B(c) to B(x), yielding the universal conclusion. The existential companion case is left as the stated exercise.",
+      "checks": "Freshness covers Gamma, C and the quantified conclusion; the modified structure, sentence facts, assignment, substitution identity and entailment steps retain their order. OLAXD-007 and OLAXD-008 restore two omitted protected-formula markers only."
+    },
+    {
+      "blocks": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "reverse_paraphrase": "The reader completes the FOL case. Derivability without premises yields validity or tautologicity; satisfiability implies consistency because an inconsistent premise set derives falsity, which no structure or valuation can satisfy.",
+      "checks": "The tagged exercise, weak-soundness direction, contrapositive proof, falsity formula and FOL/propositional alternatives are preserved."
+    }
+  ],
+  "source_observations": [
+    "OLAXD-007 records the missing protected-formula marker in the frozen quantified-rule conclusion; the Marathi target restores !B(x) and leaves the distinct freshness-condition quotation unchanged.",
+    "OLAXD-008 records the missing protected-formula marker in the frozen satisfaction statement; the Marathi target restores !B(c), matching the immediately surrounding entailment and substitution formulas.",
+    "All remaining formulas, macros, protected tokens, labels, identifiers and reference options match after the two narrow documented projections."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "निर्दोषता, सिद्धतायोग्यता and the proof-theoretic terminology remain governed by provisional project decisions T155, T184 and T122.",
+    "The existential quantified-rule case remains an exercise in the frozen source and was not supplied in the translation."
+  ]
+}

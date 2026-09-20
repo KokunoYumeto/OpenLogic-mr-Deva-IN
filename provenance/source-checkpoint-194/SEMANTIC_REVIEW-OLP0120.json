@@ -1,0 +1,51 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0120",
+  "method": "Same-agent English/Marathi block-by-block close reading, reconstruction of the induction step for the universal quantifier rule, direct substitution of the stated identity for B into the final conclusion, and exact structural comparison after the documented OLAXD-002 and OLAXD-003 projections. No independent human or native-speaker review is claimed.",
+  "scope": "The quantified extension of the proof-theoretic Deduction Theorem, including the universal quantifier-rule induction case and the existential case left as an exercise.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "The quantified Deduction Theorem says that if Gamma together with A derives B, then Gamma derives A-implies-B.",
+      "checks": "The theorem direction, union with singleton A, derivability symbols, implication and label are exact; the title retains the established proof-theoretic Deduction Theorem term."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "Induct again on the length of the derivation of B from Gamma union {A}; the basis is exactly the basis already proved for the earlier Deduction Theorem.",
+      "checks": "The induction measure, source and target of the derivation, and the cited theorem reference are preserved."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "If the last inference is modus ponens, reuse the earlier argument. For the universal quantifier rule, write B as C-implies-forall x D(x), use the earlier C-implies-D(a) line and the induction hypothesis, convert A-implies-(C-implies-D(a)) into (A-and-C)-implies-D(a), apply the quantifier rule under the unchanged eigenvariable condition, and convert back to A-implies-B.",
+      "checks": "Every sequent, formula metavariable, quantifier, occurrence restriction, inference order and reference is preserved. OLAXD-002 supplies one missing outer parenthesis in the displayed transformation theorem; OLAXD-003 restores A-implies in the final conclusion."
+    },
+    {
+      "blocks": [
+        10,
+        11
+      ],
+      "reverse_paraphrase": "The corresponding quantifier-rule case where B has existential-D-implies-C form is left as the exercise that asks the reader to complete the theorem proof.",
+      "checks": "The existential formula, rule macro, exercise status and four-part theorem reference remain exact."
+    }
+  ],
+  "source_observations": [
+    "OLAXD-002 documents a deterministically missing outer right parenthesis in the second displayed transformation theorem. The Marathi target supplies one parenthesis and carries an adjacent stable reader note; frozen English bytes remain unchanged.",
+    "OLAXD-003 documents that the source's final prose conclusion drops the A-implies operator established by the preceding line and required by the theorem. The Marathi target restores A-implies-B and carries an adjacent stable reader note; frozen English bytes remain unchanged.",
+    "The eigenvariable restriction explicitly excludes a from C, A and Gamma, allowing the quantifier-rule step after conjunction with A.",
+    "All formulas, macros, tokens, labels, identifiers and reference options match after the two documented projections."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "आयगेन चराची अट remains a provisional compositional proof-theory label under T179.",
+    "The existential quantifier-rule case is intentionally left without a proof in the source."
+  ]
+}

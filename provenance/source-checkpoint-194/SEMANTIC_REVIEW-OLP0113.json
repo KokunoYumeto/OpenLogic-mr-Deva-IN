@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0113",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse paraphrase of every prose block, clause-by-clause replay of the indexed derivation definition and modus-ponens specialization, and exact formula, macro, token and identifier comparison; no independent human or native-speaker review is claimed.",
+  "scope": "Axiomatic derivations as finite formula sequences, sufficient conditions for correct inference steps, modus ponens, derivability from premises, and theoremhood from the empty set.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "Axiomatic derivations are especially simple: they are formula sequences in which every formula is an axiom instance or follows by an inference rule from one or more earlier formulas, and the derivation derives its last formula.",
+      "checks": "Sequence order, the one-or-more dependency, axiom-instance alternative and final-formula role are all retained; derivation is not rendered as semantic consequence."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "A derivation from Gamma is a finite sequence A-one through A-n in which every indexed formula is a member of Gamma, an axiom, or follows by an inference rule from earlier A-j and optionally A-k entries with smaller indices.",
+      "checks": "The three alternatives, finiteness, language L, both optional-parenthetical dependencies and every inequality remain exact."
+    },
+    {
+      "blocks": [
+        8,
+        9
+      ],
+      "reverse_paraphrase": "Correctness depends on the selected axioms and inference rules. An inference rule is an if-then statement giving a sufficient condition for a derivation line to count as a correct inference step.",
+      "checks": "Sufficiency is not strengthened to necessity, and formal line licensing remains distinct from truth or validity."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "Premises and axioms each license one-line derivations. Modus ponens licenses A when B-implies-A and B occur earlier. If it is the only rule, each line must be a premise, an axiom, or have earlier conditional and antecedent witnesses; satisfying this from line one through n makes the entire sequence a correct derivation.",
+      "checks": "The direction of modus ponens, j/k witness indices, biconditional force of the specialized definition and every repeated formula are unchanged."
+    },
+    {
+      "blocks": [
+        11,
+        12
+      ],
+      "reverse_paraphrase": "A is derivable from Gamma exactly when a derivation from Gamma ends in A. A is a theorem exactly when it has a derivation from the empty set; the positive and slashed turnstiles record theoremhood and non-theoremhood.",
+      "checks": "The two existence conditions, empty-premise requirement and both turnstile forms remain exact."
+    }
+  ],
+  "source_observations": [
+    "The source first gives a general one-or-more-premise rule clause and then specializes it to a two-witness modus-ponens clause; the Marathi preserves both levels.",
+    "No formula, macro, token, identifier, definition alternative or index condition was changed."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "समर्थित/योग्य निगमन-पायरी remains definition-controlled formal vocabulary and is exposed in the review bundle for specialist correction.",
+    "The section will enter a cumulative reader only after the axiomatic-deduction chapter is complete."
+  ]
+}

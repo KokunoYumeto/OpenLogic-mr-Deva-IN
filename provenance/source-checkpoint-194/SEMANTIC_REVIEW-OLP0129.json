@@ -1,0 +1,70 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0129",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse replay of every implication in the complete-consistent-set proposition, direct checking of contradiction arguments against the imported derivability facts, and exact formula, macro, token, tag, label, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Complete consistent sets of sentences: definition, model-construction role, derivability closure, and membership conditions for conjunction, disjunction and conditional.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "A sentence set Gamma is complete exactly when it contains A or not-A for every sentence A. A complete consistent extension Gamma-star decides each atomic case and thereby determines a structure or valuation whose truth induction requires the stated connective membership equivalences. The proof may silently use reflexivity, monotonicity and transitivity of derivability.",
+      "checks": "The title token, definition biconditional, consistency restriction, FOL/propositional construction branches, Gamma/Gamma-star containment and all imported section references are preserved."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "reverse_paraphrase": "For complete consistent Gamma, anything derivable from Gamma belongs to Gamma. Otherwise completeness puts its negation in Gamma, and derivability of A together with membership of not-A makes Gamma inconsistent.",
+      "checks": "All four proposition items retain their iff directions. The first proof uses completeness only to obtain not-A and the tagged explicit-inconsistency result to contradict consistency."
+    },
+    {
+      "blocks": [
+        17,
+        18,
+        19
+      ],
+      "reverse_paraphrase": "A conjunction belongs to Gamma iff both conjuncts do. Forward derivability gives each conjunct; backward derivability builds the conjunction; the first item converts each derived formula into membership.",
+      "checks": "The defAnd/probAnd guards, item numbers, four proof-system reference variants and both applications of prop:ccs-prov-in are exact."
+    },
+    {
+      "blocks": [
+        20,
+        21
+      ],
+      "reverse_paraphrase": "A disjunction belongs to Gamma iff at least one disjunct does. If neither belongs, completeness supplies both negations and the imported derivability result makes Gamma inconsistent; either member conversely derives the disjunction.",
+      "checks": "The contradiction direction, reverse direction, defOr/probOr guards, item numbers and disjunction formulas are unchanged."
+    },
+    {
+      "blocks": [
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "reverse_paraphrase": "A conditional belongs to Gamma iff its antecedent is absent or its consequent is present. The forward contradiction uses modus-ponens-style derivability; the two reverse cases derive the conditional from not-A or from B. Separate tagged exercises ask for completion in FOL and propositional editions.",
+      "checks": "Both reverse cases remain separate, all membership negations and conditional directions are exact, proof-system reference order is preserved, and both indexed problem links retain their namespaces."
+    }
+  ],
+  "source_observations": [
+    "The source alternates prose words complete and the controlled complete token; the translation preserves every controlled token occurrence while using संपूर्ण in surrounding Marathi.",
+    "The proof is parametric over four proof systems and two language tags; all tagrefs, item numbers and conditional proof guards remain exact.",
+    "All formulas, macros, controlled tokens, tags, labels, identifiers and reference options match exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "संपूर्ण वाक्यसंच remains the definition-controlled specialist compound recorded in T192.",
+    "The one-sentence axiomatizable/decidable remark is paraphrased transparently from the frozen source and does not add a separate decision-procedure definition."
+  ]
+}

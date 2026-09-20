@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-epub-source-release-manifest/1",
+  "release": "twenty-chapters-v0.9",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_source_units": 194,
+    "total_source_units": 722,
+    "remaining_source_units": 528,
+    "aligned_content_segments": 2063,
+    "reader_sections": 171,
+    "complete_chapters": 20,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0197",
+    "complete_edition": false
+  },
+  "reader_html": {
+    "filename": "index.html",
+    "bytes": 4986136,
+    "sha256": "136c4a71905d8a7bb8a6947cdb541096566cdf64849c41326dac0e3f1e06919e"
+  },
+  "source_checkpoint": {
+    "path": "provenance/source-checkpoint-194/SOURCE_CHECKPOINT.json",
+    "sha256": "64243da63f596d47b04fb2ecf51c18aceab7d9e99ac743cf6c7e2375d37ecdd3"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0118",
+  "method": "Same-agent English/Marathi block-by-block close reading, reverse paraphrase of every definition and proposition, reconstruction of the concatenated transitivity derivation, replay of the compactness proof, and exact formula, macro, token, label, reference-option and identifier comparison; no independent human or native-speaker review is claimed.",
+  "scope": "Axiomatic derivability, theoremhood and consistency; reflexivity, monotonicity and transitivity; the inconsistency characterization; and proof-theoretic compactness.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "Proof-theoretic notions are defined through derivability rather than semantic satisfaction. A is derivable from Gamma exactly when a Gamma-derivation ends in A; A is a theorem when derived from the empty set; Gamma is consistent exactly when it does not derive falsity.",
+      "checks": "The FOL/PL validity-versus-tautology branch, entailment and satisfiability list, soundness/completeness link, both Proves notations, empty-set condition and consistency polarity are preserved."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "Reflexivity follows because A alone is a derivation from any Gamma containing A. Monotonicity follows because a derivation from Gamma remains a derivation from any superset Delta. Transitivity states that Gamma deriving A and A together with Delta deriving B imply Gamma union Delta derives B.",
+      "checks": "Membership, subset and union directions are unchanged, and the formula and derivation token counts remain exact."
+    },
+    {
+      "blocks": [
+        14,
+        15
+      ],
+      "reverse_paraphrase": "For transitivity, prepend a Gamma-derivation ending in A to a derivation of B from {A} union Delta. Any later B_i line equal to A can use the same justification as the new earlier A_k line, so the combined sequence derives B from Gamma union Delta. The two stated chaining consequences follow.",
+      "checks": "The A- and B-sequence order, indices k and l, the displayed concatenated sequence, every axiom/member/rule alternative, and the source's exact B_i and A_k formulas remain intact."
+    },
+    {
+      "blocks": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "reverse_paraphrase": "Gamma is inconsistent exactly when it derives every formula. The proof is left as an exercise, followed by separate protected first-order and propositional problem references.",
+      "checks": "The universal direction, Exercise placeholder, FOL/notFOL tags, three-part reference options and proposition identifier are exact."
+    },
+    {
+      "blocks": [
+        20,
+        21
+      ],
+      "reverse_paraphrase": "Proof-theoretic compactness says any derivation from Gamma uses only a finite subset Gamma_0, and consistency of every finite subset implies consistency of Gamma. The first clause selects the Gamma-members among the finite derivation lines; the second is its contrapositive at falsity.",
+      "checks": "Both proposition items and proof items preserve their direction, finiteness, subset relation, finite sequence, last-line identity, three-way justification alternatives and special case A identical to falsity."
+    }
+  ],
+  "source_observations": [
+    "The transitivity proof is specific to axiomatic line sequences: it concatenates two finite derivations and reuses the justification of the first derivation's last A-line.",
+    "The compactness proof uses only those derivation lines that belong to Gamma as the finite premise subset; logical axioms and rule-generated lines are not added to Gamma_0.",
+    "The unit contains two enumerated proposition items, two enumerated proof items and two tagged problem environments in both source and target.",
+    "No formula, macro, token, label, identifier, reference option or proof condition was changed."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact Marathi compounds for proof-theoretic notions, soundness and compactness remain open to expert correction under the existing terminology ledger.",
+    "The source leaves the inconsistency characterization as an exercise, and the translation retains that omission."
+  ]
+}

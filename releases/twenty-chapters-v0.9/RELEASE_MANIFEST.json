@@ -1,0 +1,78 @@
+{
+  "schema": "openlogic-release-manifest/1",
+  "release": "twenty-chapters-v0.9",
+  "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_source_units": 194,
+    "total_source_units": 722,
+    "remaining_source_units": 528,
+    "aligned_content_segments": 2063,
+    "reader_sections": 171,
+    "complete_chapters": 20,
+    "first_unit": "OLP-0004",
+    "last_unit": "OLP-0197",
+    "complete_edition": false
+  },
+  "reader": {
+    "pdf_pages": 264,
+    "native_mathml": 11479,
+    "semantic_proof_figures": 202,
+    "proof_formula_rows": 990
+  },
+  "assets": [
+    {
+      "filename": "openlogic-mr-twenty-chapters.pdf",
+      "bytes": 1139344,
+      "sha256": "c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790"
+    },
+    {
+      "filename": "openlogic-mr-twenty-chapters.epub",
+      "bytes": 2019669,
+      "sha256": "4d6bf459dd2ae9267568a26e57827c056bf2ecc87b3e2e5cc227dcbee593b970"
+    },
+    {
+      "filename": "openlogic-mr-twenty-chapters.tex",
+      "bytes": 1547376,
+      "sha256": "2698609ade953c8906ea84dc1cfe380ec91c6d1db3bea6e4ef467c556e1de4ae"
+    },
+    {
+      "filename": "openlogic-mr-twenty-chapters-html.zip",
+      "bytes": 1982486,
+      "sha256": "bf4a4391710a7864498957a020c59a67b1a1564e86df75c9044168eac1cb0e37"
+    },
+    {
+      "filename": "openlogic-mr-twenty-chapters-review.zip",
+      "bytes": 12997014,
+      "sha256": "413c318c483adcc97b9b03696c4780f11d560e4bf16ae854ae28797ed11f22b1"
+    },
+    {
+      "filename": "openlogic-mr-twenty-chapters-editable-sources.zip",
+      "bytes": 33465736,
+      "sha256": "cad10de35da15ac373f0fdf29585d9dc0e900fbd696874a25d6ad25344c990f3"
+    }
+  ],
+  "source_package_manifest": {
+    "path": "provenance/twenty-chapters-v0.9/EDITION_FILE_MANIFEST.json",
+    "files_listed": 2177,
+    "bytes": 410255,
+    "sha256": "20947db72a02a4115f2e52453da89c27c731bed0ef931acd525c2fe149678e22",
+    "later_draft_targets_excluded": []
+  },
+  "source_checkpoint": {
+    "path": "provenance/source-checkpoint-194/SOURCE_CHECKPOINT.json",
+    "bytes": 47626,
+    "sha256": "64243da63f596d47b04fb2ecf51c18aceab7d9e99ac743cf6c7e2375d37ecdd3"
+  },
+  "release_qa": {
+    "path": "provenance/twenty-chapters-v0.9/RELEASE_QA.json",
+    "bytes": 2429,
+    "sha256": "06c8b303ac46fadc7a46b797c4eefcd3437885f40840f76b5121fcd853912d64"
+  },
+  "cross_package_qa": {
+    "path": "provenance/twenty-chapters-v0.9/CROSS_PACKAGE_QA-RELEASE.json",
+    "bytes": 1388,
+    "sha256": "177906e9d7db4b96891e1b28ad28e9c8e43d031387515c8af8b18f9959db43db"
+  },
+  "full_edition_complete": false
+}

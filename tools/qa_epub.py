@@ -46,7 +46,18 @@ def c14n(node: etree._Element) -> bytes:
 
 
 def normalized_text(node: etree._Element) -> str:
-    return " ".join("".join(node.itertext()).split())
+    def segments(current: etree._Element):
+        if isinstance(current.tag, str) and etree.QName(current).namespace == MATHML_NS and etree.QName(current).localname == "mglyph":
+            yield current.get("alt") or ""
+            return
+        if current.text:
+            yield current.text
+        for child in current:
+            yield from segments(child)
+            if child.tail:
+                yield child.tail
+
+    return " ".join("".join(segments(node)).split())
 
 
 def main() -> int:
@@ -118,7 +129,11 @@ def main() -> int:
         metadata = {node.get("property"): (node.text or "") for node in package.xpath("./opf:metadata/opf:meta", namespaces=NS)}
         check(metadata.get("rendition:layout") == "reflowable", "EPUB is not declared reflowable")
         summaries = package.xpath("./opf:metadata/opf:meta[@property='schema:accessibilitySummary']/text()", namespaces=NS)
-        check(bool(summaries) and "108 of 722" in summaries[0] and "incomplete" in summaries[0].lower(), "partial scope is not disclosed in accessibility metadata")
+        expected_scope_phrase = (
+            f"{expected['translated_source_units']} of "
+            f"{expected['total_source_units']}"
+        )
+        check(bool(summaries) and expected_scope_phrase in summaries[0] and "incomplete" in summaries[0].lower(), "partial scope is not disclosed in accessibility metadata")
 
         manifest_items = package.xpath("./opf:manifest/opf:item", namespaces=NS)
         id_to_path: dict[str, PurePosixPath] = {}
@@ -149,6 +164,40 @@ def main() -> int:
         content_math_hashes = [digest(c14n(node)) for node in content_math]
         check(source_math_hashes == content_math_hashes, "MathML mathematical trees changed")
         check(all(etree.QName(node).namespace == MATHML_NS for node in content_math), "MathML namespace mismatch", len(content_math))
+        math_text_fallbacks = content.xpath(".//m:mtext/m:mglyph", namespaces=NS)
+        fallback_alternatives = [node.get("alt") or "" for node in math_text_fallbacks]
+        check(
+            len(math_text_fallbacks) == html_qa["mathml_text_fallback_occurrences"],
+            "MathML text-fallback occurrence count drift",
+        )
+        check(
+            len(set(fallback_alternatives)) == html_qa["mathml_text_fallback_unique_phrases"],
+            "MathML text-fallback phrase coverage drift",
+        )
+        check(
+            build_receipt["content"]["mathml_text_fallback_occurrences"] == len(math_text_fallbacks),
+            "EPUB build receipt text-fallback count drift",
+        )
+        check(
+            build_receipt["content"]["mathml_text_fallback_unique_alternatives"] == len(set(fallback_alternatives)),
+            "EPUB build receipt text-fallback alternatives drift",
+        )
+        check(
+            all(
+                not list(node)
+                and re.search(r"[\u0900-\u097f]", node.get("alt") or "")
+                and (node.get("src") or "").startswith("assets/math-text/mtext-")
+                and (node.get("src") or "").endswith(".svg")
+                and re.fullmatch(r"[0-9.]+em", node.get("width") or "")
+                and re.fullmatch(r"[0-9.]+em", node.get("height") or "")
+                and node.get("valign") == "0em"
+                for node in math_text_fallbacks
+            ),
+            "MathML text fallback is incomplete or malformed",
+            len(math_text_fallbacks),
+        )
+        metrics["mathml_text_fallback_occurrences"] = len(math_text_fallbacks)
+        metrics["mathml_text_fallback_unique_phrases"] = len(set(fallback_alternatives))
         annotations = content.xpath(".//m:math/m:semantics/m:annotation[@encoding='application/x-tex']", namespaces=NS)
         check(len(annotations) == expected["native_mathml"], "TeX annotation coverage drift")
         check(not content.xpath(".//x:script|.//x:iframe|.//x:object|.//x:embed", namespaces=NS), "active or embedded content survived")
@@ -193,7 +242,13 @@ def main() -> int:
         check(all(len((image.get("alt") or "").strip()) > 40 for image in images), "diagram alternative text missing")
         check(content.get("lang") == "mr" and content.get(f"{{{XML_NS}}}lang") == "mr", "accepted content language changed")
         body_text = " ".join("".join(content_body.itertext()).split())
-        check("108 स्रोत-एकके" in body_text and "उर्वरित 614" in body_text and "अपूर्ण" in body_text, "visible partial-scope disclosure missing")
+        remaining_units = expected["total_source_units"] - expected["translated_source_units"]
+        check(
+            f"{expected['translated_source_units']} स्रोत-एकके" in body_text
+            and f"उर्वरित {remaining_units}" in body_text
+            and "अपूर्ण" in body_text,
+            "visible partial-scope disclosure missing",
+        )
 
         parsed_documents = {PurePosixPath("OEBPS/content.xhtml"): content, PurePosixPath("OEBPS/nav.xhtml"): nav}
         ids_by_document = {path: set(doc.xpath("//@id")) for path, doc in parsed_documents.items()}
@@ -226,7 +281,11 @@ def main() -> int:
     check(release_manifest["coverage"]["aligned_content_segments"] == expected["aligned_content_segments"], "release segment coverage mismatch")
     check(release_manifest["coverage"]["complete_edition"] is False, "partial release is marked complete")
     check(html_qa["passed"] is True and html_qa["html_sha256"] == expected["reader_html_sha256"], "accepted HTML QA binding mismatch")
-    check(html_qa["source_to_html_main_math_annotations_exact"] == 5507, "source-to-MathML main-expression coverage drift")
+    check(
+        html_qa["source_to_html_main_math_annotations_exact"]
+        == expected["source_main_math_annotations"],
+        "source-to-MathML main-expression coverage drift",
+    )
     check(html_qa["proof_formula_annotations_verified"] == expected["proof_formula_rows"], "source-to-proof-formula coverage drift")
 
     epubcheck_path.parent.mkdir(parents=True, exist_ok=True)
@@ -235,6 +294,12 @@ def main() -> int:
     check(result.returncode == 0, "EPUBCheck returned a failure status")
     check(epubcheck_path.is_file(), "EPUBCheck JSON report was not created")
     epubcheck = json.loads(epubcheck_path.read_text(encoding="utf-8")) if epubcheck_path.is_file() else {}
+    if epubcheck_path.is_file():
+        epubcheck_path.write_text(
+            json.dumps(epubcheck, ensure_ascii=False, sort_keys=True, indent=2) + "\n",
+            encoding="utf-8",
+            newline="\n",
+        )
     check(epubcheck.get("messages") == [], "EPUBCheck reported messages")
     check(epubcheck.get("checker", {}).get("checkerVersion") == "5.3.0", "unexpected EPUBCheck version")
 

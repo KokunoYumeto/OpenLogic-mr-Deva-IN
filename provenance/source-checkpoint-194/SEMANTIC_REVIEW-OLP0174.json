@@ -1,0 +1,24 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0174",
+  "method": "Same-agent English/Marathi close reading of the chapter title and editorial scope statement, followed by exact formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Chapter driver introducing logical systems beyond first-order logic and importing all seven sections.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5
+      ],
+      "reverse_paraphrase": "The chapter gives a very brief survey of logical systems beyond first-order logic, adapted from Jeremy Avigad's notes. It is intended to suggest further study in courses that do not cover these topics, which may eventually receive full part-level treatments in Open Logic.",
+      "checks": "The title contrast, attribution, intentionally brief scope, course-use purpose, hopeful qualification and future part-level treatment are retained."
+    }
+  ],
+  "source_observations": [
+    "All imports, macros, identifiers and controlled tokens match the frozen source exactly."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this individual unit."
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0163",
+  "method": "Same-agent English/Marathi block-by-block close reading, clause-by-clause replay of term valuation and recursive satisfaction, exhaustive evaluation of the declared four-element relation for every worked witness and counterexample, verification of all tag-dependent primitive and defined quantifier branches, and exact projected formula, macro, controlled-token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Values of terms, variable assignments and x-variants, recursive satisfaction for atomic and compound formulas, primitive and defined quantifiers, and nested quantified examples.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "Term values and formula satisfaction connect expressions to structures. A variable assignment maps every variable into the domain. Constants and variables receive their assigned values, while a function term receives the interpreted function applied to its recursively evaluated arguments.",
+      "checks": "The structure/assignment distinction, total function type, three recursive term cases, argument order and every value notation are retained."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "An x-variant may differ from an assignment only at x and may equal the original assignment. Subst(s,m,x) is the particular x-variant that gives x the value m and agrees with s on every other variable.",
+      "checks": "The ‘at most’ condition, reflexive case, piecewise definition, domain restriction and agreement away from x are explicit."
+    },
+    {
+      "blocks": [
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "reverse_paraphrase": "Satisfaction relative to a structure and assignment is defined recursively for falsity, truth, predicates, identity, negation, all four binary connectives, and both quantifiers. Atomic predicates test the tuple of term values against the interpreted relation; quantified clauses vary only the bound variable.",
+      "checks": "All eleven cases preserve polarity, connective truth conditions, tuple order, equality of term values, universal every-element force and existential at-least-one force."
+    },
+    {
+      "blocks": [
+        26,
+        27
+      ],
+      "reverse_paraphrase": "Domain elements cannot simply be substituted as object-language names, and a denumerable stock of constants cannot name every element of an uncountable domain. Variable assignments instead connect variables directly to domain elements.",
+      "checks": "The symbol/object distinction, undefined substitution, absent naming assumption, cardinality argument and relative-assignment solution are retained. OLFOL-013 restores the omitted satisfaction condition in the informal existential branch."
+    },
+    {
+      "blocks": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "reverse_paraphrase": "In the four-element structure, f is truncated addition and R contains exactly (1,1), (1,2), (2,3) and (2,4). The examples compute term values, evaluate atomic and conditional formulas, list all four x-variants, and derive existential and universal claims under both primitive and defined quantifier presentations.",
+      "checks": "Every arithmetic value, relation membership, disjunct, antecedent, consequent and quantified case was recalculated. OLFOL-012 fixes the assignment suffix, OLFOL-014 balances the defined-existential formulas, and OLFOL-015 uses the actually false antecedent."
+    },
+    {
+      "blocks": [
+        37,
+        38,
+        39
+      ],
+      "reverse_paraphrase": "The nested universal conditional holds: the antecedent is false at 3 and 4, while witnesses y=1 and y=3 work at x=1 and x=2. The final existential conjunction fails because only x=1 and x=2 satisfy R(a,x), and the inner universal fails there with y=4 and y=1 respectively.",
+      "checks": "The outer and inner assignment substitutions remain ordered, all four outer cases are covered, and each witness was checked against the declared relation. OLFOL-016 restores m, OLFOL-017 restores the outer range variable, and OLFOL-018 replaces the invalid second witness."
+    },
+    {
+      "blocks": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "reverse_paraphrase": "The tag-dependent propositions characterize existential satisfaction by some x-variant and universal satisfaction by every x-variant, with proof exercises. The final problem supplies a three-element structure and asks first for a satisfaction decision under the constant-one assignment and then for a counterstructure and assignment.",
+      "checks": "Both biconditionals, labels and proof prompts are preserved; the final language signature, four structure clauses, quantified formula, explanation request and counterexample request are all retained without solving the exercise."
+    }
+  ],
+  "source_observations": [
+    "OLFOL-012 removes an assignment suffix from the fixed relation interpretation.",
+    "OLFOL-013 restores the satisfaction statement omitted from the informal prvEx branch.",
+    "OLFOL-014 repairs two surplus opening parentheses and one formula-internal comma in the defEx walkthrough.",
+    "OLFOL-015 changes the claimed false formula at m=2,3,4 from the consequent R(a,x) to the antecedent R(x,a).",
+    "OLFOL-016 restores the missing m in the second outer case.",
+    "OLFOL-017 changes the nested-example summary's outer range variable from n to m.",
+    "OLFOL-018 uses n=1 rather than n=4 to refute R(2,n), because (2,4) belongs to the declared relation.",
+    "After the nine exact projections for these seven observations, all formulas, macros, controlled tokens, identifiers and references match the frozen source."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact Marathi x-variant headword remains explicitly open to specialist review in T222.",
+    "Tag-dependent branches were reviewed from source text and recursive semantics; no TeX reader build was run for this individual unit."
+  ]
+}
