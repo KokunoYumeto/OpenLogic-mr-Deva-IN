@@ -1,0 +1,50 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: substructures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{sub}
+\olsection{उप\printtoken{p}{structure}}
+
+एखाद्या !!a{structure}~$\Struct{M}$ चा !!{domain} हा दुसऱ्या
+$\Struct{M'}$ चा उपसंच असू शकतो. पण $\Struct{M}$ हा $\Struct{M'}$ चा
+``भाग'' आहे असे आपण अर्थातच फक्त तेव्हाच मानावे, जेव्हा $\Domain{M}
+\subseteq \Domain{M'}$ असण्याबरोबरच भाषेतील चिन्हांचे अर्थनिर्धारण करताना
+$\Struct{M}$ आणि $\Struct{M'}$ किमान सामाईक भाग~$\Domain{M}$ वर
+``सहमत'' असतात.
+
+\begin{defn}
+\ollabel{defn:substructure}
+त्याच भाषेसाठी~$\Lang L$ !!{structure}s $\Struct M$ आणि
+$\Struct M'$ दिल्या असता, $\Struct M$ ही $\Struct M'$ ची
+\emph{उप!!{structure}} आणि $\Struct M'$ ही $\Struct M$ ची
+\emph{वर्धित रचना} आहे, असे आपण म्हणतो; $\Struct M \substruct \Struct M'$
+असे लिहितो; आणि तेव्हा आणि केवळ तेव्हाच पुढील अटी पूर्ण होतात:
+\begin{enumerate}
+\item $\Domain{M} \subseteq \Domain{M'}$,
+\item प्रत्येक स्थिर $c \in \Lang L$ साठी $\Assign{c}{M} =
+    \Assign{c}{M'}$;
+\item प्रत्येक $n$-स्थानी !!{function} $f \in \Lang L$ साठी
+  सर्व $a_1$, \dots, $a_n \in \Domain{M}$ यांकरिता
+  $\Assign{f}{M}(a_1, \dots, a_n) = \Assign{f}{M'}(a_1, \dots, a_n)$.
+\item प्रत्येक $n$-स्थानी !!{predicate} $R \in \Lang L$ साठी, सर्व
+  $a_1$, \dots, $a_n \in \Domain{M}$ यांकरिता $\langle
+  a_1, \dots, a_n\rangle \in \Assign{R}{M}$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\langle a_1, \dots, a_n\rangle \in \Assign{R}{M'}$.
+\end{enumerate}
+\end{defn}
+
+\begin{rem}
+\ollabel{rem:substructure}
+भाषेत एकही स्थिर किंवा !!{function}s नसतील, तर कोणताही $N
+\subseteq \Domain{M}$ हा $\Assign{R}{N} = \Assign{R}{M} \cap N^n$
+असे ठेवून $\Struct M$ ची, !!{domain}~$\Domain{N} = N$ असलेली,
+उप!!{structure}~$\Struct{N}$ निश्चित करतो.
+\end{rem}
+
+% prove something about this? Examples?
+
+\end{document}

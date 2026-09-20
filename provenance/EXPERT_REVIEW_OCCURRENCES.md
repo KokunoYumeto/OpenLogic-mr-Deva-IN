@@ -2,14 +2,14 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **178/722 source units**, 1911 aligned translated blocks, 10616 review occurrences. The referenced development reader has 157 pages and SHA-256 bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450; it is not a final accessible release.
+Current scope: **187/722 source units**, 1979 aligned translated blocks, 10933 review occurrences. The referenced development reader has 157 pages and SHA-256 bae3e1b86d3eec137e99baf252b3dfa70cf76dd49815b175de115aa604f79450; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
 [Decision ledger](EXPERT_REVIEW_LOG.md) · [Priority view](EXPERT_REVIEW_PRIORITY.md) · [CSV](EXPERT_REVIEW_OCCURRENCES.csv) · [Machine JSONL](EXPERT_REVIEW_OCCURRENCES.jsonl)
 
 <details>
-<summary><strong>T001 — set</strong> (405 occurrences; routine priority)</summary>
+<summary><strong>T001 — set</strong> (408 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -418,6 +418,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T001-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
 | T001-OLP-0177-B013 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L183) | [mr/content/first-order-logic/beyond/second-order-logic.tex:172-190](../mr/content/first-order-logic/beyond/second-order-logic.tex#L172) | not yet paginated |
 | T001-OLP-0178-B006 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L13) | not yet paginated |
+| T001-OLP-0185-B005 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:12-17](../upstream/content/model-theory/basics/substructures.tex#L12) | [mr/content/model-theory/basics/substructures.tex:12-17](../mr/content/model-theory/basics/substructures.tex#L12) | not yet paginated |
+| T001-OLP-0185-B006 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:19-37](../upstream/content/model-theory/basics/substructures.tex#L19) | [mr/content/model-theory/basics/substructures.tex:19-38](../mr/content/model-theory/basics/substructures.tex#L19) | not yet paginated |
+| T001-OLP-0185-B007 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:39-45](../upstream/content/model-theory/basics/substructures.tex#L39) | [mr/content/model-theory/basics/substructures.tex:40-46](../mr/content/model-theory/basics/substructures.tex#L40) | not yet paginated |
 
 **Chosen rendering/action:** संच
 
@@ -1877,7 +1880,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T013 — model (model theory)</strong> (67 occurrences; high priority)</summary>
+<summary><strong>T013 — model (model theory)</strong> (73 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1948,6 +1951,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T013-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
 | T013-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
 | T013-OLP-0177-B015 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L211) | [mr/content/first-order-logic/beyond/second-order-logic.tex:198-211](../mr/content/first-order-logic/beyond/second-order-logic.tex#L198) | not yet paginated |
+| T013-OLP-0182-B004 | OLP-0182 ·  | [upstream/content/model-theory/model-theory.tex:7-7](../upstream/content/model-theory/model-theory.tex#L7) | [mr/content/model-theory/model-theory.tex:7-7](../mr/content/model-theory/model-theory.tex#L7) | not yet paginated |
+| T013-OLP-0182-B005 | OLP-0182 ·  | [upstream/content/model-theory/model-theory.tex:9-17](../upstream/content/model-theory/model-theory.tex#L9) | [mr/content/model-theory/model-theory.tex:9-16](../mr/content/model-theory/model-theory.tex#L9) | not yet paginated |
+| T013-OLP-0183-B004 | OLP-0183 ·  | [upstream/content/model-theory/basics/basics.tex:8-8](../upstream/content/model-theory/basics/basics.tex#L8) | [mr/content/model-theory/basics/basics.tex:8-8](../mr/content/model-theory/basics/basics.tex#L8) | not yet paginated |
+| T013-OLP-0186-B005 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:12-15](../upstream/content/model-theory/basics/overspill.tex#L12) | [mr/content/model-theory/basics/overspill.tex:12-15](../mr/content/model-theory/basics/overspill.tex#L12) | not yet paginated |
+| T013-OLP-0186-B006 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:17-26](../upstream/content/model-theory/basics/overspill.tex#L17) | [mr/content/model-theory/basics/overspill.tex:17-26](../mr/content/model-theory/basics/overspill.tex#L17) | not yet paginated |
+| T013-OLP-0186-B008 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:35-40](../upstream/content/model-theory/basics/overspill.tex#L35) | [mr/content/model-theory/basics/overspill.tex:35-39](../mr/content/model-theory/basics/overspill.tex#L35) | not yet paginated |
 
 **Chosen rendering/action:** प्रतिमान
 
@@ -2822,7 +2831,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T027 — mathematical / arithmetical induction</strong> (53 occurrences; medium priority)</summary>
+<summary><strong>T027 — mathematical / arithmetical induction</strong> (54 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2879,6 +2888,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T027-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
 | T027-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
 | T027-OLP-0179-B019 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:135-149](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L135) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:120-133](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L120) | not yet paginated |
+| T027-OLP-0189-B017 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:131-133](../upstream/content/model-theory/basics/partial-iso.tex#L131) | [mr/content/model-theory/basics/partial-iso.tex:132-134](../mr/content/model-theory/basics/partial-iso.tex#L132) | not yet paginated |
 
 **Chosen rendering/action:** गणितीय विगमन / अंकगणितीय विगमन
 
@@ -3013,7 +3023,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T030 — relation / binary relation</strong> (169 occurrences; medium priority)</summary>
+<summary><strong>T030 — relation / binary relation</strong> (173 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3186,6 +3196,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T030-OLP-0177-B016 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:226-234](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L226) | [mr/content/first-order-logic/beyond/second-order-logic.tex:213-221](../mr/content/first-order-logic/beyond/second-order-logic.tex#L213) | not yet paginated |
 | T030-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
 | T030-OLP-0180-B008 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:41-48](../upstream/content/first-order-logic/beyond/modal-logics.tex#L41) | [mr/content/first-order-logic/beyond/modal-logics.tex:37-43](../mr/content/first-order-logic/beyond/modal-logics.tex#L37) | not yet paginated |
+| T030-OLP-0184-B010 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:59-65](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L59) | [mr/content/model-theory/basics/reducts-and-expansions.tex:58-65](../mr/content/model-theory/basics/reducts-and-expansions.tex#L58) | not yet paginated |
+| T030-OLP-0185-B006 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:19-37](../upstream/content/model-theory/basics/substructures.tex#L19) | [mr/content/model-theory/basics/substructures.tex:19-38](../mr/content/model-theory/basics/substructures.tex#L19) | not yet paginated |
+| T030-OLP-0185-B007 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:39-45](../upstream/content/model-theory/basics/substructures.tex#L39) | [mr/content/model-theory/basics/substructures.tex:40-46](../mr/content/model-theory/basics/substructures.tex#L40) | not yet paginated |
+| T030-OLP-0189-B019 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:143-158](../upstream/content/model-theory/basics/partial-iso.tex#L143) | [mr/content/model-theory/basics/partial-iso.tex:144-162](../mr/content/model-theory/basics/partial-iso.tex#L144) | not yet paginated |
 
 **Chosen rendering/action:** संबंध / द्विपदी संबंध
 
@@ -3288,7 +3302,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T032 — reflexive / irreflexive</strong> (95 occurrences; medium priority)</summary>
+<summary><strong>T032 — reflexive / irreflexive</strong> (96 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3387,6 +3401,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T032-OLP-0169-B008 | OLP-0169 ·  | [upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63](../upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex#L45) | [mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64](../mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex#L44) | not yet paginated |
 | T032-OLP-0170-B014 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:108-141](../upstream/content/first-order-logic/models-theories/theories.tex#L108) | [mr/content/first-order-logic/models-theories/theories.tex:107-138](../mr/content/first-order-logic/models-theories/theories.tex#L107) | not yet paginated |
 | T032-OLP-0180-B010 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | not yet paginated |
+| T032-OLP-0190-B005 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:12-26](../upstream/content/model-theory/basics/dlo.tex#L12) | [mr/content/model-theory/basics/dlo.tex:12-26](../mr/content/model-theory/basics/dlo.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** परावर्ती / अपरावर्ती
 
@@ -3792,7 +3807,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T039 — preorder / partial order / linear order</strong> (36 occurrences; high priority)</summary>
+<summary><strong>T039 — preorder / partial order / linear order</strong> (39 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3832,6 +3847,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T039-OLP-0177-B013 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L183) | [mr/content/first-order-logic/beyond/second-order-logic.tex:172-190](../mr/content/first-order-logic/beyond/second-order-logic.tex#L172) | not yet paginated |
 | T039-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
 | T039-OLP-0180-B008 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:41-48](../upstream/content/first-order-logic/beyond/modal-logics.tex#L41) | [mr/content/first-order-logic/beyond/modal-logics.tex:37-43](../mr/content/first-order-logic/beyond/modal-logics.tex#L37) | not yet paginated |
+| T039-OLP-0190-B004 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:9-10](../upstream/content/model-theory/basics/dlo.tex#L9) | [mr/content/model-theory/basics/dlo.tex:9-10](../mr/content/model-theory/basics/dlo.tex#L9) | not yet paginated |
+| T039-OLP-0190-B005 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:12-26](../upstream/content/model-theory/basics/dlo.tex#L12) | [mr/content/model-theory/basics/dlo.tex:12-26](../mr/content/model-theory/basics/dlo.tex#L12) | not yet paginated |
+| T039-OLP-0190-B010 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:68-84](../upstream/content/model-theory/basics/dlo.tex#L68) | [mr/content/model-theory/basics/dlo.tex:73-88](../mr/content/model-theory/basics/dlo.tex#L73) | not yet paginated |
 
 **Chosen rendering/action:** पूर्वक्रम / अंशतः क्रम / रेषीय क्रम
 
@@ -4569,7 +4587,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T045 — function / mapping</strong> (279 occurrences; medium priority)</summary>
+<summary><strong>T045 — function / mapping</strong> (290 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -4852,6 +4870,17 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T045-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
 | T045-OLP-0178-B010 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:102-112](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L102) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:102-111](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L102) | not yet paginated |
 | T045-OLP-0178-B011 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:114-123](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L114) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:113-120](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L113) | not yet paginated |
+| T045-OLP-0184-B006 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L24) | [mr/content/model-theory/basics/reducts-and-expansions.tex:22-38](../mr/content/model-theory/basics/reducts-and-expansions.tex#L22) | not yet paginated |
+| T045-OLP-0185-B006 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:19-37](../upstream/content/model-theory/basics/substructures.tex#L19) | [mr/content/model-theory/basics/substructures.tex:19-38](../mr/content/model-theory/basics/substructures.tex#L19) | not yet paginated |
+| T045-OLP-0185-B007 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:39-45](../upstream/content/model-theory/basics/substructures.tex#L39) | [mr/content/model-theory/basics/substructures.tex:40-46](../mr/content/model-theory/basics/substructures.tex#L40) | not yet paginated |
+| T045-OLP-0187-B007 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:35-59](../upstream/content/model-theory/basics/isomorphism.tex#L35) | [mr/content/model-theory/basics/isomorphism.tex:34-58](../mr/content/model-theory/basics/isomorphism.tex#L34) | not yet paginated |
+| T045-OLP-0187-B009 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:67-106](../upstream/content/model-theory/basics/isomorphism.tex#L67) | [mr/content/model-theory/basics/isomorphism.tex:66-106](../mr/content/model-theory/basics/isomorphism.tex#L66) | not yet paginated |
+| T045-OLP-0189-B005 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:12-31](../upstream/content/model-theory/basics/partial-iso.tex#L12) | [mr/content/model-theory/basics/partial-iso.tex:12-31](../mr/content/model-theory/basics/partial-iso.tex#L12) | not yet paginated |
+| T045-OLP-0189-B006 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:33-34](../upstream/content/model-theory/basics/partial-iso.tex#L33) | [mr/content/model-theory/basics/partial-iso.tex:33-34](../mr/content/model-theory/basics/partial-iso.tex#L33) | not yet paginated |
+| T045-OLP-0189-B007 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:36-50](../upstream/content/model-theory/basics/partial-iso.tex#L36) | [mr/content/model-theory/basics/partial-iso.tex:36-50](../mr/content/model-theory/basics/partial-iso.tex#L36) | not yet paginated |
+| T045-OLP-0189-B009 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:58-78](../upstream/content/model-theory/basics/partial-iso.tex#L58) | [mr/content/model-theory/basics/partial-iso.tex:58-78](../mr/content/model-theory/basics/partial-iso.tex#L58) | not yet paginated |
+| T045-OLP-0189-B013 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:102-107](../upstream/content/model-theory/basics/partial-iso.tex#L102) | [mr/content/model-theory/basics/partial-iso.tex:102-108](../mr/content/model-theory/basics/partial-iso.tex#L102) | not yet paginated |
+| T045-OLP-0190-B008 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:42-61](../upstream/content/model-theory/basics/dlo.tex#L42) | [mr/content/model-theory/basics/dlo.tex:42-66](../mr/content/model-theory/basics/dlo.tex#L42) | not yet paginated |
 
 **Chosen rendering/action:** फलन / संगती
 
@@ -4862,7 +4891,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T046 — domain / codomain / range</strong> (162 occurrences; medium priority)</summary>
+<summary><strong>T046 — domain / codomain / range</strong> (174 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5028,6 +5057,18 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T046-OLP-0177-B017 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:236-242](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L236) | [mr/content/first-order-logic/beyond/second-order-logic.tex:223-229](../mr/content/first-order-logic/beyond/second-order-logic.tex#L223) | not yet paginated |
 | T046-OLP-0178-B006 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:13-19](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L13) | not yet paginated |
 | T046-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
+| T046-OLP-0184-B006 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L24) | [mr/content/model-theory/basics/reducts-and-expansions.tex:22-38](../mr/content/model-theory/basics/reducts-and-expansions.tex#L22) | not yet paginated |
+| T046-OLP-0184-B010 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:59-65](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L59) | [mr/content/model-theory/basics/reducts-and-expansions.tex:58-65](../mr/content/model-theory/basics/reducts-and-expansions.tex#L58) | not yet paginated |
+| T046-OLP-0185-B005 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:12-17](../upstream/content/model-theory/basics/substructures.tex#L12) | [mr/content/model-theory/basics/substructures.tex:12-17](../mr/content/model-theory/basics/substructures.tex#L12) | not yet paginated |
+| T046-OLP-0185-B006 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:19-37](../upstream/content/model-theory/basics/substructures.tex#L19) | [mr/content/model-theory/basics/substructures.tex:19-38](../mr/content/model-theory/basics/substructures.tex#L19) | not yet paginated |
+| T046-OLP-0185-B007 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:39-45](../upstream/content/model-theory/basics/substructures.tex#L39) | [mr/content/model-theory/basics/substructures.tex:40-46](../mr/content/model-theory/basics/substructures.tex#L40) | not yet paginated |
+| T046-OLP-0186-B007 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:28-33](../upstream/content/model-theory/basics/overspill.tex#L28) | [mr/content/model-theory/basics/overspill.tex:28-33](../mr/content/model-theory/basics/overspill.tex#L28) | not yet paginated |
+| T046-OLP-0187-B007 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:35-59](../upstream/content/model-theory/basics/isomorphism.tex#L35) | [mr/content/model-theory/basics/isomorphism.tex:34-58](../mr/content/model-theory/basics/isomorphism.tex#L34) | not yet paginated |
+| T046-OLP-0189-B005 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:12-31](../upstream/content/model-theory/basics/partial-iso.tex#L12) | [mr/content/model-theory/basics/partial-iso.tex:12-31](../mr/content/model-theory/basics/partial-iso.tex#L12) | not yet paginated |
+| T046-OLP-0189-B007 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:36-50](../upstream/content/model-theory/basics/partial-iso.tex#L36) | [mr/content/model-theory/basics/partial-iso.tex:36-50](../mr/content/model-theory/basics/partial-iso.tex#L36) | not yet paginated |
+| T046-OLP-0189-B009 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:58-78](../upstream/content/model-theory/basics/partial-iso.tex#L58) | [mr/content/model-theory/basics/partial-iso.tex:58-78](../mr/content/model-theory/basics/partial-iso.tex#L58) | not yet paginated |
+| T046-OLP-0189-B018 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:135-141](../upstream/content/model-theory/basics/partial-iso.tex#L135) | [mr/content/model-theory/basics/partial-iso.tex:136-142](../mr/content/model-theory/basics/partial-iso.tex#L136) | not yet paginated |
+| T046-OLP-0190-B008 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:42-61](../upstream/content/model-theory/basics/dlo.tex#L42) | [mr/content/model-theory/basics/dlo.tex:42-66](../mr/content/model-theory/basics/dlo.tex#L42) | not yet paginated |
 
 **Chosen rendering/action:** प्रांत / सहप्रांत / व्याप्ती
 
@@ -5134,7 +5175,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T048 — surjective / surjection</strong> (92 occurrences; medium priority)</summary>
+<summary><strong>T048 — surjective / surjection</strong> (93 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5230,6 +5271,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T048-OLP-0040-B018 | OLP-0040 · 4.13 न्यूनीकरण | [upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:106-110](../upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L106) | [mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:108-112](../mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L108) | 52–53 |
 | T048-OLP-0040-B022 | OLP-0040 · 4.13 न्यूनीकरण | [upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:130-134](../upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L130) | [mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:133-138](../mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L133) | 52–53 |
 | T048-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
+| T048-OLP-0187-B007 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:35-59](../upstream/content/model-theory/basics/isomorphism.tex#L35) | [mr/content/model-theory/basics/isomorphism.tex:34-58](../mr/content/model-theory/basics/isomorphism.tex#L34) | not yet paginated |
 
 **Chosen rendering/action:** आच्छादक / आच्छादन
 
@@ -5240,7 +5282,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T049 — injective / injection</strong> (87 occurrences; medium priority)</summary>
+<summary><strong>T049 — injective / injection</strong> (89 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5331,6 +5373,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T049-OLP-0172-B012 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:131-147](../upstream/content/first-order-logic/models-theories/set-theory.tex#L131) | [mr/content/first-order-logic/models-theories/set-theory.tex:129-145](../mr/content/first-order-logic/models-theories/set-theory.tex#L129) | not yet paginated |
 | T049-OLP-0177-B011 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | not yet paginated |
 | T049-OLP-0177-B012 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L169) | [mr/content/first-order-logic/beyond/second-order-logic.tex:159-170](../mr/content/first-order-logic/beyond/second-order-logic.tex#L159) | not yet paginated |
+| T049-OLP-0187-B007 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:35-59](../upstream/content/model-theory/basics/isomorphism.tex#L35) | [mr/content/model-theory/basics/isomorphism.tex:34-58](../mr/content/model-theory/basics/isomorphism.tex#L34) | not yet paginated |
+| T049-OLP-0189-B005 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:12-31](../upstream/content/model-theory/basics/partial-iso.tex#L12) | [mr/content/model-theory/basics/partial-iso.tex:12-31](../mr/content/model-theory/basics/partial-iso.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** एकास-एक / एकास-एक फलन
 
@@ -5541,7 +5585,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T053 — composition / partial / total function</strong> (24 occurrences; medium priority)</summary>
+<summary><strong>T053 — composition / partial / total function</strong> (26 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5569,6 +5613,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T053-OLP-0040-B021 | OLP-0040 · 4.13 न्यूनीकरण | [upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:123-128](../upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L123) | [mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:125-131](../mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L125) | 52–53 |
 | T053-OLP-0054-B012 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L55) | [mr/content/sets-functions-relations/infinite/card-sb.tex:54-67](../mr/content/sets-functions-relations/infinite/card-sb.tex#L54) | 72–74 |
 | T053-OLP-0054-B017 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L89) | [mr/content/sets-functions-relations/infinite/card-sb.tex:91-104](../mr/content/sets-functions-relations/infinite/card-sb.tex#L91) | 72–74 |
+| T053-OLP-0187-B009 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:67-106](../upstream/content/model-theory/basics/isomorphism.tex#L67) | [mr/content/model-theory/basics/isomorphism.tex:66-106](../mr/content/model-theory/basics/isomorphism.tex#L66) | not yet paginated |
+| T053-OLP-0189-B005 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:12-31](../upstream/content/model-theory/basics/partial-iso.tex#L12) | [mr/content/model-theory/basics/partial-iso.tex:12-31](../mr/content/model-theory/basics/partial-iso.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** संयोजन / अंशतः फलन / सर्वत्र परिभाषित फलन
 
@@ -5745,7 +5791,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T057 — enumerable / countable / uncountable</strong> (120 occurrences; routine priority)</summary>
+<summary><strong>T057 — enumerable / countable / uncountable</strong> (128 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5869,6 +5915,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T057-OLP-0147-B008 | OLP-0147 ·  | [upstream/content/first-order-logic/introduction/models-theories.tex:56-68](../upstream/content/first-order-logic/introduction/models-theories.tex#L56) | [mr/content/first-order-logic/introduction/models-theories.tex:58-68](../mr/content/first-order-logic/introduction/models-theories.tex#L58) | not yet paginated |
 | T057-OLP-0148-B009 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L50) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L51) | not yet paginated |
 | T057-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
+| T057-OLP-0186-B006 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:17-26](../upstream/content/model-theory/basics/overspill.tex#L17) | [mr/content/model-theory/basics/overspill.tex:17-26](../mr/content/model-theory/basics/overspill.tex#L17) | not yet paginated |
+| T057-OLP-0187-B005 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:12-24](../upstream/content/model-theory/basics/isomorphism.tex#L12) | [mr/content/model-theory/basics/isomorphism.tex:12-23](../mr/content/model-theory/basics/isomorphism.tex#L12) | not yet paginated |
+| T057-OLP-0188-B013 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:51-62](../upstream/content/model-theory/basics/theory-of-m.tex#L51) | [mr/content/model-theory/basics/theory-of-m.tex:55-66](../mr/content/model-theory/basics/theory-of-m.tex#L55) | not yet paginated |
+| T057-OLP-0189-B008 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:52-56](../upstream/content/model-theory/basics/partial-iso.tex#L52) | [mr/content/model-theory/basics/partial-iso.tex:52-56](../mr/content/model-theory/basics/partial-iso.tex#L52) | not yet paginated |
+| T057-OLP-0189-B009 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:58-78](../upstream/content/model-theory/basics/partial-iso.tex#L58) | [mr/content/model-theory/basics/partial-iso.tex:58-78](../mr/content/model-theory/basics/partial-iso.tex#L58) | not yet paginated |
+| T057-OLP-0190-B006 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:28-31](../upstream/content/model-theory/basics/dlo.tex#L28) | [mr/content/model-theory/basics/dlo.tex:28-31](../mr/content/model-theory/basics/dlo.tex#L28) | not yet paginated |
+| T057-OLP-0190-B007 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:33-40](../upstream/content/model-theory/basics/dlo.tex#L33) | [mr/content/model-theory/basics/dlo.tex:33-40](../mr/content/model-theory/basics/dlo.tex#L33) | not yet paginated |
+| T057-OLP-0190-B010 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:68-84](../upstream/content/model-theory/basics/dlo.tex#L68) | [mr/content/model-theory/basics/dlo.tex:73-88](../mr/content/model-theory/basics/dlo.tex#L73) | not yet paginated |
 
 **Chosen rendering/action:** गणनीय / गणनीय / अगणनीय
 
@@ -5879,7 +5933,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T058 — size / cardinality / equinumerous</strong> (41 occurrences; routine priority)</summary>
+<summary><strong>T058 — size / cardinality / equinumerous</strong> (43 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5924,6 +5978,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T058-OLP-0147-B008 | OLP-0147 ·  | [upstream/content/first-order-logic/introduction/models-theories.tex:56-68](../upstream/content/first-order-logic/introduction/models-theories.tex#L56) | [mr/content/first-order-logic/introduction/models-theories.tex:58-68](../mr/content/first-order-logic/introduction/models-theories.tex#L58) | not yet paginated |
 | T058-OLP-0173-B005 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:11-11](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L11) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:11-11](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L11) | not yet paginated |
 | T058-OLP-0173-B006 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:13-19](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L13) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:13-18](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L13) | not yet paginated |
+| T058-OLP-0186-B005 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:12-15](../upstream/content/model-theory/basics/overspill.tex#L12) | [mr/content/model-theory/basics/overspill.tex:12-15](../mr/content/model-theory/basics/overspill.tex#L12) | not yet paginated |
+| T058-OLP-0186-B006 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:17-26](../upstream/content/model-theory/basics/overspill.tex#L17) | [mr/content/model-theory/basics/overspill.tex:17-26](../mr/content/model-theory/basics/overspill.tex#L17) | not yet paginated |
 
 **Chosen rendering/action:** आकारमान / संचांक / तुल्यबल
 
@@ -6096,7 +6152,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T066 — rational number / non-negative rational number</strong> (49 occurrences; medium priority)</summary>
+<summary><strong>T066 — rational number / non-negative rational number</strong> (50 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6149,6 +6205,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T066-OLP-0179-B011 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:45-47](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L45) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:38-40](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L38) | not yet paginated |
 | T066-OLP-0179-B012 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:49-59](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L49) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:42-51](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L42) | not yet paginated |
 | T066-OLP-0179-B013 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:61-72](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L61) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:53-63](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L53) | not yet paginated |
+| T066-OLP-0190-B010 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:68-84](../upstream/content/model-theory/basics/dlo.tex#L68) | [mr/content/model-theory/basics/dlo.tex:73-88](../mr/content/model-theory/basics/dlo.tex#L73) | not yet paginated |
 
 **Chosen rendering/action:** परिमेय संख्या / ऋणेतर परिमेय संख्या
 
@@ -6938,7 +6995,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T098 — infinite set / infinite</strong> (17 occurrences; routine priority)</summary>
+<summary><strong>T098 — infinite set / infinite</strong> (21 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6959,6 +7016,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T098-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
 | T098-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
 | T098-OLP-0177-B012 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L169) | [mr/content/first-order-logic/beyond/second-order-logic.tex:159-170](../mr/content/first-order-logic/beyond/second-order-logic.tex#L159) | not yet paginated |
+| T098-OLP-0186-B005 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:12-15](../upstream/content/model-theory/basics/overspill.tex#L12) | [mr/content/model-theory/basics/overspill.tex:12-15](../mr/content/model-theory/basics/overspill.tex#L12) | not yet paginated |
+| T098-OLP-0186-B006 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:17-26](../upstream/content/model-theory/basics/overspill.tex#L17) | [mr/content/model-theory/basics/overspill.tex:17-26](../mr/content/model-theory/basics/overspill.tex#L17) | not yet paginated |
+| T098-OLP-0186-B007 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:28-33](../upstream/content/model-theory/basics/overspill.tex#L28) | [mr/content/model-theory/basics/overspill.tex:28-33](../mr/content/model-theory/basics/overspill.tex#L28) | not yet paginated |
+| T098-OLP-0186-B008 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:35-40](../upstream/content/model-theory/basics/overspill.tex#L35) | [mr/content/model-theory/basics/overspill.tex:35-39](../mr/content/model-theory/basics/overspill.tex#L35) | not yet paginated |
 
 **Chosen rendering/action:** अनंत संच / अनंत
 
@@ -7053,7 +7114,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T102 — first-order logic</strong> (60 occurrences; medium priority)</summary>
+<summary><strong>T102 — first-order logic</strong> (63 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7117,6 +7178,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T102-OLP-0179-B006 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:13-17](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L13) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:13-16](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L13) | not yet paginated |
 | T102-OLP-0179-B015 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:81-95](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L81) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:71-83](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L71) | not yet paginated |
 | T102-OLP-0179-B026 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L186) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L168) | not yet paginated |
+| T102-OLP-0182-B005 | OLP-0182 ·  | [upstream/content/model-theory/model-theory.tex:9-17](../upstream/content/model-theory/model-theory.tex#L9) | [mr/content/model-theory/model-theory.tex:9-16](../mr/content/model-theory/model-theory.tex#L9) | not yet paginated |
+| T102-OLP-0186-B007 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:28-33](../upstream/content/model-theory/basics/overspill.tex#L28) | [mr/content/model-theory/basics/overspill.tex:28-33](../mr/content/model-theory/basics/overspill.tex#L28) | not yet paginated |
+| T102-OLP-0187-B005 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:12-24](../upstream/content/model-theory/basics/isomorphism.tex#L12) | [mr/content/model-theory/basics/isomorphism.tex:12-23](../mr/content/model-theory/basics/isomorphism.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** प्रथम-क्रम तर्कशास्त्र
 
@@ -7207,11 +7271,33 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T105 — isomorphic / isomorphism</strong> (1 occurrence; routine priority)</summary>
+<summary><strong>T105 — isomorphic / isomorphism</strong> (23 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T105-OLP-0053-B006 | OLP-0053 · 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | [upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:21-26](../upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex#L21) | [mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:19-24](../mr/content/sets-functions-relations/infinite/dedekinds-proof.tex#L19) | 71–72 |
+| T105-OLP-0187-B004 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:9-10](../upstream/content/model-theory/basics/isomorphism.tex#L9) | [mr/content/model-theory/basics/isomorphism.tex:9-10](../mr/content/model-theory/basics/isomorphism.tex#L9) | not yet paginated |
+| T105-OLP-0187-B005 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:12-24](../upstream/content/model-theory/basics/isomorphism.tex#L12) | [mr/content/model-theory/basics/isomorphism.tex:12-23](../mr/content/model-theory/basics/isomorphism.tex#L12) | not yet paginated |
+| T105-OLP-0187-B007 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:35-59](../upstream/content/model-theory/basics/isomorphism.tex#L35) | [mr/content/model-theory/basics/isomorphism.tex:34-58](../mr/content/model-theory/basics/isomorphism.tex#L34) | not yet paginated |
+| T105-OLP-0187-B008 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:61-65](../upstream/content/model-theory/basics/isomorphism.tex#L61) | [mr/content/model-theory/basics/isomorphism.tex:60-64](../mr/content/model-theory/basics/isomorphism.tex#L60) | not yet paginated |
+| T105-OLP-0187-B009 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:67-106](../upstream/content/model-theory/basics/isomorphism.tex#L67) | [mr/content/model-theory/basics/isomorphism.tex:66-106](../mr/content/model-theory/basics/isomorphism.tex#L66) | not yet paginated |
+| T105-OLP-0187-B011 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:112-117](../upstream/content/model-theory/basics/isomorphism.tex#L112) | [mr/content/model-theory/basics/isomorphism.tex:113-118](../mr/content/model-theory/basics/isomorphism.tex#L113) | not yet paginated |
+| T105-OLP-0187-B012 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:119-122](../upstream/content/model-theory/basics/isomorphism.tex#L119) | [mr/content/model-theory/basics/isomorphism.tex:120-123](../mr/content/model-theory/basics/isomorphism.tex#L120) | not yet paginated |
+| T105-OLP-0187-B013 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:124-128](../upstream/content/model-theory/basics/isomorphism.tex#L124) | [mr/content/model-theory/basics/isomorphism.tex:125-130](../mr/content/model-theory/basics/isomorphism.tex#L125) | not yet paginated |
+| T105-OLP-0188-B013 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:51-62](../upstream/content/model-theory/basics/theory-of-m.tex#L51) | [mr/content/model-theory/basics/theory-of-m.tex:55-66](../mr/content/model-theory/basics/theory-of-m.tex#L55) | not yet paginated |
+| T105-OLP-0189-B004 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:9-10](../upstream/content/model-theory/basics/partial-iso.tex#L9) | [mr/content/model-theory/basics/partial-iso.tex:9-10](../mr/content/model-theory/basics/partial-iso.tex#L9) | not yet paginated |
+| T105-OLP-0189-B005 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:12-31](../upstream/content/model-theory/basics/partial-iso.tex#L12) | [mr/content/model-theory/basics/partial-iso.tex:12-31](../mr/content/model-theory/basics/partial-iso.tex#L12) | not yet paginated |
+| T105-OLP-0189-B007 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:36-50](../upstream/content/model-theory/basics/partial-iso.tex#L36) | [mr/content/model-theory/basics/partial-iso.tex:36-50](../mr/content/model-theory/basics/partial-iso.tex#L36) | not yet paginated |
+| T105-OLP-0189-B008 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:52-56](../upstream/content/model-theory/basics/partial-iso.tex#L52) | [mr/content/model-theory/basics/partial-iso.tex:52-56](../mr/content/model-theory/basics/partial-iso.tex#L52) | not yet paginated |
+| T105-OLP-0189-B009 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:58-78](../upstream/content/model-theory/basics/partial-iso.tex#L58) | [mr/content/model-theory/basics/partial-iso.tex:58-78](../mr/content/model-theory/basics/partial-iso.tex#L58) | not yet paginated |
+| T105-OLP-0189-B010 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:80-83](../upstream/content/model-theory/basics/partial-iso.tex#L80) | [mr/content/model-theory/basics/partial-iso.tex:80-83](../mr/content/model-theory/basics/partial-iso.tex#L80) | not yet paginated |
+| T105-OLP-0189-B011 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:85-91](../upstream/content/model-theory/basics/partial-iso.tex#L85) | [mr/content/model-theory/basics/partial-iso.tex:85-91](../mr/content/model-theory/basics/partial-iso.tex#L85) | not yet paginated |
+| T105-OLP-0189-B013 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:102-107](../upstream/content/model-theory/basics/partial-iso.tex#L102) | [mr/content/model-theory/basics/partial-iso.tex:102-108](../mr/content/model-theory/basics/partial-iso.tex#L102) | not yet paginated |
+| T105-OLP-0190-B006 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:28-31](../upstream/content/model-theory/basics/dlo.tex#L28) | [mr/content/model-theory/basics/dlo.tex:28-31](../mr/content/model-theory/basics/dlo.tex#L28) | not yet paginated |
+| T105-OLP-0190-B007 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:33-40](../upstream/content/model-theory/basics/dlo.tex#L33) | [mr/content/model-theory/basics/dlo.tex:33-40](../mr/content/model-theory/basics/dlo.tex#L33) | not yet paginated |
+| T105-OLP-0190-B008 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:42-61](../upstream/content/model-theory/basics/dlo.tex#L42) | [mr/content/model-theory/basics/dlo.tex:42-66](../mr/content/model-theory/basics/dlo.tex#L42) | not yet paginated |
+| T105-OLP-0190-B009 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:63-66](../upstream/content/model-theory/basics/dlo.tex#L63) | [mr/content/model-theory/basics/dlo.tex:68-71](../mr/content/model-theory/basics/dlo.tex#L68) | not yet paginated |
+| T105-OLP-0190-B010 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:68-84](../upstream/content/model-theory/basics/dlo.tex#L68) | [mr/content/model-theory/basics/dlo.tex:73-88](../mr/content/model-theory/basics/dlo.tex#L73) | not yet paginated |
 
 **Chosen rendering/action:** समरूपी / समरूपता
 
@@ -7317,7 +7403,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T109 — proof system / proof</strong> (83 occurrences; medium priority)</summary>
+<summary><strong>T109 — proof system / proof</strong> (87 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7404,6 +7490,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T109-OLP-0179-B016 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L97) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L85) | not yet paginated |
 | T109-OLP-0179-B025 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L163) | not yet paginated |
 | T109-OLP-0181-B006 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:13-20](../upstream/content/first-order-logic/beyond/other-logics.tex#L13) | [mr/content/first-order-logic/beyond/other-logics.tex:13-19](../mr/content/first-order-logic/beyond/other-logics.tex#L13) | not yet paginated |
+| T109-OLP-0184-B009 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:55-57](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L55) | [mr/content/model-theory/basics/reducts-and-expansions.tex:54-56](../mr/content/model-theory/basics/reducts-and-expansions.tex#L54) | not yet paginated |
+| T109-OLP-0187-B011 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:112-117](../upstream/content/model-theory/basics/isomorphism.tex#L112) | [mr/content/model-theory/basics/isomorphism.tex:113-118](../mr/content/model-theory/basics/isomorphism.tex#L113) | not yet paginated |
+| T109-OLP-0189-B010 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:80-83](../upstream/content/model-theory/basics/partial-iso.tex#L80) | [mr/content/model-theory/basics/partial-iso.tex:80-83](../mr/content/model-theory/basics/partial-iso.tex#L80) | not yet paginated |
+| T109-OLP-0190-B009 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:63-66](../upstream/content/model-theory/basics/dlo.tex#L63) | [mr/content/model-theory/basics/dlo.tex:68-71](../mr/content/model-theory/basics/dlo.tex#L68) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धता-पद्धती / सिद्धता
 
@@ -7414,7 +7504,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (66 occurrences; medium priority)</summary>
+<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (67 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7484,6 +7574,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T110-OLP-0179-B026 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L186) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L168) | not yet paginated |
 | T110-OLP-0180-B010 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | not yet paginated |
 | T110-OLP-0181-B006 | OLP-0181 ·  | [upstream/content/first-order-logic/beyond/other-logics.tex:13-20](../upstream/content/first-order-logic/beyond/other-logics.tex#L13) | [mr/content/first-order-logic/beyond/other-logics.tex:13-19](../mr/content/first-order-logic/beyond/other-logics.tex#L13) | not yet paginated |
+| T110-OLP-0182-B005 | OLP-0182 ·  | [upstream/content/model-theory/model-theory.tex:9-17](../upstream/content/model-theory/model-theory.tex#L9) | [mr/content/model-theory/model-theory.tex:9-16](../mr/content/model-theory/model-theory.tex#L9) | not yet paginated |
 
 **Chosen rendering/action:** संपूर्णता / संपूर्णता प्रमेय / सत्यता-फलनात्मक संपूर्णता
 
@@ -7577,7 +7668,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T112 — predicate / term / quantifier</strong> (184 occurrences; routine priority)</summary>
+<summary><strong>T112 — predicate / term / quantifier</strong> (202 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7765,6 +7856,24 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T112-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
 | T112-OLP-0178-B009 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L95) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:95-100](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L95) | not yet paginated |
 | T112-OLP-0180-B007 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:31-39](../upstream/content/first-order-logic/beyond/modal-logics.tex#L31) | [mr/content/first-order-logic/beyond/modal-logics.tex:28-35](../mr/content/first-order-logic/beyond/modal-logics.tex#L28) | not yet paginated |
+| T112-OLP-0184-B006 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L24) | [mr/content/model-theory/basics/reducts-and-expansions.tex:22-38](../mr/content/model-theory/basics/reducts-and-expansions.tex#L22) | not yet paginated |
+| T112-OLP-0184-B010 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:59-65](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L59) | [mr/content/model-theory/basics/reducts-and-expansions.tex:58-65](../mr/content/model-theory/basics/reducts-and-expansions.tex#L58) | not yet paginated |
+| T112-OLP-0185-B006 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:19-37](../upstream/content/model-theory/basics/substructures.tex#L19) | [mr/content/model-theory/basics/substructures.tex:19-38](../mr/content/model-theory/basics/substructures.tex#L19) | not yet paginated |
+| T112-OLP-0185-B007 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:39-45](../upstream/content/model-theory/basics/substructures.tex#L39) | [mr/content/model-theory/basics/substructures.tex:40-46](../mr/content/model-theory/basics/substructures.tex#L40) | not yet paginated |
+| T112-OLP-0187-B007 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:35-59](../upstream/content/model-theory/basics/isomorphism.tex#L35) | [mr/content/model-theory/basics/isomorphism.tex:34-58](../mr/content/model-theory/basics/isomorphism.tex#L34) | not yet paginated |
+| T112-OLP-0187-B009 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:67-106](../upstream/content/model-theory/basics/isomorphism.tex#L67) | [mr/content/model-theory/basics/isomorphism.tex:66-106](../mr/content/model-theory/basics/isomorphism.tex#L66) | not yet paginated |
+| T112-OLP-0188-B013 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:51-62](../upstream/content/model-theory/basics/theory-of-m.tex#L51) | [mr/content/model-theory/basics/theory-of-m.tex:55-66](../mr/content/model-theory/basics/theory-of-m.tex#L55) | not yet paginated |
+| T112-OLP-0189-B005 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:12-31](../upstream/content/model-theory/basics/partial-iso.tex#L12) | [mr/content/model-theory/basics/partial-iso.tex:12-31](../mr/content/model-theory/basics/partial-iso.tex#L12) | not yet paginated |
+| T112-OLP-0189-B011 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:85-91](../upstream/content/model-theory/basics/partial-iso.tex#L85) | [mr/content/model-theory/basics/partial-iso.tex:85-91](../mr/content/model-theory/basics/partial-iso.tex#L85) | not yet paginated |
+| T112-OLP-0189-B012 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:93-100](../upstream/content/model-theory/basics/partial-iso.tex#L93) | [mr/content/model-theory/basics/partial-iso.tex:93-100](../mr/content/model-theory/basics/partial-iso.tex#L93) | not yet paginated |
+| T112-OLP-0189-B014 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:109-111](../upstream/content/model-theory/basics/partial-iso.tex#L109) | [mr/content/model-theory/basics/partial-iso.tex:110-112](../mr/content/model-theory/basics/partial-iso.tex#L110) | not yet paginated |
+| T112-OLP-0189-B015 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:113-120](../upstream/content/model-theory/basics/partial-iso.tex#L113) | [mr/content/model-theory/basics/partial-iso.tex:114-122](../mr/content/model-theory/basics/partial-iso.tex#L114) | not yet paginated |
+| T112-OLP-0189-B016 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:122-129](../upstream/content/model-theory/basics/partial-iso.tex#L122) | [mr/content/model-theory/basics/partial-iso.tex:124-130](../mr/content/model-theory/basics/partial-iso.tex#L124) | not yet paginated |
+| T112-OLP-0189-B022 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:176-183](../upstream/content/model-theory/basics/partial-iso.tex#L176) | [mr/content/model-theory/basics/partial-iso.tex:180-186](../mr/content/model-theory/basics/partial-iso.tex#L180) | not yet paginated |
+| T112-OLP-0189-B023 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:185-187](../upstream/content/model-theory/basics/partial-iso.tex#L185) | [mr/content/model-theory/basics/partial-iso.tex:188-190](../mr/content/model-theory/basics/partial-iso.tex#L188) | not yet paginated |
+| T112-OLP-0189-B024 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:189-197](../upstream/content/model-theory/basics/partial-iso.tex#L189) | [mr/content/model-theory/basics/partial-iso.tex:192-199](../mr/content/model-theory/basics/partial-iso.tex#L192) | not yet paginated |
+| T112-OLP-0189-B025 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:199-213](../upstream/content/model-theory/basics/partial-iso.tex#L199) | [mr/content/model-theory/basics/partial-iso.tex:201-215](../mr/content/model-theory/basics/partial-iso.tex#L201) | not yet paginated |
+| T112-OLP-0190-B005 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:12-26](../upstream/content/model-theory/basics/dlo.tex#L12) | [mr/content/model-theory/basics/dlo.tex:12-26](../mr/content/model-theory/basics/dlo.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** विधेय / पद / संख्यापक
 
@@ -8010,7 +8119,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T118 — theory / metatheory</strong> (35 occurrences; medium priority)</summary>
+<summary><strong>T118 — theory / metatheory</strong> (47 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8049,6 +8158,18 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T118-OLP-0174-B005 | OLP-0174 ·  | [upstream/content/first-order-logic/beyond/beyond.tex:10-17](../upstream/content/first-order-logic/beyond/beyond.tex#L10) | [mr/content/first-order-logic/beyond/beyond.tex:10-17](../mr/content/first-order-logic/beyond/beyond.tex#L10) | not yet paginated |
 | T118-OLP-0175-B006 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:13-21](../upstream/content/first-order-logic/beyond/introduction.tex#L13) | [mr/content/first-order-logic/beyond/introduction.tex:13-21](../mr/content/first-order-logic/beyond/introduction.tex#L13) | not yet paginated |
 | T118-OLP-0175-B007 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:23-44](../upstream/content/first-order-logic/beyond/introduction.tex#L23) | [mr/content/first-order-logic/beyond/introduction.tex:23-42](../mr/content/first-order-logic/beyond/introduction.tex#L23) | not yet paginated |
+| T118-OLP-0182-B004 | OLP-0182 ·  | [upstream/content/model-theory/model-theory.tex:7-7](../upstream/content/model-theory/model-theory.tex#L7) | [mr/content/model-theory/model-theory.tex:7-7](../mr/content/model-theory/model-theory.tex#L7) | not yet paginated |
+| T118-OLP-0182-B005 | OLP-0182 ·  | [upstream/content/model-theory/model-theory.tex:9-17](../upstream/content/model-theory/model-theory.tex#L9) | [mr/content/model-theory/model-theory.tex:9-16](../mr/content/model-theory/model-theory.tex#L9) | not yet paginated |
+| T118-OLP-0183-B004 | OLP-0183 ·  | [upstream/content/model-theory/basics/basics.tex:8-8](../upstream/content/model-theory/basics/basics.tex#L8) | [mr/content/model-theory/basics/basics.tex:8-8](../mr/content/model-theory/basics/basics.tex#L8) | not yet paginated |
+| T118-OLP-0188-B005 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:11-11](../upstream/content/model-theory/basics/theory-of-m.tex#L11) | [mr/content/model-theory/basics/theory-of-m.tex:11-11](../mr/content/model-theory/basics/theory-of-m.tex#L11) | not yet paginated |
+| T118-OLP-0188-B006 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:13-16](../upstream/content/model-theory/basics/theory-of-m.tex#L13) | [mr/content/model-theory/basics/theory-of-m.tex:13-18](../mr/content/model-theory/basics/theory-of-m.tex#L13) | not yet paginated |
+| T118-OLP-0188-B007 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:18-23](../upstream/content/model-theory/basics/theory-of-m.tex#L18) | [mr/content/model-theory/basics/theory-of-m.tex:20-25](../mr/content/model-theory/basics/theory-of-m.tex#L20) | not yet paginated |
+| T118-OLP-0188-B008 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:25-27](../upstream/content/model-theory/basics/theory-of-m.tex#L25) | [mr/content/model-theory/basics/theory-of-m.tex:27-29](../mr/content/model-theory/basics/theory-of-m.tex#L27) | not yet paginated |
+| T118-OLP-0188-B009 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:29-31](../upstream/content/model-theory/basics/theory-of-m.tex#L29) | [mr/content/model-theory/basics/theory-of-m.tex:31-33](../mr/content/model-theory/basics/theory-of-m.tex#L31) | not yet paginated |
+| T118-OLP-0188-B010 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:33-36](../upstream/content/model-theory/basics/theory-of-m.tex#L33) | [mr/content/model-theory/basics/theory-of-m.tex:35-39](../mr/content/model-theory/basics/theory-of-m.tex#L35) | not yet paginated |
+| T118-OLP-0188-B011 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:38-41](../upstream/content/model-theory/basics/theory-of-m.tex#L38) | [mr/content/model-theory/basics/theory-of-m.tex:41-44](../mr/content/model-theory/basics/theory-of-m.tex#L41) | not yet paginated |
+| T118-OLP-0188-B012 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:43-49](../upstream/content/model-theory/basics/theory-of-m.tex#L43) | [mr/content/model-theory/basics/theory-of-m.tex:46-53](../mr/content/model-theory/basics/theory-of-m.tex#L46) | not yet paginated |
+| T118-OLP-0188-B013 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:51-62](../upstream/content/model-theory/basics/theory-of-m.tex#L51) | [mr/content/model-theory/basics/theory-of-m.tex:55-66](../mr/content/model-theory/basics/theory-of-m.tex#L55) | not yet paginated |
 
 **Chosen rendering/action:** उपपत्ती / अधिउपपत्ती
 
@@ -8149,7 +8270,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T121 — satisfaction / satisfaction relation</strong> (244 occurrences; routine priority)</summary>
+<summary><strong>T121 — satisfaction / satisfaction relation</strong> (262 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8397,6 +8518,24 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T121-OLP-0179-B014 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:74-79](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L74) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:65-69](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L65) | not yet paginated |
 | T121-OLP-0179-B016 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L97) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L85) | not yet paginated |
 | T121-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
+| T121-OLP-0184-B007 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:41-49](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L41) | [mr/content/model-theory/basics/reducts-and-expansions.tex:40-48](../mr/content/model-theory/basics/reducts-and-expansions.tex#L40) | not yet paginated |
+| T121-OLP-0186-B006 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:17-26](../upstream/content/model-theory/basics/overspill.tex#L17) | [mr/content/model-theory/basics/overspill.tex:17-26](../mr/content/model-theory/basics/overspill.tex#L17) | not yet paginated |
+| T121-OLP-0187-B006 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:26-33](../upstream/content/model-theory/basics/isomorphism.tex#L26) | [mr/content/model-theory/basics/isomorphism.tex:25-32](../mr/content/model-theory/basics/isomorphism.tex#L25) | not yet paginated |
+| T121-OLP-0187-B009 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:67-106](../upstream/content/model-theory/basics/isomorphism.tex#L67) | [mr/content/model-theory/basics/isomorphism.tex:66-106](../mr/content/model-theory/basics/isomorphism.tex#L66) | not yet paginated |
+| T121-OLP-0187-B010 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:108-110](../upstream/content/model-theory/basics/isomorphism.tex#L108) | [mr/content/model-theory/basics/isomorphism.tex:108-111](../mr/content/model-theory/basics/isomorphism.tex#L108) | not yet paginated |
+| T121-OLP-0188-B006 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:13-16](../upstream/content/model-theory/basics/theory-of-m.tex#L13) | [mr/content/model-theory/basics/theory-of-m.tex:13-18](../mr/content/model-theory/basics/theory-of-m.tex#L13) | not yet paginated |
+| T121-OLP-0188-B007 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:18-23](../upstream/content/model-theory/basics/theory-of-m.tex#L18) | [mr/content/model-theory/basics/theory-of-m.tex:20-25](../mr/content/model-theory/basics/theory-of-m.tex#L20) | not yet paginated |
+| T121-OLP-0188-B010 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:33-36](../upstream/content/model-theory/basics/theory-of-m.tex#L33) | [mr/content/model-theory/basics/theory-of-m.tex:35-39](../mr/content/model-theory/basics/theory-of-m.tex#L35) | not yet paginated |
+| T121-OLP-0188-B012 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:43-49](../upstream/content/model-theory/basics/theory-of-m.tex#L43) | [mr/content/model-theory/basics/theory-of-m.tex:46-53](../mr/content/model-theory/basics/theory-of-m.tex#L46) | not yet paginated |
+| T121-OLP-0188-B013 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:51-62](../upstream/content/model-theory/basics/theory-of-m.tex#L51) | [mr/content/model-theory/basics/theory-of-m.tex:55-66](../mr/content/model-theory/basics/theory-of-m.tex#L55) | not yet paginated |
+| T121-OLP-0189-B012 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:93-100](../upstream/content/model-theory/basics/partial-iso.tex#L93) | [mr/content/model-theory/basics/partial-iso.tex:93-100](../mr/content/model-theory/basics/partial-iso.tex#L93) | not yet paginated |
+| T121-OLP-0189-B019 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:143-158](../upstream/content/model-theory/basics/partial-iso.tex#L143) | [mr/content/model-theory/basics/partial-iso.tex:144-162](../mr/content/model-theory/basics/partial-iso.tex#L144) | not yet paginated |
+| T121-OLP-0189-B021 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:167-174](../upstream/content/model-theory/basics/partial-iso.tex#L167) | [mr/content/model-theory/basics/partial-iso.tex:171-178](../mr/content/model-theory/basics/partial-iso.tex#L171) | not yet paginated |
+| T121-OLP-0189-B022 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:176-183](../upstream/content/model-theory/basics/partial-iso.tex#L176) | [mr/content/model-theory/basics/partial-iso.tex:180-186](../mr/content/model-theory/basics/partial-iso.tex#L180) | not yet paginated |
+| T121-OLP-0189-B023 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:185-187](../upstream/content/model-theory/basics/partial-iso.tex#L185) | [mr/content/model-theory/basics/partial-iso.tex:188-190](../mr/content/model-theory/basics/partial-iso.tex#L188) | not yet paginated |
+| T121-OLP-0189-B024 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:189-197](../upstream/content/model-theory/basics/partial-iso.tex#L189) | [mr/content/model-theory/basics/partial-iso.tex:192-199](../mr/content/model-theory/basics/partial-iso.tex#L192) | not yet paginated |
+| T121-OLP-0189-B025 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:199-213](../upstream/content/model-theory/basics/partial-iso.tex#L199) | [mr/content/model-theory/basics/partial-iso.tex:201-215](../mr/content/model-theory/basics/partial-iso.tex#L201) | not yet paginated |
+| T121-OLP-0189-B026 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:215-221](../upstream/content/model-theory/basics/partial-iso.tex#L215) | [mr/content/model-theory/basics/partial-iso.tex:217-223](../mr/content/model-theory/basics/partial-iso.tex#L217) | not yet paginated |
 
 **Chosen rendering/action:** पूर्ति / पूर्ति-संबंध
 
@@ -8650,7 +8789,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T126 — sentence / proposition / statement</strong> (162 occurrences; routine priority)</summary>
+<summary><strong>T126 — sentence / proposition / statement</strong> (177 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8816,6 +8955,21 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T126-OLP-0177-B010 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L100) | [mr/content/first-order-logic/beyond/second-order-logic.tex:93-119](../mr/content/first-order-logic/beyond/second-order-logic.tex#L93) | not yet paginated |
 | T126-OLP-0177-B012 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L169) | [mr/content/first-order-logic/beyond/second-order-logic.tex:159-170](../mr/content/first-order-logic/beyond/second-order-logic.tex#L159) | not yet paginated |
 | T126-OLP-0179-B025 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L163) | not yet paginated |
+| T126-OLP-0184-B007 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:41-49](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L41) | [mr/content/model-theory/basics/reducts-and-expansions.tex:40-48](../mr/content/model-theory/basics/reducts-and-expansions.tex#L40) | not yet paginated |
+| T126-OLP-0186-B005 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:12-15](../upstream/content/model-theory/basics/overspill.tex#L12) | [mr/content/model-theory/basics/overspill.tex:12-15](../mr/content/model-theory/basics/overspill.tex#L12) | not yet paginated |
+| T126-OLP-0186-B007 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:28-33](../upstream/content/model-theory/basics/overspill.tex#L28) | [mr/content/model-theory/basics/overspill.tex:28-33](../mr/content/model-theory/basics/overspill.tex#L28) | not yet paginated |
+| T126-OLP-0186-B008 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:35-40](../upstream/content/model-theory/basics/overspill.tex#L35) | [mr/content/model-theory/basics/overspill.tex:35-39](../mr/content/model-theory/basics/overspill.tex#L35) | not yet paginated |
+| T126-OLP-0187-B005 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:12-24](../upstream/content/model-theory/basics/isomorphism.tex#L12) | [mr/content/model-theory/basics/isomorphism.tex:12-23](../mr/content/model-theory/basics/isomorphism.tex#L12) | not yet paginated |
+| T126-OLP-0187-B006 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:26-33](../upstream/content/model-theory/basics/isomorphism.tex#L26) | [mr/content/model-theory/basics/isomorphism.tex:25-32](../mr/content/model-theory/basics/isomorphism.tex#L25) | not yet paginated |
+| T126-OLP-0187-B010 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:108-110](../upstream/content/model-theory/basics/isomorphism.tex#L108) | [mr/content/model-theory/basics/isomorphism.tex:108-111](../mr/content/model-theory/basics/isomorphism.tex#L108) | not yet paginated |
+| T126-OLP-0188-B006 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:13-16](../upstream/content/model-theory/basics/theory-of-m.tex#L13) | [mr/content/model-theory/basics/theory-of-m.tex:13-18](../mr/content/model-theory/basics/theory-of-m.tex#L13) | not yet paginated |
+| T126-OLP-0188-B007 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:18-23](../upstream/content/model-theory/basics/theory-of-m.tex#L18) | [mr/content/model-theory/basics/theory-of-m.tex:20-25](../mr/content/model-theory/basics/theory-of-m.tex#L20) | not yet paginated |
+| T126-OLP-0188-B008 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:25-27](../upstream/content/model-theory/basics/theory-of-m.tex#L25) | [mr/content/model-theory/basics/theory-of-m.tex:27-29](../mr/content/model-theory/basics/theory-of-m.tex#L27) | not yet paginated |
+| T126-OLP-0188-B010 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:33-36](../upstream/content/model-theory/basics/theory-of-m.tex#L33) | [mr/content/model-theory/basics/theory-of-m.tex:35-39](../mr/content/model-theory/basics/theory-of-m.tex#L35) | not yet paginated |
+| T126-OLP-0188-B012 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:43-49](../upstream/content/model-theory/basics/theory-of-m.tex#L43) | [mr/content/model-theory/basics/theory-of-m.tex:46-53](../mr/content/model-theory/basics/theory-of-m.tex#L46) | not yet paginated |
+| T126-OLP-0189-B015 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:113-120](../upstream/content/model-theory/basics/partial-iso.tex#L113) | [mr/content/model-theory/basics/partial-iso.tex:114-122](../mr/content/model-theory/basics/partial-iso.tex#L114) | not yet paginated |
+| T126-OLP-0189-B016 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:122-129](../upstream/content/model-theory/basics/partial-iso.tex#L122) | [mr/content/model-theory/basics/partial-iso.tex:124-130](../mr/content/model-theory/basics/partial-iso.tex#L124) | not yet paginated |
+| T126-OLP-0189-B026 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:215-221](../upstream/content/model-theory/basics/partial-iso.tex#L215) | [mr/content/model-theory/basics/partial-iso.tex:217-223](../mr/content/model-theory/basics/partial-iso.tex#L217) | not yet paginated |
 
 **Chosen rendering/action:** वाक्य / विधान
 
@@ -9229,7 +9383,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T131 — atomic formula</strong> (65 occurrences; medium priority)</summary>
+<summary><strong>T131 — atomic formula</strong> (67 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9298,6 +9452,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T131-OLP-0177-B006 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/second-order-logic.tex:13-28](../mr/content/first-order-logic/beyond/second-order-logic.tex#L13) | not yet paginated |
 | T131-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
 | T131-OLP-0179-B019 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:135-149](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L135) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:120-133](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L120) | not yet paginated |
+| T131-OLP-0189-B019 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:143-158](../upstream/content/model-theory/basics/partial-iso.tex#L143) | [mr/content/model-theory/basics/partial-iso.tex:144-162](../mr/content/model-theory/basics/partial-iso.tex#L144) | not yet paginated |
+| T131-OLP-0189-B023 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:185-187](../upstream/content/model-theory/basics/partial-iso.tex#L185) | [mr/content/model-theory/basics/partial-iso.tex:188-190](../mr/content/model-theory/basics/partial-iso.tex#L188) | not yet paginated |
 
 **Chosen rendering/action:** आण्विक सूत्र
 
@@ -9357,7 +9513,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T134 — string / concatenation / substring</strong> (17 occurrences; medium priority)</summary>
+<summary><strong>T134 — string / concatenation / substring</strong> (18 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9378,6 +9534,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T134-OLP-0153-B039 | OLP-0153 ·  | [upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:192-200](../upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L192) | [mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:191-199](../mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L191) | not yet paginated |
 | T134-OLP-0156-B007 | OLP-0156 ·  | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:25-31](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L25) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:24-30](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L24) | not yet paginated |
 | T134-OLP-0156-B008 | OLP-0156 ·  | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:33-38](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L33) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:32-37](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L32) | not yet paginated |
+| T134-OLP-0189-B018 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:135-141](../upstream/content/model-theory/basics/partial-iso.tex#L135) | [mr/content/model-theory/basics/partial-iso.tex:136-142](../mr/content/model-theory/basics/partial-iso.tex#L136) | not yet paginated |
 
 **Chosen rendering/action:** चिन्हमाला / जोडणी / उपचिन्हमाला
 
@@ -9711,7 +9868,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T144 — finite sequence / proper initial subsequence</strong> (34 occurrences; medium priority)</summary>
+<summary><strong>T144 — finite sequence / proper initial subsequence</strong> (38 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9749,6 +9906,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T144-OLP-0156-B009 | OLP-0156 ·  | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:40-49](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L40) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:39-49](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L39) | not yet paginated |
 | T144-OLP-0156-B016 | OLP-0156 ·  | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:155-160](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L155) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:154-159](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L154) | not yet paginated |
 | T144-OLP-0156-B021 | OLP-0156 ·  | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L182) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L181) | not yet paginated |
+| T144-OLP-0189-B009 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:58-78](../upstream/content/model-theory/basics/partial-iso.tex#L58) | [mr/content/model-theory/basics/partial-iso.tex:58-78](../mr/content/model-theory/basics/partial-iso.tex#L58) | not yet paginated |
+| T144-OLP-0189-B018 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:135-141](../upstream/content/model-theory/basics/partial-iso.tex#L135) | [mr/content/model-theory/basics/partial-iso.tex:136-142](../mr/content/model-theory/basics/partial-iso.tex#L136) | not yet paginated |
+| T144-OLP-0189-B019 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:143-158](../upstream/content/model-theory/basics/partial-iso.tex#L143) | [mr/content/model-theory/basics/partial-iso.tex:144-162](../mr/content/model-theory/basics/partial-iso.tex#L144) | not yet paginated |
+| T144-OLP-0189-B020 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:161-165](../upstream/content/model-theory/basics/partial-iso.tex#L161) | [mr/content/model-theory/basics/partial-iso.tex:165-169](../mr/content/model-theory/basics/partial-iso.tex#L165) | not yet paginated |
 
 **Chosen rendering/action:** सांत क्रमिका / उचित आरंभीची उपक्रमिका
 
@@ -10351,7 +10512,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (190 occurrences; routine priority)</summary>
+<summary><strong>T156 — consistency / inconsistency / consistent / inconsistent</strong> (191 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -10545,6 +10706,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T156-OLP-0168-B010 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:49-98](../upstream/content/first-order-logic/models-theories/introduction.tex#L49) | [mr/content/first-order-logic/models-theories/introduction.tex:50-97](../mr/content/first-order-logic/models-theories/introduction.tex#L50) | not yet paginated |
 | T156-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
 | T156-OLP-0180-B009 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:50-65](../upstream/content/first-order-logic/beyond/modal-logics.tex#L50) | [mr/content/first-order-logic/beyond/modal-logics.tex:45-59](../mr/content/first-order-logic/beyond/modal-logics.tex#L45) | not yet paginated |
+| T156-OLP-0188-B013 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:51-62](../upstream/content/model-theory/basics/theory-of-m.tex#L51) | [mr/content/model-theory/basics/theory-of-m.tex:55-66](../mr/content/model-theory/basics/theory-of-m.tex#L55) | not yet paginated |
 
 **Chosen rendering/action:** सुसंगतता / विसंगतता / सुसंगत / विसंगत
 
@@ -11830,7 +11992,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T181 — compactness (proof-theoretic property)</strong> (29 occurrences; medium priority)</summary>
+<summary><strong>T181 — compactness (proof-theoretic property)</strong> (31 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -11863,6 +12025,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T181-OLP-0148-B009 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L50) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L51) | not yet paginated |
 | T181-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
 | T181-OLP-0177-B014 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L204) | [mr/content/first-order-logic/beyond/second-order-logic.tex:192-196](../mr/content/first-order-logic/beyond/second-order-logic.tex#L192) | not yet paginated |
+| T181-OLP-0182-B005 | OLP-0182 ·  | [upstream/content/model-theory/model-theory.tex:9-17](../upstream/content/model-theory/model-theory.tex#L9) | [mr/content/model-theory/model-theory.tex:9-16](../mr/content/model-theory/model-theory.tex#L9) | not yet paginated |
+| T181-OLP-0186-B006 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:17-26](../upstream/content/model-theory/basics/overspill.tex#L17) | [mr/content/model-theory/basics/overspill.tex:17-26](../mr/content/model-theory/basics/overspill.tex#L17) | not yet paginated |
 
 **Chosen rendering/action:** संहतता
 
@@ -12414,7 +12578,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T192 — complete set of sentences</strong> (51 occurrences; medium priority)</summary>
+<summary><strong>T192 — complete set of sentences</strong> (54 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12469,6 +12633,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T192-OLP-0136-B015 | OLP-0136 ·  | [upstream/content/first-order-logic/completeness/compactness-direct.tex:73-83](../upstream/content/first-order-logic/completeness/compactness-direct.tex#L73) | [mr/content/first-order-logic/completeness/compactness-direct.tex:73-83](../mr/content/first-order-logic/completeness/compactness-direct.tex#L73) | not yet paginated |
 | T192-OLP-0136-B017 | OLP-0136 ·  | [upstream/content/first-order-logic/completeness/compactness-direct.tex:91-95](../upstream/content/first-order-logic/completeness/compactness-direct.tex#L91) | [mr/content/first-order-logic/completeness/compactness-direct.tex:91-95](../mr/content/first-order-logic/completeness/compactness-direct.tex#L91) | not yet paginated |
 | T192-OLP-0136-B022 | OLP-0136 ·  | [upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143](../upstream/content/first-order-logic/completeness/compactness-direct.tex#L128) | [mr/content/first-order-logic/completeness/compactness-direct.tex:128-145](../mr/content/first-order-logic/completeness/compactness-direct.tex#L128) | not yet paginated |
+| T192-OLP-0188-B009 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:29-31](../upstream/content/model-theory/basics/theory-of-m.tex#L29) | [mr/content/model-theory/basics/theory-of-m.tex:31-33](../mr/content/model-theory/basics/theory-of-m.tex#L31) | not yet paginated |
+| T192-OLP-0188-B010 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:33-36](../upstream/content/model-theory/basics/theory-of-m.tex#L33) | [mr/content/model-theory/basics/theory-of-m.tex:35-39](../mr/content/model-theory/basics/theory-of-m.tex#L35) | not yet paginated |
+| T192-OLP-0188-B012 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:43-49](../upstream/content/model-theory/basics/theory-of-m.tex#L43) | [mr/content/model-theory/basics/theory-of-m.tex:46-53](../mr/content/model-theory/basics/theory-of-m.tex#L46) | not yet paginated |
 
 **Chosen rendering/action:** संपूर्ण वाक्यसंच
 
@@ -12593,7 +12760,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T198 — corollary</strong> (4 occurrences; routine priority)</summary>
+<summary><strong>T198 — corollary</strong> (5 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12601,6 +12768,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T198-OLP-0134-B010 | OLP-0134 ·  | [upstream/content/first-order-logic/completeness/completeness-thm.tex:57-64](../upstream/content/first-order-logic/completeness/completeness-thm.tex#L57) | [mr/content/first-order-logic/completeness/completeness-thm.tex:57-64](../mr/content/first-order-logic/completeness/completeness-thm.tex#L57) | not yet paginated |
 | T198-OLP-0134-B012 | OLP-0134 ·  | [upstream/content/first-order-logic/completeness/completeness-thm.tex:83-89](../upstream/content/first-order-logic/completeness/completeness-thm.tex#L83) | [mr/content/first-order-logic/completeness/completeness-thm.tex:83-89](../mr/content/first-order-logic/completeness/completeness-thm.tex#L83) | not yet paginated |
 | T198-OLP-0134-B013 | OLP-0134 ·  | [upstream/content/first-order-logic/completeness/completeness-thm.tex:91-97](../upstream/content/first-order-logic/completeness/completeness-thm.tex#L91) | [mr/content/first-order-logic/completeness/completeness-thm.tex:91-97](../mr/content/first-order-logic/completeness/completeness-thm.tex#L91) | not yet paginated |
+| T198-OLP-0189-B026 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:215-221](../upstream/content/model-theory/basics/partial-iso.tex#L215) | [mr/content/model-theory/basics/partial-iso.tex:217-223](../mr/content/model-theory/basics/partial-iso.tex#L217) | not yet paginated |
 
 **Chosen rendering/action:** अनुप्रमेय
 
@@ -12611,7 +12779,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T199 — finitely satisfiable / finite satisfiability</strong> (19 occurrences; medium priority)</summary>
+<summary><strong>T199 — finitely satisfiable / finite satisfiability</strong> (20 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12634,6 +12802,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T199-OLP-0136-B020 | OLP-0136 ·  | [upstream/content/first-order-logic/completeness/compactness-direct.tex:115-118](../upstream/content/first-order-logic/completeness/compactness-direct.tex#L115) | [mr/content/first-order-logic/completeness/compactness-direct.tex:115-118](../mr/content/first-order-logic/completeness/compactness-direct.tex#L115) | not yet paginated |
 | T199-OLP-0136-B021 | OLP-0136 ·  | [upstream/content/first-order-logic/completeness/compactness-direct.tex:120-126](../upstream/content/first-order-logic/completeness/compactness-direct.tex#L120) | [mr/content/first-order-logic/completeness/compactness-direct.tex:120-126](../mr/content/first-order-logic/completeness/compactness-direct.tex#L120) | not yet paginated |
 | T199-OLP-0136-B022 | OLP-0136 ·  | [upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143](../upstream/content/first-order-logic/completeness/compactness-direct.tex#L128) | [mr/content/first-order-logic/completeness/compactness-direct.tex:128-145](../mr/content/first-order-logic/completeness/compactness-direct.tex#L128) | not yet paginated |
+| T199-OLP-0186-B006 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:17-26](../upstream/content/model-theory/basics/overspill.tex#L17) | [mr/content/model-theory/basics/overspill.tex:17-26](../mr/content/model-theory/basics/overspill.tex#L17) | not yet paginated |
 
 **Chosen rendering/action:** सांततः पूर्ततायोग्य / सांततः पूर्ततायोग्यता
 
@@ -12659,7 +12828,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T201 — Löwenheim–Skolem Theorem / Skolem's Paradox</strong> (9 occurrences; high priority)</summary>
+<summary><strong>T201 — Löwenheim–Skolem Theorem / Skolem's Paradox</strong> (11 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12672,6 +12841,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T201-OLP-0148-B009 | OLP-0148 ·  | [upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55](../upstream/content/first-order-logic/introduction/soundness-completeness.tex#L50) | [mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56](../mr/content/first-order-logic/introduction/soundness-completeness.tex#L51) | not yet paginated |
 | T201-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
 | T201-OLP-0177-B014 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L204) | [mr/content/first-order-logic/beyond/second-order-logic.tex:192-196](../mr/content/first-order-logic/beyond/second-order-logic.tex#L192) | not yet paginated |
+| T201-OLP-0187-B005 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:12-24](../upstream/content/model-theory/basics/isomorphism.tex#L12) | [mr/content/model-theory/basics/isomorphism.tex:12-23](../mr/content/model-theory/basics/isomorphism.tex#L12) | not yet paginated |
+| T201-OLP-0188-B013 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:51-62](../upstream/content/model-theory/basics/theory-of-m.tex#L51) | [mr/content/model-theory/basics/theory-of-m.tex:55-66](../mr/content/model-theory/basics/theory-of-m.tex#L55) | not yet paginated |
 
 **Chosen rendering/action:** लोव्हेनहाइम--स्कोलेम प्रमेय / स्कोलेमची विरोधापत्ती
 
@@ -12682,7 +12853,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T202 — formal language / formal derivation</strong> (12 occurrences; routine priority)</summary>
+<summary><strong>T202 — formal language / formal derivation</strong> (20 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12698,6 +12869,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T202-OLP-0152-B006 | OLP-0152 ·  | [upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15](../upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex#L13) | [mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15](../mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex#L13) | not yet paginated |
 | T202-OLP-0175-B006 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:13-21](../upstream/content/first-order-logic/beyond/introduction.tex#L13) | [mr/content/first-order-logic/beyond/introduction.tex:13-21](../mr/content/first-order-logic/beyond/introduction.tex#L13) | not yet paginated |
 | T202-OLP-0175-B008 | OLP-0175 ·  | [upstream/content/first-order-logic/beyond/introduction.tex:46-48](../upstream/content/first-order-logic/beyond/introduction.tex#L46) | [mr/content/first-order-logic/beyond/introduction.tex:44-46](../mr/content/first-order-logic/beyond/introduction.tex#L44) | not yet paginated |
+| T202-OLP-0184-B005 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:12-22](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L12) | [mr/content/model-theory/basics/reducts-and-expansions.tex:12-20](../mr/content/model-theory/basics/reducts-and-expansions.tex#L12) | not yet paginated |
+| T202-OLP-0186-B006 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:17-26](../upstream/content/model-theory/basics/overspill.tex#L17) | [mr/content/model-theory/basics/overspill.tex:17-26](../mr/content/model-theory/basics/overspill.tex#L17) | not yet paginated |
+| T202-OLP-0187-B006 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:26-33](../upstream/content/model-theory/basics/isomorphism.tex#L26) | [mr/content/model-theory/basics/isomorphism.tex:25-32](../mr/content/model-theory/basics/isomorphism.tex#L25) | not yet paginated |
+| T202-OLP-0188-B013 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:51-62](../upstream/content/model-theory/basics/theory-of-m.tex#L51) | [mr/content/model-theory/basics/theory-of-m.tex:55-66](../mr/content/model-theory/basics/theory-of-m.tex#L55) | not yet paginated |
+| T202-OLP-0189-B011 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:85-91](../upstream/content/model-theory/basics/partial-iso.tex#L85) | [mr/content/model-theory/basics/partial-iso.tex:85-91](../mr/content/model-theory/basics/partial-iso.tex#L85) | not yet paginated |
+| T202-OLP-0189-B016 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:122-129](../upstream/content/model-theory/basics/partial-iso.tex#L122) | [mr/content/model-theory/basics/partial-iso.tex:124-130](../mr/content/model-theory/basics/partial-iso.tex#L124) | not yet paginated |
+| T202-OLP-0189-B021 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:167-174](../upstream/content/model-theory/basics/partial-iso.tex#L167) | [mr/content/model-theory/basics/partial-iso.tex:171-178](../mr/content/model-theory/basics/partial-iso.tex#L171) | not yet paginated |
+| T202-OLP-0190-B005 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:12-26](../upstream/content/model-theory/basics/dlo.tex#L12) | [mr/content/model-theory/basics/dlo.tex:12-26](../mr/content/model-theory/basics/dlo.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** आकारिक भाषा / आकारिक निष्पत्ती
 
@@ -12708,7 +12887,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T203 — structural induction</strong> (14 occurrences; medium priority)</summary>
+<summary><strong>T203 — structural induction</strong> (18 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12726,6 +12905,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T203-OLP-0153-B027 | OLP-0153 ·  | [upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:146-148](../upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L146) | [mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:144-146](../mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L144) | not yet paginated |
 | T203-OLP-0153-B028 | OLP-0153 ·  | [upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:150-153](../upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L150) | [mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:148-151](../mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex#L148) | not yet paginated |
 | T203-OLP-0160-B007 | OLP-0160 ·  | [upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45](../upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L35) | [mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46](../mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L35) | not yet paginated |
+| T203-OLP-0187-B009 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:67-106](../upstream/content/model-theory/basics/isomorphism.tex#L67) | [mr/content/model-theory/basics/isomorphism.tex:66-106](../mr/content/model-theory/basics/isomorphism.tex#L66) | not yet paginated |
+| T203-OLP-0189-B012 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:93-100](../upstream/content/model-theory/basics/partial-iso.tex#L93) | [mr/content/model-theory/basics/partial-iso.tex:93-100](../mr/content/model-theory/basics/partial-iso.tex#L93) | not yet paginated |
+| T203-OLP-0189-B022 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:176-183](../upstream/content/model-theory/basics/partial-iso.tex#L176) | [mr/content/model-theory/basics/partial-iso.tex:180-186](../mr/content/model-theory/basics/partial-iso.tex#L180) | not yet paginated |
+| T203-OLP-0189-B024 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:189-197](../upstream/content/model-theory/basics/partial-iso.tex#L189) | [mr/content/model-theory/basics/partial-iso.tex:192-199](../mr/content/model-theory/basics/partial-iso.tex#L192) | not yet paginated |
 
 **Chosen rendering/action:** संरचनात्मक विगमन
 
@@ -12736,7 +12919,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T204 — variable assignment</strong> (87 occurrences; routine priority)</summary>
+<summary><strong>T204 — variable assignment</strong> (92 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12827,6 +13010,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T204-OLP-0166-B022 | OLP-0166 ·  | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L133) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L143) | not yet paginated |
 | T204-OLP-0171-B006 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:14-33](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L14) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:14-33](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L14) | not yet paginated |
 | T204-OLP-0171-B008 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:42-53](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L42) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:42-53](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L42) | not yet paginated |
+| T204-OLP-0187-B009 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:67-106](../upstream/content/model-theory/basics/isomorphism.tex#L67) | [mr/content/model-theory/basics/isomorphism.tex:66-106](../mr/content/model-theory/basics/isomorphism.tex#L66) | not yet paginated |
+| T204-OLP-0187-B010 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:108-110](../upstream/content/model-theory/basics/isomorphism.tex#L108) | [mr/content/model-theory/basics/isomorphism.tex:108-111](../mr/content/model-theory/basics/isomorphism.tex#L108) | not yet paginated |
+| T204-OLP-0189-B012 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:93-100](../upstream/content/model-theory/basics/partial-iso.tex#L93) | [mr/content/model-theory/basics/partial-iso.tex:93-100](../mr/content/model-theory/basics/partial-iso.tex#L93) | not yet paginated |
+| T204-OLP-0189-B019 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:143-158](../upstream/content/model-theory/basics/partial-iso.tex#L143) | [mr/content/model-theory/basics/partial-iso.tex:144-162](../mr/content/model-theory/basics/partial-iso.tex#L144) | not yet paginated |
+| T204-OLP-0189-B021 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:167-174](../upstream/content/model-theory/basics/partial-iso.tex#L167) | [mr/content/model-theory/basics/partial-iso.tex:171-178](../mr/content/model-theory/basics/partial-iso.tex#L171) | not yet paginated |
 
 **Chosen rendering/action:** चर-मूल्यांकन
 
@@ -12837,7 +13025,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T205 — variable / constant / function (as language symbols)</strong> (38 occurrences; medium priority)</summary>
+<summary><strong>T205 — variable / constant / function (as language symbols)</strong> (46 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12879,6 +13067,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T205-OLP-0178-B007 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | not yet paginated |
 | T205-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
 | T205-OLP-0179-B009 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:32-35](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L32) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:28-30](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L28) | not yet paginated |
+| T205-OLP-0184-B006 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L24) | [mr/content/model-theory/basics/reducts-and-expansions.tex:22-38](../mr/content/model-theory/basics/reducts-and-expansions.tex#L22) | not yet paginated |
+| T205-OLP-0185-B006 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:19-37](../upstream/content/model-theory/basics/substructures.tex#L19) | [mr/content/model-theory/basics/substructures.tex:19-38](../mr/content/model-theory/basics/substructures.tex#L19) | not yet paginated |
+| T205-OLP-0185-B007 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:39-45](../upstream/content/model-theory/basics/substructures.tex#L39) | [mr/content/model-theory/basics/substructures.tex:40-46](../mr/content/model-theory/basics/substructures.tex#L40) | not yet paginated |
+| T205-OLP-0186-B006 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:17-26](../upstream/content/model-theory/basics/overspill.tex#L17) | [mr/content/model-theory/basics/overspill.tex:17-26](../mr/content/model-theory/basics/overspill.tex#L17) | not yet paginated |
+| T205-OLP-0187-B007 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:35-59](../upstream/content/model-theory/basics/isomorphism.tex#L35) | [mr/content/model-theory/basics/isomorphism.tex:34-58](../mr/content/model-theory/basics/isomorphism.tex#L34) | not yet paginated |
+| T205-OLP-0187-B009 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:67-106](../upstream/content/model-theory/basics/isomorphism.tex#L67) | [mr/content/model-theory/basics/isomorphism.tex:66-106](../mr/content/model-theory/basics/isomorphism.tex#L66) | not yet paginated |
+| T205-OLP-0189-B005 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:12-31](../upstream/content/model-theory/basics/partial-iso.tex#L12) | [mr/content/model-theory/basics/partial-iso.tex:12-31](../mr/content/model-theory/basics/partial-iso.tex#L12) | not yet paginated |
+| T205-OLP-0189-B016 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:122-129](../upstream/content/model-theory/basics/partial-iso.tex#L122) | [mr/content/model-theory/basics/partial-iso.tex:124-130](../mr/content/model-theory/basics/partial-iso.tex#L124) | not yet paginated |
 
 **Chosen rendering/action:** चर / स्थिर / फलन
 
@@ -12911,7 +13107,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T207 — n-place / arity</strong> (16 occurrences; routine priority)</summary>
+<summary><strong>T207 — n-place / arity</strong> (19 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -12931,6 +13127,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T207-OLP-0162-B009 | OLP-0162 ·  | [upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66](../upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex#L36) | [mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68](../mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex#L37) | not yet paginated |
 | T207-OLP-0177-B006 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/second-order-logic.tex:13-28](../mr/content/first-order-logic/beyond/second-order-logic.tex#L13) | not yet paginated |
 | T207-OLP-0177-B016 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:226-234](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L226) | [mr/content/first-order-logic/beyond/second-order-logic.tex:213-221](../mr/content/first-order-logic/beyond/second-order-logic.tex#L213) | not yet paginated |
+| T207-OLP-0187-B007 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:35-59](../upstream/content/model-theory/basics/isomorphism.tex#L35) | [mr/content/model-theory/basics/isomorphism.tex:34-58](../mr/content/model-theory/basics/isomorphism.tex#L34) | not yet paginated |
+| T207-OLP-0189-B005 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:12-31](../upstream/content/model-theory/basics/partial-iso.tex#L12) | [mr/content/model-theory/basics/partial-iso.tex:12-31](../mr/content/model-theory/basics/partial-iso.tex#L12) | not yet paginated |
+| T207-OLP-0189-B016 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:122-129](../upstream/content/model-theory/basics/partial-iso.tex#L122) | [mr/content/model-theory/basics/partial-iso.tex:124-130](../mr/content/model-theory/basics/partial-iso.tex#L124) | not yet paginated |
 
 **Chosen rendering/action:** n-स्थानी / स्थानसंख्या
 
@@ -12941,7 +13140,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T208 — universal quantifier / existential quantifier</strong> (73 occurrences; routine priority)</summary>
+<summary><strong>T208 — universal quantifier / existential quantifier</strong> (74 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13018,6 +13217,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T208-OLP-0177-B006 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L13) | [mr/content/first-order-logic/beyond/second-order-logic.tex:13-28](../mr/content/first-order-logic/beyond/second-order-logic.tex#L13) | not yet paginated |
 | T208-OLP-0177-B007 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L30) | [mr/content/first-order-logic/beyond/second-order-logic.tex:30-62](../mr/content/first-order-logic/beyond/second-order-logic.tex#L30) | not yet paginated |
 | T208-OLP-0178-B008 | OLP-0178 ·  | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | not yet paginated |
+| T208-OLP-0189-B014 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:109-111](../upstream/content/model-theory/basics/partial-iso.tex#L109) | [mr/content/model-theory/basics/partial-iso.tex:110-112](../mr/content/model-theory/basics/partial-iso.tex#L110) | not yet paginated |
 
 **Chosen rendering/action:** वैश्विक संख्यापक / अस्तित्ववाची संख्यापक
 
@@ -13255,7 +13455,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T218 — structure / interpretation (model theory)</strong> (129 occurrences; medium priority)</summary>
+<summary><strong>T218 — structure / interpretation (model theory)</strong> (176 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13388,6 +13588,53 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T218-OLP-0179-B027 | OLP-0179 ·  | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L200) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | not yet paginated |
 | T218-OLP-0180-B008 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:41-48](../upstream/content/first-order-logic/beyond/modal-logics.tex#L41) | [mr/content/first-order-logic/beyond/modal-logics.tex:37-43](../mr/content/first-order-logic/beyond/modal-logics.tex#L37) | not yet paginated |
 | T218-OLP-0180-B010 | OLP-0180 ·  | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | not yet paginated |
+| T218-OLP-0184-B004 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:9-10](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L9) | [mr/content/model-theory/basics/reducts-and-expansions.tex:9-10](../mr/content/model-theory/basics/reducts-and-expansions.tex#L9) | not yet paginated |
+| T218-OLP-0184-B005 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:12-22](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L12) | [mr/content/model-theory/basics/reducts-and-expansions.tex:12-20](../mr/content/model-theory/basics/reducts-and-expansions.tex#L12) | not yet paginated |
+| T218-OLP-0184-B006 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L24) | [mr/content/model-theory/basics/reducts-and-expansions.tex:22-38](../mr/content/model-theory/basics/reducts-and-expansions.tex#L22) | not yet paginated |
+| T218-OLP-0184-B007 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:41-49](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L41) | [mr/content/model-theory/basics/reducts-and-expansions.tex:40-48](../mr/content/model-theory/basics/reducts-and-expansions.tex#L40) | not yet paginated |
+| T218-OLP-0184-B010 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:59-65](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L59) | [mr/content/model-theory/basics/reducts-and-expansions.tex:58-65](../mr/content/model-theory/basics/reducts-and-expansions.tex#L58) | not yet paginated |
+| T218-OLP-0185-B004 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:9-10](../upstream/content/model-theory/basics/substructures.tex#L9) | [mr/content/model-theory/basics/substructures.tex:9-10](../mr/content/model-theory/basics/substructures.tex#L9) | not yet paginated |
+| T218-OLP-0185-B005 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:12-17](../upstream/content/model-theory/basics/substructures.tex#L12) | [mr/content/model-theory/basics/substructures.tex:12-17](../mr/content/model-theory/basics/substructures.tex#L12) | not yet paginated |
+| T218-OLP-0185-B006 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:19-37](../upstream/content/model-theory/basics/substructures.tex#L19) | [mr/content/model-theory/basics/substructures.tex:19-38](../mr/content/model-theory/basics/substructures.tex#L19) | not yet paginated |
+| T218-OLP-0185-B007 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:39-45](../upstream/content/model-theory/basics/substructures.tex#L39) | [mr/content/model-theory/basics/substructures.tex:40-46](../mr/content/model-theory/basics/substructures.tex#L40) | not yet paginated |
+| T218-OLP-0186-B007 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:28-33](../upstream/content/model-theory/basics/overspill.tex#L28) | [mr/content/model-theory/basics/overspill.tex:28-33](../mr/content/model-theory/basics/overspill.tex#L28) | not yet paginated |
+| T218-OLP-0186-B008 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:35-40](../upstream/content/model-theory/basics/overspill.tex#L35) | [mr/content/model-theory/basics/overspill.tex:35-39](../mr/content/model-theory/basics/overspill.tex#L35) | not yet paginated |
+| T218-OLP-0187-B004 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:9-10](../upstream/content/model-theory/basics/isomorphism.tex#L9) | [mr/content/model-theory/basics/isomorphism.tex:9-10](../mr/content/model-theory/basics/isomorphism.tex#L9) | not yet paginated |
+| T218-OLP-0187-B005 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:12-24](../upstream/content/model-theory/basics/isomorphism.tex#L12) | [mr/content/model-theory/basics/isomorphism.tex:12-23](../mr/content/model-theory/basics/isomorphism.tex#L12) | not yet paginated |
+| T218-OLP-0187-B006 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:26-33](../upstream/content/model-theory/basics/isomorphism.tex#L26) | [mr/content/model-theory/basics/isomorphism.tex:25-32](../mr/content/model-theory/basics/isomorphism.tex#L25) | not yet paginated |
+| T218-OLP-0187-B007 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:35-59](../upstream/content/model-theory/basics/isomorphism.tex#L35) | [mr/content/model-theory/basics/isomorphism.tex:34-58](../mr/content/model-theory/basics/isomorphism.tex#L34) | not yet paginated |
+| T218-OLP-0187-B008 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:61-65](../upstream/content/model-theory/basics/isomorphism.tex#L61) | [mr/content/model-theory/basics/isomorphism.tex:60-64](../mr/content/model-theory/basics/isomorphism.tex#L60) | not yet paginated |
+| T218-OLP-0187-B009 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:67-106](../upstream/content/model-theory/basics/isomorphism.tex#L67) | [mr/content/model-theory/basics/isomorphism.tex:66-106](../mr/content/model-theory/basics/isomorphism.tex#L66) | not yet paginated |
+| T218-OLP-0187-B010 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:108-110](../upstream/content/model-theory/basics/isomorphism.tex#L108) | [mr/content/model-theory/basics/isomorphism.tex:108-111](../mr/content/model-theory/basics/isomorphism.tex#L108) | not yet paginated |
+| T218-OLP-0187-B012 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:119-122](../upstream/content/model-theory/basics/isomorphism.tex#L119) | [mr/content/model-theory/basics/isomorphism.tex:120-123](../mr/content/model-theory/basics/isomorphism.tex#L120) | not yet paginated |
+| T218-OLP-0187-B013 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:124-128](../upstream/content/model-theory/basics/isomorphism.tex#L124) | [mr/content/model-theory/basics/isomorphism.tex:125-130](../mr/content/model-theory/basics/isomorphism.tex#L125) | not yet paginated |
+| T218-OLP-0188-B005 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:11-11](../upstream/content/model-theory/basics/theory-of-m.tex#L11) | [mr/content/model-theory/basics/theory-of-m.tex:11-11](../mr/content/model-theory/basics/theory-of-m.tex#L11) | not yet paginated |
+| T218-OLP-0188-B006 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:13-16](../upstream/content/model-theory/basics/theory-of-m.tex#L13) | [mr/content/model-theory/basics/theory-of-m.tex:13-18](../mr/content/model-theory/basics/theory-of-m.tex#L13) | not yet paginated |
+| T218-OLP-0188-B007 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:18-23](../upstream/content/model-theory/basics/theory-of-m.tex#L18) | [mr/content/model-theory/basics/theory-of-m.tex:20-25](../mr/content/model-theory/basics/theory-of-m.tex#L20) | not yet paginated |
+| T218-OLP-0188-B008 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:25-27](../upstream/content/model-theory/basics/theory-of-m.tex#L25) | [mr/content/model-theory/basics/theory-of-m.tex:27-29](../mr/content/model-theory/basics/theory-of-m.tex#L27) | not yet paginated |
+| T218-OLP-0188-B009 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:29-31](../upstream/content/model-theory/basics/theory-of-m.tex#L29) | [mr/content/model-theory/basics/theory-of-m.tex:31-33](../mr/content/model-theory/basics/theory-of-m.tex#L31) | not yet paginated |
+| T218-OLP-0188-B010 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:33-36](../upstream/content/model-theory/basics/theory-of-m.tex#L33) | [mr/content/model-theory/basics/theory-of-m.tex:35-39](../mr/content/model-theory/basics/theory-of-m.tex#L35) | not yet paginated |
+| T218-OLP-0188-B011 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:38-41](../upstream/content/model-theory/basics/theory-of-m.tex#L38) | [mr/content/model-theory/basics/theory-of-m.tex:41-44](../mr/content/model-theory/basics/theory-of-m.tex#L41) | not yet paginated |
+| T218-OLP-0188-B012 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:43-49](../upstream/content/model-theory/basics/theory-of-m.tex#L43) | [mr/content/model-theory/basics/theory-of-m.tex:46-53](../mr/content/model-theory/basics/theory-of-m.tex#L46) | not yet paginated |
+| T218-OLP-0188-B013 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:51-62](../upstream/content/model-theory/basics/theory-of-m.tex#L51) | [mr/content/model-theory/basics/theory-of-m.tex:55-66](../mr/content/model-theory/basics/theory-of-m.tex#L55) | not yet paginated |
+| T218-OLP-0189-B005 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:12-31](../upstream/content/model-theory/basics/partial-iso.tex#L12) | [mr/content/model-theory/basics/partial-iso.tex:12-31](../mr/content/model-theory/basics/partial-iso.tex#L12) | not yet paginated |
+| T218-OLP-0189-B006 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:33-34](../upstream/content/model-theory/basics/partial-iso.tex#L33) | [mr/content/model-theory/basics/partial-iso.tex:33-34](../mr/content/model-theory/basics/partial-iso.tex#L33) | not yet paginated |
+| T218-OLP-0189-B007 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:36-50](../upstream/content/model-theory/basics/partial-iso.tex#L36) | [mr/content/model-theory/basics/partial-iso.tex:36-50](../mr/content/model-theory/basics/partial-iso.tex#L36) | not yet paginated |
+| T218-OLP-0189-B008 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:52-56](../upstream/content/model-theory/basics/partial-iso.tex#L52) | [mr/content/model-theory/basics/partial-iso.tex:52-56](../mr/content/model-theory/basics/partial-iso.tex#L52) | not yet paginated |
+| T218-OLP-0189-B009 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:58-78](../upstream/content/model-theory/basics/partial-iso.tex#L58) | [mr/content/model-theory/basics/partial-iso.tex:58-78](../mr/content/model-theory/basics/partial-iso.tex#L58) | not yet paginated |
+| T218-OLP-0189-B011 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:85-91](../upstream/content/model-theory/basics/partial-iso.tex#L85) | [mr/content/model-theory/basics/partial-iso.tex:85-91](../mr/content/model-theory/basics/partial-iso.tex#L85) | not yet paginated |
+| T218-OLP-0189-B012 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:93-100](../upstream/content/model-theory/basics/partial-iso.tex#L93) | [mr/content/model-theory/basics/partial-iso.tex:93-100](../mr/content/model-theory/basics/partial-iso.tex#L93) | not yet paginated |
+| T218-OLP-0189-B013 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:102-107](../upstream/content/model-theory/basics/partial-iso.tex#L102) | [mr/content/model-theory/basics/partial-iso.tex:102-108](../mr/content/model-theory/basics/partial-iso.tex#L102) | not yet paginated |
+| T218-OLP-0189-B015 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:113-120](../upstream/content/model-theory/basics/partial-iso.tex#L113) | [mr/content/model-theory/basics/partial-iso.tex:114-122](../mr/content/model-theory/basics/partial-iso.tex#L114) | not yet paginated |
+| T218-OLP-0189-B018 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:135-141](../upstream/content/model-theory/basics/partial-iso.tex#L135) | [mr/content/model-theory/basics/partial-iso.tex:136-142](../mr/content/model-theory/basics/partial-iso.tex#L136) | not yet paginated |
+| T218-OLP-0189-B019 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:143-158](../upstream/content/model-theory/basics/partial-iso.tex#L143) | [mr/content/model-theory/basics/partial-iso.tex:144-162](../mr/content/model-theory/basics/partial-iso.tex#L144) | not yet paginated |
+| T218-OLP-0189-B020 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:161-165](../upstream/content/model-theory/basics/partial-iso.tex#L161) | [mr/content/model-theory/basics/partial-iso.tex:165-169](../mr/content/model-theory/basics/partial-iso.tex#L165) | not yet paginated |
+| T218-OLP-0189-B025 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:199-213](../upstream/content/model-theory/basics/partial-iso.tex#L199) | [mr/content/model-theory/basics/partial-iso.tex:201-215](../mr/content/model-theory/basics/partial-iso.tex#L201) | not yet paginated |
+| T218-OLP-0189-B026 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:215-221](../upstream/content/model-theory/basics/partial-iso.tex#L215) | [mr/content/model-theory/basics/partial-iso.tex:217-223](../mr/content/model-theory/basics/partial-iso.tex#L217) | not yet paginated |
+| T218-OLP-0190-B005 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:12-26](../upstream/content/model-theory/basics/dlo.tex#L12) | [mr/content/model-theory/basics/dlo.tex:12-26](../mr/content/model-theory/basics/dlo.tex#L12) | not yet paginated |
+| T218-OLP-0190-B007 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:33-40](../upstream/content/model-theory/basics/dlo.tex#L33) | [mr/content/model-theory/basics/dlo.tex:33-40](../mr/content/model-theory/basics/dlo.tex#L33) | not yet paginated |
+| T218-OLP-0190-B008 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:42-61](../upstream/content/model-theory/basics/dlo.tex#L42) | [mr/content/model-theory/basics/dlo.tex:42-66](../mr/content/model-theory/basics/dlo.tex#L42) | not yet paginated |
+| T218-OLP-0190-B010 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:68-84](../upstream/content/model-theory/basics/dlo.tex#L68) | [mr/content/model-theory/basics/dlo.tex:73-88](../mr/content/model-theory/basics/dlo.tex#L73) | not yet paginated |
 
 **Chosen rendering/action:** रचना / अर्थनिर्धारण
 
@@ -13560,12 +13807,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T228 — closed under entailment / closure of a sentence set</strong> (2 occurrences; medium priority)</summary>
+<summary><strong>T228 — closed under entailment / closure of a sentence set</strong> (4 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T228-OLP-0168-B007 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:28-31](../upstream/content/first-order-logic/models-theories/introduction.tex#L28) | [mr/content/first-order-logic/models-theories/introduction.tex:28-32](../mr/content/first-order-logic/models-theories/introduction.tex#L28) | not yet paginated |
 | T228-OLP-0168-B008 | OLP-0168 ·  | [upstream/content/first-order-logic/models-theories/introduction.tex:33-35](../upstream/content/first-order-logic/models-theories/introduction.tex#L33) | [mr/content/first-order-logic/models-theories/introduction.tex:34-36](../mr/content/first-order-logic/models-theories/introduction.tex#L34) | not yet paginated |
+| T228-OLP-0188-B006 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:13-16](../upstream/content/model-theory/basics/theory-of-m.tex#L13) | [mr/content/model-theory/basics/theory-of-m.tex:13-18](../mr/content/model-theory/basics/theory-of-m.tex#L13) | not yet paginated |
+| T228-OLP-0188-B008 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:25-27](../upstream/content/model-theory/basics/theory-of-m.tex#L25) | [mr/content/model-theory/basics/theory-of-m.tex:27-29](../mr/content/model-theory/basics/theory-of-m.tex#L27) | not yet paginated |
 
 **Chosen rendering/action:** तार्किक निष्पन्नतेखाली बंद / वाक्यसंचाचे संवरण
 
@@ -13576,7 +13825,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T229 — expressible by sentences / structural property</strong> (8 occurrences; medium priority)</summary>
+<summary><strong>T229 — expressible by sentences / structural property</strong> (9 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13588,6 +13837,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T229-OLP-0173-B006 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:13-19](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L13) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:13-18](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L13) | not yet paginated |
 | T229-OLP-0173-B011 | OLP-0173 ·  | [upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70](../upstream/content/first-order-logic/models-theories/size-of-structures.tex#L63) | [mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70](../mr/content/first-order-logic/models-theories/size-of-structures.tex#L64) | not yet paginated |
 | T229-OLP-0177-B013 | OLP-0177 ·  | [upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L183) | [mr/content/first-order-logic/beyond/second-order-logic.tex:172-190](../mr/content/first-order-logic/beyond/second-order-logic.tex#L172) | not yet paginated |
+| T229-OLP-0187-B005 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:12-24](../upstream/content/model-theory/basics/isomorphism.tex#L12) | [mr/content/model-theory/basics/isomorphism.tex:12-23](../mr/content/model-theory/basics/isomorphism.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** वाक्यांनी व्यक्त करता येणारा / रचनात्मक गुणधर्म
 
@@ -13598,11 +13848,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T230 — strict linear order</strong> (1 occurrence; medium priority)</summary>
+<summary><strong>T230 — strict linear order</strong> (2 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T230-OLP-0170-B006 | OLP-0170 ·  | [upstream/content/first-order-logic/models-theories/theories.tex:13-27](../upstream/content/first-order-logic/models-theories/theories.tex#L13) | [mr/content/first-order-logic/models-theories/theories.tex:13-27](../mr/content/first-order-logic/models-theories/theories.tex#L13) | not yet paginated |
+| T230-OLP-0190-B005 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:12-26](../upstream/content/model-theory/basics/dlo.tex#L12) | [mr/content/model-theory/basics/dlo.tex:12-26](../mr/content/model-theory/basics/dlo.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** काटेकोर रेषीय क्रम
 
@@ -13722,7 +13973,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T238 — definable relation / definable set in a structure</strong> (9 occurrences; medium priority)</summary>
+<summary><strong>T238 — definable relation / definable set in a structure</strong> (10 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13735,6 +13986,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T238-OLP-0171-B012 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:90-99](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L90) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:92-101](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L92) | not yet paginated |
 | T238-OLP-0171-B013 | OLP-0171 ·  | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L101) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L103) | not yet paginated |
 | T238-OLP-0172-B007 | OLP-0172 ·  | [upstream/content/first-order-logic/models-theories/set-theory.tex:31-55](../upstream/content/first-order-logic/models-theories/set-theory.tex#L31) | [mr/content/first-order-logic/models-theories/set-theory.tex:30-54](../mr/content/first-order-logic/models-theories/set-theory.tex#L30) | not yet paginated |
+| T238-OLP-0187-B013 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:124-128](../upstream/content/model-theory/basics/isomorphism.tex#L124) | [mr/content/model-theory/basics/isomorphism.tex:125-130](../mr/content/model-theory/basics/isomorphism.tex#L125) | not yet paginated |
 
 **Chosen rendering/action:** रचनेत परिभाष्य संबंध / परिभाष्य संच
 
@@ -14313,6 +14565,194 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; direct authoritative surname attestation with provisional full-name transliteration; expert-reviewable; open to correction.
 
 **Please double-check:** Should the edition retain the directly attested surname spelling लायप्निट्स across later occurrences?
+
+</details>
+
+<details>
+<summary><strong>T272 — reduct / expansion (model theory)</strong> (5 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T272-OLP-0184-B004 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:9-10](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L9) | [mr/content/model-theory/basics/reducts-and-expansions.tex:9-10](../mr/content/model-theory/basics/reducts-and-expansions.tex#L9) | not yet paginated |
+| T272-OLP-0184-B005 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:12-22](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L12) | [mr/content/model-theory/basics/reducts-and-expansions.tex:12-20](../mr/content/model-theory/basics/reducts-and-expansions.tex#L12) | not yet paginated |
+| T272-OLP-0184-B006 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L24) | [mr/content/model-theory/basics/reducts-and-expansions.tex:22-38](../mr/content/model-theory/basics/reducts-and-expansions.tex#L22) | not yet paginated |
+| T272-OLP-0184-B007 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:41-49](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L41) | [mr/content/model-theory/basics/reducts-and-expansions.tex:40-48](../mr/content/model-theory/basics/reducts-and-expansions.tex#L40) | not yet paginated |
+| T272-OLP-0184-B010 | OLP-0184 ·  | [upstream/content/model-theory/basics/reducts-and-expansions.tex:59-65](../upstream/content/model-theory/basics/reducts-and-expansions.tex#L59) | [mr/content/model-theory/basics/reducts-and-expansions.tex:58-65](../mr/content/model-theory/basics/reducts-and-expansions.tex#L58) | not yet paginated |
+
+**Chosen rendering/action:** न्यूनीकृत रचना / विस्तारित रचना
+
+**Confidence/status:** high; source-defined transparent terminology built from attested mathematical stems; exact pair unattested; high-priority expert review useful; open to correction.
+
+**Please double-check:** Are न्यूनीकृत रचना and विस्तारित रचना natural model-theory terms, or is a compact specialist pair such as न्यूनरूप and विस्तार preferable?
+
+</details>
+
+<details>
+<summary><strong>T273 — substructure / extension (model theory)</strong> (5 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T273-OLP-0185-B004 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:9-10](../upstream/content/model-theory/basics/substructures.tex#L9) | [mr/content/model-theory/basics/substructures.tex:9-10](../mr/content/model-theory/basics/substructures.tex#L9) | not yet paginated |
+| T273-OLP-0185-B005 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:12-17](../upstream/content/model-theory/basics/substructures.tex#L12) | [mr/content/model-theory/basics/substructures.tex:12-17](../mr/content/model-theory/basics/substructures.tex#L12) | not yet paginated |
+| T273-OLP-0185-B006 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:19-37](../upstream/content/model-theory/basics/substructures.tex#L19) | [mr/content/model-theory/basics/substructures.tex:19-38](../mr/content/model-theory/basics/substructures.tex#L19) | not yet paginated |
+| T273-OLP-0185-B007 | OLP-0185 ·  | [upstream/content/model-theory/basics/substructures.tex:39-45](../upstream/content/model-theory/basics/substructures.tex#L39) | [mr/content/model-theory/basics/substructures.tex:40-46](../mr/content/model-theory/basics/substructures.tex#L40) | not yet paginated |
+| T273-OLP-0189-B013 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:102-107](../upstream/content/model-theory/basics/partial-iso.tex#L102) | [mr/content/model-theory/basics/partial-iso.tex:102-108](../mr/content/model-theory/basics/partial-iso.tex#L102) | not yet paginated |
+
+**Chosen rendering/action:** उपरचना / वर्धित रचना
+
+**Confidence/status:** medium; direct official component attestations with source-defined model-theory pairing; expert-reviewable; open to correction.
+
+**Please double-check:** Should the edition normalize the official उपसंरचना to its established base रचना as उपरचना, and is वर्धित रचना the clearest way to distinguish extension from signature expansion?
+
+</details>
+
+<details>
+<summary><strong>T274 — overspill (arbitrarily large finite models imply an infinite model)</strong> (3 occurrences; high priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T274-OLP-0186-B004 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:9-10](../upstream/content/model-theory/basics/overspill.tex#L9) | [mr/content/model-theory/basics/overspill.tex:9-10](../mr/content/model-theory/basics/overspill.tex#L9) | not yet paginated |
+| T274-OLP-0186-B005 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:12-15](../upstream/content/model-theory/basics/overspill.tex#L12) | [mr/content/model-theory/basics/overspill.tex:12-15](../mr/content/model-theory/basics/overspill.tex#L12) | not yet paginated |
+| T274-OLP-0186-B008 | OLP-0186 ·  | [upstream/content/model-theory/basics/overspill.tex:35-40](../upstream/content/model-theory/basics/overspill.tex#L35) | [mr/content/model-theory/basics/overspill.tex:35-39](../mr/content/model-theory/basics/overspill.tex#L35) | not yet paginated |
+
+**Chosen rendering/action:** सांत मर्यादेपलीकडील प्रसरण
+
+**Confidence/status:** low; definition-explicit source-controlled rendering; exact headword unattested; high-priority expert review useful; open to correction.
+
+**Please double-check:** Is सांत मर्यादेपलीकडील प्रसरण a readable title for this compactness consequence, or is the shorter अतिप्रसरण conventional in Marathi model theory?
+
+</details>
+
+<details>
+<summary><strong>T275 — elementary equivalence / elementarily equivalent</strong> (11 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T275-OLP-0187-B005 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:12-24](../upstream/content/model-theory/basics/isomorphism.tex#L12) | [mr/content/model-theory/basics/isomorphism.tex:12-23](../mr/content/model-theory/basics/isomorphism.tex#L12) | not yet paginated |
+| T275-OLP-0187-B006 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:26-33](../upstream/content/model-theory/basics/isomorphism.tex#L26) | [mr/content/model-theory/basics/isomorphism.tex:25-32](../mr/content/model-theory/basics/isomorphism.tex#L25) | not yet paginated |
+| T275-OLP-0187-B008 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:61-65](../upstream/content/model-theory/basics/isomorphism.tex#L61) | [mr/content/model-theory/basics/isomorphism.tex:60-64](../mr/content/model-theory/basics/isomorphism.tex#L60) | not yet paginated |
+| T275-OLP-0187-B010 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:108-110](../upstream/content/model-theory/basics/isomorphism.tex#L108) | [mr/content/model-theory/basics/isomorphism.tex:108-111](../mr/content/model-theory/basics/isomorphism.tex#L108) | not yet paginated |
+| T275-OLP-0188-B011 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:38-41](../upstream/content/model-theory/basics/theory-of-m.tex#L38) | [mr/content/model-theory/basics/theory-of-m.tex:41-44](../mr/content/model-theory/basics/theory-of-m.tex#L41) | not yet paginated |
+| T275-OLP-0188-B012 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:43-49](../upstream/content/model-theory/basics/theory-of-m.tex#L43) | [mr/content/model-theory/basics/theory-of-m.tex:46-53](../mr/content/model-theory/basics/theory-of-m.tex#L46) | not yet paginated |
+| T275-OLP-0188-B013 | OLP-0188 ·  | [upstream/content/model-theory/basics/theory-of-m.tex:51-62](../upstream/content/model-theory/basics/theory-of-m.tex#L51) | [mr/content/model-theory/basics/theory-of-m.tex:55-66](../mr/content/model-theory/basics/theory-of-m.tex#L55) | not yet paginated |
+| T275-OLP-0189-B011 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:85-91](../upstream/content/model-theory/basics/partial-iso.tex#L85) | [mr/content/model-theory/basics/partial-iso.tex:85-91](../mr/content/model-theory/basics/partial-iso.tex#L85) | not yet paginated |
+| T275-OLP-0189-B012 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:93-100](../upstream/content/model-theory/basics/partial-iso.tex#L93) | [mr/content/model-theory/basics/partial-iso.tex:93-100](../mr/content/model-theory/basics/partial-iso.tex#L93) | not yet paginated |
+| T275-OLP-0189-B026 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:215-221](../upstream/content/model-theory/basics/partial-iso.tex#L215) | [mr/content/model-theory/basics/partial-iso.tex:217-223](../mr/content/model-theory/basics/partial-iso.tex#L217) | not yet paginated |
+| T275-OLP-0190-B010 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:68-84](../upstream/content/model-theory/basics/dlo.tex#L68) | [mr/content/model-theory/basics/dlo.tex:73-88](../mr/content/model-theory/basics/dlo.tex#L73) | not yet paginated |
+
+**Chosen rendering/action:** प्राथमिक सममूल्यता / प्राथमिक सममूल्य
+
+**Confidence/status:** high; source-defined specialist compound from directly attested official logical components; exact full phrase unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is प्राथमिक सममूल्यता the preferred Marathi model-theory term for elementary equivalence, and is प्राथमिक सममूल्य the natural predicative form?
+
+</details>
+
+<details>
+<summary><strong>T276 — automorphism</strong> (2 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T276-OLP-0187-B012 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:119-122](../upstream/content/model-theory/basics/isomorphism.tex#L119) | [mr/content/model-theory/basics/isomorphism.tex:120-123](../mr/content/model-theory/basics/isomorphism.tex#L120) | not yet paginated |
+| T276-OLP-0187-B013 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:124-128](../upstream/content/model-theory/basics/isomorphism.tex#L124) | [mr/content/model-theory/basics/isomorphism.tex:125-130](../mr/content/model-theory/basics/isomorphism.tex#L125) | not yet paginated |
+
+**Chosen rendering/action:** स्वयंरूपता
+
+**Confidence/status:** high; direct official mathematical headword with source-controlled model-theory definition; open to correction.
+
+**Please double-check:** Should the edition retain the directly attested स्वयंरूपता for an automorphism map, despite समरूपण being available for the general isomorphism-map noun?
+
+</details>
+
+<details>
+<summary><strong>T277 — partial isomorphism / partially isomorphic / back-and-forth property</strong> (15 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T277-OLP-0189-B004 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:9-10](../upstream/content/model-theory/basics/partial-iso.tex#L9) | [mr/content/model-theory/basics/partial-iso.tex:9-10](../mr/content/model-theory/basics/partial-iso.tex#L9) | not yet paginated |
+| T277-OLP-0189-B005 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:12-31](../upstream/content/model-theory/basics/partial-iso.tex#L12) | [mr/content/model-theory/basics/partial-iso.tex:12-31](../mr/content/model-theory/basics/partial-iso.tex#L12) | not yet paginated |
+| T277-OLP-0189-B006 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:33-34](../upstream/content/model-theory/basics/partial-iso.tex#L33) | [mr/content/model-theory/basics/partial-iso.tex:33-34](../mr/content/model-theory/basics/partial-iso.tex#L33) | not yet paginated |
+| T277-OLP-0189-B007 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:36-50](../upstream/content/model-theory/basics/partial-iso.tex#L36) | [mr/content/model-theory/basics/partial-iso.tex:36-50](../mr/content/model-theory/basics/partial-iso.tex#L36) | not yet paginated |
+| T277-OLP-0189-B008 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:52-56](../upstream/content/model-theory/basics/partial-iso.tex#L52) | [mr/content/model-theory/basics/partial-iso.tex:52-56](../mr/content/model-theory/basics/partial-iso.tex#L52) | not yet paginated |
+| T277-OLP-0189-B009 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:58-78](../upstream/content/model-theory/basics/partial-iso.tex#L58) | [mr/content/model-theory/basics/partial-iso.tex:58-78](../mr/content/model-theory/basics/partial-iso.tex#L58) | not yet paginated |
+| T277-OLP-0189-B010 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:80-83](../upstream/content/model-theory/basics/partial-iso.tex#L80) | [mr/content/model-theory/basics/partial-iso.tex:80-83](../mr/content/model-theory/basics/partial-iso.tex#L80) | not yet paginated |
+| T277-OLP-0189-B011 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:85-91](../upstream/content/model-theory/basics/partial-iso.tex#L85) | [mr/content/model-theory/basics/partial-iso.tex:85-91](../mr/content/model-theory/basics/partial-iso.tex#L85) | not yet paginated |
+| T277-OLP-0189-B012 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:93-100](../upstream/content/model-theory/basics/partial-iso.tex#L93) | [mr/content/model-theory/basics/partial-iso.tex:93-100](../mr/content/model-theory/basics/partial-iso.tex#L93) | not yet paginated |
+| T277-OLP-0189-B013 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:102-107](../upstream/content/model-theory/basics/partial-iso.tex#L102) | [mr/content/model-theory/basics/partial-iso.tex:102-108](../mr/content/model-theory/basics/partial-iso.tex#L102) | not yet paginated |
+| T277-OLP-0189-B014 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:109-111](../upstream/content/model-theory/basics/partial-iso.tex#L109) | [mr/content/model-theory/basics/partial-iso.tex:110-112](../mr/content/model-theory/basics/partial-iso.tex#L110) | not yet paginated |
+| T277-OLP-0190-B007 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:33-40](../upstream/content/model-theory/basics/dlo.tex#L33) | [mr/content/model-theory/basics/dlo.tex:33-40](../mr/content/model-theory/basics/dlo.tex#L33) | not yet paginated |
+| T277-OLP-0190-B008 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:42-61](../upstream/content/model-theory/basics/dlo.tex#L42) | [mr/content/model-theory/basics/dlo.tex:42-66](../mr/content/model-theory/basics/dlo.tex#L42) | not yet paginated |
+| T277-OLP-0190-B009 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:63-66](../upstream/content/model-theory/basics/dlo.tex#L63) | [mr/content/model-theory/basics/dlo.tex:68-71](../mr/content/model-theory/basics/dlo.tex#L68) | not yet paginated |
+| T277-OLP-0190-B010 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:68-84](../upstream/content/model-theory/basics/dlo.tex#L68) | [mr/content/model-theory/basics/dlo.tex:73-88](../mr/content/model-theory/basics/dlo.tex#L73) | not yet paginated |
+
+**Chosen rendering/action:** आंशिक समरूपण / आंशिकरीत्या समरूपी / पुढे-मागे गुणधर्म
+
+**Confidence/status:** medium; source-defined transparent composition from established partial-function and official isomorphism vocabulary; exact labels unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Are आंशिक समरूपण and पुढे-मागे गुणधर्म the clearest Marathi labels for finite partial isomorphisms and their two extension directions?
+
+</details>
+
+<details>
+<summary><strong>T278 — quantifier rank / n-equivalent</strong> (11 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T278-OLP-0189-B014 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:109-111](../upstream/content/model-theory/basics/partial-iso.tex#L109) | [mr/content/model-theory/basics/partial-iso.tex:110-112](../mr/content/model-theory/basics/partial-iso.tex#L110) | not yet paginated |
+| T278-OLP-0189-B015 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:113-120](../upstream/content/model-theory/basics/partial-iso.tex#L113) | [mr/content/model-theory/basics/partial-iso.tex:114-122](../mr/content/model-theory/basics/partial-iso.tex#L114) | not yet paginated |
+| T278-OLP-0189-B016 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:122-129](../upstream/content/model-theory/basics/partial-iso.tex#L122) | [mr/content/model-theory/basics/partial-iso.tex:124-130](../mr/content/model-theory/basics/partial-iso.tex#L124) | not yet paginated |
+| T278-OLP-0189-B019 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:143-158](../upstream/content/model-theory/basics/partial-iso.tex#L143) | [mr/content/model-theory/basics/partial-iso.tex:144-162](../mr/content/model-theory/basics/partial-iso.tex#L144) | not yet paginated |
+| T278-OLP-0189-B020 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:161-165](../upstream/content/model-theory/basics/partial-iso.tex#L161) | [mr/content/model-theory/basics/partial-iso.tex:165-169](../mr/content/model-theory/basics/partial-iso.tex#L165) | not yet paginated |
+| T278-OLP-0189-B021 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:167-174](../upstream/content/model-theory/basics/partial-iso.tex#L167) | [mr/content/model-theory/basics/partial-iso.tex:171-178](../mr/content/model-theory/basics/partial-iso.tex#L171) | not yet paginated |
+| T278-OLP-0189-B022 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:176-183](../upstream/content/model-theory/basics/partial-iso.tex#L176) | [mr/content/model-theory/basics/partial-iso.tex:180-186](../mr/content/model-theory/basics/partial-iso.tex#L180) | not yet paginated |
+| T278-OLP-0189-B023 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:185-187](../upstream/content/model-theory/basics/partial-iso.tex#L185) | [mr/content/model-theory/basics/partial-iso.tex:188-190](../mr/content/model-theory/basics/partial-iso.tex#L188) | not yet paginated |
+| T278-OLP-0189-B024 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:189-197](../upstream/content/model-theory/basics/partial-iso.tex#L189) | [mr/content/model-theory/basics/partial-iso.tex:192-199](../mr/content/model-theory/basics/partial-iso.tex#L192) | not yet paginated |
+| T278-OLP-0189-B025 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:199-213](../upstream/content/model-theory/basics/partial-iso.tex#L199) | [mr/content/model-theory/basics/partial-iso.tex:201-215](../mr/content/model-theory/basics/partial-iso.tex#L201) | not yet paginated |
+| T278-OLP-0189-B026 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:215-221](../upstream/content/model-theory/basics/partial-iso.tex#L215) | [mr/content/model-theory/basics/partial-iso.tex:217-223](../mr/content/model-theory/basics/partial-iso.tex#L217) | not yet paginated |
+
+**Chosen rendering/action:** संख्यापक-प्रतांक / n-सममूल्य
+
+**Confidence/status:** high; direct official rank and equivalence components under explicit source definitions; exact compounds unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is संख्यापक-प्रतांक natural for quantifier rank, and should n-equivalent remain the compact n-सममूल्य?
+
+</details>
+
+<details>
+<summary><strong>T279 — purely relational language</strong> (4 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T279-OLP-0189-B011 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:85-91](../upstream/content/model-theory/basics/partial-iso.tex#L85) | [mr/content/model-theory/basics/partial-iso.tex:85-91](../mr/content/model-theory/basics/partial-iso.tex#L85) | not yet paginated |
+| T279-OLP-0189-B016 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:122-129](../upstream/content/model-theory/basics/partial-iso.tex#L122) | [mr/content/model-theory/basics/partial-iso.tex:124-130](../mr/content/model-theory/basics/partial-iso.tex#L124) | not yet paginated |
+| T279-OLP-0189-B021 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:167-174](../upstream/content/model-theory/basics/partial-iso.tex#L167) | [mr/content/model-theory/basics/partial-iso.tex:171-178](../mr/content/model-theory/basics/partial-iso.tex#L171) | not yet paginated |
+| T279-OLP-0189-B026 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:215-221](../upstream/content/model-theory/basics/partial-iso.tex#L215) | [mr/content/model-theory/basics/partial-iso.tex:217-223](../mr/content/model-theory/basics/partial-iso.tex#L217) | not yet paginated |
+
+**Chosen rendering/action:** निव्वळ संबंधात्मक भाषा
+
+**Confidence/status:** high; source-defined transparent specialist compound; exact headword unattested; wording remains sensitive to the source's local constant-symbol convention; open to correction.
+
+**Please double-check:** Is निव्वळ संबंधात्मक भाषा clear across the source's two local conventions about whether constants are allowed?
+
+</details>
+
+<details>
+<summary><strong>T280 — dense linear ordering without endpoints</strong> (6 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T280-OLP-0190-B004 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:9-10](../upstream/content/model-theory/basics/dlo.tex#L9) | [mr/content/model-theory/basics/dlo.tex:9-10](../mr/content/model-theory/basics/dlo.tex#L9) | not yet paginated |
+| T280-OLP-0190-B005 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:12-26](../upstream/content/model-theory/basics/dlo.tex#L12) | [mr/content/model-theory/basics/dlo.tex:12-26](../mr/content/model-theory/basics/dlo.tex#L12) | not yet paginated |
+| T280-OLP-0190-B006 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:28-31](../upstream/content/model-theory/basics/dlo.tex#L28) | [mr/content/model-theory/basics/dlo.tex:28-31](../mr/content/model-theory/basics/dlo.tex#L28) | not yet paginated |
+| T280-OLP-0190-B007 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:33-40](../upstream/content/model-theory/basics/dlo.tex#L33) | [mr/content/model-theory/basics/dlo.tex:33-40](../mr/content/model-theory/basics/dlo.tex#L33) | not yet paginated |
+| T280-OLP-0190-B008 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:42-61](../upstream/content/model-theory/basics/dlo.tex#L42) | [mr/content/model-theory/basics/dlo.tex:42-66](../mr/content/model-theory/basics/dlo.tex#L42) | not yet paginated |
+| T280-OLP-0190-B010 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:68-84](../upstream/content/model-theory/basics/dlo.tex#L68) | [mr/content/model-theory/basics/dlo.tex:73-88](../mr/content/model-theory/basics/dlo.tex#L73) | not yet paginated |
+
+**Chosen rendering/action:** अंतबिंदुविरहित सघन रेषीय क्रम
+
+**Confidence/status:** high; direct official density stem plus established linear-order term under six source axioms; full compound and endpoint modifier unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is अंतबिंदुविरहित सघन रेषीय क्रम the natural Marathi specialist label, especially for the no-endpoints modifier?
 
 </details>
 
@@ -15843,5 +16283,50 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; confirmed by clause (6), the immediately stated type tau to sigma of the lambda term and the preceding definition of function types; open to correction.
 
 **Please double-check:** Does the corrected sentence now give x the domain type tau while retaining s as the value of type sigma?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-026 — confirmed-frozen-source-wrong structure in function-term evaluation with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-026-OLP-0187 | OLP-0187 ·  | [upstream/content/model-theory/basics/isomorphism.tex:86-104](../upstream/content/model-theory/basics/isomorphism.tex#L86) | [mr/content/model-theory/basics/isomorphism.tex:85-104](../mr/content/model-theory/basics/isomorphism.tex#L85) | not yet paginated |
+
+**Chosen rendering/action:** Changed the one function interpretation from M to M-prime in the Marathi display, placed adjacent reader note OLFOL-026 and added a unit-specific QA projection that reconstructs the frozen M solely for source comparison.
+
+**Confidence/status:** high; confirmed by the recursive definition of term value, the immediately following equality chain and the function-preservation clause of the isomorphism definition; open to correction.
+
+**Please double-check:** Does the corrected equation now evaluate the function term entirely in M-prime while preserving the induction argument?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-027 — confirmed-frozen-source-sequence-length and recursion-index collision with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-027-OLP-0189 | OLP-0189 ·  | [upstream/content/model-theory/basics/partial-iso.tex:144-157](../upstream/content/model-theory/basics/partial-iso.tex#L144) | [mr/content/model-theory/basics/partial-iso.tex:145-159](../mr/content/model-theory/basics/partial-iso.tex#L145) | not yet paginated |
+
+**Chosen rendering/action:** Introduced plain-text k as the common sequence length, changed the one displayed upper variable index from x_n to x_k in Marathi, placed adjacent reader note OLFOL-027 and added a unit-specific QA projection that reconstructs the frozen x_n solely for source comparison.
+
+**Confidence/status:** high; confirmed by the arbitrary equal-length-sequence domain of I_n, the component assignment notation and the subsequent recursion in n; open to correction.
+
+**Please double-check:** Does the repaired I_0 clause now range over exactly the variables corresponding to the compared sequence positions, independently of recursion depth?
+
+</details>
+
+<details>
+<summary><strong>OLFOL-028 — confirmed-frozen-source-incomplete domain and empty-map case split with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLFOL-028-OLP-0190 | OLP-0190 ·  | [upstream/content/model-theory/basics/dlo.tex:42-57](../upstream/content/model-theory/basics/dlo.tex#L42) | [mr/content/model-theory/basics/dlo.tex:42-62](../mr/content/model-theory/basics/dlo.tex#L42) | not yet paginated |
+
+**Chosen rendering/action:** Added the two missing cases in Marathi prose and placed adjacent reader note OLFOL-028. No protected formula, macro, token, identifier or reference changed, so no structural projection is needed.
+
+**Confidence/status:** high; confirmed by the definition of the Forth property in OLP-0189 and the proof's explicit assertion that the empty map belongs to I; open to correction.
+
+**Please double-check:** Do the added prose cases now cover every a before the three strict-order positions are considered?
 
 </details>

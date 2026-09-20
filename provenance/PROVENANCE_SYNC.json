@@ -2,13 +2,13 @@
   "schema": "openlogic-release-provenance-sync/1",
   "scope": {
     "source_manifest_units": 722,
-    "translated_units": 178,
+    "translated_units": 187,
     "first_translated_unit": "OLP-0004",
-    "last_translated_unit": "OLP-0181",
-    "aligned_segments": 1911,
-    "canon_sources": 86,
-    "canon_passages": 119,
-    "term_decisions": 271
+    "last_translated_unit": "OLP-0190",
+    "aligned_segments": 1979,
+    "canon_sources": 92,
+    "canon_passages": 125,
+    "term_decisions": 280
   },
   "outputs": {
     "SOURCE_MANIFEST.jsonl": {
@@ -17,24 +17,24 @@
       "sha256": "f243d399ca5d8a572a58de7e9b0ad0d7243283a8f92983b1058bfe01ade39c3b"
     },
     "SEGMENT_CANON_USE.jsonl": {
-      "records": 1911,
-      "bytes": 2928481,
-      "sha256": "7af47707a3819e993a2c1c70bc886ca91154a5bf5fb89b9593e9c08e707ff91b"
+      "records": 1979,
+      "bytes": 3028056,
+      "sha256": "41cc7f164ee4f8620ba39934fe80cd2cc72a21ea33aa3fa88a6b876a20981f26"
     },
     "CANON_SOURCES.jsonl": {
-      "records": 86,
-      "bytes": 52837,
-      "sha256": "7d293a2ef29cfaae69046f4bd7a5560424fb6b2346e189ca52006e578d56d54b"
+      "records": 92,
+      "bytes": 56981,
+      "sha256": "dc660146e421e32524d3df2aed69b5c6865e3a46a2eb1f2e293f51c704b3fe29"
     },
     "CANON_PASSAGES.jsonl": {
-      "records": 119,
-      "bytes": 108997,
-      "sha256": "a9674c0dcbffa292fd9ac52879d0fdb3c547d03efe25e6b43047f95531c6d5c4"
+      "records": 125,
+      "bytes": 114986,
+      "sha256": "db66d97ee18abc5e7d598e8a938ff88e49fba93bbcfcffcbe22c93c387b2d30b"
     },
     "TERM_DECISIONS.jsonl": {
-      "records": 271,
-      "bytes": 250876,
-      "sha256": "5ad498255df6e3cd57f67af0f739170e971d7566e778ed4cda36e4fcbaf01bc3"
+      "records": 280,
+      "bytes": 263609,
+      "sha256": "2d804b45d49f146b73b75d4947ee7c93ff383495b531492b69bfbb2c0621b6ca"
     }
   },
   "sanitization": {

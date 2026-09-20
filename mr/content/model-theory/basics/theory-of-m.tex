@@ -1,0 +1,68 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: theory-of-m
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{thm}
+
+\section{\printtoken{S}{structure} ची उपपत्ती}
+
+प्रत्येक !!{structure}~$\Struct{M}$ काही !!{sentence}s सत्य ठरवते आणि
+काही असत्य ठरवते. ती सत्य ठरवत असलेल्या सर्व !!{sentence}s च्या संचाला
+तिची \emph{उपपत्ती} म्हणतात. तो संच खरोखरच एक उपपत्ती असतो, कारण
+त्याच्यापासून तार्किकरीत्या निष्पन्न होणारे काहीही त्याच्या सर्व
+प्रतिमानांमध्ये, आणि त्यांत~$\Struct{M}$ चाही समावेश होतो, सत्य असले
+पाहिजे.
+
+\begin{defn}
+  !!a{structure}~$\Struct M$ दिलेली असताना, $\Struct{M}$ ची
+  \emph{उपपत्ती} म्हणजे $\Struct{M}$ मध्ये सत्य असलेल्या !!{sentence}s
+  चा संच $\Theory{M}$ होय; म्हणजे, $\Theory{M} =
+  \Setabs{!A}{\Sat{M}{!A}}$.
+\end{defn}
+
+अभिप्रेत अर्थनिर्धारण असलेल्या !!{sentence}s च्या संचांसाठीही आपण
+``उपपत्ती'' हा शब्द अनौपचारिकपणे वापरतो, मग ते संच निगामीदृष्ट्या बंद
+असोत किंवा नसोत.
+
+\begin{prop}
+कोणत्याही $\Struct{M}$ साठी $\Theory{M}$ संपूर्ण असते.
+\end{prop}
+
+\begin{proof}
+कोणत्याही !!{sentence}~$!A$ साठी एकतर $\Sat{M}{!A}$ किंवा
+$\Sat{M}{\lnot !A}$; म्हणून एकतर $!A \in \Theory{M}$ किंवा
+$\lnot !A \in \Theory{M}$.
+\end{proof}
+
+\begin{prop}\ollabel{prop:equiv}
+  प्रत्येक $!A \in \Theory{M}$ साठी $\Struct{N} \models !A$ असेल,
+  तर $\Struct{M} \elemequiv \Struct{N}$.
+\end{prop}
+
+\begin{proof}
+सर्व $!A \in \Theory{M}$ साठी $\Sat{N}{!A}$ असल्यामुळे
+$\Theory{M} \subseteq \Theory{N}$. जर $\Sat{N}{!A}$, तर
+$\Sat/{N}{\lnot !A}$; म्हणून $\lnot !A \notin \Theory{M}$.
+$\Theory{M}$ संपूर्ण असल्यामुळे $!A \in \Theory{M}$. म्हणून
+$\Theory{N} \subseteq \Theory{M}$ आणि आपल्याला
+$\Struct{M} \elemequiv \Struct{N}$ मिळते.
+\end{proof}
+
+\begin{rem}\ollabel{remark:R}
+  $\Struct{R} = \langle\Real, <\rangle$ विचारात घ्या. या
+  !!{structure} चा प्रांत म्हणजे वास्तव संख्यांचा संच~$\Real$ असून,
+  ती फक्त एक 2-स्थानी !!{predicate} असलेल्या !!{language} साठीची रचना
+  आहे; त्या विधेयाचे अर्थनिर्धारण वास्तव संख्यांवरील $<$ संबंध असे केले
+  आहे. स्पष्टपणे $\Struct{R}$ ही !!{nonenumerable} आहे; पण
+  $\Theory{R}$ उघडपणे सुसंगत असल्यामुळे लोव्हेनहाइम--स्कोलेम प्रमेयाने
+  तिला एक !!a{enumerable} प्रतिमान असते, त्याला $\Struct{S}$ म्हणू.
+  \olref{prop:equiv} नुसार $\Struct{R} \equiv \Struct{S}$. शिवाय,
+  $\Struct{R}$ आणि $\Struct{S}$ या समरूपी नसल्यामुळे यावरून
+  \olref[iso]{thm:isom} चा उलट दावा सर्वसाधारणपणे खोटा ठरतो.
+\end{rem}
+
+\end{document}

@@ -1,0 +1,88 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: partial-iso
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{dlo}
+\section{सघन रेषीय क्रम}
+
+\begin{defn}
+  \emph{अंतबिंदुविरहित सघन रेषीय क्रम} म्हणजे एकच 2-स्थानी
+  !!{predicate}~$<$ असलेल्या !!{language} साठीची आणि पुढील वाक्ये पूर्ण
+  करणारी !!a{structure}~$\Struct{M}$ होय:
+  \begin{enumerate}
+  \item $\lforall[x][\lnot x < x]$;
+  \item $\lforall[x][\lforall[y][\lforall[z][(x < y \lif (y < z \lif x
+    <z ))]]]$;
+  \item $\lforall[x][\lforall[y][(x< y \lor \eq[x][y] \lor y < x)]]$;
+  \item $\lforall[x][\lexists[y][x < y]]$;
+  \item $\lforall[x][\lexists[y][y < x]]$;
+  \item $\lforall[x][\lforall[y][(x < y \lif \lexists[z][(x < z \land
+        z < y))]]]$.
+ \end{enumerate}
+\end{defn}
+
+\begin{thm}\ollabel{thm:cantorQ}
+  कोणतेही दोन !!{enumerable} अंतबिंदुविरहित सघन रेषीय क्रम समरूपी
+  असतात.
+\end{thm}
+
+\begin{proof}
+  $\Struct{M_1}$ आणि $\Struct{M_2}$ हे !!{enumerable} अंतबिंदुविरहित
+  सघन रेषीय क्रम असू द्या, जेथे ${<_1} = \Assign{<}{M_1}$ आणि ${<_2} =
+  \Assign{<}{M_2}$; तसेच $\PIso{I}$ हा त्यांच्यामधील सर्व आंशिक
+  समरूपणांचा संच असू द्या. किमान $\emptyset \in \PIso{I}$ असल्यामुळे
+  $\PIso{I}$ रिक्त नाही. $\PIso{I}$ हा पुढे-मागे गुणधर्म पूर्ण करतो हे
+  आपण दाखवतो. मग $\Struct{M_1} \iso[p] \Struct{M_2}$; आणि
+  \olref[pis]{thm:p-isom1} नुसार प्रमेय सिद्ध होते.
+
+  $\PIso{I}$ हा पुढे गुणधर्म पूर्ण करतो हे दाखवण्यासाठी $p \in
+  \PIso{I}$ असू द्या, $i = 1$, \dots,~$n$ साठी $p(a_i) = b_i$ असू द्या
+  आणि सर्वसाधारणतेला बाधा न आणता $a_1 <_1 a_2 <_1 \cdots <_1 a_n$
+  असे समजा. $a \in \Domain{M_1}$ दिलेला असताना, तो आधीच त्या नकाशाच्या
+  प्रांतात असेल, तर तोच नकाशा अपेक्षित विस्तार आहे. नकाशा रिक्त असेल,
+  तर दुसऱ्या रचनेच्या अरिक्त प्रांतातील कोणताही घटक प्रतिमा म्हणून
+  निवडून त्याची दिलेल्या घटकाबरोबरची जोडी त्या नकाशात घालता येते.
+  उरलेल्या प्रकरणांत
+  पुढीलप्रमाणे $b \in \Domain{M_2}$ शोधा:
+  %READERNOTE{OLFOL-028 — गोठवलेल्या इंग्रजी पुराव्यात p च्या प्रांतात a आधीच असण्याचे आणि p रिक्त असण्याचे प्रसंग वगळले आहेत; परंतु I मध्ये रिक्त नकाशा स्पष्टपणे समाविष्ट आहे. मराठी पुराव्यात सूत्रे न बदलता हे दोन प्रसंग जोडले आहेत.}
+  \begin{enumerate}
+  \item जर $a <_1 a_1$, तर $b <_2 b_1$ असेल असा $b \in
+    \Domain{M_2}$ घ्या;
+  \item जर $a_n <_1 a$, तर $b_n <_2 b$ असेल असा $b \in \Domain{M_2}$ घ्या;
+ \item एखाद्या $i$ साठी $a_i <_1 a <_1 a_{i+1}$ असेल, तर $b_i <_2 b
+   <_2 b_{i+1}$ असेल असा $b \in \Domain{M_2}$ घ्या.
+  \end{enumerate}
+  $\Struct{M_2}$ हा अंतबिंदुविरहित सघन रेषीय क्रम असल्यामुळे अपेक्षित
+  गुणधर्म असलेला $b$ नेहमी शोधता येतो. $q = p \cup \{ \langle a, b
+  \rangle \}$ असे परिभाषित करा; मग $q \in \PIso{I}$ हा $p$ चा अपेक्षित
+  विस्तार आहे. यावरून पुढे गुणधर्म प्रस्थापित होतो. मागे गुणधर्मही
+  याचप्रमाणे सिद्ध होतो. म्हणून $\Struct{M_1} \iso[p]
+  \Struct{M_2}$; \olref[pis]{thm:p-isom1} नुसार $\Struct{M_1} \iso
+  \Struct{M_2}$.
+\end{proof}
+
+\begin{prob}
+  $\PIso{I}$ हा मागे गुणधर्म पूर्ण करतो, हे तपासून
+  \olref[mod][bas][dlo]{thm:cantorQ} चा पुरावा पूर्ण करा.
+\end{prob}
+
+\begin{rem}
+  $\Struct{S}$ हा कोणताही !!{enumerable} अंतबिंदुविरहित सघन रेषीय क्रम
+  असू द्या. मग (\olref{thm:cantorQ} नुसार) $\Struct{S} \iso
+  \Struct{Q}$, जेथे $\Struct{Q} = (\Rat, <)$ हा परिमेय संख्यांचा संच
+  $\Rat$ प्रांत म्हणून असलेला !!{enumerable} सघन रेषीय क्रम आहे. आता
+  \olref[thm]{remark:R} मधील !!{structure}~$\Struct{R} = (\Real, <)$
+  पुन्हा विचारात घ्या. असा !!a{enumerable} !!{structure}~$\Struct{S}$
+  आहे की $\Struct{R} \elemequiv \Struct{S}$, हे आपण पाहिले. पण
+  $\Struct{S}$ हा !!a{enumerable} अंतबिंदुविरहित सघन रेषीय क्रम आहे;
+  म्हणून तो !!{structure}~$\Struct{Q}$ शी समरूपी (आणि म्हणून प्राथमिक
+  सममूल्य) आहे. प्राथमिक सममूल्यतेच्या संक्रमणकतेने $\Struct{R}
+  \elemequiv \Struct{Q}$. (हाच पुढे-मागे युक्तिवाद वापरून
+  $\Struct{R} \iso[p] \Struct{Q}$ प्रस्थापित करून आपण हे थेटही दाखवू
+  शकलो असतो.)
+\end{rem}
+\end{document}

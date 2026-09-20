@@ -1,0 +1,225 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: partial-iso
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{pis}
+\section{आंशिक समरूपणे}
+
+\begin{defn}
+  दोन !!{structure}s $\Struct{M}$ आणि $\Struct{N}$ दिलेल्या असताना,
+  $\Struct{M}$ पासून $\Struct{N}$ कडेचे \emph{आंशिक समरूपण} म्हणजे
+  $\Domain M$ मधील घटक आदान म्हणून घेऊन $\Domain N$ मध्ये मूल्ये देणारे
+  असे सांत अंशतः फलन $p$, जे आपल्या प्रांतावर
+  \olref[iso]{defn:isomorphism} मधील समरूपणाच्या अटी पूर्ण करते:
+  \begin{enumerate}
+  \item $p$ हे !!{injective} आहे;
+  \item प्रत्येक !!{constant}~$c$ साठी: $p(\Assign{c}{M})$ परिभाषित
+    असेल, तर $p(\Assign{c}{M}) = \Assign{c}{N}$;
+  \item प्रत्येक $n$-स्थानी !!{predicate} $P$ साठी: $a_1$, \dots, $a_n$
+    हे $p$ च्या प्रांतात असतील, तर $\langle a_1, \dots, a_n\rangle \in
+    \Assign P M$ तेव्हा आणि केवळ तेव्हाच जेव्हा $\langle p(a_1), \dots, p(a_n) \rangle
+    \in \Assign P N$;
+  \item प्रत्येक $n$-स्थानी !!{function} $f$ साठी: $a_1$, \dots, $a_n$
+    हे $p$ च्या प्रांतात असतील, तर $p(\Assign f M (a_1, \dots,a_n))
+    = \Assign f N (p(a_1), \dots, p(a_n))$.
+  \end{enumerate}
+  $p$ सांत असण्याचा अर्थ $\dom{p}$ सांत असतो.
+\end{defn}
+
+लक्षात घ्या की रिक्त फलन~$\emptyset$ हे कोणत्याही दोन !!{structure}s
+मधील आंशिक समरूपण नेहमीच असते.
+
+\begin{defn}\ollabel{defn:partialisom}
+  दोन !!{structure}s $\Struct{M}$ आणि $\Struct{N}$ यांना
+  \emph{आंशिकरीत्या समरूपी} म्हणतात आणि $\Struct{M} \iso[p]
+  \Struct{N}$ असे लिहितात, तेव्हा आणि केवळ तेव्हाच जेव्हा
+  $\Struct{M}$ आणि $\Struct{N}$ यांमधील आंशिक समरूपणांचा अरिक्त संच $I$
+  पुढील \emph{पुढे-मागे} गुणधर्म पूर्ण करतो:
+  \begin{enumerate}
+  \item (\emph{पुढे}) प्रत्येक $p \in I$ आणि $a \in \Domain M$ साठी असा
+    $q \in I$ असतो की $p \subseteq q$ आणि $a$ हा $q$ च्या प्रांतात
+    असतो;
+  \item (\emph{मागे}) प्रत्येक $p \in I$ आणि $b \in \Domain N$ साठी असा
+    $q \in I$ असतो की $p \subseteq q$ आणि $b$ हा $q$ च्या व्याप्तीत
+    असतो.
+  \end{enumerate}
+\end{defn}
+
+\begin{thm}\ollabel{thm:p-isom1}
+  $\Struct{M} \iso[p] \Struct{N}$ असून $\Struct{M}$ आणि
+  $\Struct{N}$ या !!{enumerable} असतील, तर $\Struct{M} \iso
+  \Struct{N}$.
+\end{thm}
+
+\begin{proof}
+  $\Struct{M}$ आणि $\Struct{N}$ या !!{enumerable} असल्यामुळे
+  $\Domain{M} = \{a_0, a_1, \ldots \}$ आणि $\Domain{N} = \{b_0, b_1,
+  \ldots \}$ असे मानू. मनमाना $p_0 \in I$ घेऊन सुरुवात करून, आंशिक
+  समरूपणांची वाढती क्रमिका $p_0 \subseteq p_1 \subseteq p_2
+  \subseteq \cdots$ पुढीलप्रमाणे परिभाषित करतो:
+  \begin{enumerate}
+  \item $n+1$ विषम असेल, म्हणजे $n = 2r$ असेल, तर पुढे गुणधर्म वापरून
+    असा $p_{n+1} \in I$ शोधा की $p_n \subseteq p_{n+1}$
+    आणि $a_r$ हा $p_{n+1}$ च्या प्रांतात असेल;
+  \item $n+1$ सम असेल, म्हणजे $n+1 =2r$ असेल, तर मागे गुणधर्म वापरून
+    असा $p_{n+1} \in I$ शोधा की $p_n \subseteq p_{n+1}$
+    आणि $b_r$ हा $p_{n+1}$ च्या व्याप्तीत असेल.
+  \end{enumerate}
+आता
+\[
+p = \bigcup_{n\ge 0} p_n,
+\]
+असे ठेवले, तर $p$ हे $\Struct{M}$ आणि $\Struct{N}$ यांमधील समरूपण
+असते.
+\end{proof}
+
+\begin{prob}
+  \olref[mod][bas][pis]{thm:p-isom1} मध्ये परिभाषित केलेले $p$ खरोखरच
+  समरूपण आहे, हे सविस्तर दाखवा.
+\end{prob}
+
+\begin{thm}\ollabel{thm:p-isom2}
+  $\Struct{M}$ आणि $\Struct{N}$ या निव्वळ संबंधात्मक !!{language}
+  साठीच्या !!{structure}s आहेत असे समजा (म्हणजे फक्त !!{predicate}s
+  असलेली आणि !!{function}s किंवा स्थिरे नसलेली !!a{language}). मग
+  $\Struct{M} \iso[p] \Struct{N}$ असेल, तर
+  $\Struct{M} \elemequiv \Struct{N}$ सुद्धा असते.
+\end{thm}
+
+\begin{proof}
+  !!{formula}s वरील विगमनाने पुढील गोष्ट दाखवता येते. $a_1$, \dots,
+  $a_n$ आणि $b_1$, \dots, $b_n$ यांसाठी प्रत्येक $a_i$ ला $b_i$ कडे
+  नेणारे आंशिक समरूपण $p$ असेल, तसेच $s_1(x_i) =a_i$ आणि $s_2(x_i) =b_i$
+  ($i =1$, \dots,~$n$ साठी) असेल, तर $\Sat{M}{!A}[s_1]$ तेव्हा आणि
+  केवळ तेव्हाच जेव्हा $\Sat{N}{!A}[s_2]$. $n=0$ चे प्रकरण
+  $\Struct{M} \elemequiv \Struct{N}$ देते.
+\end{proof}
+
+\begin{rem}
+!!{function}s उपस्थित असतील, तरी मागील निष्कर्ष सत्य असतो; पण $a_1$,
+\dots, $a_n$ यांनी निर्मित $\Struct{M}$ च्या sub!!{structure} आणि
+$b_1$, \dots, $b_n$ यांनी निर्मित $\Struct{N}$ च्या
+sub!!{structure} यांमध्ये $p$ ने प्रेरित केलेले समरूपण विचारात घ्यावे
+लागते.
+\end{rem}
+
+मागील निष्कर्षाचे टप्प्यांत ``विघटन'' करता येते: !!a{formula} मध्ये
+एकमेकांत अंतर्भूत संख्यापकांची संख्या आणि संबंधित आंशिक समरूपणांचा
+किती वेळा विस्तार करता येतो यांचा संबंध प्रस्थापित करावा लागतो.
+
+\begin{defn}
+  कोणतेही !!{formula}~$!A$ दिले असता, $!A$ चा
+  \emph{संख्यापक-प्रतांक}, $\QuantRank{!A} \in \Nat$, म्हणजे $!A$ मध्ये एकमेकांत अंतर्भूत
+  संख्यापकांची कमाल संख्या; तो पुनरावर्ती रीतीने परिभाषित केला जातो.
+  दोन !!{structure}s $\Struct{M}$ आणि $\Struct{N}$ यांना
+  \emph{$n$-सममूल्य} म्हणतात आणि $\Struct{M} \elemequiv[n] \Struct{N}$
+  असे लिहितात, जर संख्यापक-प्रतांक जास्तीत जास्त~$n$ असलेल्या सर्व
+  वाक्यांबाबत त्या एकमत असतील.
+\end{defn}
+
+\begin{prop}\ollabel{prop:qr-finite}
+  $\Lang{L}$ ही सांत निव्वळ संबंधात्मक !!{language} असू द्या, म्हणजे
+  सांत इतकी !!{predicate}s आणि !!{constant}s असलेली, पण !!{function}s
+  नसलेली !!{language}. मग प्रत्येक $n \in \Nat$ साठी, तार्किक
+  सममूल्यतेपर्यंत, !!{language} $\Lang{L}$ मध्ये संख्यापक-प्रतांक
+  जास्तीत जास्त $n$ असलेली प्रथम-क्रम !!{sentence}s सांत इतकीच असतात.
+\end{prop}
+
+\begin{proof}
+  $n$ वरील विगमनाने.
+\end{proof}
+
+\begin{defn}
+  !!a{structure}~$\Struct{M}$ दिलेली असताना, $\Domain M^{<\omega}$ हा
+  $\Domain{M}$ वरील सर्व सांत क्रमिकांचा संच असू द्या. घटकांच्या सांत
+  क्रमिकांवर $\mathbf{a}, \mathbf{b}, \mathbf{c}, \ldots$ ही चले वापरतो.
+  जर $\mathbf{a} \in \Domain{M}^{<\omega}$ आणि $a \in \Domain{M}$,
+  तर $\mathbf{a}a$ हे $\mathbf{a}$ आणि $a$ यांची \emph{जोडणी} दर्शवते.
+\end{defn}
+
+\begin{defn}
+  !!{structure}s $\Struct{M}$ आणि $\Struct{N}$ दिलेल्या असताना, समान
+  लांबीच्या क्रमिकांमधील संबंध $I_n \subseteq \Domain M^{<\omega}
+  \times \Domain N^{<\omega}$ हे $n$ वरील पुनरावर्तनाने पुढीलप्रमाणे
+  परिभाषित करतो:
+   \begin{enumerate}
+   \item $I_0(\mathbf{a},\mathbf{b})$ तेव्हा आणि केवळ तेव्हाच जेव्हा
+     $\mathbf{a}$ आणि $\mathbf{b}$ या अनुक्रमे $\Struct{M}$ आणि
+     $\Struct{N}$ मध्ये तीच आण्विक !!{formula}s पूर्ण करतात; म्हणजे,
+     त्या क्रमिकांची समान लांबी k असेल, $s_1(x_i) = a_i$ आणि $s_2(x_i) =
+     b_i$ असेल आणि $!A$ हे आण्विक असून त्यातील सर्व !!{variable}s
+     $x_1$, \dots,~$x_k$ यांपैकी असतील, तर $\Sat{M}{!A}[s_1]$ तेव्हा आणि
+     केवळ तेव्हाच जेव्हा~$\Sat{N}{!A}[s_2]$.
+   %READERNOTE{OLFOL-027 — गोठवलेल्या इंग्रजी व्याख्येत क्रमिकेची लांबी आणि पुनरावर्तनाचा प्रतांक या दोन्हींसाठी n वापरल्यामुळे I_0 येथे चलरहित आण्विक सूत्रांपुरते चुकून मर्यादित होते. समान क्रमिकेची लांबी k अशी स्वतंत्र खूण घेऊन मराठी व्याख्या दुरुस्त केली आहे.}
+   \item $I_{n+1} (\mathbf{a},\mathbf{b})$ तेव्हा आणि केवळ तेव्हाच
+     जेव्हा प्रत्येक $a\in \Domain M$ साठी असा $b\in \Domain N$ असतो की
+     $I_n (\mathbf{a}a,\mathbf{b}b)$, आणि उलटही.
+   \end{enumerate}
+\end{defn}
+
+
+\begin{defn}
+  $\Struct{M}$ आणि $\Struct{N}$ यांच्यासाठी
+  $I_n(\emptyseq,\emptyseq)$ खरे असेल, तर $\Struct{M} \approx_n
+  \Struct{N}$ असे लिहितो (येथे $\emptyseq$ ही रिक्त क्रमिका आहे).
+\end{defn}
+
+\begin{thm}\ollabel{thm:b-n-f}
+  $\Lang{L}$ ही निव्वळ संबंधात्मक !!{language} असू द्या. मग
+  $I_n (\mathbf{a},\mathbf{b})$ असल्यास, $\QuantRank{!A} \le n$ असलेल्या
+  प्रत्येक $!A$ साठी $\Sat{M}{!A}[\mathbf{a}]$ तेव्हा आणि केवळ तेव्हाच
+  जेव्हा $\Sat{N}{!A}[\mathbf{b}]$ (येथे पुन्हा, $s(x_i) = a_i$ असणारे
+  कोणतेही $s$ जर $!A$ पूर्ण करत असेल, तर $\mathbf{a}$ हे $!A$ पूर्ण
+  करते). शिवाय, $\Lang{L}$ सांत असेल, तर उलट दावाही खरा असतो.
+\end{thm}
+
+\begin{proof}
+  $I_n(\mathbf{a},\mathbf{b})$ यावरून $\mathbf{a}$ आणि $\mathbf{b}$
+  संख्यापक-प्रतांक जास्तीत जास्त $n$ असलेली तीच !!{formula}s पूर्ण करतात,
+  हा पुरावा $!A$ वरील सोप्या विगमनाने मिळतो. उलट दाव्यासाठी आपण $n$
+  वरील विगमन करतो आणि \olref{prop:qr-finite} वापरतो; त्यावरून प्रत्येक
+  $n$ साठी त्या संख्यापक-प्रतांकाची परस्पर तार्किकदृष्ट्या असममूल्य
+  !!{formula}s जास्तीत जास्त सांत इतकी असतात.
+
+  $n=0$ साठी, $\mathbf{a}$ आणि $\mathbf{b}$ ही तीच संख्यापकमुक्त
+  !!{formula}s पूर्ण करतात या गृहीतकावरून ती तीच आण्विक सूत्रे पूर्ण करतात;
+  म्हणून $I_0(\mathbf{a},\mathbf{b})$.
+
+  $n+1$ च्या प्रकरणासाठी, $\mathbf{a}$ आणि $\mathbf{b}$ ही
+  संख्यापक-प्रतांक जास्तीत जास्त $n+1$ असलेली तीच !!{formula}s पूर्ण
+  करतात असे समजा. $I_{n+1}(\mathbf{a},\mathbf{b})$ दाखवण्यासाठी प्रत्येक
+  $a \in \Domain M$ साठी असा $b \in \Domain N$ असतो की
+  $I_n(\mathbf{a}a,\mathbf{b}b)$, एवढे दाखवणे पुरेसे आहे; आणि विगमन
+  गृहीतकाने प्रत्येक $a \in \Domain M$ साठी असा $b \in \Domain N$ असतो
+  की $\mathbf{a}a$ आणि $\mathbf{b}b$ ही संख्यापक-प्रतांक जास्तीत जास्त
+  $n$ असलेली तीच !!{formula}s पूर्ण करतात, एवढे दाखवणे पुन्हा पुरेसे आहे.
+
+  $a \in \Domain M$ दिलेला असताना, $\Struct{M}$ मध्ये $\mathbf{a}a$ ने
+  पूर्ण केलेल्या, प्रतांक जास्तीत जास्त $n$ असलेल्या
+  $!B(x,\mathbf{y})$ या !!{formula}s चा संच $!T^a_n$ असू द्या.
+  $!T^a_n$ सांत आहे, म्हणून त्यातील सूत्रांचा संयोग असलेले एकच प्रथम-क्रम
+  !!{formula} म्हणून त्याचा विचार करू शकतो. यावरून $\mathbf{a}$ हे
+  $\lexists[x][!T^a_n(x,\mathbf{y})]$ पूर्ण करते; या सूत्राचा
+  संख्यापक-प्रतांक जास्तीत जास्त $n+1$ आहे. गृहीतकानुसार $\mathbf{b}$ हे
+  $\Struct{N}$ मध्ये तेच !!{formula} पूर्ण करते; म्हणून असा $b \in
+  \Domain N$ असतो की $\mathbf{b}b$ हे $!T^a_n$ पूर्ण करते. विशेषतः,
+  $\mathbf{b}b$ ही $\mathbf{a}a$ प्रमाणेच संख्यापक-प्रतांक जास्तीत जास्त
+  $n$ असलेली सर्व !!{formula}s पूर्ण करते. त्याचप्रमाणे, प्रत्येक $b \in
+  \Domain N$ साठी असा $a\in \Domain M$ असतो की $\mathbf{a}a$ आणि
+  $\mathbf{b}b$ ही संख्यापक-प्रतांक जास्तीत जास्त $n$ असलेली तीच
+  !!{formula}s पूर्ण करतात, हे दाखवता येते; त्यामुळे पुरावा पूर्ण होतो.
+\end{proof}
+
+\begin{cor}\ollabel{cor:b-n-f}
+  $\Struct{M}$ आणि $\Struct{N}$ या सांत !!{language} मधील निव्वळ
+  संबंधात्मक !!{structure}s असतील, तर $\Struct{M} \approx_n\Struct{N}$
+  तेव्हा आणि केवळ तेव्हाच जेव्हा $\Struct{M} \elemequiv[n] \Struct{N}$.
+  विशेषतः, $\Struct{M} \elemequiv \Struct{N}$ तेव्हा आणि केवळ तेव्हाच
+  जेव्हा प्रत्येक $n$ साठी $\Struct{M} \approx_n \Struct{N}$.
+\end{cor}
+
+\end{document}

@@ -258,6 +258,14 @@ _DOCUMENTED_PROJECTIONS = {
         ('प्रकार~$\\tau$ च्या कोणत्याही~$x$ साठी',
          'प्रकार~$\\sigma$ च्या कोणत्याही~$x$ साठी'),
     ],
+    'OLP-0187': [
+        ("\\Value{t}{M'}[h \\circ s] & = \\Assign{f}{M'}(",
+         "\\Value{t}{M'}[h \\circ s] & = \\Assign{f}{M}("),
+    ],
+    'OLP-0189': [
+        ('$x_1$, \\dots,~$x_k$',
+         '$x_1$, \\dots,~$x_n$'),
+    ],
 }
 
 

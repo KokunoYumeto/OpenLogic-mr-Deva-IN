@@ -1,0 +1,41 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: overspill
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{ove}
+\olsection{सांत मर्यादेपलीकडील प्रसरण}
+
+\begin{thm}
+\ollabel{overspill} वाक्यांचा एखादा संच $\Gamma$ याला हवे तितके मोठे
+सांत प्रतिमान असतील, तर त्याला एक अनंत प्रतिमान असते.
+\end{thm}
+
+\begin{proof}
+$c_0$, $c_1$, \dots ही गणनीय इतकी नवीन स्थिरे जोडून $\Gamma$ च्या भाषेचा
+विस्तार करा आणि $\Gamma \cup \{c_i \neq c_j : i \neq j\}$ हा संच विचारात
+घ्या. $\Gamma$ ला हवे तितके मोठे सांत प्रतिमान आहेत, याचा अर्थ प्रत्येक
+$m >0$ साठी असा $n\ge m$ असतो की $\Gamma$ ला आकारमान~$n$ चे प्रतिमान
+असते. यावरून $\Gamma \cup \{c_i \neq c_j : i \neq j\}$ सांततः
+पूर्ततायोग्य आहे. संहततेनुसार $\Gamma \cup \{c_i \neq c_j : i \neq j\}$
+याला प्रतिमान $\Struct M$ असते; त्याचा प्रांत अनंत असलाच पाहिजे, कारण ते
+$c_i \neq c_j$ या सर्व असमानतांची पूर्ति करते.
+\end{proof}
+
+\begin{prop}
+\ollabel{inf-not-fo}
+कोणत्याही प्रथम-क्रम भाषेत असे कोणतेही वाक्य $!A$ नाही की ते
+!!a{structure}~$\Struct M$ मध्ये तेव्हा आणि केवळ तेव्हाच सत्य असते, जेव्हा
+त्या !!{structure} चा प्रांत $\Domain{M}$ अनंत असतो.
+\end{prop}
+
+\begin{proof}
+असे एखादे $!A$ असते, तर त्याचे नकरण $\lnot !A$ सर्व आणि फक्त सांत
+!!{structure}s मध्ये सत्य असते. म्हणून त्याला हवे तितके मोठे सांत प्रतिमान
+असतात, पण अनंत प्रतिमान नसते; हे \olref{overspill} शी विसंगत आहे.
+\end{proof}
+
+\end{document}

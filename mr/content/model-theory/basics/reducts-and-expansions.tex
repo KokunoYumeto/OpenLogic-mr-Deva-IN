@@ -1,0 +1,67 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: reducts-and-expansions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{red}
+\section{न्यूनीकृत आणि विस्तारित रचना}
+
+ज्या भाषांत काही चिन्हे समान आहेत अशा भाषांची, तसेच त्या भाषांसाठीच्या
+!!{structure}s ची, तुलना करणे अनेकदा उपयुक्त किंवा आवश्यक असते. सर्वांत
+नेहमीचे प्रकरण असे असते की !!a{language}~$\Lang{L}$ मधील सर्व चिन्हे
+!!a{language}~$\Lang{L'}$ मध्येही असतात, म्हणजे $\Lang{L} \subseteq
+\Lang{L'}$. मग अतिरिक्त चिन्हांची अर्थनिर्धारणे जोडून आणि समान चिन्हांची
+अर्थनिर्धारणे तशीच ठेवून $\Lang{L}$-!!{structure}~$\Struct{M}$ चा विस्तार
+नेहमीच $\Lang{L'}$-!!{structure} मध्ये करता येतो. दुसरीकडे,
+$\Lang{L}$ मध्ये नसलेल्या चिन्हांची अर्थनिर्धारणे केवळ ``विसरून''
+$\Lang{L'}$-रचना~$\Struct{M'}$ पासून $\Lang{L}$-रचना मिळवता येते.
+
+\begin{defn}
+\ollabel{defn:reduct}
+समजा $\Lang L \subseteq \Lang L'$, $\Struct M$ ही
+$\Lang L$-!!{structure} आणि $\Struct M'$ ही $\Lang L'$-!!{structure} आहे.
+$\Struct M$ ही $\Struct M'$ ची $\Lang L$ पर्यंतची \emph{न्यूनीकृत रचना}
+आणि $\Struct M'$ ही $\Struct M$ ची $\Lang L'$ पर्यंतची
+\emph{विस्तारित रचना} असेल तेव्हा आणि केवळ तेव्हाच पुढील अटी पूर्ण होतात:
+\begin{enumerate}
+\item $\Domain{M} = \Domain{M'}$
+\item प्रत्येक !!{constant}~$c \in \Lang L$ साठी $\Assign{c}{M} =
+  \Assign{c}{M'}$.
+\item प्रत्येक !!{function}~$f \in \Lang L$ साठी $\Assign{f}{M} =
+  \Assign{f}{M'}$.
+\item प्रत्येक !!{predicate}~$P \in \Lang L$ साठी $\Assign{P}{M} =
+  \Assign{P}{M'}$.
+\end{enumerate}
+\end{defn}
+
+\begin{prop}
+\ollabel{prop:reduct}
+एखादी $\Lang{L}$-!!{structure}~$\Struct{M}$ ही एखाद्या
+$\Lang{L'}$-!!{structure}~$\Struct{M'}$ ची न्यूनीकृत रचना असेल, तर सर्व
+$\Lang{L}$-!!{sentence}s~$!A$ साठी,
+\[
+\Sat{M}{!A} \text{ iff } \Sat{M'}{!A}.
+\]
+\end{prop}
+
+\begin{proof}
+  सराव.
+\end{proof}
+
+\begin{prob}
+\olref[mod][bas][red]{prop:reduct} सिद्ध करा.
+\end{prob}
+
+\begin{defn}
+आपल्याकडे $\Lang{L}$-रचना $\Struct{M}$ असेल, एका $n$-स्थानी
+!!{predicate}~$P$ ची भर घालून मिळालेला $\Lang{L}$ चा विस्तार
+$\Lang{L'} = \Lang{L} \cup \{P\}$ असेल, आणि $R \subseteq \Domain{M}^n$
+हा $n$-स्थानी संबंध असेल, तर $\Assign{P}{M'} = R$ असलेली
+$\Struct{M}$ ची विस्तारित रचना~$\Struct{M'}$ दर्शवण्यासाठी आपण
+$\Expan{M}{R}$ असे लिहितो.
+\end{defn}
+
+\end{document}

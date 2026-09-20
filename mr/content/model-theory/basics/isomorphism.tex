@@ -1,0 +1,133 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: isomorphism
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{iso}
+\olsection{समरूपी रचना}
+
+प्रथम-क्रमाच्या !!{structure}s दोन प्रकारे एकसारख्या असू शकतात. त्यांच्या
+सारखेपणाचा एक प्रकार असा की त्या तीच !!{sentence}s सत्य ठरवतात. अशा
+!!{structure}s ना आपण \emph{प्राथमिक सममूल्य} म्हणतो. परंतु रचना अतिशय
+भिन्न असूनही तीच !!{sentence}s सत्य ठरवू शकतात---उदाहरणार्थ, एक रचना
+!!{enumerable} असू शकते आणि दुसरी नसू शकते. याचे कारण असे की
+!!a{structure} ची पुष्कळ वैशिष्ट्ये प्रथम-क्रम भाषांमध्ये व्यक्त करता येत
+नाहीत: कधी भाषा पुरेशी समृद्ध नसते, तर कधी लोव्हेनहाइम--स्कोलेम
+प्रमेयासारख्या प्रथम-क्रम तर्कशास्त्राच्या मूलभूत मर्यादा आड येतात. म्हणून
+!!{structure}s च्या सारखेपणाचा दुसरा, अधिक काटेकोर प्रकार असा की त्या
+मूलतः एकच असतात: त्यांना घडवणाऱ्या वस्तू वेगळ्या असतात, पण त्यांची
+रचनात्मक वैशिष्ट्ये वेगळी नसतात. \emph{समरूपते} च्या संकल्पनेने हे नेमके
+मांडता येते.
+
+\begin{defn}
+\ollabel{defn:elem-equiv}
+एकाच !!{language}~$\Lang{L}$ साठीच्या दोन !!{structure}s $\Struct{M}$ आणि
+$\Struct M'$ दिलेल्या असताना, $\Lang{L}$ मधील प्रत्येक !!{sentence}~$!A$
+साठी $\Sat{M}{!A}$ तेव्हा आणि केवळ तेव्हाच जेव्हा $\Sat{M'}{!A}$ असेल,
+तर $\Struct{M}$ ही $\Struct M'$ शी \emph{प्राथमिक सममूल्य} आहे असे म्हणतो
+आणि $\Struct{M} \equiv \Struct M'$ असे लिहितो.
+\end{defn}
+
+\begin{defn}
+\ollabel{defn:isomorphism} एकाच !!{language}~$\Lang L$ साठीच्या दोन
+!!{structure}s $\Struct{M}$ आणि $\Struct M'$ दिलेल्या असताना, पुढील अटी
+पूर्ण करणारे $h \colon \Domain{M} \to \Domain{M'}$ फलन असेल, तर
+$\Struct{M}$ ही~$\Struct M'$ शी \emph{समरूपी} आहे असे म्हणतो आणि
+$\Struct{M} \simeq \Struct M'$ असे लिहितो:
+\begin{enumerate}
+\item $h$ हे !!{injective} आहे: $h(x) =
+  h(y)$ असेल, तर $x = y$;
+\item $h$ हे !!{surjective} आहे: प्रत्येक $y \in \Domain{M'}$ साठी
+  $h(x) = y$ असा $x \in \Domain{M}$ असतो;
+\item \ollabel{defn:iso-const}प्रत्येक !!{constant} $c$ साठी:
+  $h(\Assign{c}{M}) = \Assign{c}{M'}$;
+\item \ollabel{defn:iso-pred}प्रत्येक $n$-स्थानी !!{predicate}~$P$ साठी:
+  \[
+  \tuple{a_1, \dots, a_n}\in \Assign{P}{M} \quad\text{तेव्हा आणि केवळ तेव्हाच जेव्हा}\quad
+  \tuple{h(a_1), \dots, h(a_n)} \in \Assign{P}{M'};
+  \]
+\item \ollabel{defn:iso-func}प्रत्येक $n$-स्थानी !!{function} $f$ साठी:
+  \[
+  h(\Assign{f}{M}(a_1, \dots, a_n)) =
+  \Assign{f}{M'}(h(a_1), \dots, h(a_n)).
+  \]
+\end{enumerate}
+\end{defn}
+
+\begin{thm}
+\ollabel{thm:isom}
+$\Struct{M} \iso \Struct M'$ असेल, तर $\Struct{M} \elemequiv
+\Struct{M'}$.
+\end{thm}
+
+\begin{proof}
+$h$ हे $\Struct{M}$ पासून $\Struct M'$ वरचे समरूपण असू द्या. कोणत्याही
+मूल्यांकन~$s$ साठी $h \circ s$ हे $h$ आणि $s$ यांचे संयोजन असते, म्हणजे
+ते $\Struct{M'}$ मधील असे मूल्यांकन आहे की $(h \circ s)(x) = h(s(x))$.
+$t$ आणि $!A$ यांवरील विगमनाने पुढील अधिक सबळ दावे सिद्ध करता येतात:
+\begin{enumerate}
+  \item[a.] $h(\Value{t}{M}[s]) = \Value{t}{M'}[h\circ s]$.
+  \item[b.] $\Sat{M}{!A}[s]$ तेव्हा आणि केवळ तेव्हाच जेव्हा $\Sat{M'}{!A}[h \circ s]$.
+\end{enumerate}
+पहिला दावा~$t$ च्या गुंतागुंतीवरील विगमनाने सिद्ध होतो.
+\begin{enumerate}
+\item $t \ident c$ असेल, तर $\Value{c}{M}[s] = \Assign{c}{M}$ आणि
+  $\Value{c}{M'}[h \circ s] = \Assign{c}{M'}$. म्हणून
+  $h(\Value{t}{M}[s]) = h(\Assign{c}{M}) = \Assign{c}{M'}$
+  (\olref{defn:isomorphism} मधील \olref{defn:iso-const} नुसार) $=
+  \Value{t}{M'}[h \circ s]$.
+\item $t \ident x$ असेल, तर $\Value{x}{M}[s] = s(x)$ आणि
+  $\Value{x}{M'}[h \circ s] = h(s(x))$. म्हणून $h(\Value{x}{M}[s]) =
+  h(s(x)) = \Value{x}{M'}[h \circ s]$.
+\item $t \ident f(t_1, \dots, t_n)$ असेल, तर
+  \begin{align*}
+    \Value{t}{M}[s] & = \Assign{f}{M}(\Value{t_1}{M}[s], \dots, \Value{t_n}{M}[s]) \quad\text{आणि}\\
+  \Value{t}{M'}[h \circ s] & = \Assign{f}{M'}(\Value{t_1}{M'}[h \circ
+    s], \dots, \Value{t_n}{M'}[h \circ s]).
+  \end{align*}
+  %READERNOTE{OLFOL-026 — गोठवलेल्या इंग्रजी सूत्रात M-प्राइममधील पदमूल्य काढताना f चे अर्थनिर्धारण चुकून M मधील दिले आहे. व्याख्या आणि पुढील गणना यांनुसार येथे M-प्राइम असणे आवश्यक आहे; मराठी सूत्रात ती खूण दुरुस्त केली आहे.}
+  प्रत्येक $i$ साठी $h(\Value{t_i}{M}[s])
+  = \Value{t_i}{M'}[h\circ s]$ हे विगमन गृहीतक आहे. म्हणून
+  \begin{align}
+    h(\Value{t}{M}[s])
+    & = h(\Assign{f}{M}(\Value{t_1}{M}[s], \dots, \Value{t_n}{M}[s]) \notag\\
+    & = \Assign{f}{M'}(h(\Value{t_1}{M}[s]), \dots,
+    h(\Value{t_n}{M}[s])) \ollabel{iso-1}\\
+    & = \Assign{f}{M'}(\Value{t_1}{M'}[h \circ s], \dots,
+    \Value{t_n}{M'}[h \circ s]) \ollabel{iso-2}\\
+    & = \Value{t}{M'}[h\circ s] \notag
+  \end{align}
+  येथे \olref{iso-1} हे \olref{defn:isomorphism} मधील
+  \olref{defn:iso-func} वरून, तर \olref{iso-2} हे विगमन गृहीतकावरून मिळते.
+\end{enumerate}
+(b) भागाचा पुरावा सरावासाठी सोडला आहे.
+
+$!A$ हे वाक्य असेल, तर मूल्यांकने~$s$ आणि $h \circ s$ महत्त्वाची राहत
+नाहीत; म्हणून $\Sat{M}{!A}$ तेव्हा आणि केवळ तेव्हाच जेव्हा
+$\Sat{M'}{!A}$.
+\end{proof}
+
+\begin{prob}
+\olref[mod][bas][iso]{thm:isom} मधील (b) चा पुरावा सविस्तर पूर्ण करा.
+\olref[mod][bas][iso]{defn:isomorphism} मध्ये समरूपणाचे वैशिष्ट्य ठरवणाऱ्या
+पाचही गुणधर्मांपैकी प्रत्येक गुणधर्म कुठे वापरला आहे, ते नोंदवण्याची
+खात्री करा.
+\end{prob}
+
+\begin{defn}
+रचना $\Struct{M}$ ची \emph{स्वयंरूपता} म्हणजे $\Struct{M}$ पासून
+त्याच रचनेवर असलेले समरूपण होय.
+\end{defn}
+
+\begin{prob}
+कोणतीही रचना $\Struct{M}$ असू द्या. जर $X$ हा $\Struct{M}$ चा परिभाष्य
+उपसंच असेल आणि $h$ ही $\Struct{M}$ ची स्वयंरूपता असेल, तर $X
+= \Setabs{h(x)}{x \in X}$ हे दाखवा (म्हणजे $h$ अंतर्गत $X$ अपरिवर्तित
+राहतो).
+\end{prob}
+
+
+\end{document}

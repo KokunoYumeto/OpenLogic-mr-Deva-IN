@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
-This view contains 40 urgent/high decisions and
-1492 current occurrences. Normal and low items remain in the full index.
+This view contains 41 urgent/high decisions and
+1506 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -179,6 +179,12 @@ This view contains 40 urgent/high decisions and
 | `T013-OLP-0173-B011` | `OLP-0173` |  | 63-70 | 64-70 | pending |
 | `T013-OLP-0177-B011` | `OLP-0177` |  | 129-167 | 121-157 | pending |
 | `T013-OLP-0177-B015` | `OLP-0177` |  | 211-224 | 198-211 | pending |
+| `T013-OLP-0182-B004` | `OLP-0182` |  | 7-7 | 7-7 | pending |
+| `T013-OLP-0182-B005` | `OLP-0182` |  | 9-17 | 9-16 | pending |
+| `T013-OLP-0183-B004` | `OLP-0183` |  | 8-8 | 8-8 | pending |
+| `T013-OLP-0186-B005` | `OLP-0186` |  | 12-15 | 12-15 | pending |
+| `T013-OLP-0186-B006` | `OLP-0186` |  | 17-26 | 17-26 | pending |
+| `T013-OLP-0186-B008` | `OLP-0186` |  | 35-40 | 35-39 | pending |
 
 ## T014 — perfect number → परिपूर्ण संख्या
 
@@ -542,6 +548,9 @@ This view contains 40 urgent/high decisions and
 | `T039-OLP-0177-B013` | `OLP-0177` |  | 183-202 | 172-190 | pending |
 | `T039-OLP-0179-B027` | `OLP-0179` |  | 200-222 | 180-202 | pending |
 | `T039-OLP-0180-B008` | `OLP-0180` |  | 41-48 | 37-43 | pending |
+| `T039-OLP-0190-B004` | `OLP-0190` |  | 9-10 | 9-10 | pending |
+| `T039-OLP-0190-B005` | `OLP-0190` |  | 12-26 | 12-26 | pending |
+| `T039-OLP-0190-B010` | `OLP-0190` |  | 68-84 | 73-88 | pending |
 
 ## T040 — graph / directed graph / vertex / edge → आलेख / दिशित आलेख / शिखर / कड
 
@@ -1723,6 +1732,8 @@ This view contains 40 urgent/high decisions and
 | `T201-OLP-0148-B009` | `OLP-0148` |  | 50-55 | 51-56 | pending |
 | `T201-OLP-0173-B011` | `OLP-0173` |  | 63-70 | 64-70 | pending |
 | `T201-OLP-0177-B014` | `OLP-0177` |  | 204-209 | 192-196 | pending |
+| `T201-OLP-0187-B005` | `OLP-0187` |  | 12-24 | 12-23 | pending |
+| `T201-OLP-0188-B013` | `OLP-0188` |  | 51-62 | 55-66 | pending |
 
 ## T219 — free logic → मुक्त तर्कशास्त्र
 
@@ -1862,6 +1873,20 @@ This view contains 40 urgent/high decisions and
 |---|---|---|---|---|---|
 | `T269-OLP-0181-B005` | `OLP-0181` |  | 11-11 | 11-11 | pending |
 | `T269-OLP-0181-B007` | `OLP-0181` |  | 22-36 | 21-33 | pending |
+
+## T274 — overspill (arbitrarily large finite models imply an infinite model) → सांत मर्यादेपलीकडील प्रसरण
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: definition-explicit source-controlled rendering; exact headword unattested; high-priority expert review useful. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Is सांत मर्यादेपलीकडील प्रसरण a readable title for this compactness consequence, or is the shorter अतिप्रसरण conventional in Marathi model theory?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T274-OLP-0186-B004` | `OLP-0186` |  | 9-10 | 9-10 | pending |
+| `T274-OLP-0186-B005` | `OLP-0186` |  | 12-15 | 12-15 | pending |
+| `T274-OLP-0186-B008` | `OLP-0186` |  | 35-40 | 35-39 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

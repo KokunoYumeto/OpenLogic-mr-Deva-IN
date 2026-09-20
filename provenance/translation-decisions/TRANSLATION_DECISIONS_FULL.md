@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 occurrences.
+Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 occurrences.
 
 ## T001 — set
 
@@ -430,6 +430,9 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T001-OLP-0177-B011` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167` | `mr/content/first-order-logic/beyond/second-order-logic.tex:121-157` | pending |
 | `T001-OLP-0177-B013` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202` | `mr/content/first-order-logic/beyond/second-order-logic.tex:172-190` | pending |
 | `T001-OLP-0178-B006` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:13-19` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:13-19` | pending |
+| `T001-OLP-0185-B005` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:12-17` | `mr/content/model-theory/basics/substructures.tex:12-17` | pending |
+| `T001-OLP-0185-B006` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:19-37` | `mr/content/model-theory/basics/substructures.tex:19-38` | pending |
+| `T001-OLP-0185-B007` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:39-45` | `mr/content/model-theory/basics/substructures.tex:40-46` | pending |
 
 ## T002 — element/member
 
@@ -2091,6 +2094,12 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T013-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 | `T013-OLP-0177-B011` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167` | `mr/content/first-order-logic/beyond/second-order-logic.tex:121-157` | pending |
 | `T013-OLP-0177-B015` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:211-224` | `mr/content/first-order-logic/beyond/second-order-logic.tex:198-211` | pending |
+| `T013-OLP-0182-B004` | `OLP-0182` |  | `upstream/content/model-theory/model-theory.tex:7-7` | `mr/content/model-theory/model-theory.tex:7-7` | pending |
+| `T013-OLP-0182-B005` | `OLP-0182` |  | `upstream/content/model-theory/model-theory.tex:9-17` | `mr/content/model-theory/model-theory.tex:9-16` | pending |
+| `T013-OLP-0183-B004` | `OLP-0183` |  | `upstream/content/model-theory/basics/basics.tex:8-8` | `mr/content/model-theory/basics/basics.tex:8-8` | pending |
+| `T013-OLP-0186-B005` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:12-15` | `mr/content/model-theory/basics/overspill.tex:12-15` | pending |
+| `T013-OLP-0186-B006` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | pending |
+| `T013-OLP-0186-B008` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:35-40` | `mr/content/model-theory/basics/overspill.tex:35-39` | pending |
 
 ## T014 — perfect number
 
@@ -3166,6 +3175,7 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T027-OLP-0177-B011` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167` | `mr/content/first-order-logic/beyond/second-order-logic.tex:121-157` | pending |
 | `T027-OLP-0178-B008` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93` | pending |
 | `T027-OLP-0179-B019` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:135-149` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:120-133` | pending |
+| `T027-OLP-0189-B017` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:131-133` | `mr/content/model-theory/basics/partial-iso.tex:132-134` | pending |
 
 ## T028 — continuum
 
@@ -3506,6 +3516,10 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T030-OLP-0177-B016` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:226-234` | `mr/content/first-order-logic/beyond/second-order-logic.tex:213-221` | pending |
 | `T030-OLP-0178-B007` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37` | pending |
 | `T030-OLP-0180-B008` | `OLP-0180` |  | `upstream/content/first-order-logic/beyond/modal-logics.tex:41-48` | `mr/content/first-order-logic/beyond/modal-logics.tex:37-43` | pending |
+| `T030-OLP-0184-B010` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:59-65` | `mr/content/model-theory/basics/reducts-and-expansions.tex:58-65` | pending |
+| `T030-OLP-0185-B006` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:19-37` | `mr/content/model-theory/basics/substructures.tex:19-38` | pending |
+| `T030-OLP-0185-B007` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:39-45` | `mr/content/model-theory/basics/substructures.tex:40-46` | pending |
+| `T030-OLP-0189-B019` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `mr/content/model-theory/basics/partial-iso.tex:144-162` | pending |
 
 ## T031 — identity relation
 
@@ -3728,6 +3742,7 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T032-OLP-0169-B008` | `OLP-0169` |  | `upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex:45-63` | `mr/content/first-order-logic/models-theories/expressing-props-of-structures.tex:44-64` | pending |
 | `T032-OLP-0170-B014` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:108-141` | `mr/content/first-order-logic/models-theories/theories.tex:107-138` | pending |
 | `T032-OLP-0180-B010` | `OLP-0180` |  | `upstream/content/first-order-logic/beyond/modal-logics.tex:67-89` | `mr/content/first-order-logic/beyond/modal-logics.tex:61-81` | pending |
+| `T032-OLP-0190-B005` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:12-26` | `mr/content/model-theory/basics/dlo.tex:12-26` | pending |
 
 ## T033 — transitive
 
@@ -4251,6 +4266,9 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T039-OLP-0177-B013` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202` | `mr/content/first-order-logic/beyond/second-order-logic.tex:172-190` | pending |
 | `T039-OLP-0179-B027` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202` | pending |
 | `T039-OLP-0180-B008` | `OLP-0180` |  | `upstream/content/first-order-logic/beyond/modal-logics.tex:41-48` | `mr/content/first-order-logic/beyond/modal-logics.tex:37-43` | pending |
+| `T039-OLP-0190-B004` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:9-10` | `mr/content/model-theory/basics/dlo.tex:9-10` | pending |
+| `T039-OLP-0190-B005` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:12-26` | `mr/content/model-theory/basics/dlo.tex:12-26` | pending |
+| `T039-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
 
 ## T040 — graph / directed graph / vertex / edge
 
@@ -5342,6 +5360,17 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T045-OLP-0178-B008` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93` | pending |
 | `T045-OLP-0178-B010` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:102-112` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:102-111` | pending |
 | `T045-OLP-0178-B011` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:114-123` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:113-120` | pending |
+| `T045-OLP-0184-B006` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39` | `mr/content/model-theory/basics/reducts-and-expansions.tex:22-38` | pending |
+| `T045-OLP-0185-B006` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:19-37` | `mr/content/model-theory/basics/substructures.tex:19-38` | pending |
+| `T045-OLP-0185-B007` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:39-45` | `mr/content/model-theory/basics/substructures.tex:40-46` | pending |
+| `T045-OLP-0187-B007` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:35-59` | `mr/content/model-theory/basics/isomorphism.tex:34-58` | pending |
+| `T045-OLP-0187-B009` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `mr/content/model-theory/basics/isomorphism.tex:66-106` | pending |
+| `T045-OLP-0189-B005` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | pending |
+| `T045-OLP-0189-B006` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:33-34` | `mr/content/model-theory/basics/partial-iso.tex:33-34` | pending |
+| `T045-OLP-0189-B007` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:36-50` | `mr/content/model-theory/basics/partial-iso.tex:36-50` | pending |
+| `T045-OLP-0189-B009` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:58-78` | `mr/content/model-theory/basics/partial-iso.tex:58-78` | pending |
+| `T045-OLP-0189-B013` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:102-107` | `mr/content/model-theory/basics/partial-iso.tex:102-108` | pending |
+| `T045-OLP-0190-B008` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:42-61` | `mr/content/model-theory/basics/dlo.tex:42-66` | pending |
 
 ## T046 — domain / codomain / range
 
@@ -5528,6 +5557,18 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T046-OLP-0177-B017` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:236-242` | `mr/content/first-order-logic/beyond/second-order-logic.tex:223-229` | pending |
 | `T046-OLP-0178-B006` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:13-19` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:13-19` | pending |
 | `T046-OLP-0178-B007` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37` | pending |
+| `T046-OLP-0184-B006` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39` | `mr/content/model-theory/basics/reducts-and-expansions.tex:22-38` | pending |
+| `T046-OLP-0184-B010` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:59-65` | `mr/content/model-theory/basics/reducts-and-expansions.tex:58-65` | pending |
+| `T046-OLP-0185-B005` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:12-17` | `mr/content/model-theory/basics/substructures.tex:12-17` | pending |
+| `T046-OLP-0185-B006` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:19-37` | `mr/content/model-theory/basics/substructures.tex:19-38` | pending |
+| `T046-OLP-0185-B007` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:39-45` | `mr/content/model-theory/basics/substructures.tex:40-46` | pending |
+| `T046-OLP-0186-B007` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:28-33` | `mr/content/model-theory/basics/overspill.tex:28-33` | pending |
+| `T046-OLP-0187-B007` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:35-59` | `mr/content/model-theory/basics/isomorphism.tex:34-58` | pending |
+| `T046-OLP-0189-B005` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | pending |
+| `T046-OLP-0189-B007` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:36-50` | `mr/content/model-theory/basics/partial-iso.tex:36-50` | pending |
+| `T046-OLP-0189-B009` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:58-78` | `mr/content/model-theory/basics/partial-iso.tex:58-78` | pending |
+| `T046-OLP-0189-B018` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:135-141` | `mr/content/model-theory/basics/partial-iso.tex:136-142` | pending |
+| `T046-OLP-0190-B008` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:42-61` | `mr/content/model-theory/basics/dlo.tex:42-66` | pending |
 
 ## T047 — argument / input / output / value
 
@@ -5750,6 +5791,7 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T048-OLP-0040-B018` | `OLP-0040` | 4.13 न्यूनीकरण | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:106-110` | `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:108-112` | 52–53 |
 | `T048-OLP-0040-B022` | `OLP-0040` | 4.13 न्यूनीकरण | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:130-134` | `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:133-138` | 52–53 |
 | `T048-OLP-0177-B011` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167` | `mr/content/first-order-logic/beyond/second-order-logic.tex:121-157` | pending |
+| `T048-OLP-0187-B007` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:35-59` | `mr/content/model-theory/basics/isomorphism.tex:34-58` | pending |
 
 ## T049 — injective / injection
 
@@ -5861,6 +5903,8 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T049-OLP-0172-B012` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:131-147` | `mr/content/first-order-logic/models-theories/set-theory.tex:129-145` | pending |
 | `T049-OLP-0177-B011` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167` | `mr/content/first-order-logic/beyond/second-order-logic.tex:121-157` | pending |
 | `T049-OLP-0177-B012` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181` | `mr/content/first-order-logic/beyond/second-order-logic.tex:159-170` | pending |
+| `T049-OLP-0187-B007` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:35-59` | `mr/content/model-theory/basics/isomorphism.tex:34-58` | pending |
+| `T049-OLP-0189-B005` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | pending |
 
 ## T050 — bijective / bijection / one-to-one correspondence
 
@@ -6138,6 +6182,8 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T053-OLP-0040-B021` | `OLP-0040` | 4.13 न्यूनीकरण | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:123-128` | `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:125-131` | 52–53 |
 | `T053-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68` | `mr/content/sets-functions-relations/infinite/card-sb.tex:54-67` | 72–74 |
 | `T053-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 72–74 |
+| `T053-OLP-0187-B009` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `mr/content/model-theory/basics/isomorphism.tex:66-106` | pending |
+| `T053-OLP-0189-B005` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | pending |
 
 ## T054 — serial relation
 
@@ -6477,6 +6523,14 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T057-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
 | `T057-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
 | `T057-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
+| `T057-OLP-0186-B006` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | pending |
+| `T057-OLP-0187-B005` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:12-24` | `mr/content/model-theory/basics/isomorphism.tex:12-23` | pending |
+| `T057-OLP-0188-B013` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | pending |
+| `T057-OLP-0189-B008` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:52-56` | `mr/content/model-theory/basics/partial-iso.tex:52-56` | pending |
+| `T057-OLP-0189-B009` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:58-78` | `mr/content/model-theory/basics/partial-iso.tex:58-78` | pending |
+| `T057-OLP-0190-B006` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:28-31` | `mr/content/model-theory/basics/dlo.tex:28-31` | pending |
+| `T057-OLP-0190-B007` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:33-40` | `mr/content/model-theory/basics/dlo.tex:33-40` | pending |
+| `T057-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
 
 ## T058 — size / cardinality / equinumerous
 
@@ -6541,6 +6595,8 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T058-OLP-0147-B008` | `OLP-0147` |  | `upstream/content/first-order-logic/introduction/models-theories.tex:56-68` | `mr/content/first-order-logic/introduction/models-theories.tex:58-68` | pending |
 | `T058-OLP-0173-B005` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:11-11` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:11-11` | pending |
 | `T058-OLP-0173-B006` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:13-19` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:13-18` | pending |
+| `T058-OLP-0186-B005` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:12-15` | `mr/content/model-theory/basics/overspill.tex:12-15` | pending |
+| `T058-OLP-0186-B006` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | pending |
 
 ## T059 — actual infinity
 
@@ -6845,6 +6901,7 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T066-OLP-0179-B011` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:45-47` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:38-40` | pending |
 | `T066-OLP-0179-B012` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:49-59` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:42-51` | pending |
 | `T066-OLP-0179-B013` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:61-72` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:53-63` | pending |
+| `T066-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
 
 ## T067 — pairing function / encode / code / decode
 
@@ -7999,6 +8056,10 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T098-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 | `T098-OLP-0175-B007` | `OLP-0175` |  | `upstream/content/first-order-logic/beyond/introduction.tex:23-44` | `mr/content/first-order-logic/beyond/introduction.tex:23-42` | pending |
 | `T098-OLP-0177-B012` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181` | `mr/content/first-order-logic/beyond/second-order-logic.tex:159-170` | pending |
+| `T098-OLP-0186-B005` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:12-15` | `mr/content/model-theory/basics/overspill.tex:12-15` | pending |
+| `T098-OLP-0186-B006` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | pending |
+| `T098-OLP-0186-B007` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:28-33` | `mr/content/model-theory/basics/overspill.tex:28-33` | pending |
+| `T098-OLP-0186-B008` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:35-40` | `mr/content/model-theory/basics/overspill.tex:35-39` | pending |
 
 ## T099 — Dedekind infinite
 
@@ -8206,6 +8267,9 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T102-OLP-0179-B006` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:13-17` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:13-16` | pending |
 | `T102-OLP-0179-B015` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:81-95` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:71-83` | pending |
 | `T102-OLP-0179-B026` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178` | pending |
+| `T102-OLP-0182-B005` | `OLP-0182` |  | `upstream/content/model-theory/model-theory.tex:9-17` | `mr/content/model-theory/model-theory.tex:9-16` | pending |
+| `T102-OLP-0186-B007` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:28-33` | `mr/content/model-theory/basics/overspill.tex:28-33` | pending |
+| `T102-OLP-0187-B005` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:12-24` | `mr/content/model-theory/basics/isomorphism.tex:12-23` | pending |
 
 ## T103 — parameter (of a formula)
 
@@ -8330,6 +8394,28 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T105-OLP-0053-B006` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:21-26` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:19-24` | 71–72 |
+| `T105-OLP-0187-B004` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:9-10` | `mr/content/model-theory/basics/isomorphism.tex:9-10` | pending |
+| `T105-OLP-0187-B005` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:12-24` | `mr/content/model-theory/basics/isomorphism.tex:12-23` | pending |
+| `T105-OLP-0187-B007` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:35-59` | `mr/content/model-theory/basics/isomorphism.tex:34-58` | pending |
+| `T105-OLP-0187-B008` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:61-65` | `mr/content/model-theory/basics/isomorphism.tex:60-64` | pending |
+| `T105-OLP-0187-B009` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `mr/content/model-theory/basics/isomorphism.tex:66-106` | pending |
+| `T105-OLP-0187-B011` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:112-117` | `mr/content/model-theory/basics/isomorphism.tex:113-118` | pending |
+| `T105-OLP-0187-B012` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:119-122` | `mr/content/model-theory/basics/isomorphism.tex:120-123` | pending |
+| `T105-OLP-0187-B013` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:124-128` | `mr/content/model-theory/basics/isomorphism.tex:125-130` | pending |
+| `T105-OLP-0188-B013` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | pending |
+| `T105-OLP-0189-B004` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:9-10` | `mr/content/model-theory/basics/partial-iso.tex:9-10` | pending |
+| `T105-OLP-0189-B005` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | pending |
+| `T105-OLP-0189-B007` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:36-50` | `mr/content/model-theory/basics/partial-iso.tex:36-50` | pending |
+| `T105-OLP-0189-B008` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:52-56` | `mr/content/model-theory/basics/partial-iso.tex:52-56` | pending |
+| `T105-OLP-0189-B009` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:58-78` | `mr/content/model-theory/basics/partial-iso.tex:58-78` | pending |
+| `T105-OLP-0189-B010` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:80-83` | `mr/content/model-theory/basics/partial-iso.tex:80-83` | pending |
+| `T105-OLP-0189-B011` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:85-91` | `mr/content/model-theory/basics/partial-iso.tex:85-91` | pending |
+| `T105-OLP-0189-B013` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:102-107` | `mr/content/model-theory/basics/partial-iso.tex:102-108` | pending |
+| `T105-OLP-0190-B006` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:28-31` | `mr/content/model-theory/basics/dlo.tex:28-31` | pending |
+| `T105-OLP-0190-B007` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:33-40` | `mr/content/model-theory/basics/dlo.tex:33-40` | pending |
+| `T105-OLP-0190-B008` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:42-61` | `mr/content/model-theory/basics/dlo.tex:42-66` | pending |
+| `T105-OLP-0190-B009` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:63-66` | `mr/content/model-theory/basics/dlo.tex:68-71` | pending |
+| `T105-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
 
 ## T106 — structuralism / structuralist
 
@@ -8566,6 +8652,10 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T109-OLP-0179-B016` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98` | pending |
 | `T109-OLP-0179-B025` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166` | pending |
 | `T109-OLP-0181-B006` | `OLP-0181` |  | `upstream/content/first-order-logic/beyond/other-logics.tex:13-20` | `mr/content/first-order-logic/beyond/other-logics.tex:13-19` | pending |
+| `T109-OLP-0184-B009` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:55-57` | `mr/content/model-theory/basics/reducts-and-expansions.tex:54-56` | pending |
+| `T109-OLP-0187-B011` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:112-117` | `mr/content/model-theory/basics/isomorphism.tex:113-118` | pending |
+| `T109-OLP-0189-B010` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:80-83` | `mr/content/model-theory/basics/partial-iso.tex:80-83` | pending |
+| `T109-OLP-0190-B009` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:63-66` | `mr/content/model-theory/basics/dlo.tex:68-71` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -8663,6 +8753,7 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T110-OLP-0179-B026` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178` | pending |
 | `T110-OLP-0180-B010` | `OLP-0180` |  | `upstream/content/first-order-logic/beyond/modal-logics.tex:67-89` | `mr/content/first-order-logic/beyond/modal-logics.tex:61-81` | pending |
 | `T110-OLP-0181-B006` | `OLP-0181` |  | `upstream/content/first-order-logic/beyond/other-logics.tex:13-20` | `mr/content/first-order-logic/beyond/other-logics.tex:13-19` | pending |
+| `T110-OLP-0182-B005` | `OLP-0182` |  | `upstream/content/model-theory/model-theory.tex:9-17` | `mr/content/model-theory/model-theory.tex:9-16` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -8969,6 +9060,24 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T112-OLP-0178-B008` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93` | pending |
 | `T112-OLP-0178-B009` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:95-100` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:95-100` | pending |
 | `T112-OLP-0180-B007` | `OLP-0180` |  | `upstream/content/first-order-logic/beyond/modal-logics.tex:31-39` | `mr/content/first-order-logic/beyond/modal-logics.tex:28-35` | pending |
+| `T112-OLP-0184-B006` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39` | `mr/content/model-theory/basics/reducts-and-expansions.tex:22-38` | pending |
+| `T112-OLP-0184-B010` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:59-65` | `mr/content/model-theory/basics/reducts-and-expansions.tex:58-65` | pending |
+| `T112-OLP-0185-B006` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:19-37` | `mr/content/model-theory/basics/substructures.tex:19-38` | pending |
+| `T112-OLP-0185-B007` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:39-45` | `mr/content/model-theory/basics/substructures.tex:40-46` | pending |
+| `T112-OLP-0187-B007` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:35-59` | `mr/content/model-theory/basics/isomorphism.tex:34-58` | pending |
+| `T112-OLP-0187-B009` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `mr/content/model-theory/basics/isomorphism.tex:66-106` | pending |
+| `T112-OLP-0188-B013` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | pending |
+| `T112-OLP-0189-B005` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | pending |
+| `T112-OLP-0189-B011` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:85-91` | `mr/content/model-theory/basics/partial-iso.tex:85-91` | pending |
+| `T112-OLP-0189-B012` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:93-100` | `mr/content/model-theory/basics/partial-iso.tex:93-100` | pending |
+| `T112-OLP-0189-B014` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:109-111` | `mr/content/model-theory/basics/partial-iso.tex:110-112` | pending |
+| `T112-OLP-0189-B015` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:113-120` | `mr/content/model-theory/basics/partial-iso.tex:114-122` | pending |
+| `T112-OLP-0189-B016` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:122-129` | `mr/content/model-theory/basics/partial-iso.tex:124-130` | pending |
+| `T112-OLP-0189-B022` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:176-183` | `mr/content/model-theory/basics/partial-iso.tex:180-186` | pending |
+| `T112-OLP-0189-B023` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:185-187` | `mr/content/model-theory/basics/partial-iso.tex:188-190` | pending |
+| `T112-OLP-0189-B024` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:189-197` | `mr/content/model-theory/basics/partial-iso.tex:192-199` | pending |
+| `T112-OLP-0189-B025` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:199-213` | `mr/content/model-theory/basics/partial-iso.tex:201-215` | pending |
+| `T112-OLP-0190-B005` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:12-26` | `mr/content/model-theory/basics/dlo.tex:12-26` | pending |
 
 ## T113 — classical logic / classical
 
@@ -9324,6 +9433,18 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T118-OLP-0174-B005` | `OLP-0174` |  | `upstream/content/first-order-logic/beyond/beyond.tex:10-17` | `mr/content/first-order-logic/beyond/beyond.tex:10-17` | pending |
 | `T118-OLP-0175-B006` | `OLP-0175` |  | `upstream/content/first-order-logic/beyond/introduction.tex:13-21` | `mr/content/first-order-logic/beyond/introduction.tex:13-21` | pending |
 | `T118-OLP-0175-B007` | `OLP-0175` |  | `upstream/content/first-order-logic/beyond/introduction.tex:23-44` | `mr/content/first-order-logic/beyond/introduction.tex:23-42` | pending |
+| `T118-OLP-0182-B004` | `OLP-0182` |  | `upstream/content/model-theory/model-theory.tex:7-7` | `mr/content/model-theory/model-theory.tex:7-7` | pending |
+| `T118-OLP-0182-B005` | `OLP-0182` |  | `upstream/content/model-theory/model-theory.tex:9-17` | `mr/content/model-theory/model-theory.tex:9-16` | pending |
+| `T118-OLP-0183-B004` | `OLP-0183` |  | `upstream/content/model-theory/basics/basics.tex:8-8` | `mr/content/model-theory/basics/basics.tex:8-8` | pending |
+| `T118-OLP-0188-B005` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:11-11` | `mr/content/model-theory/basics/theory-of-m.tex:11-11` | pending |
+| `T118-OLP-0188-B006` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:13-16` | `mr/content/model-theory/basics/theory-of-m.tex:13-18` | pending |
+| `T118-OLP-0188-B007` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:18-23` | `mr/content/model-theory/basics/theory-of-m.tex:20-25` | pending |
+| `T118-OLP-0188-B008` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:25-27` | `mr/content/model-theory/basics/theory-of-m.tex:27-29` | pending |
+| `T118-OLP-0188-B009` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:29-31` | `mr/content/model-theory/basics/theory-of-m.tex:31-33` | pending |
+| `T118-OLP-0188-B010` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:33-36` | `mr/content/model-theory/basics/theory-of-m.tex:35-39` | pending |
+| `T118-OLP-0188-B011` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:38-41` | `mr/content/model-theory/basics/theory-of-m.tex:41-44` | pending |
+| `T118-OLP-0188-B012` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:43-49` | `mr/content/model-theory/basics/theory-of-m.tex:46-53` | pending |
+| `T118-OLP-0188-B013` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | pending |
 
 ## T119 — formation rule / inductive definition / uniquely readable
 
@@ -9707,6 +9828,24 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T121-OLP-0179-B014` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:74-79` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:65-69` | pending |
 | `T121-OLP-0179-B016` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:85-98` | pending |
 | `T121-OLP-0179-B027` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202` | pending |
+| `T121-OLP-0184-B007` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:41-49` | `mr/content/model-theory/basics/reducts-and-expansions.tex:40-48` | pending |
+| `T121-OLP-0186-B006` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | pending |
+| `T121-OLP-0187-B006` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:26-33` | `mr/content/model-theory/basics/isomorphism.tex:25-32` | pending |
+| `T121-OLP-0187-B009` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `mr/content/model-theory/basics/isomorphism.tex:66-106` | pending |
+| `T121-OLP-0187-B010` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:108-110` | `mr/content/model-theory/basics/isomorphism.tex:108-111` | pending |
+| `T121-OLP-0188-B006` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:13-16` | `mr/content/model-theory/basics/theory-of-m.tex:13-18` | pending |
+| `T121-OLP-0188-B007` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:18-23` | `mr/content/model-theory/basics/theory-of-m.tex:20-25` | pending |
+| `T121-OLP-0188-B010` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:33-36` | `mr/content/model-theory/basics/theory-of-m.tex:35-39` | pending |
+| `T121-OLP-0188-B012` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:43-49` | `mr/content/model-theory/basics/theory-of-m.tex:46-53` | pending |
+| `T121-OLP-0188-B013` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | pending |
+| `T121-OLP-0189-B012` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:93-100` | `mr/content/model-theory/basics/partial-iso.tex:93-100` | pending |
+| `T121-OLP-0189-B019` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `mr/content/model-theory/basics/partial-iso.tex:144-162` | pending |
+| `T121-OLP-0189-B021` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:167-174` | `mr/content/model-theory/basics/partial-iso.tex:171-178` | pending |
+| `T121-OLP-0189-B022` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:176-183` | `mr/content/model-theory/basics/partial-iso.tex:180-186` | pending |
+| `T121-OLP-0189-B023` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:185-187` | `mr/content/model-theory/basics/partial-iso.tex:188-190` | pending |
+| `T121-OLP-0189-B024` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:189-197` | `mr/content/model-theory/basics/partial-iso.tex:192-199` | pending |
+| `T121-OLP-0189-B025` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:199-213` | `mr/content/model-theory/basics/partial-iso.tex:201-215` | pending |
+| `T121-OLP-0189-B026` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:215-221` | `mr/content/model-theory/basics/partial-iso.tex:217-223` | pending |
 
 ## T122 — tautology
 
@@ -10187,6 +10326,21 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T126-OLP-0177-B010` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:100-127` | `mr/content/first-order-logic/beyond/second-order-logic.tex:93-119` | pending |
 | `T126-OLP-0177-B012` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181` | `mr/content/first-order-logic/beyond/second-order-logic.tex:159-170` | pending |
 | `T126-OLP-0179-B025` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166` | pending |
+| `T126-OLP-0184-B007` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:41-49` | `mr/content/model-theory/basics/reducts-and-expansions.tex:40-48` | pending |
+| `T126-OLP-0186-B005` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:12-15` | `mr/content/model-theory/basics/overspill.tex:12-15` | pending |
+| `T126-OLP-0186-B007` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:28-33` | `mr/content/model-theory/basics/overspill.tex:28-33` | pending |
+| `T126-OLP-0186-B008` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:35-40` | `mr/content/model-theory/basics/overspill.tex:35-39` | pending |
+| `T126-OLP-0187-B005` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:12-24` | `mr/content/model-theory/basics/isomorphism.tex:12-23` | pending |
+| `T126-OLP-0187-B006` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:26-33` | `mr/content/model-theory/basics/isomorphism.tex:25-32` | pending |
+| `T126-OLP-0187-B010` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:108-110` | `mr/content/model-theory/basics/isomorphism.tex:108-111` | pending |
+| `T126-OLP-0188-B006` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:13-16` | `mr/content/model-theory/basics/theory-of-m.tex:13-18` | pending |
+| `T126-OLP-0188-B007` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:18-23` | `mr/content/model-theory/basics/theory-of-m.tex:20-25` | pending |
+| `T126-OLP-0188-B008` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:25-27` | `mr/content/model-theory/basics/theory-of-m.tex:27-29` | pending |
+| `T126-OLP-0188-B010` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:33-36` | `mr/content/model-theory/basics/theory-of-m.tex:35-39` | pending |
+| `T126-OLP-0188-B012` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:43-49` | `mr/content/model-theory/basics/theory-of-m.tex:46-53` | pending |
+| `T126-OLP-0189-B015` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:113-120` | `mr/content/model-theory/basics/partial-iso.tex:114-122` | pending |
+| `T126-OLP-0189-B016` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:122-129` | `mr/content/model-theory/basics/partial-iso.tex:124-130` | pending |
+| `T126-OLP-0189-B026` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:215-221` | `mr/content/model-theory/basics/partial-iso.tex:217-223` | pending |
 
 ## T127 — propositional constant
 
@@ -10729,6 +10883,8 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T131-OLP-0177-B006` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28` | `mr/content/first-order-logic/beyond/second-order-logic.tex:13-28` | pending |
 | `T131-OLP-0177-B007` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65` | `mr/content/first-order-logic/beyond/second-order-logic.tex:30-62` | pending |
 | `T131-OLP-0179-B019` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:135-149` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:120-133` | pending |
+| `T131-OLP-0189-B019` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `mr/content/model-theory/basics/partial-iso.tex:144-162` | pending |
+| `T131-OLP-0189-B023` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:185-187` | `mr/content/model-theory/basics/partial-iso.tex:188-190` | pending |
 
 ## T132 — two-place connective
 
@@ -10845,6 +11001,7 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T134-OLP-0153-B039` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:192-200` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:191-199` | pending |
 | `T134-OLP-0156-B007` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:25-31` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:24-30` | pending |
 | `T134-OLP-0156-B008` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:33-38` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:32-37` | pending |
+| `T134-OLP-0189-B018` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:135-141` | `mr/content/model-theory/basics/partial-iso.tex:136-142` | pending |
 
 ## T135 — preliminaries
 
@@ -11330,6 +11487,10 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T144-OLP-0156-B009` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:40-49` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:39-49` | pending |
 | `T144-OLP-0156-B016` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:155-160` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:154-159` | pending |
 | `T144-OLP-0156-B021` | `OLP-0156` |  | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:181-208` | pending |
+| `T144-OLP-0189-B009` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:58-78` | `mr/content/model-theory/basics/partial-iso.tex:58-78` | pending |
+| `T144-OLP-0189-B018` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:135-141` | `mr/content/model-theory/basics/partial-iso.tex:136-142` | pending |
+| `T144-OLP-0189-B019` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `mr/content/model-theory/basics/partial-iso.tex:144-162` | pending |
+| `T144-OLP-0189-B020` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:161-165` | `mr/content/model-theory/basics/partial-iso.tex:165-169` | pending |
 
 ## T145 — evaluation / evaluation function
 
@@ -12274,6 +12435,7 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T156-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
 | `T156-OLP-0177-B007` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65` | `mr/content/first-order-logic/beyond/second-order-logic.tex:30-62` | pending |
 | `T156-OLP-0180-B009` | `OLP-0180` |  | `upstream/content/first-order-logic/beyond/modal-logics.tex:50-65` | `mr/content/first-order-logic/beyond/modal-logics.tex:45-59` | pending |
+| `T156-OLP-0188-B013` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -13900,6 +14062,8 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T181-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
 | `T181-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 | `T181-OLP-0177-B014` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209` | `mr/content/first-order-logic/beyond/second-order-logic.tex:192-196` | pending |
+| `T181-OLP-0182-B005` | `OLP-0182` |  | `upstream/content/model-theory/model-theory.tex:9-17` | `mr/content/model-theory/model-theory.tex:9-16` | pending |
+| `T181-OLP-0186-B006` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | pending |
 
 ## T182 — proof-theoretic notions
 
@@ -14650,6 +14814,9 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T192-OLP-0136-B015` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:73-83` | `mr/content/first-order-logic/completeness/compactness-direct.tex:73-83` | pending |
 | `T192-OLP-0136-B017` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:91-95` | `mr/content/first-order-logic/completeness/compactness-direct.tex:91-95` | pending |
 | `T192-OLP-0136-B022` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143` | `mr/content/first-order-logic/completeness/compactness-direct.tex:128-145` | pending |
+| `T192-OLP-0188-B009` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:29-31` | `mr/content/model-theory/basics/theory-of-m.tex:31-33` | pending |
+| `T192-OLP-0188-B010` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:33-36` | `mr/content/model-theory/basics/theory-of-m.tex:35-39` | pending |
+| `T192-OLP-0188-B012` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:43-49` | `mr/content/model-theory/basics/theory-of-m.tex:46-53` | pending |
 
 ## T193 — Henkin expansion / Henkin sentence
 
@@ -14866,6 +15033,7 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T198-OLP-0134-B010` | `OLP-0134` |  | `upstream/content/first-order-logic/completeness/completeness-thm.tex:57-64` | `mr/content/first-order-logic/completeness/completeness-thm.tex:57-64` | pending |
 | `T198-OLP-0134-B012` | `OLP-0134` |  | `upstream/content/first-order-logic/completeness/completeness-thm.tex:83-89` | `mr/content/first-order-logic/completeness/completeness-thm.tex:83-89` | pending |
 | `T198-OLP-0134-B013` | `OLP-0134` |  | `upstream/content/first-order-logic/completeness/completeness-thm.tex:91-97` | `mr/content/first-order-logic/completeness/completeness-thm.tex:91-97` | pending |
+| `T198-OLP-0189-B026` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:215-221` | `mr/content/model-theory/basics/partial-iso.tex:217-223` | pending |
 
 ## T199 — finitely satisfiable / finite satisfiability
 
@@ -14914,6 +15082,7 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T199-OLP-0136-B020` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:115-118` | `mr/content/first-order-logic/completeness/compactness-direct.tex:115-118` | pending |
 | `T199-OLP-0136-B021` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:120-126` | `mr/content/first-order-logic/completeness/compactness-direct.tex:120-126` | pending |
 | `T199-OLP-0136-B022` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143` | `mr/content/first-order-logic/completeness/compactness-direct.tex:128-145` | pending |
+| `T199-OLP-0186-B006` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | pending |
 
 ## T200 — infinitesimal (number)
 
@@ -14979,6 +15148,8 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T201-OLP-0148-B009` | `OLP-0148` |  | `upstream/content/first-order-logic/introduction/soundness-completeness.tex:50-55` | `mr/content/first-order-logic/introduction/soundness-completeness.tex:51-56` | pending |
 | `T201-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 | `T201-OLP-0177-B014` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209` | `mr/content/first-order-logic/beyond/second-order-logic.tex:192-196` | pending |
+| `T201-OLP-0187-B005` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:12-24` | `mr/content/model-theory/basics/isomorphism.tex:12-23` | pending |
+| `T201-OLP-0188-B013` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | pending |
 
 ## T202 — formal language / formal derivation
 
@@ -15018,6 +15189,14 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T202-OLP-0152-B006` | `OLP-0152` |  | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15` | `mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15` | pending |
 | `T202-OLP-0175-B006` | `OLP-0175` |  | `upstream/content/first-order-logic/beyond/introduction.tex:13-21` | `mr/content/first-order-logic/beyond/introduction.tex:13-21` | pending |
 | `T202-OLP-0175-B008` | `OLP-0175` |  | `upstream/content/first-order-logic/beyond/introduction.tex:46-48` | `mr/content/first-order-logic/beyond/introduction.tex:44-46` | pending |
+| `T202-OLP-0184-B005` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:12-22` | `mr/content/model-theory/basics/reducts-and-expansions.tex:12-20` | pending |
+| `T202-OLP-0186-B006` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | pending |
+| `T202-OLP-0187-B006` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:26-33` | `mr/content/model-theory/basics/isomorphism.tex:25-32` | pending |
+| `T202-OLP-0188-B013` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | pending |
+| `T202-OLP-0189-B011` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:85-91` | `mr/content/model-theory/basics/partial-iso.tex:85-91` | pending |
+| `T202-OLP-0189-B016` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:122-129` | `mr/content/model-theory/basics/partial-iso.tex:124-130` | pending |
+| `T202-OLP-0189-B021` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:167-174` | `mr/content/model-theory/basics/partial-iso.tex:171-178` | pending |
+| `T202-OLP-0190-B005` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:12-26` | `mr/content/model-theory/basics/dlo.tex:12-26` | pending |
 
 ## T203 — structural induction
 
@@ -15060,6 +15239,10 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T203-OLP-0153-B027` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:146-148` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:144-146` | pending |
 | `T203-OLP-0153-B028` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:150-153` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:148-151` | pending |
 | `T203-OLP-0160-B007` | `OLP-0160` |  | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-45` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:35-46` | pending |
+| `T203-OLP-0187-B009` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `mr/content/model-theory/basics/isomorphism.tex:66-106` | pending |
+| `T203-OLP-0189-B012` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:93-100` | `mr/content/model-theory/basics/partial-iso.tex:93-100` | pending |
+| `T203-OLP-0189-B022` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:176-183` | `mr/content/model-theory/basics/partial-iso.tex:180-186` | pending |
+| `T203-OLP-0189-B024` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:189-197` | `mr/content/model-theory/basics/partial-iso.tex:192-199` | pending |
 
 ## T204 — variable assignment
 
@@ -15174,6 +15357,11 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T204-OLP-0166-B022` | `OLP-0166` |  | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:133-151` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:143-161` | pending |
 | `T204-OLP-0171-B006` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:14-33` | pending |
 | `T204-OLP-0171-B008` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:42-53` | pending |
+| `T204-OLP-0187-B009` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `mr/content/model-theory/basics/isomorphism.tex:66-106` | pending |
+| `T204-OLP-0187-B010` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:108-110` | `mr/content/model-theory/basics/isomorphism.tex:108-111` | pending |
+| `T204-OLP-0189-B012` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:93-100` | `mr/content/model-theory/basics/partial-iso.tex:93-100` | pending |
+| `T204-OLP-0189-B019` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `mr/content/model-theory/basics/partial-iso.tex:144-162` | pending |
+| `T204-OLP-0189-B021` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:167-174` | `mr/content/model-theory/basics/partial-iso.tex:171-178` | pending |
 
 ## T205 — variable / constant / function (as language symbols)
 
@@ -15240,6 +15428,14 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T205-OLP-0178-B007` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37` | pending |
 | `T205-OLP-0178-B008` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93` | pending |
 | `T205-OLP-0179-B009` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:32-35` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:28-30` | pending |
+| `T205-OLP-0184-B006` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39` | `mr/content/model-theory/basics/reducts-and-expansions.tex:22-38` | pending |
+| `T205-OLP-0185-B006` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:19-37` | `mr/content/model-theory/basics/substructures.tex:19-38` | pending |
+| `T205-OLP-0185-B007` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:39-45` | `mr/content/model-theory/basics/substructures.tex:40-46` | pending |
+| `T205-OLP-0186-B006` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | pending |
+| `T205-OLP-0187-B007` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:35-59` | `mr/content/model-theory/basics/isomorphism.tex:34-58` | pending |
+| `T205-OLP-0187-B009` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `mr/content/model-theory/basics/isomorphism.tex:66-106` | pending |
+| `T205-OLP-0189-B005` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | pending |
+| `T205-OLP-0189-B016` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:122-129` | `mr/content/model-theory/basics/partial-iso.tex:124-130` | pending |
 
 ## T206 — logical symbol / non-logical symbol / standard language
 
@@ -15317,6 +15513,9 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T207-OLP-0162-B009` | `OLP-0162` |  | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-68` | pending |
 | `T207-OLP-0177-B006` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28` | `mr/content/first-order-logic/beyond/second-order-logic.tex:13-28` | pending |
 | `T207-OLP-0177-B016` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:226-234` | `mr/content/first-order-logic/beyond/second-order-logic.tex:213-221` | pending |
+| `T207-OLP-0187-B007` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:35-59` | `mr/content/model-theory/basics/isomorphism.tex:34-58` | pending |
+| `T207-OLP-0189-B005` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | pending |
+| `T207-OLP-0189-B016` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:122-129` | `mr/content/model-theory/basics/partial-iso.tex:124-130` | pending |
 
 ## T208 — universal quantifier / existential quantifier
 
@@ -15417,6 +15616,7 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T208-OLP-0177-B006` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28` | `mr/content/first-order-logic/beyond/second-order-logic.tex:13-28` | pending |
 | `T208-OLP-0177-B007` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65` | `mr/content/first-order-logic/beyond/second-order-logic.tex:30-62` | pending |
 | `T208-OLP-0178-B008` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93` | pending |
+| `T208-OLP-0189-B014` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:109-111` | `mr/content/model-theory/basics/partial-iso.tex:110-112` | pending |
 
 ## T209 — denumerable / countably infinite
 
@@ -15922,6 +16122,53 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T218-OLP-0179-B027` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202` | pending |
 | `T218-OLP-0180-B008` | `OLP-0180` |  | `upstream/content/first-order-logic/beyond/modal-logics.tex:41-48` | `mr/content/first-order-logic/beyond/modal-logics.tex:37-43` | pending |
 | `T218-OLP-0180-B010` | `OLP-0180` |  | `upstream/content/first-order-logic/beyond/modal-logics.tex:67-89` | `mr/content/first-order-logic/beyond/modal-logics.tex:61-81` | pending |
+| `T218-OLP-0184-B004` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:9-10` | `mr/content/model-theory/basics/reducts-and-expansions.tex:9-10` | pending |
+| `T218-OLP-0184-B005` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:12-22` | `mr/content/model-theory/basics/reducts-and-expansions.tex:12-20` | pending |
+| `T218-OLP-0184-B006` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39` | `mr/content/model-theory/basics/reducts-and-expansions.tex:22-38` | pending |
+| `T218-OLP-0184-B007` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:41-49` | `mr/content/model-theory/basics/reducts-and-expansions.tex:40-48` | pending |
+| `T218-OLP-0184-B010` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:59-65` | `mr/content/model-theory/basics/reducts-and-expansions.tex:58-65` | pending |
+| `T218-OLP-0185-B004` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:9-10` | `mr/content/model-theory/basics/substructures.tex:9-10` | pending |
+| `T218-OLP-0185-B005` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:12-17` | `mr/content/model-theory/basics/substructures.tex:12-17` | pending |
+| `T218-OLP-0185-B006` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:19-37` | `mr/content/model-theory/basics/substructures.tex:19-38` | pending |
+| `T218-OLP-0185-B007` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:39-45` | `mr/content/model-theory/basics/substructures.tex:40-46` | pending |
+| `T218-OLP-0186-B007` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:28-33` | `mr/content/model-theory/basics/overspill.tex:28-33` | pending |
+| `T218-OLP-0186-B008` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:35-40` | `mr/content/model-theory/basics/overspill.tex:35-39` | pending |
+| `T218-OLP-0187-B004` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:9-10` | `mr/content/model-theory/basics/isomorphism.tex:9-10` | pending |
+| `T218-OLP-0187-B005` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:12-24` | `mr/content/model-theory/basics/isomorphism.tex:12-23` | pending |
+| `T218-OLP-0187-B006` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:26-33` | `mr/content/model-theory/basics/isomorphism.tex:25-32` | pending |
+| `T218-OLP-0187-B007` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:35-59` | `mr/content/model-theory/basics/isomorphism.tex:34-58` | pending |
+| `T218-OLP-0187-B008` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:61-65` | `mr/content/model-theory/basics/isomorphism.tex:60-64` | pending |
+| `T218-OLP-0187-B009` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `mr/content/model-theory/basics/isomorphism.tex:66-106` | pending |
+| `T218-OLP-0187-B010` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:108-110` | `mr/content/model-theory/basics/isomorphism.tex:108-111` | pending |
+| `T218-OLP-0187-B012` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:119-122` | `mr/content/model-theory/basics/isomorphism.tex:120-123` | pending |
+| `T218-OLP-0187-B013` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:124-128` | `mr/content/model-theory/basics/isomorphism.tex:125-130` | pending |
+| `T218-OLP-0188-B005` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:11-11` | `mr/content/model-theory/basics/theory-of-m.tex:11-11` | pending |
+| `T218-OLP-0188-B006` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:13-16` | `mr/content/model-theory/basics/theory-of-m.tex:13-18` | pending |
+| `T218-OLP-0188-B007` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:18-23` | `mr/content/model-theory/basics/theory-of-m.tex:20-25` | pending |
+| `T218-OLP-0188-B008` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:25-27` | `mr/content/model-theory/basics/theory-of-m.tex:27-29` | pending |
+| `T218-OLP-0188-B009` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:29-31` | `mr/content/model-theory/basics/theory-of-m.tex:31-33` | pending |
+| `T218-OLP-0188-B010` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:33-36` | `mr/content/model-theory/basics/theory-of-m.tex:35-39` | pending |
+| `T218-OLP-0188-B011` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:38-41` | `mr/content/model-theory/basics/theory-of-m.tex:41-44` | pending |
+| `T218-OLP-0188-B012` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:43-49` | `mr/content/model-theory/basics/theory-of-m.tex:46-53` | pending |
+| `T218-OLP-0188-B013` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | pending |
+| `T218-OLP-0189-B005` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | pending |
+| `T218-OLP-0189-B006` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:33-34` | `mr/content/model-theory/basics/partial-iso.tex:33-34` | pending |
+| `T218-OLP-0189-B007` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:36-50` | `mr/content/model-theory/basics/partial-iso.tex:36-50` | pending |
+| `T218-OLP-0189-B008` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:52-56` | `mr/content/model-theory/basics/partial-iso.tex:52-56` | pending |
+| `T218-OLP-0189-B009` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:58-78` | `mr/content/model-theory/basics/partial-iso.tex:58-78` | pending |
+| `T218-OLP-0189-B011` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:85-91` | `mr/content/model-theory/basics/partial-iso.tex:85-91` | pending |
+| `T218-OLP-0189-B012` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:93-100` | `mr/content/model-theory/basics/partial-iso.tex:93-100` | pending |
+| `T218-OLP-0189-B013` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:102-107` | `mr/content/model-theory/basics/partial-iso.tex:102-108` | pending |
+| `T218-OLP-0189-B015` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:113-120` | `mr/content/model-theory/basics/partial-iso.tex:114-122` | pending |
+| `T218-OLP-0189-B018` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:135-141` | `mr/content/model-theory/basics/partial-iso.tex:136-142` | pending |
+| `T218-OLP-0189-B019` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `mr/content/model-theory/basics/partial-iso.tex:144-162` | pending |
+| `T218-OLP-0189-B020` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:161-165` | `mr/content/model-theory/basics/partial-iso.tex:165-169` | pending |
+| `T218-OLP-0189-B025` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:199-213` | `mr/content/model-theory/basics/partial-iso.tex:201-215` | pending |
+| `T218-OLP-0189-B026` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:215-221` | `mr/content/model-theory/basics/partial-iso.tex:217-223` | pending |
+| `T218-OLP-0190-B005` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:12-26` | `mr/content/model-theory/basics/dlo.tex:12-26` | pending |
+| `T218-OLP-0190-B007` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:33-40` | `mr/content/model-theory/basics/dlo.tex:33-40` | pending |
+| `T218-OLP-0190-B008` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:42-61` | `mr/content/model-theory/basics/dlo.tex:42-66` | pending |
+| `T218-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
 
 ## T219 — free logic
 
@@ -16238,6 +16485,8 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 |---|---|---|---|---|---|
 | `T228-OLP-0168-B007` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:28-31` | `mr/content/first-order-logic/models-theories/introduction.tex:28-32` | pending |
 | `T228-OLP-0168-B008` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:33-35` | `mr/content/first-order-logic/models-theories/introduction.tex:34-36` | pending |
+| `T228-OLP-0188-B006` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:13-16` | `mr/content/model-theory/basics/theory-of-m.tex:13-18` | pending |
+| `T228-OLP-0188-B008` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:25-27` | `mr/content/model-theory/basics/theory-of-m.tex:27-29` | pending |
 
 ## T229 — expressible by sentences / structural property
 
@@ -16275,6 +16524,7 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T229-OLP-0173-B006` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:13-19` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:13-18` | pending |
 | `T229-OLP-0173-B011` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | pending |
 | `T229-OLP-0177-B013` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202` | `mr/content/first-order-logic/beyond/second-order-logic.tex:172-190` | pending |
+| `T229-OLP-0187-B005` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:12-24` | `mr/content/model-theory/basics/isomorphism.tex:12-23` | pending |
 
 ## T230 — strict linear order
 
@@ -16304,6 +16554,7 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T230-OLP-0170-B006` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:13-27` | `mr/content/first-order-logic/models-theories/theories.tex:13-27` | pending |
+| `T230-OLP-0190-B005` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:12-26` | `mr/content/model-theory/basics/dlo.tex:12-26` | pending |
 
 ## T231 — group / group theory (algebra)
 
@@ -16544,6 +16795,7 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | `T238-OLP-0171-B012` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:90-99` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:92-101` | pending |
 | `T238-OLP-0171-B013` | `OLP-0171` |  | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:101-119` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:103-120` | pending |
 | `T238-OLP-0172-B007` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:31-55` | `mr/content/first-order-logic/models-theories/set-theory.tex:30-54` | pending |
+| `T238-OLP-0187-B013` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:124-128` | `mr/content/model-theory/basics/isomorphism.tex:125-130` | pending |
 
 ## T239 — divides evenly / multiple / prime number
 
@@ -17575,6 +17827,340 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T271-OLP-0181-B008` | `OLP-0181` |  | `upstream/content/first-order-logic/beyond/other-logics.tex:38-40` | `mr/content/first-order-logic/beyond/other-logics.tex:35-37` | pending |
+
+## T272 — reduct / expansion (model theory)
+
+**Chosen rendering/action:** न्यूनीकृत रचना / विस्तारित रचना
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P034 directly attests the reduction head न्यूनीकरण and MR-P054 supports विस्तार in mathematical exposition; the remaining passages supply the established structure and model-theoretic interpretation register. No checked source directly attests the exact model-theory pair. OpenLogic defines it extensionally by keeping the same domain and every common-symbol interpretation while forgetting or adding only the extra-symbol interpretations, so the explicit adjectival forms avoid confusing a reduct with a substructure.
+
+**Rationale:** MR-P034 directly attests the reduction head न्यूनीकरण and MR-P054 supports विस्तार in mathematical exposition; the remaining passages supply the established structure and model-theoretic interpretation register. No checked source directly attests the exact model-theory pair. OpenLogic defines it extensionally by keeping the same domain and every common-symbol interpretation while forgetting or adding only the extra-symbol interpretations, so the explicit adjectival forms avoid confusing a reduct with a substructure.
+
+**Authorities actually checked:**
+
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P034` — मराठी विश्वकोश \| मराठी शब्दकोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/41/r (`checked_supports`): Primary official glossary page read through web open; exact short observation preserved; origin HTML unavailable after bounded DNS failure. Limitation: Observation hash is not an origin-page hash and does not independently attest the computability-theory direction.
+- `MR-P054` — गणितशास्त्र परिभाषा कोश — D glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/d (`checked_supports`): Primary official Government of Maharashtra mathematics glossary read through web open. Limitation: Observation hash is not an origin-page hash.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- न्यूनरूप / विस्तार — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अपकर्षित रचना / विस्तारित रचना — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- रिडक्ट / एक्स्पान्शन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are न्यूनीकृत रचना and विस्तारित रचना natural model-theory terms, or is a compact specialist pair such as न्यूनरूप and विस्तार preferable?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T272-OLP-0184-B004` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:9-10` | `mr/content/model-theory/basics/reducts-and-expansions.tex:9-10` | pending |
+| `T272-OLP-0184-B005` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:12-22` | `mr/content/model-theory/basics/reducts-and-expansions.tex:12-20` | pending |
+| `T272-OLP-0184-B006` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39` | `mr/content/model-theory/basics/reducts-and-expansions.tex:22-38` | pending |
+| `T272-OLP-0184-B007` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:41-49` | `mr/content/model-theory/basics/reducts-and-expansions.tex:40-48` | pending |
+| `T272-OLP-0184-B010` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:59-65` | `mr/content/model-theory/basics/reducts-and-expansions.tex:58-65` | pending |
+
+## T273 — substructure / extension (model theory)
+
+**Chosen rendering/action:** उपरचना / वर्धित रचना
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P120 directly attests उपसंरचना and MR-P121 directly uses वर्धन for a mathematical extension. The edition's controlled-token base is रचना, so उपरचना normalizes the directly attested compound without changing its prefix, while वर्धित रचना keeps the mathematical extension stem. OpenLogic defines the pair by domain inclusion and agreement on constants, functions and predicates over the smaller domain, which distinguishes this larger-domain relation from the signature expansion in T272.
+
+**Rationale:** MR-P120 directly attests उपसंरचना and MR-P121 directly uses वर्धन for a mathematical extension. The edition's controlled-token base is रचना, so उपरचना normalizes the directly attested compound without changing its prefix, while वर्धित रचना keeps the mathematical extension stem. OpenLogic defines the pair by domain inclusion and agreement on constants, functions and predicates over the smaller domain, which distinguishes this larger-domain relation from the signature expansion in T272.
+
+**Authorities actually checked:**
+
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P022` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 20 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P120` — भौतिकशास्त्र परिभाषा कोश — substructure. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/37/s (`checked_supports`): Official Directorate of Languages glossary entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary entry is not specifically model-theoretic.
+- `MR-P121` — गणितशास्त्र परिभाषा कोश — Abelian extension. https://shabdakosh.marathi.gov.in/ananya-glossary/9/a (`checked_supports`): Official Directorate of Languages mathematics-glossary entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the attested compound is algebraic rather than model-theoretic.
+
+**Alternatives:**
+
+- उपसंरचना / वर्धन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- उपरचना / विस्ताररचना — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सब-स्ट्रक्चर / एक्स्टेन्शन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the edition normalize the official उपसंरचना to its established base रचना as उपरचना, and is वर्धित रचना the clearest way to distinguish extension from signature expansion?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T273-OLP-0185-B004` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:9-10` | `mr/content/model-theory/basics/substructures.tex:9-10` | pending |
+| `T273-OLP-0185-B005` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:12-17` | `mr/content/model-theory/basics/substructures.tex:12-17` | pending |
+| `T273-OLP-0185-B006` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:19-37` | `mr/content/model-theory/basics/substructures.tex:19-38` | pending |
+| `T273-OLP-0185-B007` | `OLP-0185` |  | `upstream/content/model-theory/basics/substructures.tex:39-45` | `mr/content/model-theory/basics/substructures.tex:40-46` | pending |
+| `T273-OLP-0189-B013` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:102-107` | `mr/content/model-theory/basics/partial-iso.tex:102-108` | pending |
+
+## T274 — overspill (arbitrarily large finite models imply an infinite model)
+
+**Chosen rendering/action:** सांत मर्यादेपलीकडील प्रसरण
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+
+**Intended sense:** No exact Marathi model-theory headword was exposed by the bounded official terminology and mathematics search; the official result for overflow, उत्प्लाव, denotes a different physical/general sense. OpenLogic immediately states and proves the relevant compactness consequence: models of unbounded finite cardinality force an infinite model. The explanatory title सांत मर्यादेपलीकडील प्रसरण makes that passage beyond every finite bound explicit rather than presenting an unsupported opaque coinage.
+
+**Rationale:** No exact Marathi model-theory headword was exposed by the bounded official terminology and mathematics search; the official result for overflow, उत्प्लाव, denotes a different physical/general sense. OpenLogic immediately states and proves the relevant compactness consequence: models of unbounded finite cardinality force an infinite model. The explanatory title सांत मर्यादेपलीकडील प्रसरण makes that passage beyond every finite bound explicit rather than presenting an unsupported opaque coinage.
+
+**Authorities actually checked:**
+
+- `MR-P005` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 7 (`checked_supports`): visually-read-page-image
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P042` — गणितशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Primary official Government of Maharashtra mathematics glossary read in web-search extraction. Limitation: Observation hash is not an origin-page hash; the compound property label is contextual.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P098` — गणितशास्त्र परिभाषा कोश — compactness observation. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Government of Maharashtra mathematics glossary index read in a current web-search extraction; direct fetch subsequently failed before origin bytes were received. Limitation: Observation hash is not an origin-page hash; the glossary is mathematical rather than proof-theoretic and the direct origin page was unavailable.
+
+**Alternatives:**
+
+- अतिप्रसरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सांततेपलीकडील प्रसरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- उत्प्लाव — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- ओव्हरस्पिल — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is सांत मर्यादेपलीकडील प्रसरण a readable title for this compactness consequence, or is the shorter अतिप्रसरण conventional in Marathi model theory?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T274-OLP-0186-B004` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:9-10` | `mr/content/model-theory/basics/overspill.tex:9-10` | pending |
+| `T274-OLP-0186-B005` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:12-15` | `mr/content/model-theory/basics/overspill.tex:12-15` | pending |
+| `T274-OLP-0186-B008` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:35-40` | `mr/content/model-theory/basics/overspill.tex:35-39` | pending |
+
+## T275 — elementary equivalence / elementarily equivalent
+
+**Chosen rendering/action:** प्राथमिक सममूल्यता / प्राथमिक सममूल्य
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P123 directly attests प्राथमिक in a logical compound and सममूल्यता/सममूल्य for equivalence in the official philosophy-and-logic glossary. OpenLogic defines the model-theory compound extensionally: two structures are elementarily equivalent exactly when they satisfy the same sentences. The direct official components are therefore combined without importing an unrelated ordinary sense of elementary.
+
+**Rationale:** MR-P123 directly attests प्राथमिक in a logical compound and सममूल्यता/सममूल्य for equivalence in the official philosophy-and-logic glossary. OpenLogic defines the model-theory compound extensionally: two structures are elementarily equivalent exactly when they satisfy the same sentences. The direct official components are therefore combined without importing an unrelated ordinary sense of elementary.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P010` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P123` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — elementary and equivalence entries. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/7/e (`checked_supports`): Official Directorate of Languages philosophy-and-logic glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the full model-theory compound is not directly attested and is controlled by OpenLogic's definition.
+
+**Alternatives:**
+
+- प्राथमिक समतुल्यता / प्राथमिक समतुल्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- मूलभूत सममूल्यता / मूलभूतरीत्या सममूल्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रथम-क्रम सममूल्यता / प्रथम-क्रमाने सममूल्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is प्राथमिक सममूल्यता the preferred Marathi model-theory term for elementary equivalence, and is प्राथमिक सममूल्य the natural predicative form?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T275-OLP-0187-B005` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:12-24` | `mr/content/model-theory/basics/isomorphism.tex:12-23` | pending |
+| `T275-OLP-0187-B006` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:26-33` | `mr/content/model-theory/basics/isomorphism.tex:25-32` | pending |
+| `T275-OLP-0187-B008` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:61-65` | `mr/content/model-theory/basics/isomorphism.tex:60-64` | pending |
+| `T275-OLP-0187-B010` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:108-110` | `mr/content/model-theory/basics/isomorphism.tex:108-111` | pending |
+| `T275-OLP-0188-B011` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:38-41` | `mr/content/model-theory/basics/theory-of-m.tex:41-44` | pending |
+| `T275-OLP-0188-B012` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:43-49` | `mr/content/model-theory/basics/theory-of-m.tex:46-53` | pending |
+| `T275-OLP-0188-B013` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | pending |
+| `T275-OLP-0189-B011` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:85-91` | `mr/content/model-theory/basics/partial-iso.tex:85-91` | pending |
+| `T275-OLP-0189-B012` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:93-100` | `mr/content/model-theory/basics/partial-iso.tex:93-100` | pending |
+| `T275-OLP-0189-B026` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:215-221` | `mr/content/model-theory/basics/partial-iso.tex:217-223` | pending |
+| `T275-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
+
+## T276 — automorphism
+
+**Chosen rendering/action:** स्वयंरूपता
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P122 directly gives स्वयंरूपता for automorphism in the official mathematics glossary. OpenLogic fixes the local sense as an isomorphism from a structure onto itself, while MR-P062 supports the related समरूपता/समरूपण family.
+
+**Rationale:** MR-P122 directly gives स्वयंरूपता for automorphism in the official mathematics glossary. OpenLogic fixes the local sense as an isomorphism from a structure onto itself, while MR-P062 supports the related समरूपता/समरूपण family.
+
+**Authorities actually checked:**
+
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P062` — मराठी विश्वकोश — indexed isomorphism entries. https://shabdakosh.marathi.gov.in/ananya-glossary/41?page=651 (`checked_supports`): Primary Government of Maharashtra terminology aggregation read in current web-search extraction. Limitation: The aggregated entry spans several disciplines and senses; observation hash is not an origin-page hash.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P122` — गणितशास्त्र परिभाषा कोश — automorphism. https://shabdakosh.marathi.gov.in/ananya-glossary/9/a (`checked_supports`): Official Directorate of Languages mathematics-glossary entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the specific model-theoretic definition.
+
+**Alternatives:**
+
+- स्वसमरूपण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- स्वयं-समरूपता — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- आत्मसमरूपण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the edition retain the directly attested स्वयंरूपता for an automorphism map, despite समरूपण being available for the general isomorphism-map noun?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T276-OLP-0187-B012` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:119-122` | `mr/content/model-theory/basics/isomorphism.tex:120-123` | pending |
+| `T276-OLP-0187-B013` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:124-128` | `mr/content/model-theory/basics/isomorphism.tex:125-130` | pending |
+
+## T277 — partial isomorphism / partially isomorphic / back-and-forth property
+
+**Chosen rendering/action:** आंशिक समरूपण / आंशिकरीत्या समरूपी / पुढे-मागे गुणधर्म
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The edition's established function vocabulary directly supports an अंशतः फलन and MR-P062 directly supports समरूपण/समरूपता. OpenLogic defines the finite map by injectivity and preservation clauses, then defines the पुढे and मागे extension requirements explicitly. No exact official Marathi labels for the full three-part model-theory inventory were found in the bounded search.
+
+**Rationale:** The edition's established function vocabulary directly supports an अंशतः फलन and MR-P062 directly supports समरूपण/समरूपता. OpenLogic defines the finite map by injectivity and preservation clauses, then defines the पुढे and मागे extension requirements explicitly. No exact official Marathi labels for the full three-part model-theory inventory were found in the bounded search.
+
+**Authorities actually checked:**
+
+- `MR-P005` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 7 (`checked_supports`): visually-read-page-image
+- `MR-P017` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 81 (`checked_supports`): visually-read-page-image
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P062` — मराठी विश्वकोश — indexed isomorphism entries. https://shabdakosh.marathi.gov.in/ananya-glossary/41?page=651 (`checked_supports`): Primary Government of Maharashtra terminology aggregation read in current web-search extraction. Limitation: The aggregated entry spans several disciplines and senses; observation hash is not an origin-page hash.
+
+**Alternatives:**
+
+- अंशतः समरूपण / अंशतः समरूपी / आगे-मागे गुणधर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- आंशिक समरूपता / आंशिक समरूप / विस्तार-प्रतिविस्तार गुणधर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- पार्शल आयसोमॉर्फिझम / बॅक-अँड-फोर्थ गुणधर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are आंशिक समरूपण and पुढे-मागे गुणधर्म the clearest Marathi labels for finite partial isomorphisms and their two extension directions?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T277-OLP-0189-B004` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:9-10` | `mr/content/model-theory/basics/partial-iso.tex:9-10` | pending |
+| `T277-OLP-0189-B005` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | pending |
+| `T277-OLP-0189-B006` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:33-34` | `mr/content/model-theory/basics/partial-iso.tex:33-34` | pending |
+| `T277-OLP-0189-B007` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:36-50` | `mr/content/model-theory/basics/partial-iso.tex:36-50` | pending |
+| `T277-OLP-0189-B008` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:52-56` | `mr/content/model-theory/basics/partial-iso.tex:52-56` | pending |
+| `T277-OLP-0189-B009` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:58-78` | `mr/content/model-theory/basics/partial-iso.tex:58-78` | pending |
+| `T277-OLP-0189-B010` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:80-83` | `mr/content/model-theory/basics/partial-iso.tex:80-83` | pending |
+| `T277-OLP-0189-B011` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:85-91` | `mr/content/model-theory/basics/partial-iso.tex:85-91` | pending |
+| `T277-OLP-0189-B012` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:93-100` | `mr/content/model-theory/basics/partial-iso.tex:93-100` | pending |
+| `T277-OLP-0189-B013` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:102-107` | `mr/content/model-theory/basics/partial-iso.tex:102-108` | pending |
+| `T277-OLP-0189-B014` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:109-111` | `mr/content/model-theory/basics/partial-iso.tex:110-112` | pending |
+| `T277-OLP-0190-B007` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:33-40` | `mr/content/model-theory/basics/dlo.tex:33-40` | pending |
+| `T277-OLP-0190-B008` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:42-61` | `mr/content/model-theory/basics/dlo.tex:42-66` | pending |
+| `T277-OLP-0190-B009` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:63-66` | `mr/content/model-theory/basics/dlo.tex:68-71` | pending |
+| `T277-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
+
+## T278 — quantifier rank / n-equivalent
+
+**Chosen rendering/action:** संख्यापक-प्रतांक / n-सममूल्य
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P124 directly attests प्रतांक for mathematical rank, the established logic canon supports संख्यापक, and MR-P123 supports the सममूल्य family. OpenLogic recursively defines the first term as maximum quantifier nesting and defines n-equivalence by agreement on sentences of rank at most n, controlling both transparent compounds.
+
+**Rationale:** MR-P124 directly attests प्रतांक for mathematical rank, the established logic canon supports संख्यापक, and MR-P123 supports the सममूल्य family. OpenLogic recursively defines the first term as maximum quantifier nesting and defines n-equivalence by agreement on sentences of rank at most n, controlling both transparent compounds.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P022` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 20 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P123` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — elementary and equivalence entries. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/7/e (`checked_supports`): Official Directorate of Languages philosophy-and-logic glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the full model-theory compound is not directly attested and is controlled by OpenLogic's definition.
+- `MR-P124` — संख्या शास्त्र परिभाषा कोश — rank. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/12/r (`checked_supports`): Official Directorate of Languages statistics-glossary entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary entry is not model-theoretic, so OpenLogic's recursive definition controls the specialized sense.
+
+**Alternatives:**
+
+- संख्यापक-कोटी / n-तुल्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- संख्यापक खोली / n-सममूल्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- क्वांटिफायर रँक / n-इक्विव्हलन्ट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is संख्यापक-प्रतांक natural for quantifier rank, and should n-equivalent remain the compact n-सममूल्य?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T278-OLP-0189-B014` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:109-111` | `mr/content/model-theory/basics/partial-iso.tex:110-112` | pending |
+| `T278-OLP-0189-B015` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:113-120` | `mr/content/model-theory/basics/partial-iso.tex:114-122` | pending |
+| `T278-OLP-0189-B016` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:122-129` | `mr/content/model-theory/basics/partial-iso.tex:124-130` | pending |
+| `T278-OLP-0189-B019` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `mr/content/model-theory/basics/partial-iso.tex:144-162` | pending |
+| `T278-OLP-0189-B020` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:161-165` | `mr/content/model-theory/basics/partial-iso.tex:165-169` | pending |
+| `T278-OLP-0189-B021` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:167-174` | `mr/content/model-theory/basics/partial-iso.tex:171-178` | pending |
+| `T278-OLP-0189-B022` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:176-183` | `mr/content/model-theory/basics/partial-iso.tex:180-186` | pending |
+| `T278-OLP-0189-B023` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:185-187` | `mr/content/model-theory/basics/partial-iso.tex:188-190` | pending |
+| `T278-OLP-0189-B024` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:189-197` | `mr/content/model-theory/basics/partial-iso.tex:192-199` | pending |
+| `T278-OLP-0189-B025` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:199-213` | `mr/content/model-theory/basics/partial-iso.tex:201-215` | pending |
+| `T278-OLP-0189-B026` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:215-221` | `mr/content/model-theory/basics/partial-iso.tex:217-223` | pending |
+
+## T279 — purely relational language
+
+**Chosen rendering/action:** निव्वळ संबंधात्मक भाषा
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The checked canon supports formal-language, relation, predicate, constant and function terminology. OpenLogic immediately defines the local signature restrictions, first excluding functions and constants and later allowing finitely many constants but no functions; निव्वळ संबंधात्मक names the shared absence of positive-arity function symbols without claiming a separately attested fixed headword.
+
+**Rationale:** The checked canon supports formal-language, relation, predicate, constant and function terminology. OpenLogic immediately defines the local signature restrictions, first excluding functions and constants and later allowing finitely many constants but no functions; निव्वळ संबंधात्मक names the shared absence of positive-arity function symbols without claiming a separately attested fixed headword.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P017` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 81 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P022` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 20 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+
+**Alternatives:**
+
+- शुद्ध संबंधात्मक भाषा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- केवळ संबंधांची भाषा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- फलनविरहित संबंधात्मक भाषा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is निव्वळ संबंधात्मक भाषा clear across the source's two local conventions about whether constants are allowed?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T279-OLP-0189-B011` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:85-91` | `mr/content/model-theory/basics/partial-iso.tex:85-91` | pending |
+| `T279-OLP-0189-B016` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:122-129` | `mr/content/model-theory/basics/partial-iso.tex:124-130` | pending |
+| `T279-OLP-0189-B021` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:167-174` | `mr/content/model-theory/basics/partial-iso.tex:171-178` | pending |
+| `T279-OLP-0189-B026` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:215-221` | `mr/content/model-theory/basics/partial-iso.tex:217-223` | pending |
+
+## T280 — dense linear ordering without endpoints
+
+**Chosen rendering/action:** अंतबिंदुविरहित सघन रेषीय क्रम
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P125 directly attests सघन and सघनता in the official mathematics glossary, while the edition already uses रेषीय क्रम for linear order. OpenLogic gives six exact axioms: irreflexivity, transitivity, trichotomy, elements above and below every point, and an intermediate point between every ordered pair. The transparent modifier अंतबिंदुविरहित names the two existential no-endpoint clauses without claiming a separately attested fixed headword.
+
+**Rationale:** MR-P125 directly attests सघन and सघनता in the official mathematics glossary, while the edition already uses रेषीय क्रम for linear order. OpenLogic gives six exact axioms: irreflexivity, transitivity, trichotomy, elements above and below every point, and an intermediate point between every ordered pair. The transparent modifier अंतबिंदुविरहित names the two existential no-endpoint clauses without claiming a separately attested fixed headword.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P017` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 81 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P025` — मराठी विश्वकोश शब्दसंग्रह. https://shabdakosh.marathi.gov.in/ananya-glossary/41/r (`checked_supports`): short primary-source observation read; source bytes not preserved
+- `MR-P125` — गणितशास्त्र परिभाषा कोश — dense set and denseness. https://shabdakosh.marathi.gov.in/ananya-glossary/9/d (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the full model-theory compound and no-endpoint modifier were not independently attested.
+
+**Alternatives:**
+
+- अंत्यबिंदूंविना सघन रेषीय क्रम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- टोकांविना सघन रेषीय क्रम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सघन रेषीय क्रम ज्याला अंतबिंदू नाहीत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is अंतबिंदुविरहित सघन रेषीय क्रम the natural Marathi specialist label, especially for the no-endpoints modifier?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T280-OLP-0190-B004` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:9-10` | `mr/content/model-theory/basics/dlo.tex:9-10` | pending |
+| `T280-OLP-0190-B005` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:12-26` | `mr/content/model-theory/basics/dlo.tex:12-26` | pending |
+| `T280-OLP-0190-B006` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:28-31` | `mr/content/model-theory/basics/dlo.tex:28-31` | pending |
+| `T280-OLP-0190-B007` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:33-40` | `mr/content/model-theory/basics/dlo.tex:33-40` | pending |
+| `T280-OLP-0190-B008` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:42-61` | `mr/content/model-theory/basics/dlo.tex:42-66` | pending |
+| `T280-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -20130,6 +20716,81 @@ Coverage: 178/722 source units through OLP-0181; 373 applied decisions; 10,616 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLFOL-025-OLP-0178` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:60-87` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:58-89` | pending |
+
+## OLFOL-026 — confirmed-frozen-source-wrong structure in function-term evaluation with documented formula projection
+
+**Chosen rendering/action:** Changed the one function interpretation from M to M-prime in the Marathi display, placed adjacent reader note OLFOL-026 and added a unit-specific QA projection that reconstructs the frozen M solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The term-induction case evaluates t in M-prime under h-composed-with-s, but its defining equation applies the interpretation of f in M to argument values taken in M-prime. The right side must instead use the interpretation of f in M-prime. The next calculation already uses M-prime, and the function clause of the isomorphism definition supplies exactly that equality.
+
+**Rationale:** The term-induction case evaluates t in M-prime under h-composed-with-s, but its defining equation applies the interpretation of f in M to argument values taken in M-prime. The right side must instead use the interpretation of f in M-prime. The next calculation already uses M-prime, and the function clause of the isomorphism definition supplies exactly that equality. Chosen action: Changed the one function interpretation from M to M-prime in the Marathi display, placed adjacent reader note OLFOL-026 and added a unit-specific QA projection that reconstructs the frozen M solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-026-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-026. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the mismatched function interpretation and leave the displayed semantic recursion false or ill-typed when the domains differ — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the left-hand evaluation and all argument values to M, which would conflict with the h-composed assignment and the theorem's induction claim — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected equation now evaluate the function term entirely in M-prime while preserving the induction argument?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-026-OLP-0187` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:86-104` | `mr/content/model-theory/basics/isomorphism.tex:85-104` | pending |
+
+## OLFOL-027 — confirmed-frozen-source-sequence-length and recursion-index collision with documented formula projection
+
+**Chosen rendering/action:** Introduced plain-text k as the common sequence length, changed the one displayed upper variable index from x_n to x_k in Marathi, placed adjacent reader note OLFOL-027 and added a unit-specific QA projection that reconstructs the frozen x_n solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The definition indexes the back-and-forth relations by recursion depth n but then also says that every variable of the atomic formula lies among x_1 through x_n. At I_0 this would allow no variables regardless of the equal-length sequences being compared, contradicting the immediately adjacent assignments s_1(x_i)=a_i and s_2(x_i)=b_i. The upper variable index must instead be the independent common sequence length.
+
+**Rationale:** The definition indexes the back-and-forth relations by recursion depth n but then also says that every variable of the atomic formula lies among x_1 through x_n. At I_0 this would allow no variables regardless of the equal-length sequences being compared, contradicting the immediately adjacent assignments s_1(x_i)=a_i and s_2(x_i)=b_i. The upper variable index must instead be the independent common sequence length. Chosen action: Introduced plain-text k as the common sequence length, changed the one displayed upper variable index from x_n to x_k in Marathi, placed adjacent reader note OLFOL-027 and added a unit-specific QA projection that reconstructs the frozen x_n solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-027-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-027. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve n as both recursion depth and sequence length, making the I_0 clause unusable for nonempty tuples — `rejected`: Not chosen; the source finding and recorded action control.
+- Reindex every relation I_n by tuple length, which would destroy the intended recursion on back-and-forth depth — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired I_0 clause now range over exactly the variables corresponding to the compared sequence positions, independently of recursion depth?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-027-OLP-0189` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:144-157` | `mr/content/model-theory/basics/partial-iso.tex:145-159` | pending |
+
+## OLFOL-028 — confirmed-frozen-source-incomplete domain and empty-map case split with bounded prose correction
+
+**Chosen rendering/action:** Added the two missing cases in Marathi prose and placed adjacent reader note OLFOL-028. No protected formula, macro, token, identifier or reference changed, so no structural projection is needed.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The Forth proof considers only a strictly below a_1, strictly above a_n or strictly between adjacent listed domain elements. It omits the case where a is already in the domain, for which p itself is the required extension, and the case p is empty, where a_1 and a_n do not exist. The latter omission is material because the proof explicitly includes the empty map in I.
+
+**Rationale:** The Forth proof considers only a strictly below a_1, strictly above a_n or strictly between adjacent listed domain elements. It omits the case where a is already in the domain, for which p itself is the required extension, and the case p is empty, where a_1 and a_n do not exist. The latter omission is material because the proof explicitly includes the empty map in I. Chosen action: Added the two missing cases in Marathi prose and placed adjacent reader note OLFOL-028. No protected formula, macro, token, identifier or reference changed, so no structural projection is needed.
+
+**Authorities actually checked:**
+
+- `OLFOL-028-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-028. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Exclude the empty map from I, contradicting the preceding nonemptiness argument — `rejected`: Not chosen; the source finding and recorded action control.
+- Restrict the Forth obligation to elements outside a nonempty map's domain, contradicting the cited definition — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do the added prose cases now cover every a before the three strict-order positions are considered?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-028-OLP-0190` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:42-57` | `mr/content/model-theory/basics/dlo.tex:42-62` | pending |
 
 ## Deferred prospective decisions
 
