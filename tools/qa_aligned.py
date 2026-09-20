@@ -266,6 +266,27 @@ _DOCUMENTED_PROJECTIONS = {
         ('$x_1$, \\dots,~$x_k$',
          '$x_1$, \\dots,~$x_n$'),
     ],
+    'OLP-0192': [
+        ('$\\lexists[x][\\OPrf[\\Th{PA}](x, \\gn{\\lfalse})]$',
+         '$\\lexists[x][\\OPrf[\\Th{PA}](\\gn{\\lfalse})]$'),
+    ],
+    'OLP-0194': [
+        ('$x = \\Assign{c}{M^c}$', '$x = \\Assign{c}{M}$'),
+    ],
+    'OLP-0195': [
+        ('$y = a$', '$y = b$'),
+        ('(b \\nsplus a)^\\nssucc', '(b \\nsplus y)^\\nssucc'),
+    ],
+    'OLP-0196': [
+        ('$x \\nsplus y = z \\nsplus z$', '$x \\oplus y = z \\oplus z$'),
+        ('$x \\nsplus y = (z \\nsplus z)^\\nssucc$',
+         '$x \\oplus y = (z \\oplus z)^\\nssucc$'),
+    ],
+    'OLP-0197': [
+        ('\\Setabs{\\tuple{x,a}}{x \\in \\Domain{K}}',
+         '\\Setabs{\\tuple{x,a}}{n \\in \\Domain{K}}'),
+        ('$g(n) = n-1$', '$g(n) = n+1$'),
+    ],
 }
 
 

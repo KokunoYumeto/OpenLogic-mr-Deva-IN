@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 occurrences.
+Coverage: 194/722 source units through OLP-0197; 406 applied decisions; 11,402 occurrences.
 
 ## T001 — set
 
@@ -775,6 +775,19 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T002-OLP-0176-B009` | `OLP-0176` |  | `upstream/content/first-order-logic/beyond/many-sorted-logic.tex:44-64` | `mr/content/first-order-logic/beyond/many-sorted-logic.tex:42-63` | pending |
 | `T002-OLP-0177-B009` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:83-98` | `mr/content/first-order-logic/beyond/second-order-logic.tex:78-91` | pending |
 | `T002-OLP-0179-B027` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202` | pending |
+| `T002-OLP-0196-B008` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:41-49` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:42-50` | pending |
+| `T002-OLP-0196-B010` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:61-69` | pending |
+| `T002-OLP-0196-B013` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:80-83` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:82-85` | pending |
+| `T002-OLP-0196-B014` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:85-95` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:87-97` | pending |
+| `T002-OLP-0196-B015` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:97-108` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:99-111` | pending |
+| `T002-OLP-0196-B016` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:110-123` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:113-127` | pending |
+| `T002-OLP-0196-B017` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:125-128` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:129-132` | pending |
+| `T002-OLP-0196-B019` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:135-138` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:140-144` | pending |
+| `T002-OLP-0196-B020` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:140-147` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:146-154` | pending |
+| `T002-OLP-0196-B023` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:157-161` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:164-168` | pending |
+| `T002-OLP-0196-B033` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-228` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:226-233` | pending |
+| `T002-OLP-0197-B006` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | pending |
+| `T002-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
 
 ## T003 — empty set
 
@@ -1645,6 +1658,31 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T008-OLP-0178-B008` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93` | pending |
 | `T008-OLP-0179-B007` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:19-26` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:18-23` | pending |
 | `T008-OLP-0179-B008` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:28-30` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:25-26` | pending |
+| `T008-OLP-0192-B005` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12-39` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:12-37` | pending |
+| `T008-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+| `T008-OLP-0193-B005` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:12-18` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:12-17` | pending |
+| `T008-OLP-0193-B008` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:33-41` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:32-40` | pending |
+| `T008-OLP-0193-B009` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:43-50` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:42-49` | pending |
+| `T008-OLP-0193-B012` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:65-73` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:64-72` | pending |
+| `T008-OLP-0193-B013` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:75-113` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:74-112` | pending |
+| `T008-OLP-0193-B014` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:115-125` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:114-123` | pending |
+| `T008-OLP-0193-B016` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:132-137` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:131-136` | pending |
+| `T008-OLP-0193-B018` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-172` | pending |
+| `T008-OLP-0194-B006` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:18-24` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:18-25` | pending |
+| `T008-OLP-0194-B009` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-47` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-46` | pending |
+| `T008-OLP-0195-B006` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | pending |
+| `T008-OLP-0195-B008` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:94-111` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:95-114` | pending |
+| `T008-OLP-0195-B011` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:136-180` | pending |
+| `T008-OLP-0195-B014` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:193-203` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:200-210` | pending |
+| `T008-OLP-0196-B014` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:85-95` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:87-97` | pending |
+| `T008-OLP-0197-B005` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22` | pending |
+| `T008-OLP-0197-B006` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | pending |
+| `T008-OLP-0197-B007` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:35-40` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:34-39` | pending |
+| `T008-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
+| `T008-OLP-0197-B009` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98` | pending |
+| `T008-OLP-0197-B010` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:100-105` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:100-104` | pending |
+| `T008-OLP-0197-B011` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109` | pending |
+| `T008-OLP-0197-B012` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116` | pending |
 
 ## T009 — formal validity
 
@@ -2100,6 +2138,32 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T013-OLP-0186-B005` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:12-15` | `mr/content/model-theory/basics/overspill.tex:12-15` | pending |
 | `T013-OLP-0186-B006` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | pending |
 | `T013-OLP-0186-B008` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:35-40` | `mr/content/model-theory/basics/overspill.tex:35-39` | pending |
+| `T013-OLP-0191-B004` | `OLP-0191` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex:8-8` | `mr/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex:8-8` | pending |
+| `T013-OLP-0192-B006` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:41-53` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:39-50` | pending |
+| `T013-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+| `T013-OLP-0193-B005` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:12-18` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:12-17` | pending |
+| `T013-OLP-0193-B011` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:59-63` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:58-62` | pending |
+| `T013-OLP-0194-B011` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-76` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-74` | pending |
+| `T013-OLP-0194-B012` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:78-81` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:76-79` | pending |
+| `T013-OLP-0194-B013` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:83-98` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:81-97` | pending |
+| `T013-OLP-0195-B004` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:9-10` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:9-10` | pending |
+| `T013-OLP-0195-B005` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | pending |
+| `T013-OLP-0195-B009` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:113-119` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:116-122` | pending |
+| `T013-OLP-0195-B013` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:187-191` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:194-198` | pending |
+| `T013-OLP-0196-B004` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:9-10` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:9-10` | pending |
+| `T013-OLP-0196-B005` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:12-20` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:12-20` | pending |
+| `T013-OLP-0196-B007` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-39` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-40` | pending |
+| `T013-OLP-0196-B012` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:73-78` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:75-80` | pending |
+| `T013-OLP-0196-B013` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:80-83` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:82-85` | pending |
+| `T013-OLP-0196-B031` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:210-213` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:216-218` | pending |
+| `T013-OLP-0196-B035` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | pending |
+| `T013-OLP-0197-B004` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:9-10` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:9-10` | pending |
+| `T013-OLP-0197-B006` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | pending |
+| `T013-OLP-0197-B007` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:35-40` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:34-39` | pending |
+| `T013-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
+| `T013-OLP-0197-B011` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109` | pending |
+| `T013-OLP-0197-B012` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116` | pending |
+| `T013-OLP-0197-B013` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120` | pending |
 
 ## T014 — perfect number
 
@@ -2734,6 +2798,7 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T020-OLP-0172-B011` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:112-129` | `mr/content/first-order-logic/models-theories/set-theory.tex:108-127` | pending |
 | `T020-OLP-0178-B008` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93` | pending |
 | `T020-OLP-0179-B013` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:61-72` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:53-63` | pending |
+| `T020-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
 
 ## T021 — Cartesian product
 
@@ -3096,6 +3161,7 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T026-OLP-0172-B013` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:149-171` | `mr/content/first-order-logic/models-theories/set-theory.tex:147-169` | pending |
 | `T026-OLP-0172-B014` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:173-182` | `mr/content/first-order-logic/models-theories/set-theory.tex:171-180` | pending |
 | `T026-OLP-0177-B008` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:67-81` | `mr/content/first-order-logic/beyond/second-order-logic.tex:64-76` | pending |
+| `T026-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
 
 ## T027 — mathematical / arithmetical induction
 
@@ -3176,6 +3242,9 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T027-OLP-0178-B008` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93` | pending |
 | `T027-OLP-0179-B019` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:135-149` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:120-133` | pending |
 | `T027-OLP-0189-B017` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:131-133` | `mr/content/model-theory/basics/partial-iso.tex:132-134` | pending |
+| `T027-OLP-0193-B016` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:132-137` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:131-136` | pending |
+| `T027-OLP-0193-B017` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:139-150` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:138-150` | pending |
+| `T027-OLP-0194-B009` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-47` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-46` | pending |
 
 ## T028 — continuum
 
@@ -3320,6 +3389,10 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T029-OLP-0178-B009` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:95-100` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:95-100` | pending |
 | `T029-OLP-0179-B022` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:166-170` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:149-152` | pending |
 | `T029-OLP-0180-B010` | `OLP-0180` |  | `upstream/content/first-order-logic/beyond/modal-logics.tex:67-89` | `mr/content/first-order-logic/beyond/modal-logics.tex:61-81` | pending |
+| `T029-OLP-0194-B010` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:49-64` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:48-64` | pending |
+| `T029-OLP-0195-B010` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:121-131` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:124-134` | pending |
+| `T029-OLP-0195-B012` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:176-185` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:182-192` | pending |
+| `T029-OLP-0195-B014` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:193-203` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:200-210` | pending |
 
 ## T030 — relation / binary relation
 
@@ -4082,6 +4155,23 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T036-OLP-0047-B015` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:101-109` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:101-108` | 61–64 |
 | `T036-OLP-0047-B016` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:111-118` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:110-117` | 61–64 |
 | `T036-OLP-0048-B015` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:149-163` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:145-163` | 64–67 |
+| `T036-OLP-0196-B008` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:41-49` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:42-50` | pending |
+| `T036-OLP-0196-B009` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:51-58` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:52-59` | pending |
+| `T036-OLP-0196-B010` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:61-69` | pending |
+| `T036-OLP-0196-B013` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:80-83` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:82-85` | pending |
+| `T036-OLP-0196-B014` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:85-95` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:87-97` | pending |
+| `T036-OLP-0196-B017` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:125-128` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:129-132` | pending |
+| `T036-OLP-0196-B018` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:130-133` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:134-138` | pending |
+| `T036-OLP-0196-B019` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:135-138` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:140-144` | pending |
+| `T036-OLP-0196-B020` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:140-147` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:146-154` | pending |
+| `T036-OLP-0196-B021` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:149-151` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:156-158` | pending |
+| `T036-OLP-0196-B023` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:157-161` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:164-168` | pending |
+| `T036-OLP-0196-B024` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:163-171` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:170-177` | pending |
+| `T036-OLP-0196-B025` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:173-176` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:179-182` | pending |
+| `T036-OLP-0196-B026` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:178-186` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:184-192` | pending |
+| `T036-OLP-0196-B032` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:215-220` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:220-224` | pending |
+| `T036-OLP-0196-B033` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-228` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:226-233` | pending |
+| `T036-OLP-0197-B010` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:100-105` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:100-104` | pending |
 
 ## T037 — equivalence relation / class / quotient
 
@@ -4269,6 +4359,11 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T039-OLP-0190-B004` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:9-10` | `mr/content/model-theory/basics/dlo.tex:9-10` | pending |
 | `T039-OLP-0190-B005` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:12-26` | `mr/content/model-theory/basics/dlo.tex:12-26` | pending |
 | `T039-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
+| `T039-OLP-0196-B008` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:41-49` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:42-50` | pending |
+| `T039-OLP-0196-B009` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:51-58` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:52-59` | pending |
+| `T039-OLP-0196-B014` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:85-95` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:87-97` | pending |
+| `T039-OLP-0196-B024` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:163-171` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:170-177` | pending |
+| `T039-OLP-0196-B035` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | pending |
 
 ## T040 — graph / directed graph / vertex / edge
 
@@ -4434,23 +4529,25 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 
 **Chosen rendering/action:** लघुतम / सुक्रमित / पूर्ववर्ती / उत्तरवर्ती
 
-**Kind:** `terminology` · **recording:** `retrospective` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+**Kind:** `terminology` · **recording:** `retrospective` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
 
-**Intended sense:** Provisional extension; least is below every element, not merely minimal. Successor/predecessor here is immediate, unlike arbitrary descendant/ancestor.
+**Intended sense:** MR-P127 directly attests उत्तरवर्ती for successor in the official mathematics glossary. The order passages and OpenLogic definitions control the remaining sequence terms: least lies below every element rather than merely being minimal, and predecessor/successor here is immediate rather than an arbitrary ancestor/descendant relation.
 
-**Rationale:** Provisional extension; least is below every element, not merely minimal. Successor/predecessor here is immediate, unlike arbitrary descendant/ancestor.
+**Rationale:** MR-P127 directly attests उत्तरवर्ती for successor in the official mathematics glossary. The order passages and OpenLogic definitions control the remaining sequence terms: least lies below every element rather than merely being minimal, and predecessor/successor here is immediate rather than an arbitrary ancestor/descendant relation.
 
 **Authorities actually checked:**
 
 - `MR-P005` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 7 (`checked_supports`): visually-read-page-image
 - `MR-P017` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 81 (`checked_supports`): visually-read-page-image
 - `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P127` — गणितशास्त्र परिभाषा कोश — successor. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Official Directorate of Languages mathematics-glossary entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the full compound उत्तरवर्ती फलन is compositional.
 
 **Alternatives:**
 
-- न्यूनतम / सुव्यवस्थित / पूर्वज / उत्तरज — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- न्यूनतम / सुव्यवस्थित / पूर्वगामी / उत्तरगामी — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- लघुतम / सुक्रमित / पूर्वज / उत्तरज — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
 
-**Please double-check:** Please double-check: Does लघुतम clearly mean below every element, rather than merely minimal?
+**Please double-check:** Please double-check: Should the directly attested उत्तरवर्ती be paired with पूर्ववर्ती throughout, and do लघुतम and सुक्रमित remain clear for least and well-ordered?
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
@@ -4507,6 +4604,27 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T042-OLP-0177-B013` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202` | `mr/content/first-order-logic/beyond/second-order-logic.tex:172-190` | pending |
 | `T042-OLP-0178-B008` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93` | pending |
 | `T042-OLP-0179-B027` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202` | pending |
+| `T042-OLP-0192-B005` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12-39` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:12-37` | pending |
+| `T042-OLP-0193-B013` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:75-113` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:74-112` | pending |
+| `T042-OLP-0193-B017` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:139-150` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:138-150` | pending |
+| `T042-OLP-0193-B018` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-172` | pending |
+| `T042-OLP-0195-B006` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | pending |
+| `T042-OLP-0195-B007` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:88-92` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:88-93` | pending |
+| `T042-OLP-0195-B008` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:94-111` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:95-114` | pending |
+| `T042-OLP-0195-B011` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:136-180` | pending |
+| `T042-OLP-0195-B013` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:187-191` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:194-198` | pending |
+| `T042-OLP-0196-B010` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:61-69` | pending |
+| `T042-OLP-0196-B015` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:97-108` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:99-111` | pending |
+| `T042-OLP-0196-B016` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:110-123` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:113-127` | pending |
+| `T042-OLP-0196-B018` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:130-133` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:134-138` | pending |
+| `T042-OLP-0196-B019` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:135-138` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:140-144` | pending |
+| `T042-OLP-0196-B020` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:140-147` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:146-154` | pending |
+| `T042-OLP-0196-B027` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:188-190` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:194-196` | pending |
+| `T042-OLP-0196-B028` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:192-200` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:198-206` | pending |
+| `T042-OLP-0196-B029` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:202-204` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:208-210` | pending |
+| `T042-OLP-0196-B031` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:210-213` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:216-218` | pending |
+| `T042-OLP-0197-B005` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22` | pending |
+| `T042-OLP-0197-B009` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98` | pending |
 
 ## T043 — closure / inverse / restriction / relative product
 
@@ -4607,13 +4725,13 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 
 ## T044 — computability / formula / derivation
 
-**Chosen rendering/action:** संगणनीयता / सूत्र / निष्पत्ती
+**Chosen rendering/action:** संगणनक्षमता / सूत्र / निष्पत्ती
 
-**Kind:** `terminology` · **recording:** `retrospective` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+**Kind:** `terminology` · **recording:** `retrospective` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
 
-**Intended sense:** Provisional formal-system senses; university proof and predicate-logic context supports grammar but not all exact labels. Distinguish computability संगणनीयता from countability गणनीयता before latter first use.
+**Intended sense:** MR-P129 now directly attests computable as संगणनक्षम and separately attests countable as गणनीय, so the corresponding noun is normalized to संगणनक्षमता to preserve that technical distinction. The earlier university proof and predicate-logic passages continue to support सूत्र and निष्पत्ती in their formal-system senses.
 
-**Rationale:** Provisional formal-system senses; university proof and predicate-logic context supports grammar but not all exact labels. Distinguish computability संगणनीयता from countability गणनीयता before latter first use.
+**Rationale:** MR-P129 now directly attests computable as संगणनक्षम and separately attests countable as गणनीय, so the corresponding noun is normalized to संगणनक्षमता to preserve that technical distinction. The earlier university proof and predicate-logic passages continue to support सूत्र and निष्पत्ती in their formal-system senses.
 
 **Authorities actually checked:**
 
@@ -4623,12 +4741,14 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 - `MR-P022` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 20 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
 - `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
 - `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P129` — गणितशास्त्र परिभाषा कोश — computable, calculable and countable. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic's definition controls the compound संगणनक्षम रचना.
 
 **Alternatives:**
 
-- गणनक्षमता / व्युत्पादन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- संगणनीयता / सूत्र / निष्पत्ती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- परिगणनक्षमता / सूत्र / निष्पत्ती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
 
-**Please double-check:** Please double-check: Is संगणनीयता the best way to keep computability distinct from गणनीयता for countability?
+**Please double-check:** Please double-check: Is संगणनक्षमता the preferred Marathi noun for computability alongside the official adjective संगणनक्षम?
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
@@ -5056,6 +5176,8 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T044-OLP-0178-B010` | `OLP-0178` |  | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:102-112` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:102-111` | pending |
 | `T044-OLP-0179-B015` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:81-95` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:71-83` | pending |
 | `T044-OLP-0181-B006` | `OLP-0181` |  | `upstream/content/first-order-logic/beyond/other-logics.tex:13-20` | `mr/content/first-order-logic/beyond/other-logics.tex:13-19` | pending |
+| `T044-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+| `T044-OLP-0197-B004` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:9-10` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:9-10` | pending |
 
 ## T045 — function / mapping
 
@@ -5371,6 +5493,22 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T045-OLP-0189-B009` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:58-78` | `mr/content/model-theory/basics/partial-iso.tex:58-78` | pending |
 | `T045-OLP-0189-B013` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:102-107` | `mr/content/model-theory/basics/partial-iso.tex:102-108` | pending |
 | `T045-OLP-0190-B008` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:42-61` | `mr/content/model-theory/basics/dlo.tex:42-66` | pending |
+| `T045-OLP-0192-B005` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12-39` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:12-37` | pending |
+| `T045-OLP-0193-B012` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:65-73` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:64-72` | pending |
+| `T045-OLP-0193-B013` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:75-113` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:74-112` | pending |
+| `T045-OLP-0193-B014` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:115-125` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:114-123` | pending |
+| `T045-OLP-0193-B016` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:132-137` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:131-136` | pending |
+| `T045-OLP-0193-B017` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:139-150` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:138-150` | pending |
+| `T045-OLP-0193-B018` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-172` | pending |
+| `T045-OLP-0195-B006` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | pending |
+| `T045-OLP-0195-B008` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:94-111` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:95-114` | pending |
+| `T045-OLP-0195-B011` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:136-180` | pending |
+| `T045-OLP-0195-B012` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:176-185` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:182-192` | pending |
+| `T045-OLP-0197-B005` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22` | pending |
+| `T045-OLP-0197-B007` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:35-40` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:34-39` | pending |
+| `T045-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
+| `T045-OLP-0197-B009` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98` | pending |
+| `T045-OLP-0197-B010` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:100-105` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:100-104` | pending |
 
 ## T046 — domain / codomain / range
 
@@ -5569,6 +5707,32 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T046-OLP-0189-B009` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:58-78` | `mr/content/model-theory/basics/partial-iso.tex:58-78` | pending |
 | `T046-OLP-0189-B018` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:135-141` | `mr/content/model-theory/basics/partial-iso.tex:136-142` | pending |
 | `T046-OLP-0190-B008` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:42-61` | `mr/content/model-theory/basics/dlo.tex:42-66` | pending |
+| `T046-OLP-0192-B005` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12-39` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:12-37` | pending |
+| `T046-OLP-0193-B007` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:25-31` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:24-30` | pending |
+| `T046-OLP-0193-B008` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:33-41` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:32-40` | pending |
+| `T046-OLP-0193-B009` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:43-50` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:42-49` | pending |
+| `T046-OLP-0193-B010` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:52-57` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:51-56` | pending |
+| `T046-OLP-0193-B011` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:59-63` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:58-62` | pending |
+| `T046-OLP-0193-B012` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:65-73` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:64-72` | pending |
+| `T046-OLP-0193-B013` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:75-113` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:74-112` | pending |
+| `T046-OLP-0193-B014` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:115-125` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:114-123` | pending |
+| `T046-OLP-0193-B016` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:132-137` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:131-136` | pending |
+| `T046-OLP-0193-B018` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-172` | pending |
+| `T046-OLP-0194-B006` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:18-24` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:18-25` | pending |
+| `T046-OLP-0194-B007` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:26-32` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:27-32` | pending |
+| `T046-OLP-0194-B008` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:34-37` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:34-37` | pending |
+| `T046-OLP-0194-B009` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-47` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-46` | pending |
+| `T046-OLP-0194-B013` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:83-98` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:81-97` | pending |
+| `T046-OLP-0195-B006` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | pending |
+| `T046-OLP-0195-B011` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:136-180` | pending |
+| `T046-OLP-0196-B010` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:61-69` | pending |
+| `T046-OLP-0196-B015` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:97-108` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:99-111` | pending |
+| `T046-OLP-0196-B016` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:110-123` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:113-127` | pending |
+| `T046-OLP-0196-B033` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-228` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:226-233` | pending |
+| `T046-OLP-0197-B006` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | pending |
+| `T046-OLP-0197-B007` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:35-40` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:34-39` | pending |
+| `T046-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
+| `T046-OLP-0197-B011` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109` | pending |
 
 ## T047 — argument / input / output / value
 
@@ -5792,6 +5956,10 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T048-OLP-0040-B022` | `OLP-0040` | 4.13 न्यूनीकरण | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:130-134` | `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:133-138` | 52–53 |
 | `T048-OLP-0177-B011` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167` | `mr/content/first-order-logic/beyond/second-order-logic.tex:121-157` | pending |
 | `T048-OLP-0187-B007` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:35-59` | `mr/content/model-theory/basics/isomorphism.tex:34-58` | pending |
+| `T048-OLP-0193-B008` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:33-41` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:32-40` | pending |
+| `T048-OLP-0193-B012` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:65-73` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:64-72` | pending |
+| `T048-OLP-0193-B018` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-172` | pending |
+| `T048-OLP-0194-B009` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-47` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-46` | pending |
 
 ## T049 — injective / injection
 
@@ -5905,6 +6073,11 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T049-OLP-0177-B012` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:169-181` | `mr/content/first-order-logic/beyond/second-order-logic.tex:159-170` | pending |
 | `T049-OLP-0187-B007` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:35-59` | `mr/content/model-theory/basics/isomorphism.tex:34-58` | pending |
 | `T049-OLP-0189-B005` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | pending |
+| `T049-OLP-0193-B012` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:65-73` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:64-72` | pending |
+| `T049-OLP-0193-B018` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-172` | pending |
+| `T049-OLP-0195-B007` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:88-92` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:88-93` | pending |
+| `T049-OLP-0195-B011` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:136-180` | pending |
+| `T049-OLP-0196-B007` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-39` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-40` | pending |
 
 ## T050 — bijective / bijection / one-to-one correspondence
 
@@ -6015,6 +6188,9 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T050-OLP-0054-B014` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78` | `mr/content/sets-functions-relations/infinite/card-sb.tex:74-78` | 72–74 |
 | `T050-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 72–74 |
 | `T050-OLP-0177-B011` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167` | `mr/content/first-order-logic/beyond/second-order-logic.tex:121-157` | pending |
+| `T050-OLP-0193-B014` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:115-125` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:114-123` | pending |
+| `T050-OLP-0193-B018` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-172` | pending |
+| `T050-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
 
 ## T051 — identity / constant function
 
@@ -6531,6 +6707,10 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T057-OLP-0190-B006` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:28-31` | `mr/content/model-theory/basics/dlo.tex:28-31` | pending |
 | `T057-OLP-0190-B007` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:33-40` | `mr/content/model-theory/basics/dlo.tex:33-40` | pending |
 | `T057-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
+| `T057-OLP-0194-B012` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:78-81` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:76-79` | pending |
+| `T057-OLP-0194-B014` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | pending |
+| `T057-OLP-0196-B035` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | pending |
+| `T057-OLP-0197-B006` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | pending |
 
 ## T058 — size / cardinality / equinumerous
 
@@ -6597,6 +6777,7 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T058-OLP-0173-B006` | `OLP-0173` |  | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:13-19` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:13-18` | pending |
 | `T058-OLP-0186-B005` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:12-15` | `mr/content/model-theory/basics/overspill.tex:12-15` | pending |
 | `T058-OLP-0186-B006` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | pending |
+| `T058-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
 
 ## T059 — actual infinity
 
@@ -6902,6 +7083,7 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T066-OLP-0179-B012` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:49-59` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:42-51` | pending |
 | `T066-OLP-0179-B013` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:61-72` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:53-63` | pending |
 | `T066-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
+| `T066-OLP-0196-B035` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | pending |
 
 ## T067 — pairing function / encode / code / decode
 
@@ -7407,6 +7589,7 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T080-OLP-0053-B005` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-19` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:14-17` | 71–72 |
 | `T080-OLP-0053-B014` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:113-113` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:108-108` | 71–72 |
 | `T080-OLP-0161-B010` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:67-73` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:68-73` | pending |
+| `T080-OLP-0194-B011` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-76` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-74` | pending |
 
 ## T081 — stipulative definition / stipulate
 
@@ -7812,6 +7995,11 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T090-OLP-0047-B019` | `OLP-0047` | 5.6 क्रमित वलये आणि क्षेत्रे | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:127-136` | `mr/content/sets-functions-relations/arithmetization/checking-details.tex:126-134` | 61–64 |
 | `T090-OLP-0051-B004` | `OLP-0051` | 6.2 डेडेकिंड बीजसंरचना | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:12-14` | `mr/content/sets-functions-relations/infinite/dedekind-algebra.tex:12-14` | 69–70 |
 | `T090-OLP-0052-B012` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:51-64` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:54-66` | 70–71 |
+| `T090-OLP-0195-B009` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:113-119` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:116-122` | pending |
+| `T090-OLP-0195-B011` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:136-180` | pending |
+| `T090-OLP-0196-B026` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:178-186` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:184-192` | pending |
+| `T090-OLP-0197-B005` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22` | pending |
+| `T090-OLP-0197-B009` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98` | pending |
 
 ## T091 — trichotomy / trichotomic property
 
@@ -8416,6 +8604,23 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T105-OLP-0190-B008` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:42-61` | `mr/content/model-theory/basics/dlo.tex:42-66` | pending |
 | `T105-OLP-0190-B009` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:63-66` | `mr/content/model-theory/basics/dlo.tex:68-71` | pending |
 | `T105-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
+| `T105-OLP-0192-B005` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12-39` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:12-37` | pending |
+| `T105-OLP-0192-B006` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:41-53` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:39-50` | pending |
+| `T105-OLP-0193-B005` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:12-18` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:12-17` | pending |
+| `T105-OLP-0193-B006` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:20-23` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:19-22` | pending |
+| `T105-OLP-0193-B008` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:33-41` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:32-40` | pending |
+| `T105-OLP-0193-B010` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:52-57` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:51-56` | pending |
+| `T105-OLP-0193-B012` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:65-73` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:64-72` | pending |
+| `T105-OLP-0193-B013` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:75-113` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:74-112` | pending |
+| `T105-OLP-0193-B014` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:115-125` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:114-123` | pending |
+| `T105-OLP-0193-B015` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:127-130` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:125-129` | pending |
+| `T105-OLP-0193-B016` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:132-137` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:131-136` | pending |
+| `T105-OLP-0193-B017` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:139-150` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:138-150` | pending |
+| `T105-OLP-0194-B005` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:12-16` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:12-16` | pending |
+| `T105-OLP-0194-B009` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-47` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-46` | pending |
+| `T105-OLP-0196-B035` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | pending |
+| `T105-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
+| `T105-OLP-0197-B011` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109` | pending |
 
 ## T106 — structuralism / structuralist
 
@@ -8656,6 +8861,8 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T109-OLP-0187-B011` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:112-117` | `mr/content/model-theory/basics/isomorphism.tex:113-118` | pending |
 | `T109-OLP-0189-B010` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:80-83` | `mr/content/model-theory/basics/partial-iso.tex:80-83` | pending |
 | `T109-OLP-0190-B009` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:63-66` | `mr/content/model-theory/basics/dlo.tex:68-71` | pending |
+| `T109-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+| `T109-OLP-0193-B015` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:127-130` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:125-129` | pending |
 
 ## T110 — logical completeness / completeness theorem / truth-functional completeness
 
@@ -9445,6 +9652,28 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T118-OLP-0188-B011` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:38-41` | `mr/content/model-theory/basics/theory-of-m.tex:41-44` | pending |
 | `T118-OLP-0188-B012` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:43-49` | `mr/content/model-theory/basics/theory-of-m.tex:46-53` | pending |
 | `T118-OLP-0188-B013` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | pending |
+| `T118-OLP-0192-B006` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:41-53` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:39-50` | pending |
+| `T118-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+| `T118-OLP-0194-B012` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:78-81` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:76-79` | pending |
+| `T118-OLP-0194-B013` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:83-98` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:81-97` | pending |
+| `T118-OLP-0194-B014` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | pending |
+| `T118-OLP-0195-B004` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:9-10` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:9-10` | pending |
+| `T118-OLP-0195-B005` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | pending |
+| `T118-OLP-0195-B013` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:187-191` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:194-198` | pending |
+| `T118-OLP-0195-B014` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:193-203` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:200-210` | pending |
+| `T118-OLP-0196-B005` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:12-20` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:12-20` | pending |
+| `T118-OLP-0196-B006` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27` | pending |
+| `T118-OLP-0196-B009` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:51-58` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:52-59` | pending |
+| `T118-OLP-0196-B014` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:85-95` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:87-97` | pending |
+| `T118-OLP-0196-B016` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:110-123` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:113-127` | pending |
+| `T118-OLP-0196-B018` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:130-133` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:134-138` | pending |
+| `T118-OLP-0196-B026` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:178-186` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:184-192` | pending |
+| `T118-OLP-0196-B028` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:192-200` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:198-206` | pending |
+| `T118-OLP-0196-B033` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-228` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:226-233` | pending |
+| `T118-OLP-0197-B004` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:9-10` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:9-10` | pending |
+| `T118-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
+| `T118-OLP-0197-B012` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116` | pending |
+| `T118-OLP-0197-B013` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120` | pending |
 
 ## T119 — formation rule / inductive definition / uniquely readable
 
@@ -9846,6 +10075,20 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T121-OLP-0189-B024` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:189-197` | `mr/content/model-theory/basics/partial-iso.tex:192-199` | pending |
 | `T121-OLP-0189-B025` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:199-213` | `mr/content/model-theory/basics/partial-iso.tex:201-215` | pending |
 | `T121-OLP-0189-B026` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:215-221` | `mr/content/model-theory/basics/partial-iso.tex:217-223` | pending |
+| `T121-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+| `T121-OLP-0193-B011` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:59-63` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:58-62` | pending |
+| `T121-OLP-0193-B012` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:65-73` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:64-72` | pending |
+| `T121-OLP-0193-B013` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:75-113` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:74-112` | pending |
+| `T121-OLP-0194-B010` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:49-64` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:48-64` | pending |
+| `T121-OLP-0194-B012` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:78-81` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:76-79` | pending |
+| `T121-OLP-0195-B005` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | pending |
+| `T121-OLP-0195-B007` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:88-92` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:88-93` | pending |
+| `T121-OLP-0195-B008` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:94-111` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:95-114` | pending |
+| `T121-OLP-0195-B009` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:113-119` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:116-122` | pending |
+| `T121-OLP-0195-B010` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:121-131` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:124-134` | pending |
+| `T121-OLP-0195-B011` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:136-180` | pending |
+| `T121-OLP-0195-B012` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:176-185` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:182-192` | pending |
+| `T121-OLP-0196-B007` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-39` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-40` | pending |
 
 ## T122 — tautology
 
@@ -10106,6 +10349,7 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T124-OLP-0168-B010` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:49-98` | `mr/content/first-order-logic/models-theories/introduction.tex:50-97` | pending |
 | `T124-OLP-0170-B012` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:90-100` | `mr/content/first-order-logic/models-theories/theories.tex:88-99` | pending |
 | `T124-OLP-0172-B013` | `OLP-0172` |  | `upstream/content/first-order-logic/models-theories/set-theory.tex:149-171` | `mr/content/first-order-logic/models-theories/set-theory.tex:147-169` | pending |
+| `T124-OLP-0194-B014` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | pending |
 
 ## T125 — necessary / contingent
 
@@ -10341,6 +10585,17 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T126-OLP-0189-B015` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:113-120` | `mr/content/model-theory/basics/partial-iso.tex:114-122` | pending |
 | `T126-OLP-0189-B016` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:122-129` | `mr/content/model-theory/basics/partial-iso.tex:124-130` | pending |
 | `T126-OLP-0189-B026` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:215-221` | `mr/content/model-theory/basics/partial-iso.tex:217-223` | pending |
+| `T126-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+| `T126-OLP-0193-B014` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:115-125` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:114-123` | pending |
+| `T126-OLP-0193-B018` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-172` | pending |
+| `T126-OLP-0194-B013` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:83-98` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:81-97` | pending |
+| `T126-OLP-0194-B014` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | pending |
+| `T126-OLP-0195-B005` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | pending |
+| `T126-OLP-0195-B009` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:113-119` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:116-122` | pending |
+| `T126-OLP-0195-B010` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:121-131` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:124-134` | pending |
+| `T126-OLP-0196-B006` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27` | pending |
+| `T126-OLP-0196-B012` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:73-78` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:75-80` | pending |
+| `T126-OLP-0196-B034` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:230-236` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:235-240` | pending |
 
 ## T127 — propositional constant
 
@@ -11283,6 +11538,7 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T140-OLP-0153-B020` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:103-106` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:100-103` | pending |
 | `T140-OLP-0153-B021` | `OLP-0153` |  | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:108-111` | `mr/content/first-order-logic/syntax-and-semantics/unique-readability.tex:105-108` | pending |
 | `T140-OLP-0179-B024` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:177-178` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:159-161` | pending |
+| `T140-OLP-0193-B017` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:139-150` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:138-150` | pending |
 
 ## T141 — formation sequence
 
@@ -11491,6 +11747,7 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T144-OLP-0189-B018` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:135-141` | `mr/content/model-theory/basics/partial-iso.tex:136-142` | pending |
 | `T144-OLP-0189-B019` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `mr/content/model-theory/basics/partial-iso.tex:144-162` | pending |
 | `T144-OLP-0189-B020` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:161-165` | `mr/content/model-theory/basics/partial-iso.tex:165-169` | pending |
+| `T144-OLP-0192-B005` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12-39` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:12-37` | pending |
 
 ## T145 — evaluation / evaluation function
 
@@ -12436,6 +12693,7 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T156-OLP-0177-B007` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65` | `mr/content/first-order-logic/beyond/second-order-logic.tex:30-62` | pending |
 | `T156-OLP-0180-B009` | `OLP-0180` |  | `upstream/content/first-order-logic/beyond/modal-logics.tex:50-65` | `mr/content/first-order-logic/beyond/modal-logics.tex:45-59` | pending |
 | `T156-OLP-0188-B013` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | pending |
+| `T156-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
 
 ## T157 — sequent (proof theory)
 
@@ -14064,6 +14322,9 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T181-OLP-0177-B014` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209` | `mr/content/first-order-logic/beyond/second-order-logic.tex:192-196` | pending |
 | `T181-OLP-0182-B005` | `OLP-0182` |  | `upstream/content/model-theory/model-theory.tex:9-17` | `mr/content/model-theory/model-theory.tex:9-16` | pending |
 | `T181-OLP-0186-B006` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | pending |
+| `T181-OLP-0192-B006` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:41-53` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:39-50` | pending |
+| `T181-OLP-0194-B011` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-76` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-74` | pending |
+| `T181-OLP-0194-B014` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | pending |
 
 ## T182 — proof-theoretic notions
 
@@ -14470,6 +14731,23 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T184-OLP-0179-B023` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:172-175` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:154-157` | pending |
 | `T184-OLP-0179-B024` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:177-178` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:159-161` | pending |
 | `T184-OLP-0180-B009` | `OLP-0180` |  | `upstream/content/first-order-logic/beyond/modal-logics.tex:50-65` | `mr/content/first-order-logic/beyond/modal-logics.tex:45-59` | pending |
+| `T184-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+| `T184-OLP-0193-B012` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:65-73` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:64-72` | pending |
+| `T184-OLP-0195-B005` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | pending |
+| `T184-OLP-0195-B009` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:113-119` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:116-122` | pending |
+| `T184-OLP-0195-B014` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:193-203` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:200-210` | pending |
+| `T184-OLP-0196-B006` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27` | pending |
+| `T184-OLP-0196-B009` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:51-58` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:52-59` | pending |
+| `T184-OLP-0196-B011` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:69-71` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:71-73` | pending |
+| `T184-OLP-0196-B012` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:73-78` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:75-80` | pending |
+| `T184-OLP-0196-B014` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:85-95` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:87-97` | pending |
+| `T184-OLP-0196-B016` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:110-123` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:113-127` | pending |
+| `T184-OLP-0196-B018` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:130-133` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:134-138` | pending |
+| `T184-OLP-0196-B026` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:178-186` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:184-192` | pending |
+| `T184-OLP-0196-B028` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:192-200` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:198-206` | pending |
+| `T184-OLP-0196-B030` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:206-208` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:212-214` | pending |
+| `T184-OLP-0196-B033` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-228` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:226-233` | pending |
+| `T184-OLP-0196-B034` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:230-236` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:235-240` | pending |
 
 ## T185 — intuitionistic logic
 
@@ -14885,6 +15163,7 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T194-OLP-0130-B006` | `OLP-0130` |  | `upstream/content/first-order-logic/completeness/henkin-expansions.tex:13-30` | `mr/content/first-order-logic/completeness/henkin-expansions.tex:13-29` | pending |
 | `T194-OLP-0130-B018` | `OLP-0130` |  | `upstream/content/first-order-logic/completeness/henkin-expansions.tex:149-158` | `mr/content/first-order-logic/completeness/henkin-expansions.tex:150-159` | pending |
 | `T194-OLP-0179-B027` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202` | pending |
+| `T194-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
 
 ## T195 — lemma
 
@@ -15083,6 +15362,7 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T199-OLP-0136-B021` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:120-126` | `mr/content/first-order-logic/completeness/compactness-direct.tex:120-126` | pending |
 | `T199-OLP-0136-B022` | `OLP-0136` |  | `upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143` | `mr/content/first-order-logic/completeness/compactness-direct.tex:128-145` | pending |
 | `T199-OLP-0186-B006` | `OLP-0186` |  | `upstream/content/model-theory/basics/overspill.tex:17-26` | `mr/content/model-theory/basics/overspill.tex:17-26` | pending |
+| `T199-OLP-0194-B014` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | pending |
 
 ## T200 — infinitesimal (number)
 
@@ -15150,6 +15430,7 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T201-OLP-0177-B014` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:204-209` | `mr/content/first-order-logic/beyond/second-order-logic.tex:192-196` | pending |
 | `T201-OLP-0187-B005` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:12-24` | `mr/content/model-theory/basics/isomorphism.tex:12-23` | pending |
 | `T201-OLP-0188-B013` | `OLP-0188` |  | `upstream/content/model-theory/basics/theory-of-m.tex:51-62` | `mr/content/model-theory/basics/theory-of-m.tex:55-66` | pending |
+| `T201-OLP-0194-B014` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | pending |
 
 ## T202 — formal language / formal derivation
 
@@ -15436,6 +15717,21 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T205-OLP-0187-B009` | `OLP-0187` |  | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `mr/content/model-theory/basics/isomorphism.tex:66-106` | pending |
 | `T205-OLP-0189-B005` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | pending |
 | `T205-OLP-0189-B016` | `OLP-0189` |  | `upstream/content/model-theory/basics/partial-iso.tex:122-129` | `mr/content/model-theory/basics/partial-iso.tex:124-130` | pending |
+| `T205-OLP-0192-B005` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12-39` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:12-37` | pending |
+| `T205-OLP-0193-B009` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:43-50` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:42-49` | pending |
+| `T205-OLP-0193-B013` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:75-113` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:74-112` | pending |
+| `T205-OLP-0193-B016` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:132-137` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:131-136` | pending |
+| `T205-OLP-0193-B018` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-172` | pending |
+| `T205-OLP-0194-B010` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:49-64` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:48-64` | pending |
+| `T205-OLP-0194-B013` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:83-98` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:81-97` | pending |
+| `T205-OLP-0194-B014` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | pending |
+| `T205-OLP-0195-B006` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | pending |
+| `T205-OLP-0195-B010` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:121-131` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:124-134` | pending |
+| `T205-OLP-0196-B007` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-39` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-40` | pending |
+| `T205-OLP-0197-B005` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22` | pending |
+| `T205-OLP-0197-B007` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:35-40` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:34-39` | pending |
+| `T205-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
+| `T205-OLP-0197-B009` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98` | pending |
 
 ## T206 — logical symbol / non-logical symbol / standard language
 
@@ -15471,6 +15767,8 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T206-OLP-0161-B009` | `OLP-0161` |  | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:53-65` | `mr/content/first-order-logic/syntax-and-semantics/structures.tex:54-66` | pending |
 | `T206-OLP-0168-B009` | `OLP-0168` |  | `upstream/content/first-order-logic/models-theories/introduction.tex:37-47` | `mr/content/first-order-logic/models-theories/introduction.tex:38-48` | pending |
 | `T206-OLP-0179-B022` | `OLP-0179` |  | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:166-170` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:149-152` | pending |
+| `T206-OLP-0194-B011` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-76` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-74` | pending |
+| `T206-OLP-0197-B005` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22` | pending |
 
 ## T207 — n-place / arity
 
@@ -15645,6 +15943,10 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 |---|---|---|---|---|---|
 | `T209-OLP-0151-B009` | `OLP-0151` |  | `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:34-63` | `mr/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:31-59` | pending |
 | `T209-OLP-0163-B026` | `OLP-0163` |  | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:152-166` | `mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex:155-169` | pending |
+| `T209-OLP-0193-B018` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-172` | pending |
+| `T209-OLP-0196-B035` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | pending |
+| `T209-OLP-0197-B006` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | pending |
+| `T209-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
 
 ## T210 — truth-functionally complete / expressively complete
 
@@ -16169,6 +16471,38 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T218-OLP-0190-B007` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:33-40` | `mr/content/model-theory/basics/dlo.tex:33-40` | pending |
 | `T218-OLP-0190-B008` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:42-61` | `mr/content/model-theory/basics/dlo.tex:42-66` | pending |
 | `T218-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
+| `T218-OLP-0192-B005` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12-39` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:12-37` | pending |
+| `T218-OLP-0192-B006` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:41-53` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:39-50` | pending |
+| `T218-OLP-0193-B005` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:12-18` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:12-17` | pending |
+| `T218-OLP-0193-B006` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:20-23` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:19-22` | pending |
+| `T218-OLP-0193-B007` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:25-31` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:24-30` | pending |
+| `T218-OLP-0193-B010` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:52-57` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:51-56` | pending |
+| `T218-OLP-0193-B013` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:75-113` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:74-112` | pending |
+| `T218-OLP-0193-B014` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:115-125` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:114-123` | pending |
+| `T218-OLP-0193-B018` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-172` | pending |
+| `T218-OLP-0194-B005` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:12-16` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:12-16` | pending |
+| `T218-OLP-0194-B006` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:18-24` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:18-25` | pending |
+| `T218-OLP-0194-B007` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:26-32` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:27-32` | pending |
+| `T218-OLP-0194-B008` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:34-37` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:34-37` | pending |
+| `T218-OLP-0194-B010` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:49-64` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:48-64` | pending |
+| `T218-OLP-0194-B011` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-76` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-74` | pending |
+| `T218-OLP-0194-B013` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:83-98` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:81-97` | pending |
+| `T218-OLP-0195-B006` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | pending |
+| `T218-OLP-0195-B007` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:88-92` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:88-93` | pending |
+| `T218-OLP-0195-B008` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:94-111` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:95-114` | pending |
+| `T218-OLP-0195-B009` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:113-119` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:116-122` | pending |
+| `T218-OLP-0195-B010` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:121-131` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:124-134` | pending |
+| `T218-OLP-0195-B011` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:136-180` | pending |
+| `T218-OLP-0195-B012` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:176-185` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:182-192` | pending |
+| `T218-OLP-0195-B013` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:187-191` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:194-198` | pending |
+| `T218-OLP-0195-B014` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:193-203` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:200-210` | pending |
+| `T218-OLP-0196-B007` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-39` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-40` | pending |
+| `T218-OLP-0197-B005` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22` | pending |
+| `T218-OLP-0197-B006` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | pending |
+| `T218-OLP-0197-B007` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:35-40` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:34-39` | pending |
+| `T218-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
+| `T218-OLP-0197-B009` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98` | pending |
+| `T218-OLP-0197-B011` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109` | pending |
 
 ## T219 — free logic
 
@@ -16555,6 +16889,8 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 |---|---|---|---|---|---|
 | `T230-OLP-0170-B006` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:13-27` | `mr/content/first-order-logic/models-theories/theories.tex:13-27` | pending |
 | `T230-OLP-0190-B005` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:12-26` | `mr/content/model-theory/basics/dlo.tex:12-26` | pending |
+| `T230-OLP-0196-B008` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:41-49` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:42-50` | pending |
+| `T230-OLP-0196-B009` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:51-58` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:52-59` | pending |
 
 ## T231 — group / group theory (algebra)
 
@@ -16610,6 +16946,24 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 |---|---|---|---|---|---|
 | `T232-OLP-0170-B008` | `OLP-0170` |  | `upstream/content/first-order-logic/models-theories/theories.tex:40-57` | `mr/content/first-order-logic/models-theories/theories.tex:40-57` | pending |
 | `T232-OLP-0177-B011` | `OLP-0177` |  | `upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167` | `mr/content/first-order-logic/beyond/second-order-logic.tex:121-157` | pending |
+| `T232-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+| `T232-OLP-0195-B005` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | pending |
+| `T232-OLP-0196-B004` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:9-10` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:9-10` | pending |
+| `T232-OLP-0196-B005` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:12-20` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:12-20` | pending |
+| `T232-OLP-0196-B006` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27` | pending |
+| `T232-OLP-0196-B007` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-39` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-40` | pending |
+| `T232-OLP-0196-B009` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:51-58` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:52-59` | pending |
+| `T232-OLP-0196-B012` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:73-78` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:75-80` | pending |
+| `T232-OLP-0196-B016` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:110-123` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:113-127` | pending |
+| `T232-OLP-0196-B018` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:130-133` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:134-138` | pending |
+| `T232-OLP-0196-B026` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:178-186` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:184-192` | pending |
+| `T232-OLP-0196-B028` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:192-200` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:198-206` | pending |
+| `T232-OLP-0196-B031` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:210-213` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:216-218` | pending |
+| `T232-OLP-0196-B033` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-228` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:226-233` | pending |
+| `T232-OLP-0196-B034` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:230-236` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:235-240` | pending |
+| `T232-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
+| `T232-OLP-0197-B012` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116` | pending |
+| `T232-OLP-0197-B013` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120` | pending |
 
 ## T233 — induction schema
 
@@ -17861,6 +18215,7 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T272-OLP-0184-B006` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39` | `mr/content/model-theory/basics/reducts-and-expansions.tex:22-38` | pending |
 | `T272-OLP-0184-B007` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:41-49` | `mr/content/model-theory/basics/reducts-and-expansions.tex:40-48` | pending |
 | `T272-OLP-0184-B010` | `OLP-0184` |  | `upstream/content/model-theory/basics/reducts-and-expansions.tex:59-65` | `mr/content/model-theory/basics/reducts-and-expansions.tex:58-65` | pending |
+| `T272-OLP-0196-B035` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | pending |
 
 ## T273 — substructure / extension (model theory)
 
@@ -18161,6 +18516,367 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | `T280-OLP-0190-B007` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:33-40` | `mr/content/model-theory/basics/dlo.tex:33-40` | pending |
 | `T280-OLP-0190-B008` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:42-61` | `mr/content/model-theory/basics/dlo.tex:42-66` | pending |
 | `T280-OLP-0190-B010` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:68-84` | `mr/content/model-theory/basics/dlo.tex:73-88` | pending |
+| `T280-OLP-0196-B032` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:215-220` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:220-224` | pending |
+| `T280-OLP-0196-B033` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-228` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:226-233` | pending |
+| `T280-OLP-0196-B034` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:230-236` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:235-240` | pending |
+| `T280-OLP-0196-B035` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | pending |
+
+## T281 — standard / non-standard model, element or number
+
+**Chosen rendering/action:** मानक / अमानक प्रतिमान, घटक किंवा संख्या
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The edition already uses मानक for the standard formal language, प्रतिमान for model and संख्या for number. OpenLogic defines the present contrast extensionally: standard models are isomorphic to N; their elements, here called standard numbers, are exactly standard-numeral values; and a non-standard model or number lies outside the corresponding isomorphism or value condition. अमानक is the transparent negative and does not imply merely defective or irregular.
+
+**Rationale:** The edition already uses मानक for the standard formal language, प्रतिमान for model and संख्या for number. OpenLogic defines the present contrast extensionally: standard models are isomorphic to N; their elements, here called standard numbers, are exactly standard-numeral values; and a non-standard model or number lies outside the corresponding isomorphism or value condition. अमानक is the transparent negative and does not imply merely defective or irregular.
+
+**Authorities actually checked:**
+
+- `MR-P001` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 2 (`checked_supports`): visually-read-page-image
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P010` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P126` — Directorate of Languages glossary — numeral. https://shabdakosh.marathi.gov.in/node/340053 (`checked_supports`): Official Directorate of Languages glossary entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary entry is general rather than specifically logical.
+
+**Alternatives:**
+
+- प्रमाण / अप्रमाण प्रतिमान किंवा संख्या — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- मानक / गैरमानक प्रतिमान किंवा संख्या — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सर्वसामान्य / असर्वसामान्य प्रतिमान किंवा संख्या — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is मानक / अमानक the natural Marathi specialist contrast for standard and non-standard arithmetic models, elements and numbers?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T281-OLP-0192-B005` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12-39` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:12-37` | pending |
+| `T281-OLP-0192-B006` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:41-53` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:39-50` | pending |
+| `T281-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+| `T281-OLP-0193-B004` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:9-10` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:9-10` | pending |
+| `T281-OLP-0193-B005` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:12-18` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:12-17` | pending |
+| `T281-OLP-0193-B006` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:20-23` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:19-22` | pending |
+| `T281-OLP-0193-B007` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:25-31` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:24-30` | pending |
+| `T281-OLP-0193-B008` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:33-41` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:32-40` | pending |
+| `T281-OLP-0193-B009` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:43-50` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:42-49` | pending |
+| `T281-OLP-0193-B010` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:52-57` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:51-56` | pending |
+| `T281-OLP-0193-B011` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:59-63` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:58-62` | pending |
+| `T281-OLP-0193-B012` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:65-73` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:64-72` | pending |
+| `T281-OLP-0193-B014` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:115-125` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:114-123` | pending |
+| `T281-OLP-0193-B015` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:127-130` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:125-129` | pending |
+| `T281-OLP-0193-B016` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:132-137` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:131-136` | pending |
+| `T281-OLP-0193-B017` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:139-150` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:138-150` | pending |
+| `T281-OLP-0193-B018` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-172` | pending |
+| `T281-OLP-0194-B004` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:9-10` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:9-10` | pending |
+| `T281-OLP-0194-B005` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:12-16` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:12-16` | pending |
+| `T281-OLP-0194-B006` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:18-24` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:18-25` | pending |
+| `T281-OLP-0194-B007` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:26-32` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:27-32` | pending |
+| `T281-OLP-0194-B008` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:34-37` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:34-37` | pending |
+| `T281-OLP-0194-B009` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-47` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-46` | pending |
+| `T281-OLP-0194-B011` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-76` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-74` | pending |
+| `T281-OLP-0194-B012` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:78-81` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:76-79` | pending |
+| `T281-OLP-0194-B013` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:83-98` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:81-97` | pending |
+| `T281-OLP-0194-B014` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | pending |
+| `T281-OLP-0195-B005` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:12-24` | pending |
+| `T281-OLP-0195-B006` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:26-86` | pending |
+| `T281-OLP-0195-B008` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:94-111` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:95-114` | pending |
+| `T281-OLP-0195-B009` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:113-119` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:116-122` | pending |
+| `T281-OLP-0195-B011` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:136-180` | pending |
+| `T281-OLP-0195-B014` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:193-203` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:200-210` | pending |
+| `T281-OLP-0196-B005` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:12-20` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:12-20` | pending |
+| `T281-OLP-0196-B006` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:22-27` | pending |
+| `T281-OLP-0196-B010` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:61-69` | pending |
+| `T281-OLP-0196-B013` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:80-83` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:82-85` | pending |
+| `T281-OLP-0196-B014` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:85-95` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:87-97` | pending |
+| `T281-OLP-0196-B015` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:97-108` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:99-111` | pending |
+| `T281-OLP-0196-B024` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:163-171` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:170-177` | pending |
+| `T281-OLP-0196-B025` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:173-176` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:179-182` | pending |
+| `T281-OLP-0196-B026` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:178-186` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:184-192` | pending |
+| `T281-OLP-0196-B027` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:188-190` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:194-196` | pending |
+| `T281-OLP-0196-B028` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:192-200` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:198-206` | pending |
+| `T281-OLP-0196-B031` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:210-213` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:216-218` | pending |
+| `T281-OLP-0196-B035` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | pending |
+| `T281-OLP-0197-B006` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | pending |
+| `T281-OLP-0197-B008` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | pending |
+| `T281-OLP-0197-B009` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98` | pending |
+| `T281-OLP-0197-B012` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116` | pending |
+
+## T282 — standard numeral
+
+**Chosen rendering/action:** मानक संख्यांक
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P126 directly gives संख्यांक for numeral, and the edition already uses मानक for the formal standard-language register. OpenLogic fixes the specialist sense through the numeral macro and the displayed assertion that the values of these terms exhaust the standard model's domain.
+
+**Rationale:** MR-P126 directly gives संख्यांक for numeral, and the edition already uses मानक for the formal standard-language register. OpenLogic fixes the specialist sense through the numeral macro and the displayed assertion that the values of these terms exhaust the standard model's domain.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P076` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — F glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/f (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P126` — Directorate of Languages glossary — numeral. https://shabdakosh.marathi.gov.in/node/340053 (`checked_supports`): Official Directorate of Languages glossary entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary entry is general rather than specifically logical.
+
+**Alternatives:**
+
+- मानक अंक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- मानक संख्याचिन्ह — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्रमाण संख्यांक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does मानक संख्यांक clearly denote the formal numeral term rather than the natural number it denotes?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T282-OLP-0192-B006` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:41-53` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:39-50` | pending |
+| `T282-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+| `T282-OLP-0193-B007` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:25-31` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:24-30` | pending |
+| `T282-OLP-0193-B008` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:33-41` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:32-40` | pending |
+| `T282-OLP-0193-B009` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:43-50` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:42-49` | pending |
+| `T282-OLP-0193-B010` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:52-57` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:51-56` | pending |
+| `T282-OLP-0193-B011` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:59-63` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:58-62` | pending |
+| `T282-OLP-0193-B012` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:65-73` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:64-72` | pending |
+| `T282-OLP-0193-B013` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:75-113` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:74-112` | pending |
+| `T282-OLP-0193-B014` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:115-125` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:114-123` | pending |
+| `T282-OLP-0193-B017` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:139-150` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:138-150` | pending |
+| `T282-OLP-0194-B006` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:18-24` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:18-25` | pending |
+| `T282-OLP-0194-B007` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:26-32` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:27-32` | pending |
+| `T282-OLP-0194-B009` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-47` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-46` | pending |
+| `T282-OLP-0194-B011` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-76` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:66-74` | pending |
+| `T282-OLP-0194-B013` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:83-98` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:81-97` | pending |
+| `T282-OLP-0194-B014` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-117` | pending |
+| `T282-OLP-0195-B014` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:193-203` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:200-210` | pending |
+| `T282-OLP-0196-B014` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:85-95` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:87-97` | pending |
+| `T282-OLP-0197-B005` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22` | pending |
+| `T282-OLP-0197-B006` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | pending |
+
+## T283 — incompleteness / incompleteness phenomenon
+
+**Chosen rendering/action:** अपूर्णता / अपूर्णता-घटना
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked proof-system sources support the completeness and theorem register but do not independently attest this exact negative headword. The prefixal opposite अपूर्णता preserves the contrast with the edition's संपूर्णता, while OpenLogic's adjacent independence claim explains the phenomenon as neither the consistency sentence nor its negation being provable.
+
+**Rationale:** The checked proof-system sources support the completeness and theorem register but do not independently attest this exact negative headword. The prefixal opposite अपूर्णता preserves the contrast with the edition's संपूर्णता, while OpenLogic's adjacent independence claim explains the phenomenon as neither the consistency sentence nor its negation being provable.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P087` — MR-C002. https://vishwakosh.marathi.gov.in/20027/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact axiom schemas and derivability definition.
+
+**Alternatives:**
+
+- असंपूर्णता / असंपूर्णता-घटना — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अपूर्णत्व — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अपूर्णतेची घटना — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should logical incompleteness be अपूर्णता or असंपूर्णता in Marathi specialist prose?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T283-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+
+## T284 — Gödel number
+
+**Chosen rendering/action:** गोडेल संख्या
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P091's official Marathi Vishwakosh source title directly supplies the name form गोडेल, and the edition's established formal-arithmetic register supplies संख्या. OpenLogic identifies the local value as the code number of a derivation of contradiction from PA; no checked source independently attests the full compound.
+
+**Rationale:** MR-P091's official Marathi Vishwakosh source title directly supplies the name form गोडेल, and the edition's established formal-arithmetic register supplies संख्या. OpenLogic identifies the local value as the code number of a derivation of contradiction from PA; no checked source independently attests the full compound.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P091` — गोडेल, कुर्ट — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/22497/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the chronology and attribution.
+
+**Alternatives:**
+
+- गोडेल क्रमांक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- गोडेल संख्यांक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- गोडेलांक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is गोडेल संख्या the natural Marathi term for Gödel number, or should the coding sense use क्रमांक or संख्यांक?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T284-OLP-0192-B007` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+
+## T285 — block (successor/predecessor class in a non-standard arithmetic model)
+
+**Chosen rendering/action:** खंड
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** OpenLogic defines the object extensionally as all y at a finite standard successor or addition distance from x and displays its two-way discrete chain. The edition already uses खंड for a delimited mathematical part, while MR-P127 directly supports the successor vocabulary and MR-P125 supports the dense ordering of the resulting classes. No exact Marathi model-theory headword for this use of block was found, so the short source-defined noun remains explicitly expert-reviewable.
+
+**Rationale:** OpenLogic defines the object extensionally as all y at a finite standard successor or addition distance from x and displays its two-way discrete chain. The edition already uses खंड for a delimited mathematical part, while MR-P127 directly supports the successor vocabulary and MR-P125 supports the dense ordering of the resulting classes. No exact Marathi model-theory headword for this use of block was found, so the short source-defined noun remains explicitly expert-reviewable.
+
+**Authorities actually checked:**
+
+- `MR-P005` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 7 (`checked_supports`): visually-read-page-image
+- `MR-P017` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 81 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P025` — मराठी विश्वकोश शब्दसंग्रह. https://shabdakosh.marathi.gov.in/ananya-glossary/41/r (`checked_supports`): short primary-source observation read; source bytes not preserved
+- `MR-P125` — गणितशास्त्र परिभाषा कोश — dense set and denseness. https://shabdakosh.marathi.gov.in/ananya-glossary/9/d (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the full model-theory compound and no-endpoint modifier were not independently attested.
+- `MR-P127` — गणितशास्त्र परिभाषा कोश — successor. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Official Directorate of Languages mathematics-glossary entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the full compound उत्तरवर्ती फलन is compositional.
+
+**Alternatives:**
+
+- उत्तरवर्ती-खंड — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- समतुल्यता-वर्ग — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- द्विदिश विविक्त खंड — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- ब्लॉक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is खंड sufficiently distinctive for the Z-like successor/predecessor class inside a non-standard arithmetic model, or should the edition use उत्तरवर्ती-खंड?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T285-OLP-0196-B015` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:97-108` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:99-111` | pending |
+| `T285-OLP-0196-B016` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:110-123` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:113-127` | pending |
+| `T285-OLP-0196-B017` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:125-128` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:129-132` | pending |
+| `T285-OLP-0196-B018` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:130-133` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:134-138` | pending |
+| `T285-OLP-0196-B019` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:135-138` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:140-144` | pending |
+| `T285-OLP-0196-B020` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:140-147` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:146-154` | pending |
+| `T285-OLP-0196-B021` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:149-151` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:156-158` | pending |
+| `T285-OLP-0196-B022` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:153-155` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:160-162` | pending |
+| `T285-OLP-0196-B023` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:157-161` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:164-168` | pending |
+| `T285-OLP-0196-B024` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:163-171` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:170-177` | pending |
+| `T285-OLP-0196-B025` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:173-176` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:179-182` | pending |
+| `T285-OLP-0196-B026` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:178-186` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:184-192` | pending |
+| `T285-OLP-0196-B027` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:188-190` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:194-196` | pending |
+| `T285-OLP-0196-B028` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:192-200` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:198-206` | pending |
+| `T285-OLP-0196-B029` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:202-204` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:208-210` | pending |
+| `T285-OLP-0196-B031` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:210-213` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:216-218` | pending |
+| `T285-OLP-0196-B032` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:215-220` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:220-224` | pending |
+| `T285-OLP-0196-B033` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-228` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:226-233` | pending |
+| `T285-OLP-0196-B034` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:230-236` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:235-240` | pending |
+| `T285-OLP-0196-B035` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | pending |
+
+## T286 — Vaught (surname, in Vaught's theorem)
+
+**Chosen rendering/action:** वॉट
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** A bounded search of official Indian government and academic results exposed no exact Marathi form for Robert Vaught. MR-P128 records the official Marathi Vishwakosh spelling वॉट for the rhyming English surname Watt as a limited orthographic analogue. वॉट therefore follows the name's pronunciation and the attested Devanagari pattern without claiming that the different person's entry directly attests Vaught.
+
+**Rationale:** A bounded search of official Indian government and academic results exposed no exact Marathi form for Robert Vaught. MR-P128 records the official Marathi Vishwakosh spelling वॉट for the rhyming English surname Watt as a limited orthographic analogue. वॉट therefore follows the name's pronunciation and the attested Devanagari pattern without claiming that the different person's entry directly attests Vaught.
+
+**Authorities actually checked:**
+
+- `MR-P128` — वॉट, जेम्स — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/32541/ (`checked_supports`): Official Marathi Vishwakosh article title read in a current web-search extraction after a bounded search found no exact Marathi Vaught occurrence. Limitation: Observation hash is not an origin-page hash; Watt and Vaught are different people, so only the spelling pattern is evidential and the exact Vaught form remains provisional.
+
+**Alternatives:**
+
+- व्हॉट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- वॉत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- व्हॉत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- वॉट् — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is वॉट the conventional Marathi rendering of the logician Robert Vaught's surname?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T286-OLP-0196-B035` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | pending |
+
+## T287 — computable / computable structure or function; decidable / decidable relation
+
+**Chosen rendering/action:** संगणनक्षम / संगणनक्षम रचना किंवा फलन; निर्णेय / निर्णेय संबंध
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P129 directly gives संगणनक्षम for computable while separately giving गणनीय for countable, which is essential in this unit because both notions occur. MR-P130 directly gives निर्णेय and निर्णेयता. OpenLogic then defines a computable arithmetic structure by domain Nat, three computable interpretations and a decidable less-than relation.
+
+**Rationale:** MR-P129 directly gives संगणनक्षम for computable while separately giving गणनीय for countable, which is essential in this unit because both notions occur. MR-P130 directly gives निर्णेय and निर्णेयता. OpenLogic then defines a computable arithmetic structure by domain Nat, three computable interpretations and a decidable less-than relation.
+
+**Authorities actually checked:**
+
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P129` — गणितशास्त्र परिभाषा कोश — computable, calculable and countable. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic's definition controls the compound संगणनक्षम रचना.
+- `MR-P130` — गणितशास्त्र परिभाषा कोश — decidable and decidability. https://shabdakosh.marathi.gov.in/ananya-glossary/9/d (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary entry is lexical and OpenLogic supplies the algorithmic relation context.
+
+**Alternatives:**
+
+- संगणनीय / संगणनीय रचना किंवा फलन; निर्णयक्षम संबंध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- परिगणनक्षम / परिगणनक्षम रचना किंवा फलन; निर्णेय संबंध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- गणनीय फलन; निर्णेय संबंध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the edition consistently use संगणनक्षम for computable to keep it visibly distinct from countable गणनीय, and निर्णेय for decidable?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T287-OLP-0197-B004` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:9-10` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:9-10` | pending |
+| `T287-OLP-0197-B005` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22` | pending |
+| `T287-OLP-0197-B007` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:35-40` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:34-39` | pending |
+| `T287-OLP-0197-B010` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:100-105` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:100-104` | pending |
+| `T287-OLP-0197-B012` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116` | pending |
+| `T287-OLP-0197-B013` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120` | pending |
+
+## T288 — Turing machine / primitive recursion
+
+**Chosen rendering/action:** ट्यूरिंग यंत्र / आदिम पुनरावर्तन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P131 directly attests ट्यूरिंग यंत्र and connects machine computation with recursive functions in authoritative Marathi exposition. No exact official Marathi entry for primitive recursion was exposed by the bounded search; आदिम is established for primitive formal symbols and पुनरावर्तन continues the edition's recursive-family choice under the source's informal parenthetical equivalence.
+
+**Rationale:** MR-P131 directly attests ट्यूरिंग यंत्र and connects machine computation with recursive functions in authoritative Marathi exposition. No exact official Marathi entry for primitive recursion was exposed by the bounded search; आदिम is established for primitive formal symbols and पुनरावर्तन continues the edition's recursive-family choice under the source's informal parenthetical equivalence.
+
+**Authorities actually checked:**
+
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P072` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — D glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/d (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+
+**Alternatives:**
+
+- ट्यूरिंग मशीन / आदिम प्रत्यावर्तन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- ट्यूरिंग संगणक यंत्र / मूलगामी पुनरावर्तन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- ट्यूरिंग यंत्र / प्राथमिक आवर्तन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is आदिम पुनरावर्तन the clearest Marathi rendering of primitive recursion, alongside the directly attested ट्यूरिंग यंत्र?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T288-OLP-0197-B005` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22` | pending |
+
+## T289 — Tennenbaum (surname, in Tennenbaum's theorem)
+
+**Chosen rendering/action:** टेनेनबाउम
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+
+**Intended sense:** A bounded search of official Indian government and academic results exposed no Marathi occurrence of Tennenbaum or Tennenbaum's theorem. टेनेनबाउम is therefore a reversible pronunciation-based transliteration of the source surname rather than a claimed conventional Marathi form.
+
+**Rationale:** A bounded search of official Indian government and academic results exposed no Marathi occurrence of Tennenbaum or Tennenbaum's theorem. टेनेनबाउम is therefore a reversible pronunciation-based transliteration of the source surname rather than a claimed conventional Marathi form.
+
+**Authorities actually checked:**
+
+- `T289-NO-EXTERNAL-AUTHORITY` — No external Marathi authority is recorded for this exact label. (`not_checked`): No external Marathi authority was checked or found for this exact label before current use; the frozen English definition governs.
+
+**Alternatives:**
+
+- टेनेनबाम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- टेन्नेनबाउम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- टेननबॉम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- टेनेनबॉम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is टेनेनबाउम the conventional Marathi rendering of Stanley Tennenbaum's surname?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T289-OLP-0197-B013` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -20791,6 +21507,306 @@ Coverage: 187/722 source units through OLP-0190; 385 applied decisions; 10,933 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLFOL-028-OLP-0190` | `OLP-0190` |  | `upstream/content/model-theory/basics/dlo.tex:42-57` | `mr/content/model-theory/basics/dlo.tex:42-62` | pending |
+
+## OLFOL-029 — confirmed-frozen-source-missing proof-predicate witness argument with documented formula projection
+
+**Chosen rendering/action:** Restored x as the first proof-predicate argument in the Marathi formula, placed adjacent reader note OLFOL-029 and added a unit-specific QA projection that reconstructs the frozen one-argument formula solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The existential sentence used to describe the non-standard witness applies the binary proof predicate only to the Gödel number of falsehood, omitting the bound variable x. The consistency definition eight lines earlier supplies both x and that Gödel number, and the final displayed instance likewise supplies a numeral and the same second argument.
+
+**Rationale:** The existential sentence used to describe the non-standard witness applies the binary proof predicate only to the Gödel number of falsehood, omitting the bound variable x. The consistency definition eight lines earlier supplies both x and that Gödel number, and the final displayed instance likewise supplies a numeral and the same second argument. Chosen action: Restored x as the first proof-predicate argument in the Marathi formula, placed adjacent reader note OLFOL-029 and added a unit-specific QA projection that reconstructs the frozen one-argument formula solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-029-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-029. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve an existentially bound variable that does not occur in its matrix and leave the proof predicate with one missing argument — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the proof predicate throughout the paragraph to unary notation, contradicting both the consistency definition and every standard-numeral instance — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired existential formula now bind exactly the witness used as the first argument of the proof predicate?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-029-OLP-0192` | `OLP-0192` |  | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | pending |
+
+## OLFOL-030 — confirmed-frozen-source-domain/range error in surjectivity explanation with bounded prose correction
+
+**Chosen rendering/action:** Replaced domain by range in the Marathi prose and placed adjacent reader note OLFOL-030. MR-P030 independently supports the distinction with the native Marathi labels प्रांत, सहप्रांत and कक्षा किंवा व्याप्ती. No protected formula, macro, token, identifier or reference changed, so no structural projection is needed.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** To explain why s must be surjective onto M minus z, the source says that otherwise some x in M minus z is not in the domain of s. But s is explicitly typed with domain M, so every such x is in its domain. Failure of surjectivity instead means that x is absent from the range of s, which is exactly why the displayed predecessor sentence would be false.
+
+**Rationale:** To explain why s must be surjective onto M minus z, the source says that otherwise some x in M minus z is not in the domain of s. But s is explicitly typed with domain M, so every such x is in its domain. Failure of surjectivity instead means that x is absent from the range of s, which is exactly why the displayed predecessor sentence would be false. Chosen action: Replaced domain by range in the Marathi prose and placed adjacent reader note OLFOL-030. MR-P030 independently supports the distinction with the native Marathi labels प्रांत, सहप्रांत and कक्षा किंवा व्याप्ती. No protected formula, macro, token, identifier or reference changed, so no structural projection is needed.
+
+**Authorities actually checked:**
+
+- `OLFOL-030-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-030. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve a statement contradicted by the displayed type s from M to M minus z — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the displayed domain of s, which would no longer describe a successor operation on all of M — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired explanation now identify a missing range value as the exact obstruction to surjectivity?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-030-OLP-0193` | `OLP-0193` |  | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-170` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | pending |
+
+## OLFOL-031 — confirmed-frozen-source-interpretation taken in reduct where constant is absent with documented formula projection
+
+**Chosen rendering/action:** Changed the structure superscript in the Marathi witness formula, placed adjacent reader note OLFOL-031 and added a unit-specific QA projection that reconstructs the frozen reduct notation solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The proof introduces a model M-superscript-c of the language expanded by c but defines its witness as the interpretation of c in M. The reduct M has not yet been introduced and, once it is, c is not a symbol of its language. The interpretation must therefore be taken in the expanded structure M-superscript-c.
+
+**Rationale:** The proof introduces a model M-superscript-c of the language expanded by c but defines its witness as the interpretation of c in M. The reduct M has not yet been introduced and, once it is, c is not a symbol of its language. The interpretation must therefore be taken in the expanded structure M-superscript-c. Chosen action: Changed the structure superscript in the Marathi witness formula, placed adjacent reader note OLFOL-031 and added a unit-specific QA projection that reconstructs the frozen reduct notation solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-031-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-031. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve an interpretation of c in a structure whose language does not contain c — `rejected`: Not chosen; the source finding and recorded action control.
+- Keep c in M and no longer form the stated reduct to the original arithmetic language — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected witness now take c's interpretation in exactly the expanded structure that interprets it?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-031-OLP-0194` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:83-98` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:81-97` | pending |
+
+## OLFOL-032 — confirmed-frozen-source-missing enumerability step with bounded prose correction
+
+**Chosen rendering/action:** Added the Downward Löwenheim–Skolem step in Marathi prose and placed adjacent reader note OLFOL-032. No protected formula, macro, token, identifier or reference changed, so no structural projection is needed.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The proposition claims an enumerable non-standard model, but the proof ends after compactness supplies an unrestricted model. Compactness alone, as stated earlier in the book, does not establish the claimed cardinality. The already available Downward Löwenheim–Skolem theorem supplies an at-most-countable model of the same sentence set, which is enough for the edition's enumerable convention.
+
+**Rationale:** The proposition claims an enumerable non-standard model, but the proof ends after compactness supplies an unrestricted model. Compactness alone, as stated earlier in the book, does not establish the claimed cardinality. The already available Downward Löwenheim–Skolem theorem supplies an at-most-countable model of the same sentence set, which is enough for the edition's enumerable convention. Chosen action: Added the Downward Löwenheim–Skolem step in Marathi prose and placed adjacent reader note OLFOL-032. No protected formula, macro, token, identifier or reference changed, so no structural projection is needed.
+
+**Authorities actually checked:**
+
+- `OLFOL-032-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-032. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Weaken the proposition by deleting enumerable — `rejected`: Not chosen; the source finding and recorded action control.
+- Treat compactness as if its stated conclusion included a cardinality bound — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the added theorem application now prove the cardinality assertion made by the proposition?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-032-OLP-0194` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:78-112` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:76-116` | pending |
+
+## OLFOL-033 — confirmed-frozen-source-missing finite-subset case with bounded prose correction
+
+**Chosen rendering/action:** Added the no-c-inequality case in Marathi prose before choosing k and placed adjacent reader note OLFOL-033. No protected formula, macro, token, identifier or reference changed, so no structural projection is needed.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** For an arbitrary finite subset Gamma-zero, the proof immediately chooses the largest k whose c-not-equal-numeral-k sentence occurs in that subset. A finite subset may contain no sentence of that form, in which case no such k exists. Expanding N with c interpreted as zero directly satisfies this omitted case.
+
+**Rationale:** For an arbitrary finite subset Gamma-zero, the proof immediately chooses the largest k whose c-not-equal-numeral-k sentence occurs in that subset. A finite subset may contain no sentence of that form, in which case no such k exists. Expanding N with c interpreted as zero directly satisfies this omitted case. Chosen action: Added the no-c-inequality case in Marathi prose before choosing k and placed adjacent reader note OLFOL-033. No protected formula, macro, token, identifier or reference changed, so no structural projection is needed.
+
+**Authorities actually checked:**
+
+- `OLFOL-033-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-033. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Restrict the compactness check to finite subsets containing a c-inequality, which is not the theorem's hypothesis — `rejected`: Not chosen; the source finding and recorded action control.
+- Adjoin an extra c-inequality to every chosen subset before the argument, adding an unneeded transformation — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the added base case now cover every finite subset before the largest excluded numeral is selected?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-033-OLP-0194` | `OLP-0194` |  | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-112` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-106` | pending |
+
+## OLFOL-034 — confirmed-frozen-source-out-of-domain case label with documented formula projection
+
+**Chosen rendering/action:** Changed the case label from b to a in Marathi, placed adjacent reader note OLFOL-034 and added a unit-specific QA projection that reconstructs the frozen inline case formula solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The K example says the final case splits according to whether y is a standard n or y equals b, but K's domain is the natural numbers together with a and contains no b. The immediately following second calculation is explicitly the y-equals-a case.
+
+**Rationale:** The K example says the final case splits according to whether y is a standard n or y equals b, but K's domain is the natural numbers together with a and contains no b. The immediately following second calculation is explicitly the y-equals-a case. Chosen action: Changed the case label from b to a in Marathi, placed adjacent reader note OLFOL-034 and added a unit-specific QA projection that reconstructs the frozen inline case formula solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-034-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-034. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve a case for an object outside K's declared domain — `rejected`: Not chosen; the source finding and recorded action control.
+- Add b to K's domain and redefine every operation and relation, changing the example — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired split now cover exactly the standard elements and the sole non-standard element a of K?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-034-OLP-0195` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:98-108` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:100-110` | pending |
+
+## OLFOL-035 — confirmed-frozen-source-free variable in displayed Q-model calculation with documented formula projection
+
+**Chosen rendering/action:** Replaced the free y by a in the Marathi display, placed adjacent reader note OLFOL-035 and added a unit-specific QA projection that reconstructs the frozen y solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** In the third non-standard addition case for L, the line begins with b plus the successor of a but its final right-hand expression is the successor of b plus y, leaving y free. The same line and L's addition table require b plus a throughout.
+
+**Rationale:** In the third non-standard addition case for L, the line begins with b plus the successor of a but its final right-hand expression is the successor of b plus y, leaving y free. The same line and L's addition table require b plus a throughout. Chosen action: Replaced the free y by a in the Marathi display, placed adjacent reader note OLFOL-035 and added a unit-specific QA projection that reconstructs the frozen y solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-035-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-035. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve an unbound y in a calculation advertised as one concrete case — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the left-hand side to b plus the successor of an arbitrary y, which would no longer follow from the displayed table in one step — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired equality chain now evaluate the same concrete pair b and a from beginning to end?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-035-OLP-0195` | `OLP-0195` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:162-168` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:167-177` | pending |
+
+## OLFOL-036 — confirmed-frozen-source-zero-predecessor contradiction with bounded prose correction
+
+**Chosen rendering/action:** Restricted the predecessor assertion to nonzero x in the proposition and nonzero y in the proof, and placed adjacent reader note OLFOL-036. No protected formula, macro, token, identifier or reference changed, so no structural projection is needed.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The proposition says every x has a unique predecessor y with successor y equal to x, although the same proposition makes zero the least element and Robinson axiom Q2 says zero is not the successor of any y. The proof repeats the claim for every element y. Both assertions must exclude zero.
+
+**Rationale:** The proposition says every x has a unique predecessor y with successor y equal to x, although the same proposition makes zero the least element and Robinson axiom Q2 says zero is not the successor of any y. The proof repeats the claim for every element y. Both assertions must exclude zero. Chosen action: Restricted the predecessor assertion to nonzero x in the proposition and nonzero y in the proof, and placed adjacent reader note OLFOL-036. No protected formula, macro, token, identifier or reference changed, so no structural projection is needed.
+
+**Authorities actually checked:**
+
+- `OLFOL-036-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-036. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve an assertion directly contradicted by Q2 at x equal to zero — `rejected`: Not chosen; the source finding and recorded action control.
+- Give zero an artificial predecessor, which would change the arithmetic model and its least-element property — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the added nonzero restriction repair exactly the zero exception without weakening the predecessor claim elsewhere?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-036-OLP-0196` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:60-116` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:61-120` | pending |
+
+## OLFOL-037 — confirmed-frozen-source-undefined addition symbol with documented formula projection
+
+**Chosen rendering/action:** Replaced both opulus occurrences by nsplus in the Marathi formulas, placed adjacent reader note OLFOL-037 and added unit-specific QA projections that reconstruct the frozen opulus formulas solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The density proof first uses the established model-addition symbol nsplus, then changes to opulus in both displayed averaging equations. The unit defines nsplus as the interpretation of addition and never defines opulus, while the argument requires the same addition operation throughout.
+
+**Rationale:** The density proof first uses the established model-addition symbol nsplus, then changes to opulus in both displayed averaging equations. The unit defines nsplus as the interpretation of addition and never defines opulus, while the argument requires the same addition operation throughout. Chosen action: Replaced both opulus occurrences by nsplus in the Marathi formulas, placed adjacent reader note OLFOL-037 and added unit-specific QA projections that reconstruct the frozen opulus formulas solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-037-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-037. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve an undefined operation in the two central equations — `rejected`: Not chosen; the source finding and recorded action control.
+- Introduce opulus as a second notation for model addition solely for this sentence, obscuring the continuity of the proof — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do the repaired equations now use exactly the model-addition operation invoked in the preceding sentence and required by the parity argument?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-037-OLP-0196` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-227` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:226-232` | pending |
+
+## OLFOL-038 — confirmed-frozen-source-missing enumerability hypothesis with bounded prose correction
+
+**Chosen rendering/action:** Made the rational-order-type sentence conditional on the model being enumerable and placed adjacent reader note OLFOL-038. The later comparison of two enumerable models remains unchanged, and no protected formula, macro, token, identifier or reference changed.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The concluding paragraph unconditionally says that the ordered set of non-standard blocks is denumerable and hence has the order type of the rationals. A non-standard PA-model may be uncountable, and the preceding block lemmas establish density and absence of endpoints but no global countability bound. The next sentence already restricts the isomorphism conclusion to enumerable models.
+
+**Rationale:** The concluding paragraph unconditionally says that the ordered set of non-standard blocks is denumerable and hence has the order type of the rationals. A non-standard PA-model may be uncountable, and the preceding block lemmas establish density and absence of endpoints but no global countability bound. The next sentence already restricts the isomorphism conclusion to enumerable models. Chosen action: Made the rational-order-type sentence conditional on the model being enumerable and placed adjacent reader note OLFOL-038. The later comparison of two enumerable models remains unchanged, and no protected formula, macro, token, identifier or reference changed.
+
+**Authorities actually checked:**
+
+- `OLFOL-038-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-038. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve a countability conclusion unsupported for uncountable models — `rejected`: Not chosen; the source finding and recorded action control.
+- Delete the rational-order-type conclusion entirely, losing the valid enumerable-model case used in the next sentence — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does conditioning the block-order claim on an enumerable ambient model supply exactly the missing hypothesis for the rational order type?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-038-OLP-0196` | `OLP-0196` |  | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:239-258` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-261` | pending |
+
+## OLFOL-039 — confirmed-frozen-source-non-surjective claimed bijection with documented formula projection
+
+**Chosen rendering/action:** Changed the positive branch to g(n)=n-1 in Marathi, placed adjacent reader note OLFOL-039 and added a unit-specific QA projection that reconstructs the frozen plus-one formula solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The claimed bijection sends zero to a and every positive n to n plus one. Its image is therefore a together with 2, 3 and so on, omitting 0 and 1 from the declared codomain Nat union {a}. The later transported structure says 1 represents the old zero and gives operation tables exactly induced by sending positive n to n minus one.
+
+**Rationale:** The claimed bijection sends zero to a and every positive n to n plus one. Its image is therefore a together with 2, 3 and so on, omitting 0 and 1 from the declared codomain Nat union {a}. The later transported structure says 1 represents the old zero and gives operation tables exactly induced by sending positive n to n minus one. Chosen action: Changed the positive branch to g(n)=n-1 in Marathi, placed adjacent reader note OLFOL-039 and added a unit-specific QA projection that reconstructs the frozen plus-one formula solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-039-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-039. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve a map that is not surjective while calling it a bijection — `rejected`: Not chosen; the source finding and recorded action control.
+- Keep plus one and redesign the codomain and all transported interpretations, which would change the stated example — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does g(n)=n-1 now give the stated bijection and induce exactly the K-prime operations printed below it?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-039-OLP-0197` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:68-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:68-76` | pending |
+
+## OLFOL-040 — confirmed-frozen-source-unbound set-builder variable with documented formula projection
+
+**Chosen rendering/action:** Replaced n by x in the Marathi set-builder, placed adjacent reader note OLFOL-040 and added a unit-specific QA projection that reconstructs the frozen n solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The second set-builder displays ordered pairs (x,a) but constrains an unrelated n to lie in Domain K, leaving x unbound. The original K example and the intended relation require every x in Domain K to be related to a.
+
+**Rationale:** The second set-builder displays ordered pairs (x,a) but constrains an unrelated n to lie in Domain K, leaving x unbound. The original K example and the intended relation require every x in Domain K to be related to a. Chosen action: Replaced n by x in the Marathi set-builder, placed adjacent reader note OLFOL-040 and added a unit-specific QA projection that reconstructs the frozen n solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLFOL-040-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLFOL-040. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve a free x and an unused bound n in the set-builder — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the tuple to (n,a), which is extensionally equivalent after alpha-renaming but would needlessly diverge from the surrounding x notation — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does binding x make the set-builder well formed and restore exactly the intended second component of K's less-than relation?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLFOL-040-OLP-0197` | `OLP-0197` |  | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:64-67` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:63-67` | pending |
 
 ## Deferred prospective decisions
 

@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-translation-and-provenance-repair/1",
+  "performed_utc": "2026-09-20T02:25:42.154462Z",
+  "trigger": "An independent alignment replay found three translated linguistic segments whose canon arrays were empty.",
+  "audit_sha256": "022e0d23457c0714f3105df2058226e6db696badcb70c56ea41ab6827e81cf4c",
+  "audited_repairs": {
+    "OLP-0168-B004": "bound to MR-P132",
+    "OLP-0184-B008": "bound to MR-P133",
+    "OLP-0192-B004": "bound to MR-P132 and normalized to परिचय"
+  },
+  "consistency_decision": {
+    "rule": "Use परिचय for substantive OpenLogic sections titled Introduction; reserve प्रस्तावना for actual prefatory front matter.",
+    "evidence": "MR-P132 records both uses in one native Government of Maharashtra publication.",
+    "additional_normalized_units": [
+      "OLP-0028",
+      "OLP-0064"
+    ],
+    "reason": "Those units are also substantive sections titled Introduction, so the earlier प्रस्तावना rendering had no defensible contextual distinction."
+  },
+  "exercise_evidence": "MR-P133 exactly attests सराव within the official pedagogical heading सरावसंच 1.1; it supports the headword only, while OpenLogic controls the proof-placeholder sense.",
+  "source_errata_confirmation": "OLFOL-030 now records MR-P030 as independent native evidence distinguishing प्रांत, सहप्रांत and कक्षा किंवा व्याप्ती.",
+  "target_identity_changes": {
+    "OLP-0028": {
+      "old_sha256": "827d7fc9a9f834cc4b7e0c46578b06d59fa0e5ed53a1c2028ba93a3a90b1b827",
+      "new_sha256": "935fab180a8c51e17bd72c1687bed76cf413625ad15a11910f4846d34d5c149b",
+      "bytes": 2364
+    },
+    "OLP-0064": {
+      "old_sha256": "423f6af97c66898894e391e83a7cb83750bd5ee52c76117879311eca4de18a36",
+      "new_sha256": "cc11c63edec83552f99b44ef04dd3298a3213a8a072f7d473c3c8ef729fb9e4c",
+      "bytes": 12257
+    },
+    "OLP-0192": {
+      "old_sha256": "3c0c9fa5bf76f3d7ef93bfa0caeb4089f57d4d9b9d7dc59166e2a7a6636c0ddd",
+      "new_sha256": "03fe212f6307df5215fc9113a0951c5785cabd9e322781aa833fcc8430edd2b1",
+      "bytes": 6228
+    }
+  },
+  "structural_qa": "Formula, macro, token, identifier, reference, Unicode and placeholder checks passed for every changed target.",
+  "immutable_history": "Published release assets, public readbacks and frozen release snapshots were not rewritten; the next cumulative reader will include these working-tree repairs.",
+  "result": "passed"
+}

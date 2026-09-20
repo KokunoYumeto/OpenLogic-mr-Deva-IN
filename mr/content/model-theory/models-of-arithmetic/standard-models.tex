@@ -1,0 +1,175 @@
+% Part: model-theory
+% Chapter: models-of-arithmetic
+% Section: standard-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{mar}{stm}
+\olsection{अंकगणिताची मानक प्रतिमाने}
+
+अंकगणिताची भाषा~$\Lang{L_A}$ ही अर्थातच संख्यांविषयी, विशेषतः नैसर्गिक
+संख्यांविषयी, अभिप्रेत आहे. म्हणून ``ते'' मानक प्रतिमान~$\Struct{N}$ विशेष
+आहे: आपल्याला ज्याविषयी बोलायचे आहे तेच हे प्रतिमान. पण तर्कशास्त्रात
+आपल्याला अनेकदा फक्त रचनात्मक गुणधर्मांत रस असतो, आणि समरूप असलेल्या कोणत्याही
+दोन !!{structure}s मध्ये ते समान असतात. त्यामुळे व्याप्ती थोडी वाढवून
+$\Struct{N}$ शी समरूप असलेली कोणतीही !!{structure} ``मानक'' मानता येते.
+
+\begin{defn}
+$\Lang{L_A}$ साठीची एखादी !!{structure} जर~$\Struct{N}$ शी समरूप असेल,
+तर ती \emph{मानक} आहे.
+\end{defn}
+
+\begin{prop}
+\ollabel{prop:standard-domain} एखादी !!a{structure}~$\Struct{M}$ मानक असेल,
+तर तिचा प्रांत म्हणजे मानक संख्यांकांच्या मूल्यांचा संच असतो, म्हणजे
+\[
+\Domain{M} = \Setabs{\Value{\num{n}}{M}}{n \in \Nat}
+\]
+\end{prop}
+
+\begin{proof}
+प्रत्येक $\Value{\num{n}}{M} \in \Domain{M}$ हे स्पष्ट आहे. प्रत्येक
+$x \in \Domain{M}$ हा कोणत्यातरी~$n$ साठी $\Value{\num{n}}{M}$ बरोबर आहे,
+एवढेच दाखवायचे आहे. $\Struct{M}$ मानक असल्यामुळे ते~$\Struct{N}$ शी समरूप
+आहे. $g\colon \Nat \to \Domain{M}$ हे समरूपण आहे असे समजा. मग
+$g(n) = g(\Value{\num{n}}{N}) = \Value{\num{n}}{M}$. पण प्रत्येक
+$x \in \Domain{M}$ साठी $g(n) = x$ असे एक~$n \in \Nat$ असते, कारण
+$g$ हे !!{surjective} आहे.
+\end{proof}
+
+\begin{explain}
+$\Lang{L_A}$ साठीची एखादी रचना~$\Struct{M}$ मानक असेल, तर तिच्या
+!!{domain} मधील सर्व घटकांना $\num{0}$, $\num{1}$, $\num{2}$, \dots हे
+मानक संख्यांक, म्हणजेच $\Obj{0}$, $\Obj{0}'$, $\Obj{0}''$ इत्यादी पदे,
+नावे देऊ शकतात. अर्थात, याचा अर्थ $\Domain{M}$ मधील !!{element}s
+\emph{संख्याच आहेत} असा नाही; $\Domain{N}$ मधील संख्या जशा निवडून दाखवता
+येतात, त्याच रीतीने हे घटक निवडून दाखवता येतात एवढाच त्याचा अर्थ आहे.
+\end{explain}
+
+\begin{prob}
+\olref[mod][mar][stm]{prop:standard-domain} चा व्यत्यास असत्य आहे हे दाखवा;
+म्हणजे, $\Domain{M} = \Setabs{\Value{\num{n}}{M}}{n \in \Nat}$ असूनही
+$\Struct{N}$ शी समरूप नसलेल्या एखाद्या !!a{structure}~$\Struct{M}$ चे
+उदाहरण द्या.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:thq-standard}
+जर $\Sat{M}{\Th{Q}}$ आणि $\Domain{M} =
+\Setabs{\Value{\num{n}}{M}}{n \in \Nat}$, तर $\Struct{M}$ मानक आहे.
+\end{prop}
+
+\begin{proof}
+$\Struct{M}$ हे~$\Struct{N}$ शी समरूप आहे हे दाखवायचे आहे.
+$g(n) = \Value{\num{n}}{M}$ अशी व्याख्या असलेले
+$g\colon \Nat \to \Domain{M}$ फलन विचारात घ्या. गृहीतकानुसार $g$ हे
+!!{surjective} आहे. ते !!{injective} सुद्धा आहे: $n \neq m$ असेल तेव्हा
+$\Th{Q} \Proves \eq/[\num{n}][\num{m}]$. म्हणून
+$\Sat{M}{\Th{Q}}$ असल्यामुळे, $n \neq m$ असेल तेव्हा
+$\Sat{M}{\eq/[\num{n}][\num{m}]}$. त्यामुळे $n \neq m$ असल्यास
+$\Value{\num{n}}{M} \neq \Value{\num{m}}{M}$, म्हणजे $g(n) \neq g(m)$.
+
+$g$ हे समरूपण आहे हेही पडताळायचे आहे.
+\begin{enumerate}
+\item $\Assign{\Obj{0}}{N} = 0$ असल्यामुळे
+  $g(\Assign{\Obj{0}}{N}) = g(0)$. $g$ च्या व्याख्येवरून
+  $g(0) = \Value{\num{0}}{M}$. पण $\num{0}$ म्हणजे फक्त $\Obj{0}$;
+  आणि एखादे पद !!a{constant} असेल, तर त्याचे मूल्य त्या !!{structure} ने
+  त्या !!{constant} ला नेमून दिलेले मूल्य असते, म्हणजे
+  $\Value{\Obj{0}}{M} = \Assign{\Obj{0}}{M}$. म्हणून अपेक्षेप्रमाणे
+  $g(\Assign{\Obj{0}}{N}) = \Assign{\Obj{0}}{M}$.
+\item $\Struct{N}$ मध्ये $\prime$ हे~$\Nat$ वरील उत्तरवर्ती फलन असल्यामुळे
+  $g(\Assign{\prime}{N}(n)) = g(n+1)$. पुढे, $g$ च्या व्याख्येवरून
+  $g(n+1) = \Value{\num{n+1}}{M}$. पण $\num{n+1}$ आणि $\num{n}'$ हे
+  एकच पद आहे, म्हणून $\Value{\num{n+1}}{M} = \Value{\num{n}'}{M}$.
+  मूल्य-फलनाच्या व्याख्येवरून हे
+  $= \Assign{\prime}{M}(\Value{\num{n}}{M})$. तसेच
+  $\Value{\num{n}}{M} = g(n)$ असल्यामुळे
+  $g(\Assign{\prime}{N}(n)) = \Assign{\prime}{M}(g(n))$ मिळते.
+\item $\Struct{N}$ मध्ये $+$ हे~$\Nat$ वरील बेरीज-फलन असल्यामुळे
+  $g(\Assign{+}{N}(n,m)) = g(n+m)$. पुढे, $g$ च्या व्याख्येवरून
+  $g(n+m) = \Value{\num{n+m}}{M}$. पण $\Th{Q} \Proves
+  \num{n+m} = (\num{n} + \num{m})$, म्हणून $\Value{\num{n+m}}{M} =
+  \Value{\num{n}+\num{m}}{M}$. मूल्य-फलनाच्या व्याख्येवरून हे $=
+  \Assign{+}{M}(\Value{\num{n}}{M},\Value{\num{m}}{M})$. तसेच
+  $\Value{\num{n}}{M} = g(n)$ आणि $\Value{\num{m}}{M} = g(m)$ असल्यामुळे
+  $g(\Assign{+}{N}(n, m)) = \Assign{+}{M}(g(n), g(m))$ मिळते.
+\item $g(\Assign{\times}{N}(n, m)) = \Assign{\times}{M}(g(n), g(m))$:
+  सराव.
+\item $\tuple{n,m} \in \Assign{<}{N}$ हे तेव्हाच, जेव्हा $n < m$. जर
+  $n < m$, तर $\Th{Q} \Proves \num{n} < \num{m}$ आणि
+  $\Sat{M}{\num{n} < \num{m}}$ सुद्धा. त्यामुळे
+  $\tuple{\Value{\num{n}}{M}, \Value{\num{m}}{M}} \in \Assign{<}{M}$,
+  म्हणजे $\tuple{g(n), g(m)} \in \Assign{<}{M}$. जर $n \not< m$, तर
+  $\Th{Q} \Proves \lnot \num{n} < \num{m}$ आणि परिणामी
+  $\Sat/{M}{\num{n} < \num{m}}$. त्यामुळे पूर्वीप्रमाणे
+  $\tuple{g(n), g(m)} \notin \Assign{<}{M}$. दोन्ही एकत्र केल्यास:
+  $\tuple{n,m} \in \Assign{<}{N}$ हे तेव्हाच, जेव्हा
+  $\tuple{g(n), g(m)} \in \Assign{<}{M}$.
+\end{enumerate}
+\end{proof}
+
+\begin{explain}
+$\Lang{L_A}$ साठीच्या इतर कोणत्याही !!{structure}~$\Struct{M}$ च्या
+प्रांतात~$\Nat$ कडून संगती ठरवण्याचा सर्वांत साहजिक मार्ग म्हणजे फलन~$g$;
+कारण अशा प्रत्येक $\Struct{M}$ मध्ये $\num{0}$, $\num{1}$, $\num{2}$
+इत्यादींनी नाव दिलेले !!{element}s असतात. त्यामुळे, $\Struct{M}$ ने
+$\num{n}$ विषयीची किमान काही मूलभूत विधाने~$\Struct{N}$ प्रमाणेच सत्य
+केली आणि $g$ हे एकास-एक व आच्छादकही असेल, तर $g$ हे समरूपण ठरेल यात नवल
+नाही. किंबहुना, $\Domain{M}$ मध्ये $\num{n}$ यांनी नाव दिलेल्यांव्यतिरिक्त
+दुसरे !!{element}s नसतील, तर असे समरूपण एकमेव असते.
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:thq-unique-iso} जर $\Struct{M}$ मानक असेल, तर
+\olref{prop:thq-standard} च्या पुराव्यातील $g$ हे~$\Struct{N}$ कडून
+$\Struct{M}$ कडे जाणारे एकमेव समरूपण आहे.
+\end{prop}
+
+\begin{proof}
+$h\colon \Nat \to \Domain{M}$ हे $\Struct{N}$ आणि~$\Struct{M}$ यांमधील
+समरूपण आहे असे समजा. $n$ वरील विगमनाने $g = h$ हे दाखवू. $n = 0$ असेल,
+तर $g$ च्या व्याख्येवरून $g(0) = \Assign{\Obj{0}}{M}$. पण $h$ हे समरूपण
+असल्यामुळे $h(0) = h(\Assign{\Obj{0}}{N}) =\Assign{\Obj{0}}{M}$;
+म्हणून $g(0) = h(0)$.
+
+आता $n+1$ चे प्रकरण विचारात घ्या. आपल्याला
+\begin{align*}
+  g(n+1) & = \Value{\num{n+1}}{M} \text{ हे~$g$ च्या व्याख्येवरून}\\
+  & = \Value{\num{n}'}{M} \text{ कारण $\num{n+1}\ident \num{n}'$}\\
+  & = \Assign{\prime}{M}(\Value{\num{n}}{M})
+    \text{ हे $\Value{t'}{M}$ च्या व्याख्येवरून}\\
+  & = \Assign{\prime}{M}(g(n))  \text{ हे~$g$ च्या व्याख्येवरून}\\
+  & = \Assign{\prime}{M}(h(n)) \text{ हे विगमन गृहीतकावरून}\\
+  & = h(\Assign{\prime}{N}(n)) \text{ कारण $h$ हे समरूपण आहे}\\
+  & = h(n+1)
+\end{align*}
+मिळते.
+\end{proof}
+
+\begin{explain}
+कोणत्याही !!{denumerable} संच~$M$ साठी $\Nat$ आणि $M$ यांमध्ये
+!!a{bijection} असते; म्हणून असा प्रत्येक संच~$M$ हा एखाद्या मानक
+प्रतिमान~$\Struct{M}$ चा संभाव्य !!{domain} आहे. किंबहुना, एकदा $z \in M$
+ही वस्तू आणि योग्य फलन $s$ ही अनुक्रमे $\Assign{\Obj{0}}{M}$ आणि
+$\Assign{\prime}{M}$ म्हणून निवडली, की $+$, $\times$ आणि $<$ यांचे
+अर्थनिर्धारण आधीच निश्चित होते. $s\colon M \to M \setminus \{z\}$ अशी
+!!{injective} आणि !!{surjective} दोन्ही असलेली फलनेच मानक प्रतिमानात
+$\Assign{\prime}{M}$ म्हणून योग्य असतात. $s$ च्या व्याप्तीत~$z$ असू शकत
+नाही; अन्यथा $\lforall[x][\eq/[\Obj 0][x']]$ असत्य होईल. हे !!{sentence}
+$\Struct{N}$ मध्ये सत्य आहे, म्हणून $\Struct{M}$ नेही ते सत्य केले पाहिजे.
+फलन~$s$ हे !!{injective} असले पाहिजे, कारण $\Struct{N}$ मधील उत्तरवर्ती
+फलन~$\Assign{\prime}{N}$ तसे आहे; आणि $\Assign{\prime}{N}$ हे
+!!{injective} आहे हे~$\Struct{N}$ मध्ये सत्य असलेल्या !!a{sentence} ने
+व्यक्त होते. ते !!{surjective} सुद्धा असले पाहिजे; अन्यथा असा एखादा
+$x \in M \setminus \{z\}$ असेल की तो~$s$ च्या व्याप्तीत नसेल, म्हणजे
+!!{sentence} $\lforall[x][(\eq[x][\Obj 0] \lor
+\lexists[y][\eq[y'][x]])]$ हे~$\Struct{M}$ मध्ये असत्य होईल---पण ते
+$\Struct{N}$ मध्ये सत्य आहे.
+%READERNOTE{OLFOL-030 — गोठवलेल्या इंग्रजीतील शेवटच्या तर्कात x हा s च्या प्रांतात नसतो असे म्हटले आहे; परंतु s चा प्रांत M असल्यामुळे x त्यात असतोच. आच्छादकता अपयशी होण्यासाठी x हा s च्या व्याप्तीत नसणे आवश्यक आहे, आणि मराठी मजकुरात ते दुरुस्त केले आहे.}
+\end{explain}
+
+
+\end{document}

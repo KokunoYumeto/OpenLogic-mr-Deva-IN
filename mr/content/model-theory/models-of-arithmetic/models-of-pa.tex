@@ -1,0 +1,263 @@
+% Part: first-order-logic
+% Chapter: models-of-arithmetic
+% Section: models-of-pa
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{mar}{mpa}
+\section{$\Th{PA}$ ची प्रतिमाने}
+
+\begin{explain}
+$\Th{TA}$ चे कोणतेही अमानक प्रतिमान हे~$\Th{PA}$ चेही अमानक प्रतिमान
+असते. $\Th{TA}$ ची आणि म्हणून~$\Th{PA}$ ची अमानक प्रतिमाने अस्तित्वात
+आहेत हे आपल्याला माहीत आहे. अशा अमानक प्रतिमानांत अमानक ``संख्या'', म्हणजे
+सर्व मानक ``संख्यांच्या'' ``पलीकडे'' असलेले प्रांताचे !!{element}s, असतात
+हेही आपल्याला माहीत आहे. पण त्यांची मांडणी कशी असते? त्या किती असतात?
+दुर्बलतर उपपत्ती~$\Th{Q}$ च्या प्रतिमानात फक्त एक अमानक संख्या असू शकते
+हे आपण पाहिले. पण या साध्या !!{structure}s~$\Th{PA}$ किंवा $\Th{TA}$ ची
+प्रतिमाने नाहीत.
+
+$\Th{PA}$ किंवा $\Th{TA}$ च्या प्रतिमानांची रचना समजून घेण्याची गुरुकिल्ली
+म्हणजे या उपपत्तींमध्ये कोणती तथ्ये !!{derivable} आहेत हे पाहणे. उदाहरणार्थ,
+$\Th{PA}$ कडून आधीच $\lforall[x][\eq/[x][x']]$ आणि
+$\lforall[x][\lforall[y][\eq[(x+y)][(y+x)]]]$ सिद्ध होतात; म्हणून ही
+!!{sentence}s असत्य असलेल्या साध्या रचना~$\Th{PA}$ ची प्रतिमाने असू शकत
+नाहीत.
+
+$\Struct{M}$ हे~$\Th{PA}$ चे प्रतिमान आहे असे समजा. मग
+$\Th{PA} \Proves !A$ असल्यास $\Sat{M}{!A}$. पुन्हा
+$\Assign{\Obj{0}}{M}$ करिता $\nszero$, $\Assign{\prime}{M}$ करिता
+$\nssucc$, $\Assign{+}{M}$ करिता $\nsplus$,
+$\Assign{\times}{M}$ करिता $\nstimes$ आणि $\Assign{<}{M}$ करिता
+$\nsless$ वापरू. मग कोणतेही !!{sentence}~$!A$ हे $\nszero$, $\nssucc$,
+$\nsplus$, $\nstimes$ आणि $\nsless$ यांविषयी एखादी अट सांगते; आणि
+$\Sat{M}{!A}$ असेल, तर ती अट पूर्ण झाली पाहिजे. उदाहरणार्थ,
+$\Sat{M}{!Q_1}$, म्हणजे
+$\Sat{M}{\lforall[x][\lforall[y][(\eq[x'][y'] \lif \eq[x][y])]]}$,
+असेल तर $\nssucc$ हे !!{injective} असले पाहिजे.
+\end{explain}
+
+\begin{prop}
+$\Struct{M}$ मध्ये $\nsless$ हा काटेकोर रेषीय क्रम आहे, म्हणजे तो पुढील
+अटी पूर्ण करतो:
+\begin{enumerate}
+\item कोणत्याही~$x \in \Domain{M}$ साठी $x \nsless x$ नाही.
+\item $x \nsless y$ आणि $y \nsless z$ असतील, तर $x \nsless z$.
+\item कोणत्याही $x \neq y$ साठी $x \nsless y$ किंवा $y \nsless x$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+$\Th{PA}$ कडून पुढील सूत्रे सिद्ध होतात:
+\begin{enumerate}
+\item $\lforall[x][\lnot x < x]$
+\item $\lforall[x][\lforall[y][\lforall[z][((x < y \land y < z) \lif x < z)]]]$
+\item $\lforall[x][\lforall[y][((x < y \lor y < x) \lor \eq[x][y]))]]$
+\end{enumerate}
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:M-discrete} $\nsless$-क्रमात $\nszero$ हा~$\Domain{M}$ मधील
+लघुतम !!{element} आहे. प्रत्येक $x$ साठी $x \nsless x^\nssucc$, आणि हा
+गुणधर्म असलेला $\nsless$-लघुतम !!{element} म्हणजे $x^\nssucc$. शून्याहून
+वेगळ्या कोणत्याही~$x$ साठी $y^\nssucc = x$ असा एकमेव $y$ असतो. ($y$ ला
+$\Struct{M}$ मधील~$x$ चा ``पूर्ववर्ती'' म्हणतो आणि तो~$^\nssucc x$ असा
+दर्शवतो.)
+%READERNOTE{OLFOL-036 — गोठवलेल्या इंग्रजी विधानात प्रत्येक x ला पूर्ववर्ती असल्याचा दावा आहे, पण त्याच विधानानुसार शून्य हा लघुतम घटक असून Q_2 नुसार तो कोणाचाही उत्तरवर्ती नाही. मराठीत पूर्ववर्तीचा दावा अशून्य x पुरता मर्यादित केला आहे; पुढील पुराव्यातील पुनरुक्तीही त्यानुसार दुरुस्त केली आहे.}
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+\begin{prob}
+\olref[mod][mar][mpa]{prop:M-discrete} मधील $\nszero$, $\nssucc$ आणि
+$\nsless$ यांचे गुणधर्म सुनिश्चित करणारी, $\Th{PA}$ मध्ये !!{derivable}
+(आणि म्हणून~$\Struct{N}$ मध्ये सत्य) असलेली~$\Lang{L_A}$ मधील
+!!{sentence}s शोधा.
+\end{prob}
+
+\begin{prop}
+$\Struct{M}$ चे सर्व मानक !!{element}s हे सर्व अमानक !!{element}s पेक्षा
+($\nsless$ नुसार) लहान असतात.
+\end{prop}
+
+\begin{proof}
+$\Struct{M}$ चा मानक !!{element}~$\Value{\num{n}}{M}$ याचा संक्षेप म्हणून
+$n$ वापरू. कोणत्याही~$n \in \Nat$ साठी
+$\lforall[x][(x < \num{n}' \lif (\eq[x][\num{0}] \lor
+  \eq[x][\num{1}] \lor \dots \lor \eq[x][\num{n}]))]$ हे $\Th{Q}$
+कडून आधीच सिद्ध होते. $\nsless \nszero$ असलेले !!{element}s
+नाहीत. म्हणून $n$ मानक आणि $x$ अमानक असेल, तर $x \nsless n$ असू शकत
+नाही. व्याख्येनुसार, अमानक घटक म्हणजे कोणत्याही~$n \in \Nat$ साठी
+$\Value{\num{n}}{M}$ नसलेला घटक; म्हणून $x \neq n$ सुद्धा. $\nsless$
+हा रेषीय क्रम असल्यामुळे $n \nsless x$ असलेच पाहिजे.
+\end{proof}
+
+\begin{prop}
+$\Domain{M}$ मधील प्रत्येक अमानक !!{element}~$x$ हा पुढील उपसंचाचा घटक
+असतो:
+\[
+\dots ^{\nssucc\nssucc\nssucc}x \nsless ^{\nssucc\nssucc}x \nsless
+^{\nssucc}x \nsless x \nsless x^{\nssucc} \nsless x^{\nssucc\nssucc}
+\nsless x^{\nssucc\nssucc\nssucc} \nsless \dots
+\]
+या उपसंचाला \emph{$x$ चा खंड} म्हणतो आणि तो $[x]$ असा लिहितो. त्याला
+लघुतम किंवा महत्तम !!{element} नाही. एखाद्या मानक~$n$ साठी
+$x \nsplus n = y$ किंवा $y \nsplus n = x$ असे असणाऱ्या
+$y \in \Domain{M}$ चा संच, असे त्याचे लक्षण सांगता येते.
+\end{prop}
+
+\begin{proof}
+असा संच~$[x]$ नेहमी अस्तित्वात असतो हे स्पष्ट आहे; कारण
+$\Domain{M}$ मधील प्रत्येक अशून्य !!{element}~$y$ ला एकमेव
+उत्तरवर्ती~$y^\nssucc$ आणि एकमेव पूर्ववर्ती~$^\nssucc y$ असतो. लागोपाठच्या
+!!{element}s $y$, $y^\nssucc$ साठी $y \nsless y^\nssucc$, आणि
+$y$ ज्याच्यापेक्षा $\nsless$ आहे असा $\Domain{M}$ मधील $\nsless$-लघुतम
+!!{element} म्हणजे $y^\nssucc$. नेहमी $^\nssucc y \nsless y$ आणि
+$y \nsless y^\nssucc$ असल्यामुळे $[x]$ ला लघुतम किंवा महत्तम !!{element}
+नाही. $y \in [x]$ असेल, तर $x \in [y]$; कारण मग एकतर
+$y^{\nssucc\dots\nssucc} = x$ किंवा $x^{\nssucc\dots\nssucc} = y$.
+$y^{\nssucc\dots\nssucc} = x$ ($n$ वेळा $\nssucc$) असेल, तर
+$y \nsplus n = x$, आणि याचा व्यत्यासही खरा; कारण $n$ ही $\prime$ ची
+संख्या असेल, तर $\Th{PA} \Proves
+\lforall[x][\eq[x^{\prime\dots\prime}][(x + \num{n})]]$.
+\end{proof}
+
+\begin{prop}
+$[x] \neq [y]$ आणि $x \nsless y$ असतील, तर कोणत्याही $u \in [x]$ आणि
+कोणत्याही $v \in [y]$ साठी $u \nsless v$.
+\end{prop}
+
+\begin{proof}
+$\Th{PA} \Proves \lforall[x][\lforall[y][(x < y \lif (x' < y
+    \lor x' = y))]]$ हे लक्षात घ्या. म्हणून $u \nsless v$ आणि
+$[u] \neq [v]$ असतील, तर कोणत्याही~$n$ साठी
+$u \nsplus n^\nssucc \nsless v$ सुद्धा.
+
+प्रत्येक $u \in [x]$ हा~$\nsless y$ आहे: गृहीतकानुसार
+$x \nsless y$. $u \nsless x$ असेल, तर संक्रमणशीलतेने $u \nsless y$.
+आणि $x \nsless u$ पण $u \in [x]$ असेल, तर कोणत्यातरी~$n$ साठी
+$u = x\nsplus n^\nssucc$; म्हणून नुकत्याच सिद्ध केलेल्या तथ्यावरून
+$u \nsless y$.
+
+आता $v \in [y]$ हा~$\nsless y$ आहे, म्हणजे एखाद्या मानक~$m$
+साठी $v \nsplus m^\nssucc = y$, असे समजा. यामुळे $v \nsless x$ असण्याची
+शक्यता बाद होते; अन्यथा $y = v \nsplus m^\nssucc \nsless x$ झाले असते.
+तसेच स्पष्टपणे $x \neq v$; अन्यथा
+$x \nsplus m^\nssucc = v \nsplus m^\nssucc = y$ आणि $[x] = [y]$ झाले
+असते. म्हणून $x \nsless v$. पण मग कोणत्याही~$n$ साठी
+$x \nsplus n^\nssucc \nsless v$ सुद्धा. त्यामुळे $x \nsless u$ आणि
+$u \in [x]$ असतील, तर $u \nsless v$. $u \nsless x$ असेल, तर
+संक्रमणशीलतेने $u \nsless v$.
+
+शेवटी, $y \nsless v$ असेल, तर आपण दाखवल्याप्रमाणे $u \nsless y$ आणि
+$y \nsless v$ असल्यामुळे $u \nsless v$.
+\end{proof}
+
+\begin{cor}
+$[x] \neq [y]$ असेल, तर $[x] \cap [y] = \emptyset$.
+\end{cor}
+
+\begin{proof}
+$z \in [x]$ आणि $x \nsless y$ असे समजा. मग प्रत्येक $u \in [y]$ साठी
+$z \nsless u$. जर $z \in [y]$ असेल, तर $z \nsless z$ मिळेल.
+$y \nsless x$ असेल तेव्हाही याचप्रमाणे.
+\end{proof}
+
+\begin{explain}
+याचा अर्थ खंडांनाच $\nsless$ चा आदर राखणारा क्रम देता येतो:
+$[x] \nsless [y]$ हे तेव्हाच, जेव्हा $x \nsless y$; किंवा सममूल्य रीतीने,
+कोणत्याही $u \in [x]$ आणि $v \in [y]$ साठी $u \nsless v$. मानक खंड
+$[0]$ हा लघुतम खंड आहे हे स्पष्ट आहे. त्याचा कोणत्याही अमानक खंडाशी छेद
+नाही, आणि कोणत्याही दोन अमानक खंडांचाही परस्परांशी छेद नाही. विशेषतः,
+उत्तरवर्ती किंवा पूर्ववर्ती वारंवार घेऊन वेगळ्या खंडात ``पोहोचता'' येत नाही.
+\end{explain}
+
+\begin{prop}
+$x$ आणि $y$ अमानक असतील, तर $x \nsless x \nsplus y$ आणि
+$x \nsplus y \notin [x]$.
+\end{prop}
+
+\begin{proof}
+$y$ अमानक असेल, तर $y \neq \nszero$. $\Th{PA} \Proves
+\lforall[x][(y \neq \Obj{0} \lif x < (x+y))]$. आता
+$x \nsplus y \in [x]$ असे समजा. $x \nsless x \nsplus y$ असल्यामुळे
+$x \nsplus n^\nssucc = x \nsplus y$ असे झाले असते. पण $\Th{PA} \Proves
+\lforall[x][\lforall[y][\lforall[z][(\eq[(x+y)][(x+z)] \lif y = z)]]]$
+(बेरीजेसाठीचा निरसन नियम). याचा अर्थ एखाद्या मानक~$n$ साठी
+$y = n^\nssucc$ असा झाला असता; पण $y$ अमानक आहे असे गृहीत आहे.
+\end{proof}
+
+\begin{prop}
+लघुतम अमानक खंड नाही.
+\end{prop}
+
+\begin{proof}
+$\Th{PA} \Proves \lforall[x][\lexists[y][(\eq[(y+y)][x] \lor
+      \eq[(y+y)'][x])]]$; म्हणजे प्रत्येक $x$ ला~$2$ ने भाग जातो
+(शक्यतो बाकी~$1$ ठेवून). $x$ अमानक असेल, तर $y$ सुद्धा अमानक असतो.
+आधीच्या विधानावरून $y \nsless y \nsplus y$ आणि
+$y \nsplus y \notin [y]$. मग $y \nsless (y \nsplus y)^\nssucc$ आणि
+$(y \nsplus y)^\nssucc \notin [y]$ सुद्धा. पण $x = y \nsplus y$ किंवा
+$x = (y \nsplus y)^\nssucc$, म्हणून $y \nsless x$ आणि $y \notin [x]$.
+\end{proof}
+
+\begin{prop}
+महत्तम खंड नाही.
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+\begin{prob}
+$\Th{PA}$ च्या अमानक प्रतिमानात महत्तम खंड नसतो हे दाखवा.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:blocks-dense}
+खंडांचा क्रम सघन आहे. म्हणजे, $x \nsless y$ आणि $[x] \neq [y]$ असतील,
+तर त्या दोहोंपेक्षा वेगळा आणि त्यांच्यामध्ये असलेला एक खंड~$[z]$ असतो.
+\end{prop}
+
+\begin{proof}
+$x \nsless y$ असे समजा. पूर्वीप्रमाणे, $x \nsplus y$ ला दोनने भाग जातो
+(शक्यतो बाकी ठेवून): एखादा $z \in \Domain{M}$ असा असतो की एकतर
+$x \nsplus y = z \nsplus z$ किंवा
+$x \nsplus y = (z \nsplus z)^\nssucc$. घटक~$z$ हा $x$ आणि~$y$ यांची
+``सरासरी'' आहे, आणि $x \nsless z$ व $z \nsless y$.
+%READERNOTE{OLFOL-037 — गोठवलेल्या इंग्रजी पुराव्यात या एकाच गणनेत आधी न परिभाषित केलेले opulus चिन्ह वापरले आहे; विभागभर बेरीजेसाठी nsplus निश्चित केलेले असल्यामुळे मराठी सूत्रांत तेच चिन्ह पुनःस्थापित केले आहे.}
+\end{proof}
+
+\begin{prob}
+\olref[mod][mar][mpa]{prop:blocks-dense} चा तपशीलवार पुरावा लिहा.
+$z$ चे अस्तित्व सुनिश्चित करण्यासाठी $\Th{PA}$ ने कोणते !!{sentence}
+!!{derive} केले पाहिजे? $x \nsless z$ आणि $z \nsless y$ का, तसेच
+$[x] \neq [z]$ आणि $[z] \neq [y]$ का?
+\end{prob}
+
+\begin{explain}
+प्रतिमान गणनीय असेल, तर अमानक खंडांचा क्रम परिमेय संख्यांच्या क्रमासारखा
+असतो: ते अंतबिंदुविरहित !!a{denumerable} सघन रेषीय क्रम बनवतात. असे
+कोणतेही दोन !!{denumerable} क्रम समरूपी असतात हे दाखवता येते. त्यावरून
+सत्य अंकगणिताच्या कोणत्याही दोन !!{enumerable} अमानक प्रतिमान
+$\Struct{M}_1$ आणि $\Struct{M_2}$ यांची फक्त $<$ आणि $=$ असलेल्या भाषेतील
+न्यूनीकरणे समरूपी आहेत. खरेच, पुढीलप्रमाणे समरूपण~$h$ ची व्याख्या करता
+येते: $\Struct{M_1}$ आणि $\Struct{M_2}$ यांचे मानक भाग मानक
+प्रतिमान~$\Struct{N}$ शी आणि म्हणून परस्परांशी समरूपी आहेत. अमानक भाग
+बनवणाऱ्या खंडांचा क्रम स्वतः परिमेय संख्यांसारखा असल्यामुळे ते समरूपी आहेत;
+प्रत्येक खंडातील स्वेच्छ घटक परस्पर जुळवून आणि नंतर $\Struct{M_1}$ मधील
+$x$ च्या उत्तरवर्तीची प्रतिमा ही $\Struct{M_2}$ मधील $x$ च्या प्रतिमेचा
+उत्तरवर्ती घेऊन, खंडांचे समरूपण खंडांच्या \emph{आत} विस्तारित करता येते.
+$\mathfrak{M}_1$ आणि $\mathfrak{M}_2$ या अंकगणिताच्या पूर्ण भाषेत समरूपी
+आहेत असे यावरून \emph{निष्पन्न होत नाही} हे लक्षात घ्या (खरे तर समरूपण
+नेहमी !!a{language} सापेक्ष असते), कारण $\Domain{M_1}$ आणि
+$\Domain{M_2}$ वर बेरीज आणि गुणाकार परिभाषित करण्याचे परस्पर-असमरूपी मार्ग
+आहेत. (पूर्ण उपपत्तीच्या गणनीय प्रतिमानांची संख्या~2 असू शकत नाही, या
+वॉट यांच्या प्रसिद्ध प्रमेयावरूनही हे निष्पन्न होते.)
+%READERNOTE{OLFOL-038 — गोठवलेल्या इंग्रजी निष्कर्षात कोणतेही M गणनीय आहे असे गृहीत न धरता अमानक खंड गणनीय असल्याचे म्हटले आहे; अमानक PA-प्रतिमाने अगणनीयही असू शकतात. पुढील वाक्याच्या गणनीय-प्रतिमान व्याप्तीशी जुळवून मराठी दावा गणनीय प्रतिमानापुरता स्पष्ट केला आहे.}
+\end{explain}
+\end{document}

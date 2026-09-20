@@ -42,18 +42,18 @@ messages, exact text and MathML preservation checks, complete link validation,
 and representative rendering in Calibre.
 
 Translation continues beyond the frozen OLP-0111 release boundary. The editable
-working tree now contains 187/722 units and 1,979 aligned content segments through
-OLP-0190. It completes axiomatic deduction, completeness, first-order introduction,
+working tree now contains 194/722 units and 2,063 aligned content segments through
+OLP-0197. It completes axiomatic deduction, completeness, first-order introduction,
 first-order syntax and semantics, models and theories, logics beyond first order,
-and the model-theory basics chapter in source form. OLP-0112–OLP-0190 remain outside
-this reader and its downloadable source archive; OLP-0191 is next.
+model-theory basics, and models of arithmetic in source form. OLP-0112–OLP-0197
+remain outside this reader and its downloadable source archive; OLP-0198 is next.
 
 - **Current release:** [अकरा प्रकरणे — EPUB 3, PDF, offline HTML, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8.1).
 - **EPUB 3:** [download the reflowable Marathi reader](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/eleven-chapters-v0.8.1/openlogic-mr-eleven-chapters.epub).
 - **DOI mirror:** [edition concept DOI 10.5281/zenodo.22307960](https://doi.org/10.5281/zenodo.22307960), which resolves to the latest version.
 - **PDF:** [157-page cumulative reader](releases/eleven-chapters-v0.8/openlogic-mr-eleven-chapters.pdf).
 - **Offline HTML:** download and extract `openlogic-mr-eleven-chapters-html.zip`, then open `index.html`.
-- **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/), [size of sets](mr/content/sets-functions-relations/size-of-sets/), [arithmetization](mr/content/sets-functions-relations/arithmetization/), [infinite sets](mr/content/sets-functions-relations/infinite/), [propositional syntax and semantics](mr/content/propositional-logic/syntax-and-semantics/), [first-order proof systems](mr/content/first-order-logic/proof-systems/), [sequent calculus](mr/content/first-order-logic/sequent-calculus/), [natural deduction](mr/content/first-order-logic/natural-deduction/), [Tableaux](mr/content/first-order-logic/tableaux/), [axiomatic deduction](mr/content/first-order-logic/axiomatic-deduction/), [completeness](mr/content/first-order-logic/completeness/), [first-order introduction](mr/content/first-order-logic/introduction/), [first-order syntax and semantics](mr/content/first-order-logic/syntax-and-semantics/), [models and theories](mr/content/first-order-logic/models-theories/), [logics beyond first order](mr/content/first-order-logic/beyond/), and [model-theory basics](mr/content/model-theory/basics/).
+- **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/), [size of sets](mr/content/sets-functions-relations/size-of-sets/), [arithmetization](mr/content/sets-functions-relations/arithmetization/), [infinite sets](mr/content/sets-functions-relations/infinite/), [propositional syntax and semantics](mr/content/propositional-logic/syntax-and-semantics/), [first-order proof systems](mr/content/first-order-logic/proof-systems/), [sequent calculus](mr/content/first-order-logic/sequent-calculus/), [natural deduction](mr/content/first-order-logic/natural-deduction/), [Tableaux](mr/content/first-order-logic/tableaux/), [axiomatic deduction](mr/content/first-order-logic/axiomatic-deduction/), [completeness](mr/content/first-order-logic/completeness/), [first-order introduction](mr/content/first-order-logic/introduction/), [first-order syntax and semantics](mr/content/first-order-logic/syntax-and-semantics/), [models and theories](mr/content/first-order-logic/models-theories/), [logics beyond first order](mr/content/first-order-logic/beyond/), [model-theory basics](mr/content/model-theory/basics/), and [models of arithmetic](mr/content/model-theory/models-of-arithmetic/).
 - **Terminology and expert review:** begin with the [shared-schema review guide](provenance/translation-decisions/START_HERE.md), then use the [full applied-decision index](provenance/translation-decisions/TRANSLATION_DECISIONS_FULL.md), [priority review](provenance/translation-decisions/PRIORITY_REVIEW.md), [one-row-per-occurrence CSV](provenance/translation-decisions/DECISION_OCCURRENCES.csv), or [canonical JSON](provenance/translation-decisions/DECISIONS.json). The backward-compatible [decision ledger](provenance/EXPERT_REVIEW_LOG.md) and occurrence JSONL remain available. These surfaces record exact source/target scopes, current PDF page ranges, reversible choices and plain review questions without making review a completion gate.
 - **Pristine English:** `upstream/`; this is source evidence, not translated coverage.
 - **Current source-checkpoint evidence:** `provenance/source-checkpoint-108/`.
@@ -105,8 +105,8 @@ The evidence also preserves the formal retraction of a
 shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The frozen
 94-unit source-checkpoint evidence explicitly distinguishes preserved original
 pages from hash-pinned short web observations whose origin HTML bytes were
-unavailable. The synchronized root provenance now covers 145 translated units and
-1,471 aligned segments through OLP-0148. A bounded independent model audit of
+unavailable. The synchronized root provenance now covers 194 translated units and
+2,063 aligned segments through OLP-0197. A bounded independent model audit of
 OLP-0071–OLP-0072 found no
 material mistranslation, prompted one standing-assumption clarification, and led
 to narrower overlapping choice locators plus separate confidence records for
@@ -192,8 +192,18 @@ the semantic notions, substitution, models, theories, soundness and completeness
 OLFOL-001–004 record bounded source repairs for formula brackets, a
 predicate/constant class mismatch, assignment-domain values and quantified atomic
 syntax.
+OLP-0149–OLP-0182 complete first-order syntax and semantics, models and theories,
+and the survey of logics beyond first order. OLP-0183–OLP-0190 complete the
+model-theory basics chapter, including reducts, substructures, compactness-based
+overspill, isomorphisms, theories of structures, partial isomorphisms and dense
+linear orders. OLP-0191–OLP-0197 complete the models-of-arithmetic chapter:
+standard and non-standard arithmetic models, explicit models of Robinson
+arithmetic, the order and block structure of PA-models, and computable models.
+The aligned source retains explicit reader notes for every bounded correction;
+the synchronized review ledgers expose exact locations, rationale, alternatives
+and uncertainty.
 The records through OLP-0111 are included in the v0.8.1 reader and release archive;
-OLP-0112–OLP-0148 are post-release working units. OLP-0149 is next.
+OLP-0112–OLP-0197 are post-release working units. OLP-0198 is next.
 
 Canon originals are local research evidence. They are **not redistributed here**.
 Some government-site originals could not be downloaded; the index distinguishes
