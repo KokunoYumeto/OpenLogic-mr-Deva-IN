@@ -1,0 +1,269 @@
+{
+  "schema": "openlogic-incremental-source-checkpoint/1",
+  "checkpoint_id": "mr-Deva-IN-source-254-20260925",
+  "generated_utc": "2026-09-25T04:47:08.168802Z",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "base_checkpoint": {
+    "path": "provenance/source-checkpoint-243/SOURCE_CHECKPOINT.json",
+    "bytes": 12958,
+    "sha256": "80fe726fa51d621a6015ab9fa54bb2fc98d9c538e9803645e393fb3c8206a3a4"
+  },
+  "scope": {
+    "translated_source_units": 254,
+    "total_source_units": 722,
+    "remaining_source_units": 468,
+    "aligned_content_segments": 2512,
+    "complete_source_chapters": 24,
+    "complete_reader_chapters": 20,
+    "first_incremental_unit": "OLP-0247",
+    "last_unit": "OLP-0257",
+    "next_unit": "OLP-0258",
+    "complete_edition": false
+  },
+  "translation_files": [
+    {
+      "unit_id": "OLP-0247",
+      "path": "mr/content/computability/computability-theory/total.tex",
+      "bytes": 3272,
+      "sha256": "908cfc4daf098705f52fc06164008901d3531ee0d1116fe8365ac0bf42dcffe2",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0248",
+      "path": "mr/content/computability/computability-theory/rice-theorem.tex",
+      "bytes": 10833,
+      "sha256": "621257ad13ef6e3ceaf57a785a1d699ff3a7e6e6132b54d1f519ed07a45cccfe",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0249",
+      "path": "mr/content/computability/computability-theory/fixed-point-thm.tex",
+      "bytes": 14204,
+      "sha256": "284ac0ec5c425d665aa9225c6656d9ca831f43314c5a9efd972b1e3a91cead2d",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0250",
+      "path": "mr/content/computability/computability-theory/application-fixed-point.tex",
+      "bytes": 5964,
+      "sha256": "e6c2ab103589b3cedac338acee47478d36e2fcad9ada923c14b75345b8e7bedb",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0251",
+      "path": "mr/content/computability/computability-theory/def-functions-self-reference.tex",
+      "bytes": 3640,
+      "sha256": "0c89062d2bf4a9a1b86e4f82cfac8bdb89564b18b5a5e9a2b6c5373e42489fb5",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0252",
+      "path": "mr/content/turing-machines/turing-machines.tex",
+      "bytes": 290,
+      "sha256": "ad6fe10ace8e686f480eb8f16caadde8cf1ed735a28ce504f806bd1b659ddf42",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0253",
+      "path": "mr/content/turing-machines/machines-computations/machines-computations.tex",
+      "bytes": 553,
+      "sha256": "85c199a18f0b14166906cf2aca520f2b3f93ab81e8cf2805312c15ab391a33a0",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0254",
+      "path": "mr/content/turing-machines/machines-computations/introduction.tex",
+      "bytes": 14882,
+      "sha256": "b566cef4b50dc2c7229e86ee80eddc91b6dae687d2e62a8e05ab31a9eb977a07",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0255",
+      "path": "mr/content/turing-machines/machines-computations/representing-tms.tex",
+      "bytes": 21649,
+      "sha256": "f148e640d990b8687ddbfd74e79b2905f67beab364b4c6e04a4dd89caaf8f923",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0256",
+      "path": "mr/content/turing-machines/machines-computations/turing-machines.tex",
+      "bytes": 4102,
+      "sha256": "c7901e63b55bcd64dc21a8fe48d6e1bf2964f1efcb66b3c02d4488e7a9127d2f",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0257",
+      "path": "mr/content/turing-machines/machines-computations/configuration.tex",
+      "bytes": 11385,
+      "sha256": "b52546928166de554c33803344fbc5f07e86e2374160b1376e5c74298ec8be97",
+      "role": "new translated source"
+    }
+  ],
+  "semantic_reviews": [
+    {
+      "unit_id": "OLP-0247",
+      "path": "provenance/source-checkpoint-254/SEMANTIC_REVIEW-OLP0247.json",
+      "bytes": 2604,
+      "sha256": "a8374f5dfd547adf021cc3632de788d32a4b96194a6740760fcd5e3b86c618c5"
+    },
+    {
+      "unit_id": "OLP-0248",
+      "path": "provenance/source-checkpoint-254/SEMANTIC_REVIEW-OLP0248.json",
+      "bytes": 4464,
+      "sha256": "9364bae372ad5737d9bf439066bca2349ef1cdedb0a21033316aeb8c7ab98d91"
+    },
+    {
+      "unit_id": "OLP-0249",
+      "path": "provenance/source-checkpoint-254/SEMANTIC_REVIEW-OLP0249.json",
+      "bytes": 4351,
+      "sha256": "57055eeb61ec77b1aea2def7ece767912b6937f9ec5a7a370d2618c6be8ab950"
+    },
+    {
+      "unit_id": "OLP-0250",
+      "path": "provenance/source-checkpoint-254/SEMANTIC_REVIEW-OLP0250.json",
+      "bytes": 2770,
+      "sha256": "82510e9721b3a2624091075a331c596ded93eb10a404972d28e4f2a17cd09519"
+    },
+    {
+      "unit_id": "OLP-0251",
+      "path": "provenance/source-checkpoint-254/SEMANTIC_REVIEW-OLP0251.json",
+      "bytes": 2611,
+      "sha256": "d49a28ae973c872bb1c4e75bcde5e95dd8d2effdeb94c50560ce58c71f2eee86"
+    },
+    {
+      "unit_id": "OLP-0252",
+      "path": "provenance/source-checkpoint-254/SEMANTIC_REVIEW-OLP0252.json",
+      "bytes": 1042,
+      "sha256": "266a55a414b7ccf87c4aa9857e81105807a2472d278e8c42cb734d07b88be1f1"
+    },
+    {
+      "unit_id": "OLP-0253",
+      "path": "provenance/source-checkpoint-254/SEMANTIC_REVIEW-OLP0253.json",
+      "bytes": 1164,
+      "sha256": "5346194b0bcf9a7018591af935467c17ce2c3e5fe4d99831f4764ea0fff6b766"
+    },
+    {
+      "unit_id": "OLP-0254",
+      "path": "provenance/source-checkpoint-254/SEMANTIC_REVIEW-OLP0254.json",
+      "bytes": 3482,
+      "sha256": "aad5b332441fd7362b4a9390dcb7c210690995ac4b6e3f75786300af2ce8875a"
+    },
+    {
+      "unit_id": "OLP-0255",
+      "path": "provenance/source-checkpoint-254/SEMANTIC_REVIEW-OLP0255.json",
+      "bytes": 3781,
+      "sha256": "5889461874c919ed0bc422d96adbf321b20b3b475d3472bd799ae670bc41b3cd"
+    },
+    {
+      "unit_id": "OLP-0256",
+      "path": "provenance/source-checkpoint-254/SEMANTIC_REVIEW-OLP0256.json",
+      "bytes": 2244,
+      "sha256": "3acd0029dae8933e525b584ed9fbb3e359fb1acf08dc4dd0c9574c4fea824f34"
+    },
+    {
+      "unit_id": "OLP-0257",
+      "path": "provenance/source-checkpoint-254/SEMANTIC_REVIEW-OLP0257.json",
+      "bytes": 3804,
+      "sha256": "7e02534ecafe3f87e47f7874b4b96e114a041d10dda3ac09934adadde02413f2"
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "OLCMP-024",
+      "unit_id": "OLP-0250",
+      "classification": "confirmed-frozen-source-proof-starts-with-total-instead-of-partial-candidate",
+      "finding": "The theorem rules out any partial computable selector f, defined whenever W_e is computable, but the frozen proof begins only with 'any computable function f'. With the established total-versus-partial terminology, that proves a weaker statement. The subsequent g construction remains partial computable even if f(x) diverges.",
+      "action": "Take an arbitrary partial computable f in the Marathi proof opening, explicitly note at the conclusion that divergence of f(e) already violates the required definedness, and otherwise use the source's wrong-answer-at-zero diagonal. Add reader note OLCMP-024 and retain the source's exact formulas. No mechanical formula projection is needed for this prose-only correction."
+    },
+    {
+      "id": "OLTUR-001",
+      "unit_id": "OLP-0255",
+      "classification": "confirmed-frozen-source-wrong-initial-state-name-in-even-machine-trace",
+      "finding": "The displayed first configuration has the state subscript 0, and the preceding sentence explicitly says the machine starts in q_0, but the following frozen sentence calls that 'state one'. The applicable transition from q_0 then corroborates the initial state.",
+      "action": "Name q_0 in the Marathi explanatory sentence, add adjacent reader note OLTUR-001, and project that one added formula back to the frozen wording solely for structural QA. Preserve the actual diagram and state trace."
+    },
+    {
+      "id": "OLTUR-002",
+      "unit_id": "OLP-0257",
+      "classification": "confirmed-cross-section-initial-head-position-inconsistency",
+      "finding": "The informal introduction starts the head on the leftmost tape square containing the end marker, whereas the formal initial configuration starts it on the first input square, position 1. These are different start conventions for the same machine model.",
+      "action": "Preserve the formal initial tuple and explain its first-input-square convention in Marathi, with adjacent OLTUR-002 reader note identifying the earlier informal discrepancy. Do not silently alter either frozen mathematical convention."
+    },
+    {
+      "id": "OLTUR-003",
+      "unit_id": "OLP-0257",
+      "classification": "frozen-source-directional-ambiguity-in-concatenation-gloss",
+      "finding": "The frozen gloss says the input begins 'immediately to the left end marker', which can read as the wrong side of the end marker. The preceding prose and displayed end-marker-concatenated-with-input formula place input immediately to its right.",
+      "action": "Say 'immediately to the right of the left end marker' in Marathi, preserve the formula and record adjacent reader note OLTUR-003. No formula projection is needed."
+    },
+    {
+      "id": "OLTUR-004",
+      "unit_id": "OLP-0257",
+      "classification": "confirmed-frozen-source-empty-input-boundary-gap",
+      "finding": "The definition allows every input I in Sigma-star, including the empty string. Then the displayed initial C=end-marker concatenated with I has length one while the head position is m=1, violating the earlier strict bound m<len(C).",
+      "action": "Keep the frozen initial formula and add a bounded Marathi explanation that the first blank square must be included in the configuration for empty input. Adjacent reader note OLTUR-004 records the gap; no new mathematical symbol is inserted into the source-aligned display."
+    },
+    {
+      "id": "OLTUR-005",
+      "unit_id": "OLP-0257",
+      "classification": "confirmed-cross-section-output-marker-precondition-gap",
+      "finding": "The machine convention explicitly permits overwriting the left-end marker, but the later output definition requires final C to begin with that marker. For a run that overwrites it, the displayed output decomposition need not exist.",
+      "action": "Preserve both frozen statements and the output formula, adding adjacent Marathi prose and reader note OLTUR-005 that this output definition directly applies to runs retaining the marker; further rules are needed after overwrite."
+    }
+  ],
+  "qa": {
+    "units_checked": 11,
+    "unit_structural_failures": 0,
+    "formula_macro_token_identifier_reference_parity": true,
+    "semantic_reviews_passed": 11,
+    "cross_package_receipt": {
+      "path": "provenance/source-checkpoint-254/CROSS_PACKAGE_QA-WORKING.json",
+      "bytes": 1325,
+      "sha256": "259ad4b4742e20b71ee44a639045e3082564dd4a40b8571bc21b8129c65f5e56",
+      "segment_hashes_replayed": 2512,
+      "result": "passed"
+    },
+    "independent_human_or_native_speaker_review_claimed": false,
+    "reader_refresh_verified_for_increment": false
+  },
+  "synchronized_provenance": {
+    "receipt": "provenance/PROVENANCE_SYNC.json",
+    "canon_sources": 113,
+    "canon_passages": 158,
+    "term_decisions": 339,
+    "aligned_segments": 2512,
+    "expert_review_decisions": {
+      "records": 500,
+      "path": "provenance/EXPERT_REVIEW_DECISIONS.jsonl",
+      "bytes": 3444962,
+      "sha256": "759648b82cb334a59a657c83c3c20682a12e5169ae5377282ae63dae1647c099"
+    },
+    "expert_review_occurrences": {
+      "records": 13196,
+      "path": "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl",
+      "bytes": 39898673,
+      "sha256": "7ace843ef2b7b09e9ada42cbda1e985341c193d9f6afdb227fc7a7ca94d37558"
+    },
+    "canonical_decision_qa": {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "bytes": 3535,
+      "sha256": "67369e6334cbdd14bc25ed9fdce401d83af938c4e40ab0b8672077a3536971e7",
+      "deterministic_second_run_identical": true
+    }
+  },
+  "latest_public_reader": {
+    "tag": "twenty-chapters-v0.9",
+    "last_unit": "OLP-0197",
+    "translated_units": 194,
+    "pages": 264,
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/twenty-chapters-v0.9",
+    "zenodo_doi": "10.5281/zenodo.22864626"
+  },
+  "packaging_observations": {
+    "path": "provenance/source-checkpoint-233/PACKAGING_OBSERVATIONS-TWENTY-CHAPTERS-v0.9.json",
+    "bytes": 2420,
+    "sha256": "c234df36fafd075fbe42ac2e323648681e3e164199aafe62126bc482277bffe2",
+    "disposition": "Apply both corrections at the next full-source package checkpoint; preserve inherited access."
+  },
+  "status": "source-complete-and-reviewed; coherent reader refresh pending"
+}

@@ -4,6 +4,7 @@ import csv
 import hashlib
 import importlib.metadata
 import json
+import os
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -18,8 +19,8 @@ SCHEMA_PATH = OUT / "translation-decision.schema.json"
 DECISION_INPUT = PROV / "EXPERT_REVIEW_DECISIONS.jsonl"
 OCCURRENCE_INPUT = PROV / "EXPERT_REVIEW_OCCURRENCES.jsonl"
 SEGMENT_INPUT = PROV / "SEGMENT_CANON_USE.jsonl"
-PDF = P / "build" / "core" / "openlogic-mr-core.pdf"
-INPUTS = P / "build" / "core" / "INPUTS.json"
+PDF = Path(os.environ.get("OPENLOGIC_READER_PDF", str(P / "build" / "core" / "openlogic-mr-core.pdf")))
+INPUTS = Path(os.environ.get("OPENLOGIC_READER_INPUTS", str(P / "build" / "core" / "INPUTS.json")))
 
 SCHEMA_SHA256 = "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
 SCHEMA_BYTES = 10787
@@ -32,6 +33,7 @@ CHAPTER_DRIVER_UNIT_IDS = {
     "OLP-0049", "OLP-0056", "OLP-0063", "OLP-0069", "OLP-0084",
     "OLP-0098", "OLP-0112", "OLP-0126", "OLP-0139", "OLP-0149",
     "OLP-0159", "OLP-0167", "OLP-0174", "OLP-0183", "OLP-0191",
+    "OLP-0198", "OLP-0203", "OLP-0209", "OLP-0228",
 }
 
 

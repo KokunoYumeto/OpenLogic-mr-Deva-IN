@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0254",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of the Turing-machine introduction, with exact formula, macro, figure label and reference parity. No independent human or native-speaker review is claimed.",
+  "scope": "Informal computability, idealized machine components and execution, halting, Turing's three argument types and the historical chronology.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5
+      ],
+      "reverse_paraphrase": "A function from N to N is called computable if a Turing machine computes it. This is a mathematically precise model of a computational procedure, independent of practical time or memory bounds.",
+      "checks": "Both N endpoints, the 1936 attribution, model status and unlimited-resource qualification remain explicit."
+    },
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "The idealized tape is infinite to the right, divided into squares with symbols from a finite alphabet. Initially every square is blank except the left end marker and finitely many input squares. In each step a partial program takes the current state q and scanned symbol sigma to (q prime, sigma prime, D), writes the new symbol, moves left/right/stays according to D, and enters q prime.",
+      "checks": "Right-sided infinity, finite alphabet/input, initial leftmost scan, three source symbols, partiality, argument and tuple order and all three movements are preserved."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "The diagram has an end marker, three ones, zero, and four ones. The head reads the third square in q1. On (q1,1) the program returns (q2,0,stay), then on (q2,0) returns (q3,0,right). The machine halts when no instruction is defined for (qn,sigma), sometimes represented by h.",
+      "checks": "The visible tape count, third-square location, both transition tuples, unchanged zero on the second step and the undefined-transition halting criterion are preserved."
+    },
+    {
+      "blocks": [
+        9,
+        10
+      ],
+      "reverse_paraphrase": "Turing argues for the intuitive adequacy of his formal definition by direct intuition, equivalence of definitions and examples of large computable-number classes. The 1936 proposal is followed in the source chronology by 1941, 1943, 1945, 1948 and 1949 machines, with stored programs distinguished from manual rewiring.",
+      "checks": "The three-item order, in-principle versus bounded-resource distinction, proper names and years are retained. Historical claims follow the frozen source and were not independently fact-checked."
+    }
+  ],
+  "source_observations": [
+    "MR-P131 directly supports the Marathi Turing-machine name and computation context; MR-P129 supports संगणनक्षम as distinct from countable गणनीय.",
+    "MR-P158 directly gives the generic tape headword फीत in an official glossary search extraction; OpenLogic defines the idealized Turing tape. The full component inventory in T338 remains expert-reviewable."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The official tape entry did not directly open through the web tool, and it does not independently attest read-write head terminology.",
+    "No TeX reader build was run for this source-only unit."
+  ]
+}

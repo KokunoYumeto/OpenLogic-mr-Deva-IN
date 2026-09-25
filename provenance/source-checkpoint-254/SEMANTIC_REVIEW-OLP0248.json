@@ -1,0 +1,63 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0248",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of Rice's theorem, index-set characterization, diagonal proof and corollary, with exact formula, macro, label and reference parity. The QA parser was extended for nested dollar math in text macros; its results on all 244 prior units were unchanged. No independent human or native-speaker review is claimed.",
+  "scope": "Decidability of extensional properties of partial computable functions, program syntax versus behavior, s-m-n reduction from K and four undecidable index-set examples.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "The Tot proof did not rely on a special totality feature: for x in K its h could act like any chosen partial computable function. The standard φ_0,φ_1,... enumeration supports Rice's theorem: if the index set A={n:φ_n∈C} is computable for a class C of partial computable functions, C is empty or contains them all.",
+      "checks": "The Tot reference, constant-zero example, partial-function universe, A/C roles and empty-versus-all conclusion are preserved."
+    },
+    {
+      "blocks": [
+        8,
+        9
+      ],
+      "reverse_paraphrase": "An index set contains either all or none of the indices computing each fixed function. Therefore Rice's theorem says no nontrivial such set is decidable. Syntactic questions about a program's symbols, lines, while statement or literal hello world in a print call can be decidable; behavioral questions about halting on zero, ever halting or producing an even number cannot be nontrivially decidable.",
+      "checks": "The extensional invariance, syntax-behavior distinction, literal code examples, numeric thresholds and three behavior examples are preserved."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "Assume C is nonempty and proper, and choose the nowhere-defined f outside C and some g inside C, switching C with its complement if needed. Define h(x,y) to be undefined when φ_x(x) diverges and otherwise to behave as g(y). Operationally simulate φ_x(x), then g(y); formally strict composition with projection of g(y) and Un(x,x) requires both computations to be defined.",
+      "checks": "The without-loss switch, two C-membership roles, divergence case, sequence of simulations and both-argument strictness of the projection formula are preserved."
+    },
+    {
+      "blocks": [
+        14,
+        15
+      ],
+      "reverse_paraphrase": "For fixed x, h_x equals f if φ_x(x) is undefined and equals g otherwise. Since h is partial computable, s-m-n yields primitive-recursive s(e,x) indexing h_x. Thus x∈K iff s(e,x)∈A; a computable A would make K computable, contradiction.",
+      "checks": "The case distinction, index e, primitive-recursive s, defined versus up-arrow notation and K-to-A reduction direction are exact."
+    },
+    {
+      "blocks": [
+        16,
+        17
+      ],
+      "reverse_paraphrase": "The corollary lists undecidable index sets: programs whose range contains 17, whose partial function is constant, whose function is total, and whose outputs satisfy the source's universally stated increasing-value condition. Each class is extensional and neither empty nor all functions.",
+      "checks": "All four protected formulas, inner text-math tokens and nontrivial-index-set justification are preserved."
+    }
+  ],
+  "source_observations": [
+    "T334 records निर्देशांकसंच and अतुच्छ गुणधर्म as source-defined specialist compounds; the theorem's extensional restriction comes from OpenLogic rather than a lexical source.",
+    "The QA math extractor now pairs outer dollars at brace depth zero, preserving nested text-math tokens in the corollary. Regression against the last public parser produced identical checks for all 244 previously recorded units."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The index-set and nontrivial-property compounds remain expert-reviewable.",
+    "The source's fourth corollary predicate is translated as written; this checkpoint does not simplify its quantified condition.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

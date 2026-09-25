@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **243/722 source units**, 2421 aligned translated blocks, 12871 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
+Current scope: **254/722 source units**, 2512 aligned translated blocks, 13196 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -4388,7 +4388,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T044 — computability / formula / derivation</strong> (451 occurrences; medium priority)</summary>
+<summary><strong>T044 — computability / formula / derivation</strong> (458 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -4843,6 +4843,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T044-OLP-0230-B006 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:33-40](../upstream/content/computability/computability-theory/coding-computations.tex#L33) | [mr/content/computability/computability-theory/coding-computations.tex:30-36](../mr/content/computability/computability-theory/coding-computations.tex#L30) | not yet paginated |
 | T044-OLP-0230-B007 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:42-44](../upstream/content/computability/computability-theory/coding-computations.tex#L42) | [mr/content/computability/computability-theory/coding-computations.tex:38-40](../mr/content/computability/computability-theory/coding-computations.tex#L38) | not yet paginated |
 | T044-OLP-0237-B005 | OLP-0237 ·  | [upstream/content/computability/computability-theory/computable-sets.tex:12-13](../upstream/content/computability/computability-theory/computable-sets.tex#L12) | [mr/content/computability/computability-theory/computable-sets.tex:12-13](../mr/content/computability/computability-theory/computable-sets.tex#L12) | not yet paginated |
+| T044-OLP-0253-B004 | OLP-0253 ·  | [upstream/content/turing-machines/machines-computations/machines-computations.tex:8-8](../upstream/content/turing-machines/machines-computations/machines-computations.tex#L8) | [mr/content/turing-machines/machines-computations/machines-computations.tex:8-8](../mr/content/turing-machines/machines-computations/machines-computations.tex#L8) | not yet paginated |
+| T044-OLP-0254-B004 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:9-10](../upstream/content/turing-machines/machines-computations/introduction.tex#L9) | [mr/content/turing-machines/machines-computations/introduction.tex:9-10](../mr/content/turing-machines/machines-computations/introduction.tex#L9) | not yet paginated |
+| T044-OLP-0254-B005 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:12-27](../upstream/content/turing-machines/machines-computations/introduction.tex#L12) | [mr/content/turing-machines/machines-computations/introduction.tex:12-26](../mr/content/turing-machines/machines-computations/introduction.tex#L12) | not yet paginated |
+| T044-OLP-0254-B009 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:86-108](../upstream/content/turing-machines/machines-computations/introduction.tex#L86) | [mr/content/turing-machines/machines-computations/introduction.tex:82-102](../mr/content/turing-machines/machines-computations/introduction.tex#L82) | not yet paginated |
+| T044-OLP-0254-B010 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:110-128](../upstream/content/turing-machines/machines-computations/introduction.tex#L110) | [mr/content/turing-machines/machines-computations/introduction.tex:104-124](../mr/content/turing-machines/machines-computations/introduction.tex#L104) | not yet paginated |
+| T044-OLP-0257-B004 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:9-10](../upstream/content/turing-machines/machines-computations/configuration.tex#L9) | [mr/content/turing-machines/machines-computations/configuration.tex:9-10](../mr/content/turing-machines/machines-computations/configuration.tex#L9) | not yet paginated |
+| T044-OLP-0257-B005 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:12-23](../upstream/content/turing-machines/machines-computations/configuration.tex#L12) | [mr/content/turing-machines/machines-computations/configuration.tex:12-23](../mr/content/turing-machines/machines-computations/configuration.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** संगणनक्षमता / सूत्र / निष्पत्ती
 
@@ -4853,7 +4860,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T045 — function / mapping</strong> (427 occurrences; medium priority)</summary>
+<summary><strong>T045 — function / mapping</strong> (462 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5284,6 +5291,41 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T045-OLP-0246-B010 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:47-62](../upstream/content/computability/computability-theory/k-1.tex#L47) | [mr/content/computability/computability-theory/k-1.tex:49-65](../mr/content/computability/computability-theory/k-1.tex#L49) | not yet paginated |
 | T045-OLP-0246-B011 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:64-68](../upstream/content/computability/computability-theory/k-1.tex#L64) | [mr/content/computability/computability-theory/k-1.tex:67-72](../mr/content/computability/computability-theory/k-1.tex#L67) | not yet paginated |
 | T045-OLP-0246-B012 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:70-81](../upstream/content/computability/computability-theory/k-1.tex#L70) | [mr/content/computability/computability-theory/k-1.tex:74-85](../mr/content/computability/computability-theory/k-1.tex#L74) | not yet paginated |
+| T045-OLP-0247-B005 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:12-17](../upstream/content/computability/computability-theory/total.tex#L12) | [mr/content/computability/computability-theory/total.tex:12-18](../mr/content/computability/computability-theory/total.tex#L12) | not yet paginated |
+| T045-OLP-0247-B007 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:24-39](../upstream/content/computability/computability-theory/total.tex#L24) | [mr/content/computability/computability-theory/total.tex:25-42](../mr/content/computability/computability-theory/total.tex#L25) | not yet paginated |
+| T045-OLP-0247-B008 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:41-52](../upstream/content/computability/computability-theory/total.tex#L41) | [mr/content/computability/computability-theory/total.tex:44-56](../mr/content/computability/computability-theory/total.tex#L44) | not yet paginated |
+| T045-OLP-0248-B005 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:12-18](../upstream/content/computability/computability-theory/rice-theorem.tex#L12) | [mr/content/computability/computability-theory/rice-theorem.tex:12-19](../mr/content/computability/computability-theory/rice-theorem.tex#L12) | not yet paginated |
+| T045-OLP-0248-B007 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:23-28](../upstream/content/computability/computability-theory/rice-theorem.tex#L23) | [mr/content/computability/computability-theory/rice-theorem.tex:24-29](../mr/content/computability/computability-theory/rice-theorem.tex#L24) | not yet paginated |
+| T045-OLP-0248-B008 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:30-35](../upstream/content/computability/computability-theory/rice-theorem.tex#L30) | [mr/content/computability/computability-theory/rice-theorem.tex:31-36](../mr/content/computability/computability-theory/rice-theorem.tex#L31) | not yet paginated |
+| T045-OLP-0248-B009 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:37-51](../upstream/content/computability/computability-theory/rice-theorem.tex#L37) | [mr/content/computability/computability-theory/rice-theorem.tex:38-52](../mr/content/computability/computability-theory/rice-theorem.tex#L38) | not yet paginated |
+| T045-OLP-0248-B010 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:53-57](../upstream/content/computability/computability-theory/rice-theorem.tex#L53) | [mr/content/computability/computability-theory/rice-theorem.tex:54-58](../mr/content/computability/computability-theory/rice-theorem.tex#L54) | not yet paginated |
+| T045-OLP-0248-B011 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:59-64](../upstream/content/computability/computability-theory/rice-theorem.tex#L59) | [mr/content/computability/computability-theory/rice-theorem.tex:60-66](../mr/content/computability/computability-theory/rice-theorem.tex#L60) | not yet paginated |
+| T045-OLP-0248-B012 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:66-82](../upstream/content/computability/computability-theory/rice-theorem.tex#L66) | [mr/content/computability/computability-theory/rice-theorem.tex:68-86](../mr/content/computability/computability-theory/rice-theorem.tex#L68) | not yet paginated |
+| T045-OLP-0248-B013 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:84-86](../upstream/content/computability/computability-theory/rice-theorem.tex#L84) | [mr/content/computability/computability-theory/rice-theorem.tex:88-90](../mr/content/computability/computability-theory/rice-theorem.tex#L88) | not yet paginated |
+| T045-OLP-0248-B014 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:88-95](../upstream/content/computability/computability-theory/rice-theorem.tex#L88) | [mr/content/computability/computability-theory/rice-theorem.tex:92-100](../mr/content/computability/computability-theory/rice-theorem.tex#L92) | not yet paginated |
+| T045-OLP-0248-B015 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:97-107](../upstream/content/computability/computability-theory/rice-theorem.tex#L97) | [mr/content/computability/computability-theory/rice-theorem.tex:102-115](../mr/content/computability/computability-theory/rice-theorem.tex#L102) | not yet paginated |
+| T045-OLP-0249-B005 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:12-16](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L12) | [mr/content/computability/computability-theory/fixed-point-thm.tex:12-16](../mr/content/computability/computability-theory/fixed-point-thm.tex#L12) | not yet paginated |
+| T045-OLP-0249-B006 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:18-26](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L18) | [mr/content/computability/computability-theory/fixed-point-thm.tex:18-26](../mr/content/computability/computability-theory/fixed-point-thm.tex#L18) | not yet paginated |
+| T045-OLP-0249-B007 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:28-45](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L28) | [mr/content/computability/computability-theory/fixed-point-thm.tex:28-46](../mr/content/computability/computability-theory/fixed-point-thm.tex#L28) | not yet paginated |
+| T045-OLP-0249-B010 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:60-75](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L60) | [mr/content/computability/computability-theory/fixed-point-thm.tex:61-76](../mr/content/computability/computability-theory/fixed-point-thm.tex#L61) | not yet paginated |
+| T045-OLP-0249-B011 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:77-83](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L77) | [mr/content/computability/computability-theory/fixed-point-thm.tex:78-86](../mr/content/computability/computability-theory/fixed-point-thm.tex#L78) | not yet paginated |
+| T045-OLP-0249-B012 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:85-93](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L85) | [mr/content/computability/computability-theory/fixed-point-thm.tex:88-97](../mr/content/computability/computability-theory/fixed-point-thm.tex#L88) | not yet paginated |
+| T045-OLP-0249-B013 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:95-102](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L95) | [mr/content/computability/computability-theory/fixed-point-thm.tex:99-106](../mr/content/computability/computability-theory/fixed-point-thm.tex#L99) | not yet paginated |
+| T045-OLP-0249-B014 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:104-111](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L104) | [mr/content/computability/computability-theory/fixed-point-thm.tex:108-115](../mr/content/computability/computability-theory/fixed-point-thm.tex#L108) | not yet paginated |
+| T045-OLP-0249-B015 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L113) | [mr/content/computability/computability-theory/fixed-point-thm.tex:117-139](../mr/content/computability/computability-theory/fixed-point-thm.tex#L117) | not yet paginated |
+| T045-OLP-0249-B016 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:135-149](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L135) | [mr/content/computability/computability-theory/fixed-point-thm.tex:141-155](../mr/content/computability/computability-theory/fixed-point-thm.tex#L141) | not yet paginated |
+| T045-OLP-0249-B017 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:151-179](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L151) | [mr/content/computability/computability-theory/fixed-point-thm.tex:157-185](../mr/content/computability/computability-theory/fixed-point-thm.tex#L157) | not yet paginated |
+| T045-OLP-0249-B018 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:181-201](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L181) | [mr/content/computability/computability-theory/fixed-point-thm.tex:187-208](../mr/content/computability/computability-theory/fixed-point-thm.tex#L187) | not yet paginated |
+| T045-OLP-0249-B020 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:210-241](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L210) | [mr/content/computability/computability-theory/fixed-point-thm.tex:217-251](../mr/content/computability/computability-theory/fixed-point-thm.tex#L217) | not yet paginated |
+| T045-OLP-0250-B005 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:12-19](../upstream/content/computability/computability-theory/application-fixed-point.tex#L12) | [mr/content/computability/computability-theory/application-fixed-point.tex:12-21](../mr/content/computability/computability-theory/application-fixed-point.tex#L12) | not yet paginated |
+| T045-OLP-0250-B006 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:21-26](../upstream/content/computability/computability-theory/application-fixed-point.tex#L21) | [mr/content/computability/computability-theory/application-fixed-point.tex:23-29](../mr/content/computability/computability-theory/application-fixed-point.tex#L23) | not yet paginated |
+| T045-OLP-0250-B007 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:28-32](../upstream/content/computability/computability-theory/application-fixed-point.tex#L28) | [mr/content/computability/computability-theory/application-fixed-point.tex:31-35](../mr/content/computability/computability-theory/application-fixed-point.tex#L31) | not yet paginated |
+| T045-OLP-0250-B008 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:34-60](../upstream/content/computability/computability-theory/application-fixed-point.tex#L34) | [mr/content/computability/computability-theory/application-fixed-point.tex:37-65](../mr/content/computability/computability-theory/application-fixed-point.tex#L37) | not yet paginated |
+| T045-OLP-0250-B009 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:62-68](../upstream/content/computability/computability-theory/application-fixed-point.tex#L62) | [mr/content/computability/computability-theory/application-fixed-point.tex:67-77](../mr/content/computability/computability-theory/application-fixed-point.tex#L67) | not yet paginated |
+| T045-OLP-0251-B004 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:9-10](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L9) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:9-10](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L9) | not yet paginated |
+| T045-OLP-0251-B005 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:12-32](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L12) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:12-33](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L12) | not yet paginated |
+| T045-OLP-0251-B006 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:34-47](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L34) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:35-49](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L35) | not yet paginated |
+| T045-OLP-0251-B007 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:49-55](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L49) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:51-58](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L51) | not yet paginated |
 
 **Chosen rendering/action:** फलन / संगती
 
@@ -5294,7 +5336,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T046 — domain / codomain / range</strong> (223 occurrences; medium priority)</summary>
+<summary><strong>T046 — domain / codomain / range</strong> (227 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5521,6 +5563,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T046-OLP-0242-B008 | OLP-0242 ·  | [upstream/content/computability/computability-theory/complement-ce.tex:28-42](../upstream/content/computability/computability-theory/complement-ce.tex#L28) | [mr/content/computability/computability-theory/complement-ce.tex:29-45](../mr/content/computability/computability-theory/complement-ce.tex#L29) | not yet paginated |
 | T046-OLP-0243-B007 | OLP-0243 ·  | [upstream/content/computability/computability-theory/reducibility.tex:31-48](../upstream/content/computability/computability-theory/reducibility.tex#L31) | [mr/content/computability/computability-theory/reducibility.tex:32-53](../mr/content/computability/computability-theory/reducibility.tex#L32) | not yet paginated |
 | T046-OLP-0244-B010 | OLP-0244 ·  | [upstream/content/computability/computability-theory/prop-reduce.tex:44-51](../upstream/content/computability/computability-theory/prop-reduce.tex#L44) | [mr/content/computability/computability-theory/prop-reduce.tex:48-56](../mr/content/computability/computability-theory/prop-reduce.tex#L48) | not yet paginated |
+| T046-OLP-0248-B011 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:59-64](../upstream/content/computability/computability-theory/rice-theorem.tex#L59) | [mr/content/computability/computability-theory/rice-theorem.tex:60-66](../mr/content/computability/computability-theory/rice-theorem.tex#L60) | not yet paginated |
+| T046-OLP-0248-B016 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:109-120](../upstream/content/computability/computability-theory/rice-theorem.tex#L109) | [mr/content/computability/computability-theory/rice-theorem.tex:117-128](../mr/content/computability/computability-theory/rice-theorem.tex#L117) | not yet paginated |
+| T046-OLP-0250-B006 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:21-26](../upstream/content/computability/computability-theory/application-fixed-point.tex#L21) | [mr/content/computability/computability-theory/application-fixed-point.tex:23-29](../mr/content/computability/computability-theory/application-fixed-point.tex#L23) | not yet paginated |
+| T046-OLP-0250-B009 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:62-68](../upstream/content/computability/computability-theory/application-fixed-point.tex#L62) | [mr/content/computability/computability-theory/application-fixed-point.tex:67-77](../mr/content/computability/computability-theory/application-fixed-point.tex#L67) | not yet paginated |
 
 **Chosen rendering/action:** प्रांत / सहप्रांत / व्याप्ती
 
@@ -6210,7 +6256,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T056 — enumeration / enumerate</strong> (115 occurrences; routine priority)</summary>
+<summary><strong>T056 — enumeration / enumerate</strong> (117 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6329,6 +6375,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T056-OLP-0241-B010 | OLP-0241 ·  | [upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:36-42](../upstream/content/computability/computability-theory/ce-closed-cup-cap.tex#L36) | [mr/content/computability/computability-theory/ce-closed-cup-cap.tex:40-46](../mr/content/computability/computability-theory/ce-closed-cup-cap.tex#L40) | not yet paginated |
 | T056-OLP-0241-B011 | OLP-0241 ·  | [upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:44-65](../upstream/content/computability/computability-theory/ce-closed-cup-cap.tex#L44) | [mr/content/computability/computability-theory/ce-closed-cup-cap.tex:48-71](../mr/content/computability/computability-theory/ce-closed-cup-cap.tex#L48) | not yet paginated |
 | T056-OLP-0245-B008 | OLP-0245 ·  | [upstream/content/computability/computability-theory/complete-ce-sets.tex:29-37](../upstream/content/computability/computability-theory/complete-ce-sets.tex#L29) | [mr/content/computability/computability-theory/complete-ce-sets.tex:31-41](../mr/content/computability/computability-theory/complete-ce-sets.tex#L31) | not yet paginated |
+| T056-OLP-0248-B006 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:20-21](../upstream/content/computability/computability-theory/rice-theorem.tex#L20) | [mr/content/computability/computability-theory/rice-theorem.tex:21-22](../mr/content/computability/computability-theory/rice-theorem.tex#L21) | not yet paginated |
+| T056-OLP-0250-B006 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:21-26](../upstream/content/computability/computability-theory/application-fixed-point.tex#L21) | [mr/content/computability/computability-theory/application-fixed-point.tex:23-29](../mr/content/computability/computability-theory/application-fixed-point.tex#L23) | not yet paginated |
 
 **Chosen rendering/action:** प्रगणन / प्रगणन करणे
 
@@ -7002,7 +7050,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T074 — reduction / reduce one problem to another</strong> (52 occurrences; routine priority)</summary>
+<summary><strong>T074 — reduction / reduce one problem to another</strong> (56 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7058,6 +7106,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T074-OLP-0246-B008 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:27-28](../upstream/content/computability/computability-theory/k-1.tex#L27) | [mr/content/computability/computability-theory/k-1.tex:28-29](../mr/content/computability/computability-theory/k-1.tex#L28) | not yet paginated |
 | T074-OLP-0246-B009 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:30-45](../upstream/content/computability/computability-theory/k-1.tex#L30) | [mr/content/computability/computability-theory/k-1.tex:31-47](../mr/content/computability/computability-theory/k-1.tex#L31) | not yet paginated |
 | T074-OLP-0246-B012 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:70-81](../upstream/content/computability/computability-theory/k-1.tex#L70) | [mr/content/computability/computability-theory/k-1.tex:74-85](../mr/content/computability/computability-theory/k-1.tex#L74) | not yet paginated |
+| T074-OLP-0247-B007 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:24-39](../upstream/content/computability/computability-theory/total.tex#L24) | [mr/content/computability/computability-theory/total.tex:25-42](../mr/content/computability/computability-theory/total.tex#L25) | not yet paginated |
+| T074-OLP-0247-B008 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:41-52](../upstream/content/computability/computability-theory/total.tex#L41) | [mr/content/computability/computability-theory/total.tex:44-56](../mr/content/computability/computability-theory/total.tex#L44) | not yet paginated |
+| T074-OLP-0248-B005 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:12-18](../upstream/content/computability/computability-theory/rice-theorem.tex#L12) | [mr/content/computability/computability-theory/rice-theorem.tex:12-19](../mr/content/computability/computability-theory/rice-theorem.tex#L12) | not yet paginated |
+| T074-OLP-0248-B015 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:97-107](../upstream/content/computability/computability-theory/rice-theorem.tex#L97) | [mr/content/computability/computability-theory/rice-theorem.tex:102-115](../mr/content/computability/computability-theory/rice-theorem.tex#L102) | not yet paginated |
 
 **Chosen rendering/action:** न्यूनीकरण / एक समस्या दुसऱ्या समस्येकडे न्यूनीत करणे
 
@@ -13622,7 +13674,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T198 — corollary</strong> (7 occurrences; routine priority)</summary>
+<summary><strong>T198 — corollary</strong> (8 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13633,6 +13685,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T198-OLP-0189-B026 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:215-221](../upstream/content/model-theory/basics/partial-iso.tex#L215) | [mr/content/model-theory/basics/partial-iso.tex:217-223](../mr/content/model-theory/basics/partial-iso.tex#L217) | 246–248 |
 | T198-OLP-0242-B005 | OLP-0242 ·  | [upstream/content/computability/computability-theory/complement-ce.tex:12-15](../upstream/content/computability/computability-theory/complement-ce.tex#L12) | [mr/content/computability/computability-theory/complement-ce.tex:12-15](../mr/content/computability/computability-theory/complement-ce.tex#L12) | not yet paginated |
 | T198-OLP-0242-B010 | OLP-0242 ·  | [upstream/content/computability/computability-theory/complement-ce.tex:51-54](../upstream/content/computability/computability-theory/complement-ce.tex#L51) | [mr/content/computability/computability-theory/complement-ce.tex:55-58](../mr/content/computability/computability-theory/complement-ce.tex#L55) | not yet paginated |
+| T198-OLP-0248-B016 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:109-120](../upstream/content/computability/computability-theory/rice-theorem.tex#L109) | [mr/content/computability/computability-theory/rice-theorem.tex:117-128](../mr/content/computability/computability-theory/rice-theorem.tex#L117) | not yet paginated |
 
 **Chosen rendering/action:** अनुप्रमेय
 
@@ -14020,7 +14073,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T207 — n-place / arity</strong> (45 occurrences; routine priority)</summary>
+<summary><strong>T207 — n-place / arity</strong> (46 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -14069,6 +14122,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T207-OLP-0232-B007 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:30-41](../upstream/content/computability/computability-theory/s-m-n.tex#L30) | [mr/content/computability/computability-theory/s-m-n.tex:29-41](../mr/content/computability/computability-theory/s-m-n.tex#L29) | not yet paginated |
 | T207-OLP-0233-B007 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:28-40](../upstream/content/computability/computability-theory/universal-part-function.tex#L28) | [mr/content/computability/computability-theory/universal-part-function.tex:29-41](../mr/content/computability/computability-theory/universal-part-function.tex#L29) | not yet paginated |
 | T207-OLP-0246-B010 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:47-62](../upstream/content/computability/computability-theory/k-1.tex#L47) | [mr/content/computability/computability-theory/k-1.tex:49-65](../mr/content/computability/computability-theory/k-1.tex#L49) | not yet paginated |
+| T207-OLP-0249-B015 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L113) | [mr/content/computability/computability-theory/fixed-point-thm.tex:117-139](../mr/content/computability/computability-theory/fixed-point-thm.tex#L117) | not yet paginated |
 
 **Chosen rendering/action:** n-स्थानी / स्थानसंख्या
 
@@ -16019,7 +16073,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T287 — computable / computable structure or function; decidable / decidable relation</strong> (59 occurrences; routine priority)</summary>
+<summary><strong>T287 — computable / computable structure or function; decidable / decidable relation</strong> (95 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16082,6 +16136,42 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T287-OLP-0246-B006 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:14-21](../upstream/content/computability/computability-theory/k-1.tex#L14) | [mr/content/computability/computability-theory/k-1.tex:14-21](../mr/content/computability/computability-theory/k-1.tex#L14) | not yet paginated |
 | T287-OLP-0246-B007 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:23-25](../upstream/content/computability/computability-theory/k-1.tex#L23) | [mr/content/computability/computability-theory/k-1.tex:23-26](../mr/content/computability/computability-theory/k-1.tex#L23) | not yet paginated |
 | T287-OLP-0246-B008 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:27-28](../upstream/content/computability/computability-theory/k-1.tex#L27) | [mr/content/computability/computability-theory/k-1.tex:28-29](../mr/content/computability/computability-theory/k-1.tex#L28) | not yet paginated |
+| T287-OLP-0247-B004 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:9-10](../upstream/content/computability/computability-theory/total.tex#L9) | [mr/content/computability/computability-theory/total.tex:9-10](../mr/content/computability/computability-theory/total.tex#L9) | not yet paginated |
+| T287-OLP-0247-B005 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:12-17](../upstream/content/computability/computability-theory/total.tex#L12) | [mr/content/computability/computability-theory/total.tex:12-18](../mr/content/computability/computability-theory/total.tex#L12) | not yet paginated |
+| T287-OLP-0247-B006 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:19-22](../upstream/content/computability/computability-theory/total.tex#L19) | [mr/content/computability/computability-theory/total.tex:20-23](../mr/content/computability/computability-theory/total.tex#L20) | not yet paginated |
+| T287-OLP-0247-B007 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:24-39](../upstream/content/computability/computability-theory/total.tex#L24) | [mr/content/computability/computability-theory/total.tex:25-42](../mr/content/computability/computability-theory/total.tex#L25) | not yet paginated |
+| T287-OLP-0247-B008 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:41-52](../upstream/content/computability/computability-theory/total.tex#L41) | [mr/content/computability/computability-theory/total.tex:44-56](../mr/content/computability/computability-theory/total.tex#L44) | not yet paginated |
+| T287-OLP-0247-B009 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:54-58](../upstream/content/computability/computability-theory/total.tex#L54) | [mr/content/computability/computability-theory/total.tex:58-62](../mr/content/computability/computability-theory/total.tex#L58) | not yet paginated |
+| T287-OLP-0248-B005 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:12-18](../upstream/content/computability/computability-theory/rice-theorem.tex#L12) | [mr/content/computability/computability-theory/rice-theorem.tex:12-19](../mr/content/computability/computability-theory/rice-theorem.tex#L12) | not yet paginated |
+| T287-OLP-0248-B006 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:20-21](../upstream/content/computability/computability-theory/rice-theorem.tex#L20) | [mr/content/computability/computability-theory/rice-theorem.tex:21-22](../mr/content/computability/computability-theory/rice-theorem.tex#L21) | not yet paginated |
+| T287-OLP-0248-B007 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:23-28](../upstream/content/computability/computability-theory/rice-theorem.tex#L23) | [mr/content/computability/computability-theory/rice-theorem.tex:24-29](../mr/content/computability/computability-theory/rice-theorem.tex#L24) | not yet paginated |
+| T287-OLP-0248-B008 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:30-35](../upstream/content/computability/computability-theory/rice-theorem.tex#L30) | [mr/content/computability/computability-theory/rice-theorem.tex:31-36](../mr/content/computability/computability-theory/rice-theorem.tex#L31) | not yet paginated |
+| T287-OLP-0248-B009 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:37-51](../upstream/content/computability/computability-theory/rice-theorem.tex#L37) | [mr/content/computability/computability-theory/rice-theorem.tex:38-52](../mr/content/computability/computability-theory/rice-theorem.tex#L38) | not yet paginated |
+| T287-OLP-0248-B010 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:53-57](../upstream/content/computability/computability-theory/rice-theorem.tex#L53) | [mr/content/computability/computability-theory/rice-theorem.tex:54-58](../mr/content/computability/computability-theory/rice-theorem.tex#L54) | not yet paginated |
+| T287-OLP-0248-B011 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:59-64](../upstream/content/computability/computability-theory/rice-theorem.tex#L59) | [mr/content/computability/computability-theory/rice-theorem.tex:60-66](../mr/content/computability/computability-theory/rice-theorem.tex#L60) | not yet paginated |
+| T287-OLP-0248-B012 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:66-82](../upstream/content/computability/computability-theory/rice-theorem.tex#L66) | [mr/content/computability/computability-theory/rice-theorem.tex:68-86](../mr/content/computability/computability-theory/rice-theorem.tex#L68) | not yet paginated |
+| T287-OLP-0248-B013 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:84-86](../upstream/content/computability/computability-theory/rice-theorem.tex#L84) | [mr/content/computability/computability-theory/rice-theorem.tex:88-90](../mr/content/computability/computability-theory/rice-theorem.tex#L88) | not yet paginated |
+| T287-OLP-0248-B014 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:88-95](../upstream/content/computability/computability-theory/rice-theorem.tex#L88) | [mr/content/computability/computability-theory/rice-theorem.tex:92-100](../mr/content/computability/computability-theory/rice-theorem.tex#L92) | not yet paginated |
+| T287-OLP-0248-B015 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:97-107](../upstream/content/computability/computability-theory/rice-theorem.tex#L97) | [mr/content/computability/computability-theory/rice-theorem.tex:102-115](../mr/content/computability/computability-theory/rice-theorem.tex#L102) | not yet paginated |
+| T287-OLP-0248-B016 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:109-120](../upstream/content/computability/computability-theory/rice-theorem.tex#L109) | [mr/content/computability/computability-theory/rice-theorem.tex:117-128](../mr/content/computability/computability-theory/rice-theorem.tex#L117) | not yet paginated |
+| T287-OLP-0248-B017 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:122-124](../upstream/content/computability/computability-theory/rice-theorem.tex#L122) | [mr/content/computability/computability-theory/rice-theorem.tex:130-132](../mr/content/computability/computability-theory/rice-theorem.tex#L130) | not yet paginated |
+| T287-OLP-0249-B006 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:18-26](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L18) | [mr/content/computability/computability-theory/fixed-point-thm.tex:18-26](../mr/content/computability/computability-theory/fixed-point-thm.tex#L18) | not yet paginated |
+| T287-OLP-0249-B007 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:28-45](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L28) | [mr/content/computability/computability-theory/fixed-point-thm.tex:28-46](../mr/content/computability/computability-theory/fixed-point-thm.tex#L28) | not yet paginated |
+| T287-OLP-0249-B010 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:60-75](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L60) | [mr/content/computability/computability-theory/fixed-point-thm.tex:61-76](../mr/content/computability/computability-theory/fixed-point-thm.tex#L61) | not yet paginated |
+| T287-OLP-0249-B011 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:77-83](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L77) | [mr/content/computability/computability-theory/fixed-point-thm.tex:78-86](../mr/content/computability/computability-theory/fixed-point-thm.tex#L78) | not yet paginated |
+| T287-OLP-0249-B012 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:85-93](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L85) | [mr/content/computability/computability-theory/fixed-point-thm.tex:88-97](../mr/content/computability/computability-theory/fixed-point-thm.tex#L88) | not yet paginated |
+| T287-OLP-0249-B013 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:95-102](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L95) | [mr/content/computability/computability-theory/fixed-point-thm.tex:99-106](../mr/content/computability/computability-theory/fixed-point-thm.tex#L99) | not yet paginated |
+| T287-OLP-0249-B014 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:104-111](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L104) | [mr/content/computability/computability-theory/fixed-point-thm.tex:108-115](../mr/content/computability/computability-theory/fixed-point-thm.tex#L108) | not yet paginated |
+| T287-OLP-0249-B015 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L113) | [mr/content/computability/computability-theory/fixed-point-thm.tex:117-139](../mr/content/computability/computability-theory/fixed-point-thm.tex#L117) | not yet paginated |
+| T287-OLP-0250-B005 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:12-19](../upstream/content/computability/computability-theory/application-fixed-point.tex#L12) | [mr/content/computability/computability-theory/application-fixed-point.tex:12-21](../mr/content/computability/computability-theory/application-fixed-point.tex#L12) | not yet paginated |
+| T287-OLP-0250-B006 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:21-26](../upstream/content/computability/computability-theory/application-fixed-point.tex#L21) | [mr/content/computability/computability-theory/application-fixed-point.tex:23-29](../mr/content/computability/computability-theory/application-fixed-point.tex#L23) | not yet paginated |
+| T287-OLP-0250-B007 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:28-32](../upstream/content/computability/computability-theory/application-fixed-point.tex#L28) | [mr/content/computability/computability-theory/application-fixed-point.tex:31-35](../mr/content/computability/computability-theory/application-fixed-point.tex#L31) | not yet paginated |
+| T287-OLP-0250-B008 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:34-60](../upstream/content/computability/computability-theory/application-fixed-point.tex#L34) | [mr/content/computability/computability-theory/application-fixed-point.tex:37-65](../mr/content/computability/computability-theory/application-fixed-point.tex#L37) | not yet paginated |
+| T287-OLP-0250-B009 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:62-68](../upstream/content/computability/computability-theory/application-fixed-point.tex#L62) | [mr/content/computability/computability-theory/application-fixed-point.tex:67-77](../mr/content/computability/computability-theory/application-fixed-point.tex#L67) | not yet paginated |
+| T287-OLP-0251-B005 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:12-32](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L12) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:12-33](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L12) | not yet paginated |
+| T287-OLP-0254-B005 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:12-27](../upstream/content/turing-machines/machines-computations/introduction.tex#L12) | [mr/content/turing-machines/machines-computations/introduction.tex:12-26](../mr/content/turing-machines/machines-computations/introduction.tex#L12) | not yet paginated |
+| T287-OLP-0254-B009 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:86-108](../upstream/content/turing-machines/machines-computations/introduction.tex#L86) | [mr/content/turing-machines/machines-computations/introduction.tex:82-102](../mr/content/turing-machines/machines-computations/introduction.tex#L82) | not yet paginated |
+| T287-OLP-0254-B010 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:110-128](../upstream/content/turing-machines/machines-computations/introduction.tex#L110) | [mr/content/turing-machines/machines-computations/introduction.tex:104-124](../mr/content/turing-machines/machines-computations/introduction.tex#L104) | not yet paginated |
 
 **Chosen rendering/action:** संगणनक्षम / संगणनक्षम रचना किंवा फलन; निर्णेय / निर्णेय संबंध
 
@@ -16092,7 +16182,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T288 — Turing machine / primitive recursion</strong> (45 occurrences; medium priority)</summary>
+<summary><strong>T288 — Turing machine / primitive recursion</strong> (65 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16141,6 +16231,26 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T288-OLP-0237-B008 | OLP-0237 ·  | [upstream/content/computability/computability-theory/computable-sets.tex:32-40](../upstream/content/computability/computability-theory/computable-sets.tex#L32) | [mr/content/computability/computability-theory/computable-sets.tex:33-39](../mr/content/computability/computability-theory/computable-sets.tex#L33) | not yet paginated |
 | T288-OLP-0239-B013 | OLP-0239 ·  | [upstream/content/computability/computability-theory/equiv-ce-defs.tex:88-105](../upstream/content/computability/computability-theory/equiv-ce-defs.tex#L88) | [mr/content/computability/computability-theory/equiv-ce-defs.tex:99-121](../mr/content/computability/computability-theory/equiv-ce-defs.tex#L99) | not yet paginated |
 | T288-OLP-0239-B014 | OLP-0239 ·  | [upstream/content/computability/computability-theory/equiv-ce-defs.tex:107-127](../upstream/content/computability/computability-theory/equiv-ce-defs.tex#L107) | [mr/content/computability/computability-theory/equiv-ce-defs.tex:123-143](../mr/content/computability/computability-theory/equiv-ce-defs.tex#L123) | not yet paginated |
+| T288-OLP-0252-B004 | OLP-0252 ·  | [upstream/content/turing-machines/turing-machines.tex:7-7](../upstream/content/turing-machines/turing-machines.tex#L7) | [mr/content/turing-machines/turing-machines.tex:7-7](../mr/content/turing-machines/turing-machines.tex#L7) | not yet paginated |
+| T288-OLP-0253-B004 | OLP-0253 ·  | [upstream/content/turing-machines/machines-computations/machines-computations.tex:8-8](../upstream/content/turing-machines/machines-computations/machines-computations.tex#L8) | [mr/content/turing-machines/machines-computations/machines-computations.tex:8-8](../mr/content/turing-machines/machines-computations/machines-computations.tex#L8) | not yet paginated |
+| T288-OLP-0254-B005 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:12-27](../upstream/content/turing-machines/machines-computations/introduction.tex#L12) | [mr/content/turing-machines/machines-computations/introduction.tex:12-26](../mr/content/turing-machines/machines-computations/introduction.tex#L12) | not yet paginated |
+| T288-OLP-0254-B006 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:29-53](../upstream/content/turing-machines/machines-computations/introduction.tex#L29) | [mr/content/turing-machines/machines-computations/introduction.tex:28-50](../mr/content/turing-machines/machines-computations/introduction.tex#L28) | not yet paginated |
+| T288-OLP-0254-B007 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:55-75](../upstream/content/turing-machines/machines-computations/introduction.tex#L55) | [mr/content/turing-machines/machines-computations/introduction.tex:52-70](../mr/content/turing-machines/machines-computations/introduction.tex#L52) | not yet paginated |
+| T288-OLP-0254-B009 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:86-108](../upstream/content/turing-machines/machines-computations/introduction.tex#L86) | [mr/content/turing-machines/machines-computations/introduction.tex:82-102](../mr/content/turing-machines/machines-computations/introduction.tex#L82) | not yet paginated |
+| T288-OLP-0254-B010 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:110-128](../upstream/content/turing-machines/machines-computations/introduction.tex#L110) | [mr/content/turing-machines/machines-computations/introduction.tex:104-124](../mr/content/turing-machines/machines-computations/introduction.tex#L104) | not yet paginated |
+| T288-OLP-0255-B004 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:9-10](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L9) | [mr/content/turing-machines/machines-computations/representing-tms.tex:9-10](../mr/content/turing-machines/machines-computations/representing-tms.tex#L9) | not yet paginated |
+| T288-OLP-0255-B005 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:12-23](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L12) | [mr/content/turing-machines/machines-computations/representing-tms.tex:12-22](../mr/content/turing-machines/machines-computations/representing-tms.tex#L12) | not yet paginated |
+| T288-OLP-0255-B007 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:28-37](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L28) | [mr/content/turing-machines/machines-computations/representing-tms.tex:27-36](../mr/content/turing-machines/machines-computations/representing-tms.tex#L27) | not yet paginated |
+| T288-OLP-0255-B008 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:39-47](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L39) | [mr/content/turing-machines/machines-computations/representing-tms.tex:38-45](../mr/content/turing-machines/machines-computations/representing-tms.tex#L38) | not yet paginated |
+| T288-OLP-0255-B022 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:201-207](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L201) | [mr/content/turing-machines/machines-computations/representing-tms.tex:193-199](../mr/content/turing-machines/machines-computations/representing-tms.tex#L193) | not yet paginated |
+| T288-OLP-0256-B004 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:9-10](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L9) | [mr/content/turing-machines/machines-computations/turing-machines.tex:9-10](../mr/content/turing-machines/machines-computations/turing-machines.tex#L9) | not yet paginated |
+| T288-OLP-0256-B005 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:12-20](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L12) | [mr/content/turing-machines/machines-computations/turing-machines.tex:12-19](../mr/content/turing-machines/machines-computations/turing-machines.tex#L12) | not yet paginated |
+| T288-OLP-0256-B006 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:22-35](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L22) | [mr/content/turing-machines/machines-computations/turing-machines.tex:21-34](../mr/content/turing-machines/machines-computations/turing-machines.tex#L21) | not yet paginated |
+| T288-OLP-0256-B007 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:37-48](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L37) | [mr/content/turing-machines/machines-computations/turing-machines.tex:36-48](../mr/content/turing-machines/machines-computations/turing-machines.tex#L36) | not yet paginated |
+| T288-OLP-0256-B008 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:50-60](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L50) | [mr/content/turing-machines/machines-computations/turing-machines.tex:50-60](../mr/content/turing-machines/machines-computations/turing-machines.tex#L50) | not yet paginated |
+| T288-OLP-0257-B005 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:12-23](../upstream/content/turing-machines/machines-computations/configuration.tex#L12) | [mr/content/turing-machines/machines-computations/configuration.tex:12-23](../mr/content/turing-machines/machines-computations/configuration.tex#L12) | not yet paginated |
+| T288-OLP-0257-B006 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:25-38](../upstream/content/turing-machines/machines-computations/configuration.tex#L25) | [mr/content/turing-machines/machines-computations/configuration.tex:25-39](../mr/content/turing-machines/machines-computations/configuration.tex#L25) | not yet paginated |
+| T288-OLP-0257-B007 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:40-49](../upstream/content/turing-machines/machines-computations/configuration.tex#L40) | [mr/content/turing-machines/machines-computations/configuration.tex:41-51](../mr/content/turing-machines/machines-computations/configuration.tex#L41) | not yet paginated |
 
 **Chosen rendering/action:** ट्यूरिंग यंत्र / आदिम पुनरावर्तन
 
@@ -16393,7 +16503,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T301 — characteristic function (of a set or relation)</strong> (17 occurrences; routine priority)</summary>
+<summary><strong>T301 — characteristic function (of a set or relation)</strong> (21 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16414,6 +16524,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T301-OLP-0238-B008 | OLP-0238 ·  | [upstream/content/computability/computability-theory/ce-sets.tex:40-51](../upstream/content/computability/computability-theory/ce-sets.tex#L40) | [mr/content/computability/computability-theory/ce-sets.tex:38-49](../mr/content/computability/computability-theory/ce-sets.tex#L38) | not yet paginated |
 | T301-OLP-0240-B011 | OLP-0240 ·  | [upstream/content/computability/computability-theory/non-comp-set.tex:47-58](../upstream/content/computability/computability-theory/non-comp-set.tex#L47) | [mr/content/computability/computability-theory/non-comp-set.tex:49-61](../mr/content/computability/computability-theory/non-comp-set.tex#L49) | not yet paginated |
 | T301-OLP-0244-B013 | OLP-0244 ·  | [upstream/content/computability/computability-theory/prop-reduce.tex:68-71](../upstream/content/computability/computability-theory/prop-reduce.tex#L68) | [mr/content/computability/computability-theory/prop-reduce.tex:77-82](../mr/content/computability/computability-theory/prop-reduce.tex#L77) | not yet paginated |
+| T301-OLP-0250-B006 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:21-26](../upstream/content/computability/computability-theory/application-fixed-point.tex#L21) | [mr/content/computability/computability-theory/application-fixed-point.tex:23-29](../mr/content/computability/computability-theory/application-fixed-point.tex#L23) | not yet paginated |
+| T301-OLP-0250-B007 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:28-32](../upstream/content/computability/computability-theory/application-fixed-point.tex#L28) | [mr/content/computability/computability-theory/application-fixed-point.tex:31-35](../mr/content/computability/computability-theory/application-fixed-point.tex#L31) | not yet paginated |
+| T301-OLP-0250-B008 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:34-60](../upstream/content/computability/computability-theory/application-fixed-point.tex#L34) | [mr/content/computability/computability-theory/application-fixed-point.tex:37-65](../mr/content/computability/computability-theory/application-fixed-point.tex#L37) | not yet paginated |
+| T301-OLP-0250-B009 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:62-68](../upstream/content/computability/computability-theory/application-fixed-point.tex#L62) | [mr/content/computability/computability-theory/application-fixed-point.tex:67-77](../mr/content/computability/computability-theory/application-fixed-point.tex#L67) | not yet paginated |
 
 **Chosen rendering/action:** जातिबोधक फल
 
@@ -16553,7 +16667,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T303 — unbounded search / total (everywhere defined)</strong> (24 occurrences; medium priority)</summary>
+<summary><strong>T303 — unbounded search / total (everywhere defined)</strong> (33 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16581,6 +16695,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T303-OLP-0240-B007 | OLP-0240 ·  | [upstream/content/computability/computability-theory/non-comp-set.tex:21-30](../upstream/content/computability/computability-theory/non-comp-set.tex#L21) | [mr/content/computability/computability-theory/non-comp-set.tex:21-30](../mr/content/computability/computability-theory/non-comp-set.tex#L21) | not yet paginated |
 | T303-OLP-0240-B012 | OLP-0240 ·  | [upstream/content/computability/computability-theory/non-comp-set.tex:60-61](../upstream/content/computability/computability-theory/non-comp-set.tex#L60) | [mr/content/computability/computability-theory/non-comp-set.tex:63-65](../mr/content/computability/computability-theory/non-comp-set.tex#L63) | not yet paginated |
 | T303-OLP-0242-B008 | OLP-0242 ·  | [upstream/content/computability/computability-theory/complement-ce.tex:28-42](../upstream/content/computability/computability-theory/complement-ce.tex#L28) | [mr/content/computability/computability-theory/complement-ce.tex:29-45](../mr/content/computability/computability-theory/complement-ce.tex#L29) | not yet paginated |
+| T303-OLP-0247-B004 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:9-10](../upstream/content/computability/computability-theory/total.tex#L9) | [mr/content/computability/computability-theory/total.tex:9-10](../mr/content/computability/computability-theory/total.tex#L9) | not yet paginated |
+| T303-OLP-0247-B005 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:12-17](../upstream/content/computability/computability-theory/total.tex#L12) | [mr/content/computability/computability-theory/total.tex:12-18](../mr/content/computability/computability-theory/total.tex#L12) | not yet paginated |
+| T303-OLP-0247-B006 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:19-22](../upstream/content/computability/computability-theory/total.tex#L19) | [mr/content/computability/computability-theory/total.tex:20-23](../mr/content/computability/computability-theory/total.tex#L20) | not yet paginated |
+| T303-OLP-0247-B007 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:24-39](../upstream/content/computability/computability-theory/total.tex#L24) | [mr/content/computability/computability-theory/total.tex:25-42](../mr/content/computability/computability-theory/total.tex#L25) | not yet paginated |
+| T303-OLP-0247-B008 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:41-52](../upstream/content/computability/computability-theory/total.tex#L41) | [mr/content/computability/computability-theory/total.tex:44-56](../mr/content/computability/computability-theory/total.tex#L44) | not yet paginated |
+| T303-OLP-0248-B005 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:12-18](../upstream/content/computability/computability-theory/rice-theorem.tex#L12) | [mr/content/computability/computability-theory/rice-theorem.tex:12-19](../mr/content/computability/computability-theory/rice-theorem.tex#L12) | not yet paginated |
+| T303-OLP-0248-B012 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:66-82](../upstream/content/computability/computability-theory/rice-theorem.tex#L66) | [mr/content/computability/computability-theory/rice-theorem.tex:68-86](../mr/content/computability/computability-theory/rice-theorem.tex#L68) | not yet paginated |
+| T303-OLP-0248-B016 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:109-120](../upstream/content/computability/computability-theory/rice-theorem.tex#L109) | [mr/content/computability/computability-theory/rice-theorem.tex:117-128](../mr/content/computability/computability-theory/rice-theorem.tex#L117) | not yet paginated |
+| T303-OLP-0251-B006 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:34-47](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L34) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:35-49](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L35) | not yet paginated |
 
 **Chosen rendering/action:** अपरिबद्ध शोध / सर्वत्र परिभाषित
 
@@ -16591,7 +16714,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T304 — lambda calculus / simulate a model of computation</strong> (5 occurrences; high priority)</summary>
+<summary><strong>T304 — lambda calculus / simulate a model of computation</strong> (8 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16600,6 +16723,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T304-OLP-0223-B011 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L88) | [mr/content/computability/recursive-functions/non-pr-functions.tex:85-92](../mr/content/computability/recursive-functions/non-pr-functions.tex#L85) | not yet paginated |
 | T304-OLP-0229-B009 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:50-66](../upstream/content/computability/computability-theory/introduction.tex#L50) | [mr/content/computability/computability-theory/introduction.tex:51-64](../mr/content/computability/computability-theory/introduction.tex#L51) | not yet paginated |
 | T304-OLP-0230-B005 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:12-31](../upstream/content/computability/computability-theory/coding-computations.tex#L12) | [mr/content/computability/computability-theory/coding-computations.tex:12-28](../mr/content/computability/computability-theory/coding-computations.tex#L12) | not yet paginated |
+| T304-OLP-0249-B020 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:210-241](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L210) | [mr/content/computability/computability-theory/fixed-point-thm.tex:217-251](../mr/content/computability/computability-theory/fixed-point-thm.tex#L217) | not yet paginated |
+| T304-OLP-0254-B005 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:12-27](../upstream/content/turing-machines/machines-computations/introduction.tex#L12) | [mr/content/turing-machines/machines-computations/introduction.tex:12-26](../mr/content/turing-machines/machines-computations/introduction.tex#L12) | not yet paginated |
+| T304-OLP-0254-B009 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:86-108](../upstream/content/turing-machines/machines-computations/introduction.tex#L86) | [mr/content/turing-machines/machines-computations/introduction.tex:82-102](../mr/content/turing-machines/machines-computations/introduction.tex#L82) | not yet paginated |
 
 **Chosen rendering/action:** लॅम्डा कलन / संगणन-प्रतिमानाचे अनुकरण करणे
 
@@ -16784,7 +16910,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T312 — finite sequence / numeric sequence code / empty sequence / length / append / concatenate / subsequence / sequence bound</strong> (31 occurrences; routine priority)</summary>
+<summary><strong>T312 — finite sequence / numeric sequence code / empty sequence / length / append / concatenate / subsequence / sequence bound</strong> (37 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16819,6 +16945,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T312-OLP-0233-B007 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:28-40](../upstream/content/computability/computability-theory/universal-part-function.tex#L28) | [mr/content/computability/computability-theory/universal-part-function.tex:29-41](../mr/content/computability/computability-theory/universal-part-function.tex#L29) | not yet paginated |
 | T312-OLP-0239-B010 | OLP-0239 ·  | [upstream/content/computability/computability-theory/equiv-ce-defs.tex:54-72](../upstream/content/computability/computability-theory/equiv-ce-defs.tex#L54) | [mr/content/computability/computability-theory/equiv-ce-defs.tex:58-79](../mr/content/computability/computability-theory/equiv-ce-defs.tex#L58) | not yet paginated |
 | T312-OLP-0240-B007 | OLP-0240 ·  | [upstream/content/computability/computability-theory/non-comp-set.tex:21-30](../upstream/content/computability/computability-theory/non-comp-set.tex#L21) | [mr/content/computability/computability-theory/non-comp-set.tex:21-30](../mr/content/computability/computability-theory/non-comp-set.tex#L21) | not yet paginated |
+| T312-OLP-0257-B005 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:12-23](../upstream/content/turing-machines/machines-computations/configuration.tex#L12) | [mr/content/turing-machines/machines-computations/configuration.tex:12-23](../mr/content/turing-machines/machines-computations/configuration.tex#L12) | not yet paginated |
+| T312-OLP-0257-B006 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:25-38](../upstream/content/turing-machines/machines-computations/configuration.tex#L25) | [mr/content/turing-machines/machines-computations/configuration.tex:25-39](../mr/content/turing-machines/machines-computations/configuration.tex#L25) | not yet paginated |
+| T312-OLP-0257-B007 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:40-49](../upstream/content/turing-machines/machines-computations/configuration.tex#L40) | [mr/content/turing-machines/machines-computations/configuration.tex:41-51](../mr/content/turing-machines/machines-computations/configuration.tex#L41) | not yet paginated |
+| T312-OLP-0257-B008 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:51-56](../upstream/content/turing-machines/machines-computations/configuration.tex#L51) | [mr/content/turing-machines/machines-computations/configuration.tex:53-63](../mr/content/turing-machines/machines-computations/configuration.tex#L53) | not yet paginated |
+| T312-OLP-0257-B009 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:58-61](../upstream/content/turing-machines/machines-computations/configuration.tex#L58) | [mr/content/turing-machines/machines-computations/configuration.tex:65-69](../mr/content/turing-machines/machines-computations/configuration.tex#L65) | not yet paginated |
+| T312-OLP-0257-B011 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:84-87](../upstream/content/turing-machines/machines-computations/configuration.tex#L84) | [mr/content/turing-machines/machines-computations/configuration.tex:92-96](../mr/content/turing-machines/machines-computations/configuration.tex#L92) | not yet paginated |
 
 **Chosen rendering/action:** सांत क्रमिका / क्रमिकेचा संख्यात्मक संकेतांक / रिकामी क्रमिका / लांबी / शेवटी जोडणे / जोडणी करणे / उपक्रमिका / क्रमिका-परिबंध
 
@@ -16883,11 +17015,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T316 — remainder function</strong> (1 occurrence; routine priority)</summary>
+<summary><strong>T316 — remainder function</strong> (2 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T316-OLP-0222-B006 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:50-55](../upstream/content/computability/recursive-functions/other-recursions.tex#L50) | [mr/content/computability/recursive-functions/other-recursions.tex:48-53](../mr/content/computability/recursive-functions/other-recursions.tex#L48) | not yet paginated |
+| T316-OLP-0251-B006 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:34-47](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L34) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:35-49](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L35) | not yet paginated |
 
 **Chosen rendering/action:** शेष फल
 
@@ -16936,7 +17069,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T319 — defined or undefined at an input / partial equality / unbounded mu-search operator / non-halting computation</strong> (25 occurrences; routine priority)</summary>
+<summary><strong>T319 — defined or undefined at an input / partial equality / unbounded mu-search operator / non-halting computation</strong> (58 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16965,6 +17098,39 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T319-OLP-0246-B010 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:47-62](../upstream/content/computability/computability-theory/k-1.tex#L47) | [mr/content/computability/computability-theory/k-1.tex:49-65](../mr/content/computability/computability-theory/k-1.tex#L49) | not yet paginated |
 | T319-OLP-0246-B011 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:64-68](../upstream/content/computability/computability-theory/k-1.tex#L64) | [mr/content/computability/computability-theory/k-1.tex:67-72](../mr/content/computability/computability-theory/k-1.tex#L67) | not yet paginated |
 | T319-OLP-0246-B012 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:70-81](../upstream/content/computability/computability-theory/k-1.tex#L70) | [mr/content/computability/computability-theory/k-1.tex:74-85](../mr/content/computability/computability-theory/k-1.tex#L74) | not yet paginated |
+| T319-OLP-0247-B005 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:12-17](../upstream/content/computability/computability-theory/total.tex#L12) | [mr/content/computability/computability-theory/total.tex:12-18](../mr/content/computability/computability-theory/total.tex#L12) | not yet paginated |
+| T319-OLP-0247-B007 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:24-39](../upstream/content/computability/computability-theory/total.tex#L24) | [mr/content/computability/computability-theory/total.tex:25-42](../mr/content/computability/computability-theory/total.tex#L25) | not yet paginated |
+| T319-OLP-0247-B008 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:41-52](../upstream/content/computability/computability-theory/total.tex#L41) | [mr/content/computability/computability-theory/total.tex:44-56](../mr/content/computability/computability-theory/total.tex#L44) | not yet paginated |
+| T319-OLP-0248-B005 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:12-18](../upstream/content/computability/computability-theory/rice-theorem.tex#L12) | [mr/content/computability/computability-theory/rice-theorem.tex:12-19](../mr/content/computability/computability-theory/rice-theorem.tex#L12) | not yet paginated |
+| T319-OLP-0248-B006 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:20-21](../upstream/content/computability/computability-theory/rice-theorem.tex#L20) | [mr/content/computability/computability-theory/rice-theorem.tex:21-22](../mr/content/computability/computability-theory/rice-theorem.tex#L21) | not yet paginated |
+| T319-OLP-0248-B007 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:23-28](../upstream/content/computability/computability-theory/rice-theorem.tex#L23) | [mr/content/computability/computability-theory/rice-theorem.tex:24-29](../mr/content/computability/computability-theory/rice-theorem.tex#L24) | not yet paginated |
+| T319-OLP-0248-B009 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:37-51](../upstream/content/computability/computability-theory/rice-theorem.tex#L37) | [mr/content/computability/computability-theory/rice-theorem.tex:38-52](../mr/content/computability/computability-theory/rice-theorem.tex#L38) | not yet paginated |
+| T319-OLP-0248-B010 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:53-57](../upstream/content/computability/computability-theory/rice-theorem.tex#L53) | [mr/content/computability/computability-theory/rice-theorem.tex:54-58](../mr/content/computability/computability-theory/rice-theorem.tex#L54) | not yet paginated |
+| T319-OLP-0248-B011 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:59-64](../upstream/content/computability/computability-theory/rice-theorem.tex#L59) | [mr/content/computability/computability-theory/rice-theorem.tex:60-66](../mr/content/computability/computability-theory/rice-theorem.tex#L60) | not yet paginated |
+| T319-OLP-0248-B012 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:66-82](../upstream/content/computability/computability-theory/rice-theorem.tex#L66) | [mr/content/computability/computability-theory/rice-theorem.tex:68-86](../mr/content/computability/computability-theory/rice-theorem.tex#L68) | not yet paginated |
+| T319-OLP-0248-B013 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:84-86](../upstream/content/computability/computability-theory/rice-theorem.tex#L84) | [mr/content/computability/computability-theory/rice-theorem.tex:88-90](../mr/content/computability/computability-theory/rice-theorem.tex#L88) | not yet paginated |
+| T319-OLP-0248-B014 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:88-95](../upstream/content/computability/computability-theory/rice-theorem.tex#L88) | [mr/content/computability/computability-theory/rice-theorem.tex:92-100](../mr/content/computability/computability-theory/rice-theorem.tex#L92) | not yet paginated |
+| T319-OLP-0248-B015 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:97-107](../upstream/content/computability/computability-theory/rice-theorem.tex#L97) | [mr/content/computability/computability-theory/rice-theorem.tex:102-115](../mr/content/computability/computability-theory/rice-theorem.tex#L102) | not yet paginated |
+| T319-OLP-0248-B016 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:109-120](../upstream/content/computability/computability-theory/rice-theorem.tex#L109) | [mr/content/computability/computability-theory/rice-theorem.tex:117-128](../mr/content/computability/computability-theory/rice-theorem.tex#L117) | not yet paginated |
+| T319-OLP-0249-B006 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:18-26](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L18) | [mr/content/computability/computability-theory/fixed-point-thm.tex:18-26](../mr/content/computability/computability-theory/fixed-point-thm.tex#L18) | not yet paginated |
+| T319-OLP-0249-B007 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:28-45](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L28) | [mr/content/computability/computability-theory/fixed-point-thm.tex:28-46](../mr/content/computability/computability-theory/fixed-point-thm.tex#L28) | not yet paginated |
+| T319-OLP-0249-B008 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:47-51](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L47) | [mr/content/computability/computability-theory/fixed-point-thm.tex:48-52](../mr/content/computability/computability-theory/fixed-point-thm.tex#L48) | not yet paginated |
+| T319-OLP-0249-B010 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:60-75](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L60) | [mr/content/computability/computability-theory/fixed-point-thm.tex:61-76](../mr/content/computability/computability-theory/fixed-point-thm.tex#L61) | not yet paginated |
+| T319-OLP-0249-B011 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:77-83](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L77) | [mr/content/computability/computability-theory/fixed-point-thm.tex:78-86](../mr/content/computability/computability-theory/fixed-point-thm.tex#L78) | not yet paginated |
+| T319-OLP-0249-B012 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:85-93](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L85) | [mr/content/computability/computability-theory/fixed-point-thm.tex:88-97](../mr/content/computability/computability-theory/fixed-point-thm.tex#L88) | not yet paginated |
+| T319-OLP-0249-B015 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L113) | [mr/content/computability/computability-theory/fixed-point-thm.tex:117-139](../mr/content/computability/computability-theory/fixed-point-thm.tex#L117) | not yet paginated |
+| T319-OLP-0249-B016 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:135-149](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L135) | [mr/content/computability/computability-theory/fixed-point-thm.tex:141-155](../mr/content/computability/computability-theory/fixed-point-thm.tex#L141) | not yet paginated |
+| T319-OLP-0250-B005 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:12-19](../upstream/content/computability/computability-theory/application-fixed-point.tex#L12) | [mr/content/computability/computability-theory/application-fixed-point.tex:12-21](../mr/content/computability/computability-theory/application-fixed-point.tex#L12) | not yet paginated |
+| T319-OLP-0250-B007 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:28-32](../upstream/content/computability/computability-theory/application-fixed-point.tex#L28) | [mr/content/computability/computability-theory/application-fixed-point.tex:31-35](../mr/content/computability/computability-theory/application-fixed-point.tex#L31) | not yet paginated |
+| T319-OLP-0250-B008 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:34-60](../upstream/content/computability/computability-theory/application-fixed-point.tex#L34) | [mr/content/computability/computability-theory/application-fixed-point.tex:37-65](../mr/content/computability/computability-theory/application-fixed-point.tex#L37) | not yet paginated |
+| T319-OLP-0250-B009 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:62-68](../upstream/content/computability/computability-theory/application-fixed-point.tex#L62) | [mr/content/computability/computability-theory/application-fixed-point.tex:67-77](../mr/content/computability/computability-theory/application-fixed-point.tex#L67) | not yet paginated |
+| T319-OLP-0251-B005 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:12-32](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L12) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:12-33](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L12) | not yet paginated |
+| T319-OLP-0251-B006 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:34-47](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L34) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:35-49](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L35) | not yet paginated |
+| T319-OLP-0254-B006 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:29-53](../upstream/content/turing-machines/machines-computations/introduction.tex#L29) | [mr/content/turing-machines/machines-computations/introduction.tex:28-50](../mr/content/turing-machines/machines-computations/introduction.tex#L28) | not yet paginated |
+| T319-OLP-0254-B008 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:77-84](../upstream/content/turing-machines/machines-computations/introduction.tex#L77) | [mr/content/turing-machines/machines-computations/introduction.tex:72-80](../mr/content/turing-machines/machines-computations/introduction.tex#L72) | not yet paginated |
+| T319-OLP-0256-B006 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:22-35](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L22) | [mr/content/turing-machines/machines-computations/turing-machines.tex:21-34](../mr/content/turing-machines/machines-computations/turing-machines.tex#L21) | not yet paginated |
+| T319-OLP-0257-B010 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:63-82](../upstream/content/turing-machines/machines-computations/configuration.tex#L63) | [mr/content/turing-machines/machines-computations/configuration.tex:71-90](../mr/content/turing-machines/machines-computations/configuration.tex#L71) | not yet paginated |
+| T319-OLP-0257-B012 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:89-95](../upstream/content/turing-machines/machines-computations/configuration.tex#L89) | [mr/content/turing-machines/machines-computations/configuration.tex:98-110](../mr/content/turing-machines/machines-computations/configuration.tex#L98) | not yet paginated |
 
 **Chosen rendering/action:** आदानावर परिभाषित किंवा अपरिभाषित / आंशिक समता / अपरिबद्ध μ-शोध परिकर्मी / न थांबणारे संगणन
 
@@ -16990,7 +17156,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T321 — Kleene's Normal Form Theorem / index of a partial recursive function / computation code</strong> (41 occurrences; routine priority)</summary>
+<summary><strong>T321 — Kleene's Normal Form Theorem / index of a partial recursive function / computation code</strong> (68 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17035,6 +17201,33 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T321-OLP-0246-B010 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:47-62](../upstream/content/computability/computability-theory/k-1.tex#L47) | [mr/content/computability/computability-theory/k-1.tex:49-65](../mr/content/computability/computability-theory/k-1.tex#L49) | not yet paginated |
 | T321-OLP-0246-B011 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:64-68](../upstream/content/computability/computability-theory/k-1.tex#L64) | [mr/content/computability/computability-theory/k-1.tex:67-72](../mr/content/computability/computability-theory/k-1.tex#L67) | not yet paginated |
 | T321-OLP-0246-B012 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:70-81](../upstream/content/computability/computability-theory/k-1.tex#L70) | [mr/content/computability/computability-theory/k-1.tex:74-85](../mr/content/computability/computability-theory/k-1.tex#L74) | not yet paginated |
+| T321-OLP-0247-B005 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:12-17](../upstream/content/computability/computability-theory/total.tex#L12) | [mr/content/computability/computability-theory/total.tex:12-18](../mr/content/computability/computability-theory/total.tex#L12) | not yet paginated |
+| T321-OLP-0247-B007 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:24-39](../upstream/content/computability/computability-theory/total.tex#L24) | [mr/content/computability/computability-theory/total.tex:25-42](../mr/content/computability/computability-theory/total.tex#L25) | not yet paginated |
+| T321-OLP-0247-B008 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:41-52](../upstream/content/computability/computability-theory/total.tex#L41) | [mr/content/computability/computability-theory/total.tex:44-56](../mr/content/computability/computability-theory/total.tex#L44) | not yet paginated |
+| T321-OLP-0248-B005 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:12-18](../upstream/content/computability/computability-theory/rice-theorem.tex#L12) | [mr/content/computability/computability-theory/rice-theorem.tex:12-19](../mr/content/computability/computability-theory/rice-theorem.tex#L12) | not yet paginated |
+| T321-OLP-0248-B006 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:20-21](../upstream/content/computability/computability-theory/rice-theorem.tex#L20) | [mr/content/computability/computability-theory/rice-theorem.tex:21-22](../mr/content/computability/computability-theory/rice-theorem.tex#L21) | not yet paginated |
+| T321-OLP-0248-B007 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:23-28](../upstream/content/computability/computability-theory/rice-theorem.tex#L23) | [mr/content/computability/computability-theory/rice-theorem.tex:24-29](../mr/content/computability/computability-theory/rice-theorem.tex#L24) | not yet paginated |
+| T321-OLP-0248-B008 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:30-35](../upstream/content/computability/computability-theory/rice-theorem.tex#L30) | [mr/content/computability/computability-theory/rice-theorem.tex:31-36](../mr/content/computability/computability-theory/rice-theorem.tex#L31) | not yet paginated |
+| T321-OLP-0248-B010 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:53-57](../upstream/content/computability/computability-theory/rice-theorem.tex#L53) | [mr/content/computability/computability-theory/rice-theorem.tex:54-58](../mr/content/computability/computability-theory/rice-theorem.tex#L54) | not yet paginated |
+| T321-OLP-0248-B012 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:66-82](../upstream/content/computability/computability-theory/rice-theorem.tex#L66) | [mr/content/computability/computability-theory/rice-theorem.tex:68-86](../mr/content/computability/computability-theory/rice-theorem.tex#L68) | not yet paginated |
+| T321-OLP-0248-B014 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:88-95](../upstream/content/computability/computability-theory/rice-theorem.tex#L88) | [mr/content/computability/computability-theory/rice-theorem.tex:92-100](../mr/content/computability/computability-theory/rice-theorem.tex#L92) | not yet paginated |
+| T321-OLP-0248-B015 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:97-107](../upstream/content/computability/computability-theory/rice-theorem.tex#L97) | [mr/content/computability/computability-theory/rice-theorem.tex:102-115](../mr/content/computability/computability-theory/rice-theorem.tex#L102) | not yet paginated |
+| T321-OLP-0249-B005 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:12-16](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L12) | [mr/content/computability/computability-theory/fixed-point-thm.tex:12-16](../mr/content/computability/computability-theory/fixed-point-thm.tex#L12) | not yet paginated |
+| T321-OLP-0249-B006 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:18-26](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L18) | [mr/content/computability/computability-theory/fixed-point-thm.tex:18-26](../mr/content/computability/computability-theory/fixed-point-thm.tex#L18) | not yet paginated |
+| T321-OLP-0249-B007 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:28-45](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L28) | [mr/content/computability/computability-theory/fixed-point-thm.tex:28-46](../mr/content/computability/computability-theory/fixed-point-thm.tex#L28) | not yet paginated |
+| T321-OLP-0249-B008 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:47-51](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L47) | [mr/content/computability/computability-theory/fixed-point-thm.tex:48-52](../mr/content/computability/computability-theory/fixed-point-thm.tex#L48) | not yet paginated |
+| T321-OLP-0249-B010 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:60-75](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L60) | [mr/content/computability/computability-theory/fixed-point-thm.tex:61-76](../mr/content/computability/computability-theory/fixed-point-thm.tex#L61) | not yet paginated |
+| T321-OLP-0249-B011 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:77-83](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L77) | [mr/content/computability/computability-theory/fixed-point-thm.tex:78-86](../mr/content/computability/computability-theory/fixed-point-thm.tex#L78) | not yet paginated |
+| T321-OLP-0249-B012 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:85-93](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L85) | [mr/content/computability/computability-theory/fixed-point-thm.tex:88-97](../mr/content/computability/computability-theory/fixed-point-thm.tex#L88) | not yet paginated |
+| T321-OLP-0249-B013 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:95-102](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L95) | [mr/content/computability/computability-theory/fixed-point-thm.tex:99-106](../mr/content/computability/computability-theory/fixed-point-thm.tex#L99) | not yet paginated |
+| T321-OLP-0249-B014 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:104-111](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L104) | [mr/content/computability/computability-theory/fixed-point-thm.tex:108-115](../mr/content/computability/computability-theory/fixed-point-thm.tex#L108) | not yet paginated |
+| T321-OLP-0249-B015 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L113) | [mr/content/computability/computability-theory/fixed-point-thm.tex:117-139](../mr/content/computability/computability-theory/fixed-point-thm.tex#L117) | not yet paginated |
+| T321-OLP-0249-B016 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:135-149](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L135) | [mr/content/computability/computability-theory/fixed-point-thm.tex:141-155](../mr/content/computability/computability-theory/fixed-point-thm.tex#L141) | not yet paginated |
+| T321-OLP-0250-B005 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:12-19](../upstream/content/computability/computability-theory/application-fixed-point.tex#L12) | [mr/content/computability/computability-theory/application-fixed-point.tex:12-21](../mr/content/computability/computability-theory/application-fixed-point.tex#L12) | not yet paginated |
+| T321-OLP-0250-B007 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:28-32](../upstream/content/computability/computability-theory/application-fixed-point.tex#L28) | [mr/content/computability/computability-theory/application-fixed-point.tex:31-35](../mr/content/computability/computability-theory/application-fixed-point.tex#L31) | not yet paginated |
+| T321-OLP-0250-B008 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:34-60](../upstream/content/computability/computability-theory/application-fixed-point.tex#L34) | [mr/content/computability/computability-theory/application-fixed-point.tex:37-65](../mr/content/computability/computability-theory/application-fixed-point.tex#L37) | not yet paginated |
+| T321-OLP-0251-B005 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:12-32](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L12) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:12-33](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L12) | not yet paginated |
+| T321-OLP-0251-B007 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:49-55](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L49) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:51-58](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L51) | not yet paginated |
 
 **Chosen rendering/action:** क्लिनीचे प्रमाण रूप प्रमेय / आंशिक पुनरावर्ती फलनाचा निर्देशांक / संगणनाचा संकेतांक
 
@@ -17045,7 +17238,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T322 — halting problem / halting function / total code numbering</strong> (17 occurrences; medium priority)</summary>
+<summary><strong>T322 — halting problem / halting function / total code numbering</strong> (30 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17066,6 +17259,19 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T322-OLP-0240-B010 | OLP-0240 ·  | [upstream/content/computability/computability-theory/non-comp-set.tex:42-45](../upstream/content/computability/computability-theory/non-comp-set.tex#L42) | [mr/content/computability/computability-theory/non-comp-set.tex:44-47](../mr/content/computability/computability-theory/non-comp-set.tex#L44) | not yet paginated |
 | T322-OLP-0240-B011 | OLP-0240 ·  | [upstream/content/computability/computability-theory/non-comp-set.tex:47-58](../upstream/content/computability/computability-theory/non-comp-set.tex#L47) | [mr/content/computability/computability-theory/non-comp-set.tex:49-61](../mr/content/computability/computability-theory/non-comp-set.tex#L49) | not yet paginated |
 | T322-OLP-0243-B007 | OLP-0243 ·  | [upstream/content/computability/computability-theory/reducibility.tex:31-48](../upstream/content/computability/computability-theory/reducibility.tex#L31) | [mr/content/computability/computability-theory/reducibility.tex:32-53](../mr/content/computability/computability-theory/reducibility.tex#L32) | not yet paginated |
+| T322-OLP-0254-B008 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:77-84](../upstream/content/turing-machines/machines-computations/introduction.tex#L77) | [mr/content/turing-machines/machines-computations/introduction.tex:72-80](../mr/content/turing-machines/machines-computations/introduction.tex#L72) | not yet paginated |
+| T322-OLP-0255-B008 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:39-47](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L39) | [mr/content/turing-machines/machines-computations/representing-tms.tex:38-45](../mr/content/turing-machines/machines-computations/representing-tms.tex#L38) | not yet paginated |
+| T322-OLP-0255-B012 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:66-75](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L66) | [mr/content/turing-machines/machines-computations/representing-tms.tex:64-72](../mr/content/turing-machines/machines-computations/representing-tms.tex#L64) | not yet paginated |
+| T322-OLP-0255-B013 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:77-80](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L77) | [mr/content/turing-machines/machines-computations/representing-tms.tex:74-76](../mr/content/turing-machines/machines-computations/representing-tms.tex#L74) | not yet paginated |
+| T322-OLP-0255-B014 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:82-113](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L82) | [mr/content/turing-machines/machines-computations/representing-tms.tex:78-110](../mr/content/turing-machines/machines-computations/representing-tms.tex#L78) | not yet paginated |
+| T322-OLP-0255-B015 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:115-139](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L115) | [mr/content/turing-machines/machines-computations/representing-tms.tex:112-134](../mr/content/turing-machines/machines-computations/representing-tms.tex#L112) | not yet paginated |
+| T322-OLP-0255-B016 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:141-148](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L141) | [mr/content/turing-machines/machines-computations/representing-tms.tex:136-142](../mr/content/turing-machines/machines-computations/representing-tms.tex#L136) | not yet paginated |
+| T322-OLP-0255-B021 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:182-199](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L182) | [mr/content/turing-machines/machines-computations/representing-tms.tex:174-191](../mr/content/turing-machines/machines-computations/representing-tms.tex#L174) | not yet paginated |
+| T322-OLP-0255-B027 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:262-270](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L262) | [mr/content/turing-machines/machines-computations/representing-tms.tex:253-262](../mr/content/turing-machines/machines-computations/representing-tms.tex#L253) | not yet paginated |
+| T322-OLP-0255-B029 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:279-286](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L279) | [mr/content/turing-machines/machines-computations/representing-tms.tex:272-279](../mr/content/turing-machines/machines-computations/representing-tms.tex#L272) | not yet paginated |
+| T322-OLP-0256-B008 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:50-60](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L50) | [mr/content/turing-machines/machines-computations/turing-machines.tex:50-60](../mr/content/turing-machines/machines-computations/turing-machines.tex#L50) | not yet paginated |
+| T322-OLP-0257-B012 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:89-95](../upstream/content/turing-machines/machines-computations/configuration.tex#L89) | [mr/content/turing-machines/machines-computations/configuration.tex:98-110](../mr/content/turing-machines/machines-computations/configuration.tex#L98) | not yet paginated |
+| T322-OLP-0257-B013 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:97-102](../upstream/content/turing-machines/machines-computations/configuration.tex#L97) | [mr/content/turing-machines/machines-computations/configuration.tex:112-117](../mr/content/turing-machines/machines-computations/configuration.tex#L112) | not yet paginated |
 
 **Chosen rendering/action:** थांबण्याची समस्या / थांबण्याचे फलन / प्रत्येक संकेतांकाचा आंशिक पुनरावर्ती फलनाशी निर्देशांक-संबंध
 
@@ -17158,7 +17364,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T326 — Russell's paradox / self-membership contradiction / noncomputable diagonal function</strong> (8 occurrences; medium priority)</summary>
+<summary><strong>T326 — Russell's paradox / self-membership contradiction / noncomputable diagonal function</strong> (9 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17170,6 +17376,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T326-OLP-0236-B009 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:37-48](../upstream/content/computability/computability-theory/russells-paradox.tex#L37) | [mr/content/computability/computability-theory/russells-paradox.tex:38-50](../mr/content/computability/computability-theory/russells-paradox.tex#L38) | not yet paginated |
 | T326-OLP-0236-B010 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:50-53](../upstream/content/computability/computability-theory/russells-paradox.tex#L50) | [mr/content/computability/computability-theory/russells-paradox.tex:52-55](../mr/content/computability/computability-theory/russells-paradox.tex#L52) | not yet paginated |
 | T326-OLP-0236-B011 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:55-73](../upstream/content/computability/computability-theory/russells-paradox.tex#L55) | [mr/content/computability/computability-theory/russells-paradox.tex:57-74](../mr/content/computability/computability-theory/russells-paradox.tex#L57) | not yet paginated |
+| T326-OLP-0249-B015 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L113) | [mr/content/computability/computability-theory/fixed-point-thm.tex:117-139](../mr/content/computability/computability-theory/fixed-point-thm.tex#L117) | not yet paginated |
 
 **Chosen rendering/action:** रसेलची विरोधापत्ती / स्वसदस्यत्वातील व्याघात / संगणनक्षम नसलेले विकर्ण फलन
 
@@ -17180,7 +17387,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T327 — computably enumerable set / recursively enumerable set</strong> (52 occurrences; medium priority)</summary>
+<summary><strong>T327 — computably enumerable set / recursively enumerable set</strong> (54 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17236,6 +17443,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T327-OLP-0245-B012 | OLP-0245 ·  | [upstream/content/computability/computability-theory/complete-ce-sets.tex:51-58](../upstream/content/computability/computability-theory/complete-ce-sets.tex#L51) | [mr/content/computability/computability-theory/complete-ce-sets.tex:57-64](../mr/content/computability/computability-theory/complete-ce-sets.tex#L57) | not yet paginated |
 | T327-OLP-0246-B006 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:14-21](../upstream/content/computability/computability-theory/k-1.tex#L14) | [mr/content/computability/computability-theory/k-1.tex:14-21](../mr/content/computability/computability-theory/k-1.tex#L14) | not yet paginated |
 | T327-OLP-0246-B007 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:23-25](../upstream/content/computability/computability-theory/k-1.tex#L23) | [mr/content/computability/computability-theory/k-1.tex:23-26](../mr/content/computability/computability-theory/k-1.tex#L23) | not yet paginated |
+| T327-OLP-0247-B009 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:54-58](../upstream/content/computability/computability-theory/total.tex#L54) | [mr/content/computability/computability-theory/total.tex:58-62](../mr/content/computability/computability-theory/total.tex#L58) | not yet paginated |
+| T327-OLP-0250-B006 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:21-26](../upstream/content/computability/computability-theory/application-fixed-point.tex#L21) | [mr/content/computability/computability-theory/application-fixed-point.tex:23-29](../mr/content/computability/computability-theory/application-fixed-point.tex#L23) | not yet paginated |
 
 **Chosen rendering/action:** संगणनक्षमपणे प्रगणनीय संच / पुनरावर्तीपणे प्रगणनीय संच
 
@@ -17277,7 +17486,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T329 — many-one reduction / many-one reducible or equivalent / one-one reducible</strong> (29 occurrences; medium priority)</summary>
+<summary><strong>T329 — many-one reduction / many-one reducible or equivalent / one-one reducible</strong> (33 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17310,6 +17519,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T329-OLP-0246-B008 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:27-28](../upstream/content/computability/computability-theory/k-1.tex#L27) | [mr/content/computability/computability-theory/k-1.tex:28-29](../mr/content/computability/computability-theory/k-1.tex#L28) | not yet paginated |
 | T329-OLP-0246-B009 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:30-45](../upstream/content/computability/computability-theory/k-1.tex#L30) | [mr/content/computability/computability-theory/k-1.tex:31-47](../mr/content/computability/computability-theory/k-1.tex#L31) | not yet paginated |
 | T329-OLP-0246-B012 | OLP-0246 ·  | [upstream/content/computability/computability-theory/k-1.tex:70-81](../upstream/content/computability/computability-theory/k-1.tex#L70) | [mr/content/computability/computability-theory/k-1.tex:74-85](../mr/content/computability/computability-theory/k-1.tex#L74) | not yet paginated |
+| T329-OLP-0247-B007 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:24-39](../upstream/content/computability/computability-theory/total.tex#L24) | [mr/content/computability/computability-theory/total.tex:25-42](../mr/content/computability/computability-theory/total.tex#L25) | not yet paginated |
+| T329-OLP-0247-B008 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:41-52](../upstream/content/computability/computability-theory/total.tex#L41) | [mr/content/computability/computability-theory/total.tex:44-56](../mr/content/computability/computability-theory/total.tex#L44) | not yet paginated |
+| T329-OLP-0248-B005 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:12-18](../upstream/content/computability/computability-theory/rice-theorem.tex#L12) | [mr/content/computability/computability-theory/rice-theorem.tex:12-19](../mr/content/computability/computability-theory/rice-theorem.tex#L12) | not yet paginated |
+| T329-OLP-0248-B015 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:97-107](../upstream/content/computability/computability-theory/rice-theorem.tex#L97) | [mr/content/computability/computability-theory/rice-theorem.tex:102-115](../mr/content/computability/computability-theory/rice-theorem.tex#L102) | not yet paginated |
 
 **Chosen rendering/action:** अनेक-एक न्यूनीकरण / अनेक-एक न्यूनीकरणक्षम किंवा सममूल्य / एकास-एक न्यूनीकरणक्षम
 
@@ -17369,6 +17582,210 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** medium; source-defined oracle borrowing and fixed-input description; expert-reviewable; open to correction.
 
 **Please double-check:** Is ओरॅकल the clearest technical borrowing for a query-answering oracle while keeping K_1's fixed input zero explicit?
+
+</details>
+
+<details>
+<summary><strong>T333 — totality of a partial computable function / index set Tot / arithmetical hierarchy</strong> (7 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T333-OLP-0247-B004 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:9-10](../upstream/content/computability/computability-theory/total.tex#L9) | [mr/content/computability/computability-theory/total.tex:9-10](../mr/content/computability/computability-theory/total.tex#L9) | not yet paginated |
+| T333-OLP-0247-B005 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:12-17](../upstream/content/computability/computability-theory/total.tex#L12) | [mr/content/computability/computability-theory/total.tex:12-18](../mr/content/computability/computability-theory/total.tex#L12) | not yet paginated |
+| T333-OLP-0247-B006 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:19-22](../upstream/content/computability/computability-theory/total.tex#L19) | [mr/content/computability/computability-theory/total.tex:20-23](../mr/content/computability/computability-theory/total.tex#L20) | not yet paginated |
+| T333-OLP-0247-B007 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:24-39](../upstream/content/computability/computability-theory/total.tex#L24) | [mr/content/computability/computability-theory/total.tex:25-42](../mr/content/computability/computability-theory/total.tex#L25) | not yet paginated |
+| T333-OLP-0247-B008 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:41-52](../upstream/content/computability/computability-theory/total.tex#L41) | [mr/content/computability/computability-theory/total.tex:44-56](../mr/content/computability/computability-theory/total.tex#L44) | not yet paginated |
+| T333-OLP-0247-B009 | OLP-0247 ·  | [upstream/content/computability/computability-theory/total.tex:54-58](../upstream/content/computability/computability-theory/total.tex#L54) | [mr/content/computability/computability-theory/total.tex:58-62](../mr/content/computability/computability-theory/total.tex#L58) | not yet paginated |
+| T333-OLP-0248-B005 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:12-18](../upstream/content/computability/computability-theory/rice-theorem.tex#L12) | [mr/content/computability/computability-theory/rice-theorem.tex:12-19](../mr/content/computability/computability-theory/rice-theorem.tex#L12) | not yet paginated |
+
+**Chosen rendering/action:** सर्वत्र परिभाषितता / निर्देशांकसंच Tot / अंकगणितीय पदानुक्रम
+
+**Confidence/status:** medium; established total-function component with source-defined totality and hierarchy compounds; expert-reviewable; open to correction.
+
+**Please double-check:** Does सर्वत्र परिभाषितता clearly mean termination on every input, distinct from logical or c.e. completeness, and is पदानुक्रम apt for the arithmetical hierarchy?
+
+</details>
+
+<details>
+<summary><strong>T334 — Rice's theorem / index set / nontrivial extensional property of partial computable functions</strong> (12 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T334-OLP-0248-B004 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:9-10](../upstream/content/computability/computability-theory/rice-theorem.tex#L9) | [mr/content/computability/computability-theory/rice-theorem.tex:9-10](../mr/content/computability/computability-theory/rice-theorem.tex#L9) | not yet paginated |
+| T334-OLP-0248-B005 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:12-18](../upstream/content/computability/computability-theory/rice-theorem.tex#L12) | [mr/content/computability/computability-theory/rice-theorem.tex:12-19](../mr/content/computability/computability-theory/rice-theorem.tex#L12) | not yet paginated |
+| T334-OLP-0248-B007 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:23-28](../upstream/content/computability/computability-theory/rice-theorem.tex#L23) | [mr/content/computability/computability-theory/rice-theorem.tex:24-29](../mr/content/computability/computability-theory/rice-theorem.tex#L24) | not yet paginated |
+| T334-OLP-0248-B008 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:30-35](../upstream/content/computability/computability-theory/rice-theorem.tex#L30) | [mr/content/computability/computability-theory/rice-theorem.tex:31-36](../mr/content/computability/computability-theory/rice-theorem.tex#L31) | not yet paginated |
+| T334-OLP-0248-B009 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:37-51](../upstream/content/computability/computability-theory/rice-theorem.tex#L37) | [mr/content/computability/computability-theory/rice-theorem.tex:38-52](../mr/content/computability/computability-theory/rice-theorem.tex#L38) | not yet paginated |
+| T334-OLP-0248-B010 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:53-57](../upstream/content/computability/computability-theory/rice-theorem.tex#L53) | [mr/content/computability/computability-theory/rice-theorem.tex:54-58](../mr/content/computability/computability-theory/rice-theorem.tex#L54) | not yet paginated |
+| T334-OLP-0248-B011 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:59-64](../upstream/content/computability/computability-theory/rice-theorem.tex#L59) | [mr/content/computability/computability-theory/rice-theorem.tex:60-66](../mr/content/computability/computability-theory/rice-theorem.tex#L60) | not yet paginated |
+| T334-OLP-0248-B012 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:66-82](../upstream/content/computability/computability-theory/rice-theorem.tex#L66) | [mr/content/computability/computability-theory/rice-theorem.tex:68-86](../mr/content/computability/computability-theory/rice-theorem.tex#L68) | not yet paginated |
+| T334-OLP-0248-B014 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:88-95](../upstream/content/computability/computability-theory/rice-theorem.tex#L88) | [mr/content/computability/computability-theory/rice-theorem.tex:92-100](../mr/content/computability/computability-theory/rice-theorem.tex#L92) | not yet paginated |
+| T334-OLP-0248-B015 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:97-107](../upstream/content/computability/computability-theory/rice-theorem.tex#L97) | [mr/content/computability/computability-theory/rice-theorem.tex:102-115](../mr/content/computability/computability-theory/rice-theorem.tex#L102) | not yet paginated |
+| T334-OLP-0248-B016 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:109-120](../upstream/content/computability/computability-theory/rice-theorem.tex#L109) | [mr/content/computability/computability-theory/rice-theorem.tex:117-128](../mr/content/computability/computability-theory/rice-theorem.tex#L117) | not yet paginated |
+| T334-OLP-0248-B017 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:122-124](../upstream/content/computability/computability-theory/rice-theorem.tex#L122) | [mr/content/computability/computability-theory/rice-theorem.tex:130-132](../mr/content/computability/computability-theory/rice-theorem.tex#L130) | not yet paginated |
+
+**Chosen rendering/action:** राइसचे प्रमेय / निर्देशांकसंच / आंशिक संगणनक्षम फलनांचा अतुच्छ गुणधर्म
+
+**Confidence/status:** medium; established components with source-defined index-set and nontrivial-property compounds; expert-reviewable; open to correction.
+
+**Please double-check:** Does निर्देशांकसंच make invariance under different program indices computing the same function clear, and does अतुच्छ avoid suggesting merely easy or unimportant?
+
+</details>
+
+<details>
+<summary><strong>T335 — fixed-point theorem / self-reference / diagonal-index transformation</strong> (22 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T335-OLP-0249-B004 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:9-10](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L9) | [mr/content/computability/computability-theory/fixed-point-thm.tex:9-10](../mr/content/computability/computability-theory/fixed-point-thm.tex#L9) | not yet paginated |
+| T335-OLP-0249-B005 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:12-16](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L12) | [mr/content/computability/computability-theory/fixed-point-thm.tex:12-16](../mr/content/computability/computability-theory/fixed-point-thm.tex#L12) | not yet paginated |
+| T335-OLP-0249-B008 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:47-51](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L47) | [mr/content/computability/computability-theory/fixed-point-thm.tex:48-52](../mr/content/computability/computability-theory/fixed-point-thm.tex#L48) | not yet paginated |
+| T335-OLP-0249-B009 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:53-58](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L53) | [mr/content/computability/computability-theory/fixed-point-thm.tex:54-59](../mr/content/computability/computability-theory/fixed-point-thm.tex#L54) | not yet paginated |
+| T335-OLP-0249-B010 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:60-75](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L60) | [mr/content/computability/computability-theory/fixed-point-thm.tex:61-76](../mr/content/computability/computability-theory/fixed-point-thm.tex#L61) | not yet paginated |
+| T335-OLP-0249-B011 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:77-83](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L77) | [mr/content/computability/computability-theory/fixed-point-thm.tex:78-86](../mr/content/computability/computability-theory/fixed-point-thm.tex#L78) | not yet paginated |
+| T335-OLP-0249-B012 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:85-93](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L85) | [mr/content/computability/computability-theory/fixed-point-thm.tex:88-97](../mr/content/computability/computability-theory/fixed-point-thm.tex#L88) | not yet paginated |
+| T335-OLP-0249-B013 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:95-102](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L95) | [mr/content/computability/computability-theory/fixed-point-thm.tex:99-106](../mr/content/computability/computability-theory/fixed-point-thm.tex#L99) | not yet paginated |
+| T335-OLP-0249-B014 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:104-111](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L104) | [mr/content/computability/computability-theory/fixed-point-thm.tex:108-115](../mr/content/computability/computability-theory/fixed-point-thm.tex#L108) | not yet paginated |
+| T335-OLP-0249-B015 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L113) | [mr/content/computability/computability-theory/fixed-point-thm.tex:117-139](../mr/content/computability/computability-theory/fixed-point-thm.tex#L117) | not yet paginated |
+| T335-OLP-0249-B016 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:135-149](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L135) | [mr/content/computability/computability-theory/fixed-point-thm.tex:141-155](../mr/content/computability/computability-theory/fixed-point-thm.tex#L141) | not yet paginated |
+| T335-OLP-0249-B017 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:151-179](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L151) | [mr/content/computability/computability-theory/fixed-point-thm.tex:157-185](../mr/content/computability/computability-theory/fixed-point-thm.tex#L157) | not yet paginated |
+| T335-OLP-0249-B018 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:181-201](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L181) | [mr/content/computability/computability-theory/fixed-point-thm.tex:187-208](../mr/content/computability/computability-theory/fixed-point-thm.tex#L187) | not yet paginated |
+| T335-OLP-0249-B019 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:203-208](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L203) | [mr/content/computability/computability-theory/fixed-point-thm.tex:210-215](../mr/content/computability/computability-theory/fixed-point-thm.tex#L210) | not yet paginated |
+| T335-OLP-0249-B020 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:210-241](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L210) | [mr/content/computability/computability-theory/fixed-point-thm.tex:217-251](../mr/content/computability/computability-theory/fixed-point-thm.tex#L217) | not yet paginated |
+| T335-OLP-0250-B004 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:9-10](../upstream/content/computability/computability-theory/application-fixed-point.tex#L9) | [mr/content/computability/computability-theory/application-fixed-point.tex:9-10](../mr/content/computability/computability-theory/application-fixed-point.tex#L9) | not yet paginated |
+| T335-OLP-0250-B005 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:12-19](../upstream/content/computability/computability-theory/application-fixed-point.tex#L12) | [mr/content/computability/computability-theory/application-fixed-point.tex:12-21](../mr/content/computability/computability-theory/application-fixed-point.tex#L12) | not yet paginated |
+| T335-OLP-0250-B008 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:34-60](../upstream/content/computability/computability-theory/application-fixed-point.tex#L34) | [mr/content/computability/computability-theory/application-fixed-point.tex:37-65](../mr/content/computability/computability-theory/application-fixed-point.tex#L37) | not yet paginated |
+| T335-OLP-0251-B004 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:9-10](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L9) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:9-10](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L9) | not yet paginated |
+| T335-OLP-0251-B005 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:12-32](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L12) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:12-33](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L12) | not yet paginated |
+| T335-OLP-0251-B006 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:34-47](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L34) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:35-49](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L35) | not yet paginated |
+| T335-OLP-0251-B007 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:49-55](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L49) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:51-58](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L51) | not yet paginated |
+
+**Chosen rendering/action:** स्थिरबिंदू प्रमेय / स्वसंदर्भ / विकर्ण निर्देशांक-रूपांतरण
+
+**Confidence/status:** medium; source-defined specialist compound with attested computation/index components; expert-reviewable; open to correction.
+
+**Please double-check:** Does स्थिरबिंदू प्रमेय read naturally for the program-index fixed point, while स्वसंदर्भ describes the mechanism without implying a contradiction?
+
+</details>
+
+<details>
+<summary><strong>T336 — fixed-point combinator / beta-equivalence / Curry's combinator / Turing's combinator</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T336-OLP-0249-B020 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:210-241](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L210) | [mr/content/computability/computability-theory/fixed-point-thm.tex:217-251](../mr/content/computability/computability-theory/fixed-point-thm.tex#L217) | not yet paginated |
+
+**Chosen rendering/action:** स्थिरबिंदू संयोजक / बीटा-सममूल्यता / करीचा संयोजक / ट्यूरिंगचा संयोजक
+
+**Confidence/status:** medium; source-defined lambda-calculus compound under checked lambda context; expert-reviewable; open to correction.
+
+**Please double-check:** Do संयोजक and बीटा-सममूल्यता preserve the difference between common reduct and direct reduction in the two Y constructions?
+
+</details>
+
+<details>
+<summary><strong>T337 — greatest common divisor (gcd) / Euclidean recursive definition</strong> (1 occurrence; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T337-OLP-0251-B006 | OLP-0251 ·  | [upstream/content/computability/computability-theory/def-functions-self-reference.tex:34-47](../upstream/content/computability/computability-theory/def-functions-self-reference.tex#L34) | [mr/content/computability/computability-theory/def-functions-self-reference.tex:35-49](../mr/content/computability/computability-theory/def-functions-self-reference.tex#L35) | not yet paginated |
+
+**Chosen rendering/action:** महत्तम साधारण विभाजक / युक्लिडी पुनरावर्ती व्याख्या
+
+**Confidence/status:** high; directly attested complete gcd headword; recursive explanatory compound source-controlled; open to correction.
+
+**Please double-check:** Is the directly attested विश्वकोश headword appropriate for the edition's gcd example, with the remainder and induction wording clear?
+
+</details>
+
+<details>
+<summary><strong>T338 — Turing-machine tape / square / read-write head / state / alphabet / transition function</strong> (32 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T338-OLP-0254-B006 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:29-53](../upstream/content/turing-machines/machines-computations/introduction.tex#L29) | [mr/content/turing-machines/machines-computations/introduction.tex:28-50](../mr/content/turing-machines/machines-computations/introduction.tex#L28) | not yet paginated |
+| T338-OLP-0254-B007 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:55-75](../upstream/content/turing-machines/machines-computations/introduction.tex#L55) | [mr/content/turing-machines/machines-computations/introduction.tex:52-70](../mr/content/turing-machines/machines-computations/introduction.tex#L52) | not yet paginated |
+| T338-OLP-0254-B008 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:77-84](../upstream/content/turing-machines/machines-computations/introduction.tex#L77) | [mr/content/turing-machines/machines-computations/introduction.tex:72-80](../mr/content/turing-machines/machines-computations/introduction.tex#L72) | not yet paginated |
+| T338-OLP-0255-B005 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:12-23](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L12) | [mr/content/turing-machines/machines-computations/representing-tms.tex:12-22](../mr/content/turing-machines/machines-computations/representing-tms.tex#L12) | not yet paginated |
+| T338-OLP-0255-B007 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:28-37](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L28) | [mr/content/turing-machines/machines-computations/representing-tms.tex:27-36](../mr/content/turing-machines/machines-computations/representing-tms.tex#L27) | not yet paginated |
+| T338-OLP-0255-B008 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:39-47](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L39) | [mr/content/turing-machines/machines-computations/representing-tms.tex:38-45](../mr/content/turing-machines/machines-computations/representing-tms.tex#L38) | not yet paginated |
+| T338-OLP-0255-B011 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:58-64](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L58) | [mr/content/turing-machines/machines-computations/representing-tms.tex:56-62](../mr/content/turing-machines/machines-computations/representing-tms.tex#L56) | not yet paginated |
+| T338-OLP-0255-B012 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:66-75](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L66) | [mr/content/turing-machines/machines-computations/representing-tms.tex:64-72](../mr/content/turing-machines/machines-computations/representing-tms.tex#L64) | not yet paginated |
+| T338-OLP-0255-B013 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:77-80](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L77) | [mr/content/turing-machines/machines-computations/representing-tms.tex:74-76](../mr/content/turing-machines/machines-computations/representing-tms.tex#L74) | not yet paginated |
+| T338-OLP-0255-B014 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:82-113](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L82) | [mr/content/turing-machines/machines-computations/representing-tms.tex:78-110](../mr/content/turing-machines/machines-computations/representing-tms.tex#L78) | not yet paginated |
+| T338-OLP-0255-B015 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:115-139](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L115) | [mr/content/turing-machines/machines-computations/representing-tms.tex:112-134](../mr/content/turing-machines/machines-computations/representing-tms.tex#L112) | not yet paginated |
+| T338-OLP-0255-B016 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:141-148](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L141) | [mr/content/turing-machines/machines-computations/representing-tms.tex:136-142](../mr/content/turing-machines/machines-computations/representing-tms.tex#L136) | not yet paginated |
+| T338-OLP-0255-B020 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:168-180](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L168) | [mr/content/turing-machines/machines-computations/representing-tms.tex:162-172](../mr/content/turing-machines/machines-computations/representing-tms.tex#L162) | not yet paginated |
+| T338-OLP-0255-B021 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:182-199](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L182) | [mr/content/turing-machines/machines-computations/representing-tms.tex:174-191](../mr/content/turing-machines/machines-computations/representing-tms.tex#L174) | not yet paginated |
+| T338-OLP-0255-B022 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:201-207](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L201) | [mr/content/turing-machines/machines-computations/representing-tms.tex:193-199](../mr/content/turing-machines/machines-computations/representing-tms.tex#L193) | not yet paginated |
+| T338-OLP-0255-B023 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:209-230](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L209) | [mr/content/turing-machines/machines-computations/representing-tms.tex:201-221](../mr/content/turing-machines/machines-computations/representing-tms.tex#L201) | not yet paginated |
+| T338-OLP-0255-B027 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:262-270](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L262) | [mr/content/turing-machines/machines-computations/representing-tms.tex:253-262](../mr/content/turing-machines/machines-computations/representing-tms.tex#L253) | not yet paginated |
+| T338-OLP-0255-B028 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:272-277](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L272) | [mr/content/turing-machines/machines-computations/representing-tms.tex:264-270](../mr/content/turing-machines/machines-computations/representing-tms.tex#L264) | not yet paginated |
+| T338-OLP-0255-B029 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:279-286](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L279) | [mr/content/turing-machines/machines-computations/representing-tms.tex:272-279](../mr/content/turing-machines/machines-computations/representing-tms.tex#L272) | not yet paginated |
+| T338-OLP-0255-B030 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:288-295](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L288) | [mr/content/turing-machines/machines-computations/representing-tms.tex:281-288](../mr/content/turing-machines/machines-computations/representing-tms.tex#L281) | not yet paginated |
+| T338-OLP-0256-B005 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:12-20](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L12) | [mr/content/turing-machines/machines-computations/turing-machines.tex:12-19](../mr/content/turing-machines/machines-computations/turing-machines.tex#L12) | not yet paginated |
+| T338-OLP-0256-B006 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:22-35](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L22) | [mr/content/turing-machines/machines-computations/turing-machines.tex:21-34](../mr/content/turing-machines/machines-computations/turing-machines.tex#L21) | not yet paginated |
+| T338-OLP-0256-B007 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:37-48](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L37) | [mr/content/turing-machines/machines-computations/turing-machines.tex:36-48](../mr/content/turing-machines/machines-computations/turing-machines.tex#L36) | not yet paginated |
+| T338-OLP-0256-B008 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:50-60](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L50) | [mr/content/turing-machines/machines-computations/turing-machines.tex:50-60](../mr/content/turing-machines/machines-computations/turing-machines.tex#L50) | not yet paginated |
+| T338-OLP-0257-B005 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:12-23](../upstream/content/turing-machines/machines-computations/configuration.tex#L12) | [mr/content/turing-machines/machines-computations/configuration.tex:12-23](../mr/content/turing-machines/machines-computations/configuration.tex#L12) | not yet paginated |
+| T338-OLP-0257-B006 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:25-38](../upstream/content/turing-machines/machines-computations/configuration.tex#L25) | [mr/content/turing-machines/machines-computations/configuration.tex:25-39](../mr/content/turing-machines/machines-computations/configuration.tex#L25) | not yet paginated |
+| T338-OLP-0257-B007 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:40-49](../upstream/content/turing-machines/machines-computations/configuration.tex#L40) | [mr/content/turing-machines/machines-computations/configuration.tex:41-51](../mr/content/turing-machines/machines-computations/configuration.tex#L41) | not yet paginated |
+| T338-OLP-0257-B008 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:51-56](../upstream/content/turing-machines/machines-computations/configuration.tex#L51) | [mr/content/turing-machines/machines-computations/configuration.tex:53-63](../mr/content/turing-machines/machines-computations/configuration.tex#L53) | not yet paginated |
+| T338-OLP-0257-B009 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:58-61](../upstream/content/turing-machines/machines-computations/configuration.tex#L58) | [mr/content/turing-machines/machines-computations/configuration.tex:65-69](../mr/content/turing-machines/machines-computations/configuration.tex#L65) | not yet paginated |
+| T338-OLP-0257-B010 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:63-82](../upstream/content/turing-machines/machines-computations/configuration.tex#L63) | [mr/content/turing-machines/machines-computations/configuration.tex:71-90](../mr/content/turing-machines/machines-computations/configuration.tex#L71) | not yet paginated |
+| T338-OLP-0257-B012 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:89-95](../upstream/content/turing-machines/machines-computations/configuration.tex#L89) | [mr/content/turing-machines/machines-computations/configuration.tex:98-110](../mr/content/turing-machines/machines-computations/configuration.tex#L98) | not yet paginated |
+| T338-OLP-0257-B013 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:97-102](../upstream/content/turing-machines/machines-computations/configuration.tex#L97) | [mr/content/turing-machines/machines-computations/configuration.tex:112-117](../mr/content/turing-machines/machines-computations/configuration.tex#L112) | not yet paginated |
+
+**Chosen rendering/action:** ट्यूरिंग यंत्राची फीत / घर / वाचन-लेखन शीर्ष / अवस्था / वर्णमाला / संक्रमण फलन
+
+**Confidence/status:** high; Turing name and generic tape directly attested; component compounds source-defined and expert-reviewable; open to correction.
+
+**Please double-check:** Is फीत natural for an abstract Turing tape, and are वाचन-लेखन शीर्ष and संक्रमण फलन clear for the head and partial state-symbol transition?
+
+</details>
+
+<details>
+<summary><strong>T339 — state diagram / machine configuration / machine table / doubler</strong> (31 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T339-OLP-0255-B004 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:9-10](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L9) | [mr/content/turing-machines/machines-computations/representing-tms.tex:9-10](../mr/content/turing-machines/machines-computations/representing-tms.tex#L9) | not yet paginated |
+| T339-OLP-0255-B005 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:12-23](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L12) | [mr/content/turing-machines/machines-computations/representing-tms.tex:12-22](../mr/content/turing-machines/machines-computations/representing-tms.tex#L12) | not yet paginated |
+| T339-OLP-0255-B007 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:28-37](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L28) | [mr/content/turing-machines/machines-computations/representing-tms.tex:27-36](../mr/content/turing-machines/machines-computations/representing-tms.tex#L27) | not yet paginated |
+| T339-OLP-0255-B008 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:39-47](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L39) | [mr/content/turing-machines/machines-computations/representing-tms.tex:38-45](../mr/content/turing-machines/machines-computations/representing-tms.tex#L38) | not yet paginated |
+| T339-OLP-0255-B011 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:58-64](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L58) | [mr/content/turing-machines/machines-computations/representing-tms.tex:56-62](../mr/content/turing-machines/machines-computations/representing-tms.tex#L56) | not yet paginated |
+| T339-OLP-0255-B012 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:66-75](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L66) | [mr/content/turing-machines/machines-computations/representing-tms.tex:64-72](../mr/content/turing-machines/machines-computations/representing-tms.tex#L64) | not yet paginated |
+| T339-OLP-0255-B013 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:77-80](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L77) | [mr/content/turing-machines/machines-computations/representing-tms.tex:74-76](../mr/content/turing-machines/machines-computations/representing-tms.tex#L74) | not yet paginated |
+| T339-OLP-0255-B014 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:82-113](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L82) | [mr/content/turing-machines/machines-computations/representing-tms.tex:78-110](../mr/content/turing-machines/machines-computations/representing-tms.tex#L78) | not yet paginated |
+| T339-OLP-0255-B015 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:115-139](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L115) | [mr/content/turing-machines/machines-computations/representing-tms.tex:112-134](../mr/content/turing-machines/machines-computations/representing-tms.tex#L112) | not yet paginated |
+| T339-OLP-0255-B016 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:141-148](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L141) | [mr/content/turing-machines/machines-computations/representing-tms.tex:136-142](../mr/content/turing-machines/machines-computations/representing-tms.tex#L136) | not yet paginated |
+| T339-OLP-0255-B020 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:168-180](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L168) | [mr/content/turing-machines/machines-computations/representing-tms.tex:162-172](../mr/content/turing-machines/machines-computations/representing-tms.tex#L162) | not yet paginated |
+| T339-OLP-0255-B021 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:182-199](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L182) | [mr/content/turing-machines/machines-computations/representing-tms.tex:174-191](../mr/content/turing-machines/machines-computations/representing-tms.tex#L174) | not yet paginated |
+| T339-OLP-0255-B022 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:201-207](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L201) | [mr/content/turing-machines/machines-computations/representing-tms.tex:193-199](../mr/content/turing-machines/machines-computations/representing-tms.tex#L193) | not yet paginated |
+| T339-OLP-0255-B023 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:209-230](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L209) | [mr/content/turing-machines/machines-computations/representing-tms.tex:201-221](../mr/content/turing-machines/machines-computations/representing-tms.tex#L201) | not yet paginated |
+| T339-OLP-0255-B025 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:239-255](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L239) | [mr/content/turing-machines/machines-computations/representing-tms.tex:230-246](../mr/content/turing-machines/machines-computations/representing-tms.tex#L230) | not yet paginated |
+| T339-OLP-0255-B026 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:257-260](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L257) | [mr/content/turing-machines/machines-computations/representing-tms.tex:248-251](../mr/content/turing-machines/machines-computations/representing-tms.tex#L248) | not yet paginated |
+| T339-OLP-0255-B027 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:262-270](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L262) | [mr/content/turing-machines/machines-computations/representing-tms.tex:253-262](../mr/content/turing-machines/machines-computations/representing-tms.tex#L253) | not yet paginated |
+| T339-OLP-0255-B028 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:272-277](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L272) | [mr/content/turing-machines/machines-computations/representing-tms.tex:264-270](../mr/content/turing-machines/machines-computations/representing-tms.tex#L264) | not yet paginated |
+| T339-OLP-0255-B029 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:279-286](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L279) | [mr/content/turing-machines/machines-computations/representing-tms.tex:272-279](../mr/content/turing-machines/machines-computations/representing-tms.tex#L272) | not yet paginated |
+| T339-OLP-0255-B030 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:288-295](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L288) | [mr/content/turing-machines/machines-computations/representing-tms.tex:281-288](../mr/content/turing-machines/machines-computations/representing-tms.tex#L281) | not yet paginated |
+| T339-OLP-0256-B008 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:50-60](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L50) | [mr/content/turing-machines/machines-computations/turing-machines.tex:50-60](../mr/content/turing-machines/machines-computations/turing-machines.tex#L50) | not yet paginated |
+| T339-OLP-0257-B004 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:9-10](../upstream/content/turing-machines/machines-computations/configuration.tex#L9) | [mr/content/turing-machines/machines-computations/configuration.tex:9-10](../mr/content/turing-machines/machines-computations/configuration.tex#L9) | not yet paginated |
+| T339-OLP-0257-B005 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:12-23](../upstream/content/turing-machines/machines-computations/configuration.tex#L12) | [mr/content/turing-machines/machines-computations/configuration.tex:12-23](../mr/content/turing-machines/machines-computations/configuration.tex#L12) | not yet paginated |
+| T339-OLP-0257-B006 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:25-38](../upstream/content/turing-machines/machines-computations/configuration.tex#L25) | [mr/content/turing-machines/machines-computations/configuration.tex:25-39](../mr/content/turing-machines/machines-computations/configuration.tex#L25) | not yet paginated |
+| T339-OLP-0257-B007 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:40-49](../upstream/content/turing-machines/machines-computations/configuration.tex#L40) | [mr/content/turing-machines/machines-computations/configuration.tex:41-51](../mr/content/turing-machines/machines-computations/configuration.tex#L41) | not yet paginated |
+| T339-OLP-0257-B008 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:51-56](../upstream/content/turing-machines/machines-computations/configuration.tex#L51) | [mr/content/turing-machines/machines-computations/configuration.tex:53-63](../mr/content/turing-machines/machines-computations/configuration.tex#L53) | not yet paginated |
+| T339-OLP-0257-B009 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:58-61](../upstream/content/turing-machines/machines-computations/configuration.tex#L58) | [mr/content/turing-machines/machines-computations/configuration.tex:65-69](../mr/content/turing-machines/machines-computations/configuration.tex#L65) | not yet paginated |
+| T339-OLP-0257-B010 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:63-82](../upstream/content/turing-machines/machines-computations/configuration.tex#L63) | [mr/content/turing-machines/machines-computations/configuration.tex:71-90](../mr/content/turing-machines/machines-computations/configuration.tex#L71) | not yet paginated |
+| T339-OLP-0257-B011 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:84-87](../upstream/content/turing-machines/machines-computations/configuration.tex#L84) | [mr/content/turing-machines/machines-computations/configuration.tex:92-96](../mr/content/turing-machines/machines-computations/configuration.tex#L92) | not yet paginated |
+| T339-OLP-0257-B012 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:89-95](../upstream/content/turing-machines/machines-computations/configuration.tex#L89) | [mr/content/turing-machines/machines-computations/configuration.tex:98-110](../mr/content/turing-machines/machines-computations/configuration.tex#L98) | not yet paginated |
+| T339-OLP-0257-B013 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:97-102](../upstream/content/turing-machines/machines-computations/configuration.tex#L97) | [mr/content/turing-machines/machines-computations/configuration.tex:112-117](../mr/content/turing-machines/machines-computations/configuration.tex#L112) | not yet paginated |
+
+**Chosen rendering/action:** अवस्था-आलेख / स्थितिवर्णन / यंत्र-सारणी / दुप्पट करणारे यंत्र
+
+**Confidence/status:** high; source-defined transparent compounds; exact specialist headwords unattested and expert-reviewable; open to correction.
+
+**Please double-check:** Does स्थितिवर्णन clearly denote a full instantaneous tape-state-head configuration, and are अवस्था-आलेख and यंत्र-सारणी sufficiently distinct in the two representations?
 
 </details>
 
@@ -19694,5 +20111,95 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; confirmed by the theorem's K-completeness claim, the K_0-completeness proof and transitivity; the actual K_0-to-K reduction follows the same parameterization mechanism used for K_1; open to correction.
 
 **Please double-check:** Does the corrected proof use the direction from K_0 to K needed to transfer completeness, while the independent exercise retains its original direction?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-024 — confirmed-frozen-source-proof-starts-with-total-instead-of-partial-candidate</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-024-OLP-0250 | OLP-0250 ·  | [upstream/content/computability/computability-theory/application-fixed-point.tex:28-38](../upstream/content/computability/computability-theory/application-fixed-point.tex#L28) | [mr/content/computability/computability-theory/application-fixed-point.tex:31-43,67-76](../mr/content/computability/computability-theory/application-fixed-point.tex#L31) | not yet paginated |
+
+**Chosen rendering/action:** Take an arbitrary partial computable f in the Marathi proof opening, explicitly note at the conclusion that divergence of f(e) already violates the required definedness, and otherwise use the source's wrong-answer-at-zero diagonal. Add reader note OLCMP-024 and retain the source's exact formulas. No mechanical formula projection is needed for this prose-only correction.
+
+**Confidence/status:** high; confirmed by the theorem's explicit partial quantifier and the operational g construction, which can wait for a partial f(x); open to correction.
+
+**Please double-check:** Does the argument now handle an arbitrary partial computable f, including divergence of f(x), while preserving the computable W_e diagonal contradiction?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-001 — confirmed-frozen-source-wrong-initial-state-name-in-even-machine-trace</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-001-OLP-0255 | OLP-0255 ·  | [upstream/content/turing-machines/machines-computations/representing-tms.tex:83-90](../upstream/content/turing-machines/machines-computations/representing-tms.tex#L83) | [mr/content/turing-machines/machines-computations/representing-tms.tex:76-88](../mr/content/turing-machines/machines-computations/representing-tms.tex#L76) | not yet paginated |
+
+**Chosen rendering/action:** Name q_0 in the Marathi explanatory sentence, add adjacent reader note OLTUR-001, and project that one added formula back to the frozen wording solely for structural QA. Preserve the actual diagram and state trace.
+
+**Confidence/status:** high; confirmed by the displayed first configuration, preceding start-state sentence and following transition; open to correction.
+
+**Please double-check:** Does the prose now consistently identify the first scanned stroke with state q_0 while all diagrammed transitions remain unchanged?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-002 — confirmed-cross-section-initial-head-position-inconsistency</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-002-OLP-0257 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:55-56](../upstream/content/turing-machines/machines-computations/introduction.tex#L55); [upstream/content/turing-machines/machines-computations/configuration.tex:39-57](../upstream/content/turing-machines/machines-computations/configuration.tex#L39) | [mr/content/turing-machines/machines-computations/configuration.tex:40-61](../mr/content/turing-machines/machines-computations/configuration.tex#L40) | not yet paginated |
+
+**Chosen rendering/action:** Preserve the formal initial tuple and explain its first-input-square convention in Marathi, with adjacent OLTUR-002 reader note identifying the earlier informal discrepancy. Do not silently alter either frozen mathematical convention.
+
+**Confidence/status:** high; confirmed by the explicit leftmost-square sentence and the formal position-one tuple; resolution of a single global convention remains expert-reviewable; open to correction.
+
+**Please double-check:** Should a later edition globally use position one for the first input square, or amend the formal initialization to position zero?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-003 — frozen-source-directional-ambiguity-in-concatenation-gloss</strong> (1 occurrence; high priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-003-OLP-0257 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:58-61](../upstream/content/turing-machines/machines-computations/configuration.tex#L58) | [mr/content/turing-machines/machines-computations/configuration.tex:64-68](../mr/content/turing-machines/machines-computations/configuration.tex#L64) | not yet paginated |
+
+**Chosen rendering/action:** Say 'immediately to the right of the left end marker' in Marathi, preserve the formula and record adjacent reader note OLTUR-003. No formula projection is needed.
+
+**Confidence/status:** low; the English preposition may be a malformed way of saying adjacent to the left-end marker; the displayed tuple unambiguously fixes the intended order; open to correction.
+
+**Please double-check:** Does the Marathi right-of-marker gloss agree with the formal concatenation and head position?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-004 — confirmed-frozen-source-empty-input-boundary-gap</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-004-OLP-0257 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:23-36,51-57](../upstream/content/turing-machines/machines-computations/configuration.tex#L23) | [mr/content/turing-machines/machines-computations/configuration.tex:22-36,52-63](../mr/content/turing-machines/machines-computations/configuration.tex#L22) | not yet paginated |
+
+**Chosen rendering/action:** Keep the frozen initial formula and add a bounded Marathi explanation that the first blank square must be included in the configuration for empty input. Adjacent reader note OLTUR-004 records the gap; no new mathematical symbol is inserted into the source-aligned display.
+
+**Confidence/status:** high; confirmed by Sigma-star containing the empty sequence and the strict m<len(C) clause; exact preferred formal convention needs expert review; open to correction.
+
+**Please double-check:** Is adding the first blank square the preferred total initialization for empty input while preserving the intended position-one head convention?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-005 — confirmed-cross-section-output-marker-precondition-gap</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-005-OLP-0257 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:40-51](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L40); [upstream/content/turing-machines/machines-computations/configuration.tex:89-101](../upstream/content/turing-machines/machines-computations/configuration.tex#L89) | [mr/content/turing-machines/machines-computations/configuration.tex:98-110](../mr/content/turing-machines/machines-computations/configuration.tex#L98) | not yet paginated |
+
+**Chosen rendering/action:** Preserve both frozen statements and the output formula, adding adjacent Marathi prose and reader note OLTUR-005 that this output definition directly applies to runs retaining the marker; further rules are needed after overwrite.
+
+**Confidence/status:** high; confirmed conditional incompatibility; source does not specify the intended output convention after overwrite; open to correction.
+
+**Please double-check:** Should the machine convention forbid overwriting the end marker, or should the output map be redefined to handle such runs?
 
 </details>

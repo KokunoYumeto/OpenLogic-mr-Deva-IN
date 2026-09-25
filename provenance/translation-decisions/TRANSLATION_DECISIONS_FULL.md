@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 occurrences.
+Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 occurrences.
 
 ## T001 — set
 
@@ -5326,6 +5326,13 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T044-OLP-0230-B006` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:33-40` | `mr/content/computability/computability-theory/coding-computations.tex:30-36` | pending |
 | `T044-OLP-0230-B007` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:42-44` | `mr/content/computability/computability-theory/coding-computations.tex:38-40` | pending |
 | `T044-OLP-0237-B005` | `OLP-0237` |  | `upstream/content/computability/computability-theory/computable-sets.tex:12-13` | `mr/content/computability/computability-theory/computable-sets.tex:12-13` | pending |
+| `T044-OLP-0253-B004` | `OLP-0253` |  | `upstream/content/turing-machines/machines-computations/machines-computations.tex:8-8` | `mr/content/turing-machines/machines-computations/machines-computations.tex:8-8` | pending |
+| `T044-OLP-0254-B004` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:9-10` | `mr/content/turing-machines/machines-computations/introduction.tex:9-10` | pending |
+| `T044-OLP-0254-B005` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:12-27` | `mr/content/turing-machines/machines-computations/introduction.tex:12-26` | pending |
+| `T044-OLP-0254-B009` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:86-108` | `mr/content/turing-machines/machines-computations/introduction.tex:82-102` | pending |
+| `T044-OLP-0254-B010` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:110-128` | `mr/content/turing-machines/machines-computations/introduction.tex:104-124` | pending |
+| `T044-OLP-0257-B004` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:9-10` | `mr/content/turing-machines/machines-computations/configuration.tex:9-10` | pending |
+| `T044-OLP-0257-B005` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:12-23` | `mr/content/turing-machines/machines-computations/configuration.tex:12-23` | pending |
 
 ## T045 — function / mapping
 
@@ -5778,6 +5785,41 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T045-OLP-0246-B010` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:47-62` | `mr/content/computability/computability-theory/k-1.tex:49-65` | pending |
 | `T045-OLP-0246-B011` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:64-68` | `mr/content/computability/computability-theory/k-1.tex:67-72` | pending |
 | `T045-OLP-0246-B012` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:70-81` | `mr/content/computability/computability-theory/k-1.tex:74-85` | pending |
+| `T045-OLP-0247-B005` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:12-17` | `mr/content/computability/computability-theory/total.tex:12-18` | pending |
+| `T045-OLP-0247-B007` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:24-39` | `mr/content/computability/computability-theory/total.tex:25-42` | pending |
+| `T045-OLP-0247-B008` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:41-52` | `mr/content/computability/computability-theory/total.tex:44-56` | pending |
+| `T045-OLP-0248-B005` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:12-18` | `mr/content/computability/computability-theory/rice-theorem.tex:12-19` | pending |
+| `T045-OLP-0248-B007` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:23-28` | `mr/content/computability/computability-theory/rice-theorem.tex:24-29` | pending |
+| `T045-OLP-0248-B008` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:30-35` | `mr/content/computability/computability-theory/rice-theorem.tex:31-36` | pending |
+| `T045-OLP-0248-B009` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:37-51` | `mr/content/computability/computability-theory/rice-theorem.tex:38-52` | pending |
+| `T045-OLP-0248-B010` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:53-57` | `mr/content/computability/computability-theory/rice-theorem.tex:54-58` | pending |
+| `T045-OLP-0248-B011` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:59-64` | `mr/content/computability/computability-theory/rice-theorem.tex:60-66` | pending |
+| `T045-OLP-0248-B012` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:66-82` | `mr/content/computability/computability-theory/rice-theorem.tex:68-86` | pending |
+| `T045-OLP-0248-B013` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:84-86` | `mr/content/computability/computability-theory/rice-theorem.tex:88-90` | pending |
+| `T045-OLP-0248-B014` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:88-95` | `mr/content/computability/computability-theory/rice-theorem.tex:92-100` | pending |
+| `T045-OLP-0248-B015` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:97-107` | `mr/content/computability/computability-theory/rice-theorem.tex:102-115` | pending |
+| `T045-OLP-0249-B005` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:12-16` | `mr/content/computability/computability-theory/fixed-point-thm.tex:12-16` | pending |
+| `T045-OLP-0249-B006` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:18-26` | `mr/content/computability/computability-theory/fixed-point-thm.tex:18-26` | pending |
+| `T045-OLP-0249-B007` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:28-45` | `mr/content/computability/computability-theory/fixed-point-thm.tex:28-46` | pending |
+| `T045-OLP-0249-B010` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:60-75` | `mr/content/computability/computability-theory/fixed-point-thm.tex:61-76` | pending |
+| `T045-OLP-0249-B011` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:77-83` | `mr/content/computability/computability-theory/fixed-point-thm.tex:78-86` | pending |
+| `T045-OLP-0249-B012` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:85-93` | `mr/content/computability/computability-theory/fixed-point-thm.tex:88-97` | pending |
+| `T045-OLP-0249-B013` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:95-102` | `mr/content/computability/computability-theory/fixed-point-thm.tex:99-106` | pending |
+| `T045-OLP-0249-B014` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:104-111` | `mr/content/computability/computability-theory/fixed-point-thm.tex:108-115` | pending |
+| `T045-OLP-0249-B015` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133` | `mr/content/computability/computability-theory/fixed-point-thm.tex:117-139` | pending |
+| `T045-OLP-0249-B016` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:135-149` | `mr/content/computability/computability-theory/fixed-point-thm.tex:141-155` | pending |
+| `T045-OLP-0249-B017` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:151-179` | `mr/content/computability/computability-theory/fixed-point-thm.tex:157-185` | pending |
+| `T045-OLP-0249-B018` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:181-201` | `mr/content/computability/computability-theory/fixed-point-thm.tex:187-208` | pending |
+| `T045-OLP-0249-B020` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:210-241` | `mr/content/computability/computability-theory/fixed-point-thm.tex:217-251` | pending |
+| `T045-OLP-0250-B005` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:12-19` | `mr/content/computability/computability-theory/application-fixed-point.tex:12-21` | pending |
+| `T045-OLP-0250-B006` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:21-26` | `mr/content/computability/computability-theory/application-fixed-point.tex:23-29` | pending |
+| `T045-OLP-0250-B007` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:28-32` | `mr/content/computability/computability-theory/application-fixed-point.tex:31-35` | pending |
+| `T045-OLP-0250-B008` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:34-60` | `mr/content/computability/computability-theory/application-fixed-point.tex:37-65` | pending |
+| `T045-OLP-0250-B009` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:62-68` | `mr/content/computability/computability-theory/application-fixed-point.tex:67-77` | pending |
+| `T045-OLP-0251-B004` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:9-10` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:9-10` | pending |
+| `T045-OLP-0251-B005` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:12-32` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:12-33` | pending |
+| `T045-OLP-0251-B006` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:34-47` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:35-49` | pending |
+| `T045-OLP-0251-B007` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:49-55` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:51-58` | pending |
 
 ## T046 — domain / codomain / range
 
@@ -6025,6 +6067,10 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T046-OLP-0242-B008` | `OLP-0242` |  | `upstream/content/computability/computability-theory/complement-ce.tex:28-42` | `mr/content/computability/computability-theory/complement-ce.tex:29-45` | pending |
 | `T046-OLP-0243-B007` | `OLP-0243` |  | `upstream/content/computability/computability-theory/reducibility.tex:31-48` | `mr/content/computability/computability-theory/reducibility.tex:32-53` | pending |
 | `T046-OLP-0244-B010` | `OLP-0244` |  | `upstream/content/computability/computability-theory/prop-reduce.tex:44-51` | `mr/content/computability/computability-theory/prop-reduce.tex:48-56` | pending |
+| `T046-OLP-0248-B011` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:59-64` | `mr/content/computability/computability-theory/rice-theorem.tex:60-66` | pending |
+| `T046-OLP-0248-B016` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:109-120` | `mr/content/computability/computability-theory/rice-theorem.tex:117-128` | pending |
+| `T046-OLP-0250-B006` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:21-26` | `mr/content/computability/computability-theory/application-fixed-point.tex:23-29` | pending |
+| `T046-OLP-0250-B009` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:62-68` | `mr/content/computability/computability-theory/application-fixed-point.tex:67-77` | pending |
 
 ## T047 — argument / input / output / value
 
@@ -6930,6 +6976,8 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T056-OLP-0241-B010` | `OLP-0241` |  | `upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:36-42` | `mr/content/computability/computability-theory/ce-closed-cup-cap.tex:40-46` | pending |
 | `T056-OLP-0241-B011` | `OLP-0241` |  | `upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:44-65` | `mr/content/computability/computability-theory/ce-closed-cup-cap.tex:48-71` | pending |
 | `T056-OLP-0245-B008` | `OLP-0245` |  | `upstream/content/computability/computability-theory/complete-ce-sets.tex:29-37` | `mr/content/computability/computability-theory/complete-ce-sets.tex:31-41` | pending |
+| `T056-OLP-0248-B006` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:20-21` | `mr/content/computability/computability-theory/rice-theorem.tex:21-22` | pending |
+| `T056-OLP-0250-B006` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:21-26` | `mr/content/computability/computability-theory/application-fixed-point.tex:23-29` | pending |
 
 ## T057 — enumerable / countable / uncountable
 
@@ -7842,6 +7890,10 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T074-OLP-0246-B008` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:27-28` | `mr/content/computability/computability-theory/k-1.tex:28-29` | pending |
 | `T074-OLP-0246-B009` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:30-45` | `mr/content/computability/computability-theory/k-1.tex:31-47` | pending |
 | `T074-OLP-0246-B012` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:70-81` | `mr/content/computability/computability-theory/k-1.tex:74-85` | pending |
+| `T074-OLP-0247-B007` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:24-39` | `mr/content/computability/computability-theory/total.tex:25-42` | pending |
+| `T074-OLP-0247-B008` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:41-52` | `mr/content/computability/computability-theory/total.tex:44-56` | pending |
+| `T074-OLP-0248-B005` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:12-18` | `mr/content/computability/computability-theory/rice-theorem.tex:12-19` | pending |
+| `T074-OLP-0248-B015` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:97-107` | `mr/content/computability/computability-theory/rice-theorem.tex:102-115` | pending |
 
 ## T075 — no larger than / smaller than (cardinal comparison)
 
@@ -15902,6 +15954,7 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T198-OLP-0189-B026` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:215-221` | `mr/content/model-theory/basics/partial-iso.tex:217-223` | 246–248 |
 | `T198-OLP-0242-B005` | `OLP-0242` |  | `upstream/content/computability/computability-theory/complement-ce.tex:12-15` | `mr/content/computability/computability-theory/complement-ce.tex:12-15` | pending |
 | `T198-OLP-0242-B010` | `OLP-0242` |  | `upstream/content/computability/computability-theory/complement-ce.tex:51-54` | `mr/content/computability/computability-theory/complement-ce.tex:55-58` | pending |
+| `T198-OLP-0248-B016` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:109-120` | `mr/content/computability/computability-theory/rice-theorem.tex:117-128` | pending |
 
 ## T199 — finitely satisfiable / finite satisfiability
 
@@ -16459,6 +16512,7 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T207-OLP-0232-B007` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:30-41` | `mr/content/computability/computability-theory/s-m-n.tex:29-41` | pending |
 | `T207-OLP-0233-B007` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:28-40` | `mr/content/computability/computability-theory/universal-part-function.tex:29-41` | pending |
 | `T207-OLP-0246-B010` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:47-62` | `mr/content/computability/computability-theory/k-1.tex:49-65` | pending |
+| `T207-OLP-0249-B015` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133` | `mr/content/computability/computability-theory/fixed-point-thm.tex:117-139` | pending |
 
 ## T208 — universal quantifier / existential quantifier
 
@@ -19603,6 +19657,42 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T287-OLP-0246-B006` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:14-21` | `mr/content/computability/computability-theory/k-1.tex:14-21` | pending |
 | `T287-OLP-0246-B007` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:23-25` | `mr/content/computability/computability-theory/k-1.tex:23-26` | pending |
 | `T287-OLP-0246-B008` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:27-28` | `mr/content/computability/computability-theory/k-1.tex:28-29` | pending |
+| `T287-OLP-0247-B004` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:9-10` | `mr/content/computability/computability-theory/total.tex:9-10` | pending |
+| `T287-OLP-0247-B005` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:12-17` | `mr/content/computability/computability-theory/total.tex:12-18` | pending |
+| `T287-OLP-0247-B006` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:19-22` | `mr/content/computability/computability-theory/total.tex:20-23` | pending |
+| `T287-OLP-0247-B007` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:24-39` | `mr/content/computability/computability-theory/total.tex:25-42` | pending |
+| `T287-OLP-0247-B008` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:41-52` | `mr/content/computability/computability-theory/total.tex:44-56` | pending |
+| `T287-OLP-0247-B009` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:54-58` | `mr/content/computability/computability-theory/total.tex:58-62` | pending |
+| `T287-OLP-0248-B005` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:12-18` | `mr/content/computability/computability-theory/rice-theorem.tex:12-19` | pending |
+| `T287-OLP-0248-B006` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:20-21` | `mr/content/computability/computability-theory/rice-theorem.tex:21-22` | pending |
+| `T287-OLP-0248-B007` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:23-28` | `mr/content/computability/computability-theory/rice-theorem.tex:24-29` | pending |
+| `T287-OLP-0248-B008` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:30-35` | `mr/content/computability/computability-theory/rice-theorem.tex:31-36` | pending |
+| `T287-OLP-0248-B009` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:37-51` | `mr/content/computability/computability-theory/rice-theorem.tex:38-52` | pending |
+| `T287-OLP-0248-B010` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:53-57` | `mr/content/computability/computability-theory/rice-theorem.tex:54-58` | pending |
+| `T287-OLP-0248-B011` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:59-64` | `mr/content/computability/computability-theory/rice-theorem.tex:60-66` | pending |
+| `T287-OLP-0248-B012` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:66-82` | `mr/content/computability/computability-theory/rice-theorem.tex:68-86` | pending |
+| `T287-OLP-0248-B013` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:84-86` | `mr/content/computability/computability-theory/rice-theorem.tex:88-90` | pending |
+| `T287-OLP-0248-B014` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:88-95` | `mr/content/computability/computability-theory/rice-theorem.tex:92-100` | pending |
+| `T287-OLP-0248-B015` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:97-107` | `mr/content/computability/computability-theory/rice-theorem.tex:102-115` | pending |
+| `T287-OLP-0248-B016` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:109-120` | `mr/content/computability/computability-theory/rice-theorem.tex:117-128` | pending |
+| `T287-OLP-0248-B017` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:122-124` | `mr/content/computability/computability-theory/rice-theorem.tex:130-132` | pending |
+| `T287-OLP-0249-B006` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:18-26` | `mr/content/computability/computability-theory/fixed-point-thm.tex:18-26` | pending |
+| `T287-OLP-0249-B007` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:28-45` | `mr/content/computability/computability-theory/fixed-point-thm.tex:28-46` | pending |
+| `T287-OLP-0249-B010` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:60-75` | `mr/content/computability/computability-theory/fixed-point-thm.tex:61-76` | pending |
+| `T287-OLP-0249-B011` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:77-83` | `mr/content/computability/computability-theory/fixed-point-thm.tex:78-86` | pending |
+| `T287-OLP-0249-B012` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:85-93` | `mr/content/computability/computability-theory/fixed-point-thm.tex:88-97` | pending |
+| `T287-OLP-0249-B013` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:95-102` | `mr/content/computability/computability-theory/fixed-point-thm.tex:99-106` | pending |
+| `T287-OLP-0249-B014` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:104-111` | `mr/content/computability/computability-theory/fixed-point-thm.tex:108-115` | pending |
+| `T287-OLP-0249-B015` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133` | `mr/content/computability/computability-theory/fixed-point-thm.tex:117-139` | pending |
+| `T287-OLP-0250-B005` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:12-19` | `mr/content/computability/computability-theory/application-fixed-point.tex:12-21` | pending |
+| `T287-OLP-0250-B006` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:21-26` | `mr/content/computability/computability-theory/application-fixed-point.tex:23-29` | pending |
+| `T287-OLP-0250-B007` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:28-32` | `mr/content/computability/computability-theory/application-fixed-point.tex:31-35` | pending |
+| `T287-OLP-0250-B008` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:34-60` | `mr/content/computability/computability-theory/application-fixed-point.tex:37-65` | pending |
+| `T287-OLP-0250-B009` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:62-68` | `mr/content/computability/computability-theory/application-fixed-point.tex:67-77` | pending |
+| `T287-OLP-0251-B005` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:12-32` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:12-33` | pending |
+| `T287-OLP-0254-B005` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:12-27` | `mr/content/turing-machines/machines-computations/introduction.tex:12-26` | pending |
+| `T287-OLP-0254-B009` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:86-108` | `mr/content/turing-machines/machines-computations/introduction.tex:82-102` | pending |
+| `T287-OLP-0254-B010` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:110-128` | `mr/content/turing-machines/machines-computations/introduction.tex:104-124` | pending |
 
 ## T288 — Turing machine / primitive recursion
 
@@ -19676,6 +19766,26 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T288-OLP-0237-B008` | `OLP-0237` |  | `upstream/content/computability/computability-theory/computable-sets.tex:32-40` | `mr/content/computability/computability-theory/computable-sets.tex:33-39` | pending |
 | `T288-OLP-0239-B013` | `OLP-0239` |  | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:88-105` | `mr/content/computability/computability-theory/equiv-ce-defs.tex:99-121` | pending |
 | `T288-OLP-0239-B014` | `OLP-0239` |  | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:107-127` | `mr/content/computability/computability-theory/equiv-ce-defs.tex:123-143` | pending |
+| `T288-OLP-0252-B004` | `OLP-0252` |  | `upstream/content/turing-machines/turing-machines.tex:7-7` | `mr/content/turing-machines/turing-machines.tex:7-7` | pending |
+| `T288-OLP-0253-B004` | `OLP-0253` |  | `upstream/content/turing-machines/machines-computations/machines-computations.tex:8-8` | `mr/content/turing-machines/machines-computations/machines-computations.tex:8-8` | pending |
+| `T288-OLP-0254-B005` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:12-27` | `mr/content/turing-machines/machines-computations/introduction.tex:12-26` | pending |
+| `T288-OLP-0254-B006` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:29-53` | `mr/content/turing-machines/machines-computations/introduction.tex:28-50` | pending |
+| `T288-OLP-0254-B007` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:55-75` | `mr/content/turing-machines/machines-computations/introduction.tex:52-70` | pending |
+| `T288-OLP-0254-B009` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:86-108` | `mr/content/turing-machines/machines-computations/introduction.tex:82-102` | pending |
+| `T288-OLP-0254-B010` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:110-128` | `mr/content/turing-machines/machines-computations/introduction.tex:104-124` | pending |
+| `T288-OLP-0255-B004` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:9-10` | `mr/content/turing-machines/machines-computations/representing-tms.tex:9-10` | pending |
+| `T288-OLP-0255-B005` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:12-23` | `mr/content/turing-machines/machines-computations/representing-tms.tex:12-22` | pending |
+| `T288-OLP-0255-B007` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:28-37` | `mr/content/turing-machines/machines-computations/representing-tms.tex:27-36` | pending |
+| `T288-OLP-0255-B008` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:39-47` | `mr/content/turing-machines/machines-computations/representing-tms.tex:38-45` | pending |
+| `T288-OLP-0255-B022` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:201-207` | `mr/content/turing-machines/machines-computations/representing-tms.tex:193-199` | pending |
+| `T288-OLP-0256-B004` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:9-10` | `mr/content/turing-machines/machines-computations/turing-machines.tex:9-10` | pending |
+| `T288-OLP-0256-B005` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:12-20` | `mr/content/turing-machines/machines-computations/turing-machines.tex:12-19` | pending |
+| `T288-OLP-0256-B006` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:22-35` | `mr/content/turing-machines/machines-computations/turing-machines.tex:21-34` | pending |
+| `T288-OLP-0256-B007` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:37-48` | `mr/content/turing-machines/machines-computations/turing-machines.tex:36-48` | pending |
+| `T288-OLP-0256-B008` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:50-60` | `mr/content/turing-machines/machines-computations/turing-machines.tex:50-60` | pending |
+| `T288-OLP-0257-B005` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:12-23` | `mr/content/turing-machines/machines-computations/configuration.tex:12-23` | pending |
+| `T288-OLP-0257-B006` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:25-38` | `mr/content/turing-machines/machines-computations/configuration.tex:25-39` | pending |
+| `T288-OLP-0257-B007` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:40-49` | `mr/content/turing-machines/machines-computations/configuration.tex:41-51` | pending |
 
 ## T289 — Tennenbaum (surname, in Tennenbaum's theorem)
 
@@ -20142,6 +20252,10 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T301-OLP-0238-B008` | `OLP-0238` |  | `upstream/content/computability/computability-theory/ce-sets.tex:40-51` | `mr/content/computability/computability-theory/ce-sets.tex:38-49` | pending |
 | `T301-OLP-0240-B011` | `OLP-0240` |  | `upstream/content/computability/computability-theory/non-comp-set.tex:47-58` | `mr/content/computability/computability-theory/non-comp-set.tex:49-61` | pending |
 | `T301-OLP-0244-B013` | `OLP-0244` |  | `upstream/content/computability/computability-theory/prop-reduce.tex:68-71` | `mr/content/computability/computability-theory/prop-reduce.tex:77-82` | pending |
+| `T301-OLP-0250-B006` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:21-26` | `mr/content/computability/computability-theory/application-fixed-point.tex:23-29` | pending |
+| `T301-OLP-0250-B007` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:28-32` | `mr/content/computability/computability-theory/application-fixed-point.tex:31-35` | pending |
+| `T301-OLP-0250-B008` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:34-60` | `mr/content/computability/computability-theory/application-fixed-point.tex:37-65` | pending |
+| `T301-OLP-0250-B009` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:62-68` | `mr/content/computability/computability-theory/application-fixed-point.tex:67-77` | pending |
 
 ## T302 — primitive recursive / partial recursive / general recursive function
 
@@ -20337,6 +20451,15 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T303-OLP-0240-B007` | `OLP-0240` |  | `upstream/content/computability/computability-theory/non-comp-set.tex:21-30` | `mr/content/computability/computability-theory/non-comp-set.tex:21-30` | pending |
 | `T303-OLP-0240-B012` | `OLP-0240` |  | `upstream/content/computability/computability-theory/non-comp-set.tex:60-61` | `mr/content/computability/computability-theory/non-comp-set.tex:63-65` | pending |
 | `T303-OLP-0242-B008` | `OLP-0242` |  | `upstream/content/computability/computability-theory/complement-ce.tex:28-42` | `mr/content/computability/computability-theory/complement-ce.tex:29-45` | pending |
+| `T303-OLP-0247-B004` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:9-10` | `mr/content/computability/computability-theory/total.tex:9-10` | pending |
+| `T303-OLP-0247-B005` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:12-17` | `mr/content/computability/computability-theory/total.tex:12-18` | pending |
+| `T303-OLP-0247-B006` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:19-22` | `mr/content/computability/computability-theory/total.tex:20-23` | pending |
+| `T303-OLP-0247-B007` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:24-39` | `mr/content/computability/computability-theory/total.tex:25-42` | pending |
+| `T303-OLP-0247-B008` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:41-52` | `mr/content/computability/computability-theory/total.tex:44-56` | pending |
+| `T303-OLP-0248-B005` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:12-18` | `mr/content/computability/computability-theory/rice-theorem.tex:12-19` | pending |
+| `T303-OLP-0248-B012` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:66-82` | `mr/content/computability/computability-theory/rice-theorem.tex:68-86` | pending |
+| `T303-OLP-0248-B016` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:109-120` | `mr/content/computability/computability-theory/rice-theorem.tex:117-128` | pending |
+| `T303-OLP-0251-B006` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:34-47` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:35-49` | pending |
 
 ## T304 — lambda calculus / simulate a model of computation
 
@@ -20369,6 +20492,9 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T304-OLP-0223-B011` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96` | `mr/content/computability/recursive-functions/non-pr-functions.tex:85-92` | pending |
 | `T304-OLP-0229-B009` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:50-66` | `mr/content/computability/computability-theory/introduction.tex:51-64` | pending |
 | `T304-OLP-0230-B005` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:12-31` | `mr/content/computability/computability-theory/coding-computations.tex:12-28` | pending |
+| `T304-OLP-0249-B020` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:210-241` | `mr/content/computability/computability-theory/fixed-point-thm.tex:217-251` | pending |
+| `T304-OLP-0254-B005` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:12-27` | `mr/content/turing-machines/machines-computations/introduction.tex:12-26` | pending |
+| `T304-OLP-0254-B009` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:86-108` | `mr/content/turing-machines/machines-computations/introduction.tex:82-102` | pending |
 
 ## T305 — notation for a primitive recursive function; composition and recursion notation
 
@@ -20707,6 +20833,12 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T312-OLP-0233-B007` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:28-40` | `mr/content/computability/computability-theory/universal-part-function.tex:29-41` | pending |
 | `T312-OLP-0239-B010` | `OLP-0239` |  | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:54-72` | `mr/content/computability/computability-theory/equiv-ce-defs.tex:58-79` | pending |
 | `T312-OLP-0240-B007` | `OLP-0240` |  | `upstream/content/computability/computability-theory/non-comp-set.tex:21-30` | `mr/content/computability/computability-theory/non-comp-set.tex:21-30` | pending |
+| `T312-OLP-0257-B005` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:12-23` | `mr/content/turing-machines/machines-computations/configuration.tex:12-23` | pending |
+| `T312-OLP-0257-B006` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:25-38` | `mr/content/turing-machines/machines-computations/configuration.tex:25-39` | pending |
+| `T312-OLP-0257-B007` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:40-49` | `mr/content/turing-machines/machines-computations/configuration.tex:41-51` | pending |
+| `T312-OLP-0257-B008` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `mr/content/turing-machines/machines-computations/configuration.tex:53-63` | pending |
+| `T312-OLP-0257-B009` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `mr/content/turing-machines/machines-computations/configuration.tex:65-69` | pending |
+| `T312-OLP-0257-B011` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:84-87` | `mr/content/turing-machines/machines-computations/configuration.tex:92-96` | pending |
 
 ## T313 — Fundamental Theorem of Arithmetic / unique prime factorization / prime factor
 
@@ -20833,6 +20965,7 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T316-OLP-0222-B006` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:50-55` | `mr/content/computability/recursive-functions/other-recursions.tex:48-53` | pending |
+| `T316-OLP-0251-B006` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:34-47` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:35-49` | pending |
 
 ## T317 — non-primitive-recursive function / effective diagonal argument / Ackermann–Péter function / grows faster than
 
@@ -20959,6 +21092,39 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T319-OLP-0246-B010` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:47-62` | `mr/content/computability/computability-theory/k-1.tex:49-65` | pending |
 | `T319-OLP-0246-B011` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:64-68` | `mr/content/computability/computability-theory/k-1.tex:67-72` | pending |
 | `T319-OLP-0246-B012` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:70-81` | `mr/content/computability/computability-theory/k-1.tex:74-85` | pending |
+| `T319-OLP-0247-B005` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:12-17` | `mr/content/computability/computability-theory/total.tex:12-18` | pending |
+| `T319-OLP-0247-B007` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:24-39` | `mr/content/computability/computability-theory/total.tex:25-42` | pending |
+| `T319-OLP-0247-B008` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:41-52` | `mr/content/computability/computability-theory/total.tex:44-56` | pending |
+| `T319-OLP-0248-B005` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:12-18` | `mr/content/computability/computability-theory/rice-theorem.tex:12-19` | pending |
+| `T319-OLP-0248-B006` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:20-21` | `mr/content/computability/computability-theory/rice-theorem.tex:21-22` | pending |
+| `T319-OLP-0248-B007` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:23-28` | `mr/content/computability/computability-theory/rice-theorem.tex:24-29` | pending |
+| `T319-OLP-0248-B009` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:37-51` | `mr/content/computability/computability-theory/rice-theorem.tex:38-52` | pending |
+| `T319-OLP-0248-B010` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:53-57` | `mr/content/computability/computability-theory/rice-theorem.tex:54-58` | pending |
+| `T319-OLP-0248-B011` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:59-64` | `mr/content/computability/computability-theory/rice-theorem.tex:60-66` | pending |
+| `T319-OLP-0248-B012` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:66-82` | `mr/content/computability/computability-theory/rice-theorem.tex:68-86` | pending |
+| `T319-OLP-0248-B013` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:84-86` | `mr/content/computability/computability-theory/rice-theorem.tex:88-90` | pending |
+| `T319-OLP-0248-B014` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:88-95` | `mr/content/computability/computability-theory/rice-theorem.tex:92-100` | pending |
+| `T319-OLP-0248-B015` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:97-107` | `mr/content/computability/computability-theory/rice-theorem.tex:102-115` | pending |
+| `T319-OLP-0248-B016` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:109-120` | `mr/content/computability/computability-theory/rice-theorem.tex:117-128` | pending |
+| `T319-OLP-0249-B006` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:18-26` | `mr/content/computability/computability-theory/fixed-point-thm.tex:18-26` | pending |
+| `T319-OLP-0249-B007` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:28-45` | `mr/content/computability/computability-theory/fixed-point-thm.tex:28-46` | pending |
+| `T319-OLP-0249-B008` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:47-51` | `mr/content/computability/computability-theory/fixed-point-thm.tex:48-52` | pending |
+| `T319-OLP-0249-B010` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:60-75` | `mr/content/computability/computability-theory/fixed-point-thm.tex:61-76` | pending |
+| `T319-OLP-0249-B011` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:77-83` | `mr/content/computability/computability-theory/fixed-point-thm.tex:78-86` | pending |
+| `T319-OLP-0249-B012` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:85-93` | `mr/content/computability/computability-theory/fixed-point-thm.tex:88-97` | pending |
+| `T319-OLP-0249-B015` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133` | `mr/content/computability/computability-theory/fixed-point-thm.tex:117-139` | pending |
+| `T319-OLP-0249-B016` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:135-149` | `mr/content/computability/computability-theory/fixed-point-thm.tex:141-155` | pending |
+| `T319-OLP-0250-B005` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:12-19` | `mr/content/computability/computability-theory/application-fixed-point.tex:12-21` | pending |
+| `T319-OLP-0250-B007` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:28-32` | `mr/content/computability/computability-theory/application-fixed-point.tex:31-35` | pending |
+| `T319-OLP-0250-B008` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:34-60` | `mr/content/computability/computability-theory/application-fixed-point.tex:37-65` | pending |
+| `T319-OLP-0250-B009` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:62-68` | `mr/content/computability/computability-theory/application-fixed-point.tex:67-77` | pending |
+| `T319-OLP-0251-B005` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:12-32` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:12-33` | pending |
+| `T319-OLP-0251-B006` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:34-47` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:35-49` | pending |
+| `T319-OLP-0254-B006` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:29-53` | `mr/content/turing-machines/machines-computations/introduction.tex:28-50` | pending |
+| `T319-OLP-0254-B008` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:77-84` | `mr/content/turing-machines/machines-computations/introduction.tex:72-80` | pending |
+| `T319-OLP-0256-B006` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:22-35` | `mr/content/turing-machines/machines-computations/turing-machines.tex:21-34` | pending |
+| `T319-OLP-0257-B010` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:63-82` | `mr/content/turing-machines/machines-computations/configuration.tex:71-90` | pending |
+| `T319-OLP-0257-B012` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `mr/content/turing-machines/machines-computations/configuration.tex:98-110` | pending |
 
 ## T320 — disjoint domains of chosen isomorphic copies / sufficient union construction
 
@@ -21057,6 +21223,33 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T321-OLP-0246-B010` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:47-62` | `mr/content/computability/computability-theory/k-1.tex:49-65` | pending |
 | `T321-OLP-0246-B011` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:64-68` | `mr/content/computability/computability-theory/k-1.tex:67-72` | pending |
 | `T321-OLP-0246-B012` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:70-81` | `mr/content/computability/computability-theory/k-1.tex:74-85` | pending |
+| `T321-OLP-0247-B005` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:12-17` | `mr/content/computability/computability-theory/total.tex:12-18` | pending |
+| `T321-OLP-0247-B007` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:24-39` | `mr/content/computability/computability-theory/total.tex:25-42` | pending |
+| `T321-OLP-0247-B008` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:41-52` | `mr/content/computability/computability-theory/total.tex:44-56` | pending |
+| `T321-OLP-0248-B005` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:12-18` | `mr/content/computability/computability-theory/rice-theorem.tex:12-19` | pending |
+| `T321-OLP-0248-B006` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:20-21` | `mr/content/computability/computability-theory/rice-theorem.tex:21-22` | pending |
+| `T321-OLP-0248-B007` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:23-28` | `mr/content/computability/computability-theory/rice-theorem.tex:24-29` | pending |
+| `T321-OLP-0248-B008` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:30-35` | `mr/content/computability/computability-theory/rice-theorem.tex:31-36` | pending |
+| `T321-OLP-0248-B010` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:53-57` | `mr/content/computability/computability-theory/rice-theorem.tex:54-58` | pending |
+| `T321-OLP-0248-B012` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:66-82` | `mr/content/computability/computability-theory/rice-theorem.tex:68-86` | pending |
+| `T321-OLP-0248-B014` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:88-95` | `mr/content/computability/computability-theory/rice-theorem.tex:92-100` | pending |
+| `T321-OLP-0248-B015` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:97-107` | `mr/content/computability/computability-theory/rice-theorem.tex:102-115` | pending |
+| `T321-OLP-0249-B005` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:12-16` | `mr/content/computability/computability-theory/fixed-point-thm.tex:12-16` | pending |
+| `T321-OLP-0249-B006` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:18-26` | `mr/content/computability/computability-theory/fixed-point-thm.tex:18-26` | pending |
+| `T321-OLP-0249-B007` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:28-45` | `mr/content/computability/computability-theory/fixed-point-thm.tex:28-46` | pending |
+| `T321-OLP-0249-B008` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:47-51` | `mr/content/computability/computability-theory/fixed-point-thm.tex:48-52` | pending |
+| `T321-OLP-0249-B010` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:60-75` | `mr/content/computability/computability-theory/fixed-point-thm.tex:61-76` | pending |
+| `T321-OLP-0249-B011` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:77-83` | `mr/content/computability/computability-theory/fixed-point-thm.tex:78-86` | pending |
+| `T321-OLP-0249-B012` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:85-93` | `mr/content/computability/computability-theory/fixed-point-thm.tex:88-97` | pending |
+| `T321-OLP-0249-B013` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:95-102` | `mr/content/computability/computability-theory/fixed-point-thm.tex:99-106` | pending |
+| `T321-OLP-0249-B014` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:104-111` | `mr/content/computability/computability-theory/fixed-point-thm.tex:108-115` | pending |
+| `T321-OLP-0249-B015` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133` | `mr/content/computability/computability-theory/fixed-point-thm.tex:117-139` | pending |
+| `T321-OLP-0249-B016` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:135-149` | `mr/content/computability/computability-theory/fixed-point-thm.tex:141-155` | pending |
+| `T321-OLP-0250-B005` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:12-19` | `mr/content/computability/computability-theory/application-fixed-point.tex:12-21` | pending |
+| `T321-OLP-0250-B007` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:28-32` | `mr/content/computability/computability-theory/application-fixed-point.tex:31-35` | pending |
+| `T321-OLP-0250-B008` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:34-60` | `mr/content/computability/computability-theory/application-fixed-point.tex:37-65` | pending |
+| `T321-OLP-0251-B005` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:12-32` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:12-33` | pending |
+| `T321-OLP-0251-B007` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:49-55` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:51-58` | pending |
 
 ## T322 — halting problem / halting function / total code numbering
 
@@ -21103,6 +21296,19 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T322-OLP-0240-B010` | `OLP-0240` |  | `upstream/content/computability/computability-theory/non-comp-set.tex:42-45` | `mr/content/computability/computability-theory/non-comp-set.tex:44-47` | pending |
 | `T322-OLP-0240-B011` | `OLP-0240` |  | `upstream/content/computability/computability-theory/non-comp-set.tex:47-58` | `mr/content/computability/computability-theory/non-comp-set.tex:49-61` | pending |
 | `T322-OLP-0243-B007` | `OLP-0243` |  | `upstream/content/computability/computability-theory/reducibility.tex:31-48` | `mr/content/computability/computability-theory/reducibility.tex:32-53` | pending |
+| `T322-OLP-0254-B008` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:77-84` | `mr/content/turing-machines/machines-computations/introduction.tex:72-80` | pending |
+| `T322-OLP-0255-B008` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:39-47` | `mr/content/turing-machines/machines-computations/representing-tms.tex:38-45` | pending |
+| `T322-OLP-0255-B012` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:66-75` | `mr/content/turing-machines/machines-computations/representing-tms.tex:64-72` | pending |
+| `T322-OLP-0255-B013` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:77-80` | `mr/content/turing-machines/machines-computations/representing-tms.tex:74-76` | pending |
+| `T322-OLP-0255-B014` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:82-113` | `mr/content/turing-machines/machines-computations/representing-tms.tex:78-110` | pending |
+| `T322-OLP-0255-B015` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:115-139` | `mr/content/turing-machines/machines-computations/representing-tms.tex:112-134` | pending |
+| `T322-OLP-0255-B016` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:141-148` | `mr/content/turing-machines/machines-computations/representing-tms.tex:136-142` | pending |
+| `T322-OLP-0255-B021` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:182-199` | `mr/content/turing-machines/machines-computations/representing-tms.tex:174-191` | pending |
+| `T322-OLP-0255-B027` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:262-270` | `mr/content/turing-machines/machines-computations/representing-tms.tex:253-262` | pending |
+| `T322-OLP-0255-B029` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:279-286` | `mr/content/turing-machines/machines-computations/representing-tms.tex:272-279` | pending |
+| `T322-OLP-0256-B008` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:50-60` | `mr/content/turing-machines/machines-computations/turing-machines.tex:50-60` | pending |
+| `T322-OLP-0257-B012` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `mr/content/turing-machines/machines-computations/configuration.tex:98-110` | pending |
+| `T322-OLP-0257-B013` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `mr/content/turing-machines/machines-computations/configuration.tex:112-117` | pending |
 
 ## T323 — regular function / general recursive function / total function
 
@@ -21276,6 +21482,7 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T326-OLP-0236-B009` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:37-48` | `mr/content/computability/computability-theory/russells-paradox.tex:38-50` | pending |
 | `T326-OLP-0236-B010` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:50-53` | `mr/content/computability/computability-theory/russells-paradox.tex:52-55` | pending |
 | `T326-OLP-0236-B011` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:55-73` | `mr/content/computability/computability-theory/russells-paradox.tex:57-74` | pending |
+| `T326-OLP-0249-B015` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133` | `mr/content/computability/computability-theory/fixed-point-thm.tex:117-139` | pending |
 
 ## T327 — computably enumerable set / recursively enumerable set
 
@@ -21360,6 +21567,8 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T327-OLP-0245-B012` | `OLP-0245` |  | `upstream/content/computability/computability-theory/complete-ce-sets.tex:51-58` | `mr/content/computability/computability-theory/complete-ce-sets.tex:57-64` | pending |
 | `T327-OLP-0246-B006` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:14-21` | `mr/content/computability/computability-theory/k-1.tex:14-21` | pending |
 | `T327-OLP-0246-B007` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:23-25` | `mr/content/computability/computability-theory/k-1.tex:23-26` | pending |
+| `T327-OLP-0247-B009` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:54-58` | `mr/content/computability/computability-theory/total.tex:58-62` | pending |
+| `T327-OLP-0250-B006` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:21-26` | `mr/content/computability/computability-theory/application-fixed-point.tex:23-29` | pending |
 
 ## T328 — semi-decidable set / partial computable domain / equivalent c.e. characterizations
 
@@ -21466,6 +21675,10 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | `T329-OLP-0246-B008` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:27-28` | `mr/content/computability/computability-theory/k-1.tex:28-29` | pending |
 | `T329-OLP-0246-B009` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:30-45` | `mr/content/computability/computability-theory/k-1.tex:31-47` | pending |
 | `T329-OLP-0246-B012` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:70-81` | `mr/content/computability/computability-theory/k-1.tex:74-85` | pending |
+| `T329-OLP-0247-B007` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:24-39` | `mr/content/computability/computability-theory/total.tex:25-42` | pending |
+| `T329-OLP-0247-B008` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:41-52` | `mr/content/computability/computability-theory/total.tex:44-56` | pending |
+| `T329-OLP-0248-B005` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:12-18` | `mr/content/computability/computability-theory/rice-theorem.tex:12-19` | pending |
+| `T329-OLP-0248-B015` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:97-107` | `mr/content/computability/computability-theory/rice-theorem.tex:102-115` | pending |
 
 ## T330 — Turing reducibility / Karp reducibility / Cook reducibility
 
@@ -21557,6 +21770,315 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T332-OLP-0246-B009` | `OLP-0246` |  | `upstream/content/computability/computability-theory/k-1.tex:30-45` | `mr/content/computability/computability-theory/k-1.tex:31-47` | pending |
+
+## T333 — totality of a partial computable function / index set Tot / arithmetical hierarchy
+
+**Chosen rendering/action:** सर्वत्र परिभाषितता / निर्देशांकसंच Tot / अंकगणितीय पदानुक्रम
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** T303 already uses सर्वत्र परिभाषित for a total function, and the consulted computability and index passages support the components. The Tot index set and its non-c.e. position are defined by OpenLogic; अंकगणितीय पदानुक्रम is a transparent descriptive compound rather than a directly attested headword in the checked canon.
+
+**Rationale:** T303 already uses सर्वत्र परिभाषित for a total function, and the consulted computability and index passages support the components. The Tot index set and its non-c.e. position are defined by OpenLogic; अंकगणितीय पदानुक्रम is a transparent descriptive compound rather than a directly attested headword in the checked canon.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P129` — गणितशास्त्र परिभाषा कोश — computable, calculable and countable. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic's definition controls the compound संगणनक्षम रचना.
+- `MR-P139` — भौतिकशास्त्र परिभाषा कोश — unbounded. https://shabdakosh.marathi.gov.in/ananya-glossary/37?page=635 (`checked_supports`): Official Directorate of Languages specialist-glossary entries read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the exact algorithmic compound अपरिबद्ध शोध was not directly attested.
+- `MR-P155` — संख्या शास्त्र परिभाषा कोश — index. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/12/i (`checked_supports`): Official Directorate of Languages statistics-glossary result read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's sense is statistical, not a computability index.
+
+**Alternatives:**
+
+- पूर्णता (collides with completeness) — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- एकूणता / अंकगणितीय श्रेणी — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does सर्वत्र परिभाषितता clearly mean termination on every input, distinct from logical or c.e. completeness, and is पदानुक्रम apt for the arithmetical hierarchy?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T333-OLP-0247-B004` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:9-10` | `mr/content/computability/computability-theory/total.tex:9-10` | pending |
+| `T333-OLP-0247-B005` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:12-17` | `mr/content/computability/computability-theory/total.tex:12-18` | pending |
+| `T333-OLP-0247-B006` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:19-22` | `mr/content/computability/computability-theory/total.tex:20-23` | pending |
+| `T333-OLP-0247-B007` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:24-39` | `mr/content/computability/computability-theory/total.tex:25-42` | pending |
+| `T333-OLP-0247-B008` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:41-52` | `mr/content/computability/computability-theory/total.tex:44-56` | pending |
+| `T333-OLP-0247-B009` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:54-58` | `mr/content/computability/computability-theory/total.tex:58-62` | pending |
+| `T333-OLP-0248-B005` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:12-18` | `mr/content/computability/computability-theory/rice-theorem.tex:12-19` | pending |
+
+## T334 — Rice's theorem / index set / nontrivial extensional property of partial computable functions
+
+**Chosen rendering/action:** राइसचे प्रमेय / निर्देशांकसंच / आंशिक संगणनक्षम फलनांचा अतुच्छ गुणधर्म
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked passages support theorem register, computation, index and decidability components; OpenLogic supplies Rice's exact extensional hypothesis. निर्देशांकसंच and अतुच्छ are transparent source-controlled mathematical compounds rather than directly attested full terms. The distinction between syntactic program properties and the behavior of the partial function it computes is essential.
+
+**Rationale:** The checked passages support theorem register, computation, index and decidability components; OpenLogic supplies Rice's exact extensional hypothesis. निर्देशांकसंच and अतुच्छ are transparent source-controlled mathematical compounds rather than directly attested full terms. The distinction between syntactic program properties and the behavior of the partial function it computes is essential.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P129` — गणितशास्त्र परिभाषा कोश — computable, calculable and countable. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic's definition controls the compound संगणनक्षम रचना.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P155` — संख्या शास्त्र परिभाषा कोश — index. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/12/i (`checked_supports`): Official Directorate of Languages statistics-glossary result read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's sense is statistical, not a computability index.
+
+**Alternatives:**
+
+- अनुक्रमांकसंच — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अत्रिविअल गुणधर्म — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- कार्यक्रमांचा गुणधर्म (misstates the extensional restriction) — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does निर्देशांकसंच make invariance under different program indices computing the same function clear, and does अतुच्छ avoid suggesting merely easy or unimportant?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T334-OLP-0248-B004` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:9-10` | `mr/content/computability/computability-theory/rice-theorem.tex:9-10` | pending |
+| `T334-OLP-0248-B005` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:12-18` | `mr/content/computability/computability-theory/rice-theorem.tex:12-19` | pending |
+| `T334-OLP-0248-B007` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:23-28` | `mr/content/computability/computability-theory/rice-theorem.tex:24-29` | pending |
+| `T334-OLP-0248-B008` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:30-35` | `mr/content/computability/computability-theory/rice-theorem.tex:31-36` | pending |
+| `T334-OLP-0248-B009` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:37-51` | `mr/content/computability/computability-theory/rice-theorem.tex:38-52` | pending |
+| `T334-OLP-0248-B010` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:53-57` | `mr/content/computability/computability-theory/rice-theorem.tex:54-58` | pending |
+| `T334-OLP-0248-B011` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:59-64` | `mr/content/computability/computability-theory/rice-theorem.tex:60-66` | pending |
+| `T334-OLP-0248-B012` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:66-82` | `mr/content/computability/computability-theory/rice-theorem.tex:68-86` | pending |
+| `T334-OLP-0248-B014` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:88-95` | `mr/content/computability/computability-theory/rice-theorem.tex:92-100` | pending |
+| `T334-OLP-0248-B015` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:97-107` | `mr/content/computability/computability-theory/rice-theorem.tex:102-115` | pending |
+| `T334-OLP-0248-B016` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:109-120` | `mr/content/computability/computability-theory/rice-theorem.tex:117-128` | pending |
+| `T334-OLP-0248-B017` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:122-124` | `mr/content/computability/computability-theory/rice-theorem.tex:130-132` | pending |
+
+## T335 — fixed-point theorem / self-reference / diagonal-index transformation
+
+**Chosen rendering/action:** स्थिरबिंदू प्रमेय / स्वसंदर्भ / विकर्ण निर्देशांक-रूपांतरण
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked logic/computability passages support theorem, function, index and computation components, and T326 already uses विकर्ण for a diagonal construction. स्थिरबिंदू and स्वसंदर्भ are transparent source-controlled compounds rather than directly attested official headwords. OpenLogic's theorem fixes the two equivalent formulations φ_e(y)≃g(e,y) and φ_e(y)≃φ_{f(e)}(y).
+
+**Rationale:** The checked logic/computability passages support theorem, function, index and computation components, and T326 already uses विकर्ण for a diagonal construction. स्थिरबिंदू and स्वसंदर्भ are transparent source-controlled compounds rather than directly attested official headwords. OpenLogic's theorem fixes the two equivalent formulations φ_e(y)≃g(e,y) and φ_e(y)≃φ_{f(e)}(y).
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P129` — गणितशास्त्र परिभाषा कोश — computable, calculable and countable. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic's definition controls the compound संगणनक्षम रचना.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P155` — संख्या शास्त्र परिभाषा कोश — index. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/12/i (`checked_supports`): Official Directorate of Languages statistics-glossary result read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's sense is statistical, not a computability index.
+
+**Alternatives:**
+
+- नियतबिंदू प्रमेय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अचल बिंदू प्रमेय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- स्व-निर्देश — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does स्थिरबिंदू प्रमेय read naturally for the program-index fixed point, while स्वसंदर्भ describes the mechanism without implying a contradiction?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T335-OLP-0249-B004` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:9-10` | `mr/content/computability/computability-theory/fixed-point-thm.tex:9-10` | pending |
+| `T335-OLP-0249-B005` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:12-16` | `mr/content/computability/computability-theory/fixed-point-thm.tex:12-16` | pending |
+| `T335-OLP-0249-B008` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:47-51` | `mr/content/computability/computability-theory/fixed-point-thm.tex:48-52` | pending |
+| `T335-OLP-0249-B009` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:53-58` | `mr/content/computability/computability-theory/fixed-point-thm.tex:54-59` | pending |
+| `T335-OLP-0249-B010` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:60-75` | `mr/content/computability/computability-theory/fixed-point-thm.tex:61-76` | pending |
+| `T335-OLP-0249-B011` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:77-83` | `mr/content/computability/computability-theory/fixed-point-thm.tex:78-86` | pending |
+| `T335-OLP-0249-B012` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:85-93` | `mr/content/computability/computability-theory/fixed-point-thm.tex:88-97` | pending |
+| `T335-OLP-0249-B013` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:95-102` | `mr/content/computability/computability-theory/fixed-point-thm.tex:99-106` | pending |
+| `T335-OLP-0249-B014` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:104-111` | `mr/content/computability/computability-theory/fixed-point-thm.tex:108-115` | pending |
+| `T335-OLP-0249-B015` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:113-133` | `mr/content/computability/computability-theory/fixed-point-thm.tex:117-139` | pending |
+| `T335-OLP-0249-B016` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:135-149` | `mr/content/computability/computability-theory/fixed-point-thm.tex:141-155` | pending |
+| `T335-OLP-0249-B017` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:151-179` | `mr/content/computability/computability-theory/fixed-point-thm.tex:157-185` | pending |
+| `T335-OLP-0249-B018` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:181-201` | `mr/content/computability/computability-theory/fixed-point-thm.tex:187-208` | pending |
+| `T335-OLP-0249-B019` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:203-208` | `mr/content/computability/computability-theory/fixed-point-thm.tex:210-215` | pending |
+| `T335-OLP-0249-B020` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:210-241` | `mr/content/computability/computability-theory/fixed-point-thm.tex:217-251` | pending |
+| `T335-OLP-0250-B004` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:9-10` | `mr/content/computability/computability-theory/application-fixed-point.tex:9-10` | pending |
+| `T335-OLP-0250-B005` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:12-19` | `mr/content/computability/computability-theory/application-fixed-point.tex:12-21` | pending |
+| `T335-OLP-0250-B008` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:34-60` | `mr/content/computability/computability-theory/application-fixed-point.tex:37-65` | pending |
+| `T335-OLP-0251-B004` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:9-10` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:9-10` | pending |
+| `T335-OLP-0251-B005` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:12-32` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:12-33` | pending |
+| `T335-OLP-0251-B006` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:34-47` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:35-49` | pending |
+| `T335-OLP-0251-B007` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:49-55` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:51-58` | pending |
+
+## T336 — fixed-point combinator / beta-equivalence / Curry's combinator / Turing's combinator
+
+**Chosen rendering/action:** स्थिरबिंदू संयोजक / बीटा-सममूल्यता / करीचा संयोजक / ट्यूरिंगचा संयोजक
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** T304 supplies the established लॅम्डा कलन context. OpenLogic controls β-equivalence, the Curry version where Yg and g(Yg) reduce to a common term, and the stronger Turing version where Yg reduces to g(Yg). संयोजक and the full named compounds are transparent technical renderings rather than independently attested canon headwords.
+
+**Rationale:** T304 supplies the established लॅम्डा कलन context. OpenLogic controls β-equivalence, the Curry version where Yg and g(Yg) reduce to a common term, and the stronger Turing version where Yg reduces to g(Yg). संयोजक and the full named compounds are transparent technical renderings rather than independently attested canon headwords.
+
+**Authorities actually checked:**
+
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P013` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 8 (`checked_supports`): visually-read-page-image
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+
+**Alternatives:**
+
+- स्थिरबिंदू संयोजिका — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- बीटा-समानता — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- करी/ट्यूरिंग कंबिनेटर — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Do संयोजक and बीटा-सममूल्यता preserve the difference between common reduct and direct reduction in the two Y constructions?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T336-OLP-0249-B020` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:210-241` | `mr/content/computability/computability-theory/fixed-point-thm.tex:217-251` | pending |
+
+## T337 — greatest common divisor (gcd) / Euclidean recursive definition
+
+**Chosen rendering/action:** महत्तम साधारण विभाजक / युक्लिडी पुनरावर्ती व्याख्या
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P157 directly attests the complete greatest-common-divisor headword महत्तम साधारण विभाजक on the Government of Maharashtra terminology page. OpenLogic fixes the gcd(u,v) cases and mod(v,u) argument order; the official headword is lexical evidence, not evidence for the recursive proof. The Euclidean descriptive compound remains source-controlled.
+
+**Rationale:** MR-P157 directly attests the complete greatest-common-divisor headword महत्तम साधारण विभाजक on the Government of Maharashtra terminology page. OpenLogic fixes the gcd(u,v) cases and mod(v,u) argument order; the official headword is lexical evidence, not evidence for the recursive proof. The Euclidean descriptive compound remains source-controlled.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P140` — गणितीय संकेतने, चिन्हे व संज्ञा — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21279/ (`checked_supports`): Official Marathi Vishwakosh search extraction personally read after the page itself returned 502. Limitation: Observation hash is not an origin-page hash; generic division terminology does not independently attest the exact total integer-division function.
+- `MR-P157` — Greatest common divisor — मराठी शब्दकोश. https://shabdakosh.marathi.gov.in/node/360502 (`checked_supports`): Official Directorate of Languages page opened and lines 10-16 read directly. Limitation: Observation hash is not an origin-page hash; the glossary gives terminology rather than proof.
+
+**Alternatives:**
+
+- महत्तम सामाईक विभाजक (also used in eBalbharati school texts) — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- महत्तम साधारण भाजक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is the directly attested विश्वकोश headword appropriate for the edition's gcd example, with the remainder and induction wording clear?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T337-OLP-0251-B006` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:34-47` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:35-49` | pending |
+
+## T338 — Turing-machine tape / square / read-write head / state / alphabet / transition function
+
+**Chosen rendering/action:** ट्यूरिंग यंत्राची फीत / घर / वाचन-लेखन शीर्ष / अवस्था / वर्णमाला / संक्रमण फलन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P131 directly attests ट्यूरिंग यंत्र; MR-P158 gives the generic tape headword फीत in an official Directorate of Languages entry, and MR-P068 supports the formal-symbol register. OpenLogic defines the idealized tape as right-infinite, divided into squares, and read/written by a head whose state and scanned symbol determine a partial transition. घर, वाचन-लेखन शीर्ष, अवस्था, वर्णमाला and संक्रमण फलन are transparent source-controlled component renderings rather than claimed exact official Turing terminology.
+
+**Rationale:** MR-P131 directly attests ट्यूरिंग यंत्र; MR-P158 gives the generic tape headword फीत in an official Directorate of Languages entry, and MR-P068 supports the formal-symbol register. OpenLogic defines the idealized tape as right-infinite, divided into squares, and read/written by a head whose state and scanned symbol determine a partial transition. घर, वाचन-लेखन शीर्ष, अवस्था, वर्णमाला and संक्रमण फलन are transparent source-controlled component renderings rather than claimed exact official Turing terminology.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P158` — tape — मराठी शब्दकोश. https://shabdakosh.marathi.gov.in/index.php/node/221091 (`checked_supports`): Official Directorate of Languages search extraction read; direct page open unavailable. Limitation: Observation hash is not an origin-page hash; the headword does not attest Turing-machine usage or read-write head terminology.
+
+**Alternatives:**
+
+- पट्टी / चौकटी / वाचणारे-लिहिणारे टोक / स्थिती / चिन्हसंच / स्थित्यंतर फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- टेप / खण / रीड-राइट हेड / स्थिती / अक्षरमाला / स्थानांतरण फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is फीत natural for an abstract Turing tape, and are वाचन-लेखन शीर्ष and संक्रमण फलन clear for the head and partial state-symbol transition?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T338-OLP-0254-B006` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:29-53` | `mr/content/turing-machines/machines-computations/introduction.tex:28-50` | pending |
+| `T338-OLP-0254-B007` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:55-75` | `mr/content/turing-machines/machines-computations/introduction.tex:52-70` | pending |
+| `T338-OLP-0254-B008` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:77-84` | `mr/content/turing-machines/machines-computations/introduction.tex:72-80` | pending |
+| `T338-OLP-0255-B005` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:12-23` | `mr/content/turing-machines/machines-computations/representing-tms.tex:12-22` | pending |
+| `T338-OLP-0255-B007` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:28-37` | `mr/content/turing-machines/machines-computations/representing-tms.tex:27-36` | pending |
+| `T338-OLP-0255-B008` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:39-47` | `mr/content/turing-machines/machines-computations/representing-tms.tex:38-45` | pending |
+| `T338-OLP-0255-B011` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:58-64` | `mr/content/turing-machines/machines-computations/representing-tms.tex:56-62` | pending |
+| `T338-OLP-0255-B012` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:66-75` | `mr/content/turing-machines/machines-computations/representing-tms.tex:64-72` | pending |
+| `T338-OLP-0255-B013` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:77-80` | `mr/content/turing-machines/machines-computations/representing-tms.tex:74-76` | pending |
+| `T338-OLP-0255-B014` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:82-113` | `mr/content/turing-machines/machines-computations/representing-tms.tex:78-110` | pending |
+| `T338-OLP-0255-B015` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:115-139` | `mr/content/turing-machines/machines-computations/representing-tms.tex:112-134` | pending |
+| `T338-OLP-0255-B016` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:141-148` | `mr/content/turing-machines/machines-computations/representing-tms.tex:136-142` | pending |
+| `T338-OLP-0255-B020` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:168-180` | `mr/content/turing-machines/machines-computations/representing-tms.tex:162-172` | pending |
+| `T338-OLP-0255-B021` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:182-199` | `mr/content/turing-machines/machines-computations/representing-tms.tex:174-191` | pending |
+| `T338-OLP-0255-B022` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:201-207` | `mr/content/turing-machines/machines-computations/representing-tms.tex:193-199` | pending |
+| `T338-OLP-0255-B023` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:209-230` | `mr/content/turing-machines/machines-computations/representing-tms.tex:201-221` | pending |
+| `T338-OLP-0255-B027` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:262-270` | `mr/content/turing-machines/machines-computations/representing-tms.tex:253-262` | pending |
+| `T338-OLP-0255-B028` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:272-277` | `mr/content/turing-machines/machines-computations/representing-tms.tex:264-270` | pending |
+| `T338-OLP-0255-B029` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:279-286` | `mr/content/turing-machines/machines-computations/representing-tms.tex:272-279` | pending |
+| `T338-OLP-0255-B030` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:288-295` | `mr/content/turing-machines/machines-computations/representing-tms.tex:281-288` | pending |
+| `T338-OLP-0256-B005` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:12-20` | `mr/content/turing-machines/machines-computations/turing-machines.tex:12-19` | pending |
+| `T338-OLP-0256-B006` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:22-35` | `mr/content/turing-machines/machines-computations/turing-machines.tex:21-34` | pending |
+| `T338-OLP-0256-B007` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:37-48` | `mr/content/turing-machines/machines-computations/turing-machines.tex:36-48` | pending |
+| `T338-OLP-0256-B008` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:50-60` | `mr/content/turing-machines/machines-computations/turing-machines.tex:50-60` | pending |
+| `T338-OLP-0257-B005` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:12-23` | `mr/content/turing-machines/machines-computations/configuration.tex:12-23` | pending |
+| `T338-OLP-0257-B006` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:25-38` | `mr/content/turing-machines/machines-computations/configuration.tex:25-39` | pending |
+| `T338-OLP-0257-B007` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:40-49` | `mr/content/turing-machines/machines-computations/configuration.tex:41-51` | pending |
+| `T338-OLP-0257-B008` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `mr/content/turing-machines/machines-computations/configuration.tex:53-63` | pending |
+| `T338-OLP-0257-B009` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `mr/content/turing-machines/machines-computations/configuration.tex:65-69` | pending |
+| `T338-OLP-0257-B010` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:63-82` | `mr/content/turing-machines/machines-computations/configuration.tex:71-90` | pending |
+| `T338-OLP-0257-B012` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `mr/content/turing-machines/machines-computations/configuration.tex:98-110` | pending |
+| `T338-OLP-0257-B013` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `mr/content/turing-machines/machines-computations/configuration.tex:112-117` | pending |
+
+## T339 — state diagram / machine configuration / machine table / doubler
+
+**Chosen rendering/action:** अवस्था-आलेख / स्थितिवर्णन / यंत्र-सारणी / दुप्पट करणारे यंत्र
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** OpenLogic defines a state diagram by state nodes and labeled instruction arrows, a configuration by tape contents plus current state and head position, a machine table by state and tape-symbol axes, and a doubler by outputting 2n strokes from n. The Marathi compounds expose these definitions; none is claimed as an independently attested specialist headword. A bounded official search found configuration glossed as ठेवण in a legal dictionary and आविन्यास in metallurgy, neither appropriate evidence for this exact Turing sense. MR-P131 and MR-P158 support the native machine and tape vocabulary only.
+
+**Rationale:** OpenLogic defines a state diagram by state nodes and labeled instruction arrows, a configuration by tape contents plus current state and head position, a machine table by state and tape-symbol axes, and a doubler by outputting 2n strokes from n. The Marathi compounds expose these definitions; none is claimed as an independently attested specialist headword. A bounded official search found configuration glossed as ठेवण in a legal dictionary and आविन्यास in metallurgy, neither appropriate evidence for this exact Turing sense. MR-P131 and MR-P158 support the native machine and tape vocabulary only.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P158` — tape — मराठी शब्दकोश. https://shabdakosh.marathi.gov.in/index.php/node/221091 (`checked_supports`): Official Directorate of Languages search extraction read; direct page open unavailable. Limitation: Observation hash is not an origin-page hash; the headword does not attest Turing-machine usage or read-write head terminology.
+
+**Alternatives:**
+
+- स्थिती-आकृती / संरूपण / यंत्र-तक्ता / द्विगुणक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अवस्था-आकृती / यंत्रस्थिती / मशीन टेबल / दुपटीकरण यंत्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does स्थितिवर्णन clearly denote a full instantaneous tape-state-head configuration, and are अवस्था-आलेख and यंत्र-सारणी sufficiently distinct in the two representations?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T339-OLP-0255-B004` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:9-10` | `mr/content/turing-machines/machines-computations/representing-tms.tex:9-10` | pending |
+| `T339-OLP-0255-B005` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:12-23` | `mr/content/turing-machines/machines-computations/representing-tms.tex:12-22` | pending |
+| `T339-OLP-0255-B007` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:28-37` | `mr/content/turing-machines/machines-computations/representing-tms.tex:27-36` | pending |
+| `T339-OLP-0255-B008` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:39-47` | `mr/content/turing-machines/machines-computations/representing-tms.tex:38-45` | pending |
+| `T339-OLP-0255-B011` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:58-64` | `mr/content/turing-machines/machines-computations/representing-tms.tex:56-62` | pending |
+| `T339-OLP-0255-B012` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:66-75` | `mr/content/turing-machines/machines-computations/representing-tms.tex:64-72` | pending |
+| `T339-OLP-0255-B013` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:77-80` | `mr/content/turing-machines/machines-computations/representing-tms.tex:74-76` | pending |
+| `T339-OLP-0255-B014` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:82-113` | `mr/content/turing-machines/machines-computations/representing-tms.tex:78-110` | pending |
+| `T339-OLP-0255-B015` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:115-139` | `mr/content/turing-machines/machines-computations/representing-tms.tex:112-134` | pending |
+| `T339-OLP-0255-B016` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:141-148` | `mr/content/turing-machines/machines-computations/representing-tms.tex:136-142` | pending |
+| `T339-OLP-0255-B020` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:168-180` | `mr/content/turing-machines/machines-computations/representing-tms.tex:162-172` | pending |
+| `T339-OLP-0255-B021` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:182-199` | `mr/content/turing-machines/machines-computations/representing-tms.tex:174-191` | pending |
+| `T339-OLP-0255-B022` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:201-207` | `mr/content/turing-machines/machines-computations/representing-tms.tex:193-199` | pending |
+| `T339-OLP-0255-B023` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:209-230` | `mr/content/turing-machines/machines-computations/representing-tms.tex:201-221` | pending |
+| `T339-OLP-0255-B025` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:239-255` | `mr/content/turing-machines/machines-computations/representing-tms.tex:230-246` | pending |
+| `T339-OLP-0255-B026` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:257-260` | `mr/content/turing-machines/machines-computations/representing-tms.tex:248-251` | pending |
+| `T339-OLP-0255-B027` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:262-270` | `mr/content/turing-machines/machines-computations/representing-tms.tex:253-262` | pending |
+| `T339-OLP-0255-B028` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:272-277` | `mr/content/turing-machines/machines-computations/representing-tms.tex:264-270` | pending |
+| `T339-OLP-0255-B029` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:279-286` | `mr/content/turing-machines/machines-computations/representing-tms.tex:272-279` | pending |
+| `T339-OLP-0255-B030` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:288-295` | `mr/content/turing-machines/machines-computations/representing-tms.tex:281-288` | pending |
+| `T339-OLP-0256-B008` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:50-60` | `mr/content/turing-machines/machines-computations/turing-machines.tex:50-60` | pending |
+| `T339-OLP-0257-B004` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:9-10` | `mr/content/turing-machines/machines-computations/configuration.tex:9-10` | pending |
+| `T339-OLP-0257-B005` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:12-23` | `mr/content/turing-machines/machines-computations/configuration.tex:12-23` | pending |
+| `T339-OLP-0257-B006` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:25-38` | `mr/content/turing-machines/machines-computations/configuration.tex:25-39` | pending |
+| `T339-OLP-0257-B007` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:40-49` | `mr/content/turing-machines/machines-computations/configuration.tex:41-51` | pending |
+| `T339-OLP-0257-B008` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `mr/content/turing-machines/machines-computations/configuration.tex:53-63` | pending |
+| `T339-OLP-0257-B009` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `mr/content/turing-machines/machines-computations/configuration.tex:65-69` | pending |
+| `T339-OLP-0257-B010` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:63-82` | `mr/content/turing-machines/machines-computations/configuration.tex:71-90` | pending |
+| `T339-OLP-0257-B011` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:84-87` | `mr/content/turing-machines/machines-computations/configuration.tex:92-96` | pending |
+| `T339-OLP-0257-B012` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `mr/content/turing-machines/machines-computations/configuration.tex:98-110` | pending |
+| `T339-OLP-0257-B013` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `mr/content/turing-machines/machines-computations/configuration.tex:112-117` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -25438,6 +25960,156 @@ Coverage: 243/722 source units through OLP-0246; 487 applied decisions; 12,871 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLCMP-023-OLP-0245` | `OLP-0245` |  | `upstream/content/computability/computability-theory/complete-ce-sets.tex:42-48` | `mr/content/computability/computability-theory/complete-ce-sets.tex:47-55` | pending |
+
+## OLCMP-024 — confirmed-frozen-source-proof-starts-with-total-instead-of-partial-candidate
+
+**Chosen rendering/action:** Take an arbitrary partial computable f in the Marathi proof opening, explicitly note at the conclusion that divergence of f(e) already violates the required definedness, and otherwise use the source's wrong-answer-at-zero diagonal. Add reader note OLCMP-024 and retain the source's exact formulas. No mechanical formula projection is needed for this prose-only correction.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The theorem rules out any partial computable selector f, defined whenever W_e is computable, but the frozen proof begins only with 'any computable function f'. With the established total-versus-partial terminology, that proves a weaker statement. The subsequent g construction remains partial computable even if f(x) diverges.
+
+**Rationale:** The theorem rules out any partial computable selector f, defined whenever W_e is computable, but the frozen proof begins only with 'any computable function f'. With the established total-versus-partial terminology, that proves a weaker statement. The subsequent g construction remains partial computable even if f(x) diverges. Chosen action: Take an arbitrary partial computable f in the Marathi proof opening, explicitly note at the conclusion that divergence of f(e) already violates the required definedness, and otherwise use the source's wrong-answer-at-zero diagonal. Add reader note OLCMP-024 and retain the source's exact formulas. No mechanical formula projection is needed for this prose-only correction.
+
+**Authorities actually checked:**
+
+- `OLCMP-024-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-024. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Keep the total-only candidate and leave the theorem's partial case unproved — `rejected`: Not chosen; the source finding and recorded action control.
+- Weaken the theorem to total selectors, changing its stated result — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the argument now handle an arbitrary partial computable f, including divergence of f(x), while preserving the computable W_e diagonal contradiction?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-024-OLP-0250` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:28-38` | `mr/content/computability/computability-theory/application-fixed-point.tex:31-76` | pending |
+
+## OLTUR-001 — confirmed-frozen-source-wrong-initial-state-name-in-even-machine-trace
+
+**Chosen rendering/action:** Name q_0 in the Marathi explanatory sentence, add adjacent reader note OLTUR-001, and project that one added formula back to the frozen wording solely for structural QA. Preserve the actual diagram and state trace.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The displayed first configuration has the state subscript 0, and the preceding sentence explicitly says the machine starts in q_0, but the following frozen sentence calls that 'state one'. The applicable transition from q_0 then corroborates the initial state.
+
+**Rationale:** The displayed first configuration has the state subscript 0, and the preceding sentence explicitly says the machine starts in q_0, but the following frozen sentence calls that 'state one'. The applicable transition from q_0 then corroborates the initial state. Chosen action: Name q_0 in the Marathi explanatory sentence, add adjacent reader note OLTUR-001, and project that one added formula back to the frozen wording solely for structural QA. Preserve the actual diagram and state trace.
+
+**Authorities actually checked:**
+
+- `OLTUR-001-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-001. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Translate 'state one' literally and contradict the immediately adjacent state trace — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the first configuration and transition to state one, altering the algorithm — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the prose now consistently identify the first scanned stroke with state q_0 while all diagrammed transitions remain unchanged?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-001-OLP-0255` | `OLP-0255` |  | `upstream/content/turing-machines/machines-computations/representing-tms.tex:83-90` | `mr/content/turing-machines/machines-computations/representing-tms.tex:76-88` | pending |
+
+## OLTUR-002 — confirmed-cross-section-initial-head-position-inconsistency
+
+**Chosen rendering/action:** Preserve the formal initial tuple and explain its first-input-square convention in Marathi, with adjacent OLTUR-002 reader note identifying the earlier informal discrepancy. Do not silently alter either frozen mathematical convention.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The informal introduction starts the head on the leftmost tape square containing the end marker, whereas the formal initial configuration starts it on the first input square, position 1. These are different start conventions for the same machine model.
+
+**Rationale:** The informal introduction starts the head on the leftmost tape square containing the end marker, whereas the formal initial configuration starts it on the first input square, position 1. These are different start conventions for the same machine model. Chosen action: Preserve the formal initial tuple and explain its first-input-square convention in Marathi, with adjacent OLTUR-002 reader note identifying the earlier informal discrepancy. Do not silently alter either frozen mathematical convention.
+
+**Authorities actually checked:**
+
+- `OLTUR-002-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-002. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Change the formal initial head position to zero, contradicting the displayed tuple — `rejected`: Not chosen; the source finding and recorded action control.
+- Rewrite the earlier introduction without recording the source discrepancy — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Should a later edition globally use position one for the first input square, or amend the formal initialization to position zero?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-002-OLP-0257` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:55-56` | `mr/content/turing-machines/machines-computations/configuration.tex:40-61` | pending |
+
+## OLTUR-003 — frozen-source-directional-ambiguity-in-concatenation-gloss
+
+**Chosen rendering/action:** Say 'immediately to the right of the left end marker' in Marathi, preserve the formula and record adjacent reader note OLTUR-003. No formula projection is needed.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+
+**Intended sense:** The frozen gloss says the input begins 'immediately to the left end marker', which can read as the wrong side of the end marker. The preceding prose and displayed end-marker-concatenated-with-input formula place input immediately to its right.
+
+**Rationale:** The frozen gloss says the input begins 'immediately to the left end marker', which can read as the wrong side of the end marker. The preceding prose and displayed end-marker-concatenated-with-input formula place input immediately to its right. Chosen action: Say 'immediately to the right of the left end marker' in Marathi, preserve the formula and record adjacent reader note OLTUR-003. No formula projection is needed.
+
+**Authorities actually checked:**
+
+- `OLTUR-003-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-003. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Translate the ambiguous wording literally and leave the reader uncertain which side of the marker contains input — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the concatenation order, contradicting the formal initialization — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the Marathi right-of-marker gloss agree with the formal concatenation and head position?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-003-OLP-0257` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `mr/content/turing-machines/machines-computations/configuration.tex:64-68` | pending |
+
+## OLTUR-004 — confirmed-frozen-source-empty-input-boundary-gap
+
+**Chosen rendering/action:** Keep the frozen initial formula and add a bounded Marathi explanation that the first blank square must be included in the configuration for empty input. Adjacent reader note OLTUR-004 records the gap; no new mathematical symbol is inserted into the source-aligned display.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The definition allows every input I in Sigma-star, including the empty string. Then the displayed initial C=end-marker concatenated with I has length one while the head position is m=1, violating the earlier strict bound m<len(C).
+
+**Rationale:** The definition allows every input I in Sigma-star, including the empty string. Then the displayed initial C=end-marker concatenated with I has length one while the head position is m=1, violating the earlier strict bound m<len(C). Chosen action: Keep the frozen initial formula and add a bounded Marathi explanation that the first blank square must be included in the configuration for empty input. Adjacent reader note OLTUR-004 records the gap; no new mathematical symbol is inserted into the source-aligned display.
+
+**Authorities actually checked:**
+
+- `OLTUR-004-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-004. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Exclude the empty input despite the stated Sigma-star domain — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the displayed initial tuple without disclosing the source edge case — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Is adding the first blank square the preferred total initialization for empty input while preserving the intended position-one head convention?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-004-OLP-0257` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:23-57` | `mr/content/turing-machines/machines-computations/configuration.tex:22-63` | pending |
+
+## OLTUR-005 — confirmed-cross-section-output-marker-precondition-gap
+
+**Chosen rendering/action:** Preserve both frozen statements and the output formula, adding adjacent Marathi prose and reader note OLTUR-005 that this output definition directly applies to runs retaining the marker; further rules are needed after overwrite.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The machine convention explicitly permits overwriting the left-end marker, but the later output definition requires final C to begin with that marker. For a run that overwrites it, the displayed output decomposition need not exist.
+
+**Rationale:** The machine convention explicitly permits overwriting the left-end marker, but the later output definition requires final C to begin with that marker. For a run that overwrites it, the displayed output decomposition need not exist. Chosen action: Preserve both frozen statements and the output formula, adding adjacent Marathi prose and reader note OLTUR-005 that this output definition directly applies to runs retaining the marker; further rules are needed after overwrite.
+
+**Authorities actually checked:**
+
+- `OLTUR-005-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-005. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Silently impose a non-overwrite rule in the earlier machine definition — `rejected`: Not chosen; the source finding and recorded action control.
+- Declare an output for all overwritten-marker runs without specifying how it is recovered — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Should the machine convention forbid overwriting the end marker, or should the output map be redefined to handle such runs?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-005-OLP-0257` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:40-51` | `mr/content/turing-machines/machines-computations/configuration.tex:98-110` | pending |
 
 ## Deferred prospective decisions
 

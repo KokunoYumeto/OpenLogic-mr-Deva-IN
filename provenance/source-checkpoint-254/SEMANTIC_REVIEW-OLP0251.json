@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0251",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of self-referential function definitions and the gcd example, with exact formula, macro, label and reference parity. The complete gcd headword was checked directly on an official Maharashtra terminology page. No independent human or native-speaker review is claimed.",
+  "scope": "Use of the fixed-point lemma for recursive partial-function definitions, Euclidean gcd recursion and the distinction from index-based self-reference.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5
+      ],
+      "reverse_paraphrase": "Given computable k,l,m, the fixed-point lemma supplies partial computable f with f(y)≃k(y) when l(y)=0 and f(y)≃f(m(y)) otherwise. Define partial binary g with the same base case and φ_x(m(y)) recursive case; choose e satisfying φ_e(y)=g(e,y).",
+      "checks": "All three given functions, both branch conditions, recursive argument m(y), index e and equality formulation remain exact."
+    },
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "The greatest common divisor obeys gcd(u,v)≃v if u=0 and gcd(mod(v,u),u) otherwise. The fixed-point lemma gives partial computability, using a code for the pair (u,v), and induction on u establishes totality.",
+      "checks": "The base case, remainder argument order, coded pair, partial-before-total proof order and induction variable are preserved. MR-P157 directly supports महत्तम साधारण विभाजक."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "Programming languages commonly permit self-referential function definitions, but the full fixed-point theorem goes further by defining a function using an index of an algorithm computing that function.",
+      "checks": "The ordinary recursive-definition versus index-based theorem distinction is retained."
+    }
+  ],
+  "source_observations": [
+    "MR-P157 is a direct official Government of Maharashtra headword for greatest common divisor; T337 records its lexical role, while OpenLogic controls the recursion and induction.",
+    "The target uses the established fixed-point and partial/total terminology from T335 and T303."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The official gcd headword is lexical evidence rather than verification of the Euclidean proof.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

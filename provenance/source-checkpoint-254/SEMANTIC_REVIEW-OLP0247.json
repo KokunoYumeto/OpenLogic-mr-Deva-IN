@@ -1,0 +1,47 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0247",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of the Tot reduction, with exact formula, macro, label and reference parity. No independent human or native-speaker review is claimed.",
+  "scope": "Undecidability of totality for indexed computable functions using the s-m-n theorem and K≤_m Tot.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6
+      ],
+      "reverse_paraphrase": "Tot is the set of indices x such that φ_x(y) is defined for every y. The section uses s-m-n to prove that Tot is not computable.",
+      "checks": "The universal input quantifier, definedness condition, index-set meaning and noncomputability proposition remain exact."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "To reduce K to Tot, define partial h(x,y) to return zero for x in K and be undefined otherwise, independent of y. Simulate φ_x(x) and return zero only when it halts. The source expresses this as the constant-zero function composed with an unbounded search for T(x,x,s).",
+      "checks": "The K membership test, two case branches, ignored y, self-input x and µ-search formula are preserved."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "The s-m-n theorem supplies primitive-recursive k(x) indexing the function of y that is constantly zero when x∈K and nowhere defined otherwise. Thus the function with index k(x) is total exactly for x∈K, making k a reduction from K to Tot.",
+      "checks": "Primitive-recursive strength, every-x-and-y quantification, zero and undefined cases, and reduction direction are preserved."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "Tot is not even c.e.; it lies higher in the arithmetical hierarchy, but the stronger claim is not pursued here.",
+      "checks": "The non-c.e. strengthening, hierarchy placement and scope limitation are retained without importing an additional proof."
+    }
+  ],
+  "source_observations": [
+    "T333 keeps सर्वत्र परिभाषितता distinct from completeness and records अंकगणितीय पदानुक्रम as a source-defined compound rather than a directly attested headword."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The totality and hierarchy compounds remain expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

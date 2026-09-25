@@ -1,0 +1,53 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0257",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of the configuration, step, run and output definitions, with exact formula, macro, token, identifier and reference parity. No independent human or native-speaker review is claimed.",
+  "scope": "Finite tape configuration C,m,q; position-one initial tuple; one-step transition cases; halting and output extraction, including documented source boundary gaps.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6
+      ],
+      "reverse_paraphrase": "A configuration of M=(Q,Sigma,q0,delta) is (C,m,q), where C is a finite Sigma-string, m is a natural number strictly below its length, and q is in Q. C lists tape content through the last nonblank or visited square, m indexes the scanned square from zero, and q is the current state.",
+      "checks": "All tuple members, domain conditions, strict bound and indexing origin are unchanged. The inherited file ID cmp/tur/con is preserved even though the enclosing chapter driver uses tur/mac."
+    },
+    {
+      "blocks": [
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "For input I in Sigma-star, the formal initial tuple is (end-marker concatenated with I, 1, q0), placing the head on the first input square immediately right of the marker. Empty I needs an included first blank square to satisfy m<len(C).",
+      "checks": "The displayed tuple and concatenation symbol are unchanged. OLTUR-002 records the earlier section's conflicting head-at-marker convention; OLTUR-003 resolves the frozen side-of-marker gloss; OLTUR-004 identifies the empty-input strict-bound gap."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "A one-step yield reads sigma at m, applies delta(q,sigma)=(q prime,sigma prime,D), writes sigma prime at m, moves left with a zero boundary, right or stays, extends C by one blank square if the new position reaches its old length, and leaves all other old symbols unchanged.",
+      "checks": "All six numbered clauses and three movement subclauses retain their exact formulas, order and inequalities."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "A run is a configuration sequence starting at C0, each yielding the next. The machine halts at k when the scanned transition is undefined. Output O is the nonblank-suffixed string satisfying C=end-marker concatenated with O and j blanks; if all content after the marker is blank, O is empty.",
+      "checks": "The halting criterion, step count, output equation, blank exponent and empty-output case are preserved. OLTUR-005 clarifies that the stated decomposition directly applies only when the end marker survived, because earlier sections permit overwriting it."
+    }
+  ],
+  "source_observations": [
+    "OLTUR-002 through OLTUR-005 document two cross-section convention conflicts, a directional gloss ambiguity and an empty-input boundary gap; frozen English and all displayed formulas remain unchanged.",
+    "T339's स्थितिवर्णन names the full tape-state-head triple under the source definition; no unrelated legal or metallurgical configuration gloss was imported."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The source does not specify a complete output convention for runs that overwrite the end marker; the Marathi text discloses this limit rather than inventing one.",
+    "The source's initial head convention conflicts with an earlier informal sentence; a single global choice remains for expert review.",
+    "No TeX reader build was run for this incomplete chapter."
+  ]
+}

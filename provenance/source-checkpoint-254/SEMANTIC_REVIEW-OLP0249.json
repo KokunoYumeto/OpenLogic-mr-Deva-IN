@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0249",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of the fixed-point equivalence, diagonal construction, self-printing analogy and lambda-combinator digression, with exact formula, macro, controlled-token, label and reference parity. No independent human or native-speaker review is claimed.",
+  "scope": "Computability fixed-point theorem and equivalent formulations, self-referential program indices, and Curry/Turing fixed-point combinators.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "Write a name for φ_x(y) using the pair (x,y). No computable h can report whether every named computation halts: if it could, define partial g(x) to return zero when h says φ_x(x) is undefined, then choose its index e and obtain φ_e(e) defined exactly when it is not. This self-reference motivates a general fixed-point theorem rather than merely a contradiction. The two following formulations imply one another directly.",
+      "checks": "The temporary naming convention, h output cases, g diagonal cases, chosen index e, contradiction and two-way-equivalence explanation are preserved."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "For every partial computable binary g there is e with φ_e(y)≃g(e,y). Equivalently, for every computable unary f there is e with φ_e(y)≃φ_{f(e)}(y). From the first, set g(x,y)≃Un(f(x),y). From the second, use s-m-n to obtain f with φ_{f(x)}(y)≃g(x,y), then apply the fixed-point equality.",
+      "checks": "The universal quantifiers, partial versus total computability, e/y roles, both displayed formulas, implication directions and exact proof chains are retained."
+    },
+    {
+      "blocks": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "reverse_paraphrase": "The theorem asserts the first fixed-point formulation. Construct computable diag(x) indexing the unary program y↦φ_x(x,y), using s(x,y)≃Un²(x,x,y) and s-m-n. Define l(x,y)≃g(diag(x),y), choose an index ⌜l⌝, and put e=diag(⌜l⌝). The five-step partial-equality chain yields φ_e(y)≃g(e,y).",
+      "checks": "The self-indexed first argument, arity of Un², primitive-recursive diag, l index, chosen e and all five aligned expressions remain exact."
+    },
+    {
+      "blocks": [
+        17,
+        18,
+        19
+      ],
+      "reverse_paraphrase": "The analogy describes a string function diag that quotes and inserts its input at every literal x, letting print(diag('print(diag(x))')) print its own program. A variant print(x,y) repeats string x y times; the supplied getinput/print skeleton then prints itself y times. Replacing that skeleton with arbitrary g gives a program calling g on its own code and y. The source treats this as an intuition that readers should be able to reconstruct.",
+      "checks": "The exact verbatim code examples, C++/Java reference, quote substitution, repeated-output count and program-as-index interpretation are preserved."
+    },
+    {
+      "blocks": [
+        20
+      ],
+      "reverse_paraphrase": "In lambda notation, diag(x)=xx and l(x)=g(diag(x)); setting k=ll yields k→gk and hence a fixed-point combinator. Curry's Y gives Yg and g(Yg) a common reduct; the later Turing Y directly reduces Yg to g(Yg), a stronger assertion.",
+      "checks": "The beta-equivalence versus direct-reduction distinction, both full Y terms, tagged lambda block and exact reduction arrows are retained."
+    }
+  ],
+  "source_observations": [
+    "T335 records स्थिरबिंदू प्रमेय and स्वसंदर्भ as source-defined compounds under established index/computation vocabulary; T336 distinguishes Curry's common-reduct claim from Turing's direct reduction.",
+    "Code strings and verbatim programs remain in their original executable notation; they are examples rather than untranslated ordinary prose."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "Fixed-point and combinator compounds remain expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
-This view contains 42 urgent/high decisions and
-1103 current occurrences. Normal and low items remain in the full index.
+This view contains 43 urgent/high decisions and
+1107 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -1483,6 +1483,9 @@ This view contains 42 urgent/high decisions and
 | `T304-OLP-0223-B011` | `OLP-0223` |  | 88-96 | 85-92 | pending |
 | `T304-OLP-0229-B009` | `OLP-0229` |  | 50-66 | 51-64 | pending |
 | `T304-OLP-0230-B005` | `OLP-0230` |  | 12-31 | 12-28 | pending |
+| `T304-OLP-0249-B020` | `OLP-0249` |  | 210-241 | 217-251 | pending |
+| `T304-OLP-0254-B005` | `OLP-0254` |  | 12-27 | 12-26 | pending |
+| `T304-OLP-0254-B009` | `OLP-0254` |  | 86-108 | 82-102 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 
@@ -1567,3 +1570,15 @@ This view contains 42 urgent/high decisions and
 | Occurrence | Unit | Section | Source line | Target line | PDF page |
 |---|---|---|---|---|---|
 | `OLFOL-009-OLP-0156` | `OLP-0156` | 15.7 रचनाक्रमिका | 53-57 | 53-57 | 202–205 |
+
+## OLTUR-003 — frozen-source-directional-ambiguity-in-concatenation-gloss → Say 'immediately to the right of the left end marker' in Marathi, preserve the formula and record adjacent reader note OLTUR-003. No formula projection is needed.
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** the English preposition may be a malformed way of saying adjacent to the left-end marker; the displayed tuple unambiguously fixes the intended order
+
+**Please double-check:** Please double-check: Does the Marathi right-of-marker gloss agree with the formal concatenation and head position?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `OLTUR-003-OLP-0257` | `OLP-0257` |  | 58-61 | 64-68 | pending |

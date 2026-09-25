@@ -1,0 +1,62 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: turing-machines
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{tur}
+\olsection{ट्यूरिंग यंत्रे}
+
+\begin{explain}
+ट्यूरिंग यंत्राची औपचारिक व्याख्या अमूर्त वाटते, पण प्रत्यक्षात
+ती सोपी आहे: यंत्राचे कार्य कसे चालते हे निर्दिष्ट करण्यासाठी लागणारी
+सर्व माहिती ती एका गणिती रचनेत एकत्र करते. यात (1) यंत्र कोणत्या
+अवस्थांत असू शकते, (2) फितीवर कोणती चिन्हे असू शकतात, (3) यंत्राने
+कोणत्या अवस्थेत सुरू व्हावे आणि (4) त्याचा सूचनासंच कोणता आहे,
+या गोष्टी येतात.
+\end{explain}
+
+\begin{defn}[ट्यूरिंग यंत्र]
+\emph{ट्यूरिंग यंत्र} $M$ म्हणजे पुढील घटक असलेली
+$\langle Q, \Sigma, q_0,
+\delta\rangle$ ही क्रमित चौकडी:
+\begin{enumerate}
+\item \emph{अवस्थांचा} सांत संच~$Q$,
+\item $\TMendtape$ आणि $\TMblank$ यांचा समावेश असलेली सांत
+  \emph{वर्णमाला} $\Sigma$,
+\item \emph{प्रारंभिक अवस्था}~$q_0 \in Q$,
+\item सांत \emph{सूचनासंच}~$\delta\colon Q \times \Sigma
+  \pto Q \times \Sigma \times \{\TMleft, \TMright, \TMstay\}$.
+\end{enumerate}
+या आंशिक फलनाला~$\delta$ हे $M$ चे \emph{संक्रमण फलन} असेही म्हणतात.
+\end{defn}
+
+\begin{explain}
+फीत फक्त एकाच दिशेने अनंत आहे, असे आपण मानतो. म्हणून फितीचे
+डावे टोक दर्शवण्यासाठी $\TMendtape$ हे खास चिन्ह ठेवणे उपयुक्त ठरते.
+त्यामुळे ट्यूरिंग यंत्राच्या कार्यक्रमाला फितीच्या बाहेर जाण्याचा
+``धोका'' कधी आहे हे ओळखणे सोपे जाते. हे चिन्ह कधीही बदलून लिहिले
+जात नाही, असे आपण गृहीत धरू शकलो असतो; म्हणजे
+$\delta(q,\TMendtape)$ परिभाषित असेल, तर
+$\delta(q,\TMendtape) = \tuple{q', \TMendtape, x}$ असेल.
+काही पाठ्यपुस्तके असे करतात; आपण मात्र हे गृहीत धरत नाही. ट्यूरिंग
+यंत्र बनवताना ते $\TMendtape$ कधीही बदलून लिहिणार नाही याची
+सावधगिरी तुम्ही घेऊ शकता. शिवाय काही प्रसंगी असे बदलून लिहिण्यास
+परवानगी दिल्यास सोयीची लवचीकता मिळते.
+\end{explain}
+
+\begin{ex}
+\emph{सम यंत्र:} सम यंत्र औपचारिकरीत्या
+$\tuple{Q, \Sigma, q_0, \delta}$ ही क्रमित चौकडी आहे. येथे
+\begin{align*}
+Q & = \{ q_0, q_1 \} \\
+\Sigma & = \{ \TMendtape, \TMblank, \TMstroke \}, \\
+\delta(q_0, \TMstroke) & = \tuple{q_1, \TMstroke, \TMright},\\
+\delta(q_1, \TMstroke) & = \tuple{q_0, \TMstroke, \TMright},\\
+\delta(q_1, \TMblank)  & = \tuple{q_1, \TMblank, \TMright}.
+\end{align*}
+\end{ex}
+
+\end{document}

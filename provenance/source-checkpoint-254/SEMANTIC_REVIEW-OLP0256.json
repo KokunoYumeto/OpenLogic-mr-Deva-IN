@@ -1,0 +1,38 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0256",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of the formal definition and example, with exact formula, macro and token parity. No independent human or native-speaker review is claimed.",
+  "scope": "Four-component Turing-machine tuple, one-way-infinite tape convention, overwriting of the left-end marker and formal even-machine data.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "A Turing machine M is the tuple (Q,Sigma,q0,delta), with finite state set Q, finite alphabet Sigma containing both tape-end and blank markers, q0 in Q, and a finite instruction set represented by the partial function delta from Q times Sigma to Q times Sigma times the three movements.",
+      "checks": "The four components, finiteness of Q, Sigma and instructions, both mandatory symbols, q0 membership, partial arrow and left/right/stay codomain remain exact."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "The tape extends infinitely only in one direction. The end marker identifies the left boundary. One could require that whenever delta(q,end) is defined the written symbol remain end, but this edition does not impose that convention; overwriting can be useful.",
+      "checks": "The conditional formula and the distinction between an optional non-overwriting restriction and the actual permissive convention are preserved."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "The even machine has states q0,q1, alphabet end,blank,stroke, and three transitions: q0/stroke to q1/stroke/right; q1/stroke to q0/stroke/right; q1/blank to q1/blank/right.",
+      "checks": "The tuple and all three displayed transitions are unchanged."
+    }
+  ],
+  "source_observations": [
+    "T288 and MR-P131 support the Turing-machine name; T338 and MR-P158 support the established tape vocabulary, while OpenLogic defines the complete formal machine."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this incomplete chapter."
+  ]
+}

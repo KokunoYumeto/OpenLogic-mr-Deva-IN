@@ -17,8 +17,37 @@ def mask_text(t):
         out+=t[start:a]+'\\'+m.group(1)+'{TEXT MATH '+repr(inner)+'}'
         start=j
 def maths(t):
-    parts=re.findall(r'(?<!\\)\$(.*?)(?<!\\)\$|\\\[(.*?)\\\]|\\begin\{(?:align\*|multline\*)\}(.*?)\\end\{(?:align\*|multline\*)\}',t,re.S)
-    return collections.Counter(re.sub(r'\s+','',mask_text(''.join(p))) for p in parts)
+    # A displayed formula may contain inline dollars inside \text{...}. Exclude
+    # its span before finding inline formulae, then pair outer dollars only at
+    # brace depth zero so nested text-math dollars do not close the formula.
+    display=re.compile(r'\\\[(.*?)\\\]|\\begin\{(?:align\*|multline\*)\}(.*?)\\end\{(?:align\*|multline\*)\}',re.S)
+    parts=[]
+    masked=list(t)
+    for match in display.finditer(t):
+        parts.append(match.group(1) if match.group(1) is not None else match.group(2))
+        masked[match.start():match.end()]=[' ']*(match.end()-match.start())
+    remaining=''.join(masked)
+    i=0
+    while i<len(remaining):
+        if remaining[i]!='$' or (i>0 and remaining[i-1]=='\\'):
+            i+=1
+            continue
+        start=i+1
+        depth=0
+        i=start
+        while i<len(remaining):
+            char=remaining[i]
+            escaped=i>0 and remaining[i-1]=='\\'
+            if char=='{' and not escaped:depth+=1
+            elif char=='}' and not escaped:depth-=1
+            elif char=='$' and not escaped and depth==0:
+                parts.append(remaining[start:i])
+                i+=1
+                break
+            i+=1
+        else:
+            raise AssertionError('unclosed inline math')
+    return collections.Counter(re.sub(r'\s+','',mask_text(part)) for part in parts)
 def inline_math_delimiters(t):
     return collections.Counter(re.findall(r'\\[()]',t))
 def macros(t):return collections.Counter(re.findall(r'(?<!\\)\\[A-Za-z@]+\*?',t))
@@ -353,6 +382,10 @@ _DOCUMENTED_PROJECTIONS = {
     'OLP-0244': [
         ('$f\\colon \\Nat \\to \\Nat$ हे $A$ चे~$B$ कडे',
          '$f\\colon A \\to B$ हे'),
+    ],
+    'OLP-0255': [
+        ('दिसते त्याप्रमाणे यंत्र $q_0$ अवस्थेत\nसुरू होते',
+         'दिसते त्याप्रमाणे यंत्र पहिल्या अवस्थेत\nसुरू होते'),
     ],
 }
 

@@ -1,0 +1,290 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: representing-tms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{rep}
+\olsection{ट्यूरिंग यंत्रांचे निरूपण}
+
+\begin{explain}
+ट्यूरिंग यंत्रे \emph{अवस्था-आलेखांद्वारे} चित्ररूपात दाखवता येतात.
+या आलेखांत बाणांनी जोडलेली अवस्थांची घरे असतात. अर्थातच प्रत्येक
+अवस्था-घर यंत्राची एक अवस्था दर्शवते. प्रत्येक बाण त्या अवस्थेतून
+अमलात आणता येणारी एक सूचना दर्शवतो; सूचनेचे तपशील त्या बाणाच्या
+वर किंवा खाली लिहिलेले असतात. पुढील यंत्र पाहा. त्याच्या $q_0$ आणि
+$q_1$ अशा फक्त दोन अंतर्गत अवस्था आणि एकच सूचना आहे:
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]   (A)              {$q_0$};
+  \node[state]   (B) [right of=A] {$q_1$};
+
+  \path (A) edge  node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (B);
+\end{tikzpicture}
+\]
+ट्यूरिंग यंत्राला वाचन-लेखन शीर्ष आणि त्यावर आदान लिहिलेली फीत
+असते, हे आठवा. या सूचनेचा अर्थ असा: \emph{$q_0$ अवस्थेत
+रिकामे चिन्ह~$\TMblank$ वाचत असाल, तर $\TMstroke$ लिहा,
+उजवीकडे सरका आणि $q_1$ अवस्थेत जा}. हे संक्रमण फलनाने
+$\tuple{q_0, \TMblank}$ याचा $\tuple{q_1, \TMstroke,
+\TMright}$ शी केलेला संबंध याच्या सममूल्य आहे.
+\end{explain}
+
+\begin{ex}
+\emph{सम यंत्र}: फितीवर $\TMstroke$ चिन्हांची संख्या सम असेल तेव्हा
+आणि तेव्हाच पुढील ट्यूरिंग यंत्र थांबते (फितीवरील पहिल्या
+$\TMblank$ आधी सर्व $\TMstroke$ चिन्हे येतात, हे गृहीत धरून).
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
+\end{tikzpicture}
+\]
+
+हा अवस्था-आलेख पुढील संक्रमण फलनाशी संबंधित आहे:
+\begin{align*}
+\delta(q_0, \TMstroke) & = \tuple{q_1, \TMstroke, \TMright},\\
+\delta(q_1, \TMstroke) & = \tuple{q_0, \TMstroke, \TMright},\\
+\delta(q_1, \TMblank)  & = \tuple{q_1, \TMblank, \TMright}
+\end{align*}
+\end{ex}
+
+\begin{explain}
+वरील यंत्र आदानातील रेघांची संख्या सम असेल तेव्हाच थांबते.
+अन्यथा यंत्र (सैद्धांतिकदृष्ट्या) अमर्याद काळ कार्यरत राहते.
+कोणत्याही यंत्राच्या कोणत्याही आदानासाठी त्याच्या \emph{स्थितिवर्णनांचा}
+क्रम पाहून प्रदान निश्चित करता येते. स्थितिवर्णनाची औपचारिक
+व्याख्या पुढे देऊ. सध्या, यंत्र चालू असताना प्रत्येक क्षणी त्याची
+स्थिती दाखवणाऱ्या आकृत्यांची मालिका असे स्थितिवर्णनांचे अंतर्ज्ञानी
+आकलन करता येईल. स्थितिवर्णनात फितीवरील मजकूर, यंत्राची अवस्था
+आणि वाचन-लेखन शीर्षाची जागा दिसते.
+
+सम यंत्राला चार $\TMstroke$ चिन्हांचे आदान दिल्यास त्याची
+स्थितिवर्णने पाहू. या वेळी यंत्र थांबेल, अशी अपेक्षा आहे. मग
+तीन $\TMstroke$ चिन्हांचे आदान देऊ; त्या वेळी ते कायम चालू राहील.
+
+यंत्र $q_0$ अवस्थेत सुरू होते आणि सर्वांत डावीकडील $\TMstroke$
+वाचते. त्याची प्रारंभिक स्थिती अशी दर्शवता येते:
+\[
+\TMendtape \TMstroke_0 \TMstroke \TMstroke \TMstroke \TMblank \ldots
+\]
+वरील स्थितिवर्णन सरळ आहे. दिसते त्याप्रमाणे यंत्र $q_0$ अवस्थेत
+सुरू होते आणि सर्वांत डावीकडील $\TMstroke$ वाचते. पहिल्या
+%READERNOTE{OLTUR-001 — गोठवलेल्या इंग्रजीत आरंभीची अवस्था one म्हटली आहे; लगेच आधीचे चित्र आणि संक्रमण फलन शून्य अवस्था दाखवतात. मराठीत त्यांच्याशी सुसंगत शून्य अवस्था वापरली आहे.}
+$\TMstroke$ च्या खाली लिहिलेला अवस्थेच्या नावाचा निर्देशांक हे
+दर्शवतो. या टप्प्यावर लागू होणारी सूचना
+$\delta(q_0, \TMstroke) = \tuple{q_1, \TMstroke, \TMright}$ आहे;
+म्हणून यंत्र फितीवर उजवीकडे सरकते आणि $q_1$ अवस्थेत जाते.
+\[
+\TMendtape \TMstroke \TMstroke_1 \TMstroke \TMstroke \TMblank \ldots
+\]
+आता यंत्र $q_1$ अवस्थेत $\TMstroke$ वाचत आहे, म्हणून
+$\delta(q_1, \TMstroke) = \tuple{q_0,
+  \TMstroke, \TMright}$ ही सूचना ``पाळावी'' लागते. त्यातून पुढील
+स्थितिवर्णन मिळते:
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke_0 \TMstroke \TMblank \ldots
+\]
+यंत्र पुढे चालू राहिल्यावर हे नियम त्याच क्रमाने पुन्हा लागू होतात
+आणि पुढील दोन स्थितिवर्णने मिळतात:
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMstroke_1 \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMstroke \TMblank_0 \ldots
+\]
+आता यंत्र $q_0$ अवस्थेत $\TMblank$ वाचत आहे. संक्रमण-आलेखावरून
+येथे अमलात आणण्यासाठी कोणतीही सूचना नाही, हे सहज दिसते;
+म्हणून यंत्र थांबले आहे. याचा अर्थ आदान स्वीकारले गेले.
+
+आता यंत्राला तीन $\TMstroke$ चिन्हांचे आदान देऊन सुरू करू.
+सुरुवातीची काही स्थितिवर्णने मिळतीजुळती असतील, कारण त्याच सूचना
+अमलात येतात; फक्त फितीवरील आदान थोडे वेगळे आहे:
+\[
+\TMendtape \TMstroke_0 \TMstroke \TMstroke \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke_1 \TMstroke \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke_0 \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMblank_1 \ldots
+\]
+आता यंत्र सर्व $\TMstroke$ चिन्हांच्या पुढे गेले आहे आणि $q_1$
+अवस्थेत $\TMblank$ वाचत आहे. आलेखात दाखवल्याप्रमाणे
+$\delta(q_1, \TMblank) =\tuple{q_1,
+\TMblank, \TMright}$ या रूपाची सूचना आहे. फीत उजवीकडे अनंतपर्यंत
+$\TMblank$ चिन्हांनी भरलेली असल्याने यंत्र ही सूचना \emph{कायम}
+अमलात आणत राहील; ते $q_1$ अवस्थेतच राहून सतत उजवीकडे सरकेल.
+यंत्र कधीच थांबणार नाही आणि आदान स्वीकारणार नाही.
+\end{explain}
+
+\begin{explain}
+सर्व यंत्रे थांबतातच असे नाही, हे लक्षात ठेवणे महत्त्वाचे आहे. थांबणे
+म्हणजे अमलात आणण्यासाठी सूचना संपणे असेल, तर प्रत्येक अवस्थेत
+प्रत्येक चिन्हासाठी बाहेर जाणारा बाण ठेवून कधीही न थांबणारे यंत्र
+बनवता येते. $q_0$ अवस्थेत $\TMblank$ वाचण्यासाठी एक सूचना
+जोडून सम यंत्र कायम चालू राहील असे बदलता येते.
+\end{explain}
+
+\begin{ex}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+
+  \path
+  (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+      edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (A)
+  (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+      edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
+\end{tikzpicture}
+\]
+\end{ex}
+
+\begin{explain}
+यंत्र-सारणी हा ट्यूरिंग यंत्रांचे निरूपण करण्याचा दुसरा मार्ग आहे.
+यंत्र-सारणीत फितीवरील वर्णमाला $x$-अक्षावर आणि यंत्राच्या अवस्था
+$y$-अक्षावर दाखवलेल्या असतात. सारणीतील प्रत्येक अवस्था आणि चिन्ह
+यांच्या छेदावर सूचनेचा उरलेला भाग---नवी अवस्था, नवे चिन्ह आणि
+हालचालीची दिशा---लिहिलेला असतो. यंत्र कोणत्या अवस्थेत आणि कोणते
+चिन्ह वाचताना थांबते हे यंत्र-सारणीवरून सहज ठरवता येते. सारणीत
+जिथे नोंद नाही, तिथे यंत्र थांबू शकते. अवस्था-आलेख किंवा सूचनासंच
+यांत यंत्र नेमके कुठे थांबेल हे लगेच स्पष्ट होत नाही; पण
+यंत्र-सारणीत रिकामी घरे शोधून अशी ठिकाणे पटकन ओळखता येतात.
+\end{explain}
+
+\begin{ex}
+सम यंत्राची यंत्र-सारणी अशी आहे:
+\[
+\centering
+\begin{tabular}{lllll}
+\cline{2-4}
+\multicolumn{1}{l|}{}      & \multicolumn{1}{c|}{$\TMblank$}                
+& \multicolumn{1}{c|}{$\TMstroke$}     & \multicolumn{1}{c|}{$\TMendtape$}   &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{$q_0$} & \multicolumn{1}{l|}{}                          
+& \multicolumn{1}{l|}{\TMtrans{\TMstroke}{q_1}{\TMright}} & 
+\multicolumn{1}{l|}{\phantom{\TMtrans{\TMstroke}{q_1}{\TMright}}} &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{$q_1$} & \multicolumn{1}{l|}{\TMtrans{\TMblank}{q_1}{\TMright}} 
+& \multicolumn{1}{l|}{\TMtrans{\TMstroke}{q_0}{\TMright}} & 
+\multicolumn{1}{l|}{\phantom{\TMtrans{\TMstroke}{q_1}{\TMright}}} &  \\ \cline{1-4}
+\end{tabular}
+\]
+दिसते त्याप्रमाणे यंत्र $q_0$ अवस्थेत $\TMblank$ वाचताना थांबते.
+\end{ex}
+
+\begin{explain}
+आतापर्यंत आपण फक्त आदान वाचून ते स्वीकारणारी यंत्रे पाहिली.
+परंतु ट्यूरिंग यंत्रे वाचूही शकतात आणि लिहूही शकतात. अशा यंत्राचे
+एक उदाहरण (अशी अनेक उदाहरणे असली तरी) म्हणजे \emph{दुप्पट करणारे
+यंत्र}. हे यंत्र फितीवरील $n$ $\TMstroke$ चिन्हांचा सलग गट
+आदान म्हणून घेते आणि $2n$ $\TMstroke$ चिन्हांचा सलग गट प्रदान करते.
+\end{explain}
+
+\begin{ex}
+  \ollabel{ex:doubler} दुप्पट करणारे यंत्र बनवण्यापूर्वी ही समस्या
+  सोडवण्यासाठी \emph{धोरण} ठरवणे महत्त्वाचे आहे. यंत्राला (आपल्या
+  व्याख्येनुसार) त्याने किती $\TMstroke$ चिन्हे वाचली हे लक्षात
+  ठेवता येत नाही; म्हणून फितीवरील सर्व $\TMstroke$ चिन्हांचा मागोवा
+  घेण्याचा मार्ग हवा. एक मार्ग म्हणजे आदान आणि प्रदान यांमध्ये
+  $\TMblank$ ठेवून त्यांना वेगळे करणे. मग यंत्र आदानातील पहिले
+  $\TMstroke$ पुसू शकते, आदानाचा उरलेला भाग पार करू शकते,
+  $\TMblank$ सोडू शकते आणि दोन नवी $\TMstroke$ चिन्हे लिहू शकते.
+  नंतर ते आदानातील दुसरे $\TMstroke$ शोधून त्याच्यासाठीही असेच
+  दुपटीकरण करील. आदानातील प्रत्येक एका $\TMstroke$ साठी ते
+  प्रदानात दोन $\TMstroke$ चिन्हे लिहील. पुढे जाताना आदान
+  पुसल्यामुळे कोणतेही $\TMstroke$ चिन्ह सुटणार नाही किंवा त्याची
+  दुप्पट मोजणी होणार नाही, याची खात्री होते. संपूर्ण आदान पुसल्यावर
+  फितीवर $2n$ $\TMstroke$ चिन्हे उरतील. परिणामी ट्यूरिंग यंत्राचा
+  अवस्था-आलेख \olref{fig:doubler} मध्ये दाखवला आहे.
+  \begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (1)              {$q_0$};
+  \node[state]         (2) [right of=1] {$q_1$};
+  \node[state]         (3) [right of=2] {$q_2$};
+  \node[state]         (4) [below of=3] {$q_3$};
+  \node[state]         (5) [left of=4]  {$q_4$};
+  \node[state]         (6) [left of=5]  {$q_5$};
+
+  \path (1) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (3)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (4)
+    (4) edge [loop below] node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (4)
+        edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below]  node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (6)
+    (6) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (6)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (1);
+\end{tikzpicture}
+\]
+\caption{दुप्पट करणारे यंत्र}
+\ollabel{fig:doubler}
+\end{figure}
+\end{ex}
+
+\begin{prob}
+एखादे आदान निवडा आणि \olref[tur][mac][rep]{ex:doubler} मधील दुप्पट
+करणाऱ्या यंत्राची स्थितिवर्णने क्रमाने शोधा.
+\end{prob}
+
+\begin{prob}
+$\{\TMendtape,\TMblank, A, B\}$ ही वर्णमाला असलेले ट्यूरिंग यंत्र
+रचा. $A$ आणि $B$ यांच्या कोणत्याही चिन्हमालेत $A$ ची संख्या $B$
+च्या संख्येइतकी \emph{आणि} सर्व $A$ सर्व $B$ च्या आधी असतील,
+तर यंत्राने ती चिन्हमाला स्वीकारावी, म्हणजे तिच्यावर थांबावे.
+$A$ आणि $B$ यांच्या संख्या असमान असतील किंवा सर्व $A$ सर्व $B$
+च्या आधी नसतील, तर यंत्राने ती नाकारावी, म्हणजे तिच्यावर थांबू नये.
+(उदाहरणार्थ, यंत्राने $AABB$ आणि $AAABBB$ स्वीकाराव्यात; पण
+$AAB$ आणि $AABBAABB$ या दोन्ही नाकाराव्यात.)
+\end{prob}
+
+\begin{prob}
+$\{\TMendtape,\TMblank, A, B\}$ ही वर्णमाला असलेले ट्यूरिंग यंत्र
+रचा. त्याने $A$ आणि $B$ यांची कोणतीही चिन्हमाला $\alpha$ आदान
+म्हणून घेऊन तिची प्रत तयार करावी आणि $\alpha\alpha$ या रूपाचे
+प्रदान द्यावे. (उदाहरणार्थ, $ABBA$ या आदानापासून $ABBAABBA$
+हे प्रदान मिळावे.)
+\end{prob}
+
+\begin{prob}
+\emph{वर्णक्रमात आहे का?}: $\{\TMendtape,\TMblank, A, B\}$ ही
+वर्णमाला असलेले ट्यूरिंग यंत्र रचा. $A$ आणि $B$ यांची सांत
+क्रमिका आदान दिल्यावर सर्व $A$ सर्व $B$ यांच्या डावीकडे आहेत की
+नाही, हे त्याने तपासावे. यंत्राने आदान-चिन्हमाला फितीवर ठेवावी;
+ती ``वर्णक्रमात'' असेल तर थांबावे आणि नसेल तर कायम पुनरावर्तनात
+चालू राहावे.
+\end{prob}
+
+\begin{prob}
+\emph{वर्णक्रम लावणारे यंत्र}: $\{\TMendtape,\TMblank, A, B\}$
+ही वर्णमाला असलेले ट्यूरिंग यंत्र रचा. $A$ आणि $B$ यांची सांत
+क्रमिका आदान म्हणून घेऊन त्यांची पुनर्रचना अशा रीतीने करावी की
+सर्व $A$ सर्व $B$ यांच्या डावीकडे येतील. (उदाहरणार्थ, $BABAA$
+ही क्रमिका $AAABB$ व्हावी आणि $ABBABB$ ही क्रमिका $AABBBB$
+व्हावी.)
+\end{prob}
+
+\end{document}

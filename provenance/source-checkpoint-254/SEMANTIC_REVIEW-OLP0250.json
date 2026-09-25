@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0250",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of the fixed-point application and partial-selector diagonal, with exact formula, macro, label and reference parity. No independent human or native-speaker review is claimed.",
+  "scope": "Defining functions from their indices and impossibility of a partial computable procedure that extracts characteristic-function indices from all computable c.e. sets.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5
+      ],
+      "reverse_paraphrase": "The fixed-point theorem lets a program use its own index; in particular some e satisfies φ_e(y)=e+y for every y. The same proof mechanism can design a self-printing Java or C++ program.",
+      "checks": "The index e, universal y, exact addition formula and two programming-language names are preserved."
+    },
+    {
+      "blocks": [
+        6,
+        7
+      ],
+      "reverse_paraphrase": "W_e is the domain of φ_e and the W_0,W_1,... list enumerates all c.e. sets. Although some W_e are computable, no partial computable f can, for every such e, halt with an index f(e) whose program computes the characteristic function of W_e.",
+      "checks": "The indexed-domain meaning, c.e. class, partial candidate, required definedness and characteristic-function condition are preserved."
+    },
+    {
+      "blocks": [
+        8,
+        9
+      ],
+      "reverse_paraphrase": "For an arbitrary partial computable f, apply the fixed-point theorem to partial g(x,y) that returns zero only when y=0 and the universal program indexed by f(x) halts on zero with output zero. The resulting e has W_e={0} if that output is zero and W_e=empty otherwise. If f(e) diverges, the selector's required definedness fails; if it returns an index, that program gives the wrong membership answer at zero. The frozen proof had started with only a total computable f, which was insufficient for the theorem.",
+      "checks": "Both displayed case functions, the universal simulation order, zero-input diagonal, two possible W_e sets and partial-f divergence case are retained. OLCMP-024 documents the prose-only scope repair."
+    }
+  ],
+  "source_observations": [
+    "OLCMP-024 corrects the proof quantifier from total to partial computable f and explicitly handles divergence of f(e) in the final prose; all protected formulas remain unchanged.",
+    "T301 supplies characteristic-function terminology, T327 effective enumeration and T335 the fixed-point construction."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}
