@@ -1,0 +1,45 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0246",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of the fixed-input halting set and s-m-n reduction, with exact formula, macro, label and reference parity. No independent human or native-speaker review is claimed.",
+  "scope": "K_1 as the set of programs halting on input zero, its c.e. status and the computable reduction K_0≤_m K_1.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "The section applies the preceding reducibility proposition. K_1 comprises indices e for which φ_e(0) is defined. It is c.e. through an existential T witness and is noncomputable if K_0 reduces to it.",
+      "checks": "The fixed input 0, definedness, two claims and both cross-references are preserved."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "An oracle answering only whether a program halts on input 0 can still answer whether (e,x) belongs to K_0: build a program e_x that ignores any supplied input and simulates e on x, then ask whether e_x halts on 0. This transforms a K_0 question into a K_1 question without reversing yes/no.",
+      "checks": "The original pair (e,x), new program e_x, ignored arbitrary input, fixed 0 query and K_0-to-K_1 direction remain exact."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "Define a three-place partial computable f(x,y,z)≃φ_x(y), independent of z, and choose e indexing f. The s-m-n theorem yields s(e,x,y) indexing a one-place program that ignores z and computes φ_x(y). Hence φ_s(e,x,y)(0) is defined iff φ_x(y) is, so the computable g(w)=s(e,(w)_0,(w)_1) reduces K_0 to K_1.",
+      "checks": "Arity, index e, all three variables, both partial equalities, input zero, code coordinates and g definition are preserved."
+    }
+  ],
+  "source_observations": [
+    "T332 records ओरॅकल as a transparent specialist borrowing under OpenLogic's operational friend metaphor; T207 supports त्रिस्थानी and T321 supports program-index register.",
+    "The prior c.e.-completeness section cites this K_0-to-K_1 reduction, and its direction agrees with the actual construction here."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The oracle borrowing remains expert-reviewable rather than directly attested by the checked canon.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "schema": "openlogic-incremental-source-checkpoint/1",
+  "checkpoint_id": "mr-Deva-IN-source-243-20260925",
+  "generated_utc": "2026-09-25T03:48:17.690322Z",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "base_checkpoint": {
+    "path": "provenance/source-checkpoint-233/SOURCE_CHECKPOINT.json",
+    "bytes": 10255,
+    "sha256": "d9d1e103f796a23afac2540bc46030863247d3bcdea87dd85a34c11df4662fdc"
+  },
+  "scope": {
+    "translated_source_units": 243,
+    "total_source_units": 722,
+    "remaining_source_units": 479,
+    "aligned_content_segments": 2421,
+    "complete_source_chapters": 23,
+    "complete_reader_chapters": 20,
+    "first_incremental_unit": "OLP-0237",
+    "last_unit": "OLP-0246",
+    "next_unit": "OLP-0247",
+    "complete_edition": false
+  },
+  "translation_files": [
+    {
+      "unit_id": "OLP-0237",
+      "path": "mr/content/computability/computability-theory/computable-sets.tex",
+      "bytes": 2320,
+      "sha256": "ac6723d6f444c4419612e413fe830b71c1fd2705835bbf8fef4f33b853617dcf",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0238",
+      "path": "mr/content/computability/computability-theory/ce-sets.tex",
+      "bytes": 3073,
+      "sha256": "32f74471caedf562bb5326f5d45a922985b1ec5992731d00a9b1b9814bbca935",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0239",
+      "path": "mr/content/computability/computability-theory/equiv-ce-defs.tex",
+      "bytes": 13543,
+      "sha256": "870b1c8eedf5f68437b5baf59c0590b535f42bd55c2890b9ad5e4458216b0a53",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0240",
+      "path": "mr/content/computability/computability-theory/non-comp-set.tex",
+      "bytes": 4063,
+      "sha256": "32262151dacb6b1990d49d070acba9a36b978ef92d7e8a79569d5aac70390a64",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0241",
+      "path": "mr/content/computability/computability-theory/ce-closed-cup-cap.tex",
+      "bytes": 7252,
+      "sha256": "be1eacc250af4d666de7c7cc694b8d7f343312979d3c852c4597896e1c218553",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0242",
+      "path": "mr/content/computability/computability-theory/complement-ce.tex",
+      "bytes": 4746,
+      "sha256": "7918d2c3ab395a6d38e5883ba228ebff6741f58885b2d0a78e041d57441880c7",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0243",
+      "path": "mr/content/computability/computability-theory/reducibility.tex",
+      "bytes": 6987,
+      "sha256": "abd294bf6613406ac076fb72e5d9940ce824a892cdf32ce3a8dd5b72a9502d49",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0244",
+      "path": "mr/content/computability/computability-theory/prop-reduce.tex",
+      "bytes": 8766,
+      "sha256": "2d58df0e2a605183103d1c89937632332db1693fbfea379cf8001b26de16b281",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0245",
+      "path": "mr/content/computability/computability-theory/complete-ce-sets.tex",
+      "bytes": 4528,
+      "sha256": "d28dd8c609a3a23389f6ae4e2bbc3d5bb5abefe1c6502a9572e52ab33d7c269d",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0246",
+      "path": "mr/content/computability/computability-theory/k-1.tex",
+      "bytes": 4782,
+      "sha256": "e24d826c518d2f77a4bb245be976de908676193f102ab9f13d83333624c934bf",
+      "role": "new translated source"
+    }
+  ],
+  "semantic_reviews": [
+    {
+      "unit_id": "OLP-0237",
+      "path": "provenance/source-checkpoint-243/SEMANTIC_REVIEW-OLP0237.json",
+      "bytes": 2066,
+      "sha256": "5026d2d8b3992a1acc6cb9af07104d3ce359897209f51cea2f75ce4fad8fc763"
+    },
+    {
+      "unit_id": "OLP-0238",
+      "path": "provenance/source-checkpoint-243/SEMANTIC_REVIEW-OLP0238.json",
+      "bytes": 2336,
+      "sha256": "f9f7f6ed9a070ebb638628b99d91fcb234e8fc7714fd80eaecdf53a9c076ee64"
+    },
+    {
+      "unit_id": "OLP-0239",
+      "path": "provenance/source-checkpoint-243/SEMANTIC_REVIEW-OLP0239.json",
+      "bytes": 3748,
+      "sha256": "10f5979d7fbb812bb58c5d1ca59487adf223ee8e2f90901be8e56059e113133a"
+    },
+    {
+      "unit_id": "OLP-0240",
+      "path": "provenance/source-checkpoint-243/SEMANTIC_REVIEW-OLP0240.json",
+      "bytes": 2222,
+      "sha256": "a09a932caea1c96592b6a5f8cfbb704bcabcec8124a1869580425d8eeab04935"
+    },
+    {
+      "unit_id": "OLP-0241",
+      "path": "provenance/source-checkpoint-243/SEMANTIC_REVIEW-OLP0241.json",
+      "bytes": 3246,
+      "sha256": "bfb2f66e99dc957c803acfd570a7f7fdb576defbd47314d8b59bfab9f5ebde1a"
+    },
+    {
+      "unit_id": "OLP-0242",
+      "path": "provenance/source-checkpoint-243/SEMANTIC_REVIEW-OLP0242.json",
+      "bytes": 3050,
+      "sha256": "f41434bcb344b9924d6307d41bcca81dfbe346c3eb905e1b1a386baadc50528a"
+    },
+    {
+      "unit_id": "OLP-0243",
+      "path": "provenance/source-checkpoint-243/SEMANTIC_REVIEW-OLP0243.json",
+      "bytes": 3308,
+      "sha256": "ee780ed94e3e4ed8e85f755d222df065294c2facf138a12bbc5b334b7313d1f0"
+    },
+    {
+      "unit_id": "OLP-0244",
+      "path": "provenance/source-checkpoint-243/SEMANTIC_REVIEW-OLP0244.json",
+      "bytes": 3632,
+      "sha256": "bc4bf43764a18691728c3d5596adb47e2886bcfd4172d31306c38aa68a3a7f7a"
+    },
+    {
+      "unit_id": "OLP-0245",
+      "path": "provenance/source-checkpoint-243/SEMANTIC_REVIEW-OLP0245.json",
+      "bytes": 3178,
+      "sha256": "4f76dee26c07724f1662e3b47774333aad4c89231037dfae3b94bf67b734f9f5"
+    },
+    {
+      "unit_id": "OLP-0246",
+      "path": "provenance/source-checkpoint-243/SEMANTIC_REVIEW-OLP0246.json",
+      "bytes": 2639,
+      "sha256": "a52b8414ed8178209072cca3b7e0be73fca9ea06ac9ab81485fab024e8fed9da"
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "OLCMP-017",
+      "unit_id": "OLP-0239",
+      "classification": "confirmed-frozen-source-unbound-input-variable-in-range-converse",
+      "finding": "In the converse range argument, z is the code of a pair and T(e,(z)_0,(z)_1) is assumed, but the frozen conclusion writes cfind_e(x) defined = y without binding x. The input in the T witness is (z)_0.",
+      "action": "Use (z)_0 as the input in the Marathi conclusion, add adjacent reader note OLCMP-017, and project this one formula back to the frozen x only for parity QA."
+    },
+    {
+      "id": "OLCMP-018",
+      "unit_id": "OLP-0239",
+      "classification": "confirmed-frozen-source-omitted-empty-case-in-ce-to-domain-proof",
+      "finding": "The c.e. definition explicitly includes the empty set, but in proving c.e. implies domain of a partial computable function the frozen proof immediately assumes S is the range of a total computable function. No such function from naturals has empty range, so the empty case is omitted.",
+      "action": "Add a prose-only empty-set case using the nowhere-defined partial computable function before proceeding with the source's nonempty total-enumerator proof, and place adjacent reader note OLCMP-018. Protected formulas and identifiers remain otherwise unchanged."
+    },
+    {
+      "id": "OLCMP-019",
+      "unit_id": "OLP-0241",
+      "classification": "confirmed-frozen-source-omitted-empty-cases-in-enumerator-closure-proofs",
+      "finding": "The frozen theorem allows empty c.e. sets, but its first two proofs immediately assume that each of A and B is the range of a total computable enumerator. The empty set has no such enumerator. The second proof explicitly handles an empty intersection, but it still assumes total enumerators for A and B before that step.",
+      "action": "State before those two proofs that either empty input set makes the intersection empty and the union the other c.e. set, then use total enumerators only for the nonempty case. Add adjacent reader note OLCMP-019; preserve every source formula and identifier."
+    },
+    {
+      "id": "OLCMP-020",
+      "unit_id": "OLP-0242",
+      "classification": "confirmed-frozen-source-wrong-and-unbound-function-indices-in-complement-closure-proof",
+      "finding": "The frozen proof makes A the domain of φ_d and its complement the domain of φ_e, but concludes x∈A iff T(e,x,h(x)) and calls φ_e the defined function; this test actually identifies the complement. Its informal explanation then searches φ_e and an unbound φ_f, and again assigns φ_e halting to A.",
+      "action": "Use T(d,x,h(x)) and φ_d in the concluding A-membership test; change the informal pair to φ_d and φ_e and assign φ_d halting to A. Add reader note OLCMP-020. Unit-specific QA projections restore the frozen indices only for structural comparison."
+    },
+    {
+      "id": "OLCMP-021",
+      "unit_id": "OLP-0243",
+      "classification": "confirmed-frozen-source-reversed-pair-order-in-K0-equivalent-description",
+      "finding": "The frozen displayed definition of K_0 uses ordered pairs (e,x) with φ_e(x) defined, but its immediately following W_e reformulation writes (x,e) while keeping x∈W_e. The W_e condition corresponds to (e,x), not to a reversed pair.",
+      "action": "Use (e,x) in the Marathi W_e reformulation, add adjacent reader note OLCMP-021, and project that one formula back to the frozen (x,e) solely for parity QA."
+    },
+    {
+      "id": "OLCMP-022",
+      "unit_id": "OLP-0244",
+      "classification": "confirmed-frozen-source-wrong-function-type-in-characteristic-function-exercise",
+      "finding": "The frozen exercise calls f:A→B a many-one reduction while the preceding definition requires a total computable f:N→N with membership equivalence for every natural number. The claimed characteristic-function identity is on all natural inputs; a function typed only on A cannot supply it outside A.",
+      "action": "Use f:N→N in the Marathi exercise while naming A-to-B reduction in prose, add reader note OLCMP-022, and project the corrected type and extra explicit set-role tokens back only for structural QA."
+    },
+    {
+      "id": "OLCMP-023",
+      "unit_id": "OLP-0245",
+      "classification": "confirmed-frozen-source-reversed-reduction-direction-in-K-completeness-proof",
+      "finding": "To prove K complete from K_0 complete, the proof needs a reduction K_0≤_m K and transitivity. Its frozen final sentence instead states K≤_m K_0, which does not establish the theorem's K claim. The following exercise independently asks for the latter easier direction.",
+      "action": "State the needed K_0-to-K direction in the Marathi final proof sentence, add adjacent reader note OLCMP-023, and preserve the following exercise's original K-to-K_0 request. Formula multiset parity is unchanged by swapping the two names, so semantic review rather than a mechanical projection records the correction."
+    }
+  ],
+  "qa": {
+    "units_checked": 10,
+    "unit_structural_failures": 0,
+    "formula_macro_token_identifier_reference_parity": true,
+    "semantic_reviews_passed": 10,
+    "cross_package_receipt": {
+      "path": "provenance/source-checkpoint-243/CROSS_PACKAGE_QA-WORKING.json",
+      "bytes": 1325,
+      "sha256": "55f833283959e62bf8b7c3a013e0a8cc241f660e246d35067350f61efd78f7d8",
+      "segment_hashes_replayed": 2421,
+      "result": "passed"
+    },
+    "independent_human_or_native_speaker_review_claimed": false,
+    "tex_reader_build_run_for_increment": false
+  },
+  "synchronized_provenance": {
+    "receipt": "provenance/PROVENANCE_SYNC.json",
+    "canon_sources": 111,
+    "canon_passages": 156,
+    "term_decisions": 332,
+    "aligned_segments": 2421,
+    "expert_review_decisions": {
+      "records": 487,
+      "path": "provenance/EXPERT_REVIEW_DECISIONS.jsonl",
+      "bytes": 3350735,
+      "sha256": "61669426480c56b6f7d94879b9978b7e02c0ef8ce3fa7dce852aed86b95f28bb"
+    },
+    "expert_review_occurrences": {
+      "records": 12871,
+      "path": "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl",
+      "bytes": 38748814,
+      "sha256": "2901df3b40288f0127a7ca15ce7f778747845e89f847365a2695a656013f1eec"
+    },
+    "canonical_decision_qa": {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "bytes": 3535,
+      "sha256": "bacea8f9c6fd5d9d0d444fd83479b4e1839b36e117f35ba4a51297ba016db63b",
+      "deterministic_second_run_identical": true
+    }
+  },
+  "latest_public_reader": {
+    "tag": "twenty-chapters-v0.9",
+    "last_unit": "OLP-0197",
+    "translated_units": 194,
+    "pages": 264,
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/twenty-chapters-v0.9",
+    "zenodo_doi": "10.5281/zenodo.22864626"
+  },
+  "packaging_observations": {
+    "path": "provenance/source-checkpoint-233/PACKAGING_OBSERVATIONS-TWENTY-CHAPTERS-v0.9.json",
+    "bytes": 2420,
+    "sha256": "c234df36fafd075fbe42ac2e323648681e3e164199aafe62126bc482277bffe2",
+    "disposition": "Apply both corrections at the next full-source package checkpoint; preserve inherited access."
+  },
+  "status": "source-complete-and-reviewed; coherent reader refresh pending"
+}

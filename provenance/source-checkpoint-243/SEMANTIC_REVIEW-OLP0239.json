@@ -1,0 +1,53 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0239",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of both equivalence theorems and all proof directions, with formula, macro and identifier parity after one bounded source-typo projection. No independent human or native-speaker review is claimed.",
+  "scope": "Four equivalent characterizations of c.e. sets, partial-computable range/domain constructions, indexed W_e enumeration and existential computable-relation characterization.",
+  "samples": [
+    {
+      "blocks": [
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "For any set S of naturals, c.e. is equivalent to being the range of a partial computable function, being empty or the range of a primitive recursive function, and being the domain of a partial computable function. The domain formulation makes membership one-sided semidecidable: members eventually yield yes, but nonmembers may never yield no. Primitive recursive range implies computable range implies partial-computable range, with the nowhere-defined function covering empty S.",
+      "checks": "The empty qualifiers, partial versus total distinction, all four labels and implications, and one-sided halting behavior are preserved."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "Given nonempty S as the range of indexed partial function φ_e, choose a in S. Kleene T/U codes a successful computation by x,s; primitive-recursive f(z) returns U((z)_1) when T(e,(z)_0,(z)_1), otherwise a. Its range is exactly S. The converse witness is input (z)_0, not an unbound x; the notation φ_e(x)↓=y means defined and equal to y.",
+      "checks": "Both range-containment directions, primitive-recursive strength, fallback a and exact first-component witness are retained. OLCMP-017 documents the frozen unbound-variable correction."
+    },
+    {
+      "blocks": [
+        13,
+        14
+      ],
+      "reverse_paraphrase": "To turn a c.e. set into a partial-computable domain, handle empty S with the nowhere-defined function; otherwise let total computable f enumerate S and search for an x with f(x)=y. Conversely, from S as domain of φ_e, use T and a chosen a in S to make a total enumerator that returns (z)_0 on a successful computation code and a otherwise.",
+      "checks": "OLCMP-018 fills the frozen proof's missing empty case. The µ-search, T-code test, nonempty fallback and both tagged Turing-machine explanations remain exact."
+    },
+    {
+      "blocks": [
+        15,
+        17,
+        18
+      ],
+      "reverse_paraphrase": "W_e denotes the domain of φ_e and every c.e. A equals some W_e. A set S is c.e. iff membership has an existential natural-number witness satisfying a computable relation R(x,y). Forward use T(e,x,y); reverse use partial µ-search of R and take its domain.",
+      "checks": "The W_e definition and quantifiers, forward T relation, reverse computable R, µ-search and domain conclusion are preserved."
+    }
+  ],
+  "source_observations": [
+    "T327 keeps effective enumeration distinct from ordinary countability; T328 records the source-defined one-sided semidecision sense rather than claiming an official full-term attestation.",
+    "OLCMP-017 corrects one unbound x to (z)_0 with a bounded formula projection. OLCMP-018 adds the empty-set domain case in prose without altering protected formulas."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact Marathi compounds for c.e. and semidecidable remain expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

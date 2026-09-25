@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0238",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of the definition, enumeration examples and computable-set inclusion proof, with exact formula, macro and identifier parity. No independent human or native-speaker review is claimed.",
+  "scope": "Computably enumerable sets, their historical recursively enumerable synonym, repetitions in enumeration and computable sets as a subclass.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "A set is computably enumerable if it is empty or the range of a computable function. Recursively enumerable is the original alternate term; c.e. and r.e. are also in common use. If S is the range of f, the list f(0),f(1),... enumerates it, with neither increasing order nor injectivity required, so repeats are allowed; the constant zero function enumerates {0}.",
+      "checks": "The explicit empty-set clause, total computable function, historical terminology, both permitted nonmonotonicity and repetitions, and the constant example are preserved."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "Every computable set is computably enumerable. The empty case follows by definition; for nonempty S choose a in S and define f(x)=x when the characteristic function says x is in S, otherwise a. This total computable f has range exactly S.",
+      "checks": "The nonempty witness a, 1-membership case, fallback a, computability and exact range conclusion remain explicit."
+    }
+  ],
+  "source_observations": [
+    "T327 deliberately distinguishes effective enumeration from ordinary countability: MR-P129 separates संगणनक्षम from गणनीय, while MR-P033 supports प्रगणन.",
+    "The English ordinary labels in the piecewise formula are translated into Marathi; all protected math tokens remain exact."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "The full Marathi computably-enumerable compound is transparent and source-controlled but lacks direct headword attestation; it remains expert-reviewable.",
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

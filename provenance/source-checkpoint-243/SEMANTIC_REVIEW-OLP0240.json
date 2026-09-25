@@ -1,0 +1,37 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0240",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of K_0 and K constructions, with exact formula, macro, label and reference parity. No independent human or native-speaker review is claimed.",
+  "scope": "Computably enumerable yet noncomputable halting set K_0 and c.e. yet undecidable self-halting set K.",
+  "samples": [
+    {
+      "blocks": [
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "K_0 consists of codes of pairs (e,x) for which φ_e(x) is defined. It is c.e. because a partial µ-search on y finds a T-witness exactly for valid pair codes with a halting computation, and undefined otherwise. Its noncomputability follows from the previously proved halting-problem undecidability.",
+      "checks": "The pair-length-two test, both definedness cases, invalid-pair case and cross-reference remain exact."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "K_0 is the halting set, and K is the self-halting set of indices e for which φ_e(e) is defined. K is c.e. but not decidable: if its characteristic function were computable, a partial d returning one exactly when e is outside K would have an index k, yielding d(k) defined iff φ_k(k) undefined although d≃φ_k. K is c.e. because it is the domain of µ_y T(x,x,y).",
+      "checks": "The self-input e, characteristic-function zero test, opposite definedness, c.e. domain construction, labels and every displayed formula are preserved."
+    }
+  ],
+  "source_observations": [
+    "T327 supplies the effective-enumeration compound and T322 the established halting terminology; the K_0/K constructions themselves are fixed by OpenLogic.",
+    "The frozen !!{c.e.} tokens are preserved exactly as source-controlled markup."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "The Marathi names for halting and self-halting sets are transparent source-controlled phrases, not independently attested headwords.",
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

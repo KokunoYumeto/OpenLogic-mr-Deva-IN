@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 42 urgent/high decisions and
-1100 current occurrences. Normal and low items remain in the full index.
+1103 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -823,6 +823,9 @@ This view contains 42 urgent/high decisions and
 | `T043-OLP-0054-B008` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | 35-43 | 33-41 | 75–77 |
 | `T043-OLP-0054-B012` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | 55-68 | 54-67 | 75–77 |
 | `T043-OLP-0171-B012` | `OLP-0171` | 17.4 संरचना मधील संबंध व्यक्त करणे | 90-99 | 92-101 | 226–227 |
+| `T043-OLP-0241-B005` | `OLP-0241` |  | 11-12 | 11-12 | pending |
+| `T043-OLP-0241-B006` | `OLP-0241` |  | 14-15 | 14-14 | pending |
+| `T043-OLP-0242-B004` | `OLP-0242` |  | 9-10 | 9-10 | pending |
 
 ## T060 — ceiling function → ऊर्ध्व पूर्णांक फलन
 

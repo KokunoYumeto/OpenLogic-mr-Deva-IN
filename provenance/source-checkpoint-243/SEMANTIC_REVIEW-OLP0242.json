@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0242",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of complement closure theorem and corollary, with formula, macro, label and reference parity after bounded index projections. No independent human or native-speaker review is claimed.",
+  "scope": "A set is computable exactly when it and its complement are c.e.; non-c.e. complement of the halting set K_0.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6
+      ],
+      "reverse_paraphrase": "C.e. sets are not closed under complement. The theorem says that for any set A of naturals, A is computable if and only if both A and its complement in the naturals are c.e.",
+      "checks": "The quantification, complement expression, two-way condition and distinction between computable and c.e. are preserved."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "If A is computable, its complement is computable by the characteristic-function identity, hence both are c.e. Conversely, choose d with domain A and e with domain its complement. The µ-search h finds a halting witness for one branch, so h is total. Membership in A is exactly T(d,x,h(x)), a computable test. The frozen source mistakenly used e in that final test, which would decide complement membership.",
+      "checks": "The characteristic identity, d/e domain assignment, disjunction, totality and corrected A test agree. OLCMP-020 documents the two exact formula corrections and associated index prose."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "The informal procedure searches in parallel for halting of φ_d or φ_e. One halts because A and its complement partition the naturals. Halting of φ_d signifies A, and halting of φ_e signifies its complement.",
+      "checks": "The frozen e/f pair includes an unbound f and reverses the A assignment; the Marathi explanation uses the previously defined d/e pair consistently."
+    },
+    {
+      "blocks": [
+        10,
+        11
+      ],
+      "reverse_paraphrase": "The complement of K_0 is not c.e.: K_0 itself is c.e. but noncomputable, so c.e. of its complement would make K_0 computable by the theorem, contradicting the earlier result.",
+      "checks": "The complement, contradiction, theorem label and K_0 reference with its option are preserved."
+    }
+  ],
+  "source_observations": [
+    "T068 supplies पूरक संच, T198 supplies अनुप्रमेय and T327 distinguishes c.e. from ordinary countability.",
+    "OLCMP-020 records wrong e and unbound f indices in the frozen formal/informal arguments. The Marathi correction is projected back only for mechanical parity comparison."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The Marathi compound for c.e. remains expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

@@ -336,6 +336,24 @@ _DOCUMENTED_PROJECTIONS = {
     'OLP-0236': [
         ('$S \\notin S$ असेल', '$X \\notin S$ असेल'),
     ],
+    'OLP-0239': [
+        ('$\\cfind{e}((z)_0) \\fdefined =\ny$',
+         '$\\cfind{e}(x) \\fdefined =\ny$'),
+    ],
+    'OLP-0242': [
+        ('$T(d, x, h(x))$', '$T(e, x, h(x))$'),
+        ('$\\cfind{d}$ परिभाषित असते', '$\\cfind{e}$ परिभाषित असते'),
+        ('$\\cfind{d}$ आणि $\\cfind{e}$', '$\\cfind{e}$ आणि $\\cfind{f}$'),
+        ('$\\cfind{d}$ थांबले', '$\\cfind{e}$ थांबले'),
+    ],
+    'OLP-0243': [
+        ('$K_0 = \\Setabs{\\tuple{e,x}}{x \\in W_e}$',
+         '$K_0 = \\Setabs{\\tuple{x,e}}{x \\in W_e}$'),
+    ],
+    'OLP-0244': [
+        ('$f\\colon \\Nat \\to \\Nat$ हे $A$ चे~$B$ कडे',
+         '$f\\colon A \\to B$ हे'),
+    ],
 }
 
 
