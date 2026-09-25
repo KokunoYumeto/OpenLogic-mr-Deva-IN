@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 42 urgent/high decisions and
-1092 current occurrences. Normal and low items remain in the full index.
+1100 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -423,6 +423,12 @@ This view contains 42 urgent/high decisions and
 | `T026-OLP-0172-B014` | `OLP-0172` | 17.5 संचांची उपपत्ती | 173-182 | 171-180 | 227–229 |
 | `T026-OLP-0177-B008` | `OLP-0177` | 18.3 द्वितीय-क्रम तर्कशास्त्र | 67-81 | 64-76 | 232–235 |
 | `T026-OLP-0192-B007` | `OLP-0192` | 20.1 परिचय | 55-70 | 52-68 | 250–251 |
+| `T026-OLP-0236-B004` | `OLP-0236` |  | 9-10 | 9-10 | pending |
+| `T026-OLP-0236-B005` | `OLP-0236` |  | 12-16 | 12-17 | pending |
+| `T026-OLP-0236-B006` | `OLP-0236` |  | 18-20 | 19-21 | pending |
+| `T026-OLP-0236-B007` | `OLP-0236` |  | 22-32 | 23-33 | pending |
+| `T026-OLP-0236-B008` | `OLP-0236` |  | 34-35 | 35-36 | pending |
+| `T026-OLP-0236-B010` | `OLP-0236` |  | 50-53 | 52-55 | pending |
 
 ## T028 — continuum → सांतत्य
 
@@ -1472,6 +1478,8 @@ This view contains 42 urgent/high decisions and
 | `T304-OLP-0210-B007` | `OLP-0210` |  | 41-52 | 40-51 | pending |
 | `T304-OLP-0222-B007` | `OLP-0222` |  | 57-66 | 55-63 | pending |
 | `T304-OLP-0223-B011` | `OLP-0223` |  | 88-96 | 85-92 | pending |
+| `T304-OLP-0229-B009` | `OLP-0229` |  | 50-66 | 51-64 | pending |
+| `T304-OLP-0230-B005` | `OLP-0230` |  | 12-31 | 12-28 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

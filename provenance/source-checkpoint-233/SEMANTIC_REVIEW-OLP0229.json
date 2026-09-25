@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0229",
+  "method": "Same-agent bilingual close reading and reverse paraphrase with formula, macro and identifier parity. No independent human or native-speaker review is claimed.",
+  "scope": "Computability-theory subject, partial/total computability, definedness, universal enumeration, minimization and proof methods.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "Computability theory studies computability and relative computability of functions and sets; recursion theory remains another common name. A function is partial computable when some computation model computes it, and is called computable when it is total. A relation is computable when its characteristic function is computable. Definedness and the agreement symbol distinguish both undefined from both defined and equal.",
+      "checks": "Kleene's historical influence, the totality qualifier, characteristic-function condition and both branches of the partial-equality convention remain explicit."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "A universal partial computable function enumerates unary partial computable functions via k, with a uniform extension to arbitrary arity. Minimization of a possibly partial f returns the least zero-witness y only when every predecessor value is defined; without such y it is undefined. For a relation, minimization is the least true y, equivalently the least y satisfying 1 minus the characteristic function equals zero.",
+      "checks": "The unary/n-ary indices, Kleene's older notation, predecessor-definedness clause, no-witness undefinedness and displayed characteristic-function equation are preserved."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "One may show computability by explicitly specifying a Turing machine or partial recursive function, or by describing an algorithm and invoking Church's thesis. A detailed algorithm should make a corresponding rigorous design reasonably clear; the exposition seeks intuitive but rigorous proofs without demanding uninformative full definitions.",
+      "checks": "The two proof routes, qualified relation between them and the source's editorial preference are preserved."
+    }
+  ],
+  "source_observations": [
+    "T324 records the source-controlled partial-computability family. The official computable adjective does not by itself attest every full compound.",
+    "The source says Church's thesis here, so the translation says चर्च यांच्या प्रबंध rather than silently widening the reference to a different named formulation."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

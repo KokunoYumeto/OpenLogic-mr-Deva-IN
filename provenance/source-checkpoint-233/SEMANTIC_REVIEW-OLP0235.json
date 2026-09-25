@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0235",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of both diagonal proofs and the tagged Turing-machine explanation, with exact formula, macro, identifier and cross-reference parity. No independent human or native-speaker review is claimed.",
+  "scope": "Undecidability of the halting function, total-universal contradiction, direct self-application contradiction and optional machine-level argument.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "Un(e,x) is defined precisely when program e produces a value on input x. The two-valued h decides this, and the theorem says h is not computable. If h were computable, a total Un' could return Un where h=1 and zero otherwise, agreeing with every total partial-computable function and contradicting the no-total-universal theorem.",
+      "checks": "The iff in the setup, h's case values, totality of Un', partial-recursive g construction and prior-theorem reference are preserved. Marathi labels inside the case formulas translate the source's ordinary English labels without changing math tokens."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "Assuming h computable, define partial g(x)=0 if h(x,x)=0 and undefined otherwise, for instance by least-y search of a y-independent condition. Universality gives e with g(x)≃Un(e,x). If g(e) is defined, h(e,e)=0 implies Un(e,e) undefined; if g(e) is undefined, h(e,e)=1 implies Un(e,e) defined. Both contradict the partial equality.",
+      "checks": "Both directions of the diagonal contradiction, the minimization example and the same e in universal indexing remain exact."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "If H decided whether machine E halts on input x, machine G could use H on machine M_x and input x, then loop if M_x halts and halt if it does not. Applied to its own index, G halts exactly when it does not.",
+      "checks": "The tagged Turing-machine branch retains H/E/G/M_x roles and every input-x occurrence; one initially omitted x was restored during formula-parity review."
+    }
+  ],
+  "source_observations": [
+    "T322 carries the established Marathi halting-problem phrase; the undecidability and two proof constructions come from OpenLogic.",
+    "All ordinary English labels inside the three cases environments are translated into Marathi while protected mathematical expressions remain exact."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

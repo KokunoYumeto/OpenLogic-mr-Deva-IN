@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0230",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase with exact formula, macro, identifier and list-structure comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Four coding capabilities common to computation models, numerical indices, computation records, and primitive-recursive decoding claims.",
+  "samples": [
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "Every computation model allows systematic descriptions of computable-function definitions; complete run records for a fixed input; checks that a claimed record really is a terminating run of the given definition on that input; and extraction of the output value from a complete run record.",
+      "checks": "The four operations, Turing-machine configuration example, definedness/halting qualification and final-tape example all remain in their original order."
+    },
+    {
+      "blocks": [
+        6,
+        7
+      ],
+      "reverse_paraphrase": "A computable function description has a numerical index from which its instructions can be computed; a complete run is coded by one number. The arithmetic relation saying s codes the run of program e on input x and the output function for code s are computable, indeed primitive recursive. These facts yield model-independent computability results.",
+      "checks": "The direction of recovery from the index, the roles of e/x/s, the stronger primitive-recursive claim for both objects and model independence are preserved."
+    }
+  ],
+  "source_observations": [
+    "T067 supports the established coding family and T321 the index word, but the full computation-record formulation is controlled by the frozen OpenLogic source.",
+    "The source's 'record' is a complete halting computation record for the test and output claims; the translation keeps that qualification."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

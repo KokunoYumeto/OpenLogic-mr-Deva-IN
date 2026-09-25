@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 occurrences.
+Coverage: 233/722 source units through OLP-0236; 474 applied decisions; 12,515 occurrences.
 
 ## T001 — set
 
@@ -3189,6 +3189,12 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T026-OLP-0172-B014` | `OLP-0172` | 17.5 संचांची उपपत्ती | `upstream/content/first-order-logic/models-theories/set-theory.tex:173-182` | `mr/content/first-order-logic/models-theories/set-theory.tex:171-180` | 227–229 |
 | `T026-OLP-0177-B008` | `OLP-0177` | 18.3 द्वितीय-क्रम तर्कशास्त्र | `upstream/content/first-order-logic/beyond/second-order-logic.tex:67-81` | `mr/content/first-order-logic/beyond/second-order-logic.tex:64-76` | 232–235 |
 | `T026-OLP-0192-B007` | `OLP-0192` | 20.1 परिचय | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68` | 250–251 |
+| `T026-OLP-0236-B004` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:9-10` | `mr/content/computability/computability-theory/russells-paradox.tex:9-10` | pending |
+| `T026-OLP-0236-B005` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:12-16` | `mr/content/computability/computability-theory/russells-paradox.tex:12-17` | pending |
+| `T026-OLP-0236-B006` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:18-20` | `mr/content/computability/computability-theory/russells-paradox.tex:19-21` | pending |
+| `T026-OLP-0236-B007` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:22-32` | `mr/content/computability/computability-theory/russells-paradox.tex:23-33` | pending |
+| `T026-OLP-0236-B008` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:34-35` | `mr/content/computability/computability-theory/russells-paradox.tex:35-36` | pending |
+| `T026-OLP-0236-B010` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:50-53` | `mr/content/computability/computability-theory/russells-paradox.tex:52-55` | pending |
 
 ## T027 — mathematical / arithmetical induction
 
@@ -5294,6 +5300,12 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T044-OLP-0215-B007` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41` | pending |
 | `T044-OLP-0218-B005` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25` | `mr/content/computability/recursive-functions/bounded-minimization.tex:12-25` | pending |
 | `T044-OLP-0226-B005` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:12-25` | `mr/content/computability/recursive-functions/halting-problem.tex:12-23` | pending |
+| `T044-OLP-0228-B004` | `OLP-0228` |  | `upstream/content/computability/computability-theory/computability-theory.tex:8-8` | `mr/content/computability/computability-theory/computability-theory.tex:8-8` | pending |
+| `T044-OLP-0228-B005` | `OLP-0228` |  | `upstream/content/computability/computability-theory/computability-theory.tex:10-13` | `mr/content/computability/computability-theory/computability-theory.tex:10-13` | pending |
+| `T044-OLP-0229-B004` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:9-10` | `mr/content/computability/computability-theory/introduction.tex:9-10` | pending |
+| `T044-OLP-0229-B005` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:12-16` | `mr/content/computability/computability-theory/introduction.tex:12-16` | pending |
+| `T044-OLP-0230-B006` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:33-40` | `mr/content/computability/computability-theory/coding-computations.tex:30-36` | pending |
+| `T044-OLP-0230-B007` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:42-44` | `mr/content/computability/computability-theory/coding-computations.tex:38-40` | pending |
 
 ## T045 — function / mapping
 
@@ -5689,6 +5701,29 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T045-OLP-0227-B004` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:9-10` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:9-10` | pending |
 | `T045-OLP-0227-B006` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:20-27` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:19-26` | pending |
 | `T045-OLP-0227-B007` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:29-39` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:28-36` | pending |
+| `T045-OLP-0229-B006` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:18-27` | `mr/content/computability/computability-theory/introduction.tex:18-27` | pending |
+| `T045-OLP-0229-B007` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:29-39` | `mr/content/computability/computability-theory/introduction.tex:29-39` | pending |
+| `T045-OLP-0229-B008` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:41-48` | `mr/content/computability/computability-theory/introduction.tex:41-49` | pending |
+| `T045-OLP-0229-B009` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:50-66` | `mr/content/computability/computability-theory/introduction.tex:51-64` | pending |
+| `T045-OLP-0230-B005` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:12-31` | `mr/content/computability/computability-theory/coding-computations.tex:12-28` | pending |
+| `T045-OLP-0230-B006` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:33-40` | `mr/content/computability/computability-theory/coding-computations.tex:30-36` | pending |
+| `T045-OLP-0231-B005` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:12-25` | `mr/content/computability/computability-theory/normal-form.tex:12-22` | pending |
+| `T045-OLP-0231-B006` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:27-36` | `mr/content/computability/computability-theory/normal-form.tex:24-33` | pending |
+| `T045-OLP-0231-B007` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:38-54` | `mr/content/computability/computability-theory/normal-form.tex:35-51` | pending |
+| `T045-OLP-0231-B008` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:56-62` | `mr/content/computability/computability-theory/normal-form.tex:53-58` | pending |
+| `T045-OLP-0232-B006` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:19-28` | `mr/content/computability/computability-theory/s-m-n.tex:18-27` | pending |
+| `T045-OLP-0233-B005` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:12-21` | `mr/content/computability/computability-theory/universal-part-function.tex:12-21` | pending |
+| `T045-OLP-0233-B007` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:28-40` | `mr/content/computability/computability-theory/universal-part-function.tex:29-41` | pending |
+| `T045-OLP-0234-B006` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:16-22` | `mr/content/computability/computability-theory/no-universal-function.tex:17-23` | pending |
+| `T045-OLP-0234-B007` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:24-33` | `mr/content/computability/computability-theory/no-universal-function.tex:25-35` | pending |
+| `T045-OLP-0234-B009` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:43-49` | `mr/content/computability/computability-theory/no-universal-function.tex:45-51` | pending |
+| `T045-OLP-0235-B007` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:36-60` | `mr/content/computability/computability-theory/halting-problem.tex:34-59` | pending |
+| `T045-OLP-0235-B008` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:62-82` | `mr/content/computability/computability-theory/halting-problem.tex:61-82` | pending |
+| `T045-OLP-0236-B007` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:22-32` | `mr/content/computability/computability-theory/russells-paradox.tex:23-33` | pending |
+| `T045-OLP-0236-B008` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:34-35` | `mr/content/computability/computability-theory/russells-paradox.tex:35-36` | pending |
+| `T045-OLP-0236-B009` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:37-48` | `mr/content/computability/computability-theory/russells-paradox.tex:38-50` | pending |
+| `T045-OLP-0236-B010` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:50-53` | `mr/content/computability/computability-theory/russells-paradox.tex:52-55` | pending |
+| `T045-OLP-0236-B011` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:55-73` | `mr/content/computability/computability-theory/russells-paradox.tex:57-74` | pending |
 
 ## T046 — domain / codomain / range
 
@@ -6586,6 +6621,12 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T053-OLP-0224-B012` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:98-103` | `mr/content/computability/recursive-functions/partial-functions.tex:92-97` | pending |
 | `T053-OLP-0224-B013` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:105-106` | `mr/content/computability/recursive-functions/partial-functions.tex:99-100` | pending |
 | `T053-OLP-0224-B014` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:108-112` | `mr/content/computability/recursive-functions/partial-functions.tex:102-106` | pending |
+| `T053-OLP-0229-B006` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:18-27` | `mr/content/computability/computability-theory/introduction.tex:18-27` | pending |
+| `T053-OLP-0234-B005` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:12-14` | `mr/content/computability/computability-theory/no-universal-function.tex:12-15` | pending |
+| `T053-OLP-0234-B008` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:35-41` | `mr/content/computability/computability-theory/no-universal-function.tex:37-43` | pending |
+| `T053-OLP-0234-B009` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:43-49` | `mr/content/computability/computability-theory/no-universal-function.tex:45-51` | pending |
+| `T053-OLP-0236-B007` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:22-32` | `mr/content/computability/computability-theory/russells-paradox.tex:23-33` | pending |
+| `T053-OLP-0236-B011` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:55-73` | `mr/content/computability/computability-theory/russells-paradox.tex:57-74` | pending |
 
 ## T054 — serial relation
 
@@ -6788,6 +6829,10 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T056-OLP-0223-B009` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79` | `mr/content/computability/recursive-functions/non-pr-functions.tex:72-76` | pending |
 | `T056-OLP-0224-B005` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:13-22` | `mr/content/computability/recursive-functions/partial-functions.tex:13-21` | pending |
 | `T056-OLP-0224-B006` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:24-30` | `mr/content/computability/recursive-functions/partial-functions.tex:23-28` | pending |
+| `T056-OLP-0229-B007` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:29-39` | `mr/content/computability/computability-theory/introduction.tex:29-39` | pending |
+| `T056-OLP-0231-B011` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:76-82` | `mr/content/computability/computability-theory/normal-form.tex:72-78` | pending |
+| `T056-OLP-0233-B007` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:28-40` | `mr/content/computability/computability-theory/universal-part-function.tex:29-41` | pending |
+| `T056-OLP-0236-B009` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:37-48` | `mr/content/computability/computability-theory/russells-paradox.tex:38-50` | pending |
 
 ## T057 — enumerable / countable / uncountable
 
@@ -7127,6 +7172,8 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T061-OLP-0225-B006` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:23-34` | `mr/content/computability/recursive-functions/normal-form.tex:23-34` | pending |
 | `T061-OLP-0227-B005` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:12-18` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:12-17` | pending |
 | `T061-OLP-0227-B006` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:20-27` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:19-26` | pending |
+| `T061-OLP-0229-B005` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:12-16` | `mr/content/computability/computability-theory/introduction.tex:12-16` | pending |
+| `T061-OLP-0229-B007` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:29-39` | `mr/content/computability/computability-theory/introduction.tex:29-39` | pending |
 
 ## T062 — initial segment
 
@@ -7390,6 +7437,15 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T067-OLP-0222-B005` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:12-47` | `mr/content/computability/recursive-functions/other-recursions.tex:12-45` | pending |
 | `T067-OLP-0223-B007` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65` | `mr/content/computability/recursive-functions/non-pr-functions.tex:45-64` | pending |
 | `T067-OLP-0223-B009` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79` | `mr/content/computability/recursive-functions/non-pr-functions.tex:72-76` | pending |
+| `T067-OLP-0230-B004` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:9-10` | `mr/content/computability/computability-theory/coding-computations.tex:9-10` | pending |
+| `T067-OLP-0230-B005` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:12-31` | `mr/content/computability/computability-theory/coding-computations.tex:12-28` | pending |
+| `T067-OLP-0230-B006` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:33-40` | `mr/content/computability/computability-theory/coding-computations.tex:30-36` | pending |
+| `T067-OLP-0231-B005` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:12-25` | `mr/content/computability/computability-theory/normal-form.tex:12-22` | pending |
+| `T067-OLP-0231-B007` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:38-54` | `mr/content/computability/computability-theory/normal-form.tex:35-51` | pending |
+| `T067-OLP-0231-B009` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:64-68` | `mr/content/computability/computability-theory/normal-form.tex:60-64` | pending |
+| `T067-OLP-0231-B014` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:90-97` | `mr/content/computability/computability-theory/normal-form.tex:86-91` | pending |
+| `T067-OLP-0232-B007` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:30-41` | `mr/content/computability/computability-theory/s-m-n.tex:29-41` | pending |
+| `T067-OLP-0233-B007` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:28-40` | `mr/content/computability/computability-theory/universal-part-function.tex:29-41` | pending |
 
 ## T068 — cofinite / complement
 
@@ -7596,6 +7652,7 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T073-OLP-0040-B007` | `OLP-0040` | 4.13 न्यूनीकरण | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:20-26` | `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:19-26` | 55–56 |
 | `T073-OLP-0223-B005` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28` | `mr/content/computability/recursive-functions/non-pr-functions.tex:12-28` | pending |
 | `T073-OLP-0224-B005` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:13-22` | `mr/content/computability/recursive-functions/partial-functions.tex:13-21` | pending |
+| `T073-OLP-0236-B009` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:37-48` | `mr/content/computability/computability-theory/russells-paradox.tex:38-50` | pending |
 
 ## T074 — reduction / reduce one problem to another
 
@@ -13935,6 +13992,8 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T170-OLP-0068-B010` | `OLP-0068` | 8.5 स्वयंसिद्धकीय निष्पत्ती | `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81` | `mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82` | 91–92 |
 | `T170-OLP-0127-B007` | `OLP-0127` | 13.1 परिचय | `upstream/content/first-order-logic/completeness/introduction.tex:24-47` | `mr/content/first-order-logic/completeness/introduction.tex:24-44` | 170–171 |
 | `T170-OLP-0177-B008` | `OLP-0177` | 18.3 द्वितीय-क्रम तर्कशास्त्र | `upstream/content/first-order-logic/beyond/second-order-logic.tex:67-81` | `mr/content/first-order-logic/beyond/second-order-logic.tex:64-76` | 232–235 |
+| `T170-OLP-0236-B004` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:9-10` | `mr/content/computability/computability-theory/russells-paradox.tex:9-10` | pending |
+| `T170-OLP-0236-B005` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:12-16` | `mr/content/computability/computability-theory/russells-paradox.tex:12-17` | pending |
 
 ## T171 — classical logic / classical first-order logic
 
@@ -16251,6 +16310,10 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T207-OLP-0216-B009` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:58-76` | `mr/content/computability/recursive-functions/examples.tex:57-75` | pending |
 | `T207-OLP-0216-B011` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:83-97` | `mr/content/computability/recursive-functions/examples.tex:82-97` | pending |
 | `T207-OLP-0217-B012` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:121-124` | `mr/content/computability/recursive-functions/pr-relations.tex:123-126` | pending |
+| `T207-OLP-0229-B007` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:29-39` | `mr/content/computability/computability-theory/introduction.tex:29-39` | pending |
+| `T207-OLP-0232-B006` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:19-28` | `mr/content/computability/computability-theory/s-m-n.tex:18-27` | pending |
+| `T207-OLP-0232-B007` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:30-41` | `mr/content/computability/computability-theory/s-m-n.tex:29-41` | pending |
+| `T207-OLP-0233-B007` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:28-40` | `mr/content/computability/computability-theory/universal-part-function.tex:29-41` | pending |
 
 ## T208 — universal quantifier / existential quantifier
 
@@ -19351,6 +19414,13 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T287-OLP-0215-B007` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41` | pending |
 | `T287-OLP-0217-B007` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:38-45` | `mr/content/computability/recursive-functions/pr-relations.tex:37-44` | pending |
 | `T287-OLP-0218-B005` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25` | `mr/content/computability/recursive-functions/bounded-minimization.tex:12-25` | pending |
+| `T287-OLP-0235-B005` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:12-21` | `mr/content/computability/computability-theory/halting-problem.tex:12-19` | pending |
+| `T287-OLP-0235-B006` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:23-34` | `mr/content/computability/computability-theory/halting-problem.tex:21-32` | pending |
+| `T287-OLP-0235-B007` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:36-60` | `mr/content/computability/computability-theory/halting-problem.tex:34-59` | pending |
+| `T287-OLP-0235-B008` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:62-82` | `mr/content/computability/computability-theory/halting-problem.tex:61-82` | pending |
+| `T287-OLP-0236-B009` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:37-48` | `mr/content/computability/computability-theory/russells-paradox.tex:38-50` | pending |
+| `T287-OLP-0236-B010` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:50-53` | `mr/content/computability/computability-theory/russells-paradox.tex:52-55` | pending |
+| `T287-OLP-0236-B011` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:55-73` | `mr/content/computability/computability-theory/russells-paradox.tex:57-74` | pending |
 
 ## T288 — Turing machine / primitive recursion
 
@@ -19417,6 +19487,10 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T288-OLP-0223-B011` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96` | `mr/content/computability/recursive-functions/non-pr-functions.tex:85-92` | pending |
 | `T288-OLP-0224-B006` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:24-30` | `mr/content/computability/recursive-functions/partial-functions.tex:23-28` | pending |
 | `T288-OLP-0224-B010` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:75-87` | `mr/content/computability/recursive-functions/partial-functions.tex:71-81` | pending |
+| `T288-OLP-0230-B005` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:12-31` | `mr/content/computability/computability-theory/coding-computations.tex:12-28` | pending |
+| `T288-OLP-0232-B007` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:30-41` | `mr/content/computability/computability-theory/s-m-n.tex:29-41` | pending |
+| `T288-OLP-0235-B005` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:12-21` | `mr/content/computability/computability-theory/halting-problem.tex:12-19` | pending |
+| `T288-OLP-0235-B009` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:84-99` | `mr/content/computability/computability-theory/halting-problem.tex:84-99` | pending |
 
 ## T289 — Tennenbaum (surname, in Tennenbaum's theorem)
 
@@ -19874,6 +19948,8 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T301-OLP-0217-B015` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:158-167` | `mr/content/computability/recursive-functions/pr-relations.tex:159-168` | pending |
 | `T301-OLP-0218-B009` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69` | `mr/content/computability/recursive-functions/bounded-minimization.tex:65-70` | pending |
 | `T301-OLP-0224-B011` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:89-96` | `mr/content/computability/recursive-functions/partial-functions.tex:83-90` | pending |
+| `T301-OLP-0229-B006` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:18-27` | `mr/content/computability/computability-theory/introduction.tex:18-27` | pending |
+| `T301-OLP-0229-B008` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:41-48` | `mr/content/computability/computability-theory/introduction.tex:41-49` | pending |
 
 ## T302 — primitive recursive / partial recursive / general recursive function
 
@@ -20002,6 +20078,18 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T302-OLP-0224-B013` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:105-106` | `mr/content/computability/recursive-functions/partial-functions.tex:99-100` | pending |
 | `T302-OLP-0224-B014` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:108-112` | `mr/content/computability/recursive-functions/partial-functions.tex:102-106` | pending |
 | `T302-OLP-0224-B015` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:114-115` | `mr/content/computability/recursive-functions/partial-functions.tex:108-109` | pending |
+| `T302-OLP-0229-B007` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:29-39` | `mr/content/computability/computability-theory/introduction.tex:29-39` | pending |
+| `T302-OLP-0229-B009` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:50-66` | `mr/content/computability/computability-theory/introduction.tex:51-64` | pending |
+| `T302-OLP-0230-B005` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:12-31` | `mr/content/computability/computability-theory/coding-computations.tex:12-28` | pending |
+| `T302-OLP-0230-B006` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:33-40` | `mr/content/computability/computability-theory/coding-computations.tex:30-36` | pending |
+| `T302-OLP-0231-B006` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:27-36` | `mr/content/computability/computability-theory/normal-form.tex:24-33` | pending |
+| `T302-OLP-0231-B007` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:38-54` | `mr/content/computability/computability-theory/normal-form.tex:35-51` | pending |
+| `T302-OLP-0231-B008` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:56-62` | `mr/content/computability/computability-theory/normal-form.tex:53-58` | pending |
+| `T302-OLP-0231-B010` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:70-74` | `mr/content/computability/computability-theory/normal-form.tex:66-70` | pending |
+| `T302-OLP-0232-B006` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:19-28` | `mr/content/computability/computability-theory/s-m-n.tex:18-27` | pending |
+| `T302-OLP-0232-B007` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:30-41` | `mr/content/computability/computability-theory/s-m-n.tex:29-41` | pending |
+| `T302-OLP-0233-B007` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:28-40` | `mr/content/computability/computability-theory/universal-part-function.tex:29-41` | pending |
+| `T302-OLP-0235-B007` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:36-60` | `mr/content/computability/computability-theory/halting-problem.tex:34-59` | pending |
 
 ## T303 — unbounded search / total (everywhere defined)
 
@@ -20040,6 +20128,14 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T303-OLP-0224-B013` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:105-106` | `mr/content/computability/recursive-functions/partial-functions.tex:99-100` | pending |
 | `T303-OLP-0224-B014` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:108-112` | `mr/content/computability/recursive-functions/partial-functions.tex:102-106` | pending |
 | `T303-OLP-0224-B015` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:114-115` | `mr/content/computability/recursive-functions/partial-functions.tex:108-109` | pending |
+| `T303-OLP-0229-B008` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:41-48` | `mr/content/computability/computability-theory/introduction.tex:41-49` | pending |
+| `T303-OLP-0231-B008` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:56-62` | `mr/content/computability/computability-theory/normal-form.tex:53-58` | pending |
+| `T303-OLP-0231-B010` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:70-74` | `mr/content/computability/computability-theory/normal-form.tex:66-70` | pending |
+| `T303-OLP-0234-B005` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:12-14` | `mr/content/computability/computability-theory/no-universal-function.tex:12-15` | pending |
+| `T303-OLP-0234-B006` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:16-22` | `mr/content/computability/computability-theory/no-universal-function.tex:17-23` | pending |
+| `T303-OLP-0234-B007` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:24-33` | `mr/content/computability/computability-theory/no-universal-function.tex:25-35` | pending |
+| `T303-OLP-0234-B008` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:35-41` | `mr/content/computability/computability-theory/no-universal-function.tex:37-43` | pending |
+| `T303-OLP-0235-B008` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:62-82` | `mr/content/computability/computability-theory/halting-problem.tex:61-82` | pending |
 
 ## T304 — lambda calculus / simulate a model of computation
 
@@ -20070,6 +20166,8 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T304-OLP-0210-B007` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:41-52` | `mr/content/computability/recursive-functions/introduction.tex:40-51` | pending |
 | `T304-OLP-0222-B007` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:57-66` | `mr/content/computability/recursive-functions/other-recursions.tex:55-63` | pending |
 | `T304-OLP-0223-B011` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96` | `mr/content/computability/recursive-functions/non-pr-functions.tex:85-92` | pending |
+| `T304-OLP-0229-B009` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:50-66` | `mr/content/computability/computability-theory/introduction.tex:51-64` | pending |
+| `T304-OLP-0230-B005` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:12-31` | `mr/content/computability/computability-theory/coding-computations.tex:12-28` | pending |
 
 ## T305 — notation for a primitive recursive function; composition and recursion notation
 
@@ -20405,6 +20503,7 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T312-OLP-0222-B005` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:12-47` | `mr/content/computability/recursive-functions/other-recursions.tex:12-45` | pending |
 | `T312-OLP-0223-B006` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:30-43` | `mr/content/computability/recursive-functions/non-pr-functions.tex:30-43` | pending |
 | `T312-OLP-0223-B007` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65` | `mr/content/computability/recursive-functions/non-pr-functions.tex:45-64` | pending |
+| `T312-OLP-0233-B007` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:28-40` | `mr/content/computability/computability-theory/universal-part-function.tex:29-41` | pending |
 
 ## T313 — Fundamental Theorem of Arithmetic / unique prime factorization / prime factor
 
@@ -20599,6 +20698,7 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T318-OLP-0223-B010` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:81-86` | `mr/content/computability/recursive-functions/non-pr-functions.tex:78-83` | pending |
 | `T318-OLP-0223-B011` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96` | `mr/content/computability/recursive-functions/non-pr-functions.tex:85-92` | pending |
 | `T318-OLP-0226-B005` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:12-25` | `mr/content/computability/recursive-functions/halting-problem.tex:12-23` | pending |
+| `T318-OLP-0229-B009` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:50-66` | `mr/content/computability/computability-theory/introduction.tex:51-64` | pending |
 
 ## T319 — defined or undefined at an input / partial equality / unbounded mu-search operator / non-halting computation
 
@@ -20706,6 +20806,24 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T321-OLP-0225-B007` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:36-46` | `mr/content/computability/recursive-functions/normal-form.tex:36-45` | pending |
 | `T321-OLP-0226-B006` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:27-48` | `mr/content/computability/recursive-functions/halting-problem.tex:25-48` | pending |
 | `T321-OLP-0226-B008` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:55-90` | `mr/content/computability/recursive-functions/halting-problem.tex:55-91` | pending |
+| `T321-OLP-0230-B006` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:33-40` | `mr/content/computability/computability-theory/coding-computations.tex:30-36` | pending |
+| `T321-OLP-0231-B004` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:9-10` | `mr/content/computability/computability-theory/normal-form.tex:9-10` | pending |
+| `T321-OLP-0231-B005` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:12-25` | `mr/content/computability/computability-theory/normal-form.tex:12-22` | pending |
+| `T321-OLP-0231-B006` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:27-36` | `mr/content/computability/computability-theory/normal-form.tex:24-33` | pending |
+| `T321-OLP-0231-B007` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:38-54` | `mr/content/computability/computability-theory/normal-form.tex:35-51` | pending |
+| `T321-OLP-0231-B008` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:56-62` | `mr/content/computability/computability-theory/normal-form.tex:53-58` | pending |
+| `T321-OLP-0231-B009` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:64-68` | `mr/content/computability/computability-theory/normal-form.tex:60-64` | pending |
+| `T321-OLP-0231-B010` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:70-74` | `mr/content/computability/computability-theory/normal-form.tex:66-70` | pending |
+| `T321-OLP-0231-B011` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:76-82` | `mr/content/computability/computability-theory/normal-form.tex:72-78` | pending |
+| `T321-OLP-0231-B012` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:84-84` | `mr/content/computability/computability-theory/normal-form.tex:80-80` | pending |
+| `T321-OLP-0231-B013` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:86-88` | `mr/content/computability/computability-theory/normal-form.tex:82-84` | pending |
+| `T321-OLP-0231-B014` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:90-97` | `mr/content/computability/computability-theory/normal-form.tex:86-91` | pending |
+| `T321-OLP-0232-B006` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:19-28` | `mr/content/computability/computability-theory/s-m-n.tex:18-27` | pending |
+| `T321-OLP-0232-B007` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:30-41` | `mr/content/computability/computability-theory/s-m-n.tex:29-41` | pending |
+| `T321-OLP-0233-B006` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:23-26` | `mr/content/computability/computability-theory/universal-part-function.tex:23-27` | pending |
+| `T321-OLP-0234-B009` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:43-49` | `mr/content/computability/computability-theory/no-universal-function.tex:45-51` | pending |
+| `T321-OLP-0235-B008` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:62-82` | `mr/content/computability/computability-theory/halting-problem.tex:61-82` | pending |
+| `T321-OLP-0235-B009` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:84-99` | `mr/content/computability/computability-theory/halting-problem.tex:84-99` | pending |
 
 ## T322 — halting problem / halting function / total code numbering
 
@@ -20740,6 +20858,12 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T322-OLP-0226-B006` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:27-48` | `mr/content/computability/recursive-functions/halting-problem.tex:25-48` | pending |
 | `T322-OLP-0226-B007` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:50-53` | `mr/content/computability/recursive-functions/halting-problem.tex:50-53` | pending |
 | `T322-OLP-0226-B008` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:55-90` | `mr/content/computability/recursive-functions/halting-problem.tex:55-91` | pending |
+| `T322-OLP-0235-B004` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:9-10` | `mr/content/computability/computability-theory/halting-problem.tex:9-10` | pending |
+| `T322-OLP-0235-B005` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:12-21` | `mr/content/computability/computability-theory/halting-problem.tex:12-19` | pending |
+| `T322-OLP-0235-B006` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:23-34` | `mr/content/computability/computability-theory/halting-problem.tex:21-32` | pending |
+| `T322-OLP-0235-B007` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:36-60` | `mr/content/computability/computability-theory/halting-problem.tex:34-59` | pending |
+| `T322-OLP-0235-B008` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:62-82` | `mr/content/computability/computability-theory/halting-problem.tex:61-82` | pending |
+| `T322-OLP-0235-B009` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:84-99` | `mr/content/computability/computability-theory/halting-problem.tex:84-99` | pending |
 
 ## T323 — regular function / general recursive function / total function
 
@@ -20773,6 +20897,145 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | `T323-OLP-0227-B005` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:12-18` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:12-17` | pending |
 | `T323-OLP-0227-B006` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:20-27` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:19-26` | pending |
 | `T323-OLP-0227-B007` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:29-39` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:28-36` | pending |
+
+## T324 — computability theory / relative computability / partial computable function / universal partial computable function
+
+**Chosen rendering/action:** संगणनक्षमता सिद्धांत / सापेक्ष संगणनक्षमता / आंशिक संगणनक्षम फलन / सार्वत्रिक आंशिक संगणनक्षम फलन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P129 directly attests संगणनक्षम and distinguishes it from countable गणनीय; the edition uses the corresponding संगणनक्षमता noun. Other checked passages support फलन, computation context, आंशिक and the recursive family. The frozen OpenLogic introduction fixes partial computability by existence of computation in a model and total computability by everywhere-definedness; it introduces a universal partial computable function for the enumeration. The full compounds, relative modifier in this field and universality phrase are transparent source-controlled constructions, not direct glossary headwords.
+
+**Rationale:** MR-P129 directly attests संगणनक्षम and distinguishes it from countable गणनीय; the edition uses the corresponding संगणनक्षमता noun. Other checked passages support फलन, computation context, आंशिक and the recursive family. The frozen OpenLogic introduction fixes partial computability by existence of computation in a model and total computability by everywhere-definedness; it introduces a universal partial computable function for the enumeration. The full compounds, relative modifier in this field and universality phrase are transparent source-controlled constructions, not direct glossary headwords.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P129` — गणितशास्त्र परिभाषा कोश — computable, calculable and countable. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic's definition controls the compound संगणनक्षम रचना.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P138` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web extraction. Limitation: Observation hash is not an origin-page hash; neither primitive recursion nor partial recursive function was directly attested.
+
+**Alternatives:**
+
+- संगणनीयता सिद्धांत / अंशतः संगणनक्षम फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- परिगणनक्षमता सिद्धांत / अंशतः संगणनीय फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- संगणकक्षमता सिद्धांत / अपूर्ण संगणनक्षम फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are आंशिक संगणनक्षम and सापेक्ष संगणनक्षमता natural while preserving the source's distinction between partial computability and total computability?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T324-OLP-0229-B004` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:9-10` | `mr/content/computability/computability-theory/introduction.tex:9-10` | pending |
+| `T324-OLP-0229-B005` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:12-16` | `mr/content/computability/computability-theory/introduction.tex:12-16` | pending |
+| `T324-OLP-0229-B006` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:18-27` | `mr/content/computability/computability-theory/introduction.tex:18-27` | pending |
+| `T324-OLP-0229-B007` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:29-39` | `mr/content/computability/computability-theory/introduction.tex:29-39` | pending |
+| `T324-OLP-0229-B009` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:50-66` | `mr/content/computability/computability-theory/introduction.tex:51-64` | pending |
+| `T324-OLP-0230-B004` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:9-10` | `mr/content/computability/computability-theory/coding-computations.tex:9-10` | pending |
+| `T324-OLP-0230-B005` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:12-31` | `mr/content/computability/computability-theory/coding-computations.tex:12-28` | pending |
+| `T324-OLP-0230-B007` | `OLP-0230` |  | `upstream/content/computability/computability-theory/coding-computations.tex:42-44` | `mr/content/computability/computability-theory/coding-computations.tex:38-40` | pending |
+| `T324-OLP-0231-B005` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:12-25` | `mr/content/computability/computability-theory/normal-form.tex:12-22` | pending |
+| `T324-OLP-0231-B006` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:27-36` | `mr/content/computability/computability-theory/normal-form.tex:24-33` | pending |
+| `T324-OLP-0231-B007` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:38-54` | `mr/content/computability/computability-theory/normal-form.tex:35-51` | pending |
+| `T324-OLP-0231-B011` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:76-82` | `mr/content/computability/computability-theory/normal-form.tex:72-78` | pending |
+| `T324-OLP-0231-B013` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:86-88` | `mr/content/computability/computability-theory/normal-form.tex:82-84` | pending |
+| `T324-OLP-0231-B014` | `OLP-0231` |  | `upstream/content/computability/computability-theory/normal-form.tex:90-97` | `mr/content/computability/computability-theory/normal-form.tex:86-91` | pending |
+| `T324-OLP-0233-B004` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:9-10` | `mr/content/computability/computability-theory/universal-part-function.tex:9-10` | pending |
+| `T324-OLP-0233-B005` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:12-21` | `mr/content/computability/computability-theory/universal-part-function.tex:12-21` | pending |
+| `T324-OLP-0233-B006` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:23-26` | `mr/content/computability/computability-theory/universal-part-function.tex:23-27` | pending |
+| `T324-OLP-0233-B007` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:28-40` | `mr/content/computability/computability-theory/universal-part-function.tex:29-41` | pending |
+| `T324-OLP-0234-B004` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:9-10` | `mr/content/computability/computability-theory/no-universal-function.tex:9-10` | pending |
+| `T324-OLP-0234-B005` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:12-14` | `mr/content/computability/computability-theory/no-universal-function.tex:12-15` | pending |
+| `T324-OLP-0234-B006` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:16-22` | `mr/content/computability/computability-theory/no-universal-function.tex:17-23` | pending |
+| `T324-OLP-0234-B007` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:24-33` | `mr/content/computability/computability-theory/no-universal-function.tex:25-35` | pending |
+| `T324-OLP-0234-B008` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:35-41` | `mr/content/computability/computability-theory/no-universal-function.tex:37-43` | pending |
+| `T324-OLP-0234-B009` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:43-49` | `mr/content/computability/computability-theory/no-universal-function.tex:45-51` | pending |
+| `T324-OLP-0235-B005` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:12-21` | `mr/content/computability/computability-theory/halting-problem.tex:12-19` | pending |
+| `T324-OLP-0235-B006` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:23-34` | `mr/content/computability/computability-theory/halting-problem.tex:21-32` | pending |
+| `T324-OLP-0235-B007` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:36-60` | `mr/content/computability/computability-theory/halting-problem.tex:34-59` | pending |
+| `T324-OLP-0235-B008` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:62-82` | `mr/content/computability/computability-theory/halting-problem.tex:61-82` | pending |
+| `T324-OLP-0235-B009` | `OLP-0235` |  | `upstream/content/computability/computability-theory/halting-problem.tex:84-99` | `mr/content/computability/computability-theory/halting-problem.tex:84-99` | pending |
+| `T324-OLP-0236-B009` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:37-48` | `mr/content/computability/computability-theory/russells-paradox.tex:38-50` | pending |
+| `T324-OLP-0236-B011` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:55-73` | `mr/content/computability/computability-theory/russells-paradox.tex:57-74` | pending |
+
+## T325 — s-m-n theorem / program specialization / fixed and remaining inputs
+
+**Chosen rendering/action:** s-m-n प्रमेय / कार्यक्रमाचे विशेषीकरण / निश्चित आदाने आणि उरलेली आदाने
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The symbolic s-m-n theorem name is retained exactly from OpenLogic. Checked Marathi function, arity, index, recursion and computability passages support the surrounding technical vocabulary but do not independently attest this full theorem name or program-specialization phrase. The source theorem fixes the exact transformation: primitive-recursive s^m_n takes code e and fixed m inputs to a code for the residual n-ary function, with partial equality for every remaining input tuple.
+
+**Rationale:** The symbolic s-m-n theorem name is retained exactly from OpenLogic. Checked Marathi function, arity, index, recursion and computability passages support the surrounding technical vocabulary but do not independently attest this full theorem name or program-specialization phrase. The source theorem fixes the exact transformation: primitive-recursive s^m_n takes code e and fixed m inputs to a code for the residual n-ary function, with partial equality for every remaining input tuple.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P067` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P074` — गणितशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P129` — गणितशास्त्र परिभाषा कोश — computable, calculable and countable. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic's definition controls the compound संगणनक्षम रचना.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P155` — संख्या शास्त्र परिभाषा कोश — index. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/12/i (`checked_supports`): Official Directorate of Languages statistics-glossary result read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's sense is statistical, not a computability index.
+
+**Alternatives:**
+
+- s-m-n सिद्धांत / कार्यक्रमाचे अंशमूल्यांकन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- s-m-n प्रमेय / कार्यक्रमात आदाने स्थिर करणे — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- एस-एम-एन प्रमेय / कार्यक्रमाचे विशेषीकरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does the retained symbolic title and the Marathi account clearly distinguish fixed a-inputs from the remaining y-inputs, without suggesting that the function value itself is computed by s^m_n?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T325-OLP-0232-B004` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:9-10` | `mr/content/computability/computability-theory/s-m-n.tex:9-10` | pending |
+| `T325-OLP-0232-B005` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:12-17` | `mr/content/computability/computability-theory/s-m-n.tex:12-16` | pending |
+| `T325-OLP-0232-B006` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:19-28` | `mr/content/computability/computability-theory/s-m-n.tex:18-27` | pending |
+| `T325-OLP-0232-B007` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:30-41` | `mr/content/computability/computability-theory/s-m-n.tex:29-41` | pending |
+
+## T326 — Russell's paradox / self-membership contradiction / noncomputable diagonal function
+
+**Chosen rendering/action:** रसेलची विरोधापत्ती / स्वसदस्यत्वातील व्याघात / संगणनक्षम नसलेले विकर्ण फलन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The edition's established विरोधापत्ती and व्याघात choices distinguish a paradoxical assumption from the contradiction derived within it. MR-P090 and MR-P091 attest the Marathi Russell name form, and the Cantor diagonal and function passages support the later comparison. The exact Russell set, function-domain analogue and partial-computability diagonal are specified by OpenLogic; no source passage independently attests this full three-way comparison.
+
+**Rationale:** The edition's established विरोधापत्ती and व्याघात choices distinguish a paradoxical assumption from the contradiction derived within it. MR-P090 and MR-P091 attest the Marathi Russell name form, and the Cantor diagonal and function passages support the later comparison. The exact Russell set, function-domain analogue and partial-computability diagonal are specified by OpenLogic; no source passage independently attests this full three-way comparison.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P012` — MR-C005. https://vishwakosh.marathi.gov.in/32772/ (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P032` — MR-C004. https://vishwakosh.marathi.gov.in/34075/ (`checked_supports`): Consulted for this decision. Limitation: Same previously indexed source, new actual consultation. The witness's positive-natural-number convention and its restriction to infinite countable sets do not replace OpenLogic conventions. Missing/corrupt mathematical glyphs and source historical assertions are not imported. Original HTML remains unavailable.
+- `MR-P090` — चिन्हांकित तर्कशास्त्र — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/22155/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: The page spells Russell बर्ट्रेड; the edition uses the widely recognizable बर्ट्रंड form. OpenLogic controls the exact historical claim.
+- `MR-P091` — गोडेल, कुर्ट — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/22497/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the chronology and attribution.
+- `MR-P129` — गणितशास्त्र परिभाषा कोश — computable, calculable and countable. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic's definition controls the compound संगणनक्षम रचना.
+
+**Alternatives:**
+
+- रसेलचा विरोधाभास / स्वसदस्यत्वाचा विरोध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- रसेलचे परस्परविरोधी उदाहरण / विकर्ण फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- रसेल विरोधापत्ती / स्वसदस्यत्व-विसंगती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does विरोधापत्ती mark the set-existence paradox while the target's final computability case remains a noncomputability result rather than a set-theoretic paradox?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T326-OLP-0236-B004` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:9-10` | `mr/content/computability/computability-theory/russells-paradox.tex:9-10` | pending |
+| `T326-OLP-0236-B005` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:12-16` | `mr/content/computability/computability-theory/russells-paradox.tex:12-17` | pending |
+| `T326-OLP-0236-B006` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:18-20` | `mr/content/computability/computability-theory/russells-paradox.tex:19-21` | pending |
+| `T326-OLP-0236-B007` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:22-32` | `mr/content/computability/computability-theory/russells-paradox.tex:23-33` | pending |
+| `T326-OLP-0236-B008` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:34-35` | `mr/content/computability/computability-theory/russells-paradox.tex:35-36` | pending |
+| `T326-OLP-0236-B009` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:37-48` | `mr/content/computability/computability-theory/russells-paradox.tex:38-50` | pending |
+| `T326-OLP-0236-B010` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:50-53` | `mr/content/computability/computability-theory/russells-paradox.tex:52-55` | pending |
+| `T326-OLP-0236-B011` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:55-73` | `mr/content/computability/computability-theory/russells-paradox.tex:57-74` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -24379,6 +24642,106 @@ Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLCMP-012-OLP-0226` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:27-48` | `mr/content/computability/recursive-functions/halting-problem.tex:27-48` | pending |
+
+## OLCMP-013 — confirmed-frozen-source-program-parameter typo with documented math projection
+
+**Chosen rendering/action:** Use e in both explanatory references and render the English typo as conditional Marathi 'जर'; leave the theorem formula unchanged. Unit-specific QA projections reconstruct the two frozen math tokens for comparison, and adjacent reader note OLCMP-013 records the correction.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The theorem and surrounding explanation use e as the input program index, but the same explanation twice switches to an undefined x: s^m_n(x,a-vector) and 'It you think of x'. The latter sentence also begins with the obvious English It/If typo.
+
+**Rationale:** The theorem and surrounding explanation use e as the input program index, but the same explanation twice switches to an undefined x: s^m_n(x,a-vector) and 'It you think of x'. The latter sentence also begins with the obvious English It/If typo. Chosen action: Use e in both explanatory references and render the English typo as conditional Marathi 'जर'; leave the theorem formula unchanged. Unit-specific QA projections reconstruct the two frozen math tokens for comparison, and adjacent reader note OLCMP-013 records the correction.
+
+**Authorities actually checked:**
+
+- `OLCMP-013-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-013. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Retain x and imply an unintroduced second program parameter — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the theorem's e to x despite its consistent e quantification — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do both corrected explanatory references now denote the same program e that the theorem takes as its first index input?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-013-OLP-0232` | `OLP-0232` |  | `upstream/content/computability/computability-theory/s-m-n.tex:33-40` | `mr/content/computability/computability-theory/s-m-n.tex:33-40` | pending |
+
+## OLCMP-014 — confirmed-frozen-source-omitted-partial-qualifier in unary-coded example
+
+**Chosen rendering/action:** Translate the conclusion as one-place partial recursive function and add an adjacent reader note. All protected math, macro, label and reference tokens remain unchanged.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The example assumes f(x,y,z) is a three-place partial recursive function but concludes g(x) defined from it is a unary recursive function. If recursive is read in the chapter's established total-function sense, the conclusion does not follow: g may be undefined where f is undefined.
+
+**Rationale:** The example assumes f(x,y,z) is a three-place partial recursive function but concludes g(x) defined from it is a unary recursive function. If recursive is read in the chapter's established total-function sense, the conclusion does not follow: g may be undefined where f is undefined. Chosen action: Translate the conclusion as one-place partial recursive function and add an adjacent reader note. All protected math, macro, label and reference tokens remain unchanged.
+
+**Authorities actually checked:**
+
+- `OLCMP-014-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-014. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Keep the unqualified recursive adjective and risk implying totality — `rejected`: Not chosen; the source finding and recorded action control.
+- Add a new totality assumption on f, which is absent from the source theorem's example — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the target make clear that coding the input tuple preserves partial recursiveness but need not make g total?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-014-OLP-0233` | `OLP-0233` |  | `upstream/content/computability/computability-theory/universal-part-function.tex:37-40` | `mr/content/computability/computability-theory/universal-part-function.tex:37-40` | pending |
+
+## OLCMP-015 — confirmed-frozen-source-universal-versus-total word slip in section opening
+
+**Chosen rendering/action:** Render the first clause as a partial computable function universal for the partial computable functions, with an adjacent reader note. Preserve all protected formulas, macros, identifiers and references.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The opening says a partial computable function is 'total for the partial computable functions', which conflicts with the preceding universal-partial-function theorem and the following claim that no total universal computable function exists. The intended modifier is universal, not total.
+
+**Rationale:** The opening says a partial computable function is 'total for the partial computable functions', which conflicts with the preceding universal-partial-function theorem and the following claim that no total universal computable function exists. The intended modifier is universal, not total. Chosen action: Render the first clause as a partial computable function universal for the partial computable functions, with an adjacent reader note. Preserve all protected formulas, macros, identifiers and references.
+
+**Authorities actually checked:**
+
+- `OLCMP-015-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-015. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Retain the contradictory total modifier — `rejected`: Not chosen; the source finding and recorded action control.
+- Make the universal partial function total, contradicting this section's diagonal theorem — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected opening accurately contrast the existing partial universal evaluator with the impossibility of a total universal computable evaluator?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-015-OLP-0234` | `OLP-0234` |  | `upstream/content/computability/computability-theory/no-universal-function.tex:12-14` | `mr/content/computability/computability-theory/no-universal-function.tex:12-15` | pending |
+
+## OLCMP-016 — confirmed-frozen-source-undefined-capital-in-Russell-paradox-self-membership-formula
+
+**Chosen rendering/action:** Use S notin S in the Marathi self-membership clause, preserve the rest of the three-way comparison, and add reader note OLCMP-016. A unit-specific QA projection restores the frozen X only for formal comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** After defining S={x:x notin x}, the frozen first comparison says S in S iff X notin S. Capital X is unintroduced; substituting S yields the Russell contradiction the same paragraph asserts.
+
+**Rationale:** After defining S={x:x notin x}, the frozen first comparison says S in S iff X notin S. Capital X is unintroduced; substituting S yields the Russell contradiction the same paragraph asserts. Chosen action: Use S notin S in the Marathi self-membership clause, preserve the rest of the three-way comparison, and add reader note OLCMP-016. A unit-specific QA projection restores the frozen X only for formal comparison.
+
+**Authorities actually checked:**
+
+- `OLCMP-016-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-016. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Retain the undefined X and lose the claimed self-membership contradiction — `rejected`: Not chosen; the source finding and recorded action control.
+- Introduce an unrelated X, which would not follow from the definition of S — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the first comparison now state S in S iff S notin S, distinct from the function and computability comparisons that follow?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-016-OLP-0236` | `OLP-0236` |  | `upstream/content/computability/computability-theory/russells-paradox.tex:15-20` | `mr/content/computability/computability-theory/russells-paradox.tex:15-21` | pending |
 
 ## Deferred prospective decisions
 

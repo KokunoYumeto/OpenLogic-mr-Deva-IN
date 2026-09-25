@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **224/722 source units**, 2282 aligned translated blocks, 12344 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
+Current scope: **233/722 source units**, 2333 aligned translated blocks, 12515 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -2877,7 +2877,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T026 — contradiction/paradox</strong> (33 occurrences; high priority)</summary>
+<summary><strong>T026 — contradiction/paradox</strong> (39 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2914,6 +2914,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T026-OLP-0172-B014 | OLP-0172 · 17.5 संचांची उपपत्ती | [upstream/content/first-order-logic/models-theories/set-theory.tex:173-182](../upstream/content/first-order-logic/models-theories/set-theory.tex#L173) | [mr/content/first-order-logic/models-theories/set-theory.tex:171-180](../mr/content/first-order-logic/models-theories/set-theory.tex#L171) | 227–229 |
 | T026-OLP-0177-B008 | OLP-0177 · 18.3 द्वितीय-क्रम तर्कशास्त्र | [upstream/content/first-order-logic/beyond/second-order-logic.tex:67-81](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L67) | [mr/content/first-order-logic/beyond/second-order-logic.tex:64-76](../mr/content/first-order-logic/beyond/second-order-logic.tex#L64) | 232–235 |
 | T026-OLP-0192-B007 | OLP-0192 · 20.1 परिचय | [upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70](../upstream/content/model-theory/models-of-arithmetic/introduction.tex#L55) | [mr/content/model-theory/models-of-arithmetic/introduction.tex:52-68](../mr/content/model-theory/models-of-arithmetic/introduction.tex#L52) | 250–251 |
+| T026-OLP-0236-B004 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:9-10](../upstream/content/computability/computability-theory/russells-paradox.tex#L9) | [mr/content/computability/computability-theory/russells-paradox.tex:9-10](../mr/content/computability/computability-theory/russells-paradox.tex#L9) | not yet paginated |
+| T026-OLP-0236-B005 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:12-16](../upstream/content/computability/computability-theory/russells-paradox.tex#L12) | [mr/content/computability/computability-theory/russells-paradox.tex:12-17](../mr/content/computability/computability-theory/russells-paradox.tex#L12) | not yet paginated |
+| T026-OLP-0236-B006 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:18-20](../upstream/content/computability/computability-theory/russells-paradox.tex#L18) | [mr/content/computability/computability-theory/russells-paradox.tex:19-21](../mr/content/computability/computability-theory/russells-paradox.tex#L19) | not yet paginated |
+| T026-OLP-0236-B007 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:22-32](../upstream/content/computability/computability-theory/russells-paradox.tex#L22) | [mr/content/computability/computability-theory/russells-paradox.tex:23-33](../mr/content/computability/computability-theory/russells-paradox.tex#L23) | not yet paginated |
+| T026-OLP-0236-B008 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:34-35](../upstream/content/computability/computability-theory/russells-paradox.tex#L34) | [mr/content/computability/computability-theory/russells-paradox.tex:35-36](../mr/content/computability/computability-theory/russells-paradox.tex#L35) | not yet paginated |
+| T026-OLP-0236-B010 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:50-53](../upstream/content/computability/computability-theory/russells-paradox.tex#L50) | [mr/content/computability/computability-theory/russells-paradox.tex:52-55](../mr/content/computability/computability-theory/russells-paradox.tex#L52) | not yet paginated |
 
 **Chosen rendering/action:** व्याघात / विरोधापत्ती
 
@@ -4363,7 +4369,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T044 — computability / formula / derivation</strong> (444 occurrences; medium priority)</summary>
+<summary><strong>T044 — computability / formula / derivation</strong> (450 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -4811,6 +4817,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T044-OLP-0215-B007 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L37) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L39) | not yet paginated |
 | T044-OLP-0218-B005 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L12) | [mr/content/computability/recursive-functions/bounded-minimization.tex:12-25](../mr/content/computability/recursive-functions/bounded-minimization.tex#L12) | not yet paginated |
 | T044-OLP-0226-B005 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:12-25](../upstream/content/computability/recursive-functions/halting-problem.tex#L12) | [mr/content/computability/recursive-functions/halting-problem.tex:12-23](../mr/content/computability/recursive-functions/halting-problem.tex#L12) | not yet paginated |
+| T044-OLP-0228-B004 | OLP-0228 ·  | [upstream/content/computability/computability-theory/computability-theory.tex:8-8](../upstream/content/computability/computability-theory/computability-theory.tex#L8) | [mr/content/computability/computability-theory/computability-theory.tex:8-8](../mr/content/computability/computability-theory/computability-theory.tex#L8) | not yet paginated |
+| T044-OLP-0228-B005 | OLP-0228 ·  | [upstream/content/computability/computability-theory/computability-theory.tex:10-13](../upstream/content/computability/computability-theory/computability-theory.tex#L10) | [mr/content/computability/computability-theory/computability-theory.tex:10-13](../mr/content/computability/computability-theory/computability-theory.tex#L10) | not yet paginated |
+| T044-OLP-0229-B004 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:9-10](../upstream/content/computability/computability-theory/introduction.tex#L9) | [mr/content/computability/computability-theory/introduction.tex:9-10](../mr/content/computability/computability-theory/introduction.tex#L9) | not yet paginated |
+| T044-OLP-0229-B005 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:12-16](../upstream/content/computability/computability-theory/introduction.tex#L12) | [mr/content/computability/computability-theory/introduction.tex:12-16](../mr/content/computability/computability-theory/introduction.tex#L12) | not yet paginated |
+| T044-OLP-0230-B006 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:33-40](../upstream/content/computability/computability-theory/coding-computations.tex#L33) | [mr/content/computability/computability-theory/coding-computations.tex:30-36](../mr/content/computability/computability-theory/coding-computations.tex#L30) | not yet paginated |
+| T044-OLP-0230-B007 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:42-44](../upstream/content/computability/computability-theory/coding-computations.tex#L42) | [mr/content/computability/computability-theory/coding-computations.tex:38-40](../mr/content/computability/computability-theory/coding-computations.tex#L38) | not yet paginated |
 
 **Chosen rendering/action:** संगणनक्षमता / सूत्र / निष्पत्ती
 
@@ -4821,7 +4833,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T045 — function / mapping</strong> (370 occurrences; medium priority)</summary>
+<summary><strong>T045 — function / mapping</strong> (393 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5195,6 +5207,29 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T045-OLP-0227-B004 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:9-10](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L9) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:9-10](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L9) | not yet paginated |
 | T045-OLP-0227-B006 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:20-27](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L20) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:19-26](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L19) | not yet paginated |
 | T045-OLP-0227-B007 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:29-39](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L29) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:28-36](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L28) | not yet paginated |
+| T045-OLP-0229-B006 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:18-27](../upstream/content/computability/computability-theory/introduction.tex#L18) | [mr/content/computability/computability-theory/introduction.tex:18-27](../mr/content/computability/computability-theory/introduction.tex#L18) | not yet paginated |
+| T045-OLP-0229-B007 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:29-39](../upstream/content/computability/computability-theory/introduction.tex#L29) | [mr/content/computability/computability-theory/introduction.tex:29-39](../mr/content/computability/computability-theory/introduction.tex#L29) | not yet paginated |
+| T045-OLP-0229-B008 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:41-48](../upstream/content/computability/computability-theory/introduction.tex#L41) | [mr/content/computability/computability-theory/introduction.tex:41-49](../mr/content/computability/computability-theory/introduction.tex#L41) | not yet paginated |
+| T045-OLP-0229-B009 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:50-66](../upstream/content/computability/computability-theory/introduction.tex#L50) | [mr/content/computability/computability-theory/introduction.tex:51-64](../mr/content/computability/computability-theory/introduction.tex#L51) | not yet paginated |
+| T045-OLP-0230-B005 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:12-31](../upstream/content/computability/computability-theory/coding-computations.tex#L12) | [mr/content/computability/computability-theory/coding-computations.tex:12-28](../mr/content/computability/computability-theory/coding-computations.tex#L12) | not yet paginated |
+| T045-OLP-0230-B006 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:33-40](../upstream/content/computability/computability-theory/coding-computations.tex#L33) | [mr/content/computability/computability-theory/coding-computations.tex:30-36](../mr/content/computability/computability-theory/coding-computations.tex#L30) | not yet paginated |
+| T045-OLP-0231-B005 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:12-25](../upstream/content/computability/computability-theory/normal-form.tex#L12) | [mr/content/computability/computability-theory/normal-form.tex:12-22](../mr/content/computability/computability-theory/normal-form.tex#L12) | not yet paginated |
+| T045-OLP-0231-B006 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:27-36](../upstream/content/computability/computability-theory/normal-form.tex#L27) | [mr/content/computability/computability-theory/normal-form.tex:24-33](../mr/content/computability/computability-theory/normal-form.tex#L24) | not yet paginated |
+| T045-OLP-0231-B007 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:38-54](../upstream/content/computability/computability-theory/normal-form.tex#L38) | [mr/content/computability/computability-theory/normal-form.tex:35-51](../mr/content/computability/computability-theory/normal-form.tex#L35) | not yet paginated |
+| T045-OLP-0231-B008 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:56-62](../upstream/content/computability/computability-theory/normal-form.tex#L56) | [mr/content/computability/computability-theory/normal-form.tex:53-58](../mr/content/computability/computability-theory/normal-form.tex#L53) | not yet paginated |
+| T045-OLP-0232-B006 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:19-28](../upstream/content/computability/computability-theory/s-m-n.tex#L19) | [mr/content/computability/computability-theory/s-m-n.tex:18-27](../mr/content/computability/computability-theory/s-m-n.tex#L18) | not yet paginated |
+| T045-OLP-0233-B005 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:12-21](../upstream/content/computability/computability-theory/universal-part-function.tex#L12) | [mr/content/computability/computability-theory/universal-part-function.tex:12-21](../mr/content/computability/computability-theory/universal-part-function.tex#L12) | not yet paginated |
+| T045-OLP-0233-B007 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:28-40](../upstream/content/computability/computability-theory/universal-part-function.tex#L28) | [mr/content/computability/computability-theory/universal-part-function.tex:29-41](../mr/content/computability/computability-theory/universal-part-function.tex#L29) | not yet paginated |
+| T045-OLP-0234-B006 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:16-22](../upstream/content/computability/computability-theory/no-universal-function.tex#L16) | [mr/content/computability/computability-theory/no-universal-function.tex:17-23](../mr/content/computability/computability-theory/no-universal-function.tex#L17) | not yet paginated |
+| T045-OLP-0234-B007 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:24-33](../upstream/content/computability/computability-theory/no-universal-function.tex#L24) | [mr/content/computability/computability-theory/no-universal-function.tex:25-35](../mr/content/computability/computability-theory/no-universal-function.tex#L25) | not yet paginated |
+| T045-OLP-0234-B009 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:43-49](../upstream/content/computability/computability-theory/no-universal-function.tex#L43) | [mr/content/computability/computability-theory/no-universal-function.tex:45-51](../mr/content/computability/computability-theory/no-universal-function.tex#L45) | not yet paginated |
+| T045-OLP-0235-B007 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:36-60](../upstream/content/computability/computability-theory/halting-problem.tex#L36) | [mr/content/computability/computability-theory/halting-problem.tex:34-59](../mr/content/computability/computability-theory/halting-problem.tex#L34) | not yet paginated |
+| T045-OLP-0235-B008 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:62-82](../upstream/content/computability/computability-theory/halting-problem.tex#L62) | [mr/content/computability/computability-theory/halting-problem.tex:61-82](../mr/content/computability/computability-theory/halting-problem.tex#L61) | not yet paginated |
+| T045-OLP-0236-B007 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:22-32](../upstream/content/computability/computability-theory/russells-paradox.tex#L22) | [mr/content/computability/computability-theory/russells-paradox.tex:23-33](../mr/content/computability/computability-theory/russells-paradox.tex#L23) | not yet paginated |
+| T045-OLP-0236-B008 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:34-35](../upstream/content/computability/computability-theory/russells-paradox.tex#L34) | [mr/content/computability/computability-theory/russells-paradox.tex:35-36](../mr/content/computability/computability-theory/russells-paradox.tex#L35) | not yet paginated |
+| T045-OLP-0236-B009 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:37-48](../upstream/content/computability/computability-theory/russells-paradox.tex#L37) | [mr/content/computability/computability-theory/russells-paradox.tex:38-50](../mr/content/computability/computability-theory/russells-paradox.tex#L38) | not yet paginated |
+| T045-OLP-0236-B010 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:50-53](../upstream/content/computability/computability-theory/russells-paradox.tex#L50) | [mr/content/computability/computability-theory/russells-paradox.tex:52-55](../mr/content/computability/computability-theory/russells-paradox.tex#L52) | not yet paginated |
+| T045-OLP-0236-B011 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:55-73](../upstream/content/computability/computability-theory/russells-paradox.tex#L55) | [mr/content/computability/computability-theory/russells-paradox.tex:57-74](../mr/content/computability/computability-theory/russells-paradox.tex#L57) | not yet paginated |
 
 **Chosen rendering/action:** फलन / संगती
 
@@ -5949,7 +5984,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T053 — composition / partial / total function</strong> (60 occurrences; medium priority)</summary>
+<summary><strong>T053 — composition / partial / total function</strong> (66 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6013,6 +6048,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T053-OLP-0224-B012 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:98-103](../upstream/content/computability/recursive-functions/partial-functions.tex#L98) | [mr/content/computability/recursive-functions/partial-functions.tex:92-97](../mr/content/computability/recursive-functions/partial-functions.tex#L92) | not yet paginated |
 | T053-OLP-0224-B013 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:105-106](../upstream/content/computability/recursive-functions/partial-functions.tex#L105) | [mr/content/computability/recursive-functions/partial-functions.tex:99-100](../mr/content/computability/recursive-functions/partial-functions.tex#L99) | not yet paginated |
 | T053-OLP-0224-B014 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:108-112](../upstream/content/computability/recursive-functions/partial-functions.tex#L108) | [mr/content/computability/recursive-functions/partial-functions.tex:102-106](../mr/content/computability/recursive-functions/partial-functions.tex#L102) | not yet paginated |
+| T053-OLP-0229-B006 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:18-27](../upstream/content/computability/computability-theory/introduction.tex#L18) | [mr/content/computability/computability-theory/introduction.tex:18-27](../mr/content/computability/computability-theory/introduction.tex#L18) | not yet paginated |
+| T053-OLP-0234-B005 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:12-14](../upstream/content/computability/computability-theory/no-universal-function.tex#L12) | [mr/content/computability/computability-theory/no-universal-function.tex:12-15](../mr/content/computability/computability-theory/no-universal-function.tex#L12) | not yet paginated |
+| T053-OLP-0234-B008 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:35-41](../upstream/content/computability/computability-theory/no-universal-function.tex#L35) | [mr/content/computability/computability-theory/no-universal-function.tex:37-43](../mr/content/computability/computability-theory/no-universal-function.tex#L37) | not yet paginated |
+| T053-OLP-0234-B009 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:43-49](../upstream/content/computability/computability-theory/no-universal-function.tex#L43) | [mr/content/computability/computability-theory/no-universal-function.tex:45-51](../mr/content/computability/computability-theory/no-universal-function.tex#L45) | not yet paginated |
+| T053-OLP-0236-B007 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:22-32](../upstream/content/computability/computability-theory/russells-paradox.tex#L22) | [mr/content/computability/computability-theory/russells-paradox.tex:23-33](../mr/content/computability/computability-theory/russells-paradox.tex#L23) | not yet paginated |
+| T053-OLP-0236-B011 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:55-73](../upstream/content/computability/computability-theory/russells-paradox.tex#L55) | [mr/content/computability/computability-theory/russells-paradox.tex:57-74](../mr/content/computability/computability-theory/russells-paradox.tex#L57) | not yet paginated |
 
 **Chosen rendering/action:** संयोजन / अंशतः फलन / सर्वत्र परिभाषित फलन
 
@@ -6084,7 +6125,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T056 — enumeration / enumerate</strong> (99 occurrences; routine priority)</summary>
+<summary><strong>T056 — enumeration / enumerate</strong> (103 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6187,6 +6228,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T056-OLP-0223-B009 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L75) | [mr/content/computability/recursive-functions/non-pr-functions.tex:72-76](../mr/content/computability/recursive-functions/non-pr-functions.tex#L72) | not yet paginated |
 | T056-OLP-0224-B005 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:13-22](../upstream/content/computability/recursive-functions/partial-functions.tex#L13) | [mr/content/computability/recursive-functions/partial-functions.tex:13-21](../mr/content/computability/recursive-functions/partial-functions.tex#L13) | not yet paginated |
 | T056-OLP-0224-B006 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:24-30](../upstream/content/computability/recursive-functions/partial-functions.tex#L24) | [mr/content/computability/recursive-functions/partial-functions.tex:23-28](../mr/content/computability/recursive-functions/partial-functions.tex#L23) | not yet paginated |
+| T056-OLP-0229-B007 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:29-39](../upstream/content/computability/computability-theory/introduction.tex#L29) | [mr/content/computability/computability-theory/introduction.tex:29-39](../mr/content/computability/computability-theory/introduction.tex#L29) | not yet paginated |
+| T056-OLP-0231-B011 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:76-82](../upstream/content/computability/computability-theory/normal-form.tex#L76) | [mr/content/computability/computability-theory/normal-form.tex:72-78](../mr/content/computability/computability-theory/normal-form.tex#L72) | not yet paginated |
+| T056-OLP-0233-B007 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:28-40](../upstream/content/computability/computability-theory/universal-part-function.tex#L28) | [mr/content/computability/computability-theory/universal-part-function.tex:29-41](../mr/content/computability/computability-theory/universal-part-function.tex#L29) | not yet paginated |
+| T056-OLP-0236-B009 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:37-48](../upstream/content/computability/computability-theory/russells-paradox.tex#L37) | [mr/content/computability/computability-theory/russells-paradox.tex:38-50](../mr/content/computability/computability-theory/russells-paradox.tex#L38) | not yet paginated |
 
 **Chosen rendering/action:** प्रगणन / प्रगणन करणे
 
@@ -6440,7 +6485,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T061 — recursive / recursively defined</strong> (33 occurrences; medium priority)</summary>
+<summary><strong>T061 — recursive / recursively defined</strong> (35 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6477,6 +6522,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T061-OLP-0225-B006 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:23-34](../upstream/content/computability/recursive-functions/normal-form.tex#L23) | [mr/content/computability/recursive-functions/normal-form.tex:23-34](../mr/content/computability/recursive-functions/normal-form.tex#L23) | not yet paginated |
 | T061-OLP-0227-B005 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:12-18](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L12) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:12-17](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L12) | not yet paginated |
 | T061-OLP-0227-B006 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:20-27](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L20) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:19-26](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L19) | not yet paginated |
+| T061-OLP-0229-B005 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:12-16](../upstream/content/computability/computability-theory/introduction.tex#L12) | [mr/content/computability/computability-theory/introduction.tex:12-16](../mr/content/computability/computability-theory/introduction.tex#L12) | not yet paginated |
+| T061-OLP-0229-B007 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:29-39](../upstream/content/computability/computability-theory/introduction.tex#L29) | [mr/content/computability/computability-theory/introduction.tex:29-39](../mr/content/computability/computability-theory/introduction.tex#L29) | not yet paginated |
 
 **Chosen rendering/action:** पुनरावर्ती / पुनरावर्ती रीतीने परिभाषित
 
@@ -6652,7 +6699,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T067 — pairing function / encode / code / decode</strong> (23 occurrences; medium priority)</summary>
+<summary><strong>T067 — pairing function / encode / code / decode</strong> (32 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6679,6 +6726,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T067-OLP-0222-B005 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:12-47](../upstream/content/computability/recursive-functions/other-recursions.tex#L12) | [mr/content/computability/recursive-functions/other-recursions.tex:12-45](../mr/content/computability/recursive-functions/other-recursions.tex#L12) | not yet paginated |
 | T067-OLP-0223-B007 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L45) | [mr/content/computability/recursive-functions/non-pr-functions.tex:45-64](../mr/content/computability/recursive-functions/non-pr-functions.tex#L45) | not yet paginated |
 | T067-OLP-0223-B009 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L75) | [mr/content/computability/recursive-functions/non-pr-functions.tex:72-76](../mr/content/computability/recursive-functions/non-pr-functions.tex#L72) | not yet paginated |
+| T067-OLP-0230-B004 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:9-10](../upstream/content/computability/computability-theory/coding-computations.tex#L9) | [mr/content/computability/computability-theory/coding-computations.tex:9-10](../mr/content/computability/computability-theory/coding-computations.tex#L9) | not yet paginated |
+| T067-OLP-0230-B005 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:12-31](../upstream/content/computability/computability-theory/coding-computations.tex#L12) | [mr/content/computability/computability-theory/coding-computations.tex:12-28](../mr/content/computability/computability-theory/coding-computations.tex#L12) | not yet paginated |
+| T067-OLP-0230-B006 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:33-40](../upstream/content/computability/computability-theory/coding-computations.tex#L33) | [mr/content/computability/computability-theory/coding-computations.tex:30-36](../mr/content/computability/computability-theory/coding-computations.tex#L30) | not yet paginated |
+| T067-OLP-0231-B005 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:12-25](../upstream/content/computability/computability-theory/normal-form.tex#L12) | [mr/content/computability/computability-theory/normal-form.tex:12-22](../mr/content/computability/computability-theory/normal-form.tex#L12) | not yet paginated |
+| T067-OLP-0231-B007 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:38-54](../upstream/content/computability/computability-theory/normal-form.tex#L38) | [mr/content/computability/computability-theory/normal-form.tex:35-51](../mr/content/computability/computability-theory/normal-form.tex#L35) | not yet paginated |
+| T067-OLP-0231-B009 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:64-68](../upstream/content/computability/computability-theory/normal-form.tex#L64) | [mr/content/computability/computability-theory/normal-form.tex:60-64](../mr/content/computability/computability-theory/normal-form.tex#L60) | not yet paginated |
+| T067-OLP-0231-B014 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:90-97](../upstream/content/computability/computability-theory/normal-form.tex#L90) | [mr/content/computability/computability-theory/normal-form.tex:86-91](../mr/content/computability/computability-theory/normal-form.tex#L86) | not yet paginated |
+| T067-OLP-0232-B007 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:30-41](../upstream/content/computability/computability-theory/s-m-n.tex#L30) | [mr/content/computability/computability-theory/s-m-n.tex:29-41](../mr/content/computability/computability-theory/s-m-n.tex#L29) | not yet paginated |
+| T067-OLP-0233-B007 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:28-40](../upstream/content/computability/computability-theory/universal-part-function.tex#L28) | [mr/content/computability/computability-theory/universal-part-function.tex:29-41](../mr/content/computability/computability-theory/universal-part-function.tex#L29) | not yet paginated |
 
 **Chosen rendering/action:** जोडीकरण फलन / सांकेतीकरण करणे / संकेतांक / विसांकेतीकरण करणे
 
@@ -6799,7 +6855,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T073 — Cantor's diagonal method / diagonalization / diagonal argument</strong> (19 occurrences; medium priority)</summary>
+<summary><strong>T073 — Cantor's diagonal method / diagonalization / diagonal argument</strong> (20 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6822,6 +6878,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T073-OLP-0040-B007 | OLP-0040 · 4.13 न्यूनीकरण | [upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:20-26](../upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L20) | [mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:19-26](../mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L19) | 55–56 |
 | T073-OLP-0223-B005 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/non-pr-functions.tex:12-28](../mr/content/computability/recursive-functions/non-pr-functions.tex#L12) | not yet paginated |
 | T073-OLP-0224-B005 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:13-22](../upstream/content/computability/recursive-functions/partial-functions.tex#L13) | [mr/content/computability/recursive-functions/partial-functions.tex:13-21](../mr/content/computability/recursive-functions/partial-functions.tex#L13) | not yet paginated |
+| T073-OLP-0236-B009 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:37-48](../upstream/content/computability/computability-theory/russells-paradox.tex#L37) | [mr/content/computability/computability-theory/russells-paradox.tex:38-50](../mr/content/computability/computability-theory/russells-paradox.tex#L38) | not yet paginated |
 
 **Chosen rendering/action:** कँटर यांची कर्णरेषीय पद्धत / कर्णीकरण / कर्णरेषीय युक्तिवाद
 
@@ -12029,13 +12086,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T170 — Gottlob Frege / Alfred North Whitehead / Bertrand Russell / David Hilbert; Frege system / Hilbert system</strong> (3 occurrences; routine priority)</summary>
+<summary><strong>T170 — Gottlob Frege / Alfred North Whitehead / Bertrand Russell / David Hilbert; Frege system / Hilbert system</strong> (5 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T170-OLP-0068-B010 | OLP-0068 · 8.5 स्वयंसिद्धकीय निष्पत्ती | [upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:70-81](../upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L70) | [mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex:71-82](../mr/content/first-order-logic/proof-systems/axiomatic-deduction.tex#L71) | 91–92 |
 | T170-OLP-0127-B007 | OLP-0127 · 13.1 परिचय | [upstream/content/first-order-logic/completeness/introduction.tex:24-47](../upstream/content/first-order-logic/completeness/introduction.tex#L24) | [mr/content/first-order-logic/completeness/introduction.tex:24-44](../mr/content/first-order-logic/completeness/introduction.tex#L24) | 170–171 |
 | T170-OLP-0177-B008 | OLP-0177 · 18.3 द्वितीय-क्रम तर्कशास्त्र | [upstream/content/first-order-logic/beyond/second-order-logic.tex:67-81](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L67) | [mr/content/first-order-logic/beyond/second-order-logic.tex:64-76](../mr/content/first-order-logic/beyond/second-order-logic.tex#L64) | 232–235 |
+| T170-OLP-0236-B004 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:9-10](../upstream/content/computability/computability-theory/russells-paradox.tex#L9) | [mr/content/computability/computability-theory/russells-paradox.tex:9-10](../mr/content/computability/computability-theory/russells-paradox.tex#L9) | not yet paginated |
+| T170-OLP-0236-B005 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:12-16](../upstream/content/computability/computability-theory/russells-paradox.tex#L12) | [mr/content/computability/computability-theory/russells-paradox.tex:12-17](../mr/content/computability/computability-theory/russells-paradox.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** गोटलोप फ्रेग / ॲल्फ्रेड नॉर्थ व्हाइटहेड / बर्ट्रंड रसेल / डाव्हीट हिल्बर्ट; फ्रेग पद्धत / हिल्बर्ट पद्धत
 
@@ -13817,7 +13876,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T207 — n-place / arity</strong> (40 occurrences; routine priority)</summary>
+<summary><strong>T207 — n-place / arity</strong> (44 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13861,6 +13920,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T207-OLP-0216-B009 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:58-76](../upstream/content/computability/recursive-functions/examples.tex#L58) | [mr/content/computability/recursive-functions/examples.tex:57-75](../mr/content/computability/recursive-functions/examples.tex#L57) | not yet paginated |
 | T207-OLP-0216-B011 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:83-97](../upstream/content/computability/recursive-functions/examples.tex#L83) | [mr/content/computability/recursive-functions/examples.tex:82-97](../mr/content/computability/recursive-functions/examples.tex#L82) | not yet paginated |
 | T207-OLP-0217-B012 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:121-124](../upstream/content/computability/recursive-functions/pr-relations.tex#L121) | [mr/content/computability/recursive-functions/pr-relations.tex:123-126](../mr/content/computability/recursive-functions/pr-relations.tex#L123) | not yet paginated |
+| T207-OLP-0229-B007 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:29-39](../upstream/content/computability/computability-theory/introduction.tex#L29) | [mr/content/computability/computability-theory/introduction.tex:29-39](../mr/content/computability/computability-theory/introduction.tex#L29) | not yet paginated |
+| T207-OLP-0232-B006 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:19-28](../upstream/content/computability/computability-theory/s-m-n.tex#L19) | [mr/content/computability/computability-theory/s-m-n.tex:18-27](../mr/content/computability/computability-theory/s-m-n.tex#L18) | not yet paginated |
+| T207-OLP-0232-B007 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:30-41](../upstream/content/computability/computability-theory/s-m-n.tex#L30) | [mr/content/computability/computability-theory/s-m-n.tex:29-41](../mr/content/computability/computability-theory/s-m-n.tex#L29) | not yet paginated |
+| T207-OLP-0233-B007 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:28-40](../upstream/content/computability/computability-theory/universal-part-function.tex#L28) | [mr/content/computability/computability-theory/universal-part-function.tex:29-41](../mr/content/computability/computability-theory/universal-part-function.tex#L29) | not yet paginated |
 
 **Chosen rendering/action:** n-स्थानी / स्थानसंख्या
 
@@ -15811,7 +15874,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T287 — computable / computable structure or function; decidable / decidable relation</strong> (15 occurrences; routine priority)</summary>
+<summary><strong>T287 — computable / computable structure or function; decidable / decidable relation</strong> (22 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -15830,6 +15893,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T287-OLP-0215-B007 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L37) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L39) | not yet paginated |
 | T287-OLP-0217-B007 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:38-45](../upstream/content/computability/recursive-functions/pr-relations.tex#L38) | [mr/content/computability/recursive-functions/pr-relations.tex:37-44](../mr/content/computability/recursive-functions/pr-relations.tex#L37) | not yet paginated |
 | T287-OLP-0218-B005 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L12) | [mr/content/computability/recursive-functions/bounded-minimization.tex:12-25](../mr/content/computability/recursive-functions/bounded-minimization.tex#L12) | not yet paginated |
+| T287-OLP-0235-B005 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:12-21](../upstream/content/computability/computability-theory/halting-problem.tex#L12) | [mr/content/computability/computability-theory/halting-problem.tex:12-19](../mr/content/computability/computability-theory/halting-problem.tex#L12) | not yet paginated |
+| T287-OLP-0235-B006 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:23-34](../upstream/content/computability/computability-theory/halting-problem.tex#L23) | [mr/content/computability/computability-theory/halting-problem.tex:21-32](../mr/content/computability/computability-theory/halting-problem.tex#L21) | not yet paginated |
+| T287-OLP-0235-B007 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:36-60](../upstream/content/computability/computability-theory/halting-problem.tex#L36) | [mr/content/computability/computability-theory/halting-problem.tex:34-59](../mr/content/computability/computability-theory/halting-problem.tex#L34) | not yet paginated |
+| T287-OLP-0235-B008 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:62-82](../upstream/content/computability/computability-theory/halting-problem.tex#L62) | [mr/content/computability/computability-theory/halting-problem.tex:61-82](../mr/content/computability/computability-theory/halting-problem.tex#L61) | not yet paginated |
+| T287-OLP-0236-B009 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:37-48](../upstream/content/computability/computability-theory/russells-paradox.tex#L37) | [mr/content/computability/computability-theory/russells-paradox.tex:38-50](../mr/content/computability/computability-theory/russells-paradox.tex#L38) | not yet paginated |
+| T287-OLP-0236-B010 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:50-53](../upstream/content/computability/computability-theory/russells-paradox.tex#L50) | [mr/content/computability/computability-theory/russells-paradox.tex:52-55](../mr/content/computability/computability-theory/russells-paradox.tex#L52) | not yet paginated |
+| T287-OLP-0236-B011 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:55-73](../upstream/content/computability/computability-theory/russells-paradox.tex#L55) | [mr/content/computability/computability-theory/russells-paradox.tex:57-74](../mr/content/computability/computability-theory/russells-paradox.tex#L57) | not yet paginated |
 
 **Chosen rendering/action:** संगणनक्षम / संगणनक्षम रचना किंवा फलन; निर्णेय / निर्णेय संबंध
 
@@ -15840,7 +15910,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T288 — Turing machine / primitive recursion</strong> (38 occurrences; medium priority)</summary>
+<summary><strong>T288 — Turing machine / primitive recursion</strong> (42 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -15882,6 +15952,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T288-OLP-0223-B011 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L88) | [mr/content/computability/recursive-functions/non-pr-functions.tex:85-92](../mr/content/computability/recursive-functions/non-pr-functions.tex#L85) | not yet paginated |
 | T288-OLP-0224-B006 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:24-30](../upstream/content/computability/recursive-functions/partial-functions.tex#L24) | [mr/content/computability/recursive-functions/partial-functions.tex:23-28](../mr/content/computability/recursive-functions/partial-functions.tex#L23) | not yet paginated |
 | T288-OLP-0224-B010 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:75-87](../upstream/content/computability/recursive-functions/partial-functions.tex#L75) | [mr/content/computability/recursive-functions/partial-functions.tex:71-81](../mr/content/computability/recursive-functions/partial-functions.tex#L71) | not yet paginated |
+| T288-OLP-0230-B005 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:12-31](../upstream/content/computability/computability-theory/coding-computations.tex#L12) | [mr/content/computability/computability-theory/coding-computations.tex:12-28](../mr/content/computability/computability-theory/coding-computations.tex#L12) | not yet paginated |
+| T288-OLP-0232-B007 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:30-41](../upstream/content/computability/computability-theory/s-m-n.tex#L30) | [mr/content/computability/computability-theory/s-m-n.tex:29-41](../mr/content/computability/computability-theory/s-m-n.tex#L29) | not yet paginated |
+| T288-OLP-0235-B005 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:12-21](../upstream/content/computability/computability-theory/halting-problem.tex#L12) | [mr/content/computability/computability-theory/halting-problem.tex:12-19](../mr/content/computability/computability-theory/halting-problem.tex#L12) | not yet paginated |
+| T288-OLP-0235-B009 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:84-99](../upstream/content/computability/computability-theory/halting-problem.tex#L84) | [mr/content/computability/computability-theory/halting-problem.tex:84-99](../mr/content/computability/computability-theory/halting-problem.tex#L84) | not yet paginated |
 
 **Chosen rendering/action:** ट्यूरिंग यंत्र / आदिम पुनरावर्तन
 
@@ -16134,7 +16208,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T301 — characteristic function (of a set or relation)</strong> (8 occurrences; routine priority)</summary>
+<summary><strong>T301 — characteristic function (of a set or relation)</strong> (10 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16146,6 +16220,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T301-OLP-0217-B015 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:158-167](../upstream/content/computability/recursive-functions/pr-relations.tex#L158) | [mr/content/computability/recursive-functions/pr-relations.tex:159-168](../mr/content/computability/recursive-functions/pr-relations.tex#L159) | not yet paginated |
 | T301-OLP-0218-B009 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L64) | [mr/content/computability/recursive-functions/bounded-minimization.tex:65-70](../mr/content/computability/recursive-functions/bounded-minimization.tex#L65) | not yet paginated |
 | T301-OLP-0224-B011 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:89-96](../upstream/content/computability/recursive-functions/partial-functions.tex#L89) | [mr/content/computability/recursive-functions/partial-functions.tex:83-90](../mr/content/computability/recursive-functions/partial-functions.tex#L83) | not yet paginated |
+| T301-OLP-0229-B006 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:18-27](../upstream/content/computability/computability-theory/introduction.tex#L18) | [mr/content/computability/computability-theory/introduction.tex:18-27](../mr/content/computability/computability-theory/introduction.tex#L18) | not yet paginated |
+| T301-OLP-0229-B008 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:41-48](../upstream/content/computability/computability-theory/introduction.tex#L41) | [mr/content/computability/computability-theory/introduction.tex:41-49](../mr/content/computability/computability-theory/introduction.tex#L41) | not yet paginated |
 
 **Chosen rendering/action:** जातिबोधक फल
 
@@ -16156,7 +16232,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T302 — primitive recursive / partial recursive / general recursive function</strong> (99 occurrences; routine priority)</summary>
+<summary><strong>T302 — primitive recursive / partial recursive / general recursive function</strong> (111 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16259,6 +16335,18 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T302-OLP-0224-B013 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:105-106](../upstream/content/computability/recursive-functions/partial-functions.tex#L105) | [mr/content/computability/recursive-functions/partial-functions.tex:99-100](../mr/content/computability/recursive-functions/partial-functions.tex#L99) | not yet paginated |
 | T302-OLP-0224-B014 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:108-112](../upstream/content/computability/recursive-functions/partial-functions.tex#L108) | [mr/content/computability/recursive-functions/partial-functions.tex:102-106](../mr/content/computability/recursive-functions/partial-functions.tex#L102) | not yet paginated |
 | T302-OLP-0224-B015 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:114-115](../upstream/content/computability/recursive-functions/partial-functions.tex#L114) | [mr/content/computability/recursive-functions/partial-functions.tex:108-109](../mr/content/computability/recursive-functions/partial-functions.tex#L108) | not yet paginated |
+| T302-OLP-0229-B007 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:29-39](../upstream/content/computability/computability-theory/introduction.tex#L29) | [mr/content/computability/computability-theory/introduction.tex:29-39](../mr/content/computability/computability-theory/introduction.tex#L29) | not yet paginated |
+| T302-OLP-0229-B009 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:50-66](../upstream/content/computability/computability-theory/introduction.tex#L50) | [mr/content/computability/computability-theory/introduction.tex:51-64](../mr/content/computability/computability-theory/introduction.tex#L51) | not yet paginated |
+| T302-OLP-0230-B005 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:12-31](../upstream/content/computability/computability-theory/coding-computations.tex#L12) | [mr/content/computability/computability-theory/coding-computations.tex:12-28](../mr/content/computability/computability-theory/coding-computations.tex#L12) | not yet paginated |
+| T302-OLP-0230-B006 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:33-40](../upstream/content/computability/computability-theory/coding-computations.tex#L33) | [mr/content/computability/computability-theory/coding-computations.tex:30-36](../mr/content/computability/computability-theory/coding-computations.tex#L30) | not yet paginated |
+| T302-OLP-0231-B006 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:27-36](../upstream/content/computability/computability-theory/normal-form.tex#L27) | [mr/content/computability/computability-theory/normal-form.tex:24-33](../mr/content/computability/computability-theory/normal-form.tex#L24) | not yet paginated |
+| T302-OLP-0231-B007 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:38-54](../upstream/content/computability/computability-theory/normal-form.tex#L38) | [mr/content/computability/computability-theory/normal-form.tex:35-51](../mr/content/computability/computability-theory/normal-form.tex#L35) | not yet paginated |
+| T302-OLP-0231-B008 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:56-62](../upstream/content/computability/computability-theory/normal-form.tex#L56) | [mr/content/computability/computability-theory/normal-form.tex:53-58](../mr/content/computability/computability-theory/normal-form.tex#L53) | not yet paginated |
+| T302-OLP-0231-B010 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:70-74](../upstream/content/computability/computability-theory/normal-form.tex#L70) | [mr/content/computability/computability-theory/normal-form.tex:66-70](../mr/content/computability/computability-theory/normal-form.tex#L66) | not yet paginated |
+| T302-OLP-0232-B006 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:19-28](../upstream/content/computability/computability-theory/s-m-n.tex#L19) | [mr/content/computability/computability-theory/s-m-n.tex:18-27](../mr/content/computability/computability-theory/s-m-n.tex#L18) | not yet paginated |
+| T302-OLP-0232-B007 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:30-41](../upstream/content/computability/computability-theory/s-m-n.tex#L30) | [mr/content/computability/computability-theory/s-m-n.tex:29-41](../mr/content/computability/computability-theory/s-m-n.tex#L29) | not yet paginated |
+| T302-OLP-0233-B007 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:28-40](../upstream/content/computability/computability-theory/universal-part-function.tex#L28) | [mr/content/computability/computability-theory/universal-part-function.tex:29-41](../mr/content/computability/computability-theory/universal-part-function.tex#L29) | not yet paginated |
+| T302-OLP-0235-B007 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:36-60](../upstream/content/computability/computability-theory/halting-problem.tex#L36) | [mr/content/computability/computability-theory/halting-problem.tex:34-59](../mr/content/computability/computability-theory/halting-problem.tex#L34) | not yet paginated |
 
 **Chosen rendering/action:** आदिम पुनरावर्ती / आंशिक पुनरावर्ती / सामान्य पुनरावर्ती फलन
 
@@ -16269,7 +16357,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T303 — unbounded search / total (everywhere defined)</strong> (11 occurrences; medium priority)</summary>
+<summary><strong>T303 — unbounded search / total (everywhere defined)</strong> (19 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16284,6 +16372,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T303-OLP-0224-B013 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:105-106](../upstream/content/computability/recursive-functions/partial-functions.tex#L105) | [mr/content/computability/recursive-functions/partial-functions.tex:99-100](../mr/content/computability/recursive-functions/partial-functions.tex#L99) | not yet paginated |
 | T303-OLP-0224-B014 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:108-112](../upstream/content/computability/recursive-functions/partial-functions.tex#L108) | [mr/content/computability/recursive-functions/partial-functions.tex:102-106](../mr/content/computability/recursive-functions/partial-functions.tex#L102) | not yet paginated |
 | T303-OLP-0224-B015 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:114-115](../upstream/content/computability/recursive-functions/partial-functions.tex#L114) | [mr/content/computability/recursive-functions/partial-functions.tex:108-109](../mr/content/computability/recursive-functions/partial-functions.tex#L108) | not yet paginated |
+| T303-OLP-0229-B008 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:41-48](../upstream/content/computability/computability-theory/introduction.tex#L41) | [mr/content/computability/computability-theory/introduction.tex:41-49](../mr/content/computability/computability-theory/introduction.tex#L41) | not yet paginated |
+| T303-OLP-0231-B008 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:56-62](../upstream/content/computability/computability-theory/normal-form.tex#L56) | [mr/content/computability/computability-theory/normal-form.tex:53-58](../mr/content/computability/computability-theory/normal-form.tex#L53) | not yet paginated |
+| T303-OLP-0231-B010 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:70-74](../upstream/content/computability/computability-theory/normal-form.tex#L70) | [mr/content/computability/computability-theory/normal-form.tex:66-70](../mr/content/computability/computability-theory/normal-form.tex#L66) | not yet paginated |
+| T303-OLP-0234-B005 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:12-14](../upstream/content/computability/computability-theory/no-universal-function.tex#L12) | [mr/content/computability/computability-theory/no-universal-function.tex:12-15](../mr/content/computability/computability-theory/no-universal-function.tex#L12) | not yet paginated |
+| T303-OLP-0234-B006 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:16-22](../upstream/content/computability/computability-theory/no-universal-function.tex#L16) | [mr/content/computability/computability-theory/no-universal-function.tex:17-23](../mr/content/computability/computability-theory/no-universal-function.tex#L17) | not yet paginated |
+| T303-OLP-0234-B007 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:24-33](../upstream/content/computability/computability-theory/no-universal-function.tex#L24) | [mr/content/computability/computability-theory/no-universal-function.tex:25-35](../mr/content/computability/computability-theory/no-universal-function.tex#L25) | not yet paginated |
+| T303-OLP-0234-B008 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:35-41](../upstream/content/computability/computability-theory/no-universal-function.tex#L35) | [mr/content/computability/computability-theory/no-universal-function.tex:37-43](../mr/content/computability/computability-theory/no-universal-function.tex#L37) | not yet paginated |
+| T303-OLP-0235-B008 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:62-82](../upstream/content/computability/computability-theory/halting-problem.tex#L62) | [mr/content/computability/computability-theory/halting-problem.tex:61-82](../mr/content/computability/computability-theory/halting-problem.tex#L61) | not yet paginated |
 
 **Chosen rendering/action:** अपरिबद्ध शोध / सर्वत्र परिभाषित
 
@@ -16294,13 +16390,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T304 — lambda calculus / simulate a model of computation</strong> (3 occurrences; high priority)</summary>
+<summary><strong>T304 — lambda calculus / simulate a model of computation</strong> (5 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T304-OLP-0210-B007 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:41-52](../upstream/content/computability/recursive-functions/introduction.tex#L41) | [mr/content/computability/recursive-functions/introduction.tex:40-51](../mr/content/computability/recursive-functions/introduction.tex#L40) | not yet paginated |
 | T304-OLP-0222-B007 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:57-66](../upstream/content/computability/recursive-functions/other-recursions.tex#L57) | [mr/content/computability/recursive-functions/other-recursions.tex:55-63](../mr/content/computability/recursive-functions/other-recursions.tex#L55) | not yet paginated |
 | T304-OLP-0223-B011 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L88) | [mr/content/computability/recursive-functions/non-pr-functions.tex:85-92](../mr/content/computability/recursive-functions/non-pr-functions.tex#L85) | not yet paginated |
+| T304-OLP-0229-B009 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:50-66](../upstream/content/computability/computability-theory/introduction.tex#L50) | [mr/content/computability/computability-theory/introduction.tex:51-64](../mr/content/computability/computability-theory/introduction.tex#L51) | not yet paginated |
+| T304-OLP-0230-B005 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:12-31](../upstream/content/computability/computability-theory/coding-computations.tex#L12) | [mr/content/computability/computability-theory/coding-computations.tex:12-28](../mr/content/computability/computability-theory/coding-computations.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** लॅम्डा कलन / संगणन-प्रतिमानाचे अनुकरण करणे
 
@@ -16485,7 +16583,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T312 — finite sequence / numeric sequence code / empty sequence / length / append / concatenate / subsequence / sequence bound</strong> (28 occurrences; routine priority)</summary>
+<summary><strong>T312 — finite sequence / numeric sequence code / empty sequence / length / append / concatenate / subsequence / sequence bound</strong> (29 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16517,6 +16615,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T312-OLP-0222-B005 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:12-47](../upstream/content/computability/recursive-functions/other-recursions.tex#L12) | [mr/content/computability/recursive-functions/other-recursions.tex:12-45](../mr/content/computability/recursive-functions/other-recursions.tex#L12) | not yet paginated |
 | T312-OLP-0223-B006 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:30-43](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/non-pr-functions.tex:30-43](../mr/content/computability/recursive-functions/non-pr-functions.tex#L30) | not yet paginated |
 | T312-OLP-0223-B007 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L45) | [mr/content/computability/recursive-functions/non-pr-functions.tex:45-64](../mr/content/computability/recursive-functions/non-pr-functions.tex#L45) | not yet paginated |
+| T312-OLP-0233-B007 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:28-40](../upstream/content/computability/computability-theory/universal-part-function.tex#L28) | [mr/content/computability/computability-theory/universal-part-function.tex:29-41](../mr/content/computability/computability-theory/universal-part-function.tex#L29) | not yet paginated |
 
 **Chosen rendering/action:** सांत क्रमिका / क्रमिकेचा संख्यात्मक संकेतांक / रिकामी क्रमिका / लांबी / शेवटी जोडणे / जोडणी करणे / उपक्रमिका / क्रमिका-परिबंध
 
@@ -16615,7 +16714,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T318 — Church–Turing thesis / unpack a code / notation evaluator</strong> (4 occurrences; routine priority)</summary>
+<summary><strong>T318 — Church–Turing thesis / unpack a code / notation evaluator</strong> (5 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16623,6 +16722,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T318-OLP-0223-B010 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:81-86](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L81) | [mr/content/computability/recursive-functions/non-pr-functions.tex:78-83](../mr/content/computability/recursive-functions/non-pr-functions.tex#L78) | not yet paginated |
 | T318-OLP-0223-B011 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L88) | [mr/content/computability/recursive-functions/non-pr-functions.tex:85-92](../mr/content/computability/recursive-functions/non-pr-functions.tex#L85) | not yet paginated |
 | T318-OLP-0226-B005 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:12-25](../upstream/content/computability/recursive-functions/halting-problem.tex#L12) | [mr/content/computability/recursive-functions/halting-problem.tex:12-23](../mr/content/computability/recursive-functions/halting-problem.tex#L12) | not yet paginated |
+| T318-OLP-0229-B009 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:50-66](../upstream/content/computability/computability-theory/introduction.tex#L50) | [mr/content/computability/computability-theory/introduction.tex:51-64](../mr/content/computability/computability-theory/introduction.tex#L51) | not yet paginated |
 
 **Chosen rendering/action:** चर्च–ट्यूरिंग प्रबंध / संकेतांक उलगडणे / चिन्हांकनाचे मूल्य काढणारी प्रक्रिया
 
@@ -16674,7 +16774,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T321 — Kleene's Normal Form Theorem / index of a partial recursive function / computation code</strong> (6 occurrences; routine priority)</summary>
+<summary><strong>T321 — Kleene's Normal Form Theorem / index of a partial recursive function / computation code</strong> (24 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16684,6 +16784,24 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T321-OLP-0225-B007 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:36-46](../upstream/content/computability/recursive-functions/normal-form.tex#L36) | [mr/content/computability/recursive-functions/normal-form.tex:36-45](../mr/content/computability/recursive-functions/normal-form.tex#L36) | not yet paginated |
 | T321-OLP-0226-B006 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:27-48](../upstream/content/computability/recursive-functions/halting-problem.tex#L27) | [mr/content/computability/recursive-functions/halting-problem.tex:25-48](../mr/content/computability/recursive-functions/halting-problem.tex#L25) | not yet paginated |
 | T321-OLP-0226-B008 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:55-90](../upstream/content/computability/recursive-functions/halting-problem.tex#L55) | [mr/content/computability/recursive-functions/halting-problem.tex:55-91](../mr/content/computability/recursive-functions/halting-problem.tex#L55) | not yet paginated |
+| T321-OLP-0230-B006 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:33-40](../upstream/content/computability/computability-theory/coding-computations.tex#L33) | [mr/content/computability/computability-theory/coding-computations.tex:30-36](../mr/content/computability/computability-theory/coding-computations.tex#L30) | not yet paginated |
+| T321-OLP-0231-B004 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:9-10](../upstream/content/computability/computability-theory/normal-form.tex#L9) | [mr/content/computability/computability-theory/normal-form.tex:9-10](../mr/content/computability/computability-theory/normal-form.tex#L9) | not yet paginated |
+| T321-OLP-0231-B005 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:12-25](../upstream/content/computability/computability-theory/normal-form.tex#L12) | [mr/content/computability/computability-theory/normal-form.tex:12-22](../mr/content/computability/computability-theory/normal-form.tex#L12) | not yet paginated |
+| T321-OLP-0231-B006 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:27-36](../upstream/content/computability/computability-theory/normal-form.tex#L27) | [mr/content/computability/computability-theory/normal-form.tex:24-33](../mr/content/computability/computability-theory/normal-form.tex#L24) | not yet paginated |
+| T321-OLP-0231-B007 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:38-54](../upstream/content/computability/computability-theory/normal-form.tex#L38) | [mr/content/computability/computability-theory/normal-form.tex:35-51](../mr/content/computability/computability-theory/normal-form.tex#L35) | not yet paginated |
+| T321-OLP-0231-B008 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:56-62](../upstream/content/computability/computability-theory/normal-form.tex#L56) | [mr/content/computability/computability-theory/normal-form.tex:53-58](../mr/content/computability/computability-theory/normal-form.tex#L53) | not yet paginated |
+| T321-OLP-0231-B009 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:64-68](../upstream/content/computability/computability-theory/normal-form.tex#L64) | [mr/content/computability/computability-theory/normal-form.tex:60-64](../mr/content/computability/computability-theory/normal-form.tex#L60) | not yet paginated |
+| T321-OLP-0231-B010 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:70-74](../upstream/content/computability/computability-theory/normal-form.tex#L70) | [mr/content/computability/computability-theory/normal-form.tex:66-70](../mr/content/computability/computability-theory/normal-form.tex#L66) | not yet paginated |
+| T321-OLP-0231-B011 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:76-82](../upstream/content/computability/computability-theory/normal-form.tex#L76) | [mr/content/computability/computability-theory/normal-form.tex:72-78](../mr/content/computability/computability-theory/normal-form.tex#L72) | not yet paginated |
+| T321-OLP-0231-B012 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:84-84](../upstream/content/computability/computability-theory/normal-form.tex#L84) | [mr/content/computability/computability-theory/normal-form.tex:80-80](../mr/content/computability/computability-theory/normal-form.tex#L80) | not yet paginated |
+| T321-OLP-0231-B013 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:86-88](../upstream/content/computability/computability-theory/normal-form.tex#L86) | [mr/content/computability/computability-theory/normal-form.tex:82-84](../mr/content/computability/computability-theory/normal-form.tex#L82) | not yet paginated |
+| T321-OLP-0231-B014 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:90-97](../upstream/content/computability/computability-theory/normal-form.tex#L90) | [mr/content/computability/computability-theory/normal-form.tex:86-91](../mr/content/computability/computability-theory/normal-form.tex#L86) | not yet paginated |
+| T321-OLP-0232-B006 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:19-28](../upstream/content/computability/computability-theory/s-m-n.tex#L19) | [mr/content/computability/computability-theory/s-m-n.tex:18-27](../mr/content/computability/computability-theory/s-m-n.tex#L18) | not yet paginated |
+| T321-OLP-0232-B007 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:30-41](../upstream/content/computability/computability-theory/s-m-n.tex#L30) | [mr/content/computability/computability-theory/s-m-n.tex:29-41](../mr/content/computability/computability-theory/s-m-n.tex#L29) | not yet paginated |
+| T321-OLP-0233-B006 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:23-26](../upstream/content/computability/computability-theory/universal-part-function.tex#L23) | [mr/content/computability/computability-theory/universal-part-function.tex:23-27](../mr/content/computability/computability-theory/universal-part-function.tex#L23) | not yet paginated |
+| T321-OLP-0234-B009 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:43-49](../upstream/content/computability/computability-theory/no-universal-function.tex#L43) | [mr/content/computability/computability-theory/no-universal-function.tex:45-51](../mr/content/computability/computability-theory/no-universal-function.tex#L45) | not yet paginated |
+| T321-OLP-0235-B008 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:62-82](../upstream/content/computability/computability-theory/halting-problem.tex#L62) | [mr/content/computability/computability-theory/halting-problem.tex:61-82](../mr/content/computability/computability-theory/halting-problem.tex#L61) | not yet paginated |
+| T321-OLP-0235-B009 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:84-99](../upstream/content/computability/computability-theory/halting-problem.tex#L84) | [mr/content/computability/computability-theory/halting-problem.tex:84-99](../mr/content/computability/computability-theory/halting-problem.tex#L84) | not yet paginated |
 
 **Chosen rendering/action:** क्लिनीचे प्रमाण रूप प्रमेय / आंशिक पुनरावर्ती फलनाचा निर्देशांक / संगणनाचा संकेतांक
 
@@ -16694,7 +16812,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T322 — halting problem / halting function / total code numbering</strong> (5 occurrences; medium priority)</summary>
+<summary><strong>T322 — halting problem / halting function / total code numbering</strong> (11 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16703,6 +16821,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T322-OLP-0226-B006 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:27-48](../upstream/content/computability/recursive-functions/halting-problem.tex#L27) | [mr/content/computability/recursive-functions/halting-problem.tex:25-48](../mr/content/computability/recursive-functions/halting-problem.tex#L25) | not yet paginated |
 | T322-OLP-0226-B007 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:50-53](../upstream/content/computability/recursive-functions/halting-problem.tex#L50) | [mr/content/computability/recursive-functions/halting-problem.tex:50-53](../mr/content/computability/recursive-functions/halting-problem.tex#L50) | not yet paginated |
 | T322-OLP-0226-B008 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:55-90](../upstream/content/computability/recursive-functions/halting-problem.tex#L55) | [mr/content/computability/recursive-functions/halting-problem.tex:55-91](../mr/content/computability/recursive-functions/halting-problem.tex#L55) | not yet paginated |
+| T322-OLP-0235-B004 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:9-10](../upstream/content/computability/computability-theory/halting-problem.tex#L9) | [mr/content/computability/computability-theory/halting-problem.tex:9-10](../mr/content/computability/computability-theory/halting-problem.tex#L9) | not yet paginated |
+| T322-OLP-0235-B005 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:12-21](../upstream/content/computability/computability-theory/halting-problem.tex#L12) | [mr/content/computability/computability-theory/halting-problem.tex:12-19](../mr/content/computability/computability-theory/halting-problem.tex#L12) | not yet paginated |
+| T322-OLP-0235-B006 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:23-34](../upstream/content/computability/computability-theory/halting-problem.tex#L23) | [mr/content/computability/computability-theory/halting-problem.tex:21-32](../mr/content/computability/computability-theory/halting-problem.tex#L21) | not yet paginated |
+| T322-OLP-0235-B007 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:36-60](../upstream/content/computability/computability-theory/halting-problem.tex#L36) | [mr/content/computability/computability-theory/halting-problem.tex:34-59](../mr/content/computability/computability-theory/halting-problem.tex#L34) | not yet paginated |
+| T322-OLP-0235-B008 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:62-82](../upstream/content/computability/computability-theory/halting-problem.tex#L62) | [mr/content/computability/computability-theory/halting-problem.tex:61-82](../mr/content/computability/computability-theory/halting-problem.tex#L61) | not yet paginated |
+| T322-OLP-0235-B009 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:84-99](../upstream/content/computability/computability-theory/halting-problem.tex#L84) | [mr/content/computability/computability-theory/halting-problem.tex:84-99](../mr/content/computability/computability-theory/halting-problem.tex#L84) | not yet paginated |
 
 **Chosen rendering/action:** थांबण्याची समस्या / थांबण्याचे फलन / प्रत्येक संकेतांकाचा आंशिक पुनरावर्ती फलनाशी निर्देशांक-संबंध
 
@@ -16727,6 +16851,91 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** medium; direct official regular-function headword with source-defined distinct sense; full computability compounds expert-reviewable; open to correction.
 
 **Please double-check:** Does नियमित stay safely tied to the local zero-witness definition, and is सामान्य the clearest way to preserve the historically misleading general label?
+
+</details>
+
+<details>
+<summary><strong>T324 — computability theory / relative computability / partial computable function / universal partial computable function</strong> (31 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T324-OLP-0229-B004 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:9-10](../upstream/content/computability/computability-theory/introduction.tex#L9) | [mr/content/computability/computability-theory/introduction.tex:9-10](../mr/content/computability/computability-theory/introduction.tex#L9) | not yet paginated |
+| T324-OLP-0229-B005 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:12-16](../upstream/content/computability/computability-theory/introduction.tex#L12) | [mr/content/computability/computability-theory/introduction.tex:12-16](../mr/content/computability/computability-theory/introduction.tex#L12) | not yet paginated |
+| T324-OLP-0229-B006 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:18-27](../upstream/content/computability/computability-theory/introduction.tex#L18) | [mr/content/computability/computability-theory/introduction.tex:18-27](../mr/content/computability/computability-theory/introduction.tex#L18) | not yet paginated |
+| T324-OLP-0229-B007 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:29-39](../upstream/content/computability/computability-theory/introduction.tex#L29) | [mr/content/computability/computability-theory/introduction.tex:29-39](../mr/content/computability/computability-theory/introduction.tex#L29) | not yet paginated |
+| T324-OLP-0229-B009 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:50-66](../upstream/content/computability/computability-theory/introduction.tex#L50) | [mr/content/computability/computability-theory/introduction.tex:51-64](../mr/content/computability/computability-theory/introduction.tex#L51) | not yet paginated |
+| T324-OLP-0230-B004 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:9-10](../upstream/content/computability/computability-theory/coding-computations.tex#L9) | [mr/content/computability/computability-theory/coding-computations.tex:9-10](../mr/content/computability/computability-theory/coding-computations.tex#L9) | not yet paginated |
+| T324-OLP-0230-B005 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:12-31](../upstream/content/computability/computability-theory/coding-computations.tex#L12) | [mr/content/computability/computability-theory/coding-computations.tex:12-28](../mr/content/computability/computability-theory/coding-computations.tex#L12) | not yet paginated |
+| T324-OLP-0230-B007 | OLP-0230 ·  | [upstream/content/computability/computability-theory/coding-computations.tex:42-44](../upstream/content/computability/computability-theory/coding-computations.tex#L42) | [mr/content/computability/computability-theory/coding-computations.tex:38-40](../mr/content/computability/computability-theory/coding-computations.tex#L38) | not yet paginated |
+| T324-OLP-0231-B005 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:12-25](../upstream/content/computability/computability-theory/normal-form.tex#L12) | [mr/content/computability/computability-theory/normal-form.tex:12-22](../mr/content/computability/computability-theory/normal-form.tex#L12) | not yet paginated |
+| T324-OLP-0231-B006 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:27-36](../upstream/content/computability/computability-theory/normal-form.tex#L27) | [mr/content/computability/computability-theory/normal-form.tex:24-33](../mr/content/computability/computability-theory/normal-form.tex#L24) | not yet paginated |
+| T324-OLP-0231-B007 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:38-54](../upstream/content/computability/computability-theory/normal-form.tex#L38) | [mr/content/computability/computability-theory/normal-form.tex:35-51](../mr/content/computability/computability-theory/normal-form.tex#L35) | not yet paginated |
+| T324-OLP-0231-B011 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:76-82](../upstream/content/computability/computability-theory/normal-form.tex#L76) | [mr/content/computability/computability-theory/normal-form.tex:72-78](../mr/content/computability/computability-theory/normal-form.tex#L72) | not yet paginated |
+| T324-OLP-0231-B013 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:86-88](../upstream/content/computability/computability-theory/normal-form.tex#L86) | [mr/content/computability/computability-theory/normal-form.tex:82-84](../mr/content/computability/computability-theory/normal-form.tex#L82) | not yet paginated |
+| T324-OLP-0231-B014 | OLP-0231 ·  | [upstream/content/computability/computability-theory/normal-form.tex:90-97](../upstream/content/computability/computability-theory/normal-form.tex#L90) | [mr/content/computability/computability-theory/normal-form.tex:86-91](../mr/content/computability/computability-theory/normal-form.tex#L86) | not yet paginated |
+| T324-OLP-0233-B004 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:9-10](../upstream/content/computability/computability-theory/universal-part-function.tex#L9) | [mr/content/computability/computability-theory/universal-part-function.tex:9-10](../mr/content/computability/computability-theory/universal-part-function.tex#L9) | not yet paginated |
+| T324-OLP-0233-B005 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:12-21](../upstream/content/computability/computability-theory/universal-part-function.tex#L12) | [mr/content/computability/computability-theory/universal-part-function.tex:12-21](../mr/content/computability/computability-theory/universal-part-function.tex#L12) | not yet paginated |
+| T324-OLP-0233-B006 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:23-26](../upstream/content/computability/computability-theory/universal-part-function.tex#L23) | [mr/content/computability/computability-theory/universal-part-function.tex:23-27](../mr/content/computability/computability-theory/universal-part-function.tex#L23) | not yet paginated |
+| T324-OLP-0233-B007 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:28-40](../upstream/content/computability/computability-theory/universal-part-function.tex#L28) | [mr/content/computability/computability-theory/universal-part-function.tex:29-41](../mr/content/computability/computability-theory/universal-part-function.tex#L29) | not yet paginated |
+| T324-OLP-0234-B004 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:9-10](../upstream/content/computability/computability-theory/no-universal-function.tex#L9) | [mr/content/computability/computability-theory/no-universal-function.tex:9-10](../mr/content/computability/computability-theory/no-universal-function.tex#L9) | not yet paginated |
+| T324-OLP-0234-B005 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:12-14](../upstream/content/computability/computability-theory/no-universal-function.tex#L12) | [mr/content/computability/computability-theory/no-universal-function.tex:12-15](../mr/content/computability/computability-theory/no-universal-function.tex#L12) | not yet paginated |
+| T324-OLP-0234-B006 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:16-22](../upstream/content/computability/computability-theory/no-universal-function.tex#L16) | [mr/content/computability/computability-theory/no-universal-function.tex:17-23](../mr/content/computability/computability-theory/no-universal-function.tex#L17) | not yet paginated |
+| T324-OLP-0234-B007 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:24-33](../upstream/content/computability/computability-theory/no-universal-function.tex#L24) | [mr/content/computability/computability-theory/no-universal-function.tex:25-35](../mr/content/computability/computability-theory/no-universal-function.tex#L25) | not yet paginated |
+| T324-OLP-0234-B008 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:35-41](../upstream/content/computability/computability-theory/no-universal-function.tex#L35) | [mr/content/computability/computability-theory/no-universal-function.tex:37-43](../mr/content/computability/computability-theory/no-universal-function.tex#L37) | not yet paginated |
+| T324-OLP-0234-B009 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:43-49](../upstream/content/computability/computability-theory/no-universal-function.tex#L43) | [mr/content/computability/computability-theory/no-universal-function.tex:45-51](../mr/content/computability/computability-theory/no-universal-function.tex#L45) | not yet paginated |
+| T324-OLP-0235-B005 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:12-21](../upstream/content/computability/computability-theory/halting-problem.tex#L12) | [mr/content/computability/computability-theory/halting-problem.tex:12-19](../mr/content/computability/computability-theory/halting-problem.tex#L12) | not yet paginated |
+| T324-OLP-0235-B006 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:23-34](../upstream/content/computability/computability-theory/halting-problem.tex#L23) | [mr/content/computability/computability-theory/halting-problem.tex:21-32](../mr/content/computability/computability-theory/halting-problem.tex#L21) | not yet paginated |
+| T324-OLP-0235-B007 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:36-60](../upstream/content/computability/computability-theory/halting-problem.tex#L36) | [mr/content/computability/computability-theory/halting-problem.tex:34-59](../mr/content/computability/computability-theory/halting-problem.tex#L34) | not yet paginated |
+| T324-OLP-0235-B008 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:62-82](../upstream/content/computability/computability-theory/halting-problem.tex#L62) | [mr/content/computability/computability-theory/halting-problem.tex:61-82](../mr/content/computability/computability-theory/halting-problem.tex#L61) | not yet paginated |
+| T324-OLP-0235-B009 | OLP-0235 ·  | [upstream/content/computability/computability-theory/halting-problem.tex:84-99](../upstream/content/computability/computability-theory/halting-problem.tex#L84) | [mr/content/computability/computability-theory/halting-problem.tex:84-99](../mr/content/computability/computability-theory/halting-problem.tex#L84) | not yet paginated |
+| T324-OLP-0236-B009 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:37-48](../upstream/content/computability/computability-theory/russells-paradox.tex#L37) | [mr/content/computability/computability-theory/russells-paradox.tex:38-50](../mr/content/computability/computability-theory/russells-paradox.tex#L38) | not yet paginated |
+| T324-OLP-0236-B011 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:55-73](../upstream/content/computability/computability-theory/russells-paradox.tex#L55) | [mr/content/computability/computability-theory/russells-paradox.tex:57-74](../mr/content/computability/computability-theory/russells-paradox.tex#L57) | not yet paginated |
+
+**Chosen rendering/action:** संगणनक्षमता सिद्धांत / सापेक्ष संगणनक्षमता / आंशिक संगणनक्षम फलन / सार्वत्रिक आंशिक संगणनक्षम फलन
+
+**Confidence/status:** high; direct official computable adjective with source-defined specialist compounds; exact full compounds expert-reviewable; open to correction.
+
+**Please double-check:** Are आंशिक संगणनक्षम and सापेक्ष संगणनक्षमता natural while preserving the source's distinction between partial computability and total computability?
+
+</details>
+
+<details>
+<summary><strong>T325 — s-m-n theorem / program specialization / fixed and remaining inputs</strong> (4 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T325-OLP-0232-B004 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:9-10](../upstream/content/computability/computability-theory/s-m-n.tex#L9) | [mr/content/computability/computability-theory/s-m-n.tex:9-10](../mr/content/computability/computability-theory/s-m-n.tex#L9) | not yet paginated |
+| T325-OLP-0232-B005 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:12-17](../upstream/content/computability/computability-theory/s-m-n.tex#L12) | [mr/content/computability/computability-theory/s-m-n.tex:12-16](../mr/content/computability/computability-theory/s-m-n.tex#L12) | not yet paginated |
+| T325-OLP-0232-B006 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:19-28](../upstream/content/computability/computability-theory/s-m-n.tex#L19) | [mr/content/computability/computability-theory/s-m-n.tex:18-27](../mr/content/computability/computability-theory/s-m-n.tex#L18) | not yet paginated |
+| T325-OLP-0232-B007 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:30-41](../upstream/content/computability/computability-theory/s-m-n.tex#L30) | [mr/content/computability/computability-theory/s-m-n.tex:29-41](../mr/content/computability/computability-theory/s-m-n.tex#L29) | not yet paginated |
+
+**Chosen rendering/action:** s-m-n प्रमेय / कार्यक्रमाचे विशेषीकरण / निश्चित आदाने आणि उरलेली आदाने
+
+**Confidence/status:** medium; source-controlled symbolic theorem with attested component vocabulary; exact specialist phrase expert-reviewable; open to correction.
+
+**Please double-check:** Does the retained symbolic title and the Marathi account clearly distinguish fixed a-inputs from the remaining y-inputs, without suggesting that the function value itself is computed by s^m_n?
+
+</details>
+
+<details>
+<summary><strong>T326 — Russell's paradox / self-membership contradiction / noncomputable diagonal function</strong> (8 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T326-OLP-0236-B004 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:9-10](../upstream/content/computability/computability-theory/russells-paradox.tex#L9) | [mr/content/computability/computability-theory/russells-paradox.tex:9-10](../mr/content/computability/computability-theory/russells-paradox.tex#L9) | not yet paginated |
+| T326-OLP-0236-B005 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:12-16](../upstream/content/computability/computability-theory/russells-paradox.tex#L12) | [mr/content/computability/computability-theory/russells-paradox.tex:12-17](../mr/content/computability/computability-theory/russells-paradox.tex#L12) | not yet paginated |
+| T326-OLP-0236-B006 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:18-20](../upstream/content/computability/computability-theory/russells-paradox.tex#L18) | [mr/content/computability/computability-theory/russells-paradox.tex:19-21](../mr/content/computability/computability-theory/russells-paradox.tex#L19) | not yet paginated |
+| T326-OLP-0236-B007 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:22-32](../upstream/content/computability/computability-theory/russells-paradox.tex#L22) | [mr/content/computability/computability-theory/russells-paradox.tex:23-33](../mr/content/computability/computability-theory/russells-paradox.tex#L23) | not yet paginated |
+| T326-OLP-0236-B008 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:34-35](../upstream/content/computability/computability-theory/russells-paradox.tex#L34) | [mr/content/computability/computability-theory/russells-paradox.tex:35-36](../mr/content/computability/computability-theory/russells-paradox.tex#L35) | not yet paginated |
+| T326-OLP-0236-B009 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:37-48](../upstream/content/computability/computability-theory/russells-paradox.tex#L37) | [mr/content/computability/computability-theory/russells-paradox.tex:38-50](../mr/content/computability/computability-theory/russells-paradox.tex#L38) | not yet paginated |
+| T326-OLP-0236-B010 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:50-53](../upstream/content/computability/computability-theory/russells-paradox.tex#L50) | [mr/content/computability/computability-theory/russells-paradox.tex:52-55](../mr/content/computability/computability-theory/russells-paradox.tex#L52) | not yet paginated |
+| T326-OLP-0236-B011 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:55-73](../upstream/content/computability/computability-theory/russells-paradox.tex#L55) | [mr/content/computability/computability-theory/russells-paradox.tex:57-74](../mr/content/computability/computability-theory/russells-paradox.tex#L57) | not yet paginated |
+
+**Chosen rendering/action:** रसेलची विरोधापत्ती / स्वसदस्यत्वातील व्याघात / संगणनक्षम नसलेले विकर्ण फलन
+
+**Confidence/status:** medium; established paradox and name components with source-controlled three-way comparison; expert-reviewable; open to correction.
+
+**Please double-check:** Does विरोधापत्ती mark the set-existence paradox while the target's final computability case remains a noncomputability result rather than a set-theoretic paradox?
 
 </details>
 
@@ -18887,5 +19096,65 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; confirmed by the universal e parameter in the immediately preceding normal-form definition; the mathematical correction is confined to prose; open to correction.
 
 **Please double-check:** Does the corrected proof use that every natural e indexes a partial recursive function while still deriving the diagonal contradiction for h?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-013 — confirmed-frozen-source-program-parameter typo with documented math projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-013-OLP-0232 | OLP-0232 ·  | [upstream/content/computability/computability-theory/s-m-n.tex:33-40](../upstream/content/computability/computability-theory/s-m-n.tex#L33) | [mr/content/computability/computability-theory/s-m-n.tex:33-40](../mr/content/computability/computability-theory/s-m-n.tex#L33) | not yet paginated |
+
+**Chosen rendering/action:** Use e in both explanatory references and render the English typo as conditional Marathi 'जर'; leave the theorem formula unchanged. Unit-specific QA projections reconstruct the two frozen math tokens for comparison, and adjacent reader note OLCMP-013 records the correction.
+
+**Confidence/status:** high; confirmed by the theorem formula and the immediately preceding explanation's program e; open to correction.
+
+**Please double-check:** Do both corrected explanatory references now denote the same program e that the theorem takes as its first index input?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-014 — confirmed-frozen-source-omitted-partial-qualifier in unary-coded example</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-014-OLP-0233 | OLP-0233 ·  | [upstream/content/computability/computability-theory/universal-part-function.tex:37-40](../upstream/content/computability/computability-theory/universal-part-function.tex#L37) | [mr/content/computability/computability-theory/universal-part-function.tex:37-40](../mr/content/computability/computability-theory/universal-part-function.tex#L37) | not yet paginated |
+
+**Chosen rendering/action:** Translate the conclusion as one-place partial recursive function and add an adjacent reader note. All protected math, macro, label and reference tokens remain unchanged.
+
+**Confidence/status:** high; Mathematical partiality is clear; the frozen English may use recursive broadly, so this is a terminological precision rather than a claimed defect in the coding construction.; open to correction.
+
+**Please double-check:** Does the target make clear that coding the input tuple preserves partial recursiveness but need not make g total?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-015 — confirmed-frozen-source-universal-versus-total word slip in section opening</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-015-OLP-0234 | OLP-0234 ·  | [upstream/content/computability/computability-theory/no-universal-function.tex:12-14](../upstream/content/computability/computability-theory/no-universal-function.tex#L12) | [mr/content/computability/computability-theory/no-universal-function.tex:12-15](../mr/content/computability/computability-theory/no-universal-function.tex#L12) | not yet paginated |
+
+**Chosen rendering/action:** Render the first clause as a partial computable function universal for the partial computable functions, with an adjacent reader note. Preserve all protected formulas, macros, identifiers and references.
+
+**Confidence/status:** high; confirmed by the preceding theorem and the immediate contrast in this section; prose-only correction; open to correction.
+
+**Please double-check:** Does the corrected opening accurately contrast the existing partial universal evaluator with the impossibility of a total universal computable evaluator?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-016 — confirmed-frozen-source-undefined-capital-in-Russell-paradox-self-membership-formula</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-016-OLP-0236 | OLP-0236 ·  | [upstream/content/computability/computability-theory/russells-paradox.tex:15-20](../upstream/content/computability/computability-theory/russells-paradox.tex#L15) | [mr/content/computability/computability-theory/russells-paradox.tex:15-21](../mr/content/computability/computability-theory/russells-paradox.tex#L15) | not yet paginated |
+
+**Chosen rendering/action:** Use S notin S in the Marathi self-membership clause, preserve the rest of the three-way comparison, and add reader note OLCMP-016. A unit-specific QA projection restores the frozen X only for formal comparison.
+
+**Confidence/status:** high; confirmed directly by substituting S into its displayed definition; open to correction.
+
+**Please double-check:** Does the first comparison now state S in S iff S notin S, distinct from the function and computability comparisons that follow?
 
 </details>

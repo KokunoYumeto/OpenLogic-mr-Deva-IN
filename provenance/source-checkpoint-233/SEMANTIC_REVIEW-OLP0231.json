@@ -1,0 +1,44 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0231",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of the theorem, proof sketch, explanation and index argument; exact formula, macro and identifier parity. No independent human or native-speaker review is claimed.",
+  "scope": "Model-independent normal-form search, primitive-recursive T/U representation, single unbounded search, adopted enumeration and infinitely many indices.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "Given descriptions and verifiable computation records, one can search records, test them for f(x), and extract the value. A primitive recursive relation T(e,x,s) and primitive recursive function U(s) represent every partial computable f for some e and every x using least-s search.",
+      "checks": "The three search steps, quantifier order, partial computable rather than only total computable, and both primitive-recursive claims remain explicit."
+    },
+    {
+      "blocks": [
+        7,
+        8,
+        9
+      ],
+      "reverse_paraphrase": "In any chosen model, descriptions and computation sequences can be coded numerically. T recognizes a run code s for index e and input x, and U extracts its result; both can be made primitive recursive. A rigorous proof would fix a model, while many applications need only computability of T and U plus totality of U. Least-s search finds a run and U returns its output when found.",
+      "checks": "The respective roles of e, x and s, stronger theorem versus weaker application requirements, and undefined search when no record is found are preserved."
+    },
+    {
+      "blocks": [
+        10,
+        11,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "For the partial-recursive model Kleene used, one unbounded-search operator suffices for a normal form. After fixing suitable T and U, their displayed equation defines the enumeration φ_e. Every partial computable function has infinitely many indices because harmless changes to a description yield distinct indices with the same input-output behavior.",
+      "checks": "The single-use claim is confined to the stated model, the defining equation and examples 0=0 and counting to 5 remain exact, and index multiplicity is preserved."
+    }
+  ],
+  "source_observations": [
+    "T321 and MR-P154 support the established प्रमाण रूप wording; the full Kleene theorem title and exact T/U construction are fixed by OpenLogic.",
+    "The source's proof sketch asserts primitive recursiveness of both T and U across the described coding and then states weaker sufficient hypotheses for many applications; the translation keeps this distinction."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "schema": "openlogic-incremental-source-checkpoint/1",
+  "checkpoint_id": "mr-Deva-IN-source-233-20260925",
+  "generated_utc": "2026-09-25T03:10:12.177686Z",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "base_checkpoint": {
+    "path": "provenance/source-checkpoint-224/SOURCE_CHECKPOINT.json",
+    "bytes": 24330,
+    "sha256": "8c4a77136251028a0f2163a7f0a83b0c2d0fd57b54b04179ab01b2f33d6d7b5d"
+  },
+  "scope": {
+    "translated_source_units": 233,
+    "total_source_units": 722,
+    "remaining_source_units": 489,
+    "aligned_content_segments": 2333,
+    "complete_source_chapters": 23,
+    "complete_reader_chapters": 20,
+    "first_incremental_unit": "OLP-0228",
+    "last_unit": "OLP-0236",
+    "next_unit": "OLP-0237",
+    "complete_edition": false
+  },
+  "translation_files": [
+    {
+      "unit_id": "OLP-0228",
+      "path": "mr/content/computability/computability-theory/computability-theory.tex",
+      "bytes": 1209,
+      "sha256": "a314a001f4d41ef37850fed47a78269fe176d14ac491a1aa7f3011f4407432ae",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0229",
+      "path": "mr/content/computability/computability-theory/introduction.tex",
+      "bytes": 6768,
+      "sha256": "f9dda80702e4887c5d56aafffecc979ee52dc7eb25ee33db3f0e9a3e11425b4b",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0230",
+      "path": "mr/content/computability/computability-theory/coding-computations.tex",
+      "bytes": 4380,
+      "sha256": "7ba79248f47966fbb91306938b43bb4a00b87f58934cb7c43268a8156c0c038a",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0231",
+      "path": "mr/content/computability/computability-theory/normal-form.tex",
+      "bytes": 8248,
+      "sha256": "8bdb35431289bc1fe4ba6a6156d697c9b794a8f0934cdf30ca62b2c3b4c4c4a2",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0232",
+      "path": "mr/content/computability/computability-theory/s-m-n.tex",
+      "bytes": 3130,
+      "sha256": "2d4094dbb9dddb753efaaf8f61e6e9c8534501a7fbd21a1a04e63c590d561671",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0233",
+      "path": "mr/content/computability/computability-theory/universal-part-function.tex",
+      "bytes": 3263,
+      "sha256": "e6e77bca346a4e4bc548c05caa8ac8cb20afc6d15b5477808d36fca2abae3082",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0234",
+      "path": "mr/content/computability/computability-theory/no-universal-function.tex",
+      "bytes": 3930,
+      "sha256": "6a9b00585be34bcc2578be47eda62b6444532f71f8044f423b7cd14ccad0037a",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0235",
+      "path": "mr/content/computability/computability-theory/halting-problem.tex",
+      "bytes": 6867,
+      "sha256": "dc3cd03679d5fd2c008d320f7d6e0510b4482ff3f243837d9a9793396c37c934",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0236",
+      "path": "mr/content/computability/computability-theory/russells-paradox.tex",
+      "bytes": 6103,
+      "sha256": "8d96c154e4730391cec9c470e808fd88c8dc5822f133cce5c4fdfde7788c3d33",
+      "role": "new translated source"
+    }
+  ],
+  "semantic_reviews": [
+    {
+      "unit_id": "OLP-0228",
+      "path": "provenance/source-checkpoint-233/SEMANTIC_REVIEW-OLP0228.json",
+      "bytes": 1435,
+      "sha256": "9598b915c1097cc533a524795f895058d71f6c3b7a736727a70e722b8f375246"
+    },
+    {
+      "unit_id": "OLP-0229",
+      "path": "provenance/source-checkpoint-233/SEMANTIC_REVIEW-OLP0229.json",
+      "bytes": 2936,
+      "sha256": "5c398356b5d48d200865fbad4ad8014493f3a61ff2046bf656672381c44da6e6"
+    },
+    {
+      "unit_id": "OLP-0230",
+      "path": "provenance/source-checkpoint-233/SEMANTIC_REVIEW-OLP0230.json",
+      "bytes": 2148,
+      "sha256": "e1f7331de0c518652c808eaa2b09438667eafcea6b86153742b119d421838223"
+    },
+    {
+      "unit_id": "OLP-0231",
+      "path": "provenance/source-checkpoint-233/SEMANTIC_REVIEW-OLP0231.json",
+      "bytes": 2966,
+      "sha256": "ac023466c3065fd3579479465594e719923ad295324affbeb38ebdcf5e7b1aae"
+    },
+    {
+      "unit_id": "OLP-0232",
+      "path": "provenance/source-checkpoint-233/SEMANTIC_REVIEW-OLP0232.json",
+      "bytes": 2199,
+      "sha256": "2d1ae82a2ae9da3c91d3154c55f7666017a5e63b9e5da90a552bf85539f68580"
+    },
+    {
+      "unit_id": "OLP-0233",
+      "path": "provenance/source-checkpoint-233/SEMANTIC_REVIEW-OLP0233.json",
+      "bytes": 2066,
+      "sha256": "a96314e60a9106dc5bae33f70500788d2048df967f8f0a564f20aa30ed497141"
+    },
+    {
+      "unit_id": "OLP-0234",
+      "path": "provenance/source-checkpoint-233/SEMANTIC_REVIEW-OLP0234.json",
+      "bytes": 2105,
+      "sha256": "fdbd93748acb7f843a98c4017414353507fb6c31eb1fccf514aa1ed9aa025973"
+    },
+    {
+      "unit_id": "OLP-0235",
+      "path": "provenance/source-checkpoint-233/SEMANTIC_REVIEW-OLP0235.json",
+      "bytes": 2763,
+      "sha256": "2860caaef2ffb2f7f8fbe4fc988c0f431b99a26f458626b283838b6c74ed3179"
+    },
+    {
+      "unit_id": "OLP-0236",
+      "path": "provenance/source-checkpoint-233/SEMANTIC_REVIEW-OLP0236.json",
+      "bytes": 2667,
+      "sha256": "f6977e51017dad24292cd3ea6a856ede661c876614e6f21bbc285c99c945951d"
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "OLCMP-013",
+      "unit_id": "OLP-0232",
+      "classification": "confirmed-frozen-source-program-parameter typo with documented math projection",
+      "finding": "The theorem and surrounding explanation use e as the input program index, but the same explanation twice switches to an undefined x: s^m_n(x,a-vector) and 'It you think of x'. The latter sentence also begins with the obvious English It/If typo.",
+      "action": "Use e in both explanatory references and render the English typo as conditional Marathi 'जर'; leave the theorem formula unchanged. Unit-specific QA projections reconstruct the two frozen math tokens for comparison, and adjacent reader note OLCMP-013 records the correction."
+    },
+    {
+      "id": "OLCMP-014",
+      "unit_id": "OLP-0233",
+      "classification": "confirmed-frozen-source-omitted-partial-qualifier in unary-coded example",
+      "finding": "The example assumes f(x,y,z) is a three-place partial recursive function but concludes g(x) defined from it is a unary recursive function. If recursive is read in the chapter's established total-function sense, the conclusion does not follow: g may be undefined where f is undefined.",
+      "action": "Translate the conclusion as one-place partial recursive function and add an adjacent reader note. All protected math, macro, label and reference tokens remain unchanged."
+    },
+    {
+      "id": "OLCMP-015",
+      "unit_id": "OLP-0234",
+      "classification": "confirmed-frozen-source-universal-versus-total word slip in section opening",
+      "finding": "The opening says a partial computable function is 'total for the partial computable functions', which conflicts with the preceding universal-partial-function theorem and the following claim that no total universal computable function exists. The intended modifier is universal, not total.",
+      "action": "Render the first clause as a partial computable function universal for the partial computable functions, with an adjacent reader note. Preserve all protected formulas, macros, identifiers and references."
+    },
+    {
+      "id": "OLCMP-016",
+      "unit_id": "OLP-0236",
+      "classification": "confirmed-frozen-source-undefined-capital-in-Russell-paradox-self-membership-formula",
+      "finding": "After defining S={x:x notin x}, the frozen first comparison says S in S iff X notin S. Capital X is unintroduced; substituting S yields the Russell contradiction the same paragraph asserts.",
+      "action": "Use S notin S in the Marathi self-membership clause, preserve the rest of the three-way comparison, and add reader note OLCMP-016. A unit-specific QA projection restores the frozen X only for formal comparison."
+    }
+  ],
+  "qa": {
+    "units_checked": 9,
+    "unit_structural_failures": 0,
+    "formula_macro_token_identifier_reference_parity": true,
+    "semantic_reviews_passed": 9,
+    "cross_package_receipt": {
+      "path": "provenance/source-checkpoint-233/CROSS_PACKAGE_QA-WORKING.json",
+      "bytes": 1325,
+      "sha256": "4859a29632f43c45cfc4efdd43a972fd61f8c7422eb0e0309e780fc5af44a59c",
+      "segment_hashes_replayed": 2333,
+      "result": "passed"
+    },
+    "independent_human_or_native_speaker_review_claimed": false,
+    "tex_reader_build_run_for_increment": false
+  },
+  "synchronized_provenance": {
+    "receipt": "provenance/PROVENANCE_SYNC.json",
+    "canon_sources": 111,
+    "canon_passages": 156,
+    "term_decisions": 326,
+    "aligned_segments": 2333,
+    "expert_review_decisions": {
+      "records": 474,
+      "path": "provenance/EXPERT_REVIEW_DECISIONS.jsonl",
+      "bytes": 3253301,
+      "sha256": "0e347044ef108279790670d902cbb299efece582e46863d0a0c2e7576a5fa6b9"
+    },
+    "expert_review_occurrences": {
+      "records": 12515,
+      "path": "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl",
+      "bytes": 37593363,
+      "sha256": "34b02e5d1fb61b772efc1b139dbf003f56286732478455f047fdd6f7de0de5b2"
+    },
+    "canonical_decision_qa": {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "bytes": 3535,
+      "sha256": "ebd68b9bcc9d930a5a0eb7661040e9a2545b3b8a0721800efd500fa3b0b8ed46",
+      "deterministic_second_run_identical": true
+    }
+  },
+  "latest_public_reader": {
+    "tag": "twenty-chapters-v0.9",
+    "last_unit": "OLP-0197",
+    "translated_units": 194,
+    "pages": 264,
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/twenty-chapters-v0.9",
+    "zenodo_doi": "10.5281/zenodo.22864626"
+  },
+  "packaging_observations": {
+    "path": "provenance/source-checkpoint-233/PACKAGING_OBSERVATIONS-TWENTY-CHAPTERS-v0.9.json",
+    "bytes": 2420,
+    "sha256": "c234df36fafd075fbe42ac2e323648681e3e164199aafe62126bc482277bffe2",
+    "disposition": "Apply both corrections at the next full-source package checkpoint; preserve inherited access."
+  },
+  "status": "source-complete-and-reviewed; coherent reader refresh pending"
+}

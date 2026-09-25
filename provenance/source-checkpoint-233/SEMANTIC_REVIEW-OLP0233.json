@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0233",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of universality and coded-input arity, with exact formula, macro and reference parity. No independent human or native-speaker review is claimed.",
+  "scope": "Existence and defining formula of the universal partial computable function, effective enumeration and encoded multi-input functions.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "There is a partial computable binary Un such that every unary partial computable f has some natural index e with f(x) partially equal to Un(e,x) for every x. Defining Un via Kleene's T/U normal form proves the theorem.",
+      "checks": "The existential e follows each f, equality is partial for every x, and the exact displayed T/U formula and cross-reference are preserved."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "The sequence f_0,f_1,... effectively enumerates every partial computable function and its evaluator is uniform in e and x. Coding number sequences generalizes from unary functions to more inputs. If f is a three-place partial recursive function, decoding a single input x into three components yields a unary partial recursive g.",
+      "checks": "Universality and uniformity are distinct, binary-versus-unary arity is explicit, and OLCMP-014 keeps the possible undefinedness of g rather than implying totality."
+    }
+  ],
+  "source_observations": [
+    "OLCMP-014 documents an omitted partial qualifier in the frozen unary-coded example. The target changes only explanatory prose; protected formulas remain exact.",
+    "T324 supports the established partial-computability compound, while the universal property and code construction come from OpenLogic."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

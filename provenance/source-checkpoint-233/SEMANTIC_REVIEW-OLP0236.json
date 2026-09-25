@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0236",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of the three comparisons and four partial-function regions, with exact formula and macro parity after one bounded documented source correction. No independent human or native-speaker review is claimed.",
+  "scope": "Russell self-membership, the all-functions analogue, computability diagonalization, and the total/partial versus computable/noncomputable classification exercise.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "For S={x:x notin x}, self-membership yields S in S iff S notin S, so no such set exists and a set of all sets conflicts with set-theory axioms.",
+      "checks": "OLCMP-016 corrects the frozen undefined capital X to S. The paradox is kept distinct from the asserted contradiction and the set-existence conclusion."
+    },
+    {
+      "blocks": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "An alleged F from all functions to {0,1}, defined by whether f belongs to its own domain and yields zero, would make F(F)=0 iff F(F)=1, so it is not a function on that putative domain. For an enumeration of partial computable f_x, a total G returning one when f_x(x) halts at zero is a set-theoretic function but cannot be computable, since G=f_k would yield G(k)=1 iff G(k)=0.",
+      "checks": "The two distinct conclusions, conditional test in each case formula, total type of G, and absence of a set-theoretic paradox in the third case are preserved."
+    },
+    {
+      "blocks": [
+        11
+      ],
+      "reverse_paraphrase": "Partial N-to-N functions occupy four regions according to totality and partial computability: total computable, partial computable but not total, total not computable, and neither. The reader is asked to draw two overlapping regions and give an example in each.",
+      "checks": "The four categories, default use of function for total functions, overlapping-region exercise and all displayed N symbols remain."
+    }
+  ],
+  "source_observations": [
+    "T326 follows the edition's established विरोधापत्ती for paradox and रसेल surname form. The exact self-membership and diagonal arguments come from OpenLogic.",
+    "OLCMP-016 documents the frozen X/S slip; the target's S formula is projected back only for formal source comparison."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}
