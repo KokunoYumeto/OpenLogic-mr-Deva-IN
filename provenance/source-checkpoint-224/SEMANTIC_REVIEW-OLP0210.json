@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0210",
+  "method": "Same-agent English/Marathi close reading, clause-by-clause reverse paraphrase, terminology-evidence review and structural QA. No independent human or native-speaker review is claimed.",
+  "scope": "The introductory motivation for recursive functions, computable sets and relations, characteristic functions, the primitive/partial/general recursive hierarchy, and equivalence with other accepted computation models.",
+  "samples": [
+    {
+      "blocks": [
+        4
+      ],
+      "reverse_paraphrase": "Introduction.",
+      "checks": "The section role is preserved and परिचय is kept distinct from prefatory प्रस्तावना."
+    },
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "A mathematical theory of computability first needs a model. Historically, numerical computation and computable number-theoretic functions were paradigmatic. Familiar examples such as addition, multiplication and natural-number exponentiation can be recursively defined, motivating a general definition and the central simple pattern called primitive recursion.",
+      "checks": "The historical contrast with symbol-processing computers, the type f: Nat^n to Nat, all three arithmetic examples, recursive definability and the special status of primitive recursion are preserved."
+    },
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "A set or relation is computable when membership can be computed. Its characteristic function reduces that discussion to computable functions. Primitive recursive relations can then be defined; the example says that n divides m without remainder.",
+      "checks": "The relation clause remains biconditional. The Marathi quotation places m as dividend and n as divisor, preserving the source direction n divides m. The exact official term जातिबोधक फल is used."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "Primitive recursive functions are not all computable number-theoretic functions. Unbounded search leads to partial recursive functions and a related definition gives general recursive functions. General recursive functions are computable and everywhere defined, exactly the total partial-recursive functions. Recursive functions simulate Turing machines, lambda calculus and every other computation model, so they form an accepted model of computation.",
+      "checks": "Primitive, partial and general recursive classes remain distinct; totality is rendered as everywhere defined; the exact-characterization direction and simulation claim are preserved without strengthening them."
+    }
+  ],
+  "source_observations": [
+    "MR-P137 directly attests characteristic function as जातिबोधक फल and the set-specific compound संचाचे जातिबोधक फल.",
+    "MR-P138 directly supports आंशिक and the primitive stem आदिम in mathematical terminology, but does not independently attest the full recursive-function class names.",
+    "MR-P139 directly supports अपरिबद्ध; the algorithmic compound अपरिबद्ध शोध remains a transparent, source-controlled extension.",
+    "MR-P131 directly attests ट्यूरिंग यंत्र and सामान्य आवर्ती फलन in authoritative Marathi foundations prose; the edition retains its established पुनरावर्ती family.",
+    "No exact official Marathi entry was found for lambda calculus, so लॅम्डा कलन remains explicitly provisional."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact compounds आंशिक पुनरावर्ती फलन, सामान्य पुनरावर्ती फलन, अपरिबद्ध शोध and लॅम्डा कलन remain expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
-This view contains 41 urgent/high decisions and
-1081 current occurrences. Normal and low items remain in the full index.
+This view contains 42 urgent/high decisions and
+1092 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -218,6 +218,8 @@ This view contains 41 urgent/high decisions and
 | `T013-OLP-0202-B009` | `OLP-0202` |  | 59-64 | 59-64 | pending |
 | `T013-OLP-0205-B007` | `OLP-0205` |  | 39-46 | 39-47 | pending |
 | `T013-OLP-0206-B008` | `OLP-0206` |  | 23-26 | 23-27 | pending |
+| `T013-OLP-0210-B005` | `OLP-0210` |  | 12-28 | 12-27 | pending |
+| `T013-OLP-0210-B007` | `OLP-0210` |  | 41-52 | 40-51 | pending |
 
 ## T014 — perfect number → परिपूर्ण संख्या
 
@@ -288,6 +290,7 @@ This view contains 41 urgent/high decisions and
 | `T022-OLP-0030-B009` | `OLP-0030` | 4.3 कँटर यांची नागमोडी पद्धत | 78-112 | 79-114 | 40–42 |
 | `T022-OLP-0031-B018` | `OLP-0031` | 4.4 जोडीकरण फलने आणि संकेतांक | 111-113 | 115-117 | 42–43 |
 | `T022-OLP-0128-B007` | `OLP-0128` | 13.2 सिद्धतेचा आराखडा | 34-47 | 31-46 | 171–172 |
+| `T022-OLP-0210-B006` | `OLP-0210` |  | 30-39 | 29-38 | pending |
 
 ## T023 — sequence/string/word → अनुक्रम / चिन्हमाला / शब्द
 
@@ -374,7 +377,8 @@ This view contains 41 urgent/high decisions and
 | `T023-OLP-0156-B021` | `OLP-0156` | 15.7 रचनाक्रमिका | 182-210 | 180-207 | 202–205 |
 | `T023-OLP-0156-B023` | `OLP-0156` | 15.7 रचनाक्रमिका | 215-219 | 212-216 | 202–205 |
 | `T023-OLP-0206-B012` | `OLP-0206` |  | 59-72 | 59-73 | pending |
-| `T023-OLP-0207-B012` | `OLP-0207` |  | 82-98 | 85-102 | pending |
+| `T023-OLP-0207-B012` | `OLP-0207` |  | 82-98 | 86-103 | pending |
+| `T023-OLP-0220-B005` | `OLP-0220` |  | 12-25 | 12-24 | pending |
 
 ## T026 — contradiction/paradox → व्याघात / विरोधापत्ती
 
@@ -728,6 +732,10 @@ This view contains 41 urgent/high decisions and
 | `T041-OLP-0109-B011` | `OLP-0109` | 11.11 निर्दोषता | 63-71 | 64-71 | 153–156 |
 | `T041-OLP-0109-B012` | `OLP-0109` | 11.11 निर्दोषता | 73-80 | 73-79 | 153–156 |
 | `T041-OLP-0109-B013` | `OLP-0109` | 11.11 निर्दोषता | 82-88 | 81-86 | 153–156 |
+| `T041-OLP-0221-B004` | `OLP-0221` |  | 9-10 | 9-10 | pending |
+| `T041-OLP-0221-B005` | `OLP-0221` |  | 12-19 | 12-18 | pending |
+| `T041-OLP-0221-B006` | `OLP-0221` |  | 21-28 | 20-27 | pending |
+| `T041-OLP-0221-B008` | `OLP-0221` |  | 37-68 | 36-67 | pending |
 
 ## T043 — closure / inverse / restriction / relative product → संवरण / व्युत्क्रम / मर्यादन / सापेक्ष गुणाकार
 
@@ -1450,6 +1458,20 @@ This view contains 41 urgent/high decisions and
 | Occurrence | Unit | Section | Source line | Target line | PDF page |
 |---|---|---|---|---|---|
 | `T289-OLP-0197-B013` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | 119-121 | 118-120 | 259–260 |
+
+## T304 — lambda calculus / simulate a model of computation → लॅम्डा कलन / संगणन-प्रतिमानाचे अनुकरण करणे
+
+**Priority:** `high` · **confidence:** `low`
+
+**Why:** Legacy status: source-controlled transparent rendering; exact specialist compounds unattested; high-priority expert review useful. Authority status: The listed passages were actually consulted; their stated limitations remain controlling.
+
+**Please double-check:** Please double-check: Is लॅम्डा कलन the conventional Marathi name, and is अनुकरण करणे sufficiently precise for computational simulation?
+
+| Occurrence | Unit | Section | Source line | Target line | PDF page |
+|---|---|---|---|---|---|
+| `T304-OLP-0210-B007` | `OLP-0210` |  | 41-52 | 40-51 | pending |
+| `T304-OLP-0222-B007` | `OLP-0222` |  | 57-66 | 55-63 | pending |
+| `T304-OLP-0223-B011` | `OLP-0223` |  | 88-96 | 85-92 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

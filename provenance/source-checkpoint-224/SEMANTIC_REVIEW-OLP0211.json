@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0211",
+  "method": "Same-agent English/Marathi close reading, equation-by-equation comparison, reverse paraphrase and structural QA. No independent human or native-speaker review is claimed.",
+  "scope": "Primitive recursion from the successor structure of the natural numbers, the exponential example, recursive definitions of addition and multiplication, and the general f/g scheme.",
+  "samples": [
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "Every natural number is reached from zero by finitely many successor steps. Give h(0), then compute h(x+1) from h(x); iterating this defines h on every natural number.",
+      "checks": "The base and successor clauses, the x=0 and x=1 computations and total-domain conclusion are preserved. The frozen source's final reversed dependency is corrected under OLCMP-001."
+    },
+    {
+      "blocks": [
+        6,
+        7
+      ],
+      "reverse_paraphrase": "The equations h(0)=1 and h(x+1)=2h(x) give h(x)=2^x. Natural-number succession guarantees uniqueness. The definition is recursive because h occurs on the right and primitive because it uses only the immediately preceding value.",
+      "checks": "Every displayed equality and the distinction between recursive and primitive are preserved."
+    },
+    {
+      "blocks": [
+        8,
+        9
+      ],
+      "reverse_paraphrase": "For two-place functions one argument is fixed while recursion runs on the other. Addition recurs by successor. Multiplication applies addition to the preceding product and the fixed first argument; the worked 2-times-3 computation yields 6.",
+      "checks": "The recursion coordinate, dependence on both prior value and other arguments, and every intermediate value remain unchanged."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "In general, f gives the zero case without h and g gives the successor case from the other arguments, y and the immediately preceding h-value. Addition uses identity and successor; multiplication uses zero and addition.",
+      "checks": "All k-place argument lists, the order of g's arguments and the identity, constant, successor and addition specializations are preserved exactly."
+    }
+  ],
+  "source_observations": [
+    "OLCMP-001 documents the frozen source's reversal of the recursive dependency in its first paragraph; the Marathi advances from h(x) to h(x+1), matching clause (b) and the later general scheme.",
+    "T042 directly supports उत्तरवर्ती for successor, while T207 supplies the edition's n-स्थानी pattern.",
+    "T288 and T302 preserve the established आदिम पुनरावर्तन and आदिम पुनरावर्ती family; exact compounds remain expert-reviewable.",
+    "T051 supports एकरूपता फलन and स्थिर फलन in the two final examples."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The source correction is a same-agent mathematical defect determination recorded in the durable issue ledger.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

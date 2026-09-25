@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **204/722 source units**, 2126 aligned translated blocks, 11708 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
+Current scope: **224/722 source units**, 2282 aligned translated blocks, 12344 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -431,7 +431,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T002 — element/member</strong> (331 occurrences; routine priority)</summary>
+<summary><strong>T002 — element/member</strong> (332 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -766,6 +766,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T002-OLP-0196-B033 | OLP-0196 · 20.5 PA ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-228](../upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex#L222) | [mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:226-233](../mr/content/model-theory/models-of-arithmetic/models-of-pa.tex#L226) | 256–259 |
 | T002-OLP-0197-B006 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L25) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L24) | 259–260 |
 | T002-OLP-0197-B008 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L42) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L41) | 259–260 |
+| T002-OLP-0210-B006 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:30-39](../upstream/content/computability/recursive-functions/introduction.tex#L30) | [mr/content/computability/recursive-functions/introduction.tex:29-38](../mr/content/computability/recursive-functions/introduction.tex#L29) | not yet paginated |
 
 **Chosen rendering/action:** घटक / सदस्य
 
@@ -1405,7 +1406,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T008 — natural numbers</strong> (193 occurrences; routine priority)</summary>
+<summary><strong>T008 — natural numbers</strong> (196 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1602,6 +1603,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T008-OLP-0197-B010 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:100-105](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L100) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:100-104](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L100) | 259–260 |
 | T008-OLP-0197-B011 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L107) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L106) | 259–260 |
 | T008-OLP-0197-B012 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L112) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L111) | 259–260 |
+| T008-OLP-0211-B005 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L12) | [mr/content/computability/recursive-functions/primitive-recursion.tex:12-25](../mr/content/computability/recursive-functions/primitive-recursion.tex#L12) | not yet paginated |
+| T008-OLP-0211-B006 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:26-41](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L26) | [mr/content/computability/recursive-functions/primitive-recursion.tex:27-42](../mr/content/computability/recursive-functions/primitive-recursion.tex#L27) | not yet paginated |
+| T008-OLP-0213-B008 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:37-42](../upstream/content/computability/recursive-functions/pr-functions.tex#L37) | [mr/content/computability/recursive-functions/pr-functions.tex:38-44](../mr/content/computability/recursive-functions/pr-functions.tex#L38) | not yet paginated |
 
 **Chosen rendering/action:** नैसर्गिक संख्या
 
@@ -1828,7 +1832,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T011 — syntax</strong> (16 occurrences; medium priority)</summary>
+<summary><strong>T011 — syntax</strong> (17 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1848,6 +1852,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T011-OLP-0149-B004 | OLP-0149 · 15 प्रथम-क्रम तर्कशास्त्राची विन्यासमीमांसा — प्रकरण-प्रस्तावना | [upstream/content/first-order-logic/syntax-and-semantics/syntax.tex:8-8](../upstream/content/first-order-logic/syntax-and-semantics/syntax.tex#L8) | [mr/content/first-order-logic/syntax-and-semantics/syntax.tex:8-8](../mr/content/first-order-logic/syntax-and-semantics/syntax.tex#L8) | 194 |
 | T011-OLP-0150-B006 | OLP-0150 · 15.1 परिचय | [upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31](../upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex#L13) | [mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30](../mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex#L13) | 194 |
 | T011-OLP-0166-B005 | OLP-0166 · 16.7 चिन्हार्थविषयक संकल्पना | [upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23](../upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L12) | [mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23](../mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L12) | 220–221 |
+| T011-OLP-0209-B005 | OLP-0209 ·  | [upstream/content/computability/recursive-functions/recursive-functions.tex:10-15](../upstream/content/computability/recursive-functions/recursive-functions.tex#L10) | [mr/content/computability/recursive-functions/recursive-functions.tex:10-15](../mr/content/computability/recursive-functions/recursive-functions.tex#L10) | not yet paginated |
 
 **Chosen rendering/action:** विन्यासमीमांसा
 
@@ -1920,7 +1925,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T013 — model (model theory)</strong> (106 occurrences; high priority)</summary>
+<summary><strong>T013 — model (model theory)</strong> (108 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2030,6 +2035,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T013-OLP-0202-B009 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:59-64](../upstream/content/model-theory/interpolation/definability.tex#L59) | [mr/content/model-theory/interpolation/definability.tex:59-64](../mr/content/model-theory/interpolation/definability.tex#L59) | not yet paginated |
 | T013-OLP-0205-B007 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:39-46](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L39) | [mr/content/model-theory/lindstrom/abstract-logics.tex:39-47](../mr/content/model-theory/lindstrom/abstract-logics.tex#L39) | not yet paginated |
 | T013-OLP-0206-B008 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:23-26](../upstream/content/model-theory/lindstrom/ls-property.tex#L23) | [mr/content/model-theory/lindstrom/ls-property.tex:23-27](../mr/content/model-theory/lindstrom/ls-property.tex#L23) | not yet paginated |
+| T013-OLP-0210-B005 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:12-28](../upstream/content/computability/recursive-functions/introduction.tex#L12) | [mr/content/computability/recursive-functions/introduction.tex:12-27](../mr/content/computability/recursive-functions/introduction.tex#L12) | not yet paginated |
+| T013-OLP-0210-B007 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:41-52](../upstream/content/computability/recursive-functions/introduction.tex#L41) | [mr/content/computability/recursive-functions/introduction.tex:40-51](../mr/content/computability/recursive-functions/introduction.tex#L40) | not yet paginated |
 
 **Chosen rendering/action:** प्रतिमान
 
@@ -2071,7 +2078,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T015 — proof</strong> (116 occurrences; routine priority)</summary>
+<summary><strong>T015 — proof</strong> (118 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2191,6 +2198,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T015-OLP-0156-B031 | OLP-0156 · 15.7 रचनाक्रमिका | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:263-265](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L263) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:258-260](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L258) | 202–205 |
 | T015-OLP-0156-B032 | OLP-0156 · 15.7 रचनाक्रमिका | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:267-269](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L267) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:262-264](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L262) | 202–205 |
 | T015-OLP-0157-B012 | OLP-0157 · 15.8 मुक्त चल आणि वाक्य | [upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46](../upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex#L43) | [mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46](../mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex#L43) | 205–206 |
+| T015-OLP-0213-B017 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:125-131](../upstream/content/computability/recursive-functions/pr-functions.tex#L125) | [mr/content/computability/recursive-functions/pr-functions.tex:123-128](../mr/content/computability/recursive-functions/pr-functions.tex#L123) | not yet paginated |
+| T015-OLP-0216-B020 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:151-153](../upstream/content/computability/recursive-functions/examples.tex#L151) | [mr/content/computability/recursive-functions/examples.tex:152-154](../mr/content/computability/recursive-functions/examples.tex#L152) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धता
 
@@ -2654,7 +2663,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T022 — tuple</strong> (31 occurrences; high priority)</summary>
+<summary><strong>T022 — tuple</strong> (32 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2689,6 +2698,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T022-OLP-0030-B009 | OLP-0030 · 4.3 कँटर यांची नागमोडी पद्धत | [upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:78-112](../upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex#L78) | [mr/content/sets-functions-relations/size-of-sets/zig-zag.tex:79-114](../mr/content/sets-functions-relations/size-of-sets/zig-zag.tex#L79) | 40–42 |
 | T022-OLP-0031-B018 | OLP-0031 · 4.4 जोडीकरण फलने आणि संकेतांक | [upstream/content/sets-functions-relations/size-of-sets/pairing.tex:111-113](../upstream/content/sets-functions-relations/size-of-sets/pairing.tex#L111) | [mr/content/sets-functions-relations/size-of-sets/pairing.tex:115-117](../mr/content/sets-functions-relations/size-of-sets/pairing.tex#L115) | 42–43 |
 | T022-OLP-0128-B007 | OLP-0128 · 13.2 सिद्धतेचा आराखडा | [upstream/content/first-order-logic/completeness/outline.tex:34-47](../upstream/content/first-order-logic/completeness/outline.tex#L34) | [mr/content/first-order-logic/completeness/outline.tex:31-46](../mr/content/first-order-logic/completeness/outline.tex#L31) | 171–172 |
+| T022-OLP-0210-B006 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:30-39](../upstream/content/computability/recursive-functions/introduction.tex#L30) | [mr/content/computability/recursive-functions/introduction.tex:29-38](../mr/content/computability/recursive-functions/introduction.tex#L29) | not yet paginated |
 
 **Chosen rendering/action:** क्रमित घटकसमूह
 
@@ -2699,7 +2709,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T023 — sequence/string/word</strong> (76 occurrences; high priority)</summary>
+<summary><strong>T023 — sequence/string/word</strong> (77 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2778,7 +2788,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T023-OLP-0156-B021 | OLP-0156 · 15.7 रचनाक्रमिका | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L182) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:180-207](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L180) | 202–205 |
 | T023-OLP-0156-B023 | OLP-0156 · 15.7 रचनाक्रमिका | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:215-219](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L215) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:212-216](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L212) | 202–205 |
 | T023-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
-| T023-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L85) | not yet paginated |
+| T023-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:86-103](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L86) | not yet paginated |
+| T023-OLP-0220-B005 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:12-25](../upstream/content/computability/recursive-functions/sequences.tex#L12) | [mr/content/computability/recursive-functions/sequences.tex:12-24](../mr/content/computability/recursive-functions/sequences.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** अनुक्रम / चिन्हमाला / शब्द
 
@@ -3112,7 +3123,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T030 — relation / binary relation</strong> (179 occurrences; medium priority)</summary>
+<summary><strong>T030 — relation / binary relation</strong> (225 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3294,7 +3305,53 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T030-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
 | T030-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
 | T030-OLP-0206-B013 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:74-86](../upstream/content/model-theory/lindstrom/ls-property.tex#L74) | [mr/content/model-theory/lindstrom/ls-property.tex:75-88](../mr/content/model-theory/lindstrom/ls-property.tex#L75) | not yet paginated |
-| T030-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L85) | not yet paginated |
+| T030-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:86-103](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L86) | not yet paginated |
+| T030-OLP-0210-B006 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:30-39](../upstream/content/computability/recursive-functions/introduction.tex#L30) | [mr/content/computability/recursive-functions/introduction.tex:29-38](../mr/content/computability/recursive-functions/introduction.tex#L29) | not yet paginated |
+| T030-OLP-0217-B005 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:13-25](../upstream/content/computability/recursive-functions/pr-relations.tex#L13) | [mr/content/computability/recursive-functions/pr-relations.tex:13-24](../mr/content/computability/recursive-functions/pr-relations.tex#L13) | not yet paginated |
+| T030-OLP-0217-B006 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:27-36](../upstream/content/computability/recursive-functions/pr-relations.tex#L27) | [mr/content/computability/recursive-functions/pr-relations.tex:26-35](../mr/content/computability/recursive-functions/pr-relations.tex#L26) | not yet paginated |
+| T030-OLP-0217-B007 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:38-45](../upstream/content/computability/recursive-functions/pr-relations.tex#L38) | [mr/content/computability/recursive-functions/pr-relations.tex:37-44](../mr/content/computability/recursive-functions/pr-relations.tex#L37) | not yet paginated |
+| T030-OLP-0217-B014 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:140-156](../upstream/content/computability/recursive-functions/pr-relations.tex#L140) | [mr/content/computability/recursive-functions/pr-relations.tex:142-157](../mr/content/computability/recursive-functions/pr-relations.tex#L142) | not yet paginated |
+| T030-OLP-0218-B005 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L12) | [mr/content/computability/recursive-functions/bounded-minimization.tex:12-25](../mr/content/computability/recursive-functions/bounded-minimization.tex#L12) | not yet paginated |
+| T030-OLP-0218-B006 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:27-35](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L27) | [mr/content/computability/recursive-functions/bounded-minimization.tex:27-35](../mr/content/computability/recursive-functions/bounded-minimization.tex#L27) | not yet paginated |
+| T030-OLP-0218-B007 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:37-39](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L37) | [mr/content/computability/recursive-functions/bounded-minimization.tex:37-39](../mr/content/computability/recursive-functions/bounded-minimization.tex#L37) | not yet paginated |
+| T030-OLP-0218-B008 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L41) | [mr/content/computability/recursive-functions/bounded-minimization.tex:41-63](../mr/content/computability/recursive-functions/bounded-minimization.tex#L41) | not yet paginated |
+| T030-OLP-0218-B009 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L64) | [mr/content/computability/recursive-functions/bounded-minimization.tex:65-70](../mr/content/computability/recursive-functions/bounded-minimization.tex#L65) | not yet paginated |
+| T030-OLP-0219-B007 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:41-44](../upstream/content/computability/recursive-functions/primes.tex#L41) | [mr/content/computability/recursive-functions/primes.tex:43-46](../mr/content/computability/recursive-functions/primes.tex#L43) | not yet paginated |
+| T030-OLP-0219-B008 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:46-62](../upstream/content/computability/recursive-functions/primes.tex#L46) | [mr/content/computability/recursive-functions/primes.tex:48-64](../mr/content/computability/recursive-functions/primes.tex#L48) | not yet paginated |
+| T030-OLP-0220-B007 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:38-41](../upstream/content/computability/recursive-functions/sequences.tex#L38) | [mr/content/computability/recursive-functions/sequences.tex:37-39](../mr/content/computability/recursive-functions/sequences.tex#L37) | not yet paginated |
+| T030-OLP-0220-B008 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:43-46](../upstream/content/computability/recursive-functions/sequences.tex#L43) | [mr/content/computability/recursive-functions/sequences.tex:41-43](../mr/content/computability/recursive-functions/sequences.tex#L41) | not yet paginated |
+| T030-OLP-0220-B009 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:48-72](../upstream/content/computability/recursive-functions/sequences.tex#L48) | [mr/content/computability/recursive-functions/sequences.tex:45-70](../mr/content/computability/recursive-functions/sequences.tex#L45) | not yet paginated |
+| T030-OLP-0220-B010 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:74-77](../upstream/content/computability/recursive-functions/sequences.tex#L74) | [mr/content/computability/recursive-functions/sequences.tex:72-75](../mr/content/computability/recursive-functions/sequences.tex#L72) | not yet paginated |
+| T030-OLP-0220-B011 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:79-88](../upstream/content/computability/recursive-functions/sequences.tex#L79) | [mr/content/computability/recursive-functions/sequences.tex:77-86](../mr/content/computability/recursive-functions/sequences.tex#L77) | not yet paginated |
+| T030-OLP-0220-B012 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:90-94](../upstream/content/computability/recursive-functions/sequences.tex#L90) | [mr/content/computability/recursive-functions/sequences.tex:88-92](../mr/content/computability/recursive-functions/sequences.tex#L88) | not yet paginated |
+| T030-OLP-0220-B013 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:96-107](../upstream/content/computability/recursive-functions/sequences.tex#L96) | [mr/content/computability/recursive-functions/sequences.tex:94-105](../mr/content/computability/recursive-functions/sequences.tex#L94) | not yet paginated |
+| T030-OLP-0220-B014 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:109-117](../upstream/content/computability/recursive-functions/sequences.tex#L109) | [mr/content/computability/recursive-functions/sequences.tex:107-115](../mr/content/computability/recursive-functions/sequences.tex#L107) | not yet paginated |
+| T030-OLP-0220-B015 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:119-122](../upstream/content/computability/recursive-functions/sequences.tex#L119) | [mr/content/computability/recursive-functions/sequences.tex:117-120](../mr/content/computability/recursive-functions/sequences.tex#L117) | not yet paginated |
+| T030-OLP-0220-B016 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:124-140](../upstream/content/computability/recursive-functions/sequences.tex#L124) | [mr/content/computability/recursive-functions/sequences.tex:122-137](../mr/content/computability/recursive-functions/sequences.tex#L122) | not yet paginated |
+| T030-OLP-0220-B019 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:156-168](../upstream/content/computability/recursive-functions/sequences.tex#L156) | [mr/content/computability/recursive-functions/sequences.tex:155-166](../mr/content/computability/recursive-functions/sequences.tex#L155) | not yet paginated |
+| T030-OLP-0220-B020 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:170-176](../upstream/content/computability/recursive-functions/sequences.tex#L170) | [mr/content/computability/recursive-functions/sequences.tex:168-174](../mr/content/computability/recursive-functions/sequences.tex#L168) | not yet paginated |
+| T030-OLP-0220-B021 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:178-185](../upstream/content/computability/recursive-functions/sequences.tex#L178) | [mr/content/computability/recursive-functions/sequences.tex:176-183](../mr/content/computability/recursive-functions/sequences.tex#L176) | not yet paginated |
+| T030-OLP-0220-B022 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:187-192](../upstream/content/computability/recursive-functions/sequences.tex#L187) | [mr/content/computability/recursive-functions/sequences.tex:185-189](../mr/content/computability/recursive-functions/sequences.tex#L185) | not yet paginated |
+| T030-OLP-0221-B005 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:12-19](../upstream/content/computability/recursive-functions/trees.tex#L12) | [mr/content/computability/recursive-functions/trees.tex:12-18](../mr/content/computability/recursive-functions/trees.tex#L12) | not yet paginated |
+| T030-OLP-0221-B007 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:30-35](../upstream/content/computability/recursive-functions/trees.tex#L30) | [mr/content/computability/recursive-functions/trees.tex:29-34](../mr/content/computability/recursive-functions/trees.tex#L29) | not yet paginated |
+| T030-OLP-0221-B008 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:37-68](../upstream/content/computability/recursive-functions/trees.tex#L37) | [mr/content/computability/recursive-functions/trees.tex:36-67](../mr/content/computability/recursive-functions/trees.tex#L36) | not yet paginated |
+| T030-OLP-0221-B009 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:70-75](../upstream/content/computability/recursive-functions/trees.tex#L70) | [mr/content/computability/recursive-functions/trees.tex:69-74](../mr/content/computability/recursive-functions/trees.tex#L69) | not yet paginated |
+| T030-OLP-0222-B005 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:12-47](../upstream/content/computability/recursive-functions/other-recursions.tex#L12) | [mr/content/computability/recursive-functions/other-recursions.tex:12-45](../mr/content/computability/recursive-functions/other-recursions.tex#L12) | not yet paginated |
+| T030-OLP-0222-B006 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:50-55](../upstream/content/computability/recursive-functions/other-recursions.tex#L50) | [mr/content/computability/recursive-functions/other-recursions.tex:48-53](../mr/content/computability/recursive-functions/other-recursions.tex#L48) | not yet paginated |
+| T030-OLP-0222-B007 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:57-66](../upstream/content/computability/recursive-functions/other-recursions.tex#L57) | [mr/content/computability/recursive-functions/other-recursions.tex:55-63](../mr/content/computability/recursive-functions/other-recursions.tex#L55) | not yet paginated |
+| T030-OLP-0223-B005 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/non-pr-functions.tex:12-28](../mr/content/computability/recursive-functions/non-pr-functions.tex#L12) | not yet paginated |
+| T030-OLP-0223-B006 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:30-43](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/non-pr-functions.tex:30-43](../mr/content/computability/recursive-functions/non-pr-functions.tex#L30) | not yet paginated |
+| T030-OLP-0223-B007 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L45) | [mr/content/computability/recursive-functions/non-pr-functions.tex:45-64](../mr/content/computability/recursive-functions/non-pr-functions.tex#L45) | not yet paginated |
+| T030-OLP-0223-B009 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L75) | [mr/content/computability/recursive-functions/non-pr-functions.tex:72-76](../mr/content/computability/recursive-functions/non-pr-functions.tex#L72) | not yet paginated |
+| T030-OLP-0223-B011 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L88) | [mr/content/computability/recursive-functions/non-pr-functions.tex:85-92](../mr/content/computability/recursive-functions/non-pr-functions.tex#L85) | not yet paginated |
+| T030-OLP-0224-B005 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:13-22](../upstream/content/computability/recursive-functions/partial-functions.tex#L13) | [mr/content/computability/recursive-functions/partial-functions.tex:13-21](../mr/content/computability/recursive-functions/partial-functions.tex#L13) | not yet paginated |
+| T030-OLP-0224-B007 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:32-40](../upstream/content/computability/recursive-functions/partial-functions.tex#L32) | [mr/content/computability/recursive-functions/partial-functions.tex:30-37](../mr/content/computability/recursive-functions/partial-functions.tex#L30) | not yet paginated |
+| T030-OLP-0224-B008 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:42-62](../upstream/content/computability/recursive-functions/partial-functions.tex#L42) | [mr/content/computability/recursive-functions/partial-functions.tex:39-57](../mr/content/computability/recursive-functions/partial-functions.tex#L39) | not yet paginated |
+| T030-OLP-0224-B009 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:64-73](../upstream/content/computability/recursive-functions/partial-functions.tex#L64) | [mr/content/computability/recursive-functions/partial-functions.tex:59-69](../mr/content/computability/recursive-functions/partial-functions.tex#L59) | not yet paginated |
+| T030-OLP-0224-B010 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:75-87](../upstream/content/computability/recursive-functions/partial-functions.tex#L75) | [mr/content/computability/recursive-functions/partial-functions.tex:71-81](../mr/content/computability/recursive-functions/partial-functions.tex#L71) | not yet paginated |
+| T030-OLP-0224-B011 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:89-96](../upstream/content/computability/recursive-functions/partial-functions.tex#L89) | [mr/content/computability/recursive-functions/partial-functions.tex:83-90](../mr/content/computability/recursive-functions/partial-functions.tex#L83) | not yet paginated |
+| T030-OLP-0224-B012 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:98-103](../upstream/content/computability/recursive-functions/partial-functions.tex#L98) | [mr/content/computability/recursive-functions/partial-functions.tex:92-97](../mr/content/computability/recursive-functions/partial-functions.tex#L92) | not yet paginated |
+| T030-OLP-0224-B014 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:108-112](../upstream/content/computability/recursive-functions/partial-functions.tex#L108) | [mr/content/computability/recursive-functions/partial-functions.tex:102-106](../mr/content/computability/recursive-functions/partial-functions.tex#L102) | not yet paginated |
 
 **Chosen rendering/action:** संबंध / द्विपदी संबंध
 
@@ -4026,7 +4083,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T041 — tree / root / branch / chain</strong> (75 occurrences; high priority)</summary>
+<summary><strong>T041 — tree / root / branch / chain</strong> (79 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -4105,6 +4162,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T041-OLP-0109-B011 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:63-71](../upstream/content/first-order-logic/tableaux/soundness.tex#L63) | [mr/content/first-order-logic/tableaux/soundness.tex:64-71](../mr/content/first-order-logic/tableaux/soundness.tex#L64) | 153–156 |
 | T041-OLP-0109-B012 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:73-80](../upstream/content/first-order-logic/tableaux/soundness.tex#L73) | [mr/content/first-order-logic/tableaux/soundness.tex:73-79](../mr/content/first-order-logic/tableaux/soundness.tex#L73) | 153–156 |
 | T041-OLP-0109-B013 | OLP-0109 · 11.11 निर्दोषता | [upstream/content/first-order-logic/tableaux/soundness.tex:82-88](../upstream/content/first-order-logic/tableaux/soundness.tex#L82) | [mr/content/first-order-logic/tableaux/soundness.tex:81-86](../mr/content/first-order-logic/tableaux/soundness.tex#L81) | 153–156 |
+| T041-OLP-0221-B004 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:9-10](../upstream/content/computability/recursive-functions/trees.tex#L9) | [mr/content/computability/recursive-functions/trees.tex:9-10](../mr/content/computability/recursive-functions/trees.tex#L9) | not yet paginated |
+| T041-OLP-0221-B005 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:12-19](../upstream/content/computability/recursive-functions/trees.tex#L12) | [mr/content/computability/recursive-functions/trees.tex:12-18](../mr/content/computability/recursive-functions/trees.tex#L12) | not yet paginated |
+| T041-OLP-0221-B006 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:21-28](../upstream/content/computability/recursive-functions/trees.tex#L21) | [mr/content/computability/recursive-functions/trees.tex:20-27](../mr/content/computability/recursive-functions/trees.tex#L20) | not yet paginated |
+| T041-OLP-0221-B008 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:37-68](../upstream/content/computability/recursive-functions/trees.tex#L37) | [mr/content/computability/recursive-functions/trees.tex:36-67](../mr/content/computability/recursive-functions/trees.tex#L36) | not yet paginated |
 
 **Chosen rendering/action:** वृक्ष / मूळ / शाखा / शृंखला
 
@@ -4115,7 +4176,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T042 — least / well-ordered / predecessor / successor</strong> (74 occurrences; routine priority)</summary>
+<summary><strong>T042 — least / well-ordered / predecessor / successor</strong> (89 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -4193,6 +4254,21 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T042-OLP-0196-B031 | OLP-0196 · 20.5 PA ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:210-213](../upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex#L210) | [mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:216-218](../mr/content/model-theory/models-of-arithmetic/models-of-pa.tex#L216) | 256–259 |
 | T042-OLP-0197-B005 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L12) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L12) | 259–260 |
 | T042-OLP-0197-B009 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L77) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L78) | 259–260 |
+| T042-OLP-0211-B005 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L12) | [mr/content/computability/recursive-functions/primitive-recursion.tex:12-25](../mr/content/computability/recursive-functions/primitive-recursion.tex#L12) | not yet paginated |
+| T042-OLP-0211-B009 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L71) | [mr/content/computability/recursive-functions/primitive-recursion.tex:70-95](../mr/content/computability/recursive-functions/primitive-recursion.tex#L70) | not yet paginated |
+| T042-OLP-0211-B010 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:99-130](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L99) | [mr/content/computability/recursive-functions/primitive-recursion.tex:97-127](../mr/content/computability/recursive-functions/primitive-recursion.tex#L97) | not yet paginated |
+| T042-OLP-0212-B007 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:29-46](../upstream/content/computability/recursive-functions/composition.tex#L29) | [mr/content/computability/recursive-functions/composition.tex:30-46](../mr/content/computability/recursive-functions/composition.tex#L30) | not yet paginated |
+| T042-OLP-0213-B008 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:37-42](../upstream/content/computability/recursive-functions/pr-functions.tex#L37) | [mr/content/computability/recursive-functions/pr-functions.tex:38-44](../mr/content/computability/recursive-functions/pr-functions.tex#L38) | not yet paginated |
+| T042-OLP-0213-B014 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:88-114](../upstream/content/computability/recursive-functions/pr-functions.tex#L88) | [mr/content/computability/recursive-functions/pr-functions.tex:86-112](../mr/content/computability/recursive-functions/pr-functions.tex#L86) | not yet paginated |
+| T042-OLP-0213-B018 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:133-162](../upstream/content/computability/recursive-functions/pr-functions.tex#L133) | [mr/content/computability/recursive-functions/pr-functions.tex:130-158](../mr/content/computability/recursive-functions/pr-functions.tex#L130) | not yet paginated |
+| T042-OLP-0214-B005 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L12) | not yet paginated |
+| T042-OLP-0214-B007 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L28) | not yet paginated |
+| T042-OLP-0215-B007 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L37) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L39) | not yet paginated |
+| T042-OLP-0216-B007 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:29-45](../upstream/content/computability/recursive-functions/examples.tex#L29) | [mr/content/computability/recursive-functions/examples.tex:28-44](../mr/content/computability/recursive-functions/examples.tex#L28) | not yet paginated |
+| T042-OLP-0216-B008 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:47-56](../upstream/content/computability/recursive-functions/examples.tex#L47) | [mr/content/computability/recursive-functions/examples.tex:46-55](../mr/content/computability/recursive-functions/examples.tex#L46) | not yet paginated |
+| T042-OLP-0216-B009 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:58-76](../upstream/content/computability/recursive-functions/examples.tex#L58) | [mr/content/computability/recursive-functions/examples.tex:57-75](../mr/content/computability/recursive-functions/examples.tex#L57) | not yet paginated |
+| T042-OLP-0216-B011 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:83-97](../upstream/content/computability/recursive-functions/examples.tex#L83) | [mr/content/computability/recursive-functions/examples.tex:82-97](../mr/content/computability/recursive-functions/examples.tex#L82) | not yet paginated |
+| T042-OLP-0216-B013 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:110-116](../upstream/content/computability/recursive-functions/examples.tex#L110) | [mr/content/computability/recursive-functions/examples.tex:110-116](../mr/content/computability/recursive-functions/examples.tex#L110) | not yet paginated |
 
 **Chosen rendering/action:** लघुतम / सुक्रमित / पूर्ववर्ती / उत्तरवर्ती
 
@@ -4287,7 +4363,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T044 — computability / formula / derivation</strong> (433 occurrences; medium priority)</summary>
+<summary><strong>T044 — computability / formula / derivation</strong> (444 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -4724,6 +4800,17 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T044-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
 | T044-OLP-0202-B007 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:34-44](../upstream/content/model-theory/interpolation/definability.tex#L34) | [mr/content/model-theory/interpolation/definability.tex:33-43](../mr/content/model-theory/interpolation/definability.tex#L33) | not yet paginated |
 | T044-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
+| T044-OLP-0208-B004 | OLP-0208 ·  | [upstream/content/computability/computability.tex:7-7](../upstream/content/computability/computability.tex#L7) | [mr/content/computability/computability.tex:7-7](../mr/content/computability/computability.tex#L7) | not yet paginated |
+| T044-OLP-0208-B005 | OLP-0208 ·  | [upstream/content/computability/computability.tex:9-14](../upstream/content/computability/computability.tex#L9) | [mr/content/computability/computability.tex:9-14](../mr/content/computability/computability.tex#L9) | not yet paginated |
+| T044-OLP-0210-B005 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:12-28](../upstream/content/computability/recursive-functions/introduction.tex#L12) | [mr/content/computability/recursive-functions/introduction.tex:12-27](../mr/content/computability/recursive-functions/introduction.tex#L12) | not yet paginated |
+| T044-OLP-0210-B006 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:30-39](../upstream/content/computability/recursive-functions/introduction.tex#L30) | [mr/content/computability/recursive-functions/introduction.tex:29-38](../mr/content/computability/recursive-functions/introduction.tex#L29) | not yet paginated |
+| T044-OLP-0210-B007 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:41-52](../upstream/content/computability/recursive-functions/introduction.tex#L41) | [mr/content/computability/recursive-functions/introduction.tex:40-51](../mr/content/computability/recursive-functions/introduction.tex#L40) | not yet paginated |
+| T044-OLP-0212-B006 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:17-27](../upstream/content/computability/recursive-functions/composition.tex#L17) | [mr/content/computability/recursive-functions/composition.tex:17-28](../mr/content/computability/recursive-functions/composition.tex#L17) | not yet paginated |
+| T044-OLP-0215-B005 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:12-30](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L12) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:12-33](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L12) | not yet paginated |
+| T044-OLP-0215-B006 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L32) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:35-37](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L35) | not yet paginated |
+| T044-OLP-0215-B007 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L37) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L39) | not yet paginated |
+| T044-OLP-0218-B005 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L12) | [mr/content/computability/recursive-functions/bounded-minimization.tex:12-25](../mr/content/computability/recursive-functions/bounded-minimization.tex#L12) | not yet paginated |
+| T044-OLP-0226-B005 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:12-25](../upstream/content/computability/recursive-functions/halting-problem.tex#L12) | [mr/content/computability/recursive-functions/halting-problem.tex:12-23](../mr/content/computability/recursive-functions/halting-problem.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** संगणनक्षमता / सूत्र / निष्पत्ती
 
@@ -4734,7 +4821,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T045 — function / mapping</strong> (308 occurrences; medium priority)</summary>
+<summary><strong>T045 — function / mapping</strong> (370 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5046,6 +5133,68 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T045-OLP-0197-B010 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:100-105](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L100) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:100-104](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L100) | 259–260 |
 | T045-OLP-0201-B015 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L151) | [mr/content/model-theory/interpolation/interpolation-proof.tex:151-163](../mr/content/model-theory/interpolation/interpolation-proof.tex#L151) | not yet paginated |
 | T045-OLP-0201-B016 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L165) | [mr/content/model-theory/interpolation/interpolation-proof.tex:165-183](../mr/content/model-theory/interpolation/interpolation-proof.tex#L165) | not yet paginated |
+| T045-OLP-0208-B005 | OLP-0208 ·  | [upstream/content/computability/computability.tex:9-14](../upstream/content/computability/computability.tex#L9) | [mr/content/computability/computability.tex:9-14](../mr/content/computability/computability.tex#L9) | not yet paginated |
+| T045-OLP-0209-B004 | OLP-0209 ·  | [upstream/content/computability/recursive-functions/recursive-functions.tex:8-8](../upstream/content/computability/recursive-functions/recursive-functions.tex#L8) | [mr/content/computability/recursive-functions/recursive-functions.tex:8-8](../mr/content/computability/recursive-functions/recursive-functions.tex#L8) | not yet paginated |
+| T045-OLP-0209-B005 | OLP-0209 ·  | [upstream/content/computability/recursive-functions/recursive-functions.tex:10-15](../upstream/content/computability/recursive-functions/recursive-functions.tex#L10) | [mr/content/computability/recursive-functions/recursive-functions.tex:10-15](../mr/content/computability/recursive-functions/recursive-functions.tex#L10) | not yet paginated |
+| T045-OLP-0210-B005 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:12-28](../upstream/content/computability/recursive-functions/introduction.tex#L12) | [mr/content/computability/recursive-functions/introduction.tex:12-27](../mr/content/computability/recursive-functions/introduction.tex#L12) | not yet paginated |
+| T045-OLP-0210-B006 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:30-39](../upstream/content/computability/recursive-functions/introduction.tex#L30) | [mr/content/computability/recursive-functions/introduction.tex:29-38](../mr/content/computability/recursive-functions/introduction.tex#L29) | not yet paginated |
+| T045-OLP-0210-B007 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:41-52](../upstream/content/computability/recursive-functions/introduction.tex#L41) | [mr/content/computability/recursive-functions/introduction.tex:40-51](../mr/content/computability/recursive-functions/introduction.tex#L40) | not yet paginated |
+| T045-OLP-0211-B005 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L12) | [mr/content/computability/recursive-functions/primitive-recursion.tex:12-25](../mr/content/computability/recursive-functions/primitive-recursion.tex#L12) | not yet paginated |
+| T045-OLP-0211-B006 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:26-41](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L26) | [mr/content/computability/recursive-functions/primitive-recursion.tex:27-42](../mr/content/computability/recursive-functions/primitive-recursion.tex#L27) | not yet paginated |
+| T045-OLP-0211-B007 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:43-51](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L43) | [mr/content/computability/recursive-functions/primitive-recursion.tex:44-51](../mr/content/computability/recursive-functions/primitive-recursion.tex#L44) | not yet paginated |
+| T045-OLP-0211-B008 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:53-69](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L53) | [mr/content/computability/recursive-functions/primitive-recursion.tex:53-68](../mr/content/computability/recursive-functions/primitive-recursion.tex#L53) | not yet paginated |
+| T045-OLP-0211-B009 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L71) | [mr/content/computability/recursive-functions/primitive-recursion.tex:70-95](../mr/content/computability/recursive-functions/primitive-recursion.tex#L70) | not yet paginated |
+| T045-OLP-0211-B010 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:99-130](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L99) | [mr/content/computability/recursive-functions/primitive-recursion.tex:97-127](../mr/content/computability/recursive-functions/primitive-recursion.tex#L97) | not yet paginated |
+| T045-OLP-0212-B005 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:12-15](../upstream/content/computability/recursive-functions/composition.tex#L12) | [mr/content/computability/recursive-functions/composition.tex:12-15](../mr/content/computability/recursive-functions/composition.tex#L12) | not yet paginated |
+| T045-OLP-0212-B006 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:17-27](../upstream/content/computability/recursive-functions/composition.tex#L17) | [mr/content/computability/recursive-functions/composition.tex:17-28](../mr/content/computability/recursive-functions/composition.tex#L17) | not yet paginated |
+| T045-OLP-0212-B007 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:29-46](../upstream/content/computability/recursive-functions/composition.tex#L29) | [mr/content/computability/recursive-functions/composition.tex:30-46](../mr/content/computability/recursive-functions/composition.tex#L30) | not yet paginated |
+| T045-OLP-0212-B008 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:48-57](../upstream/content/computability/recursive-functions/composition.tex#L48) | [mr/content/computability/recursive-functions/composition.tex:48-56](../mr/content/computability/recursive-functions/composition.tex#L48) | not yet paginated |
+| T045-OLP-0212-B009 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:59-65](../upstream/content/computability/recursive-functions/composition.tex#L59) | [mr/content/computability/recursive-functions/composition.tex:58-64](../mr/content/computability/recursive-functions/composition.tex#L58) | not yet paginated |
+| T045-OLP-0212-B010 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:67-88](../upstream/content/computability/recursive-functions/composition.tex#L67) | [mr/content/computability/recursive-functions/composition.tex:66-86](../mr/content/computability/recursive-functions/composition.tex#L66) | not yet paginated |
+| T045-OLP-0213-B005 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:12-13](../upstream/content/computability/recursive-functions/pr-functions.tex#L12) | [mr/content/computability/recursive-functions/pr-functions.tex:12-13](../mr/content/computability/recursive-functions/pr-functions.tex#L12) | not yet paginated |
+| T045-OLP-0213-B006 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:15-24](../upstream/content/computability/recursive-functions/pr-functions.tex#L15) | [mr/content/computability/recursive-functions/pr-functions.tex:15-24](../mr/content/computability/recursive-functions/pr-functions.tex#L15) | not yet paginated |
+| T045-OLP-0213-B007 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:26-35](../upstream/content/computability/recursive-functions/pr-functions.tex#L26) | [mr/content/computability/recursive-functions/pr-functions.tex:26-36](../mr/content/computability/recursive-functions/pr-functions.tex#L26) | not yet paginated |
+| T045-OLP-0213-B008 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:37-42](../upstream/content/computability/recursive-functions/pr-functions.tex#L37) | [mr/content/computability/recursive-functions/pr-functions.tex:38-44](../mr/content/computability/recursive-functions/pr-functions.tex#L38) | not yet paginated |
+| T045-OLP-0213-B009 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:44-61](../upstream/content/computability/recursive-functions/pr-functions.tex#L44) | [mr/content/computability/recursive-functions/pr-functions.tex:46-61](../mr/content/computability/recursive-functions/pr-functions.tex#L46) | not yet paginated |
+| T045-OLP-0213-B010 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:63-67](../upstream/content/computability/recursive-functions/pr-functions.tex#L63) | [mr/content/computability/recursive-functions/pr-functions.tex:63-66](../mr/content/computability/recursive-functions/pr-functions.tex#L63) | not yet paginated |
+| T045-OLP-0213-B011 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:69-80](../upstream/content/computability/recursive-functions/pr-functions.tex#L69) | [mr/content/computability/recursive-functions/pr-functions.tex:68-78](../mr/content/computability/recursive-functions/pr-functions.tex#L68) | not yet paginated |
+| T045-OLP-0213-B012 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:82-82](../upstream/content/computability/recursive-functions/pr-functions.tex#L82) | [mr/content/computability/recursive-functions/pr-functions.tex:80-80](../mr/content/computability/recursive-functions/pr-functions.tex#L80) | not yet paginated |
+| T045-OLP-0213-B013 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:84-86](../upstream/content/computability/recursive-functions/pr-functions.tex#L84) | [mr/content/computability/recursive-functions/pr-functions.tex:82-84](../mr/content/computability/recursive-functions/pr-functions.tex#L82) | not yet paginated |
+| T045-OLP-0213-B014 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:88-114](../upstream/content/computability/recursive-functions/pr-functions.tex#L88) | [mr/content/computability/recursive-functions/pr-functions.tex:86-112](../mr/content/computability/recursive-functions/pr-functions.tex#L86) | not yet paginated |
+| T045-OLP-0213-B015 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:116-119](../upstream/content/computability/recursive-functions/pr-functions.tex#L116) | [mr/content/computability/recursive-functions/pr-functions.tex:114-117](../mr/content/computability/recursive-functions/pr-functions.tex#L114) | not yet paginated |
+| T045-OLP-0213-B017 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:125-131](../upstream/content/computability/recursive-functions/pr-functions.tex#L125) | [mr/content/computability/recursive-functions/pr-functions.tex:123-128](../mr/content/computability/recursive-functions/pr-functions.tex#L123) | not yet paginated |
+| T045-OLP-0213-B018 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:133-162](../upstream/content/computability/recursive-functions/pr-functions.tex#L133) | [mr/content/computability/recursive-functions/pr-functions.tex:130-158](../mr/content/computability/recursive-functions/pr-functions.tex#L130) | not yet paginated |
+| T045-OLP-0214-B005 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L12) | not yet paginated |
+| T045-OLP-0214-B006 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:23-28](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L23) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:22-26](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L22) | not yet paginated |
+| T045-OLP-0214-B007 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L28) | not yet paginated |
+| T045-OLP-0214-B008 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:47-49](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L47) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:45-47](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L45) | not yet paginated |
+| T045-OLP-0215-B005 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:12-30](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L12) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:12-33](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L12) | not yet paginated |
+| T045-OLP-0215-B006 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L32) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:35-37](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L35) | not yet paginated |
+| T045-OLP-0215-B007 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L37) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L39) | not yet paginated |
+| T045-OLP-0216-B005 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:13-23](../upstream/content/computability/recursive-functions/examples.tex#L13) | [mr/content/computability/recursive-functions/examples.tex:13-22](../mr/content/computability/recursive-functions/examples.tex#L13) | not yet paginated |
+| T045-OLP-0216-B006 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:25-27](../upstream/content/computability/recursive-functions/examples.tex#L25) | [mr/content/computability/recursive-functions/examples.tex:24-26](../mr/content/computability/recursive-functions/examples.tex#L24) | not yet paginated |
+| T045-OLP-0216-B007 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:29-45](../upstream/content/computability/recursive-functions/examples.tex#L29) | [mr/content/computability/recursive-functions/examples.tex:28-44](../mr/content/computability/recursive-functions/examples.tex#L28) | not yet paginated |
+| T045-OLP-0216-B008 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:47-56](../upstream/content/computability/recursive-functions/examples.tex#L47) | [mr/content/computability/recursive-functions/examples.tex:46-55](../mr/content/computability/recursive-functions/examples.tex#L46) | not yet paginated |
+| T045-OLP-0216-B009 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:58-76](../upstream/content/computability/recursive-functions/examples.tex#L58) | [mr/content/computability/recursive-functions/examples.tex:57-75](../mr/content/computability/recursive-functions/examples.tex#L57) | not yet paginated |
+| T045-OLP-0216-B010 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:78-81](../upstream/content/computability/recursive-functions/examples.tex#L78) | [mr/content/computability/recursive-functions/examples.tex:77-80](../mr/content/computability/recursive-functions/examples.tex#L77) | not yet paginated |
+| T045-OLP-0216-B011 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:83-97](../upstream/content/computability/recursive-functions/examples.tex#L83) | [mr/content/computability/recursive-functions/examples.tex:82-97](../mr/content/computability/recursive-functions/examples.tex#L82) | not yet paginated |
+| T045-OLP-0217-B006 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:27-36](../upstream/content/computability/recursive-functions/pr-relations.tex#L27) | [mr/content/computability/recursive-functions/pr-relations.tex:26-35](../mr/content/computability/recursive-functions/pr-relations.tex#L26) | not yet paginated |
+| T045-OLP-0217-B013 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:126-138](../upstream/content/computability/recursive-functions/pr-relations.tex#L126) | [mr/content/computability/recursive-functions/pr-relations.tex:128-140](../mr/content/computability/recursive-functions/pr-relations.tex#L128) | not yet paginated |
+| T045-OLP-0217-B014 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:140-156](../upstream/content/computability/recursive-functions/pr-relations.tex#L140) | [mr/content/computability/recursive-functions/pr-relations.tex:142-157](../mr/content/computability/recursive-functions/pr-relations.tex#L142) | not yet paginated |
+| T045-OLP-0217-B015 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:158-167](../upstream/content/computability/recursive-functions/pr-relations.tex#L158) | [mr/content/computability/recursive-functions/pr-relations.tex:159-168](../mr/content/computability/recursive-functions/pr-relations.tex#L159) | not yet paginated |
+| T045-OLP-0218-B005 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L12) | [mr/content/computability/recursive-functions/bounded-minimization.tex:12-25](../mr/content/computability/recursive-functions/bounded-minimization.tex#L12) | not yet paginated |
+| T045-OLP-0218-B006 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:27-35](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L27) | [mr/content/computability/recursive-functions/bounded-minimization.tex:27-35](../mr/content/computability/recursive-functions/bounded-minimization.tex#L27) | not yet paginated |
+| T045-OLP-0218-B008 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L41) | [mr/content/computability/recursive-functions/bounded-minimization.tex:41-63](../mr/content/computability/recursive-functions/bounded-minimization.tex#L41) | not yet paginated |
+| T045-OLP-0218-B009 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L64) | [mr/content/computability/recursive-functions/bounded-minimization.tex:65-70](../mr/content/computability/recursive-functions/bounded-minimization.tex#L65) | not yet paginated |
+| T045-OLP-0225-B005 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:12-21](../upstream/content/computability/recursive-functions/normal-form.tex#L12) | [mr/content/computability/recursive-functions/normal-form.tex:12-21](../mr/content/computability/recursive-functions/normal-form.tex#L12) | not yet paginated |
+| T045-OLP-0225-B006 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:23-34](../upstream/content/computability/recursive-functions/normal-form.tex#L23) | [mr/content/computability/recursive-functions/normal-form.tex:23-34](../mr/content/computability/recursive-functions/normal-form.tex#L23) | not yet paginated |
+| T045-OLP-0225-B007 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:36-46](../upstream/content/computability/recursive-functions/normal-form.tex#L36) | [mr/content/computability/recursive-functions/normal-form.tex:36-45](../mr/content/computability/recursive-functions/normal-form.tex#L36) | not yet paginated |
+| T045-OLP-0226-B006 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:27-48](../upstream/content/computability/recursive-functions/halting-problem.tex#L27) | [mr/content/computability/recursive-functions/halting-problem.tex:25-48](../mr/content/computability/recursive-functions/halting-problem.tex#L25) | not yet paginated |
+| T045-OLP-0226-B007 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:50-53](../upstream/content/computability/recursive-functions/halting-problem.tex#L50) | [mr/content/computability/recursive-functions/halting-problem.tex:50-53](../mr/content/computability/recursive-functions/halting-problem.tex#L50) | not yet paginated |
+| T045-OLP-0226-B008 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:55-90](../upstream/content/computability/recursive-functions/halting-problem.tex#L55) | [mr/content/computability/recursive-functions/halting-problem.tex:55-91](../mr/content/computability/recursive-functions/halting-problem.tex#L55) | not yet paginated |
+| T045-OLP-0227-B004 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:9-10](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L9) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:9-10](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L9) | not yet paginated |
+| T045-OLP-0227-B006 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:20-27](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L20) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:19-26](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L19) | not yet paginated |
+| T045-OLP-0227-B007 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:29-39](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L29) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:28-36](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L28) | not yet paginated |
 
 **Chosen rendering/action:** फलन / संगती
 
@@ -5479,7 +5628,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T049 — injective / injection</strong> (94 occurrences; medium priority)</summary>
+<summary><strong>T049 — injective / injection</strong> (95 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5577,6 +5726,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T049-OLP-0195-B007 | OLP-0195 · 20.4 Q ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:88-92](../upstream/content/model-theory/models-of-arithmetic/models-of-q.tex#L88) | [mr/content/model-theory/models-of-arithmetic/models-of-q.tex:88-93](../mr/content/model-theory/models-of-arithmetic/models-of-q.tex#L88) | 254–256 |
 | T049-OLP-0195-B011 | OLP-0195 · 20.4 Q ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174](../upstream/content/model-theory/models-of-arithmetic/models-of-q.tex#L133) | [mr/content/model-theory/models-of-arithmetic/models-of-q.tex:136-180](../mr/content/model-theory/models-of-arithmetic/models-of-q.tex#L136) | 254–256 |
 | T049-OLP-0196-B007 | OLP-0196 · 20.5 PA ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-39](../upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex#L29) | [mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-40](../mr/content/model-theory/models-of-arithmetic/models-of-pa.tex#L29) | 256–259 |
+| T049-OLP-0220-B006 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:27-36](../upstream/content/computability/recursive-functions/sequences.tex#L27) | [mr/content/computability/recursive-functions/sequences.tex:26-35](../mr/content/computability/recursive-functions/sequences.tex#L26) | not yet paginated |
 
 **Chosen rendering/action:** एकास-एक / एकास-एक फलन
 
@@ -5689,7 +5839,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T051 — identity / constant function</strong> (37 occurrences; medium priority)</summary>
+<summary><strong>T051 — identity / constant function</strong> (46 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5730,6 +5880,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T051-OLP-0035-B010 | OLP-0035 · 4.8 तुल्यबलता | [upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:42-44](../upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex#L42) | [mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:42-44](../mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex#L42) | 49–50 |
 | T051-OLP-0038-B013 | OLP-0038 · 4.11 प्रगणने आणि गणनीय संच | [upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:69-75](../upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex#L69) | [mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:67-72](../mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex#L67) | 52–53 |
 | T051-OLP-0048-B014 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:133-147](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L133) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:128-143](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L128) | 67–70 |
+| T051-OLP-0211-B009 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L71) | [mr/content/computability/recursive-functions/primitive-recursion.tex:70-95](../mr/content/computability/recursive-functions/primitive-recursion.tex#L70) | not yet paginated |
+| T051-OLP-0211-B010 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:99-130](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L99) | [mr/content/computability/recursive-functions/primitive-recursion.tex:97-127](../mr/content/computability/recursive-functions/primitive-recursion.tex#L97) | not yet paginated |
+| T051-OLP-0212-B007 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:29-46](../upstream/content/computability/recursive-functions/composition.tex#L29) | [mr/content/computability/recursive-functions/composition.tex:30-46](../mr/content/computability/recursive-functions/composition.tex#L30) | not yet paginated |
+| T051-OLP-0212-B008 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:48-57](../upstream/content/computability/recursive-functions/composition.tex#L48) | [mr/content/computability/recursive-functions/composition.tex:48-56](../mr/content/computability/recursive-functions/composition.tex#L48) | not yet paginated |
+| T051-OLP-0213-B014 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:88-114](../upstream/content/computability/recursive-functions/pr-functions.tex#L88) | [mr/content/computability/recursive-functions/pr-functions.tex:86-112](../mr/content/computability/recursive-functions/pr-functions.tex#L86) | not yet paginated |
+| T051-OLP-0213-B018 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:133-162](../upstream/content/computability/recursive-functions/pr-functions.tex#L133) | [mr/content/computability/recursive-functions/pr-functions.tex:130-158](../mr/content/computability/recursive-functions/pr-functions.tex#L130) | not yet paginated |
+| T051-OLP-0216-B005 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:13-23](../upstream/content/computability/recursive-functions/examples.tex#L13) | [mr/content/computability/recursive-functions/examples.tex:13-22](../mr/content/computability/recursive-functions/examples.tex#L13) | not yet paginated |
+| T051-OLP-0216-B007 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:29-45](../upstream/content/computability/recursive-functions/examples.tex#L29) | [mr/content/computability/recursive-functions/examples.tex:28-44](../mr/content/computability/recursive-functions/examples.tex#L28) | not yet paginated |
+| T051-OLP-0216-B011 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:83-97](../upstream/content/computability/recursive-functions/examples.tex#L83) | [mr/content/computability/recursive-functions/examples.tex:82-97](../mr/content/computability/recursive-functions/examples.tex#L82) | not yet paginated |
 
 **Chosen rendering/action:** एकरूपता फलन / स्थिर फलन
 
@@ -5790,7 +5949,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T053 — composition / partial / total function</strong> (26 occurrences; medium priority)</summary>
+<summary><strong>T053 — composition / partial / total function</strong> (60 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5820,6 +5979,40 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T053-OLP-0054-B017 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L89) | [mr/content/sets-functions-relations/infinite/card-sb.tex:91-104](../mr/content/sets-functions-relations/infinite/card-sb.tex#L91) | 75–77 |
 | T053-OLP-0187-B009 | OLP-0187 · 19.4 समरूपी रचना | [upstream/content/model-theory/basics/isomorphism.tex:67-106](../upstream/content/model-theory/basics/isomorphism.tex#L67) | [mr/content/model-theory/basics/isomorphism.tex:66-106](../mr/content/model-theory/basics/isomorphism.tex#L66) | 243–245 |
 | T053-OLP-0189-B005 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:12-31](../upstream/content/model-theory/basics/partial-iso.tex#L12) | [mr/content/model-theory/basics/partial-iso.tex:12-31](../mr/content/model-theory/basics/partial-iso.tex#L12) | 246–248 |
+| T053-OLP-0210-B007 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:41-52](../upstream/content/computability/recursive-functions/introduction.tex#L41) | [mr/content/computability/recursive-functions/introduction.tex:40-51](../mr/content/computability/recursive-functions/introduction.tex#L40) | not yet paginated |
+| T053-OLP-0212-B004 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:9-10](../upstream/content/computability/recursive-functions/composition.tex#L9) | [mr/content/computability/recursive-functions/composition.tex:9-10](../mr/content/computability/recursive-functions/composition.tex#L9) | not yet paginated |
+| T053-OLP-0212-B005 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:12-15](../upstream/content/computability/recursive-functions/composition.tex#L12) | [mr/content/computability/recursive-functions/composition.tex:12-15](../mr/content/computability/recursive-functions/composition.tex#L12) | not yet paginated |
+| T053-OLP-0212-B006 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:17-27](../upstream/content/computability/recursive-functions/composition.tex#L17) | [mr/content/computability/recursive-functions/composition.tex:17-28](../mr/content/computability/recursive-functions/composition.tex#L17) | not yet paginated |
+| T053-OLP-0212-B008 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:48-57](../upstream/content/computability/recursive-functions/composition.tex#L48) | [mr/content/computability/recursive-functions/composition.tex:48-56](../mr/content/computability/recursive-functions/composition.tex#L48) | not yet paginated |
+| T053-OLP-0212-B009 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:59-65](../upstream/content/computability/recursive-functions/composition.tex#L59) | [mr/content/computability/recursive-functions/composition.tex:58-64](../mr/content/computability/recursive-functions/composition.tex#L58) | not yet paginated |
+| T053-OLP-0212-B010 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:67-88](../upstream/content/computability/recursive-functions/composition.tex#L67) | [mr/content/computability/recursive-functions/composition.tex:66-86](../mr/content/computability/recursive-functions/composition.tex#L66) | not yet paginated |
+| T053-OLP-0213-B005 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:12-13](../upstream/content/computability/recursive-functions/pr-functions.tex#L12) | [mr/content/computability/recursive-functions/pr-functions.tex:12-13](../mr/content/computability/recursive-functions/pr-functions.tex#L12) | not yet paginated |
+| T053-OLP-0213-B007 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:26-35](../upstream/content/computability/recursive-functions/pr-functions.tex#L26) | [mr/content/computability/recursive-functions/pr-functions.tex:26-36](../mr/content/computability/recursive-functions/pr-functions.tex#L26) | not yet paginated |
+| T053-OLP-0213-B009 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:44-61](../upstream/content/computability/recursive-functions/pr-functions.tex#L44) | [mr/content/computability/recursive-functions/pr-functions.tex:46-61](../mr/content/computability/recursive-functions/pr-functions.tex#L46) | not yet paginated |
+| T053-OLP-0213-B010 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:63-67](../upstream/content/computability/recursive-functions/pr-functions.tex#L63) | [mr/content/computability/recursive-functions/pr-functions.tex:63-66](../mr/content/computability/recursive-functions/pr-functions.tex#L63) | not yet paginated |
+| T053-OLP-0213-B011 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:69-80](../upstream/content/computability/recursive-functions/pr-functions.tex#L69) | [mr/content/computability/recursive-functions/pr-functions.tex:68-78](../mr/content/computability/recursive-functions/pr-functions.tex#L68) | not yet paginated |
+| T053-OLP-0213-B014 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:88-114](../upstream/content/computability/recursive-functions/pr-functions.tex#L88) | [mr/content/computability/recursive-functions/pr-functions.tex:86-112](../mr/content/computability/recursive-functions/pr-functions.tex#L86) | not yet paginated |
+| T053-OLP-0213-B017 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:125-131](../upstream/content/computability/recursive-functions/pr-functions.tex#L125) | [mr/content/computability/recursive-functions/pr-functions.tex:123-128](../mr/content/computability/recursive-functions/pr-functions.tex#L123) | not yet paginated |
+| T053-OLP-0213-B018 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:133-162](../upstream/content/computability/recursive-functions/pr-functions.tex#L133) | [mr/content/computability/recursive-functions/pr-functions.tex:130-158](../mr/content/computability/recursive-functions/pr-functions.tex#L130) | not yet paginated |
+| T053-OLP-0214-B005 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L12) | not yet paginated |
+| T053-OLP-0214-B007 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L28) | not yet paginated |
+| T053-OLP-0215-B006 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L32) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:35-37](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L35) | not yet paginated |
+| T053-OLP-0215-B007 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L37) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L39) | not yet paginated |
+| T053-OLP-0216-B005 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:13-23](../upstream/content/computability/recursive-functions/examples.tex#L13) | [mr/content/computability/recursive-functions/examples.tex:13-22](../mr/content/computability/recursive-functions/examples.tex#L13) | not yet paginated |
+| T053-OLP-0216-B007 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:29-45](../upstream/content/computability/recursive-functions/examples.tex#L29) | [mr/content/computability/recursive-functions/examples.tex:28-44](../mr/content/computability/recursive-functions/examples.tex#L28) | not yet paginated |
+| T053-OLP-0216-B009 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:58-76](../upstream/content/computability/recursive-functions/examples.tex#L58) | [mr/content/computability/recursive-functions/examples.tex:57-75](../mr/content/computability/recursive-functions/examples.tex#L57) | not yet paginated |
+| T053-OLP-0216-B011 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:83-97](../upstream/content/computability/recursive-functions/examples.tex#L83) | [mr/content/computability/recursive-functions/examples.tex:82-97](../mr/content/computability/recursive-functions/examples.tex#L82) | not yet paginated |
+| T053-OLP-0216-B015 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:122-126](../upstream/content/computability/recursive-functions/examples.tex#L122) | [mr/content/computability/recursive-functions/examples.tex:122-126](../mr/content/computability/recursive-functions/examples.tex#L122) | not yet paginated |
+| T053-OLP-0216-B017 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:132-140](../upstream/content/computability/recursive-functions/examples.tex#L132) | [mr/content/computability/recursive-functions/examples.tex:132-141](../mr/content/computability/recursive-functions/examples.tex#L132) | not yet paginated |
+| T053-OLP-0216-B022 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:162-168](../upstream/content/computability/recursive-functions/examples.tex#L162) | [mr/content/computability/recursive-functions/examples.tex:164-169](../mr/content/computability/recursive-functions/examples.tex#L164) | not yet paginated |
+| T053-OLP-0217-B007 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:38-45](../upstream/content/computability/recursive-functions/pr-relations.tex#L38) | [mr/content/computability/recursive-functions/pr-relations.tex:37-44](../mr/content/computability/recursive-functions/pr-relations.tex#L37) | not yet paginated |
+| T053-OLP-0217-B015 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:158-167](../upstream/content/computability/recursive-functions/pr-relations.tex#L158) | [mr/content/computability/recursive-functions/pr-relations.tex:159-168](../mr/content/computability/recursive-functions/pr-relations.tex#L159) | not yet paginated |
+| T053-OLP-0224-B006 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:24-30](../upstream/content/computability/recursive-functions/partial-functions.tex#L24) | [mr/content/computability/recursive-functions/partial-functions.tex:23-28](../mr/content/computability/recursive-functions/partial-functions.tex#L23) | not yet paginated |
+| T053-OLP-0224-B008 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:42-62](../upstream/content/computability/recursive-functions/partial-functions.tex#L42) | [mr/content/computability/recursive-functions/partial-functions.tex:39-57](../mr/content/computability/recursive-functions/partial-functions.tex#L39) | not yet paginated |
+| T053-OLP-0224-B011 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:89-96](../upstream/content/computability/recursive-functions/partial-functions.tex#L89) | [mr/content/computability/recursive-functions/partial-functions.tex:83-90](../mr/content/computability/recursive-functions/partial-functions.tex#L83) | not yet paginated |
+| T053-OLP-0224-B012 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:98-103](../upstream/content/computability/recursive-functions/partial-functions.tex#L98) | [mr/content/computability/recursive-functions/partial-functions.tex:92-97](../mr/content/computability/recursive-functions/partial-functions.tex#L92) | not yet paginated |
+| T053-OLP-0224-B013 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:105-106](../upstream/content/computability/recursive-functions/partial-functions.tex#L105) | [mr/content/computability/recursive-functions/partial-functions.tex:99-100](../mr/content/computability/recursive-functions/partial-functions.tex#L99) | not yet paginated |
+| T053-OLP-0224-B014 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:108-112](../upstream/content/computability/recursive-functions/partial-functions.tex#L108) | [mr/content/computability/recursive-functions/partial-functions.tex:102-106](../mr/content/computability/recursive-functions/partial-functions.tex#L102) | not yet paginated |
 
 **Chosen rendering/action:** संयोजन / अंशतः फलन / सर्वत्र परिभाषित फलन
 
@@ -5891,7 +6084,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T056 — enumeration / enumerate</strong> (92 occurrences; routine priority)</summary>
+<summary><strong>T056 — enumeration / enumerate</strong> (99 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -5987,6 +6180,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T056-OLP-0130-B010 | OLP-0130 · 13.4 हेंकिन विस्तार | [upstream/content/first-order-logic/completeness/henkin-expansions.tex:51-56](../upstream/content/first-order-logic/completeness/henkin-expansions.tex#L51) | [mr/content/first-order-logic/completeness/henkin-expansions.tex:51-56](../mr/content/first-order-logic/completeness/henkin-expansions.tex#L51) | 174–175 |
 | T056-OLP-0131-B008 | OLP-0131 · 13.5 लिंडेनबाउमचे पूर्वप्रमेय | [upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:33-45](../upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex#L33) | [mr/content/first-order-logic/completeness/lindenbaums-lemma.tex:33-45](../mr/content/first-order-logic/completeness/lindenbaums-lemma.tex#L33) | 175–176 |
 | T056-OLP-0201-B010 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L39) | [mr/content/model-theory/interpolation/interpolation-proof.tex:37-99](../mr/content/model-theory/interpolation/interpolation-proof.tex#L37) | not yet paginated |
+| T056-OLP-0214-B007 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L28) | not yet paginated |
+| T056-OLP-0223-B005 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/non-pr-functions.tex:12-28](../mr/content/computability/recursive-functions/non-pr-functions.tex#L12) | not yet paginated |
+| T056-OLP-0223-B007 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L45) | [mr/content/computability/recursive-functions/non-pr-functions.tex:45-64](../mr/content/computability/recursive-functions/non-pr-functions.tex#L45) | not yet paginated |
+| T056-OLP-0223-B008 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:67-73](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L67) | [mr/content/computability/recursive-functions/non-pr-functions.tex:66-70](../mr/content/computability/recursive-functions/non-pr-functions.tex#L66) | not yet paginated |
+| T056-OLP-0223-B009 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L75) | [mr/content/computability/recursive-functions/non-pr-functions.tex:72-76](../mr/content/computability/recursive-functions/non-pr-functions.tex#L72) | not yet paginated |
+| T056-OLP-0224-B005 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:13-22](../upstream/content/computability/recursive-functions/partial-functions.tex#L13) | [mr/content/computability/recursive-functions/partial-functions.tex:13-21](../mr/content/computability/recursive-functions/partial-functions.tex#L13) | not yet paginated |
+| T056-OLP-0224-B006 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:24-30](../upstream/content/computability/recursive-functions/partial-functions.tex#L24) | [mr/content/computability/recursive-functions/partial-functions.tex:23-28](../mr/content/computability/recursive-functions/partial-functions.tex#L23) | not yet paginated |
 
 **Chosen rendering/action:** प्रगणन / प्रगणन करणे
 
@@ -6135,7 +6335,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T057-OLP-0197-B006 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L25) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L24) | 259–260 |
 | T057-OLP-0206-B008 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:23-26](../upstream/content/model-theory/lindstrom/ls-property.tex#L23) | [mr/content/model-theory/lindstrom/ls-property.tex:23-27](../mr/content/model-theory/lindstrom/ls-property.tex#L23) | not yet paginated |
 | T057-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
-| T057-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
+| T057-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-130](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L113) | not yet paginated |
 
 **Chosen rendering/action:** गणनीय / गणनीय / अगणनीय
 
@@ -6240,7 +6440,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T061 — recursive / recursively defined</strong> (15 occurrences; medium priority)</summary>
+<summary><strong>T061 — recursive / recursively defined</strong> (33 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6259,6 +6459,24 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T061-OLP-0164-B009 | OLP-0164 · 16.5 चर-मूल्यांकने | [upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55](../upstream/content/first-order-logic/syntax-and-semantics/assignments.tex#L42) | [mr/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55](../mr/content/first-order-logic/syntax-and-semantics/assignments.tex#L42) | 215–218 |
 | T061-OLP-0177-B011 | OLP-0177 · 18.3 द्वितीय-क्रम तर्कशास्त्र | [upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167](../upstream/content/first-order-logic/beyond/second-order-logic.tex#L129) | [mr/content/first-order-logic/beyond/second-order-logic.tex:121-157](../mr/content/first-order-logic/beyond/second-order-logic.tex#L121) | 232–235 |
 | T061-OLP-0178-B008 | OLP-0178 · 18.4 उच्च-क्रम तर्कशास्त्र | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | 235–237 |
+| T061-OLP-0208-B005 | OLP-0208 ·  | [upstream/content/computability/computability.tex:9-14](../upstream/content/computability/computability.tex#L9) | [mr/content/computability/computability.tex:9-14](../mr/content/computability/computability.tex#L9) | not yet paginated |
+| T061-OLP-0209-B004 | OLP-0209 ·  | [upstream/content/computability/recursive-functions/recursive-functions.tex:8-8](../upstream/content/computability/recursive-functions/recursive-functions.tex#L8) | [mr/content/computability/recursive-functions/recursive-functions.tex:8-8](../mr/content/computability/recursive-functions/recursive-functions.tex#L8) | not yet paginated |
+| T061-OLP-0209-B005 | OLP-0209 ·  | [upstream/content/computability/recursive-functions/recursive-functions.tex:10-15](../upstream/content/computability/recursive-functions/recursive-functions.tex#L10) | [mr/content/computability/recursive-functions/recursive-functions.tex:10-15](../mr/content/computability/recursive-functions/recursive-functions.tex#L10) | not yet paginated |
+| T061-OLP-0210-B005 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:12-28](../upstream/content/computability/recursive-functions/introduction.tex#L12) | [mr/content/computability/recursive-functions/introduction.tex:12-27](../mr/content/computability/recursive-functions/introduction.tex#L12) | not yet paginated |
+| T061-OLP-0210-B007 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:41-52](../upstream/content/computability/recursive-functions/introduction.tex#L41) | [mr/content/computability/recursive-functions/introduction.tex:40-51](../mr/content/computability/recursive-functions/introduction.tex#L40) | not yet paginated |
+| T061-OLP-0211-B005 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L12) | [mr/content/computability/recursive-functions/primitive-recursion.tex:12-25](../mr/content/computability/recursive-functions/primitive-recursion.tex#L12) | not yet paginated |
+| T061-OLP-0211-B007 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:43-51](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L43) | [mr/content/computability/recursive-functions/primitive-recursion.tex:44-51](../mr/content/computability/recursive-functions/primitive-recursion.tex#L44) | not yet paginated |
+| T061-OLP-0212-B007 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:29-46](../upstream/content/computability/recursive-functions/composition.tex#L29) | [mr/content/computability/recursive-functions/composition.tex:30-46](../mr/content/computability/recursive-functions/composition.tex#L30) | not yet paginated |
+| T061-OLP-0215-B005 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:12-30](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L12) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:12-33](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L12) | not yet paginated |
+| T061-OLP-0216-B024 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:187-193](../upstream/content/computability/recursive-functions/examples.tex#L187) | [mr/content/computability/recursive-functions/examples.tex:187-193](../mr/content/computability/recursive-functions/examples.tex#L187) | not yet paginated |
+| T061-OLP-0217-B006 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:27-36](../upstream/content/computability/recursive-functions/pr-relations.tex#L27) | [mr/content/computability/recursive-functions/pr-relations.tex:26-35](../mr/content/computability/recursive-functions/pr-relations.tex#L26) | not yet paginated |
+| T061-OLP-0217-B013 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:126-138](../upstream/content/computability/recursive-functions/pr-relations.tex#L126) | [mr/content/computability/recursive-functions/pr-relations.tex:128-140](../mr/content/computability/recursive-functions/pr-relations.tex#L128) | not yet paginated |
+| T061-OLP-0218-B005 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L12) | [mr/content/computability/recursive-functions/bounded-minimization.tex:12-25](../mr/content/computability/recursive-functions/bounded-minimization.tex#L12) | not yet paginated |
+| T061-OLP-0218-B009 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L64) | [mr/content/computability/recursive-functions/bounded-minimization.tex:65-70](../mr/content/computability/recursive-functions/bounded-minimization.tex#L65) | not yet paginated |
+| T061-OLP-0225-B005 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:12-21](../upstream/content/computability/recursive-functions/normal-form.tex#L12) | [mr/content/computability/recursive-functions/normal-form.tex:12-21](../mr/content/computability/recursive-functions/normal-form.tex#L12) | not yet paginated |
+| T061-OLP-0225-B006 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:23-34](../upstream/content/computability/recursive-functions/normal-form.tex#L23) | [mr/content/computability/recursive-functions/normal-form.tex:23-34](../mr/content/computability/recursive-functions/normal-form.tex#L23) | not yet paginated |
+| T061-OLP-0227-B005 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:12-18](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L12) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:12-17](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L12) | not yet paginated |
+| T061-OLP-0227-B006 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:20-27](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L20) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:19-26](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L19) | not yet paginated |
 
 **Chosen rendering/action:** पुनरावर्ती / पुनरावर्ती रीतीने परिभाषित
 
@@ -6299,7 +6517,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T063 — enumeration with/without repetitions; redundant enumeration</strong> (6 occurrences; medium priority)</summary>
+<summary><strong>T063 — enumeration with/without repetitions; redundant enumeration</strong> (9 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6309,6 +6527,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T063-OLP-0029-B014 | OLP-0029 · 4.2 प्रगणने आणि गणनीय संच | [upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:92-102](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex#L92) | [mr/content/sets-functions-relations/size-of-sets/enumerability.tex:90-99](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex#L90) | 37–40 |
 | T063-OLP-0029-B029 | OLP-0029 · 4.2 प्रगणने आणि गणनीय संच | [upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:213-225](../upstream/content/sets-functions-relations/size-of-sets/enumerability.tex#L213) | [mr/content/sets-functions-relations/size-of-sets/enumerability.tex:216-229](../mr/content/sets-functions-relations/size-of-sets/enumerability.tex#L216) | 37–40 |
 | T063-OLP-0060-B008 | OLP-0060 · 7.4 रचनाक्रमिका | [upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:36-61](../upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex#L36) | [mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:35-59](../mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex#L35) | 82–83 |
+| T063-OLP-0223-B005 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/non-pr-functions.tex:12-28](../mr/content/computability/recursive-functions/non-pr-functions.tex#L12) | not yet paginated |
+| T063-OLP-0223-B008 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:67-73](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L67) | [mr/content/computability/recursive-functions/non-pr-functions.tex:66-70](../mr/content/computability/recursive-functions/non-pr-functions.tex#L66) | not yet paginated |
+| T063-OLP-0224-B006 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:24-30](../upstream/content/computability/recursive-functions/partial-functions.tex#L24) | [mr/content/computability/recursive-functions/partial-functions.tex:23-28](../mr/content/computability/recursive-functions/partial-functions.tex#L23) | not yet paginated |
 
 **Chosen rendering/action:** पुनरुक्ती असलेले / पुनरुक्ती नसलेले प्रगणन
 
@@ -6431,7 +6652,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T067 — pairing function / encode / code / decode</strong> (16 occurrences; medium priority)</summary>
+<summary><strong>T067 — pairing function / encode / code / decode</strong> (23 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6451,6 +6672,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T067-OLP-0032-B010 | OLP-0032 · 4.5 एक पर्यायी जोडीकरण फलन | [upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:106-112](../upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex#L106) | [mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:112-118](../mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex#L112) | 43–44 |
 | T067-OLP-0042-B005 | OLP-0042 · 5.1 N पासून Z कडे | [upstream/content/sets-functions-relations/arithmetization/integers.tex:13-18](../upstream/content/sets-functions-relations/arithmetization/integers.tex#L13) | [mr/content/sets-functions-relations/arithmetization/integers.tex:13-18](../mr/content/sets-functions-relations/arithmetization/integers.tex#L13) | 57–59 |
 | T067-OLP-0043-B005 | OLP-0043 · 5.2 Z पासून Q कडे | [upstream/content/sets-functions-relations/arithmetization/rationals.tex:12-45](../upstream/content/sets-functions-relations/arithmetization/rationals.tex#L12) | [mr/content/sets-functions-relations/arithmetization/rationals.tex:12-44](../mr/content/sets-functions-relations/arithmetization/rationals.tex#L12) | 59–60 |
+| T067-OLP-0220-B005 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:12-25](../upstream/content/computability/recursive-functions/sequences.tex#L12) | [mr/content/computability/recursive-functions/sequences.tex:12-24](../mr/content/computability/recursive-functions/sequences.tex#L12) | not yet paginated |
+| T067-OLP-0220-B006 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:27-36](../upstream/content/computability/recursive-functions/sequences.tex#L27) | [mr/content/computability/recursive-functions/sequences.tex:26-35](../mr/content/computability/recursive-functions/sequences.tex#L26) | not yet paginated |
+| T067-OLP-0220-B018 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:144-154](../upstream/content/computability/recursive-functions/sequences.tex#L144) | [mr/content/computability/recursive-functions/sequences.tex:141-153](../mr/content/computability/recursive-functions/sequences.tex#L141) | not yet paginated |
+| T067-OLP-0221-B006 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:21-28](../upstream/content/computability/recursive-functions/trees.tex#L21) | [mr/content/computability/recursive-functions/trees.tex:20-27](../mr/content/computability/recursive-functions/trees.tex#L20) | not yet paginated |
+| T067-OLP-0222-B005 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:12-47](../upstream/content/computability/recursive-functions/other-recursions.tex#L12) | [mr/content/computability/recursive-functions/other-recursions.tex:12-45](../mr/content/computability/recursive-functions/other-recursions.tex#L12) | not yet paginated |
+| T067-OLP-0223-B007 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L45) | [mr/content/computability/recursive-functions/non-pr-functions.tex:45-64](../mr/content/computability/recursive-functions/non-pr-functions.tex#L45) | not yet paginated |
+| T067-OLP-0223-B009 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L75) | [mr/content/computability/recursive-functions/non-pr-functions.tex:72-76](../mr/content/computability/recursive-functions/non-pr-functions.tex#L72) | not yet paginated |
 
 **Chosen rendering/action:** जोडीकरण फलन / सांकेतीकरण करणे / संकेतांक / विसांकेतीकरण करणे
 
@@ -6527,7 +6755,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T072 — positive / odd / even / factor / power / exponent</strong> (19 occurrences; medium priority)</summary>
+<summary><strong>T072 — positive / odd / even / factor / power / exponent</strong> (30 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6550,6 +6778,17 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T072-OLP-0048-B013 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:127-131](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L127) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:121-126](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L121) | 67–70 |
 | T072-OLP-0048-B015 | OLP-0048 · 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | [upstream/content/sets-functions-relations/arithmetization/cauchy.tex:149-163](../upstream/content/sets-functions-relations/arithmetization/cauchy.tex#L149) | [mr/content/sets-functions-relations/arithmetization/cauchy.tex:145-163](../mr/content/sets-functions-relations/arithmetization/cauchy.tex#L145) | 67–70 |
 | T072-OLP-0052-B012 | OLP-0052 · 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | [upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:51-64](../upstream/content/sets-functions-relations/infinite/dedekind-induction.tex#L51) | [mr/content/sets-functions-relations/infinite/dedekind-induction.tex:54-66](../mr/content/sets-functions-relations/infinite/dedekind-induction.tex#L54) | 73–74 |
+| T072-OLP-0210-B005 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:12-28](../upstream/content/computability/recursive-functions/introduction.tex#L12) | [mr/content/computability/recursive-functions/introduction.tex:12-27](../mr/content/computability/recursive-functions/introduction.tex#L12) | not yet paginated |
+| T072-OLP-0211-B006 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:26-41](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L26) | [mr/content/computability/recursive-functions/primitive-recursion.tex:27-42](../mr/content/computability/recursive-functions/primitive-recursion.tex#L27) | not yet paginated |
+| T072-OLP-0211-B008 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:53-69](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L53) | [mr/content/computability/recursive-functions/primitive-recursion.tex:53-68](../mr/content/computability/recursive-functions/primitive-recursion.tex#L53) | not yet paginated |
+| T072-OLP-0211-B009 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L71) | [mr/content/computability/recursive-functions/primitive-recursion.tex:70-95](../mr/content/computability/recursive-functions/primitive-recursion.tex#L70) | not yet paginated |
+| T072-OLP-0213-B013 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:84-86](../upstream/content/computability/recursive-functions/pr-functions.tex#L84) | [mr/content/computability/recursive-functions/pr-functions.tex:82-84](../mr/content/computability/recursive-functions/pr-functions.tex#L82) | not yet paginated |
+| T072-OLP-0213-B015 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:116-119](../upstream/content/computability/recursive-functions/pr-functions.tex#L116) | [mr/content/computability/recursive-functions/pr-functions.tex:114-117](../mr/content/computability/recursive-functions/pr-functions.tex#L114) | not yet paginated |
+| T072-OLP-0213-B018 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:133-162](../upstream/content/computability/recursive-functions/pr-functions.tex#L133) | [mr/content/computability/recursive-functions/pr-functions.tex:130-158](../mr/content/computability/recursive-functions/pr-functions.tex#L130) | not yet paginated |
+| T072-OLP-0214-B008 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:47-49](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L47) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:45-47](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L45) | not yet paginated |
+| T072-OLP-0220-B005 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:12-25](../upstream/content/computability/recursive-functions/sequences.tex#L12) | [mr/content/computability/recursive-functions/sequences.tex:12-24](../mr/content/computability/recursive-functions/sequences.tex#L12) | not yet paginated |
+| T072-OLP-0220-B013 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:96-107](../upstream/content/computability/recursive-functions/sequences.tex#L96) | [mr/content/computability/recursive-functions/sequences.tex:94-105](../mr/content/computability/recursive-functions/sequences.tex#L94) | not yet paginated |
+| T072-OLP-0220-B018 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:144-154](../upstream/content/computability/recursive-functions/sequences.tex#L144) | [mr/content/computability/recursive-functions/sequences.tex:141-153](../mr/content/computability/recursive-functions/sequences.tex#L141) | not yet paginated |
 
 **Chosen rendering/action:** धन / विषम / सम / गुणक / घात / घातांक
 
@@ -6560,7 +6799,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T073 — Cantor's diagonal method / diagonalization / diagonal argument</strong> (17 occurrences; medium priority)</summary>
+<summary><strong>T073 — Cantor's diagonal method / diagonalization / diagonal argument</strong> (19 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6581,6 +6820,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T073-OLP-0039-B017 | OLP-0039 · 4.12 अगणनीय संच | [upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:131-152](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex#L131) | [mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:132-152](../mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex#L132) | 53–55 |
 | T073-OLP-0039-B018 | OLP-0039 · 4.12 अगणनीय संच | [upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:154-160](../upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex#L154) | [mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:154-160](../mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex#L154) | 53–55 |
 | T073-OLP-0040-B007 | OLP-0040 · 4.13 न्यूनीकरण | [upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:20-26](../upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L20) | [mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:19-26](../mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex#L19) | 55–56 |
+| T073-OLP-0223-B005 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/non-pr-functions.tex:12-28](../mr/content/computability/recursive-functions/non-pr-functions.tex#L12) | not yet paginated |
+| T073-OLP-0224-B005 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:13-22](../upstream/content/computability/recursive-functions/partial-functions.tex#L13) | [mr/content/computability/recursive-functions/partial-functions.tex:13-21](../mr/content/computability/recursive-functions/partial-functions.tex#L13) | not yet paginated |
 
 **Chosen rendering/action:** कँटर यांची कर्णरेषीय पद्धत / कर्णीकरण / कर्णरेषीय युक्तिवाद
 
@@ -6684,7 +6925,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T077 — arithmetization</strong> (4 occurrences; routine priority)</summary>
+<summary><strong>T077 — arithmetization</strong> (5 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6692,6 +6933,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T077-OLP-0041-B005 | OLP-0041 · 5 अंकगणितीकरण — प्रकरण-प्रस्तावना | [upstream/content/sets-functions-relations/arithmetization/arithmetization.tex:10-14](../upstream/content/sets-functions-relations/arithmetization/arithmetization.tex#L10) | [mr/content/sets-functions-relations/arithmetization/arithmetization.tex:10-13](../mr/content/sets-functions-relations/arithmetization/arithmetization.tex#L10) | 57 |
 | T077-OLP-0053-B004 | OLP-0053 · 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | [upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:11-12](../upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex#L11) | [mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:11-12](../mr/content/sets-functions-relations/infinite/dedekinds-proof.tex#L11) | 74–75 |
 | T077-OLP-0053-B008 | OLP-0053 · 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | [upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:42-64](../upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex#L42) | [mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:40-62](../mr/content/sets-functions-relations/infinite/dedekinds-proof.tex#L40) | 74–75 |
+| T077-OLP-0209-B005 | OLP-0209 ·  | [upstream/content/computability/recursive-functions/recursive-functions.tex:10-15](../upstream/content/computability/recursive-functions/recursive-functions.tex#L10) | [mr/content/computability/recursive-functions/recursive-functions.tex:10-15](../mr/content/computability/recursive-functions/recursive-functions.tex#L10) | not yet paginated |
 
 **Chosen rendering/action:** अंकगणितीकरण
 
@@ -7304,7 +7546,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T101 — closed under a function / f-closed</strong> (17 occurrences; medium priority)</summary>
+<summary><strong>T101 — closed under a function / f-closed</strong> (22 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7325,6 +7567,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T101-OLP-0054-B013 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:70-73](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L70) | [mr/content/sets-functions-relations/infinite/card-sb.tex:69-72](../mr/content/sets-functions-relations/infinite/card-sb.tex#L69) | 75–77 |
 | T101-OLP-0054-B015 | OLP-0054 · 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | [upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83](../upstream/content/sets-functions-relations/infinite/card-sb.tex#L80) | [mr/content/sets-functions-relations/infinite/card-sb.tex:80-85](../mr/content/sets-functions-relations/infinite/card-sb.tex#L80) | 75–77 |
 | T101-OLP-0059-B007 | OLP-0059 · 7.3 पूर्वतयारी | [upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39](../upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L32) | [mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39](../mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex#L32) | 80–82 |
+| T101-OLP-0213-B010 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:63-67](../upstream/content/computability/recursive-functions/pr-functions.tex#L63) | [mr/content/computability/recursive-functions/pr-functions.tex:63-66](../mr/content/computability/recursive-functions/pr-functions.tex#L63) | not yet paginated |
+| T101-OLP-0216-B023 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:170-185](../upstream/content/computability/recursive-functions/examples.tex#L170) | [mr/content/computability/recursive-functions/examples.tex:171-185](../mr/content/computability/recursive-functions/examples.tex#L171) | not yet paginated |
+| T101-OLP-0217-B008 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:48-58](../upstream/content/computability/recursive-functions/pr-relations.tex#L48) | [mr/content/computability/recursive-functions/pr-relations.tex:47-57](../mr/content/computability/recursive-functions/pr-relations.tex#L47) | not yet paginated |
+| T101-OLP-0217-B010 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:88-99](../upstream/content/computability/recursive-functions/pr-relations.tex#L88) | [mr/content/computability/recursive-functions/pr-relations.tex:88-100](../mr/content/computability/recursive-functions/pr-relations.tex#L88) | not yet paginated |
+| T101-OLP-0224-B012 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:98-103](../upstream/content/computability/recursive-functions/partial-functions.tex#L98) | [mr/content/computability/recursive-functions/partial-functions.tex:92-97](../mr/content/computability/recursive-functions/partial-functions.tex#L92) | not yet paginated |
 
 **Chosen rendering/action:** फलनाखाली बंद / f-बंद
 
@@ -7550,7 +7797,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T105-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
 | T105-OLP-0206-B011 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:49-57](../upstream/content/model-theory/lindstrom/ls-property.tex#L49) | [mr/content/model-theory/lindstrom/ls-property.tex:48-57](../mr/content/model-theory/lindstrom/ls-property.tex#L48) | not yet paginated |
 | T105-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
-| T105-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
+| T105-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-130](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L113) | not yet paginated |
 
 **Chosen rendering/action:** समरूपी / समरूपता
 
@@ -8141,7 +8388,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T112-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
 | T112-OLP-0205-B010 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L121) | [mr/content/model-theory/lindstrom/abstract-logics.tex:127-140](../mr/content/model-theory/lindstrom/abstract-logics.tex#L127) | not yet paginated |
 | T112-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
-| T112-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
+| T112-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
 
 **Chosen rendering/action:** विधेय / पद / संख्यापक
 
@@ -8390,7 +8637,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T118 — theory / metatheory</strong> (71 occurrences; medium priority)</summary>
+<summary><strong>T118 — theory / metatheory</strong> (72 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8465,6 +8712,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T118-OLP-0197-B013 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L119) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L118) | 259–260 |
 | T118-OLP-0199-B007 | OLP-0199 ·  | [upstream/content/model-theory/interpolation/introduction.tex:20-25](../upstream/content/model-theory/interpolation/introduction.tex#L20) | [mr/content/model-theory/interpolation/introduction.tex:20-24](../mr/content/model-theory/interpolation/introduction.tex#L20) | not yet paginated |
 | T118-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
+| T118-OLP-0210-B005 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:12-28](../upstream/content/computability/recursive-functions/introduction.tex#L12) | [mr/content/computability/recursive-functions/introduction.tex:12-27](../mr/content/computability/recursive-functions/introduction.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** उपपत्ती / अधिउपपत्ती
 
@@ -8475,7 +8723,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T119 — formation rule / inductive definition / uniquely readable</strong> (59 occurrences; medium priority)</summary>
+<summary><strong>T119 — formation rule / inductive definition / uniquely readable</strong> (62 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8538,6 +8786,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T119-OLP-0157-B006 | OLP-0157 · 15.8 मुक्त चल आणि वाक्य | [upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19](../upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex#L13) | [mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19](../mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex#L13) | 205–206 |
 | T119-OLP-0157-B012 | OLP-0157 · 15.8 मुक्त चल आणि वाक्य | [upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46](../upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex#L43) | [mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46](../mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex#L43) | 205–206 |
 | T119-OLP-0160-B006 | OLP-0160 · 16.1 परिचय | [upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33](../upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L13) | [mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33](../mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex#L13) | 208 |
+| T119-OLP-0213-B009 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:44-61](../upstream/content/computability/recursive-functions/pr-functions.tex#L44) | [mr/content/computability/recursive-functions/pr-functions.tex:46-61](../mr/content/computability/recursive-functions/pr-functions.tex#L46) | not yet paginated |
+| T119-OLP-0213-B011 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:69-80](../upstream/content/computability/recursive-functions/pr-functions.tex#L69) | [mr/content/computability/recursive-functions/pr-functions.tex:68-78](../mr/content/computability/recursive-functions/pr-functions.tex#L68) | not yet paginated |
+| T119-OLP-0214-B005 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** रचनानियम / विगमनाधारित व्याख्या / एकमेव रीतीने वाचनीय
 
@@ -8851,7 +9102,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T121-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
 | T121-OLP-0207-B006 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:13-22](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L13) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:13-22](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L13) | not yet paginated |
 | T121-OLP-0207-B008 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:38-45](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L38) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:38-45](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L38) | not yet paginated |
-| T121-OLP-0207-B013 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L104) | not yet paginated |
+| T121-OLP-0207-B013 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:105-111](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L105) | not yet paginated |
 
 **Chosen rendering/action:** पूर्ति / पूर्ति-संबंध
 
@@ -9645,7 +9896,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T129 — primitive symbol / defined symbol / defined operator</strong> (33 occurrences; routine priority)</summary>
+<summary><strong>T129 — primitive symbol / defined symbol / defined operator</strong> (34 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9682,6 +9933,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T129-OLP-0171-B009 | OLP-0171 · 17.4 संरचना मधील संबंध व्यक्त करणे | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L55) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:55-69](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L55) | 226–227 |
 | T129-OLP-0171-B010 | OLP-0171 · 17.4 संरचना मधील संबंध व्यक्त करणे | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L69) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L71) | 226–227 |
 | T129-OLP-0172-B009 | OLP-0172 · 17.5 संचांची उपपत्ती | [upstream/content/first-order-logic/models-theories/set-theory.tex:73-90](../upstream/content/first-order-logic/models-theories/set-theory.tex#L73) | [mr/content/first-order-logic/models-theories/set-theory.tex:70-86](../mr/content/first-order-logic/models-theories/set-theory.tex#L70) | 227–229 |
+| T129-OLP-0224-B008 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:42-62](../upstream/content/computability/recursive-functions/partial-functions.tex#L42) | [mr/content/computability/recursive-functions/partial-functions.tex:39-57](../mr/content/computability/recursive-functions/partial-functions.tex#L39) | not yet paginated |
 
 **Chosen rendering/action:** आदिम चिन्ह / परिभाषित चिन्ह / परिभाषित कारक
 
@@ -9888,7 +10140,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T134-OLP-0156-B008 | OLP-0156 · 15.7 रचनाक्रमिका | [upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:33-38](../upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L33) | [mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:32-37](../mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex#L32) | 202–205 |
 | T134-OLP-0189-B018 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:135-141](../upstream/content/model-theory/basics/partial-iso.tex#L135) | [mr/content/model-theory/basics/partial-iso.tex:136-142](../mr/content/model-theory/basics/partial-iso.tex#L136) | 246–248 |
 | T134-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
-| T134-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
+| T134-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
 
 **Chosen rendering/action:** चिन्हमाला / जोडणी / उपचिन्हमाला
 
@@ -12409,7 +12661,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T181-OLP-0206-B005 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:11-11](../upstream/content/model-theory/lindstrom/ls-property.tex#L11) | [mr/content/model-theory/lindstrom/ls-property.tex:11-11](../mr/content/model-theory/lindstrom/ls-property.tex#L11) | not yet paginated |
 | T181-OLP-0206-B006 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:13-14](../upstream/content/model-theory/lindstrom/ls-property.tex#L13) | [mr/content/model-theory/lindstrom/ls-property.tex:13-14](../mr/content/model-theory/lindstrom/ls-property.tex#L13) | not yet paginated |
 | T181-OLP-0206-B007 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:16-21](../upstream/content/model-theory/lindstrom/ls-property.tex#L16) | [mr/content/model-theory/lindstrom/ls-property.tex:16-21](../mr/content/model-theory/lindstrom/ls-property.tex#L16) | not yet paginated |
-| T181-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
+| T181-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-130](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L113) | not yet paginated |
 
 **Chosen rendering/action:** संहतता
 
@@ -13530,7 +13782,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T205-OLP-0205-B006 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L24) | [mr/content/model-theory/lindstrom/abstract-logics.tex:24-37](../mr/content/model-theory/lindstrom/abstract-logics.tex#L24) | not yet paginated |
 | T205-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
 | T205-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
-| T205-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
+| T205-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
 
 **Chosen rendering/action:** चर / स्थिर / फलन
 
@@ -13565,7 +13817,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T207 — n-place / arity</strong> (20 occurrences; routine priority)</summary>
+<summary><strong>T207 — n-place / arity</strong> (40 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -13589,6 +13841,26 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T207-OLP-0189-B005 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:12-31](../upstream/content/model-theory/basics/partial-iso.tex#L12) | [mr/content/model-theory/basics/partial-iso.tex:12-31](../mr/content/model-theory/basics/partial-iso.tex#L12) | 246–248 |
 | T207-OLP-0189-B016 | OLP-0189 · 19.6 आंशिक समरूपणे | [upstream/content/model-theory/basics/partial-iso.tex:122-129](../upstream/content/model-theory/basics/partial-iso.tex#L122) | [mr/content/model-theory/basics/partial-iso.tex:124-130](../mr/content/model-theory/basics/partial-iso.tex#L124) | 246–248 |
 | T207-OLP-0202-B006 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:13-32](../upstream/content/model-theory/interpolation/definability.tex#L13) | [mr/content/model-theory/interpolation/definability.tex:13-31](../mr/content/model-theory/interpolation/definability.tex#L13) | not yet paginated |
+| T207-OLP-0211-B008 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:53-69](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L53) | [mr/content/computability/recursive-functions/primitive-recursion.tex:53-68](../mr/content/computability/recursive-functions/primitive-recursion.tex#L53) | not yet paginated |
+| T207-OLP-0211-B009 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L71) | [mr/content/computability/recursive-functions/primitive-recursion.tex:70-95](../mr/content/computability/recursive-functions/primitive-recursion.tex#L70) | not yet paginated |
+| T207-OLP-0211-B010 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:99-130](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L99) | [mr/content/computability/recursive-functions/primitive-recursion.tex:97-127](../mr/content/computability/recursive-functions/primitive-recursion.tex#L97) | not yet paginated |
+| T207-OLP-0212-B005 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:12-15](../upstream/content/computability/recursive-functions/composition.tex#L12) | [mr/content/computability/recursive-functions/composition.tex:12-15](../mr/content/computability/recursive-functions/composition.tex#L12) | not yet paginated |
+| T207-OLP-0212-B006 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:17-27](../upstream/content/computability/recursive-functions/composition.tex#L17) | [mr/content/computability/recursive-functions/composition.tex:17-28](../mr/content/computability/recursive-functions/composition.tex#L17) | not yet paginated |
+| T207-OLP-0212-B007 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:29-46](../upstream/content/computability/recursive-functions/composition.tex#L29) | [mr/content/computability/recursive-functions/composition.tex:30-46](../mr/content/computability/recursive-functions/composition.tex#L30) | not yet paginated |
+| T207-OLP-0212-B008 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:48-57](../upstream/content/computability/recursive-functions/composition.tex#L48) | [mr/content/computability/recursive-functions/composition.tex:48-56](../mr/content/computability/recursive-functions/composition.tex#L48) | not yet paginated |
+| T207-OLP-0212-B009 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:59-65](../upstream/content/computability/recursive-functions/composition.tex#L59) | [mr/content/computability/recursive-functions/composition.tex:58-64](../mr/content/computability/recursive-functions/composition.tex#L58) | not yet paginated |
+| T207-OLP-0212-B010 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:67-88](../upstream/content/computability/recursive-functions/composition.tex#L67) | [mr/content/computability/recursive-functions/composition.tex:66-86](../mr/content/computability/recursive-functions/composition.tex#L66) | not yet paginated |
+| T207-OLP-0213-B006 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:15-24](../upstream/content/computability/recursive-functions/pr-functions.tex#L15) | [mr/content/computability/recursive-functions/pr-functions.tex:15-24](../mr/content/computability/recursive-functions/pr-functions.tex#L15) | not yet paginated |
+| T207-OLP-0213-B007 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:26-35](../upstream/content/computability/recursive-functions/pr-functions.tex#L26) | [mr/content/computability/recursive-functions/pr-functions.tex:26-36](../mr/content/computability/recursive-functions/pr-functions.tex#L26) | not yet paginated |
+| T207-OLP-0213-B009 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:44-61](../upstream/content/computability/recursive-functions/pr-functions.tex#L44) | [mr/content/computability/recursive-functions/pr-functions.tex:46-61](../mr/content/computability/recursive-functions/pr-functions.tex#L46) | not yet paginated |
+| T207-OLP-0213-B014 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:88-114](../upstream/content/computability/recursive-functions/pr-functions.tex#L88) | [mr/content/computability/recursive-functions/pr-functions.tex:86-112](../mr/content/computability/recursive-functions/pr-functions.tex#L86) | not yet paginated |
+| T207-OLP-0213-B018 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:133-162](../upstream/content/computability/recursive-functions/pr-functions.tex#L133) | [mr/content/computability/recursive-functions/pr-functions.tex:130-158](../mr/content/computability/recursive-functions/pr-functions.tex#L130) | not yet paginated |
+| T207-OLP-0214-B005 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L12) | not yet paginated |
+| T207-OLP-0214-B006 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:23-28](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L23) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:22-26](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L22) | not yet paginated |
+| T207-OLP-0214-B007 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L28) | not yet paginated |
+| T207-OLP-0216-B009 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:58-76](../upstream/content/computability/recursive-functions/examples.tex#L58) | [mr/content/computability/recursive-functions/examples.tex:57-75](../mr/content/computability/recursive-functions/examples.tex#L57) | not yet paginated |
+| T207-OLP-0216-B011 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:83-97](../upstream/content/computability/recursive-functions/examples.tex#L83) | [mr/content/computability/recursive-functions/examples.tex:82-97](../mr/content/computability/recursive-functions/examples.tex#L82) | not yet paginated |
+| T207-OLP-0217-B012 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:121-124](../upstream/content/computability/recursive-functions/pr-relations.tex#L121) | [mr/content/computability/recursive-functions/pr-relations.tex:123-126](../mr/content/computability/recursive-functions/pr-relations.tex#L123) | not yet paginated |
 
 **Chosen rendering/action:** n-स्थानी / स्थानसंख्या
 
@@ -14148,10 +14420,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T218-OLP-0206-B014 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:88-107](../upstream/content/model-theory/lindstrom/ls-property.tex#L88) | [mr/content/model-theory/lindstrom/ls-property.tex:90-108](../mr/content/model-theory/lindstrom/ls-property.tex#L90) | not yet paginated |
 | T218-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
 | T218-OLP-0207-B007 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L24) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:24-36](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L24) | not yet paginated |
-| T218-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
-| T218-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L85) | not yet paginated |
-| T218-OLP-0207-B013 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L104) | not yet paginated |
-| T218-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
+| T218-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
+| T218-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:86-103](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L86) | not yet paginated |
+| T218-OLP-0207-B013 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:105-111](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L105) | not yet paginated |
+| T218-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-130](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L113) | not yet paginated |
 
 **Chosen rendering/action:** रचना / अर्थनिर्धारण
 
@@ -14537,12 +14809,24 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T239 — divides evenly / multiple / prime number</strong> (2 occurrences; routine priority)</summary>
+<summary><strong>T239 — divides evenly / multiple / prime number</strong> (14 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T239-OLP-0171-B011 | OLP-0171 · 17.4 संरचना मधील संबंध व्यक्त करणे | [upstream/content/first-order-logic/models-theories/expressing-relations.tex:80-88](../upstream/content/first-order-logic/models-theories/expressing-relations.tex#L80) | [mr/content/first-order-logic/models-theories/expressing-relations.tex:82-90](../mr/content/first-order-logic/models-theories/expressing-relations.tex#L82) | 226–227 |
 | T239-OLP-0179-B007 | OLP-0179 · 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:19-26](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L19) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:18-23](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L18) | 237–240 |
+| T239-OLP-0210-B006 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:30-39](../upstream/content/computability/recursive-functions/introduction.tex#L30) | [mr/content/computability/recursive-functions/introduction.tex:29-38](../mr/content/computability/recursive-functions/introduction.tex#L29) | not yet paginated |
+| T239-OLP-0219-B004 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:9-10](../upstream/content/computability/recursive-functions/primes.tex#L9) | [mr/content/computability/recursive-functions/primes.tex:9-10](../mr/content/computability/recursive-functions/primes.tex#L9) | not yet paginated |
+| T239-OLP-0219-B005 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:12-27](../upstream/content/computability/recursive-functions/primes.tex#L12) | [mr/content/computability/recursive-functions/primes.tex:12-28](../mr/content/computability/recursive-functions/primes.tex#L12) | not yet paginated |
+| T239-OLP-0219-B006 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:29-39](../upstream/content/computability/recursive-functions/primes.tex#L29) | [mr/content/computability/recursive-functions/primes.tex:30-41](../mr/content/computability/recursive-functions/primes.tex#L30) | not yet paginated |
+| T239-OLP-0219-B007 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:41-44](../upstream/content/computability/recursive-functions/primes.tex#L41) | [mr/content/computability/recursive-functions/primes.tex:43-46](../mr/content/computability/recursive-functions/primes.tex#L43) | not yet paginated |
+| T239-OLP-0219-B008 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:46-62](../upstream/content/computability/recursive-functions/primes.tex#L46) | [mr/content/computability/recursive-functions/primes.tex:48-64](../mr/content/computability/recursive-functions/primes.tex#L48) | not yet paginated |
+| T239-OLP-0219-B009 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:64-74](../upstream/content/computability/recursive-functions/primes.tex#L64) | [mr/content/computability/recursive-functions/primes.tex:66-79](../mr/content/computability/recursive-functions/primes.tex#L66) | not yet paginated |
+| T239-OLP-0220-B005 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:12-25](../upstream/content/computability/recursive-functions/sequences.tex#L12) | [mr/content/computability/recursive-functions/sequences.tex:12-24](../mr/content/computability/recursive-functions/sequences.tex#L12) | not yet paginated |
+| T239-OLP-0220-B006 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:27-36](../upstream/content/computability/recursive-functions/sequences.tex#L27) | [mr/content/computability/recursive-functions/sequences.tex:26-35](../mr/content/computability/recursive-functions/sequences.tex#L26) | not yet paginated |
+| T239-OLP-0220-B009 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:48-72](../upstream/content/computability/recursive-functions/sequences.tex#L48) | [mr/content/computability/recursive-functions/sequences.tex:45-70](../mr/content/computability/recursive-functions/sequences.tex#L45) | not yet paginated |
+| T239-OLP-0220-B013 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:96-107](../upstream/content/computability/recursive-functions/sequences.tex#L96) | [mr/content/computability/recursive-functions/sequences.tex:94-105](../mr/content/computability/recursive-functions/sequences.tex#L94) | not yet paginated |
+| T239-OLP-0220-B018 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:144-154](../upstream/content/computability/recursive-functions/sequences.tex#L144) | [mr/content/computability/recursive-functions/sequences.tex:141-153](../mr/content/computability/recursive-functions/sequences.tex#L141) | not yet paginated |
 
 **Chosen rendering/action:** निःशेष भाग जाणे / पटीत संख्या / अविभाज्य संख्या
 
@@ -14794,13 +15078,30 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T253 — finite type / function type / product type / application / projection</strong> (3 occurrences; routine priority)</summary>
+<summary><strong>T253 — finite type / function type / product type / application / projection</strong> (20 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T253-OLP-0178-B007 | OLP-0178 · 18.4 उच्च-क्रम तर्कशास्त्र | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L21) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L21) | 235–237 |
 | T253-OLP-0178-B008 | OLP-0178 · 18.4 उच्च-क्रम तर्कशास्त्र | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L40) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L39) | 235–237 |
 | T253-OLP-0178-B010 | OLP-0178 · 18.4 उच्च-क्रम तर्कशास्त्र | [upstream/content/first-order-logic/beyond/higher-order-logic.tex:102-112](../upstream/content/first-order-logic/beyond/higher-order-logic.tex#L102) | [mr/content/first-order-logic/beyond/higher-order-logic.tex:102-111](../mr/content/first-order-logic/beyond/higher-order-logic.tex#L102) | 235–237 |
+| T253-OLP-0212-B007 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:29-46](../upstream/content/computability/recursive-functions/composition.tex#L29) | [mr/content/computability/recursive-functions/composition.tex:30-46](../mr/content/computability/recursive-functions/composition.tex#L30) | not yet paginated |
+| T253-OLP-0212-B008 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:48-57](../upstream/content/computability/recursive-functions/composition.tex#L48) | [mr/content/computability/recursive-functions/composition.tex:48-56](../mr/content/computability/recursive-functions/composition.tex#L48) | not yet paginated |
+| T253-OLP-0212-B009 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:59-65](../upstream/content/computability/recursive-functions/composition.tex#L59) | [mr/content/computability/recursive-functions/composition.tex:58-64](../mr/content/computability/recursive-functions/composition.tex#L58) | not yet paginated |
+| T253-OLP-0212-B010 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:67-88](../upstream/content/computability/recursive-functions/composition.tex#L67) | [mr/content/computability/recursive-functions/composition.tex:66-86](../mr/content/computability/recursive-functions/composition.tex#L66) | not yet paginated |
+| T253-OLP-0213-B008 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:37-42](../upstream/content/computability/recursive-functions/pr-functions.tex#L37) | [mr/content/computability/recursive-functions/pr-functions.tex:38-44](../mr/content/computability/recursive-functions/pr-functions.tex#L38) | not yet paginated |
+| T253-OLP-0213-B009 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:44-61](../upstream/content/computability/recursive-functions/pr-functions.tex#L44) | [mr/content/computability/recursive-functions/pr-functions.tex:46-61](../mr/content/computability/recursive-functions/pr-functions.tex#L46) | not yet paginated |
+| T253-OLP-0213-B010 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:63-67](../upstream/content/computability/recursive-functions/pr-functions.tex#L63) | [mr/content/computability/recursive-functions/pr-functions.tex:63-66](../mr/content/computability/recursive-functions/pr-functions.tex#L63) | not yet paginated |
+| T253-OLP-0213-B011 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:69-80](../upstream/content/computability/recursive-functions/pr-functions.tex#L69) | [mr/content/computability/recursive-functions/pr-functions.tex:68-78](../mr/content/computability/recursive-functions/pr-functions.tex#L68) | not yet paginated |
+| T253-OLP-0213-B014 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:88-114](../upstream/content/computability/recursive-functions/pr-functions.tex#L88) | [mr/content/computability/recursive-functions/pr-functions.tex:86-112](../mr/content/computability/recursive-functions/pr-functions.tex#L86) | not yet paginated |
+| T253-OLP-0213-B018 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:133-162](../upstream/content/computability/recursive-functions/pr-functions.tex#L133) | [mr/content/computability/recursive-functions/pr-functions.tex:130-158](../mr/content/computability/recursive-functions/pr-functions.tex#L130) | not yet paginated |
+| T253-OLP-0214-B005 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L12) | not yet paginated |
+| T253-OLP-0214-B007 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L28) | not yet paginated |
+| T253-OLP-0215-B007 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L37) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L39) | not yet paginated |
+| T253-OLP-0216-B005 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:13-23](../upstream/content/computability/recursive-functions/examples.tex#L13) | [mr/content/computability/recursive-functions/examples.tex:13-22](../mr/content/computability/recursive-functions/examples.tex#L13) | not yet paginated |
+| T253-OLP-0216-B007 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:29-45](../upstream/content/computability/recursive-functions/examples.tex#L29) | [mr/content/computability/recursive-functions/examples.tex:28-44](../mr/content/computability/recursive-functions/examples.tex#L28) | not yet paginated |
+| T253-OLP-0216-B009 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:58-76](../upstream/content/computability/recursive-functions/examples.tex#L58) | [mr/content/computability/recursive-functions/examples.tex:57-75](../mr/content/computability/recursive-functions/examples.tex#L57) | not yet paginated |
+| T253-OLP-0216-B011 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:83-97](../upstream/content/computability/recursive-functions/examples.tex#L83) | [mr/content/computability/recursive-functions/examples.tex:82-97](../mr/content/computability/recursive-functions/examples.tex#L82) | not yet paginated |
 
 **Chosen rendering/action:** सांत प्रकार / फलन-प्रकार / गुणाकार-प्रकार / उपयोजन / प्रक्षेपण
 
@@ -15146,8 +15447,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T273-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
 | T273-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
 | T273-OLP-0206-B013 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:74-86](../upstream/content/model-theory/lindstrom/ls-property.tex#L74) | [mr/content/model-theory/lindstrom/ls-property.tex:75-88](../mr/content/model-theory/lindstrom/ls-property.tex#L75) | not yet paginated |
-| T273-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
-| T273-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L85) | not yet paginated |
+| T273-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
+| T273-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:86-103](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L86) | not yet paginated |
 
 **Chosen rendering/action:** उपरचना / वर्धित रचना
 
@@ -15247,7 +15548,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T277-OLP-0206-B013 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:74-86](../upstream/content/model-theory/lindstrom/ls-property.tex#L74) | [mr/content/model-theory/lindstrom/ls-property.tex:75-88](../mr/content/model-theory/lindstrom/ls-property.tex#L75) | not yet paginated |
 | T277-OLP-0206-B014 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:88-107](../upstream/content/model-theory/lindstrom/ls-property.tex#L88) | [mr/content/model-theory/lindstrom/ls-property.tex:90-108](../mr/content/model-theory/lindstrom/ls-property.tex#L90) | not yet paginated |
 | T277-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
-| T277-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
+| T277-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-130](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L113) | not yet paginated |
 
 **Chosen rendering/action:** आंशिक समरूपण / आंशिकरीत्या समरूपी / पुढे-मागे गुणधर्म
 
@@ -15384,8 +15685,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T281-OLP-0197-B008 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L42) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L41) | 259–260 |
 | T281-OLP-0197-B009 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L77) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L78) | 259–260 |
 | T281-OLP-0197-B012 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L112) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L111) | 259–260 |
-| T281-OLP-0207-B013 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L104) | not yet paginated |
-| T281-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
+| T281-OLP-0207-B013 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:105-111](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L105) | not yet paginated |
+| T281-OLP-0207-B014 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-130](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L113) | not yet paginated |
 
 **Chosen rendering/action:** मानक / अमानक प्रतिमान, घटक किंवा संख्या
 
@@ -15510,7 +15811,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T287 — computable / computable structure or function; decidable / decidable relation</strong> (6 occurrences; routine priority)</summary>
+<summary><strong>T287 — computable / computable structure or function; decidable / decidable relation</strong> (15 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -15520,6 +15821,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T287-OLP-0197-B010 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:100-105](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L100) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:100-104](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L100) | 259–260 |
 | T287-OLP-0197-B012 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L112) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L111) | 259–260 |
 | T287-OLP-0197-B013 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L119) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L118) | 259–260 |
+| T287-OLP-0210-B006 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:30-39](../upstream/content/computability/recursive-functions/introduction.tex#L30) | [mr/content/computability/recursive-functions/introduction.tex:29-38](../mr/content/computability/recursive-functions/introduction.tex#L29) | not yet paginated |
+| T287-OLP-0210-B007 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:41-52](../upstream/content/computability/recursive-functions/introduction.tex#L41) | [mr/content/computability/recursive-functions/introduction.tex:40-51](../mr/content/computability/recursive-functions/introduction.tex#L40) | not yet paginated |
+| T287-OLP-0212-B006 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:17-27](../upstream/content/computability/recursive-functions/composition.tex#L17) | [mr/content/computability/recursive-functions/composition.tex:17-28](../mr/content/computability/recursive-functions/composition.tex#L17) | not yet paginated |
+| T287-OLP-0215-B004 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:9-10](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L9) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:9-10](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L9) | not yet paginated |
+| T287-OLP-0215-B005 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:12-30](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L12) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:12-33](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L12) | not yet paginated |
+| T287-OLP-0215-B006 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L32) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:35-37](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L35) | not yet paginated |
+| T287-OLP-0215-B007 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L37) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L39) | not yet paginated |
+| T287-OLP-0217-B007 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:38-45](../upstream/content/computability/recursive-functions/pr-relations.tex#L38) | [mr/content/computability/recursive-functions/pr-relations.tex:37-44](../mr/content/computability/recursive-functions/pr-relations.tex#L37) | not yet paginated |
+| T287-OLP-0218-B005 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L12) | [mr/content/computability/recursive-functions/bounded-minimization.tex:12-25](../mr/content/computability/recursive-functions/bounded-minimization.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** संगणनक्षम / संगणनक्षम रचना किंवा फलन; निर्णेय / निर्णेय संबंध
 
@@ -15530,11 +15840,48 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T288 — Turing machine / primitive recursion</strong> (1 occurrence; medium priority)</summary>
+<summary><strong>T288 — Turing machine / primitive recursion</strong> (38 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
 | T288-OLP-0197-B005 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L12) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L12) | 259–260 |
+| T288-OLP-0210-B005 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:12-28](../upstream/content/computability/recursive-functions/introduction.tex#L12) | [mr/content/computability/recursive-functions/introduction.tex:12-27](../mr/content/computability/recursive-functions/introduction.tex#L12) | not yet paginated |
+| T288-OLP-0210-B006 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:30-39](../upstream/content/computability/recursive-functions/introduction.tex#L30) | [mr/content/computability/recursive-functions/introduction.tex:29-38](../mr/content/computability/recursive-functions/introduction.tex#L29) | not yet paginated |
+| T288-OLP-0210-B007 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:41-52](../upstream/content/computability/recursive-functions/introduction.tex#L41) | [mr/content/computability/recursive-functions/introduction.tex:40-51](../mr/content/computability/recursive-functions/introduction.tex#L40) | not yet paginated |
+| T288-OLP-0211-B004 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:9-10](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L9) | [mr/content/computability/recursive-functions/primitive-recursion.tex:9-10](../mr/content/computability/recursive-functions/primitive-recursion.tex#L9) | not yet paginated |
+| T288-OLP-0211-B005 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L12) | [mr/content/computability/recursive-functions/primitive-recursion.tex:12-25](../mr/content/computability/recursive-functions/primitive-recursion.tex#L12) | not yet paginated |
+| T288-OLP-0211-B006 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:26-41](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L26) | [mr/content/computability/recursive-functions/primitive-recursion.tex:27-42](../mr/content/computability/recursive-functions/primitive-recursion.tex#L27) | not yet paginated |
+| T288-OLP-0211-B007 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:43-51](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L43) | [mr/content/computability/recursive-functions/primitive-recursion.tex:44-51](../mr/content/computability/recursive-functions/primitive-recursion.tex#L44) | not yet paginated |
+| T288-OLP-0211-B008 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:53-69](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L53) | [mr/content/computability/recursive-functions/primitive-recursion.tex:53-68](../mr/content/computability/recursive-functions/primitive-recursion.tex#L53) | not yet paginated |
+| T288-OLP-0211-B009 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L71) | [mr/content/computability/recursive-functions/primitive-recursion.tex:70-95](../mr/content/computability/recursive-functions/primitive-recursion.tex#L70) | not yet paginated |
+| T288-OLP-0211-B010 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:99-130](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L99) | [mr/content/computability/recursive-functions/primitive-recursion.tex:97-127](../mr/content/computability/recursive-functions/primitive-recursion.tex#L97) | not yet paginated |
+| T288-OLP-0212-B007 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:29-46](../upstream/content/computability/recursive-functions/composition.tex#L29) | [mr/content/computability/recursive-functions/composition.tex:30-46](../mr/content/computability/recursive-functions/composition.tex#L30) | not yet paginated |
+| T288-OLP-0213-B005 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:12-13](../upstream/content/computability/recursive-functions/pr-functions.tex#L12) | [mr/content/computability/recursive-functions/pr-functions.tex:12-13](../mr/content/computability/recursive-functions/pr-functions.tex#L12) | not yet paginated |
+| T288-OLP-0213-B006 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:15-24](../upstream/content/computability/recursive-functions/pr-functions.tex#L15) | [mr/content/computability/recursive-functions/pr-functions.tex:15-24](../mr/content/computability/recursive-functions/pr-functions.tex#L15) | not yet paginated |
+| T288-OLP-0213-B009 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:44-61](../upstream/content/computability/recursive-functions/pr-functions.tex#L44) | [mr/content/computability/recursive-functions/pr-functions.tex:46-61](../mr/content/computability/recursive-functions/pr-functions.tex#L46) | not yet paginated |
+| T288-OLP-0213-B010 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:63-67](../upstream/content/computability/recursive-functions/pr-functions.tex#L63) | [mr/content/computability/recursive-functions/pr-functions.tex:63-66](../mr/content/computability/recursive-functions/pr-functions.tex#L63) | not yet paginated |
+| T288-OLP-0213-B011 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:69-80](../upstream/content/computability/recursive-functions/pr-functions.tex#L69) | [mr/content/computability/recursive-functions/pr-functions.tex:68-78](../mr/content/computability/recursive-functions/pr-functions.tex#L68) | not yet paginated |
+| T288-OLP-0213-B014 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:88-114](../upstream/content/computability/recursive-functions/pr-functions.tex#L88) | [mr/content/computability/recursive-functions/pr-functions.tex:86-112](../mr/content/computability/recursive-functions/pr-functions.tex#L86) | not yet paginated |
+| T288-OLP-0213-B017 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:125-131](../upstream/content/computability/recursive-functions/pr-functions.tex#L125) | [mr/content/computability/recursive-functions/pr-functions.tex:123-128](../mr/content/computability/recursive-functions/pr-functions.tex#L123) | not yet paginated |
+| T288-OLP-0213-B018 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:133-162](../upstream/content/computability/recursive-functions/pr-functions.tex#L133) | [mr/content/computability/recursive-functions/pr-functions.tex:130-158](../mr/content/computability/recursive-functions/pr-functions.tex#L130) | not yet paginated |
+| T288-OLP-0214-B006 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:23-28](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L23) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:22-26](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L22) | not yet paginated |
+| T288-OLP-0214-B007 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L28) | not yet paginated |
+| T288-OLP-0215-B005 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:12-30](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L12) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:12-33](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L12) | not yet paginated |
+| T288-OLP-0215-B006 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L32) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:35-37](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L35) | not yet paginated |
+| T288-OLP-0215-B007 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L37) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L39) | not yet paginated |
+| T288-OLP-0216-B007 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:29-45](../upstream/content/computability/recursive-functions/examples.tex#L29) | [mr/content/computability/recursive-functions/examples.tex:28-44](../mr/content/computability/recursive-functions/examples.tex#L28) | not yet paginated |
+| T288-OLP-0216-B009 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:58-76](../upstream/content/computability/recursive-functions/examples.tex#L58) | [mr/content/computability/recursive-functions/examples.tex:57-75](../mr/content/computability/recursive-functions/examples.tex#L57) | not yet paginated |
+| T288-OLP-0216-B011 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:83-97](../upstream/content/computability/recursive-functions/examples.tex#L83) | [mr/content/computability/recursive-functions/examples.tex:82-97](../mr/content/computability/recursive-functions/examples.tex#L82) | not yet paginated |
+| T288-OLP-0216-B013 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:110-116](../upstream/content/computability/recursive-functions/examples.tex#L110) | [mr/content/computability/recursive-functions/examples.tex:110-116](../mr/content/computability/recursive-functions/examples.tex#L110) | not yet paginated |
+| T288-OLP-0216-B022 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:162-168](../upstream/content/computability/recursive-functions/examples.tex#L162) | [mr/content/computability/recursive-functions/examples.tex:164-169](../mr/content/computability/recursive-functions/examples.tex#L164) | not yet paginated |
+| T288-OLP-0216-B024 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:187-193](../upstream/content/computability/recursive-functions/examples.tex#L187) | [mr/content/computability/recursive-functions/examples.tex:187-193](../mr/content/computability/recursive-functions/examples.tex#L187) | not yet paginated |
+| T288-OLP-0217-B013 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:126-138](../upstream/content/computability/recursive-functions/pr-relations.tex#L126) | [mr/content/computability/recursive-functions/pr-relations.tex:128-140](../mr/content/computability/recursive-functions/pr-relations.tex#L128) | not yet paginated |
+| T288-OLP-0218-B008 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L41) | [mr/content/computability/recursive-functions/bounded-minimization.tex:41-63](../mr/content/computability/recursive-functions/bounded-minimization.tex#L41) | not yet paginated |
+| T288-OLP-0218-B009 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L64) | [mr/content/computability/recursive-functions/bounded-minimization.tex:65-70](../mr/content/computability/recursive-functions/bounded-minimization.tex#L65) | not yet paginated |
+| T288-OLP-0223-B010 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:81-86](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L81) | [mr/content/computability/recursive-functions/non-pr-functions.tex:78-83](../mr/content/computability/recursive-functions/non-pr-functions.tex#L78) | not yet paginated |
+| T288-OLP-0223-B011 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L88) | [mr/content/computability/recursive-functions/non-pr-functions.tex:85-92](../mr/content/computability/recursive-functions/non-pr-functions.tex#L85) | not yet paginated |
+| T288-OLP-0224-B006 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:24-30](../upstream/content/computability/recursive-functions/partial-functions.tex#L24) | [mr/content/computability/recursive-functions/partial-functions.tex:23-28](../mr/content/computability/recursive-functions/partial-functions.tex#L23) | not yet paginated |
+| T288-OLP-0224-B010 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:75-87](../upstream/content/computability/recursive-functions/partial-functions.tex#L75) | [mr/content/computability/recursive-functions/partial-functions.tex:71-81](../mr/content/computability/recursive-functions/partial-functions.tex#L71) | not yet paginated |
 
 **Chosen rendering/action:** ट्यूरिंग यंत्र / आदिम पुनरावर्तन
 
@@ -15668,7 +16015,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T295 — Lindström's theorem / characterization</strong> (4 occurrences; medium priority)</summary>
+<summary><strong>T295 — Lindström's theorem / characterization</strong> (5 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -15676,6 +16023,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T295-OLP-0204-B005 | OLP-0204 ·  | [upstream/content/model-theory/lindstrom/introduction.tex:12-21](../upstream/content/model-theory/lindstrom/introduction.tex#L12) | [mr/content/model-theory/lindstrom/introduction.tex:12-21](../mr/content/model-theory/lindstrom/introduction.tex#L12) | not yet paginated |
 | T295-OLP-0207-B005 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:11-11](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L11) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:11-11](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L11) | not yet paginated |
 | T295-OLP-0207-B009 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L47) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:47-54](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L47) | not yet paginated |
+| T295-OLP-0212-B007 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:29-46](../upstream/content/computability/recursive-functions/composition.tex#L29) | [mr/content/computability/recursive-functions/composition.tex:30-46](../mr/content/computability/recursive-functions/composition.tex#L30) | not yet paginated |
 
 **Chosen rendering/action:** लिंडस्ट्रॉमचे प्रमेय / लक्षणचित्रण
 
@@ -15737,7 +16085,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T298-OLP-0205-B010 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L121) | [mr/content/model-theory/lindstrom/abstract-logics.tex:127-140](../mr/content/model-theory/lindstrom/abstract-logics.tex#L127) | not yet paginated |
 | T298-OLP-0206-B011 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:49-57](../upstream/content/model-theory/lindstrom/ls-property.tex#L49) | [mr/content/model-theory/lindstrom/ls-property.tex:48-57](../mr/content/model-theory/lindstrom/ls-property.tex#L48) | not yet paginated |
 | T298-OLP-0206-B015 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:109-122](../upstream/content/model-theory/lindstrom/ls-property.tex#L109) | [mr/content/model-theory/lindstrom/ls-property.tex:110-127](../mr/content/model-theory/lindstrom/ls-property.tex#L110) | not yet paginated |
-| T298-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
+| T298-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
 
 **Chosen rendering/action:** L-एकस्वनिकता, विस्तार, समरूपता, पुनर्नामकरण, बूलीय, संख्यापक आणि सापेक्षीकरण गुणधर्म
 
@@ -15774,14 +16122,611 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
-| T300-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L85) | not yet paginated |
-| T300-OLP-0207-B013 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L104) | not yet paginated |
+| T300-OLP-0207-B012 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:86-103](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L86) | not yet paginated |
+| T300-OLP-0207-B013 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:105-111](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L105) | not yet paginated |
 
 **Chosen rendering/action:** विविक्त रेषीय क्रम
 
 **Confidence/status:** medium; source-defined transparent extension of established order terminology; exact compound unattested; expert-reviewable; open to correction.
 
 **Please double-check:** Is विविक्त रेषीय क्रम the conventional Marathi term for a discrete linear order in this compactness construction?
+
+</details>
+
+<details>
+<summary><strong>T301 — characteristic function (of a set or relation)</strong> (8 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T301-OLP-0210-B006 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:30-39](../upstream/content/computability/recursive-functions/introduction.tex#L30) | [mr/content/computability/recursive-functions/introduction.tex:29-38](../mr/content/computability/recursive-functions/introduction.tex#L29) | not yet paginated |
+| T301-OLP-0217-B005 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:13-25](../upstream/content/computability/recursive-functions/pr-relations.tex#L13) | [mr/content/computability/recursive-functions/pr-relations.tex:13-24](../mr/content/computability/recursive-functions/pr-relations.tex#L13) | not yet paginated |
+| T301-OLP-0217-B006 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:27-36](../upstream/content/computability/recursive-functions/pr-relations.tex#L27) | [mr/content/computability/recursive-functions/pr-relations.tex:26-35](../mr/content/computability/recursive-functions/pr-relations.tex#L26) | not yet paginated |
+| T301-OLP-0217-B009 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:60-86](../upstream/content/computability/recursive-functions/pr-relations.tex#L60) | [mr/content/computability/recursive-functions/pr-relations.tex:59-86](../mr/content/computability/recursive-functions/pr-relations.tex#L59) | not yet paginated |
+| T301-OLP-0217-B011 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:101-119](../upstream/content/computability/recursive-functions/pr-relations.tex#L101) | [mr/content/computability/recursive-functions/pr-relations.tex:102-121](../mr/content/computability/recursive-functions/pr-relations.tex#L102) | not yet paginated |
+| T301-OLP-0217-B015 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:158-167](../upstream/content/computability/recursive-functions/pr-relations.tex#L158) | [mr/content/computability/recursive-functions/pr-relations.tex:159-168](../mr/content/computability/recursive-functions/pr-relations.tex#L159) | not yet paginated |
+| T301-OLP-0218-B009 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L64) | [mr/content/computability/recursive-functions/bounded-minimization.tex:65-70](../mr/content/computability/recursive-functions/bounded-minimization.tex#L65) | not yet paginated |
+| T301-OLP-0224-B011 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:89-96](../upstream/content/computability/recursive-functions/partial-functions.tex#L89) | [mr/content/computability/recursive-functions/partial-functions.tex:83-90](../mr/content/computability/recursive-functions/partial-functions.tex#L83) | not yet paginated |
+
+**Chosen rendering/action:** जातिबोधक फल
+
+**Confidence/status:** high; adopted direct official mathematical attestation with a source-controlled relation extension; open to correction.
+
+**Please double-check:** Should the edition follow the official mathematics-glossary term जातिबोधक फल even though indicator-function terminology may be more familiar in some modern texts?
+
+</details>
+
+<details>
+<summary><strong>T302 — primitive recursive / partial recursive / general recursive function</strong> (99 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T302-OLP-0210-B006 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:30-39](../upstream/content/computability/recursive-functions/introduction.tex#L30) | [mr/content/computability/recursive-functions/introduction.tex:29-38](../mr/content/computability/recursive-functions/introduction.tex#L29) | not yet paginated |
+| T302-OLP-0210-B007 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:41-52](../upstream/content/computability/recursive-functions/introduction.tex#L41) | [mr/content/computability/recursive-functions/introduction.tex:40-51](../mr/content/computability/recursive-functions/introduction.tex#L40) | not yet paginated |
+| T302-OLP-0211-B007 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:43-51](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L43) | [mr/content/computability/recursive-functions/primitive-recursion.tex:44-51](../mr/content/computability/recursive-functions/primitive-recursion.tex#L44) | not yet paginated |
+| T302-OLP-0211-B008 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:53-69](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L53) | [mr/content/computability/recursive-functions/primitive-recursion.tex:53-68](../mr/content/computability/recursive-functions/primitive-recursion.tex#L53) | not yet paginated |
+| T302-OLP-0211-B009 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L71) | [mr/content/computability/recursive-functions/primitive-recursion.tex:70-95](../mr/content/computability/recursive-functions/primitive-recursion.tex#L70) | not yet paginated |
+| T302-OLP-0211-B010 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:99-130](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L99) | [mr/content/computability/recursive-functions/primitive-recursion.tex:97-127](../mr/content/computability/recursive-functions/primitive-recursion.tex#L97) | not yet paginated |
+| T302-OLP-0213-B004 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:9-10](../upstream/content/computability/recursive-functions/pr-functions.tex#L9) | [mr/content/computability/recursive-functions/pr-functions.tex:9-10](../mr/content/computability/recursive-functions/pr-functions.tex#L9) | not yet paginated |
+| T302-OLP-0213-B005 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:12-13](../upstream/content/computability/recursive-functions/pr-functions.tex#L12) | [mr/content/computability/recursive-functions/pr-functions.tex:12-13](../mr/content/computability/recursive-functions/pr-functions.tex#L12) | not yet paginated |
+| T302-OLP-0213-B006 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:15-24](../upstream/content/computability/recursive-functions/pr-functions.tex#L15) | [mr/content/computability/recursive-functions/pr-functions.tex:15-24](../mr/content/computability/recursive-functions/pr-functions.tex#L15) | not yet paginated |
+| T302-OLP-0213-B007 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:26-35](../upstream/content/computability/recursive-functions/pr-functions.tex#L26) | [mr/content/computability/recursive-functions/pr-functions.tex:26-36](../mr/content/computability/recursive-functions/pr-functions.tex#L26) | not yet paginated |
+| T302-OLP-0213-B008 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:37-42](../upstream/content/computability/recursive-functions/pr-functions.tex#L37) | [mr/content/computability/recursive-functions/pr-functions.tex:38-44](../mr/content/computability/recursive-functions/pr-functions.tex#L38) | not yet paginated |
+| T302-OLP-0213-B009 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:44-61](../upstream/content/computability/recursive-functions/pr-functions.tex#L44) | [mr/content/computability/recursive-functions/pr-functions.tex:46-61](../mr/content/computability/recursive-functions/pr-functions.tex#L46) | not yet paginated |
+| T302-OLP-0213-B010 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:63-67](../upstream/content/computability/recursive-functions/pr-functions.tex#L63) | [mr/content/computability/recursive-functions/pr-functions.tex:63-66](../mr/content/computability/recursive-functions/pr-functions.tex#L63) | not yet paginated |
+| T302-OLP-0213-B011 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:69-80](../upstream/content/computability/recursive-functions/pr-functions.tex#L69) | [mr/content/computability/recursive-functions/pr-functions.tex:68-78](../mr/content/computability/recursive-functions/pr-functions.tex#L68) | not yet paginated |
+| T302-OLP-0213-B012 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:82-82](../upstream/content/computability/recursive-functions/pr-functions.tex#L82) | [mr/content/computability/recursive-functions/pr-functions.tex:80-80](../mr/content/computability/recursive-functions/pr-functions.tex#L80) | not yet paginated |
+| T302-OLP-0213-B013 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:84-86](../upstream/content/computability/recursive-functions/pr-functions.tex#L84) | [mr/content/computability/recursive-functions/pr-functions.tex:82-84](../mr/content/computability/recursive-functions/pr-functions.tex#L82) | not yet paginated |
+| T302-OLP-0213-B014 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:88-114](../upstream/content/computability/recursive-functions/pr-functions.tex#L88) | [mr/content/computability/recursive-functions/pr-functions.tex:86-112](../mr/content/computability/recursive-functions/pr-functions.tex#L86) | not yet paginated |
+| T302-OLP-0213-B015 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:116-119](../upstream/content/computability/recursive-functions/pr-functions.tex#L116) | [mr/content/computability/recursive-functions/pr-functions.tex:114-117](../mr/content/computability/recursive-functions/pr-functions.tex#L114) | not yet paginated |
+| T302-OLP-0213-B017 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:125-131](../upstream/content/computability/recursive-functions/pr-functions.tex#L125) | [mr/content/computability/recursive-functions/pr-functions.tex:123-128](../mr/content/computability/recursive-functions/pr-functions.tex#L123) | not yet paginated |
+| T302-OLP-0213-B018 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:133-162](../upstream/content/computability/recursive-functions/pr-functions.tex#L133) | [mr/content/computability/recursive-functions/pr-functions.tex:130-158](../mr/content/computability/recursive-functions/pr-functions.tex#L130) | not yet paginated |
+| T302-OLP-0214-B004 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:9-10](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L9) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:9-10](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L9) | not yet paginated |
+| T302-OLP-0214-B005 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L12) | not yet paginated |
+| T302-OLP-0214-B006 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:23-28](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L23) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:22-26](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L22) | not yet paginated |
+| T302-OLP-0214-B007 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L28) | not yet paginated |
+| T302-OLP-0214-B008 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:47-49](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L47) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:45-47](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L45) | not yet paginated |
+| T302-OLP-0215-B004 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:9-10](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L9) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:9-10](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L9) | not yet paginated |
+| T302-OLP-0215-B005 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:12-30](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L12) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:12-33](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L12) | not yet paginated |
+| T302-OLP-0215-B006 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L32) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:35-37](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L35) | not yet paginated |
+| T302-OLP-0215-B007 | OLP-0215 ·  | [upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40](../upstream/content/computability/recursive-functions/pr-functions-computable.tex#L37) | [mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41](../mr/content/computability/recursive-functions/pr-functions-computable.tex#L39) | not yet paginated |
+| T302-OLP-0216-B004 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:9-10](../upstream/content/computability/recursive-functions/examples.tex#L9) | [mr/content/computability/recursive-functions/examples.tex:9-10](../mr/content/computability/recursive-functions/examples.tex#L9) | not yet paginated |
+| T302-OLP-0216-B005 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:13-23](../upstream/content/computability/recursive-functions/examples.tex#L13) | [mr/content/computability/recursive-functions/examples.tex:13-22](../mr/content/computability/recursive-functions/examples.tex#L13) | not yet paginated |
+| T302-OLP-0216-B006 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:25-27](../upstream/content/computability/recursive-functions/examples.tex#L25) | [mr/content/computability/recursive-functions/examples.tex:24-26](../mr/content/computability/recursive-functions/examples.tex#L24) | not yet paginated |
+| T302-OLP-0216-B007 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:29-45](../upstream/content/computability/recursive-functions/examples.tex#L29) | [mr/content/computability/recursive-functions/examples.tex:28-44](../mr/content/computability/recursive-functions/examples.tex#L28) | not yet paginated |
+| T302-OLP-0216-B008 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:47-56](../upstream/content/computability/recursive-functions/examples.tex#L47) | [mr/content/computability/recursive-functions/examples.tex:46-55](../mr/content/computability/recursive-functions/examples.tex#L46) | not yet paginated |
+| T302-OLP-0216-B009 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:58-76](../upstream/content/computability/recursive-functions/examples.tex#L58) | [mr/content/computability/recursive-functions/examples.tex:57-75](../mr/content/computability/recursive-functions/examples.tex#L57) | not yet paginated |
+| T302-OLP-0216-B010 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:78-81](../upstream/content/computability/recursive-functions/examples.tex#L78) | [mr/content/computability/recursive-functions/examples.tex:77-80](../mr/content/computability/recursive-functions/examples.tex#L77) | not yet paginated |
+| T302-OLP-0216-B011 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:83-97](../upstream/content/computability/recursive-functions/examples.tex#L83) | [mr/content/computability/recursive-functions/examples.tex:82-97](../mr/content/computability/recursive-functions/examples.tex#L82) | not yet paginated |
+| T302-OLP-0216-B012 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:99-108](../upstream/content/computability/recursive-functions/examples.tex#L99) | [mr/content/computability/recursive-functions/examples.tex:99-108](../mr/content/computability/recursive-functions/examples.tex#L99) | not yet paginated |
+| T302-OLP-0216-B013 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:110-116](../upstream/content/computability/recursive-functions/examples.tex#L110) | [mr/content/computability/recursive-functions/examples.tex:110-116](../mr/content/computability/recursive-functions/examples.tex#L110) | not yet paginated |
+| T302-OLP-0216-B014 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:118-120](../upstream/content/computability/recursive-functions/examples.tex#L118) | [mr/content/computability/recursive-functions/examples.tex:118-120](../mr/content/computability/recursive-functions/examples.tex#L118) | not yet paginated |
+| T302-OLP-0216-B015 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:122-126](../upstream/content/computability/recursive-functions/examples.tex#L122) | [mr/content/computability/recursive-functions/examples.tex:122-126](../mr/content/computability/recursive-functions/examples.tex#L122) | not yet paginated |
+| T302-OLP-0216-B016 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:128-130](../upstream/content/computability/recursive-functions/examples.tex#L128) | [mr/content/computability/recursive-functions/examples.tex:128-130](../mr/content/computability/recursive-functions/examples.tex#L128) | not yet paginated |
+| T302-OLP-0216-B017 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:132-140](../upstream/content/computability/recursive-functions/examples.tex#L132) | [mr/content/computability/recursive-functions/examples.tex:132-141](../mr/content/computability/recursive-functions/examples.tex#L132) | not yet paginated |
+| T302-OLP-0216-B018 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:142-145](../upstream/content/computability/recursive-functions/examples.tex#L142) | [mr/content/computability/recursive-functions/examples.tex:143-146](../mr/content/computability/recursive-functions/examples.tex#L143) | not yet paginated |
+| T302-OLP-0216-B020 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:151-153](../upstream/content/computability/recursive-functions/examples.tex#L151) | [mr/content/computability/recursive-functions/examples.tex:152-154](../mr/content/computability/recursive-functions/examples.tex#L152) | not yet paginated |
+| T302-OLP-0216-B021 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:155-160](../upstream/content/computability/recursive-functions/examples.tex#L155) | [mr/content/computability/recursive-functions/examples.tex:156-162](../mr/content/computability/recursive-functions/examples.tex#L156) | not yet paginated |
+| T302-OLP-0216-B022 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:162-168](../upstream/content/computability/recursive-functions/examples.tex#L162) | [mr/content/computability/recursive-functions/examples.tex:164-169](../mr/content/computability/recursive-functions/examples.tex#L164) | not yet paginated |
+| T302-OLP-0216-B023 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:170-185](../upstream/content/computability/recursive-functions/examples.tex#L170) | [mr/content/computability/recursive-functions/examples.tex:171-185](../mr/content/computability/recursive-functions/examples.tex#L171) | not yet paginated |
+| T302-OLP-0216-B024 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:187-193](../upstream/content/computability/recursive-functions/examples.tex#L187) | [mr/content/computability/recursive-functions/examples.tex:187-193](../mr/content/computability/recursive-functions/examples.tex#L187) | not yet paginated |
+| T302-OLP-0217-B004 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:9-10](../upstream/content/computability/recursive-functions/pr-relations.tex#L9) | [mr/content/computability/recursive-functions/pr-relations.tex:9-10](../mr/content/computability/recursive-functions/pr-relations.tex#L9) | not yet paginated |
+| T302-OLP-0217-B005 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:13-25](../upstream/content/computability/recursive-functions/pr-relations.tex#L13) | [mr/content/computability/recursive-functions/pr-relations.tex:13-24](../mr/content/computability/recursive-functions/pr-relations.tex#L13) | not yet paginated |
+| T302-OLP-0217-B006 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:27-36](../upstream/content/computability/recursive-functions/pr-relations.tex#L27) | [mr/content/computability/recursive-functions/pr-relations.tex:26-35](../mr/content/computability/recursive-functions/pr-relations.tex#L26) | not yet paginated |
+| T302-OLP-0217-B007 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:38-45](../upstream/content/computability/recursive-functions/pr-relations.tex#L38) | [mr/content/computability/recursive-functions/pr-relations.tex:37-44](../mr/content/computability/recursive-functions/pr-relations.tex#L37) | not yet paginated |
+| T302-OLP-0217-B008 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:48-58](../upstream/content/computability/recursive-functions/pr-relations.tex#L48) | [mr/content/computability/recursive-functions/pr-relations.tex:47-57](../mr/content/computability/recursive-functions/pr-relations.tex#L47) | not yet paginated |
+| T302-OLP-0217-B009 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:60-86](../upstream/content/computability/recursive-functions/pr-relations.tex#L60) | [mr/content/computability/recursive-functions/pr-relations.tex:59-86](../mr/content/computability/recursive-functions/pr-relations.tex#L59) | not yet paginated |
+| T302-OLP-0217-B010 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:88-99](../upstream/content/computability/recursive-functions/pr-relations.tex#L88) | [mr/content/computability/recursive-functions/pr-relations.tex:88-100](../mr/content/computability/recursive-functions/pr-relations.tex#L88) | not yet paginated |
+| T302-OLP-0217-B011 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:101-119](../upstream/content/computability/recursive-functions/pr-relations.tex#L101) | [mr/content/computability/recursive-functions/pr-relations.tex:102-121](../mr/content/computability/recursive-functions/pr-relations.tex#L102) | not yet paginated |
+| T302-OLP-0217-B012 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:121-124](../upstream/content/computability/recursive-functions/pr-relations.tex#L121) | [mr/content/computability/recursive-functions/pr-relations.tex:123-126](../mr/content/computability/recursive-functions/pr-relations.tex#L123) | not yet paginated |
+| T302-OLP-0217-B013 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:126-138](../upstream/content/computability/recursive-functions/pr-relations.tex#L126) | [mr/content/computability/recursive-functions/pr-relations.tex:128-140](../mr/content/computability/recursive-functions/pr-relations.tex#L128) | not yet paginated |
+| T302-OLP-0217-B014 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:140-156](../upstream/content/computability/recursive-functions/pr-relations.tex#L140) | [mr/content/computability/recursive-functions/pr-relations.tex:142-157](../mr/content/computability/recursive-functions/pr-relations.tex#L142) | not yet paginated |
+| T302-OLP-0217-B015 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:158-167](../upstream/content/computability/recursive-functions/pr-relations.tex#L158) | [mr/content/computability/recursive-functions/pr-relations.tex:159-168](../mr/content/computability/recursive-functions/pr-relations.tex#L159) | not yet paginated |
+| T302-OLP-0218-B005 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L12) | [mr/content/computability/recursive-functions/bounded-minimization.tex:12-25](../mr/content/computability/recursive-functions/bounded-minimization.tex#L12) | not yet paginated |
+| T302-OLP-0218-B006 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:27-35](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L27) | [mr/content/computability/recursive-functions/bounded-minimization.tex:27-35](../mr/content/computability/recursive-functions/bounded-minimization.tex#L27) | not yet paginated |
+| T302-OLP-0218-B007 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:37-39](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L37) | [mr/content/computability/recursive-functions/bounded-minimization.tex:37-39](../mr/content/computability/recursive-functions/bounded-minimization.tex#L37) | not yet paginated |
+| T302-OLP-0218-B008 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L41) | [mr/content/computability/recursive-functions/bounded-minimization.tex:41-63](../mr/content/computability/recursive-functions/bounded-minimization.tex#L41) | not yet paginated |
+| T302-OLP-0218-B009 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L64) | [mr/content/computability/recursive-functions/bounded-minimization.tex:65-70](../mr/content/computability/recursive-functions/bounded-minimization.tex#L65) | not yet paginated |
+| T302-OLP-0219-B005 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:12-27](../upstream/content/computability/recursive-functions/primes.tex#L12) | [mr/content/computability/recursive-functions/primes.tex:12-28](../mr/content/computability/recursive-functions/primes.tex#L12) | not yet paginated |
+| T302-OLP-0219-B006 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:29-39](../upstream/content/computability/recursive-functions/primes.tex#L29) | [mr/content/computability/recursive-functions/primes.tex:30-41](../mr/content/computability/recursive-functions/primes.tex#L30) | not yet paginated |
+| T302-OLP-0219-B008 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:46-62](../upstream/content/computability/recursive-functions/primes.tex#L46) | [mr/content/computability/recursive-functions/primes.tex:48-64](../mr/content/computability/recursive-functions/primes.tex#L48) | not yet paginated |
+| T302-OLP-0220-B007 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:38-41](../upstream/content/computability/recursive-functions/sequences.tex#L38) | [mr/content/computability/recursive-functions/sequences.tex:37-39](../mr/content/computability/recursive-functions/sequences.tex#L37) | not yet paginated |
+| T302-OLP-0220-B008 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:43-46](../upstream/content/computability/recursive-functions/sequences.tex#L43) | [mr/content/computability/recursive-functions/sequences.tex:41-43](../mr/content/computability/recursive-functions/sequences.tex#L41) | not yet paginated |
+| T302-OLP-0220-B009 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:48-72](../upstream/content/computability/recursive-functions/sequences.tex#L48) | [mr/content/computability/recursive-functions/sequences.tex:45-70](../mr/content/computability/recursive-functions/sequences.tex#L45) | not yet paginated |
+| T302-OLP-0220-B010 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:74-77](../upstream/content/computability/recursive-functions/sequences.tex#L74) | [mr/content/computability/recursive-functions/sequences.tex:72-75](../mr/content/computability/recursive-functions/sequences.tex#L72) | not yet paginated |
+| T302-OLP-0220-B012 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:90-94](../upstream/content/computability/recursive-functions/sequences.tex#L90) | [mr/content/computability/recursive-functions/sequences.tex:88-92](../mr/content/computability/recursive-functions/sequences.tex#L88) | not yet paginated |
+| T302-OLP-0220-B015 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:119-122](../upstream/content/computability/recursive-functions/sequences.tex#L119) | [mr/content/computability/recursive-functions/sequences.tex:117-120](../mr/content/computability/recursive-functions/sequences.tex#L117) | not yet paginated |
+| T302-OLP-0220-B016 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:124-140](../upstream/content/computability/recursive-functions/sequences.tex#L124) | [mr/content/computability/recursive-functions/sequences.tex:122-137](../mr/content/computability/recursive-functions/sequences.tex#L122) | not yet paginated |
+| T302-OLP-0220-B019 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:156-168](../upstream/content/computability/recursive-functions/sequences.tex#L156) | [mr/content/computability/recursive-functions/sequences.tex:155-166](../mr/content/computability/recursive-functions/sequences.tex#L155) | not yet paginated |
+| T302-OLP-0220-B020 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:170-176](../upstream/content/computability/recursive-functions/sequences.tex#L170) | [mr/content/computability/recursive-functions/sequences.tex:168-174](../mr/content/computability/recursive-functions/sequences.tex#L168) | not yet paginated |
+| T302-OLP-0220-B021 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:178-185](../upstream/content/computability/recursive-functions/sequences.tex#L178) | [mr/content/computability/recursive-functions/sequences.tex:176-183](../mr/content/computability/recursive-functions/sequences.tex#L176) | not yet paginated |
+| T302-OLP-0220-B022 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:187-192](../upstream/content/computability/recursive-functions/sequences.tex#L187) | [mr/content/computability/recursive-functions/sequences.tex:185-189](../mr/content/computability/recursive-functions/sequences.tex#L185) | not yet paginated |
+| T302-OLP-0221-B005 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:12-19](../upstream/content/computability/recursive-functions/trees.tex#L12) | [mr/content/computability/recursive-functions/trees.tex:12-18](../mr/content/computability/recursive-functions/trees.tex#L12) | not yet paginated |
+| T302-OLP-0221-B007 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:30-35](../upstream/content/computability/recursive-functions/trees.tex#L30) | [mr/content/computability/recursive-functions/trees.tex:29-34](../mr/content/computability/recursive-functions/trees.tex#L29) | not yet paginated |
+| T302-OLP-0221-B008 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:37-68](../upstream/content/computability/recursive-functions/trees.tex#L37) | [mr/content/computability/recursive-functions/trees.tex:36-67](../mr/content/computability/recursive-functions/trees.tex#L36) | not yet paginated |
+| T302-OLP-0222-B004 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:9-10](../upstream/content/computability/recursive-functions/other-recursions.tex#L9) | [mr/content/computability/recursive-functions/other-recursions.tex:9-10](../mr/content/computability/recursive-functions/other-recursions.tex#L9) | not yet paginated |
+| T302-OLP-0222-B005 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:12-47](../upstream/content/computability/recursive-functions/other-recursions.tex#L12) | [mr/content/computability/recursive-functions/other-recursions.tex:12-45](../mr/content/computability/recursive-functions/other-recursions.tex#L12) | not yet paginated |
+| T302-OLP-0222-B007 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:57-66](../upstream/content/computability/recursive-functions/other-recursions.tex#L57) | [mr/content/computability/recursive-functions/other-recursions.tex:55-63](../mr/content/computability/recursive-functions/other-recursions.tex#L55) | not yet paginated |
+| T302-OLP-0223-B004 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:9-10](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L9) | [mr/content/computability/recursive-functions/non-pr-functions.tex:9-10](../mr/content/computability/recursive-functions/non-pr-functions.tex#L9) | not yet paginated |
+| T302-OLP-0223-B005 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/non-pr-functions.tex:12-28](../mr/content/computability/recursive-functions/non-pr-functions.tex#L12) | not yet paginated |
+| T302-OLP-0223-B007 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L45) | [mr/content/computability/recursive-functions/non-pr-functions.tex:45-64](../mr/content/computability/recursive-functions/non-pr-functions.tex#L45) | not yet paginated |
+| T302-OLP-0223-B009 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L75) | [mr/content/computability/recursive-functions/non-pr-functions.tex:72-76](../mr/content/computability/recursive-functions/non-pr-functions.tex#L72) | not yet paginated |
+| T302-OLP-0223-B011 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L88) | [mr/content/computability/recursive-functions/non-pr-functions.tex:85-92](../mr/content/computability/recursive-functions/non-pr-functions.tex#L85) | not yet paginated |
+| T302-OLP-0224-B004 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:9-10](../upstream/content/computability/recursive-functions/partial-functions.tex#L9) | [mr/content/computability/recursive-functions/partial-functions.tex:9-10](../mr/content/computability/recursive-functions/partial-functions.tex#L9) | not yet paginated |
+| T302-OLP-0224-B005 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:13-22](../upstream/content/computability/recursive-functions/partial-functions.tex#L13) | [mr/content/computability/recursive-functions/partial-functions.tex:13-21](../mr/content/computability/recursive-functions/partial-functions.tex#L13) | not yet paginated |
+| T302-OLP-0224-B007 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:32-40](../upstream/content/computability/recursive-functions/partial-functions.tex#L32) | [mr/content/computability/recursive-functions/partial-functions.tex:30-37](../mr/content/computability/recursive-functions/partial-functions.tex#L30) | not yet paginated |
+| T302-OLP-0224-B008 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:42-62](../upstream/content/computability/recursive-functions/partial-functions.tex#L42) | [mr/content/computability/recursive-functions/partial-functions.tex:39-57](../mr/content/computability/recursive-functions/partial-functions.tex#L39) | not yet paginated |
+| T302-OLP-0224-B012 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:98-103](../upstream/content/computability/recursive-functions/partial-functions.tex#L98) | [mr/content/computability/recursive-functions/partial-functions.tex:92-97](../mr/content/computability/recursive-functions/partial-functions.tex#L92) | not yet paginated |
+| T302-OLP-0224-B013 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:105-106](../upstream/content/computability/recursive-functions/partial-functions.tex#L105) | [mr/content/computability/recursive-functions/partial-functions.tex:99-100](../mr/content/computability/recursive-functions/partial-functions.tex#L99) | not yet paginated |
+| T302-OLP-0224-B014 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:108-112](../upstream/content/computability/recursive-functions/partial-functions.tex#L108) | [mr/content/computability/recursive-functions/partial-functions.tex:102-106](../mr/content/computability/recursive-functions/partial-functions.tex#L102) | not yet paginated |
+| T302-OLP-0224-B015 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:114-115](../upstream/content/computability/recursive-functions/partial-functions.tex#L114) | [mr/content/computability/recursive-functions/partial-functions.tex:108-109](../mr/content/computability/recursive-functions/partial-functions.tex#L108) | not yet paginated |
+
+**Chosen rendering/action:** आदिम पुनरावर्ती / आंशिक पुनरावर्ती / सामान्य पुनरावर्ती फलन
+
+**Confidence/status:** high; directly attested components combined under source definitions; exact class names partly unattested and expert-reviewable; open to correction.
+
+**Please double-check:** Should computability prose retain the edition's पुनरावर्ती family, and should the fixed class name use official आंशिक while general partial functions continue to use descriptive अंशतः?
+
+</details>
+
+<details>
+<summary><strong>T303 — unbounded search / total (everywhere defined)</strong> (11 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T303-OLP-0210-B007 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:41-52](../upstream/content/computability/recursive-functions/introduction.tex#L41) | [mr/content/computability/recursive-functions/introduction.tex:40-51](../mr/content/computability/recursive-functions/introduction.tex#L40) | not yet paginated |
+| T303-OLP-0218-B005 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L12) | [mr/content/computability/recursive-functions/bounded-minimization.tex:12-25](../mr/content/computability/recursive-functions/bounded-minimization.tex#L12) | not yet paginated |
+| T303-OLP-0219-B008 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:46-62](../upstream/content/computability/recursive-functions/primes.tex#L46) | [mr/content/computability/recursive-functions/primes.tex:48-64](../mr/content/computability/recursive-functions/primes.tex#L48) | not yet paginated |
+| T303-OLP-0224-B007 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:32-40](../upstream/content/computability/recursive-functions/partial-functions.tex#L32) | [mr/content/computability/recursive-functions/partial-functions.tex:30-37](../mr/content/computability/recursive-functions/partial-functions.tex#L30) | not yet paginated |
+| T303-OLP-0224-B009 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:64-73](../upstream/content/computability/recursive-functions/partial-functions.tex#L64) | [mr/content/computability/recursive-functions/partial-functions.tex:59-69](../mr/content/computability/recursive-functions/partial-functions.tex#L59) | not yet paginated |
+| T303-OLP-0224-B010 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:75-87](../upstream/content/computability/recursive-functions/partial-functions.tex#L75) | [mr/content/computability/recursive-functions/partial-functions.tex:71-81](../mr/content/computability/recursive-functions/partial-functions.tex#L71) | not yet paginated |
+| T303-OLP-0224-B011 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:89-96](../upstream/content/computability/recursive-functions/partial-functions.tex#L89) | [mr/content/computability/recursive-functions/partial-functions.tex:83-90](../mr/content/computability/recursive-functions/partial-functions.tex#L83) | not yet paginated |
+| T303-OLP-0224-B012 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:98-103](../upstream/content/computability/recursive-functions/partial-functions.tex#L98) | [mr/content/computability/recursive-functions/partial-functions.tex:92-97](../mr/content/computability/recursive-functions/partial-functions.tex#L92) | not yet paginated |
+| T303-OLP-0224-B013 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:105-106](../upstream/content/computability/recursive-functions/partial-functions.tex#L105) | [mr/content/computability/recursive-functions/partial-functions.tex:99-100](../mr/content/computability/recursive-functions/partial-functions.tex#L99) | not yet paginated |
+| T303-OLP-0224-B014 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:108-112](../upstream/content/computability/recursive-functions/partial-functions.tex#L108) | [mr/content/computability/recursive-functions/partial-functions.tex:102-106](../mr/content/computability/recursive-functions/partial-functions.tex#L102) | not yet paginated |
+| T303-OLP-0224-B015 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:114-115](../upstream/content/computability/recursive-functions/partial-functions.tex#L114) | [mr/content/computability/recursive-functions/partial-functions.tex:108-109](../mr/content/computability/recursive-functions/partial-functions.tex#L108) | not yet paginated |
+
+**Chosen rendering/action:** अपरिबद्ध शोध / सर्वत्र परिभाषित
+
+**Confidence/status:** medium; official unbounded adjective plus established definition-controlled totality phrase; exact search compound unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is अपरिबद्ध शोध natural Marathi for unbounded search in computability, and is सर्वत्र परिभाषित preferable to the shorter but ambiguous पूर्ण?
+
+</details>
+
+<details>
+<summary><strong>T304 — lambda calculus / simulate a model of computation</strong> (3 occurrences; high priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T304-OLP-0210-B007 | OLP-0210 ·  | [upstream/content/computability/recursive-functions/introduction.tex:41-52](../upstream/content/computability/recursive-functions/introduction.tex#L41) | [mr/content/computability/recursive-functions/introduction.tex:40-51](../mr/content/computability/recursive-functions/introduction.tex#L40) | not yet paginated |
+| T304-OLP-0222-B007 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:57-66](../upstream/content/computability/recursive-functions/other-recursions.tex#L57) | [mr/content/computability/recursive-functions/other-recursions.tex:55-63](../mr/content/computability/recursive-functions/other-recursions.tex#L55) | not yet paginated |
+| T304-OLP-0223-B011 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L88) | [mr/content/computability/recursive-functions/non-pr-functions.tex:85-92](../mr/content/computability/recursive-functions/non-pr-functions.tex#L85) | not yet paginated |
+
+**Chosen rendering/action:** लॅम्डा कलन / संगणन-प्रतिमानाचे अनुकरण करणे
+
+**Confidence/status:** low; source-controlled transparent rendering; exact specialist compounds unattested; high-priority expert review useful; open to correction.
+
+**Please double-check:** Is लॅम्डा कलन the conventional Marathi name, and is अनुकरण करणे sufficiently precise for computational simulation?
+
+</details>
+
+<details>
+<summary><strong>T305 — notation for a primitive recursive function; composition and recursion notation</strong> (7 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T305-OLP-0214-B004 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:9-10](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L9) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:9-10](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L9) | not yet paginated |
+| T305-OLP-0214-B005 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L12) | not yet paginated |
+| T305-OLP-0214-B006 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:23-28](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L23) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:22-26](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L22) | not yet paginated |
+| T305-OLP-0214-B007 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L28) | not yet paginated |
+| T305-OLP-0214-B008 | OLP-0214 ·  | [upstream/content/computability/recursive-functions/notation-pr-functions.tex:47-49](../upstream/content/computability/recursive-functions/notation-pr-functions.tex#L47) | [mr/content/computability/recursive-functions/notation-pr-functions.tex:45-47](../mr/content/computability/recursive-functions/notation-pr-functions.tex#L45) | not yet paginated |
+| T305-OLP-0223-B007 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L45) | [mr/content/computability/recursive-functions/non-pr-functions.tex:45-64](../mr/content/computability/recursive-functions/non-pr-functions.tex#L45) | not yet paginated |
+| T305-OLP-0223-B008 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:67-73](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L67) | [mr/content/computability/recursive-functions/non-pr-functions.tex:66-70](../mr/content/computability/recursive-functions/non-pr-functions.tex#L66) | not yet paginated |
+
+**Chosen rendering/action:** आदिम पुनरावर्ती फलनाचे चिन्हांकन; संयोजन व पुनरावर्तन चिन्हांकन
+
+**Confidence/status:** high; source-defined transparent terminology with adjacent official notation evidence; exact specialist compound unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is चिन्हांकन the clearest Marathi noun for the finite symbolic code assigned to each primitive recursive function, or should formal computability use संकेतन?
+
+</details>
+
+<details>
+<summary><strong>T306 — exponentiation function / predecessor function / factorial function</strong> (12 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T306-OLP-0216-B006 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:25-27](../upstream/content/computability/recursive-functions/examples.tex#L25) | [mr/content/computability/recursive-functions/examples.tex:24-26](../mr/content/computability/recursive-functions/examples.tex#L24) | not yet paginated |
+| T306-OLP-0216-B007 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:29-45](../upstream/content/computability/recursive-functions/examples.tex#L29) | [mr/content/computability/recursive-functions/examples.tex:28-44](../mr/content/computability/recursive-functions/examples.tex#L28) | not yet paginated |
+| T306-OLP-0216-B008 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:47-56](../upstream/content/computability/recursive-functions/examples.tex#L47) | [mr/content/computability/recursive-functions/examples.tex:46-55](../mr/content/computability/recursive-functions/examples.tex#L46) | not yet paginated |
+| T306-OLP-0216-B009 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:58-76](../upstream/content/computability/recursive-functions/examples.tex#L58) | [mr/content/computability/recursive-functions/examples.tex:57-75](../mr/content/computability/recursive-functions/examples.tex#L57) | not yet paginated |
+| T306-OLP-0216-B010 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:78-81](../upstream/content/computability/recursive-functions/examples.tex#L78) | [mr/content/computability/recursive-functions/examples.tex:77-80](../mr/content/computability/recursive-functions/examples.tex#L77) | not yet paginated |
+| T306-OLP-0216-B011 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:83-97](../upstream/content/computability/recursive-functions/examples.tex#L83) | [mr/content/computability/recursive-functions/examples.tex:82-97](../mr/content/computability/recursive-functions/examples.tex#L82) | not yet paginated |
+| T306-OLP-0216-B013 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:110-116](../upstream/content/computability/recursive-functions/examples.tex#L110) | [mr/content/computability/recursive-functions/examples.tex:110-116](../mr/content/computability/recursive-functions/examples.tex#L110) | not yet paginated |
+| T306-OLP-0216-B021 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:155-160](../upstream/content/computability/recursive-functions/examples.tex#L155) | [mr/content/computability/recursive-functions/examples.tex:156-162](../mr/content/computability/recursive-functions/examples.tex#L156) | not yet paginated |
+| T306-OLP-0219-B008 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:46-62](../upstream/content/computability/recursive-functions/primes.tex#L46) | [mr/content/computability/recursive-functions/primes.tex:48-64](../mr/content/computability/recursive-functions/primes.tex#L48) | not yet paginated |
+| T306-OLP-0219-B009 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:64-74](../upstream/content/computability/recursive-functions/primes.tex#L64) | [mr/content/computability/recursive-functions/primes.tex:66-79](../mr/content/computability/recursive-functions/primes.tex#L66) | not yet paginated |
+| T306-OLP-0220-B011 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:79-88](../upstream/content/computability/recursive-functions/sequences.tex#L79) | [mr/content/computability/recursive-functions/sequences.tex:77-86](../mr/content/computability/recursive-functions/sequences.tex#L77) | not yet paginated |
+| T306-OLP-0223-B006 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:30-43](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/non-pr-functions.tex:30-43](../mr/content/computability/recursive-functions/non-pr-functions.tex#L30) | not yet paginated |
+
+**Chosen rendering/action:** घातांक फलन / पूर्ववर्ती फलन / क्रमगुणित फलन
+
+**Confidence/status:** high; factorial and predecessor components directly supported; exponentiation label formula-controlled with adjacent official evidence; expert-reviewable; open to correction.
+
+**Please double-check:** Should binary exponentiation use घातांक फलन or the officially attested but potentially fixed-base घातफल, and is क्रमगुणित फलन the preferred factorial label?
+
+</details>
+
+<details>
+<summary><strong>T307 — truncated subtraction / distance / maximum / minimum</strong> (11 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T307-OLP-0216-B012 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:99-108](../upstream/content/computability/recursive-functions/examples.tex#L99) | [mr/content/computability/recursive-functions/examples.tex:99-108](../mr/content/computability/recursive-functions/examples.tex#L99) | not yet paginated |
+| T307-OLP-0216-B013 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:110-116](../upstream/content/computability/recursive-functions/examples.tex#L110) | [mr/content/computability/recursive-functions/examples.tex:110-116](../mr/content/computability/recursive-functions/examples.tex#L110) | not yet paginated |
+| T307-OLP-0216-B014 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:118-120](../upstream/content/computability/recursive-functions/examples.tex#L118) | [mr/content/computability/recursive-functions/examples.tex:118-120](../mr/content/computability/recursive-functions/examples.tex#L118) | not yet paginated |
+| T307-OLP-0216-B015 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:122-126](../upstream/content/computability/recursive-functions/examples.tex#L122) | [mr/content/computability/recursive-functions/examples.tex:122-126](../mr/content/computability/recursive-functions/examples.tex#L122) | not yet paginated |
+| T307-OLP-0216-B016 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:128-130](../upstream/content/computability/recursive-functions/examples.tex#L128) | [mr/content/computability/recursive-functions/examples.tex:128-130](../mr/content/computability/recursive-functions/examples.tex#L128) | not yet paginated |
+| T307-OLP-0216-B017 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:132-140](../upstream/content/computability/recursive-functions/examples.tex#L132) | [mr/content/computability/recursive-functions/examples.tex:132-141](../mr/content/computability/recursive-functions/examples.tex#L132) | not yet paginated |
+| T307-OLP-0216-B018 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:142-145](../upstream/content/computability/recursive-functions/examples.tex#L142) | [mr/content/computability/recursive-functions/examples.tex:143-146](../mr/content/computability/recursive-functions/examples.tex#L143) | not yet paginated |
+| T307-OLP-0216-B020 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:151-153](../upstream/content/computability/recursive-functions/examples.tex#L151) | [mr/content/computability/recursive-functions/examples.tex:152-154](../mr/content/computability/recursive-functions/examples.tex#L152) | not yet paginated |
+| T307-OLP-0217-B007 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:38-45](../upstream/content/computability/recursive-functions/pr-relations.tex#L38) | [mr/content/computability/recursive-functions/pr-relations.tex:37-44](../mr/content/computability/recursive-functions/pr-relations.tex#L37) | not yet paginated |
+| T307-OLP-0217-B009 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:60-86](../upstream/content/computability/recursive-functions/pr-relations.tex#L60) | [mr/content/computability/recursive-functions/pr-relations.tex:59-86](../mr/content/computability/recursive-functions/pr-relations.tex#L59) | not yet paginated |
+| T307-OLP-0217-B011 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:101-119](../upstream/content/computability/recursive-functions/pr-relations.tex#L101) | [mr/content/computability/recursive-functions/pr-relations.tex:102-121](../mr/content/computability/recursive-functions/pr-relations.tex#L102) | not yet paginated |
+
+**Chosen rendering/action:** छाटलेली वजाबाकी / अंतर / महत्तम / लघुतम
+
+**Confidence/status:** high; direct extrema terminology plus formula-controlled descriptive subtraction and distance labels; expert-reviewable; open to correction.
+
+**Please double-check:** Is छाटलेली वजाबाकी natural for monus/truncated subtraction, and should the binary extrema retain the authoritative महत्तम/लघुतम pair?
+
+</details>
+
+<details>
+<summary><strong>T308 — integer division / finite sum / finite product</strong> (6 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T308-OLP-0216-B022 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:162-168](../upstream/content/computability/recursive-functions/examples.tex#L162) | [mr/content/computability/recursive-functions/examples.tex:164-169](../mr/content/computability/recursive-functions/examples.tex#L164) | not yet paginated |
+| T308-OLP-0216-B023 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:170-185](../upstream/content/computability/recursive-functions/examples.tex#L170) | [mr/content/computability/recursive-functions/examples.tex:171-185](../mr/content/computability/recursive-functions/examples.tex#L171) | not yet paginated |
+| T308-OLP-0216-B024 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:187-193](../upstream/content/computability/recursive-functions/examples.tex#L187) | [mr/content/computability/recursive-functions/examples.tex:187-193](../mr/content/computability/recursive-functions/examples.tex#L187) | not yet paginated |
+| T308-OLP-0217-B011 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:101-119](../upstream/content/computability/recursive-functions/pr-relations.tex#L101) | [mr/content/computability/recursive-functions/pr-relations.tex:102-121](../mr/content/computability/recursive-functions/pr-relations.tex#L102) | not yet paginated |
+| T308-OLP-0219-B009 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:64-74](../upstream/content/computability/recursive-functions/primes.tex#L64) | [mr/content/computability/recursive-functions/primes.tex:66-79](../mr/content/computability/recursive-functions/primes.tex#L66) | not yet paginated |
+| T308-OLP-0219-B010 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:76-78](../upstream/content/computability/recursive-functions/primes.tex#L76) | [mr/content/computability/recursive-functions/primes.tex:81-83](../mr/content/computability/recursive-functions/primes.tex#L81) | not yet paginated |
+
+**Chosen rendering/action:** पूर्णांक भागाकार / सांत बेरीज / सांत गुणाकार
+
+**Confidence/status:** high; direct division and floor-related evidence with formula-controlled recursive-operation compounds; expert-reviewable; open to correction.
+
+**Please double-check:** Is पूर्णांक भागाकार clear for floor division with the stated y=0 convention, and should finite sums/products use सांत or परिमित?
+
+</details>
+
+<details>
+<summary><strong>T309 — primitive recursive relation / Boolean operations / bounded quantification</strong> (17 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T309-OLP-0217-B004 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:9-10](../upstream/content/computability/recursive-functions/pr-relations.tex#L9) | [mr/content/computability/recursive-functions/pr-relations.tex:9-10](../mr/content/computability/recursive-functions/pr-relations.tex#L9) | not yet paginated |
+| T309-OLP-0217-B005 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:13-25](../upstream/content/computability/recursive-functions/pr-relations.tex#L13) | [mr/content/computability/recursive-functions/pr-relations.tex:13-24](../mr/content/computability/recursive-functions/pr-relations.tex#L13) | not yet paginated |
+| T309-OLP-0217-B006 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:27-36](../upstream/content/computability/recursive-functions/pr-relations.tex#L27) | [mr/content/computability/recursive-functions/pr-relations.tex:26-35](../mr/content/computability/recursive-functions/pr-relations.tex#L26) | not yet paginated |
+| T309-OLP-0217-B007 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:38-45](../upstream/content/computability/recursive-functions/pr-relations.tex#L38) | [mr/content/computability/recursive-functions/pr-relations.tex:37-44](../mr/content/computability/recursive-functions/pr-relations.tex#L37) | not yet paginated |
+| T309-OLP-0217-B008 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:48-58](../upstream/content/computability/recursive-functions/pr-relations.tex#L48) | [mr/content/computability/recursive-functions/pr-relations.tex:47-57](../mr/content/computability/recursive-functions/pr-relations.tex#L47) | not yet paginated |
+| T309-OLP-0217-B009 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:60-86](../upstream/content/computability/recursive-functions/pr-relations.tex#L60) | [mr/content/computability/recursive-functions/pr-relations.tex:59-86](../mr/content/computability/recursive-functions/pr-relations.tex#L59) | not yet paginated |
+| T309-OLP-0217-B010 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:88-99](../upstream/content/computability/recursive-functions/pr-relations.tex#L88) | [mr/content/computability/recursive-functions/pr-relations.tex:88-100](../mr/content/computability/recursive-functions/pr-relations.tex#L88) | not yet paginated |
+| T309-OLP-0217-B011 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:101-119](../upstream/content/computability/recursive-functions/pr-relations.tex#L101) | [mr/content/computability/recursive-functions/pr-relations.tex:102-121](../mr/content/computability/recursive-functions/pr-relations.tex#L102) | not yet paginated |
+| T309-OLP-0217-B014 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:140-156](../upstream/content/computability/recursive-functions/pr-relations.tex#L140) | [mr/content/computability/recursive-functions/pr-relations.tex:142-157](../mr/content/computability/recursive-functions/pr-relations.tex#L142) | not yet paginated |
+| T309-OLP-0218-B005 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L12) | [mr/content/computability/recursive-functions/bounded-minimization.tex:12-25](../mr/content/computability/recursive-functions/bounded-minimization.tex#L12) | not yet paginated |
+| T309-OLP-0218-B006 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:27-35](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L27) | [mr/content/computability/recursive-functions/bounded-minimization.tex:27-35](../mr/content/computability/recursive-functions/bounded-minimization.tex#L27) | not yet paginated |
+| T309-OLP-0218-B007 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:37-39](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L37) | [mr/content/computability/recursive-functions/bounded-minimization.tex:37-39](../mr/content/computability/recursive-functions/bounded-minimization.tex#L37) | not yet paginated |
+| T309-OLP-0219-B005 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:12-27](../upstream/content/computability/recursive-functions/primes.tex#L12) | [mr/content/computability/recursive-functions/primes.tex:12-28](../mr/content/computability/recursive-functions/primes.tex#L12) | not yet paginated |
+| T309-OLP-0219-B006 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:29-39](../upstream/content/computability/recursive-functions/primes.tex#L29) | [mr/content/computability/recursive-functions/primes.tex:30-41](../mr/content/computability/recursive-functions/primes.tex#L30) | not yet paginated |
+| T309-OLP-0220-B009 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:48-72](../upstream/content/computability/recursive-functions/sequences.tex#L48) | [mr/content/computability/recursive-functions/sequences.tex:45-70](../mr/content/computability/recursive-functions/sequences.tex#L45) | not yet paginated |
+| T309-OLP-0220-B019 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:156-168](../upstream/content/computability/recursive-functions/sequences.tex#L156) | [mr/content/computability/recursive-functions/sequences.tex:155-166](../mr/content/computability/recursive-functions/sequences.tex#L155) | not yet paginated |
+| T309-OLP-0224-B011 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:89-96](../upstream/content/computability/recursive-functions/partial-functions.tex#L89) | [mr/content/computability/recursive-functions/partial-functions.tex:83-90](../mr/content/computability/recursive-functions/partial-functions.tex#L83) | not yet paginated |
+
+**Chosen rendering/action:** आदिम पुनरावर्ती संबंध / बूलीय क्रिया / परिबद्ध संख्यकीकरण
+
+**Confidence/status:** high; direct Boolean-domain evidence with established relation/recursive/quantifier components under exact source definitions; bounded compound unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is परिबद्ध संख्यकीकरण the clearest Marathi term for bounded quantification, and should Boolean operations be बूलीय क्रिया or बूलीयन क्रिया?
+
+</details>
+
+<details>
+<summary><strong>T310 — congruence modulo n / conditional function / definition by cases</strong> (9 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T310-OLP-0217-B012 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:121-124](../upstream/content/computability/recursive-functions/pr-relations.tex#L121) | [mr/content/computability/recursive-functions/pr-relations.tex:123-126](../mr/content/computability/recursive-functions/pr-relations.tex#L123) | not yet paginated |
+| T310-OLP-0217-B013 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:126-138](../upstream/content/computability/recursive-functions/pr-relations.tex#L126) | [mr/content/computability/recursive-functions/pr-relations.tex:128-140](../mr/content/computability/recursive-functions/pr-relations.tex#L128) | not yet paginated |
+| T310-OLP-0217-B014 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:140-156](../upstream/content/computability/recursive-functions/pr-relations.tex#L140) | [mr/content/computability/recursive-functions/pr-relations.tex:142-157](../mr/content/computability/recursive-functions/pr-relations.tex#L142) | not yet paginated |
+| T310-OLP-0217-B015 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:158-167](../upstream/content/computability/recursive-functions/pr-relations.tex#L158) | [mr/content/computability/recursive-functions/pr-relations.tex:159-168](../mr/content/computability/recursive-functions/pr-relations.tex#L159) | not yet paginated |
+| T310-OLP-0218-B008 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L41) | [mr/content/computability/recursive-functions/bounded-minimization.tex:41-63](../mr/content/computability/recursive-functions/bounded-minimization.tex#L41) | not yet paginated |
+| T310-OLP-0220-B011 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:79-88](../upstream/content/computability/recursive-functions/sequences.tex#L79) | [mr/content/computability/recursive-functions/sequences.tex:77-86](../mr/content/computability/recursive-functions/sequences.tex#L77) | not yet paginated |
+| T310-OLP-0220-B013 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:96-107](../upstream/content/computability/recursive-functions/sequences.tex#L96) | [mr/content/computability/recursive-functions/sequences.tex:94-105](../mr/content/computability/recursive-functions/sequences.tex#L94) | not yet paginated |
+| T310-OLP-0222-B005 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:12-47](../upstream/content/computability/recursive-functions/other-recursions.tex#L12) | [mr/content/computability/recursive-functions/other-recursions.tex:12-45](../mr/content/computability/recursive-functions/other-recursions.tex#L12) | not yet paginated |
+| T310-OLP-0224-B008 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:42-62](../upstream/content/computability/recursive-functions/partial-functions.tex#L42) | [mr/content/computability/recursive-functions/partial-functions.tex:39-57](../mr/content/computability/recursive-functions/partial-functions.tex#L39) | not yet paginated |
+
+**Chosen rendering/action:** भाजक n समशेषता / सशर्त फलन / प्रकरणांनुसार व्याख्या
+
+**Confidence/status:** high; direct official modulo terminology plus formula-controlled conditional and case-definition compounds; expert-reviewable; open to correction.
+
+**Please double-check:** Should the official भाजक n समशेषी construction be nominalized as भाजक n समशेषता, and are सशर्त फलन and प्रकरणांनुसार व्याख्या natural computability terms?
+
+</details>
+
+<details>
+<summary><strong>T311 — bounded minimization / least witness below a bound</strong> (14 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T311-OLP-0218-B004 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:9-10](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L9) | [mr/content/computability/recursive-functions/bounded-minimization.tex:9-10](../mr/content/computability/recursive-functions/bounded-minimization.tex#L9) | not yet paginated |
+| T311-OLP-0218-B005 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L12) | [mr/content/computability/recursive-functions/bounded-minimization.tex:12-25](../mr/content/computability/recursive-functions/bounded-minimization.tex#L12) | not yet paginated |
+| T311-OLP-0218-B006 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:27-35](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L27) | [mr/content/computability/recursive-functions/bounded-minimization.tex:27-35](../mr/content/computability/recursive-functions/bounded-minimization.tex#L27) | not yet paginated |
+| T311-OLP-0218-B007 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:37-39](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L37) | [mr/content/computability/recursive-functions/bounded-minimization.tex:37-39](../mr/content/computability/recursive-functions/bounded-minimization.tex#L37) | not yet paginated |
+| T311-OLP-0218-B008 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L41) | [mr/content/computability/recursive-functions/bounded-minimization.tex:41-63](../mr/content/computability/recursive-functions/bounded-minimization.tex#L41) | not yet paginated |
+| T311-OLP-0218-B009 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L64) | [mr/content/computability/recursive-functions/bounded-minimization.tex:65-70](../mr/content/computability/recursive-functions/bounded-minimization.tex#L65) | not yet paginated |
+| T311-OLP-0219-B005 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:12-27](../upstream/content/computability/recursive-functions/primes.tex#L12) | [mr/content/computability/recursive-functions/primes.tex:12-28](../mr/content/computability/recursive-functions/primes.tex#L12) | not yet paginated |
+| T311-OLP-0219-B008 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:46-62](../upstream/content/computability/recursive-functions/primes.tex#L46) | [mr/content/computability/recursive-functions/primes.tex:48-64](../mr/content/computability/recursive-functions/primes.tex#L48) | not yet paginated |
+| T311-OLP-0219-B010 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:76-78](../upstream/content/computability/recursive-functions/primes.tex#L76) | [mr/content/computability/recursive-functions/primes.tex:81-83](../mr/content/computability/recursive-functions/primes.tex#L81) | not yet paginated |
+| T311-OLP-0220-B009 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:48-72](../upstream/content/computability/recursive-functions/sequences.tex#L48) | [mr/content/computability/recursive-functions/sequences.tex:45-70](../mr/content/computability/recursive-functions/sequences.tex#L45) | not yet paginated |
+| T311-OLP-0220-B013 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:96-107](../upstream/content/computability/recursive-functions/sequences.tex#L96) | [mr/content/computability/recursive-functions/sequences.tex:94-105](../mr/content/computability/recursive-functions/sequences.tex#L94) | not yet paginated |
+| T311-OLP-0220-B019 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:156-168](../upstream/content/computability/recursive-functions/sequences.tex#L156) | [mr/content/computability/recursive-functions/sequences.tex:155-166](../mr/content/computability/recursive-functions/sequences.tex#L155) | not yet paginated |
+| T311-OLP-0224-B009 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:64-73](../upstream/content/computability/recursive-functions/partial-functions.tex#L64) | [mr/content/computability/recursive-functions/partial-functions.tex:59-69](../mr/content/computability/recursive-functions/partial-functions.tex#L59) | not yet paginated |
+| T311-OLP-0224-B011 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:89-96](../upstream/content/computability/recursive-functions/partial-functions.tex#L89) | [mr/content/computability/recursive-functions/partial-functions.tex:83-90](../mr/content/computability/recursive-functions/partial-functions.tex#L83) | not yet paginated |
+
+**Chosen rendering/action:** परिबद्ध लघुतमीकरण / परिबंधाखालील लघुतम साक्षी
+
+**Confidence/status:** high; direct official minimization noun plus source-defined bounded operator; exact compound and fallback convention unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is परिबद्ध लघुतमीकरण the natural computability term, and does परिबंधाखालील लघुतम साक्षी clearly explain its witness value without hiding the no-witness fallback?
+
+</details>
+
+<details>
+<summary><strong>T312 — finite sequence / numeric sequence code / empty sequence / length / append / concatenate / subsequence / sequence bound</strong> (28 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T312-OLP-0220-B004 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:9-10](../upstream/content/computability/recursive-functions/sequences.tex#L9) | [mr/content/computability/recursive-functions/sequences.tex:9-10](../mr/content/computability/recursive-functions/sequences.tex#L9) | not yet paginated |
+| T312-OLP-0220-B005 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:12-25](../upstream/content/computability/recursive-functions/sequences.tex#L12) | [mr/content/computability/recursive-functions/sequences.tex:12-24](../mr/content/computability/recursive-functions/sequences.tex#L12) | not yet paginated |
+| T312-OLP-0220-B007 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:38-41](../upstream/content/computability/recursive-functions/sequences.tex#L38) | [mr/content/computability/recursive-functions/sequences.tex:37-39](../mr/content/computability/recursive-functions/sequences.tex#L37) | not yet paginated |
+| T312-OLP-0220-B008 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:43-46](../upstream/content/computability/recursive-functions/sequences.tex#L43) | [mr/content/computability/recursive-functions/sequences.tex:41-43](../mr/content/computability/recursive-functions/sequences.tex#L41) | not yet paginated |
+| T312-OLP-0220-B009 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:48-72](../upstream/content/computability/recursive-functions/sequences.tex#L48) | [mr/content/computability/recursive-functions/sequences.tex:45-70](../mr/content/computability/recursive-functions/sequences.tex#L45) | not yet paginated |
+| T312-OLP-0220-B010 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:74-77](../upstream/content/computability/recursive-functions/sequences.tex#L74) | [mr/content/computability/recursive-functions/sequences.tex:72-75](../mr/content/computability/recursive-functions/sequences.tex#L72) | not yet paginated |
+| T312-OLP-0220-B011 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:79-88](../upstream/content/computability/recursive-functions/sequences.tex#L79) | [mr/content/computability/recursive-functions/sequences.tex:77-86](../mr/content/computability/recursive-functions/sequences.tex#L77) | not yet paginated |
+| T312-OLP-0220-B012 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:90-94](../upstream/content/computability/recursive-functions/sequences.tex#L90) | [mr/content/computability/recursive-functions/sequences.tex:88-92](../mr/content/computability/recursive-functions/sequences.tex#L88) | not yet paginated |
+| T312-OLP-0220-B013 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:96-107](../upstream/content/computability/recursive-functions/sequences.tex#L96) | [mr/content/computability/recursive-functions/sequences.tex:94-105](../mr/content/computability/recursive-functions/sequences.tex#L94) | not yet paginated |
+| T312-OLP-0220-B014 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:109-117](../upstream/content/computability/recursive-functions/sequences.tex#L109) | [mr/content/computability/recursive-functions/sequences.tex:107-115](../mr/content/computability/recursive-functions/sequences.tex#L107) | not yet paginated |
+| T312-OLP-0220-B015 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:119-122](../upstream/content/computability/recursive-functions/sequences.tex#L119) | [mr/content/computability/recursive-functions/sequences.tex:117-120](../mr/content/computability/recursive-functions/sequences.tex#L117) | not yet paginated |
+| T312-OLP-0220-B016 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:124-140](../upstream/content/computability/recursive-functions/sequences.tex#L124) | [mr/content/computability/recursive-functions/sequences.tex:122-137](../mr/content/computability/recursive-functions/sequences.tex#L122) | not yet paginated |
+| T312-OLP-0220-B017 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:142-142](../upstream/content/computability/recursive-functions/sequences.tex#L142) | [mr/content/computability/recursive-functions/sequences.tex:139-139](../mr/content/computability/recursive-functions/sequences.tex#L139) | not yet paginated |
+| T312-OLP-0220-B018 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:144-154](../upstream/content/computability/recursive-functions/sequences.tex#L144) | [mr/content/computability/recursive-functions/sequences.tex:141-153](../mr/content/computability/recursive-functions/sequences.tex#L141) | not yet paginated |
+| T312-OLP-0220-B019 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:156-168](../upstream/content/computability/recursive-functions/sequences.tex#L156) | [mr/content/computability/recursive-functions/sequences.tex:155-166](../mr/content/computability/recursive-functions/sequences.tex#L155) | not yet paginated |
+| T312-OLP-0220-B020 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:170-176](../upstream/content/computability/recursive-functions/sequences.tex#L170) | [mr/content/computability/recursive-functions/sequences.tex:168-174](../mr/content/computability/recursive-functions/sequences.tex#L168) | not yet paginated |
+| T312-OLP-0220-B021 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:178-185](../upstream/content/computability/recursive-functions/sequences.tex#L178) | [mr/content/computability/recursive-functions/sequences.tex:176-183](../mr/content/computability/recursive-functions/sequences.tex#L176) | not yet paginated |
+| T312-OLP-0220-B022 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:187-192](../upstream/content/computability/recursive-functions/sequences.tex#L187) | [mr/content/computability/recursive-functions/sequences.tex:185-189](../mr/content/computability/recursive-functions/sequences.tex#L185) | not yet paginated |
+| T312-OLP-0220-B023 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:194-196](../upstream/content/computability/recursive-functions/sequences.tex#L194) | [mr/content/computability/recursive-functions/sequences.tex:191-193](../mr/content/computability/recursive-functions/sequences.tex#L191) | not yet paginated |
+| T312-OLP-0220-B024 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:198-200](../upstream/content/computability/recursive-functions/sequences.tex#L198) | [mr/content/computability/recursive-functions/sequences.tex:195-197](../mr/content/computability/recursive-functions/sequences.tex#L195) | not yet paginated |
+| T312-OLP-0221-B005 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:12-19](../upstream/content/computability/recursive-functions/trees.tex#L12) | [mr/content/computability/recursive-functions/trees.tex:12-18](../mr/content/computability/recursive-functions/trees.tex#L12) | not yet paginated |
+| T312-OLP-0221-B006 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:21-28](../upstream/content/computability/recursive-functions/trees.tex#L21) | [mr/content/computability/recursive-functions/trees.tex:20-27](../mr/content/computability/recursive-functions/trees.tex#L20) | not yet paginated |
+| T312-OLP-0221-B007 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:30-35](../upstream/content/computability/recursive-functions/trees.tex#L30) | [mr/content/computability/recursive-functions/trees.tex:29-34](../mr/content/computability/recursive-functions/trees.tex#L29) | not yet paginated |
+| T312-OLP-0221-B008 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:37-68](../upstream/content/computability/recursive-functions/trees.tex#L37) | [mr/content/computability/recursive-functions/trees.tex:36-67](../mr/content/computability/recursive-functions/trees.tex#L36) | not yet paginated |
+| T312-OLP-0221-B009 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:70-75](../upstream/content/computability/recursive-functions/trees.tex#L70) | [mr/content/computability/recursive-functions/trees.tex:69-74](../mr/content/computability/recursive-functions/trees.tex#L69) | not yet paginated |
+| T312-OLP-0222-B005 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:12-47](../upstream/content/computability/recursive-functions/other-recursions.tex#L12) | [mr/content/computability/recursive-functions/other-recursions.tex:12-45](../mr/content/computability/recursive-functions/other-recursions.tex#L12) | not yet paginated |
+| T312-OLP-0223-B006 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:30-43](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/non-pr-functions.tex:30-43](../mr/content/computability/recursive-functions/non-pr-functions.tex#L30) | not yet paginated |
+| T312-OLP-0223-B007 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L45) | [mr/content/computability/recursive-functions/non-pr-functions.tex:45-64](../mr/content/computability/recursive-functions/non-pr-functions.tex#L45) | not yet paginated |
+
+**Chosen rendering/action:** सांत क्रमिका / क्रमिकेचा संख्यात्मक संकेतांक / रिकामी क्रमिका / लांबी / शेवटी जोडणे / जोडणी करणे / उपक्रमिका / क्रमिका-परिबंध
+
+**Confidence/status:** high; direct official sequence vocabulary plus source-defined transparent coding-operation compounds; expert-reviewable; open to correction.
+
+**Please double-check:** Should encoded finite sequences consistently use the directly attested क्रमिका family, and are जोडणी and क्रमिका-परिबंध clear for the displayed operations?
+
+</details>
+
+<details>
+<summary><strong>T313 — Fundamental Theorem of Arithmetic / unique prime factorization / prime factor</strong> (2 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T313-OLP-0220-B006 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:27-36](../upstream/content/computability/recursive-functions/sequences.tex#L27) | [mr/content/computability/recursive-functions/sequences.tex:26-35](../mr/content/computability/recursive-functions/sequences.tex#L26) | not yet paginated |
+| T313-OLP-0220-B018 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:144-154](../upstream/content/computability/recursive-functions/sequences.tex#L144) | [mr/content/computability/recursive-functions/sequences.tex:141-153](../mr/content/computability/recursive-functions/sequences.tex#L141) | not yet paginated |
+
+**Chosen rendering/action:** अंकगणिताचे मूलभूत प्रमेय / अनन्य अविभाज्य अवयवीकरण / अविभाज्य अवयव
+
+**Confidence/status:** high; direct authoritative theorem title and unique-factorization terminology; open to correction.
+
+**Please double-check:** Should the section use the exact authoritative title अंकगणिताचे मूलभूत प्रमेय and describe its coding consequence as अनन्य अविभाज्य अवयवीकरण?
+
+</details>
+
+<details>
+<summary><strong>T314 — rooted or labelled tree / node / root / immediate subtree / leaf node / level</strong> (6 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T314-OLP-0221-B004 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:9-10](../upstream/content/computability/recursive-functions/trees.tex#L9) | [mr/content/computability/recursive-functions/trees.tex:9-10](../mr/content/computability/recursive-functions/trees.tex#L9) | not yet paginated |
+| T314-OLP-0221-B005 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:12-19](../upstream/content/computability/recursive-functions/trees.tex#L12) | [mr/content/computability/recursive-functions/trees.tex:12-18](../mr/content/computability/recursive-functions/trees.tex#L12) | not yet paginated |
+| T314-OLP-0221-B006 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:21-28](../upstream/content/computability/recursive-functions/trees.tex#L21) | [mr/content/computability/recursive-functions/trees.tex:20-27](../mr/content/computability/recursive-functions/trees.tex#L20) | not yet paginated |
+| T314-OLP-0221-B007 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:30-35](../upstream/content/computability/recursive-functions/trees.tex#L30) | [mr/content/computability/recursive-functions/trees.tex:29-34](../mr/content/computability/recursive-functions/trees.tex#L29) | not yet paginated |
+| T314-OLP-0221-B008 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:37-68](../upstream/content/computability/recursive-functions/trees.tex#L37) | [mr/content/computability/recursive-functions/trees.tex:36-67](../mr/content/computability/recursive-functions/trees.tex#L36) | not yet paginated |
+| T314-OLP-0221-B009 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:70-75](../upstream/content/computability/recursive-functions/trees.tex#L70) | [mr/content/computability/recursive-functions/trees.tex:69-74](../mr/content/computability/recursive-functions/trees.tex#L69) | not yet paginated |
+
+**Chosen rendering/action:** मूळयुक्त किंवा नामांकित वृक्ष / गाठ / मूळ / तात्काळ उपवृक्ष / पर्णगाठ / स्तर
+
+**Confidence/status:** high; established tree/root core plus explicitly source-defined transparent node and level compounds; exact specialist group unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Are गाठ, तात्काळ उपवृक्ष and पर्णगाठ the clearest Marathi terms for nodes, immediate subtrees and leaves in this recursively coded rooted-tree construction?
+
+</details>
+
+<details>
+<summary><strong>T315 — simultaneous recursion / course-of-values recursion / changing parameters</strong> (4 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T315-OLP-0222-B004 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:9-10](../upstream/content/computability/recursive-functions/other-recursions.tex#L9) | [mr/content/computability/recursive-functions/other-recursions.tex:9-10](../mr/content/computability/recursive-functions/other-recursions.tex#L9) | not yet paginated |
+| T315-OLP-0222-B005 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:12-47](../upstream/content/computability/recursive-functions/other-recursions.tex#L12) | [mr/content/computability/recursive-functions/other-recursions.tex:12-45](../mr/content/computability/recursive-functions/other-recursions.tex#L12) | not yet paginated |
+| T315-OLP-0222-B006 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:50-55](../upstream/content/computability/recursive-functions/other-recursions.tex#L50) | [mr/content/computability/recursive-functions/other-recursions.tex:48-53](../mr/content/computability/recursive-functions/other-recursions.tex#L48) | not yet paginated |
+| T315-OLP-0222-B007 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:57-66](../upstream/content/computability/recursive-functions/other-recursions.tex#L57) | [mr/content/computability/recursive-functions/other-recursions.tex:55-63](../mr/content/computability/recursive-functions/other-recursions.tex#L55) | not yet paginated |
+
+**Chosen rendering/action:** एकसामयिक पुनरावर्तन / मूल्यक्रम पुनरावर्तन / बदलते प्राचल
+
+**Confidence/status:** high; direct official simultaneous and parameter stems plus source-defined recursion compounds; course-of-values term unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Should simultaneous recursion use the concise mathematics form एकसामयिक, and is मूल्यक्रम पुनरावर्तन transparent for access to the complete sequence of earlier values?
+
+</details>
+
+<details>
+<summary><strong>T316 — remainder function</strong> (1 occurrence; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T316-OLP-0222-B006 | OLP-0222 ·  | [upstream/content/computability/recursive-functions/other-recursions.tex:50-55](../upstream/content/computability/recursive-functions/other-recursions.tex#L50) | [mr/content/computability/recursive-functions/other-recursions.tex:48-53](../mr/content/computability/recursive-functions/other-recursions.tex#L48) | not yet paginated |
+
+**Chosen rendering/action:** शेष फल
+
+**Confidence/status:** high; adopted direct official mathematical attestation with source-controlled zero-divisor convention; open to correction.
+
+**Please double-check:** Should the exact official compound शेष फल be used consistently for the totalized natural-number remainder function?
+
+</details>
+
+<details>
+<summary><strong>T317 — non-primitive-recursive function / effective diagonal argument / Ackermann–Péter function / grows faster than</strong> (5 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T317-OLP-0223-B004 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:9-10](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L9) | [mr/content/computability/recursive-functions/non-pr-functions.tex:9-10](../mr/content/computability/recursive-functions/non-pr-functions.tex#L9) | not yet paginated |
+| T317-OLP-0223-B005 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L12) | [mr/content/computability/recursive-functions/non-pr-functions.tex:12-28](../mr/content/computability/recursive-functions/non-pr-functions.tex#L12) | not yet paginated |
+| T317-OLP-0223-B006 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:30-43](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L30) | [mr/content/computability/recursive-functions/non-pr-functions.tex:30-43](../mr/content/computability/recursive-functions/non-pr-functions.tex#L30) | not yet paginated |
+| T317-OLP-0224-B005 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:13-22](../upstream/content/computability/recursive-functions/partial-functions.tex#L13) | [mr/content/computability/recursive-functions/partial-functions.tex:13-21](../mr/content/computability/recursive-functions/partial-functions.tex#L13) | not yet paginated |
+| T317-OLP-0224-B006 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:24-30](../upstream/content/computability/recursive-functions/partial-functions.tex#L24) | [mr/content/computability/recursive-functions/partial-functions.tex:23-28](../mr/content/computability/recursive-functions/partial-functions.tex#L23) | not yet paginated |
+
+**Chosen rendering/action:** आदिम पुनरावर्ती नसलेले फलन / प्रभावी कर्णरेषीय युक्तिवाद / ॲकरमन–पेटर फलन / याहून अधिक वेगाने वाढते
+
+**Confidence/status:** high; source-defined mathematical claims with established diagonal/recursive vocabulary; proper-name spelling unattested and expert-reviewable; open to correction.
+
+**Please double-check:** Is ॲकरमन–पेटर the preferred Marathi spelling, and should the class label remain the explanatory आदिम पुनरावर्ती नसलेले फलन?
+
+</details>
+
+<details>
+<summary><strong>T318 — Church–Turing thesis / unpack a code / notation evaluator</strong> (4 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T318-OLP-0223-B009 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L75) | [mr/content/computability/recursive-functions/non-pr-functions.tex:72-76](../mr/content/computability/recursive-functions/non-pr-functions.tex#L72) | not yet paginated |
+| T318-OLP-0223-B010 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:81-86](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L81) | [mr/content/computability/recursive-functions/non-pr-functions.tex:78-83](../mr/content/computability/recursive-functions/non-pr-functions.tex#L78) | not yet paginated |
+| T318-OLP-0223-B011 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L88) | [mr/content/computability/recursive-functions/non-pr-functions.tex:85-92](../mr/content/computability/recursive-functions/non-pr-functions.tex#L85) | not yet paginated |
+| T318-OLP-0226-B005 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:12-25](../upstream/content/computability/recursive-functions/halting-problem.tex#L12) | [mr/content/computability/recursive-functions/halting-problem.tex:12-23](../mr/content/computability/recursive-functions/halting-problem.tex#L12) | not yet paginated |
+
+**Chosen rendering/action:** चर्च–ट्यूरिंग प्रबंध / संकेतांक उलगडणे / चिन्हांकनाचे मूल्य काढणारी प्रक्रिया
+
+**Confidence/status:** high; authoritative name and computation-equivalence evidence plus source-defined operational compounds; exact full title unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Should the named thesis use प्रबंध, अभ्युपगम or प्रतिपादन in Marathi computability prose, and is संकेतांक उलगडणे sufficiently clear for recursive notation evaluation?
+
+</details>
+
+<details>
+<summary><strong>T319 — defined or undefined at an input / partial equality / unbounded mu-search operator / non-halting computation</strong> (12 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T319-OLP-0224-B008 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:42-62](../upstream/content/computability/recursive-functions/partial-functions.tex#L42) | [mr/content/computability/recursive-functions/partial-functions.tex:39-57](../mr/content/computability/recursive-functions/partial-functions.tex#L39) | not yet paginated |
+| T319-OLP-0224-B009 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:64-73](../upstream/content/computability/recursive-functions/partial-functions.tex#L64) | [mr/content/computability/recursive-functions/partial-functions.tex:59-69](../mr/content/computability/recursive-functions/partial-functions.tex#L59) | not yet paginated |
+| T319-OLP-0224-B010 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:75-87](../upstream/content/computability/recursive-functions/partial-functions.tex#L75) | [mr/content/computability/recursive-functions/partial-functions.tex:71-81](../mr/content/computability/recursive-functions/partial-functions.tex#L71) | not yet paginated |
+| T319-OLP-0224-B011 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:89-96](../upstream/content/computability/recursive-functions/partial-functions.tex#L89) | [mr/content/computability/recursive-functions/partial-functions.tex:83-90](../mr/content/computability/recursive-functions/partial-functions.tex#L83) | not yet paginated |
+| T319-OLP-0225-B005 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:12-21](../upstream/content/computability/recursive-functions/normal-form.tex#L12) | [mr/content/computability/recursive-functions/normal-form.tex:12-21](../mr/content/computability/recursive-functions/normal-form.tex#L12) | not yet paginated |
+| T319-OLP-0225-B006 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:23-34](../upstream/content/computability/recursive-functions/normal-form.tex#L23) | [mr/content/computability/recursive-functions/normal-form.tex:23-34](../mr/content/computability/recursive-functions/normal-form.tex#L23) | not yet paginated |
+| T319-OLP-0225-B007 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:36-46](../upstream/content/computability/recursive-functions/normal-form.tex#L36) | [mr/content/computability/recursive-functions/normal-form.tex:36-45](../mr/content/computability/recursive-functions/normal-form.tex#L36) | not yet paginated |
+| T319-OLP-0226-B006 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:27-48](../upstream/content/computability/recursive-functions/halting-problem.tex#L27) | [mr/content/computability/recursive-functions/halting-problem.tex:25-48](../mr/content/computability/recursive-functions/halting-problem.tex#L25) | not yet paginated |
+| T319-OLP-0226-B008 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:55-90](../upstream/content/computability/recursive-functions/halting-problem.tex#L55) | [mr/content/computability/recursive-functions/halting-problem.tex:55-91](../mr/content/computability/recursive-functions/halting-problem.tex#L55) | not yet paginated |
+| T319-OLP-0227-B005 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:12-18](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L12) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:12-17](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L12) | not yet paginated |
+| T319-OLP-0227-B006 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:20-27](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L20) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:19-26](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L19) | not yet paginated |
+| T319-OLP-0227-B007 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:29-39](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L29) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:28-36](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L28) | not yet paginated |
+
+**Chosen rendering/action:** आदानावर परिभाषित किंवा अपरिभाषित / आंशिक समता / अपरिबद्ध μ-शोध परिकर्मी / न थांबणारे संगणन
+
+**Confidence/status:** high; established function/partial/unbounded/operator components under exact source definitions; equality and non-halting compounds expert-reviewable; open to correction.
+
+**Please double-check:** Are परिभाषित/अपरिभाषित and न थांबणारे संगणन clearest for definedness and divergence, and should the source-defined ≃ relation be named आंशिक समता or Kleene equality?
+
+</details>
+
+<details>
+<summary><strong>T320 — disjoint domains of chosen isomorphic copies / sufficient union construction</strong> (1 occurrence; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T320-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
+
+**Chosen rendering/action:** परस्पर विभक्त प्रांत / संयोगासाठी पुरेशी समरूपी प्रतींची निवड
+
+**Confidence/status:** high; direct official adjective with source-controlled sufficient construction; model-theoretic compound expert-reviewable; open to correction.
+
+**Please double-check:** Is विभक्त the clearest mathematical adjective for the chosen domains, and does the explanation distinguish this sufficient copy construction from a necessary condition on all unions?
+
+</details>
+
+<details>
+<summary><strong>T321 — Kleene's Normal Form Theorem / index of a partial recursive function / computation code</strong> (6 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T321-OLP-0225-B004 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:9-10](../upstream/content/computability/recursive-functions/normal-form.tex#L9) | [mr/content/computability/recursive-functions/normal-form.tex:9-10](../mr/content/computability/recursive-functions/normal-form.tex#L9) | not yet paginated |
+| T321-OLP-0225-B005 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:12-21](../upstream/content/computability/recursive-functions/normal-form.tex#L12) | [mr/content/computability/recursive-functions/normal-form.tex:12-21](../mr/content/computability/recursive-functions/normal-form.tex#L12) | not yet paginated |
+| T321-OLP-0225-B006 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:23-34](../upstream/content/computability/recursive-functions/normal-form.tex#L23) | [mr/content/computability/recursive-functions/normal-form.tex:23-34](../mr/content/computability/recursive-functions/normal-form.tex#L23) | not yet paginated |
+| T321-OLP-0225-B007 | OLP-0225 ·  | [upstream/content/computability/recursive-functions/normal-form.tex:36-46](../upstream/content/computability/recursive-functions/normal-form.tex#L36) | [mr/content/computability/recursive-functions/normal-form.tex:36-45](../mr/content/computability/recursive-functions/normal-form.tex#L36) | not yet paginated |
+| T321-OLP-0226-B006 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:27-48](../upstream/content/computability/recursive-functions/halting-problem.tex#L27) | [mr/content/computability/recursive-functions/halting-problem.tex:25-48](../mr/content/computability/recursive-functions/halting-problem.tex#L25) | not yet paginated |
+| T321-OLP-0226-B008 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:55-90](../upstream/content/computability/recursive-functions/halting-problem.tex#L55) | [mr/content/computability/recursive-functions/halting-problem.tex:55-91](../mr/content/computability/recursive-functions/halting-problem.tex#L55) | not yet paginated |
+
+**Chosen rendering/action:** क्लिनीचे प्रमाण रूप प्रमेय / आंशिक पुनरावर्ती फलनाचा निर्देशांक / संगणनाचा संकेतांक
+
+**Confidence/status:** high; direct official component attestations with source-controlled computability compounds; exact named theorem unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Does प्रमाण रूप distinguish this theorem from ordinary standardized forms, and is निर्देशांक clear for a program code rather than only a list position?
+
+</details>
+
+<details>
+<summary><strong>T322 — halting problem / halting function / total code numbering</strong> (5 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T322-OLP-0226-B004 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:9-10](../upstream/content/computability/recursive-functions/halting-problem.tex#L9) | [mr/content/computability/recursive-functions/halting-problem.tex:9-10](../mr/content/computability/recursive-functions/halting-problem.tex#L9) | not yet paginated |
+| T322-OLP-0226-B005 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:12-25](../upstream/content/computability/recursive-functions/halting-problem.tex#L12) | [mr/content/computability/recursive-functions/halting-problem.tex:12-23](../mr/content/computability/recursive-functions/halting-problem.tex#L12) | not yet paginated |
+| T322-OLP-0226-B006 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:27-48](../upstream/content/computability/recursive-functions/halting-problem.tex#L27) | [mr/content/computability/recursive-functions/halting-problem.tex:25-48](../mr/content/computability/recursive-functions/halting-problem.tex#L25) | not yet paginated |
+| T322-OLP-0226-B007 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:50-53](../upstream/content/computability/recursive-functions/halting-problem.tex#L50) | [mr/content/computability/recursive-functions/halting-problem.tex:50-53](../mr/content/computability/recursive-functions/halting-problem.tex#L50) | not yet paginated |
+| T322-OLP-0226-B008 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:55-90](../upstream/content/computability/recursive-functions/halting-problem.tex#L55) | [mr/content/computability/recursive-functions/halting-problem.tex:55-91](../mr/content/computability/recursive-functions/halting-problem.tex#L55) | not yet paginated |
+
+**Chosen rendering/action:** थांबण्याची समस्या / थांबण्याचे फलन / प्रत्येक संकेतांकाचा आंशिक पुनरावर्ती फलनाशी निर्देशांक-संबंध
+
+**Confidence/status:** medium; source-defined transparent title with native computation context; exact title unattested; expert-reviewable; open to correction.
+
+**Please double-check:** Is थांबण्याची समस्या natural in Marathi computing prose while keeping the theorem's two-argument decision problem precise?
+
+</details>
+
+<details>
+<summary><strong>T323 — regular function / general recursive function / total function</strong> (4 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T323-OLP-0227-B004 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:9-10](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L9) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:9-10](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L9) | not yet paginated |
+| T323-OLP-0227-B005 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:12-18](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L12) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:12-17](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L12) | not yet paginated |
+| T323-OLP-0227-B006 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:20-27](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L20) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:19-26](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L19) | not yet paginated |
+| T323-OLP-0227-B007 | OLP-0227 ·  | [upstream/content/computability/recursive-functions/general-recursive-functions.tex:29-39](../upstream/content/computability/recursive-functions/general-recursive-functions.tex#L29) | [mr/content/computability/recursive-functions/general-recursive-functions.tex:28-36](../mr/content/computability/recursive-functions/general-recursive-functions.tex#L28) | not yet paginated |
+
+**Chosen rendering/action:** नियमित फलन / सामान्य पुनरावर्ती फलन / सर्वत्र परिभाषित फलन
+
+**Confidence/status:** medium; direct official regular-function headword with source-defined distinct sense; full computability compounds expert-reviewable; open to correction.
+
+**Please double-check:** Does नियमित stay safely tied to the local zero-witness definition, and is सामान्य the clearest way to preserve the historically misleading general label?
 
 </details>
 
@@ -17676,17 +18621,32 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>OLFOL-050 — confirmed-frozen-source-union-construction omission and dropped sequence subscript with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+<summary><strong>OLFOL-050 — confirmed-frozen-source-dropped sequence subscript with documented formula projection</strong> (1 occurrence; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
-| OLFOL-050-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:66-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | not yet paginated |
+| OLFOL-050-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:68-76](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
 
-**Chosen rendering/action:** Made the standard disjoint-copy choice explicit, restored the n subscript in the subsequence phrase, placed reader note OLFOL-050 and projected the subscript back solely for frozen-source QA.
+**Chosen rendering/action:** Restored the n subscript in the subsequence phrase, placed reader note OLFOL-050 and projected only that subscript back for frozen-source QA.
 
-**Confidence/status:** high; confirmed by the claimed unique minimal union and by the explicitly indexed family in the preceding sentence; open to correction.
+**Confidence/status:** high; confirmed by the explicitly indexed family in the preceding sentence; open to correction.
 
-**Please double-check:** Do the shared constants plus otherwise disjoint domains now make the relational union well defined, with the subsequence taken from M_n?
+**Please double-check:** Does the restored n identify the family from which the subsequence is taken?
+
+</details>
+
+<details>
+<summary><strong>OLNOTE-001 — explanatory-disjoint-copy choice; sufficient construction, not a source defect</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLNOTE-001-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:68-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
+
+**Chosen rendering/action:** Retained the explicit sufficient copy choice, used the mathematics-glossary adjective विभक्त for the domains, and placed a separate reader note OLNOTE-001. The choice is mapped to MR-P153 and T320 in aligned block OLP-0207-B011.
+
+**Confidence/status:** medium; The copy construction is sufficient; necessity is disproved by compatible overlaps outside the shared constant values. The full model-theoretic construction is controlled by the frozen proof, while the Marathi adjective has direct glossary support.; open to correction.
+
+**Please double-check:** Is the explicit disjoint-copy construction clear as one sufficient choice without suggesting that all well-defined unions require it?
 
 </details>
 
@@ -17695,7 +18655,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
-| OLFOL-051-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L85) | not yet paginated |
+| OLFOL-051-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L82) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:86-103](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L86) | not yet paginated |
 
 **Chosen rendering/action:** Named the coding structure A, placed reader note OLFOL-051 and added a projection that reconstructs the frozen M notation solely for QA comparison.
 
@@ -17710,7 +18670,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
-| OLFOL-052-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L104) | not yet paginated |
+| OLFOL-052-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L100) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:105-111](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L105) | not yet paginated |
 
 **Chosen rendering/action:** Restored the L subscripts on both satisfaction symbols, placed reader note OLFOL-052 and added a unit-specific projection to the frozen formulas for comparison.
 
@@ -17721,17 +18681,17 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>OLFOL-053 — confirmed-frozen-source-incomplete compactness theory with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+<summary><strong>OLFOL-053 — explanatory expansion of a compressed standard compactness argument; no established source error</strong> (1 occurrence; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
-| OLFOL-053-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-109](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-128](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
+| OLFOL-053-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-109](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L113) | not yet paginated |
 
-**Chosen rendering/action:** Added the standard compactness theory placing a new constant above every standard successor, explained that each finite part is satisfiable, and placed adjacent reader note OLFOL-053. The protected source formulas remain unchanged.
+**Chosen rendering/action:** Expanded the standard argument in Marathi by mentioning a fresh constant and lower-bound sentences above every standard element, and placed adjacent reader note OLFOL-053. The target does not explicitly explain finite satisfiability; that verification remains implicit in the compressed argument. The protected source formulas remain unchanged.
 
-**Confidence/status:** high; confirmed by the standard natural-number countermodel and the usual compactness construction; open to correction.
+**Confidence/status:** medium; The source's existential compactness step is standard and not disproved by a standard-order model of D; the Marathi expansion is explanatory rather than corrective.; open to correction.
 
-**Please double-check:** Does adjoining the infinitely many lower-bound sentences now justify the non-standard element used in the back-and-forth set?
+**Please double-check:** Would a future reader benefit from an explicit finite-subtheory satisfiability sentence, or is the current fresh-constant expansion sufficient?
 
 </details>
 
@@ -17740,12 +18700,192 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
-| OLFOL-054-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-111](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-128](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L112) | not yet paginated |
+| OLFOL-054-OLP-0207 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-111](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L107) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-129](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L113) | not yet paginated |
 
 **Chosen rendering/action:** Used A-star consistently for the compactness model, placed reader note OLFOL-054 and projected the two target occurrences back to their two frozen spellings solely for QA comparison.
 
 **Confidence/status:** high; confirmed by D being a sentence about the coding structure A and by the immediate references to both M_n-star and N_n-star substructures; open to correction.
 
 **Please double-check:** Does consistent A-star notation identify the compactness model as an extension of the coding structure rather than of only the M side?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-001 — confirmed-frozen-source-recursion-direction defect with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-001-OLP-0211 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:27-29](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L27) | [mr/content/computability/recursive-functions/primitive-recursion.tex:23-25](../mr/content/computability/recursive-functions/primitive-recursion.tex#L23) | not yet paginated |
+
+**Chosen rendering/action:** State in Marathi that the successor value h(x+1) is defined from the preceding value h(x). Both protected formulas remain present and every other structural token is preserved; only their prose-directed dependency is corrected.
+
+**Confidence/status:** high; confirmed by clause (b), the x=0 and x=1 computations, and the general primitive-recursion equations later in the same frozen unit; open to correction.
+
+**Please double-check:** Does the repaired sentence now advance from h(x) to h(x+1), exactly as clause (b) and the later general scheme require?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-002 — confirmed-frozen-source-wrong output-argument bound with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-002-OLP-0212 | OLP-0212 ·  | [upstream/content/computability/recursive-functions/composition.tex:26-27](../upstream/content/computability/recursive-functions/composition.tex#L26) | [mr/content/computability/recursive-functions/composition.tex:28](../mr/content/computability/recursive-functions/composition.tex#L28) | not yet paginated |
+
+**Chosen rendering/action:** Use x_(n-1) in the Marathi h-input tuple while retaining y_0 through y_(k-1) as the k inputs to f. A unit-specific QA projection reconstructs the frozen x_(k-1) formula solely for source comparison.
+
+**Confidence/status:** high; confirmed by the displayed general definition, the preceding y_i computation and all later examples with unequal k and n; open to correction.
+
+**Please double-check:** Does x_0 through x_(n-1) now give h exactly its declared n arguments while f still receives the k computed y-values?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-003 — confirmed-frozen-source-section-title grammatical defect with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-003-OLP-0213 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:10](../upstream/content/computability/recursive-functions/pr-functions.tex#L10) | [mr/content/computability/recursive-functions/pr-functions.tex:10](../mr/content/computability/recursive-functions/pr-functions.tex#L10) | not yet paginated |
+
+**Chosen rendering/action:** Use the established Marathi class name आदिम पुनरावर्ती फलने in the section heading, matching every occurrence in the body. No formula, macro, identifier or reference is changed.
+
+**Confidence/status:** high; confirmed by the section's repeated class name, formal definition and propositions; open to correction.
+
+**Please double-check:** Does आदिम पुनरावर्ती फलने accurately name the function class formally defined throughout the section?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-004 — confirmed-frozen-source-strictness-label defect with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-004-OLP-0217 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:39-40](../upstream/content/computability/recursive-functions/pr-relations.tex#L39) | [mr/content/computability/recursive-functions/pr-relations.tex:42-43](../mr/content/computability/recursive-functions/pr-relations.tex#L42) | not yet paginated |
+
+**Chosen rendering/action:** Call it the less-than-or-equal relation in Marathi while preserving x≤y and IsZero(x dot-minus y) exactly. No protected formula, macro, identifier or reference changes.
+
+**Confidence/status:** high; confirmed by the displayed ≤ symbol and by truncated subtraction being zero when x≤y; open to correction.
+
+**Please double-check:** Does लघुतर अथवा समान संबंध now name exactly the relation displayed and defined in the frozen source?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-005 — confirmed-frozen-source-wrong vector variable with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-005-OLP-0218 | OLP-0218 ·  | [upstream/content/computability/recursive-functions/bounded-minimization.tex:53-54](../upstream/content/computability/recursive-functions/bounded-minimization.tex#L53) | [mr/content/computability/recursive-functions/bounded-minimization.tex:47-48](../mr/content/computability/recursive-functions/bounded-minimization.tex#L47) | not yet paginated |
+
+**Chosen rendering/action:** Use m_R(vector x,y+1)=y+1 in Marathi. A unit-specific QA projection reconstructs the frozen vector-z formula solely for source comparison.
+
+**Confidence/status:** high; confirmed by the proposition, the other two cases, the recurrence and the final iff statement; open to correction.
+
+**Please double-check:** Does vector x restore the third case to the same parameter tuple used by m_R throughout the proof?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-006 — confirmed-frozen-source-divisibility justification defects with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-006-OLP-0219 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:17-21](../upstream/content/computability/recursive-functions/primes.tex#L17) | [mr/content/computability/recursive-functions/primes.tex:16-21](../mr/content/computability/recursive-functions/primes.tex#L16) | not yet paginated |
+
+**Chosen rendering/action:** Describe the relevant remainder as arising when y is divided by x and qualify it by a positive divisor. Replace the false universal witness bound with the exact fact needed for bounded quantification: whenever a witness exists, one can choose a witness z≤y. Preserve all displayed formulas and protected mathematical tokens exactly.
+
+**Confidence/status:** high; confirmed directly by the definition x divides y iff some z satisfies x·z=y; at x=y=0, z=0 is a bounded witness but larger witnesses also satisfy the equation; open to correction.
+
+**Please double-check:** Does the corrected prose now justify the bounded existential formula for every pair of natural numbers, including zero?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-007 — confirmed-frozen-source-missing-small-cases in Euclidean bound proof with bounded prose completion</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-007-OLP-0219 | OLP-0219 ·  | [upstream/content/computability/recursive-functions/primes.tex:64-66](../upstream/content/computability/recursive-functions/primes.tex#L64) | [mr/content/computability/recursive-functions/primes.tex:66-68](../mr/content/computability/recursive-functions/primes.tex#L66) | not yet paginated |
+
+**Chosen rendering/action:** Handle the two natural inputs below 2 in one prose sentence, observing that 2 supplies the required prime, and then apply the frozen product proof to the remaining inputs. The completion adds no protected formula or macro and leaves the product argument unchanged.
+
+**Confidence/status:** high; confirmed because the frozen result and nextPrime formula are stated for arbitrary natural x, while their proof's p_n exists only once x is at least 2; open to correction.
+
+**Please double-check:** Does the added small-input sentence complete the stated bound before the unchanged Euclidean product argument handles all remaining natural inputs?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-008 — confirmed-frozen-source-empty-sequence bound omission with bounded prose completion</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-008-OLP-0220 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:144-154](../upstream/content/computability/recursive-functions/sequences.tex#L144) | [mr/content/computability/recursive-functions/sequences.tex:141-153](../mr/content/computability/recursive-functions/sequences.tex#L141) | not yet paginated |
+
+**Chosen rendering/action:** State that the displayed prime-power bound applies at positive length and adopt the value one for the zero-length sequence bound. This makes the subsequent strict search v<sequenceBound include the canonical empty code v=0 while leaving every protected frozen formula unchanged.
+
+**Confidence/status:** high; confirmed by substituting len(s)=len(t)=0 into the following sequenceBound call and by the declared canonical empty code zero; open to correction.
+
+**Please double-check:** Does the positive-length qualification plus zero-length value one make the bounded-search concat definition total on the declared empty-sequence codes?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-009 — confirmed-frozen-source-domain-label inconsistency with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-009-OLP-0220 | OLP-0220 ·  | [upstream/content/computability/recursive-functions/sequences.tex:131-132](../upstream/content/computability/recursive-functions/sequences.tex#L131) | [mr/content/computability/recursive-functions/sequences.tex:128-130](../mr/content/computability/recursive-functions/sequences.tex#L128) | not yet paginated |
+
+**Chosen rendering/action:** Call the copied entries the first n elements of t in Marathi. The hconcat recurrence, indices and all protected formulas remain exact.
+
+**Confidence/status:** high; confirmed by the section's opening domain declaration, the element function and the recurrence's use of (t)_n; open to correction.
+
+**Please double-check:** Does घटक correctly identify the copied natural-number entries in the hconcat recurrence?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-010 — confirmed-frozen-source-level-semantics mismatch with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-010-OLP-0221 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:41-47](../upstream/content/computability/recursive-functions/trees.tex#L41) | [mr/content/computability/recursive-functions/trees.tex:39-46](../mr/content/computability/recursive-functions/trees.tex#L39) | not yet paginated |
+
+**Chosen rendering/action:** Describe hSubtreeSeq as accumulating all subtrees through level n, with possible repetitions, and describe the successor step as retaining the prior levels while appending their immediate subtrees. The recurrence itself is preserved.
+
+**Confidence/status:** high; confirmed by the explicit concatenation with hSubtreeSeq(t,n) and by the exercise's statement that the result generally contains repetitions; open to correction.
+
+**Please double-check:** Does ‘through level n’ now state exactly the cumulative invariant maintained by hSubtreeSeq?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-011 — confirmed-frozen-source-off-by-one fold defect with documented formula projection</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-011-OLP-0221 | OLP-0221 ·  | [upstream/content/computability/recursive-functions/trees.tex:48-57](../upstream/content/computability/recursive-functions/trees.tex#L48) | [mr/content/computability/recursive-functions/trees.tex:47-56](../mr/content/computability/recursive-functions/trees.tex#L47) | not yet paginated |
+
+**Chosen rendering/action:** Define g(s,0) as the empty sequence and g(s,k+1) by appending f((s)_k), so g(s,k) folds exactly the first k entries and g(s,len(s)) handles every entry once, including the empty case. Unit-specific QA projections reconstruct the three frozen formulas solely for comparison.
+
+**Confidence/status:** high; confirmed by the zero-based element convention established in OLP-0220 and the valid index range 0 through len(s)−1; open to correction.
+
+**Please double-check:** Does the corrected empty-base successor fold process precisely entries 0 through len(s)−1 before the unchanged h(s)=g(s,len(s)) call?
+
+</details>
+
+<details>
+<summary><strong>OLCMP-012 — confirmed-frozen-source-impossible unindexed-code branch in halting argument with bounded prose correction</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLCMP-012-OLP-0226 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:27-48](../upstream/content/computability/recursive-functions/halting-problem.tex#L27); [upstream/content/computability/recursive-functions/halting-problem.tex:65-89](../upstream/content/computability/recursive-functions/halting-problem.tex#L65) | [mr/content/computability/recursive-functions/halting-problem.tex:27-48](../mr/content/computability/recursive-functions/halting-problem.tex#L27); [mr/content/computability/recursive-functions/halting-problem.tex:65-90](../mr/content/computability/recursive-functions/halting-problem.tex#L65) | not yet paginated |
+
+**Chosen rendering/action:** Removed the impossible no-index alternative from the Marathi explanation and both proof cases, kept the two-case diagonal contradiction, and placed adjacent reader note OLCMP-012. All protected formulas, identifiers, macros and references remain source-identical.
+
+**Confidence/status:** high; confirmed by the universal e parameter in the immediately preceding normal-form definition; the mathematical correction is confined to prose; open to correction.
+
+**Please double-check:** Does the corrected proof use that every natural e indexes a partial recursive function while still deriving the diagonal contradiction for h?
 
 </details>

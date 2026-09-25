@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0224",
+  "method": "Same-agent English/Marathi close reading, reverse paraphrase and exact definedness, minimization, halting, formula, macro, token and label comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Partial recursive functions, partial composition and recursion, unbounded μ-search, divergence, relation minimization, and total recursive functions.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "Any effectively enumerable class with a computable universal evaluator is defeated by diagonalization, so total computable functions cannot be exhaustively listed that way. Partial computable functions can be enumerated, and the definition must both admit partiality and add a new operation.",
+      "checks": "The exact hypothesis on f_x(y), the role of partiality, the tagged Turing-machine clause and both required changes are preserved."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "For partial functions, definedness and undefinedness are marked explicitly. f≃g means both undefined or both defined and equal. A composition is defined exactly when every inner value and the corresponding outer value are defined; composition and primitive recursion then replace equals by partial equality.",
+      "checks": "Domains, vector arguments, all g_i values, outer h arguments, both definedness symbols and the ≃ convention are exact."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11
+      ],
+      "reverse_paraphrase": "μx f is the least x at which all computations from zero through x are defined and f(x)=0; otherwise it is undefined. Operationally, search in order and diverge if any intermediate computation fails to halt. For a relation, minimize 1 dot-minus its characteristic function; for total f this equals minimizing f=0.",
+      "checks": "The prefix-definedness requirement, zero test, undefined fallback, non-halting behavior, characteristic-function polarity and distinction between partial f and total Char(R) are preserved."
+    },
+    {
+      "blocks": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "reverse_paraphrase": "Partial recursive functions form the least partial-function class containing zero, successor and projections and closed under composition, primitive recursion and unbounded search. Recursive functions are exactly its total members, sometimes called total recursive.",
+      "checks": "The smallest-class clause, all generators and closures, varying arity, totality restriction and definition label are exact."
+    }
+  ],
+  "source_observations": [
+    "MR-P138 directly supports आंशिक and आदिम, while T302 records the class names आंशिक पुनरावर्ती and सामान्य/total recursive distinctions.",
+    "MR-P139 directly attests अपरिबद्ध; T303 and T319 record the exact search, definedness and non-halting conventions supplied by OpenLogic.",
+    "MR-P131 directly supports ट्यूरिंग यंत्र and the computation/recursive-function relationship used in the optional tag clauses.",
+    "No deterministic frozen-source correction was needed in this unit."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact compounds आंशिक समता and अपरिबद्ध शोध परिकर्मी remain expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

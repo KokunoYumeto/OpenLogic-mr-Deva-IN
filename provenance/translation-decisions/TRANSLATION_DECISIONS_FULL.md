@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 occurrences.
+Coverage: 224/722 source units through OLP-0227; 467 applied decisions; 12,344 occurrences.
 
 ## T001 — set
 
@@ -788,6 +788,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T002-OLP-0196-B033` | `OLP-0196` | 20.5 PA ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-228` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:226-233` | 256–259 |
 | `T002-OLP-0197-B006` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | 259–260 |
 | `T002-OLP-0197-B008` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | 259–260 |
+| `T002-OLP-0210-B006` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:30-39` | `mr/content/computability/recursive-functions/introduction.tex:29-38` | pending |
 
 ## T003 — empty set
 
@@ -1684,6 +1685,9 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T008-OLP-0197-B010` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:100-105` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:100-104` | 259–260 |
 | `T008-OLP-0197-B011` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:107-110` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:106-109` | 259–260 |
 | `T008-OLP-0197-B012` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116` | 259–260 |
+| `T008-OLP-0211-B005` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24` | `mr/content/computability/recursive-functions/primitive-recursion.tex:12-25` | pending |
+| `T008-OLP-0211-B006` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:26-41` | `mr/content/computability/recursive-functions/primitive-recursion.tex:27-42` | pending |
+| `T008-OLP-0213-B008` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:37-42` | `mr/content/computability/recursive-functions/pr-functions.tex:38-44` | pending |
 
 ## T009 — formal validity
 
@@ -1969,6 +1973,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T011-OLP-0149-B004` | `OLP-0149` | 15 प्रथम-क्रम तर्कशास्त्राची विन्यासमीमांसा — प्रकरण-प्रस्तावना | `upstream/content/first-order-logic/syntax-and-semantics/syntax.tex:8-8` | `mr/content/first-order-logic/syntax-and-semantics/syntax.tex:8-8` | 194 |
 | `T011-OLP-0150-B006` | `OLP-0150` | 15.1 परिचय | `upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31` | `mr/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-30` | 194 |
 | `T011-OLP-0166-B005` | `OLP-0166` | 16.7 चिन्हार्थविषयक संकल्पना | `upstream/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | `mr/content/first-order-logic/syntax-and-semantics/semantic-notions.tex:12-23` | 220–221 |
+| `T011-OLP-0209-B005` | `OLP-0209` |  | `upstream/content/computability/recursive-functions/recursive-functions.tex:10-15` | `mr/content/computability/recursive-functions/recursive-functions.tex:10-15` | pending |
 
 ## T012 — semantics
 
@@ -2173,6 +2178,8 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T013-OLP-0202-B009` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:59-64` | `mr/content/model-theory/interpolation/definability.tex:59-64` | pending |
 | `T013-OLP-0205-B007` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:39-46` | `mr/content/model-theory/lindstrom/abstract-logics.tex:39-47` | pending |
 | `T013-OLP-0206-B008` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:23-26` | `mr/content/model-theory/lindstrom/ls-property.tex:23-27` | pending |
+| `T013-OLP-0210-B005` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:12-28` | `mr/content/computability/recursive-functions/introduction.tex:12-27` | pending |
+| `T013-OLP-0210-B007` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:41-52` | `mr/content/computability/recursive-functions/introduction.tex:40-51` | pending |
 
 ## T014 — perfect number
 
@@ -2355,6 +2362,8 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T015-OLP-0156-B031` | `OLP-0156` | 15.7 रचनाक्रमिका | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:263-265` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:258-260` | 202–205 |
 | `T015-OLP-0156-B032` | `OLP-0156` | 15.7 रचनाक्रमिका | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:267-269` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:262-264` | 202–205 |
 | `T015-OLP-0157-B012` | `OLP-0157` | 15.8 मुक्त चल आणि वाक्य | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | 205–206 |
+| `T015-OLP-0213-B017` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:125-131` | `mr/content/computability/recursive-functions/pr-functions.tex:123-128` | pending |
+| `T015-OLP-0216-B020` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:151-153` | `mr/content/computability/recursive-functions/examples.tex:152-154` | pending |
 
 ## T016 — if and only if
 
@@ -2922,6 +2931,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T022-OLP-0030-B009` | `OLP-0030` | 4.3 कँटर यांची नागमोडी पद्धत | `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:78-112` | `mr/content/sets-functions-relations/size-of-sets/zig-zag.tex:79-114` | 40–42 |
 | `T022-OLP-0031-B018` | `OLP-0031` | 4.4 जोडीकरण फलने आणि संकेतांक | `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:111-113` | `mr/content/sets-functions-relations/size-of-sets/pairing.tex:115-117` | 42–43 |
 | `T022-OLP-0128-B007` | `OLP-0128` | 13.2 सिद्धतेचा आराखडा | `upstream/content/first-order-logic/completeness/outline.tex:34-47` | `mr/content/first-order-logic/completeness/outline.tex:31-46` | 171–172 |
+| `T022-OLP-0210-B006` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:30-39` | `mr/content/computability/recursive-functions/introduction.tex:29-38` | pending |
 
 ## T023 — sequence/string/word
 
@@ -3023,7 +3033,8 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T023-OLP-0156-B021` | `OLP-0156` | 15.7 रचनाक्रमिका | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:180-207` | 202–205 |
 | `T023-OLP-0156-B023` | `OLP-0156` | 15.7 रचनाक्रमिका | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:215-219` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:212-216` | 202–205 |
 | `T023-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
-| `T023-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102` | pending |
+| `T023-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:86-103` | pending |
+| `T023-OLP-0220-B005` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:12-25` | `mr/content/computability/recursive-functions/sequences.tex:12-24` | pending |
 
 ## T024 — set difference
 
@@ -3614,7 +3625,53 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T030-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
 | `T030-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
 | `T030-OLP-0206-B013` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:74-86` | `mr/content/model-theory/lindstrom/ls-property.tex:75-88` | pending |
-| `T030-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102` | pending |
+| `T030-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:86-103` | pending |
+| `T030-OLP-0210-B006` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:30-39` | `mr/content/computability/recursive-functions/introduction.tex:29-38` | pending |
+| `T030-OLP-0217-B005` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:13-25` | `mr/content/computability/recursive-functions/pr-relations.tex:13-24` | pending |
+| `T030-OLP-0217-B006` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:27-36` | `mr/content/computability/recursive-functions/pr-relations.tex:26-35` | pending |
+| `T030-OLP-0217-B007` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:38-45` | `mr/content/computability/recursive-functions/pr-relations.tex:37-44` | pending |
+| `T030-OLP-0217-B014` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:140-156` | `mr/content/computability/recursive-functions/pr-relations.tex:142-157` | pending |
+| `T030-OLP-0218-B005` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25` | `mr/content/computability/recursive-functions/bounded-minimization.tex:12-25` | pending |
+| `T030-OLP-0218-B006` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:27-35` | `mr/content/computability/recursive-functions/bounded-minimization.tex:27-35` | pending |
+| `T030-OLP-0218-B007` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:37-39` | `mr/content/computability/recursive-functions/bounded-minimization.tex:37-39` | pending |
+| `T030-OLP-0218-B008` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62` | `mr/content/computability/recursive-functions/bounded-minimization.tex:41-63` | pending |
+| `T030-OLP-0218-B009` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69` | `mr/content/computability/recursive-functions/bounded-minimization.tex:65-70` | pending |
+| `T030-OLP-0219-B007` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:41-44` | `mr/content/computability/recursive-functions/primes.tex:43-46` | pending |
+| `T030-OLP-0219-B008` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:46-62` | `mr/content/computability/recursive-functions/primes.tex:48-64` | pending |
+| `T030-OLP-0220-B007` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:38-41` | `mr/content/computability/recursive-functions/sequences.tex:37-39` | pending |
+| `T030-OLP-0220-B008` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:43-46` | `mr/content/computability/recursive-functions/sequences.tex:41-43` | pending |
+| `T030-OLP-0220-B009` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:48-72` | `mr/content/computability/recursive-functions/sequences.tex:45-70` | pending |
+| `T030-OLP-0220-B010` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:74-77` | `mr/content/computability/recursive-functions/sequences.tex:72-75` | pending |
+| `T030-OLP-0220-B011` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:79-88` | `mr/content/computability/recursive-functions/sequences.tex:77-86` | pending |
+| `T030-OLP-0220-B012` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:90-94` | `mr/content/computability/recursive-functions/sequences.tex:88-92` | pending |
+| `T030-OLP-0220-B013` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:96-107` | `mr/content/computability/recursive-functions/sequences.tex:94-105` | pending |
+| `T030-OLP-0220-B014` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:109-117` | `mr/content/computability/recursive-functions/sequences.tex:107-115` | pending |
+| `T030-OLP-0220-B015` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:119-122` | `mr/content/computability/recursive-functions/sequences.tex:117-120` | pending |
+| `T030-OLP-0220-B016` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:124-140` | `mr/content/computability/recursive-functions/sequences.tex:122-137` | pending |
+| `T030-OLP-0220-B019` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:156-168` | `mr/content/computability/recursive-functions/sequences.tex:155-166` | pending |
+| `T030-OLP-0220-B020` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:170-176` | `mr/content/computability/recursive-functions/sequences.tex:168-174` | pending |
+| `T030-OLP-0220-B021` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:178-185` | `mr/content/computability/recursive-functions/sequences.tex:176-183` | pending |
+| `T030-OLP-0220-B022` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:187-192` | `mr/content/computability/recursive-functions/sequences.tex:185-189` | pending |
+| `T030-OLP-0221-B005` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:12-19` | `mr/content/computability/recursive-functions/trees.tex:12-18` | pending |
+| `T030-OLP-0221-B007` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:30-35` | `mr/content/computability/recursive-functions/trees.tex:29-34` | pending |
+| `T030-OLP-0221-B008` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:37-68` | `mr/content/computability/recursive-functions/trees.tex:36-67` | pending |
+| `T030-OLP-0221-B009` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:70-75` | `mr/content/computability/recursive-functions/trees.tex:69-74` | pending |
+| `T030-OLP-0222-B005` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:12-47` | `mr/content/computability/recursive-functions/other-recursions.tex:12-45` | pending |
+| `T030-OLP-0222-B006` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:50-55` | `mr/content/computability/recursive-functions/other-recursions.tex:48-53` | pending |
+| `T030-OLP-0222-B007` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:57-66` | `mr/content/computability/recursive-functions/other-recursions.tex:55-63` | pending |
+| `T030-OLP-0223-B005` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28` | `mr/content/computability/recursive-functions/non-pr-functions.tex:12-28` | pending |
+| `T030-OLP-0223-B006` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:30-43` | `mr/content/computability/recursive-functions/non-pr-functions.tex:30-43` | pending |
+| `T030-OLP-0223-B007` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65` | `mr/content/computability/recursive-functions/non-pr-functions.tex:45-64` | pending |
+| `T030-OLP-0223-B009` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79` | `mr/content/computability/recursive-functions/non-pr-functions.tex:72-76` | pending |
+| `T030-OLP-0223-B011` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96` | `mr/content/computability/recursive-functions/non-pr-functions.tex:85-92` | pending |
+| `T030-OLP-0224-B005` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:13-22` | `mr/content/computability/recursive-functions/partial-functions.tex:13-21` | pending |
+| `T030-OLP-0224-B007` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:32-40` | `mr/content/computability/recursive-functions/partial-functions.tex:30-37` | pending |
+| `T030-OLP-0224-B008` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:42-62` | `mr/content/computability/recursive-functions/partial-functions.tex:39-57` | pending |
+| `T030-OLP-0224-B009` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:64-73` | `mr/content/computability/recursive-functions/partial-functions.tex:59-69` | pending |
+| `T030-OLP-0224-B010` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:75-87` | `mr/content/computability/recursive-functions/partial-functions.tex:71-81` | pending |
+| `T030-OLP-0224-B011` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:89-96` | `mr/content/computability/recursive-functions/partial-functions.tex:83-90` | pending |
+| `T030-OLP-0224-B012` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:98-103` | `mr/content/computability/recursive-functions/partial-functions.tex:92-97` | pending |
+| `T030-OLP-0224-B014` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:108-112` | `mr/content/computability/recursive-functions/partial-functions.tex:102-106` | pending |
 
 ## T031 — identity relation
 
@@ -4546,6 +4603,10 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T041-OLP-0109-B011` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:63-71` | `mr/content/first-order-logic/tableaux/soundness.tex:64-71` | 153–156 |
 | `T041-OLP-0109-B012` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:73-80` | `mr/content/first-order-logic/tableaux/soundness.tex:73-79` | 153–156 |
 | `T041-OLP-0109-B013` | `OLP-0109` | 11.11 निर्दोषता | `upstream/content/first-order-logic/tableaux/soundness.tex:82-88` | `mr/content/first-order-logic/tableaux/soundness.tex:81-86` | 153–156 |
+| `T041-OLP-0221-B004` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:9-10` | `mr/content/computability/recursive-functions/trees.tex:9-10` | pending |
+| `T041-OLP-0221-B005` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:12-19` | `mr/content/computability/recursive-functions/trees.tex:12-18` | pending |
+| `T041-OLP-0221-B006` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:21-28` | `mr/content/computability/recursive-functions/trees.tex:20-27` | pending |
+| `T041-OLP-0221-B008` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:37-68` | `mr/content/computability/recursive-functions/trees.tex:36-67` | pending |
 
 ## T042 — least / well-ordered / predecessor / successor
 
@@ -4647,6 +4708,21 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T042-OLP-0196-B031` | `OLP-0196` | 20.5 PA ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:210-213` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:216-218` | 256–259 |
 | `T042-OLP-0197-B005` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22` | 259–260 |
 | `T042-OLP-0197-B009` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98` | 259–260 |
+| `T042-OLP-0211-B005` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24` | `mr/content/computability/recursive-functions/primitive-recursion.tex:12-25` | pending |
+| `T042-OLP-0211-B009` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97` | `mr/content/computability/recursive-functions/primitive-recursion.tex:70-95` | pending |
+| `T042-OLP-0211-B010` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:99-130` | `mr/content/computability/recursive-functions/primitive-recursion.tex:97-127` | pending |
+| `T042-OLP-0212-B007` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:29-46` | `mr/content/computability/recursive-functions/composition.tex:30-46` | pending |
+| `T042-OLP-0213-B008` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:37-42` | `mr/content/computability/recursive-functions/pr-functions.tex:38-44` | pending |
+| `T042-OLP-0213-B014` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:88-114` | `mr/content/computability/recursive-functions/pr-functions.tex:86-112` | pending |
+| `T042-OLP-0213-B018` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:133-162` | `mr/content/computability/recursive-functions/pr-functions.tex:130-158` | pending |
+| `T042-OLP-0214-B005` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20` | pending |
+| `T042-OLP-0214-B007` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43` | pending |
+| `T042-OLP-0215-B007` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41` | pending |
+| `T042-OLP-0216-B007` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:29-45` | `mr/content/computability/recursive-functions/examples.tex:28-44` | pending |
+| `T042-OLP-0216-B008` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:47-56` | `mr/content/computability/recursive-functions/examples.tex:46-55` | pending |
+| `T042-OLP-0216-B009` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:58-76` | `mr/content/computability/recursive-functions/examples.tex:57-75` | pending |
+| `T042-OLP-0216-B011` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:83-97` | `mr/content/computability/recursive-functions/examples.tex:82-97` | pending |
+| `T042-OLP-0216-B013` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:110-116` | `mr/content/computability/recursive-functions/examples.tex:110-116` | pending |
 
 ## T043 — closure / inverse / restriction / relative product
 
@@ -5207,6 +5283,17 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T044-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
 | `T044-OLP-0202-B007` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:34-44` | `mr/content/model-theory/interpolation/definability.tex:33-43` | pending |
 | `T044-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
+| `T044-OLP-0208-B004` | `OLP-0208` |  | `upstream/content/computability/computability.tex:7-7` | `mr/content/computability/computability.tex:7-7` | pending |
+| `T044-OLP-0208-B005` | `OLP-0208` |  | `upstream/content/computability/computability.tex:9-14` | `mr/content/computability/computability.tex:9-14` | pending |
+| `T044-OLP-0210-B005` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:12-28` | `mr/content/computability/recursive-functions/introduction.tex:12-27` | pending |
+| `T044-OLP-0210-B006` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:30-39` | `mr/content/computability/recursive-functions/introduction.tex:29-38` | pending |
+| `T044-OLP-0210-B007` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:41-52` | `mr/content/computability/recursive-functions/introduction.tex:40-51` | pending |
+| `T044-OLP-0212-B006` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:17-27` | `mr/content/computability/recursive-functions/composition.tex:17-28` | pending |
+| `T044-OLP-0215-B005` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:12-30` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:12-33` | pending |
+| `T044-OLP-0215-B006` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:35-37` | pending |
+| `T044-OLP-0215-B007` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41` | pending |
+| `T044-OLP-0218-B005` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25` | `mr/content/computability/recursive-functions/bounded-minimization.tex:12-25` | pending |
+| `T044-OLP-0226-B005` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:12-25` | `mr/content/computability/recursive-functions/halting-problem.tex:12-23` | pending |
 
 ## T045 — function / mapping
 
@@ -5540,6 +5627,68 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T045-OLP-0197-B010` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:100-105` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:100-104` | 259–260 |
 | `T045-OLP-0201-B015` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:151-163` | `mr/content/model-theory/interpolation/interpolation-proof.tex:151-163` | pending |
 | `T045-OLP-0201-B016` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `mr/content/model-theory/interpolation/interpolation-proof.tex:165-183` | pending |
+| `T045-OLP-0208-B005` | `OLP-0208` |  | `upstream/content/computability/computability.tex:9-14` | `mr/content/computability/computability.tex:9-14` | pending |
+| `T045-OLP-0209-B004` | `OLP-0209` |  | `upstream/content/computability/recursive-functions/recursive-functions.tex:8-8` | `mr/content/computability/recursive-functions/recursive-functions.tex:8-8` | pending |
+| `T045-OLP-0209-B005` | `OLP-0209` |  | `upstream/content/computability/recursive-functions/recursive-functions.tex:10-15` | `mr/content/computability/recursive-functions/recursive-functions.tex:10-15` | pending |
+| `T045-OLP-0210-B005` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:12-28` | `mr/content/computability/recursive-functions/introduction.tex:12-27` | pending |
+| `T045-OLP-0210-B006` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:30-39` | `mr/content/computability/recursive-functions/introduction.tex:29-38` | pending |
+| `T045-OLP-0210-B007` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:41-52` | `mr/content/computability/recursive-functions/introduction.tex:40-51` | pending |
+| `T045-OLP-0211-B005` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24` | `mr/content/computability/recursive-functions/primitive-recursion.tex:12-25` | pending |
+| `T045-OLP-0211-B006` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:26-41` | `mr/content/computability/recursive-functions/primitive-recursion.tex:27-42` | pending |
+| `T045-OLP-0211-B007` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:43-51` | `mr/content/computability/recursive-functions/primitive-recursion.tex:44-51` | pending |
+| `T045-OLP-0211-B008` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:53-69` | `mr/content/computability/recursive-functions/primitive-recursion.tex:53-68` | pending |
+| `T045-OLP-0211-B009` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97` | `mr/content/computability/recursive-functions/primitive-recursion.tex:70-95` | pending |
+| `T045-OLP-0211-B010` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:99-130` | `mr/content/computability/recursive-functions/primitive-recursion.tex:97-127` | pending |
+| `T045-OLP-0212-B005` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:12-15` | `mr/content/computability/recursive-functions/composition.tex:12-15` | pending |
+| `T045-OLP-0212-B006` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:17-27` | `mr/content/computability/recursive-functions/composition.tex:17-28` | pending |
+| `T045-OLP-0212-B007` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:29-46` | `mr/content/computability/recursive-functions/composition.tex:30-46` | pending |
+| `T045-OLP-0212-B008` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:48-57` | `mr/content/computability/recursive-functions/composition.tex:48-56` | pending |
+| `T045-OLP-0212-B009` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:59-65` | `mr/content/computability/recursive-functions/composition.tex:58-64` | pending |
+| `T045-OLP-0212-B010` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:67-88` | `mr/content/computability/recursive-functions/composition.tex:66-86` | pending |
+| `T045-OLP-0213-B005` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:12-13` | `mr/content/computability/recursive-functions/pr-functions.tex:12-13` | pending |
+| `T045-OLP-0213-B006` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:15-24` | `mr/content/computability/recursive-functions/pr-functions.tex:15-24` | pending |
+| `T045-OLP-0213-B007` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:26-35` | `mr/content/computability/recursive-functions/pr-functions.tex:26-36` | pending |
+| `T045-OLP-0213-B008` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:37-42` | `mr/content/computability/recursive-functions/pr-functions.tex:38-44` | pending |
+| `T045-OLP-0213-B009` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:44-61` | `mr/content/computability/recursive-functions/pr-functions.tex:46-61` | pending |
+| `T045-OLP-0213-B010` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:63-67` | `mr/content/computability/recursive-functions/pr-functions.tex:63-66` | pending |
+| `T045-OLP-0213-B011` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:69-80` | `mr/content/computability/recursive-functions/pr-functions.tex:68-78` | pending |
+| `T045-OLP-0213-B012` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:82-82` | `mr/content/computability/recursive-functions/pr-functions.tex:80-80` | pending |
+| `T045-OLP-0213-B013` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:84-86` | `mr/content/computability/recursive-functions/pr-functions.tex:82-84` | pending |
+| `T045-OLP-0213-B014` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:88-114` | `mr/content/computability/recursive-functions/pr-functions.tex:86-112` | pending |
+| `T045-OLP-0213-B015` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:116-119` | `mr/content/computability/recursive-functions/pr-functions.tex:114-117` | pending |
+| `T045-OLP-0213-B017` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:125-131` | `mr/content/computability/recursive-functions/pr-functions.tex:123-128` | pending |
+| `T045-OLP-0213-B018` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:133-162` | `mr/content/computability/recursive-functions/pr-functions.tex:130-158` | pending |
+| `T045-OLP-0214-B005` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20` | pending |
+| `T045-OLP-0214-B006` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:23-28` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:22-26` | pending |
+| `T045-OLP-0214-B007` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43` | pending |
+| `T045-OLP-0214-B008` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:47-49` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:45-47` | pending |
+| `T045-OLP-0215-B005` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:12-30` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:12-33` | pending |
+| `T045-OLP-0215-B006` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:35-37` | pending |
+| `T045-OLP-0215-B007` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41` | pending |
+| `T045-OLP-0216-B005` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:13-23` | `mr/content/computability/recursive-functions/examples.tex:13-22` | pending |
+| `T045-OLP-0216-B006` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:25-27` | `mr/content/computability/recursive-functions/examples.tex:24-26` | pending |
+| `T045-OLP-0216-B007` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:29-45` | `mr/content/computability/recursive-functions/examples.tex:28-44` | pending |
+| `T045-OLP-0216-B008` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:47-56` | `mr/content/computability/recursive-functions/examples.tex:46-55` | pending |
+| `T045-OLP-0216-B009` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:58-76` | `mr/content/computability/recursive-functions/examples.tex:57-75` | pending |
+| `T045-OLP-0216-B010` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:78-81` | `mr/content/computability/recursive-functions/examples.tex:77-80` | pending |
+| `T045-OLP-0216-B011` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:83-97` | `mr/content/computability/recursive-functions/examples.tex:82-97` | pending |
+| `T045-OLP-0217-B006` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:27-36` | `mr/content/computability/recursive-functions/pr-relations.tex:26-35` | pending |
+| `T045-OLP-0217-B013` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:126-138` | `mr/content/computability/recursive-functions/pr-relations.tex:128-140` | pending |
+| `T045-OLP-0217-B014` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:140-156` | `mr/content/computability/recursive-functions/pr-relations.tex:142-157` | pending |
+| `T045-OLP-0217-B015` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:158-167` | `mr/content/computability/recursive-functions/pr-relations.tex:159-168` | pending |
+| `T045-OLP-0218-B005` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25` | `mr/content/computability/recursive-functions/bounded-minimization.tex:12-25` | pending |
+| `T045-OLP-0218-B006` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:27-35` | `mr/content/computability/recursive-functions/bounded-minimization.tex:27-35` | pending |
+| `T045-OLP-0218-B008` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62` | `mr/content/computability/recursive-functions/bounded-minimization.tex:41-63` | pending |
+| `T045-OLP-0218-B009` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69` | `mr/content/computability/recursive-functions/bounded-minimization.tex:65-70` | pending |
+| `T045-OLP-0225-B005` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:12-21` | `mr/content/computability/recursive-functions/normal-form.tex:12-21` | pending |
+| `T045-OLP-0225-B006` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:23-34` | `mr/content/computability/recursive-functions/normal-form.tex:23-34` | pending |
+| `T045-OLP-0225-B007` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:36-46` | `mr/content/computability/recursive-functions/normal-form.tex:36-45` | pending |
+| `T045-OLP-0226-B006` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:27-48` | `mr/content/computability/recursive-functions/halting-problem.tex:25-48` | pending |
+| `T045-OLP-0226-B007` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:50-53` | `mr/content/computability/recursive-functions/halting-problem.tex:50-53` | pending |
+| `T045-OLP-0226-B008` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:55-90` | `mr/content/computability/recursive-functions/halting-problem.tex:55-91` | pending |
+| `T045-OLP-0227-B004` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:9-10` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:9-10` | pending |
+| `T045-OLP-0227-B006` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:20-27` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:19-26` | pending |
+| `T045-OLP-0227-B007` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:29-39` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:28-36` | pending |
 
 ## T046 — domain / codomain / range
 
@@ -6111,6 +6260,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T049-OLP-0195-B007` | `OLP-0195` | 20.4 Q ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:88-92` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:88-93` | 254–256 |
 | `T049-OLP-0195-B011` | `OLP-0195` | 20.4 Q ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:136-180` | 254–256 |
 | `T049-OLP-0196-B007` | `OLP-0196` | 20.5 PA ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-39` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:29-40` | 256–259 |
+| `T049-OLP-0220-B006` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:27-36` | `mr/content/computability/recursive-functions/sequences.tex:26-35` | pending |
 
 ## T050 — bijective / bijection / one-to-one correspondence
 
@@ -6284,6 +6434,15 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T051-OLP-0035-B010` | `OLP-0035` | 4.8 तुल्यबलता | `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:42-44` | `mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:42-44` | 49–50 |
 | `T051-OLP-0038-B013` | `OLP-0038` | 4.11 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:69-75` | `mr/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:67-72` | 52–53 |
 | `T051-OLP-0048-B014` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:133-147` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:128-143` | 67–70 |
+| `T051-OLP-0211-B009` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97` | `mr/content/computability/recursive-functions/primitive-recursion.tex:70-95` | pending |
+| `T051-OLP-0211-B010` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:99-130` | `mr/content/computability/recursive-functions/primitive-recursion.tex:97-127` | pending |
+| `T051-OLP-0212-B007` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:29-46` | `mr/content/computability/recursive-functions/composition.tex:30-46` | pending |
+| `T051-OLP-0212-B008` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:48-57` | `mr/content/computability/recursive-functions/composition.tex:48-56` | pending |
+| `T051-OLP-0213-B014` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:88-114` | `mr/content/computability/recursive-functions/pr-functions.tex:86-112` | pending |
+| `T051-OLP-0213-B018` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:133-162` | `mr/content/computability/recursive-functions/pr-functions.tex:130-158` | pending |
+| `T051-OLP-0216-B005` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:13-23` | `mr/content/computability/recursive-functions/examples.tex:13-22` | pending |
+| `T051-OLP-0216-B007` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:29-45` | `mr/content/computability/recursive-functions/examples.tex:28-44` | pending |
+| `T051-OLP-0216-B011` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:83-97` | `mr/content/computability/recursive-functions/examples.tex:82-97` | pending |
 
 ## T052 — inverse / left inverse / right inverse
 
@@ -6393,6 +6552,40 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T053-OLP-0054-B017` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:89-101` | `mr/content/sets-functions-relations/infinite/card-sb.tex:91-104` | 75–77 |
 | `T053-OLP-0187-B009` | `OLP-0187` | 19.4 समरूपी रचना | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `mr/content/model-theory/basics/isomorphism.tex:66-106` | 243–245 |
 | `T053-OLP-0189-B005` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | 246–248 |
+| `T053-OLP-0210-B007` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:41-52` | `mr/content/computability/recursive-functions/introduction.tex:40-51` | pending |
+| `T053-OLP-0212-B004` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:9-10` | `mr/content/computability/recursive-functions/composition.tex:9-10` | pending |
+| `T053-OLP-0212-B005` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:12-15` | `mr/content/computability/recursive-functions/composition.tex:12-15` | pending |
+| `T053-OLP-0212-B006` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:17-27` | `mr/content/computability/recursive-functions/composition.tex:17-28` | pending |
+| `T053-OLP-0212-B008` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:48-57` | `mr/content/computability/recursive-functions/composition.tex:48-56` | pending |
+| `T053-OLP-0212-B009` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:59-65` | `mr/content/computability/recursive-functions/composition.tex:58-64` | pending |
+| `T053-OLP-0212-B010` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:67-88` | `mr/content/computability/recursive-functions/composition.tex:66-86` | pending |
+| `T053-OLP-0213-B005` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:12-13` | `mr/content/computability/recursive-functions/pr-functions.tex:12-13` | pending |
+| `T053-OLP-0213-B007` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:26-35` | `mr/content/computability/recursive-functions/pr-functions.tex:26-36` | pending |
+| `T053-OLP-0213-B009` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:44-61` | `mr/content/computability/recursive-functions/pr-functions.tex:46-61` | pending |
+| `T053-OLP-0213-B010` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:63-67` | `mr/content/computability/recursive-functions/pr-functions.tex:63-66` | pending |
+| `T053-OLP-0213-B011` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:69-80` | `mr/content/computability/recursive-functions/pr-functions.tex:68-78` | pending |
+| `T053-OLP-0213-B014` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:88-114` | `mr/content/computability/recursive-functions/pr-functions.tex:86-112` | pending |
+| `T053-OLP-0213-B017` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:125-131` | `mr/content/computability/recursive-functions/pr-functions.tex:123-128` | pending |
+| `T053-OLP-0213-B018` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:133-162` | `mr/content/computability/recursive-functions/pr-functions.tex:130-158` | pending |
+| `T053-OLP-0214-B005` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20` | pending |
+| `T053-OLP-0214-B007` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43` | pending |
+| `T053-OLP-0215-B006` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:35-37` | pending |
+| `T053-OLP-0215-B007` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41` | pending |
+| `T053-OLP-0216-B005` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:13-23` | `mr/content/computability/recursive-functions/examples.tex:13-22` | pending |
+| `T053-OLP-0216-B007` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:29-45` | `mr/content/computability/recursive-functions/examples.tex:28-44` | pending |
+| `T053-OLP-0216-B009` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:58-76` | `mr/content/computability/recursive-functions/examples.tex:57-75` | pending |
+| `T053-OLP-0216-B011` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:83-97` | `mr/content/computability/recursive-functions/examples.tex:82-97` | pending |
+| `T053-OLP-0216-B015` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:122-126` | `mr/content/computability/recursive-functions/examples.tex:122-126` | pending |
+| `T053-OLP-0216-B017` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:132-140` | `mr/content/computability/recursive-functions/examples.tex:132-141` | pending |
+| `T053-OLP-0216-B022` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:162-168` | `mr/content/computability/recursive-functions/examples.tex:164-169` | pending |
+| `T053-OLP-0217-B007` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:38-45` | `mr/content/computability/recursive-functions/pr-relations.tex:37-44` | pending |
+| `T053-OLP-0217-B015` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:158-167` | `mr/content/computability/recursive-functions/pr-relations.tex:159-168` | pending |
+| `T053-OLP-0224-B006` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:24-30` | `mr/content/computability/recursive-functions/partial-functions.tex:23-28` | pending |
+| `T053-OLP-0224-B008` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:42-62` | `mr/content/computability/recursive-functions/partial-functions.tex:39-57` | pending |
+| `T053-OLP-0224-B011` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:89-96` | `mr/content/computability/recursive-functions/partial-functions.tex:83-90` | pending |
+| `T053-OLP-0224-B012` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:98-103` | `mr/content/computability/recursive-functions/partial-functions.tex:92-97` | pending |
+| `T053-OLP-0224-B013` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:105-106` | `mr/content/computability/recursive-functions/partial-functions.tex:99-100` | pending |
+| `T053-OLP-0224-B014` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:108-112` | `mr/content/computability/recursive-functions/partial-functions.tex:102-106` | pending |
 
 ## T054 — serial relation
 
@@ -6588,6 +6781,13 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T056-OLP-0130-B010` | `OLP-0130` | 13.4 हेंकिन विस्तार | `upstream/content/first-order-logic/completeness/henkin-expansions.tex:51-56` | `mr/content/first-order-logic/completeness/henkin-expansions.tex:51-56` | 174–175 |
 | `T056-OLP-0131-B008` | `OLP-0131` | 13.5 लिंडेनबाउमचे पूर्वप्रमेय | `upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:33-45` | `mr/content/first-order-logic/completeness/lindenbaums-lemma.tex:33-45` | 175–176 |
 | `T056-OLP-0201-B010` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98` | `mr/content/model-theory/interpolation/interpolation-proof.tex:37-99` | pending |
+| `T056-OLP-0214-B007` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43` | pending |
+| `T056-OLP-0223-B005` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28` | `mr/content/computability/recursive-functions/non-pr-functions.tex:12-28` | pending |
+| `T056-OLP-0223-B007` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65` | `mr/content/computability/recursive-functions/non-pr-functions.tex:45-64` | pending |
+| `T056-OLP-0223-B008` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:67-73` | `mr/content/computability/recursive-functions/non-pr-functions.tex:66-70` | pending |
+| `T056-OLP-0223-B009` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79` | `mr/content/computability/recursive-functions/non-pr-functions.tex:72-76` | pending |
+| `T056-OLP-0224-B005` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:13-22` | `mr/content/computability/recursive-functions/partial-functions.tex:13-21` | pending |
+| `T056-OLP-0224-B006` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:24-30` | `mr/content/computability/recursive-functions/partial-functions.tex:23-28` | pending |
 
 ## T057 — enumerable / countable / uncountable
 
@@ -6747,7 +6947,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T057-OLP-0197-B006` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | 259–260 |
 | `T057-OLP-0206-B008` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:23-26` | `mr/content/model-theory/lindstrom/ls-property.tex:23-27` | pending |
 | `T057-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
-| `T057-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129` | pending |
+| `T057-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-130` | pending |
 
 ## T058 — size / cardinality / equinumerous
 
@@ -6909,6 +7109,24 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T061-OLP-0164-B009` | `OLP-0164` | 16.5 चर-मूल्यांकने | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | `mr/content/first-order-logic/syntax-and-semantics/assignments.tex:42-55` | 215–218 |
 | `T061-OLP-0177-B011` | `OLP-0177` | 18.3 द्वितीय-क्रम तर्कशास्त्र | `upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167` | `mr/content/first-order-logic/beyond/second-order-logic.tex:121-157` | 232–235 |
 | `T061-OLP-0178-B008` | `OLP-0178` | 18.4 उच्च-क्रम तर्कशास्त्र | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93` | 235–237 |
+| `T061-OLP-0208-B005` | `OLP-0208` |  | `upstream/content/computability/computability.tex:9-14` | `mr/content/computability/computability.tex:9-14` | pending |
+| `T061-OLP-0209-B004` | `OLP-0209` |  | `upstream/content/computability/recursive-functions/recursive-functions.tex:8-8` | `mr/content/computability/recursive-functions/recursive-functions.tex:8-8` | pending |
+| `T061-OLP-0209-B005` | `OLP-0209` |  | `upstream/content/computability/recursive-functions/recursive-functions.tex:10-15` | `mr/content/computability/recursive-functions/recursive-functions.tex:10-15` | pending |
+| `T061-OLP-0210-B005` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:12-28` | `mr/content/computability/recursive-functions/introduction.tex:12-27` | pending |
+| `T061-OLP-0210-B007` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:41-52` | `mr/content/computability/recursive-functions/introduction.tex:40-51` | pending |
+| `T061-OLP-0211-B005` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24` | `mr/content/computability/recursive-functions/primitive-recursion.tex:12-25` | pending |
+| `T061-OLP-0211-B007` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:43-51` | `mr/content/computability/recursive-functions/primitive-recursion.tex:44-51` | pending |
+| `T061-OLP-0212-B007` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:29-46` | `mr/content/computability/recursive-functions/composition.tex:30-46` | pending |
+| `T061-OLP-0215-B005` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:12-30` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:12-33` | pending |
+| `T061-OLP-0216-B024` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:187-193` | `mr/content/computability/recursive-functions/examples.tex:187-193` | pending |
+| `T061-OLP-0217-B006` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:27-36` | `mr/content/computability/recursive-functions/pr-relations.tex:26-35` | pending |
+| `T061-OLP-0217-B013` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:126-138` | `mr/content/computability/recursive-functions/pr-relations.tex:128-140` | pending |
+| `T061-OLP-0218-B005` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25` | `mr/content/computability/recursive-functions/bounded-minimization.tex:12-25` | pending |
+| `T061-OLP-0218-B009` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69` | `mr/content/computability/recursive-functions/bounded-minimization.tex:65-70` | pending |
+| `T061-OLP-0225-B005` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:12-21` | `mr/content/computability/recursive-functions/normal-form.tex:12-21` | pending |
+| `T061-OLP-0225-B006` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:23-34` | `mr/content/computability/recursive-functions/normal-form.tex:23-34` | pending |
+| `T061-OLP-0227-B005` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:12-18` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:12-17` | pending |
+| `T061-OLP-0227-B006` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:20-27` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:19-26` | pending |
 
 ## T062 — initial segment
 
@@ -6980,6 +7198,9 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T063-OLP-0029-B014` | `OLP-0029` | 4.2 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:92-102` | `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:90-99` | 37–40 |
 | `T063-OLP-0029-B029` | `OLP-0029` | 4.2 प्रगणने आणि गणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:213-225` | `mr/content/sets-functions-relations/size-of-sets/enumerability.tex:216-229` | 37–40 |
 | `T063-OLP-0060-B008` | `OLP-0060` | 7.4 रचनाक्रमिका | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:36-61` | `mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:35-59` | 82–83 |
+| `T063-OLP-0223-B005` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28` | `mr/content/computability/recursive-functions/non-pr-functions.tex:12-28` | pending |
+| `T063-OLP-0223-B008` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:67-73` | `mr/content/computability/recursive-functions/non-pr-functions.tex:66-70` | pending |
+| `T063-OLP-0224-B006` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:24-30` | `mr/content/computability/recursive-functions/partial-functions.tex:23-28` | pending |
 
 ## T064 — Cantor's zig-zag method
 
@@ -7162,6 +7383,13 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T067-OLP-0032-B010` | `OLP-0032` | 4.5 एक पर्यायी जोडीकरण फलन | `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:106-112` | `mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex:112-118` | 43–44 |
 | `T067-OLP-0042-B005` | `OLP-0042` | 5.1 N पासून Z कडे | `upstream/content/sets-functions-relations/arithmetization/integers.tex:13-18` | `mr/content/sets-functions-relations/arithmetization/integers.tex:13-18` | 57–59 |
 | `T067-OLP-0043-B005` | `OLP-0043` | 5.2 Z पासून Q कडे | `upstream/content/sets-functions-relations/arithmetization/rationals.tex:12-45` | `mr/content/sets-functions-relations/arithmetization/rationals.tex:12-44` | 59–60 |
+| `T067-OLP-0220-B005` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:12-25` | `mr/content/computability/recursive-functions/sequences.tex:12-24` | pending |
+| `T067-OLP-0220-B006` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:27-36` | `mr/content/computability/recursive-functions/sequences.tex:26-35` | pending |
+| `T067-OLP-0220-B018` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:144-154` | `mr/content/computability/recursive-functions/sequences.tex:141-153` | pending |
+| `T067-OLP-0221-B006` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:21-28` | `mr/content/computability/recursive-functions/trees.tex:20-27` | pending |
+| `T067-OLP-0222-B005` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:12-47` | `mr/content/computability/recursive-functions/other-recursions.tex:12-45` | pending |
+| `T067-OLP-0223-B007` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65` | `mr/content/computability/recursive-functions/non-pr-functions.tex:45-64` | pending |
+| `T067-OLP-0223-B009` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79` | `mr/content/computability/recursive-functions/non-pr-functions.tex:72-76` | pending |
 
 ## T068 — cofinite / complement
 
@@ -7314,6 +7542,17 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T072-OLP-0048-B013` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:127-131` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:121-126` | 67–70 |
 | `T072-OLP-0048-B015` | `OLP-0048` | 5.7 परिशिष्ट: कोशी क्रमिकांच्या रूपातील वास्तव संख्या | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:149-163` | `mr/content/sets-functions-relations/arithmetization/cauchy.tex:145-163` | 67–70 |
 | `T072-OLP-0052-B012` | `OLP-0052` | 6.3 डेडेकिंड बीजसंरचना आणि अंकगणितीय विगमन | `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:51-64` | `mr/content/sets-functions-relations/infinite/dedekind-induction.tex:54-66` | 73–74 |
+| `T072-OLP-0210-B005` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:12-28` | `mr/content/computability/recursive-functions/introduction.tex:12-27` | pending |
+| `T072-OLP-0211-B006` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:26-41` | `mr/content/computability/recursive-functions/primitive-recursion.tex:27-42` | pending |
+| `T072-OLP-0211-B008` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:53-69` | `mr/content/computability/recursive-functions/primitive-recursion.tex:53-68` | pending |
+| `T072-OLP-0211-B009` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97` | `mr/content/computability/recursive-functions/primitive-recursion.tex:70-95` | pending |
+| `T072-OLP-0213-B013` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:84-86` | `mr/content/computability/recursive-functions/pr-functions.tex:82-84` | pending |
+| `T072-OLP-0213-B015` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:116-119` | `mr/content/computability/recursive-functions/pr-functions.tex:114-117` | pending |
+| `T072-OLP-0213-B018` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:133-162` | `mr/content/computability/recursive-functions/pr-functions.tex:130-158` | pending |
+| `T072-OLP-0214-B008` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:47-49` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:45-47` | pending |
+| `T072-OLP-0220-B005` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:12-25` | `mr/content/computability/recursive-functions/sequences.tex:12-24` | pending |
+| `T072-OLP-0220-B013` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:96-107` | `mr/content/computability/recursive-functions/sequences.tex:94-105` | pending |
+| `T072-OLP-0220-B018` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:144-154` | `mr/content/computability/recursive-functions/sequences.tex:141-153` | pending |
 
 ## T073 — Cantor's diagonal method / diagonalization / diagonal argument
 
@@ -7355,6 +7594,8 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T073-OLP-0039-B017` | `OLP-0039` | 4.12 अगणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:131-152` | `mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:132-152` | 53–55 |
 | `T073-OLP-0039-B018` | `OLP-0039` | 4.12 अगणनीय संच | `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:154-160` | `mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:154-160` | 53–55 |
 | `T073-OLP-0040-B007` | `OLP-0040` | 4.13 न्यूनीकरण | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:20-26` | `mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex:19-26` | 55–56 |
+| `T073-OLP-0223-B005` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28` | `mr/content/computability/recursive-functions/non-pr-functions.tex:12-28` | pending |
+| `T073-OLP-0224-B005` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:13-22` | `mr/content/computability/recursive-functions/partial-functions.tex:13-21` | pending |
 
 ## T074 — reduction / reduce one problem to another
 
@@ -7507,6 +7748,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T077-OLP-0041-B005` | `OLP-0041` | 5 अंकगणितीकरण — प्रकरण-प्रस्तावना | `upstream/content/sets-functions-relations/arithmetization/arithmetization.tex:10-14` | `mr/content/sets-functions-relations/arithmetization/arithmetization.tex:10-13` | 57 |
 | `T077-OLP-0053-B004` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:11-12` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:11-12` | 74–75 |
 | `T077-OLP-0053-B008` | `OLP-0053` | 6.4 अनंत संचाच्या अस्तित्वाची डेडेकिंड यांची ``सिद्धता'' | `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:42-64` | `mr/content/sets-functions-relations/infinite/dedekinds-proof.tex:40-62` | 74–75 |
+| `T077-OLP-0209-B005` | `OLP-0209` |  | `upstream/content/computability/recursive-functions/recursive-functions.tex:10-15` | `mr/content/computability/recursive-functions/recursive-functions.tex:10-15` | pending |
 
 ## T078 — naive set theory
 
@@ -8407,6 +8649,11 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T101-OLP-0054-B013` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:70-73` | `mr/content/sets-functions-relations/infinite/card-sb.tex:69-72` | 75–77 |
 | `T101-OLP-0054-B015` | `OLP-0054` | 6.5 परिशिष्ट: श्रेडर–बर्नस्टाइनची सिद्धता | `upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83` | `mr/content/sets-functions-relations/infinite/card-sb.tex:80-85` | 75–77 |
 | `T101-OLP-0059-B007` | `OLP-0059` | 7.3 पूर्वतयारी | `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39` | `mr/content/propositional-logic/syntax-and-semantics/preliminaries.tex:32-39` | 80–82 |
+| `T101-OLP-0213-B010` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:63-67` | `mr/content/computability/recursive-functions/pr-functions.tex:63-66` | pending |
+| `T101-OLP-0216-B023` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:170-185` | `mr/content/computability/recursive-functions/examples.tex:171-185` | pending |
+| `T101-OLP-0217-B008` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:48-58` | `mr/content/computability/recursive-functions/pr-relations.tex:47-57` | pending |
+| `T101-OLP-0217-B010` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:88-99` | `mr/content/computability/recursive-functions/pr-relations.tex:88-100` | pending |
+| `T101-OLP-0224-B012` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:98-103` | `mr/content/computability/recursive-functions/partial-functions.tex:92-97` | pending |
 
 ## T102 — first-order logic
 
@@ -8672,7 +8919,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T105-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
 | `T105-OLP-0206-B011` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:49-57` | `mr/content/model-theory/lindstrom/ls-property.tex:48-57` | pending |
 | `T105-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
-| `T105-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129` | pending |
+| `T105-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-130` | pending |
 
 ## T106 — structuralism / structuralist
 
@@ -9349,7 +9596,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T112-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
 | `T112-OLP-0205-B010` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134` | `mr/content/model-theory/lindstrom/abstract-logics.tex:127-140` | pending |
 | `T112-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
-| `T112-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83` | pending |
+| `T112-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84` | pending |
 
 ## T113 — classical logic / classical
 
@@ -9744,6 +9991,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T118-OLP-0197-B013` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120` | 259–260 |
 | `T118-OLP-0199-B007` | `OLP-0199` |  | `upstream/content/model-theory/interpolation/introduction.tex:20-25` | `mr/content/model-theory/interpolation/introduction.tex:20-24` | pending |
 | `T118-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
+| `T118-OLP-0210-B005` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:12-28` | `mr/content/computability/recursive-functions/introduction.tex:12-27` | pending |
 
 ## T119 — formation rule / inductive definition / uniquely readable
 
@@ -9831,6 +10079,9 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T119-OLP-0157-B006` | `OLP-0157` | 15.8 मुक्त चल आणि वाक्य | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19` | 205–206 |
 | `T119-OLP-0157-B012` | `OLP-0157` | 15.8 मुक्त चल आणि वाक्य | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | 205–206 |
 | `T119-OLP-0160-B006` | `OLP-0160` | 16.1 परिचय | `upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | `mr/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33` | 208 |
+| `T119-OLP-0213-B009` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:44-61` | `mr/content/computability/recursive-functions/pr-functions.tex:46-61` | pending |
+| `T119-OLP-0213-B011` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:69-80` | `mr/content/computability/recursive-functions/pr-functions.tex:68-78` | pending |
+| `T119-OLP-0214-B005` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20` | pending |
 
 ## T120 — Polish notation / parenthesis-free notation
 
@@ -10165,7 +10416,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T121-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
 | `T121-OLP-0207-B006` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:13-22` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:13-22` | pending |
 | `T121-OLP-0207-B008` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:38-45` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:38-45` | pending |
-| `T121-OLP-0207-B013` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110` | pending |
+| `T121-OLP-0207-B013` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:105-111` | pending |
 
 ## T122 — tautology
 
@@ -11094,6 +11345,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T129-OLP-0171-B009` | `OLP-0171` | 17.4 संरचना मधील संबंध व्यक्त करणे | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:55-69` | 226–227 |
 | `T129-OLP-0171-B010` | `OLP-0171` | 17.4 संरचना मधील संबंध व्यक्त करणे | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:69-78` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:71-80` | 226–227 |
 | `T129-OLP-0172-B009` | `OLP-0172` | 17.5 संचांची उपपत्ती | `upstream/content/first-order-logic/models-theories/set-theory.tex:73-90` | `mr/content/first-order-logic/models-theories/set-theory.tex:70-86` | 227–229 |
+| `T129-OLP-0224-B008` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:42-62` | `mr/content/computability/recursive-functions/partial-functions.tex:39-57` | pending |
 
 ## T130 — abbreviation / abbreviates
 
@@ -11359,7 +11611,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T134-OLP-0156-B008` | `OLP-0156` | 15.7 रचनाक्रमिका | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:33-38` | `mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:32-37` | 202–205 |
 | `T134-OLP-0189-B018` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:135-141` | `mr/content/model-theory/basics/partial-iso.tex:136-142` | 246–248 |
 | `T134-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
-| `T134-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83` | pending |
+| `T134-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84` | pending |
 
 ## T135 — preliminaries
 
@@ -14450,7 +14702,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T181-OLP-0206-B005` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:11-11` | `mr/content/model-theory/lindstrom/ls-property.tex:11-11` | pending |
 | `T181-OLP-0206-B006` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:13-14` | `mr/content/model-theory/lindstrom/ls-property.tex:13-14` | pending |
 | `T181-OLP-0206-B007` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:16-21` | `mr/content/model-theory/lindstrom/ls-property.tex:16-21` | pending |
-| `T181-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129` | pending |
+| `T181-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-130` | pending |
 
 ## T182 — proof-theoretic notions
 
@@ -15895,7 +16147,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T205-OLP-0205-B006` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:24-37` | `mr/content/model-theory/lindstrom/abstract-logics.tex:24-37` | pending |
 | `T205-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
 | `T205-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
-| `T205-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83` | pending |
+| `T205-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84` | pending |
 
 ## T206 — logical symbol / non-logical symbol / standard language
 
@@ -15979,6 +16231,26 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T207-OLP-0189-B005` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:12-31` | `mr/content/model-theory/basics/partial-iso.tex:12-31` | 246–248 |
 | `T207-OLP-0189-B016` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:122-129` | `mr/content/model-theory/basics/partial-iso.tex:124-130` | 246–248 |
 | `T207-OLP-0202-B006` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:13-32` | `mr/content/model-theory/interpolation/definability.tex:13-31` | pending |
+| `T207-OLP-0211-B008` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:53-69` | `mr/content/computability/recursive-functions/primitive-recursion.tex:53-68` | pending |
+| `T207-OLP-0211-B009` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97` | `mr/content/computability/recursive-functions/primitive-recursion.tex:70-95` | pending |
+| `T207-OLP-0211-B010` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:99-130` | `mr/content/computability/recursive-functions/primitive-recursion.tex:97-127` | pending |
+| `T207-OLP-0212-B005` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:12-15` | `mr/content/computability/recursive-functions/composition.tex:12-15` | pending |
+| `T207-OLP-0212-B006` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:17-27` | `mr/content/computability/recursive-functions/composition.tex:17-28` | pending |
+| `T207-OLP-0212-B007` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:29-46` | `mr/content/computability/recursive-functions/composition.tex:30-46` | pending |
+| `T207-OLP-0212-B008` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:48-57` | `mr/content/computability/recursive-functions/composition.tex:48-56` | pending |
+| `T207-OLP-0212-B009` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:59-65` | `mr/content/computability/recursive-functions/composition.tex:58-64` | pending |
+| `T207-OLP-0212-B010` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:67-88` | `mr/content/computability/recursive-functions/composition.tex:66-86` | pending |
+| `T207-OLP-0213-B006` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:15-24` | `mr/content/computability/recursive-functions/pr-functions.tex:15-24` | pending |
+| `T207-OLP-0213-B007` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:26-35` | `mr/content/computability/recursive-functions/pr-functions.tex:26-36` | pending |
+| `T207-OLP-0213-B009` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:44-61` | `mr/content/computability/recursive-functions/pr-functions.tex:46-61` | pending |
+| `T207-OLP-0213-B014` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:88-114` | `mr/content/computability/recursive-functions/pr-functions.tex:86-112` | pending |
+| `T207-OLP-0213-B018` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:133-162` | `mr/content/computability/recursive-functions/pr-functions.tex:130-158` | pending |
+| `T207-OLP-0214-B005` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20` | pending |
+| `T207-OLP-0214-B006` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:23-28` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:22-26` | pending |
+| `T207-OLP-0214-B007` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43` | pending |
+| `T207-OLP-0216-B009` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:58-76` | `mr/content/computability/recursive-functions/examples.tex:57-75` | pending |
+| `T207-OLP-0216-B011` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:83-97` | `mr/content/computability/recursive-functions/examples.tex:82-97` | pending |
+| `T207-OLP-0217-B012` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:121-124` | `mr/content/computability/recursive-functions/pr-relations.tex:123-126` | pending |
 
 ## T208 — universal quantifier / existential quantifier
 
@@ -16686,10 +16958,10 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T218-OLP-0206-B014` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:88-107` | `mr/content/model-theory/lindstrom/ls-property.tex:90-108` | pending |
 | `T218-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
 | `T218-OLP-0207-B007` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:24-36` | pending |
-| `T218-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83` | pending |
-| `T218-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102` | pending |
-| `T218-OLP-0207-B013` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110` | pending |
-| `T218-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129` | pending |
+| `T218-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84` | pending |
+| `T218-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:86-103` | pending |
+| `T218-OLP-0207-B013` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:105-111` | pending |
+| `T218-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-130` | pending |
 
 ## T219 — free logic
 
@@ -17367,6 +17639,18 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 |---|---|---|---|---|---|
 | `T239-OLP-0171-B011` | `OLP-0171` | 17.4 संरचना मधील संबंध व्यक्त करणे | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:80-88` | `mr/content/first-order-logic/models-theories/expressing-relations.tex:82-90` | 226–227 |
 | `T239-OLP-0179-B007` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:19-26` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:18-23` | 237–240 |
+| `T239-OLP-0210-B006` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:30-39` | `mr/content/computability/recursive-functions/introduction.tex:29-38` | pending |
+| `T239-OLP-0219-B004` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:9-10` | `mr/content/computability/recursive-functions/primes.tex:9-10` | pending |
+| `T239-OLP-0219-B005` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:12-27` | `mr/content/computability/recursive-functions/primes.tex:12-28` | pending |
+| `T239-OLP-0219-B006` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:29-39` | `mr/content/computability/recursive-functions/primes.tex:30-41` | pending |
+| `T239-OLP-0219-B007` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:41-44` | `mr/content/computability/recursive-functions/primes.tex:43-46` | pending |
+| `T239-OLP-0219-B008` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:46-62` | `mr/content/computability/recursive-functions/primes.tex:48-64` | pending |
+| `T239-OLP-0219-B009` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:64-74` | `mr/content/computability/recursive-functions/primes.tex:66-79` | pending |
+| `T239-OLP-0220-B005` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:12-25` | `mr/content/computability/recursive-functions/sequences.tex:12-24` | pending |
+| `T239-OLP-0220-B006` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:27-36` | `mr/content/computability/recursive-functions/sequences.tex:26-35` | pending |
+| `T239-OLP-0220-B009` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:48-72` | `mr/content/computability/recursive-functions/sequences.tex:45-70` | pending |
+| `T239-OLP-0220-B013` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:96-107` | `mr/content/computability/recursive-functions/sequences.tex:94-105` | pending |
+| `T239-OLP-0220-B018` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:144-154` | `mr/content/computability/recursive-functions/sequences.tex:141-153` | pending |
 
 ## T240 — Zermelo–Fraenkel set theory with Choice / ZFC
 
@@ -17827,6 +18111,23 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T253-OLP-0178-B007` | `OLP-0178` | 18.4 उच्च-क्रम तर्कशास्त्र | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:21-37` | 235–237 |
 | `T253-OLP-0178-B008` | `OLP-0178` | 18.4 उच्च-क्रम तर्कशास्त्र | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:39-93` | 235–237 |
 | `T253-OLP-0178-B010` | `OLP-0178` | 18.4 उच्च-क्रम तर्कशास्त्र | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:102-112` | `mr/content/first-order-logic/beyond/higher-order-logic.tex:102-111` | 235–237 |
+| `T253-OLP-0212-B007` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:29-46` | `mr/content/computability/recursive-functions/composition.tex:30-46` | pending |
+| `T253-OLP-0212-B008` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:48-57` | `mr/content/computability/recursive-functions/composition.tex:48-56` | pending |
+| `T253-OLP-0212-B009` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:59-65` | `mr/content/computability/recursive-functions/composition.tex:58-64` | pending |
+| `T253-OLP-0212-B010` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:67-88` | `mr/content/computability/recursive-functions/composition.tex:66-86` | pending |
+| `T253-OLP-0213-B008` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:37-42` | `mr/content/computability/recursive-functions/pr-functions.tex:38-44` | pending |
+| `T253-OLP-0213-B009` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:44-61` | `mr/content/computability/recursive-functions/pr-functions.tex:46-61` | pending |
+| `T253-OLP-0213-B010` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:63-67` | `mr/content/computability/recursive-functions/pr-functions.tex:63-66` | pending |
+| `T253-OLP-0213-B011` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:69-80` | `mr/content/computability/recursive-functions/pr-functions.tex:68-78` | pending |
+| `T253-OLP-0213-B014` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:88-114` | `mr/content/computability/recursive-functions/pr-functions.tex:86-112` | pending |
+| `T253-OLP-0213-B018` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:133-162` | `mr/content/computability/recursive-functions/pr-functions.tex:130-158` | pending |
+| `T253-OLP-0214-B005` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20` | pending |
+| `T253-OLP-0214-B007` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43` | pending |
+| `T253-OLP-0215-B007` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41` | pending |
+| `T253-OLP-0216-B005` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:13-23` | `mr/content/computability/recursive-functions/examples.tex:13-22` | pending |
+| `T253-OLP-0216-B007` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:29-45` | `mr/content/computability/recursive-functions/examples.tex:28-44` | pending |
+| `T253-OLP-0216-B009` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:58-76` | `mr/content/computability/recursive-functions/examples.tex:57-75` | pending |
+| `T253-OLP-0216-B011` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:83-97` | `mr/content/computability/recursive-functions/examples.tex:82-97` | pending |
 
 ## T254 — functional (higher-type function taking functions as input)
 
@@ -18450,8 +18751,8 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T273-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
 | `T273-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
 | `T273-OLP-0206-B013` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:74-86` | `mr/content/model-theory/lindstrom/ls-property.tex:75-88` | pending |
-| `T273-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83` | pending |
-| `T273-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102` | pending |
+| `T273-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84` | pending |
+| `T273-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:86-103` | pending |
 
 ## T274 — overspill (arbitrarily large finite models imply an infinite model)
 
@@ -18615,7 +18916,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T277-OLP-0206-B013` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:74-86` | `mr/content/model-theory/lindstrom/ls-property.tex:75-88` | pending |
 | `T277-OLP-0206-B014` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:88-107` | `mr/content/model-theory/lindstrom/ls-property.tex:90-108` | pending |
 | `T277-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
-| `T277-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129` | pending |
+| `T277-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-130` | pending |
 
 ## T278 — quantifier rank / n-equivalent
 
@@ -18818,8 +19119,8 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T281-OLP-0197-B008` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | 259–260 |
 | `T281-OLP-0197-B009` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:78-98` | 259–260 |
 | `T281-OLP-0197-B012` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116` | 259–260 |
-| `T281-OLP-0207-B013` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110` | pending |
-| `T281-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-129` | pending |
+| `T281-OLP-0207-B013` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:105-111` | pending |
+| `T281-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-130` | pending |
 
 ## T282 — standard numeral
 
@@ -19041,6 +19342,15 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T287-OLP-0197-B010` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:100-105` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:100-104` | 259–260 |
 | `T287-OLP-0197-B012` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:111-116` | 259–260 |
 | `T287-OLP-0197-B013` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:118-120` | 259–260 |
+| `T287-OLP-0210-B006` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:30-39` | `mr/content/computability/recursive-functions/introduction.tex:29-38` | pending |
+| `T287-OLP-0210-B007` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:41-52` | `mr/content/computability/recursive-functions/introduction.tex:40-51` | pending |
+| `T287-OLP-0212-B006` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:17-27` | `mr/content/computability/recursive-functions/composition.tex:17-28` | pending |
+| `T287-OLP-0215-B004` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:9-10` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:9-10` | pending |
+| `T287-OLP-0215-B005` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:12-30` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:12-33` | pending |
+| `T287-OLP-0215-B006` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:35-37` | pending |
+| `T287-OLP-0215-B007` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41` | pending |
+| `T287-OLP-0217-B007` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:38-45` | `mr/content/computability/recursive-functions/pr-relations.tex:37-44` | pending |
+| `T287-OLP-0218-B005` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25` | `mr/content/computability/recursive-functions/bounded-minimization.tex:12-25` | pending |
 
 ## T288 — Turing machine / primitive recursion
 
@@ -19070,6 +19380,43 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T288-OLP-0197-B005` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22` | 259–260 |
+| `T288-OLP-0210-B005` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:12-28` | `mr/content/computability/recursive-functions/introduction.tex:12-27` | pending |
+| `T288-OLP-0210-B006` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:30-39` | `mr/content/computability/recursive-functions/introduction.tex:29-38` | pending |
+| `T288-OLP-0210-B007` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:41-52` | `mr/content/computability/recursive-functions/introduction.tex:40-51` | pending |
+| `T288-OLP-0211-B004` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:9-10` | `mr/content/computability/recursive-functions/primitive-recursion.tex:9-10` | pending |
+| `T288-OLP-0211-B005` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24` | `mr/content/computability/recursive-functions/primitive-recursion.tex:12-25` | pending |
+| `T288-OLP-0211-B006` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:26-41` | `mr/content/computability/recursive-functions/primitive-recursion.tex:27-42` | pending |
+| `T288-OLP-0211-B007` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:43-51` | `mr/content/computability/recursive-functions/primitive-recursion.tex:44-51` | pending |
+| `T288-OLP-0211-B008` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:53-69` | `mr/content/computability/recursive-functions/primitive-recursion.tex:53-68` | pending |
+| `T288-OLP-0211-B009` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97` | `mr/content/computability/recursive-functions/primitive-recursion.tex:70-95` | pending |
+| `T288-OLP-0211-B010` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:99-130` | `mr/content/computability/recursive-functions/primitive-recursion.tex:97-127` | pending |
+| `T288-OLP-0212-B007` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:29-46` | `mr/content/computability/recursive-functions/composition.tex:30-46` | pending |
+| `T288-OLP-0213-B005` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:12-13` | `mr/content/computability/recursive-functions/pr-functions.tex:12-13` | pending |
+| `T288-OLP-0213-B006` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:15-24` | `mr/content/computability/recursive-functions/pr-functions.tex:15-24` | pending |
+| `T288-OLP-0213-B009` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:44-61` | `mr/content/computability/recursive-functions/pr-functions.tex:46-61` | pending |
+| `T288-OLP-0213-B010` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:63-67` | `mr/content/computability/recursive-functions/pr-functions.tex:63-66` | pending |
+| `T288-OLP-0213-B011` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:69-80` | `mr/content/computability/recursive-functions/pr-functions.tex:68-78` | pending |
+| `T288-OLP-0213-B014` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:88-114` | `mr/content/computability/recursive-functions/pr-functions.tex:86-112` | pending |
+| `T288-OLP-0213-B017` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:125-131` | `mr/content/computability/recursive-functions/pr-functions.tex:123-128` | pending |
+| `T288-OLP-0213-B018` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:133-162` | `mr/content/computability/recursive-functions/pr-functions.tex:130-158` | pending |
+| `T288-OLP-0214-B006` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:23-28` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:22-26` | pending |
+| `T288-OLP-0214-B007` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43` | pending |
+| `T288-OLP-0215-B005` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:12-30` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:12-33` | pending |
+| `T288-OLP-0215-B006` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:35-37` | pending |
+| `T288-OLP-0215-B007` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41` | pending |
+| `T288-OLP-0216-B007` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:29-45` | `mr/content/computability/recursive-functions/examples.tex:28-44` | pending |
+| `T288-OLP-0216-B009` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:58-76` | `mr/content/computability/recursive-functions/examples.tex:57-75` | pending |
+| `T288-OLP-0216-B011` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:83-97` | `mr/content/computability/recursive-functions/examples.tex:82-97` | pending |
+| `T288-OLP-0216-B013` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:110-116` | `mr/content/computability/recursive-functions/examples.tex:110-116` | pending |
+| `T288-OLP-0216-B022` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:162-168` | `mr/content/computability/recursive-functions/examples.tex:164-169` | pending |
+| `T288-OLP-0216-B024` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:187-193` | `mr/content/computability/recursive-functions/examples.tex:187-193` | pending |
+| `T288-OLP-0217-B013` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:126-138` | `mr/content/computability/recursive-functions/pr-relations.tex:128-140` | pending |
+| `T288-OLP-0218-B008` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62` | `mr/content/computability/recursive-functions/bounded-minimization.tex:41-63` | pending |
+| `T288-OLP-0218-B009` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69` | `mr/content/computability/recursive-functions/bounded-minimization.tex:65-70` | pending |
+| `T288-OLP-0223-B010` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:81-86` | `mr/content/computability/recursive-functions/non-pr-functions.tex:78-83` | pending |
+| `T288-OLP-0223-B011` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96` | `mr/content/computability/recursive-functions/non-pr-functions.tex:85-92` | pending |
+| `T288-OLP-0224-B006` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:24-30` | `mr/content/computability/recursive-functions/partial-functions.tex:23-28` | pending |
+| `T288-OLP-0224-B010` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:75-87` | `mr/content/computability/recursive-functions/partial-functions.tex:71-81` | pending |
 
 ## T289 — Tennenbaum (surname, in Tennenbaum's theorem)
 
@@ -19312,6 +19659,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T295-OLP-0204-B005` | `OLP-0204` |  | `upstream/content/model-theory/lindstrom/introduction.tex:12-21` | `mr/content/model-theory/lindstrom/introduction.tex:12-21` | pending |
 | `T295-OLP-0207-B005` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:11-11` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:11-11` | pending |
 | `T295-OLP-0207-B009` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:47-54` | pending |
+| `T295-OLP-0212-B007` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:29-46` | `mr/content/computability/recursive-functions/composition.tex:30-46` | pending |
 
 ## T296 — abstract logic / normal abstract logic
 
@@ -19421,7 +19769,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 | `T298-OLP-0205-B010` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134` | `mr/content/model-theory/lindstrom/abstract-logics.tex:127-140` | pending |
 | `T298-OLP-0206-B011` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:49-57` | `mr/content/model-theory/lindstrom/ls-property.tex:48-57` | pending |
 | `T298-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
-| `T298-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83` | pending |
+| `T298-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84` | pending |
 
 ## T299 — Compactness Property / Downward Löwenheim--Skolem Property
 
@@ -19489,8 +19837,942 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `T300-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102` | pending |
-| `T300-OLP-0207-B013` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110` | pending |
+| `T300-OLP-0207-B012` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:86-103` | pending |
+| `T300-OLP-0207-B013` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:105-111` | pending |
+
+## T301 — characteristic function (of a set or relation)
+
+**Chosen rendering/action:** जातिबोधक फल
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P137 directly attests characteristic function as जातिबोधक फल and specifically attests संचाचे जातिबोधक फल. OpenLogic uses the same indicator construction for either a set or a relation and explains its role in reducing computable-set and computable-relation questions to computable functions.
+
+**Rationale:** MR-P137 directly attests characteristic function as जातिबोधक फल and specifically attests संचाचे जातिबोधक फल. OpenLogic uses the same indicator construction for either a set or a relation and explains its role in reducing computable-set and computable-relation questions to computable functions.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P137` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the relation-specific extension was not independently attested.
+
+**Alternatives:**
+
+- वैशिष्ट्य फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- निर्देशक फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- लक्षण फल — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the edition follow the official mathematics-glossary term जातिबोधक फल even though indicator-function terminology may be more familiar in some modern texts?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T301-OLP-0210-B006` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:30-39` | `mr/content/computability/recursive-functions/introduction.tex:29-38` | pending |
+| `T301-OLP-0217-B005` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:13-25` | `mr/content/computability/recursive-functions/pr-relations.tex:13-24` | pending |
+| `T301-OLP-0217-B006` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:27-36` | `mr/content/computability/recursive-functions/pr-relations.tex:26-35` | pending |
+| `T301-OLP-0217-B009` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:60-86` | `mr/content/computability/recursive-functions/pr-relations.tex:59-86` | pending |
+| `T301-OLP-0217-B011` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:101-119` | `mr/content/computability/recursive-functions/pr-relations.tex:102-121` | pending |
+| `T301-OLP-0217-B015` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:158-167` | `mr/content/computability/recursive-functions/pr-relations.tex:159-168` | pending |
+| `T301-OLP-0218-B009` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69` | `mr/content/computability/recursive-functions/bounded-minimization.tex:65-70` | pending |
+| `T301-OLP-0224-B011` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:89-96` | `mr/content/computability/recursive-functions/partial-functions.tex:83-90` | pending |
+
+## T302 — primitive recursive / partial recursive / general recursive function
+
+**Chosen rendering/action:** आदिम पुनरावर्ती / आंशिक पुनरावर्ती / सामान्य पुनरावर्ती फलन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P138 directly supports the mathematical modifiers आदिम and आंशिक, MR-P060 records the official recursive-family form, and MR-P131 directly attests सामान्य आवर्ती फलन in authoritative Marathi foundations prose. The edition retains its established पुनरावर्ती stem. OpenLogic distinguishes the three classes by primitive recursion, unbounded search and totality, so its definitions control the exact compounds. The named compound आंशिक पुनरावर्ती फलन uses the official adjective while the earlier general partial-function wording अंशतः फलन remains separately reviewable in T053.
+
+**Rationale:** MR-P138 directly supports the mathematical modifiers आदिम and आंशिक, MR-P060 records the official recursive-family form, and MR-P131 directly attests सामान्य आवर्ती फलन in authoritative Marathi foundations prose. The edition retains its established पुनरावर्ती stem. OpenLogic distinguishes the three classes by primitive recursion, unbounded search and totality, so its definitions control the exact compounds. The named compound आंशिक पुनरावर्ती फलन uses the official adjective while the earlier general partial-function wording अंशतः फलन remains separately reviewable in T053.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P138` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web extraction. Limitation: Observation hash is not an origin-page hash; neither primitive recursion nor partial recursive function was directly attested.
+
+**Alternatives:**
+
+- आदिम प्रत्यावर्ती / आंशिक प्रत्यावर्ती / सामान्य प्रत्यावर्ती फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्राथमिक पुनरावर्ती / अंशतः पुनरावर्ती / सर्वसाधारण पुनरावर्ती फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- आदिम आवर्ती / आंशिक आवर्ती / सामान्य आवर्ती फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should computability prose retain the edition's पुनरावर्ती family, and should the fixed class name use official आंशिक while general partial functions continue to use descriptive अंशतः?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T302-OLP-0210-B006` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:30-39` | `mr/content/computability/recursive-functions/introduction.tex:29-38` | pending |
+| `T302-OLP-0210-B007` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:41-52` | `mr/content/computability/recursive-functions/introduction.tex:40-51` | pending |
+| `T302-OLP-0211-B007` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:43-51` | `mr/content/computability/recursive-functions/primitive-recursion.tex:44-51` | pending |
+| `T302-OLP-0211-B008` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:53-69` | `mr/content/computability/recursive-functions/primitive-recursion.tex:53-68` | pending |
+| `T302-OLP-0211-B009` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:71-97` | `mr/content/computability/recursive-functions/primitive-recursion.tex:70-95` | pending |
+| `T302-OLP-0211-B010` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:99-130` | `mr/content/computability/recursive-functions/primitive-recursion.tex:97-127` | pending |
+| `T302-OLP-0213-B004` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:9-10` | `mr/content/computability/recursive-functions/pr-functions.tex:9-10` | pending |
+| `T302-OLP-0213-B005` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:12-13` | `mr/content/computability/recursive-functions/pr-functions.tex:12-13` | pending |
+| `T302-OLP-0213-B006` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:15-24` | `mr/content/computability/recursive-functions/pr-functions.tex:15-24` | pending |
+| `T302-OLP-0213-B007` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:26-35` | `mr/content/computability/recursive-functions/pr-functions.tex:26-36` | pending |
+| `T302-OLP-0213-B008` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:37-42` | `mr/content/computability/recursive-functions/pr-functions.tex:38-44` | pending |
+| `T302-OLP-0213-B009` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:44-61` | `mr/content/computability/recursive-functions/pr-functions.tex:46-61` | pending |
+| `T302-OLP-0213-B010` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:63-67` | `mr/content/computability/recursive-functions/pr-functions.tex:63-66` | pending |
+| `T302-OLP-0213-B011` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:69-80` | `mr/content/computability/recursive-functions/pr-functions.tex:68-78` | pending |
+| `T302-OLP-0213-B012` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:82-82` | `mr/content/computability/recursive-functions/pr-functions.tex:80-80` | pending |
+| `T302-OLP-0213-B013` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:84-86` | `mr/content/computability/recursive-functions/pr-functions.tex:82-84` | pending |
+| `T302-OLP-0213-B014` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:88-114` | `mr/content/computability/recursive-functions/pr-functions.tex:86-112` | pending |
+| `T302-OLP-0213-B015` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:116-119` | `mr/content/computability/recursive-functions/pr-functions.tex:114-117` | pending |
+| `T302-OLP-0213-B017` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:125-131` | `mr/content/computability/recursive-functions/pr-functions.tex:123-128` | pending |
+| `T302-OLP-0213-B018` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:133-162` | `mr/content/computability/recursive-functions/pr-functions.tex:130-158` | pending |
+| `T302-OLP-0214-B004` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:9-10` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:9-10` | pending |
+| `T302-OLP-0214-B005` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20` | pending |
+| `T302-OLP-0214-B006` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:23-28` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:22-26` | pending |
+| `T302-OLP-0214-B007` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43` | pending |
+| `T302-OLP-0214-B008` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:47-49` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:45-47` | pending |
+| `T302-OLP-0215-B004` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:9-10` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:9-10` | pending |
+| `T302-OLP-0215-B005` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:12-30` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:12-33` | pending |
+| `T302-OLP-0215-B006` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:35-37` | pending |
+| `T302-OLP-0215-B007` | `OLP-0215` |  | `upstream/content/computability/recursive-functions/pr-functions-computable.tex:37-40` | `mr/content/computability/recursive-functions/pr-functions-computable.tex:39-41` | pending |
+| `T302-OLP-0216-B004` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:9-10` | `mr/content/computability/recursive-functions/examples.tex:9-10` | pending |
+| `T302-OLP-0216-B005` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:13-23` | `mr/content/computability/recursive-functions/examples.tex:13-22` | pending |
+| `T302-OLP-0216-B006` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:25-27` | `mr/content/computability/recursive-functions/examples.tex:24-26` | pending |
+| `T302-OLP-0216-B007` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:29-45` | `mr/content/computability/recursive-functions/examples.tex:28-44` | pending |
+| `T302-OLP-0216-B008` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:47-56` | `mr/content/computability/recursive-functions/examples.tex:46-55` | pending |
+| `T302-OLP-0216-B009` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:58-76` | `mr/content/computability/recursive-functions/examples.tex:57-75` | pending |
+| `T302-OLP-0216-B010` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:78-81` | `mr/content/computability/recursive-functions/examples.tex:77-80` | pending |
+| `T302-OLP-0216-B011` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:83-97` | `mr/content/computability/recursive-functions/examples.tex:82-97` | pending |
+| `T302-OLP-0216-B012` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:99-108` | `mr/content/computability/recursive-functions/examples.tex:99-108` | pending |
+| `T302-OLP-0216-B013` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:110-116` | `mr/content/computability/recursive-functions/examples.tex:110-116` | pending |
+| `T302-OLP-0216-B014` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:118-120` | `mr/content/computability/recursive-functions/examples.tex:118-120` | pending |
+| `T302-OLP-0216-B015` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:122-126` | `mr/content/computability/recursive-functions/examples.tex:122-126` | pending |
+| `T302-OLP-0216-B016` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:128-130` | `mr/content/computability/recursive-functions/examples.tex:128-130` | pending |
+| `T302-OLP-0216-B017` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:132-140` | `mr/content/computability/recursive-functions/examples.tex:132-141` | pending |
+| `T302-OLP-0216-B018` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:142-145` | `mr/content/computability/recursive-functions/examples.tex:143-146` | pending |
+| `T302-OLP-0216-B020` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:151-153` | `mr/content/computability/recursive-functions/examples.tex:152-154` | pending |
+| `T302-OLP-0216-B021` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:155-160` | `mr/content/computability/recursive-functions/examples.tex:156-162` | pending |
+| `T302-OLP-0216-B022` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:162-168` | `mr/content/computability/recursive-functions/examples.tex:164-169` | pending |
+| `T302-OLP-0216-B023` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:170-185` | `mr/content/computability/recursive-functions/examples.tex:171-185` | pending |
+| `T302-OLP-0216-B024` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:187-193` | `mr/content/computability/recursive-functions/examples.tex:187-193` | pending |
+| `T302-OLP-0217-B004` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:9-10` | `mr/content/computability/recursive-functions/pr-relations.tex:9-10` | pending |
+| `T302-OLP-0217-B005` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:13-25` | `mr/content/computability/recursive-functions/pr-relations.tex:13-24` | pending |
+| `T302-OLP-0217-B006` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:27-36` | `mr/content/computability/recursive-functions/pr-relations.tex:26-35` | pending |
+| `T302-OLP-0217-B007` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:38-45` | `mr/content/computability/recursive-functions/pr-relations.tex:37-44` | pending |
+| `T302-OLP-0217-B008` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:48-58` | `mr/content/computability/recursive-functions/pr-relations.tex:47-57` | pending |
+| `T302-OLP-0217-B009` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:60-86` | `mr/content/computability/recursive-functions/pr-relations.tex:59-86` | pending |
+| `T302-OLP-0217-B010` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:88-99` | `mr/content/computability/recursive-functions/pr-relations.tex:88-100` | pending |
+| `T302-OLP-0217-B011` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:101-119` | `mr/content/computability/recursive-functions/pr-relations.tex:102-121` | pending |
+| `T302-OLP-0217-B012` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:121-124` | `mr/content/computability/recursive-functions/pr-relations.tex:123-126` | pending |
+| `T302-OLP-0217-B013` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:126-138` | `mr/content/computability/recursive-functions/pr-relations.tex:128-140` | pending |
+| `T302-OLP-0217-B014` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:140-156` | `mr/content/computability/recursive-functions/pr-relations.tex:142-157` | pending |
+| `T302-OLP-0217-B015` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:158-167` | `mr/content/computability/recursive-functions/pr-relations.tex:159-168` | pending |
+| `T302-OLP-0218-B005` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25` | `mr/content/computability/recursive-functions/bounded-minimization.tex:12-25` | pending |
+| `T302-OLP-0218-B006` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:27-35` | `mr/content/computability/recursive-functions/bounded-minimization.tex:27-35` | pending |
+| `T302-OLP-0218-B007` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:37-39` | `mr/content/computability/recursive-functions/bounded-minimization.tex:37-39` | pending |
+| `T302-OLP-0218-B008` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62` | `mr/content/computability/recursive-functions/bounded-minimization.tex:41-63` | pending |
+| `T302-OLP-0218-B009` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69` | `mr/content/computability/recursive-functions/bounded-minimization.tex:65-70` | pending |
+| `T302-OLP-0219-B005` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:12-27` | `mr/content/computability/recursive-functions/primes.tex:12-28` | pending |
+| `T302-OLP-0219-B006` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:29-39` | `mr/content/computability/recursive-functions/primes.tex:30-41` | pending |
+| `T302-OLP-0219-B008` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:46-62` | `mr/content/computability/recursive-functions/primes.tex:48-64` | pending |
+| `T302-OLP-0220-B007` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:38-41` | `mr/content/computability/recursive-functions/sequences.tex:37-39` | pending |
+| `T302-OLP-0220-B008` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:43-46` | `mr/content/computability/recursive-functions/sequences.tex:41-43` | pending |
+| `T302-OLP-0220-B009` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:48-72` | `mr/content/computability/recursive-functions/sequences.tex:45-70` | pending |
+| `T302-OLP-0220-B010` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:74-77` | `mr/content/computability/recursive-functions/sequences.tex:72-75` | pending |
+| `T302-OLP-0220-B012` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:90-94` | `mr/content/computability/recursive-functions/sequences.tex:88-92` | pending |
+| `T302-OLP-0220-B015` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:119-122` | `mr/content/computability/recursive-functions/sequences.tex:117-120` | pending |
+| `T302-OLP-0220-B016` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:124-140` | `mr/content/computability/recursive-functions/sequences.tex:122-137` | pending |
+| `T302-OLP-0220-B019` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:156-168` | `mr/content/computability/recursive-functions/sequences.tex:155-166` | pending |
+| `T302-OLP-0220-B020` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:170-176` | `mr/content/computability/recursive-functions/sequences.tex:168-174` | pending |
+| `T302-OLP-0220-B021` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:178-185` | `mr/content/computability/recursive-functions/sequences.tex:176-183` | pending |
+| `T302-OLP-0220-B022` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:187-192` | `mr/content/computability/recursive-functions/sequences.tex:185-189` | pending |
+| `T302-OLP-0221-B005` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:12-19` | `mr/content/computability/recursive-functions/trees.tex:12-18` | pending |
+| `T302-OLP-0221-B007` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:30-35` | `mr/content/computability/recursive-functions/trees.tex:29-34` | pending |
+| `T302-OLP-0221-B008` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:37-68` | `mr/content/computability/recursive-functions/trees.tex:36-67` | pending |
+| `T302-OLP-0222-B004` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:9-10` | `mr/content/computability/recursive-functions/other-recursions.tex:9-10` | pending |
+| `T302-OLP-0222-B005` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:12-47` | `mr/content/computability/recursive-functions/other-recursions.tex:12-45` | pending |
+| `T302-OLP-0222-B007` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:57-66` | `mr/content/computability/recursive-functions/other-recursions.tex:55-63` | pending |
+| `T302-OLP-0223-B004` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:9-10` | `mr/content/computability/recursive-functions/non-pr-functions.tex:9-10` | pending |
+| `T302-OLP-0223-B005` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28` | `mr/content/computability/recursive-functions/non-pr-functions.tex:12-28` | pending |
+| `T302-OLP-0223-B007` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65` | `mr/content/computability/recursive-functions/non-pr-functions.tex:45-64` | pending |
+| `T302-OLP-0223-B009` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79` | `mr/content/computability/recursive-functions/non-pr-functions.tex:72-76` | pending |
+| `T302-OLP-0223-B011` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96` | `mr/content/computability/recursive-functions/non-pr-functions.tex:85-92` | pending |
+| `T302-OLP-0224-B004` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:9-10` | `mr/content/computability/recursive-functions/partial-functions.tex:9-10` | pending |
+| `T302-OLP-0224-B005` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:13-22` | `mr/content/computability/recursive-functions/partial-functions.tex:13-21` | pending |
+| `T302-OLP-0224-B007` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:32-40` | `mr/content/computability/recursive-functions/partial-functions.tex:30-37` | pending |
+| `T302-OLP-0224-B008` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:42-62` | `mr/content/computability/recursive-functions/partial-functions.tex:39-57` | pending |
+| `T302-OLP-0224-B012` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:98-103` | `mr/content/computability/recursive-functions/partial-functions.tex:92-97` | pending |
+| `T302-OLP-0224-B013` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:105-106` | `mr/content/computability/recursive-functions/partial-functions.tex:99-100` | pending |
+| `T302-OLP-0224-B014` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:108-112` | `mr/content/computability/recursive-functions/partial-functions.tex:102-106` | pending |
+| `T302-OLP-0224-B015` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:114-115` | `mr/content/computability/recursive-functions/partial-functions.tex:108-109` | pending |
+
+## T303 — unbounded search / total (everywhere defined)
+
+**Chosen rendering/action:** अपरिबद्ध शोध / सर्वत्र परिभाषित
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P139 directly attests अपरिबद्ध in specialist terminology, and the edition already defines total functions descriptively as सर्वत्र परिभाषित. OpenLogic identifies unbounded search as the additional computation method leading to partial recursive functions and explicitly says which such functions count as total. The algorithmic compound itself was not independently attested.
+
+**Rationale:** MR-P139 directly attests अपरिबद्ध in specialist terminology, and the edition already defines total functions descriptively as सर्वत्र परिभाषित. OpenLogic identifies unbounded search as the additional computation method leading to partial recursive functions and explicitly says which such functions count as total. The algorithmic compound itself was not independently attested.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P139` — भौतिकशास्त्र परिभाषा कोश — unbounded. https://shabdakosh.marathi.gov.in/ananya-glossary/37?page=635 (`checked_supports`): Official Directorate of Languages specialist-glossary entries read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the exact algorithmic compound अपरिबद्ध शोध was not directly attested.
+
+**Alternatives:**
+
+- अमर्याद शोध / पूर्ण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- असीम शोध / सर्वमान्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सीमाविरहित शोध / सर्वत्र व्याख्यात — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is अपरिबद्ध शोध natural Marathi for unbounded search in computability, and is सर्वत्र परिभाषित preferable to the shorter but ambiguous पूर्ण?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T303-OLP-0210-B007` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:41-52` | `mr/content/computability/recursive-functions/introduction.tex:40-51` | pending |
+| `T303-OLP-0218-B005` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25` | `mr/content/computability/recursive-functions/bounded-minimization.tex:12-25` | pending |
+| `T303-OLP-0219-B008` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:46-62` | `mr/content/computability/recursive-functions/primes.tex:48-64` | pending |
+| `T303-OLP-0224-B007` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:32-40` | `mr/content/computability/recursive-functions/partial-functions.tex:30-37` | pending |
+| `T303-OLP-0224-B009` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:64-73` | `mr/content/computability/recursive-functions/partial-functions.tex:59-69` | pending |
+| `T303-OLP-0224-B010` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:75-87` | `mr/content/computability/recursive-functions/partial-functions.tex:71-81` | pending |
+| `T303-OLP-0224-B011` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:89-96` | `mr/content/computability/recursive-functions/partial-functions.tex:83-90` | pending |
+| `T303-OLP-0224-B012` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:98-103` | `mr/content/computability/recursive-functions/partial-functions.tex:92-97` | pending |
+| `T303-OLP-0224-B013` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:105-106` | `mr/content/computability/recursive-functions/partial-functions.tex:99-100` | pending |
+| `T303-OLP-0224-B014` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:108-112` | `mr/content/computability/recursive-functions/partial-functions.tex:102-106` | pending |
+| `T303-OLP-0224-B015` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:114-115` | `mr/content/computability/recursive-functions/partial-functions.tex:108-109` | pending |
+
+## T304 — lambda calculus / simulate a model of computation
+
+**Chosen rendering/action:** लॅम्डा कलन / संगणन-प्रतिमानाचे अनुकरण करणे
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `low` · **priority:** `high` · **provisional:** `true`
+
+**Intended sense:** The edition's established प्रतिमान vocabulary and MR-P131's authoritative computation discussion support the surrounding claim. A bounded official search exposed लॅम्डा only in an unrelated transition entry and did not attest lambda calculus or the simulation compound. OpenLogic's claim controls the sense: recursive functions can reproduce the computations of Turing machines, lambda calculus and other accepted models.
+
+**Rationale:** The edition's established प्रतिमान vocabulary and MR-P131's authoritative computation discussion support the surrounding claim. A bounded official search exposed लॅम्डा only in an unrelated transition entry and did not attest lambda calculus or the simulation compound. OpenLogic's claim controls the sense: recursive functions can reproduce the computations of Turing machines, lambda calculus and other accepted models.
+
+**Authorities actually checked:**
+
+- `MR-P009` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): successful tool text read; short observation transcribed; raw origin preservation unresolved Limitation: Do not treat observation hash as source-byte hash or claim full original archived.
+- `MR-P013` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 8 (`checked_supports`): visually-read-page-image
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+
+**Alternatives:**
+
+- लॅम्ब्डा कलन / संगणनाच्या प्रतिमानाचे अनुकरण करणे — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- लॅम्डा कॅल्क्युलस / प्रतिकृतीकरण करणे — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- λ-कलन / समनुरूप संगणन करणे — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is लॅम्डा कलन the conventional Marathi name, and is अनुकरण करणे sufficiently precise for computational simulation?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T304-OLP-0210-B007` | `OLP-0210` |  | `upstream/content/computability/recursive-functions/introduction.tex:41-52` | `mr/content/computability/recursive-functions/introduction.tex:40-51` | pending |
+| `T304-OLP-0222-B007` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:57-66` | `mr/content/computability/recursive-functions/other-recursions.tex:55-63` | pending |
+| `T304-OLP-0223-B011` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96` | `mr/content/computability/recursive-functions/non-pr-functions.tex:85-92` | pending |
+
+## T305 — notation for a primitive recursive function; composition and recursion notation
+
+**Chosen rendering/action:** आदिम पुनरावर्ती फलनाचे चिन्हांकन; संयोजन व पुनरावर्तन चिन्हांकन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P068 directly attests the formal-notation compound चिन्हव्यवस्था and the edition already uses function and recursive-family terminology. OpenLogic assigns concrete notation trees using the displayed Zero, Succ, projection, Comp and Rec symbols, so चिन्हांकन names the assigned symbolic representation rather than the denoted function itself.
+
+**Rationale:** MR-P068 directly attests the formal-notation compound चिन्हव्यवस्था and the edition already uses function and recursive-family terminology. OpenLogic assigns concrete notation trees using the displayed Zero, Succ, projection, Comp and Rec symbols, so चिन्हांकन names the assigned symbolic representation rather than the denoted function itself.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+
+**Alternatives:**
+
+- आदिम पुनरावर्ती संकेतन; संयोजन व पुनरावर्तन संकेतन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- आदिम पुनरावर्ती संकेतपद्धती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- फलन-वर्णन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is चिन्हांकन the clearest Marathi noun for the finite symbolic code assigned to each primitive recursive function, or should formal computability use संकेतन?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T305-OLP-0214-B004` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:9-10` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:9-10` | pending |
+| `T305-OLP-0214-B005` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:12-21` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:12-20` | pending |
+| `T305-OLP-0214-B006` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:23-28` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:22-26` | pending |
+| `T305-OLP-0214-B007` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:30-45` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:28-43` | pending |
+| `T305-OLP-0214-B008` | `OLP-0214` |  | `upstream/content/computability/recursive-functions/notation-pr-functions.tex:47-49` | `mr/content/computability/recursive-functions/notation-pr-functions.tex:45-47` | pending |
+| `T305-OLP-0223-B007` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65` | `mr/content/computability/recursive-functions/non-pr-functions.tex:45-64` | pending |
+| `T305-OLP-0223-B008` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:67-73` | `mr/content/computability/recursive-functions/non-pr-functions.tex:66-70` | pending |
+
+## T306 — exponentiation function / predecessor function / factorial function
+
+**Chosen rendering/action:** घातांक फलन / पूर्ववर्ती फलन / क्रमगुणित फलन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P140 directly attests क्रमगुणित with the product notation and MR-P127 directly attests उत्तरवर्ती, supporting the paired पूर्ववर्ती. MR-P142 attests घातफल for a one-base exponential function, while OpenLogic defines the present binary function by exp(x,0)=1 and exp(x,y+1)=x·exp(x,y); घातांक फलन keeps that broader power-operation sense visible. Every operation is immediately formula-defined.
+
+**Rationale:** MR-P140 directly attests क्रमगुणित with the product notation and MR-P127 directly attests उत्तरवर्ती, supporting the paired पूर्ववर्ती. MR-P142 attests घातफल for a one-base exponential function, while OpenLogic defines the present binary function by exp(x,0)=1 and exp(x,y+1)=x·exp(x,y); घातांक फलन keeps that broader power-operation sense visible. Every operation is immediately formula-defined.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P127` — गणितशास्त्र परिभाषा कोश — successor. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Official Directorate of Languages mathematics-glossary entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the full compound उत्तरवर्ती फलन is compositional.
+- `MR-P140` — गणितीय संकेतने, चिन्हे व संज्ञा — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21279/ (`checked_supports`): Official Marathi Vishwakosh search extraction personally read after the page itself returned 502. Limitation: Observation hash is not an origin-page hash; generic division terminology does not independently attest the exact total integer-division function.
+- `MR-P142` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages page read in a current web extraction. Limitation: The entry does not independently attest the binary function (x,y) ↦ x^y or the chosen descriptive घातांक फलन label.
+
+**Alternatives:**
+
+- घातफल / पूर्वगामी फलन / क्रमगुणित फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- घातकरण फलन / पूर्ववर्ती फलन / फॅक्टोरियल फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- घात फलन / अगोदरचे फलन / अनुक्रमगुणित फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should binary exponentiation use घातांक फलन or the officially attested but potentially fixed-base घातफल, and is क्रमगुणित फलन the preferred factorial label?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T306-OLP-0216-B006` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:25-27` | `mr/content/computability/recursive-functions/examples.tex:24-26` | pending |
+| `T306-OLP-0216-B007` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:29-45` | `mr/content/computability/recursive-functions/examples.tex:28-44` | pending |
+| `T306-OLP-0216-B008` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:47-56` | `mr/content/computability/recursive-functions/examples.tex:46-55` | pending |
+| `T306-OLP-0216-B009` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:58-76` | `mr/content/computability/recursive-functions/examples.tex:57-75` | pending |
+| `T306-OLP-0216-B010` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:78-81` | `mr/content/computability/recursive-functions/examples.tex:77-80` | pending |
+| `T306-OLP-0216-B011` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:83-97` | `mr/content/computability/recursive-functions/examples.tex:82-97` | pending |
+| `T306-OLP-0216-B013` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:110-116` | `mr/content/computability/recursive-functions/examples.tex:110-116` | pending |
+| `T306-OLP-0216-B021` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:155-160` | `mr/content/computability/recursive-functions/examples.tex:156-162` | pending |
+| `T306-OLP-0219-B008` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:46-62` | `mr/content/computability/recursive-functions/primes.tex:48-64` | pending |
+| `T306-OLP-0219-B009` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:64-74` | `mr/content/computability/recursive-functions/primes.tex:66-79` | pending |
+| `T306-OLP-0220-B011` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:79-88` | `mr/content/computability/recursive-functions/sequences.tex:77-86` | pending |
+| `T306-OLP-0223-B006` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:30-43` | `mr/content/computability/recursive-functions/non-pr-functions.tex:30-43` | pending |
+
+## T307 — truncated subtraction / distance / maximum / minimum
+
+**Chosen rendering/action:** छाटलेली वजाबाकी / अंतर / महत्तम / लघुतम
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P141 directly attests महत्तम and लघुतम for function values, while the edition's mathematical prose already uses अंतर. OpenLogic defines truncated subtraction by the displayed zero-or-x−y cases and derives distance and max from it, so छाटलेली वजाबाकी is an explicitly descriptive label rather than a claimed conventional headword.
+
+**Rationale:** MR-P141 directly attests महत्तम and लघुतम for function values, while the edition's mathematical prose already uses अंतर. OpenLogic defines truncated subtraction by the displayed zero-or-x−y cases and derives distance and max from it, so छाटलेली वजाबाकी is an explicitly descriptive label rather than a claimed conventional headword.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P141` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Official Marathi Vishwakosh search extraction personally read after the page itself returned 502. Limitation: Observation hash is not an origin-page hash; the article treats extrema in analysis rather than primitive recursion.
+
+**Alternatives:**
+
+- मर्यादित वजाबाकी / अंतर / अधिकतम / न्यूनतम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- शून्य-छाट वजाबाकी / दूरी / महत्तम / लघुतम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- मोनस / अंतर / कमाल / किमान — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is छाटलेली वजाबाकी natural for monus/truncated subtraction, and should the binary extrema retain the authoritative महत्तम/लघुतम pair?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T307-OLP-0216-B012` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:99-108` | `mr/content/computability/recursive-functions/examples.tex:99-108` | pending |
+| `T307-OLP-0216-B013` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:110-116` | `mr/content/computability/recursive-functions/examples.tex:110-116` | pending |
+| `T307-OLP-0216-B014` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:118-120` | `mr/content/computability/recursive-functions/examples.tex:118-120` | pending |
+| `T307-OLP-0216-B015` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:122-126` | `mr/content/computability/recursive-functions/examples.tex:122-126` | pending |
+| `T307-OLP-0216-B016` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:128-130` | `mr/content/computability/recursive-functions/examples.tex:128-130` | pending |
+| `T307-OLP-0216-B017` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:132-140` | `mr/content/computability/recursive-functions/examples.tex:132-141` | pending |
+| `T307-OLP-0216-B018` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:142-145` | `mr/content/computability/recursive-functions/examples.tex:143-146` | pending |
+| `T307-OLP-0216-B020` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:151-153` | `mr/content/computability/recursive-functions/examples.tex:152-154` | pending |
+| `T307-OLP-0217-B007` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:38-45` | `mr/content/computability/recursive-functions/pr-relations.tex:37-44` | pending |
+| `T307-OLP-0217-B009` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:60-86` | `mr/content/computability/recursive-functions/pr-relations.tex:59-86` | pending |
+| `T307-OLP-0217-B011` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:101-119` | `mr/content/computability/recursive-functions/pr-relations.tex:102-121` | pending |
+
+## T308 — integer division / finite sum / finite product
+
+**Chosen rendering/action:** पूर्णांक भागाकार / सांत बेरीज / सांत गुणाकार
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P140 directly attests भागाकार, भागिले and the greatest-integer notation used in OpenLogic's floor quotient. The source fixes integer division as floor(x/y) with value 0 at y=0. The displayed sigma/product bounds define the finite closure operations, so सांत बेरीज and सांत गुणाकार are transparent formula-controlled compounds.
+
+**Rationale:** MR-P140 directly attests भागाकार, भागिले and the greatest-integer notation used in OpenLogic's floor quotient. The source fixes integer division as floor(x/y) with value 0 at y=0. The displayed sigma/product bounds define the finite closure operations, so सांत बेरीज and सांत गुणाकार are transparent formula-controlled compounds.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P140` — गणितीय संकेतने, चिन्हे व संज्ञा — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21279/ (`checked_supports`): Official Marathi Vishwakosh search extraction personally read after the page itself returned 502. Limitation: Observation hash is not an origin-page hash; generic division terminology does not independently attest the exact total integer-division function.
+
+**Alternatives:**
+
+- पूर्णांकी भागाकार / परिमित बेरीज / परिमित गुणाकार — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- भागाकाराचा पूर्णांक भाग / सांत योग / सांत गुणन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- फ्लोअर भागाकार / सीमित बेरीज / सीमित गुणाकार — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is पूर्णांक भागाकार clear for floor division with the stated y=0 convention, and should finite sums/products use सांत or परिमित?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T308-OLP-0216-B022` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:162-168` | `mr/content/computability/recursive-functions/examples.tex:164-169` | pending |
+| `T308-OLP-0216-B023` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:170-185` | `mr/content/computability/recursive-functions/examples.tex:171-185` | pending |
+| `T308-OLP-0216-B024` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:187-193` | `mr/content/computability/recursive-functions/examples.tex:187-193` | pending |
+| `T308-OLP-0217-B011` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:101-119` | `mr/content/computability/recursive-functions/pr-relations.tex:102-121` | pending |
+| `T308-OLP-0219-B009` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:64-74` | `mr/content/computability/recursive-functions/primes.tex:66-79` | pending |
+| `T308-OLP-0219-B010` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:76-78` | `mr/content/computability/recursive-functions/primes.tex:81-83` | pending |
+
+## T309 — primitive recursive relation / Boolean operations / bounded quantification
+
+**Chosen rendering/action:** आदिम पुनरावर्ती संबंध / बूलीय क्रिया / परिबद्ध संख्यकीकरण
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The edition's relation, primitive-recursive and characteristic-function decisions combine under OpenLogic's exact 0/1 definition. MR-P144 directly supports Boolean and closure vocabulary, while the checked logic canon supports quantifiers. The displayed z<y clauses define परिबद्ध संख्यकीकरण and distinguish its empty-bound truth conventions from unrestricted quantification.
+
+**Rationale:** The edition's relation, primitive-recursive and characteristic-function decisions combine under OpenLogic's exact 0/1 definition. MR-P144 directly supports Boolean and closure vocabulary, while the checked logic canon supports quantifiers. The displayed z<y clauses define परिबद्ध संख्यकीकरण and distinguish its empty-bound truth conventions from unrestricted quantification.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P074` — गणितशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P075` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/r (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P137` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the relation-specific extension was not independently attested.
+- `MR-P138` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web extraction. Limitation: Observation hash is not an origin-page hash; neither primitive recursion nor partial recursive function was directly attested.
+- `MR-P144` — बूलीयन बीजगणित — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/29515/ (`checked_supports`): Official Marathi Vishwakosh article read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article does not independently prove primitive-recursive closure.
+
+**Alternatives:**
+
+- आदिम प्रत्यावर्ती संबंध / बूलीयन कृत्ये / मर्यादित संख्यकीकरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- आदिम पुनरावर्ती संबंध / सत्यता-फलनीय क्रिया / बद्ध संख्यीकरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- प्राथमिक पुनरावर्ती विधेय / बूल क्रिया / ससीम परिमाणीकरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is परिबद्ध संख्यकीकरण the clearest Marathi term for bounded quantification, and should Boolean operations be बूलीय क्रिया or बूलीयन क्रिया?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T309-OLP-0217-B004` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:9-10` | `mr/content/computability/recursive-functions/pr-relations.tex:9-10` | pending |
+| `T309-OLP-0217-B005` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:13-25` | `mr/content/computability/recursive-functions/pr-relations.tex:13-24` | pending |
+| `T309-OLP-0217-B006` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:27-36` | `mr/content/computability/recursive-functions/pr-relations.tex:26-35` | pending |
+| `T309-OLP-0217-B007` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:38-45` | `mr/content/computability/recursive-functions/pr-relations.tex:37-44` | pending |
+| `T309-OLP-0217-B008` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:48-58` | `mr/content/computability/recursive-functions/pr-relations.tex:47-57` | pending |
+| `T309-OLP-0217-B009` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:60-86` | `mr/content/computability/recursive-functions/pr-relations.tex:59-86` | pending |
+| `T309-OLP-0217-B010` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:88-99` | `mr/content/computability/recursive-functions/pr-relations.tex:88-100` | pending |
+| `T309-OLP-0217-B011` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:101-119` | `mr/content/computability/recursive-functions/pr-relations.tex:102-121` | pending |
+| `T309-OLP-0217-B014` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:140-156` | `mr/content/computability/recursive-functions/pr-relations.tex:142-157` | pending |
+| `T309-OLP-0218-B005` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25` | `mr/content/computability/recursive-functions/bounded-minimization.tex:12-25` | pending |
+| `T309-OLP-0218-B006` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:27-35` | `mr/content/computability/recursive-functions/bounded-minimization.tex:27-35` | pending |
+| `T309-OLP-0218-B007` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:37-39` | `mr/content/computability/recursive-functions/bounded-minimization.tex:37-39` | pending |
+| `T309-OLP-0219-B005` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:12-27` | `mr/content/computability/recursive-functions/primes.tex:12-28` | pending |
+| `T309-OLP-0219-B006` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:29-39` | `mr/content/computability/recursive-functions/primes.tex:30-41` | pending |
+| `T309-OLP-0220-B009` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:48-72` | `mr/content/computability/recursive-functions/sequences.tex:45-70` | pending |
+| `T309-OLP-0220-B019` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:156-168` | `mr/content/computability/recursive-functions/sequences.tex:155-166` | pending |
+| `T309-OLP-0224-B011` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:89-96` | `mr/content/computability/recursive-functions/partial-functions.tex:83-90` | pending |
+
+## T310 — congruence modulo n / conditional function / definition by cases
+
+**Chosen rendering/action:** भाजक n समशेषता / सशर्त फलन / प्रकरणांनुसार व्याख्या
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P143 directly attests a समशेषी b भाजक n for a=b mod n, so भाजक n समशेषता names the relation. OpenLogic defines the conditional function extensionally by returning y at x=0 and z otherwise, and the displayed ordered cases govern प्रकरणांनुसार व्याख्या, including first-match priority and the final otherwise clause.
+
+**Rationale:** MR-P143 directly attests a समशेषी b भाजक n for a=b mod n, so भाजक n समशेषता names the relation. OpenLogic defines the conditional function extensionally by returning y at x=0 and z otherwise, and the displayed ordered cases govern प्रकरणांनुसार व्याख्या, including first-match priority and the final otherwise clause.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P143` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages mathematics-glossary entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; a second search-rendered form appears corrupt and is not propagated.
+
+**Alternatives:**
+
+- मापांक n सहशेषता / अटीचे फलन / प्रकरणवार व्याख्या — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- n-मापी सर्वसमता / शर्तीचे फलन / बाबींनुसार व्याख्या — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- mod n समशेषता / कंडिशनल फलन / केसेसनुसार व्याख्या — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the official भाजक n समशेषी construction be nominalized as भाजक n समशेषता, and are सशर्त फलन and प्रकरणांनुसार व्याख्या natural computability terms?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T310-OLP-0217-B012` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:121-124` | `mr/content/computability/recursive-functions/pr-relations.tex:123-126` | pending |
+| `T310-OLP-0217-B013` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:126-138` | `mr/content/computability/recursive-functions/pr-relations.tex:128-140` | pending |
+| `T310-OLP-0217-B014` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:140-156` | `mr/content/computability/recursive-functions/pr-relations.tex:142-157` | pending |
+| `T310-OLP-0217-B015` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:158-167` | `mr/content/computability/recursive-functions/pr-relations.tex:159-168` | pending |
+| `T310-OLP-0218-B008` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62` | `mr/content/computability/recursive-functions/bounded-minimization.tex:41-63` | pending |
+| `T310-OLP-0220-B011` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:79-88` | `mr/content/computability/recursive-functions/sequences.tex:77-86` | pending |
+| `T310-OLP-0220-B013` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:96-107` | `mr/content/computability/recursive-functions/sequences.tex:94-105` | pending |
+| `T310-OLP-0222-B005` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:12-47` | `mr/content/computability/recursive-functions/other-recursions.tex:12-45` | pending |
+| `T310-OLP-0224-B008` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:42-62` | `mr/content/computability/recursive-functions/partial-functions.tex:39-57` | pending |
+
+## T311 — bounded minimization / least witness below a bound
+
+**Chosen rendering/action:** परिबद्ध लघुतमीकरण / परिबंधाखालील लघुतम साक्षी
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P146 directly attests लघुतमीकरण and MR-P145 directly supports the minimum/minimisation field. OpenLogic defines the operator extensionally as the least z<y satisfying R, returning y when no such z exists. परिबद्ध states the explicit independent upper bound and keeps this total operation distinct from later unbounded search.
+
+**Rationale:** MR-P146 directly attests लघुतमीकरण and MR-P145 directly supports the minimum/minimisation field. OpenLogic defines the operator extensionally as the least z<y satisfying R, returning y when no such z exists. परिबद्ध states the explicit independent upper bound and keeps this total operation distinct from later unbounded search.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P074` — गणितशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P145` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; bounded minimization was not directly attested as a compound.
+- `MR-P146` — मराठी विश्वकोश शब्दनोंद — minimization. https://shabdakosh.marathi.gov.in/node/362136 (`checked_supports`): Official Marathi Vishwakosh word entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the entry does not specify the computability-theory fallback convention.
+
+**Alternatives:**
+
+- परिबद्ध निम्नतमीकरण / परिबंधाखालील किमान साक्षी — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- मर्यादित लघुतमन / मर्यादेखालील लघुतम घटक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- बद्ध किमानीकरण / किमान साक्षी — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is परिबद्ध लघुतमीकरण the natural computability term, and does परिबंधाखालील लघुतम साक्षी clearly explain its witness value without hiding the no-witness fallback?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T311-OLP-0218-B004` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:9-10` | `mr/content/computability/recursive-functions/bounded-minimization.tex:9-10` | pending |
+| `T311-OLP-0218-B005` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:12-25` | `mr/content/computability/recursive-functions/bounded-minimization.tex:12-25` | pending |
+| `T311-OLP-0218-B006` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:27-35` | `mr/content/computability/recursive-functions/bounded-minimization.tex:27-35` | pending |
+| `T311-OLP-0218-B007` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:37-39` | `mr/content/computability/recursive-functions/bounded-minimization.tex:37-39` | pending |
+| `T311-OLP-0218-B008` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62` | `mr/content/computability/recursive-functions/bounded-minimization.tex:41-63` | pending |
+| `T311-OLP-0218-B009` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:64-69` | `mr/content/computability/recursive-functions/bounded-minimization.tex:65-70` | pending |
+| `T311-OLP-0219-B005` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:12-27` | `mr/content/computability/recursive-functions/primes.tex:12-28` | pending |
+| `T311-OLP-0219-B008` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:46-62` | `mr/content/computability/recursive-functions/primes.tex:48-64` | pending |
+| `T311-OLP-0219-B010` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:76-78` | `mr/content/computability/recursive-functions/primes.tex:81-83` | pending |
+| `T311-OLP-0220-B009` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:48-72` | `mr/content/computability/recursive-functions/sequences.tex:45-70` | pending |
+| `T311-OLP-0220-B013` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:96-107` | `mr/content/computability/recursive-functions/sequences.tex:94-105` | pending |
+| `T311-OLP-0220-B019` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:156-168` | `mr/content/computability/recursive-functions/sequences.tex:155-166` | pending |
+| `T311-OLP-0224-B009` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:64-73` | `mr/content/computability/recursive-functions/partial-functions.tex:59-69` | pending |
+| `T311-OLP-0224-B011` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:89-96` | `mr/content/computability/recursive-functions/partial-functions.tex:83-90` | pending |
+
+## T312 — finite sequence / numeric sequence code / empty sequence / length / append / concatenate / subsequence / sequence bound
+
+**Chosen rendering/action:** सांत क्रमिका / क्रमिकेचा संख्यात्मक संकेतांक / रिकामी क्रमिका / लांबी / शेवटी जोडणे / जोडणी करणे / उपक्रमिका / क्रमिका-परिबंध
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P147 directly attests क्रमिका, सांत क्रमिका and उपक्रमिका, while the edition already uses संकेतांक for a numeric code. OpenLogic's prime-power display, zero convention and recurrences define the exact encoding, length, append, concatenation, element and bound operations. The remaining operational phrases are transparent descriptions rather than claimed dictionary headwords.
+
+**Rationale:** MR-P147 directly attests क्रमिका, सांत क्रमिका and उपक्रमिका, while the edition already uses संकेतांक for a numeric code. OpenLogic's prime-power display, zero convention and recurrences define the exact encoding, length, append, concatenation, element and bound operations. The remaining operational phrases are transparent descriptions rather than claimed dictionary headwords.
+
+**Authorities actually checked:**
+
+- `MR-P017` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 81 (`checked_supports`): visually-read-page-image
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P079` — गणितशास्त्र परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P147` — गणितशास्त्र परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Official Directorate of Languages mathematics-glossary results read in current web-search extractions. Limitation: Observation hash is not an origin-page hash; OpenLogic controls finite coding, zero indexing and all operations.
+
+**Alternatives:**
+
+- सांत अनुक्रम / सांख्यिक कूट / शून्य क्रमिका / आकार / वाढवणे / सांधणे / उपानुक्रम / अनुक्रम-सीमा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- परिमित क्रमिका / संख्यांक / रिक्त क्रमिका / लांबी / पश्चजोड / स्वशृंखलन / उपक्रमिका / क्रमिका-परिबंध — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should encoded finite sequences consistently use the directly attested क्रमिका family, and are जोडणी and क्रमिका-परिबंध clear for the displayed operations?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T312-OLP-0220-B004` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:9-10` | `mr/content/computability/recursive-functions/sequences.tex:9-10` | pending |
+| `T312-OLP-0220-B005` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:12-25` | `mr/content/computability/recursive-functions/sequences.tex:12-24` | pending |
+| `T312-OLP-0220-B007` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:38-41` | `mr/content/computability/recursive-functions/sequences.tex:37-39` | pending |
+| `T312-OLP-0220-B008` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:43-46` | `mr/content/computability/recursive-functions/sequences.tex:41-43` | pending |
+| `T312-OLP-0220-B009` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:48-72` | `mr/content/computability/recursive-functions/sequences.tex:45-70` | pending |
+| `T312-OLP-0220-B010` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:74-77` | `mr/content/computability/recursive-functions/sequences.tex:72-75` | pending |
+| `T312-OLP-0220-B011` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:79-88` | `mr/content/computability/recursive-functions/sequences.tex:77-86` | pending |
+| `T312-OLP-0220-B012` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:90-94` | `mr/content/computability/recursive-functions/sequences.tex:88-92` | pending |
+| `T312-OLP-0220-B013` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:96-107` | `mr/content/computability/recursive-functions/sequences.tex:94-105` | pending |
+| `T312-OLP-0220-B014` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:109-117` | `mr/content/computability/recursive-functions/sequences.tex:107-115` | pending |
+| `T312-OLP-0220-B015` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:119-122` | `mr/content/computability/recursive-functions/sequences.tex:117-120` | pending |
+| `T312-OLP-0220-B016` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:124-140` | `mr/content/computability/recursive-functions/sequences.tex:122-137` | pending |
+| `T312-OLP-0220-B017` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:142-142` | `mr/content/computability/recursive-functions/sequences.tex:139-139` | pending |
+| `T312-OLP-0220-B018` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:144-154` | `mr/content/computability/recursive-functions/sequences.tex:141-153` | pending |
+| `T312-OLP-0220-B019` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:156-168` | `mr/content/computability/recursive-functions/sequences.tex:155-166` | pending |
+| `T312-OLP-0220-B020` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:170-176` | `mr/content/computability/recursive-functions/sequences.tex:168-174` | pending |
+| `T312-OLP-0220-B021` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:178-185` | `mr/content/computability/recursive-functions/sequences.tex:176-183` | pending |
+| `T312-OLP-0220-B022` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:187-192` | `mr/content/computability/recursive-functions/sequences.tex:185-189` | pending |
+| `T312-OLP-0220-B023` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:194-196` | `mr/content/computability/recursive-functions/sequences.tex:191-193` | pending |
+| `T312-OLP-0220-B024` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:198-200` | `mr/content/computability/recursive-functions/sequences.tex:195-197` | pending |
+| `T312-OLP-0221-B005` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:12-19` | `mr/content/computability/recursive-functions/trees.tex:12-18` | pending |
+| `T312-OLP-0221-B006` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:21-28` | `mr/content/computability/recursive-functions/trees.tex:20-27` | pending |
+| `T312-OLP-0221-B007` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:30-35` | `mr/content/computability/recursive-functions/trees.tex:29-34` | pending |
+| `T312-OLP-0221-B008` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:37-68` | `mr/content/computability/recursive-functions/trees.tex:36-67` | pending |
+| `T312-OLP-0221-B009` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:70-75` | `mr/content/computability/recursive-functions/trees.tex:69-74` | pending |
+| `T312-OLP-0222-B005` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:12-47` | `mr/content/computability/recursive-functions/other-recursions.tex:12-45` | pending |
+| `T312-OLP-0223-B006` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:30-43` | `mr/content/computability/recursive-functions/non-pr-functions.tex:30-43` | pending |
+| `T312-OLP-0223-B007` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65` | `mr/content/computability/recursive-functions/non-pr-functions.tex:45-64` | pending |
+
+## T313 — Fundamental Theorem of Arithmetic / unique prime factorization / prime factor
+
+**Chosen rendering/action:** अंकगणिताचे मूलभूत प्रमेय / अनन्य अविभाज्य अवयवीकरण / अविभाज्य अवयव
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P148 directly names अंकगणिताचे मूलभूत प्रमेय and states uniqueness of prime factors. MR-P149 independently attests अनन्य अवयवीकरण प्रमेय and the unique product-of-primes formulation. OpenLogic's displayed indexed prime powers control zero exponents, the final positive exponent and the injective code argument.
+
+**Rationale:** MR-P148 directly names अंकगणिताचे मूलभूत प्रमेय and states uniqueness of prime factors. MR-P149 independently attests अनन्य अवयवीकरण प्रमेय and the unique product-of-primes formulation. OpenLogic's displayed indexed prime powers control zero exponents, the final positive exponent and the injective code argument.
+
+**Authorities actually checked:**
+
+- `MR-P108` — अविभाज्य संख्या — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26519/ (`checked_supports`): Official Marathi Vishwakosh page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article is ordinary number theory rather than model theory.
+- `MR-P148` — संख्या सिद्धांत — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25302/ (`checked_supports`): Official Marathi Vishwakosh page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic supplies the indexed prime-power normal form.
+- `MR-P149` — बीजगणित, अमूर्त — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/29441/ (`checked_supports`): Official Marathi Vishwakosh article read directly in the current page extraction. Limitation: Observation hash is not an origin-page hash; the article states integer-domain unique factorization while this section uses natural-number codes.
+
+**Alternatives:**
+
+- अंकगणिताचा मूलभूत सिद्धांत / एकमेव अविभाज्य गुणक-विघटन / अविभाज्य गुणक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अंकगणिताचे पायाभूत प्रमेय / अनन्य मूळ-अवयवीकरण / मूळ अवयव — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the section use the exact authoritative title अंकगणिताचे मूलभूत प्रमेय and describe its coding consequence as अनन्य अविभाज्य अवयवीकरण?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T313-OLP-0220-B006` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:27-36` | `mr/content/computability/recursive-functions/sequences.tex:26-35` | pending |
+| `T313-OLP-0220-B018` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:144-154` | `mr/content/computability/recursive-functions/sequences.tex:141-153` | pending |
+
+## T314 — rooted or labelled tree / node / root / immediate subtree / leaf node / level
+
+**Chosen rendering/action:** मूळयुक्त किंवा नामांकित वृक्ष / गाठ / मूळ / तात्काळ उपवृक्ष / पर्णगाठ / स्तर
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The edition already uses वृक्ष, मूळ and शाखा for source-defined mathematical trees, while MR-P147 establishes the sequence vocabulary used for their codes. OpenLogic explicitly defines a tree as a root node joined to immediate subtrees and later defines level by distance from the root, so गाठ, तात्काळ उपवृक्ष, पर्णगाठ and स्तर are locally controlled transparent terms. A bounded official-domain search exposed no exact graph-theoretic Marathi headwords for the complete group.
+
+**Rationale:** The edition already uses वृक्ष, मूळ and शाखा for source-defined mathematical trees, while MR-P147 establishes the sequence vocabulary used for their codes. OpenLogic explicitly defines a tree as a root node joined to immediate subtrees and later defines level by distance from the root, so गाठ, तात्काळ उपवृक्ष, पर्णगाठ and स्तर are locally controlled transparent terms. A bounded official-domain search exposed no exact graph-theoretic Marathi headwords for the complete group.
+
+**Authorities actually checked:**
+
+- `MR-P001` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 2 (`checked_supports`): visually-read-page-image
+- `MR-P005` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 7 (`checked_supports`): visually-read-page-image
+- `MR-P017` — गणित भाग १, इयत्ता नववी. https://books.ebalbharati.in/pdfs/901000608.pdf; printed page 81 (`checked_supports`): visually-read-page-image
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P147` — गणितशास्त्र परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Official Directorate of Languages mathematics-glossary results read in current web-search extractions. Limitation: Observation hash is not an origin-page hash; OpenLogic controls finite coding, zero indexing and all operations.
+
+**Alternatives:**
+
+- मूलित किंवा लेबलयुक्त वृक्ष / शिखर / मूल / निकट उपवृक्ष / पर्णशिखर / पातळी — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- मूळ असलेला नामांकित वृक्ष / नोड / मूळ / लगतचा उपवृक्ष / अंतिम गाठ / स्तर — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are गाठ, तात्काळ उपवृक्ष and पर्णगाठ the clearest Marathi terms for nodes, immediate subtrees and leaves in this recursively coded rooted-tree construction?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T314-OLP-0221-B004` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:9-10` | `mr/content/computability/recursive-functions/trees.tex:9-10` | pending |
+| `T314-OLP-0221-B005` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:12-19` | `mr/content/computability/recursive-functions/trees.tex:12-18` | pending |
+| `T314-OLP-0221-B006` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:21-28` | `mr/content/computability/recursive-functions/trees.tex:20-27` | pending |
+| `T314-OLP-0221-B007` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:30-35` | `mr/content/computability/recursive-functions/trees.tex:29-34` | pending |
+| `T314-OLP-0221-B008` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:37-68` | `mr/content/computability/recursive-functions/trees.tex:36-67` | pending |
+| `T314-OLP-0221-B009` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:70-75` | `mr/content/computability/recursive-functions/trees.tex:69-74` | pending |
+
+## T315 — simultaneous recursion / course-of-values recursion / changing parameters
+
+**Chosen rendering/action:** एकसामयिक पुनरावर्तन / मूल्यक्रम पुनरावर्तन / बदलते प्राचल
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P150 directly attests एकसामयिक in mathematics, MR-P152 independently supports the simultaneous field, and MR-P151 directly attests प्राचल. OpenLogic's paired recurrences define the simultaneous scheme, while its tuple of all earlier h-values defines मूल्यक्रम पुनरावर्तन. The final displayed equation controls exactly how the side parameters change.
+
+**Rationale:** MR-P150 directly attests एकसामयिक in mathematics, MR-P152 independently supports the simultaneous field, and MR-P151 directly attests प्राचल. OpenLogic's paired recurrences define the simultaneous scheme, while its tuple of all earlier h-values defines मूल्यक्रम पुनरावर्तन. The final displayed equation controls exactly how the side parameters change.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P138` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web extraction. Limitation: Observation hash is not an origin-page hash; neither primitive recursion nor partial recursive function was directly attested.
+- `MR-P150` — गणितशास्त्र परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Official Directorate of Languages mathematics-glossary results read in current web-search extractions. Limitation: Observation hash is not an origin-page hash; simultaneous recursion and its closure proof are source-defined rather than glossary-attested.
+- `MR-P151` — भौतिकशास्त्र परिभाषा कोश — parameter and simultaneous. https://shabdakosh.marathi.gov.in/ananya-glossary/37 (`checked_supports`): Official Directorate of Languages technical-glossary result read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the entry is cross-domain rather than computability-specific.
+- `MR-P152` — भौतिकशास्त्र परिभाषा कोश — parameter and simultaneous. https://shabdakosh.marathi.gov.in/ananya-glossary/37 (`checked_supports`): Official Directorate of Languages technical-glossary result read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the general adjective does not independently name a recursion scheme.
+
+**Alternatives:**
+
+- युगपत पुनरावर्तन / पूर्वमूल्य पुनरावर्तन / बदलते परामूल्य — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- एकाच-वेळचे पुनरावर्तन / सर्व-पूर्वमूल्य पुनरावर्तन / बाजूची बदलती मूल्ये — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- एकसमयावच्छेदी पुनरावर्तन / मूल्यपथ पुनरावर्तन / परिवर्ती प्राचल — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should simultaneous recursion use the concise mathematics form एकसामयिक, and is मूल्यक्रम पुनरावर्तन transparent for access to the complete sequence of earlier values?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T315-OLP-0222-B004` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:9-10` | `mr/content/computability/recursive-functions/other-recursions.tex:9-10` | pending |
+| `T315-OLP-0222-B005` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:12-47` | `mr/content/computability/recursive-functions/other-recursions.tex:12-45` | pending |
+| `T315-OLP-0222-B006` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:50-55` | `mr/content/computability/recursive-functions/other-recursions.tex:48-53` | pending |
+| `T315-OLP-0222-B007` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:57-66` | `mr/content/computability/recursive-functions/other-recursions.tex:55-63` | pending |
+
+## T316 — remainder function
+
+**Chosen rendering/action:** शेष फल
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P150 directly attests remainder function as शेष फल and also lists शेष and बाकी for remainder. OpenLogic fixes the Euclidean condition x=z·y+r with r<y for y>0 and the special value zero at y=0.
+
+**Rationale:** MR-P150 directly attests remainder function as शेष फल and also lists शेष and बाकी for remainder. OpenLogic fixes the Euclidean condition x=z·y+r with r<y for y>0 and the special value zero at y=0.
+
+**Authorities actually checked:**
+
+- `MR-P108` — अविभाज्य संख्या — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26519/ (`checked_supports`): Official Marathi Vishwakosh page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article is ordinary number theory rather than model theory.
+- `MR-P140` — गणितीय संकेतने, चिन्हे व संज्ञा — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21279/ (`checked_supports`): Official Marathi Vishwakosh search extraction personally read after the page itself returned 502. Limitation: Observation hash is not an origin-page hash; generic division terminology does not independently attest the exact total integer-division function.
+- `MR-P150` — गणितशास्त्र परिभाषा कोश — S glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/s (`checked_supports`): Official Directorate of Languages mathematics-glossary results read in current web-search extractions. Limitation: Observation hash is not an origin-page hash; simultaneous recursion and its closure proof are source-defined rather than glossary-attested.
+
+**Alternatives:**
+
+- बाकी फल — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- शेषफलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- भागशेष फल — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the exact official compound शेष फल be used consistently for the totalized natural-number remainder function?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T316-OLP-0222-B006` | `OLP-0222` |  | `upstream/content/computability/recursive-functions/other-recursions.tex:50-55` | `mr/content/computability/recursive-functions/other-recursions.tex:48-53` | pending |
+
+## T317 — non-primitive-recursive function / effective diagonal argument / Ackermann–Péter function / grows faster than
+
+**Chosen rendering/action:** आदिम पुनरावर्ती नसलेले फलन / प्रभावी कर्णरेषीय युक्तिवाद / ॲकरमन–पेटर फलन / याहून अधिक वेगाने वाढते
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The edition already establishes primitive-recursive, computable and Cantorian diagonal terminology. OpenLogic's h(x)=f_x(x)+1 construction controls the effective diagonal claim, and its explicit g_n hierarchy controls the growth comparison. A bounded Marathi and official-domain search exposed no authoritative Ackermann–Péter spelling, so ॲकरमन–पेटर is a cautious transliteration and remains open to correction.
+
+**Rationale:** The edition already establishes primitive-recursive, computable and Cantorian diagonal terminology. OpenLogic's h(x)=f_x(x)+1 construction controls the effective diagonal claim, and its explicit g_n hierarchy controls the growth comparison. A bounded Marathi and official-domain search exposed no authoritative Ackermann–Péter spelling, so ॲकरमन–पेटर is a cautious transliteration and remains open to correction.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P032` — MR-C004. https://vishwakosh.marathi.gov.in/34075/ (`checked_supports`): Consulted for this decision. Limitation: Same previously indexed source, new actual consultation. The witness's positive-natural-number convention and its restriction to infinite countable sets do not replace OpenLogic conventions. Missing/corrupt mathematical glyphs and source historical assertions are not imported. Original HTML remains unavailable.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P138` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web extraction. Limitation: Observation hash is not an origin-page hash; neither primitive recursion nor partial recursive function was directly attested.
+
+**Alternatives:**
+
+- अकरमान–पीटर फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- ॲकर्मन–पेटर फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- आदिम पुनरावर्तीेतर फलन / संगणनीय कर्णीकरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is ॲकरमन–पेटर the preferred Marathi spelling, and should the class label remain the explanatory आदिम पुनरावर्ती नसलेले फलन?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T317-OLP-0223-B004` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:9-10` | `mr/content/computability/recursive-functions/non-pr-functions.tex:9-10` | pending |
+| `T317-OLP-0223-B005` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:12-28` | `mr/content/computability/recursive-functions/non-pr-functions.tex:12-28` | pending |
+| `T317-OLP-0223-B006` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:30-43` | `mr/content/computability/recursive-functions/non-pr-functions.tex:30-43` | pending |
+| `T317-OLP-0224-B005` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:13-22` | `mr/content/computability/recursive-functions/partial-functions.tex:13-21` | pending |
+| `T317-OLP-0224-B006` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:24-30` | `mr/content/computability/recursive-functions/partial-functions.tex:23-28` | pending |
+
+## T318 — Church–Turing thesis / unpack a code / notation evaluator
+
+**Chosen rendering/action:** चर्च–ट्यूरिंग प्रबंध / संकेतांक उलगडणे / चिन्हांकनाचे मूल्य काढणारी प्रक्रिया
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P131 directly attests चर्च, ट्यूरिंग, ट्यूरिंग यंत्र and the claimed equivalence of machine-computable and general recursive functions. OpenLogic states the thesis operationally and explains evaluation by unpacking a notation code. No checked source directly names the full Church–Turing thesis in Marathi, so प्रबंध and the evaluator phrase remain source-controlled rather than claimed headwords.
+
+**Rationale:** MR-P131 directly attests चर्च, ट्यूरिंग, ट्यूरिंग यंत्र and the claimed equivalence of machine-computable and general recursive functions. OpenLogic states the thesis operationally and explains evaluation by unpacking a notation code. No checked source directly names the full Church–Turing thesis in Marathi, so प्रबंध and the evaluator phrase remain source-controlled rather than claimed headwords.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P113` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article does not directly attest the full simple-type-theory label or the exact phrase constructive interpretation.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+
+**Alternatives:**
+
+- चर्च–ट्यूरिंग अभ्युपगम / संकेतांक उघडणे / चिन्हांकन निर्वचक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- चर्च–ट्यूरिंग प्रतिपादन / कूट उलगडणे / संकेतन मूल्यांकक — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- चर्च–ट्यूरिंग थीसिस / कोड अनपॅक करणे / इंटरप्रिटर — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Should the named thesis use प्रबंध, अभ्युपगम or प्रतिपादन in Marathi computability prose, and is संकेतांक उलगडणे sufficiently clear for recursive notation evaluation?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T318-OLP-0223-B009` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:75-79` | `mr/content/computability/recursive-functions/non-pr-functions.tex:72-76` | pending |
+| `T318-OLP-0223-B010` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:81-86` | `mr/content/computability/recursive-functions/non-pr-functions.tex:78-83` | pending |
+| `T318-OLP-0223-B011` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96` | `mr/content/computability/recursive-functions/non-pr-functions.tex:85-92` | pending |
+| `T318-OLP-0226-B005` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:12-25` | `mr/content/computability/recursive-functions/halting-problem.tex:12-23` | pending |
+
+## T319 — defined or undefined at an input / partial equality / unbounded mu-search operator / non-halting computation
+
+**Chosen rendering/action:** आदानावर परिभाषित किंवा अपरिभाषित / आंशिक समता / अपरिबद्ध μ-शोध परिकर्मी / न थांबणारे संगणन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** The edition already distinguishes partial and everywhere-defined functions, MR-P105 directly supports परिकर्मी, and MR-P139 directly attests अपरिबद्ध. OpenLogic defines the two definedness symbols, partial equality, strict left-to-right μ condition and divergence behavior extensionally. आंशिक समता is descriptive: it means both sides are undefined or both are defined and equal, not ordinary equality of arbitrary partial graphs.
+
+**Rationale:** The edition already distinguishes partial and everywhere-defined functions, MR-P105 directly supports परिकर्मी, and MR-P139 directly attests अपरिबद्ध. OpenLogic defines the two definedness symbols, partial equality, strict left-to-right μ condition and divergence behavior extensionally. आंशिक समता is descriptive: it means both sides are undefined or both are defined and equal, not ordinary equality of arbitrary partial graphs.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P105` — संख्या शास्त्र परिभाषा कोश — infinitesimal observation. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/12/i (`checked_supports`): Primary Government of Maharashtra terminology page read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the entry is infinitesimal operator rather than infinitesimal number, and the glossary is statistical rather than model-theoretic.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P138` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web extraction. Limitation: Observation hash is not an origin-page hash; neither primitive recursion nor partial recursive function was directly attested.
+- `MR-P139` — भौतिकशास्त्र परिभाषा कोश — unbounded. https://shabdakosh.marathi.gov.in/ananya-glossary/37?page=635 (`checked_supports`): Official Directorate of Languages specialist-glossary entries read in a current web extraction. Limitation: Observation hash is not an origin-page hash; the exact algorithmic compound अपरिबद्ध शोध was not directly attested.
+- `MR-P145` — गणितशास्त्र परिभाषा कोश — abstract and characterisation. https://shabdakosh.marathi.gov.in/ananya-glossary/9 (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; bounded minimization was not directly attested as a compound.
+- `MR-P146` — मराठी विश्वकोश शब्दनोंद — minimization. https://shabdakosh.marathi.gov.in/node/362136 (`checked_supports`): Official Marathi Vishwakosh word entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the entry does not specify the computability-theory fallback convention.
+
+**Alternatives:**
+
+- आदानावर व्याख्यात/अव्याख्यात / क्लिनी समता / अमर्याद लघुतमीकरण कारक / अपसारी संगणन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- परिभाषितता / सशर्त समता / अपरिबद्ध शोध कारक / संगणन न संपणे — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are परिभाषित/अपरिभाषित and न थांबणारे संगणन clearest for definedness and divergence, and should the source-defined ≃ relation be named आंशिक समता or Kleene equality?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T319-OLP-0224-B008` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:42-62` | `mr/content/computability/recursive-functions/partial-functions.tex:39-57` | pending |
+| `T319-OLP-0224-B009` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:64-73` | `mr/content/computability/recursive-functions/partial-functions.tex:59-69` | pending |
+| `T319-OLP-0224-B010` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:75-87` | `mr/content/computability/recursive-functions/partial-functions.tex:71-81` | pending |
+| `T319-OLP-0224-B011` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:89-96` | `mr/content/computability/recursive-functions/partial-functions.tex:83-90` | pending |
+| `T319-OLP-0225-B005` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:12-21` | `mr/content/computability/recursive-functions/normal-form.tex:12-21` | pending |
+| `T319-OLP-0225-B006` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:23-34` | `mr/content/computability/recursive-functions/normal-form.tex:23-34` | pending |
+| `T319-OLP-0225-B007` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:36-46` | `mr/content/computability/recursive-functions/normal-form.tex:36-45` | pending |
+| `T319-OLP-0226-B006` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:27-48` | `mr/content/computability/recursive-functions/halting-problem.tex:25-48` | pending |
+| `T319-OLP-0226-B008` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:55-90` | `mr/content/computability/recursive-functions/halting-problem.tex:55-91` | pending |
+| `T319-OLP-0227-B005` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:12-18` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:12-17` | pending |
+| `T319-OLP-0227-B006` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:20-27` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:19-26` | pending |
+| `T319-OLP-0227-B007` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:29-39` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:28-36` | pending |
+
+## T320 — disjoint domains of chosen isomorphic copies / sufficient union construction
+
+**Chosen rendering/action:** परस्पर विभक्त प्रांत / संयोगासाठी पुरेशी समरूपी प्रतींची निवड
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P153 directly attests गणितशास्त्र-कोशातील विभक्त for disjoint sets. MR-P120 and MR-P121 support the surrounding substructure and extension register. OpenLogic determines the model-theoretic construction: copies with only constant values shared are a sufficient convenient choice, not a necessary condition for every unique minimal union.
+
+**Rationale:** MR-P153 directly attests गणितशास्त्र-कोशातील विभक्त for disjoint sets. MR-P120 and MR-P121 support the surrounding substructure and extension register. OpenLogic determines the model-theoretic construction: copies with only constant values shared are a sufficient convenient choice, not a necessary condition for every unique minimal union.
+
+**Authorities actually checked:**
+
+- `MR-P120` — भौतिकशास्त्र परिभाषा कोश — substructure. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/37/s (`checked_supports`): Official Directorate of Languages glossary entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary entry is not specifically model-theoretic.
+- `MR-P121` — गणितशास्त्र परिभाषा कोश — Abelian extension. https://shabdakosh.marathi.gov.in/ananya-glossary/9/a (`checked_supports`): Official Directorate of Languages mathematics-glossary entry read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the attested compound is algebraic rather than model-theoretic.
+- `MR-P153` — गणितशास्त्र परिभाषा कोश — disjoint entries. https://shabdakosh.marathi.gov.in/ananya-glossary/9/d (`checked_supports`): Official Directorate of Languages mathematics-glossary result read in current web-search extraction; direct page open returned HTTP 502. Limitation: Observation hash is not an origin-page hash; no source bytes are claimed preserved. The entry is set-theoretic rather than specifically model-theoretic.
+
+**Alternatives:**
+
+- परस्पर वियुक्त प्रांत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- विभक्त प्रतिमानांची जोडणी — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सर्व संयोगांसाठी वियुक्तता आवश्यक असल्याचा दावा — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is विभक्त the clearest mathematical adjective for the chosen domains, and does the explanation distinguish this sufficient copy construction from a necessary condition on all unions?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T320-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84` | pending |
+
+## T321 — Kleene's Normal Form Theorem / index of a partial recursive function / computation code
+
+**Chosen rendering/action:** क्लिनीचे प्रमाण रूप प्रमेय / आंशिक पुनरावर्ती फलनाचा निर्देशांक / संगणनाचा संकेतांक
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** MR-P154 directly attests प्रमाण रूप in the official logic glossary, and MR-P155 attests निर्देशांक as an index word. The mathematics/coding passages support फलन and संगणन. OpenLogic's theorem defines e as a number coding a program or definition and s as a computation record; the official entries do not themselves attest the full Kleene title or this index sense.
+
+**Rationale:** MR-P154 directly attests प्रमाण रूप in the official logic glossary, and MR-P155 attests निर्देशांक as an index word. The mathematics/coding passages support फलन and संगणन. OpenLogic's theorem defines e as a number coding a program or definition and s as a computation record; the official entries do not themselves attest the full Kleene title or this index sense.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P154` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — normal form. https://shabdakosh.marathi.gov.in/ananya-glossary/7/n (`checked_supports`): Official Directorate of Languages logic-glossary result read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary does not independently name Kleene's theorem.
+- `MR-P155` — संख्या शास्त्र परिभाषा कोश — index. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/12/i (`checked_supports`): Official Directorate of Languages statistics-glossary result read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's sense is statistical, not a computability index.
+
+**Alternatives:**
+
+- क्लिनीचे सामान्य रूप प्रमेय / कार्यक्रम क्रमांक / संगणन कूट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- क्लिनीचे प्रमाण आकार प्रमेय / सूचीक्रमांक / संगणन नोंद — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does प्रमाण रूप distinguish this theorem from ordinary standardized forms, and is निर्देशांक clear for a program code rather than only a list position?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T321-OLP-0225-B004` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:9-10` | `mr/content/computability/recursive-functions/normal-form.tex:9-10` | pending |
+| `T321-OLP-0225-B005` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:12-21` | `mr/content/computability/recursive-functions/normal-form.tex:12-21` | pending |
+| `T321-OLP-0225-B006` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:23-34` | `mr/content/computability/recursive-functions/normal-form.tex:23-34` | pending |
+| `T321-OLP-0225-B007` | `OLP-0225` |  | `upstream/content/computability/recursive-functions/normal-form.tex:36-46` | `mr/content/computability/recursive-functions/normal-form.tex:36-45` | pending |
+| `T321-OLP-0226-B006` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:27-48` | `mr/content/computability/recursive-functions/halting-problem.tex:25-48` | pending |
+| `T321-OLP-0226-B008` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:55-90` | `mr/content/computability/recursive-functions/halting-problem.tex:55-91` | pending |
+
+## T322 — halting problem / halting function / total code numbering
+
+**Chosen rendering/action:** थांबण्याची समस्या / थांबण्याचे फलन / प्रत्येक संकेतांकाचा आंशिक पुनरावर्ती फलनाशी निर्देशांक-संबंध
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The checked computability passages attest Turing, computation and recursive-function context, while MR-P155 supports the index word. OpenLogic defines h extensionally and its preceding normal form defines a partial recursive function for every natural e, making a no-index exception in the frozen halting proof inapplicable. The Marathi title is a transparent source-controlled phrase, not an independently attested official headword.
+
+**Rationale:** The checked computability passages attest Turing, computation and recursive-function context, while MR-P155 supports the index word. OpenLogic defines h extensionally and its preceding normal form defines a partial recursive function for every natural e, making a no-index exception in the frozen halting proof inapplicable. The Marathi title is a transparent source-controlled phrase, not an independently attested official headword.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P155` — संख्या शास्त्र परिभाषा कोश — index. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/12/i (`checked_supports`): Official Directorate of Languages statistics-glossary result read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's sense is statistical, not a computability index.
+
+**Alternatives:**
+
+- समापन समस्या / समापन फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- हॉल्टिंग समस्या / हॉल्टिंग फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- थांबण-समस्या / थांबणारे फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is थांबण्याची समस्या natural in Marathi computing prose while keeping the theorem's two-argument decision problem precise?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T322-OLP-0226-B004` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:9-10` | `mr/content/computability/recursive-functions/halting-problem.tex:9-10` | pending |
+| `T322-OLP-0226-B005` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:12-25` | `mr/content/computability/recursive-functions/halting-problem.tex:12-23` | pending |
+| `T322-OLP-0226-B006` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:27-48` | `mr/content/computability/recursive-functions/halting-problem.tex:25-48` | pending |
+| `T322-OLP-0226-B007` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:50-53` | `mr/content/computability/recursive-functions/halting-problem.tex:50-53` | pending |
+| `T322-OLP-0226-B008` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:55-90` | `mr/content/computability/recursive-functions/halting-problem.tex:55-91` | pending |
+
+## T323 — regular function / general recursive function / total function
+
+**Chosen rendering/action:** नियमित फलन / सामान्य पुनरावर्ती फलन / सर्वत्र परिभाषित फलन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P156 directly attests नियमित फल as a mathematical headword, but its subject-specific meaning is not assumed; OpenLogic explicitly defines regularity by a zero witness for every parameter sequence. The established पुनरावर्ती and सर्वत्र परिभाषित choices carry the surrounding computability sense. सामान्य is retained because the source explains that historically named but misleading adjective.
+
+**Rationale:** MR-P156 directly attests नियमित फल as a mathematical headword, but its subject-specific meaning is not assumed; OpenLogic explicitly defines regularity by a zero witness for every parameter sequence. The established पुनरावर्ती and सर्वत्र परिभाषित choices carry the surrounding computability sense. सामान्य is retained because the source explains that historically named but misleading adjective.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P060` — गणितशास्त्र परिभाषा कोश — R glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Primary Government of Maharashtra mathematics glossary read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary form differs from the edition's already established variant.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P156` — गणितशास्त्र परिभाषा कोश — regular function. https://shabdakosh.marathi.gov.in/ananya-glossary/9/r (`checked_supports`): Official Directorate of Languages mathematics-glossary result read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary headword may refer to another mathematical regularity notion.
+
+**Alternatives:**
+
+- नियमित फल / व्यापक पुनरावर्ती फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सुसंगत फलन / सर्वसाधारण पुनरावर्ती फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- रेग्युलर फलन / जनरल रिकर्सिव फलन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does नियमित stay safely tied to the local zero-witness definition, and is सामान्य the clearest way to preserve the historically misleading general label?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T323-OLP-0227-B004` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:9-10` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:9-10` | pending |
+| `T323-OLP-0227-B005` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:12-18` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:12-17` | pending |
+| `T323-OLP-0227-B006` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:20-27` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:19-26` | pending |
+| `T323-OLP-0227-B007` | `OLP-0227` |  | `upstream/content/computability/recursive-functions/general-recursive-functions.tex:29-39` | `mr/content/computability/recursive-functions/general-recursive-functions.tex:28-36` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -22647,15 +23929,15 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 |---|---|---|---|---|---|
 | `OLFOL-049-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:46-54` | pending |
 
-## OLFOL-050 — confirmed-frozen-source-union-construction omission and dropped sequence subscript with documented formula projection
+## OLFOL-050 — confirmed-frozen-source-dropped sequence subscript with documented formula projection
 
-**Chosen rendering/action:** Made the standard disjoint-copy choice explicit, restored the n subscript in the subsequence phrase, placed reader note OLFOL-050 and projected the subscript back solely for frozen-source QA.
+**Chosen rendering/action:** Restored the n subscript in the subsequence phrase, placed reader note OLFOL-050 and projected only that subscript back for frozen-source QA.
 
 **Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
 
-**Intended sense:** Agreement on the interpretations of constants does not by itself make the union of arbitrary structures a unique structure; isomorphic copies must be disjoint outside the shared constant values. The source also says to take a subsequence of the M's, although the indexed sequence is the M_n's.
+**Intended sense:** The source says to take a subsequence of the M's, although the sequence just introduced is the indexed family M_n.
 
-**Rationale:** Agreement on the interpretations of constants does not by itself make the union of arbitrary structures a unique structure; isomorphic copies must be disjoint outside the shared constant values. The source also says to take a subsequence of the M's, although the indexed sequence is the M_n's. Chosen action: Made the standard disjoint-copy choice explicit, restored the n subscript in the subsequence phrase, placed reader note OLFOL-050 and projected the subscript back solely for frozen-source QA.
+**Rationale:** The source says to take a subsequence of the M's, although the sequence just introduced is the indexed family M_n. Chosen action: Restored the n subscript in the subsequence phrase, placed reader note OLFOL-050 and projected only that subscript back for frozen-source QA.
 
 **Authorities actually checked:**
 
@@ -22663,14 +23945,38 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 
 **Alternatives:**
 
-- Preserve potentially conflicting overlaps between relation interpretations — `rejected`: Not chosen; the source finding and recorded action control.
 - Treat a single unindexed M as a sequence from which a subsequence can be taken — `rejected`: Not chosen; the source finding and recorded action control.
 
-**Please double-check:** Please double-check: Do the shared constants plus otherwise disjoint domains now make the relational union well defined, with the subsequence taken from M_n?
+**Please double-check:** Please double-check: Does the restored n identify the family from which the subsequence is taken?
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `OLFOL-050-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:66-83` | pending |
+| `OLFOL-050-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:68-76` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-83` | pending |
+
+## OLNOTE-001 — explanatory-disjoint-copy choice; sufficient construction, not a source defect
+
+**Chosen rendering/action:** Retained the explicit sufficient copy choice, used the mathematics-glossary adjective विभक्त for the domains, and placed a separate reader note OLNOTE-001. The choice is mapped to MR-P153 and T320 in aligned block OLP-0207-B011.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The frozen text introduces a minimal union after arranging shared constant interpretations. Taking isomorphic copies with otherwise disjoint domains is a convenient sufficient way to specify that union; it is not necessary, since compatible overlaps outside the constants can also have a unique minimal union.
+
+**Rationale:** The frozen text introduces a minimal union after arranging shared constant interpretations. Taking isomorphic copies with otherwise disjoint domains is a convenient sufficient way to specify that union; it is not necessary, since compatible overlaps outside the constants can also have a unique minimal union. Chosen action: Retained the explicit sufficient copy choice, used the mathematics-glossary adjective विभक्त for the domains, and placed a separate reader note OLNOTE-001. The choice is mapped to MR-P153 and T320 in aligned block OLP-0207-B011.
+
+**Authorities actually checked:**
+
+- `OLNOTE-001-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLNOTE-001. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Leave the sufficient choice implicit in the compressed proof — `rejected`: Not chosen; the source finding and recorded action control.
+- Call the choice necessary despite compatible overlapping relational structures — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Is the explicit disjoint-copy construction clear as one sufficient choice without suggesting that all well-defined unions require it?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLNOTE-001-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:68-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84` | pending |
 
 ## OLFOL-051 — confirmed-frozen-source-second ambient-structure notation collision with documented formula projection
 
@@ -22695,7 +24001,7 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `OLFOL-051-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:85-102` | pending |
+| `OLFOL-051-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:86-103` | pending |
 
 ## OLFOL-052 — confirmed-frozen-source-missing abstract-satisfaction subscripts with documented formula projection
 
@@ -22720,17 +24026,17 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `OLFOL-052-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:104-110` | pending |
+| `OLFOL-052-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:105-111` | pending |
 
-## OLFOL-053 — confirmed-frozen-source-incomplete compactness theory with bounded prose correction
+## OLFOL-053 — explanatory expansion of a compressed standard compactness argument; no established source error
 
-**Chosen rendering/action:** Added the standard compactness theory placing a new constant above every standard successor, explained that each finite part is satisfiable, and placed adjacent reader note OLFOL-053. The protected source formulas remain unchanged.
+**Chosen rendering/action:** Expanded the standard argument in Marathi by mentioning a fresh constant and lower-bound sentences above every standard element, and placed adjacent reader note OLFOL-053. The target does not explicitly explain finite satisfiability; that verification remains implicit in the compressed argument. The protected source formulas remain unchanged.
 
-**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
 
-**Intended sense:** The source says compactness gives a model of the single sentence D whose order has a non-standard element. D only specifies a discrete linear order with a first element and no last element, which has the standard natural-number order as a model and does not force a non-standard element.
+**Intended sense:** The source invokes compactness existentially to obtain a model of D whose order has a non-standard element, compressing the usual fresh-constant construction. The existence of a standard-order model of D does not refute that existential step.
 
-**Rationale:** The source says compactness gives a model of the single sentence D whose order has a non-standard element. D only specifies a discrete linear order with a first element and no last element, which has the standard natural-number order as a model and does not force a non-standard element. Chosen action: Added the standard compactness theory placing a new constant above every standard successor, explained that each finite part is satisfiable, and placed adjacent reader note OLFOL-053. The protected source formulas remain unchanged.
+**Rationale:** The source invokes compactness existentially to obtain a model of D whose order has a non-standard element, compressing the usual fresh-constant construction. The existence of a standard-order model of D does not refute that existential step. Chosen action: Expanded the standard argument in Marathi by mentioning a fresh constant and lower-bound sentences above every standard element, and placed adjacent reader note OLFOL-053. The target does not explicitly explain finite satisfiability; that verification remains implicit in the compressed argument. The protected source formulas remain unchanged.
 
 **Authorities actually checked:**
 
@@ -22738,14 +24044,14 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 
 **Alternatives:**
 
-- Claim that first element plus no last element implies non-standardity — `rejected`: Not chosen; the source finding and recorded action control.
-- Assume a non-standard model without invoking the stated compactness property — `rejected`: Not chosen; the source finding and recorded action control.
+- Keep the compactness step as compressed as the frozen source — `rejected`: Not chosen; the source finding and recorded action control.
+- Add a separate finite-satisfiability explanation in a later pedagogical pass — `rejected`: Not chosen; the source finding and recorded action control.
 
-**Please double-check:** Please double-check: Does adjoining the infinitely many lower-bound sentences now justify the non-standard element used in the back-and-forth set?
+**Please double-check:** Please double-check: Would a future reader benefit from an explicit finite-subtheory satisfiability sentence, or is the current fresh-constant expansion sufficient?
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `OLFOL-053-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-109` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-128` | pending |
+| `OLFOL-053-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-109` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-129` | pending |
 
 ## OLFOL-054 — confirmed-frozen-source-final-model notation inconsistency and collision with documented formula projection
 
@@ -22770,7 +24076,309 @@ Coverage: 204/722 source units through OLP-0207; 431 applied decisions; 11,708 o
 
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
-| `OLFOL-054-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-111` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:112-128` | pending |
+| `OLFOL-054-OLP-0207` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-111` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-129` | pending |
+
+## OLCMP-001 — confirmed-frozen-source-recursion-direction defect with bounded prose correction
+
+**Chosen rendering/action:** State in Marathi that the successor value h(x+1) is defined from the preceding value h(x). Both protected formulas remain present and every other structural token is preserved; only their prose-directed dependency is corrected.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** After correctly explaining that clause (b) computes h(x+1) from h(x), the frozen paragraph reverses that dependency and says the construction defines h(x) from h(x+1). This would use a later value to define its predecessor and contradicts every preceding worked step.
+
+**Rationale:** After correctly explaining that clause (b) computes h(x+1) from h(x), the frozen paragraph reverses that dependency and says the construction defines h(x) from h(x+1). This would use a later value to define its predecessor and contradicts every preceding worked step. Chosen action: State in Marathi that the successor value h(x+1) is defined from the preceding value h(x). Both protected formulas remain present and every other structural token is preserved; only their prose-directed dependency is corrected.
+
+**Authorities actually checked:**
+
+- `OLCMP-001-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-001. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the reversed dependency literally and contradict the induction just described — `rejected`: Not chosen; the source finding and recorded action control.
+- Avoid both formulas and describe only an unspecified next step, losing the construction's direction — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the repaired sentence now advance from h(x) to h(x+1), exactly as clause (b) and the later general scheme require?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-001-OLP-0211` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:27-29` | `mr/content/computability/recursive-functions/primitive-recursion.tex:23-25` | pending |
+
+## OLCMP-002 — confirmed-frozen-source-wrong output-argument bound with documented formula projection
+
+**Chosen rendering/action:** Use x_(n-1) in the Marathi h-input tuple while retaining y_0 through y_(k-1) as the k inputs to f. A unit-specific QA projection reconstructs the frozen x_(k-1) formula solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The composition scheme defines h as an n-place function on x_0 through x_(n-1), but the explanatory computation line later writes h(x_0,...,x_(k-1)). Here k is the arity of f and the number of component functions g_i, while n is the arity of h and every g_i; the displayed line therefore uses the wrong bound whenever k and n differ.
+
+**Rationale:** The composition scheme defines h as an n-place function on x_0 through x_(n-1), but the explanatory computation line later writes h(x_0,...,x_(k-1)). Here k is the arity of f and the number of component functions g_i, while n is the arity of h and every g_i; the displayed line therefore uses the wrong bound whenever k and n differ. Chosen action: Use x_(n-1) in the Marathi h-input tuple while retaining y_0 through y_(k-1) as the k inputs to f. A unit-specific QA projection reconstructs the frozen x_(k-1) formula solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLCMP-002-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-002. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve x_(k-1) and contradict the immediately preceding n-place definition — `rejected`: Not chosen; the source finding and recorded action control.
+- Force k=n, adding a restriction absent from and contrary to the later examples — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does x_0 through x_(n-1) now give h exactly its declared n arguments while f still receives the k computed y-values?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-002-OLP-0212` | `OLP-0212` |  | `upstream/content/computability/recursive-functions/composition.tex:26-27` | `mr/content/computability/recursive-functions/composition.tex:28-28` | pending |
+
+## OLCMP-003 — confirmed-frozen-source-section-title grammatical defect with bounded prose correction
+
+**Chosen rendering/action:** Use the established Marathi class name आदिम पुनरावर्ती फलने in the section heading, matching every occurrence in the body. No formula, macro, identifier or reference is changed.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The frozen heading says 'Primitive Recursion Functions', but every definition, proposition and explanation in the section consistently names the class 'primitive recursive functions'. The former phrase makes recursion modify functions as a noun adjunct instead of using the declared adjective recursive.
+
+**Rationale:** The frozen heading says 'Primitive Recursion Functions', but every definition, proposition and explanation in the section consistently names the class 'primitive recursive functions'. The former phrase makes recursion modify functions as a noun adjunct instead of using the declared adjective recursive. Chosen action: Use the established Marathi class name आदिम पुनरावर्ती फलने in the section heading, matching every occurrence in the body. No formula, macro, identifier or reference is changed.
+
+**Authorities actually checked:**
+
+- `OLCMP-003-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-003. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Render the malformed noun sequence literally as आदिम पुनरावर्तन फलने — `rejected`: Not chosen; the source finding and recorded action control.
+- Use only आदिम पुनरावर्तन as the heading and omit that the section defines a function class — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does आदिम पुनरावर्ती फलने accurately name the function class formally defined throughout the section?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-003-OLP-0213` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:10-10` | `mr/content/computability/recursive-functions/pr-functions.tex:10-10` | pending |
+
+## OLCMP-004 — confirmed-frozen-source-strictness-label defect with bounded prose correction
+
+**Chosen rendering/action:** Call it the less-than-or-equal relation in Marathi while preserving x≤y and IsZero(x dot-minus y) exactly. No protected formula, macro, identifier or reference changes.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The frozen list calls x≤y the less-than relation. Both the displayed symbol and its definition IsZero(x dot-minus y) hold exactly when x is less than or equal to y, including equality; the prose label alone incorrectly says strict less-than.
+
+**Rationale:** The frozen list calls x≤y the less-than relation. Both the displayed symbol and its definition IsZero(x dot-minus y) hold exactly when x is less than or equal to y, including equality; the prose label alone incorrectly says strict less-than. Chosen action: Call it the less-than-or-equal relation in Marathi while preserving x≤y and IsZero(x dot-minus y) exactly. No protected formula, macro, identifier or reference changes.
+
+**Authorities actually checked:**
+
+- `OLCMP-004-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-004. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Translate the strict label literally while printing a non-strict formula — `rejected`: Not chosen; the source finding and recorded action control.
+- Change ≤ to < and replace the defining function, altering the frozen mathematics — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does लघुतर अथवा समान संबंध now name exactly the relation displayed and defined in the frozen source?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-004-OLP-0217` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:39-40` | `mr/content/computability/recursive-functions/pr-relations.tex:42-43` | pending |
+
+## OLCMP-005 — confirmed-frozen-source-wrong vector variable with documented formula projection
+
+**Chosen rendering/action:** Use m_R(vector x,y+1)=y+1 in Marathi. A unit-specific QA projection reconstructs the frozen vector-z formula solely for source comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** In the third y+1 case the frozen source writes m_R(vector z,y+1)=y+1, although the minimization function's parameter vector is vector x everywhere else and z is the scalar witness variable bound by z<y+1. The left-hand side therefore changes both the name and arity role of the input accidentally.
+
+**Rationale:** In the third y+1 case the frozen source writes m_R(vector z,y+1)=y+1, although the minimization function's parameter vector is vector x everywhere else and z is the scalar witness variable bound by z<y+1. The left-hand side therefore changes both the name and arity role of the input accidentally. Chosen action: Use m_R(vector x,y+1)=y+1 in Marathi. A unit-specific QA projection reconstructs the frozen vector-z formula solely for source comparison.
+
+**Authorities actually checked:**
+
+- `OLCMP-005-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-005. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve vector z and conflate the free parameter tuple with the scalar search variable — `rejected`: Not chosen; the source finding and recorded action control.
+- Rename every parameter vector to z, needlessly altering all surrounding formulas — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does vector x restore the third case to the same parameter tuple used by m_R throughout the proof?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-005-OLP-0218` | `OLP-0218` |  | `upstream/content/computability/recursive-functions/bounded-minimization.tex:53-54` | `mr/content/computability/recursive-functions/bounded-minimization.tex:47-48` | pending |
+
+## OLCMP-006 — confirmed-frozen-source-divisibility justification defects with bounded prose correction
+
+**Chosen rendering/action:** Describe the relevant remainder as arising when y is divided by x and qualify it by a positive divisor. Replace the false universal witness bound with the exact fact needed for bounded quantification: whenever a witness exists, one can choose a witness z≤y. Preserve all displayed formulas and protected mathematical tokens exactly.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The frozen parenthetical reverses dividend and divisor by describing the remainder from dividing x by y even though x divides y means dividing y by x. It also speaks of that remainder without excluding the zero divisor. The next sentence says every witness z to x·z=y is at most y, which fails at x=y=0 although a bounded witness z=0 still exists.
+
+**Rationale:** The frozen parenthetical reverses dividend and divisor by describing the remainder from dividing x by y even though x divides y means dividing y by x. It also speaks of that remainder without excluding the zero divisor. The next sentence says every witness z to x·z=y is at most y, which fails at x=y=0 although a bounded witness z=0 still exists. Chosen action: Describe the relevant remainder as arising when y is divided by x and qualify it by a positive divisor. Replace the false universal witness bound with the exact fact needed for bounded quantification: whenever a witness exists, one can choose a witness z≤y. Preserve all displayed formulas and protected mathematical tokens exactly.
+
+**Authorities actually checked:**
+
+- `OLCMP-006-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-006. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Preserve the reversed division order and contradict x·z=y — `rejected`: Not chosen; the source finding and recorded action control.
+- State the remainder test for x=0 even though ordinary division by zero is undefined — `rejected`: Not chosen; the source finding and recorded action control.
+- Keep the claim that every witness is bounded and make the x=y=0 case false — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected prose now justify the bounded existential formula for every pair of natural numbers, including zero?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-006-OLP-0219` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:17-21` | `mr/content/computability/recursive-functions/primes.tex:16-21` | pending |
+
+## OLCMP-007 — confirmed-frozen-source-missing-small-cases in Euclidean bound proof with bounded prose completion
+
+**Chosen rendering/action:** Handle the two natural inputs below 2 in one prose sentence, observing that 2 supplies the required prime, and then apply the frozen product proof to the remaining inputs. The completion adds no protected formula or macro and leaves the product argument unchanged.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The frozen proof begins by taking p_n to be the largest prime at most x. No such prime exists when the natural number x is 0 or 1, although the stated next-prime bound includes those inputs and is true there because 2 is within the bound.
+
+**Rationale:** The frozen proof begins by taking p_n to be the largest prime at most x. No such prime exists when the natural number x is 0 or 1, although the stated next-prime bound includes those inputs and is true there because 2 is within the bound. Chosen action: Handle the two natural inputs below 2 in one prose sentence, observing that 2 supplies the required prime, and then apply the frozen product proof to the remaining inputs. The completion adds no protected formula or macro and leaves the product argument unchanged.
+
+**Authorities actually checked:**
+
+- `OLCMP-007-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-007. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Apply the undefined largest-prime-at-most-x notation at x=0 and x=1 — `rejected`: Not chosen; the source finding and recorded action control.
+- Restrict the theorem and nextPrime definition to x≥2, changing their declared domain — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the added small-input sentence complete the stated bound before the unchanged Euclidean product argument handles all remaining natural inputs?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-007-OLP-0219` | `OLP-0219` |  | `upstream/content/computability/recursive-functions/primes.tex:64-66` | `mr/content/computability/recursive-functions/primes.tex:66-68` | pending |
+
+## OLCMP-008 — confirmed-frozen-source-empty-sequence bound omission with bounded prose completion
+
+**Chosen rendering/action:** State that the displayed prime-power bound applies at positive length and adopt the value one for the zero-length sequence bound. This makes the subsequent strict search v<sequenceBound include the canonical empty code v=0 while leaving every protected frozen formula unchanged.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The displayed sequenceBound(x,k)=p_(k-1)^(k(x+1)) uses p_(−1) when k=0, so it is undefined for an empty sequence. The following bounded-search definition calls sequenceBound with the sum of two lengths and therefore includes the case in which both input sequences are empty.
+
+**Rationale:** The displayed sequenceBound(x,k)=p_(k-1)^(k(x+1)) uses p_(−1) when k=0, so it is undefined for an empty sequence. The following bounded-search definition calls sequenceBound with the sum of two lengths and therefore includes the case in which both input sequences are empty. Chosen action: State that the displayed prime-power bound applies at positive length and adopt the value one for the zero-length sequence bound. This makes the subsequent strict search v<sequenceBound include the canonical empty code v=0 while leaving every protected frozen formula unchanged.
+
+**Authorities actually checked:**
+
+- `OLCMP-008-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-008. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Leave p_(−1) undefined whenever both concatenated sequences are empty — `rejected`: Not chosen; the source finding and recorded action control.
+- Exclude empty sequences from concat even though they were introduced and used earlier — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the displayed positive-length bound unnecessarily — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the positive-length qualification plus zero-length value one make the bounded-search concat definition total on the declared empty-sequence codes?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-008-OLP-0220` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:144-154` | `mr/content/computability/recursive-functions/sequences.tex:141-153` | pending |
+
+## OLCMP-009 — confirmed-frozen-source-domain-label inconsistency with bounded prose correction
+
+**Chosen rendering/action:** Call the copied entries the first n elements of t in Marathi. The hconcat recurrence, indices and all protected formulas remain exact.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The section explicitly encodes sequences of natural numbers and everywhere else calls their entries elements, but the helper hconcat is said to concatenate the first n symbols of t. No alphabet or symbol sequence is involved in this construction.
+
+**Rationale:** The section explicitly encodes sequences of natural numbers and everywhere else calls their entries elements, but the helper hconcat is said to concatenate the first n symbols of t. No alphabet or symbol sequence is involved in this construction. Chosen action: Call the copied entries the first n elements of t in Marathi. The hconcat recurrence, indices and all protected formulas remain exact.
+
+**Authorities actually checked:**
+
+- `OLCMP-009-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-009. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Introduce an undeclared symbol alphabet into a natural-number sequence construction — `rejected`: Not chosen; the source finding and recorded action control.
+- Translate symbols literally and leave the local domain terminology inconsistent — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does घटक correctly identify the copied natural-number entries in the hconcat recurrence?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-009-OLP-0220` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:131-132` | `mr/content/computability/recursive-functions/sequences.tex:128-130` | pending |
+
+## OLCMP-010 — confirmed-frozen-source-level-semantics mismatch with bounded prose correction
+
+**Chosen rendering/action:** Describe hSubtreeSeq as accumulating all subtrees through level n, with possible repetitions, and describe the successor step as retaining the prior levels while appending their immediate subtrees. The recurrence itself is preserved.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The frozen prose says hSubtreeSeq(t,n) contains exactly the subtrees n nodes from the root, but its recurrence retains the entire preceding sequence and appends immediate subtrees. It therefore accumulates subtrees at distance at most n and, as the following problem acknowledges, may repeat them.
+
+**Rationale:** The frozen prose says hSubtreeSeq(t,n) contains exactly the subtrees n nodes from the root, but its recurrence retains the entire preceding sequence and appends immediate subtrees. It therefore accumulates subtrees at distance at most n and, as the following problem acknowledges, may repeat them. Chosen action: Describe hSubtreeSeq as accumulating all subtrees through level n, with possible repetitions, and describe the successor step as retaining the prior levels while appending their immediate subtrees. The recurrence itself is preserved.
+
+**Authorities actually checked:**
+
+- `OLCMP-010-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-010. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Call a cumulative sequence an exact-level sequence and contradict the displayed recurrence — `rejected`: Not chosen; the source finding and recorded action control.
+- Replace the cumulative recurrence with a level-only recurrence, changing the construction used to obtain all subtrees — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does ‘through level n’ now state exactly the cumulative invariant maintained by hSubtreeSeq?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-010-OLP-0221` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:41-47` | `mr/content/computability/recursive-functions/trees.tex:39-46` | pending |
+
+## OLCMP-011 — confirmed-frozen-source-off-by-one fold defect with documented formula projection
+
+**Chosen rendering/action:** Define g(s,0) as the empty sequence and g(s,k+1) by appending f((s)_k), so g(s,k) folds exactly the first k entries and g(s,len(s)) handles every entry once, including the empty case. Unit-specific QA projections reconstruct the three frozen formulas solely for comparison.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The frozen helper defines g(s,k) through entry k and then calls g(s,len(s)), so it processes one index past the final valid entry len(s)−1. Its base case also dereferences entry zero of an empty sequence. This does not define the claimed fold over exactly all elements of s.
+
+**Rationale:** The frozen helper defines g(s,k) through entry k and then calls g(s,len(s)), so it processes one index past the final valid entry len(s)−1. Its base case also dereferences entry zero of an empty sequence. This does not define the claimed fold over exactly all elements of s. Chosen action: Define g(s,0) as the empty sequence and g(s,k+1) by appending f((s)_k), so g(s,k) folds exactly the first k entries and g(s,len(s)) handles every entry once, including the empty case. Unit-specific QA projections reconstruct the three frozen formulas solely for comparison.
+
+**Authorities actually checked:**
+
+- `OLCMP-011-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-011. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Keep entry len(s) and rely on unspecified out-of-range behavior — `rejected`: Not chosen; the source finding and recorded action control.
+- Call g(s,len(s)−1), which requires a separate empty-sequence case and leaves the base dereference defect — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected empty-base successor fold process precisely entries 0 through len(s)−1 before the unchanged h(s)=g(s,len(s)) call?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-011-OLP-0221` | `OLP-0221` |  | `upstream/content/computability/recursive-functions/trees.tex:48-57` | `mr/content/computability/recursive-functions/trees.tex:47-56` | pending |
+
+## OLCMP-012 — confirmed-frozen-source-impossible unindexed-code branch in halting argument with bounded prose correction
+
+**Chosen rendering/action:** Removed the impossible no-index alternative from the Marathi explanation and both proof cases, kept the two-case diagonal contradiction, and placed adjacent reader note OLCMP-012. All protected formulas, identifiers, macros and references remain source-identical.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The frozen text says e may fail to index any partial recursive function and carries that branch into the diagonal proof. Yet its own preceding normal-form equation defines cfind_e(x) by U applied to a mu search using primitive recursive T for every natural e; each such e therefore indexes a partial recursive function, whether or not the computation halts at x.
+
+**Rationale:** The frozen text says e may fail to index any partial recursive function and carries that branch into the diagonal proof. Yet its own preceding normal-form equation defines cfind_e(x) by U applied to a mu search using primitive recursive T for every natural e; each such e therefore indexes a partial recursive function, whether or not the computation halts at x. Chosen action: Removed the impossible no-index alternative from the Marathi explanation and both proof cases, kept the two-case diagonal contradiction, and placed adjacent reader note OLCMP-012. All protected formulas, identifiers, macros and references remain source-identical.
+
+**Authorities actually checked:**
+
+- `OLCMP-012-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLCMP-012. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Retain a no-index case contradicted by the immediately stated total numbering of partial functions — `rejected`: Not chosen; the source finding and recorded action control.
+- Restrict the natural-number parameter e to a smaller index set, changing the theorem's quantification — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected proof use that every natural e indexes a partial recursive function while still deriving the diagonal contradiction for h?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLCMP-012-OLP-0226` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:27-48` | `mr/content/computability/recursive-functions/halting-problem.tex:27-48` | pending |
 
 ## Deferred prospective decisions
 

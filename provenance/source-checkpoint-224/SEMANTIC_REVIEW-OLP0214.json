@@ -1,0 +1,47 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0214",
+  "method": "Same-agent English/Marathi close reading, notation-tree comparison, reverse paraphrase and structural QA. No independent human or native-speaker review is claimed.",
+  "scope": "Finite notations for primitive recursive functions built from the basic-function symbols and the Comp and Rec constructors, with addition as the worked example.",
+  "samples": [
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "Assign symbols to zero, successor and projections. If h composes k-place f with k many n-place g_i and F,G_i are their notations, h receives Comp_(k,n)[F,G_0,...,G_(k-1)].",
+      "checks": "Every arity, constructor subscript and component-notation order is preserved."
+    },
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "If a (k+1)-place h is obtained by primitive recursion from k-place f and (k+2)-place g with notations F and G, its notation is Rec_k[F,G].",
+      "checks": "The three arities, f/g order and Rec subscript k are unchanged."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "Addition uses projection 1,0 as its base function and successor composed with projection 3,2 as its step function, so its full notation is Rec_1[Proj_1^0, Comp_(1,3)[Succ,Proj_3^2]]. Such finite notations help enumerate primitive recursive functions.",
+      "checks": "Both defining equations, every projection index and the complete nested notation are preserved exactly."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "Problem: give the complete primitive recursive notation for multiplication.",
+      "checks": "The problem requests a notation, rather than another proof of primitive recursiveness."
+    }
+  ],
+  "source_observations": [
+    "T305 records चिन्हांकन as a source-defined symbolic representation distinct from the function it denotes; the exact specialist compound remains expert-reviewable.",
+    "T207 controls the k-place and n-place distinctions; T053 and T288 distinguish composition from primitive recursion.",
+    "T253, T042 and T056 support projection, successor and enumeration vocabulary around the concrete displayed notation trees."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "No exact official Marathi headword was found for this specialized finite notation system; the displayed constructors control the meaning.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

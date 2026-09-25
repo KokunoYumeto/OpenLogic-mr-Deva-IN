@@ -1,0 +1,51 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0223",
+  "method": "Same-agent English/Marathi close reading, reverse paraphrase and exact diagonal, growth-hierarchy, notation-code, formula, macro and token comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Computable functions beyond the primitive-recursive class, via effective diagonalization, an Ackermann–Péter growth hierarchy, and explicit enumeration and evaluation of primitive-recursive notations.",
+  "samples": [
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "Effectively enumerate unary primitive-recursive functions f_x and let g(x,y)=f_x(y). Then h(x)=f_x(x)+1 differs from every f_i at input i, so h and consequently g are computable but not primitive recursive.",
+      "checks": "The diagonal input, plus-one offset, point of disagreement and conclusion for both h and g are preserved."
+    },
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "Iterate g n times and define g_0(x)=x+1 and g_(n+1)(x)=g_n iterated x times at x. Each level is primitive recursive, with g_1=2x, g_2=2^x x and g_3 roughly an x-high stack of twos; G(x)=g_x(x) eventually outgrows every primitive-recursive function.",
+      "checks": "Iteration counts, indices, concrete growth examples and the Ackermann–Péter diagonal are exact. The Marathi proper-name spelling is explicitly marked expert-reviewable in T317."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "Assign each Zero, Successor, projection, composition and recursion notation a nested sequence code, then enumerate unary functions by number, defaulting to constant zero on invalid codes. Repetitions remain because functions can have multiple notations, and no computable test recognizes exactly the notations for constant zero.",
+      "checks": "All five constructor tags, arity/index parameters, nesting order, invalid-code fallback and repetition claim are preserved."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11
+      ],
+      "reverse_paraphrase": "Compute g by unpacking x as a unary notation and evaluating it on y. The Church–Turing thesis turns this intuitive program into Turing computability; alternatively an explicit Turing machine avoids the appeal, and later recursive functions provide a Turing-simulable computation model.",
+      "checks": "The tagged digression, Java/C++ examples, thesis direction, direct-machine alternative and simulation direction are all preserved."
+    }
+  ],
+  "source_observations": [
+    "T073 supplies the established Cantorian diagonal register and MR-P033 directly attests प्रगणन.",
+    "MR-P131 directly attests ट्यूरिंग यंत्र and the computation/recursive-function equivalence underlying the Church–Turing discussion.",
+    "T305 and T312 supply the notation and sequence-code vocabulary used by the five constructor clauses.",
+    "No authoritative Marathi Ackermann–Péter spelling was found in the bounded search; T317 records the cautious transliteration and review question."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The spellings ॲकरमन–पेटर and the thesis noun प्रबंध remain expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

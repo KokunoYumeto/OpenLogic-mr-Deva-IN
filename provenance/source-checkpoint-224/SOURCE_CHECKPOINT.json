@@ -1,0 +1,462 @@
+{
+  "schema": "openlogic-incremental-source-checkpoint/1",
+  "checkpoint_id": "mr-Deva-IN-source-224-20260925",
+  "generated_utc": "2026-09-25T01:50:31.563232Z",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "base_checkpoint": {
+    "path": "provenance/source-checkpoint-204/SOURCE_CHECKPOINT.json",
+    "bytes": 12077,
+    "sha256": "53c8601a42e74060669892b2fe6cdd368cb76d4d3eff8541a1f310f721ce1147"
+  },
+  "scope": {
+    "translated_source_units": 224,
+    "total_source_units": 722,
+    "remaining_source_units": 498,
+    "aligned_content_segments": 2282,
+    "complete_source_chapters": 23,
+    "complete_reader_chapters": 20,
+    "first_incremental_unit": "OLP-0208",
+    "last_unit": "OLP-0227",
+    "next_unit": "OLP-0228",
+    "complete_edition": false
+  },
+  "translation_files": [
+    {
+      "unit_id": "OLP-0207",
+      "path": "mr/content/model-theory/lindstrom/lindstrom-proof.tex",
+      "bytes": 14156,
+      "sha256": "35b3bfdf6f28856644cdea0d8e2170b286d3e846b1d77e6b8883ca6d35f95016",
+      "role": "review correction of prior published source"
+    },
+    {
+      "unit_id": "OLP-0208",
+      "path": "mr/content/computability/computability.tex",
+      "bytes": 916,
+      "sha256": "52d51d2d24e9cfbf5819c720c5c94c583265a2de8dcb6b5ce32649cc7c6b1483",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0209",
+      "path": "mr/content/computability/recursive-functions/recursive-functions.tex",
+      "bytes": 1458,
+      "sha256": "05eea83f54b51cf6701b97ef7e33a6a2dc81c4e51d6795c0dd96861883f7678a",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0210",
+      "path": "mr/content/computability/recursive-functions/introduction.tex",
+      "bytes": 6550,
+      "sha256": "14b15185263000a5155f0988fe3f21f668cdcdf17158519504a43602eb3ca4fc",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0211",
+      "path": "mr/content/computability/recursive-functions/primitive-recursion.tex",
+      "bytes": 11277,
+      "sha256": "4b0ef09246ce9ffef5a38f945fe2718cc67ece98e5e55fc647985879857ec2de",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0212",
+      "path": "mr/content/computability/recursive-functions/composition.tex",
+      "bytes": 6506,
+      "sha256": "d7e305547aca3d64e43a093ff920dae530fd372136f1b17967ed2959ec8836d7",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0213",
+      "path": "mr/content/computability/recursive-functions/pr-functions.tex",
+      "bytes": 10755,
+      "sha256": "45bab080321127fa19235e71f74697ba65d18422006b6d85e8012738a818f180",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0214",
+      "path": "mr/content/computability/recursive-functions/notation-pr-functions.tex",
+      "bytes": 3925,
+      "sha256": "0ef8c7633ee9d6133d5088e220678da1057cd12df83a16a4005d43a6c7804b57",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0215",
+      "path": "mr/content/computability/recursive-functions/pr-functions-computable.tex",
+      "bytes": 3197,
+      "sha256": "cda5278d9790698ab2df3e87cf8f3565fc299bbd53532ecf6342fcf1a8fe6715",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0216",
+      "path": "mr/content/computability/recursive-functions/examples.tex",
+      "bytes": 10049,
+      "sha256": "cdaa1b02fefb444aeadf166cb0ffacfe4600db18d1ceb7882003446da63229b4",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0217",
+      "path": "mr/content/computability/recursive-functions/pr-relations.tex",
+      "bytes": 9524,
+      "sha256": "5c61631731dc0dc67b8243a7d3d3e317670823f38f062e0530df117adef7840a",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0218",
+      "path": "mr/content/computability/recursive-functions/bounded-minimization.tex",
+      "bytes": 4778,
+      "sha256": "765a40e7140b472387537d61056a8ae5991de732a78d2db8b07ce745c45081b6",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0219",
+      "path": "mr/content/computability/recursive-functions/primes.tex",
+      "bytes": 8060,
+      "sha256": "85fe7ffe3b351d35b9937c91ee3f35ee736d01767ffd07d3a2ed4b72f632f1c6",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0220",
+      "path": "mr/content/computability/recursive-functions/sequences.tex",
+      "bytes": 12591,
+      "sha256": "60f917684bd22d3f5352c170a10d1c7c0d8f954866865407b66c2508a0153690",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0221",
+      "path": "mr/content/computability/recursive-functions/trees.tex",
+      "bytes": 7172,
+      "sha256": "e88121bde6f4c3ad96d479ecc4169b2fe43eacb009d92d022e96c4ae66b61f71",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0222",
+      "path": "mr/content/computability/recursive-functions/other-recursions.tex",
+      "bytes": 4787,
+      "sha256": "3df768683df28a5970995bcfeb1553e53076fd8383a955398e29b952f07effac",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0223",
+      "path": "mr/content/computability/recursive-functions/non-pr-functions.tex",
+      "bytes": 9424,
+      "sha256": "84c2861a8d95092780141035f51e87c30deb1d47ab5a2a8300b4a2a1bcc2bc06",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0224",
+      "path": "mr/content/computability/recursive-functions/partial-functions.tex",
+      "bytes": 11397,
+      "sha256": "8bc167a87ca4e4535c54e4de3b2d1c0eb1d1c2c932c47cbd9788570d78fbdc38",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0225",
+      "path": "mr/content/computability/recursive-functions/normal-form.tex",
+      "bytes": 4072,
+      "sha256": "96cd5d8a1461650c7afa90052864a3a63843867f58c0f31426bb7976298e6ab2",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0226",
+      "path": "mr/content/computability/recursive-functions/halting-problem.tex",
+      "bytes": 7438,
+      "sha256": "edfb0fdae2324dc08ba95c122fbeed164bd067f15011e8c44aa71a40013c2415",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0227",
+      "path": "mr/content/computability/recursive-functions/general-recursive-functions.tex",
+      "bytes": 3418,
+      "sha256": "d197f69d902f90dce790656c7b2a552a3edb31e2935c4dee73ad3795d900f23f",
+      "role": "new translated source"
+    }
+  ],
+  "semantic_reviews": [
+    {
+      "unit_id": "OLP-0207",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0207.json",
+      "bytes": 3953,
+      "sha256": "789dc8377516eed06860f2129127a8a7fe959bde122c9a704c92430c37b49298"
+    },
+    {
+      "unit_id": "OLP-0208",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0208.json",
+      "bytes": 1908,
+      "sha256": "1faf616fcfc486fc736bd1b808906eab11d6ef0a667e4e393ded3d9ca3e19e18"
+    },
+    {
+      "unit_id": "OLP-0209",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0209.json",
+      "bytes": 1922,
+      "sha256": "c80635b1fcacd6a620011ba6c2a9df189502a81ce47fe4eb5331d33da9c77ef6"
+    },
+    {
+      "unit_id": "OLP-0210",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0210.json",
+      "bytes": 4120,
+      "sha256": "163ae39df50d088dc32d88f2e6ac531fd5f1ee779cf73cd097b14e0bf591030a"
+    },
+    {
+      "unit_id": "OLP-0211",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0211.json",
+      "bytes": 3278,
+      "sha256": "00aeaba513a3b88d424c6df247e3da0383508a060bfc6671e0269feb8017172c"
+    },
+    {
+      "unit_id": "OLP-0212",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0212.json",
+      "bytes": 3001,
+      "sha256": "92487fd453bf7c5b8a0873afdf149c436fba24c004887f5c0509bf4cdc761c99"
+    },
+    {
+      "unit_id": "OLP-0213",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0213.json",
+      "bytes": 3852,
+      "sha256": "c21173f5e5ae67cb05b08093d1053f19221446c183898b25e8b25ac7a618adc2"
+    },
+    {
+      "unit_id": "OLP-0214",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0214.json",
+      "bytes": 2633,
+      "sha256": "85eba37812668c533aa632b2c19833c12064c4ed452866c65e64779eff638554"
+    },
+    {
+      "unit_id": "OLP-0215",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0215.json",
+      "bytes": 2302,
+      "sha256": "b6d3cacd481c9cab82350d261af58a27b26ae9d8433fbc39bfabee60546acc28"
+    },
+    {
+      "unit_id": "OLP-0216",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0216.json",
+      "bytes": 4110,
+      "sha256": "07388877683460e14936c6daea415a53028158966d418a50559b486b1cc437b7"
+    },
+    {
+      "unit_id": "OLP-0217",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0217.json",
+      "bytes": 3721,
+      "sha256": "dd595e92a26f0be3bb75dda07a247d9ea98e378154a4bcfc9440ce9882210eab"
+    },
+    {
+      "unit_id": "OLP-0218",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0218.json",
+      "bytes": 2759,
+      "sha256": "6fc8aaeffb808901e8993a75decc405d417ef5f4d344094c4b0bd08eb8bf43b9"
+    },
+    {
+      "unit_id": "OLP-0219",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0219.json",
+      "bytes": 3888,
+      "sha256": "f9bfb64496f7842953b2a67887ad7a19b83fcccaf30d82a78cb78b8c37098016"
+    },
+    {
+      "unit_id": "OLP-0220",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0220.json",
+      "bytes": 3999,
+      "sha256": "3e07b746412165e8bd3b2910597ac5a1c8a097079588bd78abecea6d3c1af906"
+    },
+    {
+      "unit_id": "OLP-0221",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0221.json",
+      "bytes": 3109,
+      "sha256": "9ed17a48138f51d6e680ad2e798704433cd9c0490774a17afc3f820bb47bd2b4"
+    },
+    {
+      "unit_id": "OLP-0222",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0222.json",
+      "bytes": 2597,
+      "sha256": "b7bdbeb497ed01447cdb5acdf9a78d3b174015f63b01d517efd79c78d3de0ba2"
+    },
+    {
+      "unit_id": "OLP-0223",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0223.json",
+      "bytes": 3475,
+      "sha256": "e14853963c26c1142270eecf82b576fdc340735b4c5a9a6f5457b02a38a19447"
+    },
+    {
+      "unit_id": "OLP-0224",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0224.json",
+      "bytes": 3685,
+      "sha256": "722c83dacd0aced82b72bdfa1e84fbe0fca667ade56ea8274c436e4beab3aec0"
+    },
+    {
+      "unit_id": "OLP-0225",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0225.json",
+      "bytes": 1736,
+      "sha256": "60c7166e4f1c7babe3cd777e03d7e3258463f4472636813ffb35c98a01b808fe"
+    },
+    {
+      "unit_id": "OLP-0226",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0226.json",
+      "bytes": 1952,
+      "sha256": "6bf8398cf4130f03818a4e96c8d35666abe3ee9b7c1e5c73e7e7c85a23432f50"
+    },
+    {
+      "unit_id": "OLP-0227",
+      "path": "provenance/source-checkpoint-224/SEMANTIC_REVIEW-OLP0227.json",
+      "bytes": 1662,
+      "sha256": "5f0fef4dca351d0658622c68f6971ce47b14bd7769ce77b2f4eeb236f3f2aaa5"
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "OLFOL-050",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed-frozen-source-dropped sequence subscript with documented formula projection",
+      "finding": "The source says to take a subsequence of the M's, although the sequence just introduced is the indexed family M_n.",
+      "action": "Restored the n subscript in the subsequence phrase, placed reader note OLFOL-050 and projected only that subscript back for frozen-source QA."
+    },
+    {
+      "id": "OLNOTE-001",
+      "unit_id": "OLP-0207",
+      "classification": "explanatory-disjoint-copy choice; sufficient construction, not a source defect",
+      "finding": "The frozen text introduces a minimal union after arranging shared constant interpretations. Taking isomorphic copies with otherwise disjoint domains is a convenient sufficient way to specify that union; it is not necessary, since compatible overlaps outside the constants can also have a unique minimal union.",
+      "action": "Retained the explicit sufficient copy choice, used the mathematics-glossary adjective विभक्त for the domains, and placed a separate reader note OLNOTE-001. The choice is mapped to MR-P153 and T320 in aligned block OLP-0207-B011."
+    },
+    {
+      "id": "OLFOL-053",
+      "unit_id": "OLP-0207",
+      "classification": "explanatory expansion of a compressed standard compactness argument; no established source error",
+      "finding": "The source invokes compactness existentially to obtain a model of D whose order has a non-standard element, compressing the usual fresh-constant construction. The existence of a standard-order model of D does not refute that existential step.",
+      "action": "Expanded the standard argument in Marathi by mentioning a fresh constant and lower-bound sentences above every standard element, and placed adjacent reader note OLFOL-053. The target does not explicitly explain finite satisfiability; that verification remains implicit in the compressed argument. The protected source formulas remain unchanged."
+    },
+    {
+      "id": "OLCMP-001",
+      "unit_id": "OLP-0211",
+      "classification": "confirmed-frozen-source-recursion-direction defect with bounded prose correction",
+      "finding": "After correctly explaining that clause (b) computes h(x+1) from h(x), the frozen paragraph reverses that dependency and says the construction defines h(x) from h(x+1). This would use a later value to define its predecessor and contradicts every preceding worked step.",
+      "action": "State in Marathi that the successor value h(x+1) is defined from the preceding value h(x). Both protected formulas remain present and every other structural token is preserved; only their prose-directed dependency is corrected."
+    },
+    {
+      "id": "OLCMP-002",
+      "unit_id": "OLP-0212",
+      "classification": "confirmed-frozen-source-wrong output-argument bound with documented formula projection",
+      "finding": "The composition scheme defines h as an n-place function on x_0 through x_(n-1), but the explanatory computation line later writes h(x_0,...,x_(k-1)). Here k is the arity of f and the number of component functions g_i, while n is the arity of h and every g_i; the displayed line therefore uses the wrong bound whenever k and n differ.",
+      "action": "Use x_(n-1) in the Marathi h-input tuple while retaining y_0 through y_(k-1) as the k inputs to f. A unit-specific QA projection reconstructs the frozen x_(k-1) formula solely for source comparison."
+    },
+    {
+      "id": "OLCMP-003",
+      "unit_id": "OLP-0213",
+      "classification": "confirmed-frozen-source-section-title grammatical defect with bounded prose correction",
+      "finding": "The frozen heading says 'Primitive Recursion Functions', but every definition, proposition and explanation in the section consistently names the class 'primitive recursive functions'. The former phrase makes recursion modify functions as a noun adjunct instead of using the declared adjective recursive.",
+      "action": "Use the established Marathi class name आदिम पुनरावर्ती फलने in the section heading, matching every occurrence in the body. No formula, macro, identifier or reference is changed."
+    },
+    {
+      "id": "OLCMP-004",
+      "unit_id": "OLP-0217",
+      "classification": "confirmed-frozen-source-strictness-label defect with bounded prose correction",
+      "finding": "The frozen list calls x≤y the less-than relation. Both the displayed symbol and its definition IsZero(x dot-minus y) hold exactly when x is less than or equal to y, including equality; the prose label alone incorrectly says strict less-than.",
+      "action": "Call it the less-than-or-equal relation in Marathi while preserving x≤y and IsZero(x dot-minus y) exactly. No protected formula, macro, identifier or reference changes."
+    },
+    {
+      "id": "OLCMP-005",
+      "unit_id": "OLP-0218",
+      "classification": "confirmed-frozen-source-wrong vector variable with documented formula projection",
+      "finding": "In the third y+1 case the frozen source writes m_R(vector z,y+1)=y+1, although the minimization function's parameter vector is vector x everywhere else and z is the scalar witness variable bound by z<y+1. The left-hand side therefore changes both the name and arity role of the input accidentally.",
+      "action": "Use m_R(vector x,y+1)=y+1 in Marathi. A unit-specific QA projection reconstructs the frozen vector-z formula solely for source comparison."
+    },
+    {
+      "id": "OLCMP-006",
+      "unit_id": "OLP-0219",
+      "classification": "confirmed-frozen-source-divisibility justification defects with bounded prose correction",
+      "finding": "The frozen parenthetical reverses dividend and divisor by describing the remainder from dividing x by y even though x divides y means dividing y by x. It also speaks of that remainder without excluding the zero divisor. The next sentence says every witness z to x·z=y is at most y, which fails at x=y=0 although a bounded witness z=0 still exists.",
+      "action": "Describe the relevant remainder as arising when y is divided by x and qualify it by a positive divisor. Replace the false universal witness bound with the exact fact needed for bounded quantification: whenever a witness exists, one can choose a witness z≤y. Preserve all displayed formulas and protected mathematical tokens exactly."
+    },
+    {
+      "id": "OLCMP-007",
+      "unit_id": "OLP-0219",
+      "classification": "confirmed-frozen-source-missing-small-cases in Euclidean bound proof with bounded prose completion",
+      "finding": "The frozen proof begins by taking p_n to be the largest prime at most x. No such prime exists when the natural number x is 0 or 1, although the stated next-prime bound includes those inputs and is true there because 2 is within the bound.",
+      "action": "Handle the two natural inputs below 2 in one prose sentence, observing that 2 supplies the required prime, and then apply the frozen product proof to the remaining inputs. The completion adds no protected formula or macro and leaves the product argument unchanged."
+    },
+    {
+      "id": "OLCMP-008",
+      "unit_id": "OLP-0220",
+      "classification": "confirmed-frozen-source-empty-sequence bound omission with bounded prose completion",
+      "finding": "The displayed sequenceBound(x,k)=p_(k-1)^(k(x+1)) uses p_(−1) when k=0, so it is undefined for an empty sequence. The following bounded-search definition calls sequenceBound with the sum of two lengths and therefore includes the case in which both input sequences are empty.",
+      "action": "State that the displayed prime-power bound applies at positive length and adopt the value one for the zero-length sequence bound. This makes the subsequent strict search v<sequenceBound include the canonical empty code v=0 while leaving every protected frozen formula unchanged."
+    },
+    {
+      "id": "OLCMP-009",
+      "unit_id": "OLP-0220",
+      "classification": "confirmed-frozen-source-domain-label inconsistency with bounded prose correction",
+      "finding": "The section explicitly encodes sequences of natural numbers and everywhere else calls their entries elements, but the helper hconcat is said to concatenate the first n symbols of t. No alphabet or symbol sequence is involved in this construction.",
+      "action": "Call the copied entries the first n elements of t in Marathi. The hconcat recurrence, indices and all protected formulas remain exact."
+    },
+    {
+      "id": "OLCMP-010",
+      "unit_id": "OLP-0221",
+      "classification": "confirmed-frozen-source-level-semantics mismatch with bounded prose correction",
+      "finding": "The frozen prose says hSubtreeSeq(t,n) contains exactly the subtrees n nodes from the root, but its recurrence retains the entire preceding sequence and appends immediate subtrees. It therefore accumulates subtrees at distance at most n and, as the following problem acknowledges, may repeat them.",
+      "action": "Describe hSubtreeSeq as accumulating all subtrees through level n, with possible repetitions, and describe the successor step as retaining the prior levels while appending their immediate subtrees. The recurrence itself is preserved."
+    },
+    {
+      "id": "OLCMP-011",
+      "unit_id": "OLP-0221",
+      "classification": "confirmed-frozen-source-off-by-one fold defect with documented formula projection",
+      "finding": "The frozen helper defines g(s,k) through entry k and then calls g(s,len(s)), so it processes one index past the final valid entry len(s)−1. Its base case also dereferences entry zero of an empty sequence. This does not define the claimed fold over exactly all elements of s.",
+      "action": "Define g(s,0) as the empty sequence and g(s,k+1) by appending f((s)_k), so g(s,k) folds exactly the first k entries and g(s,len(s)) handles every entry once, including the empty case. Unit-specific QA projections reconstruct the three frozen formulas solely for comparison."
+    },
+    {
+      "id": "OLCMP-012",
+      "unit_id": "OLP-0226",
+      "classification": "confirmed-frozen-source-impossible unindexed-code branch in halting argument with bounded prose correction",
+      "finding": "The frozen text says e may fail to index any partial recursive function and carries that branch into the diagonal proof. Yet its own preceding normal-form equation defines cfind_e(x) by U applied to a mu search using primitive recursive T for every natural e; each such e therefore indexes a partial recursive function, whether or not the computation halts at x.",
+      "action": "Removed the impossible no-index alternative from the Marathi explanation and both proof cases, kept the two-case diagonal contradiction, and placed adjacent reader note OLCMP-012. All protected formulas, identifiers, macros and references remain source-identical."
+    }
+  ],
+  "qa": {
+    "units_checked": 21,
+    "unit_structural_failures": 0,
+    "formula_macro_token_identifier_reference_parity": true,
+    "semantic_reviews_passed": 21,
+    "cross_package_receipt": {
+      "path": "provenance/source-checkpoint-224/CROSS_PACKAGE_QA-WORKING.json",
+      "bytes": 1325,
+      "sha256": "71d5f1d3785593e8598c851b0b6723e9b86aef6cae2fbafe045c1de6c81e6972",
+      "segment_hashes_replayed": 2282,
+      "result": "passed"
+    },
+    "independent_human_or_native_speaker_review_claimed": false,
+    "tex_reader_build_run_for_increment": false
+  },
+  "synchronized_provenance": {
+    "receipt": "provenance/PROVENANCE_SYNC.json",
+    "canon_sources": 111,
+    "canon_passages": 156,
+    "term_decisions": 323,
+    "aligned_segments": 2282,
+    "expert_review_decisions": {
+      "records": 467,
+      "path": "provenance/EXPERT_REVIEW_DECISIONS.jsonl",
+      "bytes": 3189533,
+      "sha256": "7a7a2b73863237567874c93b18f8b86f662891e27cd8c5f0b1fdadcaa3b5a3cf"
+    },
+    "expert_review_occurrences": {
+      "records": 12344,
+      "path": "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl",
+      "bytes": 37001314,
+      "sha256": "f2d934755bfe69f220eaef63f79fda35b39e95c284b05c1c0d2b76f9b8cb2fbb"
+    },
+    "canonical_decision_qa": {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "bytes": 3534,
+      "sha256": "a9592dd5062d85adabf55ea601e78a84a729f20024137d040f5b0b88aeb60339",
+      "deterministic_second_run_identical": true
+    }
+  },
+  "latest_public_reader": {
+    "tag": "twenty-chapters-v0.9",
+    "last_unit": "OLP-0197",
+    "translated_units": 194,
+    "pages": 264,
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/twenty-chapters-v0.9",
+    "zenodo_doi": "10.5281/zenodo.22864626"
+  },
+  "packaging_observations": {
+    "path": "provenance/source-checkpoint-224/PACKAGING_OBSERVATIONS-TWENTY-CHAPTERS-v0.9.json",
+    "bytes": 2420,
+    "sha256": "c234df36fafd075fbe42ac2e323648681e3e164199aafe62126bc482277bffe2",
+    "disposition": "Apply both corrections at the next full-source package checkpoint; preserve inherited access."
+  },
+  "status": "source-complete-and-reviewed; coherent reader refresh pending"
+}

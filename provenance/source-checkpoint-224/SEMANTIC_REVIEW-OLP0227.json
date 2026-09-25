@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0227",
+  "method": "Same-agent English/Marathi close reading, exact formula, reference and macro replay, and reverse paraphrase of regularity and the closure definition. No independent human or native-speaker review is claimed.",
+  "scope": "Regular total functions, general recursive closure, and equality with total recursive functions.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6
+      ],
+      "reverse_paraphrase": "A total f(x,z-vector) is regular if every parameter vector admits an x with value zero. General recursive functions form the least class containing zero, successor and projections, closed under composition, primitive recursion and unbounded search only on regular functions.",
+      "checks": "The forall-parameters/existential-x order, zero condition, totality and every closure operation remain exact."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "General recursive functions are total; the other definition may use partial recursive intermediate functions but requires a total final result. Although general appears narrower, the two resulting classes coincide.",
+      "checks": "The apparent comparison direction and final equality claim, including both cross-references, are preserved."
+    }
+  ],
+  "source_observations": [],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "MR-P156 attests the regular-function headword but may concern another mathematical sense; the local zero-witness condition controls this use.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

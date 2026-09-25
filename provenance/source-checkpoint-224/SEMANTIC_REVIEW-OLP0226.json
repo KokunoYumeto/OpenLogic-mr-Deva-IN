@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0226",
+  "method": "Same-agent English/Marathi close reading, exact formula and macro replay, and case-by-case replay of the diagonal halting proof. No independent human or native-speaker review is claimed.",
+  "scope": "The two-argument halting function, normal-form indexing and the diagonal contradiction.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "The halting problem asks whether a numbered computation on an input stops. The normal form supplies a partial recursive function for each natural code e and indexes every partial recursive function. The total characteristic function h returns one exactly when that computation is defined, and h cannot be partial recursive.",
+      "checks": "The two arguments, output values, definedness polarity, and theorem conclusion are preserved. OLCMP-012 removes the impossible no-index exception from prose."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "Assuming h partial recursive, define d(y) as one when h(y,y)=0 and undefined otherwise. An index e_d for d yields contradictions in both h(e_d,e_d)=1 and h(e_d,e_d)=0 cases, so h is not partial recursive.",
+      "checks": "The never-satisfied x-not-equal-x mu term, both definedness equivalences and both diagonal cases are checked against the source formulas; the prose no-index branch is removed under OLCMP-012."
+    }
+  ],
+  "source_observations": [
+    "OLCMP-012 documents that the preceding T/U normal form gives every natural e a partial recursive function, so the frozen no-index branches cannot arise."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "The Marathi halting title is definition-controlled; no checked native source independently attests that full computability term.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

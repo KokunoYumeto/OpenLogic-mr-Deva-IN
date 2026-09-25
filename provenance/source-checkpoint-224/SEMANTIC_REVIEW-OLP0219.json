@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0219",
+  "method": "Same-agent English/Marathi close reading, reverse paraphrase, number-theoretic edge-case review and exact formula/macro/token comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Primitive-recursive divisibility and primality, zero-indexed prime enumeration, bounded construction of the next-prime function, its Euclidean bound, and an integer-division exercise.",
+  "samples": [
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "x divides y exactly when y is an integer multiple of x, equivalently when some z satisfies xz=y. If a witness exists, a witness no greater than y can be chosen, so bounded existential quantification defines the relation.",
+      "checks": "The displayed bounded formula is exact. OLCMP-006 corrects the frozen reversed division order, qualifies the remainder test for a positive divisor, and replaces the false every-witness bound by the sufficient bounded-witness statement, including x=y=0."
+    },
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "A prime natural number is neither zero nor one and has only one and itself as divisors. Checking all y at most x gives a bounded universal definition of Prime(x), hence a primitive-recursive relation.",
+      "checks": "The lower bound x≥2, implication, disjunction and bounded universal range are preserved exactly."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "p(x) is the prime at zero-based position x. Primitive recursion from p(0)=2 and p(x+1)=nextPrime(p(x)) enumerates the primes. nextPrime(x) is the least prime above x, searched only through x factorial plus one, so it is primitive recursive.",
+      "checks": "Zero indexing, successor recurrence, strict lower bound, inclusive factorial upper bound and the distinction between unbounded computability and bounded primitive recursiveness are all explicit."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "For inputs below two, the prime two meets the claimed bound. Otherwise multiply all primes at most x. If p+1 is composite, any prime divisor q of it divides none of those factors, so x<q<p+1; since p≤x factorial, q is at most x factorial plus one.",
+      "checks": "The Euclidean product, remainder-zero/remainder-one contradiction, strict lower bound and inclusive upper bound remain intact. OLCMP-007 supplies the two omitted small inputs before the frozen product argument."
+    },
+    {
+      "blocks": [
+        10
+      ],
+      "reverse_paraphrase": "The problem asks for an integer-division function d(x,y) defined by bounded minimization.",
+      "checks": "Both the requested operation and the construction method are preserved."
+    }
+  ],
+  "source_observations": [
+    "MR-P108 directly attests अविभाज्य संख्या, भाग जाणे and निःशेष भाग जाणे and includes the ordinary Euclidean prime argument.",
+    "MR-P140 directly attests क्रमगुणित, भागाकार and भागिले; OpenLogic controls the precise factorial bound and integer-division exercise.",
+    "T309 and T311 carry the established formula-controlled compounds परिबद्ध संख्यकीकरण and परिबद्ध लघुतमीकरण.",
+    "OLCMP-006 and OLCMP-007 record two deterministic repairs required for the divisibility justification and the small Euclidean cases."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact computability compounds for bounded quantification and minimization remain expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

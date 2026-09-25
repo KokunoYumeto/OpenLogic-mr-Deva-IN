@@ -1,0 +1,33 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0208",
+  "method": "Same-agent English/Marathi close reading and exact part-driver structural comparison. No independent human or native-speaker review is claimed.",
+  "scope": "The computability part title, editorial scope note and two unchanged chapter imports.",
+  "samples": [
+    {
+      "blocks": [
+        4
+      ],
+      "reverse_paraphrase": "Part: Computability.",
+      "checks": "The part identifier cmp is unchanged, and संगणनक्षमता remains distinct from countability गणनीय."
+    },
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "This part is based on Jeremy Avigad's notes on computability theory. So far only the recursive-functions chapter has exercises, and all the material would benefit from expansion with motivation, examples, details and exercises.",
+      "checks": "The attribution, current limitation to one exercise-bearing chapter, four requested kinds of expansion and non-prescriptive could-stand-to-be-expanded force are all preserved."
+    }
+  ],
+  "source_observations": [
+    "T044 and MR-P129 support संगणनक्षमता while explicitly separating it from countability गणनीय.",
+    "T061 and MR-P060 support the edition's established पुनरावर्ती wording; MR-P131 connects recursive functions with computation in authoritative Marathi exposition.",
+    "Both imported chapter identifiers remain byte-identical to the frozen source driver."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The proper-name spelling जेरेमी अविगॅड was transliterated from the frozen source and was not independently attested in Marathi.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

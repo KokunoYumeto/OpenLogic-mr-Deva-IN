@@ -1,0 +1,69 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0220",
+  "method": "Same-agent English/Marathi close reading, reverse paraphrase, coding-edge-case review and exact formula/macro/token/reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Prime-power coding of finite natural-number sequences and primitive-recursive length, append, element, concatenation, bounds, iterated concatenation, tail and subsequence operations.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "A finite sequence is coded by consecutive primes raised to each entry plus one; adding one distinguishes trailing zeros, and zero is chosen as the canonical empty code. Unique prime factorization makes the coding injective.",
+      "checks": "Every indexed prime, exponent shift, example sequence, empty-code value and uniqueness condition a_k≥1 is preserved. The official theorem title and sequence vocabulary are used."
+    },
+    {
+      "blocks": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "Length finds the final consecutive prime divisor with R and bounded minimization. Append multiplies by the next prime power. Element finds the first exponent whose next power fails to divide, returning zero beyond the sequence length.",
+      "checks": "The two empty codes, zero-based indexing, p_i versus p_(i+1), exponent offsets a+1/a+2, case branches and strict search bounds are exact."
+    },
+    {
+      "blocks": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "reverse_paraphrase": "Compact tuple notation iterates append. concat is obtained by primitive recursion through hconcat, which starts at s and appends entry (t)_n at each successor stage; infix concatenation abbreviates the result.",
+      "checks": "Tuple order and the hconcat recurrence are unchanged. OLCMP-009 calls the copied natural-number entries elements rather than the frozen source's inconsistent symbols."
+    },
+    {
+      "blocks": [
+        18,
+        19
+      ],
+      "reverse_paraphrase": "For positive length k and entries at most x, the code is bounded by p_(k−1) to the k(x+1). At zero length the bound is one. This permits a bounded-search specification of concatenation by length and elementwise agreement.",
+      "checks": "The positive-length prime bound and nested bounded universal conditions remain exact. OLCMP-008 supplies the omitted zero-length value needed when both input lengths vanish."
+    },
+    {
+      "blocks": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "reverse_paraphrase": "Exercises request concatenation of a coded sequence of sequences, removal of the first element, and a primitive-recursive fixed-length subsequence beginning at a given index; the proposition's reference is preserved.",
+      "checks": "The empty-tail value, element ranges, subsequence arguments, label and cross-reference options are exact."
+    }
+  ],
+  "source_observations": [
+    "MR-P147 directly attests क्रमिका, सांत क्रमिका and उपक्रमिका.",
+    "MR-P148 directly names अंकगणिताचे मूलभूत प्रमेय and states uniqueness of prime factors; MR-P149 independently supports अनन्य अवयवीकरण.",
+    "The operational compounds for numeric code, append, concatenation and sequence bound are fixed by the displayed formulas and remain expert-reviewable.",
+    "OLCMP-008 and OLCMP-009 record the zero-length bound completion and the natural-number element label correction."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact Marathi compounds for append, concatenation and sequence bound were not independently attested.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

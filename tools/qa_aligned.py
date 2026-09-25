@@ -4,7 +4,7 @@ def blocks(t):return re.split(r'\n\s*\n',t.strip())
 def mask_text(t):
     out='';start=0
     while True:
-        m=re.search(r'\\(text|textrm|intertext|emph)\{',t[start:])
+        m=re.search(r'\\(text|textrm|intertext|emph|mbox)\{',t[start:])
         if not m:return out+t[start:]
         a=start+m.start();j=start+m.end();depth=1
         while depth and j<len(t):
@@ -311,6 +311,22 @@ _DOCUMENTED_PROJECTIONS = {
         ('$\\Struct{A}^*$ मध्ये अशा उप',
          '$\\Struct{M^*}$ मध्ये अशा उप'),
         ('\\Struct{A}', '\\Struct{M}'),
+    ],
+    'OLP-0212': [
+        ('$h(x_0, \\dots, x_{n-1}) = f(y_0, \\dots, y_{k-1})$',
+         '$h(x_0, \\dots, x_{k-1}) = f(y_0, \\dots, y_{k-1})$'),
+    ],
+    'OLP-0218': [
+        ('$m_R(\\vec{x}, y+1) = y+1$',
+         '$m_R(\\vec{z}, y+1) = y+1$'),
+    ],
+    'OLP-0221': [
+        ('$g_f(s, k) = f((s)_0) \\concat\n  \\dots \\concat f((s)_{k-1})$',
+         '$g_f(s, k) = f((s)_0) \\concat\n  \\dots \\concat f((s)_k)$'),
+        ('g(s, 0) & = \\emptyseq\\\\',
+         'g(s, 0) & = f((s)_0)\\\\'),
+        ('g(s, k+1) & = g(s, k) \\concat f((s)_k)',
+         'g(s, k+1) & = g(s, k) \\concat f((s)_{k+1})'),
     ],
 }
 

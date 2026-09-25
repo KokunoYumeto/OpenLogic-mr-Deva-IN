@@ -1,0 +1,51 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0207",
+  "method": "Same-agent English/Marathi close reading; exact structural and projected-formula comparison; and replay of the finite-rank lemma and the compactness/back-and-forth proof of Lindström's theorem. No independent human or native-speaker review is claimed.",
+  "scope": "Lindström's finite-rank lemma and the maximality theorem for normal abstract logics with compactness and downward Löwenheim--Skolem.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "If one natural number n makes E invariant under n-equivalence, then E is first-order definable. For each structure M, conjoin its rank-at-most-n first-order theory into D_M and disjoin the finitely many relevant D_M over the E-models.",
+      "checks": "Finite vocabulary, quantifier-rank bound, both directions of the model-class equality and the finite conjunction/disjunction argument are preserved."
+    },
+    {
+      "blocks": [
+        9,
+        10
+      ],
+      "reverse_paraphrase": "A normal abstract logic with compactness and downward Löwenheim--Skolem is no more expressive than first-order logic. It suffices to find a finite n controlling each abstract sentence E, replacing n-equivalence by the finite back-and-forth relation in a finite relational language.",
+      "checks": "OLFOL-049 restores the normality hypothesis that the proof uses; the expressive-comparison direction and finite relational restriction remain exact."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "Assuming no such n, choose M_n and N_n with I_n but opposite E-values. Use disjoint isomorphic copies to form the M and N unions, build one coding structure A containing their sequence extensions and an ordered natural-number sort, and let D encode all indexed back-and-forth relations. Compactness applied to D plus a new constant above every standard element yields A-star with a non-standard n-star. The relations at n-star minus k give a genuine partial isomorphism between M_{n-star} and N_{n-star}, contradicting the preceding theorem.",
+      "checks": "The indexed domains, four displayed set-builders, J/I clauses, abstract satisfaction polarities, non-standard subtraction, tuple lengths and final partial-isomorphism contradiction were checked formula by formula. OLFOL-050 repairs the dropped n subscript; OLNOTE-001 explains a sufficient disjoint-copy choice; OLFOL-053 expands the source's compressed compactness step; OLFOL-051, 052 and 054 address notation and satisfaction."
+    }
+  ],
+  "source_observations": [
+    "OLFOL-049 restores the theorem's normality hypothesis.",
+    "OLFOL-050 restores only the n subscript in the subsequence phrase; OLNOTE-001 records the separately chosen sufficient disjoint-copy construction, supported by MR-P153/T320.",
+    "OLFOL-051 separates the coding structure A from the M-side union.",
+    "OLFOL-052 restores models_L for the two abstract E-claims.",
+    "OLFOL-053 explicitly mentions a fresh constant and lower-bound sentences as an expansion of the source's compressed existential compactness argument, not a proved source defect; finite satisfiability is not explicitly explained in the present target.",
+    "OLFOL-054 uses A-star consistently for the final coding model; QA projections reconstruct both frozen M-star spellings."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The source compresses the first-order coding of J and of predecessor subtraction at non-standard indices; the translation preserves that level of detail.",
+    "The theorem-name spelling, normal-logic labels and अधोगामी modifier remain expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}

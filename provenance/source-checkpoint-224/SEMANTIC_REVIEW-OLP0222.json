@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0222",
+  "method": "Same-agent English/Marathi close reading, reverse paraphrase and exact recurrence, case, formula, macro and token comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Simultaneous recursion, course-of-values recursion, a remainder-function exercise, and primitive recursion with changing parameters.",
+  "samples": [
+    {
+      "blocks": [
+        5
+      ],
+      "reverse_paraphrase": "Simultaneous recursion defines h_0 and h_1 together from both preceding values. Course-of-values recursion supplies g with the complete coded sequence of earlier h-values, with the empty sequence at y=0, and therefore permits reference to any earlier index k(x,y)<y.",
+      "checks": "Both base equations, both coupled successor equations, the all-prior-values tuple, empty-sequence convention and fallback case are preserved exactly."
+    },
+    {
+      "blocks": [
+        6
+      ],
+      "reverse_paraphrase": "Define the natural-number remainder function by course-of-values recursion: for positive y it is the value below y in x=z·y+r, and at y=0 its value is fixed as zero.",
+      "checks": "The official term शेष फल is used, and the strict bound, existential multiplier and totalizing zero-divisor convention are exact."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "A final recursion scheme changes the parameter vector through k at each predecessor stage: h(x,y+1) uses h(k(x),y). This scheme can still be simulated by ordinary primitive recursion.",
+      "checks": "The distinction between the outer x supplied to g and the transformed k(x) supplied to recursive h is preserved."
+    }
+  ],
+  "source_observations": [
+    "MR-P150 directly attests एकसामयिक in mathematics and शेष फल for remainder function.",
+    "MR-P151 directly attests प्राचल, and MR-P152 independently supports the simultaneity field.",
+    "No exact official headword was found for course-of-values recursion; मूल्यक्रम पुनरावर्तन is controlled by the explicit tuple of all earlier values.",
+    "No deterministic frozen-source correction was needed in this unit."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact compound मूल्यक्रम पुनरावर्तन remains expert-reviewable.",
+    "No TeX reader build was run for this source-only unit checkpoint."
+  ]
+}
