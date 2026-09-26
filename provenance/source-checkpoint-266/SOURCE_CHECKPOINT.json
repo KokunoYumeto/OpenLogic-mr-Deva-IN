@@ -1,0 +1,170 @@
+{
+  "schema": "openlogic-incremental-source-checkpoint/1",
+  "checkpoint_id": "mr-Deva-IN-source-266-20260926",
+  "generated_utc": "2026-09-26T01:57:56.480140Z",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "base_checkpoint": {
+    "path": "provenance/source-checkpoint-260/SOURCE_CHECKPOINT.json",
+    "bytes": 7723,
+    "sha256": "577ad7f6df0a8e2a19807dc4efbc41e7087ff39e188a9b5fbd73e6078083f2ad"
+  },
+  "scope": {
+    "translated_source_units": 266,
+    "total_source_units": 722,
+    "remaining_source_units": 456,
+    "aligned_content_segments": 2621,
+    "complete_source_chapters": 25,
+    "complete_reader_chapters": 20,
+    "first_incremental_unit": "OLP-0264",
+    "last_unit": "OLP-0269",
+    "next_unit": "OLP-0270",
+    "complete_edition": false
+  },
+  "translation_files": [
+    {
+      "unit_id": "OLP-0264",
+      "path": "mr/content/turing-machines/undecidability/undecidability.tex",
+      "bytes": 477,
+      "sha256": "ea681d841f2abe0335a70d3972f1b8c52af5b6b80a8e3178d8c920793fa29fcf",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0265",
+      "path": "mr/content/turing-machines/undecidability/introduction.tex",
+      "bytes": 12383,
+      "sha256": "fdf9568630d37a7a1a7c39c3e2c5a5fe0a2cffa20213f360afe57b4a4815267d",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0266",
+      "path": "mr/content/turing-machines/undecidability/enumerating-tms.tex",
+      "bytes": 12906,
+      "sha256": "4f2603a368a6f727bf0a475a17fe71b76f59a4234ecc213932b5b57147be60af",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0267",
+      "path": "mr/content/turing-machines/undecidability/universal-tm.tex",
+      "bytes": 14631,
+      "sha256": "68b75a6d77e1cabc07a1fe7c9e21bd3e77b5ec62a83a69b99ecda5c4b761e90c",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0268",
+      "path": "mr/content/turing-machines/undecidability/halting-problem.tex",
+      "bytes": 12864,
+      "sha256": "27c9f399d5b899b88bca8d3f42de1d28f0ba89134eb62c72aa67f3a705ea53a7",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0269",
+      "path": "mr/content/turing-machines/undecidability/decision-problem.tex",
+      "bytes": 4844,
+      "sha256": "670fdecb2deea09f126e47973d5651f2f302614ece52b65f383064c61add9d6a",
+      "role": "new translated source"
+    }
+  ],
+  "semantic_reviews": [
+    {
+      "unit_id": "OLP-0264",
+      "path": "provenance/source-checkpoint-266/SEMANTIC_REVIEW-OLP0264.json",
+      "bytes": 1262,
+      "sha256": "add7b4a8629c2b3698e6abd070352e25956e093e67dcfc84796c4f087ea22541"
+    },
+    {
+      "unit_id": "OLP-0265",
+      "path": "provenance/source-checkpoint-266/SEMANTIC_REVIEW-OLP0265.json",
+      "bytes": 3423,
+      "sha256": "5c4b932e8173dfda48a9f650f465c6460e200c0efed164f96e386931d712744c"
+    },
+    {
+      "unit_id": "OLP-0266",
+      "path": "provenance/source-checkpoint-266/SEMANTIC_REVIEW-OLP0266.json",
+      "bytes": 3428,
+      "sha256": "c22e288fc158132d1e2f6699bc7e15935ac56e074eb271d831024dda90ccedb3"
+    },
+    {
+      "unit_id": "OLP-0267",
+      "path": "provenance/source-checkpoint-266/SEMANTIC_REVIEW-OLP0267.json",
+      "bytes": 3991,
+      "sha256": "20dbde65a01df7ea10c89a868dc6c392b01ad1ac1b700fce2ab3eeb6a90c5383"
+    },
+    {
+      "unit_id": "OLP-0268",
+      "path": "provenance/source-checkpoint-266/SEMANTIC_REVIEW-OLP0268.json",
+      "bytes": 3467,
+      "sha256": "bd53f4ac36dffcd3f491ed8a9692043d4ec926dda22dc518c658873b7b7876fe"
+    },
+    {
+      "unit_id": "OLP-0269",
+      "path": "provenance/source-checkpoint-266/SEMANTIC_REVIEW-OLP0269.json",
+      "bytes": 2499,
+      "sha256": "678753a33b3b9a48b98c525ed2da4d4606b092206bffbea20706221c90a94788"
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "OLTUR-008",
+      "unit_id": "OLP-0268",
+      "classification": "confirmed-frozen-source-disciplined-machine-parenthetical-incomplete",
+      "finding": "The proof equates halting while scanning the first square with being 'disciplined' in a parenthetical. The cited earlier definition requires four conditions: a single designated halting state, halting at square one, preserving the end marker at square zero, and not attempting to move left from square zero. The one halting-position condition alone is not equivalent to that full definition.",
+      "action": "In Marathi, state the valid without-loss-of-generality choice of a fully disciplined S and then infer its first-square halting property. Add adjacent reader note OLTUR-008 naming the three other conditions without changing the diagonal argument or the composition construction."
+    }
+  ],
+  "qa": {
+    "units_checked": 6,
+    "unit_structural_failures": 0,
+    "formula_macro_token_identifier_reference_parity": true,
+    "semantic_reviews_passed": 6,
+    "cross_package_receipt": {
+      "path": "provenance/source-checkpoint-266/CROSS_PACKAGE_QA-WORKING.json",
+      "bytes": 1325,
+      "sha256": "6e373f4bea42fde239b9fe197a604e82625be6afadf9f5e7a8f903f4badc8608",
+      "segment_hashes_replayed": 2621,
+      "result": "passed"
+    },
+    "independent_human_or_native_speaker_review_claimed": false,
+    "reader_refresh_verified_for_increment": false
+  },
+  "synchronized_provenance": {
+    "receipt": "provenance/PROVENANCE_SYNC.json",
+    "canon_sources": 113,
+    "canon_passages": 158,
+    "term_decisions": 348,
+    "aligned_segments": 2621,
+    "expert_review_decisions": {
+      "records": 512,
+      "path": "provenance/EXPERT_REVIEW_DECISIONS.jsonl",
+      "bytes": 3552236,
+      "sha256": "4ab419c187b1f49309596fee4c4ff88090301b371595ca6436c87bd8ca7459e3"
+    },
+    "expert_review_occurrences": {
+      "records": 13560,
+      "path": "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl",
+      "bytes": 41193525,
+      "sha256": "55b14f463fdc2f80b84866f1f169ceb6a0f2ef1376dd3b9fe1f6affdefeecfe9"
+    },
+    "canonical_decision_qa": {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "bytes": 3535,
+      "sha256": "be7fba56b1f4a961ba7a7d5e8d3350dffedfd35bd839b8b441b934d13170fe8d",
+      "deterministic_second_run_identical": true
+    },
+    "inherited_reader_occurrence_locators_unchanged": 11402
+  },
+  "latest_public_reader": {
+    "tag": "twenty-chapters-v0.9",
+    "last_unit": "OLP-0197",
+    "translated_units": 194,
+    "pages": 264,
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/twenty-chapters-v0.9",
+    "zenodo_doi": "10.5281/zenodo.22864626"
+  },
+  "packaging_observations": {
+    "path": "provenance/source-checkpoint-233/PACKAGING_OBSERVATIONS-TWENTY-CHAPTERS-v0.9.json",
+    "bytes": 2420,
+    "sha256": "c234df36fafd075fbe42ac2e323648681e3e164199aafe62126bc482277bffe2",
+    "disposition": "Apply both corrections at the next full-source package checkpoint; preserve inherited access."
+  },
+  "status": "source-reviewed; undecidability chapter and coherent reader refresh pending"
+}

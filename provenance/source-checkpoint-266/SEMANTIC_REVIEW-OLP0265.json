@@ -1,0 +1,48 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0265",
+  "method": "Same-agent bilingual close reading, reverse paraphrase of each explanatory paragraph, and exact formula/macro/token/identifier comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Undecidability introduction: physical-function example, effective decision, cardinality, Halting Problem, and first-order validity decision problem.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6
+      ],
+      "reverse_paraphrase": "Counting radioactive decays in successive one-second intervals looks impossible to compute, but inability to imagine a method is not a proof. If the universe ends after finitely many seconds, the function has a finite domain and a sufficiently large table or Turing transition diagram computes it abstractly.",
+      "checks": "The nth-interval definition, finite-time hypothesis, distant-future contraction example, and finite-domain conclusion are retained without treating the physical speculation as established fact."
+    },
+    {
+      "blocks": [
+        7,
+        8
+      ],
+      "reverse_paraphrase": "A yes/no question is effectively decidable when its associated 1/0-valued function is effectively computable. A formal computation model is fixed to prove machine limitations; the Church–Turing thesis then extends the conclusion to effective procedures.",
+      "checks": "The isprime cases remain 1 for prime and 0 otherwise. The thesis is a separate premise for the informal effective-procedure claim, not a machine impossibility proof by itself."
+    },
+    {
+      "blocks": [
+        9
+      ],
+      "reverse_paraphrase": "Turing machines can be systematically listed and numbered, whereas all functions from natural numbers to natural numbers, even binary-valued ones, form a nonenumerable set. Therefore the Turing-computable functions constitute only a denumerable set and some functions are not Turing-computable.",
+      "checks": "!!{nonenumerable} and !!{denumerable} retain their source tokens and are glossed with distinct established Marathi cardinality terms."
+    },
+    {
+      "blocks": [
+        10,
+        11
+      ],
+      "reverse_paraphrase": "No single Turing machine always halts with the right 1/0 answer to whether an encoded machine M halts on n. That example helps show other undecidable problems, specifically validity of an arbitrary first-order formula. The historical decision problem and its independently established Church–Turing theorem name remain distinct from the Church–Turing thesis.",
+      "checks": "Both quantification over descriptions and inputs and the always-halts requirement remain explicit. First-order validity is not replaced by truth in one structure; the source's theorem label is preserved."
+    }
+  ],
+  "source_observations": [
+    "The English source has a grammatical omission in 'cannot effectively decided'; Marathi supplies the intended grammatical form without changing the claim.",
+    "The source calls the independent unsolvability result the Church–Turing Theorem. This is preserved as a named theorem and not conflated with the earlier thesis."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The chapter's remaining imported sections have not yet been translated or built into a reader."
+  ]
+}

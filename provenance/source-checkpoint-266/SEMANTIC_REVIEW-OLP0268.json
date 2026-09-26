@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0268",
+  "method": "Same-agent English/Marathi close reading, reverse paraphrase of both contradiction branches, and exact formula, token, macro and cross-reference checks. No independent human or native-speaker review is claimed.",
+  "scope": "The two-argument halting function, self-input diagonal function, machine-composition contradiction, theorem and four exercises.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "reverse_paraphrase": "A fixed machine enumeration gives each description an index. Cardinality ensures some noncomputable functions, but the halting function h is a specific 0/1 candidate: 0 when M_e does not halt on n and 1 when it does. The self-input function s has the same values at n=e. Its noncomputability will imply h's.",
+      "checks": "Both displayed case orders, the n-stroke input in the problem definition, and references to disciplined machines and composition are preserved."
+    },
+    {
+      "blocks": [
+        12,
+        13
+      ],
+      "reverse_paraphrase": "Assume a machine S computes s and choose a fully disciplined equivalent, hence one that halts on square one. Compose it with J, which halts on blank/zero and otherwise runs right forever. Let the composite be M_e. If M_e(e) halts, s(e)=1 makes S output one stroke and J diverge; if M_e(e) does not halt, s(e)=0 makes S output blank and J halt. Each case contradicts itself.",
+      "checks": "The e-self-input, direction of both case implications, blank representation of zero and composition S concat J are intact. Reader note OLTUR-008 corrects only the source's equivalence of one condition with the full four-clause disciplined definition."
+    },
+    {
+      "blocks": [
+        14,
+        15
+      ],
+      "reverse_paraphrase": "If a hypothetical H computes h, copy input e with a blank separator and feed (e,e) to H. This would compute s, contrary to the preceding lemma; hence h is not Turing-computable and the Halting Problem has no solver.",
+      "checks": "The copier reference and the reduction direction h to s remain exact."
+    },
+    {
+      "blocks": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "reverse_paraphrase": "The exercises ask about the fixed three-stroke input problem, reducing diagonal cases to off-diagonal ones, using machine descriptions instead of indices, and the partial self-input function that returns 1 only on halting inputs and is undefined otherwise.",
+      "checks": "The last exercise says the partial function is computable, in contrast to the total 0/1 s; both equality/inequality cases and the three-stroke count are preserved."
+    }
+  ],
+  "source_observations": [
+    "OLTUR-008: the frozen proof's parenthetical equates halting while scanning square one with being disciplined, but the earlier definition has four conjunctive conditions. Marathi chooses the full normal form and then uses the square-one consequence.",
+    "The frozen header comments name a different part/chapter, while the actual file path and olfileid identify the undecidability chapter. Those source comments remain unchanged in the aligned target."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "This chapter has not yet been built into the current public reader."
+  ]
+}

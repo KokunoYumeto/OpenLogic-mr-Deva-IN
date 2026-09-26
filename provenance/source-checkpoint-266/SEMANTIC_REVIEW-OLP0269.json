@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0269",
+  "method": "Same-agent bilingual close reading and reverse paraphrase of the reduction setup, with exact displayed entailment, formula, glossary-token and identifier checks. No independent human or native-speaker review is claimed.",
+  "scope": "First-order validity decision problem and the promised reduction from halting.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6
+      ],
+      "reverse_paraphrase": "First-order logic would be decidable if an effective method always determined validity of an arbitrary sentence. No Turing machine can always halt with the correct 1/0 validity answer, and the Church–Turing thesis extends that machine impossibility to all effective methods.",
+      "checks": "Sentence is translated as वाक्य rather than arbitrary open formula, all three !!{sentence} tokens remain, and the machine's always-halts requirement is explicit."
+    },
+    {
+      "blocks": [
+        7
+      ],
+      "reverse_paraphrase": "The proof strategy reduces the already-unsolvable halting problem to first-order validity: if a validity decider existed, it would compute h(e,w), which returns 1 for halting and 0 otherwise.",
+      "checks": "The reduction direction is halting to validity, with e as machine description/index and w as its input; no converse implication is asserted."
+    },
+    {
+      "blocks": [
+        8
+      ],
+      "reverse_paraphrase": "For each machine M and input w, effectively construct first-order sentences T(M,w), encoding instructions and input, and E(M,w), expressing eventual halting. Global validity of T(M,w) implies E(M,w) holds exactly when M halts on w.",
+      "checks": "Both sentence tokens, every T/E formula, the entailment marker, implication connective and iff direction remain source-exact."
+    }
+  ],
+  "source_observations": [
+    "The source describes h(e,w) as 'halting with output' although h is a total mathematical function; Marathi expresses the intended 1/0 values without attributing machine execution to the function itself.",
+    "This section promises the construction and verification in later sections; it does not yet prove the reduction."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The later representation and verification sections are still pending, so this unit alone is not a complete reduction proof."
+  ]
+}

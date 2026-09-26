@@ -1,0 +1,60 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0267",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of every paragraph and numbered simulation step, with formula, macro, token, identifier and reference parity. No independent human or native-speaker review is claimed.",
+  "scope": "Effective numbering of machine descriptions, indices, universal-machine theorem, and the tape-level simulation outline.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "An effectively usable enumeration maps natural-number indices to finite machine descriptions; a machine can receive more than one index because descriptions may list the same instructions in different orders.",
+      "checks": "Enumerable and denumerable remain separate source tokens, the surjection has domain Nat and description codomain, and M_e denotes the machine at index e in a fixed enumeration."
+    },
+    {
+      "blocks": [
+        8,
+        9
+      ],
+      "reverse_paraphrase": "Both index-to-description and description-to-an-index are effective. A machine can therefore write an indexed description in unary blocks; the number-of-states example decodes e and retains only its first block.",
+      "checks": "The Church–Turing thesis is used to pass from effective decoding to a Turing implementation. The example computes a property of the indexed machine, not a halting decision."
+    },
+    {
+      "blocks": [
+        10,
+        11
+      ],
+      "reverse_paraphrase": "A universal machine U on the pair (e,n) halts exactly when M_e on n halts. Whenever M_e produces natural-number output m, U produces the same m; otherwise the displayed partial function is undefined.",
+      "checks": "Both enumerated theorem clauses, iff direction, natural-number output qualification and partial-function arrow are preserved."
+    },
+    {
+      "blocks": [
+        12,
+        13,
+        14
+      ],
+      "reverse_paraphrase": "U decodes e after the n input, writes the simulated start state and head position 1, and stores each simulated tape symbol as a unary block of its numeric code: marker 1, blank 2, stroke 3. Each simulation iteration reads the current head position and symbol, finds the matching instruction, updates the symbol and state, changes the head-position counter for a left or right move, and repeats.",
+      "checks": "All seven numbered steps, the find-inst label, the three code numbers, the tape-shift footnote, and divergence when M_e never halts remain source-exact."
+    },
+    {
+      "blocks": [
+        15,
+        16
+      ],
+      "reverse_paraphrase": "When there is no instruction for the current state-symbol pair, the simulated machine halts and U decodes a tape of stroke codes to a single output block of length m. A non-stroke code in the output region makes U halt without a natural-number output.",
+      "checks": "The distinction between halting of U and defined natural-number output of f(e,n) remains explicit."
+    }
+  ],
+  "source_observations": [
+    "The proof presents an outline and itself says it omits tape-management subtleties. Its final decoding paragraph does not explicitly say how the initial end-marker code and blank-code blocks are bypassed before the 'other than three strokes' test. The Marathi preserves that sketch rather than claiming it is a fully specified transition program; expert review should test this boundary handling.",
+    "The source's 'Since the first element' sentence is grammatically incomplete; the Marathi supplies the intended statement that the first element records the number of states."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The tape-level construction has not been expanded into a formal transition program; the source gives only an outline.",
+    "This section has not yet been incorporated into a built reader."
+  ]
+}

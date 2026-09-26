@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 occurrences.
+Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 occurrences.
 
 ## T001 — set
 
@@ -1804,6 +1804,11 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T009-OLP-0179-B025` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166` | 237–240 |
 | `T009-OLP-0179-B027` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:200-222` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:180-202` | 237–240 |
 | `T009-OLP-0201-B008` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:29-32` | `mr/content/model-theory/interpolation/interpolation-proof.tex:28-31` | pending |
+| `T009-OLP-0265-B011` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:85-95` | `mr/content/turing-machines/undecidability/introduction.tex:102-116` | pending |
+| `T009-OLP-0269-B005` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:12-15` | `mr/content/turing-machines/undecidability/decision-problem.tex:12-17` | pending |
+| `T009-OLP-0269-B006` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:17-26` | `mr/content/turing-machines/undecidability/decision-problem.tex:19-34` | pending |
+| `T009-OLP-0269-B007` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:28-36` | `mr/content/turing-machines/undecidability/decision-problem.tex:36-51` | pending |
+| `T009-OLP-0269-B008` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:38-48` | `mr/content/turing-machines/undecidability/decision-problem.tex:53-71` | pending |
 
 ## T010 — truth / truth value
 
@@ -6305,6 +6310,7 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T048-OLP-0193-B012` | `OLP-0193` | 20.2 अंकगणिताची मानक प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:65-73` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:64-72` | 251–253 |
 | `T048-OLP-0193-B018` | `OLP-0193` | 20.2 अंकगणिताची मानक प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:152-172` | 251–253 |
 | `T048-OLP-0194-B009` | `OLP-0194` | 20.3 अमानक प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-47` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-46` | 253–254 |
+| `T048-OLP-0267-B005` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:12-22` | `mr/content/turing-machines/undecidability/universal-tm.tex:12-26` | pending |
 
 ## T049 — injective / injection
 
@@ -6990,6 +6996,12 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T056-OLP-0245-B008` | `OLP-0245` |  | `upstream/content/computability/computability-theory/complete-ce-sets.tex:29-37` | `mr/content/computability/computability-theory/complete-ce-sets.tex:31-41` | pending |
 | `T056-OLP-0248-B006` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:20-21` | `mr/content/computability/computability-theory/rice-theorem.tex:21-22` | pending |
 | `T056-OLP-0250-B006` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:21-26` | `mr/content/computability/computability-theory/application-fixed-point.tex:23-29` | pending |
+| `T056-OLP-0266-B004` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:9-10` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:9-10` | pending |
+| `T056-OLP-0266-B013` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:92-106` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:103-124` | pending |
+| `T056-OLP-0266-B016` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:124-135` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:143-157` | pending |
+| `T056-OLP-0266-B017` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:137-143` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:159-167` | pending |
+| `T056-OLP-0267-B005` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:12-22` | `mr/content/turing-machines/undecidability/universal-tm.tex:12-26` | pending |
+| `T056-OLP-0268-B005` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:12-16` | `mr/content/turing-machines/undecidability/halting-problem.tex:12-17` | pending |
 
 ## T057 — enumerable / countable / uncountable
 
@@ -7150,6 +7162,13 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T057-OLP-0206-B008` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:23-26` | `mr/content/model-theory/lindstrom/ls-property.tex:23-27` | pending |
 | `T057-OLP-0206-B015` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `mr/content/model-theory/lindstrom/ls-property.tex:110-127` | pending |
 | `T057-OLP-0207-B014` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:113-130` | pending |
+| `T057-OLP-0265-B009` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:55-64` | `mr/content/turing-machines/undecidability/introduction.tex:65-77` | pending |
+| `T057-OLP-0266-B005` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:12-19` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:12-21` | pending |
+| `T057-OLP-0266-B013` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:92-106` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:103-124` | pending |
+| `T057-OLP-0266-B016` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:124-135` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:143-157` | pending |
+| `T057-OLP-0266-B017` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:137-143` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:159-167` | pending |
+| `T057-OLP-0267-B005` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:12-22` | `mr/content/turing-machines/undecidability/universal-tm.tex:12-26` | pending |
+| `T057-OLP-0268-B006` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:18-23` | `mr/content/turing-machines/undecidability/halting-problem.tex:19-27` | pending |
 
 ## T058 — size / cardinality / equinumerous
 
@@ -7907,6 +7926,7 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T074-OLP-0247-B008` | `OLP-0247` |  | `upstream/content/computability/computability-theory/total.tex:41-52` | `mr/content/computability/computability-theory/total.tex:44-56` | pending |
 | `T074-OLP-0248-B005` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:12-18` | `mr/content/computability/computability-theory/rice-theorem.tex:12-19` | pending |
 | `T074-OLP-0248-B015` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:97-107` | `mr/content/computability/computability-theory/rice-theorem.tex:102-115` | pending |
+| `T074-OLP-0269-B007` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:28-36` | `mr/content/turing-machines/undecidability/decision-problem.tex:36-51` | pending |
 
 ## T075 — no larger than / smaller than (cardinal comparison)
 
@@ -10856,6 +10876,7 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T123-OLP-0201-B006` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:13-20` | `mr/content/model-theory/interpolation/interpolation-proof.tex:13-20` | pending |
 | `T123-OLP-0201-B017` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190` | `mr/content/model-theory/interpolation/interpolation-proof.tex:185-192` | pending |
 | `T123-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
+| `T123-OLP-0269-B008` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:38-48` | `mr/content/turing-machines/undecidability/decision-problem.tex:53-71` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -11209,6 +11230,10 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T126-OLP-0202-B007` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:34-44` | `mr/content/model-theory/interpolation/definability.tex:33-43` | pending |
 | `T126-OLP-0202-B008` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:46-57` | `mr/content/model-theory/interpolation/definability.tex:45-57` | pending |
 | `T126-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
+| `T126-OLP-0269-B005` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:12-15` | `mr/content/turing-machines/undecidability/decision-problem.tex:12-17` | pending |
+| `T126-OLP-0269-B006` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:17-26` | `mr/content/turing-machines/undecidability/decision-problem.tex:19-34` | pending |
+| `T126-OLP-0269-B007` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:28-36` | `mr/content/turing-machines/undecidability/decision-problem.tex:36-51` | pending |
+| `T126-OLP-0269-B008` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:38-48` | `mr/content/turing-machines/undecidability/decision-problem.tex:53-71` | pending |
 
 ## T127 — propositional constant
 
@@ -12372,6 +12397,10 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T144-OLP-0189-B019` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `mr/content/model-theory/basics/partial-iso.tex:144-162` | 246–248 |
 | `T144-OLP-0189-B020` | `OLP-0189` | 19.6 आंशिक समरूपणे | `upstream/content/model-theory/basics/partial-iso.tex:161-165` | `mr/content/model-theory/basics/partial-iso.tex:165-169` | 246–248 |
 | `T144-OLP-0192-B005` | `OLP-0192` | 20.1 परिचय | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12-39` | `mr/content/model-theory/models-of-arithmetic/introduction.tex:12-37` | 250–251 |
+| `T144-OLP-0266-B013` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:92-106` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:103-124` | pending |
+| `T144-OLP-0266-B014` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:108-117` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:126-136` | pending |
+| `T144-OLP-0266-B016` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:124-135` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:143-157` | pending |
+| `T144-OLP-0267-B008` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:34-42` | `mr/content/turing-machines/undecidability/universal-tm.tex:41-52` | pending |
 
 ## T145 — evaluation / evaluation function
 
@@ -16659,6 +16688,8 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T209-OLP-0196-B035` | `OLP-0196` | 20.5 PA ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:242-263` | 256–259 |
 | `T209-OLP-0197-B006` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | 259–260 |
 | `T209-OLP-0197-B008` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:41-76` | 259–260 |
+| `T209-OLP-0265-B009` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:55-64` | `mr/content/turing-machines/undecidability/introduction.tex:65-77` | pending |
+| `T209-OLP-0267-B005` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:12-22` | `mr/content/turing-machines/undecidability/universal-tm.tex:12-26` | pending |
 
 ## T210 — truth-functionally complete / expressively complete
 
@@ -17596,6 +17627,7 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T229-OLP-0173-B011` | `OLP-0173` | 17.6 संरचनेचे आकारमान व्यक्त करणे | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:63-70` | `mr/content/first-order-logic/models-theories/size-of-structures.tex:64-70` | 229–230 |
 | `T229-OLP-0177-B013` | `OLP-0177` | 18.3 द्वितीय-क्रम तर्कशास्त्र | `upstream/content/first-order-logic/beyond/second-order-logic.tex:183-202` | `mr/content/first-order-logic/beyond/second-order-logic.tex:172-190` | 232–235 |
 | `T229-OLP-0187-B005` | `OLP-0187` | 19.4 समरूपी रचना | `upstream/content/model-theory/basics/isomorphism.tex:12-24` | `mr/content/model-theory/basics/isomorphism.tex:12-23` | 243–245 |
+| `T229-OLP-0269-B008` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:38-48` | `mr/content/turing-machines/undecidability/decision-problem.tex:53-71` | pending |
 
 ## T230 — strict linear order
 
@@ -17926,6 +17958,7 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T239-OLP-0220-B009` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:48-72` | `mr/content/computability/recursive-functions/sequences.tex:45-70` | pending |
 | `T239-OLP-0220-B013` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:96-107` | `mr/content/computability/recursive-functions/sequences.tex:94-105` | pending |
 | `T239-OLP-0220-B018` | `OLP-0220` |  | `upstream/content/computability/recursive-functions/sequences.tex:144-154` | `mr/content/computability/recursive-functions/sequences.tex:141-153` | pending |
+| `T239-OLP-0265-B007` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:33-43` | `mr/content/turing-machines/undecidability/introduction.tex:37-49` | pending |
 
 ## T240 — Zermelo–Fraenkel set theory with Choice / ZFC
 
@@ -19712,6 +19745,32 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T287-OLP-0263-B006` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:23-26` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:22-25` | pending |
 | `T287-OLP-0263-B007` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:28-33` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:27-32` | pending |
 | `T287-OLP-0263-B008` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:35-45` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:34-45` | pending |
+| `T287-OLP-0264-B004` | `OLP-0264` |  | `upstream/content/turing-machines/undecidability/undecidability.tex:8-8` | `mr/content/turing-machines/undecidability/undecidability.tex:8-8` | pending |
+| `T287-OLP-0265-B004` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:9-10` | `mr/content/turing-machines/undecidability/introduction.tex:9-10` | pending |
+| `T287-OLP-0265-B005` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:12-19` | `mr/content/turing-machines/undecidability/introduction.tex:12-21` | pending |
+| `T287-OLP-0265-B006` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:21-31` | `mr/content/turing-machines/undecidability/introduction.tex:23-35` | pending |
+| `T287-OLP-0265-B007` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:33-43` | `mr/content/turing-machines/undecidability/introduction.tex:37-49` | pending |
+| `T287-OLP-0265-B008` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:45-53` | `mr/content/turing-machines/undecidability/introduction.tex:51-63` | pending |
+| `T287-OLP-0265-B009` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:55-64` | `mr/content/turing-machines/undecidability/introduction.tex:65-77` | pending |
+| `T287-OLP-0265-B010` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:66-83` | `mr/content/turing-machines/undecidability/introduction.tex:79-100` | pending |
+| `T287-OLP-0265-B011` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:85-95` | `mr/content/turing-machines/undecidability/introduction.tex:102-116` | pending |
+| `T287-OLP-0266-B015` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:119-122` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:138-141` | pending |
+| `T287-OLP-0266-B016` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:124-135` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:143-157` | pending |
+| `T287-OLP-0266-B017` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:137-143` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:159-167` | pending |
+| `T287-OLP-0267-B009` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:44-55` | `mr/content/turing-machines/undecidability/universal-tm.tex:54-71` | pending |
+| `T287-OLP-0267-B011` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:59-68` | `mr/content/turing-machines/undecidability/universal-tm.tex:75-87` | pending |
+| `T287-OLP-0268-B006` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:18-23` | `mr/content/turing-machines/undecidability/halting-problem.tex:19-27` | pending |
+| `T287-OLP-0268-B009` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:41-48` | `mr/content/turing-machines/undecidability/halting-problem.tex:46-55` | pending |
+| `T287-OLP-0268-B011` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:60-62` | `mr/content/turing-machines/undecidability/halting-problem.tex:67-69` | pending |
+| `T287-OLP-0268-B012` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:64-85` | `mr/content/turing-machines/undecidability/halting-problem.tex:71-104` | pending |
+| `T287-OLP-0268-B013` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:87-96` | `mr/content/turing-machines/undecidability/halting-problem.tex:106-119` | pending |
+| `T287-OLP-0268-B014` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:98-101` | `mr/content/turing-machines/undecidability/halting-problem.tex:121-125` | pending |
+| `T287-OLP-0268-B015` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:103-113` | `mr/content/turing-machines/undecidability/halting-problem.tex:127-144` | pending |
+| `T287-OLP-0268-B019` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:138-147` | `mr/content/turing-machines/undecidability/halting-problem.tex:181-192` | pending |
+| `T287-OLP-0269-B005` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:12-15` | `mr/content/turing-machines/undecidability/decision-problem.tex:12-17` | pending |
+| `T287-OLP-0269-B006` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:17-26` | `mr/content/turing-machines/undecidability/decision-problem.tex:19-34` | pending |
+| `T287-OLP-0269-B007` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:28-36` | `mr/content/turing-machines/undecidability/decision-problem.tex:36-51` | pending |
+| `T287-OLP-0269-B008` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:38-48` | `mr/content/turing-machines/undecidability/decision-problem.tex:53-71` | pending |
 
 ## T288 — Turing machine / primitive recursion
 
@@ -19840,6 +19899,50 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T288-OLP-0263-B006` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:23-26` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:22-25` | pending |
 | `T288-OLP-0263-B007` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:28-33` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:27-32` | pending |
 | `T288-OLP-0263-B008` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:35-45` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:34-45` | pending |
+| `T288-OLP-0265-B006` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:21-31` | `mr/content/turing-machines/undecidability/introduction.tex:23-35` | pending |
+| `T288-OLP-0265-B008` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:45-53` | `mr/content/turing-machines/undecidability/introduction.tex:51-63` | pending |
+| `T288-OLP-0265-B009` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:55-64` | `mr/content/turing-machines/undecidability/introduction.tex:65-77` | pending |
+| `T288-OLP-0265-B010` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:66-83` | `mr/content/turing-machines/undecidability/introduction.tex:79-100` | pending |
+| `T288-OLP-0266-B004` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:9-10` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:9-10` | pending |
+| `T288-OLP-0266-B005` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:12-19` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:12-21` | pending |
+| `T288-OLP-0266-B006` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:21-32` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:23-37` | pending |
+| `T288-OLP-0266-B010` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:48-74` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:53-85` | pending |
+| `T288-OLP-0266-B012` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:79-90` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:90-101` | pending |
+| `T288-OLP-0266-B013` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:92-106` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:103-124` | pending |
+| `T288-OLP-0266-B014` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:108-117` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:126-136` | pending |
+| `T288-OLP-0266-B015` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:119-122` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:138-141` | pending |
+| `T288-OLP-0266-B016` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:124-135` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:143-157` | pending |
+| `T288-OLP-0266-B017` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:137-143` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:159-167` | pending |
+| `T288-OLP-0266-B018` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:145-151` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:169-177` | pending |
+| `T288-OLP-0267-B004` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:9-10` | `mr/content/turing-machines/undecidability/universal-tm.tex:9-10` | pending |
+| `T288-OLP-0267-B005` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:12-22` | `mr/content/turing-machines/undecidability/universal-tm.tex:12-26` | pending |
+| `T288-OLP-0267-B006` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:24-28` | `mr/content/turing-machines/undecidability/universal-tm.tex:28-33` | pending |
+| `T288-OLP-0267-B007` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:30-32` | `mr/content/turing-machines/undecidability/universal-tm.tex:35-39` | pending |
+| `T288-OLP-0267-B008` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:34-42` | `mr/content/turing-machines/undecidability/universal-tm.tex:41-52` | pending |
+| `T288-OLP-0267-B009` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:44-55` | `mr/content/turing-machines/undecidability/universal-tm.tex:54-71` | pending |
+| `T288-OLP-0267-B011` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:59-68` | `mr/content/turing-machines/undecidability/universal-tm.tex:75-87` | pending |
+| `T288-OLP-0267-B012` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:70-87` | `mr/content/turing-machines/undecidability/universal-tm.tex:89-115` | pending |
+| `T288-OLP-0267-B013` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:89-94` | `mr/content/turing-machines/undecidability/universal-tm.tex:117-125` | pending |
+| `T288-OLP-0267-B014` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:96-121` | `mr/content/turing-machines/undecidability/universal-tm.tex:127-156` | pending |
+| `T288-OLP-0267-B015` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:123-130` | `mr/content/turing-machines/undecidability/universal-tm.tex:158-169` | pending |
+| `T288-OLP-0267-B016` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:132-137` | `mr/content/turing-machines/undecidability/universal-tm.tex:171-177` | pending |
+| `T288-OLP-0268-B005` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:12-16` | `mr/content/turing-machines/undecidability/halting-problem.tex:12-17` | pending |
+| `T288-OLP-0268-B006` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:18-23` | `mr/content/turing-machines/undecidability/halting-problem.tex:19-27` | pending |
+| `T288-OLP-0268-B007` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:25-34` | `mr/content/turing-machines/undecidability/halting-problem.tex:29-38` | pending |
+| `T288-OLP-0268-B008` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:36-39` | `mr/content/turing-machines/undecidability/halting-problem.tex:40-44` | pending |
+| `T288-OLP-0268-B009` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:41-48` | `mr/content/turing-machines/undecidability/halting-problem.tex:46-55` | pending |
+| `T288-OLP-0268-B010` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:50-58` | `mr/content/turing-machines/undecidability/halting-problem.tex:57-65` | pending |
+| `T288-OLP-0268-B011` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:60-62` | `mr/content/turing-machines/undecidability/halting-problem.tex:67-69` | pending |
+| `T288-OLP-0268-B012` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:64-85` | `mr/content/turing-machines/undecidability/halting-problem.tex:71-104` | pending |
+| `T288-OLP-0268-B013` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:87-96` | `mr/content/turing-machines/undecidability/halting-problem.tex:106-119` | pending |
+| `T288-OLP-0268-B015` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:103-113` | `mr/content/turing-machines/undecidability/halting-problem.tex:127-144` | pending |
+| `T288-OLP-0268-B016` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:115-120` | `mr/content/turing-machines/undecidability/halting-problem.tex:146-154` | pending |
+| `T288-OLP-0268-B017` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:122-126` | `mr/content/turing-machines/undecidability/halting-problem.tex:156-163` | pending |
+| `T288-OLP-0268-B018` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:128-136` | `mr/content/turing-machines/undecidability/halting-problem.tex:165-179` | pending |
+| `T288-OLP-0268-B019` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:138-147` | `mr/content/turing-machines/undecidability/halting-problem.tex:181-192` | pending |
+| `T288-OLP-0269-B006` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:17-26` | `mr/content/turing-machines/undecidability/decision-problem.tex:19-34` | pending |
+| `T288-OLP-0269-B007` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:28-36` | `mr/content/turing-machines/undecidability/decision-problem.tex:36-51` | pending |
+| `T288-OLP-0269-B008` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:38-48` | `mr/content/turing-machines/undecidability/decision-problem.tex:53-71` | pending |
 
 ## T289 — Tennenbaum (surname, in Tennenbaum's theorem)
 
@@ -20551,6 +20654,7 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T304-OLP-0254-B009` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:86-108` | `mr/content/turing-machines/machines-computations/introduction.tex:82-102` | pending |
 | `T304-OLP-0262-B010` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:72-82` | `mr/content/turing-machines/machines-computations/variants.tex:74-86` | pending |
 | `T304-OLP-0263-B005` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:12-21` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:12-20` | pending |
+| `T304-OLP-0265-B008` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:45-53` | `mr/content/turing-machines/undecidability/introduction.tex:51-63` | pending |
 
 ## T305 — notation for a primitive recursive function; composition and recursion notation
 
@@ -21099,6 +21203,10 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T318-OLP-0263-B006` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:23-26` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:22-25` | pending |
 | `T318-OLP-0263-B007` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:28-33` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:27-32` | pending |
 | `T318-OLP-0263-B008` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:35-45` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:34-45` | pending |
+| `T318-OLP-0265-B008` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:45-53` | `mr/content/turing-machines/undecidability/introduction.tex:51-63` | pending |
+| `T318-OLP-0267-B008` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:34-42` | `mr/content/turing-machines/undecidability/universal-tm.tex:41-52` | pending |
+| `T318-OLP-0267-B012` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:70-87` | `mr/content/turing-machines/undecidability/universal-tm.tex:89-115` | pending |
+| `T318-OLP-0269-B006` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:17-26` | `mr/content/turing-machines/undecidability/decision-problem.tex:19-34` | pending |
 
 ## T319 — defined or undefined at an input / partial equality / unbounded mu-search operator / non-halting computation
 
@@ -21192,6 +21300,11 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T319-OLP-0258-B022` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:230-243` | pending |
 | `T319-OLP-0260-B007` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:37-50` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:37-54` | pending |
 | `T319-OLP-0261-B006` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50` | `mr/content/turing-machines/machines-computations/combining-machines.tex:24-52` | pending |
+| `T319-OLP-0267-B011` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:59-68` | `mr/content/turing-machines/undecidability/universal-tm.tex:75-87` | pending |
+| `T319-OLP-0267-B014` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:96-121` | `mr/content/turing-machines/undecidability/universal-tm.tex:127-156` | pending |
+| `T319-OLP-0267-B015` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:123-130` | `mr/content/turing-machines/undecidability/universal-tm.tex:158-169` | pending |
+| `T319-OLP-0267-B016` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:132-137` | `mr/content/turing-machines/undecidability/universal-tm.tex:171-177` | pending |
+| `T319-OLP-0268-B019` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:138-147` | `mr/content/turing-machines/undecidability/halting-problem.tex:181-192` | pending |
 
 ## T320 — disjoint domains of chosen isomorphic copies / sufficient union construction
 
@@ -21317,6 +21430,22 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T321-OLP-0250-B008` | `OLP-0250` |  | `upstream/content/computability/computability-theory/application-fixed-point.tex:34-60` | `mr/content/computability/computability-theory/application-fixed-point.tex:37-65` | pending |
 | `T321-OLP-0251-B005` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:12-32` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:12-33` | pending |
 | `T321-OLP-0251-B007` | `OLP-0251` |  | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:49-55` | `mr/content/computability/computability-theory/def-functions-self-reference.tex:51-58` | pending |
+| `T321-OLP-0267-B005` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:12-22` | `mr/content/turing-machines/undecidability/universal-tm.tex:12-26` | pending |
+| `T321-OLP-0267-B006` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:24-28` | `mr/content/turing-machines/undecidability/universal-tm.tex:28-33` | pending |
+| `T321-OLP-0267-B007` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:30-32` | `mr/content/turing-machines/undecidability/universal-tm.tex:35-39` | pending |
+| `T321-OLP-0267-B008` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:34-42` | `mr/content/turing-machines/undecidability/universal-tm.tex:41-52` | pending |
+| `T321-OLP-0267-B009` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:44-55` | `mr/content/turing-machines/undecidability/universal-tm.tex:54-71` | pending |
+| `T321-OLP-0267-B011` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:59-68` | `mr/content/turing-machines/undecidability/universal-tm.tex:75-87` | pending |
+| `T321-OLP-0267-B012` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:70-87` | `mr/content/turing-machines/undecidability/universal-tm.tex:89-115` | pending |
+| `T321-OLP-0268-B005` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:12-16` | `mr/content/turing-machines/undecidability/halting-problem.tex:12-17` | pending |
+| `T321-OLP-0268-B007` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:25-34` | `mr/content/turing-machines/undecidability/halting-problem.tex:29-38` | pending |
+| `T321-OLP-0268-B008` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:36-39` | `mr/content/turing-machines/undecidability/halting-problem.tex:40-44` | pending |
+| `T321-OLP-0268-B010` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:50-58` | `mr/content/turing-machines/undecidability/halting-problem.tex:57-65` | pending |
+| `T321-OLP-0268-B012` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:64-85` | `mr/content/turing-machines/undecidability/halting-problem.tex:71-104` | pending |
+| `T321-OLP-0268-B013` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:87-96` | `mr/content/turing-machines/undecidability/halting-problem.tex:106-119` | pending |
+| `T321-OLP-0268-B017` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:122-126` | `mr/content/turing-machines/undecidability/halting-problem.tex:156-163` | pending |
+| `T321-OLP-0268-B018` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:128-136` | `mr/content/turing-machines/undecidability/halting-problem.tex:165-179` | pending |
+| `T321-OLP-0268-B019` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:138-147` | `mr/content/turing-machines/undecidability/halting-problem.tex:181-192` | pending |
 
 ## T322 — halting problem / halting function / total code numbering
 
@@ -21379,6 +21508,23 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T322-OLP-0259-B013` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:68-77` | `mr/content/turing-machines/machines-computations/halting-states.tex:66-74` | pending |
 | `T322-OLP-0261-B005` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:12-23` | `mr/content/turing-machines/machines-computations/combining-machines.tex:12-22` | pending |
 | `T322-OLP-0263-B008` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:35-45` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:34-45` | pending |
+| `T322-OLP-0265-B010` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:66-83` | `mr/content/turing-machines/undecidability/introduction.tex:79-100` | pending |
+| `T322-OLP-0268-B004` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:9-10` | `mr/content/turing-machines/undecidability/halting-problem.tex:9-10` | pending |
+| `T322-OLP-0268-B006` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:18-23` | `mr/content/turing-machines/undecidability/halting-problem.tex:19-27` | pending |
+| `T322-OLP-0268-B007` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:25-34` | `mr/content/turing-machines/undecidability/halting-problem.tex:29-38` | pending |
+| `T322-OLP-0268-B008` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:36-39` | `mr/content/turing-machines/undecidability/halting-problem.tex:40-44` | pending |
+| `T322-OLP-0268-B009` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:41-48` | `mr/content/turing-machines/undecidability/halting-problem.tex:46-55` | pending |
+| `T322-OLP-0268-B010` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:50-58` | `mr/content/turing-machines/undecidability/halting-problem.tex:57-65` | pending |
+| `T322-OLP-0268-B011` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:60-62` | `mr/content/turing-machines/undecidability/halting-problem.tex:67-69` | pending |
+| `T322-OLP-0268-B012` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:64-85` | `mr/content/turing-machines/undecidability/halting-problem.tex:71-104` | pending |
+| `T322-OLP-0268-B013` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:87-96` | `mr/content/turing-machines/undecidability/halting-problem.tex:106-119` | pending |
+| `T322-OLP-0268-B014` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:98-101` | `mr/content/turing-machines/undecidability/halting-problem.tex:121-125` | pending |
+| `T322-OLP-0268-B015` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:103-113` | `mr/content/turing-machines/undecidability/halting-problem.tex:127-144` | pending |
+| `T322-OLP-0268-B016` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:115-120` | `mr/content/turing-machines/undecidability/halting-problem.tex:146-154` | pending |
+| `T322-OLP-0268-B017` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:122-126` | `mr/content/turing-machines/undecidability/halting-problem.tex:156-163` | pending |
+| `T322-OLP-0268-B018` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:128-136` | `mr/content/turing-machines/undecidability/halting-problem.tex:165-179` | pending |
+| `T322-OLP-0268-B019` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:138-147` | `mr/content/turing-machines/undecidability/halting-problem.tex:181-192` | pending |
+| `T322-OLP-0269-B007` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:28-36` | `mr/content/turing-machines/undecidability/decision-problem.tex:36-51` | pending |
 
 ## T323 — regular function / general recursive function / total function
 
@@ -22121,6 +22267,13 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T338-OLP-0262-B008` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:62-65` | `mr/content/turing-machines/machines-computations/variants.tex:63-67` | pending |
 | `T338-OLP-0262-B009` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:67-70` | `mr/content/turing-machines/machines-computations/variants.tex:69-72` | pending |
 | `T338-OLP-0262-B010` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:72-82` | `mr/content/turing-machines/machines-computations/variants.tex:74-86` | pending |
+| `T338-OLP-0266-B005` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:12-19` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:12-21` | pending |
+| `T338-OLP-0266-B006` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:21-32` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:23-37` | pending |
+| `T338-OLP-0266-B013` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:92-106` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:103-124` | pending |
+| `T338-OLP-0267-B012` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:70-87` | `mr/content/turing-machines/undecidability/universal-tm.tex:89-115` | pending |
+| `T338-OLP-0267-B013` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:89-94` | `mr/content/turing-machines/undecidability/universal-tm.tex:117-125` | pending |
+| `T338-OLP-0267-B014` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:96-121` | `mr/content/turing-machines/undecidability/universal-tm.tex:127-156` | pending |
+| `T338-OLP-0267-B015` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:123-130` | `mr/content/turing-machines/undecidability/universal-tm.tex:158-169` | pending |
 
 ## T339 — state diagram / machine configuration / machine table / doubler
 
@@ -22194,6 +22347,7 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T339-OLP-0261-B010` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:74-89` | `mr/content/turing-machines/machines-computations/combining-machines.tex:76-91` | pending |
 | `T339-OLP-0261-B012` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:97-125` | `mr/content/turing-machines/machines-computations/combining-machines.tex:99-128` | pending |
 | `T339-OLP-0261-B013` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:127-150` | `mr/content/turing-machines/machines-computations/combining-machines.tex:130-153` | pending |
+| `T339-OLP-0265-B006` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:21-31` | `mr/content/turing-machines/undecidability/introduction.tex:23-35` | pending |
 
 ## T340 — unary representation of numbers / one-symbol stroke coding
 
@@ -22240,6 +22394,16 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T340-OLP-0260-B013` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:91-94` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:96-100` | pending |
 | `T340-OLP-0261-B008` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:58-68` | `mr/content/turing-machines/machines-computations/combining-machines.tex:60-70` | pending |
 | `T340-OLP-0262-B008` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:62-65` | `mr/content/turing-machines/machines-computations/variants.tex:63-67` | pending |
+| `T340-OLP-0267-B008` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:34-42` | `mr/content/turing-machines/undecidability/universal-tm.tex:41-52` | pending |
+| `T340-OLP-0267-B009` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:44-55` | `mr/content/turing-machines/undecidability/universal-tm.tex:54-71` | pending |
+| `T340-OLP-0267-B012` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:70-87` | `mr/content/turing-machines/undecidability/universal-tm.tex:89-115` | pending |
+| `T340-OLP-0267-B013` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:89-94` | `mr/content/turing-machines/undecidability/universal-tm.tex:117-125` | pending |
+| `T340-OLP-0267-B015` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:123-130` | `mr/content/turing-machines/undecidability/universal-tm.tex:158-169` | pending |
+| `T340-OLP-0267-B016` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:132-137` | `mr/content/turing-machines/undecidability/universal-tm.tex:171-177` | pending |
+| `T340-OLP-0268-B008` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:36-39` | `mr/content/turing-machines/undecidability/halting-problem.tex:40-44` | pending |
+| `T340-OLP-0268-B012` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:64-85` | `mr/content/turing-machines/undecidability/halting-problem.tex:71-104` | pending |
+| `T340-OLP-0268-B013` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:87-96` | `mr/content/turing-machines/undecidability/halting-problem.tex:106-119` | pending |
+| `T340-OLP-0268-B016` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:115-120` | `mr/content/turing-machines/undecidability/halting-problem.tex:146-154` | pending |
 
 ## T341 — dedicated halting state / accepting state / rejecting state
 
@@ -22317,6 +22481,8 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T342-OLP-0261-B014` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:152-156` | `mr/content/turing-machines/machines-computations/combining-machines.tex:155-160` | pending |
 | `T342-OLP-0261-B015` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:158-164` | `mr/content/turing-machines/machines-computations/combining-machines.tex:162-168` | pending |
 | `T342-OLP-0261-B016` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:166-171` | `mr/content/turing-machines/machines-computations/combining-machines.tex:170-175` | pending |
+| `T342-OLP-0268-B009` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:41-48` | `mr/content/turing-machines/undecidability/halting-problem.tex:46-55` | pending |
+| `T342-OLP-0268-B012` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:64-85` | `mr/content/turing-machines/undecidability/halting-problem.tex:71-104` | pending |
 
 ## T343 — sequential combination of Turing machines / transfer at a missing transition
 
@@ -22356,6 +22522,10 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T343-OLP-0261-B014` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:152-156` | `mr/content/turing-machines/machines-computations/combining-machines.tex:155-160` | pending |
 | `T343-OLP-0261-B015` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:158-164` | `mr/content/turing-machines/machines-computations/combining-machines.tex:162-168` | pending |
 | `T343-OLP-0261-B016` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:166-171` | `mr/content/turing-machines/machines-computations/combining-machines.tex:170-175` | pending |
+| `T343-OLP-0268-B009` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:41-48` | `mr/content/turing-machines/undecidability/halting-problem.tex:46-55` | pending |
+| `T343-OLP-0268-B012` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:64-85` | `mr/content/turing-machines/undecidability/halting-problem.tex:71-104` | pending |
+| `T343-OLP-0268-B013` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:87-96` | `mr/content/turing-machines/undecidability/halting-problem.tex:106-119` | pending |
+| `T343-OLP-0268-B015` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:103-113` | `mr/content/turing-machines/undecidability/halting-problem.tex:127-144` | pending |
 
 ## T344 — nondeterministic Turing machine / transition relation with multiple successors
 
@@ -22387,6 +22557,145 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | `T344-OLP-0262-B005` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:12-27` | `mr/content/turing-machines/machines-computations/variants.tex:12-27` | pending |
 | `T344-OLP-0262-B006` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:29-39` | `mr/content/turing-machines/machines-computations/variants.tex:29-40` | pending |
 | `T344-OLP-0262-B009` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:67-70` | `mr/content/turing-machines/machines-computations/variants.tex:69-72` | pending |
+
+## T345 — decision problem / first-order validity decision problem / Church–Turing theorem
+
+**Chosen rendering/action:** निर्णय समस्या / प्रथम-क्रम वैधतेची निर्णय समस्या / चर्च–ट्यूरिंग प्रमेय
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** MR-P130 directly attests निर्णेय and निर्णेयता; formal-logic passages support वैधता and the first-order formula register, while MR-P131 supports the Church and Turing name forms. OpenLogic's introduction defines the historical decision problem as whether an arbitrary first-order formula is valid and names its unsolvability result the Church–Turing Theorem. The Marathi compound titles are source-controlled and are kept distinct from the Church–Turing thesis (T318); no consulted passage directly attests the complete historical titles.
+
+**Rationale:** MR-P130 directly attests निर्णेय and निर्णेयता; formal-logic passages support वैधता and the first-order formula register, while MR-P131 supports the Church and Turing name forms. OpenLogic's introduction defines the historical decision problem as whether an arbitrary first-order formula is valid and names its unsolvability result the Church–Turing Theorem. The Marathi compound titles are source-controlled and are kept distinct from the Church–Turing thesis (T318); no consulted passage directly attests the complete historical titles.
+
+**Authorities actually checked:**
+
+- `MR-P019` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 1 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P020` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 2 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P130` — गणितशास्त्र परिभाषा कोश — decidable and decidability. https://shabdakosh.marathi.gov.in/ananya-glossary/9/d (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary entry is lexical and OpenLogic supplies the algorithmic relation context.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+
+**Alternatives:**
+
+- निर्णयाची समस्या / प्रथम-क्रम वैधता-समस्या / चर्च–ट्यूरिंग प्रमेय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- एंटशाइडुंग्सप्रॉब्लेम / चर्च–ट्यूरिंग सिद्धांत — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is निर्णय समस्या a clear historical label for first-order validity, and does प्रमेय distinguish the undecidability result from the earlier चर्च–ट्यूरिंग प्रबंध?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T345-OLP-0265-B011` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:85-95` | `mr/content/turing-machines/undecidability/introduction.tex:102-116` | pending |
+| `T345-OLP-0269-B004` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:9-10` | `mr/content/turing-machines/undecidability/decision-problem.tex:9-10` | pending |
+| `T345-OLP-0269-B005` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:12-15` | `mr/content/turing-machines/undecidability/decision-problem.tex:12-17` | pending |
+| `T345-OLP-0269-B006` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:17-26` | `mr/content/turing-machines/undecidability/decision-problem.tex:19-34` | pending |
+| `T345-OLP-0269-B007` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:28-36` | `mr/content/turing-machines/undecidability/decision-problem.tex:36-51` | pending |
+| `T345-OLP-0269-B008` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:38-48` | `mr/content/turing-machines/undecidability/decision-problem.tex:53-71` | pending |
+
+## T346 — standard Turing machine / renaming states and tape symbols by positive integers
+
+**Chosen rendering/action:** मानक ट्यूरिंग यंत्र / अवस्था आणि फितीवरील चिन्हांचे धन पूर्णांकांनी पुनर्नामन
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** OpenLogic explicitly defines a 'standard' machine in this section as one whose state and symbol labels are positive integers, while warning that the label is not standard terminology. Relabeling preserves its behavior and is what makes a countability argument possible despite arbitrary underlying label objects. The Marathi मानक uses the edition's established mathematical register and the full compound is source-defined; no consulted passage independently attests this specialist headword.
+
+**Rationale:** OpenLogic explicitly defines a 'standard' machine in this section as one whose state and symbol labels are positive integers, while warning that the label is not standard terminology. Relabeling preserves its behavior and is what makes a countability argument possible despite arbitrary underlying label objects. The Marathi मानक uses the edition's established mathematical register and the full compound is source-defined; no consulted passage independently attests this specialist headword.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P074` — गणितशास्त्र परिभाषा कोश — C glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+
+**Alternatives:**
+
+- प्रमाण ट्यूरिंग यंत्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- निश्चित रूपातील ट्यूरिंग यंत्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- क्रमांकित अवस्था-चिन्हांचे ट्यूरिंग यंत्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does मानक remain clear as a local normalization convention, with the source's warning that the term itself is not standard?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T346-OLP-0266-B006` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:21-32` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:23-37` | pending |
+| `T346-OLP-0266-B010` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:48-74` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:53-85` | pending |
+| `T346-OLP-0266-B012` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:79-90` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:90-101` | pending |
+| `T346-OLP-0266-B013` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:92-106` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:103-124` | pending |
+| `T346-OLP-0266-B014` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:108-117` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:126-136` | pending |
+| `T346-OLP-0266-B016` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:124-135` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:143-157` | pending |
+| `T346-OLP-0266-B018` | `OLP-0266` |  | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:145-151` | `mr/content/turing-machines/undecidability/enumerating-tms.tex:169-177` | pending |
+
+## T347 — universal Turing machine / simulation of an indexed machine / coded tape configuration
+
+**Chosen rendering/action:** सार्वत्रिक ट्यूरिंग यंत्र / निर्देशांकित यंत्राचे अनुकरण / सांकेतिक फीतस्थिती
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** OpenLogic defines a universal machine U extensionally: on encoded pair (e,n), it halts iff the indexed machine M_e halts on n and agrees with any natural-number output. Its proof outlines a coded description, current state, head position and tape symbols. The checked passages support Turing-machine, computability, index and tape components; सार्वत्रिक and the full simulation phrase are source-controlled constructions rather than claimed independently attested Turing-specific headwords.
+
+**Rationale:** OpenLogic defines a universal machine U extensionally: on encoded pair (e,n), it halts iff the indexed machine M_e halts on n and agrees with any natural-number output. Its proof outlines a coded description, current state, head position and tape symbols. The checked passages support Turing-machine, computability, index and tape components; सार्वत्रिक and the full simulation phrase are source-controlled constructions rather than claimed independently attested Turing-specific headwords.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P129` — गणितशास्त्र परिभाषा कोश — computable, calculable and countable. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic's definition controls the compound संगणनक्षम रचना.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P155` — संख्या शास्त्र परिभाषा कोश — index. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/12/i (`checked_supports`): Official Directorate of Languages statistics-glossary result read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's sense is statistical, not a computability index.
+- `MR-P158` — tape — मराठी शब्दकोश. https://shabdakosh.marathi.gov.in/index.php/node/221091 (`checked_supports`): Official Directorate of Languages search extraction read; direct page open unavailable. Limitation: Observation hash is not an origin-page hash; the headword does not attest Turing-machine usage or read-write head terminology.
+
+**Alternatives:**
+
+- विश्वव्यापी ट्यूरिंग यंत्र / निर्देशांकित यंत्राचे अनुकरण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सर्वसाधारण ट्यूरिंग यंत्र / संकेतबद्ध फीतस्थिती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- युनिव्हर्सल ट्यूरिंग मशीन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does सार्वत्रिक यंत्र clearly express behavioral simulation of every indexed machine, including non-halting and nonnumeric-output cases, without implying that it decides halting?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T347-OLP-0267-B004` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:9-10` | `mr/content/turing-machines/undecidability/universal-tm.tex:9-10` | pending |
+| `T347-OLP-0267-B010` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:57-57` | `mr/content/turing-machines/undecidability/universal-tm.tex:73-73` | pending |
+| `T347-OLP-0267-B011` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:59-68` | `mr/content/turing-machines/undecidability/universal-tm.tex:75-87` | pending |
+| `T347-OLP-0267-B012` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:70-87` | `mr/content/turing-machines/undecidability/universal-tm.tex:89-115` | pending |
+| `T347-OLP-0267-B013` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:89-94` | `mr/content/turing-machines/undecidability/universal-tm.tex:117-125` | pending |
+| `T347-OLP-0267-B014` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:96-121` | `mr/content/turing-machines/undecidability/universal-tm.tex:127-156` | pending |
+| `T347-OLP-0267-B015` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:123-130` | `mr/content/turing-machines/undecidability/universal-tm.tex:158-169` | pending |
+| `T347-OLP-0267-B016` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:132-137` | `mr/content/turing-machines/undecidability/universal-tm.tex:171-177` | pending |
+
+## T348 — three-stroke halting (3-Halt) problem / diagonal self-input halting test
+
+**Chosen rendering/action:** तीन-रेघांची थांबण्याची (3-Halt) समस्या / स्वतःच्या निर्देशांकावरील थांबणे तपासणे
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** OpenLogic's exercise defines 3-Halt as deciding, for an arbitrary machine, halting on a fixed tape input of exactly three stroke symbols. Its diagonal proof separately tests M_e on its own index e. The Marathi wording exposes the fixed three-stroke input and does not conflate that exercise with the general two-argument Halting Problem. The checked passages support machine, input, index and decidability components; no complete 3-Halt headword is claimed from them.
+
+**Rationale:** OpenLogic's exercise defines 3-Halt as deciding, for an arbitrary machine, halting on a fixed tape input of exactly three stroke symbols. Its diagonal proof separately tests M_e on its own index e. The Marathi wording exposes the fixed three-stroke input and does not conflate that exercise with the general two-argument Halting Problem. The checked passages support machine, input, index and decidability components; no complete 3-Halt headword is claimed from them.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P129` — गणितशास्त्र परिभाषा कोश — computable, calculable and countable. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic's definition controls the compound संगणनक्षम रचना.
+- `MR-P130` — गणितशास्त्र परिभाषा कोश — decidable and decidability. https://shabdakosh.marathi.gov.in/ananya-glossary/9/d (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary entry is lexical and OpenLogic supplies the algorithmic relation context.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P155` — संख्या शास्त्र परिभाषा कोश — index. https://shabdakosh.marathi.gov.in/index.php/ananya-glossary/12/i (`checked_supports`): Official Directorate of Languages statistics-glossary result read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's sense is statistical, not a computability index.
+
+**Alternatives:**
+
+- त्रि-थांबण्याची समस्या — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- तीन आदानांवरील थांबण्याची समस्या (misstates one input of three strokes) — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- ३-थांबणे समस्या — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does तीन-रेघांची make clear that every candidate machine receives one fixed input consisting of three strokes?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T348-OLP-0268-B016` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:115-120` | `mr/content/turing-machines/undecidability/halting-problem.tex:146-154` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -26468,6 +26777,31 @@ Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLTUR-007-OLP-0261` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:36-44` | `mr/content/turing-machines/machines-computations/combining-machines.tex:37-46` | pending |
+
+## OLTUR-008 — confirmed-frozen-source-disciplined-machine-parenthetical-incomplete
+
+**Chosen rendering/action:** In Marathi, state the valid without-loss-of-generality choice of a fully disciplined S and then infer its first-square halting property. Add adjacent reader note OLTUR-008 naming the three other conditions without changing the diagonal argument or the composition construction.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The proof equates halting while scanning the first square with being 'disciplined' in a parenthetical. The cited earlier definition requires four conditions: a single designated halting state, halting at square one, preserving the end marker at square zero, and not attempting to move left from square zero. The one halting-position condition alone is not equivalent to that full definition.
+
+**Rationale:** The proof equates halting while scanning the first square with being 'disciplined' in a parenthetical. The cited earlier definition requires four conditions: a single designated halting state, halting at square one, preserving the end marker at square zero, and not attempting to move left from square zero. The one halting-position condition alone is not equivalent to that full definition. Chosen action: In Marathi, state the valid without-loss-of-generality choice of a fully disciplined S and then infer its first-square halting property. Add adjacent reader note OLTUR-008 naming the three other conditions without changing the diagonal argument or the composition construction.
+
+**Authorities actually checked:**
+
+- `OLTUR-008-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-008. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Repeat the parenthetical equivalence literally, leaving it at odds with the prior four-clause definition — `rejected`: Not chosen; the source finding and recorded action control.
+- Assume only the first-square property and continue to label the machine disciplined — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the Marathi infer first-square halting from the full disciplined normal form rather than defining that normal form by just one condition?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-008-OLP-0268` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:66-70` | `mr/content/turing-machines/undecidability/halting-problem.tex:72-79` | pending |
 
 ## Deferred prospective decisions
 

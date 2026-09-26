@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 43 urgent/high decisions and
-1109 current occurrences. Normal and low items remain in the full index.
+1110 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -1488,6 +1488,7 @@ This view contains 43 urgent/high decisions and
 | `T304-OLP-0254-B009` | `OLP-0254` |  | 86-108 | 82-102 | pending |
 | `T304-OLP-0262-B010` | `OLP-0262` |  | 72-82 | 74-86 | pending |
 | `T304-OLP-0263-B005` | `OLP-0263` |  | 12-21 | 12-20 | pending |
+| `T304-OLP-0265-B008` | `OLP-0265` |  | 45-53 | 51-63 | pending |
 
 ## MRSIZ-001 — mathematically equivalent but implicit reindexing → Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing.
 

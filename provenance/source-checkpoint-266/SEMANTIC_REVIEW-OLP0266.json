@@ -1,0 +1,51 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0266",
+  "method": "Same-agent bilingual close reading, reverse paraphrase of all prose, and exact diagram, sequence, formula, token, identifier and reference comparison. No independent human or native-speaker review is claimed.",
+  "scope": "Enumeration of Turing machines, normalization of labels, finite integer-list coding, and the noncomputability cardinality proof.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        10,
+        12
+      ],
+      "reverse_paraphrase": "Each machine has finite state, alphabet and defined-transition data, but state objects may originally be arbitrary, even real numbers. Behavior survives systematic renaming. The two Even-machine diagrams differ only by names; positive-integer state and symbol names give the displayed standard version.",
+      "checks": "Both TikZ transition diagrams and the numbered diagram retain their node labels, arrows, transition symbols and direction. The term 'standard' is explicitly local and its footnote says the terminology is not itself standard."
+    },
+    {
+      "blocks": [
+        13,
+        14
+      ],
+      "reverse_paraphrase": "For a standard machine, list state count and states, symbol count and symbols, start state, then one coded five-tuple for each defined transition. Direction codes are 1 left, 2 right and 3 stay. The exact sample sequence encodes the displayed Even machine.",
+      "checks": "The tuple Q, Sigma, q0, delta, the partial transition equation, all three direction codes and every integer in the sample sequence are unchanged."
+    },
+    {
+      "blocks": [
+        15,
+        16,
+        17
+      ],
+      "reverse_paraphrase": "Finite sequences of positive integers are enumerable; standard-machine descriptions form a subset, and relabeling gives a standard machine for every Turing-computable natural-number function. All natural-number functions are nonenumerable, so some cannot be computed by any Turing machine.",
+      "checks": "The two cross-references, both domain/codomain pairs, the three canonical symbol codes, and the distinction between enumerable descriptions and nonenumerable functions remain intact."
+    },
+    {
+      "blocks": [
+        18
+      ],
+      "reverse_paraphrase": "The exercise asks for an alternative machine description without explicitly listing states and alphabet symbols, plus an argument that a standard machine in the proposed sense can carry out the computation of each machine.",
+      "checks": "The source's awkward wording 'machine can be computed by' is rendered as carrying out its computation; no claim that a machine object is itself a numerical function is introduced."
+    }
+  ],
+  "source_observations": [
+    "The opening countability claim requires the section's later qualification: literal state-label objects are unrestricted, so the argument counts machines up to renaming or their standard representatives. This qualification is explicit in the Marathi.",
+    "The final exercise says 'every Turing machine can be computed by a standard machine'; the intended behavior-simulation reading is expressed without changing the exercise's requested construction."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "This section has not yet been incorporated into a built reader."
+  ]
+}
