@@ -1,0 +1,123 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: representable-comp
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{rpc}
+\olsection{$\Th{Q}$ मध्ये निरूपणीय फलने संगणनक्षम असतात}
+
+$\Th{Q}$ मध्ये निरूपणीय असलेले प्रत्येक फलन संगणनक्षम आहे,
+हे आपण सिद्ध करू. त्याआधी $\Th{Q}$ मध्ये निरूपणीय फलनांविषयी
+एक साहाय्यक विधान सिद्ध करावे लागेल.
+
+\begin{lem}\ollabel{lem:rep-q}
+  $f(x_0,
+  \dots, x_k)$ हे $\Th{Q}$ मध्ये निरूपणीय असेल, तर
+  असे !!a{formula}~$!A_f(x_0, \dots, x_k, y)$ असते की
+  \[
+  \Th{Q} \Proves !A_f(\num{n_0}, \dots, \num{n_k}, \num{m})
+  \quad\text{iff}\quad m = f(n_0, \dots, n_k).
+  \]
+\end{lem}
+
+\begin{proof}
+  ``तर'' हा भाग
+\olref[int]{defn:representable-fn}\olref[int]{defn:rep:a} मधून मिळतो.
+``तरच'' हा भाग पुढीलप्रमाणे दिसतो: समजा $\Th{Q} \Proves !A_f(\num{n_0},
+\dots, \num{n_k}, \num{m})$, पण $m \neq f(n_0, \dots, n_k)$.
+$l = f(n_0, \dots, n_k)$ असे धरू.
+\olref[int]{defn:representable-fn}\olref[int]{defn:rep:a} नुसार $\Th{Q}
+\Proves !A_f(\num{n_0}, \dots, \num{n_k}, \num{l})$.
+\olref[int]{defn:representable-fn}\olref[int]{defn:rep:b} नुसार
+$\lforall[y][(!A_f(\num{n_0}, \dots, \num{n_k}, y) \lif \num{l} =
+y)]$. तर्कशास्त्र वापरून आणि $\Th{Q} \Proves
+!A_f(\num{n_0}, \dots, \num{n_k}, \num{m})$ या गृहीतकावरून
+$\Th{Q} \Proves \eq[\num{l}][\num{m}]$ मिळते. दुसरीकडे,
+\olref[bre]{lem:q-proves-neq} नुसार $\Th{Q} \Proves
+\eq/[\num{l}][\num{m}]$. म्हणून $\Th{Q}$ विसंगत ठरेल.
+पण ते अशक्य आहे: मानक प्रतिमान $\Th{Q}$ ची पूर्ती करते
+(पाहा \olref[int][def]{def:standard-model}), म्हणजे
+$\Sat{N}{\Th{Q}}$; आणि निर्दोषता प्रमेयानुसार प्रत्येक
+पूर्ततायोग्य उपपत्ती सुसंगत असते
+(\tagrefs{prfAX/{fol:axd:sou:cor:consistency-soundness},
+prfSC/{fol:seq:sou:cor:consistency-soundness},
+prfND/{fol:ntd:sou:cor:consistency-soundness},
+prfTab/{fol:tab:sou:cor:consistency-soundness}}).
+\end{proof}
+
+\begin{lem}
+$\Th{Q}$ मध्ये निरूपणीय असलेले प्रत्येक फलन संगणनक्षम आहे.
+\end{lem}
+
+\begin{proof}
+हे खरे असण्यामागील अंतर्ज्ञानी कल्पना आधी पाहू. $f$ चे मूल्य
+काढण्यासाठी पुढील पद्धत वापरू. अंकगणिताच्या भाषेतील सर्व संभाव्य
+!!{derivation}s~$\delta$ यांची यादी करायची; हे यांत्रिकरीत्या
+करता येते. प्रत्येकासाठी, ती $!A_f(\num{n_0}, \dots,
+\num{n_k}, \num{m})$ या रूपाच्या !!a{formula} ची
+!!a{derivation} आहे का ते तपासायचे (हे $f$ चे $\Th{Q}$
+मधील निरूपण करणारे !!{formula} आहे; पाहा \olref{lem:rep-q}).
+असेल, तर \olref{lem:rep-q} नुसार $m = f(n_0, \dots, n_k)$;
+म्हणजे $f$ चे मूल्य सापडले. हा शोध संपतो, कारण
+$\Th{Q} \Proves !A_f(\num{n_0}, \dots, \num{n_k},
+\num{f(n_0, \dots, n_k)})$; त्यामुळे योग्य प्रकारची
+$\delta$ अखेरीस सापडते.
+
+ही मांडणी अजून पूर्णपणे नेमकी नाही: आपली पद्धत फक्त संख्यांवर
+न चालता !!{derivation}s आणि !!{formula}s वर चालते, आणि
+``सर्व संभाव्य !!{derivation}s ची यादी'' यांत्रिकरीत्या कशी
+करता येते हे आपण अजून स्पष्ट केलेले नाही. पण आपण पाहिलेच आहे
+की पदे, !!{formula}s आणि !!{derivation}s यांना गोडेल संख्यांनी
+संकेतबद्ध करता येते. संगणनाचे नेमके प्रतिमान म्हणून सामान्य
+पुनरावर्ती फलनेही आपण मांडली आहेत. तसेच
+$\Prf[\Th{Q}](d,y)$ हा संबंध (आदिम) पुनरावर्ती आहे:
+नैसर्गिक निगमनातील थेट निष्पत्ती-संकेतांकाचा अर्थ घेतल्यास,
+$d$ ही $\Th{Q}$ च्या स्वयंसिद्धकांपासून $y$ ही गोडेल संख्या
+असलेल्या !!{formula} च्या !!a{derivation} ची गोडेल संख्या
+असेल तेव्हाच हा संबंध खरा असतो. आपल्याला आणखी लागणारी आदिम
+पुनरावर्ती फलने म्हणजे $\fn{num}$
+(\olref[art][trm]{prop:num-primrec}) आणि $\fn{Subst}$
+(\olref[art][sub]{prop:subst-primrec}). यांपासून लघुतमीकरणाने
+$f$ परिभाषित करता येते; म्हणून $f$ पुनरावर्ती आहे.
+
+प्रथम पुढील व्याख्या करा:
+\begin{multline*}
+  A(n_0, \dots, n_k, m) = \\
+  \fn{Subst}(\fn{Subst}(\dots\fn{Subst}(\Gn{!A_f}, \fn{num}(n_0), \Gn{x_0}),\\
+  \dots),
+  \fn{num}(n_k),  \Gn{x_k}), \fn{num}(m), \Gn{y})
+\end{multline*}
+हे गुंतागुंतीचे दिसते, पण हे फक्त $A(n_0, \dots, n_k,
+m) = \Gn{!A_f(\num{n_0}, \dots, \num{n_k}, \num{m})}$
+हे फलन आहे.
+
+आता $R(n_0, \dots, n_k, s)$ हा संबंध पाहा. $(s)_0$ ही
+$!A_f(\num{n_0}, \dots, \num{n_k}, \num{(s)_1})$ च्या
+$\Th{Q}$ पासूनच्या !!a{derivation} ची गोडेल संख्या असेल
+तेव्हा हा संबंध खरा असतो:
+\[
+R(n_0, \dots, n_k, s) \quad\text{iff}\quad \Prf[\Th{Q}]((s)_0, A(n_0,
+\dots, n_k, (s)_1))
+\]
+$R(n_0, \dots, n_k, s)$ खरा असणारा एखादा $s$ मिळाला,
+तर $(s)_0$ आणि $(s)_1$ ही संख्यांची जोडी मिळाली आहे:
+$(s)_0$ ही $!A_f(\num{n_0}, \dots,
+\num{n_k}, \num{(s)_1})$ च्या !!a{derivation} ची गोडेल संख्या
+असते. म्हणून $s$ शोधणे म्हणजे अनौपचारिक पुराव्यातील $d$ आणि
+$m$ ही जोडी शोधण्यासारखे आहे. असा $s$ ``शोधणारे'' संगणनक्षम
+फलन नियमित लघुतमीकरणाने परिभाषित करता येते. लक्षात घ्या,
+$R$ साठी हा शोध नियमित आहे: प्रत्येक $n_0$, \dots, $n_k$
+साठी $\Th{Q} \Proves !A_f(\num{n_0}, \dots,
+\num{n_k}, \num{f(n_0, \dots, n_k)})$ ची !!a{derivation}~$\delta$
+असते. म्हणून $s = \tuple{\Gn{\delta}, f(n_0, \dots, n_k)}$
+घेतल्यास $R(n_0, \dots, n_k, s)$ खरा असतो. त्यामुळे $f$
+पुढीलप्रमाणे लिहिता येते:
+\[
+f(n_0,\dots,n_{k}) = (\umin{s}{R(n_0, \dots, n_k, s)})_1.
+\]
+\end{proof}
+
+\end{document}

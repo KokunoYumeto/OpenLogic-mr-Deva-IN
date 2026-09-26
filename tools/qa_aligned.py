@@ -505,6 +505,16 @@ _DOCUMENTED_PROJECTIONS = {
          '  \\bexists{s < \\fn{sequenceBound}(x,x)}{(}',
          '\\Prf[\\Gamma](x, y) & \\defiff \\bexists{s < \\fn{sequenceBound}(x,x)}{(}'),
     ],
+    'OLP-0291': [
+        # OLINC-024: use the already defined representing formula name.
+        ('$!A_f(x_0, \\dots, x_k, y)$ असते की',
+         '$!A(x_0, \\dots, x_k, y)$ असते की'),
+        # OLINC-024: the output position is a numeral, not a bare number.
+        ('$!A_f(\\num{n_0}, \\dots,\n'
+         '\\num{n_k}, \\num{(s)_1})$ च्या !!a{derivation}',
+         '$A_f(\\num{n_0}, \\dots,\n'
+         '\\num{n_k}, (s)_1)$ च्या !!a{derivation}'),
+    ],
 }
 
 
