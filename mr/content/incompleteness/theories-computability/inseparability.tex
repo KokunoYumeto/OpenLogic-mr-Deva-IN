@@ -1,0 +1,57 @@
+% Part: incompleteness
+% Chapter: theories-computability
+% Section: inseparability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{tcp}{ins}
+
+\olsection{$\Th{Q}$ मध्ये सिद्ध होणारी आणि ज्यांचे निषेध सिद्ध होतात
+  अशा वाक्यांचे संच संगणनक्षमपणे अविलगनीय आहेत}
+
+
+$\Th{\bar Q}$ हा ज्या वाक्यांचे {\em निषेध} $\Th{Q}$ मध्ये
+सिद्ध होतात त्यांचा संच असू द्या, म्हणजे
+$\Th{\bar Q} = \Setabs{!A}{\Th{Q} \Proves
+  \lnot !A}$. विभक्त संच $A$ आणि $B$ यांना
+संगणनक्षमपणे अविलगनीय म्हणतात, जर असा कोणताही
+संगणनक्षम संच $C$ नसेल की $A \subseteq C$ आणि
+$B \subseteq \Complement{C}$.
+
+\begin{lem}
+$\Th{Q}$ आणि $\Th{\bar Q}$ हे संगणनक्षमपणे अविलगनीय आहेत.
+\end{lem}
+
+\begin{proof}
+$C$ हा असा संगणनक्षम संच आहे असे समजू की
+$\Th{Q} \subseteq C$ आणि
+$\Th{\bar Q} \subseteq \Complement{C}$.
+$R(x,y)$ हा पुढील संबंध असू द्या:
+\begin{quote}
+$x$ हा $!D(u)$ या सूत्राचा संकेतांक आहे आणि
+$!D(\num y)$ हे $C$ मध्ये आहे.
+\end{quote}
+सूत्र-संकेतांक ओळखणे, संख्यांकाचे प्रतिस्थापन करणे आणि
+या संचातील सदस्यत्व तपासणे संगणनक्षम असल्यामुळे $R(x,y)$
+संगणनक्षम आहे. आता तो सार्वत्रिक संगणनक्षम संबंध आहे असे दाखवू;
+त्यातून व्याघात मिळेल.
+
+$S(y)$ हा संगणनक्षम संबंध असून त्याचे $\Th{Q}$ मध्ये
+$!D_S(u)$ या सूत्राने निरूपण होते असे समजू. मग
+\begin{eqnarray*}
+S(n) & \lif & \Th{Q} \Proves !D_S(\num n) \\
+& \lif & !D_S(\num n) \in C
+\end{eqnarray*}
+आणि
+\begin{eqnarray*}
+\lnot S(n) & \lif & \Th{Q} \Proves \lnot !D_S(\num n) \\
+& \lif & !D_S(\num n) \in \Th{\bar Q} \\
+& \lif & !D_S(\num n) \not\in C
+\end{eqnarray*}
+असे मिळते. म्हणून $S(y)$ हे
+$R(\#(!D_S(u)),y)$ शी सममूल्य आहे.
+\end{proof}
+
+\end{document}

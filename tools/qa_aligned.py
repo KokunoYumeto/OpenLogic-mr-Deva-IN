@@ -572,6 +572,15 @@ _DOCUMENTED_PROJECTIONS = {
         # is the hypothesis needed by the cited decidability lemma.
         ('!!{axiomatizable} असेल, तर', '!!{axiomatized} असेल, तर'),
     ],
+    'OLP-0309': [
+        # OLINC-050: S is a metatheoretic relation on natural numbers.
+        (r'S(n) & \lif & \Th{Q} \Proves !D_S(\num n)',
+         r'S(\num n) & \lif & \Th{Q} \Proves !D_S(\num n)'),
+        (r'\lnot S(n) & \lif & \Th{Q} \Proves \lnot !D_S(\num n)',
+         r'\lnot S(\num n) & \lif & \Th{Q} \Proves \lnot !D_S(\num n)'),
+        # OLINC-051: code D_S(u), the formula with free variable u.
+        (r'$R(\#(!D_S(u)),y)$', r'$R(\#(!D_S(\num u)),y)$'),
+    ],
 }
 
 
