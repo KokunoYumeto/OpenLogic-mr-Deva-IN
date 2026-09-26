@@ -567,6 +567,11 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\lnot S(n) & \lif & T \vdash \lnot !D_S(\num n)',
          r'\lnot S(\num n) & \lif & T \vdash \lnot !D_S(\num n)'),
     ],
+    'OLP-0308': [
+        # OLINC-049: effective axiomatizability, not bare axiomatization,
+        # is the hypothesis needed by the cited decidability lemma.
+        ('!!{axiomatizable} असेल, तर', '!!{axiomatized} असेल, तर'),
+    ],
 }
 
 
