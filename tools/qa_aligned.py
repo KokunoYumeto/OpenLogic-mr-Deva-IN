@@ -481,6 +481,30 @@ _DOCUMENTED_PROJECTIONS = {
         (r'(n=0 \lor \fn{DischargeLabel}((s)_i) \neq n))))',
          r'\fn{DischargeLabel}((s)_i) \neq n)))'),
     ],
+    'OLP-0288': [
+        # OLINC-018: axiom schemata range over formulas, not just sentences.
+        (r'\fn{Frm}(b) \land \fn{Frm}(c)',
+         r'\fn{Sent}(b) \land \fn{Sent}(c)'),
+        # OLINC-019: the earlier QR rule permits formulas and j must be bound.
+        ('!!{formula}~$!A$ असते', '!!{sentence}~$!A$ असते'),
+        ('\\fn{QR}_1(d, i) \\defiff \\bexists{j<i}{\\bexists{b < (d)_i}{\\bexists{x <\n'
+         '        (d)_i}{\\bexists{a < (d)_i}{\\bexists{c < (d)_j}{(}}}}}',
+         '\\fn{QR}_1(d, i) \\defiff \\bexists{b < (d)_i}{\\bexists{x <\n'
+         '        (d)_i}{\\bexists{a < (d)_i}{\\bexists{c < (d)_j}{(}}}}'),
+        ('\\fn{Frm}(b)\n    \\land \\fn{Frm}(a)',
+         '\\fn{Sent}(b)\n    \\land \\fn{Sent}(\\fn{Subst}(a,c,x))'),
+        ('$c$ ची गोडेल\n  संख्या $j$ व्या ओळीवरील',
+         '$a$ ची गोडेल\n  संख्या $j$ व्या ओळीवरील'),
+        # OLINC-020: a derivation must contain a last line.
+        ('\\fn{Deriv}(d) \\defiff \\len{d}>0 \\land\n  \\bforall',
+         '\\fn{Deriv}(d) \\defiff \\bforall'),
+        # OLINC-021/022: correct the recurrence arity and stated sentence scope.
+        (r'\concat \fn{hCond}(s, y, n) \concat \Gn{)}',
+         r'\concat \fn{Cond}(s, y, n) \concat \Gn{)}'),
+        ('\\Prf[\\Gamma](x, y) & \\defiff \\fn{Sent}(y) \\land\n'
+         '  \\bexists{s < \\fn{sequenceBound}(x,x)}{(}',
+         '\\Prf[\\Gamma](x, y) & \\defiff \\bexists{s < \\fn{sequenceBound}(x,x)}{(}'),
+    ],
 }
 
 
