@@ -1,0 +1,314 @@
+% Part: incompleteness
+% Chapter: incompleteness-provability
+% Section: lob-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{lob}
+
+\olsection{लोबचे प्रमेय}
+
+उपपत्ती~$\Th{T}$ साठीचे गोडेल-वाक्य
+हा $\lnot \OProv[\Th{T}](y)$ चा
+स्थिरबिंदू असतो; म्हणजे असे
+!!a{sentence}~$!G$ असते की
+\[
+\Th{T} \Proves \lnot \OProv[\Th{T}](\gn{!G}) \liff !G.
+\]
+ते !!{derivable} नसते. कारण
+$\Th{T} \Proves !G$ असेल, तर
+(a) !!{derivability} अट~(1) वरून
+$\Th{T} \Proves \OProv[\Th{T}](\gn{!G})$,
+आणि (b) $\Th{T}
+\Proves !G$ व $\Th{T} \Proves \lnot \OProv[\Th{T}](\gn{!G})
+\liff !G$ यांवरून
+$\Th{T} \Proves \lnot \OProv[\Th{T}](\gn{!G})$
+मिळते. त्यामुळे $\Th{T}$ विसंगत
+ठरेल. आता $\OProv[\Th{T}](y)$
+च्या स्थिरबिंदूची स्थिती विचारणे
+स्वाभाविक आहे. म्हणजे असे
+!!a{sentence}~$!H$ घेऊ की
+\[
+\Th{T} \Proves \OProv[\Th{T}](\gn{!H}) \liff !H.
+\]
+ते !!{derivable} असेल, तर
+अट~(1) वरून
+$\Th{T} \Proves \OProv[\Th{T}](\gn{!H})$.
+पण वरील सममूल्यतेला
+निष्कर्षणाचा नियम लावूनही
+हाच निष्कर्ष मिळतो.
+म्हणून गोडेल-वाक्याच्या
+बाबतीतला युक्तिवाद येथे
+$\Th{T}$ विसंगत आहे
+असे दाखवत नाही.
+अर्थात यावरून
+$\Th{T}$ हे
+$!H$ ला \emph{खरोखर}
+!!{derive} करते असेही
+सिद्ध होत नाही.
+
+हा प्रश्न थोडा व्यापक
+केल्यास पुढे जाता येते.
+स्थिरबिंदूच्या
+सममूल्यतेची
+डावीकडून उजवीकडची
+दिशा
+$\OProv[\Th{T}](\gn{!H}) \lif !H$
+ही \emph{प्रतिबिंबन तत्त्व}
+म्हणवणाऱ्या सर्वसाधारण
+रूपबंधाचे एक उदाहरण आहे:
+$\OProv[\Th{T}](\gn{!A}) \lif !A$.
+त्याला असे नाव दिले
+आहे कारण ते एका
+अर्थाने $\Th{T}$
+स्वतः काय !!{derive}
+करू शकते यावर
+“प्रतिबिंबन” करू शकते
+असे व्यक्त करते.
+मूलतः ते कोणत्याही~$!A$
+साठी “$\Th{T}$
+$!A$ ला !!{derive}
+करू शकत असेल, तर
+$!A$ सत्य आहे”
+असे म्हणते. हे
+अर्थात फक्त सत्यनिष्ठ
+उपपत्त्यांसाठीच खरे
+असते. त्यामुळे
+उपपत्त्या सर्वसाधारणपणे
+त्याचे प्रत्येक उदाहरण
+!!{derive} करणार नाहीत
+असे वाटते. मग
+पुरेशी प्रबळ आणि
+!!{derivability} अटी
+पूर्ण करणारी उपपत्ती
+कोणती उदाहरणे
+!!{derive} करू शकते?
+$!A$ स्वतः
+!!{derivable} असेल
+अशी सर्व उदाहरणे
+नक्कीच. पुढील
+निकाल दाखवतो की
+एवढीच उदाहरणे शक्य
+आहेत.
+
+\begin{thm}\ollabel{thm:lob}
+$\Th{T}$ ही~$\Th{Q}$
+चा विस्तार असलेली
+!!a{axiomatizable}
+उपपत्ती असू द्या,
+आणि $\OProv[\Th{T}](y)$
+हे सूत्र \olref[2in]{sec}
+मधील P1--P3 अटी
+पूर्ण करत असेल.
+$\Th{T}$ हे
+$\OProv[\Th{T}](\gn{!A}) \lif !A$
+!!{derive}s करत
+असेल, तर प्रत्यक्षात
+$\Th{T}$ हे
+$!A$ सुद्धा
+!!{derive}s करते.
+\end{thm}
+
+दुसऱ्या शब्दांत,
+$\Th{T} \Proves/ !A$
+असेल, तर
+$\Th{T} \Proves/
+\OProv[\Th{T}](\gn{!A}) \lif !A$.
+हा निकाल लोबचे
+प्रमेय म्हणून ओळखला
+जातो.
+
+\begin{explain}
+लोबच्या प्रमेयामागील
+युक्ती समजण्यासाठी
+सांताक्लॉज अस्तित्वात
+आहे हे “सिद्ध”
+करणारा चतुर युक्तिवाद
+पाहा. (हा निष्कर्ष
+आवडत नसेल, तर
+तुम्हाला हवा असलेला
+दुसरा निष्कर्ष
+त्याच्या जागी
+घेता येईल.)
+युक्तिवाद असा:
+\begin{enumerate}
+\item $X$ हे “$X$
+  सत्य असेल, तर
+  सांताक्लॉज
+  अस्तित्वात आहे”
+  हे वाक्य मानू.
+\item $X$ सत्य आहे
+  असे धरू.
+\item मग त्यात
+  म्हटलेले खरे आहे:
+  $X$ सत्य असेल,
+  तर सांताक्लॉज
+  अस्तित्वात आहे.
+\item आपण $X$ सत्य
+  आहे असे धरलेच
+  आहे; म्हणून
+  (2) आणि~(3)
+  वर निष्कर्षणाचा
+  नियम लावून
+  सांताक्लॉज
+  अस्तित्वात आहे
+  असा निष्कर्ष
+  काढू शकतो.
+\item (2) मधील
+  “$X$ सत्य आहे”
+  या गृहीतकावरून
+  (4) मधील
+  “सांताक्लॉज
+  अस्तित्वात आहे”
+  हे आपण निष्पन्न
+  केले. अटीची
+  सिद्धता वापरून
+  “$X$ सत्य असेल,
+  तर सांताक्लॉज
+  अस्तित्वात आहे”
+  हे दाखवले.
+\item पण हेच
+  वाक्य~$X$ आहे.
+  म्हणजे आपण
+  $X$ सत्य आहे
+  हे दाखवले.
+\item मग वरील
+  (2)--(4) च्या
+  युक्तिवादाने
+  सांताक्लॉज
+  अस्तित्वात आहे.
+\end{enumerate}
+या कल्पनेचे
+आकारिकीकरण करताना
+“सत्य आहे” ऐवजी
+“!!{derivable} आहे”
+आणि “सांताक्लॉज
+अस्तित्वात आहे”
+ऐवजी~$!A$
+घेतल्यास लोबच्या
+प्रमेयाची सिद्धता
+मिळते. युक्ती अशी:
+स्थिरबिंदू उपपत्ती
+!!{formula}~
+$\OProv[\Th{T}](y) \lif !A$
+याला लावायची.
+त्याचा स्थिरबिंदू
+वरील रूपरेषेतील
+वाक्य~$X$
+याच्याशी जुळतो.
+\end{explain}
+
+\begin{proof}[याची सिद्धता: \olref{thm:lob}]
+$!A$ हे असे
+!!a{sentence}
+असू द्या की
+$\Th{T}$ हे
+$\OProv[\Th{T}](\gn{!A}) \lif !A$
+!!{derive}s करते.
+$!B(y)$ हे
+!!{formula}~
+$\OProv[\Th{T}](y)
+\lif !A$ मानू.
+स्थिरबिंदू उपपत्ती
+वापरून असे
+!!a{sentence}~$!D$
+शोधू की
+$\Th{T}$ हे
+$!D \liff !B(\gn{!D})$
+!!{derive}s करते.
+मग पुढीलपैकी
+प्रत्येक विधान
+$\Th{T}$ मध्ये
+!!{derivable} आहे:
+\begin{align}
+  & !D \liff (\OProv[\Th{T}](\gn{!D}) \lif !A) \ollabel{L-1}\\
+  & \qquad \text{$!D$ हा~$!B(y)$ चा स्थिरबिंदू आहे}\notag \\
+  & !D \lif (\OProv[\Th{T}](\gn{!D}) \lif !A) \ollabel{L-2}\\
+  & \qquad\text{\olref{L-1} वरून}\notag\\
+  & \OProv[\Th{T}](\gn{!D \lif (\OProv[\Th{T}](\gn{!D}) \lif !A)}) \ollabel{L-3}\\
+  & \qquad \text{\olref{L-2} आणि अट P1 वरून}\notag \\
+  & \OProv[\Th{T}](\gn{!D}) \lif \OProv[\Th{T}](\gn{\OProv[\Th{T}](\gn{!D}) \lif !A})
+  \ollabel{L-4}\\
+  &\qquad \text{\olref{L-3} व अट P2 वरून}\notag \\
+  & \OProv[\Th{T}](\gn{!D}) \lif (\OProv[\Th{T}](\gn{\OProv[\Th{T}](\gn{!D})}) \lif \OProv[\Th{T}](\gn{!A})) \ollabel{L-5}\\
+  &\qquad \text{\olref{L-4} व अट P2 पुन्हा वापरून} \notag\\
+& \OProv[\Th{T}](\gn{!D}) \lif \OProv[\Th{T}](\gn{\OProv[\Th{T}](\gn{!D})}) \ollabel{L-6}\\
+  & \qquad\text{!!{derivability} अट P3 वरून} \notag\\
+  & \OProv[\Th{T}](\gn{!D}) \lif \OProv[\Th{T}](\gn{!A}) \ollabel{L-7} \\
+  &\qquad\text{\olref{L-5} आणि \olref{L-6} वरून}\notag\\
+  & \OProv[\Th{T}](\gn{!A}) \lif !A \ollabel{L-8}\\
+  &\qquad\text{प्रमेयाच्या गृहीतकावरून} \notag\\
+  & \OProv[\Th{T}](\gn{!D}) \lif !A \ollabel{L-9}\\
+  &\qquad\text{\olref{L-7} आणि \olref{L-8} वरून}\notag\\
+  & (\OProv[\Th{T}](\gn{!D}) \lif !A) \lif !D \ollabel{L-10}\\
+  & \qquad \text{\olref{L-1} वरून}\notag \\
+  & !D \ollabel{L-11}\\
+  & \qquad\text{\olref{L-9} आणि \olref{L-10} वरून}\notag \\
+  & \OProv[\Th{T}](\gn{!D}) \ollabel{L-12}\\
+  & \qquad\text{\olref{L-11} आणि अट~P1 वरून}\notag \\
+  & !A \qquad\qquad\text{\olref{L-8} आणि \olref{L-12} वरून}\notag
+\end{align}
+\end{proof}
+
+लोबचे प्रमेय मिळाल्यावर
+दुसऱ्या अपूर्णता प्रमेयाची
+लहान सिद्धता मिळते
+(P1--P3 अटी पूर्ण
+करणारे !!a{derivability}
+विधेय असलेल्या उपपत्त्यांसाठी):
+$\Th{T} \Proves
+\OProv[\Th{T}](\gn{\lfalse}) \lif \lfalse$
+असेल, तर
+$\Th{T} \Proves \lfalse$.
+$\Th{T}$ सुसंगत
+असेल, तर
+$\Th{T} \Proves/ \lfalse$.
+म्हणून
+$\Th{T}
+\Proves/ \OProv[\Th{T}](\gn{\lfalse}) \lif \lfalse$,
+म्हणजे
+$\Th{T} \Proves/
+\OCon[\Th{T}]$.
+$\OProv[\Th{T}](x)$
+चा स्थिरबिंदू~$!H$
+हा !!{derivable}
+आहे हेही यावरून
+दाखवता येते.
+कारण
+\begin{align*}
+  \Th{T} & \Proves \OProv[\Th{T}](\gn{!H}) \liff !H\\
+  \intertext{यावरून विशेषतः}
+    \Th{T} & \Proves \OProv[\Th{T}](\gn{!H}) \lif !H
+\end{align*}
+आणि म्हणून लोबच्या
+प्रमेयावरून
+$\Th{T} \Proves !H$.
+
+% उलट दिशेने, गृहपाठात दुसरे अपूर्णता प्रमेय वापरून
+% स्थिरबिंदू उपपत्तीशिवाय लोबच्या प्रमेयाची छोटी सिद्धता
+% काढण्यास सांगता येईल.
+
+\begin{prob}
+$\Th{T}$ ही संगणनक्षमपणे
+स्वयंसिद्धकीकृत उपपत्ती
+असू द्या, आणि
+$\OProv[\Th{T}]$ हे
+$\Th{T}$ साठीचे
+!!a{derivability}
+विधेय असू द्या.
+पुढील चार विधाने
+विचारात घ्या:
+\begin{enumerate}
+\item जर $T \Proves !A$, तर $T \Proves \OProv[\Th{T}](\gn{!A})$.
+\item $T \Proves !A \lif \OProv[\Th{T}](\gn{!A})$.
+\item जर $T \Proves \OProv[\Th{T}](\gn{!A})$, तर $T \Proves !A$.
+\item $T \Proves \OProv[\Th{T}](\gn{!A}) \lif !A$
+\end{enumerate}
+ही प्रत्येक विधाने
+कोणत्या अटींवर
+खरी असतात?
+\end{prob}
+
+\end{document}
