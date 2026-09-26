@@ -548,6 +548,18 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$\lexists[x][!A(x)]$ हे $\Struct{N}$',
          r'$\lexists{x}!A(x)$ हे $\Struct{N}$'),
     ],
+    'OLP-0303': [
+        # OLINC-045: retain the earlier formal notation for diagonal halting.
+        (r'$K = \Setabs{x}{\cfind{x}(x) \fdefined}$',
+         r'$K = \Setabs{x}{!A_x(x) \downarrow}$'),
+        (r'$\cfind{x}(x) \fdefined$',
+         r'$!A_x(x) \downarrow$'),
+        # OLINC-046: f must code the arithmetic representative A_T, not T.
+        (r'$\lexists[s][!A_T(\num x,\num x,s)]$',
+         r'$\lexists[s][T(\num x,\num x,s)]$'),
+        (r'$\lexists[s][!A_T(\num x,' + '\n' + r'  \num x, s)]$',
+         r'$\lexists[s][T(\num x,' + '\n' + r'  \num x, s)]$'),
+    ],
 }
 
 
