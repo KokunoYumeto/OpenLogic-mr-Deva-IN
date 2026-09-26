@@ -1,0 +1,367 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: sigma1-completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{s1c}
+\olsection{\texorpdfstring{$\Sigma_1$}{सिग्मा-१} संपूर्णता}
+
+$\Th{Q}$ आणि तिच्या सुसंगत, स्वयंसिद्धकीकरण करता येणाऱ्या
+विस्तारांची अपूर्णता असूनही, संख्यांकांविषयी अनेक मूलभूत तथ्ये
+$\Th{Q}$ सिद्ध करते, हे आपण पाहिले आहे. ही क्षमता प्रत्यक्षात
+आणखी बरीच व्यापक आहे. $\Th{Q}$ मध्ये काय सिद्ध करता येते
+याची व्याप्ती समजण्यासाठी $\Delta_0$, $\Sigma_1$ आणि
+$\Pi_1$ !!{formula}s यांच्या संकल्पना मांडू. स्थूलमानाने,
+$\Sigma_1$ !!{formula} हे $\lexists[x][!B(x)]$ या रूपाचे
+असते; येथे $!B$ फक्त विधानीय संयोजके आणि परिबद्ध संख्यापक
+वापरून तयार केलेले असते. $!A$ हे $\Struct{N}$ मध्ये सत्य
+असलेले $\Sigma_1$ !!{sentence} असेल, तर
+$\Th{Q} \Proves !A$, हे आपण दाखवू
+(\olref{thm:sigma1-completeness}).
+
+\begin{defn}
+\ollabel{defn:bd-quant}
+\emph{परिबद्ध अस्तित्ववाची !!{formula}} हे
+$\lexists[x][(x < t \land !A(x))]$ या रूपाचे असते; येथे $t$
+हे संबंधित संख्यापकाचे चल नसलेले कोणतेही पद आहे. परंपरेने ते
+$\bexists{x < t}{!A(x)}$ असे लिहितो.
+%
+\emph{परिबद्ध वैश्विक !!{formula}} हे
+$\lforall[x][(x < t \lif !A(x))]$ या रूपाचे असते; येथेही
+$t$ या पदात संबंधित संख्यापकाचे चल नसते. परंपरेने ते
+$\bforall{x < t}{!A(x)}$ असे लिहितो.
+\end{defn}
+
+\begin{defn}
+\ollabel{defn:delta0-sigma1-pi1-frm}
+!!{formula} $!B$ हे $\Delta_0$ असते, जर ते आण्विक
+!!{formula}s पासून केवळ विधानीय संयोजके आणि परिबद्ध
+संख्यकीकरण वापरून तयार झाले असेल.
+%
+!!{formula} $!A$ हे $\Sigma_1$ असते, जर
+$!A \ident \lexists[x][!B(x)]$ आणि $!B$ हे $\Delta_0$
+असेल.
+%
+!!{formula} $!A$ हे $\Pi_1$ असते, जर
+$!A \ident \lforall[x][!B(x)]$ आणि $!B$ हे $\Delta_0$
+असेल.
+\end{defn}
+
+\begin{lem}
+\ollabel{lem:q-proves-clterm-id} समजा $t$ हे बंद पद असून
+$\Value{t}{N} = n$. तर $\Th{Q} \Proves \eq[t][\num n]$.
+\end{lem}
+
+\begin{proof}
+$t$ च्या गुंतागुंतीवर विगमन करू. आधार प्रकरणात
+$\Value{\Obj 0}{N} = 0$, आणि
+$\num 0 \ident \Obj 0$ असल्यामुळे
+$\Th{Q} \Proves \eq[\Obj 0][\num 0]$.
+%
+विगमनाच्या टप्प्यासाठी $t_1$ आणि $t_2$ ही पदे अशी घ्या की
+$\Value{t_1}{N} = n_1$, $\Value{t_2}{N} = n_2$,
+$\Th{Q} \Proves \eq[t_1][\num n_1]$, आणि
+$\Th{Q} \Proves \eq[t_2][\num n_2]$.
+
+मग $\Value{(t_1')}{N} = n_1 + 1$. विगमन गृहीतक आणि
+$\eq[\num{n_1}'][\num{n_1}']$ या !!{formula} वर
+प्रथम-क्रम एकरूपतेचे नियम लावल्यास
+$\Th{Q} \Proves \eq[t_1'][{\num n_1}']$ मिळते.
+संख्यांकांच्या व्याख्येने
+$\Th{Q} \Proves \eq[t_1'][\num{n_1 + 1}]$ मिळते.
+
+बेरीजेसाठी,
+\[
+      \Value{(t_1 + t_2)}{N}
+    = \Value{t_1}{N} + \Value{t_2}{N}
+    = n_1 + n_2.
+\]
+विगमन गृहीतक आणि एकरूपतेच्या नियमांनी प्रथम
+$\Th{Q} \Proves \eq[t_1 + t_2][\num{n_1} + t_2]$,
+आणि ते नियम पुन्हा लावल्यास
+$\Th{Q} \Proves \eq[t_1 + t_2][\num{n_1} + \num{n_2}]$
+मिळते. \olref[inc][req][bre]{lem:q-proves-add} नुसार
+$\Th{Q} \Proves \eq[\num{n_1} + \num{n_2}][\num{n_1 + n_2}]$;
+म्हणून $\Th{Q} \Proves \eq[t_1 + t_2][\num{n_1 + n_2}]$.
+
+$\times$ साठीही
+\olref[inc][req][bre]{lem:q-proves-mult} वापरून असाच
+युक्तिवाद करता येतो.
+%
+अंकगणितातील बंद पदांचे हे सर्व प्रकार आहेत. म्हणून
+$\Value{t}{N} = n$ असलेल्या प्रत्येक बंद पद~$t$ साठी
+$\Th{Q} \Proves \eq[t][\num n]$.
+\end{proof}
+
+\begin{prob}
+\olref{lem:q-proves-clterm-id} मधील $\times$ संबंधीचा
+भाग सविस्तर सिद्ध करा.
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:atomic-completeness}
+समजा $t_1$ आणि $t_2$ ही बंद पदे आहेत. तर
+\begin{enumerate}
+\item $\Value{t_1}{N} = \Value{t_2}{N}$ असेल, तर
+    $\Th{Q} \Proves \eq[t_1][t_2]$.
+\item $\Value{t_1}{N} \neq \Value{t_2}{N}$ असेल, तर
+    $\Th{Q} \Proves \eq/[t_1][t_2]$.
+\item $\Value{t_1}{N} < \Value{t_2}{N}$ असेल, तर
+    $\Th{Q} \Proves t_1 < t_2$.
+\item $\Value{t_2}{N} \leq \Value{t_1}{N}$ असेल, तर
+    $\Th{Q} \Proves \lnot(t_1 < t_2)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+दिलेले $t_1$ आणि $t_2$ घेऊन
+$n = \Value{t_1}{N}$ आणि $m = \Value{t_2}{N}$
+निश्चित करू.
+
+समजा $!A \ident t_1 = t_2$.
+\olref{lem:q-proves-clterm-id} नुसार
+$\Th{Q} \Proves \eq[t_1][\num n]$ आणि
+$\Th{Q} \Proves \eq[t_2][\num m]$.
+$n = m$ असेल, तर
+$\Th{Q} \Proves \eq[\num n][\num m]$;
+म्हणून एकरूपतेच्या संक्रमणशीलतेने
+$\Th{Q} \Proves \eq[t_1][t_2]$.
+$n \neq m$ असेल, तर
+$\Th{Q} \Proves \eq/[\num n][\num m]$;
+एकरूपतेचे नियम पुन्हा वापरल्यास
+$\Th{Q} \Proves \eq/[t_1][t_2]$.
+
+आता $!A \ident t_1 < t_2$ असे घेऊ. दोन्ही प्रकरणांत
+$!Q_8$ या स्वयंसिद्धकाचा आधार घेऊ. त्यानुसार सर्व
+$x,y$ साठी
+$x < y \liff \lexists[z][\eq[z' + x][y]]$.
+
+समजा $\Sat{N}{t_1 < t_2}$. मग असा $k \in \Nat$
+असतो की $n + k + 1 = m$.
+\olref{lem:q-proves-clterm-id} नुसार
+$\Th{Q} \Proves \eq[t_1][\num n]$ आणि
+$\Th{Q} \Proves \eq[t_2][\num m]$.
+या प्रमेयाच्या पहिल्या भागाने निश्चित संख्यांकांची बेरीज
+काढल्यास
+$\Th{Q} \Proves \eq[{\num k}' + \num n][\num m]$.
+एकरूपतेच्या संक्रमणशीलतेने मग
+$\Th{Q} \Proves \eq[{\num k}' + t_1][t_2]$;
+म्हणून
+$\Th{Q} \Proves \lexists[z][\eq[z' + t_1][t_2]]$.
+$!Q_8$ ची उजवीकडून डावीकडे दिशा वापरल्यास
+$\Th{Q} \Proves t_1 < t_2$.
+
+याउलट $\Sat/{N}{t_1 < t_2}$, म्हणजे $m \leq n$,
+असे समजा.
+%
+$\Th{Q}$ मध्ये काम करून $t_1 < t_2$ असे गृहीत धरा.
+$!Q_8$ ची डावीकडून उजवीकडे दिशा लावल्यास असा $z$
+मिळतो की $\eq[z' + t_1][t_2]$.
+$\Th{Q} \Proves \eq[t_1][\num n]$ आणि
+$\Th{Q} \Proves \eq[t_2][\num m]$ असल्यामुळे
+$\eq[z' + \num n][\num m]$.
+%
+$m$ वर बाह्य विगमन करू: प्रत्येक पायरीवर $!Q_5$
+वापरून बेरीज उत्तरवर्तीच्या रूपात लिहू आणि उत्तरवर्तीचे
+एकास-एक असणे वापरून दोन्ही बाजूंचे एक-एक उत्तरवर्ती
+रद्द करू. अशा रीतीने
+$\eq[z' + \num{n - m}][\Obj 0]$ मिळते.
+$m = n$ असेल, तर शून्य जोडण्याच्या स्वयंसिद्धकाने
+$\eq[z'][\Obj 0]$ मिळते; पण $!Q_2$ नुसार उत्तरवर्ती
+शून्य नसतो, म्हणून विरोधाभास मिळतो.
+$m < n$ असेल, तर $!Q_5$ पुन्हा वापरून
+$\eq[(z' + \num{n - m - 1})'][\Obj 0]$ मिळते;
+$!Q_2$ मुळे पुन्हा विरोधाभास मिळतो.
+म्हणून $\Th{Q} \Proves \lnot(t_1 < t_2)$.
+\end{proof}
+
+\begin{lem}
+\ollabel{lem:bounded-quant-equiv}
+समजा $!A$ हे !!a{formula}, $t$ हे बंद पद, आणि
+$k=\Value{t}{N}$. तर
+\begin{enumerate}
+\item $\Th{Q} \Proves \bforall{x<t}{!A(x)}$ तेव्हाच आणि तरच $\Th{Q} \Proves
+    !A(\num 0) \land \dots \land !A(\num{k-1})$.
+\item $\Th{Q} \Proves \bexists{x<t}{!A(x)}$ तेव्हाच आणि तरच $\Th{Q} \Proves
+    !A(\num 0) \lor \dots \lor !A(\num{k-1})$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+    परिबद्ध वैश्विक संख्यापकाचे प्रकरण सिद्ध करू.
+    $\Value{t}{N} = 0$ असेल, तर
+    \olref[inc][req][min]{lem:less-zero} नुसार
+    $x<\num 0$ अशी कोणतीही संख्या नसते; म्हणून
+    समतुल्यतेची डावी बाजू $\Th{Q}$ मध्ये सिद्ध होते.
+    उजवीकडील रिक्त संयोगाला $\ltrue$ मानतो;
+    तेही $\Th{Q}$ मध्ये सिद्ध होते.
+    %
+    म्हणून आता एखाद्या नैसर्गिक संख्या~$k$ साठी
+    $\Value{t}{N} = k+1$ असे समजू.
+    \olref{lem:q-proves-clterm-id} नुसार
+    $\bforall{x<\num{k+1}}{!A(x)}$ या रूपाच्या
+    !!a{formula} साठी काम करणे पुरेसे आहे.
+
+    समजा
+    $\Th{Q} \Proves \bforall{x<\num{k+1}}{!A(x)}$,
+    आणि $n \leq k$ घेऊ.
+    \olref{lem:atomic-completeness} नुसार
+    $\Th{Q} \Proves \num n < \num{k+1}$;
+    म्हणून तर्कनियमांनी
+    $\Th{Q} \Proves !A(\num n)$.
+    प्रत्येक $n \leq k$ साठी हे $k+1$ वेळा
+    लावल्यास अपेक्षेप्रमाणे
+    $\Th{Q} \Proves !A(\num 0)
+    \land \dots \land !A(\num k)$ मिळते.
+
+    उलट दिशेसाठी समजा
+    $\Th{Q} \Proves
+    !A(\num 0) \land \dots \land !A(\num k)$.
+    $\Th{Q}$ मध्ये $x < \num{k+1}$ असे समजू.
+    \olref[inc][req][min]{lem:less-nsucc} नुसार
+    $x = \num 0 \lor \dots \lor x = \num k$.
+    मग तर्कनियमांनी $!A(x)$ मिळते आणि त्यावरून
+    $\bforall{x<\num{k+1}}{!A(x)}$ हे वैश्विक विधान
+    मिळते.
+
+    परिबद्ध अस्तित्ववाची संख्यकीकरण असलेल्या
+    !!{formula}s साठी समतुल्यतेचा पुरावाही असाच आहे.
+\end{proof}
+
+\begin{prob}
+\olref{lem:bounded-quant-equiv} मधील अस्तित्ववाची
+प्रकरणाचा सविस्तर पुरावा द्या.
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:delta0-completeness}
+$!A$ हे $\Struct{N}$ मध्ये सत्य असलेले
+$\Delta_0$ !!{sentence} असेल, तर
+$\Th{Q} \Proves !A$.
+\end{lem}
+
+\begin{proof}
+!!{formula} च्या गुंतागुंतीवर विगमन करू.
+%
+आधार प्रकरण \olref{lem:atomic-completeness} ने
+मिळते; आता विगमनाचा टप्पा पाहू. सोयीसाठी,
+निषेधाच्या प्रकरणाची विभागणी निषिद्ध !!{formula}
+च्या रचनेनुसार करू. इतर विधानीय संयोजक पुढील
+प्रकरणांमधून संक्षेपाने व्यक्त करता येतात.
+
+\begin{enumerate}
+\item $(!A \land !B)$ हे $\Struct{N}$ मध्ये सत्य
+असेल, तर $!A$ आणि $!B$ दोन्ही $\Struct{N}$ मध्ये सत्य आहेत.
+विगमन गृहीतकाने
+$\Th{Q} \Proves !A$ आणि
+$\Th{Q} \Proves !B$; म्हणून तर्कनियमांनी
+$\Th{Q} \Proves (!A \land !B)$.
+%
+\item $\lnot (!A \land !B)$ हे $\Struct{N}$
+मध्ये सत्य असेल, तर $\lnot !A$ किंवा
+$\lnot !B$ हे $\Struct{N}$ मध्ये सत्य आहे. सामान्यत्वाला बाधा
+न आणता पहिले सत्य आहे असे धरू.
+विगमन गृहीतकाने $\Th{Q} \Proves \lnot !A$;
+म्हणून तर्कनियमांनी
+$\Th{Q} \Proves \lnot (!A \land !B)$.
+%
+\item $(!A \lor !B)$ हे $\Struct{N}$ मध्ये सत्य
+असेल, तर $!A$ हे $\Struct{N}$ मध्ये सत्य आहे किंवा
+$!B$ हे $\Struct{N}$ मध्ये सत्य आहे.
+सामान्यत्वाला बाधा न आणता पहिले सत्य आहे
+असे धरू. विगमन गृहीतकाने
+$\Th{Q} \Proves !A$;
+म्हणून तर्कनियमांनी
+$\Th{Q} \Proves (!A \lor !B)$.
+%
+\item $\lnot(!A \lor !B)$ हे $\Struct{N}$
+मध्ये सत्य असेल, तर $\lnot !A$ आणि
+$\lnot !B$ दोन्ही $\Struct{N}$ मध्ये सत्य आहेत.
+विगमन गृहीतकाने
+$\Th{Q} \Proves \lnot !A$ आणि
+$\Th{Q} \Proves \lnot !B$.
+त्यामुळे तर्कनियमांनी
+$\Th{Q} \Proves \lnot(!A \lor !B)$.
+%
+\item $\bforall{x<t}{!A(x)}$ हे
+$\Struct{N}$ मध्ये सत्य आहे असे समजा;
+येथे $t$ हे बंद पद आणि $k=\Value{t}{N}$.
+सर्व $n < \Value{t}{N}$ साठी
+$!A(\num n)$ हे $\Struct{N}$ मध्ये सत्य
+असेल, तर विगमन गृहीतक आणि तर्कनियमांनी
+$\Th{Q} \Proves
+!A(\num 0) \land \dots \land !A(\num{k-1})$.
+\olref{lem:bounded-quant-equiv} नुसार
+$\Th{Q} \Proves \bforall{x<t}{!A(x)}$.
+%
+\item परिबद्ध अस्तित्ववाची संख्यापकाचे
+प्रकरणही वैश्विक संख्यापकासारखेच आहे:
+येथे $\bexists{x < t}{!A(x)}$ या रूपाचे
+!!a{sentence} असते.
+%
+\item $\lnot \bforall{x<t}{!A(x)}$ हे
+$\Struct{N}$ मध्ये सत्य आहे असे समजा;
+येथे $t$ हे बंद पद. हे !!{sentence}
+$\bexists{x<t}{\lnot !A(x)}$ या !!{sentence}
+शी समतुल्य आहे आणि ही समतुल्यता
+$\Th{Q}$ मध्येही सिद्ध करता येते. म्हणून
+परिबद्ध अस्तित्ववाची संख्यापकाचा युक्तिवाद
+लागू करता येतो.
+%
+\item त्याचप्रमाणे, $t$ हे बंद पद असताना
+$\lnot \bexists{x<t}{!A(x)}$ हे
+$\Struct{N}$ मध्ये सत्य आहे असे समजा.
+हे !!{sentence} $\Th{Q}$ मध्ये
+$\bforall{x<t}{\lnot!A(x)}$ शी समतुल्य
+आहे; म्हणून परिबद्ध वैश्विक संख्यापकाचा
+युक्तिवाद लागू करता येतो.
+%
+\item अखेरीस $\lnot !A$ हे
+$\Struct{N}$ मध्ये सत्य आहे असे समजा.
+उरलेली प्रकरणे अशी: $!A$ आण्विक आहे,
+किंवा एखाद्या $\Delta_0$ !!{sentence} $!B$
+साठी $\lnot !A \ident \lnot\lnot !B$.
+$!A$ आण्विक असेल, तर
+\olref{lem:atomic-completeness} नुसार
+$\Th{Q} \Proves \lnot !A$.
+$\lnot !A \ident \lnot\lnot !B$ असेल,
+तर तर्कनियमांनी ते $\Th{Q}$ मध्ये
+$!B$ शी सिद्धतया समतुल्य आहे.
+$\lnot !A$ हे $\Struct{N}$ मध्ये सत्य
+असल्याने तेही $\Struct{N}$ मध्ये सत्य आहे.
+म्हणून विगमन गृहीतकाने
+$\Th{Q} \Proves \lnot !A$.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\olref{lem:delta0-completeness} मधील
+अस्तित्ववाची प्रकरणाचा सविस्तर पुरावा द्या.
+\end{prob}
+
+\begin{thm}
+\ollabel{thm:sigma1-completeness}
+$!A$ हे $\Struct{N}$ मध्ये सत्य असलेले
+$\Sigma_1$ !!{sentence} असेल, तर
+$\Th{Q} \Proves !A$.
+\end{thm}
+
+\begin{proof}
+$\lexists[x][!A(x)]$ हे $\Struct{N}$ मध्ये
+सत्य असलेले $\Sigma_1$ !!{sentence} असेल,
+तर अशी नैसर्गिक संख्या~$n$ आणि चल-मूल्यन~$s$
+असतात की $s(x) = n$ आणि
+$\Sat{N}{!A(x)}[s]$.
+पूर्ति-संबंधाच्या नेहमीच्या गुणधर्मांनुसार
+$\Sat{N}{!A(\num n)}$.
+परंतु $!A(\num n)$ हे $\Delta_0$ !!{formula}
+आहे; म्हणून \olref{lem:delta0-completeness} ने
+$\Th{Q} \Proves !A(\num n)$.
+मग तर्कनियमांनी
+$\Th{Q} \Proves \lexists[x][!A(x)]$.
+\end{proof}
+
+\end{document}

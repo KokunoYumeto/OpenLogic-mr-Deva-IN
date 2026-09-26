@@ -532,6 +532,22 @@ _DOCUMENTED_PROJECTIONS = {
         # OLINC-032: the existential witness for u is c, not c-prime.
         ("$c$ वर अस्तित्ववाचक", "$c'$ वर अस्तित्ववाचक"),
     ],
+    'OLP-0300': [
+        # OLINC-038: t_2 evaluates to m, not n.
+        (r'$\Th{Q} \Proves \eq[t_2][\num m]$.' + '\n' + r'$n = m$',
+         r'$\Th{Q} \Proves \eq[t_2][\num n]$.' + '\n' + r'$n = m$'),
+        # OLINC-039: the Q_8 witness requires the successor numeral on the left.
+        (r"$\Th{Q} \Proves \eq[{\num k}' + \num n][\num m]$",
+         r"$\Th{Q} \Proves \eq[\num n + {\num k}'][\num m]$"),
+        # OLINC-040: the argument obtains equality with zero and uses Q_2.
+        (r"$\eq[z'][\Obj 0]$", r"$\eq/[z'][\Obj 0]$"),
+        (r'$!Q_2$', r'$!Q_3$'),
+        # OLINC-042/043: make the bounded and unbounded quantifier bodies explicit.
+        (r'$\lnot \bexists{x<t}{!A(x)}$',
+         r'$\lnot \bexists{x<t}!A(x)$'),
+        (r'$\lexists[x][!A(x)]$ हे $\Struct{N}$',
+         r'$\lexists{x}!A(x)$ हे $\Struct{N}$'),
+    ],
 }
 
 
