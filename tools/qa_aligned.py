@@ -465,6 +465,22 @@ _DOCUMENTED_PROJECTIONS = {
         ('((\\fn{EndSequent}(x))_1)_0 =\ny$',
          '((\\fn{EndSequent}(x))_1)_0 =\nx$'),
     ],
+    'OLP-0287': [
+        # OLINC-013: the worked example must code the parenthesized conjunction.
+        ('$d_0 = \\tuple{0,\n    \\Gn{(!A \\land !B)}, 1}$',
+         '$d_0 = \\tuple{0,\n    \\Gn{!A \\land !B}, 1}$'),
+        # OLINC-014: Sent applies to every Correct disjunct, as the prose says.
+        (r'[(\fn{LastRule}(d) = 1 \land',
+         r'(\fn{LastRule}(d) = 1 \land'),
+        (r'\bexists{n<d}{\bexists{x<d}{(d = \tuple{0, x, n})}}].',
+         r'\bexists{n<d}{\bexists{x<d}{(d = \tuple{0, x, n})}}.'),
+        # OLINC-015: child codes occupy indices 1 through the child count.
+        (r"\bexists{j<(d')_0}{d = (d')_{j+1}}",
+         r"\bexists{j<(d')_0}{d = (d')_j}"),
+        # OLINC-016: a zero-labelled assumption is open by definition.
+        (r'(n=0 \lor \fn{DischargeLabel}((s)_i) \neq n))))',
+         r'\fn{DischargeLabel}((s)_i) \neq n)))'),
+    ],
 }
 
 

@@ -1,0 +1,341 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: proofs-in-nd
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{pnd}
+\olsection{नैसर्गिक निगमनातील \usetoken{P}{derivation}}
+
+\begin{explain}
+!!{derivation}s चे अंकगणितीकरण करण्यासाठी !!{derivation}s संख्यांनी
+दर्शवावे लागतात. प्रत्येक निगमनाला एक किंवा दोन लेबले असलेल्या
+!!{formula}s चे वृक्ष म्हणजे !!{derivation}s असल्यामुळे, पुनरावर्ती
+निरूपण हा सहज मार्ग आहे. आपण !!{derivation} एका क्रमित समूहाने दर्शवतो.
+त्याचे घटक म्हणजे अखेरच्या निगमनाच्या आधारविधानांकडे नेणाऱ्या तात्काळ
+उप-!!{derivation}s ची संख्या, त्या उप-!!{derivation}s ची निरूपणे,
+अंतिम !!{formula}, अखेरच्या निगमनाचे मुक्तता-लेबल आणि त्या निगमनाचा
+प्रकार दर्शवणारी संख्या.
+\end{explain}
+
+\begin{defn}
+  $\delta$ ही नैसर्गिक निगमनातील !!a{derivation} असेल, तर
+  $\Gn{\delta}$ ची आगमनाने व्याख्या पुढीलप्रमाणे करतो:
+  \begin{enumerate}
+  \item
+    $\delta$ मध्ये फक्त गृहीतक~$!A$ असेल, तर $\Gn{\delta}$ म्हणजे
+    $\tuple{0, \Gn{!A}, n}$. हे गृहीतक !!{undischarged} असेल,
+    तर~$n$ ही संख्या~$0$ असते; अन्यथा ती त्याचे संख्यात्मक लेबल असते.
+  \item
+    $\delta$ चा शेवट शून्य, एक, दोन किंवा तीन आधारविधानांच्या
+    निगमनाने होत असेल, तर $\Gn{\delta}$ अनुक्रमे
+    \begin{align*}
+      & \tuple{0, \Gn{!A}, n, k}, \\
+      & \tuple{1, \Gn{\delta_1}, \Gn{!A}, n, k}, \\
+      & \tuple{2, \Gn{\delta_1}, \Gn{\delta_2}, \Gn{!A}, n, k}, \text{ किंवा}\\
+      & \tuple{3, \Gn{\delta_1}, \Gn{\delta_2}, \Gn{\delta_3}, \Gn{!A}, n,
+        k},
+    \end{align*}
+    असते. येथे $\delta_1$, $\delta_2$, $\delta_3$ या $\delta$ मधील
+    अखेरच्या निगमनाच्या आधारविधानांवर संपणाऱ्या उप-!!{derivation}s आहेत;
+    $!A$ हा $\delta$ मधील त्या निगमनाचा निष्कर्ष आहे; $n$ हे त्या निगमनाचे
+    मुक्तता-लेबल आहे (निगमनाने एकही गृहीतक मुक्त होत नसेल, तर~$0$);
+    आणि अखेरच्या निगमनात वापरलेल्या नियमानुसार $k$ पुढील तक्त्यात
+    दिले आहे.
+
+    \begin{tabular}{lccccccc}
+      \text{नियम:} & \Intro{\land} & \Elim{\land} & \Intro{\lor} & \Elim{\lor} \\
+      $k$: & 1 & 2 & 3 & 4  \\[1.5ex]
+      \text{नियम:} &  \Intro{\lif} & \Elim{\lif} & \Intro{\lnot} & \Elim{\lnot} \\
+      $k$: & 5 & 6 & 7 & 8 \\[1.5ex]
+      \text{नियम:}  &  \FalseInt & \FalseCl & \Intro{\lforall} & \Elim{\lforall} \\
+      $k$: & 9 & 10 & 11 & 12 \\[1.5ex]
+      \text{नियम:} & \Intro{\lexists} & \Elim{\lexists} & \Intro{\eq} & \Elim{\eq} \\
+      $k$: & 13 & 14 & 15 & 16
+    \end{tabular}
+  \end{enumerate}
+\end{defn}
+
+\begin{ex}
+  पुढील अगदी सोपी !!{derivation} पाहा:
+  \begin{prooftree}
+    \AxiomC{$\Discharge{!A \land !B}{1}$}
+    \RightLabel{\Elim{\land}}
+    \UnaryInfC{$!A$}
+    \DischargeRule{\Intro{\lif}}{1}
+    \UnaryInfC{$(!A \land !B) \lif !A$}
+  \end{prooftree}
+  गृहीतकाची गोडेल संख्या $d_0 = \tuple{0,
+    \Gn{(!A \land !B)}, 1}$ असेल. $\Elim{\land}$ च्या निष्कर्षावर
+  संपणाऱ्या !!{derivation} ची गोडेल संख्या $d_1 = \tuple{1,
+     d_0, \Gn{!A}, 0, 2}$ असेल. येथे $1$ हे $\Elim{\land}$ ला एकच
+  आधारविधान असल्यामुळे आले आहे; निष्कर्ष~$!A$ ची गोडेल संख्या पुढे
+  आहे; $0$ हे एकही गृहीतक मुक्त होत नसल्यामुळे आले आहे; आणि $2$
+  हा $\Elim{\land}$ चा संकेतांक आहे. मग संपूर्ण !!{derivation} ची
+  गोडेल संख्या $\tuple{1, d_1, \Gn{((!A \land !B) \lif
+      !A)}, 1, 5}$, म्हणजेच
+  \[
+  \tuple{1, \tuple{1, \tuple{0, \Gn{(!A \land !B)}, 1}, \Gn{!A}, 0, 2},
+    \Gn{((!A \land !B) \lif !A)}, 1, 5}.
+  \]
+\end{ex}
+
+\begin{explain}
+!!{derivation}s चे निरूपण ठरल्यानंतर, अशा !!{derivation}s च्या
+गोडेल संख्यांवर आदिम पुनरावर्ती रीतीने क्रिया करता येतात आणि त्यांचे
+आवश्यक गुणधर्म व संबंध व्यक्त करता येतात, हेही दाखवावे लागेल.
+काही क्रिया सोप्या आहेत. उदाहरणार्थ, !!a{derivation} ची गोडेल
+संख्या~$d$ दिली असता, $\fn{EndFmla}(d) = (d)_{(d)_0+1}$ हे
+तिच्या अंतिम !!{formula} ची गोडेल संख्या देते;
+$\fn{DischargeLabel}(d) = (d)_{(d)_0 + 2}$ हे मुक्तता-लेबल देते;
+आणि $\fn{LastRule}(d) = (d)_{(d)_0 + 3}$ हे अखेरच्या निगमनाचा
+प्रकार दर्शवणारी संख्या देते. काही इतर क्रिया अधिक कठीण आहेत;
+त्या कशा कराव्यात याची किमान रूपरेषा आपण पाहू. $\delta$ ही
+$\Gamma$ पासून $!A$ ची !!a{derivation} आहे, हा संबंध
+$\delta$ आणि $!A$ यांच्या गोडेल संख्यांचा आदिम पुनरावर्ती संबंध
+आहे, हे दाखवणे आपले उद्दिष्ट आहे.
+\end{explain}
+
+\begin{prop}
+  पुढील संबंध आदिम पुनरावर्ती आहेत:
+  \begin{enumerate}
+  \item $!A$ हे $\delta$ मध्ये लेबल~$n$ असलेले गृहीतक म्हणून येते.
+  \item $\delta$ मधील लेबल~$n$ असलेली सर्व गृहीतके $!A$ या रूपाची
+    असतात (म्हणजे $\delta$ मध्ये लेबल~$n$ वापरून गृहीतक~$!A$
+    !!{discharge} करता येते).
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  !!{formula}s च्या गोडेल संख्या आणि !!{derivation}s च्या गोडेल
+  संख्या यांच्यातील अनुरूप संबंध आदिम पुनरावर्ती आहेत, हे दाखवायचे आहे.
+  \begin{enumerate}
+  \item $\fn{Assum}(x, d, n)$ आदिम पुनरावर्ती आहे, हे दाखवू.
+    गोडेल संख्या~$d$ असलेल्या !!{derivation} मधील लेबल~$n$ च्या
+    गृहीतकाची गोडेल संख्या~$x$ असेल, तर हा संबंध खरा असतो.
+    गोडेल संख्या~$\tuple{0, x, n}$ असलेली !!{derivation} ही
+    $d$ ची उप-!!{derivation} असेल, तर आणि तरच असे घडते. येथे
+    !!{derivation}s चे आपले सांकेतीकरण हे
+    \olref[cmp][rec][tre]{sec} मध्ये दिलेल्या वृक्षांच्या
+    सांकेतीकरणाचे विशेष प्रकरण आहे, हे लक्षात घ्या. म्हणून आदिम
+    पुनरावर्ती फलन $\fn{SubtreeSeq}(d)$ हे $d$ च्या सर्व
+    उप-!!{derivation}s च्या गोडेल संख्यांची क्रमिका देते
+    (तिची लांबी जास्तीत जास्त~$d$ असते). म्हणून व्याख्या अशी करता येते:
+    \[
+    \fn{Assum}(x, d, n) \defiff \bexists{i<d}{(\fn{SubtreeSeq}(d))_i =
+      \tuple{0, x, n}}.
+    \]
+  \item $\fn{Discharge}(x, d, n)$ आदिम पुनरावर्ती आहे, हे दाखवू.
+    गोडेल संख्या~$d$ असलेल्या !!{derivation} मधील लेबल~$n$
+    असलेली सर्व गृहीतके गोडेल संख्या~$x$ असलेल्या !!{formula}
+    चीच असतील, तर हा संबंध खरा असतो. तो
+    $\bforall{y<d}{(\fn{Assum}(y, d, n) \lif y
+      = x)}$ असेल, तर आणि तरच खरा असतो.
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:followsby}
+  गोडेल संख्या~$d$ असलेल्या !!{derivation}~$\delta$ मधील अखेरचे
+  निगमन योग्य असेल, तर आणि तरच खरा असणारा $\fn{Correct}(d)$ गुणधर्म
+  आदिम पुनरावर्ती आहे.
+\end{prop}
+
+\begin{proof}
+  प्रत्येक निगमन नियम~$R$ साठी $\fn{FollowsBy}_R(d)$ हा संबंध
+  आदिम पुनरावर्ती आहे, हे दाखवावे लागेल. $d$ ही !!{derivation}~$\delta$
+  ची गोडेल संख्या असेल आणि $\delta$ चे अंतिम !!{formula} $\delta$ च्या
+  तात्काळ उप-!!{derivation}s पासून $R$ च्या योग्य वापराने
+  निष्पन्न होत असेल, तर आणि तरच $\fn{FollowsBy}_R(d)$ खरे असते.
+
+  \Intro{\land} नियमाचे उदाहरण सोपे आहे. $\delta$ चा शेवट
+  $\Intro{\land}$ च्या योग्य वापराने होत असेल, तर तिचे रूप असे असते:
+  \begin{prooftree}
+    \AxiomC{}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A$}
+
+    \AxiomC{}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!B$}
+
+    \RightLabel{\Intro\land}
+    \BinaryInfC{$!A \land !B$}
+  \end{prooftree}
+  मग $\delta$ ची गोडेल संख्या~$d$ ही
+  $\tuple{2, d_1, d_2, \Gn{(!A \land !B)}, 0, k}$ असते. येथे
+  $\fn{EndFmla}(d_1) = \Gn{!A}$,
+  $\fn{EndFmla}(d_2) = \Gn{!B}$, $n=0$ आणि $k=1$.
+  म्हणून $\fn{FollowsBy}_{\Intro\land}(d)$ ची व्याख्या अशी करता येते:
+  \begin{multline*}
+    (d)_0 = 2 \land \fn{DischargeLabel}(d) = 0 \land \fn{LastRule}(d) = 1 \land {}\\
+    \fn{EndFmla}(d) = {}\\
+    \Gn{(} \concat \fn{EndFmla}((d)_1) \concat \Gn{\land}
+    \concat \fn{EndFmla}((d)_2) \concat \Gn{)}.
+  \end{multline*}
+
+  आणखी एक सोपे उदाहरण $\Intro\eq$ नियमाचे आहे. त्याला
+  आधारविधाने नसतात, म्हणून गृहीतकांप्रमाणेच $(d)_0 = 0$ असते.
+  त्याचे मुक्तता-लेबलही नसते, म्हणजे $n=0$. मात्र $!A$ हे
+  एखाद्या बंद पद~$t$ साठी $\eq[t][t]$ या रूपाचे असले पाहिजे.
+  येथे आदिम पुनरावर्ती व्याख्या अशी आहे:
+  \begin{multline*}
+    (d)_0 = 0 \land \fn{DischargeLabel}(d) = 0 \land {}\\
+    \bexists{t<d}{(\fn{ClTerm}(t) \land
+      \fn{EndFmla}(d) = {}\\
+      \Gn{{\eq}(} \concat t \concat \Gn{,} \concat t \concat \Gn{)})}.
+  \end{multline*}
+
+  अधिक गुंतागुंतीचे उदाहरण म्हणून $\fn{FollowsBy}_{\Intro{\lif}}(d)$
+  पाहू. $\delta$ चे अंतिम !!{formula} $(!A \lif !B)$ या रूपाचे,
+  $\delta_1$ चे अंतिम !!{formula}~$!B$ असेल आणि $\delta$ मधील
+  लेबल~$n$ असलेले प्रत्येक गृहीतक $!A$ या रूपाचे असेल,
+  तर आणि तरच हा संबंध खरा असतो. हे आदिम पुनरावर्ती रीतीने
+  पुढीलप्रमाणे व्यक्त करता येते:
+  \begin{multline*}
+    (d)_0 = 1 \land {}\\
+    \bexists{a<d}{(\fn{Discharge}(a, (d)_1, \fn{DischargeLabel}(d)) \land {}}\\
+      \fn{EndFmla}(d) = (\Gn{(} \concat a \concat \Gn{\lif}
+      \concat \fn{EndFmla}((d)_1) \concat \Gn{)}))
+  \end{multline*}
+  (येथे $a$ ही $!A$ ची गोडेल संख्या समजा.)
+
+  आणखी एका उदाहरणासाठी \Intro{\lexists} पाहू. $\delta$ मधील
+  अखेरचे निगमन योग्य असेल, तर आणि तरच !!a{formula}~$!A$,
+  बंद पद~$t$ आणि !!a{variable}~$x$ अशी असतात की
+  $\Subst{!A}{t}{x}$ हे !!{derivation}~$\delta_1$ चे अंतिम
+  !!{formula} असते आणि $\lexists[x][!A]$ हा अखेरच्या निगमनाचा
+  निष्कर्ष असतो. म्हणून $\fn{FollowsBy}_{\Intro{\lexists}}(d)$
+  पुढील अट पूर्ण झाली तर आणि तरच खरे असते:
+  \begin{multline*}
+    (d)_0 = 1 \land \fn{DischargeLabel}(d) = 0 \land {} \\
+    \bexists{a < d}{\bexists{x<d}{\bexists{t<d}{
+          (\fn{ClTerm}(t) \land \fn{Var}(x)  \land {}}}}\\
+    \fn{Subst}(a,t,x) = \fn{EndFmla}((d)_1) \land
+    \fn{EndFmla}(d) = (\Gn{\lexists} \concat x \concat a)).
+  \end{multline*}
+
+  मग $\fn{Correct}(d)$ ची व्याख्या अशी करतो:
+  \begin{multline*}
+    \fn{Sent}(\fn{EndFmla}(d)) \land {}\\
+    [(\fn{LastRule}(d) = 1 \land
+    \fn{FollowsBy}_{\Intro\land}(d)) \lor \dots \lor {}\\
+    (\fn{LastRule}(d) = 16 \land \fn{FollowsBy}_{\Elim\eq}(d)) \lor {}\\
+    \bexists{n<d}{\bexists{x<d}{(d = \tuple{0, x, n})}}].
+  \end{multline*}
+  पहिली ओळ $d$ चे अंतिम !!{formula} वाक्य आहे, याची खात्री
+  करते. शेवटची ओळ $d$ मध्ये फक्त गृहीतक असण्याचा प्रसंग हाताळते.
+\end{proof}
+
+\begin{prob}
+  \olref[inc][art][pnd]{prop:followsby} प्रमाणे पुढील गुणधर्म
+  परिभाषित करा:
+  \begin{enumerate}
+  \item $\fn{FollowsBy}_{\Elim{\lif}}(d)$,
+  \item $\fn{FollowsBy}_{\Elim{\eq}}(d)$,
+  \item $\fn{FollowsBy}_{\Elim{\lor}}(d)$,
+  \item $\fn{FollowsBy}_{\Intro{\lforall}}(d)$.
+  \end{enumerate}
+  शेवटच्या गुणधर्मासाठी, गोडेल संख्या~$d$ असलेल्या
+  !!{derivation} मधील अखेरचे निगमन आयगेन चराची अट पूर्ण करते
+  का, हे आदिम पुनरावर्ती रीतीने तपासता येते, हेही दाखवा.
+  म्हणजेच $\Intro{\lforall}$ निगमनाचा आयगेन चर~$a$ हा
+  $d$ च्या अंतिम !!{formula} मध्ये किंवा $d$ च्या मुक्त न केलेल्या
+  गृहीतकात येत नाही. यासाठी
+  \olref[inc][art][pnd]{prop:openassum} मधील आदिम पुनरावर्ती
+  विधेय $\fn{OpenAssum}$ वापरू शकता.
+\end{prob}
+
+\begin{prop}
+  \ollabel{prop:deriv}
+  $d$ ही योग्य !!{derivation}~$\delta$ ची गोडेल संख्या असेल,
+  तर खरा असणारा $\fn{Deriv}(d)$ संबंध आदिम पुनरावर्ती आहे.
+\end{prop}
+
+\begin{proof}
+  !!^a{derivation}~$\delta$ मधील प्रत्येक निगमन एखाद्या नियमाचा
+  योग्य वापर असेल, म्हणजेच तिच्या प्रत्येक उप-!!{derivation}s चा
+  शेवट योग्य निगमनाने होत असेल, तर ती योग्य असते. म्हणून
+  $\fn{Deriv}(d)$ तर आणि तरच
+  \[
+  \bforall{i<\len{\fn{SubtreeSeq}(d)}}{\fn{Correct}((\fn{SubtreeSeq}(d))_i)}
+  \]
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:openassum} $z$ ही गोडेल संख्या
+  !!a{undischarged} गृहीतक~$!A$ ची असेल, आणि हे गृहीतक
+  गोडेल संख्या~$d$ असलेल्या !!{derivation}~$\delta$ मध्ये असेल,
+  तर खरा असणारा $\fn{OpenAssum}(z, d)$ संबंध आदिम पुनरावर्ती आहे.
+\end{prop}
+
+\begin{proof}
+  गृहीतकाच्या एखाद्या आस्थितीला शून्येतर लेबल~$n$ असेल आणि ती
+  $\delta$ च्या अशा उप-!!{derivation} मध्ये येत असेल जिचा शेवट
+  मुक्तता-लेबल~$n$ असलेल्या नियमाने होतो, तर ती आस्थिती
+  !!{discharged} असते. म्हणून अशा गृहीतकाची किमान एक आस्थिती
+  $\delta$ मध्ये !!{discharged} नसेल, तर $!A$ हे
+  $\delta$ चे !!a{undischarged} गृहीतक असते. येथे सावध राहिले
+  पाहिजे: $\delta$ मध्ये $!A$ च्या !!{discharged} आणि
+  !!{undischarged} अशा दोन्ही आस्थिती असू शकतात.
+
+  $\delta_0$, \dots, $\delta_k$ ही क्रमिका पाहा. येथे $\delta_0 =
+  \delta$, $\delta_k$ हे गृहीतक $\Discharge{!A}{n}$ आहे
+  (एखाद्या~$n$ साठी), आणि $\delta_{i+1}$ ही $\delta_i$ ची तात्काळ
+  उप-!!{derivation} आहे. लेबल शून्य असेल, तर हे गृहीतक व्याख्येनेच
+  मुक्त न केलेले असते. अन्यथा, अशा क्रमिकेत गृहीतकाच्या आधीच्या कोणत्याही
+  $\delta_i$ चा शेवट मुक्तता-लेबल~$n$ असलेल्या निगमनाने होत नसेल,
+  तर $!A$ हे $\delta$ चे !!a{undischarged} गृहीतक आहे.
+
+  आदिम पुनरावर्ती फलन $\fn{SubtreeSeq}(d)$ हे $\delta$ च्या
+  सर्व उप-!!{derivation}s च्या गोडेल संख्यांची क्रमिका देते.
+  $\delta$ च्या मूळापासून गृहीतकापर्यंतचा उप-!!{derivation}s चा मार्ग त्यातून
+  निवडता येतो. अशी उपक्रमिका ओळखणे हा आदिम पुनरावर्ती संबंध आहे:
+  $\fn{Subseq}(s, s')$ तर आणि तरच
+  $\bforall{i<\len{s}}{\lexists[j<\len{s'}][(s)_i = (s')_j]}$.
+  येथे दिलेली अट प्रत्येक घटकाचे सदस्यत्व तपासते; ती स्वतःहून
+  क्रम-संरक्षण व्यक्त करत नाही. तात्काळ उप-!!{derivation} असण्याचा
+  संबंधही आदिम पुनरावर्ती आहे: $\fn{Subderiv}(d, d')$ तर आणि तरच
+  $\bexists{j<(d')_0}{d = (d')_{j+1}}$. म्हणून
+  $\fn{OpenAssum}(z, d)$ ची व्याख्या अशी करता येते:
+  \begin{multline*}
+    \bexists{s<\fn{SubtreeSeq}(d)}{(\fn{Subseq}(s, \fn{SubtreeSeq}(d))
+      \land (s)_0 = d \land {}} \\
+    \bexists{n<d}{((s)_{\len{s} \tsub 1} = \tuple{0, z, n} \land {}}\\
+      \bforall{i<(\len{s} \tsub 1)}{(\fn{Subderiv}((s)_{i+1}, (s)_i) \land {}}\\
+      (n=0 \lor \fn{DischargeLabel}((s)_i) \neq n)))).
+  \end{multline*}
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:prf-prim-rec}
+  समजा $\Gamma$ हा !!{sentence}s चा आदिम पुनरावर्ती संच आहे.
+  मग $\Prf[\Gamma](x, y)$ हा संबंध आदिम पुनरावर्ती आहे. तो असे व्यक्त
+  करतो: $x$ हा $\Gamma$ मधील !!{undischarged} गृहीतकांपासून
+  $!A$ च्या !!a{derivation}~$\delta$ चा संकेतांक आहे, आणि
+  $y$ ही $!A$ ची गोडेल संख्या आहे.
+\end{prop}
+
+\begin{proof}
+  समजा ``$y \in \Gamma$'' हे $R_\Gamma(y)$ या आदिम पुनरावर्ती
+  विधेयाने दिले आहे. $\Prf[\Gamma](x, y)$ आदिम पुनरावर्ती आहे,
+  हे दाखवायचे आहे. $y$ ही वाक्य~$!A$ ची गोडेल संख्या असेल,
+  आणि $x$ हा अंतिम !!{formula}~$!A$ असलेल्या नैसर्गिक निगमनातील
+  !!{derivation} चा संकेतांक असेल, तसेच तिची सर्व
+  !!{undischarged} गृहीतके $\Gamma$ मध्ये असतील, तर आणि तरच हा
+  संबंध खरा असतो.
+
+  \olref{prop:deriv} नुसार, $x$ ही नैसर्गिक निगमनातील योग्य
+  !!{derivation}~$\delta$ ची गोडेल संख्या असेल, तर आणि तरच खरा
+  असणारा $\fn{Deriv}(x)$ गुणधर्म आदिम पुनरावर्ती आहे. त्यामुळे
+  $\Prf[\Gamma](x, y)$ ची व्याख्या अशी करता येते:
+  \begin{align*}
+    \Prf[\Gamma](x, y) \defiff {}
+    & \fn{Deriv}(x) \land \fn{EndFmla}(x) = y \land {} \\
+    & \bforall{z < x}{(\fn{OpenAssum}(z, x) \lif R_\Gamma(z))}.
+  \end{align*}
+\end{proof}
+
+\end{document}
