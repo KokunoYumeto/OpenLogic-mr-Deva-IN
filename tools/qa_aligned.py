@@ -21,7 +21,7 @@ def maths(t):
     # its span before finding inline formulae, then pair outer dollars only at
     # brace depth zero so nested text-math dollars do not close the formula.
     # A tabular line break such as \\[2ex] must not be mistaken for \[...\].
-    display=re.compile(r'(?<!\\)\\\[(.*?)(?<!\\)\\\]|\\begin\{(?:align\*|multline\*)\}(.*?)\\end\{(?:align\*|multline\*)\}',re.S)
+    display=re.compile(r'(?<!\\)\\\[(.*?)(?<!\\)\\\]|\\begin\{(?:align\*|multline\*|eqnarray\*)\}(.*?)\\end\{(?:align\*|multline\*|eqnarray\*)\}',re.S)
     parts=[]
     masked=list(t)
     for match in display.finditer(t):
@@ -559,6 +559,13 @@ _DOCUMENTED_PROJECTIONS = {
          r'$\lexists[s][T(\num x,\num x,s)]$'),
         (r'$\lexists[s][!A_T(\num x,' + '\n' + r'  \num x, s)]$',
          r'$\lexists[s][T(\num x,' + '\n' + r'  \num x, s)]$'),
+    ],
+    'OLP-0305': [
+        # OLINC-048: S is a metatheoretic relation on numbers, not on numerals.
+        (r'S(n) & \lif & T \vdash !D_S(\num n)',
+         r'S(\num n) & \lif & T \vdash !D_S(\num n)'),
+        (r'\lnot S(n) & \lif & T \vdash \lnot !D_S(\num n)',
+         r'\lnot S(\num n) & \lif & T \vdash \lnot !D_S(\num n)'),
     ],
 }
 
