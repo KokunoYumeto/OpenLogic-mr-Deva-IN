@@ -1,0 +1,492 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: satisfaction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{sat}
+
+\olsection{पूर्ति}
+
+\begin{explain}
+द्वितीय-क्रम
+!!{formula}s साठी
+पूर्ति-संबंध
+$\Sat{M}{!A}[s]$
+परिभाषित करताना
+द्वितीय-क्रम
+!!{variable}s
+समाविष्ट करण्यासाठी
+व्याख्या वाढवाव्या
+लागतात.
+!!a{structure}
+ही संकल्पना
+द्वितीय-क्रम
+आणि प्रथम-क्रम
+तर्कशास्त्रात
+सारखीच असते.
+फरक फक्त
+चर-मूल्यांकन~$s$
+बाबत असतो:
+आता त्याने
+प्रथम-क्रम
+!!{variable}s
+बरोबरच
+द्वितीय-क्रम
+!!{variable}s
+यांनाही मूल्ये
+द्यावी लागतात.
+\end{explain}
+
+\begin{defn}[चर-मूल्यांकन]
+!!a{structure}~$\Struct{M}$
+साठीचे
+\emph{चर-मूल्यांकन}~$s$
+हे असे फलन
+आहे जे पुढीलपैकी
+प्रत्येकाला
+दिल्याप्रमाणे
+प्रतिचित्रित करते:
+\begin{enumerate}
+\item वस्तू-!!{variable}~$\Obj{v_i}$
+  याला~$\Domain M$
+  मधील घटकाकडे,
+  म्हणजे
+  $s(\Obj{v_i}) \in \Domain{M}$;
+\item $n$-स्थानी
+  संबंध-चल~$\Obj{V_i^n}$
+  याला~$\Domain{M}$
+  वरील $n$-स्थानी
+  संबंधाकडे,
+  म्हणजे
+  $s(\Obj{V_i^n}) \subseteq \Domain{M}^n$;
+\item $n$-स्थानी
+  फलन-चल~$\Obj{u_i^n}$
+  याला
+  $\Domain{M}$
+  वरून $\Domain{M}$
+  मध्ये जाणाऱ्या
+  $n$-स्थानी
+  फलनाकडे,
+  म्हणजे
+  $s(\Obj{u_i^n})\colon \Domain{M}^n \to \Domain{M}$;
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+!!^a{structure}
+प्रत्येक !!{constant}
+आणि !!{function}
+ला !!a{value}
+देते, तर द्वितीय-क्रम
+चर-मूल्यांकन
+प्रत्येक वस्तू-चल
+आणि फलन-चल
+यांना अनुक्रमे
+वस्तू आणि फलने
+देते. या दोन्हींच्या
+साहाय्याने
+प्रत्येक पदाला
+मूल्य देता येते.
+\end{explain}
+
+\begin{defn}[पदाचे \usetoken{S}{value}]
+$t$ हे भाषा~$\Lang L$
+मधील पद,
+$\Struct M$ ही~$\Lang L$
+साठी !!a{structure},
+आणि $s$ हे~$\Struct M$
+साठी !!a{variable}
+मूल्यांकन असेल,
+तर \emph{!!{value}}~
+$\Value{t}{M}[s]$
+हे प्रथम-क्रम
+पदांप्रमाणेच,
+पुढील अतिरिक्त
+खंडासह परिभाषित
+होते:
+\begin{quote}
+\indcase{t}{\Atom{u}{t_1, \ldots, t_n}}{
+\[
+\Value{\indfrm}{M}[s] = s(u)(\Value{t_1}{M}[s], \ldots,
+\Value{t_n}{M}[s]).
+\]}
+\end{quote}
+\end{defn}
+
+\begin{defn}[$x$-पर्याय]
+$s$ हे !!a{structure}~$\Struct M$
+साठी !!a{variable}
+मूल्यांकन असेल,
+तर~$\Struct M$
+साठीचे असे
+कोणतेही !!{variable}
+मूल्यांकन $s'$
+जे $s$ पेक्षा
+जास्तीत जास्त
+$x$ ला दिलेल्या
+मूल्यातच भिन्न
+असेल, त्याला
+$s$ चा
+\emph{$x$-पर्याय}
+म्हणतात.
+$s'$ हा $s$
+चा $x$-पर्याय
+असेल, तर
+$\varAssign{s'}{s}{x}$
+असे लिहितो.
+(द्वितीय-क्रम
+चल $X$ किंवा
+$u$ यांसाठीही
+तसेच.)
+\end{defn}
+
+\begin{defn}
+  $s$ हे !!a{structure}~$\Struct M$
+  साठी !!a{variable}
+  मूल्यांकन
+  आणि $m \in \Domain{M}$
+  असेल, तर
+  मूल्यांकन~$\Subst{s}{m}{x}$
+  हे पुढीलप्रमाणे
+  परिभाषित केलेले
+  !!{variable}
+  मूल्यांकन आहे:
+  \[\Subst{s}{m}{y} = \begin{cases}
+    m & \text{if } y \ident x\\
+    s(y) & \text{otherwise},
+  \end{cases}\]
+  $X$ हे $n$-स्थानी
+  संबंध-!!{variable}
+  आणि $M \subseteq
+  \Domain{M}^n$
+  असेल, तर
+  $\Subst{s}{M}{X}$
+  हे पुढीलप्रमाणे
+  परिभाषित केलेले
+  !!{variable}
+  मूल्यांकन आहे:
+  \[\Subst{s}{M}{y} = \begin{cases}
+    M & \text{if } y \ident X\\
+    s(y) & \text{otherwise}.
+  \end{cases}\]
+  $u$ हे $n$-स्थानी
+  फलन-!!{variable}
+  आणि $f\colon \Domain{M}^n
+  \to \Domain{M}$
+  असेल, तर
+  $\Subst{s}{f}{u}$
+  हे पुढीलप्रमाणे
+  परिभाषित केलेले
+  !!{variable}
+  मूल्यांकन आहे:
+  \[\Subst{s}{f}{y} = \begin{cases}
+    f & \text{if } y \ident u\\
+    s(y) & \text{otherwise}.
+  \end{cases}\]
+  प्रत्येक बाबतीत
+  $y$ हे कोणतेही
+  प्रथम-क्रम किंवा
+  द्वितीय-क्रम
+  !!{variable}
+  असू शकते.
+\end{defn}
+
+\begin{defn}[पूर्ति]
+द्वितीय-क्रम
+!!{formula}s~$!A$
+साठी पूर्तीची
+व्याख्या
+\olref[fol][syn][sat]{defn:satisfaction}
+प्रमाणेच आहे;
+त्यात पुढील
+खंड वाढवले
+आहेत:
+\begin{enumerate}
+\item \indcase{!A}{\Atom{X^n}{t_1, \dots, t_n}}{$\Sat{M}{\indfrm}[s]$
+  हे $\langle \Value{t_1}{M}[s], \dots, \Value{t_n}{M}[s] \rangle \in
+  s(X^n)$ असेल तर आणि तरच खरे.}
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[X][!B]}{$\Sat{M}{\indfrm}[s]$ हे प्रत्येक $M
+  \subseteq \Domain{M}^n$ साठी $\Sat{M}{!B}[\Subst{s}{M}{X}]$ असेल
+  तर आणि तरच खरे.}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[X][!B]}{$\Sat{M}{\indfrm}[s]$ हे किमान
+  एका $M \subseteq \Domain{M}^n$ साठी
+  $\Sat{M}{!B}[\Subst{s}{M}{X}]$ असेल तर आणि तरच खरे.}}{}
+
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[u][!B]}{$\Sat{M}{\indfrm}[s]$ हे प्रत्येक
+  $f\colon \Domain{M}^n \to \Domain{M}$ साठी
+  $\Sat{M}{!B}[\Subst{s}{f}{u}]$ असेल तर आणि तरच खरे.}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[u][!B]}{$\Sat{M}{\indfrm}[s]$ हे किमान
+  एका $f\colon \Domain{M}^n \to \Domain{M}$ साठी
+  $\Sat{M}{!B}[\Subst{s}{f}{u}]$ असेल तर आणि तरच खरे.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+  !!{formula}
+  $\lforall[z][(\Atom{X}{z} \liff \lnot
+    \Atom{Y}{z})]$
+  विचारात घ्या.
+  त्यात द्वितीय-क्रम
+  संख्यक नाहीत,
+  पण द्वितीय-क्रम
+  !!{variable}s
+  $X$ आणि~$Y$
+  आहेत (येथे ती
+  एक-स्थानी मानली
+  आहेत).
+  याच्याशी संबंधित
+  प्रथम-क्रम
+  !!{sentence}
+  $\lforall[z][(\Atom{P}{z} \liff \lnot \Atom{R}{z})]$
+  असे म्हणते की
+  $P$ च्या
+  अर्थनिर्धारणात
+  येणारी कोणतीही
+  वस्तू $R$ च्या
+  अर्थनिर्धारणात
+  येत नाही
+  आणि उलटही.
+  !!a{structure}
+  मध्ये
+  !!a{predicate}~$P$
+  चे अर्थनिर्धारण
+  $\Assign{P}{M}$
+  याने दिलेले
+  असते. पण
+  $X$ आणि~$Y$
+  सारख्या द्वितीय-क्रम
+  !!{variable}s
+  चे अर्थनिर्धारण
+  !!{structure}
+  स्वतः देत नाही;
+  ते !!a{variable}
+  मूल्यांकन देते.
+  हे द्वितीय-क्रम
+  !!{formula}
+  !!a{sentence}
+  नाही (त्यात
+  $X$ आणि~$Y$
+  ही मुक्त
+  !!{variable}s
+  आहेत);
+  म्हणून त्याची
+  पूर्ति फक्त
+  !!a{structure}~$\Struct{M}$
+  आणि त्यासोबत
+  !!a{variable}
+  मूल्यांकन~$s$
+  यांच्या सापेक्ष
+  ठरते.
+
+  $\Sat{M}{\lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})]}[s]$
+  हे $s(X)$ मधील
+  !!{element}s
+  हे $s(Y)$ मधील
+  !!{element}s
+  नसतील आणि
+  उलटही असेल
+  तेव्हा, म्हणजे
+  $s(Y) = \Domain{M} \setminus s(X)$
+  असेल तर आणि
+  तरच खरे असते.
+  उदाहरणार्थ,
+  $\Domain{M} = \{1, 2, 3\}$
+  घ्या.
+  येथे !!{predicate}s,
+  !!{function}s
+  किंवा !!{constant}s
+  येत नसल्यामुळे
+  $\Struct{M}$
+  चे आधारक्षेत्र
+  एवढेच संबंधित
+  आहे.
+  आता
+  $s_1(X) = \{1, 2\}$
+  आणि
+  $s_1(Y) = \{3\}$
+  असताना
+  $\Sat{M}{\lforall[z][(\Atom{X}{z}
+      \liff \lnot \Atom{Y}{z})]}[s_1]$
+  खरे आहे.
+
+  याउलट,
+  $s_2(X) = \{1, 2\}$
+  आणि
+  $s_2(Y) = \{2, 3\}$
+  असल्यास
+  $\Sat/{M}{\lforall[z][(\Atom{X}{z} \liff \lnot
+      \Atom{Y}{z})]}[s_2]$.
+  कारण
+  $\Sat{M}{\Atom{X}{z}}[\Subst{s_2}{2}{z}]$
+  (कारण
+  $2 \in \Subst{s_2}{2}{z}(X)$),
+  पण
+  $\Sat/{M}{\lnot \Atom{Y}{z}}[\Subst{s_2}{2}{z}]$
+  (कारण
+  $2 \in
+  \Subst{s_2}{2}{z}(Y)$
+  सुद्धा).
+\end{ex}
+
+\begin{ex}
+  $\Sat{M}{\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+  \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]}[s]$
+  हे तेव्हाच खरे
+  असते जेव्हा
+  असा $N \subseteq \Domain{M}$
+  असतो की
+  $\Sat{M}{(\lexists[y][\Atom{Y}{y}] \land \lforall[z][(\Atom{X}{z}
+  \liff \lnot \Atom{Y}{z})])}[\Subst{s}{N}{Y}]$.
+  आणि असे
+  $N \neq \emptyset$
+  असताना
+  ($\Sat{M}{\lexists[y][\Atom{Y}{y}]}[\Subst{s}{N}{Y}]$
+  मिळण्यासाठी)
+  आणि आधीच्या
+  उदाहरणाप्रमाणे
+  $N = \Domain{M} \setminus s(X)$
+  असताना घडते.
+  दुसऱ्या शब्दांत,
+  $\Sat{M}{\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+  \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]}[s]$
+  हे
+  $\Domain{M} \setminus s(X)$
+  रिकामे नसेल,
+  म्हणजे
+  $s(X) \neq
+  \Domain{M}$
+  असेल, तर आणि
+  तरच खरे असते.
+  म्हणून
+  $\Domain{M}
+  = \{1, 2, 3\}$
+  आणि
+  $s(X) = \{1, 2\}$
+  असल्यास
+  !!{formula}
+  ची पूर्ति होते;
+  पण
+  $s(X) = \{1, 2, 3\}
+  = \Domain{M}$
+  असल्यास होत नाही.
+
+  $s(X) = \Domain{M}$
+  असताना या
+  !!{formula}
+  ची पूर्ति
+  होत नसल्यामुळे,
+  पुढील
+  !!{sentence}
+  \[
+  \lforall[X][\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+      \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]]
+  \]
+  कधीच पूर्ण
+  होत नाही:
+  कोणतीही
+  !!{structure}~$\Struct{M}$
+  घेतली तरी
+  $s(X) = \Domain{M}$
+  हे मूल्यांकन
+  त्या
+  !!{sentence}
+  ला असत्य
+  ठरवेल.
+  याउलट,
+  पुढील वाक्य
+  \[
+  \lexists[X][\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+      \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]]
+  \]
+  कोणत्याही
+  मूल्यांकन~$s$
+  च्या सापेक्ष
+  पूर्ण होते,
+  कारण
+  $M \subseteq \Domain{M}$
+  पण
+  $M \neq \Domain{M}$
+  असा संच नेहमी
+  निवडता येतो
+  (उदा.,
+  $M = \emptyset$).
+\end{ex}
+
+\begin{ex}
+  द्वितीय-क्रम
+  !!{sentence}~
+  $\lforall[X][\lforall[y][X(y)]]$
+  असे म्हणते की
+  प्रत्येक
+  $1$-स्थानी
+  संबंध, म्हणजे
+  प्रत्येक
+  गुणधर्म, प्रत्येक
+  वस्तूला लागू
+  होतो.
+  हे स्पष्टपणे
+  कधीच खरे नसते:
+  प्रत्येक~$\Struct{M}$
+  मध्ये
+  $s(X) = \emptyset$
+  आणि
+  $s(y) = a \in
+  \Domain{M}$
+  असे चर-मूल्यांकन~$s$
+  घेतल्यास
+  $\Sat/{M}{X(y)}[s]$
+  मिळते.
+  याचा अर्थ
+  $!A \lif
+  \lforall[X][\lforall[y][X(y)]]$
+  हे द्वितीय-क्रम
+  तर्कशास्त्रात
+  $\lnot !A$
+  शी सममूल्य
+  आहे; म्हणजे
+  $\Sat{M}{!A \lif
+  \lforall[X][\lforall[y][X(y)]]}$
+  हे
+  $\Sat{M}{\lnot !A}$
+  असेल तर आणि
+  तरच खरे.
+  दुसऱ्या शब्दांत,
+  द्वितीय-क्रम
+  तर्कशास्त्रात
+  $\lforall$
+  आणि~$\lif$
+  वापरून
+  $\lnot$
+  परिभाषित
+  करता येते.
+\end{ex}
+
+\begin{prob}
+  द्वितीय-क्रम
+  तर्कशास्त्रात
+  $\lforall$
+  आणि~$\lif$
+  वापरून इतर
+  संयोजके
+  परिभाषित
+  करता येतात
+  हे दाखवा:
+  \begin{enumerate}
+    \item द्वितीय-क्रम तर्कशास्त्रात $!A \land !B$ हे
+    $\lforall[X][(!A \lif (!B \lif \lforall[x][X(x)])\lif
+    \lforall[x][X(x)])]$ शी सममूल्य आहे हे सिद्ध करा.
+    \item फक्त $\lforall$ आणि $\lif$ वापरून
+    $!A \lor !B$ शी सममूल्य द्वितीय-क्रम सूत्र शोधा.
+  \end{enumerate}
+\end{prob}
+
+\end{document}
