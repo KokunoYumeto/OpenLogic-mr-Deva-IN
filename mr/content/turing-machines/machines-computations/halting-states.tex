@@ -1,0 +1,76 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: halting-states
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{hal}
+\olsection{थांबण्याच्या अवस्था}
+
+\begin{explain}
+अमलात आणण्यासाठी कोणतीही सूचना उरली नसेल तेव्हाच आपली यंत्रे
+थांबतात, अशी आपण व्याख्या केली आहे. पण ट्यूरिंग यंत्रांच्या
+नेहमीच्या निरूपणांत थांबण्यासाठी खास \emph{थांबण्याची अवस्था}~$h$
+असते; येथे $h \in Q$.
+
+थांबण्याच्या अवस्थेमागील कल्पना सोपी आहे: यंत्राचे काम संपले की
+(ते आदान स्वीकारण्यास तयार झाले किंवा त्याने प्रदान लिहून संपवले
+की) ते~$h$ अवस्थेत जाते आणि तिथे थांबते. काही यंत्रांना अशा दोन
+अवस्था असतात: एक आदान स्वीकारण्यासाठी आणि दुसरी ते नाकारण्यासाठी.
+\end{explain}
+
+\begin{ex}\emph{थांबण्याच्या अवस्था}.
+ही कल्पना स्पष्ट करण्यासाठी सम यंत्रात बदल करून पाहू. आदानातील
+रेघांची संख्या सम असेल तेव्हा यंत्र~$q_0$ अवस्थेत थांबण्याऐवजी,
+त्याला थांबण्याच्या अवस्थेत पाठवणारी सूचना जोडू शकतो.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial, state]         (A)                     {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below of=A] {$h$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (B)
+  	    edge node {\TMtrans{\TMblank}{\TMblank}{N}} (C)
+        (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{R}} (B)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (A);
+\end{tikzpicture}
+\]
+
+उदाहरण आणखी वाढवू. यंत्राला आदानातील रेघांची संख्या विषम असल्याचे
+आढळल्यास मूळ सम यंत्र कधीच थांबत नाही. चक्रात फिरत राहणाऱ्या
+सूचनेच्या जागी यंत्राला \emph{नकार} अवस्था~$r$ मध्ये नेणारी सूचना
+देऊन यंत्रात बदल करू शकतो.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)                     {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below of=A] {$h$};
+  \node[state]         (D) [below of=B] {$r$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (B)
+  	    edge node {\TMtrans{\TMblank}{\TMblank}{N}} (C)
+        (B) edge node {\TMtrans{\TMblank}{\TMblank}{N}} (D)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (A);
+\end{tikzpicture}
+\]
+\end{ex}
+
+\begin{explain}
+अशा प्रसंगी खास थांबण्याची अवस्था जोडल्याने यंत्र कोणती आदाने
+स्वीकारते आणि कोणती नाकारते हे स्पष्ट होते. पण खास थांबण्याची
+अवस्था जोडल्याने यंत्राची संगणनशक्ती वाढत नाही, हेही लक्षात
+घ्यावे. त्याचप्रमाणे थांबण्याची कमी औपचारिक कल्पनाही उपयोगाची
+आहे. या प्रकरणात आतापर्यंत वापरलेल्या थांबण्याच्या व्याख्येमुळे
+\emph{थांबण्याची समस्या} याचा पुरावा अंतर्ज्ञानी रीतीने
+सहज दाखवता येतो. म्हणून आपण आपली मूळ व्याख्या पुढेही वापरू.
+\end{explain}
+
+\end{document}

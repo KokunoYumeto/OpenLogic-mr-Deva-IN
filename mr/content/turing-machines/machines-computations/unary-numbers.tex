@@ -1,0 +1,245 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: unary-numbers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{una}
+\olsection{संख्यांचे एकचिन्ही निरूपण}
+
+\begin{explain}
+ट्यूरिंग यंत्रे त्यांच्या फितीवर लिहिलेल्या चिन्हांच्या क्रमिकांवर
+कार्य करतात. यंत्र वापरत असलेल्या वर्णमालेनुसार या क्रमिका विविध
+आदानांचे आणि प्रदानांचे निरूपण करू शकतात. विशेष रस आहे तो
+\emph{अंकगणितीय} फलने, म्हणजे नैसर्गिक संख्यांची फलने, संगणित करणाऱ्या
+ट्यूरिंग यंत्रांत. धन पूर्णांकांचे निरूपण करण्याचा एक सोपा मार्ग म्हणजे
+एकाच चिन्हाच्या~$\TMstroke$ क्रमिकांनी त्यांचे सांकेतीकरण करणे.
+$n \in \Nat$ असेल, तर $n = 0$ असताना $\TMstroke^n$ ही रिकामी
+क्रमिका मानू; अन्यथा ती नेमक्या $n$ $\TMstroke$ चिन्हांची क्रमिका
+असेल.
+\end{explain}
+
+\begin{defn}[संगणन]
+ट्यूरिंग यंत्र~$M$ हे $f\colon \Nat^k \to \Nat$ फलन \emph{संगणित
+करते}, असे तेव्हा आणि केवळ तेव्हाच म्हणतो, जेव्हा पुढील स्वरूपाचे
+प्रत्येक आदान घेतल्यावर
+\[
+\TMstroke^{n_1} \TMblank \TMstroke^{n_2} \TMblank \dots \TMblank \TMstroke^{n_k}
+\]
+$M$~थांबते आणि त्याचे प्रदान $\TMstroke^{f(n_1, \dots, n_k)}$ असते.
+\end{defn}
+
+\begin{prob}
+ट्यूरिंग यंत्र~$M$ हे $f\colon \Nat^k \to \Nat^m$ फलन
+कधी संगणित करते याची व्याख्या द्या.
+\end{prob}
+
+\begin{ex}\ollabel{ex:adder}
+\emph{बेरीज:}
+$f(n,m) = n + m$ हे फलन संगणित करणारे यंत्र बनवू.
+यासाठी सुरुवातीला फितीवर अनुक्रमे $n$ आणि~$m$ लांबीचे
+$\TMstroke$ चिन्हांचे दोन खंड असले पाहिजेत आणि शेवटी
+$n+m$~$\TMstroke$ चिन्हांचा एकच खंड राहिल्यावर यंत्र थांबले
+पाहिजे. दोन $\TMstroke$ आदान-खंडांमध्ये~$\TMblank$ असते. म्हणून एक पद्धत अशी:
+$\TMblank$ असलेल्या घरात एक रेघ लिहा आणि शेवटचे~$\TMstroke$
+पुसून टाका.
+\begin{figure}\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+           edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge [loop above] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (C);
+\end{tikzpicture}
+\]\caption{$f(x,y) = x+y$ संगणित करणारे यंत्र}
+\ollabel{fig:adder}
+\end{figure}
+\end{ex}
+
+\begin{prob}
+$\tuple{3,2}$ हे आदान असताना \olref[tur][mac][una]{ex:adder}
+मधील यंत्राच्या स्थितिवर्णनांचा क्रम पाहा. यंत्राने $0+0$ संगणित
+केल्यास काय घडते?
+\end{prob}
+
+\begin{explain}
+\olref[rep]{ex:doubler} मध्ये आपण एका ट्यूरिंग यंत्राचे उदाहरण दिले:
+ते~$\TMstroke$ चिन्हांची क्रमिका आदान म्हणून घेते आणि फितीवर
+दुप्पट~$\TMstroke$ चिन्हांची क्रमिका ठेवून थांबते. हे दुप्पट करणारे
+यंत्र आहे. पण दुप्पट झालेल्या $\TMstroke$ खंडाच्या डावीकडेही
+प्रदानात $\TMblank$ चिन्हे येतात. म्हणून, वाटू शकते तसे, ते
+प्रत्यक्षात $f(x) = 2x$ हे फलन संगणित करत नाही. ही अडचण
+दूर करण्याचे दोन मार्ग पाहू.
+\end{explain}
+
+\begin{ex}
+\olref{fig:doubler-disc} मधील यंत्र $f(x) =
+2x$ हे फलन संगणित करते. \olref[rep]{ex:doubler} मधील यंत्र
+प्रत्येक आदानातील~$\TMstroke$ पुसून फितीच्या अगदी उजवीकडे दोन
+$\TMstroke$ चिन्हे लिहिते. त्याऐवजी हे यंत्र आदानातील प्रत्येक
+$\TMstroke$ साठी उजवीकडे एकच~$\TMstroke$ वाढवते. आदान कुठे
+संपते हे लक्षात ठेवण्यासाठी ते आदान आणि वाढवलेल्या रेघा यांच्यामध्ये
+एक~$\TMblank$ ठेवते; अगदी शेवटी त्या जागी~$\TMstroke$ लिहिते.
+तसेच आदानात सध्या कुठे आहोत हे ``लक्षात ठेवण्यासाठी'' आदान-खंडातील
+एक~$\TMstroke$ तात्पुरते~$\TMblank$ ने बदलते.
+  \begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (0)              {$q_0$};
+  \node[state]         (1) [above of=0] {$q_1$};
+  \node[state]         (2) [above of=1] {$q_2$};
+  \node[state]         (3) [right of=2] {$q_3$};
+  \node[state]         (4) [below of=3] {$q_4$};
+  \node[state]         (5) [below of=4] {$q_5$};
+  \node[state]         (6) [above right of=4] {$q_6$};
+  \node[state]         (7) [below of=6] {$q_7$};
+  \node[state]         (8) [below of=7] {$q_8$};
+
+  \path (0) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (1)
+%    (0) edge node {\TMtrans{\TMblank}{\TMblank}{\TMstay}} (h)
+    (1) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (1)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (3)
+        edge node[left] {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (4)
+    (4) edge        node[left] {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (0)
+    (4) edge      node[sloped] {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (6)
+    (6) edge              node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (7)
+    (7) edge [loop right] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (7)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (8)
+    (8) edge [loop right] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (8);
+    \end{tikzpicture}
+\]
+\caption{$f(x) = 2x$ संगणित करणारे यंत्र}
+\ollabel{fig:doubler-disc}
+\end{figure}
+\end{ex}
+
+\begin{ex}\ollabel{ex:mover}
+$f(x) = 2x$ संगणित करण्याचा दुसरा मार्ग म्हणजे मूळ दुप्पट
+करणारे यंत्र तसेच ठेवून, शेवटी दुप्पट झालेला रेघांचा खंड फितीच्या
+अगदी डावीकडे नेणाऱ्या अवस्था आणि सूचना जोडणे. \olref{fig:mover}
+मधील यंत्र नेमका हा शेवटचा भाग करते: सुरुवातीला फितीवर
+प्रथम~$\TMblank$ चिन्हांचा आणि नंतर~$\TMstroke$ चिन्हांचा खंड
+असतो (आणि शीर्ष~$\TMblank$ खंडातील कोणत्याही घरावर असते);
+मग ते $\TMstroke$ चिन्हे एकेक करून पुसते आणि फितीच्या सुरुवातीला
+लिहिते. काम कधी संपले हे ओळखता यावे म्हणून ते प्रथम
+$\TMstroke$ खंडाचा शेवट~$\TMendtape$ चिन्हाने दाखवते;
+शेवटी हे चिन्ह पुसले जाते. अवस्था~$q_6$ पासून मोजायला
+सुरुवात केली आहे, जेणेकरून त्या मूळ दुप्पट करणाऱ्या यंत्रात जोडता
+येतील. त्यासाठी एक अतिरिक्त सूचना
+$\delta(q_0,
+\TMblank) = \tuple{q_6,\TMblank,\TMstay}$, म्हणजे~$q_0$ पासून
+~$q_6$ कडे~$\TMtrans{\TMblank}{\TMblank}{\TMstay}$ हे लेबल असलेला
+बाण, एवढीच हवी. (येथे एक सूक्ष्म अडचण आहे: परिणामी यंत्र
+आदान~$x=0$ साठी चालत नाही. ही अडचण सरावासाठी ठेवू.)
+\begin{figure}
+  \[
+  \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                      semithick]
+    \tikzstyle{every state}=[fill=none,draw=black,text=black]
+    \node[initial,state] (6)              {$q_6$};
+    \node[state]         (7) [right of=6] {$q_7$};
+    \node[state]         (8) [right of=7] {$q_8$};
+    \node[state]         (9) [below of=8] {$q_9$};
+    \node[state]         (10) [left of=9] {$q_{10}$};
+    \node[state]         (11) [left of=10]  {$q_{11}$};
+    \node[state]         (12) [below of=11]  {$q_{12}$};
+    \node[state]         (13) [right of=12] {$q_{13}$};
+    \node[state]         (14) [right of=13] {$q_{14}$};
+    \path
+    (6)  edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (7)
+    (7)  edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (7)
+         edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (8)
+    (8)  edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (8)
+         edge node {\TMtrans{\TMblank}{\TMendtape}{\TMleft}} (9)
+    (9)  edge [loop right] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (9)
+         edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (10)
+    (10) edge node[above] {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (11)
+    (11) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (11)
+         edge node[left] {\begin{tabular}{@{}l@{}}
+          \TMtrans{\TMendtape}{\TMendtape}{\TMright}\\
+          \TMtrans{\TMstroke}{\TMstroke}{\TMright}
+         \end{tabular}} (12)
+    (12) edge node[] {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (13)
+    (13) edge [loop below] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (13)
+         edge node[sloped] {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (11)
+    (13) edge node {\TMtrans{\TMendtape}{\TMblank}{\TMstay}} (14);
+  \end{tikzpicture}
+  \]
+  \caption{$\TMstroke$ चिन्हांचा खंड डावीकडे नेणे}
+  \ollabel{fig:mover}
+\end{figure}
+\end{ex}
+
+\begin{prob}
+\olref[tur][mac][una]{ex:mover} मध्ये आपण
+\olref[tur][mac][una]{fig:doubler-disc} मधील दुप्पट करणारे यंत्र
+आणि \olref[tur][mac][una]{fig:mover} मधील खंड हलवणारे यंत्र
+एकत्र करून बनणाऱ्या यंत्राचे वर्णन केले. हे संयुक्त यंत्र
+आदान~$x=0$, म्हणजे रिकामी फीत, घेऊन सुरू केल्यास काय घडते?
+या वेळी यंत्राने प्रदान~$2x=0$ देऊन थांबावे यासाठी त्यात
+काय बदल कराल? (एक अवस्था आणि एक संक्रमण जोडून हे करता
+आले पाहिजे.)
+\end{prob}
+
+\begin{prob}
+\emph{वजाबाकी:} $n$ आणि~$m$ लांबीच्या रेघांच्या दोन अरिक्त
+क्रमिका आदान म्हणून दिल्या असताना, जेथे $n >
+m$ आहे, $f(n,m) = n - m$ हे फलन संगणित करणारे ट्यूरिंग यंत्र
+रचा.
+\end{prob}
+
+\begin{prob}
+\emph{समता:} पुढील फलन संगणित करणारे ट्यूरिंग यंत्र रचा:
+\[
+\fn{equality}(n,m) = 
+\begin{cases}
+  \text{1} & \text{$n = m$ असेल तर} \\
+  \text{0} & \text{$n \neq m$ असेल तर}
+\end{cases}
+\]
+येथे~$n$ आणि~$m \in \PosInt$ आहेत.
+\end{prob}
+
+\begin{prob}
+$x$ आणि $y$ हे धन पूर्णांक फितीवर $\TMblank$ ने विभक्त केलेल्या
+$\TMstroke$ चिन्हांच्या क्रमिकांनी निरूपित केले असताना
+$\min(x,y)$ हे फलन संगणित करणारे ट्यूरिंग यंत्र रचा.
+यंत्राच्या वर्णमालेत अतिरिक्त चिन्हे वापरू शकता.
+
+$\min$ हे फलन आपल्या आदानांतील लहान मूल्य निवडते; म्हणून
+$\min(3,5)=3$, $\min(20,16)=16$, $\min(4,4)=4$, इत्यादी.
+\end{prob}
+
+\begin{defn}
+ट्यूरिंग यंत्र~$M$ हे $f\colon \Nat^k
+  \pto \Nat$ हे आंशिक फलन तेव्हा आणि केवळ तेव्हाच संगणित
+करते, जेव्हा
+  \begin{enumerate}
+    \item $f(n_1, \dots, n_k) = m$ असेल तर $M$ हे
+    $\TMstroke^{n_1}\concat\TMblank\concat
+    \dots \concat\TMblank\concat\TMstroke^{n_k}$ आदानावर
+    थांबते आणि त्याचे प्रदान $\TMstroke^{m}$ असते.
+    \item $f(n_1, \dots, n_k)$ अपरिभाषित असेल तर $M$
+    मुळीच थांबत नाही, किंवा थांबले तरी त्याचे प्रदान
+    $\TMstroke$ चिन्हांचा एकच खंड नसते.
+  \end{enumerate}
+\end{defn}
+
+\end{document}

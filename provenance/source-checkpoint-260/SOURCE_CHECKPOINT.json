@@ -1,0 +1,177 @@
+{
+  "schema": "openlogic-incremental-source-checkpoint/1",
+  "checkpoint_id": "mr-Deva-IN-source-260-20260926",
+  "generated_utc": "2026-09-26T01:30:44.900264Z",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "base_checkpoint": {
+    "path": "provenance/source-checkpoint-254/SOURCE_CHECKPOINT.json",
+    "bytes": 12735,
+    "sha256": "01e18d0d862cc18ed917d78849fa5f9ad586c22a1df673e3a7c3e3e353245072"
+  },
+  "scope": {
+    "translated_source_units": 260,
+    "total_source_units": 722,
+    "remaining_source_units": 462,
+    "aligned_content_segments": 2567,
+    "complete_source_chapters": 25,
+    "complete_reader_chapters": 20,
+    "first_incremental_unit": "OLP-0258",
+    "last_unit": "OLP-0263",
+    "next_unit": "OLP-0264",
+    "complete_edition": false
+  },
+  "translation_files": [
+    {
+      "unit_id": "OLP-0258",
+      "path": "mr/content/turing-machines/machines-computations/unary-numbers.tex",
+      "bytes": 15941,
+      "sha256": "95b1447653b101863b991f8233d9e2908bae6bc5455b6dcd4d8af52ed4fa5f48",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0259",
+      "path": "mr/content/turing-machines/machines-computations/halting-states.tex",
+      "bytes": 5098,
+      "sha256": "186c9da615765c01d1a5ee9bac21b37de8696da9b691877ccaa521e104812569",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0260",
+      "path": "mr/content/turing-machines/machines-computations/disciplined-machines.tex",
+      "bytes": 8295,
+      "sha256": "ad488711754f9ec6169e1f2105e19169f69a5cefedf1038d8af744bedc51acf5",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0261",
+      "path": "mr/content/turing-machines/machines-computations/combining-machines.tex",
+      "bytes": 12815,
+      "sha256": "44ded8de4c8dde4e017ffe46533ace86ac1f5e2958977bab131b9feca1ed9046",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0262",
+      "path": "mr/content/turing-machines/machines-computations/variants.tex",
+      "bytes": 9809,
+      "sha256": "522b15593eb098f74cb9af3b123322c142ef19d6a675d53cec8734e082eec371",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0263",
+      "path": "mr/content/turing-machines/machines-computations/church-turing-thesis.tex",
+      "bytes": 4832,
+      "sha256": "5154c308a203ab11fe06776c82873fe2f580f9ebc4e9ade27880bb2197a6cf44",
+      "role": "new translated source"
+    }
+  ],
+  "semantic_reviews": [
+    {
+      "unit_id": "OLP-0258",
+      "path": "provenance/source-checkpoint-260/SEMANTIC_REVIEW-OLP0258.json",
+      "bytes": 3945,
+      "sha256": "7e3a25544e2cdb256a3f4e0d4f55e2ec112ae7b486e1f24dc048dea9e06bf47c"
+    },
+    {
+      "unit_id": "OLP-0259",
+      "path": "provenance/source-checkpoint-260/SEMANTIC_REVIEW-OLP0259.json",
+      "bytes": 2413,
+      "sha256": "b99565e12f6443be8dd23c81a821c72cf043ab52fc4767ce148c6c364d9b77dc"
+    },
+    {
+      "unit_id": "OLP-0260",
+      "path": "provenance/source-checkpoint-260/SEMANTIC_REVIEW-OLP0260.json",
+      "bytes": 3500,
+      "sha256": "a9cd8158d67966f48191ef874ed161f83c7563704b2a30fbc555179645916261"
+    },
+    {
+      "unit_id": "OLP-0261",
+      "path": "provenance/source-checkpoint-260/SEMANTIC_REVIEW-OLP0261.json",
+      "bytes": 3341,
+      "sha256": "cb6c8492b9a95e4c3b340897af8d26a122c8e6bea37868ba3d0f012dfd33cf93"
+    },
+    {
+      "unit_id": "OLP-0262",
+      "path": "provenance/source-checkpoint-260/SEMANTIC_REVIEW-OLP0262.json",
+      "bytes": 3883,
+      "sha256": "920923272d59de1bf1ab8bb073227ac664da593110fb54113fc7a5184b7086be"
+    },
+    {
+      "unit_id": "OLP-0263",
+      "path": "provenance/source-checkpoint-260/SEMANTIC_REVIEW-OLP0263.json",
+      "bytes": 2784,
+      "sha256": "60d04e1acaa557bce8bc71c5b96c2a77024fcccc73663bd09431d2649948bdb2"
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "OLTUR-006",
+      "unit_id": "OLP-0260",
+      "classification": "frozen-source-disciplined-conversion-marker-search-limitation",
+      "finding": "The example conversion says to move left until the tape-end marker is found, although this same section and the earlier machine definition allow the original machine to erase that marker at square zero or write it at another square. The simple marker search alone therefore need not reach the actual tape boundary.",
+      "action": "Preserve the proposition and suggested conversion in Marathi, then add bounded adjacent prose and reader note OLTUR-006 stating that the marker search needs a separate general-case construction when the old marker has been erased or duplicated. Do not assert a new unproved construction."
+    },
+    {
+      "id": "OLTUR-007",
+      "unit_id": "OLP-0261",
+      "classification": "confirmed-frozen-source-overlapping-transition-cases-in-machine-composition",
+      "finding": "The first branch of the frozen definition for δ'' applies whenever q belongs to Q, while the third branch also applies when q belongs to Q and δ(q,σ) is undefined. Thus the branches overlap exactly where the transfer to the second machine is needed, and the first branch does not supply a value there.",
+      "action": "Constrain the first branch in the Marathi display to q in Q with δ(q,σ) defined; retain the third undefined branch, every transition value and all other symbols. Add adjacent reader note OLTUR-007 and a one-phrase documented QA projection back to the frozen wording."
+    }
+  ],
+  "qa": {
+    "units_checked": 6,
+    "unit_structural_failures": 0,
+    "formula_macro_token_identifier_reference_parity": true,
+    "semantic_reviews_passed": 6,
+    "cross_package_receipt": {
+      "path": "provenance/source-checkpoint-260/CROSS_PACKAGE_QA-WORKING.json",
+      "bytes": 1325,
+      "sha256": "9e8e9fdc1440df9af8897c3a24ed9fad1c5e2dfa553e26f41eb769ca02c740ec",
+      "segment_hashes_replayed": 2567,
+      "result": "passed"
+    },
+    "independent_human_or_native_speaker_review_claimed": false,
+    "reader_refresh_verified_for_increment": false
+  },
+  "synchronized_provenance": {
+    "receipt": "provenance/PROVENANCE_SYNC.json",
+    "canon_sources": 113,
+    "canon_passages": 158,
+    "term_decisions": 344,
+    "aligned_segments": 2567,
+    "expert_review_decisions": {
+      "records": 507,
+      "path": "provenance/EXPERT_REVIEW_DECISIONS.jsonl",
+      "bytes": 3497402,
+      "sha256": "e742825e8d945bb4248cd9c9f7fbb5ffd15cb6aeae53115625b3444b7c35693d"
+    },
+    "expert_review_occurrences": {
+      "records": 13367,
+      "path": "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl",
+      "bytes": 40519993,
+      "sha256": "b63bca8934c0be4f48f90b3413d81c56ceb5754e5d654f049528ffab3ad6b574"
+    },
+    "canonical_decision_qa": {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "bytes": 3535,
+      "sha256": "c49a091e17d4ed7e6d18ef00e62df419251bcbf8eae3b7285d3208de4ab30a3e",
+      "deterministic_second_run_identical": true
+    },
+    "inherited_reader_occurrence_locators_unchanged": 11402
+  },
+  "latest_public_reader": {
+    "tag": "twenty-chapters-v0.9",
+    "last_unit": "OLP-0197",
+    "translated_units": 194,
+    "pages": 264,
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/twenty-chapters-v0.9",
+    "zenodo_doi": "10.5281/zenodo.22864626"
+  },
+  "packaging_observations": {
+    "path": "provenance/source-checkpoint-233/PACKAGING_OBSERVATIONS-TWENTY-CHAPTERS-v0.9.json",
+    "bytes": 2420,
+    "sha256": "c234df36fafd075fbe42ac2e323648681e3e164199aafe62126bc482277bffe2",
+    "disposition": "Apply both corrections at the next full-source package checkpoint; preserve inherited access."
+  },
+  "status": "source-complete-and-reviewed; coherent reader refresh pending"
+}

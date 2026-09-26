@@ -1,0 +1,175 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: combining-machines
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{cmb}
+\olsection{ट्यूरिंग यंत्रांचे संयोजन}
+
+\begin{explain}
+आतापर्यंत पाहिलेली ट्यूरिंग यंत्रांची उदाहरणे बरीच सोपी आहेत.
+पण आधुनिक कार्यक्रमणभाषेत सोडवता येणारी कोणतीही समस्या ट्यूरिंग
+यंत्रांनीही सोडवता येते. अधिक गुंतागुंतीची ट्यूरिंग यंत्रे बनवताना
+ती एकत्र जोडता येतात हे समजून घेणे महत्त्वाचे आहे. मग प्रक्रिया
+सोप्या भागांत विभागून अधिक गुंतागुंतीच्या समस्या सोडवणारी यंत्रे
+बनवता येतात. गुंतागुंतीची समस्या घटक भागांत विभागण्याचा नैसर्गिक
+मार्ग सापडला, तर अनेक सोपी ट्यूरिंग यंत्रे तयार करून त्यांचे
+एकाच यंत्रात संयोजन करता येते. असे यंत्र अनेक टप्प्यांत समस्या
+सोडवते. पुढील विभागातील थांबण्याची समस्या हाताळताना हे विशेष
+महत्त्वाचे ठरेल.
+
+$M = \tuple{Q, \Sigma, q_0, \delta}$ आणि
+~$M' = \tuple{Q', \Sigma', q_0', \delta'}$ ही ट्यूरिंग यंत्रे
+कशी जोडायची? $M$~थांबल्यानंतर फितीचे जे स्थितिवर्णन असते तेच
+यंत्र~$M'$ च्या धावेचे प्रारंभिक स्थितिवर्णन म्हणून वापरू.
+असे करणारे एकच ट्यूरिंग यंत्र $M \frown M'$ मिळवण्यासाठी पुढील
+पायऱ्या घ्या:
+\begin{enumerate}
+    \item $M'$ च्या~$Q'$ मधील सर्व अवस्थांचे क्रमांक (किंवा नावे)
+    बदला, म्हणजे $M$ आणि~$M'$ यांची कोणतीही अवस्था समान राहणार
+    नाही ($Q \cap Q' = \emptyset$).
+    \item $M \frown M'$ च्या अवस्था $Q \cup Q'$ असतील.
+    \item फितीची वर्णमाला $\Sigma \cup \Sigma'$ असेल.
+    \item प्रारंभिक अवस्था~$q_0$ असेल.
+    \item संक्रमण फलन पुढील $\delta''$ असेल:
+    \[\delta''(q,\sigma) =
+    \begin{cases}
+      \delta(q,\sigma) & \text{$q \in Q$ आणि $\delta(q,\sigma)$ परिभाषित असेल तर}\\
+      \delta'(q,\sigma) & \text{$q \in Q'$ असेल तर}\\
+      \tuple{q_0', \sigma, \TMstay} & \text{$q \in Q$ असेल आणि
+      $\delta(q,\sigma)$ अपरिभाषित असेल तर}
+    \end{cases}\]
+\end{enumerate}
+%READERNOTE{OLTUR-007 — गोठवलेल्या इंग्रजीतील संक्रमण फलनाच्या पहिल्या शाखेत फक्त अवस्था Q मध्ये असणे ही अट आहे; त्यामुळे तिसऱ्या, अपरिभाषित-संक्रमण शाखेशी ती छेदते. येथे पहिली शाखा δ परिभाषित असतानाच लागू होईल असे स्पष्ट केले आहे. सर्व चिन्हे आणि इतर शाखा जतन आहेत.}
+मिळालेले यंत्र $q \in Q$ अवस्थेत असताना~$M$ च्या सूचना,
+तर $q \in Q'$ अवस्थेत असताना~$M'$ च्या सूचना वापरते.
+$q \in Q$ अवस्थेत~$\sigma$ चिन्ह वाचताना $M$ मध्ये त्यासाठी
+संक्रमण नसेल (म्हणजे $M$ थांबले असते), तर ते~$M'$ च्या
+प्रारंभिक अवस्थेत जाते; फितीवरील मजकूर आणि शीर्षाची जागा
+तशीच ठेवते.
+
+यंत्र~$M$ शिस्तबद्ध नसेल तर $M$~थांबताना फितीचे शीर्ष कुठे
+आहे हे आपल्याला माहीत नसते. म्हणून~$M$ च्या अंतिम
+स्थितिवर्णनात शीर्ष घर~$1$ वाचत असेलच असे नाही. यंत्रे
+जोडताना हे लक्षात ठेवणे महत्त्वाचे आहे.
+\end{explain}
+
+\begin{ex}
+\emph{यंत्रांचे संयोजन:} सुरुवातीला $n$ आणि~$m$ लांबीचे
+$\TMstroke$ चिन्हांचे दोन खंड आदान म्हणून घेऊन शेवटी
+फितीवर $2(m+n)$ $\TMstroke$ चिन्हांचा एकच खंड ठेवून थांबणारे
+यंत्र रचू. यासाठी परिचित अशी बेरीज-यंत्र आणि दुप्पट करणारे
+यंत्र ही दोन यंत्रे जोडता येतील. आधी बेरीज-यंत्राचा अवस्था-आलेख
+काढू.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge [loop above] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (C);
+\end{tikzpicture}
+\]
+प्रदान दुप्पट करण्यासाठी अवस्था~$q_2$ मध्ये थांबण्याऐवजी
+यंत्र पुढे चालवायचे आहे. दुप्पट करणारे यंत्र आदानातील पहिली
+रेघ पुसते आणि स्वतंत्र प्रदानात दोन रेघा लिहिते, हे आठवा.
+बेरीज-यंत्राच्या प्रदानातील पहिली रेघ शीर्ष वाचत असेल याची
+खात्री करणारी सूचना जोडू.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (E) [below left of=D] {$q_4$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+            edge node[left, xshift=-2mm] {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (E);
+\end{tikzpicture}
+\]
+आता आदान दुप्पट करणे सोपे आहे: दुप्पट करणारे यंत्र
+अवस्था~$q_4$ ला जोडायचे. त्यासाठी त्या यंत्राच्या अवस्थांना
+पुन्हा नावे द्यावी लागतील, म्हणजे त्या~$q_0$ ऐवजी~$q_4$
+पासून सुरू होतील. अशा रीतीने दोन प्रारंभिक अवस्था राहणार नाहीत.
+अंतिम अवस्था-आलेख \olref{fig:combined} मध्ये दाखवल्याप्रमाणे
+असेल.
+\begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (E) [below left of=D] {$q_4$};
+  \node[state]         (2) [right of=E] {$q_5$};
+  \node[state]         (3) [right of=2] {$q_6$};
+  \node[state]         (4) [below of=3] {$q_7$};
+  \node[state]         (5) [left of=4]  {$q_8$};
+  \node[state]         (6) [left of=5]  {$q_9$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+            edge node[left, xshift=-2mm] {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (E)
+    (E) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (3)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (4)
+    (4) edge [loop below] node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (4)
+        edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below]  node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (6)
+    (6) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (6)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (E);
+\end{tikzpicture}
+\]
+\caption{बेरीज-यंत्र आणि दुप्पट करणारे यंत्र यांचे संयोजन}
+\ollabel{fig:combined}
+\end{figure}
+\end{ex}
+
+\begin{prop}
+    $M$ आणि $M'$ ही शिस्तबद्ध यंत्रे अनुक्रमे $f\colon
+    \Nat^k \to \Nat$ आणि $f'\colon \Nat \to \Nat$ ही फलने
+    संगणित करत असतील, तर $M \frown M'$ हेही शिस्तबद्ध असून
+    ~$\comp{f}{f'}$ संगणित करते.
+\end{prop}
+
+\begin{proof}
+    $M$ शिस्तबद्ध असल्यामुळे ते
+    प्रदान~$f(n_1,\dots,n_k) = m$ देऊन थांबते तेव्हा शीर्ष
+    घर~$1$ वाचत असते. आता यंत्र~$M'$ च्या प्रारंभिक अवस्थेत
+    गेल्यावर प्रदान $f'(m)$ देऊन यंत्र पुन्हा घर~$1$ वरच थांबते.
+    \olref[dis]{defn:disciplined} मधील इतर अटीही पूर्ण होतात.
+\end{proof}
+
+\begin{prob}
+    \cref{tur:mac:dis:prob:disc-succ} मधील यंत्र~$M$ घेऊन
+    $M \frown M$ रचा आणि $f(x) = x+2$ संगणित करणारे
+    शिस्तबद्ध ट्यूरिंग यंत्र द्या.
+\end{prob}
+\end{document}

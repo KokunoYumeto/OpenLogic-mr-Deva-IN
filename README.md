@@ -44,10 +44,10 @@ messages, exact text and MathML preservation checks, complete link validation,
 and representative rendering in Calibre.
 
 The public reader remains frozen at OLP-0197. Editable Marathi source and its
-review provenance now cover 254/722 units and 2,512 aligned segments through
-OLP-0257. Computability Theory is complete in source, including Rice's theorem
-and fixed points; the Turing Machines part has begun through configurations
-and computations. Twenty-four source chapters are complete; OLP-0258 is next.
+review provenance now cover 260/722 units and 2,567 aligned segments through
+OLP-0263. Computability Theory and Turing Machine Computations are complete
+in source, including fixed points, machine variants and the Church--Turing
+thesis. Twenty-five source chapters are complete; OLP-0264 is next.
 
 - **Current release:** [वीस प्रकरणे — PDF, EPUB 3, offline HTML, direct LaTeX, editable sources and review bundle](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/twenty-chapters-v0.9).
 - **EPUB 3:** [download the reflowable Marathi reader](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/twenty-chapters-v0.9/openlogic-mr-twenty-chapters.epub).
@@ -57,10 +57,10 @@ and computations. Twenty-four source chapters are complete; OLP-0258 is next.
 - **Direct LaTeX:** download `openlogic-mr-twenty-chapters.tex` from the release assets.
 - **Editable Marathi:** [sets](mr/content/sets-functions-relations/sets/), [relations](mr/content/sets-functions-relations/relations/), [functions](mr/content/sets-functions-relations/functions/), [size of sets](mr/content/sets-functions-relations/size-of-sets/), [arithmetization](mr/content/sets-functions-relations/arithmetization/), [infinite sets](mr/content/sets-functions-relations/infinite/), [propositional syntax and semantics](mr/content/propositional-logic/syntax-and-semantics/), [first-order proof systems](mr/content/first-order-logic/proof-systems/), [sequent calculus](mr/content/first-order-logic/sequent-calculus/), [natural deduction](mr/content/first-order-logic/natural-deduction/), [Tableaux](mr/content/first-order-logic/tableaux/), [axiomatic deduction](mr/content/first-order-logic/axiomatic-deduction/), [completeness](mr/content/first-order-logic/completeness/), [first-order introduction](mr/content/first-order-logic/introduction/), [first-order syntax and semantics](mr/content/first-order-logic/syntax-and-semantics/), [models and theories](mr/content/first-order-logic/models-theories/), [logics beyond first order](mr/content/first-order-logic/beyond/), [model-theory basics](mr/content/model-theory/basics/), [models of arithmetic](mr/content/model-theory/models-of-arithmetic/), [interpolation](mr/content/model-theory/interpolation/), [Lindström's theorem](mr/content/model-theory/lindstrom/), and [recursive functions](mr/content/computability/recursive-functions/).
 - **Complete source chapter:** [Computability Theory](mr/content/computability/computability-theory/), translated through self-reference.
-- **In-progress chapter:** [Turing Machine Computations](mr/content/turing-machines/machines-computations/), translated through configurations and computations.
+- **Complete source chapter:** [Turing Machine Computations](mr/content/turing-machines/machines-computations/), translated through the Church--Turing thesis.
 - **Terminology and expert review:** begin with the [shared-schema review guide](provenance/translation-decisions/START_HERE.md), then use the [full applied-decision index](provenance/translation-decisions/TRANSLATION_DECISIONS_FULL.md), [priority review](provenance/translation-decisions/PRIORITY_REVIEW.md), [one-row-per-occurrence CSV](provenance/translation-decisions/DECISION_OCCURRENCES.csv), or [canonical JSON](provenance/translation-decisions/DECISIONS.json). The backward-compatible [decision ledger](provenance/EXPERT_REVIEW_LOG.md) and occurrence JSONL remain available. These surfaces record exact source/target scopes, current PDF page ranges, reversible choices and plain review questions without making review a completion gate.
 - **Pristine English:** `upstream/`; this is source evidence, not translated coverage.
-- **Current editable-source checkpoint evidence:** `provenance/source-checkpoint-254/`; the frozen v0.9 release snapshot remains in `provenance/source-checkpoint-194/`.
+- **Current editable-source checkpoint evidence:** `provenance/source-checkpoint-260/`; the frozen v0.9 release snapshot remains in `provenance/source-checkpoint-194/`.
 - **Current reader evidence:** `provenance/twenty-chapters-v0.9/`.
 - **Earlier cumulative release:** [eleven-chapters-v0.8.1](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8.1), preserved unchanged.
 - **Earlier cumulative release:** [eleven-chapters-v0.8](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/eleven-chapters-v0.8), preserved unchanged.
@@ -85,13 +85,13 @@ precedence over conventions in language witnesses: in particular, OpenLogic's
 natural numbers include zero.
 
 The twenty published chapters have 2,063 aligned content segments with
-consultation records across 194 units. The editable working source has 2,512
-such records across 254 units; its sixty later units are not yet paginated.
+consultation records across 194 units. The editable working source has 2,567
+such records across 260 units; its sixty-six later units are not yet paginated.
 Deterministic checks compare formulas, token identities, macro inventories,
 labels, citations, links and source file references.
 Visual, structural and semantic checks are documented in
 `provenance/twenty-chapters-v0.9/`, the frozen 194-unit release checkpoint and
-the incremental 254-unit editable-source checkpoint.
+the incremental 260-unit editable-source checkpoint.
 Such checks do not establish the absence
 of every possible translation error.
 Two guarded builds on the same host produced identical PDF bytes with fixed
@@ -112,8 +112,8 @@ The evidence also preserves the formal retraction of a
 shared OLSIZ-011 false-positive alert, which was not applied to Marathi. The frozen
 94-unit source-checkpoint evidence explicitly distinguishes preserved original
 pages from hash-pinned short web observations whose origin HTML bytes were
-unavailable. The synchronized root provenance now covers 254 translated units and
-2,512 aligned segments through OLP-0257. A bounded independent model audit of
+unavailable. The synchronized root provenance now covers 260 translated units and
+2,567 aligned segments through OLP-0263. A bounded independent model audit of
 OLP-0071–OLP-0072 found no
 material mistranslation, prompted one standing-assumption clarification, and led
 to narrower overlapping choice locators plus separate confidence records for

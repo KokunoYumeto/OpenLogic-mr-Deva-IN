@@ -1,0 +1,102 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: well-behaved-machines
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{dis}
+\olsection{शिस्तबद्ध यंत्रे}
+
+\begin{explain}
+\olref[hal]{sec} मध्ये आपण एकच निर्दिष्ट थांबण्याची अवस्था~$h$
+असलेली ट्यूरिंग यंत्रे पाहिली: अशी यंत्रे थांबलीच तर~$h$
+अवस्थेतच थांबतात. म्हणून एका थांबण्याच्या अवस्थेची यंत्रे, आपण
+सर्वसाधारण ट्यूरिंग यंत्रांना जितकी मुभा देतो त्यापेक्षा अधिक
+``शिस्तबद्ध'' आहेत. ट्यूरिंग यंत्रांच्या वर्तनावर आणखीही निर्बंध
+घालता येतील. उदाहरणार्थ, घर~$0$ वरील फितीच्या डाव्या टोकाचे
+चिन्ह पुसण्यास किंवा घर~$0$ वरून डावीकडे जाण्याचा प्रयत्न
+करण्यास आपण त्यांना मनाई केलेली नाही. (आपल्या व्याख्येनुसार
+अशा वेळी शीर्ष घर~$0$ वरच राहते; इतर व्याख्यांनुसार यंत्र
+थांबते.) तसेच यंत्र थांबलेच तर घर~$1$ वर थांबेल, असे गृहीत
+धरता आले तर काही वेळा सोयीचे ठरते.
+\end{explain}
+
+\begin{defn}\ollabel{defn:disciplined}
+ट्यूरिंग यंत्र~$M$ \emph{शिस्तबद्ध} असते तेव्हा आणि केवळ तेव्हाच,
+जेव्हा
+\begin{enumerate}
+    \item त्याला एकच निर्दिष्ट थांबण्याची अवस्था~$h$ असते,
+    \item ते थांबलेच तर घर~$1$ वाचत असताना थांबते,
+    \item ते घर~$0$ वरील $\TMendtape$ चिन्ह कधीही पुसत नाही, आणि
+    \item ते घर~$0$ वरून डावीकडे जाण्याचा कधीही प्रयत्न करत नाही.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+कोणतेही ट्यूरिंग यंत्र त्याच वर्तनाचे पण निर्दिष्ट थांबण्याची
+अवस्था असलेले यंत्र बनवता येते, हे आपण आधी पाहिले. यासाठी
+नवी अवस्था~$h$ जोडायची आणि मूळ~$\delta$ ज्या
+$\tuple{q,\sigma}$ जोडीवर अपरिभाषित आहे, त्या प्रत्येक जोडीसाठी
+$\delta(q, \sigma) = \tuple{h, \sigma, N}$ ही सूचना जोडायची.
+पुरावा किचकट असला तरी कोणतेही ट्यूरिंग यंत्र~$M$ अशा
+शिस्तबद्ध ट्यूरिंग यंत्रात~$M'$ बदलता येते की जे त्याच आदानांवर
+थांबते आणि तेच प्रदान देते. उदाहरणार्थ, यंत्र थांबत असताना
+घर~$1$ वर नसेल, तर शीर्ष फितीच्या डाव्या टोकाचे चिन्ह सापडेपर्यंत
+डावीकडे नेणाऱ्या, त्यानंतर एक घर उजवीकडे नेणाऱ्या आणि मग यंत्र
+थांबवणाऱ्या काही सूचना जोडता येतात. इतर अटी कशा पूर्ण करता
+येतील याचा विचार तुम्ही करा.
+मूळ यंत्राने डाव्या टोकाचे चिन्ह पुसले किंवा तेच चिन्ह दुसऱ्या घरावर
+लिहिले असेल, तर एवढी साधी शोध-पद्धत पुरेशी नाही; सर्वसाधारण
+रूपांतराच्या पुराव्यात हा प्रसंग वेगळा हाताळावा लागतो.
+%READERNOTE{OLTUR-006 — गोठवलेल्या मजकुरात शीर्ष डाव्या टोकाचे चिन्ह सापडेपर्यंत डावीकडे नेण्याची पद्धत दिली आहे. पण आधीची यंत्र-व्याख्या ते चिन्ह पुसण्यास किंवा इतर घरांत लिहिण्यास मनाई करत नाही. त्यामुळे हा केवळ मर्यादित उदाहरणार्थ उपाय आहे; सर्वसाधारण शिस्तबद्ध रूपांतरासाठी अधिक अचूक चिन्ह-व्यवस्था आवश्यक आहे.}
+\end{explain}
+
+\begin{ex}
+    \olref{fig:adder-disc} मध्ये आपण \olref[una]{ex:adder}
+    मधील बेरीज-यंत्राचे शिस्तबद्ध यंत्रात रूपांतर करतो.
+    \begin{figure}\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (H) [left of=D] {$h$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+           edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+        edge node {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (H);
+\end{tikzpicture}
+\]\caption{शिस्तबद्ध बेरीज-यंत्र}
+\ollabel{fig:adder-disc}
+\end{figure}
+\end{ex}
+
+\begin{prop}\ollabel{prop:disciplined} प्रत्येक ट्यूरिंग यंत्र~$M$
+साठी असे शिस्तबद्ध ट्यूरिंग यंत्र~$M'$ असते की $M$~प्रदान~$O$
+देऊन थांबत असेल तर ते देखील प्रदान~$O$ देऊन थांबते; आणि
+$M$~थांबत नसेल तर ते देखील थांबत नाही. विशेषतः, ट्यूरिंग
+यंत्राला संगणित करता येणारे कोणतेही $f\colon\Nat^n \to \Nat$
+फलन शिस्तबद्ध ट्यूरिंग यंत्रालाही संगणित करता येते.
+\end{prop}
+
+\begin{prob}\label{tur:mac:dis:prob:disc-succ}
+$f(x) = x+1$ संगणित करणारे शिस्तबद्ध यंत्र द्या.
+\end{prob}
+
+
+\begin{prob}\label{tur:mac:dis:prob:copier}
+$\TMstroke^n$ आदानावर सुरू केल्यावर
+$\TMstroke^n \concat \TMblank \concat \TMstroke^n$ हे प्रदान
+देणारे शिस्तबद्ध यंत्र शोधा.
+\end{prob}
+
+\end{document}

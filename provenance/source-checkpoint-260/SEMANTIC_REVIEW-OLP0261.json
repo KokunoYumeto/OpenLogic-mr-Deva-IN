@@ -1,0 +1,47 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0261",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of each changed block, with exact diagrams, formulas, macro, label and reference parity after one documented source correction projection. No independent human or native-speaker review is claimed.",
+  "scope": "Sequential Turing-machine combination, disjoint-state construction and transition cases, head-position caveat, addition-then-doubling example, disciplined composition proposition and proof.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "Complex computations can be built by combining simple machines. For M then M-prime, make their states disjoint, use the union of states and tape alphabets and M's start state, follow M's transitions while they are defined and transfer to M-prime's start state without changing tape or head exactly where M would halt. If M is not disciplined, its halting head need not be on square 1.",
+      "checks": "Both four-component machine tuples, disjointness, two unions, q0, delta-prime-prime and the undefined-transition transfer are preserved. OLTUR-007 narrows the first displayed branch to defined delta so it does not overlap the third branch. The source's tape-head caveat remains explicit."
+    },
+    {
+      "blocks": [
+        8,
+        10,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "The example takes unary n and m blocks, adds them, returns the head to the first output stroke, renames the doubler states starting at q4, then combines them into a diagram yielding one block of 2(m+n) strokes on the tape.",
+      "checks": "All three diagrams and every transition label, state number and figure ID are unchanged. The separate-output behavior of the earlier doubler is not silently recast as a disciplined computation claim."
+    },
+    {
+      "blocks": [
+        14,
+        15,
+        16
+      ],
+      "reverse_paraphrase": "For disciplined M computing f:Nat^k to Nat and M-prime computing f-prime:Nat to Nat, their sequential combination is disciplined and computes the source's composition expression. Because M halts scanning square 1 with output m, M-prime begins there and halts with f-prime(m), again at square 1. The exercise composes the disciplined successor machine with itself to compute x+2.",
+      "checks": "Function arities, both machines' discipline assumptions, output expressions, square-one reasoning, prior definition reference and successor-problem label are preserved."
+    }
+  ],
+  "source_observations": [
+    "OLTUR-007 records the frozen first transition branch's overlap with the undefined-transfer branch; the Marathi display adds the necessary definedness condition, and formal QA projects only that phrase back to the frozen source.",
+    "T343 distinguishes sequential machine combination from function composition while retaining the source's M-frown-M-prime operator."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The full specialist machine-combination compound is source-defined rather than directly attested in the consulted Marathi canon.",
+    "No TeX reader build was run for this incomplete chapter."
+  ]
+}

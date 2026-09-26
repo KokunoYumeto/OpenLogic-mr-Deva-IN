@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 occurrences.
+Coverage: 260/722 source units through OLP-0263; 507 applied decisions; 13,367 occurrences.
 
 ## T001 — set
 
@@ -1688,6 +1688,11 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | `T008-OLP-0211-B005` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24` | `mr/content/computability/recursive-functions/primitive-recursion.tex:12-25` | pending |
 | `T008-OLP-0211-B006` | `OLP-0211` |  | `upstream/content/computability/recursive-functions/primitive-recursion.tex:26-41` | `mr/content/computability/recursive-functions/primitive-recursion.tex:27-42` | pending |
 | `T008-OLP-0213-B008` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:37-42` | `mr/content/computability/recursive-functions/pr-functions.tex:38-44` | pending |
+| `T008-OLP-0258-B005` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:12-22` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:12-22` | pending |
+| `T008-OLP-0258-B006` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:24-31` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:24-32` | pending |
+| `T008-OLP-0258-B007` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:33-36` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:34-37` | pending |
+| `T008-OLP-0258-B019` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:204-214` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:208-218` | pending |
+| `T008-OLP-0258-B022` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:230-243` | pending |
 
 ## T009 — formal validity
 
@@ -3692,6 +3697,8 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | `T030-OLP-0224-B011` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:89-96` | `mr/content/computability/recursive-functions/partial-functions.tex:83-90` | pending |
 | `T030-OLP-0224-B012` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:98-103` | `mr/content/computability/recursive-functions/partial-functions.tex:92-97` | pending |
 | `T030-OLP-0224-B014` | `OLP-0224` |  | `upstream/content/computability/recursive-functions/partial-functions.tex:108-112` | `mr/content/computability/recursive-functions/partial-functions.tex:102-106` | pending |
+| `T030-OLP-0262-B005` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:12-27` | `mr/content/turing-machines/machines-computations/variants.tex:12-27` | pending |
+| `T030-OLP-0262-B006` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:29-39` | `mr/content/turing-machines/machines-computations/variants.tex:29-40` | pending |
 
 ## T031 — identity relation
 
@@ -6758,6 +6765,11 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | `T053-OLP-0239-B012` | `OLP-0239` |  | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:83-86` | `mr/content/computability/computability-theory/equiv-ce-defs.tex:93-97` | pending |
 | `T053-OLP-0239-B013` | `OLP-0239` |  | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:88-105` | `mr/content/computability/computability-theory/equiv-ce-defs.tex:99-121` | pending |
 | `T053-OLP-0239-B014` | `OLP-0239` |  | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:107-127` | `mr/content/computability/computability-theory/equiv-ce-defs.tex:123-143` | pending |
+| `T053-OLP-0261-B005` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:12-23` | `mr/content/turing-machines/machines-computations/combining-machines.tex:12-22` | pending |
+| `T053-OLP-0261-B006` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50` | `mr/content/turing-machines/machines-computations/combining-machines.tex:24-52` | pending |
+| `T053-OLP-0261-B014` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:152-156` | `mr/content/turing-machines/machines-computations/combining-machines.tex:155-160` | pending |
+| `T053-OLP-0261-B015` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:158-164` | `mr/content/turing-machines/machines-computations/combining-machines.tex:162-168` | pending |
+| `T053-OLP-0261-B016` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:166-171` | `mr/content/turing-machines/machines-computations/combining-machines.tex:170-175` | pending |
 
 ## T054 — serial relation
 
@@ -7596,6 +7608,7 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | `T067-OLP-0239-B010` | `OLP-0239` |  | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:54-72` | `mr/content/computability/computability-theory/equiv-ce-defs.tex:58-79` | pending |
 | `T067-OLP-0239-B011` | `OLP-0239` |  | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:74-81` | `mr/content/computability/computability-theory/equiv-ce-defs.tex:81-91` | pending |
 | `T067-OLP-0240-B007` | `OLP-0240` |  | `upstream/content/computability/computability-theory/non-comp-set.tex:21-30` | `mr/content/computability/computability-theory/non-comp-set.tex:21-30` | pending |
+| `T067-OLP-0258-B005` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:12-22` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:12-22` | pending |
 
 ## T068 — cofinite / complement
 
@@ -19693,6 +19706,12 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | `T287-OLP-0254-B005` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:12-27` | `mr/content/turing-machines/machines-computations/introduction.tex:12-26` | pending |
 | `T287-OLP-0254-B009` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:86-108` | `mr/content/turing-machines/machines-computations/introduction.tex:82-102` | pending |
 | `T287-OLP-0254-B010` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:110-128` | `mr/content/turing-machines/machines-computations/introduction.tex:104-124` | pending |
+| `T287-OLP-0262-B009` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:67-70` | `mr/content/turing-machines/machines-computations/variants.tex:69-72` | pending |
+| `T287-OLP-0262-B010` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:72-82` | `mr/content/turing-machines/machines-computations/variants.tex:74-86` | pending |
+| `T287-OLP-0263-B005` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:12-21` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:12-20` | pending |
+| `T287-OLP-0263-B006` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:23-26` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:22-25` | pending |
+| `T287-OLP-0263-B007` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:28-33` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:27-32` | pending |
+| `T287-OLP-0263-B008` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:35-45` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:34-45` | pending |
 
 ## T288 — Turing machine / primitive recursion
 
@@ -19786,6 +19805,41 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | `T288-OLP-0257-B005` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:12-23` | `mr/content/turing-machines/machines-computations/configuration.tex:12-23` | pending |
 | `T288-OLP-0257-B006` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:25-38` | `mr/content/turing-machines/machines-computations/configuration.tex:25-39` | pending |
 | `T288-OLP-0257-B007` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:40-49` | `mr/content/turing-machines/machines-computations/configuration.tex:41-51` | pending |
+| `T288-OLP-0258-B005` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:12-22` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:12-22` | pending |
+| `T288-OLP-0258-B006` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:24-31` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:24-32` | pending |
+| `T288-OLP-0258-B007` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:33-36` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:34-37` | pending |
+| `T288-OLP-0258-B008` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:38-49` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:39-51` | pending |
+| `T288-OLP-0258-B010` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:55-64` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:57-66` | pending |
+| `T288-OLP-0258-B012` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:72-80` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:74-82` | pending |
+| `T288-OLP-0258-B013` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:82-96` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:84-98` | pending |
+| `T288-OLP-0258-B015` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:108-129` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:110-131` | pending |
+| `T288-OLP-0258-B016` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:131-185` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:133-188` | pending |
+| `T288-OLP-0258-B017` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:187-196` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:190-199` | pending |
+| `T288-OLP-0258-B018` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:198-202` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:201-206` | pending |
+| `T288-OLP-0258-B019` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:204-214` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:208-218` | pending |
+| `T288-OLP-0258-B020` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:216-220` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:220-224` | pending |
+| `T288-OLP-0258-B022` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:230-243` | pending |
+| `T288-OLP-0259-B013` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:68-77` | `mr/content/turing-machines/machines-computations/halting-states.tex:66-74` | pending |
+| `T288-OLP-0260-B008` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:52-58` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:56-62` | pending |
+| `T288-OLP-0260-B010` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:66-77` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:70-81` | pending |
+| `T288-OLP-0260-B011` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:79-84` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:83-89` | pending |
+| `T288-OLP-0260-B012` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:86-88` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:91-93` | pending |
+| `T288-OLP-0260-B013` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:91-94` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:96-100` | pending |
+| `T288-OLP-0261-B005` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:12-23` | `mr/content/turing-machines/machines-computations/combining-machines.tex:12-22` | pending |
+| `T288-OLP-0261-B008` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:58-68` | `mr/content/turing-machines/machines-computations/combining-machines.tex:60-70` | pending |
+| `T288-OLP-0261-B010` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:74-89` | `mr/content/turing-machines/machines-computations/combining-machines.tex:76-91` | pending |
+| `T288-OLP-0261-B012` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:97-125` | `mr/content/turing-machines/machines-computations/combining-machines.tex:99-128` | pending |
+| `T288-OLP-0261-B013` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:127-150` | `mr/content/turing-machines/machines-computations/combining-machines.tex:130-153` | pending |
+| `T288-OLP-0261-B014` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:152-156` | `mr/content/turing-machines/machines-computations/combining-machines.tex:155-160` | pending |
+| `T288-OLP-0261-B015` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:158-164` | `mr/content/turing-machines/machines-computations/combining-machines.tex:162-168` | pending |
+| `T288-OLP-0261-B016` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:166-171` | `mr/content/turing-machines/machines-computations/combining-machines.tex:170-175` | pending |
+| `T288-OLP-0262-B007` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:41-60` | `mr/content/turing-machines/machines-computations/variants.tex:42-61` | pending |
+| `T288-OLP-0262-B009` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:67-70` | `mr/content/turing-machines/machines-computations/variants.tex:69-72` | pending |
+| `T288-OLP-0262-B010` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:72-82` | `mr/content/turing-machines/machines-computations/variants.tex:74-86` | pending |
+| `T288-OLP-0263-B005` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:12-21` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:12-20` | pending |
+| `T288-OLP-0263-B006` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:23-26` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:22-25` | pending |
+| `T288-OLP-0263-B007` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:28-33` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:27-32` | pending |
+| `T288-OLP-0263-B008` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:35-45` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:34-45` | pending |
 
 ## T289 — Tennenbaum (surname, in Tennenbaum's theorem)
 
@@ -20495,6 +20549,8 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | `T304-OLP-0249-B020` | `OLP-0249` |  | `upstream/content/computability/computability-theory/fixed-point-thm.tex:210-241` | `mr/content/computability/computability-theory/fixed-point-thm.tex:217-251` | pending |
 | `T304-OLP-0254-B005` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:12-27` | `mr/content/turing-machines/machines-computations/introduction.tex:12-26` | pending |
 | `T304-OLP-0254-B009` | `OLP-0254` |  | `upstream/content/turing-machines/machines-computations/introduction.tex:86-108` | `mr/content/turing-machines/machines-computations/introduction.tex:82-102` | pending |
+| `T304-OLP-0262-B010` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:72-82` | `mr/content/turing-machines/machines-computations/variants.tex:74-86` | pending |
+| `T304-OLP-0263-B005` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:12-21` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:12-20` | pending |
 
 ## T305 — notation for a primitive recursive function; composition and recursion notation
 
@@ -20610,6 +20666,9 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | `T307-OLP-0217-B007` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:38-45` | `mr/content/computability/recursive-functions/pr-relations.tex:37-44` | pending |
 | `T307-OLP-0217-B009` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:60-86` | `mr/content/computability/recursive-functions/pr-relations.tex:59-86` | pending |
 | `T307-OLP-0217-B011` | `OLP-0217` |  | `upstream/content/computability/recursive-functions/pr-relations.tex:101-119` | `mr/content/computability/recursive-functions/pr-relations.tex:102-121` | pending |
+| `T307-OLP-0258-B018` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:198-202` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:201-206` | pending |
+| `T307-OLP-0258-B020` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:216-220` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:220-224` | pending |
+| `T307-OLP-0258-B021` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:222-224` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:226-228` | pending |
 
 ## T308 — integer division / finite sum / finite product
 
@@ -21035,6 +21094,11 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | `T318-OLP-0223-B011` | `OLP-0223` |  | `upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96` | `mr/content/computability/recursive-functions/non-pr-functions.tex:85-92` | pending |
 | `T318-OLP-0226-B005` | `OLP-0226` |  | `upstream/content/computability/recursive-functions/halting-problem.tex:12-25` | `mr/content/computability/recursive-functions/halting-problem.tex:12-23` | pending |
 | `T318-OLP-0229-B009` | `OLP-0229` |  | `upstream/content/computability/computability-theory/introduction.tex:50-66` | `mr/content/computability/computability-theory/introduction.tex:51-64` | pending |
+| `T318-OLP-0263-B004` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:9-10` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:9-10` | pending |
+| `T318-OLP-0263-B005` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:12-21` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:12-20` | pending |
+| `T318-OLP-0263-B006` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:23-26` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:22-25` | pending |
+| `T318-OLP-0263-B007` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:28-33` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:27-32` | pending |
+| `T318-OLP-0263-B008` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:35-45` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:34-45` | pending |
 
 ## T319 — defined or undefined at an input / partial equality / unbounded mu-search operator / non-halting computation
 
@@ -21125,6 +21189,9 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | `T319-OLP-0256-B006` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:22-35` | `mr/content/turing-machines/machines-computations/turing-machines.tex:21-34` | pending |
 | `T319-OLP-0257-B010` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:63-82` | `mr/content/turing-machines/machines-computations/configuration.tex:71-90` | pending |
 | `T319-OLP-0257-B012` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `mr/content/turing-machines/machines-computations/configuration.tex:98-110` | pending |
+| `T319-OLP-0258-B022` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:230-243` | pending |
+| `T319-OLP-0260-B007` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:37-50` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:37-54` | pending |
+| `T319-OLP-0261-B006` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50` | `mr/content/turing-machines/machines-computations/combining-machines.tex:24-52` | pending |
 
 ## T320 — disjoint domains of chosen isomorphic copies / sufficient union construction
 
@@ -21309,6 +21376,9 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | `T322-OLP-0256-B008` | `OLP-0256` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:50-60` | `mr/content/turing-machines/machines-computations/turing-machines.tex:50-60` | pending |
 | `T322-OLP-0257-B012` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `mr/content/turing-machines/machines-computations/configuration.tex:98-110` | pending |
 | `T322-OLP-0257-B013` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `mr/content/turing-machines/machines-computations/configuration.tex:112-117` | pending |
+| `T322-OLP-0259-B013` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:68-77` | `mr/content/turing-machines/machines-computations/halting-states.tex:66-74` | pending |
+| `T322-OLP-0261-B005` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:12-23` | `mr/content/turing-machines/machines-computations/combining-machines.tex:12-22` | pending |
+| `T322-OLP-0263-B008` | `OLP-0263` |  | `upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:35-45` | `mr/content/turing-machines/machines-computations/church-turing-thesis.tex:34-45` | pending |
 
 ## T323 — regular function / general recursive function / total function
 
@@ -22020,6 +22090,37 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | `T338-OLP-0257-B010` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:63-82` | `mr/content/turing-machines/machines-computations/configuration.tex:71-90` | pending |
 | `T338-OLP-0257-B012` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `mr/content/turing-machines/machines-computations/configuration.tex:98-110` | pending |
 | `T338-OLP-0257-B013` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `mr/content/turing-machines/machines-computations/configuration.tex:112-117` | pending |
+| `T338-OLP-0258-B005` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:12-22` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:12-22` | pending |
+| `T338-OLP-0258-B008` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:38-49` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:39-51` | pending |
+| `T338-OLP-0258-B010` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:55-64` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:57-66` | pending |
+| `T338-OLP-0258-B012` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:72-80` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:74-82` | pending |
+| `T338-OLP-0258-B013` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:82-96` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:84-98` | pending |
+| `T338-OLP-0258-B015` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:108-129` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:110-131` | pending |
+| `T338-OLP-0258-B016` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:131-185` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:133-188` | pending |
+| `T338-OLP-0258-B017` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:187-196` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:190-199` | pending |
+| `T338-OLP-0258-B020` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:216-220` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:220-224` | pending |
+| `T338-OLP-0259-B005` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:12-16` | `mr/content/turing-machines/machines-computations/halting-states.tex:12-16` | pending |
+| `T338-OLP-0259-B006` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:18-23` | `mr/content/turing-machines/machines-computations/halting-states.tex:18-22` | pending |
+| `T338-OLP-0259-B007` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:25-33` | `mr/content/turing-machines/machines-computations/halting-states.tex:24-31` | pending |
+| `T338-OLP-0259-B010` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:46-53` | `mr/content/turing-machines/machines-computations/halting-states.tex:44-51` | pending |
+| `T338-OLP-0260-B005` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:12-25` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:12-24` | pending |
+| `T338-OLP-0260-B006` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:27-35` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:26-35` | pending |
+| `T338-OLP-0260-B007` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:37-50` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:37-54` | pending |
+| `T338-OLP-0260-B010` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:66-77` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:70-81` | pending |
+| `T338-OLP-0261-B006` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50` | `mr/content/turing-machines/machines-computations/combining-machines.tex:24-52` | pending |
+| `T338-OLP-0261-B007` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:52-56` | `mr/content/turing-machines/machines-computations/combining-machines.tex:54-58` | pending |
+| `T338-OLP-0261-B008` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:58-68` | `mr/content/turing-machines/machines-computations/combining-machines.tex:60-70` | pending |
+| `T338-OLP-0261-B010` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:74-89` | `mr/content/turing-machines/machines-computations/combining-machines.tex:76-91` | pending |
+| `T338-OLP-0261-B012` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:97-125` | `mr/content/turing-machines/machines-computations/combining-machines.tex:99-128` | pending |
+| `T338-OLP-0261-B013` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:127-150` | `mr/content/turing-machines/machines-computations/combining-machines.tex:130-153` | pending |
+| `T338-OLP-0261-B015` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:158-164` | `mr/content/turing-machines/machines-computations/combining-machines.tex:162-168` | pending |
+| `T338-OLP-0262-B004` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:9-10` | `mr/content/turing-machines/machines-computations/variants.tex:9-10` | pending |
+| `T338-OLP-0262-B005` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:12-27` | `mr/content/turing-machines/machines-computations/variants.tex:12-27` | pending |
+| `T338-OLP-0262-B006` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:29-39` | `mr/content/turing-machines/machines-computations/variants.tex:29-40` | pending |
+| `T338-OLP-0262-B007` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:41-60` | `mr/content/turing-machines/machines-computations/variants.tex:42-61` | pending |
+| `T338-OLP-0262-B008` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:62-65` | `mr/content/turing-machines/machines-computations/variants.tex:63-67` | pending |
+| `T338-OLP-0262-B009` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:67-70` | `mr/content/turing-machines/machines-computations/variants.tex:69-72` | pending |
+| `T338-OLP-0262-B010` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:72-82` | `mr/content/turing-machines/machines-computations/variants.tex:74-86` | pending |
 
 ## T339 — state diagram / machine configuration / machine table / doubler
 
@@ -22079,6 +22180,213 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | `T339-OLP-0257-B011` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:84-87` | `mr/content/turing-machines/machines-computations/configuration.tex:92-96` | pending |
 | `T339-OLP-0257-B012` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `mr/content/turing-machines/machines-computations/configuration.tex:98-110` | pending |
 | `T339-OLP-0257-B013` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `mr/content/turing-machines/machines-computations/configuration.tex:112-117` | pending |
+| `T339-OLP-0258-B011` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:66-70` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:68-72` | pending |
+| `T339-OLP-0258-B012` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:72-80` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:74-82` | pending |
+| `T339-OLP-0258-B013` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:82-96` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:84-98` | pending |
+| `T339-OLP-0258-B015` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:108-129` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:110-131` | pending |
+| `T339-OLP-0258-B016` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:131-185` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:133-188` | pending |
+| `T339-OLP-0258-B017` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:187-196` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:190-199` | pending |
+| `T339-OLP-0259-B007` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:25-33` | `mr/content/turing-machines/machines-computations/halting-states.tex:24-31` | pending |
+| `T339-OLP-0259-B010` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:46-53` | `mr/content/turing-machines/machines-computations/halting-states.tex:44-51` | pending |
+| `T339-OLP-0261-B006` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50` | `mr/content/turing-machines/machines-computations/combining-machines.tex:24-52` | pending |
+| `T339-OLP-0261-B007` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:52-56` | `mr/content/turing-machines/machines-computations/combining-machines.tex:54-58` | pending |
+| `T339-OLP-0261-B008` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:58-68` | `mr/content/turing-machines/machines-computations/combining-machines.tex:60-70` | pending |
+| `T339-OLP-0261-B010` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:74-89` | `mr/content/turing-machines/machines-computations/combining-machines.tex:76-91` | pending |
+| `T339-OLP-0261-B012` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:97-125` | `mr/content/turing-machines/machines-computations/combining-machines.tex:99-128` | pending |
+| `T339-OLP-0261-B013` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:127-150` | `mr/content/turing-machines/machines-computations/combining-machines.tex:130-153` | pending |
+
+## T340 — unary representation of numbers / one-symbol stroke coding
+
+**Chosen rendering/action:** संख्यांचे एकचिन्ही निरूपण / एकाच रेघेने सांकेतीकरण
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** OpenLogic defines the numeral for n as exactly n repetitions of the one stroke symbol, with the empty sequence for zero. एकचिन्ही states that coding rule directly and avoids confusing this representation with a base-one positional notation. The consulted passages support the native mathematical-symbol, machine and tape vocabulary, not the exact full compound. A bounded official-domain search found unary rendered as एकल/एकघटकी in a physics one-component sense and एकाधार in a linguistic transformation sense; neither is direct evidence for this Turing numeral coding.
+
+**Rationale:** OpenLogic defines the numeral for n as exactly n repetitions of the one stroke symbol, with the empty sequence for zero. एकचिन्ही states that coding rule directly and avoids confusing this representation with a base-one positional notation. The consulted passages support the native mathematical-symbol, machine and tape vocabulary, not the exact full compound. A bounded official-domain search found unary rendered as एकल/एकघटकी in a physics one-component sense and एकाधार in a linguistic transformation sense; neither is direct evidence for this Turing numeral coding.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P158` — tape — मराठी शब्दकोश. https://shabdakosh.marathi.gov.in/index.php/node/221091 (`checked_supports`): Official Directorate of Languages search extraction read; direct page open unavailable. Limitation: Observation hash is not an origin-page hash; the headword does not attest Turing-machine usage or read-write head terminology.
+
+**Alternatives:**
+
+- एकाधारी संख्या-निरूपण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- एकरेघी संकेतन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- युनरी निरूपण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Is एकचिन्ही निरूपण clear that zero is the empty string and n is represented by exactly n repeated stroke symbols, without suggesting positional base-one digits?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T340-OLP-0258-B004` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:9-10` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:9-10` | pending |
+| `T340-OLP-0258-B005` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:12-22` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:12-22` | pending |
+| `T340-OLP-0258-B006` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:24-31` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:24-32` | pending |
+| `T340-OLP-0258-B007` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:33-36` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:34-37` | pending |
+| `T340-OLP-0258-B008` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:38-49` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:39-51` | pending |
+| `T340-OLP-0258-B011` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:66-70` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:68-72` | pending |
+| `T340-OLP-0258-B012` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:72-80` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:74-82` | pending |
+| `T340-OLP-0258-B013` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:82-96` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:84-98` | pending |
+| `T340-OLP-0258-B016` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:131-185` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:133-188` | pending |
+| `T340-OLP-0258-B017` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:187-196` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:190-199` | pending |
+| `T340-OLP-0258-B018` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:198-202` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:201-206` | pending |
+| `T340-OLP-0258-B019` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:204-214` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:208-218` | pending |
+| `T340-OLP-0258-B020` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:216-220` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:220-224` | pending |
+| `T340-OLP-0258-B022` | `OLP-0258` |  | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `mr/content/turing-machines/machines-computations/unary-numbers.tex:230-243` | pending |
+| `T340-OLP-0260-B013` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:91-94` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:96-100` | pending |
+| `T340-OLP-0261-B008` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:58-68` | `mr/content/turing-machines/machines-computations/combining-machines.tex:60-70` | pending |
+| `T340-OLP-0262-B008` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:62-65` | `mr/content/turing-machines/machines-computations/variants.tex:63-67` | pending |
+
+## T341 — dedicated halting state / accepting state / rejecting state
+
+**Chosen rendering/action:** खास थांबण्याची अवस्था / स्वीकार अवस्था / नकार अवस्था
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** OpenLogic distinguishes the chapter's undefined-transition halting convention from a machine with special terminal states h and r. The Marathi expressions use the established machine/state vocabulary and label the accept and reject branches exactly as the two diagrams show. No consulted official source directly attests the full Turing-specific compounds.
+
+**Rationale:** OpenLogic distinguishes the chapter's undefined-transition halting convention from a machine with special terminal states h and r. The Marathi expressions use the established machine/state vocabulary and label the accept and reject branches exactly as the two diagrams show. No consulted official source directly attests the full Turing-specific compounds.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+
+**Alternatives:**
+
+- समापन अवस्था / स्वीकारणारी अवस्था / नाकारणारी अवस्था — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- हॉल्ट अवस्था / स्वीकार-स्थिती / नकार-स्थिती — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Are थांबण्याची अवस्था and नकार अवस्था clear when both h and r halt but only one represents acceptance, and do they remain distinct from a missing transition?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T341-OLP-0259-B004` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:9-10` | `mr/content/turing-machines/machines-computations/halting-states.tex:9-10` | pending |
+| `T341-OLP-0259-B005` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:12-16` | `mr/content/turing-machines/machines-computations/halting-states.tex:12-16` | pending |
+| `T341-OLP-0259-B006` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:18-23` | `mr/content/turing-machines/machines-computations/halting-states.tex:18-22` | pending |
+| `T341-OLP-0259-B007` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:25-33` | `mr/content/turing-machines/machines-computations/halting-states.tex:24-31` | pending |
+| `T341-OLP-0259-B010` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:46-53` | `mr/content/turing-machines/machines-computations/halting-states.tex:44-51` | pending |
+| `T341-OLP-0259-B013` | `OLP-0259` |  | `upstream/content/turing-machines/machines-computations/halting-states.tex:68-77` | `mr/content/turing-machines/machines-computations/halting-states.tex:66-74` | pending |
+| `T341-OLP-0260-B005` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:12-25` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:12-24` | pending |
+| `T341-OLP-0260-B006` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:27-35` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:26-35` | pending |
+| `T341-OLP-0260-B007` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:37-50` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:37-54` | pending |
+| `T341-OLP-0262-B007` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:41-60` | `mr/content/turing-machines/machines-computations/variants.tex:42-61` | pending |
+
+## T342 — disciplined Turing machine / single terminal state and tape-boundary normal form
+
+**Chosen rendering/action:** शिस्तबद्ध ट्यूरिंग यंत्र / एकच थांबण्याची अवस्था आणि फितीच्या टोकावरील नियम असलेले रूप
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** OpenLogic defines disciplined extensionally by four simultaneous requirements: one designated halting state, halt only at square one, preservation of the end marker at square zero, and no left move attempt there. शिस्तबद्ध follows the source's own metaphor while the definition supplies the full technical meaning. The consulted passages support machine and tape components, not a direct specialist headword. OLTUR-006 identifies a limitation in the source's illustrative boundary-finding shortcut without changing the normal-form proposition.
+
+**Rationale:** OpenLogic defines disciplined extensionally by four simultaneous requirements: one designated halting state, halt only at square one, preservation of the end marker at square zero, and no left move attempt there. शिस्तबद्ध follows the source's own metaphor while the definition supplies the full technical meaning. The consulted passages support machine and tape components, not a direct specialist headword. OLTUR-006 identifies a limitation in the source's illustrative boundary-finding shortcut without changing the normal-form proposition.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P158` — tape — मराठी शब्दकोश. https://shabdakosh.marathi.gov.in/index.php/node/221091 (`checked_supports`): Official Directorate of Languages search extraction read; direct page open unavailable. Limitation: Observation hash is not an origin-page hash; the headword does not attest Turing-machine usage or read-write head terminology.
+
+**Alternatives:**
+
+- नियमबद्ध ट्यूरिंग यंत्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- संयत ट्यूरिंग यंत्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- सुसंयोजित यंत्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does शिस्तबद्ध read naturally as the four-clause normal form, rather than an informal judgment that the machine is better behaved?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T342-OLP-0260-B004` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:9-10` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:9-10` | pending |
+| `T342-OLP-0260-B005` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:12-25` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:12-24` | pending |
+| `T342-OLP-0260-B006` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:27-35` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:26-35` | pending |
+| `T342-OLP-0260-B007` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:37-50` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:37-54` | pending |
+| `T342-OLP-0260-B008` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:52-58` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:56-62` | pending |
+| `T342-OLP-0260-B010` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:66-77` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:70-81` | pending |
+| `T342-OLP-0260-B011` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:79-84` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:83-89` | pending |
+| `T342-OLP-0260-B012` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:86-88` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:91-93` | pending |
+| `T342-OLP-0260-B013` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:91-94` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:96-100` | pending |
+| `T342-OLP-0261-B007` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:52-56` | `mr/content/turing-machines/machines-computations/combining-machines.tex:54-58` | pending |
+| `T342-OLP-0261-B014` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:152-156` | `mr/content/turing-machines/machines-computations/combining-machines.tex:155-160` | pending |
+| `T342-OLP-0261-B015` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:158-164` | `mr/content/turing-machines/machines-computations/combining-machines.tex:162-168` | pending |
+| `T342-OLP-0261-B016` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:166-171` | `mr/content/turing-machines/machines-computations/combining-machines.tex:170-175` | pending |
+
+## T343 — sequential combination of Turing machines / transfer at a missing transition
+
+**Chosen rendering/action:** ट्यूरिंग यंत्रांचे संयोजन / संक्रमण नसताना पुढील यंत्रात प्रवेश
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The edition already uses संयोजन for function composition. Here OpenLogic defines the separate machine-level operation M-frown-M-prime: disjoint state sets, union tape alphabet, first start state, and transfer to the second machine's start state when the first machine would halt, without changing tape or head. The mathematical operator and transfer condition, including the OLTUR-007 definedness correction, fix the local technical sense. No exact specialist Marathi headword is claimed.
+
+**Rationale:** The edition already uses संयोजन for function composition. Here OpenLogic defines the separate machine-level operation M-frown-M-prime: disjoint state sets, union tape alphabet, first start state, and transfer to the second machine's start state when the first machine would halt, without changing tape or head. The mathematical operator and transfer condition, including the OLTUR-007 definedness correction, fix the local technical sense. No exact specialist Marathi headword is claimed.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P158` — tape — मराठी शब्दकोश. https://shabdakosh.marathi.gov.in/index.php/node/221091 (`checked_supports`): Official Directorate of Languages search extraction read; direct page open unavailable. Limitation: Observation hash is not an origin-page hash; the headword does not attest Turing-machine usage or read-write head terminology.
+
+**Alternatives:**
+
+- यंत्रांची जोडणी — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- ट्यूरिंग यंत्रांची मालिका — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- यंत्रांचे क्रमिक संयोजन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does संयोजन clearly denote the sequential machine construction without conflating it with ordinary function composition or parallel operation?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T343-OLP-0261-B004` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:9-10` | `mr/content/turing-machines/machines-computations/combining-machines.tex:9-10` | pending |
+| `T343-OLP-0261-B005` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:12-23` | `mr/content/turing-machines/machines-computations/combining-machines.tex:12-22` | pending |
+| `T343-OLP-0261-B006` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50` | `mr/content/turing-machines/machines-computations/combining-machines.tex:24-52` | pending |
+| `T343-OLP-0261-B007` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:52-56` | `mr/content/turing-machines/machines-computations/combining-machines.tex:54-58` | pending |
+| `T343-OLP-0261-B008` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:58-68` | `mr/content/turing-machines/machines-computations/combining-machines.tex:60-70` | pending |
+| `T343-OLP-0261-B010` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:74-89` | `mr/content/turing-machines/machines-computations/combining-machines.tex:76-91` | pending |
+| `T343-OLP-0261-B012` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:97-125` | `mr/content/turing-machines/machines-computations/combining-machines.tex:99-128` | pending |
+| `T343-OLP-0261-B013` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:127-150` | `mr/content/turing-machines/machines-computations/combining-machines.tex:130-153` | pending |
+| `T343-OLP-0261-B014` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:152-156` | `mr/content/turing-machines/machines-computations/combining-machines.tex:155-160` | pending |
+| `T343-OLP-0261-B015` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:158-164` | `mr/content/turing-machines/machines-computations/combining-machines.tex:162-168` | pending |
+| `T343-OLP-0261-B016` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:166-171` | `mr/content/turing-machines/machines-computations/combining-machines.tex:170-175` | pending |
+
+## T344 — nondeterministic Turing machine / transition relation with multiple successors
+
+**Chosen rendering/action:** अनिर्धारक ट्यूरिंग यंत्र / अनेक संभाव्य पुढील पायऱ्यांचा संक्रमण संबंध
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `low` · **provisional:** `true`
+
+**Intended sense:** OpenLogic defines the variant by a transition relation that may pair one current state-symbol configuration with multiple next state-symbol-direction triples. अनिर्धारक is used for that non-unique next move, explicitly distinct from an undefined transition in the deterministic partial function. A bounded official search did not find the exact computing headword; general विश्वकोश uses अनियत in philosophical and other domains, which is not direct evidence for computational nondeterminism.
+
+**Rationale:** OpenLogic defines the variant by a transition relation that may pair one current state-symbol configuration with multiple next state-symbol-direction triples. अनिर्धारक is used for that non-unique next move, explicitly distinct from an undefined transition in the deterministic partial function. A bounded official search did not find the exact computing headword; general विश्वकोश uses अनियत in philosophical and other domains, which is not direct evidence for computational nondeterminism.
+
+**Authorities actually checked:**
+
+- `MR-P029` — फलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/27548/ (`checked_supports`): Consulted for this decision. Limitation: Origin download failed with ConnectionError; web open had 502. This is a short observed extraction, not preserved original HTML. Later article mathematics and its inverse wording were not adopted as authoritative.
+- `MR-P030` — अवकलन व समाकलन — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/26597/ (`checked_supports`): Consulted for this decision. Limitation: Original HTML download failed. One-to-one correspondence vocabulary alone does not decide the injective/bijective distinction; OpenLogic definitions govern.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P158` — tape — मराठी शब्दकोश. https://shabdakosh.marathi.gov.in/index.php/node/221091 (`checked_supports`): Official Directorate of Languages search extraction read; direct page open unavailable. Limitation: Observation hash is not an origin-page hash; the headword does not attest Turing-machine usage or read-write head terminology.
+
+**Alternatives:**
+
+- अनियत ट्यूरिंग यंत्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अनिर्धारित ट्यूरिंग यंत्र (risks confusion with undefined transition) — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- अ-निश्चयी ट्यूरिंग यंत्र — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does अनिर्धारक convey multiple permitted successor moves without suggesting random choice or a missing transition?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T344-OLP-0262-B005` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:12-27` | `mr/content/turing-machines/machines-computations/variants.tex:12-27` | pending |
+| `T344-OLP-0262-B006` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:29-39` | `mr/content/turing-machines/machines-computations/variants.tex:29-40` | pending |
+| `T344-OLP-0262-B009` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:67-70` | `mr/content/turing-machines/machines-computations/variants.tex:69-72` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -26110,6 +26418,56 @@ Coverage: 254/722 source units through OLP-0257; 500 applied decisions; 13,196 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLTUR-005-OLP-0257` | `OLP-0257` |  | `upstream/content/turing-machines/machines-computations/turing-machines.tex:40-51` | `mr/content/turing-machines/machines-computations/configuration.tex:98-110` | pending |
+
+## OLTUR-006 — frozen-source-disciplined-conversion-marker-search-limitation
+
+**Chosen rendering/action:** Preserve the proposition and suggested conversion in Marathi, then add bounded adjacent prose and reader note OLTUR-006 stating that the marker search needs a separate general-case construction when the old marker has been erased or duplicated. Do not assert a new unproved construction.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The example conversion says to move left until the tape-end marker is found, although this same section and the earlier machine definition allow the original machine to erase that marker at square zero or write it at another square. The simple marker search alone therefore need not reach the actual tape boundary.
+
+**Rationale:** The example conversion says to move left until the tape-end marker is found, although this same section and the earlier machine definition allow the original machine to erase that marker at square zero or write it at another square. The simple marker search alone therefore need not reach the actual tape boundary. Chosen action: Preserve the proposition and suggested conversion in Marathi, then add bounded adjacent prose and reader note OLTUR-006 stating that the marker search needs a separate general-case construction when the old marker has been erased or duplicated. Do not assert a new unproved construction.
+
+**Authorities actually checked:**
+
+- `OLTUR-006-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-006. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Present the marker search as an unconditional complete proof despite the source's permissive marker convention — `rejected`: Not chosen; the source finding and recorded action control.
+- Reject the equivalence proposition solely because the illustrative shortcut is incomplete — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the Marathi caveat distinguish an incomplete shortcut from the proposition's general existence claim without silently imposing a new marker rule?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-006-OLP-0260` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:12-50` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:36-53` | pending |
+
+## OLTUR-007 — confirmed-frozen-source-overlapping-transition-cases-in-machine-composition
+
+**Chosen rendering/action:** Constrain the first branch in the Marathi display to q in Q with δ(q,σ) defined; retain the third undefined branch, every transition value and all other symbols. Add adjacent reader note OLTUR-007 and a one-phrase documented QA projection back to the frozen wording.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The first branch of the frozen definition for δ'' applies whenever q belongs to Q, while the third branch also applies when q belongs to Q and δ(q,σ) is undefined. Thus the branches overlap exactly where the transfer to the second machine is needed, and the first branch does not supply a value there.
+
+**Rationale:** The first branch of the frozen definition for δ'' applies whenever q belongs to Q, while the third branch also applies when q belongs to Q and δ(q,σ) is undefined. Thus the branches overlap exactly where the transfer to the second machine is needed, and the first branch does not supply a value there. Chosen action: Constrain the first branch in the Marathi display to q in Q with δ(q,σ) defined; retain the third undefined branch, every transition value and all other symbols. Add adjacent reader note OLTUR-007 and a one-phrase documented QA projection back to the frozen wording.
+
+**Authorities actually checked:**
+
+- `OLTUR-007-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-007. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Keep the overlapping cases and leave the composite transition function underspecified at the transfer point — `rejected`: Not chosen; the source finding and recorded action control.
+- Reorder the cases without stating the definedness condition, relying on an implicit first-applicable-branch convention — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do the corrected first and third branch predicates now partition Q's defined and undefined transitions while the Q-prime branch remains disjoint?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-007-OLP-0261` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:36-44` | `mr/content/turing-machines/machines-computations/combining-machines.tex:37-46` | pending |
 
 ## Deferred prospective decisions
 

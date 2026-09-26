@@ -2,7 +2,7 @@
 
 This view contains only high-priority Marathi choices: sparse or unattested evidence, preserved-origin uncertainty, ambiguity-avoiding paraphrases, or another low-confidence status. Review is welcome but is not a completion gate.
 
-High-priority decisions: **43**; governed occurrences: **1107**. Script: Devanagari (Deva); locale: mr-IN; edition tag: mr-Deva-IN.
+High-priority decisions: **43**; governed occurrences: **1109**. Script: Devanagari (Deva); locale: mr-IN; edition tag: mr-Deva-IN.
 
 | Decision | Source term/sense | Chosen Marathi | Occurrences | Current PDF page ranges | Please double-check |
 |---|---|---|---:|---|---|
@@ -40,7 +40,7 @@ High-priority decisions: **43**; governed occurrences: **1107**. Script: Devanag
 | T269 | default logic / nonmonotonic logic / defeasible reasoning | पूर्वमान्य तर्कशास्त्र / अ-एकस्वनिक तर्कशास्त्र / खंडनीय तर्कविचार | 2 | 241 | Please double-check: Are पूर्वमान्य, अ-एकस्वनिक and खंडनीय the clearest distinct Marathi labels for these three related notions? |
 | T274 | overspill (arbitrarily large finite models imply an infinite model) | सांत मर्यादेपलीकडील प्रसरण | 3 | 243 | Please double-check: Is सांत मर्यादेपलीकडील प्रसरण a readable title for this compactness consequence, or is the shorter अतिप्रसरण conventional in Marathi model theory? |
 | T289 | Tennenbaum (surname, in Tennenbaum's theorem) | टेनेनबाउम | 1 | 259–260 | Please double-check: Is टेनेनबाउम the conventional Marathi rendering of Stanley Tennenbaum's surname? |
-| T304 | lambda calculus / simulate a model of computation | लॅम्डा कलन / संगणन-प्रतिमानाचे अनुकरण करणे | 8 | not yet paginated | Please double-check: Is लॅम्डा कलन the conventional Marathi name, and is अनुकरण करणे sufficiently precise for computational simulation? |
+| T304 | lambda calculus / simulate a model of computation | लॅम्डा कलन / संगणन-प्रतिमानाचे अनुकरण करणे | 10 | not yet paginated | Please double-check: Is लॅम्डा कलन the conventional Marathi name, and is अनुकरण करणे sufficiently precise for computational simulation? |
 | MRSIZ-001 | The statement uses the finite initial segment 0 through n while the proof obtains 0 through n-1; the parameter is implicitly renamed. | Preserved both endpoints and added an adjacent clarification that they describe the same family after reindexing. | 1 | 40 | Please double-check: Would an explicit parameter renaming be clearer than the current adjacent note? |
 | MRSIZ-002 | A pairing function is defined only as an injection A×B→Nat, so its inverse is generally partial and is not an enumeration unless the pairing function is surjective. | Separated the surjective case from the general range-restricted inverse argument and added an adjacent note. | 1 | 43 | Please double-check: Should the exercise retain both cases or simply assume a bijective pairing function? |
 | OLSIZ-004 | The definition calls f(Z) the sequence s_k although k is never bound or determined. | Replaced the unbound s_k and s_k(n) forms by one bound output name s and s(n), and added the adjacent keyed note. | 1 | 47 | Please double-check: Would s_Z communicate dependence on Z more clearly than the chosen bound name s? |

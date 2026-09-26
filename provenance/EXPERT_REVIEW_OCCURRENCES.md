@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **254/722 source units**, 2512 aligned translated blocks, 13196 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
+Current scope: **260/722 source units**, 2567 aligned translated blocks, 13367 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -1406,7 +1406,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T008 — natural numbers</strong> (196 occurrences; routine priority)</summary>
+<summary><strong>T008 — natural numbers</strong> (201 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1606,6 +1606,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T008-OLP-0211-B005 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L12) | [mr/content/computability/recursive-functions/primitive-recursion.tex:12-25](../mr/content/computability/recursive-functions/primitive-recursion.tex#L12) | not yet paginated |
 | T008-OLP-0211-B006 | OLP-0211 ·  | [upstream/content/computability/recursive-functions/primitive-recursion.tex:26-41](../upstream/content/computability/recursive-functions/primitive-recursion.tex#L26) | [mr/content/computability/recursive-functions/primitive-recursion.tex:27-42](../mr/content/computability/recursive-functions/primitive-recursion.tex#L27) | not yet paginated |
 | T008-OLP-0213-B008 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:37-42](../upstream/content/computability/recursive-functions/pr-functions.tex#L37) | [mr/content/computability/recursive-functions/pr-functions.tex:38-44](../mr/content/computability/recursive-functions/pr-functions.tex#L38) | not yet paginated |
+| T008-OLP-0258-B005 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:12-22](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L12) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:12-22](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L12) | not yet paginated |
+| T008-OLP-0258-B006 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:24-31](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L24) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:24-32](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L24) | not yet paginated |
+| T008-OLP-0258-B007 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:33-36](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L33) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:34-37](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L34) | not yet paginated |
+| T008-OLP-0258-B019 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:204-214](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L204) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:208-218](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L208) | not yet paginated |
+| T008-OLP-0258-B022 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L226) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:230-243](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L230) | not yet paginated |
 
 **Chosen rendering/action:** नैसर्गिक संख्या
 
@@ -3143,7 +3148,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T030 — relation / binary relation</strong> (225 occurrences; medium priority)</summary>
+<summary><strong>T030 — relation / binary relation</strong> (227 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3372,6 +3377,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T030-OLP-0224-B011 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:89-96](../upstream/content/computability/recursive-functions/partial-functions.tex#L89) | [mr/content/computability/recursive-functions/partial-functions.tex:83-90](../mr/content/computability/recursive-functions/partial-functions.tex#L83) | not yet paginated |
 | T030-OLP-0224-B012 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:98-103](../upstream/content/computability/recursive-functions/partial-functions.tex#L98) | [mr/content/computability/recursive-functions/partial-functions.tex:92-97](../mr/content/computability/recursive-functions/partial-functions.tex#L92) | not yet paginated |
 | T030-OLP-0224-B014 | OLP-0224 ·  | [upstream/content/computability/recursive-functions/partial-functions.tex:108-112](../upstream/content/computability/recursive-functions/partial-functions.tex#L108) | [mr/content/computability/recursive-functions/partial-functions.tex:102-106](../mr/content/computability/recursive-functions/partial-functions.tex#L102) | not yet paginated |
+| T030-OLP-0262-B005 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:12-27](../upstream/content/turing-machines/machines-computations/variants.tex#L12) | [mr/content/turing-machines/machines-computations/variants.tex:12-27](../mr/content/turing-machines/machines-computations/variants.tex#L12) | not yet paginated |
+| T030-OLP-0262-B006 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:29-39](../upstream/content/turing-machines/machines-computations/variants.tex#L29) | [mr/content/turing-machines/machines-computations/variants.tex:29-40](../mr/content/turing-machines/machines-computations/variants.tex#L29) | not yet paginated |
 
 **Chosen rendering/action:** संबंध / द्विपदी संबंध
 
@@ -6109,7 +6116,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T053 — composition / partial / total function</strong> (72 occurrences; medium priority)</summary>
+<summary><strong>T053 — composition / partial / total function</strong> (77 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6185,6 +6192,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T053-OLP-0239-B012 | OLP-0239 ·  | [upstream/content/computability/computability-theory/equiv-ce-defs.tex:83-86](../upstream/content/computability/computability-theory/equiv-ce-defs.tex#L83) | [mr/content/computability/computability-theory/equiv-ce-defs.tex:93-97](../mr/content/computability/computability-theory/equiv-ce-defs.tex#L93) | not yet paginated |
 | T053-OLP-0239-B013 | OLP-0239 ·  | [upstream/content/computability/computability-theory/equiv-ce-defs.tex:88-105](../upstream/content/computability/computability-theory/equiv-ce-defs.tex#L88) | [mr/content/computability/computability-theory/equiv-ce-defs.tex:99-121](../mr/content/computability/computability-theory/equiv-ce-defs.tex#L99) | not yet paginated |
 | T053-OLP-0239-B014 | OLP-0239 ·  | [upstream/content/computability/computability-theory/equiv-ce-defs.tex:107-127](../upstream/content/computability/computability-theory/equiv-ce-defs.tex#L107) | [mr/content/computability/computability-theory/equiv-ce-defs.tex:123-143](../mr/content/computability/computability-theory/equiv-ce-defs.tex#L123) | not yet paginated |
+| T053-OLP-0261-B005 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:12-23](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L12) | [mr/content/turing-machines/machines-computations/combining-machines.tex:12-22](../mr/content/turing-machines/machines-computations/combining-machines.tex#L12) | not yet paginated |
+| T053-OLP-0261-B006 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L25) | [mr/content/turing-machines/machines-computations/combining-machines.tex:24-52](../mr/content/turing-machines/machines-computations/combining-machines.tex#L24) | not yet paginated |
+| T053-OLP-0261-B014 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:152-156](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L152) | [mr/content/turing-machines/machines-computations/combining-machines.tex:155-160](../mr/content/turing-machines/machines-computations/combining-machines.tex#L155) | not yet paginated |
+| T053-OLP-0261-B015 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:158-164](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L158) | [mr/content/turing-machines/machines-computations/combining-machines.tex:162-168](../mr/content/turing-machines/machines-computations/combining-machines.tex#L162) | not yet paginated |
+| T053-OLP-0261-B016 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:166-171](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L166) | [mr/content/turing-machines/machines-computations/combining-machines.tex:170-175](../mr/content/turing-machines/machines-computations/combining-machines.tex#L170) | not yet paginated |
 
 **Chosen rendering/action:** संयोजन / अंशतः फलन / सर्वत्र परिभाषित फलन
 
@@ -6846,7 +6858,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T067 — pairing function / encode / code / decode</strong> (35 occurrences; medium priority)</summary>
+<summary><strong>T067 — pairing function / encode / code / decode</strong> (36 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -6885,6 +6897,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T067-OLP-0239-B010 | OLP-0239 ·  | [upstream/content/computability/computability-theory/equiv-ce-defs.tex:54-72](../upstream/content/computability/computability-theory/equiv-ce-defs.tex#L54) | [mr/content/computability/computability-theory/equiv-ce-defs.tex:58-79](../mr/content/computability/computability-theory/equiv-ce-defs.tex#L58) | not yet paginated |
 | T067-OLP-0239-B011 | OLP-0239 ·  | [upstream/content/computability/computability-theory/equiv-ce-defs.tex:74-81](../upstream/content/computability/computability-theory/equiv-ce-defs.tex#L74) | [mr/content/computability/computability-theory/equiv-ce-defs.tex:81-91](../mr/content/computability/computability-theory/equiv-ce-defs.tex#L81) | not yet paginated |
 | T067-OLP-0240-B007 | OLP-0240 ·  | [upstream/content/computability/computability-theory/non-comp-set.tex:21-30](../upstream/content/computability/computability-theory/non-comp-set.tex#L21) | [mr/content/computability/computability-theory/non-comp-set.tex:21-30](../mr/content/computability/computability-theory/non-comp-set.tex#L21) | not yet paginated |
+| T067-OLP-0258-B005 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:12-22](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L12) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:12-22](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** जोडीकरण फलन / सांकेतीकरण करणे / संकेतांक / विसांकेतीकरण करणे
 
@@ -16073,7 +16086,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T287 — computable / computable structure or function; decidable / decidable relation</strong> (95 occurrences; routine priority)</summary>
+<summary><strong>T287 — computable / computable structure or function; decidable / decidable relation</strong> (101 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16172,6 +16185,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T287-OLP-0254-B005 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:12-27](../upstream/content/turing-machines/machines-computations/introduction.tex#L12) | [mr/content/turing-machines/machines-computations/introduction.tex:12-26](../mr/content/turing-machines/machines-computations/introduction.tex#L12) | not yet paginated |
 | T287-OLP-0254-B009 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:86-108](../upstream/content/turing-machines/machines-computations/introduction.tex#L86) | [mr/content/turing-machines/machines-computations/introduction.tex:82-102](../mr/content/turing-machines/machines-computations/introduction.tex#L82) | not yet paginated |
 | T287-OLP-0254-B010 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:110-128](../upstream/content/turing-machines/machines-computations/introduction.tex#L110) | [mr/content/turing-machines/machines-computations/introduction.tex:104-124](../mr/content/turing-machines/machines-computations/introduction.tex#L104) | not yet paginated |
+| T287-OLP-0262-B009 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:67-70](../upstream/content/turing-machines/machines-computations/variants.tex#L67) | [mr/content/turing-machines/machines-computations/variants.tex:69-72](../mr/content/turing-machines/machines-computations/variants.tex#L69) | not yet paginated |
+| T287-OLP-0262-B010 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:72-82](../upstream/content/turing-machines/machines-computations/variants.tex#L72) | [mr/content/turing-machines/machines-computations/variants.tex:74-86](../mr/content/turing-machines/machines-computations/variants.tex#L74) | not yet paginated |
+| T287-OLP-0263-B005 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:12-21](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L12) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:12-20](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L12) | not yet paginated |
+| T287-OLP-0263-B006 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:23-26](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L23) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:22-25](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L22) | not yet paginated |
+| T287-OLP-0263-B007 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:28-33](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L28) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:27-32](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L27) | not yet paginated |
+| T287-OLP-0263-B008 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:35-45](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L35) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:34-45](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L34) | not yet paginated |
 
 **Chosen rendering/action:** संगणनक्षम / संगणनक्षम रचना किंवा फलन; निर्णेय / निर्णेय संबंध
 
@@ -16182,7 +16201,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T288 — Turing machine / primitive recursion</strong> (65 occurrences; medium priority)</summary>
+<summary><strong>T288 — Turing machine / primitive recursion</strong> (100 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16251,6 +16270,41 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T288-OLP-0257-B005 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:12-23](../upstream/content/turing-machines/machines-computations/configuration.tex#L12) | [mr/content/turing-machines/machines-computations/configuration.tex:12-23](../mr/content/turing-machines/machines-computations/configuration.tex#L12) | not yet paginated |
 | T288-OLP-0257-B006 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:25-38](../upstream/content/turing-machines/machines-computations/configuration.tex#L25) | [mr/content/turing-machines/machines-computations/configuration.tex:25-39](../mr/content/turing-machines/machines-computations/configuration.tex#L25) | not yet paginated |
 | T288-OLP-0257-B007 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:40-49](../upstream/content/turing-machines/machines-computations/configuration.tex#L40) | [mr/content/turing-machines/machines-computations/configuration.tex:41-51](../mr/content/turing-machines/machines-computations/configuration.tex#L41) | not yet paginated |
+| T288-OLP-0258-B005 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:12-22](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L12) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:12-22](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L12) | not yet paginated |
+| T288-OLP-0258-B006 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:24-31](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L24) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:24-32](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L24) | not yet paginated |
+| T288-OLP-0258-B007 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:33-36](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L33) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:34-37](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L34) | not yet paginated |
+| T288-OLP-0258-B008 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:38-49](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L38) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:39-51](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L39) | not yet paginated |
+| T288-OLP-0258-B010 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:55-64](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L55) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:57-66](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L57) | not yet paginated |
+| T288-OLP-0258-B012 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:72-80](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L72) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:74-82](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L74) | not yet paginated |
+| T288-OLP-0258-B013 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:82-96](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L82) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:84-98](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L84) | not yet paginated |
+| T288-OLP-0258-B015 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:108-129](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L108) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:110-131](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L110) | not yet paginated |
+| T288-OLP-0258-B016 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:131-185](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L131) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:133-188](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L133) | not yet paginated |
+| T288-OLP-0258-B017 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:187-196](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L187) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:190-199](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L190) | not yet paginated |
+| T288-OLP-0258-B018 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:198-202](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L198) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:201-206](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L201) | not yet paginated |
+| T288-OLP-0258-B019 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:204-214](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L204) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:208-218](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L208) | not yet paginated |
+| T288-OLP-0258-B020 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:216-220](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L216) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:220-224](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L220) | not yet paginated |
+| T288-OLP-0258-B022 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L226) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:230-243](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L230) | not yet paginated |
+| T288-OLP-0259-B013 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:68-77](../upstream/content/turing-machines/machines-computations/halting-states.tex#L68) | [mr/content/turing-machines/machines-computations/halting-states.tex:66-74](../mr/content/turing-machines/machines-computations/halting-states.tex#L66) | not yet paginated |
+| T288-OLP-0260-B008 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:52-58](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L52) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:56-62](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L56) | not yet paginated |
+| T288-OLP-0260-B010 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:66-77](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L66) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:70-81](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L70) | not yet paginated |
+| T288-OLP-0260-B011 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:79-84](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L79) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:83-89](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L83) | not yet paginated |
+| T288-OLP-0260-B012 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:86-88](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L86) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:91-93](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L91) | not yet paginated |
+| T288-OLP-0260-B013 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:91-94](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L91) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:96-100](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L96) | not yet paginated |
+| T288-OLP-0261-B005 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:12-23](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L12) | [mr/content/turing-machines/machines-computations/combining-machines.tex:12-22](../mr/content/turing-machines/machines-computations/combining-machines.tex#L12) | not yet paginated |
+| T288-OLP-0261-B008 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:58-68](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L58) | [mr/content/turing-machines/machines-computations/combining-machines.tex:60-70](../mr/content/turing-machines/machines-computations/combining-machines.tex#L60) | not yet paginated |
+| T288-OLP-0261-B010 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:74-89](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L74) | [mr/content/turing-machines/machines-computations/combining-machines.tex:76-91](../mr/content/turing-machines/machines-computations/combining-machines.tex#L76) | not yet paginated |
+| T288-OLP-0261-B012 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:97-125](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L97) | [mr/content/turing-machines/machines-computations/combining-machines.tex:99-128](../mr/content/turing-machines/machines-computations/combining-machines.tex#L99) | not yet paginated |
+| T288-OLP-0261-B013 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:127-150](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L127) | [mr/content/turing-machines/machines-computations/combining-machines.tex:130-153](../mr/content/turing-machines/machines-computations/combining-machines.tex#L130) | not yet paginated |
+| T288-OLP-0261-B014 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:152-156](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L152) | [mr/content/turing-machines/machines-computations/combining-machines.tex:155-160](../mr/content/turing-machines/machines-computations/combining-machines.tex#L155) | not yet paginated |
+| T288-OLP-0261-B015 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:158-164](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L158) | [mr/content/turing-machines/machines-computations/combining-machines.tex:162-168](../mr/content/turing-machines/machines-computations/combining-machines.tex#L162) | not yet paginated |
+| T288-OLP-0261-B016 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:166-171](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L166) | [mr/content/turing-machines/machines-computations/combining-machines.tex:170-175](../mr/content/turing-machines/machines-computations/combining-machines.tex#L170) | not yet paginated |
+| T288-OLP-0262-B007 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:41-60](../upstream/content/turing-machines/machines-computations/variants.tex#L41) | [mr/content/turing-machines/machines-computations/variants.tex:42-61](../mr/content/turing-machines/machines-computations/variants.tex#L42) | not yet paginated |
+| T288-OLP-0262-B009 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:67-70](../upstream/content/turing-machines/machines-computations/variants.tex#L67) | [mr/content/turing-machines/machines-computations/variants.tex:69-72](../mr/content/turing-machines/machines-computations/variants.tex#L69) | not yet paginated |
+| T288-OLP-0262-B010 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:72-82](../upstream/content/turing-machines/machines-computations/variants.tex#L72) | [mr/content/turing-machines/machines-computations/variants.tex:74-86](../mr/content/turing-machines/machines-computations/variants.tex#L74) | not yet paginated |
+| T288-OLP-0263-B005 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:12-21](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L12) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:12-20](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L12) | not yet paginated |
+| T288-OLP-0263-B006 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:23-26](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L23) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:22-25](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L22) | not yet paginated |
+| T288-OLP-0263-B007 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:28-33](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L28) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:27-32](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L27) | not yet paginated |
+| T288-OLP-0263-B008 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:35-45](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L35) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:34-45](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L34) | not yet paginated |
 
 **Chosen rendering/action:** ट्यूरिंग यंत्र / आदिम पुनरावर्तन
 
@@ -16714,7 +16768,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T304 — lambda calculus / simulate a model of computation</strong> (8 occurrences; high priority)</summary>
+<summary><strong>T304 — lambda calculus / simulate a model of computation</strong> (10 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16726,6 +16780,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T304-OLP-0249-B020 | OLP-0249 ·  | [upstream/content/computability/computability-theory/fixed-point-thm.tex:210-241](../upstream/content/computability/computability-theory/fixed-point-thm.tex#L210) | [mr/content/computability/computability-theory/fixed-point-thm.tex:217-251](../mr/content/computability/computability-theory/fixed-point-thm.tex#L217) | not yet paginated |
 | T304-OLP-0254-B005 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:12-27](../upstream/content/turing-machines/machines-computations/introduction.tex#L12) | [mr/content/turing-machines/machines-computations/introduction.tex:12-26](../mr/content/turing-machines/machines-computations/introduction.tex#L12) | not yet paginated |
 | T304-OLP-0254-B009 | OLP-0254 ·  | [upstream/content/turing-machines/machines-computations/introduction.tex:86-108](../upstream/content/turing-machines/machines-computations/introduction.tex#L86) | [mr/content/turing-machines/machines-computations/introduction.tex:82-102](../mr/content/turing-machines/machines-computations/introduction.tex#L82) | not yet paginated |
+| T304-OLP-0262-B010 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:72-82](../upstream/content/turing-machines/machines-computations/variants.tex#L72) | [mr/content/turing-machines/machines-computations/variants.tex:74-86](../mr/content/turing-machines/machines-computations/variants.tex#L74) | not yet paginated |
+| T304-OLP-0263-B005 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:12-21](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L12) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:12-20](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L12) | not yet paginated |
 
 **Chosen rendering/action:** लॅम्डा कलन / संगणन-प्रतिमानाचे अनुकरण करणे
 
@@ -16783,7 +16839,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T307 — truncated subtraction / distance / maximum / minimum</strong> (11 occurrences; routine priority)</summary>
+<summary><strong>T307 — truncated subtraction / distance / maximum / minimum</strong> (14 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16798,6 +16854,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T307-OLP-0217-B007 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:38-45](../upstream/content/computability/recursive-functions/pr-relations.tex#L38) | [mr/content/computability/recursive-functions/pr-relations.tex:37-44](../mr/content/computability/recursive-functions/pr-relations.tex#L37) | not yet paginated |
 | T307-OLP-0217-B009 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:60-86](../upstream/content/computability/recursive-functions/pr-relations.tex#L60) | [mr/content/computability/recursive-functions/pr-relations.tex:59-86](../mr/content/computability/recursive-functions/pr-relations.tex#L59) | not yet paginated |
 | T307-OLP-0217-B011 | OLP-0217 ·  | [upstream/content/computability/recursive-functions/pr-relations.tex:101-119](../upstream/content/computability/recursive-functions/pr-relations.tex#L101) | [mr/content/computability/recursive-functions/pr-relations.tex:102-121](../mr/content/computability/recursive-functions/pr-relations.tex#L102) | not yet paginated |
+| T307-OLP-0258-B018 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:198-202](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L198) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:201-206](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L201) | not yet paginated |
+| T307-OLP-0258-B020 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:216-220](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L216) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:220-224](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L220) | not yet paginated |
+| T307-OLP-0258-B021 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:222-224](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L222) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:226-228](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L226) | not yet paginated |
 
 **Chosen rendering/action:** छाटलेली वजाबाकी / अंतर / महत्तम / लघुतम
 
@@ -17050,7 +17109,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T318 — Church–Turing thesis / unpack a code / notation evaluator</strong> (5 occurrences; routine priority)</summary>
+<summary><strong>T318 — Church–Turing thesis / unpack a code / notation evaluator</strong> (10 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17059,6 +17118,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T318-OLP-0223-B011 | OLP-0223 ·  | [upstream/content/computability/recursive-functions/non-pr-functions.tex:88-96](../upstream/content/computability/recursive-functions/non-pr-functions.tex#L88) | [mr/content/computability/recursive-functions/non-pr-functions.tex:85-92](../mr/content/computability/recursive-functions/non-pr-functions.tex#L85) | not yet paginated |
 | T318-OLP-0226-B005 | OLP-0226 ·  | [upstream/content/computability/recursive-functions/halting-problem.tex:12-25](../upstream/content/computability/recursive-functions/halting-problem.tex#L12) | [mr/content/computability/recursive-functions/halting-problem.tex:12-23](../mr/content/computability/recursive-functions/halting-problem.tex#L12) | not yet paginated |
 | T318-OLP-0229-B009 | OLP-0229 ·  | [upstream/content/computability/computability-theory/introduction.tex:50-66](../upstream/content/computability/computability-theory/introduction.tex#L50) | [mr/content/computability/computability-theory/introduction.tex:51-64](../mr/content/computability/computability-theory/introduction.tex#L51) | not yet paginated |
+| T318-OLP-0263-B004 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:9-10](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L9) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:9-10](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L9) | not yet paginated |
+| T318-OLP-0263-B005 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:12-21](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L12) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:12-20](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L12) | not yet paginated |
+| T318-OLP-0263-B006 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:23-26](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L23) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:22-25](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L22) | not yet paginated |
+| T318-OLP-0263-B007 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:28-33](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L28) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:27-32](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L27) | not yet paginated |
+| T318-OLP-0263-B008 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:35-45](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L35) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:34-45](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L34) | not yet paginated |
 
 **Chosen rendering/action:** चर्च–ट्यूरिंग प्रबंध / संकेतांक उलगडणे / चिन्हांकनाचे मूल्य काढणारी प्रक्रिया
 
@@ -17069,7 +17133,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T319 — defined or undefined at an input / partial equality / unbounded mu-search operator / non-halting computation</strong> (58 occurrences; routine priority)</summary>
+<summary><strong>T319 — defined or undefined at an input / partial equality / unbounded mu-search operator / non-halting computation</strong> (61 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17131,6 +17195,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T319-OLP-0256-B006 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:22-35](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L22) | [mr/content/turing-machines/machines-computations/turing-machines.tex:21-34](../mr/content/turing-machines/machines-computations/turing-machines.tex#L21) | not yet paginated |
 | T319-OLP-0257-B010 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:63-82](../upstream/content/turing-machines/machines-computations/configuration.tex#L63) | [mr/content/turing-machines/machines-computations/configuration.tex:71-90](../mr/content/turing-machines/machines-computations/configuration.tex#L71) | not yet paginated |
 | T319-OLP-0257-B012 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:89-95](../upstream/content/turing-machines/machines-computations/configuration.tex#L89) | [mr/content/turing-machines/machines-computations/configuration.tex:98-110](../mr/content/turing-machines/machines-computations/configuration.tex#L98) | not yet paginated |
+| T319-OLP-0258-B022 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L226) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:230-243](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L230) | not yet paginated |
+| T319-OLP-0260-B007 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:37-50](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L37) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:37-54](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L37) | not yet paginated |
+| T319-OLP-0261-B006 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L25) | [mr/content/turing-machines/machines-computations/combining-machines.tex:24-52](../mr/content/turing-machines/machines-computations/combining-machines.tex#L24) | not yet paginated |
 
 **Chosen rendering/action:** आदानावर परिभाषित किंवा अपरिभाषित / आंशिक समता / अपरिबद्ध μ-शोध परिकर्मी / न थांबणारे संगणन
 
@@ -17238,7 +17305,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T322 — halting problem / halting function / total code numbering</strong> (30 occurrences; medium priority)</summary>
+<summary><strong>T322 — halting problem / halting function / total code numbering</strong> (33 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17272,6 +17339,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T322-OLP-0256-B008 | OLP-0256 ·  | [upstream/content/turing-machines/machines-computations/turing-machines.tex:50-60](../upstream/content/turing-machines/machines-computations/turing-machines.tex#L50) | [mr/content/turing-machines/machines-computations/turing-machines.tex:50-60](../mr/content/turing-machines/machines-computations/turing-machines.tex#L50) | not yet paginated |
 | T322-OLP-0257-B012 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:89-95](../upstream/content/turing-machines/machines-computations/configuration.tex#L89) | [mr/content/turing-machines/machines-computations/configuration.tex:98-110](../mr/content/turing-machines/machines-computations/configuration.tex#L98) | not yet paginated |
 | T322-OLP-0257-B013 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:97-102](../upstream/content/turing-machines/machines-computations/configuration.tex#L97) | [mr/content/turing-machines/machines-computations/configuration.tex:112-117](../mr/content/turing-machines/machines-computations/configuration.tex#L112) | not yet paginated |
+| T322-OLP-0259-B013 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:68-77](../upstream/content/turing-machines/machines-computations/halting-states.tex#L68) | [mr/content/turing-machines/machines-computations/halting-states.tex:66-74](../mr/content/turing-machines/machines-computations/halting-states.tex#L66) | not yet paginated |
+| T322-OLP-0261-B005 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:12-23](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L12) | [mr/content/turing-machines/machines-computations/combining-machines.tex:12-22](../mr/content/turing-machines/machines-computations/combining-machines.tex#L12) | not yet paginated |
+| T322-OLP-0263-B008 | OLP-0263 ·  | [upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:35-45](../upstream/content/turing-machines/machines-computations/church-turing-thesis.tex#L35) | [mr/content/turing-machines/machines-computations/church-turing-thesis.tex:34-45](../mr/content/turing-machines/machines-computations/church-turing-thesis.tex#L34) | not yet paginated |
 
 **Chosen rendering/action:** थांबण्याची समस्या / थांबण्याचे फलन / प्रत्येक संकेतांकाचा आंशिक पुनरावर्ती फलनाशी निर्देशांक-संबंध
 
@@ -17699,7 +17769,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T338 — Turing-machine tape / square / read-write head / state / alphabet / transition function</strong> (32 occurrences; routine priority)</summary>
+<summary><strong>T338 — Turing-machine tape / square / read-write head / state / alphabet / transition function</strong> (63 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17735,6 +17805,37 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T338-OLP-0257-B010 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:63-82](../upstream/content/turing-machines/machines-computations/configuration.tex#L63) | [mr/content/turing-machines/machines-computations/configuration.tex:71-90](../mr/content/turing-machines/machines-computations/configuration.tex#L71) | not yet paginated |
 | T338-OLP-0257-B012 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:89-95](../upstream/content/turing-machines/machines-computations/configuration.tex#L89) | [mr/content/turing-machines/machines-computations/configuration.tex:98-110](../mr/content/turing-machines/machines-computations/configuration.tex#L98) | not yet paginated |
 | T338-OLP-0257-B013 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:97-102](../upstream/content/turing-machines/machines-computations/configuration.tex#L97) | [mr/content/turing-machines/machines-computations/configuration.tex:112-117](../mr/content/turing-machines/machines-computations/configuration.tex#L112) | not yet paginated |
+| T338-OLP-0258-B005 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:12-22](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L12) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:12-22](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L12) | not yet paginated |
+| T338-OLP-0258-B008 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:38-49](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L38) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:39-51](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L39) | not yet paginated |
+| T338-OLP-0258-B010 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:55-64](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L55) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:57-66](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L57) | not yet paginated |
+| T338-OLP-0258-B012 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:72-80](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L72) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:74-82](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L74) | not yet paginated |
+| T338-OLP-0258-B013 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:82-96](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L82) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:84-98](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L84) | not yet paginated |
+| T338-OLP-0258-B015 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:108-129](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L108) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:110-131](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L110) | not yet paginated |
+| T338-OLP-0258-B016 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:131-185](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L131) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:133-188](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L133) | not yet paginated |
+| T338-OLP-0258-B017 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:187-196](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L187) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:190-199](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L190) | not yet paginated |
+| T338-OLP-0258-B020 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:216-220](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L216) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:220-224](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L220) | not yet paginated |
+| T338-OLP-0259-B005 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:12-16](../upstream/content/turing-machines/machines-computations/halting-states.tex#L12) | [mr/content/turing-machines/machines-computations/halting-states.tex:12-16](../mr/content/turing-machines/machines-computations/halting-states.tex#L12) | not yet paginated |
+| T338-OLP-0259-B006 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:18-23](../upstream/content/turing-machines/machines-computations/halting-states.tex#L18) | [mr/content/turing-machines/machines-computations/halting-states.tex:18-22](../mr/content/turing-machines/machines-computations/halting-states.tex#L18) | not yet paginated |
+| T338-OLP-0259-B007 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:25-33](../upstream/content/turing-machines/machines-computations/halting-states.tex#L25) | [mr/content/turing-machines/machines-computations/halting-states.tex:24-31](../mr/content/turing-machines/machines-computations/halting-states.tex#L24) | not yet paginated |
+| T338-OLP-0259-B010 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:46-53](../upstream/content/turing-machines/machines-computations/halting-states.tex#L46) | [mr/content/turing-machines/machines-computations/halting-states.tex:44-51](../mr/content/turing-machines/machines-computations/halting-states.tex#L44) | not yet paginated |
+| T338-OLP-0260-B005 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:12-25](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L12) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:12-24](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L12) | not yet paginated |
+| T338-OLP-0260-B006 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:27-35](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L27) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:26-35](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L26) | not yet paginated |
+| T338-OLP-0260-B007 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:37-50](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L37) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:37-54](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L37) | not yet paginated |
+| T338-OLP-0260-B010 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:66-77](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L66) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:70-81](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L70) | not yet paginated |
+| T338-OLP-0261-B006 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L25) | [mr/content/turing-machines/machines-computations/combining-machines.tex:24-52](../mr/content/turing-machines/machines-computations/combining-machines.tex#L24) | not yet paginated |
+| T338-OLP-0261-B007 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:52-56](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L52) | [mr/content/turing-machines/machines-computations/combining-machines.tex:54-58](../mr/content/turing-machines/machines-computations/combining-machines.tex#L54) | not yet paginated |
+| T338-OLP-0261-B008 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:58-68](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L58) | [mr/content/turing-machines/machines-computations/combining-machines.tex:60-70](../mr/content/turing-machines/machines-computations/combining-machines.tex#L60) | not yet paginated |
+| T338-OLP-0261-B010 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:74-89](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L74) | [mr/content/turing-machines/machines-computations/combining-machines.tex:76-91](../mr/content/turing-machines/machines-computations/combining-machines.tex#L76) | not yet paginated |
+| T338-OLP-0261-B012 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:97-125](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L97) | [mr/content/turing-machines/machines-computations/combining-machines.tex:99-128](../mr/content/turing-machines/machines-computations/combining-machines.tex#L99) | not yet paginated |
+| T338-OLP-0261-B013 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:127-150](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L127) | [mr/content/turing-machines/machines-computations/combining-machines.tex:130-153](../mr/content/turing-machines/machines-computations/combining-machines.tex#L130) | not yet paginated |
+| T338-OLP-0261-B015 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:158-164](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L158) | [mr/content/turing-machines/machines-computations/combining-machines.tex:162-168](../mr/content/turing-machines/machines-computations/combining-machines.tex#L162) | not yet paginated |
+| T338-OLP-0262-B004 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:9-10](../upstream/content/turing-machines/machines-computations/variants.tex#L9) | [mr/content/turing-machines/machines-computations/variants.tex:9-10](../mr/content/turing-machines/machines-computations/variants.tex#L9) | not yet paginated |
+| T338-OLP-0262-B005 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:12-27](../upstream/content/turing-machines/machines-computations/variants.tex#L12) | [mr/content/turing-machines/machines-computations/variants.tex:12-27](../mr/content/turing-machines/machines-computations/variants.tex#L12) | not yet paginated |
+| T338-OLP-0262-B006 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:29-39](../upstream/content/turing-machines/machines-computations/variants.tex#L29) | [mr/content/turing-machines/machines-computations/variants.tex:29-40](../mr/content/turing-machines/machines-computations/variants.tex#L29) | not yet paginated |
+| T338-OLP-0262-B007 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:41-60](../upstream/content/turing-machines/machines-computations/variants.tex#L41) | [mr/content/turing-machines/machines-computations/variants.tex:42-61](../mr/content/turing-machines/machines-computations/variants.tex#L42) | not yet paginated |
+| T338-OLP-0262-B008 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:62-65](../upstream/content/turing-machines/machines-computations/variants.tex#L62) | [mr/content/turing-machines/machines-computations/variants.tex:63-67](../mr/content/turing-machines/machines-computations/variants.tex#L63) | not yet paginated |
+| T338-OLP-0262-B009 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:67-70](../upstream/content/turing-machines/machines-computations/variants.tex#L67) | [mr/content/turing-machines/machines-computations/variants.tex:69-72](../mr/content/turing-machines/machines-computations/variants.tex#L69) | not yet paginated |
+| T338-OLP-0262-B010 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:72-82](../upstream/content/turing-machines/machines-computations/variants.tex#L72) | [mr/content/turing-machines/machines-computations/variants.tex:74-86](../mr/content/turing-machines/machines-computations/variants.tex#L74) | not yet paginated |
 
 **Chosen rendering/action:** ट्यूरिंग यंत्राची फीत / घर / वाचन-लेखन शीर्ष / अवस्था / वर्णमाला / संक्रमण फलन
 
@@ -17745,7 +17846,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T339 — state diagram / machine configuration / machine table / doubler</strong> (31 occurrences; routine priority)</summary>
+<summary><strong>T339 — state diagram / machine configuration / machine table / doubler</strong> (45 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17780,12 +17881,150 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T339-OLP-0257-B011 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:84-87](../upstream/content/turing-machines/machines-computations/configuration.tex#L84) | [mr/content/turing-machines/machines-computations/configuration.tex:92-96](../mr/content/turing-machines/machines-computations/configuration.tex#L92) | not yet paginated |
 | T339-OLP-0257-B012 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:89-95](../upstream/content/turing-machines/machines-computations/configuration.tex#L89) | [mr/content/turing-machines/machines-computations/configuration.tex:98-110](../mr/content/turing-machines/machines-computations/configuration.tex#L98) | not yet paginated |
 | T339-OLP-0257-B013 | OLP-0257 ·  | [upstream/content/turing-machines/machines-computations/configuration.tex:97-102](../upstream/content/turing-machines/machines-computations/configuration.tex#L97) | [mr/content/turing-machines/machines-computations/configuration.tex:112-117](../mr/content/turing-machines/machines-computations/configuration.tex#L112) | not yet paginated |
+| T339-OLP-0258-B011 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:66-70](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L66) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:68-72](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L68) | not yet paginated |
+| T339-OLP-0258-B012 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:72-80](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L72) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:74-82](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L74) | not yet paginated |
+| T339-OLP-0258-B013 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:82-96](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L82) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:84-98](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L84) | not yet paginated |
+| T339-OLP-0258-B015 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:108-129](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L108) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:110-131](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L110) | not yet paginated |
+| T339-OLP-0258-B016 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:131-185](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L131) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:133-188](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L133) | not yet paginated |
+| T339-OLP-0258-B017 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:187-196](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L187) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:190-199](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L190) | not yet paginated |
+| T339-OLP-0259-B007 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:25-33](../upstream/content/turing-machines/machines-computations/halting-states.tex#L25) | [mr/content/turing-machines/machines-computations/halting-states.tex:24-31](../mr/content/turing-machines/machines-computations/halting-states.tex#L24) | not yet paginated |
+| T339-OLP-0259-B010 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:46-53](../upstream/content/turing-machines/machines-computations/halting-states.tex#L46) | [mr/content/turing-machines/machines-computations/halting-states.tex:44-51](../mr/content/turing-machines/machines-computations/halting-states.tex#L44) | not yet paginated |
+| T339-OLP-0261-B006 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L25) | [mr/content/turing-machines/machines-computations/combining-machines.tex:24-52](../mr/content/turing-machines/machines-computations/combining-machines.tex#L24) | not yet paginated |
+| T339-OLP-0261-B007 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:52-56](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L52) | [mr/content/turing-machines/machines-computations/combining-machines.tex:54-58](../mr/content/turing-machines/machines-computations/combining-machines.tex#L54) | not yet paginated |
+| T339-OLP-0261-B008 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:58-68](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L58) | [mr/content/turing-machines/machines-computations/combining-machines.tex:60-70](../mr/content/turing-machines/machines-computations/combining-machines.tex#L60) | not yet paginated |
+| T339-OLP-0261-B010 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:74-89](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L74) | [mr/content/turing-machines/machines-computations/combining-machines.tex:76-91](../mr/content/turing-machines/machines-computations/combining-machines.tex#L76) | not yet paginated |
+| T339-OLP-0261-B012 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:97-125](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L97) | [mr/content/turing-machines/machines-computations/combining-machines.tex:99-128](../mr/content/turing-machines/machines-computations/combining-machines.tex#L99) | not yet paginated |
+| T339-OLP-0261-B013 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:127-150](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L127) | [mr/content/turing-machines/machines-computations/combining-machines.tex:130-153](../mr/content/turing-machines/machines-computations/combining-machines.tex#L130) | not yet paginated |
 
 **Chosen rendering/action:** अवस्था-आलेख / स्थितिवर्णन / यंत्र-सारणी / दुप्पट करणारे यंत्र
 
 **Confidence/status:** high; source-defined transparent compounds; exact specialist headwords unattested and expert-reviewable; open to correction.
 
 **Please double-check:** Does स्थितिवर्णन clearly denote a full instantaneous tape-state-head configuration, and are अवस्था-आलेख and यंत्र-सारणी sufficiently distinct in the two representations?
+
+</details>
+
+<details>
+<summary><strong>T340 — unary representation of numbers / one-symbol stroke coding</strong> (17 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T340-OLP-0258-B004 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:9-10](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L9) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:9-10](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L9) | not yet paginated |
+| T340-OLP-0258-B005 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:12-22](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L12) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:12-22](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L12) | not yet paginated |
+| T340-OLP-0258-B006 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:24-31](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L24) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:24-32](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L24) | not yet paginated |
+| T340-OLP-0258-B007 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:33-36](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L33) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:34-37](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L34) | not yet paginated |
+| T340-OLP-0258-B008 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:38-49](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L38) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:39-51](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L39) | not yet paginated |
+| T340-OLP-0258-B011 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:66-70](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L66) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:68-72](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L68) | not yet paginated |
+| T340-OLP-0258-B012 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:72-80](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L72) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:74-82](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L74) | not yet paginated |
+| T340-OLP-0258-B013 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:82-96](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L82) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:84-98](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L84) | not yet paginated |
+| T340-OLP-0258-B016 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:131-185](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L131) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:133-188](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L133) | not yet paginated |
+| T340-OLP-0258-B017 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:187-196](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L187) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:190-199](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L190) | not yet paginated |
+| T340-OLP-0258-B018 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:198-202](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L198) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:201-206](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L201) | not yet paginated |
+| T340-OLP-0258-B019 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:204-214](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L204) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:208-218](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L208) | not yet paginated |
+| T340-OLP-0258-B020 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:216-220](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L216) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:220-224](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L220) | not yet paginated |
+| T340-OLP-0258-B022 | OLP-0258 ·  | [upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235](../upstream/content/turing-machines/machines-computations/unary-numbers.tex#L226) | [mr/content/turing-machines/machines-computations/unary-numbers.tex:230-243](../mr/content/turing-machines/machines-computations/unary-numbers.tex#L230) | not yet paginated |
+| T340-OLP-0260-B013 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:91-94](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L91) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:96-100](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L96) | not yet paginated |
+| T340-OLP-0261-B008 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:58-68](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L58) | [mr/content/turing-machines/machines-computations/combining-machines.tex:60-70](../mr/content/turing-machines/machines-computations/combining-machines.tex#L60) | not yet paginated |
+| T340-OLP-0262-B008 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:62-65](../upstream/content/turing-machines/machines-computations/variants.tex#L62) | [mr/content/turing-machines/machines-computations/variants.tex:63-67](../mr/content/turing-machines/machines-computations/variants.tex#L63) | not yet paginated |
+
+**Chosen rendering/action:** संख्यांचे एकचिन्ही निरूपण / एकाच रेघेने सांकेतीकरण
+
+**Confidence/status:** high; source-defined transparent compound; exact Turing-number headword unattested and expert-reviewable; open to correction.
+
+**Please double-check:** Is एकचिन्ही निरूपण clear that zero is the empty string and n is represented by exactly n repeated stroke symbols, without suggesting positional base-one digits?
+
+</details>
+
+<details>
+<summary><strong>T341 — dedicated halting state / accepting state / rejecting state</strong> (10 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T341-OLP-0259-B004 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:9-10](../upstream/content/turing-machines/machines-computations/halting-states.tex#L9) | [mr/content/turing-machines/machines-computations/halting-states.tex:9-10](../mr/content/turing-machines/machines-computations/halting-states.tex#L9) | not yet paginated |
+| T341-OLP-0259-B005 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:12-16](../upstream/content/turing-machines/machines-computations/halting-states.tex#L12) | [mr/content/turing-machines/machines-computations/halting-states.tex:12-16](../mr/content/turing-machines/machines-computations/halting-states.tex#L12) | not yet paginated |
+| T341-OLP-0259-B006 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:18-23](../upstream/content/turing-machines/machines-computations/halting-states.tex#L18) | [mr/content/turing-machines/machines-computations/halting-states.tex:18-22](../mr/content/turing-machines/machines-computations/halting-states.tex#L18) | not yet paginated |
+| T341-OLP-0259-B007 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:25-33](../upstream/content/turing-machines/machines-computations/halting-states.tex#L25) | [mr/content/turing-machines/machines-computations/halting-states.tex:24-31](../mr/content/turing-machines/machines-computations/halting-states.tex#L24) | not yet paginated |
+| T341-OLP-0259-B010 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:46-53](../upstream/content/turing-machines/machines-computations/halting-states.tex#L46) | [mr/content/turing-machines/machines-computations/halting-states.tex:44-51](../mr/content/turing-machines/machines-computations/halting-states.tex#L44) | not yet paginated |
+| T341-OLP-0259-B013 | OLP-0259 ·  | [upstream/content/turing-machines/machines-computations/halting-states.tex:68-77](../upstream/content/turing-machines/machines-computations/halting-states.tex#L68) | [mr/content/turing-machines/machines-computations/halting-states.tex:66-74](../mr/content/turing-machines/machines-computations/halting-states.tex#L66) | not yet paginated |
+| T341-OLP-0260-B005 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:12-25](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L12) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:12-24](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L12) | not yet paginated |
+| T341-OLP-0260-B006 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:27-35](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L27) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:26-35](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L26) | not yet paginated |
+| T341-OLP-0260-B007 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:37-50](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L37) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:37-54](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L37) | not yet paginated |
+| T341-OLP-0262-B007 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:41-60](../upstream/content/turing-machines/machines-computations/variants.tex#L41) | [mr/content/turing-machines/machines-computations/variants.tex:42-61](../mr/content/turing-machines/machines-computations/variants.tex#L42) | not yet paginated |
+
+**Chosen rendering/action:** खास थांबण्याची अवस्था / स्वीकार अवस्था / नकार अवस्था
+
+**Confidence/status:** medium; source-defined transparent machine-state compounds; exact specialist headwords unattested and expert-reviewable; open to correction.
+
+**Please double-check:** Are थांबण्याची अवस्था and नकार अवस्था clear when both h and r halt but only one represents acceptance, and do they remain distinct from a missing transition?
+
+</details>
+
+<details>
+<summary><strong>T342 — disciplined Turing machine / single terminal state and tape-boundary normal form</strong> (13 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T342-OLP-0260-B004 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:9-10](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L9) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:9-10](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L9) | not yet paginated |
+| T342-OLP-0260-B005 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:12-25](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L12) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:12-24](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L12) | not yet paginated |
+| T342-OLP-0260-B006 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:27-35](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L27) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:26-35](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L26) | not yet paginated |
+| T342-OLP-0260-B007 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:37-50](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L37) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:37-54](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L37) | not yet paginated |
+| T342-OLP-0260-B008 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:52-58](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L52) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:56-62](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L56) | not yet paginated |
+| T342-OLP-0260-B010 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:66-77](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L66) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:70-81](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L70) | not yet paginated |
+| T342-OLP-0260-B011 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:79-84](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L79) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:83-89](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L83) | not yet paginated |
+| T342-OLP-0260-B012 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:86-88](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L86) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:91-93](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L91) | not yet paginated |
+| T342-OLP-0260-B013 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:91-94](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L91) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:96-100](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L96) | not yet paginated |
+| T342-OLP-0261-B007 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:52-56](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L52) | [mr/content/turing-machines/machines-computations/combining-machines.tex:54-58](../mr/content/turing-machines/machines-computations/combining-machines.tex#L54) | not yet paginated |
+| T342-OLP-0261-B014 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:152-156](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L152) | [mr/content/turing-machines/machines-computations/combining-machines.tex:155-160](../mr/content/turing-machines/machines-computations/combining-machines.tex#L155) | not yet paginated |
+| T342-OLP-0261-B015 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:158-164](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L158) | [mr/content/turing-machines/machines-computations/combining-machines.tex:162-168](../mr/content/turing-machines/machines-computations/combining-machines.tex#L162) | not yet paginated |
+| T342-OLP-0261-B016 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:166-171](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L166) | [mr/content/turing-machines/machines-computations/combining-machines.tex:170-175](../mr/content/turing-machines/machines-computations/combining-machines.tex#L170) | not yet paginated |
+
+**Chosen rendering/action:** शिस्तबद्ध ट्यूरिंग यंत्र / एकच थांबण्याची अवस्था आणि फितीच्या टोकावरील नियम असलेले रूप
+
+**Confidence/status:** high; source-defined metaphorical compound with exact four-clause definition; expert-reviewable; open to correction.
+
+**Please double-check:** Does शिस्तबद्ध read naturally as the four-clause normal form, rather than an informal judgment that the machine is better behaved?
+
+</details>
+
+<details>
+<summary><strong>T343 — sequential combination of Turing machines / transfer at a missing transition</strong> (11 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T343-OLP-0261-B004 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:9-10](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L9) | [mr/content/turing-machines/machines-computations/combining-machines.tex:9-10](../mr/content/turing-machines/machines-computations/combining-machines.tex#L9) | not yet paginated |
+| T343-OLP-0261-B005 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:12-23](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L12) | [mr/content/turing-machines/machines-computations/combining-machines.tex:12-22](../mr/content/turing-machines/machines-computations/combining-machines.tex#L12) | not yet paginated |
+| T343-OLP-0261-B006 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L25) | [mr/content/turing-machines/machines-computations/combining-machines.tex:24-52](../mr/content/turing-machines/machines-computations/combining-machines.tex#L24) | not yet paginated |
+| T343-OLP-0261-B007 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:52-56](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L52) | [mr/content/turing-machines/machines-computations/combining-machines.tex:54-58](../mr/content/turing-machines/machines-computations/combining-machines.tex#L54) | not yet paginated |
+| T343-OLP-0261-B008 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:58-68](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L58) | [mr/content/turing-machines/machines-computations/combining-machines.tex:60-70](../mr/content/turing-machines/machines-computations/combining-machines.tex#L60) | not yet paginated |
+| T343-OLP-0261-B010 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:74-89](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L74) | [mr/content/turing-machines/machines-computations/combining-machines.tex:76-91](../mr/content/turing-machines/machines-computations/combining-machines.tex#L76) | not yet paginated |
+| T343-OLP-0261-B012 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:97-125](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L97) | [mr/content/turing-machines/machines-computations/combining-machines.tex:99-128](../mr/content/turing-machines/machines-computations/combining-machines.tex#L99) | not yet paginated |
+| T343-OLP-0261-B013 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:127-150](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L127) | [mr/content/turing-machines/machines-computations/combining-machines.tex:130-153](../mr/content/turing-machines/machines-computations/combining-machines.tex#L130) | not yet paginated |
+| T343-OLP-0261-B014 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:152-156](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L152) | [mr/content/turing-machines/machines-computations/combining-machines.tex:155-160](../mr/content/turing-machines/machines-computations/combining-machines.tex#L155) | not yet paginated |
+| T343-OLP-0261-B015 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:158-164](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L158) | [mr/content/turing-machines/machines-computations/combining-machines.tex:162-168](../mr/content/turing-machines/machines-computations/combining-machines.tex#L162) | not yet paginated |
+| T343-OLP-0261-B016 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:166-171](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L166) | [mr/content/turing-machines/machines-computations/combining-machines.tex:170-175](../mr/content/turing-machines/machines-computations/combining-machines.tex#L170) | not yet paginated |
+
+**Chosen rendering/action:** ट्यूरिंग यंत्रांचे संयोजन / संक्रमण नसताना पुढील यंत्रात प्रवेश
+
+**Confidence/status:** medium; source-defined machine-level compound with established composition component; expert-reviewable; open to correction.
+
+**Please double-check:** Does संयोजन clearly denote the sequential machine construction without conflating it with ordinary function composition or parallel operation?
+
+</details>
+
+<details>
+<summary><strong>T344 — nondeterministic Turing machine / transition relation with multiple successors</strong> (3 occurrences; routine priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T344-OLP-0262-B005 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:12-27](../upstream/content/turing-machines/machines-computations/variants.tex#L12) | [mr/content/turing-machines/machines-computations/variants.tex:12-27](../mr/content/turing-machines/machines-computations/variants.tex#L12) | not yet paginated |
+| T344-OLP-0262-B006 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:29-39](../upstream/content/turing-machines/machines-computations/variants.tex#L29) | [mr/content/turing-machines/machines-computations/variants.tex:29-40](../mr/content/turing-machines/machines-computations/variants.tex#L29) | not yet paginated |
+| T344-OLP-0262-B009 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:67-70](../upstream/content/turing-machines/machines-computations/variants.tex#L67) | [mr/content/turing-machines/machines-computations/variants.tex:69-72](../mr/content/turing-machines/machines-computations/variants.tex#L69) | not yet paginated |
+
+**Chosen rendering/action:** अनिर्धारक ट्यूरिंग यंत्र / अनेक संभाव्य पुढील पायऱ्यांचा संक्रमण संबंध
+
+**Confidence/status:** high; source-defined specialist compound; exact official Marathi headword unattested and expert-reviewable; open to correction.
+
+**Please double-check:** Does अनिर्धारक convey multiple permitted successor moves without suggesting random choice or a missing transition?
 
 </details>
 
@@ -20201,5 +20440,35 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; confirmed conditional incompatibility; source does not specify the intended output convention after overwrite; open to correction.
 
 **Please double-check:** Should the machine convention forbid overwriting the end marker, or should the output map be redefined to handle such runs?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-006 — frozen-source-disciplined-conversion-marker-search-limitation</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-006-OLP-0260 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:12-22,35-50](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L12) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:36-53](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L36) | not yet paginated |
+
+**Chosen rendering/action:** Preserve the proposition and suggested conversion in Marathi, then add bounded adjacent prose and reader note OLTUR-006 stating that the marker search needs a separate general-case construction when the old marker has been erased or duplicated. Do not assert a new unproved construction.
+
+**Confidence/status:** medium; the illustrative search gap is confirmed by the explicitly allowed marker operations; the general normal-form proposition can still hold with a more careful simulation; open to correction.
+
+**Please double-check:** Does the Marathi caveat distinguish an incomplete shortcut from the proposition's general existence claim without silently imposing a new marker rule?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-007 — confirmed-frozen-source-overlapping-transition-cases-in-machine-composition</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-007-OLP-0261 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:36-44](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L36) | [mr/content/turing-machines/machines-computations/combining-machines.tex:37-46](../mr/content/turing-machines/machines-computations/combining-machines.tex#L37) | not yet paginated |
+
+**Chosen rendering/action:** Constrain the first branch in the Marathi display to q in Q with δ(q,σ) defined; retain the third undefined branch, every transition value and all other symbols. Add adjacent reader note OLTUR-007 and a one-phrase documented QA projection back to the frozen wording.
+
+**Confidence/status:** high; confirmed directly by the two displayed branch predicates and the following prose explaining the intended undefined-transition transfer; open to correction.
+
+**Please double-check:** Do the corrected first and third branch predicates now partition Q's defined and undefined transitions while the Q-prime branch remains disjoint?
 
 </details>

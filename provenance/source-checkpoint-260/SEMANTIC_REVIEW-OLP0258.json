@@ -1,0 +1,59 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0258",
+  "method": "Same-agent English/Marathi close reading and reverse paraphrase of all changed explanatory, definition, example, caption and exercise blocks; exact formula, transition, macro, label and reference parity. No independent human or native-speaker review is claimed.",
+  "scope": "One-symbol coding of natural numbers, total and partial machine computation, addition and doubling diagrams, the mover construction, zero-input boundary exercises, subtraction, equality and minimum.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reverse_paraphrase": "The section represents n by exactly n copies of the stroke symbol, using the empty string for zero. A Turing machine computes a k-ary natural-number function when it halts on every displayed blank-separated unary input with a single stroke block of length f(n1,...,nk); the problem asks for a vector-valued extension.",
+      "checks": "The zero case, stroke exponent, k input blocks and output exponent are unchanged. The universal reading of the total-function definition is made explicit in Marathi without changing a formula."
+    },
+    {
+      "blocks": [
+        8,
+        10,
+        11,
+        12
+      ],
+      "reverse_paraphrase": "The adder joins two stroke blocks separated by a blank by writing a stroke into the separator and erasing the final stroke. Its diagram and the 3,2 and 0,0 trace exercise remain intact. The earlier doubler leaves blanks to the left of its doubled stroke block, so it fails this section's output convention.",
+      "checks": "All adder transitions, the n+m relation, figure reference, two test inputs and the reason for the earlier doubler's failure are preserved."
+    },
+    {
+      "blocks": [
+        13,
+        15,
+        16,
+        17
+      ],
+      "reverse_paraphrase": "The first corrected doubler appends one stroke per input stroke while keeping a blank separator and temporarily blanking the current input stroke; the second keeps the old doubler and adds a mover that shifts the output block left. The mover marks the old block end, uses states starting at q6 and needs a q0-to-q6 transition. The combined construction still fails at zero input, for which the problem requests a one-state, one-transition repair.",
+      "checks": "The two state diagrams, all transition labels, marker use, state numbering, added delta tuple and zero-input caveat are unchanged."
+    },
+    {
+      "blocks": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "reverse_paraphrase": "The subtraction task assumes two nonempty unary strings and n>m. Equality returns one for equal and zero for unequal positive integer inputs. The minimum task allows extra alphabet symbols and gives three examples. For a partial f, defined inputs must halt with the unary output; undefined inputs may diverge or halt with an output that is not one stroke block.",
+      "checks": "All domain restrictions, strict inequality, piecewise equality cases, min values, partial arrow, two enumerated conditions and undefined-case disjunction are retained."
+    }
+  ],
+  "source_observations": [
+    "T340 records one-symbol number coding as a source-defined transparent Marathi compound; the consulted official unary glosses in physics and linguistics are not claimed as direct evidence for this Turing representation.",
+    "The frozen source itself asks the reader to investigate 0+0 in the adder and zero input in the combined doubler/mover; no answer or unproved repair has been inserted into the translation."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The exact unary-number compound is not independently attested in the consulted Marathi canon.",
+    "No TeX reader build was run for this incomplete chapter."
+  ]
+}
