@@ -1,0 +1,75 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: representing-relations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{rel}
+
+\olsection{संबंधांचे निरूपण}
+
+एखादा \emph{संबंध} निरूपणीय असणे म्हणजे काय, ते आता सांगू.
+
+\begin{defn}
+\ollabel{defn:representing-relations} नैसर्गिक संख्यांवरील
+$R(x_0,\dots,x_k)$ हा संबंध {\em $\Th{Q}$ मध्ये निरूपणीय}
+असतो, जर असे सूत्र $!A_R(x_0,\dots,x_k)$ असेल की
+$R(n_0,\dots,n_k)$ सत्य असेल तेव्हा $\Th{Q}$ हे
+$!A_R(\num{n_0},\dots,\num{n_k})$ सिद्ध करते, आणि
+$R(n_0,\dots,n_k)$ असत्य असेल तेव्हा $\Th{Q}$ हे
+$\lnot !A_R(\num{n_0},
+\dots, \num{n_k})$ सिद्ध करते.
+\end{defn}
+
+\begin{thm}
+\ollabel{thm:representing-rels} संबंध~$\Th{Q}$ मध्ये निरूपणीय
+असतो तेव्हाच आणि तरच तो संगणनक्षम असतो.
+\end{thm}
+
+\begin{proof}
+प्रथम डावीकडून उजवीकडे जाणारी दिशा पाहू. समजा
+$R(x_0,\dots,x_k)$ चे निरूपण $!A_R(x_0,\dots,x_k)$ या
+सूत्राने होते. $R$ चे संगणन करण्यासाठी पुढील कार्यपद्धती
+आहे: $n_0$, \dots,~$n_k$ ही आदाने मिळाल्यावर
+$!A_R(\num{n_0}, \dots, \num{n_k})$ चा पुरावा आणि
+$\lnot !A_R(\num{n_0}, \dots, \num{n_k})$ चा पुरावा
+यांचा एकाच वेळी शोध घ्या. गृहीतकानुसार यांपैकी एक पुरावा
+नक्की सापडेल. पहिला सापडल्यास ``होय'' आणि दुसरा सापडल्यास
+``नाही'' असे उत्तर द्या. ही उपपत्ती सुसंगत असल्याने दोन्ही
+विरुद्ध पुरावे मिळू शकत नाहीत.
+
+उलट दिशेसाठी $R(x_0, \dots, x_k)$ संगणनक्षम आहे असे समजा.
+व्याख्येनुसार याचा अर्थ $\Char{R}(x_0, \dots, x_k)$ हे
+फलन संगणनक्षम आहे. \olref[int]{thm:representable-iff-comp} नुसार
+$\Char{R}$ चे एखाद्या सूत्राने, समजा
+$!A_{\Char{R}}(x_0, \dots, x_k,
+y)$ ने, निरूपण होते. $!A_R(x_0, \dots, x_k)$ हे
+$!A_{\Char{R}}(x_0,
+\dots, x_k, \num{1})$ सूत्र असू द्या. मग कोणत्याही
+$n_0$, \dots,~$n_k$ साठी $R(n_0,
+\dots, n_k)$ सत्य असेल, तर $\Char{R}(n_0, \dots, n_k) = 1$.
+त्या वेळी $\Th{Q}$ हे
+$!A_{\Char{R}}(\num{n_0}, \dots, \num{n_k},
+\num{1})$ सिद्ध करते; म्हणून $\Th{Q}$ हे
+$!A_R(\num{n_0}, \dots,
+\num{n_k})$ सिद्ध करते. दुसरीकडे $R(n_0, \dots, n_k)$
+असत्य असेल, तर $\Char{R}(n_0, \dots, n_k) = 0$.
+म्हणून $\Th{Q}$ पुढील विधान सिद्ध करते:
+\[
+\lforall[y][(!A_{\Char{R}}(\num{n_0}, \dots, \num{n_k}, y) \lif y =
+  \num{0})].
+\]
+$\Th{Q}$ हे $\eq/[\num{0}][\num{1}]$ सिद्ध करत असल्याने,
+$\Th{Q}$ हे $\lnot !A_{\Char{R}}(\num{n_0}, \dots, \num{n_k}, \num{1})$
+सिद्ध करते; म्हणून $\lnot !A_R(\num{n_0}, \dots, \num{n_k})$
+हेही सिद्ध करते.
+\end{proof}
+
+\begin{prob}
+$R$ हा संबंध~$\Th{Q}$ मध्ये निरूपणीय असेल, तर
+$\Char{R}$ हेसुद्धा निरूपणीय असते, हे दाखवा.
+\end{prob}
+
+\end{document}
