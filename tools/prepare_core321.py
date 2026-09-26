@@ -25,6 +25,13 @@ new_coverage = (
 )
 assert base.count(old_coverage) == 1
 base = base.replace(old_coverage, new_coverage, 1)
+reader_macros = r"""
+\DeclareDocumentCommand{\Refut}{o}{\mathrm{Ref}\IfNoValueF{#1}{_{#1}}}
+\DeclareDocumentCommand{\ORefut}{o}{\mathsf{Ref}\IfNoValueF{#1}{_{#1}}}
+\DeclareDocumentCommand{\ORProv}{o}{\mathsf{RProv}\IfNoValueF{#1}{_{#1}}}
+"""
+assert base.count(r"\begin{document}") == 1
+base = base.replace(r"\begin{document}", reader_macros + r"\begin{document}", 1)
 
 selected = prior_namespace["selected"]
 replace_tokens = prior_namespace["replace_tokens"]
@@ -174,6 +181,7 @@ out = (
     .replace("!G", r"\mathsf{G}")
     .replace("!H", r"\mathsf{H}")
     .replace("!Q", r"\mathsf{Q}")
+    .replace("!R", r"\mathsf{R}")
 )
 out = re.sub(
     r"\\readerexternalref\{([^}]+)\}",
@@ -207,7 +215,7 @@ assert len(inputs) == 318 and inputs[-1]["unit_id"] == "OLP-0321"
 assert out.count(r"\chapter{") == 31
 assert len(re.findall(r"\\section(?:\[[^]]*\])?\{", out)) == 281
 assert "318 स्रोत-एकके आणि 281 वाचक-विभाग" in out
-assert "!!" not in out and not re.search(r"![ABCDEGQT]", out)
+assert "!!" not in out and not re.search(r"![ABCDEGHQR]", out)
 
 (BUILD / "openlogic-mr-core.tex").write_text(out, encoding="utf-8", newline="\n")
 prior.update(
@@ -224,6 +232,7 @@ prior.update(
         **prior.get("reader_symbol_projections", {}),
         "!G": r"\mathsf{G}",
         "!H": r"\mathsf{H}",
+        "!R": r"\mathsf{R}",
     },
     reader_heading_projection=(
         "Math-bearing section headings from previous chapters and OLP-0318 "
