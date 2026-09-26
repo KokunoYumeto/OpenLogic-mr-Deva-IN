@@ -1,0 +1,250 @@
+% Part: incompleteness
+% Chapter: incompleteness-provability
+% Section: second-incompleteness-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{2in}
+
+\olsection{दुसरे अपूर्णता प्रमेय}
+
+$\Th{PA}$ स्वतःची सुसंगतता सिद्ध करू
+शकत नाही, हा दावा कसा व्यक्त करायचा?
+$\Th{PA}$ विसंगत आहे असे म्हणणे
+म्हणजे $\Th{PA} \Proves \eq[0][1]$
+असे म्हणणे. सुसंगतता-विधानासाठी
+असत्यता-स्थिराचा संकेतांक घेतला तरी
+सुसंगततेचा आशय तोच राहतो; या
+सिद्धतेत $\OCon[\Th{PA}]$ हे
+!!{sentence} $\lnot
+\OProv[\Th{PA}](\gn{\lfalse})$
+मानू. मग पुढील प्रमेय अपेक्षित
+निकाल देते:
+
+\begin{thm}
+\ollabel{thm:second-incompleteness}
+$\Th{PA}$ सुसंगत असेल, तर
+$\Th{PA}$ हे
+$\OCon[\Th{PA}]$ !!{derive}
+करत नाही.
+\end{thm}
+
+हे प्रमेय $\OCon[\Th{PA}]$
+च्या विशिष्ट निरूपणावर
+(म्हणजे $\OProv[\Th{PA}](y)$
+च्या विशिष्ट निरूपणावर)
+अवलंबून आहे, हे लक्षात
+घेणे महत्त्वाचे आहे.
+आपण फक्त एवढेच वापरणार
+आहोत की $\OProv[\Th{PA}](y)$
+चे निरूपण तीन
+!!{derivability} अटी पूर्ण
+करते. म्हणून असे गुणधर्म
+असलेले !!a{derivability}
+विधेय असलेल्या कोणत्याही
+उपपत्तीला हे प्रमेय लागू
+होते.
+
+गोडेलच्या युक्तिवादाची
+रूपरेषा वाचणे उपयुक्त आहे;
+प्रमेय त्यातून नेमके
+समारोपाप्रमाणे निघते.
+युक्तिवाद असा आहे.
+\olref[1in]{thm:first-incompleteness}
+च्या सिद्धतेत आपण तयार
+केलेले गोडेल-वाक्य
+$!G_\Th{PA}$ असू द्या.
+“$\Th{PA}$ सुसंगत
+असेल, तर $\Th{PA}$
+हे $!G_\Th{PA}$ ला
+!!{derive} करत नाही”
+हे आपण दाखवले आहे.
+हे $\Th{PA}$
+\emph{मध्येच} आकारिक
+केल्यास पुढील विधानाची
+सिद्धता मिळते:
+\[
+\OCon[\Th{PA}] \lif \lnot \OProv[\Th{PA}](\gn{!G_\Th{PA}}).
+\]
+आता $\Th{PA}$ हे
+$\OCon[\Th{PA}]$
+!!{derive}s करते असे
+मानू. मग ते $\lnot
+\OProv[\Th{PA}](\gn{!G_\Th{PA}})$
+सुद्धा !!{derive}s
+करते. पण $!G_\Th{PA}$
+हे गोडेल-वाक्य असल्यामुळे
+हे $!G_\Th{PA}$ शी
+सममूल्य आहे. म्हणून
+$\Th{PA}$ हे
+$!G_\Th{PA}$
+!!{derive}s करते.
+
+पण $\Th{PA}$ सुसंगत
+असेल, तर ते
+$!G_\Th{PA}$ ला
+!!{derive} करत
+नाही, हे आपल्याला
+माहीत आहे!{}
+म्हणून $\Th{PA}$
+सुसंगत असेल, तर
+$\OCon[\Th{PA}]$
+सुद्धा !!{derive}
+करू शकत नाही.
+
+युक्तिवाद अधिक नेमका
+करण्यासाठी $!G_\Th{PA}$
+हे~$\Th{PA}$ चे
+गोडेल-वाक्य मानू.
+!!{derivability} अटी
+(P1)--(P3) वापरून
+$\Th{PA}$ हे
+$\OCon[\Th{PA}] \lif
+!G_\Th{PA}$ !!{derive}s
+करते हे दाखवू.
+त्यावरून $\Th{PA}$
+हे $\OCon[\Th{PA}]$
+!!{derive} करत नाही
+हे मिळेल. पुढे
+$\Th{PA}$ मधील
+सिद्धतेची रूपरेषा आहे.
+(सोयीसाठी
+$\Th{PA}$ हे अधोलिखित
+वगळू.)
+\begin{align}
+& !G \liff \lnot \OProv(\gn{!G}) \ollabel{G2-1}\\
+& \qquad\text{$!G$ हे गोडेल-वाक्य आहे}\notag \\
+& !G \lif \lnot \OProv(\gn{!G}) \ollabel{G2-2}\\
+  & \qquad\text{\olref{G2-1} वरून} \notag\\
+& !G \lif
+  (\OProv(\gn{!G}) \lif \lfalse) \ollabel{G2-3}\\
+  & \qquad\text{\olref{G2-2} व तर्कशास्त्रावरून}\notag\\
+& \OProv(\gn{
+    !G \lif
+    (\OProv(\gn{!G}) \lif \lfalse)
+  }) \ollabel{G2-4}\\
+  & \qquad\text{\olref{G2-3} आणि अट P1 वरून} \notag\\
+& \OProv(\gn{!G}) \lif
+  \OProv(\gn{
+    (\OProv(\gn{!G}) \lif \lfalse)
+    }) \ollabel{G2-5}\\
+  & \qquad\text{\olref{G2-4} आणि अट P2 वरून} \notag\\
+& \OProv(\gn{!G}) \lif (\OProv(\gn{\OProv(\gn{!G})}) \lif \OProv(\gn{\lfalse})) \ollabel{G2-6}\\
+  & \qquad\text{\olref{G2-5}, अट P2 आणि तर्कशास्त्रावरून} \notag\\
+& \OProv(\gn{!G}) \lif
+  \OProv(\gn{\OProv(\gn{!G})}) \ollabel{G2-7}\\
+   & \qquad\text{अट P3 वरून} \notag\\
+& \OProv(\gn{!G}) \lif \OProv(\gn{\lfalse}) \ollabel{G2-8}\\
+  & \qquad \text{\olref{G2-6}, \olref{G2-7} व तर्कशास्त्रावरून}\notag\\
+& \OCon \lif \lnot \OProv(\gn{!G}) \ollabel{G2-9}\\
+  & \qquad\text{\olref{G2-8} च्या प्रतिवर्ती विधानावरून आणि $\OCon \ident \lnot \OProv(\gn{\lfalse})$ वरून}\notag \\
+& \OCon \lif !G \notag\\
+  & \qquad\text{\olref{G2-1}, \olref{G2-9} व तर्कशास्त्रावरून}\notag
+\end{align}
+वरील तर्कशास्त्राचा
+वापर केवळ विधानीय
+तर्कशास्त्रातील प्राथमिक
+तथ्यांपुरता आहे.
+उदाहरणार्थ,
+\olref{G2-3} मध्ये
+$\Proves \lnot!A \liff (!A\lif
+\lfalse)$ वापरले आहे,
+आणि \olref{G2-8} मध्ये
+$!A \lif (!B \lif !C), !A \lif !B
+\Proves !A \lif !C$ वापरले
+आहे. \olref{G2-5} आणि
+\olref{G2-6} मध्ये अट~P2
+वापरताना तिची पुढील
+उदाहरणे वापरली आहेत:
+$\OProv(\gn{!A \lif !B}) \lif
+(\OProv(\gn{!A}) \lif \OProv(\gn{!B}))$.
+पहिल्यात $!A \ident
+!G$ आणि $!B \ident
+\OProv(\gn{!G}) \lif \lfalse$;
+दुसऱ्यात $!A
+\ident \OProv(\gn{!G})$
+आणि $!B \ident \lfalse$.
+
+दुसऱ्या अपूर्णता प्रमेयाचे
+अधिक अमूर्त रूप असे:
+
+\begin{thm}
+\ollabel{thm:second-incompleteness-gen}
+$\Th{T}$ ही~$\Th{Q}$ चा
+विस्तार असलेली कोणतीही
+सुसंगत, !!{axiomatized}
+उपपत्ती असू द्या.
+$\OProv[\Th{T}](y)$
+हे सूत्र $\Th{T}$
+साठीच्या
+!!{derivability} अटी
+P1--P3 पूर्ण करत असेल,
+तर $\Th{T}$ हे
+$\OCon[\Th{T}]$
+!!{derive} करत नाही.
+\end{thm}
+
+\begin{prob}
+$\Th{PA}$ हे
+$!G_{\Th{PA}} \lif \OCon[\Th{PA}]$
+!!{derive}s करते हे
+दाखवा.
+\end{prob}
+
+\begin{digress}
+या कथेतून असा बोध होतो:
+गणितासाठीची कोणतीही
+“स्वीकारार्ह” सुसंगत
+उपपत्ती स्वतःचे
+सुसंगतता-विधान
+!!{derive} करू शकत
+नाही. $\Th{T}$ ही
+गणिताची उपपत्ती असून
+तिच्यात $\Th{Q}$ आणि
+हिल्बर्टचे “सांतवादी”
+युक्तिवाद (त्यांचा नेमका
+अर्थ काहीही असो)
+समाविष्ट आहेत असे
+मानू. मग संपूर्ण
+$\Th{T}$ हे
+$\Th{T}$ चे
+सुसंगतता-विधान
+!!{derive} करू
+शकत नाही. त्यामुळे
+तिचा सांतवादी भागही
+$\Th{T}$ चे
+सुसंगतता-विधान
+!!{derive} करू
+शकत नाही, हे तर
+अधिकच स्पष्ट आहे.
+त्या अर्थाने
+“सर्व गणितासाठी”
+सुसंगततेची सांतवादी
+सिद्धता असू शकत नाही.
+
+“सांतवादी” या संज्ञेचा
+अर्थ लावण्यात थोडी
+मोकळीक आहे. गोडेलने
+1931 च्या शोधपत्रात
+हिल्बर्टला आकारिक
+करायचे असलेल्या
+गणिताबाहेरही आपण
+“सांतवादी” म्हणू
+असे काही असू शकेल,
+ही शक्यता मान्य केली.
+पण ही गोडेलची
+उदार भूमिका होती:
+आज सांतवादी म्हणता
+येईल पण, उदाहरणार्थ,
+निवडीच्या स्वयंसिद्धकासह
+झर्मेलो--फ्रेंकेल संच
+उपपत्ती $\Th{ZFC}$
+मध्ये आकारिक करता
+येणार नाही असे
+काही सापडेल, हे
+कल्पना करणे कठीण आहे.
+\end{digress}
+
+\end{document}

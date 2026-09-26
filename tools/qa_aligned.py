@@ -587,6 +587,19 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$\lexists[x][\OPrf[\Th{PA}](x,y)]$',
          r'$\lexists[x][\Prf[\Th{PA}](x,y)]$'),
     ],
+    'OLP-0319': [
+        # OLINC-059: use the same falsity code in OCon's definition and G2-9.
+        (r'$\lnot' + '\n' + r'\OProv[\Th{PA}](\gn{\lfalse})$',
+         r'$\lnot' + '\n' + r'\OProv[\Th{PA}](\gn{\eq[0][1]})$'),
+        # OLINC-056: the surrounding argument uses the defined OProv formula.
+        (r'$\lnot' + '\n' + r'\OProv[\Th{PA}](\gn{!G_\Th{PA}})$',
+         r'$\lnot' + '\n' + r'\Prov[\Th{PA}](\gn{!G_\Th{PA}})$'),
+        # OLINC-057: code the same marked Gödel sentence as in G2-5/G2-6.
+        (r'$!A' + '\n' + r'\ident \OProv(\gn{!G})$',
+         r'$!A' + '\n' + r'\ident \OProv(\gn{G})$'),
+        # OLINC-058: keep the theorem's theory notation in its conclusion.
+        (r'$\OCon[\Th{T}]$', r'$\OCon[T]$'),
+    ],
 }
 
 
