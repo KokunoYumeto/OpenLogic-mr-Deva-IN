@@ -519,6 +519,10 @@ _DOCUMENTED_PROJECTIONS = {
         # OLINC-027: the recurrence gives h the arguments (x-vector, y).
         ('$h(\\vec x,y)$', '$h(x,\\vec z)$'),
     ],
+    'OLP-0294': [
+        # Localized case label needs text mode for Devanagari shaping.
+        ('\\text{अन्यथा}', 'otherwise'),
+    ],
 }
 
 
