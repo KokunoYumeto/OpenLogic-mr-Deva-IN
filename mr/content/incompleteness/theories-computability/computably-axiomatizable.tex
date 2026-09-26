@@ -1,0 +1,42 @@
+% Part: incompleteness
+% Chapter: theories-computability
+% Section: computably-axiomatizable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{tcp}{cax}
+
+\olsection{\printtoken{S}{axiomatizable} उपपत्ती}
+
+उपपत्ती $\Th{T}$ साठी स्वयंसिद्धकांचा संगणनक्षम संच~$A$ असेल,
+तर तिला \emph{!!{axiomatizable}} म्हणतात.
+($A$ हा $\Th{T}$ चा स्वयंसिद्धकसंच आहे याचा अर्थ
+$T = \Setabs{!A}{A \Proves !A}$.) नैसर्गिक संख्यांचे कोणतेही
+``युक्तिसंगत'' स्वयंसिद्धकीकरण हा गुणधर्म पूर्ण करेल.
+विशेषतः, सांत स्वयंसिद्धकसंच असलेली कोणतीही उपपत्ती
+!!{axiomatizable} असते.
+
+\begin{lem}
+$\Th{T}$ ही !!{axiomatizable} असेल, तर $\Th{T}$ ही
+!!{computably
+enumerable} असते.
+\end{lem}
+
+\begin{proof}
+$A$ हा $\Th{T}$ चा संगणनक्षम स्वयंसिद्धकसंच आहे असे समजू.
+$!A \in T$ असल्याचे होकारार्थी प्रमाण शोधण्यासाठी
+स्वयंसिद्धकांपासून $!A$ ची !!a{derivation} शोधत राहा;
+ते वाक्य सदस्य नसेल, तर हा शोध थांबेलच असे नाही.
+
+थोडे वेगळ्या शब्दांत, $!A$ हे $\Th{T}$ मध्ये असते तेव्हाच
+आणि तरच $A$ मधील $!B_1$, \dots, $!B_k$ अशा स्वयंसिद्धकांची
+सांत यादी आणि प्रथम-क्रम तर्कशास्त्रात
+$(!B_1 \land \dots \land !B_k) \lif !A$ ची
+!!a{derivation} असते. पण ``असा काही \dots आहे की \dots''
+या रूपातील व्याख्या असलेला कोणताही संच !!{c.e.} असतो,
+जर दुसऱ्या ``\dots'' मधील अट संगणनक्षम असेल, हे आपण आधीच जाणतो.
+\end{proof}
+
+\end{document}
