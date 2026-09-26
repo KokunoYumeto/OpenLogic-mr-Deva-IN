@@ -20,7 +20,8 @@ def maths(t):
     # A displayed formula may contain inline dollars inside \text{...}. Exclude
     # its span before finding inline formulae, then pair outer dollars only at
     # brace depth zero so nested text-math dollars do not close the formula.
-    display=re.compile(r'\\\[(.*?)\\\]|\\begin\{(?:align\*|multline\*)\}(.*?)\\end\{(?:align\*|multline\*)\}',re.S)
+    # A tabular line break such as \\[2ex] must not be mistaken for \[...\].
+    display=re.compile(r'(?<!\\)\\\[(.*?)(?<!\\)\\\]|\\begin\{(?:align\*|multline\*)\}(.*?)\\end\{(?:align\*|multline\*)\}',re.S)
     parts=[]
     masked=list(t)
     for match in display.finditer(t):
@@ -434,6 +435,35 @@ _DOCUMENTED_PROJECTIONS = {
          '$!A(\\num{n})$ च्या\nआधी'),
         ('$\\lnot !A_n(\\num{n}) \\in \\Gamma$ आहे का',
          '$\\lnot !A(\\num{n}) \\in \\Gamma$ आहे का'),
+    ],
+    'OLP-0286': [
+        # OLINC-007: the frozen worked example has two surplus parentheses.
+        (r'$\tuple{1, p_1, \Gn{\Sequent (!A \land !B) \lif !A}, 14}$',
+         r'$\tuple{1, p_1, \Gn{\Sequent (!A \land !B) \lif !A)}, 14}$'),
+        (r'\tuple{0, \Gn{!A \Sequent !A}}',
+         r'\tuple{0, \Gn{!A \Sequent !A)}}'),
+        # OLINC-008: normalize the two predicate names to their later uses.
+        (r'\fn{EndSequent}(p) = (p)_{(p)_0+1}',
+         r'\fn{EndSeq}(p) = (p)_{(p)_0+1}'),
+        (r'\fn{InitialSeq}(s)', r'\fn{InitSeq}(s)'),
+        # OLINC-011: identity uses closed terms; tagged LK has two more axioms.
+        (r'\fn{ClTerm}(t) & \land', r'\fn{Term}(t) & \land'),
+        ('  \\iftag{prvTrue}{या चिन्हांकित आवृत्तीत $s=\\tuple{0,\\tuple{\\Gn{\\ltrue}}}$\n'
+         '  हीदेखील आरंभीची क्रमवर्ती आहे.}{}\n'
+         '  \\iftag{prvFalse}{या चिन्हांकित आवृत्तीत $s=\\tuple{\\tuple{\\Gn{\\lfalse}},0}$\n'
+         '  हीदेखील आरंभीची क्रमवर्ती आहे.}{}', ''),
+        # OLINC-012: right existential introduction requires a closed term.
+        (r'  & \qquad \fn{ClTerm}(t) \land {}\\' + '\n', ''),
+        # OLINC-009: use the proposition's variable and close the predicate.
+        (r'पहिली ओळ $p$ ची अंतिम क्रमवर्ती खरोखर',
+         r'पहिली ओळ $d$ ची अंतिम क्रमवर्ती खरोखर'),
+        (r'$\fn{Deriv}(p)$ तर आणि तरच',
+         r'$\fn{Deriv}(d)$ तर आणि तरच'),
+        (r'\fn{Correct}((\fn{SubtreeSeq}(p))_i)}',
+         r'\fn{Correct}((\fn{SubtreeSeq}(p))_i}'),
+        # OLINC-010: y, rather than derivation code x, codes the sentence.
+        ('((\\fn{EndSequent}(x))_1)_0 =\ny$',
+         '((\\fn{EndSequent}(x))_1)_0 =\nx$'),
     ],
 }
 

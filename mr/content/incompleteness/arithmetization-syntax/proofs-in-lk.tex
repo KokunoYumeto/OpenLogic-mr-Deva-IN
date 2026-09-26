@@ -1,0 +1,291 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: proofs-in-lk
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{plk}
+\olsection{$\Log{LK}$ मधील \usetoken{P}{derivation}}
+
+\begin{explain}
+!!{derivation}s चे अंकगणितीकरण करण्यासाठी !!{derivation}s संख्यांनी दर्शवावे लागतात.
+प्रत्येक निगमनाला नामांकन असलेले क्रमवर्तींचे वृक्ष म्हणजे !!{derivation}s
+असल्यामुळे, पुनरावर्ती निरूपण हा सहज मार्ग आहे. आपण !!{derivation}
+एका क्रमित समूहाने दर्शवतो: त्याचे घटक म्हणजे अंतिम क्रमवर्ती, नामांकन,
+आणि अखेरच्या निगमनाच्या आधारविधानांपर्यंत येणाऱ्या उप-!!{derivation}s ची निरूपणे.
+\end{explain}
+
+\begin{defn}
+$\Gamma$ ही !!{sentence}s ची सांत क्रमिका, $\Gamma =
+\tuple{!A_1, \dots, !A_n}$, असेल, तर $\Gn{\Gamma} = \tuple{\Gn{!A_1},
+  \dots, \Gn{!A_n}}$.
+
+$\Gamma \Sequent \Delta$ ही क्रमवर्ती असेल, तर
+$\Gamma \Sequent \Delta$ ची गोडेल संख्या
+पुढीलप्रमाणे असते:
+\[
+\Gn{\Gamma \Sequent \Delta} = \tuple{\Gn{\Gamma}, \Gn{\Delta}}
+\]
+
+$\pi$ ही $\Log{LK}$ मधील !!a{derivation} असेल, तर $\Gn{\pi}$ ची
+व्याख्या पुढीलप्रमाणे करतो:
+\begin{enumerate}
+\item $\pi$ मध्ये फक्त $\Gamma \Sequent \Delta$ ही आरंभीची क्रमवर्ती
+  असेल, तर $\Gn{\pi}$ म्हणजे
+  \[
+    \tuple{0, \Gn{\Gamma \Sequent \Delta}}.
+  \]
+\item $\pi$ चा शेवट एक किंवा दोन आधारविधानांच्या निगमनाने होत असेल,
+  त्या निगमनाचा निष्कर्ष $\Gamma \Sequent \Delta$ असेल, आणि $\pi_1$
+  व $\pi_2$ या अखेरच्या निगमनाच्या आधारविधानांवर संपणाऱ्या तात्काळ
+  उपनिष्पत्ती असतील, तर $\Gn{\pi}$ अनुक्रमे
+  \begin{align*}
+    & \tuple{1, \Gn{\pi_1}, \Gn{\Gamma \Sequent \Delta}, k} \text{ किंवा}\\
+    & \tuple{2, \Gn{\pi_1}, \Gn{\pi_2}, \Gn{\Gamma \Sequent \Delta}, k},
+  \end{align*}
+  असते. अखेरच्या निगमनात कोणता नियम वापरला आहे त्यानुसार $k$ पुढील
+  तक्त्यात दिले आहे:
+
+  \begin{tabular}{lccccccc}
+    \text{नियम:} & \LeftR{\Weakening} & \RightR{\Weakening} &
+    \LeftR{\Contraction} & \RightR{\Contraction} &
+    \LeftR{\Exchange} & \RightR{\Exchange} \\
+    $k$: & 1 & 2 & 3 & 4 & 5 & 6 \\[2ex]
+    \text{नियम:} & \LeftR{\lnot} & \RightR{\lnot} &
+    \LeftR{\land} & \RightR{\land} &
+    \LeftR{\lor} & \RightR{\lor} \\
+    $k$: & 7 & 8 & 9 & 10 & 11 & 12 \\[2ex]
+    \text{नियम:} & \LeftR{\lif} & \RightR{\lif} &
+    \LeftR{\lforall} & \RightR{\lforall} &
+    \LeftR{\lexists} & \RightR{\lexists} \\
+    $k$: & 13 & 14 & 15 & 16 & 17 & 18 \\[2ex]
+    \text{नियम:} & \Cut & = \\
+    $k$: & 19 & 20
+  \end{tabular}
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+  पुढील अगदी सोपी !!{derivation} पाहा:
+  \begin{prooftree}
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B \fCenter !A$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\fCenter (!A \land !B) \lif !A$
+  \end{prooftree}
+  आरंभीच्या क्रमवर्तीची गोडेल संख्या $p_0 = \tuple{0,
+    \Gn{!A \Sequent !A}}$ असेल. $\LeftR{\land}$ च्या निष्कर्षावर
+    संपणाऱ्या !!{derivation} ची गोडेल संख्या $p_1 =
+    \tuple{1, p_0, \Gn{!A \land !B \Sequent !A}, 9}$ असेल. येथे $1$
+    हे $\LeftR{\land}$ ला एकच आधारविधान असल्यामुळे आले आहे;
+    $!A \land !B \Sequent !A$ या निष्कर्षाची गोडेल संख्या पुढे आहे;
+    आणि $9$ हा $\LeftR{\land}$ चा संकेतांक आहे. मग संपूर्ण
+    !!{derivation} ची गोडेल संख्या
+    $\tuple{1, p_1, \Gn{\Sequent (!A \land !B) \lif !A}, 14}$,
+    म्हणजेच
+  \[
+  \tuple{1, \tuple{1, \tuple{0, \Gn{!A \Sequent !A}}, \Gn{!A \land !B \Sequent !A}, 9},
+    \Gn{\Sequent (!A \land !B) \lif !A}, 14}.
+  \]
+\end{ex}
+
+\begin{explain}
+!!{derivation}s चे निरूपण ठरल्यानंतर, अशा !!{derivation}s वर आदिम पुनरावर्ती रीतीने
+क्रिया करता येतात आणि त्यांचे आवश्यक गुणधर्म व संबंध तसेच व्यक्त करता
+येतात, हेही दाखवावे लागेल. काही क्रिया सोप्या आहेत. उदाहरणार्थ,
+!!a{derivation} ची गोडेल संख्या~$p$ दिली असता,
+$\fn{EndSequent}(p) = (p)_{(p)_0+1}$ हे तिच्या अंतिम क्रमवर्तीची
+गोडेल संख्या देते आणि $\fn{LastRule}(p) = (p)_{(p)_0+2}$ हे तिच्या
+अखेरच्या नियमाचा संकेतांक देते. पुढीलप्रमाणे परिभाषित केलेला
+$\fn{Sequent}(s)$ गुणधर्म
+\[
+  \len{s} = 2 \land \bforall{i<\len{(s)_0} + \len{(s)_1}}{\fn{Sent}(((s)_0 \concat (s)_1)_i)}
+\]
+$s$ साठी खरा असतो, तर आणि तरच $s$ ही !!{sentence}s असलेल्या
+क्रमवर्तीची गोडेल संख्या असते. काही इतर क्रिया अधिक कठीण आहेत; त्या कशा कराव्यात याची
+किमान रूपरेषा आपण पाहू. $\pi$ ही $\Gamma$ पासून $!A$ ची
+!!a{derivation} आहे, हा संबंध $\pi$ आणि $!A$ यांच्या गोडेल संख्यांचा
+आदिम पुनरावर्ती संबंध आहे, हे दाखवणे आपले उद्दिष्ट आहे.
+\end{explain}
+
+\begin{prop}\ollabel{prop:followsby}
+  गोडेल संख्या~$p$ असलेल्या !!{derivation}~$\pi$ मधील अखेरचे निगमन
+  योग्य असेल, तर आणि तरच खरा असणारा $\fn{Correct}(p)$ गुणधर्म
+  आदिम पुनरावर्ती आहे.
+\end{prop}
+
+\begin{proof}
+  $\Gamma \Sequent \Delta$ ही आरंभीची क्रमवर्ती दोनपैकी एका
+  परिस्थितीत असते: एखादे !!a{sentence}~$!A$ असे असते की
+  $\Gamma \Sequent \Delta$ म्हणजे $!A \Sequent !A$ असते;
+  किंवा एखादे बंद पद~$t$ असे असते की
+  $\Gamma \Sequent \Delta$ म्हणजे $\emptyset \Sequent \eq[t][t]$ असते.
+  गोडेल संख्यांच्या भाषेत, मूलभूत आरंभीच्या क्रमवर्तींसाठी
+  $\fn{InitialSeq}(s)$ पुढील अट पूर्ण झाली तर आणि तरच खरे असते;
+  चिन्हांकित आवृत्त्यांत खाली दिलेल्या अटीही जोडायच्या आहेत:
+  \begin{align*}
+  \bexists{x < s}{} (\fn{Sent}(x) & \land
+  s = \tuple{\tuple{x},\tuple{x}})
+  \lor {}\\
+  \bexists{t<s}{} (\fn{ClTerm}(t) & \land
+  s = \tuple{0, \tuple{\Gn{{\eq}(} \concat t \concat \Gn{,} \concat t \concat \Gn{)}}}).
+  \end{align*}
+  \iftag{prvTrue}{या चिन्हांकित आवृत्तीत $s=\tuple{0,\tuple{\Gn{\ltrue}}}$
+  हीदेखील आरंभीची क्रमवर्ती आहे.}{}
+  \iftag{prvFalse}{या चिन्हांकित आवृत्तीत $s=\tuple{\tuple{\Gn{\lfalse}},0}$
+  हीदेखील आरंभीची क्रमवर्ती आहे.}{}
+
+  प्रत्येक निगमन नियम~$R$ साठी $\fn{FollowsBy}_R(p)$ हा संबंधही
+  आदिम पुनरावर्ती आहे, हे दाखवावे लागेल. $p$ ही !!{derivation}~$\pi$
+  ची गोडेल संख्या असेल आणि $\pi$ ची अंतिम क्रमवर्ती तिच्या तात्काळ
+  $\pi$ च्या उप-!!{derivation}s च्या अंतिम क्रमवर्तींपासून $R$ च्या योग्य वापराने
+  निष्पन्न होत असेल, तर आणि तरच $\fn{FollowsBy}_R(p)$ खरे असते.
+
+  \RightR{\land} नियमाचे उदाहरण सोपे आहे. $\pi$ चा शेवट
+  $\RightR{\land}$ च्या योग्य वापराने होत असेल, तर तिचे रूप असे असते:
+  \begin{prooftree}
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\Gamma \fCenter \Delta, !B$
+
+    \RightLabel{\RightR\land}
+    \BinaryInf$\Gamma \fCenter \Delta, !A \land !B$
+  \end{prooftree}
+  त्यामुळे !!{derivation}~$\pi$ मधील अखेरचे निगमन $\RightR{\land}$ चा योग्य वापर
+  असेल, तर आणि तरच $\Gamma$ व $\Delta$ या !!{sentence}s च्या क्रमिका
+  आणि $!A$, $!B$ ही दोन !!{sentence}s अशी असतात की $\pi_1$ ची
+  अंतिम क्रमवर्ती $\Gamma \Sequent \Delta, !A$, $\pi_2$ ची अंतिम
+  क्रमवर्ती $\Gamma \Sequent \Delta, !B$, आणि $\pi$ ची अंतिम
+  क्रमवर्ती $\Gamma \Sequent \Delta, !A \land !B$ असते.
+  हेच आता गोडेल संख्यांत मांडायचे आहे. $s = \Gn{\Gamma \Sequent \Delta}$
+  असेल, तर $(s)_0 = \Gn{\Gamma}$ आणि $(s)_1 = \Gn{\Delta}$.
+  म्हणून $\fn{FollowsBy}_{\RightR{\land}}(p)$ पुढील अट पूर्ण झाली
+  तर आणि तरच खरे असते:
+\begin{align*}
+& \bexists{g < p}{\bexists{d < p}{\bexists{a < p}{\bexists{b < p}{\quad}}}} \\
+& \qquad \fn{EndSequent}(p) =
+  \tuple{g, d \concat
+    \tuple{\Gn{(} \concat a \concat \Gn{\land} \concat b \concat \Gn{)}}} \land {} \\
+& \qquad \fn{EndSequent}((p)_1) = \tuple{g, d \concat \tuple{a}} \land {}\\
+& \qquad \fn{EndSequent}((p)_2) = \tuple{g, d \concat \tuple{b}} \land {}\\
+& \qquad (p)_0 = 2 \land \fn{LastRule}(p) = 10.
+\end{align*}
+या ओळी अनुक्रमे पुढील गोष्टी व्यक्त करतात: $\Gamma$ ची गोडेल संख्या
+$g$, $\Delta$ ची गोडेल संख्या $d$, !!a{formula}~$!A$ ची गोडेल संख्या $a$, आणि
+!!a{formula}~$!B$ ची गोडेल संख्या $b$ आहे; $\pi$ ची अंतिम क्रमवर्ती
+$\Gamma \Sequent \Delta, !A \land !B$ आहे; $\pi_1$ ची अंतिम क्रमवर्ती
+$\Gamma \Sequent \Delta, !A$ आहे; $\pi_2$ ची अंतिम क्रमवर्ती
+$\Gamma \Sequent \Delta, !B$ आहे; आणि $\pi$ ला दोन तात्काळ
+उपनिष्पत्ती असून तिचा अखेरचा नियम क्रमांक~$10$ असलेला
+$\RightR\land$ आहे.
+
+$\pi$ मधील अखेरचे निगमन $\RightR\lexists$ चा योग्य वापर असेल,
+तर आणि तरच $\Gamma$ व $\Delta$ या क्रमिका, $!A$ हे !!a{formula},
+$x$ हे चल आणि $t$ हे बंद पद अशी असतात की $\pi$ ची अंतिम क्रमवर्ती
+$\Gamma \Sequent \Delta, \lexists[x][!A]$ आणि $\pi_1$ ची अंतिम
+क्रमवर्ती $\Gamma \Sequent \Delta, \Subst{!A}{t}{x}$ असते.
+म्हणून गोडेल संख्यांत $\fn{FollowsBy}_{\RightR\lexists}(p)$ पुढील
+अट पूर्ण झाली तर आणि तरच खरे असते:
+\begin{align*}
+  & \bexists{g<p}{\bexists{d<p}{\bexists{a<p}{\bexists{x<p}{\bexists{t<p}{\quad}}}}}\\
+  & \qquad \fn{ClTerm}(t) \land {}\\
+  & \qquad \fn{EndSequent}(p) =
+  \tuple{
+    g,
+    d \concat \tuple{\Gn{\lexists} \concat x \concat a}
+  } \land {}\\
+  & \qquad \fn{EndSequent}((p)_1) =
+  \tuple{
+    g,
+    d \concat \tuple{\fn{Subst}(a, t, x)}
+  } \land {}\\
+  & \qquad (p)_0 = 1 \land \fn{LastRule}(p) = 18.
+\end{align*}
+मग $\fn{Correct}(p)$ ची व्याख्या अशी करतो:
+\begin{multline*}
+  \fn{Sequent}(\fn{EndSequent}(p)) \land {}\\
+  [(\fn{LastRule}(p) = 1 \land
+  \fn{FollowsBy}_{\LeftR\Weakening}(p)) \lor \dots \lor {}\\
+  (\fn{LastRule}(p) = 20 \land \fn{FollowsBy}_{\eq}(p)) \lor {}\\
+  (p)_0 = 0 \land \fn{InitialSeq}(\fn{EndSequent}(p))]
+\end{multline*}
+पहिली ओळ $p$ ची अंतिम क्रमवर्ती खरोखर !!{sentence}s चीच
+क्रमवर्ती आहे, याची खात्री करते. शेवटची ओळ $p$ मध्ये फक्त आरंभीची
+क्रमवर्ती असण्याचा प्रसंग हाताळते.
+\end{proof}
+
+\begin{prob}
+  \olref[inc][art][plk]{prop:followsby} प्रमाणे पुढील गुणधर्म
+  परिभाषित करा:
+  \begin{enumerate}
+  \item $\fn{FollowsBy}_{\Cut}(p)$,
+  \item $\fn{FollowsBy}_{\LeftR\lif}(p)$,
+  \item $\fn{FollowsBy}_{\eq}(p)$,
+  \item $\fn{FollowsBy}_{\RightR{\lforall}}(p)$.
+  \end{enumerate}
+  शेवटच्या गुणधर्मासाठी, गोडेल संख्या~$p$ असलेल्या
+  !!{derivation} मधील अखेरचे निगमन आयगेन चराची अट पूर्ण करते
+  का, हे आदिम पुनरावर्ती रीतीने तपासता येते, हेही दाखवावे लागेल.
+  म्हणजेच $\RightR{\lforall}$ चा आयगेन चर~$a$ अंतिम
+  क्रमवर्तीत येत नाही.
+\end{prob}
+
+\begin{prop}
+  \ollabel{prop:deriv}
+  $p$ ही योग्य !!{derivation}~$\pi$ ची गोडेल संख्या असेल, तर खरा
+  असणारा $\fn{Deriv}(p)$ संबंध आदिम पुनरावर्ती आहे.
+\end{prop}
+
+\begin{proof}
+  !!^a{derivation}~$\pi$ मधील प्रत्येक निगमन एखाद्या नियमाचा योग्य
+  वापर असेल, म्हणजेच तिच्या प्रत्येक उप-!!{derivation}s चा शेवट
+  योग्य निगमनाने होत असेल, तर ती योग्य असते. म्हणून
+  $\fn{Deriv}(p)$ तर आणि तरच
+  \[
+  \bforall{i<\len{\fn{SubtreeSeq}(p)}}{\fn{Correct}((\fn{SubtreeSeq}(p))_i)}.
+  \]
+\end{proof}
+
+\begin{prop}
+समजा $\Gamma$ हा !!{sentence}s चा आदिम पुनरावर्ती संच आहे.
+मग $\Prf[\Gamma](x, y)$ हा संबंध आदिम पुनरावर्ती आहे. हा संबंध
+असे व्यक्त करतो: $x$ हा $\Gamma_0 \Sequent !A$ च्या
+!!a{derivation}~$\pi$ चा संकेतांक आहे, येथे काही सांत
+$\Gamma_0 \subseteq \Gamma$ आहे, आणि $y$ ही $!A$ ची गोडेल संख्या आहे.
+\end{prop}
+
+\begin{proof}
+समजा ``$y \in \Gamma$'' हे $R_\Gamma(y)$ या आदिम पुनरावर्ती
+विधेयाने दिले आहे. $\Prf[\Gamma](x, y)$ हा संबंध आदिम पुनरावर्ती आहे,
+हे दाखवायचे आहे. $y$ ही वाक्य~$!A$ ची गोडेल संख्या असेल
+आणि $x$ हा अंतिम क्रमवर्ती $\Gamma_0 \Sequent !A$ असलेल्या
+$\Log{LK}$-!!{derivation} चा संकेतांक असेल, तर आणि तरच हा संबंध खरा असतो.
+
+मागील प्रस्तावानुसार, $x$ हा $\Log{LK}$ मधील योग्य
+!!{derivation}~$\pi$ चा संकेतांक असेल, तर आणि तरच खरा असणारा
+$\fn{Deriv}(x)$ गुणधर्म आदिम पुनरावर्ती आहे. $x$ असा संकेतांक असेल,
+तर $\fn{EndSequent}(x)$ हा $\pi$ च्या अंतिम क्रमवर्तीचा संकेतांक आहे.
+म्हणून $(\fn{EndSequent}(x))_0$ हा तिच्या डाव्या बाजूचा आणि
+$(\fn{EndSequent}(x))_1$ हा उजव्या बाजूचा संकेतांक आहे. त्यामुळे
+``$\pi$ च्या अंतिम क्रमवर्तीची उजवी बाजू $!A$ आहे'' हे
+$\len{(\fn{EndSequent}(x))_1} = 1 \land ((\fn{EndSequent}(x))_1)_0 =
+y$ असे व्यक्त करता येते. $\pi$ च्या अंतिम क्रमवर्तीची डावी बाजू
+अर्थातच सांत असते; तिच्यातील प्रत्येक वाक्य $\Gamma$ मध्ये आहे,
+हे व्यक्त करणे उरते. म्हणून $\Prf[\Gamma](x, y)$ ची व्याख्या अशी करता येते:
+\begin{align*}
+\Prf[\Gamma](x, y) \defiff {}&
+\fn{Deriv}(x) \land {} \\
+& \bforall{i <
+  \len{(\fn{EndSequent}(x))_0}}{R_\Gamma(((\fn{EndSequent}(x))_0)_i)} \land {}\\
+& \len{(\fn{EndSequent}(x))_1} = 1 \land ((\fn{EndSequent}(x))_1)_0 = y.
+\end{align*}
+\end{proof}
+
+\end{document}
