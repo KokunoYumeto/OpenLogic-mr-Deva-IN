@@ -581,6 +581,12 @@ _DOCUMENTED_PROJECTIONS = {
         # OLINC-051: code D_S(u), the formula with free variable u.
         (r'$R(\#(!D_S(u)),y)$', r'$R(\#(!D_S(\num u)),y)$'),
     ],
+    'OLP-0318': [
+        # OLINC-055: OProv is an arithmetic formula, so its body uses the
+        # representing formula OPrf rather than the metatheoretic relation Prf.
+        (r'$\lexists[x][\OPrf[\Th{PA}](x,y)]$',
+         r'$\lexists[x][\Prf[\Th{PA}](x,y)]$'),
+    ],
 }
 
 
