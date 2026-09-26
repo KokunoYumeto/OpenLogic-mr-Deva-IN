@@ -1,0 +1,235 @@
+{
+  "schema": "openlogic-incremental-source-checkpoint/1",
+  "checkpoint_id": "mr-Deva-IN-source-270-20260926",
+  "generated_utc": "2026-09-26T02:49:29.219207Z",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "base_checkpoint": {
+    "path": "provenance/source-checkpoint-266/SOURCE_CHECKPOINT.json",
+    "bytes": 6978,
+    "sha256": "f7fd479b36df5ad884506b23a219a49d9271d903a3495ab7fa4be3e53b327a74"
+  },
+  "scope": {
+    "translated_source_units": 270,
+    "total_source_units": 722,
+    "remaining_source_units": 452,
+    "aligned_content_segments": 2697,
+    "complete_source_chapters": 26,
+    "complete_reader_chapters": 20,
+    "first_incremental_unit": "OLP-0270",
+    "last_unit": "OLP-0273",
+    "next_unit": "OLP-0274",
+    "complete_edition": false
+  },
+  "translation_files": [
+    {
+      "unit_id": "OLP-0270",
+      "path": "mr/content/turing-machines/undecidability/representing-tms.tex",
+      "bytes": 16355,
+      "sha256": "783f46d40d2f9759ace9987107b7b859591c1f39c2afc0b04d0426da48c0ae57",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0271",
+      "path": "mr/content/turing-machines/undecidability/verification.tex",
+      "bytes": 27906,
+      "sha256": "d174d338a44c9d8b6a5a99a3b2226467fb7df2f35453c468086ecc28956e73a9",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0272",
+      "path": "mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex",
+      "bytes": 8507,
+      "sha256": "3c876a7ea361f8a9095c0da10550159b9833d6b700a1a0ae2046f0b45ad902ae",
+      "role": "new translated source"
+    },
+    {
+      "unit_id": "OLP-0273",
+      "path": "mr/content/turing-machines/undecidability/trakhtenbrot.tex",
+      "bytes": 24573,
+      "sha256": "b0ebd57c3fe8a9fcd69dd60827f46b2b0794a994287dbaa26e84ffb8a144966b",
+      "role": "new translated source"
+    }
+  ],
+  "semantic_reviews": [
+    {
+      "unit_id": "OLP-0270",
+      "path": "provenance/source-checkpoint-270/SEMANTIC_REVIEW-OLP0270.json",
+      "bytes": 3876,
+      "sha256": "af33e3f3be7c57824ff80d538bfe860082636f4fb412e9ce29ea2e5d31ba1d90"
+    },
+    {
+      "unit_id": "OLP-0271",
+      "path": "provenance/source-checkpoint-270/SEMANTIC_REVIEW-OLP0271.json",
+      "bytes": 5872,
+      "sha256": "f47cb0d2fc24e1b090252820f7100701ed4f971bdeb01b832b0b522e0fb5848f"
+    },
+    {
+      "unit_id": "OLP-0272",
+      "path": "provenance/source-checkpoint-270/SEMANTIC_REVIEW-OLP0272.json",
+      "bytes": 2764,
+      "sha256": "5bfa69d6a40da4a653a07f3dde303aa68c36001256ed2eb472c5a2671966480b"
+    },
+    {
+      "unit_id": "OLP-0273",
+      "path": "provenance/source-checkpoint-270/SEMANTIC_REVIEW-OLP0273.json",
+      "bytes": 5837,
+      "sha256": "4025651de9d14b648db2b45b87fa502756136dbac2a48c3378c76d71ba3b7ae3"
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "OLTUR-009",
+      "unit_id": "OLP-0270",
+      "classification": "confirmed-frozen-source-left-transition-frame-excludes-wrong-square",
+      "finding": "In the positive-position left-move clause, the old head scans square x' and writes the replacement symbol there, but the frame term A(x,y) excludes square x from preservation instead. The immediately following source explanation explicitly says the written square is x+1, i.e. x'. This is inconsistent with the earlier definition of A as preserving all squares except its first argument.",
+      "action": "Change only the first left-move consequent from A(x,y) to A(x',y) in Marathi; keep the separate square-zero branch A(0,y). Explain the written-square exclusion in adjacent prose and reader note OLTUR-009. Document the one-phrase QA projection back to frozen source."
+    },
+    {
+      "id": "OLTUR-010",
+      "unit_id": "OLP-0270",
+      "classification": "confirmed-frozen-source-open-formula-called-sentence",
+      "finding": "The displayed clauses used to define A(x,y) quantify z but leave x and y free. The frozen prose calls each a sentence, although under the book's first-order syntax they are open formulas until x and y are bound by the surrounding transition axiom.",
+      "action": "Preserve the source formula and glossary token, then add bounded Marathi prose and reader note OLTUR-010 distinguishing the open formula template from the universally quantified transition sentence."
+    },
+    {
+      "id": "OLTUR-011",
+      "unit_id": "OLP-0271",
+      "classification": "confirmed-frozen-source-configuration-lemma-reachability-scope-and-induction-base-gap",
+      "finding": "The configuration lemma requires M not to have halted after n steps, yet the final forward proof invokes it for the halting configuration reached after k steps. The induction step also assumes n>0, omitting the required transition from the initial 0-step configuration to step 1. The intended invariant is available for each n-step configuration actually reached by the run, including a terminal one.",
+      "action": "State the lemma for every reached n-step configuration, use n>=0 in the inductive step, and qualify the universal conclusions accordingly. Keep the initial n=0 configuration and terminal n=k configuration in scope. Add reader note OLTUR-011 and bounded projection for the changed inequality."
+    },
+    {
+      "id": "OLTUR-012",
+      "unit_id": "OLP-0271",
+      "classification": "confirmed-frozen-source-halting-pair-notation-switch",
+      "finding": "After selecting a state q and symbol sigma with undefined delta(q,sigma), the frozen proof abruptly derives the existential halting sentence from q-prime and sigma-prime without identifying that pair as the selected one. It also drops the object-language Obj marker from one S predicate. The selected pair (q,sigma) is the disjunct already known to lie in X.",
+      "action": "Use the selected (q,sigma) pair consistently and restore the object-language marker in the premise of the entailment. Add reader note OLTUR-012 and bounded projections for the tuple and premise."
+    },
+    {
+      "id": "OLTUR-013",
+      "unit_id": "OLP-0271",
+      "classification": "confirmed-frozen-source-overview-notation-slips",
+      "finding": "The forward overview concludes with T(M,w) lacking the exclamation marker used throughout for the encoded sentence. The converse overview describes M's actual run but briefly calls the running machine T. Both are local symbol slips within otherwise consistent arguments.",
+      "action": "Use !T(M,w) for the encoded sentence and M for the running machine in Marathi, preserve all other symbols, and add reader note OLTUR-013 with two bounded QA projections."
+    },
+    {
+      "id": "OLTUR-014",
+      "unit_id": "OLP-0271",
+      "classification": "confirmed-frozen-source-left-frame-proof-repeats-wrong-excluded-square",
+      "finding": "The left-move verification repeats A(x,y) from the frozen representation clause and then instantiates it as A(l,n), although the instruction writes at the old head square x'=l'=m. OLTUR-009 corrected the preceding representation rule to exclude that written square.",
+      "action": "Use A(x',y) and A(l',n) in the first left-move branch, preserving A(0,y) in the zero-boundary branch. Add adjacent explanation and reader note OLTUR-014 with the two exact projections."
+    },
+    {
+      "id": "OLTUR-015",
+      "unit_id": "OLP-0271",
+      "classification": "confirmed-frozen-source-post-transition-tape-symbol-notation-ambiguous",
+      "finding": "Both next-configuration displays repeat the unmarked sigma_i tape symbols from the old configuration, even though the machine has written sigma-prime at square m. The right-move prose itself says the old symbol at m is excluded. Without reindexing, the displayed conjunction does not state the post-transition tape exactly.",
+      "action": "Mark the symbols in the next-configuration row with a plus superscript and explain that the written square takes the new symbol while all other squares retain their old symbols. Preserve the explicit write clause and all square/time coordinates. Add reader note OLTUR-015 and bounded projections back to the frozen unmarked endpoints."
+    },
+    {
+      "id": "OLTUR-016",
+      "unit_id": "OLP-0272",
+      "classification": "confirmed-frozen-source-object-language-sentence-marker-slip",
+      "finding": "The satisfiability corollary's proof introduces its input as sentence B, then immediately instructs the machine to shift !B, and the theorem and rest of the proof consistently use !B as the object-language sentence notation. The first B omits the marker.",
+      "action": "Write !B at the first input mention in Marathi, preserve the later negation and tape operation, add adjacent reader note OLTUR-016 and a one-phrase bounded projection to the frozen B notation."
+    },
+    {
+      "id": "OLTUR-017",
+      "unit_id": "OLP-0273",
+      "classification": "confirmed-frozen-source-finite-model-domain-can-omit-final-head-square",
+      "finding": "The machine starts scanning square 1. After k successive right moves its halting head may scan square k+1, but the frozen domain ends at n=max(k,len(w)). Also the capped order includes n<n; if n equals the last input square len(w), the initial blank-tail axiom falsely makes that occupied square blank. A safe cap is n=max(k+1,len(w)+1).",
+      "action": "Choose n as the greater of k+1 and input length plus one in the Marathi prose and displayed maximum, retaining the capped-successor and terminal-order formulas. Add adjacent reader note OLTUR-017 and a bounded projection of the displayed maximum to the frozen formula."
+    },
+    {
+      "id": "OLTUR-018",
+      "unit_id": "OLP-0273",
+      "classification": "confirmed-frozen-source-single-state-example-notation-slips",
+      "finding": "The exercise specifies a one-state machine q_0 but writes its sole transition's destination as undeclared q. Its finite structure is M-double-prime but one successor value is ascribed to M-prime. Both are isolated symbol slips.",
+      "action": "Use q_0 as the transition destination and M-double-prime for both successor values in Marathi. Add reader note OLTUR-018 and two narrow QA projections."
+    },
+    {
+      "id": "OLTUR-019",
+      "unit_id": "OLP-0273",
+      "classification": "confirmed-frozen-source-finite-transition-left-branch-frame-and-fresh-time-omissions",
+      "finding": "The positive-position left transition writes at old head square x' but uses the frame A(x,y), which excludes the new head square x instead. It also lacks B(y') while the right, zero-boundary left and stay transitions include B(y'), and the following source prose states that B(y') was added to every transition. Without it, the subsequent fresh-time proof does not cover this branch.",
+      "action": "Use A(x',y) as in OLTUR-009 and conjoin B(y') to the first left-move consequent. Preserve the zero-boundary branch and add adjacent reader note OLTUR-019 with a bounded formula projection."
+    },
+    {
+      "id": "OLTUR-020",
+      "unit_id": "OLP-0273",
+      "classification": "confirmed-frozen-source-finite-model-lemma-proof-and-exercise-formula-slips",
+      "finding": "The finite-model lemma asserts T'(M,w) and !E(M,w), but its proof's final satisfaction formula omits the marker on E. The following exercise omits that marker again and additionally asks to verify old T rather than strengthened T'. That would not establish the stated lemma.",
+      "action": "Use the exact lemma conjunction T'(M,w) and !E(M,w) in both proof and exercise, with reader note OLTUR-020 and two local projections."
+    },
+    {
+      "id": "OLTUR-021",
+      "unit_id": "OLP-0273",
+      "classification": "confirmed-frozen-source-contrapositive-assumes-wrong-run-theory",
+      "finding": "The converse lemma concerns finite models of strengthened T' and E, but the contrapositive proof assumes an arbitrary model of old T and E. Its next line derives fresh-time conditions only from T', so the assumed model must satisfy T'.",
+      "action": "Assume a model of T'(M,w) and !E(M,w) in the Marathi proof, keep the rest of the contrapositive, and add reader note OLTUR-021 and a one-phrase projection."
+    },
+    {
+      "id": "OLTUR-022",
+      "unit_id": "OLP-0273",
+      "classification": "confirmed-frozen-source-fresh-time-base-not-axiomatized",
+      "finding": "B(y') appears only in transition consequents, so the strengthened theory does not supply B(0) for the initial configuration. The frozen proof and exercise assert T' entails C(n) and B(n) for all natural n, including n=0. The argument needs B(n) only for positive n, to distinguish infinitely many numerals.",
+      "action": "Qualify the combined configuration-and-fresh-time claim and its exercise to n after at least one step, while preserving all displayed formulas and the infinite-domain conclusion. Add reader note OLTUR-022; the change is prose-only and requires no formula projection."
+    }
+  ],
+  "qa": {
+    "units_checked": 4,
+    "unit_structural_failures": 0,
+    "formula_macro_token_identifier_reference_parity": true,
+    "semantic_reviews_passed": 4,
+    "cross_package_receipt": {
+      "path": "provenance/source-checkpoint-270/CROSS_PACKAGE_QA-WORKING.json",
+      "bytes": 1325,
+      "sha256": "a0ee58e6ae4e16375c7a24fcbe08c2c2589ac0320b076c723ee152149d4e8ccb",
+      "segment_hashes_replayed": 2697,
+      "result": "passed"
+    },
+    "independent_human_or_native_speaker_review_claimed": false,
+    "reader_refresh_verified_for_increment": false
+  },
+  "synchronized_provenance": {
+    "receipt": "provenance/PROVENANCE_SYNC.json",
+    "canon_sources": 113,
+    "canon_passages": 158,
+    "term_decisions": 351,
+    "aligned_segments": 2697,
+    "expert_review_decisions": {
+      "records": 529,
+      "path": "provenance/EXPERT_REVIEW_DECISIONS.jsonl",
+      "bytes": 3631722,
+      "sha256": "66ba286aa112f967e3f6ee2d97ebe0160e3d2575cfeca6832e24be8bd8f65619"
+    },
+    "expert_review_occurrences": {
+      "records": 13843,
+      "path": "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl",
+      "bytes": 42115640,
+      "sha256": "bcc10272de34a5345a64417e463f56e2d6562437db005843286febe22f646507"
+    },
+    "canonical_decision_qa": {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "bytes": 3535,
+      "sha256": "7f06163d41385c0c07afc3eac5654381698c9837dd56dde3f4ebed676c6676c0",
+      "deterministic_second_run_identical": true
+    },
+    "inherited_reader_occurrence_locators_unchanged": 11402
+  },
+  "latest_public_reader": {
+    "tag": "twenty-chapters-v0.9",
+    "last_unit": "OLP-0197",
+    "translated_units": 194,
+    "pages": 264,
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/twenty-chapters-v0.9",
+    "zenodo_doi": "10.5281/zenodo.22864626"
+  },
+  "packaging_observations": {
+    "path": "provenance/source-checkpoint-233/PACKAGING_OBSERVATIONS-TWENTY-CHAPTERS-v0.9.json",
+    "bytes": 2420,
+    "sha256": "c234df36fafd075fbe42ac2e323648681e3e164199aafe62126bc482277bffe2",
+    "disposition": "Apply both corrections at the next full-source package checkpoint; preserve inherited access."
+  },
+  "status": "source-complete-and-reviewed; 26-chapter reader master assembled but guarded TeX slot occupied"
+}

@@ -2,7 +2,7 @@
 
 This is the readable full occurrence surface for the Marathi (mr-Deva-IN) OpenLogic edition. Each row is one decision-governed aligned segment, or one durable source correction/observation. A term can occur more than once inside one aligned segment; the stable segment is the review granularity.
 
-Current scope: **266/722 source units**, 2621 aligned translated blocks, 13560 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
+Current scope: **270/722 source units**, 2697 aligned translated blocks, 13843 review occurrences. The referenced development reader has 264 pages and SHA-256 c87b007066a3a2f766298153cb0fb4e7e962e32080954dc081bf746f4b85b790; it is not a final accessible release.
 
 A term row gives the exact source and target block lines. Its PDF locator is the current section page range and deliberately does not claim an exact page inside that range. Stable source-note IDs provide exact rendered pages where available. Missing dictionary evidence never leaves text untranslated; low-confidence choices remain reversible and appear in the priority view. Narrow choice spans are distinguished from their aligned context blocks, may overlap, and do not assert a disjoint token partition.
 
@@ -1621,7 +1621,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T009 — formal validity</strong> (89 occurrences; routine priority)</summary>
+<summary><strong>T009 — formal validity</strong> (107 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -1714,6 +1714,24 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T009-OLP-0269-B006 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:17-26](../upstream/content/turing-machines/undecidability/decision-problem.tex#L17) | [mr/content/turing-machines/undecidability/decision-problem.tex:19-34](../mr/content/turing-machines/undecidability/decision-problem.tex#L19) | not yet paginated |
 | T009-OLP-0269-B007 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:28-36](../upstream/content/turing-machines/undecidability/decision-problem.tex#L28) | [mr/content/turing-machines/undecidability/decision-problem.tex:36-51](../mr/content/turing-machines/undecidability/decision-problem.tex#L36) | not yet paginated |
 | T009-OLP-0269-B008 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:38-48](../upstream/content/turing-machines/undecidability/decision-problem.tex#L38) | [mr/content/turing-machines/undecidability/decision-problem.tex:53-71](../mr/content/turing-machines/undecidability/decision-problem.tex#L53) | not yet paginated |
+| T009-OLP-0271-B005 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:12-17](../upstream/content/turing-machines/undecidability/verification.tex#L12) | [mr/content/turing-machines/undecidability/verification.tex:12-21](../mr/content/turing-machines/undecidability/verification.tex#L12) | not yet paginated |
+| T009-OLP-0271-B006 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:19-27](../upstream/content/turing-machines/undecidability/verification.tex#L19) | [mr/content/turing-machines/undecidability/verification.tex:23-45](../mr/content/turing-machines/undecidability/verification.tex#L23) | not yet paginated |
+| T009-OLP-0271-B007 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:29-42](../upstream/content/turing-machines/undecidability/verification.tex#L29) | [mr/content/turing-machines/undecidability/verification.tex:47-76](../mr/content/turing-machines/undecidability/verification.tex#L47) | not yet paginated |
+| T009-OLP-0271-B008 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:44-58](../upstream/content/turing-machines/undecidability/verification.tex#L44) | [mr/content/turing-machines/undecidability/verification.tex:78-117](../mr/content/turing-machines/undecidability/verification.tex#L78) | not yet paginated |
+| T009-OLP-0271-B031 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:261-265](../upstream/content/turing-machines/undecidability/verification.tex#L261) | [mr/content/turing-machines/undecidability/verification.tex:460-466](../mr/content/turing-machines/undecidability/verification.tex#L460) | not yet paginated |
+| T009-OLP-0271-B032 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:267-278](../upstream/content/turing-machines/undecidability/verification.tex#L267) | [mr/content/turing-machines/undecidability/verification.tex:468-499](../mr/content/turing-machines/undecidability/verification.tex#L468) | not yet paginated |
+| T009-OLP-0271-B033 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:281-285](../upstream/content/turing-machines/undecidability/verification.tex#L281) | [mr/content/turing-machines/undecidability/verification.tex:502-511](../mr/content/turing-machines/undecidability/verification.tex#L502) | not yet paginated |
+| T009-OLP-0271-B034 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:287-290](../upstream/content/turing-machines/undecidability/verification.tex#L287) | [mr/content/turing-machines/undecidability/verification.tex:513-518](../mr/content/turing-machines/undecidability/verification.tex#L513) | not yet paginated |
+| T009-OLP-0271-B035 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:292-320](../upstream/content/turing-machines/undecidability/verification.tex#L292) | [mr/content/turing-machines/undecidability/verification.tex:520-574](../mr/content/turing-machines/undecidability/verification.tex#L520) | not yet paginated |
+| T009-OLP-0272-B005 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-18](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L12) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-21](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L12) | not yet paginated |
+| T009-OLP-0272-B006 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:20-37](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L20) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:23-61](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L23) | not yet paginated |
+| T009-OLP-0272-B008 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:43-47](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L43) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-80](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L70) | not yet paginated |
+| T009-OLP-0272-B010 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:54-58](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L54) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:95-108](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L95) | not yet paginated |
+| T009-OLP-0272-B011 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:60-68](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L60) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:110-127](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L110) | not yet paginated |
+| T009-OLP-0272-B012 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-77](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L70) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:129-143](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L129) | not yet paginated |
+| T009-OLP-0272-B013 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:79-89](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L79) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:145-170](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L145) | not yet paginated |
+| T009-OLP-0273-B005 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:12-20](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L12) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:12-31](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L12) | not yet paginated |
+| T009-OLP-0273-B006 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:22-27](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L22) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:33-49](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L33) | not yet paginated |
 
 **Chosen rendering/action:** वैधता
 
@@ -2088,7 +2106,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T015 — proof</strong> (118 occurrences; routine priority)</summary>
+<summary><strong>T015 — proof</strong> (128 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -2210,6 +2228,16 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T015-OLP-0157-B012 | OLP-0157 · 15.8 मुक्त चल आणि वाक्य | [upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46](../upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex#L43) | [mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46](../mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex#L43) | 205–206 |
 | T015-OLP-0213-B017 | OLP-0213 ·  | [upstream/content/computability/recursive-functions/pr-functions.tex:125-131](../upstream/content/computability/recursive-functions/pr-functions.tex#L125) | [mr/content/computability/recursive-functions/pr-functions.tex:123-128](../mr/content/computability/recursive-functions/pr-functions.tex#L123) | not yet paginated |
 | T015-OLP-0216-B020 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:151-153](../upstream/content/computability/recursive-functions/examples.tex#L151) | [mr/content/computability/recursive-functions/examples.tex:152-154](../mr/content/computability/recursive-functions/examples.tex#L152) | not yet paginated |
+| T015-OLP-0270-B019 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:202-204](../upstream/content/turing-machines/undecidability/representing-tms.tex#L202) | [mr/content/turing-machines/undecidability/representing-tms.tex:305-307](../mr/content/turing-machines/undecidability/representing-tms.tex#L305) | not yet paginated |
+| T015-OLP-0271-B006 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:19-27](../upstream/content/turing-machines/undecidability/verification.tex#L19) | [mr/content/turing-machines/undecidability/verification.tex:23-45](../mr/content/turing-machines/undecidability/verification.tex#L23) | not yet paginated |
+| T015-OLP-0271-B028 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:241-244](../upstream/content/turing-machines/undecidability/verification.tex#L241) | [mr/content/turing-machines/undecidability/verification.tex:427-432](../mr/content/turing-machines/undecidability/verification.tex#L427) | not yet paginated |
+| T015-OLP-0271-B029 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:246-250](../upstream/content/turing-machines/undecidability/verification.tex#L246) | [mr/content/turing-machines/undecidability/verification.tex:434-443](../mr/content/turing-machines/undecidability/verification.tex#L434) | not yet paginated |
+| T015-OLP-0271-B030 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:252-258](../upstream/content/turing-machines/undecidability/verification.tex#L252) | [mr/content/turing-machines/undecidability/verification.tex:445-457](../mr/content/turing-machines/undecidability/verification.tex#L445) | not yet paginated |
+| T015-OLP-0272-B011 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:60-68](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L60) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:110-127](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L110) | not yet paginated |
+| T015-OLP-0272-B013 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:79-89](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L79) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:145-170](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L145) | not yet paginated |
+| T015-OLP-0273-B021 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:239-243](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L239) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:452-464](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L452) | not yet paginated |
+| T015-OLP-0273-B022 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:245-247](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L245) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:466-468](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L466) | not yet paginated |
+| T015-OLP-0273-B023 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:249-257](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L249) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:470-489](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L470) | not yet paginated |
 
 **Chosen rendering/action:** सिद्धता
 
@@ -2954,7 +2982,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T027 — mathematical / arithmetical induction</strong> (57 occurrences; medium priority)</summary>
+<summary><strong>T027 — mathematical / arithmetical induction</strong> (64 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3015,6 +3043,13 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T027-OLP-0193-B016 | OLP-0193 · 20.2 अंकगणिताची मानक प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/standard-models.tex:132-137](../upstream/content/model-theory/models-of-arithmetic/standard-models.tex#L132) | [mr/content/model-theory/models-of-arithmetic/standard-models.tex:131-136](../mr/content/model-theory/models-of-arithmetic/standard-models.tex#L131) | 251–253 |
 | T027-OLP-0193-B017 | OLP-0193 · 20.2 अंकगणिताची मानक प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/standard-models.tex:139-150](../upstream/content/model-theory/models-of-arithmetic/standard-models.tex#L139) | [mr/content/model-theory/models-of-arithmetic/standard-models.tex:138-150](../mr/content/model-theory/models-of-arithmetic/standard-models.tex#L138) | 251–253 |
 | T027-OLP-0194-B009 | OLP-0194 · 20.3 अमानक प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-47](../upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex#L39) | [mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-46](../mr/content/model-theory/models-of-arithmetic/non-standard-models.tex#L39) | 253–254 |
+| T027-OLP-0270-B020 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:206-209](../upstream/content/turing-machines/undecidability/representing-tms.tex#L206) | [mr/content/turing-machines/undecidability/representing-tms.tex:309-313](../mr/content/turing-machines/undecidability/representing-tms.tex#L309) | not yet paginated |
+| T027-OLP-0271-B006 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:19-27](../upstream/content/turing-machines/undecidability/verification.tex#L19) | [mr/content/turing-machines/undecidability/verification.tex:23-45](../mr/content/turing-machines/undecidability/verification.tex#L23) | not yet paginated |
+| T027-OLP-0271-B007 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:29-42](../upstream/content/turing-machines/undecidability/verification.tex#L29) | [mr/content/turing-machines/undecidability/verification.tex:47-76](../mr/content/turing-machines/undecidability/verification.tex#L47) | not yet paginated |
+| T027-OLP-0271-B014 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:113-115](../upstream/content/turing-machines/undecidability/verification.tex#L113) | [mr/content/turing-machines/undecidability/verification.tex:207-213](../mr/content/turing-machines/undecidability/verification.tex#L207) | not yet paginated |
+| T027-OLP-0271-B015 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:117-120](../upstream/content/turing-machines/undecidability/verification.tex#L117) | [mr/content/turing-machines/undecidability/verification.tex:215-223](../mr/content/turing-machines/undecidability/verification.tex#L215) | not yet paginated |
+| T027-OLP-0271-B016 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:122-125](../upstream/content/turing-machines/undecidability/verification.tex#L122) | [mr/content/turing-machines/undecidability/verification.tex:225-235](../mr/content/turing-machines/undecidability/verification.tex#L225) | not yet paginated |
+| T027-OLP-0271-B021 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:137-173](../upstream/content/turing-machines/undecidability/verification.tex#L137) | [mr/content/turing-machines/undecidability/verification.tex:248-298](../mr/content/turing-machines/undecidability/verification.tex#L248) | not yet paginated |
 
 **Chosen rendering/action:** गणितीय विगमन / अंकगणितीय विगमन
 
@@ -3053,7 +3088,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T029 — axiom</strong> (86 occurrences; high priority)</summary>
+<summary><strong>T029 — axiom</strong> (95 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -3143,6 +3178,15 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T029-OLP-0195-B010 | OLP-0195 · 20.4 Q ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:121-131](../upstream/content/model-theory/models-of-arithmetic/models-of-q.tex#L121) | [mr/content/model-theory/models-of-arithmetic/models-of-q.tex:124-134](../mr/content/model-theory/models-of-arithmetic/models-of-q.tex#L124) | 254–256 |
 | T029-OLP-0195-B012 | OLP-0195 · 20.4 Q ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:176-185](../upstream/content/model-theory/models-of-arithmetic/models-of-q.tex#L176) | [mr/content/model-theory/models-of-arithmetic/models-of-q.tex:182-192](../mr/content/model-theory/models-of-arithmetic/models-of-q.tex#L182) | 254–256 |
 | T029-OLP-0195-B014 | OLP-0195 · 20.4 Q ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:193-203](../upstream/content/model-theory/models-of-arithmetic/models-of-q.tex#L193) | [mr/content/model-theory/models-of-arithmetic/models-of-q.tex:200-210](../mr/content/model-theory/models-of-arithmetic/models-of-q.tex#L200) | 254–256 |
+| T029-OLP-0270-B010 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:49-56](../upstream/content/turing-machines/undecidability/representing-tms.tex#L49) | [mr/content/turing-machines/undecidability/representing-tms.tex:67-79](../mr/content/turing-machines/undecidability/representing-tms.tex#L67) | not yet paginated |
+| T029-OLP-0270-B012 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:76-112](../upstream/content/turing-machines/undecidability/representing-tms.tex#L76) | [mr/content/turing-machines/undecidability/representing-tms.tex:109-156](../mr/content/turing-machines/undecidability/representing-tms.tex#L109) | not yet paginated |
+| T029-OLP-0271-B014 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:113-115](../upstream/content/turing-machines/undecidability/verification.tex#L113) | [mr/content/turing-machines/undecidability/verification.tex:207-213](../mr/content/turing-machines/undecidability/verification.tex#L207) | not yet paginated |
+| T029-OLP-0271-B022 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:175-181](../upstream/content/turing-machines/undecidability/verification.tex#L175) | [mr/content/turing-machines/undecidability/verification.tex:300-315](../mr/content/turing-machines/undecidability/verification.tex#L300) | not yet paginated |
+| T029-OLP-0271-B024 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:190-194](../upstream/content/turing-machines/undecidability/verification.tex#L190) | [mr/content/turing-machines/undecidability/verification.tex:333-347](../mr/content/turing-machines/undecidability/verification.tex#L333) | not yet paginated |
+| T029-OLP-0271-B025 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:196-199](../upstream/content/turing-machines/undecidability/verification.tex#L196) | [mr/content/turing-machines/undecidability/verification.tex:349-357](../mr/content/turing-machines/undecidability/verification.tex#L349) | not yet paginated |
+| T029-OLP-0271-B030 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:252-258](../upstream/content/turing-machines/undecidability/verification.tex#L252) | [mr/content/turing-machines/undecidability/verification.tex:445-457](../mr/content/turing-machines/undecidability/verification.tex#L445) | not yet paginated |
+| T029-OLP-0273-B010 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:89-97](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L89) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:190-208](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L190) | not yet paginated |
+| T029-OLP-0273-B011 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L99) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L210) | not yet paginated |
 
 **Chosen rendering/action:** स्वयंसिद्धक
 
@@ -4210,7 +4254,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T042 — least / well-ordered / predecessor / successor</strong> (89 occurrences; routine priority)</summary>
+<summary><strong>T042 — least / well-ordered / predecessor / successor</strong> (90 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -4303,6 +4347,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T042-OLP-0216-B009 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:58-76](../upstream/content/computability/recursive-functions/examples.tex#L58) | [mr/content/computability/recursive-functions/examples.tex:57-75](../mr/content/computability/recursive-functions/examples.tex#L57) | not yet paginated |
 | T042-OLP-0216-B011 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:83-97](../upstream/content/computability/recursive-functions/examples.tex#L83) | [mr/content/computability/recursive-functions/examples.tex:82-97](../mr/content/computability/recursive-functions/examples.tex#L82) | not yet paginated |
 | T042-OLP-0216-B013 | OLP-0216 ·  | [upstream/content/computability/recursive-functions/examples.tex:110-116](../upstream/content/computability/recursive-functions/examples.tex#L110) | [mr/content/computability/recursive-functions/examples.tex:110-116](../mr/content/computability/recursive-functions/examples.tex#L110) | not yet paginated |
+| T042-OLP-0270-B007 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:25-29](../upstream/content/turing-machines/undecidability/representing-tms.tex#L25) | [mr/content/turing-machines/undecidability/representing-tms.tex:31-38](../mr/content/turing-machines/undecidability/representing-tms.tex#L31) | not yet paginated |
 
 **Chosen rendering/action:** लघुतम / सुक्रमित / पूर्ववर्ती / उत्तरवर्ती
 
@@ -7082,7 +7127,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T074 — reduction / reduce one problem to another</strong> (57 occurrences; routine priority)</summary>
+<summary><strong>T074 — reduction / reduce one problem to another</strong> (59 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -7143,6 +7188,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T074-OLP-0248-B005 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:12-18](../upstream/content/computability/computability-theory/rice-theorem.tex#L12) | [mr/content/computability/computability-theory/rice-theorem.tex:12-19](../mr/content/computability/computability-theory/rice-theorem.tex#L12) | not yet paginated |
 | T074-OLP-0248-B015 | OLP-0248 ·  | [upstream/content/computability/computability-theory/rice-theorem.tex:97-107](../upstream/content/computability/computability-theory/rice-theorem.tex#L97) | [mr/content/computability/computability-theory/rice-theorem.tex:102-115](../mr/content/computability/computability-theory/rice-theorem.tex#L102) | not yet paginated |
 | T074-OLP-0269-B007 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:28-36](../upstream/content/turing-machines/undecidability/decision-problem.tex#L28) | [mr/content/turing-machines/undecidability/decision-problem.tex:36-51](../mr/content/turing-machines/undecidability/decision-problem.tex#L36) | not yet paginated |
+| T074-OLP-0272-B006 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:20-37](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L20) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:23-61](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L23) | not yet paginated |
+| T074-OLP-0273-B020 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:229-237](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L229) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:427-450](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L427) | not yet paginated |
 
 **Chosen rendering/action:** न्यूनीकरण / एक समस्या दुसऱ्या समस्येकडे न्यूनीत करणे
 
@@ -8291,7 +8338,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (68 occurrences; medium priority)</summary>
+<summary><strong>T110 — logical completeness / completeness theorem / truth-functional completeness</strong> (71 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8363,6 +8410,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T110-OLP-0181-B006 | OLP-0181 · 18.7 इतर तर्कशास्त्रे | [upstream/content/first-order-logic/beyond/other-logics.tex:13-20](../upstream/content/first-order-logic/beyond/other-logics.tex#L13) | [mr/content/first-order-logic/beyond/other-logics.tex:13-19](../mr/content/first-order-logic/beyond/other-logics.tex#L13) | 241 |
 | T110-OLP-0182-B005 | OLP-0182 · 19 प्रतिमान उपपत्तीची मूलतत्त्वे — भाग-प्रस्तावना | [upstream/content/model-theory/model-theory.tex:9-17](../upstream/content/model-theory/model-theory.tex#L9) | [mr/content/model-theory/model-theory.tex:9-16](../mr/content/model-theory/model-theory.tex#L9) | 242 |
 | T110-OLP-0201-B014 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L143) | [mr/content/model-theory/interpolation/interpolation-proof.tex:143-149](../mr/content/model-theory/interpolation/interpolation-proof.tex#L143) | not yet paginated |
+| T110-OLP-0272-B011 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:60-68](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L60) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:110-127](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L110) | not yet paginated |
+| T110-OLP-0272-B013 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:79-89](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L79) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:145-170](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L145) | not yet paginated |
+| T110-OLP-0273-B021 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:239-243](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L239) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:452-464](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L452) | not yet paginated |
 
 **Chosen rendering/action:** संपूर्णता / संपूर्णता प्रमेय / सत्यता-फलनात्मक संपूर्णता
 
@@ -8456,7 +8506,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T112 — predicate / term / quantifier</strong> (213 occurrences; routine priority)</summary>
+<summary><strong>T112 — predicate / term / quantifier</strong> (231 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -8673,6 +8723,24 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T112-OLP-0205-B010 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L121) | [mr/content/model-theory/lindstrom/abstract-logics.tex:127-140](../mr/content/model-theory/lindstrom/abstract-logics.tex#L127) | not yet paginated |
 | T112-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
 | T112-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
+| T112-OLP-0270-B005 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:12-17](../upstream/content/turing-machines/undecidability/representing-tms.tex#L12) | [mr/content/turing-machines/undecidability/representing-tms.tex:12-19](../mr/content/turing-machines/undecidability/representing-tms.tex#L12) | not yet paginated |
+| T112-OLP-0270-B006 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:19-23](../upstream/content/turing-machines/undecidability/representing-tms.tex#L19) | [mr/content/turing-machines/undecidability/representing-tms.tex:21-29](../mr/content/turing-machines/undecidability/representing-tms.tex#L21) | not yet paginated |
+| T112-OLP-0270-B009 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:45-47](../upstream/content/turing-machines/undecidability/representing-tms.tex#L45) | [mr/content/turing-machines/undecidability/representing-tms.tex:62-65](../mr/content/turing-machines/undecidability/representing-tms.tex#L62) | not yet paginated |
+| T112-OLP-0270-B011 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:58-74](../upstream/content/turing-machines/undecidability/representing-tms.tex#L58) | [mr/content/turing-machines/undecidability/representing-tms.tex:81-107](../mr/content/turing-machines/undecidability/representing-tms.tex#L81) | not yet paginated |
+| T112-OLP-0270-B013 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:114-137](../upstream/content/turing-machines/undecidability/representing-tms.tex#L114) | [mr/content/turing-machines/undecidability/representing-tms.tex:158-198](../mr/content/turing-machines/undecidability/representing-tms.tex#L158) | not yet paginated |
+| T112-OLP-0271-B008 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:44-58](../upstream/content/turing-machines/undecidability/verification.tex#L44) | [mr/content/turing-machines/undecidability/verification.tex:78-117](../mr/content/turing-machines/undecidability/verification.tex#L78) | not yet paginated |
+| T112-OLP-0271-B009 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:60-72](../upstream/content/turing-machines/undecidability/verification.tex#L60) | [mr/content/turing-machines/undecidability/verification.tex:119-142](../mr/content/turing-machines/undecidability/verification.tex#L119) | not yet paginated |
+| T112-OLP-0271-B011 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:79-99](../upstream/content/turing-machines/undecidability/verification.tex#L79) | [mr/content/turing-machines/undecidability/verification.tex:151-184](../mr/content/turing-machines/undecidability/verification.tex#L151) | not yet paginated |
+| T112-OLP-0271-B021 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:137-173](../upstream/content/turing-machines/undecidability/verification.tex#L137) | [mr/content/turing-machines/undecidability/verification.tex:248-298](../mr/content/turing-machines/undecidability/verification.tex#L248) | not yet paginated |
+| T112-OLP-0271-B023 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:183-188](../upstream/content/turing-machines/undecidability/verification.tex#L183) | [mr/content/turing-machines/undecidability/verification.tex:317-331](../mr/content/turing-machines/undecidability/verification.tex#L317) | not yet paginated |
+| T112-OLP-0271-B024 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:190-194](../upstream/content/turing-machines/undecidability/verification.tex#L190) | [mr/content/turing-machines/undecidability/verification.tex:333-347](../mr/content/turing-machines/undecidability/verification.tex#L333) | not yet paginated |
+| T112-OLP-0271-B025 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:196-199](../upstream/content/turing-machines/undecidability/verification.tex#L196) | [mr/content/turing-machines/undecidability/verification.tex:349-357](../mr/content/turing-machines/undecidability/verification.tex#L349) | not yet paginated |
+| T112-OLP-0271-B026 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:201-234](../upstream/content/turing-machines/undecidability/verification.tex#L201) | [mr/content/turing-machines/undecidability/verification.tex:359-417](../mr/content/turing-machines/undecidability/verification.tex#L359) | not yet paginated |
+| T112-OLP-0271-B029 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:246-250](../upstream/content/turing-machines/undecidability/verification.tex#L246) | [mr/content/turing-machines/undecidability/verification.tex:434-443](../mr/content/turing-machines/undecidability/verification.tex#L434) | not yet paginated |
+| T112-OLP-0271-B030 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:252-258](../upstream/content/turing-machines/undecidability/verification.tex#L252) | [mr/content/turing-machines/undecidability/verification.tex:445-457](../mr/content/turing-machines/undecidability/verification.tex#L445) | not yet paginated |
+| T112-OLP-0271-B032 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:267-278](../upstream/content/turing-machines/undecidability/verification.tex#L267) | [mr/content/turing-machines/undecidability/verification.tex:468-499](../mr/content/turing-machines/undecidability/verification.tex#L468) | not yet paginated |
+| T112-OLP-0271-B035 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:292-320](../upstream/content/turing-machines/undecidability/verification.tex#L292) | [mr/content/turing-machines/undecidability/verification.tex:520-574](../mr/content/turing-machines/undecidability/verification.tex#L520) | not yet paginated |
+| T112-OLP-0273-B011 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L99) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L210) | not yet paginated |
 
 **Chosen rendering/action:** विधेय / पद / संख्यापक
 
@@ -9421,7 +9489,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T123 — entailment / entails</strong> (113 occurrences; medium priority)</summary>
+<summary><strong>T123 — entailment / entails</strong> (132 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9538,6 +9606,25 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T123-OLP-0201-B017 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L183) | [mr/content/model-theory/interpolation/interpolation-proof.tex:185-192](../mr/content/model-theory/interpolation/interpolation-proof.tex#L185) | not yet paginated |
 | T123-OLP-0202-B011 | OLP-0202 ·  | [upstream/content/model-theory/interpolation/definability.tex:71-126](../upstream/content/model-theory/interpolation/definability.tex#L71) | [mr/content/model-theory/interpolation/definability.tex:72-128](../mr/content/model-theory/interpolation/definability.tex#L72) | not yet paginated |
 | T123-OLP-0269-B008 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:38-48](../upstream/content/turing-machines/undecidability/decision-problem.tex#L38) | [mr/content/turing-machines/undecidability/decision-problem.tex:53-71](../mr/content/turing-machines/undecidability/decision-problem.tex#L53) | not yet paginated |
+| T123-OLP-0271-B007 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:29-42](../upstream/content/turing-machines/undecidability/verification.tex#L29) | [mr/content/turing-machines/undecidability/verification.tex:47-76](../mr/content/turing-machines/undecidability/verification.tex#L47) | not yet paginated |
+| T123-OLP-0271-B008 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:44-58](../upstream/content/turing-machines/undecidability/verification.tex#L44) | [mr/content/turing-machines/undecidability/verification.tex:78-117](../mr/content/turing-machines/undecidability/verification.tex#L78) | not yet paginated |
+| T123-OLP-0271-B010 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:74-77](../upstream/content/turing-machines/undecidability/verification.tex#L74) | [mr/content/turing-machines/undecidability/verification.tex:144-149](../mr/content/turing-machines/undecidability/verification.tex#L144) | not yet paginated |
+| T123-OLP-0271-B011 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:79-99](../upstream/content/turing-machines/undecidability/verification.tex#L79) | [mr/content/turing-machines/undecidability/verification.tex:151-184](../mr/content/turing-machines/undecidability/verification.tex#L151) | not yet paginated |
+| T123-OLP-0271-B012 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:101-105](../upstream/content/turing-machines/undecidability/verification.tex#L101) | [mr/content/turing-machines/undecidability/verification.tex:186-195](../mr/content/turing-machines/undecidability/verification.tex#L186) | not yet paginated |
+| T123-OLP-0271-B013 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:107-111](../upstream/content/turing-machines/undecidability/verification.tex#L107) | [mr/content/turing-machines/undecidability/verification.tex:197-205](../mr/content/turing-machines/undecidability/verification.tex#L197) | not yet paginated |
+| T123-OLP-0271-B015 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:117-120](../upstream/content/turing-machines/undecidability/verification.tex#L117) | [mr/content/turing-machines/undecidability/verification.tex:215-223](../mr/content/turing-machines/undecidability/verification.tex#L215) | not yet paginated |
+| T123-OLP-0271-B021 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:137-173](../upstream/content/turing-machines/undecidability/verification.tex#L137) | [mr/content/turing-machines/undecidability/verification.tex:248-298](../mr/content/turing-machines/undecidability/verification.tex#L248) | not yet paginated |
+| T123-OLP-0271-B022 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:175-181](../upstream/content/turing-machines/undecidability/verification.tex#L175) | [mr/content/turing-machines/undecidability/verification.tex:300-315](../mr/content/turing-machines/undecidability/verification.tex#L300) | not yet paginated |
+| T123-OLP-0271-B024 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:190-194](../upstream/content/turing-machines/undecidability/verification.tex#L190) | [mr/content/turing-machines/undecidability/verification.tex:333-347](../mr/content/turing-machines/undecidability/verification.tex#L333) | not yet paginated |
+| T123-OLP-0271-B025 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:196-199](../upstream/content/turing-machines/undecidability/verification.tex#L196) | [mr/content/turing-machines/undecidability/verification.tex:349-357](../mr/content/turing-machines/undecidability/verification.tex#L349) | not yet paginated |
+| T123-OLP-0271-B026 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:201-234](../upstream/content/turing-machines/undecidability/verification.tex#L201) | [mr/content/turing-machines/undecidability/verification.tex:359-417](../mr/content/turing-machines/undecidability/verification.tex#L359) | not yet paginated |
+| T123-OLP-0271-B027 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:236-239](../upstream/content/turing-machines/undecidability/verification.tex#L236) | [mr/content/turing-machines/undecidability/verification.tex:419-425](../mr/content/turing-machines/undecidability/verification.tex#L419) | not yet paginated |
+| T123-OLP-0271-B032 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:267-278](../upstream/content/turing-machines/undecidability/verification.tex#L267) | [mr/content/turing-machines/undecidability/verification.tex:468-499](../mr/content/turing-machines/undecidability/verification.tex#L468) | not yet paginated |
+| T123-OLP-0271-B035 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:292-320](../upstream/content/turing-machines/undecidability/verification.tex#L292) | [mr/content/turing-machines/undecidability/verification.tex:520-574](../mr/content/turing-machines/undecidability/verification.tex#L520) | not yet paginated |
+| T123-OLP-0272-B013 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:79-89](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L79) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:145-170](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L145) | not yet paginated |
+| T123-OLP-0273-B016 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:197-201](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L197) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:348-362](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L348) | not yet paginated |
+| T123-OLP-0273-B017 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:203-215](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L203) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:364-402](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L364) | not yet paginated |
+| T123-OLP-0273-B018 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:217-221](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L217) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:404-415](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L404) | not yet paginated |
 
 **Chosen rendering/action:** तार्किक निष्पन्नता / तार्किकरीत्या निष्पन्न होणे
 
@@ -9548,7 +9635,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T124 — satisfiable / satisfiability</strong> (72 occurrences; medium priority)</summary>
+<summary><strong>T124 — satisfiable / satisfiability</strong> (80 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9624,6 +9711,14 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T124-OLP-0201-B011 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L100) | [mr/content/model-theory/interpolation/interpolation-proof.tex:101-106](../mr/content/model-theory/interpolation/interpolation-proof.tex#L101) | not yet paginated |
 | T124-OLP-0206-B007 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:16-21](../upstream/content/model-theory/lindstrom/ls-property.tex#L16) | [mr/content/model-theory/lindstrom/ls-property.tex:16-21](../mr/content/model-theory/lindstrom/ls-property.tex#L16) | not yet paginated |
 | T124-OLP-0206-B008 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:23-26](../upstream/content/model-theory/lindstrom/ls-property.tex#L23) | [mr/content/model-theory/lindstrom/ls-property.tex:23-27](../mr/content/model-theory/lindstrom/ls-property.tex#L23) | not yet paginated |
+| T124-OLP-0272-B007 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:39-41](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L39) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:63-68](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L63) | not yet paginated |
+| T124-OLP-0272-B008 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:43-47](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L43) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-80](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L70) | not yet paginated |
+| T124-OLP-0272-B009 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:49-52](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L49) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:82-93](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L82) | not yet paginated |
+| T124-OLP-0272-B010 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:54-58](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L54) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:95-108](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L95) | not yet paginated |
+| T124-OLP-0273-B005 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:12-20](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L12) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:12-31](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L12) | not yet paginated |
+| T124-OLP-0273-B006 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:22-27](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L22) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:33-49](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L33) | not yet paginated |
+| T124-OLP-0273-B019 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:223-227](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L223) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:417-425](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L417) | not yet paginated |
+| T124-OLP-0273-B023 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:249-257](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L249) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:470-489](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L470) | not yet paginated |
 
 **Chosen rendering/action:** पूर्ततायोग्य / पूर्ततायोग्यता
 
@@ -9653,7 +9748,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T126 — sentence / proposition / statement</strong> (202 occurrences; routine priority)</summary>
+<summary><strong>T126 — sentence / proposition / statement</strong> (225 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -9859,6 +9954,29 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T126-OLP-0269-B006 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:17-26](../upstream/content/turing-machines/undecidability/decision-problem.tex#L17) | [mr/content/turing-machines/undecidability/decision-problem.tex:19-34](../mr/content/turing-machines/undecidability/decision-problem.tex#L19) | not yet paginated |
 | T126-OLP-0269-B007 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:28-36](../upstream/content/turing-machines/undecidability/decision-problem.tex#L28) | [mr/content/turing-machines/undecidability/decision-problem.tex:36-51](../mr/content/turing-machines/undecidability/decision-problem.tex#L36) | not yet paginated |
 | T126-OLP-0269-B008 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:38-48](../upstream/content/turing-machines/undecidability/decision-problem.tex#L38) | [mr/content/turing-machines/undecidability/decision-problem.tex:53-71](../mr/content/turing-machines/undecidability/decision-problem.tex#L53) | not yet paginated |
+| T126-OLP-0270-B005 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:12-17](../upstream/content/turing-machines/undecidability/representing-tms.tex#L12) | [mr/content/turing-machines/undecidability/representing-tms.tex:12-19](../mr/content/turing-machines/undecidability/representing-tms.tex#L12) | not yet paginated |
+| T126-OLP-0270-B010 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:49-56](../upstream/content/turing-machines/undecidability/representing-tms.tex#L49) | [mr/content/turing-machines/undecidability/representing-tms.tex:67-79](../mr/content/turing-machines/undecidability/representing-tms.tex#L67) | not yet paginated |
+| T126-OLP-0270-B012 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:76-112](../upstream/content/turing-machines/undecidability/representing-tms.tex#L76) | [mr/content/turing-machines/undecidability/representing-tms.tex:109-156](../mr/content/turing-machines/undecidability/representing-tms.tex#L109) | not yet paginated |
+| T126-OLP-0270-B013 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:114-137](../upstream/content/turing-machines/undecidability/representing-tms.tex#L114) | [mr/content/turing-machines/undecidability/representing-tms.tex:158-198](../mr/content/turing-machines/undecidability/representing-tms.tex#L158) | not yet paginated |
+| T126-OLP-0270-B016 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:180-188](../upstream/content/turing-machines/undecidability/representing-tms.tex#L180) | [mr/content/turing-machines/undecidability/representing-tms.tex:272-286](../mr/content/turing-machines/undecidability/representing-tms.tex#L272) | not yet paginated |
+| T126-OLP-0270-B017 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:190-195](../upstream/content/turing-machines/undecidability/representing-tms.tex#L190) | [mr/content/turing-machines/undecidability/representing-tms.tex:288-297](../mr/content/turing-machines/undecidability/representing-tms.tex#L288) | not yet paginated |
+| T126-OLP-0271-B006 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:19-27](../upstream/content/turing-machines/undecidability/verification.tex#L19) | [mr/content/turing-machines/undecidability/verification.tex:23-45](../mr/content/turing-machines/undecidability/verification.tex#L23) | not yet paginated |
+| T126-OLP-0271-B009 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:60-72](../upstream/content/turing-machines/undecidability/verification.tex#L60) | [mr/content/turing-machines/undecidability/verification.tex:119-142](../mr/content/turing-machines/undecidability/verification.tex#L119) | not yet paginated |
+| T126-OLP-0271-B011 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:79-99](../upstream/content/turing-machines/undecidability/verification.tex#L79) | [mr/content/turing-machines/undecidability/verification.tex:151-184](../mr/content/turing-machines/undecidability/verification.tex#L151) | not yet paginated |
+| T126-OLP-0271-B023 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:183-188](../upstream/content/turing-machines/undecidability/verification.tex#L183) | [mr/content/turing-machines/undecidability/verification.tex:317-331](../mr/content/turing-machines/undecidability/verification.tex#L317) | not yet paginated |
+| T126-OLP-0272-B005 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-18](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L12) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-21](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L12) | not yet paginated |
+| T126-OLP-0272-B006 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:20-37](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L20) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:23-61](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L23) | not yet paginated |
+| T126-OLP-0272-B007 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:39-41](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L39) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:63-68](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L63) | not yet paginated |
+| T126-OLP-0272-B008 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:43-47](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L43) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-80](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L70) | not yet paginated |
+| T126-OLP-0272-B009 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:49-52](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L49) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:82-93](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L82) | not yet paginated |
+| T126-OLP-0272-B010 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:54-58](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L54) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:95-108](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L95) | not yet paginated |
+| T126-OLP-0272-B011 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:60-68](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L60) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:110-127](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L110) | not yet paginated |
+| T126-OLP-0272-B012 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-77](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L70) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:129-143](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L129) | not yet paginated |
+| T126-OLP-0273-B005 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:12-20](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L12) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:12-31](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L12) | not yet paginated |
+| T126-OLP-0273-B006 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:22-27](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L22) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:33-49](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L33) | not yet paginated |
+| T126-OLP-0273-B010 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:89-97](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L89) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:190-208](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L190) | not yet paginated |
+| T126-OLP-0273-B011 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L99) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L210) | not yet paginated |
+| T126-OLP-0273-B019 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:223-227](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L223) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:417-425](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L417) | not yet paginated |
 
 **Chosen rendering/action:** वाक्य / विधान
 
@@ -10884,7 +11002,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T148 — unsatisfiable / unsatisfiability</strong> (32 occurrences; medium priority)</summary>
+<summary><strong>T148 — unsatisfiable / unsatisfiability</strong> (36 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -10920,6 +11038,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T148-OLP-0170-B012 | OLP-0170 · 17.3 प्रथम-क्रम उपपत्तींची उदाहरणे | [upstream/content/first-order-logic/models-theories/theories.tex:90-100](../upstream/content/first-order-logic/models-theories/theories.tex#L90) | [mr/content/first-order-logic/models-theories/theories.tex:88-99](../mr/content/first-order-logic/models-theories/theories.tex#L88) | 224–226 |
 | T148-OLP-0201-B008 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:29-32](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L29) | [mr/content/model-theory/interpolation/interpolation-proof.tex:28-31](../mr/content/model-theory/interpolation/interpolation-proof.tex#L28) | not yet paginated |
 | T148-OLP-0201-B011 | OLP-0201 ·  | [upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105](../upstream/content/model-theory/interpolation/interpolation-proof.tex#L100) | [mr/content/model-theory/interpolation/interpolation-proof.tex:101-106](../mr/content/model-theory/interpolation/interpolation-proof.tex#L101) | not yet paginated |
+| T148-OLP-0272-B007 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:39-41](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L39) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:63-68](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L63) | not yet paginated |
+| T148-OLP-0272-B008 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:43-47](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L43) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-80](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L70) | not yet paginated |
+| T148-OLP-0272-B009 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:49-52](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L49) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:82-93](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L82) | not yet paginated |
+| T148-OLP-0272-B010 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:54-58](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L54) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:95-108](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L95) | not yet paginated |
 
 **Chosen rendering/action:** अपूर्ततायोग्य / अपूर्ततायोग्यता
 
@@ -11314,7 +11436,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T155 — soundness / sound / unsound (of a proof system)</strong> (97 occurrences; high priority)</summary>
+<summary><strong>T155 — soundness / sound / unsound (of a proof system)</strong> (100 occurrences; high priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -11415,6 +11537,9 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T155-OLP-0179-B025 | OLP-0179 · 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L180) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L163) | 237–240 |
 | T155-OLP-0179-B026 | OLP-0179 · 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | [upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198](../upstream/content/first-order-logic/beyond/intuitionistic-logic.tex#L186) | [mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178](../mr/content/first-order-logic/beyond/intuitionistic-logic.tex#L168) | 237–240 |
 | T155-OLP-0180-B010 | OLP-0180 · 18.6 मोडल तर्कशास्त्रे | [upstream/content/first-order-logic/beyond/modal-logics.tex:67-89](../upstream/content/first-order-logic/beyond/modal-logics.tex#L67) | [mr/content/first-order-logic/beyond/modal-logics.tex:61-81](../mr/content/first-order-logic/beyond/modal-logics.tex#L61) | 240–241 |
+| T155-OLP-0272-B011 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:60-68](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L60) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:110-127](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L110) | not yet paginated |
+| T155-OLP-0272-B013 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:79-89](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L79) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:145-170](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L145) | not yet paginated |
+| T155-OLP-0273-B021 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:239-243](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L239) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:452-464](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L452) | not yet paginated |
 
 **Chosen rendering/action:** निर्दोषता / निर्दोष / सदोष
 
@@ -13999,7 +14124,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T205 — variable / constant / function (as language symbols)</strong> (78 occurrences; medium priority)</summary>
+<summary><strong>T205 — variable / constant / function (as language symbols)</strong> (80 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -14081,6 +14206,8 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T205-OLP-0205-B008 | OLP-0205 ·  | [upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106](../upstream/content/model-theory/lindstrom/abstract-logics.tex#L48) | [mr/content/model-theory/lindstrom/abstract-logics.tex:49-111](../mr/content/model-theory/lindstrom/abstract-logics.tex#L49) | not yet paginated |
 | T205-OLP-0206-B012 | OLP-0206 ·  | [upstream/content/model-theory/lindstrom/ls-property.tex:59-72](../upstream/content/model-theory/lindstrom/ls-property.tex#L59) | [mr/content/model-theory/lindstrom/ls-property.tex:59-73](../mr/content/model-theory/lindstrom/ls-property.tex#L59) | not yet paginated |
 | T205-OLP-0207-B011 | OLP-0207 ·  | [upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80](../upstream/content/model-theory/lindstrom/lindstrom-proof.tex#L66) | [mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84](../mr/content/model-theory/lindstrom/lindstrom-proof.tex#L68) | not yet paginated |
+| T205-OLP-0270-B007 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:25-29](../upstream/content/turing-machines/undecidability/representing-tms.tex#L25) | [mr/content/turing-machines/undecidability/representing-tms.tex:31-38](../mr/content/turing-machines/undecidability/representing-tms.tex#L31) | not yet paginated |
+| T205-OLP-0270-B011 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:58-74](../upstream/content/turing-machines/undecidability/representing-tms.tex#L58) | [mr/content/turing-machines/undecidability/representing-tms.tex:81-107](../mr/content/turing-machines/undecidability/representing-tms.tex#L81) | not yet paginated |
 
 **Chosen rendering/action:** चर / स्थिर / फलन
 
@@ -16005,7 +16132,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T282 — standard numeral</strong> (21 occurrences; routine priority)</summary>
+<summary><strong>T282 — standard numeral</strong> (38 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16030,6 +16157,23 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T282-OLP-0196-B014 | OLP-0196 · 20.5 PA ची प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:85-95](../upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex#L85) | [mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:87-97](../mr/content/model-theory/models-of-arithmetic/models-of-pa.tex#L87) | 256–259 |
 | T282-OLP-0197-B005 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L12) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L12) | 259–260 |
 | T282-OLP-0197-B006 | OLP-0197 · 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | [upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33](../upstream/content/model-theory/models-of-arithmetic/computable-models.tex#L25) | [mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32](../mr/content/model-theory/models-of-arithmetic/computable-models.tex#L24) | 259–260 |
+| T282-OLP-0270-B008 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:31-43](../upstream/content/turing-machines/undecidability/representing-tms.tex#L31) | [mr/content/turing-machines/undecidability/representing-tms.tex:40-60](../mr/content/turing-machines/undecidability/representing-tms.tex#L40) | not yet paginated |
+| T282-OLP-0270-B018 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:197-200](../upstream/content/turing-machines/undecidability/representing-tms.tex#L197) | [mr/content/turing-machines/undecidability/representing-tms.tex:299-303](../mr/content/turing-machines/undecidability/representing-tms.tex#L299) | not yet paginated |
+| T282-OLP-0270-B020 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:206-209](../upstream/content/turing-machines/undecidability/representing-tms.tex#L206) | [mr/content/turing-machines/undecidability/representing-tms.tex:309-313](../mr/content/turing-machines/undecidability/representing-tms.tex#L309) | not yet paginated |
+| T282-OLP-0271-B009 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:60-72](../upstream/content/turing-machines/undecidability/verification.tex#L60) | [mr/content/turing-machines/undecidability/verification.tex:119-142](../mr/content/turing-machines/undecidability/verification.tex#L119) | not yet paginated |
+| T282-OLP-0271-B021 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:137-173](../upstream/content/turing-machines/undecidability/verification.tex#L137) | [mr/content/turing-machines/undecidability/verification.tex:248-298](../mr/content/turing-machines/undecidability/verification.tex#L248) | not yet paginated |
+| T282-OLP-0271-B022 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:175-181](../upstream/content/turing-machines/undecidability/verification.tex#L175) | [mr/content/turing-machines/undecidability/verification.tex:300-315](../mr/content/turing-machines/undecidability/verification.tex#L300) | not yet paginated |
+| T282-OLP-0271-B023 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:183-188](../upstream/content/turing-machines/undecidability/verification.tex#L183) | [mr/content/turing-machines/undecidability/verification.tex:317-331](../mr/content/turing-machines/undecidability/verification.tex#L317) | not yet paginated |
+| T282-OLP-0271-B024 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:190-194](../upstream/content/turing-machines/undecidability/verification.tex#L190) | [mr/content/turing-machines/undecidability/verification.tex:333-347](../mr/content/turing-machines/undecidability/verification.tex#L333) | not yet paginated |
+| T282-OLP-0271-B025 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:196-199](../upstream/content/turing-machines/undecidability/verification.tex#L196) | [mr/content/turing-machines/undecidability/verification.tex:349-357](../mr/content/turing-machines/undecidability/verification.tex#L349) | not yet paginated |
+| T282-OLP-0271-B026 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:201-234](../upstream/content/turing-machines/undecidability/verification.tex#L201) | [mr/content/turing-machines/undecidability/verification.tex:359-417](../mr/content/turing-machines/undecidability/verification.tex#L359) | not yet paginated |
+| T282-OLP-0271-B029 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:246-250](../upstream/content/turing-machines/undecidability/verification.tex#L246) | [mr/content/turing-machines/undecidability/verification.tex:434-443](../mr/content/turing-machines/undecidability/verification.tex#L434) | not yet paginated |
+| T282-OLP-0271-B030 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:252-258](../upstream/content/turing-machines/undecidability/verification.tex#L252) | [mr/content/turing-machines/undecidability/verification.tex:445-457](../mr/content/turing-machines/undecidability/verification.tex#L445) | not yet paginated |
+| T282-OLP-0271-B035 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:292-320](../upstream/content/turing-machines/undecidability/verification.tex#L292) | [mr/content/turing-machines/undecidability/verification.tex:520-574](../mr/content/turing-machines/undecidability/verification.tex#L520) | not yet paginated |
+| T282-OLP-0273-B007 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:29-51](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L29) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:51-104](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L51) | not yet paginated |
+| T282-OLP-0273-B011 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L99) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L210) | not yet paginated |
+| T282-OLP-0273-B013 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:170-185](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L170) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:306-331](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L306) | not yet paginated |
+| T282-OLP-0273-B017 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:203-215](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L203) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:364-402](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L364) | not yet paginated |
 
 **Chosen rendering/action:** मानक संख्यांक
 
@@ -16260,7 +16404,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T288 — Turing machine / primitive recursion</strong> (144 occurrences; medium priority)</summary>
+<summary><strong>T288 — Turing machine / primitive recursion</strong> (161 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -16408,6 +16552,23 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T288-OLP-0269-B006 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:17-26](../upstream/content/turing-machines/undecidability/decision-problem.tex#L17) | [mr/content/turing-machines/undecidability/decision-problem.tex:19-34](../mr/content/turing-machines/undecidability/decision-problem.tex#L19) | not yet paginated |
 | T288-OLP-0269-B007 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:28-36](../upstream/content/turing-machines/undecidability/decision-problem.tex#L28) | [mr/content/turing-machines/undecidability/decision-problem.tex:36-51](../mr/content/turing-machines/undecidability/decision-problem.tex#L36) | not yet paginated |
 | T288-OLP-0269-B008 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:38-48](../upstream/content/turing-machines/undecidability/decision-problem.tex#L38) | [mr/content/turing-machines/undecidability/decision-problem.tex:53-71](../mr/content/turing-machines/undecidability/decision-problem.tex#L53) | not yet paginated |
+| T288-OLP-0270-B004 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:9-10](../upstream/content/turing-machines/undecidability/representing-tms.tex#L9) | [mr/content/turing-machines/undecidability/representing-tms.tex:9-10](../mr/content/turing-machines/undecidability/representing-tms.tex#L9) | not yet paginated |
+| T288-OLP-0270-B011 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:58-74](../upstream/content/turing-machines/undecidability/representing-tms.tex#L58) | [mr/content/turing-machines/undecidability/representing-tms.tex:81-107](../mr/content/turing-machines/undecidability/representing-tms.tex#L81) | not yet paginated |
+| T288-OLP-0271-B004 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:9-10](../upstream/content/turing-machines/undecidability/verification.tex#L9) | [mr/content/turing-machines/undecidability/verification.tex:9-10](../mr/content/turing-machines/undecidability/verification.tex#L9) | not yet paginated |
+| T288-OLP-0271-B005 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:12-17](../upstream/content/turing-machines/undecidability/verification.tex#L12) | [mr/content/turing-machines/undecidability/verification.tex:12-21](../mr/content/turing-machines/undecidability/verification.tex#L12) | not yet paginated |
+| T288-OLP-0271-B008 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:44-58](../upstream/content/turing-machines/undecidability/verification.tex#L44) | [mr/content/turing-machines/undecidability/verification.tex:78-117](../mr/content/turing-machines/undecidability/verification.tex#L78) | not yet paginated |
+| T288-OLP-0271-B031 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:261-265](../upstream/content/turing-machines/undecidability/verification.tex#L261) | [mr/content/turing-machines/undecidability/verification.tex:460-466](../mr/content/turing-machines/undecidability/verification.tex#L460) | not yet paginated |
+| T288-OLP-0271-B033 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:281-285](../upstream/content/turing-machines/undecidability/verification.tex#L281) | [mr/content/turing-machines/undecidability/verification.tex:502-511](../mr/content/turing-machines/undecidability/verification.tex#L502) | not yet paginated |
+| T288-OLP-0271-B034 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:287-290](../upstream/content/turing-machines/undecidability/verification.tex#L287) | [mr/content/turing-machines/undecidability/verification.tex:513-518](../mr/content/turing-machines/undecidability/verification.tex#L513) | not yet paginated |
+| T288-OLP-0272-B005 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-18](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L12) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-21](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L12) | not yet paginated |
+| T288-OLP-0272-B006 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:20-37](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L20) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:23-61](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L23) | not yet paginated |
+| T288-OLP-0272-B008 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:43-47](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L43) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-80](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L70) | not yet paginated |
+| T288-OLP-0272-B009 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:49-52](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L49) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:82-93](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L82) | not yet paginated |
+| T288-OLP-0272-B010 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:54-58](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L54) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:95-108](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L95) | not yet paginated |
+| T288-OLP-0272-B012 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-77](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L70) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:129-143](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L129) | not yet paginated |
+| T288-OLP-0273-B005 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:12-20](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L12) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:12-31](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L12) | not yet paginated |
+| T288-OLP-0273-B008 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:53-66](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L53) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:106-147](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L106) | not yet paginated |
+| T288-OLP-0273-B020 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:229-237](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L229) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:427-450](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L427) | not yet paginated |
 
 **Chosen rendering/action:** ट्यूरिंग यंत्र / आदिम पुनरावर्तन
 
@@ -17241,7 +17402,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T319 — defined or undefined at an input / partial equality / unbounded mu-search operator / non-halting computation</strong> (66 occurrences; routine priority)</summary>
+<summary><strong>T319 — defined or undefined at an input / partial equality / unbounded mu-search operator / non-halting computation</strong> (72 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17311,6 +17472,12 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T319-OLP-0267-B015 | OLP-0267 ·  | [upstream/content/turing-machines/undecidability/universal-tm.tex:123-130](../upstream/content/turing-machines/undecidability/universal-tm.tex#L123) | [mr/content/turing-machines/undecidability/universal-tm.tex:158-169](../mr/content/turing-machines/undecidability/universal-tm.tex#L158) | not yet paginated |
 | T319-OLP-0267-B016 | OLP-0267 ·  | [upstream/content/turing-machines/undecidability/universal-tm.tex:132-137](../upstream/content/turing-machines/undecidability/universal-tm.tex#L132) | [mr/content/turing-machines/undecidability/universal-tm.tex:171-177](../mr/content/turing-machines/undecidability/universal-tm.tex#L171) | not yet paginated |
 | T319-OLP-0268-B019 | OLP-0268 ·  | [upstream/content/turing-machines/undecidability/halting-problem.tex:138-147](../upstream/content/turing-machines/undecidability/halting-problem.tex#L138) | [mr/content/turing-machines/undecidability/halting-problem.tex:181-192](../mr/content/turing-machines/undecidability/halting-problem.tex#L181) | not yet paginated |
+| T319-OLP-0270-B016 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:180-188](../upstream/content/turing-machines/undecidability/representing-tms.tex#L180) | [mr/content/turing-machines/undecidability/representing-tms.tex:272-286](../mr/content/turing-machines/undecidability/representing-tms.tex#L272) | not yet paginated |
+| T319-OLP-0271-B010 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:74-77](../upstream/content/turing-machines/undecidability/verification.tex#L74) | [mr/content/turing-machines/undecidability/verification.tex:144-149](../mr/content/turing-machines/undecidability/verification.tex#L144) | not yet paginated |
+| T319-OLP-0271-B011 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:79-99](../upstream/content/turing-machines/undecidability/verification.tex#L79) | [mr/content/turing-machines/undecidability/verification.tex:151-184](../mr/content/turing-machines/undecidability/verification.tex#L151) | not yet paginated |
+| T319-OLP-0271-B016 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:122-125](../upstream/content/turing-machines/undecidability/verification.tex#L122) | [mr/content/turing-machines/undecidability/verification.tex:225-235](../mr/content/turing-machines/undecidability/verification.tex#L225) | not yet paginated |
+| T319-OLP-0271-B032 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:267-278](../upstream/content/turing-machines/undecidability/verification.tex#L267) | [mr/content/turing-machines/undecidability/verification.tex:468-499](../mr/content/turing-machines/undecidability/verification.tex#L468) | not yet paginated |
+| T319-OLP-0271-B035 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:292-320](../upstream/content/turing-machines/undecidability/verification.tex#L292) | [mr/content/turing-machines/undecidability/verification.tex:520-574](../mr/content/turing-machines/undecidability/verification.tex#L520) | not yet paginated |
 
 **Chosen rendering/action:** आदानावर परिभाषित किंवा अपरिभाषित / आंशिक समता / अपरिबद्ध μ-शोध परिकर्मी / न थांबणारे संगणन
 
@@ -17434,7 +17601,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T322 — halting problem / halting function / total code numbering</strong> (50 occurrences; medium priority)</summary>
+<summary><strong>T322 — halting problem / halting function / total code numbering</strong> (55 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17488,6 +17655,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T322-OLP-0268-B018 | OLP-0268 ·  | [upstream/content/turing-machines/undecidability/halting-problem.tex:128-136](../upstream/content/turing-machines/undecidability/halting-problem.tex#L128) | [mr/content/turing-machines/undecidability/halting-problem.tex:165-179](../mr/content/turing-machines/undecidability/halting-problem.tex#L165) | not yet paginated |
 | T322-OLP-0268-B019 | OLP-0268 ·  | [upstream/content/turing-machines/undecidability/halting-problem.tex:138-147](../upstream/content/turing-machines/undecidability/halting-problem.tex#L138) | [mr/content/turing-machines/undecidability/halting-problem.tex:181-192](../mr/content/turing-machines/undecidability/halting-problem.tex#L181) | not yet paginated |
 | T322-OLP-0269-B007 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:28-36](../upstream/content/turing-machines/undecidability/decision-problem.tex#L28) | [mr/content/turing-machines/undecidability/decision-problem.tex:36-51](../mr/content/turing-machines/undecidability/decision-problem.tex#L36) | not yet paginated |
+| T322-OLP-0270-B016 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:180-188](../upstream/content/turing-machines/undecidability/representing-tms.tex#L180) | [mr/content/turing-machines/undecidability/representing-tms.tex:272-286](../mr/content/turing-machines/undecidability/representing-tms.tex#L272) | not yet paginated |
+| T322-OLP-0271-B031 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:261-265](../upstream/content/turing-machines/undecidability/verification.tex#L261) | [mr/content/turing-machines/undecidability/verification.tex:460-466](../mr/content/turing-machines/undecidability/verification.tex#L460) | not yet paginated |
+| T322-OLP-0271-B034 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:287-290](../upstream/content/turing-machines/undecidability/verification.tex#L287) | [mr/content/turing-machines/undecidability/verification.tex:513-518](../mr/content/turing-machines/undecidability/verification.tex#L513) | not yet paginated |
+| T322-OLP-0272-B006 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:20-37](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L20) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:23-61](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L23) | not yet paginated |
+| T322-OLP-0273-B020 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:229-237](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L229) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:427-450](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L427) | not yet paginated |
 
 **Chosen rendering/action:** थांबण्याची समस्या / थांबण्याचे फलन / प्रत्येक संकेतांकाचा आंशिक पुनरावर्ती फलनाशी निर्देशांक-संबंध
 
@@ -17671,7 +17843,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T328 — semi-decidable set / partial computable domain / equivalent c.e. characterizations</strong> (17 occurrences; medium priority)</summary>
+<summary><strong>T328 — semi-decidable set / partial computable domain / equivalent c.e. characterizations</strong> (21 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17692,6 +17864,10 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T328-OLP-0240-B012 | OLP-0240 ·  | [upstream/content/computability/computability-theory/non-comp-set.tex:60-61](../upstream/content/computability/computability-theory/non-comp-set.tex#L60) | [mr/content/computability/computability-theory/non-comp-set.tex:63-65](../mr/content/computability/computability-theory/non-comp-set.tex#L63) | not yet paginated |
 | T328-OLP-0241-B008 | OLP-0241 ·  | [upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:22-25](../upstream/content/computability/computability-theory/ce-closed-cup-cap.tex#L22) | [mr/content/computability/computability-theory/ce-closed-cup-cap.tex:21-24](../mr/content/computability/computability-theory/ce-closed-cup-cap.tex#L21) | not yet paginated |
 | T328-OLP-0241-B010 | OLP-0241 ·  | [upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:36-42](../upstream/content/computability/computability-theory/ce-closed-cup-cap.tex#L36) | [mr/content/computability/computability-theory/ce-closed-cup-cap.tex:40-46](../mr/content/computability/computability-theory/ce-closed-cup-cap.tex#L40) | not yet paginated |
+| T328-OLP-0272-B011 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:60-68](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L60) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:110-127](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L110) | not yet paginated |
+| T328-OLP-0272-B012 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-77](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L70) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:129-143](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L129) | not yet paginated |
+| T328-OLP-0272-B013 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:79-89](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L79) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:145-170](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L145) | not yet paginated |
+| T328-OLP-0273-B023 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:249-257](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L249) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:470-489](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L470) | not yet paginated |
 
 **Chosen rendering/action:** अर्धनिर्णेय संच / आंशिक संगणनक्षम फलनाचे परिभाषाक्षेत्र / संगणनक्षमपणे प्रगणनीय असण्याची समतुल्य वैशिष्ट्ये
 
@@ -17915,7 +18091,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T338 — Turing-machine tape / square / read-write head / state / alphabet / transition function</strong> (70 occurrences; routine priority)</summary>
+<summary><strong>T338 — Turing-machine tape / square / read-write head / state / alphabet / transition function</strong> (83 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -17989,6 +18165,19 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T338-OLP-0267-B013 | OLP-0267 ·  | [upstream/content/turing-machines/undecidability/universal-tm.tex:89-94](../upstream/content/turing-machines/undecidability/universal-tm.tex#L89) | [mr/content/turing-machines/undecidability/universal-tm.tex:117-125](../mr/content/turing-machines/undecidability/universal-tm.tex#L117) | not yet paginated |
 | T338-OLP-0267-B014 | OLP-0267 ·  | [upstream/content/turing-machines/undecidability/universal-tm.tex:96-121](../upstream/content/turing-machines/undecidability/universal-tm.tex#L96) | [mr/content/turing-machines/undecidability/universal-tm.tex:127-156](../mr/content/turing-machines/undecidability/universal-tm.tex#L127) | not yet paginated |
 | T338-OLP-0267-B015 | OLP-0267 ·  | [upstream/content/turing-machines/undecidability/universal-tm.tex:123-130](../upstream/content/turing-machines/undecidability/universal-tm.tex#L123) | [mr/content/turing-machines/undecidability/universal-tm.tex:158-169](../mr/content/turing-machines/undecidability/universal-tm.tex#L158) | not yet paginated |
+| T338-OLP-0270-B006 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:19-23](../upstream/content/turing-machines/undecidability/representing-tms.tex#L19) | [mr/content/turing-machines/undecidability/representing-tms.tex:21-29](../mr/content/turing-machines/undecidability/representing-tms.tex#L21) | not yet paginated |
+| T338-OLP-0270-B014 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:139-156](../upstream/content/turing-machines/undecidability/representing-tms.tex#L139) | [mr/content/turing-machines/undecidability/representing-tms.tex:200-231](../mr/content/turing-machines/undecidability/representing-tms.tex#L200) | not yet paginated |
+| T338-OLP-0270-B015 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:158-178](../upstream/content/turing-machines/undecidability/representing-tms.tex#L158) | [mr/content/turing-machines/undecidability/representing-tms.tex:233-270](../mr/content/turing-machines/undecidability/representing-tms.tex#L233) | not yet paginated |
+| T338-OLP-0271-B016 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:122-125](../upstream/content/turing-machines/undecidability/verification.tex#L122) | [mr/content/turing-machines/undecidability/verification.tex:225-235](../mr/content/turing-machines/undecidability/verification.tex#L225) | not yet paginated |
+| T338-OLP-0271-B020 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:135-135](../upstream/content/turing-machines/undecidability/verification.tex#L135) | [mr/content/turing-machines/undecidability/verification.tex:245-246](../mr/content/turing-machines/undecidability/verification.tex#L245) | not yet paginated |
+| T338-OLP-0271-B021 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:137-173](../upstream/content/turing-machines/undecidability/verification.tex#L137) | [mr/content/turing-machines/undecidability/verification.tex:248-298](../mr/content/turing-machines/undecidability/verification.tex#L248) | not yet paginated |
+| T338-OLP-0271-B026 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:201-234](../upstream/content/turing-machines/undecidability/verification.tex#L201) | [mr/content/turing-machines/undecidability/verification.tex:359-417](../mr/content/turing-machines/undecidability/verification.tex#L359) | not yet paginated |
+| T338-OLP-0271-B027 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:236-239](../upstream/content/turing-machines/undecidability/verification.tex#L236) | [mr/content/turing-machines/undecidability/verification.tex:419-425](../mr/content/turing-machines/undecidability/verification.tex#L419) | not yet paginated |
+| T338-OLP-0271-B028 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:241-244](../upstream/content/turing-machines/undecidability/verification.tex#L241) | [mr/content/turing-machines/undecidability/verification.tex:427-432](../mr/content/turing-machines/undecidability/verification.tex#L427) | not yet paginated |
+| T338-OLP-0271-B035 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:292-320](../upstream/content/turing-machines/undecidability/verification.tex#L292) | [mr/content/turing-machines/undecidability/verification.tex:520-574](../mr/content/turing-machines/undecidability/verification.tex#L520) | not yet paginated |
+| T338-OLP-0273-B007 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:29-51](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L29) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:51-104](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L51) | not yet paginated |
+| T338-OLP-0273-B009 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:68-87](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L68) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:149-188](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L149) | not yet paginated |
+| T338-OLP-0273-B013 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:170-185](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L170) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:306-331](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L306) | not yet paginated |
 
 **Chosen rendering/action:** ट्यूरिंग यंत्राची फीत / घर / वाचन-लेखन शीर्ष / अवस्था / वर्णमाला / संक्रमण फलन
 
@@ -17999,7 +18188,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T339 — state diagram / machine configuration / machine table / doubler</strong> (46 occurrences; routine priority)</summary>
+<summary><strong>T339 — state diagram / machine configuration / machine table / doubler</strong> (69 occurrences; routine priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -18049,6 +18238,29 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T339-OLP-0261-B012 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:97-125](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L97) | [mr/content/turing-machines/machines-computations/combining-machines.tex:99-128](../mr/content/turing-machines/machines-computations/combining-machines.tex#L99) | not yet paginated |
 | T339-OLP-0261-B013 | OLP-0261 ·  | [upstream/content/turing-machines/machines-computations/combining-machines.tex:127-150](../upstream/content/turing-machines/machines-computations/combining-machines.tex#L127) | [mr/content/turing-machines/machines-computations/combining-machines.tex:130-153](../mr/content/turing-machines/machines-computations/combining-machines.tex#L130) | not yet paginated |
 | T339-OLP-0265-B006 | OLP-0265 ·  | [upstream/content/turing-machines/undecidability/introduction.tex:21-31](../upstream/content/turing-machines/undecidability/introduction.tex#L21) | [mr/content/turing-machines/undecidability/introduction.tex:23-35](../mr/content/turing-machines/undecidability/introduction.tex#L23) | not yet paginated |
+| T339-OLP-0270-B005 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:12-17](../upstream/content/turing-machines/undecidability/representing-tms.tex#L12) | [mr/content/turing-machines/undecidability/representing-tms.tex:12-19](../mr/content/turing-machines/undecidability/representing-tms.tex#L12) | not yet paginated |
+| T339-OLP-0270-B008 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:31-43](../upstream/content/turing-machines/undecidability/representing-tms.tex#L31) | [mr/content/turing-machines/undecidability/representing-tms.tex:40-60](../mr/content/turing-machines/undecidability/representing-tms.tex#L40) | not yet paginated |
+| T339-OLP-0270-B011 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:58-74](../upstream/content/turing-machines/undecidability/representing-tms.tex#L58) | [mr/content/turing-machines/undecidability/representing-tms.tex:81-107](../mr/content/turing-machines/undecidability/representing-tms.tex#L81) | not yet paginated |
+| T339-OLP-0270-B012 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:76-112](../upstream/content/turing-machines/undecidability/representing-tms.tex#L76) | [mr/content/turing-machines/undecidability/representing-tms.tex:109-156](../mr/content/turing-machines/undecidability/representing-tms.tex#L109) | not yet paginated |
+| T339-OLP-0271-B007 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:29-42](../upstream/content/turing-machines/undecidability/verification.tex#L29) | [mr/content/turing-machines/undecidability/verification.tex:47-76](../mr/content/turing-machines/undecidability/verification.tex#L47) | not yet paginated |
+| T339-OLP-0271-B009 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:60-72](../upstream/content/turing-machines/undecidability/verification.tex#L60) | [mr/content/turing-machines/undecidability/verification.tex:119-142](../mr/content/turing-machines/undecidability/verification.tex#L119) | not yet paginated |
+| T339-OLP-0271-B010 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:74-77](../upstream/content/turing-machines/undecidability/verification.tex#L74) | [mr/content/turing-machines/undecidability/verification.tex:144-149](../mr/content/turing-machines/undecidability/verification.tex#L144) | not yet paginated |
+| T339-OLP-0271-B011 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:79-99](../upstream/content/turing-machines/undecidability/verification.tex#L79) | [mr/content/turing-machines/undecidability/verification.tex:151-184](../mr/content/turing-machines/undecidability/verification.tex#L151) | not yet paginated |
+| T339-OLP-0271-B012 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:101-105](../upstream/content/turing-machines/undecidability/verification.tex#L101) | [mr/content/turing-machines/undecidability/verification.tex:186-195](../mr/content/turing-machines/undecidability/verification.tex#L186) | not yet paginated |
+| T339-OLP-0271-B013 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:107-111](../upstream/content/turing-machines/undecidability/verification.tex#L107) | [mr/content/turing-machines/undecidability/verification.tex:197-205](../mr/content/turing-machines/undecidability/verification.tex#L197) | not yet paginated |
+| T339-OLP-0271-B014 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:113-115](../upstream/content/turing-machines/undecidability/verification.tex#L113) | [mr/content/turing-machines/undecidability/verification.tex:207-213](../mr/content/turing-machines/undecidability/verification.tex#L207) | not yet paginated |
+| T339-OLP-0271-B015 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:117-120](../upstream/content/turing-machines/undecidability/verification.tex#L117) | [mr/content/turing-machines/undecidability/verification.tex:215-223](../mr/content/turing-machines/undecidability/verification.tex#L215) | not yet paginated |
+| T339-OLP-0271-B016 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:122-125](../upstream/content/turing-machines/undecidability/verification.tex#L122) | [mr/content/turing-machines/undecidability/verification.tex:225-235](../mr/content/turing-machines/undecidability/verification.tex#L225) | not yet paginated |
+| T339-OLP-0271-B021 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:137-173](../upstream/content/turing-machines/undecidability/verification.tex#L137) | [mr/content/turing-machines/undecidability/verification.tex:248-298](../mr/content/turing-machines/undecidability/verification.tex#L248) | not yet paginated |
+| T339-OLP-0271-B022 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:175-181](../upstream/content/turing-machines/undecidability/verification.tex#L175) | [mr/content/turing-machines/undecidability/verification.tex:300-315](../mr/content/turing-machines/undecidability/verification.tex#L300) | not yet paginated |
+| T339-OLP-0271-B023 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:183-188](../upstream/content/turing-machines/undecidability/verification.tex#L183) | [mr/content/turing-machines/undecidability/verification.tex:317-331](../mr/content/turing-machines/undecidability/verification.tex#L317) | not yet paginated |
+| T339-OLP-0271-B026 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:201-234](../upstream/content/turing-machines/undecidability/verification.tex#L201) | [mr/content/turing-machines/undecidability/verification.tex:359-417](../mr/content/turing-machines/undecidability/verification.tex#L359) | not yet paginated |
+| T339-OLP-0271-B027 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:236-239](../upstream/content/turing-machines/undecidability/verification.tex#L236) | [mr/content/turing-machines/undecidability/verification.tex:419-425](../mr/content/turing-machines/undecidability/verification.tex#L419) | not yet paginated |
+| T339-OLP-0271-B028 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:241-244](../upstream/content/turing-machines/undecidability/verification.tex#L241) | [mr/content/turing-machines/undecidability/verification.tex:427-432](../mr/content/turing-machines/undecidability/verification.tex#L427) | not yet paginated |
+| T339-OLP-0271-B032 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:267-278](../upstream/content/turing-machines/undecidability/verification.tex#L267) | [mr/content/turing-machines/undecidability/verification.tex:468-499](../mr/content/turing-machines/undecidability/verification.tex#L468) | not yet paginated |
+| T339-OLP-0273-B007 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:29-51](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L29) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:51-104](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L51) | not yet paginated |
+| T339-OLP-0273-B008 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:53-66](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L53) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:106-147](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L106) | not yet paginated |
+| T339-OLP-0273-B009 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:68-87](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L68) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:149-188](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L149) | not yet paginated |
 
 **Chosen rendering/action:** अवस्था-आलेख / स्थितिवर्णन / यंत्र-सारणी / दुप्पट करणारे यंत्र
 
@@ -18100,7 +18312,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T341 — dedicated halting state / accepting state / rejecting state</strong> (10 occurrences; medium priority)</summary>
+<summary><strong>T341 — dedicated halting state / accepting state / rejecting state</strong> (11 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -18114,6 +18326,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T341-OLP-0260-B006 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:27-35](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L27) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:26-35](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L26) | not yet paginated |
 | T341-OLP-0260-B007 | OLP-0260 ·  | [upstream/content/turing-machines/machines-computations/disciplined-machines.tex:37-50](../upstream/content/turing-machines/machines-computations/disciplined-machines.tex#L37) | [mr/content/turing-machines/machines-computations/disciplined-machines.tex:37-54](../mr/content/turing-machines/machines-computations/disciplined-machines.tex#L37) | not yet paginated |
 | T341-OLP-0262-B007 | OLP-0262 ·  | [upstream/content/turing-machines/machines-computations/variants.tex:41-60](../upstream/content/turing-machines/machines-computations/variants.tex#L41) | [mr/content/turing-machines/machines-computations/variants.tex:42-61](../mr/content/turing-machines/machines-computations/variants.tex#L42) | not yet paginated |
+| T341-OLP-0270-B017 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:190-195](../upstream/content/turing-machines/undecidability/representing-tms.tex#L190) | [mr/content/turing-machines/undecidability/representing-tms.tex:288-297](../mr/content/turing-machines/undecidability/representing-tms.tex#L288) | not yet paginated |
 
 **Chosen rendering/action:** खास थांबण्याची अवस्था / स्वीकार अवस्था / नकार अवस्था
 
@@ -18199,7 +18412,7 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 </details>
 
 <details>
-<summary><strong>T345 — decision problem / first-order validity decision problem / Church–Turing theorem</strong> (6 occurrences; medium priority)</summary>
+<summary><strong>T345 — decision problem / first-order validity decision problem / Church–Turing theorem</strong> (11 occurrences; medium priority)</summary>
 
 | Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
 |---|---|---|---|---|
@@ -18209,6 +18422,11 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 | T345-OLP-0269-B006 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:17-26](../upstream/content/turing-machines/undecidability/decision-problem.tex#L17) | [mr/content/turing-machines/undecidability/decision-problem.tex:19-34](../mr/content/turing-machines/undecidability/decision-problem.tex#L19) | not yet paginated |
 | T345-OLP-0269-B007 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:28-36](../upstream/content/turing-machines/undecidability/decision-problem.tex#L28) | [mr/content/turing-machines/undecidability/decision-problem.tex:36-51](../mr/content/turing-machines/undecidability/decision-problem.tex#L36) | not yet paginated |
 | T345-OLP-0269-B008 | OLP-0269 ·  | [upstream/content/turing-machines/undecidability/decision-problem.tex:38-48](../upstream/content/turing-machines/undecidability/decision-problem.tex#L38) | [mr/content/turing-machines/undecidability/decision-problem.tex:53-71](../mr/content/turing-machines/undecidability/decision-problem.tex#L53) | not yet paginated |
+| T345-OLP-0272-B004 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:9-10](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L9) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:9-10](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L9) | not yet paginated |
+| T345-OLP-0272-B005 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-18](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L12) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-21](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L12) | not yet paginated |
+| T345-OLP-0272-B006 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:20-37](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L20) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:23-61](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L23) | not yet paginated |
+| T345-OLP-0273-B005 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:12-20](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L12) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:12-31](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L12) | not yet paginated |
+| T345-OLP-0273-B019 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:223-227](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L223) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:417-425](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L417) | not yet paginated |
 
 **Chosen rendering/action:** निर्णय समस्या / प्रथम-क्रम वैधतेची निर्णय समस्या / चर्च–ट्यूरिंग प्रमेय
 
@@ -18273,6 +18491,99 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** medium; source-defined fixed-input variant with attested component vocabulary; expert-reviewable; open to correction.
 
 **Please double-check:** Does तीन-रेघांची make clear that every candidate machine receives one fixed input consisting of three strokes?
+
+</details>
+
+<details>
+<summary><strong>T349 — first-order representation of a Turing-machine run / time-indexed state and tape-symbol predicates</strong> (26 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T349-OLP-0270-B004 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:9-10](../upstream/content/turing-machines/undecidability/representing-tms.tex#L9) | [mr/content/turing-machines/undecidability/representing-tms.tex:9-10](../mr/content/turing-machines/undecidability/representing-tms.tex#L9) | not yet paginated |
+| T349-OLP-0270-B005 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:12-17](../upstream/content/turing-machines/undecidability/representing-tms.tex#L12) | [mr/content/turing-machines/undecidability/representing-tms.tex:12-19](../mr/content/turing-machines/undecidability/representing-tms.tex#L12) | not yet paginated |
+| T349-OLP-0270-B006 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:19-23](../upstream/content/turing-machines/undecidability/representing-tms.tex#L19) | [mr/content/turing-machines/undecidability/representing-tms.tex:21-29](../mr/content/turing-machines/undecidability/representing-tms.tex#L21) | not yet paginated |
+| T349-OLP-0270-B007 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:25-29](../upstream/content/turing-machines/undecidability/representing-tms.tex#L25) | [mr/content/turing-machines/undecidability/representing-tms.tex:31-38](../mr/content/turing-machines/undecidability/representing-tms.tex#L31) | not yet paginated |
+| T349-OLP-0270-B008 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:31-43](../upstream/content/turing-machines/undecidability/representing-tms.tex#L31) | [mr/content/turing-machines/undecidability/representing-tms.tex:40-60](../mr/content/turing-machines/undecidability/representing-tms.tex#L40) | not yet paginated |
+| T349-OLP-0270-B009 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:45-47](../upstream/content/turing-machines/undecidability/representing-tms.tex#L45) | [mr/content/turing-machines/undecidability/representing-tms.tex:62-65](../mr/content/turing-machines/undecidability/representing-tms.tex#L62) | not yet paginated |
+| T349-OLP-0270-B010 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:49-56](../upstream/content/turing-machines/undecidability/representing-tms.tex#L49) | [mr/content/turing-machines/undecidability/representing-tms.tex:67-79](../mr/content/turing-machines/undecidability/representing-tms.tex#L67) | not yet paginated |
+| T349-OLP-0270-B011 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:58-74](../upstream/content/turing-machines/undecidability/representing-tms.tex#L58) | [mr/content/turing-machines/undecidability/representing-tms.tex:81-107](../mr/content/turing-machines/undecidability/representing-tms.tex#L81) | not yet paginated |
+| T349-OLP-0270-B012 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:76-112](../upstream/content/turing-machines/undecidability/representing-tms.tex#L76) | [mr/content/turing-machines/undecidability/representing-tms.tex:109-156](../mr/content/turing-machines/undecidability/representing-tms.tex#L109) | not yet paginated |
+| T349-OLP-0270-B013 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:114-137](../upstream/content/turing-machines/undecidability/representing-tms.tex#L114) | [mr/content/turing-machines/undecidability/representing-tms.tex:158-198](../mr/content/turing-machines/undecidability/representing-tms.tex#L158) | not yet paginated |
+| T349-OLP-0270-B014 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:139-156](../upstream/content/turing-machines/undecidability/representing-tms.tex#L139) | [mr/content/turing-machines/undecidability/representing-tms.tex:200-231](../mr/content/turing-machines/undecidability/representing-tms.tex#L200) | not yet paginated |
+| T349-OLP-0270-B015 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:158-178](../upstream/content/turing-machines/undecidability/representing-tms.tex#L158) | [mr/content/turing-machines/undecidability/representing-tms.tex:233-270](../mr/content/turing-machines/undecidability/representing-tms.tex#L233) | not yet paginated |
+| T349-OLP-0270-B016 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:180-188](../upstream/content/turing-machines/undecidability/representing-tms.tex#L180) | [mr/content/turing-machines/undecidability/representing-tms.tex:272-286](../mr/content/turing-machines/undecidability/representing-tms.tex#L272) | not yet paginated |
+| T349-OLP-0270-B017 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:190-195](../upstream/content/turing-machines/undecidability/representing-tms.tex#L190) | [mr/content/turing-machines/undecidability/representing-tms.tex:288-297](../mr/content/turing-machines/undecidability/representing-tms.tex#L288) | not yet paginated |
+| T349-OLP-0270-B018 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:197-200](../upstream/content/turing-machines/undecidability/representing-tms.tex#L197) | [mr/content/turing-machines/undecidability/representing-tms.tex:299-303](../mr/content/turing-machines/undecidability/representing-tms.tex#L299) | not yet paginated |
+| T349-OLP-0270-B020 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:206-209](../upstream/content/turing-machines/undecidability/representing-tms.tex#L206) | [mr/content/turing-machines/undecidability/representing-tms.tex:309-313](../mr/content/turing-machines/undecidability/representing-tms.tex#L309) | not yet paginated |
+| T349-OLP-0271-B004 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:9-10](../upstream/content/turing-machines/undecidability/verification.tex#L9) | [mr/content/turing-machines/undecidability/verification.tex:9-10](../mr/content/turing-machines/undecidability/verification.tex#L9) | not yet paginated |
+| T349-OLP-0271-B005 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:12-17](../upstream/content/turing-machines/undecidability/verification.tex#L12) | [mr/content/turing-machines/undecidability/verification.tex:12-21](../mr/content/turing-machines/undecidability/verification.tex#L12) | not yet paginated |
+| T349-OLP-0271-B007 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:29-42](../upstream/content/turing-machines/undecidability/verification.tex#L29) | [mr/content/turing-machines/undecidability/verification.tex:47-76](../mr/content/turing-machines/undecidability/verification.tex#L47) | not yet paginated |
+| T349-OLP-0271-B008 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:44-58](../upstream/content/turing-machines/undecidability/verification.tex#L44) | [mr/content/turing-machines/undecidability/verification.tex:78-117](../mr/content/turing-machines/undecidability/verification.tex#L78) | not yet paginated |
+| T349-OLP-0271-B012 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:101-105](../upstream/content/turing-machines/undecidability/verification.tex#L101) | [mr/content/turing-machines/undecidability/verification.tex:186-195](../mr/content/turing-machines/undecidability/verification.tex#L186) | not yet paginated |
+| T349-OLP-0271-B013 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:107-111](../upstream/content/turing-machines/undecidability/verification.tex#L107) | [mr/content/turing-machines/undecidability/verification.tex:197-205](../mr/content/turing-machines/undecidability/verification.tex#L197) | not yet paginated |
+| T349-OLP-0271-B033 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:281-285](../upstream/content/turing-machines/undecidability/verification.tex#L281) | [mr/content/turing-machines/undecidability/verification.tex:502-511](../mr/content/turing-machines/undecidability/verification.tex#L502) | not yet paginated |
+| T349-OLP-0271-B035 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:292-320](../upstream/content/turing-machines/undecidability/verification.tex#L292) | [mr/content/turing-machines/undecidability/verification.tex:520-574](../mr/content/turing-machines/undecidability/verification.tex#L520) | not yet paginated |
+| T349-OLP-0273-B010 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:89-97](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L89) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:190-208](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L190) | not yet paginated |
+| T349-OLP-0273-B011 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L99) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L210) | not yet paginated |
+
+**Chosen rendering/action:** ट्यूरिंग यंत्राच्या चालक्रमाचे प्रथम-क्रम निरूपण / पायरीक्रमांकासह अवस्था आणि फीत-चिन्ह विधेये
+
+**Confidence/status:** medium; attested logic and machine components under an exact source-defined encoding; expert-reviewable; open to correction.
+
+**Please double-check:** Do the Marathi descriptions keep the predicate arguments distinct as tape position first and execution step second?
+
+</details>
+
+<details>
+<summary><strong>T350 — tape frame condition A(x,y) / unchanged nonwritten squares</strong> (8 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T350-OLP-0270-B013 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:114-137](../upstream/content/turing-machines/undecidability/representing-tms.tex#L114) | [mr/content/turing-machines/undecidability/representing-tms.tex:158-198](../mr/content/turing-machines/undecidability/representing-tms.tex#L158) | not yet paginated |
+| T350-OLP-0270-B014 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:139-156](../upstream/content/turing-machines/undecidability/representing-tms.tex#L139) | [mr/content/turing-machines/undecidability/representing-tms.tex:200-231](../mr/content/turing-machines/undecidability/representing-tms.tex#L200) | not yet paginated |
+| T350-OLP-0270-B015 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:158-178](../upstream/content/turing-machines/undecidability/representing-tms.tex#L158) | [mr/content/turing-machines/undecidability/representing-tms.tex:233-270](../mr/content/turing-machines/undecidability/representing-tms.tex#L233) | not yet paginated |
+| T350-OLP-0271-B021 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:137-173](../upstream/content/turing-machines/undecidability/verification.tex#L137) | [mr/content/turing-machines/undecidability/verification.tex:248-298](../mr/content/turing-machines/undecidability/verification.tex#L248) | not yet paginated |
+| T350-OLP-0271-B022 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:175-181](../upstream/content/turing-machines/undecidability/verification.tex#L175) | [mr/content/turing-machines/undecidability/verification.tex:300-315](../mr/content/turing-machines/undecidability/verification.tex#L300) | not yet paginated |
+| T350-OLP-0271-B026 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:201-234](../upstream/content/turing-machines/undecidability/verification.tex#L201) | [mr/content/turing-machines/undecidability/verification.tex:359-417](../mr/content/turing-machines/undecidability/verification.tex#L359) | not yet paginated |
+| T350-OLP-0271-B029 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:246-250](../upstream/content/turing-machines/undecidability/verification.tex#L246) | [mr/content/turing-machines/undecidability/verification.tex:434-443](../mr/content/turing-machines/undecidability/verification.tex#L434) | not yet paginated |
+| T350-OLP-0273-B011 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L99) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L210) | not yet paginated |
+
+**Chosen rendering/action:** फितीवरील इतर घरे अपरिवर्तित ठेवण्याची अट / न लिहिलेल्या घरांची चिन्हे जशीच्या तशी राखणे
+
+**Confidence/status:** medium; source-defined frame formula with documented one-argument correction; expert-reviewable; open to correction.
+
+**Please double-check:** Does the phrase make clear that the excluded square is the one overwritten during the transition, especially for a left move?
+
+</details>
+
+<details>
+<summary><strong>T351 — finite-model satisfiability / finite validity / Trakhtenbrot's theorem</strong> (17 occurrences; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| T351-OLP-0273-B004 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:9-10](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L9) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:9-10](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L9) | not yet paginated |
+| T351-OLP-0273-B006 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:22-27](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L22) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:33-49](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L33) | not yet paginated |
+| T351-OLP-0273-B007 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:29-51](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L29) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:51-104](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L51) | not yet paginated |
+| T351-OLP-0273-B008 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:53-66](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L53) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:106-147](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L106) | not yet paginated |
+| T351-OLP-0273-B009 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:68-87](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L68) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:149-188](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L149) | not yet paginated |
+| T351-OLP-0273-B011 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L99) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L210) | not yet paginated |
+| T351-OLP-0273-B012 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:165-168](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L165) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:299-304](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L299) | not yet paginated |
+| T351-OLP-0273-B013 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:170-185](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L170) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:306-331](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L306) | not yet paginated |
+| T351-OLP-0273-B014 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:187-190](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L187) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:333-338](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L333) | not yet paginated |
+| T351-OLP-0273-B015 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:192-195](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L192) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:340-346](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L340) | not yet paginated |
+| T351-OLP-0273-B016 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:197-201](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L197) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:348-362](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L348) | not yet paginated |
+| T351-OLP-0273-B017 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:203-215](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L203) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:364-402](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L364) | not yet paginated |
+| T351-OLP-0273-B018 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:217-221](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L217) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:404-415](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L404) | not yet paginated |
+| T351-OLP-0273-B019 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:223-227](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L223) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:417-425](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L417) | not yet paginated |
+| T351-OLP-0273-B020 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:229-237](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L229) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:427-450](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L427) | not yet paginated |
+| T351-OLP-0273-B021 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:239-243](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L239) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:452-464](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L452) | not yet paginated |
+| T351-OLP-0273-B023 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:249-257](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L249) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:470-489](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L470) | not yet paginated |
+
+**Chosen rendering/action:** सांत प्रतिरूपात पूर्ततायोग्यता / सांत वैधता / ट्राख्टेनब्रोटचे प्रमेय
+
+**Confidence/status:** medium; source-defined finite-model sense with established model, satisfiability and decidability components; proper-name transliteration expert-reviewable; open to correction.
+
+**Please double-check:** Does the explicit प्रतिरूपात phrase prevent confusion between existence of one finite model and satisfiability of every finite subset in compactness?
 
 </details>
 
@@ -20733,5 +21044,215 @@ A term row gives the exact source and target block lines. Its PDF locator is the
 **Confidence/status:** high; the mismatch is confirmed by the earlier explicit four-clause definition; the proof needs only the first-square consequence and its principal contradiction remains valid; open to correction.
 
 **Please double-check:** Does the Marathi infer first-square halting from the full disciplined normal form rather than defining that normal form by just one condition?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-009 — confirmed-frozen-source-left-transition-frame-excludes-wrong-square</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-009-OLP-0270 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:140-145](../upstream/content/turing-machines/undecidability/representing-tms.tex#L140) | [mr/content/turing-machines/undecidability/representing-tms.tex:203-228](../mr/content/turing-machines/undecidability/representing-tms.tex#L203) | not yet paginated |
+
+**Chosen rendering/action:** Change only the first left-move consequent from A(x,y) to A(x',y) in Marathi; keep the separate square-zero branch A(0,y). Explain the written-square exclusion in adjacent prose and reader note OLTUR-009. Document the one-phrase QA projection back to frozen source.
+
+**Confidence/status:** high; confirmed by substitution into the source definition of A and by the prose identifying x+1 as the written square; later verification must use the corrected frame argument consistently; open to correction.
+
+**Please double-check:** Does the corrected first left-move branch exclude exactly the square written at x', while the square-zero branch and right/stay branches retain their original frame arguments?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-010 — confirmed-frozen-source-open-formula-called-sentence</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-010-OLP-0270 | OLP-0270 ·  | [upstream/content/turing-machines/undecidability/representing-tms.tex:114-121](../upstream/content/turing-machines/undecidability/representing-tms.tex#L114) | [mr/content/turing-machines/undecidability/representing-tms.tex:160-171](../mr/content/turing-machines/undecidability/representing-tms.tex#L160) | not yet paginated |
+
+**Chosen rendering/action:** Preserve the source formula and glossary token, then add bounded Marathi prose and reader note OLTUR-010 distinguishing the open formula template from the universally quantified transition sentence.
+
+**Confidence/status:** high; confirmed by direct inspection of the displayed quantifier and free occurrences of x and y; no change to the mathematical formula is required; open to correction.
+
+**Please double-check:** Does the note make clear that x and y are free in the frame template and become bound only in the transition axiom?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-011 — confirmed-frozen-source-configuration-lemma-reachability-scope-and-induction-base-gap</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-011-OLP-0271 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:105-125,259-280](../upstream/content/turing-machines/undecidability/verification.tex#L105) | [mr/content/turing-machines/undecidability/verification.tex:194-226,467-490](../mr/content/turing-machines/undecidability/verification.tex#L194) | not yet paginated |
+
+**Chosen rendering/action:** State the lemma for every reached n-step configuration, use n>=0 in the inductive step, and qualify the universal conclusions accordingly. Keep the initial n=0 configuration and terminal n=k configuration in scope. Add reader note OLTUR-011 and bounded projection for the changed inequality.
+
+**Confidence/status:** high; the mismatch is confirmed by the lemma and its later application; the correction changes the stated induction scope, not the machine's transition semantics; open to correction.
+
+**Please double-check:** Does the lemma include exactly every reached configuration, especially n=0 and the terminal configuration at n=k, while induction advances only from nonterminal configurations?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-012 — confirmed-frozen-source-halting-pair-notation-switch</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-012-OLP-0271 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:78-96](../upstream/content/turing-machines/undecidability/verification.tex#L78) | [mr/content/turing-machines/undecidability/verification.tex:150-185](../mr/content/turing-machines/undecidability/verification.tex#L150) | not yet paginated |
+
+**Chosen rendering/action:** Use the selected (q,sigma) pair consistently and restore the object-language marker in the premise of the entailment. Add reader note OLTUR-012 and bounded projections for the tuple and premise.
+
+**Confidence/status:** high; confirmed by the proof's immediately preceding existential witnesses and the displayed language definition; the existential conclusion itself remains valid; open to correction.
+
+**Please double-check:** Does the corrected premise name the same state-symbol pair already chosen with undefined transition, using the defined object-language predicate?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-013 — confirmed-frozen-source-overview-notation-slips</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-013-OLP-0271 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:37-54](../upstream/content/turing-machines/undecidability/verification.tex#L37) | [mr/content/turing-machines/undecidability/verification.tex:69-117](../mr/content/turing-machines/undecidability/verification.tex#L69) | not yet paginated |
+
+**Chosen rendering/action:** Use !T(M,w) for the encoded sentence and M for the running machine in Marathi, preserve all other symbols, and add reader note OLTUR-013 with two bounded QA projections.
+
+**Confidence/status:** high; confirmed by neighboring notation and the explicit construction of the actual-run M structure; open to correction.
+
+**Please double-check:** Do the corrected overview symbols refer to the same encoded sentence and machine as the surrounding formulas?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-014 — confirmed-frozen-source-left-frame-proof-repeats-wrong-excluded-square</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-014-OLP-0271 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:201-220](../upstream/content/turing-machines/undecidability/verification.tex#L201) | [mr/content/turing-machines/undecidability/verification.tex:344-401](../mr/content/turing-machines/undecidability/verification.tex#L344) | not yet paginated |
+
+**Chosen rendering/action:** Use A(x',y) and A(l',n) in the first left-move branch, preserving A(0,y) in the zero-boundary branch. Add adjacent explanation and reader note OLTUR-014 with the two exact projections.
+
+**Confidence/status:** high; confirmed by direct substitution into the corrected OLP-0270 rule; the branch argument remains otherwise schematic; open to correction.
+
+**Please double-check:** Does the proof's frame argument match the square written in each left-move branch?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-015 — confirmed-frozen-source-post-transition-tape-symbol-notation-ambiguous</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-015-OLP-0271 | OLP-0271 ·  | [upstream/content/turing-machines/undecidability/verification.tex:163-178,222-237](../upstream/content/turing-machines/undecidability/verification.tex#L163) | [mr/content/turing-machines/undecidability/verification.tex:270-305,392-413](../mr/content/turing-machines/undecidability/verification.tex#L270) | not yet paginated |
+
+**Chosen rendering/action:** Mark the symbols in the next-configuration row with a plus superscript and explain that the written square takes the new symbol while all other squares retain their old symbols. Preserve the explicit write clause and all square/time coordinates. Add reader note OLTUR-015 and bounded projections back to the frozen unmarked endpoints.
+
+**Confidence/status:** high; the frozen ellipsis could have intended an implicit reindexing, but it is not stated and the preceding definition fixes sigma_i at time n; the Marathi makes the intended next-state reading explicit; open to correction.
+
+**Please double-check:** Does the plus-marked symbol family represent the exact next tape, with the newly written symbol at m and inherited symbols elsewhere?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-016 — confirmed-frozen-source-object-language-sentence-marker-slip</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-016-OLP-0272 | OLP-0272 ·  | [upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:44-48](../upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L44) | [mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:73-80](../mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex#L73) | not yet paginated |
+
+**Chosen rendering/action:** Write !B at the first input mention in Marathi, preserve the later negation and tape operation, add adjacent reader note OLTUR-016 and a one-phrase bounded projection to the frozen B notation.
+
+**Confidence/status:** high; confirmed by the adjacent move instruction and theorem-level !B notation; the correction changes one marker only; open to correction.
+
+**Please double-check:** Does the corollary consistently use the same input sentence before and after prefixing its negation?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-017 — confirmed-frozen-source-finite-model-domain-can-omit-final-head-square</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-017-OLP-0273 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:31-50,169-184](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L31) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:58-103,300-329](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L58) | not yet paginated |
+
+**Chosen rendering/action:** Choose n as the greater of k+1 and input length plus one in the Marathi prose and displayed maximum, retaining the capped-successor and terminal-order formulas. Add adjacent reader note OLTUR-017 and a bounded projection of the displayed maximum to the frozen formula.
+
+**Confidence/status:** high; both counterexamples follow from the earlier initial head square and blank-tail axiom together with the displayed capped order; the corrected cap is strictly beyond the last input square and contains every head position through step k; open to correction.
+
+**Please double-check:** Does the finite domain include the furthest possible head position and put the capped element strictly beyond the last initially occupied input square?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-018 — confirmed-frozen-source-single-state-example-notation-slips</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-018-OLP-0273 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:68-73](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L68) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:143-164](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L143) | not yet paginated |
+
+**Chosen rendering/action:** Use q_0 as the transition destination and M-double-prime for both successor values in Marathi. Add reader note OLTUR-018 and two narrow QA projections.
+
+**Confidence/status:** high; confirmed by the same exercise's explicit one-state and M-double-prime definitions; open to correction.
+
+**Please double-check:** Does the finite countermodel exercise consistently name its only state and its own successor function?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-019 — confirmed-frozen-source-finite-transition-left-branch-frame-and-fresh-time-omissions</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-019-OLP-0273 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:109-126](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L109) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:229-244](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L229) | not yet paginated |
+
+**Chosen rendering/action:** Use A(x',y) as in OLTUR-009 and conjoin B(y') to the first left-move consequent. Preserve the zero-boundary branch and add adjacent reader note OLTUR-019 with a bounded formula projection.
+
+**Confidence/status:** high; confirmed by the three adjacent transition formulas, the explicit following prose and the earlier frame definition; open to correction.
+
+**Please double-check:** Does every transition direction now impose a fresh next-time condition and exclude exactly its written tape square?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-020 — confirmed-frozen-source-finite-model-lemma-proof-and-exercise-formula-slips</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-020-OLP-0273 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:180-189](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L180) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:319-336](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L319) | not yet paginated |
+
+**Chosen rendering/action:** Use the exact lemma conjunction T'(M,w) and !E(M,w) in both proof and exercise, with reader note OLTUR-020 and two local projections.
+
+**Confidence/status:** high; confirmed by direct comparison with the immediately preceding lemma and T' definition; open to correction.
+
+**Please double-check:** Do the proof and assigned exercise now verify exactly the formula asserted by the lemma?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-021 — confirmed-frozen-source-contrapositive-assumes-wrong-run-theory</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-021-OLP-0273 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:194-202](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L194) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:344-361](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L344) | not yet paginated |
+
+**Chosen rendering/action:** Assume a model of T'(M,w) and !E(M,w) in the Marathi proof, keep the rest of the contrapositive, and add reader note OLTUR-021 and a one-phrase projection.
+
+**Confidence/status:** high; confirmed by the lemma hypothesis and following T' entailment; open to correction.
+
+**Please double-check:** Does the model assumed for contradiction satisfy the strengthened theory used to force distinct time numerals?
+
+</details>
+
+<details>
+<summary><strong>OLTUR-022 — confirmed-frozen-source-fresh-time-base-not-axiomatized</strong> (1 occurrence; medium priority)</summary>
+
+| Occurrence | Unit and section | Exact source scope | Exact Marathi scope | PDF page(s) |
+|---|---|---|---|---|
+| OLTUR-022-OLP-0273 | OLP-0273 ·  | [upstream/content/turing-machines/undecidability/trakhtenbrot.tex:202-220](../upstream/content/turing-machines/undecidability/trakhtenbrot.tex#L202) | [mr/content/turing-machines/undecidability/trakhtenbrot.tex:363-412](../mr/content/turing-machines/undecidability/trakhtenbrot.tex#L363) | not yet paginated |
+
+**Chosen rendering/action:** Qualify the combined configuration-and-fresh-time claim and its exercise to n after at least one step, while preserving all displayed formulas and the infinite-domain conclusion. Add reader note OLTUR-022; the change is prose-only and requires no formula projection.
+
+**Confidence/status:** high; confirmed by inspecting the enumerated initial axioms and all B occurrences; positive times suffice for infinitely many pairwise distinct numeral values; open to correction.
+
+**Please double-check:** Does the corrected argument use B(n) only for positive reached times while still distinguishing arbitrarily many numeral values?
 
 </details>

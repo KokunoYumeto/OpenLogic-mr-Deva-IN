@@ -1,0 +1,89 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0271",
+  "method": "Same-agent bilingual close reading against all 36 frozen source blocks; reverse paraphrase of both proof directions, the configuration induction and both non-stay transition cases; exact formula, symbol, macro and glossary parity after nine documented bounded source-correction projections. No independent human or native-speaker review is claimed.",
+  "scope": "Verification that the first-order run sentence entails a halting sentence exactly when the represented Turing machine halts on its input.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "reverse_paraphrase": "The forward direction builds an entailment from the run description to each reached configuration by induction, then obtains the existential halting sentence at a terminal configuration. The converse constructs the standard-natural-number model of the actual run and extracts a halting state-symbol pair from validity.",
+      "checks": "Validity is distinguished from an individual derivation; both implication directions and the !T/!E notation are preserved. OLTUR-013 corrects one dropped marker and one wrong machine letter in the frozen overview."
+    },
+    {
+      "blocks": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "C(M,w,n) records the state and scanned square at step n, each tape symbol through k, and blanks beyond k. If the reached configuration has undefined transition for its scanned pair, C entails E. The configuration lemma must include every reached step, including the terminal one.",
+      "checks": "Tape position remains the first predicate argument and time the second. OLTUR-012 reuses the selected (q,sigma) witness and restores the object-language S marker. OLTUR-011 corrects the frozen lemma's terminal-configuration scope."
+    },
+    {
+      "blocks": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "reverse_paraphrase": "The initial configuration follows from T's initial clauses. From a reached nonterminal configuration at n, one of the right, left or stay instructions supplies the n+1 transition; the induction starts at n=0.",
+      "checks": "The three transition directions and state-symbol roles are unchanged. The n>=0 bound restores the 0-to-1 step omitted by the source's n>0 line, while the step remains conditional on a nonterminal current configuration. The adopted गणितीय विगमन terminology is used."
+    },
+    {
+      "blocks": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "reverse_paraphrase": "For a right move the old head square m gets the written symbol, the head moves to m+1 and all other tape squares persist. If the head reaches a new rightmost square k+1, that square is blank and the universal blank-tail clause extends beyond it.",
+      "checks": "The plus superscript denotes next-time tape symbols and is explained at the written square; the original separate write clause remains. The m<k and m=k branches, order axiom, transitivity and new k+1 square are preserved. OLTUR-015 documents the reindexing clarification."
+    },
+    {
+      "blocks": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "reverse_paraphrase": "For a positive-position left move, the old head is l+1, it writes at that old square and the head moves to l; the frame therefore excludes l+1. At square zero the special branch keeps the head at zero and excludes zero. The stay case and two derivations remain exercises.",
+      "checks": "A(x',y) and A(l',n) agree with OLTUR-009's preceding rule; the zero-boundary A(0,y) is unchanged. The q_i/q_j boundary names are explained as the old and new states. Next-symbol plus notation is used consistently and both exercises retain their exact formulas."
+    },
+    {
+      "blocks": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "reverse_paraphrase": "If M halts after k steps, the reached terminal C(M,w,k) follows from T and entails E, hence the implication is valid. Conversely, interpret 0, successor, order and the two predicate families on the actual natural-number run. Validity gives E in that structure, so some actual reached state and scanned symbol have undefined transition.",
+      "checks": "The terminal configuration is within the corrected configuration lemma's scope. The two-place state and tape predicates, natural-number domain and existential witnesses m,n remain source-exact."
+    }
+  ],
+  "source_observations": [
+    "OLTUR-011: the frozen configuration lemma excludes its terminal application and its induction starts at n>0; the Marathi states reached-configuration scope and n>=0.",
+    "OLTUR-012: the frozen halting proof changes the selected pair to unexplained primed variables and drops an object-language marker; the Marathi uses the selected pair and marker.",
+    "OLTUR-013: the frozen overview drops ! from !T(M,w) once and calls M by T once; the Marathi keeps the established symbols.",
+    "OLTUR-014: the frozen left-move verification repeats A(x,y) and A(l,n); the Marathi uses the written square x'=l'=m, matching OLTUR-009.",
+    "OLTUR-015: the frozen next-configuration rows appear to reuse old tape symbols at the overwritten square; the Marathi marks next-time symbols with a plus superscript and explains the write-site substitution."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The corrected chapter has not yet been assembled into a built coherent reader.",
+    "The frozen source leaves the stay-move case and two derivations as exercises, so this translation does not supply those missing proofs."
+  ]
+}

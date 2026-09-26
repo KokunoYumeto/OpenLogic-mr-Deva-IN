@@ -1,6 +1,6 @@
 # Marathi OpenLogic translation decisions — full applied index
 
-Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 occurrences.
+Coverage: 270/722 source units through OLP-0273; 529 applied decisions; 13,843 occurrences.
 
 ## T001 — set
 
@@ -1809,6 +1809,24 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T009-OLP-0269-B006` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:17-26` | `mr/content/turing-machines/undecidability/decision-problem.tex:19-34` | pending |
 | `T009-OLP-0269-B007` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:28-36` | `mr/content/turing-machines/undecidability/decision-problem.tex:36-51` | pending |
 | `T009-OLP-0269-B008` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:38-48` | `mr/content/turing-machines/undecidability/decision-problem.tex:53-71` | pending |
+| `T009-OLP-0271-B005` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:12-17` | `mr/content/turing-machines/undecidability/verification.tex:12-21` | pending |
+| `T009-OLP-0271-B006` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:19-27` | `mr/content/turing-machines/undecidability/verification.tex:23-45` | pending |
+| `T009-OLP-0271-B007` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:29-42` | `mr/content/turing-machines/undecidability/verification.tex:47-76` | pending |
+| `T009-OLP-0271-B008` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:44-58` | `mr/content/turing-machines/undecidability/verification.tex:78-117` | pending |
+| `T009-OLP-0271-B031` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:261-265` | `mr/content/turing-machines/undecidability/verification.tex:460-466` | pending |
+| `T009-OLP-0271-B032` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:267-278` | `mr/content/turing-machines/undecidability/verification.tex:468-499` | pending |
+| `T009-OLP-0271-B033` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:281-285` | `mr/content/turing-machines/undecidability/verification.tex:502-511` | pending |
+| `T009-OLP-0271-B034` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:287-290` | `mr/content/turing-machines/undecidability/verification.tex:513-518` | pending |
+| `T009-OLP-0271-B035` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:292-320` | `mr/content/turing-machines/undecidability/verification.tex:520-574` | pending |
+| `T009-OLP-0272-B005` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-18` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-21` | pending |
+| `T009-OLP-0272-B006` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:20-37` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:23-61` | pending |
+| `T009-OLP-0272-B008` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:43-47` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-80` | pending |
+| `T009-OLP-0272-B010` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:54-58` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:95-108` | pending |
+| `T009-OLP-0272-B011` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:60-68` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:110-127` | pending |
+| `T009-OLP-0272-B012` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-77` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:129-143` | pending |
+| `T009-OLP-0272-B013` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:79-89` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:145-170` | pending |
+| `T009-OLP-0273-B005` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:12-20` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:12-31` | pending |
+| `T009-OLP-0273-B006` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:22-27` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:33-49` | pending |
 
 ## T010 — truth / truth value
 
@@ -2374,6 +2392,16 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T015-OLP-0157-B012` | `OLP-0157` | 15.8 मुक्त चल आणि वाक्य | `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | `mr/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:43-46` | 205–206 |
 | `T015-OLP-0213-B017` | `OLP-0213` |  | `upstream/content/computability/recursive-functions/pr-functions.tex:125-131` | `mr/content/computability/recursive-functions/pr-functions.tex:123-128` | pending |
 | `T015-OLP-0216-B020` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:151-153` | `mr/content/computability/recursive-functions/examples.tex:152-154` | pending |
+| `T015-OLP-0270-B019` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:202-204` | `mr/content/turing-machines/undecidability/representing-tms.tex:305-307` | pending |
+| `T015-OLP-0271-B006` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:19-27` | `mr/content/turing-machines/undecidability/verification.tex:23-45` | pending |
+| `T015-OLP-0271-B028` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:241-244` | `mr/content/turing-machines/undecidability/verification.tex:427-432` | pending |
+| `T015-OLP-0271-B029` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:246-250` | `mr/content/turing-machines/undecidability/verification.tex:434-443` | pending |
+| `T015-OLP-0271-B030` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:252-258` | `mr/content/turing-machines/undecidability/verification.tex:445-457` | pending |
+| `T015-OLP-0272-B011` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:60-68` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:110-127` | pending |
+| `T015-OLP-0272-B013` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:79-89` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:145-170` | pending |
+| `T015-OLP-0273-B021` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:239-243` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:452-464` | pending |
+| `T015-OLP-0273-B022` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:245-247` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:466-468` | pending |
+| `T015-OLP-0273-B023` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:249-257` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:470-489` | pending |
 
 ## T016 — if and only if
 
@@ -3302,6 +3330,13 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T027-OLP-0193-B016` | `OLP-0193` | 20.2 अंकगणिताची मानक प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:132-137` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:131-136` | 251–253 |
 | `T027-OLP-0193-B017` | `OLP-0193` | 20.2 अंकगणिताची मानक प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:139-150` | `mr/content/model-theory/models-of-arithmetic/standard-models.tex:138-150` | 251–253 |
 | `T027-OLP-0194-B009` | `OLP-0194` | 20.3 अमानक प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-47` | `mr/content/model-theory/models-of-arithmetic/non-standard-models.tex:39-46` | 253–254 |
+| `T027-OLP-0270-B020` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:206-209` | `mr/content/turing-machines/undecidability/representing-tms.tex:309-313` | pending |
+| `T027-OLP-0271-B006` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:19-27` | `mr/content/turing-machines/undecidability/verification.tex:23-45` | pending |
+| `T027-OLP-0271-B007` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:29-42` | `mr/content/turing-machines/undecidability/verification.tex:47-76` | pending |
+| `T027-OLP-0271-B014` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:113-115` | `mr/content/turing-machines/undecidability/verification.tex:207-213` | pending |
+| `T027-OLP-0271-B015` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:117-120` | `mr/content/turing-machines/undecidability/verification.tex:215-223` | pending |
+| `T027-OLP-0271-B016` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:122-125` | `mr/content/turing-machines/undecidability/verification.tex:225-235` | pending |
+| `T027-OLP-0271-B021` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:137-173` | `mr/content/turing-machines/undecidability/verification.tex:248-298` | pending |
 
 ## T028 — continuum
 
@@ -3450,6 +3485,15 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T029-OLP-0195-B010` | `OLP-0195` | 20.4 Q ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:121-131` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:124-134` | 254–256 |
 | `T029-OLP-0195-B012` | `OLP-0195` | 20.4 Q ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:176-185` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:182-192` | 254–256 |
 | `T029-OLP-0195-B014` | `OLP-0195` | 20.4 Q ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:193-203` | `mr/content/model-theory/models-of-arithmetic/models-of-q.tex:200-210` | 254–256 |
+| `T029-OLP-0270-B010` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:49-56` | `mr/content/turing-machines/undecidability/representing-tms.tex:67-79` | pending |
+| `T029-OLP-0270-B012` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:76-112` | `mr/content/turing-machines/undecidability/representing-tms.tex:109-156` | pending |
+| `T029-OLP-0271-B014` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:113-115` | `mr/content/turing-machines/undecidability/verification.tex:207-213` | pending |
+| `T029-OLP-0271-B022` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:175-181` | `mr/content/turing-machines/undecidability/verification.tex:300-315` | pending |
+| `T029-OLP-0271-B024` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:190-194` | `mr/content/turing-machines/undecidability/verification.tex:333-347` | pending |
+| `T029-OLP-0271-B025` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:196-199` | `mr/content/turing-machines/undecidability/verification.tex:349-357` | pending |
+| `T029-OLP-0271-B030` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:252-258` | `mr/content/turing-machines/undecidability/verification.tex:445-457` | pending |
+| `T029-OLP-0273-B010` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:89-97` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:190-208` | pending |
+| `T029-OLP-0273-B011` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297` | pending |
 
 ## T030 — relation / binary relation
 
@@ -4757,6 +4801,7 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T042-OLP-0216-B009` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:58-76` | `mr/content/computability/recursive-functions/examples.tex:57-75` | pending |
 | `T042-OLP-0216-B011` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:83-97` | `mr/content/computability/recursive-functions/examples.tex:82-97` | pending |
 | `T042-OLP-0216-B013` | `OLP-0216` |  | `upstream/content/computability/recursive-functions/examples.tex:110-116` | `mr/content/computability/recursive-functions/examples.tex:110-116` | pending |
+| `T042-OLP-0270-B007` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:25-29` | `mr/content/turing-machines/undecidability/representing-tms.tex:31-38` | pending |
 
 ## T043 — closure / inverse / restriction / relative product
 
@@ -7927,6 +7972,8 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T074-OLP-0248-B005` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:12-18` | `mr/content/computability/computability-theory/rice-theorem.tex:12-19` | pending |
 | `T074-OLP-0248-B015` | `OLP-0248` |  | `upstream/content/computability/computability-theory/rice-theorem.tex:97-107` | `mr/content/computability/computability-theory/rice-theorem.tex:102-115` | pending |
 | `T074-OLP-0269-B007` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:28-36` | `mr/content/turing-machines/undecidability/decision-problem.tex:36-51` | pending |
+| `T074-OLP-0272-B006` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:20-37` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:23-61` | pending |
+| `T074-OLP-0273-B020` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:229-237` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:427-450` | pending |
 
 ## T075 — no larger than / smaller than (cardinal comparison)
 
@@ -9546,6 +9593,9 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T110-OLP-0181-B006` | `OLP-0181` | 18.7 इतर तर्कशास्त्रे | `upstream/content/first-order-logic/beyond/other-logics.tex:13-20` | `mr/content/first-order-logic/beyond/other-logics.tex:13-19` | 241 |
 | `T110-OLP-0182-B005` | `OLP-0182` | 19 प्रतिमान उपपत्तीची मूलतत्त्वे — भाग-प्रस्तावना | `upstream/content/model-theory/model-theory.tex:9-17` | `mr/content/model-theory/model-theory.tex:9-16` | 242 |
 | `T110-OLP-0201-B014` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:143-149` | `mr/content/model-theory/interpolation/interpolation-proof.tex:143-149` | pending |
+| `T110-OLP-0272-B011` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:60-68` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:110-127` | pending |
+| `T110-OLP-0272-B013` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:79-89` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:145-170` | pending |
+| `T110-OLP-0273-B021` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:239-243` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:452-464` | pending |
 
 ## T111 — valuation (propositional semantics)
 
@@ -9881,6 +9931,24 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T112-OLP-0205-B010` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:121-134` | `mr/content/model-theory/lindstrom/abstract-logics.tex:127-140` | pending |
 | `T112-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
 | `T112-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84` | pending |
+| `T112-OLP-0270-B005` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:12-17` | `mr/content/turing-machines/undecidability/representing-tms.tex:12-19` | pending |
+| `T112-OLP-0270-B006` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:19-23` | `mr/content/turing-machines/undecidability/representing-tms.tex:21-29` | pending |
+| `T112-OLP-0270-B009` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:45-47` | `mr/content/turing-machines/undecidability/representing-tms.tex:62-65` | pending |
+| `T112-OLP-0270-B011` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:58-74` | `mr/content/turing-machines/undecidability/representing-tms.tex:81-107` | pending |
+| `T112-OLP-0270-B013` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:114-137` | `mr/content/turing-machines/undecidability/representing-tms.tex:158-198` | pending |
+| `T112-OLP-0271-B008` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:44-58` | `mr/content/turing-machines/undecidability/verification.tex:78-117` | pending |
+| `T112-OLP-0271-B009` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:60-72` | `mr/content/turing-machines/undecidability/verification.tex:119-142` | pending |
+| `T112-OLP-0271-B011` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:79-99` | `mr/content/turing-machines/undecidability/verification.tex:151-184` | pending |
+| `T112-OLP-0271-B021` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:137-173` | `mr/content/turing-machines/undecidability/verification.tex:248-298` | pending |
+| `T112-OLP-0271-B023` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:183-188` | `mr/content/turing-machines/undecidability/verification.tex:317-331` | pending |
+| `T112-OLP-0271-B024` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:190-194` | `mr/content/turing-machines/undecidability/verification.tex:333-347` | pending |
+| `T112-OLP-0271-B025` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:196-199` | `mr/content/turing-machines/undecidability/verification.tex:349-357` | pending |
+| `T112-OLP-0271-B026` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:201-234` | `mr/content/turing-machines/undecidability/verification.tex:359-417` | pending |
+| `T112-OLP-0271-B029` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:246-250` | `mr/content/turing-machines/undecidability/verification.tex:434-443` | pending |
+| `T112-OLP-0271-B030` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:252-258` | `mr/content/turing-machines/undecidability/verification.tex:445-457` | pending |
+| `T112-OLP-0271-B032` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:267-278` | `mr/content/turing-machines/undecidability/verification.tex:468-499` | pending |
+| `T112-OLP-0271-B035` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:292-320` | `mr/content/turing-machines/undecidability/verification.tex:520-574` | pending |
+| `T112-OLP-0273-B011` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297` | pending |
 
 ## T113 — classical logic / classical
 
@@ -10877,6 +10945,25 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T123-OLP-0201-B017` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:183-190` | `mr/content/model-theory/interpolation/interpolation-proof.tex:185-192` | pending |
 | `T123-OLP-0202-B011` | `OLP-0202` |  | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `mr/content/model-theory/interpolation/definability.tex:72-128` | pending |
 | `T123-OLP-0269-B008` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:38-48` | `mr/content/turing-machines/undecidability/decision-problem.tex:53-71` | pending |
+| `T123-OLP-0271-B007` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:29-42` | `mr/content/turing-machines/undecidability/verification.tex:47-76` | pending |
+| `T123-OLP-0271-B008` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:44-58` | `mr/content/turing-machines/undecidability/verification.tex:78-117` | pending |
+| `T123-OLP-0271-B010` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:74-77` | `mr/content/turing-machines/undecidability/verification.tex:144-149` | pending |
+| `T123-OLP-0271-B011` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:79-99` | `mr/content/turing-machines/undecidability/verification.tex:151-184` | pending |
+| `T123-OLP-0271-B012` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:101-105` | `mr/content/turing-machines/undecidability/verification.tex:186-195` | pending |
+| `T123-OLP-0271-B013` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:107-111` | `mr/content/turing-machines/undecidability/verification.tex:197-205` | pending |
+| `T123-OLP-0271-B015` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:117-120` | `mr/content/turing-machines/undecidability/verification.tex:215-223` | pending |
+| `T123-OLP-0271-B021` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:137-173` | `mr/content/turing-machines/undecidability/verification.tex:248-298` | pending |
+| `T123-OLP-0271-B022` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:175-181` | `mr/content/turing-machines/undecidability/verification.tex:300-315` | pending |
+| `T123-OLP-0271-B024` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:190-194` | `mr/content/turing-machines/undecidability/verification.tex:333-347` | pending |
+| `T123-OLP-0271-B025` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:196-199` | `mr/content/turing-machines/undecidability/verification.tex:349-357` | pending |
+| `T123-OLP-0271-B026` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:201-234` | `mr/content/turing-machines/undecidability/verification.tex:359-417` | pending |
+| `T123-OLP-0271-B027` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:236-239` | `mr/content/turing-machines/undecidability/verification.tex:419-425` | pending |
+| `T123-OLP-0271-B032` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:267-278` | `mr/content/turing-machines/undecidability/verification.tex:468-499` | pending |
+| `T123-OLP-0271-B035` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:292-320` | `mr/content/turing-machines/undecidability/verification.tex:520-574` | pending |
+| `T123-OLP-0272-B013` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:79-89` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:145-170` | pending |
+| `T123-OLP-0273-B016` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:197-201` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:348-362` | pending |
+| `T123-OLP-0273-B017` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:203-215` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:364-402` | pending |
+| `T123-OLP-0273-B018` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:217-221` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:404-415` | pending |
 
 ## T124 — satisfiable / satisfiability
 
@@ -10974,6 +11061,14 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T124-OLP-0201-B011` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105` | `mr/content/model-theory/interpolation/interpolation-proof.tex:101-106` | pending |
 | `T124-OLP-0206-B007` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:16-21` | `mr/content/model-theory/lindstrom/ls-property.tex:16-21` | pending |
 | `T124-OLP-0206-B008` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:23-26` | `mr/content/model-theory/lindstrom/ls-property.tex:23-27` | pending |
+| `T124-OLP-0272-B007` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:39-41` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:63-68` | pending |
+| `T124-OLP-0272-B008` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:43-47` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-80` | pending |
+| `T124-OLP-0272-B009` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:49-52` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:82-93` | pending |
+| `T124-OLP-0272-B010` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:54-58` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:95-108` | pending |
+| `T124-OLP-0273-B005` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:12-20` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:12-31` | pending |
+| `T124-OLP-0273-B006` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:22-27` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:33-49` | pending |
+| `T124-OLP-0273-B019` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:223-227` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:417-425` | pending |
+| `T124-OLP-0273-B023` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:249-257` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:470-489` | pending |
 
 ## T125 — necessary / contingent
 
@@ -11234,6 +11329,29 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T126-OLP-0269-B006` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:17-26` | `mr/content/turing-machines/undecidability/decision-problem.tex:19-34` | pending |
 | `T126-OLP-0269-B007` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:28-36` | `mr/content/turing-machines/undecidability/decision-problem.tex:36-51` | pending |
 | `T126-OLP-0269-B008` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:38-48` | `mr/content/turing-machines/undecidability/decision-problem.tex:53-71` | pending |
+| `T126-OLP-0270-B005` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:12-17` | `mr/content/turing-machines/undecidability/representing-tms.tex:12-19` | pending |
+| `T126-OLP-0270-B010` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:49-56` | `mr/content/turing-machines/undecidability/representing-tms.tex:67-79` | pending |
+| `T126-OLP-0270-B012` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:76-112` | `mr/content/turing-machines/undecidability/representing-tms.tex:109-156` | pending |
+| `T126-OLP-0270-B013` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:114-137` | `mr/content/turing-machines/undecidability/representing-tms.tex:158-198` | pending |
+| `T126-OLP-0270-B016` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:180-188` | `mr/content/turing-machines/undecidability/representing-tms.tex:272-286` | pending |
+| `T126-OLP-0270-B017` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:190-195` | `mr/content/turing-machines/undecidability/representing-tms.tex:288-297` | pending |
+| `T126-OLP-0271-B006` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:19-27` | `mr/content/turing-machines/undecidability/verification.tex:23-45` | pending |
+| `T126-OLP-0271-B009` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:60-72` | `mr/content/turing-machines/undecidability/verification.tex:119-142` | pending |
+| `T126-OLP-0271-B011` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:79-99` | `mr/content/turing-machines/undecidability/verification.tex:151-184` | pending |
+| `T126-OLP-0271-B023` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:183-188` | `mr/content/turing-machines/undecidability/verification.tex:317-331` | pending |
+| `T126-OLP-0272-B005` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-18` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-21` | pending |
+| `T126-OLP-0272-B006` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:20-37` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:23-61` | pending |
+| `T126-OLP-0272-B007` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:39-41` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:63-68` | pending |
+| `T126-OLP-0272-B008` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:43-47` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-80` | pending |
+| `T126-OLP-0272-B009` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:49-52` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:82-93` | pending |
+| `T126-OLP-0272-B010` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:54-58` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:95-108` | pending |
+| `T126-OLP-0272-B011` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:60-68` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:110-127` | pending |
+| `T126-OLP-0272-B012` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-77` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:129-143` | pending |
+| `T126-OLP-0273-B005` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:12-20` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:12-31` | pending |
+| `T126-OLP-0273-B006` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:22-27` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:33-49` | pending |
+| `T126-OLP-0273-B010` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:89-97` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:190-208` | pending |
+| `T126-OLP-0273-B011` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297` | pending |
+| `T126-OLP-0273-B019` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:223-227` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:417-425` | pending |
 
 ## T127 — propositional constant
 
@@ -12551,6 +12669,10 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T148-OLP-0170-B012` | `OLP-0170` | 17.3 प्रथम-क्रम उपपत्तींची उदाहरणे | `upstream/content/first-order-logic/models-theories/theories.tex:90-100` | `mr/content/first-order-logic/models-theories/theories.tex:88-99` | 224–226 |
 | `T148-OLP-0201-B008` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:29-32` | `mr/content/model-theory/interpolation/interpolation-proof.tex:28-31` | pending |
 | `T148-OLP-0201-B011` | `OLP-0201` |  | `upstream/content/model-theory/interpolation/interpolation-proof.tex:100-105` | `mr/content/model-theory/interpolation/interpolation-proof.tex:101-106` | pending |
+| `T148-OLP-0272-B007` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:39-41` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:63-68` | pending |
+| `T148-OLP-0272-B008` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:43-47` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-80` | pending |
+| `T148-OLP-0272-B009` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:49-52` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:82-93` | pending |
+| `T148-OLP-0272-B010` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:54-58` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:95-108` | pending |
 
 ## T149 — monotonicity (of semantic entailment)
 
@@ -13135,6 +13257,9 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T155-OLP-0179-B025` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:180-184` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:163-166` | 237–240 |
 | `T155-OLP-0179-B026` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:186-198` | `mr/content/first-order-logic/beyond/intuitionistic-logic.tex:168-178` | 237–240 |
 | `T155-OLP-0180-B010` | `OLP-0180` | 18.6 मोडल तर्कशास्त्रे | `upstream/content/first-order-logic/beyond/modal-logics.tex:67-89` | `mr/content/first-order-logic/beyond/modal-logics.tex:61-81` | 240–241 |
+| `T155-OLP-0272-B011` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:60-68` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:110-127` | pending |
+| `T155-OLP-0272-B013` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:79-89` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:145-170` | pending |
+| `T155-OLP-0273-B021` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:239-243` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:452-464` | pending |
 
 ## T156 — consistency / inconsistency / consistent / inconsistent
 
@@ -16446,6 +16571,8 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T205-OLP-0205-B008` | `OLP-0205` |  | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `mr/content/model-theory/lindstrom/abstract-logics.tex:49-111` | pending |
 | `T205-OLP-0206-B012` | `OLP-0206` |  | `upstream/content/model-theory/lindstrom/ls-property.tex:59-72` | `mr/content/model-theory/lindstrom/ls-property.tex:59-73` | pending |
 | `T205-OLP-0207-B011` | `OLP-0207` |  | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80` | `mr/content/model-theory/lindstrom/lindstrom-proof.tex:68-84` | pending |
+| `T205-OLP-0270-B007` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:25-29` | `mr/content/turing-machines/undecidability/representing-tms.tex:31-38` | pending |
+| `T205-OLP-0270-B011` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:58-74` | `mr/content/turing-machines/undecidability/representing-tms.tex:81-107` | pending |
 
 ## T206 — logical symbol / non-logical symbol / standard language
 
@@ -19479,6 +19606,23 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T282-OLP-0196-B014` | `OLP-0196` | 20.5 PA ची प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:85-95` | `mr/content/model-theory/models-of-arithmetic/models-of-pa.tex:87-97` | 256–259 |
 | `T282-OLP-0197-B005` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:12-23` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:12-22` | 259–260 |
 | `T282-OLP-0197-B006` | `OLP-0197` | 20.6 अंकगणिताची संगणनक्षम प्रतिमाने | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `mr/content/model-theory/models-of-arithmetic/computable-models.tex:24-32` | 259–260 |
+| `T282-OLP-0270-B008` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:31-43` | `mr/content/turing-machines/undecidability/representing-tms.tex:40-60` | pending |
+| `T282-OLP-0270-B018` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:197-200` | `mr/content/turing-machines/undecidability/representing-tms.tex:299-303` | pending |
+| `T282-OLP-0270-B020` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:206-209` | `mr/content/turing-machines/undecidability/representing-tms.tex:309-313` | pending |
+| `T282-OLP-0271-B009` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:60-72` | `mr/content/turing-machines/undecidability/verification.tex:119-142` | pending |
+| `T282-OLP-0271-B021` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:137-173` | `mr/content/turing-machines/undecidability/verification.tex:248-298` | pending |
+| `T282-OLP-0271-B022` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:175-181` | `mr/content/turing-machines/undecidability/verification.tex:300-315` | pending |
+| `T282-OLP-0271-B023` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:183-188` | `mr/content/turing-machines/undecidability/verification.tex:317-331` | pending |
+| `T282-OLP-0271-B024` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:190-194` | `mr/content/turing-machines/undecidability/verification.tex:333-347` | pending |
+| `T282-OLP-0271-B025` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:196-199` | `mr/content/turing-machines/undecidability/verification.tex:349-357` | pending |
+| `T282-OLP-0271-B026` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:201-234` | `mr/content/turing-machines/undecidability/verification.tex:359-417` | pending |
+| `T282-OLP-0271-B029` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:246-250` | `mr/content/turing-machines/undecidability/verification.tex:434-443` | pending |
+| `T282-OLP-0271-B030` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:252-258` | `mr/content/turing-machines/undecidability/verification.tex:445-457` | pending |
+| `T282-OLP-0271-B035` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:292-320` | `mr/content/turing-machines/undecidability/verification.tex:520-574` | pending |
+| `T282-OLP-0273-B007` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:29-51` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:51-104` | pending |
+| `T282-OLP-0273-B011` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297` | pending |
+| `T282-OLP-0273-B013` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:170-185` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:306-331` | pending |
+| `T282-OLP-0273-B017` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:203-215` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:364-402` | pending |
 
 ## T283 — incompleteness / incompleteness phenomenon
 
@@ -19943,6 +20087,23 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T288-OLP-0269-B006` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:17-26` | `mr/content/turing-machines/undecidability/decision-problem.tex:19-34` | pending |
 | `T288-OLP-0269-B007` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:28-36` | `mr/content/turing-machines/undecidability/decision-problem.tex:36-51` | pending |
 | `T288-OLP-0269-B008` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:38-48` | `mr/content/turing-machines/undecidability/decision-problem.tex:53-71` | pending |
+| `T288-OLP-0270-B004` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:9-10` | `mr/content/turing-machines/undecidability/representing-tms.tex:9-10` | pending |
+| `T288-OLP-0270-B011` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:58-74` | `mr/content/turing-machines/undecidability/representing-tms.tex:81-107` | pending |
+| `T288-OLP-0271-B004` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:9-10` | `mr/content/turing-machines/undecidability/verification.tex:9-10` | pending |
+| `T288-OLP-0271-B005` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:12-17` | `mr/content/turing-machines/undecidability/verification.tex:12-21` | pending |
+| `T288-OLP-0271-B008` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:44-58` | `mr/content/turing-machines/undecidability/verification.tex:78-117` | pending |
+| `T288-OLP-0271-B031` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:261-265` | `mr/content/turing-machines/undecidability/verification.tex:460-466` | pending |
+| `T288-OLP-0271-B033` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:281-285` | `mr/content/turing-machines/undecidability/verification.tex:502-511` | pending |
+| `T288-OLP-0271-B034` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:287-290` | `mr/content/turing-machines/undecidability/verification.tex:513-518` | pending |
+| `T288-OLP-0272-B005` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-18` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-21` | pending |
+| `T288-OLP-0272-B006` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:20-37` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:23-61` | pending |
+| `T288-OLP-0272-B008` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:43-47` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-80` | pending |
+| `T288-OLP-0272-B009` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:49-52` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:82-93` | pending |
+| `T288-OLP-0272-B010` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:54-58` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:95-108` | pending |
+| `T288-OLP-0272-B012` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-77` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:129-143` | pending |
+| `T288-OLP-0273-B005` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:12-20` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:12-31` | pending |
+| `T288-OLP-0273-B008` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:53-66` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:106-147` | pending |
+| `T288-OLP-0273-B020` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:229-237` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:427-450` | pending |
 
 ## T289 — Tennenbaum (surname, in Tennenbaum's theorem)
 
@@ -21305,6 +21466,12 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T319-OLP-0267-B015` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:123-130` | `mr/content/turing-machines/undecidability/universal-tm.tex:158-169` | pending |
 | `T319-OLP-0267-B016` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:132-137` | `mr/content/turing-machines/undecidability/universal-tm.tex:171-177` | pending |
 | `T319-OLP-0268-B019` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:138-147` | `mr/content/turing-machines/undecidability/halting-problem.tex:181-192` | pending |
+| `T319-OLP-0270-B016` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:180-188` | `mr/content/turing-machines/undecidability/representing-tms.tex:272-286` | pending |
+| `T319-OLP-0271-B010` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:74-77` | `mr/content/turing-machines/undecidability/verification.tex:144-149` | pending |
+| `T319-OLP-0271-B011` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:79-99` | `mr/content/turing-machines/undecidability/verification.tex:151-184` | pending |
+| `T319-OLP-0271-B016` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:122-125` | `mr/content/turing-machines/undecidability/verification.tex:225-235` | pending |
+| `T319-OLP-0271-B032` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:267-278` | `mr/content/turing-machines/undecidability/verification.tex:468-499` | pending |
+| `T319-OLP-0271-B035` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:292-320` | `mr/content/turing-machines/undecidability/verification.tex:520-574` | pending |
 
 ## T320 — disjoint domains of chosen isomorphic copies / sufficient union construction
 
@@ -21525,6 +21692,11 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T322-OLP-0268-B018` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:128-136` | `mr/content/turing-machines/undecidability/halting-problem.tex:165-179` | pending |
 | `T322-OLP-0268-B019` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:138-147` | `mr/content/turing-machines/undecidability/halting-problem.tex:181-192` | pending |
 | `T322-OLP-0269-B007` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:28-36` | `mr/content/turing-machines/undecidability/decision-problem.tex:36-51` | pending |
+| `T322-OLP-0270-B016` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:180-188` | `mr/content/turing-machines/undecidability/representing-tms.tex:272-286` | pending |
+| `T322-OLP-0271-B031` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:261-265` | `mr/content/turing-machines/undecidability/verification.tex:460-466` | pending |
+| `T322-OLP-0271-B034` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:287-290` | `mr/content/turing-machines/undecidability/verification.tex:513-518` | pending |
+| `T322-OLP-0272-B006` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:20-37` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:23-61` | pending |
+| `T322-OLP-0273-B020` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:229-237` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:427-450` | pending |
 
 ## T323 — regular function / general recursive function / total function
 
@@ -21835,6 +22007,10 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T328-OLP-0240-B012` | `OLP-0240` |  | `upstream/content/computability/computability-theory/non-comp-set.tex:60-61` | `mr/content/computability/computability-theory/non-comp-set.tex:63-65` | pending |
 | `T328-OLP-0241-B008` | `OLP-0241` |  | `upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:22-25` | `mr/content/computability/computability-theory/ce-closed-cup-cap.tex:21-24` | pending |
 | `T328-OLP-0241-B010` | `OLP-0241` |  | `upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:36-42` | `mr/content/computability/computability-theory/ce-closed-cup-cap.tex:40-46` | pending |
+| `T328-OLP-0272-B011` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:60-68` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:110-127` | pending |
+| `T328-OLP-0272-B012` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-77` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:129-143` | pending |
+| `T328-OLP-0272-B013` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:79-89` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:145-170` | pending |
+| `T328-OLP-0273-B023` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:249-257` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:470-489` | pending |
 
 ## T329 — many-one reduction / many-one reducible or equivalent / one-one reducible
 
@@ -22274,6 +22450,19 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T338-OLP-0267-B013` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:89-94` | `mr/content/turing-machines/undecidability/universal-tm.tex:117-125` | pending |
 | `T338-OLP-0267-B014` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:96-121` | `mr/content/turing-machines/undecidability/universal-tm.tex:127-156` | pending |
 | `T338-OLP-0267-B015` | `OLP-0267` |  | `upstream/content/turing-machines/undecidability/universal-tm.tex:123-130` | `mr/content/turing-machines/undecidability/universal-tm.tex:158-169` | pending |
+| `T338-OLP-0270-B006` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:19-23` | `mr/content/turing-machines/undecidability/representing-tms.tex:21-29` | pending |
+| `T338-OLP-0270-B014` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:139-156` | `mr/content/turing-machines/undecidability/representing-tms.tex:200-231` | pending |
+| `T338-OLP-0270-B015` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:158-178` | `mr/content/turing-machines/undecidability/representing-tms.tex:233-270` | pending |
+| `T338-OLP-0271-B016` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:122-125` | `mr/content/turing-machines/undecidability/verification.tex:225-235` | pending |
+| `T338-OLP-0271-B020` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:135-135` | `mr/content/turing-machines/undecidability/verification.tex:245-246` | pending |
+| `T338-OLP-0271-B021` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:137-173` | `mr/content/turing-machines/undecidability/verification.tex:248-298` | pending |
+| `T338-OLP-0271-B026` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:201-234` | `mr/content/turing-machines/undecidability/verification.tex:359-417` | pending |
+| `T338-OLP-0271-B027` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:236-239` | `mr/content/turing-machines/undecidability/verification.tex:419-425` | pending |
+| `T338-OLP-0271-B028` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:241-244` | `mr/content/turing-machines/undecidability/verification.tex:427-432` | pending |
+| `T338-OLP-0271-B035` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:292-320` | `mr/content/turing-machines/undecidability/verification.tex:520-574` | pending |
+| `T338-OLP-0273-B007` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:29-51` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:51-104` | pending |
+| `T338-OLP-0273-B009` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:68-87` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:149-188` | pending |
+| `T338-OLP-0273-B013` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:170-185` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:306-331` | pending |
 
 ## T339 — state diagram / machine configuration / machine table / doubler
 
@@ -22348,6 +22537,29 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T339-OLP-0261-B012` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:97-125` | `mr/content/turing-machines/machines-computations/combining-machines.tex:99-128` | pending |
 | `T339-OLP-0261-B013` | `OLP-0261` |  | `upstream/content/turing-machines/machines-computations/combining-machines.tex:127-150` | `mr/content/turing-machines/machines-computations/combining-machines.tex:130-153` | pending |
 | `T339-OLP-0265-B006` | `OLP-0265` |  | `upstream/content/turing-machines/undecidability/introduction.tex:21-31` | `mr/content/turing-machines/undecidability/introduction.tex:23-35` | pending |
+| `T339-OLP-0270-B005` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:12-17` | `mr/content/turing-machines/undecidability/representing-tms.tex:12-19` | pending |
+| `T339-OLP-0270-B008` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:31-43` | `mr/content/turing-machines/undecidability/representing-tms.tex:40-60` | pending |
+| `T339-OLP-0270-B011` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:58-74` | `mr/content/turing-machines/undecidability/representing-tms.tex:81-107` | pending |
+| `T339-OLP-0270-B012` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:76-112` | `mr/content/turing-machines/undecidability/representing-tms.tex:109-156` | pending |
+| `T339-OLP-0271-B007` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:29-42` | `mr/content/turing-machines/undecidability/verification.tex:47-76` | pending |
+| `T339-OLP-0271-B009` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:60-72` | `mr/content/turing-machines/undecidability/verification.tex:119-142` | pending |
+| `T339-OLP-0271-B010` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:74-77` | `mr/content/turing-machines/undecidability/verification.tex:144-149` | pending |
+| `T339-OLP-0271-B011` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:79-99` | `mr/content/turing-machines/undecidability/verification.tex:151-184` | pending |
+| `T339-OLP-0271-B012` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:101-105` | `mr/content/turing-machines/undecidability/verification.tex:186-195` | pending |
+| `T339-OLP-0271-B013` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:107-111` | `mr/content/turing-machines/undecidability/verification.tex:197-205` | pending |
+| `T339-OLP-0271-B014` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:113-115` | `mr/content/turing-machines/undecidability/verification.tex:207-213` | pending |
+| `T339-OLP-0271-B015` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:117-120` | `mr/content/turing-machines/undecidability/verification.tex:215-223` | pending |
+| `T339-OLP-0271-B016` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:122-125` | `mr/content/turing-machines/undecidability/verification.tex:225-235` | pending |
+| `T339-OLP-0271-B021` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:137-173` | `mr/content/turing-machines/undecidability/verification.tex:248-298` | pending |
+| `T339-OLP-0271-B022` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:175-181` | `mr/content/turing-machines/undecidability/verification.tex:300-315` | pending |
+| `T339-OLP-0271-B023` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:183-188` | `mr/content/turing-machines/undecidability/verification.tex:317-331` | pending |
+| `T339-OLP-0271-B026` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:201-234` | `mr/content/turing-machines/undecidability/verification.tex:359-417` | pending |
+| `T339-OLP-0271-B027` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:236-239` | `mr/content/turing-machines/undecidability/verification.tex:419-425` | pending |
+| `T339-OLP-0271-B028` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:241-244` | `mr/content/turing-machines/undecidability/verification.tex:427-432` | pending |
+| `T339-OLP-0271-B032` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:267-278` | `mr/content/turing-machines/undecidability/verification.tex:468-499` | pending |
+| `T339-OLP-0273-B007` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:29-51` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:51-104` | pending |
+| `T339-OLP-0273-B008` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:53-66` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:106-147` | pending |
+| `T339-OLP-0273-B009` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:68-87` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:149-188` | pending |
 
 ## T340 — unary representation of numbers / one-symbol stroke coding
 
@@ -22440,6 +22652,7 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T341-OLP-0260-B006` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:27-35` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:26-35` | pending |
 | `T341-OLP-0260-B007` | `OLP-0260` |  | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:37-50` | `mr/content/turing-machines/machines-computations/disciplined-machines.tex:37-54` | pending |
 | `T341-OLP-0262-B007` | `OLP-0262` |  | `upstream/content/turing-machines/machines-computations/variants.tex:41-60` | `mr/content/turing-machines/machines-computations/variants.tex:42-61` | pending |
+| `T341-OLP-0270-B017` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:190-195` | `mr/content/turing-machines/undecidability/representing-tms.tex:288-297` | pending |
 
 ## T342 — disciplined Turing machine / single terminal state and tape-boundary normal form
 
@@ -22591,6 +22804,11 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | `T345-OLP-0269-B006` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:17-26` | `mr/content/turing-machines/undecidability/decision-problem.tex:19-34` | pending |
 | `T345-OLP-0269-B007` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:28-36` | `mr/content/turing-machines/undecidability/decision-problem.tex:36-51` | pending |
 | `T345-OLP-0269-B008` | `OLP-0269` |  | `upstream/content/turing-machines/undecidability/decision-problem.tex:38-48` | `mr/content/turing-machines/undecidability/decision-problem.tex:53-71` | pending |
+| `T345-OLP-0272-B004` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:9-10` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:9-10` | pending |
+| `T345-OLP-0272-B005` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-18` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:12-21` | pending |
+| `T345-OLP-0272-B006` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:20-37` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:23-61` | pending |
+| `T345-OLP-0273-B005` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:12-20` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:12-31` | pending |
+| `T345-OLP-0273-B019` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:223-227` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:417-425` | pending |
 
 ## T346 — standard Turing machine / renaming states and tape symbols by positive integers
 
@@ -22696,6 +22914,149 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `T348-OLP-0268-B016` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:115-120` | `mr/content/turing-machines/undecidability/halting-problem.tex:146-154` | pending |
+
+## T349 — first-order representation of a Turing-machine run / time-indexed state and tape-symbol predicates
+
+**Chosen rendering/action:** ट्यूरिंग यंत्राच्या चालक्रमाचे प्रथम-क्रम निरूपण / पायरीक्रमांकासह अवस्था आणि फीत-चिन्ह विधेये
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The consulted logic passages attest predicate, sentence and language vocabulary, while the Turing passage attests the machine name and a separate official glossary attests tape. OpenLogic defines Q_q(m,n) for state/head position at step n and S_sigma(m,n) for a tape symbol at that step; the full compound is source-defined rather than a directly attested Marathi specialist headword. The second argument is a time/step index, not another tape coordinate.
+
+**Rationale:** The consulted logic passages attest predicate, sentence and language vocabulary, while the Turing passage attests the machine name and a separate official glossary attests tape. OpenLogic defines Q_q(m,n) for state/head position at step n and S_sigma(m,n) for a tape symbol at that step; the full compound is source-defined rather than a directly attested Marathi specialist headword. The second argument is a time/step index, not another tape coordinate.
+
+**Authorities actually checked:**
+
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P020` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 2 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P021` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 19 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P158` — tape — मराठी शब्दकोश. https://shabdakosh.marathi.gov.in/index.php/node/221091 (`checked_supports`): Official Directorate of Languages search extraction read; direct page open unavailable. Limitation: Observation hash is not an origin-page hash; the headword does not attest Turing-machine usage or read-write head terminology.
+
+**Alternatives:**
+
+- ट्यूरिंग यंत्राच्या संगणनाचे प्रथम-क्रम संकेतन — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- वेळांकित अवस्था-विधेय आणि फीत-विधेय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- यंत्राच्या धावाचे औपचारिक निरूपण — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Do the Marathi descriptions keep the predicate arguments distinct as tape position first and execution step second?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T349-OLP-0270-B004` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:9-10` | `mr/content/turing-machines/undecidability/representing-tms.tex:9-10` | pending |
+| `T349-OLP-0270-B005` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:12-17` | `mr/content/turing-machines/undecidability/representing-tms.tex:12-19` | pending |
+| `T349-OLP-0270-B006` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:19-23` | `mr/content/turing-machines/undecidability/representing-tms.tex:21-29` | pending |
+| `T349-OLP-0270-B007` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:25-29` | `mr/content/turing-machines/undecidability/representing-tms.tex:31-38` | pending |
+| `T349-OLP-0270-B008` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:31-43` | `mr/content/turing-machines/undecidability/representing-tms.tex:40-60` | pending |
+| `T349-OLP-0270-B009` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:45-47` | `mr/content/turing-machines/undecidability/representing-tms.tex:62-65` | pending |
+| `T349-OLP-0270-B010` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:49-56` | `mr/content/turing-machines/undecidability/representing-tms.tex:67-79` | pending |
+| `T349-OLP-0270-B011` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:58-74` | `mr/content/turing-machines/undecidability/representing-tms.tex:81-107` | pending |
+| `T349-OLP-0270-B012` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:76-112` | `mr/content/turing-machines/undecidability/representing-tms.tex:109-156` | pending |
+| `T349-OLP-0270-B013` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:114-137` | `mr/content/turing-machines/undecidability/representing-tms.tex:158-198` | pending |
+| `T349-OLP-0270-B014` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:139-156` | `mr/content/turing-machines/undecidability/representing-tms.tex:200-231` | pending |
+| `T349-OLP-0270-B015` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:158-178` | `mr/content/turing-machines/undecidability/representing-tms.tex:233-270` | pending |
+| `T349-OLP-0270-B016` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:180-188` | `mr/content/turing-machines/undecidability/representing-tms.tex:272-286` | pending |
+| `T349-OLP-0270-B017` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:190-195` | `mr/content/turing-machines/undecidability/representing-tms.tex:288-297` | pending |
+| `T349-OLP-0270-B018` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:197-200` | `mr/content/turing-machines/undecidability/representing-tms.tex:299-303` | pending |
+| `T349-OLP-0270-B020` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:206-209` | `mr/content/turing-machines/undecidability/representing-tms.tex:309-313` | pending |
+| `T349-OLP-0271-B004` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:9-10` | `mr/content/turing-machines/undecidability/verification.tex:9-10` | pending |
+| `T349-OLP-0271-B005` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:12-17` | `mr/content/turing-machines/undecidability/verification.tex:12-21` | pending |
+| `T349-OLP-0271-B007` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:29-42` | `mr/content/turing-machines/undecidability/verification.tex:47-76` | pending |
+| `T349-OLP-0271-B008` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:44-58` | `mr/content/turing-machines/undecidability/verification.tex:78-117` | pending |
+| `T349-OLP-0271-B012` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:101-105` | `mr/content/turing-machines/undecidability/verification.tex:186-195` | pending |
+| `T349-OLP-0271-B013` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:107-111` | `mr/content/turing-machines/undecidability/verification.tex:197-205` | pending |
+| `T349-OLP-0271-B033` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:281-285` | `mr/content/turing-machines/undecidability/verification.tex:502-511` | pending |
+| `T349-OLP-0271-B035` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:292-320` | `mr/content/turing-machines/undecidability/verification.tex:520-574` | pending |
+| `T349-OLP-0273-B010` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:89-97` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:190-208` | pending |
+| `T349-OLP-0273-B011` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297` | pending |
+
+## T350 — tape frame condition A(x,y) / unchanged nonwritten squares
+
+**Chosen rendering/action:** फितीवरील इतर घरे अपरिवर्तित ठेवण्याची अट / न लिहिलेल्या घरांची चिन्हे जशीच्या तशी राखणे
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** OpenLogic defines A(x,y) as a conjunction preserving every tape-symbol predicate away from the written square at successive time indices. The Marathi explanatory phrase is source-controlled, not an attested independent frame-condition headword. OLTUR-009 corrects the left-move use to A(x',y), because x' rather than x is the written square; the right/stay and zero-boundary clauses retain their existing arguments.
+
+**Rationale:** OpenLogic defines A(x,y) as a conjunction preserving every tape-symbol predicate away from the written square at successive time indices. The Marathi explanatory phrase is source-controlled, not an attested independent frame-condition headword. OLTUR-009 corrects the left-move use to A(x',y), because x' rather than x is the written square; the right/stay and zero-boundary clauses retain their existing arguments.
+
+**Authorities actually checked:**
+
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P020` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 2 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P068` — तत्त्वज्ञान व तर्कशास्त्र परिभाषा कोश — P glossary. https://shabdakosh.marathi.gov.in/ananya-glossary/7/p (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+- `MR-P158` — tape — मराठी शब्दकोश. https://shabdakosh.marathi.gov.in/index.php/node/221091 (`checked_supports`): Official Directorate of Languages search extraction read; direct page open unavailable. Limitation: Observation hash is not an origin-page hash; the headword does not attest Turing-machine usage or read-write head terminology.
+
+**Alternatives:**
+
+- फीतस्थितीचा स्थिरता-नियम — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- न बदललेल्या घरांची अट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- फ्रेम अट — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does the phrase make clear that the excluded square is the one overwritten during the transition, especially for a left move?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T350-OLP-0270-B013` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:114-137` | `mr/content/turing-machines/undecidability/representing-tms.tex:158-198` | pending |
+| `T350-OLP-0270-B014` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:139-156` | `mr/content/turing-machines/undecidability/representing-tms.tex:200-231` | pending |
+| `T350-OLP-0270-B015` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:158-178` | `mr/content/turing-machines/undecidability/representing-tms.tex:233-270` | pending |
+| `T350-OLP-0271-B021` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:137-173` | `mr/content/turing-machines/undecidability/verification.tex:248-298` | pending |
+| `T350-OLP-0271-B022` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:175-181` | `mr/content/turing-machines/undecidability/verification.tex:300-315` | pending |
+| `T350-OLP-0271-B026` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:201-234` | `mr/content/turing-machines/undecidability/verification.tex:359-417` | pending |
+| `T350-OLP-0271-B029` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:246-250` | `mr/content/turing-machines/undecidability/verification.tex:434-443` | pending |
+| `T350-OLP-0273-B011` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297` | pending |
+
+## T351 — finite-model satisfiability / finite validity / Trakhtenbrot's theorem
+
+**Chosen rendering/action:** सांत प्रतिरूपात पूर्ततायोग्यता / सांत वैधता / ट्राख्टेनब्रोटचे प्रमेय
+
+**Kind:** `terminology` · **recording:** `contemporaneous` · **confidence:** `medium` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** This chapter asks whether an individual first-order sentence has some finite model, a different property from T199, where every finite subset of a set of sentences is satisfiable. The explicit phrase सांत प्रतिरूपात पूर्ततायोग्यता keeps those quantifiers distinct. सांत वैधता means truth in every finite structure. The theorem's proper name is transliterated from the frozen source; neither the full phrase nor the name is claimed as an independently attested Marathi headword.
+
+**Rationale:** This chapter asks whether an individual first-order sentence has some finite model, a different property from T199, where every finite subset of a set of sentences is satisfiable. The explicit phrase सांत प्रतिरूपात पूर्ततायोग्यता keeps those quantifiers distinct. सांत वैधता means truth in every finite structure. The theorem's proper name is transliterated from the frozen source; neither the full phrase nor the name is claimed as an independently attested Marathi headword.
+
+**Authorities actually checked:**
+
+- `MR-P006` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 12 (`checked_supports`): visually-read-page-image
+- `MR-P007` — Shivaji University BA II Philosophy syllabus. https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf; printed page 14 (`checked_supports`): visually-read-page-image
+- `MR-P019` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 1 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P020` — तर्कशास्त्र, इयत्ता बारावी. https://ebooks.ebalbharati.in/pdfs/1201010508.pdf; printed page 2 (`checked_supports`): visually-read-page-image; legacy-font text extraction not used as Unicode authority
+- `MR-P069` — MR-C008. https://shabdakosh.marathi.gov.in/ananya-glossary/7/s (`checked_supports`): Primary Government of Maharashtra terminology page read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; OpenLogic controls the exact formal sense.
+- `MR-P082` — सिद्धि – उपपत्ती — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/25818/ (`checked_supports`): Official Marathi Vishwakosh article read in current web-search extraction. Limitation: Observation hash is not an origin-page hash; the article uses परिपूर्ण while this edition retains its prior संपूर्णता decision.
+- `MR-P098` — गणितशास्त्र परिभाषा कोश — compactness observation. https://shabdakosh.marathi.gov.in/ananya-glossary/9/c (`checked_supports`): Official Government of Maharashtra mathematics glossary index read in a current web-search extraction; direct fetch subsequently failed before origin bytes were received. Limitation: Observation hash is not an origin-page hash; the glossary is mathematical rather than proof-theoretic and the direct origin page was unavailable.
+- `MR-P130` — गणितशास्त्र परिभाषा कोश — decidable and decidability. https://shabdakosh.marathi.gov.in/ananya-glossary/9/d (`checked_supports`): Official Directorate of Languages mathematics-glossary entries read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the glossary entry is lexical and OpenLogic supplies the algorithmic relation context.
+- `MR-P131` — गणिताचा तात्त्विक पाया — मराठी विश्वकोश प्रथमावृत्ती. https://vishwakosh.marathi.gov.in/21257/ (`checked_supports`): Official Marathi Vishwakosh passage read in a current web-search extraction. Limitation: Observation hash is not an origin-page hash; the source's गणनीय फलन wording is not used for computable because it would collide with the separately attested countability term गणनीय.
+
+**Alternatives:**
+
+- सांततः पूर्ततायोग्यता (reserved for T199 finite-subset satisfiability) — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- परिमित प्रतिरूप-पूर्ततायोग्यता — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+- ट्राक्टेनब्रोटचे प्रमेय — `viable_alternative`: Recorded in the legacy decision ledger for expert comparison; the current rationale favors the chosen rendering.
+
+**Please double-check:** Please double-check: Does the explicit प्रतिरूपात phrase prevent confusion between existence of one finite model and satisfiability of every finite subset in compactness?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `T351-OLP-0273-B004` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:9-10` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:9-10` | pending |
+| `T351-OLP-0273-B006` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:22-27` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:33-49` | pending |
+| `T351-OLP-0273-B007` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:29-51` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:51-104` | pending |
+| `T351-OLP-0273-B008` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:53-66` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:106-147` | pending |
+| `T351-OLP-0273-B009` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:68-87` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:149-188` | pending |
+| `T351-OLP-0273-B011` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:210-297` | pending |
+| `T351-OLP-0273-B012` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:165-168` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:299-304` | pending |
+| `T351-OLP-0273-B013` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:170-185` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:306-331` | pending |
+| `T351-OLP-0273-B014` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:187-190` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:333-338` | pending |
+| `T351-OLP-0273-B015` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:192-195` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:340-346` | pending |
+| `T351-OLP-0273-B016` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:197-201` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:348-362` | pending |
+| `T351-OLP-0273-B017` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:203-215` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:364-402` | pending |
+| `T351-OLP-0273-B018` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:217-221` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:404-415` | pending |
+| `T351-OLP-0273-B019` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:223-227` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:417-425` | pending |
+| `T351-OLP-0273-B020` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:229-237` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:427-450` | pending |
+| `T351-OLP-0273-B021` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:239-243` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:452-464` | pending |
+| `T351-OLP-0273-B023` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:249-257` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:470-489` | pending |
 
 ## MR-SI001 — source correction or observation MR-SI001
 
@@ -26802,6 +27163,356 @@ Coverage: 266/722 source units through OLP-0269; 512 applied decisions; 13,560 o
 | Occurrence | Unit | Section | Source locator | Target locator | Reader page |
 |---|---|---|---|---|---|
 | `OLTUR-008-OLP-0268` | `OLP-0268` |  | `upstream/content/turing-machines/undecidability/halting-problem.tex:66-70` | `mr/content/turing-machines/undecidability/halting-problem.tex:72-79` | pending |
+
+## OLTUR-009 — confirmed-frozen-source-left-transition-frame-excludes-wrong-square
+
+**Chosen rendering/action:** Change only the first left-move consequent from A(x,y) to A(x',y) in Marathi; keep the separate square-zero branch A(0,y). Explain the written-square exclusion in adjacent prose and reader note OLTUR-009. Document the one-phrase QA projection back to frozen source.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** In the positive-position left-move clause, the old head scans square x' and writes the replacement symbol there, but the frame term A(x,y) excludes square x from preservation instead. The immediately following source explanation explicitly says the written square is x+1, i.e. x'. This is inconsistent with the earlier definition of A as preserving all squares except its first argument.
+
+**Rationale:** In the positive-position left-move clause, the old head scans square x' and writes the replacement symbol there, but the frame term A(x,y) excludes square x from preservation instead. The immediately following source explanation explicitly says the written square is x+1, i.e. x'. This is inconsistent with the earlier definition of A as preserving all squares except its first argument. Chosen action: Change only the first left-move consequent from A(x,y) to A(x',y) in Marathi; keep the separate square-zero branch A(0,y). Explain the written-square exclusion in adjacent prose and reader note OLTUR-009. Document the one-phrase QA projection back to frozen source.
+
+**Authorities actually checked:**
+
+- `OLTUR-009-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-009. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Retain A(x,y), which fails to supply preservation of square x and instead constrains the rewritten square x' — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the general definition of A, which would disturb the correct right- and stay-move clauses — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected first left-move branch exclude exactly the square written at x', while the square-zero branch and right/stay branches retain their original frame arguments?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-009-OLP-0270` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:140-145` | `mr/content/turing-machines/undecidability/representing-tms.tex:203-228` | pending |
+
+## OLTUR-010 — confirmed-frozen-source-open-formula-called-sentence
+
+**Chosen rendering/action:** Preserve the source formula and glossary token, then add bounded Marathi prose and reader note OLTUR-010 distinguishing the open formula template from the universally quantified transition sentence.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The displayed clauses used to define A(x,y) quantify z but leave x and y free. The frozen prose calls each a sentence, although under the book's first-order syntax they are open formulas until x and y are bound by the surrounding transition axiom.
+
+**Rationale:** The displayed clauses used to define A(x,y) quantify z but leave x and y free. The frozen prose calls each a sentence, although under the book's first-order syntax they are open formulas until x and y are bound by the surrounding transition axiom. Chosen action: Preserve the source formula and glossary token, then add bounded Marathi prose and reader note OLTUR-010 distinguishing the open formula template from the universally quantified transition sentence.
+
+**Authorities actually checked:**
+
+- `OLTUR-010-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-010. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Repeat the sentence label without qualification despite the visible free variables — `rejected`: Not chosen; the source finding and recorded action control.
+- Bind x and y inside A itself, which would change its use as a parameterized frame formula — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the note make clear that x and y are free in the frame template and become bound only in the transition axiom?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-010-OLP-0270` | `OLP-0270` |  | `upstream/content/turing-machines/undecidability/representing-tms.tex:114-121` | `mr/content/turing-machines/undecidability/representing-tms.tex:160-171` | pending |
+
+## OLTUR-011 — confirmed-frozen-source-configuration-lemma-reachability-scope-and-induction-base-gap
+
+**Chosen rendering/action:** State the lemma for every reached n-step configuration, use n>=0 in the inductive step, and qualify the universal conclusions accordingly. Keep the initial n=0 configuration and terminal n=k configuration in scope. Add reader note OLTUR-011 and bounded projection for the changed inequality.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The configuration lemma requires M not to have halted after n steps, yet the final forward proof invokes it for the halting configuration reached after k steps. The induction step also assumes n>0, omitting the required transition from the initial 0-step configuration to step 1. The intended invariant is available for each n-step configuration actually reached by the run, including a terminal one.
+
+**Rationale:** The configuration lemma requires M not to have halted after n steps, yet the final forward proof invokes it for the halting configuration reached after k steps. The induction step also assumes n>0, omitting the required transition from the initial 0-step configuration to step 1. The intended invariant is available for each n-step configuration actually reached by the run, including a terminal one. Chosen action: State the lemma for every reached n-step configuration, use n>=0 in the inductive step, and qualify the universal conclusions accordingly. Keep the initial n=0 configuration and terminal n=k configuration in scope. Add reader note OLTUR-011 and bounded projection for the changed inequality.
+
+**Authorities actually checked:**
+
+- `OLTUR-011-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-011. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Keep the lemma's non-halting-after-n restriction and still apply it to the terminal configuration — `rejected`: Not chosen; the source finding and recorded action control.
+- Start induction at n=1 without proving the 0-to-1 transition — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the lemma include exactly every reached configuration, especially n=0 and the terminal configuration at n=k, while induction advances only from nonterminal configurations?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-011-OLP-0271` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:105-280` | `mr/content/turing-machines/undecidability/verification.tex:194-490` | pending |
+
+## OLTUR-012 — confirmed-frozen-source-halting-pair-notation-switch
+
+**Chosen rendering/action:** Use the selected (q,sigma) pair consistently and restore the object-language marker in the premise of the entailment. Add reader note OLTUR-012 and bounded projections for the tuple and premise.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** After selecting a state q and symbol sigma with undefined delta(q,sigma), the frozen proof abruptly derives the existential halting sentence from q-prime and sigma-prime without identifying that pair as the selected one. It also drops the object-language Obj marker from one S predicate. The selected pair (q,sigma) is the disjunct already known to lie in X.
+
+**Rationale:** After selecting a state q and symbol sigma with undefined delta(q,sigma), the frozen proof abruptly derives the existential halting sentence from q-prime and sigma-prime without identifying that pair as the selected one. It also drops the object-language Obj marker from one S predicate. The selected pair (q,sigma) is the disjunct already known to lie in X. Chosen action: Use the selected (q,sigma) pair consistently and restore the object-language marker in the premise of the entailment. Add reader note OLTUR-012 and bounded projections for the tuple and premise.
+
+**Authorities actually checked:**
+
+- `OLTUR-012-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-012. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Leave the unintroduced primed pair as if its membership in X followed automatically — `rejected`: Not chosen; the source finding and recorded action control.
+- Add an unexplained new halting pair instead of reusing the one selected by the proof — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected premise name the same state-symbol pair already chosen with undefined transition, using the defined object-language predicate?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-012-OLP-0271` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:78-96` | `mr/content/turing-machines/undecidability/verification.tex:150-185` | pending |
+
+## OLTUR-013 — confirmed-frozen-source-overview-notation-slips
+
+**Chosen rendering/action:** Use !T(M,w) for the encoded sentence and M for the running machine in Marathi, preserve all other symbols, and add reader note OLTUR-013 with two bounded QA projections.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The forward overview concludes with T(M,w) lacking the exclamation marker used throughout for the encoded sentence. The converse overview describes M's actual run but briefly calls the running machine T. Both are local symbol slips within otherwise consistent arguments.
+
+**Rationale:** The forward overview concludes with T(M,w) lacking the exclamation marker used throughout for the encoded sentence. The converse overview describes M's actual run but briefly calls the running machine T. Both are local symbol slips within otherwise consistent arguments. Chosen action: Use !T(M,w) for the encoded sentence and M for the running machine in Marathi, preserve all other symbols, and add reader note OLTUR-013 with two bounded QA projections.
+
+**Authorities actually checked:**
+
+- `OLTUR-013-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-013. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Treat the unmarked T(M,w) as an unexplained new expression — `rejected`: Not chosen; the source finding and recorded action control.
+- Treat T as a newly introduced machine despite the M-based definition — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do the corrected overview symbols refer to the same encoded sentence and machine as the surrounding formulas?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-013-OLP-0271` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:37-54` | `mr/content/turing-machines/undecidability/verification.tex:69-117` | pending |
+
+## OLTUR-014 — confirmed-frozen-source-left-frame-proof-repeats-wrong-excluded-square
+
+**Chosen rendering/action:** Use A(x',y) and A(l',n) in the first left-move branch, preserving A(0,y) in the zero-boundary branch. Add adjacent explanation and reader note OLTUR-014 with the two exact projections.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The left-move verification repeats A(x,y) from the frozen representation clause and then instantiates it as A(l,n), although the instruction writes at the old head square x'=l'=m. OLTUR-009 corrected the preceding representation rule to exclude that written square.
+
+**Rationale:** The left-move verification repeats A(x,y) from the frozen representation clause and then instantiates it as A(l,n), although the instruction writes at the old head square x'=l'=m. OLTUR-009 corrected the preceding representation rule to exclude that written square. Chosen action: Use A(x',y) and A(l',n) in the first left-move branch, preserving A(0,y) in the zero-boundary branch. Add adjacent explanation and reader note OLTUR-014 with the two exact projections.
+
+**Authorities actually checked:**
+
+- `OLTUR-014-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-014. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Keep the proof using the wrong excluded square even after correcting the representation rule — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the zero-boundary branch, which already excludes the written square zero — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the proof's frame argument match the square written in each left-move branch?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-014-OLP-0271` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:201-220` | `mr/content/turing-machines/undecidability/verification.tex:344-401` | pending |
+
+## OLTUR-015 — confirmed-frozen-source-post-transition-tape-symbol-notation-ambiguous
+
+**Chosen rendering/action:** Mark the symbols in the next-configuration row with a plus superscript and explain that the written square takes the new symbol while all other squares retain their old symbols. Preserve the explicit write clause and all square/time coordinates. Add reader note OLTUR-015 and bounded projections back to the frozen unmarked endpoints.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** Both next-configuration displays repeat the unmarked sigma_i tape symbols from the old configuration, even though the machine has written sigma-prime at square m. The right-move prose itself says the old symbol at m is excluded. Without reindexing, the displayed conjunction does not state the post-transition tape exactly.
+
+**Rationale:** Both next-configuration displays repeat the unmarked sigma_i tape symbols from the old configuration, even though the machine has written sigma-prime at square m. The right-move prose itself says the old symbol at m is excluded. Without reindexing, the displayed conjunction does not state the post-transition tape exactly. Chosen action: Mark the symbols in the next-configuration row with a plus superscript and explain that the written square takes the new symbol while all other squares retain their old symbols. Preserve the explicit write clause and all square/time coordinates. Add reader note OLTUR-015 and bounded projections back to the frozen unmarked endpoints.
+
+**Authorities actually checked:**
+
+- `OLTUR-015-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-015. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Read the old sigma_m at the new time literally, contradicting the write clause when symbols differ — `rejected`: Not chosen; the source finding and recorded action control.
+- Silently rebind every sigma_i between displays without telling the reader — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the plus-marked symbol family represent the exact next tape, with the newly written symbol at m and inherited symbols elsewhere?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-015-OLP-0271` | `OLP-0271` |  | `upstream/content/turing-machines/undecidability/verification.tex:163-237` | `mr/content/turing-machines/undecidability/verification.tex:270-413` | pending |
+
+## OLTUR-016 — confirmed-frozen-source-object-language-sentence-marker-slip
+
+**Chosen rendering/action:** Write !B at the first input mention in Marathi, preserve the later negation and tape operation, add adjacent reader note OLTUR-016 and a one-phrase bounded projection to the frozen B notation.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The satisfiability corollary's proof introduces its input as sentence B, then immediately instructs the machine to shift !B, and the theorem and rest of the proof consistently use !B as the object-language sentence notation. The first B omits the marker.
+
+**Rationale:** The satisfiability corollary's proof introduces its input as sentence B, then immediately instructs the machine to shift !B, and the theorem and rest of the proof consistently use !B as the object-language sentence notation. The first B omits the marker. Chosen action: Write !B at the first input mention in Marathi, preserve the later negation and tape operation, add adjacent reader note OLTUR-016 and a one-phrase bounded projection to the frozen B notation.
+
+**Authorities actually checked:**
+
+- `OLTUR-016-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-016. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Treat B and !B as different input sentences despite their immediate substitution — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the rest of the corollary to unmarked B, disturbing established notation — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corollary consistently use the same input sentence before and after prefixing its negation?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-016-OLP-0272` | `OLP-0272` |  | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:44-48` | `mr/content/turing-machines/undecidability/unsolvability-decision-problem.tex:73-80` | pending |
+
+## OLTUR-017 — confirmed-frozen-source-finite-model-domain-can-omit-final-head-square
+
+**Chosen rendering/action:** Choose n as the greater of k+1 and input length plus one in the Marathi prose and displayed maximum, retaining the capped-successor and terminal-order formulas. Add adjacent reader note OLTUR-017 and a bounded projection of the displayed maximum to the frozen formula.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The machine starts scanning square 1. After k successive right moves its halting head may scan square k+1, but the frozen domain ends at n=max(k,len(w)). Also the capped order includes n<n; if n equals the last input square len(w), the initial blank-tail axiom falsely makes that occupied square blank. A safe cap is n=max(k+1,len(w)+1).
+
+**Rationale:** The machine starts scanning square 1. After k successive right moves its halting head may scan square k+1, but the frozen domain ends at n=max(k,len(w)). Also the capped order includes n<n; if n equals the last input square len(w), the initial blank-tail axiom falsely makes that occupied square blank. A safe cap is n=max(k+1,len(w)+1). Chosen action: Choose n as the greater of k+1 and input length plus one in the Marathi prose and displayed maximum, retaining the capped-successor and terminal-order formulas. Add adjacent reader note OLTUR-017 and a bounded projection of the displayed maximum to the frozen formula.
+
+**Authorities actually checked:**
+
+- `OLTUR-017-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-017. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Keep n=max(k,len(w)) and assert that all visited positions and the input-tail clause are represented faithfully — `rejected`: Not chosen; the source finding and recorded action control.
+- Change the actual head position or last input symbol to fit the smaller domain — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the finite domain include the furthest possible head position and put the capped element strictly beyond the last initially occupied input square?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-017-OLP-0273` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:31-184` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:58-329` | pending |
+
+## OLTUR-018 — confirmed-frozen-source-single-state-example-notation-slips
+
+**Chosen rendering/action:** Use q_0 as the transition destination and M-double-prime for both successor values in Marathi. Add reader note OLTUR-018 and two narrow QA projections.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The exercise specifies a one-state machine q_0 but writes its sole transition's destination as undeclared q. Its finite structure is M-double-prime but one successor value is ascribed to M-prime. Both are isolated symbol slips.
+
+**Rationale:** The exercise specifies a one-state machine q_0 but writes its sole transition's destination as undeclared q. Its finite structure is M-double-prime but one successor value is ascribed to M-prime. Both are isolated symbol slips. Chosen action: Use q_0 as the transition destination and M-double-prime for both successor values in Marathi. Add reader note OLTUR-018 and two narrow QA projections.
+
+**Authorities actually checked:**
+
+- `OLTUR-018-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-018. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Introduce a second state q despite the one-state condition — `rejected`: Not chosen; the source finding and recorded action control.
+- Use M-prime's successor value to define M-double-prime without any equality or model relationship — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the finite countermodel exercise consistently name its only state and its own successor function?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-018-OLP-0273` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:68-73` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:143-164` | pending |
+
+## OLTUR-019 — confirmed-frozen-source-finite-transition-left-branch-frame-and-fresh-time-omissions
+
+**Chosen rendering/action:** Use A(x',y) as in OLTUR-009 and conjoin B(y') to the first left-move consequent. Preserve the zero-boundary branch and add adjacent reader note OLTUR-019 with a bounded formula projection.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The positive-position left transition writes at old head square x' but uses the frame A(x,y), which excludes the new head square x instead. It also lacks B(y') while the right, zero-boundary left and stay transitions include B(y'), and the following source prose states that B(y') was added to every transition. Without it, the subsequent fresh-time proof does not cover this branch.
+
+**Rationale:** The positive-position left transition writes at old head square x' but uses the frame A(x,y), which excludes the new head square x instead. It also lacks B(y') while the right, zero-boundary left and stay transitions include B(y'), and the following source prose states that B(y') was added to every transition. Without it, the subsequent fresh-time proof does not cover this branch. Chosen action: Use A(x',y) as in OLTUR-009 and conjoin B(y') to the first left-move consequent. Preserve the zero-boundary branch and add adjacent reader note OLTUR-019 with a bounded formula projection.
+
+**Authorities actually checked:**
+
+- `OLTUR-019-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-019. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Retain a time-repetition loophole for positive left moves — `rejected`: Not chosen; the source finding and recorded action control.
+- Add B only to the prose while leaving the transition formula unchanged — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does every transition direction now impose a fresh next-time condition and exclude exactly its written tape square?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-019-OLP-0273` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:109-126` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:229-244` | pending |
+
+## OLTUR-020 — confirmed-frozen-source-finite-model-lemma-proof-and-exercise-formula-slips
+
+**Chosen rendering/action:** Use the exact lemma conjunction T'(M,w) and !E(M,w) in both proof and exercise, with reader note OLTUR-020 and two local projections.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The finite-model lemma asserts T'(M,w) and !E(M,w), but its proof's final satisfaction formula omits the marker on E. The following exercise omits that marker again and additionally asks to verify old T rather than strengthened T'. That would not establish the stated lemma.
+
+**Rationale:** The finite-model lemma asserts T'(M,w) and !E(M,w), but its proof's final satisfaction formula omits the marker on E. The following exercise omits that marker again and additionally asks to verify old T rather than strengthened T'. That would not establish the stated lemma. Chosen action: Use the exact lemma conjunction T'(M,w) and !E(M,w) in both proof and exercise, with reader note OLTUR-020 and two local projections.
+
+**Authorities actually checked:**
+
+- `OLTUR-020-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-020. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Let the exercise verify old T, leaving the strengthened transition and finite-model claim unproved — `rejected`: Not chosen; the source finding and recorded action control.
+- Treat E and !E as interchangeable without a definition — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Do the proof and assigned exercise now verify exactly the formula asserted by the lemma?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-020-OLP-0273` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:180-189` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:319-336` | pending |
+
+## OLTUR-021 — confirmed-frozen-source-contrapositive-assumes-wrong-run-theory
+
+**Chosen rendering/action:** Assume a model of T'(M,w) and !E(M,w) in the Marathi proof, keep the rest of the contrapositive, and add reader note OLTUR-021 and a one-phrase projection.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** The converse lemma concerns finite models of strengthened T' and E, but the contrapositive proof assumes an arbitrary model of old T and E. Its next line derives fresh-time conditions only from T', so the assumed model must satisfy T'.
+
+**Rationale:** The converse lemma concerns finite models of strengthened T' and E, but the contrapositive proof assumes an arbitrary model of old T and E. Its next line derives fresh-time conditions only from T', so the assumed model must satisfy T'. Chosen action: Assume a model of T'(M,w) and !E(M,w) in the Marathi proof, keep the rest of the contrapositive, and add reader note OLTUR-021 and a one-phrase projection.
+
+**Authorities actually checked:**
+
+- `OLTUR-021-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-021. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Infer T' consequences from a model only known to satisfy T — `rejected`: Not chosen; the source finding and recorded action control.
+- Drop the fresh-time argument and leave the finite-model converse unsupported — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the model assumed for contradiction satisfy the strengthened theory used to force distinct time numerals?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-021-OLP-0273` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:194-202` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:344-361` | pending |
+
+## OLTUR-022 — confirmed-frozen-source-fresh-time-base-not-axiomatized
+
+**Chosen rendering/action:** Qualify the combined configuration-and-fresh-time claim and its exercise to n after at least one step, while preserving all displayed formulas and the infinite-domain conclusion. Add reader note OLTUR-022; the change is prose-only and requires no formula projection.
+
+**Kind:** `source_correction` · **recording:** `contemporaneous` · **confidence:** `high` · **priority:** `normal` · **provisional:** `true`
+
+**Intended sense:** B(y') appears only in transition consequents, so the strengthened theory does not supply B(0) for the initial configuration. The frozen proof and exercise assert T' entails C(n) and B(n) for all natural n, including n=0. The argument needs B(n) only for positive n, to distinguish infinitely many numerals.
+
+**Rationale:** B(y') appears only in transition consequents, so the strengthened theory does not supply B(0) for the initial configuration. The frozen proof and exercise assert T' entails C(n) and B(n) for all natural n, including n=0. The argument needs B(n) only for positive n, to distinguish infinitely many numerals. Chosen action: Qualify the combined configuration-and-fresh-time claim and its exercise to n after at least one step, while preserving all displayed formulas and the infinite-domain conclusion. Add reader note OLTUR-022; the change is prose-only and requires no formula projection.
+
+**Authorities actually checked:**
+
+- `OLTUR-022-SOURCE-COMPARISON` — Frozen OpenLogic English source and aligned Marathi target comparison for OLTUR-022. (`checked_context_only`): Same-agent source comparison; no external audit claimed.
+
+**Alternatives:**
+
+- Claim B(0) without any initial axiom or transition yielding it — `rejected`: Not chosen; the source finding and recorded action control.
+- Add a new initial B(0) axiom although the proof only needs positive-time freshness — `rejected`: Not chosen; the source finding and recorded action control.
+
+**Please double-check:** Please double-check: Does the corrected argument use B(n) only for positive reached times while still distinguishing arbitrarily many numeral values?
+
+| Occurrence | Unit | Section | Source locator | Target locator | Reader page |
+|---|---|---|---|---|---|
+| `OLTUR-022-OLP-0273` | `OLP-0273` |  | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:202-220` | `mr/content/turing-machines/undecidability/trakhtenbrot.tex:363-412` | pending |
 
 ## Deferred prospective decisions
 

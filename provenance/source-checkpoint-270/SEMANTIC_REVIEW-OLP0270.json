@@ -1,0 +1,59 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0270",
+  "method": "Same-agent bilingual close reading of the full language definition and every transition clause, reverse paraphrase of the left-boundary case, and exact structural checks after one documented formula projection. No independent human or native-speaker review is claimed.",
+  "scope": "First-order representation of Turing-machine runs, time-indexed predicates, numeric terms, initial configuration, transition axioms and the halting sentence.",
+  "samples": [
+    {
+      "blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "The language has two-place state/head and tape-symbol predicates. Its first argument represents tape position and its second argument represents execution time. Zero and postfix successor give numerals for both coordinates, while the same less-than predicate orders positions and times.",
+      "checks": "The separate Q_q and S_sigma families, arities, numeral equations, initial time/position values and all source glossary tokens remain intact."
+    },
+    {
+      "blocks": [
+        11,
+        12
+      ],
+      "reverse_paraphrase": "For machine M on input w, the language includes predicates for each state and symbol plus 0, successor and less-than. T(M,w) has number-order axioms, the initial state at square one and time zero, the tape-end marker at square zero, input symbols through square k and blanks farther right.",
+      "checks": "The state-symbol, tape-position/time and k+1-square roles remain exact. Every displayed initial-configuration formula is unchanged."
+    },
+    {
+      "blocks": [
+        13,
+        14,
+        15
+      ],
+      "reverse_paraphrase": "A frame formula preserves tape symbols at squares other than the square overwritten. Right and stay moves write at x and exclude x. A positive-position left move scans and writes x+1 but moves the head to x; its frame must exclude x+1. At square zero a left instruction leaves the head at zero and excludes zero.",
+      "checks": "The first left-move consequent alone changes A(x,y) to A(x',y), with OLTUR-009 and the exact QA projection. The zero branch remains A(0,y). OLTUR-010 explains that x and y are still free in the frame template, despite the source's sentence label."
+    },
+    {
+      "blocks": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "reverse_paraphrase": "T(M,w) conjoins the listed clauses. E(M,w) says that at some position and time the state-symbol pair has an undefined transition; with a designated halting state it can instead assert that h occurs. The final proposition about numerals m<k is assigned as an exercise with induction on k-m.",
+      "checks": "Both existential halting formulas, X's undefined-transition definition, the m<k proposition and its three-part reference are source-exact."
+    }
+  ],
+  "source_observations": [
+    "OLTUR-009: the frozen positive-position left-move clause's A(x,y) excludes the new head position, not the written square x'. The Marathi corrects that one argument and retains the square-zero branch.",
+    "OLTUR-010: the displayed frame clauses quantify z but leave x and y free, so they are open formulas until placed within the universally quantified transition axiom. The source calls them sentences; the Marathi adds a bounded clarification.",
+    "The following verification unit will need to use the corrected left-move frame argument consistently; its frozen proof has not yet been translated or reviewed."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "The corrected transition rule has not yet been tested in a complete built reader.",
+    "The next unit's proof is required to establish the proposed reduction."
+  ]
+}

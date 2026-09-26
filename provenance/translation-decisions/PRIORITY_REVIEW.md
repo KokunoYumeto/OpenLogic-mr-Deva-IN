@@ -1,7 +1,7 @@
 # Marathi OpenLogic priority review
 
 This view contains 43 urgent/high decisions and
-1110 current occurrences. Normal and low items remain in the full index.
+1122 current occurrences. Normal and low items remain in the full index.
 
 ## T006 — proper subset → उचित उपसंच
 
@@ -551,6 +551,15 @@ This view contains 43 urgent/high decisions and
 | `T029-OLP-0195-B010` | `OLP-0195` | 20.4 Q ची प्रतिमाने | 121-131 | 124-134 | 254–256 |
 | `T029-OLP-0195-B012` | `OLP-0195` | 20.4 Q ची प्रतिमाने | 176-185 | 182-192 | 254–256 |
 | `T029-OLP-0195-B014` | `OLP-0195` | 20.4 Q ची प्रतिमाने | 193-203 | 200-210 | 254–256 |
+| `T029-OLP-0270-B010` | `OLP-0270` |  | 49-56 | 67-79 | pending |
+| `T029-OLP-0270-B012` | `OLP-0270` |  | 76-112 | 109-156 | pending |
+| `T029-OLP-0271-B014` | `OLP-0271` |  | 113-115 | 207-213 | pending |
+| `T029-OLP-0271-B022` | `OLP-0271` |  | 175-181 | 300-315 | pending |
+| `T029-OLP-0271-B024` | `OLP-0271` |  | 190-194 | 333-347 | pending |
+| `T029-OLP-0271-B025` | `OLP-0271` |  | 196-199 | 349-357 | pending |
+| `T029-OLP-0271-B030` | `OLP-0271` |  | 252-258 | 445-457 | pending |
+| `T029-OLP-0273-B010` | `OLP-0273` |  | 89-97 | 190-208 | pending |
+| `T029-OLP-0273-B011` | `OLP-0273` |  | 99-163 | 210-297 | pending |
 
 ## T039 — preorder / partial order / linear order → पूर्वक्रम / अंशतः क्रम / रेषीय क्रम
 
@@ -986,6 +995,9 @@ This view contains 43 urgent/high decisions and
 | `T155-OLP-0179-B025` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | 180-184 | 163-166 | 237–240 |
 | `T155-OLP-0179-B026` | `OLP-0179` | 18.5 अंतःप्रज्ञावादी तर्कशास्त्र | 186-198 | 168-178 | 237–240 |
 | `T155-OLP-0180-B010` | `OLP-0180` | 18.6 मोडल तर्कशास्त्रे | 67-89 | 61-81 | 240–241 |
+| `T155-OLP-0272-B011` | `OLP-0272` |  | 60-68 | 110-127 | pending |
+| `T155-OLP-0272-B013` | `OLP-0272` |  | 79-89 | 145-170 | pending |
+| `T155-OLP-0273-B021` | `OLP-0273` |  | 239-243 | 452-464 | pending |
 
 ## T174 — closed term → बंद पद
 

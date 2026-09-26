@@ -1,0 +1,45 @@
+{
+  "schema": "openlogic-semantic-review/1",
+  "batch": "OLP-0272",
+  "method": "Same-agent bilingual close reading and reverse paraphrase of each theorem, reduction, complement construction and proof-enumeration argument; exact formula, macro, glossary-token and reference checks after one bounded source-correction projection. No independent human or native-speaker review is claimed.",
+  "scope": "Unsolvability of first-order validity, undecidability of satisfiability and one-sided semidecidability of validity.",
+  "samples": [
+    {
+      "blocks": [
+        4,
+        5,
+        6
+      ],
+      "reverse_paraphrase": "A hypothetical always-halting validity decider D would receive the effective encoding of a machine M_e and word w as the sentence !T(M_e,w) implies !E(M_e,w). Composing the encoder E with D would decide whether M_e halts on w, contradicting the earlier halting theorem.",
+      "checks": "Both 1 and 0 output branches, the always-halting requirement, the composition order E then D and both verification-lemma references are preserved."
+    },
+    {
+      "blocks": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "reverse_paraphrase": "A satisfiability decider S would decide validity by prefixing negation to the input sentence, running S, and reversing its one-stroke yes/no result. A sentence is valid exactly when its negation is unsatisfiable.",
+      "checks": "The right-shift and square-one negation operation, the two satisfiability outputs, the stroke erasure/writing cases and the final complement relation remain exact. OLTUR-016 consistently names the input !B."
+    },
+    {
+      "blocks": [
+        11,
+        12,
+        13
+      ],
+      "reverse_paraphrase": "Validity has no always-halting yes/no decider, but it has a one-sided recognizer. Effective enumeration of all derivations finds a proof of B exactly when B is valid: soundness prevents a false positive and completeness ensures eventual discovery of a proof when B is valid.",
+      "checks": "The no-instance diverges, the yes-instance halts with 1, and soundness/completeness are used in the correct directions. The distinct semantic entailment and syntactic provability formulas are preserved."
+    }
+  ],
+  "source_observations": [
+    "OLTUR-016: the frozen satisfiability proof first calls the input B but immediately shifts !B and consistently reasons about !B; the Marathi uses !B at the first mention."
+  ],
+  "passed_for_source_fidelity": true,
+  "limitations": [
+    "No independent human or native-speaker review has been performed.",
+    "This section has not yet been assembled into a built coherent reader.",
+    "The source's effective derivation enumeration is invoked from earlier results rather than re-proved here."
+  ]
+}
