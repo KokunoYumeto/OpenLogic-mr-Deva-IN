@@ -528,6 +528,10 @@ _DOCUMENTED_PROJECTIONS = {
         ('\\olref[inc][req][cmp]{prop:rep1}',
          '\\olref[inc][req][cmp]{prop:rep2}'),
     ],
+    'OLP-0296': [
+        # OLINC-032: the existential witness for u is c, not c-prime.
+        ("$c$ वर अस्तित्ववाचक", "$c'$ वर अस्तित्ववाचक"),
+    ],
 }
 
 
