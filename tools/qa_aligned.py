@@ -429,6 +429,12 @@ _DOCUMENTED_PROJECTIONS = {
         ("हे~$!T'(M,w) \\land !E(M, w)$\n  चे प्रतिरूप आहे",
          "हे~$!T(M,w) \\land !E(M, w)$\n  चे प्रतिरूप आहे"),
     ],
+    'OLP-0279': [
+        ('$!A_n(\\num{n})$ च्या\nआधी',
+         '$!A(\\num{n})$ च्या\nआधी'),
+        ('$\\lnot !A_n(\\num{n}) \\in \\Gamma$ आहे का',
+         '$\\lnot !A(\\num{n}) \\in \\Gamma$ आहे का'),
+    ],
 }
 
 
