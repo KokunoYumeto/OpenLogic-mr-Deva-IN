@@ -523,6 +523,11 @@ _DOCUMENTED_PROJECTIONS = {
         # Localized case label needs text mode for Devanagari shaping.
         ('\\text{अन्यथा}', 'otherwise'),
     ],
+    'OLP-0295': [
+        # OLINC-029: the exercise refers to both preceding propositions.
+        ('\\olref[inc][req][cmp]{prop:rep1}',
+         '\\olref[inc][req][cmp]{prop:rep2}'),
+    ],
 }
 
 

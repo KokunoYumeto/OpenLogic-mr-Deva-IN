@@ -1,0 +1,108 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: composition-representable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{cmp}
+\olsection{फलनांचे संयोजन~$\Th{Q}$ मध्ये निरूपणीय असते}
+
+समजा $h$ पुढीलप्रमाणे परिभाषित आहे:
+\[
+h(x_0,\dots,x_{l-1}) = f(g_0(x_0,\dots,x_{l-1}), \dots,
+g_{k-1}(x_0,\dots,x_{l-1})).
+\]
+येथे $f$ आणि अनुक्रमे $g_0$,
+\dots,~$g_{k-1}$ या फलनांचे निरूपण करणारी
+!!{formula}s $!A_f, !A_{g_0}, \dots,
+!A_{g_{k-1}}$ आपल्याला आधीच सापडली आहेत. आता $h$ चे
+निरूपण करणारे !!a{formula}~$!A_h$ शोधायचे आहे.
+
+सर्व फलनांचे $1$ आदान असलेली सोपी बाब आधी पाहू; म्हणजे
+$h(x) = f(g(x))$ विचारात घेऊ. $!A_f(y, z)$ हे~$f$ चे,
+आणि $!A_g(x, y)$ हे~$g$ चे निरूपण करत असेल, तर $h$ चे
+निरूपण करणारे !!a{formula}~$!A_h(x, z)$ शोधायचे आहे.
+$h(x) = z$ तेव्हाच आणि तरच असा एखादा~$y$ असतो की
+$z = f(y)$ आणि $y = g(x)$ ही दोन्ही विधाने खरी असतात.
+($h(x) = z$ असेल तर $g(x)$ हा असा~$y$ असतो; आणि असा
+$y$ असेल, तर $y = g(x)$ आणि $z = f(y)$ असल्याने
+$z = f(g(x))$.) यावरून $!A_h(x, z)$ साठी
+$\lexists[y][(!A_g(x, y) \land !A_f(y,
+  z))]$ हे योग्य सूत्र असावे असे दिसते. आता फक्त
+$\Th{Q}$ संबंधित !!{formula}s सिद्ध करते, हे तपासायचे आहे.
+
+\begin{prop}
+\ollabel{prop:rep1}
+$h(n) = m$ असेल, तर $\Th{Q} \Proves !A_h(\num{n}, \num{m})$.
+\end{prop}
+
+\begin{proof}
+$h(n) = m$, म्हणजे $f(g(n)) = m$, असे समजा. $k = g(n)$ असू द्या.
+मग
+\begin{align*}
+  \Th{Q} & \Proves !A_g(\num{n}, \num{k})
+  \intertext{कारण $!A_g$ हे~$g$ चे निरूपण करते; तसेच}
+  \Th{Q} & \Proves !A_f(\num{k}, \num{m})
+  \intertext{कारण $!A_f$ हे~$f$ चे निरूपण करते. म्हणून}
+  \Th{Q} & \Proves !A_g(\num{n}, \num{k}) \land !A_f(\num{k}, \num{m})
+  \intertext{आणि त्यावरून}
+  \Th{Q} & \Proves \lexists[y][(!A_g(\num{n}, y) \land !A_f(y, \num{m}))],
+\end{align*}
+म्हणजेच $\Th{Q} \Proves !A_h(\num{n}, \num{m})$.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:rep2}
+$h(n) = m$ असेल, तर $\Th{Q} \Proves \lforall[z][(!A_h(\num{n}, z) \lif
+  z = \num{m})]$.
+\end{prop}
+
+\begin{proof}
+$h(n) = m$, म्हणजे $f(g(n)) = m$, असे समजा. $k = g(n)$ असू द्या.
+मग
+\begin{align*}
+  \Th{Q} & \Proves \lforall[y][(!A_g(\num{n}, y) \lif \eq[y][\num{k}])]
+  \intertext{कारण $!A_g$ हे~$g$ चे निरूपण करते; तसेच}
+  \Th{Q} & \Proves \lforall[z][(!A_f(\num{k}, z) \lif \eq[z][\num{m}])]
+  \intertext{कारण $!A_f$ हे~$f$ चे निरूपण करते. थोडेसे
+    तर्कशास्त्र वापरून पुढील विधानही दाखवता येते:}
+  \Th{Q} & \Proves \lforall[z][(\lexists[y][(!A_g(\num{n}, y) \land
+      !A_f(y, z))] \lif \eq[z][\num{m}])].
+\end{align*}
+म्हणजेच $\Th{Q} \Proves \lforall[y][(!A_h(\num n, y) \lif \eq[y][\num m])]$.
+\end{proof}
+
+$f$ आणि~$g_i$ यांची आदाने $1$ पेक्षा अधिक असलेल्या गुंतागुंतीच्या
+बाबतीतही हीच कल्पना लागू पडते.
+
+\begin{prop}
+\ollabel{prop:rep-composition}
+$!A_f(y_0, \dots, y_{k-1}, z)$ हे~$\Th{Q}$ मध्ये
+$f(y_0, \dots, y_{k-1})$ चे, आणि
+$!A_{g_i}(x_0, \dots, x_{l-1}, y)$ हे~$\Th{Q}$ मध्ये
+$g_i(x_0, \dots, x_{l-1})$ चे निरूपण करत असेल, तर
+\begin{multline*}
+  \lexists[y_0\dots][\lexists[y_{k-1}][(!A_{g_0}(x_0,\dots,x_{l-1},y_0) \land
+      \dots \land {}]]\\
+  !A_{g_{k-1}}(x_0,\dots,x_{l-1},y_{k-1}) \land !A_f(y_0,\dots,y_{k-1},z))
+\end{multline*}
+हे सूत्र पुढील फलनाचे निरूपण करते:
+\[
+h(x_0, \dots, x_{l-1}) = f(g_0(x_0, \dots, x_{l-1}), \dots, g_{k-1}(x_0,
+\dots, x_{l-1})).
+\]
+\end{prop}
+
+\begin{proof}
+सरावासाठी.
+\end{proof}
+
+\begin{prob}
+\olref[inc][req][cmp]{prop:rep1} आणि
+\olref[inc][req][cmp]{prop:rep2} यांच्या पुराव्यांचा आधार घेऊन
+\olref[inc][req][cmp]{prop:rep-composition} चा पुरावा तपशीलवार द्या.
+\end{prob}
+
+\end{document}
