@@ -1,0 +1,432 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: size-of-domain
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{siz}
+
+\olsection{अनंत आणि \usetoken{S}{enumerable}
+  \usetoken{P}{domain} यांचे वर्णन}
+
+संच~$M$ हा
+(डेडेकिंडच्या अर्थाने)
+अनंत असतो,
+जर आणि फक्त जर
+$f\colon M
+\to M$ असे
+!!a{injective}
+फलन असते जे
+!!{surjective}
+नसते; म्हणजे
+$\ran{f} \neq M$.
+प्रथम-क्रम
+तर्कशास्त्रात
+एक-स्थानी
+!!{function}~$f$
+घेऊन
+!!a{structure}~$\Struct{M}$
+मध्ये त्याला
+नेमलेले फलन
+$\Assign{f}{M}$
+हे !!{injective}
+आहे आणि
+$\ran{f} \neq
+\Domain{M}$
+आहे असे
+म्हणता येते:
+\[
+\lforall[x][\lforall[y][(\eq[f(x)][f(y)] \to \eq[x][y])]] \land
+\lexists[y][\lforall[x][\eq/[y][f(x)]]].
+\]
+$\Struct{M}$
+ही या
+!!{sentence}
+ची पूर्ति करत
+असेल, तर
+$\Assign{f}{M}:
+\Domain{M} \to \Domain{M}$
+हे !!{injective}
+असते, म्हणून
+$\Domain{M}$
+अनंत असलेच
+पाहिजे.
+$\Domain{M}$
+अनंत असेल
+आणि म्हणून
+असे फलन
+अस्तित्वात असेल,
+तर ते फलन
+$\Assign{f}{M}$
+म्हणून घेता
+येते आणि
+$\Struct{M}$
+ही त्या
+!!{sentence}
+ची पूर्ति करेल.
+मात्र यासाठी
+आपल्या भाषेत
+या हेतूने
+वापरण्यात येणारे
+अतार्किक चिन्ह~$f$
+असणे आवश्यक
+आहे.
+द्वितीय-क्रम
+तर्कशास्त्रात
+असे फलन
+\emph{अस्तित्वात आहे}
+असे थेट
+म्हणता येते.
+यासाठी
+आता~$f$
+लागत नाही,
+आणि शुद्ध
+द्वितीय-क्रम
+तर्कशास्त्रातील
+पुढील
+!!{sentence}
+मिळते:
+\[
+\fn{Inf} \ident \lexists[u][(\lforall[x][\lforall[y][(\eq[u(x)][u(y)]
+      \lif \eq[x][y])]] \land \lexists[y][\lforall[x][\eq/[y][u(x)]]])].
+\]
+$\Sat{M}{\fn{Inf}}$
+हे
+$\Domain{M}$
+अनंत असेल
+तर आणि तरच
+खरे असते.
+मग
+$\fn{Fin} \ident \lnot \fn{Inf}$
+असे परिभाषित
+करता येते;
+$\Sat{M}{\fn{Fin}}$
+हे
+$\Domain{M}$
+सांत असेल
+तर आणि तरच
+खरे असते.
+शुद्ध प्रथम-क्रम
+तर्कशास्त्रातील
+कोणतेही एक
+!!{sentence}
+!!{domain}
+अनंत आहे
+हे व्यक्त
+करू शकत
+नाही, मात्र
+अशा वाक्यांचा
+अनंत संच
+ते करू शकतो.
+शुद्ध प्रथम-क्रम
+तर्कशास्त्रातील
+!!{sentence}s
+चा असा
+कोणताही संच
+नाही की
+त्याची
+!!a{structure}
+मध्ये पूर्ति
+होते जर आणि
+फक्त जर तिचे
+आधारक्षेत्र
+सांत आहे.
+
+\begin{prop}
+$\Sat{M}{\fn{Inf}}$
+हे
+$\Domain{M}$
+अनंत असेल
+तर आणि तरच
+खरे असते.
+\end{prop}
+
+\begin{proof}
+$\Sat{M}{\fn{Inf}}$
+असेल तर आणि
+तरच काही~$s$
+साठी
+  $\Sat{M}{\lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif \eq[x][y])]]
+    \land \lexists[y][\lforall[x][\eq/[y][u(x)]]]}[s]$.
+  असे असेल,
+  तर $s(u)$
+  हे !!a{injective}
+  फलन आहे
+  आणि काही
+  $y
+  \in \Domain{M}$
+  हे~$s(u)$
+  च्या व्याप्तीत
+  नाही.
+  उलट
+  $f\colon \Domain{M} \to \Domain{M}$
+  असे
+  !!a{injective}
+  फलन असेल
+  की
+  $\ran{f}
+  \neq \Domain{M}$,
+  तर
+  $s(u) = f$
+  असे चर-मूल्यांकन
+  मिळते.
+\end{proof}
+
+संच $M$
+!!{enumerable}
+असतो, जर
+त्यातील
+!!{element}s
+ची पुनरावृत्ती
+नसलेली
+(पण शक्यतो
+सांत असलेली)
+पुढील
+प्रगणना असते:
+\[
+m_0, m_1, m_2, \dots
+\]
+अशी प्रगणना
+असते जर
+आणि फक्त
+जर
+!!a{element}
+$z \in M$
+आणि
+$f\colon M \to M$
+असे फलन
+असते की
+$z$, $f(z)$,
+$f(f(z))$, \dots,
+हे~$M$
+चे सर्व
+!!{element}s
+असतात.
+कारण प्रगणना
+असेल, तर
+$z = m_0$
+आणि
+$f(m_k) = m_{k+1}$
+(किंवा
+$m_k$ हा
+प्रगणनेतील
+शेवटचा
+!!{element}
+असेल, तर
+$f(m_k) = m_k$)
+हे अपेक्षित
+!!{element}
+आणि फलन
+ठरतात.
+उलट असे
+$z$ आणि
+$f$ असतील,
+तर
+$z$, $f(z)$,
+$f(f(z))$, \dots,
+ही~$M$
+ची प्रगणना
+असते आणि
+$M$ हा
+!!{enumerable}
+असतो.
+$z$ आणि~$f$
+यांचे अस्तित्व
+द्वितीय-क्रम
+तर्कशास्त्रात
+व्यक्त करून
+असे
+!!{sentence}
+तयार करता
+येते की
+ते
+!!a{structure}
+मध्ये खरे
+असते जर
+आणि फक्त
+जर ती
+!!{structure}
+!!{enumerable}
+असते:
+\[
+\fn{Count} \ident
+\lexists[z][\lexists[u][\lforall[X][((X(z) \land
+      \lforall[x][(X(x) \lif X(u(x)))]) \lif \lforall[x][X(x)])]]]
+\]
+
+\begin{prop}
+$\Sat{M}{\fn{Count}}$
+हे
+$\Domain{M}$
+!!{enumerable}
+असेल तर
+आणि तरच
+खरे असते.
+\end{prop}
+
+\begin{proof}
+$\Domain{M}$
+!!{enumerable}
+आहे असे
+समजू आणि
+$m_0$, $m_1$,
+\dots, ही
+प्रगणना घेऊ.
+पुनरावृत्ती
+काढून टाकल्यास
+कोणतेही
+$m_k$ दोनदा
+येणार नाही
+याची खात्री
+करता येते.
+$f(m_k) = m_{k+1}$
+असे परिभाषित
+करू (सांत
+प्रगणनेच्या
+शेवटच्या घटकावर
+फलन तोच घटक
+परत देते)
+आणि
+$s(z) = m_0$,
+$s(u) = f$
+घेऊ.
+आता पुढील
+गोष्ट दाखवू:
+\[
+\Sat{M}{\lforall[X][((X(z) \land \lforall[x][(X(x) \lif X(u(x)))])
+    \lif \lforall[x][X(x)])]}[s]
+\]
+$M \subseteq \Domain{M}$
+हा कोणताही
+संच असू
+द्या.
+तसेच
+$\Sat{M}{(X(z) \land \lforall[x][(X(x) \lif
+X(u(x)))])}[\Subst{s}{M}{X}]$
+असे धरू.
+मग
+$\Subst{s}{M}{X}(z) \in M$
+आणि
+$x \in M$
+असेल तेव्हा
+$(\Subst{s}{M}{X}(u))(x) \in M$
+ही.
+दुसऱ्या
+शब्दांत,
+$\varAssign{\Subst{s}{M}{X}}{s}{X}$
+असल्यामुळे
+$m_0 \in M$
+आणि
+$x \in M$
+असेल तर
+$f(x) \in M$;
+म्हणून
+$m_0 \in M$,
+$m_1 = f(m_0) \in M$,
+$m_2 = f(f(m_0)) \in M$
+इत्यादी.
+त्यामुळे
+$M = \Domain{M}$
+आणि म्हणून
+$\Sat{M}{\lforall[x][X(x)]}[\Subst{s}{M}{X}]$.
+$M \subseteq
+\Domain{M}$
+कोणताही
+असल्यामुळे
+सिद्धता पूर्ण:
+$\Sat{M}{\fn{Count}}$.
+
+आता
+$\Sat{M}{\fn{Count}}$,
+म्हणजे
+\[
+\Sat{M}{\lforall[X][((X(z) \land \lforall[x][(X(x) \lif X(u(x)))])
+    \lif \lforall[x][X(x)])]}[s]
+\]
+काही~$s$
+साठी आहे
+असे समजू.
+$m = s(z)$
+आणि
+$f = s(u)$
+घेऊ आणि
+$M = \{m,
+f(m), f(f(m)), \dots\}$
+हा संच
+विचारात
+घेऊ.
+असा
+परिभाषित
+केलेला
+$M$
+स्पष्टपणे
+!!{enumerable}
+आहे.
+मग
+\[
+\Sat{M}{(X(z) \land \lforall[x][(X(x) \lif X(u(x)))])
+    \lif \lforall[x][X(x)]}[\Subst{s}{M}{X}]
+\]
+हे गृहीतकावरून
+मिळते.
+तसेच
+$\Sat{M}{X(z)}[\Subst{s}{M}{X}]$,
+कारण
+$M \ni m =
+\Subst{s}{M}{X}(z)$;
+आणि
+$\Sat{M}{\lforall[x][(X(x) \lif
+X(u(x)))]}[\Subst{s}{M}{X}]$
+सुद्धा,
+कारण
+$x \in M$
+असेल तेव्हा
+$f(x) \in
+M$.
+म्हणून
+पूर्वपक्ष
+आणि शर्त
+दोन्हींची
+पूर्ति
+झाल्याने
+उत्तरपक्षाचीही
+पूर्ति झाली
+पाहिजे:
+$\Sat{M}{\lforall[x][X(x)]}[\Subst{s}{M}{X}]$.
+पण याचा
+अर्थ
+$M = \Domain{M}$.
+म्हणून
+$\Domain{M}$
+!!{enumerable}
+आहे, कारण
+$M$ व्याख्येने
+तसाच आहे.
+\end{proof}
+
+\begin{prob}
+!!{sentence}
+$\fn{Inf} \land \fn{Count}$
+हे नेमक्या
+!!{denumerable}
+आधारक्षेत्रांत
+खरे असते.
+$\fn{Count}$
+ची व्याख्या
+बदलून
+आधारक्षेत्र
+!!{denumerable}
+आहे हे
+थेट व्यक्त
+करणारे
+वेगळे
+!!{sentence}
+मिळवा आणि
+ते तसे
+करते हे
+सिद्ध करा.
+\end{prob}
+
+\end{document}
