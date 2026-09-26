@@ -1,0 +1,57 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{sub}
+\olsection{आदेशन}
+
+आदेशन म्हणजे !!a{formula}~$!A$ मध्ये !!a{variable}~$u$ च्या
+सर्व मुक्त आस्थितींच्या जागी पद~$t$ ठेवण्याची क्रिया आहे;
+ती $\Subst{!A}{t}{u}$ अशी लिहितात, हे आठवा. !!{variable}s,
+!!{formula}s आणि पदे यांच्या गोडेल संख्यांवर ही क्रिया
+केली, तर ती आदिम पुनरावर्ती असते.
+
+\begin{prop}\ollabel{prop:subst-primrec}
+पुढील गुणधर्म असलेले आदिम पुनरावर्ती फलन $\fn{Subst}(x, y, z)$
+अस्तित्वात आहे:
+\[
+\fn{Subst}(\Gn{!A}, \Gn{t}, \Gn{u}) = \Gn{\Subst{!A}{t}{u}}.
+\]
+\end{prop}
+
+\begin{proof}
+आता $\fn{hSubst}$ हे फलन पुढीलप्रमाणे आदिम पुनरावर्तनाने
+परिभाषित करता येते:
+\begin{multline*}
+\begin{aligned}
+\fn{hSubst}(x, y, z, 0) & = \emptyseq \\
+\fn{hSubst}(x, y, z, i+1) & =
+\end{aligned}\\
+\begin{cases}
+\fn{hSubst}(x, y, z, i) \concat y & \text{जर $\fn{FreeOcc}(x, z, i)$ खरे असेल तर} \\
+\fn{append}(\fn{hSubst}(x, y, z, i), (x)_{i}) & \text{अन्यथा.}
+\end{cases}
+\end{multline*}
+आता $\fn{Subst}(x, y, z)$ ची व्याख्या
+$\fn{hSubst}(x, y, z, \len{x})$ अशी करता येते.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:free-for}
+गोडेल संख्या~$y$ असलेले पद, गोडेल संख्या~$x$ असलेल्या सूत्रात
+गोडेल संख्या~$z$ असलेल्या चरासाठी !!{free for} असेल,
+तर आणि तरच खरे असणारा $\fn{FreeFor}(x, y, z)$ हा संबंध
+आदिम पुनरावर्ती आहे.
+\end{prop}
+
+\begin{proof} सराव. \end{proof}
+
+\begin{prob}
+\olref[inc][art][sub]{prop:free-for} सिद्ध करा.
+\end{prob}
+
+\end{document}
