@@ -600,6 +600,12 @@ _DOCUMENTED_PROJECTIONS = {
         # OLINC-058: keep the theorem's theory notation in its conclusion.
         (r'$\OCon[\Th{T}]$', r'$\OCon[T]$'),
     ],
+    'OLP-0328': [
+        # OLINC-060: the earlier relation chapter reserves R^* for the
+        # reflexive transitive closure; this section defines positive
+        # transitive closure, so its Marathi notation uses R^+.
+        (r'R^+', r'R^*'),
+    ],
 }
 
 
