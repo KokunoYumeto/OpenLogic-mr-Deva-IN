@@ -1,0 +1,272 @@
+% Part: incompleteness
+% Chapter: incompleteness-provability
+% Section: rosser-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{ros}
+
+\olsection{रोसरचे प्रमेय}
+
+गोडेलची सिद्धता बदलून अधिक सबळ निकाल मिळेल का,
+म्हणजे “$\omega$-सुसंगत” ऐवजी फक्त
+“सुसंगत” असे गृहीत धरता येईल का?
+रोसरने शोधलेल्या युक्तीमुळे याचे उत्तर
+“होय” असे आहे. रोसरची युक्ती म्हणजे
+$\OProv[\Th{T}](y)$ च्या जागी
+“सुधारित” !!{derivability} विधेय
+$\ORProv_T(y)$ वापरणे.
+
+\begin{thm}
+\ollabel{thm:rosser}
+$\Th{T}$ ही~$\Th{Q}$ चा विस्तार
+असलेली कोणतीही सुसंगत आणि
+!!{axiomatizable} उपपत्ती असू द्या.
+मग $\Th{T}$ संपूर्ण नसते.
+\end{thm}
+
+\begin{proof}
+आठवा, $\OProv[\Th{T}](y)$ ची व्याख्या
+$\lexists[x][\OPrf[\Th{T}](x,
+  y)]$ अशी आहे. येथे
+$\OPrf[\Th{T}](x, y)$ हे अशा निर्णेय
+संबंधाचे निरूपण करते की $x$ ही
+गोडेल संख्या~$y$ असलेल्या
+!!{sentence} च्या !!a{derivation}
+ची गोडेल संख्या असेल तेव्हाच तो
+संबंध खरा असतो. $x$ आणि~$y$
+यांच्यातील पुढील संबंधही निर्णेय
+असतो: $x$ ही गोडेल
+संख्या~$y$ असलेल्या वाक्याच्या
+\emph{खंडनाची} गोडेल संख्या असते.
+$\fn{not}(x)$ हे पुढील कार्य
+करणारे आदिम पुनरावर्ती फलन
+असू द्या: $x$ हा $!A$ या
+सूत्राचा संकेतांक असेल, तर
+$\fn{not}(x)$ हा $\lnot
+!A$ चा संकेतांक असतो. मग
+$\Refut[\Th{T}](x, y)$ तेव्हाच
+खरे असते जेव्हा
+$\Prf[\Th{T}](x, \fn{not}(y))$
+खरे असते. त्याचे निरूपण
+$\ORefut[\Th{T}](x, y)$
+करू द्या. मग
+$\Th{T} \Proves \lnot !A$
+असेल आणि $\delta$ ही
+संबंधित !!{derivation} असेल,
+तर $\Th{Q} \Proves
+\ORefut[\Th{T}](\gn{\delta}, \gn{!A})$.
+आता $\ORProv[\Th{T}](y)$ ची
+व्याख्या अशी करू:
+\[
+\lexists[x][(\OPrf[\Th{T}](x,y) \land \lforall[z][(z < x \lif \lnot
+  \ORefut[\Th{T}](z,y))])].
+\]
+स्थूलपणे, $\ORProv[\Th{T}](y)$
+असे सांगते की “$y$ ची
+$\Th{T}$ मध्ये सिद्धता आहे,
+आणि कमी संकेतांक असलेले
+$y$ चे खंडन नाही.”
+$\Th{T}$ सुसंगत असेल,
+तर $\ORProv[\Th{T}](y)$ आणि
+$\OProv[\Th{T}](y)$ ही दोन्ही
+विधाने त्याच संख्यांसाठी
+सत्य असतात. पण $\Th{T}$
+मधील \emph{सिद्धतायोग्यतेच्या}
+दृष्टीने (आता सत्य आणि
+सिद्धतायोग्यता यांत फरक आहे
+हे आपल्याला माहीत आहे)
+त्यांचे गुणधर्म भिन्न असतात.
+$\Th{T}$ \emph{वि}संगत
+असेल, तर ती दोन्ही विधाने
+त्याच संख्यांसाठी सत्य
+\emph{नाहीत}!{}
+($\ORProv[\Th{T}](y)$
+याचा अर्थ अनेकदा “$y$ रोसर
+अर्थाने सिद्धतायोग्य आहे”
+असा घेतला जातो. पण आत्ताच
+पाहिल्याप्रमाणे रोसर
+सिद्धतायोग्यता हा
+सिद्धतायोग्यतेचा काही
+विशेष प्रकार नाही:
+विसंगत उपपत्तीत काही
+!!{sentence}s सिद्धतायोग्य
+असतात, पण रोसर अर्थाने
+सिद्धतायोग्य नसतात.
+म्हणून हा शब्द गोंधळात
+टाकू शकतो. तो टाळण्यासाठी
+“$y$ शमोव्हेबल आहे”
+असेही म्हणता येईल.)
+
+स्थिरबिंदू उपपत्तीवरून
+असे सूत्र $!R_\Th{T}$
+असते की
+\begin{equation}
+  \Th{Q} \Proves !R_\Th{T} \liff \lnot \ORProv[\Th{T}](\gn{!R_\Th{T}}).
+  \ollabel{RT}
+\end{equation}
+\olref[1in]{thm:first-incompleteness}
+च्या सिद्धतेपेक्षा इथे
+आपला दावा अधिक सबळ आहे:
+$\Th{T}$ सुसंगत असेल,
+तर $\Th{T}$ हे
+$!R_\Th{T}$ ला !!{derive}
+करत नाही, आणि $\Th{T}$
+$\lnot !R_\Th{T}$ लाही
+!!{derive} करत नाही.
+(म्हणजे $\omega$-सुसंगततेचे
+गृहीतक लागत नाही.)
+
+प्रथम $\Th{T} \Proves/
+!R_{\Th{T}}$ हे दाखवू.
+उलट ते सिद्ध होत असेल,
+तर~$T$ पासून
+$!R_{\Th{T}}$ ची
+!!a{derivation} आहे;
+तिची गोडेल संख्या $n$
+मानू. $\OPrf[\Th{T}]$
+हे $\Prf[\Th{T}]$ चे
+$\Th{Q}$ मध्ये निरूपण
+करत असल्यामुळे
+$\Th{Q} \Proves
+\OPrf[\Th{T}](\num{n}, \gn{!R_{\Th{T}}})$.
+शिवाय प्रत्येक $k < n$
+साठी, $\Th{T}$ सुसंगत
+असल्यामुळे, $k$ ही
+$\lnot !R_{\Th{T}}$
+च्या !!a{derivation} ची
+गोडेल संख्या नसते.
+म्हणून प्रत्येक $k < n$
+साठी $\Th{Q} \Proves \lnot
+\ORefut[\Th{T}](\num{k}, \gn{!R_{\Th{T}}})$.
+\olref[req][min]{lem:less-nsucc}
+वरून $\Th{Q} \Proves
+\lforall[z][(z < \num{n} \lif \lnot \ORefut[\Th{T}](z,
+  \gn{!R_{\Th{T}}}))]$.
+त्यामुळे
+\[
+\Th{Q} \Proves \lexists[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \land \lforall[z][(z
+    < x \lif \lnot \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])],
+\]
+पण हेच
+$\ORProv[\Th{T}](\gn{!R_{\Th{T}}})$
+आहे. \olref{RT} वरून
+$\Th{Q}
+\Proves \lnot !R_{\Th{T}}$.
+$\Th{T}$ हा $\Th{Q}$ चा
+विस्तार असल्यामुळे
+$\Th{T}
+\Proves \lnot !R_{\Th{T}}$
+सुद्धा मिळते. पण आपण
+$\Th{T} \Proves !R_{\Th{T}}$
+असे गृहीत धरले होते.
+त्यामुळे $\Th{T}$ विसंगत
+ठरेल; हे प्रमेयाच्या
+गृहीतकाच्या विरुद्ध आहे.
+
+आता $\Th{T} \Proves/
+\lnot !R_{\Th{T}}$ हे
+दाखवू. उलट ते सिद्ध होत
+असेल आणि
+$\lnot !R_{\Th{T}}$
+च्या !!a{derivation} ची
+गोडेल संख्या $n$ असेल
+असे मानू. मग
+$\Refut[\Th{T}](n, \Gn{!R_{\Th{T}}})$
+खरे असते. $\ORefut[\Th{T}]$
+हे $\Refut[\Th{T}]$ चे
+$\Th{Q}$ मध्ये निरूपण
+करत असल्यामुळे
+$\Th{Q} \Proves
+\ORefut[\Th{T}](\num{n}, \gn{!R_{\Th{T}}})$.
+मग $\Th{T}$ हे
+$!R_{\Th{T}}$ सुद्धा
+!!{derive} करेल आणि
+त्यामुळे विसंगत ठरेल,
+हे पुन्हा दाखवू. कारण
+\begin{align*}
+\Th{Q} & \Proves !R_{\Th{T}} \liff \lnot \ORProv[\Th{T}](\gn{!R_{\Th{T}}}),
+\intertext{आणि $\Th{T}$ हा~$\Th{Q}$ चा विस्तार असल्यामुळे पुढील दाखवणे पुरेसे आहे:}
+\Th{Q} & \Proves \lnot \ORProv[\Th{T}](\gn{!R_{\Th{T}}}).
+\end{align*}
+!!{sentence} $\lnot
+\ORProv[\Th{T}](\gn{!R_{\Th{T}}})$,
+म्हणजे
+\begin{align*}
+  \lnot & \lexists[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \land
+    \lforall[z][(z < x \lif \lnot \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])],
+  \intertext{हे तर्कशास्त्रीय दृष्ट्या पुढील विधानाशी सममूल्य आहे:}
+  & \lforall[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \lif
+    \lexists[z][(z < x \land \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])].
+\end{align*}
+$\Th{Q}$ काय !!{derive}s
+करते याविषयीची तथ्ये वापरून
+अनौपचारिक युक्तिवाद करू.
+$x$ स्वेच्छेने निवडलेला
+आणि $\OPrf[\Th{T}](x,
+\gn{!R_{\Th{T}}})$ खरा
+आहे असे मानू. आपल्याला
+आधीच माहीत आहे की
+$\Th{T} \Proves/ !R_{\Th{T}}$.
+म्हणून प्रत्येक $k$
+साठी $\Th{Q} \Proves \lnot
+\OPrf[\Th{T}](\num{k}, \gn{!R_{\Th{T}}})$.
+त्यामुळे प्रत्येक $k$
+साठी $\eq/[x][\num{k}]$
+मिळते. विशेषतः (a)
+$\eq/[x][\num{n}]$
+मिळते. तसेच
+$\lnot(\eq[x][\num{0}]
+\lor \eq[x][\num{1}] \lor \dots
+\lor \eq[x][\num{n-1}])$
+मिळते. म्हणून
+\olref[req][min]{lem:less-nsucc}
+वरून (b) $\lnot(x < \num{n})$.
+\olref[req][min]{lem:trichotomy}
+वरून $\num{n} < x$.
+$\Th{Q} \Proves
+\ORefut[\Th{T}](\num{n}, \gn{!R_{\Th{T}}})$
+असल्यामुळे
+$\num{n} < x \land
+\ORefut[\Th{T}](\num{n}, \gn{!R_{\Th{T}}})$
+मिळते, आणि त्यावरून
+$\lexists[z][(z < x
+\land \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))]$
+मिळते. $x$ स्वेच्छेने
+निवडलेला असल्यामुळे
+अपेक्षेप्रमाणे पुढील मिळते:
+\[
+\lforall[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \lif
+  \lexists[z][(z < x \land \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])].
+\]
+\end{proof}
+
+\begin{prob}
+नैसर्गिक संख्यांचे दोन संच
+$A$ आणि $B$ यांना
+\emph{संगणनक्षमपणे अविलगनीय}
+म्हणतात, जर $A \subseteq X$
+आणि $B \subseteq \Complement{X}$
+असेल असा कोणताही
+!!{decidable} संच~$X$
+नसेल ($\Complement{X}$
+म्हणजे~$X$ चा पूरक
+$\Nat \setminus X$).
+$\Th{T}$ ही~$\Th{Q}$
+ची सुसंगत,
+!!{axiomatizable} विस्तार-उपपत्ती
+असू द्या. $\Th{T}$
+मध्ये सिद्ध होणाऱ्या
+!!{sentence}s च्या गोडेल
+संख्यांचा संच $A$,
+आणि $\Th{T}$ मध्ये
+खंडित होणाऱ्या वाक्यांच्या
+गोडेल संख्यांचा संच $B$
+असेल असे मानू. $A$ आणि
+$B$ हे संगणनक्षमपणे
+अविलगनीय आहेत हे सिद्ध करा.
+\end{prob}
+
+\end{document}
