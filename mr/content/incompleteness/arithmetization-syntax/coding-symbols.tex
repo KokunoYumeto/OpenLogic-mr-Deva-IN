@@ -1,0 +1,113 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: coding-symbols
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{cod}
+\olsection{चिन्हांचे सांकेतीकरण}
+
+प्रथम-क्रम तर्कशास्त्राच्या मूलभूत भाषा~$\Lang L$ मध्ये ही चिन्हे वापरली जातात:
+\[
+\lfalse \quad \lnot \quad \lor \quad \land \quad \lif \quad \lforall
+\quad \lexists \quad \eq \quad ( \quad ) \quad ,
+\]
+यांबरोबर चरे व !!{constant}s यांचे !!{enumerable} संच, तसेच कोणत्याही
+स्थानसंख्येची !!{function}s व !!{predicate}s यांचे !!{enumerable} संचही
+वापरले जातात. या प्रत्येक चिन्हाला \emph{संकेतांक} म्हणून एक संख्या
+देता येते: प्रत्येक चिन्हाचा संकेतांक वेगळा असेल आणि दोन भिन्न
+चिन्हांना एकच संख्या दिली जाणार नाही. सर्व चिन्हांचा संच !!{enumerable}
+असल्यामुळे त्याची नैसर्गिक संख्यांच्या संचाशी !!a{bijection} आहे;
+म्हणून हे शक्य आहे. परंतु संकेतांकावरून चिन्ह आणि त्याविषयीची काही
+माहिती (उदा. !!a{function} ची स्थानसंख्या) संगणनक्षम रीतीने परत
+मिळाली पाहिजे. असे करण्याचे अनेक मार्ग आहेत. पुढील मार्गात आदिम
+पुनरावर्ती फलने वापरली आहेत. ($\tuple{n_0, \dots, n_k}$ ही
+$n_0$, \dots, $n_k$ या संख्यांच्या अनुक्रमाला सांकेतिक करणारी संख्या
+आहे, हे आठवा.)
+
+\begin{defn}
+$s$ हे~$\Lang L$ मधील चिन्ह असेल, तर त्याचा \emph{चिन्हसंकेतांक}~$\scode s$
+पुढीलप्रमाणे परिभाषित करू:
+\begin{enumerate}
+\item $s$ हे तार्किक चिन्हांपैकी असेल, तर पुढील सारणीनुसार $\scode s$ ठरतो:
+\[
+\begin{array}{cccccccccc}
+  \lfalse & \lnot & \lor & \land & \lif & \lforall \\
+\tuple{0, 0} & \tuple{0, 1} & \tuple{0, 2} & \tuple{0, 3} &
+\tuple{0, 4} & \tuple{0, 5} \\
+\lexists & \eq & ( & ) & ,\\
+\tuple{0, 6} & \tuple{0, 7} &
+\tuple{0, 8} & \tuple{0, 9} & \tuple{0, 10}
+\end{array}
+\]
+\item $s$ हे $i$-वे चर $\Obj v_i$ असेल, तर $\scode s = \tuple{1, i}$.
+\item $s$ हे $i$-वे !!{constant}~$\Obj c_i$ असेल, तर
+  $\scode s = \tuple{2, i}$.
+\item $s$ हे $i$-वे $n$-स्थानी !!{function}~$\Obj f_i^n$ असेल, तर
+  $\scode s = \tuple{3, n, i}$.
+\item $s$ हे $i$-वे $n$-स्थानी !!{predicate}~$\Obj P_i^n$ असेल, तर
+  $\scode s = \tuple{4, n, i}$.
+\end{enumerate}
+\end{defn}
+
+\begin{prop}
+पुढील संबंध आदिम पुनरावर्ती आहेत:
+\begin{enumerate}
+\item $\fn{Fn}(x, n)$ तेव्हाच जेव्हा $x$ हा एखाद्या~$i$ साठी
+  $\Obj f^n_i$ चा संकेतांक असतो; म्हणजेच $x$ हा $n$-स्थानी
+  !!{function} चा संकेतांक असतो.
+\item $\fn{Pred}(x, n)$ तेव्हाच जेव्हा $x$ हा एखाद्या~$i$ साठी
+  $\Obj P^n_i$ चा संकेतांक असतो, किंवा $x$ हा $\eq$ चा संकेतांक
+  असतो आणि $n = 2$ असते; म्हणजेच $x$ हा $n$-स्थानी !!{predicate}
+  चा संकेतांक असतो.
+\end{enumerate}
+\end{prop}
+
+\begin{defn}
+$s_0, \dots, s_{n-1}$ हा चिन्हांचा अनुक्रम असेल, तर त्याची
+\emph{गोडेल संख्या} $\tuple{\scode{s_0}, \dots, \scode{s_{n-1}}}$ आहे.
+\end{defn}
+
+\begin{explain}
+\emph{संकेतांक} आणि \emph{गोडेल संख्या} वेगवेगळ्या गोष्टी आहेत,
+हे लक्षात घ्या. उदाहरणार्थ, $\Obj v_5$ या चराचा संकेतांक
+$\scode{\Obj v_5} = \tuple{1, 5} = 2^2\cdot 3^6$ आहे.
+पण पद म्हणून पाहिले असता~$\Obj v_5$ हाही लांबी~$1$ असलेला
+चिन्हांचा अनुक्रम आहे. त्यामुळे $\Obj v_5$ या \emph{पदाची}
+\emph{गोडेल संख्या}~$\Gn{\Obj v_5}$ ही
+$\tuple{\scode{\Obj v_5}} = 2^{\scode{\Obj v_5} + 1} =
+2^{2^2\cdot 3^6 + 1}$ आहे.
+\end{explain}
+
+\begin{ex}
+$k_0$, \dots, $k_{n-1}$ हा संख्यांचा अनुक्रम असेल, तर
+अविभाज्य संख्यांच्या घातांनी केलेल्या सांकेतीकरणात
+$\tuple{k_0, \dots, k_{n-1}}$ हा त्याचा संकेतांक
+\[
+2^{k_0+1}\cdot3^{k_1+1}\cdot \dots \cdot p_{n-1}^{k_{n-1}+1},
+\]
+आहे, हे आठवा. येथे $p_i$ ही $i$-वी अविभाज्य संख्या आहे
+($p_0 = 2$ पासून सुरुवात होते). म्हणून, उदाहरणार्थ,
+$\eq[\Obj v_0][\Obj 0]$ हे सूत्र, किंवा अधिक स्पष्टपणे
+${\eq}(\Obj v_0,\Obj c_0)$, याची गोडेल संख्या
+\[
+\tuple{\scode{\eq},\scode{(},\scode{\Obj v_0},\scode{,}, \scode{\Obj
+    c_0},\scode{)}}.
+\]
+आहे. येथे $\scode{\eq}$ हा $\tuple{0,7} = 2^{0+1}\cdot
+3^{7+1}$ आहे; $\scode{\Obj v_0}$ हा $\tuple{1,0} = 2^{1+1}\cdot3^{0+1}$
+आहे; इत्यादी. म्हणून $\Gn{=(\Obj v_0,\Obj c_0)}$ ही संख्या
+\begin{multline*}
+2^{\scode{=} + 1}\cdot 3^{\scode{(}+1}\cdot 5^{\scode{\Obj v_0}+1}
+\cdot 7^{\scode{,} + 1} \cdot 11^{\scode{\Obj c_0}+1} \cdot
+13^{\scode{)}+1} = \\
+2^{2^1\cdot 3^8 + 1}\cdot 3^{2^1\cdot 3^9+1}\cdot 5^{2^2\cdot 3^1+1}
+\cdot 7^{2^1\cdot 3^{11} + 1} \cdot 11^{2^3\cdot3^1+1} \cdot
+13^{2^1\cdot3^{10}+1} = \\
+2^{13\,123}\cdot 3^{39\,367}\cdot 5^{13}\cdot 7^{354\,295}\cdot11^{25}\cdot13^{118\,099}.
+\end{multline*}
+\end{ex}
+
+\end{document}

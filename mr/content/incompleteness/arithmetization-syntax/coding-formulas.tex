@@ -1,0 +1,98 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: coding-formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{frm}
+\olsection{\printtoken{P}{formula} यांचे सांकेतीकरण}
+
+$\fn{Term}(x)$ हा संबंध आदिम पुनरावर्ती रीतीने परिभाषित केल्यावर
+!!{formula}s साठीचा संबंधित संबंध $\fn{Frm}(x)$ हाही आदिम
+पुनरावर्ती रीतीने परिभाषित करता येतो.
+
+\begin{prop}
+$x$ ही आण्विक !!{formula} ची गोडेल संख्या असेल, तर आणि तरच
+खरे असणारा $\fn{Atom}(x)$ हा संबंध आदिम पुनरावर्ती आहे.
+\end{prop}
+
+\begin{proof}
+$x$ ही आण्विक !!{formula} ची गोडेल संख्या असेल, तर आणि तरच
+पुढीलपैकी एक अट खरी असते:
+\begin{enumerate}
+\item $n$, $j < x$ आणि $z < x$ अशी मूल्ये अस्तित्वात आहेत की
+  प्रत्येक $i < n$ साठी $\fn{Term}((z)_i)$ खरे आहे आणि $x = $
+\[
+\Gn{\Obj P^n_j(} \concat \fn{flatten}(z) \concat \Gn{)}.
+\]
+\item $z_1, z_2 < x$ अशी मूल्ये अस्तित्वात आहेत की $\fn{Term}(z_1)$,
+  $\fn{Term}(z_2)$ खरे आहेत आणि $x = $
+\[
+\Gn{{\eq}(} \concat z_1 \concat \Gn{,} \concat z_2 \concat{\Gn{)}}.
+\]
+  \tagitem{prvFalse}{$x = \Gn{\lfalse}$.}{}
+  \tagitem{prvTrue}{$x = \Gn{\ltrue}$.}{}
+\end{enumerate}
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:frm-primrec}
+$x$ ही !!a{formula} ची गोडेल संख्या असेल, तर आणि तरच
+खरे असणारा $\fn{Frm}(x)$ हा संबंध आदिम पुनरावर्ती आहे.
+\end{prop}
+
+\begin{proof}
+चिन्हांचा अनुक्रम~$s$ हे !!a{formula} असेल, तर आणि तरच
+!!{formula} ची अशी रचनाक्रमिका~$s_0$, \dots, $s_{k-1} = s$
+अस्तित्वात असते की जिच्यात रचनानियमांनुसार आण्विक !!{formula}s
+पासून~$s$ कसे बनले याची नोंद असते. प्रत्येक $s_i$ चा संकेतांक
+$s$ च्या संकेतांक~$x$ पेक्षा मोठा नसतो; पण संपूर्ण रचनाक्रमिका
+$\tuple{s_0, \dots, s_{k-1}}$ हिचा संकेतांक त्यापेक्षा लहान
+असणे आवश्यक नाही: मूळ इंग्रजीतील उलट दावा एका आण्विक सूत्रासाठीही
+खोटा ठरतो. त्याऐवजी मागील पदांच्या सिद्धतेप्रमाणे त्याला
+त्या अंतिम सूत्राच्या संकेतांकावर अवलंबून आदिम पुनरावर्ती वरची
+मर्यादा देता येते.
+\end{proof}
+
+\begin{prob}
+\olref[inc][art][frm]{prop:frm-primrec} ची, 
+\olref[inc][art][trm]{prop:term-primrec} च्या पहिल्या सिद्धतेच्या
+धर्तीवर, सविस्तर सिद्धता द्या.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:freeocc-primrec}
+$x$ ही गोडेल संख्या असलेल्या सूत्रातील $i$-वे चिन्ह हे
+गोडेल संख्या~$z$ असलेल्या चराची मुक्त आस्थिती असेल,
+तर आणि तरच खरे असणारा $\fn{FreeOcc}(x, z, i)$ हा संबंध
+आदिम पुनरावर्ती आहे.
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+\begin{prob}
+\olref[inc][art][frm]{prop:freeocc-primrec} सिद्ध करा.
+!!a{formula} च्या ज्या उपचिन्हमाला स्वतः !!a{formula} आहेत,
+त्या त्याची उप-!!{formula} आहेत, हे तथ्य वापरू शकता.
+\end{prob}
+
+\begin{prop}
+$x$ ही !!a{sentence} ची गोडेल संख्या असेल, तर आणि तरच
+खरे असणारा $\fn{Sent}(x)$ हा गुणधर्म आदिम पुनरावर्ती आहे.
+\end{prop}
+
+\begin{proof}
+!!{sentence} म्हणजे !!{variable}s च्या मुक्त आस्थिती नसलेले
+!!a{formula}. म्हणून $\fn{Sent}(x)$ तेव्हाच खरे असते जेव्हा
+\begin{multline*}
+\bforall{i<\len{x}}{\bforall{z<x}{}}\\
+(\bexists{j<z}{z=\Gn{\Obj v_j}} \lif \lnot\fn{FreeOcc}(x,z,i)).
+\end{multline*}
+\end{proof}
+
+
+\end{document}
