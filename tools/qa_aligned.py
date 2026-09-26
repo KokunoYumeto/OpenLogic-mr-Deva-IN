@@ -515,6 +515,10 @@ _DOCUMENTED_PROJECTIONS = {
          '$A_f(\\num{n_0}, \\dots,\n'
          '\\num{n_k}, (s)_1)$ च्या !!a{derivation}'),
     ],
+    'OLP-0293': [
+        # OLINC-027: the recurrence gives h the arguments (x-vector, y).
+        ('$h(\\vec x,y)$', '$h(x,\\vec z)$'),
+    ],
 }
 
 
