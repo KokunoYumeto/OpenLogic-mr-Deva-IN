@@ -1,0 +1,41 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{z}{arbintersections}
+\olsection{परिशिष्ट: संवरण, गुणधर्माधारित संचरचना आणि छेद}
+
+\olref[sth][z][milestone]{sec} मध्ये आपण \olref[sfr][][]{part} मधील अनौपचारिक काम मागे पाहून ते~$\Zminus$ मध्ये करता येते का हे तपासायला सांगितले. तसे केले असल्यास \emph{एक} मुद्दा अडला असेल: डेडेकिंड यांच्या \emph{संवरणांच्या} मांडणीत वापरलेला \emph{छेद}.
+
+\olref[sfr][infinite][dedekind]{Closure} आठवा:
+\begin{align*}
+  \closureofunder{f}{o} & = \bigcap\Setabs{X}{o \in X \text{ आणि $X$ हा
+$f$-बंद आहे}}.
+\intertext{याचे सर्वसाधारण रूप पुढीलप्रमाणे असते:}
+  C & = \bigcap\Setabs{X}{\phi(X)}.
+\end{align*}
+पण यामुळे सावध व्हायला हवे. अनौपचारिक गुणधर्माधारित संचरचना अपयशी ठरते, म्हणून $\Setabs{X}{\phi(X)}$ अस्तित्वात आहे याची हमी नाही. मग अशा व्याख्यांत काही \emph{अवैध शॉर्टकट} घेतला जातो आहे असे वाटते.
+
+सुदैवाने तसे नाही; किंवा सध्याच्या रूपात त्या व्याख्या \emph{तशा असल्या} तरी थोडे काटेकोर काम करून त्या वैध करता येतात. \olref[sth][z][sep]{prop:intersectionsexist} मध्ये $A \neq \emptyset$ असताना $\bigcap A$ का अस्तित्वात असतो हे सांगताना या कामाची पूर्वसूचना दिली होती. आता ते स्पष्टपणे पाहू.
+
+विस्तारात्मकता मानल्यास $C$ ची $\bigcap\Setabs{X}{\phi(X)}$ अशी व्याख्या करताना आपल्याला खरे तर पुढील अट पूर्ण करणारी वस्तू $C$ हवी असते:
+\begin{equation}\ollabel{bicondelimarbintersection}
+	\forall x(x \in C \liff \forall X(\phi(X) \lif x \in X))\tag{*}
+\end{equation}
+आता असा \emph{किमान एक} संच $S$ आहे की $\phi(S)$, असे मानू. मग \olref{bicondelimarbintersection} मिळवण्यासाठी \emph{विभक्तीकरण} वापरून $C$ ची पुढीलप्रमाणे व्याख्या करता येते:
+\[
+	C = \Setabs{x \in S}{\forall X(\phi(X) \lif x \in X)}.
+\]
+या व्याख्येवरून अपेक्षेप्रमाणे \olref{bicondelimarbintersection} मिळते, हे तपासण्याचा सराव करा.
+%  fix $x$. First suppose that $x \in C$, as (re)defined; then both $x
+%  \in S$ and $\forall X(\phi(X) \lif x \in X)$; but since
+%  $\phi(S)$, this reduces to the condition that $\forall X(\phi(X)
+%  \lif x \in X)$. Conversely, suppose $\forall X(\phi(X) \lif
+%  x \in X)$; then, since $\phi(S)$, we also have that $x \in S$; so
+%  $x \in c$, as (re)defined.
+याच सर्वसाधारण पद्धतीने छेदाच्या व्याख्यांत अनौपचारिक गुणधर्माधारित संचरचनेचा दिसणारा वापर टाळता येईल. ज्या उदाहरणामुळे ही चर्चा सुरू झाली, त्या $\closureofunder{f}{o}$ बाबतीत हे कसे करायचे ते पाहू. \olref[sfr][infinite][dedekind]{closureproperties} च्या सिद्धतेच्या सुरुवातीला $o \in \ran{f}\cup\{o\}$ आणि $\ran{f} \cup \{o\}$ हा $f$-बंद संच आहे, असे आपण पाहिले. म्हणून अपेक्षित संचाची व्याख्या अशी करता येते:
+\[
+	\closureofunder{f}{o} = \Setabs{x \in \ran{f} \cup \{o\}}{(\forall X \ni o)(X \text{ हा $f$-बंद आहे} \lif x \in X)}.
+\]
+
+\end{document}
