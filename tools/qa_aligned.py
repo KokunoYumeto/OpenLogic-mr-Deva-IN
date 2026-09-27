@@ -768,6 +768,15 @@ _DOCUMENTED_PROJECTIONS = {
         (r'h(x_1, \dots, x_n, y+1) & = g(',
          r'h(x_1, \dots, x_n, y+1) & = h('),
     ],
+    'OLP-0379': [
+        # OLINC-124: repeated multiplication typo uses the second input.
+        (r'\fn{Mult} \ident \lambd[ab][b (\fn{Add}\, a) 0]',
+         r'\fn{Mult} \ident \lambd[ab][a (\fn{Add}\, a) 0]'),
+        # OLINC-125: the weaker comparison concerns Church's Y_C.
+        (r'कमकुवत आहे: $Y_Cg \equal[\beta] g(Y_Cg)$',
+         r'कमकुवत आहे: $Yg \equal[\beta] g(Yg)$'),
+        (r'$Y_Cg \bred g(Y_Cg)$', r'$Yg \bred g(Yg)$'),
+    ],
 }
 
 
