@@ -777,6 +777,16 @@ _DOCUMENTED_PROJECTIONS = {
          r'कमकुवत आहे: $Yg \equal[\beta] g(Yg)$'),
         (r'$Y_Cg \bred g(Y_Cg)$', r'$Yg \bred g(Yg)$'),
     ],
+    'OLP-0380': [
+        # OLINC-127: the lemma result matches H and the proof's h.
+        (r'h(x_1, \dots, x_k) = \umin{y}{f(x_1,\dots,x_k, y) = 0}',
+         r'g(x_1, \dots, x_k) = \umin{y}{f(x_1,\dots,x_k, y) = 0}'),
+        (r'याने परिभाषित केलेले $h$~देखील',
+         r'याने परिभाषित केलेले $g$~देखील'),
+        # OLINC-128: close the Search recursive-call parentheses.
+        (r'(g\, \vec{x} (\fn{Succ}\, y))]]',
+         r'(g\, \vec{x} (\fn{Succ}\, y)]]'),
+    ],
 }
 
 

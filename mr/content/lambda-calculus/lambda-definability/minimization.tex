@@ -1,0 +1,80 @@
+% Part: lambda-calculus
+% Chapter: lambda-definability
+% Section: minimization
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{ldf}{min}
+\olsection{लघुतमीकरण}
+
+मूलभूत फलने $\Zero$, $\Succ$, $\Proj{n}{i}$
+यांपासून संयोजन, आदिम पुनरावर्तन आणि नियमित
+लघुतमीकरण वापरून मिळणारी फलने म्हणजे सामान्य
+पुनरावर्ती फलने. सर्व सामान्य पुनरावर्ती फलने
+!!{lambda definable} आहेत हे दाखवण्यासाठी,
+!!a{lambda
+  definable} फलनापासून नियमित लघुतमीकरणाने
+परिभाषित केलेले कोणतेही फलनही !!{lambda definable}
+आहे हे दाखवावे लागेल.
+
+\begin{lem}
+  \ollabel{lem:min} $f(x_1, \dots, x_k, y)$ हे नियमित
+  आणि !!{lambda definable} असेल, तर
+  \[
+  h(x_1, \dots, x_k) = \umin{y}{f(x_1,\dots,x_k, y) = 0}
+  \]
+  याने परिभाषित केलेले $h$~देखील
+  !!{lambda definable} आहे.
+\end{lem}
+
+\begin{proof}
+  लॅम्डा पद~$F$ हे नियमित फलन $f(\vec x, y)$ ला
+  $\lambda$-परिभाषित करते असे समजा. $h$ ला
+  !!{lambda define} करण्यासाठी शोधफलन आणि
+  स्थिरबिंदू संयोजक वापरू:
+  \begin{align*}
+    \fn{Search} & \ident \lambd[g][\lambd[f\,\vec{x}\,y][
+        \fn{IsZero} (f\, \vec{x}\, y)\, y\, (g\, \vec{x} (\fn{Succ}\, y))]]\\
+    H & \ident \lambd[\vec x][(Y \, \fn{Search}) F\, \vec{x}\, \num{0}],
+  \end{align*}
+  येथे $Y$ हा कोणताही स्थिरबिंदू संयोजक आहे.
+  सहज अर्थाने, $\fn{Search}$ हे स्वतःला पुन्हा
+  बोलावणारे फलन आहे: $y$ पासून सुरू करून
+  $f\, \vec x\, y$ शून्य आहे का हे तपासते;
+  शून्य असेल तर~$y$ परत करते, अन्यथा
+  $\fn{Succ}\, y$ घेऊन स्वतःला पुन्हा बोलावते.
+  म्हणून $(Y \, \fn{Search}) F
+  \num{n_1}\dots\num{n_k}\,\num{0}$ हे
+  $f(n_1, \dots, n_k, m) = 0$ पूर्ण करणारा
+  लघुतम~$m$ परत करते.
+
+  नेमके सांगायचे तर, पुढील गोष्ट पाहा:
+  \begin{align*}
+    (Y \, \fn{Search}) F \num{n_1}
+    \dots\num{n_k}\, \num{m} & \red \num{m}
+    \intertext{जर $f(n_1, \dots,
+      n_k, m) = 0$ असेल; अन्यथा}
+    & \red (Y \, \fn{Search}) F\, \num{n_1} \dots\num{n_k}\, \num{m+1}
+    \intertext{मिळते. $f$ नियमित असल्याने काही $y$ साठी
+      $f(n_1, \dots, n_k, y) = 0$ असते; म्हणून}
+    (Y \, \fn{Search}) F \num{n_1} \dots\num{n_k}\,\num{0}
+    & \red \num{h(n_1, \dots, n_k)}.
+    \end{align*}
+\end{proof}
+
+\begin{prop}
+  प्रत्येक सामान्य पुनरावर्ती फलन !!{lambda definable} आहे.
+\end{prop}
+
+\begin{proof}
+ \olref[prf]{lem:basic} नुसार सर्व मूलभूत फलने
+ !!{lambda definable} आहेत. तसेच \olref[prf]{lem:comp},
+ \olref[prf]{lem:prim} आणि \olref{lem:min} नुसार
+ !!{lambda definable} फलनांचा वर्ग संयोजन,
+ आदिम पुनरावर्तन आणि नियमित लघुतमीकरण यांच्या
+ अंतर्गत बंद असतो.
+\end{proof}
+
+\end{document}
