@@ -1,0 +1,36 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: basic-pr-lambda
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{bas}
+\olsection{मूलभूत आदिम पुनरावर्ती फलने \usetoken{S}{lambda definable} असतात}
+
+\begin{lem}
+$\Zero$, $\Succ$ आणि $\Proj{n}{i}$ ही फलने
+!!{lambda definable} आहेत.
+\end{lem}
+
+\begin{proof}
+$\Zero$ म्हणजेच
+$\lambd[x][\lambd[y][y]]$.
+
+उत्तरवर्ती फलन~$\Succ$ ची
+$\fn{Succ}(u) = \lambd[x][\lambd[y][x(uxy)]]$ अशी
+व्याख्या करतात. हे कसे चालते याचा विचार करा: पुनरावर्तक
+मानलेल्या प्रत्येक अंकासाठी $\num{n}$ आणि प्रत्येक
+फलनासाठी~$f$, $\fn{Succ}(\num{n},f)$ हे असे फलन आहे
+की निविष्ट~$y$ वर ते~$y$ पासून सुरू करून $f$ चे $n$
+वेळा उपयोजन करते आणि त्यानंतर आणखी एकदा उपयोजन करते.
+
+प्रक्षेपणांबद्दल अधिक काही सांगण्यासारखे नाही:
+$\fn{Proj}^n_i(x_0, \dots,
+x_{n-1}) = x_i$. दुसऱ्या शब्दांत, आपल्या रूढींनुसार,
+$\fn{Proj}^n_i$ हे लॅम्डा पद
+$\lambd[x_0][\dots \lambd[x_{n-1}][x_i]]$ आहे.
+\end{proof}
+
+\end{document}
