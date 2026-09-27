@@ -1310,6 +1310,13 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\cardexpo{(\cardexpo{2}{\cardfont{a}})}{\cardfont{b}}',
          r'\cardexpo{(2^\cardfont{a})}{\cardfont{b}}'),
     ],
+    'OLP-0591': [
+        # OLINC-274: seed above card(A), since seeding at an existing
+        # beth fixed point leaves the iteration constant and defeats
+        # the claimed strict bound and the later injective W recursion.
+        (r'\tau_0(A) & \defis \cardsucc{\card{A}}',
+         r'\tau_0(A) & \defis \card{A}'),
+    ],
 }
 
 
