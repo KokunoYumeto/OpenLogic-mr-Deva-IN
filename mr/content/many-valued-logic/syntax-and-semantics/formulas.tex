@@ -1,0 +1,44 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{fml}
+
+\olsection{\usetoken{P}{formula}}
+
+\begin{defn}[सूत्र]
+\ollabel{defn:formulas}
+विधानीय भाषा~$\Lang L$ मधील \emph{!!{formula}s} चा संच~$\Frm[L]$
+पुढीलप्रमाणे विगमनाने परिभाषित करतो:
+\begin{enumerate}
+\item प्रत्येक !!{propositional variable}~$\Obj p_i$ हे आण्विक
+  !!{formula} असते.
+\item $\Lang L$ मधील प्रत्येक $0$-स्थानी संयोजक (विधानीय स्थिर)
+  हे आण्विक !!{formula} असते.
+\item $\star$ हा $\Lang L$ मधील $n$-स्थानी संयोजक असेल आणि
+  $!A_1$, \dots, $!A_n$ ही !!{formula}s असतील, तर
+  $\star(!A_1, \dots, !A_n)$ हे !!a{formula} असते.
+\tagitem{limitClause}{यांखेरीज काहीही !!a{formula} नाही.}{}
+\end{enumerate}
+$\star$ $1$-स्थानी असेल, तर $\star(!A_1)$ हे अनेकदा फक्त
+$\star !A_1$ असे लिहितात. $\star$ $2$-स्थानी असेल, तर
+$\star(!A_1,!A_2)$ हे अनेकदा $(!A_1 \star !A_2)$ असे लिहितात.
+\end{defn}
+
+नेहमीप्रमाणे, सर्वांत बाहेरचे कंस आपण अनेकदा न सांगता वगळू.
+
+\begin{ex}
+  मानक भाषेत~$\Lang{L_0}$,
+  $\Obj p_1 \lif (\Obj p_1 \land \lnot \Obj p_2)$ हे सूत्र आहे.
+  गुणाकार तर्कशास्त्राच्या भाषेत ते याऐवजी
+  $\Obj p_1 \lif (\Obj p_1 \odot \lnot \Obj p_2)$ असे लिहितात.
+  भाषेत $1$-स्थानी $\triangle$ जोडल्यास,
+  $\triangle (\Obj p_1 \land \Obj p_2) \lif (\triangle \Obj p_1 \land \triangle \Obj p_2)$
+  यांसारखी सूत्रेही मिळतात.
+\end{ex}
+
+\end{document}
