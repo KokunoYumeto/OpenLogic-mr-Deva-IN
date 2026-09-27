@@ -1,0 +1,155 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: primitive-recursion
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{pr}
+\olsection{\usetoken{S}{lambda definable} फलने आदिम पुनरावर्तनाच्या अंतर्गत बंद असतात}
+
+आदिम पुनरावर्तनाच्या बाबतीत आपल्याला अखेर काही काम करावे
+लागेल. ते टप्प्याटप्प्याने करू. आधीप्रमाणे, $g$ आणि~$h$
+यांना अनुक्रमे !!{lambda define} करणारी पदे $G$ आणि $H$
+आधीच आहेत असे गृहीत धरू. मग पुढीलप्रमाणे परिभाषित
+फलन~$f$ ला !!{lambda define}s असे पद $F$ हवे आहे:
+\begin{align*}
+f(0, \vec z) & = g(\vec z) \\
+f(x+1, \vec z) & = h(x, f(x,\vec z), \vec z).
+\end{align*}
+म्हणून सर्वसाधारणपणे, $G'$ आणि~$H'$ ही लॅम्डा पदे
+दिलेली असता, प्रत्येक नैसर्गिक संख्या~$n$ साठी पुढील
+अटी पूर्ण करणारे पद~$F$ शोधणे पुरेसे आहे:
+\begin{align*}
+F(\num{0}, \vec z) & \equiv G(\vec z) \\
+F(\overline{n+1}, \vec z) & \equiv H(\num{n}, F(\num{n}, \vec z), \vec z)
+\end{align*}
+कारण $G'$ आणि~$H'$ ही अनुक्रमे $g$ आणि~$h$ यांना
+!!{lambda define} करतात. त्यामुळे $\vec z$ च्या जागी
+$\num{\vec m}$ हे अंक घातले, तर
+$F(\num{n+1}, \num{\vec m})$ चे सामान्यीकरण होऊन
+योग्य उत्तर मिळेल.
+
+यासाठीही पुढील अटी पूर्ण करणारे पद~$F$ शोधणे पुरेसे आहे:
+\begin{align*}
+F(\num 0) & \equiv G \\
+F(\overline {n+1}) & \equiv H(\num{n},F(\num{n}))
+\intertext{प्रत्येक नैसर्गिक संख्या $n$ साठी; येथे}
+G & = \lambd[\vec z][G'(\vec z)] \text{ आणि}\\
+H(u,v) & = \lambd[\vec z][H'(u,v(u,\vec z),\vec z)].
+\end{align*}
+दुसऱ्या शब्दांत, लॅम्डा संकेतनाच्या युक्तीने अतिरिक्त
+प्राचले $\vec z$ वेगळी हाताळावी लागत नाहीत---ती
+लॅम्डा संकेतनातच सामावतात.
+
+पद $F$ परिभाषित करण्यापूर्वी क्रमित जोड्या हाताळण्याची
+पद्धत हवी. पुढील उपपत्ती ती देते.
+
+\begin{lem}
+असे लॅम्डा पद $D$ आहे की लॅम्डा पदांच्या प्रत्येक जोडी
+$M$ आणि~$N$ साठी $D(M,N)(\num{0}) \red M$ आणि
+$D(M,N)(\num{1}) \red N$.
+\end{lem}
+
+\begin{proof}
+आधी लॅम्डा पद $K$ ची पुढीलप्रमाणे व्याख्या करा:
+\[
+K(y) = \lambd[x][y].
+\]
+म्हणजे $K$ हे पद $\lambd[y][\lambd[x][y]]$ आहे.
+दुसऱ्या प्रकारे पाहिले, तर प्रत्येक $M$ साठी $K(M)$
+हे कोणतीही निविष्ट घेतल्यावर~$M$ परत करणारे स्थिर फलन आहे.
+
+आता $D(x,y,z)$ ची व्याख्या $D(x,y,z) = z (K(y))x$
+अशी करा. मग आपल्याला मिळते:
+\begin{align*}
+D(M,N,\num 0) & \red \num 0 (K(N)) M \red M \text{ आणि}\\
+D(M,N,\num 1) & \red \num 1 (K(N)) M \red K(N) M \red N,
+\end{align*}
+हेच अपेक्षित होते.
+\end{proof}
+
+येथे कल्पना अशी आहे की $D(M,N)$ ही $\tuple{M, N}$
+जोडी दर्शवते. $P$ अशी जोडी दर्शवते असे गृहीत धरल्यास,
+$P(\num 0)$ आणि $P(\num 1)$ हे अनुक्रमे डावे आणि उजवे
+प्रक्षेपण, $(P)_0$ आणि $(P)_1$, दर्शवतात. पुढे आपण
+हीच संकेतने वापरू.
+
+\begin{lem}
+!!{lambda definable} फलनांचा वर्ग आदिम पुनरावर्तनाच्या
+अंतर्गत बंद असतो.
+\end{lem}
+
+\begin{proof}
+कोणतीही पदे $G$ आणि $H$ दिली असता प्रत्येक नैसर्गिक
+संख्या~$n$ साठी पुढील अटी पूर्ण करणारे पद $F$
+शोधता येते, हे दाखवायचे आहे:
+\begin{align*}
+F(\num{0}) & \equiv G \\
+F(\num{n+1}) & \equiv H(\num{n}, F(\num{n}))
+\end{align*}
+साधारण कल्पना म्हणजे अंकांचा पुनरावर्तक म्हणून वापर करून
+\emph{जोड्यांचा} अनुक्रम संगणित करणे:
+\[
+\tuple{\num 0, F(\num 0)}, \tuple{\num 1, F(\num 1)}, \dots,
+\]
+पहिली जोडी म्हणजे $\tuple{\num 0, G}$, हे लक्षात घ्या.
+$\tuple{\num{n}, F(\num{n})}$ ही जोडी दिल्यास पुढची जोडी
+$\tuple{\num{n+1}, F(\num{n+1})}$ ही
+$\tuple{\num{n+1}, H(\num{n}, F(\num{n}))}$ शी
+सममूल्य असायला हवी. हे एका पायरीतील संक्रमण करणारे
+लॅम्डा पद~$T$ आपण तयार करू.
+
+तपशील असे आहेत. येथे S हे आधी तयार केलेले उत्तरवर्ती
+फलन दर्शवते. $T(u)$ ची व्याख्या पुढीलप्रमाणे करा:
+\[
+T(u) = \tuple{S((u)_0), H((u)_0,(u)_1)}.
+\]
+मग कोणत्याही संख्या~$n$ साठी पुढील विधान सहज तपासता येते:
+\[
+T(\tuple{\num{n}, M}) \red \tuple{\num{n+1}, H(\num{n}, M)}.
+\]
+वर सुचवल्याप्रमाणे, $G$ आणि $H$ दिली असता
+~$F(u)$ ची व्याख्या पुढीलप्रमाणे करा:
+\[
+F(u) = (u(T,\tuple{\num 0, G}))_1.
+\]
+म्हणजे निविष्ट~$\num{n}$ वर $F$ हे
+$\tuple{\num 0, G}$ पासून सुरू करून $T$ चे $n$
+वेळा पुनरावर्तन करते आणि मग दुसरा घटक परत करते.
+सुरुवातीला आपल्याला मिळते:
+\begin{enumerate}
+\item $\num{0} (T, \tuple{\num 0, G}) \equiv \tuple{\num{0}, G}$
+\item $F(\num{0}) \equiv G$
+\end{enumerate}
+~$n$ वरील विगमनाने प्रत्येक नैसर्गिक संख्येसाठी
+पुढील गोष्टी दाखवता येतात:
+\begin{enumerate}
+\item $\num{n+1}(T, \tuple{\num{0}, G}) \equiv \tuple{\num{n+1}, F(\num{n+1})}$
+\item $F(\num{n+1}) \equiv H(\num{n}, F(\num{n}))$
+\end{enumerate}
+दुसऱ्या विधानासाठी,
+\begin{align*}
+F(\num{n+1}) & \red (\num{n+1}(T, \tuple{\num 0, G}))_1 \\
+& \equiv (T(\num{n} (T, \tuple{\num 0, G})))_1 \\
+& \equiv (T(\tuple{\num{n}, F(\num{n})}))_1 \\
+& \equiv (\tuple{\num{n+1}, H(\num{n}, F(\num{n}))})_1 \\
+& \equiv H(\num{n}, F(\num{n})).
+\end{align*}
+येथे तिसऱ्या ओळीत विगमन गृहीतक वापरले आहे.
+पहिल्या विधानासाठी,
+\begin{align*}
+\num{n+1} (T, \tuple{\num 0, G}) &
+\equiv T(\num{n} (T, \tuple{\num 0, G})) \\
+& \equiv T( \tuple{\num{n}, F(\num{n})}) \\
+& \equiv \tuple{\num{n+1}, H(\num{n}, F(\num{n}))} \\
+& \equiv \tuple{\num{n+1}, F(\num{n+1})}.
+\end{align*}
+येथे शेवटच्या ओळीत दुसरे विधान वापरले आहे.
+अशा प्रकारे $F(\num 0) \equiv G$ आणि प्रत्येक $n$
+साठी $F(\num {n+1}) \equiv H(\num
+n, F(\num{n}))$ दाखवले; आपल्याला नेमके हेच हवे होते.
+\end{proof}
+
+\end{document}

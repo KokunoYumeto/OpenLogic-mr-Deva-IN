@@ -636,6 +636,16 @@ _DOCUMENTED_PROJECTIONS = {
          r'$F, \num{n_0}\, \num{n_1}' + '\n' +
          r'\dots \num{n_{k-1}}$'),
     ],
+    'OLP-0353': [
+        # OLINC-077: F, not the already assigned H, defines f.
+        (r'!!{lambda define}s असे पद $F$ हवे आहे',
+         r'!!{lambda define}s असे पद $H$ हवे आहे'),
+        # OLINC-078: h's first argument is the recursion index x.
+        (r'h(x, f(x,\vec z), \vec z)',
+         r'h(z, f(x,\vec z), \vec z)'),
+        # Localize the two ordinary-language conjunctions inside math text.
+        (r'\text{ आणि}', r'\text{ and}'),
+    ],
 }
 
 
