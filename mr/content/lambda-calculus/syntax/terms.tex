@@ -1,0 +1,58 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: terms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{trm}
+\olsection{पदे}
+
+लॅम्डा कलनातील पदे $\Obj{v_0}$, $\Obj{v_1}$, \dots या
+अमर्याद चरांपासून, ~“$\lambd$” या चिन्हापासून आणि कंसांपासून
+विगमनाधारित रीतीने घडवली जातात. चरे दर्शवण्यासाठी आपण
+$x$, $y$, $z$, \dots{} आणि पदे दर्शवण्यासाठी
+$M$, $N$, $P$, \dots{} वापरू.
+
+\begin{defn}[पदे] \ollabel{defn:term}
+लॅम्डा कलनातील \emph{पदांचा} संच पुढीलप्रमाणे
+विगमनाधारित रीतीने परिभाषित करतात:
+\begin{enumerate}
+  \item \ollabel{defn:term-var} $x$ हे चर असेल, तर $x$ हे
+    पद आहे.
+  \item \ollabel{defn:term-abs} $x$ हे चर आणि $M$ हे
+    पद असेल, तर $(\lambd[x][M])$ हे पद आहे.
+  \item \ollabel{defn:term-app} $M$ आणि $N$ ही दोन्ही
+    पदे असतील, तर $(MN)$ हे पद आहे.
+\end{enumerate}
+\end{defn}
+
+पद $(\lambd[x][M])$ हे \olref{defn:term-abs} नुसार
+घडवले असेल, तर ते \emph{अमूर्तीकरणाचे} फलित आहे
+असे म्हणतो; आणि $\lambd[x]$ मधील $x$ ला
+\emph{!!{parameter}} म्हणतात. \olref{defn:term-app}
+नुसार घडवलेले पद $(MN)$ हे \emph{उपयोजनाचे}
+फलित असते.
+
+वर परिभाषित पदांमध्ये सर्व कंस स्पष्टपणे लिहिलेले
+असतात. उदाहरणार्थ,
+$(\lambd[x][((\lambd[x][x])(\lambd[x][(xx)]))])$
+या पदावरून दिसते की हे खूपच अवजड होऊ शकते. कंस
+टाळण्यासाठी आपण काही रूढी मांडू. मात्र अधिकृत
+व्याख्येमुळे \olref{defn:term} नुसार पद कसे
+घडले हे ठरवणे सोपे जाते. उदाहरणार्थ,
+$(\lambd[x][((\lambd[x][x])(\lambd[x][(xx)]))])$
+हे पद घडवण्याची शेवटची पायरी अमूर्तीकरणच असली
+पाहिजे; त्यात !!{parameter} हे~$x$ आहे.
+ते $((\lambd[x][x])(\lambd[x][(xx)]))$ या पदावर
+अमूर्तीकरण करून मिळते; हे पद दोन पदांच्या
+उपयोजनातून घडले आहे. त्या दोन पदांपैकी प्रत्येक
+अमूर्तीकरणातून घडले आहे; आणि पुढे असेच चालते.
+
+\begin{prob}
+$(\lambd[g][(\lambd[x][(g (x x))])
+  (\lambd[x][(g (x x))])])$ हे पद कसे घडले ते वर्णन करा.
+\end{prob}
+
+\end{document}
