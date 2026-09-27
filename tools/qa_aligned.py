@@ -899,6 +899,11 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$\Log{K} \Proves \Subst{!C}{!B}{q}$.',
          r'$\Log{K} \Proves \Subst{!C}{B}{q}$'),
     ],
+    'OLP-0433': [
+        # OLINC-169: close the proof with the proposition's stated order.
+        (r'$\Log{K} \Proves \Diamond(!A\lor!B) \lif (\Diamond!A \lor \Diamond!B)$',
+         r'$\Log{K} \Proves \Diamond(!A\lor!B) \lif (\Diamond!B \lor \Diamond!A)$'),
+    ],
 }
 
 
