@@ -1,0 +1,62 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{choice}{hartogs}
+\olsection{तुलनाक्षमता आणि हार्टोग्सचे पूर्वप्रमेय}
+
+ही झाली अनुकूल बाजू. आता प्रतिकूल बाजू पाहू. निवडीचे स्वयंसिद्धक नसल्यास गोष्टी \emph{गुंतागुंतीच्या} होतात. असे का, हे पाहण्यासाठी \cite{Hartogs1915} यांचा हा सुंदर निष्कर्ष पाहा:
+
+\begin{lem}[\emph{$\ZF$ मध्ये}]\ollabel{HartogsLemma}
+कोणत्याही संच $A$ साठी $\cardnless{\alpha}{A}$ असलेली क्रमसूचक संख्या $\alpha$ अस्तित्वात आहे.
+\end{lem}
+
+\begin{proof}
+$B \subseteq A$ आणि $R \subseteq B^2$ असल्यास \olref[ord-arithmetic][using-addition]{rankcomputation} नुसार $\tuple{B, R} \subseteq
+V_{\setrank{A}+4}$. म्हणून विभक्तीकरण वापरून पुढील संच पाहू:
+\[
+	C = \Setabs{\tuple{B, R} \in V_{\setrank{A}+5}}{B\subseteq A
+	\text{ आणि $\tuple{B, R}$ हे सुक्रमण आहे}}
+\]
+प्रतिस्थापन आणि \olref[ordinals][ordtype]{thmOrdinalRepresentation} वापरून पुढील संच तयार करा:
+\[
+	\alpha = \Setabs{\ordtype{B, R}}{\tuple{B, R} \in C}.
+\]
+\olref[ordinals][basic]{corordtransitiveord} नुसार $\alpha$ ही क्रमसूचक संख्या आहे, कारण तो क्रमसूचक संख्यांचा संक्रमक संच आहे. कारण $\gamma \in \beta \in \alpha$ असेल, तर एखाद्या संचासाठी $\beta = \ordtype{B, R}$, जेथे $B \subseteq A$, आणि मग \olref[ordinals][iso]{wellordinitialsegment} नुसार एखाद्या $b
+\in B$ साठी $\gamma = \ordtype{B_b, R_b}$. त्यामुळे $\gamma \in \alpha$.
+
+
+विरोधसिद्धीसाठी !!a{injection} $f \colon \alpha \to A$ अस्तित्वात आहे असे समजा. मग पुढील व्याख्या करा:
+\begin{align*}
+	B &= \ran{f}\\
+	R &= \Setabs{\tuple{f(\xi), f(\eta)} \in A \times A}{\xi \in \eta \land \xi \in \alpha \land \eta \in \alpha}.
+\end{align*}
+येथे अंतर्गत निर्देशांक फलनाच्या प्रांतात घेतले आहेत. स्पष्टच $\alpha = \ordtype{B, R}$ आणि $\tuple{B, R} \in C$. म्हणून $\alpha
+\in \alpha$, ही विसंगती मिळते.
+\end{proof}
+
+यावरून एक सखोल निष्कर्ष मिळतो:
+
+\begin{thm}[\emph{$\ZF$ मध्ये}]
+पुढील विधाने सममूल्य आहेत:
+\begin{enumerate}
+	\item\ollabel{equivwo} सुक्रमणाचे स्वयंसिद्धक
+	\item\ollabel{equivcompare} कोणत्याही संच $A$ आणि $B$ साठी $\cardle{A}{B}$ किंवा
+	$\cardle{B}{A}$
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+\emph{\olref{equivwo} $\Rightarrow$ \olref{equivcompare}.} $A$ आणि $B$ निश्चित करा. \olref{equivwo} वापरल्यास $\tuple{A, R}$ आणि $\tuple{B, S}$ ही सुक्रमणे मिळतात. \olref[ordinals][ordtype]{thmOrdinalRepresentation} वापरून $f \colon
+\alpha \to \tuple{A, R}$ आणि $g \colon \beta \to \tuple{B, S}$ ही समरूपणे असू द्या. \olref[sth][ordinals][basic]{ordinalsaresubsets} नुसार $\alpha \subseteq \beta$ किंवा $\beta \subseteq \alpha$. $\alpha \subseteq \beta$ असेल, तर $\comp{f^{-1}}{g} \colon A \to B$ हे !!a{injection} आहे आणि म्हणून
+$\cardle{A}{B}$; त्याचप्रमाणे $\beta \subseteq \alpha$ असेल, तर $\cardle{B}{A}$.
+
+\emph{\olref{equivcompare} $\Rightarrow$ \olref{equivwo}.} $A$ निश्चित करा. \olref{HartogsLemma} नुसार $\cardnless{\beta}{A}$ असलेली क्रमसूचक संख्या $\beta$ आहे. \olref{equivcompare} वापरल्यास $\cardle{A}{\beta}$ मिळते. म्हणून !!{injection} $f \colon A \to
+\beta$ अस्तित्वात आहे, आणि $\Setabs{\tuple{a, b} \in A \times A}{f(a)
+\in f(b)}$ हा क्रम परिभाषित करून त्या फलनाने $A$ च्या घटकांचे सुक्रमण करता येते.
+\end{proof}
+\noindent
+याचे तात्काळ फलित असे: सुक्रमण अपयशी ठरल्यास काही संच त्यांच्या आकारमानाच्या दृष्टीने \emph{अक्षरशः अतुलनीय} असतात. म्हणून सुक्रमण अपयशी ठरल्यास अनंतपार संचांकांचे अंकगणित गुंतागुंतीचे होते. उदाहरणार्थ, $A$ आणि $B$ अनंत असल्यास $\cardeq{\cardeq{A \disjointsum B}{A \times
+B}}{M}$, जेथे $M$ हा $A$ आणि $B$ यांपैकी मोठा संच आहे, ही कल्पना सोडावी लागेल (पाहा \olref[card-arithmetic][simp]{cardplustimesmax}). अडचण साधी आहे: $A$ आणि $B$ यांच्या आकारमानांची \emph{तुलनाच} करता येत नसेल, तर कोणता मोठा आहे असा प्रश्न विचारण्याला अर्थ नाही.
+
+\end{document}

@@ -1317,6 +1317,16 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\tau_0(A) & \defis \cardsucc{\card{A}}',
          r'\tau_0(A) & \defis \card{A}'),
     ],
+    'OLP-0595': [
+        # OLINC-277: the well-ordered subset is a subset of A, not
+        # of the order relation R.
+        (r'जेथे $B \subseteq A$',
+         r'जेथे $B \subseteq R$'),
+        # OLINC-278: distinguish the fixed Hartogs ordinal from the
+        # two bounded indices used to transport its membership order.
+        (r'\Setabs{\tuple{f(\xi), f(\eta)} \in A \times A}{\xi \in \eta \land \xi \in \alpha \land \eta \in \alpha}',
+         r'\Setabs{\tuple{f(\alpha), f(\beta)} \in A \times A}{\alpha \in \beta}'),
+    ],
 }
 
 
