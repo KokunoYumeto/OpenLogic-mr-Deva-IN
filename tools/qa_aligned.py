@@ -1269,6 +1269,12 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\ordtype{(\alpha \times \{0\}) \cup 0, \rlexless}',
          r'\ordtype{(\alpha \times \{0\}) \cup \{0\}, \rlexless}'),
     ],
+    'OLP-0577': [
+        # OLINC-258: the product-rank exercise omits the equality sign
+        # between rank(A x B) and the proposed upper value.
+        (r'\setrank{A \times B}= \max(\setrank{A}, \setrank{B}) \ordplus  2',
+         r'\setrank{A \times B}\max(\setrank{A}, \setrank{B}) \ordplus  2'),
+    ],
 }
 
 
@@ -1283,6 +1289,12 @@ _SOURCE_QA_NORMALIZATIONS = {
         # its inline math delimiter, so source-to-source QA cannot parse it.
         (r'\liff \ST_x(!C))}$.}{}',
          r'\liff \ST_x(!C))$.}}{}'),
+    ],
+    'OLP-0577': [
+        # OLINC-259: a nonrendered comment has a stray closing dollar.
+        # Pair it solely so the structural parser can compare the file.
+        (r'%\alpha \approx \alpha \ordplus 1$',
+         r'%$\alpha \approx \alpha \ordplus 1$'),
     ],
 }
 

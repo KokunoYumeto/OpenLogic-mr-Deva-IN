@@ -1,0 +1,89 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{using-addition}
+\olsection{क्रमसूचक बेरीजचा उपयोग}
+
+क्रमसूचक संख्यांची बेरीज वापरून \olref[spine][rank]{defnsetrank} च्या अर्थाने विविध संचांचे प्रतांक स्पष्टपणे मोजता येतात:
+
+\begin{lem}\ollabel{rankcomputation}
+$\setrank{A} = \alpha$ आणि $\setrank{B} = \beta$ असतील, तर:
+\begin{enumerate}
+  \item\ollabel{exrankpow} $\setrank{\Pow{A}} = \alpha\ordplus 1$
+  \item\ollabel{exrankpair} $\setrank{\{A, B\}} = \max(\alpha,
+  \beta) \ordplus 1$
+  \item\ollabel{exrankcup} $\setrank{A \cup B} = \max(\alpha,
+  \beta)$
+  \item\ollabel{exranktuple} $\setrank{\tuple{A,B}} = \max(\alpha,
+  \beta) \ordplus  2$
+  \item\ollabel{exranktimes} $\setrank{A \times B} \leq \max(\alpha,
+  \beta) \ordplus  2$
+  \item\ollabel{exrankunion} $\alpha$ रिकामी किंवा सीमा क्रमसूचक संख्या असेल, तर $\setrank{\bigcup A} = \alpha$; $\alpha = \gamma\ordplus 1$ असेल, तर $\setrank{\bigcup A} = \gamma$
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+संपूर्ण पुराव्यात आपण \olref[spine][rank]{ranksupstrict} वारंवार वापरू.
+
+\emph{\olref{exrankpow}.} $x \subseteq A$ असेल, तर $\setrank{x} \leq
+\setrank{A}$. म्हणून $\setrank{\Pow{A}} \leq \alpha \ordplus  1$. विशेषतः $A
+\in \Pow{A}$ असल्याने $\setrank{\Pow{A}} = \alpha \ordplus  1$.
+
+\emph{\olref{exrankpair}.} \olref[spine][rank]{ranksupstrict} नुसार.
+
+\emph{\olref{exrankcup}.} \olref[spine][rank]{ranksupstrict} नुसार.
+
+\emph{\olref{exranktuple}.} \olref{exrankpair} दोनदा वापरल्यास.
+
+\emph{\olref{exranktimes}.} $A \times B \subseteq
+\Pow{\Pow{A \cup B}}$ हे लक्षात घेऊन \olref{exranktuple} वापरा.
+
+\emph{\olref{exrankunion}.} $\alpha = \gamma\ordplus 1$ असेल, तर काही $c \in A$ साठी $\setrank{c} = \gamma$ असते आणि $A$ च्या कोणत्याही !!{element} चा प्रतांक याहून मोठा नसतो; म्हणून $\setrank{\bigcup A} = \gamma$. $\alpha$ ही सीमा क्रमसूचक संख्या असेल, तर $A$ मध्ये $\alpha$ च्या मनमान्या जवळ (पण काटेकोरपणे खाली) प्रतांक असलेले !!{element}s असतात. त्यामुळे $\bigcup A$ मध्येही $\alpha$ च्या मनमान्या जवळ (पण काटेकोरपणे खाली) प्रतांक असलेले !!{element}s असतात, आणि म्हणून $\setrank{\bigcup A} = \alpha$.
+\end{proof}
+\noindent
+\olref{exranktimes} मध्ये \emph{अ}समानता का येते, हे दाखवण्याचे काम सरावासाठी सोडतो.
+
+\begin{prob}
+$\setrank{A \times B}=
+\max(\setrank{A}, \setrank{B})$ असेल असे संच $A$ आणि $B$ द्या. तसेच $\setrank{A \times B}= \max(\setrank{A}, \setrank{B}) \ordplus  2$ असेल असे संच $A$ आणि $B$ द्या. इतर कोणते प्रतांक शक्य आहेत का?
+\end{prob}
+
+क्रमसूचक संख्या “सांत” किंवा “अनंत” असण्याचा अर्थ लावण्याचे अनेक रास्त मार्ग समतुल्य आहेत, हे दाखवण्याच्या स्थितीतही आता आपण आहोत:
+
+\begin{lem}\ollabel{ordinfinitycharacter}
+कोणत्याही क्रमसूचक संख्या $\alpha$ साठी पुढील विधाने समतुल्य आहेत:
+\begin{enumerate}
+  \item\ollabel{ord:notinomega} $\alpha\notin \omega$; म्हणजे $\alpha$ नैसर्गिक संख्या नाही
+  \item\ollabel{ord:omegaplus} $\omega \leq \alpha$
+  \item\ollabel{ord:oneplus} $1 \ordplus  \alpha = \alpha$
+  %$\alpha \approx \alpha \ordplus 1$
+  \item\ollabel{ord:plusone} $\alpha \approx \alpha\ordplus 1$; म्हणजे $\alpha$ आणि $\alpha\ordplus 1$ यांचे संख्याबल समान आहे
+  \item\ollabel{ord:infinite} $\alpha$ डेडेकिंड-अनंत आहे
+  \end{enumerate}
+\end{lem}
+\noindent
+म्हणून क्रमसूचक संख्या सांत किंवा अनंत असण्याचा अर्थ समजण्याचे पाच सिद्ध करता येण्याजोगे समतुल्य मार्ग आपल्याकडे आहेत.
+
+\begin{proof}
+\emph{\olref{ord:notinomega} $\Rightarrow$ \olref{ord:omegaplus}.} त्रिपर्यायानुसार.
+
+\emph{\olref{ord:omegaplus} $\Rightarrow$ \olref{ord:oneplus}.} $\alpha \geq \omega$ निश्चित करा. अनंतपार विगमनानुसार अशी लघुतम क्रमसूचक संख्या $\gamma$ असते (ती $0$ असू शकते) की काही सीमा क्रमसूचक संख्या $\beta$ साठी $\alpha = \beta \ordplus \gamma$. मग:
+\[
+  1 \ordplus \alpha =
+  1 \ordplus (\beta \ordplus \gamma) =
+  (1 \ordplus \beta) \ordplus \gamma =
+  \supstrict_{\delta < \beta} (1 \ordplus  \delta) \ordplus  \gamma =
+  \beta \ordplus  \gamma =
+  \alpha.
+\]
+\emph{\olref{ord:oneplus} $\Rightarrow$ \olref{ord:plusone}.} $f \colon (\alpha \disjointsum 1) \to (1
+\disjointsum \alpha)$ हे !!a{bijection} सहज मिळते. $1 \ordplus \alpha = \alpha$ असेल, तर $g \colon (1 \disjointsum \alpha) \to \alpha$ हे समरूपण असते. आता $\comp{f}{g}$ पाहा.
+
+\emph{\olref{ord:plusone} $\Rightarrow$ \olref{ord:infinite}.} $\alpha \approx \alpha \ordplus 1$ असेल, तर $f \colon
+(\alpha \disjointsum 1) \to \alpha$ हे !!a{bijection} असते. प्रत्येक $\gamma < \alpha$ साठी $g(\gamma) = f(\gamma, 0)$ अशी व्याख्या करा. हे !!{injection} $\alpha$ डेडेकिंड-अनंत आहे याची साक्ष देते; कारण $f(0,1) \in \alpha \setminus \ran{g}$.
+
+\emph{\olref{ord:infinite} $\Rightarrow$ \olref{ord:notinomega}.} हा \olref[z][infinity-again]{naturalnumbersarentinfinite} आहे.
+\end{proof}
+
+\end{document}
