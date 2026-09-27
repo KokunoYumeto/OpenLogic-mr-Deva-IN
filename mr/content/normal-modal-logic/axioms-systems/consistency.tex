@@ -1,0 +1,77 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{con}
+
+\olsection{सुसंगतता}
+
+!!{formula}s च्या संचांचा सुसंगतता हा महत्त्वाचा
+गुणधर्म आहे. !!{formula}s च्या संचापासून
+$\lfalse$ सारखा व्याघात !!{derivable} असेल,
+तर तो संच विसंगत असतो; अन्यथा सुसंगत असतो.
+संच विसंगत असेल, तर त्यातील सर्व !!{formula}s
+एखाद्या प्रतिमानातील एका जगात एकत्र सत्य असू
+शकत नाहीत. संपूर्णता प्रमेयासाठी आपण याचा
+व्यत्यास सिद्ध करू: प्रत्येक सुसंगत संच
+एका प्रतिमानातील एका जगात सत्य असतो; ते
+प्रतिमान म्हणजे ``कॅनॉनिकल प्रतिमान.''
+
+\begin{defn}
+  संच~$\Gamma$ हा प्रणाली~$\Sigma$ च्या सापेक्ष
+  \emph{सुसंगत}, किंवा आपण म्हणू त्याप्रमाणे
+  $\Sigma$-सुसंगत, असेल तेव्हा आणि तेव्हाच
+  $\Gamma \Proves/[\Sigma] \lfalse$.
+\end{defn}
+
+उदाहरणार्थ, $\{ \Box(p \lif q), \Box p, \lnot\Box q \}$
+हा संच विधानीय तर्कशास्त्राच्या सापेक्ष सुसंगत आहे,
+पण \Log{K}-सुसंगत नाही. तसेच
+$\{ \Diamond p, \Box\Diamond
+p \lif q, \lnot q \}$ हा संच \Log{K5}-सुसंगत नाही.
+
+\begin{prop}\ollabel{prop:consistencyfacts}
+  $\Gamma$ हा !!{formula}s चा संच असू द्या. मग:
+  \begin{enumerate}
+  \item $\Gamma$ हा $\Sigma$-सुसंगत असेल तेव्हा आणि
+    तेव्हाच असे एखादे !!{formula}~$!A$ असते की
+    $\Gamma \Proves/[\Sigma] !A$.
+  \item \ollabel{prop:consistencyfacts-b}%
+    $\Gamma \Proves[\Sigma] !A$ असेल तेव्हा आणि
+    तेव्हाच $\Gamma \cup \{
+    \lnot!A \}$ हा $\Sigma$-सुसंगत नाही.
+  \item \ollabel{prop:consistencyfacts-c}%
+    $\Gamma$ हा $\Sigma$-सुसंगत असेल, तर
+    कोणत्याही !!{formula}~$!A$ साठी
+    $\Gamma \cup \{ !A \}$ हा
+    $\Sigma$-सुसंगत असतो किंवा
+    $\Gamma \cup \{ \lnot!A \}$ हा
+    $\Sigma$-सुसंगत असतो.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  ही तथ्ये अभिजात विधानीय तर्कशास्त्रावरून सहज
+  मिळतात. \olref{prop:consistencyfacts-c} साठी
+  युक्तिवाद देऊ. प्रतिपरिवर्तनाने सिद्ध करू:
+  $\Gamma \cup \{ !A \}$ आणि
+  $\Gamma \cup \{ \lnot!A \}$ यांपैकी कोणताही
+  संच $\Sigma$-सुसंगत नाही, असे समजा. मग
+  सुसंगततेच्या व्याख्येवरून
+  $\Gamma, !A \Proves[\Sigma]
+  \lfalse$ आणि $\Gamma, \lnot !A \Proves[\Sigma] \lfalse$
+  हे दोन्ही मिळतात. निगमन प्रमेयावरून
+  $\Gamma \Proves[\Sigma] !A \to \lfalse$ आणि
+  $\Gamma \Proves[\Sigma] \lnot!A \lif \lfalse$.
+  पण $(!A \lif
+  \lfalse) \lif ((\lnot!A \lif \lfalse) \lif \lfalse)$
+  हा सर्वतः-सत्य दृष्टांत आहे; म्हणून
+  \olref[prp]{prop:derivabilityfacts}\olref[prp]{prop:derivabilityfacts-ruleT}
+  वरून $\Gamma \Proves[\Sigma] \lfalse$.
+\end{proof}
+
+\end{document}

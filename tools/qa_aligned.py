@@ -912,6 +912,11 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$\Log{KTB} \Proves/ \Ax{4}$ आणि $\Log{KTB} \Proves/ \Ax{5}$.',
          r'$\Log{KTB} \Proves/ \Log{4}$ and $\Log{KTB} \Proves/ \Log{5}$.'),
     ],
+    'OLP-0440': [
+        # OLINC-174: the proof invokes the consistency definition, not item b.
+        ('सुसंगततेच्या व्याख्येवरून',
+         r'\olref{prop:consistencyfacts-b} वरून'),
+    ],
 }
 
 
