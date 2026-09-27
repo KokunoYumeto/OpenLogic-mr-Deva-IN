@@ -1,0 +1,294 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{story}{approach}
+\olsection{संचयी-क्रमिक पद्धत}
+
+संचांचे टप्प्यांमध्ये
+स्तरीकरण कसे
+करायचे, याचे
+थोडे अधिक
+तपशीलवार
+वर्णन असे:
+\begin{quote}
+  संच \emph{टप्प्यांमध्ये}
+  तयार होतात.
+  प्रत्येक टप्पा~$S$
+  यासाठी, $S$ च्या \emph{आधी}
+  काही टप्पे
+  असतात.
+  $S$ टप्प्यावर,
+  $S$ पूर्वीच्या
+  टप्प्यांवर
+  तयार झालेले
+  संच घेऊन
+  बनलेल्या
+  प्रत्येक
+  संग्रहाचा
+  संच तयार
+  होतो.
+  टप्प्यांवर
+  तयार झालेले
+  संच सोडून
+  इतर संच
+  नाहीत.
+  \citep[p.~323]{Shoenfield:AST}
+\end{quote}
+ही \emph{संचांची
+संचयी-क्रमिक
+संकल्पना}
+याची रूपरेषा
+आहे. \olref[sth][][]{part}
+मध्ये मांडल्या
+जाणाऱ्या
+औपचारिक
+संच उपपत्तीला
+ती आधार
+देईल.
+
+थोडा अधिक
+तपशील पाहू.
+शोनफिल्ड
+यांच्या
+वर्णनानुसार,
+प्रत्येक
+टप्प्यावर
+मागील
+टप्प्यांपासून
+आपल्याला
+उपलब्ध
+असलेल्या
+संचांपासून
+नवे संच
+तयार होतात.
+म्हणून
+आरंभीच्या
+टप्प्यावर,
+म्हणजे
+टप्पा~$0$
+येथे,
+\emph{आधीचा}
+टप्पाच
+नसतो;
+\emph{मग तर}
+पूर्वीच्या
+टप्प्यांतून
+आपल्याला
+संचही
+उपलब्ध
+नसतात.\footnote{
+  पहिला
+  टप्पा
+  \emph{असतो}
+  असे का
+  गृहीत
+  धरावे?
+  \olref[z][story]{sec}
+  मधील
+  \stagesord{}
+  जवळची
+  तळटीप
+  पाहा.}
+त्यामुळे
+आपण
+एकच संच
+तयार करतो:
+एकही
+!!{element}s
+नसलेला
+रिक्त संच
+$\emptyset$.
+टप्पा~$1$
+येथे
+मागील
+टप्प्यांपासून
+बरोबर
+एक संच
+उपलब्ध
+असतो,
+म्हणून
+फक्त एक
+नवा संच
+$\{\emptyset\}$
+तयार होतो.
+टप्पा~$2$
+येथे मागील
+टप्प्यांपासून
+दोन संच
+उपलब्ध
+असतात;
+आपण दोन
+नवे संच
+$\{\{\emptyset\}\}$
+आणि
+$\{\emptyset,
+\{\emptyset\}\}$
+तयार करतो.
+टप्पा~$3$
+येथे मागील
+टप्प्यांपासून
+चार संच
+उपलब्ध
+असतात;
+म्हणून
+बारा
+नवे संच
+तयार
+होतात\ldots.
+त्यामुळे
+संचांचे
+संचयी-क्रमिक
+चित्र
+साधारण
+असे
+दिसेल
+(अंक टप्पे
+दर्शवतात):
+\begin{center}
+  \begin{tikzpicture}[scale=0.6]
+  \tikzset{cut_here/.style={densely dotted}}
+  \draw (-4,6) -- (-1, 0)-- (2,6);
+  \draw[cut_here] (-5,8)--(-4,6);
+  \draw[cut_here] (2,6)--(3,8);
+  \draw(-1.5, 1)--(-0.5, 1);
+  \draw(-2, 2)--(0, 2);
+  \draw(-2.5, 3)--(0.5,3);
+  \draw(-3, 4)--(1, 4);
+  \draw(-3.5, 5)--(1.5, 5);
+  \draw(-4, 6)--(2, 6);
+  \node[label] at (0, 0) {\small 0};
+  \node[label] at (0.5, 1) {\small 1};
+  \node[label] at (1, 2) {\small 2};
+  \node[label] at (1.5, 3) {\small 3};
+  \node[label] at (2, 4) {\small 4};
+  \node[label] at (2.5, 5) {\small 5};
+  \node[label] at (3, 6) {\small 6};
+  \end{tikzpicture}
+\end{center}
+मग ही मांडणी
+का स्वीकारावी?
+
+एक कारण:
+ती चांगली
+आणि हाताळायला
+सुलभ मांडणी
+आहे. सर्वांत
+उघड वाटणारी
+मांडणी,
+म्हणजे
+अनौपचारिक
+गुणधर्माधारित
+संचरचना,
+अपयशी ठरल्यावर
+आपल्याला
+एखादी चांगली
+मांडणी हवीच.
+
+पण ती
+\emph{फक्त}
+सुलभ नाही.
+या मांडणीवर
+आधारित
+कोणतीही
+संच उपपत्ती
+\emph{सुसंगत}
+असेल असे
+मानण्यास
+चांगले कारण
+आहे. ते
+असे.
+
+संचांची
+संचयी-क्रमिक
+संकल्पना
+मानल्यास
+संच
+टप्प्याटप्प्याने
+बनतात;
+त्यांचे
+!!{element}s
+म्हणजे
+\emph{आधीच}
+उपलब्ध
+असलेल्या
+वस्तू असतात.
+म्हणून
+कोणत्याही
+टप्प्या~$S$
+साठी
+पुढील संच
+तयार करता
+येतो:
+\[
+  R_S = \Setabs{x}{x \notin x \text{ आणि $x$ हा $S$ पूर्वी उपलब्ध होता}}
+\]
+रसेलची
+विरोधापत्ती
+सिद्ध करताना
+वापरलेला
+युक्तिवाद
+दाखवतो
+की~$R_S$
+हा संच
+स्वतः
+टप्पा~$S$
+पूर्वी
+उपलब्ध
+नसतो.
+आणि
+त्यात
+व्याघात
+नाही.
+शिवाय
+संचांची
+संचयी-क्रमिक
+संकल्पना
+स्वीकारल्यास
+रसेलचा
+मूळ संच
+तयार होईल
+अशी
+\emph{अपेक्षाच}
+ठेवायला
+नको होती.
+कारण तो
+‘‘कधीही
+उपलब्ध
+होतील’’
+अशा
+स्वतःचे
+सदस्य
+नसलेल्या
+सर्व
+संचांचा
+संच
+असता.
+थोडक्यात,
+संचयी-क्रमिक
+मांडणी
+मानल्यावर
+रसेलचा
+संच तयार
+करता
+येत
+नाही
+ही
+(सिद्ध
+होणारी)
+गोष्ट
+\emph{आश्चर्यकारक}
+नाही;
+याचाच
+\emph{अंदाज}
+आपण
+केला
+असता.
+
+%In one sense, then, the cumulative-iterative conception of set yields a response to Russell's Paradox which is rather like the \emph{predicativist}'s response. After all, the predicativist said that the collection of all non-self-membered sets$_n$ is a set$_{n+1}$, and this set$_n$ will not be self-membered. (Indeed, most predicativists will treat it as \emph{ungrammatical} to try to ask whether a set is self-membered.)
+%
+%But there is an important difference between the cumulative-iterative approach and the predicativist approach: the cumulative-iterative approach treats all of our entities as being \emph{of the same kind}. The predicativist will presumably have an empty set$_0$ (i.e., a set$_0$ with no !!{element}s), and an empty set$_1$ (i.e., a set$_1$ with no !!{element}s), and these will be \emph{different entities}. But on the cumulative-iterative approach, there is just one empty set, $\emptyset$, and it will be available at every stage of the hierarchy.
+
+%Indeed, the Axiom of Extensionality, stated at the start of this chapter, will hold true of the elements in this hierarchy (so that there can be \emph{only one} ``empty'' set). But I do not intend to use the cumulative-iterative conception to justify Extensionality (see \cite{Boolos1971}). Again: I suggest that we should accept Extensionality, just because we are interested in extensional collections.
+
+\end{document}
