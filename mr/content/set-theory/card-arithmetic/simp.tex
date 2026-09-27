@@ -1,0 +1,122 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+\olfileid{sth}{card-arithmetic}{simp}
+
+\olsection{बेरीज आणि गुणाकार सुलभ करणे}
+
+अनंतपार संचांक बेरीज आणि गुणाकार \emph{फारच} सोपे ठरतात. कारण संचांक या (काही विशिष्ट) क्रमसूचक संख्या आहेत; म्हणून त्या सुक्रमित आहेत आणि त्यांच्यावर एका विशिष्ट पद्धतीने काम करता येते. पण हे दाखवणे \emph{तितके} सोपे नाही. सुरुवातीला एक कल्पक व्याख्या हवी:
+
+\begin{defn}
+क्रमसूचक संख्यांच्या जोड्यांवरील \emph{कॅनॉनिकल क्रम} $\canonord$ पुढीलप्रमाणे परिभाषित करू: $\tuple{\alpha_1, \alpha_2} \canonord
+\tuple{\beta_1, \beta_2}$ तेव्हा आणि तेव्हाच जेव्हा पुढीलपैकी एक अट पूर्ण होते:
+\begin{enumerate}
+  \item $\max(\alpha_1, \alpha_2) < \max(\beta_1, \beta_2)$; किंवा
+  \item $\max(\alpha_1, \alpha_2) = \max(\beta_1, \beta_2)$ आणि
+  $\alpha_1 < \beta_1$; किंवा
+  \item $\max(\alpha_1, \alpha_2) = \max(\beta_1, \beta_2)$ आणि
+  $\alpha_1 = \beta_1$ आणि $\alpha_2 < \beta_2$.
+\end{enumerate}
+\end{defn}
+
+\begin{lem}
+कोणत्याही क्रमसूचक संख्या $\alpha$ साठी $\tuple{\alpha \times \alpha, \canonord}$ हे सुक्रमण आहे.
+\end{lem}
+
+\begin{proof}
+$\alpha \times \alpha$ वर $\canonord$ हा क्रम तुलनीय आहे, हे स्पष्ट आहे. समजा $\tuple{\alpha_1, \alpha_2}$ आणि $\tuple{\beta_1,
+\beta_2}$ यांपैकी कोणतीही जोडी दुसरीपेक्षा $\canonord$-लहान नाही. मग $\max(\alpha_1,
+\alpha_2) = \max(\beta_1, \beta_2)$ आणि $\alpha_1 = \beta_1$ आणि
+$\alpha_2 = \beta_2$; म्हणून $\tuple{\alpha_1, \alpha_2} =
+\tuple{\beta_1,  \beta_2}$.
+
+सुक्रमण सिद्ध करण्यासाठी रिकामा नसलेला $X \subseteq \alpha\times\alpha$ घ्या. $\alpha$ क्रमसूचक संख्या असल्यामुळे
+$\Setabs{\max(\gamma_1, \gamma_2)}{\tuple{\gamma_1,
+\gamma_2} \in X}$ या संचाचा लघुतम सदस्य एखादा $\delta$ असतो. आता
+$\Setabs{\tuple{\gamma_1,\gamma_2} \in X}{\max(\gamma_1, \gamma_2) =
+\delta}$ मधून पहिला निर्देशांक लघुतम नसलेल्या सर्व जोड्या काढून टाका; उरलेल्यांपैकी दुसरा निर्देशांक लघुतम असलेली जोडी हा $X$ चा $\canonord$-लघुतम सदस्य आहे.
+\end{proof}
+\noindent
+आता एक अगदी छोटे आणि सोपे निरीक्षण:
+
+\begin{prop}\ollabel{simplecardproduct}
+$\cardeq{\alpha}{\beta}$ असेल, तर $\cardeq{\alpha \times \alpha}{\beta
+\times \beta}$.
+\end{prop}
+
+\begin{proof}
+$f \colon \alpha \to \beta$ वरून $\tuple{\gamma_1,
+\gamma_2} \mapsto \tuple{f(\gamma_1), f(\gamma_2)}$ हे फलन मिळते.
+\end{proof}
+\noindent
+आता एका महत्त्वाच्या सहायक प्रमेयासाठी ही सगळी निरीक्षणे वापरू:
+\begin{lem}\ollabel{alphatimesalpha}
+कोणत्याही अनंत क्रमसूचक संख्या $\alpha$ साठी $\cardeq{\alpha}{\alpha \times \alpha}$.
+\end{lem}
+
+\begin{proof}
+विसंगतीने सिद्ध करण्यासाठी, हे विधान खोटे ठरते अशी लघुतम अनंत क्रमसूचक संख्या $\alpha$ घ्या. \olref[sfr][siz][zigzag]{natsquaredenumerable} नुसार
+$\cardeq{\omega}{\omega\times\omega}$, म्हणून $\omega \in \alpha$.
+याशिवाय $\alpha$ हा संचांक आहे: नसल्याचे गृहीत धरू; मग
+$\card{\alpha} \in \alpha$ आणि विगमन-गृहीतकानुसार
+$\cardeq{\card{\alpha}}{\card{\alpha} \times \card{\alpha}}$.
+व्याख्येनुसार $\cardeq{\card{\alpha}}{\alpha}$; त्यामुळे
+\olref{simplecardproduct} नुसार $\cardeq{\alpha}{\alpha\times\alpha}$, ही विसंगती आहे.
+
+आता प्रत्येक $\tuple{\gamma_1, \gamma_2} \in \alpha \times \alpha$ साठी पुढील आरंभीचा खंड पाहा:
+\begin{align*}
+  \text{Seg}(\gamma_1, \gamma_2) &= \Setabs{\tuple{\delta_1, \delta_2} \in \alpha \times \alpha}{\tuple{\delta_1, \delta_2} \canonord \tuple{\gamma_1, \gamma_2}}
+\end{align*}
+$\gamma = \max(\gamma_1, \gamma_2)$ असे ठेवा; मग $\tuple{\gamma_1, \gamma_2} \canonord \tuple{\gamma+1, \gamma + 1}$. म्हणून $\gamma$ अनंत असेल तेव्हा:
+\begin{align*}
+  \text{Seg}(\gamma_1, \gamma_2) &
+  \precsim ((\gamma \ordplus 1)\ordtimes (\gamma \ordplus 1))\\
+  &\approx (\gamma \ordtimes \gamma)
+  \text{, \olref[ord-arithmetic][using-addition]{ordinfinitycharacter} आणि
+  \olref{simplecardproduct} नुसार}\\
+  &\approx \gamma \text{, विगमन-गृहीतकानुसार}\\
+  & \prec \alpha\text{, कारण $\alpha$ संचांक आहे}
+\end{align*}
+निर्देशांकातील मोठी संख्या सांत असेल तर हा खंडही सांत असतो; त्यामुळे तो दिलेल्या अनंत संचांकापेक्षा लहान आहे. म्हणून $\ordtype{\alpha\times \alpha, \canonord} \leq \alpha$, आणि त्यामुळे
+$\cardle{\alpha \times \alpha}{\alpha}$. अर्थातच
+$\cardle{\alpha}{\alpha \times \alpha}$ असल्याने श्रेडर--बर्नस्टाइननुसार अपेक्षित निष्कर्ष मिळतो.
+\end{proof}
+
+अखेरीस, सुलभीकरणाचा आपला निष्कर्ष मिळतो:
+
+\begin{thm}\ollabel{cardplustimesmax}
+$\cardfont{a}, \cardfont{b}$ हे अनंत संचांक असतील, तर:
+\[
+  \cardfont{a}
+\cardtimes \cardfont{b} = \cardfont{a} \cardplus \cardfont{b} =
+\text{max}(\cardfont{a}, \cardfont{b}).
+\]
+\end{thm}
+
+\begin{proof}
+व्यापकता न गमावता $\cardfont{a} = \max(\cardfont{a},
+\cardfont{b})$ असे समजा. मग \olref{alphatimesalpha} वापरून
+$\cardfont{a}\cardtimes\cardfont{a} = \cardfont{a} \leq \cardfont{a}
+\cardplus \cardfont{b} \leq \cardfont{a} \cardplus \cardfont{a} \leq
+\cardfont{a} \cardtimes \cardfont{a}$ मिळते. \end{proof}\noindent त्याचप्रमाणे,
+$\cardfont{a}$ अनंत असेल, तर $\leq\cardfont{a}$ आकारमानाच्या $\cardfont{a}$ इतक्या संचांच्या संयोगाचे आकारमानही $\leq\cardfont{a}$ असते:
+
+\begin{prop}\ollabel{kappaunionkappasize}
+$\cardfont{a}$ हा अनंत संचांक असू द्या. प्रत्येक क्रमसूचक संख्या $\beta
+\in \cardfont{a}$ साठी $X_\beta$ हा $\card{X_\beta} \leq
+\cardfont{a}$ असलेला संच असू द्या. मग $\card{\bigcup_{\beta \in \cardfont{a}} X_\beta}
+\leq \cardfont{a}$.
+\end{prop}
+
+\begin{proof}
+प्रत्येक $\beta \in \cardfont{a}$ साठी $f_\beta \colon
+X_\beta \to \cardfont{a}$ हे !!a{injection} निश्चित करा.\footnote{ही फलने “निश्चित” कशी केली? \olref[sth][choice][countablechoice]{sec} पाहा.} आता $g \colon
+\bigcup_{\beta \in \cardfont{a}} X_\beta \to \cardfont{a} \times
+\cardfont{a}$ हे !!a{injection} पुढीलप्रमाणे ठरवा: $g(v) = \tuple{\beta, f_\beta(v)}$, येथे $v \in
+X_\beta$ आणि कोणत्याही $\gamma \in \beta$ साठी $v \notin X_\gamma$. मग
+\olref{cardplustimesmax} नुसार
+$\bigcup_{\beta \in \cardfont{a}} X_\beta \preceq \cardfont{a} \times
+\cardfont{a} \approx \cardfont{a}$.
+\end{proof}
+
+\end{document}
