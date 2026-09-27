@@ -1,0 +1,107 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{sub}
+
+\olsection{एकाच वेळी केलेले आदेशन}
+
+!!a{formula}~$!A$ मधील !!a{propositional variable} च्या सर्व
+आस्थितींच्या जागी दुसरे !!{formula} घालून मिळणारे सूत्र हा
+$!A$ चा \emph{दृष्टांत} असतो. वैधता आणि !!{derivability}
+यांवर चर्चा करताना !!{formula}s च्या दृष्टांतांचा वारंवार
+उल्लेख करावा लागेल. म्हणून ही संकल्पना नेमकी परिभाषित
+करणे उपयुक्त आहे.
+
+\begin{defn}\ollabel{def:subst-inst}
+  $!A$ हे असे मोडल !!{formula} असू द्या की त्यातील सर्व
+  !!{propositional
+    variable}s ही $p_1$, \dots, $p_n$ यांपैकीच
+  आहेत; तसेच $!D_1$, \dots, $!D_n$ हीदेखील मोडल !!{formula}s
+  असू द्या. मग
+  $\SSubst{!A}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$
+  म्हणजे $!A$ मध्ये प्रत्येक $p_i$ च्या जागी $!D_i$ चे
+  एकाच वेळी आदेशन करून मिळणारे सूत्र, अशी व्याख्या करतो.
+  औपचारिकरीत्या ही $!A$ वरील विगमनाने केलेली व्याख्या आहे:
+  \begin{enumerate}
+    \tagitem{prvFalse}{\indcase{!A}{\lfalse}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ हे $\lfalse$ असते.}}{}
+    \tagitem{prvTrue}{\indcase{!A}{\ltrue}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ हे $\ltrue$ असते.}}{}
+    \item \indcase{!A}{q}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+        \subst{!D_n}{p_n}}$ हे $q$ असते, जर $i
+      = 1$, \dots,~$n$ साठी $q \not\ident p_i$ असेल.}
+    \item \indcase{!A}{p_i}{$\SSubst{\indfrm}{\subst{!D_1}{p_1},
+        \dots, \subst{!D_n}{p_n}}$ हे $!D_i$ असते.}
+    \tagitem{prvNot}{\indcase{!A}{\lnot !B}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ हे
+        $\lnot \SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ असते.}}{}
+    \tagitem{prvAnd}{\indcase{!A}{(!B \land
+        !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ हे पुढील सूत्र असते:
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \land
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\]}}{}
+    \tagitem{prvOr}{\indcase{!A}{(!B \lor
+          !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ हे पुढील सूत्र असते:
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \lor
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\]}}{}
+    \tagitem{prvIf}{\indcase{!A}{(!B \lif
+          !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ हे पुढील सूत्र असते:
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \lif
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\]}}{}
+    \tagitem{prvIff}{\indcase{!A}{(!B \liff
+          !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ हे पुढील सूत्र असते:
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \liff
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\]}}{}
+    \item \indcase{!A}{\Box !B}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ म्हणजे
+        $\Box
+        \SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}.$}
+    \tagitem{prvDiamond}{\indcase{!A}{\Diamond !B}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ म्हणजे
+        $\Diamond
+        \SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}.$}}{}
+  \end{enumerate}
+  !!{formula} $\SSubst{!A}{\subst{!D_1}{p_1}, \dots,
+    \subst{!D_n}{p_n}}$ याला $!A$ चा \emph{आदेशन-दृष्टांत}
+  म्हणतात.
+\end{defn}
+
+\begin{ex}
+  समजा $!A$ हे $p_1 \lif \Box(p_1 \land p_2)$,
+  $!D_1$ हे $\Diamond(p_2 \lif p_3)$ आणि $!D_2$ हे
+  $\lnot\Box p_1$ आहे. मग
+  $\SSubst{!A}{\subst{!D_1}{p_1}, \subst{!D_2}{p_2}}$ म्हणजे
+  \begin{align*}
+    \Diamond(p_2 \lif p_3) &
+    \lif \Box(\Diamond(p_2 \lif p_3) \land \lnot\Box p_1)
+    \intertext{तर $\SSubst{!A}{\subst{!D_2}{p_1}, \subst{!D_1}{p_2}}$ म्हणजे}
+    \lnot\Box p_1 &
+    \lif \Box(\lnot\Box p_1 \land \Diamond(p_2 \lif p_3))
+    \intertext{लक्षात घ्या: एकाच वेळी केलेले आदेशन
+      सर्वसाधारणपणे क्रमाने केलेल्या आदेशनासारखे नसते.
+      उदाहरणार्थ, वरील
+      $\SSubst{!A}{\subst{!D_1}{p_1}, \subst{!D_2}{p_2}}$ ची
+      $\Subst{(\Subst{!A}{!D_1}{p_1})}{!D_2}{p_2}$ शी तुलना करा; नंतरचे असे आहे:}
+    \Diamond(p_2 \lif p_3) & \Subst{\lif \Box(\Diamond(p_2 \lif p_3) \land p_2)}{\lnot\Box p_1}{p_2}, \text{ म्हणजे}\\
+    \Diamond(\lnot\Box p_1 \lif p_3) &
+    \lif \Box(\Diamond(\lnot\Box p_1
+    \lif p_3) \land \lnot\Box p_1)\\
+    \intertext{आणि $\Subst{(\Subst{!A}{!D_2}{p_2})}{!D_1}{p_1}$ शीही तुलना करा:}
+    p_1 & \lif \Subst{\Box(p_1 \land \lnot\Box p_1)}{\Diamond(p_2 \lif p_3)}{p_1}, \text{ म्हणजे}\\
+    \Diamond(p_2 \lif p_3) &
+    \lif \Box(\Diamond(p_2
+    \lif p_3) \land \lnot\Box\Diamond(p_2 \lif p_3)).
+  \end{align*}
+\end{ex}
+
+\end{document}

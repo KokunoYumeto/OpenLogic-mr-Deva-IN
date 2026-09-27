@@ -840,6 +840,11 @@ _DOCUMENTED_PROJECTIONS = {
         # OLINC-147: pair the conditional expansion's closing parenthesis.
         (r'$(\lnot !A \lor !B)$', r'$\lnot !A \lor !B)$'),
     ],
+    'OLP-0411': [
+        # OLINC-148: gate biconditional substitution on its own tag.
+        (r'\tagitem{prvIff}{\indcase{!A}{(!B \liff',
+         r'\tagitem{prvIf}{\indcase{!A}{(!B \liff'),
+    ],
 }
 
 
