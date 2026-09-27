@@ -1,0 +1,93 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: language-epistemic-logic
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{lan}
+
+\olsection{ज्ञानविषयक तर्कशास्त्राची भाषा}
+
+\begin{defn}
+$G$ हा कर्तृचिन्हांचा संच असू द्या. अनेक कर्त्यांच्या
+ज्ञानविषयक तर्कशास्त्राच्या मूलभूत भाषेत पुढील गोष्टी
+असतात:
+\begin{enumerate}
+  \tagitem{prvFalse}{!!{falsity} दर्शवणारा विधानीय स्थिरांक~$\lfalse$.}{}
+  \tagitem{prvTrue}{!!{truth} दर्शवणारा विधानीय स्थिरांक~$\ltrue$.}{}
+  \item !!{propositional variable}s चा !!{denumerable}s संच: $\Obj
+    p_0$, $\Obj p_1$, $\Obj p_2$, \dots
+  \item विधानीय संयोजके: \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (नकार)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (संयोग)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (विकल्पयोग)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}.
+  \item $a \in G$ असताना ज्ञान-संकारक $\Knows_a$.
+\end{enumerate}
+\end{defn}
+
+आपल्या व्यवस्थेत आपल्याला एकाच कर्त्याच्या ज्ञानाचा
+विचार करायचा असेल, तर संच~$G$ आणि स्वतंत्र कर्ते
+यांचा निर्देश वगळता येतो. त्या वेळी आपल्याकडे फक्त
+मूलभूत संकारक~$\Knows$ असतो.
+
+\begin{defn}
+ज्ञानविषयक भाषेतील \emph{!!^{formula}s} ची पुढीलप्रमाणे
+  आगमनाने व्याख्या करतो:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$ हे अण्विक !!{formula} आहे.}{}
+
+\tagitem{prvTrue}{$\ltrue$ हे अण्विक !!{formula} आहे.}{}
+
+\item प्रत्येक विधानीय चल~$\Obj p_i$ हे (अण्विक) !!{formula} आहे.
+
+\tagitem{prvNot}{$!A$ हे !!a{formula} असेल, तर $\lnot !A$
+  हेही !!a{formula} आहे.}{}
+
+\tagitem{prvAnd}{$!A$ आणि $!B$ ही !!{formula}s असतील, तर $(!A \land
+  !B)$ हे !!a{formula} आहे.}{}
+
+\tagitem{prvOr}{$!A$ आणि $!B$ ही !!{formula}s असतील, तर $(!A \lor !B)$
+  हे !!a{formula} आहे.}{}
+
+\tagitem{prvIf}{$!A$ आणि $!B$ ही !!{formula}s असतील, तर $(!A \lif !B)$
+  हे !!a{formula} आहे.}{}
+
+\tagitem{prvIff}{$!A$ आणि $!B$ ही !!{formula}s असतील, तर $(!A \liff !B)$
+  हे !!a{formula} आहे.}{}
+
+\item $!A$ हे !!a{formula} असेल आणि $a \in G$ असेल,
+  तर $\Knows_a !A$ हे !!a{formula} आहे.
+
+\tagitem{limitClause}{याखेरीज दुसरे काहीही !!a{formula} नाही.}{}
+\end{enumerate}
+\end{defn}
+
+!!a{formula}~$!A$ मध्ये $\Knows_a$ नसेल, तर त्याला
+\emph{मोडल-विरहित} म्हणतो.
+
+\begin{defn}
+  $\Knows$ हा संकारक वैयक्तिक ज्ञान दर्शवण्यासाठी
+  आहे; $\EKnows$ हा, बहुधा ``सर्वांना माहीत आहे'' असा
+  वाचला जाणारा संकारक, समूहज्ञान दर्शवतो. $G' \subseteq
+  G$ असताना $\EKnows_{G'} !A$ हे पुढील सूत्राचे
+  संक्षिप्त रूप म्हणून परिभाषित करतो:
+  \[\bigwedge_{b \in G'} \Knows_b !A.\]
+\end{defn}
+
+कर्त्यांच्या~$G$ समूहातील ज्ञानाची याहून अधिक प्रबळ
+संकल्पनाही परिभाषित करता येते: \emph{सामायिक ज्ञान}.
+एखादी माहिती त्या समूहात सामायिक ज्ञान असेल, तर
+त्या समूहातील कर्त्यांच्या प्रत्येक संभाव्य क्रमासाठी,
+एकाला माहीत आहे की दुसऱ्याला माहीत आहे की आणखी
+एकाला माहीत आहे, अशा प्रकारचे ज्ञान \dots अनंतपर्यंत
+पुढे जाते. हे समूहज्ञानापेक्षा लक्षणीयरीत्या अधिक
+प्रबळ आहे. !!a{formula} समूहज्ञान असले, तरी सामायिक
+ज्ञान नसते, अशी संबंधी प्रतिमाने सहज देता येतात.
+``$!A$ हे~$G$ समूहात सामायिक ज्ञान आहे'' हे
+दर्शवण्यासाठी आपण $\CKnows_G !A$ वापरू.
+
+\end{document}
