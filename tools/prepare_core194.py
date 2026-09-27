@@ -247,10 +247,14 @@ singular = {
     "identity": "एकरूपता",
     "injective": "एकास-एक",
     "language": "भाषा",
+    "lambda definable": "लॅम्डा-परिभाष्य",
+    "lambda define": "लॅम्डा-परिभाषित",
+    "lambda defined": "लॅम्डा-परिभाषित",
     "main operator": "मुख्य संकारक",
     "nonderivability": "अनिष्पन्नता",
     "nonenumerable": "अगणनीय",
     "operator": "संकारक",
+    "parameter": "प्राचल",
     "predicate": "विधेय",
     "propositional variable": "विधानीय चल",
     "sentence": "वाक्य",
@@ -270,6 +274,7 @@ plural = {
     "formula": "सूत्रे",
     "function": "फलने",
     "operator": "संकारक",
+    "parameter": "प्राचले",
     "predicate": "विधेये",
     "propositional variable": "विधानीय चले",
     "sentence": "वाक्ये",
@@ -288,6 +293,22 @@ def token_word(token, suffix=""):
 
 
 def replace_reader_tokens(text):
+    # In five translated undecidability files, a semantic token is sometimes
+    # followed by the same Marathi noun, already inflected for its sentence.
+    # Remove only that redundant token and keep the explicit noun/case form.
+    for token, noun_start in (("sentence", "वाक्य"), ("structure", "रचन")):
+        text = re.sub(
+            rf"!!(?:\^?a|\^)?\{{{token}\}}s?\s+(?={noun_start})",
+            "",
+            text,
+        )
+    # These two source contexts use the English finite-verb token as a verb;
+    # the surrounding Marathi needs the verb or participle explicitly.
+    text = text.replace("!!{lambda define}s;", "लॅम्डा-परिभाषित करते;")
+    text = text.replace(
+        r"!!{lambda define}s असे $\lambd$-पद",
+        r"लॅम्डा-परिभाषित करणारे $\lambd$-पद",
+    )
     text = re.sub(
         r"!!(?:\^?a|\^)?\{(?P<token>[^{}]+)\}(?P<suffix>s|d)?",
         lambda match: token_word(match.group("token"), match.group("suffix") or ""),
