@@ -1342,6 +1342,12 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\card{\bigcup_{i < n}A_i}',
          r'\card{\bigcup_{i < n}A_n}'),
     ],
+    'OLP-0599': [
+        # OLINC-287: remove the unmatched closing parenthesis in
+        # the interval-to-real-line tangent bijection.
+        (r'\tan(\pi(r-\nicefrac{1}{2}))',
+         r'\tan(\pi(r-\nicefrac{1}{2})))'),
+    ],
 }
 
 
