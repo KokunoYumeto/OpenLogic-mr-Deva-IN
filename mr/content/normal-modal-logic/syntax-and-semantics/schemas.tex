@@ -1,0 +1,195 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: schemas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{sch}
+
+\olsection{रूपबंध आणि वैधता}
+
+\begin{defn}
+  \emph{रूपबंध} म्हणजे एखाद्या मोडल !!{formula}~$!C$ चे
+  नेमके सर्व आदेशन-दृष्टांत मिळून बनलेला !!{formula}s चा संच; म्हणजे
+  \[
+  \Setabs{!B}{\lexists[!D_1], \dots, \lexists[!D_n] \left(!B =
+  \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \right) }.
+  \]
+  !!{formula}~$!C$ याला रूपबंधाचे \emph{वैशिष्ट्यदर्शक} !!{formula}
+  म्हणतात. !!{propositional
+  variable}s ची नावे बदलण्याचा फरक सोडल्यास ते एकमेव असते.
+  !!^a{formula}~$!A$ हे त्या संचाचा घटक असेल, तर तो
+  रूपबंधाचा \emph{दृष्टांत} असतो.
+\end{defn}
+
+रूपबंध दर्शवण्यासाठी $!C$ मधील अणुरूप घटकांच्या जागी
+`$!A$', `$!B$',~\dots ही चिन्हे बसवून मिळणारी
+अधिभाषेतील अभिव्यक्ती वापरणे सोयीचे असते. उदाहरणार्थ,
+`$!A$', `$!A \lif \Box!A$', `$!A \lif (!B \lif !A)$'
+ही रूपबंध दर्शवतात. त्यांची वैशिष्ट्यदर्शक !!{formula}s
+अनुक्रमे $p$, $p \lif \Box p$, $p \lif (q
+\lif p)$ आहेत. `$!A$' हा रूपबंध \emph{सर्व}
+!!{formula}s चा संच दर्शवतो.
+
+\begin{defn}
+  रूपबंधाचे सर्व दृष्टांत एखाद्या प्रतिमानात सत्य असतील तेव्हा
+  आणि केवळ तेव्हाच तो रूपबंध त्या प्रतिमानात \emph{सत्य}
+  असतो; आणि प्रत्येक प्रतिमानात सत्य असेल तेव्हा आणि केवळ
+  तेव्हाच तो \emph{वैध} असतो.
+\end{defn}
+
+\begin{prop}\ollabel{prop:Kvalid}
+  पुढील \Ax{K} हा रूपबंध वैध आहे:
+  \begin{equation*}
+  \Box(!A \lif !B) \lif (\Box !A \lif \Box !B). \tag{\Ax{K}}
+  \end{equation*}
+\end{prop}
+
+\begin{proof}
+  या रूपबंधाचा प्रत्येक दृष्टांत प्रत्येक प्रतिमानातील प्रत्येक
+  जगात सत्य आहे, हे दाखवायचे आहे. म्हणून कोणतेही
+  $\mModel{M} = \tuple{W,R,V}$ आणि $w \in W$ घ्या.
+  एखादे अभिव्यंजन एखाद्या जगात सत्य असल्याचे दाखवताना,
+  त्याचे पूर्वांग सत्य मानून उत्तरांगही सत्य आहे हे दाखवतो.
+  येथे $\mSat{M}{\Box(!A \lif !B)}[w]$ आणि
+  $\mSat{M}{\Box !A}[w]$ असू द्या. आता
+  $\mSat{M}{\Box !B}[w]$ दाखवायचे आहे. म्हणून $Rww'$
+  असलेले कोणतेही $w'$ घ्या. पहिल्या गृहीतकावरून
+  $\mSat{M}{!A \lif !B}[w']$ आणि दुसऱ्यावरून
+  $\mSat{M}{!A}[w']$. त्यामुळे $\mSat{M}{!B}[w']$.
+  $w'$ कोणतेही असल्यामुळे $\mSat{M}{\Box !B}[w]$.
+\end{proof}
+
+\begin{prop}\ollabel{prop:Dual-valid}
+  पुढील \Dual{} हा रूपबंध वैध आहे:
+  \begin{equation*}
+  \Diamond !A \liff \lnot\Box\lnot !A. \tag{\Dual}
+  \end{equation*}
+\end{prop}
+
+\begin{proof}
+  सराव.
+\end{proof}
+
+\begin{prob}
+  \olref[nml][syn][sch]{prop:Dual-valid} सिद्ध करा.
+\end{prob}
+
+\begin{prop}\ollabel{prop:soundMP}
+  प्रतिमानातील एखाद्या जगात $!A$ आणि $!A \lif !B$ सत्य
+  असतील, तर $!B$ देखील सत्य असते. म्हणून वैध !!{formula}s
+  विध्यात्मक अनुमानाखाली बंद असतात.
+\end{prop}
+
+\begin{prop}\ollabel{prop:valid-instances}
+  !!^a{formula}~$!A$ तेव्हा आणि केवळ तेव्हाच वैध असते,
+  जेव्हा त्याचे सर्व आदेशन-दृष्टांत वैध असतात. दुसऱ्या शब्दांत,
+  रूपबंध तेव्हा आणि केवळ तेव्हाच वैध असतो, जेव्हा त्याचे
+  वैशिष्ट्यदर्शक !!{formula} वैध असते.
+\end{prop}
+
+\begin{proof}
+  ``जर'' ही दिशा स्पष्ट आहे, कारण $!A$ स्वतःचाच
+  आदेशन-दृष्टांत आहे.
+
+  ``फक्त तरच'' ही दिशा सिद्ध करण्यासाठी पुढील दावा दाखवू.
+  $\mModel{M} = \tuple{W, R, V}$ हे मोडल प्रतिमान असू द्या,
+  आणि $!B \ident
+  \SSubst{!A}{\subst{!D_1}{p_1},\dots,\subst{!D_n}{p_n}}$ हा
+  $!A$ चा आदेशन-दृष्टांत असू द्या. $V'(p_i) =
+  \Setabs{w}{\mSat{M}{!D_i}[w]}$ याने
+  $\mModel{M'} = \tuple{W, R,
+    V'}$ परिभाषित करा. मग कोणत्याही~$w \in W$ साठी
+  $\mSat{M}{!B}[w]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\mSat{M'}{!A}[w]$. (याची सिद्धता सरावासाठी ठेवली आहे.)
+  आता $!A$ वैध आहे, पण $!A$ चा एखादा आदेशन-दृष्टांत
+  $!B$ वैध नाही, असे समजा. मग काही
+  $\mModel{M} = \tuple{W, R, V}$ आणि काही $w \in W$
+  साठी $\mSat/{M}{!B}[w]$. पण दाव्यावरून
+  $\mSat/{M'}{!A}[w]$; म्हणजे $!A$ वैध नाही. हा विरोधाभास.
+\end{proof}
+
+\begin{prob}
+  \olref[nml][syn][sch]{prop:valid-instances} च्या सिद्धतेतील
+  ``फक्त तरच'' भागातला दावा सिद्ध करा. (सूचना:
+  $!A$ वर विगमन करा.)
+\end{prob}
+
+मात्र एखादा रूपबंध प्रतिमानात सत्य असणे आणि त्याचे
+वैशिष्ट्यदर्शक सूत्र त्या प्रतिमानात सत्य असणे या सममूल्य
+अटी नाहीत, हे लक्षात घ्या. ``फक्त तरच'' ही दिशा खरी आहे:
+$!A$ चा प्रत्येक दृष्टांत~$\mModel{M}$ मध्ये सत्य असेल,
+तर $!A$~स्वतःही~$\mModel{M}$ मध्ये सत्य असते. पण
+$!A$ हे~$\mModel{M}$ मध्ये सत्य असूनही $!A$ चा एखादा
+दृष्टांत~$\mModel{M}$ मधील काही जगात असत्य असू शकतो.
+अगदी साध्या प्रतिदृष्टांतासाठी~$p$ घेऊन एकच जग~$w$ असलेले आणि
+$V(p) = \{w\}$ असलेले प्रतिमान घ्या. तेथे~$p$ हे~$w$
+येथे सत्य आहे. पण $\lfalse$ हा~$p$ चा दृष्टांत असून
+तो~$w$ येथे सत्य नाही.
+
+\begin{prob}
+  पुढीलपैकी कोणतेही !!{formula}s वैध नाही, हे दाखवा:
+  \begin{enumerate}
+    \item[\Ax{D}:] \quad $\Box p \lif \Diamond p$;
+    \item[\Ax{T}:] \quad $\Box p \lif p$;
+    \item[\Ax{B}:] \quad $p \lif \Box\Diamond p$;
+    \item[\Ax{4}:] \quad $\Box p \lif \Box \Box p$;
+    \item[\Ax{5}:] \quad $\Diamond p \lif \Box \Diamond
+      p$.
+  \end{enumerate}
+\end{prob}
+
+\begin{table}[t]
+    \centering
+    \begin{tabular}{| l || l |}
+      \hline
+      {\emph{वैध रूपबंध}} & {\emph{अवैध रूपबंध}} \\
+      \hline\hline
+      $\Box(!A \lif !B) \lif (\Diamond !A \lif \Diamond !B)$
+      & $\Box (!A \lor !B) \lif (\Box !A \lor \Box !B)$ \\
+      $\Diamond (!A \lif !B) \lif (\Box !A \lif \Diamond
+      !B)$
+      & $(\Diamond !A \land \Diamond !B) \lif \Diamond (!A
+      \land !B)$\\
+      $\Box (!A \land !B) \liff (\Box !A \land \Box !B)$
+      & $!A \lif \Box !A$ \\
+      $\Box !A \lif \Box (!B \lif !A)$
+      & $\Box \Diamond !A \lif !B$ \\
+      $\lnot \Diamond !A \lif \Box (!A \lif !B)$
+      & $\Box \Box !A \lif \Box !A$ \\
+      $\Diamond (!A \lor !B) \liff (\Diamond !A \lor
+      \Diamond !B)$
+      & $\Box \Diamond !A \lif \Diamond \Box !A$. \\
+      \hline
+    \end{tabular}
+    \caption{वैध आणि अवैध रूपबंध.}
+    \ollabel{tab:valid-invalidSchemas}
+\end{table}
+
+\begin{prob}%\ollabel{ex:in/validSchemas}
+  \olref[nml][syn][sch]{tab:valid-invalidSchemas} च्या
+  पहिल्या स्तंभातील रूपबंध वैध आहेत, आणि दुसऱ्या
+  स्तंभातील रूपबंध वैध नाहीत, हे सिद्ध करा.
+\end{prob}
+
+\begin{prob}
+  पुढील रूपबंध वैध आहेत की अवैध, ते ठरवा:
+  \begin{enumerate}
+  \item $(\Diamond !A \lif \Box !B) \lif (\Box !A \lif \Box
+    !B)$;
+  \item $\Diamond(!A \lif !B) \lor \Box(!B \lif !A)$.
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  पुढील प्रत्येक रूपबंधासाठी असे प्रतिमान $\mModel{M}$ शोधा की
+  त्या !!{formula} चा प्रत्येक दृष्टांत $\mModel{M}$ मध्ये सत्य आहे:
+  \begin{enumerate}
+  \item $p \lif \Diamond\Diamond p$;
+  \item $\Diamond p \lif \Box p$.
+  \end{enumerate}
+\end{prob}
+
+\end{document}
