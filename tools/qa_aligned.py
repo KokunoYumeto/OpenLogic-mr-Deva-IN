@@ -940,6 +940,11 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\Box\Box^{-1}\Gamma \Proves[\Sigma] \Box!A',
          r'\Box\Box^{-1}\Gamma \Proves \Box!A'),
     ],
+    'OLP-0447': [
+        # OLINC-180: the exercise selector must match the probAnd branch.
+        ('probNot,probAnd,probOr',
+         'probNot,proband,probOr'),
+    ],
 }
 
 

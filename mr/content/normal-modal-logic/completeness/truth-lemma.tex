@@ -1,0 +1,222 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: truth-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{tru}
+
+\olsection{सत्यता पूर्वप्रमेय}
+
+कॅनॉनिकल प्रतिमान~$\mModel{M^\Sigma}$ ची व्याख्या
+अशी केली आहे की $\mSat{M^\Sigma}{!A}[\Delta]$
+असेल तेव्हा आणि तेव्हाच $!A \in \Delta$.
+!!{propositional
+variable}s साठी
+$V^\Sigma$ ची व्याख्याच हे थेट दाखवते.
+मात्र ही समतुल्यता सर्व !!{formula}s साठी
+खरी आहे याची पडताळणी करावी लागेल.
+हे आपण विगमनाने करू. विगमन-पायरीत
+विधानीय कारक असलेल्या !!{formula}s साठी
+समतुल्यता सिद्ध करावी लागते (येथे
+\olref[ccs]{prop:ccs-properties} वापरतो),
+तसेच मोडल कारक असलेल्या सूत्रांसाठीही
+(येथे \olref[mod]{sec} मधील निष्कर्ष वापरतो).
+
+\begin{prop}[सत्यता पूर्वप्रमेय]
+  \ollabel{prop:truthlemma}
+  प्रत्येक !!{formula}~$!A$ साठी
+  $\mSat{M^\Sigma}{!A}[\Delta]$ असेल तेव्हा
+  आणि तेव्हाच $!A \in \Delta$.
+\end{prop}
+
+\begin{proof}
+  $!A$ च्या रचनेवर विगमन करू.
+  \begin{enumerate}
+    \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat/{M^\Sigma}{\lfalse}[\Delta]$
+        हे \olref[syn][trw]{defn:mmodels} नुसार, आणि
+        $\lfalse \notin \Delta$ हे
+        \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lfalse}
+        नुसार.}}{}
+
+    \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M^\Sigma}{\ltrue}[\Delta]$
+        हे \olref[syn][trw]{defn:mmodels} नुसार, आणि
+        $\ltrue \in \Delta$ हे
+        \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-ltrue}
+        नुसार.}}{}
+
+    \item \indcase{!A}{p}{$\mSat{M^\Sigma}{p}[\Delta]$
+      असेल तेव्हा आणि तेव्हाच $\Delta \in
+      V^\Sigma(p)$, हे \olref[syn][trw]{defn:mmodels}
+      नुसार. तसेच $\Delta
+      \in V^\Sigma(p)$ असेल तेव्हा आणि तेव्हाच
+      $p \in \Delta$, हे~$V^\Sigma$ च्या
+      व्याख्येनुसार.}
+
+    \tagitem{prvNot}{\indcase{!A}{\lnot !B}{%
+        \iftag{probNot}{सराव.}{$\mSat{M^\Sigma}{\lnot !B}[\Delta]$
+          असेल तेव्हा आणि तेव्हाच
+          $\mSat/{M^\Sigma}{!B}[\Delta]$
+          (\olref[syn][trw]{defn:mmodels} नुसार);
+          असेल तेव्हा आणि तेव्हाच $!B \notin \Delta$
+          (विगमन गृहीतकानुसार);
+          असेल तेव्हा आणि तेव्हाच
+          $\lnot !B \in \Delta$
+          (\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lnot}
+          नुसार).}}}{}
+
+    \tagitem{prvAnd}{\indcase{!A}{!B \land !C}{%
+        \iftag{probAnd}{सराव.}{$\mSat{M^\Sigma}{!B \land
+            !C}[\Delta]$ असेल तेव्हा आणि तेव्हाच
+          $\mSat{M^\Sigma}{!B}[\Delta]$ आणि
+          $\mSat{M^\Sigma}{!C}[\Delta]$
+          (\olref[syn][trw]{defn:mmodels} नुसार);
+          असेल तेव्हा आणि तेव्हाच $!B \in \Delta$
+          आणि $!C \in \Delta$
+          (विगमन गृहीतकानुसार);
+          असेल तेव्हा आणि तेव्हाच $!B \land !C \in
+          \Delta$
+          (\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-land}
+          नुसार).}}}{}
+
+    \tagitem{prvOr}{\indcase{!A}{!B \lor !C}{%
+        \iftag{probOr}{सराव.}{$\mSat{M^\Sigma}{!B \lor
+            !C}[\Delta]$ असेल तेव्हा आणि तेव्हाच
+          $\mSat{M^\Sigma}{!B}[\Delta]$ किंवा
+          $\mSat{M^\Sigma}{!C}[\Delta]$
+          (\olref[syn][trw]{defn:mmodels} नुसार);
+          असेल तेव्हा आणि तेव्हाच $!B \in \Delta$
+          किंवा $!C \in \Delta$
+          (विगमन गृहीतकानुसार);
+          असेल तेव्हा आणि तेव्हाच $!B \lor !C \in
+          \Delta$
+          (\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lor}
+          नुसार).}}}{}
+
+    \tagitem{prvIf}{\indcase{!A}{!B \lif !C}{%
+        \iftag{probIf}{सराव.}{$\mSat{M^\Sigma}{!B \lif
+            !C}[\Delta]$ असेल तेव्हा आणि तेव्हाच
+          $\mSat/{M^\Sigma}{!B}[\Delta]$ किंवा
+          $\mSat{M^\Sigma}{!C}[\Delta]$
+          (\olref[syn][trw]{defn:mmodels} नुसार);
+          असेल तेव्हा आणि तेव्हाच $!B \notin \Delta$
+          किंवा $!C \in \Delta$
+          (विगमन गृहीतकानुसार);
+          असेल तेव्हा आणि तेव्हाच $!B \lif !C
+          \in \Delta$
+          (\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lif}
+          नुसार).}}}{}
+
+    \tagitem{prvIff}{\indcase{!A}{!B \liff !C}{%
+        \iftag{probIff}{सराव.}{$\mSat{M^\Sigma}{!B \liff
+            !C}[\Delta]$ असेल तेव्हा आणि तेव्हाच
+          $\mSat{M^\Sigma}{!B}[\Delta]$ आणि
+          $\mSat{M^\Sigma}{!C}[\Delta]$
+          ही दोन्ही, किंवा
+          $\mSat/{M^\Sigma}{!B}[\Delta]$ आणि
+          $\mSat/{M^\Sigma}{!C}[\Delta]$
+          ही दोन्ही
+          (\olref[syn][trw]{defn:mmodels} नुसार);
+          असेल तेव्हा आणि तेव्हाच $!B \in \Delta$
+          आणि $!C \in \Delta$ ही दोन्ही, किंवा
+          $!B \notin \Delta$ आणि $!C \notin
+          \Delta$ ही दोन्ही
+          (विगमन गृहीतकानुसार);
+          असेल तेव्हा आणि तेव्हाच $!B \liff !C \in
+          \Delta$
+          (\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-liff}
+          नुसार).}}}{}
+
+    \tagitem{prvBox}{\indcase{!A}{\Box !B}{%
+        \iftag{probBox}{सराव.}{प्रथम
+          $\mSat{M^\Sigma}{\Box !B}[\Delta]$
+          असे समजा.
+          \olref[syn][trw]{defn:mmodels} नुसार
+          $R^\Sigma \Delta\Delta'$ असलेल्या
+          प्रत्येक $\Delta'$ साठी
+          $\mSat{M^\Sigma}{!B}[\Delta']$.
+          विगमन गृहीतकानुसार
+          $R^\Sigma \Delta\Delta'$ असलेल्या
+          प्रत्येक $\Delta'$ साठी $!B \in
+          \Delta'$. $R^\Sigma$ च्या
+          व्याख्येनुसार $\Box^{-1} \Delta
+          \subseteq \Delta'$ असलेल्या प्रत्येक
+          $\Delta'$ साठी $!B \in \Delta'$.
+          \olref[mod]{prop:box} नुसार
+          $\Box !B \in \Delta$.
+
+          आता $\Box !B \in \Delta$ असे समजा.
+          $R^\Sigma \Delta\Delta'$ म्हणजेच
+          $\Box^{-1}\Delta \subseteq \Delta'$
+          असलेला कोणताही $\Delta' \in W^\Sigma$
+          घ्या. $\Box !B \in \Delta$
+          असल्याने $!B \in \Box^{-1} \Delta$.
+          परिणामी $!B \in \Delta'$.
+          विगमन गृहीतकानुसार
+          $\mSat{M^\Sigma}{!B}[\Delta']$.
+          $R^\Sigma \Delta\Delta'$ असलेला
+          $\Delta'$ स्वेच्छ असल्याने
+          $R^\Sigma \Delta\Delta'$ असलेल्या
+          सर्व $\Delta' \in W^\Sigma$ साठी
+          $\mSat{M^\Sigma}{!B}[\Delta']$.
+          \olref[syn][trw]{defn:mmodels} नुसार
+          $\mSat{M^\Sigma}{\Box
+            !B}[\Delta]$.}}}{}
+
+    \tagitem{prvDiamond}{\indcase{!A}{\Diamond !B}{%
+        \iftag{probDiamond}{सराव.}{प्रथम
+          $\mSat{M^\Sigma}{\Diamond !B}[\Delta]$
+          असे समजा.
+          \olref[syn][trw]{defn:mmodels} नुसार
+          $R^\Sigma \Delta\Delta'$ असलेल्या
+          एखाद्या $\Delta'$ साठी
+          $\mSat{M^\Sigma}{!B}[\Delta']$.
+          विगमन गृहीतकानुसार
+          $R^\Sigma \Delta\Delta'$ असलेल्या
+          एखाद्या $\Delta'$ साठी
+          $!B \in \Delta'$.
+          $R^\Sigma$ च्या व्याख्येनुसार,
+          \iftag{prvBox}{$\Box^{-1} \Delta
+            \subseteq \Delta'$ असलेल्या
+            एखाद्या $\Delta'$ साठी
+            $!B \in \Delta'$.
+            \olref[mod]{prop:diamond} नुसार,}{}
+          $\Diamond \Delta' \subseteq \Delta$
+          असलेल्या एखाद्या $\Delta'$ साठी
+          $!B \in \Delta'$.
+          $!B \in \Delta'$ असल्याने
+          $\Diamond !B \in \Diamond
+          \Delta'$; म्हणून
+          $\Diamond !B \in \Delta$.
+
+          आता $\Diamond !B \in \Delta$
+          असे समजा. \olref[mod]{prop:diamond}
+          नुसार $\Diamond \Delta' \subseteq
+          \Delta$ आणि $!B \in \Delta'$
+          असलेला संपूर्ण $\Sigma$-सुसंगत
+          $\Delta' \in W^\Sigma$ असतो.
+          \iftag{prvBox}{\olref[mod]{lem:box-iff-diamond}
+            नुसार $\Box^{-1}
+            \Delta \subseteq \Delta'$
+            आणि $!B \in \Delta'$ असलेला
+            $\Delta' \in W^\Sigma$ असतो.}{}
+          $R^\Sigma$ च्या व्याख्येनुसार
+          $R^\Sigma \Delta\Delta'$;
+          म्हणून $R^\Sigma
+          \Delta\Delta'$ आणि
+          $!B \in \Delta'$ असलेला
+          $\Delta' \in W^\Sigma$ असतो.
+          \olref[syn][trw]{defn:mmodels}
+          नुसार $\mSat{M^\Sigma}{\Diamond
+            !B}[\Delta]$.}}}{}
+  \end{enumerate}
+\end{proof}
+
+\begin{probtag}{probFalse,probTrue,probNot,probAnd,probOr,probIf,probIff,probBox,probDiamond}
+  \olref[nml][com][tru]{prop:truthlemma}
+  ची सिद्धता पूर्ण करा.
+\end{probtag}
+
+\end{document}
