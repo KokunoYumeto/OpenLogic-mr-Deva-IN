@@ -879,6 +879,14 @@ _DOCUMENTED_PROJECTIONS = {
          r'\Domain{M_k} = \{1, \dots, k\}'),
         (r'\dots, k+1\}$ वरील', r'\dots, k\}$ वरील'),
     ],
+    'OLP-0426': [
+        # OLINC-162: the true case must translate true, not false.
+        (r'\tagitem{prvTrue}{\indcase{!A}{\ltrue}',
+         r'\tagitem{prvTrue}{\indcase{!A}{\lfalse}'),
+        # OLINC-163: evaluate the free-variable translation under s.
+        (r'\Atom{X}{y})] \lif \Atom{X}{x}}[s]$',
+         r'\Atom{X}{y})] \lif \Atom{X}{x}}$'),
+    ],
 }
 
 
@@ -887,6 +895,12 @@ _SOURCE_QA_NORMALIZATIONS = {
         # OLINC-063: the frozen source closes the math delimiter before
         # the second argument's brace, so even source-to-source QA fails.
         (r'$\Sat{M}{!P \lif !A$}', r'$\Sat{M}{!P \lif !A}$'),
+    ],
+    'OLP-0426': [
+        # OLINC-161: the source closes the induction-case argument before
+        # its inline math delimiter, so source-to-source QA cannot parse it.
+        (r'\liff \ST_x(!C))}$.}{}',
+         r'\liff \ST_x(!C))$.}{}'),
     ],
 }
 
@@ -910,13 +924,21 @@ def check_with_documented_source_corrections(unit_id, source, target):
             normalized_source = normalized_source.replace(frozen, corrected)
             source_normalizations.append((frozen, corrected))
     result = check(normalized_source, projected)
-    if source_normalizations:
+    if source_normalizations and applied:
+        result = {
+            'formula_multiset_parity_after_documented_source_typo_normalization_and_correction_projection': result.pop('formula_multiset_parity'),
+            'macro_multiset_parity_after_documented_source_correction_projection': result.pop('macro_multiset_parity'),
+            **result,
+            'documented_source_typo_normalization_applied': True,
+            'documented_source_correction_projection_applied': True,
+        }
+    elif source_normalizations:
         result = {
             'formula_multiset_parity_after_documented_source_typo_normalization': result.pop('formula_multiset_parity'),
             **result,
             'documented_source_typo_normalization_applied': True,
         }
-    if applied:
+    elif applied:
         if unit_id == 'OLP-0054':
             result = {
                 'formula_multiset_parity_after_documented_equivalence_projection': result.pop('formula_multiset_parity'),
