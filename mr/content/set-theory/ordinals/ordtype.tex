@@ -1,0 +1,59 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{ordtype}
+\olsection{क्रमप्रकार म्हणून क्रमसूचक संख्या}
+
+आता प्रतिस्थापन उपलब्ध आहे आणि आपण $\ZFminus$ मध्ये काम करत आहोत. त्यामुळे ज्या निष्कर्षाकडे आपण वाटचाल केली, तो अखेर सिद्ध करता येईल:
+
+\begin{thm}\ollabel{thmOrdinalRepresentation}
+प्रत्येक सुक्रमण एकमेव क्रमसूचक संख्येशी समरूपी असते.
+\end{thm}
+
+\begin{proof}
+$\tuple{A, <}$ हे सुक्रमण मानू. \olref[basic]{ordisoidentity} वरून ते जास्तीत जास्त एका क्रमसूचक संख्येशी समरूपी असू शकते. म्हणून विसंगतीसाठी $\tuple{A, <}$ हे \emph{कोणत्याही} क्रमसूचक संख्येशी समरूपी नाही असे मानू. आधी $\tuple{A, <}$ ला ``शक्य तितके लहान'' करू. तपशील असा: $\tuple{A_a,
+<_a}$ हा एखादा यथार्थ आरंभीचा खंड कोणत्याही क्रमसूचक संख्येशी समरूपी नसेल, तर हा गुणधर्म असणारा $a \in A$ मधील लघुतम सदस्य निवडू; मग $B = A_a$ आणि $\mathord{\lessdot} =
+\mathord{<_a}$ ठेवू. तसे नसल्यास $B = A$ आणि $\mathord{\lessdot} =
+\mathord{<}$ ठेवू.
+
+या निवडीमुळे $B$ चा प्रत्येक यथार्थ आरंभीचा खंड कोणत्या तरी क्रमसूचक संख्येशी समरूपी असतो; वर पाहिल्याप्रमाणे ती एकमेव असते. म्हणून प्रतिस्थापनावरून पुढील संच अस्तित्वात असतो आणि तो फलन असतो:
+\[
+	f = \Setabs{\tuple{\beta, b}}{b \in B\text{ आणि }\ordeq{\beta}{\tuple{B_b, \lessdot_b}}}
+\]
+विसंगतीचा पुरावा पूर्ण करण्यासाठी कोणत्या तरी क्रमसूचक संख्या $\alpha$ साठी $f$ हे $\alpha \to B$ समरूपण आहे, हे दाखवू.
+
+$\ran{f}
+= B$ हे उघड आहे. \olref[iso]{lemordsegments} वरून $f$ क्रम जपते; म्हणजे $\gamma \in \beta$ तेव्हाच आणि तेव्हाच $f(\gamma) \lessdot f(\beta)$. $\dom{f}$ ही क्रमसूचक संख्या आहे हे दाखवण्यासाठी \olref[basic]{corordtransitiveord} वरून $\dom{f}$ संक्रमक आहे हे दाखवणे पुरेसे आहे. म्हणून $\beta \in \dom{f}$ निश्चित करू; म्हणजे एखाद्या $b$ साठी $\ordeq{\beta}{\tuple{B_b, \lessdot_b}}$. $\gamma \in
+\beta$ असेल, तर \olref[iso]{wellordinitialsegment} वरून $\gamma \in \dom{f}$. म्हणून $\beta \subseteq
+\dom{f}$.
+\end{proof}
+
+या निष्कर्षामुळे \olref[vn]{sec} पासून अपेक्षित असलेली पुढील व्याख्या आता देता येते:
+
+\begin{defn}
+$\tuple{A, <}$ हे सुक्रमण असेल, तर त्याचा क्रमप्रकार $\ordtype{A, <}$ ही $\ordeq{\tuple{A, < }}{\alpha}$ पूर्ण करणारी एकमेव क्रमसूचक संख्या $\alpha$ असते.
+\end{defn}
+
+या व्याख्येवरून पुढील दोन सुंदर तत्त्वेही मिळतात:
+
+\begin{cor}\ollabel{ordtypesworklikeyouwant}
+$\tuple{A, <}$ आणि $\tuple{B, \lessdot}$ ही सुक्रमणे असतील, तर:
+\begin{align*}
+	\ordtype{A, <} = \ordtype{B, \lessdot}&\text{ तेव्हाच आणि तेव्हाच }\ordeq{\tuple{A, <}}{\tuple{B, \lessdot}}\\
+	\ordtype{A, <} \in \ordtype{B, \lessdot}&\text{ तेव्हाच आणि तेव्हाच }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ अशा काही }b \in B
+\end{align*}
+\end{cor}
+
+\begin{proof}
+पहिली समता \olref[basic]{ordisoidentity} वरून मिळते. दुसरा दावा सिद्ध करण्यासाठी $\ordtype{A, <} = \alpha$ आणि $\ordtype{B,
+\lessdot} = \beta$ मानू; तसेच $f \colon \beta \to \tuple {B, \lessdot}$ हे समरूपण घेऊ. मग:
+\begin{align*}
+	\alpha \in \beta&\text{ तेव्हाच आणि तेव्हाच }\funrestrictionto{f}{\alpha} \colon \alpha \to B_{f(\alpha)}\text{ हे समरूपण आहे}\\
+	&\text{ तेव्हाच आणि तेव्हाच }\ordeq{\tuple{A, <}}{\tuple{B_{f(\alpha)}, \lessdot_{f(\alpha)}}}\\
+	&\text{ तेव्हाच आणि तेव्हाच }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ अशा काही $b \in B$ साठी}
+\end{align*}
+हे \olref[iso]{ordisounique}, \olref[iso]{wellordinitialsegment} आणि \olref[basic]{ordissetofsmallerord} वरून मिळते.
+\end{proof}
+
+\end{document}
