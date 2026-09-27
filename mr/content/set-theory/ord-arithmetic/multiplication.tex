@@ -1,0 +1,90 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{mult}
+
+\olsection{क्रमसूचक गुणाकार}
+
+आता क्रमसूचक गुणाकाराकडे वळू; त्यासाठीची पद्धत क्रमसूचक बेरीजेसारखीच आहे. समजा $\alpha$ ला~$\beta$ ने गुणायचे आहे. रुंदी $\alpha$ आणि उंची $\beta$ असलेली आयताकृती जाळी कल्पा. प्रत्येक ओळीतून पुढे जावे, मग पुढील ओळीतून\ldots आणि अखेरीस संपूर्ण जाळीतून जावे; त्यातून $\alpha$ आणि $\beta$ यांचा गुणाकार मिळतो. दुसऱ्या शब्दांत, $\beta$ मधील \emph{प्रत्येक} घटकाऐवजी $\alpha$ ची एक प्रत ठेवून $\alpha$ आणि $\beta$ यांचा गुणाकार तयार होतो.
+
+हे औपचारिक करण्यासाठी $\alpha$ आणि $\beta$ यांच्या कार्तीय गुणाकारावर उलट शब्दकोशीय क्रम वापरू:
+
+\begin{defn}
+कोणत्याही क्रमसूचक संख्या $\alpha, \beta$ यांचा गुणाकार म्हणजे $\alpha \ordtimes \beta = \ordtype{\alpha \times \beta, \rlexless}$.
+\end{defn}
+\noindent
+ही व्याख्या नीट ठरते याची पुन्हा खात्री करावी लागेल:
+
+\begin{lem}\ollabel{ordtimeslessiswo}
+कोणत्याही क्रमसूचक संख्या $\alpha$ आणि $\beta$ यांच्यासाठी $\tuple{\alpha \times \beta, \rlexless}$ हे सुक्रमण आहे.
+\end{lem}
+
+\begin{proof}
+\olref[add]{ordsumlessiswo} प्रमाणेच.
+\end{proof}
+\noindent
+गुणाकार पुढीलप्रमाणे वागतो, हे सिद्ध करणेही कठीण नाही:
+
+\begin{lem}\ollabel{ordtimesrecursion}
+कोणत्याही क्रमसूचक संख्या $\alpha, \beta$ यांच्यासाठी:
+\begin{align*}
+  \alpha \ordtimes 0 &= 0\\
+  \alpha \ordtimes (\beta \ordplus 1) &=
+    (\alpha \ordtimes \beta) \ordplus \alpha\\
+  \alpha  \ordtimes \beta &=
+    \bigcup_{\delta < \beta}(\alpha \ordtimes \delta) &&
+    \text{$\beta$ ही सीमा क्रमसूचक संख्या असेल तेव्हा}.
+\end{align*}
+\end{lem}
+
+\begin{proof}
+सरावासाठी सोडले आहे.
+\end{proof}
+
+खरे तर बेरीजप्रमाणेच, प्रत्यक्ष व्याख्येऐवजी या पुनरावर्तन समीकरणांवरून क्रमसूचक गुणाकार परिभाषित करता आला असता. त्याचप्रमाणे, काही गुणधर्म परिचितही वाटतात:
+
+\begin{lem}\ollabel{ordinalmultiplicationisnice}
+$\alpha, \beta, \gamma$ या क्रमसूचक संख्या असतील, तर:
+\begin{enumerate}
+  \item\ollabel{ordtimes1} $\alpha \neq 0$ आणि $\beta < \gamma$ असतील,
+  तर $\alpha \ordtimes \beta < \alpha \ordtimes \gamma$;
+  \item\ollabel{ordtimes2} $\alpha \neq 0$ आणि $\alpha \ordtimes
+  \beta = \alpha\ordtimes\gamma$ असतील, तर $\beta = \gamma$;
+  \item\ollabel{ordtimes3} $\alpha \ordtimes (\beta \ordtimes
+  \gamma) = (\alpha \ordtimes \beta) \ordtimes \gamma$;
+  \item\ollabel{ordtimes4} $\alpha \leq \beta$ असेल, तर $\alpha
+  \ordtimes \gamma \leq \beta \ordtimes \gamma$;
+  \item\ollabel{ordtimes5} $\alpha \ordtimes (\beta \ordplus
+  \gamma) = (\alpha \ordtimes \beta )\ordplus (\alpha\ordtimes
+  \gamma)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+सरावासाठी सोडले आहे.
+\end{proof}
+
+मनसोक्त इतर निष्कर्ष सिद्ध करा (किंवा शोधून वाचा). पण \olref[ord-arithmetic][add]{ordsumnotcommute} लक्षात घेतल्यास पुढील गोष्ट आश्चर्यकारक वाटू नये:
+
+\begin{prop}
+क्रमसूचक गुणाकार क्रमनिरपेक्ष नाही: $2 \ordtimes \omega  =
+\omega < \omega \ordtimes 2$
+\end{prop}
+
+\begin{proof}
+$2 \ordtimes \omega = \supstrict_{n < \omega}(2\ordtimes  n) = \omega \in \supstrict_{n < \omega}(\omega \ordplus n) = \omega \ordplus \omega = \omega \ordtimes 2$.
+\end{proof}
+\noindent
+यामागील सहज कारणही सरळ आहे. $2
+\ordtimes \omega$ मोजताना प्रत्येक नैसर्गिक संख्येऐवजी दोन घटक ठेवता. सर्व “अर्ध्या” संख्या नैसर्गिक संख्यांमध्ये घातल्या, म्हणजे $\Setabs{\nicefrac{n}{2}}{n \in \omega}$ वरील नेहमीच्या क्रमाचा विचार केला, तरी तोच क्रमप्रकार मिळेल. या रूपात पाहिल्यास तो क्रमप्रकार स्वतः $\omega$ च्याच क्रमप्रकारासारखा आहे, हे स्पष्ट होते. पण $\omega \ordtimes 2$ मोजताना $\omega$ च्या दोन प्रती एकीमागोमाग ठेवता.
+
+\begin{prob}
+\olref[sth][ord-arithmetic][mult]{ordtimeslessiswo},
+\olref[sth][ord-arithmetic][mult]{ordtimesrecursion},
+आणि
+\olref[sth][ord-arithmetic][mult]{ordinalmultiplicationisnice}
+सिद्ध करा.
+\end{prob}
+
+\end{document}

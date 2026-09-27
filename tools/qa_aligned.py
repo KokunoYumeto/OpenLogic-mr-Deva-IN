@@ -1275,6 +1275,12 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\setrank{A \times B}= \max(\setrank{A}, \setrank{B}) \ordplus  2',
          r'\setrank{A \times B}\max(\setrank{A}, \setrank{B}) \ordplus  2'),
     ],
+    'OLP-0578': [
+        # OLINC-260: for alpha=0 and nonzero limit beta the strict
+        # supremum of the constant-zero family is 1, not alpha x beta=0.
+        (r'\bigcup_{\delta < \beta}(\alpha \ordtimes \delta)',
+         r'\supstrict_{\delta < \beta}(\alpha \ordtimes \delta)'),
+    ],
 }
 
 
