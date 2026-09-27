@@ -1297,6 +1297,19 @@ _DOCUMENTED_PROJECTIONS = {
          r'\card{\Pow{A}} = \card{\funfromto{\card{A}}{2}} =' + '\n'
          + r'2^{\card{A}}'),
     ],
+    'OLP-0589': [
+        # OLINC-267: splitting a function yields a pair of functions,
+        # not the Cartesian product of their graphs.
+        (r'\tuple{f_{\cardfont{b}}, f_{\cardfont{c}}}',
+         r'(f_{\cardfont{b}} \times f_\cardfont{c})'),
+        # OLINC-268: the curried function is literally on b x c,
+        # rather than on the cardinal representative of b x c.
+        (r'\funfromto{\cardfont{b} \times \cardfont{c}}{\cardfont{a}}',
+         r'\funfromto{\cardfont{b} \cardtimes \cardfont{c}}{\cardfont{a}}'),
+        # OLINC-269: use explicit cardinal-power notation in the estimate.
+        (r'\cardexpo{(\cardexpo{2}{\cardfont{a}})}{\cardfont{b}}',
+         r'\cardexpo{(2^\cardfont{a})}{\cardfont{b}}'),
+    ],
 }
 
 
