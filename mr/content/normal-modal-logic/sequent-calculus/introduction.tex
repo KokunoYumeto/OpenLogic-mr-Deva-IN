@@ -1,0 +1,54 @@
+% Part: normal-modal-logic
+% Chapter: sequent-calculus
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{seq}{int}
+
+\olsection{प्रस्तावना}
+
+विधानीय तर्कशास्त्राच्या क्रमवर्ती कलनात
+~\iftag{prvBox}{$\Box$\iftag{prvDiamond}{ आणि~}{}}{}%
+\iftag{prvDiamond}{$\Diamond$}{} यांच्याशी संबंधित
+अतिरिक्त नियम घालून त्याचा विस्तार करता येतो.
+उदाहरणार्थ,~$\Log{K}$ साठी \Log{LK} बरोबर पुढील
+नियम मिळतात:
+\[
+  \iftag{prvBox}{\iftag{prvDiamond}{% <> and [] primitive
+    \Axiom$\Gamma \fCenter \Delta, !A$
+    \RightLabel{$\Box$}
+    \UnaryInf$\Box\Gamma \fCenter \Diamond\Delta, \Box!A$
+    \DisplayProof
+    \qquad
+    \Axiom$!A, \Gamma \fCenter \Delta$
+    \RightLabel{$\Diamond$}
+    \UnaryInf$\Diamond!A, \Box\Gamma \fCenter \Diamond\Delta$
+    \DisplayProof
+}{% only Box primitive
+\Axiom$\Gamma \fCenter !A$
+\RightLabel{$\Box$}
+\UnaryInf$\Box\Gamma \fCenter \Box!A$
+\DisplayProof
+}}{% only <> primitive
+  \Axiom$!A \fCenter \Delta$
+  \RightLabel{$\Diamond$}
+  \UnaryInf$\Diamond!A \fCenter \Diamond\Delta$
+  \DisplayProof
+}
+\]
+~$\Log{K}$ च्या विस्तारांसाठीही आणखी नियम
+जोडावे लागतात.
+
+प्रत्येक मोडल तर्कशास्त्रासाठी अशा प्रकारचे
+क्रमवर्ती कलन उपलब्ध असेलच असे नाही. अर्थदृष्ट्या
+साध्या असलेल्या~$\Log{S5}$ साठीसुद्धा (त्याची
+व्याख्या प्राप्यता-संबंध मुळीच न वापरता करता येते),
+~$\Log{LK}$ पासून मिळणारे आणि~\Cut नियमाशिवाय
+संपूर्ण असणारे क्रमवर्ती कलन ज्ञात नाही. मात्र
+त्यासाठी कट-मुक्त संपूर्ण \emph{हायपरक्रमवर्ती}
+कलन आहे.
+
+\end{document}
