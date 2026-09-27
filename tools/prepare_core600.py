@@ -22,6 +22,7 @@ base = base.replace(old, new, 1)
 anchor = r"\newcommand{\funfromto}[2]{{}^{#1}{#2}}"
 assert base.count(anchor) == 1
 base = base.replace(anchor, anchor + "\n" + "\n".join([
+    r"\newcommand{\cardnless}[2]{#1 \npreceq #2}",
     r"\newcommand{\onesphere}{\mathbf{S}}",
     r"\newcommand{\rotationsgroup}{R}",
 ]), 1)
