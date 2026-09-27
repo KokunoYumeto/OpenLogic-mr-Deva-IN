@@ -887,6 +887,10 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\Atom{X}{y})] \lif \Atom{X}{x}}[s]$',
          r'\Atom{X}{y})] \lif \Atom{X}{x}}$'),
     ],
+    'OLP-0430': [
+        # OLINC-166: the inferred member is the K axiom formula.
+        (r'$\Ax{K} \in \Sigma$', r'$K \in \Sigma$'),
+    ],
 }
 
 
