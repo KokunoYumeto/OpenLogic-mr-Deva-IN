@@ -1,0 +1,65 @@
+% Part: second-order-logic
+% Chapter: metatheory
+% Section: compactness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{met}{lst}
+
+\olsection{द्वितीय-क्रम तर्कशास्त्रात लोव्हेनहाइम--स्कोलेम प्रमेय लागू होत नाही}
+
+\begin{explain}
+(अधोगामी) लोव्हेनहाइम--स्कोलेम प्रमेयानुसार, अनंत
+प्रतिमान असलेल्या !!{sentence}s च्या प्रत्येक संचाला
+!!a{enumerable} प्रतिमानही असते. हे प्रमेयदेखील
+संपूर्णता प्रमेयाचा परिणाम आहे: संपूर्णतेचा पुरावा
+!!{sentence}s च्या कोणत्याही सुसंगत संचासाठी प्रतिमान
+तयार करतो आणि ते प्रतिमान !!{enumerable} असते.
+ऊर्ध्वगामी लोव्हेनहाइम--स्कोलेम प्रमेयही आहे.
+त्यानुसार, !!{sentence}s च्या संचाला
+!!a{denumerable} प्रतिमान असेल, तर त्याला
+!!a{nonenumerable} प्रतिमानही असते. ही दोन्ही
+प्रमेये द्वितीय-क्रम तर्कशास्त्रात लागू होत नाहीत.
+\end{explain}
+
+
+\begin{thm}
+\ollabel{thm:sol-no-ls} लोव्हेनहाइम--स्कोलेम प्रमेय
+द्वितीय-क्रम तर्कशास्त्रात लागू होत नाही:
+काही !!{sentence}s ना अनंत प्रतिमाने असतात,
+पण !!{enumerable} प्रतिमाने नसतात.
+\end{thm}
+
+\begin{proof}
+हे आठवा:
+\[
+\fn{Count} \ident \lexists[z][\lexists[u][\lforall[X][((X(z) \land
+      \lforall[x][(X(x) \lif X(u(x)))]) \lif \lforall[x][X(x)])]]]
+\]
+हे !!a{structure}~$\Struct{M}$ मध्ये सत्य असेल,
+जर आणि फक्त जर $\Domain{M}$ !!{enumerable} असेल.
+म्हणून $\lnot\fn{Count}$ हे~$\Struct{M}$ मध्ये
+सत्य असेल, जर आणि फक्त जर $\Domain{M}$
+!!{nonenumerable} असेल. अशा !!{structure}s
+आहेत---कोणताही !!{nonenumerable} संच !!{domain}
+म्हणून घ्या; उदाहरणार्थ, $\Pow{\Nat}$ किंवा~$\Real$.
+म्हणून $\lnot \fn{Count}$ ला अनंत प्रतिमाने
+आहेत, पण !!{enumerable} प्रतिमाने नाहीत.
+\end{proof}
+
+\begin{thm}
+काही !!{sentence}s ना !!{denumerable} प्रतिमाने
+असतात, पण !!{nonenumerable} प्रतिमाने नसतात.
+\end{thm}
+
+\begin{proof}
+$\fn{Count} \land \fn{Inf}$ हे $\Nat$ मध्ये
+सत्य असते; पण $\Domain{M}$ !!{nonenumerable}
+असलेल्या कोणत्याही !!{structure}~$\Struct{M}$
+मध्ये ते सत्य नसते.
+\end{proof}
+
+
+\end{document}
