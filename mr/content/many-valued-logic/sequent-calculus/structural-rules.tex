@@ -1,0 +1,53 @@
+% Part: many-valued-logics
+% Chapter: sequent-calculus
+% Section: structural-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{seq}{str}
+
+\olsection{संरचनात्मक नियम}
+
+$n$-बाजूंच्या क्रमवर्ती कलनातील संरचनात्मक नियम
+अभिजात प्रसंगाप्रमाणेच कार्य करतात; मात्र ते प्रत्येक जागा~$i$
+साठी स्वतंत्रपणे लागू होतात.
+
+\begin{defish}
+\begin{center}
+\AxiomC{$ \Gamma_1 \nSequent \dots \nSequent \phantom{!A,}\Gamma_i \nSequent \dots \nSequent \Gamma_n $}
+\RightLabel{$\iR{\Weakening}{i}$}
+\UnaryInfC{$\Gamma_1 \nSequent \dots \nSequent !A, \Gamma_i \nSequent \dots \nSequent \Gamma_n$}
+\DisplayProof
+\\[2ex]
+\AxiomC{$ \Gamma_1 \nSequent \dots \nSequent !A, !A, \Gamma_i \nSequent \dots \nSequent \Gamma_n $}
+\RightLabel{$\iR{\Contraction}{i}$}
+\UnaryInfC{$\Gamma_1 \nSequent \dots \nSequent \phantom{!A,}!A, \Gamma_i \nSequent
+\dots \nSequent \Gamma_n$}
+\DisplayProof
+\\[2ex]
+\AxiomC{$ \Gamma_1 \nSequent \dots \nSequent \Gamma_i, !A, !B, \Gamma_i' \nSequent \dots \nSequent \Gamma_n $}
+\RightLabel{$\iR{\Exchange}{i}$}
+\UnaryInfC{$\Gamma_1 \nSequent \dots \nSequent \Gamma_i, !B, !A, \Gamma_i' \nSequent \dots
+\nSequent \Gamma_n$}
+\DisplayProof
+\end{center}
+\end{defish}
+
+दुर्बलीकरण, आकुंचन आणि अदलाबदल यांच्या सलग निगमनांची मालिका
+अनेकदा दुहेरी निगमन रेषांनी दर्शवली जाते.
+
+\Cut{} नियमाची अनेक रूपे असतात: क्रमवर्तीतील भिन्न जागांच्या
+प्रत्येक जोडी~$i \neq j$ साठी एक रूप:
+\begin{defish}
+\[
+\AxiomC{$ \Gamma_1 \nSequent \dots \nSequent !A, \Gamma_i \nSequent \dots \nSequent \Gamma_n $}
+\AxiomC{$ \Delta_1 \nSequent \dots \nSequent !A, \Delta_j \nSequent \dots \nSequent \Delta_n $}
+\RightLabel{$\iR{\Cut}{i,j}$}
+\BinaryInfC{$\Gamma_1,\Delta_1 \nSequent \dots \nSequent \Gamma_n, \Delta_n$}
+\DisplayProof
+\]
+\end{defish}
+
+\end{document}
