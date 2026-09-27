@@ -1,0 +1,128 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{replacement}{refproofs}
+\olsection[परिशिष्ट: प्रतिस्थापन]{परिशिष्ट: प्रतिस्थापनाशी संबंधित निष्कर्ष}
+
+या विभागात आपण $\ZF$ मध्ये प्रतिबिंबन सिद्ध करू. प्रतिबिंबन आणि प्रतिस्थापन कोणत्या अर्थाने समतुल्य आहेत हेही सिद्ध करू. तसेच प्रतिबिंबन/प्रतिस्थापन यांच्या सामर्थ्याविषयी या सर्वांचा एक रोचक परिणाम सिद्ध करू. \emph{सूचना: या पाठ्यपुस्तकातील गणिताचा हा सहजपणे सर्वांत प्रगत भाग आहे.}
+
+सुरुवातीला एक साहाय्यक सिद्धांत पाहू. चलांच्या किंवा वस्तूंच्या अनुक्रमांसाठी संक्षेप म्हणून तो \emph{वरची रेघ} ही लेखनपद्धत वापरतो. म्हणजे ``$\overline{a}_k$'' हे ``$a_{k_1}$, \dots,
+$a_{k_n}$'' यांचे संक्षिप्त लेखन आहे; येथे $n$ संदर्भावरून ठरतो.
+
+\begin{lem}\ollabel{lemreflection}
+प्रत्येक $1 \leq i \leq k$ साठी $\phi_i(\overline{v}_i, x)$ हे सूत्र असू द्या. मग प्रत्येक $\alpha$ साठी काही $\beta > \alpha$ असा असतो की, कोणतेही $\overline{a}_1,
+\ldots, \overline{a}_k \in V_\beta$ आणि प्रत्येक $1 \leq i \leq k$ यांच्यासाठी:
+\[
+  \exists x\phi_i(\overline{a}_i, x) \rightarrow (\exists x \in V_\beta) \phi_i(\overline{a}_i, x)
+\]
+\end{lem}
+
+\begin{proof}
+पुढीलप्रमाणे $\mu$ हे पद परिभाषित करू: $\mu(\overline{a}_1, \ldots,
+\overline{a}_k)$ हा पुढील सर्व अटी, प्रत्येक $1 \leq i \leq k$ साठी, पूर्ण करणारा लघुतम टप्पा $V$ आहे:
+\[
+\exists x\phi_i(\overline{a}_i, x) \rightarrow (\exists x \in V) \phi_i(\overline{a}_i, x)
+\]
+सर्व $\overline{a}_1, \ldots, \overline{a}_k$ साठी $\mu(\overline{a}_1, \ldots, \overline{a}_k)$ अस्तित्वात आहे, हे सहज तपासता येते. आता प्रतिस्थापन आणि आपले पुनरावर्तन प्रमेय वापरून परिभाषित करू:
+\begin{align*}
+  S_0 & = V_{\alpha+1}\\
+  S_{n+1} & = S_n \cup \bigcup
+  \Setabs{\mu(\overline{a}_1, \ldots, \overline{a}_k)}
+  {\overline{a}_1, \ldots, \overline{a}_k \in S_n} \\
+  S &= \bigcup_{m < \omega} S_m.
+\end{align*}
+प्रत्येक $S_n$, आणि त्यामुळे $S$ सुद्धा, $V_\alpha$ नंतरचा टप्पा आहे. आता $\overline{a}_1$, \dots,~$\overline{a}_k \in S$ निश्चित करा; म्हणून काही $n <
+\omega$ साठी $\overline{a}_1$, \dots, $\overline{a}_k \in S_n$. काही $1 \leq i \leq k$ निश्चित करा आणि $\exists x
+\phi_i(\overline{a}_i,x)$ मानू. मग रचनेनुसार $(\exists x \in \mu(\overline{a}_1,
+\ldots, \overline{a}_k))\phi_i(\overline{a}_i, x)$; म्हणून $(\exists x \in S_{n+1})\phi_i(\overline{a}_i, x)$ आणि परिणामी $(\exists x \in S)\phi_i(\overline{a}_i, x)$. म्हणून हाच $S$ आपला $V_\beta$ आहे.
+\end{proof}
+\noindent
+आता \olref[sth][replacement][ref]{reflectionschema} सहज सिद्ध करता येतो:
+
+\begin{proof}[पुरावा]
+$\alpha$ निश्चित करा. व्यापकता न गमावता, $\phi$ मध्ये फक्त $\exists$, $\lnot$ आणि $\land$ हेच तार्किक संयोगक आहेत असे मानता येते (कारण अभिव्यक्तीसाठी ते पुरेसे आहेत). $\psi_1, \ldots, \psi_k$ या $\phi$ च्या सर्व उपसूत्रांची जटिलतेनुसार यादी असू द्या; त्यामुळे $\psi_k = \phi$. \olref{lemreflection} नुसार असा $\beta > \alpha$ आहे की, कोणतेही $\overline{a}_i \in V_\beta$ आणि प्रत्येक $1 \leq i \leq k$ साठी:
+\begin{align}\label{reflectionnicelybehaved}
+  \exists x\psi_i(\overline{a}_i, x) \rightarrow
+  (\exists x \in V_\beta) \psi_i(\overline{a}_i, x)\tag{*}
+\end{align}
+$\psi_i$ च्या जटिलतेवर विगमन करून, कोणत्याही $\overline{a}_i \in V_\beta$ साठी $\psi_i(\overline{a}_i) \leftrightarrow
+\psi_i^{V_\beta}(\overline{a}_i)$ हे दाखवू. $\psi_i$ अणुसूत्र असेल, तर हे उघड आहे. ही द्विशर्त असेही दाखवते की, हा गुणधर्म असलेल्या उपसूत्रांचे निषेध किंवा संधीकरण $\psi_i$ असेल, तर $\psi_i$ लाही हा गुणधर्म असतो. म्हणून संख्यकाचे प्रकरणच लक्ष देण्यासारखे आहे. $\overline{a}_i \in V_\beta$ निश्चित करा; मग:
+\begin{align*}
+  (\exists x \psi_i(\overline{a}_i, x))^{V_\beta}
+  &\text{ तेव्हा आणि केवळ तेव्हाच }
+  (\exists x \in V_\beta)\psi_i^{V_\beta}(\overline{a}_i, x)
+  &&\text{व्याख्येनुसार}\\
+  &\text{ तेव्हा आणि केवळ तेव्हाच }
+  (\exists x \in V_\beta)\psi_i(\overline{a}_i,  x)
+  &&\text{विगमनगृहीतकानुसार}\\
+  &\text{ तेव्हा आणि केवळ तेव्हाच }
+  \exists x \psi_i(\overline{a}_i, x)
+  &&\text{\eqref{reflectionnicelybehaved} नुसार}
+\end{align*}
+याने विगमन पूर्ण होते; $\psi_k = \phi$ असल्याने अपेक्षित निष्कर्ष मिळतो.
+\end{proof}
+
+आपण $\ZF$ मध्ये प्रतिबिंबन सिद्ध केले आहे. आपला पुरावा मूलतः \citet{Montague1961} यांच्या पुराव्यानुसार आहे. आता $\Z$ मध्ये प्रतिबिंबनावरून प्रतिस्थापन मिळते हे सिद्ध करायचे आहे. हा पुरावा \citet{Levy1960} यांच्या पुराव्यावर आधारित आहे, पण थोडा सोपा केला आहे.
+
+आपण $\Z$ मध्ये काम करत असल्याने वर दिलेल्या अचूक रूपात प्रतिबिंबन मांडता येणार नाही. कारण प्रतिबिंबन मांडताना आपण ``$V_\alpha$'' हे लेखन वापरले, आणि त्याची व्याख्या $\Z$ मध्ये करता येत नाही (\olref[sth][spine][zf]{sec} पाहा). म्हणून त्याऐवजी प्रतिबिंबनाचे वरकरणी दुर्बल रूप पुढीलप्रमाणे मांडू:
+
+\begin{defish}
+\emph{दुर्बल प्रतिबिंबन.} कोणतेही सूत्र $\phi$ घ्या. मग असा संक्रमक संच $S$ असतो की $0$, $1$ आणि $\phi$ मधील कोणतीही प्राचले हे $S$ चे !!{element}s असतात, आणि $(\forall \overline{x} \in S)(\phi \liff
+\phi^S)$.
+\end{defish}
+
+यावरून प्रतिस्थापन सिद्ध करण्यासाठी आधी \citet[first
+part of Theorem 2]{Levy1960} यांचे अनुसरण करून, एकाच वेळी दोन सूत्रांचे ``प्रतिबिंबन'' करता येते हे दाखवू:
+
+\begin{lem}[$\Z + \text{दुर्बल प्रतिबिंबन}$ मध्ये.]\ollabel{lem:reflect}
+कोणतीही सूत्रे $\psi, \chi$ घ्या. मग असा संक्रमक संच $S$ असतो की $0$ आणि $1$ (आणि सूत्रांमधील कोणतीही प्राचले) हे $S$ चे !!{element}s असतात, आणि $(\forall \overline{x} \in S)((\psi \liff \psi^S) \land (\chi
+\liff \chi^S))$.
+\end{lem}
+
+\begin{proof}
+$\phi$ हे $(z = 0 \land \psi) \lor (z = 1 \land \chi)$ सूत्र असू द्या.
+
+येथे आपण संक्षिप्त लेखन वापरले आहे: ``$z = 0$'' चे ``$\forall t\, t \notin z$'' असे, आणि ``$z =1$'' चे ``$\forall s(s \in z
+\liff \forall t\, t \notin s)$'' असे पूर्ण लेखन करायला हवे. पण $0, 1 \in S$ आणि $S$ संक्रमक असल्याने, ही सूत्रे $S$ साठी \emph{निरपेक्ष} आहेत; म्हणजे त्यांचे संख्यक $S$ पुरते मर्यादित केले तरी ती त्याच वस्तूला लागू होतात.\footnote{अधिक औपचारिकपणे, $\xi$ हे या दोन सूत्रांपैकी कोणतेही एक असेल, तर $\xi(z) \liff \xi^S(z)$.}
+
+दुर्बल प्रतिबिंबनानुसार योग्य असा काही $S$ आपल्याला मिळतो की:
+\begin{align*}
+  (\forall z, \overline{x} \in S)(&\phi \liff \phi^S)\\
+  \text{म्हणजे }(\forall z, \overline{x} \in S)(&((z = 0 \land \psi) \lor (z = 1 \land \chi)) \liff {}\\
+  &\phantom{(}((z = 0 \land \psi) \lor (z = 1 \land \chi))^S)\\
+  \text{म्हणजे }(\forall z, \overline{x} \in S)(&((z = 0 \land \psi) \lor (z = 1 \land \chi))\liff {}\\
+  &\phantom{(}((z = 0 \land \psi^S) \lor (z = 1 \land \chi^S)))\\
+  \text{म्हणजे }(\forall \overline{x} \in S)(&(\psi \liff \psi^S) \land (\chi \liff \chi^S))
+\end{align*}
+दुसऱ्या विधानावरून तिसरे मिळते; कारण ``$z = 0$'' आणि ``$z=1$'' ही $S$ साठी निरपेक्ष आहेत. $0 \neq 1$ असल्याने चौथे विधान मिळते.
+\end{proof}\noindent आता \citet[Theorem 6]{Levy1960} यांचे अनुसरण करून, आणि त्यांचा पुरावा थोडा सोपा करून, प्रतिस्थापन मिळवू:
+
+\begin{thm}[$\Z$ + दुर्बल प्रतिबिंबन मध्ये]\label{thm:replacement}
+कोणतेही सूत्र $\phi(v,w)$ आणि कोणताही $A$ घ्या. $(\forall x \in A)\lexists![y][\phi(x,y)]$ असेल, तर $\Setabs{y}{(\exists x \in A)\phi(x,y)}$ अस्तित्वात असतो.
+\end{thm}
+
+\begin{proof}
+$(\forall x \in A)\lexists![y][\phi(x,y)]$ पूर्ण करणारा $A$ निश्चित करा आणि सूत्रे परिभाषित करा:
+\begin{align*}
+  \psi &\text{ म्हणजे } (\phi(x, z) \land A = A)\\
+  \chi &\text{ म्हणजे } \lexists[y][\phi(x, y)]
+\end{align*}
+$A$ हे $\psi$ चे प्राचल असल्याने, \olref{lem:reflect} वापरून असा संक्रमक~$S$ मिळतो की $0, 1, A \in S$ (तसेच इतर कोणतीही प्राचले त्या संचात असतात) आणि:
+\[
+  (\forall x,z \in S)((\psi \liff \psi^S) \land (\chi \liff \chi^S))
+\]
+म्हणून विशेषतः:
+\begin{align*}
+  (\forall  x, z \in S)(&\phi(x, z) \liff \phi^S(x, z))\\
+  (\forall x \in S)(&\exists y\phi(x, y) \liff (\exists y \in S)\phi^S(x, y))
+\end{align*}
+हे एकत्र करून, आणि $A \in S$ व $S$ संक्रमक असल्यामुळे $A \subseteq S$ हे लक्षात घेऊन:
+\begin{align*}
+  (\forall x \in A)(&\exists y\phi(x, y) \liff (\exists y \in S)\phi(x, y))
+\end{align*}
+आता $(\forall x \in A)(\lexists![y \in S])\phi(x, y)$; कारण $(\forall x \in A)\lexists![y][\phi(x, y)]$. म्हणून विभक्तीकरणावरून $\Setabs{y \in S}{(\exists x \in A) \phi(x, y)} = \Setabs{y}{(\exists
+x \in A) \phi(x, y)}$ मिळतो.
+\end{proof}
+
+\end{document}

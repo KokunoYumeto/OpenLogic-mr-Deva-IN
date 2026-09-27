@@ -1239,6 +1239,18 @@ _DOCUMENTED_PROJECTIONS = {
         (r'(\exists x \in B)(x \subseteq V_\delta',
          r'(\exists x \in b)(x \subseteq V_\delta'),
     ],
+    'OLP-0572': [
+        # OLINC-249: discard the unmatched final parenthesis in the
+        # least-stage witness conditional.
+        (r'\exists x\phi_i(\overline{a}_i, x) \rightarrow (\exists x \in V) \phi_i(\overline{a}_i, x)',
+         r'\exists x\phi_i(\overline{a}_i, x) \rightarrow (\exists x \in V) \phi_i(\overline{a}_i, x))'),
+        # OLINC-250: the union index is m, so its summand must be S_m.
+        (r'S &= \bigcup_{m < \omega} S_m.',
+         r'S &= \bigcup_{m < \omega} S_n.'),
+        # OLINC-252: close the defining property of the Replacement image.
+        (r'\Setabs{y}{(\exists x \in A)\phi(x,y)}',
+         r'\Setabs{y}{(\exists x \in A)\phi(x,y}'),
+    ],
 }
 
 
