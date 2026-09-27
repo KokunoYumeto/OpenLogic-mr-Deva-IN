@@ -650,6 +650,24 @@ _DOCUMENTED_PROJECTIONS = {
         # OLINC-083: the scope is the body occurrence M, not enclosing N.
         (r'त्यातील~$M$', r'त्यातील~$N$'),
     ],
+    'OLP-0361': [
+        # OLINC-085: in the abstraction case M=lambda-y.P, the body is P.
+        (r'$x \notin \FV{P}$. त्यामुळे', r'$x \notin \FV{Q}$. त्यामुळे'),
+        # OLINC-086: remove a stray closing parenthesis in the hypothesis.
+        (r'$x \in \FV{M}$ असेल', r'$x \in \FV{M})$ असेल'),
+        # OLINC-087: the application substitutes for x, not y.
+        (r'$\Subst{(PQ)}{N}{x}$' + '\n' + '    परिभाषित',
+         r'$\Subst{(PQ)}{N}{y}$' + '\n' + '    परिभाषित'),
+        # OLINC-088: the theorem hypothesis concerns x in lambda-y.P.
+        (r'$x \in' + '\n' + r'    \FV{\lambd[y][P]}$',
+         r'$y \in' + '\n' + r'    \FV{\lambd[x][P]}$'),
+        (r'$x \in \FV{P}$.' + '\n' + '    आता:',
+         r'$y \in \FV{P}$.' + '\n' + '    आता:'),
+        # OLINC-089: restore the frozen erroneous induction line for QA.
+        (r'((\FV{P} \setminus \{x\}) \cup \FV{N}) \setminus \{y\}',
+         r'((\FV{P} \setminus \{y\}) \cup (\FV{N} \setminus \{x\})'),
+        (r'&& y \notin \FV{N}', r'&& x \notin \FV{N}'),
+    ],
 }
 
 

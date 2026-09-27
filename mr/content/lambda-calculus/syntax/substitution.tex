@@ -1,0 +1,188 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{sub}
+\olsection{आदेशन}
+
+\begin{explain}
+मुक्त चरे हे परिसरातील चरांचे संदर्भ असतात. म्हणून मुक्त
+चराच्या जागी ठराविक मूल्य वापरणे अर्थपूर्ण ठरते. उदाहरणार्थ,
+$\lambd[x][f x]$ मधील $f$ च्या जागी ओळख फलनासारखे
+$\lambd[y][y]$ हे विशिष्ट पद ठेवायचे असू शकते. त्यातून
+$\lambd[x][(\lambd[y][y]) x]$ मिळते. मुक्त चरांच्या जागी
+लॅम्डा पदे ठेवण्याच्या प्रक्रियेला आदेशन म्हणतात.
+\end{explain}
+
+\begin{defn}[आदेशन] \ollabel{defn:substitution}
+  पद $M$ मधील चर $x$ च्या जागी पद $N$ चे
+  \emph{आदेशन}, $\Subst{M}{N}{x}$, आगमनाने पुढीलप्रमाणे
+  परिभाषित करतात:
+  \begin{enumerate}
+    \item $\Subst{x}{N}{x} = N$. \ollabel{defn:substitution-1}
+    \item $\Subst{y}{N}{x}  = y$, जर $x \neq y$. \ollabel{defn:substitution-2}
+    \item $\Subst{PQ}{N}{x}  = (\Subst{P}{N}{x}) (\Subst{Q}{N}{x})$.
+      \ollabel{def:substitution-3}
+    \item $\Subst{(\lambd[y][P])}{N}{x} = \lambd[y][\Subst{P}{N}{x}]$,
+      जर $x \neq y$ आणि $y \notin \FV{N}$; अन्यथा अपरिभाषित.
+      \ollabel{defn:substitution-4}
+  \end{enumerate}
+\end{defn}
+
+\begin{explain}
+\olref{defn:substitution}\olref{defn:substitution-4} मध्ये
+$x \neq y$ ही अट घालण्याचे कारण असे की~$M$ मधील
+चर~$x$ च्या \emph{बद्ध} आस्थितींच्या जागी~$N$ ठेवायचे नाही.
+उदाहरणार्थ, $\Subst{\lambd[x][x]}{y}{x}$ विचारात घेताना
+$\lambd[x][y]$ मिळू नये; बद्ध आस्थिती बदलली नाही तर
+$\lambd[x][x]$ हेच पद राहते. मात्र वरच्या औपचारिक
+नियमांनुसार या प्रसंगी आदेशन अपरिभाषित आहे.
+
+$\lambd[y][P]$ मध्ये~$x$ च्या जागी $N$ चे आदेशन करताना
+$y \notin \FV{N}$ हीही अट घालतात. उदाहरणार्थ,
+$\lambd[y][x]$ मध्ये $x$ च्या जागी $y$ चे आदेशन,
+म्हणजे $\Subst{\lambd[y][x]}{y}{x}$, करता येत नाही:
+त्यातून $\lambd[y][y]$ मिळेल. हे पद युक्तिवाद स्वीकारून
+तोच परत करणारे फलन दर्शवते. पण $\lambd[y][x]$ हे पद
+नेहमी~$x$ (किंवा $x$ ज्याचा संदर्भ देते ते) परत करणारे
+फलन दर्शवते. म्हणून अपेक्षित परिणाम म्हणजे युक्तिवाद
+स्वीकारून तो बाजूला ठेवणारे आणि परिसरातील चर~$y$
+परत करणारे फलन. हे नीट साधण्यासाठी आधी बद्ध चर~$y$
+चे नाव ``बदलावे'' लागेल.
+\end{explain}
+
+\begin{prob}
+  पुढील आदेशनांचे परिणाम काय आहेत?
+  \begin{enumerate}
+  \item $\Subst{\lambd[y][x(\lambd[w][vwx])]}{(uv)}{x}$
+  \item $\Subst{\lambd[y][x(\lambd[x][x])]}{(\lambd[y][xy])}{x}$
+  \item $\Subst{y(\lambd[v][xv])}{(\lambd[y][vy])}{x}$
+  \end{enumerate}
+\end{prob}
+
+\begin{thm} \ollabel{thm:notinfv}
+  $x \notin \FV{M}$ असेल, तर डावी बाजू परिभाषित
+  असल्यास $\FV{\Subst{M}{N}{x}} = \FV{M}$.
+\end{thm}
+
+\begin{proof}
+  $M$ च्या रचनेवर विगमन करू.
+  \begin{enumerate}
+  \item $M$ हे चर आहे: सरावासाठी.
+  \item $M$ हे $(PQ)$ या रूपाचे आहे: सरावासाठी.
+  \item $M$ हे $\lambd[y][P]$ या रूपाचे आहे. तसेच
+    $\Subst{\lambd[y][P]}{N}{x}$ परिभाषित असल्यामुळे
+    ते $\lambd[y][\Subst{P}{N}{x}]$ असते. म्हणून
+    $\Subst{P}{N}{x}$ परिभाषित असते; शिवाय $x \neq y$
+    आणि $x \notin \FV{P}$. त्यामुळे:
+    \begin{multline*}
+      \FV{\Subst{\lambd[y][P]}{N}{x}} = \\
+    \begin{aligned}
+      & = \FV{\lambd[y][\Subst{P}{N}{x}]} &&
+      \text{\olref{defn:substitution-4} नुसार}\\
+      & = \FV{\Subst{P}{N}{x}} \setminus \{y\} &&
+      \text{\olref[fv]{def:fv}\olref[fv]{def:fv2} नुसार}\\
+      & = \FV{P} \setminus \{y\} && \text{विगमन गृहीतकानुसार} \\
+      & = \FV{\lambd[y][P]} && \text{\olref[fv]{def:fv}\olref[fv]{def:fv2} नुसार}
+    \end{aligned}
+    \end{multline*}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][sub]{thm:notinfv} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{thm} \ollabel{thm:infv}
+  $x \in \FV{M}$ असेल, तर डावी बाजू परिभाषित
+  असल्यास $\FV{\Subst{M}{N}{x}} = (\FV{M} \setminus
+  \{x\}) \cup \FV{N}$.
+\end{thm}
+
+\begin{proof}
+  $M$ च्या रचनेवर विगमन करू.
+  \begin{enumerate}
+  \item $M$ हे चर आहे: सरावासाठी.
+  \item $M$ हे $PQ$ या रूपाचे आहे: $\Subst{(PQ)}{N}{x}$
+    परिभाषित असल्यामुळे ते
+    $(\Subst{P}{N}{x})(\Subst{Q}{N}{x})$ असते आणि दोन्ही
+    आदेशन परिभाषित असतात. शिवाय $x \in \FV{PQ}$
+    असल्यामुळे $x \in \FV{P}$ किंवा $x \in \FV{Q}$,
+    किंवा दोन्ही, असते. उरलेला भाग सरावासाठी आहे.
+  \item $M$ हे $\lambd[y][P]$ या रूपाचे आहे.
+    $\Subst{\lambd[y][P]}{N}{x}$ परिभाषित असल्यामुळे
+    ते $\lambd[y][\Subst{P}{N}{x}]$ असते;
+    $\Subst{P}{N}{x}$ परिभाषित असते, $x \neq y$ आणि
+    $y \notin \FV{N}$. तसेच $x \in
+    \FV{\lambd[y][P]}$ असल्यामुळे $x \in \FV{P}$.
+    आता:
+    \begin{multline*}
+      \FV{\Subst{(\lambd[y][P])}{N}{x}} = \\
+      \begin{aligned}
+      & = \FV{\lambd[y][\Subst{P}{N}{x}]} \\
+      & = \FV{\Subst{P}{N}{x}} \setminus \{y\} \\
+      & = ((\FV{P} \setminus \{x\}) \cup \FV{N}) \setminus \{y\}
+       && \text{विगमन गृहीतकानुसार} \\
+      & = (\FV{P} \setminus \{x, y\}) \cup \FV{N}
+       && y \notin \FV{N} \\
+      & = (\FV{\lambd[y][P]} \setminus \{x\}) \cup \FV{N}
+      \end{aligned}
+      \end{multline*}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][sub]{thm:infv} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{thm}\ollabel{thm:clr}
+  $x \notin \FV{N}$ आणि आदेशन परिभाषित
+  असेल, तर $x \notin \FV{\Subst{M}{N}{x}}$.
+\end{thm}
+
+\begin{proof}
+  सरावासाठी.
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][sub]{thm:clr} सिद्ध करा.
+\end{prob}
+
+
+\begin{thm}\ollabel{thm:inv}
+  $\Subst{M}{y}{x}$ परिभाषित असेल आणि $y \notin \FV{M}$,
+  तर $\Subst{\Subst{M}{y}{x}}{x}{y} = M$.
+\end{thm}
+
+\begin{proof}
+  $M$ च्या रचनेवर विगमन करू.
+  \begin{enumerate}
+  \item $M$ हे चर $z$ आहे: सरावासाठी.
+  \item $M$ हे $(PQ)$ या रूपाचे आहे. मग:
+    \begin{align*}
+      \Subst{\Subst{(PQ)}{y}{x}}{x}{y}
+      &=\Subst{((\Subst{P}{y}{x})(\Subst{Q}{y}{x}))}{x}{y} \\
+      &= (\Subst{\Subst{P}{y}{x}}{x}{y})(\Subst{\Subst{Q}{y}{x}}{x}{y}) \\
+      &= (PQ) \text{ विगमन गृहीतकानुसार}
+    \end{align*}
+  \item $M$ हे $\lambd[z][N]$ या रूपाचे आहे.
+    $\Subst{\lambd[z][N]}{y}{x}$ परिभाषित असल्यामुळे
+    $z \neq y$ हे माहीत आहे. म्हणून:
+    \begin{align*}
+      \Subst{\Subst{(\lambd[z][N])}{y}{x}}{x}{y}\\
+      & = \Subst{(\lambd[z][\Subst{N}{y}{x}])}{x}{y} \\
+      & = \lambd[z][\Subst{\Subst{N}{y}{x}}{x}{y}] \\
+      &= \lambd[z][N] \text{ विगमन गृहीतकानुसार}
+    \end{align*}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][sub]{thm:inv} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\end{document}
