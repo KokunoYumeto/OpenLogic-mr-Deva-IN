@@ -900,7 +900,7 @@ _SOURCE_QA_NORMALIZATIONS = {
         # OLINC-161: the source closes the induction-case argument before
         # its inline math delimiter, so source-to-source QA cannot parse it.
         (r'\liff \ST_x(!C))}$.}{}',
-         r'\liff \ST_x(!C))$.}{}'),
+         r'\liff \ST_x(!C))$.}}{}'),
     ],
 }
 
