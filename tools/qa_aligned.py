@@ -1336,6 +1336,12 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\cardle{\alpha}{A}',
          r'\cardless{\alpha}{\Pow{A} \setminus \{\emptyset\}}'),
     ],
+    'OLP-0597': [
+        # OLINC-282: the earlier-set union is indexed by i, not by
+        # the fixed current n.
+        (r'\card{\bigcup_{i < n}A_i}',
+         r'\card{\bigcup_{i < n}A_n}'),
+    ],
 }
 
 
