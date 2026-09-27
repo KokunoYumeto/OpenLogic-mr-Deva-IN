@@ -1,0 +1,339 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: modalities-ccs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{mod}
+
+\olsection{मोडल कारक आणि संपूर्ण सुसंगत संच}
+
+\begin{explain}
+एखाद्या सामान्य मोडल तर्कशास्त्र~$\Sigma$ मधील संपूर्ण
+$\Sigma$-सुसंगत संच~$\Delta$ हे ज्याचे जग आहेत,
+असे प्रतिमान~$\mModel{M^\Sigma}$ रचताना अशा “जगां”मधील
+प्राप्यता संबंध~$R^\Sigma$ देखील परिभाषित करावा लागेल.
+प्राप्यता संबंध (आणि नियतन~$V^\Sigma)$ यांची व्याख्या
+अशी हवी की $\mSat{M^\Sigma}{!A}[\Delta]$ असेल तेव्हा
+आणि तेव्हाच $!A \in \Delta$. हे कसे करावे?
+
+प्राप्यता संबंध परिभाषित केल्यावर, जगातील सत्यतेच्या
+व्याख्येनुसार \iftag{prvBox}{$\mSat{M^\Sigma}{\Box!A}[\Delta]$
+  असेल तेव्हा आणि तेव्हाच $R^\Sigma\Delta\Delta'$ असलेल्या
+  प्रत्येक $\Delta'$ साठी $\mSat{M^\Sigma}{!A}[\Delta']$}
+  {$\mSat{M^\Sigma}{\Diamond!A}[\Delta]$ असेल तेव्हा
+  आणि तेव्हाच $R^\Sigma\Delta\Delta'$ असलेल्या किमान एका
+  $\Delta'$ साठी $\mSat{M^\Sigma}{!A}[\Delta']$}.
+$\mSat{M^\Sigma}{!A}[\Delta]$ असेल तेव्हा आणि तेव्हाच
+$!A \in \Delta$ हे सिद्ध करण्यासाठी हे विशेषतः
+मोडल कारकाने सुरू होणाऱ्या !!{formula}s साठी खरे असणे
+आवश्यक आहे; म्हणजे
+\iftag{prvBox}{$\mSat{M^\Sigma}{\Box!A}[\Delta]$ असेल
+  तेव्हा आणि तेव्हाच $\Box !A \in \Delta$}
+  {$\mSat{M^\Sigma}{\Diamond!A}[\Delta]$ असेल
+  तेव्हा आणि तेव्हाच $\Diamond !A \in \Delta$}.
+ही आवश्यकता आणि
+\iftag{prvBox}{$\Box !A$}{$\Diamond !A$}
+साठी जगातील सत्यतेची व्याख्या एकत्र केल्यास:
+\[
+\iftag{prvBox}{%
+  \Box!A \in \Delta \text{ तेव्हा आणि तेव्हाच } !A \in \Delta' \text{
+    प्रत्येक $\Delta'$ साठी, जेथे } R^\Sigma\Delta\Delta'}{%
+  \Diamond!A \in \Delta \text{ तेव्हा आणि तेव्हाच } !A \in \Delta' \text{
+    किमान एका } \Delta' \text{ साठी, जेथे } R^\Sigma\Delta\Delta'}
+\]
+\iftag{prvBox}{डावीकडून उजवीकडे जाणारी दिशा पाहा:
+  $\Box !A \in \Delta$ असेल, तर कोणत्याही $!A$
+  आणि $R^\Sigma\Delta\Delta'$ असलेल्या कोणत्याही
+  $\Delta'$ साठी $!A \in \Delta'$ असे ती सांगते.
+  प्रत्येक $\Box!A \in \Delta$ साठी $!A \in \Delta'$
+  असेल तेव्हा आणि तेव्हाच $R^\Sigma\Delta\Delta'$
+  अशी अट ठेवल्यास हे खरे ठरते. या द्विसशर्ताच्या
+  उजव्या बाजूची अट संक्षिप्तपणे
+  $\Setabs{!A}{\Box!A \in \Delta} \subseteq \Delta'$
+  अशी लिहिता येते.}{उजवीकडून डावीकडे जाणारी दिशा
+  पाहा: $R^\Sigma\Delta\Delta'$ असलेल्या कोणत्याही
+  $!A$ आणि $\Delta'$ साठी $!A \in \Delta'$ असेल,
+  तर $\Diamond!A \in \Delta$ असे ती सांगते.
+  प्रत्येक $!A \in \Delta'$ साठी $\Diamond!A \in
+  \Delta$ असताना $R^\Sigma\Delta\Delta'$ खरा
+  ठरतो अशी अट ठेवल्यास हे खरे ठरते. या
+  द्विसशर्ताच्या उजव्या बाजूची अट संक्षिप्तपणे
+  $\Setabs{\Diamond!A}{!A \in \Delta'} \subseteq \Delta$
+  अशी लिहिता येते.}
+
+मग प्रश्न असा आहे: $R^\Sigma$ ची ही व्याख्या
+\iftag{prvBox}{$\Box !A \in \Delta$ असेल तेव्हा आणि
+  तेव्हाच $\mSat{M^\Sigma}{\Box !A}[\Delta]$ याची
+  खरोखर हमी देते का? \iftag{prvDiamond}{ती
+    }{}}{}\iftag{prvDiamond}{$\Diamond !A \in \Delta$
+  असेल तेव्हा आणि तेव्हाच
+  $\mSat{M^\Sigma}{\Diamond !A}[\Delta]$ याचीही
+  हमी देते का?}{} पुढील काही निष्कर्ष हे सिद्ध करतील.
+\end{explain}
+
+\begin{defn}
+  $\Gamma$ हा !!{formula}s चा संच असेल, तर
+  \begin{align*}
+    \Box\Gamma & = \Setabs{\Box !B}{!B \in \Gamma}\\
+    \Diamond\Gamma & = \Setabs{\Diamond !B}{!B \in \Gamma}\\
+    \intertext{आणि}
+    \Box^{-1}\Gamma & = \Setabs{!B}{\Box !B \in \Gamma}\\
+    \Diamond^{-1}\Gamma & = \Setabs{!B}{\Diamond !B \in \Gamma}\\
+  \end{align*}
+\end{defn}
+
+दुसऱ्या शब्दांत, $\Box\Gamma$ म्हणजे~$\Gamma$ मधील
+प्रत्येक !!{formula} च्या पुढे $\Box$ लावलेला संच;
+ही सर्व सूत्रे~$\Gamma$ मधूनच घेतली जातात.
+$\Box^{-1}\Gamma$ मध्ये~$\Gamma$ मधील $\Box$ ने
+सुरू होणाऱ्या सर्व !!{formula}s मधील सुरुवातीचा
+$\Box$ काढून टाकला जातो. ही व्याख्या स्वतंत्रपणे
+फारशी महत्त्वाची नाही, पण संकेतलेखन बरेच सोपे करते.
+
+लक्षात घ्या की $\Box\Box^{-1}\Gamma \subseteq \Gamma$:
+\[
+\Box\Box^{-1}\Gamma = \Setabs{\Box!B}{\Box!B \in \Gamma}
+\]
+म्हणजे हा~$\Gamma$ मधील $\Box$ ने सुरू होणाऱ्या
+सर्व !!{formula}s चाच संच आहे.
+
+\begin{lem}\ollabel{lem:box1}
+  $\Gamma \Proves[\Sigma] !A$ असेल, तर
+  $\Box\Gamma \Proves[\Sigma] \Box !A$.
+\end{lem}
+
+\begin{proof}
+  $\Gamma \Proves[\Sigma] !A$ असेल, तर
+  $!B_1$, \dots, $!B_k \in \Gamma$ अशी सूत्रे
+  असतात की $\Sigma \Proves !B_1 \lif (!B_2 \lif \cdots
+  (!B_k \lif !A)\cdots)$. $\Sigma$ सामान्य असल्याने
+  \RK{} नियमानुसार $\Sigma \Proves \Box!B_1 \lif
+  (\Box!B_2 \lif \cdots (\Box!B_k \lif \Box!A)\cdots)$;
+  येथे अर्थातच $\Box!B_1$, \dots, $\Box!B_k \in
+  \Box\Gamma$. म्हणून व्याख्येनुसार
+  $\Box\Gamma \Proves[\Sigma] \Box !A$.
+\end{proof}
+
+\begin{lem}\ollabel{lem:box2}
+  $\Box^{-1} \Gamma \Proves[\Sigma] !A$ असेल,
+  तर $\Gamma \Proves[\Sigma] \Box!A$.
+\end{lem}
+
+\begin{proof}
+  $\Box^{-1}\Gamma \Proves[\Sigma] !A$ असे
+  समजा. मग \olref{lem:box1} नुसार
+  $\Box\Box^{-1}\Gamma \Proves[\Sigma] \Box!A$.
+  पण $\Box\Box^{-1}\Gamma \subseteq \Gamma$
+  असल्याने एकस्वनिकतेनुसार
+  $\Gamma \Proves[\Sigma] \Box!A$.
+\end{proof}
+
+\iftag{prvBox}{%
+% Box is primitive
+
+\begin{prop}\ollabel{prop:box}
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत असेल,
+  तर $\Box !A \in \Gamma$ असेल तेव्हा आणि
+  तेव्हाच $\Box^{-1} \Gamma \subseteq \Delta$
+  असलेल्या प्रत्येक संपूर्ण $\Sigma$-सुसंगत
+  $\Delta$ साठी $!A \in \Delta$ असेल.
+\end{prop}
+
+\begin{proof}
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत आहे
+  असे समजा. डावीकडून उजवीकडे जाणारी दिशा सोपी आहे:
+  $\Box !A \in \Gamma$ आणि
+  $\Box^{-1}\Gamma \subseteq \Delta$ असे
+  समजा. $\Box!A \in \Gamma$ असल्याने
+  $!A \in \Box^{-1}\Gamma \subseteq \Delta$;
+  म्हणून $!A \in \Delta$.
+
+  उजवीकडून डावीकडे जाणाऱ्या दिशेसाठी आपण प्रतिपरिवर्तन सिद्ध करू:
+  $\Box!A \notin \Gamma$ असे समजा.
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत
+  असल्याने तो निगामीदृष्ट्या बंद आहे;
+  म्हणून $\Gamma \Proves/[\Sigma] \Box !A$.
+  \olref{lem:box2} नुसार
+  $\Box^{-1}\Gamma \Proves/[\Sigma] !A$.
+  \olref[prf][con]{prop:consistencyfacts}\olref[prf][con]{prop:consistencyfacts-b}
+  नुसार $\Box^{-1}\Gamma \cup \{ \lnot!A \}$
+  हा $\Sigma$-सुसंगत आहे. लिंडेनबाउमच्या
+  पूर्वप्रमेयानुसार $\Box^{-1}\Gamma \cup
+  \{ \lnot!A \} \subseteq \Delta$ असा
+  संपूर्ण $\Sigma$-सुसंगत संच~$\Delta$
+  असतो. सुसंगततेमुळे $!A \notin \Delta$.
+\end{proof}
+}{%
+% Box is not primitive, only Diamond is
+
+\begin{prop}\ollabel{prop:diamond}
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत असेल,
+  तर $\Diamond !A \in \Gamma$ असेल तेव्हा
+  आणि तेव्हाच $\Diamond\Delta \subseteq
+  \Gamma$ असलेला एखादा संपूर्ण
+  $\Sigma$-सुसंगत $\Delta$ असा असेल की
+  $!A \in \Delta$.
+\end{prop}
+
+\begin{proof}
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत आहे
+  असे समजा. उजवीकडून डावीकडे जाणारी दिशा
+  सोपी आहे: $\Diamond\Delta \subseteq
+  \Gamma$ आणि $!A \in \Delta$ असलेला
+  संपूर्ण $\Sigma$-सुसंगत $\Delta$
+  घ्या. मग $\Diamond!A \in \Diamond\Delta
+  \subseteq \Gamma$; म्हणजे
+  $\Diamond!A \in \Gamma$.
+
+  डावीकडून उजवीकडे जाणाऱ्या दिशेसाठी
+  $\Diamond !A \in \Gamma$ असे समजा.
+  $!A \in \Delta$ आणि
+  $\Diamond\Delta \subseteq \Gamma$
+  असलेला संपूर्ण $\Sigma$-सुसंगत
+  $\Delta$ अस्तित्वात आहे हे दाखवायचे
+  आहे. $\Diamond !A \in \Gamma$
+  आणि $\Gamma$ $\Sigma$-सुसंगत असल्याने
+  $\Box\lnot !A \notin \Gamma$.
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत
+  असल्याने तो निगामीदृष्ट्या बंद आहे;
+  म्हणून $\Gamma \Proves/[\Sigma]
+  \Box\lnot !A$. \olref{lem:box2} नुसार
+  $\Box^{-1}\Gamma \Proves/[\Sigma] \lnot !A$.
+  \olref[prf][con]{prop:consistencyfacts}\olref[prf][con]{prop:consistencyfacts-b}
+  नुसार $\Box^{-1}\Gamma \cup \{ !A \}$
+  हा $\Sigma$-सुसंगत आहे. लिंडेनबाउमच्या
+  पूर्वप्रमेयानुसार $\Box^{-1}\Gamma \cup
+  \{ !A \} \subseteq \Delta$ असा
+  संपूर्ण $\Sigma$-सुसंगत संच~$\Delta$
+  असतो. स्पष्टच, $!A \in \Delta$.
+  $\Diamond\Delta \subseteq \Gamma$
+  हे पाहण्यासाठी तसे नाही असे समजा:
+  एखाद्या $!B \in \Delta$ साठी
+  $\Diamond !B \notin \Gamma$. मग
+  $\Gamma$ संपूर्ण $\Sigma$-सुसंगत
+  असल्यामुळे $\Box\lnot !B \in \Gamma$.
+  पण मग $\lnot !B \in \Box^{-1}\Gamma
+  \subseteq \Delta$ हेही मिळते; त्यामुळे
+  $\Delta$ विसंगत ठरेल.
+\end{proof}
+}
+
+\begin{lem}\ollabel{lem:box-iff-diamond}
+  $\Gamma$ आणि $\Delta$ हे संपूर्ण
+  $\Sigma$-सुसंगत असोत. मग
+  $\Box^{-1}\Gamma \subseteq \Delta$
+  असेल तेव्हा आणि तेव्हाच
+  $\Diamond\Delta \subseteq \Gamma$.
+\end{lem}
+
+\begin{proof}
+  डावीकडून उजवीकडे जाणारी दिशा: $\Box^{-1}\Gamma
+  \subseteq \Delta$ असे समजा आणि
+  $\Diamond!A \in \Diamond\Delta$
+  (म्हणजे $!A \in \Delta$) असे धरा.
+  $\Diamond!A \in \Gamma$ दाखवण्यासाठी
+  $\Box\lnot!A \notin \Gamma$ दाखवणे
+  पुरेसे आहे; कारण मग महत्तमतेमुळे
+  $\lnot\Box\lnot !A \in \Gamma$.
+  आता $\Box\lnot!A \in \Gamma$
+  असेल, तर गृहीतकानुसार
+  $\lnot!A \in \Delta$; पण
+  $!A \in \Delta$ असल्याने हे
+  $\Delta$ च्या सुसंगततेच्या
+  विरुद्ध आहे. म्हणून आवश्यकतेनुसार
+  $\Box\lnot!A \notin \Gamma$.
+
+  उजवीकडून डावीकडे जाणारी दिशा: $\Diamond\Delta
+  \subseteq \Gamma$ असे समजा.
+  प्रतिपरिवर्तन वापरू: $\Box!A
+  \notin \Gamma$ दाखवण्यासाठी
+  $!A \notin \Delta$ असे समजा.
+  $!A \notin \Delta$ असेल,
+  तर महत्तमतेमुळे
+  $\lnot!A \in \Delta$;
+  म्हणून गृहीतकानुसार
+  $\Diamond\lnot!A \in \Gamma$.
+  पण सामान्य मोडल तर्कशास्त्रात
+  $\Diamond\lnot!A$ हे
+  $\lnot\Box !A$ समतुल्य आहे;
+  आणि दुसरे सूत्र~$\Gamma$ मध्ये
+  असेल, तर सुसंगततेमुळे
+  $\Box!A \notin\Gamma$,
+  हेच दाखवायचे होते.
+\end{proof}
+
+\iftag{prvBox}{%
+  \iftag{prvDiamond}{%
+% Box and Diamond are both primitive; prove
+% prop:diamond using lem:box-iff-diamond
+
+\begin{prop}\ollabel{prop:diamond}
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत
+  असेल, तर $\Diamond !A \in \Gamma$
+  असेल तेव्हा आणि तेव्हाच
+  $\Diamond\Delta \subseteq
+  \Gamma$ असा एखादा संपूर्ण
+  $\Sigma$-सुसंगत $\Delta$
+  असेल की $!A \in \Delta$.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत
+आहे असे समजा. \Dual{} आणि निगामी बंदतेनुसार
+$\Diamond!A \in \Gamma$ असेल तेव्हा
+आणि तेव्हाच $\lnot\Box\lnot !A \in
+\Gamma$. $\Gamma$ संपूर्ण
+$\Sigma$-सुसंगत असल्याने
+\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lnot}
+नुसार $\lnot\Box\lnot !A \in \Gamma$
+असेल तेव्हा आणि तेव्हाच
+$\Box\lnot !A \notin \Gamma$.
+\olref{prop:box} नुसार
+$\Box\lnot !A \notin \Gamma$
+असेल तेव्हा आणि तेव्हाच
+$\Box^{-1}\Gamma \subseteq \Delta$
+आणि $\lnot!A \notin \Delta$
+असा एखादा संपूर्ण $\Sigma$-सुसंगत
+$\Delta$ असतो. असा कोणताही~$\Delta$
+घ्या. \olref{lem:box-iff-diamond}
+नुसार $\Box^{-1}\Gamma \subseteq \Delta$
+असेल तेव्हा आणि तेव्हाच
+$\Diamond\Delta \subseteq \Gamma$.
+तसेच
+\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lnot}
+नुसार $\lnot !A \notin \Delta$
+असेल तेव्हा आणि तेव्हाच
+$!A \in \Delta$. म्हणून
+$\Diamond!A \in \Gamma$
+असेल तेव्हा आणि तेव्हाच
+$\Diamond\Delta \subseteq \Gamma$
+आणि $!A \in \Delta$ असा एखादा
+संपूर्ण $\Sigma$-सुसंगत $\Delta$
+असतो.
+\end{proof}
+
+}{}}{}
+
+\begin{prob}
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत
+  असेल, तर पुढील विधान दाखवा:
+  \iftag{prvBox}{$\Diamond !A \in \Gamma$
+    असेल तेव्हा आणि तेव्हाच
+    $\Box^{-1}\Gamma \subseteq \Delta$
+    आणि $!A \in \Delta$ असा संपूर्ण
+    $\Sigma$-सुसंगत $\Delta$ असतो.}
+    {$\Box !A \in
+    \Gamma$ असेल तेव्हा आणि तेव्हाच
+    $\Box^{-1} \Gamma \subseteq \Delta$
+    असलेल्या प्रत्येक संपूर्ण
+    $\Sigma$-सुसंगत $\Delta$ साठी
+    $!A \in \Delta$ असते.}
+  \emph{हे
+    \olref[nml][com][mod]{lem:box-iff-diamond}
+    न वापरता करा}.
+\end{prob}
+
+\end{document}

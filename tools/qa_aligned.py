@@ -930,6 +930,16 @@ _DOCUMENTED_PROJECTIONS = {
         (r'लांबी~$n$ पर्यंतची सर्व सूत्रे',
          r'लांबी~$n$ असलेली सर्व सूत्रे'),
     ],
+    'OLP-0445': [
+        # OLINC-178: the last premise is B_k, matching the finite list.
+        (r'(!B_k \lif !A)\cdots)',
+         r'(!B_n \lif !A)\cdots)'),
+        (r'(\Box!B_k \lif \Box!A)\cdots)',
+         r'(\Box!B_n \lif \Box!A)\cdots)'),
+        # OLINC-179: the invoked lemma derives the sequent relative to Sigma.
+        (r'\Box\Box^{-1}\Gamma \Proves[\Sigma] \Box!A',
+         r'\Box\Box^{-1}\Gamma \Proves \Box!A'),
+    ],
 }
 
 
