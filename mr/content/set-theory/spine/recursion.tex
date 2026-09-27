@@ -1,0 +1,99 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{recursion}
+\olsection{अनंतपार पुनरावर्तनाची प्रमेये}
+
+मात्र आधी \olref[valpha]{defValphas} ही यशस्वी व्याख्या आहे, हे निश्चित करावे लागेल. अधिक सर्वसाधारणपणे, अनंतपार पुनरावर्तनाने व्याख्या करण्याचा कोणताही प्रयत्न यशस्वी होतो, हे सिद्ध करणे गरजेचे आहे. हाच या विभागाचा उद्देश आहे.
+
+\emph{सूचना: येथील विषय अवघड आहे}. तरी मुख्य मुद्दा सोपा आहे: अनंतपार विगमन आणि प्रतिस्थापन मिळून अनंतपार पुनरावर्तनाच्या (अनेक रूपांच्या) वैधतेची हमी देतात.\footnote{आठवण: स्पष्टपणे अन्यथा सांगितले नसेल, तर सर्व सूत्रे आणि पदे यांत प्राचले असू शकतात.}
+
+\begin{defn}
+	$\tau(x)$ हे पद, $f$ हे फलन आणि $\alpha$ ही क्रमसूचक संख्या मानू. $\dom{f} = \alpha$ आणि $(\forall \beta \in \alpha)f(\beta) = \tau(\funrestrictionto{f}{\beta})$ या दोन्ही अटी पूर्ण होत असतील तेव्हाच आणि तेव्हाच $f$ हे $\tau$ साठी \emph{$\alpha$-निकटन} आहे असे म्हणू.
+\end{defn}
+
+\begin{lem}[परिबद्ध पुनरावर्तन]\ollabel{transrecursionfun}
+कोणत्याही पद $\tau(x)$ आणि कोणत्याही क्रमसूचक संख्या $\alpha$ साठी $\tau$ चे एकमेव $\alpha$-निकटन असते.
+\end{lem}
+\begin{proof}
+कोणत्याही $\gamma \leq \alpha$ साठी एकमेव $\gamma$-निकटन असते, हे दाखवू.
+
+आधी एकमेवता सिद्ध करू. अनुक्रमे $g$ आणि $h$ ही $\gamma$- आणि $\delta$-निकटने असू द्या. त्यांच्या प्राचलांवरील अनंतपार विगमनाने $\beta \in \dom{g} \cap \dom{h} =
+\gamma \cap \delta = \min(\gamma, \delta)$ असेल, तर $g(\beta) = h(\beta)$ मिळते. म्हणून निकटने अस्तित्वात असतील, तर ती एकमेव असतात आणि सर्व सामायिक मूल्यांवर जुळतात.
+
+अस्तित्व सिद्ध करण्यासाठी आता $\delta \leq \alpha$ या क्रमसूचक संख्यांवर सुलभ अनंतपार विगमन (\olref[ordinals][opps]{simpletransrecursion}) वापरू.
+
+रिकामे फलन स्पष्टपणे $\emptyset$-निकटन असते.
+
+$g$ हे $\gamma$-निकटन असेल, तर $g \cup
+\{\tuple{\gamma, \tau(g)}\}$ हे $\ordsucc{\gamma}$-निकटन असते.
+
+$\gamma$ ही सीमा क्रमसूचक संख्या असेल आणि प्रत्येक $\delta < \gamma$ साठी $g_\delta$ हे $\delta$-निकटन असेल, तर $g = \bigcup_{\delta \in \gamma} g_\delta$ ठेवू. विविध $g_\delta$ सर्व मूल्यांवर जुळत असल्याने हे फलन आहे. तसेच $\delta \in \gamma$ असेल, तर $g(\delta) = g_{\ordsucc{\delta}}(\delta) =
+\tau(\funrestrictionto{g_{\ordsucc{\delta}}}{\delta}) =
+\tau(\funrestrictionto{g}{\delta})$.
+
+याने अनंतपार विगमनाचा पुरावा पूर्ण होतो.
+\end{proof}
+
+फलनाऐवजी \emph{पद} परिभाषित करण्याची मुभा घेतली, तर मागील निष्कर्षातील $\alpha$ ही मर्यादा काढून टाकता येते. पुढील निष्कर्षाचे विधान आणि पुरावा यांत $\sigma$ हे पद असताना $\funrestrictionto{\sigma}{\alpha} = \Setabs{\tuple{\beta,
+\sigma(\beta)}}{\beta \in \alpha}$ असे मानू.
+
+\begin{thm}[सामान्य पुनरावर्तन]\ollabel{transrecursionschema}
+कोणत्याही पद $\tau(x)$ साठी $\sigma(x)$ हे पद स्पष्टपणे परिभाषित करता येते, असे की कोणत्याही क्रमसूचक संख्या~$\alpha$ साठी $\sigma(\alpha) = \tau(\funrestrictionto{\sigma}{\alpha})$.
+\end{thm}
+
+\begin{proof}
+प्रत्येक $\alpha$ साठी \olref{transrecursionfun} वरून $\tau$ चे एकमेव $\alpha$-निकटन $f_\alpha$ असते. $\sigma(\alpha)$ ची व्याख्या $f_{\ordsucc{\alpha}}(\alpha)$ अशी करू. आता:
+	\begin{align*}
+		\sigma(\alpha) &=
+		f_{\ordsucc{\alpha}}(\alpha) \\&=
+		\tau(\funrestrictionto{f_{\ordsucc{\alpha}}}{\alpha}) \\&=
+		\tau(\Setabs{\tuple{\beta, f_{\ordsucc{\alpha}}(\beta)}}{\beta \in \alpha}) \\&=
+		\tau(\Setabs{\tuple{\beta, f_{\ordsucc{\beta}}(\beta)}}{\beta \in \alpha})\\&=
+		\tau(\funrestrictionto{\sigma}{\alpha})
+	\end{align*}
+येथे \olref{transrecursionfun} प्रमाणे सर्व $\beta < \alpha$ साठी $f_{\ordsucc{\beta}}(\beta) = f_{\ordsucc{\alpha}}(\beta)$, हे वापरले आहे.
+\end{proof}
+\noindent
+\olref{transrecursionschema} हा एक \emph{रूपबंध} आहे, हे लक्षात घ्या. $\sigma$ ने फलन, म्हणजे विशिष्ट प्रकारचा \emph{संच}, परिभाषित व्हावा अशी अपेक्षा करता येत नाही. तसे असेल, तर $\dom{\sigma}$ हा सर्व क्रमसूचक संख्यांचा संच ठरेल; हे बुराली-फोर्ती विरोधापत्तीशी (\olref[ordinals][basic]{buraliforti}) विसंगत आहे.
+
+तरी \olref{transrecursionschema} आपली $V_\alpha$ ची व्याख्या योग्य ठरवतो, हे अजून दाखवायचे आहे. हे लगेच स्पष्ट होणार नाही; पण अनंतपार पुनरावर्तनाचे शेवटचे, सोपे रूप पाहिल्यावर ते उघड होईल.
+
+\begin{thm}[सुलभ पुनरावर्तन]\ollabel{simplerecursionschema}
+कोणतीही पदे $\tau(x)$ आणि $\theta(x)$ तसेच कोणताही संच $A$ दिल्यास, पुढील अटी पूर्ण करणारे पद $\sigma(x)$ स्पष्टपणे परिभाषित करता येते:
+\begin{align*}
+	\sigma(\emptyset) &= A\\
+	\sigma(\ordsucc{\alpha}) &= \tau(\sigma(\alpha)) &&
+		\text{प्रत्येक क्रमसूचक संख्या }\alpha\\
+	\sigma(\alpha) &= \theta(\ran{\funrestrictionto{\sigma}{\alpha}})&&
+	\text{जेव्हा }\alpha\text{ ही सीमा क्रमसूचक संख्या असते}
+\end{align*}
+\end{thm}
+
+\begin{proof}
+आधी $\xi(x)$ हे पद पुढीलप्रमाणे परिभाषित करू:
+%t $\xi(x) = A$ if $x$ is not a function whose domain is an ordinal;
+%otherwise let:
+\[
+	\xi(x) =
+	\begin{cases}
+			A &\text{जर $x$ क्रमसूचक प्रांताचे फलन नसेल, किंवा}\\
+			&\hspace{1em}\text{त्याचा प्रांत रिकामा असेल; अन्यथा:}\\
+			\tau(x(\alpha)) & \text{जर $\dom{x} = \ordsucc{\alpha}$}\\
+			\theta(\ran{x}) & \text{जर $\dom{x}$ सीमा क्रमसूचक संख्या असेल}
+	\end{cases}
+\]
+\olref{transrecursionschema} वरून प्रत्येक क्रमसूचक संख्या $\alpha$ साठी $\sigma(\alpha) = \xi(\funrestrictionto{\sigma}{\alpha})$ असे पद $\sigma(x)$ मिळते. शिवाय $\funrestrictionto{\sigma}{\alpha}$ हे $\alpha$ प्रांताचे फलन आहे. सुलभ अनंतपार विगमनाने (\olref[ordinals][opps]{simpletransrecursion}) $\sigma$ मध्ये अपेक्षित गुणधर्म आहेत हे दाखवू.
+
+प्रथम, $\sigma(\emptyset) = \xi(\emptyset) = A$.
+
+पुढे, $\sigma(\ordsucc{\alpha}) = \xi(\funrestrictionto{\sigma}{\ordsucc{\alpha}}) = \tau(\funrestrictionto{\sigma}{\ordsucc{\alpha}}(\alpha)) = \tau(\sigma(\alpha))$.
+
+शेवटी, $\alpha$ ही सीमा क्रमसूचक संख्या असल्यास $\sigma(\alpha) = \xi(\funrestrictionto{\sigma}{\alpha}) = \theta(\ran{\funrestrictionto{\sigma}{\alpha}})$.
+\end{proof}
+\noindent
+आता \olref[valpha]{defValphas} योग्य ठरवण्यासाठी $A
+= \emptyset$, $\tau(x) = \Pow{x}$ आणि $\theta(x) = \bigcup x$ एवढेच घ्यावे लागते. अखेर यामुळे $V_\alpha$ ची व्याख्या सिद्ध होते!{}
+
+\end{document}
