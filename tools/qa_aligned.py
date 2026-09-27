@@ -622,6 +622,11 @@ _DOCUMENTED_PROJECTIONS = {
         # OLINC-069: the coding relation in this proof is for X, not Z.
         (r'$s(X)$ चे उपसंच', r'$s(Z)$ चे उपसंच'),
     ],
+    'OLP-0347': [
+        # OLINC-074: the final nested substitution acts on the defined body N.
+        (r'\Subst{\Subst{N}{M_1}{x_1}\ldots}{M_n}{x_n}',
+         r'\Subst{\Subst{P}{M_1}{x_1}\ldots}{M_n}{x_n}'),
+    ],
 }
 
 
