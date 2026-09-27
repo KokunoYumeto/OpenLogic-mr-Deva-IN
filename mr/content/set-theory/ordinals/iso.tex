@@ -1,0 +1,129 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{iso}
+\olsection{क्रम-समरूपणे}
+
+सुक्रमण किती \emph{भक्कम} आहे, हे स्पष्ट करण्यासाठी आपण सुक्रमणांची तुलना करण्याची एक पद्धत आधी मांडू.
+
+\begin{defn}
+$<$ हा $A$ ला सुक्रमित करत असेल, तर $\tuple{A, <}$ या जोडीला \emph{सुक्रमण} म्हणतात. $\tuple{A, <}$ आणि $\tuple{B,
+\lessdot}$ ही सुक्रमणे \emph{क्रम-समरूपी} असतात तेव्हाच आणि तेव्हाच, जेव्हा $f \colon A \to B$ असे !!a{bijection} असते की: $x < y$ तेव्हाच आणि तेव्हाच $f(x) \lessdot  f(y)$. अशा वेळी $\ordeq{\tuple{A, <}}{\tuple{B, \lessdot}}$ असे लिहितो आणि $f$ ला \emph{क्रम-समरूपण} म्हणतो.
+\end{defn}
+\noindent
+पुढे संक्षेपासाठी आपण ``क्रम-समरूपणे'' यांऐवजी ``समरूपणे'' असे म्हणू. सहज अर्थाने, समरूपणे म्हणजे रचना जपणारी !!{bijection}s असतात. त्यांच्याबद्दल काही साधी तथ्ये पुढे दिली आहेत.
+
+\begin{lem}\ollabel{isoscompose}
+समरूपणांची संयुक्तीही समरूपण असते. म्हणजे, $f \colon A
+\to B$ आणि $g \colon B \to C$ ही समरूपणे असतील, तर $(g \circ f)
+\colon A \to C$ हेही समरूपण असते.
+\end{lem}
+\begin{prob}
+	\olref[sth][ordinals][iso]{isoscompose} सिद्ध करा.
+\end{prob}
+\begin{proof}
+हा पुरावा सरावासाठी सोडला आहे.
+\end{proof}
+\begin{cor}\ollabel{ordisoisequiv}
+	$\ordeq{X}{Y}$ हा समतुल्यता संबंध आहे.
+\end{cor}
+\begin{prop}\ollabel{ordisounique}
+$\tuple{A, <}$ आणि $\tuple{B, \lessdot}$ ही समरूपी सुक्रमणे असतील, तर त्यांच्यामधील समरूपण एकमेव असते.
+\end{prop}
+
+\begin{proof}
+$f$ आणि $g$ ही $A \to B$ समरूपणे मानू. \olref[wo]{propwoinduction} वापरून विगमनाने हा निष्कर्ष सिद्ध करू.
+$a\in A$ निश्चित करू आणि विगमनाच्या गृहीतकानुसार $(\forall b < a)f(b) = g(b)$ मानू. $x \in B$ निश्चित करू.
+
+$x \lessdot f(a)$ असेल, तर $f^{-1}(x) < a$. $f$ आणि $g$ ही समरूपणे असल्यामुळे $g(f^{-1}(x)) \lessdot
+g(a)$. पण $f^{-1}(x) < a$ असल्याने आपल्या गृहीतकावरून $x =f(f^{-1}(x)) = g(f^{-1}(x))$ मिळते. म्हणून $x \lessdot g(a)$. त्याचप्रमाणे, $x \lessdot g(a)$ असल्यास $x \lessdot
+f(a)$.
+
+म्हणून $(\forall x \in B)(x \lessdot f(a) \liff x \lessdot
+g(a))$. \olref[sfr][rel][ord]{prop:extensionality-strictlinearorders} वरून $f(a) = g(a)$ मिळते. त्यामुळे \olref[wo]{propwoinduction} वरून $(\forall
+a \in A)f(a) = g(a)$.
+\end{proof}\noindent
+यावरून सुक्रमणाचे भक्कम स्वरूप काहीसे स्पष्ट होते. ते अधिक समजण्यासाठी आणखी काही संज्ञा निश्चित करू.
+
+\begin{defn}
+$\tuple{A, <}$ हे सुक्रमण आणि $a \in A$ असेल, तर $A_a = \Setabs{x \in A}{x
+< a}$ असे मानू. $A_a$ हा $A$ चा यथार्थ \emph{आरंभीचा खंड} आहे असे म्हणू; $A$ स्वतःही $A$ चा अयथार्थ आरंभीचा खंड असू शकतो. $<_a$ हा आरंभीच्या खंडापुरता $<$ चा संकोच, म्हणजे $\funrestrictionto{\mathord{<}}{A_a^2}$, मानू.
+\end{defn}
+\noindent
+या संज्ञांद्वारे कोणतेही सुक्रमण स्वतःच्या यथार्थ आरंभीच्या खंडाशी समरूपी नसते, हे मांडता आणि सिद्ध करता येते.
+
+\begin{lem}\ollabel{wellordnotinitial}
+$\tuple{A, <}$ हे सुक्रमण आणि $a \in A$ असेल, तर
+$\ordneq{\tuple{A, <}}{\tuple{A_a, <_a}}$.
+\end{lem}
+
+\begin{proof}
+विसंगतीसाठी $f \colon A \to A_a$ हे समरूपण आहे असे मानू. $f$ हे एकास-एक आच्छादन असून $A_a \subsetneq A$ असल्याने, \olref[wo]{wo:strictorder} वापरून $A$ मधील $b \neq f(b)$ पूर्ण करणारा $<$-लघुतम !!{element} $b \in A$ घेऊ. $(\forall x \in A)(x<b \liff x < f(b))$ हे दाखवू. मग \olref[sfr][rel][ord]{prop:extensionality-strictlinearorders} वरून $b = f(b)$ मिळेल आणि विसंगती सिद्ध होईल.
+
+$x < b$ मानू. $b$ च्या निवडीवरून $x = f(x)$. तसेच $f$ समरूपण असल्याने $f(x) < f(b)$. म्हणून $x < f(b)$.
+
+$x < f(b)$ मानू. $f$ समरूपण असल्याने $f^{-1}(x) < b$; म्हणून $b$ च्या निवडीवरून $f^{-1}(x) = x$. त्यामुळे $x < b$.
+\end{proof}
+
+पुढील निष्कर्ष साधारणपणे असे सांगतो की समरूपणाचा ``आरंभीचा खंड'' हाही समरूपण असतो:
+
+\begin{lem}\ollabel{wellordinitialsegment}
+$\tuple{A, <}$ आणि $\tuple{B, \lessdot}$ ही सुक्रमणे मानू. $f
+\colon A \to B$ हे समरूपण आणि $a \in A$ असेल, तर
+$\funrestrictionto{f}{A_{a}} : A_a \to B_{f(a)}$ हे समरूपण असते.
+\end{lem}
+
+\begin{proof}
+$f$ हे समरूपण असल्यामुळे:
+	%Since $f$ is an isomorphism, $b < a$ iff $f(b) \lessdot f(a)$, so that
+\begin{align*}
+	\funimage{f}{A_a} &= \funimage{f}{\Setabs{x \in A}{x < a}}\\
+	&= \funimage{f}{\Setabs{f^{-1}(y) \in A}{f^{-1}(y) < a}} \\
+	&= \Setabs{y \in B}{y \lessdot f(a)} \\
+	&=B_{f(a)}
+\end{align*}
+मिळते. $f$ क्रम जपत असल्यामुळे $\funrestrictionto{f}{A_a}$ सुद्धा क्रम जपते.
+\end{proof}
+
+पुढील दोन निष्कर्षांवरून कोणतीही दोन सुक्रमणे तुलना करता येतात, हे सिद्ध होते:
+
+\begin{lem}\ollabel{lemordsegments}
+$\tuple{A, <}$ आणि $\tuple{B, \lessdot}$ ही सुक्रमणे मानू. जर
+$\ordeq{\tuple{A_{a_1}, <_{a_1}}}{\tuple{B_{b_1}, \lessdot_{b_1}}}$
+आणि $\ordeq{\tuple{A_{{a_2}}, <_{a_2}}}{\tuple{B_{{b_2}},
+\lessdot_{b_2}}}$ असेल, तर ${a_1}  < {a_2} \text{ तेव्हाच आणि तेव्हाच }{b_1} \lessdot
+{b_2}$.
+\end{lem}
+
+\begin{proof}
+\emph{डावीकडून उजवीकडे} हे सिद्ध करू; उलट दिशा तशीच आहे.
+$\ordeq{\tuple{A_{a_1}, <_{a_1}}}{\tuple{B_{b_1},
+\lessdot_{b_1}}}$ आणि $\ordeq{\tuple{A_{{a_2}},
+<_{a_2}}}{\tuple{B_{{b_2}}, \lessdot_{b_2}}}$ दोन्ही मानू आणि $f \colon
+A_{{a_2}} \to B_{{b_2}}$ हे समरूपण असू द्या. ${a_1} < {a_2}$ असेल, तर
+\olref{wellordinitialsegment} वरून
+$\ordeq{\tuple{A_{a_1}, <_{a_1}}}{\tuple{B_{f({a_1})},
+\lessdot_{f({a_1})}}}$ मिळते. म्हणून
+$\ordeq{\tuple{B_{b_1}, \lessdot_{b_1}}}{\tuple{B_{f({a_1})},
+\lessdot_{f({a_1})}}}$; आणि \olref{wellordnotinitial} वरून ${b_1} = f({a_1})$. आता $f$ चे सहप्रांत $B_{{b_2}}$ असल्याने ${b_1} \lessdot {b_2}$.
+\end{proof}
+
+\begin{thm}\ollabel{thm:woalwayscomparable}
+कोणतीही दोन सुक्रमणे दिल्यास, त्यांपैकी एक दुसऱ्याच्या आरंभीच्या खंडाशी समरूपी असते; तो खंड यथार्थ असलाच पाहिजे असे नाही.
+\end{thm}
+
+\begin{proof}
+$\tuple{A, <}$ आणि $\tuple{B, \lessdot}$ ही सुक्रमणे मानू. विभाजन वापरून
+\[
+	f = \Setabs{\tuple{a, b} \in A \times B}{
+		\ordeq{\tuple{A_a, <_a}}{\tuple{B_b, \lessdot_b}}}.
+\]
+असे ठरवू. \olref{lemordsegments} वरून $\tuple{a_1, b_1}, \tuple{a_2, b_2} \in f$ अशा सर्व जोड्यांसाठी $a_1 < a_2$ तेव्हाच आणि तेव्हाच $b_1 \lessdot b_2$. म्हणून $f \colon \dom{f} \to
+\ran{f}$ हे समरूपण आहे.
+
+$a_2 \in \dom{f}$ आणि $a_1 < a_2$ असेल, तर \olref{wellordinitialsegment} वरून $a_1 \in \dom{f}$; म्हणून $\dom{f}$ हा $A$ चा आरंभीचा खंड आहे. त्याचप्रमाणे $\ran{f}$ हा $B$ चा आरंभीचा खंड आहे. विसंगतीसाठी हे दोन्ही \emph{यथार्थ} आरंभीचे खंड आहेत असे मानू. मग $A \setminus \dom{f}$ मधील $<$-लघुतम !!{element} $a$ घेऊ; त्यामुळे $\dom{f} = A_a$. तसेच $B \setminus
+\ran{f}$ मधील $\lessdot$-लघुतम !!{element} $b$ घेऊ; त्यामुळे $\ran{f} = B_b$. म्हणून $f \colon A_a \to B_b$ हे समरूपण आहे आणि त्यामुळे $\tuple{a, b} \in f$; ही विसंगती आहे.
+\end{proof}
+
+\end{document}
