@@ -1,0 +1,149 @@
+% Part: conditional-logics
+% Chapter: minimal-change-semantics
+% Section: true-false
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{con}{min}{tf}
+
+\olsection{प्रतिवास्तविक विधानांचे सत्य आणि असत्य}
+
+सर्वाधिक जवळची सर्व $!A$-जगे
+$!B$-जगे असतील, तर प्रतिवास्तविक
+विधान $!A \cif !B$
+(रिक्त नसलेल्या अर्थाने) सत्य असते.
+\olref{fig:true} मध्ये हे दाखवले आहे.
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.7]\small
+  \spheresystem{5}
+  \draw (0,0) node {$w$};
+  \propositionintersect{0}{4}{40}{3.5}
+  {\tikzset{proposition/.append={smooth,tension=1.4}}
+  \proposition[shift={(1.6,-1)}]{90}{1}{30}{4}}
+  \path (1.5,3) node[below] {$\formula{B}$};
+  \path (3,0) node {$\formula{A}$};
+\end{tikzpicture}
+\caption{रिक्त नसलेल्या अर्थाने सत्य प्रतिवास्तविक विधान}
+\ollabel{fig:true}
+\end{center}
+\end{figure}
+जग~$w$ भोवतीच्या गोलकांच्या
+प्रणालीत $!A$ समाविष्ट
+करणारा एकही गोलक नसेल,
+तरी~$w$ येथे प्रतिवास्तविक
+विधान सत्य असते. अशा वेळी
+ते \emph{रिक्तपणे} सत्य
+असते (\olref{fig:vacuous} पाहा).
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.7]\small
+  \spheresystem{5}
+  \draw (0,0) node {$w$};
+  \proposition{0}{6.5}{40}{3.5}
+  {\tikzset{proposition/.append={smooth,tension=1.4}}
+  \proposition[shift={(1.2,-1)}]{90}{1}{30}{4}}
+  \path (1.5,3) node[below] {$\formula{B}$};
+  \spherepos{0}{7}{node {$\formula{A}$}}
+\end{tikzpicture}
+\caption{रिक्तपणे सत्य प्रतिवास्तविक विधान}
+\ollabel{fig:vacuous}
+\end{center}
+\end{figure}
+
+प्रतिवास्तविक विधान दोन
+प्रकारे असत्य असू शकते.
+पहिल्या प्रकारात सर्वाधिक
+जवळची $!A$-जगे
+सर्वच $!B$-जगे नसतात,
+पण त्यांपैकी काही
+तशी असतात.
+या वेळी $!A \cif
+\lnot !B$ हे विधानही
+असत्य असते
+(\olref{fig:false} पाहा).
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.7]\small
+  \spheresystem{5}
+  \draw (0,0) node {$w$};
+  \propositionintersect{0}{4}{40}{3.5}
+  {\tikzset{proposition/.append={smooth,tension=1.4}}
+  \proposition[shift={(1.6,0)}]{90}{1}{30}{3}}
+  \path (1.5,3) node[below] {$\formula{B}$};
+  \path (3,0) node {$\formula{A}$};
+\end{tikzpicture}
+\caption{असत्य प्रतिवास्तविक विधान; विरुद्ध उत्तरांगाचे विधानही असत्य}
+\ollabel{fig:false}
+\end{center}
+\end{figure}
+सर्वाधिक जवळच्या
+$!A$-जगांचा
+$!B$-जगांशी
+अजिबात छेद नसेल,
+तर $!A \cif !B$
+असत्य असते. पण
+या वेळी सर्वाधिक
+जवळची सर्व
+$!A$-जगे
+$\lnot !B$-जगे
+असतात; म्हणून
+$!A \cif \lnot !B$
+सत्य असते
+(\olref{fig:false-opposite} पाहा).
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.7]\small
+  \spheresystem{5}
+  \draw (0,0) node {$w$};
+  \propositionintersect{0}{4}{40}{3.5}
+  {\tikzset{proposition/.append={smooth,tension=1.4}}
+  \proposition[shift={(-1,0)}]{90}{1}{30}{3}}
+  \path (-1,3) node[below] {$\formula{B}$};
+  \path (3,0) node {$\formula{A}$};
+\end{tikzpicture}
+\caption{असत्य प्रतिवास्तविक विधान; विरुद्ध उत्तरांगाचे विधान सत्य}
+\ollabel{fig:false-opposite}
+\end{center}
+\end{figure}
+
+कठोर अभिव्यंजनाच्या
+उलट, प्रतिवास्तविक
+विधाने परिस्थितीवश
+असू शकतात.
+\olref{fig:contingent} मधील
+गोलक प्रतिमान पाहा.
+$u$ च्या सर्वाधिक
+जवळची $!A$-जगे
+ही सर्व $!B$-जगे
+आहेत; म्हणून
+$\mSat{M}{!A \cif
+  !B}[u]$. पण~$v$
+च्या सर्वाधिक जवळच्या
+काही $!A$-जगांत
+$!B$ सत्य नाही;
+म्हणून
+$\mSat/{M}{!A \cif !B}[v]$.
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.6]\small
+  \spheresystem{7}
+  \spheresystem[shift={(0:3.1)},dashed]{4}
+  \propositionintersect{45}{4}{40}{4.5}
+  \begin{scope}
+    \clip \propositionplot{45}{4}{40}{4.5} ;
+    \spherelayer[shift={(0:3.1)}]{3}
+  \end{scope}
+  \proposition[shift={(1.4,-.5)}]{90}{1}{35}{5}
+  \path (0,0) node {$u$};
+  \path (0:3.1) node {$v$};
+  \spherepos{35}{9}{node {$\formula{A}$}}
+  \spherepos{80}{9}{node {$\formula{B}$}}
+\end{tikzpicture}
+\end{center}
+\caption{परिस्थितीवश प्रतिवास्तविक विधान}
+\ollabel{fig:contingent}
+\end{figure}
+\end{document}

@@ -1,0 +1,117 @@
+% Part: counterfactuals
+% Chapter: minimal-change-semantics
+% Section: antecedent-strengthening
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cnt}{min}{agg}
+
+\olsection{पूर्वांग बळकट करणे}
+
+‘‘पूर्वांग बळकट करणे’’ म्हणजे
+$!A \lif !C \Entails
+(!A \land !B) \lif !C$
+हे अनुमान. वास्तविक
+अभिव्यंजनासाठी ते वैध,
+पण प्रतिवास्तविक
+विधानांसाठी अवैध आहे.
+मी ही आगकाडी ओढली असती,
+तर ती पेटली असती,
+हे सत्य आहे असे समजा.
+(म्हणजे आगकाडीत किंवा
+आगपेटीच्या घासण्याच्या
+पृष्ठभागात काही दोष नाही,
+मी आगकाडी मोडणार नाही,
+इत्यादी.) पण ही
+आगकाडी मी बाह्य
+अवकाशात ओढली असती,
+तर ती पेटली असती,
+हे सत्य नाही. म्हणून
+पुढील अनुमान अवैध आहे:
+\begin{quote}
+  आगकाडी ओढली असती,
+  तर ती पेटली असती.
+
+  म्हणून आगकाडी बाह्य
+  अवकाशात ओढली असती,
+  तर ती पेटली असती.
+\end{quote}
+
+लुईस--स्टालनाकर यांच्या
+सशर्त विधानांच्या
+विश्लेषणातून हे
+समजते: मी आगकाडी
+बाह्य अवकाशात
+ओढतो असे सर्वाधिक
+जवळचे जग, मी
+आगकाडी ओढतो
+अशा सर्वाधिक
+जवळच्या जगापेक्षा
+वास्तविक जगापासून
+खूप दूर आहे.
+म्हणून दुसऱ्या
+जगात आगकाडी
+पेटते हे सत्य
+असले, तरी
+पहिल्या जगात
+ती पेटत नाही.
+असेच असायला हवे.
+
+\begin{ex}
+  गोलक चिन्हार्थमीमांसेत हे अनुमान
+  अवैध ठरते; म्हणजे
+  $p \cif r \Entails/
+  (p \land q) \cif r$.
+  $\mModel{M} = \tuple{W, O, V}$
+  हे प्रतिमान पाहा: येथे
+  $W = \{w, w_1, w_2\}$,
+  $O_w = \{\{w\}, \{w,
+  w_1\}, \{w, w_1, w_2\}\}$,
+  $V(p) = \{w_1, w_2\}$,
+  $V(q) = \{w_2\}$, आणि
+  $V(r) = \{w_1\}$.
+  $p$ समाविष्ट करणारा
+  $S = \{w, w_1\}$
+  हा गोलक आहे आणि
+  त्यातील सर्व जगांत
+  $p \lif r$ सत्य आहे;
+  म्हणून
+  $\mSat{M}{p \cif r}[w]$.
+  तसेच $(p \land q)$
+  समाविष्ट करणारा
+  $S' = \{w, w_1, w_2\}$
+  हा गोलक आहे; पण
+  $\mSat/{M}{(p \land q) \lif r}[w_2]$.
+  म्हणून
+  $\mSat/{M}{(p \land q) \cif r}[w]$
+  (\olref{fig:antecedent-strengthening} पाहा).
+
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[layerwidth=1.5,scale=.6]\tiny
+  \spheresystem{3}
+  \propositionintersect{-10}{3}{30}{5}
+  \begin{scope}
+    \clip plot[smooth,tension=1] coordinates
+          {(0,4.5) (30:.95) (4.5,-3.5)} -- (4.5,4.5) ;
+    \spherefill{2}
+  \end{scope}
+  \draw[proposition] plot[dashed,smooth,tension=1] coordinates
+          {(0,4.5) (30:.95) (4.5,-3.5)} ;
+  \proposition{30}{2}{30}{5}
+  \path (0,0) node[world] {$w$};
+  \spherepos{30}{2}{node[world] {$w_1$}}
+  \spherepos{-10}{3}{node[world] {$w_2$}}
+  \spherepos{-10}{4}{node {$q$}}
+  \spherepos{30}{4}{node {$r$}}
+  \draw (1,4.5) node[below] {$p$};
+\end{tikzpicture}
+\caption{पूर्वांग बळकट करणे या नियमाचे प्रतिउदाहरण}
+\ollabel{fig:antecedent-strengthening}
+\end{center}
+\end{figure}
+\end{ex}
+
+\end{document}

@@ -1216,6 +1216,23 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\lnot(!A \strictif !B) & \Entails/ !A \land \lnot !B',
          r'\lnot(!A \lif !B) & \Entails/ !A \land \lnot !B'),
     ],
+    'OLP-0527': [
+        # OLINC-241: the middle premise's material conditional is true
+        # throughout its q-admitting sphere, not false as the source slash says.
+        (r'$\mSat{M}{q \lif r}$',
+         r'$\mSat/{M}{q \lif r}$'),
+    ],
+    'OLP-0528': [
+        # OLINC-242: O is a world-to-sphere-system map; this list is O_w.
+        (r'$O_w = \{\{w\}, \{w, w_1\},',
+         r'$O = \{\{w\}, \{w, w_1\},'),
+        # The declared model is M_1, not a separate undefined M.
+        (r'$\mSat{M_1}{p \cif q}[w]$',
+         r'$\mSat{M}{p \cif q}[w]$'),
+        (r'$\mSat/{M_1}{\lnot q' + '\n' +
+         r'\lif \lnot p}[w_2]$',
+         r'$\mSat/{M}{\lnot q \lif \lnot p}[w_2]$'),
+    ],
 }
 
 
