@@ -106,7 +106,7 @@ for name, raw, parts, prefix in files:
     title = content[heading.end() : at - 1]
     if "$" in title:
         short = " ".join(
-            title.replace(r"$\Th{Q}$", "Q").replace(r"$\omega$", "ω").split()
+            title.replace(r"$\Th{Q}$", "Q").replace(r"$\omega$", "ओमेगा").split()
         )
         assert "$" not in short and "\\" not in short, (name, short)
         content = (
@@ -230,7 +230,7 @@ prior.update(
     reader_heading_projection=(
         "Math-bearing section titles in OLP-0303, 0304, 0305, 0308, "
         "0309, 0310 and 0311 retain their displayed title; the table of "
-        "contents, PDF bookmarks and running heads spell Q and ω as text."
+        "contents, PDF bookmarks and running heads spell Q and omega as text."
     ),
 )
 (BUILD / "INPUTS.json").write_text(
