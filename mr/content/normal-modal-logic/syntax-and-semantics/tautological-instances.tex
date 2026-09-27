@@ -1,0 +1,170 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: tautological-instances
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{tau}
+
+\olsection{सर्वतः सत्य सूत्रांचे आदेशन-दृष्टांत}
+
+\begin{explain}
+मोडल परिकर्मी नसलेले सूत्र प्रत्येक सत्यतामूल्य-नियुक्तीखाली
+सत्य असेल, तर ते सर्वतः सत्य सूत्र असते. असे प्रत्येक सूत्र
+प्रत्येक प्रतिमानातील प्रत्येक जगात सत्य असते, हे स्पष्ट आहे.
+पण $\Box$ आणि~$\Diamond$ असलेल्या !!{formula}s साठी
+सर्वतः सत्य असण्याची संकल्पना परिभाषित केलेली नाही.
+उदाहरणार्थ, विमध्य सिद्धांताचे दृष्टांत सूत्र असलेले
+$\Box p \lor \lnot \Box p$ वैध आहे का? येथे
+\emph{सर्वतः सत्य सूत्राचा आदेशन-दृष्टांत} ही
+संकल्पना उपयोगी पडते: ते मोडल नसलेल्या सर्वतः सत्य
+सूत्रात आदेशन करून मिळणारे !!a{formula} असते. असे
+प्रत्येक आदेशन-दृष्टांत सूत्र वैध असणे अपेक्षित आहे;
+तरीही ते सिद्ध करावे लागते.
+\end{explain}
+
+\begin{defn}
+  मोडल !!{formula}~$!B$ हे \emph{सर्वतः सत्य सूत्राचा
+  आदेशन-दृष्टांत} तेव्हा आणि केवळ तेव्हाच असते,
+  जेव्हा $p_1$, \dots,~$p_n$ ही !!{propositional
+    variable}s असलेले मोडल नसलेले सर्वतः सत्य सूत्र~$!A$
+  आणि !!{formula}s $!D_1$, \dots,~$!D_n$ अशी अस्तित्वात
+  असतात की $!B \ident \SSubst{!A}{\subst{!D_1}{p_1},
+    \dots, \subst{!D_n}{p_n}}$.
+\end{defn}
+
+\begin{lem}\ollabel{lem:valid-taut}
+  $!A$ हे मोडल नसलेले !!{formula} असून त्यातील
+  !!{propositional
+  variable}s $p_1$, \dots, $p_n$ आहेत,
+  आणि $!D_1$, \dots, $!D_n$ ही मोडल !!{formula}s आहेत असे
+  समजा. मग कोणतीही नियुक्ती $\pAssign{v}$, कोणतेही प्रतिमान
+  $\mModel{M} = \tuple{W, R, V}$, आणि असे कोणतेही $w \in W$
+  घ्या की $\pAssign{v}(p_i) = \True$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\mSat{M}{!D_i}[w]$. अशा वेळी $\pSat{v}{!A}$
+  तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\mSat{M}{\SSubst{!A}{\subst{!D_1}{p_1}, \dots,
+      \subst{!D_n}{p_n}}}[w]$.
+\end{lem}
+
+\begin{proof}
+  $!A$ वर विगमन करू.
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\pSat/{v}{\lfalse}$
+      आणि $\mSat/{M}{\lfalse}[w]$ ही दोन्ही असतात}.}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\pSat{v}{\ltrue}$
+      आणि $\mSat{M}{\ltrue}[w]$ ही दोन्ही असतात}.}{}
+  \item \indcase{!A}{p_i}{%
+    \begin{align*}
+      \pSat{v}{p_i} \Leftrightarrow {} & \pAssign{v}(p_i) = \True \\
+      & \qquad \text{$\pSat{v}{p_i}$ च्या व्याख्येवरून}\\
+      \Leftrightarrow {} & \mSat{M}{!D_i}[w] \\
+      &\qquad \text{गृहीतकावरून}\\
+      \Leftrightarrow {} & \mSat{M}{\SSubst{p_i}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+      &\qquad \text{$\SSubst{p_i}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}} \ident !D_i$ असल्यामुळे}.
+      \end{align*}}
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{%
+      \begin{align*}
+        \pSat{v}{\lnot !B} \Leftrightarrow {} & \pSat/{v}{!B}\\
+        &\qquad \text{$\pSat{v}{}$ च्या व्याख्येवरून};\\
+        \Leftrightarrow {} & \mSat/{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{विगमन गृहीतकावरून}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{\lnot !B}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{मोडल पूर्तिच्या $\mSat{M}{}[w]$ व्याख्येवरून}.
+      \end{align*}}}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \land !C} \Leftrightarrow {} &
+        \pSat{v}{!B} \text{ आणि } \pSat{v}{!C}\\
+        &\qquad \text{$\pSat{v}{}$ च्या व्याख्येवरून}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ आणि } \\
+        & \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{विगमन गृहीतकावरून}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(!B \land !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ च्या व्याख्येवरून}.
+      \end{align*}}}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \lor !C} \Leftrightarrow{} &
+        \pSat{v}{!B} \text{ किंवा } \pSat{v}{!C}\\
+        &\qquad \text{$\pSat{v}{}$ च्या व्याख्येवरून};\\
+        \Leftrightarrow{} & \mSat{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ किंवा }\\
+        & \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{विगमन गृहीतकावरून}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(!B \lor !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ च्या व्याख्येवरून}.
+      \end{align*}}}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \lif !C} \Leftrightarrow{} &
+        \pSat/{v}{!B} \text{ किंवा } \pSat{v}{!C}\\
+        &\qquad \text{$\pSat{v}{}$ च्या व्याख्येवरून}\\
+        \Leftrightarrow{} &
+        \mSat/{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ किंवा }\\
+        & \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{विगमन गृहीतकावरून}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(!B \lif !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ च्या व्याख्येवरून}.
+      \end{align*}}}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \liff !C} \Leftrightarrow {} &
+        \text{एकतर } \pSat{v}{!B} \text{ आणि } \pSat{v}{!C}\\
+        & \text{or } \pSat/{v}{!B} \text{ आणि } \pSat/{v}{!C}\\
+        &\qquad \text{$\pSat{v}{}$ च्या व्याख्येवरून}\\
+        \Leftrightarrow {} &
+        \text{एकतर } \mSat{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ आणि }\\
+        & \qquad \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &  \text{ किंवा } \mSat/{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ आणि }\\
+        & \qquad \mSat/{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad\text{विगमन गृहीतकावरून}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{(!B \liff !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ च्या व्याख्येवरून}.
+      \end{align*}}}{}
+  \end{enumerate}
+  \end{proof}
+
+\begin{prop}\ollabel{prop:valid-taut}
+  सर्वतः सत्य सूत्रांचे सर्व आदेशन-दृष्टांत वैध असतात.
+\end{prop}
+
+\begin{proof}
+  व्यत्यास सिद्ध करू. काही प्रतिमान $\mModel{M}$ आणि जग~$w$
+  यांसाठी पुढील अट असलेले $!A$ आहे असे समजा:
+  $\mSat/{M}{\SSubst{!A}{\subst{!D_1}{p_1}, \dots,
+  \subst{!D_n}{p_n}}}[w]$.
+  $\pAssign{v}(p_i) = \True$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\mSat{M}{!D_i}[w]$, अशी नियुक्ती $\pAssign{v}$
+  परिभाषित करा ($q \notin \{p_1, \dots, p_n \}$ या
+  चलांना $\pAssign{v}$ कोणतीही मूल्ये देते). मग
+  \olref{lem:valid-taut} वरून $\pSat/{v}{!A}$; म्हणून
+  $!A$ सर्वतः सत्य सूत्र नाही.
+\end{proof}
+
+\end{document}

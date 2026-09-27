@@ -850,6 +850,17 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$\mSat/{M}{\Box\lnot !A}[w]$.' + '\n' + r'      $\mSat{M}{\Box\lnot !A}[w]$',
          r'$\mSat/{M}{\Box\lnot !A}$.' + '\n' + r'      $\mSat{M}{\Box\lnot !A}[w]$'),
     ],
+    'OLP-0416': [
+        # OLINC-150: select the negation induction case with its own tag.
+        (r'\tagitem{prvNot}{\indcase{!A}{\lnot !B}',
+         r'\tagitem{prvFalse}{\indcase{!A}{\lnot !B}'),
+        # OLINC-151: the last negation equivalence invokes modal satisfaction.
+        (r'\text{मोडल पूर्तिच्या $\mSat{M}{}[w]$ व्याख्येवरून}.',
+         r'\text{मोडल पूर्तिच्या $\pSat{v}{}$ व्याख्येवरून}.'),
+        # OLINC-152: the biconditional case starts with a biconditional.
+        (r'\pSat{v}{!B \liff !C} \Leftrightarrow {} &',
+         r'\pSat{v}{!B \lif !C} \Leftrightarrow {} &'),
+    ],
 }
 
 
