@@ -697,6 +697,14 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$\rep{M}[0], \rep{M}[1]$ इत्यादी',
          r'$\rep{M}[0], \rep{M}[1], etc. $'),
     ],
+    'OLP-0366': [
+        # OLINC-099: eta-equivalence needs the general fresh-binder law.
+        (r'\lambd[x][M x] \equal M \text{ जर } x \notin FV(M)',
+         r'\lambd[x][f x] \equal f'),
+        # OLINC-101: use the extensionality macro, not bare math 'ext'.
+        (r'म्हणजे \ext{} नियमाने', r'म्हणजे $ext$ नियमाने'),
+        (r'$\equal[\ext]$ मध्ये', r'$\equal[ext]$ मध्ये'),
+    ],
 }
 
 

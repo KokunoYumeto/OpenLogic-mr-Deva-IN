@@ -1,0 +1,95 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: eta
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{eta}
+\olsection{$\eta$-परिवर्तन}
+
+$\lambda$-पदांवर आणखी एक संबंध आहे. \olref[fv]{sec}
+मध्ये आपण $\lambd[x][(fx)]$ हे उदाहरण पाहिले: ते
+युक्तिवाद स्वीकारून त्यावर $f$ लावते. दुसऱ्या शब्दांत,
+ते~$f$ हेच फलन दर्शवते: $\lambd[x][(fx)]N$ आणि
+$fN$ या दोन्हींचे न्यूनीकरण~$fN$ मध्ये होते. ही कल्पना
+मांडण्यासाठी $\eta$-न्यूनीकरण (आणि $\eta$-विस्तार)
+वापरतो.
+
+\begin{defn}[$\eta$-संकुचन, $\eredone$]
+  \ollabel{defn:beredone}
+  \emph{$\eta$-संकुचन} ($\eredone$) हा पदांवरील
+  सर्वांत लहान रचनांशी सुसंगत संबंध आहे जो पुढील अट पूर्ण करतो:
+  \[
+    \lambd[x][M x] \eredone M \text{ जर } x \notin FV(M)
+  \]
+\end{defn}
+
+\begin{defn}[$\beta\eta$-न्यूनीकरण, $\bered$] \ollabel{defn:bered}
+  \emph{$\beta\eta$-न्यूनीकरण} ($\bered$) हा $\bredone$
+  आणि $\eredone$ समाविष्ट करणारा पदांवरील सर्वांत लहान
+  परावर्ती आणि संक्रमक संबंध आहे. म्हणजे परावर्तन आणि
+  संक्रमणाचे नियम, तसेच पुढील दोन नियम, त्यात असतात:
+  \begin{enumerate}
+  \item $M \bredone N$ असेल, तर $M \bered N$. \ollabel{defn:bered3}
+  \item $M \eredone N$ असेल, तर $M \bered N$. \ollabel{defn:bered4}
+  \end{enumerate}
+
+\end{defn}
+
+\begin{defn}
+  $\equal$ हा सममूल्यता संबंध $\eta$-परिवर्तनाच्या
+  पुढील नियमाने विस्तारतो:
+  \[
+  \lambd[x][M x] \equal M \text{ जर } x \notin FV(M)
+  \]
+  विस्तारित संबंध $\equal[\eta]$ असा दर्शवतो.
+\end{defn}
+
+$\eta$-सममूल्यता महत्त्वाची आहे, कारण तिचा लॅम्डा
+पदांच्या विस्तारात्मकतेशी संबंध आहे:
+
+\begin{defn}[विस्तारात्मकता]
+  $\equal$ हा सममूल्यता संबंध (\ext) नियमाने विस्तारतो:
+  \begin{center}
+  $Mx \equal Nx$ असेल, तर $M \equal N$; येथे $x \notin FV(MN)$.
+  \end{center}
+  विस्तारित संबंध $\equal[\ext]$ असा दर्शवतो.
+\end{defn}
+
+ढोबळपणे, पदांकडे फलने म्हणून पाहिल्यास एकाच
+युक्तिवादासाठी त्यांचे वर्तन सारखे असेल, तर ती समान
+मानावीत असे हा नियम सांगतो.
+
+आता $\eta$ नियमाने नेमकी विस्तारात्मकताच मिळते,
+त्यापलीकडे काही नाही, हे सिद्ध करू.
+
+\begin{thm}
+  $M \equal[\ext] N$ तेव्हाच आणि तेव्हाच $M \equal[\eta] N$.
+\end{thm}
+
+\begin{proof}
+  प्रथम $\equal[\eta]$ हा संबंध विस्तारात्मकतेच्या
+  नियमानुसार बंद आहे हे सिद्ध करू. म्हणजे \ext{} नियमाने
+  $\equal[\eta]$ मध्ये नवीन काही जोडले जात नाही. त्यामुळे
+  $\equal[\eta]$ मध्ये $\equal[\ext]$ समाविष्ट होतो;
+  म्हणून $M \equal[\ext] N$ असेल, तर $M \equal[\eta] N$.
+
+  $\equal[\eta]$ हा संबंध \ext{} नियमानुसार बंद आहे
+  हे दाखवण्यासाठी लक्षात घ्या: त्या \ext{} नियमाने $M
+  \equal N$ हा निष्कर्ष काढताना $Mx
+  \equal[\eta] Nx$ हा पूर्वपक्ष असतो. मग $\equal$ च्या
+  एका नियमानुसार $\lambd[x][Mx]
+  \equal[\eta] \lambd[x][Nx]$ मिळते. दोन्ही बाजूंना
+  $\eta$ नियम लावल्यावर $M \equal[\eta] N$ मिळते.
+
+  त्याचप्रमाणे $\eta$ नियम $\equal[\ext]$ मध्ये
+  समाविष्ट आहे हे सिद्ध करू. $x \notin
+  FV(M)$ असलेली कोणतीही $\lambd[x][Mx]$ आणि $M$
+  घेतल्यास $(\lambd[x][Mx])x \equal[\ext] Mx$ मिळते;
+  म्हणून \ext{} नियमाने
+  $\lambd[x][Mx] \equal[\ext] M$ मिळते.
+\end{proof}
+
+\end{document}
