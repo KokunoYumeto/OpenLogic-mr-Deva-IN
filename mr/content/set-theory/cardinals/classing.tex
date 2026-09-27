@@ -1,0 +1,142 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{cardinals}{classing}
+\olsection{सांत, \usetoken{S}{enumerable}, \usetoken{S}{nonenumerable}}
+
+आता संचांकांची ओळख झाली आहे; म्हणून त्यांच्या विविध प्रकारांविषयी थोडी चर्चा करू. विशेषतः सांत, !!{enumerable} आणि !!{nonenumerable} संचांक पाहू.
+
+पहिल्या दोन निष्कर्षांवरून सांत संचांक हे नेमके सांत क्रमसूचक संख्याच असतील; त्यांची व्याख्या आपण मागे \olref[z][infinity-again]{defnomega} मध्ये आपल्या \emph{नैसर्गिक संख्या} म्हणून केली होती:
+
+\begin{prop}\ollabel{finitecardisoequal}
+$n, m \in \omega$ असू द्या. मग $n = m$ तेव्हा आणि तेव्हाच जेव्हा $\cardeq{n}{m}$.
+\end{prop}
+
+\begin{proof}
+\emph{डावीकडून उजवीकडे} हे उघड आहे. \emph{उजवीकडून डावीकडे} सिद्ध करण्यासाठी, $n \neq m$ असूनही $\cardeq{n}{m}$ असे गृहीत धरा. त्रिपर्यायानुसार $n \in m$ किंवा $m \in n$; व्यापकता न गमावता $n \in m$ असे समजू. मग $n \subsetneq m$ आणि $f \colon m \to n$ हे !!a{bijection} असते; म्हणून $m$ डेडेकिंड-अनंत ठरतो. हे \olref[z][infinity-again]{naturalnumbersarentinfinite} शी विसंगत आहे.
+\end{proof}
+
+\begin{cor}\ollabel{naturalsarecardinals}
+$n \in \omega$ असेल, तर $n$ हा संचांक आहे.
+\end{cor}
+
+\begin{proof}
+हे लगेच मिळते.
+\end{proof}
+\noindent
+यावरून संचांक “सांत” किंवा “अनंत” असण्याच्या अनेक स्वाभाविक कल्पना एकाच ठरतात:
+\begin{thm}\ollabel{generalinfinitycharacter}कोणत्याही संच $A$ साठी पुढील विधाने समतुल्य आहेत:
+\begin{enumerate}
+  \item\ollabel{card:notinomega} $\card{A} \notin \omega$; म्हणजे
+  $A$ सांत नाही;
+  \item\ollabel{card:omegaplus} $\omega \leq \card{A}$;
+  \item\ollabel{card:infinite} $A$ डेडेकिंड-अनंत आहे.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+\olref[ord-arithmetic][using-addition]{ordinfinitycharacter},
+\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} आणि
+\olref{naturalsarecardinals} यांवरून.
+\end{proof}
+
+म्हणून \olref[sfr][][]{part} मध्ये काहीशा अनौपचारिकपणे वापरलेल्या कल्पनांची पुढील \emph{व्याख्या} करता येते:
+
+\begin{defn}\ollabel{defnfinite}
+$\card{A}$ ही नैसर्गिक संख्या, म्हणजे $\card{A} \in \omega$, असेल तेव्हा आणि तेव्हाच $A$ ला \emph{सांत} म्हणू. अन्यथा $A$ ला \emph{अनंत} म्हणू.
+\end{defn}
+\noindent
+पण ही व्याख्या $\ZFC$ च्या पार्श्वभूमीवर दिली आहे, हे लक्षात ठेवा. शेवटी, प्रत्येक संचाला संचांक असतो याची खात्री मिळवण्यासाठी सुक्रमणाचे स्वयंसिद्धक लागले होते. खरे तर सुक्रमणाशिवाय सांतही नाही आणि डेडेकिंड-अनंतही नाही असा संच असू शकतो. या प्रकारच्या प्रश्नाकडे \olref[choice][]{chap} मध्ये परत येऊ. सध्या सुक्रमण गृहीत धरून पुढे जाऊ.
+
+आता सांत संचांकांवरून अनंत संचांकांकडे वळू. दोन प्राथमिक निरीक्षणे अशी:
+
+\begin{cor}\ollabel{omegaisacardinal}
+$\omega$ हा लघुतम अनंत संचांक आहे.
+\end{cor}
+
+\begin{proof}
+$\omega$ हा संचांक आहे: कारण $\omega$ डेडेकिंड-अनंत आहे; आणि कोणत्याही $n \in \omega$ साठी $\cardeq{\omega}{n}$ असेल, तर $n$ डेडेकिंड-अनंत ठरेल, जे \olref[z][infinity-again]{naturalnumbersarentinfinite} शी विसंगत आहे. आता व्याख्येनुसार $\omega$ हा लघुतम अनंत संचांक आहे.
+\end{proof}
+
+\begin{cor}
+प्रत्येक अनंत संचांक ही सीमा क्रमसूचक संख्या असते.
+\end{cor}
+
+\begin{proof}
+$\alpha$ ही अनंत उत्तरवर्ती क्रमसूचक संख्या असू द्या; म्हणजे काही $\beta$ साठी $\alpha = \beta
+\ordplus 1$. पूर्ववर्ती सांत असती तर दिलेली उत्तरवर्ती सुद्धा सांत असती; म्हणून $\beta$ अनंत आहे (\olref{finitecardisoequal} मधील सांत प्रकरण लक्षात घ्या). त्यामुळे \olref[ord-arithmetic][using-addition]{ordinfinitycharacter} नुसार $\cardeq{\beta}{\beta \ordplus 1}$. आता
+\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} नुसार
+$\card{\beta} = \card{\beta\ordplus 1} = \card{\alpha}$; म्हणून
+$\alpha \neq \card{\alpha}$.
+\end{proof}
+
+मागे \olref[sfr][siz][enm-alt]{defn:enumerable} मध्येच आपण !!{enumerable} आणि !!{nonenumerable} अनंत संच वेगळे ओळखता येतात, हे दाखवले होते. त्या व्याख्येवरून पुढील निष्कर्ष स्वाभाविकपणे मिळतो:
+
+\begin{prop}
+$A$ हा !!{enumerable} असेल तेव्हा आणि तेव्हाच जेव्हा $\card{A} \leq \omega$; तसेच $A$ हा !!{nonenumerable} असेल तेव्हा आणि तेव्हाच जेव्हा $\omega < \card{A}$.
+\end{prop}
+
+\begin{proof}
+त्रिपर्यायानुसार ही दोन विधाने समतुल्य आहेत; म्हणून $A$ हा !!{enumerable} तेव्हा आणि तेव्हाच जेव्हा $\card{A} \leq \omega$, एवढेच सिद्ध करणे पुरेसे आहे. \emph{उजवीकडून डावीकडे}: $\card{A} \leq \omega$ असेल, तर
+\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} आणि
+\olref{omegaisacardinal} नुसार $\cardle{A}{\omega}$. \emph{डावीकडून उजवीकडे}: $A$ हा !!{enumerable} असेल, तर \olref[sfr][siz][enm-alt]{defn:enumerable} नुसार पुढील तीन प्रकरणांपैकी एक घडते:
+\begin{enumerate}
+  \item $A = \emptyset$ असेल, तर \olref{naturalsarecardinals} आणि
+  \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} नुसार $\card{A} = 0 \in \omega$.
+  \item $\cardeq{n}{A}$ असेल, तर \olref{naturalsarecardinals} आणि
+  \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} नुसार $\card{A} = n \in \omega$.
+  \item $\cardeq{\omega}{A}$ असेल, तर \olref{omegaisacardinal} नुसार $\card{A} = \omega$.
+\end{enumerate}
+म्हणून तिन्ही प्रकरणांत $\card{A} \leq \omega$.
+\end{proof}
+\noindent
+खरे तर $\omega$ चे स्थान विशेष आहे. गणनीय क्रमसूचक संख्या अनेक असल्या तरी:
+
+\begin{cor}
+$\omega$ हा एकमेव !!{enumerable} अनंत संचांक आहे.
+\end{cor}
+
+\begin{proof}
+$\cardfont{a}$ हा !!a{enumerable} अनंत संचांक असू द्या. $\cardfont{a}$ अनंत असल्यामुळे $\omega \leq \cardfont{a}$. तसेच $\cardfont{a}$ हा !!a{enumerable} संचांक असल्यामुळे $\cardfont{a} =
+\card{\cardfont{a}} \leq \omega$. म्हणून त्रिपर्यायानुसार $\cardfont{a} = \omega$. \end{proof}
+
+अर्थात, संचांक अनंत संख्येने आहेत. म्हणून प्रश्न पडेल: \emph{एकूण संचांक किती आहेत?} पुढील निष्कर्षांवरून या प्रश्नाचा पुनर्विचार करावा लागेल.
+
+\begin{prop}\ollabel{unioncardinalscardinal}
+$X$ चा प्रत्येक सदस्य संचांक असेल, तर $\bigcup X$ हाही संचांक आहे.
+\end{prop}
+
+\begin{proof}
+$\bigcup X$ ही क्रमसूचक संख्या आहे, हे तपासणे सोपे आहे. $\alpha \in
+\bigcup X$ ही क्रमसूचक संख्या असू द्या; मग काही संचांक $\cardfont{b}$ साठी $\alpha \in \cardfont{b} \in X$. $\cardfont{b}$ संचांक असल्यामुळे
+$\cardless{\alpha}{\cardfont{b}}$. तसेच $\cardfont{b} \subseteq
+\bigcup X$ असल्यामुळे $\cardle{\cardfont{b}}{\bigcup X}$; म्हणून
+$\cardneq{\alpha}{\bigcup X}$. हा निष्कर्ष सर्वत्र लागू केल्यावर $\bigcup X$ हा संचांक ठरतो.
+\end{proof}
+
+\begin{thm}\ollabel{lem:NoLargestCardinal}
+सर्वांत मोठा संचांक नाही.
+\end{thm}
+
+\begin{proof}
+कोणत्याही संचांक $\cardfont{a}$ साठी कँटरचे प्रमेय
+(\olref[sfr][siz][car]{thm:cantor}) आणि
+\olref[cardinals][cardsasords]{lem:CardinalsExist} यांवरून
+$\cardfont{a} < \card{\Pow{\cardfont{a}}}$ मिळते.
+\end{proof}
+
+\begin{thm}
+सर्व संचांकांचा संच अस्तित्वात नाही.
+\end{thm}
+
+\begin{proof}
+विसंगतीने सिद्ध करण्यासाठी $C = \Setabs{\cardfont{a}}{\cardfont{a} \text{
+संचांक आहे}}$ असे समजा. आता \olref{unioncardinalscardinal} नुसार $\bigcup C$ हा संचांक आहे; म्हणून \olref{lem:NoLargestCardinal} नुसार $\cardfont{b} > \bigcup C$ असा संचांक आहे. व्याख्येनुसार
+$\cardfont{b} \in C$; म्हणून $\cardfont{b} \subseteq \bigcup{C}$ आणि त्यामुळे
+$\cardfont{b} \leq \bigcup C$; ही विसंगती आहे.
+\end{proof}
+
+याची रसेलचा विरोधाभास आणि बुराली-फॉर्ती निष्कर्ष या दोन्हींशी तुलना करा.
+
+\end{document}
