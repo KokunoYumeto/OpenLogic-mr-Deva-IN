@@ -731,6 +731,11 @@ _DOCUMENTED_PROJECTIONS = {
         (r"\item \ollabel{defn:beredpar2} $N \beredpar N'$ असेल",
          r"\item \ollabel{defn:beredpar2} $N \xrightarrow{\beta} N'$ असेल"),
     ],
+    'OLP-0372': [
+        # OLINC-113: eta conversion uses the eta one-step relation.
+        (r"$M \eredone M'$ हे $\eta$-परिवर्तनाचे प्रकरण",
+         r"$M \bredone M'$ हे $\eta$-परिवर्तनाचे प्रकरण"),
+    ],
 }
 
 
