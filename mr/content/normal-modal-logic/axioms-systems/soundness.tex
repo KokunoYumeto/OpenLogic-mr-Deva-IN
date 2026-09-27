@@ -1,0 +1,75 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{snd}
+
+\olsection{निर्दोषता}
+
+ज्या !!^a{derivation} प्रणालीमध्ये !!{derive}
+करता येणारे प्रत्येक सूत्र वैध असते, तिला निर्दोष
+म्हणतात. मोडल प्रणाली विचारात घेताना, म्हणजे
+\Ax{K} बरोबरच काही !!{formula}s $!A_1$,
+\dots,~$!A_n$ यांचे दृष्टांत वापरता येणाऱ्या
+!!{derivation}s विचारात घेताना, $!A_1$, \dots,
+$!A_n$ सत्य असलेल्या प्रत्येक प्रतिमानात
+प्रत्येक !!{derivable} सूत्र सत्य असावे, अशी अपेक्षा आहे.
+
+\begin{thm}[निर्दोषता प्रमेय]\ollabel{thm:soundness}
+  $!A_1$, \dots, $!A_n$ यांचा प्रत्येक दृष्टांत
+  अनुक्रमे प्रतिमानांच्या $\mClass{C}_1$, \dots,
+  $\mClass{C}_n$ या वर्गांमध्ये वैध असेल,
+  तर $\Log{K}!A_1\dots !A_n
+  \Proves !B$ यावरून $!B$ हे प्रतिमानांच्या
+  $\mClass{C}_1 \cap \dots \cap \mClass{C}_n$
+  या वर्गात वैध ठरते.
+\end{thm}
+
+\begin{proof}
+  सिद्धतांच्या लांबीवर विगमन करू. संक्षेपासाठी
+  $\mClass{C} =
+  \mClass{C}_1 \cap \dots \cap \mClass{C}_n$ असे ठेवा.
+  \begin{enumerate}
+  \item विगमनाचा पाया: $!B$ ची सिद्धता लांबी~$1$
+    ची असेल, तर ते सर्वतः-सत्य दृष्टांत,
+    \Ax{K} चा,\iftag{prvDiamond}{ किंवा~\Dual{} चा,}{}
+    अथवा $!A_1$, \dots,~$!A_n$ यांपैकी
+    एखाद्याचा दृष्टांत असतो. पहिल्या प्रकरणात
+    \olref[syn][tau]{prop:valid-taut} वरून $!B$
+    हा $\mClass{C}$ मध्ये वैध आहे, कारण सर्वतः-सत्य
+    दृष्टांत प्रतिमानांच्या \emph{कोणत्याही} वर्गात
+    वैध असतात. दुसऱ्या प्रकरणात
+    \olref[syn][sch]{prop:Kvalid}\iftag{prvDiamond}{ आणि
+      \olref[syn][sch]{prop:Dual-valid}}{} वरून तेच
+    मिळते. शेवटी तिसऱ्या प्रकरणात $!B$ हा
+    $\mClass{C}_i$ मध्ये वैध आहे आणि
+    $\mClass{C} \subseteq \mClass{C}_i$ आहे;
+    म्हणून \olref[syn][val]{prop:subset-class}
+    वरून $!B$ हा $\mClass{C}$ मध्येही वैध आहे.
+  \item विगमन पायरी: $!B$ ची सिद्धता लांबी $k>1$
+    ची आहे असे समजा. $!B$ हा सर्वतः-सत्य दृष्टांत,
+    मागील पायरीत नमूद केलेल्या मोडल स्वयंसिद्धकांपैकी
+    एखाद्याचा दृष्टांत, किंवा $!A_1$, \dots,
+    $!A_n$ यांपैकी एखाद्याचा दृष्टांत असेल,
+    तर मागील पायरीप्रमाणे युक्तिवाद लागू होतो.
+    म्हणून आधीच्या
+    $!C \lif !B$ आणि $!C$ या !!{formula}s वर
+    \MP{} लावून $!B$ मिळाला असे समजा. मग
+    $!C \lif !B$ आणि $!C$ यांच्या सिद्धतांची
+    लांबी $<k$ आहे; विगमन गृहीतकावरून ती
+    $\mClass{C}$ मध्ये वैध आहेत.
+    \olref[syn][sch]{prop:soundMP} वरून $!B$
+    हाही $\mClass{C}$ मध्ये वैध आहे. शेवटी
+    $!C$ वर \Nec{} लावून $!B$ मिळाला असे समजा
+    (म्हणजे $!B = \Box!C$). विगमन गृहीतकावरून
+    $!C$ हा $\mClass{C}$ मध्ये वैध आहे आणि
+    \olref[syn][val]{prop:Nec-rule} वरून $!B$ ही
+    वैध आहे.
+  \end{enumerate}
+\end{proof}
+
+\end{document}
