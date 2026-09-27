@@ -1,0 +1,203 @@
+% Part: normal-modal-logic
+% Chapter: frame-correspondence
+% Section: properties-accessibility
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{frd}{acc}
+
+\olsection{प्राप्यता संबंधांचे गुणधर्म}
+
+अनेक मोडल !!{formula}s प्राप्यता संबंधाच्या साध्या, कधीकधी
+परिचित, गुणधर्मांचे वैशिष्ट्य दर्शवतात. एका दिशेने याचा
+अर्थ असा की, एखादा गुणधर्म असलेल्या प्रत्येक प्रतिमानात
+संबंधित !!{formula} आणि त्याचे सर्व आदेशन-दृष्टांत सत्य
+असतात. प्राप्यता संबंधांचे पाच अभिजात प्रकार आणि त्यांनी
+सत्य ठरवलेली सूत्रे प्रथम पाहू.
+
+\begin{thm}\ollabel{thm:soundschemas}
+  $\mModel{M} = \tuple{W, R, V}$ हे प्रतिमान असू द्या.
+  $R$ ला \olref{tab:five} च्या डाव्या बाजूचा गुणधर्म
+  असेल, तर उजव्या बाजूच्या !!{formula} चा प्रत्येक
+  दृष्टांत~$\mModel{M}$ मध्ये सत्य असतो.
+\end{thm}
+
+\begin{table}[t]
+    \begin{tabular}{| l || l |}
+      \hline
+      {\emph{$R$ पुढील प्रकारचा असेल \dots}} & {\emph{तर \dots सूत्र~$\mModel{M}$ मध्ये सत्य:}} \\
+      \hline \hline
+      \emph{सर्वत्र उत्तरवर्ती}: $\forall u \exists v Ruv$ & \hbox to.43\textwidth
+           {$\Box p \lif \Diamond p$ \hfill (\Ax{D})} \\
+      \hline
+      \emph{परावर्ती}: $\forall w Rww$
+      & \hbox to.43\textwidth
+          {$\Box p \lif p$ \hfill (\Ax{T})} \\
+      \hline
+      \emph{सममित}: &  \hbox to .43\textwidth
+           {$p \lif \Box\Diamond p$ \hfill (\Ax{B})} \\
+           $\forall u\forall v(Ruv \lif Rvu)$ & \\
+      \hline
+      \emph{संक्रमक}: & \hbox to.43\textwidth
+           {$\Box p \lif \Box \Box p$ \hfill (\Ax{4})} \\
+      $\forall u \forall v \forall w ((Ruv \land Rvw) \lif Ruw)$ & \\
+      \hline
+      \emph{युक्लिडी}: & \hbox to .43\textwidth
+        {$\Diamond p \lif \Box\Diamond p$ \hfill (\Ax{5})} \\
+      $\forall w \forall u \forall v ((Rwu \land Rwv) \lif Ruv)$ &\\
+      \hline
+    \end{tabular}
+    \caption{अनुरूपतेविषयी पाच तथ्ये.}
+    \ollabel{tab:five}
+  \end{table}
+
+
+\begin{proof}
+  \Ax{B} चे प्रकरण पाहू. रूपबंध प्रतिमानात सत्य आहे हे
+  दाखवण्यासाठी त्याचे सर्व दृष्टांत त्या प्रतिमानातील
+  प्रत्येक जगात सत्य आहेत हे दाखवावे लागते. म्हणून
+  $!A \lif \Box\Diamond !A$ हा \Ax{B} चा कोणताही
+  दृष्टांत, आणि $w \in W$ हे कोणतेही जग असू द्या.
+  $\Box \Diamond
+  !A$ हे $w$ येथे सत्य असल्याचे दाखवण्यासाठी पूर्वांग
+  $!A$ हे $w$ येथे सत्य आहे असे समजा. मग $w$ पासून
+  प्राप्य असलेल्या प्रत्येक $w'$ येथे $\Diamond !A$
+  सत्य आहे हे दाखवायचे आहे. आता $Rww'$ असलेल्या
+  कोणत्याही $w'$ साठी, सममितीच्या गृहीतकावरून $Rw'w$
+  देखील असते (\olref{fig:Bsymm} पाहा).
+  $\mSat{M}{!A}[w]$ असल्यामुळे
+  $\mSat{M}{\Diamond !A}[w']$. $Rww'$ असलेले $w'$
+  कोणतेही असल्यामुळे $\mSat{M}{\Box\Diamond!A}[w]$.
+
+  इतर प्रकरणे सरावासाठी ठेवली आहेत.
+\end{proof}
+
+\begin{prob}
+  \olref[nml][frd][acc]{thm:soundschemas} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={below:$\mSat{{}}{\formula{A}}$\\
+          $\mSat{{}}{\Box\Diamond \formula{A}}$}] {$w$};
+      \node[world] (w2) [label=below:{$\mSat{{}}{\Diamond \formula{A}}$},
+        right=of w1] {$w'$};
+      \draw[->, bend left] (w1) to (w2);
+      \draw[->, bend left] (w2) to (w1);
+    \end{tikzpicture}
+  \end{center}
+\caption{सममितीवर आधारित युक्तिवाद.}
+\ollabel{fig:Bsymm}
+\end{figure}
+
+\olref{thm:soundschemas} मधील व्यत्यास खरे नाहीत, हे लक्षात
+घ्या: एखादा रूपबंध प्रतिमानात सत्य आहे म्हणून त्या प्रतिमानाच्या
+प्राप्यता संबंधाला संबंधित गुणधर्म असतोच असे नाही.
+\Ax{T} आणि परावर्ती प्रतिमाने या प्रकरणात, \Ax{T} स्वतःच
+असत्य असलेले प्रतिमान सहज देता येते: $W = \{w\}$ आणि
+$V(p) = \emptyset$ घ्या; प्राप्यता संबंध रिकामा असू द्या.
+मग $R$ परावर्ती नाही, पण $\mSat{M}{\Box
+  p}[w]$ आणि $\mSat/{M}{p}[w]$. तरी येथे~$\mModel{M}$
+मध्ये \Ax{T} चा एकच दृष्टांत असत्य आहे; इतर दृष्टांत,
+उदाहरणार्थ $\Box \lnot p \lif \lnot p$, सत्य आहेत.
+\Ax{T} चे \emph{प्रत्येक आदेशन-दृष्टांत}~$\mModel{M}$
+मध्ये सत्य असूनही $\mModel{M}$ परावर्ती नसते, असे
+प्रतिमान शोधणे अधिक कठीण आहे. पण अशी प्रतिमानेही आहेत:
+
+\begin{prop}\ollabel{prop:reflexive}
+  $\mModel{M} = \tuple{W, R, V}$ हे प्रतिमान असू द्या,
+  जिथे $W = \{u, v
+  \}$, जगं $u$ आणि $v$ यांचा $R$ संबंध दोन्ही दिशांनी
+  आहे, म्हणजे $Ruv$ आणि $Rvu$, आणि कोणतेही जग स्वतःशी
+  संबंधित नाही. प्रत्येक $p$ साठी $u \in V(p) \Leftrightarrow v
+  \in V(p)$ असे समजा. मग:
+  \begin{enumerate}
+  \item प्रत्येक $!A$ साठी: $\mSat{M}{!A}[u]$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $\mSat{M}{!A}[v]$
+    ($!A$ वर विगमन वापरा).
+  \item \Ax{T} चा प्रत्येक दृष्टांत $\mModel{M}$ मध्ये सत्य आहे.
+  \end{enumerate}
+  $\mModel{M}$ परावर्ती नाही (खरेतर ते
+  \emph{अपरावर्ती} आहे), म्हणून \Ax{T} च्या बाबतीत
+  \olref{thm:soundschemas} चा व्यत्यास असत्य आहे.
+  \olref{thm:soundschemas} मधील काही, पण सर्वच नव्हे,
+  इतर रूपबंधांसाठीही असेच युक्तिवाद देता येतात.
+\end{prop}
+
+\begin{prob}
+  \olref[nml][frd][acc]{prop:reflexive} मधील दावे सिद्ध करा.
+\end{prob}
+
+आपण \Ax{D}, \Ax{T}, \Ax{B}, \Ax{4}, आणि \Ax{5}
+या पाच अभिजात !!{formula}s वर भर देणार असलो, तरी
+\olref{tab:anotherfive} मध्ये प्राप्यता संबंधांचे आणखी
+काही गुणधर्म नोंदवले आहेत. प्रत्येक जगापासून जास्तीत
+जास्त एक जग प्राप्य असेल, तर प्राप्यता संबंध~$R$
+आंशिक फलनीय असतो. प्रत्येक जगापासून नेमके
+एकच जग प्राप्य असेल, तर त्याला फलनीय म्हणतो.
+(म्हणून फलनीय संबंध नेमके तेच आहेत जे सर्वत्र उत्तरवर्ती
+आणि आंशिक फलनीय दोन्ही आहेत.) त्यांना ``फलनीय''
+म्हणतात कारण प्राप्यता संबंध एखाद्या (आंशिक) फलनासारखा
+वागतो. $Ruv$ असेल तेव्हा $u$ आणि~$v$ यांच्या
+``मध्ये'' एखादे~$w$ असेल, तर संबंध दुर्बल सघन
+असतो. एका अर्थाने दुर्बल सघन संबंध संक्रमक संबंधांच्या
+उलट आहेत: संक्रमक संबंधात~$u$ पासून~$w$ मार्गे
+$v$ पर्यंत जाता येत असेल, तर $u$ पासून $v$ पर्यंत
+थेट जाता येते; दुर्बल सघन संबंधात~$u$ पासून $v$
+पर्यंत थेट जाता येत असेल, तर एखाद्या~$w$ मार्गेही
+जाता येते. एखाद्या जग~$w$ पासून जगं $u$ आणि~$v$
+प्राप्य असतील तेव्हा $u$ आणि~$v$ या दोन्हींपासून
+एकच जग~$t$ प्राप्य असेल, तर संबंध दुर्बल दिशित असतो;
+यालाच कधीकधी ``हिऱ्याचा गुणधर्म'' किंवा ``संगमन''
+म्हणतात.
+
+\begin{table}[t]
+    \begin{tabular}{| p{.50\textwidth} || p{.43\textwidth} |}
+      \hline
+      {\emph{$R$ पुढील प्रकारचा असेल \dots}} & {\emph{तर \dots सूत्र~$\mModel{M}$ मध्ये सत्य:}} \\
+      \hline \hline
+      \emph{आंशिक फलनीय}: &
+      \multirow{2}{*}{$\Diamond p \lif \Box p$} \\
+      $ \forall w \forall u \forall v ((Rwu \land Rwv) \lif u =v )$ & \\
+      \hline
+      \multirow{2}{*}{\emph{फलनीय}: $\forall w \exists v \forall u(Rwu \liff \eq[u][v]) $}
+      & \multirow{2}{*}{$\Diamond p \liff \Box p$} \\
+      & \\
+      \hline
+      \emph{दुर्बल सघन}: &  \multirow{2}{*}{$\Box \Box p \lif
+        \Box p$} \\
+      $\forall u\forall v(Ruv \lif \exists w(Ruw \land Rwv))$ & \\
+      \hline
+      \emph{दुर्बल संयोजित}: &
+      \multirow{3}{*}{\hbox to.43\textwidth{$
+        \begin{array}{@{}l@{}}
+          \Box ((p \land \Box p) \lif q) \lor {} \\
+          \qquad \Box ((q \land \Box q) \lif p)
+        \end{array}$ \hfill (\Ax{L})}
+      } \\
+      $\forall w \forall u \forall v ((Rwu \land Rwv) \lif {}$ &\\
+      \qquad $(Ruv \lor u=v \lor Rvu))$ & \\
+      \hline
+      \emph{दुर्बल दिशित}: & \multirow{3}{*}{\hbox to .43\textwidth
+        {$\Diamond\Box p \lif \Box\Diamond p$\hfill (\Ax{G})}} \\
+      $\forall w \forall u \forall v ((Rwu \land Rwv) \lif {}$ & \\
+      \qquad $\exists t (Rut \land Rvt))$ & \\
+      \hline
+    \end{tabular}
+    \caption{अनुरूपतेविषयी आणखी पाच तथ्ये.}
+    \ollabel{tab:anotherfive}
+  \end{table}
+
+\begin{prob}
+  $\mModel{M} = \tuple{W, R, V}$ हे प्रतिमान असू द्या.
+  $R$ ला \olref[nml][frd][acc]{tab:anotherfive} मधील
+  डावीकडील गुणधर्म असेल, तर उजवीकडील संबंधित सूत्राचा
+  प्रत्येक दृष्टांत~$\mModel{M}$ मध्ये सत्य असतो, हे दाखवा.
+\end{prob}
+
+
+
+\end{document}
