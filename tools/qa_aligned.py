@@ -1096,6 +1096,11 @@ _DOCUMENTED_PROJECTIONS = {
         # biconditional already present in its formation rules.
         (r'  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}.' + '\n', ''),
     ],
+    'OLP-0490': [
+        # OLINC-213: the vacuity example must use the same marked
+        # formula metavariable B as the announcement grammar.
+        (r'$[!A] !B$', r'$[!A]B$'),
+    ],
 }
 
 

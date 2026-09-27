@@ -1,0 +1,145 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: public-announcement-logic-semantics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{psm}
+
+\olsection{सार्वजनिक घोषणा तर्कशास्त्राचे अर्थनिर्धारण}
+
+सार्वजनिक घोषणा तर्कशास्त्रांची संबंधी प्रतिमाने
+ज्ञानविषयक तर्कशास्त्रांतील प्रतिमानांसारखीच असतात.
+मात्र सार्वजनिक घोषणा-संकारकाचे अर्थनिर्धारण नवे आहे.
+
+\begin{defn}\ollabel{defn:mmodels} प्रतिमान~$\mModel M = \tuple{W, R, V}$
+  मध्ये \emph{!!a{formula}~$!A$ हे~$w$ येथे सत्य असणे},
+  म्हणजे $\mSat{M}{!A}[w]$, पुढीलप्रमाणे आगमनाने
+  परिभाषित करतो:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat{M}{\lfalse}[w]$ कधीच नसते}.}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M}{\ltrue}[w]$ नेहमी असते}.}{}
+  \item $\mSat{M}{p}[w]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $w \in V(p)$
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat/{M}{!B}[w]$}.}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat{M}{!B}[w]$ आणि
+    $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat{M}{!B}[w]$ किंवा
+    $\mSat{M}{!C}[w]$} (किंवा दोन्ही).}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat/{M}{!B}[w]$ किंवा
+    $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat{M}{!B}[w]$ आणि
+    $\mSat{M}{!C}[w]$ ही दोन्ही असतात, किंवा
+    $\mSat{M}{!B}[w]$ आणि $\mSat{M}{!C}[w]$ यांपैकी
+    कोणतेही नसते}.}{}
+  \item\ollabel{defn:sub:mmodels-box}
+    \indcase{!A}{\Knows_a !B}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $R_a ww'$ असलेल्या प्रत्येक $w' \in W$
+    साठी $\mSat{M}{!B}[w']$}
+  \item\ollabel{defn:sub:mmodels-pal}
+    \indcase{!A}{[!B] !C}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $\mSat{M}{!B}[w]$ असल्यास
+    $\mSat{M \mid !B}{!C}[w]$}
+
+
+  येथे $\mModel M \mid !B = \tuple{W', R', V'}$ ची
+  व्याख्या पुढीलप्रमाणे आहे:
+  \begin{enumerate}
+    \item $W' = \Setabs{ u \in W}{\mSat{M}{!B}[u]}$.
+      म्हणजे $\mModel M \mid !B$ मधील जगे ही~$\mModel M$
+      मध्ये $!B$ सत्य असलेली जगेच आहेत.
+    \item $R'_a = R_a \cap (W' \times W')$. प्रत्येक कर्त्याचा
+      प्राप्यता संबंध केवळ~$W'$ मध्ये उरलेल्या जगांपुरता
+      मर्यादित केला जातो.
+    \item $V'(p) = \Setabs{ u \in W'}{u \in V(p) }$.
+      त्याचप्रमाणे उरलेल्या जगांतील विधानीय मूल्यांकने
+      तीच राहतात. माहितीपर घटनांमुळे विधानीय चलांचे
+      सत्यतामूल्य बदलत नाही, ही कल्पना त्यातून दिसते.
+  \end{enumerate}
+
+  \end{enumerate}
+\end{defn}
+
+म्हणून सार्वजनिक घोषणा तर्कशास्त्रांचे वैशिष्ट्य असे
+की, प्रतिमान~$\mModel M$ येथे !!a{formula} सत्य आहे
+की नाही हे कधीकधी~$\mModel M$ व्यतिरिक्त दुसरे
+प्रतिमान पाहिल्याशिवाय ठरवता येत नाही.
+
+हेही लक्षात घ्या की आपल्या अर्थनिर्धारणात घोषणा-संकारक
+हा $\Box$~संकारक आहे. म्हणून एखाद्या जगात
+!!a{formula}~$!A$ सत्य असल्याची घोषणा करता येत
+नसेल, तर $[!A] !B$ तेथे आपोआप सत्य असते; जसे
+अंतिम जगांत सर्व $\Box$ !!{formula}s सत्य असतात.
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={below left:$p, \lnot q$}]{$w_1$};
+      \node[world] (w2) [left=of w1, label={left:$\lnot p, \lnot q$}]{$w_2$};
+      \node[world] (w3) [above=of w1, label={right:$p, q$}] {$w_3$};
+      \draw[<->] (w1) to [swap] node {$b$} (w2);
+      \draw[->,loop below] (w1) to node {$a, b$} (w1);
+      \draw[<->] (w1) to [swap] node {$a$} (w3);
+      \draw[->,loop above] (w2) to node {$a, b$} (w2) ;
+      \draw[->,loop above] (w3) to node {$a, b$} (w3) ;
+
+      \node[world](v1)[right of=w1, xshift=1.25in, label={right:$p, \lnot q$}]{$w'_1$};
+      \node[world](v3)[above of=v1,label={right:$p,q$}]{$w'_3$};
+      \draw[<->] (v1) to node {$a$} (v3);
+      \draw[->,loop below] (v1) to node {$a,b$} (v1);
+      \draw[->,loop above] (v3) to node {$a,b$} (v3) ;
+
+      \node(m)[below=of w1]{$\mModel M$};
+      \node(m')[below=of v1]{$\mModel M \mid p$};
+
+      \draw[-,dotted] (w1) to node {\footnotesize $p$ ची घोषणा}(v1) ;
+
+    \end{tikzpicture}
+  \end{center}
+  \caption{$p$ ची सार्वजनिक घोषणा होण्यापूर्वी आणि झाल्यानंतर.}
+  \ollabel{fig:announcement-example}
+\end{figure}
+
+!!a{formula} ची सार्वजनिक घोषणा म्हणजे प्रतिमान
+संकुचित करणे, किंवा ज्या जगांत ते !!{formula} सत्य
+होते तितक्याच जगांपुरते ते मर्यादित करणे, असे पाहता
+येते. \olref{fig:announcement-example} मध्ये~$p$ ची
+सार्वजनिक घोषणा केल्याचा परिणाम दाखवला आहे.
+या प्रतिमानाचे एक वैशिष्ट्य असे की घोषणेमुळे
+कर्ता~$b$ ला~$p$ माहीत होते, पण कर्ता~$a$ ला
+तसे नव्याने कळत नाही (कारण~$p$ सत्य आहे हे
+$a$ ला आधीच माहीत होते).
+
+अधिक औपचारिकपणे, $\mSat{M}{\lnot \Knows_b p}[w_1]$
+असते; पण $\mSat{M
+\mid p}{\Knows_b p}[w'_1]$ असते. यावरून
+$\mSat{M}{[p] \Knows_b
+p}[w_1]$ मिळते. पण घोषणेच्या परिणामाबद्दल
+याहूनही अधिक प्रबळ विधान करता येते. प्रत्यक्षात
+$\mSat{M}{[p]\CKnows_{\{a,b\}} p}[w_1]$ असते.
+म्हणजे $p$ ची घोषणा झाल्यावर ते \emph{सामायिक ज्ञान}
+बनते.
+
+पण हे सर्वसाधारणपणे खरे आहे का? $!A$ सत्य असल्याची
+घोषणा केल्यावर $!A$ हे \emph{नेहमीच} सामायिक ज्ञान बनेल
+का? आश्चर्य वाटेल, पण उत्तर नाही असे आहे. प्रत्यक्षात,
+काही !!{formula}s सत्य असताना त्यांची घोषणा करणे
+शक्य आहे, आणि घोषणेनंतर ती सत्य राहत नाहीत.
+उदाहरणार्थ, \olref{fig:announcement-example} मधील
+$w_1$ येथे $p \land \lnot \Knows_b p$ ची घोषणा
+केल्याचा परिणाम पाहा. प्रत्यक्षात $\mModel M \mid p$
+आणि $\mModel M \mid (p \land \lnot \Knows_b p)$
+ही दोन्ही एकच प्रतिमान आहेत. मात्र आधी पाहिल्याप्रमाणे
+$\mSat{M \mid p}{\Knows_b
+p}[w'_1]$ असते. म्हणून
+$\mSat{M \mid (p \land \lnot \Knows_b p)}{\lnot
+(p \land \lnot \Knows_b p)}[w'_1]$ असते. म्हणजे
+घोषणा केल्यावर असत्य होणारे हे !!a{formula} आहे.
+
+\end{document}
