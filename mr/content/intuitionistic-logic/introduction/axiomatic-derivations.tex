@@ -1,0 +1,79 @@
+% part: intuitionistic-logic
+% chapter: introduction
+% section: axiomatic-derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{int}{axd}
+
+\olsection{स्वयंसिद्धकीय \usetoken{P}{derivation}}
+
+अंतःप्रज्ञावादी विधानीय तर्कशास्त्रातील स्वयंसिद्धकीय
+!!{derivation}s या संकल्पनात्मकदृष्ट्या सर्वांत सोप्या
+आणि ऐतिहासिकदृष्ट्या पहिल्या !!{derivation}
+पद्धती आहेत. त्यांचे कार्य अभिजात विधानीय
+तर्कशास्त्रातल्याप्रमाणेच चालते.
+
+\begin{defn}[!!^{derivability}]
+जर $\Gamma$ हा $\Lang L$ मधील !!{formula}s चा संच
+असेल, तर $\Gamma$ पासूनची \emph{!!{derivation}} म्हणजे
+!!{formula}s चा सांत अनुक्रम $!A_1$, \dots,~$!A_n$
+असा की प्रत्येक $i \le n$ साठी पुढीलपैकी एक अट
+पूर्ण होते:
+\begin{enumerate}
+\item $!A_i \in \Gamma$; किंवा
+\item $!A_i$ हे स्वयंसिद्धक आहे; किंवा
+\item एखाद्या $!A_j$ आणि $!A_k$ पासून, जिथे $j < i$
+  आणि $k < i$, विध्यात्मक अनुमानाने $!A_i$ निष्पन्न होते;
+  म्हणजे $!A_k \ident !A_j \lif !A_i$.
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[स्वयंसिद्धके]
+अंतःप्रज्ञावादी विधानीय तर्कशास्त्रातील
+\emph{स्वयंसिद्धकांचा} संच $\PAx$ हा पुढील रूपांच्या
+सर्व !!{formula}s चा बनलेला आहे:
+\begin{align}
+  & (!A \land !B) \lif !A \ollabel{ax:land1}\\
+  & (!A \land !B) \lif !B \ollabel{ax:land2}\\
+  & !A \lif (!B \lif (!A \land !B)) \ollabel{ax:land3}\\
+  & !A \lif (!A \lor !B) \ollabel{ax:lor1}\\
+  & !A \lif (!B \lor !A) \ollabel{ax:lor2}\\
+  & (!A \lif !C) \lif ((!B \lif !C) \lif ((!A \lor !B) \lif !C)) \ollabel{ax:lor3}\\
+  & !A \lif (!B \lif !A) \ollabel{ax:lif1}\\
+  & (!A \lif (!B \lif !C)) \lif ((!A \lif !B) \lif (!A \lif !C)) \ollabel{ax:lif2}\\
+  & \lfalse \lif !A \ollabel{ax:lfalse1}
+\end{align}
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!^a{formula}~$!A$ हे $\Gamma$ पासून \emph{!!{derivable}}
+असते, म्हणजे $\Gamma \Proves !A$, जर $\Gamma$
+पासून सुरू होऊन $!A$ वर संपणारी !!a{derivation} असेल.
+\end{defn}
+
+\begin{defn}[प्रमेये]
+रिक्त संचापासून $!A$ ची !!a{derivation} असेल,
+तर !!^a{formula}~$!A$ हे \emph{प्रमेय} असते.
+$!A$ हे प्रमेय असेल तर आपण $\Proves !A$ लिहितो
+आणि ते प्रमेय नसेल तर $\Proves/ !A$ लिहितो.
+\end{defn}
+
+\begin{prop}
+  अंतःप्रज्ञावादी तर्कशास्त्राच्या स्वयंसिद्धकीय
+  !!{derivation} पद्धतीत $\Gamma \Proves !A$
+  असेल, तर अभिजात तर्कशास्त्रातही
+  $\Gamma \Proves !A$ असते. विशेषतः, $!A$ हे
+  अंतःप्रज्ञावादी प्रमेय असेल, तर ते अभिजात प्रमेयही असते.
+\end{prop}
+
+\begin{proof}
+  प्रत्येक अंतःप्रज्ञावादी स्वयंसिद्धक हे अभिजात
+  स्वयंसिद्धकही आहे. म्हणून अंतःप्रज्ञावादी
+  तर्कशास्त्रातील प्रत्येक !!{derivation} ही अभिजात
+  तर्कशास्त्रातीलही !!a{derivation} आहे.
+\end{proof}
+
+\end{document}
