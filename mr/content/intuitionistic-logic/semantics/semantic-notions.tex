@@ -1,0 +1,97 @@
+% part: intuitionistic-logic
+% chapter: semantics
+% section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sem}{sem}
+
+\olsection{चिन्हार्थविषयक संकल्पना}
+
+\begin{defn}
+  प्रत्येक $w \in W$ साठी $\mSat{M}{!A}[w]$
+  असेल तेव्हा आणि केवळ तेव्हाच $!A$ हे
+  \emph{$\mModel{M} = \tuple{W,R,V}$ या प्रतिमानात
+  सत्य आहे}, म्हणजे $\mSat{M}{!A}$, असे म्हणतो.
+  $!A$ हे सर्व प्रतिमानांत सत्य असेल तेव्हा आणि
+  केवळ तेव्हाच ते \emph{वैध}, म्हणजे
+  $\Entails !A$, असते. !!{formula}s च्या
+  संच~$\Gamma$ पासून~$!A$ \emph{तार्किकरीत्या
+  निष्पन्न होते}, म्हणजे $\Gamma \Entails !A$,
+  असे तेव्हा आणि केवळ तेव्हाच म्हणतो जेव्हा
+  प्रत्येक प्रतिमान~$\mModel{M}$ आणि
+  $\mSat{M}{\Gamma}[w]$ असलेल्या प्रत्येक~$w$
+  साठी $\mSat{M}{!A}[w]$ असते.
+\end{defn}
+
+\begin{prop}\ollabel{prop:sat-entails}
+  \begin{enumerate}
+  \item\ollabel{prop:sat-entails1}
+    $\mSat{M}{\Gamma}[w]$ आणि
+    $\Gamma \Entails !A$ असेल, तर
+    $\mSat{M}{!A}[w]$.
+  \item\ollabel{prop:sat-entails2}
+    $\mSat{M}{\Gamma}$ आणि $\Gamma
+    \Entails !A$ असेल, तर $\mSat{M}{!A}$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\mSat{M}{\Gamma}[w]$ आणि
+    $\Gamma \Entails !A$ असे समजा.
+    निष्पन्नतेच्या व्याख्येवरून लगेच
+    $\mSat{M}{!A}[w]$ मिळते.
+  \item $\mSat{M}{\Gamma}$ असे समजा.
+    मग प्रत्येक $u \in W$ साठी
+    $\mSat{M}{\Gamma}[u]$; विशेषतः
+    $\mSat{M}{\Gamma}[w]$. त्यामुळे
+    \olref{prop:sat-entails1} नुसार
+    $\mSat{M}{!A}[w]$. ते जग स्वेच्छ असल्याने
+    निष्कर्ष प्रतिमानात सर्वत्र सत्य आहे.
+  \end{enumerate}
+\end{proof}
+
+
+\begin{defn}\ollabel{defn:restrict}
+  $\mModel{M}$ हे संबंधी प्रतिमान आणि $w \in W$
+  असे समजा. $w$ पासून प्राप्य जगांपुरते
+  $\mModel{M}$ चे \emph{मर्यादन}
+  $\mModel{M}_w=\tuple{W_w, R_w, V_w}$
+  पुढीलप्रमाणे मिळते:
+  \begin{align*}
+    W_w & = \Setabs{u \in W}{Rwu},\\
+    R_w  & = R \cap (W_w)^2, \text{ आणि}\\
+    V_w(p) & = V(p) \cap W_w.
+  \end{align*}
+\end{defn}
+
+\begin{prop}\ollabel{prop:restrict}
+  $\mSat{M}{!A}[w]$ तेव्हा आणि केवळ तेव्हाच
+  $\mSat{M_w}{!A}$.
+\end{prop}
+
+\begin{prob}
+  \olref[int][sem][sem]{prop:restrict} सिद्ध करा.
+\end{prob}
+
+\begin{prop}
+  $\mSat{M}{\Gamma}$ असलेल्या प्रत्येक
+  प्रतिमान~$\mModel{M}$ मध्ये
+  $\mSat{M}{!A}$ असेल, तर
+  $\Gamma \Entails !A$.
+\end{prop}
+
+\begin{proof}
+  $\mSat{M}{\Gamma}[w]$ असे समजा.
+  प्रत्येक~$!B \in \Gamma$ ला
+  \olref{prop:restrict} लावल्यास
+  $\mSat{M_w}{\Gamma}$ मिळते. गृहीतकावरून
+  $\mSat{M_w}{!A}$ मिळते.
+  पुन्हा \olref{prop:restrict} लावल्यास
+  $\mSat{M}{!A}[w]$ मिळते.
+\end{proof}
+
+\end{document}

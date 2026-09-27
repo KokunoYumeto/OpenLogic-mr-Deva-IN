@@ -1116,6 +1116,10 @@ _DOCUMENTED_PROJECTIONS = {
         (r'BHK अर्थनिर्धारणानुसार $!A_1 \land !A_2$ ची',
          r'BHK अर्थनिर्धारणानुसार $!A_1 \land !A_1$ ची'),
     ],
+    'OLP-0501': [
+        # Localize the ordinary-language conjunction inside the aligned display.
+        (r'\text{ आणि}', r'\text{ and}'),
+    ],
 }
 
 
