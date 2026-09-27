@@ -646,6 +646,10 @@ _DOCUMENTED_PROJECTIONS = {
         # Localize the two ordinary-language conjunctions inside math text.
         (r'\text{ आणि}', r'\text{ and}'),
     ],
+    'OLP-0360': [
+        # OLINC-083: the scope is the body occurrence M, not enclosing N.
+        (r'त्यातील~$M$', r'त्यातील~$N$'),
+    ],
 }
 
 
