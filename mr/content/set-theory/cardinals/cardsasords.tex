@@ -1,0 +1,77 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{cardinals}{cardsasords}
+\olsection{क्रमसूचक संख्या म्हणून संचांक}
+
+प्रत्यक्षात, संचांकांची आपली उपपत्ती क्रमसूचक संख्यांच्या उपपत्तीचाच (बिनदिक्कत) आधार घेईल. म्हणजे काही विशिष्ट क्रमसूचक संख्यांनाच आपण संचांक म्हणून परिभाषित करू. नेमकी व्याख्या अशी:
+
+\begin{defn}\ollabel{defcardinalasordinal}
+$A$ ला सुक्रमित करता येत असेल, तर $\cardeq{A}{\gamma}$ असेल अशी लघुतम क्रमसूचक संख्या $\gamma$ म्हणजे $\card{A}$. कोणत्याही क्रमसूचक संख्या $\gamma$ साठी, $\gamma$ ला $\gamma = \card{\gamma}$ असेल तेव्हा आणि तेव्हाच \emph{संचांक} म्हणू.
+\end{defn}
+
+आत्ताच आपण “$A$ ला सुक्रमित करता येते” असा शब्दप्रयोग केला. गणितात बहुतेक वेळा घडते तसे, येथे शक्यतादर्शक भाषा हा अस्तित्वाच्या दाव्याचा अनौपचारिक पर्याय आहे: “$A$ ला सुक्रमित करता येते” याचा अर्थ फक्त “$A$ ला सुक्रमित करणारा संबंध अस्तित्वात आहे” असा आहे.
+
+पण \olref{defcardinalasordinal} मध्ये एक अडचण आहे. \emph{प्रत्येक} संचाला आकारमान असावे, म्हणजे प्रत्येक~$A$ साठी $\card{A}$ अस्तित्वात असावा, अशी आपली इच्छा आहे. मात्र नुकतीच दिलेली व्याख्या अटीने सुरू होते: “$A$ ला सुक्रमित करता येत \emph{असेल}, तर\ldots”. एखादा संच $A$ सुक्रमित करता येत नसेल, तर ही व्याख्या $\card{A}$ ही वस्तू निश्चितच करणार नाही.
+
+म्हणून \olref{defcardinalasordinal} वापरायची असेल, तर प्रत्येक संच सुक्रमित करता येतो याची खात्री हवी. दुर्दैवाने, ही खात्री~$\ZF$ मध्ये उपलब्ध नाही. त्यामुळे \olref{defcardinalasordinal} वापरायची असल्यास पुढीलसारखे नवे स्वयंसिद्धक जोडावे लागेल:
+\begin{axiom}[सुक्रमण]
+प्रत्येक संच सुक्रमित करता येतो.
+\end{axiom}
+सुक्रमणाचे स्वयंसिद्धक स्वीकारण्याजोगे आहे का, याची चर्चा \olref[choice][]{chap} मध्ये करू. पण आतापासून आपण ते गृहीत धरू. ते वापरल्यावर \olref{defcardinalasordinal} प्रमाणे परिभाषित केलेले संचांक अस्तित्वात असतात आणि अपेक्षित गुणधर्म दाखवतात, हे सहज सिद्ध होते:
+
+\begin{lem}\ollabel{lem:CardinalsExist}
+प्रत्येक संच $A$ साठी:
+\begin{enumerate}
+  \item\ollabel{cardaexists} $\card{A}$ अस्तित्वात असतो आणि एकमेव असतो;
+  \item\ollabel{cardaapprox} $\cardeq{\card{A}}{A}$;
+  \item\ollabel{cardaidem} $\card{A}$ हा संचांक असतो, म्हणजे
+  $\card{A} = \card{\card{A}}$;
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+$A$ निश्चित करा. सुक्रमणाच्या स्वयंसिद्धकानुसार $\tuple{A, R}$ हे सुक्रमण आहे. \olref[ordinals][ordtype]{thmOrdinalRepresentation} नुसार $\tuple{A,
+R}$ हे एकमेव क्रमसूचक संख्या $\beta$ शी क्रम-समरूपी आहे. म्हणून $\cardeq{A}{\beta}$. अनंतपार विगमनानुसार $\cardeq{A}{\gamma}$ असेल अशी एकमेव लघुतम क्रमसूचक संख्या $\gamma$ आहे. म्हणून $\card{A}
+= \gamma$; यावरून \olref{cardaexists} आणि \olref{cardaapprox} सिद्ध होतात.
+\olref{cardaidem} साठी लक्षात घ्या की $\delta \in \gamma$ असेल, तर $\gamma$ लघुतम निवडल्यामुळे
+$\cardless{\delta}{A}$; आणि तुल्यबलता हा समतुल्य संबंध असल्याने (\olref[sfr][siz][equ]{equinumerosityisequi}) $\cardless{\delta}{\gamma}$ सुद्धा. म्हणून $\gamma =
+\card{\gamma}$.
+%So, for reductio, suppose that there is some ordinal $\delta \in \gamma$ such that $\cardeq{\gamma}{\delta}$. Then, $\cardeq{\cardeq{A}{\gamma}}{\delta}$ so that $\cardeq{A}{\delta}$ by \olref[sfr][set][equ]{equinumerosityisequi}, which contradicts the choice of $\gamma$ as the least ordinal such that $\cardeq{A}{\gamma}$.
+\end{proof}
+
+पुढील निष्कर्ष कँटरच्या तत्त्वाची, आणि त्याहून अधिक गोष्टींची, खात्री देतो. (संचांकांना त्यांचा क्रम क्रमसूचक संख्यांकडूनच मिळतो; म्हणजे $\cardfont{a} < \cardfont{b}$ तेव्हा आणि तेव्हाच जेव्हा $\cardfont{a} \in \cardfont{b}$. संचांक असल्याचे माहीत असलेल्या वस्तूंसाठी आपण फ्राक्तूर अक्षरे वापरू. ही पद्धत बरीच रूढ आहे. दुसरी रूढ पद्धत म्हणजे संचांक क्रमसूचक संख्याच असल्यामुळे त्यांसाठी ग्रीक अक्षरे वापरणे, पण वर्णमालेच्या मधल्या भागातील अक्षरे निवडणे; उदा. $\kappa, \lambda$.):
+\begin{lem}\ollabel{lem:CardinalsBehaveRight}
+कोणत्याही संच $A$ आणि $B$ साठी:
+\begin{align*}
+  \cardeq{A}{B} &\text{ iff } \card{A} = \card{B}\\
+  \cardle{A}{B} &\text{ iff } \card{A} \leq \card{B}\\
+  \cardless{A}{B}&\text{ iff } \card{A} < \card{B}
+\end{align*}
+\end{lem}
+
+\begin{proof}
+दुसऱ्या विधानातील डावीकडून उजवीकडे जाणारी दिशा सिद्ध करू (इतर प्रकरणे सारखीच आहेत आणि सरावासाठी सोडली आहेत). पुढील आकृती पाहा:
+\begin{center}
+  \begin{tikzpicture}
+  \node (nodea) {$A$};
+  \node[right = 6em of nodea] (nodeb) {$B$};
+  \node[below = 2em of nodea] (nodecarda) {$\card{A}$};
+  \node[below = 2em of nodeb] (nodecardb) {$\card{B}$};
+  \draw[->] (nodea)--(nodeb);
+  \draw[<->] (nodea)--(nodecarda);
+  \draw[<->] (nodeb)--(nodecardb);
+  \draw[->, dashed] (nodecarda)--(nodecardb);
+\end{tikzpicture}
+\end{center}
+दुतोंडी बाण !!{bijection}s दाखवतात; त्यांचे अस्तित्व \olref{lem:CardinalsExist} मुळे मिळते. $\cardle{A}{B}$ गृहीत धरल्यावर $A\to B$ हे !!a{injection} असते. आता $\card{A}$ पासून $A$, तेथून $B$, आणि तेथून $\card{B}$ असा बाणांचा पाठपुरावा केल्यास $\card{A} \to \card{B}$ हे !!a{injection} मिळते (आकृतीतील तुटक बाण).
+\end{proof}\noindent \olref{lem:CardinalsBehaveRight} वापरून श्रेडर--बर्नस्टाइन प्रमेय पुन्हा सिद्ध करता येते. त्याचे विधान असे: $\cardle{A}{B}$ आणि $\cardle{B}{A}$ असतील, तर $\cardeq{A}{B}$. हे विधान आपण \olref[sfr][siz][sb]{thm:schroder-bernstein} म्हणून मांडले; पण आधी \olref[sfr][infinite][card-sb]{sec} मध्ये ते सिद्ध करण्यासाठी बरीच मेहनत घेतली. आता पाहा:
+
+\begin{proof}[श्रेडर--बर्नस्टाइनची नवी सिद्धता]
+$\cardle{A}{B}$ आणि $\cardle{B}{A}$ असतील, तर \olref{lem:CardinalsBehaveRight} नुसार $\card{A} \leq \card{B}$ आणि $\card{B} \leq \card{A}$. म्हणून त्रिपर्याय आणि \olref{lem:CardinalsBehaveRight} नुसार $\card{A} = \card{B}$ आणि $\cardeq{A}{B}$.
+\end{proof}
+\noindent
+ही सिद्धता फार सोपी असली, तरी तिच्यामागे प्रतिस्थापन (\olref[ordinals][ordtype]{thmOrdinalRepresentation} मिळवण्यासाठी) आणि सुक्रमण (\olref{lem:CardinalsBehaveRight} निश्चित करण्यासाठी) ही दोन्ही गृहीतके अप्रत्यक्षपणे आहेत. याउलट, \olref[sfr][infinite][card-sb]{sec} मधील सिद्धता अधिक स्वयंपूर्ण होती (खरे तर ती~$\Zminus$ मध्येही करता येते).
+
+\end{document}
