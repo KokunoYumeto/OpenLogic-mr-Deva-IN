@@ -1,0 +1,51 @@
+% Part: applied-modal-logics
+% Chapter: temporal-logic
+% Section: extra-operators
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{tl}{ext}
+
+\olsection{कालिक तर्कशास्त्रासाठी अतिरिक्त संकारक}
+
+भूतकाळ व भविष्यकाळासाठीच्या एकस्थानी संकारकांखेरीज,
+कालिक तर्कशास्त्रात कधीकधी ``पासून'' आणि ``पर्यंत''
+दर्शवणारे द्विस्थानी संकारक $\Since $ आणि~$\Until$
+यांचाही समावेश असतो. म्हणजे कालिक तर्कशास्त्राच्या
+भाषेत $\Since $ आणि~$\Until$ जोडून, कालिक
+!!{formula} च्या व्याख्येत पुढील नियम जोडायचा:
+
+\begin{itemize}
+\item[] $!A$ आणि $!B$ ही !!{formula}s असतील, तर
+  $(\Since  !A !B)$ आणि $(\Until !A !B)$ ही दोन्ही
+  !!{formula}s आहेत.
+\end{itemize}
+
+या संकारकांचे अर्थनिर्धारण पुढीलप्रमाणे केले जाते:
+
+\begin{defn}\ollabel{defn:since-until}
+  प्रतिमान~$\mModel M$ मध्ये~$t$ येथे !!a{formula}~$!A$
+  ची \emph{सत्यता}:
+  \begin{enumerate}
+  \item\ollabel{defn:sub:mmodels-since} \indcase{!A}{\Since  !B
+    !C}{$\mSat{M}{\indfrm}[t]$ जर आणि फक्त जर असा एखादा $t' \in
+    T$ असेल की $t' \prec t$ आणि $\mSat{M}{!B}[t']$; तसेच
+    $t' \prec s \prec t$ असलेल्या प्रत्येक $s$ साठी
+    $\mSat{M}{!C}[s]$}
+   \item\ollabel{defn:sub:mmodels-until} \indcase{!A}{\Until !B
+    !C}{$\mSat{M}{\indfrm}[t]$ जर आणि फक्त जर असा एखादा $t' \in
+    T$ असेल की $t \prec t'$ आणि $\mSat{M}{!B}[t']$; तसेच
+    $t \prec s \prec t'$ असलेल्या प्रत्येक $s$ साठी
+    $\mSat{M}{!C}[s]$}
+  \end{enumerate}
+\end{defn}
+
+$\Since  !B !C$ चा सहज अर्थ असा: ``ज्या
+वेळेपासून~$!B$ सत्य होते, त्या वेळेपासून~$!C$
+सत्य राहिले आहे.'' आणि $\Until !B !C$ चा सहज
+अर्थ: ``ज्या वेळेपर्यंत~$!B$ सत्य होईल, त्या
+वेळेपर्यंत~$!C$ सत्य राहील.''
+
+\end{document}
