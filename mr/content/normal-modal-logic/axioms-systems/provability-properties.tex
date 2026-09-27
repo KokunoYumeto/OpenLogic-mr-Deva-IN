@@ -1,0 +1,54 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: provability-properties
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{prp}
+
+\olsection{\usetoken{S}{derivability} चे गुणधर्म}
+
+\begin{prop}\ollabel{prop:derivabilityfacts}
+  $\Sigma$ ही मोडल प्रणाली आणि $\Gamma$ हा मोडल
+  !!{formula}s चा संच असू द्या. पुढील गुणधर्म लागू होतात:
+  \begin{enumerate}
+  \item\ollabel{prop:derivabilityfacts-monotonicity} \emph{एकस्वनिकता}:
+    $\Gamma \Proves[\Sigma] !A$ आणि
+    $\Gamma \subseteq \Delta$ असेल, तर
+    $\Delta \Proves[\Sigma] !A$;
+  \item\ollabel{prop:derivabilityfacts-reflexivity}
+    \emph{परावर्तिता}: $!A \in \Gamma$ असेल, तर $\Gamma
+    \Proves[\Sigma] !A$;
+  \item\ollabel{prop:derivabilityfacts-cut} \emph{कट}: $\Gamma
+    \Proves[\Sigma] !A$ आणि $\Delta \cup \{!A\} \Proves[\Sigma] !B$
+    असेल, तर $\Gamma \cup \Delta \Proves[\Sigma] !B$;
+  \item\ollabel{prop:derivabilityfacts-deduction} \emph{निगमन प्रमेय}: $\Gamma \cup \{!B\}
+    \Proves[\Sigma] !A$ असेल तेव्हा आणि तेव्हाच $\Gamma \Proves[\Sigma] !B \lif
+      !A$;
+  \item \ollabel{prop:derivabilityfacts-ruleT} \emph{नियम T}: जर
+    $\Gamma \Proves[\Sigma] !A_1$ आणि \dots आणि $\Gamma
+    \Proves[\Sigma] !A_n$ असेल आणि $!A_1 \to (!A_2 \lif \cdots (!A_n \lif
+    !B)\cdots)$ हा सर्वतः-सत्य दृष्टांत असेल, तर $\Gamma
+    \Proves[\Sigma] !B$.
+  \end{enumerate}
+\end{prop}
+
+सिद्धता हा सोपा सराव आहे.
+\olref{prop:derivabilityfacts} मधील
+\olref{prop:derivabilityfacts-ruleT} या भागावरून,
+उदाहरणार्थ, $\Gamma \Proves[\Sigma] !A \lor !B$
+आणि $\Gamma \Proves[\Sigma] \lnot !A$ असेल, तर
+$\Gamma \Proves[\Sigma] !B$ मिळते.
+तसेच पुढे $\Gamma \cup \{ !A\} \Proves[\Sigma] !B$
+ऐवजी $\Gamma, !A \Proves[\Sigma] !B$ असे लिहू.
+
+\begin{defn}
+  $\Gamma \Proves[\Sigma] !A$ असेल तेव्हा नेहमी
+  $!A \in \Gamma$ असेल, तर आणि तेव्हाच संच
+  $\Gamma$ हा प्रणाली~$\Sigma$ च्या सापेक्ष
+  \emph{निगामीदृष्ट्या बंद} आहे, असे म्हणतो.
+\end{defn}
+
+\end{document}
