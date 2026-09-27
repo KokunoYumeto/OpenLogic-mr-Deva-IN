@@ -668,6 +668,30 @@ _DOCUMENTED_PROJECTIONS = {
          r'((\FV{P} \setminus \{y\}) \cup (\FV{N} \setminus \{x\})'),
         (r'&& y \notin \FV{N}', r'&& x \notin \FV{N}'),
     ],
+    'OLP-0362': [
+        # OLINC-091: the first definition needs the same distinct-binder
+        # condition as its two explicitly equivalent reformulations.
+        (r'$x \neq y$, $y \notin \FV{N}$ असेल आणि' + '\n' +
+         r'  $\Subst{N}{y}{x}$',
+         r'$y \notin \FV{N}$ असेल आणि' + '\n' +
+         r'  $\Subst{N}{y}{x}$'),
+        # OLINC-093: use the FV macro consistently in formulae.
+        (r'$x \in \FV{N}$ असेल, तर:', r'$x \in FV(N)$ असेल, तर:'),
+        (r'$x \notin \FV{N}$ असेल, तर:', r'$x \notin FV(N)$ असेल, तर:'),
+        (r'& = \FV{\Subst{N}{y}{x}} \setminus \{y\}',
+         r'& = FV{\Subst{N}{y}{x}} \setminus \{y\}'),
+        (r"$z \notin \FV{N'}$", r"$z \notin FV(N')$"),
+        (r'$z \notin \FV{R}$', r'$z \notin FV(R)$'),
+        # OLINC-094: after x is replaced by y, thm:clr clears x.
+        (r'$x \notin' + '\n' + r'    \FV{\Subst{N}{y}{x}}$',
+         r'$y \notin' + '\n' + r'    \FV{\Subst{N}{y}{x}}$'),
+        # OLINC-095: the cited results yield alpha-equivalence, not identity.
+        (r'&\aeq', r'&='),
+        # OLINC-096: the second corollary pair needs both premises.
+        (r"$R'' \aeq R$ अशी", r"$R''$ अशी"),
+        (r"आणि $\Subst{M''}{R''}{y}$ परिभाषित",
+         r"आणि $\Subst{M'}{R'}{y}$ परिभाषित"),
+    ],
 }
 
 

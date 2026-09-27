@@ -1,0 +1,301 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: alpha
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{alp}
+\olsection{$\alpha$-परिवर्तन}
+
+$\lambd[x][x]$ आणि $\lambd[y][y]$ यांचा संबंध काय?
+ही दोन्ही पदे ओळख फलन दर्शवतात. अर्थात, विन्यासाच्या
+दृष्टीने ती भिन्न पदे आहेत. त्यांच्यात फक्त बद्ध चराच्या
+नावाचा फरक आहे; एकातील बद्ध चराचे ``नामांतर'' केल्यावर
+दुसरे पद मिळते. याला \emph{$\alpha$-परिवर्तन} म्हणतात.
+
+\begin{defn}[बद्ध चराचे नामांतर, $\aconvone$]
+  पद $M$ मध्ये $\lambd[x][N]$ ची आस्थिती असेल,
+  $x \neq y$, $y \notin \FV{N}$ असेल आणि
+  $\Subst{N}{y}{x}$ परिभाषित असेल, तर ती आस्थिती
+  \begin{equation*}
+    \lambd[y][\Subst{N}{y}{x}]
+  \end{equation*}
+  ने बदलून मिळणाऱ्या $M'$ ला \emph{बद्ध चराचे नामांतर}
+  म्हणतात आणि $M \redone[\alpha] M'$ असे लिहितात.
+\end{defn}
+
+\begin{defn}[संबंधाची रचनांशी सुसंगती]
+  पदांवरील संबंध $R$ पुढील अटी पूर्ण करत असेल, तर तो
+  \emph{रचनांशी सुसंगत} म्हणतात:
+  \begin{enumerate}
+  \item $R N N'$ असेल, तर $R \lambd[x][N] \lambd[x][N']$.
+  \item $R P P'$ असेल, तर $R (PQ) (P'Q)$.
+  \item $R Q Q'$ असेल, तर $R (PQ) (PQ')$.
+  \end{enumerate}
+\end{defn}
+
+आता ही व्याख्या दुसऱ्या रीतीने मांडू:
+\begin{defn}[बद्ध चराचे नामांतर, $\aconvone$]
+  \emph{बद्ध चराचे नामांतर} ($\redone[\alpha]$) हा पदांवरील
+  सर्वांत लहान रचनांशी सुसंगत संबंध आहे जो पुढील अट पूर्ण करतो:
+  \begin{align*}
+    &\lambd[x][N] \redone[\alpha] \lambd[y][\Subst{N}{y}{x}] && \text{जर
+      $x \neq y$, $y \notin \FV{N}$} \\
+    & &&\text{आणि $\Subst{N}{y}{x}$ परिभाषित असेल}
+  \end{align*}
+\end{defn}
+
+येथे ``सर्वांत लहान'' म्हणजे सुसंगती आणि अतिरिक्त अट
+यांमुळे आवश्यक ठरणाऱ्या जोड्याच या संबंधात असतात;
+इतर कोणत्याही नसतात. म्हणून हा संबंध पुढीलप्रमाणेही
+परिभाषित करता येतो:
+
+\begin{defn}[बद्ध चराचे नामांतर, $\aconvone$] \ollabel{defn:aconvone}
+  \emph{बद्ध चराचे नामांतर} ($\aconvone$) आगमनाने
+  पुढीलप्रमाणे परिभाषित करतात:
+  \begin{enumerate}
+  \item $N \aconvone N'$ असेल, तर $\lambd[x][N] \aconvone
+    \lambd[x][N']$. \ollabel{defn:aconvone1}
+  \item $P \aconvone P'$ असेल, तर $(PQ) \aconvone (P'Q)$. \ollabel{defn:aconvone2}
+  \item $Q \aconvone Q'$ असेल, तर $(PQ) \aconvone (PQ')$. \ollabel{defn:aconvone3}
+  \item $x \neq y$, $y \notin \FV{N}$ आणि $\Subst{N}{y}{x}$
+    परिभाषित असेल, तर
+    $\lambd[x][N] \redone[\alpha] \lambd[y][\Subst{N}{y}{x}]$.
+    \ollabel{defn:aconvone4}
+  \end{enumerate}
+\end{defn}
+
+या व्याख्या सममूल्य आहेत; त्यांची सिद्धता सरावासाठी ठेवतो.
+यापुढे आपण आगमनाधारित व्याख्या वापरू.
+
+\begin{defn}[$\alpha$-परिवर्तन, $\aconv$]
+  \emph{$\alpha$-परिवर्तन} ($\aconv$) हा पदांवरील
+  $\aconvone$ समाविष्ट करणारा सर्वांत लहान परावर्ती
+  आणि संक्रमक संबंध आहे.
+\end{defn}
+
+वरच्याप्रमाणे, ``सर्वांत लहान'' म्हणजे संक्रमणशीलता आणि
+$\aconvone$ यांमुळे आवश्यक ठरणाऱ्या जोड्याच या संबंधात
+असतात. यावरून पुढील सममूल्य व्याख्या मिळते:
+
+\begin{defn}[$\alpha$-परिवर्तन, $\aconv$] \ollabel{defn:aconv}
+  \emph{$\alpha$-परिवर्तन} ($\aconv$) आगमनाने
+  पुढीलप्रमाणे परिभाषित करतात:
+  \begin{enumerate}
+  \item $P \aconv Q$ आणि $Q \aconv R$ असतील, तर $P \aconv R$.
+    \ollabel{defn:aconv1}
+  \item $P \aconvone Q$ असेल, तर $P \aconv Q$. \ollabel{defn:aconv2}
+  \item $P \aconv P$. \ollabel{defn:aconv3}
+  \end{enumerate}
+\end{defn}
+
+\begin{ex}
+  $\lambd[x][f x]$ चे $\alpha$-परिवर्तन करून
+  $\lambd[y][f
+  y]$ मिळते; उलट दिशेनेही परिवर्तन करता येते.
+  अनौपचारिकपणे, ही दोन्ही पदे युक्तिवाद स्वीकारून
+  त्यावर $f$ लावल्याचा परिणाम देणारी फलने आहेत;
+  त्यांतील~$f$ हा परिसरातील चराचा संदर्भ आहे.
+
+  $\lambd[x][f x]$ चे $\alpha$-परिवर्तन करून
+  $\lambd[x][g
+    x]$ मिळत नाही. ही पदे अनुक्रमे परिसरातील
+  $f$ आणि~$g$ यांचा संदर्भ घेतात आणि म्हणून भिन्न
+  फलने दर्शवतात: $f$ आणि $g$ भिन्न असलेल्या परिसरांत
+  त्यांचे वर्तन भिन्न असते.
+\end{ex}
+
+\begin{prob}
+  पुढील पदजोड्या $\alpha$-परिवर्तनीय आहेत का?
+  \begin{enumerate}
+  \item $\lambd[x][\lambd[y][x]]$ आणि $\lambd[y][\lambd[x][y]]$
+  \item $\lambd[x][\lambd[y][x]]$ आणि $\lambd[c][\lambd[b][a]]$
+  \item $\lambd[x][\lambd[y][x]]$ आणि $\lambd[c][\lambd[b][a]]$
+  \end{enumerate}
+\end{prob}
+
+\begin{lem}\ollabel{lem:fv-one}
+  $P \aconvone Q$ असेल, तर $\FV{P} = \FV{Q}$.
+\end{lem}
+
+\begin{proof}
+  $P \aconvone Q$ च्या !!{derivation} वर विगमन करू.
+  \begin{enumerate}
+  \item शेवटचा नियम \olref{defn:aconvone4} असेल, तर $P$
+    हे $\lambd[x][N]$ या रूपाचे आणि $Q$ हे
+    $\lambd[y][\Subst{N}{y}{x}]$ या रूपाचे असते;
+    येथे $x \neq y$, $y \notin \FV{N}$ आणि
+    $\Subst{N}{y}{x}$ परिभाषित असते. $x \in \FV{N}$
+    आहे की नाही यानुसार प्रकरणे वेगळी करू:
+    \begin{enumerate}
+    \item $x \in \FV{N}$ असेल, तर:
+      \begin{align*}
+        \FV{\lambd[y][\Subst{N}{y}{x}]} &=
+        \FV{\Subst{N}{y}{x}} \setminus \{y\} \\
+        & = ((\FV{N} \setminus \{x\}) \cup \{y\}) \setminus \{y\}
+         && \text{\olref[sub]{thm:infv} नुसार} \\
+        & = \FV{N} \setminus \{x\} \\
+        & = \FV{\lambd[x][N]}
+      \end{align*}
+    \item $x \notin \FV{N}$ असेल, तर:
+      \begin{align*}
+        \FV{\lambd[y][\Subst{N}{y}{x}]}
+        & = \FV{\Subst{N}{y}{x}} \setminus \{y\} \\
+        & = \FV{N} \setminus \{x\}
+         && \text{\olref[sub]{thm:notinfv} नुसार} \\
+        & = \FV{\lambd[x][N]}.
+      \end{align*}
+    \end{enumerate}
+  \item उरलेली तीन प्रकरणे सरावासाठी आहेत.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][alp]{lem:fv-one} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{lem}\ollabel{lem:inv}
+  $P \aconvone Q$ असेल, तर $Q \aconvone P$.
+\end{lem}
+
+\begin{proof}
+  $P \aconvone Q$ च्या !!{derivation} वर विगमन करू.
+  \begin{enumerate}
+  \item शेवटचा नियम \olref{defn:aconvone4} असेल, तर $P$
+    हे $\lambd[x][N]$ या रूपाचे आणि $Q$ हे
+    $\lambd[y][\Subst{N}{y}{x}]$ या रूपाचे असते;
+    येथे $x \neq y$, $y \notin \FV{N}$ आणि
+    $\Subst{N}{y}{x}$ परिभाषित असते. प्रथम,
+    \olref[sub]{thm:clr} नुसार $x \notin
+    \FV{\Subst{N}{y}{x}}$ आहे. \olref[sub]{thm:inv}
+    नुसार $\Subst{\Subst{N}{y}{x}}{x}{y}$ केवळ
+    परिभाषितच नाही, तर~$N$ च्या बरोबरही आहे. म्हणून
+    \olref{defn:aconvone4} नुसार
+    $\lambd[y][\Subst{N}{y}{x}]
+    \aconvone \lambd[x][\Subst{\Subst{N}{y}{x}}{x}{y}] =
+    \lambd[x][N]$.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][alp]{lem:inv} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{thm}
+  $\alpha$-परिवर्तन हा पदांवरील तुल्यता संबंध आहे;
+  म्हणजे तो परावर्ती, सममित आणि संक्रमक आहे.
+\end{thm}
+
+\begin{proof}
+  \begin{enumerate}
+  \item प्रत्येक पद $M$ साठी, बद्ध चरांच्या \emph{शून्य}
+    नामांतरांनी $M$ चे $M$ मध्ये परिवर्तन होते.
+  \item $P$ चे बद्ध चरांच्या काही नामांतरांनी $Q$ मध्ये
+    $\alpha$-परिवर्तन होत असेल, तर \olref{lem:inv}
+    वापरून ती नामांतरे उलट क्रमाने उलटवता येतात आणि
+    $Q$ पासून~$P$ मिळते.
+  \item $P$ चे बद्ध चरांच्या एका क्रमाने $Q$ मध्ये आणि
+    $Q$ चे दुसऱ्या क्रमाने $R$ मध्ये $\alpha$-परिवर्तन
+    होत असेल, तर दोन्ही क्रम सलग लावून $P$ पासून
+    $R$ मिळते.
+  \end{enumerate}
+\end{proof}
+
+यापुढे $M$ आणि $N$ ही पदे \emph{$\alpha$-सममूल्य},
+$M \aeq N$, आहेत असे म्हणू, जर $M$ चे $N$ मध्ये
+$\alpha$-परिवर्तन होत असेल. आपण नुकतेच दाखवल्याप्रमाणे,
+हे घडते तेव्हाच आणि तेव्हाच $N$ चेही~$M$ मध्ये
+$\alpha$-परिवर्तन होते.
+
+\begin{thm}\ollabel{thm:fv}
+  $M \aeq N$ असेल, तर $\FV{M} = \FV{N}$.
+\end{thm}
+
+\begin{proof}
+  \olref{lem:fv-one} वरून लगेच मिळते.
+\end{proof}
+
+\begin{lem}\ollabel{lem:sub:R}
+  $R \aeq R'$ असेल आणि $\Subst{M}{R}{y}$ परिभाषित
+  असेल, तर $\Subst{M}{R'}{y}$ परिभाषित असते आणि
+  $\Subst{M}{R}{y}$ शी $\alpha$-सममूल्य असते.
+\end{lem}
+
+\begin{proof}
+  सरावासाठी.
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][alp]{lem:sub:R} सिद्ध करा.
+\end{prob}
+
+\olref[sub]{sec} मध्ये पाहिल्याप्रमाणे, काही प्रसंगी
+आदेशन अपरिभाषित असते. पण पदांवर $\alpha$-परिवर्तन
+वापरून बद्ध चरांची नावे बदलल्यास आदेशन नेहमी परिभाषित
+करता येते. परिणामी पदाची $\alpha$-सममूल्यता टिकते,
+हे पुढील प्रमेय दाखवते:
+
+\begin{thm}\ollabel{thm:sub}
+  कोणत्याही $M$, $R$ आणि~$y$ साठी असे $M'$ असते की
+  $M \aeq M'$ आणि $\Subst{M'}{R}{y}$ परिभाषित असते.
+  आणखी एखादी जोडी $M'' \aeq M$ आणि $R''$ अशी असेल
+  की $\Subst{M''}{R''}{y}$ परिभाषित आहे आणि $R'' \aeq R$,
+  तर $\Subst{M'}{R}{y} \aeq \Subst{M''}{R''}{y}$.
+\end{thm}
+
+\begin{proof}
+  $M$ च्या रचनेवर विगमन करू:
+  \begin{enumerate}
+  \item $M$ हे चर~$z$ आहे: सरावासाठी.
+  \item $M$ हे $\lambd[x][N]$ या रूपाचे आहे असे समजू.
+    $x$ आणि $y$ यांच्याहून भिन्न, तसेच $z \notin \FV{N}$
+    आणि $z
+    \notin \FV{R}$ अशी अट पूर्ण करणारा चर $z$ निवडा.
+    विगमन गृहीतकानुसार असे $N'$ आहे की $N' \aeq N$
+    आणि $\Subst{N'}{z}{x}$ परिभाषित आहे. मग
+    \olref{defn:aconvone}\olref{defn:aconvone1} नुसार
+    $\lambd[x][N] \aeq \lambd[x][N']$ देखील आहे.
+    आता \olref{defn:aconvone}\olref{defn:aconvone4} नुसार
+    $\lambd[x][N']
+    \aeq \lambd[z][\Subst{N'}{z}{x}]$.
+    हे शक्य आहे, कारण $z \ne x$, $z \notin \FV{N'}$
+    आणि $\Subst{N'}{z}{x}$ परिभाषित आहे. शेवटी,
+    $\Subst{\lambd[z][\Subst{N'}{z}{x}]}{R}{y}$
+    परिभाषित आहे, कारण $z \neq y$ आणि $z \notin \FV{R}$.
+
+    त्याच अटी पूर्ण करणारे दुसरे $N''$ आणि $R''$ असल्यास,
+    \begin{multline*}
+      \Subst{(\lambd[z][\Subst{N''}{z}{x}])}{R''}{y} =\\
+    \begin{aligned}
+      &= \lambd[z][\Subst{\Subst{N''}{z}{x}}{R''}{y}] \\
+      &\aeq \lambd[z][\Subst{\Subst{N''}{z}{x}}{R}{y}] && \text{\olref{lem:sub:R} नुसार}\\
+      &\aeq\lambd[z][\Subst{\Subst{N'}{z}{x}}{R}{y}]
+      && \text{विगमन गृहीतकानुसार}\\
+      &=\Subst{(\lambd[z][\Subst{N'}{z}{x}])}{R}{y}
+    \end{aligned}
+    \end{multline*}
+    \item $M$ हे $(PQ)$ या रूपाचे आहे: सरावासाठी.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][alp]{thm:sub} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{cor}\ollabel{cor:sub}
+  कोणत्याही $M$, $R$ आणि~$y$ साठी $M'$ आणि $R'$ ची
+  अशी जोडी असते की $M' \aeq M$, $R \aeq R'$
+  आणि $\Subst{M'}{R'}{y}$ परिभाषित असते. आणखी
+  $M'' \aeq M$ आणि $R'' \aeq R$ अशी जोडी असेल
+  आणि $\Subst{M''}{R''}{y}$ परिभाषित असेल, तर
+  $\Subst{M'}{R'}{y} \aeq
+  \Subst{M''}{R''}{y}$.
+\end{cor}
+
+\begin{proof}
+  \olref{thm:sub} वरून लगेच मिळते.
+\end{proof}
+
+\end{document}
