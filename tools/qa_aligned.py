@@ -1251,6 +1251,12 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\Setabs{y}{(\exists x \in A)\phi(x,y)}',
          r'\Setabs{y}{(\exists x \in A)\phi(x,y}'),
     ],
+    'OLP-0573': [
+        # OLINC-253: psi(N) is relativized to M in this display, so the
+        # transitivity conjunct must also carry the M superscript.
+        (r'((N\text{ संक्रमक आहे})^M \land (\theta^N)^M)',
+         r'((N\text{ संक्रमक आहे})^N \land (\theta^N)^M)'),
+    ],
 }
 
 
