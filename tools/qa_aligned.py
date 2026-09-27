@@ -740,6 +740,23 @@ _DOCUMENTED_PROJECTIONS = {
         # OLINC-114: the constant-function equation uses c_k.
         (r"$c_k(n) = k$", r"$c(n) = k$"),
     ],
+    'OLP-0375': [
+        # OLINC-117: the curried numeral needs two beta steps.
+        (r"$\num{n}fx \red f^nx$", r"$\num{n}fx \redone f^nx$"),
+        # OLINC-118: the displayed curried addition steps are
+        # multi-step reductions, including the alternate definition.
+        (r"(\lambd[{a}{b}][\lambd[fx][{a} f ({b} f x)]])\num n\,\num m & \red",
+         r"(\lambd[{a}{b}][\lambd[fx][{a} f ({b} f x)]])\num n\,\num m & \redone"),
+        (r"& \red \lambd[fx][\num{n}\, f (f^m x)]",
+         r"& \redone \lambd[fx][\num{n}\, f (f^m x)]"),
+        (r"& \red \lambd[fx][f^n (f^m x)]",
+         r"& \redone \lambd[fx][f^n (f^m x)]"),
+        (r"& \red \num{n}\, \fn{Succ}\, \num{m}.",
+         r"& \redone \num{n}\, \fn{Succ}\, \num{m}."),
+        # OLINC-116: multiplication must use both operands.
+        (r"\fn{Mult}' \ident \lambd[ab][b (\fn{Add}\, a) \num{0}].",
+         r"\fn{Mult}' \ident \lambd[ab][a (\fn{Add}\, a) \num{0}]."),
+    ],
 }
 
 

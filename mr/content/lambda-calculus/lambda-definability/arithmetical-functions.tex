@@ -1,0 +1,150 @@
+% Part: lambda-calculus
+% Chapter: lambda-definablity
+% Section: arithmetical-functions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{rep}{arf}
+\olsection{\usetoken{S}{lambda definable} अंकगणितीय फलने}
+
+\begin{prop}
+  \ollabel{prop:succ-ld}
+  उत्तरवर्ती फलन~$\Succ$ हे !!{lambda definable} आहे.
+\end{prop}
+
+\begin{proof}
+उत्तरवर्ती फलनाला !!{lambda define}s करणारे पद असे आहे:
+\begin{align*}
+  \fn{Succ} & \ident \lambd[a][\lambd[fx][f ({a} f x)]].
+  \intertext{आपल्या संकेतनरूढीनुसार याचा पूर्ण अर्थ असा:}
+  \fn{Succ} & \ident \lambd[a][\lambd[f][\lambd[x][(f (({a} f) x))]]].
+  \intertext{$\fn{Succ}$ हे~$a$ हा संख्यारूपी युक्तिवाद
+    स्वीकारणारे फलन आहे आणि त्याचे मूल्य दुसरे फलन,
+    $\lambd[fx][f ({a} f x)]$, आहे. ते फलन स्वतः चर्च अंक
+    नाही. मात्र $a$ हा युक्तिवाद चर्च अंक असेल, तर त्याचे
+    न्यूनीकरण चर्च अंकात होते. पाहा:}
+   (\lambd[a][\lambd[fx][f ({a} f x)]])\,\num{n} & \redone
+   \lambd[fx][f ({\num{n}} f x)].
+   \intertext{आतील पद $\num{n}fx$ मध्ये रेडेक्स आहे, कारण
+     $\num{n}$ हे $\lambd[fx][f^nx]$ आहे. म्हणून
+     $\num{n}fx \red f^nx$. त्यामुळे संपूर्ण पदासाठी}
+   \fn{Succ}\, \num n & \red \lambd[fx][f(f^n(x))],
+\end{align*}
+म्हणजे $\num{n+1}$.
+\end{proof}
+
+\begin{ex}
+  $\fn{Succ}$ हे~$\num{0}$, म्हणजे
+  $\lambd[fx][x]$, ला लागू केल्यावर काय होते ते पाहू.
+  पदे पूर्णपणे लिहू:
+  \begin{align*}
+    \fn{Succ}\, \num{0} & \ident (\lambd[a][\lambd[f][\lambd[x][(f (({a} f) x))]]])(\lambd[f][\lambd[x][x]])\\
+    & \redone \lambd[f][\lambd[x][(f (({(\lambd[f][\lambd[x][x]])} f) x))]] \\
+    & \redone \lambd[f][\lambd[x][(f ({(\lambd[x][x])} x))]] \\
+    & \redone \lambd[f][\lambd[x][(f x)]] \ident \num{1}\\
+  \end{align*}
+\end{ex}
+
+\begin{prob}
+  पुढील पद
+  \begin{align*}
+    \fn{Succ}' & \ident \lambd[{n}][\lambd[fx][{n} f (f x)]]
+  \end{align*}
+  उत्तरवर्ती फलनाला !!{lambda define}s करते. का ते स्पष्ट करा.
+\end{prob}
+
+\begin{prop}
+  \ollabel{prop:add-ld}
+  बेरीज फलन~$\Add$ हे !!{lambda definable} आहे.
+\end{prop}
+
+\begin{proof}
+बेरीज पुढील पदांनी !!{lambda define}d होते:
+\begin{align*}
+  \fn{Add} & \ident \lambd[{a}{b}][\lambd[fx][{a} f ({b} f x)]]
+\intertext{किंवा पर्यायाने,}
+  \fn{Add}' & \ident \lambd[{a}{b}][{a}\, \fn{Succ} \, {b}].
+\intertext{पहिले बेरीजपद असे कार्य करते: $\fn{Add}$ प्रथम
+  ${a}$ आणि ${b}$ या दोन संख्या स्वीकारते. त्यातून
+  $f$ आणि $x$ स्वीकारून $af(bfx)$ परत करणारे फलन
+  मिळते. $a$ आणि $b$ हे चर्च अंक $\num{n}$ आणि
+  $\num{m}$ असतील, तर त्याचे न्यूनीकरण $f^{n+m}(x)$
+  मध्ये होते; ते $f^{n}(f^{m}(x))$ सारखेच आहे.
+  टप्प्याटप्प्याने पाहू:}
+  (\lambd[{a}{b}][\lambd[fx][{a} f ({b} f x)]])\num n\,\num m & \red
+  \lambd[fx][\num{n}\, f (\num {m}\, f x)] \\
+  & \red \lambd[fx][\num{n}\, f (f^m x)] \\
+  & \red \lambd[fx][f^n (f^m x)] \ident \num {n+m}.
+\intertext{बेरीजचे दुसरे निरूपण $\fn{Add'}$ वेगळे कार्य
+  करते: ते चर्च अंक $\num{n}$ आणि $\num{m}$ यांना
+  लागू केल्यास,}
+\fn{Add}' \num n \,\num m
+& \red \num{n}\, \fn{Succ}\, \num{m}.
+\intertext{पण $\num{n} f x$ चे नेहमी $f^n(x)$ मध्ये
+  न्यूनीकरण होते. म्हणून,}
+  \num{n}\,  \fn{Succ}\, \num{m} & \red \fn{Succ}^n(\num{m}).
+\end{align*}
+$\fn{Succ}$ हे उत्तरवर्ती फलनाला !!{lambda define}s
+करते आणि~$m$ ला उत्तरवर्ती फलन $n$ वेळा लागू
+केल्यावर $n+m$ मिळते. म्हणून याचे पुढे
+$\num{n+m}$ मध्ये न्यूनीकरण होते.
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:mult-ld}
+  गुणाकार पुढील पदाने !!{lambda definable} आहे:
+  \[
+  \fn{Mult} \ident \lambd[ab][\lambd[fx][a (b f) x]]
+  \]
+\end{prop}
+
+\begin{proof}
+  हे कसे कार्य करते ते पाहण्यासाठी $\fn{Mult}$ ला
+  चर्च अंक $\num{n}$ आणि $\num{m}$ लागू करू.
+  $\fn{Mult} \, \num{n} \, \num{m}$ चे न्यूनीकरण
+  $\lambd[fx][\num{n}(\num{m}\, f)x]$ मध्ये होते.
+  पद $\num{m} f$ हे आपल्या युक्तिवादाला $f$ हे
+  $m$ वेळा लागू करणारे फलन परिभाषित करते.
+  परिणामी, $\num{n} (\num{m} f) x$ हे
+  ``$f$ हे $m$ वेळा लागू करा'' या फलनाला~$x$ वर
+  $n$ वेळा लागू करते. म्हणजे $f$ हे $x$ वर
+  $n\cdot m$ वेळा लागू होते. मिळणारे सामान्य पद
+  म्हणजे नेमका चर्च अंक $\num{nm}$.
+\end{proof}
+
+\begin{editorial}
+$\eta$-न्यूनीकरणाने हे पद आणखी सोपे करता येते:
+\[
+  \fn{Mult} \ident \lambd[ab][\lambd[f][a (b f)]].
+\]
+
+पण त्याआधी $\eta$-न्यूनीकरण स्पष्ट करावे लागेल.
+\end{editorial}
+
+\begin{prob}
+पुढील पदाने गुणाकार !!{lambda define}d होतो:
+\[
+  \fn{Mult}' \ident \lambd[ab][b (\fn{Add}\, a) \num{0}].
+\]
+हे का कार्य करते ते स्पष्ट करा.
+\end{prob}
+
+घातांक फलनाची $\lambd$-पद म्हणून व्याख्या
+आश्चर्यकारकपणे सोपी आहे:
+\[
+  \fn{Exp} \ident \lambd[be][e b].
+\]
+पहिला युक्तिवाद $b$ हा पाया आणि दुसरा~$e$ हा
+घातांक आहे. आपल्या संख्या-संकेतनानुसार $e f$
+हे सहजपणे $f^e$ आहे. हे समजणे कठीण वाटल्यास,
+वारंवार गुणाकारानेही घातांक फलन परिभाषित करता येते:
+\[
+  \fn{Exp}' \ident \lambd[be][e (\fn{Mult}\, b) \num{1}].
+\]
+
+चर्च अंकांवरील पूर्ववर्ती फलन आणि वजाबाकी वाटतात
+तितकी सोपी नाहीत: त्यांसाठी जोड्यांचे संकेतन आवश्यक आहे.
+
+\end{document}
