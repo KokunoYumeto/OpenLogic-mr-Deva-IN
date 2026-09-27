@@ -794,6 +794,14 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$\pSat/{v}{!B}[\Log L]$',
          r'$\pAssign v \Entails/[\Log L] !B$'),
     ],
+    'OLP-0394': [
+        # OLINC-132: the conjunction display gives both input orders.
+        (r'\tf{\land}(\Undef, \False) = \False.',
+         r'\tf{\land}(\False, \Undef) = \False.'),
+        # OLINC-133: remove the stray closing parenthesis.
+        (r'$(\lnot p \land p) \lif q$',
+         r'$(\lnot p \land p) \lif q)$'),
+    ],
 }
 
 

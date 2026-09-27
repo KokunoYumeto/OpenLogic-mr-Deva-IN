@@ -1,0 +1,253 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: lukasiewicz
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{thr}{luk}
+
+\olsection{\L ukasiewicz यांचे तर्कशास्त्र}
+
+बहुमूल्य तर्कशास्त्राचे प्रकाशित झालेले आणि सविस्तर मांडलेले
+सर्वांत आरंभीच्या प्रस्तावांपैकी एक पोलिश तत्त्वज्ञ Jan \L ukasiewicz
+यांनी 1921 मध्ये मांडला. अरिस्टॉटलच्या सागरी युद्धाच्या समस्येतून
+\L ukasiewicz यांना प्रेरणा मिळाली: \emph{आज} ``उद्या सागरी युद्ध
+होईल'' हे विधान सत्यही नाही आणि असत्यही नाही असे दिसते; त्याचे
+सत्यतामूल्य अजून निश्चित झालेले नाही. अशा ``भविष्यातील
+परिस्थितीवश'' विधानांसाठी \L ukasiewicz यांनी तिसरे सत्यतामूल्य
+आणण्याचा प्रस्ताव मांडला.
+\begin{quote}
+पुढील वर्षी एखाद्या ठराविक क्षणी, उदाहरणार्थ 21 डिसेंबरला दुपारी,
+मी वॉर्सामध्ये असेन, हे सध्या होकारार्थी किंवा नकारार्थी अशा
+कोणत्याही प्रकारे निश्चित झालेले नाही, असे मी विरोधाभासाशिवाय
+गृहीत धरू शकतो. म्हणून त्या वेळी मी वॉर्सामध्ये असेन हे संभाव्य
+आहे, पण अनिवार्य नाही. या गृहितकावर ``पुढील वर्षी 21 डिसेंबरला
+दुपारी मी वॉर्सामध्ये असेन'' हे विधान सध्या सत्यही नाही आणि
+असत्यही नाही. कारण ते आताच सत्य असेल, तर भविष्यात मी
+वॉर्सामध्ये असणे अनिवार्य ठरेल; हे गृहितकाशी विसंगत आहे.
+दुसरीकडे ते आताच असत्य असेल, तर भविष्यात मी वॉर्सामध्ये असणे
+अशक्य ठरेल; हेही गृहितकाशी विसंगत आहे. म्हणून विचाराधीन
+विधान या क्षणी सत्यही नाही आणि असत्यही नाही; त्याला ``0''
+म्हणजे असत्यता आणि ``1'' म्हणजे सत्यता यांपेक्षा वेगळे तिसरे
+मूल्य असले पाहिजे. या मूल्याला आपण ``$\frac{1}{2}$.'' असे
+दर्शवू शकतो. ते ``संभाव्य'' याचे प्रतिनिधित्व करते आणि
+``सत्य'' व ``असत्य'' यांच्याबरोबर तिसरे मूल्य म्हणून सामील होते.
+\end{quote}
+\L ukasiewicz यांच्या तिसऱ्या सत्यतामूल्यासाठी आपण $\Undef$
+वापरू.\footnote{\L ukasiewicz येथे ``संभाव्य'' हा शब्द आज रूढ
+नसलेल्या अर्थाने, म्हणजे संभाव्य पण अनिवार्य नाही, या अर्थाने
+वापरतात.}
+
+या अर्थानुसार $\lnot$, $\land$ आणि $\lor$ या संयोजकांची
+सत्यता-फलने ठरवणे सोपे आहे: भविष्यातील परिस्थितीवश विधानाचे
+निषेधनही भविष्यातील परिस्थितीवश विधान असते; म्हणून
+$\tf{\lnot}(\Undef) = \Undef$. संधीमधील एक घटक अनिर्धारित
+असेल आणि दुसरा सत्य असेल, तर ती संधीही अनिर्धारित असते.
+कारण परिस्थितीवश घटक पुढे कसा ठरतो त्यानुसार संधी सत्यही
+ठरू शकते आणि असत्यही ठरू शकते. म्हणून \[
+    \tf{\land}(\True, \Undef) =
+\tf{\land}(\Undef, \True) =
+\Undef.
+\]
+पण दुसरा घटक असत्य असेल, तर संधी सत्य ठरू शकत नाही;
+म्हणून \[\tf{\land}(\False, \Undef) =
+\tf{\land}(\Undef, \False) = \False.\]
+दोन्ही निविष्टे $\True$ किंवा $\False$ ही निश्चित सत्यतामूल्ये
+असतील, तर उरलेली फलनमूल्ये अभिजात तर्कशास्त्राप्रमाणेच असतात.
+
+सशर्त विधानाच्या बाबतीत परिस्थिती थोडी अधिक गुंतागुंतीची आहे.
+$q$ हे भविष्यातील परिस्थितीवश विधान आहे असे समजा. $p$ असत्य
+असेल, तर $q$ पुढे कसेही ठरले तरी $p \lif q$ सत्य असेल; म्हणून
+$\tf{\lif}(\False, \Undef) = \True$ असे ठेवावे. तसेच $p$
+सत्य असेल, तर $q$ पुढे कसेही ठरले तरी $q \lif p$ सत्य असेल;
+म्हणून $\tf{\lif}(\Undef, \True) = \True$. $p$ सत्य असेल,
+तर $p \lif q$ सत्य किंवा असत्य ठरू शकते; म्हणून
+$\tf{\lif}(\True, \Undef) = \Undef$. त्याचप्रमाणे $p$
+असत्य असेल, तर $q \lif p$ सत्य किंवा असत्य ठरू शकते;
+म्हणून $\tf{\lif}(\Undef, \False) = \Undef$. आता $p$
+आणि $q$ दोन्ही भविष्यातील परिस्थितीवश विधाने असण्याचे
+प्रकरण उरते. मूळ प्रेरणेनुसार या प्रकरणात खरे तर $\Undef$
+हेच मूल्य द्यायला हवे. मात्र तसे केल्यास $!A \lif !A$
+हे \emph{सर्वतः सत्य सूत्र राहणार नाही}. $!A \lor \lnot !A$
+आणि $\lnot(!A \land \lnot !A)$ यांचा त्याग करायला
+\L ukasiewicz यांना अडचण वाटली नाही; पण $!A \lif !A$
+चा त्याग करणे त्यांना मान्य नव्हते. म्हणून त्यांनी
+$\tf{\lif}(\Undef, \Undef) = \True$ असे ठरवले.
+
+\begin{defn}\ollabel{def:lukasiewicz}
+त्रिमूल्य \L ukasiewicz तर्कशास्त्र पुढील मॅट्रिक्सने परिभाषित होते:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+  \item $\True$ हेच एकमेव निर्दिष्ट मूल्य आहे, म्हणजे $V^+ = \{\True\}$.
+  \item सत्यता-फलने पुढील कोष्टकांनी दिली आहेत:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\
+      $\False$ & $\False$ & $\False$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\True$ & $\True$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\True$ & $\True$ & $\Undef$  \\
+      $\False$ & $\True$ & $\True$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+
+सहज लक्षात येते की केवळ $\lnot$, $\land$ आणि $\lor$
+असलेल्या कोणत्याही !!{formula}~$!A$ मधील सर्व
+!!{propositional variable}s ना $\Undef$ नेमले, तर त्या
+सूत्राचे सत्यतामूल्य~$\Undef$ असेल. म्हणून, उदाहरणार्थ,
+अभिजात तर्कशास्त्रातील $p \lor \lnot p$ आणि $\lnot(p
+\land \lnot p)$ ही सर्वतः सत्य सूत्रे $\LogLuk[3]$
+मध्ये सर्वतः सत्य नाहीत; कारण $\pAssign v(p) = \Undef$
+असताना $\pValue{v}(!A) = \Undef$.
+
+संबंधित प्रत्येक विधानीय चलासाठी $\pAssign v(p) = \True$ किंवा
+$\False$ असलेल्या !!{valuation}s मध्ये $\pValue v(!A)$
+हे त्या सूत्राच्या अभिजात सत्यतामूल्याशी जुळते.
+
+\begin{prop}
+  $!A$ मधील प्रत्येक $p$ साठी $\pAssign v(p) \in \{\True, \False\}$ असेल, तर
+  $\pValue v(!A)[\LogLuk[3]] = \pValue v(!A)[\LogCL]$.
+\end{prop}
+
+\begin{prob}\label{mvl:thr:luk:prob:luk-iff} असे समजा की आपण
+  $\pValue v(!A \liff !B) = \pValue v((!A \lif !B) \land (!B \lif
+  !A))$ अशी $\LogLuk[3]$ मध्ये व्याख्या करतो. मग $\liff$
+  चे सत्यताकोष्टक कसे असेल?
+\end{prob}
+
+अभिजात तर्कशास्त्रातील अनेक सर्वतः सत्य सूत्रे \LogLuk[3]
+मध्येही \emph{सर्वतः सत्य आहेत}; उदाहरणार्थ,
+$\lnot p \lif (p \lif q)$. अभिजात तर्कशास्त्राप्रमाणेच
+हे सत्यताकोष्टकाने पडताळता येते:
+\begin{center}
+\begin{tabular}{cc|cccccc}
+  $p$ & $q$ & $\lnot$ & $p$ & $\lif$ & $\smash{(}p$ & $\lif$ & $q\smash{)}$ \\ \hline
+  \True & \True & \False & \True & \True & \True & \True & \True \\
+  \True & \Undef & \False & \True & \True & \True & \Undef & \Undef \\
+  \True & \False & \False & \True & \True & \True & \False & \False \\
+  \Undef & \True & \Undef & \Undef & \True & \Undef & \True & \True \\
+  \Undef & \Undef & \Undef & \Undef & \True & \Undef & \True & \Undef \\
+  \Undef & \False & \Undef & \Undef & \True & \Undef & \Undef & \False \\
+  \False & \True & \True & \False & \True & \False & \True & \True \\
+  \False & \Undef & \True & \False & \True & \False & \True & \Undef \\
+  \False & \False & \True & \False & \True & \False & \True & \False \\
+\end{tabular}
+\end{center}
+
+\begin{prob}
+  पुढील सूत्रे \LogLuk[3] मध्ये सर्वतः सत्य आहेत हे दाखवा:
+  \begin{enumerate}
+    \item $p \lif (q \lif p)$
+    \item\label{mvl:thr:luk:prob:luk-taut-2} $\lnot(p \land q) \liff (\lnot p \lor \lnot q)$
+    \item\label{mvl:thr:luk:prob:luk-taut-3} $\lnot(p \lor q) \liff (\lnot p \land \lnot q)$
+  \end{enumerate}
+  (\olref[mvl][thr][luk]{prob:luk-taut-2} आणि
+  \olref[mvl][thr][luk]{prob:luk-taut-3} मध्ये $!A \liff !B$
+  हा $(!A \lif !B) \land (!B \lif !A)$ चा संक्षेप माना किंवा
+  \olref[mvl][thr][luk]{prob:luk-iff} साठीचे तुमचे उत्तर वापरा.)
+\end{prob}
+
+\begin{prob}
+  पुढील अभिजात सर्वतः सत्य सूत्रे \LogLuk[3] मध्ये सर्वतः सत्य
+  नाहीत हे दाखवा:
+  \begin{enumerate}
+    \item $(\lnot p \land p) \lif q$
+    \item $((p \lif q) \lif p) \lif p$
+    \item $(p \lif (p \lif q)) \lif (p \lif q)$
+  \end{enumerate}
+\end{prob}
+
+त्यामुळे अभिजात तर्कशास्त्रातील सर्व सर्वतः सत्य सूत्रे
+$\LogLuk[3]$ मध्ये सर्वतः सत्य नसली, तरी प्रत्येक
+!!{valuation} मध्ये त्यांना निदान $\True$ किंवा $\Undef$
+यांपैकी एक मूल्य मिळेल, असे वाटू शकते. पण तसे नाही.
+पुढील सूत्र हे प्रतिउदाहरण आहे:
+\[
+  \lnot(p \lif \lnot p) \lor \lnot(\lnot p \lif p)
+\]
+$p$ चे मूल्य~$\Undef$ असेल, तर या सूत्राचे मूल्य $\False$ येते.
+
+\begin{prob}
+  पुढीलपैकी कोणते संबंध \L ukasiewicz तर्कशास्त्रात खरे ठरतात?
+  प्रत्येकासाठी सत्यताकोष्टक द्या.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $\lnot\lnot p \Entails p$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+\L ukasiewicz यांना आपल्या त्रिमूल्य पद्धतीच्या आधारे
+संभाव्यतेचे तर्कशास्त्र उभारायचे होते. त्यासाठी त्यांनी ``$!A$
+संभाव्य आहे'' याकरिता एकस्थानी संयोजक $\Diamond !A$ आणि
+``$!A$ अनिवार्य आहे'' याकरिता त्याला अनुरूप $\Box !A$ घेतले:
+\begin{center}
+  \begin{tabular}{c|c}
+    $\tf{\Diamond}$ & \\
+    \hline
+    $\True$ & $\True$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+  \end{tabular}
+  \quad
+  \begin{tabular}{c|c}
+    $\tf{\Box}$ & \\
+    \hline
+    $\True$ & $\True$ \\
+    $\Undef$ & $\False$ \\
+    $\False$ & $\False$
+  \end{tabular}
+\end{center}
+म्हणजे $p$ असत्य असल्याचे आधीच निश्चित झालेले नसेल तेव्हाच
+ते संभाव्य आहे; आणि $p$ सत्य असल्याचे आधीच निश्चित झालेले
+असेल तेव्हाच ते अनिवार्य आहे.
+
+\begin{prob}
+  $\Box$ आणि~$\Diamond$ यांची सत्यताकोष्टके जोडून विस्तारलेल्या
+  \LogLuk[3] मध्ये $\Box p \liff \lnot\Diamond \lnot p$ आणि
+  $\Diamond p \liff \lnot \Box \lnot p$ ही सर्वतः सत्य सूत्रे
+  आहेत हे दाखवा.
+\end{prob}
+
+पण या प्रस्तावित मोडल तर्कशास्त्राच्या मर्यादा लवकरच स्पष्ट
+झाल्या: पुढे काहीही घडले तरी $p \land \lnot p$ कधीच सत्य
+ठरू शकत नाही. म्हणून सध्या त्याचे मूल्य निश्चित नसले
+(आणि त्यामुळे ते अनिर्धारित असले), तरी ते अशक्य मानायला
+हवे; म्हणजे $\lnot \Diamond(p \land \lnot p)$ हे सर्वतः सत्य
+सूत्र असायला हवे. तथापि, $\pAssign v(p) = \Undef$ असेल,
+तर $\pValue v(\lnot \Diamond(p \land \lnot p)) = \Undef$.
+संभाव्यता आणि अनिवार्यता यांसारखे मोडल भेद व्यक्त करण्यासाठी
+दोन सत्यतामूल्ये पुरेशी नाहीत, हा \L ukasiewicz यांचा निष्कर्ष
+बरोबर होता; पण तिसरे सत्यतामूल्य जोडणेही पुरेसे नाही.
+
+\end{document}
