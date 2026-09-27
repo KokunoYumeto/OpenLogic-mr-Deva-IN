@@ -1,0 +1,147 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: more-filtrations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{acc}
+
+\olsection{निस्यंदने आणि प्राप्यतेचे गुणधर्म}
+
+पाहिल्याप्रमाणे, वैश्विक, सर्वत्र उत्तरवर्ती आणि परावर्ती
+प्रतिमानांची निस्यंदने अनुक्रमे वैश्विक, सर्वत्र उत्तरवर्ती
+आणि परावर्ती असतात. पण सममित किंवा संक्रमक प्रतिमानाचे
+प्रत्येक निस्यंदन अनुक्रमे सममित किंवा संक्रमक असेलच असे नाही.
+तरी काही बाबतीत हे गुणधर्म टिकतील अशी निस्यंदने
+परिभाषित करता येतात. त्यासाठी सर्वांत स्थूल निस्यंदनाच्या
+व्याख्येसारखीच पद्धत वापरू, पण~$R^*$ च्या व्याख्येत
+अतिरिक्त अटी घालू. $\Gamma$ उप-!!{formula}s खाली बंद
+आहे असे समजा. प्रतिमान~$\mModel{M} =\tuple{W, R, V}$
+मधील जगांमध्ये $u$, $v$ लागू होणारे
+\olref{tab:Cn-filtrations} मधील संबंध~$C_i(u,v)$ पाहा.
+या अटींच्या संयोगांवरून $R^*[u][v]$ परिभाषित करता येतो.
+उदाहरणार्थ, $R^*[u][v]$ तेव्हा आणि तेव्हाच $C_1(u,v)$
+ही अट पूर्ण होते असे ठरवल्यास नेमके सर्वांत स्थूल
+निस्यंदन मिळते. $R^*[u][v]$ तेव्हा आणि तेव्हाच
+$C_1(u,v)$ आणि $C_2(u, v)$ या दोन्ही अटी पूर्ण होतात
+असे ठरवल्यास वेगळे निस्यंदन मिळते. केवळ $C_1(u,v)$
+पेक्षा $C_1(u,v)$ आणि $C_2(u,v)$ या दोन्ही अटी पूर्ण
+करणाऱ्या जगांच्या जोड्या कमी असल्याने हे निस्यंदन
+सर्वांत स्थूल निस्यंदनापेक्षा “अधिक सूक्ष्म” असते.
+
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|ll|}
+    \hline
+    \multirow{2}{*}{$C_1(u,v)$:}
+    \iftag{prvBox}{&
+      $\Box!A \in \Gamma$ आणि $\mSat{M}{\Box!A}[u]$ असेल,
+      तर $\mSat{M}{!A}[v]$;\iftag{prvDiamond}{ आणि}{}\\}{}
+    \iftag{prvDiamond}{&
+      $\Diamond!A \in \Gamma$ आणि $\mSat{M}{!A}[v]$ असेल,
+      तर $\mSat{M}{\Diamond!A}[u]$; \\}{}
+    \hline
+    \multirow{2}{*}{$C_2(u,v)$:}
+    \iftag{prvBox}{&
+      $\Box!A \in \Gamma$ आणि $\mSat{M}{\Box!A}[v]$ असेल,
+      तर $\mSat{M}{!A}[u]$;\iftag{prvDiamond}{ आणि}{}\\}{}
+    \iftag{prvDiamond}{&
+      $\Diamond!A \in \Gamma$ आणि $\mSat{M}{!A}[u]$ असेल,
+      तर $\mSat{M}{\Diamond!A}[v]$; \\}{}
+    \hline
+    \multirow{2}{*}{$C_3(u,v)$:}
+    \iftag{prvBox}{&
+      $\Box!A \in \Gamma$ आणि $\mSat{M}{\Box!A}[u]$ असेल,
+      तर $\mSat{M}{\Box!A}[v]$;\iftag{prvDiamond}{ आणि}{}\\}{}
+    \iftag{prvDiamond}{&
+      $\Diamond!A \in \Gamma$ आणि $\mSat{M}{\Diamond!A}[v]$ असेल,
+      तर $\mSat{M}{\Diamond!A}[u]$; \\}{}
+    \hline
+    \multirow{2}{*}{$C_4(u,v)$:}
+    \iftag{prvBox}{&
+      $\Box!A \in \Gamma$ आणि $\mSat{M}{\Box!A}[v]$ असेल,
+      तर $\mSat{M}{\Box!A}[u]$;\iftag{prvDiamond}{ आणि}{}\\}{}
+    \iftag{prvDiamond}{&
+      $\Diamond!A \in \Gamma$ आणि $\mSat{M}{\Diamond!A}[u]$ असेल,
+      तर $\mSat{M}{\Diamond!A}[v]$; \\}{}
+    \hline
+    \end{tabular}
+  \caption{निस्यंदने परिभाषित करण्यासाठी संभाव्य जगांवरील अटी.}
+  \ollabel{tab:Cn-filtrations}
+\end{table}
+
+\begin{thm}\ollabel{thm:more-filtrations}
+  $\mModel{M} =\tuple{W,R,V}$ हे प्रतिमान आणि
+  $\Gamma$ हा उप-!!{formula}s खाली बंद संच असू द्या.
+  $W^*$ आणि $V^*$ यांची व्याख्या
+  \olref[fil]{defn:filtration} प्रमाणे करा. मग:
+  \begin{enumerate}
+  \item $R^*[u][v]$ तेव्हा आणि तेव्हाच $C_1(u, v) \land
+    C_2(u,v)$ असे समजा. मग $R^*$ सममित आहे; आणि
+    $\mModel{M}$ सममित असेल, तर $\mModel{M^*} =
+    \tuple{W^*,R^*,V^*}$ हे निस्यंदन आहे.
+  \item $R^*[u][v]$ तेव्हा आणि तेव्हाच $C_1(u, v)
+    \land C_3(u,v)$ असे समजा. मग $R^*$ संक्रमक आहे;
+    आणि $\mModel{M}$ संक्रमक असेल, तर
+    $\mModel{M^*}=\tuple{W^*,R^*,V^*}$ हे निस्यंदन आहे.
+  \item $R^*[u][v]$ तेव्हा आणि तेव्हाच $C_1(u, v) \land C_2(u,v)
+    \land C_3(u,v) \land C_4(u,v)$ असे समजा. मग $R^*$
+    सममित आणि संक्रमक आहे; आणि $\mModel{M}$ सममित
+    व संक्रमक असेल, तर $\mModel{M^*}=\tuple{W^*,R^*,V^*}$
+    हे निस्यंदन आहे.
+  \item $R^*$ ची व्याख्या $R^*[u][v]$ तेव्हा आणि तेव्हाच $C_1(u,
+    v) \land C_3(u,v) \land C_4(u,v)$ अशी करा. मग $R^*$
+    संक्रमक आणि युक्लिडी आहे; आणि $\mModel{M}$ संक्रमक
+    व युक्लिडी असेल, तर $\mModel{M^*}=\tuple{W^*,R^*,V^*}$
+    हे निस्यंदन आहे.
+  \end{enumerate}
+\end{thm}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $R^*$ सममित आहे हे लगेच दिसते, कारण $C_1(u,v)
+      \Leftrightarrow C_2(v,u)$ आणि $C_2(u,v) \Leftrightarrow
+      C_1(v,u)$. त्यामुळे $\mModel{M}$ सममित असेल,
+      तर $\mModel{M^*}$ हे $\Gamma$ मधून मिळणारे
+      निस्यंदन आहे, एवढेच दाखवायचे आहे.
+      $C_1(u,v)$ या अटीमुळे
+      \iftag{prvBox}{%
+        \iftag{prvDiamond}{%
+          \olref[fil]{defn:filtration-R2} आणि
+          \olref[fil]{defn:filtration-R3} या
+          \olref[fil]{defn:filtration} मधील अटी}{%
+          \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R2} ही अट}}{%
+        \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R3} ही अट}
+      पूर्ण होते. म्हणून आता फक्त
+      \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R1},
+      म्हणजे $Ruv$ वरून $R^*[u][v]$ मिळते हे तपासायचे आहे.
+
+      $Ruv$ असे समजा. $R^*[u][v]$ दाखवण्यासाठी
+      $C_1(u,v)$ आणि $C_2(u,v)$ सिद्ध कराव्या लागतील.
+      $C_1$ साठी: \iftag{prvBox}{$\Box!A
+        \in\Gamma$ आणि $\mSat{M}{\Box!A}[u]$ असेल,
+        तर $Ruv$ असल्याने $\mSat{M}{!A}[v]$ सुद्धा.
+        \iftag{prvDiamond}{ त्याचप्रमाणे,
+        }{}}{}\iftag{prvDiamond}{$\Diamond!A \in \Gamma$
+        आणि $\mSat{M}{!A}[v]$ असेल, तर $Ruv$
+        असल्याने $\mSat{M}{\Diamond!A}[u]$.}{}
+      $C_2$ साठी: \iftag{prvBox}{$\Box!A \in \Gamma$
+        आणि $\mSat{M}{\Box!A}[v]$ असेल, तर सममितीमुळे
+        $Ruv$ वरून $Rvu$; म्हणून $\mSat{M}{!A}[u]$.
+        \iftag{prvDiamond}{ त्याचप्रमाणे,
+        }{}}{}\iftag{prvDiamond}{$\Diamond!A \in\Gamma$
+        आणि $\mSat{M}{!A}[u]$ असेल, तर
+        $\mSat{M}{\Diamond!A}[v]$ (कारण सममितीमुळे $Rvu$).}{}
+    \item सराव.
+    \item सराव.
+    \item सराव.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[nml][fil][acc]{thm:more-filtrations} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\end{document}
