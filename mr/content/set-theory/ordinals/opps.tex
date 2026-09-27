@@ -1,0 +1,74 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{opps}
+\olsection{उत्तरवर्ती आणि सीमा क्रमसूचक संख्या}
+
+पुढील काही प्रकरणांत आपण क्रमसूचक संख्यांचा भरपूर वापर करू. म्हणून आधी काही सोप्या संकल्पना मांडू.
+
+\begin{defn}
+कोणत्याही क्रमसूचक संख्या $\alpha$ ची \emph{उत्तरवर्ती} संख्या $\ordsucc{\alpha}
+=\alpha \cup \{\alpha\}$ असते. एखाद्या क्रमसूचक संख्या~$\beta$ साठी $\ordsucc{\beta} = \alpha$ असेल, तर $\alpha$ ही \emph{उत्तरवर्ती} क्रमसूचक संख्या आहे असे म्हणू. $\alpha$ ही \emph{सीमा} क्रमसूचक संख्या असते तेव्हाच आणि तेव्हाच $\alpha$ रिकामीही नसते आणि उत्तरवर्ती क्रमसूचक संख्याही नसते.
+\end{defn}
+\noindent
+पुढील निष्कर्षावरून \emph{उत्तरवर्ती} ही योग्य संकल्पना आहे हे दिसते:
+
+\begin{prop}
+कोणत्याही क्रमसूचक संख्या $\alpha$ साठी:
+\begin{enumerate}
+	\item $\alpha \in \ordsucc{\alpha}$;
+	\item $\ordsucc{\alpha}$ ही क्रमसूचक संख्या आहे;
+	\item $\alpha \in \beta \in
+	\ordsucc{\alpha}$ अशी कोणतीही क्रमसूचक संख्या $\beta$ नाही.
+	\end{enumerate}
+\end{prop}
+
+\begin{proof}
+$\alpha \in \alpha \cup \{\alpha\} = \ordsucc{\alpha}$ हे स्पष्ट आहे. तसेच $\ordsucc{\alpha}$ हा क्रमसूचक संख्यांचा संक्रमक संच असल्याने \olref[basic]{corordtransitiveord} वरून क्रमसूचक संख्या आहे. $\alpha \in \beta \in \ordsucc{\alpha}$ अशक्य आहे: तसे असल्यास $\beta \in \alpha$ किंवा $\beta = \alpha$ असेल, आणि त्यावरून \olref[basic]{ordordered} शी विसंगती येईल.
+\end{proof}
+\noindent
+यामुळे अनंतपार विगमनाने पुराव्याचा आणखी एक प्रकारही मिळतो:
+
+\begin{thm}[सुलभ अनंतपार विगमन]\ollabel{simpletransrecursion}
+$\phi(x)$ हे पुढील अटी पूर्ण करणारे सूत्र असू द्या:
+\begin{enumerate}
+	\item $\phi(\emptyset)$; आणि
+	\item कोणत्याही क्रमसूचक संख्या $\alpha$ साठी, $\phi(\alpha)$ असेल, तर $\phi(\ordsucc{\alpha})$; आणि
+	\item $\alpha$ ही सीमा क्रमसूचक संख्या असून $(\forall \beta \in
+	\alpha)\phi(\beta)$ असेल, तर $\phi(\alpha)$.
+\end{enumerate}
+मग $\forall \alpha \phi(\alpha)$.
+\end{thm}
+
+\begin{proof}
+प्रतिपक्ष सिद्ध करू. एखाद्या क्रमसूचक संख्येसाठी $\lnot\phi$ असेल असे मानू; अशी लघुतम क्रमसूचक संख्या $\gamma$ घेऊ. मग $\gamma = \emptyset$ असेल; किंवा $\phi(\alpha)$ पूर्ण करणाऱ्या एखाद्या $\alpha$ साठी $\gamma = \ordsucc{\alpha}$ असेल; किंवा $\gamma$ ही सीमा क्रमसूचक संख्या असून $(\forall
+\beta \in \gamma)\phi(\beta)$ असेल.
+\end{proof}
+\noindent
+शेवटी, पुढे उपयोगी पडणारा आणखी एक संकेत पाहू:
+
+\begin{defn}\ollabel{defsupstrict}
+$X$ हा क्रमसूचक संख्यांचा संच असेल, तर $\supstrict(X) = \bigcup_{\alpha
+\in X} \ordsucc{\alpha}$.
+\end{defn}
+\noindent
+येथे ``lsub'' म्हणजे ``लघुतम काटेकोर ऊर्ध्वबंध''.\footnote{काही पुस्तकांत यासाठी ``$\text{sup}(X)$'' लिहितात. पण इतर पुस्तकांत ``$\text{sup}(X)$'' हा संकेत लघुतम \emph{अकाटेकोर} ऊर्ध्वबंधासाठी, म्हणजे केवळ $\bigcup X$ साठी, वापरतात. $X$ मध्ये महत्तम सदस्य $\alpha$ असेल, तर या दोन संकल्पना वेगळ्या ठरतात: लघुतम \emph{काटेकोर} ऊर्ध्वबंध $\ordsucc{\alpha}$ असतो, तर लघुतम \emph{अकाटेकोर} ऊर्ध्वबंध फक्त $\alpha$ असतो.} पुढील निष्कर्ष हे स्पष्ट करतो:
+
+\begin{prop}
+$X$ हा क्रमसूचक संख्यांचा संच असेल, तर $\supstrict(X)$ ही $X$ मधील प्रत्येक क्रमसूचक संख्येपेक्षा मोठी असलेली लघुतम क्रमसूचक संख्या आहे.
+\end{prop}
+
+\begin{proof}
+$Y = \Setabs{\ordsucc{\alpha}}{\alpha \in X}$ ठेवू; मग $\supstrict(X) = \bigcup Y$. क्रमसूचक संख्या संक्रमक असतात आणि क्रमसूचक संख्येचा प्रत्येक सदस्य क्रमसूचक संख्या असतो. म्हणून $\supstrict(X)$ हा क्रमसूचक संख्यांचा संक्रमक संच आहे आणि \olref[basic]{corordtransitiveord} वरून क्रमसूचक संख्या आहे.
+
+$\alpha \in X$ असेल, तर $\ordsucc{\alpha} \in Y$. म्हणून $\ordsucc{\alpha}
+\subseteq \bigcup Y = \supstrict(X)$ आणि त्यामुळे $\alpha \in
+\supstrict(X)$. म्हणजे $\supstrict(X)$ ही $X$ मधील प्रत्येक क्रमसूचक संख्येपेक्षा काटेकोरपणे मोठी आहे.
+
+उलट, $\alpha \in \supstrict(X)$ असेल, तर एखाद्या $\beta \in X$ साठी $\alpha \in
+\ordsucc{\beta} \in Y$; म्हणून $\alpha \leq
+\beta \in X$. त्यामुळे $\supstrict(X)$ हा $X$ चा \emph{लघुतम} काटेकोर ऊर्ध्वबंध आहे.
+\end{proof}
+
+\end{document}
