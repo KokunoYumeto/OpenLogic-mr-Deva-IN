@@ -945,6 +945,17 @@ _DOCUMENTED_PROJECTIONS = {
         ('probNot,probAnd,probOr',
          'probNot,proband,probOr'),
     ],
+    'OLP-0451': [
+        # OLINC-181: a finite quotient may have finite as well as infinite classes.
+        ('प्रत्येक वर्गात\nकदाचित अनंत जगे असतील,',
+         'प्रत्येक वर्गात\nअनंत जगे असतील,'),
+        # OLINC-183: the toy Box argument uses universal accessibility.
+        ('प्रथम प्रत्येक जग प्रत्येक\nजगाला प्राप्य आहे असे\nसमजू.',
+         'प्रथम प्राप्यता संबंध नाही असे\nसमजू.'),
+        # OLINC-182: V* is a valuation function and needs its argument p.
+        (r'$[w] \in V^*(p)$;' + '\n' + 'म्हणून',
+         r'$[w] \in V^*$;' + '\n' + 'म्हणून'),
+    ],
 }
 
 
