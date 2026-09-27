@@ -1,0 +1,89 @@
+% part: intuitionistic-logic
+% chapter: semantics
+% section: relational-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sem}{rel}
+
+\olsection{\usetoken{P}{relational model}}
+
+अंतःप्रज्ञावादी विधानीय तर्कशास्त्राची अचूक
+चिन्हार्थमीमांसा द्यायची असेल, तर ज्याच्या
+संदर्भात !!{formula}s चे मूल्यांकन करता येईल
+असे प्रतिमान कोणते, याची व्याख्या द्यावी लागते.
+तिच्या आधारे वैधता आणि निष्पन्नता यांसारख्या
+चिन्हार्थविषयक संकल्पनांचीही व्याख्या करता येते.
+अशी एक चिन्हार्थमीमांसा !!{relational model}s
+देतात.
+
+\begin{defn}
+  अंतःप्रज्ञावादी विधानीय तर्कशास्त्रासाठी
+  !!^a{relational model} म्हणजे त्रिक
+  $\mModel{M} = \tuple{W, R, V}$, जिथे
+  \begin{enumerate}
+  \item $W$ हा अरिक्त संच आहे,
+  \item $R$ हा~$W$ वरील अंशतः क्रम आहे (म्हणजे
+    परावर्ती, प्रतिसममित आणि संक्रमक द्विस्थानी संबंध), आणि
+  \item $V$ हे प्रत्येक !!{propositional
+    variable}~$p$ ला~$W$ चा उपसंच नेमणारे फलन आहे;
+    तसेच
+  \item $V$ हे $R$ च्या दृष्टीने एकस्वनिक आहे:
+    $w \in V(p)$ आणि $Rww'$ असेल, तर
+    $w' \in V(p)$.
+  \end{enumerate}
+\end{defn}
+
+\begin{defn}\ollabel{defn:true-at-w}
+  $!A$ हे \emph{$\mModel{M}$ मध्ये $w$ येथे सत्य असणे},
+  म्हणजे $\mSat{M}{!A}[w]$, ही संकल्पना आपण पुढीलप्रमाणे
+  आगमनाने परिभाषित करतो:
+  \begin{enumerate}
+  \item \indcase{!A}{p}{$\mSat{M}{\indfrm}[w]$ तेव्हा
+    आणि केवळ तेव्हाच $w \in V(p)$.}
+  \item \indcase{!A}{\lfalse}{$\mSat{M}{\indfrm}[w]$ नाही}.
+  \item \indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच $Rww'$ असलेले आणि
+    $\mSat{M}{!B}[w']$ पूर्ण करणारे कोणतेही
+    $w'$ नाही}.
+  \item \indcase{!A}{!B \land !C}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच $\mSat{M}{!B}[w]$
+    आणि $\mSat{M}{!C}[w]$}.
+  \item \indcase{!A}{!B \lor !C}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच $\mSat{M}{!B}[w]$
+    किंवा $\mSat{M}{!C}[w]$ (किंवा दोन्ही)}.
+  \item \indcase{!A}{!B \lif !C}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच $Rww'$ असलेल्या प्रत्येक
+    $w'$ साठी $\mSat{M}{!B}[w']$ नाही किंवा
+    $\mSat{M}{!C}[w']$} (किंवा दोन्ही).
+  \end{enumerate}
+  $\mSat{M}{!A}[w]$ नसल्यास आपण
+  $\mSat/{M}{!A}[w]$ लिहितो. $\Gamma$ हा
+  !!{formula}s चा संच असेल, तर $\mSat{M}{\Gamma}[w]$
+  याचा अर्थ प्रत्येक $!B \in \Gamma$ साठी
+  $\mSat{M}{!B}[w]$ असा आहे.
+\end{defn}
+
+\begin{prob}
+  \olref[int][sem][rel]{defn:true-at-w} नुसार
+  $\mSat{M}{\lnot !A}[w]$ तेव्हा आणि केवळ तेव्हाच
+  $\mSat{M}{!A \lif \lfalse}[w]$, हे दाखवा.
+\end{prob}
+
+\begin{prop}\ollabel{prop:true-monotonic}
+  जगातील सत्यता $R$ च्या दृष्टीने एकस्वनिक आहे:
+  $\mSat{M}{!A}[w]$ आणि $Rww'$ असेल, तर
+  $\mSat{M}{!A}[w']$.
+\end{prop}
+
+\begin{proof}
+  सराव.
+\end{proof}
+
+\begin{prob}
+  \olref[int][sem][rel]{prop:true-monotonic} सिद्ध करा.
+\end{prob}
+
+\end{document}
