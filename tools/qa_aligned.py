@@ -627,6 +627,15 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\Subst{\Subst{N}{M_1}{x_1}\ldots}{M_n}{x_n}',
          r'\Subst{\Subst{P}{M_1}{x_1}\ldots}{M_n}{x_n}'),
     ],
+    'OLP-0348': [
+        # OLINC-075: the displayed arity and all indexed inputs use k.
+        (r'$k$-स्थानी आंशिक फलन', r'$n$-स्थानी आंशिक फलन'),
+        # OLINC-076: the no-normal-form case applies F to the same inputs.
+        (r'$F\, \num{n_0}\, \num{n_1}' + '\n' +
+         r'\dots \num{n_{k-1}}$',
+         r'$F, \num{n_0}\, \num{n_1}' + '\n' +
+         r'\dots \num{n_{k-1}}$'),
+    ],
 }
 
 
