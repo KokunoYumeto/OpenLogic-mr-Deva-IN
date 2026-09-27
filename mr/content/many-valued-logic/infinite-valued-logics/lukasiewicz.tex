@@ -1,0 +1,111 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: lukasiewicz
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{inf}{luk}
+
+\olsection{\L ukasiewicz यांचे तर्कशास्त्र}
+
+\begin{editorial}
+  अनंतमूल्य \L ukasiewicz तर्कशास्त्रावरील हा विभाग
+  संक्षिप्त ``प्रारूप'' आहे.
+\end{editorial}
+
+\begin{defn}\ollabel{def:lukasiewicz} अनंतमूल्य \L ukasiewicz
+तर्कशास्त्र~$\LogLuk[\infty]$ पुढील मॅट्रिक्सने परिभाषित होते:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+  \item सत्यतामूल्यांचा संच $V_\infty$.
+  \item $1$ हेच एकमेव निर्दिष्ट मूल्य आहे, म्हणजे $V^+ = \{1\}$.
+  \item सत्यता-फलने पुढील सूत्रांनी दिली आहेत:
+  \begin{align*}
+    \tf{\lnot}[\LogLuk](x) & = 1 - x\\
+    \tf{\land}[\LogLuk](x,y) & = \min(x,y)\\
+    \tf{\lor}[\LogLuk](x,y) & = \max(x,y)\\
+    \tf{\lif}[\LogLuk](x,y) & = \min(1,1-(x-y)) = \begin{cases}
+      1 & \text{जर } x \le y\\
+      1-(x-y) & \text{इतर वेळी.}
+    \end{cases}
+    \end{align*}
+\end{enumerate}
+$m$-मूल्य \L ukasiewicz तर्कशास्त्राची व्याख्या याचप्रमाणे,
+फक्त $V = V_m$ घेऊन केली जाते.
+\end{defn}
+
+\begin{prop}
+  \olref[thr][luk]{def:lukasiewicz} मध्ये परिभाषित
+  $\LogLuk[3]$ आणि \olref{def:lukasiewicz} मध्ये
+  परिभाषित $\LogLuk[3]$ हे एकच तर्कशास्त्र आहे.
+\end{prop}
+
+\begin{proof}
+  \olref[thr][luk]{def:lukasiewicz} मधील संयोजकांची
+  सत्यताकोष्टके आणि \olref{def:lukasiewicz} मधील
+  समीकरणांनी निश्चित होणारी सत्यताकोष्टके यांची तुलना
+  केल्यास हे दिसते:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $1$ & $0$ \\
+      $1/2$ & $1/2$ \\
+      $0$ & $1$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1/2$ & $1/2$ & $0$\\
+      $0$ & $0$ & $0$ & $0$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1$ & $1$ \\
+      $1/2$ & $1$ & $1/2$ & $1/2$ \\
+      $0$ & $1$ & $1/2$ & $0$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1$ & $1$ & $1/2$  \\
+      $0$ & $1$ & $1$ & $1$
+    \end{tabular}
+  \end{center}
+\end{proof}
+
+\begin{prop}\ollabel{prop:luk-infty-m}
+  $\Gamma \Entails[\LogLuk[\infty]] !B$ असेल, तर
+  सर्व~$m \ge 2$ साठी $\Gamma \Entails[\LogLuk[m]] !B$.
+\end{prop}
+
+\begin{proof}
+  सराव.
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][inf][luk]{prop:luk-infty-m} सिद्ध करा.
+\end{prob}
+
+खरे तर आधारसूत्रांचा संच ससीम असेल, तर याचे प्रतिलोम
+विधानही खरे आहे.
+
+अनंतमूल्य \L ukasiewicz तर्कशास्त्र हे सर्वाधिक प्रचलित
+अस्पष्ट तर्कशास्त्र आहे. अस्पष्ट तर्कशास्त्रावरील साहित्यात
+सशर्त विधानाची व्याख्या अनेकदा $\lnot !A \lor !B$ अशी
+केली जाते. त्यातून अनंतमूल्य प्रबळ क्लिनी तर्कशास्त्र मिळेल.
+
+\begin{prob}
+  $(p \lif q) \lor (q \lif p)$ हे $\LogLuk[\infty]$
+  मध्ये सर्वतः सत्य सूत्र आहे हे दाखवा.
+\end{prob}
+
+\end{document}
