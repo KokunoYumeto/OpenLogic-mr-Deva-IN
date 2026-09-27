@@ -972,6 +972,14 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$\mSat{M^*}{!A}[{[w]}]$',
          r'$\mSat{M^*}{!A}[w]$'),
     ],
+    'OLP-0459': [
+        # OLINC-188: forced arrows in a filtration connect quotient worlds.
+        (r'मग $[w_2]$ आणि~$[w_5]$',
+         r'मग $w_2$ आणि~$w_5$'),
+        # OLINC-190: w2 needs a self-loop to make both displayed models
+        # serial and Euclidean, matching the labels and captions.
+        (r'    \draw[reflexive above] (w2) to (w2);' + '\n', ''),
+    ],
 }
 
 

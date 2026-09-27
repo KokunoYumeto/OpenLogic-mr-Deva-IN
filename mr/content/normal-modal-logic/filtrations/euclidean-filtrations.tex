@@ -1,0 +1,146 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: euclidean-filtrations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{euc}
+
+\olsection{युक्लिडी प्रतिमानांची निस्यंदने}
+
+\olref[acc]{sec} मधील पद्धत युक्लिडी, किंवा
+सर्वत्र उत्तरवर्ती आणि युक्लिडी, प्रतिमानांसाठी
+चालत नाही. \olref{fig:ser-eucl} च्या वरच्या भागातील
+प्रतिमान पाहा; ते युक्लिडी आणि सर्वत्र उत्तरवर्ती आहे.
+$\Gamma = \{p, \Box p \}$ असू द्या. $\Gamma$ मधून
+निस्यंदन घेतल्यावर $[w_1] = [w_3]$, कारण $w_1$
+आणि $w_3$ हीच दोन जगे~$\Gamma$ वरील सत्यतेबाबत
+एकमत आहेत. कोणत्याही निस्यंदनात~$\mModel{M}$
+मधून वारशाने आलेले बाणही असतील; ते
+\olref{fig:ser-eucl2} मध्ये दाखवले आहेत. ते प्रतिमान
+युक्लिडी नाही. शिवाय ते युक्लिडी करण्यासाठी
+त्यात आणखी बाण घालता येत नाहीत. $[w_2]$
+आणि $[w_4]$ यांच्यामध्ये दोन्ही दिशांनी बाण
+घालावे लागतील; मग $[w_2]$ आणि~$[w_5]$
+यांच्यामध्येही. पण~$w_2$ येथे $\Box p$ सत्य
+असायला हवे, तर~$w_5$ येथे $p$ असत्य आहे.
+
+\begin{figure}[htpb]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w1)
+          [label={left: \mFalse{p}},
+            label={below: $\mSat{{}}{\Box p}$}] {$w_1$};
+    \node[world] (w2)
+          [label={right: \mTrue{p}},
+            label = {below: $\mSat{{}}{\Box p}$},
+            right=of w1] {$w_2$};
+    \draw[reflexive above] (w2) to (w2);
+    \draw[->] (w1) to (w2);
+    \node[world] (w3)
+          [label={left: \mFalse{p}},
+            label={below: $\mSat{{}}{\Box p}$},
+            below=of w1] {$w_3$};
+    \node[world] (w4)
+          [label={right:\mTrue{p}},
+            label={below: $\mSat/{{}}{\Box p}$},
+            right=of w3] {$w_4$};
+    \draw[->] (w3) to (w4);
+    \draw[reflexive above] (w4) to (w4);
+    \node[world] (w5)
+          [label={right: \mFalse{p}},
+            label=below:$\mSat/{{}}{\Box p}$,
+            right=of w4] {$w_5$};
+    \draw[->, bend left] (w4) to (w5);
+    \draw[->, bend left] (w5) to (w4);
+    \draw[reflexive above] (w5) to (w5);
+  \end{tikzpicture}
+  \caption{सर्वत्र उत्तरवर्ती आणि युक्लिडी प्रतिमान.}
+  \ollabel{fig:ser-eucl}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}[modal,every text node part/.style={align=center}]
+    \node[world] (w1)
+          [label={left: \mFalse{p}},
+            label={right:$[w_1]=[w_3]$},
+            label={below: $\mSat{{}}{\Box p}$}] {$[w_1]$};
+    \node[world] (w2)
+         [label={right: \mTrue{p}},
+           label = {below: $\mSat{{}}{\Box p}$},
+           right=of w1, yshift=1.5cm] {$[w_2]$};
+    \draw[reflexive above] (w2) to (w2);
+    \draw[->] (w1) to (w2);
+    \node[world] (w4)
+         [label={right:\mTrue{p}},
+           label={below: $\mSat/{{}}{\Box p}$},
+           right=of w1,yshift=-1.5cm] {$[w_4]$};
+    \draw[->] (w1) to (w4);
+    \draw[reflexive above] (w4) to (w4);
+    \node[world] (w5)
+         [label={right: \mFalse{p}},
+             label=below:$\mSat/{{}}{\Box p}$,
+             right=of w4] {$[w_5]$};
+    \draw[->, bend left] (w4) to (w5);
+    \draw[->, bend left] (w5) to (w4);
+    \draw[reflexive above] (w5) to (w5);
+  \end{tikzpicture}
+  \caption{\olref{fig:ser-eucl} मधील प्रतिमानाचे निस्यंदन.}
+  \ollabel{fig:ser-eucl2}
+\end{figure}
+
+विशेषतः युक्लिडी निस्यंदन मिळवण्यासाठी
+उप-!!{formula}s खाली बंद असलेल्या मनमानी $\Gamma$
+मधून निस्यंदन घेणे पुरेसे नाही. त्याऐवजी
+\emph{मोडलदृष्ट्या बंद} असलेले संच~$\Gamma$
+घ्यावे लागतात (\olref[pre]{defn:modallyclosed} पाहा).
+असे वाक्यांचे संच अनंत असतात; म्हणून त्यांच्यापासून
+संबंधित प्रणालीचा सांत प्रतिमान गुणधर्म किंवा
+निर्णेयता तात्काळ मिळत नाही.
+
+\begin{thm}\ollabel{thm:modal-closed-filt}
+  $\Gamma$ मोडलदृष्ट्या बंद असू द्या,
+  $\mModel{M}=\tuple{W,R,V}$ हे प्रतिमान असू द्या,
+  आणि $\mModel{M^*} = \tuple{W^*,R^*,V^*}$ हे
+  $\mModel{M}$ चे सर्वांत स्थूल निस्यंदन असू द्या.
+  \begin{enumerate}
+  \item $\mModel{M}$ सममित असेल, तर $\mModel{M^*}$ सुद्धा सममित आहे.
+  \item $\mModel{M}$ संक्रमक असेल, तर $\mModel{M^*}$ सुद्धा संक्रमक आहे.
+  \item $\mModel{M}$ युक्लिडी असेल, तर $\mModel{M^*}$ सुद्धा युक्लिडी आहे.
+  \end{enumerate}
+\end{thm}
+
+\begin{proof}
+\begin{enumerate}
+  \item सराव. \Ax{B} आणि $\Ax{B_\Diamond}$ ही दोन्ही
+    सर्व सममित प्रतिमानांत वैध आहेत, हे वापरा.
+  \item $\mModel{M^*}$ हे सर्वांत स्थूल निस्यंदन असेल,
+    तर व्याख्येनुसार $R^*[u][v]$ तेव्हा आणि तेव्हाच
+    $C_1(u,v)$. संक्रमकतेसाठी $C_1(u,v)$ आणि
+    $C_1(v,w)$ असे समजा; $C_1(u,w)$ दाखवायचे आहे.
+    \iftag{prvBox}{$\mSat{M}{\Box !A}[u]$ असे समजा.
+      सर्व संक्रमक प्रतिमानांत \Ax{4} वैध असल्याने
+      $\mSat{M}{\Box\Box!A}[u]$. मोडल बंदतेवरून
+      $\Box\Box!A \in \Gamma$; म्हणून $C_1(u,v)$ वरून
+      $\mSat{M}{\Box!A}[v]$, आणि $C_1(v,w)$ वरून
+      $\mSat{M}{!A}[w]$. }{}\iftag{prvDiamond}{
+      $\mSat{M}{!A}[w]$ असे समजा. मोडल बंदतेवरून
+      $\Diamond !A \in \Gamma$; म्हणून $C_1(v,w)$ वरून
+      $\mSat{M}{\Diamond !A}[v]$. तसेच मोडल बंदतेवरून
+      $\Diamond\Diamond!A \in \Gamma$; म्हणून $C_1(u,v)$ वरून
+      $\mSat{M}{\Diamond\Diamond !A}[u]$.
+      सर्व संक्रमक प्रतिमानांत $\Ax{4}_\Diamond$
+      वैध असल्याने $\mSat{M}{\Diamond!A}[u]$.}{}
+  \item सराव. \Ax{5} आणि $\Ax{5_\Diamond}$ ही दोन्ही
+    सर्व युक्लिडी प्रतिमानांत वैध आहेत, हे वापरा.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[nml][fil][euc]{thm:modal-closed-filt} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\end{document}
