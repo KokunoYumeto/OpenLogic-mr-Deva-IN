@@ -1,0 +1,133 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: truth-at-w
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{trw}
+
+\olsection{एखाद्या जगात सत्य असणे}
+
+सामान्य मोडल तर्कशास्त्राप्रमाणेच प्रत्येक ज्ञानविषयक
+प्रतिमान त्यात कोणती !!{formula}s कोणत्या जगांत सत्य
+मानायची हे ठरवते. संबंधी चिन्हार्थमीमांसेच्या मूलभूत
+संकल्पनेसाठी ``प्रतिमान~$\mModel{M}$ मध्ये
+!!{formula}~$!A$ हे जग~$w$ येथे सत्य आहे'' हीच संज्ञा
+वापरतो. या संबंधाची आगमनाने व्याख्या केली जाते;
+मोडल नसलेल्या सर्व संकारकांसाठी ती सामान्य मोडल
+प्रकरणातील व्याख्येसारखीच असते.
+
+\begin{defn}\ollabel{defn:mmodels}
+  प्रतिमान~$\mModel M$ मध्ये \emph{!!a{formula}~$!A$ हे~$w$ येथे
+  सत्य असणे}, म्हणजे $\mSat{M}{!A}[w]$, पुढीलप्रमाणे
+  आगमनाने परिभाषित करतो:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat{M}{\lfalse}[w]$ कधीच नसते}.}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M}{\ltrue}[w]$ नेहमी असते}.}{}
+  \item $\mSat{M}{p}[w]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $w \in V(p)$
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat/{M}{!B}[w]$}.}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat{M}{!B}[w]$ आणि
+    $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat{M}{!B}[w]$ किंवा
+    $\mSat{M}{!C}[w]$} (किंवा दोन्ही).}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat/{M}{!B}[w]$ किंवा
+    $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat{M}{!B}[w]$ आणि
+    $\mSat{M}{!C}[w]$ ही दोन्ही असतात, किंवा
+    $\mSat{M}{!B}[w]$ आणि $\mSat{M}{!C}[w]$ यांपैकी
+    कोणतेही नसते}.}{}
+  \item\ollabel{defn:sub:mmodels-box}
+    \indcase{!A}{\Knows_a !B}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $R_a ww'$ असलेल्या प्रत्येक $w' \in W$
+    साठी $\mSat{M}{!B}[w']$}
+  \end{enumerate}
+\end{defn}
+
+इथे मात्र प्राप्यता संबंधांवर घालायच्या अटींचा विचार
+करावा लागतो. खंड~\olref{defn:sub:mmodels-box} नुसार,
+$R_a ww'$ असलेले एकही~$w'$ नसेल, तेव्हा
+!!a{formula}~$\Knows_a !B$ हे~$w$ येथे सत्य असते.
+हा खंड सामान्य मोडल तर्कशास्त्रातील खंडासारखाच
+आहे: एखाद्या जगाला उत्तरवर्ती जगे नसतील, तर सर्व
+$\Box$-सूत्रे तेथे रिक्तपणे सत्य असतात. $\Knows$ हा
+\emph{ज्ञान} दर्शवतो असे मानल्यास हे अत्यंत
+प्रतिसहजभासी वाटते. कारण एखाद्या कर्त्याला एकाच
+वेळी $!A$ आणि $\lnot !A$ ही दोन्ही माहीत असू शकतील,
+अशी \emph{कोणतीही} परिस्थिती नसते, असे आपण
+सहसा मानतो.
+
+एक उपाय म्हणजे ज्ञानविषयक तर्कशास्त्रातील प्राप्यता
+संबंध नेहमी \emph{परावर्ती} असेल याची खात्री करणे.
+यातून वास्तविक जग कर्त्याच्या माहितीशी सुसंगत आहे,
+ही कल्पना ढोबळमानाने व्यक्त होते. वस्तुतः ज्ञानविषयक
+तर्कशास्त्रांत सहसा S5 वापरतात; पण $\Knows_a$ संबंधाने
+नेमके काय दर्शवायचे आहे यानुसार काही जण त्याहून
+दुर्बल व्यवस्था वापरू शकतात.
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]right:\mTrue{p}\\ \mFalse{q}}]{$w_1$};
+      \node[world] (w2) [label={[align=right]right:\mTrue{p}\\ \mTrue{q}},
+        above right=of w1]{$w_2$};
+      \node[world] (w3) [label={[align=right]right:\mFalse{p}\\ \mFalse{q}},
+        below right=of w1] {$w_3$};
+      \draw[<->] (w1) to node {$a$} (w2);
+      \draw[->,loop left] (w1) to node {$a,b$} (w1);
+      \draw[<->] (w1) to [swap] node {$b$} (w3);
+      \draw[->,loop above] (w2) to node {$a,b$} (w2) ;
+      \draw[->,loop below] (w3) to node {$a,b$} (w3) ;
+    \end{tikzpicture}
+  \end{center}
+  \caption{साधे ज्ञानविषयक प्रतिमान.}
+  \ollabel{fig:simple}
+\end{figure}
+
+\begin{prob}
+  \olref[aml][el][trw]{fig:simple} मधील प्रतिमानात
+  पुढीलपैकी कोणती विधाने सत्य आहेत ते ठरवा:
+  \begin{enumerate}
+    \item $\mSat{M}{\lnot q}[w_1]$;
+    \item $\mSat{M}{\Knows_a \lnot q}[w_1]$;
+    \item $\mSat{M}{\Knows_b \lnot q}[w_1]$;
+    \item $\mSat{M}{\Knows_b q \lor \Knows_b \lnot q}[w_2]$;
+    \item $\mSat{M}{\Knows_a( \Knows_b q \lor \Knows_b \lnot q)}[w_2]$;
+    \item $\mSat{M}{\EKnows_{\{a,b\}} \lnot q}[w_3]$;
+    \end{enumerate}
+\end{prob}
+
+जगात सत्य असण्याची मूलभूत व्याख्या दिल्यानंतर,
+मोडल वैधता आणि तार्किक निष्पन्नता यांसारख्या सामान्य
+मोडल तर्कशास्त्रातील इतर चिन्हार्थमीमांसक संकल्पनाही
+इथे लागू होतात; फक्त मोडल संकारकांच्या अर्थलक्षणाकडे
+पाहण्याचा हा नवा दृष्टिकोन वापरावा लागतो.
+
+आता सामायिक-ज्ञान संकारक~$\CKnows_G$ साठी सत्यतेच्या
+अटीही देता येतात. \olref[sfr][rel][ops]{sec} मधील
+व्याख्येनुसार, संबंध~$R$ चे \emph{संक्रमक संवरण}~$R^+$
+पुढीलप्रमाणे असते:
+\begin{align*}
+  R^+ &= \bigcup_{ n \in \mathbb{N}} R^n,
+\intertext{येथे}
+  R^0 & = R \text{ आणि}\\
+  R^{n+1} & = \Setabs{\tuple{x, z}}{\exists y (R^n xy \land Ryz)}.
+\end{align*}
+मग $G$ हा कर्त्यांचा समूह असेल, तर सर्व कर्त्यांच्या
+प्राप्यता संबंधांच्या संघाचे संक्रमक संवरण म्हणून
+$R_G = ( \bigcup_{b
+\in G} R_b )^+$ परिभाषित करतो.
+
+\begin{defn}
+$G' \subseteq G$ असेल, तर $\mSat{M}{\CKnows_{G'} !A}[ w]$
+तेव्हा आणि केवळ तेव्हाच, जेव्हा $R_{G'} w w'$ असलेल्या
+प्रत्येक $w'$ साठी $\mSat{M}{!A}[w']$.
+\end{defn}
+
+\end{document}
