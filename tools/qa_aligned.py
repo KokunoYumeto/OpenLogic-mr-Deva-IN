@@ -692,6 +692,11 @@ _DOCUMENTED_PROJECTIONS = {
         (r"आणि $\Subst{M''}{R''}{y}$ परिभाषित",
          r"आणि $\Subst{M'}{R'}{y}$ परिभाषित"),
     ],
+    'OLP-0364': [
+        # OLINC-098: ordinary 'etc.' belongs in Marathi prose, not math.
+        (r'$\rep{M}[0], \rep{M}[1]$ इत्यादी',
+         r'$\rep{M}[0], \rep{M}[1], etc. $'),
+    ],
 }
 
 
