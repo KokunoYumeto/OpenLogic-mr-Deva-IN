@@ -1,0 +1,232 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: lindenbaum
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{lin}
+
+\olsection{लिंडेनबाउमचे पूर्वप्रमेय}
+
+अंतःप्रज्ञावादी तर्कशास्त्राचे संपूर्णता प्रमेय सिद्ध करताना
+$\Gamma \Proves/ !A$ असे गृहीत धरून
+$\mSat{M}{\Gamma}$ आणि~$\mSat/{M}{!A}$
+असे प्रतिमान रचले जाते.
+
+अभिजात तर्कशास्त्रात !!{derivability} चा संबंध
+सुसंगततेच्या संकल्पनेत आणता येतो. कारण !!{formula}s च्या
+एखाद्या संचापासून !!a{formula}~$!A$
+!!{derivable} असते तेव्हा आणि केवळ तेव्हाच
+त्या संचात~$!A$ चे नकरण घातल्यावर मिळणारा
+संच विसंगत असतो. अंतःप्रज्ञावादी तर्कशास्त्रात
+हे शक्य नाही. अंतःप्रज्ञावादी तर्कशास्त्रात
+$\lnot!A$ विसंगत असल्यास केवळ
+$\Proves \lnot\lnot !A$ हे मिळते.
+$\lnot\lnot!A \lif !A$ हे सर्वसाधारणपणे
+अंतःप्रज्ञावादी रीतीने खरे नसल्याने
+$\Proves !A$ असा निष्कर्ष काढता येत नाही.
+
+म्हणून प्रतिमान~$\mModel{M}$ रचताना
+!!{formula}~$!A$ ची !!{derivability} नसणे
+याची नोंद ठेवावी लागेल. त्यामुळे अभिजात
+पद्धतीप्रमाणे प्रतिमान~$\mModel{M}$
+रचण्यासाठी $\Gamma^* \supseteq \Gamma$
+असा संपूर्ण संच वापरता येणार नाही;
+कारण प्रत्येक संपूर्ण संच~$\Gamma^*$ साठी
+$\Gamma^* \Proves !A \lor \lnot !A$.
+
+संपूर्ण संच~$\Gamma^*$ वापरण्याऐवजी
+सूत्रांच्या अभाज्य संचाची संकल्पना वापरू:
+
+\begin{defn}\ollabel{defn:prime}
+  !!{formula}s चा संच~$\Gamma$
+  \emph{अभाज्य} असतो तेव्हा आणि केवळ तेव्हाच
+  पुढील अटी पूर्ण होतात:
+  \begin{enumerate}
+  \item\ollabel{defn:prime1} $\Gamma$ सुसंगत असतो,
+    म्हणजे $\Gamma \Proves/ \lfalse$;
+  \item\ollabel{defn:prime2} $\Gamma \Proves !A$
+    असेल, तर $!A \in \Gamma$; आणि
+  \item\ollabel{defn:prime3} $!A \lor !B \in \Gamma$
+    असेल, तर $!A \in \Gamma$ किंवा
+    $!B \in \Gamma$.
+  \end{enumerate}
+\end{defn}
+
+\begin{lem}[लिंडेनबाउमचे पूर्वप्रमेय]
+  \ollabel{lem:lindenbaum}
+  $\Gamma \Proves/ !A$ असेल, तर
+  $\Gamma^* \supseteq \Gamma$ असा
+  अभाज्य~$\Gamma^*$ अस्तित्वात असतो
+  आणि $\Gamma^* \Proves/ !A$.
+\end{lem}
+
+\begin{proof}
+  $!B \lor !C$ या रूपातील सर्व
+  !!{formula}s चे एक प्रगणन
+  $!B_1 \lor !C_1$, $!B_2 \lor !C_2$, \dots,
+  असू द्या. !!{formula}s च्या संचांची
+  वाढती श्रेणी~$\Gamma_n$ परिभाषित करू;
+  प्रत्येक $\Gamma_{n+1}$ हा $\Gamma_n$
+  मध्ये एक नवे !!{formula} मिळवून
+  परिभाषित केला जाईल.
+  $\Gamma^*$ हा सर्व~$\Gamma_n$ चा
+  संयोग असेल. नवी !!{formula}s अशी निवडू
+  की $\Gamma^*$ अभाज्य राहील आणि
+  $\Gamma^* \Proves/ !A$ सुद्धा राहील.
+  यासाठी प्रत्येक पायरीवर पुढील अटी
+  पूर्ण करणारा पहिला विकल्पयोग~
+  $!B_i \lor !C_i$ शोधला पाहिजे:
+  \begin{enumerate}
+  \item\ollabel{gamma-1}
+    $\Gamma_n \Proves !B_i \lor !C_i$
+  \item\ollabel{gamma-2}
+    $!B_i \notin \Gamma_n$ आणि
+    $!C_i \notin \Gamma_n$
+  \end{enumerate}
+  $\Gamma_n \cup \{!B_i\} \Proves/ !A$
+  असेल, तर $\Gamma_n$ मध्ये $!B_i$
+  मिळवू; अन्यथा $!C_i$ मिळवू.
+  हे यशस्वी होते ते दाखवायचे आहे.
+  सध्या \olref{gamma-1} आणि~
+  \olref{gamma-2} पूर्ण करणारा सर्वात
+  लहान $i$ म्हणजे $i(n)$ असे ठरवू.
+
+  $\Gamma_0 = \Gamma$ असे ठेवून
+  \[
+  \Gamma_{n+1} = \begin{cases}
+    \Gamma_n \cup \{!B_{i(n)}\} &
+    \text{जर $\Gamma_n \cup \{!B_{i(n)}\} \Proves/ !A$ असेल} \\
+    \Gamma_n \cup \{!C_{i(n)}\} & \text{अन्यथा}
+    \end{cases}
+  \]
+  अशी व्याख्या करू. $i(n)$ अपरिभाषित
+  असेल, म्हणजे $\Gamma_n \Proves !B \lor !C$
+  असताना नेहमी $!B \in \Gamma_n$
+  किंवा $!C \in \Gamma_n$ असेल, तर
+  $\Gamma_{n+1} = \Gamma_n$ ठेवू.
+  आता $\Gamma^* = \bigcup_{n=0}^\infty \Gamma_n$
+  असे ठेवू.
+
+  प्रथम प्रत्येक $n$ साठी
+  $\Gamma_n \Proves/ !A$ हे दाखवू.
+  $n$ वर आगमन करू. $n = 0$ साठी
+  हा दावा प्रमेयाच्या गृहीतकामुळे,
+  म्हणजे $\Gamma \Proves/ !A$ मुळे,
+  खरा आहे. $n>0$ असेल, तर
+  $\Gamma_n \Proves/ !A$ असल्यास
+  $\Gamma_{n+1} \Proves/ !A$
+  हे दाखवायचे आहे.
+  $i(n)$ अपरिभाषित असेल, तर
+  $\Gamma_{n+1} = \Gamma_n$;
+  काहीच सिद्ध करावे लागत नाही.
+  म्हणून $i(n)$ परिभाषित आहे असे
+  समजा. सोयीसाठी $i = i(n)$ असे लिहू.
+
+  दाव्याचे व्यत्यस्त रूप सिद्ध करू.
+  $\Gamma_{n+1} \Proves !A$ असे समजा.
+  रचनेनुसार $\Gamma_n \cup
+  \{!B_i\} \Proves/ !A$ असेल, तर
+  $\Gamma_{n+1} = \Gamma_n \cup
+  \{!B_i\}$; अन्यथा
+  $\Gamma_{n+1} = \Gamma_n \cup \{!C_i\}$.
+  पहिला प्रकार असूच शकत नाही;
+  कारण तेव्हा $\Gamma_{n+1} \Proves/ !A$.
+  म्हणून $\Gamma_n \cup
+  \{!B_i\} \Proves !A$ आणि
+  $\Gamma_{n+1} = \Gamma_n \cup \{!C_i\}$.
+  $i(n)$ च्या व्याख्येनुसार
+  $\Gamma _n \Proves !B_i \lor !C_i$.
+  $\Gamma_n \cup \{!B_i\} \Proves !A$
+  आहे. तसेच
+  $\Gamma_{n+1} = \Gamma_n \cup
+  \{!C_i\} \Proves !A$ आहे.
+  त्यामुळे $\Gamma_n \Proves !A$,
+  हेच दाखवायचे होते.
+
+  $\Gamma^* \Proves !A$ असेल, तर
+  $\Gamma' \subseteq \Gamma^*$
+  असा काही परिमित उपसंच असेल की
+  $\Gamma' \Proves !A$.
+  प्रत्येक $!D \in \Gamma'$ कोणत्या
+  तरी~$i$ साठी $\Gamma_i$ मध्ये असले
+  पाहिजे. यांपैकी सर्वात मोठा
+  $n$ घ्या. $i \le n$ असेल, तर
+  $\Gamma_i \subseteq \Gamma_n$;
+  म्हणून $\Gamma' \subseteq \Gamma_n$.
+  पण मग $\Gamma_n \Proves !A$,
+  आणि वर सिद्ध केलेल्या
+  $\Gamma_n \Proves/ !A$ शी हा विरोधाभास.
+
+  शेवटी $\Gamma^*$ अभाज्य आहे,
+  म्हणजे \olref{defn:prime} मधील
+  \olref{defn:prime1},
+  \olref{defn:prime2} आणि~
+  \olref{defn:prime3} या अटी
+  पूर्ण करतो, हे दाखवू.
+
+  प्रथम $\Gamma^* \Proves/ !A$;
+  म्हणून $\Gamma^*$ सुसंगत आहे,
+  आणि \olref{defn:prime1} पूर्ण होते.
+
+  आता $\Gamma^* \Proves !B \lor !C$
+  असेल, तर $!B \in \Gamma^*$
+  किंवा $!C \in \Gamma^*$,
+  हे दाखवू. यावरून
+  \olref{defn:prime3} सिद्ध होते;
+  कारण $!B \lor !C \in \Gamma^*$
+  असेल, तर $\Gamma^* \Proves !B
+  \lor !C$ सुद्धा. म्हणून
+  $\Gamma^* \Proves !B \lor !C$
+  पण $!B \notin \Gamma^*$
+  आणि $!C \notin \Gamma^*$
+  असे समजा.
+  $\Gamma^* \Proves !B \lor !C$
+  असल्याने कोणत्या तरी~$n$ साठी
+  $\Gamma_n \Proves !B \lor !C$.
+  $!B \lor !C$ हा विकल्पयोग
+  प्रगणनात, समजा $!B_j \lor !C_j$
+  म्हणून, येतो.
+  $!B_j \lor !C_j$ हा
+  $i(n)$ च्या व्याख्येतील गुणधर्म
+  पूर्ण करतो: $\Gamma_n \Proves !B_j
+  \lor !C_j$, तर
+  $!B_j \notin \Gamma_n$ आणि
+  $!C_j \notin \Gamma_n$.
+  त्या निर्देशांकापेक्षा आधीचे निर्देशांक
+  परिमित संख्येने आहेत. हा विकल्पयोग
+  निवडला जात नाही तोवर अटी पूर्ण करत
+  राहतो; तोवर निवडलेला विकल्पयोग
+  $!B_i \lor !C_i$ त्याच्या आधीचाच असतो.
+  त्यातील $!B_i$ किंवा $!C_i$
+  मिळवल्यावर तो पुन्हा अटी पूर्ण करत नाही.
+  म्हणून काही टप्प्यावर~$m$
+  असे मिळेल की $j = i(m)$.
+  पण तेव्हा $!B \in \Gamma_{m+1}$
+  किंवा $!C \in \Gamma_{m+1}$;
+  आणि हे $!B \notin \Gamma^*$
+  व $!C \notin \Gamma^*$ या
+  गृहीतकाच्या विरुद्ध आहे.
+
+  आता $\Gamma^* \Proves !B$
+  असे समजा. मग
+  $\Gamma^* \Proves !B \lor !B$.
+  पण $\Gamma^* \Proves !B \lor !B$
+  असेल, तर $!B \in \Gamma^*$,
+  हे आत्ताच सिद्ध केले आहे.
+  त्यामुळे $\Gamma^*$ हा
+  \olref{defn:prime} मधील
+  \olref{defn:prime2} पूर्ण करतो.
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves/ \bot$ असेल, तर
+अभिजात तर्कशास्त्रात $\Gamma$ सुसंगत
+असतो, म्हणजे~$\Gamma$ मधील सर्व सूत्रांना
+सत्य करणारे मूल्यांकन अस्तित्वात असते,
+हे दाखवा.
+\end{prob}
+
+\end{document}
