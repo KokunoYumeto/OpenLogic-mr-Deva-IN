@@ -1,0 +1,203 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: filtrations-def
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{fil}
+
+\olsection{निस्यंदने}
+
+$\Gamma$ मधून मिळणारे $\mModel{M}$ चे “एकमेव” निस्यंदन
+परिभाषित करण्याऐवजी कोणते प्रतिमान~$\mModel{M^*}$ हे
+$\mModel{M}$ चे निस्यंदन ठरते ते परिभाषित करू.
+सर्व निस्यंदनांमध्ये जगांचा संच~$W^*$ आणि मूल्यांकन~$V^*$
+समान असतात. मात्र वेगवेगळ्या निस्यंदनांचे प्राप्यता
+संबंध~$R^*$ वेगळे असू शकतात. निस्यंदन ठरण्यासाठी
+$R^*$ ने काही अटी पूर्ण कराव्या लागतात. आपला मुख्य
+निष्कर्ष, म्हणजे $!A \in \Gamma$ असल्यास
+$\mSat{M}{!A}[w]$ तेव्हा आणि तेव्हाच
+$\mSat{M^*}{!A}[{[w]}]$, सिद्ध करण्यासाठी
+आपण नेमक्या याच अटी वापरू.
+
+\begin{defn}\ollabel{defn:filtration}
+  $\Gamma$ उपसूत्रांखाली बंद आहे आणि
+  $\mModel{M} = \tuple{W, R, V}$ असे समजा.
+  $\mModel{M}$ चे $\Gamma$ मधून मिळणारे
+  \emph{निस्यंदन} म्हणजे पुढील अटी पूर्ण करणारे
+  कोणतेही प्रतिमान $\mModel{M^*} = \tuple{W^*,R^*,V^*}$:
+  \begin{enumerate}
+  \item $W^* = \Setabs{[w]}{w \in W}$;
+  \item \ollabel{defn:filtration-R}%
+    कोणत्याही $u,v \in W$ साठी:
+    \begin{enumerate}
+    \item \ollabel{defn:filtration-R1}%
+      $Ruv$ असेल, तर $R^*[u][v]$;
+    \tagitem{prvBox}{\ollabel{defn:filtration-R2}%
+      $R^*[u][v]$ असेल, तर कोणत्याही $\Box !A \in \Gamma$ साठी,
+      $\mSat{M}{\Box!A}[u]$ असल्यास $\mSat{M}{!A}[v]$}{};
+    \tagitem{prvDiamond}{\ollabel{defn:filtration-R3}%
+      $R^*[u][v]$ असेल, तर कोणत्याही $\Diamond !A \in \Gamma$ साठी,
+      $\mSat{M}{!A}[v]$ असल्यास $\mSat{M}{\Diamond!A}[u]$.}{}
+    \end{enumerate}
+  \item $V^*(p) = \Setabs{[u]}{u \in V(p)}$.
+  \end{enumerate}
+\end{defn}
+
+$V^*(p)$ म्हणजे काय ते नीट पाहू: $\mModel{M}$ मध्ये
+ज्या प्रत्येक जग~$w$ वर~$p$ सत्य आहे, त्याच्या
+तुल्यतावर्ग~$[w]$ यांचा तो संच आहे. एका बाजूने,
+$w \in V(p)$ असेल, तर
+या व्याख्येवरून $[w] \in V^*(p)$. पण उलट,
+$[w] \in V^*(p)$ असल्यावर $w \in V(p)$ असेलच असे नाही.
+$[w] \in V^*(p)$ असेल, तर \emph{एखाद्या}~$u \in V(p)$
+साठी $[w] = [u]$ एवढीच खात्री मिळते. अर्थात
+$[w] = [u]$ याचा अर्थ $w \equiv u$. म्हणून
+$[w] \in V^*(p)$ असल्यावर एखाद्या $u \in V(p)$
+साठी $w \equiv u$ आहे, एवढाच निष्कर्ष काढता येतो.
+
+\begin{thm}\ollabel{thm:filtrations}
+  $\mModel{M^*}$ हे $\mModel{M}$ चे $\Gamma$ मधून
+  मिळणारे निस्यंदन असेल, तर प्रत्येक $!A \in \Gamma$
+  आणि $w \in W$ साठी $\mSat{M}{!A}[w]$ असेल तेव्हा
+  आणि तेव्हाच $\mSat{M^*}{!A}[{[w]}]$ असेल.
+\end{thm}
+
+\begin{proof}
+  $\Gamma$ उपसूत्रांखाली बंद आहे हे वापरून~$!A$ वर
+  विगमन करू. $!A \in \Gamma$ आणि $\Gamma$ उप-!!{formula}s
+  खाली बंद असल्याने~$!A$ ची सर्व उप-!!{formula}s
+  देखील $\in \Gamma$. त्यामुळे प्रत्येक विगमन-पायरीत
+  $!A$ च्या उप-!!{formula}s ना विगमन गृहीतक लागू होते.
+  \begin{enumerate}
+    \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat{M}{\indfrm}[w]$
+        किंवा $\mSat{M^*}{\indfrm}[{[w]}]$ यांपैकी काहीच खरे नाही.}}{}
+    \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M}{\indfrm}[w]$
+        आणि $\mSat{M^*}{\indfrm}[{[w]}]$ दोन्ही खरे आहेत.}}{}
+    \item \indcase{!A}{p}{डावीकडून उजवीकडे जाणारा निष्कर्ष
+      तात्काळ मिळतो: $\mSat{M}{\indfrm}[w]$ असेल, तर
+      $w \in V(p)$; त्यामुळे $[w] \in V^*(p)$,
+      म्हणजेच $\mSat{M^*}{\indfrm}[{[w]}]$.
+      उलट, $\mSat{M^*}{\indfrm}[{[w]}]$ असे समजा;
+      म्हणजे $[w] \in V^*(p)$. मग एखाद्या
+      $v \in V(p)$ साठी $w \equiv v$. म्हणून
+      $\mSat{M}{p}[v]$ सुद्धा. $w \equiv v$ असल्याने
+      $w$ व $v$ येथे $\Gamma$ मधील नेमकी तीच
+      !!{formula}s सत्य आहेत. गृहीतकानुसार
+      $p \in \Gamma$ आणि $\mSat{M}{p}[v]$;
+      म्हणून $\mSat{M}{\indfrm}[w]$.}
+
+    \tagitem{prvNot}{\iftag{probNot}{सराव.}{\indcase{!A}{\lnot
+          !B}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
+          $\mSat/{M}{!B}[w]$. विगमन गृहीतकानुसार,
+          $\mSat/{M}{!B}[w]$ तेव्हा आणि तेव्हाच
+          $\mSat/{M^*}{!B}[{[w]}]$. अखेरीस,
+          $\mSat/{M^*}{!B}[{[w]}]$ तेव्हा आणि तेव्हाच
+          $\mSat{M^*}{\indfrm}[{[w]}]$.}}}{}
+
+    \tagitem{prvAnd}{\iftag{probAnd}{सराव.}{\indcase{!A}{(!B \land
+          !C)}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
+          $\mSat{M}{!B}[w]$ आणि $\mSat{M}{!C}[w]$.
+          विगमन गृहीतकानुसार, $\mSat{M}{!B}[w]$ तेव्हा आणि तेव्हाच
+          $\mSat{M^*}{!B}[{[w]}]$, तसेच $\mSat{M}{!C}[w]$
+          तेव्हा आणि तेव्हाच $\mSat{M^*}{!C}[{[w]}]$.
+          आणि $\mSat{M^*}{\indfrm}[{[w]}]$ तेव्हा आणि तेव्हाच
+          $\mSat{M^*}{!B}[{[w]}]$ आणि
+          $\mSat{M^*}{!C}[{[w]}]$.}}}{}
+
+    \tagitem{prvOr}{\iftag{probOr}{सराव.}{\indcase{!A}{(!B \lor
+          !C)}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
+          $\mSat{M}{!B}[w]$ किंवा $\mSat{M}{!C}[w]$.
+          विगमन गृहीतकानुसार, $\mSat{M}{!B}[w]$ तेव्हा आणि तेव्हाच
+          $\mSat{M^*}{!B}[{[w]}]$, तसेच $\mSat{M}{!C}[w]$
+          तेव्हा आणि तेव्हाच $\mSat{M^*}{!C}[{[w]}]$.
+          आणि $\mSat{M^*}{\indfrm}[{[w]}]$ तेव्हा आणि तेव्हाच
+          $\mSat{M^*}{!B}[{[w]}]$ किंवा
+          $\mSat{M^*}{!C}[{[w]}]$.}}}{}
+
+    \tagitem{prvIf}{\iftag{probIf}{सराव.}{\indcase{!A}{(!B \lif
+          !C)}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
+          $\mSat/{M}{!B}[w]$ किंवा $\mSat{M}{!C}[w]$.
+          विगमन गृहीतकानुसार, $\mSat{M}{!B}[w]$ तेव्हा आणि तेव्हाच
+          $\mSat{M^*}{!B}[{[w]}]$, तसेच $\mSat{M}{!C}[w]$
+          तेव्हा आणि तेव्हाच $\mSat{M^*}{!C}[{[w]}]$.
+          आणि $\mSat{M^*}{\indfrm}[{[w]}]$ तेव्हा आणि तेव्हाच
+          $\mSat/{M^*}{!B}[{[w]}]$ किंवा
+          $\mSat{M^*}{!C}[{[w]}]$.}}}{}
+
+    \tagitem{prvIff}{\iftag{probIff}{सराव.}{\indcase{!A}{(!B \liff
+          !C)}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
+          $\mSat{M}{!B}[w]$ आणि $\mSat{M}{!C}[w]$,
+          किंवा $\mSat/{M}{!B}[w]$ आणि $\mSat/{M}{!C}[w]$.
+          विगमन गृहीतकानुसार, $\mSat{M}{!B}[w]$ तेव्हा आणि तेव्हाच
+          $\mSat{M^*}{!B}[{[w]}]$, तसेच $\mSat{M}{!C}[w]$
+          तेव्हा आणि तेव्हाच $\mSat{M^*}{!C}[{[w]}]$.
+          आणि $\mSat{M^*}{\indfrm}[{[w]}]$ तेव्हा आणि तेव्हाच
+          $\mSat{M^*}{!B}[{[w]}]$ आणि
+          $\mSat{M^*}{!C}[{[w]}]$, किंवा
+          $\mSat/{M^*}{!B}[{[w]}]$ आणि
+          $\mSat/{M^*}{!C}[{[w]}]$.}}}{}
+
+    \tagitem{prvBox}{\iftag{probBox}{सराव.}{\indcase{!A}{\Box
+          !B}{$\mSat{M}{\indfrm}[w]$ असे समजा.
+          $\mSat{M^*}{\indfrm}[{[w]}]$ दाखवण्यासाठी
+          $R^*[w][v]$ असेल असे कोणतेही~$v$ घ्या.
+          \olref{defn:filtration}\olref{defn:filtration-R2}
+          वरून $\mSat{M}{!B}[v]$; आणि विगमन गृहीतकानुसार
+          $\mSat{M^*}{!B}[{[v]}]$. $v$ कोणतेही असल्याने
+          $\mSat{M^*}{\indfrm}[{[w]}]$.
+
+          उलट, $\mSat{M^*}{\indfrm}[{[w]}]$ असे समजा
+          आणि $Rwv$ असेल असे कोणतेही~$v$ घ्या.
+          \olref{defn:filtration}\olref{defn:filtration-R1}
+          वरून $R^*[w][v]$; म्हणून
+          $\mSat{M^*}{!B}[{[v]}]$. विगमन गृहीतकानुसार
+          $\mSat{M}{!B}[v]$. $v$ कोणतेही असल्याने
+          $\mSat{M}{\indfrm}[w]$.}}}{}
+
+    \tagitem{prvDiamond}{\iftag{probDiamond}{सराव.}{\indcase{!A}{\Diamond
+          !B}{$\mSat{M}{\indfrm}[w]$ असे समजा. मग एखाद्या
+          $v \in W$ साठी $Rwv$ आणि $\mSat{M}{!B}[v]$.
+          विगमन गृहीतकानुसार $\mSat{M^*}{!B}[{[v]}]$;
+          तसेच \olref{defn:filtration}\olref{defn:filtration-R1}
+          वरून $R^*[w][v]$. म्हणून
+          $\mSat{M^*}{\indfrm}[{[w]}]$.
+
+          आता $\mSat{M^*}{\indfrm}[{[w]}]$ असे समजा.
+          मग $R^*[w][v]$ आणि $\mSat{M^*}{!B}[{[v]}]$
+          असेल असा एखादा $[v] \in W^*$ आहे.
+          विगमन गृहीतकानुसार $\mSat{M}{!B}[v]$.
+          \olref{defn:filtration}\olref{defn:filtration-R3}
+          वरून $\mSat{M}{\indfrm}[w]$.}}}{}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[nml][fil][fil]{thm:filtrations} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+प्रतिमानातील प्रत्येक जगावरील सत्यतेविषयीचा निष्कर्ष
+प्रतिमानातील सत्यतेसाठी आणि प्रतिमानांच्या वर्गातील
+वैधतेसाठीही लागू होतो.
+
+\begin{cor}
+  $\Gamma$ उपसूत्रांखाली बंद आहे असे समजा. मग:
+  \begin{enumerate}
+  \item $\mModel{M^*}$ हे $\mModel{M}$ चे $\Gamma$
+    मधून मिळणारे निस्यंदन असेल, तर कोणत्याही
+    $!A \in \Gamma$ साठी $\mSat{M}{!A}$ असेल तेव्हा
+    आणि तेव्हाच $\mSat{M^*}{!A}$ असेल.
+  \item $\mClass{C}$ हा प्रतिमानांचा वर्ग असेल आणि
+    $\Gamma(\mClass{C})$ हा $\mClass{C}$ मधील प्रतिमानांच्या
+    $\Gamma$-निस्यंदनांचा वर्ग असेल, तर कोणतेही
+    !!{formula}~$!A \in \Gamma$ हे $\mClass{C}$ मध्ये
+    वैध असेल तेव्हा आणि तेव्हाच ते
+    $\Gamma(\mClass{C})$ मध्ये वैध असेल.
+  \end{enumerate}
+\end{cor}
+
+
+
+\end{document}
