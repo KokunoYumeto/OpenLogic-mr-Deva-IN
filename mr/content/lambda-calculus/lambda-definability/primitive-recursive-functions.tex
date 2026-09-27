@@ -1,0 +1,160 @@
+% Part: lambda-calculus
+% Chapter: lambda-definability
+% Section: primitive-recursive-functions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{ldf}{prf}
+\olsection{आदिम पुनरावर्ती फलने \usetoken{S}{lambda definable} असतात}
+
+मूलभूत फलने $\Zero$, $\Succ$ आणि $\Proj{n}{i}$
+यांपासून संयोजन व आदिम पुनरावर्तन वापरून परिभाषित
+करता येणारी फलने म्हणजे आदिम पुनरावर्ती फलने, हे लक्षात घ्या.
+
+\begin{lem}
+  \ollabel{lem:basic}
+  मूलभूत आदिम पुनरावर्ती फलने $\Zero$, $\Succ$ आणि
+  प्रक्षेपणे~$\Proj{n}{i}$ ही !!{lambda definable} आहेत.
+\end{lem}
+
+\begin{proof}
+पुढील पदे त्यांना !!{lambda define} करतात:
+\begin{align*}
+  \fn{Zero} & \ident \lambd[a][\lambd[fx][x]]\\
+  \fn{Succ} & \ident \lambd[a][\lambd[fx][f (a f x)]] \\
+  \fn{Proj}^n_i & \ident \lambd[x_0\dots x_{n-1}][x_i]
+\end{align*}
+\end{proof}
+
+\begin{lem}
+  \ollabel{lem:comp} $k$-स्थानी फलन $f$ आणि $n$-स्थानी
+  फलने $g_0, \dots, g_{k-1}$ ही अनुक्रमे $F$, $G_0$,
+  \dots, $G_{k-1}$ या पदांनी !!{lambda definable} आहेत,
+  आणि $h$ हे त्यांच्यापासून संयोजनाने परिभाषित आहे असे समजा.
+  मग $H$ ने निरूपित फलन !!{lambda definable} आहे.
+\end{lem}
+
+\begin{proof}
+  पुढील पद $h$ ला !!{lambda define} करते:
+  \[
+  H \ident \lambd[x_0 \dots x_{n-1}][F\, (G_0 x_0 \dots
+    x_{n-1}) \dots (G_{k-1} x_0 \dots x_{n-1})]
+  \]
+  याची पडताळणी सरावासाठी सोडली आहे.
+\end{proof}
+
+\begin{prob}
+  $H\num{n_0}\dots\num{n_{n-1}} \red \num{h(n_0, \dots,
+    n_{n-1})}$ हे दाखवून \olref[lam][ldf][prf]{lem:comp}
+  चा पुरावा पूर्ण करा.
+\end{prob}
+
+\olref{lem:comp} मध्ये $f$ आणि $g_0$,
+\dots,~$g_{k-1}$ ही आदिम पुनरावर्ती असणे आवश्यक
+नव्हते, हे लक्षात घ्या; ती सर्वत्र परिभाषित आणि
+!!{lambda definable} असणे पुरेसे आहे.
+
+\begin{lem}\ollabel{lem:prim}
+  $f$ हे $n$-स्थानी आणि~$g$ हे $n+2$-स्थानी फलन
+  असून ती अनुक्रमे $F$ आणि~$G$ या पदांनी
+  !!{lambda definable} आहेत असे समजा. $h$ हे
+  $f$ आणि $g$ यांच्यापासून आदिम पुनरावर्तनाने परिभाषित असेल,
+  तर $h$ देखील !!{lambda definable} आहे.
+\end{lem}
+
+\begin{proof}
+  $h$ ची व्याख्या अशी आहे, हे लक्षात घ्या:
+  \begin{align*}
+    h(x_1, \dots, x_n, 0) &= f(x_1, \dots, x_n)\\
+    h(x_1, \dots, x_n, y+1) & = g(x_1, \dots, x_n, y, h(x_1, \dots, x_n, y)).
+  \end{align*}
+  सहज अर्थाने, आदिम पुनरावर्ती व्याख्येत $f(x_1,
+  \dots, x_n)$ या सुरुवातीच्या मूल्यापासून $h$ चे
+  मूल्य $y$ वेळा अद्ययावत होते. हे चर्च अंकांच्या
+  व्याख्येसारखे आहे: तेही पुनरावर्तक आहेत.
+
+  सोपेपणासाठी आपण एका अतिरिक्त युक्तिवाद~$x$ साठी
+  व्याख्या व पुरावा देऊ. $h$ ला !!{lambda define}
+  करणारे पद असे आहे:
+  \begin{align*}
+    H \ident & \lambd[x][\lambd[y][\fn{Snd} (y
+        D \tuple{\num{0}, F x})]]
+    \intertext{जेथे }
+    D \ident & \lambd[p][\tuple{\fn{Succ} (\fn{Fst}\, p), (G x
+          (\fn{Fst}\, p) (\fn{Snd}\, p))}]
+  \end{align*}
+  पुनरावर्तनात आपण ठेवलेली अवस्था ही जोडी आहे:
+  पहिला घटक सध्याचे $y$ आणि दुसरा त्या स्थितीसाठीचे
+  $h$ चे मूल्य. प्रत्येक पायरीत $y$ आणि $h$
+  यांच्या नव्या मूल्यांची जोडी तयार होते. पुनरावर्तन
+  संपल्यावर तिचा दुसरा घटक परत करतो; तेच $h$ चे
+  अंतिम मूल्य असते. हे निरूपण आदिम पुनरावर्तनाचेच
+  आहे, हे आता सिद्ध करू.
+
+  कोणत्याही $n$ आणि $m$ साठी $H\,\num{n}\,\num{m} \red
+  \num{h(n,m)}$ दाखवायचे आहे. त्यासाठी आधी $D_n \ident
+  \Subst{D}{\num{n}}{x}$ असेल, तर $D_n^m \tuple{\num{0}, F\, \num{n}} \red
+  \tuple{\num{m}, \num{h(n, m)}}$ हे दाखवू. $m$ वरील
+  विगमनाने पुढे जाऊ.
+
+  $m=0$ असेल, तर $D_n^0 \tuple{\num{0}, F\, \num{n}} \red
+  \tuple{\num{0}, \num{h(n, 0)}}$ दाखवायचे आहे.
+  पण $D_n^0 \tuple{\num{0}, F\,
+    \num{n}}$ म्हणजेच $\tuple{\num{0}, F\, \num{n}}$.
+  $F$ हे $f$ ला !!{lambda define}s; त्यामुळे याचे
+  $\tuple{\num{0}, \num{f(n)}}$ मध्ये न्यूनीकरण होते;
+  आणि $f(n) = h(n, 0)$ असल्याने हेच
+  $\tuple{\num{0}, \num{h(n,0)}}$ आहे.
+
+  आता $D_n^m \tuple{\num{0}, F\, \num{n}} \red
+  \tuple{\num{m}, \num{h(n, m)}}$ असे समजा.
+  $D_n^{m+1} \tuple{\num{0}, F\, \num{n}} \red
+  \tuple{\num{m+1}, \num{h(n, m+1)}}$ हे दाखवू:
+  \begin{align*}
+    D_n^{m+1} \tuple{\num{0}, F\, \num{n}}
+    & \ident D_n(D_n^{m} \tuple{\num{0}, F\, \num{n}})\\
+    & \red D_n\,\tuple{\num{m}, \num{h(n, m)}} \text{\qquad (विगमन गृहीतकाने)}\\
+    & \ident (\lambd[p][
+      \tuple{
+        \fn{Succ} (\fn{Fst}\, p), (G \, \num{n} (\fn{Fst}\, p) (\fn{Snd}\, p))
+    }]) \tuple{\num{m}, \num{h(n,m)}}\\
+    & \redone
+    \tuple{\fn{Succ} (\fn{Fst}\, \tuple{\num{m}, \num{h(n,m)}}),\\
+      & \qquad (G \, \num{n} (\fn{Fst}\, \tuple{\num{m}, \num{h(n,m)}}) (\fn{Snd}\, \tuple{\num{m}, \num{h(n,m)}}))}\\
+    & \red
+    \tuple{\fn{Succ}\, \num{m}, (G \, \num{n} \,\num{m} \, \num{h(n,m)})}\\
+    & \red \tuple{\num{m+1}, \num{g(n, m, h(n, m))}}
+  \end{align*}
+  $g(n, m, h(n, m)) = h(n, m+1)$ असल्याने हे सिद्ध झाले.
+
+  शेवटी पुढील न्यूनीकरण पाहा:
+  \begin{align*}
+    H\,\num n\,\num m &\ident \lambd[x][\lambd[y][\fn{Snd} (y
+        (\lambd[p].\tuple{\fn{Succ} (\fn{Fst}\, p), (G\, x\,
+          (\fn{Fst}\, p)\, (\fn{Snd}\, p))}) \tuple{\num{0}, F x})]]\\
+    & \qquad\,\num n\, \num m\\
+    & \red \fn{Snd} (\num m \,
+    \underbrace{(\lambd[p].\tuple{\fn{Succ} (\fn{Fst}\, p), (G \,\num n\,
+      (\fn{Fst}\, p) (\fn{Snd}\, p))})}_{D_n} \tuple{\num{0}, F \num n})\\
+    & \ident \fn{Snd} (\num m \, D_n\, \tuple{\num{0}, F \num n})\\
+    & \red \fn{Snd} \,(D_n^m  \tuple{\num{0}, F \num n})\\
+    & \red \fn{Snd} \,\tuple{\num{m}, \num{h(n, m)}} \\
+    & \red \num{h(n,m)}.
+  \end{align*}
+\end{proof}
+
+\begin{prop}
+  प्रत्येक आदिम पुनरावर्ती फलन !!{lambda definable} आहे.
+\end{prop}
+
+\begin{proof}
+  \olref{lem:basic} नुसार सर्व मूलभूत फलने
+  !!{lambda definable} आहेत. तसेच \olref{lem:comp}
+  आणि \olref{lem:prim} नुसार !!{lambda definable}
+  फलनांचा वर्ग संयोजन व आदिम पुनरावर्तन यांच्या
+  अंतर्गत बंद आहे.
+\end{proof}
+
+\end{document}

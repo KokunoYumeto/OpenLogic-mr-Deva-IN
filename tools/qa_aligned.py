@@ -761,6 +761,13 @@ _DOCUMENTED_PROJECTIONS = {
         # OLINC-120: the relation's arity must match its k arguments.
         (r'$R \subseteq \Nat^k$', r'$R \subseteq \Nat^n$'),
     ],
+    'OLP-0378': [
+        # OLINC-121: the last composition term is G_{k-1}, not G_k.
+        (r'$G_{k-1}$ या पदांनी', r'$G_k$ या पदांनी'),
+        # OLINC-123: primitive recursion uses the step function g.
+        (r'h(x_1, \dots, x_n, y+1) & = g(',
+         r'h(x_1, \dots, x_n, y+1) & = h('),
+    ],
 }
 
 
