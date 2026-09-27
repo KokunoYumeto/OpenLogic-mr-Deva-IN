@@ -1233,6 +1233,12 @@ _DOCUMENTED_PROJECTIONS = {
          r'\lif \lnot p}[w_2]$',
          r'$\mSat/{M}{\lnot q \lif \lnot p}[w_2]$'),
     ],
+    'OLP-0562': [
+        # OLINC-247: the proof fixes B in D, but its bounding set uses
+        # an undefined lowercase b. Project the corrected binder for parity.
+        (r'(\exists x \in B)(x \subseteq V_\delta',
+         r'(\exists x \in b)(x \subseteq V_\delta'),
+    ],
 }
 
 

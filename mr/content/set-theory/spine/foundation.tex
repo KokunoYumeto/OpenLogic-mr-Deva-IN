@@ -1,0 +1,81 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{foundation}
+
+\olsection{पायाभूतता}
+
+आपले काम फक्त \emph{जवळजवळ} पूर्ण झाले आहे, \emph{पूर्णपणे} नाही. कारण $\ZFminus$ मधील कोणत्याही तत्त्वावरून \emph{प्रत्येक} संच कोणत्या तरी $V_\alpha$ मध्ये आहे, म्हणजे प्रत्येक संच कोणत्या तरी टप्प्यावर तयार होतो, याची खात्री मिळत नाही.
+
+पदानुक्रमाबाहेर काही संच आहेत की नाहीत, याची आपल्याला गणिती दृष्टीने \emph{पर्वा नाही} असा एक सरळ अर्थ आहे: तसे संच असतील, तर त्यांच्याकडे दुर्लक्ष करता येईल. पण \emph{संचाची संकल्पना} मांडताना प्रत्येक संच कोणत्या तरी टप्प्यावर तयार होतो, हीच कल्पना आपण वापरली आहे (\olref[z][story]{sec} मधील \stageshier{} पाहा). म्हणून पदानुक्रमाबाहेर संच असण्याची शक्यता आपल्याला वगळायची आहे. त्यासाठी प्रत्येक संच पदानुक्रमात कुठे तरी येतो याची हमी देणारे नवे स्वयंसिद्धक घालावे लागेल.
+
+$V_\alpha$ हेच आपले टप्पे असल्यामुळे पुढील विधान थेट स्वयंसिद्धक म्हणून घेता येईल:
+
+\begin{defish}
+\emph{नियमितता.} $\forall A \exists \alpha\, A \subseteq V_\alpha$
+\end{defish}
+
+ही पद्धत पूर्णपणे योग्य ठरेल. मात्र पुढील विभागात स्पष्ट होणाऱ्या कारणांमुळे आपण याऐवजी दुसरे स्वयंसिद्धक स्वीकारू:
+
+\begin{axiom}[पायाभूतता]
+$(\forall A \neq \emptyset)(\exists B \in A)A \cap B = \emptyset$.
+\end{axiom}
+
+काही प्रयत्नांनंतर $\ZFminus$ मध्ये पायाभूततेवरून नियमितता मिळते, हे दाखवता येते:
+\begin{defn}
+प्रत्येक संच $A$ साठी पुढीलप्रमाणे ठेवू:
+\begin{align*}
+	\text{cl}_0(A) &= A,\\
+	\text{cl}_{n+1}(A) &= \bigcup \text{cl}_n(A),\\
+	\text{trcl}(A) &= \bigcup_{n < \omega} \text{cl}_{n}(A).
+\end{align*}
+$\text{trcl}(A)$ ला $A$ चे \emph{संक्रमक आवरण} म्हणू.
+\end{defn}
+\noindent
+``संक्रमक आवरण'' हे नाव योग्य आहे:
+\begin{prop}\ollabel{subsetoftrcl}
+$A \subseteq \trcl{A}$ आणि $\trcl{A}$ हा संक्रमक संच आहे.
+\end{prop}
+
+\begin{proof}
+$A = \text{cl}_0(A) \subseteq \text{trcl}(A)$ हे उघड आहे. आणि $x
+\in b \in \trcl{A}$ असेल, तर एखाद्या $n$ साठी $b \in \text{cl}_n(A)$; म्हणून $x
+\in \text{cl}_{n+1}(A) \subseteq \text{trcl}(A)$.
+\end{proof}
+
+\begin{lem}\ollabel{lem:TransitiveWellFounded}
+$A$ हा संक्रमक संच असेल, तर $A \subseteq V_\alpha$ असेल अशी काही $\alpha$ अस्तित्वात असते.
+\end{lem}
+
+\begin{proof}
+\olref[ordinals][opps]{defsupstrict} मधील ``$\supstrict(X)$'' ची व्याख्या आठवून पुढील दोन संच परिभाषित करू:
+\begin{align*}
+	D  &= \Setabs{x \in A}{\forall \delta\ x \nsubseteq V_\delta}\\
+	\alpha &= \supstrict\Setabs{\delta}{(\exists x \in A)
+	(x \subseteq V_\delta \land (\forall \gamma \in \delta)x \nsubseteq V_\gamma)}
+\end{align*}
+$D = \emptyset$ मानू. मग $x \in A$ असेल, तर $x \subseteq V_\delta$ असेल अशी काही $\delta$ असते. क्रमसूचक संख्या सुक्रमित असल्याने $(\forall \gamma \in \delta)x \nsubseteq V_\gamma$ ही अटही पूर्ण करणारी सर्वांत लहान अशी संख्या निवडता येते. म्हणून $\delta \in \alpha$; त्यामुळे \olref[spine][Valphabasic]{Valphabasicprops} वरून $x \in V_\alpha$. यावरून अपेक्षेप्रमाणे $A \subseteq
+V_{\alpha}$.
+
+म्हणून $D = \emptyset$ हे दाखवणे पुरेसे आहे. विसंगतीसाठी तसे नाही असे मानू. पायाभूततेवरून $B \in D \subseteq A$ असा सदस्य मिळतो की $D \cap B
+= \emptyset$. $x \in B$ असेल, तर $A$ संक्रमक असल्याने $x \in A$; आणि $x \notin D$ असल्याने $\exists \delta\ x \subseteq
+V_\delta$. आता
+\[
+	\beta = \supstrict\Setabs{\delta}{(\exists x \in B)(x \subseteq V_\delta \land (\forall \gamma < \delta)x \nsubseteq V_\gamma)}.
+\]
+असे ठेवू. पूर्वीप्रमाणे $B \subseteq V_\beta$ मिळते; पण ते $B \in
+D$ या विधानाशी विसंगत आहे.
+\end{proof}
+
+\begin{thm}\ollabel{zfentailsregularity}
+नियमितता लागू आहे.
+\end{thm}
+
+\begin{proof}
+$A$ निश्चित करू. \olref{subsetoftrcl} वरून $A \subseteq \trcl{A}$ आणि हा आवरण-संच संक्रमक आहे. म्हणून \olref{lem:TransitiveWellFounded} वरून $A \subseteq \trcl{A} \subseteq V_\alpha$ असेल अशी काही $\alpha$ असते.
+\end{proof}
+
+या निष्कर्षांवरून $\ZFminus$ मध्ये $\emph{पायाभूतता}\Rightarrow\emph{नियमितता}$ हे सशर्त विधान सिद्ध होते. \olref[spine][rank]{zfminusregularityfoundation} मध्ये $\ZFminus$ मध्ये $\emph{नियमितता}\Rightarrow\emph{पायाभूतता}$ हेही सिद्ध होते असे दाखवू. म्हणून $\ZFminus$ च्या संदर्भात पायाभूतता आणि नियमितता \emph{समतुल्य} आहेत. याचा अर्थ, $\ZFminus$ दिल्यावर नियमिततेशी असलेल्या समतुल्यतेवरून पायाभूततेचे समर्थन करता येते. आणि \stageshier{} च्या आधारे नियमिततेचे समर्थन लगेच करता येते.
+
+\end{document}
