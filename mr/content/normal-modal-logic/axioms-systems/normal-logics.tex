@@ -1,0 +1,143 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: normal-logics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{nor}
+
+\olsection{सामान्य मोडल तर्कशास्त्रे}
+
+मोडल !!{formula}s चा प्रत्येक संच स्वयंसिद्धकांच्या
+एखाद्या संचापासून सिद्ध करता येणाऱ्या
+!!{formula}s चा संच म्हणून सहज वर्णन करता येत
+नाही. मोडल तर्कशास्त्रे सुस्थित असावीत अशी
+आपली अपेक्षा आहे. सर्वप्रथम, अभिजात विधानीय
+तर्कशास्त्रात आपण !!{derive} करू शकतो ते सर्व
+अजूनही !!{derivable} असावे; आता !!{formula}s
+मध्ये \iftag{prvBox}{$\Box$\iftag{prvDiamond}{
+    आणि~}{}}{}\iftag{prvDiamond}{$\Diamond$}{} देखील
+येऊ शकतात, हे अर्थातच लक्षात घेतले पाहिजे.
+यासाठी मोडल तर्कशास्त्रात सर्व सर्वतः-सत्य दृष्टांत
+असावेत आणि ते विध्यात्मक अनुमानाखाली बंद असावे,
+अशी अट घालतो.
+
+\begin{defn}
+  \emph{मोडल तर्कशास्त्र} म्हणजे मोडल !!{formula}s
+  चा असा संच~$\Sigma$ की, तो
+  \begin{enumerate}
+  \item सर्व सर्वतः-सत्य सूत्रे सामावतो; आणि
+  \item आदेशनाखाली बंद असतो; म्हणजे $!A \in \Sigma$
+    आणि $!D_1$, \dots, $!D_n$ ही !!{formula}s
+    असतील, तर
+    \[
+    \SSubst{!A}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \in \Sigma,
+    \]
+    \item \emph{विध्यात्मक अनुमानाखाली} बंद असतो;
+    म्हणजे $!A$ आणि $!A
+      \lif !B \in \Sigma$ असतील, तर $!B \in \Sigma$.
+  \end{enumerate}
+\end{defn}
+
+मोडल तर्कशास्त्रांसाठी संबंधी चिन्हार्थमीमांसा
+वापरायची असेल, तर सर्व मोडल प्रतिमानांत वैध
+असलेली सर्व !!{formula}s त्यांत समाविष्ट असावीत,
+अशीही अट हवी. \Ax{K}\iftag{prvDiamond}{ आणि~\Dual{}}{}
+चे सर्व दृष्टांत !!{derivable} असतील, आणि
+!!a{formula}~$!A$ !!{derivable} असेल तेव्हा
+$\Box !A$ देखील तसेच असेल, तर ही अट पूर्ण होते.
+या अटी पाळणाऱ्या मोडल तर्कशास्त्राला
+\emph{सामान्य} म्हणतात. (असामान्य मोडल तर्कशास्त्रेही
+आहेत; पण नेहमीची संबंधी प्रतिमाने त्यांच्यासाठी
+पुरेशी नाहीत.)
+
+\begin{defn}
+  मोडल तर्कशास्त्र $\Sigma$ पुढील सूत्रे सामावत असेल,
+  \begin{align*}
+    \tag{\Ax{K}} & \Box(p \lif q) \lif (\Box p \lif \Box q),
+    \iftag{prvDiamond}{\\
+      \tag{\Dual} & \Diamond p \liff \lnot\Box\lnot p}{}
+  \end{align*}
+  आणि \emph{अनिवार्यीकरणाखाली} बंद असेल, म्हणजे
+  $!A \in
+  \Sigma$ असेल, तर $\Box !A \in \Sigma$,
+  तर त्याला \emph{सामान्य} म्हणतात.
+\end{defn}
+
+सर्वतः-सत्य अभिव्यंजन \emph{जगातील सत्यता}
+टिकवण्यासाठी पुरेसे सूक्ष्म असते; पण \Nec{} हा
+नियम फक्त \emph{प्रतिमानातील सत्यता} टिकवतो
+(आणि म्हणून चौकटीतील किंवा चौकटींच्या वर्गातील
+वैधताही टिकवतो), हे लक्षात घ्या.
+
+\begin{prop}\ollabel{prop:rk}
+  प्रत्येक सामान्य मोडल तर्कशास्त्र \RK
+  या नियमाखाली बंद असते:
+  \begin{prooftree}
+    \AxiomC{$!A_1 \lif (!A_2 \lif \cdots (!A_{n-1} \lif !A_n)\cdots)$}
+    \RightLabel{\RK}
+    \UnaryInfC{$\Box!A_1 \lif (\Box!A_2 \lif \cdots (\Box!A_{n-1}
+      \lif \Box!A_n)\cdots).$}
+  \end{prooftree}
+\end{prop}
+
+\begin{proof}
+  $n$ वर विगमनाने सिद्ध करू. $n = 1$ असेल,
+  तर हा नियम नेमका \Nec असतो, आणि प्रत्येक
+  सामान्य मोडल तर्कशास्त्र \Nec खाली बंद असते.
+
+  आता निष्कर्ष $n-1$ साठी खरा आहे असे समजा;
+  तो~$n$ साठी सिद्ध करू.
+
+  पुढील गृहीत धरा:
+  \begin{align*}
+  & !A_1 \lif (!A_2 \lif \cdots (!A_{n-1} \lif !A_n)\cdots) \in \Sigma
+  \intertext{विगमन गृहीतकावरून मिळते:}
+  & \Box!A_1 \lif (\Box!A_2 \lif \cdots \Box(!A_{n-1} \lif !A_n)\cdots)
+  \in \Sigma
+  \intertext{$\Sigma$ सामान्य मोडल तर्कशास्त्र असल्यामुळे
+    त्यात~$\Ax{K}$ चे सर्व दृष्टांत आहेत; विशेषतः:}
+  & \Box(!A_{n-1} \lif !A_n) \lif (\Box!A_{n-1} \lif \Box!A_n) \in \Sigma
+  \intertext{विध्यात्मक अनुमान आणि योग्य सर्वतः-सत्य दृष्टांत
+    वापरून मिळते:}
+  & \Box!A_1 \lif (\Box!A_2 \lif \cdots (\Box!A_{n-1}
+  \lif \Box!A_n)\cdots) \in \Sigma.
+  \end{align*}
+\end{proof}
+
+\begin{prop}\ollabel{prop:notDiamondBot}
+  प्रत्येक सामान्य मोडल तर्कशास्त्र $\Sigma$
+  हे~$\lnot\Diamond\lfalse$ सामावते.
+\end{prop}
+
+\begin{prob}
+  \olref[nml][prf][nor]{prop:notDiamondBot} सिद्ध करा.
+\end{prob}
+
+\begin{prop}
+  $!A_1$, \dots, $!A_n$ ही !!{formula}s असू द्या.
+  मग $!A_1$, \dots, $!A_n$ यांचे सर्व दृष्टांत
+  सामावणारे लघुतम सामान्य मोडल तर्कशास्त्र $\Sigma$
+  अस्तित्वात असते.
+\end{prop}
+
+\begin{proof}
+  $!A_1$, \dots, $!A_n$ दिल्यावर
+  $!A_1$, \dots, $!A_n$ यांचे सर्व दृष्टांत सामावणाऱ्या
+  सर्व सामान्य मोडल तर्कशास्त्रांचा
+  छेद~$\Sigma$ म्हणून ठरवा. अशा तर्कशास्त्रांचा
+  वर्ग रिकामा नाही: सर्व !!{formula}s चा संच
+  $\Frm[L]$ हेही असे सामान्य मोडल तर्कशास्त्र आहे.
+\end{proof}
+
+\begin{defn}
+$!A_1$, \dots, $!A_n$ सामावणाऱ्या लघुतम
+सामान्य मोडल तर्कशास्त्राला \emph{मोडल प्रणाली}
+म्हणतात; ते $\Log{K} !A_1 \dots
+!A_n$ असे दर्शवतात. लघुतम सामान्य मोडल
+तर्कशास्त्र~\Log{K} असे दर्शवतात.
+\end{defn}
+
+\end{document}
