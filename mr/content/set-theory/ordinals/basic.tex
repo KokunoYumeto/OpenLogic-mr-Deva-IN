@@ -1,0 +1,155 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{basic}
+\olsection{क्रमसूचक संख्यांचे मूलभूत गुणधर्म}
+
+पहिल्या काही क्रमसूचक संख्या नैसर्गिक संख्याच आहेत, हे आपण पाहिले. क्रमसूचक संख्यांची उपपत्ती विकसित करण्यामागचा मुख्य उद्देश म्हणजे नैसर्गिक संख्यांसाठी लागू असलेले विगमनाचे तत्त्व पुढे नेणे. काही प्राथमिक निष्कर्षांच्या साहाय्याने आपण ते साध्य करू.
+
+\begin{lem}\ollabel{ordmemberord}
+क्रमसूचक संख्येचा प्रत्येक !!{element} ही क्रमसूचक संख्या असतो.
+\end{lem}
+
+\begin{proof}
+$\alpha$ ही क्रमसूचक संख्या आणि $b \in \alpha$ असे मानू. $\alpha$ संक्रमक असल्याने $b \subseteq \alpha$. त्यामुळे $\in$ जसा $\alpha$ ला सुक्रमित करतो, तसाच $\in$ हा $b$ लाही सुक्रमित करतो.
+
+$b$ संक्रमक आहे हे पाहण्यासाठी $x \in c \in b$ मानू. $b
+\subseteq \alpha$ असल्याने $c \in \alpha$. पुन्हा $\alpha$ संक्रमक असल्याने $c \subseteq
+\alpha$ आणि म्हणून $x \in \alpha$. अशा प्रकारे $x, c, b \in \alpha$. पण $\in$ हा $\alpha$ ला सुक्रमित करतो; म्हणून \olref[sth][ordinals][wo]{wo:strictorder} वरून $\in$ हा $\alpha$ वरील संक्रमक संबंध आहे. त्यामुळे $x
+\in c \in b$ वरून $x \in b$. याचे सामान्यीकरण केल्यास $c \subseteq b$.
+\end{proof}
+
+\begin{cor}\ollabel{ordissetofsmallerord}
+कोणत्याही क्रमसूचक संख्या~$\alpha$ साठी $\alpha = \Setabs{\beta \in \alpha}{\beta \text{ ही क्रमसूचक संख्या आहे}}$.
+\end{cor}
+
+\begin{proof}
+\olref{ordmemberord} वरून थेट मिळते.
+\end{proof}
+
+पुढील दोन मुख्य निष्कर्षांचा, \olref{ordinductionschema} आणि \olref{ordtrichotomy} यांचा, साधारण आशय असा की क्रमसूचक संख्याच सदस्यत्वाने सुक्रमित होतात:
+
+\begin{thm}[अनंतपार विगमन]\ollabel{ordinductionschema}
+कोणत्याही सूत्र $\phi(x)$ साठी:
+\[
+	\text{जर }\exists \alpha \phi(\alpha)\text{, तर }\exists \alpha(\phi(\alpha)
+	\land  (\forall \beta \in \alpha) \lnot \phi(\beta))
+\]
+येथे दाखवलेली परिमाणके अव्यक्तपणे क्रमसूचक संख्यांपुरती मर्यादित आहेत.
+\end{thm}
+
+\begin{proof}
+%\olref{ordinductionschema1}.
+एखाद्या क्रमसूचक संख्या $\alpha$ साठी $\phi(\alpha)$ मानू. $ (\forall \beta
+\in \alpha) \lnot \phi(\beta)$ असेल, तर सिद्धता झाली. अन्यथा, $\alpha$ ही क्रमसूचक संख्या असल्याने तिच्यात $\phi$ पूर्ण करणारा $\in$-लघुतम !!{element} मिळतो; \olref{ordmemberord} वरून तोही क्रमसूचक संख्या आहे.
+%\olref{ordinductionschema2}. Suppose there is some ordinal
+%	$\gamma$ such that $\lnot\phi(\gamma)$. Then by
+%	\olref{ordinductionschema1}, there is an $\in$-minimal ordinal
+%	$\alpha$ for which $\lnot\phi(\alpha)$. So $(\forall \beta <
+%	\alpha) \phi(\beta)$, rendering the antecedent of the conditional
+%false.
+\end{proof}
+\noindent
+\olref{ordinductionschema} हेच तत्त्व पुढील रूपबंधातही मांडता येते:
+\[
+\text{जर }\forall \alpha((\forall \beta \in \alpha)\phi(\beta) \lif
+\phi(\alpha))\text{, तर }\forall \alpha\phi(\alpha)
+\]
+यासाठी \olref{ordinductionschema} मध्ये $\lnot\phi(\alpha)$ घेऊन प्राथमिक तार्किक रूपांतरे करावी लागतात.
+
+\begin{thm}[त्रिपर्याय]\ollabel{ordtrichotomy}
+कोणत्याही क्रमसूचक संख्या $\alpha$ आणि $\beta$ साठी $\alpha \in \beta \lor \alpha = \beta \lor \beta \in \alpha$.
+\end{thm}
+
+\begin{proof}
+पुरावा द्विगुण विगमनाने, म्हणजे \olref{ordinductionschema} दोनदा वापरून, करता येतो. $x \in y \lor x = y \lor y \in x$ असेल तेव्हाच आणि तेव्हाच $x$ आणि $y$ \emph{तुलनीय} आहेत असे म्हणू.
+
+विगमनासाठी, $\alpha$ मधील प्रत्येक क्रमसूचक संख्या \emph{प्रत्येक} क्रमसूचक संख्येशी तुलनीय आहे असे मानू. आणखी एका विगमनासाठी, $\alpha$ ही $\beta$ मधील प्रत्येक क्रमसूचक संख्येशी तुलनीय आहे असे मानू. आता $\alpha$ ही $\beta$ शी तुलनीय आहे हे दाखवू. मग $\beta$ वरील विगमनाने $\alpha$ प्रत्येक क्रमसूचक संख्येशी तुलनीय ठरेल; आणि $\alpha$ वरील विगमनाने \emph{प्रत्येक} क्रमसूचक संख्या \emph{प्रत्येक} क्रमसूचक संख्येशी तुलनीय ठरेल, हेच हवे आहे. $\alpha \notin \beta$ आणि $\beta \notin
+\alpha$ असे मानून $\alpha = \beta$ दाखवणे पुरेसे आहे.
+
+$\alpha \subseteq \beta$ दाखवण्यासाठी $\gamma \in \alpha$ निश्चित करू; \olref{ordmemberord} वरून ती क्रमसूचक संख्या आहे. म्हणून पहिल्या विगमन गृहीतकानुसार $\gamma$ ही $\beta$ शी तुलनीय आहे. पण $\gamma
+= \beta$ किंवा $\beta \in \gamma$ यांपैकी काहीही असेल, तर $\beta \in \alpha$ मिळते (गरज पडल्यास $\alpha$ च्या संक्रमकतेचा वापर करून); हे आपल्या गृहीतकाविरुद्ध आहे. म्हणून $\gamma \in \beta$. याचे सामान्यीकरण केल्यास $\alpha \subseteq
+\beta$.
+
+दुसरे विगमन गृहीतक वापरून अगदी त्याच प्रकारच्या तर्काने $\beta \subseteq \alpha$ मिळते. म्हणून $\alpha = \beta$.
+\end{proof}\noindent त्यामुळे कधी कधी $\alpha \in \beta$ ऐवजी $\alpha <\beta$ असे लिहू; कारण $\in$ येथे क्रमसंबंधाप्रमाणे वागतो. यामागे परिचय आणि $\alpha \in
+\beta \lor \alpha = \beta$ याऐवजी $\alpha \leq \beta$ लिहिण्याची सोय यांपलीकडे विशेष कारण नाही.\footnote{$\alpha
+\mathrel{\underline{\in}} \beta$ असेही लिहिता येईल; पण हा संकेत सर्वमान्य नाही.}
+
+आपल्या मागील निष्कर्षांवरून पुढील दोन परिणाम लगेच मिळतात; पहिल्यात आपला नवा संकेत वापरला आहे:
+
+\begin{cor}\ollabel{ordordered}
+$\exists \alpha\phi(\alpha)$ असेल, तर $\exists \alpha(\phi(\alpha)
+\land \forall \beta(\phi(\beta) \lif \alpha \leq \beta))$.
+शिवाय, कोणत्याही क्रमसूचक संख्या $\alpha, \beta, \gamma$ साठी $\alpha
+\notin \alpha$ आणि $\alpha \in \beta \in \gamma \lif \alpha \in
+\gamma$.
+\end{cor}
+
+\begin{proof}
+\olref[wo]{wo:strictorder} प्रमाणेच.
+\end{proof}
+
+\begin{prob}
+\olref[sth][ordinals][basic]{ordtrichotomy} च्या पुराव्यातील ``अगदी त्याच प्रकारचा तर्क'' पूर्ण लिहा.
+\end{prob}
+
+\begin{cor}\ollabel{corordtransitiveord}
+$A$ ही क्रमसूचक संख्या असते तेव्हाच आणि तेव्हाच $A$ हा क्रमसूचक संख्यांचा संक्रमक संच असतो.
+\end{cor}
+
+\begin{proof}
+\emph{डावीकडून उजवीकडे.} \olref{ordmemberord} वरून. \emph{उजवीकडून डावीकडे.} $A$ हा क्रमसूचक संख्यांचा संक्रमक संच असेल, तर \olref{ordinductionschema} आणि \olref{ordtrichotomy} वरून $\in$ हा $A$ ला सुक्रमित करतो.
+\end{proof}
+
+\olref{ordinductionschema} आणि \olref{ordtrichotomy} यांचा आशय आपण क्रमसूचक संख्या $\in$ ने सुक्रमित होतात असा सांगितला. पण पुढील निष्कर्षामुळे असे विधान करताना \emph{फार सावध} राहिले पाहिजे:
+
+\begin{thm}[बुराली-फोर्ती विरोधापत्ती]\ollabel{buraliforti}
+सर्व क्रमसूचक संख्यांचा संच अस्तित्वात नाही.
+\end{thm}
+
+\begin{proof}
+विसंगतीसाठी $O$ हा सर्व क्रमसूचक संख्यांचा संच आहे असे मानू. $\alpha \in
+\beta \in O$ असेल, तर \olref{ordmemberord} वरून $\alpha$ ही क्रमसूचक संख्या आहे आणि म्हणून $\alpha \in O$. त्यामुळे $O$ संक्रमक आहे; म्हणून \olref{corordtransitiveord} वरून $O$ ही क्रमसूचक संख्या ठरते. मग $O \in O$, हे \olref{ordordered} ला विरोधी आहे.
+\end{proof}
+\noindent
+हा निष्कर्ष \citeauthor{Burali-Forti1897} यांच्या नावाने ओळखला जातो. परंतु सर्व क्रमसूचक संख्यांचा संच आहे असे मानल्यास \emph{विसंगती} निर्माण होते, हे १८९९ मध्ये डेडेकिंड यांना लिहिलेल्या पत्रात प्रथम स्पष्टपणे कांटोर यांच्या लक्षात आले. व्हान हायेनूर्ट यांनी सांगितल्याप्रमाणे:
+\begin{quote}
+  बुराली-फोर्ती यांनी स्वतः या विसंगतीतून \emph{विसंगतीद्वारे सिद्धतेने} असा निष्कर्ष काढला की क्रमसूचक संख्यांचा नैसर्गिक क्रम हा केवळ आंशिक क्रम आहे.
+  \citep[p.~105]{Heijenoort1967}
+\end{quote}
+बुराली-फोर्ती यांची चूक बाजूला ठेवून आतापर्यंतचे निष्कर्ष असे सांगता येतील: क्रमसूचक संख्या या प्रत्येकी सदस्यत्वाने सुक्रमित संच असतात आणि एकत्रितपणेही सदस्यत्वाने सुक्रमित असतात; मात्र त्या एकत्रितपणे संच बनवत नाहीत.
+
+हा भाग पूर्ण करण्यासाठी \olref{ordinductionschema} आणि \olref{ordtrichotomy} वरून मिळणारे क्रमसूचक संख्यांचे आणखी काही मूलभूत गुणधर्म पाहू.
+
+\begin{prop}
+क्रमसूचक संख्यांचा कोणताही काटेकोरपणे उतरणारा अनुक्रम परिमित असतो.
+\end{prop}
+
+\begin{proof}
+क्रमसूचक संख्यांच्या कोणत्याही अनंत काटेकोरपणे उतरणाऱ्या अनुक्रमात $\alpha_0 > \alpha_1 > \alpha_2 > \ldots$ हा $<$-लघुतम सदस्य नसतो; हे \olref{ordinductionschema} शी विसंगत आहे.
+\end{proof}
+
+\begin{prop}\ollabel{ordinalsaresubsets}
+कोणत्याही क्रमसूचक संख्या $\alpha, \beta$ साठी $\alpha \subseteq \beta \lor \beta \subseteq \alpha$.
+\end{prop}
+
+\begin{proof}
+$\alpha \in \beta$ असेल, तर $\beta$ संक्रमक असल्यामुळे $\alpha \subseteq \beta$. त्याचप्रमाणे $\beta \in \alpha$ असेल, तर $\beta \subseteq
+\alpha$. आणि $\alpha = \beta$ असेल, तर $\alpha \subseteq \beta$ आणि $\beta \subseteq \alpha$. म्हणून \olref{ordtrichotomy} वरून निष्कर्ष मिळतो.
+\end{proof}
+
+\begin{prop}\ollabel{ordisoidentity}
+कोणत्याही क्रमसूचक संख्या $\alpha, \beta$ साठी $\alpha = \beta$ तेव्हाच आणि तेव्हाच $\ordeq{\alpha}{\beta}$.
+\end{prop}
+
+\begin{proof}
+क्रमसूचक संख्या या सुक्रमणे आहेत; म्हणून त्रिपर्याय (\olref[basic]{ordtrichotomy}) आणि \olref[iso]{wellordnotinitial} वरून हे लगेच मिळते.
+\end{proof}
+
+\begin{prob}\ollabel{probunionordinalsordinal}
+$X$ चा प्रत्येक सदस्य क्रमसूचक संख्या असेल, तर $\bigcup X$ ही क्रमसूचक संख्या असते, हे सिद्ध करा.
+\end{prob}
+
+\end{document}
