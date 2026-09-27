@@ -917,6 +917,14 @@ _DOCUMENTED_PROJECTIONS = {
         ('सुसंगततेच्या व्याख्येवरून',
          r'\olref{prop:consistencyfacts-b} वरून'),
     ],
+    'OLP-0443': [
+        # OLINC-175: completeness yields the negated formula in the last step.
+        (r'असल्याने $\lnot!A \in \Gamma$.',
+         r'असल्याने $!A \in \Gamma$.'),
+        # OLINC-176: the biconditional case assumes its own formula absent.
+        (r'उलट $!A \liff !B \notin \Gamma$',
+         r'उलट $!A \lif !B \notin \Gamma$'),
+    ],
 }
 
 

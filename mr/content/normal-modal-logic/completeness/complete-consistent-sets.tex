@@ -1,0 +1,189 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: complete-consistent-sets
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{ccs}
+
+\olsection{संपूर्ण $\Sigma$-सुसंगत संच}
+
+$\Sigma$ हा मोडल !!{formula}s चा संच आहे असे
+समजा---सामान्य मोडल तर्कशास्त्राची स्वयंसिद्धके
+किंवा परिभाषक तत्त्वे म्हणून त्यांच्याकडे पाहा.
+संच~$\Gamma$ हा $\Sigma$-सुसंगत असेल तेव्हा
+आणि तेव्हाच $\Gamma \Proves/[\Sigma] \lfalse$;
+म्हणजे प्रत्येक $!A_i \in \Gamma$ असताना
+$\Sigma$ पासून~$!A_1 \lif (!A_2 \lif \cdots (!A_n \lif
+\lfalse)\dots)$ ची !!{derivation} नसते.
+आपण ``कॅनॉनिकल'' प्रतिमान रचू; त्यात प्रत्येक
+जग विशिष्ट प्रकारचा $\Sigma$-सुसंगत संच
+असेल. तो केवळ $\Sigma$-सुसंगत नसून
+महत्तम अर्थाने तसा असेल: प्रत्येक मोडल
+!!{formula} चे सत्यत्व तो ठरवेल.
+प्रत्येक $!A$ साठी $!A
+\in \Gamma$ किंवा $\lnot !A \in \Gamma$:
+
+\begin{defn}
+  संच~$\Gamma$ हा \emph{संपूर्ण $\Sigma$-सुसंगत}
+  असेल तेव्हा आणि तेव्हाच तो $\Sigma$-सुसंगत
+  असेल आणि प्रत्येक~$!A$ साठी
+  $!A \in \Gamma$ किंवा $\lnot !A \in \Gamma$
+  यांपैकी एक विधान खरे असेल.
+\end{defn}
+
+संपूर्ण $\Sigma$-सुसंगत संच~$\Gamma$ चे अनेक
+उपयुक्त गुणधर्म आहेत. प्रथम, ते निगामीदृष्ट्या
+बंद असतात: $\Gamma
+\Proves[\Sigma] !A$ असेल, तर $!A \in \Gamma$.
+विशेषतः, !!a{formula}~$!A \in \Sigma$ चा प्रत्येक
+दृष्टांतही $\in
+\Gamma$ असतो. शिवाय $\Gamma$ मधील सदस्यत्व
+विधानीय संयोगकांच्या सत्यत्व-अटींशी जुळते.
+आपण ``कॅनॉनिकल प्रतिमान'' परिभाषित करू तेव्हा
+हे महत्त्वाचे ठरेल.
+
+\begin{prop}\ollabel{prop:ccs-properties}
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत आहे असे
+  समजा. मग:
+  \begin{enumerate}
+  \item \ollabel{prop:ccs-closed}%
+    $\Gamma$ हा~$\Sigma$ च्या सापेक्ष
+    निगामीदृष्ट्या बंद आहे.
+  \item \ollabel{prop:ccs-sigma}%
+    $\Sigma \subseteq \Gamma$.
+  \tagitem{prvFalse}{\ollabel{prop:ccs-lfalse}%
+    $\lfalse \notin \Gamma$}{}
+  \tagitem{prvTrue}{\ollabel{prop:ccs-ltrue}%
+    $\ltrue \in \Gamma$}{}
+  \item \ollabel{prop:ccs-lnot}%
+    $\lnot!A \in \Gamma$ असेल तेव्हा आणि
+    तेव्हाच $!A \notin
+    \Gamma$.
+  \tagitem{prvAnd}{\ollabel{prop:ccs-land}%
+    $!A \land !B \in \Gamma$ असेल तेव्हा आणि तेव्हाच
+    $!A \in \Gamma$ आणि $!B \in \Gamma$ असतील.}{}
+  \tagitem{prvOr}{\ollabel{prop:ccs-lor}%
+    $!A \lor !B \in \Gamma$ असेल तेव्हा आणि तेव्हाच
+    $!A \in \Gamma$ किंवा $!B \in \Gamma$ असेल.}{}
+  \tagitem{prvIf}{\ollabel{prop:ccs-lif}%
+    $!A \lif !B \in \Gamma$ असेल तेव्हा आणि तेव्हाच
+    $!A \notin \Gamma$ किंवा $!B \in \Gamma$ असेल.}{}
+  \tagitem{prvIff}{\ollabel{prop:ccs-liff}%
+    $!A \liff !B \in \Gamma$ असेल तेव्हा आणि तेव्हाच
+    $!A \in \Gamma$ आणि $!B \in
+    \Gamma$ दोन्ही असतील, किंवा
+    $!A \notin \Gamma$ आणि $!B \notin \Gamma$
+    दोन्ही असतील.}{}
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\Gamma \Proves[\Sigma] !A$ पण $!A \notin
+    \Gamma$ असे समजा. $\Gamma$ संपूर्ण
+    $\Sigma$-सुसंगत असल्याने
+    $\lnot!A \in \Gamma$. मग $\Gamma$ विसंगत
+    ठरेल, कारण $!A, \lnot !A \Proves[\Sigma] \lfalse$.
+
+  \item $!A \in \Sigma$ असेल, तर
+    $\Gamma \Proves[\Sigma] !A$; आणि
+    निगामी बंदतेवरून, म्हणजे
+    \olref{prop:ccs-closed} वरून, $!A
+    \in \Gamma$.
+
+  \tagitem{prvFalse}{$\lfalse \in \Gamma$ असेल,
+    तर $\Gamma \Proves[\Sigma] \lfalse$;
+    त्यामुळे $\Gamma$ हा $\Sigma$-विसंगत
+    ठरेल.}{}
+
+  \tagitem{prvTrue}{$\Gamma \Proves[\Sigma] \ltrue$;
+    म्हणून निगामी बंदतेवरून, म्हणजे
+    \olref{prop:ccs-closed} वरून,
+    $\ltrue \in \Gamma$.}{}
+
+\item $\lnot!A \in \Gamma$ असेल, तर
+    सुसंगततेमुळे $!A \notin \Gamma$.
+    उलट $!A \notin \Gamma$ असेल, तर
+    $\Gamma$ संपूर्ण $\Sigma$-सुसंगत
+    असल्याने $\lnot!A \in \Gamma$.
+
+  \tagitem{prvAnd}{\iftag{probAnd}{सराव.}{$!A \land !B \in
+      \Gamma$ असे समजा. $(!A \land !B) \lif !A$
+      हा सर्वतः-सत्य दृष्टांत असल्याने,
+      निगामी बंदतेवरून, म्हणजे
+      \olref{prop:ccs-closed} वरून, $!A \in \Gamma$.
+      $!B \in \Gamma$ साठीही तसेच. उलट
+      $!A \in \Gamma$ आणि $!B \in
+      \Gamma$ दोन्ही असतील, तर निगामी
+      बंदतेवरून $(!A \land !B) \in
+      \Gamma$; कारण $!A \lif (!B \lif (!A \land !B))$
+      हा सर्वतः-सत्य दृष्टांत आहे.}}{}
+
+  \tagitem{prvOr}{\iftag{probOr}{सराव.}{$!A \lor !B \in
+      \Gamma$, पण $!A \notin \Gamma$ आणि
+      $!B \notin \Gamma$ असे समजा. $\Gamma$
+      संपूर्ण $\Sigma$-सुसंगत असल्याने
+      $\lnot!A \in \Gamma$ आणि
+      $\lnot !B \in \Gamma$. मग
+      $\lnot(!A \lor !B) \in \Gamma$;
+      कारण $\lnot !A \lif (\lnot !B \lif \lnot (!A \lor !B))$
+      हा सर्वतः-सत्य दृष्टांत आहे. त्यामुळे
+      $\Gamma$ हा $\Sigma$-विसंगत ठरेल,
+      हा व्याघात आहे.}}{}
+
+  \tagitem{prvIf}{\iftag{probIf}{सराव.}{$!A \lif !B \in
+      \Gamma$ आणि $!A \in \Gamma$ असे समजा.
+      मग $\Gamma \Proves[\Sigma] !B$;
+      त्यामुळे निगामी बंदतेवरून $!B \in \Gamma$.
+      उलट $!A
+      \lif !B \notin \Gamma$ असेल, तर
+      $\Gamma$ संपूर्ण $\Sigma$-सुसंगत
+      असल्याने $\lnot (!A \lif !B) \in \Gamma$.
+      $\lnot(!A \lif !B) \lif !A$ हा
+      सर्वतः-सत्य दृष्टांत असल्याने निगामी
+      बंदतेवरून $!A \in
+      \Gamma$. तसेच $\lnot(!A \lif !B) \lif
+      \lnot !B$ हा सर्वतः-सत्य दृष्टांत असल्याने
+      $\lnot !B \in
+      \Gamma$. $\Gamma$ हा $\Sigma$-सुसंगत
+      असल्यामुळे $!B \notin \Gamma$.}}{}
+
+  \tagitem{prvIff}{\iftag{probIff}{सराव.}{$!A \liff !B \in
+      \Gamma$ असे समजा. $!A \in \Gamma$
+      असेल, तर $!B \in \Gamma$; कारण $(!A
+      \liff !B) \lif (!A \lif !B)$ हा
+      सर्वतः-सत्य दृष्टांत आहे. तसेच
+      $!B \in \Gamma$ असेल, तर $!A \in \Gamma$.
+      म्हणून $!A \in \Gamma$ आणि $!B \in \Gamma$
+      दोन्ही असतील, किंवा $!A \in \Gamma$
+      आणि $!B \in \Gamma$ यांपैकी कोणतेही नसेल.
+
+      उलट $!A \liff !B \notin \Gamma$
+      असे समजा. $\Gamma$ संपूर्ण
+      $\Sigma$-सुसंगत असल्याने
+      $\lnot (!A \liff !B) \in
+      \Gamma$. $\lnot(!A \liff !B) \lif (!A \lif \lnot !B)$
+      हा सर्वतः-सत्य दृष्टांत असल्याने
+      $!A \in \Gamma$ असेल, तर
+      $\lnot !B \in
+      \Gamma$; आणि $\Gamma$ हा
+      $\Sigma$-सुसंगत असल्याने $!B \notin
+      \Gamma$. तसेच $!B \in \Gamma$
+      असेल, तर $!A \notin \Gamma$.
+      म्हणून $!A \in \Gamma$ आणि
+      $!B \in \Gamma$ दोन्ही नसतील,
+      तसेच $!A \notin
+      \Gamma$ आणि $!B \notin \Gamma$
+      दोन्हीही नसतील.}}{}
+  \end{enumerate}
+\end{proof}
+
+\begin{probtag}{probAnd,probOr,probIf,probIff}
+  \olref[nml][com][ccs]{prop:ccs-properties}
+  ची सिद्धता पूर्ण करा.
+\end{probtag}
+
+\end{document}
