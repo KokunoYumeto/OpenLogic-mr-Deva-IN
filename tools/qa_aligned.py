@@ -720,6 +720,11 @@ _DOCUMENTED_PROJECTIONS = {
         (r"\lambd[x][\Subst{N'}{R'}{y}]$",
          r"\lambd[x][\Subst{N'}{R}{y}]$"),
     ],
+    'OLP-0370': [
+        # OLINC-108: the fourth proof case lists N', not a second M'.
+        (r"$x$, $N$, $N'$, $Q$, $Q'$ साठी",
+         r"$x$, $N$, $M'$, $Q$, $Q'$ साठी"),
+    ],
 }
 
 
