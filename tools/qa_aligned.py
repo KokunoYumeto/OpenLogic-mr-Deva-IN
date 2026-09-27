@@ -1157,6 +1157,11 @@ _DOCUMENTED_PROJECTIONS = {
          r'$\Delta_2 \cup !C \Entails !D$' + '\n'
          + r'    असल्याने'),
     ],
+    'OLP-0508': [
+        # OLINC-225: the truth lemma concerns the prime set at sigma.
+        (r'अभाज्य संच' + '\n' + r'$\Delta(\sigma)$ मध्ये कोणती',
+         r'अभाज्य संच' + '\n' + r'$\Delta$ मध्ये कोणती'),
+    ],
 }
 
 

@@ -1,0 +1,113 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: truth-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{tru}
+
+\olsection{सत्यता पूर्वप्रमेय}
+
+पुढील पूर्वप्रमेय कॅनॉनिकल प्रतिमानातील
+पूर्तीचा संबंध अभाज्य संच
+$\Delta(\sigma)$ मध्ये कोणती
+!!{formula}s !!{element}s आहेत
+याच्याशी जोडते.
+
+\begin{lem}\ollabel{lem:truth}
+  $\Delta$ अभाज्य असेल, तर
+  $\mSat{M(\Delta)}{!A}[\sigma]$
+  तेव्हा आणि केवळ तेव्हाच
+  $\Delta(\sigma) \Proves !A$.
+\end{lem}
+
+\begin{proof}
+  $!A$ वर आगमन करू.
+  \begin{enumerate}
+    \item \indcase{!A}{\lfalse}{$\Delta(\sigma)$
+      अभाज्य असल्याने सुसंगत आहे;
+      म्हणून $\Delta(\sigma) \Proves/ \indfrm$.
+      व्याख्येनुसार
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}
+    \item \indcase{!A}{p}{$\mSat{{}}{}$ च्या
+        व्याख्येनुसार
+        $\mSat{M(\Delta)}{\indfrm}[\sigma]$
+        तेव्हा आणि केवळ तेव्हाच
+        $\sigma \in V(p)$;
+        म्हणजे $\Delta(\sigma) \Proves \indfrm$.}
+    \item \indcase!{!A}{\lnot !B}{}
+    \item \indcase{!A}{!B \land
+        !C}{$\mSat{M(\Delta)}{\indfrm}[\sigma]$
+        तेव्हा आणि केवळ तेव्हाच
+        $\mSat{M(\Delta)}{!B}[\sigma]$
+        आणि $\mSat{M(\Delta)}{!C}[\sigma]$.
+        आगमन-गृहीतकानुसार
+        $\mSat{M(\Delta)}{!B}[\sigma]$
+        तेव्हा आणि केवळ तेव्हाच
+        $\Delta(\sigma) \Proves
+        !B$; आणि~$!C$ साठीही तसेच.
+        पण $\Delta(\sigma) \Proves !B$
+        आणि $\Delta(\sigma) \Proves !C$
+        हे तेव्हा आणि केवळ तेव्हाच,
+        जेव्हा $\Delta(\sigma)
+        \Proves \indfrm$.}
+    \item \indcase{!A}{!B \lor
+        !C}{$\mSat{M(\Delta)}{\indfrm}[\sigma]$
+        तेव्हा आणि केवळ तेव्हाच
+        $\mSat{M(\Delta)}{!B}[\sigma]$
+        किंवा $\mSat{M(\Delta)}{!C}[\sigma]$.
+        आगमन-गृहीतकानुसार हे
+        तेव्हा आणि केवळ तेव्हाच,
+        जेव्हा $\Delta(\sigma) \Proves !B$
+        किंवा $\Delta(\sigma) \Proves !C$.
+        आता हे पुन्हा
+        $\Delta(\sigma) \Proves \indfrm$
+        च्या तुल्य आहे, हे दाखवायचे आहे.
+        डावीकडून उजवीकडील दिशा उघड आहे.
+        उजवीकडून डावीकडील दिशा
+        $\Delta(\sigma)$ अभाज्य
+        असल्याने मिळते.}
+    \item \indcase{!A}{!B \lif !C}{आधी
+        डावीकडून उजवीकडील दिशेचे
+        व्यत्यस्त रूप पाहू:
+        $\Delta(\sigma) \Proves/ !B
+        \lif !C$ असे समजा.
+        मग $\Delta(\sigma) \cup \{!B\} \Proves/
+        !C$ सुद्धा.
+        कोणत्या तरी~$n$ साठी
+        $\tuple{!B, !C}$ ही
+        $\tuple{!B_n, !C_n}$ असल्याने
+        $\Delta(\sigma.n) = (\Delta(\sigma) \cup
+        \{!B\})^*$; आणि
+        $\Delta(\sigma.n) \Proves !B$
+        पण $\Delta(\sigma.n) \Proves/
+        !C$. आगमन-गृहीतकानुसार
+        $\mSat{M(\Delta)}{!B}[\sigma.n]$
+        आणि $\mSat/{M(\Delta)}{!C}[\sigma.n]$.
+        $R\sigma(\sigma.n)$ असल्यामुळे
+        याचा अर्थ
+        $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.
+
+        आता $\Delta(\sigma) \Proves !B \lif !C$
+        असे समजा आणि $R\sigma\sigma'$ असू द्या.
+        $\Delta(\sigma) \subseteq
+        \Delta(\sigma')$ असल्याने
+        $\Delta(\sigma') \Proves
+        !B$ असेल, तर
+        $\Delta(\sigma') \Proves !C$.
+        दुसऱ्या शब्दांत, $R\sigma\sigma'$
+        असलेल्या प्रत्येक $\sigma'$ साठी
+        $\Delta(\sigma') \Proves/ !B$
+        किंवा $\Delta(\sigma') \Proves
+        !C$. आगमन-गृहीतकानुसार
+        $R\sigma\sigma'$ असेल तेव्हा
+        $\mSat/{M(\Delta)}{!B}[\sigma']$
+        किंवा $\mSat{M(\Delta)}{!C}[\sigma']$;
+        म्हणजे
+        $\mSat{M(\Delta)}{\indfrm}[\sigma]$.}
+  \end{enumerate}
+\end{proof}
+
+\end{document}
