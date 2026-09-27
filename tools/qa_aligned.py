@@ -1062,6 +1062,25 @@ _DOCUMENTED_PROJECTIONS = {
          r'$\mSat{M(\Delta)}{!B}[\sigma]$ आणि' + '\n'
          + r'      $\mSat/{M(\Delta)}{!B}[\sigma]$'),
     ],
+    'OLP-0469': [
+        # OLINC-205: non-entailment concerns A, not an unmarked A.
+        (r'शिवाय $\Entails/ !A$',
+         r'शिवाय $\Entails/ A$'),
+        # OLINC-206: the Diamond example uses F Diamond at line 3.
+        (r'$\sFmla{\False}{\Diamond(p \land q)}[1]$',
+         r'$\sFmla{\True}{\Diamond(p \land q)}[1]$'),
+        (r'$\TRule{\False}{\Diamond}$ लावायचा असतो;',
+         r'$\TRule{\True}{\Diamond}$ लावायचा असतो;'),
+        # OLINC-207: keep the second diagram's root identical to
+        # the initial and final tableau root formula.
+        (r'दोन्हींसाठी:' + '\n' + r'  \begin{oltableau}' + '\n'
+         + r'    [\pFmla{\False}{(\Diamond p \land \Diamond q) \lif \Diamond(p \land q)}{1},',
+         r'दोन्हींसाठी:' + '\n' + r'  \begin{oltableau}' + '\n'
+         + r'    [\pFmla{\False}{\Diamond(p \land q) \lif (\Diamond p \land \Diamond q)}{1},'),
+        # OLINC-208: q is true at the 1.2 world on line 7.
+        (r'$\sFmla{\True}{q}[1.2]$ आहे)',
+         r'$\sFmla{\True}{q}[1.1]$ आहे)'),
+    ],
 }
 
 
