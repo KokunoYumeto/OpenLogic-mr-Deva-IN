@@ -1133,6 +1133,11 @@ _DOCUMENTED_PROJECTIONS = {
          r'$\Prop{X}{!A \lif !B} \cap \Prop{X}{!A}' + '\n'
          + r'\subset \Prop{X}{!B}$'),
     ],
+    'OLP-0504': [
+        # OLINC-220: satisfaction of the premise set yields truth of A_n.
+        (r'$\mSat{M}{!A_n}[w]$; म्हणजे',
+         r'$\mSat{M}{\Gamma}{!A_n}[w]$; म्हणजे'),
+    ],
 }
 
 

@@ -1,0 +1,86 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: soundness-axd
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{sax}
+
+\olsection{स्वयंसिद्धकीय \usetoken{P}{derivation} ची निर्दोषता}
+
+\begin{editorial}
+  निर्दोषतेची सिद्धता सर्व स्वयंसिद्धके
+  अंतःप्रज्ञावादी अर्थाने वैध आहेत, या
+  तथ्यावर अवलंबून आहे. हे अजून सिद्ध
+  करायचे आहे; उदाहरणार्थ, चिन्हार्थमीमांसेच्या
+  प्रकरणात ते करता येईल.
+\end{editorial}
+
+\begin{thm}[निर्दोषता]
+  \ollabel{thm:soundness}
+  $\Gamma \Proves !A$ असेल, तर
+  $ \Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+  $\Gamma \Proves !A$ असेल, तर
+  $\Gamma \Entails !A$, हे सिद्ध करू.
+  $\Gamma$ पासून~$!A$ च्या
+  !!{derivation} मधील !!{formula}s ची
+  संख्या~$n$ यावर आगमनाने सिद्धता करतो.
+  $!A_1$, \dots, $!A_n = !A$ ही
+  $\Gamma$ पासूनची !!a{derivation} असेल,
+  तर $\Gamma \Entails !A_n$ हे दाखवू.
+  $!A_1$, \dots, $!A_n$ ही
+  !!a{derivation} असेल, तर कोणत्याही $k<n$
+  साठी $!A_1$, \dots, $!A_k$ हीही
+  निष्पत्ती आहे, हे लक्षात घ्या.
+
+  लांबी~$0$ च्या !!{derivation}s नसतात; म्हणून
+  $n=0$ साठी दावा रिक्तपणे खरा आहे.
+  त्यामुळे लांबी~$<n$ असलेल्या सर्व
+  !!{derivation}s साठी दावा खरा आहे, असे
+  आगमन-गृहीतक घेऊ. आता~$!A_n$ चे
+  समर्थन कशावर आहे त्यानुसार प्रकार पाहू.
+
+  \begin{enumerate}
+  \item $!A_n$ हे स्वयंसिद्धक आहे.
+    सर्व स्वयंसिद्धके वैध असल्याने कोणत्याही~$\Gamma$
+    साठी $\Gamma \Entails
+    !A_n$.
+  \item $!A_n \in \Gamma$. मग कोणतेही
+    $\mModel{M}$ आणि $w$ घ्या.
+    $\mSat{M}{\Gamma}[w]$ असेल, तर उघडच
+    $\mSat{M}{!A_n}[w]$; म्हणजे
+    $\Gamma \Entails !A$.
+  \item $!A_n$ हे $!A_i$ आणि
+    $!A_j \ident !A_i \lif
+    !A_n$ यांपासून \MP{} ने निष्पन्न होते.
+    $!A_1$, \dots, $!A_i$ आणि
+    $!A_1$, \dots, $!A_j$ या
+    $\Gamma$ पासूनच्या !!{derivation}s आहेत.
+    म्हणून आगमन-गृहीतकानुसार
+    $\Gamma \Entails !A_i$ आणि
+    $\Gamma \Entails !A_i \lif !A_n$.
+
+    $\mSat{M}{\Gamma}[w]$ असे समजा.
+    $\mSat{M}{\Gamma}[w]$ आणि
+    $\Gamma \Entails !A_i \lif !A_n$
+    असल्यामुळे $\mSat{M}{!A_i \lif
+      !A_n}[w]$. व्याख्येनुसार याचा अर्थ
+    असा की $Rww'$ असलेल्या प्रत्येक $w'$
+    साठी $\mSat{M}{!A_i}[w']$ असेल, तर
+    $\mSat{M}{!A_n}[w']$. $R$ परावर्ती
+    असल्याने $w$ हेही $Rww'$ पूर्ण करणाऱ्या
+    $w'$ पैकी एक आहे. म्हणजे
+    $\mSat{M}{!A_i}[w]$ असेल, तर
+    $\mSat{M}{!A_n}[w]$.
+    $\Gamma \Entails !A_i$ असल्याने
+    $\mSat{M}{!A_i}[w]$. म्हणून
+    अपेक्षेप्रमाणे $\mSat{M}{!A_n}[w]$.
+  \end{enumerate}
+\end{proof}
+
+\end{document}
