@@ -824,6 +824,14 @@ _DOCUMENTED_PROJECTIONS = {
         (r'      0 & \text{इतर वेळी}',
          r'      $0$ & \text{otherwise}'),
     ],
+    'OLP-0403': [
+        # OLINC-143: align the left-side last index with the conjunction.
+        (r'!A_1, \dots, !A_m & \Sequent !B_1',
+         r'!A_1, \dots, !A_n & \Sequent !B_1'),
+        # OLINC-144: supply the omitted valuation argument.
+        (r'किंवा $\pValue v(!A) = \False$ असते.',
+         r'किंवा $\pValue(!A) = \False$ असते.'),
+    ],
 }
 
 

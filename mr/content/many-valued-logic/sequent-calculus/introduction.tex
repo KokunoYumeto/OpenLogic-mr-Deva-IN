@@ -1,0 +1,86 @@
+% Part: many-valued-logic
+% Chapter: sequent-calculus
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{seq}{int}
+
+\olsection{परिचय}
+
+अभिजात तर्कशास्त्रासाठीचे क्रमवर्ती कलन ही कार्यक्षम आणि सोपी
+!!{derivation} पद्धत आहे. बहुमूल्य तर्कशास्त्राची व्याख्या ससीम
+सत्यतामूल्ये असलेल्या मॅट्रिक्सने केली असेल, म्हणजे $V$ ससीम असेल,
+तर त्यासाठी क्रमवर्ती कलन देता येते. हे कसे करावे याची कल्पना
+अभिजात प्रसंगातील क्रमवर्तींचे अर्थ आणि निगमन नियमांचे रूप पाहिल्यावर
+मिळते.
+
+आता पुढील क्रमवर्ती लक्षात घ्या:
+\begin{align*}
+    !A_1, \dots, !A_m & \Sequent !B_1, \dots, !B_n
+\intertext{हिचा अर्थ पुढील !!{formula} म्हणून लावता येतो:}
+    (!A_1 \land \cdots \land !A_m) & \lif (!B_1 \lor \cdots \lor
+!B_n)
+\end{align*}
+दुसऱ्या शब्दांत, क्रमवर्ती $\Gamma \Sequent \Delta$ ची
+!!^a{valuation}~$\pAssign{v}$ ने तेव्हा आणि केवळ तेव्हाच
+\emph{पूर्ति होते},
+जेव्हा काही $!A \in \Gamma$ साठी $\pValue{v}(!A) = \False$ असते
+किंवा काही $!A \in \Delta$ साठी $\pValue{v}(!A) = \True$ असते.
+या अर्थलक्षणानुसार, आरंभीच्या क्रमवर्ती $!A \Sequent !A$ ची
+नेहमी पूर्ति होते; कारण एकतर $\pValue v(!A) = \True$ असते
+किंवा $\pValue v(!A) = \False$ असते.
+
+बाजूची सूत्रे $\Gamma$, $\Delta$ वगळल्यास, $\Log{LK}$ मधील
+सशर्त संयोजकाचे निगमन नियम असे आहेत:
+
+\begin{defish}
+    \Axiom$ \fCenter !A$
+    \Axiom$ !B \fCenter $
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$ !A \lif !B \fCenter $
+    \DisplayProof
+    \hfill
+    \Axiom$ !A \fCenter !B$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$ \fCenter !A \lif !B $
+    \DisplayProof
+\end{defish}
+
+क्रमवर्तीच्या वरील चिन्हार्थलक्षी अर्थलक्षणाचा उपयोग केल्यास,
+$\LeftR{\lif}$ नियम असे सांगतो की $\pValue v(!A) = \True$
+आणि $\pValue v(!B) = \False$ असतील, तर $\pValue v(!A \lif !B) = \False$
+असते. त्याचप्रमाणे $\RightR{\lif}$ नियम असे सांगतो की
+$\pValue v(!A) = \False$ किंवा $\pValue v(!B) = \True$
+असेल, तर $\pValue v(!A \lif !B) = \True$ असते. प्रत्यक्षात,
+येथील ही दोन्ही सशर्त विधाने द्विशर्त विधाने आहेत.
+$\LeftR{\land}$ आणि $\RightR{\lor}$ नियमांच्या प्रमाणित रूपात
+त्यांना अनुरूप सशर्त विधाने द्विशर्त नसतील. पण या नियमांची
+अशी पर्यायी रूपे आहेत की त्यात ती द्विशर्त ठरतात:
+
+\begin{defish}
+    \Axiom$!A, !B, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \hfill
+    \Axiom$ \Gamma \fCenter \Delta, !A, !B$
+    \RightLabel{\RightR{\lor}}
+    \UnaryInf$ \Gamma \fCenter \Delta, !A \lor !B$
+    \DisplayProof
+\end{defish}
+
+ही मूलभूत कल्पना $n$-मूल्य तर्कशास्त्राला लावल्यास, दोन जागांऐवजी
+$n$ जागा असलेले क्रमवर्ती कलन मिळते; प्रत्येक सत्यतामूल्यासाठी
+एक जागा असते. $V = \{\False, \Undef, \True\}$ असलेल्या त्रिमूल्य
+तर्कशास्त्रात क्रमवर्ती ही $\Gamma \mid \Pi \mid \Delta$ या रूपाची
+अभिव्यक्ती असते. तिची !!a{valuation}~$\pAssign v$ ने तेव्हा आणि
+केवळ तेव्हाच पूर्ति होते, जेव्हा काही $!A \in \Gamma$ साठी
+$\pValue{v}(!A) = \False$ असते, किंवा काही $!A \in \Delta$ साठी
+$\pValue{v}(!A) = \True$ असते, किंवा काही $!A \in \Pi$ साठी
+$\pValue{v}(!A) = \Undef$ असते. त्यामुळे आरंभीच्या क्रमवर्ती
+$!A \mid !A \mid !A$ ची नेहमी पूर्ति होते.
+
+\end{document}
