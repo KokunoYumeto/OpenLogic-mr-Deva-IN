@@ -1,0 +1,68 @@
+% Part: applied-modal-logics
+% Chapter: temporal-logic
+% Section: properties-accessibility
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{tl}{acc}
+
+\olsection{कालिक चौकटींचे गुणधर्म}
+
+आपली कालिक प्रतिमाने~$\prec$ या संबंधावर कोणतीही
+अट घालत नसल्यामुळे, आपल्या परिचित स्वयंसिद्धकांपैकी
+सर्व प्रतिमानांत लागू असणारे एकमेव स्वयंसिद्धक~$K$
+आहे; किंवा त्याची $K_{\Gtemp}$ आणि~$K_{\Htemp}$
+ही अनुरूप रूपे आहेत:
+\begin{align*}
+\tag{$K_{\Gtemp}$}  \Gtemp (p \to q) & \to (\Gtemp p \to \Gtemp q)\\
+\tag{$K_{\Htemp}$}  \Htemp (p \to q) & \to (\Htemp p \to \Htemp q)
+\end{align*}
+
+मात्र प्रतिमानांनी काळाच्या निरूपणावर अधिक कडक
+अटी घालाव्यात असे आपल्याला वाटत असेल—उदा.,
+$\prec$ हा रेषीय क्रम असावा—तर त्या प्रतिमानांत
+इतर सूत्रेही वैध ठरतील.
+
+\begin{table}[t]
+  \begin{tabular}{| p{.48\textwidth} || p{.48\textwidth} |}
+    \hline
+    {\emph{$\prec$ हा \dots असेल}} & {\emph{तर~$\mModel{M}$ मध्ये \dots सत्य आहे:}} \\
+    \hline \hline
+    \emph{संक्रमक}: \newline
+    $\forall u \forall v \forall w ((u \prec v \land v \prec w) \lif u \prec w)$ &
+    $\Ftemp \Ftemp p \lif \Ftemp p$  \\
+    \hline
+    \emph{रेषीय}: \newline
+    $\forall w \forall v (w \prec v \lor w = v \lor v \prec w)$ &
+    $(\Ftemp \Ptemp  p \lor \Ptemp \Ftemp p) \lif (\Ptemp p \lor p \lor \Ftemp p)$\\
+    \hline
+    \emph{सघन}: \newline
+    $\forall w \forall v (w \prec v \to \exists u(w \prec u \land u \prec v))$ &
+    $\Ftemp p \lif \Ftemp \Ftemp p$ \\
+    \hline
+    \emph{अपरिबद्ध (भूतकाळाकडे)}: \newline
+    $\forall w \exists v( v \prec w)$ &
+    $\Htemp p \to \Ptemp p$ \\
+    \hline
+    \emph{अपरिबद्ध (भविष्याकडे)}: \newline
+    $\forall w \exists v( w \prec v)$ &
+    $\Gtemp p \to \Ftemp p$ \\
+    \hline
+  \end{tabular}
+  \caption{कालिक चौकटींचे काही अनुरूपता-गुणधर्म.}
+  \ollabel{tab:correspondence}
+\end{table}
+
+\olref{tab:correspondence} मधील अनेक गुणधर्म काळाचे
+निरूपण करण्यासाठी बनवलेल्या प्रतिमानांत अपेक्षित
+वाटू शकतात. तरीही, $\prec$ संबंधावर आपल्याला
+हव्या त्या अटी घालता येत असल्या, तरी सर्वच अटी
+कालिक तर्कशास्त्राच्या भाषेत व्यक्त करता येणाऱ्या
+!!{formula}s द्वारे दर्शवता येतात असे नाही. उदाहरणार्थ,
+अपरावर्तीपणा, म्हणजे $\forall w \lnot (w \prec w)$
+ही अट, कालिक तर्कशास्त्रातील कोणत्याही सूत्राशी
+अनुरूप नाही.
+
+\end{document}
