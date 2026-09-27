@@ -1,0 +1,138 @@
+% Part: normal-modal-logic
+% Chapter: sequent-calculus
+% Section: rules-for-K
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{seq}{rul}
+
+\olsection{\Log{K} साठी नियम}
+
+नेहमीच्या विधानीय संयोजकांसाठीचे नियम हे
+नेहमीच्या क्रमवर्ती कलनातील~$\Log{LK}$ नियमांसारखेच
+आहेत. स्वयंसिद्धकेही तीच आहेत: $!A \Sequent !A$
+या रूपातील कोणतीही क्रमवर्ती स्वयंसिद्धक असते.
+
+मोडल संकारक\iftag{prvBox}{\iftag{prvDiamond}{~$\Box$
+आणि}{~$\Box$}}{}\iftag{prvDiamond}{~$\Diamond$}{} यांच्यासाठी
+पुढील अतिरिक्त \iftag{notprvBox,notprvDiamond}{नियम}{नियम}
+आहेत:
+\[
+  \iftag{prvBox}{\iftag{prvDiamond}{% <> and [] primitive
+    \Axiom$\Gamma \fCenter \Delta, !A$
+    \RightLabel{$\Box$}
+    \UnaryInf$\Box\Gamma \fCenter \Diamond\Delta, \Box!A$
+    \DisplayProof
+    \qquad
+    \Axiom$!A, \Gamma \fCenter \Delta$
+    \RightLabel{$\Diamond$}
+    \UnaryInf$\Diamond!A, \Box\Gamma \fCenter \Diamond\Delta$
+    \DisplayProof
+}{% only Box primitive
+\Axiom$\Gamma \fCenter !A$
+\RightLabel{$\Box$}
+\UnaryInf$\Box\Gamma \fCenter \Box!A$
+\DisplayProof
+}}{% only <> primitive
+  \Axiom$!A \fCenter \Delta$
+  \RightLabel{$\Diamond$}
+  \UnaryInf$\Diamond!A \fCenter \Diamond\Delta$
+  \DisplayProof
+}
+\]
+येथे \iftag{prvBox}{$\Box\Gamma$ म्हणजे~$\Gamma$
+मधील प्रत्येक !!{formula} च्या आधी~$\Box$
+लावून~$\Gamma$ पासून मिळणारा !!{formula}s चा अनुक्रम\iftag{prvDiamond}{;
+आणि }{}}{}\iftag{prvDiamond}{$\Diamond\Delta$ म्हणजे~$\Delta$
+मधील प्रत्येक !!{formula} च्या आधी~$\Diamond$
+लावून~$\Delta$ पासून मिळणारा !!{formula}s चा अनुक्रम}{}.
+\iftag{notprvDiamond}{$\Box$ नियमाच्या आधारविधानाच्या
+उजव्या बाजूला जास्तीत जास्त एकच !!{formula}~$!A$
+असले पाहिजे. }{}%
+\iftag{notprvBox}{$\Diamond$ नियमाच्या आधारविधानाच्या
+डाव्या बाजूला जास्तीत जास्त एकच !!{formula}~$!A$
+असले पाहिजे. }{}%
+\iftag{prvBox}{$\Gamma$\iftag{prvDiamond}{~आणि~}{}}{}\iftag{prvDiamond}{$\Delta$}{}
+रिकामे असू शकतात; अशा वेळी निष्कर्ष-क्रमवर्तीतील
+त्यांचे अनुक्रमे
+\iftag{prvBox}{$\Box\Gamma$\iftag{prvDiamond}{~आणि~}{}}{}\iftag{prvDiamond}{$\Diamond\Delta$}{}
+हे भागही रिकामे असतात.
+
+एका !!{formula}~$!A$ पुरतेच
+\iftag{prvBox}{उजव्या बाजूला~$\Box$ जोडणे\iftag{prvDiamond}{ आणि
+}{}}{}\iftag{prvDiamond}{डाव्या बाजूला~$\Diamond$ जोडणे}{}
+मर्यादित ठेवणे आवश्यक आहे. जर
+\iftag{prvBox}{उजवीकडे कोणत्याही संख्येने !!{formula}s ना~$\Box$
+जोडण्याची\iftag{prvDiamond}{ किंवा }{}}{}\iftag{prvDiamond}{डावीकडे
+कोणत्याही संख्येने !!{formula}s ना~$\Diamond$ जोडण्याची}{}
+मुभा असती, तर पुढील !!{derive} करता आले असते:
+  \[
+    \iftag{prvBox}{
+      \Axiom$!A \fCenter !A$
+      \RightLabel{\RightR{\lnot}}
+      \UnaryInf$\fCenter !A, \lnot !A$
+      \RightLabel{$\Box*$}
+      \UnaryInf$\fCenter \Box!A, \Box\lnot !A$
+      \doubleLine
+      \RightLabel{\RightR{\lor}}
+      \UnaryInf$\fCenter \Box!A \lor \Box \lnot !A$
+      \DisplayProof}{}
+    \iftag{notprvBox,notprvDiamond}{}{\qquad}
+    \iftag{prvDiamond}{
+      \Axiom$!A \fCenter !A$
+      \RightLabel{\LeftR{\lnot}}
+      \UnaryInf$\lnot !A, !A \fCenter$
+      \RightLabel{$\Diamond*$}
+      \UnaryInf$\Diamond\lnot !A,\Diamond!A \fCenter $
+      \RightLabel{\RightR{\lnot}}
+      \UnaryInf$\Diamond!A \fCenter \lnot\Diamond\lnot !A$
+      \RightLabel{\RightR{\lif}}
+      \UnaryInf$ \fCenter \Diamond!A \lif \lnot\Diamond\lnot !A$
+      \DisplayProof}{}
+  \]
+मात्र \iftag{prvBox}{$\Box!A \lor \Box \lnot !A$\iftag{prvDiamond}{ आणि
+$\Diamond!A \lif \lnot\Diamond\lnot !A$}{}}{$\Diamond!A \lif
+\lnot\Diamond\lnot !A$} यांपैकी कोणतेही सूत्र~$\Log{K}$ मध्ये
+वैध नाही.
+
+जर आधारविधानात~$!A$ व्यतिरिक्त बाजूची सूत्रेही
+असू दिली, आणि \iftag{prvBox}{$\Box$ नियमाने उजवीकडे
+फक्त~$!A$ ला~$\Box$ जोडू दिला\iftag{prvDiamond}{ किंवा
+}{}}{}\iftag{prvDiamond}{$\Diamond$ नियमाने डावीकडे
+फक्त~$!A$ ला~$\Diamond$ जोडू दिला}{} (पण बाजूच्या
+सूत्रांवर कोणतीही क्रिया केली नाही), तर पुढील
+!!{derive} करता आले असते:
+\[
+  \iftag{prvBox}{
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\fCenter !A, \lnot !A$
+    \RightLabel{\RightR{\Exchange}}
+    \UnaryInf$\fCenter \lnot !A, !A$
+    \RightLabel{$\Box*$}
+    \UnaryInf$\fCenter \lnot!A, \Box !A$
+    \doubleLine
+    \RightLabel{\RightR{\lor}}
+    \UnaryInf$\fCenter \lnot!A \lor \Box !A$
+    \DisplayProof}{}
+  \iftag{notprvBox,notprvDiamond}{}{\qquad}
+  \iftag{prvDiamond}{
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot !A, !A \fCenter$
+    \RightLabel{$\Diamond*$}
+    \UnaryInf$\Diamond\lnot !A, !A \fCenter $
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$!A \fCenter \lnot\Diamond\lnot !A$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$ \fCenter !A \lif \lnot\Diamond\lnot !A$
+    \DisplayProof}{}
+\]
+मात्र \iftag{prvBox}{$\lnot!A \lor \Box !A$ (जे $!A
+\lif \Box!A$ शी सममूल्य आहे)\iftag{prvDiamond}{ आणि $!A \lif \lnot\Diamond\lnot !A$
+}{}}{$!A \lif \lnot\Diamond\lnot !A$} यांपैकी कोणतेही
+सूत्र~$\Log{K}$ मध्ये वैध नाही.
+
+\end{document}
