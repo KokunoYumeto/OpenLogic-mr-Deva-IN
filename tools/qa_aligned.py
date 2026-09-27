@@ -904,6 +904,14 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$\Log{K} \Proves \Diamond(!A\lor!B) \lif (\Diamond!A \lor \Diamond!B)$',
          r'$\Log{K} \Proves \Diamond(!A\lor!B) \lif (\Diamond!B \lor \Diamond!A)$'),
     ],
+    'OLP-0437': [
+        # OLINC-171: KT derives the D axiom formula, not a logic named D.
+        (r'\Log{KT} \Proves' + '\n' + r'  \Ax{D}',
+         r'\Log{KT} \Proves' + '\n' + r'  \Log{D}'),
+        # OLINC-172: nonderivability concerns the axiom formulas 4 and 5.
+        (r'$\Log{KTB} \Proves/ \Ax{4}$ आणि $\Log{KTB} \Proves/ \Ax{5}$.',
+         r'$\Log{KTB} \Proves/ \Log{4}$ and $\Log{KTB} \Proves/ \Log{5}$.'),
+    ],
 }
 
 

@@ -1,0 +1,170 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: systems-distinct
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{dis}
+
+\olsection{प्रणाली भिन्न आहेत हे दाखवणे}
+
+\olref[prs]{sec} मध्ये दोन मोडल तर्कशास्त्रीय
+प्रणाली प्रत्यक्षात एकच आहेत, हे कसे सिद्ध करायचे
+ते पाहिले. आता~\olref[snd]{thm:soundness}
+वापरून दोन मोडल प्रणाली $\Sigma$ आणि $\Sigma'$
+भिन्न आहेत, हे दाखवता येते: असे !!a{formula}~$!A$
+शोधायचे की $\Sigma' \Proves !A$, पण ते~$\Sigma$
+च्या प्रतिमानात असत्य ठरते.
+
+\begin{prop}
+  $\Log{KD} \subsetneq \Log{KT}$
+\end{prop}
+
+\begin{proof} प्रत्येक परावर्ती संबंध सर्वत्र उत्तरवर्ती असतो,
+  या अर्थविषयक तथ्याचा हा वाक्यरचनात्मक समकक्ष आहे.
+  $\Log{KD} \subseteq \Log{KT}$ दाखवण्यासाठी
+  $\Log{KD} \Proves !B$ यावरून
+  $\Log{KT} \Proves !B$ मिळते हे पाहावे लागेल;
+  \olref[prs]{prop:S5facts}\olref[prs]{prop:S5facts-KT-D}
+  मध्ये दाखवल्याप्रमाणे $\Log{KT} \Proves
+  \Ax{D}$ यावरून हे मिळते. हा समावेश कडक आहे हे
+  दाखवण्यासाठी निर्दोषतेनुसार
+  (\olref[snd]{thm:soundness}) \Log{KD} चे असे
+  प्रतिमान दाखवणे पुरेसे आहे की त्यात
+  \Ax{T}, म्हणजे $\Box p \lif p$, असत्य ठरते
+  (हे सोपे काम सरावासाठी ठेवले आहे). मग निर्दोषतेवरून
+  $\Log{KD} \Proves/ \Box p \lif p$.
+\end{proof}
+
+\begin{prop}
+  $\Log{KB} \neq \Log{K4}$.
+\end{prop}
+
+\begin{proof}
+  \Ax{4} चा एखादा दृष्टांत असत्य ठरणारे सममित
+  प्रतिमान रचू. तो दृष्टांत \Log{K4} मध्ये
+  !!{derivable} आहे, पण \Log{KB} मध्ये नाही;
+  म्हणून $\Log{K4} \nsubseteq \Log{KB}$ मिळेल.
+  \olref{fig:Bnot4} मधील सममित प्रतिमान
+  $\mModel{M}$ पाहा. प्रतिमान सममित असल्याने
+  \Ax{K} आणि~\Ax{B} ही $\mModel{M}$ मध्ये सत्य
+  आहेत (अनुक्रमे \olref[syn][sch]{prop:Kvalid}
+  आणि \olref[frd][acc]{thm:soundschemas} वरून).
+  मात्र $\mSat/{M}{\Box p \lif \Box\Box p}[w_1]$.
+\end{proof}
+
+\begin{figure}[htpb]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w1) [label=above:\mFalse{p},
+    label={below:$\mSat{{}}{\Box p}$\\ $\mSat/{{}}{\Box\Box p}$}] {$w_1$};
+    \node[world] (w2) [label=above:\mTrue{p},
+      label=below:$\mSat/{{}}{\Box p}$, right=of w1]{$w_2$};
+    \draw[->, bend left] (w1) to (w2);
+    \draw[->, bend left] (w2) to (w1);
+  \end{tikzpicture}
+  \caption{\Ax{4} चा दृष्टांत असत्य ठरणारे सममित प्रतिमान.}
+  \ollabel{fig:Bnot4}
+\end{figure}
+
+\begin{thm}\ollabel{thm:KTBnot45}
+  $\Log{KTB} \Proves/ \Ax{4}$ आणि $\Log{KTB} \Proves/ \Ax{5}$.
+\end{thm}
+
+\begin{proof}
+  \olref[frd][acc]{thm:soundschemas} वरून
+  \Ax{T} आणि \Ax{B} यांचे सर्व दृष्टांत
+  अनुक्रमे प्रत्येक परावर्ती आणि सममित प्रतिमानात
+  सत्य असतात. म्हणून निर्दोषतेनुसार असे
+  परावर्ती सममित प्रतिमान शोधणे पुरेसे आहे की
+  त्यातील एका जगात~\Ax{4} चा एखादा दृष्टांत
+  असत्य ठरेल; \Ax{5} साठीही तसेच.
+  दोन्ही दाव्यांसाठी एकच प्रतिमान वापरू.
+  \olref{fig:KTBnot45} मधील सममित, परावर्ती
+  प्रतिमान पाहा. येथे $\mSat/{M}{\Box p \to \Box \Box
+    p}[w_1]$; म्हणून \Ax{4} हा $w_1$ येथे
+  असत्य ठरतो. तसेच $\mSat/{M}{\Diamond
+    \lnot p \lif \Box \Diamond \lnot p}[w_2]$;
+  म्हणून $!A = \lnot p$ असलेला~\Ax{5} चा
+  दृष्टांत $w_2$ येथे असत्य ठरतो.
+\end{proof}
+
+\begin{figure}[htpb]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w1) [label={right:\mTrue{p}},
+      label={below: $\mSat{{}}{\Box p}$\\
+        $\mSat/{{}}{\Box\Box p}$\\
+        $\mSat/{{}}{\Diamond\lnot p}$}] {$w_1$};
+    \draw[reflexive above] (w1) to (w1);
+    \node[world] (w2) [label={right:\mTrue{p}}, label={below:
+        $\mSat{{}}{\Diamond\lnot p}$\\
+        $\mSat/{{}}{\Box\Diamond\lnot p}$}, right=of w1] {$w_2$} ;
+    \draw[reflexive above] (w2) to (w2);
+    \node[world] (w3) [label={right:\mFalse{p}},right=of w2] {$w_3$};
+    \draw[reflexive above] (w3) to (w3);
+    \draw[->, bend left] (w1) to (w2);
+    \draw[->, bend left] (w2) to (w3);
+    \draw[->, bend left] (w3) to (w2);
+    \draw[->, bend left] (w2) to (w1);
+  \end{tikzpicture}
+  \caption{\olref{thm:KTBnot45} साठीचे प्रतिमान.}
+  \ollabel{fig:KTBnot45}
+\end{figure}
+
+\begin{thm}\ollabel{thm:KD5not4}
+  $\Log{KD5} \neq \Log{KT4} = \Log{S4}$.
+\end{thm}
+
+\begin{proof}
+  \olref[frd][acc]{thm:soundschemas} वरून
+  \Ax{D} आणि~\Ax{5} यांचे सर्व दृष्टांत
+  प्रत्येक सर्वत्र उत्तरवर्ती युक्लिडी प्रतिमानात
+  सत्य असतात. म्हणून असे प्रतिमान शोधणे पुरेसे
+  आहे की त्यातील एका जगात~\Ax{4} चा एखादा
+  दृष्टांत असत्य ठरेल. \olref{fig:KD5not4}
+  मधील प्रतिमान पाहा; येथे
+  $\mSat/{M}{\Box p
+  \lif \Box\Box p}[w_1]$.
+\end{proof}
+
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w2) [label=north west:\mTrue{p}]{$w_2$} ;
+    \draw[reflexive left] (w2) to (w2);
+    \node[world] (w1) [label=right:\mFalse{p},
+      label=below:{$\mSat{{}}{\Box p}, \mSat/{{}}{\Box\Box p}$},
+      below right=of w2]{$w_1$};
+    \node[world] (w3) [label=north east:\mTrue{p}, above right=of w1]{$w_3$} ;
+    \draw[reflexive right] (w3) to (w3);
+    \node[world] (w4) [label=right:\mFalse{p},above right=of w2]{$w_4$};
+    \draw[reflexive above] (w4) to (w4);
+    \draw[->] (w1) to (w2);
+    \draw[->] (w1) to (w3);
+    \draw[->, bend left=15] (w2) to (w3);
+    \draw[->, bend left=15] (w3) to (w2);
+    \draw[->, bend left=15] (w2) to (w4);
+    \draw[->, bend left=15] (w4) to (w2);
+    \draw[->, bend left=15] (w3) to (w4);
+    \draw[->, bend left=15] (w4) to (w3);
+  \end{tikzpicture}
+  \caption{\olref{thm:KD5not4} साठीचे प्रतिमान.}
+  \ollabel{fig:KD5not4}
+\end{figure}
+
+\begin{prob}
+  $3$ जगांचे प्रतिमान वापरून
+  \olref[nml][prf][dis]{thm:KD5not4} ची पर्यायी
+  सिद्धता द्या.
+\end{prob}
+
+\begin{prob}
+  $\Log{KT4} \Proves/ \Ax{B}$ आणि
+  $\Log{KT4} \Proves/ \Ax{5}$ हे दोन्ही दाखवणारे
+  एकच परावर्ती संक्रमक प्रतिमान द्या.
+\end{prob}
+
+\end{document}
