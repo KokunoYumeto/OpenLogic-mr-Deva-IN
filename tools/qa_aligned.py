@@ -832,6 +832,10 @@ _DOCUMENTED_PROJECTIONS = {
         (r'किंवा $\pValue v(!A) = \False$ असते.',
          r'किंवा $\pValue(!A) = \False$ असते.'),
     ],
+    'OLP-0404': [
+        # OLINC-145: each position has its own formula sequence.
+        (r'प्रत्येक $\Gamma_i$ ही', r'प्रत्येक $\Gamma_1$ ही'),
+    ],
 }
 
 

@@ -1,0 +1,79 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{seq}{rul}
+
+\olsection{नियम आणि \usetoken{P}{derivation}}
+
+पुढे $\Gamma, \Delta, \Pi, \Lambda$ या !!{sentence}s च्या
+सांत क्रमिका दर्शवतात असे समजू.
+
+\begin{defn}[क्रमवर्ती]
+\emph{$n$-बाजूंची क्रमवर्ती} म्हणजे पुढील रूपाची अभिव्यक्ती:
+\[
+\Gamma_1 \nSequent \dots \nSequent \Gamma_n
+\]
+येथे प्रत्येक $\Gamma_i$ ही भाषा~$\Lang L$ मधील
+!!{sentence}s ची सांत, शक्यतो रिकामी, क्रमिका असते.
+\end{defn}
+
+\begin{defn}[आरंभीची क्रमवर्ती]
+\emph{$n$-बाजूंची आरंभीची क्रमवर्ती} म्हणजे भाषेतील कोणत्याही
+!!{sentence}~$!A$ साठी $!A \nSequent \dots \nSequent !A$
+या रूपाची $n$-बाजूंची क्रमवर्ती.
+
+भाषेत $0$-स्थानी संयोजक~$\star$, म्हणजे विधानीय स्थिरांक,
+असेल तर $\dots \nSequent \star \nSequent \dots$ ही क्रमवर्तीही
+आरंभीची मानतो. यात $\tf{\star} \in V$ शी संबंधित
+सत्यतामूल्याच्या जागी $\star$ असते; इतर जागा रिकाम्या असतात.
+\end{defn}
+
+$n$-मूल्य तर्कशास्त्र~$\Log{L}$ मधील प्रत्येक संयोजकासाठी,
+त्या संयोजकाला $\Log{L}$ मध्ये मिळू शकणाऱ्या प्रत्येक
+सत्यतामूल्यासाठी एक तार्किक नियम असतो. $\Log{L}$ च्या
+$n$-बाजूंच्या क्रमवर्ती कलनातील !!^{derivation}s ही क्रमवर्तींची
+वृक्षरूप मांडणी असते: सर्वांत वरच्या क्रमवर्ती आरंभीच्या असतात;
+आणि एखादी क्रमवर्ती एक किंवा अधिक क्रमवर्तींच्या खाली असेल,
+तर ती $\Log{L}$ मधील संयोजकांसाठीच्या निगमन नियमाने
+त्यांच्यापासून योग्यरीत्या निष्पन्न झालेली असावी लागते.
+
+\begin{defn}[प्रमेये]
+!!^a{sentence}~$!A$ हे $n$-मूल्य तर्कशास्त्र~$\Log{L}$ चे
+\emph{प्रमेय} तेव्हा असते, जेव्हा $\Log{L}$ मधील प्रत्येक निर्दिष्ट
+सत्यतामूल्याशी संबंधित जागेत $!A$ असलेल्या $n$-बाजूंच्या
+क्रमवर्तीचे !!a{derivation} असते. $!A$ प्रमेय असेल तर
+$\Proves[\Log{L}] !A$ आणि नसेल तर $\Proves/[\Log{L}] !A$ लिहितो.
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+$n$-मूल्य तर्कशास्त्र~$\Log{L}$ मध्ये !!^a{sentence}~$!A$
+हे !!{sentence}s च्या संच~$\Gamma$ पासून \emph{!!{derivable}}
+असते, $\Gamma \Proves[\Log{L}] !A$, तेव्हा आणि केवळ तेव्हाच,
+जेव्हा एखादा ससीम उपसंच~$\Gamma_0 \subseteq \Gamma$
+आणि $\Gamma_0$ मधील !!{sentence}s ची एखादी क्रमिका~$\Gamma_0'$
+अशी असते की पुढील क्रमवर्तीचे !!a{derivation} असते:
+\[ \Lambda_1 \nSequent \dots \nSequent \Lambda_n \]
+येथे जागा~$i$ निर्दिष्ट सत्यतामूल्याशी संबंधित असेल तर
+$\Lambda_i$ हे $!A$ असते; अन्यथा ते $\Gamma_0'$ असते.
+$!A$ हे $\Gamma$ पासून !!{derivable} नसेल तर
+$\Gamma \Proves/ !A$ असे लिहितो.
+\end{defn}
+
+उदाहरणार्थ, $3$-मूल्य \L ukasiewicz तर्कशास्त्रासाठी
+$3$-बाजूंचे क्रमवर्ती कलन आहे. $3$-बाजूंच्या क्रमवर्ती
+$\Gamma \nSequent \Pi \nSequent \Delta$ मध्ये $\Gamma$
+हे~$\False$ शी, $\Delta$ हे~$\True$ शी आणि $\Pi$
+हे~$\Undef$ शी संबंधित असतात. स्वयंसिद्धके
+$!A \nSequent !A \nSequent !A$ ही आहेत. फक्त $\True$
+निर्दिष्ट असल्यामुळे, $\Gamma \Proves[\LogLuk[3]] !A$
+तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \nSequent \Gamma \nSequent !A$
+या क्रमवर्तीचे !!a{derivation} असते. ($\Undef$ देखील निर्दिष्ट
+असते, तर $\Gamma \nSequent !A \nSequent !A$ या क्रमवर्तीचे
+!!a{derivation} आवश्यक झाले असते.)
+
+\end{document}
