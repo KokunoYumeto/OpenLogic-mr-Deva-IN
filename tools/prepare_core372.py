@@ -58,7 +58,7 @@ convert_section = prior_namespace["convert_section"]
 folder = ROOT / "mr/content/lambda-calculus/church-rosser"
 driver = selected((folder / "church-rosser.tex").read_text(encoding="utf-8"))
 assert r"\olchapter{lam}{cr}{चर्च–रॉसर गुणधर्म}" in driver
-imports = re.findall(r"\olimport\{([^}]+)\}", driver)
+imports = re.findall(r"\\olimport\{([^}]+)\}", driver)
 assert imports == [
     "definitions-and-properties",
     "parallel-beta-reduction",
@@ -72,7 +72,7 @@ files = []
 for name in imports:
     path = folder / (name + ".tex")
     content = selected(path.read_text(encoding="utf-8"))
-    file_id = re.search(r"\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}", content)
+    file_id = re.search(r"\\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}", content)
     assert file_id and file_id.group(1) == "lam", path
     parts = list(file_id.groups())
     assert parts[:2] == ["lam", "cr"], path
@@ -80,9 +80,9 @@ for name in imports:
     available.add(prefix + ":sec")
     available.update(
         prefix + ":" + item
-        for item in re.findall(r"\ollabel\{([^}]+)\}", content)
+        for item in re.findall(r"\\ollabel\{([^}]+)\}", content)
     )
-    available.update(re.findall(r"\label\{([^}]+)\}", content))
+    available.update(re.findall(r"\\label\{([^}]+)\}", content))
     files.append((name, content, parts, prefix))
 external.difference_update(available)
 
@@ -90,42 +90,42 @@ chunks = [r"\chapter{चर्च–रॉसर गुणधर्म}\label{" 
 for name, raw, parts, prefix in files:
     content = strip_wrapper(raw)
     content, removed = re.subn(
-        r"\olfileid\{[^}]+\}\{[^}]+\}\{[^}]+\}", "", content, count=1
+        r"\\olfileid\{[^}]+\}\{[^}]+\}\{[^}]+\}", "", content, count=1
     )
     assert removed == 1, name
     content = replace_tokens(content)
     content = convert_section(content, prefix)
     content = re.sub(
-        r"\ollabel\{([^}]+)\}",
+        r"\\ollabel\{([^}]+)\}",
         lambda match: r"\label{" + prefix + ":" + match.group(1) + "}",
         content,
     )
     content = re.sub(
-        r"\olref((?:\[[^]]*\])*)\{([^}]+)\}",
+        r"\\olref((?:\[[^]]*\])*)\{([^}]+)\}",
         lambda match: references(match, parts),
         content,
     )
     content = re.sub(
-        r"\Olref\{([^}]+)\}",
+        r"\\Olref\{([^}]+)\}",
         lambda match: r"\ref{" + prefix + ":" + match.group(1) + "}",
         content,
     )
     content = re.sub(
-        r"\(?:c|C)ref\{([^}]+)\}",
+        r"\\(?:c|C)ref\{([^}]+)\}",
         lambda match: " आणि ".join(
             r"\ref{" + item.strip() + "}" for item in match.group(1).split(",")
         ),
         content,
     )
     content = re.sub(
-        r"\tagrefs\{((?:[^{}]|\{[^{}]*\})*)\}",
+        r"\\tagrefs\{((?:[^{}]|\{[^{}]*\})*)\}",
         tag_references,
         content,
         flags=re.S,
     )
     assert "!!" not in content, (name, re.findall(r"!!.{0,35}", content)[:8])
     leftover = re.search(
-        r"\(?:iftag|tagitem|tagblock|tagenumerate|tagprob|tagendprob|"
+        r"\\(?:iftag|tagitem|tagblock|tagenumerate|tagprob|tagendprob|"
         r"usetoken|printtoken|Article|article|olref|Olref|ollabel|"
         r"olsection|olfileid|tagrefs|Cref|cref)",
         content,
@@ -150,7 +150,7 @@ assert notes.count(r"\end{enumerate}") >= 1
 notes = notes.replace(r"\end{enumerate}", new_note + r"\end{enumerate}", 1)
 out = before + "\n".join(chunks) + "\n" + notes
 out = re.sub(
-    r"\readerexternalref\{([^}]+)\}",
+    r"\\readerexternalref\{([^}]+)\}",
     lambda match: (
         r"\ref{" + match.group(1) + "}"
         if match.group(1) in available
@@ -179,10 +179,10 @@ for row in manifest[366:372]:
     )
 assert len(inputs) == 369 and inputs[-1]["unit_id"] == "OLP-0372"
 assert out.count(r"\chapter{") == 37
-assert len(re.findall(r"\section(?:\[[^]]*\])?\{", out)) == 324
+assert len(re.findall(r"\\section(?:\[[^]]*\])?\{", out)) == 324
 assert "369 स्रोत-एकके आणि 324 वाचक-विभाग" in out
 assert "!!" not in out
-labels = re.findall(r"\label\{([^}]+)\}", out)
+labels = re.findall(r"\\label\{([^}]+)\}", out)
 assert len(labels) == len(set(labels)), "Cumulative reader labels must be unique"
 
 (BUILD / "openlogic-mr-core.tex").write_text(out, encoding="utf-8", newline="\n")
