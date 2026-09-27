@@ -1281,6 +1281,14 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\bigcup_{\delta < \beta}(\alpha \ordtimes \delta)',
          r'\supstrict_{\delta < \beta}(\alpha \ordtimes \delta)'),
     ],
+    'OLP-0579': [
+        # OLINC-261: functions from beta to alpha, rather than from
+        # alpha to beta, have order type alpha raised to beta.
+        (r'\ordtype{\text{finfun}(\beta, \alpha), \sqsubset}',
+         r'\ordtype{\text{finfun}(\alpha, \beta), \sqsubset}'),
+        (r'\ordtype{\text{finfun}(\beta, \alpha),' + '\n' + r'\sqsubset}',
+         r'\ordtype{\text{finfun}(\alpha, \beta),' + '\n' + r'\sqsubset}'),
+    ],
 }
 
 

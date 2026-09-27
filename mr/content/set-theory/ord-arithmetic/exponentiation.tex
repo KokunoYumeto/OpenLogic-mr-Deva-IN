@@ -1,0 +1,37 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{expo}
+\olsection{क्रमसूचक घातांकन}
+
+आता क्रमसूचक घातांकनाकडे वळू. दुर्दैवाने, क्रमसूचक घातांकनाची \emph{सोपी} संश्लेषणात्मक व्याख्या नाही.
+
+अर्थात स्पष्ट संश्लेषणात्मक व्याख्या \emph{आहेत}. त्यांपैकी एक पाहू. $\text{finfun}(\alpha,\beta)$ हा अशा सर्व फलन $f
+\colon \alpha \to \beta$ यांचा संच असू द्या की $\Setabs{\gamma \in
+\alpha}{f(\gamma) \neq 0}$ हा संच एखाद्या नैसर्गिक संख्येइतका संख्याबल असलेला आहे. $\text{finfun}(\alpha,\beta)$ वर पुढीलप्रमाणे सुक्रमण परिभाषित करा: $f
+\sqsubset g$ तेव्हा आणि केवळ तेव्हाच $f \neq g$ आणि $f(\gamma_0) < g(\gamma_0)$; येथे $\gamma_0 = \text{max}\Setabs{\gamma \in \alpha}{f(\gamma) \neq
+g(\gamma)}$. मग $\ordexpo{\alpha}{\beta}$ ची व्याख्या $\ordtype{\text{finfun}(\beta, \alpha), \sqsubset}$ अशी करता येते. पॉटर यांनी ही स्पष्ट व्याख्या वापरली आहे आणि लगेच असे स्पष्ट केले:
+\begin{quote}
+  हा क्रम निवडण्यामागे एकमेव कारण म्हणजे योग्य पुनरावर्ती अट पूर्ण करणारी क्रमसूचक घातांकनाची व्याख्या मिळावी ही आपली इच्छा\ldots; आणि क्रमित बेरीज किंवा क्रमित गुणाकार यांपेक्षा या क्रमाची कल्पना करणे खूप कठीण आहे.
+  \citep[p.~199]{Potter2004}
+\end{quote}
+अगदी तसेच. बेरीज समजावताना आपण “$\alpha$ ची प्रत आणि तिच्यानंतर $\beta$ ची प्रत” असे म्हटले; गुणाकार समजावताना “$\alpha$ च्या प्रतींचा $\beta$-लांबीचा अनुक्रम” असे म्हटले. पण $\text{finfun}(\alpha, \gamma)$ विषयी इतके थोडक्यात सांगण्यासारखे आपल्याकडे काही नाही. म्हणून त्याऐवजी क्रमसूचक घातांकनाची व्याख्या थेट अनंतपार पुनरावर्तनाने \emph{देऊ}; म्हणजे:
+
+\begin{defn}\ollabel{ordexporecursion}
+\begin{align*}
+  \ordexpo{\alpha}{0} &= 1\\
+  \ordexpo{\alpha}{\beta\ordplus 1} &=\ordexpo{\alpha}{\beta} \ordtimes \alpha\\
+  \ordexpo{\alpha}{\beta} &= \bigcup_{\delta < \beta}\ordexpo{\alpha}{\delta}& & \text{$\beta$ ही सीमा क्रमसूचक संख्या असेल तेव्हा}
+\end{align*}
+\end{defn}
+
+आपण संच उपपत्तीचे \emph{संशोधक म्हणून} काम करत असतो, तर क्रमसूचक घातांकनाचे आणखी काही गुणधर्म तपासण्याची इच्छा झाली असती. पण त्याविषयी येथे अधिक काही सांगायचे नाही; फक्त क्रमसूचक घातांकन क्रमनिरपेक्ष नाही, ही अपेक्षित बाब नोंदवू. कारण $\ordexpo{2}{\omega} =
+\bigcup_{\delta < \omega}\ordexpo{2}{\delta} = \omega$, तर $\ordexpo{\omega}{2} = \omega \ordtimes \omega$. पण घातांकन क्रमनिरपेक्ष असावे अशी \emph{अपेक्षाही} ठेवू नये; नैसर्गिक संख्यांच्या बाबतीतही तसे नाही: $\ordexpo{2}{3} = 8 < 9 = \ordexpo{3}{2}$.
+
+\begin{prob}
+अनंतपार विगमन वापरून सिद्ध करा की, आधार शून्येतर असेल आणि $\ordexpo{\alpha}{\beta} = \ordtype{\text{finfun}(\beta, \alpha),
+\sqsubset}$ अशी व्याख्या केली, तर \olref[sth][ord-arithmetic][expo]{ordexporecursion} मधील पुनरावर्तन समीकरणे मिळतात.
+\end{prob}
+
+\end{document}
