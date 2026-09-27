@@ -1,0 +1,19 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{z}{union}
+\olsection{संयोग}
+
+\olref[sth][z][sep]{prop:intersectionsexist} मधून आपल्याला छेद मिळाले. पण मनमानी संयोगही अस्तित्वात असावेत, तर आणखी एक स्वयंसिद्धक मांडावे लागेल:
+
+\begin{axiom}[संयोग] कोणत्याही संच $A$ साठी $\bigcup A =
+\Setabs{x}{(\exists b \in A) x \in b}$ हा संच अस्तित्वात असतो.
+\[
+	\forall A \exists U \forall x(x \in U \liff (\exists b \in A)x \in b)
+\]
+\end{axiom}
+
+संचांची संचयी-क्रमिक संकल्पनाही या स्वयंसिद्धकाचे समर्थन करते. $A$ हा संच मानू; \stageshier{} नुसार $A$ कोणत्या तरी टप्प्या $S$ वर तयार होतो. \stagesacc{} नुसार $A$ चा प्रत्येक सदस्य $S$ च्या \emph{आधी} तयार झालेला असतो; त्याचप्रमाणे विचार केल्यास $A$ च्या प्रत्येक सदस्याचा प्रत्येक सदस्यही $S$ च्या आधी तयार झालेला असतो. त्यामुळे \emph{हे सर्व} संच $S$ च्या आधी उपलब्ध असतात आणि $S$ वर त्यांचा एक संच तयार होतो. तोच $\bigcup A$ आहे.
+
+\end{document}
