@@ -1,0 +1,112 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{card-arithmetic}{opps}
+\olsection{मूलभूत क्रियांची व्याख्या}
+
+येथे क्रम लक्षात ठेवण्याची गरज नाही; म्हणून संचांकांचे अंकगणित परिभाषित करणे क्रमसूचक अंकगणितापेक्षा सोपे आहे. बेरीज, गुणाकार आणि घातांकन या तिन्ही क्रियांची व्याख्या एकाच वेळी करू.
+
+\begin{defn}
+$\cardfont{a}$ आणि $\cardfont{b}$ हे संचांक असतील, तर:
+\begin{align*}
+  \cardfont{a} \cardplus \cardfont{b} &\defis
+  \card{\cardfont{a} \disjointsum \cardfont{b}}\\
+  \cardfont{a} \cardtimes \cardfont{b} &\defis
+  \card{\cardfont{a} \times \cardfont{b}}\\
+  \cardexpo{\cardfont{a}}{\cardfont{b}} &\defis
+  \card{\funfromto{\cardfont{b}}{\cardfont{a}}}
+\end{align*}
+येथे $\funfromto{X}{Y} = \Setabs{f}{f \text{ हे फलन आहे } X \to Y}$. (कोणत्याही संच $X$ आणि $Y$ साठी $\funfromto{X}{Y}$ अस्तित्वात असतो, हे दाखवणे सोपे आहे; तो सरावासाठी सोडतो.)
+\end{defn}
+
+\begin{prob}
+कोणत्याही संच $X$ आणि~$Y$ साठी $\funfromto{X}{Y}$ अस्तित्वात असतो, हे $\Zminus$ मध्ये सिद्ध करा. $\ZF$ मध्ये काम करून, \olref[sth][ord-arithmetic][using-addition]{rankcomputation} च्या धर्तीवर $\setrank{X}$ आणि $\setrank{Y}$ यांवरून $\setrank{\funfromto{X}{Y}}$ मोजा.
+\end{prob}
+
+या व्याख्येचे स्पष्टीकरण उपयोगी ठरेल. बेरीजेसाठी आपण \olref[ord-arithmetic][add]{defdissum} मध्ये परिभाषित केलेली विभक्त बेरीज $\disjointsum$ वापरतो; सांत प्रकरणांत या व्याख्येतून योग्य उत्तर मिळते, हे सहज दिसते. गुणाकारासाठी, \olref[sfr][set][pai]{cardnmprod} सांगते की $A$ मध्ये $n$ आणि $B$ मध्ये $m$ घटक असतील, तर $A \times B$ मध्ये $n \cdot m$ घटक असतात; म्हणून आपली व्याख्या ही कल्पना अनंतपार गुणाकारापर्यंत विस्तारते. घातांकनाची बाबही तशीच: सांत प्रकरणातील कल्पना अनंतपार प्रकरणात नेतो. खरे तर काही बाबतींत अनंतपार संचांकांचे अंकगणित हे अनंतपार क्रमसूचक अंकगणितापेक्षा “सामान्य” अंकगणिताशी अधिक जुळते:
+
+\begin{prop}\ollabel{cardplustimescommute}
+$\cardplus$ आणि $\cardtimes$ या क्रिया क्रमनिरपेक्ष व सहयोगी आहेत.
+\end{prop}
+
+\begin{proof}
+क्रमनिरपेक्षतेसाठी \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} नुसार
+$\cardeq{(\cardfont{a} \disjointsum
+\cardfont{b})}{(\cardfont{b} \disjointsum \cardfont{a})}$ आणि
+$\cardeq{(\cardfont{a} \times \cardfont{b})}{(\cardfont{b} \times
+\cardfont{a})}$ एवढे पाहिले की पुरे. सहयोगित्व सरावासाठी सोडतो.
+\end{proof}
+
+\begin{prob}
+$\cardplus$ आणि $\cardtimes$ या क्रिया सहयोगी आहेत, हे सिद्ध करा.
+\end{prob}
+
+\begin{prop}
+$A$ अनंत असेल तेव्हा आणि तेव्हाच जेव्हा $\card{A} \cardplus 1 = 1 \cardplus \card{A} = \card{A}$.
+\end{prop}
+
+\begin{proof}
+\olref[ord-arithmetic][using-addition]{ordinfinitycharacter} आणि
+\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} यांवरून,
+\olref[cardinals][classing]{generalinfinitycharacter} प्रमाणे.
+\end{proof}
+
+यावरून क्रमसूचक आणि संचांक बेरीज/गुणाकारासाठी वेगवेगळी चिन्हे का वापरावी लागतात हे स्पष्ट होते: या क्रिया खरोखर \emph{भिन्न} आहेत. पुढील दोन निष्कर्ष क्रमसूचक आणि संचांक घातांकनही भिन्न क्रिया आहेत हे दाखवतात. (\olref[z][infinity-again]{defnomega} नुसार $2 = \{0,
+1\}$ हे आठवा):
+
+\begin{lem}\ollabel{lem:SizePowerset2Exp}
+कोणत्याही $A$ साठी $\card{\Pow{A}} = \cardexpo{2}{\card{A}}$.
+\end{lem}
+
+\begin{proof}
+प्रत्येक उपसंच $B \subseteq A$ साठी $\chi_B \in \funfromto{A}{2}$ असे पुढीलप्रमाणे ठरवा:
+\begin{align*}
+  \chi_{B}(x) &\defis
+  \begin{cases}
+    1 & \text{जर }x\in B\\
+    0 & \text{अन्यथा.}
+  \end{cases}
+\end{align*}
+आता $f(B) = \chi_B$ असे ठेवा; यातून $f \colon \Pow{A}
+\to \funfromto{A}{2}$ हे !!a{bijection} मिळते. म्हणून $\cardeq{\Pow{A}}{\funfromto{A}{2}}$. त्यामुळे
+$\cardeq{\Pow{A}}{\funfromto{\card{A}}{2}}$; आणि म्हणून
+$\card{\Pow{A}} = \card{\funfromto{\card{A}}{2}} =
+\cardexpo{2}{\card{A}}$.
+\end{proof}
+
+या संक्षिप्त पुराव्यात \olref[sfr][siz][red-alt]{sec} मधील चर्चा बहुतांशी सामावली आहे. तेथे आपण $\Pow{\omega}$ ची अगणनीयता अनंत द्विमान चिन्हमालांच्या संचाच्या, म्हणजे $\Bin^\omega$ च्या, अगणनीयतेकडे कशी “न्यून” करता येते ते दाखवले. प्रत्यक्षात $\Bin^{\omega}$ म्हणजेच $\funfromto{\omega}{2}$; आणि आधीच्या पुराव्यावरून \olref[sfr][siz][red-alt]{sec} मधील युक्तिवाद~$\omega$ ऐवजी कोणताही संच~$A$ वापरून करता येतो. यावरून संचांक घातांकनाविषयीही एक झटपट निष्कर्ष मिळतो:
+
+\begin{cor}\ollabel{cantorcor}
+कोणत्याही संचांक~$\cardfont{a}$ साठी $\cardfont{a} < \cardexpo{2}{\cardfont{a}}$.
+\end{cor}
+
+\begin{proof}
+कँटरचे प्रमेय (\olref[sfr][siz][car]{thm:cantor}) आणि
+\olref{lem:SizePowerset2Exp} यांवरून.
+\end{proof}
+\noindent
+म्हणून $\omega < \cardexpo{2}{\omega}$. पण लक्षात घ्या: हा निष्कर्ष \emph{संचांक} घातांकनाबद्दल आहे. त्याची \emph{क्रमसूचक} घातांकनाशी तुलना केली पाहिजे; त्या बाबतीत $\omega =
+\ordexpo{2}{\omega}$ असते (\olref[ord-arithmetic][expo]{sec} पाहा).
+
+संचांक घातांकनाच्या चर्चेत असतानाच $\Real$ हा नेमक्या कोणत्या “अर्थाने” !!{nonenumerable} आहे, हेही अधिक स्पष्ट सांगता येईल.
+
+\begin{thm}\ollabel{continuumis2aleph0}
+$\card{\Real} = \cardexpo{2}{\omega}$
+\end{thm}
+
+\begin{proof}[पुराव्याची रूपरेषा]
+हे सिद्ध करण्याचे अनेक मार्ग आहेत. सर्वांत सरळ म्हणजे $\cardle{\Pow{\omega}}{\Real}$ आणि
+$\cardle{\Real}{\Pow{\omega}}$ दाखवणे; मग श्रेडर--बर्नस्टाइन वापरून
+$\cardeq{\Real}{\Pow{\omega}}$ मिळते, आणि
+\olref[card-arithmetic][opps]{lem:SizePowerset2Exp} वरून
+$\card{\Real} = \cardexpo{2}{\omega}$ मिळते. $f \colon
+\Pow{\omega} \to \Real$ आणि $g \colon \Real \to \Pow{\omega}$ ही एकास-एक फलने परिभाषित करण्याचा (बोधप्रद) सराव आपण सोडतो.
+\end{proof}
+
+\begin{prob}
+$\cardle{\Pow{\omega}}{\Real}$ आणि
+$\cardle{\Real}{\Pow{\omega}}$ दाखवून \olref[sth][card-arithmetic][opps]{continuumis2aleph0} चा पुरावा पूर्ण करा.
+\end{prob}
+
+\end{document}

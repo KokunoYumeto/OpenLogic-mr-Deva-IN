@@ -1289,6 +1289,14 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\ordtype{\text{finfun}(\beta, \alpha),' + '\n' + r'\sqsubset}',
          r'\ordtype{\text{finfun}(\alpha, \beta),' + '\n' + r'\sqsubset}'),
     ],
+    'OLP-0587': [
+        # OLINC-265: the proof's final power uses cardinal exponentiation,
+        # as the lemma states, rather than ordinary superscript notation.
+        (r'\card{\Pow{A}} = \card{\funfromto{\card{A}}{2}} =' + '\n'
+         + r'\cardexpo{2}{\card{A}}',
+         r'\card{\Pow{A}} = \card{\funfromto{\card{A}}{2}} =' + '\n'
+         + r'2^{\card{A}}'),
+    ],
 }
 
 
