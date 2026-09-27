@@ -1348,6 +1348,17 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\tan(\pi(r-\nicefrac{1}{2}))',
          r'\tan(\pi(r-\nicefrac{1}{2})))'),
     ],
+    'OLP-0600': [
+        # OLINC-292: the partition proof uses the already defined
+        # first half of the rotation group, not an undefined R_1.
+        (r'प्रत्येक $\rho \in \rotationsgroup_1$ साठी',
+         r'प्रत्येक $\rho \in R_1$ साठी'),
+        # OLINC-297: quantify over rotations, not over selected points C.
+        (r'कोणत्याही $\rho \in \rotationsgroup$ साठी,',
+         r'कोणत्याही $\rho \in C$ साठी,'),
+        (r'प्रत्येक $\rho \in \rotationsgroup$ साठी $\mu(\funimage{\rho}{C}) = r$',
+         r'प्रत्येक $\rho \in C$ साठी $\mu(\funimage{\rho}{C}) = r$'),
+    ],
 }
 
 
