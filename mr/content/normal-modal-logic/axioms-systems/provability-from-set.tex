@@ -1,0 +1,29 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: provability-from-set
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{prg}
+
+\olsection{संचातील \usetoken{P}{formula} गृहीत धरून \usetoken{S}{derivability}}
+
+\olref[prf][prs]{sec} मध्ये प्रणाली~$\Sigma$ मधील
+!!a{formula} च्या सिद्धतेची संकल्पना परिभाषित केली.
+आता संच~$\Gamma$ मधील !!{formula}s पासून
+$\Sigma$ मध्ये सिद्धतेसाठी ती विस्तारित करू.
+
+\begin{defn}\ollabel{defn:Gammaproves}
+  संच~$\Gamma$ मधील !!{formula}s पासून
+  प्रणाली~$\Sigma$ मध्ये !!^a{formula}~$!A$
+  हे !!{derivable} आहे, असे तेव्हा आणि तेव्हाच
+  म्हणतो व $\Gamma \Proves[\Sigma] !A$ असे लिहितो,
+  जेव्हा $!B_1$, \dots, $!B_n \in \Gamma$ अशी
+  सूत्रे असतात की
+  $\Sigma \Proves !B_1 \lif (!B_2 \lif \cdots (!B_n \lif !A)
+  \cdots)$.
+\end{defn}
+
+\end{document}
