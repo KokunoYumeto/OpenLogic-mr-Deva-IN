@@ -1,0 +1,204 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: kleene
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{thr}{skl}
+
+\olsection{क्लिनी तर्कशास्त्रे}
+
+Stephen Kleene यांनी संगणन प्रक्रियांच्या परिणामांच्या दृष्टीने
+सत्यतामूल्यांचा विचार करणाऱ्या तर्कशास्त्रातून प्रेरित होऊन दोन
+त्रिमूल्य तर्कशास्त्रे मांडली: एखादी प्रक्रिया $\True$ किंवा
+$\False$ हा परिणाम देऊ शकते; पण ती समाप्तही होणार नाही असे
+घडू शकते. त्या वेळी संबंधित सत्यतामूल्य अपरिभाषित असते;
+ते सत्यतामूल्य~$\Undef$ ने दर्शवले जाते.
+
+विधान~$!A$ चे निषेधन संगणित करण्यासाठी आधी~$!A$ चे मूल्य
+काढायचे आणि मग त्याच्या विरुद्ध मूल्याचा परिणाम द्यायचा.
+$!A$ चे संगणन समाप्त होत नसेल, तर ही संपूर्ण प्रक्रियाही
+समाप्त होत नाही; म्हणून $\Undef$ चे निषेधन $\Undef$ आहे.
+
+संधी $!A \land !B$ संगणित करण्याचे दोन मार्ग आहेत: आधी~$!A$
+आणि नंतर $!B$ संगणित करता येईल. दोन्हींचा परिणाम~$\True$
+असेल तर संधीचा परिणाम $\True$, अन्यथा $\False$ असेल.
+दोन्हींपैकी कोणतेही संगणन थांबले नाही, तर संपूर्ण प्रक्रियाही
+थांबत नाही. त्यामुळे या पद्धतीत संधीचा एक घटक अपरिभाषित
+असेल, तर संधीही अपरिभाषित असते. विसंधीबाबतही हेच लागू होते.
+
+पण $!A$ आणि $!B$ यांचे मूल्यांकन समांतरपणे करता आले, तर
+अधिक चांगले करता येते. दोन प्रक्रियांपैकी एक थांबून $\False$
+हा परिणाम देताच आपण थांबू शकतो, कारण संधी असत्य असलीच
+पाहिजे. म्हणून या पद्धतीत एक घटक असत्य असेल, तर दुसरा
+अपरिभाषित असला तरी संधी असत्य असते. त्याचप्रमाणे विसंधीचे
+समांतर संगणन करताना दोन घटकांपैकी एक सत्य परिणाम देताच
+थांबता येते; विसंधी सत्य असलीच पाहिजे. त्यामुळे संयुक्त
+विधानाचा एक घटक अपरिभाषित असला तरी त्याचा परिणाम कळू
+शकतो. या अर्थानुसार $\Undef$ ला ``अपरिभाषित'' याऐवजी
+``अज्ञात'' असे वाचता येईल.
+
+या दोन अर्थांमधून क्लिनी यांची प्रबळ आणि दुर्बल तर्कशास्त्रे
+मिळतात. सशर्त विधानाची व्याख्या $\lnot !A \lor !B$ शी
+समतुल्य अशी केली जाते.
+
+\begin{defn}
+\emph{प्रबळ क्लिनी तर्कशास्त्र}~$\LogKs$ पुढील मॅट्रिक्सने
+परिभाषित होते:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+  \item $\True$ हेच एकमेव निर्दिष्ट मूल्य आहे, म्हणजे $V^+ = \{\True\}$.
+  \item सत्यता-फलने पुढील कोष्टकांनी दिली आहेत:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\
+      $\False$ & $\False$ & $\False$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\True$ & $\True$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$  \\
+      $\False$ & $\True$ & $\True$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+\emph{दुर्बल क्लिनी तर्कशास्त्र}~$\LogKw$ पुढील मॅट्रिक्सने
+परिभाषित होते:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+  \item $\True$ हेच एकमेव निर्दिष्ट मूल्य आहे, म्हणजे $V^+ = \{\True\}$.
+  \item सत्यता-फलने पुढील कोष्टकांनी दिली आहेत:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$\\
+      $\False$ & $\False$ & $\Undef$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\True$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$  \\
+      $\False$ & $\True$ & $\Undef$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+
+\begin{prop}
+  $\LogKs$ आणि $\LogKw$ यांत कोणतेही सर्वतः सत्य सूत्र नाही.
+\end{prop}
+
+\begin{proof}
+  सर्व !!{propositional variable}s~$p$ साठी
+  $\pAssign v(p) = \Undef$ असेल, तर कोणत्याही
+  सूत्र~$!A$ चे सत्यतामूल्य~$\pValue v(!A) =
+  \Undef$ असेल; कारण दोन्ही तर्कशास्त्रांत
+  \[
+    \tf{\lnot}(\Undef) = \tf{\lor}(\Undef, \Undef) = \tf{\land}(\Undef,
+  \Undef) = \tf{\lif}(\Undef, \Undef) = \Undef
+  \]
+  असे आहे. $\LogKs$ आणि $\LogKw$ या दोन्हींमध्ये
+  $\Undef \notin V^+$ असल्यामुळे या !!{valuation} मध्ये
+  $!A$ चे सत्यतामूल्य निर्दिष्ट नसेल.
+\end{proof}
+
+दुर्बल आणि प्रबळ क्लिनी तर्कशास्त्रांत सर्वतः सत्य सूत्रे
+नसली, तरी त्यांचे तार्किक निष्पन्नता संबंध अतुच्छ आहेत.
+
+\begin{prob}
+  पुढीलपैकी कोणते संबंध (a) प्रबळ आणि (b) दुर्बल क्लिनी
+  तर्कशास्त्रात खरे ठरतात? प्रत्येकासाठी सत्यताकोष्टक द्या.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+Dmitry Bochvar यांनी $\Undef$ चा अर्थ ``अर्थहीन'' असा घेतला
+आणि विरोधाभास निर्माण करणाऱ्या विधानांना~$\Undef$ हे मूल्य
+देऊन खोटारड्याच्या विरोधाभासासारखे विरोधाभास सोडवण्याचा
+प्रयत्न केला. त्यांनी मूलतः दुर्बल क्लिनी तर्कशास्त्राला
+अतिरिक्त संयोजके जोडून तयार होणारे तर्कशास्त्र मांडले.
+त्यांतील दोन संयोजके ``बाह्य निषेधन'' आणि ``अपरिभाषित
+आहे'' हा परिकर्मी अशी आहेत:
+\begin{center}
+  \begin{tabular}{c|c}
+    $\tf{\sim}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\True$
+  \end{tabular}
+\quad
+  \begin{tabular}{c|c}
+    $\tf{+}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+  \end{tabular}
+\end{center}
+
+\begin{prob}
+  Bochvar यांच्या तर्कशास्त्रात $\lnot$ आणि~$+$ यांच्या
+  साहाय्याने $\sim$ ची व्याख्या करता येते का? म्हणजे, फक्त
+  !!{propositional
+  variable}~$p$ असलेले, $\sim$ नसलेले
+  आणि नेहमी~$\mathord{\sim}p$ इतकेच सत्यतामूल्य घेणारे
+  !!a{formula} शोधा. तुमचे उत्तर योग्य आहे हे
+  सत्यताकोष्टकाने दाखवा.
+\end{prob}
+
+
+\end{document}
