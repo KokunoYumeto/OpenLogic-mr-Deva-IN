@@ -1,7 +1,8 @@
 param(
   [int]$SlotTimeoutMilliseconds = 1500,
   [int]$PassTimeoutMilliseconds = 480000,
-  [ValidateSet('sets','foundations','core')][string]$Target='sets'
+  [ValidateSet('sets','foundations','core')][string]$Target='sets',
+  [string]$PrepareScript=''
 )
 $ErrorActionPreference = 'Stop'
 $repoPath = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
@@ -63,6 +64,16 @@ try {
   try { $held = $mutex.WaitOne($SlotTimeoutMilliseconds) } catch [Threading.AbandonedMutexException] { $held=$true; $receipt.abandonedRecovery=$true }
   if (-not $held) { $receipt.result='slot-occupied'; return }
   $receipt.acquired=$true
+  if ($PrepareScript) {
+    $preparePath=[IO.Path]::GetFullPath((Join-Path $repoPath $PrepareScript))
+    if (-not $preparePath.StartsWith($repoPath + [IO.Path]::DirectorySeparatorChar)) { throw 'Prepare script outside edition' }
+    if (-not (Test-Path -LiteralPath $preparePath -PathType Leaf)) { throw 'Prepare script missing' }
+    $receipt['prepareScript']=$PrepareScript
+    $receipt['prepareScriptSha256']=(Get-FileHash -LiteralPath $preparePath -Algorithm SHA256).Hash.ToLower()
+    $python=(Get-Command python.exe -ErrorAction Stop).Source
+    & $python -X utf8 $preparePath
+    if ($LASTEXITCODE -ne 0) { $receipt.result='prepare-failed'; return }
+  }
   $receipt['texInputSha256']=(Get-FileHash -LiteralPath (Join-Path $buildPath ($documentName+'.tex')) -Algorithm SHA256).Hash.ToLower()
   $env:SOURCE_DATE_EPOCH='1788480000'
   $receipt['sourceDateEpoch']='1788480000'
