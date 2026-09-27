@@ -1,0 +1,31 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: composition
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{com}
+\olsection{\usetoken{S}{lambda definable} फलने संयोजनाच्या अंतर्गत बंद असतात}
+
+\begin{lem}
+!!{lambda definable} फलनांचा वर्ग संयोजनाच्या अंतर्गत बंद असतो.
+\end{lem}
+
+\begin{proof}
+$f$ हे $h$, $g_0,$ \dots,~$g_{k-1}$ यांच्या संयोजनाने
+परिभाषित आहे असे समजा. $h$, $g_0$, \dots,~$g_{k-1}$
+ही फलने अनुक्रमे $H$, $G_0$, \dots,~$G_{k-1}$
+यांनी !!{lambda defined} आहेत असे गृहीत धरल्यास,
+~$f$ ला !!{lambda define}s असे पद~$F$ शोधायचे आहे.
+पण~$F$ ची व्याख्या सरळ अशी करता येते:
+\[
+F(x_0, \dots, x_{l-1}) = H(G_0(x_0, \dots, x_{l-1}),
+\dots, G_{k-1}(x_0, \dots, x_{l-1})).
+\]
+दुसऱ्या शब्दांत, लॅम्डा कलनाची भाषा संयोजनाचे निरूपण
+करण्यासाठी योग्य आहे.
+\end{proof}
+
+\end{document}
