@@ -1120,6 +1120,19 @@ _DOCUMENTED_PROJECTIONS = {
         # Localize the ordinary-language conjunction inside the aligned display.
         (r'\text{ आणि}', r'\text{ and}'),
     ],
+    'OLP-0502': [
+        # Localize the ordinary-language conjunction inside the interior display.
+        (r'\text{ आणि }', r'\text{ and }'),
+        # OLINC-219: derivability includes identity, so inclusion is non-strict.
+        (r'$!A \Proves !B$ तेव्हा आणि केवळ तेव्हाच' + '\n'
+         + r'$\Prop{X}{!A} \subseteq \Prop{X}{!B}$',
+         r'$!A \Proves !B$ तेव्हा आणि केवळ तेव्हाच' + '\n'
+         + r'$\Prop{X}{!A} \subset \Prop{X}{!B}$'),
+        (r'$\Prop{X}{!A \lif !B} \cap \Prop{X}{!A}' + '\n'
+         + r'\subseteq \Prop{X}{!B}$',
+         r'$\Prop{X}{!A \lif !B} \cap \Prop{X}{!A}' + '\n'
+         + r'\subset \Prop{X}{!B}$'),
+    ],
 }
 
 
