@@ -757,6 +757,10 @@ _DOCUMENTED_PROJECTIONS = {
         (r"\fn{Mult}' \ident \lambd[ab][b (\fn{Add}\, a) \num{0}].",
          r"\fn{Mult}' \ident \lambd[ab][a (\fn{Add}\, a) \num{0}]."),
     ],
+    'OLP-0377': [
+        # OLINC-120: the relation's arity must match its k arguments.
+        (r'$R \subseteq \Nat^k$', r'$R \subseteq \Nat^n$'),
+    ],
 }
 
 
