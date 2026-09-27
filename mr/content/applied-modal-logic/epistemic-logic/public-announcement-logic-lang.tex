@@ -1,0 +1,88 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: language-epistemic-logic
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{pal}
+
+\olsection{सार्वजनिक घोषणा तर्कशास्त्र}
+
+गतिशील ज्ञानविषयक तर्कशास्त्रांमुळे कर्त्यांचे ज्ञान
+काळानुसार किंवा नवी माहिती मिळाल्यावर कसे बदलते हे
+दर्शवता येते. यांपैकी अनेक तर्कशास्त्रे ज्ञानातील बदल
+माहितीपर \emph{घटना} किंवा \emph{अद्यतने} यांद्वारे
+दर्शवतात. अद्यतनाचा सर्वांत मूलभूत प्रकार म्हणजे
+सार्वजनिक घोषणा: एखादे सूत्र सत्य असल्याची घोषणा
+होते आणि सर्व कर्ते ती एकत्रितपणे पाहतात. यासाठी
+भाषेचा पुढीलप्रमाणे विस्तार करतो.
+
+\begin{defn}
+$G$ हा कर्तृचिन्हांचा संच असू द्या. सार्वजनिक घोषणा
+असलेल्या अनेक कर्त्यांच्या ज्ञानविषयक तर्कशास्त्राच्या
+मूलभूत भाषेत पुढील गोष्टी असतात:
+\begin{enumerate}
+  \tagitem{prvFalse}{!!{falsity} दर्शवणारा विधानीय स्थिरांक~$\lfalse$.}{}
+  \tagitem{prvTrue}{!!{truth} दर्शवणारा विधानीय स्थिरांक~$\ltrue$.}{}
+  \item !!{propositional variable}s चा !!{denumerable}s संच: $\Obj
+    p_0$, $\Obj p_1$, $\Obj p_2$, \dots
+  \item विधानीय संयोजके: \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (नकार)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (संयोग)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (विकल्पयोग)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}.
+  \item $a \in G$ असताना ज्ञान-संकारक $\Knows_a$.
+  \item $!B$ हे !!a{formula} असताना सार्वजनिक घोषणा-संकारक $[!B]$.
+\end{enumerate}
+\end{defn}
+
+सार्वजनिक घोषणा-संकारक बॉक्स-संकारकासारखे कार्य
+करतो. त्यानुसार भाषेची आगमनाधारित व्याख्या पुढीलप्रमाणे:
+
+\begin{defn}
+  ज्ञानविषयक भाषेतील \emph{!!^{formula}s} ची पुढीलप्रमाणे
+  आगमनाने व्याख्या करतो:
+  \begin{enumerate}
+  \tagitem{prvFalse}{$\lfalse$ हे अण्विक !!{formula} आहे.}{}
+
+  \tagitem{prvTrue}{$\ltrue$ हे अण्विक !!{formula} आहे.}{}
+
+  \item प्रत्येक विधानीय चल~$\Obj p_i$ हे (अण्विक)
+  !!{formula} आहे.
+
+  \tagitem{prvNot}{$!A$ हे !!a{formula} असेल, तर $\lnot !A$
+  हेही !!a{formula} आहे.}{}
+
+  \tagitem{prvAnd}{$!A$ आणि $!B$ ही !!{formula}s असतील, तर $(!A \land
+  !B)$ हे !!a{formula} आहे.}{}
+
+  \tagitem{prvOr}{$!A$ आणि $!B$ ही !!{formula}s असतील, तर $(!A \lor !B)$
+  हे !!a{formula} आहे.}{}
+
+  \tagitem{prvIf}{$!A$ आणि $!B$ ही !!{formula}s असतील, तर $(!A \lif !B)$
+  हे !!a{formula} आहे.}{}
+
+  \tagitem{prvIff}{$!A$ आणि $!B$ ही !!{formula}s असतील, तर $(!A \liff !B)$
+  हे !!a{formula} आहे.}{}
+
+  \item $!A$ हे !!a{formula} असेल आणि $a \in G$ असेल,
+  तर $\Knows_a !A$ हे !!a{formula} आहे.
+
+  \item $!A$ आणि $!B$ ही !!{formula}s असतील,
+  तर $[!A] !B$ हे !!a{formula} आहे.
+
+  \tagitem{limitClause}{याखेरीज दुसरे काहीही !!a{formula} नाही.}{}
+\end{enumerate}
+\end{defn}
+
+!!{formula} $[!A] !B$ चा अभिप्रेत अर्थ ``$!A$ सत्य
+असल्याची सार्वजनिक घोषणा झाल्यानंतर $!B$~सत्य असते''
+असा आहे. सार्वजनिक घोषणांच्या संदर्भात सामायिक
+ज्ञानाविषयी बोलणेही कधी उपयोगी ठरते; म्हणून भाषेत
+सामायिक-ज्ञान संकारक~$\CKnows_G
+!A$ देखील समाविष्ट करता येतो.
+
+\end{document}

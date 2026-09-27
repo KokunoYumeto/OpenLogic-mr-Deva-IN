@@ -1091,6 +1091,11 @@ _DOCUMENTED_PROJECTIONS = {
         # definition range over the chapter's agent-symbol set G.
         (r'$a \in G$', r'$a \in A$'),
     ],
+    'OLP-0489': [
+        # OLINC-212: the connective inventory must include the
+        # biconditional already present in its formation rules.
+        (r'  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}.' + '\n', ''),
+    ],
 }
 
 
