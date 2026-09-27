@@ -1327,6 +1327,15 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\Setabs{\tuple{f(\xi), f(\eta)} \in A \times A}{\xi \in \eta \land \xi \in \alpha \land \eta \in \alpha}',
          r'\Setabs{\tuple{f(\alpha), f(\beta)} \in A \times A}{\alpha \in \beta}'),
     ],
+    'OLP-0596': [
+        # OLINC-280: the constant continuation begins at the first
+        # exhausted ordinal, rather than overwriting all earlier choices.
+        (r'$\delta \geq \alpha$', r'$\delta \leq \alpha$'),
+        # OLINC-281: a nonstopping enumeration injects each ordinal
+        # directly into A; this is the comparison needed by Hartogs.
+        (r'\cardle{\alpha}{A}',
+         r'\cardless{\alpha}{\Pow{A} \setminus \{\emptyset\}}'),
+    ],
 }
 
 
