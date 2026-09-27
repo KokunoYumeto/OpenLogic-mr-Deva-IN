@@ -891,6 +891,14 @@ _DOCUMENTED_PROJECTIONS = {
         # OLINC-166: the inferred member is the K axiom formula.
         (r'$\Ax{K} \in \Sigma$', r'$K \in \Sigma$'),
     ],
+    'OLP-0432': [
+        # OLINC-167: remove the extra closing parenthesis in the RK result.
+        (r'$\Log{K} \Proves \Box!A \lif (\Box !B \lif \Box(!A \land !B))$',
+         r'$\Log{K} \Proves \Box!A \lif (\Box !B \lif \Box(!A \land !B)))$'),
+        # OLINC-168: the replacement formula uses the marked B metavariable.
+        (r'$\Log{K} \Proves \Subst{!C}{!B}{q}$.',
+         r'$\Log{K} \Proves \Subst{!C}{B}{q}$'),
+    ],
 }
 
 
