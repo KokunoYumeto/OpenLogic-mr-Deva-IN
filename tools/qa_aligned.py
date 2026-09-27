@@ -872,6 +872,13 @@ _DOCUMENTED_PROJECTIONS = {
         # OLINC-158: close the parenthetical outside the valuation math.
         (r'$V(q) = \emptyset$)', r'$V(q) = \emptyset)$'),
     ],
+    'OLP-0424': [
+        # OLINC-159: A_n needs n edges, and its finite witness needs n+1 points.
+        (r'\Atom{Q}{a_{n},a_{n+1}}', r'\Atom{Q}{a_{n-1},a_{n}}'),
+        (r'\Domain{M_k} = \{1, \dots, k+1\}',
+         r'\Domain{M_k} = \{1, \dots, k\}'),
+        (r'\dots, k+1\}$ वरील', r'\dots, k\}$ वरील'),
+    ],
 }
 
 
