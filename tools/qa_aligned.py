@@ -1111,6 +1111,11 @@ _DOCUMENTED_PROJECTIONS = {
         (r'ते $M_1$ ला $\tuple{1, M_1}$ कडे नेते.',
          r'ते $M_1$ ला $\tuple{1, M_2}$ कडे नेते.'),
     ],
+    'OLP-0496': [
+        # OLINC-216: the BHK pair's second component constructs A_2.
+        (r'BHK अर्थनिर्धारणानुसार $!A_1 \land !A_2$ ची',
+         r'BHK अर्थनिर्धारणानुसार $!A_1 \land !A_1$ ची'),
+    ],
 }
 
 
