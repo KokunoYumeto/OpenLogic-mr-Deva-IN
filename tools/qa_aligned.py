@@ -967,6 +967,11 @@ _DOCUMENTED_PROJECTIONS = {
         (r'V(q) = \Setabs{\sigma 1}{\sigma \in' + '\n' + r'    W}',
          r'V(q) = \Setabs{\sigma 1}{\sigma \in' + '\n' + r'    \Bin^* \setminus \{1\}}'),
     ],
+    'OLP-0456': [
+        # OLINC-186: the filtered world is [w], not the original world w.
+        (r'$\mSat{M^*}{!A}[{[w]}]$',
+         r'$\mSat{M^*}{!A}[w]$'),
+    ],
 }
 
 
