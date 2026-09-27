@@ -1,0 +1,41 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: church-rosser
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{cr}
+\olsection{चर्च--रॉसर गुणधर्म}
+
+\begin{thm}
+\ollabel{thm:church-rosser}
+$M$, $N_1$ आणि $N_2$ ही पदे असून $M \red N_1$ आणि $M \red
+N_2$ असे समजा. मग असे $P$ पद आहे की $N_1 \red P$ आणि $N_2 \red P$.
+\end{thm}
+
+\begin{cor}
+$M$ चे न्यूनीकरण सामान्य रूपापर्यंत करता येते असे समजा. मग हे
+सामान्य रूप एकमेव आहे.
+\end{cor}
+
+\begin{proof}
+$M \red N_1$ आणि $M \red N_2$ असेल, तर मागील प्रमेयामुळे
+असे पद~$P$ आहे की $N_1$ आणि $N_2$ या दोन्हींचे न्यूनीकरण
+होऊन~$P$ मिळते. $N_1$ आणि~$N_2$ ही दोन्ही सामान्य रूपात
+असतील, तर हे केवळ $N_1 \ident P \ident N_2$ असेल तेव्हाच शक्य आहे.
+\end{proof}
+
+शेवटी, दोन पदे $M$ आणि~$N$ यांचे न्यूनीकरण होऊन तेच पद मिळत
+असेल, तर त्यांना \emph{$\beta$-सममूल्य}, किंवा फक्त
+\emph{सममूल्य}, म्हणू; म्हणजेच असे $P$ असेल की $M
+\red P$ आणि $N \red P$. हे $M \equal[\beta] N$ असे लिहितात.
+\olref{thm:church-rosser} वापरून $\equal[\beta]$ हा
+समतुल्यता संबंध असल्याचे तपासता येते; शिवाय, कोणत्याही $M$
+आणि~$N$ साठी $M \red N$ किंवा $N \red M$ असेल, तर
+$M \equal[\beta] N$. (खरे तर, हा गुणधर्म असलेला
+$\equal[\beta]$ हा \emph{लहानात लहान} समतुल्यता संबंध आहे,
+हे दाखवता येते.)
+
+\end{document}
