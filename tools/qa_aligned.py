@@ -1138,6 +1138,25 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$\mSat{M}{!A_n}[w]$; म्हणजे',
          r'$\mSat{M}{\Gamma}{!A_n}[w]$; म्हणजे'),
     ],
+    'OLP-0505': [
+        # OLINC-221: conjunction introduction concludes B and C.
+        (r'$\Gamma \cup \Delta \Entails !B \land !C$' + '\n'
+         + r'      हे दाखवायचे आहे.',
+         r'$\Gamma \cup \Delta \Entails !A \land !B$' + '\n'
+         + r'      हे दाखवायचे आहे.'),
+        # OLINC-222: the world parameter belongs to the satisfaction formula.
+        (r'(a)~$\mSat{M}{!B}[w]$. मग',
+         r'(a)~$\mSat{M}{!B}$[w]. मग'),
+        # OLINC-222: each discharged assumption is a singleton set.
+        (r'$\Delta_1 \cup \{!B\} \Entails !D$' + '\n'
+         + r'    असल्याने',
+         r'$\Delta_1 \cup !B \Entails !D$' + '\n'
+         + r'    असल्याने'),
+        (r'$\Delta_2 \cup \{!C\} \Entails !D$' + '\n'
+         + r'    असल्याने',
+         r'$\Delta_2 \cup !C \Entails !D$' + '\n'
+         + r'    असल्याने'),
+    ],
 }
 
 

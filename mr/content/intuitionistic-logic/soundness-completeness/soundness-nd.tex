@@ -1,0 +1,220 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: soundness-nd
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{snd}
+
+\olsection{नैसर्गिक निगमनाची निर्दोषता}
+
+आता संबंधी चिन्हार्थमीमांसेच्या दृष्टीने नैसर्गिक निगमनाची
+निर्दोषता सिद्ध करू. म्हणजेच, गृहीतकांच्या संचापासून
+एखादे !!a{formula} !!{derivable} असेल, तर त्या
+गृहीतकांच्या संचापासून ते !!{formula}
+तार्किकरीत्या निष्पन्न होते, हे दाखवू.
+
+\begin{thm}[निर्दोषता]
+  \ollabel{thm:soundness}
+  $\Gamma \Proves !A$ असेल, तर $ \Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+  $\Gamma \Proves !A$ असेल, तर $\Gamma \Entails !A$,
+  हे सिद्ध करू. $\Gamma$ पासून~$!A$ च्या
+  !!{derivation} वर आगमनाने सिद्धता करतो.
+
+  \begin{enumerate}
+  \item !!{derivation} मध्ये केवळ गृहीतक~$!A$ असेल,
+    तर $!A \Proves !A$. आता $!A \Entails !A$ हे
+    दाखवायचे आहे. $ \mSat{M}{!A}[w]$ असे समजा.
+    मग उघडच $\mSat{M}{!A}[w]$.
+
+  \item !!{derivation} चा शेवट $\Intro{\land}$ ने होतो:
+    \iftag{probAnd}{सराव.}{आधारविधान~$!B$ ची
+      !!{undischarged} गृहीतके~$\Gamma$ यांपासून आणि
+      आधारविधान~$!C$ ची !!{undischarged}
+      गृहीतके~$\Delta$ यांपासून असलेल्या
+      !!{derivation}s वरून $\Gamma \Proves
+      !B$ आणि $\Delta \Proves !C$ हे मिळते.
+      आगमन-गृहीतकानुसार $\Gamma \Entails !B$
+      आणि $\Delta \Entails !C$. संपूर्ण
+      !!{derivation} ची !!{undischarged} गृहीतके
+      $\Gamma$ व $\Delta$ मिळून असल्यामुळे
+      $\Gamma \cup \Delta \Entails !B \land !C$
+      हे दाखवायचे आहे. म्हणून
+      $\mSat{M}{\Gamma \cup \Delta}[w]$ असे समजा.
+      मग $\mSat{M}{\Gamma}[w]$ सुद्धा.
+      $\Gamma \Entails !B$ असल्याने
+      $\mSat{M}{!B}[w]$. त्याचप्रमाणे
+      $\mSat{M}{!C}[w]$. म्हणून
+      $\mSat{M}{!B \land !C}[w]$.}
+
+  \item !!{derivation} चा शेवट $\Elim{\land}$ ने होतो:
+    \iftag{probAnd}{सराव.}{आधारविधान $!B
+        \land !C$ ची !!{undischarged} गृहीतके
+        $\Gamma$ यांपासून असलेली !!{derivation}
+        $\Gamma \Proves !B \land !C$ हे दाखवते.
+        आगमन-गृहीतकानुसार
+        $\Gamma \Entails !B \land !C$.
+        $\Gamma \Entails !B$ हे दाखवायचे आहे.
+        म्हणून $\mSat{M}{\Gamma}[w]$ असे समजा.
+        $\Gamma \Entails !B \land !C$
+        असल्याने $\mSat{M}{!B \land !C}[w]$.
+        मग $\mSat{M}{!B}[w]$ सुद्धा.
+        त्याचप्रमाणे $\Elim\land$ चा शेवट~$!C$
+        ने होत असेल, तर $\Gamma \Entails !C$.}
+
+  \item !!{derivation} चा शेवट $\Intro{\lor}$ ने होतो:
+    \iftag{probOr}{सराव.}{आधारविधान $!B$ आहे,
+      आणि~$!B$ येथे संपणाऱ्या !!{derivation} ची
+      !!{undischarged} गृहीतके $\Gamma$ आहेत,
+      असे समजा. मग $\Gamma \Proves !B$;
+      आगमन-गृहीतकानुसार $\Gamma \Entails !B$.
+      $\Gamma \Entails !B \lor !C$ हे दाखवायचे आहे.
+      $\mSat{M}{\Gamma}[w]$ असे समजा.
+      $\Gamma \Entails !B$ असल्याने
+      $\mSat{M}{!B}[w]$. पण मग
+      $\mSat{M}{!B \lor !C}[w]$ सुद्धा.
+      त्याचप्रमाणे आधारविधान~$!C$ असेल, तर
+      $\Gamma \Entails !C$.}
+
+  \item !!{derivation} चा शेवट~$\Elim{\lor}$ ने होतो:
+    \iftag{probOr}{सराव.}{आधारविधानांवर संपणाऱ्या
+      !!{derivation}s अनुक्रमे $!B \lor !C$ ची
+      !!{undischarged} गृहीतके~$\Gamma$,
+      $!D$ ची !!{undischarged} गृहीतके
+      $\Delta_1 \cup \{!B\}$, आणि $!D$ ची
+      !!{undischarged} गृहीतके
+      $\Delta_2 \cup \{!C\}$ यांपासून आहेत.
+      म्हणून $\Gamma \Proves !B \lor !C$,
+      $\Delta_1 \cup \{!B\} \Proves !D$,
+      आणि $\Delta_2 \cup \{!C\} \Proves !D$.
+      आगमन-गृहीतकानुसार
+      $\Gamma \Entails !B \lor !C$,
+      $\Delta_1 \cup \{!B\} \Entails !D$,
+      आणि $\Delta_2 \cup \{!C\} \Entails !D$.
+      $\Gamma \cup \Delta_1 \cup \Delta_2 \Entails !D$
+      हे सिद्ध करायचे आहे.
+
+    $\mSat{M}{\Gamma \cup \Delta_1 \cup \Delta_2}[w]$
+    असे समजा. मग $\mSat{M}{\Gamma}[w]$;
+    $\Gamma \Entails !B \lor !C$ असल्याने
+    $\mSat{M}{!B \lor !C}[w]$.
+    $\mSat{M}{}$ च्या व्याख्येनुसार
+    $\mSat{M}{!B}[w]$ किंवा
+    $\mSat{M}{!C}[w]$. म्हणून दोन प्रकार पाहू:
+    (a)~$\mSat{M}{!B}[w]$. मग
+    $\mSat{M}{\Delta_1 \cup \{!B\}}[w]$.
+    $\Delta_1 \cup \{!B\} \Entails !D$
+    असल्याने $\mSat{M}{!D}[w]$.
+    (b)~$\mSat{M}{!C}[w]$. मग
+    $\mSat{M}{\Delta_2 \cup \{!C\}}[w]$.
+    $\Delta_2 \cup \{!C\} \Entails !D$
+    असल्याने $\mSat{M}{!D}[w]$.
+    म्हणून दोन्ही प्रकारांत
+    $\mSat{M}{!D}[w]$, हेच दाखवायचे होते.}
+
+  \item !!{derivation} चा शेवट $\Intro{\lif}$ ने होतो
+    आणि निष्कर्ष~$!B\lif !C$ आहे. मग
+    आधारविधान~$!C$ आहे, आणि त्या आधारविधानावर
+    संपणाऱ्या !!{derivation} ची
+    !!{undischarged} गृहीतके~$\Gamma \cup
+    \{!B\}$ आहेत. म्हणून
+    $\Gamma \cup \{!B\} \Proves !C$;
+    आगमन-गृहीतकानुसार
+    $\Gamma \cup \{!B\} \Entails !C$.
+    $\Gamma \Entails !B \lif !C$ हे दाखवायचे आहे.
+
+    $\mSat{M}{\Gamma}[w]$ असे समजा.
+    $Rww'$ असे असलेल्या सर्व $w'$ साठी
+    $\mSat{M}{!B}[w']$ असेल, तर
+    $\mSat{M}{!C}[w']$, हे दाखवायचे आहे.
+    म्हणून $Rww'$ आणि $\mSat{M}{!B}[w']$
+    असे गृहीत धरा.
+    \olref[sem][rel]{prop:true-monotonic} नुसार
+    $\mSat{M}{\Gamma}[w']$.
+    $\Gamma \cup \{!B\} \Entails !C$
+    असल्याने $\mSat{M}{!C}[w']$,
+    हेच दाखवायचे होते.
+
+  \item !!{derivation} चा शेवट $\Elim{\lif}$ ने होतो
+    आणि निष्कर्ष~$!C$ आहे. आधारविधाने
+    $!B \lif !C$ आणि $!B$ आहेत;
+    त्यांची !!{derivation}s अनुक्रमे
+    !!{undischarged} गृहीतके $\Gamma$ आणि
+    $\Delta$ यांपासून आहेत. म्हणून
+    $\Gamma \Proves !B \lif !C$ आणि
+    $\Delta \Proves !B$.
+    आगमन-गृहीतकानुसार
+    $\Gamma \Entails !B \lif !C$
+    आणि $\Delta \Entails !B$.
+    $\Gamma \cup \Delta \Entails !C$
+    हे दाखवायचे आहे.
+
+    $\mSat{M}{\Gamma \cup \Delta}[w]$ असे समजा.
+    $\mSat{M}{\Gamma}[w]$ आणि
+    $\Gamma \Entails !B \lif !C$ असल्याने
+    $\mSat{M}{!B \lif !C}[w]$.
+    व्याख्येनुसार, $Rww'$ असे असलेल्या
+    सर्व $w'$ साठी $\mSat{M}{!B}[w']$
+    असेल, तर $\mSat{M}{!C}[w']$.
+    $R$ परावर्ती असल्याने $w$ हे
+    $Rww'$ असलेल्या $w'$ पैकी एक आहे.
+    म्हणजे $\mSat{M}{!B}[w]$ असेल,
+    तर $\mSat{M}{!C}[w]$.
+    $\mSat{M}{\Delta}[w]$ आणि
+    $\Delta \Entails !B$ असल्याने
+    $\mSat{M}{!B}[w]$. म्हणून
+    अपेक्षेप्रमाणे $\mSat{M}{!C}[w]$.
+
+  \item !!{derivation} चा शेवट $\FalseInt$ ने होतो
+    आणि निष्कर्ष~$!A$ आहे. आधारविधान
+    $\lfalse$ आहे; त्या आधारविधानाची
+    !!{derivation} ज्या
+    !!{undischarged} गृहीतकांपासून आहे,
+    ती~$\Gamma$ आहेत. मग
+    $\Gamma \Proves \lfalse$.
+    आगमन-गृहीतकानुसार
+    $\Gamma \Entails \lfalse$.
+    $\Gamma \Entails !A$ हे दाखवायचे आहे.
+
+    अप्रत्यक्ष सिद्धता करू.
+    $\Gamma \Entails/ !A$ असेल, तर
+    असे प्रतिमान~$\mModel{M}$ आणि जग~$w$
+    आहेत की $\mSat{M}{\Gamma}[w]$
+    आणि $\mSat/{M}{!A}[w]$.
+    $\Gamma \Entails \lfalse$
+    असल्याने $\mSat{M}{\lfalse}[w]$.
+    पण हे अशक्य आहे; कारण व्याख्येनुसार
+    $\mSat/{M}{\lfalse}[w]$.
+    म्हणून $\Gamma \Entails !A$.
+  \item !!{derivation} चा शेवट $\Intro\lnot$ ने होतो: सराव.
+  \item !!{derivation} चा शेवट $\Elim\lnot$ ने होतो: सराव.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[int][sc][snd]{thm:soundness} ची सिद्धता
+  पूर्ण करा. $\Intro\lnot$ आणि $\Elim\lnot$
+  या प्रकारांसाठी
+  \olref[int][sem][rel]{defn:true-at-w} मधील
+  $\mSat{M}{\lnot !A}[w]$ ची व्याख्या वापरा;
+  म्हणजे $\lnot !A$ हे
+  $!A \lif \lfalse$ ने व्याख्यित आहे
+  असे मानू नका.
+\end{prob}
+
+\begin{prob}
+  खालील !!{formula}s अंतःप्रज्ञावादी तर्कशास्त्रात
+  !!{derivable} नाहीत, हे दाखवा:
+  \begin{enumerate}
+    \item $(!A \lif !B) \lor (!B \lif !A)$
+    \item $(\lnot\lnot !A \lif !A) \lif (!A \lor \lnot !A)$
+    \item $(!A \lif !B \lor !C) \lif \bigl((!A \lif !B)\lor(!A \lif !C)\bigr)$
+  \end{enumerate}
+\end{prob}
+
+\end{document}
