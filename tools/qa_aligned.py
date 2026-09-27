@@ -925,6 +925,11 @@ _DOCUMENTED_PROJECTIONS = {
         (r'उलट $!A \liff !B \notin \Gamma$',
          r'उलट $!A \lif !B \notin \Gamma$'),
     ],
+    'OLP-0444': [
+        # OLINC-177: length-at-most-n ensures every indexed variable appears.
+        (r'लांबी~$n$ पर्यंतची सर्व सूत्रे',
+         r'लांबी~$n$ असलेली सर्व सूत्रे'),
+    ],
 }
 
 

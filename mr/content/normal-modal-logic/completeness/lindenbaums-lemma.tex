@@ -1,0 +1,128 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: lindenbaums-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{lin}
+
+\olsection{लिंडेनबाउमचे पूर्वप्रमेय}
+
+लिंडेनबाउमचे पूर्वप्रमेय असे सांगते की !!{formula}s चा प्रत्येक
+$\Sigma$-सुसंगत संच एखाद्या \emph{संपूर्ण} $\Sigma$-सुसंगत
+संचात समाविष्ट असतो. कॅनॉनिकल प्रतिमानाची आपली रचना दाखवेल की
+प्रत्येक संपूर्ण $\Sigma$-सुसंगत संच~$\Delta$ साठी कॅनॉनिकल
+प्रतिमानात असे एक जग असते की नेमके~$\Delta$ मधील
+!!{formula}s त्या जगात सत्य असतात. म्हणून लिंडेनबाउमचे पूर्वप्रमेय
+प्रत्येक $\Sigma$-सुसंगत संच कॅनॉनिकल प्रतिमानातील कोणत्या तरी
+जगात सत्य असल्याची हमी देते.
+
+\begin{thm}[लिंडेनबाउमचे पूर्वप्रमेय]\ollabel{thm:lindenbaum}
+  $\Gamma$ हा $\Sigma$-सुसंगत असेल, तर~$\Gamma$ चा विस्तार असलेला
+  संपूर्ण $\Sigma$-सुसंगत संच~$\Delta$ अस्तित्वात असतो.
+\end{thm}
+
+\begin{proof}
+भाषेतील सर्व सूत्रांची $!A_0$, $!A_1$, \dots{} अशी यादी असू द्या;
+त्यात एखादे सूत्र पुन्हा येऊ शकते. उदाहरणार्थ, आधी
+$\Obj p_0$ नोंदवा आणि नंतर प्रत्येक $n \ge 1$ टप्प्यावर
+$\Obj p_0$, \dots,~$\Obj p_n$ यांमधीलच चल वापरून
+बनणारी व लांबी~$n$ पर्यंतची सर्व सूत्रे नोंदवा;
+अशा सूत्रांची संख्या सांत असते. आपण~$n$ वरील विगमनाने
+!!{formula}s चे संच~$\Delta_n$ परिभाषित करू आणि मग
+$\Delta = \bigcup_n \Delta_n$ ठेवू. प्रथम $\Delta_0 = \Gamma$
+ठेवू. $\Delta_n$ परिभाषित झाला आहे असे धरून
+$\Delta_{n+1}$ ची व्याख्या अशी करू:
+\[
+\Delta_{n+1} =
+\begin{cases}
+  \Delta_n \cup \{!A_n\}, & \text{जर $\Delta_n \cup \{ !A_n\}$
+    हा $\Sigma$-सुसंगत असेल;} \\
+  \Delta_n \cup \{ \lnot !A_n\}, & \text{अन्यथा.}
+\end{cases}
+\]
+आता $\Delta = \bigcup_{n=0}^\infty \Delta_n$ ठेवू.
+
+या व्याख्येतून आवश्यक गुणधर्म असलेला संच~$\Delta$
+खरोखर मिळतो हे दाखवायचे आहे: $\Gamma \subseteq \Delta$
+आणि~$\Delta$ हा संपूर्ण $\Sigma$-सुसंगत आहे.
+
+$\Gamma \subseteq \Delta$ हे उघड आहे, कारण रचनेनुसार
+$\Delta_0 \subseteq \Delta$ आणि $\Delta_0 = \Gamma$.
+खरे तर प्रत्येक~$n$ साठी $\Delta_n \subseteq \Delta$,
+कारण~$\Delta$ हा सर्व $\Delta_n$ चा संघ आहे. (रचनेच्या
+प्रत्येक पायरीवर आधीच्या संचात !!a{formula} जोडतो; म्हणून
+$\Delta_n \subseteq \Delta_{n+1}$. तसेच
+$\subseteq$ संक्रमणशील असल्याने $n \le m$ असेल तेव्हा
+$\Delta_n \subseteq \Delta_{m}$.) रचनेच्या प्रत्येक
+टप्प्यावर आपण $!A_n$ किंवा $\lnot !A_n$ जोडतो आणि
+प्रत्येक !!{formula} हे सर्व~$!A_n$ च्या यादीत किमान
+एकदा येते. म्हणून प्रत्येक $!A$ साठी $!A
+\in \Delta$ किंवा $\lnot !A \in \Delta$;
+त्यामुळे व्याख्येनुसार~$\Delta$ संपूर्ण आहे.
+
+शेवटी~$\Delta$ हा $\Sigma$-सुसंगत आहे हे दाखवायचे आहे.
+त्यासाठी (a)~$\Delta$ हा $\Sigma$-विसंगत असता, तर
+एखादा~$\Delta_n$ $\Sigma$-विसंगत असता, आणि
+(b)~सर्व $\Delta_n$ हे $\Sigma$-सुसंगत आहेत,
+असे आपण दाखवू.
+
+समजा~$\Delta$ हा $\Sigma$-विसंगत आहे. मग
+$\Delta \Proves[\Sigma] \lfalse$; म्हणजे
+$!A_1$, \dots,~$!A_k \in \Delta$ अशी सूत्रे असतात की
+$\Sigma \Proves !A_1 \lif (!A_2 \lif \cdots (!A_k
+\lif \lfalse)\dots)$. $\Delta = \bigcup_{n=0}^\infty \Delta_n$
+असल्याने प्रत्येक $!A_i \in \Delta_{n_i}$ असे कोणत्यातरी~$n_i$
+साठी असते. या निर्देशांकांतील सर्वांत मोठा निर्देशांक~$n$
+असू द्या. $n_i \le n$ असल्यामुळे
+$\Delta_{n_i} \subseteq \Delta_n$. म्हणून ही सर्व
+$!A_i$ सूत्रे एखाद्या~$\Delta_n$ मध्ये असतात.
+याचा अर्थ $\Delta_n \Proves[\Sigma] \lfalse$,
+म्हणजेच~$\Delta_n$ हा $\Sigma$-विसंगत आहे.
+
+प्रत्येक $\Delta_n$ $\Sigma$-सुसंगत आहे हे दाखवण्यासाठी
+आपण~$n$ वरील सोपे विगमन वापरू. $\Delta_0 = \Gamma$
+आणि~$\Gamma$ $\Sigma$-सुसंगत असल्याचे गृहीत आहे;
+म्हणून $n = 0$ साठी दावा खरा आहे. आता तो~$n$
+साठी खरा आहे, म्हणजे $\Delta_n$ $\Sigma$-सुसंगत
+आहे, असे समजा. $\Delta_n \cup \{!A_n\}$ हा
+$\Sigma$-सुसंगत असेल, तर $\Delta_{n+1}$ हाच
+संच असतो; अन्यथा तो $\Delta_n \cup \{\lnot!A_n\}$
+असतो. पहिल्या प्रकरणात $\Delta_{n+1}$
+$\Sigma$-सुसंगत असणे स्पष्ट आहे. परंतु
+\olref[prf][con]{prop:consistencyfacts}\olref[prf][con]{prop:consistencyfacts-c}
+नुसार $\Delta_n \cup \{!A_n\}$ किंवा
+$\Delta_n \cup \{\lnot!A_n\}$ यांपैकी एक
+सुसंगत असतो; म्हणून दुसऱ्या प्रकरणातही
+$\Delta_{n+1}$ सुसंगत असतो.
+\end{proof}
+
+\begin{cor}\ollabel{cor:provability-characterization}
+  $\Gamma \Proves[\Sigma] !A$ असेल तेव्हा आणि तेव्हाच
+  $\Gamma$ चा विस्तार असलेल्या प्रत्येक संपूर्ण
+  $\Sigma$-सुसंगत संच~$\Delta$ मध्ये $!A \in \Delta$
+  असते. ($\Gamma = \emptyset$ असतानाही हे लागू होते;
+  त्या बाबतीत मोडल प्रणाली~$\Sigma$ चे आणखी एक
+  लक्षणन मिळते.)
+\end{cor}
+
+\begin{proof}
+  $\Gamma \Proves[\Sigma] !A$ असे समजा आणि
+  $\Gamma$ चा विस्तार असलेला कोणताही संपूर्ण
+  $\Sigma$-सुसंगत संच~$\Delta$ घ्या. जर $!A
+  \notin \Delta$ असेल, तर महत्तमतेमुळे
+  $\lnot!A \in \Delta$. त्यामुळे एकस्वनिकतेने
+  $\Delta \Proves[\Sigma] !A$ आणि स्वतःच्या गृहीतकावरून
+  $\Delta \Proves[\Sigma] \lnot!A$; म्हणून~$\Delta$
+  विसंगत ठरेल. उलट $\Gamma \Proves/[\Sigma] !A$
+  असेल, तर $\Gamma \cup \{ \lnot!A\}$ हा
+  $\Sigma$-सुसंगत संच असतो. लिंडेनबाउमच्या
+  पूर्वप्रमेयानुसार $\Gamma \cup \{ \lnot!A \}$
+  चा विस्तार असलेला संपूर्ण सुसंगत संच~$\Delta$
+  अस्तित्वात असतो. सुसंगततेमुळे $!A
+  \notin \Delta$.
+\end{proof}
+
+\end{document}
