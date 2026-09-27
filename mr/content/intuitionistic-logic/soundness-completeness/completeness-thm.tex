@@ -1,0 +1,70 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: completeness-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{cpl}
+
+\olsection{संपूर्णता प्रमेय}
+
+\begin{thm}\ollabel{thm:completeness}
+  $\Gamma \Entails !A$ असेल, तर
+  $\Gamma \Proves !A$.
+\end{thm}
+
+\begin{proof}
+  व्यत्यस्त रूप सिद्ध करू:
+  $\Gamma \Proves/ !A$ असे समजा.
+  मग \olref[lin]{lem:lindenbaum} नुसार
+  $\Gamma^* \supseteq \Gamma$ असा
+  अभाज्य संच आहे की
+  $\Gamma^* \Proves/ !A$.
+  \olref[mod]{defn:canonical-model}
+  मध्ये व्याख्यित केलेले $\Gamma^*$ साठीचे
+  कॅनॉनिकल प्रतिमान~$\mModel{M(\Gamma^*)}$
+  घ्या. प्रत्येक $!B \in \Gamma$
+  साठी $\Gamma^* \Proves !B$.
+  $\Gamma^*(\emptyseq) = \Gamma^*$,
+  हे लक्षात घ्या. सत्यता पूर्वप्रमेयानुसार
+  (\olref[tru]{lem:truth})
+  सर्व $!B \in \Gamma$ साठी
+  $\mSat{M(\Gamma^*)}{!B}[\emptyseq]$
+  आणि
+  $\mSat/{M(\Gamma^*)}{!A}[\emptyseq]$.
+  यावरून $\Gamma \Entails/ !A$.
+\end{proof}
+
+\begin{prob}
+  $!A$ मध्ये फक्त !!{propositional variable}s,
+  $\lor$ आणि~$\land$ असतील, तर
+  $\Entails/ !A$ हे दाखवा.
+  यावरून अंतःप्रज्ञावादी तर्कशास्त्रात
+  $\lor$ आणि~$\land$ वापरून
+  $\lif$ ची व्याख्या करता येत नाही,
+  असा निष्कर्ष काढा.
+\end{prob}
+
+\begin{prob}
+  संपूर्णता प्रमेय वापरून
+  $\Proves !A \lor !B$ असेल,
+  तर $\Proves !A$ किंवा
+  $\Proves !B$, हे सिद्ध करा.
+  (सूचना: $\mSat/{M_1}{!A}$
+  आणि $\mSat/{M_2}{!B}$
+  असे गृहीत धरून
+  $\mSat/{M}{!A \lor !B}$
+  असेल असे नवे प्रतिमान
+  $\mModel{M}$ रचा.)
+\end{prob}
+
+\begin{prob}
+  $\mModel{M}$ हे रेषीय क्रम
+  वापरणारे संबंधी प्रतिमान असेल,
+  तर $\mSat{M}{(!A \lif !B)\lor(!B \lif !A)}$,
+  हे दाखवा.
+\end{prob}
+
+\end{document}
