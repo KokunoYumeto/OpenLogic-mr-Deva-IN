@@ -1081,6 +1081,11 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$\sFmla{\True}{q}[1.2]$ आहे)',
          r'$\sFmla{\True}{q}[1.1]$ आहे)'),
     ],
+    'OLP-0478': [
+        # OLINC-209: the temporal language's formula clause must use
+        # the same future operator as its preceding list and semantics.
+        (r'$\Ftemp !A$', r'$F !A$'),
+    ],
 }
 
 
