@@ -1,0 +1,72 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: connectives
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{con}
+
+\olsection{भाषा आणि संयोजके}
+
+अभिजात विधानीय तर्कशास्त्रात आणि इतर अनेक तर्कशास्त्रांत
+\emph{विधानीय स्थिर} व \emph{संयोजक} यांचा संच वापरला जातो.
+उदाहरणार्थ, पुढील चिन्हे आपण आदिम मानतो:
+\begin{enumerate}
+\tagitem{prvFalse}{!!{falsity} दर्शवणारा विधानीय स्थिर~$\lfalse$.}{}
+\tagitem{prvTrue}{!!{truth} दर्शवणारा विधानीय स्थिर~$\ltrue$.}{}
+\item तार्किक संयोजके:
+  \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (नकारण)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (संधियोग)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (विकल्पयोग)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+\end{enumerate}
+\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%
+वरील आदिम संयोजकांव्यतिरिक्त संक्षिप्त रूपे म्हणून
+परिभाषित केलेली चिन्हेही आपण वापरतो; उदाहरणार्थ:
+\startycommalist
+  \iftag{defNot}{\ycomma $\lnot$ (नकारण)}{}%
+  \iftag{defAnd}{\ycomma $\land$ (संधियोग)}{}%
+  \iftag{defOr}{\ycomma $\lor$ (विकल्पयोग)}{}%
+  \iftag{defIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{defIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{defFalse}{\ycomma $\lfalse$ (!!{falsity})}{}%
+  \iftag{defTrue}{\ycomma $\ltrue$ (!!{truth})}.}{}
+
+बहुमूल्य तर्कशास्त्रांतही हीच संयोजके वापरली जातात. तथापि,
+उदाहरणार्थ संधियोगाच्या वेगवेगळ्या आवृत्त्या एकाच तर्कशास्त्रात
+असणे अनेकदा उपयुक्त ठरते; त्या आवृत्त्या वेगळ्या दाखवण्यासाठी
+भिन्न चिन्हे लागतात. काही बहुमूल्य तर्कशास्त्रांत अभिजात
+तर्कशास्त्रात समतुल्य संयोजक नसलेली संयोजकेही असतात.
+म्हणून आपण नेहमीपेक्षा थोडी अधिक सामान्य चौकट घेऊ.
+
+\begin{defn}
+  \emph{विधानीय भाषा} ही \emph{संयोजकां}च्या $\Lang L$
+  या संचाने बनते. प्रत्येक संयोजक~$\star$ ची \emph{स्थानसंख्या}
+  असते; स्थानसंख्या~$n$ असलेला संयोजक \emph{$n$-स्थानी}
+  म्हणतात. स्थानसंख्या~$0$ असलेल्या संयोजकांना
+  \emph{स्थिर} असेही म्हणतात; स्थानसंख्या~$1$ असलेल्या
+  संयोजकांना \emph{एकस्थानी}, आणि स्थानसंख्या~$2$ असलेल्या
+  संयोजकांना \emph{द्विस्थानी} म्हणतात.
+\end{defn}
+
+\begin{ex}
+  विधानीय तर्कशास्त्राच्या मानक भाषेत~$\Lang L_0$ पुढील
+  संयोजके (त्यांच्या स्थानसंख्यांसह) असतात:
+  $\lfalse$~($0$),
+  $\lnot$~($1$),
+  $\land$~($2$),
+  $\lor$~($2$),
+  $\lif$~($2$). आपण विचारात घेणारी बहुतेक तर्कशास्त्रे
+  ही भाषा वापरतात. काही तर्कशास्त्रे प्रस्थापित संकेतांनुसार
+  काही संयोजकांसाठी वेगळी चिन्हे वापरतात. उदाहरणार्थ,
+  गुणाकार तर्कशास्त्रात संधियोगाचे चिन्ह $\land$ ऐवजी
+  अनेकदा~$\odot$ असते. कधी नवीन कारक जोडणेही सोयीचे
+  ठरते; उदाहरणार्थ, $\triangle$ हा निश्चितता कारक
+  ($1$-स्थानी).
+\end{ex}
+
+\end{document}
