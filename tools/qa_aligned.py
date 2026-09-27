@@ -1020,6 +1020,48 @@ _DOCUMENTED_PROJECTIONS = {
          r'$\mSat/{M}{\Diamond !B}[f(\sigma).n]$' + '\n'
          + r'    असल्याने $\mSat/{M}{!B}[w]$'),
     ],
+    'OLP-0468': [
+        # OLINC-201: repair the incomplete branch examples; project
+        # each corrected example formula back to the exact frozen form.
+        (r'$\sFmla{\True}{!B \land !C}[\sigma]$' + '\n' + r'असेल, तर',
+         r'$\sFmla{\True}{!B \land !C}$' + '\n' + r'असेल, तर'),
+        (r'$\sFmla{\True}{!B \lor !C}[\sigma]$' + '\n'
+         + r'असेल, तर $\sFmla{\True}{!B}[\sigma]$',
+         r'$\sFmla{\True}{!B \lor !C}[\sigma]$' + '\n'
+         + r'असेल, तर $\sFmla{\False}{!B}[\sigma]$'),
+        (r'\iftag{prvBox}' + '\n'
+         + r'{$\sFmla{\False}{\Box !B}[\sigma]$}' + '\n'
+         + r'{$\sFmla{\True}{\Diamond !B}[\sigma]$}',
+         r'\iftag{prvBox}' + '\n'
+         + r'{$\sFmla{\False}{\Box}[\sigma]$}' + '\n'
+         + r'{$\sFmla{\True}{\Diamond}[\sigma]$}'),
+        (r'\iftag{prvBox}{$\sFmla{\False}{!B}[\sigma.n]$}' + '\n'
+         + r'{$\sFmla{\True}{!B}[\sigma.n]$}',
+         r'\iftag{prvBox}{$\sFmla{\False}{\Box}[\sigma.n]$}' + '\n'
+         + r'{$\sFmla{\True}{\Diamond}[\sigma.n]$}'),
+        (r'\iftag{prvBox}{$\sFmla{\True}{\Box !B}[\sigma]$}' + '\n'
+         + r'{$\sFmla{\False}{\Diamond !B}[\sigma]$}',
+         r'\iftag{prvBox}{$\sFmla{\True}{\Box}[\sigma]$}' + '\n'
+         + r'{$\sFmla{\False}{\Diamond}[\sigma]$}'),
+        (r'\iftag{prvBox}{$\sFmla{\True}{!B}[\sigma.n]$}' + '\n'
+         + r'{$\sFmla{\False}{!B}[\sigma.n]$}',
+         r'\iftag{prvBox}{$\sFmla{\True}{\Box}[\sigma.n]$}' + '\n'
+         + r'{$\sFmla{\False}{\Diamond}[\sigma.n]$}'),
+        # OLINC-203: in each false connective case the second
+        # induction-hypothesis judgment concerns C rather than B.
+        (r'$\mSat/{M(\Delta)}{!B}[\sigma]$ किंवा' + '\n'
+         + r'      $\mSat/{M(\Delta)}{!C}[\sigma]$',
+         r'$\mSat/{M(\Delta)}{!B}[\sigma]$ किंवा' + '\n'
+         + r'      $\mSat/{M(\Delta)}{!B}[\sigma]$'),
+        (r'$\mSat/{M(\Delta)}{!B}[\sigma]$ आणि' + '\n'
+         + r'      $\mSat/{M(\Delta)}{!C}[\sigma]$',
+         r'$\mSat/{M(\Delta)}{!B}[\sigma]$ आणि' + '\n'
+         + r'      $\mSat/{M(\Delta)}{!B}[\sigma]$'),
+        (r'$\mSat{M(\Delta)}{!B}[\sigma]$ आणि' + '\n'
+         + r'      $\mSat/{M(\Delta)}{!C}[\sigma]$',
+         r'$\mSat{M(\Delta)}{!B}[\sigma]$ आणि' + '\n'
+         + r'      $\mSat/{M(\Delta)}{!B}[\sigma]$'),
+    ],
 }
 
 

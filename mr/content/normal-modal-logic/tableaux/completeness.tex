@@ -1,0 +1,294 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{cpl}
+
+\olsection{\Log{K} साठी संपूर्णता}
+
+\begin{explain}
+  !!{tableau}s ची पद्धत संपूर्ण आहे हे
+  दाखवण्यासाठी पुढील विधान सिद्ध करावे लागते:
+  $\Gamma \Proves !A$ दाखवणारा बंद !!{tableau}
+  नसेल, तर $\Gamma \Entails/ !A$; म्हणजे
+  प्रतिदृष्टांत प्रतिमान अस्तित्वात असते.
+  पण ‘बंद !!{tableau} नाही’ याचा अर्थ
+  तो बांधण्याचा प्रत्येक प्रयत्न बंद होण्यात
+  अयशस्वी होतो. युक्ती अशी की प्रत्येक प्रयत्न
+  अयशस्वी होत असेल, तर एक विशिष्ट
+  \emph{पद्धतशीर आणि सर्वसमावेशक} प्रयत्नही
+  अयशस्वी होतो. बंद !!{tableau} अस्तित्वात
+  असेल, तर या पद्धतशीर प्रयत्नाने तो बंद
+  झाला असता. अशा एकाच टॅब्लोमधील खुल्या
+  शाखांत प्रतिदृष्टांत प्रतिमानाची व्याख्या
+  करण्यासाठी लागणारी सर्व माहिती असते.
+  त्यातील एका खुल्या शाखेवरून मिळणाऱ्या
+  प्रतिदृष्टांत प्रतिमानाची जगे म्हणजे त्या
+  शाखेवर वापरलेली सर्व पूर्वचिन्हे; आणि
+  !!a{propositional
+    variable}~$p$ हे~$\sigma$ येथे
+  तेव्हा आणि तेव्हाच सत्य असते जेव्हा
+  $\sFmla{\True}{p}[\sigma]$ हे त्या
+  शाखेवर आलेले असते.
+\end{explain}
+
+\begin{defn}
+  !!a{tableau} मधील शाखेला संपूर्ण
+  म्हणतात, जर नियम लावता येईल असे
+  $\sFmla{S}{!A}[\sigma]$ हे पूर्वचिन्हयुक्त
+  !!{formula} शाखेवर असताना पुढील गोष्टीही
+  तिच्यावर असतील:
+  \begin{enumerate}
+    \item विधानीय, एकाच शाखेवर सूत्रे जोडणाऱ्या
+      नियमाच्या बाबतीत त्याच्या निष्कर्षांतील
+      पूर्वचिन्हयुक्त !!{formula}s;
+    \item विधानीय, शाखा फोडणाऱ्या नियमाच्या
+      बाबतीत संबंधित निष्कर्षरूप
+      !!{formula}s पैकी एक;
+    \item नवे पूर्वचिन्ह लागणाऱ्या मोडल नियमाच्या
+      बाबतीत किमान एक शक्य निष्कर्ष;
+    \item वापरलेले पूर्वचिन्ह लागणाऱ्या मोडल
+      नियमाच्या बाबतीत शाखेवर असलेल्या
+      प्रत्येक योग्य पूर्वचिन्हासाठी संबंधित
+      निष्कर्ष.
+  \end{enumerate}
+\end{defn}
+
+\begin{explain}
+उदाहरणार्थ, संपूर्ण शाखेवर
+$\sFmla{\True}{!B \land !C}[\sigma]$
+असेल, तर $\sFmla{\True}{!B}[\sigma]$
+आणि $\sFmla{\True}{!C}[\sigma]$
+ही दोन्ही असतात. तिच्यावर
+$\sFmla{\True}{!B \lor !C}[\sigma]$
+असेल, तर $\sFmla{\True}{!B}[\sigma]$
+आणि $\sFmla{\True}{!C}[\sigma]$
+यांपैकी किमान एक असते.
+शाखेवर \iftag{prvBox}
+{$\sFmla{\False}{\Box !B}[\sigma]$}
+{$\sFmla{\True}{\Diamond !B}[\sigma]$}
+असेल, तर काही~$n$ साठी अनुक्रमे
+\iftag{prvBox}{$\sFmla{\False}{!B}[\sigma.n]$}
+{$\sFmla{\True}{!B}[\sigma.n]$}
+हेही असते. आणि शाखेवर
+\iftag{prvBox}{$\sFmla{\True}{\Box !B}[\sigma]$}
+{$\sFmla{\False}{\Diamond !B}[\sigma]$}
+असेल, तर शाखेवर $\sigma.n$ वापरलेले
+असेल अशा प्रत्येक~$n$ साठी अनुक्रमे
+\iftag{prvBox}{$\sFmla{\True}{!B}[\sigma.n]$}
+{$\sFmla{\False}{!B}[\sigma.n]$}
+हेही असते.
+\end{explain}
+
+\begin{prop}\ollabel{prop:complete-tableau}
+  प्रत्येक सांत $\Gamma$ साठी असा !!a{tableau}
+  असतो की त्याची प्रत्येक शाखा संपूर्ण असते.
+\end{prop}
+
+\begin{proof}
+  $\Gamma$ साठीच्या !!a{tableau} मधील
+  एखादी खुली शाखा घ्या. त्या शाखेवर नियम
+  लावता येतील अशी सांत पूर्वचिन्हयुक्त
+  !!{formula}s आहेत. ठरलेल्या एखाद्या क्रमाने
+  (उदाहरणार्थ, वरून खाली), ज्या
+  पूर्वचिन्हयुक्त !!{formula}s साठी
+  (1)--(4) या अटी आधीच पूर्ण होत नाहीत,
+  त्यांपैकी प्रत्येकाला लागू होणारे नियम
+  लावून शाखा विस्तारित करा. काही वेळा शाखा
+  फुटतील; मग उरलेल्या पूर्वचिन्हयुक्त
+  !!{formula}s साठी प्रत्येक नव्या शाखेच्या
+  टोकावर नियम लावा. पूर्वचिन्हयुक्त
+  !!{formula}s आणि शाखेवर वापरलेली
+  पूर्वचिन्हे यांची संख्या सांत असल्याने
+  या प्रक्रियेतून मूळ शाखेपासून पुढे जाणाऱ्या
+  (कदाचित अनेक) शाखा मिळतात. त्यांपैकी
+  प्रत्येकावर ही प्रक्रिया पुन्हा लावा.
+  रचनेमुळे अखेरीस प्रत्येक शाखा संपूर्ण असते.
+\end{proof}
+
+\begin{thm}[संपूर्णता]
+  \ollabel{thm:tableau-completeness}
+  $\Gamma$ साठी बंद !!{tableau} नसेल,
+  तर $\Gamma$ पूर्ततायोग्य आहे.
+\end{thm}
+
+\begin{proof}
+वरील विधानानुसार, $\Gamma$ साठी असा
+!!a{tableau} असतो की त्याची प्रत्येक शाखा
+संपूर्ण असते. बंद !!{tableau} नसल्याने,
+त्या !!a{tableau} मध्ये किमान एक शाखा
+खुली आणि संपूर्ण असते. त्या शाखेवरील
+पूर्वचिन्हयुक्त !!{formula}s चा संच
+$\Delta$ आणि त्यात आलेल्या पूर्वचिन्हांचा
+संच $P(\Delta)$ असू द्या.
+
+आता $\mModel{M(\Delta)} = \tuple{P(\Delta), R, V}$
+हे प्रतिमान ठरवू. त्यातील जगे म्हणजे~$\Delta$
+मधील पूर्वचिन्हे, आणि प्राप्यता संबंध असा आहे:
+\[
+R\sigma\sigma' \quad \text{तेव्हा आणि तेव्हाच} \quad
+\sigma'=\sigma.n \quad \text{काही~$n$ साठी}
+\]
+आणि
+\[
+V(p) = \Setabs{\sigma}{\sFmla{\True}{p}[\sigma] \in \Delta}.
+\]
+आता~$!A$ च्या रचनेवरून आगमनाने पुढील
+दाखवू: $\sFmla{\True}{!A}[\sigma] \in
+\Delta$ असेल, तर
+$\mSat{M(\Delta)}{!A}[\sigma]$; आणि
+$\sFmla{\False}{!A}[\sigma] \in \Delta$
+असेल, तर $\mSat/{M(\Delta)}{!A}[\sigma]$.
+
+\begin{enumerate}
+  \item \indcase{!A}{p}{$\sFmla{\True}{\indfrm}[\sigma] \in \Delta$
+    असेल, तर~$V$ च्या व्याख्येनुसार
+    $\sigma \in V(p)$; म्हणून
+    $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+    $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ असेल, तर
+    $\sFmla{\True}{\indfrm}[\sigma] \notin \Delta$,
+    कारण अन्यथा शाखा बंद झाली असती.
+    म्हणून $\sigma \notin V(p)$, आणि
+    $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}
+  \item \indcase{!A}{\lnot !B}{\iftag{probNot}{सरावासाठी.}{जर
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$,
+      तर शाखा संपूर्ण असल्याने
+      $\sFmla{\False}{!B}[\sigma] \in \Delta$.
+      आगमनाच्या गृहीतकानुसार
+      $\mSat/{M(\Delta)}{!B}[\sigma]$;
+      म्हणून $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$
+      असेल, तर शाखा संपूर्ण असल्याने
+      $\sFmla{\True}{!B}[\sigma] \in \Delta$.
+      आगमनाच्या गृहीतकानुसार
+      $\mSat{M(\Delta)}{!B}[\sigma]$;
+      म्हणून $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+  \item \indcase{!A}{!B \land !C}{\iftag{probAnd}{सरावासाठी.}{जर
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$,
+      तर शाखा संपूर्ण असल्याने
+      $\sFmla{\True}{!B}[\sigma] \in \Delta$
+      आणि $\sFmla{\True}{!C}[\sigma] \in \Delta$
+      ही दोन्ही. आगमनाच्या गृहीतकानुसार
+      $\mSat{M(\Delta)}{!B}[\sigma]$ आणि
+      $\mSat{M(\Delta)}{!C}[\sigma]$.
+      म्हणून $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$
+      असेल, तर शाखा संपूर्ण असल्याने
+      $\sFmla{\False}{!B}[\sigma] \in \Delta$
+      किंवा $\sFmla{\False}{!C}[\sigma] \in \Delta$.
+      आगमनाच्या गृहीतकानुसार
+      $\mSat/{M(\Delta)}{!B}[\sigma]$ किंवा
+      $\mSat/{M(\Delta)}{!C}[\sigma]$.
+      म्हणून $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+  \item \indcase{!A}{!B \lor !C}{\iftag{probOr}{सरावासाठी.}{जर
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$,
+      तर शाखा संपूर्ण असल्याने
+      $\sFmla{\True}{!B}[\sigma] \in \Delta$
+      किंवा $\sFmla{\True}{!C}[\sigma] \in \Delta$.
+      आगमनाच्या गृहीतकानुसार
+      $\mSat{M(\Delta)}{!B}[\sigma]$ किंवा
+      $\mSat{M(\Delta)}{!C}[\sigma]$.
+      म्हणून $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$
+      असेल, तर शाखा संपूर्ण असल्याने
+      $\sFmla{\False}{!B}[\sigma] \in \Delta$
+      आणि $\sFmla{\False}{!C}[\sigma] \in \Delta$
+      ही दोन्ही. आगमनाच्या गृहीतकानुसार
+      $\mSat/{M(\Delta)}{!B}[\sigma]$ आणि
+      $\mSat/{M(\Delta)}{!C}[\sigma]$.
+      म्हणून $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+  \item \indcase{!A}{!B \lif !C}{\iftag{probIf}{सरावासाठी.}{जर
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$,
+      तर शाखा संपूर्ण असल्याने
+      $\sFmla{\False}{!B}[\sigma] \in \Delta$
+      किंवा $\sFmla{\True}{!C}[\sigma] \in \Delta$.
+      आगमनाच्या गृहीतकानुसार
+      $\mSat/{M(\Delta)}{!B}[\sigma]$ किंवा
+      $\mSat{M(\Delta)}{!C}[\sigma]$.
+      म्हणून $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$
+      असेल, तर शाखा संपूर्ण असल्याने
+      $\sFmla{\True}{!B}[\sigma] \in \Delta$
+      आणि $\sFmla{\False}{!C}[\sigma] \in \Delta$
+      ही दोन्ही. आगमनाच्या गृहीतकानुसार
+      $\mSat{M(\Delta)}{!B}[\sigma]$ आणि
+      $\mSat/{M(\Delta)}{!C}[\sigma]$.
+      म्हणून $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+  \item \indcase{!A}{\Box !B}{\iftag{probBox}{सरावासाठी.}{जर
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$,
+      तर शाखा संपूर्ण असल्याने तिच्यावर
+      वापरलेल्या प्रत्येक $\sigma.n$ साठी
+      $\sFmla{\True}{!B}[\sigma.n] \in \Delta$.
+      म्हणजे $R\sigma\sigma'$ होईल अशा
+      प्रत्येक $\sigma' \in P(\Delta)$ साठी
+      हे खरे आहे. आगमनाच्या गृहीतकानुसार,
+      $R\sigma\sigma'$ असलेल्या प्रत्येक
+      $\sigma'$ साठी
+      $\mSat{M(\Delta)}{!B}[\sigma']$.
+      म्हणून $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$
+      असेल, तर शाखा संपूर्ण असल्याने
+      काही $\sigma.n$ साठी
+      $\sFmla{\False}{!B}[\sigma.n] \in \Delta$.
+      आगमनाच्या गृहीतकानुसार
+      $\mSat/{M(\Delta)}{!B}[\sigma.n]$.
+      $R\sigma(\sigma.n)$ असल्याने
+      $\mSat/{M(\Delta)}{!B}[\sigma']$
+      होईल असे~$\sigma'$ असते. म्हणून
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+  \item \indcase{!A}{\Diamond !B}{\iftag{probDiamond}{सरावासाठी.}{जर
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$,
+      तर शाखा संपूर्ण असल्याने
+      काही $\sigma.n$ साठी
+      $\sFmla{\True}{!B}[\sigma.n] \in \Delta$.
+      आगमनाच्या गृहीतकानुसार
+      $\mSat{M(\Delta)}{!B}[\sigma.n]$.
+      $R\sigma(\sigma.n)$ असल्याने
+      $\mSat{M(\Delta)}{!B}[\sigma']$
+      होईल असे~$\sigma'$ असते. म्हणून
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$
+      असेल, तर शाखा संपूर्ण असल्याने तिच्यावर
+      वापरलेल्या प्रत्येक $\sigma.n$ साठी
+      $\sFmla{\False}{!B}[\sigma.n] \in \Delta$.
+      म्हणजे $R\sigma\sigma'$ होईल अशा
+      प्रत्येक $\sigma' \in P(\Delta)$ साठी
+      हे खरे आहे. आगमनाच्या गृहीतकानुसार,
+      $R\sigma\sigma'$ असलेल्या प्रत्येक
+      $\sigma'$ साठी
+      $\mSat/{M(\Delta)}{!B}[\sigma']$.
+      म्हणून $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+\end{enumerate}
+$\Gamma \subseteq \Delta$ असल्याने
+$\mSat{M(\Delta)}{\Gamma}$.
+\end{proof}
+
+\begin{prob}
+\olref[nml][tab][cpl]{thm:tableau-completeness} चा
+पुरावा पूर्ण करा.
+\end{prob}
+
+\begin{cor}
+\ollabel{cor:entailment-completeness}
+$\Gamma \Entails !A$ असेल, तर
+$\Gamma \Proves !A$.
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:weak-completeness}
+$!A$ सर्व प्रतिमानांमध्ये सत्य असेल,
+तर $\Proves !A$.
+\end{cor}
+
+\end{document}
