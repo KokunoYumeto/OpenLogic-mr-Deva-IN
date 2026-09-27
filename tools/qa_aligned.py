@@ -809,6 +809,14 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$\pValue v(!C)[\LogKs]  = \True$',
          r'$\pValue v(!B)[\LogKs]  = \True$'),
     ],
+    'OLP-0399': [
+        # OLINC-138: the rational denominator must be positive.
+        (r'n,m \in \Nat \text{ आणि } 0<m \text{ आणि } n\le m',
+         r'n,m \in \Nat \text{ and } n\le m'),
+        # OLINC-139: exactly m values require n<m, not n<=m.
+        (r'n \in \Nat \text{ आणि } n<m',
+         r'n \in \Nat \text{ and } n\le m'),
+    ],
 }
 
 
