@@ -1,0 +1,345 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: frame-completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{fra}
+
+\olsection{चौकट-संपूर्णता}
+
+दिलेल्या तर्कशास्त्राच्या कॅनॉनिकल प्रतिमानाला
+संबंधित चौकट-गुणधर्म आहे हे दाखवल्यावर
+\Log{K} साठीचे संपूर्णता प्रमेय इतर
+मोडल प्रणालींनाही लागू करता येते.
+
+\begin{thm}\ollabel{thm:completeframeprops}
+  सामान्य मोडल तर्कशास्त्र~$\Sigma$ मध्ये
+  \olref{tab:correspondencetable} च्या
+  डाव्या बाजूच्या !!{formula}s पैकी एखादे असेल,
+  तर~$\Sigma$ साठीच्या कॅनॉनिकल प्रतिमानाला
+  उजव्या बाजूचा संबंधित गुणधर्म असतो.
+\end{thm}
+
+\begin{table}[htp]
+  \centering
+    \begin{tabular}{| l || l |}
+      \hline
+      \emph{$\Sigma$ मध्ये \dots असेल, तर} & \emph{$\Sigma$ साठीचे
+        कॅनॉनिकल प्रतिमान \dots असते:} \\
+      \hline \hline
+      \Ax{D}:\;\; $\Box!A \lif \Diamond !A$ & \quad सर्वत्र उत्तरवर्ती; \\
+      \hline
+      \Ax{T}:\;\; $\Box!A \lif !A$ &\quad  परावर्ती;\\
+      \hline
+      \Ax{B}: \;\;$!A \lif \Box\Diamond!A$ &\quad  सममित; \\
+      \hline
+      \Ax{4}: \;\; $\Box!A \lif \Box\Box!A$ & \quad संक्रमक; \\
+      \hline
+      \Ax{5}: \;\; $\Diamond !A \lif \Box\Diamond!A$& \quad युक्लिडी.\\
+      \hline
+    \end{tabular}
+    \caption{मूलभूत अनुरूपता तथ्ये.}
+    \ollabel{tab:correspondencetable}
+\end{table}
+
+\begin{proof}
+  यांपैकी प्रत्येक प्रकरण स्वतंत्रपणे पाहू.
+
+  $\Sigma$ मध्ये \Ax{D} आहे असे समजा आणि
+  $\Delta \in W^\Sigma$ घ्या.
+  $R^\Sigma \Delta\Delta'$ असा
+  $\Delta'$ अस्तित्वात आहे हे दाखवायचे आहे.
+  त्यासाठी $\Box^{-1}\Delta$ हा
+  $\Sigma$-सुसंगत आहे हे दाखवणे पुरेसे;
+  कारण मग लिंडेनबाउमच्या पूर्वप्रमेयानुसार
+  त्याचा विस्तार असलेला संपूर्ण
+  $\Sigma$-सुसंगत संच
+  $\Delta' \supseteq \Box^{-1}\Delta$
+  असतो आणि $R^\Sigma$ च्या व्याख्येनुसार
+  \iftag{prvBox}{}{आणि \olref[mod]{lem:box-iff-diamond} नुसार }
+  $R^\Sigma \Delta\Delta'$.
+  म्हणून व्याघातासाठी $\Box^{-1}\Delta$
+  हा $\Sigma$-सुसंगत \emph{नाही}
+  असे समजा; म्हणजे
+  $\Box^{-1}\Delta \Proves[\Sigma] \lfalse$.
+  \olref[mod]{lem:box2} नुसार
+  $\Delta \Proves[\Sigma] \Box\lfalse$;
+  आणि $\Sigma$ मध्ये \Ax{D} असल्याने
+  $\Delta \Proves[\Sigma] \Diamond\lfalse$
+  हेही मिळते. पण $\Sigma$ सामान्य असल्याने
+  $\Sigma \Proves \lnot\Diamond \lfalse$
+  (\olref[prf][nor]{prop:notDiamondBot});
+  म्हणून $\Delta
+  \Proves[\Sigma] \lnot\Diamond \lfalse$
+  हेही मिळते. हा~$\Delta$ च्या
+  सुसंगततेशी व्याघात आहे.
+
+  आता $\Sigma$ मध्ये \Ax{T} आहे
+  असे समजा आणि $\Delta \in W^\Sigma$
+  घ्या. $R^\Sigma \Delta\Delta$
+  दाखवायचे आहे; म्हणजेच
+  \iftag{prvBox}{}{\olref[mod]{lem:box-iff-diamond} नुसार }
+  $\Box^{-1}\Delta \subseteq \Delta$.
+  पण $\Box!A \in \Delta$ असेल,
+  तर \Ax{T} नुसार $!A \in \Delta$;
+  हेच अपेक्षित होते.
+
+  आता $\Sigma$ मध्ये \Ax{B} आहे
+  असे समजा आणि $\Delta$, $\Delta' \in
+  W^\Sigma$ साठी $R^\Sigma
+  \Delta\Delta'$ असे धरा.
+  $R^\Sigma \Delta'\Delta$
+  दाखवायचे आहे; म्हणजे
+  \iftag{prvBox}{$\Box^{-1}\Delta'
+    \subseteq \Delta$.
+    \olref[mod]{lem:box-iff-diamond} नुसार
+    ही अट पुढील अटीशी समतुल्य आहे:}{}
+  $\Diamond\Delta \subseteq \Delta'$.
+  म्हणून $!A \in \Delta$ असे
+  समजा. \Ax{B} नुसार
+  $\Box\Diamond!A \in \Delta$.
+  $R^\Sigma \Delta\Delta'$ या
+  गृहीतकावरून \iftag{prvBox}{}{आणि
+    \olref[mod]{lem:box-iff-diamond} नुसार}
+  $\Box^{-1}\Delta \subseteq \Delta'$;
+  म्हणून आवश्यकतेनुसार
+  $\Diamond!A \in \Delta'$.
+
+  आता $\Sigma$ मध्ये \Ax{4} आहे असे
+  समजा आणि $R^\Sigma \Delta_1\Delta_2$
+  व $R^\Sigma \Delta_2\Delta_3$
+  असे धरा. $R^\Sigma
+  \Delta_1\Delta_3$ दाखवायचे आहे.
+  गृहीतकावरून \iftag{prvBox}{}{आणि
+    \olref[mod]{lem:box-iff-diamond} नुसार}
+  $\Box^{-1}\Delta_1 \subseteq \Delta_2$
+  आणि $\Box^{-1}\Delta_2 \subseteq \Delta_3$
+  या दोन्ही अटी मिळतात.
+  $R^\Sigma \Delta_1\Delta_3$
+  साठी $\Box^{-1}\Delta_1
+  \subseteq \Delta_3$ दाखवणे पुरेसे.
+  म्हणून $!B \in \Box^{-1}\Delta_1$
+  घ्या; म्हणजे $\Box!B \in \Delta_1$.
+  \Ax{4} नुसार $\Box\Box!B \in
+  \Delta_1$ हेही मिळते. गृहीतकांवरून
+  आधी $\Box!B \in \Delta_2$
+  आणि नंतर $!B \in \Delta_3$,
+  हेच अपेक्षित होते.
+
+  आता $\Sigma$ मध्ये \Ax{5} आहे
+  असे समजा आणि $R^\Sigma
+  \Delta_1\Delta_2$ व
+  $R^\Sigma \Delta_1\Delta_3$
+  असे धरा. $R^\Sigma
+  \Delta_2\Delta_3$ दाखवायचे आहे.
+  पहिल्या गृहीतकावरून
+  $\Box^{-1}\Delta_1 \subseteq \Delta_2$
+  \iftag{prvBox}{}{\olref[mod]{lem:box-iff-diamond} नुसार}
+  मिळते; दुसरे गृहीतक
+  $\Diamond\Delta_3 \subseteq \Delta_1$
+  याच्याशी समतुल्य आहे
+  \iftag{prvBox}{\olref[mod]{lem:box-iff-diamond} नुसार}{}.
+  $R^\Sigma \Delta_2\Delta_3$
+  दाखवण्यासाठी \iftag{prvBox}{
+    \olref[mod]{lem:box-iff-diamond} नुसार,
+    पुढील अट दाखवणे पुरेसे:}{पुढील अट दाखवायची आहे:}
+  $\Diamond\Delta_3 \subseteq \Delta_2$.
+  म्हणून $\Diamond!A \in
+  \Diamond\Delta_3$ घ्या;
+  म्हणजे $!A \in \Delta_3$.
+  दुसऱ्या गृहीतकानुसार
+  $\Diamond!A \in \Delta_1$;
+  \Ax{5} नुसार
+  $\Box\Diamond!A \in \Delta_1$
+  हेही मिळते. आता पहिल्या
+  गृहीतकावरून $\Diamond!A \in
+  \Delta_2$, हेच अपेक्षित होते.
+  \end{proof}
+
+या निष्कर्षांवरून अनेक प्रणालींसाठी
+संपूर्णतेची निष्पन्नता मिळते.
+उदाहरणार्थ, $\Log{S5} = \Log{KT5} =
+\Log{KTB4}$ हे सर्व परावर्ती युक्लिडी
+प्रतिमानांच्या वर्गाच्या सापेक्ष संपूर्ण
+आहे, हे आपल्याला माहीत आहे.
+हा वर्ग सर्व परावर्ती, सममित आणि
+संक्रमक प्रतिमानांच्या वर्गाइतकाच आहे.
+
+\begin{thm}\ollabel{thm:generaldet}
+  $\mClass{C}_\Ax{D}$,
+  $\mClass{C}_\Ax{T}$,
+  $\mClass{C}_\Ax{B}$,
+  $\mClass{C}_\Ax{4}$ आणि
+  $\mClass{C}_\Ax{5}$
+  हे अनुक्रमे सर्व सर्वत्र उत्तरवर्ती,
+  परावर्ती, सममित, संक्रमक आणि
+  युक्लिडी प्रतिमानांचे वर्ग असू द्या.
+  मग \Ax{D}, \Ax{T}, \Ax{B},
+  \Ax{4} आणि \Ax{5} यांमधील
+  कोणत्याही योजना $!A_1$, \dots, $!A_n$
+  साठी प्रणाली
+  $\Log{K}!A_1 \dots !A_n$
+  हिचे निर्धारण प्रतिमानांचा वर्ग
+  $\mClass{C} = \mClass{C}_{!A_1} \cap \dots
+  \cap \mClass{C}_{!A_n}$ करतो.
+\end{thm}
+
+\begin{prop}
+  $\Sigma$ हे सामान्य मोडल तर्कशास्त्र
+  असू द्या. मग:
+  \begin{enumerate}
+  \item\ollabel{prop:anotherfive-a}%
+    $\Sigma$ मध्ये $\Diamond!A \lif \Box
+    !A$ ही योजना असेल, तर~$\Sigma$
+    साठीचे कॅनॉनिकल प्रतिमान
+    आंशिक फलनीय असते.
+  \item $\Sigma$ मध्ये
+    $\Diamond!A \liff \Box
+    !A$ ही योजना असेल, तर~$\Sigma$
+    साठीचे कॅनॉनिकल प्रतिमान
+    फलनीय असते.
+  \item $\Sigma$ मध्ये
+    $\Box\Box!A \lif \Box
+    !A$ ही योजना असेल, तर~$\Sigma$
+    साठीचे कॅनॉनिकल प्रतिमान
+    दुर्बल सघन असते.
+  \end{enumerate}
+  (या चौकट-गुणधर्मांच्या व्याख्यांसाठी
+  \olref[frd][acc]{tab:anotherfive} पाहा.)
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\Sigma$ मध्ये
+    $\Diamond !A \lif \Box !A$
+    ही योजना आहे असे समजा.
+    $R^\Sigma$ आंशिक फलनीय आहे हे
+    दाखवण्यासाठी कोणत्याही
+    $\Delta_1$, $\Delta_2$,
+    $\Delta_3 \in W^\Sigma$
+    साठी $R^\Sigma \Delta_1\Delta_2$
+    आणि $R^\Sigma \Delta_1\Delta_3$
+    असतील, तर $\Delta_2=\Delta_3$
+    हे सिद्ध करायचे आहे.
+    $R^\Sigma \Delta_1\Delta_2$
+    असल्याने $\Box^{-1}\Delta_1
+    \subseteq \Delta_2$;
+    आणि $R^\Sigma \Delta_1\Delta_3$
+    असल्याने $\Box^{-1}\Delta_1
+    \subseteq \Delta_3$
+    \iftag{prvBox}{}{हे दोन्ही
+      \olref[mod]{lem:box-iff-diamond} नुसार}.
+    $\Delta_2=\Delta_3$ साठी
+    $\Delta_2 \subseteq \Delta_3$
+    आणि $\Delta_3 \subseteq \Delta_2$
+    हे दोन्ही समावेश सिद्ध करणे पुरेसे.
+    पहिल्या समावेशासाठी
+    $!A \in \Delta_2$ घ्या;
+    मग $\Diamond!A \in \Delta_1$.
+    या योजनेवरून आणि~$\Delta_1$ च्या
+    निगामी बंदतेवरून
+    $\Box!A \in \Delta_1$ हेही मिळते.
+    $R^\Sigma \Delta_1\Delta_3$
+    या गृहीतकावरून $!A \in \Delta_3$.
+    दुसरा समावेशही तसाच सिद्ध होतो.
+
+  \item हे \olref{prop:anotherfive-a}
+    आणि \olref{thm:completeframeprops}
+    मधील सर्वत्र उत्तरवर्तित्वाच्या
+    सिद्धतेवरून लगेच मिळते.
+
+  \item $\Sigma$ मध्ये
+    $\Box\Box!A \lif \Box!A$
+    ही योजना आहे असे समजा.
+    $R^\Sigma$ दुर्बल सघन आहे हे
+    दाखवण्यासाठी $R^\Sigma
+    \Delta_1\Delta_2$ घ्या.
+    $R^\Sigma \Delta_1\Delta_3$
+    आणि $R^\Sigma \Delta_3\Delta_2$
+    असा संपूर्ण $\Sigma$-सुसंगत
+    संच~$\Delta_3$ अस्तित्वात आहे
+    हे दाखवायचे आहे. असे ठेवू:
+    \[
+    \Gamma = \Box^{-1}\Delta_1 \cup \Diamond\Delta_2.
+    \]
+    $\Gamma$ हा $\Sigma$-सुसंगत
+    आहे हे दाखवणे पुरेसे. मग
+    लिंडेनबाउमच्या पूर्वप्रमेयानुसार
+    त्याचा विस्तार असा संपूर्ण
+    $\Sigma$-सुसंगत संच~$\Delta_3$
+    मिळतो की $\Box^{-1}\Delta_1
+    \subseteq \Delta_3$ आणि
+    $\Diamond\Delta_2 \subseteq \Delta_3$.
+    म्हणजे $R^\Sigma \Delta_1\Delta_3$
+    \iftag{prvBox}{}{(
+      \olref[mod]{lem:box-iff-diamond} नुसार)}
+    आणि $R^\Sigma \Delta_3\Delta_2$
+    \iftag{prvBox}{(
+      \olref[mod]{lem:box-iff-diamond} नुसार)}{}.
+
+    व्याघातासाठी $\Gamma$ सुसंगत
+    नाही असे समजा. मग
+    $\Box!A_1$, \dots,
+    $\Box!A_n \in \Delta_1$
+    आणि $!B_1$, \dots,~$!B_m \in \Delta_2$
+    अशी !!{formula}s असतात की
+    \[!A_1, \dots,
+    !A_n, \Diamond!B_1, \dots, \Diamond!B_m \Proves[\Sigma]
+    \lfalse.\]
+    $\Diamond (!B_1 \land \dots \land !B_m) \to
+    (\Diamond!B_1 \land \dots \land \Diamond!B_m)$
+    हे प्रत्येक सामान्य मोडल तर्कशास्त्रात
+    !!{derivable} असल्याने
+    पुढीलप्रमाणे युक्तिवाद करून
+    आपण~$\Delta_2$ च्या
+    सुसंगततेशी व्याघात मिळवतो:
+    \begin{align*}
+      !A_1, \dots, !A_n, & \Diamond!B_1, \dots,
+      \Diamond!B_m \Proves[\Sigma] \lfalse \\
+      !A_1, \dots,!A_n & \Proves[\Sigma] (\Diamond!B_1 \land
+      \dots \land \Diamond!B_m) \lif \lfalse\\
+      & \qquad\text{निगमन प्रमेयानुसार}\\
+      & \qquad\text{\olref[prf][prp]{prop:derivabilityfacts}\olref[prf][prp]{prop:derivabilityfacts-deduction}, आणि \Taut} \\
+      !A_1, \dots,!A_n & \Proves[\Sigma]
+      \Diamond(!B_1 \land
+      \dots \land !B_m) \lif \lfalse\\
+      & \qquad \text{$\Sigma$ सामान्य असल्याने} \\
+      !A_1, \dots,!A_n & \Proves[\Sigma]
+      \lnot\Diamond (!B_1 \land \dots \land !B_m)\\
+      & \qquad\text{\PL नुसार} \\
+      !A_1, \dots,!A_n & \Proves[\Sigma]
+      \Box\lnot (!B_1 \land \dots \land !B_m)\\
+      & \qquad\text{$\lnot\Diamond$ साठी $\Box\lnot$} \\
+      \Box!A_1, \dots,\Box!A_n
+      & \Proves[\Sigma] \Box\Box \lnot (!B_1 \land \dots \land !B_m)\\
+      & \qquad\text{\olref[mod]{lem:box1} नुसार} \\
+      \Box!A_1, \dots,\Box!A_n
+      & \Proves[\Sigma]
+      \Box\lnot (!B_1 \land \dots \land !B_m)\\
+      &\qquad\text{$\Box\Box!A \lif \Box!A$ योजनेनुसार} \\
+      \Delta_1 & \Proves[\Sigma]
+      \Box\lnot (!B_1 \land \dots \land !B_m)\\
+      &\qquad\text{एकस्वनिकतेनुसार, \olref[prf][prp]{prop:derivabilityfacts}\olref[prf][prp]{prop:derivabilityfacts-monotonicity}} \\
+      & \Box\lnot (!B_1 \land \dots \land !B_m) \in \Delta_1\\
+      &\qquad\text{निगामी बंदतेनुसार}; \\
+      & \lnot (!B_1 \land \dots \land !B_m) \in \Delta_2\\
+      &\qquad \text{कारण }
+      R^\Sigma \Delta_1\Delta_2.
+    \end{align*}
+  \end{enumerate}
+\end{proof}
+
+या उदाहरणांवरून प्रत्येक मोडल
+प्रणाली~$\Sigma$ \emph{संपूर्ण}
+असेल असे वाटू शकते: म्हणजे~$\Sigma$
+ची सर्व प्रमेये ज्या प्रत्येक चौकटीत
+वैध आहेत, त्या प्रत्येक चौकटीत
+वैध असलेले प्रत्येक सूत्रही
+ती प्रणाली सिद्ध करत असेल.
+पण दुर्दैवाने या अर्थाने संपूर्ण
+नसलेल्या अनेक प्रणाली आहेत.
+
+\end{document}
