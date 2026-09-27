@@ -1,0 +1,124 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: goedel
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{thr}{god}
+
+\olsection{G\"odel तर्कशास्त्रे}
+
+Kurt G\"odel यांनी $n$-मूल्य तर्कशास्त्रांची एक क्रमिका
+मांडली. त्यांतील प्रत्येकात अंतःप्रज्ञावादी तर्कशास्त्रात
+वैध असलेली सर्व !!{formula}s येतात आणि प्रत्येक अभिजात
+तर्कशास्त्राचे उपतर्कशास्त्र आहे. त्यांपैकी पहिले
+लक्षवेधी तर्कशास्त्र पुढीलप्रमाणे आहे:
+
+\begin{defn}\ollabel{defn:goedel}
+\emph{$3$-मूल्य G\"odel तर्कशास्त्र}~$\LogGod$ पुढील
+मॅट्रिक्सने परिभाषित होते:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+  \item $\True$ हेच एकमेव निर्दिष्ट मूल्य आहे, म्हणजे $V^+ = \{\True\}$.
+  \item $\lfalse$ साठी $\tf{\lfalse} = \False$. उरलेल्या
+  संयोजकांची सत्यता-फलने पुढील कोष्टकांनी दिली आहेत:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}[\LogGod]$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\False$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogGod]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\
+      $\False$ & $\False$ & $\False$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogGod]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\True$ & $\True$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogGod]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\True$ & $\True$ & $\False$  \\
+      $\False$ & $\True$ & $\True$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+
+$\land$ आणि~$\lor$ यांची सत्यताकोष्टके \L ukasiewicz
+आणि प्रबळ क्लिनी तर्कशास्त्रांप्रमाणेच आहेत, हे लक्षात येईल;
+पण $\lnot$ आणि~$\lif$ यांच्या कोष्टकांत फरक आहे.
+G\"odel तर्कशास्त्रात $\tf{\lnot}(\Undef) = \False$.
+\L ukasiewicz आणि क्लिनी तर्कशास्त्रांच्या विपरीत,
+$\tf{\lif}(\Undef, \False) = \False$; तर क्लिनी
+तर्कशास्त्राच्या विपरीत (पण \L ukasiewicz तर्कशास्त्राप्रमाणे)
+$\tf{\lif}(\Undef, \Undef) = \True$.
+
+वर सूचित केलेल्या अंतःप्रज्ञावादी तर्कशास्त्राशी असलेल्या
+संबंधावरून अपेक्षित आहे त्याप्रमाणे $\LogGod[3]$ हे
+अंतःप्रज्ञावादी तर्कशास्त्राच्या जवळचे आहे. त्या तर्कशास्त्रात
+वैध असलेली सर्व सूत्रे $\LogGod[3]$ मध्ये सर्वतः सत्य
+असतात; आणि अंतःप्रज्ञावादी तर्कशास्त्रात वैध नसलेली अनेक
+अभिजात सर्वतः सत्य सूत्रे $\LogGod[3]$ मध्येही सर्वतः
+सत्य नसतात. उदाहरणार्थ, पुढील सूत्रे सर्वतः सत्य नाहीत:
+\begin{align*}
+  & p \lor \lnot p && (p \lif q) \lif (\lnot p \lor q) \\
+  & \lnot\lnot p \lif p && \lnot(\lnot p \land \lnot q) \lif (p \lor q) \\
+  & ((p \lif q) \lif p) \lif p && \lnot(p \lif q) \lif (p \land \lnot q)
+\end{align*}
+मात्र $\LogGod[3]$ मधील प्रत्येक सर्वतः सत्य सूत्र
+अंतःप्रज्ञावादी तर्कशास्त्रातही वैध असेलच असे नाही;
+उदाहरणार्थ, $\lnot\lnot p \lor \lnot p$ किंवा $(p
+\lif q) \lor (q \lif p)$.
+
+\begin{prob}
+  पुढील सूत्रे $\LogGod[3]$ मध्ये सर्वतः सत्य आहेत हे
+  सत्यताकोष्टकांनी दाखवा:
+  \begin{align*}
+    & \lnot\lnot p \lor \lnot p\\
+    & (p \lif q) \lor (q \lif p) \\
+    & \lnot(p \land q) \lif (\lnot p \lor \lnot q) \\
+    & (p \lif q) \lor (q \lif r) \lor (r \lif s)
+  \end{align*}
+\end{prob}
+
+\begin{prob}
+  पुढील सूत्रे $\LogGod[3]$ मध्ये सर्वतः सत्य नाहीत हे
+  सत्यताकोष्टकांनी दाखवा:
+  \begin{align*}
+    & (p \lif q) \lif (\lnot p \lor q) \\
+    & \lnot(\lnot p \land \lnot q) \lif (p \lor q) \\
+    & ((p \lif q) \lif p) \lif p \\
+    & \lnot(p \lif q) \lif (p \land \lnot q)
+  \end{align*}
+\end{prob}
+
+\begin{prob}
+  पुढीलपैकी कोणते संबंध G\"odel तर्कशास्त्रात खरे ठरतात?
+  प्रत्येकासाठी सत्यताकोष्टक द्या.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+\end{document}
