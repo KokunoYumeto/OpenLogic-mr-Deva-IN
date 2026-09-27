@@ -1,0 +1,77 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: matrices
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{mat}
+
+\olsection{मॅट्रिक्स}
+
+बहुमूल्य तर्कशास्त्र त्याची भाषा, सत्यतामूल्यांचा~$V$ संच,
+निर्दिष्ट सत्यतामूल्यांचा उपसंच आणि त्याच्या संयोजकांसाठीची
+सत्यता-फलने यांवरून परिभाषित होते. या घटकांना एकत्रितपणे
+\emph{मॅट्रिक्स} म्हणतात.
+
+\begin{defn}[मॅट्रिक्स]
+\ollabel{defn:matrix}
+तर्कशास्त्र~$\Log L$ साठीच्या \emph{मॅट्रिक्स} मध्ये पुढील घटक असतात:
+\begin{enumerate}
+\item भाषा~$\Lang L$ बनवणारा संयोजकांचा संच;
+\item सत्यतामूल्यांचा $V \neq \emptyset$ संच;
+\item निर्दिष्ट सत्यतामूल्यांचा $V^+ \subseteq V$ संच;
+\item $\Lang L$ मधील प्रत्येक $n$-स्थानी संयोजक~$\star$ साठी
+  सत्यता-फलन~$\tf{\star} : V^n \to V$. $n = 0$ असल्यास
+  $\tf{\star}$ हे फक्त~$V$ मधील एक मूल्य असते.
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+अभिजात तर्कशास्त्र~\LogCL{} साठीच्या मॅट्रिक्समध्ये पुढील घटक असतात:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ असलेली
+  मानक विधानीय भाषा~$\Lang L_0$.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \False\}$.
+  \item $\True$ हेच एकमेव निर्दिष्ट मूल्य, म्हणजे $V^+ = \{\True\}$.
+  \item $\lfalse$ साठी $\tf{\lfalse} = \False$. इतर सत्यता-फलने
+  नेहमीच्या सत्यताकोष्टकांनी दिली आहेत (पहा
+  \olref{fig:tf-CL}).
+\end{enumerate}
+\begin{figure}
+  \begin{center}
+      \begin{tabular}{c|c}
+        $\tf{\lnot}$ & \\
+        \hline
+        $\True$ & $\False$ \\
+        $\False$ & $\True$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\land}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ \\
+        $\False$ & $\False$ & $\False$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\lor}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\True$ \\
+        $\False$ & $\True$ & $\False$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\lif}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ \\
+        $\False$ & $\True$ & $\True$
+      \end{tabular}
+    \end{center}
+    \caption{अभिजात तर्कशास्त्र~$\LogCL$ साठीची सत्यता-फलने.}
+    \ollabel{fig:tf-CL}
+  \end{figure}
+\end{ex}
+
+\end{document}
