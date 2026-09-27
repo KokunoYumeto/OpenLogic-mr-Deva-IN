@@ -1,0 +1,235 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: propositional-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{seq}{prl}
+
+\olsection{निवडक तर्कशास्त्रांसाठी विधानीय नियम}
+
+एखाद्या संयोजकासाठीचे $n$-बाजूंच्या क्रमवर्ती कलनातील निगमन नियम
+फक्त त्या संयोजकाच्या वैशिष्ट्यपूर्ण सत्यता-फलनावर अवलंबून असतात.
+म्हणून भिन्न तर्कशास्त्रांत एखाद्या संयोजकाची व्याख्या एकाच
+सत्यता-फलनाने केली असेल, तर त्या संयोजकाचे $n$-बाजूंचे
+क्रमवर्ती नियम त्या तर्कशास्त्रांत सारखेच असतात.
+
+\subsection{$\lnot$ साठीचे नियम}
+
+$\lnot$ साठीचे पुढील नियम \L ukasiewicz आणि क्लिनी यांच्या
+तर्कशास्त्रांना तसेच त्यांच्या प्रकारांना लागू होतात.
+
+\begin{defish}
+  \begin{center}
+\AxiomC{$ \Gamma \nSequent \Pi \nSequent \Delta, !A $}
+\RightLabel{\iR{\lnot}{\False}}
+\UnaryInfC{$ \lnot !A, \Gamma \nSequent \Pi \nSequent \Delta$}
+\DisplayProof
+\\[2ex]
+\AxiomC{$ \Gamma \nSequent !A, \Pi \nSequent \Delta $}
+\RightLabel{\iR{\lnot}{\Undef}}
+\UnaryInfC{$\Gamma \nSequent \lnot !A, \Pi \nSequent \Delta$}
+\DisplayProof
+\\[2ex]
+\AxiomC{$!A, \Gamma \nSequent \Pi \nSequent \Delta$}
+\RightLabel{\iR{\lnot}{\True}}
+\UnaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta,  \lnot !A$}
+\DisplayProof
+  \end{center}
+\end{defish}
+
+$\lnot$ साठीचे पुढील नियम G\"odel तर्कशास्त्राला लागू होतात.
+
+\begin{defish}
+\AxiomC{$ \Gamma \nSequent !A, \Pi \nSequent \Delta, !A $}
+\RightLabel{\iR{\lnot}{\False}[\LogGod]}
+\UnaryInfC{$ \lnot !A, \Gamma \nSequent \Pi \nSequent \Delta$}
+\DisplayProof
+\hfill
+\AxiomC{$!A, \Gamma \nSequent \Pi \nSequent \Delta$}
+\RightLabel{\iR{\lnot}{\True}[\LogGod]}
+\UnaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta,  \lnot !A$}
+\DisplayProof
+\hfill
+\end{defish}
+
+(G\"odel तर्कशास्त्रात $\lnot !A$ ला~$\Undef$ हे मूल्य
+कधीही मिळत नाही; म्हणून मधल्या जागेसाठी नियम नाही.)
+
+\subsection{$\land$ साठीचे नियम}
+
+\L ukasiewicz, प्रबळ क्लिनी आणि G\"odel यांच्या
+तर्कशास्त्रांतील $\land$ साठीचे नियम पुढीलप्रमाणे आहेत.
+
+\begin{defish}
+\begin{center}
+  \AxiomC{$!A, !B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR{\land}{\False}$}
+  \UnaryInfC{$!A \land !B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$\Gamma \nSequent !A, \Pi \nSequent !A, \Delta$}
+  \AxiomC{$\Gamma \nSequent !B, \Pi \nSequent !B, \Delta$}
+  \AxiomC{$\Gamma \nSequent !A, !B, \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\land\Undef$}
+  \TrinaryInfC{$\Gamma \nSequent !A \land !B, \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, !A$}
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, !B$}
+  \RightLabel{$\iR\land\True$}
+  \BinaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, !A \land !B$}
+  \DisplayProof
+\end{center}
+\end{defish}
+
+\subsection{$\lor$ साठीचे नियम}
+
+\L ukasiewicz, प्रबळ क्लिनी आणि G\"odel यांच्या
+तर्कशास्त्रांतील $\lor$ साठीचे नियम पुढीलप्रमाणे आहेत.
+
+\begin{defish}
+\begin{center}
+ \AxiomC{$!A, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \AxiomC{$!B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lor\False$}
+  \BinaryInfC{$!A \lor !B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$!A, \Gamma \nSequent !A, \Pi \nSequent \Delta$}
+  \AxiomC{$!B, \Gamma \nSequent !B, \Pi \nSequent \Delta$}
+  \AxiomC{$\Gamma \nSequent !A, !B, \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lor\Undef$}
+  \TrinaryInfC{$\Gamma \nSequent !A \lor !B, \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, !A, !B$}
+  \RightLabel{$\iR\lor\True$}
+  \UnaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, !A \lor !B$}
+  \DisplayProof
+\end{center}
+\end{defish}
+
+\subsection{$\lif$ साठीचे नियम}
+
+\L ukasiewicz तर्कशास्त्रातील $\lif$ साठीचे नियम पुढीलप्रमाणे आहेत.
+
+\begin{defish}
+\begin{center}
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, !A$}
+  \AxiomC{$!B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lif\False[\LogLuk[3]]$}
+  \BinaryInfC{$!A \lif !B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]
+  \AxiomC{$\Gamma \nSequent !A, !B, \Pi \nSequent \Delta$}
+  \AxiomC{$!B, \Gamma \nSequent \Pi \nSequent \Delta, !A$}
+  \RightLabel{$\iR\lif\Undef[\LogLuk[3]]$}
+  \BinaryInfC{$\Gamma \nSequent !A \lif !B, \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$!A, \Gamma \nSequent !B, \Pi \nSequent \Delta, !B$}
+  \AxiomC{$!A, \Gamma \nSequent !A, \Pi \nSequent \Delta, !B$}
+  \RightLabel{$\iR{\lif}{\True}[\LogLuk[3]]$}
+  \BinaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, !A \lif !B$}
+  \DisplayProof
+\end{center}
+\end{defish}
+
+प्रबळ क्लिनी तर्कशास्त्रातील $\lif$ साठीचे नियम पुढीलप्रमाणे आहेत.
+
+\begin{defish}
+\begin{center}
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, !A$}
+  \AxiomC{$!B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lif\False[\LogKs]$}
+  \BinaryInfC{$!A \lif !B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]
+  \AxiomC{$!B, \Gamma \nSequent !B, \Pi \nSequent \Delta$}
+  \AxiomC{$\Gamma \nSequent !A, !B, \Pi \nSequent \Delta$}
+  \AxiomC{$\Gamma \nSequent !A, \Pi \nSequent \Delta, !A$}
+  \RightLabel{$\iR\lif\Undef[\LogKs]$}
+  \TrinaryInfC{$\Gamma \nSequent !A \lif !B, \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$!A, \Gamma \nSequent \Pi \nSequent \Delta, !B$}
+  \RightLabel{$\iR{\lif}{\True}[\LogKs]$}
+  \UnaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, !A \lif !B$}
+  \DisplayProof
+\end{center}
+\end{defish}
+
+G\"odel तर्कशास्त्रातील $\lif$ साठीचे नियम पुढीलप्रमाणे आहेत.
+
+\begin{defish}
+\begin{center}
+  \AxiomC{$\Gamma \nSequent !A, \Pi \nSequent \Delta, !A$}
+  \AxiomC{$!B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lif\False[\LogGod[3]]$}
+  \BinaryInfC{$!A \lif !B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]
+  \AxiomC{$\Gamma \nSequent !B, \Pi \nSequent \Delta$}
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, !A$}
+  \RightLabel{$\iR\lif\Undef[\LogGod[3]]$}
+  \BinaryInfC{$\Gamma \nSequent !A \lif !B, \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$!A, \Gamma \nSequent !B, \Pi \nSequent \Delta, !B$}
+  \AxiomC{$!A, \Gamma \nSequent !A, \Pi \nSequent \Delta, !B$}
+  \RightLabel{$\iR{\lif}{\True}[\LogGod[3]]$}
+  \BinaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, !A \lif !B$}
+  \DisplayProof
+\end{center}
+\end{defish}
+
+
+\begin{sidewaysfigure}
+  \begin{center}
+  \AxiomC{$A \nSequent A \nSequent A$}
+  \RightLabel{\iR \Weakening \True}
+  \UnaryInfC{$A \nSequent A \nSequent B, A$}
+  \RightLabel{\iR \Weakening \Undef}
+  \UnaryInfC{$A \nSequent B, A \nSequent B, A$}
+  \RightLabel{\iR \Weakening \Undef}
+  \UnaryInfC{$A \nSequent A, B, A \nSequent B, A$}
+  \AxiomC{$A \nSequent A \nSequent A$}
+  \RightLabel{\iR \Weakening \True}
+  \UnaryInfC{$A \nSequent A \nSequent A, A$}
+  \RightLabel{\iR \Weakening \True}
+  \UnaryInfC{$A \nSequent A \nSequent B, A, A$}
+  \RightLabel{\iR \Weakening \False}
+  \UnaryInfC{$B, A \nSequent A \nSequent B, A, A$}
+  \RightLabel{$\iR\lif\Undef$}
+  \BinaryInfC{$A \nSequent A \lif B, A \nSequent B, A$}
+  \AxiomC{$B \nSequent B \nSequent B$}
+  \RightLabel{\iR \Weakening \Undef}
+  \UnaryInfC{$B \nSequent A, B \nSequent B$}
+  \RightLabel{\iR \Exchange \Undef}
+  \UnaryInfC{$B \nSequent B, A \nSequent B$}
+  \RightLabel{\iR \Weakening \Undef}
+  \UnaryInfC{$B \nSequent A, B, A \nSequent B$}
+  \RightLabel{\iR \Weakening \False}
+  \UnaryInfC{$A, B \nSequent A, B, A \nSequent B$}
+  \RightLabel{\iR \Exchange \False}
+  \UnaryInfC{$B, A \nSequent A, B, A \nSequent B$}
+  \AxiomC{$A \nSequent A \nSequent A$}
+  \RightLabel{\iR \Weakening \True}
+  \UnaryInfC{$A \nSequent A \nSequent B, A$}
+  \RightLabel{\iR \Weakening \False}
+  \UnaryInfC{$B, A \nSequent A \nSequent B, A$}
+  \RightLabel{\iR \Weakening \False}
+  \UnaryInfC{$B, B, A \nSequent A \nSequent B, A$}
+  \RightLabel{$\iR\lif\Undef$}
+  \BinaryInfC{$B, A \nSequent A \lif B, A \nSequent B$}
+  \RightLabel{$\iR\lif\False$}
+  \BinaryInfC{$A \lif B, A \nSequent A \lif B, A \nSequent B$}
+  \DisplayProof
+  \end{center}
+  \caption{$\LogLuk[3]$ मधील !!{derivation} चे उदाहरण}
+\end{sidewaysfigure}
+
+\end{document}
