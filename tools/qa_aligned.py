@@ -606,6 +606,11 @@ _DOCUMENTED_PROJECTIONS = {
         # transitive closure, so its Marathi notation uses R^+.
         (r'R^+', r'R^*'),
     ],
+    'OLP-0332': [
+        # OLINC-062: the addition recurrence quantifies w, not x.
+        (r"\lforall[w][u(w')=u" + '\n' + r" (w)']",
+         r"\lforall[w][u(x')=u" + '\n' + r" (x)']"),
+    ],
 }
 
 

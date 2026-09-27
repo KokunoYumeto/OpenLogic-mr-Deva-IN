@@ -1,0 +1,145 @@
+% Part: second-order-logic
+% Chapter: metatheory
+% Section: second-order-arithmetic
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{met}{spa}
+
+\olsection{द्वितीय-क्रम अंकगणित}
+
+पेआनो अंकगणिताची उपपत्ती~$\Th{PA}$ हिच्यात
+$\Th{Q}$ ची आठ स्वयंसिद्धके समाविष्ट आहेत, हे आठवा:
+\begin{align*}
+& \lforall[x][\eq/[x'][\Obj 0]]\\
+& \lforall[x][\lforall[y][(\eq[x'][y'] \lif \eq[x][y])]]\\
+& \lforall[x][(\eq[x][\Obj 0] \lor \lexists[y][\eq[x][y']])]\\
+& \lforall[x][\eq[(x + \Obj 0)][x]]\\
+& \lforall[x][\lforall[y][\eq[(x + y')][(x + y)']]]\\
+& \lforall[x][\eq[(x \times \Obj 0)][\Obj 0]]\\
+& \lforall[x][\lforall[y][\eq[(x \times y')][((x \times y) + x)]]]\\
+& \lforall[x][\lforall[y][(x < y \liff \lexists[z][\eq[(z' + x)][y]])]]\\
+\intertext{आणि पुढील स्वरूपाची सर्व वाक्येही:}
+& (!A(\Obj 0) \land \lforall[x][(!A(x) \lif !A(x'))]) \lif \lforall[x][!A(x)].
+\end{align*}
+शेवटचे हे एक ``रूपबंध'' आहे: अंकगणिताच्या भाषेतील
+अमर्याद !!{sentence}s निर्माण करणारा नमुना, प्रत्येक
+!!{formula}~$!A(x)$ साठी एक वाक्य. याला (प्रथम-क्रम)
+\emph{विगमनाचा स्वयंसिद्धक-रूपबंध} म्हणतो.
+\emph{द्वितीय-क्रम} पेआनो अंकगणित~$\Th{PA^2}$ मध्ये
+विगमन एकाच वाक्यात मांडता येते. $\Th{PA^2}$ मध्ये
+वरील पहिली आठ स्वयंसिद्धके आणि (द्वितीय-क्रम)
+\emph{विगमनाचे स्वयंसिद्धक} असते:
+\[
+\lforall[X][((X(\Obj 0) \land \lforall[x][(X(x) \lif X(x'))]) \lif \lforall[x][X(x)])].
+\]
+याचा अर्थ असा: !!{domain} चा उपसंच~$X$ यामध्ये
+$\Assign{\Obj{0}}{M}$ असेल आणि कोणत्याही~$x \in \Domain{M}$
+बरोबर~$\Assign{\prime}{M}(x)$ ही असेल (म्हणजे तो
+``उत्तराधिकारी क्रियेखाली बंद'' असेल), तर !!{domain} मधील
+सर्व घटक त्यात असतील (म्हणजे $X =
+\Domain{M})$.
+
+विगमनाचे स्वयंसिद्धक असा निर्वाळा देते की ते पूर्ण करणाऱ्या
+कोणत्याही !!{structure} च्या~$\Domain{M}$ मध्ये
+स्वयंसिद्धकांना आवश्यक असलेलेच !!{element}s असतात;
+म्हणजे $n \in \Nat$ साठी~$\num{n}$ ची मूल्ये.
+$\Th{PA^2}$ च्या प्रतिमानात अमानक संख्या नसतात.
+
+\begin{thm}
+\ollabel{thm:sol-pa-standard}
+जर $\Sat{M}{\Th{PA^2}}$ असेल, तर $\Domain{M} =
+\Setabs{\Value{\num{n}}{M}}{n \in \Nat}$.
+\end{thm}
+
+\begin{proof}
+$N = \Setabs{\Value{\num{n}}{M}}{n \in \Nat}$ असे मानू
+आणि $\Sat{M}{\Th{PA^2}}$ असे गृहीत धरू. अर्थात,
+कोणत्याही $n \in \Nat$ साठी
+$\Value{\num{n}}{M} \in \Domain{M}$; म्हणून
+$N \subseteq \Domain{M}$.
+
+आता उलट दिशेचा अंतर्भाव दाखवू. $s(X) = N$ असे
+चल-मूल्यांकन $s$ घेऊ. गृहीतकानुसार,
+\begin{align*}
+\Sat{M}{\lforall[X][((X(\Obj 0) \land \lforall[x][(X(x)
+      \lif X(x'))]) \lif \lforall[x][X(x)])]}, & \text{ म्हणून}\\
+\Sat{M}{(X(\Obj 0) \land \lforall[x][(X(x) \lif X(x'))]) \lif
+  \lforall[x][X(x)]}[s]. &
+\end{align*}
+या सशर्त विधानाचे पूर्वांग पाहू. $\Value{\Obj{0}}{M} \in
+N$, म्हणून $\Sat{M}{X(\Obj{0})}[s]$. दुसरे संयुक्तपद,
+$\lforall[x][(X(x) \lif X(x'))]$, हेही पूर्ण होते.
+कारण $x \in N$ असे समजू. $N$ च्या व्याख्येनुसार,
+काही~$n$ साठी $x = \Value{\num{n}}{M}$. त्यावरून
+$\Assign{\prime}{M}(x) = \Value{\num{n+1}}{M} \in N$.
+म्हणून $\Assign{\prime}{M}(x) \in N$.
+
+त्यामुळे $\Sat{M}{X(\Obj 0) \land \lforall[x][(X(x) \lif X(x'))]}[s]$.
+म्हणून $\Sat{M}{\lforall[x][X(x)]}[s]$. याचा अर्थ,
+प्रत्येक $x \in \Domain{M}$ साठी $x \in s(X) = N$.
+म्हणून $\Domain{M} \subseteq N$.
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:sol-pa-categorical}
+$\Th{PA^2}$ ची कोणतीही दोन प्रतिमाने समरूप असतात.
+\end{cor}
+
+\begin{proof}
+\olref{thm:sol-pa-standard} नुसार,
+$\Th{PA^2}$ च्या कोणत्याही प्रतिमानाच्या प्रांतात
+$\Value{\num{n}}{M}$ ही मूल्येच असतात. असे प्रत्येक
+प्रतिमान~$\Th{Q}$ चेही प्रतिमान असते.
+\olref[mod][mar][stm]{prop:thq-standard} नुसार
+ते मानक असते, म्हणजे~$\Struct{N}$ शी समरूप असते.
+\end{proof}
+
+वर $\Th{PA^2}$ ची व्याख्या पहिली आठ अंकगणितीय स्वयंसिद्धके
+आणि द्वितीय-क्रम विगमनाचे स्वयंसिद्धक असलेली उपपत्ती म्हणून
+केली. प्रत्यक्षात, द्वितीय-क्रम तर्कशास्त्राच्या
+अभिव्यक्तीक्षमतेमुळे द्वितीय-क्रम पेआनो अंकगणितासाठी
+अंकगणितीय स्वयंसिद्धकांपैकी फक्त \emph{पहिली दोन}
+आणि विगमन पुरेसे असते.
+
+\begin{prop}\ollabel{prop:sol-pa-definable}
+पहिली दोन अंकगणितीय स्वयंसिद्धके (उत्तराधिकारी स्वयंसिद्धके)
+आणि द्वितीय-क्रम विगमनाचे स्वयंसिद्धक असलेली द्वितीय-क्रम
+उपपत्ती $\Th{PA^{2\dagger}}$ असो. मग $\le$, $+$ आणि
+$\times$ हे $\Th{PA^{2\dagger}}$ मध्ये परिभाष्य आहेत.
+\end{prop}
+
+\begin{proof}
+$\le$ परिभाष्य आहे हे दाखवण्यासाठी असे
+सूत्र~$!A_\le(x, y)$ शोधावे लागेल की
+$\Sat{N}{!A_\le(\num n, \num m)}$ जर आणि फक्त जर
+$n \le m$. पुढील सूत्र पाहू:
+\[
+!B(x, Y) \ident Y(x) \land \lforall[y][(Y(y) \lif Y(y'))]
+\]
+स्पष्टच, संच $Y \subseteq \Nat$ कडून
+$!B(\num n, Y)$ ची पूर्तता होईल, जर आणि फक्त जर
+$\Setabs{m}{n \le m} \subseteq Y$. म्हणून
+$!A_\le(x, y) \ident
+\lforall[Y][(!B(x, Y) \lif Y(y))]$ असे घेता येते.
+
+बेरीज परिभाष्य आहे हे पाहण्यासाठी लक्षात घ्या की $k+l=m$
+जर आणि फक्त जर असे फलन $u$ असेल की $u(0)=k$,
+प्रत्येक $n$ साठी $u(n')=u(n)'$ आणि $m = u(l)$.
+या समतुल्यतेने $\Th{PA^{2\dagger}}$ मध्ये पुढील
+सूत्राद्वारे बेरीज परिभाषित करता येते:
+\[
+!A_+(x,y,z) \ident \lexists[u][(u(\Obj 0)=x \land \lforall[w][u(w')=u
+ (w)'] \land u(y)=z)]
+\]
+स्पष्टच, $\Sat{N}{!A_+(\num k, \num l, \num m)}$
+जर आणि फक्त जर $k+l=m$.
+\end{proof}
+
+\begin{prob}
+\olref[sol][met][spa]{prop:sol-pa-definable} चा पुरावा पूर्ण करा.
+\end{prob}
+
+\end{document}
