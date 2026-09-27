@@ -1005,6 +1005,21 @@ _DOCUMENTED_PROJECTIONS = {
         (r'म्हणून $\Gamma \Entails !A$.',
          r'म्हणून $\Gamma \Proves !A$.'),
     ],
+    'OLP-0466': [
+        # OLINC-198: the Euclidean Box proof evaluates at f(sigma.n).
+        (r'$\mSat{M}{\Box !B}[f(\sigma.n)]$' + '\n'
+         + r'    असल्याने $\mSat{M}{!B}[w]$',
+         r'$\mSat{M}{\Box !B}[f(\sigma).n]$' + '\n'
+         + r'    असल्याने $\mSat{M}{!B}[w]$'),
+        # OLINC-199: 4r-Diamond introduces F Diamond B.
+        (r'$\sFmla{\False}{\Diamond!B}[\sigma]$ हे नवे',
+         r'$\sFmla{\True}{\Box!B}[\sigma]$ हे नवे'),
+        # OLINC-200: the Euclidean Diamond proof evaluates at f(sigma.n).
+        (r'$\mSat/{M}{\Diamond !B}[f(\sigma.n)]$' + '\n'
+         + r'    असल्याने $\mSat/{M}{!B}[w]$',
+         r'$\mSat/{M}{\Diamond !B}[f(\sigma).n]$' + '\n'
+         + r'    असल्याने $\mSat/{M}{!B}[w]$'),
+    ],
 }
 
 

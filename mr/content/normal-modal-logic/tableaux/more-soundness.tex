@@ -1,0 +1,286 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: more-soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{msn}
+
+\olsection{अतिरिक्त नियमांची निर्दोषता}
+
+प्रतिमानांच्या एखाद्या वर्गातील एका प्रतिमानात
+!!a{tableau} ची शाखा पूर्ततायोग्य असेल, तेव्हा
+नियम लावल्यावर मिळणारी शाखाही त्या वर्गातील
+प्रतिमानात पूर्ततायोग्य असेल, तर तो नियम त्या
+वर्गासाठी निर्दोष आहे असे म्हणतो.
+
+\begin{prop}
+  \ollabel{prop:soundness-T}
+  \iftag{prvBox}{\Ax{T}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ आणि }%
+  \iftag{prvDiamond}{\Ax{T}$\Diamond$}{}
+  परावर्ती प्रतिमानांसाठी
+  \iftag{notprvBox,notprvDiamond}{निर्दोष आहे}{निर्दोष आहेत}.
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{$\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$
+  याला T$\Box$ लावून शाखा विस्तारित केली:
+  \iftag{probBox}{सरावासाठी.}{शाखेवर
+    $\sFmla{\True}{!B}[\sigma]$ हे नवे !!{signed
+      formula} मिळते. $\mSat{M}{\Gamma}[f]$
+    असे समजू; विशेषतः $\mSat{M}{\Box
+      !B}[f(\sigma)]$. $R$ परावर्ती असल्याने
+    $Rf(\sigma)f(\sigma)$. म्हणून
+    $\mSat{M}{!B}[f(\sigma)]$; म्हणजे
+    $\mModel{M}, f$ हे
+    $\sFmla{\True}{!B}[\sigma]$ पूर्ण करते.}}{}
+\tagitem{prvDiamond}{$\sFmla{\False}{\Diamond !B}[\sigma] \in \Gamma$
+  याला T$\Diamond$ लावून शाखा विस्तारित केली:
+  \iftag{probDiamond}{सरावासाठी.}{शाखेवर
+    $\sFmla{\False}{!B}[\sigma]$ हे नवे !!{signed
+      formula} मिळते. $\mSat{M}{\Gamma}[f]$
+    असे समजू; विशेषतः $\mSat/{M}{\Diamond
+      !B}[f(\sigma)]$. $R$ परावर्ती असल्याने
+    $Rf(\sigma)f(\sigma)$. म्हणून
+    $\mSat/{M}{!B}[f(\sigma)]$; म्हणजे
+    $\mModel{M}, f$ हे
+    $\sFmla{\False}{!B}[\sigma]$ पूर्ण करते.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-T} चा पुरावा पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-D}
+  \iftag{prvBox}{\Ax{D}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ आणि }%
+  \iftag{prvDiamond}{\Ax{D}$\Diamond$}{}
+  सर्वत्र उत्तरवर्ती प्रतिमानांसाठी
+  \iftag{notprvBox,notprvDiamond}{निर्दोष आहे}{निर्दोष आहेत}.
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{$\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$
+  याला D$\Box$ लावून शाखा विस्तारित केली:
+  \iftag{probBox}{सरावासाठी.}{शाखेवर
+    $\sFmla{\True}{\Diamond !B}[\sigma]$ हे नवे
+    !!{signed
+      formula} मिळते. $\mSat{M}{\Gamma}[f]$
+    असे समजू; विशेषतः
+    $\mSat{M}{\Box !B}[f(\sigma)]$.
+    $R$ सर्वत्र उत्तरवर्ती असल्याने
+    $Rf(\sigma)w$ होईल असे $w
+    \in W$ असते. मग $\mSat{M}{!B}[w]$,
+    आणि म्हणून $\mSat{M}{\Diamond !B}[f(\sigma)]$.
+    त्यामुळे $\mModel{M}, f$ हे
+    $\sFmla{\True}{\Diamond!B}[\sigma]$ पूर्ण करते.}}{}
+\tagitem{prvDiamond}{$\sFmla{\False}{\Diamond !B}[\sigma] \in \Gamma$
+  याला D$\Diamond$ लावून शाखा विस्तारित केली:
+  \iftag{probDiamond}{सरावासाठी.}{शाखेवर
+    $\sFmla{\False}{\Box !B}[\sigma]$ हे नवे
+    !!{signed
+      formula} मिळते. $\mSat{M}{\Gamma}[f]$
+    असे समजू; विशेषतः
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$.
+    $R$ सर्वत्र उत्तरवर्ती असल्याने
+    $Rf(\sigma)w$ होईल असे $w
+    \in W$ असते. मग $\mSat/{M}{!B}[w]$,
+    आणि म्हणून $\mSat/{M}{\Box !B}[f(\sigma)]$.
+    त्यामुळे $\mModel{M}, f$ हे
+    $\sFmla{\False}{\Box!B}[\sigma]$ पूर्ण करते.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-D} चा पुरावा पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-B}
+  \iftag{prvBox}{\Ax{B}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ आणि }%
+  \iftag{prvDiamond}{\Ax{B}$\Diamond$}{}
+  सममित प्रतिमानांसाठी
+  \iftag{notprvBox,notprvDiamond}{निर्दोष आहे}{निर्दोष आहेत}.
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{$\sFmla{\True}{\Box !B}[\sigma.n] \in \Gamma$
+  याला B$\Box$ लावून शाखा विस्तारित केली:
+  \iftag{probBox}{सरावासाठी.}{शाखेवर
+    $\sFmla{\True}{!B}[\sigma]$ हे नवे !!{signed
+      formula} मिळते. $\mSat{M}{\Gamma}[f]$
+    असे समजू; विशेषतः $\mSat{M}{\Box
+      !B}[f(\sigma.n)]$. $f$ हे शाखेवरील
+    पूर्वचिन्हांचे~$\mModel{M}$ मधील
+    अर्थनिर्धारण असल्याने
+    $Rf(\sigma)f(\sigma.n)$.
+    $R$ सममित असल्याने
+    $Rf(\sigma.n)f(\sigma)$.
+    $\mSat{M}{\Box !B}[f(\sigma.n)]$
+    असल्यामुळे $\mSat{M}{!B}[f(\sigma)]$.
+    म्हणून $\mModel{M}, f$ हे
+    $\sFmla{\True}{!B}[\sigma]$ पूर्ण करते.}}{}
+\tagitem{prvDiamond}{$\sFmla{\False}{\Diamond !B}[\sigma.n] \in \Gamma$
+  याला B$\Diamond$ लावून शाखा विस्तारित केली:
+  \iftag{probDiamond}{सरावासाठी.}{शाखेवर
+    $\sFmla{\False}{!B}[\sigma]$ हे नवे !!{signed
+      formula} मिळते. $\mSat{M}{\Gamma}[f]$
+    असे समजू; विशेषतः $\mSat/{M}{\Diamond
+      !B}[f(\sigma.n)]$. $f$ हे शाखेवरील
+    पूर्वचिन्हांचे~$\mModel{M}$ मधील
+    अर्थनिर्धारण असल्याने
+    $Rf(\sigma)f(\sigma.n)$.
+    $R$ सममित असल्याने
+    $Rf(\sigma.n)f(\sigma)$.
+    $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$
+    असल्यामुळे $\mSat/{M}{!B}[f(\sigma)]$.
+    म्हणून $\mModel{M}, f$ हे
+    $\sFmla{\False}{!B}[\sigma]$ पूर्ण करते.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-B} चा पुरावा पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-4}
+  \iftag{prvBox}{\Ax{4}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ आणि }%
+  \iftag{prvDiamond}{\Ax{4}$\Diamond$}{}
+  संक्रमक प्रतिमानांसाठी
+  \iftag{notprvBox,notprvDiamond}{निर्दोष आहे}{निर्दोष आहेत}.
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{$\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$
+  याला 4$\Box$ लावून शाखा विस्तारित केली:
+  \iftag{probBox}{सरावासाठी.}{शाखेवर
+    $\sFmla{\True}{\Box!B}[\sigma.n]$ हे नवे
+    !!{signed
+      formula} मिळते. $\mSat{M}{\Gamma}[f]$
+    असे समजू; विशेषतः
+    $\mSat{M}{\Box !B}[f(\sigma)]$.
+    $f$ हे शाखेवरील पूर्वचिन्हांचे
+    $\mModel{M}$ मधील अर्थनिर्धारण आहे
+    आणि $\sigma.n$ वापरलेले असले पाहिजे;
+    म्हणून $Rf(\sigma)f(\sigma.n)$.
+    आता $Rf(\sigma.n)w$ होईल असे कोणतेही
+    जग~$w$ घ्या. $R$ संक्रमक असल्याने
+    $Rf(\sigma)w$. तसेच
+    $\mSat{M}{\Box !B}[f(\sigma)]$
+    असल्यामुळे $\mSat{M}{!B}[w]$.
+    म्हणून $\mSat{M}{\Box !B}[f(\sigma.n)]$
+    आणि $\mModel{M}, f$ हे
+    $\sFmla{\True}{\Box !B}[\sigma.n]$ पूर्ण करते.}}{}
+\tagitem{prvDiamond}{$\sFmla{\False}{\Diamond !B}[\sigma] \in \Gamma$
+  याला 4$\Diamond$ लावून शाखा विस्तारित केली:
+  \iftag{probDiamond}{सरावासाठी.}{शाखेवर
+    $\sFmla{\False}{\Diamond!B}[\sigma.n]$ हे नवे
+    !!{signed
+      formula} मिळते. $\mSat{M}{\Gamma}[f]$
+    असे समजू; विशेषतः
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$.
+    $f$ हे शाखेवरील पूर्वचिन्हांचे
+    $\mModel{M}$ मधील अर्थनिर्धारण आहे
+    आणि $\sigma.n$ वापरलेले असले पाहिजे;
+    म्हणून $Rf(\sigma)f(\sigma.n)$.
+    आता $Rf(\sigma.n)w$ होईल असे कोणतेही
+    जग~$w$ घ्या. $R$ संक्रमक असल्याने
+    $Rf(\sigma)w$. तसेच
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$
+    असल्यामुळे $\mSat/{M}{!B}[w]$.
+    म्हणून $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$
+    आणि $\mModel{M}, f$ हे
+    $\sFmla{\False}{\Diamond !B}[\sigma.n]$ पूर्ण करते.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-4} चा पुरावा पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-4r}
+  \iftag{prvBox}{\Ax{4r}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ आणि }%
+  \iftag{prvDiamond}{\Ax{4r}$\Diamond$}{}
+  युक्लिडी प्रतिमानांसाठी
+  \iftag{notprvBox,notprvDiamond}{निर्दोष आहे}{निर्दोष आहेत}.
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{$\sFmla{\True}{\Box !B}[\sigma.n] \in \Gamma$
+  याला 4r$\Box$ लावून शाखा विस्तारित केली:
+  \iftag{probBox}{सरावासाठी.}{शाखेवर
+    $\sFmla{\True}{\Box!B}[\sigma]$ हे नवे
+    !!{signed
+      formula} मिळते. $\mSat{M}{\Gamma}[f]$
+    असे समजू; विशेषतः $\mSat{M}{\Box
+      !B}[f(\sigma.n)]$.
+    $f$ हे शाखेवरील पूर्वचिन्हांचे
+    $\mModel{M}$ मधील अर्थनिर्धारण असल्याने
+    $Rf(\sigma)f(\sigma.n)$.
+    आता $Rf(\sigma)w$ होईल असे कोणतेही
+    जग~$w$ घ्या. $R$ युक्लिडी असल्याने
+    $Rf(\sigma.n)w$.
+    $\mSat{M}{\Box !B}[f(\sigma.n)]$
+    असल्याने $\mSat{M}{!B}[w]$.
+    म्हणून $\mSat{M}{\Box !B}[f(\sigma)]$;
+    आणि $\mModel{M}, f$ हे
+    $\sFmla{\True}{\Box !B}[\sigma]$ पूर्ण करते.}}{}
+\tagitem{prvDiamond}{$\sFmla{\False}{\Diamond !B}[\sigma.n] \in \Gamma$
+  याला 4r$\Diamond$ लावून शाखा विस्तारित केली:
+  \iftag{probDiamond}{सरावासाठी.}{शाखेवर
+    $\sFmla{\False}{\Diamond!B}[\sigma]$ हे नवे
+    !!{signed
+      formula} मिळते. $\mSat{M}{\Gamma}[f]$
+    असे समजू; विशेषतः $\mSat/{M}{\Diamond
+      !B}[f(\sigma.n)]$.
+    $f$ हे शाखेवरील पूर्वचिन्हांचे
+    $\mModel{M}$ मधील अर्थनिर्धारण असल्याने
+    $Rf(\sigma)f(\sigma.n)$.
+    आता $Rf(\sigma)w$ होईल असे कोणतेही
+    जग~$w$ घ्या. $R$ युक्लिडी असल्याने
+    $Rf(\sigma.n)w$.
+    $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$
+    असल्याने $\mSat/{M}{!B}[w]$.
+    म्हणून $\mSat/{M}{\Diamond !B}[f(\sigma)]$;
+    आणि $\mModel{M}, f$ हे
+    $\sFmla{\False}{\Diamond !B}[\sigma]$ पूर्ण करते.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-4r} चा पुरावा पूर्ण करा.
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:soundness-logics}
+\olref[mru]{tab:logics-rules} मध्ये दिलेल्या
+!!{tableau} पद्धती त्यांच्या संबंधित
+प्रतिमानवर्गांसाठी निर्दोष आहेत.
+\end{cor}
+
+\end{document}
