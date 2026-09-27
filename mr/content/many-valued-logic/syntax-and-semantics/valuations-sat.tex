@@ -1,0 +1,52 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: valuations-sat
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{val}
+
+\olsection{\usetoken{P}{valuation} आणि पूर्ति}
+
+\begin{defn}[!!^{valuation}s]
+$V$ हा सत्यतामूल्यांचा संच असू द्या. $\Lang{L}$ साठी~$V$
+मध्ये जाणारे \emph{!!{valuation}} म्हणजे भाषेतील
+!!{propositional variable}s ना~$V$ मधील !!a{element} नेमून
+देणारे फलन~$\pAssign{v}$ होय; म्हणजेच
+$\pAssign{v} \colon \PVar \to V$.
+\end{defn}
+
+\begin{defn}\ollabel{defn:pValue}
+  बहुमूल्य तर्कशास्त्र~$\Log L$ च्या सत्यतामूल्यांच्या~$V$
+  संचात जाणारे !!a{valuation}~$\pAssign{v}$ दिले असता,
+  मूल्यन फलन $\pValue{v} \colon \Frm[L] \to V$
+  पुढीलप्रमाणे विगमनाने परिभाषित करतो:
+  \begin{enumerate}
+    \item $\pValue{v}(\Obj p_n) = \pAssign{v}(\Obj p_n)$;
+    \item $\star$ हा $0$-स्थानी संयोजक असेल, तर
+    $\pValue{v}(\star)  = \tf{\star}[\Log L]$;
+    \item $\star$ हा $n$-स्थानी संयोजक असेल, तर
+    \[
+      \pValue{v}(\star(!A_1, \dots, !A_n)) = \tf{\star}[\Log L]
+      (\pValue{v}(!A_1), \dots, \pValue{v}(!A_n)).
+    \]
+  \end{enumerate}
+\end{defn}
+
+\begin{defn}[पूर्ति]
+\ollabel{defn:satisfaction} !!{formula}~$!A$ ची
+  !!a{valuation}~$\pAssign{v}$ ने \emph{पूर्ति होते},
+  $\pSat{v}{!A}[\Log L]$, तेव्हा आणि तेव्हाच जेव्हा
+  $\pValue{v}(!A)[\Log L] \in V^+$; येथे $V^+$ हा
+  तर्कशास्त्र~$\Log L$ मधील निर्दिष्ट सत्यतामूल्यांचा संच आहे.
+
+  ``$\pSat{v}{!A}[\Log L]$ नाही'' हे दर्शवण्यासाठी आपण
+  $\pSat/{v}{!A}[\Log L]$ असे लिहितो. $\Gamma$ हा
+  !!{formula}s चा संच असेल, तर $\pSat{v}{\Gamma}[\Log L]$
+  तेव्हा आणि तेव्हाच जेव्हा प्रत्येक~$!A \in \Gamma$ साठी
+  $\pSat{v}{!A}[\Log L]$.
+\end{defn}
+
+\end{document}
