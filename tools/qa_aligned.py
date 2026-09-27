@@ -1101,6 +1101,16 @@ _DOCUMENTED_PROJECTIONS = {
         # formula metavariable B as the announcement grammar.
         (r'$[!A] !B$', r'$[!A]B$'),
     ],
+    'OLP-0495': [
+        # OLINC-214: the curried construction's codomain is formula !C.
+        (r'ही स्वतः फलन आहे: $!A \land !B$ च्या रचनांपासून' + '\n'
+         + r'$!C$ च्या रचनांकडे जाणारे.',
+         r'ही स्वतः फलन आहे: $!A \land !B$ च्या रचनांपासून' + '\n'
+         + r'$C$ च्या रचनांकडे जाणारे.'),
+        # OLINC-215: the left disjunction injection retains its input M_1.
+        (r'ते $M_1$ ला $\tuple{1, M_1}$ कडे नेते.',
+         r'ते $M_1$ ला $\tuple{1, M_2}$ कडे नेते.'),
+    ],
 }
 
 
