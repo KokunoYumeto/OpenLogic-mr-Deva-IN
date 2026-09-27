@@ -705,6 +705,12 @@ _DOCUMENTED_PROJECTIONS = {
         (r'म्हणजे \ext{} नियमाने', r'म्हणजे $ext$ नियमाने'),
         (r'$\equal[\ext]$ मध्ये', r'$\equal[ext]$ मध्ये'),
     ],
+    'OLP-0368': [
+        # OLINC-103: the source proof names undefined P and Q where
+        # the boundary paths end at P_m and Q_n.
+        (r'$N_{m,0}$ हे $P_m$ आणि $N_{0,n}$ हे $Q_n$ आहे.',
+         r'$N_{m,0}$ हे $P$ आणि $N_{0,n}$ हे $Q$ आहे.'),
+    ],
 }
 
 
