@@ -866,6 +866,12 @@ _DOCUMENTED_PROJECTIONS = {
         (r"\mModel{M'} =" + '\n' + r"  \tuple{W', R', V'}$",
          r"\mModel{M'} =" + '\n' + r"  \{W', R', V'\}$"),
     ],
+    'OLP-0423': [
+        # OLINC-157: evaluate Box A at the chosen world in the D proof.
+        (r'$\mSat{M}{\Box !A}[w]$', r'$\mSat{M}{\Box !A}$'),
+        # OLINC-158: close the parenthetical outside the valuation math.
+        (r'$V(q) = \emptyset$)', r'$V(q) = \emptyset)$'),
+    ],
 }
 
 
