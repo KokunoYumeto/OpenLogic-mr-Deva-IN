@@ -611,6 +611,13 @@ _DOCUMENTED_PROJECTIONS = {
         (r"\lforall[w][u(w')=u" + '\n' + r" (w)']",
          r"\lforall[w][u(x')=u" + '\n' + r" (x)']"),
     ],
+    'OLP-0334': [
+        # OLINC-064: the source reuses the earlier undecidability label.
+        (r'\ollabel{thm:sol-not-compact}',
+         r'\ollabel{thm:sol-undecidable}'),
+        # OLINC-065: the finite bound applies to Gamma_0, not all Gamma.
+        (r'!A^{\ge n} \in \Gamma_0', r'!A^{\ge n} \in \Gamma'),
+    ],
 }
 
 

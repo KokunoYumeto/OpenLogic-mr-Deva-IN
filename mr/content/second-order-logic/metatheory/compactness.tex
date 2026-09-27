@@ -1,0 +1,79 @@
+% Part: second-order-logic
+% Chapter: metatheory
+% Section: compactness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{met}{com}
+
+\olsection{द्वितीय-क्रम तर्कशास्त्र संहत नाही}
+
+\begin{explain}
+वाक्यांचा संच~$\Gamma$ याचा प्रत्येक सांत उपसंच
+पूर्ततायोग्य असेल, तर त्याला \emph{सांततः पूर्ततायोग्य}
+म्हणतो. प्रथम-क्रम तर्कशास्त्राचा असा गुणधर्म आहे की
+!!{sentence}s चा संच~$\Gamma$ सांततः पूर्ततायोग्य
+असेल, तर तो पूर्ततायोग्य असतो. या गुणधर्माला
+\emph{संहतता} म्हणतात. याचे परिणाम-संबंध वापरणारे
+समतुल्य रूप असे: $\Gamma \Entails !A$ असेल,
+तर काही सांत उपसंच~$\Gamma_0 \subseteq \Gamma$
+यासाठी आधीच $\Gamma_0 \Entails
+!A$ असते. या रूपात हा संपूर्णता प्रमेयाचा थेट
+परिणाम आहे: $\Gamma \Entails !A$ असेल, तर
+संपूर्णतेमुळे $\Gamma \Proves !A$. पण
+!!{derivation} मध्ये~$\Gamma$ मधील सांत
+संख्येनेच !!{sentence}s वापरता येतात.
+
+द्वितीय-क्रम तर्कशास्त्रासाठी संहतता लागू होत नाही.
+द्वितीय-क्रम !!{sentence}s चे असे संच आहेत की ते
+सांततः पूर्ततायोग्य असतात, पण पूर्ततायोग्य नसतात;
+आणि ते एखाद्या~$!A$ चे परिणाम देतात, पण त्यांचा
+कोणताही सांत उपसंच त्या~$!A$ चे परिणाम देत नाही.
+\end{explain}
+
+
+\begin{thm}
+\ollabel{thm:sol-not-compact}
+द्वितीय-क्रम तर्कशास्त्र संहत नाही.
+\end{thm}
+
+\begin{proof}
+हे आठवा:
+\[
+\fn{Inf} \ident \lexists[u][(\lforall[x][\lforall[y][(\eq[u(x)][u(y)]
+      \lif \eq[x][y])]] \land \lexists[y][\lforall[x][\eq/[y][u(x)]]])]
+\]
+!!a{structure} चा प्रांत अनंत असेल, जर आणि फक्त जर
+तिच्यात या सूत्राची पूर्ति होते. प्रांतात किमान
+$n$ !!{element}s आहेत, असे सांगणारे वाक्य
+$!A^{\ge n}$ असो; उदाहरणार्थ,
+\[
+!A^{\ge n} \ident \lexists[x_1][\dots\lexists[x_n][(\eq/[x_1][x_2]
+    \land \eq/[x_1][x_3] \land \dots \land \eq/[x_{n-1}][x_n])]].
+\]
+!!{sentence}s चा पुढील संच पाहू:
+\[
+\Gamma = \{\lnot \fn{Inf}, !A^{\ge 1}, !A^{\ge 2}, !A^{\ge 3}, \dots\}.
+\]
+तो सांततः पूर्ततायोग्य आहे: कोणताही सांत उपसंच~$\Gamma_0
+\subseteq \Gamma$ घेतल्यास असा $k$ निवडता येतो की
+$!A^{\ge k} \in \Gamma$ असते, पण $n>k$ साठी
+कोणतेही $!A^{\ge n} \in \Gamma_0$ नसते.
+$\Domain{M}$ मध्ये $k$ !!{element}s असतील, तर
+$\Sat{M}{\Gamma_0}$. मात्र $\Gamma$ पूर्ततायोग्य
+नाही: $\Sat{M}{\lnot \fn{Inf}}$ असेल, तर
+$\Domain{M}$ सांत असला पाहिजे; समजा त्याचा
+आकार~$k$ आहे. मग $\Sat/{M}{!A^{\ge k+1}}$.
+\end{proof}
+
+\begin{prob}
+संच~$\Gamma$ आणि !!a{sentence}~$!A$ यांचे असे
+उदाहरण द्या की $\Gamma \Entails !A$, पण प्रत्येक
+सांत उपसंच~$\Gamma_0 \subseteq
+\Gamma$ साठी $\Gamma_0 \Entails/ !A$.
+\end{prob}
+
+
+\end{document}
