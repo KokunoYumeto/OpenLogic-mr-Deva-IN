@@ -1257,6 +1257,18 @@ _DOCUMENTED_PROJECTIONS = {
         (r'((N\text{ संक्रमक आहे})^M \land (\theta^N)^M)',
          r'((N\text{ संक्रमक आहे})^N \land (\theta^N)^M)'),
     ],
+    'OLP-0576': [
+        # OLINC-255: an order relation on D contains pairs from D x D.
+        (r'\Setabs{\tuple{x,y}\in (\alpha\disjointsum\beta)\times(\alpha\disjointsum\beta)}{x \rlexless y}',
+         r'\Setabs{\tuple{x,y}\in \alpha\disjointsum\beta}{x \rlexless y}'),
+        # OLINC-256: the expanded disjoint sum is an ordinary union of
+        # two tagged products, not another disjoint-sum operation.
+        (r'(\alpha \times \{0\})' + '\n' + r'\cup (\{0\} \times \{1\})',
+         r'(\alpha \times \{0\})' + '\n' + r'\disjointsum (\{0\} \times \{1\})'),
+        # OLINC-257: the empty first factor gives 0, not singleton {0}.
+        (r'\ordtype{(\alpha \times \{0\}) \cup 0, \rlexless}',
+         r'\ordtype{(\alpha \times \{0\}) \cup \{0\}, \rlexless}'),
+    ],
 }
 
 

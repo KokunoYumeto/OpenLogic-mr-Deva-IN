@@ -1,0 +1,156 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{add}
+\olsection{क्रमसूचक बेरीज}
+
+समजा आपल्याला $\alpha$ आणि $\beta$ यांची बेरीज करायची आहे. $\alpha$ च्या एका {प्रतीनंतर} लगेच $\beta$ ची एक प्रत ठेवता येईल. (येथे \emph{प्रती} घ्याव्या लागतात; कारण \olref[ordinals][basic]{ordinalsaresubsets} वरून $\alpha \subseteq \beta$ किंवा $\beta \subseteq \alpha$ यांपैकी एक खरे असते.) याचा सहज अर्थ असा की आधी $\alpha$-लांबीचा पायऱ्यांचा अनुक्रम पार करायचा आणि \emph{त्यानंतर} $\beta$-लांबीचा अनुक्रम पार करायचा. मिळालेला अनुक्रम सुक्रमित असेल; म्हणून \olref[ordinals][ordtype]{thmOrdinalRepresentation} नुसार तो एका (अद्वितीय) क्रमसूचक संख्येशी समरूप असेल. त्या क्रमसूचक संख्येला $\alpha$ आणि $\beta$ यांची \emph{बेरीज} मानता येईल.
+
+क्रमसूचक बेरीजेमागील सहज कल्पना ही आहे. तिची काटेकोर व्याख्या करण्यासाठी संचांच्या \emph{प्रती} घेण्याच्या कल्पनेपासून सुरुवात करू. कोणती वस्तू कुठून आली हे ओळखण्यासाठी $0$ आणि $1$ या मनमानी खूणा वापरायच्या:
+
+\begin{defn}\ollabel{defdissum}
+$A$ आणि $B$ यांची \emph{विभक्त बेरीज} म्हणजे $A \disjointsum B = (A\times
+\{0\}) \cup (B \times \{1\})$.
+\end{defn}
+
+यानंतर क्रमसूचक संख्यांच्या जोड्यांवर क्रम परिभाषित करू:
+
+\begin{defn}
+कोणत्याही क्रमसूचक संख्या $\alpha_1, \alpha_2, \beta_1, \beta_2$ यांच्यासाठी पुढीलप्रमाणे म्हणू:
+\begin{align*}
+  \tuple{\alpha_1, \alpha_2} \rlexless \tuple{\beta_1, \beta_2}\text{ तेव्हा आणि केवळ तेव्हाच }&
+  \text{एकतर $\alpha_2 \in \beta_2$}\\
+  & \text{किंवा $\alpha_2 = \beta_2$ आणि $\alpha_1 \in \beta_1$ या दोन्ही अटी}
+\end{align*}
+\end{defn}
+
+हा \emph{उलट शब्दकोशीय} क्रम आहे; कारण आधी दुसऱ्या घटकानुसार आणि मग पहिल्या घटकानुसार क्रम लावला जातो. आता $\alpha$ ची प्रत आणि तिच्यानंतर $\beta$ ची प्रत घेतल्यावर मिळणारा क्रमप्रकार म्हणजे $\alpha \ordplus \beta$ अशी व्याख्या आपल्याला करायची होती, हे आठवा. त्यासाठी पुढील व्याख्या करू:
+
+\begin{defn}\ollabel{defordplus}
+कोणत्याही क्रमसूचक संख्या $\alpha$, $\beta$ यांची बेरीज म्हणजे $\alpha \ordplus
+\beta = \ordtype{\alpha \disjointsum \beta, \rlexless}$.
+\end{defn}
+\noindent
+येथे आपण लेखनाचा किंचित सैल वापर केला आहे. काटेकोरपणे “$\rlexless$” ऐवजी “$\Setabs{\tuple{x,y}\in (\alpha\disjointsum\beta)\times(\alpha\disjointsum\beta)}{x \rlexless y}$” असे लिहायला हवे. तरी संक्षेपासाठी पुढेही हा सैल वापर करू.
+
+पुढील निष्कर्ष आणि \olref[ordinals][ordtype]{thmOrdinalRepresentation} मिळून आपली व्याख्या नीट ठरते याची खात्री देतात:
+
+\begin{lem}\ollabel{ordsumlessiswo}
+कोणत्याही क्रमसूचक संख्या $\alpha$ आणि $\beta$ यांच्यासाठी $\tuple{\alpha \disjointsum \beta, \rlexless}$ हे सुक्रमण आहे.
+\end{lem}
+
+\begin{proof}
+$\alpha \disjointsum \beta$ वर $\rlexless$ हा संबंध संयोजित आहे, हे स्पष्ट आहे. तो सुस्थापित आहे हे दाखवण्यासाठी रिकामा नसलेला $X \subseteq \alpha
+\disjointsum \beta$ निश्चित करा. $X$ मधील ज्या घटकांचा दुसरा निर्देशांक शक्य तितका लहान आहे त्यांचा उपसंच $Y$ असू द्या; म्हणजे $Y = \Setabs{\tuple{\gamma, i} \in X}{(\forall \tuple{\delta, j} \in X)i \leq j}$. आता $Y$ मधील सर्वांत लहान पहिला निर्देशांक असलेला घटक निवडा.
+\end{proof}
+\noindent
+अशा रीतीने क्रमसूचक बेरीजची एक नीट आणि स्पष्ट व्याख्या मिळाली. आता एक अपेक्षित निष्कर्ष पाहू (\olref[z][infinity-again]{defnomega} नुसार $1 = \{0\}$ हे आठवा):
+\begin{prop}
+कोणत्याही क्रमसूचक संख्या $\alpha$ साठी $\alpha \ordplus  1 = \ordsucc{\alpha}$.
+\end{prop}
+
+\begin{proof}
+$\ordsucc{\alpha} = \alpha \cup
+\{\alpha\}$ पासून $\alpha\disjointsum1 = (\alpha \times \{0\})
+\cup (\{0\} \times \{1\})$ कडे जाणारे समरूपण $f$ पाहा: $\gamma \in \alpha$ साठी $f(\gamma) =
+\tuple{\gamma, 0}$, आणि $f(\alpha) = \tuple{0,
+1}$.
+\end{proof}
+\noindent
+शिवाय, बेरीज पुढील पुनरावर्ती अटी पूर्ण करते हे सहज दाखवता येते:
+
+\begin{lem}\ollabel{ordadditionrecursion}
+कोणत्याही क्रमसूचक संख्या $\alpha, \beta$ यांच्यासाठी:
+\begin{align*}
+  \alpha\ordplus 0 &= \alpha\\
+  \alpha \ordplus  (\beta\ordplus 1) &= (\alpha \ordplus  \beta) \ordplus  1\\
+  \alpha  \ordplus  \beta &= \supstrict_{\delta < \beta}(\alpha \ordplus  \delta) && \text{जर $\beta $ सीमा क्रमसूचक संख्या असेल तर}
+\end{align*}
+\end{lem}
+
+\begin{proof}
+प्रत्येक प्रकरण तपासू. प्रथम:
+\begin{align*}
+  \alpha \ordplus  0
+  & = \ordtype{(\alpha \times \{0\}) \cup (0 \times \{1\}), \rlexless} \\
+  &= \ordtype{(\alpha \times \{0\}) \cup 0, \rlexless}\\
+  &= \alpha\\
+  \alpha \ordplus (\beta \ordplus  1)
+  %&= \ordtype{(\alpha\times \{0\}) \cup (\ordtype{\beta \ordplus  1}\times \{1\}), \rlexless} \\
+  &= \ordtype{(\alpha\times \{0\}) \cup (\ordsucc{\beta}\times \{1\}), \rlexless} \\
+  &= \ordtype{(\alpha\times \{0\}) \cup (\beta \times \{1\}), \rlexless} \ordplus 1\\
+  &= (\alpha \ordplus  \beta) \ordplus  1
+\end{align*}
+आता $\beta \neq \emptyset$ ही सीमा क्रमसूचक संख्या असू द्या. $\delta < \beta$ असेल, तर $\delta\ordplus 1 < \beta$ सुद्धा; म्हणून $\alpha \ordplus  \delta$ हा $\alpha \ordplus  \beta$ चा उचित आरंभीचा खंड आहे. त्यामुळे $\alpha
+\ordplus  \beta$ हा $X = \Setabs{\alpha
+\ordplus  \delta}{\delta < \beta}$ चा काटेकोर ऊर्ध्वबंध आहे. शिवाय, $\alpha \leq \gamma <
+\alpha \ordplus  \beta$ असेल, तर काही $\delta < \beta$ साठी $\gamma = \alpha \ordplus
+\delta$ असते, हे स्पष्ट आहे. म्हणून $\alpha \ordplus  \beta =
+\supstrict_{\delta< \beta}(\alpha\ordplus \delta)$.
+\end{proof}
+
+पण आता एक लक्षवेधी बाब आहे. क्रमसूचक बेरीज परिभाषित करण्यासाठी आपण \emph{त्याऐवजी} अनंतपार पुनरावर्तनाचे प्रमेय थेट वापरू शकलो असतो आणि \olref{ordadditionrecursion} मध्ये दिलेलीच पुनरावर्तन समीकरणे मांडू शकलो असतो (फक्त “$\beta \ordplus 1$” ऐवजी “$\ordsucc{\beta}$” वापरून).
+
+म्हणून क्रमसूचक संख्यांवरील क्रिया परिभाषित करण्याचे दोन मार्ग आहेत. सुक्रमित संच स्पष्टपणे रचून त्याचा क्रमप्रकार घेता येतो; ही \emph{संश्लेषणात्मक} पद्धत. किंवा केवळ पुनरावर्तन समीकरणे देऊन \emph{पुनरावर्ती} पद्धतीने व्याख्या करता येते. योग्य रीतीने केल्यास दोन्हींचा निष्कर्ष मात्र एकच असतो. कारण \olref[ordinals][ordtype]{thmOrdinalRepresentation} नुसार या पुनरावर्तन समीकरणांनी \emph{अद्वितीय} क्रमसूचक संख्या ठरतात.
+
+अनेक बाबतींत क्रमसूचक अंकगणित नैसर्गिक संख्यांच्या बेरीजेसारखेच वागते. उदाहरणार्थ, पुढील निष्कर्ष सिद्ध करता येतो:
+
+\begin{lem}\ollabel{ordinaladditionisnice}
+$\alpha, \beta, \gamma$ या क्रमसूचक संख्या असतील, तर:
+\begin{enumerate}
+  \item\ollabel{ordaddition1} $\beta < \gamma$ असेल, तर $\alpha
+  \ordplus  \beta < \alpha \ordplus  \gamma$
+  \item\ollabel{ordaddition2} $\alpha \ordplus  \beta =
+  \alpha\ordplus \gamma$ असेल, तर $\beta = \gamma$
+  \item\ollabel{ordaddition3} $\alpha \ordplus  (\beta \ordplus
+  \gamma) = (\alpha \ordplus  \beta) \ordplus  \gamma$; म्हणजे बेरीज सहचारी आहे
+  \item\ollabel{ordaddition4} $\alpha \leq \beta$ असेल, तर $\alpha
+  \ordplus  \gamma \leq \beta \ordplus \gamma$
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+इतर विधाने सरावासाठी ठेवून \olref{ordaddition3} सिद्ध करू. \olref{ordadditionrecursion} वापरून $\gamma$ वर साध्या अनंतपार विगमनाने पुरावा देऊ. $\gamma = 0$ असेल, तर:
+\[
+(\alpha \ordplus  \beta) \ordplus  0 = \alpha \ordplus  \beta  = \alpha \ordplus  (\beta \ordplus  0)
+\]
+$\gamma = \delta\ordplus 1$ असेल, तर विगमनगृहीतक म्हणून $(\alpha
+\ordplus  \beta) \ordplus  \delta = \alpha \ordplus  (\beta \ordplus
+\delta)$ मानू. आता \olref{ordadditionrecursion} तीनदा वापरल्यास:
+\begin{align*}
+  (\alpha \ordplus  \beta) \ordplus  (\delta \ordplus  1) & = ((\alpha \ordplus  \beta) \ordplus  \delta)\ordplus 1\\
+  & = (\alpha \ordplus  (\beta \ordplus  \delta)) \ordplus  1\\
+  & = \alpha \ordplus  ((\beta \ordplus  \delta)\ordplus 1)\\
+  & = \alpha \ordplus  (\beta \ordplus  (\delta\ordplus 1))
+\end{align*}
+$\gamma$ ही सीमा क्रमसूचक संख्या असेल, तर प्रत्येक $\delta \in \gamma$ साठी $(\alpha \ordplus  \beta) \ordplus  \delta =
+\alpha \ordplus  (\beta \ordplus  \delta)$ असे विगमनगृहीतक मानू. मग:
+\begin{align*}
+  (\alpha \ordplus  \beta) \ordplus  \gamma & = \supstrict_{\delta < \gamma}((\alpha \ordplus  \beta) \ordplus  \delta) \\
+  &= \supstrict_{\delta < \gamma}(\alpha \ordplus  (\beta \ordplus  \delta))\\
+  &= \alpha \ordplus  \supstrict_{\delta < \gamma}(\beta \ordplus  \delta)\\
+  & = \alpha \ordplus  (\beta \ordplus  \gamma)
+\end{align*}
+\end{proof}
+
+\begin{prob}
+\olref[sth][ord-arithmetic][add]{ordinaladditionisnice} मधील उर्वरित विधाने सिद्ध करा.
+\end{prob}
+
+या बाबतींत क्रमसूचक बेरीज परिचित वाटावी. पण एका अत्यंत महत्त्वाच्या बाबतीत ती नैसर्गिक संख्यांच्या बेरीजेसारखी \emph{नाही}.
+
+\begin{prop}\ollabel{ordsumnotcommute}
+क्रमसूचक बेरीज {क्रमनिरपेक्ष नाही}; $1 \ordplus  \omega = \omega <
+\omega \ordplus  1$.
+\end{prop}
+
+\begin{proof}
+$1 \ordplus  \omega = \supstrict_{n < \omega} (1 \ordplus n)
+= \omega \in \omega \cup \{\omega\} = \ordsucc{\omega} = \omega
+\ordplus  1$ हे लक्षात घ्या.
+\end{proof}
+\noindent
+सुरुवातीला आश्चर्य वाटू शकते; पण \emph{वाटायला नको}. एका बाजूला, $1 \ordplus  \omega$ पाहताना आपण सर्व नैसर्गिक संख्यांच्या \emph{आधी} एक जादा घटक ठेवून मिळणाऱ्या क्रमप्रकाराचा विचार करतो. \olref[sfr][infinite][hilbert]{sec} मधील हिल्बर्टच्या हॉटेलप्रमाणे विचार केल्यास, सहज अर्थाने या जादा पहिल्या घटकामुळे एकूण क्रमप्रकारात फरक पडू नये. दुसऱ्या बाजूला, $\omega \ordplus  1$ पाहताना आपण सर्व नैसर्गिक संख्यांच्या \emph{नंतर} एक जादा घटक ठेवून मिळणाऱ्या क्रमप्रकाराचा विचार करतो. आणि तो अगदीच वेगळा प्रकार आहे!
+
+\end{document}
