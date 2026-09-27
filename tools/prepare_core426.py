@@ -41,9 +41,12 @@ base = base.replace(
     1,
 )
 assert r"\newcommand{\ST}" not in base
+assert r"\newcommand{\strictif}" not in base
 base = base.replace(
     r"\begin{document}",
-    r"\newcommand{\ST}{\mathord{\mathrm{ST}}}" + "\n" + r"\begin{document}",
+    r"\newcommand{\ST}{\mathord{\mathrm{ST}}}" + "\n"
+    + r"\newcommand{\strictif}{\fishhookright}" + "\n"
+    + r"\begin{document}",
     1,
 )
 
