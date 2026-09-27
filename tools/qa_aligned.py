@@ -1086,6 +1086,11 @@ _DOCUMENTED_PROJECTIONS = {
         # the same future operator as its preceding list and semantics.
         (r'$\Ftemp !A$', r'$F !A$'),
     ],
+    'OLP-0488': [
+        # OLINC-211: both agent quantifiers in the bisimulation
+        # definition range over the chapter's agent-symbol set G.
+        (r'$a \in G$', r'$a \in A$'),
+    ],
 }
 
 
