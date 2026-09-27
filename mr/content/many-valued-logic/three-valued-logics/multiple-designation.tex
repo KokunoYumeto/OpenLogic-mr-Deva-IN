@@ -1,0 +1,230 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: multiple-designation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{thr}{mul}
+
+\olsection{$\True$ व्यतिरिक्तही मूल्य निर्दिष्ट करणे}
+
+आतापर्यंत पाहिलेल्या सर्व तर्कशास्त्रांत निर्दिष्ट
+सत्यतामूल्यांचा संच $V^+ = \{\True\}$ होता; म्हणजे एखाद्या
+विधानाचे सत्यतामूल्य~$\True$ असेल तेव्हाच ते सत्य मानले जाई.
+पण एखादे विधान फक्त~$\False$ नसले, तरी ते सत्य मानता येईल.
+अशा वेळी, उदाहरणार्थ, मॅट्रिक्समध्ये
+$V^+ = \{\True, \Undef\}$ असे ठरवून तर्कशास्त्र मिळेल.
+
+\begin{defn}
+\emph{विरोधापत्तीचे तर्कशास्त्र}~$\LogLP$ पुढील मॅट्रिक्सने
+परिभाषित होते:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+  \item $\True$ आणि $\Undef$ निर्दिष्ट आहेत, म्हणजे $V^+ = \{\True, \Undef\}$.
+  \item सत्यता-फलने प्रबळ क्लिनी तर्कशास्त्रातील फलनांसारखीच आहेत.
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+Halld\'en यांचे \emph{निरर्थकतेचे तर्कशास्त्र}~$\LogHal$
+पुढील मॅट्रिक्सने परिभाषित होते:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ आणि $1$-स्थानी
+  संयोजक~$+$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+  \item $\True$ आणि $\Undef$ निर्दिष्ट आहेत, म्हणजे $V^+ = \{\True, \Undef\}$.
+  \item सत्यता-फलने दुर्बल क्लिनी तर्कशास्त्रातील फलनांसारखीच
+  आहेत; त्याखेरीज ``अर्थहीन आहे'' हा परिकर्मी आहे:
+  \begin{center}
+    \begin{tabular}{c|c}
+    $\tf{+}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+
+यांची सत्यताकोष्टके क्लिनी तर्कशास्त्रांशी जुळतात; पण
+त्यांच्या विपरीत यांत सर्वतः सत्य सूत्रे \emph{आहेत}.
+
+\begin{prop}\ollabel{prop:LP-taut-CL} $\LogLP$ मधील सर्वतः सत्य
+  सूत्रे आणि अभिजात विधानीय तर्कशास्त्रातील सर्वतः सत्य सूत्रे
+  एकच आहेत.
+\end{prop}
+
+\begin{proof}
+  \olref[syn][sub]{prop:mvl-cl} नुसार $\Entails[\LogLP] !A$
+  असेल, तर $\Entails[\LogCL] !A$. उलट दिशा दाखवण्यासाठी
+  आपण सिद्ध करू की $\pValue v(!A)[\LogKs] = \False$ असेल असे
+  !!a{valuation}~$\pAssign v\colon \PVar \to \{\False, \True,
+  \Undef\}$ असल्यास $\pValue {v'}(!A)[\LogCL] = \False$
+  असे !!a{valuation}~$\pAssign {v'}\colon \PVar \to \{\False, \True\}$
+  असते. यावरून $\LogLP$ साठी अपेक्षित निष्कर्ष मिळतो. कारण
+  $\LogKs$ आणि $\LogLP$ यांची वैशिष्ट्यपूर्ण सत्यता-फलने
+  सारखीच आहेत आणि $\LogLP$ मध्ये फक्त $\False$ हेच मूल्य
+  निर्दिष्ट नाही ($\LogLP$ आणि~$\LogKs$ यांतील तोच एक फरक
+  आहे). म्हणून $\Entails/[\LogLP] !A$ असेल, तर कोणत्यातरी
+  !!{valuation}~$\pAssign v$ साठी $\pValue v(!A)[\LogLP] = \pValue
+  v[\LogKs](!A) = \False$. सिद्ध करावयाच्या विधानानुसार
+  $\pValue{v'}[\LogCL](!A) = \False$, म्हणजे $\Entails/[\LogCL] !A$.
+
+  हे सिद्ध करण्यासाठी आधी $\pAssign {v'}$ ची व्याख्या अशी करू:
+  \[
+    \pAssign {v'}(p) =
+    \begin{cases}
+    \True & \text{जर } \pAssign {v}(p) \in \{\True, \Undef\}\\
+    \False & \text{इतर वेळी}
+  \end{cases}
+  \]
+  आता $!A$ वरील आगमनाने दाखवू की (a)~$\pValue v(!A)[\LogKs]
+  = \False$ असेल, तर $\pValue {v'}(!A)[\LogCL] = \False$;
+  आणि (b)~$\pValue v(!A)[\LogKs] = \True$ असेल, तर
+  $\pValue {v'}(!A)[\LogCL] = \True$.
+  \begin{enumerate}
+    \item आगमनाचा आधार: $!A \ident p$. (a) किंवा (b) चा
+    पूर्वपक्ष लागू असेल, तेव्हा मूळ मूल्य अनुक्रमे असत्य किंवा
+    सत्य असते; त्या प्रकरणांतच
+    \olref[syn][val]{defn:pValue} नुसार $\pValue v(!A)[\LogKs]
+    = \pAssign v(p) = \pValue {v'}(!A)[\LogCL]$ ही समानता
+    मिळते, आणि त्यावरून (a) व~(b) दोन्ही सिद्ध होतात.
+
+    आगमनाच्या पायरीसाठी पुढील प्रकरणे पाहू:
+    \item $!A \ident \lnot !B$.
+    \begin{enumerate}
+      \item $\pValue v(\lnot!B)[\LogKs] = \False$ असे समजा.
+      $\tf{\lnot}[\LogKs]$ च्या व्याख्येनुसार
+      $\pValue v(!B)[\LogKs]  = \True$. आगमन गृहितकातील
+      प्रकरण~(b) नुसार $\pValue {v'}(!B)[\LogCL]  = \True$;
+      म्हणून $\pValue {v'}(\lnot !B)[\LogCL] = \False$.
+      \item $\pValue v(\lnot!B)[\LogKs] = \True$ असे समजा.
+      $\tf{\lnot}[\LogKs]$ च्या व्याख्येनुसार
+      $\pValue v(!B)[\LogKs]  = \False$. आगमन गृहितकातील
+      प्रकरण~(a) नुसार $\pValue {v'}(!B)[\LogCL]  = \False$;
+      म्हणून $\pValue {v'}(\lnot !B)[\LogCL] = \True$.
+    \end{enumerate}
+
+    \item $!A \ident (!B \land !C)$.
+    \begin{enumerate}
+      \item $\pValue v(!B \land !C)[\LogKs] = \False$ असे समजा.
+      $\tf{\land}[\LogKs]$ च्या व्याख्येनुसार
+      $\pValue v(!B)[\LogKs]  = \False$ किंवा
+      $\pValue v(!C)[\LogKs]  = \False$. आगमन गृहितकातील
+      प्रकरण~(a) नुसार $\pValue {v'}(!B)[\LogCL]  = \False$
+      किंवा $\pValue {v'}(!C)[\LogCL]  = \False$;
+      म्हणून $\pValue {v'}(!B \land !C)[\LogCL] = \False$.
+      \item $\pValue v(!B \land !C)[\LogKs] = \True$ असे समजा.
+      $\tf{\land}[\LogKs]$ च्या व्याख्येनुसार
+      $\pValue v(!B)[\LogKs]  = \True$ आणि
+      $\pValue v(!C)[\LogKs]  = \True$. आगमन गृहितकातील
+      प्रकरण~(b) नुसार $\pValue {v'}(!B)[\LogCL]  = \True$
+      आणि $\pValue {v'}(!C)[\LogCL]  = \True$;
+      म्हणून $\pValue {v'}(!B \land !C)[\LogCL] = \True$.
+    \end{enumerate}
+  \end{enumerate}
+
+  उरलेली दोन प्रकरणे याच प्रकारची आहेत आणि सरावासाठी
+  सोडली आहेत. दुसरा मार्ग असा: वरील पुराव्याने फक्त $\lnot$
+  आणि~$\land$ असलेल्या सर्व !!{formula}s साठी निष्कर्ष
+  सिद्ध केला आहे. आता $\LogKs$ आणि $\LogCL$ या दोन्हींमध्ये
+  कोणत्याही $\pAssign v$ साठी $\pValue v(!B \lor
+  !C) = \pValue v(\lnot(\lnot!B \land \lnot !C))$ आणि $\pValue v(!B \lif
+  !C) = \pValue v(\lnot(!B \land \lnot !C))$ या समानता
+  वापरता येतात.
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][thr][mul]{prop:LP-taut-CL} चा पुरावा पूर्ण
+  करा; म्हणजे $!A \ident (!B \lor !C)$ आणि
+  $!A \ident (!B \lif !C)$ या प्रकरणांसाठी (a) व~(b)
+  सिद्ध करा.
+\end{prob}
+
+\begin{prob}
+प्रत्येक अभिजात सर्वतः सत्य सूत्र $\LogHal$ मध्येही
+सर्वतः सत्य आहे हे सिद्ध करा.
+\end{prob}
+
+यांची सर्वतः सत्य सूत्रे अभिजात तर्कशास्त्रासारखीच असली,
+तरी त्यांचे तार्किक निष्पन्नता संबंध वेगळे आहेत. उदाहरणार्थ,
+$\LogLP$ हे \emph{व्याघातसहिष्णु} आहे: त्यात
+$\lnot p, p \Entails/ q$. म्हणून
+$\lnot !A, !A \Entails !B$ हे स्फोटाचे तत्त्व सर्वसाधारणपणे
+लागू होत नाही. ($!A$ आणि $!B$ यांच्या काही प्रकरणांत
+ते लागू होते; उदाहरणार्थ, $!B$~हे सर्वतः सत्य सूत्र असेल तर.)
+
+\begin{prob}
+  पुढीलपैकी कोणते संबंध (a)~$\LogLP$ आणि (b)~$\LogHal$
+  मध्ये खरे ठरतात? प्रत्येकासाठी सत्यताकोष्टक द्या.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $\lnot q, p \lif q \Entails \lnot p$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $\lnot p, p \Entails q$
+    \item $p \Entails p \lor q$
+    \item $p \lif q, q\lif r \Entails p \lif r$
+  \end{enumerate}
+\end{prob}
+
+$\LogLuk[3]$ मध्ये $\Undef$ हे मूल्यही निर्दिष्ट मानल्यास
+काय होईल?
+
+\begin{defn}
+  \emph{त्रिमूल्य R-Mingle}~$\LogRM[3]$ हे तर्कशास्त्र पुढील
+  मॅट्रिक्सने परिभाषित होते:
+  \begin{enumerate}
+    \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+    \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+    \item $\True$ आणि $\Undef$ निर्दिष्ट आहेत, म्हणजे $V^+ = \{\True, \Undef\}$.
+    \item सत्यता-फलने \L ukasiewicz तर्कशास्त्र~$\LogLuk[3]$
+    मधील फलनांसारखीच आहेत.
+  \end{enumerate}
+\end{defn}
+
+\begin{prob}
+  पुढीलपैकी कोणते संबंध $\LogRM[3]$ मध्ये खरे ठरतात?
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $\lnot p, p \Entails q$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+निर्दिष्ट मूल्ये बदलल्यामुळे वेगवेगळी सत्यताकोष्टके कधी कधी
+एकच तर्कशास्त्र, म्हणजे एकच तार्किक निष्पन्नता संबंध, देऊ
+शकतात. उदाहरणार्थ, G\"odel तर्कशास्त्रात~$\{\True\}$ ऐवजी
+$V^+ = \{\True, \Undef\}$ घेतल्यास असे घडते.
+
+\begin{prop}\ollabel{prop:gl-udes}
+  $V = \{\False, \Undef,\True\}$,
+  $V^+=\{\True, \Undef\}$ आणि $3$-मूल्य G\"odel
+  तर्कशास्त्राची सत्यता-फलने असलेला मॅट्रिक्स अभिजात
+  तर्कशास्त्र परिभाषित करतो.
+\end{prop}
+
+\begin{proof}
+  सराव.
+\end{proof}
+
+\begin{prob}
+  G\"odel तर्कशास्त्राप्रमाणेच पण
+  $V^+=\{\True,\Undef\}$ घेऊन परिभाषित केलेल्या
+  तर्कशास्त्र~$\Log L$ साठी $\Gamma \Entails/[\Log L] !B$
+  असेल, तर $\Gamma \Entails/[\LogCL] !B$ हे दाखवून
+  \olref[mvl][thr][mul]{prop:gl-udes} सिद्ध करा.
+  \olref[mvl][thr][mul]{prop:LP-taut-CL} मधील कल्पना
+  वापरा; मात्र गुणधर्म (a) आणि~(b) सिद्ध करण्याऐवजी
+  $\pValue v(!A)[\LogGod] = \False$ तेव्हाच आणि तेव्हाच
+  $\pValue {v'}(!A)[\LogCL] = \False$ हे दाखवा (आणि म्हणून
+  $\pValue v(!A)[\LogGod] \in \{\True,\Undef\}$ तेव्हाच
+  आणि तेव्हाच $\pValue {v'}(!A)[\LogCL] = \True$).
+  यावरून विधान का सिद्ध होते ते स्पष्ट करा.
+\end{prob}
+
+\end{document}

@@ -802,6 +802,13 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$(\lnot p \land p) \lif q$',
          r'$(\lnot p \land p) \lif q)$'),
     ],
+    'OLP-0397': [
+        # OLINC-135/136: the second conjunct is C, not repeated B.
+        (r'$\pValue v(!C)[\LogKs]  = \False$',
+         r'$\pValue v(!B)[\LogKs]  = \False$'),
+        (r'$\pValue v(!C)[\LogKs]  = \True$',
+         r'$\pValue v(!B)[\LogKs]  = \True$'),
+    ],
 }
 
 
