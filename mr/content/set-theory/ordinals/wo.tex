@@ -1,0 +1,53 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{wo}
+\olsection{सुक्रमण}
+
+मूलभूत संकल्पना पुढीलप्रमाणे आहे:
+
+\begin{defn}
+$<$ हा संबंध $A$ ला \emph{सुक्रमित करतो}, जर पुढील दोन्ही अटी पूर्ण होत असतील:
+\begin{enumerate}
+\item $<$ हा जोडलेला असतो; म्हणजे सर्व $a, b \in A$ साठी $a < b$ किंवा $a = b$ किंवा $b < a$;
+\item $A$ च्या प्रत्येक रिकाम्या नसलेल्या उपसंचात $<$-लघुतम !!{element} असतो; म्हणजे $\emptyset \neq X \subseteq A$ असल्यास $(\exists m \in
+X)(\forall z \in X)z \nless m$.
+\end{enumerate}
+\end{defn}
+
+आपण नुकत्याच पाहिलेल्या तिन्ही उदाहरणांतील क्रमसंबंध सुक्रमणच करतात, हे सहज दिसते.
+
+\begin{prob}
+\Olref[sth][ordinals][idea]{sec} मध्ये नैसर्गिक संख्यांवरील तीन क्रमांची उदाहरणे दिली. प्रत्येक क्रम सुक्रमण आहे, हे तपासा.
+\end{prob}
+
+सुक्रमणाबद्दल काही प्राथमिक पण अत्यंत महत्त्वाची निरीक्षणे पाहू.
+
+\begin{prop}\ollabel{wo:strictorder}
+$<$ हा $A$ ला सुक्रमित करत असेल, तर $A$ च्या प्रत्येक रिकाम्या नसलेल्या उपसंचात एकमेव $<$-लघुतम सदस्य असतो; शिवाय $<$ हा अपरावर्ती, असममित आणि संक्रमक असतो.
+\end{prop}
+
+\begin{proof}
+$X$ हा $A$ चा रिकामा नसलेला उपसंच असेल, तर त्यात $<$-लघुतम !!{element} $m$ असतो; म्हणजे $(\forall z \in X)z \nless m$. $<$ जोडलेला असल्याने $(\forall z \in X)m \leq z$. म्हणून $m$ हा $X$ मधील $<$-लघुतम !!{element} आहे.
+
+अपरावर्तितेसाठी एखादा $a \in A$ निश्चित करू. $\{a\}$ चा $<$-लघुतम !!{element} $a$ असल्याने $a \nless a$. संक्रमकतेसाठी $a < b < c$ असेल, तर $\{a, b, c\}$ मध्ये $<$-लघुतम !!{element} असल्यामुळे $a < c$. अपरावर्तिता आणि संक्रमकता यांवरून असममिती मिळते.
+\end{proof}
+
+\begin{prop}\ollabel{propwoinduction}
+$<$ हा $A$ ला सुक्रमित करत असेल, तर कोणत्याही सूत्र $\phi(x)$ साठी:
+\[
+\text{जर }(\forall a \in A)((\forall b < a)\phi(b) \lif
+\phi(a))\text{, तर }(\forall a \in A)\phi(a).
+\]
+\end{prop}
+
+\begin{proof}
+प्रतिपक्ष सिद्ध करू. $\lnot(\forall a \in
+A)\phi(a)$, म्हणजे $X = \Setabs{x \in A}{\lnot\phi(x)} \neq
+\emptyset$, असे मानू. मग $X$ मध्ये $<$-लघुतम !!{element} $a$ असतो. म्हणून $(\forall
+b < a)\phi(b)$; पण $\lnot \phi(a)$.
+\end{proof}\noindent हा शेवटचा गुणधर्म नैसर्गिक संख्यांवरील प्रबल विगमनाच्या तत्त्वाची आठवण करून देतो: $(\forall n \in \omega)((\forall m < n)\phi(m)
+\lif \phi(n))$ असेल, तर $(\forall n \in \omega)\phi(n)$. त्यामुळे सुक्रमण ही फार \emph{भक्कम} संकल्पना ठरते.\footnote{आठवण: स्पष्टपणे अन्यथा सांगितले नसेल, तर सर्व सूत्रांत प्राचले असू शकतात.}
+
+\end{document}
