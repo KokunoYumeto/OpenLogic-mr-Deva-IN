@@ -1,0 +1,103 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{rank}
+\olsection{प्रतांक}
+
+आता टप्पे $V_\alpha$ यांच्या रूपात परिभाषित केले आहेत आणि प्रत्येक संच कोणत्या तरी टप्प्याचा उपसंच असतो हे आपल्याला माहीत आहे. त्यामुळे संचाचा \emph{प्रतांक} परिभाषित करता येतो. सहज अर्थाने, $A$ चा प्रतांक म्हणजे $A$ ज्या पहिल्या क्षणी तयार होतो तो क्षण. अधिक नेमकेपणाने:
+
+\begin{defn}\ollabel{defnsetrank}
+प्रत्येक संच $A$ साठी $\setrank{A}$ ही $A
+\subseteq V_\alpha$ पूर्ण करणारी लघुतम क्रमसूचक संख्या $\alpha$ असते.
+\end{defn}
+\begin{prop}\ollabel{ranksexist}
+	कोणत्याही $A$ साठी $\setrank{A}$ अस्तित्वात असतो.
+\end{prop}
+\begin{proof}
+	हा पुरावा सरावासाठी सोडला आहे.
+\end{proof}
+\begin{prob}
+	\olref[sth][spine][rank]{ranksexist} सिद्ध करा.
+\end{prob}
+\noindent
+प्रतांकांचे सुक्रमण आपल्याला काही महत्त्वाचे निष्कर्ष सिद्ध करू देते:
+\begin{prop}\ollabel{valphalowerrank}
+कोणत्याही क्रमसूचक संख्या $\alpha$ साठी $V_\alpha = \Setabs{x}{\setrank{x} \in \alpha}$.
+\end{prop}
+
+\begin{proof}
+$\setrank{x} \in \alpha$ असेल, तर $x \subseteq V_{\setrank{x}} \in
+V_\alpha$; म्हणून $V_\alpha$ उपसंच-समावेशक असल्याने $x \in V_\alpha$ (येथे \olref[Valphabasic]{Valphabasicprops} अनेकदा वापरले आहे). उलट, $x \in V_\alpha$ असेल, तर $x \subseteq V_\alpha$ आणि त्यामुळे $\setrank{x} \leq \alpha$. आता सुलभ अनंतपार विगमनाने समतेची शक्यता नाकारता येते: समता असेल, तर $x \notin V_\alpha$.
+\end{proof}
+\begin{prob}
+	\olref[sth][spine][rank]{valphalowerrank} मध्ये उल्लेखलेले सुलभ अनंतपार विगमन पूर्ण करा.
+\end{prob}
+
+\begin{prop}\ollabel{rankmemberslower}
+$B \in A$ असेल, तर $\setrank{B} \in \setrank{A}$.
+\end{prop}
+
+\begin{proof}
+\olref{valphalowerrank} वरून $A \subseteq V_{\setrank{A}} = \Setabs{x}{\setrank{x} \in
+\setrank{A}}$.
+\end{proof}
+\noindent
+याचा वापर करून \emph{सर्व संचांविषयी} विगमनाच्या एका प्रकाराने निष्कर्ष सिद्ध करता येतो:
+
+\begin{thm}[$\in$-विगमन रूपबंध]
+कोणत्याही सूत्र $\phi$ साठी:
+\[
+	\forall A((\forall x \in A)\phi(x) \lif \phi(A)) \lif \forall A \phi(A).
+\]
+\end{thm}
+
+\begin{proof}
+प्रतिपक्ष सिद्ध करू. $\lnot \forall A
+\phi(A)$ असे मानू. अनंतपार विगमनाने (\olref[ordinals][basic]{ordinductionschema}) $\phi$ पूर्ण न करणारा लघुतम संभाव्य प्रतांकाचा संच मिळतो; म्हणजे $\lnot \phi(A)$ आणि $\forall x(\setrank{x} \in \setrank{A}
+\lif \phi(x))$ पूर्ण करणारा एखादा $A$. आता $x \in A$ असेल, तर \olref{rankmemberslower} वरून $\setrank{x} \in
+\setrank{A}$; म्हणून $\phi(x)$. म्हणजे $(\forall x \in
+A)\phi(x) \land \lnot \phi(A)$.
+\end{proof}\noindent या सामर्थ्यवान निष्कर्षाचा अनौपचारिक अर्थ असा सांगता येईल: एखाद्या संचाचा प्रत्येक !!{element} $\phi$ पूर्ण करत असेल तेव्हा तो संचही $\phi$ पूर्ण करतो, तेव्हाच $\phi$ हा गुणधर्म \emph{आनुवंशिक} आहे असे म्हणू. मग $\in$-विगमन सांगते: $\phi$ आनुवंशिक असेल, तर प्रत्येक संच $\phi$ पूर्ण करतो.
+
+प्रतांकांवरील चर्चा (सध्या तरी) पूर्ण करण्यासाठी याआधी सूचित केलेले काही दावे सिद्ध करू.
+
+\begin{prop}\ollabel{ranksupstrict}
+$\setrank{A} = \supstrict_{x \in A}\setrank{x}$.
+\end{prop}
+
+\begin{proof}
+$\alpha = \supstrict_{x \in A}\setrank{x}$ ठेवू. \olref{rankmemberslower} वरून $\alpha \leq \setrank{A}$. पण $x \in A$ असेल, तर $\setrank{x} \in \alpha$; म्हणून \olref{valphalowerrank} वरून $x \in V_\alpha$. त्यामुळे $A
+\subseteq V_\alpha$, म्हणजे $\setrank{A} \leq \alpha$. म्हणून $\setrank{A} = \alpha$.
+\end{proof}
+
+\begin{cor}\ollabel{ordsetrankalpha}
+कोणत्याही क्रमसूचक संख्या $\alpha$ साठी $\setrank{\alpha} = \alpha$.
+\end{cor}
+
+\begin{proof}
+अनंतपार विगमनासाठी सर्व $\beta \in \alpha$ साठी $\setrank{\beta} = \beta$ असे मानू. आता \olref{ranksupstrict} वरून $\setrank{\alpha} = \supstrict_{\beta \in
+\alpha}\setrank{\beta} = \supstrict_{\beta \in \alpha}\beta = \alpha$.
+%	First note that $\setrank{\alpha} \neq \beta$ for any $\beta \in
+%	\alpha$. For otherwise we would have $\beta = \setrank{\beta} \in
+%	\setrank{\alpha} = \beta$ by \olref{rankmemberslower}, i.e.,
+%	$\beta \in \beta$, a contradiction.
+%
+%	Now note that $\alpha \subseteq V_\alpha$. For $\alpha =
+%	\Setabs{\beta}{\beta \in \alpha}$ by
+%	\olref[sfr][ordinals][basic]{ordissetofsmallerord}. And if
+%	$\beta \in \alpha$ then $\beta \subseteq V_{\setrank{\beta}} =
+%	V_\beta \in V_\alpha$, hence $\beta \in V_\alpha$, by
+%	\olref[sfr][spine][Valphabasic]{Valphabasicprops} twice.
+\end{proof}
+
+शेवटी, \olref[foundation]{sec} च्या अखेरीस सांगितलेला निष्कर्ष झटपट सिद्ध करू: $\ZFminus$ मध्ये $\emph{नियमितता} \Rightarrow \emph{पायाभूतता}$ हे सशर्त विधान सिद्ध होते. (या पुराव्यात ``प्रतांक'' ही संकल्पना आणि \olref{rankmemberslower} वापरता येतात. कारण विभागाच्या सुरुवातीला म्हटल्याप्रमाणे, ते $\ZFminus + \text{Regularity}$ मध्ये मांडता येतात.)
+
+\begin{prop}[$\ZFminus + \text{Regularity}$ मध्ये काम करताना]\ollabel{zfminusregularityfoundation} पायाभूतता लागू आहे.
+\end{prop}
+
+\begin{proof}
+$A \neq \emptyset$ निश्चित करू आणि त्या संचातील लघुतम संभाव्य प्रतांकाचा सदस्य $B \in A$ घेऊ. $c \in B$ असेल, तर \olref{rankmemberslower} वरून $\setrank{c} \in \setrank{B}$; म्हणून $B$ च्या निवडीवरून $c \notin A$.
+\end{proof}
+
+\end{document}
