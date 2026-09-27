@@ -1,0 +1,46 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: duals
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{dua}
+
+\olsection{द्वयी \usetoken{P}{formula}}
+
+\begin{defn}\ollabel{def:duals}
+  \Ax{T}, \Ax{B}, \Ax{4} आणि \Ax{5} ही
+  !!{formula}s आहेत; त्यांपैकी प्रत्येकाला
+  \emph{द्वयी} सूत्र आहे.
+  ते तळसूचक हिऱ्याने पुढीलप्रमाणे दर्शवले जाते:
+  \begin{align}
+    \tag{\Ax{T_\Diamond}} p & \lif \Diamond p\\
+    \tag{\Ax{B_\Diamond}} \Diamond\Box p & \lif p\\
+    \tag{\Ax{4_\Diamond}} \Diamond\Diamond p & \lif \Diamond p\\
+    \tag{\Ax{5_\Diamond}} \Diamond\Box p & \lif \Box p
+    \end{align}
+\end{defn}
+
+वरील द्वयी !!{formula}s पैकी प्रत्येक सूत्र संबंधित
+!!{formula} मधील $p$ च्या जागी $\lnot p$ ठेवून,
+प्रतिपरिवर्तन करून,
+$\lnot\Box\lnot$ च्या जागी $\Diamond$ आणि
+$\lnot\Diamond\lnot$ च्या जागी~$\Box$ ठेवून मिळते.
+\Ax{D}, म्हणजे $\Box!A \lif \Diamond!A$, हे या अर्थाने
+स्वतःचेच द्वयी सूत्र आहे.
+
+\begin{prop}\ollabel{prop:dualsys}
+  \olref[nml][prf][dua]{def:duals} मधील प्रत्येक
+  !!{formula}~$!A$ साठी:
+  $\Log{K}!A = \Log{K}!A_{\Diamond}$.
+\end{prop}
+\begin{proof}
+  सराव.
+\end{proof}
+\begin{prob}
+  \olref[nml][prf][dua]{prop:dualsys} सिद्ध करा.
+\end{prob}
+
+\end{document}
