@@ -58,6 +58,11 @@ base = base.replace(r"\begin{document}", modal_macros + r"\begin{document}", 1)
 selected = prior_namespace["selected"]
 true_tags = selected.__globals__["true_tags"]
 true_tags.update({"prvBox", "prvDiamond"})
+# The final selector delegates to the older tag parser, whose globals retain
+# the original tag set rather than the copy made by prepare_core194.
+selected.__globals__["selected_base"].__globals__["select_tags"].__globals__[
+    "true_tags"
+].update({"prvBox", "prvDiamond"})
 replace_tokens = prior_namespace["replace_tokens"]
 strip_wrapper = prior_namespace["strip_wrapper"]
 references = prior_namespace["references"]

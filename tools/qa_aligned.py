@@ -931,6 +931,9 @@ _DOCUMENTED_PROJECTIONS = {
          r'लांबी~$n$ असलेली सर्व सूत्रे'),
     ],
     'OLP-0445': [
+        # OLINC-227: keep the parenthesis outside V^Sigma math.
+        (r'मूल्यांकन~$V^\Sigma$) यांची',
+         r'मूल्यांकन~$V^\Sigma)$ यांची'),
         # OLINC-178: the last premise is B_k, matching the finite list.
         (r'(!B_k \lif !A)\cdots)',
          r'(!B_n \lif !A)\cdots)'),
@@ -1162,6 +1165,45 @@ _DOCUMENTED_PROJECTIONS = {
         (r'अभाज्य संच' + '\n' + r'$\Delta(\sigma)$ मध्ये कोणती',
          r'अभाज्य संच' + '\n' + r'$\Delta$ मध्ये कोणती'),
     ],
+    'OLP-0513': [
+        # OLINC-230: the prose for implication must agree with its rule table.
+        (r'$\TRule{\True}{\lif}$' + '\n' + r'हा नियम',
+         r'$\TRule{\lif}{\True}$' + '\n' + r'हा नियम'),
+        (r'एकीवर $\sFmla{\False}{!A}[\sigma.{*}]$',
+         r'एकीवर $\sFmla{\True}{!A}[\sigma.{*}]$'),
+        (r'दुसरीवर $\sFmla{\True}{!B}[\sigma.{*}]$',
+         r'दुसरीवर $\sFmla{\False}{!B}[\sigma.{*}]$'),
+        (r'शाखांवर $\sFmla{\False}{!A}[\sigma]$',
+         r'शाखांवर $\sFmla{\True}{!A}[\sigma]$'),
+        (r'$\sFmla{\True}{!B}[\sigma]$ जोडून हा नियम',
+         r'$\sFmla{\False}{!B}[\sigma]$ जोडून हा नियम'),
+        (r'$\TRule{\False}{\lif}$ हा नियम',
+         r'$\TRule{\lif}{\False}$ हा नियम'),
+    ],
+    'OLP-0515': [
+        # OLINC-232: a countermodel must falsify the conclusion.
+        (r'$\mSat{M}{!B_i}[w]$ असेल, पण' + '\n' +
+         r'  $\mSat/{M}{!A}[w]$',
+         r'$\mSat{M}{!B_i}[w]$ असेल, पण' + '\n' +
+         r'  $\mSat{M}{!A}[w]$'),
+        # OLINC-233: repair the missing map and wrong evaluation world.
+        (r'आणि $Rf(\sigma)f(\sigma.{*})$',
+         r'आणि $Rf(\sigma)(\sigma.{*})$'),
+        (r'$\mSat{M}{!A}[f(\sigma.{*})]$',
+         r'$\mSat{M}{!A}[f(\sigma)]$'),
+        # OLINC-234: the false-disjunction premise needs its prefix.
+        (r'$\sFmla{\False}{!B \lor !C}[\sigma] \in \Gamma$',
+         r'$\sFmla{\False}{!B \lor !C} \in \Gamma$'),
+        # The false-implication branch gains its two actual conclusions.
+        (r'\{\sFmla{\True}{!B}[\sigma.n],' + '\n' +
+         r'  \sFmla{\False}{!C}[\sigma.n]\}',
+         r'\{\sFmla{\False}{!B \lif !C}[\sigma.n]\}'),
+        # OLINC-235: the corollary conclusion is semantic entailment.
+        (r'म्हणून' + '\n' + r'  $\Gamma \Entails !A$' + '\n' +
+         r'  हेच मिळते.',
+         r'म्हणून' + '\n' + r'  $\Gamma \Proves !A$' + '\n' +
+         r'  हेच मिळते.'),
+    ],
 }
 
 
@@ -1228,4 +1270,14 @@ def check_with_documented_source_corrections(unit_id, source, target):
                 **result,
                 'documented_source_correction_projection_applied': True,
             }
+    if unit_id == 'OLP-0514':
+        # OLINC-231: macro counts do not inspect tableau justification args.
+        frozen = r'\TRule{\False}{\land}[4]'
+        corrected = r'\TRule{\False}{\land}[7]'
+        if frozen in source:
+            result['tableau_conjunction_justification_corrected'] = (
+                source.count(frozen) == 2
+                and target.count(corrected) == 2
+                and frozen not in target
+            )
     return result

@@ -188,11 +188,9 @@ def strip_reader_notes_preserve_suffix(text):
 def normalize_two_argument_iftags(text):
     """The upstream corpus contains one legacy two-argument iftag call."""
     marker = r"\iftag"
-    cursor = 0
-    while True:
-        start = text.find(marker, cursor)
-        if start < 0:
-            return text
+    # Normalize innermost calls first: an outer, enabled tag can contain a
+    # legacy two-argument call in its selected branch.
+    for start in reversed([match.start() for match in re.finditer(re.escape(marker), text)]):
         index = start + len(marker)
         for _ in range(2):
             while index < len(text) and text[index].isspace():
@@ -213,9 +211,7 @@ def normalize_two_argument_iftags(text):
             probe += 1
         if probe >= len(text) or text[probe] != "{":
             text = text[:index] + "{}" + text[index:]
-            cursor = index + 2
-        else:
-            cursor = index
+    return text
 
 
 def selected(text):

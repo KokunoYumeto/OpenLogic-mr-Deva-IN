@@ -1,0 +1,367 @@
+% Part: intuitionistic-logic
+% Chapter: tableaux
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{tab}{sou}
+
+\olsection{अंतःप्रज्ञावादी \usetoken{P}{tableau} ची निर्दोषता}
+
+\begin{explain}
+  अंतःप्रज्ञावादी !!{tableau}s निर्दोष आहेत हे
+  दाखवण्यासाठी पुढील गृहीतकांना
+  \[
+  \sFmla{\True}{!B_1}[1], \dots, \sFmla{\True}{!B_n}[1], \sFmla{\False}{!A}[1]
+  \]
+  बंद !!{tableau} असेल, तर $!B_1, \dots, !B_n \Entails !A$
+  हे दाखवावे लागेल. प्रतिविधान सिद्ध करणे सोपे आहे:
+  एखाद्या $\mModel{M}$ प्रतिमानात आणि जगात~$w$,
+  सर्व $i=1$, \dots,~$n$ साठी
+  $\mSat{M}{!B_i}[w]$ असेल, पण
+  $\mSat/{M}{!A}[w]$ असेल, तर कोणताही
+  !!{tableau} बंद होऊ शकत नाही. असे
+  प्रतिप्रतिमान !!{tableau} ची सुरुवातीची
+  गृहीतके पूर्ततायोग्य असल्याचे दाखवते.
+  पुराव्याची युक्ती अशी: !!a{tableau}
+  च्या शाखेवरील सर्व पूर्वचिन्हयुक्त
+  !!{formula}s पूर्ततायोग्य असतील, तर
+  कोणताही नियम लावल्यानंतर मिळणाऱ्या
+  विस्तारित शाखांपैकी किमान एक शाखा
+  पूर्ततायोग्य असते. बंद शाखा अपूर्ततायोग्य
+  असल्याने, पूर्ततायोग्य पूर्वचिन्हयुक्त
+  !!{formula}s च्या संचावरील कोणत्याही
+  !!{tableau} मध्ये किमान एक खुली शाखा
+  असलीच पाहिजे.
+
+  ही युक्ती अंतःप्रज्ञावादी प्रकरणात
+  वापरण्यासाठी ‘पूर्ततायोग्य’ या संकल्पनेची
+  व्याख्या प्राप्यता-संबंध आणि पूर्वचिन्हे
+  यांना सामावून घेईल अशी वाढवावी लागते.
+  त्यानंतर पुरावा सरळ आहे.
+\end{explain}
+
+\begin{defn}
+  $P$ हा पूर्वचिन्हांचा एखादा संच असू द्या,
+  म्हणजे $P \subseteq (\PosInt)^*
+  \setminus \{\emptyseq\}$; तसेच
+  $\mModel{M}$ हे प्रतिमान असू द्या.
+  $f\colon P \to W$ हे फलन,
+  $\sigma$ आणि $\sigma.n$ ही दोन्ही
+  $P$ मध्ये असताना $Rf(\sigma)f(\sigma.n)$
+  असेल, तर $\mModel{M}$ मधील
+  $P$ चे \emph{अर्थनिर्धारण} आहे.
+
+  पूर्वचिन्हे~$P$ यांच्या अन्वयव्याख्येच्या
+  संदर्भात पुढील व्याख्या करता येतात:
+  \begin{enumerate}
+  \item $\mModel{M}$ हे $\sFmla{\True}{!A}[\sigma]$
+    पूर्ण करते तेव्हा आणि तेव्हाच
+    $\mSat{M}{!A}[f(\sigma)]$.
+  \item $\mModel{M}$ हे $\sFmla{\False}{!A}[\sigma]$
+    पूर्ण करते तेव्हा आणि तेव्हाच
+    $\mSat/{M}{!A}[f(\sigma)]$.
+  \end{enumerate}
+\end{defn}
+
+%READERNOTE{OLINC-233: पूर्वचिन्हांचा संच मनमाना असेल, तर या व्याख्येतून सुरुवातीच्या पूर्वचिन्हाच्या जगापासून प्रत्येक दीर्घ विस्ताराच्या जगापर्यंत प्राप्यता आपोआप मिळत नाही. मधली पूर्वचिन्हे संचात असणे किंवा सर्व पूर्वचिन्ह-विस्तारांसाठी प्राप्यता थेट आवश्यक करणे गरजेचे आहे. त्यामुळे पुढील शाखा-बंदतेचा दावा मनमाना सूत्रसंचासाठी या व्याख्येवरून सिद्ध झालेला नाही.}
+$R$ हा परावर्ती आणि संक्रमणशील असल्याने,
+आणि $\sigma.{*}$ हे $\sigma$,
+$\sigma.n_1$, $\sigma.n_1.n_2$, \dots
+यांपैकी कोणतेही पूर्वचिन्ह दर्शवत
+असल्याने, $Rf(\sigma)f(\sigma.{*})$
+हेही मिळते.
+
+\begin{defn}
+  $\Gamma$ हा पूर्वचिन्हयुक्त !!{formula}s
+  चा संच असू द्या आणि त्यात आलेल्या
+  पूर्वचिन्हांचा संच $P(\Gamma)$ असू द्या.
+  $f$ ही $P(\Gamma)$ ची
+  $\mModel{M}$ मधील अर्थनिर्धारण
+  असेल, तर $\mModel{M}$ हे
+  $f$ च्या संदर्भात $\Gamma$
+  पूर्ण करते, म्हणजे
+  $\mSat{M}{\Gamma}[f]$, असे
+  तेव्हा म्हणतो जेव्हा
+  $\mModel{M}$ हे $\Gamma$ मधील
+  प्रत्येक पूर्वचिन्हयुक्त
+  !!{formula} हे~$f$ च्या संदर्भात
+  पूर्ण करते. $\mModel{M}$ असे
+  प्रतिमान आणि $P(\Gamma)$ ची
+  $f$ असे अर्थनिर्धारण अस्तित्वात
+  असतील की $\mSat{M}{\Gamma}[f]$,
+  तर $\Gamma$ \emph{पूर्ततायोग्य}
+  आहे.
+\end{defn}
+
+\begin{prop}
+  $\Gamma$ मध्ये एखाद्या
+  !!{formula}~$!A$ आणि पूर्वचिन्ह~$\sigma$
+  साठी $\sFmla{\True}{!A}[\sigma]$ आणि
+  $\sFmla{\False}{!A}[\sigma.{*}]$
+  ही दोन्ही असतील, किंवा
+  $\sFmla{\True}{\lfalse}[\sigma]$
+  असेल, तर $\Gamma$ अपूर्ततायोग्य आहे.
+\end{prop}
+
+\begin{proof}
+  नेहमीच $\mSat/{M}{\lfalse}[f(\sigma)]$
+  असल्याने, $\sFmla{\True}{\lfalse}$
+  असलेला $\Gamma$ अपूर्ततायोग्य असतो.
+
+  आता दोन्ही चिन्हांकित सूत्रे पूर्ण
+  करणारे $\mModel{M}$ प्रतिमान आणि
+  $P(\Gamma)$ चे $f$ अर्थनिर्धारण
+  असू शकत नाहीत. कारण
+  $\mSat{M}{!A}[f(\sigma)]$
+  असेल, तर
+  \olref[sem][rel]{prop:true-monotonic}
+  आणि $Rf(\sigma)f(\sigma.{*})$
+  यांवरून
+  $\mSat{M}{!A}[f(\sigma.{*})]$
+  मिळते. म्हणून
+  $\mSat{M}{!A}[f(\sigma)]$ आणि
+  $\mSat/{M}{!A}[f(\sigma.{*})]$
+  ही दोन्ही एकत्र असू शकत नाहीत.
+\end{proof}
+
+\begin{thm}[निर्दोषता]
+  \ollabel{thm:tableau-soundness}
+  $\Gamma$ ला बंद !!{tableau}
+  असेल, तर $\Gamma$ अपूर्ततायोग्य
+  आहे.
+\end{thm}
+
+\begin{proof}
+!!a{tableau} च्या एखाद्या शाखेवरील
+!!{signed formula}s चा संच
+पूर्ततायोग्य असेल, तर ती शाखा
+पूर्ततायोग्य म्हणू. किमान एक
+पूर्ततायोग्य शाखा असलेला
+!!a{tableau} पूर्ततायोग्य म्हणू.
+
+आपण पुढील विधान दाखवू:
+पूर्ततायोग्य !!{tableau} ला अनुमानाचा
+कोणताही एक नियम लावल्यावरही
+पूर्ततायोग्य !!{tableau} मिळतो.
+यावरून प्रमेय सिद्ध होते: कोणताही
+बंद !!{tableau} हा~$\Gamma$
+मधील गृहीतके एवढीच असलेल्या
+!!{tableau} ला नियम लावून मिळतो.
+म्हणून $\Gamma$ पूर्ततायोग्य
+असेल, तर त्यावरील प्रत्येक
+!!{tableau} पूर्ततायोग्य असेल.
+पण बंद !!{tableau} पूर्ततायोग्य
+नसतो, कारण त्याच्या सर्व शाखा
+बंद असतात आणि बंद शाखा
+अपूर्ततायोग्य असतात.
+
+आता पूर्ततायोग्य !!{tableau},
+म्हणजे किमान एक पूर्ततायोग्य शाखा
+असलेला !!a{tableau}, घेऊ.
+नियम लावताना एखाद्या शाखेला
+!!{signed formula}s जोडली जातात
+किंवा तिचे दोन शाखांत विभाजन
+होते. नियम न लावलेली एखादी
+पूर्ततायोग्य शाखा आधीपासून
+असेल, तर ती विस्तारित
+!!{tableau} मध्येही तशीच
+राहते आणि विस्तारित !!{tableau}
+पूर्ततायोग्य असतो. म्हणून
+पूर्ततायोग्य शाखेलाच नियम
+लावल्याचे प्रकरण पाहणे पुरेसे आहे.
+
+त्या शाखेवरील !!{signed formula}s
+चा संच $\Gamma$ असू द्या आणि
+नियम ज्या !!{signed formula}
+ला लावतो ते
+$\sFmla{S}{!A}[\sigma] \in \Gamma$
+असू द्या. नियमामुळे शाखा फुटत
+नसेल, तर नियमाच्या निष्कर्षांसह
+$\Gamma$ असलेली विस्तारित शाखा
+अजूनही पूर्ततायोग्य आहे हे
+दाखवावे लागते. शाखा फुटत
+असेल, तर मिळणाऱ्या दोन शाखांपैकी
+किमान एक पूर्ततायोग्य आहे हे
+दाखवावे लागते.
+\begin{enumerate}
+\item $\sFmla{\True}{\lnot !B}[\sigma] \in \Gamma$
+  याला $\TRule{\True}{\lnot}$ लावून
+  शाखा वाढवू. मग विस्तारित
+  शाखेत $\Gamma \cup
+  \{\sFmla{\False}{!B}[\sigma.{*}]\}$
+  ही !!{signed formula}s असतात.
+  $\mSat{M}{\Gamma}[f]$ असे समजा.
+  विशेषतः
+  $\mSat{M}{\lnot !B}[f(\sigma)]$.
+  म्हणून $Rf(\sigma)w$ असलेल्या
+  प्रत्येक $w$ साठी
+  $\mSat/{M}{!B}[w]$; यात
+  $f(\sigma.{*})$ सुद्धा येते.
+  त्यामुळे $\mModel{M}$ हे
+  $\sFmla{\False}{!B}[\sigma.{*}]$
+  $f$ च्या संदर्भात पूर्ण करते.
+\item $\sFmla{\False}{\lnot !B}[\sigma] \in \Gamma$
+  याला $\TRule{\False}{\lnot}$
+  लावून शाखा वाढवण्याचे प्रकरण:
+  सरावासाठी.
+\item $\sFmla{\True}{!B \land !C}[\sigma] \in \Gamma$
+  याला $\TRule{\True}{\land}$
+  लावल्यावर त्याच शाखेत
+  $\sFmla{\True}{!B}[\sigma]$
+  आणि $\sFmla{\True}{!C}[\sigma]$
+  ही दोन नवी !!{signed formula}s
+  मिळतात. $\mSat{M}{\Gamma}[f]$
+  असे समजा; विशेषतः
+  $\mSat{M}{!B \land
+    !C}[f(\sigma)]$. मग
+  $\mSat{M}{!B}[f(\sigma)]$
+  आणि $\mSat{M}{!C}[f(\sigma)]$.
+  म्हणजे $\mModel{M}$ हे
+  $\sFmla{\True}{!B}[\sigma]$
+  आणि $\sFmla{\True}{!C}[\sigma]$
+  दोन्ही~$f$ च्या संदर्भात
+  पूर्ण करते.
+\item $\sFmla{\False}{!B \lor !C}[\sigma] \in \Gamma$
+  याला $\TRule{\False}{\lor}$
+  लावण्याचे प्रकरण: सरावासाठी.
+\item $\sFmla{\False}{!B \lif !C}[\sigma] \in \Gamma$
+  याला $\TRule{\False}{\lif}$
+  लावल्यावर शाखेत
+  $\sFmla{\True}{!B}[\sigma.n]$
+  आणि $\sFmla{\False}{!C}[\sigma.n]$
+  ही दोन नवी !!{signed formula}s
+  मिळतात. येथे $\sigma.n$
+  हे शाखेसाठी नवे पूर्वचिन्ह,
+  म्हणजे $\sigma.n \notin P(\Gamma)$.
+
+  $\Gamma$ पूर्ततायोग्य असल्याने,
+  $\mSat{M}{\Gamma}[f]$ असेल
+  असे $\mModel{M}$ प्रतिमान
+  आणि $P(\Gamma)$ ची~$f$
+  अर्थनिर्धारण आहेत. विशेषतः
+  $\mSat/{M}{!B \lif !C}[f(\sigma)]$.
+  पुढील संच पूर्ततायोग्य आहे हे
+  दाखवावे लागेल:
+  $\Gamma \cup
+  \{\sFmla{\True}{!B}[\sigma.n],
+  \sFmla{\False}{!C}[\sigma.n]\}$.
+  त्यासाठी $P(\Gamma)
+  \cup \{\sigma.n\}$
+  याचे अर्थनिर्धारण पुढीलप्रमाणे
+  ठरवू:
+
+  $\mSat/{M}{!B \lif !C}[f(\sigma)]$
+  असल्याने $Rf(\sigma)w$,
+  $\mSat{M}{!B}[w]$ आणि
+  $\mSat/{M}{!C}[w]$
+  असा $w \in W$ असतो.
+  $f'$ हे $f$ सारखेच, फक्त
+  $f'(\sigma.n) = w$
+  असे ठरवू. $f'(\sigma) = f(\sigma)$
+  आणि $Rf(\sigma)w$ असल्याने
+  $Rf'(\sigma)f'(\sigma.n)$;
+  म्हणून $f'$ ही
+  $P(\Gamma) \cup \{\sigma.n\}$
+  चे अर्थनिर्धारण आहे.
+  तसेच $\mSat{M}{!B}[f'(\sigma.n)]$
+  आणि $\mSat/{M}{!C}[f'(\sigma.n)]$.
+  सर्व पूर्वचिन्हे
+  $\sigma' \in P(\Gamma)$ साठी
+  $f(\sigma') = f'(\sigma')$
+  असल्याने
+  $\mSat{M}{\Gamma}[f']$.
+  म्हणून $\mModel{M}, f'$ हे
+  $\Gamma \cup
+  \{\sFmla{\True}{!B}[\sigma.n],
+  \sFmla{\False}{!C}[\sigma.n]\}$
+  पूर्ण करते.
+\end{enumerate}
+आता दोन शाखा निर्माण करणारे
+नियम पाहू.
+\begin{enumerate}
+\item $\sFmla{\False}{!B \land !C}[\sigma] \in \Gamma$
+  याला $\TRule{\False}{\land}$
+  लावल्यावर दोन शाखा मिळतात:
+  डावीकडील शाखेत
+  $\sFmla{\False}{!B}[\sigma]$
+  आणि उजवीकडील शाखेत
+  $\sFmla{\False}{!C}[\sigma]$.
+  $\mSat{M}{\Gamma}[f]$
+  असे समजा; विशेषतः
+  $\mSat/{M}{!B \land !C}[f(\sigma)]$.
+  मग $\mSat/{M}{!B}[f(\sigma)]$
+  किंवा $\mSat/{M}{!C}[f(\sigma)]$.
+  पहिल्या प्रकरणात
+  $\mModel{M}, f$ हे
+  $\sFmla{\False}{!B}[\sigma]$
+  पूर्ण करते; म्हणजे डावी
+  शाखा पूर्ततायोग्य आहे.
+  दुसऱ्या प्रकरणात
+  $\mModel{M}, f$ हे
+  $\sFmla{\False}{!C}[\sigma]$
+  पूर्ण करते; म्हणजे उजवी
+  शाखा पूर्ततायोग्य आहे.
+\item $\sFmla{\True}{!B \lor !C}[\sigma] \in \Gamma$
+  याला $\TRule{\True}{\lor}$
+  लावण्याचे प्रकरण: सरावासाठी.
+\item $\sFmla{\True}{!B \lif !C}[\sigma] \in \Gamma$
+  याला $\TRule{\True}{\lif}$
+  लावण्याचे प्रकरण: सरावासाठी.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\olref[int][tab][sou]{thm:tableau-soundness}
+या प्रमेयाचा पुरावा पूर्ण करा.
+\end{prob}
+
+\begin{cor}
+\ollabel{cor:entailment-soundness}
+$\Gamma \Proves !A$ असेल,
+तर $\Gamma \Entails !A$.
+\end{cor}
+
+\begin{proof}
+  $\Gamma \Proves !A$ असेल,
+  तर काही
+  $!B_1$, \dots, $!B_n \in
+  \Gamma$ साठी
+  $\Delta = \{\sFmla{\False}{!A}[1], \sFmla{\True}{!B_1}[1],
+  \dots, \sFmla{\True}{!B_n}[1]\}$
+  याला बंद !!{tableau} असतो.
+  $\Gamma \Entails !A$
+  हे दाखवायचे आहे. तसे नाही
+  असे समजा. मग एखाद्या
+  $\mModel{M}$ प्रतिमानात
+  आणि जगात~$w$,
+  $i=1$, \dots,~$n$ साठी
+  $\mSat{M}{!B_i}[w]$,
+  पण $\mSat/{M}{!A}[w]$.
+  $f(1) = w$ असे ठरवू;
+  मग $f$ ही
+  $P(\Delta)$ ची
+  $\mModel{M}$ मधील
+  अर्थनिर्धारण आहे आणि
+  $\mModel{M}$ हे
+  $\Delta$ ला~$f$ च्या
+  संदर्भात पूर्ण करते.
+  पण \olref{thm:tableau-soundness}
+  नुसार, बंद !!{tableau}
+  असल्याने $\Delta$
+  अपूर्ततायोग्य आहे; ही
+  विसंगती आहे. म्हणून
+  $\Gamma \Entails !A$
+  हेच मिळते.
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+$\Proves !A$ असेल, तर
+$!A$ हे सर्व प्रतिमानांत
+सत्य असते.
+\end{cor}
+
+\end{document}

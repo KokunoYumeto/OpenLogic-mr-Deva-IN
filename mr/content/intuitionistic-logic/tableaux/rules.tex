@@ -1,0 +1,168 @@
+% Part: intuitionistic-logic
+% Chapter: tableaux
+% Section: rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{tab}{rul}
+
+\olsection{अंतःप्रज्ञावादी तर्कशास्त्रासाठीचे नियम}
+
+$\land$ आणि $\lor$ या कारकांचे नियम नेहमीच्या विधानीय
+चिन्हांकित !!{tableau}s मधील नियमांसारखेच आहेत;
+फक्त त्यांना पूर्वचिन्हे जोडली जातात. प्रत्येक वेळी,
+$\sFmla{S}{!A}[\sigma]$ या चिन्हांकित !!{formula}
+ला नियम लावल्याने मिळणाऱ्या नव्या !!{formula}s
+वरही~$\sigma$ हेच पूर्वचिन्ह असते. हे सहज लक्षात
+येते: उदाहरणार्थ, $!A \land !B$ हे~$\sigma$ ने
+नाव दिलेल्या जगात सत्य असेल, तर $!A$ आणि $!B$
+ही दोन्ही~$\sigma$ येथे सत्य असतात (आणि त्या
+जगापासून प्राप्य असलेल्या प्रत्येक जगातही सत्य
+असतात). $\land$ आणि $\lor$ यांचे नियम
+\olref{tab:prop-rules} मध्ये दिले आहेत.
+
+\begin{table}
+  \[\def\arraystretch{3}\begin{array}{|c|c|}
+    \hline
+    \AxiomC{\sFmla{\True}{!A \land !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\land}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\True}{!B}[\sigma]}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \land !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\land}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma] \quad \mid \quad
+      \sFmla{\False}{!B}[\sigma]$}
+    \DisplayProof
+    \\[2ex]
+    \hline
+    \AxiomC{\sFmla{\True}{!A \lor !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\lor}}
+    \UnaryInfC{$\sFmla{\True}{!A}[\sigma] \quad \mid \quad
+      \sFmla{\True}{!B}[\sigma]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \lor !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\lor}}
+    \UnaryInfC{\sFmla{\False}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{!B}[\sigma]}
+    \DisplayProof
+    \\[2ex]
+    \hline
+  \end{array}\]
+  \caption{$\land$ आणि $\lor$ साठीचे पूर्वचिन्हयुक्त
+    !!{tableau} नियम}
+  \ollabel{tab:prop-rules}
+\end{table}
+
+शाखा बंद होण्याची अट नेहमीच्या !!{tableau}s
+प्रमाणेच आहे; पण येथे !!{formula}s बरोबर त्यांची
+पूर्वचिन्हेही जुळली पाहिजेत. खरे तर ही अट
+थोडी शिथिल करता येते: अंतःप्रज्ञावादी प्रतिमानात
+!!{formula}s एकदा सत्य झाली की पुढेही सत्य राहतात.
+म्हणून $!A$ हे~$\sigma$ येथे सत्य असताना
+ते~$\sigma.{*}$ या प्राप्य पूर्वचिन्हावर असत्य
+असू शकत नाही. म्हणून एखाद्या शाखेत पुढील
+दोन्ही असतील, तर ती बंद असते:
+\[
+\sFmla{\True}{!A}[\sigma] \quad\text{आणि}\quad \sFmla{\False}{!A}[\sigma.{*}]
+\]
+येथे $\sigma$ हे एखादे पूर्वचिन्ह आणि $!A$ हे
+!!{formula} आहे. उलट चिन्हे असतील, म्हणजे
+शाखेत पुढील दोन्ही असतील,
+\[
+\sFmla{\False}{!A}[\sigma] \quad\text{आणि}\quad \sFmla{\True}{!A}[\sigma.{*}]
+\]
+तर $*$ ही रिकामी क्रमिका असेल तेव्हाच शाखा
+बंद असते.
+
+तसेच, एखाद्या शाखेत~$\sFmla{\True}{\bot}[\sigma]$
+असेल, तरी ती बंद असते.
+
+गृहीतके मांडण्याचे नियमही नेहमीच्या !!{tableau}s
+प्रमाणेच आहेत; मात्र गृहीतकांसाठी आपण नेहमी
+$1$ हे पूर्वचिन्ह वापरतो. (सर्व गृहीतकांसाठी
+एकच पूर्वचिन्ह वापरले, तर नेमके कोणते
+पूर्वचिन्ह वापरले याने फरक पडत नाही.)
+म्हणून, उदाहरणार्थ,
+\[
+!B_1, \dots, !B_n \Proves !A
+\]
+असे तेव्हा आणि तेव्हाच म्हणतो जेव्हा पुढील
+गृहीतकांसाठी बंद टॅब्लो असतो:
+\[
+\sFmla{\True}{!B_1}[1], \dots, \sFmla{\True}{!B_n}[1],
+\sFmla{\False}{!A}[1].
+\]
+
+शर्त~$\lif$ साठीचे नियम अभिजात आणि मोडल
+प्रकरणांपेक्षा वेगळे आहेत. $\TRule{\True}{\lif}$
+हा नियम $\sFmla{\True}{!A \lif !B}[\sigma]$
+असलेल्या शाखेतून दोन वेगळ्या शाखा काढतो:
+एकीवर $\sFmla{\False}{!A}[\sigma.{*}]$ आणि
+दुसरीवर $\sFmla{\True}{!B}[\sigma.{*}]$ जोडतो.
+हा नियम लावताना $\sigma.{*}$ हे पूर्वचिन्ह
+संबंधित शाखेत \emph{आधीपासूनच} आलेले
+असले पाहिजे. अशा पूर्वचिन्हाला त्या शाखेवर
+‘वापरलेले’ म्हणू. ($\sigma.{*}$ मध्ये
+$\sigma$ स्वतःही येत असल्याने, वेगवेगळ्या
+शाखांवर $\sFmla{\False}{!A}[\sigma]$ आणि
+$\sFmla{\True}{!B}[\sigma]$ जोडून हा नियम
+नेहमी लावता येतो.)
+
+$\TRule{\False}{\lif}$ हा नियम
+$\sFmla{\False}{!A \lif !B}[\sigma]$
+असलेल्या शाखेवर
+$\sFmla{\True}{!A}[\sigma.n]$ आणि
+$\sFmla{\False}{!B}[\sigma.n]$ ही दोन्ही
+सूत्रे जोडतो; येथे $\sigma.n$ हे त्या
+शाखेसाठी नवे पूर्वचिन्ह असते.
+
+$\lnot$ साठीचे नियम याच धर्तीवर व्याख्यायित
+केले आहेत ($\lnot !A$ म्हणजे
+$!A \lif \lfalse$ ही व्याख्या वापरून).
+
+हे नियम \olref{tab:rules-lif-lnot} मध्ये दिले आहेत.
+
+\begin{table}
+  \[\def\arraystretch{3}\begin{array}{|c|c|}
+    \hline
+    \AxiomC{\sFmla{\True}{\lnot !A}[\sigma]}
+    \RightLabel{\TRule{\True}{\lnot}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma.{*}]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{\lnot !A}[\sigma]}
+    \RightLabel{\TRule{\False}{\lnot}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma.n]}
+    \DisplayProof
+    \\[1ex]
+    \text{$\sigma.{*}$ वापरलेले आहे} & \text{$\sigma.n$ नवे आहे}\\
+    \hline
+    \AxiomC{\sFmla{\True}{!A \lif !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\lif}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma.{*}] \quad \mid \quad
+      \sFmla{\True}{!B}[\sigma.{*}]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \lif !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\lif}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma.n]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{!B}[\sigma.n]}
+    \DisplayProof
+    \\[1ex]
+    \text{$\sigma.{*}$ वापरलेले आहे} & \text{$\sigma.n$ नवे आहे}\\
+    \hline
+  \end{array}\]
+  \caption{$\lnot$ आणि $\lif$ साठीचे
+    पूर्वचिन्हयुक्त !!{tableau} नियम}
+  \ollabel{tab:rules-lif-lnot}
+\end{table}
+
+\end{document}
