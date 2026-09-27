@@ -1,0 +1,61 @@
+% Part: lambda-calculus
+% Chapter: lambda-definability
+% Section: pairs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{ldf}{pai}
+\olsection{जोड्या आणि पूर्ववर्ती फलन}
+
+\begin{defn}
+$M$ आणि $N$ यांची जोडी ($\tuple{M,N}$ असे लिहितात)
+पुढीलप्रमाणे परिभाषित केली जाते:
+\[
+\tuple{M,N} \ident \lambd[f][fMN].
+\]
+\end{defn}
+
+सहज अर्थाने ही जोडी म्हणजे एक फलन: ते दुसरे फलन
+स्वीकारते आणि ते जोडीतल्या दोन्ही घटकांना लागू करते.
+या कल्पनेवरून दोन पदे घेऊन त्यांची जोडी परत करणारे
+पुढील रचनाफलन मिळते:
+\[
+  \fn{Pair} \ident \lambd[mn][\lambd[f][fmn]]
+\]
+जोडी दिल्यावर तिचे घटक पुन्हा मिळवायचे असतात.
+त्यासाठी जोडी युक्तिवाद म्हणून स्वीकारून तिचा पहिला
+किंवा दुसरा घटक परत करणारी दोन घटक-निवड फलने हवीत:
+\begin{align*}
+  \fn{Fst} & \ident \lambd[p][p(\lambd[mn][m])]\\
+  \fn{Snd} & \ident \lambd[p][p(\lambd[mn][n])]
+\end{align*}
+
+\begin{prob}
+  घटक-निवड फलने $\fn{Fst}$ आणि $\fn{Snd}$ का कार्य
+  करतात ते स्पष्ट करा.
+\end{prob}
+
+आता जोड्यांच्या साहाय्याने पूर्ववर्ती फलन
+!!{lambda define} करता येते:
+\[
+  \fn{Pred} \ident \lambd[n][\fn{Fst}(n (\lambd[p][\tuple{\fn{Snd}\, {p}, \fn{Succ}(\fn{Snd}\, {p})}]) \tuple{\num 0, \num 0})]
+\]
+$\num n\, f x$ चे $f^{n}(x)$ मध्ये न्यूनीकरण
+होते हे लक्षात ठेवा. येथे $f$ हे जोडी $p$ स्वीकारून
+$p$ चा दुसरा घटक आणि त्या दुसऱ्या घटकाचा
+उत्तरवर्ती यांची नवी जोडी परत करणारे फलन आहे;
+$x$ ही $\tuple{0,0}$ जोडी आहे. म्हणून $n=0$
+असेल, तर परिणामी जोडी $\tuple{0,0}$ असते;
+अन्यथा ती $\tuple{\num{n-1}, \num n}$ असते.
+मग $\fn{Pred}$ या परिणामी जोडीचा पहिला घटक
+परत करते.
+
+नैसर्गिक संख्यांवरील शून्यावर थांबणारी वजाबाकी
+म्हणजे $a$ ला $\fn{Pred}$ हे $b$ वेळा लागू करणे:
+\[
+\fn{Sub} \ident \lambd[ab][b \fn{Pred}\, a].
+\]
+
+\end{document}
