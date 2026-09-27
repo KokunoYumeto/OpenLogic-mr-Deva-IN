@@ -618,6 +618,10 @@ _DOCUMENTED_PROJECTIONS = {
         # OLINC-065: the finite bound applies to Gamma_0, not all Gamma.
         (r'!A^{\ge n} \in \Gamma_0', r'!A^{\ge n} \in \Gamma'),
     ],
+    'OLP-0340': [
+        # OLINC-069: the coding relation in this proof is for X, not Z.
+        (r'$s(X)$ चे उपसंच', r'$s(Z)$ चे उपसंच'),
+    ],
 }
 
 
