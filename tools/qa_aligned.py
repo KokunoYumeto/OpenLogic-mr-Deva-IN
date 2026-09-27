@@ -736,6 +736,10 @@ _DOCUMENTED_PROJECTIONS = {
         (r"$M \eredone M'$ हे $\eta$-परिवर्तनाचे प्रकरण",
          r"$M \bredone M'$ हे $\eta$-परिवर्तनाचे प्रकरण"),
     ],
+    'OLP-0374': [
+        # OLINC-114: the constant-function equation uses c_k.
+        (r"$c_k(n) = k$", r"$c(n) = k$"),
+    ],
 }
 
 
