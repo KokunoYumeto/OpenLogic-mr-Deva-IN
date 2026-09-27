@@ -1,0 +1,50 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: abbreviated-syntax
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{abb}
+\olsection{संक्षिप्त विन्यास}
+
+\olref[trm]{defn:term} मध्ये परिभाषित पदे लिहिताना
+कधीकधी अवजड वाटतात; म्हणून अधिक संक्षिप्त विन्यास
+मांडणे उपयुक्त आहे. अर्थात, या संक्षिप्त संकेतनातील
+पदेही एकमेव रीतीने वाचता येतील याची काळजी
+घ्यावी लागेल. \emph{संक्षिप्त पदे} म्हणून ओळखली
+जाणारी एक प्रचलित पद्धत पुढीलप्रमाणे आहे.
+
+\begin{enumerate}
+\item कंस वगळले असता उपयोजन डावीकडून उजवीकडे
+  होते. उदाहरणार्थ, $M$, $N$, $P$ आणि~$Q$
+  ही पदे असतील, तर $MNPQ$ हे $(((MN)P)Q)$
+  चे संक्षिप्त रूप आहे.
+\item पुन्हा, कंस वगळले असता लॅम्डा अमूर्तीकरणाला
+  शक्य तितकी व्यापक व्याप्ती द्यायची. उदाहरणार्थ,
+  $\lambd[x][MNP]$ याचा अर्थ
+  $(\lambd[x][MNP])$ असा घ्यायचा.
+\item एका लॅम्डाने अनेक चरे अमूर्त करता येतात.
+  उदाहरणार्थ, $\lambd[xyz][M]$ हे
+  $\lambd[x][\lambd[y][\lambd[z][M]]]$
+  चे संक्षिप्त रूप आहे.
+\end{enumerate}
+
+उदाहरणार्थ,
+\[
+\lambd[xy][xxyx \lambd[z][xz]]
+\]
+हे पुढीलचे संक्षिप्त रूप आहे:
+\[
+(\lambd[x][(\lambd[y][((((xx)y)x)(\lambd[z][(xz)]))])]).
+\]
+
+\begin{prob}
+संक्षिप्त पद
+$\lambd[g][(\lambd[x][g (x x)])
+  \lambd[x][g (x x)]]$
+विस्तारून लिहा.
+\end{prob}
+
+\end{document}
