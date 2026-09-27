@@ -1,0 +1,91 @@
+% Part: second-order-logic
+% Chapter: sol-and-sets
+% Section: comparing-sets
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{set}{cmp}
+
+\olsection{संचांची तुलना}
+
+\begin{prop}
+!!{formula} $\lforall[x][(X(x) \lif Y(x))]$ उपसंच-संबंध
+परिभाषित करते; म्हणजे
+$\Sat{M}{\lforall[x][(X(x) \lif Y(x))]}[s]$
+जर आणि फक्त जर $s(X) \subseteq s(Y)$.
+\end{prop}
+
+\begin{prop}
+!!{formula} $\lforall[x][(X(x) \liff Y(x))]$ संचांवरील
+समानता-संबंध परिभाषित करते; म्हणजे
+$\Sat{M}{\lforall[x][(X(x) \liff Y(x))]}[s]$
+जर आणि फक्त जर $s(X) = s(Y)$.
+\end{prop}
+
+\begin{prop}
+!!{formula} $\lexists[x][X(x)]$ अरिक्त असण्याचा
+गुणधर्म परिभाषित करते; म्हणजे
+$\Sat{M}{\lexists[x][X(x)]}[s]$
+जर आणि फक्त जर $s(X) \neq \emptyset$.
+\end{prop}
+
+संच~$X$ हा संच~$Y$ पेक्षा आकारमानाने मोठा नाही,
+$\cardle{X}{Y}$, जर आणि फक्त जर
+!!a{injective} फलन $f\colon X \to Y$ असेल.
+फलन एकास-एक आहे, तसेच~$X$ मधील निविष्टांसाठी
+त्याची मूल्ये~$Y$ मध्ये आहेत, हे व्यक्त करता येते.
+म्हणून प्रांताच्या उपसंचांवर आकारमानाने मोठा नाही
+हा संबंधही परिभाषित करता येतो.
+
+\begin{prop}
+पुढील सूत्र
+\[
+\lexists[u][(\lforall[x][(X(x) \lif Y(u(x)))] \land \lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif
+      \eq[x][y])]])]
+\]
+आकारमानाने मोठा नाही हा संबंध परिभाषित करते.
+\end{prop}
+
+दोन संचांचे आकारमान समान असते, म्हणजे ते
+``तुल्यबल'' असतात, $\cardeq{X}{Y}$, जर आणि
+फक्त जर !!a{bijective} फलन~$f\colon X \to Y$ असेल.
+
+\begin{prop}
+पुढील सूत्र
+\begin{multline*}
+  \lexists[u][(\lforall[x][(X(x) \lif Y(u(x)))] \land {}\\
+    \lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif \eq[x][y])]]
+  \land {} \\\lforall[y][(Y(y) \lif \lexists[x][(X(x)
+      \land \eq[y][u(x)])])])]
+\end{multline*}
+तुल्यबल असण्याचा संबंध परिभाषित करते.
+\end{prop}
+
+या !!{formula}s ना अनुक्रमे $X \subseteq Y$,
+$X = Y$, $X \neq \emptyset$, $\cardle{X}{Y}$
+आणि $\cardeq{X}{Y}$ अशी संक्षिप्त चिन्हे वापरू.
+(संच $X$ आणि $Y$ यांच्याविषयी अनौपचारिकपणे
+बोलतानाही हीच चिन्हे वापरल्यामुळे थोडा गोंधळ होऊ शकतो;
+पण येथे ती एकस्थानी संबंधचले $X$ आणि~$Y$
+असलेल्या द्वितीय-क्रम तर्कशास्त्रातील !!{formula}s
+साठीची संक्षिप्त चिन्हे आहेत.)
+
+\begin{prop}
+!!{sentence} $\lforall[X][\lforall[Y][((\cardle{X}{Y} \land
+    \cardle{Y}{X}) \lif \cardeq{X}{Y})]]$ वैध आहे.
+\end{prop}
+
+\begin{proof}
+कोणत्याही उपसंचांसाठी $X \subseteq \Domain{M}$
+आणि $Y \subseteq \Domain{M}$, जर
+$\cardle{X}{Y}$ आणि $\cardle{Y}{X}$, तर
+$\cardeq{X}{Y}$ असेल, तर !!a{structure}~$\Struct{M}$
+मध्ये या !!{sentence} ची पूर्ति होते. पण हे
+\emph{कोणत्याही} संच $X$ आणि $Y$ साठी खरे आहे:
+हेच श्रेडर--बर्नस्टाइन प्रमेय आहे.
+\end{proof}
+
+
+\end{document}
