@@ -836,6 +836,10 @@ _DOCUMENTED_PROJECTIONS = {
         # OLINC-145: each position has its own formula sequence.
         (r'प्रत्येक $\Gamma_i$ ही', r'प्रत्येक $\Gamma_1$ ही'),
     ],
+    'OLP-0410': [
+        # OLINC-147: pair the conditional expansion's closing parenthesis.
+        (r'$(\lnot !A \lor !B)$', r'$\lnot !A \lor !B)$'),
+    ],
 }
 
 
