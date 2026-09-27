@@ -845,6 +845,11 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\tagitem{prvIff}{\indcase{!A}{(!B \liff',
          r'\tagitem{prvIf}{\indcase{!A}{(!B \liff'),
     ],
+    'OLP-0413': [
+        # OLINC-149: specify the world in the second duality proof.
+        (r'$\mSat/{M}{\Box\lnot !A}[w]$.' + '\n' + r'      $\mSat{M}{\Box\lnot !A}[w]$',
+         r'$\mSat/{M}{\Box\lnot !A}$.' + '\n' + r'      $\mSat{M}{\Box\lnot !A}[w]$'),
+    ],
 }
 
 
