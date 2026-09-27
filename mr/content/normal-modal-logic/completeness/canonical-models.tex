@@ -1,0 +1,38 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: canonical-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{cmd}
+
+\olsection{कॅनॉनिकल प्रतिमाने}
+
+मोडल प्रणाली~$\Sigma$ साठीचे \emph{कॅनॉनिकल प्रतिमान}
+हे विशिष्ट प्रतिमान~$\mModel{M^\Sigma}$ आहे; त्याची
+जगे म्हणजे सर्व संपूर्ण $\Sigma$-सुसंगत संच.
+त्याचा प्राप्यता संबंध~$R^\Sigma$ आणि
+मूल्यांकन~$V^\Sigma$ यांची व्याख्या अशी केली
+जाते की जग~$\Delta$ येथे सत्य असलेली
+!!{formula}s म्हणजे नेमकी~$\Delta$ मध्ये
+असलेली !!{formula}s असतात.
+
+\begin{defn}
+  $\Sigma$ हे सामान्य मोडल तर्कशास्त्र असू द्या.
+  $\Sigma$ साठीचे \emph{कॅनॉनिकल प्रतिमान}
+  म्हणजे $\mModel{M}^\Sigma = \tuple{W^\Sigma, R^\Sigma,
+    V^\Sigma}$, जेथे:
+  \begin{enumerate}
+  \item $W^\Sigma = \Setabs{ \Delta }{\Delta \text{
+      हा संपूर्ण $\Sigma$-सुसंगत आहे} }$.
+  \item $R^\Sigma \Delta\Delta'$ असेल तेव्हा आणि
+    तेव्हाच \iftag{prvBox}{$\Box^{-1}\Delta \subseteq
+      \Delta'$}{$\Diamond\Delta' \subseteq \Delta$}.
+  \item $V^\Sigma(p) = \Setabs{\Delta}{p \in \Delta}$.
+  \end{enumerate}
+\end{defn}
+
+
+\end{document}
