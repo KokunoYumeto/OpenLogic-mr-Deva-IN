@@ -1,0 +1,88 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: completeness-K
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{cmk}
+
+\olsection{\Log{K} चे निर्धारण आणि संपूर्णता}
+
+आता संपूर्णता सिद्ध करण्यासाठी कॅनॉनिकल प्रतिमान
+वापरता येईल. $\Sigma$ साठीच्या कॅनॉनिकल
+प्रतिमानात सत्य असलेली !!{formula}s म्हणजे
+नेमकी $\Sigma$-!!{derivable} सूत्रे असतात;
+या तथ्यावरून संपूर्णता मिळते. हा गुणधर्म
+असलेले प्रतिमान~$\Sigma$ चे
+\emph{निर्धारण करते} असे म्हणतात.
+
+\begin{defn}
+  सर्व !!{formula}s पैकी प्रत्येक~$!A$ साठी
+  $\mSat{M}{!A}$ असेल तेव्हा आणि तेव्हाच
+  $\Sigma \Proves !A$ असेल, तर
+  प्रतिमान~$\mModel{M}$ हे सामान्य मोडल
+  तर्कशास्त्र~$\Sigma$ चे
+  \emph{निर्धारण करते}.
+\end{defn}
+
+\begin{thm}[निर्धारण]\ollabel{thm:determination}
+   $\mSat{M^\Sigma}{!A}$ असेल तेव्हा
+   आणि तेव्हाच $\Sigma \Proves !A$.
+\end{thm}
+
+\begin{proof}
+  $\mSat{M^\Sigma}{!A}$ असेल, तर प्रत्येक
+  संपूर्ण $\Sigma$-सुसंगत $\Delta$ साठी
+  $\mSat{M^\Sigma}{!A}[\Delta]$.
+  म्हणून सत्यता पूर्वप्रमेयानुसार प्रत्येक
+  संपूर्ण $\Sigma$-सुसंगत $\Delta$ साठी
+  $!A \in \Delta$. त्यामुळे
+  \olref[lin]{cor:provability-characterization}
+  वरून ($\Gamma = \emptyset$ घेऊन)
+  $\Sigma \Proves !A$.
+
+  उलट $\Sigma \Proves !A$ असेल, तर
+  \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-closed}
+  नुसार प्रत्येक संपूर्ण $\Sigma$-सुसंगत
+  $\Delta$ मध्ये~$!A$ असते. म्हणून
+  सत्यता पूर्वप्रमेयानुसार प्रत्येक~$\Delta \in
+  W^\Sigma$ साठी
+  $\mSat{M^\Sigma}{!A}[\Delta]$;
+  म्हणजे $\mSat{M^\Sigma}{!A}$.
+\end{proof}
+
+\Log{K} साठीचे कॅनॉनिकल प्रतिमान~\Log{K}
+चे निर्धारण करत असल्याने
+\Log{K} ची संपूर्णता लगेच निष्पन्नतेने मिळते:
+
+\begin{cor}\ollabel{cor:Kcomplete}
+  मूलभूत मोडल तर्कशास्त्र~\Log{K}
+सर्व प्रतिमानांच्या वर्गाच्या सापेक्ष
+संपूर्ण आहे; म्हणजे
+$\Entails !A$ असेल, तर $\Log{K}
+\Proves !A$.
+\end{cor}
+
+\begin{proof}
+  प्रतिपरिवर्तनाने: $\Log{K} \Proves/ !A$
+  असेल, तर निर्धारणावरून
+  $\mSat/{M^{\Log{K}}}{!A}$;
+  म्हणून~$!A$ वैध नाही.
+\end{proof}
+
+सर्वसाधारणपणे एखादी प्रणाली~$\Sigma$
+प्रतिमानांच्या एखाद्या वर्गाच्या सापेक्ष
+संपूर्ण आहे हे सिद्ध करण्यासाठी
+केवळ निर्धारण पुरेसे नसते. उदाहरणार्थ,
+\Log{KTB4} ची परावर्ती, सममित आणि
+संक्रमक प्रतिमानांच्या वर्गाच्या सापेक्ष
+संपूर्णता विचारात घ्या. प्रणाली~$\Sigma$
+साठीचे कॅनॉनिकल प्रतिमान त्या वर्गातील
+सदस्य आहे हेही दाखवावे लागते.
+कॅनॉनिकल प्रतिमानाच्या रचनेवरून हे
+स्पष्टपणे मिळत नाही---काही वेळा
+तर ते खरेही नसते!
+
+\end{document}
