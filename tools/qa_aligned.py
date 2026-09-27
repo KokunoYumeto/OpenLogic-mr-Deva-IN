@@ -787,6 +787,13 @@ _DOCUMENTED_PROJECTIONS = {
         (r'(g\, \vec{x} (\fn{Succ}\, y))]]',
          r'(g\, \vec{x} (\fn{Succ}\, y)]]'),
     ],
+    'OLP-0391': [
+        # OLINC-131: the countervaluation satisfies Gamma, not entailment.
+        (r'$\pSat{v}{\Gamma}[\Log L]$',
+         r'$\pAssign v \Entails[\Log L] \Gamma$'),
+        (r'$\pSat/{v}{!B}[\Log L]$',
+         r'$\pAssign v \Entails/[\Log L] !B$'),
+    ],
 }
 
 

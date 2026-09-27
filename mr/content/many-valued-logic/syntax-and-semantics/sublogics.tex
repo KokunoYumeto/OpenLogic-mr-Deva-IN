@@ -1,0 +1,102 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: sublogics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{sub}
+
+\olsection{अभिजात तर्कशास्त्र~$\LogCL$ ची उपतर्कशास्त्रे म्हणून बहुमूल्य तर्कशास्त्रे}
+
+नेहमीची बहुमूल्य तर्कशास्त्रे अशा मॅट्रिक्सांनी परिभाषित होतात की
+$\{\True, \False\}$ मधील आदानांवर त्यांच्या सत्यता-फलनांची मूल्ये
+अभिजात सत्यता-फलनांशी जुळतात. नेमके म्हणजे, या तर्कशास्त्रांत
+$x \in \{\True, \False\}$ असल्यास $\tf{\lnot}[\Log L](x) =
+\tf{\lnot}[\LogCL](x)$; आणि $\star$ हे $\land$, $\lor$,
+$\lif$ यांपैकी कोणतेही असेल व $x, y \in \{\True, \False\}$
+असतील, तर $\tf{\star}[\Log L](x,y) =
+\tf{\star}[\LogCL](x,y)$. दुसऱ्या शब्दांत,
+$\lnot$, $\land$, $\lor$, $\lif$ यांची सत्यता-फलने
+$\{\True,\False\}$ वर मर्यादित केली असता ती नेमकी
+अभिजात सत्यता-फलनेच असतात.
+
+\begin{prop}\ollabel{prop:mvl-cl}
+  बहुमूल्य तर्कशास्त्र~$\Log L$ च्या भाषेत
+  $\lnot$, $\land$, $\lor$, $\lif$ ही संयोजके आहेत,
+  $\True, \False \in V$ आहेत आणि त्याची सत्यता-फलने
+  पुढील अटी पूर्ण करतात असे समजा:
+  \begin{enumerate}
+    \item\ollabel{prop:not} $x = \True$ किंवा $x = \False$
+    असल्यास $\tf{\lnot}[\Log L](x) = \tf{\lnot}[\LogCL](x)$;
+    \item\ollabel{prop:land} $\tf{\land}[\Log L](x,y) = \tf{\land}[\LogCL](x,y)$,
+    \item\ollabel{prop:lor} $\tf{\lor}[\Log L](x,y) = \tf{\lor}[\LogCL](x,y)$,
+    \item\ollabel{prop:lif} $\tf{\lif}[\Log L](x,y) = \tf{\lif}[\LogCL](x,y)$,
+    जेव्हा $x, y \in \{\True, \False\}$.
+  \end{enumerate}
+  मग $V$ मध्ये जाणाऱ्या कोणत्याही सत्य-मूल्यांकन~$\pAssign v$
+  साठी, प्रत्येक विधानीय चलाबाबत $\pAssign
+  v(p) \in \{\True,\False\}$ असल्यास,
+  या चार संयोजकांनी आणि विधानीय चलांनीच बनलेल्या प्रत्येक
+  सूत्रासाठी $\pValue v[\Log L](!A) = \pValue
+  v[\LogCL](!A)$.
+\end{prop}
+
+\begin{proof}
+  $!A$ वरील विगमनाने.
+  \begin{enumerate}
+  \item $!A \ident p$ हे आण्विक असेल, तर
+  $\pValue v[\Log L](!A) = \pAssign v(p) = \pValue
+  v[\LogCL](!A)$.
+  \item $!A \ident \lnot B$ असेल, तर
+  \begin{align*}
+    \pValue v[\Log L](!A) & = \tf{\lnot}[\Log L](\pValue v[\Log L](!B)) & &\text{\olref[val]{defn:pValue} नुसार}\\
+    & = \tf{\lnot}[\Log L](\pValue v[\LogCL](!B)) && \text{विगमन-गृहीतकानुसार}\\
+    & = \tf{\lnot}[\LogCL](\pValue v[\LogCL](!B))
+&&\text{\olref{prop:not} या गृहीतकानुसार,}\\
+&&&\text{कारण $\pValue v[\LogCL](!B) \in \{\True, \False\}$,}\\
+& = \pValue v[\LogCL](!A) &&\text{\olref[val]{defn:pValue} नुसार}.
+\end{align*}
+\item $!A \ident (!B \land !C)$ असेल, तर
+\begin{align*}
+  \pValue v[\Log L](!A) & = \tf{\land}[\Log L](\pValue v[\Log L](!B), \pValue v[\Log L](!C)) & &\text{\olref[val]{defn:pValue} नुसार}\\
+  & = \tf{\land}[\Log L](\pValue v[\LogCL](!B),\pValue v[\LogCL](!C)) && \text{विगमन-गृहीतकानुसार}\\
+  & = \tf{\land}[\LogCL](\pValue v[\LogCL](!B),\pValue v[\LogCL](!C))
+&&\text{\olref{prop:land} या गृहीतकानुसार,}\\
+&&&\text{कारण $\pValue v[\LogCL](!B),\pValue v[\LogCL](!C) \in \{\True, \False\}$,}\\
+& = \pValue v[\LogCL](!A) &&\text{\olref[val]{defn:pValue} नुसार}.
+\end{align*}
+\end{enumerate}
+$!A \ident (!B \lor !C)$ आणि $!A \ident (!B \lif !C)$
+ही प्रकरणेही यांसारखीच आहेत.
+\end{proof}
+
+\begin{cor}
+  या समान चार-संयोजक खंडातील सूत्रेच विचारात घेतली असता,
+  बहुमूल्य तर्कशास्त्राने \olref{prop:mvl-cl} च्या अटी पूर्ण केल्या,
+  $\True \in V^+$ आणि $\False \notin V^+$ असेल, तर
+  ${\Entails[\Log L]} \subseteq {\Entails[\LogCL]}$;
+  म्हणजे $\Gamma \Entails[\Log L] !B$ असल्यास
+  $\Gamma \Entails[\LogCL] !B$. विशेषतः $\Log L$ मधील
+  या खंडातील प्रत्येक सर्वतः सत्य सूत्र अभिजात तर्कशास्त्रातही
+  सर्वतः सत्य असते.
+\end{cor}
+
+\begin{proof}
+  व्यत्यय-विधान सिद्ध करू. $\Gamma \Entails/[\LogCL] !B$
+  असे समजा. मग असे !!{valuation}~$\pAssign v\colon \PVar \to
+  \{\True, \False\}$ अस्तित्वात असते की सर्व
+  $!A \in \Gamma$ साठी $\pValue v[\LogCL](!A) = \True$
+  आणि $\pValue v[\LogCL](!B) = \False$.
+  $\True, \False \in V$ असल्याने !!{valuation}~$\pAssign v$
+  हे~$\Log L$ साठीही !!a{valuation} आहे.
+  \olref{prop:mvl-cl} नुसार सर्व $!A \in \Gamma$ साठी
+  $\pValue v[\Log L](!A) = \True$ आणि
+  $\pValue v[\Log L](!B) = \False$.
+  $\True \in V^+$ आणि $\False \notin V^+$ असल्याने
+  $\pSat{v}{\Gamma}[\Log L]$ आणि
+  $\pSat/{v}{!B}[\Log L]$; म्हणजे
+  $\Gamma \Entails/[\Log L] !B$.
+\end{proof}
+\end{document}
