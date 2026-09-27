@@ -1,0 +1,58 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: relational-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{rel}
+
+\olsection{संबंधी प्रतिमाने}
+
+सामान्य मोडल तर्कशास्त्रांच्या चिन्हार्थमीमांसेची मूलभूत संकल्पना
+म्हणजे \emph{संबंधी प्रतिमान}. त्यात द्विस्थानी ``प्राप्यता संबंधाने''
+संबंधित जगांचा संच आणि कोणते !!{propositional variable}s कोणत्या
+जगांत ``सत्य'' मानायची हे ठरवणारे मूल्यांकन असते.
+
+\begin{defn}
+  मूलभूत मोडल भाषेचे \emph{प्रतिमान} म्हणजे त्रिकूट $\mModel{M}
+  = \tuple{W, R, V}$; येथे
+  \begin{enumerate}
+  \item $W$ हा ``जगांचा'' रिकामा नसलेला संच आहे,
+  \item $R$ हा~$W$ वरील द्विस्थानी प्राप्यता संबंध आहे, आणि
+  \item $V$ हे प्रत्येक !!{propositional
+    variable}~$p$ ला संभाव्य जगांचा संच~$V(p)$ नेमून देणारे फलन आहे.
+  \end{enumerate}
+  $Rww'$ असेल तेव्हा $w'$ हे~$w$ पासून \emph{प्राप्य}
+  आहे असे म्हणतो. $w \in V(p)$ असेल तेव्हा $p$ हे~$w$ येथे
+  \emph{सत्य} आहे असे म्हणतो.
+\end{defn}
+
+संबंधी चिन्हार्थमीमांसेचा मोठा फायदा असा की प्रतिमाने
+\olref{fig:simple} मधील साध्या आकृतीसारख्या आकृत्यांनी दाखवता
+येतात. जगांसाठी गाठी वापरतात; $w$ पासून~$w'$ कडे बाण
+असेल तेव्हा आणि केवळ तेव्हाच जग~$w'$ हे~$w$ पासून प्राप्य
+असते. शिवाय $w \in V(p)$ असेल तर गाठीला (जगाला)~$\mTrue{p}$,
+अन्यथा~\mFalse{p} अशी खूण करतो. \olref{fig:simple} मध्ये
+$W = \{w_1, w_2, w_3\}$, $R = \{\tuple{w_1, w_2},\tuple{w_1,
+  w_3}\}$, $V(p) = \{w_1, w_2\}$ आणि $V(q) = \{w_2\}$
+असलेले प्रतिमान दाखवले आहे.
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]right:\mTrue{p}\\ \mFalse{q}}]{$w_1$};
+      \node[world] (w2) [label={[align=right]right:\mTrue{p}\\ \mTrue{q}},
+        above right=of w1]{$w_2$};
+      \node[world] (w3) [label={[align=right]right:\mFalse{p}\\ \mFalse{q}},
+        below right=of w1] {$w_3$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{साधे प्रतिमान.}
+  \ollabel{fig:simple}
+\end{figure}
+
+\end{document}
