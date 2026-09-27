@@ -1,0 +1,110 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: proofs-modal-systems
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{prs}
+
+\olsection{मोडल प्रणालींमधील सिद्धता}
+
+आता~\Log{K} व्यतिरिक्त इतर मोडल तर्कशास्त्रीय
+प्रणालींमधील सिद्धता पाहू.
+
+\begin{prop}\ollabel{prop:S5facts}
+पुढील सिद्धताविषयक परिणाम मिळतात:
+  \begin{enumerate}
+  \item $\Log{KT5} \Proves \Ax{B}$;
+  \item $\Log{KT5} \Proves \Ax{4}$;
+  \item $\Log{KDB4} \Proves \Ax{T}$;
+  \item $\Log{KB4} \Proves \Ax{5}$;
+  \item $\Log{KB5} \Proves \Ax{4}$;
+  \item \ollabel{prop:S5facts-KT-D}$\Log{KT} \Proves \Ax{D}$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  प्रत्येक परिणामाची सिद्धता देऊ.
+  \begin{enumerate}
+    \item $\Log{KT5} \Proves \Ax{B}$:
+      \begin{derivation}
+        1. & $\Log{KT5} \Proves \Diamond!A \lif \Box\Diamond!A$ & \Ax{5}\\
+        2. & $\Log{KT5} \Proves !A \lif \Diamond!A$ & $\Ax{T_\Diamond}$\\
+        3. & $\Log{KT5} \Proves !A \lif \Box\Diamond!A$ & \PL, 2, 1.
+      \end{derivation}
+    \item $\Log{KT5} \Proves \Ax{4}$:
+      \begin{derivation}
+        1. &$\Log{KT5} \Proves \Diamond\Box!A \lif \Box\Diamond\Box!A$ & \Ax{5}
+        मध्ये $p$ च्या जागी $\Box!A$\\
+        2. & $\Log{KT5} \Proves \Box!A \lif \Diamond\Box!A$ & $\Ax{T_\Diamond}$
+        मध्ये $p$ च्या जागी $\Box!A$\\
+        3. & $\Log{KT5} \Proves \Box!A \lif \Box\Diamond\Box!A$ & \PL, 2, 1\\
+        4. & $\Log{KT5} \Proves \Diamond\Box!A \lif \Box!A$ & $\Ax{5_\Diamond}$\\
+        5. & $\Log{KT5} \Proves \Box\Diamond\Box!A \lif \Box\Box!A$ & \RK{}, 4 \\
+        6. & $\Log{KT5} \Proves \Box!A \lif \Box\Box!A$ & \PL, 3, 5. \\
+      \end{derivation}
+    \item $\Log{KDB4} \Proves \Ax{T}$:
+      \begin{derivation}
+        1. & $\Log{KDB4} \Proves \Diamond\Box!A \lif !A $ & $\Ax{B_\Diamond}$ \\
+        2. & $\Log{KDB4} \Proves \Box\Box!A \lif \Diamond\Box!A$ & $\Ax{D}$
+        मध्ये $p$ च्या जागी $\Box!A$\\
+        3. & $\Log{KDB4} \Proves \Box\Box!A \lif !A$ & \PL, 1, 2\\
+        4. & $\Log{KDB4} \Proves \Box!A \lif \Box\Box!A$ & \Ax{4} \\
+        5. & $\Log{KDB4} \Proves \Box!A \lif !A$ & \PL, 4, 3. \\
+      \end{derivation}
+    \item $\Log{KB4} \Proves \Ax{5}$:
+      \begin{derivation}
+        1. & $\Log{KB4} \Proves \Diamond!A \lif \Box \Diamond\Diamond!A$ & \Ax{B}
+        मध्ये $p$ च्या जागी $\Diamond!A$\\
+        2. & $\Log{KB4} \Proves \Diamond\Diamond !A \lif \Diamond !A$ &
+        $\Ax{4_\Diamond}$ \\
+        3. & $\Log{KB4} \Proves \Box\Diamond\Diamond !A \lif \Box \Diamond!A$ &
+        \RK{}, 2 \\
+        4. & $\Log{KB4} \Proves \Diamond!A \lif \Box\Diamond!A$ & \PL, 1, 3.
+      \end{derivation}
+    \item $\Log{KB5} \Proves \Ax{4}$:
+      \begin{derivation}
+        1. & $\Log{KB5} \Proves \Box!A \lif \Box\Diamond\Box !A$ & \Ax{B} with
+        $p$ च्या जागी $\Box!A$ \\
+        2. & $\Log{KB5} \Proves  \Diamond\Box!A \lif \Box !A$ &
+        $\Ax{5_\Diamond}$\\
+        3. & $\Log{KB5} \Proves  \Box\Diamond\Box!A \lif \Box\Box !A$ & \RK{}, 2 \\
+        4. & $\Log{KB5} \Proves  \Box!A \lif \Box\Box!A$ & \PL, 1, 3.
+      \end{derivation}
+    \item $\Log{KT} \Proves \Ax{D}$:
+      \begin{derivation}
+        1. & $\Log{KT} \Proves \Box !A \lif !A$ & \Ax{T} \\
+        2. & $\Log{KT} \Proves !A \lif \Diamond!A$ & $\Ax{T_\Diamond}$ \\
+        3. & $\Log{KT} \Proves \Box !A \lif \Diamond !A$ &  \PL, 1, 2
+      \end{derivation}
+  \end{enumerate}
+\end{proof}
+
+\begin{defn}
+  प्रचलित संकेतानुसार \Log{S4} ही प्रणाली
+  \Log{KT4} आणि \Log{S5} ही प्रणाली
+  \Log{KTB4} अशी परिभाषित करतो.
+\end{defn}
+
+पुढील प्रतिज्ञा दाखवते की अभिजात प्रणाली~\Log{S5}
+अनेक समतुल्य स्वयंसिद्धक-प्रणालींनी मिळते. हे
+आश्चर्यकारक नाही; स्वयंसिद्धकांचे हे वेगवेगळे संयोग
+समतुल्यता संबंधांनाच लक्षणित करतात
+(\olref[frd][es5]{prop:equivalences} पाहा).
+
+\begin{prop}\ollabel{prop:S5}
+  $\Log{KTB4} = \Log{KT5} = \Log{KDB4} = \Log{KDB5}$.
+\end{prop}
+
+\begin{proof}
+  सराव.
+\end{proof}
+
+\begin{prob}
+  \olref[nml][prf][prs]{prop:S5} सिद्ध करा.
+\end{prob}
+
+
+\end{document}
