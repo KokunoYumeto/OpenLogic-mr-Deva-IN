@@ -1204,6 +1204,18 @@ _DOCUMENTED_PROJECTIONS = {
          r'म्हणून' + '\n' + r'  $\Gamma \Proves !A$' + '\n' +
          r'  हेच मिळते.'),
     ],
+    'OLP-0516': [
+        # The English title has a discretionary line-break command within
+        # "Counter-factuals"; Marathi does not need it.
+        (r'\olpart{cnt}{प्रतिवास्तविक विधाने}',
+         r'\olpart{cnt}{प्रतिवास्त\-विक विधाने}'),
+    ],
+    'OLP-0520': [
+        # OLINC-236: the disputed non-entailment concerns the strict
+        # conditional; negating the material conditional entails A and not B.
+        (r'\lnot(!A \strictif !B) & \Entails/ !A \land \lnot !B',
+         r'\lnot(!A \lif !B) & \Entails/ !A \land \lnot !B'),
+    ],
 }
 
 

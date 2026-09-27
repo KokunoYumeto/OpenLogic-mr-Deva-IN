@@ -1,0 +1,147 @@
+% Part: counterfactuals
+% Chapter: introduction
+% Section: strict-conditional
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cnt}{int}{str}
+
+\olsection{कठोर अभिव्यंजन}
+
+लुईस यांनी \emph{कठोर अभिव्यंजन}~$\strictif$
+हा कारक मांडला आणि वास्तविक अभिव्यंजनाऐवजी
+तो तार्किक निष्पन्नतेशी जुळतो, असा युक्तिवाद
+केला. अवश्यतावाचक मोडल तर्कशास्त्रात
+$!A \strictif !B$ ची व्याख्या
+$\Box(!A \lif !B)$ अशी करता येते.
+म्हणून एखाद्या जगात कठोर अभिव्यंजन
+सत्य असते तेव्हा आणि तेव्हाच संबंधित
+वास्तविक अभिव्यंजन अवश्य सत्य असते.
+
+वास्तविक अभिव्यंजनाच्या विरोधाभासांच्या
+बाबतीत कठोर अभिव्यंजन कसे वागते?
+पूर्वांग असत्य असलेले कठोर अभिव्यंजन,
+तसेच उत्तरांग सत्य असलेले कठोर अभिव्यंजन,
+सत्यही असू शकते किंवा असत्यही.
+शिवाय $(!A \strictif !B) \lor (!B \strictif !A)$
+वैध नाही. $!A \strictif !B$
+हे कठोर अभिव्यंजन
+$\lnot !A \lor !B$ शीही
+सममूल्य नाही; त्यामुळे ते
+सत्यता-फलनात्मक नाही.
+
+S5 च्या संदर्भात पुढील संबंध मिळतात:
+\begin{align}
+  !A \strictif !B & \Entails \lnot !A \lor !B
+  \text{ पण:}\\
+  \lnot !A \lor !B & \Entails/ !A \strictif !B\\
+  !B & \Entails/ !A \strictif !B\\
+  \lnot !A & \Entails/ !A \strictif !B\\
+  \lnot(!A \strictif !B) & \Entails/ !A \land \lnot !B
+  \text{ पण:}\\
+  !A \land \lnot !B & \Entails \lnot(!A \strictif !B)
+  \intertext{तरीही कठोर अभिव्यंजनामुळे
+    विध्यात्मक अनुमान लागू होते:}
+  !A, !A \strictif !B & \Entails !B
+  \intertext{कठोर अभिव्यंजन
+    निष्कर्षांचे संयुग्मीकरण करते:}
+  !A \strictif !B,  !A \strictif !C & \Entails !A \strictif (!B \land !C)
+  \intertext{कठोर अभिव्यंजनासाठी
+    पूर्वांग अधिक बलवान करता येते:}
+  !A \strictif !B & \Entails (!A \land !C) \strictif !B
+  \intertext{कठोर अभिव्यंजन
+    संक्रमकही आहे:}
+  !A \strictif !B, !B \strictif !C & \Entails !A \strictif !C
+  \intertext{शेवटी, कठोर अभिव्यंजन
+    त्याच्या प्रतिपरिवर्तित विधानाशी
+    सममूल्य आहे:}
+  !A \strictif !B & \Entails \lnot !B \strictif \lnot !A\\
+  \lnot !B \strictif \lnot !A & \Entails !A \strictif !B
+\end{align}
+
+\begin{prob}
+  कठोर अभिव्यंजनासाठी लागू न होणाऱ्या
+  तार्किक निष्पन्नता-संबंधांना
+  \Log{S5} मधील प्रतिदृष्टांत द्या;
+  म्हणजे पुढील प्रत्येकासाठी:
+  \begin{enumerate}
+  \item $\lnot p \Entails/ \Box(p \lif q)$
+  \item $q \Entails/ \Box(p \lif q)$
+  \item $\lnot\Box(p \lif q) \Entails/ p \land \lnot q$
+  \item $\Entails/ \Box(p \lif q) \lor \Box(q \lif p)$
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  वैध तार्किक निष्पन्नता-संबंध
+  कठोर अभिव्यंजनासाठी लागू होतात
+  हे दाखवण्यासाठी पुढील
+  विधानांचे \Log{S5} मध्ये
+  पुरावे द्या:
+  \begin{enumerate}
+  \item  $\Box(!A \lif !B) \Entails \lnot !A \lor !B$
+  \item $!A \land \lnot !B \Entails \lnot\Box(!A \lif !B)$
+  \item $!A, \Box(!A \lif !B) \Entails !B$
+  \item $\Box(!A \lif !B), \Box(!A \lif !C) \Entails \Box(!A \lif (!B
+    \land !C))$
+  \item $\Box(!A \lif !B) \Entails \Box((!A \land !C) \lif !B)$
+  \item $\Box(!A \lif !B), \Box(!B \lif !C) \Entails \Box(!A
+    \lif !C)$
+  \item $\Box(!A \lif !B) \Entails \Box(\lnot !B \lif \lnot !A)$
+  \item $\Box(\lnot !B \lif \lnot !A) \Entails \Box(!A \lif !B)$
+  \end{enumerate}
+  \end{prob}
+
+तरी कठोर अभिव्यंजनाचे स्वतःचेही
+‘‘विरोधाभास’’ आहेत. पूर्वांग असत्य
+असेल किंवा उत्तरांग सत्य असेल,
+तर वास्तविक अभिव्यंजन सत्य
+असते. त्याचप्रमाणे, पूर्वांग
+\emph{अवश्य} असत्य असेल
+किंवा उत्तरांग अवश्य सत्य असेल,
+तर कठोर अभिव्यंजन सत्य असते.
+S5 मध्ये कोणतेही सत्य कठोर
+अभिव्यंजन अवश्य सत्य असते
+आणि कोणतेही असत्य कठोर
+अभिव्यंजन अवश्य असत्य असते.
+दुसऱ्या शब्दांत,
+\begin{align}
+  \Box \lnot !A & \Entails !A \strictif !B\\
+  \Box !B & \Entails !A \strictif !B\\
+  !A \strictif !B& \Entails \Box(!A \strictif !B)\\
+  \lnot(!A \strictif !B) & \Entails \Box\lnot(!A \strictif !B)
+\end{align}
+$\strictif$ चा अर्थ ‘‘तार्किकरीत्या
+निष्पन्न होते’’ असा घेतल्यास
+यात अडचण नाही. शेवटी,
+तार्किक निष्पन्नतेचे संबंध ही
+गणिती तथ्ये आहेत; म्हणून
+ती नैमित्तिक असू शकत नाहीत.
+पण ‘‘जर \dots तर \dots’’
+याचा अर्थ पकडणारा तार्किक
+कारक म्हणून $\strictif$
+वापरायचा असेल, तर या
+गोष्टी प्रश्न निर्माण करतात,
+विशेषतः शेवटच्या दोन.
+कारण काही ‘‘जर \dots तर \dots’’
+विधाने नैमित्तिकरीत्या
+सत्य किंवा असत्य असतात;
+प्रत्यक्षात ती सहसा
+ना अवश्य सत्य असतात,
+ना अशक्य.
+
+\begin{prob}
+  पुढील विधानांचे \Log{S5}
+  मध्ये पुरावे द्या:
+  \begin{enumerate}
+    \item  $\Box \lnot !A \Entails !A \strictif !B$
+    \item $!A \strictif !B \Entails \Box(!A \strictif !B)$
+    \item $\lnot(!A \strictif !B)  \Entails \Box\lnot(!A \strictif !B)$
+  \end{enumerate}
+  त्यासाठी $\strictif$ ची
+  व्याख्या वापरा.
+\end{prob}
+
+\end{document}
