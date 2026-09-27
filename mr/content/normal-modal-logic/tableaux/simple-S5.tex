@@ -1,0 +1,97 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: simple-S5
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{s5}
+
+\olsection{\Log{S5} साठी सोपे \usetoken{P}{tableau}}
+
+\Log{S5} ही प्रणाली वैश्विक प्रतिमानांच्या
+वर्गासाठी निर्दोष आणि पूर्ण आहे; अशा प्रतिमानांत
+प्रत्येक जग प्रत्येक जगापासून प्राप्य असते.
+वैश्विक प्रतिमानांत प्राप्यता संबंध स्वतंत्रपणे
+तपासण्याची गरज नसते: ‘$\mSat{M}{!A}[w]$
+होईल असे जग~$w$ आहे’ हे विधान तेव्हा आणि
+तेव्हाच खरे असते जेव्हा असे~$w$ हे~$u$
+पासून प्राप्य असते. म्हणून \Log{S5} मध्ये
+प्रतिमानाची व्याख्या केवळ जगांचा संच आणि
+सत्य-मूल्यांकन~$V$ यांद्वारे करता येते. यावरून
+!!{tableau} चे नियमही सोपे करता येतील असे
+सुचते. सर्वसाधारण प्रकरणात पूर्वचिन्हे म्हणून
+धन पूर्णांकांच्या क्रमिका वापरतो, म्हणजे कोणत्या
+पूर्वचिन्हाने नाव दिलेले जग दुसऱ्या जगापासून
+प्राप्य आहे याची नोंद ठेवता येते:
+$\sigma.n$ हे~$\sigma$ पासून प्राप्य
+जगाचे नाव देते. पण \Log{S5} मध्ये कोणतेही
+जग कोणत्याही जगापासून प्राप्य असते, त्यामुळे
+अशी नोंद ठेवण्याची गरज नाही. त्याऐवजी
+धन पूर्णांक पूर्वचिन्हे म्हणून वापरता येतात.
+सोपे केलेले नियम \olref{tab:rules-S5}
+मध्ये दिले आहेत.
+
+\begin{table}
+  \begin{center}
+    \def\arraystretch{3}\def\fCenter{}
+    \begin{tabular}{|c|c|}
+    \hline
+    \iftag{prvBox}{
+      \AxiomC{\sFmla{\True}{\Box !A}[n]}
+      \RightLabel{\TRule{\True}{\Box}}
+      \UnaryInfC{\sFmla{\True}{!A}[m]}
+      \DisplayProof
+      &
+      \AxiomC{\sFmla{\False}{\Box !A}[n]}
+      \RightLabel{\TRule{\False}{\Box}}
+      \UnaryInfC{\sFmla{\False}{!A}[m]}
+      \DisplayProof\\
+      $m$ वापरलेले आहे & $m$ नवे आहे
+      \\[1ex]
+      \hline}{}
+    \iftag{prvDiamond}{
+      \AxiomC{\sFmla{\True}{\Diamond !A}[n]}
+      \RightLabel{\TRule{\True}{\Diamond}}
+      \UnaryInfC{\sFmla{\True}{!A}[m]}
+      \DisplayProof
+      &
+      \AxiomC{\sFmla{\False}{\Diamond !A}[n]}
+      \RightLabel{\TRule{\False}{\Diamond}}
+      \UnaryInfC{\sFmla{\False}{!A}[m]}
+      \DisplayProof\\
+      $m$ नवे आहे & $m$ वापरलेले आहे
+      \\[1ex]
+      \hline}{}
+    \end{tabular}
+  \end{center}
+  \caption{\Log{S5} साठी सोपे केलेले नियम.}
+  \ollabel{tab:rules-S5}
+\end{table}
+
+\begin{ex}
+  $\Log{S5} \Proves \Ax{5}$, म्हणजे
+  $\Diamond!A \lif \Box\Diamond!A$, हे दाखवणारा
+  सोपा केलेला बंद टॅब्लो पुढीलप्रमाणे आहे.
+  \begin{oltableau}
+    [\pFmla{\False}{\Diamond\formula{A} \lif \Box\Diamond \formula{A}}{1},
+      just = \TAss
+      [\pFmla{\True}{\Diamond \formula{A}}{1}, just = {\TRule{\False}{\lif}[1]}
+        [\pFmla{\False}{\Box\Diamond \formula{A}}{1},
+          just = {\TRule{\False}{\lif}[1]}
+          [\pFmla{\False}{\Diamond \formula{A}}{2},
+            just = {\TRule{\False}{\Box}[3]}
+            [\pFmla{\True}{\formula{A}}{3},
+              just = {\TRule{\True}{\Diamond}[2]}
+                [\pFmla{\False}{\formula{A}}{3},
+                  just = {\TRule{\False}{\Diamond}[4]}, close]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+\end{ex}
+
+\end{document}
