@@ -1,0 +1,170 @@
+% Part: lambda-calculus
+% Chapter: church-rosser
+% Section: parallel-beta-reduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{cr}{pb}
+
+\olsection{समांतर $\beta$-न्यूनीकरण}
+
+या विभागात \emph{समांतर $\beta$-न्यूनीकरण} ही संकल्पना
+मांडू आणि तिला चर्च–रॉसर गुणधर्म आहे हे सिद्ध करू.
+
+\begin{defn}[समांतर $\beta$-न्यूनीकरण, $\bredpar$] \ollabel{defn:bredpar}
+  पदांचे समांतर न्यूनीकरण ($\bredpar$) पुढीलप्रमाणे
+  विगमनाने परिभाषित केले जाते:
+  \begin{enumerate}
+    \item \ollabel{defn:bredpar1} $x \bredpar x$.
+    \item \ollabel{defn:bredpar2} $N \bredpar N'$ असेल, तर $\lambd[x][N] \bredpar
+      \lambd[x][N']$.
+    \item \ollabel{defn:bredpar3} $P \bredpar P'$ आणि $Q \bredpar Q'$ असतील, तर $PQ \bredpar
+      P'Q'$.
+    \item \ollabel{defn:bredpar4} $N \bredpar N'$ आणि $Q \bredpar Q'$ असतील, तर
+      $(\lambd[x][N])Q \bredpar \Subst{N'}{Q'}{x}$.
+  \end{enumerate}
+\end{defn}
+
+समांतर $\beta$-न्यूनीकरणात एका पायरीत पदातील कितीही
+रेडेक्सचे संकुचन करता येते. ते $\beta$-न्यूनीकरणापेक्षा
+वेगळे आहे: मूळ पदात असलेल्या रेडेक्सचेच संकुचन त्या
+पायरीत करता येते; समांतर $\beta$-न्यूनीकरणामुळे नव्याने निर्माण
+झालेल्या रेडेक्सचे नाही. उदाहरणार्थ,
+$(\lambd[f][fx])(\lambd[y][y])$ या पदाचे समांतर
+$\beta$-न्यूनीकरण केल्यास तेच पद किंवा
+$(\lambd[y][y])x$ मिळू शकते; एका पायरीत पुढे~$x$
+मिळू शकत नाही. मात्र नेहमीच्या $\beta$-न्यूनीकरणाने
+ते~$x$ मध्ये न्यूनीत होते. कारण संबंधित रेडेक्स समांतर
+$\beta$-न्यूनीकरणाची पहिली पायरी झाल्यावरच निर्माण
+होतो. दुसरी समांतर $\beta$-न्यूनीकरणाची पायरी
+घेतल्यास~$x$ मिळते.
+
+\begin{thm}\ollabel{thm:refl}
+  $M \bredpar M$.
+\end{thm}
+
+\begin{proof}
+  सरावासाठी.
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pb]{thm:refl} सिद्ध करा.
+\end{prob}
+
+\begin{defn}[$\beta$-पूर्ण विकास]\ollabel{defn:bcd}
+  $M$ चा \emph{$\beta$-पूर्ण विकास}~$\bcd{M}$ पुढीलप्रमाणे
+  विगमनाने परिभाषित केला जातो:
+  \begin{align}
+    \bcd{x} &= x \ollabel{defn:bcd1} \\
+    \bcd{(\lambd[x][N])} &= \lambd[x][\bcd{N}] \ollabel{defn:bcd2}\\
+    \bcd{(PQ)} &= \bcd{P}\bcd{Q} && \text{जर $P$ हे $\lambd$-अमूर्तीकरण नसेल तर}
+    \ollabel{defn:bcd3} \\
+    \bcd{((\lambd[x][N])Q)} &= \Subst{\bcd{N}}{\bcd{Q}}{x} \ollabel{defn:bcd4}
+  \end{align}
+\end{defn}
+
+पदाचा $\beta$-पूर्ण विकास म्हणजे नावाप्रमाणे
+``संपूर्ण समांतर न्यूनीकरण''. समांतर $\beta$-न्यूनीकरणात
+एखाद्या रेडेक्सचे संकुचन टाळता येते; पण पूर्ण विकासात
+सर्व मूळ रेडेक्सचे संकुचन करावेच लागते. म्हणून
+$(\lambd[f][fx])(\lambd[y][y])$ चा पूर्ण विकास तेच
+पद नसून $(\lambd[y][y])x$ आहे.
+
+\begin{editorial}
+  या व्याख्येत अडचण अशी की ($\lambd$-)पदांवरील फलने
+  पुनरावर्ती रीतीने कशी परिभाषित करायची हे अजून
+  मांडलेले नाही. पुढे दुरुस्त करू.
+\end{editorial}
+
+\begin{lem}\ollabel{lem:comp}
+  $M \bredpar M'$ आणि $R \bredpar R'$ असतील, तर $\Subst{M}{R}{y}
+  \bredpar \Subst{M'}{R'}{y}$.
+\end{lem}
+
+\begin{proof}
+  $M \bredpar M'$ च्या !!{derivation} वर विगमन करू.
+  \begin{enumerate}
+    \item अखेरची पायरी \olref{defn:bredpar1} आहे: सरावासाठी.
+    \item अखेरची पायरी \olref{defn:bredpar2} आहे: मग $M$ हे
+      $\lambd[x][N]$ आणि $M'$ हे $\lambd[x][N']$ आहे,
+      जेथे $N \bredpar N'$. आपल्याला
+      $\Subst{(\lambd[x][N])}{R}{y} \bredpar
+      \Subst{(\lambd[x][N'])}{R'}{y}$, म्हणजे
+      $\lambd[x][\Subst{N}{R}{y}] \bredpar
+      \lambd[x][\Subst{N'}{R'}{y}]$, हे सिद्ध करायचे आहे.
+      ते \olref{defn:bredpar2} आणि विगमन गृहीतकावरून
+      लगेच मिळते.
+    \item अखेरची पायरी \olref{defn:bredpar3} आहे: सरावासाठी.
+    \item अखेरची पायरी \olref{defn:bredpar4} आहे: $M$ हे
+      $(\lambd[x][N])Q$ आणि $M'$ हे $\Subst{N'}{Q'}{x}$ आहे.
+      आपल्याला $\Subst{((\lambd[x][N])Q)}{R}{y} \bredpar
+      \Subst{\Subst{N'}{Q'}{x}}{R'}{y}$, म्हणजे
+      $(\lambd[x][\Subst{N}{R}{y}])\Subst{Q}{R}{y} \bredpar
+      \Subst{\Subst{N'}{R'}{y}}{\Subst{Q'}{R'}{y}}{x}$,
+      हे सिद्ध करायचे आहे. ते \olref{defn:bredpar4}
+      आणि विगमन गृहीतकावरून मिळते.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pb]{lem:comp} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{lem}\ollabel{lem:cont}
+  $M \bredpar M'$ असेल, तर $M' \bredpar \bcd{M}$.
+\end{lem}
+\begin{proof}
+  $M \bredpar M'$ च्या !!{derivation} वर विगमन करू.
+  \begin{enumerate}
+    \item अखेरचा नियम \olref{defn:bredpar1} आहे: सरावासाठी.
+    \item अखेरचा नियम \olref{defn:bredpar2} आहे: $M$ हे
+      $\lambd[x][N]$ आणि $M'$ हे $\lambd[x][N']$ आहे,
+      जेथे $N \bredpar N'$. आपल्याला $\lambd[x][N'] \bredpar
+      \bcd{(\lambd[x][N])}$, म्हणजे \olref{defn:bcd2} नुसार
+      $\lambd[x][N'] \bredpar \lambd[x][\bcd{N}]$,
+      दाखवायचे आहे. ते \olref{defn:bredpar2} आणि
+      विगमन गृहीतकावरून मिळते.
+    \item अखेरचा नियम \olref{defn:bredpar3} आहे: $M$ हे $PQ$
+      आणि $M'$ हे $P'Q'$ आहे, जेथे $P$, $Q$, $P'$, $Q'$
+      अशी पदे आहेत की $P \bredpar P'$ आणि $Q \bredpar Q'$.
+      विगमन गृहीतकानुसार $P' \bredpar \bcd{P}$ आणि
+      $Q' \bredpar \bcd{Q}$.
+      \begin{enumerate}
+        \item काही $x$ आणि $N$ साठी $P$ हे $\lambd[x][N]$
+          असेल, तर काही $N'$ साठी $P'$ हे $\lambd[x][N']$
+          असावे लागते आणि $N \bredpar N'$. विगमन गृहीतकानुसार
+          $N' \bredpar \bcd{N}$ आणि $Q' \bredpar \bcd{Q}$.
+          मग \olref{defn:bredpar4} नुसार
+          $(\lambd[x][N'])Q' \bredpar
+          \Subst{\bcd{N}}{\bcd{Q}}{x}$.
+        \item $P$ हे $\lambd$-अमूर्तीकरण नसेल, तर
+          \olref{defn:bredpar3} नुसार $P'Q' \bredpar
+          \bcd{P}\bcd{Q}$; आणि \olref{defn:bcd3} नुसार
+          उजवीकडील पद $\bcd{PQ}$ आहे.
+      \end{enumerate}
+    \item अखेरचा नियम \olref{defn:bredpar4} आहे: काही
+      $x$, $N$, $Q$, $N'$ आणि~$Q'$ साठी $M$ हे
+      $(\lambd[x][N])Q$ आणि $M'$ हे $\Subst{N'}{Q'}{x}$,
+      जेथे $N \bredpar N'$ आणि $Q \bredpar Q'$.
+      विगमन गृहीतकानुसार $N' \bredpar \bcd{N}$ आणि
+      $Q' \bredpar \bcd{Q}$. \olref{lem:comp} नुसार
+      $\Subst{N'}{Q'}{x} \bredpar \Subst{\bcd{N}}{\bcd{Q}}{x}$;
+      उजवीकडील पद नेमके $\bcd{((\lambd[x][N])Q)}$ आहे.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pb]{lem:cont} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{thm}\ollabel{thm:cr}
+  $\bredpar$ ला चर्च–रॉसर गुणधर्म आहे.
+\end{thm}
+
+\begin{proof}
+  \olref{lem:cont} वरून लगेच मिळते.
+\end{proof}
+
+\end{document}

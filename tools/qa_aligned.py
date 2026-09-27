@@ -711,6 +711,15 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$N_{m,0}$ हे $P_m$ आणि $N_{0,n}$ हे $Q_n$ आहे.',
          r'$N_{m,0}$ हे $P$ आणि $N_{0,n}$ हे $Q$ आहे.'),
     ],
+    'OLP-0369': [
+        # OLINC-105: abstraction closure must use parallel reduction.
+        (r"\item \ollabel{defn:bredpar2} $N \bredpar N'$ असेल",
+         r"\item \ollabel{defn:bredpar2} $N \xrightarrow{\beta} N'$ असेल"),
+        # OLINC-106: the substitution induction case must use R' on
+        # the right side, as the lemma premise and target already do.
+        (r"\lambd[x][\Subst{N'}{R'}{y}]$",
+         r"\lambd[x][\Subst{N'}{R}{y}]$"),
+    ],
 }
 
 
