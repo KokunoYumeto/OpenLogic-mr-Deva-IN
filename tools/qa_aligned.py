@@ -956,6 +956,17 @@ _DOCUMENTED_PROJECTIONS = {
         (r'$[w] \in V^*(p)$;' + '\n' + 'म्हणून',
          r'$[w] \in V^*$;' + '\n' + 'म्हणून'),
     ],
+    'OLP-0454': [
+        # OLINC-184: the source's Nat contains zero, outside W = PosInt.
+        (r'V(p) = \Setabs{2n}{n \in' + '\n' + r'    \PosInt}',
+         r'V(p) = \Setabs{2n}{n \in' + '\n' + r'    \Nat}'),
+        # OLINC-185: keep both valuations inside the binary-tree world set;
+        # the root 0 remains p-true as depicted in the source figure.
+        (r'V(p) = \{0\} \cup \Setabs{\sigma' + '\n' + r'    0}{\sigma \in W}',
+         r'V(p) = \Setabs{\sigma' + '\n' + r'    0}{\sigma \in \Bin^*}'),
+        (r'V(q) = \Setabs{\sigma 1}{\sigma \in' + '\n' + r'    W}',
+         r'V(q) = \Setabs{\sigma 1}{\sigma \in' + '\n' + r'    \Bin^* \setminus \{1\}}'),
+    ],
 }
 
 

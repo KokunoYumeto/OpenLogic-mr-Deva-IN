@@ -1,0 +1,256 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: examples-of-filtrations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{exf}
+
+\olsection{निस्यंदनांची उदाहरणे}
+
+निस्यंदने अस्तित्वात आहेत हे आपण अजून दाखवलेले नाही.
+पण प्रत्यक्षात कोणतेही प्रतिमान~$\mModel{M}$ घेतले,
+तरी $\mModel{M}$ ची $\Gamma$ मधून मिळणारी अनेक निस्यंदने असतात.
+त्यांपैकी दोन विशेष निस्यंदने पाहू: सर्वांत सूक्ष्म
+आणि सर्वांत स्थूल. त्याच प्रतिमानाच्या निस्यंदनांचे
+प्राप्यता संबंध वेगळे असू शकतात
+(\olref[fil]{defn:filtration} मध्ये $W^*$ आणि~$V^*$
+थेट निश्चित केले आहेत). सर्वांत सूक्ष्म निस्यंदनात
+संबंधित जगांच्या जोड्या शक्य तितक्या कमी असतात,
+तर सर्वांत स्थूल निस्यंदनात त्या शक्य तितक्या अधिक असतात.
+
+\begin{defn}
+  $\Gamma$ उपसूत्रांखाली बंद असेल, तर प्रतिमान~$\mModel{M}$
+  चे \emph{सर्वांत सूक्ष्म} निस्यंदन~$\mModel{M^*}$ पुढीलप्रमाणे
+  परिभाषित होते:
+  \[
+  R^*[u][v] \quad \text{तेव्हा आणि तेव्हाच} \quad \exists u'\in [u] \;
+  \exists v' \in [v] : Ru'v'.
+  \]
+\end{defn}
+
+\begin{prop}\ollabel{prop:finest}
+  सर्वांत सूक्ष्म निस्यंदन~$\mModel{M^*}$ हे खरोखर निस्यंदन आहे.
+\end{prop}
+
+\begin{proof}
+  अशा प्रकारे परिभाषित $R^*$ हा
+  \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R}
+  मधील अटी पूर्ण करतो हे तपासायचे आहे. तिन्ही अटी क्रमाने पाहू.
+
+  $Ruv$ असेल, तर $u \in [u]$ आणि $v \in [v]$ असल्याने
+  $R^*[u][v]$ सुद्धा. म्हणून
+  \olref[fil]{defn:filtration-R1} ही अट पूर्ण होते.
+
+  \iftag{prvBox}{\iftag{probBox}{
+      \olref[fil]{defn:filtration-R2} ही अट तपासणे सरावासाठी सोडले आहे.}{
+        \olref[fil]{defn:filtration-R2} साठी $\Box!A \in \Gamma$,
+        $R^*[u][v]$ आणि $\mSat{M}{\Box!A}[u]$ असे समजा.
+        $R^*$ च्या व्याख्येवरून $u' \equiv u$ आणि $v' \equiv v$
+        अशी जगे आहेत की $Ru'v'$. $u$ आणि $u'$ हे $\Gamma$
+        वरील सत्यतेबाबत एकमत असल्याने
+        $\mSat{M}{\Box!A}[u']$; म्हणून $\mSat{M}{!A}[v']$.
+        $\Gamma$ उप-!!{formula}s खाली बंद असल्याने
+        $v$ आणि $v'$ यांच्यात~$!A$ च्या सत्यतेबाबतही
+        एकमत आहे. म्हणून अपेक्षेप्रमाणे $\mSat{M}{!A}[v]$.}}{}
+
+  \iftag{prvDiamond}{\iftag{probDiamond}{
+      \olref[fil]{defn:filtration-R3} ही अट तपासणे सरावासाठी सोडले आहे.}{
+        \olref[fil]{defn:filtration-R3} तपासण्यासाठी
+        $\Diamond!A \in \Gamma$, $R^*[u][v]$ आणि
+        $\mSat{M}{!A}[v]$ असे समजा. $R^*$ च्या व्याख्येवरून
+        $u' \equiv u$ आणि $v' \equiv v$ अशी जगे आहेत की
+        $Ru'v'$. $v$ आणि $v'$ यांच्यात~$\Gamma$ वरील
+        सत्यतेबाबत एकमत आहे आणि $\Gamma$ उप-!!{formula}s
+        खाली बंद आहे; म्हणून $\mSat{M}{!A}[v']$ सुद्धा.
+        त्यामुळे $\mSat{M}{\Diamond !A}[u']$.
+        $u$ आणि $u'$ यांच्यातही $\Gamma$ वरील
+        सत्यतेबाबत एकमत असल्याने
+        $\mSat{M}{\Diamond !A}[u]$.}}{}
+\end{proof}
+
+\begin{probtag}{probBox,probDiamond}
+  \olref[nml][fil][exf]{prop:finest} ची सिद्धता पूर्ण करा.
+\end{probtag}
+
+\begin{defn}
+  $\Gamma$ उपसूत्रांखाली बंद असेल, तर प्रतिमान~$\mModel{M}$
+  चे \emph{सर्वांत स्थूल} निस्यंदन~$\mModel{M^*}$
+  पुढीलप्रमाणे परिभाषित करतो:
+  $R^*[u][v]$ तेव्हा आणि तेव्हाच
+  \iftag{notprvBox,notprvDiamond}{पुढील अट पूर्ण होते:}{
+    पुढील \emph{दोन्ही} अटी पूर्ण होतात:}
+  \begin{tagenumerate}{prvBox,prvDiamond}
+  \tagitem{prvBox}{\ollabel{defn:coarsest-Box}$\Box!A \in \Gamma$
+    आणि $\mSat{M}{\Box!A}[u]$ असेल, तर
+    $\mSat{M}{!A}[v]$\iftag{prvDiamond}{;}{.}}{}
+  \tagitem{prvDiamond}{\ollabel{defn:coarsest-Diamond}$\Diamond!A
+    \in \Gamma$ आणि $\mSat{M}{!A}[v]$ असेल, तर
+    $\mSat{M}{\Diamond!A}[u]$.}{}
+  \end{tagenumerate}
+\end{defn}
+
+\begin{prop}
+  सर्वांत स्थूल निस्यंदन~$\mModel{M^*}$ हे खरोखर निस्यंदन आहे.
+\end{prop}
+
+\begin{proof}
+  $R^*$ च्या व्याख्येनुसार आता फक्त $Ruv$ वरून
+  $R^*[u][v]$ मिळते का हे तपासायचे आहे. म्हणून
+  $Ruv$ असे समजा. \iftag{prvBox}{$\Box!A \in \Gamma$
+    आणि $\mSat{M}{\Box!A}[u]$ असे समजा; मग स्पष्टपणे
+    $\mSat{M}{!A}[v]$\iftag{prvDiamond}{, आणि
+      \olref{defn:coarsest-Box} ही अट पूर्ण होते.}{.}}{}\iftag{prvDiamond}{
+    $\Diamond!A \in \Gamma$ आणि $\mSat{M}{!A}[v]$
+    असे समजा. $Ruv$ असल्याने $\mSat{M}{\Diamond!A}[u]$
+    \iftag{prvBox}{, आणि \olref{defn:coarsest-Diamond}
+      ही अट पूर्ण होते}{}.}{}
+\end{proof}
+
+\begin{ex}
+  $W = \PosInt$, $Rnm$ तेव्हा आणि तेव्हाच $m = n + 1$,
+  आणि $V(p) = \Setabs{2n}{n \in
+    \PosInt}$ असे समजा. प्रतिमान~$\mModel{M} = \tuple{W, R, V}$
+  हे \olref{fig:ex-filtration} मध्ये दाखवले आहे.
+  त्याची जगे $1$, $2$ इत्यादी आहेत. प्रत्येक जगाला
+  नेमके एकच जग, म्हणजे त्याचे पुढचे जग, प्राप्य आहे;
+  आणि $p$ तेव्हा आणि तेव्हाच सत्य आहे जेव्हा संख्या सम असते.
+
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}[modal]
+      \node[world] (1) [label=below:\mFalse{p}] {$1$};
+      \node[world] (2) [label=below:\mTrue{p}, right=of 1] {$2$};
+      \node[world] (3) [label=below:\mFalse{p}, right=of 2] {$3$};
+      \node[world] (4) [label=below:\mTrue{p}, right=of 3] {$4$};
+      \node[phantom] (5) [right=of 4] {};
+      \draw[->] (1) to (2);
+      \draw[->] (2) to (3);
+      \draw[->] (3) to (4);
+      \draw[dotted] (4) to (5);
+    \end{tikzpicture}
+
+    \begin{tikzpicture}[modal]
+      \node[world] (1) [label=below:\mFalse{p}] {$[1]$};
+      \node[world] (2) [label=below:\mTrue{p}, right=of 1] {$[2]$};
+      \draw[->,bend left] (1) to (2);
+      \draw[->,bend left] (2) to (1);
+
+      \node[world] (3) [label=below:\mFalse{p},right=of 2] {$[1]$};
+      \node[world] (4) [label=below:\mTrue{p}, right=of 3] {$[2]$};
+      \draw[->,bend left] (3) to (4);
+      \draw[->,bend left] (4) to (3);
+      \draw[->,reflexive above] (4) to (4);
+    \end{tikzpicture}
+    \caption{एक अनंत प्रतिमान आणि त्याची निस्यंदने.}
+    \ollabel{fig:ex-filtration}
+  \end{figure}
+
+  आता $\Gamma$ हा~$\Box p \lif p$ च्या सर्व
+  उप-!!{formula}s चा संच, म्हणजे
+  $\{p, \Box p, \Box p \lif p\}$, असू द्या.
+  $p$ सम संख्यांवरच सत्य आहे; $\Box p$ विषम
+  संख्यांवरच सत्य आहे. म्हणून $\Box p \lif p$
+  हे सम संख्यांवरच सत्य आहे. दुसऱ्या शब्दांत,
+  प्रत्येक विषम संख्येवर $\Box p$ सत्य, पण $p$
+  आणि $\Box p \lif p$ असत्य आहेत; प्रत्येक सम
+  संख्येवर $p$ आणि $\Box p \lif p$ सत्य, पण
+  $\Box p$ असत्य आहे. म्हणून
+  $W^* = \{ [1], [2] \}$, जेथे
+  $[1] = \{1, 3, 5, \dots\}$ आणि
+  $[2] = \{2, 4, 6, \dots\}$.
+  $2 \in V(p)$ असल्याने $[2] \in V^*(p)$;
+  $1 \notin V(p)$ असल्याने $[1] \notin V^*(p)$.
+  म्हणून $V^*(p) = \{[2]\}$.
+
+  $W^*$ वर आधारलेल्या कोणत्याही निस्यंदनाच्या
+  प्राप्यता संबंधात $\tuple{[1], [2]}, \tuple{[2],[1]}$
+  या जोड्या असायलाच हव्यात: $R12$ असल्याने
+  \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R1}
+  वरून $R^*[1][2]$; तसेच $R23$ असल्याने
+  $R^*[2][3]$, आणि $[3]=[1]$.
+  त्यात $\tuple{[1],[1]}$ मात्र असू शकत नाही:
+  ती जोडी असेल, तर $R^*[1][1]$ होईल;
+  पण $\mSat{M}{\Box p}[1]$ आणि
+  $\mSat/{M}{p}[1]$ असल्याने
+  \olref[fil]{defn:filtration-R2} शी विरोध येईल.
+  $R^*[2][2]$ असावे किंवा नसावे, अशी कोणतीही
+  अट नाही. म्हणून~$\mModel{M}$ ची दोन संभाव्य
+  निस्यंदने आहेत; त्यांचे प्राप्यता संबंध अनुक्रमे
+  \[
+  \{\tuple{[1],[2]}, \tuple{[2],[1]}\} \text{आणि}
+  \{\tuple{[1],[2]}, \tuple{[2],[1]}, \tuple{[2],[2]}\}.
+  \]
+  असे आहेत. दोन्ही प्रकरणांत~$[1]$ येथे $p$ आणि
+  $\Box p \lif p$ असत्य, तर $\Box p$ सत्य आहे;
+  $[2]$ येथे $p$ आणि $\Box p \lif p$ सत्य,
+  तर $\Box p$ असत्य आहे.
+\end{ex}
+
+
+\begin{prob}
+  पुढील प्रतिमान~$\mModel{M} = \tuple{W, R, V}$ पाहा.
+  येथे $W = \Setabs{0\sigma}{\sigma \in \Bin^*}$,
+  म्हणजे~$0$ ने सुरू होणाऱ्या $0$ व~$1$ यांच्या
+  सांत क्रमांचा संच; $R\sigma\sigma'$ तेव्हा आणि तेव्हाच
+  $\sigma' = \sigma 0$ किंवा $\sigma' = \sigma 1$;
+  तसेच $V(p) = \{0\} \cup \Setabs{\sigma
+    0}{\sigma \in W}$ आणि $V(q) = \Setabs{\sigma 1}{\sigma \in
+    W}$. त्याचे चित्र असे आहे:
+  \begin{center}
+    \begin{tikzpicture}[modal,
+        node distance=2cm
+      ]
+
+      \node[world] (0) [label={below:\mTrue{p}\\\mFalse{q}},font=\tiny] {$0$};
+      \node[world] (00) [label={below:\mTrue{p}\\\mFalse{q}},
+        above right=of 0,font=\tiny] {$00$};
+      \node[world] (000) [label={below:\mTrue{p}\\\mFalse{q}},
+        right=of 00, yshift=.8cm, font=\tiny] {$000$};
+      \node[phantom] (0000) [right=of 000, yshift=.5cm] {};
+      \node[phantom] (0001) [right=of 000, yshift=-.5cm] {};
+      \node[world] (001) [label={below:\mFalse{p}\\\mTrue{q}},
+        right=of 00, yshift=-.8cm, font=\tiny] {$001$};
+      \node[phantom](0010) [right=of 001, yshift=.5cm] {};
+      \node[phantom](0011) [right=of 001, yshift=-.5cm] {};
+      \node[world] (01) [label={below:\mFalse{p}\\\mTrue{q}},
+        below right=of 0,font=\tiny] {$01$};
+      \node[world] (010) [label={below:\mTrue{p}\\\mFalse{q}},
+        right=of 01, yshift=.8cm,font=\tiny] {$010$};
+      \node[phantom] (0100) [right=of 010, yshift=.5cm] {};
+      \node[phantom] (0101) [right=of 010, yshift=-.5cm] {};
+      \node[world] (011) [label={below:\mFalse{p}\\\mTrue{q}},
+        right=of 01, yshift=-.8cm,font=\tiny] {$011$};
+      \node[phantom] (0110) [right=of 011, yshift=.5cm] {};
+      \node[phantom] (0111) [right=of 011, yshift=-.5cm] {};
+
+      \draw[->] (0) to (00);
+      \draw[->] (0) to (01);
+      \draw[->] (00) to (000);
+      \draw[dotted] (000) to (0000);
+      \draw[dotted] (000) to (0001);
+      \draw[->] (00) to (001);
+      \draw[dotted] (001) to (0010);
+      \draw[dotted] (001) to (0011);
+      \draw[->] (01) to (010);
+      \draw[dotted] (010) to (0100);
+      \draw[dotted] (010) to (0101);
+      \draw[->] (01) to (011);
+      \draw[dotted] (011) to (0110);
+      \draw[dotted] (011) to (0111);
+    \end{tikzpicture}
+  \end{center}
+  प्रत्येक~$w$ साठी
+  $\mSat/{M}{\Box(p \lor q) \lif (\Box p \lor \Box q)}[w]$
+  असे आहे.
+
+  $\Gamma$ हा~$\Box(p \lor q) \lif
+  (\Box p \lor \Box q)$ च्या उप-!!{formula}s चा संच
+  असू द्या. $W^*$ आणि~$V^*$ काय असतील?
+  $\mModel{M}$ च्या सर्वांत सूक्ष्म निस्यंदनाचा
+  प्राप्यता संबंध कोणता असेल? सर्वांत स्थूल निस्यंदनाचा कोणता?
+\end{prob}
+
+\end{document}
