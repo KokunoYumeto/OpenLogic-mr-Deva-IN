@@ -1,0 +1,380 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{sou}
+
+\olsection{\Log{K} साठी निर्दोषता}
+
+\begin{editorial}
+  निर्दोषतेचा हा पुरावा अभिजात विधानीय तर्कशास्त्राचा
+  निर्दोषतेचा पुरावा पुन्हा मांडतो; म्हणजे सर्व काही
+  सुरुवातीपासून सिद्ध करतो. स्वयंपूर्ण पुरावा हवा
+  असेल, तर हे योग्य आहे. नेहमीच्या टॅब्लोची निर्दोषता
+  तुम्ही आधी पाहिली असेल, तर येथे पुनरुक्ती वाटेल.
+  पुढे स्वयंपूर्ण आवृत्ती आणि अमोडल प्रकरणावर आधारलेली
+  आवृत्ती यांपैकी एक निवडता यावी, अशी योजना आहे.
+\end{editorial}
+
+\begin{explain}
+  पूर्वचिन्हयुक्त !!{tableau}s निर्दोष आहेत हे
+  दाखवण्यासाठी, पुढील गृहीतकांचा
+  \[
+  \sFmla{\True}{!B_1}[1], \dots, \sFmla{\True}{!B_n}[1], \sFmla{\False}{!A}[1]
+  \]
+  बंद !!{tableau} असेल, तर $!B_1, \dots, !B_n
+  \Entails !A$ हे सिद्ध करावे लागेल. व्यत्यास सिद्ध
+  करणे सोपे आहे: एखाद्या $\mModel{M}$ मध्ये
+  $w$ या जगात सर्व $i=1$, \dots,~$n$ साठी
+  $\mSat{M}{!B_i}[w]$, पण $\mSat/{M}{!A}[w]$
+  असेल, तर कोणताही !!{tableau} बंद होऊ शकत नाही.
+  अशा प्रतिदृष्टांत प्रतिमानावरून !!{tableau} ची सुरुवातीची
+  गृहीतके पूर्ततायोग्य आहेत हे दिसते. पुराव्याची युक्ती
+  अशी: !!a{tableau} च्या शाखेवरील सर्व
+  पूर्वचिन्हयुक्त !!{formula}s पूर्ततायोग्य असतील, तर
+  कोणताही नियम लावल्यावर तयार होणाऱ्या विस्तारित
+  शाखांपैकी किमान एक शाखा पूर्ततायोग्य असते. बंद शाखा
+  अपूर्ततायोग्य असतात. म्हणून पूर्वचिन्हयुक्त !!{formula}s
+  च्या पूर्ततायोग्य संचासाठीच्या कोणत्याही !!{tableau}
+  मध्ये किमान एक खुली शाखा असली पाहिजे.
+
+  मोडल प्रकरणात ही युक्ती वापरण्यासाठी ‘पूर्ततायोग्य’
+  ही व्याख्या मोडल प्रतिमाने आणि पूर्वचिन्हे यांच्यापर्यंत
+  विस्तारित करावी लागते. त्यानंतर पुरावा सरळ आहे.
+\end{explain}
+
+\begin{defn}
+  $P$ हा पूर्वचिन्हांचा एखादा संच असू द्या; म्हणजे
+  $P \subseteq (\PosInt)^* \setminus
+  \{\emptyseq\}$. तसेच $\mModel{M}$ हे प्रतिमान असू द्या.
+  $\sigma$ आणि $\sigma.n$ ही दोन्ही~$P$ मध्ये असताना
+  नेहमी $Rf(\sigma)f(\sigma.n)$ असेल, तर
+  $f\colon P \to W$ या फलनाला $\mModel{M}$
+  मधील~$P$ चे \emph{अर्थनिर्धारण} म्हणतात.
+
+  पूर्वचिन्हांच्या~$P$ या संचाच्या अर्थनिर्धारणाच्या
+  संदर्भात पुढील व्याख्या करता येतात:
+  \begin{enumerate}
+  \item $\mModel{M}$ हे $\sFmla{\True}{!A}[\sigma]$
+    पूर्ण करते तेव्हा आणि तेव्हाच
+    $\mSat{M}{!A}[f(\sigma)]$.
+  \item $\mModel{M}$ हे $\sFmla{\False}{!A}[\sigma]$
+    पूर्ण करते तेव्हा आणि तेव्हाच
+    $\mSat/{M}{!A}[f(\sigma)]$.
+  \end{enumerate}
+\end{defn}
+
+\begin{defn}
+  $\Gamma$ हा पूर्वचिन्हयुक्त !!{formula}s चा
+  संच असू द्या आणि त्यात येणाऱ्या पूर्वचिन्हांचा
+  संच $P(\Gamma)$ असू द्या. $f$ हे $\mModel{M}$
+  मधील~$P(\Gamma)$ चे अर्थनिर्धारण असेल, तर
+  $\mModel{M}$ ने~$f$ च्या संदर्भात~$\Gamma$
+  पूर्ण करणे, म्हणजे $\mSat{M}{\Gamma}[f]$,
+  याचा अर्थ $\mModel{M}$ ने~$f$ च्या संदर्भात
+  $\Gamma$ मधील प्रत्येक पूर्वचिन्हयुक्त !!{formula}
+  पूर्ण करणे असा आहे. $\mSat{M}{\Gamma}[f]$
+  होईल असे एखादे प्रतिमान~$\mModel{M}$ आणि
+  $P(\Gamma)$ चे अर्थनिर्धारण~$f$ अस्तित्वात असेल,
+  तर आणि तरच $\Gamma$ हा संच \emph{पूर्ततायोग्य} असतो.
+\end{defn}
+
+\begin{prop}
+  एखाद्या !!{formula}~$!A$ आणि पूर्वचिन्ह~$\sigma$
+  यांसाठी $\Gamma$ मध्ये
+  $\sFmla{\True}{!A}[\sigma]$ आणि
+  $\sFmla{\False}{!A}[\sigma]$ ही दोन्ही असतील,
+  तर $\Gamma$ अपूर्ततायोग्य आहे.
+\end{prop}
+
+\begin{proof}
+  $\mSat{M}{!A}[f(\sigma)]$ आणि
+  $\mSat/{M}{!A}[f(\sigma)]$ ही दोन्ही सत्य होतील
+  असे प्रतिमान~$\mModel{M}$ आणि $P(\Gamma)$ चे
+  अर्थनिर्धारण~$f$ असू शकत नाही.
+\end{proof}
+
+\begin{thm}[निर्दोषता]
+  \ollabel{thm:tableau-soundness}
+  $\Gamma$ साठी बंद !!{tableau} असेल, तर
+  $\Gamma$ अपूर्ततायोग्य आहे.
+\end{thm}
+
+\begin{proof}
+!!a{tableau} वरील एखादी शाखा पूर्ततायोग्य असणे म्हणजे
+तिच्यावरील !!{signed formula}s चा संच पूर्ततायोग्य असणे.
+आणि !!a{tableau} मध्ये किमान एक पूर्ततायोग्य शाखा
+असेल, तर त्याला पूर्ततायोग्य म्हणू.
+
+आपण पुढील विधान दाखवू: पूर्ततायोग्य !!{tableau} ला
+अनुमानाचा कोणताही नियम लावून विस्तारित केले, तरी
+मिळणारा !!{tableau} पूर्ततायोग्य असतो. यावरून प्रमेय
+सिद्ध होईल. कारण बंद !!{tableau} हा
+सुरुवातीला फक्त~$\Gamma$ मधील गृहीतके असलेल्या
+!!{tableau} ला अनुमानाचे नियम लावत तयार होतो.
+म्हणून $\Gamma$ पूर्ततायोग्य असेल, तर त्यासाठीचा
+प्रत्येक !!{tableau} पूर्ततायोग्य राहील. पण बंद
+!!{tableau} पूर्ततायोग्य असू शकत नाही: त्याच्या सर्व
+शाखा बंद असतात, आणि बंद शाखा अपूर्ततायोग्य असतात.
+
+आपल्याकडे पूर्ततायोग्य !!{tableau} आहे असे समजू;
+म्हणजे किमान एक पूर्ततायोग्य शाखा असलेला !!a{tableau}
+आहे. अनुमानाचा
+नियम लावल्याने शाखेवर !!{signed formula}s
+जोडली जातात किंवा शाखेच्या दोन शाखा फुटतात.
+नियमामुळे न बदलणारी एखादी पूर्ततायोग्य शाखा
+!!{tableau} मध्ये असेल, तर विस्तारित
+!!{tableau} मध्येही ती पूर्ततायोग्य राहते. म्हणून
+नियम पूर्ततायोग्य शाखेला लावला जातो त्या
+प्रकरणाचा विचार पुरेसा आहे.
+
+त्या शाखेवरील !!{signed formula}s चा संच
+$\Gamma$ असू द्या आणि नियम
+$\sFmla{S}{!A}[\sigma] \in \Gamma$ या
+!!{signed formula} ला लावला जातो असे समजू.
+नियमाने शाखा फुटत नसेल, तर $\Gamma$ मध्ये
+नियमाचे निष्कर्ष जोडून मिळालेली विस्तारित
+शाखा अजूनही पूर्ततायोग्य आहे हे दाखवावे लागते.
+शाखा फुटत असेल, तर मिळणाऱ्या दोन शाखांपैकी
+किमान एक पूर्ततायोग्य आहे हे दाखवावे लागते.
+\tagfalse{prvDiamond}
+प्रथम शाखा न फुटणाऱ्या नियमांचा विचार करू.
+\begin{enumerate}
+\item $\sFmla{\True}{\lnot !B}[\sigma] \in \Gamma$
+  याला
+  $\TRule{\True}{\lnot}$ लावून शाखा विस्तारित
+  केली. आता शाखेवरील !!{signed formula}s चा
+  संच $\Gamma \cup
+  \{\sFmla{\False}{!B}[\sigma]\}$ आहे.
+  $\mSat{M}{\Gamma}[f]$ असे समजू. विशेषतः
+  $\mSat{M}{\lnot !B}[f(\sigma)]$; म्हणून
+  $\mSat/{M}{!B}[f(\sigma)]$. म्हणजे
+  $\mModel{M}$ हे~$f$ च्या संदर्भात
+  $\sFmla{\False}{!B}[\sigma]$ पूर्ण करते.
+\item $\sFmla{\False}{\lnot !B}[\sigma] \in \Gamma$
+  याला
+  $\TRule{\False}{\lnot}$ लावून शाखा विस्तारित
+  केली: सरावासाठी.
+\item $\sFmla{\True}{!B \land !C}[\sigma] \in \Gamma$
+  याला
+  $\TRule{\True}{\land}$ लावून शाखा विस्तारित
+  केली. यात शाखेवर
+  $\sFmla{\True}{!B}[\sigma]$ आणि
+  $\sFmla{\True}{!C}[\sigma]$ ही दोन नवी
+  !!{signed formula}s मिळतात.
+  $\mSat{M}{\Gamma}[f]$ असे समजू; विशेषतः
+  $\mSat{M}{!B \land !C}[f(\sigma)]$.
+  म्हणून $\mSat{M}{!B}[f(\sigma)]$ आणि
+  $\mSat{M}{!C}[f(\sigma)]$. याचा अर्थ
+  $\mModel{M}$ हे~$f$ च्या संदर्भात
+  $\sFmla{\True}{!B}[\sigma]$ आणि
+  $\sFmla{\True}{!C}[\sigma]$ ही दोन्ही
+  पूर्ण करते.
+\item $\sFmla{\False}{!B \lor !C}[\sigma] \in \Gamma$
+  याला
+  $\TRule{\False}{\lor}$ लावून शाखा विस्तारित
+  केली: सरावासाठी.
+\item $\sFmla{\False}{!B \lif !C}[\sigma] \in \Gamma$
+  याला
+  $\TRule{\False}{\lif}$ लावून शाखा विस्तारित
+  केली. यात शाखेवर
+  $\sFmla{\True}{!B}[\sigma]$ आणि
+  $\sFmla{\False}{!C}[\sigma]$ ही दोन नवी
+  !!{signed formula}s मिळतात.
+  $\mSat{M}{\Gamma}[f]$ असे समजू; विशेषतः
+  $\mSat/{M}{!B \lif !C}[f(\sigma)]$.
+  म्हणून $\mSat{M}{!B}[f(\sigma)]$ आणि
+  $\mSat/{M}{!C}[f(\sigma)]$. याचा अर्थ
+  $\mModel{M}, f$ हे
+  $\sFmla{\True}{!B}[\sigma]$ आणि
+  $\sFmla{\False}{!C}[\sigma]$ ही दोन्ही
+  पूर्ण करते.
+
+\iftag{prvBox}{%
+\item $\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$
+  याला
+  $\TRule{\True}{\Box}$ लावून शाखा विस्तारित केली:
+  \iftag{probBox}{सरावासाठी.}{शाखेवर
+    $\sFmla{\True}{!B}[\sigma.n]$ हे नवे
+    !!{signed
+      formula} मिळते. येथे
+    $\sigma.n \in P(\Gamma)$, कारण
+    $\sigma.n$ वापरलेले असले पाहिजे.
+    $\mSat{M}{\Gamma}[f]$ असे समजू; विशेषतः
+    $\mSat{M}{\Box !B}[f(\sigma)]$.
+    $f$ हे पूर्वचिन्हांचे अर्थनिर्धारण आहे आणि
+    $\sigma$, $\sigma.n \in P(\Gamma)$,
+    म्हणून $Rf(\sigma)f(\sigma.n)$.
+    त्यामुळे $\mSat{M}{!B}[f(\sigma.n)]$;
+    म्हणजे $\mModel{M}, f$ हे
+    $\sFmla{\True}{!B}[\sigma.n]$ पूर्ण करते.}
+
+\item $\sFmla{\False}{\Box !B}[\sigma] \in \Gamma$
+  याला
+  $\TRule{\False}{\Box}$ लावून शाखा विस्तारित केली:
+  \iftag{probBox}{सरावासाठी.}{शाखेवर
+    $\sFmla{\False}{!B}[\sigma.n]$ हे नवे
+    !!{signed
+      formula} मिळते. येथे
+    $\sigma.n$ हे शाखेवरील नवे पूर्वचिन्ह,
+    म्हणजे $\sigma.n \notin P(\Gamma)$.
+    $\Gamma$ पूर्ततायोग्य असल्याने,
+    $\Sat{M}{\Gamma}[f]$ होईल असे
+    $\Struct{M}$ आणि $P(\Gamma)$ चे
+    अर्थनिर्धारण~$f$ असते; विशेषतः
+    $\mSat/{M}{\Box !B}[f(\sigma)]$.
+    $\Gamma \cup
+    \{\sFmla{\False}{!B}[\sigma.n]\}$
+    पूर्ततायोग्य आहे हे दाखवायचे आहे.
+    यासाठी $P(\Gamma) \cup \{\sigma.n\}$
+    चे अर्थनिर्धारण पुढीलप्रमाणे ठरवू:
+
+  $\mSat/{M}{\Box !B}[f(\sigma)]$ असल्याने,
+  $Rf(\sigma)w$ आणि $\mSat/{M}{!B}[w]$
+  होईल असे $w \in W$ असते. $f'$ हे~$f$
+  प्रमाणेच असू द्या, फक्त
+  $f'(\sigma.n) = w$ असे ठरवा.
+  $f'(\sigma) = f(\sigma)$ आणि
+  $Rf(\sigma)w$ असल्याने
+  $Rf'(\sigma)f'(\sigma.n)$; म्हणून $f'$
+  हे $P(\Gamma) \cup \{\sigma.n\}$ चे
+  अर्थनिर्धारण आहे. स्पष्टपणे
+  $\mSat/{M}{!B}[f'(\sigma.n)]$.
+  प्रत्येक $\sigma' \in P(\Gamma)$ साठी
+  $f(\sigma') = f'(\sigma')$ असल्याने
+  $\mSat{M}{\Gamma}[f']$. म्हणून
+  $\mModel{M}, f'$ हे $\Gamma \cup
+  \{\sFmla{\False}{!B}[\sigma.n]\}$ पूर्ण करते.}
+  }{}
+
+\iftag{prvDiamond}{%
+\item $\sFmla{\True}{\Diamond !B}[\sigma] \in \Gamma$
+  याला
+  $\TRule{\True}{\Diamond}$ लावून शाखा विस्तारित
+  केली: \iftag{probDiamond}{सरावासाठी.}{शाखेवर
+    $\sFmla{\True}{!B}[\sigma.n]$ हे नवे
+    !!{signed
+      formula} मिळते. येथे
+    $\sigma.n$ हे शाखेवरील नवे पूर्वचिन्ह,
+    म्हणजे $\sigma.n \notin P(\Gamma)$.
+    $\Gamma$ पूर्ततायोग्य असल्याने,
+    $\Sat{M}{\Gamma}[f]$ होईल असे
+    $\Struct{M}$ आणि $P(\Gamma)$ चे
+    अर्थनिर्धारण~$f$ असते; विशेषतः
+    $\mSat{M}{\Diamond !B}[f(\sigma)]$.
+    $\Gamma \cup
+    \{\sFmla{\True}{!B}[\sigma.n]\}$
+    पूर्ततायोग्य आहे हे दाखवायचे आहे.
+    यासाठी $P(\Gamma) \cup \{\sigma.n\}$
+    चे अर्थनिर्धारण पुढीलप्रमाणे ठरवू:
+
+  $\mSat{M}{\Diamond !B}[f(\sigma)]$ असल्याने,
+  $Rf(\sigma)w$ आणि $\mSat{M}{!B}[w]$
+  होईल असे $w \in W$ असते. $f'$ हे~$f$
+  प्रमाणेच असू द्या, फक्त
+  $f'(\sigma.n) = w$ असे ठरवा.
+  $f'(\sigma) = f(\sigma)$ आणि
+  $Rf(\sigma)w$ असल्याने
+  $Rf'(\sigma)f'(\sigma.n)$; म्हणून $f'$
+  हे $P(\Gamma) \cup \{\sigma.n\}$ चे
+  अर्थनिर्धारण आहे. स्पष्टपणे
+  $\mSat{M}{!B}[f'(\sigma.n)]$.
+  प्रत्येक $\sigma' \in P(\Gamma)$ साठी
+  $f(\sigma') = f'(\sigma')$ असल्याने
+  $\mSat{M}{\Gamma}[f']$. म्हणून
+  $\mModel{M}, f'$ हे $\Gamma \cup
+  \{\sFmla{\True}{!B}[\sigma.n]\}$ पूर्ण करते.}
+\item $\sFmla{\False}{\Diamond !B}[\sigma] \in \Gamma$
+  याला
+  $\TRule{\False}{\Diamond}$ लावून शाखा विस्तारित
+  केली: \iftag{probDiamond}{सरावासाठी.}{शाखेवर
+    $\sFmla{\False}{!B}[\sigma.n]$ हे नवे
+    !!{signed
+      formula} मिळते. येथे
+    $\sigma.n \in P(\Gamma)$, कारण
+    $\sigma.n$ वापरलेले असले पाहिजे.
+    $\mSat{M}{\Gamma}[f]$ असे समजू; विशेषतः
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$.
+    $f$ हे पूर्वचिन्हांचे अर्थनिर्धारण आहे आणि
+    $\sigma$, $\sigma.n \in P(\Gamma)$,
+    म्हणून $Rf(\sigma)f(\sigma.n)$.
+    त्यामुळे $\mSat/{M}{!B}[f(\sigma.n)]$;
+    म्हणजे $\mModel{M}, f$ हे
+    $\sFmla{\False}{!B}[\sigma.n]$ पूर्ण करते.}
+  }{}
+\end{enumerate}
+आता शाखा फुटणाऱ्या नियमांचा विचार करू.
+\begin{enumerate}
+\item $\sFmla{\False}{!B \land !C}[\sigma] \in \Gamma$
+  याला
+  $\TRule{\False}{\land}$ लावून शाखा विस्तारित
+  केली. यात दोन शाखा मिळतात: डावीकडची
+  $\sFmla{\False}{!B}[\sigma]$ मधून, आणि
+  उजवीकडची $\sFmla{\False}{!C}[\sigma]$
+  मधून पुढे जाते. $\mSat{M}{\Gamma}[f]$
+  असे समजू; विशेषतः
+  $\mSat/{M}{!B \land !C}[f(\sigma)]$.
+  मग $\mSat/{M}{!B}[f(\sigma)]$ किंवा
+  $\mSat/{M}{!C}[f(\sigma)]$.
+  पहिल्या प्रकरणात $\mModel{M}, f$ हे
+  $\sFmla{\False}{!B}[\sigma]$ पूर्ण करते,
+  म्हणून डावीकडची शाखा पूर्ततायोग्य असते.
+  दुसऱ्या प्रकरणात $\mModel{M}, f$ हे
+  $\sFmla{\False}{!C}[\sigma]$ पूर्ण करते,
+  म्हणून उजवीकडची शाखा पूर्ततायोग्य असते.
+\item $\sFmla{\True}{!B \lor !C}[\sigma] \in \Gamma$
+  याला
+  $\TRule{\True}{\lor}$ लावून शाखा विस्तारित
+  केली: सरावासाठी.
+\item $\sFmla{\True}{!B \lif !C}[\sigma] \in \Gamma$
+  याला
+  $\TRule{\True}{\lif}$ लावून शाखा विस्तारित
+  केली: सरावासाठी.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\olref[nml][tab][sou]{thm:tableau-soundness} चा
+पुरावा पूर्ण करा.
+\end{prob}
+
+\begin{cor}
+\ollabel{cor:entailment-soundness}
+$\Gamma \Proves !A$ असेल, तर
+$\Gamma \Entails !A$.
+\end{cor}
+
+\begin{proof}
+  $\Gamma \Proves !A$ असेल, तर
+  $!B_1$, \dots, $!B_n \in \Gamma$ अशी काही सूत्रे
+  असतात की $\Delta =
+  \{\sFmla{\False}{!A}[1], \sFmla{\True}{!B_1}[1],
+  \dots, \sFmla{\True}{!B_n}[1]\}$ साठी
+  बंद !!{tableau} असतो.
+  $\Gamma \Entails !A$ हे दाखवायचे आहे.
+  तसे नाही असे समजू. मग एखाद्या
+  $\mModel{M}$ आणि~$w$ साठी सर्व
+  $i=1$, \dots,~$n$ बाबत
+  $\mSat{M}{!B_i}[w]$, पण
+  $\mSat/{M}{!A}[w]$. $f(1) = w$
+  असे ठेवा. मग $f$ हे~$\mModel{M}$ मधील
+  $P(\Delta)$ चे अर्थनिर्धारण आहे आणि
+  $\mModel{M}$ हे~$f$ च्या संदर्भात
+  $\Delta$ पूर्ण करते. पण
+  \olref{thm:tableau-soundness} नुसार
+  $\Delta$ साठी बंद !!{tableau} असल्यामुळे
+  तो अपूर्ततायोग्य आहे. हा विरोधाभास आहे.
+  म्हणून $\Gamma \Entails !A$.
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+$\Proves !A$ असेल, तर $!A$ सर्व
+प्रतिमानांमध्ये सत्य आहे.
+\end{cor}
+
+\end{document}

@@ -980,6 +980,31 @@ _DOCUMENTED_PROJECTIONS = {
         # serial and Euclidean, matching the labels and captions.
         (r'    \draw[reflexive above] (w2) to (w2);' + '\n', ''),
     ],
+    'OLP-0464': [
+        # OLINC-191: a countermodel falsifies A at w.
+        (r'पण $\mSat/{M}{!A}[w]$' + '\n' + r'  असेल',
+         r'पण $\mSat{M}{!A}[w]$' + '\n' + r'  असेल'),
+        # OLINC-192: the F-or rule premise retains its prefix.
+        (r'\sFmla{\False}{!B \lor !C}[\sigma] \in \Gamma',
+         r'\sFmla{\False}{!B \lor !C} \in \Gamma'),
+        # OLINC-193: F Box introduces F B, not F A.
+        (r'\TRule{\False}{\Box}$ लावून शाखा विस्तारित केली:' + '\n'
+         + r'  \iftag{probBox}{सरावासाठी.}{शाखेवर' + '\n'
+         + r'    $\sFmla{\False}{!B}[\sigma.n]$',
+         r'\TRule{\False}{\Box}$ लावून शाखा विस्तारित केली:' + '\n'
+         + r'  \iftag{probBox}{सरावासाठी.}{शाखेवर' + '\n'
+         + r'    $\sFmla{\False}{!A}[\sigma.n]$'),
+        # OLINC-194: T Diamond introduces T B, not T A.
+        (r'\TRule{\True}{\Diamond}$ लावून शाखा विस्तारित' + '\n'
+         + r'  केली: \iftag{probDiamond}{सरावासाठी.}{शाखेवर' + '\n'
+         + r'    $\sFmla{\True}{!B}[\sigma.n]$',
+         r'\TRule{\True}{\Diamond}$ लावून शाखा विस्तारित' + '\n'
+         + r'  केली: \iftag{probDiamond}{सरावासाठी.}{शाखेवर' + '\n'
+         + r'    $\sFmla{\True}{!A}[\sigma.n]$'),
+        # OLINC-195: the corollary derives semantic entailment.
+        (r'म्हणून $\Gamma \Entails !A$.',
+         r'म्हणून $\Gamma \Proves !A$.'),
+    ],
 }
 
 
