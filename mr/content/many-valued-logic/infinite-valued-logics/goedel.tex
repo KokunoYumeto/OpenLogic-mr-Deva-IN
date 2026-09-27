@@ -1,0 +1,135 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: lukasiewicz
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{inf}{god}
+
+\olsection{G\"odel तर्कशास्त्रे}
+
+\begin{editorial}
+  अनंतमूल्य G\"odel तर्कशास्त्रावरील हा विभाग
+  संक्षिप्त ``प्रारूप'' आहे.
+\end{editorial}
+
+\begin{defn}\ollabel{def:goedel} अनंतमूल्य G\"odel
+तर्कशास्त्र~$\LogGod[\infty]$ पुढील मॅट्रिक्सने परिभाषित होते:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+  \item सत्यतामूल्यांचा संच $V_\infty$.
+  \item $1$ हेच एकमेव निर्दिष्ट मूल्य आहे, म्हणजे $V^+ = \{1\}$.
+  \item सत्यता-फलने पुढील सूत्रांनी दिली आहेत:
+  \begin{align*}
+    \tf{\lfalse} & = 0\\
+    \tf{\lnot}[\LogGod](x) & = \begin{cases}
+      1 & \text{जर } x =0\\
+      0 & \text{इतर वेळी}
+    \end{cases}\\
+    \tf{\land}[\LogGod](x,y) & = \min(x,y)\\
+    \tf{\lor}[\LogGod](x,y) & = \max(x,y)\\
+    \tf{\lif}[\LogGod](x,y) & = \begin{cases}
+      1 & \text{जर } x \le y\\
+      y & \text{इतर वेळी.}
+    \end{cases}
+    \end{align*}
+\end{enumerate}
+$m$-मूल्य G\"odel तर्कशास्त्राची व्याख्या याचप्रमाणे,
+फक्त $V = V_m$ घेऊन केली जाते.
+\end{defn}
+
+\begin{prop}
+  \olref[thr][god]{defn:goedel} मध्ये परिभाषित
+  $\LogGod[3]$ आणि \olref{def:goedel} मध्ये परिभाषित
+  $\LogGod[3]$ हे एकच तर्कशास्त्र आहे.
+\end{prop}
+
+\begin{proof}
+  \olref[thr][god]{defn:goedel} मधील संयोजकांची
+  सत्यताकोष्टके आणि \olref{def:goedel} मधील
+  समीकरणांनी निश्चित होणारी सत्यताकोष्टके यांची तुलना
+  केल्यास हे दिसते:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}[\LogGod[3]]$ & \\
+      \hline
+      $1$ & $0$ \\
+      $1/2$ & $0$ \\
+      $0$ & $1$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogGod]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1/2$ & $1/2$ & $0$\\
+      $0$ & $0$ & $0$ & $0$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogGod]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1$ & $1$ \\
+      $1/2$ & $1$ & $1/2$ & $1/2$ \\
+      $0$ & $1$ & $1/2$ & $0$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogGod]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1$ & $1$ & $0$  \\
+      $0$ & $1$ & $1$ & $1$
+    \end{tabular}
+  \end{center}
+\end{proof}
+
+\begin{prop}\ollabel{prop:god-infty-m}
+  $\Gamma \Entails[\LogGod[\infty]] !B$ असेल, तर
+  सर्व~$m \ge 2$ साठी $\Gamma \Entails[\LogGod[m]] !B$.
+\end{prop}
+
+\begin{proof}
+  सराव.
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][inf][god]{prop:god-infty-m} सिद्ध करा.
+\end{prob}
+
+खरे तर आधारसूत्रांचा संच ससीम असेल, तर याचे प्रतिलोम
+विधानही खरे आहे.
+
+$\LogGod[3]$ प्रमाणेच $\LogGod[\infty]$ मध्येही
+अंतःप्रज्ञावादी तर्कशास्त्रात वैध असलेली सर्व !!{formula}s
+सर्वतः सत्य आहेत; आणि आधीची सर्वतः सत्य नसलेल्या सूत्रांची
+उदाहरणे $\LogGod[\infty]$ मध्येही सर्वतः सत्य नाहीत:
+\begin{align*}
+  & p \lor \lnot p && (p \lif q) \lif (\lnot p \lor q) \\
+  & \lnot\lnot p \lif p && \lnot(\lnot p \land \lnot q) \lif (p \lor q) \\
+  & ((p \lif q) \lif p) \lif p && \lnot(p \lif q) \lif (p \land \lnot q)
+\end{align*}
+अंतःप्रज्ञावादी तर्कशास्त्रात वैध नसलेले, पण
+$\LogGod[3]$ मध्ये सर्वतः सत्य असलेले
+!!{formula}~$(p \lif q) \lor (q \lif p)$ हे
+$\LogGod[\infty]$ मध्येही सर्वतः सत्य आहे. खरे तर
+$(!A \lif !B) \lor (!B \lif !A)$ ही योजना
+अंतःप्रज्ञावादी तर्कशास्त्रात जोडून $\LogGod[\infty]$
+चे वैशिष्ट्यीकरण करता येते. हे Michael Dummett यांनी
+दाखवले; म्हणून $\LogGod[\infty]$ ला अनेकदा
+G\"odel--Dummett तर्कशास्त्र~$\Log{LC}$ म्हणतात.
+
+\begin{prob}
+  $(p \lif q) \lor (q \lif p)$ हे $\LogGod[\infty]$
+  मध्ये सर्वतः सत्य सूत्र आहे हे दाखवा.
+\end{prob}
+
+\begin{prob}
+  $(p \lif q) \lor (q \lif r) \lor (r \lif s)$ हे
+  $\LogGod[3]$ मध्ये सर्वतः सत्य असूनही
+  $\LogGod[\infty]$ मध्ये सर्वतः सत्य नाही हे दाखवा.
+\end{prob}
+
+\end{document}

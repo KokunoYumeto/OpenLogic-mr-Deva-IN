@@ -817,6 +817,13 @@ _DOCUMENTED_PROJECTIONS = {
         (r'n \in \Nat \text{ आणि } n<m',
          r'n \in \Nat \text{ and } n\le m'),
     ],
+    'OLP-0401': [
+        # OLINC-141: remove inline math delimiters inside display math.
+        (r'      1 & \text{जर } x =0\\',
+         r'      $1$ & \text{if } x =0\\'),
+        (r'      0 & \text{इतर वेळी}',
+         r'      $0$ & \text{otherwise}'),
+    ],
 }
 
 
