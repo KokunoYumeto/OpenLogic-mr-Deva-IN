@@ -1,0 +1,81 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: modal-validity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{val}
+
+\olsection{वैधता}
+
+\begin{explain}
+  सर्व प्रतिमानांत, म्हणजे प्रत्येक प्रतिमानातील प्रत्येक जगात, सत्य
+  असणारी !!^{formula}s विशेष महत्त्वाची आहेत. संभाव्य जगांवरील
+  एखाद्या प्राप्यता संबंधापासून अर्थलक्षण मिळते, या अर्थाने
+  $\Box$ आणि $\Diamond$ यांचे अर्थलक्षण ``सामान्य'' असेल,
+  तर ते कोणतेही असो, सत्य असणारी मोडल विधाने ही सूत्रे व्यक्त
+  करतात. अशा !!{formula}s ना आपण \emph{वैध} म्हणतो. उदाहरणार्थ,
+  $\Box(p \land q) \lif \Box p$ हे वैध आहे. मात्र $\Box$
+  च्या अनिवार्यतेशी संबंधित अर्थावरून वैध वाटणारी काही
+  !!{formula}s, उदाहरणार्थ $\Box p \lif p$, वैध नसतात.
+  संबंधी प्रतिमानांचे एक महत्त्व असे की, वेगवेगळ्या प्रकारच्या
+  प्राप्यता संबंधांनी $\Box$ आणि $\Diamond$ यांचे वेगवेगळे
+  अर्थलक्षण व्यक्त करता येते. त्यामुळे वैधता केवळ \emph{सर्व}
+  प्रतिमानांच्या संदर्भात नव्हे, तर \emph{विशिष्ट प्रकारच्या}
+  सर्व प्रतिमानांच्या संदर्भातही परिभाषित करावी. उदाहरणार्थ,
+  ज्या प्रतिमानांत प्रत्येक जग स्वतःलाच प्राप्य आहे, म्हणजे
+  $R$ परावर्ती आहे, त्या सर्व प्रतिमानांत $\Box p \lif p$
+  सत्य आहे, हे पुढे दिसेल. प्रतिमानांच्या वर्गांच्या संदर्भात
+  वैधता परिभाषित केल्यास हे थोडक्यात सांगता येते:
+  $\Box p \lif p$ हे परावर्ती प्रतिमानांच्या वर्गात वैध आहे.
+\end{explain}
+
+\begin{defn}
+  !!^a{formula}~$!A$ हे प्रतिमानांच्या $\mClass{C}$ या वर्गात
+  \emph{वैध} आहे, जर ते $\mClass{C}$ मधील प्रत्येक प्रतिमानात
+  सत्य असेल (म्हणजे $\mClass{C}$ मधील प्रत्येक प्रतिमानातील
+  प्रत्येक जगात सत्य असेल). $!A$ हे $\mClass{C}$ मध्ये वैध
+  असेल, तर $\mClass{C} \Entails !A$ असे लिहितो; आणि $!A$
+  हे \emph{सर्व} प्रतिमानांच्या वर्गात वैध असेल, तर
+  $\Entails !A$ असे लिहितो.
+\end{defn}
+
+\begin{prop}\ollabel{prop:subset-class}
+  $!A$ हे $\mClass{C}$ मध्ये वैध असेल, तर प्रत्येक
+  $\mClass{C}' \subseteq \mClass{C}$ या वर्गातही ते वैध असते.
+\end{prop}
+
+\begin{prop}\ollabel{prop:Nec-rule}
+  $!A$ वैध असेल, तर $\Box!A$ देखील वैध असते.
+\end{prop}
+
+\begin{proof}
+  $\Entails !A$ असे समजा. $\Entails \Box!A$ दाखवण्यासाठी
+  कोणतेही प्रतिमान $\mModel{M} = \tuple{W, R, V}$ आणि
+  $w \in W$ घ्या. $Rww'$ असेल, तर $!A$ वैध असल्यामुळे
+  $\mSat{M}{!A}[w']$; म्हणून $\mSat{M}{\Box!A}[w]$ देखील.
+  $\mModel{M}$ आणि $w$ कोणतेही असल्यामुळे
+  $\Entails \Box!A$.
+\end{proof}
+
+\begin{prob}
+  पुढील सूत्रे वैध आहेत हे दाखवा:
+  \begin{enumerate}
+  \item $\Box p \lif \Box (q \lif p)$;
+  \item $\Box \lnot \lfalse$;
+  \item $\Box p \lif (\Box q \lif \Box p)$.
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  $W = \{w\}$ असलेल्या $\mModel{M} = \tuple{W, R, V}$
+  प्रतिमानांच्या $\mClass{C}$ या वर्गात $!A \lif \Box!A$
+  वैध आहे, हे दाखवा. तसेच $R = \emptyset$ असलेल्या
+  $\mModel{M} = \tuple{W, R, V}$ प्रतिमानांच्या वर्गात
+  $!B \lif \Box !A$ आणि $\Diamond !A \lif !B$ वैध
+  आहेत, हे दाखवा.
+\end{prob}
+
+\end{document}
