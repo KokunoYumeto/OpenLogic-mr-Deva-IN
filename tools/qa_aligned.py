@@ -861,6 +861,11 @@ _DOCUMENTED_PROJECTIONS = {
         (r'\pSat{v}{!B \liff !C} \Leftrightarrow {} &',
          r'\pSat{v}{!B \lif !C} \Leftrightarrow {} &'),
     ],
+    'OLP-0418': [
+        # OLINC-153: keep the modal model a triple in the simple countermodel.
+        (r"\mModel{M'} =" + '\n' + r"  \tuple{W', R', V'}$",
+         r"\mModel{M'} =" + '\n' + r"  \{W', R', V'\}$"),
+    ],
 }
 
 

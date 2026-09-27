@@ -1,0 +1,99 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: entailment
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{ent}
+
+\olsection{तार्किक निष्पन्नता}
+
+\begin{explain}
+  एखाद्या जगात सत्य असण्याच्या व्याख्येने !!{formula}s मधील
+  तार्किक निष्पन्नतेचा संबंध परिभाषित करता येतो.
+  !!^a{formula}~$!B$ पासून~$!A$ तार्किकरीत्या निष्पन्न
+  होते तेव्हा आणि केवळ तेव्हाच, जेव्हा $!B$ सत्य असेल
+  तेव्हा $!A$ देखील सत्य असते. येथे ``तेव्हा'' म्हणताना
+  कोणतेही प्रतिमान आणि त्यातील कोणतेही जग अभिप्रेत आहे.
+\end{explain}
+
+\begin{defn}
+  $\Gamma$ हा !!{formula}s चा संच आणि $!A$ हे !!a{formula}
+  असेल, तर $\Gamma$ पासून~$!A$ \emph{तार्किकरीत्या
+  निष्पन्न होते}, म्हणजे $\Gamma \Entails !A$, तेव्हा आणि
+  केवळ तेव्हाच, जेव्हा प्रत्येक प्रतिमान
+  $\mModel{M} = \tuple{W, R, V}$ आणि प्रत्येक $w \in W$
+  साठी, सर्व $!B \in \Gamma$ बाबत $\mSat{M}{!B}[w]$
+  असेल तर $\mSat{M}{!A}[w]$ असते. $\Gamma$ मध्ये
+  एकच !!{formula}~$!B$ असेल, तर $!B \Entails !A$ लिहितो.
+\end{defn}
+
+\begin{ex}
+  एका !!a{formula} पासून दुसरे तार्किकरीत्या निष्पन्न होते हे
+  दाखवण्यासाठी $\mSat{M}{}[w]$ ची व्याख्या वापरून सर्व
+  प्रतिमानांबद्दल विचार करावा लागतो. उदाहरणार्थ,
+  $p \lif \Diamond p \Entails \Box\lnot p \lif \lnot p$
+  दाखवण्यासाठी असा युक्तिवाद करता येईल: प्रतिमान
+  $\mModel{M} = \tuple{W, R,
+    V}$ आणि $w \in W$ घ्या, आणि $\mSat{M}{p \lif \Diamond
+    p}[w]$ असे समजा. $\mSat{M}{\Box\lnot p \lif \lnot
+    p}[w]$ दाखवायचे आहे. तसे नाही असे समजा. मग
+  $\mSat{M}{\Box\lnot p}[w]$ आणि $\mSat/{M}{\lnot p}[w]$.
+  $\mSat/{M}{\lnot p}[w]$ असल्यामुळे $\mSat{M}{
+    p}[w]$. गृहीतकावरून $\mSat{M}{p \lif \Diamond p}[w]$;
+  म्हणून $\mSat{M}{\Diamond p}[w]$.
+  $\mSat{M}{\Diamond
+    p}[w]$ च्या व्याख्येवरून $Rww'$ असलेले असे $w'$
+  आहे की $\mSat{M}{p}[w']$. पण $\mSat{M}{\Box \lnot p}[w]$
+  देखील असल्यामुळे $\mSat{M}{\lnot p}[w']$; हा विरोधाभास.
+
+  !!a{formula}~$!B$ पासून दुसरे~$!A$ तार्किकरीत्या
+  निष्पन्न होत नाही हे दाखवण्यासाठी प्रतिदृष्टांत द्यावा
+  लागतो: असे प्रतिमान $\mModel{M} = \tuple{W, R,
+    V}$ की त्यातील एखाद्या जगात~$w \in W$ येथे
+  $\mSat{M}{!B}[w]$, पण $\mSat/{M}{!A}[w]$.
+  $p \lif \Diamond p \Entails/
+  \Box p \lif p$ हे दाखवू. \olref{fig:counterex} मधील
+  प्रतिमान पाहा. येथे $\mSat{M}{\Diamond p}[w_1]$
+  आणि म्हणून $\mSat{M}{p \lif
+    \Diamond p}[w_1]$. मात्र $\mSat{M}{\Box p}[w_1]$
+  असूनही $\mSat/{M}{p}[w_1]$ असल्यामुळे
+  $\mSat/{M}{\Box p \lif p}[w_1]$.
+  \begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label=right:\mFalse{p}]{$w_1$};
+      \node[world] (w2) [label=right:\mTrue{p}, above left=of w1]{$w_2$};
+      \node[world] (w3) [label=right:\mTrue{p}, above right=of w1] {$w_3$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{$p \lif \Diamond p
+  \Entails \Box p \lif p$ याचा प्रतिदृष्टांत.}
+  \ollabel{fig:counterex}
+  \end{figure}
+
+  अनेकदा अगदी साधे प्रतिदृष्टांत पुरेसे असतात.
+  $W' = \{w\}$, $R' = \emptyset$, आणि $V'(p) =
+  \emptyset$ असलेले प्रतिमान $\mModel{M'} =
+  \tuple{W', R', V'}$ हाही प्रतिदृष्टांत आहे:
+  $\mSat/{M'}{p}[w]$ असल्यामुळे
+  $\mSat{M'}{p \lif \Diamond p}[w]$. $w$ पासून एकही
+  जग प्राप्य नसल्यामुळे $\mSat{M'}{\Box p}[w]$; म्हणून
+  $\mSat/{M'}{\Box p
+    \lif p}[w]$.
+\end{ex}
+
+\begin{prob}
+  $\Box (!A \land !B) \Entails \Box !A$ हे दाखवा.
+\end{prob}
+
+\begin{prob}
+  $\Box (p \lif q) \Entails/ p \lif \Box q$ आणि $p \lif \Box
+  q \Entails/\Box (p \lif q)$ हे दाखवा.
+\end{prob}
+
+\end{document}
