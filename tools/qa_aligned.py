@@ -725,6 +725,12 @@ _DOCUMENTED_PROJECTIONS = {
         (r"$x$, $N$, $N'$, $Q$, $Q'$ साठी",
          r"$x$, $N$, $M'$, $Q$, $Q'$ साठी"),
     ],
+    'OLP-0371': [
+        # OLINC-110: abstraction closure must use the beta-eta
+        # parallel relation rather than an ordinary beta step.
+        (r"\item \ollabel{defn:beredpar2} $N \beredpar N'$ असेल",
+         r"\item \ollabel{defn:beredpar2} $N \xrightarrow{\beta} N'$ असेल"),
+    ],
 }
 
 

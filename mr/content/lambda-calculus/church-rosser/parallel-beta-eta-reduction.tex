@@ -1,0 +1,105 @@
+% Part: lambda-calculus
+% Chapter: church-rosser
+% Section: parallel-beta-eta-reduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{cr}{pbe}
+
+\olsection{समांतर $\beta\eta$-न्यूनीकरण}
+
+या विभागात $\beta\eta$-न्यूनीकरणाशी निगडित समांतर
+$\beta\eta$-न्यूनीकरणाला चर्च–रॉसर गुणधर्म आहे हे सिद्ध करू.
+
+\begin{defn}[समांतर $\beta\eta$-न्यूनीकरण, $\beredpar$] \ollabel{defn:beredpar}
+  पदांवरील \emph{समांतर $\beta\eta$-न्यूनीकरण}
+  ($\beredpar$) पुढीलप्रमाणे विगमनाने परिभाषित केले जाते:
+  \begin{enumerate}
+    \item \ollabel{defn:beredpar1} $x \beredpar x$.
+    \item \ollabel{defn:beredpar2} $N \beredpar N'$ असेल, तर $\lambd[x][N] \beredpar
+      \lambd[x][N']$.
+    \item \ollabel{defn:beredpar3} $P \beredpar P'$ आणि $Q \beredpar Q'$ असतील, तर $PQ \beredpar
+      P'Q'$.
+    \item \ollabel{defn:beredpar4} $N \beredpar N'$ आणि $Q \beredpar Q'$ असतील, तर
+      $(\lambd[x][N])Q \beredpar \Subst{N'}{Q'}{x}$.
+    \item \ollabel{defn:beredpar5} $N \beredpar N'$ असेल, तर $\lambd[x][Nx]
+      \beredpar N'$, मात्र $x \notin FV(N)$ असले पाहिजे.
+  \end{enumerate}
+\end{defn}
+
+\begin{thm}\ollabel{thm:refl}
+  $M \beredpar M$.
+\end{thm}
+
+\begin{proof}
+  सरावासाठी.
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pbe]{thm:refl} सिद्ध करा.
+\end{prob}
+
+\begin{defn}[$\beta\eta$-पूर्ण विकास]\ollabel{defn:becd}
+  $M$ चा \emph{$\beta\eta$-पूर्ण विकास}~$\becd{M}$
+  पुढीलप्रमाणे परिभाषित केला जातो. पाचवी अट लागू
+  होत असल्यास दुसऱ्या अटीऐवजी ती वापरायची आहे:
+  \begin{align}
+    \becd{x} &= x \ollabel{defn:becd1} \\
+    \becd{(\lambd[x][N])} &= \lambd[x][\becd{N}] \ollabel{defn:becd2}\\
+    \becd{(PQ)} &= \becd{P}\becd{Q} && \text{जर $P$ हे $\lambd$-अमूर्तीकरण नसेल तर}
+    \ollabel{defn:becd3} \\
+    \becd{((\lambd[x][N])Q)} &= \Subst{\becd{N}}{\becd{Q}}{x}
+                             \ollabel{defn:becd4} \\
+    \becd{(\lambd[x][Nx])} &= \becd{N} \ollabel{defn:becd5} & \text{जर $x
+                                                      \notin FV(N)$}
+  \end{align}
+\end{defn}
+
+\begin{lem}\ollabel{lem:comp}
+  $M \beredpar M'$ आणि $R \beredpar R'$ असतील, तर $\Subst{M}{R}{y}
+  \beredpar \Subst{M'}{R'}{y}$.
+\end{lem}
+
+\begin{proof}
+  $M \beredpar M'$ च्या !!{derivation} वर विगमन करू.
+
+  पहिली चार प्रकरणे \olref[pb]{lem:comp} मधील
+  प्रकरणांसारखीच आहेत. अखेरचा नियम
+  \olref{defn:beredpar5} असेल, तर काही $x$ आणि~$N'$
+  साठी $M$ हे $\lambd[x][Nx]$, $M'$ हे $N'$
+  आहे, $x \notin FV(N)$ आणि $N \beredpar N'$.
+  आपल्याला $\Subst{(\lambd[x][Nx])}{R}{y} \beredpar
+  \Subst{N'}{R'}{y}$, म्हणजे
+  $\lambd[x][\Subst{N}{R}{y} x] \beredpar \Subst{N'}{R'}{y}$,
+  हे सिद्ध करायचे आहे. ते \olref{defn:beredpar}\olref{defn:beredpar5}
+  आणि विगमन गृहीतकावरून मिळते.
+\end{proof}
+
+\begin{lem}\ollabel{lem:cont}
+  $M \beredpar M'$ असेल, तर $M' \beredpar \becd{M}$.
+\end{lem}
+
+\begin{proof}
+  $M \beredpar M'$ च्या !!{derivation} वर विगमन करू.
+
+  पहिली चार प्रकरणे \olref[pb]{lem:cont} मधील
+  प्रकरणांसारखी आहेत. अखेरचा नियम
+  \olref{defn:beredpar5} असेल, तर काही $x$, $N$,
+  $N'$ साठी $M$ हे $\lambd[x][Nx]$ आणि $M'$ हे $N'$
+  आहे, जेथे $x \notin FV(N)$ आणि $N
+  \beredpar N'$. आपल्याला $N' \beredpar
+  \becd{(\lambd[x][Nx])}$, म्हणजे $N' \beredpar \becd{N}$,
+  हे सिद्ध करायचे आहे; ते विगमन गृहीतकावरून लगेच मिळते.
+\end{proof}
+
+\begin{thm}\ollabel{thm:cr}
+  $\beredpar$ ला चर्च–रॉसर गुणधर्म आहे.
+\end{thm}
+
+\begin{proof}
+  \olref{lem:cont} वरून लगेच मिळते.
+\end{proof}
+
+\end{document}
