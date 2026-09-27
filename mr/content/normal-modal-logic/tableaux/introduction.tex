@@ -1,0 +1,75 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{int}
+
+\olsection{प्रस्तावना}
+
+!!^{tableau}s म्हणजे !!{signed
+  formula}s चे (खाली शाखा फुटणारे) काही वृक्ष.
+चिन्हांकित सूत्र म्हणजे सत्यतामूल्याचे चिन्ह
+($\True$ किंवा $\False$) आणि !!a{sentence}
+यांची जोडी:
+\[
+\sFmla{\True}{!A} \text{किंवा} \sFmla{\False}{!A}.
+\]
+!!^a{tableau} ची सुरुवात काही \emph{गृहीतकां}पासून
+होते. पुढील प्रत्येक !!{signed formula} हे अनुमानाचा
+एखादा नियम लावून मिळते. काही नियम वृक्षाच्या
+टोकावर एक किंवा अधिक !!{signed formula}s जोडतात;
+इतर नियम दोन नवी टोके जोडून दोन शाखा तयार करतात.
+नियम लावल्यावर मिळणाऱ्या !!{signed formula}s मधील
+!!{formula}, नियम ज्या !!{signed formula} ला लावला
+त्यातील सूत्रापेक्षा कमी गुंतागुंतीचे असते.
+एखाद्या शाखेत $\sFmla{\True}{!A}$ आणि
+$\sFmla{\False}{!A}$ ही दोन्ही असतील, तर ती शाखा
+\emph{बंद} आहे असे म्हणतो. !!a{tableau} मधील प्रत्येक
+शाखा बंद असेल, तर संपूर्ण !!{tableau} बंद असतो.
+बंद !!{tableau} ही अशी !!a{derivation} असते की
+तिच्यावरून त्या !!{tableau} ची सुरुवात ज्या
+!!{signed formula}s ने केली तो संच अपूरणीय
+आहे हे दिसते. यावरून $\Proves$ संबंधाची व्याख्या
+करता येते: $\Gamma \Proves !A$ तेव्हा आणि तेव्हाच
+$\Gamma_0 = \{!B_1,
+\dots, !B_n\} \subseteq \Gamma$ असा एखादा सांत
+संच असतो की पुढील गृहीतकांसाठी बंद !!{tableau}
+मिळतो:
+\[
+\{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}.
+\]
+
+मोडल तर्कशास्त्रांसाठी !!{signed
+formula} ही संकल्पना विस्तारित करावी लागते,
+तसेच~\iftag{prvBox}{$\Box$\iftag{prvDiamond}{ आणि
+    $\Diamond$}}{$\Diamond$} यांसाठी नियम जोडावे लागतात.
+चिन्हाबरोबर ($\True$ किंवा $\False$) मोडल
+!!{tableau}s मधील !!{formula}s ना
+\emph{पूर्वचिन्हे}~$\sigma$ ही असतात.
+ही पूर्वचिन्हे धन पूर्णांकांच्या रिकाम्या नसलेल्या
+क्रमिका असतात; म्हणजे $\sigma \in (\PosInt)^* \setminus
+\{\emptyseq\}$. अशी पूर्वचिन्हे लिहिताना भोवतालचे
+$\tuple{\ }$ वगळतो आणि वेगवेगळ्या !!{element}s
+मध्ये $,$ ऐवजी $.$ वापरतो.
+$\sigma$ हे पूर्वचिन्ह असेल, तर $\sigma.n$ म्हणजे
+$\sigma \concat \tuple{n}$; उदाहरणार्थ
+$\sigma = 1.2.1$ असेल, तर $\sigma.3$ म्हणजे
+$1.2.1.3$. उदाहरणार्थ,
+\[
+\sFmla{\True}{\Box !A \lif !A}[1.2]
+\]
+हे \emph{पूर्वचिन्हयुक्त !!{signed formula}}
+(किंवा संक्षेपाने \emph{पूर्वचिन्हयुक्त !!{formula}}) आहे.
+
+सहज अर्थाने, !!a{tableau} च्या एखाद्या शाखेवरील
+!!{formula}s पूर्ण करू शकेल अशा प्रतिमानातील
+जगाचे नाव पूर्वचिन्ह देते. आणि $\sigma$ हे
+एखाद्या जगाचे नाव असेल, तर $\sigma.n$ हे
+म्हणजे~$\sigma$ ने दर्शवलेल्या जगापासून प्राप्य
+असलेल्या जगाचे नाव देते.
+
+\end{document}
