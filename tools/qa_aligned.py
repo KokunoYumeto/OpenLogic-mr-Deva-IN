@@ -614,6 +614,15 @@ _DOCUMENTED_PROJECTIONS = {
 }
 
 
+_SOURCE_QA_NORMALIZATIONS = {
+    'OLP-0333': [
+        # OLINC-063: the frozen source closes the math delimiter before
+        # the second argument's brace, so even source-to-source QA fails.
+        (r'$\Sat{M}{!P \lif !A$}', r'$\Sat{M}{!P \lif !A}$'),
+    ],
+}
+
+
 def project_documented_source_corrections(unit_id, text):
     projected = text
     applied = []
@@ -626,7 +635,19 @@ def project_documented_source_corrections(unit_id, text):
 
 def check_with_documented_source_corrections(unit_id, source, target):
     projected, applied = project_documented_source_corrections(unit_id, target)
-    result = check(source, projected)
+    normalized_source = source
+    source_normalizations = []
+    for frozen, corrected in _SOURCE_QA_NORMALIZATIONS.get(unit_id, []):
+        if frozen in normalized_source:
+            normalized_source = normalized_source.replace(frozen, corrected)
+            source_normalizations.append((frozen, corrected))
+    result = check(normalized_source, projected)
+    if source_normalizations:
+        result = {
+            'formula_multiset_parity_after_documented_source_typo_normalization': result.pop('formula_multiset_parity'),
+            **result,
+            'documented_source_typo_normalization_applied': True,
+        }
     if applied:
         if unit_id == 'OLP-0054':
             result = {
