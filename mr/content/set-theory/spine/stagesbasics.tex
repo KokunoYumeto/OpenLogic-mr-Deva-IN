@@ -1,0 +1,63 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{Valphabasic}
+\olsection{टप्प्यांचे मूलभूत गुणधर्म}
+
+$V_\alpha$ च्या व्याख्येचे पायाभूत महत्त्व स्पष्ट करण्यासाठी त्यांच्याविषयी काही मूलभूत निष्कर्ष मांडू. आधी एक व्याख्या:\footnote{``उपसंच-समावेशक'' यासाठी प्रस्थापित संज्ञा नाही; मूळ इंग्रजीत \citet{ButtonLT1} यांनी वापरलेले ``potent'' हे नाव आहे.}
+\begin{defn}
+	$\forall x((\exists y \in A)x \subseteq y \lif x \in A)$ असेल तेव्हाच आणि तेव्हाच संच $A$ \emph{उपसंच-समावेशक} आहे असे म्हणू.
+\end{defn}
+\begin{lem}\ollabel{Valphabasicprops}
+प्रत्येक क्रमसूचक संख्या $\alpha$ साठी:
+\begin{enumerate}
+	\item\ollabel{Valphatrans} प्रत्येक $V_\alpha$ संक्रमक असतो.
+	\item\ollabel{Valphapotent} प्रत्येक $V_\alpha$ उपसंच-समावेशक असतो.
+	\item\ollabel{Valphacum} $\gamma \in \alpha$ असेल, तर $V_\gamma
+	\in V_\alpha$ (आणि म्हणून \olref{Valphatrans} वरून $V_\gamma \subseteq V_\alpha$ सुद्धा).
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+हे (एकसामयिक) अनंतपार विगमनाने सिद्ध करू. विगमनासाठी प्रत्येक क्रमसूचक संख्या $\beta < \alpha$ साठी \olref{Valphatrans}--\olref{Valphacum} लागू आहेत असे मानू.
+
+$\alpha = \emptyset$ हे प्रकरण उघड आहे.
+
+$\alpha = \ordsucc{\beta}$ मानू. \olref{Valphacum} साठी, $\gamma \in \alpha$ असेल, तर गृहीतकावरून $V_\gamma \subseteq V_\beta$; म्हणून $V_\gamma \in \Pow{V_\beta} = V_\alpha$. \olref{Valphapotent} साठी $A \subseteq B \in V_\alpha$, म्हणजे $A
+\subseteq B \subseteq V_\beta$, असे मानू. मग $A \subseteq V_\beta$ आणि म्हणून $A \in V_\alpha$. \olref{Valphatrans} साठी, $x \in A \in
+V_\alpha$ असेल, तर $A \subseteq V_\beta$ आणि म्हणून $x \in V_\beta$. गृहीतकानुसार $V_\beta$ संक्रमक असल्याने $x \subseteq V_\beta$; म्हणून $x \in V_\alpha$.
+
+$\alpha$ ही सीमा क्रमसूचक संख्या मानू. \olref{Valphacum} साठी, $\gamma \in \alpha$ असेल, तर $\gamma \in \ordsucc{\gamma} \in \alpha$; म्हणून गृहीतकावरून $V_\gamma \in V_{\ordsucc{\gamma}}$ आणि त्यामुळे $V_\gamma \in \bigcup_{\beta \in \alpha} V_\beta = V_\alpha$. \olref{Valphatrans} आणि \olref{Valphapotent} साठी एवढेच पाहणे पुरेसे आहे की संक्रमक (अनुक्रमे उपसंच-समावेशक) संचांचा संयोग संक्रमक (अनुक्रमे उपसंच-समावेशक) असतो.
+\end{proof}
+
+\begin{lem}\ollabel{Valphanotref}
+प्रत्येक क्रमसूचक संख्या $\alpha$ साठी $V_\alpha \notin V_\alpha$.
+\end{lem}
+
+\begin{proof}
+अनंतपार विगमन वापरू. $V_\emptyset \notin V_\emptyset$ हे उघड आहे.
+
+$V_{\ordsucc{\alpha}} \in V_{\ordsucc{\alpha}} = \Pow{V_\alpha}$ असेल, तर $V_{\ordsucc{\alpha}} \subseteq V_\alpha$. तसेच \olref{Valphabasicprops} वरून $V_\alpha
+\in V_{\ordsucc{\alpha}}$; म्हणून $V_\alpha \in V_\alpha$. प्रतिपक्षाने, $V_\alpha \notin V_\alpha$ असेल, तर $V_{\ordsucc{\alpha}} \notin V_{\ordsucc{\alpha}}$.
+
+$\alpha$ ही सीमा क्रमसूचक संख्या असून $V_\alpha \in V_\alpha = \bigcup_{\beta \in
+\alpha}V_\beta$ असेल, तर एखाद्या $\beta \in \alpha$ साठी $V_\alpha \in V_\beta$. पण मग $V_\beta \in V_\alpha$ सुद्धा; म्हणून \olref{Valphabasicprops} दोनदा वापरून $V_\beta \in V_\beta$ मिळते. प्रतिपक्षाने, सर्व $\beta \in \alpha$ साठी $V_\beta \notin V_\beta$ असेल, तर $V_\alpha \notin
+V_\alpha$.
+\end{proof}
+
+\begin{cor}
+कोणत्याही क्रमसूचक संख्या $\alpha, \beta$ साठी: $\alpha \in \beta$ तेव्हाच आणि तेव्हाच $V_\alpha \in V_\beta$.
+\end{cor}
+
+\begin{proof}
+\Olref{Valphabasicprops} वरून एक दिशा मिळते. उलट, $V_\alpha \in V_\beta$ मानू. \olref{Valphanotref} वरून $\alpha \neq \beta$. तसेच $\beta \notin \alpha$; कारण अन्यथा $V_\beta \in V_\alpha$ मिळेल आणि मग \olref{Valphabasicprops} दोनदा वापरून $V_\beta \in V_\beta$ मिळेल, हे \olref{Valphanotref} शी विसंगत आहे. म्हणून त्रिपर्यायावरून $\alpha \in \beta$.
+\end{proof}
+\noindent
+या सर्वांवरून प्रत्येक $V_\alpha$ हा पदानुक्रमातील $\alpha$ वा टप्पा आहे असे मानता येते. का ते पाहू.
+
+आपले $V_\alpha$ \emph{क्रमिक} प्रक्रियेत तयार होतात असे नक्कीच मानता येते; कारण क्रमसूचक संख्यांचा वापर पुनरावृत्तीच्या संकल्पनेशी जुळतो. शिवाय, एक टप्पा दुसऱ्याआधी तयार होतो, म्हणजे $V_\beta \in V_\alpha$, म्हणजे $\beta \in \alpha$, असेल, तर $V_\beta \subseteq V_\alpha$ असल्यामुळे रचना \emph{संचयी} असते. शेवटी, आधीच्या कोणत्याही टप्प्यावर उपलब्ध असलेल्या संचांचे \emph{सर्व} संभाव्य संग्रह आपण प्रत्यक्ष तयार करतो; कारण प्रत्येक उत्तरवर्ती टप्पा $V_{\ordsucc{\alpha}}$ हा त्याच्या पूर्ववर्ती $V_\alpha$ चा घातसंच असतो.
+
+म्हणजे $\ZFminus$ मिळाल्यावर संचांच्या संचयी-क्रमिक पदानुक्रमाची आपली संकल्पना मांडण्याचे काम \emph{जवळजवळ} पूर्ण झाले आहे. (अर्थात प्रतिस्थापनाचे समर्थन अजून करायचे आहे.)
+
+\end{document}
