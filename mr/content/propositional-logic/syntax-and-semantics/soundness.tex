@@ -1,0 +1,35 @@
+% Part: propositional-logic
+% Chapter: propositional-logic
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{prp}{snd}
+
+\olsection{विधानात्मक तर्कशास्त्राची निर्दोषता}
+
+\begin{thm}[निर्दोषता]
+\ollabel{thm:soundness}
+$\Gamma\Proves!A$ असेल, तर
+$\Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+प्रमेयांवर आगमन करू. $!A$ स्वयंसिद्धक असेल, तर $\Entails
+!A$; म्हणून विशेषतः $\Gamma \Entails!A$. तसेच $!A \in \Gamma$
+असेल, तर $\Gamma \Entails!A$. आगमनात्मक पायरीसाठी $!C$
+आणि $!C\lif!A$ यांपासून \emph{विध्यात्मक अनुमानाने} $!A$
+मिळाले असे माना. तसेच आगमनाच्या गृहीतकानुसार प्रमेय
+$!C\lif !A$ आणि $!C$ यांसाठी खरे आहे असे माना.
+\olref[sem]{prop:semanticalfacts} मधील तिसऱ्या मुद्द्यावरून
+अपेक्षित निष्कर्ष मिळतो.
+\end{proof}
+
+\begin{cor}
+$\Gamma$ पूर्ततायोग्य असेल, तर $\Gamma$ सुसंगत असतो. म्हणून
+विधानात्मक तर्कशास्त्र सुसंगत आहे.
+\end{cor}
+
+\end{document}
