@@ -68,6 +68,12 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0662': [
+        # OLINC-352: implication introduction concludes B -> A, not B -> C.
+        (r'\UnaryInfC{$!B \lif !A$}', r'\UnaryInfC{$!B \lif !C$}'),
+        # OLINC-355: the induction follows the height of the first proof.
+        (r'$\pheight{\delta_1}$', r'$\pheight{\delta}$'),
+    ],
     'OLP-0661': [
         # OLINC-351: the displayed upper proof is labelled pi1, not pi1-prime.
         (r'तर~$\pi_1$' '\n' r'मध्ये इतर',

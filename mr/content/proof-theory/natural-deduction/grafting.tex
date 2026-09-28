@@ -1,0 +1,148 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: grafting
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{gra}
+
+\olsection{\usetoken{P}{proof} यांचे कलम-संयोजन}
+
+~\Log{N1c} आणि~\Log{N1i}
+मधील !!^{proof}s म्हणजे
+गृहीतके~$!B$ यांपासून
+!!{formula}s~$!A$ यांच्या
+!!{proof}s होत. आता $!B$
+चीही !!a{proof} आहे असे समजा.
+$!B$ ची !!{proof} आणि
+$!B$ पासून $!A$ ची !!{proof}
+एकत्र करून, $!B$ हे गृहीतक
+न वापरणारी $!A$ ची
+!!a{proof} कशी मिळवता येईल?
+
+एक मार्ग म्हणजे
+~\Intro{\lif} लावून $!A$
+च्या !!{proof} मधील
+$!B$ हे गृहीतक काढून टाकणे.
+मग मिळालेली $!B \lif !A$
+ची !!{proof} आणि $!B$
+ची !!{proof} एकत्र
+केल्यास पुढील सिद्धता मिळते:
+\[
+\AxiomC{$\Discharge{!B}{x}$}
+\DeduceC{$!A$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!B \lif !A$}
+\AxiomC{}
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!A$}
+\DisplayProof
+\]
+हे सरळ आहे, पण काहीसे
+अनावश्यक वळण घेते:
+$\lif$ आणून लगेच त्याचे
+निराकरण का करावे?
+$!B \lif !A$ मधून जाणारा
+असा “वळसा” टाळता यायला हवा.
+(असे वळसे नेहमी टाळता
+येतात, हाच प्रत्यक्षात
+सामान्यरूपीकरण प्रमेयाचा आशय आहे.)
+
+~\Log{N1c} आणि~\Log{N1i}
+मध्ये या प्रसंगी तो वळसा
+सहज टाळता येतो: $!B^x$
+या गृहीतकांच्या जागी $!B$
+ची संपूर्ण !!{proof} बसवता येते.
+इतर सिद्धतांच्या गृहीतकांवर
+!!{proof}s चे असे
+“कलम-संयोजन” उपयुक्त आहे;
+म्हणून त्याची व्याख्या नोंदवू.
+
+\begin{defn}
+समजा $\delta_1$ ही उघडे
+गृहीतक~$!B^x$ यापासून
+$!A$ ची \Log{N1c}-!!{proof}
+(किंवा \Log{N1i}-!!{proof}) आहे,
+आणि $\delta_2$ ही $!B$
+ची \Log{N1c}-!!{proof}
+(\Log{N1i}-!!{proof}) आहे.
+मग $\delta_1$ मधील
+$!B^x$ च्या प्रत्येक
+निरसन न झालेल्या उदाहरणाच्या
+जागी $\delta_2$ बसवून
+मिळणारा परिणाम म्हणजे
+$\Subst{\delta_1}{\delta_2}{!B^x}$.
+\end{defn}
+
+~$\delta_1$ आणि $\delta_2$
+मध्ये एकाच खूणेची, पण वेगवेगळी
+गृहीतक-!!{formula}s नसतील,
+आणि $\delta_2$ च्या कोणत्याही
+उघड्या गृहीतकात $\delta_1$
+चे आयगेन चर येत नसेल,
+तर परिणामी
+$\Subst{\delta_1}{\delta_2}{!B^x}$
+ही योग्य !!{proof} आहे.
+तिची उघडी गृहीतके म्हणजे
+$\delta_1$ मधील बसवलेल्या
+उदाहरणांव्यतिरिक्त
+उरलेली उघडी गृहीतके,
+आणि $\delta_2$ मधील
+उघडी गृहीतके.
+!!{proof}s चे कलम-संयोजन
+करताना या अटी सहसा पूर्ण होतात.
+~$\delta_1$ आणि $\delta_2$
+या मोठ्या !!{proof}
+च्या उपसिद्धता असतील,
+तर पहिली अट पूर्ण होते.
+दुसरी अट पूर्ण नसेल,
+तर $\delta_1$ ची आयगेन चरे
+पुन्हा नाव देऊन ती पूर्ण
+करता येते.
+
+तशीच व्याख्या
+\Log{N2c} आणि~\Log{N2i}
+यांनाही लागू होते.
+
+\begin{defn}
+समजा $\delta_1$ ही
+$x:!B, \Gamma_1 \Sequent !A$
+ची \Log{N2c}-!!{proof}
+(किंवा \Log{N2i}-!!{proof}) आहे;
+आणि $\delta_2$ ही
+$\Gamma_2 \Sequent !B$
+ची \Log{N2c}-!!{proof}
+(\Log{N2i}-!!{proof}) आहे.
+मग $\delta_1$ मधील
+प्रत्येक $x:!B \Sequent !B$
+या स्वयंसिद्धकाच्या जागी
+$\delta_2$ बसवून,
+त्या स्वयंसिद्धकांखालील
+प्रत्येक क्रमवर्तीच्या
+संदर्भात $\Gamma_2$ जोडून
+मिळणारा परिणाम म्हणजे
+$\Subst{\delta_1}{\delta_2}{x:!B}$.
+\end{defn}
+
+\begin{prop}
+जर $\delta_1 \Proves
+x:!B, \Gamma_1 \Sequent
+!A$ आणि $\delta_2 \Proves
+\Gamma_2 \Sequent !B$,
+तर $\Subst{\delta_1}{\delta_2}{x:!B}
+\Proves \Gamma_1, \Gamma_2 \Sequent
+!A$, मात्र $\delta_1$ चे
+कोणतेही आयगेन चर
+$\Gamma_2$ मध्ये येता
+कामा नये.
+\end{prop}
+
+\begin{proof}
+  $\pheight{\delta_1}$ वर
+  विगमन करून.
+\end{proof}
+
+\end{document}
