@@ -1,0 +1,125 @@
+% Part: propositional-logic
+% Chapter: propositional-logic
+% Section: completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{prp}{com}
+
+\olsection{विधानात्मक तर्कशास्त्राची संपूर्णता}
+
+\begin{defn}
+\ollabel{def:MaxCon}
+!!{formula}s चा संच~$\Gamma$ \emph{महत्तम सुसंगत} असतो, जर तो
+सुसंगत असेल आणि $\Gamma \subseteq \Delta$ असा कोणताही सुसंगत
+संच~$\Delta$ घेतल्यास $\Gamma = \Delta$ असेल.
+\end{defn}
+
+\begin{lem}[सत्यता पूर्वप्रमेय]
+  \ollabel{lem:truth}
+$\Gamma$ महत्तम सुसंगत असू द्या; मग:
+\begin{enumerate}
+\item \ollabel{lem:truth-1} $!A \in \Gamma$ तेव्हाच आणि तेव्हाच $\lnot !A
+  \notin \Gamma$;
+\item \ollabel{lem:truth-2} $\Gamma \Proves !A$ तेव्हाच आणि तेव्हाच $!A \in \Gamma$;
+\item \ollabel{lem:truth-3} $!A \lif !B \in \Gamma$ तेव्हाच आणि तेव्हाच
+  $!A \notin \Gamma$ किंवा $!B \in \Gamma$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+\begin{enumerate}
+\item $!A \in \Gamma$ असे माना. $\lnot !A \in \Gamma$ सुद्धा असेल,
+  तर $\Gamma$ विसंगत ठरतो. $!A$ आणि $\lnot!A$ यांपैकी एकही
+  $\Gamma$ मध्ये नसेल, तर \olref[axd]{prop:phi} नुसार
+  $\Gamma\cup\{!A\}$ आणि $\Gamma \cup \{\lnot !A\}$ यांपैकी
+  एक संच सुसंगत असतो; म्हणून $\Gamma$ महत्तम नसतो. उलटी दिशाही
+  याचप्रमाणे सिद्ध होते.
+\item $!A \in \Gamma$ असेल, तर अर्थातच $\Gamma \Proves !A$.
+  उलट, $\Gamma \Proves !A$ असे माना. $!A \notin \Gamma$ असेल,
+  तर \olref{lem:truth-1} नुसार $\lnot !A \in \Gamma$. त्यामुळे
+  $\Gamma \Proves !A$ आणि $\Gamma \Proves \lnot !A$, हा व्याघात.
+\item सरावासाठी.
+\end{enumerate}
+\end{proof}
+
+\olref{lem:truth}\olref{lem:truth-2} ची डावीकडून उजवीकडील
+दिशा दाखवते की $\Gamma$ \emph{निगमनतः बंद} आहे: म्हणजे
+कोणत्याही~$!A$ साठी $\Gamma \Proves !A$ असेल, तर $!A
+\in \Gamma$.
+
+\begin{prob}
+  \olref{lem:truth} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{thm}[संपूर्णता]
+\ollabel{thm:completeness}
+$\Gamma$ सुसंगत असेल, तर $\Gamma$ पूर्ततायोग्य असतो.
+\end{thm}
+
+\begin{proof}
+$!A_0$, $!A_1$,~\dots ही भाषेतील सर्व !!{formula}s ची
+पूर्ण यादी असू द्या. पुढीलप्रमाणे !!{formula}s च्या संचांची
+$\Gamma_0$, $\Gamma_1$,~\dots ही वाढती क्रमिका
+आवर्ती रीतीने परिभाषित करू:
+\begin{align*}
+\Gamma_0 & = \Gamma\\
+\Gamma_{n+1} &  =
+\begin{cases}
+  \Gamma_n \cup \{!A_n\} & \text{जर $\Gamma_n \cup \{!A_n\}$ सुसंगत असेल;}\\
+  \Gamma_n \cup \{\lnot !A_n\} & \text{अन्यथा}.
+\end{cases}
+\end{align*}
+मग पुढील व्याख्या करू:
+\[
+\Gamma^* = \bigcup_{0\le n}\Gamma_n.
+\]
+आता क्रमाने पुढील तथ्ये सिद्ध करायची आहेत:
+\begin{enumerate}
+\item प्रत्येक $n$ साठी $\Gamma_n$ हा संच सुसंगत आहे
+  ($n$ वर आगमनाने, \olref[axd]{prop:phi} वापरून);
+\item $\Gamma^*$ सुसंगत आहे;
+\item $\Gamma^*$ महत्तम आहे.
+\end{enumerate}
+मग $p_i \in \Gamma^*$ असेल तेव्हाच $v(p_i) = \True$
+असे ठरवून सत्य-मूल्यांकन~$v$ परिभाषित करू. $!A$ वर आगमन
+केल्यास अधिक गुंतागुंतीच्या !!{sentence}s साठीही
+$\Gamma^*$ मधील सदस्यत्व आणि $v$ नुसार सत्यता जुळतात,
+हे दिसते: $\overline{v}(!A) = \True$ तेव्हाच आणि तेव्हाच
+$!A \in \Gamma^*$. विशेषतः, $v$ हे $\Gamma^*$ ची पूर्तता
+करते. $\Gamma \subseteq \Gamma^*$ असल्याने $\Gamma$
+सुद्धा पूर्ततायोग्य आहे, हेच सिद्ध करायचे होते.
+\end{proof}
+
+\begin{cor}
+$\Gamma \Entails !A$ असेल, तर $\Gamma \Proves !A$.
+\end{cor}
+
+\begin{proof}
+$\Gamma\Proves/ !A$ असेल, तर \olref[axd]{prop:prov-incons} नुसार
+$\Gamma \cup \{\lnot !A\}$ सुसंगत आहे. म्हणून संपूर्णता
+प्रमेयानुसार $\Gamma \cup \{\lnot !A\}$ पूर्ततायोग्य आहे;
+त्यामुळे $\Gamma \Entails/ !A$.
+\end{proof}
+
+\begin{prop}[संहतता प्रमेय]
+\ollabel{prop:compactness}
+$\Gamma$ पूर्ततायोग्य असेल तेव्हाच आणि तेव्हाच $\Gamma$ चा प्रत्येक
+\emph{सान्त} उपसंच~$\Gamma_0$ पूर्ततायोग्य असेल.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ अपूर्ततायोग्य असेल तेव्हाच आणि तेव्हाच तो विसंगत असेल;
+तेव्हाच आणि तेव्हाच $\Gamma$ चा एखादा सान्त उपसंच~$\Gamma_0$
+विसंगत असेल; आणि तेव्हाच आणि तेव्हाच $\Gamma$ चा एखादा सान्त
+उपसंच~$\Gamma_0$ अपूर्ततायोग्य असेल.
+\end{proof}
+
+\begin{cor}
+$\Gamma \Entails !A$ असेल तेव्हाच आणि तेव्हाच $\Gamma$ च्या
+एखाद्या सान्त उपसंच~$\Gamma_0$ साठी $\Gamma_0 \Entails !A$ असेल.
+\end{cor}
+
+\end{document}
