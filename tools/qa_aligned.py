@@ -68,6 +68,16 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0675': [
+        # OLINC-383: the cut formula in the example is B-and-C.
+        (r'$!A \ident !B \land !C$',
+         r'$!A \ident !B \lor !C$'),
+        # OLINC-384: both rule references mean existential elimination.
+        (r'नंतर' + '\n' + r'\Elim{\lexists} येत',
+         r'नंतर' + '\n' + r'\Elim{\exists} येत'),
+        (r'ते' + '\n' + r'\Elim{\lexists}' + '\n' + r'अनुमानाच्या',
+         r'ते' + '\n' + r'\Elim{\exists}' + '\n' + r'अनुमानाच्या'),
+    ],
     'OLP-0672': [
         # OLINC-381: three distinct proof objects are used in the detour.
         (r'!!{proof}~$\delta_3$ बहुधा',
