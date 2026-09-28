@@ -1,0 +1,204 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: translation-N2i
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{tni}
+
+\olsection{\Log{N2} पासून \Log{G2} मध्ये रूपांतर}
+
+\begin{prop}\ollabel{prop:N2-to-G2}
+$\Log{N2c}\ (\Log{N2i}) \Proves
+\Gamma \Sequent !A$ असेल, तर
+$\Log{G2c}\ (\Log{G2i}) + \Cut \Proves \Gamma'
+\Sequent \Delta$. येथे~$\Gamma$ मधील
+खुणा काढून मिळणारा !!{formula}s चा
+बहुसंच~$\Gamma'$ आहे; तसेच~$!A$
+हा~$\lfalse$ नसेल तर
+$\Delta = \{!A\}$, आणि असेल तर
+$\Delta = \emptyset$.
+\end{prop}
+
+\begin{proof}
+पुन्हा~$\Gamma \Sequent !A$ च्या
+!!{proof}~$\delta$ च्या उंचीवर
+विगमन करू. ~$\delta$ हे
+$x:!A \Sequent !A$ स्वयंसिद्धक
+असेल, तर~$\pi$ हे अनुरूप
+$!A \Sequent !A$ स्वयंसिद्धक
+आहे; किंवा~$!A \ident \lfalse$
+असेल तर
+$\lfalse \Sequent \ $ स्वयंसिद्धक आहे.
+
+~$\delta$ चा शेवट
+अनुमाननियमात होत असेल, तर
+पुढील प्रसंग वेगळे पाहू:
+\begin{enumerate}
+  \item $R$ हा
+  मुख्य सूत्र~$!B \lif !C$
+  असलेला~\Intro{\lif} नियम असेल,
+  आणि~$x:!B$ हे आधारविधानाच्या
+  संदर्भात असेल पण निष्कर्षाच्या
+  संदर्भात नसेल, तर~$\delta$
+  चा शेवट असा होतो:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x:!B, \Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  विगमन गृहीतकानुसार
+  $!B, \Gamma' \Sequent !C$
+  ची !!a{proof}~$\pi_1$
+  मिळते; $!C \ident \lfalse$
+  असेल तर तिचे रूप
+  $!B, \Gamma' \Sequent \ $
+  असते. त्यावर~\RightR{\lif}
+  लावून~$\pi$ मिळते;
+  $!C \ident \lfalse$ असताना
+  त्याआधी~\RightR{\Weakening}
+  लावावे लागते.
+  \item $R$ हा~\Intro{\lif}
+  असेल, पण~$x:!B$
+  आधारविधानाच्या संदर्भात नसेल,
+  तर~$\delta$ चा शेवट असा होतो:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  विगमन गृहीतकानुसार
+  निष्पन्न सूत्र असत्य
+  नसेल तेव्हा~$\Gamma' \Sequent !C$
+  ची !!a{proof}~$\pi_1$ मिळते;
+  असत्याच्या प्रसंगी तिचा
+  उत्तरपक्ष रिकामा असतो.
+  गरज असल्यास आधी
+  उजवीकडील दुर्बलीकरणाने
+  असत्य उजवीकडे आणा.
+  मग~$!B$ साठी
+  \LeftR{\Weakening}
+  आणि त्यानंतर
+  \RightR{\lif} लावून~$\pi$
+  मिळते.
+  \item $R$ हा~\Elim{\lif}
+  असेल, तर~$\delta$ चा
+  शेवट असा होतो:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma_1 \fCenter !B \lif !A$
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \Deduce$\Gamma_2 \fCenter !B$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$\Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  येथे~$\Gamma = \Gamma_1 \cup \Gamma_2$.
+  विगमन गृहीतकानुसार
+  !!{proof}s मिळतात:
+  $\pi_1$ ही
+  $\Gamma_1' \Sequent !B \lif !A$
+  ची आणि~$\pi_2$ ही
+  $\Gamma_2' \Sequent !B$ ची.
+  दुसऱ्या निष्कर्षसूत्राचा असत्य
+  हा प्रसंग असेल, तर दुसरी
+  सिद्धता मिळवण्यासाठी
+  विगमनातून आलेल्या रिकाम्या
+  उत्तरपक्षाच्या सिद्धतेवर
+  उजवीकडील दुर्बलीकरण लावा.
+  पुढीलप्रमाणे !!{proof}~$\pi$
+  मिळते:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter !B \lif !A$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma_2' \fCenter !B$
+  \Axiom$!A \fCenter !A$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$!B \lif !A, \Gamma_2' \fCenter !A$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  बहुसंच~$\Gamma_1' \cup \Gamma_2'$
+  हा $\Gamma' =
+  (\Gamma_1 \cup \Gamma_2)'$
+  याच्याशी समान असेलच असे नाही.
+  उदाहरणार्थ,~$\Gamma_1$
+  आणि~$\Gamma_2$ दोन्हींमध्ये
+  $x:!C$ असेल, तर
+  $\Gamma_1' \cup \Gamma_2'$
+  मध्ये~$!C$ च्या दोन प्रती
+  असतात; पण
+  $(\Gamma_1 \cup \Gamma_2)'$
+  मध्ये एकच प्रत असते.
+  योग्य~\LeftR{\Contraction}
+  अनुमाने जोडून हे दुरुस्त करता येते.
+
+  $!A \ident \lfalse$
+  असेल, तर~$\delta_2$
+  वरून विगमनाने मिळणारी
+  !!a{proof} एकटी रिकामा
+  उत्तरपक्ष देत नाही.
+  वरच्या रचनेत
+  $!A$ च्या ओळख-स्वयंसिद्धकाऐवजी
+  रिकामा उत्तरपक्ष असलेले
+  असत्य-स्वयंसिद्धक वापरा.
+  डाव्या अभिव्यंजन-नियमापुढे
+  कट लावल्यावर
+  $\Gamma_1', \Gamma_2' \Sequent \ $
+  ची !!{proof}~$\pi$ मिळते.
+  त्यामुळे यासाठी
+  \LeftR{\Weakening} किंवा
+  \RightR{\Weakening}
+  लावण्याची गरज नाही.
+\item $R$ हा~\FalseCl असेल,
+तर~$\delta$ चा शेवट असा:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x: \lnot !A, \Gamma \fCenter \lfalse$
+  \RightLabel{\FalseCl}
+  \UnaryInf$\Gamma \fCenter !A$
+  \DisplayProof
+  \]
+  विगमन गृहीतकानुसार
+  $\lnot !A, \Gamma' \Sequent \ $
+  ची !!a{proof}~$\pi_1$
+  आहे. पुढील !!{proof}~$\pi$ घेऊ:
+  \[
+  \Axiom$!A \fCenter !A$
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\fCenter !A, \lnot !A$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\lnot !A, \Gamma' \fCenter $
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma' \fCenter !A$
+  \DisplayProof
+  \]
+\end{enumerate}
+फक्त~\FalseCl{} च्या
+रूपांतरातून मिळणाऱ्या
+!!a{proof}~$\pi$ मध्ये
+एखाद्या क्रमवर्तीच्या उजव्या बाजूस
+एकापेक्षा अधिक !!{formula}
+येऊ शकते. म्हणजे
+~\Log{N2i} मधील !!{proof}
+रूपांतरित केल्यास
+\Log{G2i} मधील !!{proof} मिळते.
+\end{proof}
+
+\end{document}

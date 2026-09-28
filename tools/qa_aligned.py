@@ -68,6 +68,18 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0671': [
+        # OLINC-376: the target calculus is G2i, not a repeat of N2i.
+        (r'\Log{G2c}\ (\Log{G2i}) + \Cut \Proves',
+         r'\Log{G2c}\ (\Log{N2i}) + \Cut \Proves'),
+        # OLINC-378: the false-consequent branch of implication
+        # elimination ends with the combined context and empty succedent.
+        (r"$\Gamma_1', \Gamma_2' \Sequent \ $",
+         r"$\Gamma_2' \Sequent \ $"),
+        # OLINC-379: G2c antecedents have no N2 discharge labels.
+        (r"\Deduce$\lnot !A, \Gamma' \fCenter $",
+         r"\Deduce$x: \lnot !A, \Gamma' \fCenter $"),
+    ],
     'OLP-0670': [
         # OLINC-366: the nonempty succedent fixes C as A.
         (r' आणि $!C \ident !A$', ''),
