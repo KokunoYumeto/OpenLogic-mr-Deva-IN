@@ -282,10 +282,9 @@ project(r"p{.48\textwidth} || p{.48\textwidth}",
         r"p{.465\textwidth} || p{.465\textwidth}", 2)
 project(r"p{.50\textwidth} || p{.43\textwidth}",
         r"p{.50\textwidth} || p{.44\textwidth}", 1)
-project(r"\multirow{3}{*}{\hbox to.43\textwidth{$",
-        r"\multirow{3}{*}{\hbox to.44\textwidth{$", 1)
 # This one modal-correspondence table exceeds the measure by 2.847 pt.
-# Reduce local cell padding while preserving its caption and HTML anchor.
+# Leave its fixed inner box narrower than the column and reduce local padding,
+# while preserving the caption and HTML anchor.
 table_begin = r"\begin{tabular}{| p{.50\textwidth} || p{.44\textwidth} |}"
 project(table_begin, r"\setlength{\tabcolsep}{4pt}" + "\n" + table_begin, 1)
 # These three labels belong to lemmas sharing the definition counter;
