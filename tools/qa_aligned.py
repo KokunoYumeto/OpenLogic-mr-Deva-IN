@@ -68,6 +68,23 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0701': [
+        # OLINC-439: inversion replaces the context occurrence of A∧B by A,B.
+        (r"$!A, !B, \Gamma' \Sequent \Delta, !C$",
+         r"$!A \land !B, \Gamma' \Sequent \Delta, !C$"),
+        (r"$!A, !B, \Gamma', !D \Sequent \Delta$",
+         r"$!A \land !B, \Gamma', !D \Sequent \Delta$"),
+        # OLINC-440: the principal universal-right step uses its universal rule.
+        (r'\RightLabel{\RightR{\lforall}}' + '\n' +
+         r'\UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!B(x)], \lforall[x][!B(x)]$',
+         r'\RightLabel{\RightR{\lexists}}' + '\n' +
+         r'\UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!B(x)], \lforall[x][!B(x)]$'),
+        # OLINC-441: the existential witness remains B(t) after contraction.
+        (r'$\Gamma \Sequent \Delta, \lexists[x][!B(x)], !B(t)$',
+         r'$\Gamma \Sequent \Delta, \lexists[x][!B(x)], !B$'),
+        (r'\Deduce$\Gamma \fCenter \Delta,  \lexists[x][!B(x)], !B(t)$',
+         r'\Deduce$\Gamma \fCenter \Delta,  \lexists[x][!B(x)], !B$'),
+    ],
     'OLP-0699': [
         # OLINC-437: the second XOR tree is a left rule, not another right rule.
         (r'\Axiom$!B, \Gamma \fCenter \Delta, !A$' + '\n' +
@@ -1807,6 +1824,10 @@ _DOCUMENTED_PROJECTIONS = {
 
 
 _SOURCE_QA_NORMALIZATIONS = {
+    'OLP-0701': [
+        # OLINC-442: one proof is named; the frozen editorial token is plural.
+        (r"!!a{proof}s~$\pi_1'$", r"!!a{proof}~$\pi_1'$"),
+    ],
     'OLP-0333': [
         # OLINC-063: the frozen source closes the math delimiter before
         # the second argument's brace, so even source-to-source QA fails.
