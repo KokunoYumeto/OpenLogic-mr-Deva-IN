@@ -123,9 +123,10 @@ try:
         "occurrence_count": len(occurrence_units),
     }
     ordered_units = sorted(target_units)
+    first_unit_number = 1 if len(target_units) == 722 else 4
     assert ordered_units == [
         f"OLP-{number:04d}"
-        for number in range(4, int(ordered_units[-1].split("-")[1]) + 1)
+        for number in range(first_unit_number, int(ordered_units[-1].split("-")[1]) + 1)
     ]
 
     source_ids = {row["source_id"] for row in sources}

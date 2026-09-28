@@ -67,6 +67,7 @@ pdf_qa = load(BUILD / "PDF_QA.json")
 html_qa = load(BUILD / "HTML_QA.json")
 browser_qa = load(BUILD / "HTML_BROWSER_QA.json")
 provenance_qa = load(BUILD / "PROVENANCE_QA.json")
+review_qa = load(BUILD / "release-provenance/translation-decisions/TRANSLATION_DECISION_QA.json")
 diagram_receipt = load(BUILD / "HTML_DIAGRAM_RECEIPT.json")
 assert tex_receipt["result"] == "built-log-clean" and len(tex_receipt["passes"]) == 3
 assert tex_receipt["texInputSha256"] == inputs["reader_sha256"] == static_qa["reader_sha256"]
@@ -77,7 +78,11 @@ assert pdf_qa["status"] == "ready" and pdf_qa["pdf_sha256"] == tex_receipt["pdf"
 assert pdf_qa["reader_sha256"] == inputs["reader_sha256"]
 assert html_qa["result"] == "ready" and not html_qa["blockers"]
 assert browser_qa["result"] == "pass"
+assert browser_qa["html_sha256"] == html_qa["html_sha256"] == sha(BUILD / "html/index.html")
 assert provenance_qa["status"] == "passed" and provenance_qa["translated_units"] == 722
+assert review_qa["status"] == "ready" and review_qa["source_units"] == 722
+assert not review_qa["missing_localization"] and not review_qa["pending"]
+assert review_qa["schema_errors"] == 0
 assert diagram_receipt["status"] == "final-source" and diagram_receipt["source_pdf_sha256"] == tex_receipt["pdf"]["sha256"]
 assert html_qa["diagrams"] == 70 and html_qa["sections"] == 612
 pdf_pages = len(fitz.open(BUILD / "openlogic-mr-full.pdf"))
@@ -131,6 +136,14 @@ source_entries.extend((name, ROOT / name) for name in sorted(target_paths))
 source_entries.extend((name, ROOT / name) for name in ("README.md", "LICENSE.md", ".gitignore", ".gitattributes"))
 for filename in ("SOURCE_MANIFEST.jsonl", "SEGMENT_CANON_USE.jsonl", "CANON_SOURCES.jsonl", "CANON_PASSAGES.jsonl", "TERM_DECISIONS.jsonl"):
     source_entries.append(("provenance/" + filename, BUILD / "release-provenance" / filename))
+included_provenance = {name for name, _ in source_entries if name.startswith("provenance/")}
+for path in (BUILD / "release-provenance").rglob("*"):
+    if path.is_file():
+        name = "provenance/" + path.relative_to(BUILD / "release-provenance").as_posix()
+        if name not in included_provenance:
+            source_entries.append((name, path))
+source_entries.append(("provenance/complete-v1.0/TERMINOLOGY_MR.jsonl",
+                       ROOT / "provenance/complete-v1.0/TERMINOLOGY_MR.jsonl"))
 source_entries.append(("SOURCE_PACKAGE_README.md", notes))
 for name in ("INPUTS.json", "HTML_DIAGRAM_INVENTORY.json", "HTML_DIAGRAM_RECEIPT.json",
              "TEX_BUILD_RECEIPT.json", "openlogic-mr-full.tex", "openlogic-mr-full.aux"):
@@ -151,14 +164,28 @@ assert len(html_entries) == 78 and {name for name, _ in html_entries} >= {"index
 scan_private(html_entries)
 
 prefix = "openlogic-mr-complete"
-pdf = RELEASE / (prefix + ".pdf")
-tex = RELEASE / (prefix + ".tex")
+pdf = RELEASE / ("01-" + prefix + ".pdf")
+tex = RELEASE / ("02-" + prefix + ".tex")
 pdf.write_bytes((BUILD / "openlogic-mr-full.pdf").read_bytes())
 tex.write_bytes((BUILD / "openlogic-mr-full.tex").read_bytes())
-html_zip = RELEASE / (prefix + "-html.zip")
-source_zip = RELEASE / (prefix + "-editable-sources.zip")
+html_zip = RELEASE / ("04-" + prefix + "-html.zip")
+source_zip = RELEASE / ("03-" + prefix + "-editable-sources.zip")
+review_zip = RELEASE / ("05-" + prefix + "-review.zip")
 make_zip(html_zip, html_entries)
 make_zip(source_zip, source_entries)
+review_entries = []
+for path in (BUILD / "release-provenance/translation-decisions").rglob("*"):
+    if path.is_file():
+        review_entries.append(("translation-decisions/" + path.name, path))
+for name in ("EXPERT_REVIEW_DECISIONS.jsonl", "EXPERT_REVIEW_OCCURRENCES.jsonl", "EXPERT_REVIEW_OCCURRENCES.csv"):
+    review_entries.append(("legacy/" + name, BUILD / "release-provenance" / name))
+review_entries.append(("SOURCE_ISSUES.jsonl", BUILD / "release-provenance/SOURCE_ISSUES.jsonl"))
+scan_private(review_entries)
+make_zip(review_zip, review_entries)
+subprocess.run(["python", str(ROOT / "tools/validate_release_consistency.py"),
+                "--editable-zip", str(source_zip), "--review-zip", str(review_zip),
+                "--reader-pdf", str(pdf), "--receipt", str(RELEASE / "RELEASE_CONSISTENCY.json")],
+               cwd=ROOT, check=True)
 
 coverage = {
     "translated_source_units": 722,
@@ -182,12 +209,14 @@ qa = {
     "mathml_nodes": html_qa["mathml_nodes"],
     "semantic_proof_tables": html_qa["proof_tables"],
     "source_hashes_verified": 722,
+    "review_context_occurrences": review_qa["context_occurrences"],
+    "reader_notice_mr": "सर्व 722 स्रोत-एककांची जुळवणी तपासली आहे. संदर्भ-निर्देश स्वतंत्र तज्ज्ञ स्वीकृतीची प्रमाणपत्रे नाहीत. ऐतिहासिक तपशीलवार पुनरावलोकन 281 एककांपुरते आहे.",
     "provenance_report_sha256": sha(BUILD / "PROVENANCE_QA.json"),
 }
 qa_path = RELEASE / "RELEASE_QA.json"
 write_json(qa_path, qa)
-assets = [artifact(path) for path in (pdf, tex, source_zip, html_zip, qa_path, notes,
-                                      RELEASE / "RELEASE_NOTES.md")]
+assets = [artifact(path) for path in (pdf, tex, source_zip, html_zip, review_zip, qa_path, notes,
+                                      RELEASE / "RELEASE_NOTES.md", RELEASE / "RELEASE_CONSISTENCY.json")]
 release_manifest = {
     "schema": "openlogic-release-manifest/1",
     "release": TAG,
