@@ -1,0 +1,101 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: proofs-to-terms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{pt}
+
+\olsection{\usetoken{P}{derivation} चे सिद्धता-पदांत रूपांतर}
+
+नैसर्गिक निगमनातील !!{proof}s चे सिद्धता-पदांत रूपांतर,
+म्हणजे~\Log{N2i} मधील !!{proof}s चे~\Log{tN2i}
+मधील !!{proof}s मध्ये भाषांतर, अगदी सरळ आहे.
+!!{derivation} मधील प्रत्येक क्रमवर्तीच्या उजव्या
+बाजूच्या !!{formula} च्या डावीकडे सिद्धता-पद लिहायचे;
+म्हणजे $\Gamma \Sequent M : !A$ या रूपातील
+क्रमवर्ती मिळतात. मग संदर्भ~$\Gamma$ मध्ये~$M$ हे
+$!A$ ची \emph{साक्ष देते} असे म्हणू. कोणते सिद्धता-पद
+लिहायचे हे पूर्णपणे \Log{tN2i} च्या नियमांनी ठरते.
+
+\begin{prop}
+\Log{N2i} मधील $\Gamma \Sequent !A$ ची प्रत्येक
+!!{proof}~$\delta$ ही~\Log{tN2i} मधील
+$\Gamma \Sequent N : !A$ च्या !!a{proof}~$\delta'$ शी
+अनुरूप असते. सिद्धता-पद~$N$ हे~$\delta$ वरून
+एकमेवपणे ठरते.
+\end{prop}
+
+\begin{proof}
+~$\delta$ च्या उंचीवर आगमन करू. $\delta$ हे
+$x:!A \Sequent !A$ हे स्वयंसिद्धक असेल, तर
+$\delta'$ हे~$x:!A \Sequent x:!A$ हे स्वयंसिद्धक आहे.
+$\delta$ एखाद्या अनुमान-नियमावर संपत असेल, तर
+आगमन-गृहीतक प्रत्येक आधारविधानासाठी सिद्धता-पद आणि
+ते पद असलेल्या क्रमवर्तीची \Log{tN2i}-!!{proof}s देते.
+मग \Log{tN2i} चा अनुरूप नियम लावतो;
+\Log{tN2i} चा अनुमान-नियमच अनुरूप सिद्धता-पद निश्चित करतो.
+\end{proof}
+
+\begin{ex}
+  \Log{N1i} मधील $(!A \land !B) \lif (!B \land !A)$
+  ची पुढील अगदी साधी !!{proof} घ्या:
+  \[
+  \AxiomC{$\Discharge{!A\land !B}{x}$}
+  \RightLabel{\Elim\land[2]}
+  \UnaryInfC{$!B$}
+  \AxiomC{$\Discharge{!A\land !B}{x}$}
+  \RightLabel{\Elim\land[1]}
+  \UnaryInfC{$!A$}
+  \RightLabel{\Intro\land}
+  \BinaryInfC{$!B \land !A$}
+  \DischargeRule{\Intro\lif}{x}
+  \UnaryInfC{$(!A \land !B) \lif (!B \land !A)$}
+  \DisplayProof
+  \]
+  \Log{N2i} मध्ये ती अशी दिसते:
+  \[
+  \Axiom$x : !A\land !B \fCenter !A\land !B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter !B$
+  \Axiom$x : !A\land !B \fCenter !A\land !B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter !A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter !B \land !A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter (!A \land !B) \lif (!B \land !A)$
+  \DisplayProof
+  \]
+  सिद्धता-पदे वरपासून खाली देऊ. स्वयंसिद्धकांची
+  सिद्धता-पदे ही संदर्भातील~$x$ या चलासारखीच आहेत.
+  मग $\Elim\land[i]$ शी संबंधित सिद्धता-पदे अनुक्रमे
+  $\proj{2}{x}$ आणि~$\proj{1}{x}$ अशी ठरतात.
+  \Intro{\land} लावताना ही दोन सिद्धता-पदे एकत्र करतो:
+  $\pair{\proj{2}{x}}{\proj{1}{x}}$.
+  शेवटी \Intro{\lif} नियमाने $\lambd$-अमूर्तीकरण
+  केले जाते; त्यामुळे~$x$ बद्ध होतो आणि~$x$ ही खूण
+  $!A \land !B$ या गृहीतकाला होती हे नोंदले जाते:
+  $\lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}]$.
+  मग \Log{tN2i} मधील !!{proof} अशी आहे:
+  \[
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{2}{x} : !B$
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{1}{x} : !A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} :
+    !B \land !A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!B \land !A)$
+  \DisplayProof
+  \]
+\end{ex}
+
+\end{document}
