@@ -68,6 +68,13 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0709': [
+        # OLINC-462: the distinct LK table needs a distinct label.
+        (r'\ollabel{tab:LK}', r'\ollabel{tab:G1c}'),
+        # OLINC-463: right exchange also uses Λ as a sequence context.
+        (r'$\Gamma$, $\Delta$, $\Pi$ आणि~$\Lambda$',
+         r'$\Gamma$, $\Delta$, and~$\Pi$'),
+    ],
     'OLP-0708': [
         # OLINC-458: G3i has a one-formula succedent, so use the attested G1i pair.
         (r'\begin{tabular}[t]{@{}r@{}}' + '\n' +
