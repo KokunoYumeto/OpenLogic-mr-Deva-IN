@@ -1,0 +1,138 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: sequent-natural-deduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{snd}
+
+\olsection{क्रमवर्ती-रूप नैसर्गिक निगमन}
+
+$\Gamma$ ही !!{undischarged} गृहीतके आणि~$!A$ हा
+निष्कर्ष असलेली नैसर्गिक निगमनाची !!{derivation} असेल,
+तर $\Gamma \Sequent !A$ असे लिहू;~$\Gamma$ रिकामे
+असेल, तर $\Sequent !A$ असे लिहू.
+
+$\Gamma \cup \{!A_1, \dots, !A_n\}$ साठी
+$\Gamma, !A_1, \dots, !A_n$ आणि $\Gamma \cup \Delta$
+साठी $\Gamma, \Delta$ असे लिहू.
+
+$\Gamma \Sequent !A \land !B$ असेल, म्हणजे~$\Gamma$
+ही !!{undischarged} गृहीतके आणि $!A \land !B$ हे
+अंतिम !!{formula} असलेली !!a{derivation} असेल,
+तर तळाशी $\Elim{\land}$ लावून तीच
+!!{undischarged} गृहीतके आणि~$!A$ हा निष्कर्ष
+असलेली !!a{derivation} मिळते. दुसऱ्या शब्दांत,
+$\Gamma \Sequent !A \land !B$ असेल, तर
+$\Gamma \Sequent !A$.
+\begin{prooftree}
+  \Axiom$\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}$}
+  \UnaryInf$\Gamma \fCenter !A$
+  \DisplayProof\qquad\bottomAlignProof
+  \Axiom$\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}$}
+  \UnaryInf$\Gamma \fCenter !B$
+\end{prooftree}
+$\Elim{\land}$ ही खूण नैसर्गिक निगमनातील त्याच
+नावाच्या नियमाशी असलेला संबंध सूचित करते.
+
+त्याचप्रमाणे $\Gamma, !A \Sequent !B$ असेल,
+म्हणजे $\Gamma, !A$ ही !!{undischarged} गृहीतके
+आणि~$!B$ हे अंतिम !!{formula} असलेली
+!!a{derivation} असेल, तर $\Intro{\lif}$ नियम लावून
+$\Gamma$ ही !!{undischarged} गृहीतके आणि
+$!A \lif !B$ हे अंतिम !!{formula} असलेली
+!!a{derivation} मिळते; म्हणजे
+$\Gamma \Sequent !A \lif !B$.
+यात गृहीतकांचे !!{discharge} अधिक स्पष्ट झाले आहे.
+\begin{prooftree}
+  \Axiom $\Gamma, !A \fCenter !B$
+  \RightLabel{$\Intro{\lif}$}
+  \UnaryInf $\Gamma \fCenter !A \lif !B$
+\end{prooftree}
+
+इतर नियमांवरूनही अशाच प्रकारे निष्कर्ष काढता
+येतात. ते पुढीलप्रमाणे स्पष्ट केले आहेत:
+\begin{gather*}
+  \Axiom $\Gamma \fCenter !A$
+  \Axiom $\Delta \fCenter !B$
+  \RightLabel{$\Intro{\land}$}
+  \BinaryInf $\Gamma,\Delta \fCenter !A \land !B$
+  \DisplayProof\\
+  \Axiom $\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}_1$}
+  \UnaryInf $\Gamma \fCenter !A$
+  \DisplayProof
+  \qquad
+  \Axiom $\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}_2$}
+  \UnaryInf $\Gamma \fCenter !B$
+  \DisplayProof
+  \\
+  \Axiom $\Gamma \fCenter !A$
+  \RightLabel{$\Intro{\lor}_1$}
+  \UnaryInf $\Gamma \fCenter !A \lor !B$
+  \DisplayProof\qquad
+  \Axiom $\Gamma \fCenter !B$
+  \RightLabel{$\Intro{\lor}_2$}
+  \UnaryInf $\Gamma \fCenter !A \lor !B$
+  \DisplayProof\\
+  \Axiom $\Gamma \fCenter !A \lor !B$
+  \Axiom $\Delta, !A \fCenter !C$
+  \Axiom $\Delta', !B \fCenter !C$
+  \RightLabel{$\Elim{\lor}$}
+  \TrinaryInf $\Gamma, \Delta, \Delta' \fCenter !C$
+  \DisplayProof
+  \\
+  \Axiom $\Gamma, !A \fCenter !B$
+  \RightLabel{$\Intro{\lif}$}
+  \UnaryInf $\Gamma \fCenter !A \lif !B$
+  \DisplayProof
+  \qquad
+  \Axiom $\Delta \fCenter !A \lif !B$
+  \Axiom $\Gamma \fCenter !A$
+  \RightLabel{$\Elim{\lif}$}
+  \BinaryInf $\Gamma, \Delta \fCenter !B$
+  \DisplayProof
+  \\
+  \Axiom $\Gamma \fCenter \lfalse$
+  \RightLabel{$\FalseInt$}
+  \UnaryInf $\Gamma \fCenter !A$
+  \DisplayProof
+\end{gather*}
+
+कोणतेही गृहीतक स्वतःच~$!A$ वरून~$!A$ ची
+!!a{derivation} असते; म्हणजे $!A \Sequent !A$
+हे नेहमीच असते.
+
+\begin{prooftree}
+  \AxiomC{$ $}
+  \UnaryInfC{$!A \fCenter !A$}
+\end{prooftree}
+
+हे नियम एकत्रितपणे कोणत्या नैसर्गिक निगमनाच्या
+!!{derivation}s अस्तित्वात आहेत यांचे कलन म्हणून
+घेता येतात. त्यांना नैसर्गिक निगमनाचे चिन्हांकनात्मक
+रूपांतरही मानता येते; प्रत्येक टप्प्यावर कोणते
+!!{formula} !!{derive} झाले आहे एवढेच नव्हे,
+तर ते कोणत्या !!{undischarged} गृहीतकांवरून
+!!{derive} झाले आहे हेही त्यात नोंदते.
+
+\begin{prooftree}
+  \Axiom$!A \fCenter !A$
+  \UnaryInf $!A \fCenter !A \lor (!A \lif \lfalse)$
+  \Axiom $!B \fCenter !B$
+  \BinaryInf$!A, !B\lif \fCenter \lfalse$
+  \UnaryInf$(!B \fCenter !A \lif \lfalse$
+  \UnaryInf$( !B \fCenter !A \lor (!A \lif \lfalse)$
+  \Axiom$(!B \fCenter !B$
+  \BinaryInf$(!B \fCenter \lfalse$
+  \UnaryInf$\fCenter !B \lif \lfalse$
+\end{prooftree}
+येथे~$!B$ हे $(!A \lor (!A \lif \lfalse))\lif \lfalse$
+याचे संक्षिप्त रूप आहे.
+
+\end{document}

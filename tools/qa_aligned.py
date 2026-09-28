@@ -68,6 +68,12 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0694': [
+        # OLINC-430: both projection branches require A and B, not A twice.
+        (r'$\Gamma \Sequent !A \land !B$ असेल, म्हणजे',
+         r'$\Gamma \Sequent !A \land !A$ असेल, म्हणजे'),
+        (r'$!A \land !B$ हे', r'$!A \land !A$ हे'),
+    ],
     'OLP-0693': [
         # OLINC-429: the tN3ip table needs its own label.
         (r'\ollabel{tab:tN3ip}', r'\ollabel{tab:tN2ip}'),
