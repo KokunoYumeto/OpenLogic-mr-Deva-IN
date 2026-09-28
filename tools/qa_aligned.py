@@ -68,6 +68,11 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0653': [
+        # OLINC-335: every natural y has some half x, not every x.
+        (r'\lforall[y][\lexists[x][(y = x + x \lor y = x + x +',
+         r'\lforall[y][\lforall[x][(y = x + x \lor y = x + x +'),
+    ],
     'OLP-0649': [
         # OLINC-330: satisfaction is mSat, not the one-argument model-name macro.
         (r'$\mSat{M}{!A}[w]$', r'$\mModel{M}{!A}[w]$'),
