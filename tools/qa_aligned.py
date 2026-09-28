@@ -68,6 +68,11 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0606': [
+        # OLINC-299: nonemptiness belongs to A, not to the bound witness x.
+        (r'म्हणून $A \neq \emptyset$ हे काही $x$ साठी',
+         r'म्हणून $x \neq \emptyset$ हे काही $x$ साठी'),
+    ],
     'OLP-0605': [
         # MRPRF-003: this Methods section was assigned the modal part ID.
         (r'\olfileid{mth}{prf}{def}', r'\olfileid{mod}{prf}{def}'),
