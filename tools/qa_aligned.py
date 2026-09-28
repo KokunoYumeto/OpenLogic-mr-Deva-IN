@@ -68,6 +68,13 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0672': [
+        # OLINC-381: three distinct proof objects are used in the detour.
+        (r'!!{proof}~$\delta_3$ बहुधा',
+         r'!!{proof}~$\delta_1$ बहुधा'),
+        (r'\RightLabel{$\delta_1$}' + '\n' + r'\DeduceC{$!A$}',
+         r'\RightLabel{$\delta_2$}' + '\n' + r'\DeduceC{$!A$}'),
+    ],
     'OLP-0671': [
         # OLINC-376: the target calculus is G2i, not a repeat of N2i.
         (r'\Log{G2c}\ (\Log{G2i}) + \Cut \Proves',
