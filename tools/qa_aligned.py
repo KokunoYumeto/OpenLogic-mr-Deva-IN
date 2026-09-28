@@ -68,6 +68,16 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0616': [
+        # OLINC-306: retain the bound l in the vacuous antecedent.
+        (r'“प्रत्येक $l<0$ साठी $P(l)$”',
+         r'“प्रत्येक $l<0$ साठी $P(0)$”'),
+    ],
+    'OLP-0615': [
+        # OLINC-304: instantiate the k variable of the induction step.
+        (r'आता~$k$ च्या जागी $1$ घेतल्यावर',
+         r'आता~$n$ च्या जागी $1$ घेतल्यावर'),
+    ],
     'OLP-0610': [
         # OLINC-302/303: duplicated forward inclusion and stray parenthesis.
         (r'(b) $A \subseteq A \cap (A \cup B)$ दाखवावे लागते',
