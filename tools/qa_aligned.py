@@ -68,6 +68,13 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0710': [
+        # OLINC-464: distinguish the mG3i table from G3c.
+        (r'\ollabel{tab:mG3i}', r'\ollabel{tab:G3c}'),
+        # OLINC-465: separate the retained universal from Γ.
+        (r'\Axiom$ !A(t), \lforall[x][!A(x)], \Gamma \fCenter \Delta$',
+         r'\Axiom$ !A(t), \lforall[x][!A(x)]\Gamma \fCenter \Delta$'),
+    ],
     'OLP-0709': [
         # OLINC-462: the distinct LK table needs a distinct label.
         (r'\ollabel{tab:LK}', r'\ollabel{tab:G1c}'),
