@@ -68,6 +68,18 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0610': [
+        # OLINC-302/303: duplicated forward inclusion and stray parenthesis.
+        (r'(b) $A \subseteq A \cap (A \cup B)$ दाखवावे लागते',
+         r'(b) $A \cap (A \cup B) \subseteq A$ दाखवावे लागते'),
+        (r'$z \in A \cup B$, म्हणजे (2)',
+         r'$z \in A \cup B)$, म्हणजे (2)'),
+    ],
+    'OLP-0609': [
+        # OLINC-301: the negation concerns the union, not undefined C.
+        (r'असा \emph{काही}~$x \in A$ असतो की तो $\notin A \cup B$',
+         r'असा \emph{काही}~$x \in A$ असतो की तो $\notin C$'),
+    ],
     'OLP-0608': [
         # OLINC-300: close the outer grouping in the second inclusion.
         (r'$C \subseteq (A \cup (C \setminus A))$',
