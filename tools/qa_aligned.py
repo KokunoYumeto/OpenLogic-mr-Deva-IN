@@ -68,6 +68,13 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0635': [
+        # OLINC-314: a limit at c uses a punctured neighborhood.
+        (r'0 < |x - c| < \delta', r'|x - c| < \delta'),
+        # OLINC-315: the negative-one plot tick needs its own label.
+        (r'{-2/-2, -1/-1, 1/1, 2/2}',
+         r'{-2/-2, -1,1, 1/1, 2/2}'),
+    ],
     'OLP-0616': [
         # OLINC-306: retain the bound l in the vacuous antecedent.
         (r'“प्रत्येक $l<0$ साठी $P(l)$”',
