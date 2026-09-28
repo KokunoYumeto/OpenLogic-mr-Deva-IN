@@ -68,6 +68,10 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0693': [
+        # OLINC-429: the tN3ip table needs its own label.
+        (r'\ollabel{tab:tN3ip}', r'\ollabel{tab:tN2ip}'),
+    ],
     'OLP-0691': [
         # OLINC-425: pair has two mandatory arguments.
         (r'\pair{N_1}{N_2}', r'\pair{N_1, N_2}'),
