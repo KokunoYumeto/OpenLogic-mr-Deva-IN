@@ -68,6 +68,40 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0702': [
+        # OLINC-444: Gamma is the original left context, not the right formula.
+        (r'\Gamma = \{(!C \land !D) \lif !E\}',
+         r'\Gamma = \{!C \lif (!D \lif !E)\}'),
+        # OLINC-445: the final expansion tree alone mislabels the left rule.
+        (r'\BinaryInf$!D, !C \fCenter !E, !C \land !D$' + '\n' +
+         r'\Axiom$!D, !C, !E \fCenter !E$' + '\n' +
+         r'\RightLabel{\LeftR{\lif}}',
+         r'\BinaryInf$!D, !C \fCenter !E, !C \land !D$' + '\n' +
+         r'\Axiom$!D, !C, !E \fCenter !E$' + '\n' +
+         r'\RightLabel{\RightR{\lif}}'),
+        # OLINC-446: weakening preserves E on the right of the third axiom.
+        (r'\UnaryInf$!C, !E \fCenter !E$',
+         r'\UnaryInf$!C, !E \fCenter !C$'),
+        # OLINC-451: the missing generalized-identity proof is in G3c.
+        (r'\[\Log{G3c} \Proves (!C \land !D) \lif !E',
+         r'\[\Log{G1c} \Proves (!C \land !D) \lif !E'),
+        # OLINC-447: unary formula depth uses the B subformula.
+        (r'!A \ident \lforall[x][!B]', r'!A \ident \lforall[x][A]'),
+        (r'!A \ident \lexists[x][!B]', r'!A \ident \lexists[x][A]'),
+        # OLINC-448: remove dangling commas and retain the conjunction after contraction.
+        (r'\Deduce$!B \fCenter !B$' + '\n  ' +
+         r'\RightLabel{\LeftR{\Weakening}}',
+         r'\Deduce$!B, \fCenter !B$' + '\n  ' +
+         r'\RightLabel{\LeftR{\Weakening}}'),
+        (r'\UnaryInf$!B, !C \fCenter !B$', r'\UnaryInf$!B, !C, \fCenter !B$'),
+        (r'\Deduce$!C \fCenter !C$', r'\Deduce$!C, \fCenter !C$'),
+        (r'\UnaryInf$!B, !C \fCenter !C$', r'\UnaryInf$!B, !C, \fCenter !C$'),
+        (r'\UnaryInf$!B \land !C \fCenter !B \land !C$',
+         r'\UnaryInf$!B \land !C \fCenter !B$'),
+        # OLINC-449: the induction variable and second context are mistyped.
+        (r'सर्व~$!D$ साठी', r'सर्व~$D!$ साठी'),
+        (r'$\Pi = !B, \Gamma$', r'$\Pi = !B, \Lambda$'),
+    ],
     'OLP-0701': [
         # OLINC-439: inversion replaces the context occurrence of A∧B by A,B.
         (r"$!A, !B, \Gamma' \Sequent \Delta, !C$",

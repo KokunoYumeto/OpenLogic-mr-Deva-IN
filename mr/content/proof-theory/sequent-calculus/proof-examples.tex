@@ -1,0 +1,393 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: proof-examples
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{ex}
+
+\olsection{सिद्धतांची उदाहरणे}
+
+क्रमवर्तींच्या !!{proof}s तयार करताना बहुतेक
+वेळा अंतिम क्रमवर्तीपासून वरच्या दिशेने काम करणे
+सोयीचे ठरते: त्यातील एखादे !!a{formula} सक्रिय
+!!{formula} म्हणून निवडायचे, त्या क्रमवर्तीच्या वर
+संबंधित नियमाचे पूर्वपक्ष लिहायचे, आणि स्वयंसिद्धके
+मिळेपर्यंत ही प्रक्रिया पुन्हा करायची. उदाहरणार्थ,
+पुढील क्रमवर्ती सिद्ध करायची आहे असे माना:
+\[(!C \land !D) \lif !E \Sequent !C \lif (!D \lif !E)\]
+$!C \lif (!D \lif !E)$ विचारात घ्या: ते $!A \lif !B$
+या रूपाचे असून क्रमवर्तीच्या उजवीकडे आहे. पूर्ण
+क्रमवर्तीची \Log{G1c} च्या $\RightR{\lif}$ नियमाशी
+जुळवणी करू:
+\[\Axiom$ !A, \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A \lif !B $
+\DisplayProof\]
+यावरून $\Gamma = \{(!C \land !D) \lif !E\}$,
+$\Delta =
+\emptyset$, $!A \ident !C$ आणि $!B \ident !D \lif !E$
+असे घ्यावे लागते. मग सिद्धतेचे शेवटचे निगमन असे असू शकेल:
+\[\Axiom$ !C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof\]
+हीच कल्पना पुन्हा लावून $!D \lif !E$ ला सक्रिय
+सूत्र मानल्यास पुढील मिळते:
+\[\Axiom$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof\]
+आता $(!C \land !D) \lif !E$ वर लक्ष केंद्रित करून
+\Log{G1c} चा $\LeftR{\lif}$ नियम वापरावा लागेल:
+\[\Axiom$ \Gamma \fCenter \Delta, !A$
+\Axiom$ !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !A \lif !B, \Gamma \fCenter \Delta$
+\DisplayProof\]
+त्यातून पुढील मिळते:
+\[\Axiom$!D, !C \fCenter !E, !C \land !D$
+\Axiom$!D, !C, !E \fCenter !E$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof\]
+वरच्या डाव्या क्रमवर्तीतील उजवीकडचे !!{formula}
+$!C \land !D$ प्रमुख मानून $\RightR{\land}$ नियम
+लावल्यास पुढील मिळते:
+\[
+\Axiom$!D, !C \fCenter !E, !C$
+\Axiom$!D, !C \fCenter !E, !D$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!D, !C \fCenter !E, !C \land !D$
+\Axiom$!D, !C, !E \fCenter !E$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof
+\]
+आतापर्यंत सगळे ठीक आहे. आपण वापरलेले नियम
+\Log{G1c} आणि~\Log{G3c} मध्ये सारखे असल्याने हे
+सर्व \Log{G3c} मध्येही चालते. या !!a{proof} च्या
+अपूर्ण भागातील वरच्या सर्व क्रमवर्तींच्या डावीकडे
+आणि उजवीकडे तेच !!{formula} येते; पण त्या अद्याप
+अगदी स्वयंसिद्धके झालेल्या नाहीत.
+
+\Log{G1c} मध्ये वरच्या क्रमवर्तींच्या
+!!{proof}s $!A \Sequent !A$ या रूपाच्या स्वयंसिद्धकांपासून
+द्याव्या लागतात. दुर्बलीकरण नियमांनी ते सहज शक्य
+आहे. उदाहरणार्थ, सर्वांत डावीकडची वरची क्रमवर्ती
+$!D, !C \Sequent
+!E, !C$ पुढीलप्रमाणे !!{prove} करता येते:
+\[
+\Axiom$!C \fCenter !C$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !C$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !E, !C$
+\]
+एकत्रितपणे, \Log{G1c} मधील !!a{proof} अशी दिसते:
+\[
+\Axiom$!C \fCenter !C$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !C$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !E, !C$
+\Axiom$!D \fCenter !D$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !D$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !E, !D$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!D, !C \fCenter !E, !C \land !D$
+\Axiom$!E \fCenter !E$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!C, !E \fCenter !E$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C, !E \fCenter !E$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof
+\]
+या सिद्धतेची रचना (विशेषतः तिची उंची) !!{formula}s
+$!C$, $!D$, आणि~$!E$ काय आहेत यावर अवलंबून नाही.
+वरील !!{proof} मध्ये या चिन्हांच्या जागी कोणतीही
+!!{formula}s घातली तरी मिळणारी रचना~\Log{G1c}
+मधील !!{proof} राहते. \Log{G1c} मधील ही
+सिद्धता \emph{रूपरेषात्मक} आहे.
+
+\Log{G3c} मध्ये स्वयंसिद्धके
+$!A, \Gamma \Sequent
+\Delta, !A$ या रूपाची क्रमवर्ती असतात; त्यात~$!A$
+अण्वीय असले पाहिजे. म्हणून $!D, !C \Sequent
+!E, !C$ ही \Log{G3c} ची स्वयंसिद्धकासारखी दिसत
+असली ($\Gamma = \{!D\}$; $\Delta =
+\{!E\}$), तरी~$!C$ प्रत्यक्षात अण्वीय असेल तेव्हाच
+ती \emph{खरोखर} स्वयंसिद्धक असते. आपला अपूर्ण
+सिद्धता-वृक्ष \Log{G3c} मध्ये पूर्ण सिद्धता
+तेव्हाच असतो, जेव्हा $!C$,
+$!D$, आणि $!E$ ही अण्वीय !!{formula}s असतात.
+
+काटेकोरपणे पाहता, आपण अजून
+\[\Log{G3c} \Proves (!C \land !D) \lif !E \fCenter !C \lif (!D \lif
+!E),\] हे दाखवलेले नाही. तरी व्यवहारात एवढेच
+करणे आपल्याला पुरेसे आहे (आणि शक्यही आहे).
+कारण $!A, \Gamma \Sequent \Delta, !A$ या रूपाची
+प्रत्येक क्रमवर्ती \Log{G3c} मध्ये सिद्धतायोग्य
+असते, जरी~$!A$ स्वतः अण्वीय नसले तरी.
+हे~$!A$ च्या खोली~$\depth{!A}$ वर आगमन करून
+दाखवता येते.
+
+\begin{defn}\ollabel{defn:depth}
+!!a{formula} ची \emph{खोली}~$\depth{!A}$ पुढीलप्रमाणे
+परिभाषित करतो:
+\begin{enumerate}
+  \item $!A$ अण्वीय असेल तर $\depth{!A} = 0$.
+  \item $!A \ident \lnot !B$, $!A \ident \lforall[x][!B]$,
+  किंवा $!A \ident \lexists[x][!B]$ असेल तर
+  $\depth{!A} = \depth{!B} + 1$.
+  \item $!A \ident (!B \land !C)$, $(!B \lor !C)$, किंवा $(!B \lif
+  !C)$ असेल तर $\depth{!A} = \max(\depth{!B},\depth{!C}) + 1$.
+\end{enumerate}
+\end{defn}
+
+कोणत्याही पद~$t$ साठी $\depth{A(x)} =
+\depth{A(t)}$ सिद्ध करणे कठीण नाही. आपल्याला
+महत्त्वाचे हे की कोणत्याही नियमात प्रमुख
+!!{formula} ची खोली सक्रिय !!{formula}s च्या खोलीपेक्षा
+नेहमी अधिक असते. उदाहरणार्थ:
+\begin{align*}
+\depth{P(x)} = \depth{P(a)} & = 0,\\
+\depth{\lforall[x][P(x)]} & = 1,\\
+\depth{(\lforall[x][P(x)] \lif P(a))} & = \max(1,0) + 1 = 2.
+\end{align*}
+याचा वापर करून~$\depth{!A}$ वर आगमनाने काही
+निष्कर्ष सिद्ध करता येतात; पुढील निष्कर्ष त्यांपैकी एक.
+
+\begin{prop}\ollabel{prop:G1c-axioms}
+कोणत्याही~$!A$ साठी, $!A \Sequent !A$ ची अशी
+$\Log{G1c}$-!!a{proof} आहे की तिच्यातील सर्व
+स्वयंसिद्धके अण्वीय आहेत.
+\end{prop}
+
+\begin{proof}
+  $\depth{!A}$ वर आगमन करू. $\depth{!A} = 0$
+  असेल तर~$!A$ अण्वीय आहे आणि $!A \Sequent !A$
+  हीच अपेक्षित रूपाची \Log{G1c} मधील !!{proof} आहे.
+  $\depth{!A} > 0$ असेल तर~$!A$ कमी खोलीच्या
+  !!{formula}s पासून बनते, उदा., $!A \ident \lnot !B$,
+  $!A \ident
+  (!B \land !C)$, किंवा $!A \ident \lforall[x][A(x)]$.
+  आगमनात्मक गृहीतक असे: $\depth{!D} < \depth{!A}$
+  असलेल्या प्रत्येक~$!D$ साठी अण्वीय स्वयंसिद्धकांपासून
+  $\Log{G1c} \Proves !D \Sequent !D$.
+
+$!A \ident \lnot !B$ असेल, तर
+  $\depth{!B} < \depth{!A}$; आगमनात्मक
+  गृहीतकानुसार अण्वीय स्वयंसिद्धकांपासून
+  $!B \Sequent !B$ ची \Log{G1c} मधील
+  !!a{proof}~$\pi_1$ आहे. तिचा पुढीलप्रमाणे
+  $\lnot !B \Sequent \lnot !B$ च्या !!a{proof}
+  पर्यंत विस्तार करता येतो:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B \fCenter !B$
+  \RightLabel{\LeftR{\lnot}}
+  \UnaryInf$\lnot !B, !B \fCenter $
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\lnot !B \fCenter \lnot !B$
+  \DisplayProof
+\]
+
+$!A \ident (!B \land !C)$ असेल, तर
+  $\depth{!B} < \depth{!A}$ आणि
+  $\depth{!C} < \depth{!A}$. आगमनात्मक गृहीतकानुसार
+  अण्वीय स्वयंसिद्धकांपासून $!B
+  \Sequent !B$ आणि $!C \Sequent !C$ यांच्या
+  \Log{G1c} मधील !!{proof}s~$\pi_1$ आणि~$\pi_2$
+  आहेत. त्यांचा पुढीलप्रमाणे
+  $!B \land !C \Sequent !B \land !C$ च्या
+  !!a{proof} पर्यंत विस्तार करता येतो:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B \fCenter !B$
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!B, !C \fCenter !B$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !C\fCenter !B$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !B \land !C \fCenter !B$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!C \fCenter !C$
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!B, !C \fCenter !C$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !C \fCenter !C$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !B \land !C \fCenter !C$
+  \RightLabel{\RightR{\land}}
+  \BinaryInf$!B \land !C \fCenter !B \land !C$
+  \RightLabel{\LeftR{\Contraction}}
+  \UnaryInf$!B \land !C \fCenter !B \land !C$
+  \DisplayProof
+  \]
+
+आता $!A \ident \lforall[x][B(x)]$ असे माना.
+  $\lforall[x][B(x)]$ मध्ये न येणारा
+  !!a{constant}~$c$ घ्या. मग $\depth{B(c)} =
+  \depth{!B(x)} < \depth{!A}$; आगमनात्मक गृहीतकानुसार
+  अण्वीय स्वयंसिद्धकांपासून $!B(c)
+  \Sequent !B(c)$ ची \Log{G1c} मधील
+  !!a{proof}~$\pi_1$ आहे. तिचा पुढीलप्रमाणे
+  $\lforall[x][B(x)] \Sequent \lforall[x][B(x)]$
+  च्या !!a{proof} पर्यंत विस्तार करता येतो:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B(c) \fCenter !B(c)$
+  \RightLabel{\LeftR{\lforall}}
+  \UnaryInf$\lforall[x][!B(x)] \fCenter !B(c)$
+  \RightLabel{\RightR{\lforall}}
+  \UnaryInf$\lforall[x][!B(x)] \fCenter \lforall[x][!B(x)]$
+  \DisplayProof
+\]
+
+उरलेले प्रसंग प्रश्न म्हणून सोडले आहेत.
+\end{proof}
+
+\begin{prob}
+  $!A \ident (!B \lor !C)$, $!A \ident (!B \lif !C)$
+  आणि $!A \ident \lexists[x][B(x)]$ या प्रसंगांचे
+  काम करून \olref{prop:G1c-axioms} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+आपल्या कामासाठी $!A \ident \lnot !B$ या
+प्रसंगात पुढील !!{proof} ही वापरता आली असती:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B \fCenter !B$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\fCenter !B, \lnot !B$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !B \fCenter \lnot !B$
+\DisplayProof
+\]
+मात्र काही क्रमवर्ती पद्धतींमध्ये हे चालले नसते.
+अंतःप्रज्ञावादी क्रमवर्ती कलन~\Log{G1i} हे
+\Log{G1c} सारखेच आहे; फरक इतकाच की प्रत्येक
+क्रमवर्तीच्या उजव्या बाजूस जास्तीत जास्त एकच
+!!{formula} ठेवता येते. $\Delta = \emptyset$
+असेल, तर पहिली !!{proof} ही~\Log{G1i} मध्येही
+!!a{proof} असेल; परंतु दुसरी नसेल, कारण तिच्या
+एका क्रमवर्तीच्या उजवीकडे $!B$ आणि~$\lnot !B$
+दोन्ही आहेत.
+
+$!A \ident \lforall[x][!B(x)]$ असताना
+\Log{G1c} मध्येही नियमांचा दुसरा क्रम वापरता
+आला नसता. पुढील रचना \emph{!!a{proof} नाही}:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B(c) \fCenter !B(c)$
+  \RightLabel{\RightR{\lforall}}
+  \UnaryInf$!B(c) \fCenter \lforall[x][!B(x)]$
+  \RightLabel{\LeftR{\lforall}}
+  \UnaryInf$\lforall[x][!B(x)] \fCenter \lforall[x][!B(x)]$
+  \DisplayProof
+\]
+कारण त्यात~$\RightR{\lforall}$ ची आयगेन चराची
+अट मोडली जाते.
+
+\begin{prop}\ollabel{prop:G3c-axioms}
+$!A, \Gamma
+\Sequent \Delta, !A$ या रूपाची कोणतीही क्रमवर्ती
+(~$!A$ \emph{अण्वीय} असण्याची आवश्यकता नाही)
+\Log{G3c} मध्ये सिद्धतायोग्य आहे.
+\end{prop}
+
+\begin{proof}
+ही सिद्धता \olref{prop:G1c-axioms} च्या सिद्धतेसारखीच
+आहे, पण आगमनात्मक गृहीतकाबाबत काळजी घ्यावी
+लागते. $n =
+\depth{!A} = 0$ हा प्रसंग पुन्हा सोपा आहे.
+$n=0$ असेल, तर~$!A$ अण्वीय आहे, आणि $!A,
+\Gamma \Sequent \Delta, !A$ हे~\Log{G3c}
+चे स्वयंसिद्धक आहे.
+
+आता $n>0$ असे माना. पुन्हा प्रसंग वेगळे करू.
+आगमनात्मक गृहीतक असे: $\depth{!D} < n$ असलेल्या
+सर्व~$!D$ साठी आणि सर्व~$\Pi$ व~$\Lambda$
+साठी $\Log{G3c} \Proves !D, \Pi \Sequent \Lambda, !D$.
+$!A \ident (!B \land !C)$ हा प्रसंग पाहू. आगमनात्मक
+गृहीतक दोनदा वापरू: एकदा $!D = !B$,
+$\Pi = !C, \Gamma$, आणि $\Lambda
+= \Delta$ घेऊन $!B, !C, \Gamma \Sequent
+\Delta, !B$ ची !!a{proof}~$\pi_1$ मिळते; आणि
+दुसऱ्यांदा $!D = !C$, $\Pi = !B, \Gamma$, आणि
+$\Lambda = \Delta$ घेऊन $!B, !C, \Gamma \Sequent
+\Delta, !C$ ची !!a{proof}~$\pi_2$ मिळते.
+$!B \land !C, \Gamma \Sequent
+\Delta, !B \land !C$ ची !!{proof} पुढीलप्रमाणे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B, !C, \Gamma \fCenter \Delta, !B$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C, \Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!B, !C, \Gamma \fCenter \Delta, !C$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C, \Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!B \land !C, \Gamma \fCenter \Delta, !B \land !C$
+\DisplayProof
+\]
+
+$!A \ident \lforall[x][!B(x)]$ साठी
+~$\lforall[x][!B(x)]$, $\Gamma$ किंवा~$\Delta$
+मध्ये न येणारा !!a{constant} निवडा.
+$!D = !B(c)$, $\Pi = \lforall[x][!B(x)], \Gamma$
+आणि $\Lambda = \Delta$ घेऊन आगमनात्मक गृहीतक
+लावा. त्यातून $!B(c),
+\lforall[x][!B(x)], \Gamma \Sequent \Delta, !B(c)$
+ची !!a{proof}~$\pi_1$ मिळते; तिच्यापासून:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B(c), \lforall[x][!B(x)], \Gamma \fCenter \Delta, !B(c)$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$\lforall[x][!B(x)], \Gamma \fCenter \Delta, !B(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$\lforall[x][!B(x)], \Gamma \fCenter \Delta, \lforall[x][!B(x)]$
+\DisplayProof
+\]
+आपण~$c$ ची केलेली निवड~$\RightR{\lforall}$
+ची आयगेन चराची अट पूर्ण करते.
+\end{proof}
+
+\begin{prob}
+  $!A \ident (!B \lif !C)$ आणि $!A \ident
+  \lexists[x][B(x)]$ या प्रसंगांचे काम करून
+  \olref{prop:G3c-axioms} ची सिद्धता पुढे न्या.
+\end{prob}
+
+\end{document}
