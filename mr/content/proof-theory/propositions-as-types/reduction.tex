@@ -1,0 +1,209 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: reduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{red}
+
+\olsection{न्यूनीकरण}
+
+नैसर्गिक निगमनाच्या !!{derivation}s मध्ये
+!!a{introduction} नियमापाठोपाठ !!a{elimination} नियम
+आला, तर तो वळसा ``न्यूनीत'' करता येतो. उदाहरणार्थ,
+$\Intro{\land}$ नंतर $\Elim{\land}$ आले, तर ते
+``एकमेकांना रद्द'' करतात: $\Elim{\land}$ चा निष्कर्ष
+नेहमीच \Intro{\land} ने तयार केलेल्या संयोगातील
+एका घटकासारखा असतो, आणि $\Intro{\land}$ ची दोन्ही
+आधारविधाने तेच संयोगघटक असतात. म्हणून एखाद्या
+संयोगघटकाची !!a{derivation} हवी असेल, तर संयोग
+प्रस्तुत करून त्याचे निरसन न करता तीच !!{derivation}
+थेट वापरता येते. आपल्याला असे मिळते:
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!A_1$}
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A_2$}
+  \RightLabel{$\Intro{\land}$}
+  \BinaryInfC{$!A_1 \land !A_2$}
+  \RightLabel{$\Elim{\land}_i$}
+  \UnaryInfC{$!A_i$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta_i$}
+  \DeduceC{$!A_i$}
+  \DisplayProof
+\end{gather*}
+
+या सोपीकरणातून संबंधित सिद्धता-पदांवरील तसाच
+न्यूनीकरण-संबंध दिसतो. ~$N_1$ हे~$\delta_1$ चे
+आणि~$N_2$ हे~$\delta_2$ चे सिद्धता-पद असेल,
+तर डावीकडील सिद्धतेचे सिद्धता-पद एका पायरीत
+उजवीकडील सिद्धतेच्या सिद्धता-पदात न्यूनीत होते:
+\[
+  \proj{i}{\pair{N_1}{N_2}} \redone N_i
+\]
+प्रकारयुक्त लॅम्डा कलनात हा गुणाकार-प्रकाराचा
+\emph{बीटा-न्यूनीकरण} नियम आहे.
+
+नैसर्गिक निगमनात \Intro{\land} नंतर
+\Elim{\land} अशी अनुमानांची जोडी, म्हणजे न्यूनीकरण
+लागू होणारी जोडी, हिला \emph{कट} म्हणतात. प्रकारयुक्त
+लॅम्डा कलनात $\redone$ च्या डावीकडील पदाला
+\emph{रेडेक्स}, तर उजवीकडील पदाला \emph{संकुचनफल}
+म्हणतात. प्रकारविरहित लॅम्डा कलनात फक्त
+$(\lambd[x][N])Q$ यालाच रेडेक्स मानतात; पण
+प्रकारयुक्त लॅम्डा कलनात $\pair{N}{M}$,
+$\proj{i}{N}$, $\inj[!A]{i}{N}$,
+$\dcase{N}{x_1}{M_1}{x_2}{M_2}$, आणि
+$\abort{!A}{N}$ यांसारखी पदेही विन्यासात येतात,
+आणि त्यांना अनुरूप रेडेक्सही असतात.
+
+त्याचप्रमाणे वियोगासाठीही न्यूनीकरण आहे:
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$!A_1 \lor !A_2$}
+  \AxiomC{$\Discharge{!A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C$}
+  \AxiomC{$\Discharge{!A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!C$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$!C$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\delta_i$}
+  \DeduceC{$!C$}
+  \DisplayProof
+\end{gather*}
+याला अनुरूप सिद्धता-पदांवरील न्यूनीकरण असे आहे:
+\begin{gather*}
+  \dcase{\inj[!A_{3-i}]{i}{M}}{x_1}{N_1}{x_2}{N_2} \redone \Subst{N_i}{M}{x_i}
+\end{gather*}
+येथे~$M$ हे~$\delta$ चे, आणि~$N_i$ हे~$\delta_i$
+चे सिद्धता-पद आहे. हा बेरीज-प्रकारांसाठीचा
+बीटा-न्यूनीकरण नियम आहे. येथे
+$\Subst{M}{N_i}{x}$ म्हणजे~$M$ मधील~$x$ या
+चराची सर्व मुक्त स्थाने~$N_i$ ने बदलणे.
+
+फलन-प्रकाराचे न्यूनीकरण म्हणजे $\Intro\lif$ नंतर
+$\Elim\lif$ आल्याने झालेला वळसा काढणे:
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{$\Discharge{!A}{x}$}
+  \RightLabel{$\delta$}
+  \DeduceC{$!B$}
+  \DischargeRule{$\Intro{\lif}$}{x}
+  \UnaryInfC{$!A \lif !B$}
+  \AxiomC{}
+  \RightLabel{$\delta'$}
+  \DeduceC{$!A$}
+  \RightLabel{$\Elim{\lif}$}
+  \BinaryInfC{$!B$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta'$}
+  \DeduceC{$!A$}
+  \RightLabel{$\delta$}
+  \DeduceC{$!B$}
+  \DisplayProof
+\end{gather*}
+सिद्धता-पदांसाठी हे नेहमीचे बीटा-न्यूनीकरण आहे:
+\begin{gather*}
+  (\lambd[\typeof{x}{!A}][N]M)
+  \redone \Subst{N}{M}{x}
+\end{gather*}
+
+!!{proof}s वरील न्यूनीकरण रूपांतरणांखेरीज
+क्रमपरिवर्तन रूपांतरणांचाही विचार करता येतो.
+ती \Elim{\lor} नंतर दुसरा !!{elimination} नियम
+असलेल्या (उप-)!!{proof}s वर लागू होतात, उदाहरणार्थ:
+\begin{multline*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$!A_1 \lor !A_2$}
+  \AxiomC{$\Discharge{!A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \AxiomC{$\Discharge{!A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$!C_1 \land !C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$!C_i$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \\
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$!A_1 \lor !A_2$}
+  \AxiomC{$\Discharge{!A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$!C_i$}
+  \AxiomC{$\Discharge{!A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$!C_i$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$!C_i$}
+  \DisplayProof
+\end{multline*}
+~$\delta$, $\delta_1$, आणि~$\delta_2$ यांची
+सिद्धता-पदे अनुक्रमे~$M$, $N_1$, आणि~$N_2$
+असतील, तर सिद्धता-पदांसाठी, म्हणजेच~$\lambd$
+पदांसाठी, अनुरूप न्यूनीकरण नियम असा आहे:
+\[
+  \proj{i}{\dcase{M}{x_1}{N_1}{x_2}{N_2}} \redone
+\dcase{M}{x_1}{\proj{i}{N_1}}{x_2}{\proj{i}{N_2}}
+\]
+
+अर्थात, वळसे केवळ !!{proof}s च्या शेवटीच नव्हे,
+तर !!{proof}s च्या आतही काढता येतात: वळशावर संपणाऱ्या
+उप-!!{proof} ला न्यूनीकरण रूपांतरण लावायचे.
+तसेच $\lambd$-पदांच्या उपपदांवर $\beta$-न्यूनीकरण
+लागू होते. $N$ हे~$M$ चे उपपद असेल आणि
+$N \redone N'$ असेल, तर~$M$ मधील उपपद~$N$ हे~$N'$ ने
+बदलून~$M'$ मिळवता येते. अशा वेळीही $M \redone M'$
+असे लिहितो. $M = M_1 \redone M_2 \redone M_3
+\redone \dots \redone M_k = M'$ असा क्रम असेल
+(यात $k=1$, म्हणजे $M = M'$ ही बाबही येते),
+तर $M \red M'$ असे लिहितो.
+
+ज्या !!{proof} च्या कोणत्याही उप-!!{proof} वर
+रूपांतरण लागू होत नाही, तिला \emph{सामान्य} म्हणतात.
+तसेच ज्या $\lambd$-पदावर (त्याच्या कोणत्याही उपपदावर)
+रूपांतरण लागू होत नाही, त्याला \emph{सामान्य} म्हणतात.
+सामान्य $\lambd$-पदाला \emph{सामान्य रूप} असेही म्हणतात.
+
+\end{document}

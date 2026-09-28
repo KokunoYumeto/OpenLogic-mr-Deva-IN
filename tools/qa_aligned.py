@@ -68,6 +68,16 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0691': [
+        # OLINC-425: pair has two mandatory arguments.
+        (r'\pair{N_1}{N_2}', r'\pair{N_1, N_2}'),
+        # OLINC-426: injection takes the other type as an option.
+        (r'\inj[!A]{i}{N}', r'\inj{i}{!A}{N}'),
+        # OLINC-427: the option is the opposing disjunct, A_(3-i).
+        (r'\inj[!A_{3-i}]{i}{M}', r'\inj[!A_i]{i}{M}'),
+        # OLINC-428: the third step has a new label M_3.
+        ('\\redone M_3\n\\redone', '\\redone M_2\n\\redone'),
+    ],
     'OLP-0688': [
         # OLINC-422: the second premise is labelled M, not lowercase m.
         (r'\fCenter c^\land(N, M) : !A \land !B',
