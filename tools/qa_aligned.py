@@ -68,6 +68,25 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0679': [
+        # OLINC-401: restore the missing formula letter on the right.
+        (r'$!A \in \Delta$ साठी', r'$! \in \Delta$ साठी'),
+        # OLINC-402: branch succedents use Lambda_n, not Delta_n.
+        (r'~$C_n$ हा~$\Pi_n \Sequent \Lambda_n$',
+         r'~$C_n$ हा~$\Pi_n \Sequent \Delta_n$'),
+        # OLINC-404: the interpreted constant symbol is selected from C.
+        (r'\item $c \in C$ असेल,',
+         r'\item $c \in \Domain{M}$ असेल,'),
+        # OLINC-403: five uses of n in the m-ary interpretation must be m.
+        (r'$\Assign{f}{M}(t_1, \dots, t_m) = f(t_1, \dots, t_m)$',
+         r'$\Assign{f}{M}(t_1, \dots, t_m) = f(t_1, \dots, t_n)$'),
+        (r'\Domain{M}^m}{R(t_1, \dots, t_m) \in \Theta}',
+         r'\Domain{M}^n}{R(t_1, \dots, t_n) \in \Theta}'),
+        (r'केली आहे की~$\Sat{M}{R(t_1, \dots, t_m)}$ तेव्हाच' + '\n' +
+         r'आणि तेव्हाच जेव्हा~$R(t_1, \dots, t_m) \in \Theta$.',
+         r'केली आहे की~$\Sat{M}{R(t_1, \dots, t_n)}$ तेव्हाच' + '\n' +
+         r'आणि तेव्हाच जेव्हा~$R(t_1, \dots, t_n) \in \Theta$.'),
+    ],
     'OLP-0678': [
         # OLINC-390: the cut-free source system is G2i.
         (r'कट-विरहित \Log{G2i} !!{proof}s',
