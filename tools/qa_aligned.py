@@ -68,6 +68,18 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0698': [
+        # OLINC-435: comma separates the principal conjunction and context.
+        (r'\RightLabel{\LeftR{\Contraction}}' + '\n' +
+         r'\UnaryInf$!A \land !B, \Gamma \fCenter \Delta$',
+         r'\RightLabel{\LeftR{\Contraction}}' + '\n' +
+         r'\UnaryInf$!A \land !B \Gamma \fCenter \Delta$'),
+        # OLINC-436: the left biconditional rule concludes with it on the left.
+        (r'\RightLabel{\LeftR{\liff}}' + '\n' +
+         r'\BinaryInf$!A \liff !B, \Gamma \fCenter \Delta$',
+         r'\RightLabel{\LeftR{\liff}}' + '\n' +
+         r'\BinaryInf$\Gamma \fCenter \Delta, !A \liff !B$'),
+    ],
     'OLP-0697': [
         # OLINC-432: injection uses the given proof term N, not !M.
         (r'\inj[!B]{i}{N}', r'\inj[!B]{i}{!M}'),

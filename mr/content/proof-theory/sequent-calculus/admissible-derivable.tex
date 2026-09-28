@@ -1,0 +1,289 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: admissible-derivable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{adm}
+
+\olsection{अनुज्ञेय आणि व्युत्पाद्य नियम}
+
+सिद्धता-उपपत्तीतील अनेक निष्कर्ष एखादा विशिष्ट नियम वापरून
+!!{prove} करता येणारी प्रत्येक गोष्ट तो नियम न वापरताही
+!!{prove} करता येते का, यासंबंधी असतात किंवा अशा
+निष्कर्षांचा वापर करतात. कट-निरसन प्रमेय हे याचे सर्वांत
+प्रसिद्ध उदाहरण आहे. त्यानुसार,~\Cut{} असलेल्या क्रमवर्ती
+पद्धतीचे नियम वापरून !!{prove} करता येणारी कोणतीही क्रमवर्ती
+~\Cut न वापरता !!{prove} करता येते. हा गुणधर्म इतका
+महत्त्वाचा आहे की त्याला स्वतंत्र नाव आहे.
+
+\begin{defn}
+एखाद्या क्रमवर्ती पद्धतीत नियम~$R$ \emph{अनुज्ञेय} असतो,
+जर त्या पद्धतीत नियम~$R$ जोडल्यावर सिद्ध करता येणारी
+प्रत्येक क्रमवर्ती~$R$ शिवायही सिद्ध करता येत असेल.
+\end{defn}
+
+\begin{ex}\ollabel{ex:land-deriv}
+नियम~$\LeftR{\land}$ चे \Log{G1c} आणि \Log{G3c} मध्ये
+वेगवेगळे रूप आहे. \Log{G1c} मध्ये या नियमाच्या दोन आवृत्त्या
+आहेत: एकीत प्रमुख !!{formula}~$!A \land !B$ मधील
+डावा संयोज्य~$!A$ पूर्वपक्षात असतो, तर दुसरीत उजवा
+संयोज्य~$!B$ असतो:
+\[
+\Axiom$ !A, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_1$}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\qquad
+\Axiom$!B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_2$}
+\UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+याउलट, \Log{G3c} मध्ये एकच नियम आहे:
+\[
+\Axiom$ !A, !B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_3$}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+आता ``\Log{G3c} चा नियम~$\LeftR{\land}_3$
+हा \Log{G1c} मध्ये अनुज्ञेय आहे का?'' असा प्रश्न विचारता येईल.
+उत्तर होय आहे:~$\LeftR{\land}_3$ वापरून केलेल्या कोणत्याही
+निगमनाचे \Log{G1c} च्याच नियमांनी थेट अनुकरण करता येते.
+त्यासाठी~$\LeftR{\land}_1$ आणि $\LeftR{\land}_2$
+यांबरोबर संरचनात्मक नियम~$\LeftR{\Contraction}$ ही लागेल:
+\[
+\Axiom$!A, !B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_1$}
+\UnaryInf$!A \land !B, !B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_2$}
+\UnaryInf$!A \land !B, !A \land !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\Contraction}}
+\UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+\end{ex}
+
+एका नियमाने केलेल्या निगमनाचे इतर नियमांनी
+अनुकरण करणे हा नियम अनुज्ञेय असल्याचे दाखवण्याचा एक मार्ग
+आहे. पण तो एकमेव मार्ग नाही; काही नियम अनुज्ञेय असूनही
+अशा प्रकारे त्यांचे अनुकरण करता येत नाही. ज्या नियमांचे
+असे अनुकरण करता येते त्यांना \emph{व्युत्पाद्य} म्हणतात.
+
+\begin{defn}
+एखादा नियम~$R$,
+\[
+\AxiomC{$S_1$}
+\AxiomC{$\dots$}
+\AxiomC{$S_n$}
+\RightLabel{$R$}
+\TrinaryInfC{$S$}
+\DisplayProof
+\]
+पद्धतीचे नियम आणि स्वयंसिद्धके, तसेच $S_1$, \dots,~$S_n$
+या रूपांच्या अतिरिक्त प्रारंभीच्या क्रमवर्ती वापरून
+क्रमवर्ती~$S$ ची रूपरेषात्मक !!{proof} असेल, तर तो नियम
+त्या पद्धतीत \emph{व्युत्पाद्य} म्हणतात.
+\end{defn}
+
+\olref{ex:land-deriv} मधील !!{proof} दाखवते
+की~$\LeftR{\land}_3$ हा नियम \Log{G1c} मध्ये व्युत्पाद्य
+आहे. कारण ती~$\LeftR{\land}_3$ च्या पूर्वपक्षांना प्रारंभीच्या
+क्रमवर्ती मानून, फक्त \Log{G1c} चे नियम वापरून,
+$\LeftR{\land}_3$ च्या निष्कर्षाची रूपरेषात्मक !!{proof}
+आहे. (त्या !!{proof} मध्ये \Log{G1c}
+मधील कोणतेही स्वयंसिद्धक वापरलेले नाही.)
+
+\begin{prop}\ollabel{prop:lor-G3-adm}
+\Log{G3c} चे नियम~$\LeftR{\land}$ आणि $\RightR{\lor}$
+हे \Log{G1c} मध्ये व्युत्पाद्य आहेत.
+\end{prop}
+
+\begin{proof}
+  $\LeftR{\land}$ साठीची सिद्धता \olref{ex:land-deriv} मध्ये
+  दिली आहे. $\RightR{\lor}$ साठीची सिद्धता प्रश्न म्हणून सोडली आहे.
+\end{proof}
+
+\begin{prob}
+\Log{G3c} चा नियम~$\RightR{\lor}$ हा \Log{G1c} मध्ये
+व्युत्पाद्य आहे हे दाखवा.
+\end{prob}
+
+\begin{prob}
+$\liff$ हा परिभाषित !!{operator} आहे असे माना:
+$!A \liff !B$ हे $(!A \lif !B) \land (!B \lif !A)$
+याचे संक्षिप्त रूप आहे. पुढील नियम
+\begin{enumerate}
+\item \Axiom$\Gamma, !A, !B \fCenter \Delta$
+\Axiom$\Gamma \fCenter \Delta, !A, !B$
+\RightLabel{\LeftR{\liff}}
+\BinaryInf$!A \liff !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\item
+\Axiom$!A, \Gamma \fCenter \Delta, !B$
+\Axiom$!B, \Gamma \fCenter \Delta, !A$
+\RightLabel{\RightR{\liff}}
+\BinaryInf$\Gamma \fCenter \Delta, !A \liff !B$
+\DisplayProof
+\end{enumerate}
+(a)~\Log{G1c} आणि (b)~\Log{G3c} मध्ये व्युत्पाद्य
+आहेत हे दाखवा.
+\end{prob}
+
+\begin{ex}\ollabel{ex:weak-adm}
+\Log{G1c} चा नियम~$\RightR{\Weakening}$,
+\[
+\Axiom$ \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A$
+\DisplayProof
+\]
+हा \Log{G3c} मध्ये अनुज्ञेय आहे. सिद्धतेची कल्पना सोपी
+आहे: \Log{G3c} मध्ये पूर्वपक्ष~$\Gamma \Sequent \Delta$
+याची !!a{proof}~$\pi$ आहे असे माना. $\pi$ मधील
+प्रत्येक क्रमवर्तीच्या निष्कर्षभागात !!{formula}~$!A$ जोडा.
+स्वयंसिद्धके स्वयंसिद्धकेच राहतात; योग्य निगमनेही योग्यच
+राहतात. नव्या !!{proof} मध्ये हे !!{formula} सर्वत्र
+जोडलेले असते; तिची अंतिम क्रमवर्ती
+$\Gamma \Sequent \Delta, !A$ असते.
+
+तथापि, नियम~$\RightR{\Weakening}$ हा
+\Log{G3c} मध्ये व्युत्पाद्य नाही. समजा तो व्युत्पाद्य
+आहे; म्हणजे \Log{G3c} ची स्वयंसिद्धके व नियम आणि
+कदाचित अतिरिक्त प्रारंभीची क्रमवर्ती~$\Gamma \Sequent
+\Delta$ वापरून $\Gamma \Sequent \Delta, !A$ ची
+!!a{proof} मिळते. $\RightR{\Weakening}$ व्युत्पाद्य
+असण्यासाठी आवश्यक असल्याप्रमाणे ही !!{proof} पूर्णतः
+रूपरेषात्मक असेल, तर $\Gamma$ आणि~$\Delta$ काढून
+टाकून तिच्यापासून~$\Sequent !A$ ची !!a{proof}
+बनवता येईल. त्यामुळे अतिरिक्त प्रारंभीच्या क्रमवर्ती
+$\Gamma \Sequent \Delta$ चे रूपांतर रिकाम्या
+क्रमवर्ती~$\quad \Sequent \quad$ मध्ये होईल. रिकाम्या
+क्रमवर्तीमध्ये !!{formula}s अजिबात नसतात, तर \Log{G3c}
+च्या प्रत्येक नियमाच्या पूर्वपक्षात किमान एक सक्रिय
+!!{formula} आवश्यक असते. म्हणून या रूपरेषात्मक सिद्धतेतील
+कोणत्याही निगमनाचा पूर्वपक्ष रिकामी क्रमवर्ती असू शकत
+नाही. परिणामी, अतिरिक्त प्रारंभीची क्रमवर्ती~$\Gamma
+\Sequent \Delta$ प्रत्यक्ष न वापरल्यासच ती !!{proof}
+रूपरेषात्मक असू शकते. दुसऱ्या शब्दांत,
+$\Gamma \Sequent \Delta, !A$ चे \Log{G3c} चीच
+स्वयंसिद्धके व नियम वापरून रूपरेषात्मक !!{proof} मिळेल;
+मग या रूपाची कोणतीही क्रमवर्ती \Log{G3c} मध्ये
+!!a{proof} असलेली ठरेल. पण हे अशक्य आहे: \Log{G3c}
+निर्दोष असल्यामुळे प्रत्येक !!{structure} मध्ये सत्य
+असलेल्या क्रमवर्तीच ते !!{prove} करू शकते. उदाहरणार्थ,
+$\Gamma = \Delta = \emptyset$ आणि $!A \ident \lfalse$
+घेतल्यास, \Log{G3c} ला $\quad \Sequent \lfalse$
+ही क्रमवर्ती !!{prove} करावी लागेल; ते तसे करत नाही.
+\end{ex}
+
+आता \Log{G3c} मध्ये दुर्बलीकरण हा अनुज्ञेय
+नियम आहे, याची नीट आगमनात्मक सिद्धता देऊ. खरे तर,
+वरील कल्पनेप्रमाणे किंचित अधिक प्रबळ निष्कर्ष मिळतो:
+$\pi$ मधील प्रत्येक क्रमवर्तीच्या उजवीकडे~$!A$
+जोडल्याने !!{proof} ची रचना बदलत नाही; विशेषतः तिची
+उंची वाढत नाही. हे महत्त्वाचे असल्याने स्वतंत्र व्याख्या
+देऊ.
+
+\begin{defn}
+एखादा नियम~$R$,
+\[
+\AxiomC{$S_1$}
+\AxiomC{$\dots$}
+\AxiomC{$S_n$}
+\RightLabel{$R$}
+\TrinaryInfC{$S$}
+\DisplayProof
+\]
+पद्धतीत \emph{!!{height} जपून अनुज्ञेय} (किंवा
+\emph{!!{hp}-अनुज्ञेय}) असतो, जर $i = 1$, \dots,~$n$
+साठी $\Proves[h_i] S_i$ असताना $m = \max(h_1, \dots,
+h_n)$ घेऊन $\Proves_m S$ मिळत असेल.
+\end{defn}
+
+नियम !!{height} जपून अनुज्ञेय असण्यासाठी पुढील अट
+पुरेशी आहे: पूर्वपक्ष~$S_i$ यांच्या !!{height}~$h_i =
+\pheight{\pi_i}$ असलेल्या !!{proof}s~$\pi_i$ दिल्या
+असता, निष्कर्षाची अशी !!a{proof}~$\pi$ असावी की
+तिची !!{height}~$\pheight{\pi}$ ही~$h_i$ यांच्या कमाल
+मूल्यापेक्षा मोठी नाही. विशेषतः, एकच पूर्वपक्ष~$S_1$
+असेल तर $\pheight{\pi} \le \pheight{\pi_1}$ पुरेसे
+आहे. $\RightR{\Weakening}$ आणि $\LeftR{\Weakening}$
+बाबतीत तर प्रत्यक्षात $\pheight{\pi} =
+\pheight{\pi_1}$ असते; पण समानता आवश्यक नाही.
+
+\begin{prop}\ollabel{prop:weak-G3c-adm}
+\Log{G1c} चे नियम~$\RightR{\Weakening}$ आणि
+$\LeftR{\Weakening}$ हे \Log{G3c} मध्ये
+!!{height} जपून अनुज्ञेय आहेत.
+\end{prop}
+
+\begin{proof}
+  $\pheight{\pi} = n$ !!{height} असलेली !!{proof}~$\pi$
+  वापरून $\Log{G3c} \Proves \Gamma \Sequent \Delta$
+  असेल, तर $\pheight{\pi'} = n$ असलेली
+  $\Gamma \Sequent \Delta, !A$ ची \Log{G3c}-!!{proof}
+  $\pi'$ आहे, हे दाखवायचे आहे. $n$ वर आगमन करू.
+  $n=0$ असेल तर~$\pi$ हे फक्त $\Gamma \Sequent
+  \Delta$ स्वयंसिद्धक आहे (म्हणजे एखादे अण्वीय~$!C$
+  हे~$\Gamma$ आणि~$\Delta$ दोन्हीत येते); म्हणून
+  $\Gamma \Sequent \Delta, !A$ हेही स्वयंसिद्धक आहे.
+  $n = \pheight{\pi} >0$ असेल तर !!{proof}~$\pi$
+  मध्ये शेवटचे एक निगमन असते. कोणता नियम वापरला यानुसार
+  उदाहरणे वेगळी करतो. एकच उदाहरण देऊ: शेवटचे निगमन
+  $\RightR{\land}$ होते असे समजा. मग $\Delta =
+  \Delta', !B \land !C$; शेवटच्या निगमनातील तत्काळ
+  उप-!!{proof}s~$\pi_1$ आणि~$\pi_2$ यांच्या अंतिम
+  क्रमवर्ती अनुक्रमे $\Gamma \Sequent \Delta', !B$
+  आणि $\Gamma \Sequent \Delta', !C$ असतात. म्हणजे
+  $\pi$ चे रूप असे असते:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma \fCenter \Delta', !B$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma \fCenter \Delta', !C$
+  \RightLabel{\RightR{\land}}
+  \BinaryInf$\Gamma \fCenter \Delta', !B \land !C$
+  \DisplayProof
+  \]
+  तसेच $n =
+  \max(\pheight{\pi_1}, \pheight{\pi_2}) + 1$.
+  म्हणून $\pheight{\pi_1} <
+  n$ आणि $\pheight{\pi_2} < n$; त्यामुळे आगमनात्मक
+  गृहीतक लागू होते: $\Gamma \Sequent
+  \Delta', !B, !A$ आणि $\Gamma \Sequent \Delta', !C, !A$
+  यांच्या अनुक्रमे !!{proof}s~$\pi_1'$ आणि~$\pi_2'$
+  मिळतात. $\RightR{\land}$ नियमाने $\Gamma
+  \Sequent \Delta', !B \land !C, !A$ ची !!a{proof}~$\pi'$
+  मिळते:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$\Gamma \fCenter \Delta', !B, !A$
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta', !C, !A$
+  \RightLabel{\RightR{\land}}
+  \BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !A$
+  \DisplayProof
+  \]
+  आपल्याला $\pheight{\pi'} =
+  \max(\pheight{\pi_1'}, \pheight{\pi_2'}) + 1 = \max(\pheight{\pi_1},
+  \pheight{\pi_2}) + 1 = \pheight{\pi}$ मिळते.
+\end{proof}
+
+\olref{prop:weak-G3c-adm} अत्यंत उपयोगी आहे.
+त्याचा वारंवार वापर दाखवण्यासाठी एक संकेतन ठरवू:
+$\pi$ ही~$\Gamma \Sequent \Delta$ ची !!a{proof}
+असेल, तर $\pi[\Pi \Sequent \Lambda]$ म्हणजे डावीकडे
+$\Pi$ मधील सर्व !!{formula}s आणि उजवीकडे~$\Lambda$
+मधील सर्व !!{formula}s जोडण्यासाठी दुर्बलीकरणाच्या
+अनुज्ञेयतेचा केलेला वापर. परिणामी ती $\Gamma, \Pi
+\Sequent \Delta, \Lambda$ ची !!a{proof} असते.
+
+\end{document}
