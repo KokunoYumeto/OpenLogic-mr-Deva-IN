@@ -68,6 +68,29 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0708': [
+        # OLINC-458: G3i has a one-formula succedent, so use the attested G1i pair.
+        (r'\begin{tabular}[t]{@{}r@{}}' + '\n' +
+         r'\Axiom$\Gamma \fCenter !A$' + '\n' +
+         r'\RightLabel{\RightR{\lor}}' + '\n' +
+         r'\UnaryInf$ \Gamma \fCenter !A \lor !B$' + '\n' +
+         r'\DisplayProof' + '\n' +
+         r'\\[3ex]' + '\n' +
+         r'\Axiom$ \Gamma \fCenter !B$' + '\n' +
+         r'\RightLabel{\RightR{\lor}}' + '\n' +
+         r'\UnaryInf$ \Gamma \fCenter !A \lor !B$' + '\n' +
+         r'\DisplayProof\\[3ex]' + '\n' +
+         r'\end{tabular}',
+         r'\Axiom$\Gamma \fCenter !A, !B$' + '\n' +
+         r'\RightLabel{\RightR{\lor}}' + '\n' +
+         r'\UnaryInf$ \Gamma \fCenter !A \lor !B$' + '\n' +
+         r'\DisplayProof'),
+        # OLINC-459: distinguish the G3i table from G3c.
+        (r'\ollabel{tab:G3i}', r'\ollabel{tab:G3c}'),
+        # OLINC-460: separate the retained universal from Γ.
+        (r'\Axiom$ !A(t), \lforall[x][!A(x)], \Gamma \fCenter \Delta$',
+         r'\Axiom$ !A(t), \lforall[x][!A(x)]\Gamma \fCenter \Delta$'),
+    ],
     'OLP-0707': [
         # OLINC-457: separate the retained universal formula from Γ.
         (r'\Axiom$ !A(t), \lforall[x][!A(x)], \Gamma \fCenter \Delta$',
