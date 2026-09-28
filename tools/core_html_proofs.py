@@ -200,10 +200,16 @@ def strip_proof_environments(tex):
     cursor = 0
     used_manual = set()
     automatic = 0
+    prose_defish = 0
     for number, match in enumerate(pattern.finditer(tex), 1):
         pieces.append(tex[cursor : match.start()])
         block = match.group()
         environment = match.group("environment")
+        if environment == "defish" and not re.search(r"\\(?:Axiom|UnaryInf|BinaryInf|TrinaryInf)", block):
+            pieces.append(block)
+            prose_defish += 1
+            cursor = match.end()
+            continue
         manual = next(
             (
                 spec
@@ -238,10 +244,10 @@ def strip_proof_environments(tex):
     # placeholder, with the three curated examples represented manually.
     total_environments = len(
         re.findall(r"\\begin\{(?:prooftree|oltableau|tableau|defish)\}", tex)
-    )
+    ) - prose_defish
     assert len(found) == total_environments
     assert automatic == total_environments - len(PROOFS)
-    assert not re.search(r"\\begin\{(?:prooftree|oltableau|tableau|defish)\}", output)
+    assert not re.search(r"\\begin\{(?:prooftree|oltableau|tableau)\}", output)
     return output, found
 
 
@@ -405,12 +411,12 @@ def _generic_tableau_spec(block, number):
     """Represent bracket-based ``oltableau`` trees as source-order steps."""
     rows = []
     cursor = 0
-    marker = r"\sFmla"
+    marker = re.compile(r"\\(?:sFmla|pFmla)\b")
     while True:
-        start = block.find(marker, cursor)
-        if start < 0:
+        match = marker.search(block, cursor)
+        if not match:
             break
-        position = start + len(marker)
+        position = match.end()
         while position < len(block) and block[position].isspace():
             position += 1
         if position >= len(block) or block[position] != "{":
@@ -420,9 +426,14 @@ def _generic_tableau_spec(block, number):
         while position < len(block) and block[position].isspace():
             position += 1
         formula, position = _balanced(block, position)
-        next_start = block.find(marker, position)
-        segment = block[position:] if next_start < 0 else block[position:next_start]
-        raw = r"\sFmla{" + label + "}{" + formula + "}"
+        world = None
+        if match.group() == r"\pFmla":
+            while position < len(block) and block[position].isspace():
+                position += 1
+            world, position = _balanced(block, position)
+        next_match = marker.search(block, position)
+        segment = block[position:] if not next_match else block[position:next_match.start()]
+        raw = ((world + r"\,") if world else "") + r"\sFmla{" + label + "}{" + formula + "}"
         rows.append(
             {
                 "formula_tex": _proof_formula(raw),
@@ -594,11 +605,12 @@ def expand_proof_math_macros(text):
     """Expand proof macros to ordinary TeX understood by Pandoc/texmath."""
     # A few tableau source blocks use the upstream metavariable shorthand;
     # semantic MathML can represent its argument directly as ordinary math.
-    text = re.sub(r"\\formula\{([^{}]*)\}", r"\1", text)
+    text = re.sub(r"\\formula\{([^{}]*)\}", r" \1", text)
     text = text.replace(r"\Proves/", r"\nvdash")
     text = re.sub(r"\\Proves\b", r"\\vdash", text)
     text = text.replace(r"\fCenter", r"\Rightarrow")
     text = text.replace(r"\Sequent", r"\Rightarrow")
+    text = text.replace(r"\nSequent", r"\mid")
     text = text.replace(r"\Weakening", r"\mathrm{W}")
     text = text.replace(r"\Contraction", r"\mathrm{C}")
     text = text.replace(r"\Exchange", r"\mathrm{X}")
@@ -649,6 +661,12 @@ def expand_proof_math_macros(text):
         "Atom",
         2,
         lambda args, _: args[0] + "(" + args[1] + ")",
+    )
+    text = _replace_args(
+        text,
+        "typeof",
+        2,
+        lambda args, _: args[0] + "^{" + args[1] + "}",
     )
     text = _replace_args(
         text,
