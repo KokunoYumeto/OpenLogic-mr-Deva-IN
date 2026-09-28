@@ -100,7 +100,7 @@ assert out.count(r"\end{document}") == 1 and out.rstrip().endswith(r"\end{docume
 assert "!!" not in out and not re.search(r"![A-Z]", out)
 labels = re.findall(r"\\label\{([^}]+)\}", out)
 assert len(labels) == len(set(labels))
-assert set(bib_audit["cited_keys"]) == {x[4:] for x in labels if x.startswith("bib:")}
+assert set(bib_audit["rendered_keys"]) == {x[4:] for x in labels if x.startswith("bib:")}
 assert r"\ref{mth:ind:sti:prop:initial}" in out
 assert r"\ref{mth:ind:rel:defn:depth}" in out
 (BUILD / "openlogic-mr-core.tex").write_text(out, encoding="utf-8", newline="\n")
@@ -111,5 +111,5 @@ prior.update(input_units=inputs,
     bibliography_audit=bib_audit)
 (BUILD / "INPUTS.json").write_text(json.dumps(prior, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(json.dumps({"prepared": "build/core/openlogic-mr-core.tex", "units": len(inputs),
-    "sections": 533, "chapters": 68, "bibliography_entries": len(bib_audit["cited_keys"]),
+    "sections": 533, "chapters": 68, "bibliography_entries": len(bib_audit["rendered_keys"]),
     "sha256": hashlib.sha256(out.encode()).hexdigest()}, ensure_ascii=False))

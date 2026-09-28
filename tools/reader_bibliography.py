@@ -79,6 +79,26 @@ def render_bibliography(root, inputs):
         for other in linked - keys:
             keys.add(other)
             pending.append(other)
+    note_citation_links = 0
+
+    def link_note_citation(match):
+        nonlocal note_citation_links
+        _command, options, keys_arg = match.groups()
+        locator = ", ".join(re.findall(r"\[([^]]*)\]", options))
+        rendered = []
+        for key in (part.strip() for part in keys_arg.split(",")):
+            assert key in keys, key
+            rec = records[key]
+            author = rec.get("author", rec.get("editor", ""))
+            first = author.split(" and ")[0]
+            surname = first.split(",", 1)[0] if "," in first else first.split()[-1]
+            label = surname.strip("{}") + " " + rec["year"]
+            if locator:
+                label += ", " + locator
+            rendered.append(r"\hyperref[bib:" + key + "]{" + label + "}")
+            note_citation_links += 1
+        return "; ".join(rendered)
+
     chunks = [
         r"\chapter*{संदर्भ}", r"\addcontentsline{toc}{chapter}{संदर्भ}",
         "खालील संदर्भ मूळ स्रोताच्या ग्रंथसूचीवरून घेतले आहेत. लेखकांची नावे, "
@@ -121,11 +141,16 @@ def render_bibliography(root, inputs):
                 elif name == "eprint":
                     value = "https://arxiv.org/abs/" + value
                 parts.append(r"\url{" + value + "}.")
+        entry = " ".join(parts)
+        entry = re.sub(r"\\(cite[A-Za-z]*\*?)((?:\[[^]]*\])*)\{([^{}]+)\}",
+                       link_note_citation, entry)
+        assert not citation_keys(entry), key
         chunks.append(r"\par\medskip\phantomsection\label{bib:" + key + "}\n"
-                      + " ".join(parts))
+                      + entry)
     return "\n\n".join(chunks), {
         "source_bib": path.relative_to(root).as_posix(),
         "source_bib_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
         "cited_keys": sorted(cited_keys), "rendered_keys": sorted(keys),
+        "bibliography_note_citation_links_rendered": note_citation_links,
         "scope": "All citation keys in the source-aligned target inputs and their transitive bibliography-note citations; metadata copied from the frozen bibliography, not independently verified.",
     }
