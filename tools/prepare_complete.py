@@ -285,12 +285,9 @@ project(r"p{.50\textwidth} || p{.43\textwidth}",
 project(r"\multirow{3}{*}{\hbox to.43\textwidth{$",
         r"\multirow{3}{*}{\hbox to.44\textwidth{$", 1)
 # This one modal-correspondence table exceeds the measure by 2.847 pt.
+# Reduce local cell padding while preserving its caption and HTML anchor.
 table_begin = r"\begin{tabular}{| p{.50\textwidth} || p{.44\textwidth} |}"
-assert out.count(table_begin) == 1
-table_start = out.index(table_begin)
-table_end = out.index(r"\end{tabular}", table_start) + len(r"\end{tabular}")
-out = (out[:table_start] + r"\resizebox{\textwidth}{!}{%" + "\n"
-       + out[table_start:table_end] + "\n}" + out[table_end:])
+project(table_begin, r"\setlength{\tabcolsep}{4pt}" + "\n" + table_begin, 1)
 # These three labels belong to lemmas sharing the definition counter;
 # explicit references retain the correct Marathi noun.
 project(r"\cref{pt:seq:inv:lem:G3c-invert,pt:seq:inv:lem:invert-quant}",
