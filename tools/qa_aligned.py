@@ -68,6 +68,17 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0718': [
+        # OLINC-474: repair the malformed formula metavariable in this unit.
+        (r'!A', r'!!^a'),
+        # OLINC-473: expand k(k+1)+2(k+1) correctly.
+        (r'\frac{k^2 + k + 2k +2}{2}',
+         r'\frac{2k + k + 2k +2}{2}'),
+        # Localized explanatory tags inside the displayed derivation.
+        (r'\tag{गृहीतक}', r'\tag{Assumption}'),
+        (r'\tag{दोन्ही बाजूंना $k+1$ मिळवा}',
+         r'\tag{Add $k+1$ to both sides}'),
+    ],
     'OLP-0713': [
         # OLINC-470: remove the empty succedent item in the second derivation.
         (r'\UnaryInf$\Gamma \fCenter \Delta, !A \lor !B, !A \lor !B$',
