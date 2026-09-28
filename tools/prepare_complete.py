@@ -35,7 +35,10 @@ assert core_end and not core_tail.strip()
 extra_preamble = [
     r"\usepackage{longtable}",
     r"\usepackage{cleveref}",
+    r"\usepackage{xurl}",
     r"\crefname{lem}{पूर्वप्रमेय}{पूर्वप्रमेये}",
+    # The three-level number 67.10.1 needs more room in the contents.
+    r"\makeatletter\renewcommand*\l@subsection{\@dottedtocline{2}{3.8em}{4.2em}}\makeatother",
     r"\newcommand{\lnand}{\mathbin{\uparrow}}",
     r"\newcommand{\lnor}{\mathbin{\downarrow}}",
     r"\providecommand{\CutCS}{\ensuremath{\mathrm{Cut}_{\mathrm{CS}}}}",
@@ -255,6 +258,50 @@ assert core_body.count(note_marker) == 1
 core_body = core_body.replace(note_marker, "\n".join(supplement) + "\n" + note_marker, 1)
 
 out = core_preamble + r"\begin{document}" + core_body + r"\end{document}" + "\n"
+# Reader-only typesetting repairs preserve the checked translation sources.
+# Keep each projection narrow and fail if its expected source context changes.
+def project(old, new, expected):
+    global out
+    assert out.count(old) == expected, (old, out.count(old), expected)
+    out = out.replace(old, new)
+
+
+# A math accent inside \mathbf emitted missing control glyphs on page 415-417.
+project(r"\Th{\bar Q}", r"\overline{\Th{Q}}", 9)
+project(r"\Th{\bar" + "\n" + r"T}", r"\overline{\Th{T}}", 1)
+project(r"\Th{\bar T}", r"\overline{\Th{T}}", 1)
+# Put the two inference displays on separate lines in the identity rules.
+project("एकरूपता असलेल्या निष्पत्त्या साठी अतिरिक्त अनुमाननियम आवश्यक असतात.\n"
+        r"\begin{defish}",
+        "एकरूपता असलेल्या निष्पत्त्या साठी अतिरिक्त अनुमाननियम आवश्यक असतात.\n"
+        r"\par\medskip\noindent" + "\n" + r"\begin{defish}", 1)
+project(r"\UnaryInfC{$\eq[t][t]$}" + "\n" + r"\DisplayProof" + "\n" + r"\hfill" + "\n" + r"\begin{tabular}{r}",
+        r"\UnaryInfC{$\eq[t][t]$}" + "\n" + r"\DisplayProof" + "\n" + r"\par\medskip\noindent" + "\n" + r"\begin{tabular}{r}", 1)
+# Table column widths must include LaTeX's padding and vertical rules.
+project(r"p{.48\textwidth} || p{.48\textwidth}",
+        r"p{.465\textwidth} || p{.465\textwidth}", 2)
+project(r"p{.50\textwidth} || p{.43\textwidth}",
+        r"p{.50\textwidth} || p{.44\textwidth}", 1)
+project(r"\multirow{3}{*}{\hbox to.43\textwidth{$",
+        r"\multirow{3}{*}{\hbox to.44\textwidth{$", 1)
+# This one modal-correspondence table exceeds the measure by 2.847 pt.
+table_begin = r"\begin{tabular}{| p{.50\textwidth} || p{.44\textwidth} |}"
+assert out.count(table_begin) == 1
+table_start = out.index(table_begin)
+table_end = out.index(r"\end{tabular}", table_start) + len(r"\end{tabular}")
+out = (out[:table_start] + r"\resizebox{\textwidth}{!}{%" + "\n"
+       + out[table_start:table_end] + "\n}" + out[table_end:])
+# These three labels belong to lemmas sharing the definition counter;
+# explicit references retain the correct Marathi noun.
+project(r"\cref{pt:seq:inv:lem:G3c-invert,pt:seq:inv:lem:invert-quant}",
+        r"पूर्वप्रमेय~\ref{pt:seq:inv:lem:G3c-invert} आणि~\ref{pt:seq:inv:lem:invert-quant}", 1)
+project(r"\cref{pt:cut:inv:lem:inv-G3c-cut}",
+        r"पूर्वप्रमेय~\ref{pt:cut:inv:lem:inv-G3c-cut}", 1)
+# Let the long cut-elimination proof reflow around its inline formulae.
+project("    विगमन गृहीतकाने\n    $\\Gamma_1 \\Sequent",
+        "    \\begingroup\\sloppy\n    विगमन गृहीतकाने\n    $\\Gamma_1 \\Sequent", 1)
+project("    घेता येते. पहिल्या प्रसंगात:\n    \\[",
+        "    घेता येते. पहिल्या प्रसंगात:\\par\\endgroup\n    \\[", 1)
 labels = re.findall(r"\\label\{([^}]+)\}", out)
 assert len(labels) == len(set(labels)), [x for x in labels if labels.count(x) > 1][:10]
 out = re.sub(r"\\readerexternalref\{([^}]+)\}",

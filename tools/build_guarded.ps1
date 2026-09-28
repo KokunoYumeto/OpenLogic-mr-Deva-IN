@@ -88,7 +88,8 @@ try {
   }
   $receipt['clearedTransientFiles']=$cleared
   $engine = (Get-Command xelatex.exe -ErrorAction Stop).Source
-  for ($pass=1; $pass -le 2; $pass++) {
+  $maxPasses=if($Target -eq 'full'){3}else{2}
+  for ($pass=1; $pass -le $maxPasses; $pass++) {
     $code=[EditionTexTree]::Run($engine,('-no-shell-escape -interaction=nonstopmode -halt-on-error -file-line-error '+$documentName+'.tex'),$buildPath,$PassTimeoutMilliseconds)
     $logPath=Join-Path $buildPath ($documentName+'.log')
     $log=if(Test-Path -LiteralPath $logPath){Get-Content -LiteralPath $logPath -Raw}else{''}

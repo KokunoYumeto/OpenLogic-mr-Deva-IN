@@ -151,6 +151,17 @@ assert len(entries) == 70
 assert set(CROPS) == {"turing-machine"} | {f"tikz-{number:03d}" for number in range(15, 71)}
 assert set(CROPS).issubset(entries)
 assert set(ALT_OVERRIDE).issubset(CROPS)
+tex_source = (BUILD / "openlogic-mr-full.tex").read_text(encoding="utf-8")
+tikz_sources = list(re.finditer(r"\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}", tex_source, re.S))
+assert len(tikz_sources) == 61
+for number in range(10, 71):
+    item = entries[f"tikz-{number:03d}"]
+    match = tikz_sources[number - 10]
+    assert item["source_sha256"] == hashlib.sha256(match.group().encode("utf-8")).hexdigest()
+    item["source_line"] = tex_source.count("\n", 0, match.start()) + 1
+asset_source = re.search(r"\\olasset(?:\[[^]]+\])?\{assets/diagrams/turing-machine\.tikz\}", tex_source)
+assert asset_source
+entries["turing-machine"]["source_line"] = tex_source.count("\n", 0, asset_source.start()) + 1
 
 pdf = fitz.open(PDF)
 pdf_sha = sha(PDF)
