@@ -68,6 +68,37 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0678': [
+        # OLINC-390: the cut-free source system is G2i.
+        (r'कट-विरहित \Log{G2i} !!{proof}s',
+         r'कट-विरहित \Log{2i} !!{proof}s'),
+        # OLINC-391: this intuitionistic translation yields N2i.
+        (r'\Log{N2i}-!!{proof}~$\delta$ असते',
+         r'\Log{N2c}-!!{proof}~$\delta$ असते'),
+        # OLINC-392: the translated consequent is set by Delta.
+        (r'$\Delta=\emptyset$ असल्यास~$!C\ident\lfalse$,' + '\n' +
+         r'आणि अन्यथा~$\Delta=\{!C\}$ असते.' + '\n', ''),
+        # OLINC-393: cut avoidance requires a normal N2i proof.
+        (r'\Log{N2i}-!!{proof} सामान्यरूप असेल,',
+         r'\Log{N2i}-!!{proof} असेल,'),
+        # OLINC-394: make the elimination branch a separate outline item.
+        (r'  \item ~$\delta$ चा शेवटचा नियम',
+         r'  ~$\delta$ चा शेवटचा नियम'),
+        # OLINC-395: the reduced proof is delta1, not undefined delta-prime.
+        (r'$\delta_1$ मधील अनुमानांच्या संख्येपेक्षा',
+         r"$\delta'$ मधील अनुमानांच्या संख्येपेक्षा"),
+        # OLINC-396: G2i's antecedent has no assumption labels.
+        (r"$!D, \Gamma_1' \Sequent !A$ ची",
+         r'$x:!D, \Gamma_1 \Sequent !A$ ची'),
+        # OLINC-398: a final implication elimination leaves delta2 empty.
+        (r'तर~$\delta_2$ मध्ये~$0$ अनुमाने असतात.)',
+         r'तर~$\delta_1$ मध्ये~$0$ अनुमाने असतात.)'),
+        # OLINC-399: match the inductive premises to the displayed tree.
+        (r"$\Gamma_1' \Sequent !D$ ची~$\pi_1$",
+         r'$\Gamma_1 \Sequent !D$ ची~$\pi_1$'),
+        (r"आणि~$!E, \Gamma_2' \Sequent !A$ ची~$\pi_2$",
+         r"आणि~$!E, \Gamma_1' \Sequent !A$ ची~$\pi_2$"),
+    ],
     'OLP-0677': [
         # OLINC-388: every member of the segment is a formula occurrence.
         (r'$!A_{i+1}$' + '\n' + r'  हा त्याच अनुमानाचा',

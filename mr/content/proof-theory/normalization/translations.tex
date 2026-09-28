@@ -1,0 +1,383 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: translations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{tr}
+
+\olsection{सामान्यरूप \Log{N2i}-\usetoken{P}{proof} आणि \Log{G2i} यांतील रूपांतरे}
+
+\Log{N2i} मधील !!^{proof}s चे \Log{G2i} मधील !!{proof}s मध्ये
+आणि उलट दिशेने रूपांतर करता येते. प्रथम,
+कट-विरहित \Log{G2i} !!{proof}s चे रूपांतर केल्यावर
+सामान्यरूप \Log{N2i}-!!{proof}s मिळतात.
+
+हा निष्कर्ष मांडण्यासाठी~\Log{N2i} आणि~\Log{G2i}
+यांतील क्रमवर्तींचे पूर्वपक्ष जोडणारी काही परिभाषा हवी.
+खूण लावलेल्या !!{formula}s चा संच~$\Gamma'$ हा खूण नसलेल्या
+!!{formula}s च्या बहुसंच~$\Gamma$ शी \emph{अनुरूप} असतो,
+जर प्रत्येक !!{formula}~$!A$ साठी~$\Gamma'$ मधील
+$x : !A$ या रूपातील !!{element}s ची संख्या ही~$\Gamma$
+मधील~$!A$ च्या प्रतींच्या संख्येहून जास्त नसेल.
+
+\begin{cor}
+$\Log{G2i} \Proves \Gamma \Sequent \Delta$ असेल, तर
+$\Gamma' \Sequent !C$ ची सामान्यरूप
+\Log{N2i}-!!{proof}~$\delta$ असते; येथे खूण लावलेल्या
+!!{formula}s चा संच~$\Gamma'$ हा बहुसंच~$\Gamma$ शी अनुरूप असतो.
+$\Delta=\emptyset$ असल्यास~$!C\ident\lfalse$,
+आणि अन्यथा~$\Delta=\{!C\}$ असते.
+म्हणजे, प्रत्येक !!{formula}~$!A$ साठी~$\Gamma'$ मधील
+$x : !A$ या रूपातील !!{element}s ची संख्या ही~$\Gamma$
+मधील~$!A$ च्या प्रतींच्या संख्येहून (म्हणजे~$!A$ च्या
+पुनरावृत्तींच्या संख्येहून) जास्त नसते.
+\end{cor}
+
+\begin{proof}
+\olref[nat][tgi]{prop:G2i-to-N2i} च्या सिद्धतेतील
+रचनेकडे पाहिल्यास दिसते: !!{introduction} नियम
+!!{proof}s च्या शेवटी, तर !!{elimination} नियम
+फक्त !!{proof}s च्या सुरुवातीला जोडतो.
+म्हणून !!a{elimination} नियमाच्या वर !!{introduction}
+नियम कधी येत नाही.
+\end{proof}
+
+मात्र~\olref[nat][tgi]{prop:G2i-to-N2i} मधील
+\Cut{} नियमाचे रूपांतर~\Log{N2i}-!!{proof}~$\delta$ मध्ये
+कट निर्माण करू शकते. एखादी~\Log{G2i} !!{proof}
+शेवटी~\Cut{} ने संपत असेल, आणि तिच्या तत्काळ उप-!!{proof}s
+$\pi_1$ व~$\pi_2$ अनुक्रमे~$\Gamma_1 \Sequent !A$
+आणि~$!A, \Gamma_2 \Sequent \Delta_2$ यांच्या असतील,
+तर~$\pi_1$ चे रूपांतर~$\delta_1$ हे~$\pi_2$ च्या
+रूपांतर~$\delta_2$ मधील $x:!A \Sequent !A$
+स्वयंसिद्धकांवर कलम-संयोजित करतो. जर~$\delta_1$
+मुख्य !!{formula}~$!A$ असलेल्या !!a{introduction}
+नियमाने संपत असेल आणि~$\delta_2$ मधील
+$x:!A \Sequent !A$ स्वयंसिद्धक हे !!a{elimination}
+नियमाचे प्रमुख आधारविधान असेल, तर परिणामी~$\delta$
+मध्ये कट तयार होतो.
+
+\Log{N2i} मधील !!{proof}s चे~\Log{G2i} मधील
+!!{proof}s मध्येही रूपांतर करता येते.
+\olref[nat][tni]{prop:N2-to-G2} च्या सिद्धतेत
+\Elim{\land}, \Elim{\lif}, \Elim{\lnot},
+\Elim{\lforall} यांचे रूपांतर परिणामी~\Log{G2i}
+!!{proof} मध्ये~\Cut{} अनुमाने निर्माण करते.
+पण सुरुवातीची~\Log{N2i}-!!{proof} सामान्यरूप असेल,
+तर असे कट टाळता येतात.
+
+~\Log{N2i}-!!{proof}~$\delta$ मधील
+क्रमवर्तींच्या आस्थितींच्या $S_1$, \dots,~$S_n$
+या यादीला \emph{शाखा} म्हणू, जर~$S_1$ स्वयंसिद्धक
+असेल आणि~$S_i$ जेव्हा एखाद्या अनुमानाचे प्रमुख
+आधारविधान असेल तेव्हा~$S_{i+1}$ हा त्याचा निष्कर्ष
+असेल. दुसऱ्या शब्दांत, शाखा स्वयंसिद्धकापासून
+~$\delta$ मध्ये खाली जात क्रमवर्तींचा मागोवा घेते;
+पण !!{elimination} नियमांच्या गौण आधारविधानांवर थांबते.
+जिचा~$S_n$ अंतिम क्रमवर्ती असतो ती~$\delta$ ची
+\emph{मुख्य शाखा}. प्रत्येक !!{proof}~$\delta$ ला
+किमान एक मुख्य शाखा असते, कारण प्रत्येक नियमाला
+किमान एक प्रमुख आधारविधान असते (फक्त~\Intro{\land}
+ला दोन असतात).
+
+\begin{prop}\ollabel{prop:normal-N2i-to-G2i}
+~$\delta$ ही~$\Gamma \Sequent !A$ ची सामान्यरूप
+$\Log{N2c}$ किंवा~$\Log{N2i}$-!!{proof} असेल,
+तर~$\Gamma' \Sequent \Delta$ ची कट-विरहित
+$\Log{G2c}$-!!{proof} (अनुक्रमे~$\Log{G2i}$-!!{proof})~$\pi$
+असते. येथे~$\Gamma$ मधील खुणा काढून मिळणारा
+!!{formula}s चा बहुसंच~$\Gamma'$ आहे;
+$!A$ हा~$\lfalse$ नसेल तर~$\Delta = \{!A\}$,
+आणि असेल तर~$\Delta = \emptyset$.
+\end{prop}
+
+\begin{proof}
+यावेळी~$\Gamma \Sequent !A$ च्या !!{proof}~$\delta$
+मधील अनुमानांच्या संख्येवर विगमन करतो.
+~$\delta$ मध्ये अनुमान नसेल, तर ती
+$x:!A \Sequent !A$ हा स्वयंसिद्धक आहे;
+तेव्हा~$\pi$ हा अनुरूप~$!A \Sequent !A$
+स्वयंसिद्धक आहे, किंवा~$!A \ident \lfalse$
+असेल तर~$\lfalse \Sequent \ $ स्वयंसिद्धक आहे.
+
+~$\delta$ चा शेवट अनुमाननियमात होत असेल,
+तर पुढील प्रसंग वेगळे पाहू:
+\begin{enumerate}
+  \item $R$ हा !!a{introduction} नियम किंवा~\FalseInt
+  असेल, तर रूपांतर~\olref[nat][tni]{prop:N2-to-G2}
+  च्या सिद्धतेप्रमाणेच होते आणि~\Cut लागत नाही.
+
+  \item ~$\delta$ चा शेवटचा नियम~$R$ हा !!a{elimination} नियम
+  असेल, तर पुढील बाबी लक्षात घ्या:
+  \begin{enumerate}
+    \item ~$\delta$ ची मुख्य शाखा कोणत्याही
+    !!{introduction} नियमातून जात नाही; अन्यथा त्या
+    शाखेवर !!a{introduction} नियम किंवा~\FalseInt{}
+    यानंतर !!a{elimination} नियम येईल आणि~$\delta$
+    सामान्यरूप राहणार नाही.
+    \item ~$\delta$ च्या मुख्य शाखांवर
+    !!{introduction} नियम नसल्याने एकच मुख्य शाखा
+    असते. (फक्त~\Intro{\land} ला दोन प्रमुख
+    आधारविधाने आहेत; म्हणून अनेक मुख्य शाखा असतील,
+    तर त्या~\Intro{\land} च्या आधारविधानांतून जाव्या लागतील.)
+    \item मुख्य शाखेत~\Elim{\lor} किंवा~\Elim{\lexists}
+    चे प्रमुख आधारविधान असेल, तर असा एकच नियम
+    असतो आणि तो शेवटचा नियम~$R$ असतो. (नसल्यास
+    शाखेत~\Elim{\lor} किंवा~\Elim{\lexists}
+    चा निष्कर्ष पुढील !!a{elimination} नियमाचे प्रमुख
+    आधारविधान होईल; क्रमपरिवर्तन रूपांतरण शक्य असल्यामुळे
+    सिद्धता सामान्यरूप राहणार नाही.)
+  \item \Elim{\lor} आणि~\Elim{\lexists} यांखेरीज
+  कोणताही !!{elimination} नियम गृहीतके निरस्त करत नाही,
+  म्हणजे क्रमवर्तींचा डावा संदर्भ बदलत नाही.
+  \Elim{\lor} आणि~\Elim{\lexists} हे दोन्ही नियम
+  फक्त गौण आधारविधानाच्या वरची
+  गृहीतके निरस्त करतात; म्हणजे फक्त गौण
+  आधारविधानांचे डावे संदर्भ बदलतात.
+  त्यामुळे~$\delta$ च्या मुख्य शाखेवरील
+  क्रमवर्ती~$S_i$ चा संदर्भ~$\Gamma_1$ असेल,
+  तर~$S_i$ हे प्रमुख आधारविधान असलेल्या अनुमानाच्या
+  निष्कर्ष~$S_{i+1}$ चा संदर्भ~$\Gamma_1' \supseteq \Gamma_1$
+  असतो.
+  \item म्हणून मुख्य शाखेतील सर्वांत वरचा
+  क्रमवर्ती~$S_1$ हा~$x: !C \Sequent !C$
+  असेल, तर~$x:!C \in \Gamma$.
+  \end{enumerate}
+  आता~$!C$ च्या रूपानुसार प्रसंग वेगळे पाहू.
+  मुख्य शाखेवरील प्रत्येक~$S_i$ हे !!a{elimination}
+  नियमाचे प्रमुख आधारविधान असल्याने
+  $x:!C \Sequent !C$ बद्दलही तेच खरे आहे.
+
+  \item $!C \ident !D \land !E$ असेल, तर~$\delta$
+  चे रूप असे आहे:
+  \[
+  \Axiom$x:!D \land !E \fCenter !D \land !E$
+  \RightLabel{\Elim{\land}[1]}
+  \UnaryInf$x:!D \land !E \fCenter !D$
+  \Deduce$x:!D \land !E, \Gamma_1 \fCenter !A$
+  \DisplayProof
+  \]
+  मुख्य शाखेत~$x:!D \land !E \Sequent !D$ आहे.
+  त्या शाखेत~\Intro{\lif}, \Intro{\lnot} यांचे
+  प्रमुख आधारविधान किंवा~\Elim{\lor}, \Elim{\lexists}
+  यांचे गौण आधारविधान येत नाही; म्हणून
+  $x:!D \land !E$ मधील संदर्भ-!!{formula}s
+  मुख्य शाखेवर बदलत नाहीत. त्यामुळे अंतिम
+  क्रमवर्तीच्या संदर्भात~$x:!D \land !E$ असलेच पाहिजे.
+  शिवाय,~\Elim{\land} ने संपणाऱ्या उप-!!{proof}
+  ऐवजी~$x:!D \Sequent !D$ ठेवून, आणि मुख्य
+  शाखेवरील प्रत्येक क्रमवर्तीच्या संदर्भात
+  $x:!D \land !E$ ऐवजी~$x:!D$ ठेवून,
+  !!{proof}~$\delta$ चे !!{proof}~$\delta_1$
+  मध्ये रूपांतर करता येते; म्हणजे:
+  \[
+  \bottomAlignProof
+  \Axiom$x:!D \land !E \fCenter !D \land !E$
+  \RightLabel{\Elim{\land}[1]}
+  \UnaryInf$x:!D \land !E \fCenter !D$
+  \Deduce$x:!D \land !E, \Gamma_1 \fCenter !A$
+  \DisplayProof
+  \quad\text{ यात }\quad
+  \bottomAlignProof
+  \Axiom$x:!D \fCenter !D$
+  \Deduce$x:!D, \Gamma_1 \fCenter !A$
+  \DisplayProof
+  \]
+  विगमन गृहीतक~$\delta_1$ ला लागू होते,
+  कारण~$\delta$ मधील अनुमानांची संख्या ही
+  $\delta_1$ मधील अनुमानांच्या संख्येपेक्षा~$1$
+  ने अधिक आहे.
+
+  विगमन गृहीतकानुसार,
+  $!D, \Gamma_1' \Sequent !A$ ची
+  \Log{G2i}-!!{proof}~$\pi_1$ असते.
+  \LeftR{\land} लावून~!!{proof}~$\pi$ मिळते:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!D, \Gamma_1' \fCenter !A$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!D \land !E, \Gamma_1' \fCenter !A$
+  \DisplayProof
+  \]
+  $!A \ident \lfalse$ असेल, तर उदाहरणार्थ
+  एक~\RightR{\Weakening} जोडतो:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!D, \Gamma_1' \fCenter $
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!D \land !E, \Gamma_1' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$!D \land !E, \Gamma_1' \fCenter !A$
+  \DisplayProof
+  \]
+  \item $!C \ident !D \lor !E$ असेल,
+  तर ते~\Elim{\lor} चे प्रमुख आधारविधान असले
+  पाहिजे आणि हे अनुमान मुख्य शाखेवरील शेवटचे
+  अनुमान~$R$ असले पाहिजे. म्हणजे~$\delta$ चे
+  रूप असे आहे:
+  \[
+  \Axiom$x:!D \lor !E \fCenter !D \lor !E$
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$y:!D, \Gamma_1 \fCenter!A$
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \Deduce$z:!E, \Gamma_2 \fCenter !A$
+  \RightLabel{\Elim{\lor}}
+  \TrinaryInf$x:!D \lor !E, \Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  विगमन गृहीतक~!!{proof}s $\delta_1$ आणि~$\delta_2$
+  यांना लागू होते; त्यामुळे अनुक्रमे
+  $!D, \Gamma_1' \Sequent !A$ आणि
+  $!E, \Gamma_2' \Sequent !A$ यांच्या
+  \Log{G2i}-!!{proof}s $\pi_1$ व~$\pi_2$ मिळतात.
+  त्यांच्यावर~$\LeftR{\lor}$ लावून~$\pi$ मिळते:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!D, \Gamma_1' \fCenter !A$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!E, \Gamma_2' \fCenter !A$
+  \RightLabel{\LeftR{\lor}}
+  \BinaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  $\Elim{\lor}$ ने~$y: !D$ किंवा~$z: !E$
+  निरस्त केले नसेल (म्हणजे ही गृहीतके गौण
+  आधारविधानांच्या संदर्भात नसतील), किंवा~$!A$
+  हे~$\lfalse$ असेल, तर काही~\LeftR{\Weakening}
+  आणि~\RightR{\Weakening} अनुमाने जोडावी लागतात.
+  उदाहरणार्थ:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter $
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!D, \Gamma_1' \fCenter $
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma_2' \fCenter $
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!E, \Gamma_2' \fCenter $
+  \RightLabel{\LeftR{\lor}}
+  \BinaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+
+  \item $!C \ident !D \lif !E$ असेल,
+  तर~$\delta$ चे रूप असे आहे:
+  \[
+  \Axiom$x:!D \lif !E \fCenter !D \lif !E$
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma_1 \fCenter!D$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$x:!D \lif !E, \Gamma_1 \fCenter !E$
+  \RightLabel{$\delta_2$}
+  \Deduce$x:!D \lif !E, \Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  येथे~$x:!D \lif !E, \Gamma_1 \Sequent !E$
+  समाविष्ट करणाऱ्या मुख्य शाखेत~\Intro{\lif},
+  \Intro{\lnot} यांचे प्रमुख आधारविधान किंवा
+  \Elim{\lor}, \Elim{\lexists} यांचे गौण
+  आधारविधान नसते. त्यामुळे~$x:!D \lif !E, \Gamma_1$
+  मधील संदर्भ-!!{formula}s मुख्य शाखेवर बदलत
+  नाहीत. म्हणून अंतिम क्रमवर्तीच्या संदर्भात
+  $x:!D \lif !E, \Gamma_1$ असले पाहिजे.
+  शिवाय,~\Elim{\lif} ने संपणाऱ्या उप-!!{proof}
+  ऐवजी~$x:!E \Sequent !E$ ठेवून आणि मुख्य
+  शाखेवरील प्रत्येक क्रमवर्तीच्या संदर्भात
+  $x:!D \lif !E, \Gamma_1$ ऐवजी~$x:!E$
+  ठेवून,~!!{proof} च्या~$\delta_2$ या भागाचे
+  योग्य !!{proof}~$\delta_2'$ मध्ये रूपांतर
+  करता येते; म्हणजे:
+  \[
+  \bottomAlignProof
+  \Axiom$x:!D \lif !E, \Gamma_1 \fCenter !E$
+  \RightLabel{$\delta_2$}
+  \Deduce$x:!D \lif !E, \Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \quad\text{ यात }\quad
+  \bottomAlignProof
+  \Axiom$x:!E \fCenter !E$
+  \RightLabel{$\delta_2'$}
+  \Deduce$x:!E, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  विगमन गृहीतक~$\delta_1$ आणि~$\delta_2'$
+  यांना लागू होते; कारण~$\delta$ मधील
+  अनुमानांची संख्या ही~$\delta_1$ व~$\delta_2$
+  मधील अनुमानांच्या संख्यांची बेरीज अधिक~$1$
+  इतकी आहे. हा एक अधिकचा टप्पा मुख्य शाखेच्या सुरुवातीच्या
+  \Elim{\lif} अनुमानासाठी आहे. (तेच अनुमान
+  $\delta$ मधील शेवटचे अनुमान~$R$ असेल,
+  तर~$\delta_2$ मध्ये~$0$ अनुमाने असतात.)
+
+  विगमन गृहीतकानुसार,
+  \Log{G2i}-!!{proof}s मिळतात:
+  $\Gamma_1' \Sequent !D$ ची~$\pi_1$
+  आणि~$!E, \Gamma_2' \Sequent !A$ ची~$\pi_2$.
+  \LeftR{\lif} लावून~!!{proof}~$\pi$ मिळते:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter !D$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!E, \Gamma_2' \fCenter !A$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$!D \lif !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  $!D$ आणि/किंवा~$!A \ident \lfalse$ असेल,
+  तर एक किंवा दोन~\RightR{\Weakening}
+  अनुमाने जोडतो; उदाहरणार्थ:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$\Gamma_1' \fCenter !D$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!E, \Gamma_2' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$!E, \Gamma_2' \fCenter !A$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$!D \lif !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+
+\end{enumerate}
+उरलेले प्रसंग याच प्रकारे हाताळता येतात;
+ते सरावासाठी ठेवले आहेत.
+\end{proof}
+
+\begin{cor}
+सामान्यरूप~\Log{N1i} किंवा~\Log{N2i}-!!{proof}
+मध्ये येणारे प्रत्येक !!{formula} हे अंतिम
+!!{formula} किंवा अंतिम क्रमवर्ती यांचे उप-!!{formula}
+असते.
+\end{cor}
+
+\begin{proof}
+  \olref{prop:normal-N2i-to-G2i} नुसार प्रत्येक
+  सामान्यरूप~\Log{N2i}-!!{proof} चे~\Log{G2i}-!!{proof}
+  मध्ये रूपांतर करता येते. सिद्धतेकडे पाहिल्यास
+  \Log{N2i}-!!{proof} मध्ये येणारे प्रत्येक !!{formula}
+  \Log{G2i}-!!{proof} मध्येही येते. \Log{G2i}
+  मध्ये~\Cut{} नियम नसल्याने त्याला उप-!!{formula}
+  गुणधर्म आहे.
+\end{proof}
+
+\end{document}
