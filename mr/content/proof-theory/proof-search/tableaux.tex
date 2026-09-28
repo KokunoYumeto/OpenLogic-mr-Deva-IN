@@ -1,0 +1,229 @@
+% Part: proof-theory
+% Chapter: proof-search
+% Section: tableaux
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{ps}{tab}
+
+\olsection{टॅब्लो}
+
+टॅब्लो पद्धती या क्रमवर्ती-कलनाशी जवळून
+संबंधित !!{proof} पद्धती आहेत. हाताने किंवा
+संगणकीय अंमलबजावणीत सिद्धता-शोधासाठी त्या विशेष
+सोयीच्या आहेत. टॅब्लोत क्रमवर्तींचे वृक्ष न बांधता
+!!a{proof} ही !!{formula}s चा वृक्ष असते.
+पण नैसर्गिक निगमनापेक्षा वेगळे म्हणजे त्यांचे नियम
+क्रमवर्ती-कलनाच्या नियमांशी जुळतात. टॅब्लो
+!!{proof} म्हणजे मूलतः प्रतिमानाचा स्पष्ट शोध.
+म्हणून त्यांना कधी \emph{चिन्हार्थविषयक} टॅब्लो,
+तर कधी \emph{सत्यता-वृक्ष} म्हणतात.
+
+\emph{चिन्हांकित} टॅब्लो हा चिन्हांकित
+!!{formula}s चा वृक्ष आहे. चिन्हांकित सूत्राचे रूप
+$\sFmla{\True}{!A}$ किंवा~$\sFmla{\False}{!A}$
+असे असू शकते. वृक्ष खालच्या दिशेने वाढतात.
+सुरुवातीला आपल्याला काय !!{prove} करायचे ते
+दर्शवणारी !!{formula}s असतात. उदाहरणार्थ,
+$!A, !B \Sequent !C, !D$ !!{prove} करण्यासाठी
+वृक्षाची सुरुवात
+$\sFmla{\True}{!A}, \sFmla{\True}{!B},
+\sFmla{\False}{!C}, \sFmla{\False}{!D}$ अशी
+होईल. ~$!A$ आणि~$!B$ सत्य, पण~$!C$ आणि~$!D$
+असत्य ठरवणारी !!^a{structure} म्हणजे
+$!A, !B \Sequent !C, !D$ अवैध असल्याचे
+दाखवणारी !!a{structure}.
+
+टॅब्लोचे तळाचे पानशिखर शाखा-विस्तार
+नियमांनी वाढवता येते. हे नियम त्याच शाखेत नवी
+शिखरे जोडतात किंवा खाली दोन भावंड शिखरे जोडून
+शाखा दोन नव्या शाखांत विभागतात. त्याच शाखेतील
+त्या शिखराच्या वरच्या कोणत्याही चिन्हांकित
+!!{formula} ला नियम लागू करता येतात. अभिजात
+टॅब्लो पद्धत~\Log{Tc} साठीचे शाखा-विस्तार नियम
+\olref{tab:Tc} मध्ये दिले आहेत.
+
+\subfile{rules-Tc}
+
+नियम म्हणजे~\Log{G3c} चेच नियम उलटे
+दाखवले आहेत. चिन्हे~$\True$ आणि~$\False$
+अनुक्रमे क्रमवर्तीच्या डाव्या किंवा उजव्या बाजूला
+!!a{formula} मुख्य आहे हे दर्शवतात.
+
+टॅब्लोची शाखा~$\sFmla{\True}{!A}$ आणि
+$\sFmla{\False}{!A}$ ही दोन्ही सूत्रे धरत असेल,
+तर ती \emph{बंद} आहे. प्रत्येक शाखा बंद असेल,
+तर संपूर्ण टॅब्लो बंद म्हणतो. उदाहरणार्थ,
+$!A \lor (!B \land !C) \Sequent (!A \lor !B) \land
+(!A \lor !C)$ साठी हा बंद टॅब्लो आहे; म्हणजे
+$\sFmla{\True}{!A \lor (!B \land !C)}$ आणि
+$\sFmla{\False}{(!A \lor !B) \land (!A \lor !C)}$
+यांपासून सुरुवात होते:
+\begin{oltableau}
+  [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\formula{A} \lor \formula{B}) \land
+        (\formula{A} \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{B}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{C}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+      ]
+      [\sFmla{\True}{\formula{B} \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}, checked
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\True}{\formula{B}},
+            just={\TRule{\True}{\land}[3]}, move by=2
+            [\sFmla{\True}{\formula{C}},
+              just={\TRule{\True}{\land}[3]}
+              [\sFmla{\False}{\formula{A}},
+                just={\TRule{\False}{\lor}[4]}
+                [\sFmla{\False}{\formula{B}},
+                  just={\TRule{\False}{\lor}[4]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\True}{\formula{B}},
+            just={\TRule{\True}{\land}[3]}, move by=2
+              [\sFmla{\True}{\formula{C}},
+                just={\TRule{\True}{\land}[3]}
+                [\sFmla{\False}{\formula{A}},
+                  just={\TRule{\False}{\lor}[4]}
+                  [\sFmla{\False}{\formula{C}},
+                  just={\TRule{\False}{\lor}[4]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+
+खूणा दर्शवतात की संबंधित नियम त्या
+!!a{formula} च्या खालच्या सर्व शाखांवर लागू
+केला आहे. ~$\otimes$ हे चिन्ह शाखा बंद असल्याचे
+दर्शवते. नियमानंतरच्या ओळ-क्रमांकांवरून नियम
+कोणत्या चिन्हांकित !!{formula}s ला लागू केला
+हे कळते (म्हणजे दर्शवलेल्या ओळीवरील त्याच
+शाखेतील !!{formula} ला).
+
+टॅब्लोमध्ये सिद्धता-शोध सोपा असतो.
+टॅब्लो टप्प्याटप्प्याने तयार करतो. ~$0$ व्या
+टप्प्यावर सुरुवातीची !!{formula}s वर लिहा.
+~$n+1$ व्या टप्प्यावर प्रत्येक पानशिखरासाठी
+पुढील कृती करा: अद्याप खूण न केलेले सर्वांत
+पहिले (सर्वांत वरचे) चिन्हांकित सूत्र शोधा.
+त्याला शाखा-विस्तार नियम लावा. तो चिन्हांकित
+सूत्र असलेल्या प्रत्येक शाखेवर नियम लागू झाल्यावर
+त्याला खूण करा. (वरचे उदाहरण याच अल्गोरिदमने
+बनवले आहे.)
+
+~$\sFmla{\True}{\lforall}$ आणि
+$\sFmla{\False}{\lexists}$ या रूपातील
+चिन्हांकित !!{formula}s वर खूण कधीच करत नाही;
+म्हणून त्यांना विशेष पद्धतीने हाताळावे लागते.
+ती असतील, तर~$\TRule{\True}{\forall}$ आणि
+$\TRule{\False}{\lexists}$ हे नियम लागू पडणाऱ्या
+सर्व पदांसाठी अखेरीस लावले जातील याची खात्री
+करावी लागते. उदाहरणार्थ, प्रत्येक टप्प्यावर,
+त्या रूपातील नसलेले सर्वांत वरचे चिन्हांकित
+!!{formula} हाताळल्यानंतर, प्रत्येक शाखेवरील
+अशा सर्व सूत्रांना हे नियम लावता येतील.
+वापरायचे पद~$t$ हे शाखेत आधीपासून असलेल्या
+!!{constant}s पासून (एकही !!{constant} नसेल,
+तर~$\Obj c_0$ पासून) आणि सुरुवातीच्या
+!!{formula}s मधील !!{function}s पासून
+बनवता येणारे पहिले पद~$t$ असते; तसेच अनुरूप
+चिन्हांकित !!{formula}
+$\sFmla{\True}{!B(t)}$ किंवा~$\sFmla{\False}{!B(t)}$
+त्या शाखेत आधीपासून नसते.
+
+या सिद्धता-शोधातून बंद टॅब्लो मिळाला नाही,
+तर त्यात सांत खुली शाखा असते, जिच्यावरील सर्व
+अनणुरूप !!{formula}s वर खूण झालेली असते;
+किंवा शोध अनंत, सांत-शाखित वृक्ष तयार करतो,
+ज्यात अनंत शाखा असतेच. \olref[cpl]{sec}
+प्रमाणे, अशी !!a{structure}~$\Struct{M}$ बांधू की
+शाखेवर~$\sFmla{\True}{!A}$ असेल, तर
+$\Sat{M}{!A}$, आणि~$\sFmla{\False}{!A}$
+असेल, तर~$\Sat/{M}{!A}$. (येथे
+$\Theta = \Setabs{!A}{\sFmla{\True}{!A} \text{ शाखेवर}}$
+आणि~$\Xi = \Setabs{!A}{\sFmla{\False}{!A} \text{ शाखेवर}}$
+घ्या.)
+
+या पद्धतीने तयार झालेले टॅब्लो प्रत्येक
+शिखराला क्रमवर्ती देऊन~\Log{G3c} मधील सिद्धतांमध्ये
+सहज रूपांतरित करता येतात. सुरुवातीची
+सूत्रे ही~$\Gamma \Sequent \Delta$
+क्रमवर्तीशी संबंधित असतील, तर त्या प्रत्येक
+सूत्राला~$\Gamma \Sequent \Delta$ ही खूण द्या.
+~$\sFmla{\True}{!A}$ या चिन्हांकित !!{formula}
+वर शाखा-विस्तार नियम लावून शाखा वाढवली, तर
+पानाला~$!A, \Pi \Sequent \Lambda$ ही खूण द्या;
+~$\sFmla{\False}{!A}$ या चिन्हांकित !!{formula}
+वर नियम लावला,
+तर पानाला~$\Pi \Sequent \Lambda, !A$ ही खूण द्या.
+टॅब्लोत~\TRule{\True}{\star} नियम वापरला,
+तर क्रमवर्तीवर~\LeftR{\star} नियम लावा
+(मुख्य सूत्र~$!A$);~\TRule{\False}{\star}
+वापरला असेल, तर~\RightR{\star} लावा.
+नियमाची आधारविधाने ही टॅब्लोत नव्याने
+जोडलेल्या अनुरूप शिखरांना दिलेल्या क्रमवर्ती आहेत.
+~$\sFmla{\True}{!A}$ आणि~$\sFmla{\False}{!A}$
+यांनी टॅब्लो बंद झाल्यावर अंतिम पानशिखराची
+खूण~$!A, \Pi \Sequent \Lambda, !A$
+या रूपातील क्रमवर्ती असेल. टॅब्लोतील काही सलग
+शिखरांना तीच क्रमवर्ती दिली जाईल; तिच्या
+पुनरावृत्ती काढा. उदाहरणार्थ, वरच्या टॅब्लोचे
+पुढील !!{proof} मध्ये रूपांतर होते:
+\[\small
+\Axiom$!A \fCenter !A, !B$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!A \fCenter !A \lor !B$
+\Axiom$!A \fCenter !A, !C$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!A \fCenter !A \lor !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!A \fCenter (!A \lor !B) \land (!A \lor !C)$
+\Axiom$!B, !C \fCenter !A, !B$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!B, !C \fCenter !A \lor !B$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C \fCenter !A \lor !B$
+\Axiom$!B, !C \fCenter !A, !C$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!B, !C \fCenter !A \lor !C$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C \fCenter !A \lor !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!B \land !C \fCenter (!A \lor !B) \land
+(!A \lor !C)$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$!A \lor (!B \land !C) \fCenter (!A \lor !B) \land
+(!A \lor !C)$
+\DisplayProof
+\]
+
+\end{document}

@@ -68,6 +68,11 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0684': [
+        # OLINC-409: a countermodel makes both right-side formulas false.
+        (r'\sFmla{\False}{!C}, \sFmla{\False}{!D}$ अशी',
+         r'\sFmla{\False}{!C}, \sFmla{\True}{!D}$ अशी'),
+    ],
     'OLP-0683': [
         # OLINC-406: new formulas require indices above the old maximum k.
         (r'\Axiom$!B^{k+1}, !C^{k+2}, \Pi \fCenter \Lambda$',
