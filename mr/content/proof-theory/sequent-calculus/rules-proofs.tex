@@ -1,0 +1,202 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: rules-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{rp}
+
+\olsection{नियम आणि \usetoken{P}{proof}}
+
+आधी काही व्याख्या देऊ आणि काही संज्ञांचा अर्थ निश्चित करू.
+
+उदाहरणार्थ, $!A$ आणि~$!B$ असलेल्या क्रमवर्तींपासून
+$!A \land !B$ असलेल्या क्रमवर्ती !!{proving} करू देणारे \Log{G3c} मधील
+दोन नियम पाहा:
+\[
+\Axiom$ !A, !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\qquad
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$ \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \Gamma \fCenter \Delta, !A \land !B $
+\DisplayProof
+\]
+रेषेच्या वरच्या क्रमवर्तींना \emph{आधारविधाने}, तर खालच्या
+क्रमवर्तीला \emph{निष्कर्ष} म्हणतात. प्रत्येक नियमातील
+$\Gamma$ आणि $\Delta$ यांतील !!{formula}s ना \emph{संदर्भ}
+किंवा \emph{बाजूची !!{formula}s} म्हणतात. निष्कर्षातील
+संदर्भाबाहेरचे !!{formula} हे \emph{मुख्य} !!{formula} असते;
+आणि आधारविधानांतील संदर्भाबाहेरच्या !!{formula}s ना
+\emph{सक्रिय} (किंवा \emph{सहायक}) !!{formula}s म्हणतात.
+
+परिमाणकांचे नियम थोडे अधिक गुंतागुंतीचे आहेत. उदाहरणार्थ,
+$\lforall$ साठीचे \Log{G1c} मधील नियम असे आहेत:
+\[\Axiom$ !A(t), \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$ \lforall[x][!A(x)],\Gamma \fCenter \Delta$
+\DisplayProof
+\qquad
+\Axiom$ \Gamma \fCenter \Delta, !A(a) $
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+\DisplayProof
+\]
+\LeftR{\lforall} नियमातील सक्रिय !!{formula} हे~$!A(t)$ आहे;
+येथे $t$ हे बंद पद, म्हणजे चर नसलेले पद, आहे. एखादे
+निगमन योग्य असते—म्हणजे ते \LeftR{\lforall} या
+रूपरेषात्मक नियमाशी जुळते—जर एखादे !!{formula}~$!A$,
+चर~$x$ आणि बंद पद~$t$ असे असतील की निष्कर्षातील मुख्य
+!!{formula} $\lforall[x][!A]$ असेल आणि आधारविधानातील
+सक्रिय !!{formula} हे~$\Subst{!A}{t}{x}$ असेल.
+\RightR{\lforall} नियमही याचप्रमाणे कार्य करतो; मात्र
+कोणत्याही $t$ पदाऐवजी आधारविधानातील सक्रिय !!{formula}
+$\Subst{!A}{a}{x}$ असे असले पाहिजे, जेथे $a$ हा
+!!a{constant} आहे. या अचराला \RightR{\lforall}
+निगमनाचा \emph{आयगेन चर} म्हणतात. खालच्या क्रमवर्तीमध्ये
+$a$ येत नसेल—म्हणजेच $\Gamma$, $\Delta$ किंवा~$!A$
+यांत $a$ नसेल—तरच हे निगमन योग्य असते. ही
+\emph{आयगेन चराची अट} होय.
+
+\Log{G1c} आणि \Log{G3c} यांसारख्या क्रमवर्ती पद्धतींत अशा
+रूपरेषात्मक रीतीने दिलेल्या नियमांचा संग्रह आणि स्वयंसिद्धके
+म्हणून ग्राह्य अशा, त्याच रीतीने दिलेल्या, काही क्रमवर्ती असतात.
+अशा पद्धतीतील !!^{proof}s म्हणजे स्वयंसिद्धकांपासून निगमन नियमांनी
+आगमनाने तयार होणारे क्रमवर्तींचे सान्त वृक्ष. प्रत्येक पान
+स्वयंसिद्धक असते; आणि इतर प्रत्येक क्रमवर्ती तिच्या लगेच
+वरच्या क्रमवर्तींपासून पद्धतीतील एका निगमन नियमाने मिळते.
+
+\begin{defn}\ollabel{defn:proof}
+क्रमवर्ती पद्धतीतील \emph{!!^{proof}s} म्हणजे खालीलप्रमाणे
+आगमनाने बनवलेले क्रमवर्तींचे सान्त वृक्ष:
+\begin{enumerate}
+  \item\ollabel{defn:prf:axiom} प्रत्येक स्वयंसिद्धक ही !!a{proof} असते.
+  \item\ollabel{defn:prf:one-prem} $\pi_1$ ही $S_1$ या क्रमवर्तीवर
+  संपणारी !!a{proof} असेल आणि $S_1$ पासून एका आधारविधानाच्या
+  $R$ नियमाने $S$ ही क्रमवर्ती मिळत असेल, तर
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \DeduceC{$S_1$}
+  \RightLabel{$R$}
+  \UnaryInfC{$S$}
+  \DisplayProof
+  \]
+  ही !!a{proof} असते.
+  \item\ollabel{defn:prf:two-prem} $\pi_1$ आणि $\pi_2$ या
+  अनुक्रमे $S_1$ आणि~$S_2$ या क्रमवर्तींवर संपणाऱ्या !!{proof}s
+  असतील, आणि $S_1$ व $S_2$ यांच्यापासून दोन आधारविधानांच्या $R$ नियमाने
+  $S$ मिळत असेल, तर
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \DeduceC{$S_1$}
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \DeduceC{$S_2$}
+  \RightLabel{$R$}
+  \BinaryInfC{$S$}
+  \DisplayProof
+  \]
+  ही !!a{proof} असते.
+\end{enumerate}
+\end{defn}
+
+\Olref{defn:proof} मध्ये !!{proof}s ची व्याख्या क्रमवर्तींचे वृक्ष म्हणून
+दिली आहे. हे वृक्ष ``वरच्या दिशेने वाढतात असे आपण मानतो.
+सर्वांत वरची (पानांवरील) स्थाने स्वयंसिद्धके असतात; त्यांना
+\emph{आरंभीच्या क्रमवर्ती} म्हणतात. सर्वांत खालची क्रमवर्ती
+\emph{अंतिम क्रमवर्ती} असते. $\pi$ ही $S$ अंतिम क्रमवर्ती
+असलेली !!a{proof} असेल तर $\pi \Proves S$ असेही लिहितो.
+$S$ ची !!a{proof} असेल तर $\Proves S$ असे लिहितो; काही वेळा
+ज्या पद्धतीत सिद्धता आहे तीही $\Proves$ च्या डावीकडे दाखवतो,
+उदा., $\Log{G1c} \Proves !A, !B \Sequent !A \land
+!B$. आरंभीच्या क्रमवर्ती वगळता !!a{proof} मधील प्रत्येक
+क्रमवर्ती एखाद्या $R$ नियमाने झालेल्या निगमनाचा
+\emph{निष्कर्ष} असते. !!a{proof} मधील एखाद्या क्रमवर्तीच्या
+लगेच वर असलेल्या एक किंवा दोन क्रमवर्तींना (वृक्षातील तिच्या
+पालक-स्थानांना) त्या निगमनाची \emph{आधारविधाने} म्हणतात.
+
+एखादी !!a{proof} आगमनाने बनवताना वापरलेल्या !!{proof}s ना तिच्या
+\emph{उप-!!{proof}s} म्हणतात. एखाद्या निगमनाच्या आधारविधानांवर
+संपणाऱ्या उप-!!{proof}s ना त्या निगमनाच्या \emph{लगेचच्या
+उप-!!{proof}s} म्हणतात.
+
+अनेकदा !!{proof}s ची गुंतागुंत एखाद्या नैसर्गिक संख्येने
+मोजावी लागते. !!a{proof} मधील क्रमवर्तींची संख्या मोजता येईल;
+पण अनेकदा अधिक उपयोगी मोजमाप म्हणजे !!a{proof} ची !!{height}:
+अंतिम क्रमवर्तीपासून आरंभीच्या क्रमवर्तीपर्यंतच्या सर्वाधिक
+निगमन-पायऱ्यांची संख्या. तिची आगमनात्मक व्याख्याही देता येते.
+
+\begin{defn}
+!!a{proof}~$\pi$ ची \emph{!!{height}}~$\pheight{\pi}$ पुढीलप्रमाणे
+आगमनाने ठरते.
+\begin{enumerate}
+  \item $\pi$ मध्ये एकच स्वयंसिद्धक असेल, तर $\pheight{\pi} = 0$.
+  \item $\pi$ चा शेवट एका आधारविधानाच्या निगमनाने होत असेल आणि
+  तिची लगेचची उप-!!{proof}~$\pi_1$ असेल, तर $\pheight{\pi} = \pheight{\pi_1} + 1$.
+  \item $\pi$ चा शेवट दोन आधारविधानांच्या निगमनाने होत असेल आणि
+  तिच्या लगेचच्या उप-!!{proof}s~$\pi_1$ आणि~$\pi_2$ असतील, तर $\pheight{\pi} =
+  \max(\pheight{\pi_1}, \pheight{\pi_2}) + 1$.
+\end{enumerate}
+$S$ या क्रमवर्तीची $\le n$ उंचीची !!a{proof} असेल, तर $\Proves[n] S$ असे लिहितो.
+\end{defn}
+
+\begin{ex}
+\Log{G3c} मध्ये $!C, \Gamma \Sequent \Delta, !C$ या रूपाची
+प्रत्येक क्रमवर्ती स्वयंसिद्धक असते; येथे $!C$ अण्वीय असले पाहिजे.
+$!D$ आणि $!E$ ही अण्वीय वाक्ये असोत. मग $!D, !E \Sequent !D$
+आणि $!D, !E \Sequent !E$ ही $!C, \Gamma \Sequent \Delta, !C$
+या स्वयंसिद्धकाची उदाहरणे आहेत. उदाहरणार्थ, $!C \ident !E$,
+$\Gamma = \{!D\}$ आणि $\Delta = \emptyset$ घेतल्यास
+$!C, \Gamma \Sequent \Delta, !C$ पासून नेमकी $!D, !E
+\Sequent !E$ ही क्रमवर्ती मिळते. (लक्षात घ्या, आपण \emph{बहुसंच} वापरतो;
+म्हणून $!D, !E \Sequent !E$ आणि $!E, !D \Sequent !E$ या एकाच
+क्रमवर्ती आहेत.)
+
+$!D, !E \Sequent !D$ ही \Log{G3c} च्या स्वयंसिद्धकाचे उदाहरण
+असल्यामुळे ती स्वतःच \Log{G3c} मधील !!a{proof} असते. त्याचप्रमाणे
+$!D, !E \Sequent !E$ हीही \olref{defn:proof}\olref{defn:prf:axiom}
+नुसार तशीच असते. त्यांना अनुक्रमे $\pi_1$ आणि~$\pi_2$ म्हणू.
+\olref{defn:prf:two-prem} नुसार, या दोन !!{proof}s घेऊन
+दोन आधारविधानांच्या $\RightR{\land}$ नियमाने नवी सिद्धता
+($\pi_3$) तयार करता येते:
+\[
+\Axiom$!D, !E \fCenter !D$
+\Axiom$!D, !E \fCenter !E$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!D, !E  \fCenter !D \land !E $
+\DisplayProof
+\]
+$\pi_3$ पासून पुढे !!{proof}~$\pi_4$ मिळते:
+\[
+\Axiom$!D, !E \fCenter !D$
+\Axiom$!D, !E \fCenter !E$
+\RightLabel{\RightR{\land}}
+\insertBetweenHyps{\hspace{5ex}}
+\BinaryInf$!D, !E  \fCenter !D \land !E $
+\LeftSubproofLabel{$\pi_3$}
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!D \land !E  \fCenter !D \land !E$
+\RightSubproofLabel{$\pi_4$}
+\DisplayProof
+\]
+येथे एका आधारविधानाचा $\LeftR{\land}$ नियम वापरला आहे
+(\olref{defn:proof}\olref{defn:prf:one-prem} नुसार). $\pi_4$ मधील
+शेवटच्या निगमनाची लगेचची उप-!!{proof} ही~$\pi_3$ आहे.
+$\RightR{\land}$ निगमनाच्या लगेचच्या उप-!!{proof}s $\pi_1$
+आणि~$\pi_2$ आहेत. $\pi_4$ च्या उप-!!{proof}s मध्ये $\pi_1$,
+$\pi_2$, $\pi_3$ आणि स्वतः $\pi_4$ यांचा समावेश होतो.
+$\pheight{\pi_1} = \pheight{\pi_2} = 0$,
+$\pheight{\pi_3} = 1$ आणि $\pheight{\pi_4} = 2$.
+म्हणून कोणत्याही अण्वीय $!D$ आणि~$!E$ साठी
+$\Log{G3c} \Proves[2] !D \land !E  \fCenter !D
+\land !E$ हे दाखवले आहे.
+\end{ex}
+
+\end{document}

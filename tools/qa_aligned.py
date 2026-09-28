@@ -68,6 +68,12 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0711': [
+        # OLINC-467: multiset order does not change the succedent formula.
+        (r'$!E, !D \Sequent !E$', r'$!E, !D \Sequent !D$'),
+        # OLINC-469: the constructed proof has height two, as computed above.
+        (r'\Proves[2] !D \land !E', r'\Proves[4] !D \land !E'),
+    ],
     'OLP-0710': [
         # OLINC-464: distinguish the mG3i table from G3c.
         (r'\ollabel{tab:mG3i}', r'\ollabel{tab:G3c}'),
