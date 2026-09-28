@@ -68,6 +68,28 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0687': [
+        # OLINC-413: the disjunction redex has component types A_1 and A_2.
+        (r'\len{!A_1} + \len{!A_2} + 1',
+         r'\len{!A} + \len{!B} + 1'),
+        # OLINC-414: remove the stray closing parenthesis in the rank formula.
+        (r'\cutrank{\Subst{M}{N}{x}} = \len{!A}$',
+         r'\cutrank{\Subst{M}{N}{x}} = \len{!A})$'),
+        # OLINC-415: cut rank belongs to the newly formed redex, not x.
+        (r'\cutrank{\ande{i}{\andi{P_1}{P_2}}}', r'\cutrank{x}'),
+        # OLINC-417: projecting the first pair component yields O_1'.
+        ("त्याचेही\n  $O_1'$ मध्ये", "त्याचेही\n  $O_2$ मध्ये"),
+        # OLINC-418: N_1' and N_1'' must be first successors of N.
+        (r"N & \redone N_1' \redone", r"N & = N_1' \redone"),
+        (r"N & \redone N_1'' \redone", r"N & = N_1'' \redone"),
+        # OLINC-420: strong normalization applies to one-step redone.
+        (r'दुसऱ्या शब्दांत, $\redone$ प्रबळ सामान्यीकारी',
+         r'दुसऱ्या शब्दांत, $\red$ प्रबळ सामान्यीकारी'),
+        (r'$\redone$ प्रबळ सामान्यीकारी असेल',
+         r'$\red$ प्रबळ सामान्यीकारी असेल'),
+        (r'$\redone$ प्रबळ सामान्यीकारी असल्यामुळे प्रत्येक पूर्ण',
+         r'$\red$ प्रबळ सामान्यीकारी असल्यामुळे प्रत्येक पूर्ण'),
+    ],
     'OLP-0684': [
         # OLINC-409: a countermodel makes both right-side formulas false.
         (r'\sFmla{\False}{!C}, \sFmla{\False}{!D}$ अशी',
