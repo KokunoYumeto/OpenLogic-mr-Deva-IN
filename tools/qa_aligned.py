@@ -68,6 +68,11 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0707': [
+        # OLINC-457: separate the retained universal formula from Γ.
+        (r'\Axiom$ !A(t), \lforall[x][!A(x)], \Gamma \fCenter \Delta$',
+         r'\Axiom$ !A(t), \lforall[x][!A(x)]\Gamma \fCenter \Delta$'),
+    ],
     'OLP-0705': [
         # OLINC-456: give the G1i table its own identifier.
         (r'\ollabel{tab:G1i}', r'\ollabel{tab:G1c}'),
