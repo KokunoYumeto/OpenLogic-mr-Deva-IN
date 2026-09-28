@@ -68,6 +68,16 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0688': [
+        # OLINC-422: the second premise is labelled M, not lowercase m.
+        (r'\fCenter c^\land(N, M) : !A \land !B',
+         r'\fCenter c^\land(N, m) : !A \land !B'),
+        # OLINC-423: the sum constructor must contain premise term N.
+        (r'c^{\lor{!B}}_1(N):!A \lor !B',
+         r'c^{\lor{!B}}_1:!A \lor !B'),
+        # OLINC-424: N is the proof-term premise, not formula-marked M.
+        (r'\inj[!A]{i}{N}', r'\inj[!A]{i}{!M}'),
+    ],
     'OLP-0687': [
         # OLINC-413: the disjunction redex has component types A_1 and A_2.
         (r'\len{!A_1} + \len{!A_2} + 1',
