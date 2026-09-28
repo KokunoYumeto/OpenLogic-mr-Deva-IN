@@ -59,8 +59,25 @@ with sync_playwright() as playwright:
         }""")
         screenshot = BUILD / f"HTML_BROWSER_{label.upper()}.png"
         page.screenshot(path=str(screenshot))
+        detail_screenshot = None
+        if label == "desktop":
+            glyph = page.locator("img.math-glyph").first
+            glyph.scroll_into_view_if_needed()
+            page.wait_for_timeout(300)
+            detail_screenshot = BUILD / "HTML_BROWSER_MATH_GLYPH.png"
+            page.screenshot(path=str(detail_screenshot))
+        else:
+            page.evaluate("""() => {
+              const longMath = [...document.querySelectorAll('math')]
+                .find(m => m.scrollWidth > m.clientWidth + 50);
+              if (longMath) longMath.scrollIntoView({block:'center'});
+            }""")
+            page.wait_for_timeout(1000)
+            detail_screenshot = BUILD / "HTML_BROWSER_WIDE_MATH.png"
+            page.screenshot(path=str(detail_screenshot))
         measure = {"name": label, "width": width, "height": height, **measures,
-                   "page_errors": console_errors, "screenshot": str(screenshot)}
+                   "page_errors": console_errors, "screenshot": str(screenshot),
+                   "detail_screenshot": str(detail_screenshot)}
         report["viewports"].append(measure)
         context.close()
     browser.close()
