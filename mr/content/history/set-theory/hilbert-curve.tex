@@ -1,0 +1,104 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{his}{set}{hilbertcurve}
+
+\olsection{परिशिष्ट: हिल्बर्ट यांचे अवकाश भरणारे वक्र}
+
+रेषा आणि चौरस यांवर नेमके सारखेच बिंदू असतात, या कँटर यांच्या सिद्धतेमुळे (\olref[his][set][cantorplane]{thm:cantorplane}) अवकाश भरणारा \emph{वक्र} असू शकेल का, हा प्रश्न पियानो यांना कसा पडला, याचा उल्लेख आपण \olref[pathology]{sec} मध्ये केला होता. १८९० मध्ये पियानो यांना त्याचे होकारार्थी उत्तर मिळाले. या विभागात हिल्बर्ट यांचा अवकाश भरणारा वक्र (एका लहानशा बदलासह) कसा रचता येतो, हे अनौपचारिक रीतीने स्पष्ट करू.\footnote{अधिक काटेकोर स्पष्टीकरणासाठी \cite{Rose2010} पाहा. या बदलात खालील वक्रांचे लाल भाग समाविष्ट केले आहेत. त्यामुळे वक्र सतत आहे हे तपासणे थोडे सोपे होते.}
+
+$h$ हे फलन $h_1$, $h_2$, $h_3$, \dots\@ या फलन-अनुक्रमाची सीमा म्हणून व्याख्यित करायचे आहे. प्रथम रचनेचे वर्णन करू. मग ती रचना अवकाश भरते हे दाखवू. त्यानंतर ती खरोखर वक्र आहे हे दाखवू.
+
+$h$ चा लक्ष्यसंच एकक चौरस $\unitsquare$ घेऊ. $h$ चे पहिले सन्निकटन, म्हणजे $h_1$, असे दिसते:
+\begin{center}
+	\begin{tikzpicture}
+	\draw[gray] (0pt, 0pt) rectangle (80pt, 80pt);
+	\draw[step = 40pt, gray, very thin] (0pt, 0pt) grid (80pt, 80pt);
+	\draw[oldiagcolorC, thick] (20pt, 0)--(20pt, 20pt);
+	\draw[oldiagcolorC, thick] (60pt, 0)--(60pt, 20pt);
+	\begin{scope}[xshift=20pt, yshift=20pt]
+	\draw [black, thick, l-system={Hilbert curve, step=40pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\end{tikzpicture}
+\end{center}
+रचनेचा मागोवा घेण्यासाठी चौरसावर $2 \times 2$ जाळी आखली आहे. वक्राची सुरुवात खालच्या डाव्या चतुर्थांशात होते, तो वरच्या डाव्या, मग वरच्या उजव्या आणि शेवटी खालच्या उजव्या चतुर्थांशात जातो, असे मानता येते. रचनेचा दुसरा टप्पा, म्हणजे $h_2$, असा आहे:
+\begin{center}
+	\begin{tikzpicture}
+	\draw[gray] (0pt, 0pt) rectangle (80pt, 80pt);
+	\draw[step = 20pt, gray, very thin] (0pt, 0pt) grid (80pt, 80pt);
+	\draw[oldiagcolorC, thick] (0pt, 10pt)--(10pt, 10pt);
+	\draw[oldiagcolorC, thick] (70pt, 10pt)--(80pt, 10pt);
+	\draw[thick, oldiagcolorE] (10pt, 30pt)--(10pt, 50pt);
+	\draw[thick, oldiagcolorE] (30pt, 50pt)--(50pt, 50pt);
+	\draw[thick, oldiagcolorE] (70pt, 50pt)--(70pt, 30pt); \begin{scope}[xshift=10pt, yshift=30pt]
+	\draw [thick, rotate=270,black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=10pt, yshift=50pt]
+	\draw [thick, black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=50pt, yshift=50pt]
+	\draw [thick, black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=70pt, yshift=10pt]
+	\draw [thick, rotate=90,black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\end{tikzpicture}
+\end{center}
+$h_2$ कसा रचला ते वेगवेगळ्या रंगांमुळे स्पष्ट होते. प्रथम $h_1$ च्या !!{colorC} नसलेल्या भागाच्या लहान प्रमाणातील प्रती चौरसाच्या खालच्या डाव्या, वरच्या डाव्या, वरच्या उजव्या आणि खालच्या उजव्या भागांत ठेवतो (त्या काळ्या रंगात दाखवल्या आहेत). मग या चार आकृत्या एकमेकांना (!!{colorE} रेषांनी) जोडतो. शेवटी संपूर्ण आकृती चौरसाच्या सीमेला (!!{colorC} रेषांनी) जोडतो.
+
+आता $h_3$ पाहू. $h_1$ च्या लाल नसलेल्या भागाच्या एकमेकांना जोडलेल्या चार लहान प्रती वापरून $h_2$ जसा तयार केला, तसाच $h_2$ च्या लाल नसलेल्या भागाच्या चार लहान प्रतींमधून $h_3$ तयार होतो (प्रती काळ्या रंगात दाखवल्या आहेत). नंतर त्या (!!{colorE} रेषांनी) जोडल्या जातात आणि शेवटी चौरसाच्या सीमेला (!!{colorC} रेषांनी) जोडल्या जातात.
+\begin{center}
+	\begin{tikzpicture}
+	\draw[gray] (0pt, 0pt) rectangle (80pt, 80pt);
+	\draw[step = 10pt, gray, very thin] (0pt, 0pt) grid (80pt, 80pt);
+	\draw[thick, oldiagcolorC](5pt, 0pt)--(5pt, 5pt);
+	\draw[thick, oldiagcolorC] (75pt, 0pt)--(75pt, 5pt);
+	\draw[thick, oldiagcolorE] (75pt, 45pt)--(75pt, 35pt);
+	\draw[thick, oldiagcolorE] (5pt, 35pt)--(5pt, 45pt);
+	\draw[thick, oldiagcolorE] (35pt, 45pt)--(45pt, 45pt);
+	\draw[thick, oldiagcolorE] (75pt, 45pt)--(75pt, 35pt); \begin{scope}[xshift=5pt, yshift=35pt]
+	\draw [rotate=270, thick, black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=5pt, yshift=45pt]
+	\draw [thick, black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=45pt, yshift=45pt]
+	\draw [thick, black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=75pt, yshift=5pt]
+	\draw [thick, rotate=90,black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\end{tikzpicture}
+\end{center}
+आता $h_n$ वरून $h_{n+1}$ व्याख्यित करण्याचा सर्वसाधारण नमुना दिसतो. अखेरीस या पुढील फलनांच्या $h_1$, $h_2$, \dots\@ बिंदुनिहाय सीमेने वक्र $h$ ची \emph{स्वतःची} व्याख्या करतो. म्हणजे प्रत्येक $x \in \unitline$ साठी:
+\begin{align*}
+	h(x) &= \lim_{n \rightarrow \infty} h_n(x)
+\end{align*}
+%READERNOTE{OLINC-317: स्रोताने येथे x चा प्रांत चौरस दिला; h चा प्रांत एकक रेषा आहे.}
+आता हा वक्र अवकाश भरतो हे दाखवू. $h_n$ काढताना $\unitsquare$ वर $2^n \times 2^n$ जाळी आखतो. पायथागोरसच्या प्रमेयानुसार प्रत्येक जाळी-घराच्या कर्णाची लांबी:
+\[
+\sqrt{\left(\nicefrac{1}{2^{n}}\right)^2+\left(\nicefrac{1}{2^{n}}\right)^2} = 2^{(\frac{1}{2}-n)}
+\]
+असते आणि $h_n$ प्रत्येक जाळी-घरातून जातो, हे स्पष्ट आहे. म्हणून $\unitsquare$ मधील प्रत्येक बिंदू $h_n$ वरील एखाद्या बिंदूपासून \emph{जास्तीत जास्त} $2^{(\frac{1}{2}-n)}$ अंतरावर असतो. आता $h$ ची व्याख्या $h_1$, $h_2$, $h_3$, \dots\@ या फलनांची सीमा म्हणून केली आहे. त्यामुळे कोणत्याही बिंदूचे $h$ पासूनचे कमाल अंतर असे मिळते:
+\[
+\lim_{n \rightarrow \infty} 2^{(\frac{1}{2}-n)} = 0.
+\]
+म्हणजे $\unitsquare$ मधील प्रत्येक बिंदू $h$ पासून $0$ अंतरावर आहे. दुसऱ्या शब्दांत, $\unitsquare$ मधील प्रत्येक बिंदू वक्रावर \emph{असतो}. म्हणून $h$ अवकाश भरतो!{}
+%READERNOTE{OLINC-318: जाळी-घरांतून जाणारे h_n आणि बिंदुनिहाय सीमा एवढ्यावरून h ची प्रतिमा चौरसात सघन आहे हे सिद्ध होत नाही; समसमान अभिसरण किंवा समतुल्य नियंत्रण आवश्यक आहे.}
+
+आता $h$ हा खरोखर \emph{वक्र} आहे हे दाखवायचे आहे. त्यासाठी वक्राची संकल्पना व्याख्यित करावी लागेल. आधुनिक व्याख्या १८८७ मध्ये जॉर्डन यांनी दिलेल्या व्याख्येवर आधारलेली आहे (म्हणजे पहिला अवकाश भरणारा वक्र येण्याच्या अवघ्या काही वर्षांपूर्वीची).
+
+\begin{defn}
+वक्र म्हणजे $\unitline$ वरून $\Real^2$ मध्ये जाणारे सतत फलन.
+\end{defn}
+
+ही कल्पना बरीच सहज समजते: अंतर्ज्ञानाने वक्र म्हणजे एकक रेषेला $\Real^2$ या प्रतलावर नेणारे “अखंड” प्रतिचित्रण. आपले $h$ हे खरोखर $\unitline$ वरून $\Real^2$ मध्ये जाणारे फलन आहे. त्यामुळे $h$ सतत आहे हेच दाखवायचे उरते. \olref[limits]{sec} मध्ये आपण $\epsilon$/$\delta$ संकेताने सातत्य व्याख्यित केले. साध्या भाषेत पुढील गोष्ट सिद्ध करायची आहे: \emph{$\unitsquare$ मधील कोणताही बिंदू $p$ आणि हवी ती अचूकता $\epsilon$ दिल्यास, $\unitline$ मधील असा खुला भाग सापडतो की त्यातील कोणताही $x$ घेतल्यावर $h(x)$ हे $p$ पासून $\epsilon$ पेक्षा कमी अंतरावर असेल.}
+
+म्हणून $p$ आणि $\epsilon$ दिले आहेत असे माना. म्हणजे $\unitsquare$ वर $p$ केंद्र आणि $\epsilon$ त्रिज्या असलेले वर्तुळ काढल्यासारखे आहे. (वर्तुळाचा भाग $\unitsquare$ च्या बाहेर गेला तरी हरकत नाही.) आता आठवा: $h_n$ या फलनाचे वर्णन करताना आपण $\unitsquare$ वर $2^n \times 2^n$ जाळी आखली होती. $\epsilon$ कितीही लहान असला, तरी असा काही $n$ असतो की $\unitsquare$ वरील $2^n \times 2^n$ जाळीतील एखादे अख्खे घर $p$ केंद्र आणि $\epsilon$ त्रिज्या असलेल्या वर्तुळात बसते, हे स्पष्ट आहे.
+
+तो $n$ घ्या. $\unitline$ चा संबंधित जाळी-घरात $h_n$ ने पूर्णपणे पाठवला जाणारा सर्वात मोठा खुला भाग $I$ असू द्या. (असा $I=(a,b)$ खुला अंतराल अस्तित्वात आहे हे स्पष्ट आहे; कारण $h_n$ हा $2^n\times 2^n$ जाळीतील प्रत्येक घरातून जातो, असे आपण आधीच नोंदवले आहे.) आता $x \in I$ असताना $h(x)$ त्याच जाळी-घरात असतो, हे दाखवणे पुरेसे आहे. \emph{हे} दाखवण्यासाठी प्रत्येक $m > n$ साठी $h_m(x)$ त्याच जाळी-घरात असतो, हे दाखवणे पुरेसे आहे. हेही स्पष्ट आहे. $m > n$ असताना $h_m$ मध्ये काय होते ते पाहिल्यास एकक अंतरालाचा नेमका “तोच भाग” त्याच जाळी-घरात पाठवला जातो; मात्र त्या प्रदेशात तो अधिकाधिक ताणलेला आणि वळणावळणाचा होतो.
+%READERNOTE{OLINC-319: हा युक्तिवाद प्रत्येक p साठी कुठलातरी खुला I देतो; सातत्यासाठी दिलेल्या x0 ला समाविष्ट करणारा I आणि h(x0) भोवतीचे नियंत्रण आवश्यक आहे.}
+%READERNOTE{OLINC-320: स्रोतामध्ये I चा उल्लेख झाल्यावर असंबद्ध (a,b) आणि 'show to show' ही पुनरुक्ती आहे; मराठीत अंतरालाची ओळख स्पष्ट केली आहे.}
+
+\end{document}

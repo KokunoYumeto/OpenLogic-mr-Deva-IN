@@ -68,6 +68,12 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0639': [
+        # OLINC-317: h has the unit interval as domain, not the square.
+        (r'$x \in \unitline$', r'$x \in \unitsquare$'),
+        # OLINC-320: identify the interval that the source later names.
+        (r'$I=(a,b)$', r'$(a,b)$'),
+    ],
     'OLP-0635': [
         # OLINC-314: a limit at c uses a punctured neighborhood.
         (r'0 < |x - c| < \delta', r'|x - c| < \delta'),
