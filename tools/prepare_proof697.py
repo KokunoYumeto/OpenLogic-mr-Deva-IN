@@ -15,6 +15,14 @@ helpers = prior["helpers"]
 base = (BUILD / "openlogic-mr-proof.tex").read_text(encoding="utf-8")
 assert base.endswith("\\end{document}\n")
 base = base.removesuffix("\\end{document}\n")
+assert base.count(r"\usepackage{microtype}") == 1
+base = base.replace(
+    r"\usepackage{microtype}",
+    r"\usepackage{cleveref}" + "\n" +
+    r"\crefname{lem}{पूर्वप्रमेय}{पूर्वप्रमेये}" + "\n" +
+    r"\usepackage{microtype}",
+    1,
+)
 
 folder = ROOT / "mr/content/proof-theory/propositions-as-types"
 driver_path = folder / "propositions-as-types.tex"
