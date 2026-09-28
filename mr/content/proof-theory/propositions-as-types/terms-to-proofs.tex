@@ -1,0 +1,103 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: terms-to-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{tp}
+
+\olsection{सिद्धता-पदांवरून \usetoken{P}{derivation} पुन्हा मिळवणे}
+
+आता उलट दिशा पाहू: सिद्धता-पद~$N$ वरून
+\Log{N2i} मधील !!a{proof} पुन्हा मिळवणे.
+सर्वसाधारणपणे हे दिलेल्या सिद्धता-पदात मुक्त असलेल्या
+प्रत्येक चल~$x$ साठी $x : !A$ अशी जोडी धरणाऱ्या
+संदर्भाच्या सापेक्षच करता येते. पण आधी मुक्त चले
+नसलेले उदाहरण घेऊ, म्हणजे हे पद:
+\[
+\lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}]
+\]
+याचे रूप $\lambd[\typeof{x}{!A \land !B}][N_1]$ आहे.
+अशा रूपाचे पद निर्माण करणारा \Log{tN2i} चा
+एकमेव नियम~\Intro{\lif} असल्यामुळे~$N$ ने
+सांकेतिक केलेली !!{proof}~\Intro{\lif} वर संपली
+पाहिजे, म्हणजे तिचा शेवट असा आहे:
+\[
+  \Axiom$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} :
+    !C$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif !C$
+  \DisplayProof
+  \]
+$!C$ काय आहे हे अद्याप माहीत नाही; पण पूर्वांग
+$!A \land !B$ आहे, आणि आधारविधानाच्या संदर्भात
+$x:!A \land !B$ असलेच पाहिजे हे माहीत आहे.
+
+आता आधारविधानाशी संबंधित सिद्धता-पद निश्चित झाले आहे:
+$\pair{\proj{2}{x}}{\proj{1}{x}}$.
+\emph{त्याने} सांकेतिक केलेली !!{proof}~\Intro{\land}
+वर संपली पाहिजे. ~$!C$ काय आहे हे अजून माहीत
+नाही; पण तो~\Intro{\land} चा निष्कर्ष असल्यामुळे
+संयोग असलाच पाहिजे, म्हणजे
+$!C \ident (!C_1 \land !C_2)$. पुनर्रचना पुढे चालू ठेवू:
+\[
+  \Axiom$x : !A\land !B \fCenter \proj{2}{x} : !C_1$
+  \Axiom$x : !A\land !B \fCenter \proj{1}{x} : !C_2$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} :
+    !C_1 \land !C_2$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!C_1 \land !C_2)$
+  \DisplayProof
+  \]
+$\pi_2(x)$ हे सिद्धता-पद सांगते की डावीकडील वरची
+क्रमवर्ती~\Elim{\land}[2] ने मिळाली; म्हणजे तिचे
+आधारविधान $!D \land !C_1$ या रूपाचे आहे. उजवीकडे
+$!C_2$ कडे नेणारे अनुमान~\Elim{\land}[1] असले
+पाहिजे आणि त्याचे आधारविधान $!C_2 \land !E$ या
+रूपाचे असले पाहिजे, हे ठरवता येते.
+\[
+  \Axiom$x : !A\land !B \fCenter x: !D\land !C_1$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{2}{x} : !C_1$
+  \Axiom$x : !A\land !B \fCenter x: !C_2\land !E$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{1}{x} : !C_2$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} :
+    !C_1 \land !C_2$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!C_1 \land !C_2)$
+  \DisplayProof
+  \]
+सर्वांत वरच्या क्रमवर्तींची सिद्धता-पदे आता चले
+असल्यामुळे त्या स्वयंसिद्धकेच असल्या पाहिजेत.
+त्यावरून $!C_1$, $!C_2$, $!D$, आणि $!E$ ठरतात:
+$!D \ident !A$ आणि $!C_1 \ident !B$ नसतील,
+तर डावी क्रमवर्ती स्वयंसिद्धक नाही; तसेच
+$!C_2 \ident !A$ आणि $!E \ident !B$ नसतील,
+तर उजवी क्रमवर्तीही स्वयंसिद्धक नाही.
+अशा रीतीने संपूर्ण सिद्धता पुन्हा मिळाली:
+\[
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{2}{x} : !B$
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{1}{x} : !A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} :
+    !B \land !A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!B \land !A)$
+  \DisplayProof
+  \]
+
+\end{document}
