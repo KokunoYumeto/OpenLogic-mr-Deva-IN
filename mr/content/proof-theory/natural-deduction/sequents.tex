@@ -1,0 +1,290 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: sequents
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{seq}
+
+\olsection{क्रमवर्तींसह नैसर्गिक निगमन: \Log{N2c} आणि~\Log{N2i}}
+
+~\Log{N1c} किंवा
+\Log{N1i} मधील
+!!^a{proof}~$\delta$
+तिचे अंतिम-!!{formula}~$!A$
+हे तिच्या उघड्या गृहीतकांपासून
+निष्पन्न होते हे दाखवते.
+~$\delta$ मध्ये $!B^x$
+हे उघडे गृहीतक असलेल्या
+!!{formula}s~$!B$
+यांचा संच~$\Gamma$
+असेल, तर हे
+$\delta \Proves \Gamma
+\Sequent !A$ असे
+लिहिता येते.
+यावरून क्रमवर्तींसाठीही
+नैसर्गिक निगमन पद्धत
+बांधता येईल असे दिसते.
+अशा पद्धतीत प्रत्येक
+क्रमवर्ती तिच्या उजवीकडील
+!!{formula} कोणत्या
+उघड्या गृहीतकांवर अवलंबून
+आहे, म्हणजे त्या
+क्रमवर्तीत संपणाऱ्या
+उप-!!{proof} मध्ये
+कोणती गृहीतके उघडी
+आहेत, हे सांगते.
+यालाच क्रमवर्तींसह,
+किंवा “क्रमवर्ती-पद्धतीचे”
+नैसर्गिक निगमन म्हणतो.
+मिळणाऱ्या पद्धती
+\Log{N2c} आणि~\Log{N2i}
+अशा आहेत.
+
+~\Log{N1} आणि
+\Log{N2} यांतील
+संबंध अधिक निकट करण्यासाठी
+डावीकडील संच~$\Gamma$
+हे खूण लावलेल्या
+!!{formula}s~$x:!B$
+यांचे धरू. ~\Log{N1}
+चे नियम केवळ
+आधारविधानांतील
+!!{formula}s वर,
+म्हणजे निकटच्या
+उप-!!{proof}s च्या
+अंतिम-!!{formula}s वर
+लागतात. त्यामुळे
+\Log{N2} चे नियम
+क्रमवर्तीच्या उजव्या
+भागावरच लागतात.
+क्रमवर्तींच्या डावीकडील
+खूण लावलेल्या सूत्रांना
+म्हणून फक्त संदर्भ
+म्हणता येते.
+
+~\Log{N2} सिद्धतांत
+गृहीतकांच्या जागी
+सर्वात वर अशा रूपाची
+स्वयंसिद्धक-क्रमवर्ती असते:
+\[x:!A \Sequent !A.\]
+नियम~\Log{N1}
+च्या नियमांशी तंतोतंत
+जुळतात; ते
+\olref{tab:N2} मध्ये आहेत.
+
+\subfile{rules-N2}
+
+~\Log{N1c} आणि
+\Log{N1i} मध्ये
+\Intro{\lif},
+\Intro{\lnot},
+\Elim{\lor} आणि
+\Elim{\lexists} हे
+नियम गृहीतके मुक्त करू
+शकतात, पण तसे करणे
+बंधनकारक नाही.
+म्हणून~\Log{N2c}
+आणि~\Log{N2i}
+मध्येही संबंधित आधारविधानाच्या
+संदर्भात अपेक्षित
+!!{formula}s $!A$,
+$!B$ आणि $!A(a)$
+नसली तरी त्या
+नियमांचा योग्य उपयोग
+मान्य करतो.
+
+\begin{prop}
+$\delta$ ही~\Log{N1c}
+किंवा \Log{N1i}
+मध्ये~$!A$ ची
+!!a{proof} असेल,
+तर~\Log{N2c}
+(\Log{N2i}) मध्ये
+$\Gamma \Sequent !A$
+ची !!a{proof}~$\delta'$
+असते. येथे~$\Gamma$
+हा असा सर्व~$x:!B$
+यांचा संच आहे की
+$!B^x$ हे~$\delta$
+चे उघडे गृहीतक असते.
+\end{prop}
+
+\begin{proof}
+  $n=\pheight{\delta}$
+  वर विगमन करू.
+  $n=0$ असेल, तर
+  $\delta$ ही एकच
+  उघडे गृहीतक~$!A^x$.
+  मग $\Gamma = \{x:!A\}$
+  आणि $\Gamma
+  \Sequent !A$ हे
+  \Log{N2c} किंवा
+  ~\Log{N2i} चे
+  स्वयंसिद्धक आहे.
+
+  $n>0$ असेल, तर
+  ~$\delta$ मधील अंतिम
+  अनुमानानुसार प्रसंग
+  पाडू. येथे एकच प्रसंग
+  पाहू; उरलेले सरावासाठी.
+
+  अंतिम अनुमान
+  $\Intro{\lif}$ असल्याचे
+  समजा. मग~$\delta$
+  चा शेवट असा होतो:
+  \[
+  \AxiomC{$\Discharge{!B}{x}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C$}
+  \DischargeRule{\Intro{\lif}}{x}
+  \UnaryInfC{$!B \lif !C$}
+  \DisplayProof
+  \]
+  विगमन गृहीतकानुसार
+  ~\Log{N2c} (\Log{N2i})
+  मध्ये
+  $\Gamma' \Sequent !C$
+  ची !!a{proof}~$\delta_1'$
+  आहे; $\Gamma'$ म्हणजे
+  ~$\delta_1$ मधील
+  खूण लावलेली उघडी
+  गृहीतके. $!B^x$
+  हे $\delta_1$
+  चे उघडे गृहीतक असेल,
+  तर \Intro{\lif}
+  अनुमानात ते मुक्त होते,
+  आणि~$\delta$ ची
+  उघडी गृहीतके
+  $\Gamma =
+  \Gamma' \setminus \{x:!B\}$
+  होतात. म्हणजे
+  ~$\delta_1'$ ही
+  $x:!B, \Gamma \Sequent !C$
+  ची !!a{proof}
+  असते; मग
+  $\delta'$ पुढीलप्रमाणे
+  घेता येते:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \Deduce$x:!B, \Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  $!B^x$ हे~$\delta_1$
+  चे उघडे गृहीतक
+  नसेल, तर
+  \Intro{\lif}
+  कोणतेही गृहीतक
+  मुक्त करत नाही;
+  ~$\delta$ आणि
+  $\delta_1$ यांची
+  उघडी गृहीतके तीच
+  राहतात. ~\Log{N2c}
+  आणि~\Log{N2i}
+  मध्ये \Intro{\lif}
+  च्या आधारविधानाच्या
+  संदर्भात $x:!B$
+  असणे आवश्यक नसल्याने
+  $\delta'$ पुढीलप्रमाणे
+  घेता येते:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \Deduce$\Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+
+  ~$\delta$ चा शेवट
+  इतर नियमांत होणारे
+  प्रसंगही असेच आहेत.
+\end{proof}
+
+\begin{prop}
+$\delta$ ही \Log{N2c}
+किंवा \Log{N2i} मध्ये
+$\Gamma \Sequent !A$
+ची !!a{proof} असेल,
+तर~\Log{N1c}
+(\Log{N1i}) मध्ये
+अंतिम-!!{formula}~$!A$
+आणि प्रत्येक
+$x:!B \in \Gamma$
+साठी उघडे गृहीतक~$!B^x$
+असलेली !!a{proof}~$\delta'$
+मिळते.
+\end{prop}
+
+\begin{proof}
+  पुन्हा~$\delta$
+  ची !!{height}~$n$
+  यावर विगमन करू.
+  $n=0$ असेल, तर
+  $\delta$ हे
+  $x:!A \Sequent !A$
+  स्वयंसिद्धक असते.
+  !!{proof}~$\delta'$
+  म्हणजे गृहीतक~$!A^x$.
+
+  $n>0$ असेल,
+  तर~$\delta$ मधील
+  अंतिम अनुमानानुसार
+  प्रसंग पाडू.
+  उदाहरणार्थ, ते
+  ~$\Intro{\lif}$
+  असेल, तर~$\delta$
+  चा शेवट असा:
+  \[
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x:!B, \Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \quad\text{ किंवा }\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  विगमन गृहीतकानुसार
+  ~\Log{N1c} (\Log{N1i})
+  मध्ये~$!C$ ची
+  !!a{proof} मिळते.
+  पहिल्या प्रसंगी
+  $!B^x$ हे~$\delta_1'$
+  चे उघडे गृहीतक असते;
+  दुसऱ्या प्रसंगी नसते.
+  मग !!{proof}~$\delta'$
+  अनुक्रमे पुढीलप्रमाणे
+  घेता येते:
+  \[
+  \bottomAlignProof
+  \AxiomC{$\Discharge{!B}{x}$}
+  \RightLabel{$\delta_1'$}
+  \DeduceC{$!C$}
+  \DischargeRule{\Intro{\lif}}{x}
+  \UnaryInfC{$!B \lif !C$}
+  \DisplayProof
+  \quad\text{ किंवा }\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \DeduceC{$!C$}
+  \RightLabel{\Intro{\lif}}
+  \UnaryInfC{$!B \lif !C$}
+  \DisplayProof
+  \]
+\end{proof}
+
+\end{document}

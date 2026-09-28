@@ -68,6 +68,19 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0669': [
+        # OLINC-364: the labelled formula in the N2 proof tree is x:!B.
+        (r'\RightLabel{$\delta_1'+"'"+r'$}' + '\n' +
+         r'  \Deduce$x:!B, \Gamma \fCenter !C$',
+         r'\RightLabel{$\delta_1'+"'"+r'$}' + '\n' +
+         r'  \Deduce$x:B, \Gamma \fCenter !C$'),
+        # OLINC-365: the N1 witness trees use the inductively obtained proof.
+        (r'\RightLabel{$\delta_1'+"'"+r'$}' + '\n' +
+         r'  \DeduceC{$!C$}',
+         r'\RightLabel{$\delta_1$}' + '\n' + r'  \DeduceC{$!C$}'),
+        (r'हे~$\delta_1'+"'"+r'$',
+         r'हे~$\delta'+"'"+r'$'),
+    ],
     'OLP-0668': [
         # OLINC-360: the third branch of the three-premiss tree ends in A3.
         (r'\DeduceC{$!A_3$}' + '\n' + r'  \RightLabel{$R$}',
