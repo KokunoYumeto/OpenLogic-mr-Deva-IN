@@ -68,6 +68,16 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0656': [
+        # OLINC-341: in the right-premiss-axiom case, use the left proof.
+        (r'दुसऱ्या प्रसंगात $\pi_1$', r'दुसऱ्या प्रसंगात $\pi_2$'),
+        # OLINC-342: retain the unexpanded succedent context in the C branch.
+        (r"\Deduce$\Gamma \fCenter \Delta', !B \land !C, !C, !A$",
+         r"\Deduce$\Gamma \fCenter \Delta, !B \land !C, !C, !A$"),
+        # OLINC-343: the final proof tree has exactly two B-and-C copies.
+        (r"\BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !B \land !C$",
+         r"\BinaryInf$\Gamma \fCenter \Delta, !B \land !C, !B \land !C$"),
+    ],
     'OLP-0655': [
         # OLINC-339: split the succedent into the remaining part and A.
         (r"$\Delta = \Delta', !A$", r"$\Delta = \Delta, !A$"),

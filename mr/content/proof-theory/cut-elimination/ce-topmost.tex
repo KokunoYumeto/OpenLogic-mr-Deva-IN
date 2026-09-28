@@ -1,0 +1,920 @@
+% Part: proof-theory
+% Chapter: cut-elimination
+% Section: ce-topmost
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{cut}{top}
+
+\olsection{सर्वोच्च स्थानी असलेले कट काढणे}
+
+\begin{defn}
+एका \CutCS{} नियमाने संपणारी !!a{proof}~$\pi$
+विचारात घ्या:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+तिच्यात अन्य \CutCS{} अनुमाने नसावीत.
+$\pi$ ची \emph{कट-उंची} म्हणजे
+$\cheight{\pi} = \pheight{\pi_1} + \pheight{\pi_2}$.
+$\pi$ ची \emph{कट-कोटी} म्हणजे
+$\cutrank{\pi} = \depth{!A}$.
+\end{defn}
+
+\begin{lem}\ollabel{lem:cut-adm-G3c}
+\CutCS{} नियम~\Log{G3c} मध्ये ग्राह्य आहे.
+दुसऱ्या शब्दांत, !!a{proof}~$\pi$ ही एका
+\CutCS{} ने संपत असेल आणि इतरत्र
+फक्त~$\Log{G3c}$ चे नियम वापरत असेल,
+तर त्याच अंतिम क्रमवर्तीची
+\Log{G3c} मधील !!a{proof}~$\pi'$ असते.
+\end{lem}
+
+\begin{proof}
+कटची !!{height} आणि कोटी यांवरील
+दुहेरी विगमनाने सिद्धता करू.
+!!{proof}~$\pi$ चा शेवट असा आहे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+
+विगमनाचा आधार: $\cheight{\pi} = 0$
+आणि $\cutrank{\pi} = 0$.
+$\cheight{\pi} = \pheight{\pi_1}
++ \pheight{\pi_2} = 0$ असल्याने
+$\Gamma \Sequent \Delta, !A$ आणि
+$!A, \Gamma \Sequent \Delta$
+ही दोन्ही स्वयंसिद्धके आहेत.
+दोन प्रसंग आहेत: (a)~$!A$ हा
+त्यांपैकी एखाद्यात मुख्य नाही,
+किंवा (b)~$!A$ हा दोन्हींत मुख्य आहे.
+खाली दोन्ही प्रसंगांत
+$\Gamma \Sequent \Delta$ हे स्वयंसिद्धक
+असलेच पाहिजे हे दाखवू
+(त्यासाठी विगमन गृहीतक लागत नाही).
+
+आता $\pi_1$ आणि $\pi_2$ स्वयंसिद्धके
+आहेत की अनुमानाने संपतात, तसेच त्या
+अनुमानात~$!A$ मुख्य आहे की नाही,
+यावरून प्रसंग वेगळे करू. प्रसंग A व~B
+विगमनाचा आधार समाविष्ट करतात.
+विगमन पायरीत $\cheight{\pi} > 0$
+किंवा $\cutrank{\pi} > 0$
+(किंवा दोन्ही) असे मानतो. विगमन
+गृहीतकानुसार, एका \CutCS{} ने
+संपणाऱ्या !!{proof} मधील अंतिम
+\CutCS{} काढता येतो, जर तिची
+कट-कोटी $= \cutrank{\pi}$ आणि
+कटची !!{height} $< \cheight{\pi}$
+असेल, किंवा तिची कट-कोटी
+$< \cutrank{\pi}$ असेल.
+$\cheight{\pi} = 0$ चा प्रसंग
+(दोन्ही आधार स्वयंसिद्धके) A व~B
+मध्ये येतो. $\cheight{\pi} > 0$
+चे प्रसंग C--D मध्ये येतात.
+
+\paragraph{प्रसंग A:}
+काही $!B$ हे $\Gamma$ आणि~$\Delta$
+या दोन्हींत येते. $!B$ अणुसूत्र
+असेल, तर $\Gamma \Sequent \Delta$
+हे स्वयंसिद्धक असते; अन्यथा
+\olref[seq][ex]{prop:G3c-axioms} नुसार
+त्याची \Log{G3c} मधील \CutCS{}
+विरहित !!a{proof}~$\pi'$ असते.
+यात विगमन आधाराचा प्रसंग~(a) येतो:
+$\Gamma \Sequent \Delta, !A$
+किंवा $!A, \Gamma \Sequent \Delta$
+हे स्वयंसिद्धक असून त्यात $!A$
+मुख्य नसेल, तर अन्य अणुसूत्र~$!B$
+हे $\Gamma$ आणि~$\Delta$ या
+दोन्हींत असते. विगमन पायरीतही
+एखादा आधार स्वयंसिद्धक असून त्यात
+$!A$ मुख्य नसेल, तर हा प्रसंग
+लागू होतो; दुसरा आधार नियमाचा
+निष्कर्ष असला तरी चालते.
+
+\paragraph{प्रसंग B:}
+दोन्ही आधार स्वयंसिद्धके आहेत
+आणि $!A$ मुख्य, म्हणून अणुसूत्र,
+आहे. डावा आधार
+$\Gamma \Sequent \Delta, !A$
+पाहा. या $\Gamma \Sequent \Delta, !A$
+मध्ये $!A$ मुख्य असल्यामुळे ते
+$\Gamma$ मध्ये असलेच पाहिजे
+(नसते तर ही क्रमवर्ती स्वयंसिद्धक
+ठरली नसती). त्याचप्रमाणे,
+$!A$ हे $\Delta$ मध्येही असलेच
+पाहिजे; अन्यथा
+$!A, \Gamma \Sequent \Delta$
+स्वयंसिद्धक ठरणार नाही.
+त्यामुळे $!A$ अणुसूत्र असून
+$\Gamma$ आणि $\Delta$ या
+दोन्हींत येते; म्हणजे
+$\Gamma \Sequent \Delta$
+हे स्वयंसिद्धक आहे. हा
+विगमन आधाराचा प्रसंग~(b) आहे.
+
+\begin{center}
+प्रसंग A आणि B चे पर्यायी रूप
+\end{center}
+
+\paragraph{प्रसंग A:}
+कटच्या आधारांपैकी एक
+$!C, \Gamma' \Sequent \Delta', !C$
+या रूपाचे स्वयंसिद्धक आहे,
+जेथे $!C$ अणुसूत्र आहे.
+$!C$ हे कटचे !!{formula}~$!A$
+नसेल, तर $!C$ हे $\Gamma$
+आणि~$\Delta$ या दोन्हींत
+असलेच पाहिजे. मग
+$\Gamma \Sequent \Delta$
+हे स्वयंसिद्धक असून तेच~$\pi'$
+घेता येते. $!C \ident !A$
+कटचे !!{formula} असेल, तर
+डावा आधार स्वयंसिद्धक असल्यास
+$!A \in \Gamma$ आणि
+$\Gamma = \Gamma', !A$;
+उजवा आधार स्वयंसिद्धक असल्यास
+$!A \in \Delta$ आणि
+$\Delta = \Delta', !A$.
+पहिल्या प्रसंगात $\pi_2$
+ही $!A, !A, \Gamma' \Sequent \Delta$
+ची !!a{proof} असते;
+\LeftR{\Contraction} ची ग्राह्यता
+(\olref[seq][inv]{prop:G3c-cont-adm})
+वापरून $\Gamma \Sequent \Delta$
+ची !!a{proof} मिळते.
+दुसऱ्या प्रसंगात $\pi_1$
+ही $\Gamma \Sequent \Delta', !A, !A$
+ची !!a{proof} असते;
+\RightR{\Contraction} ची ग्राह्यता
+वापरून $\Gamma \Sequent \Delta$
+ची !!a{proof} मिळते.
+%READERNOTE{OLINC-341: स्रोत दुसऱ्या प्रसंगात pi_2 लिहितो; उजवा आधार स्वयंसिद्धक असल्यास आवश्यक सिद्धता डाव्या आधाराची pi_1 असते.}
+
+\paragraph{प्रसंग B:}
+एखादा आधार
+$\lfalse, \Gamma' \Sequent \Delta'$
+या रूपाचा स्वयंसिद्धक आहे.
+डावा आधार असा असेल, तर
+$\lfalse \in \Gamma$ आणि
+$\Gamma \Sequent \Delta$
+हेही स्वयंसिद्धक आहे. उजवा
+आधार असा असेल, तर
+$\lfalse \in \Gamma$
+(मग पुन्हा $\Gamma \Sequent \Delta$
+स्वयंसिद्धक असते) किंवा
+$!A \ident \lfalse$.
+दुसऱ्या उपप्रसंगात $\pi_1$
+ही $\Gamma \Sequent \Delta, \lfalse$
+ची !!a{proof} आहे. $\pi_1$
+मधील प्रत्येक क्रमवर्तीच्या
+उत्तरांगातून $\lfalse$ ची
+एक प्रत काढून
+$\Gamma \Sequent \Delta$
+ची !!a{proof} मिळते.
+(सराव: $\pheight{\pi_1}$
+वरील विगमनाने हे तपासा.)
+
+आता प्रसंग~A किंवा B लागू
+होत नाही असे समजा. उर्वरित
+प्रसंगांत $\cheight{\pi} > 0$;
+म्हणजे किमान एका आधाराचा
+शेवट नियमाच्या अनुमानाने होतो.
+
+\paragraph{प्रसंग C आणि D: कटचे स्थान बदलणे.}
+प्रसंग~C आणि~D मधील सर्व शक्यतांत
+एक सामाईक नमुना आहे. सुरुवातीला
+\CutCS{} ने संपणारी !!a{proof} असते;
+तिच्या एका आधाराचा निष्कर्ष नियम~$R$
+ने मिळतो, पण कटचे !!{formula}~$!A$
+त्या नियमात मुख्य नसते (काही अन्य
+!!{formula}~$!D$ मुख्य असते).
+या !!{proof} मध्ये \CutCS{}
+हा नियम~$R$ नंतर येतो; तिचे
+योजनात्मक रूप असे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', !D, !A$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!A, \Gamma, \Pi \fCenter \Delta', \Lambda$
+\RightLabel{$R$}
+\UnaryInf$!A, \Gamma \fCenter \Delta', !D$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta', !D$
+\DisplayProof
+\]
+हे रूप फक्त त्या प्रसंगाचे आहे
+जेथे $R$ हा एक-आधाराचा उजवा
+नियम आहे, $A$ हे $R$ चे
+मुख्य !!{formula} नाही, आणि
+\emph{मुख्य} असलेले !!{formula}~$!D$
+हे \CutCS{} च्या उजव्या
+आधाराच्या उत्तरांगात आहे.
+$!D$ पूर्वांगात असेल (म्हणजे
+$R$ डावा नियम असेल) किंवा
+\CutCS{} च्या डाव्या आधारात
+असेल, तर रूप अर्थातच बदलेल.
+$\Pi$ आणि~$\Lambda$ मधील
+!!{formula}s या नियम~$R$
+च्या सक्रिय !!{formula}s दर्शवतात.
+
+आता हा क्रम उलटून
+$R$ हा~\CutCS{} नंतर येणारी
+!!a{proof} विचारात घ्या:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma, \Pi \fCenter \Delta', !D, \Lambda, !A$
+\AxiomC{}
+\RightLabel{$\pi_3'$}
+\Deduce$!A, \Gamma, \Pi \fCenter \Delta', !D, \Lambda$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma, \Pi \fCenter \Delta', !D, \Lambda$
+\RightLabel{$R$}
+\UnaryInf$\Gamma, \fCenter \Delta', !D, !D$
+\DisplayProof
+\]
+$\pi_1$ आणि $\pi_3$ यांवर
+!!{height} न वाढवणारे दुर्बलीकरण
+लावून अनुक्रमे $\pi_1'$ आणि
+$\pi_3'$ मिळवतो.
+
+\CutCS{} आणि~$R$ यांचा क्रम
+बदलत असल्यामुळे याला
+“कटला~$R$ च्या वर नेणे” म्हणतात.
+याने \CutCS{} च्या उजव्या
+आधारावर संपणाऱ्या !!{proof}
+ची उंची कमी होते; म्हणून कटची
+!!{height} कमी होते. म्हणजे
+नव्या \CutCS{} वरील
+उप-!!{proof}s ची !!{height}
+$\pi_1$ आणि $\pi_3$ यांच्या
+उंचीपेक्षा मोठी नसते, म्हणून
+कटची !!{height} कमी होते
+(उजवीकडील एक अनुमान काढले आहे).
+आता विगमन गृहीतक लावून \CutCS{}
+अनुमान काढता येते. शेवटी
+$\RightR{\Contraction}$ ची ग्राह्यता
+वापरून~$!D$ ची अतिरिक्त
+प्रत काढतो.
+
+\paragraph{प्रसंग C:}
+$\pi_1$ आणि $\pi_2$ यांपैकी
+किमान एकाचा शेवट एक-आधाराच्या
+नियम~$R$ ने होतो, आणि त्यात
+$!A$ मुख्य नसते. एकूण 18 प्रसंग
+आहेत: \CutCS{} च्या डाव्या की
+उजव्या आधारात $!A$ मुख्य नाही
+आणि नऊ एक-आधाराच्या नियमांपैकी
+(\LeftR{\lnot}, \RightR{\lnot},
+\RightR{\lor}, \LeftR{\land},
+\RightR{\lif}, आणि चार संख्यक नियम)
+$R$ कोणता आहे, यावर ते अवलंबून
+असतात. आपण फक्त दोन उदाहरणे
+पाहू: $\pi_2$ च्या अंतिम
+अनुमानात $!A$ मुख्य नाही आणि ते
+अनुमान $\RightR{\lif}$ किंवा
+\LeftR{\lexists} आहे.
+इतर प्रसंग यांसारखेच असून
+सरावासाठी ठेवतो.
+
+समजा $\pi$ चा शेवट असा आहे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', !B \lif !C, !A$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!A, !B, \Gamma \fCenter \Delta', !C$
+\RightLabel{$\RightR{\lif}$}
+\UnaryInf$!A, \Gamma \fCenter \Delta', !B \lif !C$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta', !B \lif !C$
+\DisplayProof
+\]
+येथे $\Delta = \Delta', !B \lif !C$.
+$\pi_1$ ला !!{height} न वाढवणारे
+दुर्बलीकरण
+(\olref[seq][adm]{prop:weak-G3c-adm})
+लावून $!B, \Gamma \fCenter
+\Delta', !B \lif !C, !C, !A$
+ची !!a{proof} $\pi_1'$ मिळवतो
+(डावीकडे $!B$ आणि उजवीकडे
+$!C$ घालतो). त्याचप्रमाणे
+\olref[seq][adm]{prop:weak-G3c-adm}
+हे~$\pi_3$ ला लावून
+$!A, !B, \Gamma \fCenter
+\Delta', !B \lif !C, !C$
+ची !!a{proof}~$\pi_3'$ मिळते
+(उजवीकडे $!B \lif !C$ घालतो).
+विगमन गृहीतक पुढील सिद्धतेला
+लागू होते:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta', !B \lif !C, !C, !A$
+\AxiomC{}
+\RightLabel{$\pi_3'$}
+\Deduce$!A, !B, \Gamma \fCenter \Delta', !B \lif !C, !C$
+\RightLabel{\CutCS}
+\BinaryInf$!B, \Gamma \fCenter \Delta', !B \lif !C, !C$
+\DisplayProof
+\]
+यातील कटचे !!{formula}~$!A$
+आहे: या !!{proof} ची कट-कोटी
+$\pi$ इतकीच, पण कटची !!{height}
+कमी आहे. त्यामुळे \CutCS{}
+विरहित \Log{G3c} मधील
+$!B, \Gamma \fCenter
+\Delta', !B \lif !C, !C$
+ची !!a{proof}~$\pi_4$ मिळते.
+$\RightR{\lif}$ लावून
+$\Gamma \fCenter \Delta',
+!B \lif !C, !B \lif !C$
+ची !!a{proof} मिळते:
+\[
+\AxiomC{}
+\RightLabel{$\pi_4$}
+\Deduce$!B, \Gamma \fCenter \Delta', !B \lif !C, !C$
+\RightLabel{$\RightR{\lif}$}
+\UnaryInf$\Gamma \fCenter \Delta', !B \lif !C, !B \lif !C$
+\DisplayProof
+\]
+$\Gamma \Sequent \Delta$,
+म्हणजे $\Gamma \fCenter
+\Delta', !B \lif !C$,
+याची !!a{proof}~$\pi'$
+मिळवण्यासाठी
+\olref[seq][inv]{prop:G3c-cont-adm},
+म्हणजे आकुंचनाची ग्राह्यता,
+वापरा.
+
+आता $\pi$ चा शेवट
+पुढीलप्रमाणे आहे असे समजा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\lexists[x][!B(x)], \Gamma' \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!A, !B(c), \Gamma' \fCenter \Delta$
+\RightLabel{$\LeftR{\lexists}$}
+\UnaryInf$!A, \lexists[x][!B(x)], \Gamma' \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma' \fCenter \Delta$
+\DisplayProof
+\]
+पुन्हा पुढील सिद्धतेला
+विगमन गृहीतक लावू:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1[!B(c) \Sequent {}]$}
+\Deduce$\lexists[x][!B(x)], !B(c), \Gamma' \fCenter \Delta, !A$
+\AxiomC{}
+\LeftLabel{$\pi_3[\lexists[x][!B(x)] \Sequent {}]$}
+\Deduce$!A, \lexists[x][!B(x)], !B(c), \Gamma' \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\lexists[x][!B(x)], !B(c), \Gamma' \fCenter \Delta$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$\lexists[x][!B(x)], \lexists[x][!B(x)], \Gamma' \fCenter \Delta$
+\DisplayProof
+\]
+येथे आयगेन चराची अट पूर्ण होते.
+कारण $\pi_2$ मधील
+\LeftR{\lexists} वरील
+आयगेन चराच्या अटीनुसार
+$c$ हे $\lexists[x][!B(x)]$,
+$\Gamma'$ किंवा~$\Delta$
+यांत येत नाही. शेवटी
+\olref[seq][inv]{prop:G3c-cont-adm}
+लावा.
+
+\paragraph{प्रसंग D:}
+$\pi_1$ आणि $\pi_2$ यांपैकी
+किमान एकाचा शेवट दोन-आधारांच्या
+नियम~$R$ ने होतो आणि त्यात
+$!A$ मुख्य नसते. असे सहा
+प्रसंग आहेत. $\pi_2$ चा
+शेवट~$\RightR{\land}$ ने होत
+असताना त्याच्या अंतिम अनुमानात
+$!A$ मुख्य नसतो हा प्रसंग
+पाहू; इतर तसेच आहेत.
+
+समजा $\pi$ चा शेवट असा आहे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', !B \land !C, !A$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!A, \Gamma \fCenter \Delta', !B$
+\AxiomC{}
+\RightLabel{$\pi_4$}
+\Deduce$!A, \Gamma \fCenter \Delta', !C$
+\RightLabel{$\RightR{\land}$}
+\BinaryInf$!A, \Gamma \fCenter \Delta', !B \land !C$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+विगमन गृहीतक पुढील
+!!{proof}s ना लागू होते:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta', !B \land !C, !B, !A$
+\AxiomC{}
+\RightLabel{$\pi_3'$}
+\Deduce$!A, \Gamma \fCenter \Delta', !B \land !C, !B$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !B$
+\DisplayProof
+\]
+आणि
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma \fCenter \Delta', !B \land !C, !C, !A$
+\AxiomC{}
+\RightLabel{$\pi_4'$}
+\Deduce$!A, \Gamma \fCenter \Delta', !B \land !C, !C$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !C$
+\DisplayProof
+\]
+येथे \Log{G3c} मधील
+!!{proof}s $\pi_1'$ आणि
+$\pi_1''$ या $\pi_1$
+पासून !!{height} न वाढवणाऱ्या
+दुर्बलीकरणाने
+(\olref[seq][adm]{prop:weak-G3c-adm})
+मिळतात: एकदा उजवीकडे $!B$
+आणि एकदा $!C$ घालून.
+!!{proof}s $\pi_3'$ आणि
+$\pi_4'$ या अनुक्रमे $\pi_3$
+आणि $\pi_4$ पासून
+!!{height} न वाढवणाऱ्या
+दुर्बलीकरणाने मिळतात:
+यात $\pi_3$ व $\pi_4$ यांची
+उंची टिकवून उजवीकडे $!B \land !C$
+घालून.
+%READERNOTE{OLINC-342: तिसऱ्या वृक्षात स्रोताचे Delta हे Delta' हवे; अन्यथा संदर्भातील B-and-C ची अतिरिक्त प्रत येते.}
+
+विगमन गृहीतकानुसार
+\Log{G3c} मधील
+$\Gamma \fCenter \Delta', !B \land !C, !B$
+आणि
+$\Gamma \fCenter \Delta', !B \land !C, !C$
+यांच्या !!{proof}s~$\pi_5$ आणि~$\pi_6$
+मिळतात. $\RightR{\land}$
+नियमाने त्यांना जोडून
+$\Gamma \Sequent \Delta',
+!B \land !C, !B \land !C$
+ची !!a{proof} मिळते:
+\[
+\AxiomC{}
+\RightLabel{$\pi_5$}
+\Deduce$\Gamma \fCenter \Delta', !B \land !C, !B$
+\AxiomC{}
+\RightLabel{$\pi_6$}
+\Deduce$\Gamma \fCenter \Delta', !B \land !C, !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !B \land !C$
+\DisplayProof
+\]
+$\Gamma \Sequent \Delta$,
+म्हणजे $\Gamma \fCenter
+\Delta', !B \land !C$,
+याची !!a{proof} मिळवण्यासाठी
+\olref[seq][inv]{prop:G3c-cont-adm},
+म्हणजे आकुंचनाची ग्राह्यता,
+लावा.
+%READERNOTE{OLINC-343: अंतिम वृक्षात Delta' आणि B-and-C च्या दोन प्रती हव्यात; स्रोताच्या Delta मुळे तीन प्रती येतात.}
+
+\paragraph{प्रसंग E: कटची कोटी कमी करणे.}
+शेवटचा प्रसंग असा की $\pi_1$
+आणि $\pi_2$ दोन्हींचा शेवट
+अशा अनुमानांनी होतो ज्यांत
+$!A$ मुख्य असते. $!A$ च्या
+संभाव्य !!{main operator} नुसार
+सहा प्रसंग होतात.
+
+प्रत्येक प्रसंगात कटचे
+!!{formula}~$!A$ असलेले
+\CutCS{} अनुमान आपण $!A$
+च्या उप-!!{formula}s वरील
+एक किंवा अधिक कटांत बदलतो;
+म्हणजे ज्या अनुमानांत $!A$
+हे मुख्य !!{formula} असते,
+त्यांच्या सक्रिय !!{formula}s
+वर कट करतो. म्हणून या
+प्रसंगांना कट-अनुमानाचे
+“न्यूनीकरण” किंवा “परिवर्तन”
+म्हणतात.
+
+\begin{enumerate}
+\item $!A \ident \lnot !B$
+असेल, तर $\pi$ चा शेवट असा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\Gamma \fCenter \Delta, \lnot !B$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !B, \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+विगमन गृहीतकानुसार पुढील
+सिद्धतेतून \CutCS{} काढता येतो:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+
+\item
+$!A \ident (!B \lor !C)$ असेल,
+तर $\pi$ चा शेवट असा आहे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta, !B, !C$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$\Gamma \fCenter \Delta, !B \lor !C$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B, \Gamma \fCenter \Delta$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$!B \lor !C, \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+\CutCS{} ने संपणारी पुढील
+!!{proof} विचारात घ्या:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta, !B, !C$
+\AxiomC{}
+\RightLabel{$\pi_2'''$}
+\Deduce$!C, \Gamma \fCenter \Delta, !B$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta, !B$
+\DisplayProof
+\]
+येथे $\pi_2'''$ ही $\pi_2''$
+पासून !!{height} न वाढवणारे
+दुर्बलीकरण लावून मिळते.
+$\depth{!C} < \depth{!B \lor !C}$
+असल्यामुळे तिची कट-कोटी
+$< \cutr{\pi}$ आहे.
+विगमन गृहीतकानुसार
+$\Gamma \fCenter \Delta, !B$
+ची \Log{G3c} मधील
+!!a{proof}~$\pi_1''$ मिळते.
+आता \CutCS{} ने संपणारी
+पुढील !!{proof} पाहा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+हिची कट-कोटी
+$= \depth{!B} < \depth{!B \lor !C}$
+असल्यामुळे विगमन गृहीतक
+पुन्हा लागू होते. त्यातून
+$\Gamma \fCenter \Delta$
+ची !!a{proof} $\pi'$ मिळते.
+
+\item $!A \ident (!B \land !C)$.
+हा प्रसंग सरावासाठी आहे.
+
+\item $!A \ident (!B \lif !C)$
+असेल, तर $\pi$ चा शेवट असा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$\Gamma \fCenter \Delta, !B \lif !C$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!B \lif !C, \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+\CutCS{} ने संपणाऱ्या
+पुढील !!{proof} ची कट-कोटी
+$\pi$ पेक्षा कमी आहे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+विगमन गृहीतकानुसार
+$!B, \Gamma \fCenter \Delta$
+ची !!a{proof}~$\pi_1''$ मिळते.
+आता \CutCS{} ने संपणारी
+पुढील !!{proof} पाहा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$!B, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+तिची कट-कोटीही $\pi$
+च्या कट-कोटीपेक्षा कमी आहे.
+म्हणून विगमन गृहीतकानुसार
+$\Gamma \fCenter \Delta$
+ची \Log{G3c}-!!{proof}~$\pi'$
+मिळते.
+\item $!A \ident \lforall[x][!B(x)]$
+असेल, तर $\pi$ चा शेवट असा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta, !B(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!B(x)]$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B(t), \lforall[x][!B(x)], \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$\lforall[x][!B(x)], \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+विगमन गृहीतकानुसार
+पुढील सिद्धतेतून \CutCS{}
+काढता येतो:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$!B(t), \Gamma \fCenter \Delta, \lforall[x][!B(x)]$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B(t), \lforall[x][!B(x)], \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B(t), \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+येथे $\pi_1''$ ही $\pi_1$
+पासून (फक्त~$\pi_1'$ पासून
+नव्हे!) !!{height} न वाढवणारे
+दुर्बलीकरण लावून मिळते.
+(या !!{proof} ची कट-कोटी
+तेवढीच, पण कटची !!{height}
+कमी आहे.) त्यामुळे
+$!B(t), \Gamma \fCenter \Delta$
+ची !!a{proof}~$\pi_2''$ मिळते.
+
+!!{proof}~$\pi_1'$ ची
+अंतिम क्रमवर्ती
+$\Gamma \Sequent \Delta, !B(c)$
+आहे, जेथे $c$ हा
+$\RightR{\lforall}$ अनुमानाचा
+आयगेन चर आहे. म्हणून $c$ हे
+$!B(x)$, $\Gamma$ किंवा~$\Delta$
+यांत येत नाही. !!{proof}~$\pi$
+नियमित आहे असे मानू; त्यामुळे
+$c$ हा फक्त पुढील
+$\RightR{\lforall}$ अनुमानाचा
+आयगेन चर आहे आणि फक्त त्याच्या
+वर येतो. म्हणजे तो फक्त~$\pi_1'$
+मध्ये येतो आणि $\pi_1'$ मधील
+कोणत्याही अनुमानाचा आयगेन चर
+नसतो. $c$ हे $\pi_2$ मध्ये
+येत नसल्यामुळे $t$ मध्येही
+येत नाही.
+\olref[seq][qua]{lem:subst-regular}
+नुसार !!{proof}~$\Subst{\pi_1'}{t}{c}$
+ही $\Gamma \Sequent \Delta, !B(t)$
+ची !!a{proof} आहे. आता पुढील
+!!{proof} ला विगमन गृहीतक लावू:
+\[
+\AxiomC{}
+\RightLabel{$\Subst{\pi_1'}{t}{c}$}
+\Deduce$\Gamma \fCenter \Delta, !B(t)$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!B(t), \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+(कटचे !!{formula}~$!B(t)$
+असल्यामुळे विगमन गृहीतक
+लागू होते; या !!{proof} ची
+कट-कोटी $\pi$ पेक्षा कमी आहे.)
+\item $!A \ident \lexists[x][!B(x)]$
+हा प्रसंग सरावासाठी ठेवतो.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\olref{lem:cut-adm-G3c} च्या
+सिद्धतेतील प्रसंग~D चा
+पुढील उपप्रसंग तपासा:
+$\pi_1$ चा शेवट
+$\LeftR{\lif}$ ने होतो,
+पण त्याच्या अंतिम अनुमानात
+$!A$ मुख्य नसते.
+(टीप: येथे नेमके काय सिद्ध
+करायचे, म्हणजे या प्रसंगात
+$\pi$ चे रूप काय, हे स्पष्ट
+मांडणेही सरावाचा भाग आहे.)
+\end{prob}
+
+\begin{prob}
+\olref{lem:cut-adm-G3c} च्या
+सिद्धतेतील प्रसंग~D चा
+पुढील उपप्रसंग तपासा:
+$\pi_1$ चा शेवट
+$\LeftR{\lforall}$ ने होतो,
+पण त्याच्या अंतिम अनुमानात
+$!A$ मुख्य नसते.
+\end{prob}
+
+\begin{prob}
+\olref{lem:cut-adm-G3c} च्या
+सिद्धतेतील प्रसंग~E चा
+पुढील उपप्रसंग तपासा:
+$\pi_1$ आणि $\pi_2$
+या दोन्हींच्या अंतिम अनुमानात
+$!A$ मुख्य आहे आणि
+$!A \ident (!B \land !C)$.
+\end{prob}
+
+\begin{prob}
+\olref{lem:cut-adm-G3c} च्या
+सिद्धतेतील प्रसंग~E चा
+पुढील उपप्रसंग तपासा:
+$\pi_1$ आणि $\pi_2$
+या दोन्हींच्या अंतिम अनुमानात
+$!A$ मुख्य आहे आणि
+$!A \ident \lexists[x][!B(x)]$.
+\end{prob}
+
+प्रसंग~E मध्ये विगमन
+गृहीतक ज्या \CutCS{} ने
+संपणाऱ्या !!{proof} वर
+लावतो, तिची कटची !!{height}
+मूळ सिद्धतेच्या कटच्या
+!!{height} पेक्षा मोठी
+असू शकते. उदाहरणार्थ,
+$!A \ident (!B \lif !C)$
+असताना $\pi$ चे दोन
+\CutCS{} अनुमाने असणाऱ्या
+!!a{proof} मध्ये रूपांतर
+केले:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B, \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_1''$}
+\RightLabel{\CutCS}
+\BinaryInf$!B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+वरचा \CutCS{}, जो
+$\pi_1'$ आणि $\pi_2''$
+यांच्यामध्ये आहे, त्याची
+कट-कोटी आणि कटची !!{height}
+दोन्ही $\pi$ पेक्षा कमी आहेत.
+पण विगमन गृहीतक लावल्याने
+मिळालेली !!{proof}~$\pi_1''$
+हिची कटची !!{height} आता
+$\pi$ पेक्षा कमी असण्याची
+गरज नाही. तरी खालच्या
+\CutCS{} चे कटचे !!{formula}
+$!B$ असल्यामुळे त्याची
+\emph{कोटी} $\pi$ च्या
+कट-कोटीपेक्षा कमी आहे.
+
+\olref{lem:cut-adm-G3c} नुसार
+!!a{proof} मधील एक सर्वोच्च
+\CutCS{} अनुमान काढता येते.
+हे उपप्रमेय सर्वोच्च~\CutCS{}
+ने संपणाऱ्या उप-!!{proof}s
+वर एकामागोमाग लावून
+!!a{proof} मधील कितीही
+\CutCS{} अनुमाने काढता
+येतात.
+
+\begin{thm}\ollabel{thm:cut-elim-G3c-topmost}
+$\Log{G3c} + \CutCS$ मधील
+कोणतीही !!{proof} $\pi$
+ही~\Log{G3c} मधील
+!!a{proof} मध्ये रूपांतरित
+करता येते.
+\end{thm}
+
+\begin{proof}
+  $\pi$ मधील \CutCS{}
+  अनुमानांची संख्या~$n$
+  हिच्यावर विगमन करू.
+  $n=0$ असेल, तर काही
+  करायचे नाही: $\pi$
+  ही आधीच~\Log{G3c}
+  मधील !!a{proof} आहे.
+  अन्यथा, सर्वोच्च
+  \CutCS{} अनुमानावर
+  संपणारी उप-!!{proof}~$\pi'$
+  विचारात घ्या. तिचे
+  एकमेव \CutCS{} अंतिम
+  अनुमान असते.
+  \olref{lem:cut-adm-G3c}
+  लावून तिचे \CutCS{}
+  विरहित सिद्धता~$\pi''$
+  मध्ये रूपांतर करा आणि
+  मूळ सिद्धतेत
+  उप-!!{proof}~$\pi'$
+  च्या जागी~$\pi''$ ठेवा.
+  मिळालेल्या !!a{proof}
+  मध्ये $n-1$ \CutCS{}
+  अनुमाने उरतात; म्हणून
+  विगमन गृहीतक लागू होते.
+\end{proof}
+
+\end{document}
