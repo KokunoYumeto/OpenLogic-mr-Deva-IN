@@ -68,6 +68,14 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0668': [
+        # OLINC-360: the third branch of the three-premiss tree ends in A3.
+        (r'\DeduceC{$!A_3$}' + '\n' + r'  \RightLabel{$R$}',
+         r'\DeduceC{$!A_2$}' + '\n' + r'  \RightLabel{$R$}'),
+        # OLINC-362: the one-step proofs have height one, the leaf height zero.
+        (r'$\pheight{\delta_2} =' + '\n' + r'\pheight{\delta_3} = 1$',
+         r'$\pheight{\delta_1} =' + '\n' + r'\pheight{\delta_2} = 1$'),
+    ],
     'OLP-0665': [
         # OLINC-357: the existential-elimination substitution case copied
         # the universal-introduction tree and retained pre-substitution terms.
