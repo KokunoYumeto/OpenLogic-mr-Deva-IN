@@ -68,6 +68,35 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0665': [
+        # OLINC-357: the existential-elimination substitution case copied
+        # the universal-introduction tree and retained pre-substitution terms.
+        (r'''\[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta_1'}{t}{c}$}
+    \DeduceC{$\lexists[x][!A(x,t)]$}
+    \AxiomC{$\Discharge{!A(a,t)}{x}$}
+    \RightLabel{$\Subst{\delta_2'}{t}{c}$}
+    \DeduceC{$\Subst{!C}{t}{c}$}
+    \DischargeRule{\Elim{\lexists}}{x}
+    \BinaryInfC{$\Subst{!C}{t}{c}$}
+    \DisplayProof
+    \]''',
+         r'''\[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta'}{t}{c}$}
+    \DeduceC{$!A(a,t)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x,t)]$}
+    \DisplayProof
+    \]'''),
+        (r'    $\lexists[x][!A(x,t)]$' ,
+         r'    $\lexists[x][!A(x,c)]$'),
+        (r'    $\Subst{!C}{t}{c}$' ,
+         r'    $!C$'),
+        (r'    निष्कर्ष~$\Subst{!C}{t}{c}$' ,
+         r'    निष्कर्ष~$!C$'),
+    ],
     'OLP-0663': [
         # OLINC-356: implication introduction concludes the conditional.
         (r'$\Gamma \Entails !A \lif !B$', r'$\Gamma \Entails !B$'),

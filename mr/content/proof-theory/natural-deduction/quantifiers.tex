@@ -1,0 +1,342 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{qua}
+
+\olsection{नियमित \usetoken{P}{proof} आणि आदेशन}
+
+संख्यापकांच्या नियमांमध्ये
+~\Elim{\lexists} आणि
+~\Intro{\lforall} यांना
+लागणाऱ्या “आयगेन चराच्या
+अटींमुळे” काही गुंतागुंत येते.
+या अनुमानांतील
+!!{constant}~$c$ पुन्हा
+वापरला जाणार नाही याची
+खात्री केल्यास बहुतांश
+गुंतागुंत हाताळता येते.
+पुढील व्याख्या करू.
+
+\begin{defn}
+नैसर्गिक निगमनातील
+!!{proof}~$\delta$
+\emph{नियमित} असते, जर
+\begin{enumerate}
+  \item कोणतेही आयगेन
+  चर~$a$ एकाहून अधिक
+  \Elim{\lexists} किंवा
+  ~\Intro{\lforall} अनुमानांचे
+  आयगेन चर म्हणून वापरलेले
+  नसेल; आणि
+  \item $a$ हे
+  \Elim{\lexists} किंवा
+  ~\Intro{\lforall} अनुमानाचे
+  आयगेन चर असेल, तर ते
+  अनुक्रमे गौण आधारविधानाकडे
+  किंवा आधारविधानाकडे
+  जाणाऱ्या निकटच्या
+  उप-!!{proof} मध्येच
+  येत असेल.
+\end{enumerate}
+\end{defn}
+
+\begin{lem}\ollabel{lem:subst-regular}
+$\delta$ ही $!C$ मध्ये
+संपणारी नियमित सिद्धता असू द्या.
+$c$ हा~$\delta$ मध्ये
+आयगेन चर म्हणून न वापरलेला
+!!a{constant} असू द्या;
+आणि~$t$ हे $\delta$
+चे कोणतेही आयगेन चर नसलेले
+पद असू द्या. मग~$\delta$
+मधील $c$ च्या प्रत्येक
+उपस्थितीच्या जागी $t$
+बसवून मिळणारी
+$\Subst{\delta}{t}{c}$
+ही नियमित !!{proof} आहे.
+$\Subst{\delta}{t}{c}$
+चे अंतिम-!!{formula}
+$\Subst{!C}{t}{c}$ असते.
+$!A^x$ हे~$\delta$
+चे उघडे गृहीतक असेल,
+तर $\Subst{!A}{t}{c}^x$
+हे $\Subst{\delta}{t}{c}$
+चे उघडे गृहीतक असते.
+\end{lem}
+
+\begin{proof}
+  $\pheight{\delta}$ वर
+  विगमन करू.
+  $\pheight{\delta} = 0$
+  असेल, तर सिद्धतेत केवळ
+  गृहीतक~$!A^x$ असते.
+  म्हणून $\Subst{\delta}{t}{c}$
+  हीच~$\Subst{!A}{t}{c}^x$
+  असते.
+
+  $\pheight{\delta} > 0$
+  असेल, तर~$\delta$
+  मधील अंतिम अनुमानानुसार
+  प्रसंग पाडू.
+  विधानीय संयोजकांच्या
+  नियमांचे प्रसंग सोपे
+  असून सरावासाठी ठेवले आहेत.
+  $\delta$ चा शेवट
+  संख्यापक अनुमानात होतो
+  ते प्रसंग पाहू.
+  \begin{enumerate}
+    \item अंतिम अनुमान
+    $\Intro{\lforall}$
+    असेल, तर~$\delta$
+    चे रूप असे आहे:
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta'$}
+    \DeduceC{$!A(a,c)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x,c)]$}
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $\Subst{\delta'}{t}{c}$
+    ही $!A(a,t)$ ची
+    नियमित !!{proof} आहे.
+    $a$ हे~$\delta$
+    चे आयगेन चर असल्याने
+    $a$ हे~$t$ मध्ये येत नाही.
+    म्हणून
+    $\Subst{\delta}{t}{c}$
+    मधील अंतिम अनुमान
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta'}{t}{c}$}
+    \DeduceC{$!A(a,t)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x,t)]$}
+    \DisplayProof
+    \]
+    योग्य आहे: $t$
+    मध्ये~$a$ नसल्याने
+    निष्कर्षात किंवा कोणत्याही
+    उघड्या गृहीतकात~$a$
+    येत नाही.
+    \item अंतिम अनुमान
+    $\Elim{\lforall}$
+    असेल, तर~$\delta$
+    चे रूप असे आहे:
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta'$}
+    \DeduceC{$\lforall[x][!A(x,c)]$}
+    \RightLabel{\Elim{\lforall}}
+    \UnaryInfC{$!A(s(c),c)$}
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $\Subst{\delta'}{t}{c}$
+    ही $\lforall[x][!A(x,t)]$
+    ची नियमित !!{proof}
+    आहे. (निष्कर्षातील
+    पद~$s(c)$ मध्ये~$c$
+    असूही शकतो किंवा नसूही
+    शकतो.) आता
+    $\Subst{\delta}{t}{c}$
+    मधील अंतिम अनुमान
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta'}{t}{c}$}
+    \DeduceC{$\lforall[x][!A(x,t)]$}
+    \RightLabel{\Elim{\lforall}}
+    \UnaryInfC{$!A(s(t),t)$}
+    \DisplayProof
+    \]
+    योग्य आहे, आणि
+    $!A(s(t),t) \ident
+    \Subst{!A(s(c),c)}{t}{c}$.
+    \Intro{\lexists} चा
+    प्रसंगही असाच आहे.
+  \item अंतिम अनुमान
+    $\Elim{\lexists}$
+    असेल, तर~$\delta$
+    चे रूप असे आहे:
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta_1'$}
+    \DeduceC{$\lexists[x][!A(x,c)]$}
+    \AxiomC{$\Discharge{!A(a,c)}{x}$}
+    \RightLabel{$\delta_2'$}
+    \DeduceC{$!C$}
+    \DischargeRule{\Elim{\lexists}}{x}
+    \BinaryInfC{$!C$}
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $\Subst{\delta_1'}{t}{c}$
+    आणि
+    $\Subst{\delta_2'}{t}{c}$
+    या अनुक्रमे
+    $\lexists[x][!A(x,t)]$
+    ची आणि उघड्या
+    गृहीतक~$!A(a,t)$ पासून
+    $\Subst{!C}{t}{c}$
+    ची नियमित !!{proof}s
+    आहेत. $a$ हे~$\delta$
+    चे आयगेन चर असल्याने
+    $a$ हे~$t$ मध्ये येत नाही.
+    म्हणून
+    $\Subst{\delta}{t}{c}$
+    मधील अंतिम अनुमान
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta_1'}{t}{c}$}
+    \DeduceC{$\lexists[x][!A(x,t)]$}
+    \AxiomC{$\Discharge{!A(a,t)}{x}$}
+    \RightLabel{$\Subst{\delta_2'}{t}{c}$}
+    \DeduceC{$\Subst{!C}{t}{c}$}
+    \DischargeRule{\Elim{\lexists}}{x}
+    \BinaryInfC{$\Subst{!C}{t}{c}$}
+    \DisplayProof
+    \]
+    योग्य आहे:
+    $\Subst{!A(x,t)}{a}{x}
+    \ident \Subst{!A(a,c)}{t}{c}$;
+    निष्कर्ष~$\Subst{!C}{t}{c}$
+    किंवा कोणत्याही उघड्या
+    गृहीतकात~$a$ येत नाही.
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:regular}
+$\delta$ ही \Log{N1c}
+किंवा \Log{N1i} मधील
+!!a{proof} असेल,
+तर त्याच रचनेची
+(विशेषतः त्याच
+!!{height} ची)
+नियमित !!{proof}~$\delta'$
+असते; ती~$\delta$
+पेक्षा केवळ आयगेन
+चरांच्या बदलामुळे
+भिन्न असते.
+\end{prop}
+
+\begin{proof}
+या सिद्धतेपुरते,
+~$\delta$ मधील एखादे
+आयगेन-चर अनुमान
+\emph{स्वच्छ} म्हणू,
+जर त्याचे आयगेन चर
+इतर कोणत्याही अनुमानाचे
+आयगेन चर नसेल आणि
+त्या अनुमानाच्या निकटच्या
+उप-!!{proof} व्यतिरिक्त
+~$\delta$ मध्ये
+कुठेही येत नसेल;
+अन्यथा ते \emph{अस्वच्छ}
+म्हणू. ~$n$ ही~$\delta$
+मधील अस्वच्छ आयगेन-चर
+अनुमानांची संख्या असू द्या.
+~$n$ वर विगमन करून
+~$\delta$ चे अपेक्षित
+नियमित !!{proof}~$\delta'$
+मध्ये रूपांतर करता येते,
+हे दाखवू. $n=0$ असेल,
+तर~$\delta$ मधील सर्व
+आयगेन-चर अनुमाने स्वच्छ
+आहेत; म्हणून~$\delta$
+नियमित आहे आणि आणखी
+काही सिद्ध करायचे नाही.
+अन्यथा सर्वात वरचे
+अस्वच्छ आयगेन-चर अनुमान
+निवडा; उदाहरणार्थ
+\Intro{\lforall}.
+त्यात संपणारी~$\delta$
+ची उप-!!{proof}~$\delta_1$
+या रूपाची आहे:
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!A(c)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x)]$}
+    \DisplayProof
+    \]
+~$c$ हे आयगेन चर असल्याने
+ते~$\lforall[x][!A(x)]$
+मध्ये किंवा उघड्या गृहीतकात
+येत नाही. ~$\delta_2$
+नियमित आहे: निवडलेल्या
+अनुमानाच्या वर असलेली
+सर्व आयगेन-चर अनुमाने
+स्वच्छ आहेत. ~$a$ हा
+~$\delta$ मध्ये कुठेही
+न येणारा !!a{constant}
+असू द्या.
+\olref{lem:subst-regular}
+नुसार
+$\Subst{\delta_2}{a}{c}$
+ही $!A(a)$ ची नियमित
+सिद्धता आहे.
+आयगेन चराच्या अटीने
+~$\delta_2$ च्या कोणत्याही
+उघड्या गृहीतकात~$c$
+नसतो; म्हणून
+~$\Subst{\delta_2}{a}{c}$
+च्या उघड्या गृहीतकात
+~$a$ नसतो. त्यामुळे
+~$\Intro{\lforall}$
+लावता येतो.
+~$\delta$ मधील
+$\delta_1$ च्या जागी
+पुढील सिद्धता~$\delta_1'$
+ठेवा:
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta_2}{a}{c}$}
+    \DeduceC{$!A(a)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x)]$}
+    \DisplayProof
+    \]
+यात एक अस्वच्छ आयगेन-चर
+अनुमान स्वच्छ केले आहे,
+आणि फक्त आयगेन चर~$c$
+च्या जागी~$a$ आले आहे.
+परिणामी सिद्धतेत
+$n-1$ अस्वच्छ आयगेन-चर
+अनुमाने राहतात; म्हणून
+विगमन गृहीतकाने अपेक्षित
+निष्कर्ष मिळतो.
+\end{proof}
+
+\begin{prob}
+\olref{prop:regular} च्या
+सिद्धतेत सर्वात वरचे
+आयगेन-चर अनुमान
+~\Elim{\lexists} असते
+तो प्रसंग वर्णन करा.
+\end{prob}
+
+नुकतेच सिद्ध केलेले
+विधान आपण पुढे स्पष्टपणे
+वापरणार नाही; पण चर्चेतील
+सर्व !!{proof}s नियमित
+आहेत असे मानू.
+तसे नसल्यास आयगेन
+चरांची नावे बदलून त्या
+नियमित करता येतात.
+
+\Olref{lem:subst-regular}
+आणि \olref{prop:regular}
+ही विधाने \Log{N2c}
+आणि~\Log{N2i}
+यांनाही लागू होतात.
+त्यांच्या सिद्धता
+सरावासाठी ठेवतो.
+
+\end{document}
