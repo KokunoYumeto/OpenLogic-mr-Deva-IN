@@ -68,6 +68,10 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0705': [
+        # OLINC-456: give the G1i table its own identifier.
+        (r'\ollabel{tab:G1i}', r'\ollabel{tab:G1c}'),
+    ],
     'OLP-0703': [
         # OLINC-452: both displayed universal-left steps use LeftR.
         (r'\RightLabel{\LeftR{\lforall}}',
