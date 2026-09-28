@@ -76,7 +76,7 @@ assert static_qa["represented_source_units"] == 722 and not static_qa["unresolve
 assert pdf_qa["status"] == "ready" and pdf_qa["pdf_sha256"] == tex_receipt["pdf"]["sha256"]
 assert pdf_qa["reader_sha256"] == inputs["reader_sha256"]
 assert html_qa["result"] == "ready" and not html_qa["blockers"]
-assert browser_qa["result"] == "passed"
+assert browser_qa["result"] == "pass"
 assert provenance_qa["status"] == "passed" and provenance_qa["translated_units"] == 722
 assert diagram_receipt["status"] == "final-source" and diagram_receipt["source_pdf_sha256"] == tex_receipt["pdf"]["sha256"]
 assert html_qa["diagrams"] == 70 and html_qa["sections"] == 612
@@ -93,19 +93,28 @@ assert actual_targets == target_paths
 
 notes = RELEASE / "SOURCE_PACKAGE_README.md"
 notes.write_text(
-    "# Editable complete Marathi source\n\n"
-    "This archive contains all 722 Marathi TeX units and the frozen English source "
-    f"at revision `{REVISION}`, fonts, and build tools. "
-    "The `provenance/` directory contains the full aligned translation ledger. "
-    "From the extracted root, run `tools/prepare_complete.py` to assemble the "
-    "complete reader, then `tools/build_guarded.ps1 -Target full "
-    "-PrepareScript tools/prepare_complete.py` on Windows with XeLaTeX available. "
-    "The separate release TeX file is the exact assembled source.\n\n"
-    "Codex produced this machine translation with source comparison and mechanical "
-    "checks. Detailed decision and occurrence review covers 281 of 722 units; "
-    "independent human review is not claimed. Original text: Open Logic Project. "
-    "The text and adaptation use CC BY 4.0, with separate component notices and "
-    "the SIL Open Font License retained.\n",
+    "# संपूर्ण संपादनयोग्य मराठी स्रोत\n\n"
+    "या संग्रहात सर्व 722 मराठी TeX एकके, अक्षररूपे, संकलन-साधने आणि "
+    f"`{REVISION}` या आवृत्तीत गोठवलेला इंग्रजी स्रोत आहे. "
+    "`provenance/` मध्ये संपूर्ण जुळवलेली भाषांतर-नोंदवही आहे. "
+    "संग्रह उघडल्यानंतर त्याच्या मूळ निर्देशिकेतून "
+    "`python tools/prepare_complete.py` चालवा. Windows वर XeLaTeX उपलब्ध "
+    "असताना `tools/build_guarded.ps1 -Target full -PrepareScript "
+    "tools/prepare_complete.py` वापरून संकलन करा. स्वतंत्र थेट डाउनलोड "
+    "LaTeX फाइल आणि `build/full/openlogic-mr-full.tex` मधील प्रत या "
+    "प्रकाशित PDF च्या नेमक्या संकलित स्रोत-प्रती आहेत.\n\n"
+    "HTML पुन्हा तयार करण्यासाठी संकलनानंतर "
+    "`python tools/complete_html_diagrams.py` आणि "
+    "`python tools/prepare_complete_html.py` चालवा. मूळच्या 13 आकृत्यांसाठी "
+    "तपासलेली स्थिर सामग्री `build/core/html/assets/` मध्ये आहे. "
+    "उर्वरित आकृत्यांचे स्थाननकाशे व ओळखी `build/full/` मध्ये आहेत.\n\n"
+    "यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex — GPT-5.6 Sol आणि "
+    "GPT-6 Sol, दोन्ही Ultra effort. स्रोताशी तुलना आणि यांत्रिक तपासण्या "
+    "केल्या आहेत. अधिक तपशीलवार शब्दनिर्णय-पुनरावलोकन 722 पैकी 281 "
+    "एककांपुरते आहे; स्वतंत्र मानवी पुनरावलोकनाचा दावा नाही. "
+    "मूळ निर्माते Open Logic Project आहेत. मजकूर व रूपांतर CC BY 4.0 "
+    "अंतर्गत आहेत. घटकांच्या स्वतंत्र परवाना-नोंदी आणि SIL Open Font "
+    "License जतन केले आहेत.\n",
     encoding="utf-8",
 )
 
@@ -123,6 +132,15 @@ source_entries.extend((name, ROOT / name) for name in ("README.md", "LICENSE.md"
 for filename in ("SOURCE_MANIFEST.jsonl", "SEGMENT_CANON_USE.jsonl", "CANON_SOURCES.jsonl", "CANON_PASSAGES.jsonl", "TERM_DECISIONS.jsonl"):
     source_entries.append(("provenance/" + filename, BUILD / "release-provenance" / filename))
 source_entries.append(("SOURCE_PACKAGE_README.md", notes))
+for name in ("INPUTS.json", "HTML_DIAGRAM_INVENTORY.json", "HTML_DIAGRAM_RECEIPT.json",
+             "TEX_BUILD_RECEIPT.json", "openlogic-mr-full.tex", "openlogic-mr-full.aux"):
+    source_entries.append(("build/full/" + name, BUILD / name))
+source_entries.append(("build/core/HTML_BUILD_RECEIPT.json", ROOT / "build/core/HTML_BUILD_RECEIPT.json"))
+core_receipt = load(ROOT / "build/core/HTML_BUILD_RECEIPT.json")
+for row in core_receipt["diagram_assets"]:
+    filename = row["filename"].removeprefix("assets/")
+    source_entries.append(("build/core/html/assets/" + filename,
+                           ROOT / "build/core/html/assets" / filename))
 assert all(source.is_file() for _, source in source_entries)
 scan_private(source_entries)
 
@@ -168,12 +186,16 @@ qa = {
 }
 qa_path = RELEASE / "RELEASE_QA.json"
 write_json(qa_path, qa)
-assets = [artifact(path) for path in (pdf, tex, html_zip, source_zip, qa_path, notes,
+assets = [artifact(path) for path in (pdf, tex, source_zip, html_zip, qa_path, notes,
                                       RELEASE / "RELEASE_NOTES.md")]
 release_manifest = {
     "schema": "openlogic-release-manifest/1",
     "release": TAG,
-    "description": "Complete Marathi translation of The Open Logic Text in PDF, offline HTML, and editable TeX.",
+    "description": "मुक्त तर्कशास्त्राची संपूर्ण मराठी आवृत्ती: PDF, संपादनयोग्य TeX आणि ऑफलाइन HTML.",
+    "ai_translation_correction_and_checks": {
+        "models": ["gpt-5.6-sol", "gpt-6-sol"], "effort": "ultra",
+        "reader_notice": "यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex — GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.",
+    },
     "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
     "upstream_revision": REVISION,
     "coverage": coverage,

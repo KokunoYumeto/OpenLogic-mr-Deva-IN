@@ -1,25 +1,34 @@
-# The Open Logic Text — complete Marathi edition
+# मुक्त तर्कशास्त्र — संपूर्ण मराठी आवृत्ती
 
-This edition brings together a Marathi translation of all 722 content units in
-the frozen Open Logic Project source. The coherent reader has 79 chapters,
-including supplementary and alternative material, and 612 sections. The PDF is
-the primary reading copy; the offline HTML reader supplies reflowable text,
-native MathML, semantic proof displays, and Marathi descriptions for diagrams.
-The editable-source archive contains the Marathi TeX, frozen English source,
-fonts, and build tools.
+या आवृत्तीत गोठवलेल्या ओपन लॉजिक प्रकल्पाच्या सर्व 722 मजकूर-एककांचे
+मराठी भाषांतर एकत्र दिले आहे. मुख्य, पूरक आणि पर्यायी सामग्री मिळून
+सुसंगत वाचकग्रंथात 79 प्रकरणे आणि 612 विभाग आहेत. PDF ही थेट वाचनासाठीची
+प्रत आहे. थेट डाउनलोड करता येणाऱ्या LaTeX फाइलमध्ये संपूर्ण संकलित मजकूर
+आहे; संपादनयोग्य स्रोतांच्या ZIP मध्ये सर्व मराठी TeX एकके, गोठवलेला
+इंग्रजी स्रोत, अक्षररूपे आणि पुनःसंकलनाची साधने आहेत.
 
-The translation ledger records 6,644 aligned source and target segments and
-their consulted canon and terminology decisions. A more detailed decision and
-occurrence review covers 281 of the 722 units; it should not be read as a claim
-that all units received that level of review. Codex produced the machine
-translation and performed source comparison and mechanical checks. No
-independent human or native-speaker linguistic review is claimed. Corrections
-from subject specialists and Marathi readers are welcome.
+ऑफलाइन HTML वाचकात पडद्याच्या रुंदीनुसार मांडता येणारा मराठी मजकूर,
+मूळ MathML सूत्रे, सिद्धतांची संरचनात्मक मांडणी आणि आकृत्यांची मराठी
+वर्णने आहेत. HTML ZIP उघडल्यानंतर `index.html` उघडा. वाचण्यासाठी
+इंटरनेट जोडणी लागत नाही.
 
-The source is [The Open Logic Text](https://github.com/OpenLogicProject/OpenLogic)
-at revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. This independent
-adaptation is part of the
-[OpenLogic translations lineage](https://github.com/KokunoYumeto/OpenLogic-translations);
-the Open Logic Project is the original creator and does not endorse this
-translation. The text and marked adaptation use CC BY 4.0. Inherited component
-notices and the SIL Open Font License remain with their components.
+भाषांतराच्या नोंदवहीत 6,644 जुळवलेले मूळ व मराठी मजकूरखंड, प्रत्यक्ष
+पाहिलेले संदर्भग्रंथातील उतारे आणि शब्दनिर्णय नोंदवले आहेत. अधिक
+तपशीलवार शब्दनिर्णय व त्यांच्या उपस्थितींचे पुनरावलोकन 722 पैकी 281
+एककांपुरते आहे. त्या अधिक सखोल पुनरावलोकनाचा दावा संपूर्ण ग्रंथासाठी
+केलेला नाही.
+
+यंत्रानुवाद, दुरुस्ती आणि तपासणी OpenAI Codex — GPT-5.6 Sol आणि GPT-6 Sol,
+दोन्ही Ultra effort — यांच्या साहाय्याने झाली. मूळ स्रोताशी तुलना आणि
+यांत्रिक तपासण्या केल्या आहेत. स्वतंत्र मानवी किंवा मातृभाषिक
+भाषिक-पुनरावलोकनाचा दावा नाही. विषयतज्ज्ञ आणि मराठी वाचकांच्या दुरुस्त्या
+स्वागतार्ह आहेत.
+
+मूळ [The Open Logic Text](https://github.com/OpenLogicProject/OpenLogic)
+हा `9620cc73f9c8e0ad003c514a5d3748f29611c4c0` या आवृत्तीत गोठवला आहे.
+हे स्वतंत्र रूपांतर
+[OpenLogic भाषांतर प्रकल्पाचा](https://github.com/KokunoYumeto/OpenLogic-translations)
+भाग आहे. मूळ निर्माते Open Logic Project आहेत; त्यांनी या भाषांतराला
+मान्यता दिल्याचा दावा नाही. मूळ मजकूर व स्पष्ट केलेले रूपांतर CC BY 4.0
+अंतर्गत आहेत. घटकांच्या स्वतंत्र परवाना-नोंदी आणि SIL Open Font License
+त्या घटकांबरोबर जतन केले आहेत.

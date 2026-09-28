@@ -36,6 +36,7 @@ extra_preamble = [
     r"\usepackage{longtable}",
     r"\usepackage{cleveref}",
     r"\usepackage{xurl}",
+    r"\tikzset{initial text=सुरुवात}",
     r"\crefname{lem}{पूर्वप्रमेय}{पूर्वप्रमेये}",
     # The three-level number 67.10.1 needs more room in the contents.
     r"\makeatletter\renewcommand*\l@subsection{\@dottedtocline{2}{3.8em}{4.2em}}\makeatother",
@@ -65,7 +66,7 @@ for command in extra_preamble:
         core_preamble += command + "\n"
 core_preamble = re.sub(
     r"\\hypersetup\{pdftitle=\{[^\n]*?\},pdfauthor=\{[^\n]*?\}\}",
-    lambda _: r"\hypersetup{pdftitle={मुक्त तर्कशास्त्र: संपूर्ण मराठी आवृत्ती},pdfauthor={Open Logic Project; Marathi machine translation by Codex}}",
+    lambda _: r"\hypersetup{pdftitle={मुक्त तर्कशास्त्र: संपूर्ण मराठी आवृत्ती},pdfauthor={Open Logic Project; OpenAI Codex: GPT-5.6 Sol, GPT-6 Sol; Ultra effort}}",
     core_preamble,
     count=1,
 )
@@ -79,9 +80,14 @@ titlepage = r"""\begin{titlepage}
 गोठवलेला मूळ स्रोत: \texttt{9620cc73f9c8e0ad003c514a5d3748f29611c4c0}.\par
 सर्व 722 स्रोत-एककांचे भाषांतर केले आहे. मुख्य अध्यायांबरोबर
 पर्यायी आणि मूळ मार्गाबाहेरील विभाग पुढील पूरक भागात दिले आहेत.\par
-Codex कडून यंत्रानुवाद; स्रोताशी तुलना, शब्दनिर्णय आणि
-यांत्रिक तपासण्या केल्या आहेत. स्वतंत्र मानवी संपादनाचा दावा नाही.
+यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.\par
+स्रोताशी तुलना, शब्दनिर्णय आणि यांत्रिक तपासण्या केल्या आहेत.
+स्वतंत्र मानवी संपादनाचा दावा नाही.
 काही तांत्रिक संज्ञा तज्ज्ञ-पुनरावलोकनासाठी खुल्या आहेत.\par
+सर्व 722 एककांच्या 6,644 जुळवलेल्या मजकूरखंडांची नोंद आहे.
+अधिक तपशीलवार शब्दनिर्णय-पुनरावलोकन 281 एककांपुरते आहे;
+हा तपशीलवार पुनरावलोकनाचा दावा संपूर्ण ग्रंथासाठी केलेला नाही.\par
 मूळ मजकूर आणि हे रूपांतर: Creative Commons Attribution 4.0.
 मूळ घटकांचे स्वतंत्र परवाने लागू राहतात.\par
 \url{https://github.com/OpenLogicProject/OpenLogic}\par
