@@ -68,6 +68,10 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0663': [
+        # OLINC-356: implication introduction concludes the conditional.
+        (r'$\Gamma \Entails !A \lif !B$', r'$\Gamma \Entails !B$'),
+    ],
     'OLP-0662': [
         # OLINC-352: implication introduction concludes B -> A, not B -> C.
         (r'\UnaryInfC{$!B \lif !A$}', r'\UnaryInfC{$!B \lif !C$}'),
