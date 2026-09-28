@@ -1,0 +1,50 @@
+% Part: methods
+% Chapter: proofs
+% Section: example-2
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mth}{prf}{ex2}
+
+\olsection{आणखी एक उदाहरण}
+
+\begin{prop}
+$A \subseteq C$ असेल, तर $A \cup (C \setminus A) = C$.
+\end{prop}
+
+\begin{proof}
+$A \subseteq C$ असे समजा. $A \cup (C \setminus A) = C$ दाखवायचे आहे.
+\begin{quote}
+सुरुवातीला हे सशर्त विधान आहे हे लक्षात घेऊ. त्याचे वैश्विक संख्यापन अप्रकट आहे: हे विधान सर्व $A$ आणि $C$ संचांसाठी खरे आहे. म्हणून $A$ आणि $C$ हे स्वेच्छ संचांचे चल आहेत. असे विधान सिद्ध करण्यासाठी पूर्वांग गृहीत धरून उत्तरांग सिद्ध करतो.
+
+आता $A \subseteq C$ हे गृहीतक वापरू. ~$\subseteq$ ची व्याख्या उलगडू: गृहीतकाचा अर्थ असा की~$A$ मधील सर्व !!{element}s हे~$C$ मधील !!{element}s देखील आहेत. हे नोंदवू; संपूर्ण सिद्धतेत वापरणार असलेले हे महत्त्वाचे तथ्य आहे.
+\end{quote}
+~$\subseteq$ च्या व्याख्येनुसार, $A \subseteq C$ असल्यामुळे प्रत्येक $z$ साठी $z \in A$ असेल, तर $z \in C$ असते.
+\begin{quote}
+गृहीतकातील सर्व व्याख्या उलगडल्या आहेत. आता निष्कर्षाकडे वळू. $A \cup (C \setminus A) = C$ दाखवायचे आहे. म्हणून मागच्या उदाहरणाप्रमाणे सिद्धतेची मांडणी करू: $A \cup (C \setminus A)$ मधील प्रत्येक !!{element} हा~$C$ मधील !!a{element} आहे आणि उलट $C$ मधील प्रत्येक !!{element} हा $A \cup (C \setminus A)$ मधील !!a{element} आहे, हे दाखवू. हे थोडक्यात असे लिहिता येईल: $A \cup (C \setminus A) \subseteq C$ आणि $C \subseteq A \cup (C \setminus A)$. येथे व्याख्या उलगडण्याच्या उलट क्रिया करत आहोत; पण त्यामुळे सिद्धता वाचणे थोडे सोपे होते. हा संधियोग असल्यामुळे दोन्ही भाग सिद्ध करावे लागतात. पहिला भाग---म्हणजे $A \cup (C \setminus A)$ मधील प्रत्येक !!{element} हा~$C$ मधील !!a{element} आहे---दाखवण्यासाठी, स्वेच्छ~$z$ साठी $z \in A \cup (C \setminus A)$ गृहीत धरून $z \in C$ दाखवू. $\cup$ च्या व्याख्येनुसार $z \in A \cup (C \setminus A)$ यावरून $z \in A$ किंवा $z \in C \setminus A$ असा निष्कर्ष काढता येतो. आता तुम्हाला या पद्धतीचा अंदाज येत असेल.
+\end{quote}
+$A \cup (C \setminus A) = C$ हे तेव्हाच आणि फक्त तेव्हा सत्य असते जेव्हा $A \cup (C \setminus A) \subseteq C$ आणि $C \subseteq (A \cup (C \setminus A))$ असतात. प्रथम $A \cup (C \setminus A) \subseteq C$ सिद्ध करू. $z \in A \cup (C \setminus A)$ असू द्या. मग $z \in A$ किंवा $z \in (C \setminus A)$.
+\begin{quote}
+एक विकल्पयोग मिळाला आहे; त्यावरून $z \in C$ सिद्ध करायचे आहे. यासाठी प्रकरणांनुसार सिद्धता करू.
+\end{quote}
+प्रकरण 1: $z \in A$. प्रत्येक $z$ साठी $z \in A$ असेल तर $z \in C$ असते, हे माहीत असल्यामुळे $z \in C$ मिळते.
+\begin{quote}
+येथे $A \subseteq C$ या गृहीतकावरून मिळालेले आणि आधी नोंदवलेले तथ्य वापरले. पहिले प्रकरण पूर्ण झाले; आता दुसऱ्या प्रकरणाकडे, $z \in (C \setminus A)$, वळू. $C \setminus A$ हे दोन संचांचा \emph{फरक} दर्शवते, हे आठवा:~$C$ मधील जे !!{element}s हे~$A$ मधील !!{element}s नाहीत त्यांचा हा संच आहे. पण $C$ मधील जो !!{element} हा~$A$ मध्ये नाही तो विशेषतः~$C$ मधील !!a{element} असतोच.
+\end{quote}
+प्रकरण 2: $z \in (C \setminus A)$. याचा अर्थ $z \in C$ आणि $z \notin A$. म्हणून विशेषतः $z \in C$.
+\begin{quote}
+पहिली दिशा सिद्ध झाली. आता दुसरी दिशा पाहू. येथे $C \subseteq A \cup (C \setminus A)$ सिद्ध करायचे आहे. म्हणून $z \in C$ गृहीत धरून $z \in A \cup (C \setminus A)$ सिद्ध करू.
+\end{quote}
+आता $z \in C$ असू द्या. $z \in A$ किंवा $z \in C \setminus A$ दाखवायचे आहे.
+\begin{quote}
+$A$ मधील सर्व !!{element}s हे $C$ मधील !!{element}s देखील आहेत; आणि $C \setminus A$ हा $C$ मधील, पण $A$ मधील नसलेल्या, !!{element}s चा संच आहे. म्हणून $z$ हा $A$ मध्ये किंवा $C \setminus A$ मध्ये असतो असे दिसते. निष्कर्ष का खरा आहे हे आधीच माहीत नसेल, तर हा युक्तिवाद थोडा अस्पष्ट वाटेल. तो पायरीपायरीने सिद्ध करणे अधिक चांगले. सिद्धता न देता मांडता येणारे एक साधे तथ्य वापरल्यास मदत होईल: $z \in A$ किंवा $z \notin A$. याला “विमध्य सिद्धांत” म्हणतात: कोणत्याही~$p$ विधानासाठी $p$ सत्य असते किंवा त्याचे नकरण सत्य असते. येथे $p$ हे $z \in A$ हे विधान आहे. हा विकल्पयोग असल्यामुळे पुन्हा प्रकरणांनुसार सिद्धता वापरता येते.
+\end{quote}
+$z \in A$ किंवा $z \notin A$. पहिल्या प्रकरणात $z \in A \cup (C \setminus A)$. दुसऱ्या प्रकरणात $z \in C$ आणि $z \notin A$. म्हणून $z \in C \setminus A$. पण मग $z \in A \cup (C \setminus A)$.
+\begin{quote}
+सिद्धता पूर्ण झाली: $A \cup (C \setminus A) = C$ दाखवले आहे.
+\end{quote}
+\end{proof}
+
+\end{document}

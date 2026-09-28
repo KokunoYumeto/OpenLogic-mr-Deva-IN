@@ -68,6 +68,11 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0608': [
+        # OLINC-300: close the outer grouping in the second inclusion.
+        (r'$C \subseteq (A \cup (C \setminus A))$',
+         r'$C \subseteq (A \cup (C \setminus A)$'),
+    ],
     'OLP-0606': [
         # OLINC-299: nonemptiness belongs to A, not to the bound witness x.
         (r'म्हणून $A \neq \emptyset$ हे काही $x$ साठी',
