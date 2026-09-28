@@ -68,6 +68,15 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0697': [
+        # OLINC-432: injection uses the given proof term N, not !M.
+        (r'\inj[!B]{i}{N}', r'\inj[!B]{i}{!M}'),
+        # OLINC-433: case binders x_1 and x_2 match the dcase term.
+        (r'$x_1:!A, \Gamma$', r'$x:!A, \Gamma$'),
+        (r'$x_2:!B, \Gamma$', r'$y:!B, \Gamma$'),
+        # OLINC-434: point to the repaired tN3ip table label.
+        (r'\olref{tab:tN3ip}', r'\olref{tab:tN2ip}'),
+    ],
     'OLP-0694': [
         # OLINC-430: both projection branches require A and B, not A twice.
         (r'$\Gamma \Sequent !A \land !B$ असेल, म्हणजे',
