@@ -68,6 +68,23 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0643': [
+        # OLINC-326: use the finite support named in the following derivation.
+        (r'\item $\Gamma_0 \cup \{ !A \} \Proves \lfalse$ आणि',
+         r'\item $\Gamma \cup \{ !A \} \Proves \lfalse$ आणि'),
+        # OLINC-322: conjunction elimination yields A, not A or B.
+        (r'3. & $\Gamma_0 \Proves !A$ & MP 1, 2',
+         r'3. & $\Gamma_0 \Proves !A \lor !B$ & MP 1, 2'),
+        # OLINC-323: the proof introduced only Gamma_0 as finite support.
+        (r'$\Gamma_0 \subseteq \Gamma$, यावरून',
+         r'$\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$, यावरून'),
+        # OLINC-325: induction on the proof sequence concerns A_i at each stage.
+        (r'\item जर $!A_i$ स्वयंसिद्धक',
+         r'\item जर $!A$ स्वयंसिद्धक'),
+        # OLINC-324: the lemma is about replacement of c by y.
+        (r'जर $x$ हा $\Subst{!A}{y}{c}$ मध्ये',
+         r'जर $x$ हा $\Subst{!A}{y}{x}$ मध्ये'),
+    ],
     'OLP-0639': [
         # OLINC-317: h has the unit interval as domain, not the square.
         (r'$x \in \unitline$', r'$x \in \unitsquare$'),

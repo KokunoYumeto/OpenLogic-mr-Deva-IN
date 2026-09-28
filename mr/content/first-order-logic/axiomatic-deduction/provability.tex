@@ -1,0 +1,321 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: provability
+
+% संपूर्णता प्रकरणातील कमाल सुसंगत संचांसाठी आवश्यक असलेल्या सिद्धतायोग्यतेच्या गुणधर्मांची पडताळणी.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{prv}}
+      {\olfileid{pl}{axd}{prv}}
+
+\olsection{\usetoken{S}{derivability} चे गुणधर्म}
+
+\begin{prop}[एकस्वनिकता] जर $\Gamma \subseteq \Delta$ आणि $\Gamma \Proves !A$
+असेल, तर $\Delta \Proves !A$ सुद्धा. \end{prop}
+
+\begin{proof} कोणताही परिमित $\Gamma_0 \subseteq \Gamma$ हा~$\Delta$ चासुद्धा
+परिमित उपसंच असतो. म्हणून $\Gamma_0 \Proves !A$ चे !!a{derivation}
+$\Delta \Proves !A$ हेही दाखवते. \end{proof}
+
+\begin{prop}\ollabel{prop:provability} $\Gamma \Proves !A$ तेव्हा आणि केवळ
+तेव्हाच, जेव्हा $\Gamma\cup \{\lnot!A \}$ विसंगत असतो. \end{prop}
+
+\begin{prop} \begin{enumerate}
+\item \ollabel{prop:provability-contr} जर $\Gamma \Proves !A$ आणि $\Gamma
+\cup \{ !A\} \Proves \lfalse$ असेल, तर $\Gamma$ विसंगत असतो.
+
+\item \ollabel{prop:provability-lnot} जर $\Gamma \cup \{!A\}
+\Proves \lfalse$ असेल, तर $\Gamma \Proves \lnot !A$.
+
+\item \ollabel{prop:provability-exhaustive} जर $\Gamma \cup \{!A\}
+\Proves \lfalse$ आणि $\Gamma \cup \{\lnot !A\} \Proves
+\lfalse$ असेल, तर $\Gamma \Proves \lfalse$.
+
+\tagitem{prvOr}{\ollabel{prop:provability-lor-left} जर $\Gamma \cup \{!A\}
+\Proves \lfalse$ आणि $\Gamma \cup \{!B\} \Proves
+\lfalse$ असेल, तर $\Gamma \cup \{!A \lor !B\} \Proves \lfalse$.}{}
+
+\tagitem{prvOr}{\ollabel{prop:provability-lor-right} जर $\Gamma
+\Proves !A$ किंवा $\Gamma \Proves !B$ असेल, तर $\Gamma
+\Proves !A \lor !B$.}{}
+
+\tagitem{prvAnd}{\ollabel{prop:provability-land-left} जर $\Gamma
+\Proves !A \land !B$ असेल, तर $\Gamma \Proves !A$ आणि
+$\Gamma \Proves !B$.}{}
+
+\tagitem{prvAnd}{\ollabel{prop:provability-land-right} जर $\Gamma
+\Proves !A$ आणि $\Gamma \Proves !B$ असेल, तर $\Gamma
+\Proves !A \land !B$.}{}
+
+\tagitem{prvIf}{\ollabel{prop:provability-mp} जर $\Gamma \Proves
+!A$ आणि $\Gamma \Proves !A \lif !B$ असेल, तर $\Gamma
+\Proves !B$.}{}
+
+\tagitem{prvIf}{\ollabel{prop:provability-lif} जर $\Gamma \Proves
+\lnot !A$ किंवा $\Gamma \Proves !B$ असेल, तर $\Gamma \Proves
+!A \lif !B$.}{} \end{enumerate} \end{prop}
+
+\begin{proof}
+\begin{enumerate}
+\item $\Gamma_0 \cup \{!A\} \Proves \lfalse$ असे गृहीत धरा.
+
+\begin{derivation}
+1. & $\Gamma_0 \cup \{!A\} \Proves \lfalse$ & गृहीत \\
+2. & $\Gamma_1 \Proves !A$ & गृहीत\\
+3. & $\Gamma_0 \cup \Gamma_1 \Proves \lfalse$ & कट नियम \\
+\end{derivation}
+
+कारण $\Gamma_0 \subseteq \Gamma$ आणि $\Gamma_1 \subseteq \Gamma$,
+$\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$; म्हणून $\Gamma \Proves \lfalse$.
+
+\item $\Gamma_0 \cup\{\lnot !A\} \Proves \lfalse$ असे गृहीत धरा.
+
+\begin{derivation}
+1. & $\Gamma_0 \cup\{\lnot !A\} \Proves \lfalse$ & गृहीत \\
+2. & $\Gamma_0 \Proves \lnot !A \lif \lfalse$ & निगमन प्रमेय\\
+3. & $\Gamma_0 \Proves (\lnot !A \lif \lfalse) \lif !A$ & Ax0\\
+4. & $\Gamma_0 \Proves !A$ & MP 2, 3 \\
+\end{derivation}
+%READERNOTE{OLINC-321: हा हिशोब आधीच्या विधानाची उलट दिशा सिद्ध करतो; येथे दिलेल्या निषेधाच्या विधानाची सिद्धता नाही.}
+
+\item $\Gamma_0 \cup \{ !A \} \Proves \lfalse$ आणि
+$\Gamma_1 \cup \{\lnot !A \} \Proves \lfalse$ असे गृहीत धरा.
+%READERNOTE{OLINC-326: पहिल्या गृहीतकातील आधारसंच पुढील हिशोबाप्रमाणे Gamma_0 केला आहे.}
+
+\begin{derivation}
+1. & $\Gamma_0 \cup\{!A\} \Proves \lfalse$ & गृहीत \\
+2. & $\Gamma_0 \Proves !A \lif \lfalse$ & निगमन प्रमेय \\
+3. & $\Gamma_1 \cup \{\lnot !A \} \Proves \lfalse$ & गृहीत\\
+4. & $\Gamma_0 \Proves (!A \lif \lfalse) \lif \lnot !A$ & Ax0\\
+5. & $\Gamma_0 \Proves \lnot !A$ & MP 2, 4\\
+6. & $\Gamma_0 \cup \Gamma_1 \Proves \lfalse$ & कट नियम 3, 5 \\
+\end{derivation}
+
+कारण $\Gamma_0 \subseteq \Gamma$ आणि $\Gamma_1 \subseteq \Gamma$,
+$\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$. म्हणून $\Gamma \Proves \lfalse$.
+
+% prop:provability-lor-left
+\tagitem{defOr}{}{
+\iftag{probOr}{सराव.}{सराव.}}
+
+% prop:provability-lor-right
+\tagitem{defOr}{}{ \iftag{probOr}{सराव.}{
+$\Gamma_0 \Proves !A$ असे गृहीत धरा.
+
+\begin{derivation}
+1. & $\Gamma_0 \Proves !A$ & गृहीत \\
+2. & $\Gamma_0 \Proves !A \lif (!A \lor !B)$ & Ax0\\
+3. & $\Gamma_0 \Proves !A \lor !B$ & MP 1, 2 \\
+\end{derivation}
+
+म्हणून $\Gamma \Proves !A \lor !B$. $\Gamma \Proves !B$ असल्यास
+सिद्धताही याचप्रमाणे मिळते.}}
+
+% prop:provability-land-left
+\tagitem{defAnd}{}{ \iftag{probAnd}{सराव}{
+$\Gamma_0 \Proves !A \land !B$ असे गृहीत धरा
+
+\begin{derivation}
+1. & $\Gamma_0 \Proves !A \land !B$ & गृहीत \\
+2. & $\Gamma_0 \Proves (!A\land !B) \lif !A $ & Ax0\\
+3. & $\Gamma_0 \Proves !A$ & MP 1, 2 \\
+\end{derivation}
+%READERNOTE{OLINC-322: A आणि B यांच्या संयुक्तातून A काढणाऱ्या हिशोबात स्रोताच्या तिसऱ्या ओळीत चुकीने A किंवा B आहे.}
+
+म्हणून $\Gamma \Proves !A$. याचप्रमाणे सुरू होणारे !!{derivation}
+$\Gamma \Proves !B$ हे दाखवते.}}
+
+% prop:provability-land-right
+\tagitem{defAnd}{}{\iftag{probAnd}{सराव.}{सराव.}}
+
+% prop:provability-mp
+\tagitem{defIf}{}{ \iftag{probIf}{सराव.}{ $\Gamma_0 \Proves !A$ आणि $\Gamma_0 \Proves !A \lif !B $ ही दोन्ही गृहीत धरा.
+
+\begin{derivation}
+1. & $\Gamma_0 \Proves !A$ & गृहीत \\
+2. & $\Gamma_0 \Proves !A \lif !B $ & गृहीत\\
+3. & $\Gamma_0 \Proves !B$ & MP 1, 2\\
+\end{derivation}
+
+कारण $\Gamma_0 \subseteq \Gamma$, यावरून $\Gamma
+\Proves !B$ मिळते.}}
+%READERNOTE{OLINC-323: या हिशोबात Gamma_1 परिभाषित नाही; वापरलेला परिमित आधारसंच Gamma_0 आहे.}
+
+% prop:provability-lif
+\tagitem{defIf}{}{\iftag{probIf}{सराव.}{प्रथम $\Gamma \Proves \lnot !A$ असे माना.
+
+\begin{derivation}
+1. & $\Gamma_0 \Proves \lnot !A$ & गृहीत \\
+2. & $\Gamma_0 \Proves \lnot !A \lif (!A \lif !B) $ & Ax0\\
+3. & $\Gamma_0 \Proves !A \lif !B$ & MP 1,
+2\\ \end{derivation}
+
+$\Gamma \Proves !B$ यासाठीही सिद्धता याचप्रमाणे आहे:
+
+\begin{derivation}
+1. & $\Gamma_0 \Proves !B$ & गृहीत \\
+2. & $\Gamma_0 \Proves !B \lif (!A \lif !B) $ & Ax0\\
+3. & $\Gamma_0 \Proves !A \lif !B$ & MP 1, 2\\
+\end{derivation}}}
+
+\end{enumerate}
+\end{proof}
+
+\begin{probtag}{probOr,probAnd,probIf}
+\olref[fol][axd][prv]{prop:provability} ची सिद्धता पूर्ण करा.
+\end{probtag}
+
+\begin{thm}[व्यापकीकरण] \ollabel{thm:Generalization} जर $\Gamma \Proves
+!A$ असेल आणि $x$ हे $\Gamma$ मधील कोणत्याही !!{formula} मध्ये मुक्त नसेल,
+तर $\Gamma \Proves \lforall[x][!A]$.
+\end{thm}
+
+\begin{proof} $\mathsf{Thm}_\Gamma$ वर आगमन वापरा: जर $!A$ स्वयंसिद्धक
+असेल, तर $\lforall[x][!A]$ हेसुद्धा स्वयंसिद्धक असते. जर $!A\in \Gamma$
+असेल, तर $x$ हे $!A$ मध्ये मुक्त नसते. म्हणून $!A \lif \lforall[x][!A]$
+हे स्वयंसिद्धक (\textbf{Ax3}) आहे आणि विध्यात्मक अनुमानाने $\Gamma
+\Proves \lforall[x][!A]$. आता $\Gamma \Proves !B$ आणि $\Gamma \Proves
+!B \lif !A$ यांमुळे विध्यात्मक अनुमानाने $!A$ मिळते असे माना. आगमन
+गृहीतकानुसार $\Gamma \Proves \lforall[x][!B]$ आणि $\Gamma \Proves
+\lforall[x][( !B \lif !A)]$. परंतु \textbf{Ax2} मुळे पुढीलही मिळते:
+\[ \Gamma \Proves
+\lforall[x][( !B \lif !A)] \lif (\lforall[x][ !B] \lif \lforall[x][!A]), \]
+आणि विध्यात्मक अनुमान दोनदा वापरल्यावर अपेक्षेप्रमाणे $\Gamma \Proves
+\lforall[x][!A]$ मिळते. \end{proof}
+
+\begin{thm}\ollabel{thm:WeakGen} (\emph{स्थिरांकांवरील दुर्बल व्यापकीकरण})
+जर $\Gamma \Proves !A$ असेल आणि $c$ हा $\Gamma$ मध्ये न येणारा
+!!a{constant} असेल, तर $!A$ मध्ये न येणारा असा चल $x$ असतो की
+$\Gamma \Proves \lforall[x][\Subst{!A}{x}{c}]$; आणि सिद्धतेत $c$ येत नाही.
+\end{thm}
+
+\begin{proof} $!A_1,\ldots,!A_n$ ही $\Gamma$ पासून $!A$ ची सिद्धता
+असू द्या; म्हणजे $!A=!A_n$. $!A_1,\ldots,!A_n$ यांमध्ये न येणारा चल $x$
+निवडा आणि पुढील नवा अनुक्रम पाहा:
+$\Subst{!A_1}{x}{c},\ldots,\Subst{!A_n}{x}{c}.$ हा अनुक्रम
+$\Gamma$ पासून $\Subst{!A}{x}{c}$ ची सिद्धता असतो. खरेच, प्रत्येक
+$i=1,\ldots,n$ साठी: \begin{itemize}
+\item जर $!A_i$ स्वयंसिद्धक असेल, तर $\Subst{!A_i}{x}{c}$ हेसुद्धा स्वयंसिद्धक असते;
+\item जर $!A_i \in \Gamma$ असेल, तर $c$ हे $\Gamma$ मध्ये नसल्यामुळे
+$\Subst{!A_i}{x}{c} = !A_i \in \Gamma$;
+\item जर $!A_i$ हे $!A_j$ आणि $!A_j \lif !A_i$ यांपासून मिळाले असेल,
+तर $\Subst{!A_i}{x}{c}$ हे $\Subst{!A_j}{x}{c}$ आणि
+$\Subst{(!A_j \lif !A_i)}{x}{c}
+= \Subst{!A_j}{x}{c} \lif \Subst{!A_i}{x}{c}$ यांपासून विध्यात्मक
+अनुमानाने मिळते. \end{itemize}
+नव्या अनुक्रमात !!{constant} $c$ उरलेला नाही, हे स्पष्ट आहे. आता
+$\Subst{!A}{x}{c}$ च्या !!{derivation} मध्ये येणाऱ्या $\Gamma$ मधील
+!!{formula}s चा संच $\Gamma'$ असू द्या. मग $\Gamma'$ मधील कोणत्याही
+!!{formula} मध्ये $x$ मुक्त नाही आणि $\Gamma' \Proves \Subst{!A}{x}{c}$.
+व्यापकीकरणाने (\olref{thm:Generalization}) $\Gamma'
+\Proves \lforall[x][\Subst{!A}{x}{c}]$; म्हणून एकस्वनिकतेने
+अपेक्षेप्रमाणे $\Gamma \Proves
+\lforall[x][\Subst{!A}{x}{c}]$. \end{proof}
+%READERNOTE{OLINC-325: सिद्धता-अनुक्रमाच्या प्रत्येक टप्प्यातील स्वयंसिद्धक A_i आहे; स्रोताने A म्हटले आहे.}
+
+\begin{explain}
+\olref{thm:WeakGen} मधील $x$ हा $!A$ मध्ये (अजिबात) येत नाही, ही अट
+कमकुवत करून $x$ हा $!A$ मध्ये मुक्त नाही आणि $!A$ मध्ये $c$ च्या जागी
+बसवण्यासाठी !!{free for} आहे, इतक्याच अटी ठेवणे हे आपले उद्दिष्ट आहे.
+बद्ध !!{variable} बदलल्यास हे करता येते; म्हणून प्रथम तो बदल सिद्ध करू.
+\end{explain}
+
+\begin{lem}
+\ollabel{lem:free-for}
+जर $x$ हा $!A$ मध्ये $c$ च्या जागी बसवण्यासाठी मुक्त असेल आणि $y$
+हा $!A$ मध्ये मुक्त नसेल, तर $x$ हा $\Subst{!A}{y}{c}$ मध्ये
+$y$ च्या जागी बसवण्यासाठी !!{free for} असतो.
+\end{lem}
+
+\begin{proof} जर $x$ हा $\Subst{!A}{y}{c}$ मध्ये $y$ च्या जागी
+बसवण्यासाठी !!{free for} नसेल, तर $\Subst{!A}{y}{c}$ मधील $y$ चा एखादा
+मुक्त उद्भव $\lforall[x]$ या संख्यापकाच्या कार्यक्षेत्रात येतो. पण
+गृहीतकानुसार $y$ हा $!A$ मध्ये मुक्त नाही; म्हणून असे सर्व उद्भव
+$\Subst{}{y}{c}$ या आदेशनातूनच येतात. अशा रीतीने $c$ चा एखादा
+उद्भव $\lforall[x]$ च्या कार्यक्षेत्रात येतो आणि $x$ हा $!A$ मध्ये
+$c$ च्या जागी बसवण्यासाठी !!{free for} राहत नाही.
+\end{proof}
+%READERNOTE{OLINC-324: पहिल्या आदेशनात स्रोताने c ऐवजी x लिहिला आहे; उरलेल्या विधानानुसार c केला आहे.}
+
+\begin{lem}[बद्ध चराचा बदल]
+\ollabel{lem:ChangeBdVar}
+जर $x$ आणि $y$ हे $!A$ मध्ये मुक्त नसतील आणि $!A$ मध्ये $c$ च्या जागी
+बसवण्यासाठी दोन्ही !!{free for} असतील, तर
+$\Proves \lforall[x][\Subst{!A}{x}{c}] \equiv
+\lforall[y][\Subst{!A}{y}{c}]$ (आणि सिद्धतेत $c$ येत नाही).
+\end{lem}
+
+\begin{proof}
+गृहीतकांनुसार $y$ हा $!A$ मध्ये $c$ च्या जागी बसवण्यासाठी !!{free for}
+आहे आणि $x$ हा $!A$ मध्ये मुक्त नाही. म्हणून मागील
+\olref{lem:free-for} वरून $y$ हा $\Subst{!A}{x}{c}$ मध्ये $x$ च्या
+जागी बसवण्यासाठी !!{free for} आहे. त्यामुळे
+$\lforall[x][\Subst{!A}{x}{c} \lif \Subst{!A}{x}{c} \Subst{}{y}{x}]$
+हे स्वयंसिद्धक (\textbf{Ax1}) आहे. $x$ हा $!A$ मध्ये मुक्त नसल्यामुळे
+$\Subst{!A}{x}{c} \Subst{}{y}{x} = \Subst{!A}{y}{c}$; म्हणून
+\[
+\Proves \lforall[x][\Subst{!A}{x}{c}] \lif \Subst{!A}{y}{c},
+\]
+आणि निगमन प्रमेयाने $\lforall[x][\Subst{!A}{x}{c}] \Proves
+\Subst{!A}{y}{c}$. $y$ हा $!A$ मध्ये मुक्त नसल्यामुळे तो
+$\lforall[x][\Subst{!A}{x}{c}]$ मध्येही मुक्त नाही. त्यामुळे
+व्यापकीकरणाने $\lforall[x][\Subst{!A}{x}{c}] \Proves
+\lforall[y][\Subst{!A}{y}{c}]$; पुन्हा निगमन प्रमेयाने
+$\Proves \lforall[x][\Subst{!A}{x}{c}] \lif
+\lforall[y][\Subst{!A}{y}{c}]$. उलट दिशेची
+$\Proves \lforall[y][\Subst{!A}{y}{c}] \lif \lforall[x]
+[\Subst{!A}{x}{c}]$ ही सिद्धता पूर्णपणे सममित आहे; त्यामुळे
+निष्कर्ष Taut वापरून मिळतो.
+\end{proof}
+
+\begin{thm}[स्थिरांकांवरील प्रबळ व्यापकीकरण]
+\ollabel{thm:StrongGen}
+जर $\Gamma \Proves !A$ असेल, !!{constant} $c$ हा $\Gamma$ मध्ये येत
+नसेल, आणि $x$ हा $!A$ मध्ये मुक्त नसेल पण $!A$ मध्ये $c$ च्या जागी
+बसवण्यासाठी !!{free for} असेल, तर
+$\Gamma \Proves \lforall[x][\Subst{!A}{x}{c}]$.
+\end{thm}
+
+\begin{proof}
+$\Gamma \Proves !A$ आणि $c$ हा $\Gamma$ मध्ये नाही; म्हणून दुर्बल
+व्यापकीकरणाने $!A$ मध्ये न येणारा !!a{variable} $y$ असतो की
+$\Gamma \Proves \lforall[y][\Subst{!A}{y}{c}]$. $y$ हा $!A$ मध्ये
+(अजिबात) येत नसल्यामुळे तो $!A$ मध्ये मुक्तही नसतो आणि $!A$ मध्ये
+$c$ च्या जागी बसवण्यासाठी !!{free for} असतो. गृहीतकानुसार $x$ हाही
+$!A$ मध्ये मुक्त नाही आणि $!A$ मध्ये $c$ च्या जागी बसवण्यासाठी !!{free for}
+आहे; म्हणून बद्ध !!{variable} बदलण्याच्या अटी पूर्ण होतात. त्यामुळे
+$\Proves \lforall[x][\Subst{!A}{x}{c}] \equiv
+\lforall[y][\Subst{!A}{y}{c}]$; म्हणून
+$\Gamma \Proves \lforall[x][\Subst{!A}{x}{c}]$.
+\end{proof}
+
+\begin{thm}
+\ollabel{thm:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{जर $\Gamma \Proves !A(t)$ असेल, तर $\Gamma \Proves
+  \lexists[x][!A(x)]$.}{}
+\tagitem{prvAll}{जर $\Gamma \Proves \lforall[x][!A(x)]$ असेल, तर $\Gamma
+  \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{thm}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+%%अस्तित्व-संख्यापकासाठी स्वयंसिद्धके आवश्यक आहेत
+\tagitem{prvEx}{सराव.}{}
+\tagitem{prvAll} {असे गृहीत धरा की  $\Gamma_0 \Proves \lforall[x][!A(x)]$.
+
+\begin{derivation}
+1. & $\Gamma_0 \Proves \lforall[x][!A(x)]$ & गृहीत \\
+2. & $\Gamma_0 \Proves \lforall[x][!A(x)] \lif \Subst{!A}{t}{x}$ & Ax1 \\
+3. & $\Gamma_0 \Proves \Subst{!A}{t}{x}$ & MP 1, 2 \\
+\end{derivation}}{}
+
+\end{tagenumerate}
+\end{proof}
+
+\end{document}
