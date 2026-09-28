@@ -68,6 +68,18 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0660': [
+        # OLINC-347: the displayed cut premiss has a transposed formula marker.
+        (r'\Deduce$!B, \Gamma \fCenter \Delta, !C$'
+         '\n' r'\AxiomC{}' '\n' r"\RightLabel{$\pi_2''$}",
+         r'\Deduce$B!, \Gamma \fCenter \Delta, !C$'
+         '\n' r'\AxiomC{}' '\n' r"\RightLabel{$\pi_2''$}"),
+        # OLINC-348: ordinary Cut must concatenate both premiss contexts.
+        (r'\BinaryInf$\Gamma, \Gamma, \Pi, \Pi, \Pi \fCenter \Delta, \Delta, \Lambda, \Lambda, \Lambda$',
+         r'\BinaryInf$!B, \Gamma, \Pi \fCenter \Delta, \Lambda$'),
+        (r'\Gamma, \Pi, \Pi, \Pi \fCenter \Delta, \Delta, \Lambda, \Lambda, \Lambda$',
+         r'\Gamma, \Pi, \Pi, \Pi \fCenter \Delta, \Lambda, \Lambda, \Lambda$'),
+    ],
     'OLP-0658': [
         # OLINC-345: the interpolant may contain the fresh parameter constants.
         (r'$\Lang L(!A) \subseteq'

@@ -1,0 +1,90 @@
+$!A \ident (!B \lif !C)$ असेल, तर
+$\pi$ चा शेवट असा असतो:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$\Gamma \fCenter \Delta, !B \lif !C$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B \lif !C, \Pi \fCenter \Lambda, !B$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Pi \fCenter \Lambda$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!B \lif !C, \Pi \fCenter \Lambda$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\Cut}
+\BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\]
+\Cut ने संपणारी !!{proof} पुढीलप्रमाणे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$\Gamma \fCenter \Delta, !B \lif !C$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B \lif !C, \Pi \fCenter \Lambda, !B$
+\RightLabel{\Cut}
+\BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda, !B$
+\DisplayProof
+\]
+तिची कटची !!{height}
+$\pi$ च्या कट-उंचीपेक्षा कमी आहे.
+विगमन गृहीतकाने
+$\Gamma, \Pi \fCenter \Delta, \Lambda, !B$
+याची !!a{proof}~$\pi_1''$ मिळते.
+\Cut ने संपणारी दुसरी
+!!{proof} अशी आहे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Pi \fCenter \Lambda$
+\RightLabel{\Cut}
+\BinaryInf$!B, \Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\]
+तिची कट-कोटी आणि
+कटची !!{height} या दोन्ही
+$\pi$ च्या कट-कोटी आणि
+कटच्या !!{height} पेक्षा कमी आहेत.
+म्हणून विगमन गृहीतक आणि
+दुर्बलीकरण वापरून
+$!B, \Gamma, \Pi, \Pi \fCenter \Delta, \Lambda,
+\Lambda$ याची
+~\Log{G3c} मधील !!{proof}~$\pi_2'''$
+मिळते. आता पुढील
+\Cut ने संपणाऱ्या
+!!{proof} वर विगमन
+गृहीतक लावा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma, \Pi \fCenter \Delta, \Lambda, !B$
+\AxiomC{}
+\RightLabel{$\pi_2'''$}
+\Deduce$!B, \Gamma, \Pi, \Pi \fCenter \Delta, \Lambda,
+\Lambda$
+\RightLabel{\Cut}
+\BinaryInf$\Gamma, \Gamma, \Pi, \Pi, \Pi \fCenter \Delta, \Delta, \Lambda, \Lambda, \Lambda$
+\DisplayProof
+\]
+(हिची कट-कोटी
+$< \cutr{\pi}$ आहे.)
+त्यातून
+$\Gamma,
+\Gamma, \Pi, \Pi, \Pi \fCenter \Delta, \Delta, \Lambda, \Lambda, \Lambda$
+याची !!a{proof} मिळते.
+मग \olref[seq][inv]{prop:G3c-cont-adm}
+लावून
+$\Gamma, \Pi \fCenter \Delta, \Lambda$
+याची !!{proof}~$\pi'$ मिळते.
