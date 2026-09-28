@@ -20,6 +20,8 @@ base = base.replace(
     r"\usepackage{microtype}",
     r"\usepackage{cleveref}" + "\n" +
     r"\crefname{lem}{पूर्वप्रमेय}{पूर्वप्रमेये}" + "\n" +
+    r"\newcommand{\lnand}{\mathbin{\uparrow}}" + "\n" +
+    r"\newcommand{\lnor}{\mathbin{\downarrow}}" + "\n" +
     r"\usepackage{microtype}",
     1,
 )
