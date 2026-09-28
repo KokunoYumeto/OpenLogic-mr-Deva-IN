@@ -68,6 +68,48 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0670': [
+        # OLINC-366: the nonempty succedent fixes C as A.
+        (r' आणि $!C \ident !A$', ''),
+        # OLINC-367: the source proof names a nonexistent G2ci system.
+        (r'\Log{G2i} + \Cut मध्ये', r'\Log{G2ci} मध्ये'),
+        # OLINC-369: the left weakening tree has a right-rule label.
+        (r'\RightLabel{\LeftR{\Weakening}}' + '\n' +
+         r'    \UnaryInf$!A, \Gamma \fCenter \Delta$',
+         r'\RightLabel{\RightR{\Weakening}}' + '\n' +
+         r'    \UnaryInf$!A, \Gamma \fCenter \Delta$'),
+        # OLINC-370: multiset addition must retain the new copy.
+        (r'$!A, \Gamma$ मधील~$!A$',
+         r'$\Gamma \cup \{!A\}$ मधील~$!A$'),
+        # OLINC-371: the N2i derivation, rather than the G2i premiss,
+        # is the object whose labels are identified after contraction.
+        (r'!!a{proof}~$\delta_1$ मिळते;' + '\n' +
+         r'    येथे $\Pi \subseteq',
+         r'!!a{proof} मिळते;' + '\n' +
+         r'    येथे $\Pi \subseteq'),
+        (r'तर~$\delta_1$ मधील', r'तर~$\pi_1$ मधील'),
+        (r'~$\delta_1$ च्या अंतिम क्रमवर्तीच्या',
+         r'~$\pi_1$ च्या अंतिम क्रमवर्तीच्या'),
+        (r'~$\delta_1$ मधील कोणतेही अनुमान',
+         r'~$\pi_1$ मधील कोणतेही अनुमान'),
+        (r'~$\delta_1$ मधील' + '\n' + r'    कोणत्याही क्रमवर्तीच्या',
+         r'~$\pi_1$ मधील' + '\n' + r'    कोणत्याही क्रमवर्तीच्या'),
+        # OLINC-373: implication-left relabels delta1, and its
+        # elimination tree carries the first premiss's context.
+        (r'अन्यथा~$\delta_1$ मधील',
+         r'अन्यथा~$\pi_1$ मधील'),
+        (r"\BinaryInf$x: !A \lif !B, \Gamma_1' \fCenter !B$",
+         r'\BinaryInf$x: !A \lif !B \fCenter !B$'),
+        # OLINC-374: right conjunction uses B as its second conclusion,
+        # and the relabelling is in the derived N2i proof.
+        (r"$\Gamma_2' \Sequent !B$ ची",
+         r"$\Gamma_2' \Sequent !A$ ची"),
+        (r'~$\delta_2$ मधील सर्व सूत्रांच्या',
+         r'~$\pi_2$ मधील सर्व सूत्रांच्या'),
+        # OLINC-375: the cut graft needs disjoint labels.
+        (r'~$\delta_1$ मधील खुणा बदलून',
+         r'खुणा बदलून'),
+    ],
     'OLP-0669': [
         # OLINC-364: the labelled formula in the N2 proof tree is x:!B.
         (r'\RightLabel{$\delta_1'+"'"+r'$}' + '\n' +

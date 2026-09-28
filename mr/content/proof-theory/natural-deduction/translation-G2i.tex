@@ -1,0 +1,307 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: translation-G2i
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{tgi}
+
+\olsection{\Log{G2i} पासून \Log{N2i} मध्ये रूपांतर}
+
+~\Log{G2i} मधील क्रमवर्तींचे पूर्वपक्ष हे
+!!{formula}s यांचे बहुसंच~$\Gamma$ असतात; तर
+\Log{N2i} मधील क्रमवर्तींचे पूर्वपक्ष हे
+खूण लावलेल्या सूत्रांचे संच~$\Gamma'$ असतात.
+त्यांतील प्रत्येक खूण फक्त एकदाच येते.
+खूण लावलेल्या !!{formula}s चा संच~$\Gamma'$
+हा बहुसंच~$\Gamma$ शी \emph{अनुरूप आहे} असे
+तेव्हाच म्हणू, जेव्हा प्रत्येक !!{formula}~$!A$
+साठी $x : !A$ या रूपातील~$\Gamma'$ चे
+!!{element}s जितके आहेत तितकी संख्या
+~$\Gamma$ मध्ये~$!A$ जितक्या वेळा येते
+(म्हणजे~$!A$ च्या प्रती जितक्या आहेत) त्या
+संख्येपेक्षा अधिक नसते.
+
+\begin{prop}\ollabel{prop:G2i-to-N2i}
+$\Log{G2i} + \Cut \Proves \Gamma \Sequent \Delta$
+असेल, तर
+$\Log{N2i} \Proves \Gamma' \Sequent !C$.
+येथे~$\Delta$ रिकामा असेल तर
+$!C \ident \lfalse$; अन्यथा
+$\Delta = \{!A\}$ आणि $!C \ident !A$.
+तसेच~$\Gamma'$ हा~$\Gamma$ शी अनुरूप आहे.
+\end{prop}
+
+\begin{proof}
+  ~$\pi$ ही~\Log{G2i} + \Cut मध्ये
+  $\Gamma \Sequent \Delta$ ची
+  !!a{proof} असेल, तर~$\Gamma$
+  शी अनुरूप असा~$\Gamma'$ आणि
+  ~\Log{N2i} मध्ये
+  ~$\Gamma' \Sequent !C$ ची
+  !!a{proof}~$\delta$ मिळते,
+  हे दाखवू. त्यासाठी
+  $n = \pheight{\pi}$
+  यावर विगमन करू.
+
+  $n = 0$ असेल, तर~$\pi$
+  हे स्वयंसिद्धक आहे.
+  ते $\lfalse \Sequent \quad$
+  असे असेल, तर~$\delta$
+  हे $x:\lfalse \Sequent \lfalse$
+  स्वयंसिद्धक; म्हणजे
+  $\Gamma' = \{x:\lfalse\}$
+  आणि $!C \ident \lfalse$.
+  ~$\pi$ हे $!A \Sequent !A$
+  या रूपाचे स्वयंसिद्धक असेल,
+  तर~$\delta$ हे
+  $x: !A \Sequent !A$.
+
+  $n>0$ असेल, तर~$\pi$
+  चा शेवट~$R$ या नियमात होतो.
+  विगमन गृहीतकानुसार त्या नियमाच्या
+  आधारविधानांशी अनुरूप क्रमवर्तींच्या
+  !!{proof}s ~\Log{N2i} मध्ये मिळतात.
+  या सिद्धतांतील सर्व मुक्तीच्या खुणा
+  वेगवेगळ्या आहेत, आणि एखादी खूण~$x$
+  मुक्त होत असेल तर तिला मुक्त करणाऱ्या
+  अनुमानाच्या वरच येते, असे गृहीत धरू
+  शकतो; गरज पडल्यास खुणा बदलू शकतो.
+  या !!{proof}s एकत्र करून योग्य
+  $\Gamma' \Sequent !C$ ची सिद्धता
+  कशी मिळते ते आता~$R$ नुसार पाहू.
+
+  \begin{enumerate}
+    \item $R$ हा \RightR{\Weakening} असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter$
+    \RightLabel{\RightR{\Weakening}}
+    \UnaryInf$\Gamma \fCenter !A$
+    \DisplayProof
+    \]
+    ~$\pi_1$ वर विगमन गृहीतक लावल्यास
+    $\Gamma' \Sequent \lfalse$ ची
+    !!a{proof} मिळते. तिला~$\FalseInt$
+    लावून $\Gamma' \Sequent !A$ ची
+    !!a{proof} मिळते.
+    \item $R$ हा \LeftR{\Weakening} असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Weakening}}
+    \UnaryInf$!A, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    ~$\pi_1$ वर विगमन गृहीतक लावल्यास
+    $\Gamma' \Sequent !C$ ची
+    !!a{proof} मिळते; तीच~$\delta$ घेऊ.
+    ~$\Gamma'$ हा~$\Gamma$ शी अनुरूप असेल,
+    तर तो $!A, \Gamma$ शीही अनुरूप असतो.
+    कारण~$\Gamma'$ मधील $x : !A$ ची संख्या
+    ही~$\Gamma$ मधील~$!A$ च्या प्रतींपेक्षा
+    अधिक नाही; त्यामुळे ती
+    $!A, \Gamma$ मधील~$!A$
+    च्या प्रतींपेक्षाही अधिक नाही.
+    \item $R$ हा \LeftR{\Contraction} असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$!A, !A, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Contraction}}
+    \UnaryInf$!A, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    ~$\pi_1$ वर विगमन गृहीतक लावल्यास
+    $\Pi, \Gamma' \Sequent !C$ ची
+    !!a{proof}~$\delta_1$ मिळते;
+    येथे $\Pi \subseteq \{x : !A,
+    y:!A\}$. $\Pi = \{x : !A, y:!A\}$
+    असेल, तर~$\delta_1$ मधील
+    सर्व खूण लावलेली !!{formula}s~$y:!A$
+    ही~$x:!A$ ने बदला.
+    ~$\delta_1$ च्या अंतिम क्रमवर्तीच्या
+    संदर्भात~$x$ असल्यामुळे
+    ~$\delta_1$ मधील कोणतेही अनुमान
+    $x:!B$ या रूपाचे !!a{formula}
+    मुक्त करत नाही, असे धरता येते;
+    म्हणजे~$\delta_1$ मधील
+    कोणत्याही क्रमवर्तीच्या डाव्या बाजूवरील
+    $x:!B$ सक्रिय नसते.
+    म्हणून बदललेली सिद्धता अजूनही
+    ~\Log{N2i} मधील !!a{proof} असते.
+    \item $R$ हा $\RightR{\lif}$ असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$!A, \Gamma \fCenter !B$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\Gamma \fCenter !A \lif !B$
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $x: !A, \Gamma' \Sequent !B$
+    किंवा $\Gamma' \Sequent !B$
+    ची !!a{proof}~$\delta_1$ मिळते;
+    येथे~$\Gamma'$ हा~$\Gamma$ शी
+    अनुरूप आहे. ~$\delta_1$ ला
+    \Intro{\lif} चे एक अनुमान जोडून
+    मिळणारी सिद्धता~$\delta$ घेऊ.
+    \item $R$ हा \LeftR{\lif} असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter !A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$!B, \Gamma_2 \fCenter \Delta$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, \Gamma_1, \Gamma_2 \fCenter \Delta$
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार !!{proof}s मिळतात:
+    $\delta_1$ ही $\Gamma_1' \Sequent !A$ ची;
+    आणि~$\delta_2$ ही
+    $x: !B, \Gamma_2' \Sequent !C$
+    किंवा $\Gamma_2' \Sequent !C$ ची.
+    ~$\delta_2$ दुसऱ्या रूपात असेल,
+    तर~$\delta_2$ हीच~$\delta$ घेऊ.
+    अन्यथा~$\delta_1$ मधील
+    सर्व सूत्रांच्या आणि मुक्तीच्या खुणा
+    बदलून~$\delta_1$ व~$\delta_2$
+    यांत कोणतीही खूण समान नसल्याची
+    खात्री करू शकतो. मग
+    $\Gamma_1' \cup \Gamma_2'$ हा
+    $\Gamma_1 \cup \Gamma_2$ शी अनुरूप आहे.
+    ~$\delta_2$ च्या अंतिम क्रमवर्तीत
+    $x:!B$ असल्यामुळे
+    ~$\delta_2$ मधील~$x$ या
+    मुक्ती-खुणेच्या कोणत्याही अनुमानात
+    $x:!B$ सक्रिय नसते.
+    ~$\delta_2$ मधील प्रत्येक
+    $x:!B \Sequent !B$ स्वयंसिद्धकाच्या
+    जागी पुढील !!{proof}~$\delta_3$ ठेवा:
+    \[
+    \Axiom$x: !A \lif !B \fCenter !A \lif !B$
+    \AxiomC{}
+    \RightLabel{$\delta_1$}
+    \Deduce$\Gamma_1' \fCenter !A$
+    \RightLabel{\Elim{\lif}}
+    \BinaryInf$x: !A \lif !B, \Gamma_1' \fCenter !B$
+    \DisplayProof
+    \]
+    आणि~$\delta_2$ मधील प्रत्येक
+    $x:!B$ च्या जागी $x:!A \lif !B$
+    ठेवा. परिणामी
+    $\Subst{\delta_2}{\delta_3}{x:!B}$
+    ही $x:!A \lif !B, \Gamma_1', \Gamma_2' \Sequent !C$
+    ची !!a{proof} आहे.
+    \item $R$ हा \RightR{\land} असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter !A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\Gamma_2 \fCenter !B$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma_1, \Gamma_2 \fCenter !A \land !B$
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $\Gamma_1' \Sequent !A$ ची
+    सिद्धता~$\delta_1$ आणि
+    $\Gamma_2' \Sequent !B$ ची
+    सिद्धता~$\delta_2$ मिळते.
+    ~$\delta_2$ मधील सर्व सूत्रांच्या
+    आणि मुक्तीच्या खुणा बदलून
+    ~$\delta_1$ व~$\delta_2$ यांत
+    कोणतीही खूण समान नसल्याची
+    खात्री करता येते. मग
+    $\Gamma_1' \cup \Gamma_2'$ हा
+    $\Gamma_1 \cup \Gamma_2$ शी अनुरूप आहे.
+    ~$\delta_1$ आणि~$\delta_2$
+    यांच्या अंतिम क्रमवर्तींना
+    $\Intro{\land}$ लावून
+    !!a{proof}~$\delta$ मिळते.
+    \item $R$ हा $\LeftR{\land}$ असेल,
+    तर, उदाहरणार्थ, ~$\pi$ चा
+    शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$!A, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $x: !A, \Gamma' \Sequent !C$
+    किंवा $\Gamma' \Sequent !C$
+    ची !!a{proof}~$\delta_1$ मिळते;
+    येथे~$\Gamma'$ हा~$\Gamma$ शी
+    अनुरूप आहे. दुसऱ्या प्रसंगी
+    ~$\delta_1$ हीच~$\delta$ घेऊ.
+    पहिल्या प्रसंगी~$x:!A$
+    अंतिम क्रमवर्तीत असल्यामुळे
+    ~$\delta_1$ मधील~$x$ या
+    मुक्ती-खुणेच्या कोणत्याही अनुमानात
+    $x:!A$ सक्रिय नसते.
+    प्रत्येक $x:!A \Sequent !A$
+    स्वयंसिद्धकाच्या जागी
+    पुढील !!{proof}~$\delta_2$ ठेवा:
+    \[
+    \Axiom$x: !A \land !B \fCenter !A \land !B$
+    \RightLabel{\Elim{\land}}
+    \UnaryInf$x: !A \land !B \fCenter !A$
+    \DisplayProof
+    \]
+    आणि प्रत्येक~$x:!A$ च्या जागी
+    $x:!A \land !B$ ठेवा; म्हणजे
+    $\Subst{\delta_1}{\delta_2}{x:!A}$
+    घ्या. ही $x:!A \land !B, \Gamma' \Sequent !C$
+    ची !!a{proof} आहे.
+    \item $R$ हा \Cut असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter !A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$!A, \Gamma_2 \fCenter \Delta$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma_1, \Gamma_2 \fCenter \Delta$
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $\Gamma_1' \Sequent !A$ ची
+    सिद्धता~$\delta_1$ आणि
+    $x:!A, \Gamma_2' \Sequent !C$
+    किंवा $\Gamma_2' \Sequent !C$
+    ची सिद्धता~$\delta_2$ मिळते.
+    दुसऱ्या प्रसंगी~$\delta$
+    म्हणून~$\delta_2$ घ्या.
+    अन्यथा, गरज असल्यास
+    ~$\delta_1$ मधील खुणा बदलून
+    दोन सिद्धतांच्या खुणा वेगळ्या करा.
+    ~$\delta_2$ मधील प्रत्येक
+    $x:!A \Sequent !A$ स्वयंसिद्धकाच्या
+    जागी~$\delta_1$ ठेवून
+    $\Subst{\delta_2}{\delta_1}{x:!A}$
+    ही $\Gamma_1', \Gamma_2' \Sequent !C$
+    ची !!{proof}~$\delta$ मिळते.
+  \end{enumerate}
+\end{proof}
+
+\end{document}
