@@ -68,6 +68,25 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0683': [
+        # OLINC-406: new formulas require indices above the old maximum k.
+        (r'\Axiom$!B^{k+1}, !C^{k+2}, \Pi \fCenter \Lambda$',
+         r'\Axiom$!B^k, !C^{k+1}, \Pi \fCenter \Lambda$'),
+        (r'\Axiom$\Pi \fCenter \Lambda, !B^{k+1}$',
+         r'\Axiom$\Pi \fCenter \Lambda, !B^k$'),
+        (r'\Axiom$\Pi \fCenter \Lambda, !C^{k+1}$',
+         r'\Axiom$\Pi \fCenter \Lambda, !C^k$'),
+        (r'\Axiom$!B(c)^{k+1}, \Pi \fCenter \Lambda$',
+         r'\Axiom$!B(c)^k, \Pi \fCenter \Lambda$'),
+        (r'\lexists[x][!B(x)]^{k+1}, !B(t)^{k+2}$',
+         r'\lexists[x][!B(x)]^k, !B(t)^{k+1}$'),
+        # OLINC-407: existential elimination on the right uses RightR.
+        (r'\RightLabel{\RightR{\lexists}}',
+         r'\RightLabel{\LeftR{\lexists}}'),
+        # OLINC-408: the right principal occurrence already has index i.
+        (r'\lexists[x][!B(x)]^i$ च्या वर एक नवी',
+         r'\lexists[x][!B(x)]$ च्या वर एक नवी'),
+    ],
     'OLP-0679': [
         # OLINC-401: restore the missing formula letter on the right.
         (r'$!A \in \Delta$ साठी', r'$! \in \Delta$ साठी'),
