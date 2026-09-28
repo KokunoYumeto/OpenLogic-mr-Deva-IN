@@ -1,0 +1,779 @@
+% Part: proof-theory
+% Chapter: cut-elimination
+% Section: interpolation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{cut}{itp}
+
+\olsection{माएहाराचे उपप्रमेय आणि क्रेगचे अंतर्वेशन प्रमेय}
+
+विल्यम क्रेग यांचे अंतर्वेशन प्रमेय असे सांगते:
+$!A \Entails !B$ असेल, तर असे !!a{sentence}~$!C$
+असते (त्याला \emph{अंतर्वेशक} म्हणतात) की
+$!A \Entails !C$ आणि $!C \Entails !B$.
+विशेष म्हणजे, $!C$ मधील सर्व !!{constant}s आणि
+!!{predicate}s हे $!A$ व $!B$ या दोन्हींमध्ये येतील
+असे $!C$ निवडता येते. (येथे कोणतीही !!{function}s
+नाहीत असे गृहीत धरतो.) ही अट नसेल, तर
+$!A$ आणि $!B$ हेच सहजपणे अंतर्वेशक ठरतील.
+
+अंतर्वेशन प्रमेय अभिजात प्रथम-क्रम तर्कशास्त्राला लागू होते.
+त्याचा शोध प्रथम-क्रम तर्कशास्त्राचा “शेवटचा महत्त्वाचा गुणधर्म”
+शोधला गेल्याप्रमाणे वर्णिला गेला आहे.
+प्रतिमान उपपत्ती आणि स्वयंचलित तर्कपद्धती यांत त्याचे
+महत्त्वाचे उपयोग आहेत. त्यामागील मूळ प्रेरणा आणि
+उपयोग विज्ञानाच्या तत्त्वज्ञानात होता: एखाद्या उपपत्तीचे
+स्वयंसिद्धकीकरण कोणत्या मूलभूत संज्ञांनी करता येते
+किंवा येत नाही, हे तपासण्यासाठी ते वापरता येते.
+यावरून बेथचे परिभाष्यता प्रमेयही निष्पन्न होते:
+एखादी उपपत्ती संकल्पना अंतर्निहितपणे परिभाषित करू
+शकत असेल, तर ती स्पष्टपणेही परिभाषित करू शकते.
+
+गणिती तर्कशास्त्रातील अनेक निष्कर्षांप्रमाणे,
+अंतर्वेशन प्रमेयाची सिद्धता प्रतिमान उपपत्तीच्या
+तसेच सिद्धता उपपत्तीच्या पद्धतींनी करता येते.
+सिद्धता-उपपत्तीय पद्धतीचा लाभ असा की ती
+केवळ अंतर्वेशकाचे अस्तित्व दाखवत नाही, तर
+$!A \Entails !B$ याच्या !!a{proof} पासून
+अंतर्वेशक मोजून देणारी अल्गोरिदमही देते;
+उदाहरणार्थ, $!A \Sequent !B$ याची~\Log{G3c}
+मधील !!a{proof} वापरता येते.
+
+$!A$ मधील !!{constant}s आणि !!{predicate}s
+यांचा संच $\Lang L(!A)$ असू द्या आणि
+$\Lang L(\Gamma) = \bigcup \Setabs{\Lang L(!A)}{!A \in
+\Gamma}$ असू द्या. या संपूर्ण विभागात
+!!{function}s नसलेली !!{formula}s आपण विचारात घेतो.
+
+\begin{thm}[क्रेगचे अंतर्वेशन प्रमेय]\ollabel{thm:interpolation}
+$!A$ ची !!{language} $\Lang L(!A)$ आणि
+$!B$ ची $\Lang L(!B)$ असू द्या.
+$\Log{G3c} \Proves !A \Sequent !B$ असेल, तर
+$\Lang L(!C) \subseteq \Lang L(!A) \cap \Lang L(!B)$
+या !!{language} मधील असे !!a{formula}~$!C$ असते की
+$\Log{G3c} \Proves !A \Sequent !C$
+आणि $\Log{G3c} \Proves !C \Sequent !B$.
+\end{thm}
+
+~\Log{G3c} मधील !!{proof}s च्या रचनेचा
+उपयोग करण्यासाठी आपण अंतर्वेशन प्रमेयाचे
+अधिक व्यापक विधान सिद्ध करू.
+त्यासाठी क्रमवर्तींचे पूर्वांग व उत्तरांग
+प्रत्येकी दोन भागांत विभागलेले मानू.
+$\maeh{\Gamma_1}{\Gamma_2} \Sequent
+\maeh{\Delta_1}{\Delta_2}$ या लेखनात
+$\Gamma_1$ आणि $\Delta_1$ पहिल्या भागात,
+तर $\Gamma_2$ आणि $\Delta_2$ दुसऱ्या
+भागात आहेत. पुढील उपप्रमेयावरून
+अंतर्वेशन प्रमेय लगेच मिळते.
+
+\begin{lem}[माएहाराचे उपप्रमेय]\ollabel{lem:maehara}
+$\Log{G3c}
+\Proves \maeh{\Gamma_1}{\Gamma_2} \Sequent \maeh{\Delta_1}{\Delta_2}$
+असेल, तर $\Lang L(!C)
+\subseteq \Lang L(\Gamma_1,
+\Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)$
+या !!{language} मधील असे !!a{formula}~$!C$ असते की
+$\Log{G3c}
+\Proves \Gamma_1 \Sequent \Delta_1, !C$ आणि
+$\Log{G3c} \Proves !C,
+\Gamma_2 \Sequent \Delta_2$.
+\end{lem}
+
+\begin{proof}
+  $\pi \Proves \maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$ असे गृहीत धरा.
+  $n=\pheight{\pi}$ यावर विगमन करून विधान सिद्ध करू.
+
+  $n=0$ असेल, तर
+  $\maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$ हे स्वयंसिद्धक आहे
+  आणि एखादे अणुरूप !!{formula}~$!A$
+  हे $\Gamma_1, \Gamma_2$ आणि
+  $\Delta_1, \Delta_2$ या दोन्ही बाजूंना येते.
+  डावीकडे आणि उजवीकडे $!A$ पहिल्या की
+  दुसऱ्या भागात आहे यावर चार प्रसंग ठरतात.
+  \begin{enumerate}
+    \item $!A \in \Gamma_1$ आणि $!A \in \Delta_1$.
+    $\Gamma_1 \Sequent \Delta_1, !C$ आणि
+    $!C, \Gamma_2 \Sequent \Delta_2$ या दोन्ही
+    !!{provable} असतील असे~$!C$ हवे.
+    $!A$ दोन्ही बाजूंना असल्याने, $!C$ काहीही
+    निवडले तरी पहिली क्रमवर्ती आधीच स्वयंसिद्धक आहे.
+    $!C, \Gamma_2 \Sequent \Delta_2$ ही दुसरी
+    क्रमवर्ती !!{provable} असण्याची खात्री
+    करण्यासाठी $!C \ident \lfalse$ घ्यावे लागते.
+    \item $!A \in \Gamma_1$ आणि $!A \in \Delta_2$.
+    मग $\Gamma_1 \Sequent \Delta_1, !A$ आणि
+    $!A, \Gamma_2 \Sequent \Delta_2$ ही दोन्ही
+    स्वयंसिद्धके आहेत; म्हणून $!C \ident !A$ घेता येते.
+    \item $!A \in \Gamma_2$ आणि $!A \in \Delta_1$.
+    मग $!A, \Gamma_1 \Sequent \Delta_1$ आणि
+    $\Gamma_2 \Sequent \Delta_2, !A$ ही स्वयंसिद्धके
+    असतील; पण त्यांत~$!A$ चुकीच्या बाजूंना आहे.
+    म्हणून $!A$ अंतर्वेशक नाही.
+    तथापि $\RightR{\lnot}$ आणि $\LeftR{\lnot}$
+    वापरून $\Gamma_1
+    \Sequent \Delta_1, \lnot!A$ आणि
+    $\lnot !A, \Gamma_2 \Sequent
+    \Delta_2$ या क्रमवर्ती !!{prove} करता येतात.
+    \item $!A \in \Gamma_2$ आणि $!A \in \Delta_2$.
+    हा सरावासाठीचा प्रसंग आहे.
+  \end{enumerate}
+  $\lfalse \in \Gamma_1$ किंवा
+  $\lfalse \in \Gamma_2$ यांमुळे
+  $\maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$ स्वयंसिद्धक असण्याचे
+  प्रसंगही सरावासाठी सोडले आहेत.
+
+  $n>0$ असेल, तर $\pi$ च्या शेवटी
+  तार्किक अनुमान आहे. कोणता नियम वापरला
+  आणि मुख्य सूत्र कोणत्या भागात आहे, यानुसार
+  प्रसंग वेगळे करावे लागतील. प्रत्येक प्रसंगात
+  $\pheight{\pi_1} < n$ असलेल्या सर्व
+  !!{proof}s~$\pi_1$ साठी, त्यांची अंतिम
+  क्रमवर्ती कोणत्याही प्रकारे दोन भागांत
+  विभागली असली तरी, उपप्रमेय खरे आहे हे
+  विगमन गृहीतक वापरता येते. काही विशिष्ट
+  प्रसंग पाहू.
+  \begin{enumerate}
+    \item $\pi$ च्या शेवटी $\RightR{\lnot}$
+    असून मुख्य सूत्र~$\lnot
+    !A$ आहे. $\lnot !A$ पहिल्या की
+    दुसऱ्या भागात आहे, यानुसार $\pi$ चा
+    शेवट पुढीलपैकी एक असतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{!A, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lnot !A}{\Delta_2}$
+    \DisplayProof
+    \]
+    किंवा
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{!A, \Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, \lnot !A}$
+    \DisplayProof
+    \]
+    मुख्य !!{formula}~$\lnot !A$ पहिल्या
+    भागात असेल, तर आधारक्रमवर्तीतील सक्रिय
+    !!{formula}~$!A$ देखील आपण पहिल्या
+    भागातच ठेवले आहे. ही निवड आपल्याला
+    करता येते. सक्रिय सूत्र दुसऱ्या भागात
+    ठेवले तरी $\pi_1$ च्या
+    अंतिम क्रमवर्तीला विगमन गृहीतक लागू होईल;
+    मात्र मग अंतर्वेशक शोधता येणार नाही
+    (हे करून पाहा).
+
+    आधी $\lnot !A$ पहिल्या भागात
+    असलेला प्रसंग पाहू. विगमन गृहीतकानुसार
+    $\pi_1$ च्या अंतिम क्रमवर्तीला
+    अंतर्वेशक असतो, म्हणजे असे
+    !!a{formula}~$!C_1$ असते की पुढील दोन्ही
+    क्रमवर्ती
+    \begin{align*}
+    !A, \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{आणि} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2
+    \intertext{सिद्ध करता येतात. आता आपल्याला असे !!a{formula}~$!C$ हवे की
+    पुढील दोन्ही !!{provable} असतील:}
+    \Gamma_1 & \Sequent \Delta_1, \lnot !A, !C &&\text{आणि} &
+    !C, \Gamma_2 & \Sequent \Delta_2
+    \end{align*}
+    स्पष्टपणे $!C \ident !C_1$ घेता येते:
+    उजवीकडील क्रमवर्ती !!{provable} आहे
+    हे विगमन गृहीतकाने आधीच मिळते, आणि
+    डावीकडील क्रमवर्ती विगमन गृहीतकातून
+    मिळालेल्या क्रमवर्तीवर~$\RightR{\lnot}$
+    लावून मिळते. विगमन गृहीतकाने
+    $\Lang L(!C_1) \subseteq \Lang L(!A, \Gamma_1,
+    \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)$
+    हेदेखील मिळते. $\Lang L(\lnot
+    !A) = \Lang L(!A)$ आणि
+    $\Lang L(!C) = \Lang L(!C_1)$ असल्याने
+    $\Lang L(!C_1) \subseteq \Lang L(\Gamma_1, \Delta_1, \lnot !A) \cap \Lang
+    L(\Gamma_2, \Delta_2)$.
+
+    दुसऱ्या प्रसंगात $\lnot !A$
+    दुसऱ्या भागात असल्याने स्थिती थोडी
+    वेगळी आहे. आधारक्रमवर्तीतील सक्रिय
+    !!{formula} देखील दुसऱ्या भागात
+    ठेवून विगमन गृहीतक लावतो; त्यातून
+    \begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{आणि} &
+    !C_1, !A, \Gamma_2 & \Sequent \Delta_2
+    \intertext{सिद्ध करता येतात. यांतील दुसऱ्या क्रमवर्तीवर पुन्हा \RightR{\lnot} लावल्यास पुढील !!{proof}s मिळतात:}
+    \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{आणि} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2, \lnot !A
+    \end{align*}
+    $!C_1$ अंतर्वेशक असेल तर नेमक्या
+    याच क्रमवर्ती !!{provable} हव्या होत्या;
+    म्हणून पुन्हा $!C \ident !C_1$ घेऊ.
+    पूर्वीप्रमाणे $\Lang
+    L(!C_1) \subseteq \Lang L(\Gamma_1, \Delta_1) \cap \Lang L(\Gamma_2,
+    \Delta_2, \lnot !A)$.
+    \item $\pi$ च्या शेवटी $\RightR{\lif}$
+    असून मुख्य !!{formula}~$!A
+    \lif !B$ आहे. $!A \lif
+    !B$ पहिल्या की दुसऱ्या भागात आहे
+    यावर पुन्हा दोन प्रसंग मिळतात.
+    !!{proof}~$\pi$ चा शेवट असा असतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{!A, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, !B}{\Delta_2}$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, !A \lif !B}{\Delta_2}$
+    \DisplayProof
+    \]
+    किंवा
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{!A, \Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, !B}$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, !A \lif !B}$
+    \DisplayProof
+    \]
+    येथेही आधारक्रमवर्तीतील सक्रिय
+    !!{formula}s निष्कर्षातील मुख्य
+    !!{formula} च्याच भागात ठेवली आहेत.
+    पहिल्या प्रसंगात विगमन गृहीतकाने
+    पुढील !!{proof}s मिळतात:
+    \begin{align*}
+    !A, \Gamma_1 & \Sequent \Delta_1, !B, !C_1 &&\text{आणि} & !C_1, \Gamma_2 & \Sequent \Delta_2
+    \intertext{डावीकडील क्रमवर्ती \RightR{\lif} साठी योग्य आधारक्रमवर्ती आहे. म्हणून पुढील क्रमवर्ती !!{provable} आहेत:}
+    \Gamma_1 & \Sequent \Delta_1, !A \lif !B, !C_1 &&\text{आणि} & !C_1, \Gamma_2 & \Sequent \Delta_2
+    \end{align*}
+    म्हणून $!C_1$ हा $\pi$ च्या
+    अंतिम क्रमवर्तीचाही अंतर्वेशक आहे;
+    पुन्हा $!C \ident !C_1$ घेता येते.
+
+    दुसरा प्रसंगही याच प्रकारे हाताळता येतो.
+    \item $\pi$ च्या शेवटी $\LeftR{\lif}$
+    असून मुख्य !!{formula}~$!A
+    \lif !B$ आहे. $!A \lif !B$
+    पहिल्या भागात असेल, तर
+    !!{proof}~$\pi$ चा शेवट असा असतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, !A}{\Delta_2}$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\maeh{!B, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \BinaryInf$\maeh{!A \lif !B, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \DisplayProof
+    \]
+    विगमन गृहीतकाने आता चार
+    !!{provable} क्रमवर्ती मिळतात:
+    डाव्या आधारक्रमवर्तीच्या
+    अंतर्वेशक~$!C_1$ साठी दोन आणि
+    दुसऱ्या आधारक्रमवर्तीच्या
+    अंतर्वेशक~$!C_2$ साठी दोन:
+    \begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, !A, !C_1 &&\text{(1)} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2 && \text{(2)}\\
+    !B, \Gamma_1 & \Sequent \Delta_1, !C_2 &&\text{(3)} &
+    !C_2, \Gamma_2 & \Sequent \Delta_2 && \text{(4)}
+    \end{align*}
+    दुर्बलीकरण लावून (1) च्या
+    उजवीकडे~$!C_2$ आणि (3) च्या
+    उजवीकडे~$!C_1$ जोडल्यास
+    (1) आणि (3) या क्रमवर्ती
+    \LeftR{\lif} च्या आधारक्रमवर्ती
+    म्हणून वापरता येतात:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, !A, !C_1, !C_2$
+    \AxiomC{}
+    \Deduce$!B, \Gamma_1 \fCenter \Delta_1, !C_1, !C_2$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, \Gamma_1 \fCenter \Delta_1, !C_1, !C_2$
+    \DisplayProof
+    \]
+    $\RightR{\lor}$ लावल्याने पुढील
+    क्रमवर्ती मिळते:
+    \[
+    !A \lif !B, \Gamma_1 \fCenter \Delta_1, !C_1 \lor !C_2
+    \]
+    त्यामुळे या प्रसंगात
+    $!C_1 \lor !C_2$ अंतर्वेशक असू
+    शकतो असे सुचते. उरलेल्या
+    (2) आणि~(4) क्रमवर्ती वापरून
+    आवश्यक दुसरी क्रमवर्तीही
+    !!{prove} करता येते:
+    \[
+    \AxiomC{}
+    \Deduce$!C_1, \Gamma_2 \fCenter \Delta_2$
+    \AxiomC{}
+    \Deduce$!C_2, \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lor}}
+    \BinaryInf$!C_1 \lor !C_2, \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    $!C_1 \lor !C_2$ योग्य
+    भाषेत आहे हे तपासणे उरते.
+    विगमन गृहीतकानुसार
+    \begin{align*}
+    \Lang L(!C_1) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A) \cap \Lang L(\Gamma_2, \Delta_2) &\text{आणि}\\
+    \Lang L(!C_2) & \subseteq
+    \Lang L(!B, \Gamma_1, \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)
+    \intertext{कारण}
+    \Lang L(!A) & \subseteq \Lang L(!A \lif !B) &\text{आणि}\\
+    \Lang L(!B) & \subseteq \Lang L(!A \lif !B)
+    \intertext{म्हणून या दोन्ही अटी मिळतात}
+    \Lang L(!C_1) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A \lif !B) \cap \Lang L(\Gamma_2, \Delta_2) &\text{आणि}\\
+    \Lang L(!C_2) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A \lif !B) \cap \Lang L(\Gamma_2, \Delta_2)
+    \intertext{आणि परिणामी, $\Lang L (!C_1 \lor !C_2) = {}$}
+    \Lang L(!C_1) \cup \Lang L(!C_2) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A \lif !B) \cap \Lang L(\Gamma_2, \Delta_2),
+    \end{align*}
+    आणि हेच अपेक्षित आहे.
+
+    $!A \lif !B$ दुसऱ्या
+    भागात असण्याचा प्रसंग
+    वेगळा आहे, पण तशाच
+    पद्धतीने हाताळता येतो.
+    विगमन गृहीतकाने पुन्हा
+    चार !!{provable} क्रमवर्ती मिळतात:
+    \begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{(1)} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2, !A && \text{(2)}\\
+    \Gamma_1 & \Sequent \Delta_1, !C_2 &&\text{(3)} &
+    !C_2, !B, \Gamma_2 & \Sequent \Delta_2 && \text{(4)}
+    \end{align*}
+    आता (2) आणि (4) या क्रमवर्ती,
+    काही !!{formula}s दुर्बल करून
+    जोडल्यावर,~\LeftR{\lif}
+    च्या आधारक्रमवर्ती ठरतात:
+    \[
+    \AxiomC{}
+    \Deduce$!C_1, !C_2, \Gamma_2 \fCenter \Delta_2, !A$
+    \AxiomC{}
+    \Deduce$!B, !C_1, !C_2, \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, !C_1, !C_2, \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    यांतून $!C_1$ आणि $!C_2$
+    वापरून बनलेले एकच !!{formula}
+    असणारी क्रमवर्ती हवी आहे;
+    पण यावेळी ते पूर्वांगात हवे
+    (कारण आता दुसऱ्या भागाशी
+    संबंध आहे). $\LeftR{\land}$
+    लावल्याने ते साधते; म्हणून
+    $!C \ident
+    (!C_1 \land !C_2)$ अंतर्वेशक घेऊ.
+    उरलेल्या (1) आणि (3)
+    क्रमवर्ती वापरून दुसऱ्या
+    भागाची संबंधित क्रमवर्तीही
+    !!{prove} करता येते:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, !C_1$
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, !C_2$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma_1 \fCenter \Delta_1, !C_1 \land !C_2$
+    \DisplayProof
+    \]
+    पूर्वीप्रमाणे
+    $\Lang L(!C_1 \land !C_2) \subseteq \Lang
+    L(\Gamma_1, \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2, !A \lif
+    !B)$ मिळते.
+
+    \item $\pi$ च्या शेवटी $\RightR{\lforall}$
+    असून मुख्य !!{formula}~$\lforall[x][!A(x)]$ आहे:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+    \maeh{\Delta_1, !A(c)}{\Delta_2}$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lforall[x][!A(x)]}{\Delta_2}$
+    \DisplayProof
+    \]
+    किंवा
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, !A(c)}$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, \lforall[x][!A(x)]}$
+    \DisplayProof
+    \]
+    पहिल्या प्रसंगात विगमन गृहीतकाने
+    $\Gamma_1 \Sequent \Delta_1, !A(c), !C_1$
+    आणि $!C_1, \Gamma_2
+    \Sequent \Delta_2$ यांच्या !!{proof}s मिळतात.
+    पहिल्या क्रमवर्तीवर $\RightR{\lforall}$
+    लावून $\Gamma_1 \Sequent \Delta_1, \lforall[x][!A(x)], !C_1$
+    मिळते. ($\pi$ च्या अंतिम
+    \RightR{\lforall} अनुमानात आयगेन चराची
+    अट आधीच पूर्ण असल्याने येथेही ती पूर्ण आहे.)
+    $\Lang
+    L(!C_1) \subseteq \Lang L(\Gamma_1, \Delta_1, \lforall[x][!A(x)])
+    \cap \Lang L(\Gamma_2, \Delta_2)$
+    ही अट पूर्ण असेल, तर $!C_1$ अंतर्वेशक ठरेल.
+    विगमन गृहीतकाने
+    $\Lang L(!C_1) \subseteq \Lang L(\Gamma_1,
+    \Delta_1, !A(c)) \cap \Lang L(\Gamma_2, \Delta_2)$
+    मिळते. म्हणून~$c$ ची काळजी घ्यावी लागते:
+    $!C_1$ मध्ये $c$ येऊ शकतो का? येऊ शकत नाही.
+    $!C_1$ मध्ये $c$ आल्यास
+    $c \in \Lang L(\Gamma_1, \Delta_1,
+    !A(c))$ (जे खरे आहे) आणि
+    $c \in \Lang L(\Gamma_2,
+    \Delta_2)$ हेही दोन्ही खरे ठरतील.
+    पण मग $\pi$ मधील
+    $\RightR{\lforall}$ अनुमानाच्या
+    निष्कर्षात $c$ येईल आणि
+    आयगेन चराची अट मोडेल.
+
+    दुसरा प्रसंगही यासारखाच आहे.
+
+    \item $\pi$ च्या शेवटी
+    $\RightR{\lexists}$ असून मुख्य
+    !!{formula}~$\lexists[x][!A(x)]$ आहे.
+    येथेही दोन प्रसंग आहेत.
+    $\lexists[x][!A(x)]$ पहिल्या
+    भागात असलेला प्रसंग पाहू;
+    दुसरा सरावासाठी सोडला आहे.
+
+    पहिल्या प्रसंगात $\pi$ चा
+    शेवट असा असतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lexists[x][!A(x)], !A(t)}{\Delta_2}$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lexists[x][!A(x)]}{\Delta_2}$
+    \DisplayProof
+    \]
+    विगमन गृहीतकाने
+    $\Gamma_1 \Sequent
+    \Delta_1, \lexists[x][!A(x)], !A(t), !C_1$
+    आणि $!C_1, \Gamma_2
+    \Sequent \Delta_2$ यांच्या !!{proof}s मिळतात.
+    पहिल्या क्रमवर्तीवर $\RightR{\lexists}$
+    लावल्याने $\Gamma_1 \Sequent \Delta_1, \lexists[x][!A(x)], !C_1$
+    मिळते. म्हणून
+    $\Lang L(!C_1) \subseteq \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)]) \cap \Lang L(\Gamma_2, \Delta_2)$
+    ही अट पूर्ण असल्यास $!C_1$ पुन्हा
+    अंतर्वेशक ठरेल. येथे विगमन गृहीतकाने
+    $\Lang L(!C_1)
+    \subseteq \Lang L(\Gamma_1, \Delta_1, \lexists[x][!A(x)], !A(t))
+    \cap \Lang L(\Gamma_2, \Delta_2)$
+    मिळते. आपण !!{function}s नाहीत असे
+    गृहीत धरले आहे, हे लक्षात घ्या.
+    पुढील स्थिरांकाच्या प्रसंगात पद~$t$
+    हे !!a{constant} असते,
+    म्हणजे $t \ident b$.
+    चर-पदाचा प्रसंग मूळ युक्तिवादात
+    स्वतंत्रपणे हाताळलेला नाही.
+    $b \notin \Lang L(!C_1)$ असेल,
+    किंवा $b \in \Lang L(\Gamma_1, \Delta_1, \lexists[x][!A(x)]) \cap
+    \Lang L(\Gamma_2, \Delta_2)$ असेल,
+    तर अडचण नाही: $!C_1$ अंतर्वेशक घेता येते.
+    पण $b \in \Lang
+    L(!C_1)$ आणि $b \notin \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)]) \cap \Lang L(\Gamma_2, \Delta_2)$
+    असेल तर? प्रथम~$!C_1$ मधील
+    $b$ ची प्रत्येक उपस्थिती
+    !!a{variable}~$y$ ने बदलल्यावर
+    $!C_1 \ident \Subst{!C_1'}{b}{y}$
+    असे लिहिता येते; येथे $!C_1'$
+    मध्ये~$b$ येत नाही. शिवाय,
+    $b \notin
+    \Lang L(\Gamma_1, \Delta_1, \lexists[x][!A(x)])$
+    किंवा $b \notin
+    \Lang L(\Gamma_2, \Delta_2)$.
+    त्यानुसार $!C \ident
+    \lforall[y][!C_1'(y)]$ किंवा
+    $!C \ident \lexists[y][!C_1'(y)]$
+    घेता येते. पहिल्या प्रसंगात:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], !A(b), !C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter \Delta_1, \lexists[x][!A(x)], !C_1'(b)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], \lforall[y][!C_1'(y)]$
+    \DisplayProof
+    \]
+    आणि
+    \[
+    \AxiomC{}
+    \Deduce$!C_1'(b), \lforall[y][!C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[y][!C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    सर्वात वरच्या क्रमवर्तींच्या
+    !!{proof}s विगमन गृहीतकातून मिळतात
+    (दुसऱ्या सिद्धतेत पूर्वांगात
+    $\lforall[y][!C_1'(y)]$ जोडण्यासाठी
+    दुर्बलीकरणाची ग्राह्यता वापरतो).
+    पहिल्या !!{proof} मधील
+    \RightR{\lforall} साठी आयगेन चराची
+    अट पूर्ण आहे, कारण
+    $b \notin \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)])$ आणि
+    $!C_1'$ मध्ये~$b$ येत नाही,
+    अशीच त्याची व्याख्या केली आहे.
+
+    दुसऱ्या प्रसंगात, विगमन गृहीतक
+    आणि $\lexists[y][!C_1'(y)]$
+    जोडणाऱ्या दुर्बलीकरणाच्या
+    ग्राह्यतेने पुढील मिळते:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], !A(b), \lexists[y][!C_1'(y)], !C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], \lexists[y][!C_1'(y)], !C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], \lexists[y][!C_1'(y)]$
+    \DisplayProof
+    \]
+    आणि
+    \[
+    \AxiomC{}
+    \Deduce$!C_1'(b), \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lexists}}
+    \UnaryInf$\lexists[y][!C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    दुसऱ्या !!{proof} मधील
+    \LeftR{\lexists} साठी आयगेन चराची
+    अट पूर्ण आहे, कारण
+    $b \notin \Lang L(\Gamma_2,
+    \Delta_2)$ आणि $!C_1'$ मध्ये~$b$
+    येत नाही, अशीच त्याची व्याख्या केली आहे.
+  \end{enumerate}
+  उरलेले प्रसंगही यांसारखे आहेत;
+  ते सरावासाठी सोडले आहेत.
+\end{proof}
+
+\begin{prob}
+$\lnand$ हा संयोजक पुढील नियमांसह
+आपल्याकडे आहे असे समजा:
+\[
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$\Gamma \fCenter \Delta, !B$
+\RightLabel{\LeftR{\lnand}}
+\BinaryInf$!A \lnand !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\quad
+\Axiom$!A, !B, \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\lnand}}
+\UnaryInf$\Gamma \fCenter \Delta, !A \lnand !B$
+\DisplayProof
+\]
+ज्या प्रसंगात $\pi$ चा शेवट
+यांपैकी एखाद्या नियमाने होतो,
+ते \olref{lem:maehara} च्या सिद्धतेत
+पूर्ण करून माएहाराचे उपप्रमेय
+अजूनही खरे आहे हे दाखवा.
+\end{prob}
+
+माएहाराचे उपप्रमेय सिद्ध झाल्यावर
+त्यावरून क्रेगचे अंतर्वेशन प्रमेय
+सिद्ध करता येते.
+
+\begin{proof}[\olref{thm:interpolation} ची सिद्धता]
+  $!A \Sequent !B$ !!{provable} आहे असे
+  समजा. $\maeh{!A}{\ } \Sequent \maeh{\ }{!B}$
+  याला \olref{lem:maehara} लावून
+  अंतर्वेशक~$!C$ मिळवा. मग
+  $\Proves !A \Sequent !C$ आणि
+  $\Proves !C
+  \Sequent !B$.
+\end{proof}
+
+$\Gamma$ ही !!{sentence}s चा संच असलेली
+उपपत्ती, !!a{language}~$\Lang L$ मध्ये आहे
+आणि त्यात $n$-स्थानी {predicate}~$R$ आहे
+असे समजा. पुढील अट पूर्ण असेल, तेव्हा
+आणि केवळ तेव्हाच, $\Gamma$ ही
+$R$ ला \emph{अंतर्निहितपणे परिभाषित करते}:
+\begin{align*}
+\Gamma, \Gamma'
+& \Entails \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff
+R'(x_1, \dots, x_n))]],
+\intertext{येथे $\Gamma'$ म्हणजे $\Gamma$ मध्ये $R$ ची प्रत्येक उपस्थिती
+$R' \notin \Lang L$ ने बदलल्यावर मिळणारी उपपत्ती. $\Gamma$ ही $R$ ला
+\emph{स्पष्टपणे परिभाषित करते}, तेव्हा आणि केवळ तेव्हाच, $R$ नसलेले असे
+$!A(x_1, \dots, x_n)$ असते की}
+\Gamma &\Entails
+\lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff !A(x_1,
+\dots, x_n))]].
+\end{align*}
+स्पष्टपणे, $\Gamma$ ही $R$ ला
+स्पष्टपणे परिभाषित करत असेल, तर
+ती $R$ ला अंतर्निहितपणेही परिभाषित करते.
+उलट विधान लगेच स्पष्ट होत नसले,
+तरी ते खरे आहे:
+
+\begin{lem}[बेथचे परिभाष्यता प्रमेय]
+  $\Gamma$ ही $R$ ला अंतर्निहितपणे
+  परिभाषित करत असेल, तर ती त्याला
+  स्पष्टपणेही परिभाषित करते.
+\end{lem}
+
+\begin{proof}
+  $\Gamma$ ही $R$ ला अंतर्निहितपणे
+  परिभाषित करते असे समजा. वरीलप्रमाणे
+  $R'$ आणि $\Gamma'$ घ्या;
+  $\Lang L' = \Lang L(\Gamma') = \Lang L \setminus \{R\}
+  \cup \{R'\}$ असू द्या. गृहीतकानुसार
+  \begin{align*}
+    \Gamma, \Gamma' &
+    \Sequent \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n)
+    \liff R'(x_1, \dots, x_n))]]
+  \intertext{$c_1$, \dots,~$c_n$ हे $\Gamma$ मध्ये न येणारे !!{constant}s असू द्या. व्युत्क्रमणीयतेच्या उपप्रमेयाने मिळते:}
+    \Gamma, \Gamma', R(c_1,\dots,c_n) & \Sequent  R'(c_1, \dots, c_n)
+  \intertext{माएहाराचे उपप्रमेय पुढील क्रमवर्तीला लावा:}
+    \maeh{\Gamma, R(c_1,\dots,c_n)}{\Gamma'} & \Sequent
+      \maeh{\ }{R'(c_1, \dots, c_n)}
+  \intertext{म्हणजे असे~$!A \ident !A(x_1, \dots, x_n)$ मिळते की}
+    \Gamma, R(c_1,\dots,c_n) & \Sequent !A(c_1, \dots, c_n) \\
+    !A(c_1, \dots, c_n), \Gamma' & \Sequent R'(c_1, \dots, c_n)
+  \intertext{यांच्या !!{proof}s असतात. $\Lang L(!A) \subseteq
+  (\Lang L(\Gamma) \setminus \{R\}) \cup \{c_1,\dots,c_n\}$ असल्याने $!A$ मध्ये~$R$ नसतो.
+  दुसऱ्या क्रमवर्तीच्या !!{proof} मध्ये सर्वत्र $R'$ च्या जागी~$R$ ठेवून
+  पुढील !!a{proof} मिळते:}
+    !A(c_1, \dots, c_n), \Gamma & \Sequent R(c_1, \dots, c_n)
+  \end{align*}
+  येथील नव्या स्थिरांकांच्या जागी
+  संबंधित चरे ठेवता येतात.
+  \RightR{\lif} आणि
+  \RightR{\lforall} लावून पुढील
+  !!a{proof} मिळते:
+  \[
+    \Gamma \Sequent \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff !A(x_1, \dots, x_n))]].
+  \]
+  म्हणून $!A(x_1, \dots, x_n)$ हे
+  $\Gamma$ मध्ये $!R$ ला स्पष्टपणे
+  परिभाषित करते.
+\end{proof}
+
+अंतर्वेशनाशी समतुल्य असलेला
+आणि त्याप्रमाणेच माएहाराचे उपप्रमेय वापरून
+सिद्ध करता येणारा तिसरा निष्कर्ष असा:
+दोन सुसंगत उपपत्ती~$\Gamma_1$ आणि
+$\Gamma_2$ यांत $\Lang L(\Gamma) = \Lang L(\Gamma_1)
+\cap \Lang L(\Gamma_2)$ या भाषेतील
+पूर्ण उपपत्ती~$\Gamma$ समाविष्ट असेल,
+तर $\Gamma_1 \cup \Gamma_2$ सुसंगत असते.
+
+पूर्ण उपपत्ती म्हणजे तिच्या भाषेतील
+प्रत्येक !!{sentence}~$!A$ साठी
+$\Gamma \Proves !A$ किंवा
+$\Gamma \Proves \lnot !A$ सिद्ध होणारी उपपत्ती,
+हे आठवा. $\Gamma_1$ आणि~$\Gamma_2$
+या $\Gamma$ च्या सुसंगत विस्तारे
+असल्याने $\Gamma$ सुसंगतच असली पाहिजे.
+म्हणून $!A$ हे
+$\Lang L(\Gamma_1) \cap \Lang
+L(\Gamma_2)$ या भाषेतील
+!!a{sentence} असेल, तर
+$\Gamma_1 \Entails !A$ आणि
+$\Gamma_2
+\Entails \lnot !A$ दोन्ही शक्य नाहीत.
+तसे एखादे~$!A$ आहे असे समजा.
+$\Gamma_1 \Entails !A$ असेल, तर
+$\Gamma \Entails !A$.
+अन्यथा, $\Gamma$ पूर्ण असल्याने
+$\Gamma \Entails \lnot !A$;
+आणि $\Gamma \subseteq \Gamma_1$
+असल्याने $\Gamma_1 \Entails \lnot !A$,
+म्हणजे $\Gamma_1$ विसंगत ठरेल.
+म्हणून $\Gamma \Entails !A$;
+आता $\Gamma
+\subseteq \Gamma_2$ असल्याने
+$\Gamma_2 \Entails !A$.
+त्यामुळे $\Gamma \Entails/
+\lnot !A$; अन्यथा $\Gamma_2$
+विसंगत ठरेल.
+
+संयुक्त !!{language}~
+$\Lang L(\Gamma_1) \cap \Lang L(\Gamma_2)$
+मधील असे !!a{sentence}~$!A$
+नसणे की $\Gamma_1
+\Entails !A$ आणि
+$\Gamma_2 \Entails \lnot !A$,
+हेच सिद्धतेसाठी पुरेसे आहे.
+आता माएहाराचे उपप्रमेय वापरून
+ही सिद्धता सिद्धता-उपपत्तीय
+पद्धतीने देऊ.
+
+\begin{thm}[रॉबिन्सनचे संयुक्त सुसंगतता प्रमेय]
+$\Gamma_1$ आणि $\Gamma_2$
+या सुसंगत उपपत्ती असू द्या.
+$\Lang L(\Gamma_1) \cap \Lang L(\Gamma_2)$
+या !!{language} मधील कोणत्याही~$!A$
+साठी $\Gamma_1 \Entails !A$
+आणि $\Gamma_2 \Entails \lnot !A$
+दोन्ही होत नसतील, तर
+$\Gamma_1 \cup \Gamma_2$ सुसंगत असते.
+\end{thm}
+
+\begin{proof}
+  उलट, $\Gamma_1 \cup \Gamma_2$
+  विसंगत आहे असे समजा.
+  मग $\Gamma_1, \Gamma_2 \Sequent \ $
+  या क्रमवर्तीची !!a{proof} आहे.
+  $\maeh{\Gamma_1}{\Gamma_2}
+  \Sequent \maeh{\ }{\ }$ याला
+  माएहाराचे उपप्रमेय लावल्याने
+  $\Lang L(\Gamma_1) \cap \Lang L(\Gamma_2)$
+  या !!{language} मधील असे
+  !!a{sentence}~$!A$ मिळते की
+  $\Proves \Gamma_1 \Sequent !A$
+  आणि $\Proves !A, \Gamma_2 \Sequent
+  \quad$. दुसऱ्या क्रमवर्तीवरून
+  $\Proves \Gamma_2 \Sequent \lnot !A$
+  मिळते. पण असे !!{sentence}
+  अस्तित्वात नाही, हेच आपण
+  गृहीत धरले होते.
+\end{proof}
+
+वर आपण उपपत्ती $\Gamma$,
+$\Gamma_1$ आणि $\Gamma_2$
+सांत आहेत असे नकळत गृहीत धरले.
+संहततेमुळे हे निष्कर्ष
+अनंत उपपत्तींनाही लागू होतात.
+
+\end{document}

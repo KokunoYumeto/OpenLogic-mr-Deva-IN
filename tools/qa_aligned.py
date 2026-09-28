@@ -68,6 +68,18 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0658': [
+        # OLINC-345: the interpolant may contain the fresh parameter constants.
+        (r'$\Lang L(!A) \subseteq'
+         '\n' r'  (\Lang L(\Gamma) \setminus \{R\}) \cup \{c_1,\dots,c_n\}$',
+         r'$\Lang L(!A) = \Lang L_1 \cap'
+         '\n' r'  \Lang L_2 = \Lang L(\Gamma) \setminus \{R\}$'),
+        # OLINC-346: completeness must cover the entire shared language.
+        (r'$\Lang L(\Gamma) = \Lang L(\Gamma_1)'
+         '\n' r'\cap \Lang L(\Gamma_2)$',
+         r'$\Lang L(\Gamma) \subseteq \Lang L(\Gamma_1)'
+         '\n' r'\cap \Lang L(\Gamma_2)$'),
+    ],
     'OLP-0656': [
         # OLINC-341: in the right-premiss-axiom case, use the left proof.
         (r'दुसऱ्या प्रसंगात $\pi_1$', r'दुसऱ्या प्रसंगात $\pi_2$'),
