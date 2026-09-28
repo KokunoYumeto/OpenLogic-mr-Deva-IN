@@ -1,0 +1,54 @@
+% part: intuitionistic-logic
+% chapter: semantics
+% section: propositions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sem}{pro}
+
+\olsection{विधानसंच}
+
+कधीकधी !!a{relational model}~$\mModel{M}$ मधील ज्या
+जगतांत !!a{formula}~$!A$ सत्य असते, त्या जगांच्या संचाला नाव देणे
+उपयुक्त ठरते. त्याला $!A$ ने परिभाषित केलेला
+\emph{विधानसंच} म्हणू आणि $\Prop{M}{!A}$ असे लिहू.
+
+\begin{defn}
+  $V$ या फलनाचा विस्तार $\Prop{M}{!A} \colon \Frm
+  \to \Pow{W}$ अशा फलनात पुढीलप्रमाणे विगमनाने करू:
+  \begin{enumerate}
+  \item $\Prop{M}{\lfalse} = \emptyset$
+  \item $\Prop{M}{p} = V(p)$
+  \item $\Prop{M}{\lnot !B} = {}$
+    \[
+      \Setabs{w \in W}{\text{$Rww'$ असेल अशा प्रत्येक $w'$ साठी $w'
+          \notin \Prop{M}{!B}$}}.
+    \]
+  \item $\Prop{M}{!B \land !C} = \Prop{M}{!B} \cap \Prop{M}{!C}$.
+  \item $\Prop{M}{!B \lor !C} = \Prop{M}{!B} \cup \Prop{M}{!C}$.
+  \item $\Prop{M}{!B \lif !C} = {}$
+    \[
+      \Setabs{w \in W}{\text{$Rww'$ असेल अशा प्रत्येक $w'$ साठी,
+          $w' \in \Prop{M}{!B}$ असेल तर $w' \in \Prop{M}{!C}$}}.
+    \]
+  \end{enumerate}
+\end{defn}
+%READERNOTE{OLINC-331: स्रोतामध्ये Prop(M,A) या एका मूल्याला संपूर्ण सूत्रांवरील फलनाचे नाव दिले आहे; येथे स्रोताचे चिन्ह जतन केले असून आशय A पासून जगांचा संच देणारा नकाशा असा वाचावा.}
+
+\begin{prop}
+  \ollabel{prop:propositions-true}
+  $\mSat{M}{!A}[w]$ तेव्हा आणि केवळ तेव्हाच $w \in \Prop{M}{!A}$.
+\end{prop}
+%READERNOTE{OLINC-330: स्रोताने पूर्ति-संबंधाच्या जागी फक्त प्रतिमानाचे नाव छापणारा mModel मॅक्रो वापरला आहे; येथे mSat केला आहे.}
+
+\begin{proof}
+  सराव.
+\end{proof}
+
+\begin{prob}
+  \olref[int][sem][pro]{prop:propositions-true} सिद्ध करा.
+\end{prob}
+
+\end{document}

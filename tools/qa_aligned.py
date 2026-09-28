@@ -68,6 +68,10 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0649': [
+        # OLINC-330: satisfaction is mSat, not the one-argument model-name macro.
+        (r'$\mSat{M}{!A}[w]$', r'$\mModel{M}{!A}[w]$'),
+    ],
     'OLP-0643': [
         # OLINC-326: use the finite support named in the following derivation.
         (r'\item $\Gamma_0 \cup \{ !A \} \Proves \lfalse$ आणि',
