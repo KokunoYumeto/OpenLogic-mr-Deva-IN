@@ -68,6 +68,33 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0676': [
+        # OLINC-386: the implication example has delta2 and delta3 only.
+        (r'~$\delta_2$ किंवा' + '\n' + r'$\delta_3$ यांच्या',
+         r'~$\delta_2$ किंवा' + '\n' + r'$\delta_3$, $\delta_4$ यांच्या'),
+        # OLINC-387: separate discharge labels are required in the
+        # falsehood-to-disjunction tree and in its elimination rule.
+        (r'''\RightLabel{\FalseInt}
+\UnaryInfC{$!B \lor !C$}
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!D$}
+\AxiomC{$\Discharge{!C}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!D$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!D$}''',
+         r'''\RightLabel{\FalseInt}
+\UnaryInfC{$!B \lor !C$}
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!D$}
+\AxiomC{$\Discharge{!C}{x}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!D$}
+\RightLabel{\Elim{\lor}}
+\TrinaryInfC{$!D$}'''),
+    ],
     'OLP-0675': [
         # OLINC-383: the cut formula in the example is B-and-C.
         (r'$!A \ident !B \land !C$',

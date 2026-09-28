@@ -1,0 +1,500 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: reductions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{red}
+
+\olsection{न्यूनीकरण रूपांतरणे}
+
+~\Log{N1i} मधील
+!!a{proof} मध्ये एखाद्या
+कटाची लांबी~$1$ असेल,
+तर तो एका !!{formula}
+आस्थितीचा खंड असतो.
+तीच !!{formula} आस्थिती
+!!a{introduction} अनुमानाचा
+निष्कर्ष आणि
+!!a{elimination} अनुमानाचे
+प्रमुख आधारविधान असते.
+सामान्यरूपीकरणाच्या
+सिद्धतेत अशा कटांचे
+“न्यूनीकरण” करतात:
+अशा !!{introduction}/!!{elimination}
+जोडीत संपणारी उप-!!{proof}
+त्या दोन्ही अनुमानांशिवाय
+असलेल्या नव्या !!{proof}
+ने बदलतात. याने नवे
+कट निर्माण होऊ शकतात.
+पण त्या नव्या कटांची
+कोटी न्यूनीकृत कटाच्या
+कोटीपेक्षा कमी असते.
+त्यामुळे नव्या !!{proof}
+ची कट-लांबी कमी होते
+(कारण लांबी~$1$
+असलेला महत्तम कट
+निघून गेला), किंवा
+!!{proof} ची कट-कोटी
+कमी होते (संबंधित
+महत्तम कट एकटाच
+महत्तम कट असल्यास).
+
+उदाहरणार्थ, संबंधित
+अनुमाने~\Intro{\lif}
+आणि~\Elim{\lif} असतील,
+$!A \ident !B \lif !C$
+असेल, आणि~$\delta_1$
+ही उप-!!{proof}
+पुढीलप्रमाणे संपत असेल:
+\[
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$!C$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!B \lif !C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+\]
+हा कट काढण्यासाठी
+~$\delta$ मधील
+उपसिद्धता~$\delta_1$
+पुढील रचनेने बदलतो:
+\[
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B$}
+\RightLabel{$\Subst{\delta_2}{\delta_3}{!B^x}$}
+\DeduceC{$!C$}
+\DisplayProof
+\]
+~$\Subst{\delta_2}{\delta_3}{!B^x}$
+म्हणजे~$\delta_2$
+मधील~$x$ खूण असलेल्या
+प्रत्येक गृहीतक~$!B$
+च्या जागी संपूर्ण
+!!{proof}~$\delta_3$
+ठेवून मिळणारी !!{proof}.
+या !!{proof} मध्ये
+~$x$ खूण असलेली
+उघडी~$!B$ गृहीतके
+राहत नाहीत. तसेच
+इतर कोणत्याही गृहीतकाला
+~$x$ खूण नसते:
+नेहमीप्रमाणे वेगवेगळी
+!!{formula}s एकाच
+खुणेखाली गृहीतके
+होत नाहीत. म्हणून
+नव्या !!{proof} ची
+उघडी गृहीतके
+~$\delta_1$ सारखीच
+असतात. ~$\delta_2$
+मधील जी अनुमाने गृहीतके
+मुक्त करतात, तीच गृहीतके
+~$\Subst{\delta_2}{\delta_3}{!B^x}$
+मध्येही मुक्त करतात.
+आणि~$\delta_3$
+मधील गृहीतके मुक्त
+करणारी अनुमाने अनेक
+प्रतींमध्ये येऊ शकतात;
+त्या प्रती
+~$\Subst{\delta_2}{\delta_3}{!B^x}$
+मधील संबंधित गृहीतके
+मुक्त करतात.
+
+~$\delta_2$ किंवा
+$\delta_3$ यांच्या
+आतमध्ये पूर्णपणे असलेला
+कट, किंवा~$\delta$
+मध्ये~$\delta_1$
+बाहेर पूर्णपणे असलेला
+कट, बदलत नाही.
+त्यात तीच !!{formula}s
+आणि तीच अनुमाने
+असतात; त्यामुळे त्याची
+कोटी आणि लांबी
+~$\delta$ मधील
+अनुरूप कटासारखीच
+राहते. आपण लांबी~$1$
+असलेला महत्तम कट
+काढला आहे; म्हणून
+कट-लांबी कमी झाली,
+किंवा~$\delta$
+ची कट-लांबी~$1$
+असून हा एकटाच महत्तम
+कट होता, तर कट-कोटी
+कमी झाली.
+
+तथापि, दोन गोष्टी
+घडू शकतात:
+\begin{enumerate}
+  \item सर्व~$!B^x$
+  गृहीतकांच्या जागी
+  $\delta_3$ ठेवल्याने
+  ~$\delta_3$ मधील
+  सर्व कटांच्या प्रती
+  वाढतात. त्यांपैकी
+  काही महत्तम कट
+  असतील, तर नव्या
+  !!{proof} ची कट-लांबी
+  जुन्या !!{proof}
+  पेक्षा अधिक होऊ
+  शकते. हे होणार
+  नाही याची खात्री
+  हवी. म्हणून न्यूनीकरण
+  रूपांतरणे फक्त
+  \emph{सर्वात उजव्या}
+  महत्तम कटांनाच
+  लावतो: न्यूनीकृत
+  होत असलेल्या कटाच्या
+  उजवीकडे~$\delta$
+  मधील कोणत्याही
+  शाखेवर दुसरा महत्तम
+  कट नसतो. ~$\delta_3$
+  मध्ये कट असता, तर
+  तो येथे न्यूनीकृत
+  होणाऱ्या कटाच्या
+  उजवीकडे असता;
+  म्हणून हा सर्वात
+  उजवा कट नसता.
+  सर्वात उजवे कट
+  निवडल्याने !!{proof}
+  ची कट-लांबी किंवा
+  अगदी कट-कोटीही
+  कमी होते.
+  \item ~$\delta_2$
+  मधील एखादे गृहीतक~$!B^x$
+  !!a{elimination} अनुमानाचे
+  प्रमुख आधारविधान
+  असेल, आणि~$\delta_3$
+  चे अंतिम अनुमान
+  \Elim{\lor}, \Elim{\lexists}
+  किंवा !!a{introduction}
+  अनुमान असेल, तर
+  त्या गृहीतकावर
+  ~$\delta_3$ चे
+  कलम-संयोजन केल्यामुळे
+  नवा कट तयार होतो.
+  ~$\delta_2$ मध्ये
+  ~$\delta_2$ मध्ये
+  जे केवळ गृहीतक
+  होते, ते आता लांबी~$1$
+  असलेला कट
+  (!!a{introduction}
+  अनुमानाचा निष्कर्ष आणि
+  !!a{elimination} अनुमानाचे
+  प्रमुख आधारविधान)
+  किंवा कट-खंडाची
+  शेवटची !!{formula}
+  आस्थिती
+  (!!a{elimination}
+  अनुमानाचे प्रमुख
+  आधारविधान आणि
+  \Elim{\lor}
+  किंवा~\Elim{\lexists}
+  चा निष्कर्ष)
+  होते. $B^x$ हे
+  \Elim{\lor}
+  किंवा~\Elim{\lexists}
+  चे गौण आधारविधान
+  असेल, तर ते आधीच
+  एखाद्या खंडाची,
+  कदाचित कट-खंडाचीही,
+  पहिली !!{formula}
+  आस्थिती होती.
+  नव्या !!{proof}
+  मध्ये तो खंड
+  आता अधिक लांब
+  होऊ शकतो. पण
+  या नव्या कटाचे
+  किंवा विद्यमान
+  कट-खंडाचे !!{formula}
+  हे~$!B$ आहे, आणि
+  $\depth{!B} < \depth{!B \lif !C}$.
+  म्हणून नवे कट
+  आले किंवा काही
+  कटांची लांबी
+  वाढली, तरी त्यांपैकी
+  कोणताही महत्तम कट
+  नसतो. अशा रीतीने
+  कट-कोटी कमी होते,
+  किंवा समान कोटीचे
+  कट उरले असतील
+  तर कट-लांबी कमी
+  होते.
+\end{enumerate}
+
+लांबी~$1$ असलेला
+कट कमी करण्याच्या
+प्रक्रियेला
+\emph{न्यूनीकरण रूपांतरण}
+(किंवा
+\emph{वळसा रूपांतरण})
+म्हणतात. काही
+नियम-जोड्यांचे नमुने
+~\olref{tab:reduction-conversions}
+मध्ये दिले आहेत.
+(उरलेले सरावासाठी
+सोडले आहेत.)
+
+\begin{table}
+\begin{multline*}
+\bottomAlignProof
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!C$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!B \lif !C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+\quad \longrightarrow\quad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{$\Subst{\delta_2}{\delta_3}{!B^x}$}
+\shortDeduce
+\DeduceC{$!C$}
+\DisplayProof}
+\\[4ex]
+\shoveleft{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\DisplayProof}\qquad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$!C$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!C$}
+\DisplayProof}
+\\[4ex]
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{\Intro{\lor}[1]}
+\UnaryInfC{$!B \lor !C$}
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!D$}
+\AxiomC{$\Discharge{!C}{y}$}
+\RightLabel{$\delta_4$}
+\shortDeduce
+\DeduceC{$!D$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!D$}
+\DisplayProof
+\quad \longrightarrow\quad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{$\Subst{\delta_3}{\delta_2}{!B^x}$}
+\shortDeduce
+\DeduceC{$!D$}
+\DisplayProof}
+\\[2ex]
+\shoveleft{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B(c)$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[x][!B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(t)$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\Subst{\delta_2}{t}{c}$}
+\shortDeduce
+\DeduceC{$!B(t)$}
+\DisplayProof}
+\\[4ex]
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!B(c)}{x}$}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!D$}
+\DischargeRule{\Elim{\lexists}}{x}
+\BinaryInfC{$!D$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B(t)$}
+\RightLabel{$\Subst{\Subst{\delta_3}{t}{c}}{\delta_2}{!B(t)^x}$}
+\shortDeduce
+\DeduceC{$!D$}
+\DisplayProof}
+\end{multline*}
+\caption{\Log{N1i} साठी काही न्यूनीकरण रूपांतरणे.}
+\ollabel{tab:reduction-conversions}
+\end{table}
+
+\begin{prob}
+\Intro{\lnot} नंतर
+\Elim{\lnot} येत
+असेल, तर न्यूनीकरण
+रूपांतरण द्या.
+\end{prob}
+
+आणखी एक प्रसंग
+पाहावा लागतो. कटाच्या
+व्याख्येत असा प्रसंग
+येऊ शकतो की कटाची
+लांबी~$1$ आहे,
+आणि~$!A$ हे
+\FalseInt{} चा निष्कर्ष
+तसेच !!a{elimination}
+अनुमानाचे प्रमुख
+आधारविधान आहे.
+$!A$ हा
+!!a{introduction}
+नियमाचा निष्कर्ष
+असताना करतो तसेच
+येथेही करू. उदाहरणार्थ,
+पुढील बदल करा:
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\UnaryInfC{$!B \lif !C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+\quad\text{ऐवजी}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\UnaryInfC{$!C$}
+\DisplayProof
+\]
+~$!A \ident (!B \lor
+!C)$ किंवा
+$!A \ident \lexists[x][!B(x)]$
+असेल, तर थोडी काळजी
+हवी. उदाहरणार्थ,
+पुढील रचनेच्या जागी
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!B \lor !C$}
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!D$}
+\AxiomC{$\Discharge{!C}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!D$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!D$}
+\DisplayProof
+\quad\text{ऐवजी}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!D$}
+\DisplayProof
+\]
+असा बदल केला,
+तर कट-!!{formula}~$!D$
+असलेला नवा कट
+निर्माण होऊ शकतो.
+पण
+$\depth{!D} < \depth{!B \lor !C}$
+असेलच याची हमी नाही!{}
+म्हणून~\Intro{\lor}/\Elim{\lor}
+न्यूनीकरणात जसे
+केले, तसेच येथेही
+करावे आणि पुढील
+रचनेने बदलावे:
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!B$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!D$}
+\DisplayProof
+\quad\text{किंवा}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!C$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!D$}
+\DisplayProof
+\]
+
+\end{document}
