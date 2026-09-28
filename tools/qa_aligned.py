@@ -68,6 +68,14 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0677': [
+        # OLINC-388: every member of the segment is a formula occurrence.
+        (r'$!A_{i+1}$' + '\n' + r'  हा त्याच अनुमानाचा',
+         r'$A_{i+1}$' + '\n' + r'  हा त्याच अनुमानाचा'),
+        # OLINC-389: length-one cuts may also begin at false-introduction.
+        (r'नियमाचा किंवा~\FalseInt' + '\n' + r'चा निष्कर्ष',
+         r'नियमाचा' + '\n' + r'निष्कर्ष'),
+    ],
     'OLP-0676': [
         # OLINC-386: the implication example has delta2 and delta3 only.
         (r'~$\delta_2$ किंवा' + '\n' + r'$\delta_3$ यांच्या',

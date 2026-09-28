@@ -1,0 +1,196 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{seg}
+
+\olsection{खंड आणि कट}
+
+!!^a{introduction} नियमाच्या
+नंतर !!a{elimination} नियम
+येणे हा !!a{proof} मधला
+वळसा असतो; !!a{proof}
+सामान्यरूप करणे म्हणजे
+असे वळसे काढणे.
+पण~\Elim{\lor} आणि
+\Elim{\lexists} मुळे
+“काढायचा वळसा” याची
+व्याख्याही थोडी
+गुंतागुंतीची होते.
+अडचण अशी: वळशात
+!!{elimination} नियम
+!!{introduction} नियमाच्या
+\emph{लगेच} नंतर येईलच
+असे नाही. त्यांच्यामध्ये
+\Elim{\lor} किंवा
+\Elim{\lexists} असू
+शकतो; उदाहरणार्थ:
+\[
+\AxiomC{}
+\DeduceC{$\lexists[x][!C(x)]$}
+\AxiomC{$\Discharge{!A}{x}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lexists}}{y}
+\BinaryInfC{$!A \lif !B$}
+\AxiomC{}
+\DeduceC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\]
+इतकेच नव्हे,~\Intro{\lif}
+आणि~\Elim{\lif} यांच्या
+मध्ये कितीही
+\Elim{\lor} किंवा
+\Elim{\lexists} अनुमाने
+असू शकतात; उदाहरणार्थ:
+\[
+\AxiomC{}
+\DeduceC{$\lexists[x][!C(x)]$}
+\AxiomC{}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!A}{x}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\AxiomC{$\Discharge{!A}{x}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\RightLabel{\Elim{\lor}}
+\TrinaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lexists}}{y}
+\BinaryInfC{$!A \lif !B$}
+\AxiomC{}
+\DeduceC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\]
+या उदाहरणात तोच
+\Elim{\lif} एकाहून
+अधिक वळशांत भाग
+घेतो: त्याच्या आधी
+एकाहून अधिक~\Intro{\lif}
+आहेत. अशा सर्व
+शक्यता सामावण्यासाठी
+~\Log{N1i}-सिद्धतेतील
+!!{formula} आस्थितींच्या
+विशिष्ट अनुक्रमांनी
+वळसे परिभाषित करतो;
+त्यांना \emph{खंड}
+म्हणतात. येथे त्या
+~$!A \lif !B$
+च्या आस्थितींच्या
+अनुक्रमिका आहेत:
+$\Elim{\lor}$ किंवा
+$\Elim{\lexists}$
+च्या गौण आधारविधानानंतर
+त्याच अनुमानाचा
+निष्कर्ष येतो.
+या उदाहरणात असे
+दोन खंड आहेत;
+प्रत्येकात~$!A \lif !B$
+च्या तीन आस्थिती
+आहेत. आता औपचारिक
+व्याख्या पाहू.
+
+\begin{defn}
+~\Log{N1i} मधील
+!!{proof}~$\delta$
+मध्ये एकाच !!{formula}~$!A$
+च्या $!A_1$, \dots,
+$!A_n$ या~$\delta$
+मधील आस्थितींचा
+अनुक्रम पुढील अटी
+पूर्ण करत असेल,
+तर तो \emph{खंड} आहे:
+\begin{enumerate}
+  \item $!A_1$ हा
+  \Elim{\lor} किंवा
+  \Elim{\lexists}
+  चा निष्कर्ष नसतो;
+  \item $!A_n$ हे
+  \Elim{\lor} किंवा
+  \Elim{\lexists}
+  चे गौण आधारविधान नसते;
+  \item $i = 1$, \dots,~$n-1$
+  साठी~$!A_i$ हे
+  \Elim{\lor} किंवा
+  \Elim{\lexists}
+  चे गौण आधारविधान
+  असते, आणि~$!A_{i+1}$
+  हा त्याच अनुमानाचा
+  निष्कर्ष असतो.
+\end{enumerate}
+त्या खंडाची
+\emph{लांबी}~$n$ आहे.
+\end{defn}
+
+प्रत्येक खंड काढून
+टाकण्याजोगा वळसा
+असतोच असे नाही.
+अशा वळशांना
+\emph{कट} म्हणतात.
+
+\begin{defn}
+एखाद्या खंडातील
+$!A_n$ हे
+!!a{elimination} अनुमानाचे
+प्रमुख आधारविधान असेल,
+आणि पुढीलपैकी एक
+अट पूर्ण होत असेल,
+तर तो \emph{कट} आहे:
+$n=1$ असून
+$!A_1 = !A_n$ हे
+!!a{introduction} अनुमानाचा
+किंवा~\FalseInt चा
+निष्कर्ष असेल;
+किंवा~$n>1$ असेल.
+\end{defn}
+
+कट-खंडाची सुरुवात
+!!a{introduction} नियमाच्या
+निष्कर्षाने व्हावीच
+लागते असे नाही.
+तो !!a{elimination}
+नियमाच्या प्रमुख
+आधारविधानात संपणे
+हीच आवश्यक अट आहे.
+मात्र लांबी~$1$
+असलेला खंड कट
+म्हणून मोजायचा असेल,
+तर तो !!{introduction}
+नियमाचा किंवा~\FalseInt
+चा निष्कर्ष असणेही
+आवश्यक आहे.
+
+\begin{defn}
+कटाची \emph{कोटी}
+ही~$\depth{!A}$
+असते. !!a{proof}~$\delta$
+ची \emph{कट-कोटी}
+$\cutrank{\delta}$
+म्हणजे~$\delta$
+मधील कटांच्या
+कोटींपैकी महत्तम कोटी.
+कटाची कोटी
+$\cutrank{\delta}$
+इतकी असेल, म्हणजे
+ती महत्तम असेल,
+तर तो~$\delta$
+मधील \emph{महत्तम} कट.
+~$\delta$ ची
+\emph{कट-लांबी}
+म्हणजे तिच्यातील
+सर्व महत्तम कटांच्या
+लांबींची बेरीज.
+\end{defn}
+
+\end{document}
