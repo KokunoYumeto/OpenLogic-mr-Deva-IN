@@ -1,7 +1,7 @@
 param(
   [int]$SlotTimeoutMilliseconds = 1500,
   [int]$PassTimeoutMilliseconds = 480000,
-  [ValidateSet('sets','foundations','core','proof')][string]$Target='sets',
+  [ValidateSet('sets','foundations','core','proof','full')][string]$Target='sets',
   [string]$PrepareScript=''
 )
 $ErrorActionPreference = 'Stop'
