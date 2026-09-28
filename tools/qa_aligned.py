@@ -68,6 +68,10 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0605': [
+        # MRPRF-003: this Methods section was assigned the modal part ID.
+        (r'\olfileid{mth}{prf}{def}', r'\olfileid{mod}{prf}{def}'),
+    ],
     'OLP-0029': [
         ('0 & 1 & -1 & 2 & -2 & 3 & -3 & \\dots',
          '0 & 1 & -1 & 2 & -2 & 3 & \\dots'),
