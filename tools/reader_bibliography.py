@@ -64,10 +64,21 @@ def citation_keys(text):
 def render_bibliography(root, inputs):
     path = root / "upstream/bib/open-logic.bib"
     records = parse_bib(path.read_text(encoding="utf-8"))
-    keys = set()
+    cited_keys = set()
     for row in inputs:
-        keys.update(citation_keys((root / row["path"]).read_text(encoding="utf-8")))
+        cited_keys.update(citation_keys((root / row["path"]).read_text(encoding="utf-8")))
+    keys = set(cited_keys)
     assert keys <= records.keys(), sorted(keys - records.keys())
+    # BibTeX notes sometimes cite another record. Render that transitive
+    # closure too, or the local bibliography leaves visible [?] references.
+    pending = list(keys)
+    while pending:
+        key = pending.pop()
+        linked = set().union(*(citation_keys(value) for value in records[key].values()))
+        assert linked <= records.keys(), (key, sorted(linked - records.keys()))
+        for other in linked - keys:
+            keys.add(other)
+            pending.append(other)
     chunks = [
         r"\chapter*{संदर्भ}", r"\addcontentsline{toc}{chapter}{संदर्भ}",
         "खालील संदर्भ मूळ स्रोताच्या ग्रंथसूचीवरून घेतले आहेत. लेखकांची नावे, "
@@ -115,6 +126,6 @@ def render_bibliography(root, inputs):
     return "\n\n".join(chunks), {
         "source_bib": path.relative_to(root).as_posix(),
         "source_bib_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
-        "cited_keys": sorted(keys), "rendered_keys": sorted(keys),
-        "scope": "All citation keys in the source-aligned target inputs; metadata copied from the frozen bibliography, not independently verified.",
+        "cited_keys": sorted(cited_keys), "rendered_keys": sorted(keys),
+        "scope": "All citation keys in the source-aligned target inputs and their transitive bibliography-note citations; metadata copied from the frozen bibliography, not independently verified.",
     }
