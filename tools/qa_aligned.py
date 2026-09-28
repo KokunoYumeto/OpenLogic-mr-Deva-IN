@@ -68,6 +68,11 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0713': [
+        # OLINC-470: remove the empty succedent item in the second derivation.
+        (r'\UnaryInf$\Gamma \fCenter \Delta, !A \lor !B, !A \lor !B$',
+         r'\UnaryInf$\Gamma \fCenter \Delta, , !A \lor !B, !A \lor !B$'),
+    ],
     'OLP-0711': [
         # OLINC-467: multiset order does not change the succedent formula.
         (r'$!E, !D \Sequent !E$', r'$!E, !D \Sequent !D$'),

@@ -1,0 +1,102 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: translations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{tr}
+
+\olsection{\Log{G1c} आणि \Log{G3c} यांतील रूपांतरे}
+
+\Log{G1c} आणि \Log{G3c} या दोन्ही पद्धती अभिजात तर्कशास्त्रासाठी
+निर्दोष व संपूर्ण आहेत, असे आपण म्हटले होते. म्हणजे प्रत्येक
+!!{structure} मध्ये सत्य असलेल्या आणि फक्त त्याच क्रमवर्ती त्या
+सिद्ध करतात. विशेषतः, दोन्ही त्याच क्रमवर्ती सिद्ध करतात. आता
+निर्दोषता व संपूर्णतेच्या प्रमेयांचा वळसा न घालता, केवळ
+सिद्धता-उपपत्तीय मार्गाने हे तथ्य सिद्ध करता येते. अशा
+सिद्धतेत \Log{G1c} मधील !!{proof}s चे \Log{G3c} मधील
+!!{proof}s मध्ये आणि उलट दिशेने \emph{रूपांतरे} मिळतात.
+
+\begin{prop}
+$\Log{G1c} \Proves S$ असेल, तर $\Log{G3c} \Proves S$.
+\end{prop}
+
+\begin{proof}
+  $\pi$ ही \Log{G1c} मधील !!a{proof} असेल, तर \Log{G3c} मध्ये
+  $S$ ची !!a{proof}~$\pi'$ आहे, हे दाखवू. यासाठी $n
+  = \pheight{\pi}$ वर आगमन करू.
+
+  $n = 0$ असेल, तर $\pi$ हे स्वयंसिद्धक असते. $\lfalse \Sequent
+  \quad$ हे स्वयंसिद्धक \Log{G3c} मध्येही आहे (संदर्भ $\Gamma,
+  \Delta$ रिकामे घ्या). \Log{G1c} मधील $!A \Sequent !A$ ही
+  स्वयंसिद्धके $!A$ अण्वीय असण्याची अट न घालता ग्राह्य असतात.
+  पण अशा सर्व क्रमवर्ती \Log{G3c} मध्ये !!{provable} आहेत, हे आपण
+  \olref[ex]{prop:G3c-axioms} मध्ये सिद्ध केले आहे.
+
+  $n>0$ असेल, तर $\pi$ चा शेवट $R$ नियमाने होतो. आगमनाचे
+  गृहीतक सांगते की त्या नियमाच्या आधारविधानांच्या \Log{G3c}
+  मधील !!{proof}s आहेत; म्हणजे लगेचच्या उप-!!{proof}s ची
+  \Log{G3c} मध्ये रूपांतरे आहेत. $R$ हा \Log{G3c} मधीलही नियम
+  असेल, तर आधारविधानांच्या रूपांतरित !!{proof}s वर तो लागू करू.
+  \Log{G3c} मध्ये प्रत्यक्ष नियम नसलेल्या इतर नियमांना किमान
+  अनुज्ञेय असल्याचे आपण आधीच दाखवले आहे. म्हणून $R$ हा
+  $\LeftR{\land}$ किंवा $\RightR{\lor}$ असेल, तर
+  \olref[adm]{prop:lor-G3-adm} वापरा. तो दुर्बलीकरणाचा नियम
+  असेल, तर \olref[adm]{prop:weak-G3c-adm} वापरा; आणि तो
+  आकुंचनाचा नियम असेल, तर \olref[inv]{prop:G3c-cont-adm} वापरा.
+\end{proof}
+
+\begin{prop}
+$\Log{G3c} \Proves S$ असेल, तर $\Log{G1c} \Proves S$.
+\end{prop}
+
+\begin{proof}
+  पुन्हा $S$ ची !!a{proof}~$\pi$ हिच्या !!{height} वर आगमन करू.
+  \Log{G3c} मधील प्रत्येक स्वयंसिद्धक \Log{G1c} मध्ये एका
+  स्वयंसिद्धकापासून \LeftR{\Weakening} आणि
+  \RightR{\Weakening} नियम काही वेळा वापरून !!{prove}d करता येते:
+  \[
+  \Axiom$!C \fCenter !C$
+  \RightLabel{\LeftR{\Weakening}}
+  \Deduce$!C, \Gamma \fCenter !C$
+  \RightLabel{\RightR{\Weakening}}
+  \Deduce$!C, \Gamma \fCenter \Delta, !C$
+  \DisplayProof
+\qquad
+  \Axiom$\lfalse \fCenter$
+  \RightLabel{\LeftR{\Weakening}}
+  \Deduce$\lfalse, \Gamma \fCenter$
+  \RightLabel{\RightR{\Weakening}}
+  \Deduce$\lfalse, \Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  $\pi$ चा शेवट $R$ नियमाने होत असेल, तर आगमनाच्या गृहीतकाने
+  आधारविधानांच्या \Log{G1c} मधील !!{proof}s मिळतात;
+  त्या !!{proof}s वर तोच $R$ नियम लागू करता येतो. अपवाद म्हणजे \LeftR{\land}
+  आणि \RightR{\lor} हे नियम; त्यांच्या \Log{G1c} आणि
+  \Log{G3c} मधील आवृत्त्या वेगळ्या आहेत. \Log{G3c} मधील
+  आवृत्त्या \Log{G1c} मध्ये पुढीलप्रमाणे व्युत्पाद्य आहेत:
+  \[
+  \Axiom$!A, !B, \Gamma \fCenter \Delta$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!A \land !B, !B, \Gamma \fCenter \Delta$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!A \land !B, !A \land !B, \Gamma \fCenter \Delta$
+  \RightLabel{\LeftR{\Contraction}}
+  \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+    \DisplayProof
+\qquad
+  \Axiom$\Gamma \fCenter \Delta, !A, !B$
+  \RightLabel{\RightR{\lor}}
+  \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B, !B$
+  \RightLabel{\RightR{\lor}}
+  \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B, !A \lor !B$
+  \RightLabel{\RightR{\Contraction}}
+  \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B$
+    \DisplayProof
+  \]
+\end{proof}
+
+\end{document}
