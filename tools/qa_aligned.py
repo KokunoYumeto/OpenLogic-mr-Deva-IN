@@ -68,6 +68,14 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0661': [
+        # OLINC-351: the displayed upper proof is labelled pi1, not pi1-prime.
+        (r'तर~$\pi_1$' '\n' r'मध्ये इतर',
+         r'तर~$\pi_1'+"'"+r'$' '\n' r'मध्ये इतर'),
+        # OLINC-350: the left context in the first existential-right tree.
+        (r"\UnaryInf$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !B$",
+         r"\UnaryInf$!\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !B$"),
+    ],
     'OLP-0660': [
         # OLINC-347: the displayed cut premiss has a transposed formula marker.
         (r'\Deduce$!B, \Gamma \fCenter \Delta, !C$'
