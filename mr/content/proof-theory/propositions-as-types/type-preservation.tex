@@ -1,0 +1,129 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: type-preservation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{tpr}
+
+\olsection{प्रकार-संरक्षण}
+
+विचारात घेतलेली न्यूनीकरण आणि क्रमपरिवर्तन रूपांतरणे
+\Log{tN2i} आणि \Log{tN3i} या पद्धतींसाठीही थेट
+परिभाषित करता येतात. \Log{tN3i} पद्धत संदर्भ~$\Gamma$
+च्या सापेक्ष $\lambd$-पद~$N$ चा प्रकार असे
+!!{formula}~$!A$ म्हणून परिभाषित करते की
+$\Gamma \Sequent N : !A$ ची \Log{tN3i} मध्ये
+!!a{proof} आहे. $\lambd$-पदांसाठीचे
+$\beta$-न्यूनीकरण नियम !!{proof}s ची न्यूनीकरण
+आणि क्रमपरिवर्तन रूपांतरणे तंतोतंत प्रतिबिंबित करतात.
+त्याचा महत्त्वाचा परिणाम म्हणजे संदर्भ~$\Gamma$ च्या
+सापेक्ष $\lambd$-पदाचा प्रकार $\beta$-परिवर्तनानंतरही
+तोच राहतो. या गुणधर्माला \emph{प्रकार-संरक्षण} म्हणतात.
+
+\begin{prop}
+संदर्भ~$\Gamma$ च्या सापेक्ष $N$ चा प्रकार~$!A$
+असेल आणि $N \redone N'$ असेल, तर~$\Gamma$ च्याच
+सापेक्ष $N'$ चा प्रकारही~$!A$ असतो.
+\end{prop}
+
+\begin{proof}
+  ~$N$ वर आणि $\Gamma \Sequent N : !A$ च्या
+  !!{proof}s~$\delta$ च्या उंचीवर आगमन करून पुढील
+  गोष्ट सहज सिद्ध करता येते:~$M$ हे~$N$ चे उपपद
+  असेल, तर~$\delta$ मध्ये $\Gamma' \Sequent M : !B$
+  वर संपणारी उप-!!{proof}~$\delta_1$ असते.
+  $M$ हा रेडेक्स असेल, तर~$\delta_1$ वर रूपांतरण
+  लागू होते. ~$\delta_1$ ला न्यूनीकरण लावल्यावर
+  $\Gamma' \Sequent M' : !B$ ची !!a{proof}~$\delta_1'$
+  मिळते. \Log{tN3i} च्या रूपांतरणांची तपासणी केली,
+  तर~$M'$ हे~$M$ चे संकुचनफल आहे. ~$\delta$ मध्ये
+  $\delta_1$ च्या जागी~$\delta_1'$ ठेवल्यावर
+  $\Gamma \Sequent N' : !A$ ची !!a{proof}~$\delta'$
+  मिळते; येथे~$N$ मधील उपपद~$M$ च्या जागी~$M'$
+  ठेवल्यावर~$N'$ मिळते.
+
+  उदाहरणार्थ, \Intro{\land} नंतर
+  \Elim{\land} यासाठीचे न्यूनीकरण रूपांतरण घ्या:
+  \[
+  \bottomAlignProof
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_1 : !B_1$
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_2 : !B_2$
+  \RightLabel{\Intro{\land}}
+  \BinaryInf$\Gamma \fCenter \pair{N_1}{N_2} : !B_1 \land !B_2$
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInf$\Gamma \fCenter \proj{i}{\pair{N_1}{N_2}} : !B_i$
+  \DisplayProof
+  \quad\redone\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_i : !B_i$
+  \DisplayProof
+  \]
+  उजवीकडील !!{proof} चे सिद्धता-पद, म्हणजे~$\delta_1'$
+  हे~$N_i$ आहे. डावीकडील~($\delta_1$) !!{proof}
+  च्या $\proj{i}{\pair{N_1}{N_2}}$ या सिद्धता-पदावर
+  $\beta$-परिवर्तन लावल्यावर मिळणारे हेच फल आहे.
+
+  किंवा \Intro{\lif} नंतर \Elim{\lif} येणारे
+  अनुमान आणि त्यावर लागू होणारे न्यूनीकरण रूपांतरण घ्या:
+  \begin{multline*}
+  \bottomAlignProof
+  \AxiomC{$\delta_2$}
+  \Deduce$x: !B_1, \Gamma \fCenter N : !B_2$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter \lambd[\typeof{x}{!B_1}][N] : !B_1 \lif !B_2$
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \Deduce$\Gamma \fCenter M : !B_1$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$\Gamma \fCenter (\lambd[\typeof{x}{!B_1}][N] M) : !B_2$
+  \DisplayProof
+  \quad\redone\\
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \Deduce$\Gamma \fCenter M : !B_1$
+  \RightLabel{$\Subst{\delta_2}{\delta_3}{x:!B_1}$}
+  \Deduce$\Gamma \fCenter \Subst{N}{M}{x} : !B_2$
+  \DisplayProof
+  \end{multline*}
+  पुन्हा उजवीकडील !!{proof} चे सिद्धता-पद हे
+  डावीकडील !!{proof} च्या सिद्धता-पदाचे
+  $\beta$-न्यूनीकरण केल्यावर मिळणारेच फल आहे.
+  अर्थात, उंची~$\delta_2$ वर आगमन करून पुढील
+  गोष्ट काळजीपूर्वक तपासावी लागेल:~$\delta_2$
+  मधील $\Gamma' \Sequent x:!B_1$ या रूपातील सर्व
+  स्वयंसिद्धकांच्या जागी $\Gamma \Sequent M:!B_1$
+  ची !!{proof}~$\delta_3$ ठेवल्यास खरोखर
+  $\Gamma \Sequent \Subst{N}{M}{x} : !B_2$
+  ची !!a{proof}~$\Subst{\delta_2}{\delta_3}{x:!B_1}$
+  मिळते.
+\end{proof}
+
+!!{proof}s आणि $\lambd$-पदे यांतील निकटच्या
+अनुरूपतेचा आणखी एक परिणाम आहे. संदर्भ~$\Gamma$
+च्या सापेक्ष~$!A$ या प्रकाराचे $\lambd$-पद~$N$
+मध्ये रेडेक्स~$M$ असेल (म्हणजे ते सामान्य रूपात
+नसेल), तर $\Gamma \Sequent N : !A$ ची अनुरूप
+\Log{tN3i} सिद्धता~$\delta$ यात
+$\Gamma' \Sequent M: !B$ वर संपणारी अशी
+उप-!!{proof} असते की तिच्यावर रूपांतरण लागू होते.
+संकुचनफलाने~$M$ बदलून $N \redone N'$ होत असेल,
+तर~$\delta$ ला न्यूनीकरण लावून
+$\Gamma \Sequent N' : !A$ ची !!a{proof} मिळते.
+म्हणून सामान्य रूपात नसलेले प्रत्येक $\lambd$-पद
+दुसऱ्या पदात $\beta$-न्यूनीत होते. या गुणधर्माला
+\emph{प्रगती} म्हणतात.
+
+प्रगती आणि प्रकार-संरक्षण मिळून $\lambd$-पदांचे
+$\beta$-न्यूनीकरण ``अडकत'' नाही याची खात्री देतात:
+एखादे पद योग्य प्रकाराचे असेल आणि सामान्य रूपात
+नसेल, तर ते दुसऱ्या योग्य प्रकाराच्या पदात न्यूनीत
+होते (आणि त्या पदाचा प्रकारही तोच असतो).
+
+\end{document}
