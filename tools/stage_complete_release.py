@@ -63,6 +63,7 @@ def scan_private(entries):
 tex_receipt = load(BUILD / "TEX_BUILD_RECEIPT.json")
 inputs = load(BUILD / "INPUTS.json")
 static_qa = load(BUILD / "STATIC_QA.json")
+pdf_qa = load(BUILD / "PDF_QA.json")
 html_qa = load(BUILD / "HTML_QA.json")
 browser_qa = load(BUILD / "HTML_BROWSER_QA.json")
 provenance_qa = load(BUILD / "PROVENANCE_QA.json")
@@ -72,6 +73,8 @@ assert tex_receipt["texInputSha256"] == inputs["reader_sha256"] == static_qa["re
 assert sha(BUILD / "openlogic-mr-full.tex") == inputs["reader_sha256"]
 assert sha(BUILD / "openlogic-mr-full.pdf") == tex_receipt["pdf"]["sha256"]
 assert static_qa["represented_source_units"] == 722 and not static_qa["unresolved_standard_reference_targets"]
+assert pdf_qa["status"] == "ready" and pdf_qa["pdf_sha256"] == tex_receipt["pdf"]["sha256"]
+assert pdf_qa["reader_sha256"] == inputs["reader_sha256"]
 assert html_qa["result"] == "ready" and not html_qa["blockers"]
 assert browser_qa["result"] == "passed"
 assert provenance_qa["status"] == "passed" and provenance_qa["translated_units"] == 722
@@ -79,6 +82,7 @@ assert diagram_receipt["status"] == "final-source" and diagram_receipt["source_p
 assert html_qa["diagrams"] == 70 and html_qa["sections"] == 612
 pdf_pages = len(fitz.open(BUILD / "openlogic-mr-full.pdf"))
 assert pdf_pages >= 900
+assert pdf_qa["pages"] == pdf_pages
 
 manifest_rows = [json.loads(line) for line in (ROOT / "provenance/SOURCE_MANIFEST.jsonl").read_text(encoding="utf-8").splitlines() if line]
 assert len(manifest_rows) == len({row["unit_id"] for row in manifest_rows}) == 722
@@ -153,6 +157,7 @@ qa = {
     "coverage": coverage,
     "pdf_pages": pdf_pages,
     "pdf_log_clean": True,
+    "pdf_all_pages_structurally_checked": True,
     "html_ready": True,
     "desktop_and_mobile_browser_passed": True,
     "diagram_assets": html_qa["diagrams"],
