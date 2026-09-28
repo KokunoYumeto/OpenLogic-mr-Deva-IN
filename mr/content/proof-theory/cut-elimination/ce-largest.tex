@@ -1,0 +1,473 @@
+% Part: proof-theory
+% Chapter: cut-elimination
+% Section: ce-largest
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{cut}{inv}
+
+\olsection{सर्वोच्च कोटीचे कट काढून टाकणे}
+
+\olref[seq][inv]{lem:G3c-invert} च्या सिद्धतेत दिसले
+की \Log{G3c} ने एखाद्या तार्किक नियमाचा निष्कर्ष
+(तो नियम \RightR{\lexists} किंवा \LeftR{\lforall}
+नसेल तर) !!{prove}s केला, तर त्या नियमाची प्रत्येक
+आधार-क्रमवर्तीसुद्धा सिद्धतेची !!{height} न वाढवता
+!!{prove}s करता येते. याहून अधिक दाखवता येते:
+हेच $\Log{G3c} + \CutCS$ साठीही लागू होते.
+
+आधीप्रमाणे, \CutCS{} अनुमानाची \emph{कट-कोटी}
+म्हणजे त्यातील कटच्या !!{formula} ची खोली.
+
+\begin{lem}\ollabel{lem:inv-G3c-cut}
+$\Log{G3c} + \CutCS$ मध्ये \RightR{\lexists}
+किंवा \LeftR{\lforall} सोडून अन्य तार्किक नियम~$R$
+चा निष्कर्ष !!a{proof}~$\pi$ ने !!{prove}s होत असेल,
+तर त्या नियमाची प्रत्येक आधार-क्रमवर्ती
+!!{proof}~$\pi'$ ने (किंवा नियमाला दोन आधार
+असल्यास !!{proof}s~$\pi'$, $\pi''$ यांनी)
+!!{prove}s करता येते. शिवाय,
+(a)~$\pheight{\pi'}\le\pheight{\pi}$ (आणि
+$\pheight{\pi''}\le\pheight{\pi}$);
+तसेच (b)~$\pi'$ (आणि $\pi''$) मधील
+\CutCS{} अनुमानांची संख्या आणि त्यांची
+कोटी $\pi$ मधीलच राहते.
+\end{lem}
+
+\begin{proof}
+\cref{pt:seq:inv:lem:G3c-invert,pt:seq:inv:lem:invert-quant}
+यांच्या सिद्धता तपासल्यास हा दावा मिळतो. ती
+सिद्धता~$\pheight{\pi}$ वरील विगमनाने होती.
+आधार प्रसंगात एक स्वयंसिद्धक दुसऱ्या
+स्वयंसिद्धकाने बदलले होते; म्हणून (a) आणि (b)
+लगेच मिळतात. $\pi$ चा शेवटचा नियम~$R$
+असेल, तर त्याच्या तत्काळ उप-!!{proof}s या
+आपल्याला हव्या असलेल्या !!{proof}s~$\pi_i$
+आहेत; (a) आणि (b) येथेही पूर्ण होतात.
+इतर प्रसंगांत $\pi$ च्या तत्काळ उप-!!{proof}s वर,
+म्हणजे शेवटच्या अनुमान~$R$ च्या आधारांकडे
+नेणाऱ्या सिद्धतांवर, विगमन गृहीतक लावून
+परिणामांवर तोच नियम $R$ लावला होता.
+नव्या सिद्धतेच्या तत्काळ उप-!!{proof}s साठी
+(a) व (b) खऱ्या असल्याने संपूर्ण
+सिद्धतेसाठीही त्या खऱ्या आहेत. शेवटचे
+अनुमान~\CutCS{} असेल तो प्रसंग तपासणे
+उरते. पुन्हा फक्त एक उदाहरण पाहू:
+$\pi$ ही \LeftR{\land} च्या
+$!B \land !C, \Gamma \Sequent \Delta$
+या निष्कर्षाची !!a{proof} असून
+\CutCS{} ने संपते असे समजा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B \land !C, \Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A, !B \land !C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B \land !C, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+विगमन गृहीतक $\pi_1$ आणि~$\pi_2$
+यांना लागू होते; त्या दोन्ही
+$\LeftR{\land}$ च्या निष्कर्षाच्या
+उदाहरणांच्या !!{proof}s आहेत.
+त्यातून अनुक्रमे $!B, !C, \Gamma \fCenter
+\Delta, !A$ आणि $!A, !B, !C, \Gamma \fCenter \Delta$
+यांच्या !!{proof}s $\pi_1'$ आणि~$\pi_2'$
+मिळतात. \CutCS{} वापरून त्यांना जोडल्यास
+पुढील~$\pi'$ मिळते:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, !C, \Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!A, !B, !C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B, !C, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+येथे (a) आणि (b) स्पष्टपणे पूर्ण होतात.
+\end{proof}
+
+\CutCS{} ऐवजी \Cut{} वापरला असता ही
+पद्धत चालली नसती: शेवटच्या !!{proof}
+च्या निष्कर्षातील पूर्वांगात
+$!B, !C, \Gamma$ च्या दोन प्रती आणि
+उत्तरांगात $\Delta$ च्या दोन प्रती आल्या
+असत्या. मग आकुंचनाची ग्राह्यता वापरावी
+लागली असती; पण
+\olref[seq][inv]{prop:G3c-cont-adm}
+ची सिद्धता या उलटवण्याच्या उपप्रमेयावरच
+आधारित आहे. त्यामुळे युक्तिवाद चक्रीय ठरला असता.
+
+\cref{pt:cut:inv:lem:inv-G3c-cut} वापरून
+कट-निर्मूलनाची पर्यायी सिद्धता देता येते.
+या सिद्धतेत आपण सर्वोच्च स्थानी असलेली
+\CutCS{} अनुमाने एकामागोमाग काढत नाही;
+त्याऐवजी सर्वोच्च कोटीची \CutCS{}
+अनुमाने काढतो. म्हणजे
+$\Log{G3c} + \CutCS$ मधील !!a{proof}~$\pi$
+घेऊन तिच्यातील कोणताही कट काढतो
+(कदाचित त्याजागी कमी कोटीचे कट येतील)
+आणि एकही कट उरेपर्यंत असेच करत राहतो.
+अट एवढीच की निवडलेल्या कटच्या वर
+त्याच किंवा त्याहून मोठ्या कोटीचे
+कट नसावेत.
+
+\begin{lem}\ollabel{lem:max-cut-red-G3c}
+$\Log{G3c}+\CutCS$ मधील !!a{proof}~$\pi$
+ही $n$ कोटीच्या \CutCS{} अनुमानाने
+संपत असेल आणि इतरत्र फक्त
+$\Log{G3c}$ चे नियम व $<n$ कोटीची
+\CutCS{} अनुमाने वापरत असेल, तर
+$\Log{G3c} + \CutCS$ मध्ये
+त्याच अंतिम क्रमवर्तीची अशी सिद्धता~$\pi'$
+असते की तिच्यातील प्रत्येक \CutCS{}
+अनुमानाची कोटी~$<n$ असते.
+\end{lem}
+
+\begin{proof}
+!!{proof}~$\pi$ चा शेवट पुढीलप्रमाणे असतो:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+आता~$!A$ च्या रूपानुसार प्रसंग वेगळे करू.
+
+$!A$ हे अणुसूत्र आहे असे समजा. $\pi_1$
+आणि $\pi_2$ मधील सर्व \CutCS{} अनुमानांची कोटी
+$< \depth{!A} = 0$ असली पाहिजे; म्हणून त्यांपैकी
+कोणत्याही सिद्धतेत \CutCS{} अनुमान असू शकत नाही.
+म्हणून $\pi_1$ आणि $\pi_2$ दोन्ही कटविरहित आहेत.
+$\pheight{\pi_2}$ वरील विगमनाने
+$\Gamma \Sequent \Delta$ ची कटविरहित सिद्धता
+आहे हे दाखवू. $\pheight{\pi_2} = 0$ असेल,
+तर $!A, \Gamma \Sequent \Delta$ हे स्वयंसिद्धक आहे.
+$!A$ मुख्य नसेल, तर काही अणुसूत्र $!C$
+हे $\Gamma$ आणि $\Delta$ या दोन्हींत
+!!a{element} असते; म्हणून
+$\Gamma \Sequent \Delta$ हे स्वतःच स्वयंसिद्धक
+आहे. $!A$ मुख्य असेल, तर
+$\Delta = \Delta', !A$. या प्रसंगात $\pi_1$
+चा शेवट $\Gamma \Sequent \Delta', !A, !A$
+असा असतो. \olref[seq][inv]{prop:G3c-cont-adm},
+म्हणजे आकुंचनाची ग्राह्यता, लावल्यास
+$\Gamma \Sequent \Delta', !A$ ची
+कटविरहित सिद्धता मिळते.
+$\pheight{\pi_2} > 0$ असेल, तर
+सिद्धता नियम~$R$ ने संपते. त्या नियमाची
+एक आधार-क्रमवर्ती घ्या: तिचे रूप
+$!A, \Gamma', \Pi \Sequent \Delta', \Lambda$
+असते, जेथे $\Pi$ व $\Lambda$ ही
+$R$ ची सक्रिय !!{formula}s आहेत.
+\olref[seq][adm]{prop:weak-G3c-adm}
+हे $\pi_1$ आणि $\pi_2$ यांना लावल्यास
+$\Gamma, \Gamma', \Pi \Sequent
+\Delta, \Delta', \Lambda, !A$ आणि
+$!A, \Gamma, \Gamma', \Pi \Sequent
+\Delta, \Delta', \Lambda$ यांच्या
+!!{proof}s मिळतात; त्यांना विगमन गृहीतक
+लागू होते. त्यामुळे~$R$ च्या प्रत्येक
+आधारासाठी $\Gamma, \Gamma', \Pi \Sequent
+\Delta, \Delta', \Lambda$ ची !!a{proof}
+मिळते. $R$ लावल्यास
+$\Gamma, \Gamma \Sequent \Delta, \Delta$
+मिळते; आणि \olref[seq][inv]{prop:G3c-cont-adm}
+मुळे $\Gamma \Sequent \Delta$ ची
+कटविरहित सिद्धता मिळते.
+%READERNOTE{OLINC-339: स्रोताचे Delta=Delta,A हे चक्रीय समीकरण; आवश्यक विभागणी Delta=Delta',A अशी दुरुस्त केली आहे.}
+
+$!A$ अणुसूत्र नसेल, तर त्याच्या !!{main
+operator} नुसार प्रसंग पाहू. येथे $!A$ हाच
+कट-सूत्र आहे. प्रत्येक प्रसंगात
+\olref{lem:inv-G3c-cut} वापरून $!A$ मुख्य सूत्र
+असलेल्या डाव्या व उजव्या नियमांच्या आधारांच्या
+!!{proof}s मिळवू. त्यानंतर
+\olref[top]{lem:cut-adm-G3c} च्या सिद्धतेतील
+प्रसंग~E प्रमाणे पुढे जाऊ.
+\begin{enumerate}
+  \item $!A \ident \lnot !B$. !!{proof}s $\pi_1$
+  आणि $\pi_2$ यांचे शेवट अनुक्रमे
+  $\Gamma \Sequent \Delta, \lnot !B$ आणि
+  $\lnot !B, \Gamma \Sequent \Delta$ असे आहेत.
+  \olref{lem:inv-G3c-cut} नुसार
+  $!B, \Gamma \Sequent \Delta$ आणि
+  $\Gamma \Sequent \Delta, !B$ यांच्या
+  !!{proof}s $\pi_1'$ आणि $\pi_2'$ मिळतात.
+  !!{proof}~$\pi'$ पुढीलप्रमाणे आहे:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta, !B$
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$!B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $!A \ident (!B \lor !C)$.
+  !!{proof}s $\pi_1$ आणि $\pi_2$
+  यांचे शेवट
+  $\Gamma \Sequent \Delta, !B \lor !C$ आणि
+  $!B \lor !C, \Gamma \Sequent \Delta$ असे आहेत.
+  $\pi_1$ ला \RightR{\lor} चे उलटवणे
+  लावून \olref{lem:inv-G3c-cut} नुसार
+  $\Gamma \Sequent \Delta, !B, !C$
+  ची !!a{proof} $\pi_1'$ मिळते.
+  $\pi_2$ ला \LeftR{\lor} चे उलटवणे
+  लावून \olref{lem:inv-G3c-cut} नुसार
+  $!B, \Gamma \Sequent \Delta$ ची
+  !!a{proof} $\pi_2'$ आणि
+  $!C, \Gamma \Sequent \Delta$ ची
+  !!a{proof} $\pi_2''$ मिळते.
+  \olref[seq][adm]{prop:weak-G3c-adm}
+  हे $\pi_2''$ ला लावल्यास
+  $!C, \Gamma \Sequent \Delta, !B$
+  ची !!a{proof}~$\pi_2'''$ मिळते.
+  !!{proof}~$\pi'$ पुढीलप्रमाणे आहे:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$\Gamma \fCenter \Delta, !B, !C$
+  \AxiomC{}
+  \RightLabel{$\pi_2'''$}
+  \Deduce$!C, \Gamma \fCenter \Delta, !B$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta, !B$
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$!B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $!A \ident (!B \land !C)$.
+  हा प्रसंग सरावासाठी आहे.
+  \item $!A \ident (!B \lif !C)$.
+  !!{proof}s $\pi_1$ आणि $\pi_2$
+  यांचे शेवट
+  $\Gamma \Sequent \Delta, !B \lif !C$ आणि
+  $!B \lif !C, \Gamma \Sequent \Delta$ असे आहेत.
+  $\pi_1$ ला \RightR{\lif} चे उलटवणे
+  लावून \olref{lem:inv-G3c-cut} नुसार
+  $!B, \Gamma \Sequent \Delta, !C$
+  ची !!a{proof} $\pi_1'$ मिळते.
+  $\pi_2$ ला \LeftR{\lif} चे उलटवणे
+  लावून \olref{lem:inv-G3c-cut} नुसार
+  $\Gamma \Sequent \Delta, !B$ ची
+  !!a{proof} $\pi_2'$ आणि
+  $!C, \Gamma \Sequent \Delta$ ची
+  !!a{proof} $\pi_2''$ मिळते.
+  \olref[seq][adm]{prop:weak-G3c-adm}
+  हे $\pi_2''$ ला लावल्यास
+  $!C, !B, \Gamma \Sequent \Delta$
+  ची !!a{proof}~$\pi_2'''$ मिळते.
+  !!{proof}~$\pi'$ पुढीलप्रमाणे आहे:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta, !B$
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$!B, \Gamma \fCenter \Delta, !C$
+  \AxiomC{}
+  \RightLabel{$\pi_2'''$}
+  \Deduce$!C, !B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$!B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $!A \ident \lforall[x][!B(x)]$.
+  !!{proof}s $\pi_1$ आणि $\pi_2$
+  यांचे शेवट
+  $\Gamma \Sequent \Delta, \lforall[x][!B(x)]$
+  आणि $\lforall[x][!B(x)], \Gamma \Sequent \Delta$
+  असे आहेत. \olref{lem:inv-G3c-cut} नुसार
+  $\Gamma \Sequent \Delta, !B(c)$ ची
+  !!a{proof}~$\pi_1'$ मिळते.
+
+आता !!{proof}~$\pi_2$ पाहू. तिचा शेवट
+$\lforall[x][!B(x)], \Gamma \Sequent \Delta$
+असा आहे. $\pi_2$ च्या अंतिम क्रमवर्तीपासून
+वर जाताना, डाव्या बाजूला आलेली
+$\lforall[x][!B(x)]$ ची अशी प्रत्येक आस्थिती
+चिन्हांकित करा की ती अंतिम क्रमवर्तीतील
+$\lforall[x][!B(x)]$ च्या आस्थितीपर्यंत
+“पोहोचते”. म्हणजे:
+(a)~$\pi_2$ च्या अंतिम क्रमवर्तीतील
+$\lforall[x][!B(x)]$ चिन्हांकित करा.
+(b)~एखाद्या नियमाच्या निष्कर्षाच्या
+संदर्भात $\lforall[x][!B(x)]$ चिन्हांकित
+असेल, तर त्या नियमाच्या आधारात किंवा
+आधारांत तिच्याशी अनुरूप आस्थिती चिन्हांकित
+करा. (c)~\LeftR{\lforall} नियमाच्या
+निष्कर्षात $\lforall[x][!B(x)]$ हे मुख्य
+सूत्र असून चिन्हांकित असेल, तर त्याच्या
+आधारातील $\lforall[x][!B(x)]$ आणि
+$!B(t)$ यांच्या अनुरूप सक्रिय आस्थिती
+चिन्हांकित करा. हा मागोवा $\pi_2$
+च्या सिद्धतावृक्षावरच घेतला आहे.
+
+आता $\lforall[x][!B(x)]$ च्या
+या सर्व चिन्हांकित आस्थिती पाहू. त्यांपैकी
+कोणतीही \LeftR{\lforall} व्यतिरिक्त
+अन्य नियमात सक्रिय नसते
+(फक्त \LeftR{\lforall} ची सक्रिय
+!!{formula}s चिन्हांकित होतात).
+$\pi_2$ मधील $\lforall[x][!B(x)]$
+च्या सर्व चिन्हांकित आस्थिती काढून टाका.
+यातून योग्य !!{proof} मिळाली, तर
+$\lforall[x][!B(x)]$ च्या चिन्हांकित
+आस्थिती कधीच सक्रिय नव्हत्या; त्या
+सर्व थेट स्वयंसिद्धकांतून आल्या होत्या.
+मिळालेल्या !!{proof} चा शेवट
+$\Gamma \Sequent \Delta$ असा आहे आणि
+ती $\pi$ च्या जागी ठेवता येते.
+याने सर्वोच्च कोटीचा एक कट काढला.
+
+अन्यथा मिळालेली सिद्धता योग्य नाही:
+काही \LeftR{\lforall} अनुमानांत सक्रिय
+असलेली $\lforall[x][!B(x)]$ ही
+!!{formula}s आपण काढून टाकली आहेत.
+त्यामुळे पुढील रूपाची “अनुमाने” मिळाली:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_t$}
+  \Deduce$!B(t), \Pi \fCenter \Lambda$
+  \RightLabel{\LeftR{\lforall}}
+  \UnaryInf$\Pi \fCenter \Lambda$
+  \DisplayProof
+  \]
+अशा प्रत्येक सर्वोच्च “अनुमाना”च्या जागी
+पुढील सिद्धता ठेवा:
+\[
+  \AxiomC{}
+  \RightLabel{$\Subst{\pi_1'}{t}{c}[\Pi \Sequent \Lambda]$}
+  \Deduce$\Gamma, \Pi \fCenter \Delta, \Lambda, !B(t)$
+  \AxiomC{}
+  \RightLabel{$\pi_t[\Gamma \Sequent \Delta]$}
+  \Deduce$!B(t), \Gamma, \Pi \fCenter \Delta, \Lambda$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda$
+  \DisplayProof
+  \]
+तिच्या खालील प्रत्येक क्रमवर्तीच्या
+डावीकडे $\Gamma$ आणि उजवीकडे
+$\Delta$ घाला. आधारात चिन्हांकित
+$!B(t)$ असलेली सर्व
+\LeftR{\lforall} “अनुमाने”
+काही~$!B(t)$ वरील \CutCS{}
+अनुमानाने बदलेपर्यंत हे पुन्हा करा.
+मिळालेल्या !!{proof} ची अंतिम क्रमवर्ती
+(आता ती खरोखर योग्य !!{proof} आहे)
+$\Gamma, \dots, \Gamma \Sequent
+\Delta, \dots, \Delta$ या रूपाची असते.
+आकुंचनाची ग्राह्यता लावून तिचे
+$\Gamma \Sequent \Delta$ वरील
+!!a{proof} मध्ये रूपांतर करा आणि
+ती $\pi$ च्या जागी ठेवा. आपण
+$\lforall[x][!B(x)]$ वरील एक कट
+$!B(t)$ वरील (कदाचित अनेक) कटांनी
+बदलला आहे; पण या सर्व कटांची कोटी
+कमी आहे. $\pi_1$ किंवा $\pi_2$
+मध्ये आधीपासून असलेले कट तसेच
+राहतात आणि त्यांची कोटीही कमी आहे.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\olref{lem:inv-G3c-cut} च्या सिद्धतेतील
+$!A \ident (!B \land !C)$ हा प्रसंग तपासा.
+म्हणजे, दोन उपसिद्धतांसह पुढीलप्रमाणे संपणारी
+!!a{proof}~$\pi$ असेल:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !B \land !C$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!B \land !C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+आणि $\pi_1$ व $\pi_2$ यांतील
+सर्व कटांची कोटी $<\depth{!B
+\land !C}$ असेल, तर
+$\Gamma \Sequent \Delta$ ची
+फक्त $<\depth{!B \land !C}$
+कोटीचे कट असलेली !!a{proof}~$\pi'$
+असते हे दाखवा.
+\end{prob}
+
+% \begin{prob}
+% \olref{lem:inv-G3c-cut} च्या सिद्धतेतील
+% $!A \ident \lexists[x][!B(x)]$ हा प्रसंग तपासा.
+% \end{prob}
+
+\olref{lem:max-cut-red-G3c} नुसार
+!!a{proof} मधील सर्वोच्च कोटीचे
+\CutCS{} अनुमान कमी कोटीच्या
+\CutCS{} अनुमानांनी बदलता येते.
+हे उपप्रमेय पुन्हा वापरून,
+सर्वोच्च~\CutCS{} ने संपणाऱ्या
+सर्वोच्च उप-!!{proof}s वर ते एकामागोमाग
+लावल्यास कोणत्याही !!a{proof} मधून कितीही
+\CutCS{} अनुमाने काढता येतात.
+%READERNOTE{OLINC-340: स्रोत येथे सर्वोच्च कटासाठीचे वेगळे उपप्रमेय दाखवतो; या परिच्छेदातील कोटी-कमीकरण मागील उपप्रमेयावर आधारित आहे.}
+
+\begin{thm}\ollabel{thm:cut-elim-G3c-largest}
+$\Log{G3c} + \CutCS$ मधील कोणतीही
+!!{proof} $\pi$ ही~\Log{G3c} मधील
+सिद्धतेत रूपांतरित करता येते.
+\end{thm}
+
+\begin{proof}
+  प्रथम $\pi$ मधील सर्वोच्च कोटीचे
+  सर्व कट काढता येतात हे सिद्ध करू.
+  $d$ ही $\pi$ मधील कटांची सर्वोच्च
+  कोटी आणि $n$ ही $d$ कोटीच्या कटांची
+  संख्या असू द्या. $n$ वरील विगमनाने
+  सिद्धता करू. $n=0$ असेल, तर
+  सिद्ध करायचे काही नाही. $n>0$
+  असेल, तर $d$ कोटीचा सर्वोच्च कट
+  निवडा आणि त्यावर संपणारी उप-!!{proof}
+  $\pi_1$ असू द्या.
+  \olref{lem:max-cut-red-G3c} नुसार
+  त्याच अंतिम क्रमवर्तीची, फक्त
+  $<d$ कोटीचे कट असलेली,
+  !!a{proof}~$\pi_1'$ आहे.
+  $\pi$ मध्ये $\pi_1$ च्या जागी
+  $\pi_1'$ ठेवा. मिळालेल्या
+  !!a{proof} मध्ये $d$ कोटीचे
+  $n-1$ कट असतात; म्हणून
+  विगमन गृहीतक लागू होते.
+
+आता $d$ वरील विगमनाने निष्कर्ष
+मिळतो. $d=0$ असेल, तर सर्व कट
+अणुसूत्रांवरील आहेत आणि मागील
+निष्कर्षाने ते सर्व काढता येतात.
+$d>0$ असेल, तर मागील निष्कर्षाने
+$d$ कोटीचे सर्व कट $<d$ कोटीच्या
+कटांनी बदललेली सिद्धता मिळते.
+$\pi$ मधील कटांची सर्वोच्च कोटी
+$d$ असल्यामुळे नव्या सिद्धतेतील
+कटांची सर्वोच्च कोटी $<d$ होते;
+म्हणून विगमन गृहीतक लागू होते.
+\end{proof}
+
+\end{document}

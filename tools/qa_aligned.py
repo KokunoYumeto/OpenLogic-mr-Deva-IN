@@ -68,6 +68,13 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0655': [
+        # OLINC-339: split the succedent into the remaining part and A.
+        (r"$\Delta = \Delta', !A$", r"$\Delta = \Delta, !A$"),
+        # OLINC-340: the local rank-reduction lemma is the relevant result.
+        (r'\olref{lem:max-cut-red-G3c} नुसार' + '\n' + r'!!a{proof}',
+         r'\olref[top]{lem:cut-adm-G3c} नुसार' + '\n' + r'!!a{proof}'),
+    ],
     'OLP-0653': [
         # OLINC-335: every natural y has some half x, not every x.
         (r'\lforall[y][\lexists[x][(y = x + x \lor y = x + x +',
