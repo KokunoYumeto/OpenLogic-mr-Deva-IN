@@ -1,0 +1,187 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{qua}
+
+\olsection{नियमित सिद्धता आणि प्रतिस्थापन}
+
+संख्यकांचे नियम काही गुंतागुंत निर्माण करतात;
+कारण~\LeftR{\lexists} आणि~\RightR{\lforall} या
+नियमांना ``आयगेन चराच्या अटी'' लागू होतात. या
+बहुतेक अडचणी त्या निगमनांतील !!{constant}~$a$
+पुन्हा कधीही वापरला जाणार नाही याची खात्री करून
+सोडवता येतात. म्हणून पुढील व्याख्या देऊ.
+
+\begin{defn}
+\Log{G1c} किंवा \Log{G3c} मधील !!^a{proof}~$\pi$
+\emph{नियमित} असते, जर
+\begin{enumerate}
+  \item कोणताही आयगेन चर~$a$ एकाहून अधिक
+  \LeftR{\lexists} किंवा~\RightR{\lforall} निगमनांचा
+  आयगेन चर म्हणून वापरला जात नसेल; आणि
+  \item $a$ हा \LeftR{\lexists} किंवा~\RightR{\lforall}
+  निगमनाचा आयगेन चर असेल, तर तो~$\pi$ मध्ये
+  फक्त त्या निगमनाच्या वरच येत असेल.
+\end{enumerate}
+\end{defn}
+
+\begin{lem}\ollabel{lem:subst-regular} $\pi$ ही
+नियमित असून तिची अंतिम क्रमवर्ती $\Gamma \Sequent
+\Delta$ आहे असे माना. तसेच~$c$ हा~$\pi$ मध्ये
+आयगेन चर म्हणून न वापरलेला !!a{constant} असो,
+आणि~$t$ हे~$\pi$ चा कोणताही आयगेन चर नसलेले पद असो.
+मग~$\pi$ मधील~$c$ ची प्रत्येक उपस्थिती~$t$ ने
+बदलून मिळणारी~$\Subst{\pi}{t}{c}$ ही नियमित
+!!{proof} असते. $\Subst{\pi}{t}{c}$ ची अंतिम क्रमवर्ती
+$\Subst{\Gamma}{t}{c}
+\Sequent \Subst{\Delta}{t}{c}$ असते; येथे
+$\Subst{\Gamma}{t}{c} =
+\Setabs{!A(t)}{!A(c) \in \Gamma}$.
+\end{lem}
+
+\begin{proof}
+  $\pheight{\pi}$ वर आगमन करू. $\pheight{\pi} = 0$
+  असेल तर ती फक्त एक स्वयंसिद्धक आहे. मग
+  $\Subst{\pi}{t}{c}$ हेही स्वयंसिद्धक असते, कारण
+  त्यातील कोणतेही !!{formula}~$!A(c)$ हे~$!A(t)$
+  होते.
+
+$\pheight{\pi} > 0$ असेल तर~$\pi$
+  मधील शेवटच्या निगमनानुसार प्रसंग वेगळे करू.
+  संरचनात्मक नियमांचे (\Log{G1c} मध्ये) आणि
+  विधानात्मक संयोजकांच्या तार्किक नियमांचे प्रसंग
+  सोपे आहेत; ते प्रश्न म्हणून सोडतो. $\pi$ चा शेवट
+  संख्यकाच्या निगमनाने होणारे प्रसंग पाहू.
+  \begin{enumerate}
+    \item शेवटचे निगमन $\RightR{\lforall}$ असेल, तर
+    $\pi$ या रूपाची असते:
+\[
+    \AxiomC{}
+    \RightLabel{$\pi'$}
+    \Deduce$\Gamma(c) \fCenter \Delta'(c), !A(a,c)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma(c) \fCenter \Delta'(c), \lforall[x][!A(x,c)]$
+    \DisplayProof
+    \]
+    आगमनात्मक गृहीतकानुसार $\Subst{\pi'}{t}{c}$
+    ही $\Gamma(t) \fCenter \Delta'(t), !A(a,t)$ ची
+    नियमित !!{proof} आहे. $a$ हा~$\pi$ चा आयगेन
+    चर असल्यामुळे~$a$ हे~$t$ मध्ये येत नाही.
+    म्हणून $\Subst{\pi}{t}{c}$ मधील शेवटचे निगमन,
+\[
+    \AxiomC{}
+    \RightLabel{$\Subst{\pi'}{t}{c}$}
+    \Deduce$\Gamma(t) \fCenter \Delta'(t), !A(a,t)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma(t) \fCenter \Delta'(t), \lforall[x][!A(x,t)]$
+    \DisplayProof
+    \]
+    योग्य आहे: त्याच्या निष्कर्षात~$a$ येत नाही.
+    \item शेवटचे निगमन \Log{G3c} मधील
+    $\LeftR{\lforall}$ असेल, तर $\pi$ चे रूप असे:
+\[
+    \AxiomC{}
+    \RightLabel{$\pi'$}
+    \Deduce$!A(s(c),c), \lforall[x][!A(x,c)], \Gamma(c) \fCenter \Delta'(c)$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x,c)], \Gamma(c) \fCenter \Delta'(c)$
+    \DisplayProof
+    \]
+    आगमनात्मक गृहीतकानुसार $\Subst{\pi'}{t}{c}$
+    ही $!A(s(t),t), \lforall[x][!A(x,t)], \Gamma(t) \fCenter
+    \Delta'(t)$ ची नियमित !!{proof} आहे.
+    $\Subst{\pi}{t}{c}$ मधील शेवटचे निगमन,
+\[
+    \AxiomC{}
+    \RightLabel{$\Subst{\pi'}{t}{c}$}
+    \Deduce$!A(s(t),t), \lforall[x][!A(x,t)], \Gamma(t) \fCenter \Delta'(t)$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x,t)], \Gamma(t) \fCenter \Delta'(t)$
+    \DisplayProof
+    \]
+    योग्य आहे. \Log{G1c} मधील \LeftR{\lforall}
+    साठीचा प्रसंगही असाच, पण काहीसा सोपा आहे.
+    \item शेवटचे निगमन~\RightR{\lexists} किंवा
+    \LeftR{\lexists} असेल, तर ते प्रश्न म्हणून सोडले आहे.
+  \end{enumerate}
+  प्रत्येक प्रसंगात आपण नियमित !!{proof} च्या
+  शेवटी एक क्रमवर्ती जोडली (दोन पूर्वपक्ष असलेल्या
+  नियमात दोन नियमित !!{proof}s वापरल्या). नव्या
+  अंतिम क्रमवर्तीमध्ये~$\pi$ च्या अंतिम
+  क्रमवर्तीपेक्षा फक्त~$c$ च्या जागी पद~$t$ आलेले
+  असते. तसेच $\pi$ आणि $\Subst{\pi}{t}{c}$
+  यांचे आयगेन चर तेच राहतात; कारण~$t$ मध्ये
+  $\pi$ चा कोणताही आयगेन चर नाही, नव्या अंतिम
+  क्रमवर्तीमध्येही $\Subst{\pi}{t}{c}$ चा आयगेन चर
+  येत नाही. त्यामुळे~$\Subst{\pi}{t}{c}$ नियमित असते.
+\end{proof}
+
+\begin{prop}
+$\pi$ ही \Log{G1c} किंवा \Log{G3c} मधील
+!!a{proof} असेल, तर तिच्याशी तीच रचना
+(विशेषतः तीच !!{height}) असलेली नियमित
+!!{proof}~$\pi'$ मिळते, जी फक्त आयगेन चर
+बदलल्यामुळे~$\pi$ पेक्षा वेगळी असते.
+\end{prop}
+
+\begin{proof}
+फक्त या सिद्धतेपुरते,~$\pi$ मधील आयगेन चराचे
+एखादे निगमन \emph{स्वच्छ} म्हणू, जर त्याचा आयगेन
+चर इतर कोणत्याही निगमनाचा आयगेन चर नसेल आणि
+त्या निगमनाच्या तत्काळ उप-!!{proof} व्यतिरिक्त
+~$\pi$ मध्ये कुठेही येत नसेल; अन्यथा ते
+\emph{अस्वच्छ} म्हणू. $\pi$ मधील अस्वच्छ आयगेन
+चराच्या निगमनांची संख्या~$n$ असो. $n$ वर
+आगमन करून~$\pi$ चे अपेक्षित नियमित
+!!{proof}~$\pi'$ मध्ये रूपांतर करता येते हे
+दाखवू. $n=0$ असेल तर~$\pi$ मधील आयगेन चराची
+सर्व निगमने स्वच्छ आहेत; म्हणून~$\pi$ नियमित
+असते आणि सिद्ध करण्यास काही उरत नाही.
+अन्यथा, सर्वांत वरचे अस्वच्छ आयगेन-चर निगमन,
+उदा.~\RightR{\lforall}, निवडा. त्यात संपणारी
+~$\pi$ ची उप-!!{proof}~$\pi_1$ पुढील रूपाची आहे:
+\[
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\Gamma \fCenter \Delta, !A(c)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+    \DisplayProof
+    \]
+$c$ हा आयगेन चर असल्यामुळे तो~$\Gamma$,
+$\Delta$, किंवा $\lforall[x][!A(x)]$ मध्ये
+येत नाही. $\pi_2$ नियमित आहे, कारण तिच्यातील
+कोणतेही आयगेन-चर निगमन अस्वच्छ नाही.
+~$\pi$ मध्ये न येणारा !!a{constant}~$a$ घ्या.
+\olref{lem:subst-regular} नुसार
+$\Subst{\pi_2}{a}{c}$ ही $\Gamma \fCenter \Delta,
+!A(a)$ ची नियमित सिद्धता आहे; तिच्यावर
+~$\RightR{\lforall}$ लावता येतो. $\pi$ मधील
+~$\pi_1$ च्या जागी पुढील सिद्धता~$\pi_1'$ ठेवू:
+\[
+    \AxiomC{}
+    \RightLabel{$\Subst{\pi_2}{a}{c}$}
+    \Deduce$\Gamma \fCenter \Delta, !A(a)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+    \DisplayProof
+    \]
+त्यामुळे एक अस्वच्छ आयगेन-चर निगमन स्वच्छ बनते;
+फरक फक्त आयगेन चर~$c$ च्या जागी~$a$ आल्याचा
+आहे. परिणामी सिद्धतेतील अस्वच्छ आयगेन-चर
+निगमनांची संख्या~$n-1$ पेक्षा जास्त राहत नाही,
+म्हणून आगमनात्मक गृहीतकातून निष्कर्ष मिळतो.
+\end{proof}
+
+नुकताच सिद्ध केलेला निष्कर्ष आपण स्पष्टपणे
+संदर्भ म्हणून वापरणार नाही; पण पुढील सर्व
+!!{proof}s नियमित आहेत असे मानू. त्या नियमित
+नसल्या तर आयगेन चर बदलून त्यांना नेहमी नियमित
+बनवता येते.
+
+\end{document}

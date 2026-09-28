@@ -68,6 +68,11 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0703': [
+        # OLINC-452: both displayed universal-left steps use LeftR.
+        (r'\RightLabel{\LeftR{\lforall}}',
+         r'\RightLabel{\RightR{\lforall}}'),
+    ],
     'OLP-0702': [
         # OLINC-444: Gamma is the original left context, not the right formula.
         (r'\Gamma = \{(!C \land !D) \lif !E\}',
