@@ -68,6 +68,13 @@ def check(a,b):
 
 
 _DOCUMENTED_PROJECTIONS = {
+    'OLP-0699': [
+        # OLINC-437: the second XOR tree is a left rule, not another right rule.
+        (r'\Axiom$!B, \Gamma \fCenter \Delta, !A$' + '\n' +
+         r'\RightLabel{\LeftR{\oplus}}',
+         r'\Axiom$!B, \Gamma \fCenter \Delta, !A$' + '\n' +
+         r'\RightLabel{\RightR{\oplus}}'),
+    ],
     'OLP-0698': [
         # OLINC-435: comma separates the principal conjunction and context.
         (r'\RightLabel{\LeftR{\Contraction}}' + '\n' +
