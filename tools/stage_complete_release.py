@@ -168,6 +168,41 @@ pdf = RELEASE / ("01-" + prefix + ".pdf")
 tex = RELEASE / ("02-" + prefix + ".tex")
 pdf.write_bytes((BUILD / "openlogic-mr-full.pdf").read_bytes())
 tex.write_bytes((BUILD / "openlogic-mr-full.tex").read_bytes())
+reader_source = tex.read_text(encoding="utf-8")
+chapter_starts = list(re.finditer(r"\\chapter\{", reader_source))
+assert len(chapter_starts) == 79
+chapter_sources = []
+chapter_manifest = []
+for index, match in enumerate(chapter_starts):
+    title_start = match.end()
+    cursor, depth = title_start, 1
+    while depth:
+        assert cursor < len(reader_source)
+        char = reader_source[cursor]
+        if char == "{" and reader_source[cursor - 1] != "\\":
+            depth += 1
+        elif char == "}" and reader_source[cursor - 1] != "\\":
+            depth -= 1
+        cursor += 1
+    title = reader_source[title_start:cursor - 1]
+    end = chapter_starts[index + 1].start() if index + 1 < len(chapter_starts) else reader_source.index(r"\end{document}")
+    body = reader_source[match.start():end]
+    chapter = RELEASE / f"11-openlogic-mr-chapter-{index + 1:03d}.tex"
+    header = (
+        f"% संपूर्ण मराठी ग्रंथातील प्रकरण {index + 1}: {title}\n"
+        "% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील\n"
+        "% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.\n"
+        "% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.\n"
+        "% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —\n"
+        "% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.\n"
+    )
+    chapter.write_text(header + body, encoding="utf-8", newline="\n")
+    assert chapter.read_text(encoding="utf-8")[len(header):] == body
+    chapter_sources.append(chapter)
+    chapter_manifest.append({"chapter": index + 1, "title_tex": title,
+                             "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+                             **artifact(chapter)})
+    source_entries.append(("chapter-sources/" + chapter.name, chapter))
 html_zip = RELEASE / ("04-" + prefix + "-html.zip")
 source_zip = RELEASE / ("03-" + prefix + "-editable-sources.zip")
 review_zip = RELEASE / ("05-" + prefix + "-review.zip")
@@ -217,6 +252,8 @@ qa_path = RELEASE / "RELEASE_QA.json"
 write_json(qa_path, qa)
 assets = [artifact(path) for path in (pdf, tex, source_zip, html_zip, review_zip, qa_path, notes,
                                       RELEASE / "RELEASE_NOTES.md", RELEASE / "RELEASE_CONSISTENCY.json")]
+assets.extend(artifact(path) for path in chapter_sources)
+assert len(assets) + 2 <= 100, "Manifest and checksums also count toward the public file limit."
 release_manifest = {
     "schema": "openlogic-release-manifest/1",
     "release": TAG,
@@ -231,6 +268,7 @@ release_manifest = {
     "reader": {"pdf_pages": pdf_pages, "native_mathml": html_qa["mathml_nodes"],
                "semantic_proof_figures": html_qa["proof_tables"], "diagrams": html_qa["diagrams"]},
     "assets": assets,
+    "individual_chapter_sources": chapter_manifest,
     "full_edition_complete": True,
 }
 manifest_path = RELEASE / "RELEASE_MANIFEST.json"
