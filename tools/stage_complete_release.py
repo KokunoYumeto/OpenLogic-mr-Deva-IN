@@ -64,6 +64,8 @@ tex_receipt = load(BUILD / "TEX_BUILD_RECEIPT.json")
 inputs = load(BUILD / "INPUTS.json")
 static_qa = load(BUILD / "STATIC_QA.json")
 pdf_qa = load(BUILD / "PDF_QA.json")
+pdf_visual_qa = load(BUILD / "PDF_VISUAL_QA.json")
+diagram_visual_qa = load(BUILD / "HTML_DIAGRAM_VISUAL_QA.json")
 html_qa = load(BUILD / "HTML_QA.json")
 browser_qa = load(BUILD / "HTML_BROWSER_QA.json")
 provenance_qa = load(BUILD / "PROVENANCE_QA.json")
@@ -81,6 +83,10 @@ assert sha(BUILD / "openlogic-mr-full.pdf") == tex_receipt["pdf"]["sha256"]
 assert static_qa["represented_source_units"] == 722 and not static_qa["unresolved_standard_reference_targets"]
 assert pdf_qa["status"] == "ready" and pdf_qa["pdf_sha256"] == tex_receipt["pdf"]["sha256"]
 assert pdf_qa["reader_sha256"] == inputs["reader_sha256"]
+assert pdf_visual_qa["result"] == "pass"
+assert pdf_visual_qa["pdf_sha256"] == tex_receipt["pdf"]["sha256"]
+assert diagram_visual_qa["result"] == "pass"
+assert diagram_visual_qa["source_pdf_sha256"] == tex_receipt["pdf"]["sha256"]
 assert html_qa["result"] == "ready" and not html_qa["blockers"]
 assert browser_qa["result"] == "pass"
 assert browser_qa["html_sha256"] == html_qa["html_sha256"] == sha(BUILD / "html/index.html")

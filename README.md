@@ -4,7 +4,7 @@
 च्या सर्व 722 TeX मजकूर-एककांचे संपूर्ण मराठी भाषांतर आहे. मूळ स्रोत
 `9620cc73f9c8e0ad003c514a5d3748f29611c4c0` या आवृत्तीत गोठवला आहे.
 संकलित वाचकग्रंथात मुख्य, पूरक आणि पर्यायी सामग्री मिळून 79 प्रकरणे व
-612 विभाग आहेत. ही आवृत्ती
+613 विभाग आहेत. ही आवृत्ती
 [OpenLogic भाषांतर प्रकल्पाचा](https://github.com/KokunoYumeto/OpenLogic-translations)
 भाग आहे.
 
@@ -58,7 +58,7 @@ Windows वर संकलनासाठी एकाच वेळी एक T
 संरक्षण वापरा:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/build_guarded.ps1 -Target full -PrepareScript tools/prepare_complete.py
+pwsh -NoProfile -File tools/build_guarded.ps1 -Target full -PrepareScript tools/prepare_complete.py
 ```
 
 PDF `build/full/openlogic-mr-full.pdf` येथे तयार होते. तिच्या संकलन-नोंदीत
