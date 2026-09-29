@@ -6,8 +6,8 @@
     "first_translated_unit": "OLP-0001",
     "last_translated_unit": "OLP-0722",
     "aligned_segments": 6644,
-    "canon_sources": 122,
-    "canon_passages": 174,
+    "canon_sources": 124,
+    "canon_passages": 181,
     "term_decisions": 638
   },
   "outputs": {
@@ -18,23 +18,23 @@
     },
     "SEGMENT_CANON_USE.jsonl": {
       "records": 6644,
-      "bytes": 9558337,
-      "sha256": "0fce7b07bc3e3fd74c93b9d7ea8896e9bb6a740cb114972df5b06edbc0df6141"
+      "bytes": 9652774,
+      "sha256": "bae79d836ce41d989f3d51c587033bf66fe5b13ab5c87fdd3f165ad9cdad13fe"
     },
     "CANON_SOURCES.jsonl": {
-      "records": 122,
-      "bytes": 78312,
-      "sha256": "0a27f5909e2a866f17ac6ec63684841260330be6c2e9ee1af661ed10ca8a46eb"
+      "records": 124,
+      "bytes": 79909,
+      "sha256": "56ee46ab0641d0020e5b5bee61eda27d4beeff7749f96ad0cd3b364fb1e5778c"
     },
     "CANON_PASSAGES.jsonl": {
-      "records": 174,
-      "bytes": 164476,
-      "sha256": "5001490e556f9aa104c28a74465149e427365e3799c08bac46183c5d670e8b70"
+      "records": 181,
+      "bytes": 175874,
+      "sha256": "807fa897569547ea9d91a7f60aa32cd9aa4fedfb1fd52fc1cfe808426904367d"
     },
     "TERM_DECISIONS.jsonl": {
       "records": 638,
-      "bytes": 678998,
-      "sha256": "029c6e7bcfb64f06eebf3dba222cc43c16bcd53d5c663bf25716723b186ade0c"
+      "bytes": 684253,
+      "sha256": "b3d9009dca8a156b5d250e96fac3797997a7dc269887c7fe90a79e3b26e1602b"
     }
   },
   "sanitization": {

@@ -1,0 +1,2415 @@
+{
+  "schema": "openlogic-mr-retrospective-canon-recheck/1",
+  "date": "2026-09-29",
+  "status": "reviewed-pending-combined-reader-publication",
+  "scope": {
+    "intake_segments": 101,
+    "segments_with_scoped_direct_evidence": 96,
+    "source_controlled_without_relevant_native_attestation": 5,
+    "revised_translation_units": 1
+  },
+  "chronology_mr": "ही 101 खंडांची नवी पूर्वलक्षी तपासणी आहे; आधीच्या प्रकाशनाच्या किंवा मूळ भाषांतराच्या वेळी ही नवी साक्ष वापरली होती असा दावा नाही.",
+  "limits_mr": "विशिष्ट गणितीय शब्दसाक्ष, मर्यादित चरित्र/अध्यापन-संदर्भ आणि स्रोताधीन तथ्ये यांचा भेद प्रत्येक नोंदीत स्पष्ट आहे. संपूर्ण विशेषज्ञ पदांची नसलेली साक्ष बनवलेली नाही; अपुरी साक्ष असलेले पर्याय पुनरावलोकनासाठी खुले आहेत.",
+  "models_mr": "OpenAI Codex — GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort; पूरक यांत्रिक पुनरावलोकन GPT-6 Astra, Ultra effort. स्वतंत्र मानवी पुनरावलोकनाचा दावा नाही.",
+  "input_report_sha256": "4a7b96f2b16058b037bd848c823d81a5774c23fa4e2b50f4ce0435f8ea9bc908",
+  "observation_sha256": "55fe58768d8730f13bd21bb8e72286ce7fb3688af0cec1e7fb6055d02ad79078",
+  "observations": [
+    {
+      "source_id": "MR-C123",
+      "url": "https://vishwakosh.marathi.gov.in/26386/",
+      "locator": "ॲरिस्टॉटल: तर्कशास्त्र परिच्छेद, वेब-वाचनातील ओळी 64–67; संदर्भ सूची 144–152.",
+      "observed": "संवाक्य; कॅटेगरीज; प्रायर ॲनॅलिटिक्स; पोस्टीरियर ॲनॅलिटिक्स; संदर्भ",
+      "method_mr": "अधिकृत प्राथमिक लेखाचा संबंधित मजकूर 2026-09-29 रोजी थेट वेब-वाचनातून पाहिला.",
+      "scope_mr": "तीन ग्रंथांची मराठी नावे व syllogism साठी संवाक्य यांची थेट साक्ष. इतिहासातील दिनांक आणि वैज्ञानिक युक्तिवादाविषयीचे वाक्य इंग्रजी OpenLogic नुसार जतन. संदर्भ शीर्षकाची साक्ष संदर्भसूचीपुरती."
+    },
+    {
+      "source_id": "MR-C019",
+      "url": "https://vishwakosh.marathi.gov.in/26597/",
+      "locator": "अवकलन व समाकलन: वक्राची स्पर्शिका आणि अवकलजाचा भूमितीय अर्थ परिच्छेद; छेदिकेचा उतार व त्याची सीमा.",
+      "observed": "अवकलन; अवकलज; छेदिका; उतार; वक्र",
+      "method_mr": "अधिकृत प्राथमिक पृष्ठाच्या शोध-उताऱ्यातील संबंधित परिच्छेद 2026-09-29 रोजी प्रत्यक्ष वाचले; पूर्ण origin HTML स्थानिकरीत्या मिळाला नाही.",
+      "scope_mr": "प्रक्रिया, तिचा अवकलज व एकचल आलेखाचा उतार यांच्या अर्थभेदाची थेट शब्दसाक्ष. OpenLogic मधील त्रिकोण, निर्देशांक, गुणोत्तर आणि संख्यात्मक मूल्ये स्वतंत्रपणे स्रोताशी तपासली. लेखातील इतर सर्व गणितीय दावे स्वीकारल्याचा दावा नाही."
+    },
+    {
+      "source_id": "MR-C018",
+      "url": "https://vishwakosh.marathi.gov.in/27548/",
+      "locator": "फलन: बहुपदी व परिमेय फलनांचे परिच्छेद; सत् चलाची फलने; सीमा, संततता आणि अवकलनीयता परिच्छेद.",
+      "observed": "फलन; संतत; संततता; अवकलनीय; अवकलनीयता",
+      "method_mr": "अधिकृत प्राथमिक पृष्ठाचा तपशीलवार शोध-उतारा 2026-09-29 रोजी प्रत्यक्ष वाचला; origin HTML उपलब्ध झाल्याचा दावा नाही.",
+      "scope_mr": "अवकलनीय याची थेट साक्ष आणि संतत/संततता हा प्रामाण्यस्रोताचा पर्याय. आवृत्तीतील सतत/सातत्य ही रूपे जसाच्या तशी त्या उताऱ्यात आढळल्याचा दावा नाही. सतत असणे व अवकलनीय असणे यांच्या भिन्न अटी स्रोताशी तपासल्या; लेखातील अपुऱ्या परिकल्पनांची इतर प्रमेये आयात केलेली नाहीत."
+    },
+    {
+      "source_id": "MR-C068",
+      "url": "https://vishwakosh.marathi.gov.in/22497/",
+      "locator": "गोडेल, कुर्ट: जन्म, शिक्षण, विद्यापीठातील अध्यापन व संशोधन या आरंभीच्या परिच्छेदांतील वेब-ओळी 58–60.",
+      "observed": "गोडेल; त्यांनी; पदवी; अध्यापन; संशोधन",
+      "method_mr": "प्राथमिक मराठी चरित्रलेखाचे आरंभीचे परिच्छेद 2026-09-29 रोजी थेट वाचले.",
+      "scope_mr": "गणितज्ञांच्या चरित्रासाठी आदरार्थी सर्वनाम, शिक्षण आणि कारकिर्दीचा निवेदनप्रयोग यांचा नोंदलेला संदर्भ-नियम. इतर व्यक्तींची नावे, सर्व जीवनघटना, मानसिक आरोग्य, राजकीय संबंध किंवा मृत्यूचे तपशील या लेखाने सिद्ध केल्याचा दावा नाही. लेखातील कालबाह्य वर्तमानकाळ आणि अपूर्ण मृत्युदिनांक स्वीकारलेले नाहीत."
+    },
+    {
+      "source_id": "MR-C124",
+      "url": "https://vishwakosh.marathi.gov.in/22649/",
+      "locator": "ग्रीक लिपि: ग्रीक वर्णमाला या आकृतीचा निर्देश; थीटा, झाय, फाय, काय आणि स्वरनावांचे परिच्छेद.",
+      "observed": "ग्रीक वर्णमाला; थीटा; झाय; फाय; काय; आल्फा; एप्सायलॉन; उप्सायलॉन; आयोटा; ओमिक्रॉन; सिग्मा",
+      "method_mr": "प्राथमिक लेखाचा संबंधित मजकूर 2026-09-29 रोजी थेट वाचला.",
+      "scope_mr": "ग्रीक वर्णमाला व निवडक नावांची थेट साक्ष; सर्व 24 नावे आणि आवृत्तीतील प्रत्येक उच्चाररूप यांची एकाच लेखातून साक्ष नाही. झाय ठेवणे समर्थित आहे; आल्फा/अल्फा, एप्सायलॉन/एप्सिलॉन, उप्सायलॉन/अप्सिलॉन आणि काय/खाय हे नोंदलेले पर्याय. मूळ लघु-महाक्षर सूत्रचिन्हे पूर्णपणे जतन."
+    },
+    {
+      "source_id": "MR-C001",
+      "locator": "eBalbharati गणित: PDF पृष्ठ 12/मुद्रित 2 — यादी पद्धती; PDF पृष्ठ 13/मुद्रित 3 — सरावसंच 1.1 व लिहा या आज्ञा.",
+      "observed": "यादी पद्धती; सरावसंच; लिहा",
+      "method_mr": "जतन केलेली दोन्ही मूळ-पृष्ठ-प्रतिमा 2026-09-29 रोजी प्रत्यक्ष दृश्य-वाचनातून पुन्हा पाहिल्या.",
+      "scope_mr": "अध्यापनातील सराव व आज्ञार्थ आणि सामान्य यादी हे घटक समर्थित. सिद्ध करा, उलटवणे, lambda-list, औपचारिक अनुमान किंवा प्रमाणित संपूर्ण विशेषज्ञ पदांची थेट शब्दशः साक्ष नाही.",
+      "source_sha256": "7646a42093bb66af77ae6a1edd0584ba023688b53c2f67dd37161e87f8af67bb",
+      "page_hashes": {
+        "MR-C001-p012.png": "41bfbb0c7b3586cca0272a01428fff70f8245188a6b04160da2a1ad11c61eebf",
+        "MR-C001-p013.png": "d0c53c4cd70d586a9f042fe6e4062479053b21350cacbf563249f339175cc411"
+      }
+    },
+    {
+      "source_id": "MR-C030",
+      "url": "https://sahitya.marathi.gov.in/ebooks/%E0%A4%97%E0%A4%A3%E0%A4%BF%E0%A4%A4%E0%A5%80%20%E0%A4%A4%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%8D%E0%A4%B5%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8%E0%A4%BE%E0%A4%9A%E0%A4%BE%20%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%9A%E0%A4%AF.pdf",
+      "locator": "जतन केलेल्या introduction-exercise-lexical-notes.json मधील मूळ 2026-09-20 निरीक्षण: परिचय व प्रस्तावना यांचा भेद.",
+      "observed": "परिचय; प्रस्तावना",
+      "method_mr": "जतन केलेले प्राथमिक-वाचन निरीक्षण 2026-09-29 रोजी पुन्हा वाचले; नव्या origin PDF वाचनाचा दावा नाही.",
+      "preserved_observation_sha256": "ba4290881e0dd0b3bf81b9e50cfa39b0924ae049dfcd3f95c4b6bf7f9042d40b",
+      "scope_mr": "विषय-परिचय आणि प्रस्तावना यांतील शीर्षकभेदापुरती साक्ष; प्रकल्पाच्या परवान्याची किंवा चालक फाइलच्या सूचनेची साक्ष नाही."
+    }
+  ],
+  "records": [
+    {
+      "segment_id": "OLP-0001-B001",
+      "source_path": "content/open-logic-about.tex",
+      "translation_path": "mr/content/open-logic-about.tex",
+      "source_segment_sha256": "88410c362d9bc7ff13f0d62ec78073a17e4ac848e6db8407a8daec659843846b",
+      "translation_segment_sha256": "aa9e1dd50068c10e8653f9f970a3cf6a1b2172be0e52a6d5996877877badab01",
+      "canon_passages": [
+        "MR-P181"
+      ],
+      "finding_mr": "प्रकल्पाविषयी हे शीर्षक स्रोताशी जुळते. परिचय हा संबंधित अध्यापनपर शीर्षकप्रकार; पूर्ण शीर्षकाची शब्दशः साक्ष नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0001-B003",
+      "source_path": "content/open-logic-about.tex",
+      "translation_path": "mr/content/open-logic-about.tex",
+      "source_segment_sha256": "de283d3cfc094349e073b01d35fb0dea2c155cf228538db880e75b59fe2a9e37",
+      "translation_segment_sha256": "6ee8f77e2f9023c3ce8d0a304e9d7df8ed9f78fe7df021ca4ece4093cbc12b0e",
+      "canon_passages": [],
+      "finding_mr": "प्रकल्पाची योजना, परवाना किंवा संकलन-सूचना ही गोठवलेल्या स्रोताची सामान्य गद्य-माहिती आहे. अर्थ व दुवे तपासले. संबंधित स्वतंत्र मराठी प्रामाण्यसाक्ष मिळाली नाही; असंबद्ध लेखाची साक्ष जोडलेली नाही. परवाना-मजकूर किंवा संकलनाचा सल्ला विश्वकोशाने प्रमाणित केल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0001-B004",
+      "source_path": "content/open-logic-about.tex",
+      "translation_path": "mr/content/open-logic-about.tex",
+      "source_segment_sha256": "18d2db5e2d865b133ae6812be23d935f9ff220d0caf751a5d7c3351787f699e8",
+      "translation_segment_sha256": "d8d9f8553e77a9972ba0dfbbe8ffaaff187696ce558604bf63b019112dd2bbb1",
+      "canon_passages": [],
+      "finding_mr": "प्रकल्पाची योजना, परवाना किंवा संकलन-सूचना ही गोठवलेल्या स्रोताची सामान्य गद्य-माहिती आहे. अर्थ व दुवे तपासले. संबंधित स्वतंत्र मराठी प्रामाण्यसाक्ष मिळाली नाही; असंबद्ध लेखाची साक्ष जोडलेली नाही. परवाना-मजकूर किंवा संकलनाचा सल्ला विश्वकोशाने प्रमाणित केल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0002-B005",
+      "source_path": "content/content.tex",
+      "translation_path": "mr/content/content.tex",
+      "source_segment_sha256": "fbad95d3307d8ab6a863b0c0ed06e73849f02006e7fc4ab96e78636a52b52fc4",
+      "translation_segment_sha256": "76deab7824d5b4866c606f4d351d16c6686f2720cb56fcea64a96db9ae5e2aa6",
+      "canon_passages": [],
+      "finding_mr": "प्रकल्पाची योजना, परवाना किंवा संकलन-सूचना ही गोठवलेल्या स्रोताची सामान्य गद्य-माहिती आहे. अर्थ व दुवे तपासले. संबंधित स्वतंत्र मराठी प्रामाण्यसाक्ष मिळाली नाही; असंबद्ध लेखाची साक्ष जोडलेली नाही. परवाना-मजकूर किंवा संकलनाचा सल्ला विश्वकोशाने प्रमाणित केल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0002-B007",
+      "source_path": "content/content.tex",
+      "translation_path": "mr/content/content.tex",
+      "source_segment_sha256": "a0ac3ee5d681bc32ae7428c85bd7e32d3723ecd594ca4af1c3d82e625c7b1f42",
+      "translation_segment_sha256": "e2110a704f17703871f1bee931fad0c22bc4fb4483eed7efd16f72de738bd421",
+      "canon_passages": [],
+      "finding_mr": "प्रकल्पाची योजना, परवाना किंवा संकलन-सूचना ही गोठवलेल्या स्रोताची सामान्य गद्य-माहिती आहे. अर्थ व दुवे तपासले. संबंधित स्वतंत्र मराठी प्रामाण्यसाक्ष मिळाली नाही; असंबद्ध लेखाची साक्ष जोडलेली नाही. परवाना-मजकूर किंवा संकलनाचा सल्ला विश्वकोशाने प्रमाणित केल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0276-B005",
+      "source_path": "content/incompleteness/introduction/historical-background.tex",
+      "translation_path": "mr/content/incompleteness/introduction/historical-background.tex",
+      "source_segment_sha256": "d165e13e8e00b68d9aafef09819e654508c6047cd1167b9a0c1aa2a0d96dfe22",
+      "translation_segment_sha256": "4b60e63375bcd1c3b989fb34818a3056330159212bcb3a1e256e9f3eda44086b",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "इतिहासाचे शीर्षक संदर्भानुसार आहे. ॲरिस्टॉटलच्या ऐतिहासिक व तर्कशास्त्रीय निवेदनाचा नोंदलेला संदर्भ आहे; या पूर्ण शीर्षकाची स्वतंत्र शब्दशः साक्ष नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0276-B008",
+      "source_path": "content/incompleteness/introduction/historical-background.tex",
+      "translation_path": "mr/content/incompleteness/introduction/historical-background.tex",
+      "source_segment_sha256": "4be9862e55af3597d0567dc0498042af00e002a3f5baab4f6120ff5ccb879d43",
+      "translation_segment_sha256": "7a632256cc19627147fd46048d1148dae1fd205dcbc55c0f1128b26f55167a5d",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "कॅटेगरीज, प्रायर ॲनॅलिटिक्स, पोस्टीरियर ॲनॅलिटिक्स आणि संवाक्य ही प्रत्यक्ष वाचलेल्या मराठी विश्वकोशानुसार दुरुस्त केली. तिन्ही मूळ ग्रंथांची ओळख, कालखंड आणि वैज्ञानिक युक्तिवादाचा दावा जतन; पूर्वीच्या स्वतंत्र शब्दशः प्रामाण्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0277-B005",
+      "source_path": "content/incompleteness/introduction/definitions.tex",
+      "translation_path": "mr/content/incompleteness/introduction/definitions.tex",
+      "source_segment_sha256": "eea21f2bcb07d5cdb5e2a7f11c0cc9d960e94c1adcdc9d32edf0b0fb0627b083",
+      "translation_segment_sha256": "b4f932c1057002e589f483479fa40364e74a275441dec2b98784b541d66de022",
+      "canon_passages": [
+        "MR-P177"
+      ],
+      "finding_mr": "व्याख्या हे सामान्य गणितीय शीर्षक आहे; फलनाच्या लेखात व्याख्येचा गणितीय प्रयोग आहे. पुढील औपचारिक व्याख्येचे सत्य त्या लेखावरून घेतलेले नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0284-B012",
+      "source_path": "content/incompleteness/arithmetization-syntax/coding-formulas.tex",
+      "translation_path": "mr/content/incompleteness/arithmetization-syntax/coding-formulas.tex",
+      "source_segment_sha256": "d8c6d2d2cb1cd5f40f2a98ada1fb5c447be05e542181c1495d0c8e8ef828e75d",
+      "translation_segment_sha256": "1fb1ca994346b8c8e00f2ca31103fa78ebdbe3190af1b5daab681883efc9a52a",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "सराव/सरावासाठी हा मूळ Exercise चा सिद्धता वाचकाकडे सोपवणारा अपूर्ण-सिद्धता निर्देश आहे. सरावसंच या प्रत्यक्ष पाठ्यपुस्तकीय प्रयोगाचा आधार घेतला; पूर्ण सिद्धता दिल्याचा किंवा औपचारिक placeholder शब्दशः प्रमाणित असल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0285-B009",
+      "source_path": "content/incompleteness/arithmetization-syntax/substitution.tex",
+      "translation_path": "mr/content/incompleteness/arithmetization-syntax/substitution.tex",
+      "source_segment_sha256": "e8d9f8fea5d6e0c61eb31b0214513817be1c04d205e99c6c752f7be002e7148e",
+      "translation_segment_sha256": "6e7a159faa35b0f4cd14ec3496ce61ae54f5204ebd2dd3dc5f41db75d7fb49cb",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "सराव/सरावासाठी हा मूळ Exercise चा सिद्धता वाचकाकडे सोपवणारा अपूर्ण-सिद्धता निर्देश आहे. सरावसंच या प्रत्यक्ष पाठ्यपुस्तकीय प्रयोगाचा आधार घेतला; पूर्ण सिद्धता दिल्याचा किंवा औपचारिक placeholder शब्दशः प्रमाणित असल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0285-B010",
+      "source_path": "content/incompleteness/arithmetization-syntax/substitution.tex",
+      "translation_path": "mr/content/incompleteness/arithmetization-syntax/substitution.tex",
+      "source_segment_sha256": "a6088a0a89c0ed42033d1c5d320badedc11ecd7a162400bf7b8b5b56fd1ae738",
+      "translation_segment_sha256": "4b0f048a21e983b0fa480a88336c128f72565c70cfeec7fef8052b71119a8b36",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "अध्यापनपर आज्ञार्थाचा संदर्भ प्रत्यक्ष मराठी सराव-पृष्ठात पाहिला. सिद्ध करा, स्पष्ट करा, परिभाषित करा किंवा तपासा यांचे विशिष्ट अर्थ मूळ प्रश्नानुसार आहेत; सूत्रे, संदर्भ आणि टिप्पणीची स्थिती जतन. सराव-पृष्ठात प्रत्येक औपचारिक आज्ञेची शब्दशः साक्ष असल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0290-B004",
+      "source_path": "content/incompleteness/representability-in-q/introduction.tex",
+      "translation_path": "mr/content/incompleteness/representability-in-q/introduction.tex",
+      "source_segment_sha256": "69a0b3a324260371b2ce44f39268085731bef7a4ffa0cf0fcda4dd8c9d9795c5",
+      "translation_segment_sha256": "56e3f6da20f9bb79337acd423a39eb05e5101ea3c700475d52b5cb60af121a1c",
+      "canon_passages": [
+        "MR-P181"
+      ],
+      "finding_mr": "परिचय हे विषयप्रवेशाचे शीर्षक ठेवले. जतन केलेल्या मराठी प्रकाशनाच्या प्राथमिक निरीक्षणातील परिचय/प्रस्तावना भेद पुन्हा तपासला; नव्या origin PDF वाचनाचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0294-B027",
+      "source_path": "content/incompleteness/representability-in-q/basic-representable.tex",
+      "translation_path": "mr/content/incompleteness/representability-in-q/basic-representable.tex",
+      "source_segment_sha256": "e8d9f8fea5d6e0c61eb31b0214513817be1c04d205e99c6c752f7be002e7148e",
+      "translation_segment_sha256": "40aad0a17fb0c4399a34d8f0448eba544260a95a4324538961267cfd4c7f92d5",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "सराव/सरावासाठी हा मूळ Exercise चा सिद्धता वाचकाकडे सोपवणारा अपूर्ण-सिद्धता निर्देश आहे. सरावसंच या प्रत्यक्ष पाठ्यपुस्तकीय प्रयोगाचा आधार घेतला; पूर्ण सिद्धता दिल्याचा किंवा औपचारिक placeholder शब्दशः प्रमाणित असल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0294-B029",
+      "source_path": "content/incompleteness/representability-in-q/basic-representable.tex",
+      "translation_path": "mr/content/incompleteness/representability-in-q/basic-representable.tex",
+      "source_segment_sha256": "e8d9f8fea5d6e0c61eb31b0214513817be1c04d205e99c6c752f7be002e7148e",
+      "translation_segment_sha256": "40aad0a17fb0c4399a34d8f0448eba544260a95a4324538961267cfd4c7f92d5",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "सराव/सरावासाठी हा मूळ Exercise चा सिद्धता वाचकाकडे सोपवणारा अपूर्ण-सिद्धता निर्देश आहे. सरावसंच या प्रत्यक्ष पाठ्यपुस्तकीय प्रयोगाचा आधार घेतला; पूर्ण सिद्धता दिल्याचा किंवा औपचारिक placeholder शब्दशः प्रमाणित असल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0295-B013",
+      "source_path": "content/incompleteness/representability-in-q/composition-representable.tex",
+      "translation_path": "mr/content/incompleteness/representability-in-q/composition-representable.tex",
+      "source_segment_sha256": "d8c6d2d2cb1cd5f40f2a98ada1fb5c447be05e542181c1495d0c8e8ef828e75d",
+      "translation_segment_sha256": "dd1819ef4b0cef0b49544324be3d896dde599c139e36701e02ed2e58ef6e4b6d",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "सराव/सरावासाठी हा मूळ Exercise चा सिद्धता वाचकाकडे सोपवणारा अपूर्ण-सिद्धता निर्देश आहे. सरावसंच या प्रत्यक्ष पाठ्यपुस्तकीय प्रयोगाचा आधार घेतला; पूर्ण सिद्धता दिल्याचा किंवा औपचारिक placeholder शब्दशः प्रमाणित असल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0302-B005",
+      "source_path": "content/incompleteness/theories-computability/introduction.tex",
+      "translation_path": "mr/content/incompleteness/theories-computability/introduction.tex",
+      "source_segment_sha256": "dd637b2b47197e563e84aa912ca0ad44c30d2e803be00ed0bdfc5fd8ddb3d86c",
+      "translation_segment_sha256": "31963f9be6e122c4f52c0bca1e79440f8b6b74926c6efd1553a5f92d0f0d4d78",
+      "canon_passages": [
+        "MR-P181"
+      ],
+      "finding_mr": "परिचय हे विषयप्रवेशाचे शीर्षक ठेवले. जतन केलेल्या मराठी प्रकाशनाच्या प्राथमिक निरीक्षणातील परिचय/प्रस्तावना भेद पुन्हा तपासला; नव्या origin PDF वाचनाचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0385-B005",
+      "source_path": "content/many-valued-logic/syntax-and-semantics/introduction.tex",
+      "translation_path": "mr/content/many-valued-logic/syntax-and-semantics/introduction.tex",
+      "source_segment_sha256": "dd637b2b47197e563e84aa912ca0ad44c30d2e803be00ed0bdfc5fd8ddb3d86c",
+      "translation_segment_sha256": "31963f9be6e122c4f52c0bca1e79440f8b6b74926c6efd1553a5f92d0f0d4d78",
+      "canon_passages": [
+        "MR-P181"
+      ],
+      "finding_mr": "परिचय हे विषयप्रवेशाचे शीर्षक ठेवले. जतन केलेल्या मराठी प्रकाशनाच्या प्राथमिक निरीक्षणातील परिचय/प्रस्तावना भेद पुन्हा तपासला; नव्या origin PDF वाचनाचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0390-B010",
+      "source_path": "content/many-valued-logic/syntax-and-semantics/semantic-notions.tex",
+      "translation_path": "mr/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex",
+      "source_segment_sha256": "d8c6d2d2cb1cd5f40f2a98ada1fb5c447be05e542181c1495d0c8e8ef828e75d",
+      "translation_segment_sha256": "1fb1ca994346b8c8e00f2ca31103fa78ebdbe3190af1b5daab681883efc9a52a",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "सराव/सरावासाठी हा मूळ Exercise चा सिद्धता वाचकाकडे सोपवणारा अपूर्ण-सिद्धता निर्देश आहे. सरावसंच या प्रत्यक्ष पाठ्यपुस्तकीय प्रयोगाचा आधार घेतला; पूर्ण सिद्धता दिल्याचा किंवा औपचारिक placeholder शब्दशः प्रमाणित असल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0390-B011",
+      "source_path": "content/many-valued-logic/syntax-and-semantics/semantic-notions.tex",
+      "translation_path": "mr/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex",
+      "source_segment_sha256": "e9fe654dde91d58e89c5ffe3c026b1d68da190b94ab350a5a9ad3c63936ffee6",
+      "translation_segment_sha256": "5b3aa5bb2e4ebb9eecd237797d8de7a268dd984d4b0ed723413f9d41133b900d",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "अध्यापनपर आज्ञार्थाचा संदर्भ प्रत्यक्ष मराठी सराव-पृष्ठात पाहिला. सिद्ध करा, स्पष्ट करा, परिभाषित करा किंवा तपासा यांचे विशिष्ट अर्थ मूळ प्रश्नानुसार आहेत; सूत्रे, संदर्भ आणि टिप्पणीची स्थिती जतन. सराव-पृष्ठात प्रत्येक औपचारिक आज्ञेची शब्दशः साक्ष असल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0620-B004",
+      "source_path": "content/history/history.tex",
+      "translation_path": "mr/content/history/history.tex",
+      "source_segment_sha256": "db997fec609469f216896bb73b2f215aa951240583f25ef1eba469a713865c5a",
+      "translation_segment_sha256": "118484d7c53431bfa2d7ef594b0872423cf3a23b2900e5c6e43293f551096275",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "इतिहासाचे शीर्षक संदर्भानुसार आहे. ॲरिस्टॉटलच्या ऐतिहासिक व तर्कशास्त्रीय निवेदनाचा नोंदलेला संदर्भ आहे; या पूर्ण शीर्षकाची स्वतंत्र शब्दशः साक्ष नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0621-B004",
+      "source_path": "content/history/biographies/biographies.tex",
+      "translation_path": "mr/content/history/biographies/biographies.tex",
+      "source_segment_sha256": "b83cd26bd549470fbbce01b84dc5d6578b2b2caf1f8adb4f6f8c31b89f39e614",
+      "translation_segment_sha256": "e82193e68b8f8230c23863b21b516a832110ebacc24babf3948ae0ec82eff2d7",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "चरित्रे हा गणितज्ञांच्या जीवनविषयक भागाचा शीर्षकनिर्णय आहे. मूळ मराठी गणितज्ञ-चरित्रातील नोंदलेला निवेदनप्रकार वापरला; पूर्ण शीर्षकाची शब्दशः साक्ष नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0622-B007",
+      "source_path": "content/history/biographies/georg-cantor.tex",
+      "translation_path": "mr/content/history/biographies/georg-cantor.tex",
+      "source_segment_sha256": "ca41c1041c05fe25af265444d9d1b19c0511b5a7fc940f4d8d093200c3167a0f",
+      "translation_segment_sha256": "65aefe70d0bbae9da061a456d14dd6cfb24ce5ce896ce0ac74b0d16792dd4a5e",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0622-B009",
+      "source_path": "content/history/biographies/georg-cantor.tex",
+      "translation_path": "mr/content/history/biographies/georg-cantor.tex",
+      "source_segment_sha256": "eafd45eb6790519aa23f31136344ff54bee8807960244941215ea3186bf8620d",
+      "translation_segment_sha256": "f2322e61b321a5af190d8db43554f31e20d4aa9c0991ac528ec6450f056a8144",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0622-B010",
+      "source_path": "content/history/biographies/georg-cantor.tex",
+      "translation_path": "mr/content/history/biographies/georg-cantor.tex",
+      "source_segment_sha256": "b676960cd6d33983937fc3a31ea4dd1084077e5f6fb810a2cc3298be1a9b65bc",
+      "translation_segment_sha256": "c7eefa08fa9b119710e9ee51a0445ee866a10fb80e4287a7c454638cc37a948e",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0622-B011",
+      "source_path": "content/history/biographies/georg-cantor.tex",
+      "translation_path": "mr/content/history/biographies/georg-cantor.tex",
+      "source_segment_sha256": "bf6adc9a881f306c2196baf392337bd6a0ce39c8706efa318cdbf43d19bf08cd",
+      "translation_segment_sha256": "e03811cb0014067782552d34a53f85e44cf6b7421faddb2473d2545cf7ddcbc4",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "पुढील वाचनासाठी मूळ ग्रंथ, चित्रपट, ध्वनिमुद्रिका किंवा लेख यांचे citation keys व प्रकाशनांची ओळख जतन. मराठी विश्वकोशातील संदर्भ-निर्देशाचा नोंदलेला प्रकार लागू; यातील प्रत्येक परदेशी ग्रंथाचे नाव किंवा माध्यमाचे वर्णन त्या मराठी लेखात आहे असा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0623-B009",
+      "source_path": "content/history/biographies/alonzo-church.tex",
+      "translation_path": "mr/content/history/biographies/alonzo-church.tex",
+      "source_segment_sha256": "99c0ee11db057bbaa479e8947589d83839dc33257c7168615d5bef5701239c74",
+      "translation_segment_sha256": "715bcb92f351a06c5701e802d10ab7d185b9f97fcb5bed84c0b8879f4efd3fc2",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0624-B009",
+      "source_path": "content/history/biographies/gerhard-gentzen.tex",
+      "translation_path": "mr/content/history/biographies/gerhard-gentzen.tex",
+      "source_segment_sha256": "1c7fa5685737b593bc1980d67255934c19c9443917c16b978608e66aca2a0ea0",
+      "translation_segment_sha256": "c42ee31deccd73672d6f8b13cbf0d9c892cc74cbe429a8e5fdbf9dcf05cbf9d0",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0624-B010",
+      "source_path": "content/history/biographies/gerhard-gentzen.tex",
+      "translation_path": "mr/content/history/biographies/gerhard-gentzen.tex",
+      "source_segment_sha256": "3e00d753ad49e2d96c7f50a1128b8a8fca4b82e3f2781ceed0c45ce27ee2237c",
+      "translation_segment_sha256": "cc50860e18dda930b05e7599b60fe5d7e0a6ecbd5a8c2d81c4c9abbe601eb5d9",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0625-B009",
+      "source_path": "content/history/biographies/kurt-goedel.tex",
+      "translation_path": "mr/content/history/biographies/kurt-goedel.tex",
+      "source_segment_sha256": "8911d874abf0671b793e5c8979566dac26617d9c7fe8ffecaf135c8f83508547",
+      "translation_segment_sha256": "0359d77eee970e8a114bc9aac7b51a49105edd4ebe6a594e5165dba08fd748e2",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0625-B011",
+      "source_path": "content/history/biographies/kurt-goedel.tex",
+      "translation_path": "mr/content/history/biographies/kurt-goedel.tex",
+      "source_segment_sha256": "090a4f14e1ee01d4f3088a1dc67e903e81c83f85e3b221165b27ce4e84570e62",
+      "translation_segment_sha256": "1fddfacac7248c4d28e1ef99d37e272a07d89c1f25c49f3895dac47cf484982e",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0626-B005",
+      "source_path": "content/history/biographies/emmy-noether.tex",
+      "translation_path": "mr/content/history/biographies/emmy-noether.tex",
+      "source_segment_sha256": "3c2fc1d795115d346e44b15d59e3a4725bef7e3ae8b3eec9e5cca1a7a8415d61",
+      "translation_segment_sha256": "c74ea79602622224431029ada9c78cfaeb25c82bb1948b86063a440fb33d1aa1",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0626-B006",
+      "source_path": "content/history/biographies/emmy-noether.tex",
+      "translation_path": "mr/content/history/biographies/emmy-noether.tex",
+      "source_segment_sha256": "e3b21cbd258ef81351825c8e115d409f396a9f257d6bdb1a80946665bb4bedac",
+      "translation_segment_sha256": "e4110436db6898033717675f3854a22863bfe510a3a4dc86185f143a40e0be19",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0626-B007",
+      "source_path": "content/history/biographies/emmy-noether.tex",
+      "translation_path": "mr/content/history/biographies/emmy-noether.tex",
+      "source_segment_sha256": "6ec38f650c0b3bfc623ba84d50a63732af68c57ec1bc6d9f68f7bcd8b76660e1",
+      "translation_segment_sha256": "f5c20ad84440cfa5af774bdae55a0a45daec77fc79ba8f106cf53f70792fd8f9",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0626-B008",
+      "source_path": "content/history/biographies/emmy-noether.tex",
+      "translation_path": "mr/content/history/biographies/emmy-noether.tex",
+      "source_segment_sha256": "67173fdd3148ad882cde2f060dfcfc6b6aff8de892acde81d2b0e81f0c70efb8",
+      "translation_segment_sha256": "2161f8ac1ae94fca0fff959ed5c18059bd7d40bca264275182090207a53b45d2",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0626-B010",
+      "source_path": "content/history/biographies/emmy-noether.tex",
+      "translation_path": "mr/content/history/biographies/emmy-noether.tex",
+      "source_segment_sha256": "092b85a41149a0bf86da0272663f4e44fa44f22df6bf1209d2ba88bbf0dbe122",
+      "translation_segment_sha256": "007d0391d5b0f11ea32febaf6d628c837e231ec7247c2a97899aa6e996a54e9f",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0626-B011",
+      "source_path": "content/history/biographies/emmy-noether.tex",
+      "translation_path": "mr/content/history/biographies/emmy-noether.tex",
+      "source_segment_sha256": "f2b3da2bfd41139c81d1c55852484da35fcf7f8293d4d3f7f5818890e2301bac",
+      "translation_segment_sha256": "aa479b3254b4e1365c50f2aac95e1bff4b86ee73ec438275f9a1739dcd4a5e8c",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "पुढील वाचनासाठी मूळ ग्रंथ, चित्रपट, ध्वनिमुद्रिका किंवा लेख यांचे citation keys व प्रकाशनांची ओळख जतन. मराठी विश्वकोशातील संदर्भ-निर्देशाचा नोंदलेला प्रकार लागू; यातील प्रत्येक परदेशी ग्रंथाचे नाव किंवा माध्यमाचे वर्णन त्या मराठी लेखात आहे असा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0627-B005",
+      "source_path": "content/history/biographies/rozsa-peter.tex",
+      "translation_path": "mr/content/history/biographies/rozsa-peter.tex",
+      "source_segment_sha256": "7c007ef5b197c1604f362517065a54a3bdb04c59caa0caed7d9445f74b961afb",
+      "translation_segment_sha256": "f37b47e66f2da18315ced6f9113ae5f3d643250c1644839afe0823d6d12c583b",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0627-B006",
+      "source_path": "content/history/biographies/rozsa-peter.tex",
+      "translation_path": "mr/content/history/biographies/rozsa-peter.tex",
+      "source_segment_sha256": "375ef5bb93bcf432244b965aa6936ecc126ab33c5ea409ac0671facfc288729d",
+      "translation_segment_sha256": "2fa1669a3b1db14c522099a8156f4d2a813a07cdde8f1c2c6ac124a602beaade",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0627-B010",
+      "source_path": "content/history/biographies/rozsa-peter.tex",
+      "translation_path": "mr/content/history/biographies/rozsa-peter.tex",
+      "source_segment_sha256": "ab2392831ce6be526f7c4b123efd0822be0820da2b493ac7c79037ea9d1b4b77",
+      "translation_segment_sha256": "bb71c743243e26ef00c38e740affb78e34db69b51c7c29c73e6a24e7dff32eef",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0627-B011",
+      "source_path": "content/history/biographies/rozsa-peter.tex",
+      "translation_path": "mr/content/history/biographies/rozsa-peter.tex",
+      "source_segment_sha256": "b56d0194b203cdf09a8bb2e4efe86c573405c68319b3e4c2ce59d47fccf1c035",
+      "translation_segment_sha256": "78ad74a98ca796afff33abedf5c3dc7a20308155e2d453d7fc72e4806986d6c0",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0627-B012",
+      "source_path": "content/history/biographies/rozsa-peter.tex",
+      "translation_path": "mr/content/history/biographies/rozsa-peter.tex",
+      "source_segment_sha256": "0c24857148bce07a5ef5fd9608a5f38191e63bf38fac95b7b8338ad6837c4e1a",
+      "translation_segment_sha256": "ef960200083a43f8078103e0fd49d97fe1c9668f13d0888ac405e8351ccf167d",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "पुढील वाचनासाठी मूळ ग्रंथ, चित्रपट, ध्वनिमुद्रिका किंवा लेख यांचे citation keys व प्रकाशनांची ओळख जतन. मराठी विश्वकोशातील संदर्भ-निर्देशाचा नोंदलेला प्रकार लागू; यातील प्रत्येक परदेशी ग्रंथाचे नाव किंवा माध्यमाचे वर्णन त्या मराठी लेखात आहे असा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0628-B004",
+      "source_path": "content/history/biographies/julia-robinson.tex",
+      "translation_path": "mr/content/history/biographies/julia-robinson.tex",
+      "source_segment_sha256": "9116441359f28f9e073d763468c68b5cad140131dbc3fe3027074342b41eb67e",
+      "translation_segment_sha256": "89e5ae8488bf4a9e20e5649b36d8b56cd5cc53fa72b6de54fa95c55f0bb029cb",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0628-B005",
+      "source_path": "content/history/biographies/julia-robinson.tex",
+      "translation_path": "mr/content/history/biographies/julia-robinson.tex",
+      "source_segment_sha256": "719edac52ca2ad0df3da4ac4291e71c80025d9b7e5de51de785a0fd738aeb89f",
+      "translation_segment_sha256": "9fe9e9f0684f076b3d1cd0620b047a1bd67c81b05a69f90cce40460fb15191fe",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0628-B007",
+      "source_path": "content/history/biographies/julia-robinson.tex",
+      "translation_path": "mr/content/history/biographies/julia-robinson.tex",
+      "source_segment_sha256": "9e56c2aae25e4011d4d3028d703d5484252341e40f0fb47bb0552c457ad97097",
+      "translation_segment_sha256": "2a3acc29729e7f9fd7dfcdceb97ea6d443f0d362d568d7669c83be33351aeb00",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0628-B010",
+      "source_path": "content/history/biographies/julia-robinson.tex",
+      "translation_path": "mr/content/history/biographies/julia-robinson.tex",
+      "source_segment_sha256": "3a1d87aa1db2eb8ae75aa350b53c9b714221f517596380cff209e3a25b8fdf35",
+      "translation_segment_sha256": "bce5f6a2e69fafb946f90bad55a710f3849343cba8fa4e48ba142e53fb5968f0",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0628-B011",
+      "source_path": "content/history/biographies/julia-robinson.tex",
+      "translation_path": "mr/content/history/biographies/julia-robinson.tex",
+      "source_segment_sha256": "cb7d0a909528f32c8b62c995d4c116b548a5bb7b17ad4b3bf469b8a57c5b1871",
+      "translation_segment_sha256": "09cdd7dc6256500c949dd0685689d1ba40a32353703c476153eab6304531b5f9",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "पुढील वाचनासाठी मूळ ग्रंथ, चित्रपट, ध्वनिमुद्रिका किंवा लेख यांचे citation keys व प्रकाशनांची ओळख जतन. मराठी विश्वकोशातील संदर्भ-निर्देशाचा नोंदलेला प्रकार लागू; यातील प्रत्येक परदेशी ग्रंथाचे नाव किंवा माध्यमाचे वर्णन त्या मराठी लेखात आहे असा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0629-B008",
+      "source_path": "content/history/biographies/bertrand-russell.tex",
+      "translation_path": "mr/content/history/biographies/bertrand-russell.tex",
+      "source_segment_sha256": "8ca65599ce9796d7bc71bcd39e1c01aff4bb5ff85d3318af2ebdeb1ba09fffb5",
+      "translation_segment_sha256": "228c6200d740ee50af1e2f2f3be9a0e7a06a537f0fdc034c8b4c88210a86b0bd",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0629-B010",
+      "source_path": "content/history/biographies/bertrand-russell.tex",
+      "translation_path": "mr/content/history/biographies/bertrand-russell.tex",
+      "source_segment_sha256": "c8fdd4d16c7d7450fde36c617e8c6f4892d86e33dd10e81b7cf94f373a99af65",
+      "translation_segment_sha256": "86fe5cedb5b501c0115b51d11332698b271624f593a4ee076efcb6954d7eaa9a",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0629-B012",
+      "source_path": "content/history/biographies/bertrand-russell.tex",
+      "translation_path": "mr/content/history/biographies/bertrand-russell.tex",
+      "source_segment_sha256": "4840cfca9c448324c1c1ff38012233a1492e7eedef522043bdd661c251f46d90",
+      "translation_segment_sha256": "c141efb2a339372d7ad4eccd8d26d0653c62fbe3b98cf4cb2bde9ec580fb46fd",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "पुढील वाचनासाठी मूळ ग्रंथ, चित्रपट, ध्वनिमुद्रिका किंवा लेख यांचे citation keys व प्रकाशनांची ओळख जतन. मराठी विश्वकोशातील संदर्भ-निर्देशाचा नोंदलेला प्रकार लागू; यातील प्रत्येक परदेशी ग्रंथाचे नाव किंवा माध्यमाचे वर्णन त्या मराठी लेखात आहे असा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0630-B005",
+      "source_path": "content/history/biographies/alfred-tarski.tex",
+      "translation_path": "mr/content/history/biographies/alfred-tarski.tex",
+      "source_segment_sha256": "4426bc05c74db7ab28bf10cbee5975c8a485427977972cd8ba9db294bdb75a13",
+      "translation_segment_sha256": "37ece767baf7cb524d8a835b0648f3907634e9e5727a95460d0d016484a58439",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0630-B006",
+      "source_path": "content/history/biographies/alfred-tarski.tex",
+      "translation_path": "mr/content/history/biographies/alfred-tarski.tex",
+      "source_segment_sha256": "31a663323af57e0ac2c6285b158819180345d7a8facd6280252ccd37e178e0b4",
+      "translation_segment_sha256": "c213de9aa42b1689b430e360f22d83477509b49408fa8630c4df73bc95b7a4e6",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0630-B007",
+      "source_path": "content/history/biographies/alfred-tarski.tex",
+      "translation_path": "mr/content/history/biographies/alfred-tarski.tex",
+      "source_segment_sha256": "d55d9502b44b99f837d82f3185069b23913e9c354b01a09a4eb669a4a9f9d39b",
+      "translation_segment_sha256": "92f3f9064eb46651e9410431a7c4bec204d75febca7f81eb774a3a554e4063af",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0630-B008",
+      "source_path": "content/history/biographies/alfred-tarski.tex",
+      "translation_path": "mr/content/history/biographies/alfred-tarski.tex",
+      "source_segment_sha256": "204344d384f4c363e54f4f24d655c267d161e44af5962efed7d0de224366f834",
+      "translation_segment_sha256": "26424e975abee82a8d2b0756a2f85aa12ceecde8139955f73f46cc34da8f5f60",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0630-B009",
+      "source_path": "content/history/biographies/alfred-tarski.tex",
+      "translation_path": "mr/content/history/biographies/alfred-tarski.tex",
+      "source_segment_sha256": "d10a8f1d4c4bf6e3b6da9e2c1469339a2de43400256b98dbf5a584a3fe8258f0",
+      "translation_segment_sha256": "3c07999cb931a6f6814f9876ae48f532aae210cb5c8b7d5b0a5927acc410a479",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0630-B010",
+      "source_path": "content/history/biographies/alfred-tarski.tex",
+      "translation_path": "mr/content/history/biographies/alfred-tarski.tex",
+      "source_segment_sha256": "0f038f7e8c94a2d91c077adb9e358b5df1412746547dbdce8e642fc4d512c1ce",
+      "translation_segment_sha256": "7b82742b1d90ecea352bd309fec4b2847ada39b03d7a8d01f8533f9c8160087d",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "पुढील वाचनासाठी मूळ ग्रंथ, चित्रपट, ध्वनिमुद्रिका किंवा लेख यांचे citation keys व प्रकाशनांची ओळख जतन. मराठी विश्वकोशातील संदर्भ-निर्देशाचा नोंदलेला प्रकार लागू; यातील प्रत्येक परदेशी ग्रंथाचे नाव किंवा माध्यमाचे वर्णन त्या मराठी लेखात आहे असा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0631-B010",
+      "source_path": "content/history/biographies/alan-turing.tex",
+      "translation_path": "mr/content/history/biographies/alan-turing.tex",
+      "source_segment_sha256": "12d1c6c15b117b3f98b68276bb5c67d0019f714a892b25069dcdb7d4b8ec505a",
+      "translation_segment_sha256": "43f353c6f6be0ccbc361f1d8377649750ef3b2696ababf5b6984926427a9069f",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0631-B011",
+      "source_path": "content/history/biographies/alan-turing.tex",
+      "translation_path": "mr/content/history/biographies/alan-turing.tex",
+      "source_segment_sha256": "66bbe00ef47bfecfed7b090d29fbe9ae71a35ff13d4f1cbed7a0743d7825629e",
+      "translation_segment_sha256": "9206b419a76fd059789e5b56b46f303846cd555c29335c5ab027fcc7bd5baef2",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "पुढील वाचनासाठी मूळ ग्रंथ, चित्रपट, ध्वनिमुद्रिका किंवा लेख यांचे citation keys व प्रकाशनांची ओळख जतन. मराठी विश्वकोशातील संदर्भ-निर्देशाचा नोंदलेला प्रकार लागू; यातील प्रत्येक परदेशी ग्रंथाचे नाव किंवा माध्यमाचे वर्णन त्या मराठी लेखात आहे असा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0632-B005",
+      "source_path": "content/history/biographies/ernst-zermelo.tex",
+      "translation_path": "mr/content/history/biographies/ernst-zermelo.tex",
+      "source_segment_sha256": "66d5a52caa2bad83d6a8bcd1d1044862552620a19a1c5df847c8c9e88cfa8d0b",
+      "translation_segment_sha256": "a3d4ccd1337ab5f494f8824b85a22f671dc38de3940a00e46743afe1d493f829",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0632-B006",
+      "source_path": "content/history/biographies/ernst-zermelo.tex",
+      "translation_path": "mr/content/history/biographies/ernst-zermelo.tex",
+      "source_segment_sha256": "bbfefc3625d9790a9a117f4cf2a27c2699d64e55087f471e99e80d4846e727ef",
+      "translation_segment_sha256": "863c3e410519568380988fae5423359c9c92f7728c8b61220dcebb5268661dc1",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0632-B008",
+      "source_path": "content/history/biographies/ernst-zermelo.tex",
+      "translation_path": "mr/content/history/biographies/ernst-zermelo.tex",
+      "source_segment_sha256": "1fa907299d0e6fd18e95405a89fef8b6c694dcfed70d7fcc59be28e4fd552de5",
+      "translation_segment_sha256": "a61c5dbae3b5e0ad6efcdf6b15ad226b135726c00cefdf28490097e2b5202534",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0632-B009",
+      "source_path": "content/history/biographies/ernst-zermelo.tex",
+      "translation_path": "mr/content/history/biographies/ernst-zermelo.tex",
+      "source_segment_sha256": "0f7935b20848d0ddb5b75a9c82403c344e4f4c175cbe360a6ec9f020d2a46454",
+      "translation_segment_sha256": "e0afc653da5ad43b317ef67c375de558c53167ff2518e60a6ef5fd5caf87d603",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0632-B010",
+      "source_path": "content/history/biographies/ernst-zermelo.tex",
+      "translation_path": "mr/content/history/biographies/ernst-zermelo.tex",
+      "source_segment_sha256": "c0be49c1715931d9b42658a364b42d7eaeb46f561d656fbdc51abfd819bc5bf6",
+      "translation_segment_sha256": "8ab60dcb383c333d3a008e7a5155777c609129db3ed776175b350b79ae53b11e",
+      "canon_passages": [
+        "MR-P178"
+      ],
+      "finding_mr": "मराठी गणितज्ञ-चरित्रातील आदरार्थी सर्वनाम, शिक्षण आणि अध्यापन-कारकिर्दीचा संदर्भ-नियम पुन्हा तपासला. या खंडातील विशिष्ट व्यक्तीचे नाव, घटना, दिनांक, ठिकाण, राजकीय/आरोग्यविषयक वर्णन आणि स्रोताने नोंदलेली अनिश्चितता इंग्रजी OpenLogic शी तुलना करून जतन. गोडेलच्या लेखाने इतर व्यक्तीचे चरित्र किंवा हे सर्व तपशील प्रमाणित केलेले नाहीत.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0632-B011",
+      "source_path": "content/history/biographies/ernst-zermelo.tex",
+      "translation_path": "mr/content/history/biographies/ernst-zermelo.tex",
+      "source_segment_sha256": "3d9883201a8e308f825d46c34e57e1cb487ca383469a9df67c843a05f62deca7",
+      "translation_segment_sha256": "c17d5eee09ed0f5aa734af1bda455a2d18d68a6741760c887f1377372503f62b",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "पुढील वाचनासाठी मूळ ग्रंथ, चित्रपट, ध्वनिमुद्रिका किंवा लेख यांचे citation keys व प्रकाशनांची ओळख जतन. मराठी विश्वकोशातील संदर्भ-निर्देशाचा नोंदलेला प्रकार लागू; यातील प्रत्येक परदेशी ग्रंथाचे नाव किंवा माध्यमाचे वर्णन त्या मराठी लेखात आहे असा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0633-B005",
+      "source_path": "content/history/set-theory/set-theory.tex",
+      "translation_path": "mr/content/history/set-theory/set-theory.tex",
+      "source_segment_sha256": "e12eb26616d781abe4d31b8f6d254d3a7fff7a85b960bca9079a7c0dacb2e693",
+      "translation_segment_sha256": "b0a1f3f9623228e74e79481736106dfa52028cee00fa7665f66a7f2e2e56ff37",
+      "canon_passages": [
+        "MR-P181"
+      ],
+      "finding_mr": "टिम बटन यांच्या ग्रंथातील ऐतिहासिक प्रस्तावना हा स्रोताचा श्रेय-निर्देश जतन. परिचय आणि प्रस्तावना यांचा प्रकाशनपर भेद पाहिला; व्यक्तिनाम किंवा मूळ परकीय शीर्षकाची स्वतंत्र मराठी साक्ष नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0634-B004",
+      "source_path": "content/history/set-theory/infinitesimals.tex",
+      "translation_path": "mr/content/history/set-theory/infinitesimals.tex",
+      "source_segment_sha256": "56c39c8b1c9e0a9b6da121d4fce89a043a269eff766a81cf291e47857a220ea0",
+      "translation_segment_sha256": "2f41d74675131eaec5d3c0d46a60373c5018d3de8f34dff42fe827cae04a3f4c",
+      "canon_passages": [
+        "MR-P176"
+      ],
+      "finding_mr": "अवकलन ही प्रक्रिया, अवकलज व एकचल आलेखाचा उतार यांचा मराठी अर्थभेद संबंधित प्राथमिक गणितीय परिच्छेदाशी तपासला. स्रोताचे फलन, c=1/2, त्रिकोणांच्या पायाची 3,2,1 लांबी आणि 1,3/4,1/2 उतार जतन; इतर ऐतिहासिक किंवा तात्त्विक दाव्यांना सर्वसाधारण शब्दसाक्ष समजलेले नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0634-B005",
+      "source_path": "content/history/set-theory/infinitesimals.tex",
+      "translation_path": "mr/content/history/set-theory/infinitesimals.tex",
+      "source_segment_sha256": "91ede440bdd85662640e027564777cdc19315f7eab8525da8cec826412cc4691",
+      "translation_segment_sha256": "21efc9d94002608e8515e346f0dcffa1d9ab6f155286d05f8fcc0ae1ff11b49a",
+      "canon_passages": [
+        "MR-P176"
+      ],
+      "finding_mr": "अवकलन ही प्रक्रिया, अवकलज व एकचल आलेखाचा उतार यांचा मराठी अर्थभेद संबंधित प्राथमिक गणितीय परिच्छेदाशी तपासला. स्रोताचे फलन, c=1/2, त्रिकोणांच्या पायाची 3,2,1 लांबी आणि 1,3/4,1/2 उतार जतन; इतर ऐतिहासिक किंवा तात्त्विक दाव्यांना सर्वसाधारण शब्दसाक्ष समजलेले नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0634-B008",
+      "source_path": "content/history/set-theory/infinitesimals.tex",
+      "translation_path": "mr/content/history/set-theory/infinitesimals.tex",
+      "source_segment_sha256": "27642b3be163b813dfd067fa58e4416f64656935099dc8c6ce8d2e8be576765a",
+      "translation_segment_sha256": "29b89414ad64ddce854244321b0fb4a69e967c4abe72216a978c600cf61ed609",
+      "canon_passages": [
+        "MR-P176"
+      ],
+      "finding_mr": "अवकलन ही प्रक्रिया, अवकलज व एकचल आलेखाचा उतार यांचा मराठी अर्थभेद संबंधित प्राथमिक गणितीय परिच्छेदाशी तपासला. स्रोताचे फलन, c=1/2, त्रिकोणांच्या पायाची 3,2,1 लांबी आणि 1,3/4,1/2 उतार जतन; इतर ऐतिहासिक किंवा तात्त्विक दाव्यांना सर्वसाधारण शब्दसाक्ष समजलेले नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0634-B012",
+      "source_path": "content/history/set-theory/infinitesimals.tex",
+      "translation_path": "mr/content/history/set-theory/infinitesimals.tex",
+      "source_segment_sha256": "8d6b480b99021d49c0fb8a8429790e3b9209b2aebcc9449356ba5739f81552a3",
+      "translation_segment_sha256": "970e0d0f9d8e88998b660c9a5a1aa759885907054032ae49df6a076222011d14",
+      "canon_passages": [
+        "MR-P176"
+      ],
+      "finding_mr": "अवकलन ही प्रक्रिया, अवकलज व एकचल आलेखाचा उतार यांचा मराठी अर्थभेद संबंधित प्राथमिक गणितीय परिच्छेदाशी तपासला. स्रोताचे फलन, c=1/2, त्रिकोणांच्या पायाची 3,2,1 लांबी आणि 1,3/4,1/2 उतार जतन; इतर ऐतिहासिक किंवा तात्त्विक दाव्यांना सर्वसाधारण शब्दसाक्ष समजलेले नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0635-B009",
+      "source_path": "content/history/set-theory/limits.tex",
+      "translation_path": "mr/content/history/set-theory/limits.tex",
+      "source_segment_sha256": "3a0dd19439b1f69d824e6bdcc94aef0d0546fa0900ae985ef8331edb52f8797f",
+      "translation_segment_sha256": "0b246ce955cda821e6f1725b0e58ba55b4c473322537c9edc6322c4f0b8bd4ad",
+      "canon_passages": [],
+      "finding_mr": "हा खंड सूत्रात्मक TikZ अक्ष-खुणांचा आहे; -1 ही आधी नोंदलेली स्रोतदुरुस्ती जतन. यासाठी नवा मराठी शब्दनिर्णय नाही. संख्या किंवा भूमितीय अचूकतेची साक्ष म्हणून असंबद्ध मराठी परिच्छेद जोडलेला नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity_after_documented_source_correction_projection": true,
+        "macro_multiset_parity_after_documented_source_correction_projection": true,
+        "inline_math_delimiter_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true,
+        "documented_source_correction_projection_applied": true
+      }
+    },
+    {
+      "segment_id": "OLP-0636-B003",
+      "source_path": "content/history/set-theory/pathologies.tex",
+      "translation_path": "mr/content/history/set-theory/pathologies.tex",
+      "source_segment_sha256": "b2ff554957b3a198cb91e86aa8b7e8ed296b3262c5a0fe9e3cbb3ac67df87be6",
+      "translation_segment_sha256": "efbf7913d83d9bee5f82bad1ee7523e8edd6bb6459c3c836e0f70565cf33986a",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "ऐतिहासिक विवेचनाच्या सामान्य शीर्षक/गद्याचा मराठी तर्कशास्त्रीय निवेदन-संदर्भ पाहिला. धक्का, दंतकथा, पत्राचे उद्धरण, चित्रांचा उपयोग किंवा प्रमेयाच्या इतिहासावरील विशिष्ट दावा गोठवलेल्या स्रोताचा आहे. मराठी लेखात ही सर्व तथ्ये अथवा पूर्ण शीर्षके असल्याचा दावा नाही; मूळ उद्धरणे आणि attribution जतन.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0636-B005",
+      "source_path": "content/history/set-theory/pathologies.tex",
+      "translation_path": "mr/content/history/set-theory/pathologies.tex",
+      "source_segment_sha256": "1dc0e1018e1956cb06d690986497b3f3f733bb64fe0cb1bb82020e93160c487d",
+      "translation_segment_sha256": "f6807b59bd42d3531e4d024e8e21224be399a5fa2877e259baede15812609553",
+      "canon_passages": [
+        "MR-P176",
+        "MR-P177"
+      ],
+      "finding_mr": "सर्वत्र सतत असून कोठेही अवकलनीय नसणे आणि एका बिंदूवरील अवकलनीयतेचा अभाव यांचा भेद स्रोताशी तपासला. अवकलनीय हा थेट मराठी प्रयोग; संतत/संततता हा प्रामाण्यस्रोताचा पर्याय. आवृत्तीतील सतत/सातत्य शब्दशः त्या उताऱ्यात असल्याचा दावा नाही; इतिहासाचे दिनांक व तळटीप स्रोताधीन.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0637-B004",
+      "source_path": "content/history/set-theory/mythology.tex",
+      "translation_path": "mr/content/history/set-theory/mythology.tex",
+      "source_segment_sha256": "b75847382b8bf4088c7c27bd32ba59ad78584a2df4b31da8dc038fbefd0899b3",
+      "translation_segment_sha256": "f4071fea22da10b096b73c6c34b15c77e7ce1c830bc273f13e5ef3c98553fde1",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "ऐतिहासिक विवेचनाच्या सामान्य शीर्षक/गद्याचा मराठी तर्कशास्त्रीय निवेदन-संदर्भ पाहिला. धक्का, दंतकथा, पत्राचे उद्धरण, चित्रांचा उपयोग किंवा प्रमेयाच्या इतिहासावरील विशिष्ट दावा गोठवलेल्या स्रोताचा आहे. मराठी लेखात ही सर्व तथ्ये अथवा पूर्ण शीर्षके असल्याचा दावा नाही; मूळ उद्धरणे आणि attribution जतन.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0637-B005",
+      "source_path": "content/history/set-theory/mythology.tex",
+      "translation_path": "mr/content/history/set-theory/mythology.tex",
+      "source_segment_sha256": "e3f2eaee02ca04338aa8a1f77c02311dc20b550bd2d21838add5122e3b7579ec",
+      "translation_segment_sha256": "15ee791bbb842106c801bfd7e4a16bab76b2dc6bad850f98f4b81f44a6cfe9bb",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "ऐतिहासिक विवेचनाच्या सामान्य शीर्षक/गद्याचा मराठी तर्कशास्त्रीय निवेदन-संदर्भ पाहिला. धक्का, दंतकथा, पत्राचे उद्धरण, चित्रांचा उपयोग किंवा प्रमेयाच्या इतिहासावरील विशिष्ट दावा गोठवलेल्या स्रोताचा आहे. मराठी लेखात ही सर्व तथ्ये अथवा पूर्ण शीर्षके असल्याचा दावा नाही; मूळ उद्धरणे आणि attribution जतन.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0637-B006",
+      "source_path": "content/history/set-theory/mythology.tex",
+      "translation_path": "mr/content/history/set-theory/mythology.tex",
+      "source_segment_sha256": "e7ea89ae40bd120a1b475db787b063a9d466ba96399ad5eaaed6880980dba764",
+      "translation_segment_sha256": "9847fe17f853cdacd26f4ad88c79e5ae673d408574cf7710c5eedb9206298e1a",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "ऐतिहासिक विवेचनाच्या सामान्य शीर्षक/गद्याचा मराठी तर्कशास्त्रीय निवेदन-संदर्भ पाहिला. धक्का, दंतकथा, पत्राचे उद्धरण, चित्रांचा उपयोग किंवा प्रमेयाच्या इतिहासावरील विशिष्ट दावा गोठवलेल्या स्रोताचा आहे. मराठी लेखात ही सर्व तथ्ये अथवा पूर्ण शीर्षके असल्याचा दावा नाही; मूळ उद्धरणे आणि attribution जतन.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0637-B007",
+      "source_path": "content/history/set-theory/mythology.tex",
+      "translation_path": "mr/content/history/set-theory/mythology.tex",
+      "source_segment_sha256": "d24f6fab1f54d5c8680d51c747a8f5c54c33bccc057e0b1b950b40103dab2c48",
+      "translation_segment_sha256": "f5fd4f452d40d866d2d3ee17376432bb6dea83af024777014e65b900ba49c026",
+      "canon_passages": [
+        "MR-P176",
+        "MR-P177"
+      ],
+      "finding_mr": "वक्र आणि फलन हे प्रत्यक्ष मराठी गणितीय घटक; संततता आणि अवकलनीयता यांचा अर्थभेद पाहिला. अवकाश भरणारा वक्र या पूर्ण विशेषज्ञ संज्ञेची स्वतंत्र साक्ष मिळालेली नाही. मूळ प्रतिचित्रणाचा प्रांत/लक्ष्यसंच, epsilon विधान, जाळीची मापे, क्रम आणि रंग जतन. अखंड हे येथे अनौपचारिक continuity-स्पष्टीकरण; अवकलनीयतेचा दावा नाही. सिद्धतेतील पूर्वी नोंदलेल्या स्रोत-अपूर्णता या शब्दसाक्षीने भरल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0637-B008",
+      "source_path": "content/history/set-theory/mythology.tex",
+      "translation_path": "mr/content/history/set-theory/mythology.tex",
+      "source_segment_sha256": "99058d5605e0fb6edceebc47f07dbd59749cf3379f4254b8ae36581b4530480f",
+      "translation_segment_sha256": "cb8fe2ee8cf68102368104db3b9e254c114cce94784fe528e7a0789ae7e6d622",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "ऐतिहासिक विवेचनाच्या सामान्य शीर्षक/गद्याचा मराठी तर्कशास्त्रीय निवेदन-संदर्भ पाहिला. धक्का, दंतकथा, पत्राचे उद्धरण, चित्रांचा उपयोग किंवा प्रमेयाच्या इतिहासावरील विशिष्ट दावा गोठवलेल्या स्रोताचा आहे. मराठी लेखात ही सर्व तथ्ये अथवा पूर्ण शीर्षके असल्याचा दावा नाही; मूळ उद्धरणे आणि attribution जतन.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0637-B009",
+      "source_path": "content/history/set-theory/mythology.tex",
+      "translation_path": "mr/content/history/set-theory/mythology.tex",
+      "source_segment_sha256": "bc7cdffe392352e3788cce935190e0fcc32391c609f17ced9553722feb624026",
+      "translation_segment_sha256": "60175cff1ec2f58b38b50e0ed125b1cd166093d3ce09add59daacc1b25037036",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "ऐतिहासिक विवेचनाच्या सामान्य शीर्षक/गद्याचा मराठी तर्कशास्त्रीय निवेदन-संदर्भ पाहिला. धक्का, दंतकथा, पत्राचे उद्धरण, चित्रांचा उपयोग किंवा प्रमेयाच्या इतिहासावरील विशिष्ट दावा गोठवलेल्या स्रोताचा आहे. मराठी लेखात ही सर्व तथ्ये अथवा पूर्ण शीर्षके असल्याचा दावा नाही; मूळ उद्धरणे आणि attribution जतन.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0638-B004",
+      "source_path": "content/history/set-theory/cantor-plane.tex",
+      "translation_path": "mr/content/history/set-theory/cantor-plane.tex",
+      "source_segment_sha256": "afb8764b89f7741923832caefa680401f64750d9a714f7a794d651ed0d371fd5",
+      "translation_segment_sha256": "3b6e184ae76ac4a2a755f92acbe2ef89b899361c94f3bd1f4b7315c740f03b20",
+      "canon_passages": [
+        "MR-P177"
+      ],
+      "finding_mr": "फलन आणि निवडलेले निरूपण यांचा भेद तपासला. अनंत 0/1 अनुक्रम, गुंफण व एकापेक्षा अधिक द्विमान विस्तारांच्या अडचणी स्रोताशी जुळतात. द्विमान निरूपण/विस्तार यांची पूर्ण स्वतंत्र मराठी शब्दसाक्ष नाही; फलनाच्या लेखाने कँटरची संपूर्ण ऐतिहासिक सिद्धता प्रमाणित केलेली नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0638-B007",
+      "source_path": "content/history/set-theory/cantor-plane.tex",
+      "translation_path": "mr/content/history/set-theory/cantor-plane.tex",
+      "source_segment_sha256": "29154a537472d65f19b6dc3c4152d2d6958b7675f97060624c92c5d4431bdf06",
+      "translation_segment_sha256": "27a169cfe5ed1efbbba5b50d7cb0e008d170096aa04fac74b948486121b288fd",
+      "canon_passages": [
+        "MR-P177"
+      ],
+      "finding_mr": "फलन आणि निवडलेले निरूपण यांचा भेद तपासला. अनंत 0/1 अनुक्रम, गुंफण व एकापेक्षा अधिक द्विमान विस्तारांच्या अडचणी स्रोताशी जुळतात. द्विमान निरूपण/विस्तार यांची पूर्ण स्वतंत्र मराठी शब्दसाक्ष नाही; फलनाच्या लेखाने कँटरची संपूर्ण ऐतिहासिक सिद्धता प्रमाणित केलेली नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0638-B008",
+      "source_path": "content/history/set-theory/cantor-plane.tex",
+      "translation_path": "mr/content/history/set-theory/cantor-plane.tex",
+      "source_segment_sha256": "747ac8841fc703cdb1751dc83f8f36bdda7bdffa624f5c006b531dcdf91756d4",
+      "translation_segment_sha256": "74070e7fcf2becc6c128b458238513f0f6e43298c4b90742db32cbb8cbb09871",
+      "canon_passages": [
+        "MR-P177"
+      ],
+      "finding_mr": "फलन आणि निवडलेले निरूपण यांचा भेद तपासला. अनंत 0/1 अनुक्रम, गुंफण व एकापेक्षा अधिक द्विमान विस्तारांच्या अडचणी स्रोताशी जुळतात. द्विमान निरूपण/विस्तार यांची पूर्ण स्वतंत्र मराठी शब्दसाक्ष नाही; फलनाच्या लेखाने कँटरची संपूर्ण ऐतिहासिक सिद्धता प्रमाणित केलेली नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0638-B010",
+      "source_path": "content/history/set-theory/cantor-plane.tex",
+      "translation_path": "mr/content/history/set-theory/cantor-plane.tex",
+      "source_segment_sha256": "ee8fce1f760741bd2bc154e28f48b92e426d543e2f2fe5701b1d656d16a5f10e",
+      "translation_segment_sha256": "94f574276a72c3ad4f45ed292a20a5e4f972b1334868342b7838eb64fc0b973c",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "ऐतिहासिक विवेचनाच्या सामान्य शीर्षक/गद्याचा मराठी तर्कशास्त्रीय निवेदन-संदर्भ पाहिला. धक्का, दंतकथा, पत्राचे उद्धरण, चित्रांचा उपयोग किंवा प्रमेयाच्या इतिहासावरील विशिष्ट दावा गोठवलेल्या स्रोताचा आहे. मराठी लेखात ही सर्व तथ्ये अथवा पूर्ण शीर्षके असल्याचा दावा नाही; मूळ उद्धरणे आणि attribution जतन.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0638-B012",
+      "source_path": "content/history/set-theory/cantor-plane.tex",
+      "translation_path": "mr/content/history/set-theory/cantor-plane.tex",
+      "source_segment_sha256": "3ff63f51f517e570d5becb885bab3aad5b6ba9c16ef557c5e0cc1ab12d0be316",
+      "translation_segment_sha256": "47a886c83fb8e662bb8c6e052dd374c85aec9e41d01b60114c4cd52ff04df7a7",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "ऐतिहासिक विवेचनाच्या सामान्य शीर्षक/गद्याचा मराठी तर्कशास्त्रीय निवेदन-संदर्भ पाहिला. धक्का, दंतकथा, पत्राचे उद्धरण, चित्रांचा उपयोग किंवा प्रमेयाच्या इतिहासावरील विशिष्ट दावा गोठवलेल्या स्रोताचा आहे. मराठी लेखात ही सर्व तथ्ये अथवा पूर्ण शीर्षके असल्याचा दावा नाही; मूळ उद्धरणे आणि attribution जतन.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0639-B004",
+      "source_path": "content/history/set-theory/hilbert-curve.tex",
+      "translation_path": "mr/content/history/set-theory/hilbert-curve.tex",
+      "source_segment_sha256": "5c8969d59c36c657a931d5c09366ea2450f5d77306ac2e52f9ca103a677f5cfc",
+      "translation_segment_sha256": "944fbb3742a00ed7be714b7e58a00cbe5df0c7d0c1e85bd656f46ace7b1f4609",
+      "canon_passages": [
+        "MR-P176",
+        "MR-P177"
+      ],
+      "finding_mr": "वक्र आणि फलन हे प्रत्यक्ष मराठी गणितीय घटक; संततता आणि अवकलनीयता यांचा अर्थभेद पाहिला. अवकाश भरणारा वक्र या पूर्ण विशेषज्ञ संज्ञेची स्वतंत्र साक्ष मिळालेली नाही. मूळ प्रतिचित्रणाचा प्रांत/लक्ष्यसंच, epsilon विधान, जाळीची मापे, क्रम आणि रंग जतन. अखंड हे येथे अनौपचारिक continuity-स्पष्टीकरण; अवकलनीयतेचा दावा नाही. सिद्धतेतील पूर्वी नोंदलेल्या स्रोत-अपूर्णता या शब्दसाक्षीने भरल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0639-B007",
+      "source_path": "content/history/set-theory/hilbert-curve.tex",
+      "translation_path": "mr/content/history/set-theory/hilbert-curve.tex",
+      "source_segment_sha256": "adb766d3ac1bdfbcf8a9634c7a5083159662059f9f7dcbde0859f72d63c727d8",
+      "translation_segment_sha256": "cb06143161ce1bb792eec1992c8a4e43eb803ea8a9167239ee8936df339b3f27",
+      "canon_passages": [
+        "MR-P176",
+        "MR-P177"
+      ],
+      "finding_mr": "वक्र आणि फलन हे प्रत्यक्ष मराठी गणितीय घटक; संततता आणि अवकलनीयता यांचा अर्थभेद पाहिला. अवकाश भरणारा वक्र या पूर्ण विशेषज्ञ संज्ञेची स्वतंत्र साक्ष मिळालेली नाही. मूळ प्रतिचित्रणाचा प्रांत/लक्ष्यसंच, epsilon विधान, जाळीची मापे, क्रम आणि रंग जतन. अखंड हे येथे अनौपचारिक continuity-स्पष्टीकरण; अवकलनीयतेचा दावा नाही. सिद्धतेतील पूर्वी नोंदलेल्या स्रोत-अपूर्णता या शब्दसाक्षीने भरल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0639-B009",
+      "source_path": "content/history/set-theory/hilbert-curve.tex",
+      "translation_path": "mr/content/history/set-theory/hilbert-curve.tex",
+      "source_segment_sha256": "8f2b283e9dc5e7e5d5ba726b21ffebb029e5e2a9dc79dd275357eb338beda844",
+      "translation_segment_sha256": "59fce01413e84cbdd2d30a33dd231eb3ee51525d556c0325ef76238a9c4bc4b2",
+      "canon_passages": [
+        "MR-P176",
+        "MR-P177"
+      ],
+      "finding_mr": "वक्र आणि फलन हे प्रत्यक्ष मराठी गणितीय घटक; संततता आणि अवकलनीयता यांचा अर्थभेद पाहिला. अवकाश भरणारा वक्र या पूर्ण विशेषज्ञ संज्ञेची स्वतंत्र साक्ष मिळालेली नाही. मूळ प्रतिचित्रणाचा प्रांत/लक्ष्यसंच, epsilon विधान, जाळीची मापे, क्रम आणि रंग जतन. अखंड हे येथे अनौपचारिक continuity-स्पष्टीकरण; अवकलनीयतेचा दावा नाही. सिद्धतेतील पूर्वी नोंदलेल्या स्रोत-अपूर्णता या शब्दसाक्षीने भरल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0639-B010",
+      "source_path": "content/history/set-theory/hilbert-curve.tex",
+      "translation_path": "mr/content/history/set-theory/hilbert-curve.tex",
+      "source_segment_sha256": "a21d1d99b26c4db621e3c688836692a5bc5eb22eb11f87dc2c77b0b606ac031f",
+      "translation_segment_sha256": "b661d7842f1a7947a265a699d805d9bcf541f8214d815b75011ea70fbfef125b",
+      "canon_passages": [
+        "MR-P176",
+        "MR-P177"
+      ],
+      "finding_mr": "वक्र आणि फलन हे प्रत्यक्ष मराठी गणितीय घटक; संततता आणि अवकलनीयता यांचा अर्थभेद पाहिला. अवकाश भरणारा वक्र या पूर्ण विशेषज्ञ संज्ञेची स्वतंत्र साक्ष मिळालेली नाही. मूळ प्रतिचित्रणाचा प्रांत/लक्ष्यसंच, epsilon विधान, जाळीची मापे, क्रम आणि रंग जतन. अखंड हे येथे अनौपचारिक continuity-स्पष्टीकरण; अवकलनीयतेचा दावा नाही. सिद्धतेतील पूर्वी नोंदलेल्या स्रोत-अपूर्णता या शब्दसाक्षीने भरल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0639-B011",
+      "source_path": "content/history/set-theory/hilbert-curve.tex",
+      "translation_path": "mr/content/history/set-theory/hilbert-curve.tex",
+      "source_segment_sha256": "198d51fc220fef6b240f9224eccca2015a7cf1515ed56096ceab7d57e2d02217",
+      "translation_segment_sha256": "2f45447dd3d8743d615bf9e1b8067b7f91b1bf7ad9a93beebd5b669f1d71e4db",
+      "canon_passages": [
+        "MR-P176",
+        "MR-P177"
+      ],
+      "finding_mr": "वक्र आणि फलन हे प्रत्यक्ष मराठी गणितीय घटक; संततता आणि अवकलनीयता यांचा अर्थभेद पाहिला. अवकाश भरणारा वक्र या पूर्ण विशेषज्ञ संज्ञेची स्वतंत्र साक्ष मिळालेली नाही. मूळ प्रतिचित्रणाचा प्रांत/लक्ष्यसंच, epsilon विधान, जाळीची मापे, क्रम आणि रंग जतन. अखंड हे येथे अनौपचारिक continuity-स्पष्टीकरण; अवकलनीयतेचा दावा नाही. सिद्धतेतील पूर्वी नोंदलेल्या स्रोत-अपूर्णता या शब्दसाक्षीने भरल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0639-B012",
+      "source_path": "content/history/set-theory/hilbert-curve.tex",
+      "translation_path": "mr/content/history/set-theory/hilbert-curve.tex",
+      "source_segment_sha256": "c9f69697277a6a9771cdaf92a9173efbd00d0da660e68fa430c0d683c5002569",
+      "translation_segment_sha256": "b3eff5d13992705654a285ee28db0d0093993a58afe1c4f926e76f80d8e08f0d",
+      "canon_passages": [
+        "MR-P176",
+        "MR-P177"
+      ],
+      "finding_mr": "वक्र आणि फलन हे प्रत्यक्ष मराठी गणितीय घटक; संततता आणि अवकलनीयता यांचा अर्थभेद पाहिला. अवकाश भरणारा वक्र या पूर्ण विशेषज्ञ संज्ञेची स्वतंत्र साक्ष मिळालेली नाही. मूळ प्रतिचित्रणाचा प्रांत/लक्ष्यसंच, epsilon विधान, जाळीची मापे, क्रम आणि रंग जतन. अखंड हे येथे अनौपचारिक continuity-स्पष्टीकरण; अवकलनीयतेचा दावा नाही. सिद्धतेतील पूर्वी नोंदलेल्या स्रोत-अपूर्णता या शब्दसाक्षीने भरल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0640-B004",
+      "source_path": "content/reference/reference.tex",
+      "translation_path": "mr/content/reference/reference.tex",
+      "source_segment_sha256": "0327be2e4284c7928e403cd7ecd13629f498f3a49ab191b2c2dd22a2064d679f",
+      "translation_segment_sha256": "a6d9497783c7ca805676928bdc874e96288f9bd506ef1fdc66bea8708f4e5603",
+      "canon_passages": [
+        "MR-P175"
+      ],
+      "finding_mr": "संदर्भसामग्री हे वर्णमाला, संकेत, व्याख्या व नियम एकत्र करणाऱ्या परिशिष्ट-भागासाठी ठेवले. प्रामाण्यस्रोतात संदर्भ हा घटक आहे; हा पूर्ण शब्दशः भाग-मथळा नाही आणि ग्रंथसूचीशी या भागाची गल्लत केलेली नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0640-B005",
+      "source_path": "content/reference/reference.tex",
+      "translation_path": "mr/content/reference/reference.tex",
+      "source_segment_sha256": "481ee3cc84f26b459b8b89618487ecd16a794c55fd422f280773a2fa9540e64d",
+      "translation_segment_sha256": "ece93008b0a31c8c312f1111d4bcfca57d69558bd08cc0cfde31f86d01654130",
+      "canon_passages": [
+        "MR-P179"
+      ],
+      "finding_mr": "ग्रीक वर्णमाला व निवडक नावांची साक्ष प्रत्यक्ष पाहिली. झाय याला थेट आधार आहे. सर्व 24 उच्चाररूपे किंवा फ्राक्टूर हे पूर्ण पद त्या लेखाने प्रमाणित केलेले नाही; फ्राक्टूरचा स्रोताधीन typeface अर्थ व मूळ लघु-महाक्षर glyph जतन. आल्फा/अल्फा, एप्सायलॉन/एप्सिलॉन, उप्सायलॉन/अप्सिलॉन आणि काय/खाय पर्याय नोंदले असून पूर्ण यादीचा भाषिक पुनरावलोकन-प्रश्न खुला आहे.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0641-B004",
+      "source_path": "content/reference/greek-alphabet/greek-alphabet.tex",
+      "translation_path": "mr/content/reference/greek-alphabet/greek-alphabet.tex",
+      "source_segment_sha256": "13fc0a7ca2eecfc15aa191412e5ab48a360f078a7a652d16d10c2b3bedf807d2",
+      "translation_segment_sha256": "abda65e3ba57bc47abed13ba2626c7b4bfa8324be309b7e65410a7c0ac7e4234",
+      "canon_passages": [
+        "MR-P179"
+      ],
+      "finding_mr": "ग्रीक वर्णमाला व निवडक नावांची साक्ष प्रत्यक्ष पाहिली. झाय याला थेट आधार आहे. सर्व 24 उच्चाररूपे किंवा फ्राक्टूर हे पूर्ण पद त्या लेखाने प्रमाणित केलेले नाही; फ्राक्टूरचा स्रोताधीन typeface अर्थ व मूळ लघु-महाक्षर glyph जतन. आल्फा/अल्फा, एप्सायलॉन/एप्सिलॉन, उप्सायलॉन/अप्सिलॉन आणि काय/खाय पर्याय नोंदले असून पूर्ण यादीचा भाषिक पुनरावलोकन-प्रश्न खुला आहे.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0641-B005",
+      "source_path": "content/reference/greek-alphabet/greek-alphabet.tex",
+      "translation_path": "mr/content/reference/greek-alphabet/greek-alphabet.tex",
+      "source_segment_sha256": "3bae6c28b6afec5b011b953e56df25b8704ca84346a82a5dad0df3657faabea0",
+      "translation_segment_sha256": "3fdedecc2ceebe8460d9d1e715c24b6fc8e19ddff49f503f4a5fa02afa9ee147",
+      "canon_passages": [
+        "MR-P179"
+      ],
+      "finding_mr": "ग्रीक वर्णमाला व निवडक नावांची साक्ष प्रत्यक्ष पाहिली. झाय याला थेट आधार आहे. सर्व 24 उच्चाररूपे किंवा फ्राक्टूर हे पूर्ण पद त्या लेखाने प्रमाणित केलेले नाही; फ्राक्टूरचा स्रोताधीन typeface अर्थ व मूळ लघु-महाक्षर glyph जतन. आल्फा/अल्फा, एप्सायलॉन/एप्सिलॉन, उप्सायलॉन/अप्सिलॉन आणि काय/खाय पर्याय नोंदले असून पूर्ण यादीचा भाषिक पुनरावलोकन-प्रश्न खुला आहे.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0642-B004",
+      "source_path": "content/reference/fraktur-alphabet/fraktur-alphabet.tex",
+      "translation_path": "mr/content/reference/fraktur-alphabet/fraktur-alphabet.tex",
+      "source_segment_sha256": "193c61533e8953e9c92fcef7c65408fa243ef6b6a1aa1f2806ee16dcaae27b5b",
+      "translation_segment_sha256": "f273e9fbf74f97238e2e95210df5cc861c9ecd211a53769618b034b028cd0b6d",
+      "canon_passages": [
+        "MR-P179"
+      ],
+      "finding_mr": "ग्रीक वर्णमाला व निवडक नावांची साक्ष प्रत्यक्ष पाहिली. झाय याला थेट आधार आहे. सर्व 24 उच्चाररूपे किंवा फ्राक्टूर हे पूर्ण पद त्या लेखाने प्रमाणित केलेले नाही; फ्राक्टूरचा स्रोताधीन typeface अर्थ व मूळ लघु-महाक्षर glyph जतन. आल्फा/अल्फा, एप्सायलॉन/एप्सिलॉन, उप्सायलॉन/अप्सिलॉन आणि काय/खाय पर्याय नोंदले असून पूर्ण यादीचा भाषिक पुनरावलोकन-प्रश्न खुला आहे.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0643-B002",
+      "source_path": "content/first-order-logic/axiomatic-deduction/provability.tex",
+      "translation_path": "mr/content/first-order-logic/axiomatic-deduction/provability.tex",
+      "source_segment_sha256": "0fdd4caf6bbc68ade2ba516197cb7eece16dccac7b7892a3ec3a5c4f5c0e9fd1",
+      "translation_segment_sha256": "22ff23e1cc19475d335e691876991988f87d83f26b9283fe7173d4eb36e91c03",
+      "canon_passages": [
+        "MR-P082"
+      ],
+      "finding_mr": "जतन केलेल्या सिद्धता-उपपत्ती निरीक्षणातील सुसंगतता, निगमन आणि औपचारिक सिद्धता संदर्भ पुन्हा वाचला. हे स्रोत-टिप्पणीचे स्थान व वापर जतन करते; कमाल/महत्तम सुसंगत संच या पूर्ण संज्ञेची किंवा या विशिष्ट supplementary proof ची थेट मराठी साक्ष नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0644-B002",
+      "source_path": "content/first-order-logic/completeness/maximally-consistent-sets.tex",
+      "translation_path": "mr/content/first-order-logic/completeness/maximally-consistent-sets.tex",
+      "source_segment_sha256": "54410381f85e9c44a45be19f52738b31420319703016cf82821d417e1941b689",
+      "translation_segment_sha256": "90b959e68ab924e13500240279a3ee7822759eb8c06b72ddfe1c2de83865fa5c",
+      "canon_passages": [
+        "MR-P082"
+      ],
+      "finding_mr": "जतन केलेल्या सिद्धता-उपपत्ती निरीक्षणातील सुसंगतता, निगमन आणि औपचारिक सिद्धता संदर्भ पुन्हा वाचला. हे स्रोत-टिप्पणीचे स्थान व वापर जतन करते; कमाल/महत्तम सुसंगत संच या पूर्ण संज्ञेची किंवा या विशिष्ट supplementary proof ची थेट मराठी साक्ष नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0649-B009",
+      "source_path": "content/intuitionistic-logic/semantics/propositions.tex",
+      "translation_path": "mr/content/intuitionistic-logic/semantics/propositions.tex",
+      "source_segment_sha256": "5c1629f4abdb1fa4d97a4d38d8df34d4d015cb746bb0ca99ded7e8572d0f7000",
+      "translation_segment_sha256": "fdcc260ab7e34aa6a9e7ccf3b24e750062309eef019d86103c0dafe099ff852c",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "सराव/सरावासाठी हा मूळ Exercise चा सिद्धता वाचकाकडे सोपवणारा अपूर्ण-सिद्धता निर्देश आहे. सरावसंच या प्रत्यक्ष पाठ्यपुस्तकीय प्रयोगाचा आधार घेतला; पूर्ण सिद्धता दिल्याचा किंवा औपचारिक placeholder शब्दशः प्रमाणित असल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0649-B010",
+      "source_path": "content/intuitionistic-logic/semantics/propositions.tex",
+      "translation_path": "mr/content/intuitionistic-logic/semantics/propositions.tex",
+      "source_segment_sha256": "f30b6797edb3b5774f15a5182ea3b2c40c2c02d2432c05b4c9ec041ff1fbff83",
+      "translation_segment_sha256": "df0edfc4ac1c8fc3f496206b7c599ab340e48ae08ad987e2284c0b8d2d95eb56",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "अध्यापनपर आज्ञार्थाचा संदर्भ प्रत्यक्ष मराठी सराव-पृष्ठात पाहिला. सिद्ध करा, स्पष्ट करा, परिभाषित करा किंवा तपासा यांचे विशिष्ट अर्थ मूळ प्रश्नानुसार आहेत; सूत्रे, संदर्भ आणि टिप्पणीची स्थिती जतन. सराव-पृष्ठात प्रत्येक औपचारिक आज्ञेची शब्दशः साक्ष असल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0650-B004",
+      "source_path": "content/lambda-calculus/lambda-definability/lists.tex",
+      "translation_path": "mr/content/lambda-calculus/lambda-definability/lists.tex",
+      "source_segment_sha256": "e9eb87d6bd662fd9bbbd32f28c117deb10e7a78cbccd347e3a57e257d2569a32",
+      "translation_segment_sha256": "2f6e4c4a848da15741a1cf2f1160354e49da7d3b88ba061449d7846cb31ff604",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "यादी या सामान्य मराठी घटकाची प्रत्यक्ष गणित-पृष्ठात यादी पद्धती या रूपात साक्ष पाहिली. lambda-list ची क्रमबद्ध रचना आणि संचाची roster पद्धती यांची गल्लत केलेली नाही; औपचारिक यादीचा अर्थ इंग्रजी स्रोताचा आहे.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0650-B009",
+      "source_path": "content/lambda-calculus/lambda-definability/lists.tex",
+      "translation_path": "mr/content/lambda-calculus/lambda-definability/lists.tex",
+      "source_segment_sha256": "14bbb7853c1875db3baedb13ec7370271c9d497d976ebf6263e07aabd8cf0fd2",
+      "translation_segment_sha256": "50630e45032e67e1638a59589a8e6fd43a159260b06ee44a9a23360abe0b9d2a",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "अध्यापनपर आज्ञार्थाचा संदर्भ प्रत्यक्ष मराठी सराव-पृष्ठात पाहिला. सिद्ध करा, स्पष्ट करा, परिभाषित करा किंवा तपासा यांचे विशिष्ट अर्थ मूळ प्रश्नानुसार आहेत; सूत्रे, संदर्भ आणि टिप्पणीची स्थिती जतन. सराव-पृष्ठात प्रत्येक औपचारिक आज्ञेची शब्दशः साक्ष असल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0650-B010",
+      "source_path": "content/lambda-calculus/lambda-definability/lists.tex",
+      "translation_path": "mr/content/lambda-calculus/lambda-definability/lists.tex",
+      "source_segment_sha256": "55c19316253502e7f3301d24cfb1432f2945ef6c659f815bc079c9d5e113918f",
+      "translation_segment_sha256": "5e0434e0995886e24c6f47f263a31b2af5f4fe9dae66c0da742ce2649ceda980",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "अध्यापनपर आज्ञार्थाचा संदर्भ प्रत्यक्ष मराठी सराव-पृष्ठात पाहिला. सिद्ध करा, स्पष्ट करा, परिभाषित करा किंवा तपासा यांचे विशिष्ट अर्थ मूळ प्रश्नानुसार आहेत; सूत्रे, संदर्भ आणि टिप्पणीची स्थिती जतन. सराव-पृष्ठात प्रत्येक औपचारिक आज्ञेची शब्दशः साक्ष असल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    },
+    {
+      "segment_id": "OLP-0655-B020",
+      "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+      "translation_path": "mr/content/proof-theory/cut-elimination/ce-largest.tex",
+      "source_segment_sha256": "e8b53eab83f31b8b31e110e1b319ca0ba8931db25f1b7508dadc436e1e44d8ca",
+      "translation_segment_sha256": "b8adf2cd24fbde2a3888b6a4b55312a22fd75f9010397ad69194b7e5a885b010",
+      "canon_passages": [
+        "MR-P180"
+      ],
+      "finding_mr": "अध्यापनपर आज्ञार्थाचा संदर्भ प्रत्यक्ष मराठी सराव-पृष्ठात पाहिला. सिद्ध करा, स्पष्ट करा, परिभाषित करा किंवा तपासा यांचे विशिष्ट अर्थ मूळ प्रश्नानुसार आहेत; सूत्रे, संदर्भ आणि टिप्पणीची स्थिती जतन. सराव-पृष्ठात प्रत्येक औपचारिक आज्ञेची शब्दशः साक्ष असल्याचा दावा नाही.",
+      "date": "2026-09-29",
+      "retrospective": true,
+      "checks": {
+        "formula_multiset_parity": true,
+        "inline_math_delimiter_parity": true,
+        "macro_multiset_parity": true,
+        "token_identity_parity": true,
+        "identifier_and_ref_option_parity": true,
+        "no_replacement_character": true,
+        "no_placeholder": true,
+        "nfc": true
+      }
+    }
+  ],
+  "unit_revision": {
+    "unit_id": "OLP-0276",
+    "previous_target_sha256": "6fba3bfafcace7a07f61f88493ab7aec8b7a6fe512c17f3bcd4d56a3b2ec9780",
+    "current_target_sha256": "caa497b774108bc67e0584e05d2481dbd51658c27ce1a3e33f73972bc2b1466d",
+    "source_sha256": "24c4a36e9f95064267c6bd001f81091cbc7f963c25e32a6d3c8630483b76d3e6"
+  },
+  "source_files_sha256": {
+    "CANON_SOURCES.jsonl": "bf8f3abda590d677ff146b476cdebb051bdaec1d298d78d17603b37163abd318",
+    "CANON_PASSAGES.jsonl": "ed0201b0e965a0b261e1a00de1ef5a85533b4b206333393d9247a43dde0e35f9",
+    "SEGMENT_CANON_USE.jsonl": "636860095c2348cf5227b94be0527bb9e1ce8b2b9b22d279dcd3782fd60f1259",
+    "TERM_DECISIONS.jsonl": "ff2d1ab18efe4fb1a645ead4844f833c0cef0ee9aec3293370c4b05441fe6cbf"
+  }
+}

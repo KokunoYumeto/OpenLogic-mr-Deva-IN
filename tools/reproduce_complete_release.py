@@ -10,7 +10,7 @@ import zipfile
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = ROOT / "releases/complete-v1.0"
+RELEASE = None
 
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -20,14 +20,16 @@ def load(path):
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--attempt", type=int, required=True)
+parser.add_argument("--release", choices=["complete-v1.0", "complete-v1.1"], default="complete-v1.0")
 parser.add_argument("--pwsh", default=shutil.which("pwsh"))
 args = parser.parse_args()
 assert args.attempt > 0 and args.pwsh and Path(args.pwsh).is_file()
+RELEASE = ROOT / "releases" / args.release
 source_zip = RELEASE / "03-openlogic-mr-complete-editable-sources.zip"
 html_zip = RELEASE / "04-openlogic-mr-complete-html.zip"
 pdf = RELEASE / "01-openlogic-mr-complete.pdf"
 tex = RELEASE / "02-openlogic-mr-complete.tex"
-destination = ROOT / "build/source-replay" / f"complete-v1.0-{args.attempt}"
+destination = ROOT / "build/source-replay" / f"{args.release}-{args.attempt}"
 assert not destination.exists(), "Use a new bounded attempt after confirming the preceding process is terminal."
 destination.resolve().relative_to(ROOT.resolve())
 receipt_path = RELEASE / "RELEASE_REPRODUCIBILITY.json"
@@ -103,6 +105,22 @@ with zipfile.ZipFile(html_zip) as archive:
         verified.append({"filename": name, "bytes": len(data), "sha256": sha(local)})
 assert len(verified) == 78
 assert load(rebuilt / "HTML_QA.json")["result"] == "ready"
+if args.release == "complete-v1.1":
+    accepted = destination / "build/epub-complete-v1.1/accepted-html"
+    accepted.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(html_zip) as archive:
+        for name in archive.namelist():
+            target = accepted / Path(*PurePosixPath(name).parts)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(archive.read(name))
+    assert sha(accepted / "index.html") == sha(html_root / "index.html")
+    epub = RELEASE / "06-openlogic-mr-complete.epub"
+    run([sys.executable, "-X", "utf8", "tools/build_complete_epub.py",
+         "build/epub-complete-v1.1/EPUB_BUILD_CONFIG.json"], destination)
+    rebuilt_epub = destination / "build/epub-complete-v1.1/openlogic-mr-complete.epub"
+    assert sha(rebuilt_epub) == sha(epub)
+    report["rebuilt_epub_sha256"] = sha(rebuilt_epub)
+    report["epub_byte_identity"] = True
 report.update(status="passed", html_files_verified=verified,
               rebuilt_html_sha256=sha(html_root / "index.html"),
               pdf_byte_identity=True, html_all_files_byte_identity=True)

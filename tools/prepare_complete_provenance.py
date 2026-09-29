@@ -53,6 +53,14 @@ for name in NAMES:
     assert not re.search(r"gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]+", serialized)
     (OUT / name).write_text(serialized, encoding="utf-8", newline="\n")
 
+retrospective = ROOT / "provenance/complete-v1.1/CANON_RECHECK_101.json"
+if retrospective.is_file():
+    audit = json.loads(retrospective.read_text(encoding="utf-8"))
+    assert len(audit["records"]) == 101 and audit["date"] == "2026-09-29"
+    for name, expected_hash in audit["source_files_sha256"].items():
+        assert sha(STATE / name) == expected_hash
+    (OUT / "CANON_RECHECK_101.json").write_bytes(retrospective.read_bytes())
+
 manifest = data["SOURCE_MANIFEST.jsonl"]
 segments = data["SEGMENT_CANON_USE.jsonl"]
 sources = data["CANON_SOURCES.jsonl"]
@@ -98,10 +106,19 @@ for row in segments:
             "target": row["translation_unit_sha256"],
         }
 
-review_rows = rows(ROOT / "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl")
+# The root file is the current full-scope derived review surface. The frozen
+# historical detailed review was preserved separately before that expansion.
+historical = ROOT / "build/full/pre-final-provenance"
+review_rows = rows(historical / "EXPERT_REVIEW_OCCURRENCES.jsonl")
 review_units = {row["unit_id"] for row in review_rows}
 assert review_units <= expected
 assert len(review_units) == 281
+assert len(review_rows) == 14221
+for name in ("EXPERT_REVIEW_DECISIONS.jsonl", "EXPERT_REVIEW_OCCURRENCES.jsonl",
+             "EXPERT_REVIEW_OCCURRENCES.csv", "EXPERT_REVIEW_LOG.md",
+             "EXPERT_REVIEW_OCCURRENCES.md", "EXPERT_REVIEW_PRIORITY.md"):
+    (OUT / "historical-detailed-review" / name).parent.mkdir(parents=True, exist_ok=True)
+    (OUT / "historical-detailed-review" / name).write_bytes((historical / name).read_bytes())
 receipt = {
     "schema": "openlogic-complete-provenance-qa/1",
     "status": "passed",

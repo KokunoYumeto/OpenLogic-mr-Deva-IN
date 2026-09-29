@@ -19,7 +19,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 LOCALIZED = ROOT / "provenance/complete-v1.0/TERMINOLOGY_MR.jsonl"
 SCHEMA = ROOT / "provenance/translation-decisions/translation-decision.schema.json"
 SCHEMA_HASH = "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
-MODELS = "OpenAI Codex — GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort."
+MODELS = "OpenAI Codex — GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort; पूरक यांत्रिक पुनरावलोकन GPT-6 Astra, Ultra effort."
 
 def digest(data):
     return hashlib.sha256(data).hexdigest()
@@ -45,6 +45,7 @@ def scrub(value):
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--state-dir", type=Path)
+parser.add_argument("--release-tag", choices=["complete-v1.0", "complete-v1.1"], default="complete-v1.0")
 args = parser.parse_args()
 if args.state_dir:
     issue_history = []
@@ -222,7 +223,7 @@ with (OUT / "DECISION_OCCURRENCES.csv").open("w", encoding="utf-8", newline="") 
     writer = csv.DictWriter(stream, fieldnames=fields, extrasaction="ignore")
     writer.writeheader()
     writer.writerows(occurrences)
-release = {"release_tag": "complete-v1.0", "edition": edition,
+release = {"release_tag": args.release_tag, "edition": edition,
            "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
            "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
            "coverage_state": "audit_needed", "source_units": 722, "reader_units": 722}

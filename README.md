@@ -9,17 +9,19 @@
 भाग आहे.
 
 संपूर्ण आवृत्तीचे वाचन आणि डाउनलोड
-[`complete-v1.0`](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.0)
-मधून करा. [921 पानांचा PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/01-openlogic-mr-complete.pdf)
+[`complete-v1.1`](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.1)
+मधून करा. [संपूर्ण PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.1/01-openlogic-mr-complete.pdf)
 ही थेट वाचनाची प्रत आहे. त्यानंतर
-[संपूर्ण संचयी TeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/02-openlogic-mr-complete.tex),
-[सर्व संपादनयोग्य स्रोत](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/03-openlogic-mr-complete-editable-sources.zip),
-[ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/04-openlogic-mr-complete-html.zip)
-आणि [पुनरावलोकन-संग्रह](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/05-openlogic-mr-complete-review.zip)
+[संपूर्ण संचयी TeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.1/02-openlogic-mr-complete.tex),
+[सर्व संपादनयोग्य स्रोत](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.1/03-openlogic-mr-complete-editable-sources.zip),
+[ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.1/04-openlogic-mr-complete-html.zip),
+[पुनरावलोकन-संग्रह](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.1/05-openlogic-mr-complete-review.zip)
+आणि [संपूर्ण EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.1/06-openlogic-mr-complete.epub)
 या क्रमाने फाइल्स दिल्या आहेत. HTML संग्रह उघडून `index.html` वाचा;
 त्यासाठी इंटरनेट जोडणी लागत नाही. प्रत्येक प्रकरणाचा TeX स्रोतखंडही
 स्वतंत्रपणे दिला आहे. या आवृत्तीची जतन-मालिका
 [मराठी OpenLogic Zenodo DOI](https://doi.org/10.5281/zenodo.22307960) आहे.
+मागील [complete-v1.0 प्रकाशन](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.0) जतन केले आहे.
 
 ## भाषांतर आणि पुनरावलोकन
 
@@ -33,7 +35,8 @@
 एकत्र दिली आहेत.
 
 यंत्रानुवाद, दुरुस्ती आणि तपासणी OpenAI Codex — GPT-5.6 Sol आणि GPT-6 Sol,
-दोन्ही Ultra effort — यांच्या साहाय्याने झाली. मूळ स्रोताशी तुलना,
+दोन्ही Ultra effort — यांच्या साहाय्याने झाली. पूरक यांत्रिक पुनरावलोकन
+GPT-6 Astra, Ultra effort, यांनी केले. मूळ स्रोताशी तुलना,
 संज्ञांचे संशोधन आणि यांत्रिक तपासण्या केल्या आहेत. स्वतंत्र मानवी किंवा
 मातृभाषिक भाषिक-पुनरावलोकनाचा दावा नाही. विशेष संज्ञांचे निर्णय
 दुरुस्तीसाठी खुले आहेत. मूळ निर्माते Open Logic Project आहेत; त्यांनी या

@@ -69,6 +69,12 @@ with sync_playwright() as playwright:
             page.wait_for_timeout(300)
             detail_screenshot = BUILD / "HTML_BROWSER_MATH_GLYPH.png"
             page.screenshot(path=str(detail_screenshot))
+            aristotle = page.get_by_text("कॅटेगरीज", exact=False).first
+            assert aristotle.count() == 1
+            aristotle.scroll_into_view_if_needed()
+            page.wait_for_timeout(800)
+            aristotle_screenshot = BUILD / "HTML_BROWSER_ARISTOTLE.png"
+            page.screenshot(path=str(aristotle_screenshot))
         else:
             page.evaluate("""() => {
               const longMath = [...document.querySelectorAll('math')]
@@ -81,6 +87,8 @@ with sync_playwright() as playwright:
         measure = {"name": label, "width": width, "height": height, **measures,
                    "page_errors": console_errors, "screenshot": str(screenshot),
                    "detail_screenshot": str(detail_screenshot)}
+        if label == "desktop":
+            measure["aristotle_screenshot"] = str(aristotle_screenshot)
         report["viewports"].append(measure)
         context.close()
     browser.close()
