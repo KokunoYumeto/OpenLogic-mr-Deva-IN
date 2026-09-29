@@ -18,6 +18,7 @@ import fitz
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "build/full"
 ASSETS = BUILD / "html/assets"
+ASSETS.mkdir(parents=True, exist_ok=True)
 PDF = BUILD / "openlogic-mr-full.pdf"
 
 

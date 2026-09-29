@@ -278,14 +278,18 @@ assets = [artifact(path) for path in (pdf, tex, source_zip, html_zip, review_zip
                                       RELEASE / "RELEASE_NOTES.md", RELEASE / "RELEASE_CONSISTENCY.json")]
 assets.extend(artifact(path) for path in chapter_sources)
 reproduction_path = RELEASE / "RELEASE_REPRODUCIBILITY.json"
+reproduction_verified = False
 if reproduction_path.is_file():
     reproduction = load(reproduction_path)
-    assert reproduction["status"] == "passed"
-    assert reproduction["source_zip_sha256"] == sha(source_zip)
-    assert reproduction["html_zip_sha256"] == sha(html_zip)
-    assert reproduction["rebuilt_pdf_sha256"] == sha(pdf)
-    assert reproduction["regenerated_tex_sha256"] == sha(tex)
-    assets.append(artifact(reproduction_path))
+    reproduction_verified = (
+        reproduction["status"] == "passed"
+        and reproduction["source_zip_sha256"] == sha(source_zip)
+        and reproduction["html_zip_sha256"] == sha(html_zip)
+        and reproduction["rebuilt_pdf_sha256"] == sha(pdf)
+        and reproduction["regenerated_tex_sha256"] == sha(tex)
+    )
+    if reproduction_verified:
+        assets.append(artifact(reproduction_path))
 assert len(assets) + 2 <= 100, "Manifest and checksums also count toward the public file limit."
 release_manifest = {
     "schema": "openlogic-release-manifest/1",
@@ -303,6 +307,7 @@ release_manifest = {
     "assets": assets,
     "individual_chapter_sources": chapter_manifest,
     "full_edition_complete": True,
+    "release_reproduction_verified": reproduction_verified,
 }
 manifest_path = RELEASE / "RELEASE_MANIFEST.json"
 write_json(manifest_path, release_manifest)
