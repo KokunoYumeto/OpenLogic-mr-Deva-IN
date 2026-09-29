@@ -8,6 +8,21 @@ MANUAL = {
     "MR-SI001": ((83, 100), (83, 100)),
     "MR-SI002": ((90, 95), (89, 94)),
     "MR-SI003": ((110, 118), (109, 117)),
+    "OLINC-035": ((40, 57), (43, 65)),
+    "OLINC-112": ((65, 91), (65, 95)),
+    "OLINC-115": ((9, 9), (9, 9)),
+    "OLINC-119": ((49, 52), (55, 59)),
+    "OLINC-239": ((100, 111), (185, 222)),
+    "OLINC-242": ((31, 62), (54, 116)),
+    "OLINC-365": ((136, 159), (262, 288)),
+    "OLINC-380": ((27, 122), (40, 202)),
+    "OLINC-382": ((55, 58), (96, 111)),
+    "OLINC-431": ((110, 126), (119, 136)),
+    "OLINC-453": ((117, 155), (132, 179)),
+    "OLINC-456": ((114, 114), (114, 114)),
+    "OLINC-459": ((84, 84), (91, 91)),
+    "OLINC-461": ((82, 83), (89, 90)),
+    "OLINC-462": ((125, 125), (125, 125)),
 }
 
 
@@ -37,7 +52,7 @@ def derive(root, prov, manifest, edition, reader_bindings, locator):
         text = (root / path).read_text(encoding="utf-8")
         count = len(text.splitlines())
         if iid in MANUAL:
-            return (*MANUAL[iid][0 if side == "source" else 1], "पूर्वनोंदीतील प्रत्यक्ष ओळी")
+            return (*MANUAL[iid][0 if side == "source" else 1], "प्रत्यक्ष गोठवलेला मूळ मजकूर आणि सद्य मराठी यांच्याशी पुनर्जुळवलेल्या संदर्भ-ओळी; जुना तपासनिर्देश इतिहासात राखला आहे")
         lookup = path.removeprefix("upstream/")
         declaration = issue.get(side + "_locator", "")
         match = re.search(re.escape(lookup) + r":([^;]+)", declaration)

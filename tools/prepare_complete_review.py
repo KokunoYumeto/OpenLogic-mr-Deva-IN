@@ -172,7 +172,9 @@ for term in terms:
             "reader_pdf_pages": [reader_bindings[unit]["assembled_pdf_page"]],
             "reader_page_label": reader_bindings[unit]["printed_page"],
             "page_locator_precision": reader_bindings[unit]["provenance"]})
-    confidence = "low" if "sparse" in term.get("status", "") else "medium"
+    recorded_confidence = str(term.get("confidence", "")).lower()
+    confidence = ("low" if "low" in recorded_confidence or "sparse" in term.get("status", "").lower()
+                  else "high" if recorded_confidence == "high" else "medium")
     priority = "high" if confidence == "low" else "normal"
     alternatives = [{"rendering": value, "disposition": "viable_alternative",
                      "reason": "मूळ निर्णयात नोंदवलेला पर्याय; आपोआप स्वीकारलेला नाही."}
@@ -182,7 +184,7 @@ for term in terms:
         "edition": edition, "source_term_or_construction": term["english"], "intended_sense": reason,
         "chosen_rendering": term["marathi"], "rationale": reason, "authorities_checked": authority_rows,
         "alternatives": alternatives, "confidence": confidence,
-        "confidence_reason": "हा मूळ निर्णयातील पुराव्याच्या मर्यादांवर आधारित प्राथमिक पुनरावलोकन-सूचक आहे; स्वतंत्र तज्ज्ञ स्वीकृतीचा दावा नाही.",
+        "confidence_reason": "मूळ निर्णयात घटकांनुसार वेगळी खात्री असल्यास तिची सर्वांत सावध श्रेणी घेतली आहे; medium-low ला low आणि medium-high ला medium केले आहे. स्वतंत्र तज्ज्ञ स्वीकृतीचा दावा नाही.",
         "provisional": True, "review_priority": priority, "expert_review_useful": True,
         "expert_review_reason": "शब्दरूप आणि तांत्रिक अर्थ दुरुस्तीसाठी खुले आहेत.",
         "please_double_check_question": question, "occurrences": canonical_occurrences})
@@ -236,20 +238,32 @@ notice = ("# मराठी भाषांतरातील शब्दन�
           "ते प्रत्येक शब्दाच्या अक्षरशः वापराची किंवा स्वतंत्र तज्ज्ञ परीक्षणाची प्रमाणपत्रे नाहीत. "
           "ऐतिहासिक अधिक तपशीलवार पुनरावलोकन 281 एकके आणि 14,221 नोंदींपुरते आहे.\n\n"
           f"मराठी शब्दनिर्णय-कारणे तयार: {len(localized)}/638; मराठी स्रोतदुरुस्ती/निरीक्षण-कारणे तयार: {source_qa['localized_source_issues']}/655. सर्व 722 एककांची शीर्षके, मूळ चालकांच्या नोंदी किंवा नियमसारण्या अंतिम PDF मधील प्रत्यक्ष स्थळांशी पडताळल्या आहेत; हे शब्दाच्या ओळीचे तंतोतंत पृष्ठ-निर्देश नाहीत. "
-          "ही विकासावस्थेतील नोंद आहे; अंतिम प्रकाशनाची स्वीकृती नाही.\n\n"
+          + ("ही विकासावस्थेतील नोंद आहे; अंतिम प्रकाशनाची स्वीकृती नाही.\n\n"
+             if missing or missing_source_localization else
+             "संपूर्ण मराठी नोंद पुनरावलोकनासाठी उपलब्ध आहे; स्वतंत्र मानवी संपादन किंवा तज्ज्ञ स्वीकृतीचा दावा नाही.\n\n") +
           "[पूर्ण सूची](TRANSLATION_DECISIONS_FULL.md), [प्राधान्याने पाहायचे निर्णय](PRIORITY_REVIEW.md), "
           "[यंत्रवाचनीय नोंद](DECISIONS.json). मूलभूत ओळी ../EXPERT_REVIEW_OCCURRENCES.csv मध्ये आहेत.\n\n")
 (OUT / "START_HERE.md").write_text(notice, encoding="utf-8")
 (OUT / "TRANSLATION_DECISIONS_FULL.md").write_text(notice + "\n".join(full_md), encoding="utf-8")
 (OUT / "PRIORITY_REVIEW.md").write_text(notice + "\n".join(priority_md), encoding="utf-8")
-qa = {"schema": "openlogic-mr-complete-review-qa/1", "status": "incomplete",
+(PROV / "EXPERT_REVIEW_LOG.md").write_text(notice + "\n".join(full_md), encoding="utf-8")
+(PROV / "EXPERT_REVIEW_PRIORITY.md").write_text(notice + "\n".join(priority_md), encoding="utf-8")
+occurrence_index = [notice, "## संदर्भ-निर्देशांची संपूर्ण सूची", "",
+                    "या सूचीतील पृष्ठ एककाच्या शीर्षकाचे किंवा नियमसारणीचे आहे; शब्दाच्या अचूक ओळीचे पृष्ठ असल्याचा दावा नाही. CSV/JSON मध्ये बाइट-ओळी आणि हॅश आहेत.", ""]
+for row in occurrences:
+    occurrence_index += [f"- {row['occurrence_id']}: मूळ {row['source_path']}:{row['source_lines']}; "
+                         f"मराठी {row['target_path']}:{row['target_lines']}; PDF पृष्ठ {row['reader_pdf_pages'][0]}. "]
+(PROV / "EXPERT_REVIEW_OCCURRENCES.md").write_text("\n".join(occurrence_index) + "\n", encoding="utf-8")
+pending = (["remaining-Marathi-rationale-localization"] if missing else []) + (
+    ["remaining-Marathi-source-issue-localization"] if missing_source_localization else []) + (
+    ["source-issue-locator-refinement"] if source_qa["source_issue_locator_fallbacks"] else [])
+qa = {"schema": "openlogic-mr-complete-review-qa/1", "status": "incomplete" if pending else "ready",
       "source_units": 722, "term_decisions": 638, "context_occurrences": context_count,
       "total_review_occurrences": len(occurrences), **source_qa,
       "localized_term_decisions": len(localized), "missing_localization": missing,
       "historical_detailed_review_units": 281, "historical_detailed_review_occurrences": 14221,
       "schema_errors": 0, "schema_sha256": SCHEMA_HASH,
       "reader_bound_units": len(reader_bindings), "reader_pdf_sha256": reader_binding_qa["pdf_sha256"],
-      "pending": ["remaining-Marathi-rationale-localization", "remaining-Marathi-source-issue-localization"] +
-                 (["source-issue-locator-refinement"] if source_qa["source_issue_locator_fallbacks"] else [])}
+      "pending": pending}
 write_json(OUT / "TRANSLATION_DECISION_QA.json", qa)
 print(json.dumps({key: qa[key] for key in ["status", "source_units", "term_decisions", "context_occurrences", "localized_term_decisions", "schema_errors"]}))

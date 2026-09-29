@@ -144,8 +144,10 @@ for path in (BUILD / "release-provenance").rglob("*"):
             source_entries.append((name, path))
 source_entries.append(("provenance/complete-v1.0/TERMINOLOGY_MR.jsonl",
                        ROOT / "provenance/complete-v1.0/TERMINOLOGY_MR.jsonl"))
+source_entries.append(("provenance/complete-v1.0/SOURCE_ISSUES_MR.jsonl",
+                       ROOT / "provenance/complete-v1.0/SOURCE_ISSUES_MR.jsonl"))
 source_entries.append(("SOURCE_PACKAGE_README.md", notes))
-for name in ("INPUTS.json", "HTML_DIAGRAM_INVENTORY.json", "HTML_DIAGRAM_RECEIPT.json",
+for name in ("INPUTS.json", "DRIVER_EDITORIAL_QA.json", "PDF_VISUAL_QA.json", "HTML_DIAGRAM_VISUAL_QA.json", "HTML_DIAGRAM_INVENTORY.json", "HTML_DIAGRAM_RECEIPT.json",
              "TEX_BUILD_RECEIPT.json", "openlogic-mr-full.tex", "openlogic-mr-full.aux"):
     source_entries.append(("build/full/" + name, BUILD / name))
 source_entries.append(("build/core/HTML_BUILD_RECEIPT.json", ROOT / "build/core/HTML_BUILD_RECEIPT.json"))
@@ -212,9 +214,13 @@ review_entries = []
 for path in (BUILD / "release-provenance/translation-decisions").rglob("*"):
     if path.is_file():
         review_entries.append(("translation-decisions/" + path.name, path))
-for name in ("EXPERT_REVIEW_DECISIONS.jsonl", "EXPERT_REVIEW_OCCURRENCES.jsonl", "EXPERT_REVIEW_OCCURRENCES.csv"):
+for name in ("EXPERT_REVIEW_DECISIONS.jsonl", "EXPERT_REVIEW_OCCURRENCES.jsonl", "EXPERT_REVIEW_OCCURRENCES.csv",
+             "EXPERT_REVIEW_LOG.md", "EXPERT_REVIEW_OCCURRENCES.md", "EXPERT_REVIEW_PRIORITY.md"):
     review_entries.append(("legacy/" + name, BUILD / "release-provenance" / name))
 review_entries.append(("SOURCE_ISSUES.jsonl", BUILD / "release-provenance/SOURCE_ISSUES.jsonl"))
+review_entries.append(("REVIEW_READER_BINDING.json", BUILD / "release-provenance/REVIEW_READER_BINDING.json"))
+for name in ("TERMINOLOGY_MR.jsonl", "SOURCE_ISSUES_MR.jsonl"):
+    review_entries.append(("complete-v1.0/" + name, ROOT / "provenance/complete-v1.0" / name))
 scan_private(review_entries)
 make_zip(review_zip, review_entries)
 subprocess.run(["python", str(ROOT / "tools/validate_release_consistency.py"),

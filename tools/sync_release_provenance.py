@@ -80,9 +80,12 @@ passages = load_jsonl(PROVENANCE / "CANON_PASSAGES.jsonl")
 terms = load_jsonl(PROVENANCE / "TERM_DECISIONS.jsonl")
 translated_units = sorted({row["unit_id"] for row in segments})
 assert len(manifest) == 722
+last_unit_number = int(translated_units[-1].split("-")[1])
+assert last_unit_number <= 722
+first_unit_number = 1 if len(translated_units) == 722 else 4
 assert translated_units == [
     f"OLP-{number:04d}"
-    for number in range(4, int(translated_units[-1].split("-")[1]) + 1)
+    for number in range(first_unit_number, last_unit_number + 1)
 ]
 
 receipt = {
