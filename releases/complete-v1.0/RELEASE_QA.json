@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-mr-complete-release-qa/1",
+  "release": "complete-v1.0",
+  "coverage": {
+    "translated_source_units": 722,
+    "total_source_units": 722,
+    "aligned_segments": 6644,
+    "reader_chapters": 79,
+    "reader_sections": 613,
+    "detailed_review_units": 281,
+    "detailed_review_occurrences": 14221
+  },
+  "pdf_pages": 921,
+  "pdf_log_clean": true,
+  "pdf_all_pages_structurally_checked": true,
+  "html_ready": true,
+  "desktop_and_mobile_browser_passed": true,
+  "diagram_assets": 70,
+  "mathml_nodes": 38456,
+  "semantic_proof_tables": 466,
+  "source_hashes_verified": 722,
+  "review_context_occurrences": 24770,
+  "review_total_occurrences": 25425,
+  "localized_term_decisions": 638,
+  "localized_source_issues": 655,
+  "final_reader_projection_qa_sha256": "da7b34748561b7ce6eb0f5ed59403ef589197bbde232ed5b5ea7b21aae90397a",
+  "reader_notice_mr": "सर्व 722 स्रोत-एककांची जुळवणी तपासली आहे. संदर्भ-निर्देश स्वतंत्र तज्ज्ञ स्वीकृतीची प्रमाणपत्रे नाहीत. ऐतिहासिक तपशीलवार पुनरावलोकन 281 एककांपुरते आहे.",
+  "provenance_report_sha256": "aa1803a347300e6df81e006dfae2c08b67378dd4094e398525d11377aefb152f"
+}
