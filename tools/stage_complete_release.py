@@ -69,9 +69,14 @@ browser_qa = load(BUILD / "HTML_BROWSER_QA.json")
 provenance_qa = load(BUILD / "PROVENANCE_QA.json")
 review_qa = load(BUILD / "release-provenance/translation-decisions/TRANSLATION_DECISION_QA.json")
 diagram_receipt = load(BUILD / "HTML_DIAGRAM_RECEIPT.json")
+projection_qa = load(BUILD / "FINAL_READER_PROJECTION_QA.json")
 assert tex_receipt["result"] == "built-log-clean" and len(tex_receipt["passes"]) == 3
 assert tex_receipt["texInputSha256"] == inputs["reader_sha256"] == static_qa["reader_sha256"]
 assert sha(BUILD / "openlogic-mr-full.tex") == inputs["reader_sha256"]
+assert projection_qa["reader_sha256"] == inputs["reader_sha256"]
+assert projection_qa["factorial"]["occurrences"] == 1
+assert projection_qa["factorial"]["recursive_fac_retained"]
+assert projection_qa["bibliography"]["running_marks_reset"]
 assert sha(BUILD / "openlogic-mr-full.pdf") == tex_receipt["pdf"]["sha256"]
 assert static_qa["represented_source_units"] == 722 and not static_qa["unresolved_standard_reference_targets"]
 assert pdf_qa["status"] == "ready" and pdf_qa["pdf_sha256"] == tex_receipt["pdf"]["sha256"]
@@ -147,7 +152,7 @@ source_entries.append(("provenance/complete-v1.0/TERMINOLOGY_MR.jsonl",
 source_entries.append(("provenance/complete-v1.0/SOURCE_ISSUES_MR.jsonl",
                        ROOT / "provenance/complete-v1.0/SOURCE_ISSUES_MR.jsonl"))
 source_entries.append(("SOURCE_PACKAGE_README.md", notes))
-for name in ("INPUTS.json", "DRIVER_EDITORIAL_QA.json", "PDF_VISUAL_QA.json", "HTML_DIAGRAM_VISUAL_QA.json", "HTML_DIAGRAM_INVENTORY.json", "HTML_DIAGRAM_RECEIPT.json",
+for name in ("INPUTS.json", "DRIVER_EDITORIAL_QA.json", "FINAL_READER_PROJECTION_QA.json", "PDF_VISUAL_QA.json", "HTML_DIAGRAM_VISUAL_QA.json", "HTML_DIAGRAM_INVENTORY.json", "HTML_DIAGRAM_RECEIPT.json",
              "TEX_BUILD_RECEIPT.json", "openlogic-mr-full.tex", "openlogic-mr-full.aux"):
     source_entries.append(("build/full/" + name, BUILD / name))
 source_entries.append(("build/core/HTML_BUILD_RECEIPT.json", ROOT / "build/core/HTML_BUILD_RECEIPT.json"))
@@ -251,6 +256,10 @@ qa = {
     "semantic_proof_tables": html_qa["proof_tables"],
     "source_hashes_verified": 722,
     "review_context_occurrences": review_qa["context_occurrences"],
+    "review_total_occurrences": review_qa["context_occurrences"] + review_qa["source_issue_decisions"],
+    "localized_term_decisions": review_qa["localized_term_decisions"],
+    "localized_source_issues": review_qa["localized_source_issues"],
+    "final_reader_projection_qa_sha256": sha(BUILD / "FINAL_READER_PROJECTION_QA.json"),
     "reader_notice_mr": "सर्व 722 स्रोत-एककांची जुळवणी तपासली आहे. संदर्भ-निर्देश स्वतंत्र तज्ज्ञ स्वीकृतीची प्रमाणपत्रे नाहीत. ऐतिहासिक तपशीलवार पुनरावलोकन 281 एककांपुरते आहे.",
     "provenance_report_sha256": sha(BUILD / "PROVENANCE_QA.json"),
 }
@@ -259,6 +268,15 @@ write_json(qa_path, qa)
 assets = [artifact(path) for path in (pdf, tex, source_zip, html_zip, review_zip, qa_path, notes,
                                       RELEASE / "RELEASE_NOTES.md", RELEASE / "RELEASE_CONSISTENCY.json")]
 assets.extend(artifact(path) for path in chapter_sources)
+reproduction_path = RELEASE / "RELEASE_REPRODUCIBILITY.json"
+if reproduction_path.is_file():
+    reproduction = load(reproduction_path)
+    assert reproduction["status"] == "passed"
+    assert reproduction["source_zip_sha256"] == sha(source_zip)
+    assert reproduction["html_zip_sha256"] == sha(html_zip)
+    assert reproduction["rebuilt_pdf_sha256"] == sha(pdf)
+    assert reproduction["regenerated_tex_sha256"] == sha(tex)
+    assets.append(artifact(reproduction_path))
 assert len(assets) + 2 <= 100, "Manifest and checksums also count toward the public file limit."
 release_manifest = {
     "schema": "openlogic-release-manifest/1",

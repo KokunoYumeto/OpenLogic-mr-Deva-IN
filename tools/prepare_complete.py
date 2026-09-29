@@ -275,6 +275,35 @@ def project(old, new, expected):
     out = out.replace(old, new)
 
 
+# OLINC-126: show the complete IsZero application inside the outer lambda.
+# The aligned target retains the frozen display; this reader projection keeps
+# its recursive Fac occurrence and adds an explicit Marathi explanation.
+factorial_before = r"""\begin{align*}
+  \fn{Fac} & \ident \lambd[n][\fn{IsZero}\, n\, \num{1}] \\
+    & \qquad (\fn{Mult}\, n
+  ((\lambd[n][\fn{IsZero} \, n \, \num 1\, (\fn{Mult}\, n\, (\fn{Fac}
+    (\fn{Pred}\, n)))]) (\fn{Pred}\, n)))
+\end{align*}"""
+factorial_after = r"""\begin{align*}
+  \fn{Fac} & \ident \lambda n.\,\bigl[\fn{IsZero}\, n\, \num{1} \\
+    & \qquad (\fn{Mult}\, n
+  ((\lambd[n][\fn{IsZero} \, n \, \num 1\, (\fn{Mult}\, n\, (\fn{Fac}
+    (\fn{Pred}\, n)))]) (\fn{Pred}\, n)))\bigr]
+\end{align*}
+\begin{quote}\small\textbf{स्रोतदुरुस्ती (OLINC-126).}
+मूळ प्रदर्शनात बाह्य लॅम्डाचे शरीर पहिल्या ओळीवरच संपते.
+येथे दोन्ही ओळींना व्यापणारे कंस घालून
+$\fn{IsZero}$ च्या दोन्ही शाखा त्या एकाच शरीरात दाखवल्या आहेत.
+आतील $\fn{Fac}$ चा स्वसंदर्भ तसाच आहे; त्यामुळे हे अजून शुद्ध लॅम्डा पद नाही.
+\end{quote}"""
+project(factorial_before, factorial_after, 1)
+assert factorial_before.count(r"\fn{Fac}") == 2
+assert factorial_after.split(r"\end{align*}")[0].count(r"\fn{Fac}") == 2
+# An unnumbered bibliography must not inherit the preceding section's marks.
+project(r"\chapter*{संदर्भ}" + "\n\n" + r"\addcontentsline{toc}{chapter}{संदर्भ}",
+        r"\chapter*{संदर्भ}" + "\n" + r"\markboth{संदर्भ}{संदर्भ}" + "\n\n"
+        + r"\addcontentsline{toc}{chapter}{संदर्भ}", 1)
+
 # A math accent inside \mathbf emitted missing control glyphs on page 415-417.
 project(r"\Th{\bar Q}", r"\overline{\Th{Q}}", 9)
 project(r"\Th{\bar" + "\n" + r"T}", r"\overline{\Th{T}}", 1)
@@ -329,6 +358,20 @@ assert "!!" not in out and not re.search(r"![A-Z]", out), (
 out = "\n".join(line.rstrip() for line in out.splitlines()) + "\n"
 tex = BUILD / "openlogic-mr-full.tex"
 tex.write_text(out, encoding="utf-8", newline="\n")
+(BUILD / "FINAL_READER_PROJECTION_QA.json").write_text(json.dumps({
+    "schema": "openlogic-mr-final-reader-projections/1",
+    "status": "ready-for-build",
+    "reader_sha256": hashlib.sha256(out.encode("utf-8")).hexdigest(),
+    "factorial": {
+        "issue_id": "OLINC-126", "unit_id": "OLP-0379", "occurrences": 1,
+        "aligned_target_unchanged": True,
+        "before_sha256": hashlib.sha256(factorial_before.encode("utf-8")).hexdigest(),
+        "after_sha256": hashlib.sha256(factorial_after.encode("utf-8")).hexdigest(),
+        "recursive_fac_retained": True,
+        "reason_mr": "IsZero च्या दोन्ही शाखा एकाच बाह्य लॅम्डा शरीरात दाखवल्या; स्वसंदर्भ जपला आणि स्रोतदुरुस्ती स्पष्ट केली.",
+    },
+    "bibliography": {"heading_mr": "संदर्भ", "running_marks_reset": True},
+}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 wrapper_note_qa["reader_sha256"] = hashlib.sha256(out.encode("utf-8")).hexdigest()
 (BUILD / "DRIVER_EDITORIAL_QA.json").write_text(json.dumps(wrapper_note_qa, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 core_inputs = json.loads((ROOT / "build/core/INPUTS.json").read_text(encoding="utf-8"))
