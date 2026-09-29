@@ -1,96 +1,22 @@
 {
-  "schema": "openlogic-translation-decision-qa/1",
-  "generated_utc": "2026-09-06T00:00:00Z",
-  "result": "passed",
-  "canonical_schema": {
-    "source": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-translations/811091d54be4989918864732073279a588340e6f/catalogue/translation-decisions/translation-decision.schema.json",
-    "bytes": 10787,
-    "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
-    "upstream_schema_qa_sha256": "7893e3f70105802478e07cd7f96620de234de1bfff2b2a5ef3627f7d950417b8",
-    "upstream_valid_fixture_sha256": "0b12f85178d6a264edd59e78e4f7120c4c2fbe1fce718d97d0a4152d26092d2a"
-  },
-  "validation": {
-    "draft": "2020-12",
-    "library": "jsonschema 4.26.0",
-    "format_checker_enabled": true,
-    "schema_errors": 0,
-    "instance_errors": 0
-  },
-  "coverage": {
-    "source_units": 270,
-    "total_source_units": 722,
-    "complete_chapters": 20,
-    "canonical_decisions_with_occurrences": 529,
-    "legacy_decisions_total": 529,
-    "legacy_prospective_decisions_deferred_without_fabricated_occurrences": [],
-    "occurrences": 13843,
-    "high_priority_occurrences": 1122,
-    "normal_priority_occurrences": 6906,
-    "low_priority_occurrences": 5815,
-    "reader_locators_available": 11402,
-    "reader_locators_pending": 2441
-  },
-  "exactness_checks": {
-    "globally_unique_occurrence_ids": true,
-    "source_file_hashes_recomputed": 13843,
-    "target_file_hashes_recomputed": 13843,
-    "line_and_utf8_byte_spans_reproduced_exact_excerpts": 27686,
-    "csv_rows_equal_occurrences": true,
-    "legacy_occurrence_ids_preserved": true,
-    "unknown_pages_guessed": 0,
-    "accepted_translation_prose_changed_by_adapter": false
-  },
-  "inputs": {
-    "provenance/EXPERT_REVIEW_DECISIONS.jsonl": {
-      "bytes": 3631722,
-      "sha256": "66ba286aa112f967e3f6ee2d97ebe0160e3d2575cfeca6832e24be8bd8f65619",
-      "records": 529
-    },
-    "provenance/EXPERT_REVIEW_OCCURRENCES.jsonl": {
-      "bytes": 42115640,
-      "sha256": "bcc10272de34a5345a64417e463f56e2d6562437db005843286febe22f646507",
-      "records": 13843
-    },
-    "provenance/SEGMENT_CANON_USE.jsonl": {
-      "bytes": 4086119,
-      "sha256": "d14fc5a9f273fc077637e3ac3f4681b016298b0dfd1576c45c68aab0c0658485",
-      "records": 2697
-    },
-    "tools/build_translation_decisions.py": {
-      "bytes": 37807,
-      "sha256": "9ef7b3be4b392327d51b145f7a4c34de95db71e6095ac6c8e9af35d399ce29f2"
-    }
-  },
-  "outputs": {
-    "START_HERE.md": {
-      "bytes": 1876,
-      "sha256": "5fefa881ce90691a96fd78b0df756664080a801dddd5d37339787fd831dc948a"
-    },
-    "TRANSLATION_DECISIONS_FULL.md": {
-      "bytes": 4923720,
-      "sha256": "ac5782dde6ab0232f59b06b7c68c295722d5e43d1a9612486c44157f4a11428a"
-    },
-    "PRIORITY_REVIEW.md": {
-      "bytes": 167055,
-      "sha256": "d166a37636abe968b4b0bac901cd3ec62b8178083a0ff503c9e3e0bf3baf204d"
-    },
-    "DECISION_OCCURRENCES.csv": {
-      "bytes": 41097705,
-      "sha256": "7f537b2ba0879b3dcf3518c9e730e6ef2fa3a00deda3a40c79d3c9df843726b0"
-    },
-    "DECISIONS.json": {
-      "bytes": 81542417,
-      "sha256": "e8a12f3b3350608f55693e5c11064d82111af93c688fbd51736195465cc03815"
-    },
-    "translation-decision.schema.json": {
-      "bytes": 10787,
-      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
-    }
-  },
-  "review_policy": {
-    "independent_human_review_claimed": false,
-    "review_is_a_completion_hold": false,
-    "regional_standard": "mr-Deva-IN / mr-IN",
-    "speculative_variants_created": false
-  }
+  "schema": "openlogic-mr-complete-review-qa/1",
+  "status": "ready",
+  "source_units": 722,
+  "term_decisions": 638,
+  "context_occurrences": 24770,
+  "total_review_occurrences": 25425,
+  "source_issue_history_rows": 656,
+  "source_issue_decisions": 655,
+  "localized_source_issues": 655,
+  "missing_source_issue_localization": [],
+  "source_issue_locator_fallbacks": [],
+  "localized_term_decisions": 638,
+  "missing_localization": [],
+  "historical_detailed_review_units": 281,
+  "historical_detailed_review_occurrences": 14221,
+  "schema_errors": 0,
+  "schema_sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+  "reader_bound_units": 722,
+  "reader_pdf_sha256": "cafeb791c3252fc75a0c96bff6cc9ef68b1d2013ba984e0054385489e1b2bb4e",
+  "pending": []
 }

@@ -1,29 +1,9 @@
-# Start here: Marathi translation decisions
+# मराठी भाषांतरातील शब्दनिर्णय
 
-This bundle is the expert-review entry point for the current Marathi
-OpenLogic translation through OLP-0273. It covers 270/722 source units,
-20 complete chapters, 529 applied decisions and
-13,843 current decision-level occurrence records. The remaining 452 units are untranslated.
-The paginated 20-chapter reader ends at OLP-0197; later translated units use pending PDF locators.
+OpenAI Codex — GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
 
-No independent human or native-speaker review is claimed. Every choice remains
-reversible, and a review question is a request for useful evidence rather than
-a publication or completion hold.
+सर्व 722 स्रोत-एककांच्या नोंदवलेल्या सल्लामसलतीवरून 24,770 शब्दनिर्णय-संदर्भ आणि 655 स्रोतदुरुस्ती/निरीक्षण-संदर्भ तयार केले आहेत. ते प्रत्येक शब्दाच्या अक्षरशः वापराची किंवा स्वतंत्र तज्ज्ञ परीक्षणाची प्रमाणपत्रे नाहीत. ऐतिहासिक अधिक तपशीलवार पुनरावलोकन 281 एकके आणि 14,221 नोंदींपुरते आहे.
 
-## Files
+मराठी शब्दनिर्णय-कारणे तयार: 638/638; मराठी स्रोतदुरुस्ती/निरीक्षण-कारणे तयार: 655/655. सर्व 722 एककांची शीर्षके, मूळ चालकांच्या नोंदी किंवा नियमसारण्या अंतिम PDF मधील प्रत्यक्ष स्थळांशी पडताळल्या आहेत; हे शब्दाच्या ओळीचे तंतोतंत पृष्ठ-निर्देश नाहीत. संपूर्ण मराठी नोंद पुनरावलोकनासाठी उपलब्ध आहे; स्वतंत्र मानवी संपादन किंवा तज्ज्ञ स्वीकृतीचा दावा नाही.
 
-- `TRANSLATION_DECISIONS_FULL.md` is the readable complete applied-decision index.
-- `PRIORITY_REVIEW.md` contains only urgent/high review items and their occurrences.
-- `DECISION_OCCURRENCES.csv` has one UTF-8 row for each of 13,843 occurrences.
-- `DECISIONS.json` is the canonical machine record validated against the shared schema.
-- `translation-decision.schema.json` is the exact frozen shared schema.
-- `TRANSLATION_DECISION_QA.json` records validation, counts and hashes.
-
-The PDF page field is the current assembled-reader page or range. Unknown pages
-must use schema status `pending`; none were guessed in this checkpoint. Source
-and target locators contain current file SHA-256 values, exact line spans, byte
-spans and excerpts. Every decision in the backward-compatible legacy ledger has at least one real occurrence in the current coverage; none are deferred from `DECISIONS.json`.
-Decision-relevant spans are narrower than aligned context blocks where explicitly recorded. They may overlap when one construction realizes several choices and do not claim a disjoint token partition.
-
-The full source-aligned Marathi edition remains the controlling deliverable. This
-review bundle does not define a second regional or notation variant.
+[पूर्ण सूची](TRANSLATION_DECISIONS_FULL.md), [प्राधान्याने पाहायचे निर्णय](PRIORITY_REVIEW.md), [संपूर्ण यंत्रवाचनीय नोंद उघडण्याची पद्धत](CANONICAL_JSON_DOWNLOAD.md). मूलभूत ओळी ../EXPERT_REVIEW_OCCURRENCES.csv मध्ये आहेत.

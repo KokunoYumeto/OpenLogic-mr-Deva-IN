@@ -8,14 +8,18 @@
 [OpenLogic भाषांतर प्रकल्पाचा](https://github.com/KokunoYumeto/OpenLogic-translations)
 भाग आहे.
 
-संपूर्ण भाषांतर आणि मूळ स्रोताशी जुळवलेली नोंदवही स्थानिक उत्पादनात
-पूर्ण आहेत. संपूर्ण PDF आणि ऑफलाइन HTML वाचकाच्या अंतिम संकलन-तपासण्या
-चालू आहेत. सध्या नवीनतम **सार्वजनिक** वाचकग्रंथ
-[twenty-chapters-v0.9](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/twenty-chapters-v0.9)
-आहे; त्यात 194 एकके आहेत. तो विद्यमान
-[मराठी OpenLogic Zenodo आवृत्ती-मालिकेत](https://doi.org/10.5281/zenodo.22307960)
-जतन केला आहे. संपूर्ण वाचकग्रंथाच्या प्रकाशन-तपासण्या पूर्ण झाल्यावर
-खालील वाचन-दुवे अद्ययावत केले जातील.
+संपूर्ण आवृत्तीचे वाचन आणि डाउनलोड
+[`complete-v1.0`](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.0)
+मधून करा. [921 पानांचा PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/01-openlogic-mr-complete.pdf)
+ही थेट वाचनाची प्रत आहे. त्यानंतर
+[संपूर्ण संचयी TeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/02-openlogic-mr-complete.tex),
+[सर्व संपादनयोग्य स्रोत](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/03-openlogic-mr-complete-editable-sources.zip),
+[ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/04-openlogic-mr-complete-html.zip)
+आणि [पुनरावलोकन-संग्रह](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/05-openlogic-mr-complete-review.zip)
+या क्रमाने फाइल्स दिल्या आहेत. HTML संग्रह उघडून `index.html` वाचा;
+त्यासाठी इंटरनेट जोडणी लागत नाही. प्रत्येक प्रकरणाचा TeX स्रोतखंडही
+स्वतंत्रपणे दिला आहे. या आवृत्तीची जतन-मालिका
+[मराठी OpenLogic Zenodo DOI](https://doi.org/10.5281/zenodo.22307960) आहे.
 
 ## भाषांतर आणि पुनरावलोकन
 
@@ -40,9 +44,13 @@
 स्रोताशी जुळतात. स्रोत-सूची आणि पुनरावलोकनाच्या नोंदी
 [`provenance/`](provenance/) मध्ये, तर संकलन व तपासणीची साधने
 [`tools/`](tools/) मध्ये आहेत. संपूर्ण प्रकाशनात सर्व 722 एककांच्या
-नोंदवहीची स्वतंत्र आवृत्ती दिली जाईल; तिचा आवाका या कार्यप्रतिमधील
-ऐतिहासिकदृष्ट्या कमी एककांना व्यापणाऱ्या तपशीलवार पुनरावलोकनापेक्षा
-वेगळा आहे.
+नोंदवहीची स्वतंत्र आवृत्ती दिली आहे. तिच्यात 638 शब्दनिर्णय आणि
+स्रोताच्या हाताळणीचे 655 निर्णय, एकूण 1,293 निर्णय व 25,425
+संदर्भ-निर्देश आहेत. सर्व कारणे मराठीत आहेत. संदर्भखंडाचे निर्देश
+प्रत्येक शब्दाच्या अक्षरशः उपस्थितीचे किंवा स्वतंत्र तज्ज्ञ स्वीकृतीचे
+प्रमाणपत्र नाहीत. संपूर्ण निर्णय-JSON ची अचूक संकुचित प्रत आणि ती
+उघडण्याची पद्धत [निर्णय-JSON डाउनलोड मार्गदर्शकात](provenance/translation-decisions/CANONICAL_JSON_DOWNLOAD.md)
+दिल्या आहेत; प्रकाशित ZIP संग्रहांत असंकुचित `DECISIONS.json` आहे.
 
 ## संपूर्ण वाचकग्रंथ पुन्हा संकलित करणे
 
@@ -77,7 +85,7 @@ HTML उघडण्यासाठी `build/full/html/index.html` वापर
 अक्षररूपे आहेत; इंटरनेट जोडणी लागत नाही. `tools/prepare_complete_provenance.py`
 हे उत्पादनाच्या कायमस्वरूपी नोंदींमधून संपूर्ण भाषांतर-नोंदवही तपासून
 निर्यात करते. त्या उत्पादन-नोंदी साध्या स्रोत-कार्यप्रतिमध्ये नसतात;
-प्रकाशित संग्रहात त्यांची तपासलेली निर्यात दिली जाईल.
+प्रकाशित संग्रहात त्यांची तपासलेली निर्यात दिली आहे.
 
 ## परवाना आणि श्रेय
 

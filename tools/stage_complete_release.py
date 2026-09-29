@@ -68,6 +68,7 @@ pdf_visual_qa = load(BUILD / "PDF_VISUAL_QA.json")
 diagram_visual_qa = load(BUILD / "HTML_DIAGRAM_VISUAL_QA.json")
 html_qa = load(BUILD / "HTML_QA.json")
 browser_qa = load(BUILD / "HTML_BROWSER_QA.json")
+html_visual_qa = load(BUILD / "HTML_VISUAL_QA.json")
 provenance_qa = load(BUILD / "PROVENANCE_QA.json")
 review_qa = load(BUILD / "release-provenance/translation-decisions/TRANSLATION_DECISION_QA.json")
 diagram_receipt = load(BUILD / "HTML_DIAGRAM_RECEIPT.json")
@@ -90,6 +91,8 @@ assert diagram_visual_qa["source_pdf_sha256"] == tex_receipt["pdf"]["sha256"]
 assert html_qa["result"] == "ready" and not html_qa["blockers"]
 assert browser_qa["result"] == "pass"
 assert browser_qa["html_sha256"] == html_qa["html_sha256"] == sha(BUILD / "html/index.html")
+assert html_visual_qa["result"] == "pass"
+assert html_visual_qa["html_sha256"] == sha(BUILD / "html/index.html")
 assert provenance_qa["status"] == "passed" and provenance_qa["translated_units"] == 722
 assert review_qa["status"] == "ready" and review_qa["source_units"] == 722
 assert not review_qa["missing_localization"] and not review_qa["pending"]
@@ -158,7 +161,7 @@ source_entries.append(("provenance/complete-v1.0/TERMINOLOGY_MR.jsonl",
 source_entries.append(("provenance/complete-v1.0/SOURCE_ISSUES_MR.jsonl",
                        ROOT / "provenance/complete-v1.0/SOURCE_ISSUES_MR.jsonl"))
 source_entries.append(("SOURCE_PACKAGE_README.md", notes))
-for name in ("INPUTS.json", "DRIVER_EDITORIAL_QA.json", "FINAL_READER_PROJECTION_QA.json", "PDF_VISUAL_QA.json", "HTML_DIAGRAM_VISUAL_QA.json", "HTML_DIAGRAM_INVENTORY.json", "HTML_DIAGRAM_RECEIPT.json",
+for name in ("INPUTS.json", "DRIVER_EDITORIAL_QA.json", "FINAL_READER_PROJECTION_QA.json", "PDF_VISUAL_QA.json", "HTML_VISUAL_QA.json", "HTML_DIAGRAM_VISUAL_QA.json", "HTML_DIAGRAM_INVENTORY.json", "HTML_DIAGRAM_RECEIPT.json",
              "TEX_BUILD_RECEIPT.json", "openlogic-mr-full.tex", "openlogic-mr-full.aux"):
     source_entries.append(("build/full/" + name, BUILD / name))
 source_entries.append(("build/core/HTML_BUILD_RECEIPT.json", ROOT / "build/core/HTML_BUILD_RECEIPT.json"))

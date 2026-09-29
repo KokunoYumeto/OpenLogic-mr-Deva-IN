@@ -4,3 +4,8 @@
 # Release TeX is the exact assembled build input; mixed indentation can occur
 # inside preserved tabular source and must not be rewritten after PDF binding.
 releases/*/*.tex whitespace=-space-before-tab
+
+# Generated review snapshots preserve CRLF and Markdown's intentional hard breaks.
+provenance/** whitespace=cr-at-eol
+provenance/*.md whitespace=cr-at-eol,-blank-at-eol
+provenance/translation-decisions/*.md whitespace=cr-at-eol,-blank-at-eol
