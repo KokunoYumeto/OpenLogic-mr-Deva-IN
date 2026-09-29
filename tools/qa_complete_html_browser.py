@@ -2,9 +2,12 @@
 
 import hashlib
 import json
+import sys
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
+
+sys.stdout.reconfigure(encoding="utf-8")
 
 
 ROOT = Path(__file__).resolve().parents[1]

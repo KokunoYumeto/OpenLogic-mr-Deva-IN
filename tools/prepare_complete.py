@@ -6,6 +6,7 @@ import runpy
 from contextlib import redirect_stdout
 from io import StringIO
 from pathlib import Path
+from complete_wrapper_notes import preserve_notes
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "build/full"
@@ -37,6 +38,8 @@ extra_preamble = [
     r"\usepackage{cleveref}",
     r"\usepackage{xurl}",
     r"\tikzset{initial text=सुरुवात}",
+    r"\renewcommand{\tablename}{तक्ता}",
+    r"\providecommand{\gitissue}[1]{\href{https://github.com/OpenLogicProject/OpenLogic/issues/#1}{मूळ स्रोताची नोंद #1}}",
     r"\crefname{lem}{पूर्वप्रमेय}{पूर्वप्रमेये}",
     # The three-level number 67.10.1 needs more room in the contents.
     r"\makeatletter\renewcommand*\l@subsection{\@dottedtocline{2}{3.8em}{4.2em}}\makeatother",
@@ -304,6 +307,8 @@ project("    विगमन गृहीतकाने\n    $\\Gamma_1 \\Seque
         "    \\begingroup\\sloppy\n    विगमन गृहीतकाने\n    $\\Gamma_1 \\Sequent", 1)
 project("    घेता येते. पहिल्या प्रसंगात:\n    \\[",
         "    घेता येते. पहिल्या प्रसंगात:\\par\\endgroup\n    \\[", 1)
+out, wrapper_note_qa = preserve_notes(ROOT, by_unit, out, helpers["selected"],
+                                     helpers["replace_tokens"], core_ns["prior"]["reader_symbol_projections"])
 labels = re.findall(r"\\label\{([^}]+)\}", out)
 assert len(labels) == len(set(labels)), [x for x in labels if labels.count(x) > 1][:10]
 out = re.sub(r"\\readerexternalref\{([^}]+)\}",
@@ -324,6 +329,8 @@ assert "!!" not in out and not re.search(r"![A-Z]", out), (
 out = "\n".join(line.rstrip() for line in out.splitlines()) + "\n"
 tex = BUILD / "openlogic-mr-full.tex"
 tex.write_text(out, encoding="utf-8", newline="\n")
+wrapper_note_qa["reader_sha256"] = hashlib.sha256(out.encode("utf-8")).hexdigest()
+(BUILD / "DRIVER_EDITORIAL_QA.json").write_text(json.dumps(wrapper_note_qa, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 core_inputs = json.loads((ROOT / "build/core/INPUTS.json").read_text(encoding="utf-8"))
 proof_inputs = json.loads((ROOT / "build/proof/INPUTS.json").read_text(encoding="utf-8"))
 manifest_by_target = {"mr/" + row["source_path"]: row["unit_id"] for row in manifest}

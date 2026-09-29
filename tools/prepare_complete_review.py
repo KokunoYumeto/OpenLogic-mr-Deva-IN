@@ -8,6 +8,8 @@ from collections import defaultdict
 from pathlib import Path
 
 from jsonschema import Draft202012Validator, FormatChecker
+from complete_review_pages import bind_units
+from complete_review_source_issues import derive as derive_source_issues
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "build/full"
@@ -104,7 +106,9 @@ edition = {"edition_id": "openlogic-mr-Deva-IN", "language_tag": "mr-Deva-IN",
            "register_or_variant": "गणित व तत्त्वज्ञानाचे औपचारिक अध्यापनपर मराठी",
            "notation_profile": "गोठवलेल्या OpenLogic मधील गणितीय चिन्हे",
            "layer_type": "semantic_translation", "parent_semantic_edition_id": None}
-pending_reader = {"status": "pending", "reason": "अंतिम स्वच्छ PDF शी पृष्ठ-निर्देश जोडणे बाकी; पृष्ठाचा अंदाज दिलेला नाही."}
+reader_bindings, unbound_units, reader_binding_qa = bind_units(ROOT, manifest)
+assert not unbound_units, unbound_units
+write_json(PROV / "REVIEW_READER_BINDING.json", {"units": reader_bindings, "qa": reader_binding_qa})
 decisions, occurrences, canonical, full_md, priority_md = [], [], [], [], []
 ledger_ref = {"path_or_uri": "provenance/SEGMENT_CANON_USE.jsonl",
               "sha256": digest((PROV / "SEGMENT_CANON_USE.jsonl").read_bytes())}
@@ -156,7 +160,7 @@ for term in terms:
         target = locator(target_path, unit, *target_lines, term["marathi"], reason, precision)
         canonical_occurrences.append({"occurrence_id": oid, "unit_id": unit,
             "semantic_unit_id": segment["segment_id"], "source": source, "target": target,
-            "reader_locator": pending_reader, "evidence_refs": [ledger_ref]})
+            "reader_locator": reader_bindings[unit], "evidence_refs": [ledger_ref]})
         occurrences.append({"schema": "openlogic-expert-review-occurrence/1", "occurrence_id": oid,
             "decision_id": tid, "record_kind": "terminology_decision", "unit_id": unit,
             "aligned_block": f"B{segment['block_index']:03d}", "source_path": source_path,
@@ -164,8 +168,10 @@ for term in terms:
             "target_lines": f"{target_lines[0]}-{target_lines[1]}", "choice_locator_precision": precision,
             "chosen_rendering": term["marathi"], "rationale": reason,
             "please_double_check_question": question, "script": "Deva", "locale": "mr-IN",
-            "reader_pdf_sha256": None, "reader_pdf_pages": [], "reader_page_label": None,
-            "page_locator_precision": "unit not yet paginated"})
+            "reader_pdf_sha256": reader_bindings[unit]["artifact_sha256"],
+            "reader_pdf_pages": [reader_bindings[unit]["assembled_pdf_page"]],
+            "reader_page_label": reader_bindings[unit]["printed_page"],
+            "page_locator_precision": reader_bindings[unit]["provenance"]})
     confidence = "low" if "sparse" in term.get("status", "") else "medium"
     priority = "high" if confidence == "low" else "normal"
     alternatives = [{"rendering": value, "disposition": "viable_alternative",
@@ -191,13 +197,26 @@ for term in terms:
     if priority == "high":
         priority_md.extend(item)
 
+context_count = len(occurrences)
+assert context_count == sum(len(set(row["unit_term_decision_index"])) for row in segments)
+source_canonical, source_legacy, source_occurrences, source_md, missing_source_localization, source_qa = derive_source_issues(
+    ROOT, PROV, manifest, edition, reader_bindings, locator)
+canonical.extend(source_canonical)
+decisions.extend(source_legacy)
+occurrences.extend(source_occurrences)
+full_md.extend(["# स्रोतदुरुस्ती आणि निरीक्षणांच्या नोंदी", ""] + source_md)
+priority_md.extend(["# स्रोतदुरुस्ती आणि निरीक्षणांच्या नोंदी", ""] + source_md)
 assert len(occurrences) == len({row["occurrence_id"] for row in occurrences})
-assert len(occurrences) == sum(len(set(row["unit_term_decision_index"])) for row in segments)
 assert {row["unit_id"] for row in occurrences} == set(manifest)
 write_rows(PROV / "EXPERT_REVIEW_DECISIONS.jsonl", decisions)
 write_rows(PROV / "EXPERT_REVIEW_OCCURRENCES.jsonl", occurrences)
 with (PROV / "EXPERT_REVIEW_OCCURRENCES.csv").open("w", encoding="utf-8", newline="") as stream:
     fields = ["occurrence_id", "decision_id", "unit_id", "source_path", "source_lines", "target_path", "target_lines", "chosen_rendering", "choice_locator_precision"]
+    writer = csv.DictWriter(stream, fieldnames=fields, extrasaction="ignore")
+    writer.writeheader()
+    writer.writerows(occurrences)
+with (OUT / "DECISION_OCCURRENCES.csv").open("w", encoding="utf-8", newline="") as stream:
+    fields = ["occurrence_id", "decision_id", "unit_id", "source_path", "source_lines", "target_path", "target_lines", "chosen_rendering", "choice_locator_precision", "reader_pdf_sha256", "reader_pdf_pages", "reader_page_label", "page_locator_precision"]
     writer = csv.DictWriter(stream, fieldnames=fields, extrasaction="ignore")
     writer.writeheader()
     writer.writerows(occurrences)
@@ -213,10 +232,10 @@ write_json(OUT / "DECISIONS.json", register)
 missing = [term["term_id"] for term in terms if term["term_id"] not in localized
            or term.get("review_question") and not localized[term["term_id"]].get("review_question_mr")]
 notice = ("# मराठी भाषांतरातील शब्दनिर्णय\n\n" + MODELS + "\n\n"
-          f"सर्व 722 स्रोत-एककांच्या नोंदवलेल्या सल्लामसलतीवरून {len(occurrences):,} संदर्भ-निर्देश तयार केले आहेत. "
+          f"सर्व 722 स्रोत-एककांच्या नोंदवलेल्या सल्लामसलतीवरून {context_count:,} शब्दनिर्णय-संदर्भ आणि {len(source_occurrences)} स्रोतदुरुस्ती/निरीक्षण-संदर्भ तयार केले आहेत. "
           "ते प्रत्येक शब्दाच्या अक्षरशः वापराची किंवा स्वतंत्र तज्ज्ञ परीक्षणाची प्रमाणपत्रे नाहीत. "
           "ऐतिहासिक अधिक तपशीलवार पुनरावलोकन 281 एकके आणि 14,221 नोंदींपुरते आहे.\n\n"
-          f"मराठी कारणे तयार: {len(localized)}/638. अंतिम PDF पृष्ठ-निर्देश आणि स्रोतदुरुस्तींची सामायिक योजना जोडणे बाकी आहे. "
+          f"मराठी शब्दनिर्णय-कारणे तयार: {len(localized)}/638; मराठी स्रोतदुरुस्ती/निरीक्षण-कारणे तयार: {source_qa['localized_source_issues']}/655. सर्व 722 एककांची शीर्षके, मूळ चालकांच्या नोंदी किंवा नियमसारण्या अंतिम PDF मधील प्रत्यक्ष स्थळांशी पडताळल्या आहेत; हे शब्दाच्या ओळीचे तंतोतंत पृष्ठ-निर्देश नाहीत. "
           "ही विकासावस्थेतील नोंद आहे; अंतिम प्रकाशनाची स्वीकृती नाही.\n\n"
           "[पूर्ण सूची](TRANSLATION_DECISIONS_FULL.md), [प्राधान्याने पाहायचे निर्णय](PRIORITY_REVIEW.md), "
           "[यंत्रवाचनीय नोंद](DECISIONS.json). मूलभूत ओळी ../EXPERT_REVIEW_OCCURRENCES.csv मध्ये आहेत.\n\n")
@@ -224,10 +243,13 @@ notice = ("# मराठी भाषांतरातील शब्दन�
 (OUT / "TRANSLATION_DECISIONS_FULL.md").write_text(notice + "\n".join(full_md), encoding="utf-8")
 (OUT / "PRIORITY_REVIEW.md").write_text(notice + "\n".join(priority_md), encoding="utf-8")
 qa = {"schema": "openlogic-mr-complete-review-qa/1", "status": "incomplete",
-      "source_units": 722, "term_decisions": 638, "context_occurrences": len(occurrences),
+      "source_units": 722, "term_decisions": 638, "context_occurrences": context_count,
+      "total_review_occurrences": len(occurrences), **source_qa,
       "localized_term_decisions": len(localized), "missing_localization": missing,
       "historical_detailed_review_units": 281, "historical_detailed_review_occurrences": 14221,
       "schema_errors": 0, "schema_sha256": SCHEMA_HASH,
-      "pending": ["final-reader-pages", "source-correction-schema-records", "remaining-Marathi-rationale-localization"]}
+      "reader_bound_units": len(reader_bindings), "reader_pdf_sha256": reader_binding_qa["pdf_sha256"],
+      "pending": ["remaining-Marathi-rationale-localization", "remaining-Marathi-source-issue-localization"] +
+                 (["source-issue-locator-refinement"] if source_qa["source_issue_locator_fallbacks"] else [])}
 write_json(OUT / "TRANSLATION_DECISION_QA.json", qa)
 print(json.dumps({key: qa[key] for key in ["status", "source_units", "term_decisions", "context_occurrences", "localized_term_decisions", "schema_errors"]}))

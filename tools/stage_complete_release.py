@@ -84,7 +84,7 @@ assert review_qa["status"] == "ready" and review_qa["source_units"] == 722
 assert not review_qa["missing_localization"] and not review_qa["pending"]
 assert review_qa["schema_errors"] == 0
 assert diagram_receipt["status"] == "final-source" and diagram_receipt["source_pdf_sha256"] == tex_receipt["pdf"]["sha256"]
-assert html_qa["diagrams"] == 70 and html_qa["sections"] == 612
+assert html_qa["diagrams"] == 70 and html_qa["sections"] == 613
 pdf_pages = len(fitz.open(BUILD / "openlogic-mr-full.pdf"))
 assert pdf_pages >= 900
 assert pdf_qa["pages"] == pdf_pages

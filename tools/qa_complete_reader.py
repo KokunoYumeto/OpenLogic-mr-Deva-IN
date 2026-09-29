@@ -19,7 +19,11 @@ assert len(receipt["front_matter_and_root_unit_ids"]) == 3
 assert len(receipt["represented_wrapper_unit_ids"]) == 7
 assert tex.count(r"\begin{document}") == tex.count(r"\end{document}") == 1
 assert tex.count(r"\chapter{") == receipt["chapters"] == 79
-assert len(re.findall(r"\\section(?:\[[^]]*\])?\{", tex)) == receipt["sections"] == 612
+assert len(re.findall(r"\\section(?:\[[^]]*\])?\{", tex)) == receipt["sections"] == 613
+driver_qa = json.loads((BUILD / "DRIVER_EDITORIAL_QA.json").read_text(encoding="utf-8"))
+assert driver_qa["reader_sha256"] == receipt["reader_sha256"]
+assert driver_qa["editorial_blocks"] == 44 and driver_qa["appended_blocks"] == 10
+assert driver_qa["appended_units"] == ["OLP-0027", "OLP-0138", "OLP-0182", "OLP-0208", "OLP-0460", "OLP-0470", "OLP-0476", "OLP-0720", "OLP-0722"]
 
 # Ignore ordinary source comments; a percent preceded by a backslash is a glyph.
 active = re.sub(r"(?<!\\)%[^\n]*", "", tex)
@@ -41,6 +45,7 @@ report = {
     "represented_source_units": receipt["represented_unit_count"],
     "chapter_count": receipt["chapters"],
     "section_count": receipt["sections"],
+    "source_driver_editorial_blocks": driver_qa["editorial_blocks"],
     "labels": len(labels),
     "reference_occurrences": len(refs),
     "unresolved_standard_reference_targets": unresolved,

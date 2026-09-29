@@ -48,7 +48,7 @@ unannotated = [
 blockers = []
 if build["source_units"] != 722:
     blockers.append("source-unit coverage")
-if len(doc.select("h3")) != 612:
+if len(doc.select("h3")) != 613:
     blockers.append("section topology")
 if len(doc.select("figure.proof")) != build["proof_representations"]:
     blockers.append("proof-table coverage")
