@@ -483,6 +483,11 @@
       "filename": "CANON_RECHECK_101.json",
       "bytes": 180319,
       "sha256": "de35c794bf1fc92700e552c8ff6e0ea7913413681c35106407cfcedfb42f5af8"
+    },
+    {
+      "filename": "RELEASE_REPRODUCIBILITY.json",
+      "bytes": 14500,
+      "sha256": "b95374e75df93521709864e8f95963c1b797b00cad64a27299086a709ee7c603"
     }
   ],
   "individual_chapter_sources": [
@@ -1120,7 +1125,7 @@
     }
   ],
   "full_edition_complete": true,
-  "release_reproduction_verified": false,
+  "release_reproduction_verified": true,
   "epub": {
     "source_units": 722,
     "reading_documents": 98,

@@ -1,17 +1,415 @@
 {
   "schema": "openlogic-mr-complete-release-reproduction/1",
-  "status": "pending-later-natural-checkpoint",
+  "status": "passed",
   "source_zip_sha256": "cd41c8b055fe108f2f2e71df57075d9a4344b848d5b2c1ea294fbf6a5f979057",
   "html_zip_sha256": "759ee75fc90d5c4384720e8aac8906266af452afc8bd6831b066f699581e24f5",
   "released_pdf_sha256": "3ee7fe70d38346b3ffc7cd635aaa285e54a00e81e5cfe254467be7cc696306f9",
   "released_tex_sha256": "f793f2b144cc8f15013bb68008c2302643c90d64bc6a1f922e9f03a4598d48f3",
   "source_date_epoch": "1788480000",
-  "attempt": 3,
+  "attempt": 5,
   "scope_mr": "संपूर्ण प्रकाशित स्रोत-ZIP मधून नव्याने तयार केलेला PDF आणि ऑफलाइन HTML मधील प्रत्येक फाइल.",
   "extracted_files_verified": 1839,
   "rebuilt_static_qa_sha256": "c5d714ec831885cd6d6ff99b06d5e1291987524600c42a2c57c89868cf7a1be2",
   "source_reader_notes": 346,
   "regenerated_tex_sha256": "f793f2b144cc8f15013bb68008c2302643c90d64bc6a1f922e9f03a4598d48f3",
-  "guarded_build_result": "slot-occupied",
-  "guarded_build_receipt_sha256": "4600c78184f9600a41b3f83a80254f67d9db849aac127cc8b8180cd15a8def07"
+  "guarded_build_result": "built-log-clean",
+  "guarded_build_receipt_sha256": "4a5678deeeef01b25d516427f94569cc28a3835f0aec583f353614b841c94f96",
+  "rebuilt_pdf_sha256": "3ee7fe70d38346b3ffc7cd635aaa285e54a00e81e5cfe254467be7cc696306f9",
+  "rebuilt_epub_sha256": "f657419cb7963b9061261e950d26bb85a2c0e72ccfce341269faeefacdc1adeb",
+  "epub_byte_identity": true,
+  "html_files_verified": [
+    {
+      "filename": "assets/bijective.svg",
+      "bytes": 292250,
+      "sha256": "6b3be94b18f6cd473c9e3473733123956429ebb91ec5959ea2f5a6882d29da68"
+    },
+    {
+      "filename": "assets/bisimulation-equivalence.svg",
+      "bytes": 975,
+      "sha256": "62f390aef7cf6c726ca4b2991c3cb2f11e1abbaec34373b2917964ddc84bfd65"
+    },
+    {
+      "filename": "assets/composition.svg",
+      "bytes": 398152,
+      "sha256": "73d8848c19df1715ea02ae00f5fa03a7ed90f002dd945d3094eb7ffa0d875eb1"
+    },
+    {
+      "filename": "assets/counterfactual-conditional.svg",
+      "bytes": 375,
+      "sha256": "733298e0ea2ebc271545b4a14c22473c2da02de0132060c3b1c5d447d413b94e"
+    },
+    {
+      "filename": "assets/difference.svg",
+      "bytes": 358250,
+      "sha256": "bd550a3004f130b33fd142bb1d64f2853d01a70a5146c5900faa18ad616fc25c"
+    },
+    {
+      "filename": "assets/function.svg",
+      "bytes": 439858,
+      "sha256": "0fc02d5bfc675cb53b485dc3c1c10f2bd11ca74ce6b8ed20ad373f9104ba4ed3"
+    },
+    {
+      "filename": "assets/injective.svg",
+      "bytes": 292231,
+      "sha256": "1058f7c8a6973e7c1b75ad415cb79f1a4f4cee8b1504786dad10fef76187f51d"
+    },
+    {
+      "filename": "assets/intersection.svg",
+      "bytes": 85335,
+      "sha256": "f63c0505b8ec7b76922e84a12c4e277a7bfccb6cd2589e8a8c5bb72325b39108"
+    },
+    {
+      "filename": "assets/strict-conditional.svg",
+      "bytes": 562,
+      "sha256": "e769e73a02230fa45f7a8f99f08f089fff8f85e12961ee974b02fce24594593f"
+    },
+    {
+      "filename": "assets/surjective.svg",
+      "bytes": 350836,
+      "sha256": "dcae76f3061db8263a6ff569a761208b89cb88fe00111ac090d17c1a10e51bc4"
+    },
+    {
+      "filename": "assets/tikz-010.svg",
+      "bytes": 321420,
+      "sha256": "113048cf8a8719de63224dbc8c1001fb6a20fe4c9a07db1ae99a589c3125a9fc"
+    },
+    {
+      "filename": "assets/tikz-011.svg",
+      "bytes": 321471,
+      "sha256": "1ae6895141fd97171ce6dc5d7a380644490307bb53aa960ac9bebd5b8807a1d9"
+    },
+    {
+      "filename": "assets/tikz-012.svg",
+      "bytes": 321520,
+      "sha256": "ab78a86a8021f38201838110d649c2c5c08d76f56f9ad0d53bbef71bf6028da9"
+    },
+    {
+      "filename": "assets/tikz-013.svg",
+      "bytes": 511941,
+      "sha256": "4c74cf87e15b377c52308a184d7a956ace2e2d4a24197f41beecf1c17dbabaef"
+    },
+    {
+      "filename": "assets/tikz-014.svg",
+      "bytes": 388742,
+      "sha256": "4de6816b72bcb93f4d9692a92ca51eb3e693faf04c21f24b1758001d951cc8f0"
+    },
+    {
+      "filename": "assets/tikz-015.svg",
+      "bytes": 319468,
+      "sha256": "144348156d038555fa1e73c9b6028b64748649c5533c8d78bb53402a218e7677"
+    },
+    {
+      "filename": "assets/tikz-016.svg",
+      "bytes": 494468,
+      "sha256": "22c28675bc9a29a2c063aa833c69239d04f50940e316f921380a11cd0fcb95c0"
+    },
+    {
+      "filename": "assets/tikz-017.svg",
+      "bytes": 415489,
+      "sha256": "efacf089a8cec0a616d16a769f3811897afd5bf99ef5e8635b90806880652651"
+    },
+    {
+      "filename": "assets/tikz-018.svg",
+      "bytes": 415959,
+      "sha256": "3c07485f01309c162a87c3dc9561366e887826e6e713f5d26c18cbf72ffa7088"
+    },
+    {
+      "filename": "assets/tikz-019.svg",
+      "bytes": 361676,
+      "sha256": "e0db17f206ad0178bc6deee60c5a2dd4071786560b4eed25ecfbebf04d90d385"
+    },
+    {
+      "filename": "assets/tikz-020.svg",
+      "bytes": 439120,
+      "sha256": "06569a8b048a6af17ba84e4a998f38fafccfc6506aac4fd7303124e471da8413"
+    },
+    {
+      "filename": "assets/tikz-021.svg",
+      "bytes": 526957,
+      "sha256": "35518b21b7b914f4f3b349590df782c199cc4c332bc1a2496542819b228bc025"
+    },
+    {
+      "filename": "assets/tikz-022.svg",
+      "bytes": 143660,
+      "sha256": "ef7448a81617c8455d29a1872cdb52f86d1f2f198a32697259e943cec295a98f"
+    },
+    {
+      "filename": "assets/tikz-023.svg",
+      "bytes": 143849,
+      "sha256": "8d12a0375774aca24fb604f57a136610cc863c855a96ca78b217bbd1d9ae64c8"
+    },
+    {
+      "filename": "assets/tikz-024.svg",
+      "bytes": 447306,
+      "sha256": "7cbdda62fc490b8cff44920d7a4103b6e0741237f650a8c68ebd6f803bf7bcaa"
+    },
+    {
+      "filename": "assets/tikz-025.svg",
+      "bytes": 446673,
+      "sha256": "449cc0c3d1628c30b0310f22b6a62bd3bf071f584b3502431717d00e66f94ef7"
+    },
+    {
+      "filename": "assets/tikz-026.svg",
+      "bytes": 379969,
+      "sha256": "312f53b1385732bc282877c5bb104300674533b829ceb2ac54a071b95d2d4cac"
+    },
+    {
+      "filename": "assets/tikz-027.svg",
+      "bytes": 380484,
+      "sha256": "9d666d6d5191288c65cc5a8d14f0b531ed62f65a0718b999e8bb0000a67bb092"
+    },
+    {
+      "filename": "assets/tikz-028.svg",
+      "bytes": 380341,
+      "sha256": "79c31815391d00a7ca5cba9c6cd58a7025d77ea682b65641e312c9912ce31a1c"
+    },
+    {
+      "filename": "assets/tikz-029.svg",
+      "bytes": 458633,
+      "sha256": "b7c1b8d6ad252a182663e54b0104b69ae4f40d8f949e80f04d1bd1012b28e794"
+    },
+    {
+      "filename": "assets/tikz-030.svg",
+      "bytes": 398932,
+      "sha256": "41c986f9447ffd7f695ec8488b872e0e84936757b38e2d406eca14a1fe63762c"
+    },
+    {
+      "filename": "assets/tikz-031.svg",
+      "bytes": 399540,
+      "sha256": "91712fb99565944b09d6db3a445c555b850d56bca515382705b44c3c1b6d0c56"
+    },
+    {
+      "filename": "assets/tikz-032.svg",
+      "bytes": 399827,
+      "sha256": "db18b49a57cd2ba747324a933c073779cbe1f85ef0faebb3707dc2114d8b6a51"
+    },
+    {
+      "filename": "assets/tikz-033.svg",
+      "bytes": 302198,
+      "sha256": "577b62a89d90c88ad383cb21061874b3e2846326ae6d0f9d47b2771079216bbe"
+    },
+    {
+      "filename": "assets/tikz-034.svg",
+      "bytes": 376256,
+      "sha256": "3aa16c409745396f5dbe46bd70cef1f52b0bfc96599bde45131cff41887e74ba"
+    },
+    {
+      "filename": "assets/tikz-035.svg",
+      "bytes": 69185,
+      "sha256": "40b7323f741bd99aae860aacd08dd97d46d77c4ab63445ac44425a828b81c6e1"
+    },
+    {
+      "filename": "assets/tikz-036.svg",
+      "bytes": 431525,
+      "sha256": "6c7a59f26cc43867d15cdee298f88417aca89f532c7b3d52a2324415038effc0"
+    },
+    {
+      "filename": "assets/tikz-037.svg",
+      "bytes": 362715,
+      "sha256": "19f467e48046ec26c953022f9c46a9a4d33ecec3fd4c48cb9001b3df9f5d2949"
+    },
+    {
+      "filename": "assets/tikz-038.svg",
+      "bytes": 383434,
+      "sha256": "f24efc31238ebc0b280cf4e5e16da3c4c8006ea31497ef74b6fb56fadfd1be4c"
+    },
+    {
+      "filename": "assets/tikz-039.svg",
+      "bytes": 381528,
+      "sha256": "efff065ea1d365bd22831ad0e7233177ecbe10044cd0075ef93dd7b636b7a445"
+    },
+    {
+      "filename": "assets/tikz-040.svg",
+      "bytes": 299463,
+      "sha256": "d5cc7cc99c19e0b450030e3a4f01544d2a4e8ec340bc002faa81f402ebc11ca7"
+    },
+    {
+      "filename": "assets/tikz-041.svg",
+      "bytes": 384800,
+      "sha256": "e5a5741af92d9de7158c30cfe376a6f1156e6f8cb0003deeafcb29409176f342"
+    },
+    {
+      "filename": "assets/tikz-042.svg",
+      "bytes": 385241,
+      "sha256": "dafc460e2202f5cec99d2eeede168a06b795701e4150fa74880348932a847f66"
+    },
+    {
+      "filename": "assets/tikz-043.svg",
+      "bytes": 386002,
+      "sha256": "152ca5cc48ec89ce75fa229295ea6af1cb99ad537fe66bea26043237548b19f6"
+    },
+    {
+      "filename": "assets/tikz-044.svg",
+      "bytes": 401636,
+      "sha256": "4f5f40e2e0b8bfc9ac796422f0d7109ca1f5574c0a3f12617137ef507940bad3"
+    },
+    {
+      "filename": "assets/tikz-045.svg",
+      "bytes": 239747,
+      "sha256": "77703bfd4c73c78fa0f5355d2b99795000b08f7d3a0e09664114aa0c47977bac"
+    },
+    {
+      "filename": "assets/tikz-046.svg",
+      "bytes": 202818,
+      "sha256": "87d74b904dfb3621e2652af4c9780e412fc57d1db925c8b75b286619efe10435"
+    },
+    {
+      "filename": "assets/tikz-047.svg",
+      "bytes": 425821,
+      "sha256": "396cd69ae956060170defbaf8135b3f28a3f5e8584d30c40b39a76ab1c08e3c6"
+    },
+    {
+      "filename": "assets/tikz-048.svg",
+      "bytes": 425803,
+      "sha256": "fadb2365f7ac48c59bb3efafbc330a2102284a3b31fc6c414fc42ac7fe230cd4"
+    },
+    {
+      "filename": "assets/tikz-049.svg",
+      "bytes": 111938,
+      "sha256": "35997d881d34b49d3427bb42f7fe39ee53f0379b38b2da821d279df52654dc07"
+    },
+    {
+      "filename": "assets/tikz-050.svg",
+      "bytes": 453499,
+      "sha256": "be8ccd1ef4a57ffec001f86091113668796a3bb92cb3693a3c09daf0a35f4d01"
+    },
+    {
+      "filename": "assets/tikz-051.svg",
+      "bytes": 447549,
+      "sha256": "a81a298c6ec3e835bfdd564938ef0c2601d5c02a668151e41953f2e2d15433bb"
+    },
+    {
+      "filename": "assets/tikz-052.svg",
+      "bytes": 232219,
+      "sha256": "2fbaa83647a31d11bc41590f360d26204deac29728abe1fa61ff5b83665afee4"
+    },
+    {
+      "filename": "assets/tikz-053.svg",
+      "bytes": 233597,
+      "sha256": "b0bfe684be59d1ab3a3d83a47504f2ea4c9122674af61dcd28829a3a70199443"
+    },
+    {
+      "filename": "assets/tikz-054.svg",
+      "bytes": 234239,
+      "sha256": "ca35a138f7bd9eaf1e699cf0e38bb5561d8ff5ade1f41e29344c2af32c73d83d"
+    },
+    {
+      "filename": "assets/tikz-055.svg",
+      "bytes": 374167,
+      "sha256": "f7df1bcef57fff432fc48ab28ea22e422deb9a276a627eae19e970e40bd33763"
+    },
+    {
+      "filename": "assets/tikz-056.svg",
+      "bytes": 375019,
+      "sha256": "2339cf5946f970b95aff3ad75aa224e55290c6e56fcc32055b0d98a97e76dd9e"
+    },
+    {
+      "filename": "assets/tikz-057.svg",
+      "bytes": 462944,
+      "sha256": "1c064cf852e8bc878a5bf4b565c76e408a793d0124919e17b15d47222bd72466"
+    },
+    {
+      "filename": "assets/tikz-058.svg",
+      "bytes": 400861,
+      "sha256": "03ff5e12a75c373fdce420fdb666ba6859d0657e2cc2e23470dbb3045feb1213"
+    },
+    {
+      "filename": "assets/tikz-059.svg",
+      "bytes": 401749,
+      "sha256": "22c0b069cb7f0da845d8c52d0539851d0f3555e9a8511988d7dcf3a7c3a72a83"
+    },
+    {
+      "filename": "assets/tikz-060.svg",
+      "bytes": 465369,
+      "sha256": "35fefdabd425f73265bf527fb1cb38f30b13869b3179ba40d5823de62365e5e7"
+    },
+    {
+      "filename": "assets/tikz-061.svg",
+      "bytes": 349348,
+      "sha256": "f0311e94ecffbb7b3fb315c62dcdf09b2759ce1d30260f3722561f08d9df4075"
+    },
+    {
+      "filename": "assets/tikz-062.svg",
+      "bytes": 349918,
+      "sha256": "772a67548ac2451dd23be23095cafb1aaa14d5c34068d5a2a4003eac5dc830cb"
+    },
+    {
+      "filename": "assets/tikz-063.svg",
+      "bytes": 349560,
+      "sha256": "579491bf520f4a0f708c281d012f46a56ad611aec0fee1c387d9b59dfbd0ddea"
+    },
+    {
+      "filename": "assets/tikz-064.svg",
+      "bytes": 418837,
+      "sha256": "19674db0c465860c5916ecd5d6846a6a5d2629a25bf85f2adf2b3c51dd2e48bc"
+    },
+    {
+      "filename": "assets/tikz-065.svg",
+      "bytes": 319536,
+      "sha256": "9f206faefbd8ce0a2658a69939bf468d34f5941e9bfc652cc10f811009f7c654"
+    },
+    {
+      "filename": "assets/tikz-066.svg",
+      "bytes": 418629,
+      "sha256": "188c27e7f4d4a2d54c7bfd12a79d2f549c2aedc5c2215b73d165483bb8976102"
+    },
+    {
+      "filename": "assets/tikz-067.svg",
+      "bytes": 550985,
+      "sha256": "b3570c0ead1188ab7eb7addb8b242a7f7e99c37b6f01d14b4d69b0ae2d8f7d9e"
+    },
+    {
+      "filename": "assets/tikz-068.svg",
+      "bytes": 357579,
+      "sha256": "82fc395ea2dbc110ba1006496e2848367869f7d35c1491b3bd4100d84a293dc0"
+    },
+    {
+      "filename": "assets/tikz-069.svg",
+      "bytes": 358054,
+      "sha256": "b40775c0f3c9265e39469569e549b11e875a37036827bc134e8dfcc407d9b693"
+    },
+    {
+      "filename": "assets/tikz-070.svg",
+      "bytes": 357849,
+      "sha256": "eb94b903ed18a484e18d3163f7140b3f2056e9e6398d1f073869ad7505a53146"
+    },
+    {
+      "filename": "assets/turing-machine.svg",
+      "bytes": 550067,
+      "sha256": "219671eca3506878b88082b16d7ce772841534388f034741a239af425c1ab8f2"
+    },
+    {
+      "filename": "assets/union.svg",
+      "bytes": 85434,
+      "sha256": "6aa8e021f7394b1bb88618d04d3a3efca87e38e0d82e4d7412d78a2bc2363723"
+    },
+    {
+      "filename": "fonts/OFL.txt",
+      "bytes": 4386,
+      "sha256": "a216f6f8d85c7228093e0ee5e258d9d377e6671f68acb4db1930b29583d0f331"
+    },
+    {
+      "filename": "fonts/OLMarathiSerif-Bold.ttf",
+      "bytes": 257776,
+      "sha256": "513598ac8428fb679f24ad0c2d0140eac1376474975908e1a349aeb7ea1e6d44"
+    },
+    {
+      "filename": "fonts/OLMarathiSerif-Regular.ttf",
+      "bytes": 257144,
+      "sha256": "3dd8a67190d899ce79faa97703113f81c636117126dd2577c30deca8ec791453"
+    },
+    {
+      "filename": "index.html",
+      "bytes": 16879616,
+      "sha256": "d7f347d6fe026777547656e211580f5755cb9d8a8c2e9394f3631c6bb4d4a9e3"
+    },
+    {
+      "filename": "reader.css",
+      "bytes": 1521,
+      "sha256": "8377aa6acdee7496c2767492d629bd453b85191c97e7817c62634b480df285c6"
+    }
+  ],
+  "rebuilt_html_sha256": "d7f347d6fe026777547656e211580f5755cb9d8a8c2e9394f3631c6bb4d4a9e3",
+  "pdf_byte_identity": true,
+  "html_all_files_byte_identity": true
 }
